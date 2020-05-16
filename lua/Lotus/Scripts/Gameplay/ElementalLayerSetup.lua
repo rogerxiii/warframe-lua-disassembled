@@ -7,7 +7,7 @@ code size: 20
 code size: 48
 code size: 351
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Gameplay\ElementalLayerSetup.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Gameplay\ElementalLayerSetup.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -13,7 +13,7 @@ code size: 39
 code size: 15
 code size: 392
 code size: 23
-code size: 177
+code size: 170
 code size: 5
 code size: 20
 code size: 91
@@ -31,7 +31,7 @@ code size: 33
 code size: 47
 code size: 88
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\WispReservoir.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\WispReservoir.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1647,164 +1647,157 @@ code size: 88
  23 [-]: TEST      R2 0         ; if not R2 then PC := 26
  24 [-]: JMP       26           ; PC := 26
  25 [-]: RETURN    R0 1         ; return 
- 26 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 27 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1["0xDE5882DD"]
- 28 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 29 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 30 [-]: TEST      R2 0         ; if not R2 then PC := 33
- 31 [-]: JMP       33           ; PC := 33
- 32 [-]: RETURN    R0 1         ; return 
- 33 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0["0x907C463B"]
- 34 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 35 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
- 36 [-]: MOVE      R4 R2        ; R4 := R2
- 37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 38 [-]: TEST      R3 0         ; if not R3 then PC := 41
- 39 [-]: JMP       41           ; PC := 41
- 40 [-]: RETURN    R0 1         ; return 
- 41 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0x7BAB77F"]
- 42 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 43 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 44 [-]: MOVE      R5 R3        ; R5 := R3
- 45 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 46 [-]: TEST      R4 0         ; if not R4 then PC := 49
- 47 [-]: JMP       49           ; PC := 49
- 48 [-]: RETURN    R0 1         ; return 
- 49 [-]: SELF      R4 R3 K3     ; R5 := R3; R4 := R3["0xA4499253"]
- 50 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 51 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
- 52 [-]: MOVE      R6 R4        ; R6 := R4
- 53 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 54 [-]: TEST      R5 1         ; if R5 then PC := 66
- 55 [-]: JMP       66           ; PC := 66
- 56 [-]: SELF      R5 R1 K7     ; R6 := R1; R5 := R1["0xD13CABAB"]
- 57 [-]: MOVE      R7 R4        ; R7 := R4
- 58 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 59 [-]: TEST      R5 0         ; if not R5 then PC := 66
- 60 [-]: JMP       66           ; PC := 66
- 61 [-]: SELF      R5 R1 K8     ; R6 := R1; R5 := R1["0x9B4AA3E9"]
- 62 [-]: MOVE      R7 R4        ; R7 := R4
- 63 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 64 [-]: TEST      R5 1         ; if R5 then PC := 67
- 65 [-]: JMP       67           ; PC := 67
- 66 [-]: RETURN    R0 1         ; return 
- 67 [-]: SELF      R5 R3 K9     ; R6 := R3; R5 := R3["0xEA55C538"]
- 68 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 69 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 70 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
- 71 [-]: MOVE      R7 R5        ; R7 := R5
- 72 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 73 [-]: TEST      R6 0         ; if not R6 then PC := 76
- 74 [-]: JMP       76           ; PC := 76
- 75 [-]: RETURN    R0 1         ; return 
- 76 [-]: GETGLOBAL R6 K10       ; R6 := _T
- 77 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["wispBuffs"]
- 78 [-]: EQ        0 R6 K12     ; if R6 ~= nil then PC := 83
- 79 [-]: JMP       83           ; PC := 83
- 80 [-]: GETGLOBAL R6 K10       ; R6 := _T
- 81 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 82 [-]: SETTABLE  R6 K11 R7    ; R6["wispBuffs"] := R7
- 83 [-]: SELF      R6 R1 K13    ; R7 := R1; R6 := R1["0xDBEF0FB6"]
- 84 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 85 [-]: GETGLOBAL R7 K10       ; R7 := _T
- 86 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["wispBuffs"]
- 87 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 88 [-]: EQ        0 R7 K12     ; if R7 ~= nil then PC := 97
- 89 [-]: JMP       97           ; PC := 97
- 90 [-]: GETGLOBAL R7 K10       ; R7 := _T
- 91 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["wispBuffs"]
- 92 [-]: NEWTABLE  R8 0 2       ; R8 := {}
- 93 [-]: SETTABLE  R8 K14 R1    ; R8["avatar"] := R1
- 94 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 95 [-]: SETTABLE  R8 K15 R9    ; R8["buffs"] := R9
- 96 [-]: SETTABLE  R7 R6 R8     ; R7[R6] := R8
- 97 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0["0xD01F29AC"]
- 98 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 99 [-]: SELF      R8 R1 K17    ; R9 := R1; R8 := R1["0x25992394"]
-100 [-]: GETGLOBAL R10 K18      ; R10 := buffAcquiredSounds
-101 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
-102 [-]: MOVE      R11 R0       ; R11 := R0
-103 [-]: LOADK     R12 K19      ; R12 := 0
-104 [-]: MOVE      R13 R0       ; R13 := R0
-105 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
-106 [-]: GETGLOBAL R8 K20       ; R8 := buffType
-107 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
-108 [-]: SELF      R9 R8 K21    ; R10 := R8; R9 := R8["0x34820572"]
-109 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-110 [-]: MOVE      R9 R1        ; R9 := R1
-111 [-]: LOADK     R9 K22       ; R9 := 1
-112 [-]: GETUPVAL  R10 U2       ; R10 := U2
-113 [-]: SELF      R11 R4 K13   ; R12 := R4; R11 := R4["0xDBEF0FB6"]
-114 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-115 [-]: MOVE      R12 R2       ; R12 := R2
-116 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-117 [-]: TEST      R10 0        ; if not R10 then PC := 120
-118 [-]: JMP       120          ; PC := 120
-119 [-]: GETTABLE  R9 R10 K23   ; R9 := R10["strengthMult"]
-120 [-]: GETGLOBAL R11 K10      ; R11 := _T
-121 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["wispBuffs"]
-122 [-]: GETTABLE  R11 R11 R6   ; R11 := R11[R6]
-123 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["buffs"]
-124 [-]: GETUPVAL  R12 U1       ; R12 := U1
-125 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
-126 [-]: EQ        0 R11 K12    ; if R11 ~= nil then PC := 158
-127 [-]: JMP       158          ; PC := 158
-128 [-]: GETGLOBAL R11 K10      ; R11 := _T
-129 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["wispBuffs"]
-130 [-]: GETTABLE  R11 R11 R6   ; R11 := R11[R6]
-131 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["buffs"]
-132 [-]: GETUPVAL  R12 U1       ; R12 := U1
-133 [-]: NEWTABLE  R13 0 9      ; R13 := {}
-134 [-]: SETTABLE  R13 K24 R4   ; R13["source"] := R4
-135 [-]: SETTABLE  R13 K25 R3   ; R13["suit"] := R3
-136 [-]: SETTABLE  R13 K26 R5   ; R13["ability"] := R5
-137 [-]: SETTABLE  R13 K23 R9   ; R13["strengthMult"] := R9
-138 [-]: SETTABLE  R13 K20 R8   ; R13["buffType"] := R8
-139 [-]: GETGLOBAL R14 K28      ; R14 := buffAttachTypes
-140 [-]: GETTABLE  R14 R14 R7   ; R14 := R14[R7]
-141 [-]: SETTABLE  R13 K27 R14  ; R13["buffAttachType"] := R14
-142 [-]: GETGLOBAL R14 K30      ; R14 := buffLostSounds
-143 [-]: GETTABLE  R14 R14 R7   ; R14 := R14[R7]
-144 [-]: SETTABLE  R13 K29 R14  ; R13["buffLostSound"] := R14
-145 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-146 [-]: MOVE      R15 R0       ; R15 := R0
-147 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-148 [-]: SETTABLE  R13 K31 R14  ; R13["sources"] := R14
-149 [-]: SETTABLE  R13 K32 R2   ; R13["reservoir"] := R2
-150 [-]: SETTABLE  R11 R12 R13  ; R11[R12] := R13
-151 [-]: SELF      R11 R1 K33   ; R12 := R1; R11 := R1["0xB26452A2"]
-152 [-]: GETGLOBAL R13 K34      ; R13 := 0xEC274B1A
-153 [-]: LOADK     R14 K35      ; R14 := "ApplyBuff"
-154 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-155 [-]: MOVE      R14 R0       ; R14 := R0
-156 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-157 [-]: JMP       177          ; PC := 177
-158 [-]: GETGLOBAL R11 K10      ; R11 := _T
-159 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["wispBuffs"]
-160 [-]: GETTABLE  R11 R11 R6   ; R11 := R11[R6]
-161 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["buffs"]
-162 [-]: GETUPVAL  R12 U1       ; R12 := U1
-163 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
-164 [-]: GETTABLE  R12 R11 K23  ; R12 := R11["strengthMult"]
-165 [-]: LT        0 R12 R9     ; if R12 >= R9 then PC := 172
-166 [-]: JMP       172          ; PC := 172
-167 [-]: SETTABLE  R11 K24 R4   ; R11["source"] := R4
-168 [-]: SETTABLE  R11 K32 R2   ; R11["reservoir"] := R2
-169 [-]: SETTABLE  R11 K25 R3   ; R11["suit"] := R3
-170 [-]: SETTABLE  R11 K26 R5   ; R11["ability"] := R5
-171 [-]: SETTABLE  R11 K23 R9   ; R11["strengthMult"] := R9
-172 [-]: GETGLOBAL R12 K36      ; R12 := table
-173 [-]: GETTABLE  R12 R12 K37  ; R12 := R12["0xE6450C9D"]
-174 [-]: GETTABLE  R13 R11 K31  ; R13 := R11["sources"]
-175 [-]: MOVE      R14 R0       ; R14 := R0
-176 [-]: CALL      R12 3 1      ; R12(R13,R14)
-177 [-]: RETURN    R0 1         ; return 
+ 26 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0["0x907C463B"]
+ 27 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 28 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 29 [-]: MOVE      R4 R2        ; R4 := R2
+ 30 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 31 [-]: TEST      R3 0         ; if not R3 then PC := 34
+ 32 [-]: JMP       34           ; PC := 34
+ 33 [-]: RETURN    R0 1         ; return 
+ 34 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2["0x7BAB77F"]
+ 35 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 36 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 37 [-]: MOVE      R5 R3        ; R5 := R3
+ 38 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 39 [-]: TEST      R4 0         ; if not R4 then PC := 42
+ 40 [-]: JMP       42           ; PC := 42
+ 41 [-]: RETURN    R0 1         ; return 
+ 42 [-]: SELF      R4 R3 K3     ; R5 := R3; R4 := R3["0xA4499253"]
+ 43 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 44 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+ 45 [-]: MOVE      R6 R4        ; R6 := R4
+ 46 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 47 [-]: TEST      R5 1         ; if R5 then PC := 59
+ 48 [-]: JMP       59           ; PC := 59
+ 49 [-]: SELF      R5 R1 K6     ; R6 := R1; R5 := R1["0xD13CABAB"]
+ 50 [-]: MOVE      R7 R4        ; R7 := R4
+ 51 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 52 [-]: TEST      R5 0         ; if not R5 then PC := 59
+ 53 [-]: JMP       59           ; PC := 59
+ 54 [-]: SELF      R5 R1 K7     ; R6 := R1; R5 := R1["0x9B4AA3E9"]
+ 55 [-]: MOVE      R7 R4        ; R7 := R4
+ 56 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 57 [-]: TEST      R5 1         ; if R5 then PC := 60
+ 58 [-]: JMP       60           ; PC := 60
+ 59 [-]: RETURN    R0 1         ; return 
+ 60 [-]: SELF      R5 R3 K8     ; R6 := R3; R5 := R3["0xEA55C538"]
+ 61 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 62 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 63 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 64 [-]: MOVE      R7 R5        ; R7 := R5
+ 65 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 66 [-]: TEST      R6 0         ; if not R6 then PC := 69
+ 67 [-]: JMP       69           ; PC := 69
+ 68 [-]: RETURN    R0 1         ; return 
+ 69 [-]: GETGLOBAL R6 K9        ; R6 := _T
+ 70 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["wispBuffs"]
+ 71 [-]: EQ        0 R6 K11     ; if R6 ~= nil then PC := 76
+ 72 [-]: JMP       76           ; PC := 76
+ 73 [-]: GETGLOBAL R6 K9        ; R6 := _T
+ 74 [-]: NEWTABLE  R7 0 0       ; R7 := {}
+ 75 [-]: SETTABLE  R6 K10 R7    ; R6["wispBuffs"] := R7
+ 76 [-]: SELF      R6 R1 K12    ; R7 := R1; R6 := R1["0xDBEF0FB6"]
+ 77 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 78 [-]: GETGLOBAL R7 K9        ; R7 := _T
+ 79 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["wispBuffs"]
+ 80 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
+ 81 [-]: EQ        0 R7 K11     ; if R7 ~= nil then PC := 90
+ 82 [-]: JMP       90           ; PC := 90
+ 83 [-]: GETGLOBAL R7 K9        ; R7 := _T
+ 84 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["wispBuffs"]
+ 85 [-]: NEWTABLE  R8 0 2       ; R8 := {}
+ 86 [-]: SETTABLE  R8 K13 R1    ; R8["avatar"] := R1
+ 87 [-]: NEWTABLE  R9 0 0       ; R9 := {}
+ 88 [-]: SETTABLE  R8 K14 R9    ; R8["buffs"] := R9
+ 89 [-]: SETTABLE  R7 R6 R8     ; R7[R6] := R8
+ 90 [-]: SELF      R7 R0 K15    ; R8 := R0; R7 := R0["0xD01F29AC"]
+ 91 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 92 [-]: SELF      R8 R1 K16    ; R9 := R1; R8 := R1["0x25992394"]
+ 93 [-]: GETGLOBAL R10 K17      ; R10 := buffAcquiredSounds
+ 94 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
+ 95 [-]: MOVE      R11 R0       ; R11 := R0
+ 96 [-]: LOADK     R12 K18      ; R12 := 0
+ 97 [-]: MOVE      R13 R0       ; R13 := R0
+ 98 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
+ 99 [-]: GETGLOBAL R8 K19       ; R8 := buffType
+100 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
+101 [-]: SELF      R9 R8 K20    ; R10 := R8; R9 := R8["0x34820572"]
+102 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+103 [-]: MOVE      R9 R1        ; R9 := R1
+104 [-]: LOADK     R9 K21       ; R9 := 1
+105 [-]: GETUPVAL  R10 U2       ; R10 := U2
+106 [-]: SELF      R11 R4 K12   ; R12 := R4; R11 := R4["0xDBEF0FB6"]
+107 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+108 [-]: MOVE      R12 R2       ; R12 := R2
+109 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+110 [-]: TEST      R10 0        ; if not R10 then PC := 113
+111 [-]: JMP       113          ; PC := 113
+112 [-]: GETTABLE  R9 R10 K22   ; R9 := R10["strengthMult"]
+113 [-]: GETGLOBAL R11 K9       ; R11 := _T
+114 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["wispBuffs"]
+115 [-]: GETTABLE  R11 R11 R6   ; R11 := R11[R6]
+116 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["buffs"]
+117 [-]: GETUPVAL  R12 U1       ; R12 := U1
+118 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
+119 [-]: EQ        0 R11 K11    ; if R11 ~= nil then PC := 151
+120 [-]: JMP       151          ; PC := 151
+121 [-]: GETGLOBAL R11 K9       ; R11 := _T
+122 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["wispBuffs"]
+123 [-]: GETTABLE  R11 R11 R6   ; R11 := R11[R6]
+124 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["buffs"]
+125 [-]: GETUPVAL  R12 U1       ; R12 := U1
+126 [-]: NEWTABLE  R13 0 9      ; R13 := {}
+127 [-]: SETTABLE  R13 K23 R4   ; R13["source"] := R4
+128 [-]: SETTABLE  R13 K24 R3   ; R13["suit"] := R3
+129 [-]: SETTABLE  R13 K25 R5   ; R13["ability"] := R5
+130 [-]: SETTABLE  R13 K22 R9   ; R13["strengthMult"] := R9
+131 [-]: SETTABLE  R13 K19 R8   ; R13["buffType"] := R8
+132 [-]: GETGLOBAL R14 K27      ; R14 := buffAttachTypes
+133 [-]: GETTABLE  R14 R14 R7   ; R14 := R14[R7]
+134 [-]: SETTABLE  R13 K26 R14  ; R13["buffAttachType"] := R14
+135 [-]: GETGLOBAL R14 K29      ; R14 := buffLostSounds
+136 [-]: GETTABLE  R14 R14 R7   ; R14 := R14[R7]
+137 [-]: SETTABLE  R13 K28 R14  ; R13["buffLostSound"] := R14
+138 [-]: NEWTABLE  R14 1 0      ; R14 := {}
+139 [-]: MOVE      R15 R0       ; R15 := R0
+140 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
+141 [-]: SETTABLE  R13 K30 R14  ; R13["sources"] := R14
+142 [-]: SETTABLE  R13 K31 R2   ; R13["reservoir"] := R2
+143 [-]: SETTABLE  R11 R12 R13  ; R11[R12] := R13
+144 [-]: SELF      R11 R1 K32   ; R12 := R1; R11 := R1["0xB26452A2"]
+145 [-]: GETGLOBAL R13 K33      ; R13 := 0xEC274B1A
+146 [-]: LOADK     R14 K34      ; R14 := "ApplyBuff"
+147 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+148 [-]: MOVE      R14 R0       ; R14 := R0
+149 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+150 [-]: JMP       170          ; PC := 170
+151 [-]: GETGLOBAL R11 K9       ; R11 := _T
+152 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["wispBuffs"]
+153 [-]: GETTABLE  R11 R11 R6   ; R11 := R11[R6]
+154 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["buffs"]
+155 [-]: GETUPVAL  R12 U1       ; R12 := U1
+156 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
+157 [-]: GETTABLE  R12 R11 K22  ; R12 := R11["strengthMult"]
+158 [-]: LT        0 R12 R9     ; if R12 >= R9 then PC := 165
+159 [-]: JMP       165          ; PC := 165
+160 [-]: SETTABLE  R11 K23 R4   ; R11["source"] := R4
+161 [-]: SETTABLE  R11 K31 R2   ; R11["reservoir"] := R2
+162 [-]: SETTABLE  R11 K24 R3   ; R11["suit"] := R3
+163 [-]: SETTABLE  R11 K25 R5   ; R11["ability"] := R5
+164 [-]: SETTABLE  R11 K22 R9   ; R11["strengthMult"] := R9
+165 [-]: GETGLOBAL R12 K35      ; R12 := table
+166 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["0xE6450C9D"]
+167 [-]: GETTABLE  R13 R11 K30  ; R13 := R11["sources"]
+168 [-]: MOVE      R14 R0       ; R14 := R0
+169 [-]: CALL      R12 3 1      ; R12(R13,R14)
+170 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 580
+; Defined at line: 576
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1820,7 +1813,7 @@ code size: 88
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 584
+; Defined at line: 580
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1851,7 +1844,7 @@ code size: 88
 ; Function #17.1:
 ;
 ; Name:            
-; Defined at line: 592
+; Defined at line: 588
 ; #Upvalues:       7
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1880,7 +1873,7 @@ code size: 88
  21 [-]: GETUPVAL  R4 U3        ; R4 := U3
  22 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4["0xF21555A7"]
  23 [-]: GETGLOBAL R6 K3        ; R6 := Game
- 24 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["AVATAR_HEAL_RATE"]
+ 24 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["AVATAR_HEAL_RATE_FORCED"]
  25 [-]: GETGLOBAL R7 K3        ; R7 := Game
  26 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["ADD"]
  27 [-]: GETUPVAL  R8 U4        ; R8 := U4
@@ -1925,7 +1918,7 @@ code size: 88
  66 [-]: GETUPVAL  R5 U3        ; R5 := U3
  67 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5["0x3B1B11B9"]
  68 [-]: GETGLOBAL R7 K3        ; R7 := Game
- 69 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["AVATAR_HEAL_RATE"]
+ 69 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["AVATAR_HEAL_RATE_FORCED"]
  70 [-]: GETGLOBAL R8 K3        ; R8 := Game
  71 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["ADD"]
  72 [-]: GETUPVAL  R9 U4        ; R9 := U4
@@ -1953,7 +1946,7 @@ code size: 88
 ; Function #17.2:
 ;
 ; Name:            
-; Defined at line: 632
+; Defined at line: 628
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1965,7 +1958,7 @@ code size: 88
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 638
+; Defined at line: 634
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1995,7 +1988,7 @@ code size: 88
 ; Function #18.1:
 ;
 ; Name:            
-; Defined at line: 646
+; Defined at line: 642
 ; #Upvalues:       6
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2086,7 +2079,7 @@ code size: 88
 ; Function #18.2:
 ;
 ; Name:            
-; Defined at line: 682
+; Defined at line: 678
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2098,7 +2091,7 @@ code size: 88
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 688
+; Defined at line: 684
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2168,7 +2161,7 @@ code size: 88
 ; Function #19.1:
 ;
 ; Name:            
-; Defined at line: 709
+; Defined at line: 705
 ; #Upvalues:       6
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2211,7 +2204,7 @@ code size: 88
 ; Function #19.2:
 ;
 ; Name:            
-; Defined at line: 728
+; Defined at line: 724
 ; #Upvalues:       13
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2440,7 +2433,7 @@ code size: 88
 ; Function #19.2.1:
 ;
 ; Name:            
-; Defined at line: 758
+; Defined at line: 754
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2458,7 +2451,7 @@ code size: 88
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 804
+; Defined at line: 800
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2508,7 +2501,7 @@ code size: 88
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 810
+; Defined at line: 806
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3090,7 +3083,7 @@ code size: 88
 ; Function #21.1:
 ;
 ; Name:            
-; Defined at line: 862
+; Defined at line: 858
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3134,7 +3127,7 @@ code size: 88
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 1079
+; Defined at line: 1075
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3192,7 +3185,7 @@ code size: 88
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 1092
+; Defined at line: 1088
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -1,12 +1,12 @@
 code size: 28
 code size: 5
 code size: 12
-code size: 132
+code size: 142
 code size: 49
 code size: 52
 code size: 18
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Sentinels\SentinelAbilities\ProcAbsorb.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Sentinels\SentinelAbilities\ProcAbsorb.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -148,89 +148,99 @@ code size: 18
  53 [-]: SETTABLE  R10 K19 R11  ; R10["buffType"] := R11
  54 [-]: SETTABLE  R10 K21 K22  ; R10["isDebuff"] := "0x1"
  55 [-]: SETTABLE  R10 K23 R9   ; R10["buffData"] := R9
- 56 [-]: GETGLOBAL R11 K16      ; R11 := mOwner
- 57 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0xE7AE25B5"]
+ 56 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 57 [-]: GETGLOBAL R12 K16      ; R12 := mOwner
  58 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 59 [-]: TEST      R11 1        ; if R11 then PC := 132
- 60 [-]: JMP       132          ; PC := 132
- 61 [-]: SELF      R11 R1 K25   ; R12 := R1; R11 := R1["0x5A115A02"]
- 62 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 63 [-]: TEST      R11 1        ; if R11 then PC := 132
- 64 [-]: JMP       132          ; PC := 132
- 65 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
- 66 [-]: MOVE      R12 R5       ; R12 := R5
- 67 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 68 [-]: TEST      R11 1        ; if R11 then PC := 132
- 69 [-]: JMP       132          ; PC := 132
- 70 [-]: SELF      R11 R5 K25   ; R12 := R5; R11 := R5["0x5A115A02"]
- 71 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 72 [-]: TEST      R11 1        ; if R11 then PC := 132
- 73 [-]: JMP       132          ; PC := 132
- 74 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
- 75 [-]: MOVE      R12 R6       ; R12 := R6
- 76 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 77 [-]: TEST      R11 1        ; if R11 then PC := 132
- 78 [-]: JMP       132          ; PC := 132
- 79 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 80 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
- 81 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
- 82 [-]: EQ        0 R11 K26    ; if R11 ~= "0x0" then PC := 111
- 83 [-]: JMP       111          ; PC := 111
- 84 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 85 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
- 86 [-]: SETTABLE  R11 R8 K7    ; R11[R8] := nil
- 87 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 88 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["0x55B99293"]
- 89 [-]: MOVE      R12 R5       ; R12 := R5
- 90 [-]: MOVE      R13 R0       ; R13 := R0
- 91 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 92 [-]: SELF      R11 R6 K28   ; R12 := R6; R11 := R6["0x38E5DBEC"]
- 93 [-]: MOVE      R13 R7       ; R13 := R7
- 94 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 95 [-]: SELF      R11 R5 K29   ; R12 := R5; R11 := R5["0x584F13D6"]
- 96 [-]: MOVE      R13 R10      ; R13 := R10
- 97 [-]: MOVE      R14 R1       ; R14 := R1
- 98 [-]: MOVE      R15 R0       ; R15 := R0
- 99 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
-100 [-]: SELF      R11 R5 K30   ; R12 := R5; R11 := R5["0xAB436EF2"]
-101 [-]: GETGLOBAL R13 K31      ; R13 := blockedEffect
-102 [-]: GETUPVAL  R14 U2       ; R14 := U2
-103 [-]: GETGLOBAL R15 K32      ; R15 := ZERO_VECTOR
-104 [-]: GETGLOBAL R16 K33      ; R16 := ZERO_ROTATION
-105 [-]: MOVE      R17 R0       ; R17 := R0
-106 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
-107 [-]: GETGLOBAL R11 K34      ; R11 := 0x201191EA
-108 [-]: MOVE      R12 R9       ; R12 := R9
-109 [-]: CALL      R11 2 1      ; R11(R12)
-110 [-]: JMP       56           ; PC := 56
-111 [-]: GETGLOBAL R11 K5       ; R11 := _T
-112 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
-113 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
-114 [-]: EQ        0 R11 K7     ; if R11 ~= nil then PC := 128
-115 [-]: JMP       128          ; PC := 128
-116 [-]: GETGLOBAL R11 K5       ; R11 := _T
-117 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
-118 [-]: SETTABLE  R11 R8 K22   ; R11[R8] := "0x1"
-119 [-]: GETUPVAL  R11 U1       ; R11 := U1
-120 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["0x55B99293"]
-121 [-]: MOVE      R12 R5       ; R12 := R5
-122 [-]: MOVE      R13 R1       ; R13 := R1
-123 [-]: CALL      R11 3 1      ; R11(R12,R13)
-124 [-]: SELF      R11 R6 K35   ; R12 := R6; R11 := R6["0xB5373F53"]
-125 [-]: GETGLOBAL R13 K16      ; R13 := mOwner
-126 [-]: MOVE      R14 R7       ; R14 := R7
-127 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-128 [-]: GETGLOBAL R11 K34      ; R11 := 0x201191EA
-129 [-]: LOADK     R12 K36      ; R12 := 0
-130 [-]: CALL      R11 2 1      ; R11(R12)
-131 [-]: JMP       56           ; PC := 56
-132 [-]: RETURN    R0 1         ; return 
+ 59 [-]: TEST      R11 1        ; if R11 then PC := 142
+ 60 [-]: JMP       142          ; PC := 142
+ 61 [-]: GETGLOBAL R11 K16      ; R11 := mOwner
+ 62 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0xE7AE25B5"]
+ 63 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 64 [-]: TEST      R11 1        ; if R11 then PC := 142
+ 65 [-]: JMP       142          ; PC := 142
+ 66 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 67 [-]: MOVE      R12 R1       ; R12 := R1
+ 68 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 69 [-]: TEST      R11 1        ; if R11 then PC := 142
+ 70 [-]: JMP       142          ; PC := 142
+ 71 [-]: SELF      R11 R1 K25   ; R12 := R1; R11 := R1["0x5A115A02"]
+ 72 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 73 [-]: TEST      R11 1        ; if R11 then PC := 142
+ 74 [-]: JMP       142          ; PC := 142
+ 75 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 76 [-]: MOVE      R12 R5       ; R12 := R5
+ 77 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 78 [-]: TEST      R11 1        ; if R11 then PC := 142
+ 79 [-]: JMP       142          ; PC := 142
+ 80 [-]: SELF      R11 R5 K25   ; R12 := R5; R11 := R5["0x5A115A02"]
+ 81 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 82 [-]: TEST      R11 1        ; if R11 then PC := 142
+ 83 [-]: JMP       142          ; PC := 142
+ 84 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 85 [-]: MOVE      R12 R6       ; R12 := R6
+ 86 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 87 [-]: TEST      R11 1        ; if R11 then PC := 142
+ 88 [-]: JMP       142          ; PC := 142
+ 89 [-]: GETGLOBAL R11 K5       ; R11 := _T
+ 90 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
+ 91 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
+ 92 [-]: EQ        0 R11 K26    ; if R11 ~= "0x0" then PC := 121
+ 93 [-]: JMP       121          ; PC := 121
+ 94 [-]: GETGLOBAL R11 K5       ; R11 := _T
+ 95 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
+ 96 [-]: SETTABLE  R11 R8 K7    ; R11[R8] := nil
+ 97 [-]: GETUPVAL  R11 U1       ; R11 := U1
+ 98 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["0x55B99293"]
+ 99 [-]: MOVE      R12 R5       ; R12 := R5
+100 [-]: MOVE      R13 R0       ; R13 := R0
+101 [-]: CALL      R11 3 1      ; R11(R12,R13)
+102 [-]: SELF      R11 R6 K28   ; R12 := R6; R11 := R6["0x38E5DBEC"]
+103 [-]: MOVE      R13 R7       ; R13 := R7
+104 [-]: CALL      R11 3 1      ; R11(R12,R13)
+105 [-]: SELF      R11 R5 K29   ; R12 := R5; R11 := R5["0x584F13D6"]
+106 [-]: MOVE      R13 R10      ; R13 := R10
+107 [-]: MOVE      R14 R1       ; R14 := R1
+108 [-]: MOVE      R15 R0       ; R15 := R0
+109 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
+110 [-]: SELF      R11 R5 K30   ; R12 := R5; R11 := R5["0xAB436EF2"]
+111 [-]: GETGLOBAL R13 K31      ; R13 := blockedEffect
+112 [-]: GETUPVAL  R14 U2       ; R14 := U2
+113 [-]: GETGLOBAL R15 K32      ; R15 := ZERO_VECTOR
+114 [-]: GETGLOBAL R16 K33      ; R16 := ZERO_ROTATION
+115 [-]: MOVE      R17 R0       ; R17 := R0
+116 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
+117 [-]: GETGLOBAL R11 K34      ; R11 := 0x201191EA
+118 [-]: MOVE      R12 R9       ; R12 := R9
+119 [-]: CALL      R11 2 1      ; R11(R12)
+120 [-]: JMP       56           ; PC := 56
+121 [-]: GETGLOBAL R11 K5       ; R11 := _T
+122 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
+123 [-]: GETTABLE  R11 R11 R8   ; R11 := R11[R8]
+124 [-]: EQ        0 R11 K7     ; if R11 ~= nil then PC := 138
+125 [-]: JMP       138          ; PC := 138
+126 [-]: GETGLOBAL R11 K5       ; R11 := _T
+127 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["procAbsorb"]
+128 [-]: SETTABLE  R11 R8 K22   ; R11[R8] := "0x1"
+129 [-]: GETUPVAL  R11 U1       ; R11 := U1
+130 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["0x55B99293"]
+131 [-]: MOVE      R12 R5       ; R12 := R5
+132 [-]: MOVE      R13 R1       ; R13 := R1
+133 [-]: CALL      R11 3 1      ; R11(R12,R13)
+134 [-]: SELF      R11 R6 K35   ; R12 := R6; R11 := R6["0xB5373F53"]
+135 [-]: GETGLOBAL R13 K16      ; R13 := mOwner
+136 [-]: MOVE      R14 R7       ; R14 := R7
+137 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+138 [-]: GETGLOBAL R11 K34      ; R11 := 0x201191EA
+139 [-]: LOADK     R12 K36      ; R12 := 0
+140 [-]: CALL      R11 2 1      ; R11(R12)
+141 [-]: JMP       56           ; PC := 56
+142 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 76
+; Defined at line: 78
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -290,7 +300,7 @@ code size: 18
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 99
+; Defined at line: 101
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -353,7 +363,7 @@ code size: 18
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 120
+; Defined at line: 122
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

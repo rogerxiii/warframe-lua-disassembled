@@ -1,10 +1,10 @@
 code size: 12
-code size: 50
+code size: 73
 code size: 24
 code size: 210
 code size: 6
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\HyenaChargeAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\HyenaChargeAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -30,68 +30,91 @@ code size: 6
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 33
+; Defined at line: 35
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  16
 
   1 [-]: LOADK     R2 K0        ; R2 := 0
   2 [-]: SELF      R3 R1 K1     ; R4 := R1; R3 := R1["0xABD9DD93"]
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   4 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0xFF8F8885"]
   5 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  6 [-]: LOADK     R4 K3        ; R4 := 1
-  7 [-]: LEN       R5 R3        ; R5 := # R3
-  8 [-]: LOADK     R6 K3        ; R6 := 1
-  9 [-]: FORPREP   R4 48        ; R4 -= R6; PC := 48
- 10 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 11 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["visible"]
- 12 [-]: TEST      R8 0         ; if not R8 then PC := 48
- 13 [-]: JMP       48           ; PC := 48
- 14 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 15 [-]: SELF      R8 R8 K5     ; R9 := R8; R8 := R8["0x3CAF9580"]
- 16 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 17 [-]: TEST      R8 0         ; if not R8 then PC := 48
- 18 [-]: JMP       48           ; PC := 48
- 19 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 20 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["distanceToTarget"]
- 21 [-]: GETGLOBAL R9 K7        ; R9 := npcMinRange
- 22 [-]: LE        0 R9 R8      ; if R9 > R8 then PC := 48
- 23 [-]: JMP       48           ; PC := 48
- 24 [-]: GETGLOBAL R9 K8        ; R9 := npcMaxRange
- 25 [-]: LE        0 R8 R9      ; if R8 > R9 then PC := 48
- 26 [-]: JMP       48           ; PC := 48
- 27 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]
- 28 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["avatar"]
- 29 [-]: SELF      R9 R9 K10    ; R10 := R9; R9 := R9["0xBBAF192"]
- 30 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 31 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["y"]
- 32 [-]: SELF      R10 R1 K10   ; R11 := R1; R10 := R1["0xBBAF192"]
- 33 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 34 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["y"]
- 35 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
- 36 [-]: LE        0 R9 K12     ; if R9 > 2.5 then PC := 48
- 37 [-]: JMP       48           ; PC := 48
- 38 [-]: GETGLOBAL R9 K8        ; R9 := npcMaxRange
- 39 [-]: DIV       R9 R8 R9     ; R9 := R8 / R9
- 40 [-]: SUB       R9 K3 R9     ; R9 := 1 - R9
- 41 [-]: LEN       R10 R3       ; R10 := # R3
- 42 [-]: DIV       R9 R9 R10    ; R9 := R9 / R10
- 43 [-]: ADD       R2 R2 R9     ; R2 := R2 + R9
- 44 [-]: SELF      R9 R0 K13    ; R10 := R0; R9 := R0["0xACA59CC1"]
- 45 [-]: GETTABLE  R11 R3 R7    ; R11 := R3[R7]
- 46 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["avatar"]
- 47 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 48 [-]: FORLOOP   R4 10        ; R4 += R6; if R4 <= R5 then begin PC := 10; R7 := R4 end
- 49 [-]: RETURN    R2 2         ; return R2
- 50 [-]: RETURN    R0 1         ; return 
+  6 [-]: LOADNIL   R4 R4        ; R4 := nil
+  7 [-]: LOADK     R5 K3        ; R5 := 1
+  8 [-]: LEN       R6 R3        ; R6 := # R3
+  9 [-]: LOADK     R7 K3        ; R7 := 1
+ 10 [-]: FORPREP   R5 51        ; R5 -= R7; PC := 51
+ 11 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
+ 12 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["visible"]
+ 13 [-]: TEST      R9 0         ; if not R9 then PC := 51
+ 14 [-]: JMP       51           ; PC := 51
+ 15 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
+ 16 [-]: SELF      R9 R9 K5     ; R10 := R9; R9 := R9["0x3CAF9580"]
+ 17 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 18 [-]: TEST      R9 0         ; if not R9 then PC := 51
+ 19 [-]: JMP       51           ; PC := 51
+ 20 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
+ 21 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["distanceToTarget"]
+ 22 [-]: GETGLOBAL R10 K7       ; R10 := npcMinRange
+ 23 [-]: LE        0 R10 R9     ; if R10 > R9 then PC := 51
+ 24 [-]: JMP       51           ; PC := 51
+ 25 [-]: GETGLOBAL R10 K8       ; R10 := npcMaxRange
+ 26 [-]: LE        0 R9 R10     ; if R9 > R10 then PC := 51
+ 27 [-]: JMP       51           ; PC := 51
+ 28 [-]: GETTABLE  R10 R3 R8    ; R10 := R3[R8]
+ 29 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["avatar"]
+ 30 [-]: SELF      R10 R10 K10  ; R11 := R10; R10 := R10["0xBBAF192"]
+ 31 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 32 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["y"]
+ 33 [-]: SELF      R11 R1 K10   ; R12 := R1; R11 := R1["0xBBAF192"]
+ 34 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 35 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["y"]
+ 36 [-]: SUB       R10 R10 R11  ; R10 := R10 - R11
+ 37 [-]: LE        0 R10 K12    ; if R10 > 2.5 then PC := 51
+ 38 [-]: JMP       51           ; PC := 51
+ 39 [-]: GETGLOBAL R10 K8       ; R10 := npcMaxRange
+ 40 [-]: DIV       R10 R9 R10   ; R10 := R9 / R10
+ 41 [-]: SUB       R10 K3 R10   ; R10 := 1 - R10
+ 42 [-]: LEN       R11 R3       ; R11 := # R3
+ 43 [-]: DIV       R10 R10 R11  ; R10 := R10 / R11
+ 44 [-]: ADD       R2 R2 R10    ; R2 := R2 + R10
+ 45 [-]: GETTABLE  R10 R3 R8    ; R10 := R3[R8]
+ 46 [-]: GETTABLE  R4 R10 K9    ; R4 := R10["avatar"]
+ 47 [-]: SELF      R10 R0 K13   ; R11 := R0; R10 := R0["0xACA59CC1"]
+ 48 [-]: GETTABLE  R12 R3 R8    ; R12 := R3[R8]
+ 49 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["avatar"]
+ 50 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 51 [-]: FORLOOP   R5 11        ; R5 += R7; if R5 <= R6 then begin PC := 11; R8 := R5 end
+ 52 [-]: LT        0 K0 R2      ; if 0 >= R2 then PC := 72
+ 53 [-]: JMP       72           ; PC := 72
+ 54 [-]: GETGLOBAL R10 K14      ; R10 := doAffineNavCheck
+ 55 [-]: TEST      R10 0        ; if not R10 then PC := 72
+ 56 [-]: JMP       72           ; PC := 72
+ 57 [-]: GETGLOBAL R10 K15      ; R10 := gRegion
+ 58 [-]: SELF      R10 R10 K16  ; R11 := R10; R10 := R10["0xD1CEF990"]
+ 59 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 60 [-]: SELF      R10 R10 K17  ; R11 := R10; R10 := R10["0xF32F71B4"]
+ 61 [-]: SELF      R12 R1 K18   ; R13 := R1; R12 := R1["0x6DA72501"]
+ 62 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 63 [-]: SELF      R13 R4 K18   ; R14 := R4; R13 := R4["0x6DA72501"]
+ 64 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 65 [-]: SELF      R14 R1 K1    ; R15 := R1; R14 := R1["0xABD9DD93"]
+ 66 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
+ 67 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
+ 68 [-]: LT        0 R10 K3     ; if R10 >= 1 then PC := 72
+ 69 [-]: JMP       72           ; PC := 72
+ 70 [-]: LOADK     R11 K0       ; R11 := 0
+ 71 [-]: RETURN    R11 2        ; return R11
+ 72 [-]: RETURN    R2 2         ; return R2
+ 73 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 52
+; Defined at line: 62
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -126,7 +149,7 @@ code size: 6
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 66
+; Defined at line: 76
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -347,7 +370,7 @@ code size: 6
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 153
+; Defined at line: 163
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

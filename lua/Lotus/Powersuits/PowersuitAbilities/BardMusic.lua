@@ -1,4 +1,4 @@
-code size: 154
+code size: 150
 code size: 83
 code size: 49
 code size: 22
@@ -17,10 +17,10 @@ code size: 95
 code size: 731
 code size: 83
 code size: 33
-code size: 34
-code size: 34
+code size: 28
+code size: 28
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\BardMusic.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\BardMusic.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -173,16 +173,12 @@ code size: 34
 142 [-]: SETGLOBAL R22 K45      ; SetThreatLevel := R22
 143 [-]: SETGLOBAL R22 K46      ; 0x4F639DB2 := R22
 144 [-]: CLOSURE   R22 18       ; R22 := closure(Function #19)
-145 [-]: MOVE      R0 R16       ; R0 := R16
-146 [-]: MOVE      R0 R17       ; R0 := R17
-147 [-]: SETGLOBAL R22 K47      ; GiveFightingUpgrades := R22
-148 [-]: SETGLOBAL R22 K48      ; 0xE211EA92 := R22
-149 [-]: CLOSURE   R22 19       ; R22 := closure(Function #20)
-150 [-]: MOVE      R0 R16       ; R0 := R16
-151 [-]: MOVE      R0 R17       ; R0 := R17
-152 [-]: SETGLOBAL R22 K49      ; RemoveFightingUpgrades := R22
-153 [-]: SETGLOBAL R22 K50      ; 0xFEBBF244 := R22
-154 [-]: RETURN    R0 1         ; return 
+145 [-]: SETGLOBAL R22 K47      ; GiveFightingUpgrades := R22
+146 [-]: SETGLOBAL R22 K48      ; 0xE211EA92 := R22
+147 [-]: CLOSURE   R22 19       ; R22 := closure(Function #20)
+148 [-]: SETGLOBAL R22 K49      ; RemoveFightingUpgrades := R22
+149 [-]: SETGLOBAL R22 K50      ; 0xFEBBF244 := R22
+150 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -2176,89 +2172,77 @@ code size: 34
 ;
 ; Name:            
 ; Defined at line: 689
-; #Upvalues:       2
+; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := gRegion
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0xA559F558"]
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 34
-  5 [-]: JMP       34           ; PC := 34
+  4 [-]: TEST      R2 0         ; if not R2 then PC := 28
+  5 [-]: JMP       28           ; PC := 28
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: TEST      R2 1         ; if R2 then PC := 34
- 10 [-]: JMP       34           ; PC := 34
+  9 [-]: TEST      R2 1         ; if R2 then PC := 28
+ 10 [-]: JMP       28           ; PC := 28
  11 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x5A115A02"]
  12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 1         ; if R2 then PC := 34
- 14 [-]: JMP       34           ; PC := 34
+ 13 [-]: TEST      R2 1         ; if R2 then PC := 28
+ 14 [-]: JMP       28           ; PC := 28
  15 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0["0x7BAB77F"]
  16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 17 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 34
- 18 [-]: JMP       34           ; PC := 34
- 19 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 20 [-]: LOADK     R3 K5        ; R3 := 1
- 21 [-]: CALL      R2 2 1       ; R2(R3)
- 22 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 23 [-]: MOVE      R3 R1        ; R3 := R1
- 24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 25 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1["0x8DB5D01F"]
- 26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 27 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0x3B1B11B9"]
- 28 [-]: GETGLOBAL R5 K8        ; R5 := Game
- 29 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["WEAPON_MELEE_DAMAGE"]
- 30 [-]: GETGLOBAL R6 K8        ; R6 := Game
- 31 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["STACKING_MULTIPLY"]
- 32 [-]: LOADK     R7 K11       ; R7 := 0.5
- 33 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 34 [-]: RETURN    R0 1         ; return 
+ 17 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 28
+ 18 [-]: JMP       28           ; PC := 28
+ 19 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0x8DB5D01F"]
+ 20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 21 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x3B1B11B9"]
+ 22 [-]: GETGLOBAL R4 K7        ; R4 := Game
+ 23 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["WEAPON_MELEE_DAMAGE"]
+ 24 [-]: GETGLOBAL R5 K7        ; R5 := Game
+ 25 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["STACKING_MULTIPLY"]
+ 26 [-]: LOADK     R6 K10       ; R6 := 0.5
+ 27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
+ 28 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 697
-; #Upvalues:       2
+; Defined at line: 695
+; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := gRegion
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0xA559F558"]
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 34
-  5 [-]: JMP       34           ; PC := 34
+  4 [-]: TEST      R2 0         ; if not R2 then PC := 28
+  5 [-]: JMP       28           ; PC := 28
   6 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: TEST      R2 1         ; if R2 then PC := 34
- 10 [-]: JMP       34           ; PC := 34
+  9 [-]: TEST      R2 1         ; if R2 then PC := 28
+ 10 [-]: JMP       28           ; PC := 28
  11 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x5A115A02"]
  12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 1         ; if R2 then PC := 34
- 14 [-]: JMP       34           ; PC := 34
+ 13 [-]: TEST      R2 1         ; if R2 then PC := 28
+ 14 [-]: JMP       28           ; PC := 28
  15 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0["0x7BAB77F"]
  16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 17 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 34
- 18 [-]: JMP       34           ; PC := 34
- 19 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 20 [-]: LOADK     R3 K5        ; R3 := 1
- 21 [-]: CALL      R2 2 1       ; R2(R3)
- 22 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 23 [-]: MOVE      R3 R1        ; R3 := R1
- 24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 25 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1["0x8DB5D01F"]
- 26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 27 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0xF21555A7"]
- 28 [-]: GETGLOBAL R5 K8        ; R5 := Game
- 29 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["WEAPON_MELEE_DAMAGE"]
- 30 [-]: GETGLOBAL R6 K8        ; R6 := Game
- 31 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["STACKING_MULTIPLY"]
- 32 [-]: LOADK     R7 K11       ; R7 := 0.5
- 33 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 34 [-]: RETURN    R0 1         ; return 
+ 17 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 28
+ 18 [-]: JMP       28           ; PC := 28
+ 19 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0x8DB5D01F"]
+ 20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 21 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0xF21555A7"]
+ 22 [-]: GETGLOBAL R4 K7        ; R4 := Game
+ 23 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["WEAPON_MELEE_DAMAGE"]
+ 24 [-]: GETGLOBAL R5 K7        ; R5 := Game
+ 25 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["STACKING_MULTIPLY"]
+ 26 [-]: LOADK     R6 K10       ; R6 := 0.5
+ 27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
+ 28 [-]: RETURN    R0 1         ; return 
 
 

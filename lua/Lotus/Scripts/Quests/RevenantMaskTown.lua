@@ -1,5 +1,5 @@
 code size: 10
-code size: 366
+code size: 372
 code size: 14
 code size: 66
 code size: 36
@@ -7,7 +7,7 @@ code size: 9
 code size: 27
 code size: 16
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\RevenantMaskTown.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\RevenantMaskTown.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -174,241 +174,247 @@ code size: 16
 135 [-]: JMP       140          ; PC := 140
 136 [-]: GETTABLE  R27 R26 K35  ; R27 := R26["mTitle"]
 137 [-]: GETUPVAL  R28 U1       ; R28 := U1
-138 [-]: LT        0 R27 R28    ; if R27 >= R28 then PC := 149
-139 [-]: JMP       149          ; PC := 149
+138 [-]: LT        0 R27 R28    ; if R27 >= R28 then PC := 155
+139 [-]: JMP       155          ; PC := 155
 140 [-]: GETGLOBAL R27 K17      ; R27 := 0x201191EA
 141 [-]: LOADK     R28 K36      ; R28 := 3
 142 [-]: CALL      R27 2 1      ; R27(R28)
-143 [-]: GETGLOBAL R27 K23      ; R27 := gGameData
-144 [-]: SELF      R27 R27 K34  ; R28 := R27; R27 := R27["0xDB2548DF"]
-145 [-]: GETUPVAL  R29 U0       ; R29 := U0
-146 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-147 [-]: MOVE      R26 R27      ; R26 := R27
-148 [-]: JMP       131          ; PC := 131
-149 [-]: GETGLOBAL R27 K37      ; R27 := UISys
-150 [-]: GETTABLE  R27 R27 K38  ; R27 := R27["0x449B53E0"]
-151 [-]: NEWTABLE  R28 1 0      ; R28 := {}
-152 [-]: MOVE      R29 R18      ; R29 := R18
-153 [-]: GETGLOBAL R30 K39      ; R30 := keyChain
-154 [-]: SELF      R30 R30 K20  ; R31 := R30; R30 := R30["0x1B252E3C"]
-155 [-]: CALL      R30 2 0      ; R30,... := R30(R31)
-156 [-]: SETLIST   R28 0 1      ; R28[(1-1)*FPF+i] := R(28+i), 1 <= i <= 0
-157 [-]: MOVE      R29 R1       ; R29 := R1
-158 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-159 [-]: SELF      R28 R27 K40  ; R29 := R27; R28 := R27["0xAFDDC504"]
-160 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-161 [-]: TEST      R28 1        ; if R28 then PC := 167
-162 [-]: JMP       167          ; PC := 167
-163 [-]: GETGLOBAL R28 K17      ; R28 := 0x201191EA
-164 [-]: LOADK     R29 K18      ; R29 := 0
-165 [-]: CALL      R28 2 1      ; R28(R29)
-166 [-]: JMP       159          ; PC := 159
-167 [-]: GETGLOBAL R28 K41      ; R28 := 0x7C282057
-168 [-]: GETGLOBAL R29 K19      ; R29 := revenantMaskStoreItem
-169 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-170 [-]: SETGLOBAL R28 K19      ; revenantMaskStoreItem := R28
-171 [-]: GETGLOBAL R28 K41      ; R28 := 0x7C282057
-172 [-]: GETGLOBAL R29 K39      ; R29 := keyChain
-173 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-174 [-]: SETGLOBAL R28 K39      ; keyChain := R28
-175 [-]: MOVE      R28 R1       ; R28 := R1
-176 [-]: GETGLOBAL R29 K19      ; R29 := revenantMaskStoreItem
-177 [-]: SELF      R29 R29 K42  ; R30 := R29; R29 := R29["0x3077BE70"]
-178 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-179 [-]: GETGLOBAL R30 K23      ; R30 := gGameData
-180 [-]: SELF      R30 R30 K24  ; R31 := R30; R30 := R30["0x6F2E05FD"]
-181 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-182 [-]: SELF      R30 R30 K43  ; R31 := R30; R30 := R30["0xEA75EFF7"]
-183 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-184 [-]: GETGLOBAL R31 K3       ; R31 := 0x63B09107
-185 [-]: MOVE      R32 R30      ; R32 := R30
-186 [-]: CALL      R31 2 4      ; R31,R32,R33 := R31(R32)
-187 [-]: JMP       196          ; PC := 196
-188 [-]: GETTABLE  R36 R35 K26  ; R36 := R35["mItemType"]
-189 [-]: EQ        0 R36 R29    ; if R36 ~= R29 then PC := 196
-190 [-]: JMP       196          ; PC := 196
-191 [-]: GETGLOBAL R36 K0       ; R36 := _T
-192 [-]: GETTABLE  R36 R36 K21  ; R36 := R36["PreventPurchasingItems"]
-193 [-]: SETTABLE  R36 R18 K8   ; R36[R18] := nil
-194 [-]: MOVE      R28 R0       ; R28 := R0
-195 [-]: JMP       198          ; PC := 198
-196 [-]: TFORLOOP  R31 2        ; R34,R35 :=  R31(R32,R33); if R34 ~= nil then begin PC = 188; R33 := R34 end
-197 [-]: JMP       188          ; PC := 188
-198 [-]: GETGLOBAL R36 K23      ; R36 := gGameData
-199 [-]: SELF      R36 R36 K24  ; R37 := R36; R36 := R36["0x6F2E05FD"]
-200 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-201 [-]: SELF      R36 R36 K44  ; R37 := R36; R36 := R36["0x70666039"]
-202 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-203 [-]: MOVE      R37 R0       ; R37 := R0
-204 [-]: GETGLOBAL R38 K3       ; R38 := 0x63B09107
-205 [-]: MOVE      R39 R36      ; R39 := R36
-206 [-]: CALL      R38 2 4      ; R38,R39,R40 := R38(R39)
-207 [-]: JMP       214          ; PC := 214
-208 [-]: GETTABLE  R43 R42 K26  ; R43 := R42["mItemType"]
-209 [-]: GETGLOBAL R44 K39      ; R44 := keyChain
-210 [-]: EQ        0 R43 R44    ; if R43 ~= R44 then PC := 214
-211 [-]: JMP       214          ; PC := 214
-212 [-]: MOVE      R37 R1       ; R37 := R1
-213 [-]: JMP       216          ; PC := 216
-214 [-]: TFORLOOP  R38 2        ; R41,R42 :=  R38(R39,R40); if R41 ~= nil then begin PC = 208; R40 := R41 end
-215 [-]: JMP       208          ; PC := 208
-216 [-]: TEST      R28 1        ; if R28 then PC := 220
+143 [-]: GETGLOBAL R27 K16      ; R27 := 0x400E7765
+144 [-]: GETGLOBAL R28 K23      ; R28 := gGameData
+145 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+146 [-]: TEST      R27 0        ; if not R27 then PC := 149
+147 [-]: JMP       149          ; PC := 149
+148 [-]: RETURN    R0 1         ; return 
+149 [-]: GETGLOBAL R27 K23      ; R27 := gGameData
+150 [-]: SELF      R27 R27 K34  ; R28 := R27; R27 := R27["0xDB2548DF"]
+151 [-]: GETUPVAL  R29 U0       ; R29 := U0
+152 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
+153 [-]: MOVE      R26 R27      ; R26 := R27
+154 [-]: JMP       131          ; PC := 131
+155 [-]: GETGLOBAL R27 K37      ; R27 := UISys
+156 [-]: GETTABLE  R27 R27 K38  ; R27 := R27["0x449B53E0"]
+157 [-]: NEWTABLE  R28 1 0      ; R28 := {}
+158 [-]: MOVE      R29 R18      ; R29 := R18
+159 [-]: GETGLOBAL R30 K39      ; R30 := keyChain
+160 [-]: SELF      R30 R30 K20  ; R31 := R30; R30 := R30["0x1B252E3C"]
+161 [-]: CALL      R30 2 0      ; R30,... := R30(R31)
+162 [-]: SETLIST   R28 0 1      ; R28[(1-1)*FPF+i] := R(28+i), 1 <= i <= 0
+163 [-]: MOVE      R29 R1       ; R29 := R1
+164 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
+165 [-]: SELF      R28 R27 K40  ; R29 := R27; R28 := R27["0xAFDDC504"]
+166 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+167 [-]: TEST      R28 1        ; if R28 then PC := 173
+168 [-]: JMP       173          ; PC := 173
+169 [-]: GETGLOBAL R28 K17      ; R28 := 0x201191EA
+170 [-]: LOADK     R29 K18      ; R29 := 0
+171 [-]: CALL      R28 2 1      ; R28(R29)
+172 [-]: JMP       165          ; PC := 165
+173 [-]: GETGLOBAL R28 K41      ; R28 := 0x7C282057
+174 [-]: GETGLOBAL R29 K19      ; R29 := revenantMaskStoreItem
+175 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+176 [-]: SETGLOBAL R28 K19      ; revenantMaskStoreItem := R28
+177 [-]: GETGLOBAL R28 K41      ; R28 := 0x7C282057
+178 [-]: GETGLOBAL R29 K39      ; R29 := keyChain
+179 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+180 [-]: SETGLOBAL R28 K39      ; keyChain := R28
+181 [-]: MOVE      R28 R1       ; R28 := R1
+182 [-]: GETGLOBAL R29 K19      ; R29 := revenantMaskStoreItem
+183 [-]: SELF      R29 R29 K42  ; R30 := R29; R29 := R29["0x3077BE70"]
+184 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+185 [-]: GETGLOBAL R30 K23      ; R30 := gGameData
+186 [-]: SELF      R30 R30 K24  ; R31 := R30; R30 := R30["0x6F2E05FD"]
+187 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+188 [-]: SELF      R30 R30 K43  ; R31 := R30; R30 := R30["0xEA75EFF7"]
+189 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+190 [-]: GETGLOBAL R31 K3       ; R31 := 0x63B09107
+191 [-]: MOVE      R32 R30      ; R32 := R30
+192 [-]: CALL      R31 2 4      ; R31,R32,R33 := R31(R32)
+193 [-]: JMP       202          ; PC := 202
+194 [-]: GETTABLE  R36 R35 K26  ; R36 := R35["mItemType"]
+195 [-]: EQ        0 R36 R29    ; if R36 ~= R29 then PC := 202
+196 [-]: JMP       202          ; PC := 202
+197 [-]: GETGLOBAL R36 K0       ; R36 := _T
+198 [-]: GETTABLE  R36 R36 K21  ; R36 := R36["PreventPurchasingItems"]
+199 [-]: SETTABLE  R36 R18 K8   ; R36[R18] := nil
+200 [-]: MOVE      R28 R0       ; R28 := R0
+201 [-]: JMP       204          ; PC := 204
+202 [-]: TFORLOOP  R31 2        ; R34,R35 :=  R31(R32,R33); if R34 ~= nil then begin PC = 194; R33 := R34 end
+203 [-]: JMP       194          ; PC := 194
+204 [-]: GETGLOBAL R36 K23      ; R36 := gGameData
+205 [-]: SELF      R36 R36 K24  ; R37 := R36; R36 := R36["0x6F2E05FD"]
+206 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+207 [-]: SELF      R36 R36 K44  ; R37 := R36; R36 := R36["0x70666039"]
+208 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+209 [-]: MOVE      R37 R0       ; R37 := R0
+210 [-]: GETGLOBAL R38 K3       ; R38 := 0x63B09107
+211 [-]: MOVE      R39 R36      ; R39 := R36
+212 [-]: CALL      R38 2 4      ; R38,R39,R40 := R38(R39)
+213 [-]: JMP       220          ; PC := 220
+214 [-]: GETTABLE  R43 R42 K26  ; R43 := R42["mItemType"]
+215 [-]: GETGLOBAL R44 K39      ; R44 := keyChain
+216 [-]: EQ        0 R43 R44    ; if R43 ~= R44 then PC := 220
 217 [-]: JMP       220          ; PC := 220
-218 [-]: TEST      R37 1        ; if R37 then PC := 281
-219 [-]: JMP       281          ; PC := 281
-220 [-]: GETGLOBAL R43 K0       ; R43 := _T
-221 [-]: GETGLOBAL R44 K0       ; R44 := _T
-222 [-]: GETTABLE  R44 R44 K45  ; R44 := R44["SkipVendorDialog"]
-223 [-]: TEST      R44 1        ; if R44 then PC := 226
-224 [-]: JMP       226          ; PC := 226
-225 [-]: NEWTABLE  R44 0 0      ; R44 := {}
-226 [-]: SETTABLE  R43 K45 R44  ; R43["SkipVendorDialog"] := R44
-227 [-]: GETGLOBAL R43 K0       ; R43 := _T
-228 [-]: GETTABLE  R43 R43 K45  ; R43 := R43["SkipVendorDialog"]
-229 [-]: SETTABLE  R43 K2 K22   ; R43["/Lotus/Language/Npcs/Nakak"] := "0x1"
-230 [-]: GETGLOBAL R43 K0       ; R43 := _T
-231 [-]: GETGLOBAL R44 K0       ; R44 := _T
-232 [-]: GETTABLE  R44 R44 K46  ; R44 := R44["TaggedDialog"]
-233 [-]: TEST      R44 1        ; if R44 then PC := 236
-234 [-]: JMP       236          ; PC := 236
-235 [-]: NEWTABLE  R44 0 0      ; R44 := {}
-236 [-]: SETTABLE  R43 K46 R44  ; R43["TaggedDialog"] := R44
-237 [-]: CLOSURE   R43 0        ; R43 := closure(Function #1.1)
-238 [-]: MOVE      R0 R18       ; R0 := R18
-239 [-]: MOVE      R0 R15       ; R0 := R15
-240 [-]: MOVE      R0 R16       ; R0 := R16
-241 [-]: MOVE      R0 R28       ; R0 := R28
-242 [-]: MOVE      R0 R37       ; R0 := R37
-243 [-]: MOVE      R0 R27       ; R0 := R27
-244 [-]: TEST      R28 0        ; if not R28 then PC := 277
-245 [-]: JMP       277          ; PC := 277
-246 [-]: GETGLOBAL R44 K0       ; R44 := _T
-247 [-]: GETTABLE  R44 R44 K46  ; R44 := R44["TaggedDialog"]
-248 [-]: NEWTABLE  R45 0 2      ; R45 := {}
-249 [-]: SETTABLE  R45 K48 K49  ; R45["mName"] := ""
-250 [-]: CLOSURE   R46 1        ; R46 := closure(Function #1.2)
-251 [-]: SETTABLE  R45 K50 R46  ; R45["mCallback"] := R46
-252 [-]: SETTABLE  R44 K47 R45  ; R44["MaskSeller_ForceDialog"] := R45
-253 [-]: GETGLOBAL R44 K0       ; R44 := _T
-254 [-]: GETTABLE  R44 R44 K46  ; R44 := R44["TaggedDialog"]
-255 [-]: NEWTABLE  R45 0 4      ; R45 := {}
-256 [-]: SETTABLE  R45 K48 K52  ; R45["mName"] := "/Lotus/Language/RevenantQuest/NakakDialogOption"
-257 [-]: SETTABLE  R45 K53 K22  ; R45["mAlwaysShow"] := "0x1"
-258 [-]: CLOSURE   R46 2        ; R46 := closure(Function #1.3)
-259 [-]: SETTABLE  R45 K54 R46  ; R45["mCondition"] := R46
-260 [-]: CLOSURE   R46 3        ; R46 := closure(Function #1.4)
-261 [-]: MOVE      R0 R18       ; R0 := R18
-262 [-]: SETTABLE  R45 K50 R46  ; R45["mCallback"] := R46
-263 [-]: SETTABLE  R44 K51 R45  ; R44["MaskSeller_RevenantQuest"] := R45
-264 [-]: GETGLOBAL R44 K0       ; R44 := _T
-265 [-]: GETGLOBAL R45 K0       ; R45 := _T
-266 [-]: GETTABLE  R45 R45 K55  ; R45 := R45["OnBuyVendorItemCallbacks"]
-267 [-]: TEST      R45 1        ; if R45 then PC := 270
-268 [-]: JMP       270          ; PC := 270
-269 [-]: NEWTABLE  R45 0 0      ; R45 := {}
-270 [-]: SETTABLE  R44 K55 R45  ; R44["OnBuyVendorItemCallbacks"] := R45
-271 [-]: GETGLOBAL R44 K0       ; R44 := _T
-272 [-]: GETTABLE  R44 R44 K55  ; R44 := R44["OnBuyVendorItemCallbacks"]
-273 [-]: CLOSURE   R45 4        ; R45 := closure(Function #1.5)
-274 [-]: MOVE      R0 R43       ; R0 := R43
-275 [-]: SETTABLE  R44 R18 R45  ; R44[R18] := R45
-276 [-]: JMP       279          ; PC := 279
-277 [-]: MOVE      R44 R43      ; R44 := R43
-278 [-]: CALL      R44 1 1      ; R44()
-279 [-]: CLOSE     R43          ; SAVE R43,...
-280 [-]: JMP       284          ; PC := 284
-281 [-]: TEST      R19 1        ; if R19 then PC := 284
-282 [-]: JMP       284          ; PC := 284
-283 [-]: RETURN    R0 1         ; return 
-284 [-]: GETGLOBAL R43 K0       ; R43 := _T
-285 [-]: GETTABLE  R43 R43 K1   ; R43 := R43["HubNpcs"]
-286 [-]: TEST      R43 0        ; if not R43 then PC := 293
-287 [-]: JMP       293          ; PC := 293
-288 [-]: GETGLOBAL R43 K0       ; R43 := _T
-289 [-]: GETTABLE  R43 R43 K1   ; R43 := R43["HubNpcs"]
-290 [-]: GETTABLE  R43 R43 K2   ; R43 := R43["/Lotus/Language/Npcs/Nakak"]
-291 [-]: TEST      R43 1        ; if R43 then PC := 297
-292 [-]: JMP       297          ; PC := 297
-293 [-]: GETGLOBAL R43 K17      ; R43 := 0x201191EA
-294 [-]: LOADK     R44 K18      ; R44 := 0
-295 [-]: CALL      R43 2 1      ; R43(R44)
-296 [-]: JMP       284          ; PC := 284
-297 [-]: TEST      R19 1        ; if R19 then PC := 315
-298 [-]: JMP       315          ; PC := 315
-299 [-]: GETGLOBAL R43 K0       ; R43 := _T
-300 [-]: GETTABLE  R43 R43 K1   ; R43 := R43["HubNpcs"]
-301 [-]: GETTABLE  R43 R43 K2   ; R43 := R43["/Lotus/Language/Npcs/Nakak"]
-302 [-]: GETTABLE  R43 R43 K56  ; R43 := R43["entity"]
-303 [-]: SELF      R43 R43 K57  ; R44 := R43; R43 := R43["0xAB436EF2"]
-304 [-]: GETGLOBAL R45 K58      ; R45 := questMarkerType
-305 [-]: GETGLOBAL R46 K31      ; R46 := 0xEC274B1A
-306 [-]: LOADK     R47 K59      ; R47 := "GAME_C1_HIP1"
-307 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-308 [-]: GETGLOBAL R47 K60      ; R47 := 0x221C9700
-309 [-]: LOADK     R48 K18      ; R48 := 0
-310 [-]: LOADK     R49 K61      ; R49 := -0.25
-311 [-]: LOADK     R50 K18      ; R50 := 0
-312 [-]: CALL      R47 4 0      ; R47,... := R47(R48,R49,R50)
-313 [-]: CALL      R43 0 2      ; R43 := R43(R44,...)
-314 [-]: MOVE      R15 R43      ; R15 := R43
-315 [-]: TEST      R19 0        ; if not R19 then PC := 320
-316 [-]: JMP       320          ; PC := 320
-317 [-]: GETGLOBAL R43 K62      ; R43 := duringQuestSpeech
-318 [-]: TEST      R43 1        ; if R43 then PC := 321
-319 [-]: JMP       321          ; PC := 321
-320 [-]: GETGLOBAL R43 K63      ; R43 := preQuestSpeech
-321 [-]: GETGLOBAL R44 K37      ; R44 := UISys
-322 [-]: GETTABLE  R44 R44 K38  ; R44 := R44["0x449B53E0"]
-323 [-]: NEWTABLE  R45 0 0      ; R45 := {}
-324 [-]: SELF      R46 R43 K20  ; R47 := R43; R46 := R43["0x1B252E3C"]
-325 [-]: CALL      R46 2 0      ; R46,... := R46(R47)
-326 [-]: SETLIST   R45 0 1      ; R45[(1-1)*FPF+i] := R(45+i), 1 <= i <= 0
-327 [-]: MOVE      R46 R0       ; R46 := R0
-328 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
-329 [-]: SELF      R45 R44 K40  ; R46 := R44; R45 := R44["0xAFDDC504"]
-330 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-331 [-]: TEST      R45 1        ; if R45 then PC := 337
-332 [-]: JMP       337          ; PC := 337
-333 [-]: GETGLOBAL R45 K17      ; R45 := 0x201191EA
-334 [-]: LOADK     R46 K18      ; R46 := 0
-335 [-]: CALL      R45 2 1      ; R45(R46)
-336 [-]: JMP       329          ; PC := 329
-337 [-]: GETGLOBAL R45 K41      ; R45 := 0x7C282057
-338 [-]: MOVE      R46 R43      ; R46 := R43
-339 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-340 [-]: SETTABLE  R16 K10 R45  ; R16[1] := R45
-341 [-]: GETGLOBAL R45 K12      ; R45 := table
-342 [-]: GETTABLE  R45 R45 K64  ; R45 := R45["0xE6450C9D"]
-343 [-]: GETGLOBAL R46 K0       ; R46 := _T
-344 [-]: GETTABLE  R46 R46 K1   ; R46 := R46["HubNpcs"]
-345 [-]: GETTABLE  R46 R46 K2   ; R46 := R46["/Lotus/Language/Npcs/Nakak"]
-346 [-]: GETTABLE  R46 R46 K4   ; R46 := R46["anchors"]
-347 [-]: NEWTABLE  R47 0 3      ; R47 := {}
-348 [-]: SETTABLE  R47 K5 K6    ; R47["id"] := "RevenantMask"
-349 [-]: SETTABLE  R47 K7 R44   ; R47["loader"] := R44
-350 [-]: NEWTABLE  R48 1 0      ; R48 := {}
-351 [-]: NEWTABLE  R49 2 0      ; R49 := {}
-352 [-]: LOADK     R50 K65      ; R50 := "activatedSpeechSets"
-353 [-]: MOVE      R51 R16      ; R51 := R16
-354 [-]: SETLIST   R49 2 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 2
-355 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
-356 [-]: SETTABLE  R47 K9 R48   ; R47["sets"] := R48
-357 [-]: CALL      R45 3 1      ; R45(R46,R47)
-358 [-]: GETGLOBAL R45 K12      ; R45 := table
-359 [-]: GETTABLE  R45 R45 K64  ; R45 := R45["0xE6450C9D"]
-360 [-]: GETGLOBAL R46 K0       ; R46 := _T
-361 [-]: GETTABLE  R46 R46 K1   ; R46 := R46["HubNpcs"]
-362 [-]: GETTABLE  R46 R46 K2   ; R46 := R46["/Lotus/Language/Npcs/Nakak"]
-363 [-]: GETTABLE  R46 R46 K65  ; R46 := R46["activatedSpeechSets"]
-364 [-]: MOVE      R47 R16      ; R47 := R16
-365 [-]: CALL      R45 3 1      ; R45(R46,R47)
-366 [-]: RETURN    R0 1         ; return 
+218 [-]: MOVE      R37 R1       ; R37 := R1
+219 [-]: JMP       222          ; PC := 222
+220 [-]: TFORLOOP  R38 2        ; R41,R42 :=  R38(R39,R40); if R41 ~= nil then begin PC = 214; R40 := R41 end
+221 [-]: JMP       214          ; PC := 214
+222 [-]: TEST      R28 1        ; if R28 then PC := 226
+223 [-]: JMP       226          ; PC := 226
+224 [-]: TEST      R37 1        ; if R37 then PC := 287
+225 [-]: JMP       287          ; PC := 287
+226 [-]: GETGLOBAL R43 K0       ; R43 := _T
+227 [-]: GETGLOBAL R44 K0       ; R44 := _T
+228 [-]: GETTABLE  R44 R44 K45  ; R44 := R44["SkipVendorDialog"]
+229 [-]: TEST      R44 1        ; if R44 then PC := 232
+230 [-]: JMP       232          ; PC := 232
+231 [-]: NEWTABLE  R44 0 0      ; R44 := {}
+232 [-]: SETTABLE  R43 K45 R44  ; R43["SkipVendorDialog"] := R44
+233 [-]: GETGLOBAL R43 K0       ; R43 := _T
+234 [-]: GETTABLE  R43 R43 K45  ; R43 := R43["SkipVendorDialog"]
+235 [-]: SETTABLE  R43 K2 K22   ; R43["/Lotus/Language/Npcs/Nakak"] := "0x1"
+236 [-]: GETGLOBAL R43 K0       ; R43 := _T
+237 [-]: GETGLOBAL R44 K0       ; R44 := _T
+238 [-]: GETTABLE  R44 R44 K46  ; R44 := R44["TaggedDialog"]
+239 [-]: TEST      R44 1        ; if R44 then PC := 242
+240 [-]: JMP       242          ; PC := 242
+241 [-]: NEWTABLE  R44 0 0      ; R44 := {}
+242 [-]: SETTABLE  R43 K46 R44  ; R43["TaggedDialog"] := R44
+243 [-]: CLOSURE   R43 0        ; R43 := closure(Function #1.1)
+244 [-]: MOVE      R0 R18       ; R0 := R18
+245 [-]: MOVE      R0 R15       ; R0 := R15
+246 [-]: MOVE      R0 R16       ; R0 := R16
+247 [-]: MOVE      R0 R28       ; R0 := R28
+248 [-]: MOVE      R0 R37       ; R0 := R37
+249 [-]: MOVE      R0 R27       ; R0 := R27
+250 [-]: TEST      R28 0        ; if not R28 then PC := 283
+251 [-]: JMP       283          ; PC := 283
+252 [-]: GETGLOBAL R44 K0       ; R44 := _T
+253 [-]: GETTABLE  R44 R44 K46  ; R44 := R44["TaggedDialog"]
+254 [-]: NEWTABLE  R45 0 2      ; R45 := {}
+255 [-]: SETTABLE  R45 K48 K49  ; R45["mName"] := ""
+256 [-]: CLOSURE   R46 1        ; R46 := closure(Function #1.2)
+257 [-]: SETTABLE  R45 K50 R46  ; R45["mCallback"] := R46
+258 [-]: SETTABLE  R44 K47 R45  ; R44["MaskSeller_ForceDialog"] := R45
+259 [-]: GETGLOBAL R44 K0       ; R44 := _T
+260 [-]: GETTABLE  R44 R44 K46  ; R44 := R44["TaggedDialog"]
+261 [-]: NEWTABLE  R45 0 4      ; R45 := {}
+262 [-]: SETTABLE  R45 K48 K52  ; R45["mName"] := "/Lotus/Language/RevenantQuest/NakakDialogOption"
+263 [-]: SETTABLE  R45 K53 K22  ; R45["mAlwaysShow"] := "0x1"
+264 [-]: CLOSURE   R46 2        ; R46 := closure(Function #1.3)
+265 [-]: SETTABLE  R45 K54 R46  ; R45["mCondition"] := R46
+266 [-]: CLOSURE   R46 3        ; R46 := closure(Function #1.4)
+267 [-]: MOVE      R0 R18       ; R0 := R18
+268 [-]: SETTABLE  R45 K50 R46  ; R45["mCallback"] := R46
+269 [-]: SETTABLE  R44 K51 R45  ; R44["MaskSeller_RevenantQuest"] := R45
+270 [-]: GETGLOBAL R44 K0       ; R44 := _T
+271 [-]: GETGLOBAL R45 K0       ; R45 := _T
+272 [-]: GETTABLE  R45 R45 K55  ; R45 := R45["OnBuyVendorItemCallbacks"]
+273 [-]: TEST      R45 1        ; if R45 then PC := 276
+274 [-]: JMP       276          ; PC := 276
+275 [-]: NEWTABLE  R45 0 0      ; R45 := {}
+276 [-]: SETTABLE  R44 K55 R45  ; R44["OnBuyVendorItemCallbacks"] := R45
+277 [-]: GETGLOBAL R44 K0       ; R44 := _T
+278 [-]: GETTABLE  R44 R44 K55  ; R44 := R44["OnBuyVendorItemCallbacks"]
+279 [-]: CLOSURE   R45 4        ; R45 := closure(Function #1.5)
+280 [-]: MOVE      R0 R43       ; R0 := R43
+281 [-]: SETTABLE  R44 R18 R45  ; R44[R18] := R45
+282 [-]: JMP       285          ; PC := 285
+283 [-]: MOVE      R44 R43      ; R44 := R43
+284 [-]: CALL      R44 1 1      ; R44()
+285 [-]: CLOSE     R43          ; SAVE R43,...
+286 [-]: JMP       290          ; PC := 290
+287 [-]: TEST      R19 1        ; if R19 then PC := 290
+288 [-]: JMP       290          ; PC := 290
+289 [-]: RETURN    R0 1         ; return 
+290 [-]: GETGLOBAL R43 K0       ; R43 := _T
+291 [-]: GETTABLE  R43 R43 K1   ; R43 := R43["HubNpcs"]
+292 [-]: TEST      R43 0        ; if not R43 then PC := 299
+293 [-]: JMP       299          ; PC := 299
+294 [-]: GETGLOBAL R43 K0       ; R43 := _T
+295 [-]: GETTABLE  R43 R43 K1   ; R43 := R43["HubNpcs"]
+296 [-]: GETTABLE  R43 R43 K2   ; R43 := R43["/Lotus/Language/Npcs/Nakak"]
+297 [-]: TEST      R43 1        ; if R43 then PC := 303
+298 [-]: JMP       303          ; PC := 303
+299 [-]: GETGLOBAL R43 K17      ; R43 := 0x201191EA
+300 [-]: LOADK     R44 K18      ; R44 := 0
+301 [-]: CALL      R43 2 1      ; R43(R44)
+302 [-]: JMP       290          ; PC := 290
+303 [-]: TEST      R19 1        ; if R19 then PC := 321
+304 [-]: JMP       321          ; PC := 321
+305 [-]: GETGLOBAL R43 K0       ; R43 := _T
+306 [-]: GETTABLE  R43 R43 K1   ; R43 := R43["HubNpcs"]
+307 [-]: GETTABLE  R43 R43 K2   ; R43 := R43["/Lotus/Language/Npcs/Nakak"]
+308 [-]: GETTABLE  R43 R43 K56  ; R43 := R43["entity"]
+309 [-]: SELF      R43 R43 K57  ; R44 := R43; R43 := R43["0xAB436EF2"]
+310 [-]: GETGLOBAL R45 K58      ; R45 := questMarkerType
+311 [-]: GETGLOBAL R46 K31      ; R46 := 0xEC274B1A
+312 [-]: LOADK     R47 K59      ; R47 := "GAME_C1_HIP1"
+313 [-]: CALL      R46 2 2      ; R46 := R46(R47)
+314 [-]: GETGLOBAL R47 K60      ; R47 := 0x221C9700
+315 [-]: LOADK     R48 K18      ; R48 := 0
+316 [-]: LOADK     R49 K61      ; R49 := -0.25
+317 [-]: LOADK     R50 K18      ; R50 := 0
+318 [-]: CALL      R47 4 0      ; R47,... := R47(R48,R49,R50)
+319 [-]: CALL      R43 0 2      ; R43 := R43(R44,...)
+320 [-]: MOVE      R15 R43      ; R15 := R43
+321 [-]: TEST      R19 0        ; if not R19 then PC := 326
+322 [-]: JMP       326          ; PC := 326
+323 [-]: GETGLOBAL R43 K62      ; R43 := duringQuestSpeech
+324 [-]: TEST      R43 1        ; if R43 then PC := 327
+325 [-]: JMP       327          ; PC := 327
+326 [-]: GETGLOBAL R43 K63      ; R43 := preQuestSpeech
+327 [-]: GETGLOBAL R44 K37      ; R44 := UISys
+328 [-]: GETTABLE  R44 R44 K38  ; R44 := R44["0x449B53E0"]
+329 [-]: NEWTABLE  R45 0 0      ; R45 := {}
+330 [-]: SELF      R46 R43 K20  ; R47 := R43; R46 := R43["0x1B252E3C"]
+331 [-]: CALL      R46 2 0      ; R46,... := R46(R47)
+332 [-]: SETLIST   R45 0 1      ; R45[(1-1)*FPF+i] := R(45+i), 1 <= i <= 0
+333 [-]: MOVE      R46 R0       ; R46 := R0
+334 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
+335 [-]: SELF      R45 R44 K40  ; R46 := R44; R45 := R44["0xAFDDC504"]
+336 [-]: CALL      R45 2 2      ; R45 := R45(R46)
+337 [-]: TEST      R45 1        ; if R45 then PC := 343
+338 [-]: JMP       343          ; PC := 343
+339 [-]: GETGLOBAL R45 K17      ; R45 := 0x201191EA
+340 [-]: LOADK     R46 K18      ; R46 := 0
+341 [-]: CALL      R45 2 1      ; R45(R46)
+342 [-]: JMP       335          ; PC := 335
+343 [-]: GETGLOBAL R45 K41      ; R45 := 0x7C282057
+344 [-]: MOVE      R46 R43      ; R46 := R43
+345 [-]: CALL      R45 2 2      ; R45 := R45(R46)
+346 [-]: SETTABLE  R16 K10 R45  ; R16[1] := R45
+347 [-]: GETGLOBAL R45 K12      ; R45 := table
+348 [-]: GETTABLE  R45 R45 K64  ; R45 := R45["0xE6450C9D"]
+349 [-]: GETGLOBAL R46 K0       ; R46 := _T
+350 [-]: GETTABLE  R46 R46 K1   ; R46 := R46["HubNpcs"]
+351 [-]: GETTABLE  R46 R46 K2   ; R46 := R46["/Lotus/Language/Npcs/Nakak"]
+352 [-]: GETTABLE  R46 R46 K4   ; R46 := R46["anchors"]
+353 [-]: NEWTABLE  R47 0 3      ; R47 := {}
+354 [-]: SETTABLE  R47 K5 K6    ; R47["id"] := "RevenantMask"
+355 [-]: SETTABLE  R47 K7 R44   ; R47["loader"] := R44
+356 [-]: NEWTABLE  R48 1 0      ; R48 := {}
+357 [-]: NEWTABLE  R49 2 0      ; R49 := {}
+358 [-]: LOADK     R50 K65      ; R50 := "activatedSpeechSets"
+359 [-]: MOVE      R51 R16      ; R51 := R16
+360 [-]: SETLIST   R49 2 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 2
+361 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
+362 [-]: SETTABLE  R47 K9 R48   ; R47["sets"] := R48
+363 [-]: CALL      R45 3 1      ; R45(R46,R47)
+364 [-]: GETGLOBAL R45 K12      ; R45 := table
+365 [-]: GETTABLE  R45 R45 K64  ; R45 := R45["0xE6450C9D"]
+366 [-]: GETGLOBAL R46 K0       ; R46 := _T
+367 [-]: GETTABLE  R46 R46 K1   ; R46 := R46["HubNpcs"]
+368 [-]: GETTABLE  R46 R46 K2   ; R46 := R46["/Lotus/Language/Npcs/Nakak"]
+369 [-]: GETTABLE  R46 R46 K65  ; R46 := R46["activatedSpeechSets"]
+370 [-]: MOVE      R47 R16      ; R47 := R16
+371 [-]: CALL      R45 3 1      ; R45(R46,R47)
+372 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
 ;
 ; Name:            
-; Defined at line: 102
+; Defined at line: 105
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -433,7 +439,7 @@ code size: 16
 ; Function #1.1.1:
 ;
 ; Name:            
-; Defined at line: 105
+; Defined at line: 108
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -510,7 +516,7 @@ code size: 16
 ; Function #1.2:
 ;
 ; Name:            
-; Defined at line: 139
+; Defined at line: 142
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -557,7 +563,7 @@ code size: 16
 ; Function #1.3:
 ;
 ; Name:            
-; Defined at line: 160
+; Defined at line: 163
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -577,7 +583,7 @@ code size: 16
 ; Function #1.4:
 ;
 ; Name:            
-; Defined at line: 163
+; Defined at line: 166
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -615,7 +621,7 @@ code size: 16
 ; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 177
+; Defined at line: 180
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

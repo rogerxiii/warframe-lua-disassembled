@@ -8,11 +8,11 @@ code size: 70
 code size: 23
 code size: 31
 code size: 13
-code size: 662
+code size: 656
 code size: 12
 code size: 174
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\LinkAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\LinkAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -769,22 +769,22 @@ code size: 174
 183 [-]: MOVE      R24 R5       ; R24 := R5
 184 [-]: LOADK     R25 K3       ; R25 := 0
 185 [-]: CALL      R21 5 1      ; R21(R22,R23,R24,R25)
-186 [-]: LT        0 K3 R5      ; if 0 >= R5 then PC := 660
-187 [-]: JMP       660          ; PC := 660
+186 [-]: LT        0 K3 R5      ; if 0 >= R5 then PC := 654
+187 [-]: JMP       654          ; PC := 654
 188 [-]: GETGLOBAL R21 K50      ; R21 := 0x400E7765
 189 [-]: MOVE      R22 R1       ; R22 := R1
 190 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-191 [-]: TEST      R21 1        ; if R21 then PC := 660
-192 [-]: JMP       660          ; PC := 660
+191 [-]: TEST      R21 1        ; if R21 then PC := 654
+192 [-]: JMP       654          ; PC := 654
 193 [-]: SELF      R21 R1 K51   ; R22 := R1; R21 := R1["0x5A115A02"]
 194 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-195 [-]: TEST      R21 1        ; if R21 then PC := 660
-196 [-]: JMP       660          ; PC := 660
+195 [-]: TEST      R21 1        ; if R21 then PC := 654
+196 [-]: JMP       654          ; PC := 654
 197 [-]: GETGLOBAL R21 K10      ; R21 := mOwner
 198 [-]: SELF      R21 R21 K52  ; R22 := R21; R21 := R21["0xE7AE25B5"]
 199 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-200 [-]: TEST      R21 1        ; if R21 then PC := 660
-201 [-]: JMP       660          ; PC := 660
+200 [-]: TEST      R21 1        ; if R21 then PC := 654
+201 [-]: JMP       654          ; PC := 654
 202 [-]: GETGLOBAL R21 K55      ; R21 := 0x4CDEF9FF
 203 [-]: CALL      R21 1 2      ; R21 := R21()
 204 [-]: SUB       R5 R5 R21    ; R5 := R5 - R21
@@ -1195,13 +1195,13 @@ code size: 174
 609 [-]: LOADK     R31 K8       ; R31 := 1
 610 [-]: LEN       R32 R10      ; R32 := # R10
 611 [-]: LOADK     R33 K8       ; R33 := 1
-612 [-]: FORPREP   R31 655      ; R31 -= R33; PC := 655
+612 [-]: FORPREP   R31 649      ; R31 -= R33; PC := 649
 613 [-]: GETTABLE  R35 R10 R34  ; R35 := R10[R34]
 614 [-]: GETGLOBAL R36 K50      ; R36 := 0x400E7765
 615 [-]: MOVE      R37 R35      ; R37 := R35
 616 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-617 [-]: TEST      R36 1        ; if R36 then PC := 655
-618 [-]: JMP       655          ; PC := 655
+617 [-]: TEST      R36 1        ; if R36 then PC := 649
+618 [-]: JMP       649          ; PC := 649
 619 [-]: LEN       R36 R16      ; R36 := # R16
 620 [-]: LT        1 R36 R34    ; if R36 < R34 then PC := 627
 621 [-]: JMP       627          ; PC := 627
@@ -1225,27 +1225,21 @@ code size: 174
 639 [-]: SELF      R38 R35 K89  ; R39 := R35; R38 := R35["0x4E2CBDCF"]
 640 [-]: MOVE      R40 R37      ; R40 := R37
 641 [-]: CALL      R38 3 1      ; R38(R39,R40)
-642 [-]: JMP       655          ; PC := 655
+642 [-]: JMP       649          ; PC := 649
 643 [-]: GETTABLE  R38 R16 R34  ; R38 := R16[R34]
-644 [-]: SELF      R39 R38 K0   ; R40 := R38; R39 := R38["0xA3F6069B"]
-645 [-]: CALL      R39 2 2      ; R39 := R39(R40)
-646 [-]: SELF      R39 R39 K85  ; R40 := R39; R39 := R39["0x16EEC1AD"]
-647 [-]: GETGLOBAL R41 K22      ; R41 := Engine
-648 [-]: GETTABLE  R41 R41 K86  ; R41 := R41["TORSO"]
-649 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
-650 [-]: SELF      R40 R35 K88  ; R41 := R35; R40 := R35["0xAED61990"]
-651 [-]: MOVE      R42 R38      ; R42 := R38
-652 [-]: GETGLOBAL R43 K22      ; R43 := Engine
-653 [-]: GETTABLE  R43 R43 K86  ; R43 := R43["TORSO"]
-654 [-]: CALL      R40 4 1      ; R40(R41,R42,R43)
-655 [-]: FORLOOP   R31 613      ; R31 += R33; if R31 <= R32 then begin PC := 613; R34 := R31 end
-656 [-]: GETGLOBAL R40 K90      ; R40 := 0x201191EA
-657 [-]: LOADK     R41 K3       ; R41 := 0
-658 [-]: CALL      R40 2 1      ; R40(R41)
-659 [-]: JMP       186          ; PC := 186
-660 [-]: MOVE      R40 R1       ; R40 := R1
-661 [-]: RETURN    R40 2        ; return R40
-662 [-]: RETURN    R0 1         ; return 
+644 [-]: SELF      R39 R35 K88  ; R40 := R35; R39 := R35["0xAED61990"]
+645 [-]: MOVE      R41 R38      ; R41 := R38
+646 [-]: GETGLOBAL R42 K22      ; R42 := Engine
+647 [-]: GETTABLE  R42 R42 K86  ; R42 := R42["TORSO"]
+648 [-]: CALL      R39 4 1      ; R39(R40,R41,R42)
+649 [-]: FORLOOP   R31 613      ; R31 += R33; if R31 <= R32 then begin PC := 613; R34 := R31 end
+650 [-]: GETGLOBAL R39 K90      ; R39 := 0x201191EA
+651 [-]: LOADK     R40 K3       ; R40 := 0
+652 [-]: CALL      R39 2 1      ; R39(R40)
+653 [-]: JMP       186          ; PC := 186
+654 [-]: MOVE      R39 R1       ; R39 := R1
+655 [-]: RETURN    R39 2        ; return R39
+656 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #10.1:
@@ -1274,7 +1268,7 @@ code size: 174
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 441
+; Defined at line: 440
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0

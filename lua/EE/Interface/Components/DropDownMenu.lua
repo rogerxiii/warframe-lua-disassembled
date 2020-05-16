@@ -13,7 +13,7 @@ code size: 9
 code size: 4
 code size: 17
 code size: 8
-code size: 53
+code size: 49
 code size: 26
 code size: 74
 code size: 3
@@ -26,7 +26,7 @@ code size: 18
 code size: 22
 code size: 59
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\EE\Interface\Components\DropDownMenu.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\EE\Interface\Components\DropDownMenu.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -835,7 +835,7 @@ code size: 59
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
   2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mSelectedElement"]
@@ -864,38 +864,34 @@ code size: 59
  25 [-]: GETGLOBAL R3 K10       ; R3 := _G
  26 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["UISound_WindowOpen"]
  27 [-]: CALL      R2 2 1       ; R2(R3)
- 28 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 29 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mSelectedElement"]
- 30 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 31 [-]: MOVE      R2 R2        ; R2 := R2
- 32 [-]: SELF      R3 R0 K13    ; R4 := R0; R3 := R0["0x82AB9ECF"]
- 33 [-]: MOVE      R5 R1        ; R5 := R1
- 34 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 35 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
- 36 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mSelectedElement"]
- 37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 38 [-]: TEST      R3 1         ; if R3 then PC := 50
- 39 [-]: JMP       50           ; PC := 50
- 40 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
- 41 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0x880196A7"]
- 42 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mSelectedElement"]
- 43 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["mClipName"]
- 44 [-]: LOADK     R6 K5        ; R6 := "Check"
- 45 [-]: LOADK     R7 K6        ; R7 := "_visible"
- 46 [-]: MOVE      R8 R1        ; R8 := R1
- 47 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
- 48 [-]: SELF      R3 R0 K14    ; R4 := R0; R3 := R0["0xDC99851"]
- 49 [-]: CALL      R3 2 1       ; R3(R4)
- 50 [-]: SELF      R3 R0 K15    ; R4 := R0; R3 := R0["0x625791A8"]
- 51 [-]: MOVE      R5 R0        ; R5 := R0
- 52 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 53 [-]: RETURN    R0 1         ; return 
+ 28 [-]: SELF      R2 R0 K13    ; R3 := R0; R2 := R0["0x82AB9ECF"]
+ 29 [-]: MOVE      R4 R1        ; R4 := R1
+ 30 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 31 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 32 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mSelectedElement"]
+ 33 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 34 [-]: TEST      R2 1         ; if R2 then PC := 46
+ 35 [-]: JMP       46           ; PC := 46
+ 36 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
+ 37 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x880196A7"]
+ 38 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mSelectedElement"]
+ 39 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["mClipName"]
+ 40 [-]: LOADK     R5 K5        ; R5 := "Check"
+ 41 [-]: LOADK     R6 K6        ; R6 := "_visible"
+ 42 [-]: MOVE      R7 R1        ; R7 := R1
+ 43 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
+ 44 [-]: SELF      R2 R0 K14    ; R3 := R0; R2 := R0["0xDC99851"]
+ 45 [-]: CALL      R2 2 1       ; R2(R3)
+ 46 [-]: SELF      R2 R0 K15    ; R3 := R0; R2 := R0["0x625791A8"]
+ 47 [-]: MOVE      R4 R0        ; R4 := R0
+ 48 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 49 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.13:
 ;
 ; Name:            
-; Defined at line: 195
+; Defined at line: 194
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -932,7 +928,7 @@ code size: 59
 ; Function #1.14:
 ;
 ; Name:            
-; Defined at line: 207
+; Defined at line: 206
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1017,7 +1013,7 @@ code size: 59
 ; Function #1.15:
 ;
 ; Name:            
-; Defined at line: 223
+; Defined at line: 222
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1031,7 +1027,7 @@ code size: 59
 ; Function #1.16:
 ;
 ; Name:            
-; Defined at line: 227
+; Defined at line: 226
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1079,7 +1075,7 @@ code size: 59
 ; Function #1.17:
 ;
 ; Name:            
-; Defined at line: 237
+; Defined at line: 236
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1140,7 +1136,7 @@ code size: 59
 ; Function #1.18:
 ;
 ; Name:            
-; Defined at line: 255
+; Defined at line: 254
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1210,7 +1206,7 @@ code size: 59
 ; Function #1.18.1:
 ;
 ; Name:            
-; Defined at line: 266
+; Defined at line: 265
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1225,7 +1221,7 @@ code size: 59
 ; Function #1.18.2:
 ;
 ; Name:            
-; Defined at line: 274
+; Defined at line: 273
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1254,7 +1250,7 @@ code size: 59
 ; Function #1.18.3:
 ;
 ; Name:            
-; Defined at line: 293
+; Defined at line: 292
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1283,7 +1279,7 @@ code size: 59
 ; Function #1.19:
 ;
 ; Name:            
-; Defined at line: 301
+; Defined at line: 300
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1316,7 +1312,7 @@ code size: 59
 ; Function #1.20:
 ;
 ; Name:            
-; Defined at line: 319
+; Defined at line: 318
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

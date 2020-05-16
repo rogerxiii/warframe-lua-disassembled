@@ -1,26 +1,25 @@
-code size: 59
-code size: 4
+code size: 57
 code size: 7
 code size: 6
 code size: 6
 code size: 6
 code size: 5
 code size: 5
-code size: 40
+code size: 33
 code size: 4
-code size: 36
+code size: 48
 code size: 10
 code size: 5
 code size: 11
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\ImeTip.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\ImeTip.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  5
+; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.TextSuggest"
@@ -30,78 +29,61 @@ code size: 11
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: LOADNIL   R2 R2        ; R2 := nil
   8 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
-  9 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 10 [-]: MOVE      R0 R0        ; R0 := R0
- 11 [-]: SETGLOBAL R4 K3        ; IMESetOptions := R4
- 12 [-]: SETGLOBAL R4 K4        ; 0x1097C22C := R4
- 13 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 14 [-]: MOVE      R0 R0        ; R0 := R0
- 15 [-]: SETGLOBAL R4 K5        ; IMESetFocusedOption := R4
- 16 [-]: SETGLOBAL R4 K6        ; 0xE7E1F009 := R4
- 17 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
- 18 [-]: MOVE      R0 R0        ; R0 := R0
- 19 [-]: SETGLOBAL R4 K7        ; IMESetTip := R4
- 20 [-]: SETGLOBAL R4 K8        ; 0x8EA5CA5A := R4
- 21 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
- 22 [-]: MOVE      R0 R0        ; R0 := R0
- 23 [-]: SETGLOBAL R4 K9        ; IMESetTipCursor := R4
- 24 [-]: SETGLOBAL R4 K10       ; 0x51095315 := R4
- 25 [-]: CLOSURE   R4 5         ; R4 := closure(Function #6)
- 26 [-]: MOVE      R0 R0        ; R0 := R0
- 27 [-]: SETGLOBAL R4 K11       ; OpenIME := R4
- 28 [-]: SETGLOBAL R4 K12       ; 0x1452A044 := R4
- 29 [-]: CLOSURE   R4 6         ; R4 := closure(Function #7)
- 30 [-]: MOVE      R0 R0        ; R0 := R0
- 31 [-]: SETGLOBAL R4 K13       ; CloseIME := R4
- 32 [-]: SETGLOBAL R4 K14       ; 0xA18F392B := R4
- 33 [-]: CLOSURE   R4 7         ; R4 := closure(Function #8)
- 34 [-]: MOVE      R0 R0        ; R0 := R0
- 35 [-]: MOVE      R0 R2        ; R0 := R2
- 36 [-]: MOVE      R0 R1        ; R0 := R1
- 37 [-]: SETGLOBAL R4 K15       ; Initialize := R4
- 38 [-]: SETGLOBAL R4 K16       ; 0x62648036 := R4
- 39 [-]: CLOSURE   R4 8         ; R4 := closure(Function #9)
- 40 [-]: SETGLOBAL R4 K17       ; Shutdown := R4
- 41 [-]: SETGLOBAL R4 K18       ; 0x3C577FA3 := R4
- 42 [-]: CLOSURE   R4 9         ; R4 := closure(Function #10)
- 43 [-]: MOVE      R0 R2        ; R0 := R2
- 44 [-]: MOVE      R0 R0        ; R0 := R0
- 45 [-]: SETGLOBAL R4 K19       ; Update := R4
- 46 [-]: SETGLOBAL R4 K20       ; 0x8C7099E9 := R4
- 47 [-]: CLOSURE   R4 10        ; R4 := closure(Function #11)
- 48 [-]: MOVE      R0 R0        ; R0 := R0
- 49 [-]: SETGLOBAL R4 K21       ; TipOptionFocused := R4
- 50 [-]: SETGLOBAL R4 K22       ; 0x5C1C21CC := R4
- 51 [-]: CLOSURE   R4 11        ; R4 := closure(Function #12)
- 52 [-]: MOVE      R0 R0        ; R0 := R0
- 53 [-]: SETGLOBAL R4 K23       ; TipOptionUnfocused := R4
- 54 [-]: SETGLOBAL R4 K24       ; 0x5C531E92 := R4
- 55 [-]: CLOSURE   R4 12        ; R4 := closure(Function #13)
- 56 [-]: MOVE      R0 R0        ; R0 := R0
- 57 [-]: SETGLOBAL R4 K25       ; TipOptionClicked := R4
- 58 [-]: SETGLOBAL R4 K26       ; 0xF9C8A04F := R4
- 59 [-]: RETURN    R0 1         ; return 
+  9 [-]: MOVE      R0 R0        ; R0 := R0
+ 10 [-]: SETGLOBAL R3 K3        ; IMESetOptions := R3
+ 11 [-]: SETGLOBAL R3 K4        ; 0x1097C22C := R3
+ 12 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
+ 13 [-]: MOVE      R0 R0        ; R0 := R0
+ 14 [-]: SETGLOBAL R3 K5        ; IMESetFocusedOption := R3
+ 15 [-]: SETGLOBAL R3 K6        ; 0xE7E1F009 := R3
+ 16 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+ 17 [-]: MOVE      R0 R0        ; R0 := R0
+ 18 [-]: SETGLOBAL R3 K7        ; IMESetTip := R3
+ 19 [-]: SETGLOBAL R3 K8        ; 0x8EA5CA5A := R3
+ 20 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
+ 21 [-]: MOVE      R0 R0        ; R0 := R0
+ 22 [-]: SETGLOBAL R3 K9        ; IMESetTipCursor := R3
+ 23 [-]: SETGLOBAL R3 K10       ; 0x51095315 := R3
+ 24 [-]: CLOSURE   R3 4         ; R3 := closure(Function #5)
+ 25 [-]: MOVE      R0 R0        ; R0 := R0
+ 26 [-]: SETGLOBAL R3 K11       ; OpenIME := R3
+ 27 [-]: SETGLOBAL R3 K12       ; 0x1452A044 := R3
+ 28 [-]: CLOSURE   R3 5         ; R3 := closure(Function #6)
+ 29 [-]: MOVE      R0 R0        ; R0 := R0
+ 30 [-]: SETGLOBAL R3 K13       ; CloseIME := R3
+ 31 [-]: SETGLOBAL R3 K14       ; 0xA18F392B := R3
+ 32 [-]: CLOSURE   R3 6         ; R3 := closure(Function #7)
+ 33 [-]: MOVE      R0 R0        ; R0 := R0
+ 34 [-]: SETGLOBAL R3 K15       ; Initialize := R3
+ 35 [-]: SETGLOBAL R3 K16       ; 0x62648036 := R3
+ 36 [-]: CLOSURE   R3 7         ; R3 := closure(Function #8)
+ 37 [-]: SETGLOBAL R3 K17       ; Shutdown := R3
+ 38 [-]: SETGLOBAL R3 K18       ; 0x3C577FA3 := R3
+ 39 [-]: CLOSURE   R3 8         ; R3 := closure(Function #9)
+ 40 [-]: MOVE      R0 R2        ; R0 := R2
+ 41 [-]: MOVE      R0 R1        ; R0 := R1
+ 42 [-]: MOVE      R0 R0        ; R0 := R0
+ 43 [-]: SETGLOBAL R3 K19       ; Update := R3
+ 44 [-]: SETGLOBAL R3 K20       ; 0x8C7099E9 := R3
+ 45 [-]: CLOSURE   R3 9         ; R3 := closure(Function #10)
+ 46 [-]: MOVE      R0 R0        ; R0 := R0
+ 47 [-]: SETGLOBAL R3 K21       ; TipOptionFocused := R3
+ 48 [-]: SETGLOBAL R3 K22       ; 0x5C1C21CC := R3
+ 49 [-]: CLOSURE   R3 10        ; R3 := closure(Function #11)
+ 50 [-]: MOVE      R0 R0        ; R0 := R0
+ 51 [-]: SETGLOBAL R3 K23       ; TipOptionUnfocused := R3
+ 52 [-]: SETGLOBAL R3 K24       ; 0x5C531E92 := R3
+ 53 [-]: CLOSURE   R3 11        ; R3 := closure(Function #12)
+ 54 [-]: MOVE      R0 R0        ; R0 := R0
+ 55 [-]: SETGLOBAL R3 K25       ; TipOptionClicked := R3
+ 56 [-]: SETGLOBAL R3 K26       ; 0xF9C8A04F := R3
+ 57 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 7
-; #Upvalues:       0
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := mMovie
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xA58BB96C"]
-  3 [-]: CALL      R0 2 1       ; R0(R1)
-  4 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 12
+; Defined at line: 8
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -116,6 +98,23 @@ code size: 11
   7 [-]: RETURN    R0 1         ; return 
 
 
+; Function #2:
+;
+; Name:            
+; Defined at line: 12
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0xE7E1F009"]
+  3 [-]: MOVE      R2 R0        ; R2 := R0
+  4 [-]: GETGLOBAL R3 K1        ; R3 := mMovie
+  5 [-]: CALL      R1 3 1       ; R1(R2,R3)
+  6 [-]: RETURN    R0 1         ; return 
+
+
 ; Function #3:
 ;
 ; Name:            
@@ -126,7 +125,7 @@ code size: 11
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0xE7E1F009"]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x8EA5CA5A"]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := mMovie
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -143,7 +142,7 @@ code size: 11
 ; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x8EA5CA5A"]
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x51095315"]
   3 [-]: MOVE      R2 R0        ; R2 := R0
   4 [-]: GETGLOBAL R3 K1        ; R3 := mMovie
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -154,23 +153,6 @@ code size: 11
 ;
 ; Name:            
 ; Defined at line: 24
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x51095315"]
-  3 [-]: MOVE      R2 R0        ; R2 := R0
-  4 [-]: GETGLOBAL R3 K1        ; R3 := mMovie
-  5 [-]: CALL      R1 3 1       ; R1(R2,R3)
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 28
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -183,10 +165,10 @@ code size: 11
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 32
+; Defined at line: 28
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -199,11 +181,11 @@ code size: 11
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 36
-; #Upvalues:       3
+; Defined at line: 32
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
@@ -240,20 +222,13 @@ code size: 11
  30 [-]: SELF      R0 R0 K15    ; R1 := R0; R0 := R0["0x17CDFEEA"]
  31 [-]: MOVE      R2 R1        ; R2 := R1
  32 [-]: CALL      R0 3 1       ; R0(R1,R2)
- 33 [-]: GETGLOBAL R0 K2        ; R0 := gFlashMgr
- 34 [-]: SELF      R0 R0 K16    ; R1 := R0; R0 := R0["0x616DD092"]
- 35 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 36 [-]: GETTABLE  R2 R2 K17    ; R2 := R2["0xBCEEAD81"]
- 37 [-]: CALL      R2 1 0       ; R2,... := R2()
- 38 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 39 [-]: MOVE      R0 R1        ; R0 := R1
- 40 [-]: RETURN    R0 1         ; return 
+ 33 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 48
+; Defined at line: 43
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -265,11 +240,11 @@ code size: 11
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 52
-; #Upvalues:       2
+; Defined at line: 47
+; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  4
@@ -277,45 +252,57 @@ code size: 11
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: TEST      R0 1         ; if R0 then PC := 21
-  5 [-]: JMP       21           ; PC := 21
-  6 [-]: GETGLOBAL R0 K1        ; R0 := mMovie
-  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0xD692CA7B"]
-  8 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  9 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x5584D858"]
- 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: TEST      R2 1         ; if R2 then PC := 19
- 12 [-]: JMP       19           ; PC := 19
- 13 [-]: GETGLOBAL R2 K4        ; R2 := _T
- 14 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["RadialSolarMapOpen"]
- 15 [-]: EQ        1 R2 K6      ; if R2 == "0x1" then PC := 18
- 16 [-]: JMP       18           ; PC := 18
- 17 [-]: MOVE      R2 R0        ; R2 := R0
- 18 [-]: MOVE      R2 R1        ; R2 := R1
- 19 [-]: CALL      R0 3 1       ; R0(R1,R2)
- 20 [-]: JMP       30           ; PC := 30
- 21 [-]: GETGLOBAL R0 K1        ; R0 := mMovie
- 22 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0xD692CA7B"]
- 23 [-]: GETGLOBAL R2 K4        ; R2 := _T
- 24 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["RadialSolarMapOpen"]
- 25 [-]: EQ        1 R2 K6      ; if R2 == "0x1" then PC := 28
- 26 [-]: JMP       28           ; PC := 28
- 27 [-]: MOVE      R2 R0        ; R2 := R0
- 28 [-]: MOVE      R2 R1        ; R2 := R1
- 29 [-]: CALL      R0 3 1       ; R0(R1,R2)
- 30 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 31 [-]: TEST      R0 0         ; if not R0 then PC := 36
- 32 [-]: JMP       36           ; PC := 36
- 33 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 34 [-]: GETTABLE  R0 R0 K7     ; R0 := R0["0x8C7099E9"]
- 35 [-]: CALL      R0 1 1       ; R0()
- 36 [-]: RETURN    R0 1         ; return 
+  4 [-]: TEST      R0 0         ; if not R0 then PC := 13
+  5 [-]: JMP       13           ; PC := 13
+  6 [-]: GETGLOBAL R0 K1        ; R0 := gFlashMgr
+  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x616DD092"]
+  8 [-]: GETUPVAL  R2 U1        ; R2 := U1
+  9 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xBCEEAD81"]
+ 10 [-]: CALL      R2 1 0       ; R2,... := R2()
+ 11 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
+ 12 [-]: MOVE      R0 R0        ; R0 := R0
+ 13 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+ 14 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 15 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 16 [-]: TEST      R0 1         ; if R0 then PC := 33
+ 17 [-]: JMP       33           ; PC := 33
+ 18 [-]: GETGLOBAL R0 K4        ; R0 := mMovie
+ 19 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0["0xD692CA7B"]
+ 20 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 21 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x5584D858"]
+ 22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 23 [-]: TEST      R2 1         ; if R2 then PC := 31
+ 24 [-]: JMP       31           ; PC := 31
+ 25 [-]: GETGLOBAL R2 K7        ; R2 := _T
+ 26 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["RadialSolarMapOpen"]
+ 27 [-]: EQ        1 R2 K9      ; if R2 == "0x1" then PC := 30
+ 28 [-]: JMP       30           ; PC := 30
+ 29 [-]: MOVE      R2 R0        ; R2 := R0
+ 30 [-]: MOVE      R2 R1        ; R2 := R1
+ 31 [-]: CALL      R0 3 1       ; R0(R1,R2)
+ 32 [-]: JMP       42           ; PC := 42
+ 33 [-]: GETGLOBAL R0 K4        ; R0 := mMovie
+ 34 [-]: SELF      R0 R0 K5     ; R1 := R0; R0 := R0["0xD692CA7B"]
+ 35 [-]: GETGLOBAL R2 K7        ; R2 := _T
+ 36 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["RadialSolarMapOpen"]
+ 37 [-]: EQ        1 R2 K9      ; if R2 == "0x1" then PC := 40
+ 38 [-]: JMP       40           ; PC := 40
+ 39 [-]: MOVE      R2 R0        ; R2 := R0
+ 40 [-]: MOVE      R2 R1        ; R2 := R1
+ 41 [-]: CALL      R0 3 1       ; R0(R1,R2)
+ 42 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 43 [-]: TEST      R0 0         ; if not R0 then PC := 48
+ 44 [-]: JMP       48           ; PC := 48
+ 45 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 46 [-]: GETTABLE  R0 R0 K10    ; R0 := R0["0x8C7099E9"]
+ 47 [-]: CALL      R0 1 1       ; R0()
+ 48 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 64
+; Defined at line: 63
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -333,10 +320,10 @@ code size: 11
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 70
+; Defined at line: 69
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -349,10 +336,10 @@ code size: 11
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 75
+; Defined at line: 74
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

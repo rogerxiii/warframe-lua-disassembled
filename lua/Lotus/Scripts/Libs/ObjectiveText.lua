@@ -14,8 +14,8 @@ code size: 30
 code size: 29
 code size: 64
 code size: 51
-code size: 8
-code size: 8
+code size: 14
+code size: 14
 code size: 78
 code size: 17
 code size: 110
@@ -25,7 +25,7 @@ code size: 112
 code size: 45
 code size: 34
 code size: 33
-code size: 8
+code size: 14
 code size: 6
 code size: 55
 code size: 8
@@ -34,7 +34,7 @@ code size: 6
 code size: 17
 code size: 6
 code size: 15
-code size: 8
+code size: 14
 code size: 89
 code size: 106
 code size: 15
@@ -55,7 +55,7 @@ code size: 4
 code size: 14
 code size: 11
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\ObjectiveText.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Libs\ObjectiveText.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1091,39 +1091,51 @@ code size: 11
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0x13866EEC"]
-  3 [-]: LOADK     R1 K2        ; R1 := "TitleUIText"
-  4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  7 [-]: SETTABLE  R0 K3 K4     ; R0["ObjectiveTitleTracker"] := nil
-  8 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["RemoveHudTracker"]
+  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  5 [-]: TEST      R0 1         ; if R0 then PC := 12
+  6 [-]: JMP       12           ; PC := 12
+  7 [-]: GETGLOBAL R0 K1        ; R0 := _T
+  8 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0x13866EEC"]
+  9 [-]: LOADK     R1 K4        ; R1 := "TitleUIText"
+ 10 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 11 [-]: CALL      R0 3 1       ; R0(R1,R2)
+ 12 [-]: GETGLOBAL R0 K1        ; R0 := _T
+ 13 [-]: SETTABLE  R0 K5 K6     ; R0["ObjectiveTitleTracker"] := nil
+ 14 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 265
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0x13866EEC"]
-  3 [-]: LOADK     R1 K2        ; R1 := "SubTitleUIText"
-  4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  7 [-]: SETTABLE  R0 K3 K4     ; R0["ObjectiveSubTitleTracker"] := nil
-  8 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["RemoveHudTracker"]
+  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  5 [-]: TEST      R0 1         ; if R0 then PC := 12
+  6 [-]: JMP       12           ; PC := 12
+  7 [-]: GETGLOBAL R0 K1        ; R0 := _T
+  8 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0x13866EEC"]
+  9 [-]: LOADK     R1 K4        ; R1 := "SubTitleUIText"
+ 10 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 11 [-]: CALL      R0 3 1       ; R0(R1,R2)
+ 12 [-]: GETGLOBAL R0 K1        ; R0 := _T
+ 13 [-]: SETTABLE  R0 K5 K6     ; R0["ObjectiveSubTitleTracker"] := nil
+ 14 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 270
+; Defined at line: 274
 ; #Upvalues:       6
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1212,7 +1224,7 @@ code size: 11
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 295
+; Defined at line: 299
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1240,7 +1252,7 @@ code size: 11
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 305
+; Defined at line: 309
 ; #Upvalues:       6
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1361,7 +1373,7 @@ code size: 11
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 340
+; Defined at line: 344
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1416,7 +1428,7 @@ code size: 11
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 358
+; Defined at line: 362
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1461,7 +1473,7 @@ code size: 11
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 375
+; Defined at line: 379
 ; #Upvalues:       8
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -1584,7 +1596,7 @@ code size: 11
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 415
+; Defined at line: 419
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1640,7 +1652,7 @@ code size: 11
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 430
+; Defined at line: 434
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1685,7 +1697,7 @@ code size: 11
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 441
+; Defined at line: 445
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1729,26 +1741,32 @@ code size: 11
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 452
+; Defined at line: 456
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0x13866EEC"]
-  3 [-]: LOADK     R1 K2        ; R1 := "ObjProgressBar"
-  4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  7 [-]: SETTABLE  R0 K2 K3     ; R0["ObjProgressBar"] := nil
-  8 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ObjProgressBar"]
+  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  5 [-]: TEST      R0 1         ; if R0 then PC := 12
+  6 [-]: JMP       12           ; PC := 12
+  7 [-]: GETGLOBAL R0 K1        ; R0 := _T
+  8 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0x13866EEC"]
+  9 [-]: LOADK     R1 K2        ; R1 := "ObjProgressBar"
+ 10 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 11 [-]: CALL      R0 3 1       ; R0(R1,R2)
+ 12 [-]: GETGLOBAL R0 K1        ; R0 := _T
+ 13 [-]: SETTABLE  R0 K2 K4     ; R0["ObjProgressBar"] := nil
+ 14 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 457
+; Defined at line: 463
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1765,7 +1783,7 @@ code size: 11
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 464
+; Defined at line: 470
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1831,7 +1849,7 @@ code size: 11
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 482
+; Defined at line: 488
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1850,7 +1868,7 @@ code size: 11
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 495
+; Defined at line: 501
 ; #Upvalues:       6
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -1974,7 +1992,7 @@ code size: 11
 ; Function #31.1:
 ;
 ; Name:            
-; Defined at line: 528
+; Defined at line: 534
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1991,7 +2009,7 @@ code size: 11
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 536
+; Defined at line: 542
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2019,7 +2037,7 @@ code size: 11
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 545
+; Defined at line: 551
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2036,7 +2054,7 @@ code size: 11
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 550
+; Defined at line: 556
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2062,26 +2080,32 @@ code size: 11
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 557
+; Defined at line: 563
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0x13866EEC"]
-  3 [-]: LOADK     R1 K2        ; R1 := "ObjectiveTimer"
-  4 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  7 [-]: SETTABLE  R0 K2 K3     ; R0["ObjectiveTimer"] := nil
-  8 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ObjectiveTimer"]
+  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  5 [-]: TEST      R0 1         ; if R0 then PC := 12
+  6 [-]: JMP       12           ; PC := 12
+  7 [-]: GETGLOBAL R0 K1        ; R0 := _T
+  8 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0x13866EEC"]
+  9 [-]: LOADK     R1 K2        ; R1 := "ObjectiveTimer"
+ 10 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 11 [-]: CALL      R0 3 1       ; R0(R1,R2)
+ 12 [-]: GETGLOBAL R0 K1        ; R0 := _T
+ 13 [-]: SETTABLE  R0 K2 K4     ; R0["ObjectiveTimer"] := nil
+ 14 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 564
+; Defined at line: 572
 ; #Upvalues:       5
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2181,7 +2205,7 @@ code size: 11
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 589
+; Defined at line: 597
 ; #Upvalues:       7
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2298,7 +2322,7 @@ code size: 11
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 620
+; Defined at line: 628
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2324,7 +2348,7 @@ code size: 11
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 630
+; Defined at line: 638
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2372,7 +2396,7 @@ code size: 11
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 643
+; Defined at line: 651
 ; #Upvalues:       6
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2443,7 +2467,7 @@ code size: 11
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 659
+; Defined at line: 667
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2471,7 +2495,7 @@ code size: 11
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 668
+; Defined at line: 676
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2490,7 +2514,7 @@ code size: 11
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 673
+; Defined at line: 681
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2509,7 +2533,7 @@ code size: 11
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 680
+; Defined at line: 688
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2541,7 +2565,7 @@ code size: 11
 ; Function #45:
 ;
 ; Name:            
-; Defined at line: 690
+; Defined at line: 698
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2607,7 +2631,7 @@ code size: 11
 ; Function #46:
 ;
 ; Name:            
-; Defined at line: 704
+; Defined at line: 712
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2673,7 +2697,7 @@ code size: 11
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 723
+; Defined at line: 731
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2739,7 +2763,7 @@ code size: 11
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 742
+; Defined at line: 750
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2781,7 +2805,7 @@ code size: 11
 ; Function #49:
 ;
 ; Name:            
-; Defined at line: 761
+; Defined at line: 769
 ; #Upvalues:       4
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2845,7 +2869,7 @@ code size: 11
 ; Function #50:
 ;
 ; Name:            
-; Defined at line: 778
+; Defined at line: 786
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2864,7 +2888,7 @@ code size: 11
 ; Function #51:
 ;
 ; Name:            
-; Defined at line: 785
+; Defined at line: 793
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2887,7 +2911,7 @@ code size: 11
 ; Function #52:
 ;
 ; Name:            
-; Defined at line: 791
+; Defined at line: 799
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2902,7 +2926,7 @@ code size: 11
 ; Function #53:
 ;
 ; Name:            
-; Defined at line: 795
+; Defined at line: 803
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2927,7 +2951,7 @@ code size: 11
 ; Function #54:
 ;
 ; Name:            
-; Defined at line: 805
+; Defined at line: 813
 ; #Upvalues:       1
 ; #Parameters:     7
 ; Is_vararg:       0

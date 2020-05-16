@@ -1,10 +1,10 @@
 code size: 13
 code size: 14
 code size: 11
-code size: 97
+code size: 94
 code size: 62
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\NPC\AncientHealerLink.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\NPC\AncientHealerLink.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -96,18 +96,18 @@ code size: 62
  10 [-]: GETGLOBAL R1 K6        ; R1 := 0x400E7765
  11 [-]: MOVE      R2 R0        ; R2 := R0
  12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: TEST      R1 1         ; if R1 then PC := 97
- 14 [-]: JMP       97           ; PC := 97
+ 13 [-]: TEST      R1 1         ; if R1 then PC := 94
+ 14 [-]: JMP       94           ; PC := 94
  15 [-]: SELF      R1 R0 K7     ; R2 := R0; R1 := R0["0x5A115A02"]
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 17 [-]: TEST      R1 1         ; if R1 then PC := 97
- 18 [-]: JMP       97           ; PC := 97
+ 17 [-]: TEST      R1 1         ; if R1 then PC := 94
+ 18 [-]: JMP       94           ; PC := 94
  19 [-]: GETGLOBAL R1 K6        ; R1 := 0x400E7765
  20 [-]: SELF      R2 R0 K8     ; R3 := R0; R2 := R0["0xF18FC6E4"]
  21 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
  22 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 23 [-]: TEST      R1 0         ; if not R1 then PC := 97
- 24 [-]: JMP       97           ; PC := 97
+ 23 [-]: TEST      R1 0         ; if not R1 then PC := 94
+ 24 [-]: JMP       94           ; PC := 94
  25 [-]: SELF      R1 R0 K9     ; R2 := R0; R1 := R0["0x86E626FB"]
  26 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  27 [-]: GETGLOBAL R2 K10       ; R2 := gRegion
@@ -117,76 +117,73 @@ code size: 62
  31 [-]: GETGLOBAL R3 K12       ; R3 := 0x63B09107
  32 [-]: MOVE      R4 R2        ; R4 := R2
  33 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
- 34 [-]: JMP       83           ; PC := 83
+ 34 [-]: JMP       80           ; PC := 80
  35 [-]: GETGLOBAL R8 K6        ; R8 := 0x400E7765
  36 [-]: MOVE      R9 R7        ; R9 := R7
  37 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 38 [-]: TEST      R8 1         ; if R8 then PC := 83
- 39 [-]: JMP       83           ; PC := 83
- 40 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7["0x5A115A02"]
- 41 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 42 [-]: TEST      R8 1         ; if R8 then PC := 83
- 43 [-]: JMP       83           ; PC := 83
- 44 [-]: EQ        1 R7 R0      ; if R7 == R0 then PC := 83
- 45 [-]: JMP       83           ; PC := 83
- 46 [-]: SELF      R8 R7 K13    ; R9 := R7; R8 := R7["0xA56CD0BB"]
- 47 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 48 [-]: TEST      R8 1         ; if R8 then PC := 83
- 49 [-]: JMP       83           ; PC := 83
- 50 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0["0x83D9304A"]
- 51 [-]: MOVE      R10 R7       ; R10 := R7
- 52 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 53 [-]: GETGLOBAL R9 K15       ; R9 := healRange
- 54 [-]: LE        0 R8 R9      ; if R8 > R9 then PC := 83
- 55 [-]: JMP       83           ; PC := 83
- 56 [-]: SELF      R8 R0 K16    ; R9 := R0; R8 := R0["0x2D1EF09A"]
- 57 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 58 [-]: SELF      R9 R7 K16    ; R10 := R7; R9 := R7["0x2D1EF09A"]
- 59 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 60 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 83
- 61 [-]: JMP       83           ; PC := 83
- 62 [-]: GETGLOBAL R8 K17       ; R8 := math
- 63 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["0x65F9712A"]
- 64 [-]: SELF      R9 R7 K19    ; R10 := R7; R9 := R7["0x385BD2FE"]
- 65 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 66 [-]: SELF      R10 R7 K20   ; R11 := R7; R10 := R7["0x2F79FBD3"]
- 67 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 68 [-]: GETGLOBAL R11 K21      ; R11 := healAmount
- 69 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
- 70 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 71 [-]: SELF      R9 R7 K22    ; R10 := R7; R9 := R7["0x76C229EF"]
- 72 [-]: MOVE      R11 R8       ; R11 := R8
- 73 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 74 [-]: SELF      R9 R7 K23    ; R10 := R7; R9 := R7["0xF94A17B9"]
- 75 [-]: GETGLOBAL R11 K24      ; R11 := healProjector
- 76 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 77 [-]: TEST      R9 1         ; if R9 then PC := 83
- 78 [-]: JMP       83           ; PC := 83
- 79 [-]: SELF      R9 R7 K25    ; R10 := R7; R9 := R7["0xAB436EF2"]
- 80 [-]: GETGLOBAL R11 K24      ; R11 := healProjector
- 81 [-]: GETGLOBAL R12 K26      ; R12 := EMPTY_SYMBOL
- 82 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 83 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 35; R5 := R6 end
- 84 [-]: JMP       35           ; PC := 35
- 85 [-]: GETGLOBAL R9 K10       ; R9 := gRegion
- 86 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xBDD34CC6"]
- 87 [-]: GETGLOBAL R11 K28      ; R11 := healfx
- 88 [-]: SELF      R12 R0 K29   ; R13 := R0; R12 := R0["0xBBAF192"]
- 89 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 90 [-]: SELF      R13 R0 K30   ; R14 := R0; R13 := R0["0xF23A7849"]
- 91 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
- 92 [-]: CALL      R9 0 1       ; R9(R10,...)
- 93 [-]: GETGLOBAL R9 K31       ; R9 := 0x201191EA
- 94 [-]: GETGLOBAL R10 K32      ; R10 := healInterval
- 95 [-]: CALL      R9 2 1       ; R9(R10)
- 96 [-]: JMP       10           ; PC := 10
- 97 [-]: RETURN    R0 1         ; return 
+ 38 [-]: TEST      R8 1         ; if R8 then PC := 80
+ 39 [-]: JMP       80           ; PC := 80
+ 40 [-]: EQ        1 R7 R0      ; if R7 == R0 then PC := 80
+ 41 [-]: JMP       80           ; PC := 80
+ 42 [-]: SELF      R8 R0 K13    ; R9 := R0; R8 := R0["0xCEE55F77"]
+ 43 [-]: MOVE      R10 R7       ; R10 := R7
+ 44 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 45 [-]: TEST      R8 0         ; if not R8 then PC := 80
+ 46 [-]: JMP       80           ; PC := 80
+ 47 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0["0x83D9304A"]
+ 48 [-]: MOVE      R10 R7       ; R10 := R7
+ 49 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 50 [-]: GETGLOBAL R9 K15       ; R9 := healRange
+ 51 [-]: LE        0 R8 R9      ; if R8 > R9 then PC := 80
+ 52 [-]: JMP       80           ; PC := 80
+ 53 [-]: SELF      R8 R0 K16    ; R9 := R0; R8 := R0["0x2D1EF09A"]
+ 54 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 55 [-]: SELF      R9 R7 K16    ; R10 := R7; R9 := R7["0x2D1EF09A"]
+ 56 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 57 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 80
+ 58 [-]: JMP       80           ; PC := 80
+ 59 [-]: GETGLOBAL R8 K17       ; R8 := math
+ 60 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["0x65F9712A"]
+ 61 [-]: SELF      R9 R7 K19    ; R10 := R7; R9 := R7["0x385BD2FE"]
+ 62 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 63 [-]: SELF      R10 R7 K20   ; R11 := R7; R10 := R7["0x2F79FBD3"]
+ 64 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 65 [-]: GETGLOBAL R11 K21      ; R11 := healAmount
+ 66 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
+ 67 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 68 [-]: SELF      R9 R7 K22    ; R10 := R7; R9 := R7["0x76C229EF"]
+ 69 [-]: MOVE      R11 R8       ; R11 := R8
+ 70 [-]: CALL      R9 3 1       ; R9(R10,R11)
+ 71 [-]: SELF      R9 R7 K23    ; R10 := R7; R9 := R7["0xF94A17B9"]
+ 72 [-]: GETGLOBAL R11 K24      ; R11 := healProjector
+ 73 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+ 74 [-]: TEST      R9 1         ; if R9 then PC := 80
+ 75 [-]: JMP       80           ; PC := 80
+ 76 [-]: SELF      R9 R7 K25    ; R10 := R7; R9 := R7["0xAB436EF2"]
+ 77 [-]: GETGLOBAL R11 K24      ; R11 := healProjector
+ 78 [-]: GETGLOBAL R12 K26      ; R12 := EMPTY_SYMBOL
+ 79 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+ 80 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 35; R5 := R6 end
+ 81 [-]: JMP       35           ; PC := 35
+ 82 [-]: GETGLOBAL R9 K10       ; R9 := gRegion
+ 83 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xBDD34CC6"]
+ 84 [-]: GETGLOBAL R11 K28      ; R11 := healfx
+ 85 [-]: SELF      R12 R0 K29   ; R13 := R0; R12 := R0["0xBBAF192"]
+ 86 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 87 [-]: SELF      R13 R0 K30   ; R14 := R0; R13 := R0["0xF23A7849"]
+ 88 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
+ 89 [-]: CALL      R9 0 1       ; R9(R10,...)
+ 90 [-]: GETGLOBAL R9 K31       ; R9 := 0x201191EA
+ 91 [-]: GETGLOBAL R10 K32      ; R10 := healInterval
+ 92 [-]: CALL      R9 2 1       ; R9(R10)
+ 93 [-]: JMP       10           ; PC := 10
+ 94 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 67
+; Defined at line: 66
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

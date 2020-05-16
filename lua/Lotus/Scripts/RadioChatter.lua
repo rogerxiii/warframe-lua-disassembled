@@ -1,9 +1,9 @@
-code size: 128
+code size: 127
 code size: 109
 code size: 110
 code size: 74
 code size: 241
-code size: 194
+code size: 180
 code size: 29
 code size: 47
 code size: 29
@@ -11,19 +11,18 @@ code size: 41
 code size: 45
 code size: 85
 code size: 9
-code size: 22
 code size: 52
 code size: 14
 code size: 196
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\RadioChatter.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\RadioChatter.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  27
+; Max Stack Size:  26
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "EmissiveTintColor"
@@ -130,29 +129,28 @@ code size: 196
 103 [-]: SETGLOBAL R23 K16      ; OnProfileSaved := R23
 104 [-]: SETGLOBAL R23 K17      ; 0xF048D49D := R23
 105 [-]: CLOSURE   R23 12       ; R23 := closure(Function #13)
-106 [-]: CLOSURE   R24 13       ; R24 := closure(Function #14)
-107 [-]: MOVE      R0 R10       ; R0 := R10
-108 [-]: MOVE      R0 R21       ; R0 := R21
-109 [-]: MOVE      R0 R14       ; R0 := R14
-110 [-]: MOVE      R0 R13       ; R0 := R13
+106 [-]: MOVE      R0 R10       ; R0 := R10
+107 [-]: MOVE      R0 R21       ; R0 := R21
+108 [-]: MOVE      R0 R14       ; R0 := R14
+109 [-]: MOVE      R0 R13       ; R0 := R13
+110 [-]: CLOSURE   R24 13       ; R24 := closure(Function #14)
 111 [-]: CLOSURE   R25 14       ; R25 := closure(Function #15)
-112 [-]: CLOSURE   R26 15       ; R26 := closure(Function #16)
-113 [-]: MOVE      R0 R13       ; R0 := R13
-114 [-]: MOVE      R0 R10       ; R0 := R10
-115 [-]: MOVE      R0 R17       ; R0 := R17
-116 [-]: MOVE      R0 R18       ; R0 := R18
-117 [-]: MOVE      R0 R19       ; R0 := R19
-118 [-]: MOVE      R0 R9        ; R0 := R9
-119 [-]: MOVE      R0 R15       ; R0 := R15
+112 [-]: MOVE      R0 R13       ; R0 := R13
+113 [-]: MOVE      R0 R10       ; R0 := R10
+114 [-]: MOVE      R0 R17       ; R0 := R17
+115 [-]: MOVE      R0 R18       ; R0 := R18
+116 [-]: MOVE      R0 R19       ; R0 := R19
+117 [-]: MOVE      R0 R9        ; R0 := R9
+118 [-]: MOVE      R0 R15       ; R0 := R15
+119 [-]: MOVE      R0 R23       ; R0 := R23
 120 [-]: MOVE      R0 R24       ; R0 := R24
-121 [-]: MOVE      R0 R25       ; R0 := R25
-122 [-]: MOVE      R0 R16       ; R0 := R16
-123 [-]: MOVE      R0 R20       ; R0 := R20
-124 [-]: MOVE      R0 R22       ; R0 := R22
-125 [-]: MOVE      R0 R21       ; R0 := R21
-126 [-]: SETGLOBAL R26 K18      ; RadioChatter := R26
-127 [-]: SETGLOBAL R26 K19      ; 0x59CDC2C5 := R26
-128 [-]: RETURN    R0 1         ; return 
+121 [-]: MOVE      R0 R16       ; R0 := R16
+122 [-]: MOVE      R0 R20       ; R0 := R20
+123 [-]: MOVE      R0 R22       ; R0 := R22
+124 [-]: MOVE      R0 R21       ; R0 := R21
+125 [-]: SETGLOBAL R25 K18      ; RadioChatter := R25
+126 [-]: SETGLOBAL R25 K19      ; 0x59CDC2C5 := R25
+127 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -740,7 +738,7 @@ code size: 196
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  24
+; Max Stack Size:  22
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
@@ -823,125 +821,111 @@ code size: 196
  79 [-]: GETUPVAL  R10 U4       ; R10 := U4
  80 [-]: LOADK     R11 K1       ; R11 := 1
  81 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 82 [-]: GETGLOBAL R8 K19       ; R8 := 0xC1B52CDC
- 83 [-]: GETGLOBAL R9 K20       ; R9 := 0xA1FD035F
- 84 [-]: GETGLOBAL R10 K21      ; R10 := 0x58E5C2DB
- 85 [-]: CALL      R10 1 2      ; R10 := R10()
- 86 [-]: MUL       R10 R10 K22  ; R10 := R10 * 0.10000000149012
- 87 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 88 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
- 89 [-]: GETGLOBAL R9 K19       ; R9 := 0xC1B52CDC
- 90 [-]: GETGLOBAL R10 K20      ; R10 := 0xA1FD035F
- 91 [-]: GETGLOBAL R11 K21      ; R11 := 0x58E5C2DB
- 92 [-]: CALL      R11 1 2      ; R11 := R11()
- 93 [-]: MUL       R11 R11 K23  ; R11 := R11 * 0.60000002384186
- 94 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 95 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
- 96 [-]: GETGLOBAL R10 K24      ; R10 := _T
- 97 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["FullscreenOverlayTransmissionAmplitude"]
- 98 [-]: TEST      R10 1        ; if R10 then PC := 101
- 99 [-]: JMP       101          ; PC := 101
-100 [-]: LOADK     R10 K26      ; R10 := 0
-101 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
-102 [-]: GETGLOBAL R12 K18      ; R12 := emissiveDeco
-103 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-104 [-]: TEST      R11 1        ; if R11 then PC := 112
-105 [-]: JMP       112          ; PC := 112
-106 [-]: GETGLOBAL R11 K18      ; R11 := emissiveDeco
-107 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0xD124E361"]
-108 [-]: GETUPVAL  R13 U5       ; R13 := U5
-109 [-]: MUL       R14 R10 K2   ; R14 := R10 * 4
-110 [-]: ADD       R14 K9 R14   ; R14 := 0.25 + R14
-111 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-112 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
-113 [-]: GETGLOBAL R12 K14      ; R12 := waveDeco
-114 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-115 [-]: TEST      R11 1        ; if R11 then PC := 171
-116 [-]: JMP       171          ; PC := 171
-117 [-]: GETGLOBAL R11 K14      ; R11 := waveDeco
-118 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0xD124E361"]
-119 [-]: GETGLOBAL R13 K27      ; R13 := Lotus_Game
-120 [-]: GETTABLE  R13 R13 K28  ; R13 := R13["UNLIT_ATTEN"]
-121 [-]: MUL       R14 R10 K2   ; R14 := R10 * 4
-122 [-]: ADD       R14 K9 R14   ; R14 := 0.25 + R14
-123 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-124 [-]: GETGLOBAL R11 K14      ; R11 := waveDeco
-125 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0xD124E361"]
-126 [-]: GETUPVAL  R13 U6       ; R13 := U6
-127 [-]: MUL       R14 R10 K29  ; R14 := R10 * 0.03999999910593
-128 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-129 [-]: LOADK     R11 K1       ; R11 := 1
-130 [-]: GETUPVAL  R12 U0       ; R12 := U0
-131 [-]: LEN       R12 R12      ; R12 := # R12
-132 [-]: LOADK     R13 K1       ; R13 := 1
-133 [-]: FORPREP   R11 170      ; R11 -= R13; PC := 170
-134 [-]: SUB       R15 R14 K1   ; R15 := R14 - 1
-135 [-]: MUL       R15 R15 K2   ; R15 := R15 * 4
-136 [-]: GETGLOBAL R16 K30      ; R16 := 0x6374FD98
-137 [-]: GETGLOBAL R17 K19      ; R17 := 0xC1B52CDC
-138 [-]: GETGLOBAL R18 K20      ; R18 := 0xA1FD035F
-139 [-]: GETGLOBAL R19 K21      ; R19 := 0x58E5C2DB
-140 [-]: CALL      R19 1 0      ; R19,... := R19()
-141 [-]: CALL      R18 0 2      ; R18 := R18(R19,...)
-142 [-]: MUL       R18 R14 R18  ; R18 := R14 * R18
-143 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-144 [-]: MUL       R17 K2 R17   ; R17 := 4 * R17
-145 [-]: LOADK     R18 K31      ; R18 := 0.5
-146 [-]: LOADK     R19 K1       ; R19 := 1
-147 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-148 [-]: GETGLOBAL R17 K14      ; R17 := waveDeco
-149 [-]: SELF      R17 R17 K15  ; R18 := R17; R17 := R17["0xD124E361"]
-150 [-]: GETUPVAL  R19 U0       ; R19 := U0
-151 [-]: GETTABLE  R19 R19 R14  ; R19 := R19[R14]
-152 [-]: ADD       R20 R15 K1   ; R20 := R15 + 1
-153 [-]: GETTABLE  R20 R1 R20   ; R20 := R1[R20]
-154 [-]: GETGLOBAL R21 K3       ; R21 := math
-155 [-]: GETTABLE  R21 R21 K32  ; R21 := R21["0x65F9712A"]
-156 [-]: LOADK     R22 K1       ; R22 := 1
-157 [-]: MOVE      R23 R10      ; R23 := R10
-158 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-159 [-]: MUL       R21 R16 R21  ; R21 := R16 * R21
-160 [-]: ADD       R22 R15 K6   ; R22 := R15 + 2
-161 [-]: GETTABLE  R22 R1 R22   ; R22 := R1[R22]
-162 [-]: MUL       R21 R21 R22  ; R21 := R21 * R22
-163 [-]: MUL       R22 R16 K33  ; R22 := R16 * 12
-164 [-]: ADD       R23 R15 K10  ; R23 := R15 + 3
-165 [-]: GETTABLE  R23 R1 R23   ; R23 := R1[R23]
-166 [-]: ADD       R22 R22 R23  ; R22 := R22 + R23
-167 [-]: ADD       R23 R15 K2   ; R23 := R15 + 4
-168 [-]: GETTABLE  R23 R1 R23   ; R23 := R1[R23]
-169 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
-170 [-]: FORLOOP   R11 134      ; R11 += R13; if R11 <= R12 then begin PC := 134; R14 := R11 end
-171 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
-172 [-]: GETGLOBAL R18 K34      ; R18 := waveFlare
-173 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-174 [-]: TEST      R17 1        ; if R17 then PC := 181
-175 [-]: JMP       181          ; PC := 181
-176 [-]: GETGLOBAL R17 K34      ; R17 := waveFlare
-177 [-]: SELF      R17 R17 K35  ; R18 := R17; R17 := R17["0xBDFC09E4"]
-178 [-]: MUL       R19 R10 K2   ; R19 := R10 * 4
-179 [-]: ADD       R19 K9 R19   ; R19 := 0.25 + R19
-180 [-]: CALL      R17 3 1      ; R17(R18,R19)
-181 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
-182 [-]: GETGLOBAL R18 K12      ; R18 := waveLight
-183 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-184 [-]: TEST      R17 1        ; if R17 then PC := 190
-185 [-]: JMP       190          ; PC := 190
-186 [-]: GETGLOBAL R17 K12      ; R17 := waveLight
-187 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17["0xFCAE2926"]
-188 [-]: MUL       R19 R10 K10  ; R19 := R10 * 3
-189 [-]: CALL      R17 3 1      ; R17(R18,R19)
-190 [-]: GETGLOBAL R17 K37      ; R17 := 0x201191EA
-191 [-]: LOADK     R18 K26      ; R18 := 0
-192 [-]: CALL      R17 2 1      ; R17(R18)
-193 [-]: JMP       82           ; PC := 82
-194 [-]: RETURN    R0 1         ; return 
+ 82 [-]: GETGLOBAL R8 K19       ; R8 := _T
+ 83 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["FullscreenOverlayTransmissionAmplitude"]
+ 84 [-]: TEST      R8 1         ; if R8 then PC := 87
+ 85 [-]: JMP       87           ; PC := 87
+ 86 [-]: LOADK     R8 K21       ; R8 := 0
+ 87 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
+ 88 [-]: GETGLOBAL R10 K18      ; R10 := emissiveDeco
+ 89 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 90 [-]: TEST      R9 1         ; if R9 then PC := 98
+ 91 [-]: JMP       98           ; PC := 98
+ 92 [-]: GETGLOBAL R9 K18       ; R9 := emissiveDeco
+ 93 [-]: SELF      R9 R9 K15    ; R10 := R9; R9 := R9["0xD124E361"]
+ 94 [-]: GETUPVAL  R11 U5       ; R11 := U5
+ 95 [-]: MUL       R12 R8 K2    ; R12 := R8 * 4
+ 96 [-]: ADD       R12 K9 R12   ; R12 := 0.25 + R12
+ 97 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+ 98 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
+ 99 [-]: GETGLOBAL R10 K14      ; R10 := waveDeco
+100 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+101 [-]: TEST      R9 1         ; if R9 then PC := 157
+102 [-]: JMP       157          ; PC := 157
+103 [-]: GETGLOBAL R9 K14       ; R9 := waveDeco
+104 [-]: SELF      R9 R9 K15    ; R10 := R9; R9 := R9["0xD124E361"]
+105 [-]: GETGLOBAL R11 K22      ; R11 := Lotus_Game
+106 [-]: GETTABLE  R11 R11 K23  ; R11 := R11["UNLIT_ATTEN"]
+107 [-]: MUL       R12 R8 K2    ; R12 := R8 * 4
+108 [-]: ADD       R12 K9 R12   ; R12 := 0.25 + R12
+109 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+110 [-]: GETGLOBAL R9 K14       ; R9 := waveDeco
+111 [-]: SELF      R9 R9 K15    ; R10 := R9; R9 := R9["0xD124E361"]
+112 [-]: GETUPVAL  R11 U6       ; R11 := U6
+113 [-]: MUL       R12 R8 K24   ; R12 := R8 * 0.03999999910593
+114 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+115 [-]: LOADK     R9 K1        ; R9 := 1
+116 [-]: GETUPVAL  R10 U0       ; R10 := U0
+117 [-]: LEN       R10 R10      ; R10 := # R10
+118 [-]: LOADK     R11 K1       ; R11 := 1
+119 [-]: FORPREP   R9 156       ; R9 -= R11; PC := 156
+120 [-]: SUB       R13 R12 K1   ; R13 := R12 - 1
+121 [-]: MUL       R13 R13 K2   ; R13 := R13 * 4
+122 [-]: GETGLOBAL R14 K25      ; R14 := 0x6374FD98
+123 [-]: GETGLOBAL R15 K26      ; R15 := 0xC1B52CDC
+124 [-]: GETGLOBAL R16 K27      ; R16 := 0xA1FD035F
+125 [-]: GETGLOBAL R17 K28      ; R17 := 0x58E5C2DB
+126 [-]: CALL      R17 1 0      ; R17,... := R17()
+127 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
+128 [-]: MUL       R16 R12 R16  ; R16 := R12 * R16
+129 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+130 [-]: MUL       R15 K2 R15   ; R15 := 4 * R15
+131 [-]: LOADK     R16 K29      ; R16 := 0.5
+132 [-]: LOADK     R17 K1       ; R17 := 1
+133 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
+134 [-]: GETGLOBAL R15 K14      ; R15 := waveDeco
+135 [-]: SELF      R15 R15 K15  ; R16 := R15; R15 := R15["0xD124E361"]
+136 [-]: GETUPVAL  R17 U0       ; R17 := U0
+137 [-]: GETTABLE  R17 R17 R12  ; R17 := R17[R12]
+138 [-]: ADD       R18 R13 K1   ; R18 := R13 + 1
+139 [-]: GETTABLE  R18 R1 R18   ; R18 := R1[R18]
+140 [-]: GETGLOBAL R19 K3       ; R19 := math
+141 [-]: GETTABLE  R19 R19 K30  ; R19 := R19["0x65F9712A"]
+142 [-]: LOADK     R20 K1       ; R20 := 1
+143 [-]: MOVE      R21 R8       ; R21 := R8
+144 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
+145 [-]: MUL       R19 R14 R19  ; R19 := R14 * R19
+146 [-]: ADD       R20 R13 K6   ; R20 := R13 + 2
+147 [-]: GETTABLE  R20 R1 R20   ; R20 := R1[R20]
+148 [-]: MUL       R19 R19 R20  ; R19 := R19 * R20
+149 [-]: MUL       R20 R14 K31  ; R20 := R14 * 12
+150 [-]: ADD       R21 R13 K10  ; R21 := R13 + 3
+151 [-]: GETTABLE  R21 R1 R21   ; R21 := R1[R21]
+152 [-]: ADD       R20 R20 R21  ; R20 := R20 + R21
+153 [-]: ADD       R21 R13 K2   ; R21 := R13 + 4
+154 [-]: GETTABLE  R21 R1 R21   ; R21 := R1[R21]
+155 [-]: CALL      R15 7 1      ; R15(R16,R17,R18,R19,R20,R21)
+156 [-]: FORLOOP   R9 120       ; R9 += R11; if R9 <= R10 then begin PC := 120; R12 := R9 end
+157 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
+158 [-]: GETGLOBAL R16 K32      ; R16 := waveFlare
+159 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+160 [-]: TEST      R15 1        ; if R15 then PC := 167
+161 [-]: JMP       167          ; PC := 167
+162 [-]: GETGLOBAL R15 K32      ; R15 := waveFlare
+163 [-]: SELF      R15 R15 K33  ; R16 := R15; R15 := R15["0xBDFC09E4"]
+164 [-]: MUL       R17 R8 K2    ; R17 := R8 * 4
+165 [-]: ADD       R17 K9 R17   ; R17 := 0.25 + R17
+166 [-]: CALL      R15 3 1      ; R15(R16,R17)
+167 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
+168 [-]: GETGLOBAL R16 K12      ; R16 := waveLight
+169 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+170 [-]: TEST      R15 1        ; if R15 then PC := 176
+171 [-]: JMP       176          ; PC := 176
+172 [-]: GETGLOBAL R15 K12      ; R15 := waveLight
+173 [-]: SELF      R15 R15 K34  ; R16 := R15; R15 := R15["0xFCAE2926"]
+174 [-]: MUL       R17 R8 K10   ; R17 := R8 * 3
+175 [-]: CALL      R15 3 1      ; R15(R16,R17)
+176 [-]: GETGLOBAL R15 K35      ; R15 := 0x201191EA
+177 [-]: LOADK     R16 K21      ; R16 := 0
+178 [-]: CALL      R15 2 1      ; R15(R16)
+179 [-]: JMP       82           ; PC := 82
+180 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 260
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -981,7 +965,7 @@ code size: 196
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 274
+; Defined at line: 271
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1039,7 +1023,7 @@ code size: 196
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 292
+; Defined at line: 289
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1079,7 +1063,7 @@ code size: 196
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 303
+; Defined at line: 300
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1131,7 +1115,7 @@ code size: 196
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 322
+; Defined at line: 319
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1187,7 +1171,7 @@ code size: 196
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 341
+; Defined at line: 338
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1283,7 +1267,7 @@ code size: 196
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 374
+; Defined at line: 371
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1303,40 +1287,7 @@ code size: 196
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 381
-; #Upvalues:       0
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  6
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := gPlayerProfileMgr
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x21EF7B1A"]
-  3 [-]: LOADK     R2 K2        ; R2 := 0
-  4 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  5 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
-  6 [-]: MOVE      R2 R0        ; R2 := R0
-  7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: TEST      R1 1         ; if R1 then PC := 16
-  9 [-]: JMP       16           ; PC := 16
- 10 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0["0x3EEB612E"]
- 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0x15F6A734"]
- 13 [-]: GETGLOBAL R4 K6        ; R4 := _T
- 14 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["RadioChatterDisabled"]
- 15 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 16 [-]: GETGLOBAL R2 K0        ; R2 := gPlayerProfileMgr
- 17 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x8179B6AD"]
- 18 [-]: GETGLOBAL R4 K9        ; R4 := Engine
- 19 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["SSID_Player1"]
- 20 [-]: LOADK     R5 K11       ; R5 := "OnProfileSaved"
- 21 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 22 [-]: RETURN    R0 1         ; return 
-
-
-; Function #14:
-;
-; Name:            
-; Defined at line: 390
+; Defined at line: 378
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1396,10 +1347,10 @@ code size: 196
  52 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 413
+; Defined at line: 401
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1421,10 +1372,10 @@ code size: 196
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #16:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 422
+; Defined at line: 410
 ; #Upvalues:       13
 ; #Parameters:     1
 ; Is_vararg:       0

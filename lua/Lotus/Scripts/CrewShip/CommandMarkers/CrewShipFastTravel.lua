@@ -1,49 +1,46 @@
-code size: 20
-code size: 55
+code size: 17
+code size: 53
 code size: 9
 code size: 6
 code size: 97
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\CommandMarkers\CrewShipFastTravel.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\CommandMarkers\CrewShipFastTravel.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  5
+; Max Stack Size:  4
 
   1 [-]: LOADK     R0 K0        ; R0 := 0.5
-  2 [-]: GETGLOBAL R1 K1        ; R1 := 0x329BDC44
-  3 [-]: LOADK     R2 K2        ; R2 := "EE.Interface.Utilities"
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
-  6 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
-  7 [-]: MOVE      R0 R2        ; R0 := R2
-  8 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
-  9 [-]: MOVE      R0 R3        ; R0 := R3
- 10 [-]: SETGLOBAL R4 K3        ; Start := R4
- 11 [-]: SETGLOBAL R4 K4        ; 0x6F5A2238 := R4
- 12 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
- 13 [-]: MOVE      R0 R0        ; R0 := R0
- 14 [-]: MOVE      R0 R3        ; R0 := R3
- 15 [-]: SETGLOBAL R4 K5        ; PreStart := R4
- 16 [-]: SETGLOBAL R4 K6        ; 0xE44B8A16 := R4
- 17 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
- 18 [-]: SETGLOBAL R4 K7        ; ShutDown := R4
- 19 [-]: SETGLOBAL R4 K8        ; 0xC654049C := R4
- 20 [-]: RETURN    R0 1         ; return 
+  2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
+  3 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
+  4 [-]: MOVE      R0 R1        ; R0 := R1
+  5 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+  6 [-]: MOVE      R0 R2        ; R0 := R2
+  7 [-]: SETGLOBAL R3 K1        ; Start := R3
+  8 [-]: SETGLOBAL R3 K2        ; 0x6F5A2238 := R3
+  9 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
+ 10 [-]: MOVE      R0 R0        ; R0 := R0
+ 11 [-]: MOVE      R0 R2        ; R0 := R2
+ 12 [-]: SETGLOBAL R3 K3        ; PreStart := R3
+ 13 [-]: SETGLOBAL R3 K4        ; 0xE44B8A16 := R3
+ 14 [-]: CLOSURE   R3 4         ; R3 := closure(Function #5)
+ 15 [-]: SETGLOBAL R3 K5        ; ShutDown := R3
+ 16 [-]: SETGLOBAL R3 K6        ; 0xC654049C := R3
+ 17 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 6
+; Defined at line: 4
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
   2 [-]: GETGLOBAL R4 K1        ; R4 := _T
@@ -68,12 +65,12 @@ code size: 3
  21 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
  22 [-]: MOVE      R4 R0        ; R4 := R0
  23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 24 [-]: TEST      R3 1         ; if R3 then PC := 55
- 25 [-]: JMP       55           ; PC := 55
+ 24 [-]: TEST      R3 1         ; if R3 then PC := 53
+ 25 [-]: JMP       53           ; PC := 53
  26 [-]: SELF      R3 R0 K8     ; R4 := R0; R3 := R0["0x4E08D599"]
  27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 28 [-]: TEST      R3 0         ; if not R3 then PC := 55
- 29 [-]: JMP       55           ; PC := 55
+ 28 [-]: TEST      R3 0         ; if not R3 then PC := 53
+ 29 [-]: JMP       53           ; PC := 53
  30 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0["0x907C463B"]
  31 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  32 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
@@ -89,23 +86,21 @@ code size: 3
  42 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3["0x8D5886B7"]
  43 [-]: LOADK     R6 K13       ; R6 := "ForceUserToDismountNoAnim"
  44 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 45 [-]: SELF      R4 R0 K14    ; R5 := R0; R4 := R0["0x4D09A963"]
- 46 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 47 [-]: SELF      R5 R0 K15    ; R6 := R0; R5 := R0["0x39D7F449"]
- 48 [-]: SELF      R7 R2 K16    ; R8 := R2; R7 := R2["0xBBAF192"]
- 49 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 50 [-]: SELF      R8 R2 K17    ; R9 := R2; R8 := R2["0x3455E8A"]
- 51 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 52 [-]: CALL      R5 0 1       ; R5(R6,...)
- 53 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0["0x4FD72461"]
- 54 [-]: CALL      R5 2 1       ; R5(R6)
- 55 [-]: RETURN    R0 1         ; return 
+ 45 [-]: SELF      R4 R0 K14    ; R5 := R0; R4 := R0["0x39D7F449"]
+ 46 [-]: SELF      R6 R2 K15    ; R7 := R2; R6 := R2["0xBBAF192"]
+ 47 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 48 [-]: SELF      R7 R2 K16    ; R8 := R2; R7 := R2["0x3455E8A"]
+ 49 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 50 [-]: CALL      R4 0 1       ; R4(R5,...)
+ 51 [-]: SELF      R4 R0 K17    ; R5 := R0; R4 := R0["0x4FD72461"]
+ 52 [-]: CALL      R4 2 1       ; R4(R5)
+ 53 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 27
+; Defined at line: 24
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -125,7 +120,7 @@ code size: 3
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 35
+; Defined at line: 32
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -142,7 +137,7 @@ code size: 3
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 39
+; Defined at line: 36
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -250,7 +245,7 @@ code size: 3
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 93
+; Defined at line: 90
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

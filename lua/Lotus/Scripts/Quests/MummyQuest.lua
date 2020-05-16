@@ -12,13 +12,13 @@ code size: 19
 code size: 73
 code size: 21
 code size: 68
-code size: 93
+code size: 104
 code size: 4
 code size: 22
 code size: 3
 code size: 43
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\MummyQuest.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\MummyQuest.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1253,82 +1253,93 @@ code size: 43
  21 [-]: MOVE      R0 R1        ; R0 := R1
  22 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 7; R4 := R5 end
  23 [-]: JMP       7            ; PC := 7
- 24 [-]: GETGLOBAL R8 K7        ; R8 := gRegion
- 25 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8["0x3E2F6BF"]
- 26 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 27 [-]: GETGLOBAL R9 K9        ; R9 := 0x201191EA
- 28 [-]: LOADK     R10 K10      ; R10 := 2
- 29 [-]: CALL      R9 2 1       ; R9(R10)
- 30 [-]: GETGLOBAL R9 K11       ; R9 := gFlashMgr
- 31 [-]: SELF      R9 R9 K12    ; R10 := R9; R9 := R9["0xCC01AE7A"]
- 32 [-]: GETGLOBAL R11 K13      ; R11 := eomMovie
- 33 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 34 [-]: TEST      R9 0         ; if not R9 then PC := 40
- 35 [-]: JMP       40           ; PC := 40
- 36 [-]: GETGLOBAL R9 K9        ; R9 := 0x201191EA
- 37 [-]: LOADK     R10 K14      ; R10 := 1
- 38 [-]: CALL      R9 2 1       ; R9(R10)
- 39 [-]: JMP       30           ; PC := 30
- 40 [-]: MOVE      R9 R1        ; R9 := R1
- 41 [-]: SELF      R10 R8 K15   ; R11 := R8; R10 := R8["0x8DB5D01F"]
- 42 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 43 [-]: LOADK     R11 K5       ; R11 := 0
- 44 [-]: SELF      R12 R10 K16  ; R13 := R10; R12 := R10["0x802B4901"]
- 45 [-]: GETGLOBAL R14 K17      ; R14 := Lotus_Game
- 46 [-]: GETTABLE  R14 R14 K18  ; R14 := R14["CP_GENERAL"]
- 47 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
- 48 [-]: SUB       R12 R12 K14  ; R12 := R12 - 1
- 49 [-]: LOADK     R13 K14      ; R13 := 1
- 50 [-]: FORPREP   R11 67       ; R11 -= R13; PC := 67
- 51 [-]: SELF      R15 R10 K19  ; R16 := R10; R15 := R10["0x1B1C752"]
- 52 [-]: MOVE      R17 R14      ; R17 := R14
- 53 [-]: GETGLOBAL R18 K17      ; R18 := Lotus_Game
- 54 [-]: GETTABLE  R18 R18 K18  ; R18 := R18["CP_GENERAL"]
- 55 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
- 56 [-]: GETGLOBAL R16 K20      ; R16 := 0x400E7765
- 57 [-]: MOVE      R17 R15      ; R17 := R15
- 58 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 59 [-]: TEST      R16 1        ; if R16 then PC := 67
- 60 [-]: JMP       67           ; PC := 67
- 61 [-]: SELF      R16 R15 K21  ; R17 := R15; R16 := R15["0x8B598ED4"]
- 62 [-]: GETGLOBAL R18 K22      ; R18 := mummyGearItemType
- 63 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 64 [-]: TEST      R16 0        ; if not R16 then PC := 67
- 65 [-]: JMP       67           ; PC := 67
- 66 [-]: MOVE      R9 R0        ; R9 := R0
- 67 [-]: FORLOOP   R11 51       ; R11 += R13; if R11 <= R12 then begin PC := 51; R14 := R11 end
- 68 [-]: TEST      R0 0         ; if not R0 then PC := 75
- 69 [-]: JMP       75           ; PC := 75
- 70 [-]: GETUPVAL  R16 U1       ; R16 := U1
- 71 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
- 72 [-]: GETGLOBAL R17 K24      ; R17 := stageCompleteTrans
- 73 [-]: CALL      R16 2 1      ; R16(R17)
- 74 [-]: RETURN    R0 1         ; return 
- 75 [-]: TEST      R9 0         ; if not R9 then PC := 82
- 76 [-]: JMP       82           ; PC := 82
- 77 [-]: GETUPVAL  R16 U1       ; R16 := U1
- 78 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
- 79 [-]: GETGLOBAL R17 K25      ; R17 := equipTrans
- 80 [-]: CALL      R16 2 1      ; R16(R17)
- 81 [-]: RETURN    R0 1         ; return 
- 82 [-]: TEST      R1 0         ; if not R1 then PC := 89
- 83 [-]: JMP       89           ; PC := 89
- 84 [-]: GETUPVAL  R16 U1       ; R16 := U1
- 85 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
- 86 [-]: GETGLOBAL R17 K26      ; R17 := madeProgressTrans
- 87 [-]: CALL      R16 2 1      ; R16(R17)
- 88 [-]: RETURN    R0 1         ; return 
- 89 [-]: GETUPVAL  R16 U1       ; R16 := U1
- 90 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
- 91 [-]: GETGLOBAL R17 K27      ; R17 := reminderTrans
- 92 [-]: CALL      R16 2 1      ; R16(R17)
- 93 [-]: RETURN    R0 1         ; return 
+ 24 [-]: GETGLOBAL R8 K7        ; R8 := 0x201191EA
+ 25 [-]: LOADK     R9 K8        ; R9 := 2
+ 26 [-]: CALL      R8 2 1       ; R8(R9)
+ 27 [-]: GETGLOBAL R8 K9        ; R8 := gFlashMgr
+ 28 [-]: SELF      R8 R8 K10    ; R9 := R8; R8 := R8["0xCC01AE7A"]
+ 29 [-]: GETGLOBAL R10 K11      ; R10 := eomMovie
+ 30 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 31 [-]: TEST      R8 0         ; if not R8 then PC := 37
+ 32 [-]: JMP       37           ; PC := 37
+ 33 [-]: GETGLOBAL R8 K7        ; R8 := 0x201191EA
+ 34 [-]: LOADK     R9 K12       ; R9 := 1
+ 35 [-]: CALL      R8 2 1       ; R8(R9)
+ 36 [-]: JMP       27           ; PC := 27
+ 37 [-]: GETGLOBAL R8 K13       ; R8 := 0x400E7765
+ 38 [-]: GETGLOBAL R9 K14       ; R9 := gRegion
+ 39 [-]: SELF      R9 R9 K15    ; R10 := R9; R9 := R9["0x3E2F6BF"]
+ 40 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 41 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+ 42 [-]: TEST      R8 0         ; if not R8 then PC := 48
+ 43 [-]: JMP       48           ; PC := 48
+ 44 [-]: GETGLOBAL R8 K7        ; R8 := 0x201191EA
+ 45 [-]: LOADK     R9 K12       ; R9 := 1
+ 46 [-]: CALL      R8 2 1       ; R8(R9)
+ 47 [-]: JMP       37           ; PC := 37
+ 48 [-]: MOVE      R8 R1        ; R8 := R1
+ 49 [-]: GETGLOBAL R9 K14       ; R9 := gRegion
+ 50 [-]: SELF      R9 R9 K15    ; R10 := R9; R9 := R9["0x3E2F6BF"]
+ 51 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 52 [-]: SELF      R10 R9 K16   ; R11 := R9; R10 := R9["0x8DB5D01F"]
+ 53 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 54 [-]: LOADK     R11 K5       ; R11 := 0
+ 55 [-]: SELF      R12 R10 K17  ; R13 := R10; R12 := R10["0x802B4901"]
+ 56 [-]: GETGLOBAL R14 K18      ; R14 := Lotus_Game
+ 57 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["CP_GENERAL"]
+ 58 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+ 59 [-]: SUB       R12 R12 K12  ; R12 := R12 - 1
+ 60 [-]: LOADK     R13 K12      ; R13 := 1
+ 61 [-]: FORPREP   R11 78       ; R11 -= R13; PC := 78
+ 62 [-]: SELF      R15 R10 K20  ; R16 := R10; R15 := R10["0x1B1C752"]
+ 63 [-]: MOVE      R17 R14      ; R17 := R14
+ 64 [-]: GETGLOBAL R18 K18      ; R18 := Lotus_Game
+ 65 [-]: GETTABLE  R18 R18 K19  ; R18 := R18["CP_GENERAL"]
+ 66 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
+ 67 [-]: GETGLOBAL R16 K13      ; R16 := 0x400E7765
+ 68 [-]: MOVE      R17 R15      ; R17 := R15
+ 69 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+ 70 [-]: TEST      R16 1        ; if R16 then PC := 78
+ 71 [-]: JMP       78           ; PC := 78
+ 72 [-]: SELF      R16 R15 K21  ; R17 := R15; R16 := R15["0x8B598ED4"]
+ 73 [-]: GETGLOBAL R18 K22      ; R18 := mummyGearItemType
+ 74 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+ 75 [-]: TEST      R16 0        ; if not R16 then PC := 78
+ 76 [-]: JMP       78           ; PC := 78
+ 77 [-]: MOVE      R8 R0        ; R8 := R0
+ 78 [-]: FORLOOP   R11 62       ; R11 += R13; if R11 <= R12 then begin PC := 62; R14 := R11 end
+ 79 [-]: TEST      R0 0         ; if not R0 then PC := 86
+ 80 [-]: JMP       86           ; PC := 86
+ 81 [-]: GETUPVAL  R16 U1       ; R16 := U1
+ 82 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
+ 83 [-]: GETGLOBAL R17 K24      ; R17 := stageCompleteTrans
+ 84 [-]: CALL      R16 2 1      ; R16(R17)
+ 85 [-]: RETURN    R0 1         ; return 
+ 86 [-]: TEST      R8 0         ; if not R8 then PC := 93
+ 87 [-]: JMP       93           ; PC := 93
+ 88 [-]: GETUPVAL  R16 U1       ; R16 := U1
+ 89 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
+ 90 [-]: GETGLOBAL R17 K25      ; R17 := equipTrans
+ 91 [-]: CALL      R16 2 1      ; R16(R17)
+ 92 [-]: RETURN    R0 1         ; return 
+ 93 [-]: TEST      R1 0         ; if not R1 then PC := 100
+ 94 [-]: JMP       100          ; PC := 100
+ 95 [-]: GETUPVAL  R16 U1       ; R16 := U1
+ 96 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
+ 97 [-]: GETGLOBAL R17 K26      ; R17 := madeProgressTrans
+ 98 [-]: CALL      R16 2 1      ; R16(R17)
+ 99 [-]: RETURN    R0 1         ; return 
+100 [-]: GETUPVAL  R16 U1       ; R16 := U1
+101 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["0x36414212"]
+102 [-]: GETGLOBAL R17 K27      ; R17 := reminderTrans
+103 [-]: CALL      R16 2 1      ; R16(R17)
+104 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 508
+; Defined at line: 511
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1343,7 +1354,7 @@ code size: 43
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 513
+; Defined at line: 516
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1376,7 +1387,7 @@ code size: 43
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 522
+; Defined at line: 525
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1390,7 +1401,7 @@ code size: 43
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 526
+; Defined at line: 529
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

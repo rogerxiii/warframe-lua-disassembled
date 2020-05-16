@@ -3,7 +3,7 @@ code size: 13
 code size: 16
 code size: 13
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\NeutralCreatures\Conservation\LegendaryKubrow\LegendaryKubrowFlee.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\NeutralCreatures\Conservation\LegendaryKubrow\LegendaryKubrowFlee.luac 
 
 ; Name:            
 ; Defined at line: 0

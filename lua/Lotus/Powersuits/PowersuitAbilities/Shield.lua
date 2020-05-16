@@ -3,13 +3,13 @@ code size: 47
 code size: 39
 code size: 44
 code size: 42
-code size: 108
+code size: 113
 code size: 73
-code size: 32
+code size: 36
 code size: 13
 code size: 49
 code size: 23
-code size: 201
+code size: 205
 code size: 22
 code size: 68
 code size: 18
@@ -23,10 +23,10 @@ code size: 72
 code size: 18
 code size: 68
 code size: 82
-code size: 80
-code size: 17
+code size: 81
+code size: 19
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\Shield.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\Shield.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -38,7 +38,7 @@ code size: 17
   1 [-]: LOADK     R0 K0        ; R0 := 2
   2 [-]: LOADK     R1 K1        ; R1 := 10
   3 [-]: LOADK     R2 K2        ; R2 := 0.25
-  4 [-]: LOADK     R3 K3        ; R3 := 25
+  4 [-]: LOADK     R3 K3        ; R3 := 0.20000000298023
   5 [-]: LOADK     R4 K4        ; R4 := 0.5
   6 [-]: LOADK     R5 K5        ; R5 := 0.75
   7 [-]: LOADK     R6 K6        ; R6 := 0
@@ -396,20 +396,20 @@ code size: 17
  26 [-]: JMP       44           ; PC := 44
  27 [-]: EQ        0 R0 K2      ; if R0 ~= 1 then PC := 32
  28 [-]: JMP       32           ; PC := 32
- 29 [-]: LOADK     R2 K8        ; R2 := 35
+ 29 [-]: LOADK     R2 K8        ; R2 := 0.20000000298023
  30 [-]: MOVE      R2 R1        ; R2 := R1
  31 [-]: JMP       44           ; PC := 44
  32 [-]: EQ        0 R0 K4      ; if R0 ~= 2 then PC := 37
  33 [-]: JMP       37           ; PC := 37
- 34 [-]: LOADK     R2 K9        ; R2 := 40
+ 34 [-]: LOADK     R2 K9        ; R2 := 0.25
  35 [-]: MOVE      R2 R1        ; R2 := R1
  36 [-]: JMP       44           ; PC := 44
  37 [-]: EQ        0 R0 K5      ; if R0 ~= 3 then PC := 42
  38 [-]: JMP       42           ; PC := 42
- 39 [-]: LOADK     R2 K10       ; R2 := 45
+ 39 [-]: LOADK     R2 K10       ; R2 := 0.30000001192093
  40 [-]: MOVE      R2 R1        ; R2 := R1
  41 [-]: JMP       44           ; PC := 44
- 42 [-]: LOADK     R2 K11       ; R2 := 50
+ 42 [-]: LOADK     R2 K11       ; R2 := 0.34999999403954
  43 [-]: MOVE      R2 R1        ; R2 := R1
  44 [-]: RETURN    R0 1         ; return 
 
@@ -552,11 +552,11 @@ code size: 17
  74 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  75 [-]: SETTABLE  R9 K26 K27   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
  76 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 77 [-]: JMP       108          ; PC := 108
+ 77 [-]: JMP       113          ; PC := 113
  78 [-]: GETGLOBAL R7 K12       ; R7 := Lotus_Game
  79 [-]: GETTABLE  R7 R7 K28    ; R7 := R7["PowerSuit_AUGMENT_PVP_ONE"]
- 80 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 108
- 81 [-]: JMP       108          ; PC := 108
+ 80 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 113
+ 81 [-]: JMP       113          ; PC := 113
  82 [-]: GETGLOBAL R7 K0        ; R7 := _T
  83 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["AbilityLevelQueryParms"]
  84 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["Modded"]
@@ -577,13 +577,18 @@ code size: 17
  99 [-]: GETGLOBAL R7 K15       ; R7 := table
 100 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
 101 [-]: MOVE      R8 R0        ; R8 := R0
-102 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+102 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 103 [-]: SETTABLE  R9 K17 K30   ; R9["Label"] := "/Lotus/Language/Game/RK_SHIELD"
-104 [-]: GETUPVAL  R10 U3       ; R10 := U3
-105 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
-106 [-]: SETTABLE  R9 K31 K32   ; R9["ValueIcon"] := "<SHIELD>"
-107 [-]: CALL      R7 3 1       ; R7(R8,R9)
-108 [-]: RETURN    R0 1         ; return 
+104 [-]: GETGLOBAL R10 K23      ; R10 := math
+105 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
+106 [-]: GETUPVAL  R11 U3       ; R11 := U3
+107 [-]: MUL       R11 R11 K25  ; R11 := R11 * 100
+108 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+109 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
+110 [-]: SETTABLE  R9 K31 K32   ; R9["ValueIcon"] := "<SHIELD>"
+111 [-]: SETTABLE  R9 K26 K27   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
+112 [-]: CALL      R7 3 1       ; R7(R8,R9)
+113 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
@@ -696,21 +701,25 @@ code size: 17
  15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  16 [-]: SETTABLE  R3 K2 R4     ; R3["PERCENT"] := R4
  17 [-]: MOVE      R2 R3        ; R2 := R3
- 18 [-]: JMP       27           ; PC := 27
+ 18 [-]: JMP       31           ; PC := 31
  19 [-]: GETGLOBAL R3 K0        ; R3 := Lotus_Game
  20 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["PowerSuit_AUGMENT_PVP_ONE"]
- 21 [-]: EQ        0 R1 R3      ; if R1 ~= R3 then PC := 27
- 22 [-]: JMP       27           ; PC := 27
+ 21 [-]: EQ        0 R1 R3      ; if R1 ~= R3 then PC := 31
+ 22 [-]: JMP       31           ; PC := 31
  23 [-]: NEWTABLE  R3 0 1       ; R3 := {}
- 24 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 25 [-]: SETTABLE  R3 K7 R4     ; R3["SHIELD_INC"] := R4
- 26 [-]: MOVE      R2 R3        ; R2 := R3
- 27 [-]: GETGLOBAL R3 K8        ; R3 := cjson
- 28 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0x8DC1075B"]
- 29 [-]: MOVE      R4 R2        ; R4 := R2
- 30 [-]: TAILCALL  R3 2 0       ; R3,... := R3(R4)
- 31 [-]: RETURN    R3 0         ; return R3,...
- 32 [-]: RETURN    R0 1         ; return 
+ 24 [-]: GETGLOBAL R4 K3        ; R4 := math
+ 25 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["0xF7005A7B"]
+ 26 [-]: GETUPVAL  R5 U2        ; R5 := U2
+ 27 [-]: MUL       R5 R5 K5     ; R5 := R5 * 100
+ 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 29 [-]: SETTABLE  R3 K7 R4     ; R3["SHIELD_INC"] := R4
+ 30 [-]: MOVE      R2 R3        ; R2 := R3
+ 31 [-]: GETGLOBAL R3 K8        ; R3 := cjson
+ 32 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0x8DC1075B"]
+ 33 [-]: MOVE      R4 R2        ; R4 := R2
+ 34 [-]: TAILCALL  R3 2 0       ; R3,... := R3(R4)
+ 35 [-]: RETURN    R3 0         ; return R3,...
+ 36 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
@@ -992,15 +1001,15 @@ code size: 17
 150 [-]: CALL      R19 3 1      ; R19(R20,R21)
 151 [-]: GETGLOBAL R19 K6       ; R19 := Lotus_Game
 152 [-]: GETTABLE  R19 R19 K9   ; R19 := R19["PowerSuit_AUGMENT_PVP_ONE"]
-153 [-]: EQ        0 R9 R19     ; if R9 ~= R19 then PC := 201
-154 [-]: JMP       201          ; PC := 201
+153 [-]: EQ        0 R9 R19     ; if R9 ~= R19 then PC := 205
+154 [-]: JMP       205          ; PC := 205
 155 [-]: SELF      R19 R1 K49   ; R20 := R1; R19 := R1["0x6B4CBCD7"]
 156 [-]: GETGLOBAL R21 K37      ; R21 := gRegion
 157 [-]: SELF      R21 R21 K50  ; R22 := R21; R21 := R21["0x3E2F6BF"]
 158 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
 159 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
-160 [-]: TEST      R19 0        ; if not R19 then PC := 201
-161 [-]: JMP       201          ; PC := 201
+160 [-]: TEST      R19 0        ; if not R19 then PC := 205
+161 [-]: JMP       205          ; PC := 205
 162 [-]: GETGLOBAL R19 K37      ; R19 := gRegion
 163 [-]: SELF      R19 R19 K38  ; R20 := R19; R19 := R19["0xBDD34CC6"]
 164 [-]: GETGLOBAL R21 K51      ; R21 := augmentPvpTriggerType
@@ -1013,8 +1022,8 @@ code size: 17
 171 [-]: GETGLOBAL R20 K39      ; R20 := 0x400E7765
 172 [-]: MOVE      R21 R19      ; R21 := R19
 173 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-174 [-]: TEST      R20 1        ; if R20 then PC := 201
-175 [-]: JMP       201          ; PC := 201
+174 [-]: TEST      R20 1        ; if R20 then PC := 205
+175 [-]: JMP       205          ; PC := 205
 176 [-]: SELF      R20 R17 K52  ; R21 := R17; R20 := R17["0xD124E361"]
 177 [-]: GETGLOBAL R22 K23      ; R22 := 0xEC274B1A
 178 [-]: LOADK     R23 K53      ; R23 := "Scalar2"
@@ -1029,18 +1038,22 @@ code size: 17
 187 [-]: GETGLOBAL R24 K57      ; R24 := EMPTY_SYMBOL
 188 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
 189 [-]: SELF      R21 R19 K58  ; R22 := R19; R21 := R19["0x29B47C50"]
-190 [-]: GETUPVAL  R23 U4       ; R23 := U4
-191 [-]: CALL      R21 3 1      ; R21(R22,R23)
-192 [-]: GETGLOBAL R21 K39      ; R21 := 0x400E7765
-193 [-]: MOVE      R22 R20      ; R22 := R20
-194 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-195 [-]: TEST      R21 1        ; if R21 then PC := 201
-196 [-]: JMP       201          ; PC := 201
-197 [-]: SELF      R21 R19 K59  ; R22 := R19; R21 := R19["0xAFFF6D6"]
-198 [-]: SELF      R23 R20 K60  ; R24 := R20; R23 := R20["0x11FF52EA"]
-199 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-200 [-]: CALL      R21 0 1      ; R21(R22,...)
-201 [-]: RETURN    R0 1         ; return 
+190 [-]: GETGLOBAL R23 K59      ; R23 := math
+191 [-]: GETTABLE  R23 R23 K60  ; R23 := R23["0xF7005A7B"]
+192 [-]: GETUPVAL  R24 U4       ; R24 := U4
+193 [-]: MUL       R24 R24 K61  ; R24 := R24 * 100
+194 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
+195 [-]: CALL      R21 0 1      ; R21(R22,...)
+196 [-]: GETGLOBAL R21 K39      ; R21 := 0x400E7765
+197 [-]: MOVE      R22 R20      ; R22 := R20
+198 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+199 [-]: TEST      R21 1        ; if R21 then PC := 205
+200 [-]: JMP       205          ; PC := 205
+201 [-]: SELF      R21 R19 K62  ; R22 := R19; R21 := R19["0xAFFF6D6"]
+202 [-]: SELF      R23 R20 K63  ; R24 := R20; R23 := R20["0x11FF52EA"]
+203 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
+204 [-]: CALL      R21 0 1      ; R21(R22,...)
+205 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #12:
@@ -3159,20 +3172,21 @@ code size: 17
  64 [-]: CALL      R6 3 1       ; R6(R7,R8)
  65 [-]: SELF      R6 R5 K19    ; R7 := R5; R6 := R5["0x4AD4D1A3"]
  66 [-]: SELF      R8 R0 K20    ; R9 := R0; R8 := R0["0xD01F29AC"]
- 67 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 68 [-]: CALL      R6 0 1       ; R6(R7,...)
- 69 [-]: SELF      R6 R3 K21    ; R7 := R3; R6 := R3["0xF89BED10"]
- 70 [-]: SELF      R8 R3 K22    ; R9 := R3; R8 := R3["0x1009A31B"]
- 71 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 72 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 73 [-]: GETGLOBAL R9 K13       ; R9 := 0xEC274B1A
- 74 [-]: LOADK     R10 K23      ; R10 := "RestoreShields"
- 75 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 76 [-]: MOVE      R10 R5       ; R10 := R5
- 77 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 78 [-]: SELF      R6 R0 K24    ; R7 := R0; R6 := R0["0xD4C2743F"]
- 79 [-]: CALL      R6 2 1       ; R6(R7)
- 80 [-]: RETURN    R0 1         ; return 
+ 67 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 68 [-]: DIV       R8 R8 K21    ; R8 := R8 / 100
+ 69 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 70 [-]: SELF      R6 R3 K22    ; R7 := R3; R6 := R3["0xF89BED10"]
+ 71 [-]: SELF      R8 R3 K23    ; R9 := R3; R8 := R3["0x1009A31B"]
+ 72 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 73 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 74 [-]: GETGLOBAL R9 K13       ; R9 := 0xEC274B1A
+ 75 [-]: LOADK     R10 K24      ; R10 := "RestoreShields"
+ 76 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 77 [-]: MOVE      R10 R5       ; R10 := R5
+ 78 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+ 79 [-]: SELF      R6 R0 K25    ; R7 := R0; R6 := R0["0xD4C2743F"]
+ 80 [-]: CALL      R6 2 1       ; R6(R7)
+ 81 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #26:
@@ -3182,7 +3196,7 @@ code size: 17
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
   2 [-]: MOVE      R5 R2        ; R5 := R2
@@ -3196,10 +3210,12 @@ code size: 17
  10 [-]: RETURN    R0 1         ; return 
  11 [-]: SELF      R4 R2 K2     ; R5 := R2; R4 := R2["0xA3F6069B"]
  12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4["0x901E9214"]
- 14 [-]: MOVE      R6 R3        ; R6 := R3
- 15 [-]: MOVE      R7 R0        ; R7 := R0
- 16 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 17 [-]: RETURN    R0 1         ; return 
+ 13 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4["0x901E9214"]
+ 14 [-]: SELF      R7 R4 K4     ; R8 := R4; R7 := R4["0xF27096B7"]
+ 15 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 16 [-]: MUL       R7 R3 R7     ; R7 := R3 * R7
+ 17 [-]: MOVE      R8 R0        ; R8 := R0
+ 18 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 19 [-]: RETURN    R0 1         ; return 
 
 

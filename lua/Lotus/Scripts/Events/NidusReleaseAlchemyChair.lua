@@ -11,7 +11,7 @@ code size: 259
 code size: 21
 code size: 147
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Events\NidusReleaseAlchemyChair.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Events\NidusReleaseAlchemyChair.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -220,7 +220,7 @@ code size: 147
  32 [-]: MOVE      R5 R3        ; R5 := R3
  33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  34 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 35 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["0x844C0E68"]
+ 35 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["0xDEF08D02"]
  36 [-]: SELF      R6 R3 K12    ; R7 := R3; R6 := R3["0x30BDE7F"]
  37 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  38 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
@@ -644,7 +644,7 @@ code size: 147
  19 [-]: GETUPVAL  R5 U0        ; R5 := U0
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 22 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0x844C0E68"]
+ 22 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0xDEF08D02"]
  23 [-]: SELF      R5 R2 K9     ; R6 := R2; R5 := R2["0x30BDE7F"]
  24 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  25 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)

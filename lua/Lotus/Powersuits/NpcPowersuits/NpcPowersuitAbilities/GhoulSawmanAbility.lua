@@ -4,11 +4,11 @@ code size: 35
 code size: 28
 code size: 13
 code size: 69
-code size: 176
+code size: 182
 code size: 108
 code size: 54
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\GhoulSawmanAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\GhoulSawmanAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -365,14 +365,14 @@ code size: 54
  97 [-]: CALL      R20 4 0      ; R20,... := R20(R21,R22,R23)
  98 [-]: CALL      R18 0 2      ; R18 := R18(R19,...)
  99 [-]: ADD       R17 R18 K33  ; R17 := R18 + 3
-100 [-]: LT        0 R13 R17    ; if R13 >= R17 then PC := 176
-101 [-]: JMP       176          ; PC := 176
+100 [-]: LT        0 R13 R17    ; if R13 >= R17 then PC := 182
+101 [-]: JMP       182          ; PC := 182
 102 [-]: SELF      R18 R1 K34   ; R19 := R1; R18 := R1["0xF3340665"]
 103 [-]: GETGLOBAL R20 K6       ; R20 := Engine
 104 [-]: GETTABLE  R20 R20 K35  ; R20 := R20["PM_HELD"]
 105 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-106 [-]: TEST      R18 1        ; if R18 then PC := 176
-107 [-]: JMP       176          ; PC := 176
+106 [-]: TEST      R18 1        ; if R18 then PC := 182
+107 [-]: JMP       182          ; PC := 182
 108 [-]: GETGLOBAL R18 K36      ; R18 := gRegion
 109 [-]: SELF      R18 R18 K37  ; R19 := R18; R18 := R18["0xA559F558"]
 110 [-]: CALL      R18 2 2      ; R18 := R18(R19)
@@ -381,8 +381,8 @@ code size: 54
 113 [-]: GETGLOBAL R18 K1       ; R18 := 0x400E7765
 114 [-]: MOVE      R19 R2       ; R19 := R2
 115 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-116 [-]: TEST      R18 1        ; if R18 then PC := 125
-117 [-]: JMP       125          ; PC := 125
+116 [-]: TEST      R18 1        ; if R18 then PC := 143
+117 [-]: JMP       143          ; PC := 143
 118 [-]: SELF      R18 R1 K38   ; R19 := R1; R18 := R1["0xDFA4B7A1"]
 119 [-]: MOVE      R20 R2       ; R20 := R2
 120 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
@@ -411,43 +411,49 @@ code size: 54
 143 [-]: GETGLOBAL R18 K43      ; R18 := 0x201191EA
 144 [-]: LOADK     R19 K20      ; R19 := 0
 145 [-]: CALL      R18 2 1      ; R18(R19)
-146 [-]: SELF      R18 R1 K2    ; R19 := R1; R18 := R1["0xBBAF192"]
-147 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-148 [-]: MOVE      R8 R18       ; R8 := R18
-149 [-]: GETGLOBAL R18 K44      ; R18 := 0x9CE7F413
-150 [-]: MOVE      R19 R9       ; R19 := R9
-151 [-]: MOVE      R20 R8       ; R20 := R8
-152 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-153 [-]: GETGLOBAL R19 K45      ; R19 := 0x4CDEF9FF
-154 [-]: CALL      R19 1 2      ; R19 := R19()
-155 [-]: GETGLOBAL R20 K45      ; R20 := 0x4CDEF9FF
-156 [-]: CALL      R20 1 2      ; R20 := R20()
-157 [-]: MUL       R19 R19 R20  ; R19 := R19 * R20
-158 [-]: DIV       R18 R18 R19  ; R18 := R18 / R19
-159 [-]: LT        0 R18 R10    ; if R18 >= R10 then PC := 168
-160 [-]: JMP       168          ; PC := 168
-161 [-]: GETGLOBAL R18 K45      ; R18 := 0x4CDEF9FF
-162 [-]: CALL      R18 1 2      ; R18 := R18()
-163 [-]: ADD       R11 R11 R18  ; R11 := R11 + R18
-164 [-]: LE        0 R12 R11    ; if R12 > R11 then PC := 169
-165 [-]: JMP       169          ; PC := 169
-166 [-]: JMP       176          ; PC := 176
-167 [-]: JMP       169          ; PC := 169
-168 [-]: LOADK     R11 K20      ; R11 := 0
-169 [-]: MOVE      R9 R8        ; R9 := R8
-170 [-]: GETGLOBAL R18 K45      ; R18 := 0x4CDEF9FF
-171 [-]: CALL      R18 1 2      ; R18 := R18()
-172 [-]: GETGLOBAL R19 K18      ; R19 := speed
-173 [-]: MUL       R18 R18 R19  ; R18 := R18 * R19
-174 [-]: ADD       R13 R13 R18  ; R13 := R13 + R18
-175 [-]: JMP       100          ; PC := 100
-176 [-]: RETURN    R0 1         ; return 
+146 [-]: GETGLOBAL R18 K1       ; R18 := 0x400E7765
+147 [-]: MOVE      R19 R1       ; R19 := R1
+148 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+149 [-]: TEST      R18 0        ; if not R18 then PC := 152
+150 [-]: JMP       152          ; PC := 152
+151 [-]: JMP       182          ; PC := 182
+152 [-]: SELF      R18 R1 K2    ; R19 := R1; R18 := R1["0xBBAF192"]
+153 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+154 [-]: MOVE      R8 R18       ; R8 := R18
+155 [-]: GETGLOBAL R18 K44      ; R18 := 0x9CE7F413
+156 [-]: MOVE      R19 R9       ; R19 := R9
+157 [-]: MOVE      R20 R8       ; R20 := R8
+158 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
+159 [-]: GETGLOBAL R19 K45      ; R19 := 0x4CDEF9FF
+160 [-]: CALL      R19 1 2      ; R19 := R19()
+161 [-]: GETGLOBAL R20 K45      ; R20 := 0x4CDEF9FF
+162 [-]: CALL      R20 1 2      ; R20 := R20()
+163 [-]: MUL       R19 R19 R20  ; R19 := R19 * R20
+164 [-]: DIV       R18 R18 R19  ; R18 := R18 / R19
+165 [-]: LT        0 R18 R10    ; if R18 >= R10 then PC := 174
+166 [-]: JMP       174          ; PC := 174
+167 [-]: GETGLOBAL R18 K45      ; R18 := 0x4CDEF9FF
+168 [-]: CALL      R18 1 2      ; R18 := R18()
+169 [-]: ADD       R11 R11 R18  ; R11 := R11 + R18
+170 [-]: LE        0 R12 R11    ; if R12 > R11 then PC := 175
+171 [-]: JMP       175          ; PC := 175
+172 [-]: JMP       182          ; PC := 182
+173 [-]: JMP       175          ; PC := 175
+174 [-]: LOADK     R11 K20      ; R11 := 0
+175 [-]: MOVE      R9 R8        ; R9 := R8
+176 [-]: GETGLOBAL R18 K45      ; R18 := 0x4CDEF9FF
+177 [-]: CALL      R18 1 2      ; R18 := R18()
+178 [-]: GETGLOBAL R19 K18      ; R19 := speed
+179 [-]: MUL       R18 R18 R19  ; R18 := R18 * R19
+180 [-]: ADD       R13 R13 R18  ; R13 := R13 + R18
+181 [-]: JMP       100          ; PC := 100
+182 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 170
+; Defined at line: 173
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -566,7 +572,7 @@ code size: 54
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 211
+; Defined at line: 214
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

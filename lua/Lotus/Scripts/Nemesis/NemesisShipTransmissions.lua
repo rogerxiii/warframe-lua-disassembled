@@ -1,8 +1,8 @@
 code size: 10
-code size: 36
+code size: 35
 code size: 239
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Nemesis\NemesisShipTransmissions.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Nemesis\NemesisShipTransmissions.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -30,54 +30,53 @@ code size: 239
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  13
 
-  1 [-]: MOVE      R4 R0        ; R4 := R0
-  2 [-]: GETGLOBAL R5 K0        ; R5 := gRegion
-  3 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5["0xA933C036"]
-  4 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  5 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["postProcess"]
-  6 [-]: GETTABLE  R6 R5 K3     ; R6 := R5["fade"]
-  7 [-]: GETTABLE  R7 R5 K4     ; R7 := R5["saturation"]
-  8 [-]: SETTABLE  R5 K5 R3     ; R5["desaturateColor"] := R3
-  9 [-]: LOADK     R8 K6        ; R8 := 0
- 10 [-]: LT        0 R8 R0      ; if R8 >= R0 then PC := 36
- 11 [-]: JMP       36           ; PC := 36
- 12 [-]: GETGLOBAL R9 K7        ; R9 := 0x201191EA
- 13 [-]: LOADK     R10 K6       ; R10 := 0
- 14 [-]: CALL      R9 2 1       ; R9(R10)
- 15 [-]: GETGLOBAL R9 K8        ; R9 := 0x6306558E
- 16 [-]: CALL      R9 1 2       ; R9 := R9()
- 17 [-]: ADD       R8 R8 R9     ; R8 := R8 + R9
- 18 [-]: GETGLOBAL R9 K9        ; R9 := 0x6374FD98
- 19 [-]: DIV       R10 R8 R0    ; R10 := R8 / R0
- 20 [-]: LOADK     R11 K6       ; R11 := 0
- 21 [-]: LOADK     R12 K10      ; R12 := 1
- 22 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 23 [-]: GETGLOBAL R10 K11      ; R10 := 0x93034B55
- 24 [-]: MOVE      R11 R6       ; R11 := R6
- 25 [-]: MOVE      R12 R1       ; R12 := R1
- 26 [-]: MOVE      R13 R9       ; R13 := R9
- 27 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 28 [-]: SETTABLE  R5 K3 R10    ; R5["fade"] := R10
- 29 [-]: GETGLOBAL R10 K11      ; R10 := 0x93034B55
- 30 [-]: MOVE      R11 R7       ; R11 := R7
- 31 [-]: MOVE      R12 R2       ; R12 := R2
- 32 [-]: MOVE      R13 R9       ; R13 := R9
- 33 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 34 [-]: SETTABLE  R5 K4 R10    ; R5["saturation"] := R10
- 35 [-]: JMP       10           ; PC := 10
- 36 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
+  2 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0xA933C036"]
+  3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  4 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["postProcess"]
+  5 [-]: GETTABLE  R5 R4 K3     ; R5 := R4["fade"]
+  6 [-]: GETTABLE  R6 R4 K4     ; R6 := R4["saturation"]
+  7 [-]: SETTABLE  R4 K5 R3     ; R4["desaturateColor"] := R3
+  8 [-]: LOADK     R7 K6        ; R7 := 0
+  9 [-]: LT        0 R7 R0      ; if R7 >= R0 then PC := 35
+ 10 [-]: JMP       35           ; PC := 35
+ 11 [-]: GETGLOBAL R8 K7        ; R8 := 0x201191EA
+ 12 [-]: LOADK     R9 K6        ; R9 := 0
+ 13 [-]: CALL      R8 2 1       ; R8(R9)
+ 14 [-]: GETGLOBAL R8 K8        ; R8 := 0x6306558E
+ 15 [-]: CALL      R8 1 2       ; R8 := R8()
+ 16 [-]: ADD       R7 R7 R8     ; R7 := R7 + R8
+ 17 [-]: GETGLOBAL R8 K9        ; R8 := 0x6374FD98
+ 18 [-]: DIV       R9 R7 R0     ; R9 := R7 / R0
+ 19 [-]: LOADK     R10 K6       ; R10 := 0
+ 20 [-]: LOADK     R11 K10      ; R11 := 1
+ 21 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
+ 22 [-]: GETGLOBAL R9 K11       ; R9 := 0x93034B55
+ 23 [-]: MOVE      R10 R5       ; R10 := R5
+ 24 [-]: MOVE      R11 R1       ; R11 := R1
+ 25 [-]: MOVE      R12 R8       ; R12 := R8
+ 26 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
+ 27 [-]: SETTABLE  R4 K3 R9     ; R4["fade"] := R9
+ 28 [-]: GETGLOBAL R9 K11       ; R9 := 0x93034B55
+ 29 [-]: MOVE      R10 R6       ; R10 := R6
+ 30 [-]: MOVE      R11 R2       ; R11 := R2
+ 31 [-]: MOVE      R12 R8       ; R12 := R8
+ 32 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
+ 33 [-]: SETTABLE  R4 K4 R9     ; R4["saturation"] := R9
+ 34 [-]: JMP       9            ; PC := 9
+ 35 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 24
+; Defined at line: 23
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  20
+; Max Stack Size:  19
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
   2 [-]: GETGLOBAL R1 K1        ; R1 := gGameData
@@ -259,64 +258,64 @@ code size: 239
 178 [-]: GETGLOBAL R10 K25      ; R10 := gFlashMgr
 179 [-]: SELF      R10 R10 K46  ; R11 := R10; R10 := R10["0x7548923C"]
 180 [-]: GETGLOBAL R12 K44      ; R12 := nemesisPopupMovie
-181 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+181 [-]: CALL      R10 3 1      ; R10(R11,R12)
 182 [-]: TEST      R0 0         ; if not R0 then PC := 239
 183 [-]: JMP       239          ; PC := 239
 184 [-]: TEST      R9 0         ; if not R9 then PC := 206
 185 [-]: JMP       206          ; PC := 206
-186 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
-187 [-]: GETGLOBAL R12 K2       ; R12 := _T
-188 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["curTransmission"]
-189 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-190 [-]: TEST      R11 0        ; if not R11 then PC := 196
+186 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
+187 [-]: GETGLOBAL R11 K2       ; R11 := _T
+188 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["curTransmission"]
+189 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+190 [-]: TEST      R10 0        ; if not R10 then PC := 196
 191 [-]: JMP       196          ; PC := 196
-192 [-]: GETGLOBAL R11 K4       ; R11 := 0x201191EA
-193 [-]: LOADK     R12 K5       ; R12 := 0
-194 [-]: CALL      R11 2 1      ; R11(R12)
+192 [-]: GETGLOBAL R10 K4       ; R10 := 0x201191EA
+193 [-]: LOADK     R11 K5       ; R11 := 0
+194 [-]: CALL      R10 2 1      ; R10(R11)
 195 [-]: JMP       186          ; PC := 186
-196 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
-197 [-]: GETGLOBAL R12 K2       ; R12 := _T
-198 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["curTransmission"]
-199 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-200 [-]: TEST      R11 1        ; if R11 then PC := 206
+196 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
+197 [-]: GETGLOBAL R11 K2       ; R11 := _T
+198 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["curTransmission"]
+199 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+200 [-]: TEST      R10 1        ; if R10 then PC := 206
 201 [-]: JMP       206          ; PC := 206
-202 [-]: GETGLOBAL R11 K4       ; R11 := 0x201191EA
-203 [-]: LOADK     R12 K5       ; R12 := 0
-204 [-]: CALL      R11 2 1      ; R11(R12)
+202 [-]: GETGLOBAL R10 K4       ; R10 := 0x201191EA
+203 [-]: LOADK     R11 K5       ; R11 := 0
+204 [-]: CALL      R10 2 1      ; R10(R11)
 205 [-]: JMP       196          ; PC := 196
-206 [-]: GETUPVAL  R11 U0       ; R11 := U0
-207 [-]: LOADK     R12 K29      ; R12 := 1
-208 [-]: LOADK     R13 K5       ; R13 := 0
-209 [-]: LOADK     R14 K29      ; R14 := 1
-210 [-]: GETGLOBAL R15 K32      ; R15 := 0xB5A59043
-211 [-]: LOADK     R16 K35      ; R16 := 255
-212 [-]: LOADK     R17 K35      ; R17 := 255
-213 [-]: LOADK     R18 K35      ; R18 := 255
-214 [-]: LOADK     R19 K35      ; R19 := 255
-215 [-]: CALL      R15 5 0      ; R15,... := R15(R16,R17,R18,R19)
-216 [-]: CALL      R11 0 1      ; R11(R12,...)
-217 [-]: GETGLOBAL R11 K16      ; R11 := 0xECFDD17
-218 [-]: MOVE      R12 R1       ; R12 := R1
-219 [-]: CALL      R11 2 4      ; R11,R12,R13 := R11(R12)
+206 [-]: GETUPVAL  R10 U0       ; R10 := U0
+207 [-]: LOADK     R11 K29      ; R11 := 1
+208 [-]: LOADK     R12 K5       ; R12 := 0
+209 [-]: LOADK     R13 K29      ; R13 := 1
+210 [-]: GETGLOBAL R14 K32      ; R14 := 0xB5A59043
+211 [-]: LOADK     R15 K35      ; R15 := 255
+212 [-]: LOADK     R16 K35      ; R16 := 255
+213 [-]: LOADK     R17 K35      ; R17 := 255
+214 [-]: LOADK     R18 K35      ; R18 := 255
+215 [-]: CALL      R14 5 0      ; R14,... := R14(R15,R16,R17,R18)
+216 [-]: CALL      R10 0 1      ; R10(R11,...)
+217 [-]: GETGLOBAL R10 K16      ; R10 := 0xECFDD17
+218 [-]: MOVE      R11 R1       ; R11 := R1
+219 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
 220 [-]: JMP       224          ; PC := 224
-221 [-]: SELF      R16 R15 K20  ; R17 := R15; R16 := R15["0x8D5886B7"]
-222 [-]: LOADK     R18 K47      ; R18 := "Enable"
-223 [-]: CALL      R16 3 1      ; R16(R17,R18)
-224 [-]: TFORLOOP  R11 2        ; R14,R15 :=  R11(R12,R13); if R14 ~= nil then begin PC = 221; R13 := R14 end
+221 [-]: SELF      R15 R14 K20  ; R16 := R14; R15 := R14["0x8D5886B7"]
+222 [-]: LOADK     R17 K47      ; R17 := "Enable"
+223 [-]: CALL      R15 3 1      ; R15(R16,R17)
+224 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 221; R12 := R13 end
 225 [-]: JMP       221          ; PC := 221
-226 [-]: GETGLOBAL R16 K11      ; R16 := gGameRules
-227 [-]: SELF      R16 R16 K12  ; R17 := R16; R16 := R16["0x6EF24057"]
-228 [-]: MOVE      R18 R0       ; R18 := R0
-229 [-]: CALL      R16 3 1      ; R16(R17,R18)
-230 [-]: GETGLOBAL R16 K0       ; R16 := 0x400E7765
-231 [-]: GETGLOBAL R17 K6       ; R17 := _G
-232 [-]: GETTABLE  R17 R17 K7   ; R17 := R17["NemesisPopup_Info"]
-233 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-234 [-]: TEST      R16 1        ; if R16 then PC := 239
+226 [-]: GETGLOBAL R15 K11      ; R15 := gGameRules
+227 [-]: SELF      R15 R15 K12  ; R16 := R15; R15 := R15["0x6EF24057"]
+228 [-]: MOVE      R17 R0       ; R17 := R0
+229 [-]: CALL      R15 3 1      ; R15(R16,R17)
+230 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
+231 [-]: GETGLOBAL R16 K6       ; R16 := _G
+232 [-]: GETTABLE  R16 R16 K7   ; R16 := R16["NemesisPopup_Info"]
+233 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+234 [-]: TEST      R15 1        ; if R15 then PC := 239
 235 [-]: JMP       239          ; PC := 239
-236 [-]: GETGLOBAL R16 K6       ; R16 := _G
-237 [-]: GETTABLE  R16 R16 K7   ; R16 := R16["NemesisPopup_Info"]
-238 [-]: SETTABLE  R16 K8 K45   ; R16["IsCreationPopup"] := "0x0"
+236 [-]: GETGLOBAL R15 K6       ; R15 := _G
+237 [-]: GETTABLE  R15 R15 K7   ; R15 := R15["NemesisPopup_Info"]
+238 [-]: SETTABLE  R15 K8 K45   ; R15["IsCreationPopup"] := "0x0"
 239 [-]: RETURN    R0 1         ; return 
 
 

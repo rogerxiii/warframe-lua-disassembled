@@ -1,4 +1,4 @@
-code size: 148
+code size: 147
 code size: 36
 code size: 22
 code size: 12
@@ -16,12 +16,12 @@ code size: 115
 code size: 101
 code size: 35
 code size: 55
-code size: 33
+code size: 16
 code size: 18
 code size: 49
-code size: 124
+code size: 123
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\LoadoutUtilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\LoadoutUtilities.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -164,20 +164,19 @@ code size: 124
 132 [-]: SETGLOBAL R11 K67      ; GetCalculateXForInstallGrid := R11
 133 [-]: SETGLOBAL R11 K68      ; 0x14F2E21D := R11
 134 [-]: CLOSURE   R11 15       ; R11 := closure(Function #16)
-135 [-]: MOVE      R0 R10       ; R0 := R10
-136 [-]: SETGLOBAL R11 K69      ; GetCalculateYForInstallGrid := R11
-137 [-]: SETGLOBAL R11 K70      ; 0xBE2B3302 := R11
-138 [-]: CLOSURE   R11 16       ; R11 := closure(Function #17)
-139 [-]: MOVE      R0 R7        ; R0 := R7
-140 [-]: MOVE      R0 R8        ; R0 := R8
-141 [-]: SETGLOBAL R11 K71      ; GetRowColumnForInstallGrid := R11
-142 [-]: SETGLOBAL R11 K72      ; 0xB19223CD := R11
-143 [-]: CLOSURE   R11 17       ; R11 := closure(Function #18)
-144 [-]: MOVE      R0 R2        ; R0 := R2
-145 [-]: MOVE      R0 R1        ; R0 := R1
-146 [-]: SETGLOBAL R11 K73      ; GetDataKnifeCombination := R11
-147 [-]: SETGLOBAL R11 K74      ; 0xF899B991 := R11
-148 [-]: RETURN    R0 1         ; return 
+135 [-]: SETGLOBAL R11 K69      ; GetCalculateYForInstallGrid := R11
+136 [-]: SETGLOBAL R11 K70      ; 0xBE2B3302 := R11
+137 [-]: CLOSURE   R11 16       ; R11 := closure(Function #17)
+138 [-]: MOVE      R0 R7        ; R0 := R7
+139 [-]: MOVE      R0 R8        ; R0 := R8
+140 [-]: SETGLOBAL R11 K71      ; GetRowColumnForInstallGrid := R11
+141 [-]: SETGLOBAL R11 K72      ; 0xB19223CD := R11
+142 [-]: CLOSURE   R11 17       ; R11 := closure(Function #18)
+143 [-]: MOVE      R0 R2        ; R0 := R2
+144 [-]: MOVE      R0 R1        ; R0 := R1
+145 [-]: SETGLOBAL R11 K73      ; GetDataKnifeCombination := R11
+146 [-]: SETGLOBAL R11 K74      ; 0xF899B991 := R11
+147 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -1240,50 +1239,33 @@ code size: 124
 ;
 ; Name:            
 ; Defined at line: 385
-; #Upvalues:       1
+; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R4 K0        ; R4 := Engine
-  2 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["Item_Suits"]
-  3 [-]: EQ        1 R1 R4      ; if R1 == R4 then PC := 6
-  4 [-]: JMP       6            ; PC := 6
-  5 [-]: MOVE      R4 R0        ; R4 := R0
-  6 [-]: MOVE      R4 R1        ; R4 := R1
-  7 [-]: GETGLOBAL R5 K0        ; R5 := Engine
-  8 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["Item_LongGuns"]
-  9 [-]: EQ        1 R1 R5      ; if R1 == R5 then PC := 16
- 10 [-]: JMP       16           ; PC := 16
- 11 [-]: GETGLOBAL R5 K0        ; R5 := Engine
- 12 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["Item_Pistols"]
- 13 [-]: EQ        1 R1 R5      ; if R1 == R5 then PC := 16
- 14 [-]: JMP       16           ; PC := 16
- 15 [-]: MOVE      R5 R0        ; R5 := R0
- 16 [-]: MOVE      R5 R1        ; R5 := R1
- 17 [-]: GETGLOBAL R6 K0        ; R6 := Engine
- 18 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["Item_Melee"]
- 19 [-]: EQ        1 R1 R6      ; if R1 == R6 then PC := 27
- 20 [-]: JMP       27           ; PC := 27
- 21 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 22 [-]: MOVE      R7 R2        ; R7 := R2
- 23 [-]: MOVE      R8 R3        ; R8 := R3
- 24 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 25 [-]: JMP       28           ; PC := 28
- 26 [-]: MOVE      R6 R0        ; R6 := R0
- 27 [-]: MOVE      R6 R1        ; R6 := R1
- 28 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["CalculateY"]
- 29 [-]: SETTABLE  R0 K5 R7     ; R0["InstallGrid_CalculateY"] := R7
- 30 [-]: CLOSURE   R7 0         ; R7 := closure(Function #16.1)
- 31 [-]: MOVE      R0 R5        ; R0 := R5
- 32 [-]: SETTABLE  R0 K6 R7     ; R0["CalculateY"] := R7
- 33 [-]: RETURN    R0 1         ; return 
+  2 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["Item_LongGuns"]
+  3 [-]: EQ        1 R1 R4      ; if R1 == R4 then PC := 10
+  4 [-]: JMP       10           ; PC := 10
+  5 [-]: GETGLOBAL R4 K0        ; R4 := Engine
+  6 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["Item_Pistols"]
+  7 [-]: EQ        1 R1 R4      ; if R1 == R4 then PC := 10
+  8 [-]: JMP       10           ; PC := 10
+  9 [-]: MOVE      R4 R0        ; R4 := R0
+ 10 [-]: MOVE      R4 R1        ; R4 := R1
+ 11 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["CalculateY"]
+ 12 [-]: SETTABLE  R0 K3 R5     ; R0["InstallGrid_CalculateY"] := R5
+ 13 [-]: CLOSURE   R5 0         ; R5 := closure(Function #16.1)
+ 14 [-]: MOVE      R0 R4        ; R0 := R4
+ 15 [-]: SETTABLE  R0 K4 R5     ; R0["CalculateY"] := R5
+ 16 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #16.1:
 ;
 ; Name:            
-; Defined at line: 393
+; Defined at line: 391
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1312,7 +1294,7 @@ code size: 124
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 404
+; Defined at line: 402
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1372,11 +1354,11 @@ code size: 124
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 423
+; Defined at line: 421
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  23
+; Max Stack Size:  22
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "0x1" then PC := 4
   2 [-]: JMP       4            ; PC := 4
@@ -1428,79 +1410,78 @@ code size: 124
  48 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
  49 [-]: MOVE      R7 R2        ; R7 := R2
  50 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 51 [-]: TEST      R6 1         ; if R6 then PC := 123
- 52 [-]: JMP       123          ; PC := 123
- 53 [-]: LOADK     R6 K12       ; R6 := 0
- 54 [-]: GETTABLE  R7 R2 K13    ; R7 := R2["mAttachedUpgrades"]
- 55 [-]: GETGLOBAL R8 K14       ; R8 := MOD_SLOTS
- 56 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["IMMORTAL_INDEX"]
- 57 [-]: ADD       R8 R8 K16    ; R8 := R8 + 2
- 58 [-]: MOVE      R9 R8        ; R9 := R8
- 59 [-]: GETGLOBAL R10 K14      ; R10 := MOD_SLOTS
- 60 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["IMMORTAL_INDEX"]
- 61 [-]: LOADK     R11 K17      ; R11 := -1
- 62 [-]: FORPREP   R9 122       ; R9 -= R11; PC := 122
- 63 [-]: MOVE      R13 R0       ; R13 := R0
- 64 [-]: EQ        1 R7 K18     ; if R7 == nil then PC := 105
- 65 [-]: JMP       105          ; PC := 105
- 66 [-]: GETTABLE  R14 R7 R12   ; R14 := R7[R12]
- 67 [-]: EQ        1 R14 K18    ; if R14 == nil then PC := 105
- 68 [-]: JMP       105          ; PC := 105
- 69 [-]: GETTABLE  R14 R7 R12   ; R14 := R7[R12]
- 70 [-]: GETTABLE  R15 R14 K19  ; R15 := R14["mItemType"]
- 71 [-]: GETGLOBAL R16 K1       ; R16 := 0x400E7765
- 72 [-]: MOVE      R17 R15      ; R17 := R15
- 73 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 74 [-]: TEST      R16 1        ; if R16 then PC := 105
- 75 [-]: JMP       105          ; PC := 105
- 76 [-]: SELF      R16 R15 K20  ; R17 := R15; R16 := R15["0x8B598ED4"]
- 77 [-]: GETUPVAL  R18 U1       ; R18 := U1
- 78 [-]: GETTABLE  R18 R18 K21  ; R18 := R18["immortalModType"]
- 79 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 80 [-]: TEST      R16 0        ; if not R16 then PC := 105
- 81 [-]: JMP       105          ; PC := 105
- 82 [-]: GETTABLE  R16 R14 K22  ; R16 := R14["mInstance"]
- 83 [-]: SELF      R17 R16 K23  ; R18 := R16; R17 := R16["0x6F399EDE"]
- 84 [-]: GETTABLE  R19 R14 K24  ; R19 := R14["mUpgradeFingerprint"]
- 85 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
- 86 [-]: SELF      R18 R16 K25  ; R19 := R16; R18 := R16["0x1A1B8C3B"]
- 87 [-]: LOADK     R20 K26      ; R20 := ""
- 88 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
- 89 [-]: LT        0 R17 R18    ; if R17 >= R18 then PC := 105
- 90 [-]: JMP       105          ; PC := 105
- 91 [-]: TEST      R0 0         ; if not R0 then PC := 99
- 92 [-]: JMP       99           ; PC := 99
- 93 [-]: GETGLOBAL R19 K27      ; R19 := table
- 94 [-]: GETTABLE  R19 R19 K28  ; R19 := R19["0xE6450C9D"]
- 95 [-]: MOVE      R20 R1       ; R20 := R1
- 96 [-]: GETTABLE  R21 R7 R12   ; R21 := R7[R12]
- 97 [-]: CALL      R19 3 1      ; R19(R20,R21)
- 98 [-]: JMP       104          ; PC := 104
- 99 [-]: GETGLOBAL R19 K27      ; R19 := table
-100 [-]: GETTABLE  R19 R19 K28  ; R19 := R19["0xE6450C9D"]
-101 [-]: MOVE      R20 R1       ; R20 := R1
-102 [-]: MOVE      R21 R15      ; R21 := R15
-103 [-]: CALL      R19 3 1      ; R19(R20,R21)
-104 [-]: MOVE      R13 R1       ; R13 := R1
-105 [-]: TEST      R13 1        ; if R13 then PC := 122
-106 [-]: JMP       122          ; PC := 122
-107 [-]: TEST      R0 0         ; if not R0 then PC := 115
-108 [-]: JMP       115          ; PC := 115
-109 [-]: GETGLOBAL R19 K27      ; R19 := table
-110 [-]: GETTABLE  R19 R19 K28  ; R19 := R19["0xE6450C9D"]
-111 [-]: MOVE      R20 R1       ; R20 := R1
-112 [-]: NEWTABLE  R21 0 0      ; R21 := {}
-113 [-]: CALL      R19 3 1      ; R19(R20,R21)
-114 [-]: JMP       122          ; PC := 122
-115 [-]: GETGLOBAL R19 K27      ; R19 := table
-116 [-]: GETTABLE  R19 R19 K28  ; R19 := R19["0xE6450C9D"]
-117 [-]: MOVE      R20 R1       ; R20 := R1
-118 [-]: GETGLOBAL R21 K29      ; R21 := 0x2C00D429
-119 [-]: LOADK     R22 K30      ; R22 := "/Lotus/Upgrades/Mods/Immortal/ImmortalBaseMod"
-120 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
-121 [-]: CALL      R19 0 1      ; R19(R20,...)
-122 [-]: FORLOOP   R9 63        ; R9 += R11; if R9 <= R10 then begin PC := 63; R12 := R9 end
-123 [-]: RETURN    R1 2         ; return R1
-124 [-]: RETURN    R0 1         ; return 
+ 51 [-]: TEST      R6 1         ; if R6 then PC := 122
+ 52 [-]: JMP       122          ; PC := 122
+ 53 [-]: GETTABLE  R6 R2 K12    ; R6 := R2["mAttachedUpgrades"]
+ 54 [-]: GETGLOBAL R7 K13       ; R7 := MOD_SLOTS
+ 55 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["IMMORTAL_INDEX"]
+ 56 [-]: ADD       R7 R7 K15    ; R7 := R7 + 2
+ 57 [-]: MOVE      R8 R7        ; R8 := R7
+ 58 [-]: GETGLOBAL R9 K13       ; R9 := MOD_SLOTS
+ 59 [-]: GETTABLE  R9 R9 K14    ; R9 := R9["IMMORTAL_INDEX"]
+ 60 [-]: LOADK     R10 K16      ; R10 := -1
+ 61 [-]: FORPREP   R8 121       ; R8 -= R10; PC := 121
+ 62 [-]: MOVE      R12 R0       ; R12 := R0
+ 63 [-]: EQ        1 R6 K17     ; if R6 == nil then PC := 104
+ 64 [-]: JMP       104          ; PC := 104
+ 65 [-]: GETTABLE  R13 R6 R11   ; R13 := R6[R11]
+ 66 [-]: EQ        1 R13 K17    ; if R13 == nil then PC := 104
+ 67 [-]: JMP       104          ; PC := 104
+ 68 [-]: GETTABLE  R13 R6 R11   ; R13 := R6[R11]
+ 69 [-]: GETTABLE  R14 R13 K18  ; R14 := R13["mItemType"]
+ 70 [-]: GETGLOBAL R15 K1       ; R15 := 0x400E7765
+ 71 [-]: MOVE      R16 R14      ; R16 := R14
+ 72 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 73 [-]: TEST      R15 1        ; if R15 then PC := 104
+ 74 [-]: JMP       104          ; PC := 104
+ 75 [-]: SELF      R15 R14 K19  ; R16 := R14; R15 := R14["0x8B598ED4"]
+ 76 [-]: GETUPVAL  R17 U1       ; R17 := U1
+ 77 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["immortalModType"]
+ 78 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+ 79 [-]: TEST      R15 0        ; if not R15 then PC := 104
+ 80 [-]: JMP       104          ; PC := 104
+ 81 [-]: GETTABLE  R15 R13 K21  ; R15 := R13["mInstance"]
+ 82 [-]: SELF      R16 R15 K22  ; R17 := R15; R16 := R15["0x6F399EDE"]
+ 83 [-]: GETTABLE  R18 R13 K23  ; R18 := R13["mUpgradeFingerprint"]
+ 84 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+ 85 [-]: SELF      R17 R15 K24  ; R18 := R15; R17 := R15["0x1A1B8C3B"]
+ 86 [-]: LOADK     R19 K25      ; R19 := ""
+ 87 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+ 88 [-]: LT        0 R16 R17    ; if R16 >= R17 then PC := 104
+ 89 [-]: JMP       104          ; PC := 104
+ 90 [-]: TEST      R0 0         ; if not R0 then PC := 98
+ 91 [-]: JMP       98           ; PC := 98
+ 92 [-]: GETGLOBAL R18 K26      ; R18 := table
+ 93 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["0xE6450C9D"]
+ 94 [-]: MOVE      R19 R1       ; R19 := R1
+ 95 [-]: GETTABLE  R20 R6 R11   ; R20 := R6[R11]
+ 96 [-]: CALL      R18 3 1      ; R18(R19,R20)
+ 97 [-]: JMP       103          ; PC := 103
+ 98 [-]: GETGLOBAL R18 K26      ; R18 := table
+ 99 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["0xE6450C9D"]
+100 [-]: MOVE      R19 R1       ; R19 := R1
+101 [-]: MOVE      R20 R14      ; R20 := R14
+102 [-]: CALL      R18 3 1      ; R18(R19,R20)
+103 [-]: MOVE      R12 R1       ; R12 := R1
+104 [-]: TEST      R12 1        ; if R12 then PC := 121
+105 [-]: JMP       121          ; PC := 121
+106 [-]: TEST      R0 0         ; if not R0 then PC := 114
+107 [-]: JMP       114          ; PC := 114
+108 [-]: GETGLOBAL R18 K26      ; R18 := table
+109 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["0xE6450C9D"]
+110 [-]: MOVE      R19 R1       ; R19 := R1
+111 [-]: NEWTABLE  R20 0 0      ; R20 := {}
+112 [-]: CALL      R18 3 1      ; R18(R19,R20)
+113 [-]: JMP       121          ; PC := 121
+114 [-]: GETGLOBAL R18 K26      ; R18 := table
+115 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["0xE6450C9D"]
+116 [-]: MOVE      R19 R1       ; R19 := R1
+117 [-]: GETGLOBAL R20 K28      ; R20 := 0x2C00D429
+118 [-]: LOADK     R21 K29      ; R21 := "/Lotus/Upgrades/Mods/Immortal/ImmortalBaseMod"
+119 [-]: CALL      R20 2 0      ; R20,... := R20(R21)
+120 [-]: CALL      R18 0 1      ; R18(R19,...)
+121 [-]: FORLOOP   R8 62        ; R8 += R10; if R8 <= R9 then begin PC := 62; R11 := R8 end
+122 [-]: RETURN    R1 2         ; return R1
+123 [-]: RETURN    R0 1         ; return 
 
 

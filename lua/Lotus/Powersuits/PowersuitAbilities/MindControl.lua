@@ -24,7 +24,7 @@ code size: 47
 code size: 79
 code size: 39
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\MindControl.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\MindControl.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -579,46 +579,46 @@ code size: 39
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  15
+; Max Stack Size:  14
 
-  1 [-]: CLOSURE   R5 0         ; R5 := closure(Function #9.1)
+  1 [-]: CLOSURE   R4 0         ; R4 := closure(Function #9.1)
   2 [-]: GETUPVAL  R0 U0        ; R0 := U0
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: MOVE      R0 R2        ; R0 := R2
-  5 [-]: GETGLOBAL R6 K0        ; R6 := 0x63B09107
-  6 [-]: MOVE      R7 R1        ; R7 := R1
-  7 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
+  5 [-]: GETGLOBAL R5 K0        ; R5 := 0x63B09107
+  6 [-]: MOVE      R6 R1        ; R6 := R1
+  7 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
   8 [-]: JMP       21           ; PC := 21
-  9 [-]: MOVE      R11 R5       ; R11 := R5
- 10 [-]: MOVE      R12 R10      ; R12 := R10
- 11 [-]: CALL      R11 2 3      ; R11,R12 := R11(R12)
- 12 [-]: TEST      R11 0        ; if not R11 then PC := 18
+  9 [-]: MOVE      R10 R4       ; R10 := R4
+ 10 [-]: MOVE      R11 R9       ; R11 := R9
+ 11 [-]: CALL      R10 2 3      ; R10,R11 := R10(R11)
+ 12 [-]: TEST      R10 0        ; if not R10 then PC := 18
  13 [-]: JMP       18           ; PC := 18
- 14 [-]: MOVE      R13 R1       ; R13 := R1
- 15 [-]: MOVE      R14 R10      ; R14 := R10
- 16 [-]: RETURN    R13 3        ; return R13,R14
+ 14 [-]: MOVE      R12 R1       ; R12 := R1
+ 15 [-]: MOVE      R13 R9       ; R13 := R9
+ 16 [-]: RETURN    R12 3        ; return R12,R13
  17 [-]: JMP       21           ; PC := 21
- 18 [-]: TEST      R12 1        ; if R12 then PC := 21
+ 18 [-]: TEST      R11 1        ; if R11 then PC := 21
  19 [-]: JMP       21           ; PC := 21
- 20 [-]: MOVE      R4 R12       ; R4 := R12
- 21 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 9; R8 := R9 end
+ 20 [-]: MOVE      R3 R11       ; R3 := R11
+ 21 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 9; R7 := R8 end
  22 [-]: JMP       9            ; PC := 9
- 23 [-]: TEST      R4 1         ; if R4 then PC := 29
+ 23 [-]: TEST      R3 1         ; if R3 then PC := 29
  24 [-]: JMP       29           ; PC := 29
- 25 [-]: GETGLOBAL R13 K1       ; R13 := 0xEC274B1A
- 26 [-]: LOADK     R14 K2       ; R14 := "/Lotus/Language/Game/AbilityErrorInvalidTarget"
- 27 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 28 [-]: MOVE      R4 R13       ; R4 := R13
- 29 [-]: MOVE      R13 R0       ; R13 := R0
- 30 [-]: MOVE      R14 R4       ; R14 := R4
- 31 [-]: RETURN    R13 3        ; return R13,R14
+ 25 [-]: GETGLOBAL R12 K1       ; R12 := 0xEC274B1A
+ 26 [-]: LOADK     R13 K2       ; R13 := "/Lotus/Language/Game/AbilityErrorInvalidTarget"
+ 27 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 28 [-]: MOVE      R3 R12       ; R3 := R12
+ 29 [-]: MOVE      R12 R0       ; R12 := R0
+ 30 [-]: MOVE      R13 R3       ; R13 := R3
+ 31 [-]: RETURN    R12 3        ; return R12,R13
  32 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9.1:
 ;
 ; Name:            
-; Defined at line: 200
+; Defined at line: 199
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -714,7 +714,7 @@ code size: 39
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 244
+; Defined at line: 243
 ; #Upvalues:       4
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -817,7 +817,7 @@ code size: 39
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 283
+; Defined at line: 282
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -865,7 +865,7 @@ code size: 39
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 301
+; Defined at line: 300
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -889,7 +889,7 @@ code size: 39
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 307
+; Defined at line: 306
 ; #Upvalues:       7
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1174,7 +1174,7 @@ code size: 39
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 418
+; Defined at line: 417
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1267,7 +1267,7 @@ code size: 39
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 448
+; Defined at line: 447
 ; #Upvalues:       8
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -1857,7 +1857,7 @@ code size: 39
 ; Function #15.1:
 ;
 ; Name:            
-; Defined at line: 558
+; Defined at line: 557
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1874,7 +1874,7 @@ code size: 39
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 668
+; Defined at line: 667
 ; #Upvalues:       9
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2052,7 +2052,7 @@ code size: 39
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 731
+; Defined at line: 730
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2093,7 +2093,7 @@ code size: 39
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 741
+; Defined at line: 740
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2143,7 +2143,7 @@ code size: 39
 ; Function #18.1:
 ;
 ; Name:            
-; Defined at line: 744
+; Defined at line: 743
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2166,7 +2166,7 @@ code size: 39
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 750
+; Defined at line: 749
 ; #Upvalues:       5
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -2224,7 +2224,7 @@ code size: 39
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 767
+; Defined at line: 766
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2314,7 +2314,7 @@ code size: 39
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 793
+; Defined at line: 792
 ; #Upvalues:       0
 ; #Parameters:     8
 ; Is_vararg:       0

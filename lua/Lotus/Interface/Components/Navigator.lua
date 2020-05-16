@@ -14,7 +14,7 @@ code size: 26
 code size: 13
 code size: 129
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\Navigator.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\Navigator.luac 
 
 ; Name:            
 ; Defined at line: 0

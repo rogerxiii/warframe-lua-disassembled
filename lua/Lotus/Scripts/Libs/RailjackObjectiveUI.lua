@@ -1,25 +1,24 @@
-code size: 84
+code size: 75
 code size: 39
 code size: 68
-code size: 47
 code size: 64
-code size: 42
-code size: 63
-code size: 40
-code size: 38
+code size: 26
+code size: 47
+code size: 41
 code size: 82
 code size: 35
 code size: 44
 code size: 8
+code size: 7
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\RailjackObjectiveUI.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Libs\RailjackObjectiveUI.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  11
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x38E3A30F
   2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
@@ -39,78 +38,69 @@ code size: 8
  16 [-]: LOADK     R4 K17       ; R4 := "Lotus.Interface.LotusUtilities"
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  18 [-]: LOADNIL   R4 R4        ; R4 := nil
- 19 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 20 [-]: LOADK     R6 K19       ; R6 := 1
- 21 [-]: SETGLOBAL R6 K18       ; GENERIC_ICON := R6
- 22 [-]: LOADK     R6 K21       ; R6 := 2
- 23 [-]: SETGLOBAL R6 K20       ; ATTACK_ICON := R6
- 24 [-]: LOADK     R6 K23       ; R6 := 3
- 25 [-]: SETGLOBAL R6 K22       ; EXTRACT_ICON := R6
- 26 [-]: LOADK     R6 K25       ; R6 := 4
- 27 [-]: SETGLOBAL R6 K24       ; LOOT_ICON := R6
- 28 [-]: LOADK     R6 K27       ; R6 := 5
- 29 [-]: SETGLOBAL R6 K26       ; DEFEND_ICON := R6
- 30 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
- 31 [-]: MOVE      R0 R4        ; R0 := R4
- 32 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 33 [-]: CLOSURE   R8 2         ; R8 := closure(Function #3)
- 34 [-]: MOVE      R0 R5        ; R0 := R5
- 35 [-]: CLOSURE   R9 3         ; R9 := closure(Function #4)
+ 19 [-]: LOADK     R5 K19       ; R5 := 1
+ 20 [-]: SETGLOBAL R5 K18       ; GENERIC_ICON := R5
+ 21 [-]: LOADK     R5 K21       ; R5 := 2
+ 22 [-]: SETGLOBAL R5 K20       ; ATTACK_ICON := R5
+ 23 [-]: LOADK     R5 K23       ; R5 := 3
+ 24 [-]: SETGLOBAL R5 K22       ; EXTRACT_ICON := R5
+ 25 [-]: LOADK     R5 K25       ; R5 := 4
+ 26 [-]: SETGLOBAL R5 K24       ; LOOT_ICON := R5
+ 27 [-]: LOADK     R5 K27       ; R5 := 5
+ 28 [-]: SETGLOBAL R5 K26       ; DEFEND_ICON := R5
+ 29 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
+ 30 [-]: MOVE      R0 R4        ; R0 := R4
+ 31 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
+ 32 [-]: CLOSURE   R7 2         ; R7 := closure(Function #3)
+ 33 [-]: MOVE      R0 R5        ; R0 := R5
+ 34 [-]: MOVE      R0 R2        ; R0 := R2
+ 35 [-]: CLOSURE   R8 3         ; R8 := closure(Function #4)
  36 [-]: MOVE      R0 R6        ; R0 := R6
- 37 [-]: MOVE      R0 R2        ; R0 := R2
- 38 [-]: CLOSURE   R10 4        ; R10 := closure(Function #5)
+ 37 [-]: MOVE      R0 R3        ; R0 := R3
+ 38 [-]: MOVE      R0 R0        ; R0 := R0
  39 [-]: MOVE      R0 R7        ; R0 := R7
- 40 [-]: MOVE      R0 R8        ; R0 := R8
- 41 [-]: MOVE      R0 R3        ; R0 := R3
- 42 [-]: MOVE      R0 R0        ; R0 := R0
- 43 [-]: MOVE      R0 R5        ; R0 := R5
- 44 [-]: MOVE      R0 R9        ; R0 := R9
- 45 [-]: SETGLOBAL R10 K28      ; SetMainObjective := R10
- 46 [-]: SETGLOBAL R10 K29      ; 0x50ADA23A := R10
- 47 [-]: CLOSURE   R10 5        ; R10 := closure(Function #6)
- 48 [-]: MOVE      R0 R7        ; R0 := R7
- 49 [-]: MOVE      R0 R8        ; R0 := R8
- 50 [-]: MOVE      R0 R3        ; R0 := R3
+ 40 [-]: SETGLOBAL R8 K28       ; SetMainObjective := R8
+ 41 [-]: SETGLOBAL R8 K29       ; 0x50ADA23A := R8
+ 42 [-]: CLOSURE   R8 4         ; R8 := closure(Function #5)
+ 43 [-]: MOVE      R0 R6        ; R0 := R6
+ 44 [-]: MOVE      R0 R3        ; R0 := R3
+ 45 [-]: MOVE      R0 R0        ; R0 := R0
+ 46 [-]: MOVE      R0 R1        ; R0 := R1
+ 47 [-]: MOVE      R0 R7        ; R0 := R7
+ 48 [-]: SETGLOBAL R8 K30       ; SetSubObjective := R8
+ 49 [-]: SETGLOBAL R8 K31       ; 0xA3D1C0BD := R8
+ 50 [-]: CLOSURE   R8 5         ; R8 := closure(Function #6)
  51 [-]: MOVE      R0 R0        ; R0 := R0
- 52 [-]: MOVE      R0 R5        ; R0 := R5
- 53 [-]: MOVE      R0 R1        ; R0 := R1
- 54 [-]: MOVE      R0 R9        ; R0 := R9
- 55 [-]: SETGLOBAL R10 K30      ; SetSubObjective := R10
- 56 [-]: SETGLOBAL R10 K31      ; 0xA3D1C0BD := R10
- 57 [-]: CLOSURE   R10 6        ; R10 := closure(Function #7)
- 58 [-]: MOVE      R0 R8        ; R0 := R8
- 59 [-]: MOVE      R0 R0        ; R0 := R0
- 60 [-]: SETGLOBAL R10 K32      ; RemoveObjective := R10
- 61 [-]: SETGLOBAL R10 K33      ; 0xFB7410E := R10
- 62 [-]: CLOSURE   R10 7        ; R10 := closure(Function #8)
- 63 [-]: MOVE      R0 R5        ; R0 := R5
- 64 [-]: MOVE      R0 R0        ; R0 := R0
- 65 [-]: SETGLOBAL R10 K34      ; RemoveAllCachedTrackers := R10
- 66 [-]: SETGLOBAL R10 K35      ; 0x58D5DD71 := R10
- 67 [-]: CLOSURE   R10 8        ; R10 := closure(Function #9)
- 68 [-]: MOVE      R0 R3        ; R0 := R3
- 69 [-]: MOVE      R0 R0        ; R0 := R0
- 70 [-]: MOVE      R0 R9        ; R0 := R9
- 71 [-]: SETGLOBAL R10 K36      ; SetReturnUI := R10
- 72 [-]: SETGLOBAL R10 K37      ; 0xA90D0092 := R10
- 73 [-]: CLOSURE   R10 9        ; R10 := closure(Function #10)
- 74 [-]: MOVE      R0 R0        ; R0 := R0
- 75 [-]: SETGLOBAL R10 K38      ; RemoveReturnUI := R10
- 76 [-]: SETGLOBAL R10 K39      ; 0x64B7A1E1 := R10
- 77 [-]: CLOSURE   R10 10       ; R10 := closure(Function #11)
- 78 [-]: SETGLOBAL R10 K40      ; GetReturnTimeLeft := R10
- 79 [-]: SETGLOBAL R10 K41      ; 0x24D1E1C4 := R10
- 80 [-]: CLOSURE   R10 11       ; R10 := closure(Function #12)
- 81 [-]: MOVE      R0 R9        ; R0 := R9
- 82 [-]: SETGLOBAL R10 K42      ; SetExternalTrackerLabel := R10
- 83 [-]: SETGLOBAL R10 K43      ; 0xD639F24A := R10
- 84 [-]: RETURN    R0 1         ; return 
+ 52 [-]: SETGLOBAL R8 K32       ; RemoveObjective := R8
+ 53 [-]: SETGLOBAL R8 K33       ; 0xFB7410E := R8
+ 54 [-]: CLOSURE   R8 6         ; R8 := closure(Function #7)
+ 55 [-]: MOVE      R0 R3        ; R0 := R3
+ 56 [-]: MOVE      R0 R0        ; R0 := R0
+ 57 [-]: MOVE      R0 R7        ; R0 := R7
+ 58 [-]: SETGLOBAL R8 K34       ; SetReturnUI := R8
+ 59 [-]: SETGLOBAL R8 K35       ; 0xA90D0092 := R8
+ 60 [-]: CLOSURE   R8 7         ; R8 := closure(Function #8)
+ 61 [-]: MOVE      R0 R0        ; R0 := R0
+ 62 [-]: SETGLOBAL R8 K36       ; RemoveReturnUI := R8
+ 63 [-]: SETGLOBAL R8 K37       ; 0x64B7A1E1 := R8
+ 64 [-]: CLOSURE   R8 8         ; R8 := closure(Function #9)
+ 65 [-]: SETGLOBAL R8 K38       ; GetReturnTimeLeft := R8
+ 66 [-]: SETGLOBAL R8 K39       ; 0x24D1E1C4 := R8
+ 67 [-]: CLOSURE   R8 9         ; R8 := closure(Function #10)
+ 68 [-]: MOVE      R0 R7        ; R0 := R7
+ 69 [-]: SETGLOBAL R8 K40       ; SetExternalTrackerLabel := R8
+ 70 [-]: SETGLOBAL R8 K41       ; 0xD639F24A := R8
+ 71 [-]: CLOSURE   R8 10        ; R8 := closure(Function #11)
+ 72 [-]: MOVE      R0 R6        ; R0 := R6
+ 73 [-]: SETGLOBAL R8 K42       ; GetEncounterIdForHint := R8
+ 74 [-]: SETGLOBAL R8 K43       ; 0xD11829EB := R8
+ 75 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 30
+; Defined at line: 29
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -160,7 +150,7 @@ code size: 8
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 43
+; Defined at line: 42
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -239,65 +229,7 @@ code size: 8
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 68
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: LOADK     R2 K0        ; R2 := 1
-  2 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  3 [-]: LEN       R3 R3        ; R3 := # R3
-  4 [-]: LOADK     R4 K0        ; R4 := 1
-  5 [-]: FORPREP   R2 14        ; R2 -= R4; PC := 14
-  6 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  7 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
-  8 [-]: GETTABLE  R6 R6 K1     ; R6 := R6["name"]
-  9 [-]: EQ        0 R6 R0      ; if R6 ~= R0 then PC := 14
- 10 [-]: JMP       14           ; PC := 14
- 11 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 12 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 13 [-]: GETTABLE  R1 R6 K2     ; R1 := R6["tracker"]
- 14 [-]: FORLOOP   R2 6         ; R2 += R4; if R2 <= R3 then begin PC := 6; R5 := R2 end
- 15 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
- 16 [-]: MOVE      R7 R1        ; R7 := R1
- 17 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 18 [-]: TEST      R6 0         ; if not R6 then PC := 37
- 19 [-]: JMP       37           ; PC := 37
- 20 [-]: GETGLOBAL R6 K4        ; R6 := _T
- 21 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["0x5A55B010"]
- 22 [-]: MOVE      R7 R0        ; R7 := R0
- 23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 24 [-]: MOVE      R1 R6        ; R1 := R6
- 25 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
- 26 [-]: MOVE      R7 R1        ; R7 := R1
- 27 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 28 [-]: TEST      R6 1         ; if R6 then PC := 37
- 29 [-]: JMP       37           ; PC := 37
- 30 [-]: GETGLOBAL R6 K6        ; R6 := table
- 31 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["0xE6450C9D"]
- 32 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 33 [-]: NEWTABLE  R8 0 2       ; R8 := {}
- 34 [-]: SETTABLE  R8 K1 R0     ; R8["name"] := R0
- 35 [-]: SETTABLE  R8 K2 R1     ; R8["tracker"] := R1
- 36 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 37 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
- 38 [-]: MOVE      R7 R1        ; R7 := R1
- 39 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 40 [-]: TEST      R6 1         ; if R6 then PC := 46
- 41 [-]: JMP       46           ; PC := 46
- 42 [-]: GETTABLE  R6 R1 K8     ; R6 := R1["Removing"]
- 43 [-]: TEST      R6 0         ; if not R6 then PC := 46
- 44 [-]: JMP       46           ; PC := 46
- 45 [-]: RETURN    R0 1         ; return 
- 46 [-]: RETURN    R1 2         ; return R1
- 47 [-]: RETURN    R0 1         ; return 
-
-
-; Function #4:
-;
-; Name:            
-; Defined at line: 90
+; Defined at line: 67
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -369,14 +301,14 @@ code size: 8
  64 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 115
-; #Upvalues:       6
+; Defined at line: 92
+; #Upvalues:       4
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
   1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0["0xED4CA14A"]
   2 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -387,46 +319,30 @@ code size: 8
   7 [-]: GETUPVAL  R5 U0        ; R5 := U0
   8 [-]: MOVE      R6 R3        ; R6 := R3
   9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 10 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 11 [-]: MOVE      R7 R4        ; R7 := R4
- 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 13 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
- 14 [-]: MOVE      R8 R6        ; R8 := R6
- 15 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 16 [-]: TEST      R7 0         ; if not R7 then PC := 35
- 17 [-]: JMP       35           ; PC := 35
- 18 [-]: GETGLOBAL R7 K4        ; R7 := _T
- 19 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["0x39F152B7"]
- 20 [-]: MOVE      R8 R4        ; R8 := R4
- 21 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 22 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["HT_LABEL"]
- 23 [-]: GETUPVAL  R10 U3       ; R10 := U3
- 24 [-]: MOVE      R11 R5       ; R11 := R5
- 25 [-]: MOVE      R12 R1       ; R12 := R1
- 26 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
- 27 [-]: MOVE      R6 R7        ; R6 := R7
- 28 [-]: GETGLOBAL R7 K7        ; R7 := table
- 29 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["0xE6450C9D"]
- 30 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 31 [-]: NEWTABLE  R9 0 2       ; R9 := {}
- 32 [-]: SETTABLE  R9 K9 R4     ; R9["name"] := R4
- 33 [-]: SETTABLE  R9 K10 R6    ; R9["tracker"] := R6
- 34 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 35 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 36 [-]: MOVE      R8 R6        ; R8 := R6
- 37 [-]: MOVE      R9 R1        ; R9 := R1
- 38 [-]: MOVE      R10 R1       ; R10 := R1
- 39 [-]: MOVE      R11 R2       ; R11 := R2
- 40 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 41 [-]: RETURN    R6 2         ; return R6
- 42 [-]: RETURN    R0 1         ; return 
+ 10 [-]: GETGLOBAL R6 K3        ; R6 := _T
+ 11 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["0x39F152B7"]
+ 12 [-]: MOVE      R7 R4        ; R7 := R4
+ 13 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 14 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["HT_LABEL"]
+ 15 [-]: GETUPVAL  R9 U2        ; R9 := U2
+ 16 [-]: MOVE      R10 R5       ; R10 := R5
+ 17 [-]: MOVE      R11 R1       ; R11 := R1
+ 18 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
+ 19 [-]: GETUPVAL  R7 U3        ; R7 := U3
+ 20 [-]: MOVE      R8 R6        ; R8 := R6
+ 21 [-]: MOVE      R9 R1        ; R9 := R1
+ 22 [-]: MOVE      R10 R1       ; R10 := R1
+ 23 [-]: MOVE      R11 R2       ; R11 := R2
+ 24 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
+ 25 [-]: RETURN    R6 2         ; return R6
+ 26 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 131
-; #Upvalues:       7
+; Defined at line: 104
+; #Upvalues:       5
 ; #Parameters:     5
 ; Is_vararg:       0
 ; Max Stack Size:  15
@@ -441,66 +357,50 @@ code size: 8
   8 [-]: GETUPVAL  R7 U0        ; R7 := U0
   9 [-]: MOVE      R8 R5        ; R8 := R5
  10 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 11 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 12 [-]: MOVE      R9 R6        ; R9 := R6
- 13 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 14 [-]: GETGLOBAL R9 K3        ; R9 := 0x400E7765
- 15 [-]: MOVE      R10 R8       ; R10 := R8
- 16 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 17 [-]: TEST      R9 0         ; if not R9 then PC := 55
- 18 [-]: JMP       55           ; PC := 55
- 19 [-]: GETGLOBAL R9 K4        ; R9 := _T
- 20 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["0x39F152B7"]
- 21 [-]: MOVE      R10 R6       ; R10 := R6
- 22 [-]: GETUPVAL  R11 U2       ; R11 := U2
- 23 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["HT_LABEL"]
- 24 [-]: GETUPVAL  R12 U3       ; R12 := U3
- 25 [-]: ADD       R13 R7 K7    ; R13 := R7 + 1
- 26 [-]: MOVE      R14 R1       ; R14 := R1
- 27 [-]: CALL      R9 6 2       ; R9 := R9(R10,R11,R12,R13,R14)
- 28 [-]: MOVE      R8 R9        ; R8 := R9
- 29 [-]: GETGLOBAL R9 K8        ; R9 := table
- 30 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["0xE6450C9D"]
- 31 [-]: GETUPVAL  R10 U4       ; R10 := U4
- 32 [-]: NEWTABLE  R11 0 2      ; R11 := {}
- 33 [-]: SETTABLE  R11 K10 R6   ; R11["name"] := R6
- 34 [-]: SETTABLE  R11 K11 R8   ; R11["tracker"] := R8
- 35 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 36 [-]: GETGLOBAL R9 K3        ; R9 := 0x400E7765
- 37 [-]: MOVE      R10 R3       ; R10 := R3
- 38 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 39 [-]: TEST      R9 0         ; if not R9 then PC := 49
- 40 [-]: JMP       49           ; PC := 49
- 41 [-]: GETTABLE  R9 R8 K12    ; R9 := R8["0xDA4AD912"]
- 42 [-]: GETUPVAL  R10 U5       ; R10 := U5
- 43 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["x"]
- 44 [-]: GETUPVAL  R11 U5       ; R11 := U5
- 45 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["y"]
- 46 [-]: MOVE      R12 R1       ; R12 := R1
- 47 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 48 [-]: JMP       55           ; PC := 55
- 49 [-]: GETTABLE  R9 R8 K12    ; R9 := R8["0xDA4AD912"]
- 50 [-]: LOADK     R10 K15      ; R10 := 0
- 51 [-]: GETUPVAL  R11 U5       ; R11 := U5
- 52 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["y"]
- 53 [-]: MOVE      R12 R1       ; R12 := R1
- 54 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 55 [-]: GETUPVAL  R9 U6        ; R9 := U6
- 56 [-]: MOVE      R10 R8       ; R10 := R8
- 57 [-]: MOVE      R11 R0       ; R11 := R0
- 58 [-]: MOVE      R12 R2       ; R12 := R2
- 59 [-]: MOVE      R13 R4       ; R13 := R4
- 60 [-]: MOVE      R14 R3       ; R14 := R3
- 61 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
- 62 [-]: RETURN    R8 2         ; return R8
- 63 [-]: RETURN    R0 1         ; return 
+ 11 [-]: GETGLOBAL R8 K3        ; R8 := _T
+ 12 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["0x39F152B7"]
+ 13 [-]: MOVE      R9 R6        ; R9 := R6
+ 14 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 15 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["HT_LABEL"]
+ 16 [-]: GETUPVAL  R11 U2       ; R11 := U2
+ 17 [-]: ADD       R12 R7 K6    ; R12 := R7 + 1
+ 18 [-]: MOVE      R13 R1       ; R13 := R1
+ 19 [-]: CALL      R8 6 2       ; R8 := R8(R9,R10,R11,R12,R13)
+ 20 [-]: GETGLOBAL R9 K7        ; R9 := 0x400E7765
+ 21 [-]: MOVE      R10 R3       ; R10 := R3
+ 22 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 23 [-]: TEST      R9 0         ; if not R9 then PC := 33
+ 24 [-]: JMP       33           ; PC := 33
+ 25 [-]: GETTABLE  R9 R8 K8     ; R9 := R8["0xDA4AD912"]
+ 26 [-]: GETUPVAL  R10 U3       ; R10 := U3
+ 27 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["x"]
+ 28 [-]: GETUPVAL  R11 U3       ; R11 := U3
+ 29 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["y"]
+ 30 [-]: MOVE      R12 R1       ; R12 := R1
+ 31 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+ 32 [-]: JMP       39           ; PC := 39
+ 33 [-]: GETTABLE  R9 R8 K8     ; R9 := R8["0xDA4AD912"]
+ 34 [-]: LOADK     R10 K11      ; R10 := 0
+ 35 [-]: GETUPVAL  R11 U3       ; R11 := U3
+ 36 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["y"]
+ 37 [-]: MOVE      R12 R1       ; R12 := R1
+ 38 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+ 39 [-]: GETUPVAL  R9 U4        ; R9 := U4
+ 40 [-]: MOVE      R10 R8       ; R10 := R8
+ 41 [-]: MOVE      R11 R0       ; R11 := R0
+ 42 [-]: MOVE      R12 R2       ; R12 := R2
+ 43 [-]: MOVE      R13 R4       ; R13 := R4
+ 44 [-]: MOVE      R14 R3       ; R14 := R3
+ 45 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+ 46 [-]: RETURN    R8 2         ; return R8
+ 47 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 152
-; #Upvalues:       2
+; Defined at line: 121
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  7
@@ -509,8 +409,8 @@ code size: 8
   2 [-]: GETGLOBAL R3 K1        ; R3 := _T
   3 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["RemoveHudTracker"]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  5 [-]: TEST      R2 1         ; if R2 then PC := 40
-  6 [-]: JMP       40           ; PC := 40
+  5 [-]: TEST      R2 1         ; if R2 then PC := 41
+  6 [-]: JMP       41           ; PC := 41
   7 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0["0xED4CA14A"]
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   9 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x1B252E3C"]
@@ -528,78 +428,30 @@ code size: 8
  21 [-]: MOVE      R3 R2        ; R3 := R2
  22 [-]: LOADK     R4 K6        ; R4 := "_Tracker"
  23 [-]: CONCAT    R2 R3 R4     ; R2 := R3 .. R4
- 24 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 25 [-]: MOVE      R4 R2        ; R4 := R2
- 26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 27 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 28 [-]: MOVE      R5 R3        ; R5 := R3
- 29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 30 [-]: TEST      R4 1         ; if R4 then PC := 40
- 31 [-]: JMP       40           ; PC := 40
- 32 [-]: GETTABLE  R4 R3 K7     ; R4 := R3["Removing"]
- 33 [-]: TEST      R4 1         ; if R4 then PC := 40
- 34 [-]: JMP       40           ; PC := 40
- 35 [-]: GETGLOBAL R4 K1        ; R4 := _T
- 36 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0x13866EEC"]
- 37 [-]: MOVE      R5 R3        ; R5 := R3
- 38 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 39 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 40 [-]: RETURN    R0 1         ; return 
+ 24 [-]: GETGLOBAL R3 K1        ; R3 := _T
+ 25 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["0x5A55B010"]
+ 26 [-]: MOVE      R4 R2        ; R4 := R2
+ 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 28 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 29 [-]: MOVE      R5 R3        ; R5 := R3
+ 30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 31 [-]: TEST      R4 1         ; if R4 then PC := 41
+ 32 [-]: JMP       41           ; PC := 41
+ 33 [-]: GETTABLE  R4 R3 K8     ; R4 := R3["Removing"]
+ 34 [-]: TEST      R4 1         ; if R4 then PC := 41
+ 35 [-]: JMP       41           ; PC := 41
+ 36 [-]: GETGLOBAL R4 K1        ; R4 := _T
+ 37 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0x13866EEC"]
+ 38 [-]: MOVE      R5 R3        ; R5 := R3
+ 39 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 40 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 41 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 167
-; #Upvalues:       2
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
-  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: TEST      R0 1         ; if R0 then PC := 36
-  5 [-]: JMP       36           ; PC := 36
-  6 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  7 [-]: LEN       R0 R0        ; R0 := # R0
-  8 [-]: LT        0 K1 R0      ; if 0 >= R0 then PC := 36
-  9 [-]: JMP       36           ; PC := 36
- 10 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
- 11 [-]: GETGLOBAL R1 K2        ; R1 := _T
- 12 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["RemoveHudTracker"]
- 13 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 14 [-]: TEST      R0 1         ; if R0 then PC := 36
- 15 [-]: JMP       36           ; PC := 36
- 16 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 17 [-]: LEN       R0 R0        ; R0 := # R0
- 18 [-]: LOADK     R1 K4        ; R1 := 1
- 19 [-]: LOADK     R2 K5        ; R2 := -1
- 20 [-]: FORPREP   R0 35        ; R0 -= R2; PC := 35
- 21 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 22 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 23 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 24 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["tracker"]
- 25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 26 [-]: TEST      R4 1         ; if R4 then PC := 35
- 27 [-]: JMP       35           ; PC := 35
- 28 [-]: GETGLOBAL R4 K2        ; R4 := _T
- 29 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["0x13866EEC"]
- 30 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 31 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 32 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["tracker"]
- 33 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 34 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 35 [-]: FORLOOP   R0 21        ; R0 += R2; if R0 <= R1 then begin PC := 21; R3 := R0 end
- 36 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 37 [-]: MOVE      R4 R0        ; R4 := R0
- 38 [-]: RETURN    R0 1         ; return 
-
-
-; Function #9:
-;
-; Name:            
-; Defined at line: 180
+; Defined at line: 138
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -689,10 +541,10 @@ code size: 8
  82 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 211
+; Defined at line: 169
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -735,10 +587,10 @@ code size: 8
  35 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 223
+; Defined at line: 181
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -790,10 +642,10 @@ code size: 8
  44 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 238
+; Defined at line: 196
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -807,5 +659,23 @@ code size: 8
   6 [-]: MOVE      R10 R4       ; R10 := R4
   7 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
   8 [-]: RETURN    R0 1         ; return 
+
+
+; Function #11:
+;
+; Name:            
+; Defined at line: 200
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0xED4CA14A"]
+  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: MOVE      R3 R1        ; R3 := R1
+  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  6 [-]: RETURN    R2 2         ; return R2
+  7 [-]: RETURN    R0 1         ; return 
 
 

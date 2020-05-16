@@ -1,4 +1,4 @@
-code size: 89
+code size: 91
 code size: 73
 code size: 52
 code size: 22
@@ -13,115 +13,117 @@ code size: 30
 code size: 53
 code size: 13
 code size: 74
-code size: 74
+code size: 86
 code size: 62
 code size: 348
 code size: 70
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\Light.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\Light.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  20
+; Max Stack Size:  21
 
-  1 [-]: LOADK     R0 K0        ; R0 := 10
-  2 [-]: LOADK     R1 K1        ; R1 := 1.1499999761581
-  3 [-]: LOADK     R2 K2        ; R2 := 0.25
-  4 [-]: GETGLOBAL R3 K3        ; R3 := 0xEC274B1A
-  5 [-]: LOADK     R4 K4        ; R4 := "EffectsDeco"
-  6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  7 [-]: GETGLOBAL R4 K5        ; R4 := 0x329BDC44
-  8 [-]: LOADK     R5 K6        ; R5 := "Lotus.Powersuits.PowersuitAbilities.PVPLib"
-  9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 10 [-]: NEWTABLE  R5 5 0       ; R5 := {}
- 11 [-]: LOADK     R6 K7        ; R6 := "DiffuseMap"
- 12 [-]: LOADK     R7 K8        ; R7 := "NormalMap"
- 13 [-]: LOADK     R8 K9        ; R8 := "EmissiveMap"
- 14 [-]: LOADK     R9 K10       ; R9 := "TintMaskMap"
- 15 [-]: LOADK     R10 K11      ; R10 := "PackMap"
- 16 [-]: SETLIST   R5 5 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 5
- 17 [-]: LOADK     R6 K12       ; R6 := 3
- 18 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
- 19 [-]: MOVE      R0 R4        ; R0 := R4
- 20 [-]: MOVE      R0 R0        ; R0 := R0
+  1 [-]: LOADK     R0 K0        ; R0 := 0.5
+  2 [-]: LOADK     R1 K1        ; R1 := 10
+  3 [-]: LOADK     R2 K2        ; R2 := 1.1499999761581
+  4 [-]: LOADK     R3 K3        ; R3 := 0.25
+  5 [-]: GETGLOBAL R4 K4        ; R4 := 0xEC274B1A
+  6 [-]: LOADK     R5 K5        ; R5 := "EffectsDeco"
+  7 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  8 [-]: GETGLOBAL R5 K6        ; R5 := 0x329BDC44
+  9 [-]: LOADK     R6 K7        ; R6 := "Lotus.Powersuits.PowersuitAbilities.PVPLib"
+ 10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 11 [-]: NEWTABLE  R6 5 0       ; R6 := {}
+ 12 [-]: LOADK     R7 K8        ; R7 := "DiffuseMap"
+ 13 [-]: LOADK     R8 K9        ; R8 := "NormalMap"
+ 14 [-]: LOADK     R9 K10       ; R9 := "EmissiveMap"
+ 15 [-]: LOADK     R10 K11      ; R10 := "TintMaskMap"
+ 16 [-]: LOADK     R11 K12      ; R11 := "PackMap"
+ 17 [-]: SETLIST   R6 5 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 5
+ 18 [-]: LOADK     R7 K13       ; R7 := 3
+ 19 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1)
+ 20 [-]: MOVE      R0 R5        ; R0 := R5
  21 [-]: MOVE      R0 R1        ; R0 := R1
  22 [-]: MOVE      R0 R2        ; R0 := R2
- 23 [-]: CLOSURE   R8 1         ; R8 := closure(Function #2)
- 24 [-]: MOVE      R0 R0        ; R0 := R0
- 25 [-]: MOVE      R0 R2        ; R0 := R2
- 26 [-]: MOVE      R0 R1        ; R0 := R1
- 27 [-]: CLOSURE   R9 2         ; R9 := closure(Function #3)
- 28 [-]: MOVE      R0 R6        ; R0 := R6
- 29 [-]: CLOSURE   R10 3        ; R10 := closure(Function #4)
- 30 [-]: MOVE      R0 R6        ; R0 := R6
- 31 [-]: CLOSURE   R11 4        ; R11 := closure(Function #5)
- 32 [-]: MOVE      R0 R9        ; R0 := R9
- 33 [-]: MOVE      R0 R6        ; R0 := R6
- 34 [-]: MOVE      R0 R10       ; R0 := R10
- 35 [-]: CLOSURE   R12 5        ; R12 := closure(Function #6)
- 36 [-]: MOVE      R0 R7        ; R0 := R7
- 37 [-]: MOVE      R0 R0        ; R0 := R0
- 38 [-]: MOVE      R0 R2        ; R0 := R2
- 39 [-]: MOVE      R0 R1        ; R0 := R1
- 40 [-]: MOVE      R0 R8        ; R0 := R8
- 41 [-]: MOVE      R0 R11       ; R0 := R11
- 42 [-]: SETGLOBAL R12 K13      ; GetAbilityUpgradeLevelInfo := R12
- 43 [-]: SETGLOBAL R12 K14      ; 0x4284ECE5 := R12
- 44 [-]: CLOSURE   R12 6        ; R12 := closure(Function #7)
- 45 [-]: MOVE      R0 R9        ; R0 := R9
- 46 [-]: MOVE      R0 R6        ; R0 := R6
- 47 [-]: SETGLOBAL R12 K15      ; GetAugmentDescriptionInfo := R12
- 48 [-]: SETGLOBAL R12 K16      ; 0xB6A3C9C2 := R12
- 49 [-]: CLOSURE   R12 7        ; R12 := closure(Function #8)
- 50 [-]: MOVE      R0 R3        ; R0 := R3
- 51 [-]: CLOSURE   R13 8        ; R13 := closure(Function #9)
- 52 [-]: CLOSURE   R14 9        ; R14 := closure(Function #10)
- 53 [-]: MOVE      R0 R13       ; R0 := R13
- 54 [-]: MOVE      R0 R5        ; R0 := R5
- 55 [-]: CLOSURE   R15 10       ; R15 := closure(Function #11)
- 56 [-]: MOVE      R0 R13       ; R0 := R13
- 57 [-]: CLOSURE   R16 11       ; R16 := closure(Function #12)
- 58 [-]: SETGLOBAL R16 K17      ; NpcEvaluateAbility := R16
- 59 [-]: SETGLOBAL R16 K18      ; 0xECF1EA57 := R16
- 60 [-]: CLOSURE   R16 12       ; R16 := closure(Function #13)
- 61 [-]: MOVE      R0 R4        ; R0 := R4
- 62 [-]: SETGLOBAL R16 K19      ; InitializeAbility := R16
- 63 [-]: SETGLOBAL R16 K20      ; 0x3BDC280E := R16
- 64 [-]: CLOSURE   R16 13       ; R16 := closure(Function #14)
- 65 [-]: MOVE      R0 R14       ; R0 := R14
- 66 [-]: MOVE      R0 R12       ; R0 := R12
- 67 [-]: CLOSURE   R17 14       ; R17 := closure(Function #15)
- 68 [-]: MOVE      R0 R14       ; R0 := R14
- 69 [-]: MOVE      R0 R12       ; R0 := R12
- 70 [-]: CLOSURE   R18 15       ; R18 := closure(Function #16)
- 71 [-]: MOVE      R0 R15       ; R0 := R15
- 72 [-]: MOVE      R0 R12       ; R0 := R12
- 73 [-]: CLOSURE   R19 16       ; R19 := closure(Function #17)
- 74 [-]: MOVE      R0 R7        ; R0 := R7
- 75 [-]: MOVE      R0 R8        ; R0 := R8
- 76 [-]: MOVE      R0 R9        ; R0 := R9
- 77 [-]: MOVE      R0 R10       ; R0 := R10
- 78 [-]: MOVE      R0 R4        ; R0 := R4
- 79 [-]: MOVE      R0 R16       ; R0 := R16
- 80 [-]: MOVE      R0 R17       ; R0 := R17
- 81 [-]: MOVE      R0 R18       ; R0 := R18
- 82 [-]: SETGLOBAL R19 K21      ; ActivateAbility := R19
- 83 [-]: SETGLOBAL R19 K22      ; 0xCC0B19E0 := R19
- 84 [-]: CLOSURE   R19 17       ; R19 := closure(Function #18)
- 85 [-]: MOVE      R0 R4        ; R0 := R4
- 86 [-]: MOVE      R0 R18       ; R0 := R18
- 87 [-]: SETGLOBAL R19 K23      ; DeactivateAbility := R19
- 88 [-]: SETGLOBAL R19 K24      ; 0x1FDB8A0 := R19
- 89 [-]: RETURN    R0 1         ; return 
+ 23 [-]: MOVE      R0 R3        ; R0 := R3
+ 24 [-]: CLOSURE   R9 1         ; R9 := closure(Function #2)
+ 25 [-]: MOVE      R0 R1        ; R0 := R1
+ 26 [-]: MOVE      R0 R3        ; R0 := R3
+ 27 [-]: MOVE      R0 R2        ; R0 := R2
+ 28 [-]: CLOSURE   R10 2        ; R10 := closure(Function #3)
+ 29 [-]: MOVE      R0 R7        ; R0 := R7
+ 30 [-]: CLOSURE   R11 3        ; R11 := closure(Function #4)
+ 31 [-]: MOVE      R0 R7        ; R0 := R7
+ 32 [-]: CLOSURE   R12 4        ; R12 := closure(Function #5)
+ 33 [-]: MOVE      R0 R10       ; R0 := R10
+ 34 [-]: MOVE      R0 R7        ; R0 := R7
+ 35 [-]: MOVE      R0 R11       ; R0 := R11
+ 36 [-]: CLOSURE   R13 5        ; R13 := closure(Function #6)
+ 37 [-]: MOVE      R0 R8        ; R0 := R8
+ 38 [-]: MOVE      R0 R1        ; R0 := R1
+ 39 [-]: MOVE      R0 R3        ; R0 := R3
+ 40 [-]: MOVE      R0 R2        ; R0 := R2
+ 41 [-]: MOVE      R0 R9        ; R0 := R9
+ 42 [-]: MOVE      R0 R12       ; R0 := R12
+ 43 [-]: SETGLOBAL R13 K14      ; GetAbilityUpgradeLevelInfo := R13
+ 44 [-]: SETGLOBAL R13 K15      ; 0x4284ECE5 := R13
+ 45 [-]: CLOSURE   R13 6        ; R13 := closure(Function #7)
+ 46 [-]: MOVE      R0 R10       ; R0 := R10
+ 47 [-]: MOVE      R0 R7        ; R0 := R7
+ 48 [-]: SETGLOBAL R13 K16      ; GetAugmentDescriptionInfo := R13
+ 49 [-]: SETGLOBAL R13 K17      ; 0xB6A3C9C2 := R13
+ 50 [-]: CLOSURE   R13 7        ; R13 := closure(Function #8)
+ 51 [-]: MOVE      R0 R4        ; R0 := R4
+ 52 [-]: CLOSURE   R14 8        ; R14 := closure(Function #9)
+ 53 [-]: CLOSURE   R15 9        ; R15 := closure(Function #10)
+ 54 [-]: MOVE      R0 R14       ; R0 := R14
+ 55 [-]: MOVE      R0 R6        ; R0 := R6
+ 56 [-]: CLOSURE   R16 10       ; R16 := closure(Function #11)
+ 57 [-]: MOVE      R0 R14       ; R0 := R14
+ 58 [-]: CLOSURE   R17 11       ; R17 := closure(Function #12)
+ 59 [-]: SETGLOBAL R17 K18      ; NpcEvaluateAbility := R17
+ 60 [-]: SETGLOBAL R17 K19      ; 0xECF1EA57 := R17
+ 61 [-]: CLOSURE   R17 12       ; R17 := closure(Function #13)
+ 62 [-]: MOVE      R0 R5        ; R0 := R5
+ 63 [-]: SETGLOBAL R17 K20      ; InitializeAbility := R17
+ 64 [-]: SETGLOBAL R17 K21      ; 0x3BDC280E := R17
+ 65 [-]: CLOSURE   R17 13       ; R17 := closure(Function #14)
+ 66 [-]: MOVE      R0 R15       ; R0 := R15
+ 67 [-]: MOVE      R0 R13       ; R0 := R13
+ 68 [-]: CLOSURE   R18 14       ; R18 := closure(Function #15)
+ 69 [-]: MOVE      R0 R15       ; R0 := R15
+ 70 [-]: MOVE      R0 R13       ; R0 := R13
+ 71 [-]: MOVE      R0 R0        ; R0 := R0
+ 72 [-]: CLOSURE   R19 15       ; R19 := closure(Function #16)
+ 73 [-]: MOVE      R0 R16       ; R0 := R16
+ 74 [-]: MOVE      R0 R13       ; R0 := R13
+ 75 [-]: CLOSURE   R20 16       ; R20 := closure(Function #17)
+ 76 [-]: MOVE      R0 R8        ; R0 := R8
+ 77 [-]: MOVE      R0 R9        ; R0 := R9
+ 78 [-]: MOVE      R0 R10       ; R0 := R10
+ 79 [-]: MOVE      R0 R11       ; R0 := R11
+ 80 [-]: MOVE      R0 R5        ; R0 := R5
+ 81 [-]: MOVE      R0 R17       ; R0 := R17
+ 82 [-]: MOVE      R0 R18       ; R0 := R18
+ 83 [-]: MOVE      R0 R19       ; R0 := R19
+ 84 [-]: SETGLOBAL R20 K22      ; ActivateAbility := R20
+ 85 [-]: SETGLOBAL R20 K23      ; 0xCC0B19E0 := R20
+ 86 [-]: CLOSURE   R20 17       ; R20 := closure(Function #18)
+ 87 [-]: MOVE      R0 R5        ; R0 := R5
+ 88 [-]: MOVE      R0 R19       ; R0 := R19
+ 89 [-]: SETGLOBAL R20 K24      ; DeactivateAbility := R20
+ 90 [-]: SETGLOBAL R20 K25      ; 0x1FDB8A0 := R20
+ 91 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 23
+; Defined at line: 25
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -205,7 +207,7 @@ code size: 70
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 64
+; Defined at line: 66
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -268,7 +270,7 @@ code size: 70
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 83
+; Defined at line: 85
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -301,7 +303,7 @@ code size: 70
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 97
+; Defined at line: 99
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -333,7 +335,7 @@ code size: 70
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 109
+; Defined at line: 111
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -417,7 +419,7 @@ code size: 70
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 146
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -486,7 +488,7 @@ code size: 70
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 162
+; Defined at line: 164
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -516,7 +518,7 @@ code size: 70
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 175
+; Defined at line: 177
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -605,7 +607,7 @@ code size: 70
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 204
+; Defined at line: 206
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -665,7 +667,7 @@ code size: 70
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 222
+; Defined at line: 224
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -846,7 +848,7 @@ code size: 70
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 280
+; Defined at line: 282
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -887,7 +889,7 @@ code size: 70
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 293
+; Defined at line: 295
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -951,7 +953,7 @@ code size: 70
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 321
+; Defined at line: 323
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -975,7 +977,7 @@ code size: 70
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 327
+; Defined at line: 329
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1060,8 +1062,8 @@ code size: 70
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 359
-; #Upvalues:       2
+; Defined at line: 361
+; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  11
@@ -1102,50 +1104,62 @@ code size: 70
  34 [-]: SELF      R9 R9 K11    ; R10 := R9; R9 := R9["0x6978AC59"]
  35 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
  36 [-]: CALL      R5 0 1       ; R5(R6,...)
- 37 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0["0x3AE17852"]
- 38 [-]: LOADK     R7 K13       ; R7 := 0
- 39 [-]: LOADK     R8 K13       ; R8 := 0
- 40 [-]: LOADK     R9 K13       ; R9 := 0
- 41 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 42 [-]: SELF      R5 R0 K14    ; R6 := R0; R5 := R0["0x36C07BD6"]
- 43 [-]: MOVE      R7 R1        ; R7 := R1
- 44 [-]: LOADK     R8 K13       ; R8 := 0
- 45 [-]: LOADK     R9 K15       ; R9 := 0.5
- 46 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 47 [-]: GETGLOBAL R5 K16       ; R5 := Lotus_Game
- 48 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["0xFAFD4322"]
- 49 [-]: CALL      R5 1 2       ; R5 := R5()
- 50 [-]: SETTABLE  R5 K18 R2    ; R5["instigator"] := R2
- 51 [-]: NEWTABLE  R6 1 0       ; R6 := {}
- 52 [-]: MOVE      R7 R0        ; R7 := R0
- 53 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
- 54 [-]: SETTABLE  R5 K19 R6    ; R5["affected"] := R6
- 55 [-]: GETGLOBAL R6 K16       ; R6 := Lotus_Game
- 56 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["BT_PERCENT"]
- 57 [-]: SETTABLE  R5 K20 R6    ; R5["buffType"] := R6
- 58 [-]: GETGLOBAL R6 K23       ; R6 := mOwner
- 59 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6["0xE2B32C65"]
- 60 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 61 [-]: SETTABLE  R5 K22 R6    ; R5["abilityType"] := R6
- 62 [-]: SETTABLE  R5 K25 R3    ; R5["augmentType"] := R3
- 63 [-]: GETGLOBAL R6 K27       ; R6 := math
- 64 [-]: GETTABLE  R6 R6 K28    ; R6 := R6["0xF7005A7B"]
- 65 [-]: MUL       R7 R1 K29    ; R7 := R1 * 100
- 66 [-]: ADD       R7 R7 K15    ; R7 := R7 + 0.5
- 67 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 68 [-]: SETTABLE  R5 K26 R6    ; R5["buffData"] := R6
- 69 [-]: SELF      R6 R0 K30    ; R7 := R0; R6 := R0["0x584F13D6"]
- 70 [-]: MOVE      R8 R5        ; R8 := R5
- 71 [-]: MOVE      R9 R1        ; R9 := R1
- 72 [-]: MOVE      R10 R0       ; R10 := R0
- 73 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 74 [-]: RETURN    R0 1         ; return 
+ 37 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0["0x495F554F"]
+ 38 [-]: GETGLOBAL R7 K13       ; R7 := Lotus_Game
+ 39 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["AR_RESIST_HEAL"]
+ 40 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 41 [-]: TEST      R5 0         ; if not R5 then PC := 49
+ 42 [-]: JMP       49           ; PC := 49
+ 43 [-]: GETGLOBAL R5 K15       ; R5 := math
+ 44 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["0x65F9712A"]
+ 45 [-]: MOVE      R6 R1        ; R6 := R1
+ 46 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 47 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 48 [-]: MOVE      R1 R5        ; R1 := R5
+ 49 [-]: SELF      R5 R0 K17    ; R6 := R0; R5 := R0["0x3AE17852"]
+ 50 [-]: LOADK     R7 K18       ; R7 := 0
+ 51 [-]: LOADK     R8 K18       ; R8 := 0
+ 52 [-]: LOADK     R9 K18       ; R9 := 0
+ 53 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 54 [-]: SELF      R5 R0 K19    ; R6 := R0; R5 := R0["0x36C07BD6"]
+ 55 [-]: MOVE      R7 R1        ; R7 := R1
+ 56 [-]: LOADK     R8 K18       ; R8 := 0
+ 57 [-]: LOADK     R9 K20       ; R9 := 0.5
+ 58 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 59 [-]: GETGLOBAL R5 K13       ; R5 := Lotus_Game
+ 60 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["0xFAFD4322"]
+ 61 [-]: CALL      R5 1 2       ; R5 := R5()
+ 62 [-]: SETTABLE  R5 K22 R2    ; R5["instigator"] := R2
+ 63 [-]: NEWTABLE  R6 1 0       ; R6 := {}
+ 64 [-]: MOVE      R7 R0        ; R7 := R0
+ 65 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
+ 66 [-]: SETTABLE  R5 K23 R6    ; R5["affected"] := R6
+ 67 [-]: GETGLOBAL R6 K13       ; R6 := Lotus_Game
+ 68 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["BT_PERCENT"]
+ 69 [-]: SETTABLE  R5 K24 R6    ; R5["buffType"] := R6
+ 70 [-]: GETGLOBAL R6 K27       ; R6 := mOwner
+ 71 [-]: SELF      R6 R6 K28    ; R7 := R6; R6 := R6["0xE2B32C65"]
+ 72 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 73 [-]: SETTABLE  R5 K26 R6    ; R5["abilityType"] := R6
+ 74 [-]: SETTABLE  R5 K29 R3    ; R5["augmentType"] := R3
+ 75 [-]: GETGLOBAL R6 K15       ; R6 := math
+ 76 [-]: GETTABLE  R6 R6 K31    ; R6 := R6["0xF7005A7B"]
+ 77 [-]: MUL       R7 R1 K32    ; R7 := R1 * 100
+ 78 [-]: ADD       R7 R7 K20    ; R7 := R7 + 0.5
+ 79 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 80 [-]: SETTABLE  R5 K30 R6    ; R5["buffData"] := R6
+ 81 [-]: SELF      R6 R0 K33    ; R7 := R0; R6 := R0["0x584F13D6"]
+ 82 [-]: MOVE      R8 R5        ; R8 := R5
+ 83 [-]: MOVE      R9 R1        ; R9 := R1
+ 84 [-]: MOVE      R10 R0       ; R10 := R0
+ 85 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+ 86 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 391
+; Defined at line: 397
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1218,7 +1232,7 @@ code size: 70
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 423
+; Defined at line: 429
 ; #Upvalues:       8
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1378,7 +1392,7 @@ code size: 70
 152 [-]: JMP       162          ; PC := 162
 153 [-]: GETGLOBAL R17 K35      ; R17 := gRegion
 154 [-]: SELF      R17 R17 K36  ; R18 := R17; R17 := R17["0x9139A00"]
-155 [-]: GETGLOBAL R19 K37      ; R19 := gTennoAvatarType
+155 [-]: GETGLOBAL R19 K37      ; R19 := gLotusAvatarType
 156 [-]: SELF      R20 R1 K38   ; R21 := R1; R20 := R1["0xBBAF192"]
 157 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 158 [-]: LOADK     R21 K1       ; R21 := 0
@@ -1577,7 +1591,7 @@ code size: 70
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 571
+; Defined at line: 577
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0

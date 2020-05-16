@@ -3,10 +3,10 @@ code size: 11
 code size: 11
 code size: 15
 code size: 36
-code size: 106
+code size: 111
 code size: 1
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Vehicles\Hoverboard\HoverboardAbility\HBSonicBoom.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Vehicles\Hoverboard\HoverboardAbility\HBSonicBoom.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -169,109 +169,114 @@ code size: 1
   1 [-]: SELF      R4 R0 K0     ; R5 := R0; R4 := R0["0xDBEF0FB6"]
   2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   3 [-]: MOVE      R2 R0        ; R2 := R0
-  4 [-]: SELF      R5 R0 K1     ; R6 := R0; R5 := R0["0x8B598ED4"]
-  5 [-]: GETGLOBAL R7 K2        ; R7 := gLotusVehicleAvatarType
-  6 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-  7 [-]: TEST      R5 1         ; if R5 then PC := 10
-  8 [-]: JMP       10           ; PC := 10
-  9 [-]: JMP       106          ; PC := 106
- 10 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0["0x5F9E3F4C"]
- 11 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 12 [-]: SELF      R6 R0 K4     ; R7 := R0; R6 := R0["0x8DB5D01F"]
- 13 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 14 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6["0x6978AC59"]
- 15 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 16 [-]: GETGLOBAL R7 K6        ; R7 := 0x400E7765
- 17 [-]: MOVE      R8 R5        ; R8 := R5
- 18 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 19 [-]: TEST      R7 1         ; if R7 then PC := 102
- 20 [-]: JMP       102          ; PC := 102
- 21 [-]: SELF      R7 R0 K7     ; R8 := R0; R7 := R0["0xFD0BE5BF"]
- 22 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 23 [-]: GETGLOBAL R8 K8        ; R8 := Engine
- 24 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["RUN"]
- 25 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 28
- 26 [-]: JMP       28           ; PC := 28
- 27 [-]: MOVE      R7 R0        ; R7 := R0
- 28 [-]: MOVE      R7 R1        ; R7 := R1
- 29 [-]: EQ        0 R7 K10     ; if R7 ~= "0x1" then PC := 101
- 30 [-]: JMP       101          ; PC := 101
- 31 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 32 [-]: EQ        0 R8 K11     ; if R8 ~= "0x0" then PC := 101
- 33 [-]: JMP       101          ; PC := 101
- 34 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 35 [-]: MOVE      R9 R4        ; R9 := R4
- 36 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 37 [-]: TEST      R8 1         ; if R8 then PC := 101
- 38 [-]: JMP       101          ; PC := 101
- 39 [-]: GETGLOBAL R8 K12       ; R8 := gRegion
- 40 [-]: SELF      R8 R8 K13    ; R9 := R8; R8 := R8["0x4BC2A4A3"]
- 41 [-]: MOVE      R10 R0       ; R10 := R0
- 42 [-]: SELF      R11 R0 K14   ; R12 := R0; R11 := R0["0xBBAF192"]
- 43 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 44 [-]: GETGLOBAL R12 K15      ; R12 := stunDamage
- 45 [-]: GETUPVAL  R13 U3       ; R13 := U3
- 46 [-]: GETUPVAL  R14 U0       ; R14 := U0
- 47 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 48 [-]: LOADK     R14 K16      ; R14 := 100
- 49 [-]: GETGLOBAL R15 K8       ; R15 := Engine
- 50 [-]: GETTABLE  R15 R15 K17  ; R15 := R15["DT_IMPACT"]
- 51 [-]: LOADNIL   R16 R16      ; R16 := nil
- 52 [-]: MOVE      R17 R6       ; R17 := R6
- 53 [-]: GETGLOBAL R18 K18      ; R18 := Game
- 54 [-]: GETTABLE  R18 R18 K19  ; R18 := R18["PT_STUNNED"]
- 55 [-]: MOVE      R19 R1       ; R19 := R1
- 56 [-]: MOVE      R20 R1       ; R20 := R1
- 57 [-]: MOVE      R21 R0       ; R21 := R0
- 58 [-]: LOADK     R22 K20      ; R22 := 1
- 59 [-]: MOVE      R23 R0       ; R23 := R0
- 60 [-]: LOADNIL   R24 R24      ; R24 := nil
- 61 [-]: LOADK     R25 K21      ; R25 := 0
- 62 [-]: CALL      R8 18 1      ; R8(R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25)
- 63 [-]: GETGLOBAL R8 K6        ; R8 := 0x400E7765
- 64 [-]: GETGLOBAL R9 K22       ; R9 := sonicBoomFX
- 65 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 66 [-]: TEST      R8 1         ; if R8 then PC := 75
- 67 [-]: JMP       75           ; PC := 75
- 68 [-]: SELF      R8 R0 K23    ; R9 := R0; R8 := R0["0xAB436EF2"]
- 69 [-]: GETGLOBAL R10 K22      ; R10 := sonicBoomFX
- 70 [-]: GETGLOBAL R11 K24      ; R11 := EMPTY_SYMBOL
- 71 [-]: GETGLOBAL R12 K25      ; R12 := ZERO_VECTOR
- 72 [-]: GETGLOBAL R13 K26      ; R13 := ZERO_ROTATION
- 73 [-]: MOVE      R14 R0       ; R14 := R0
- 74 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
- 75 [-]: GETGLOBAL R8 K6        ; R8 := 0x400E7765
- 76 [-]: GETGLOBAL R9 K27       ; R9 := _T
- 77 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["hbSonicBoom"]
- 78 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 79 [-]: TEST      R8 0         ; if not R8 then PC := 84
- 80 [-]: JMP       84           ; PC := 84
- 81 [-]: GETGLOBAL R8 K27       ; R8 := _T
- 82 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 83 [-]: SETTABLE  R8 K28 R9    ; R8["hbSonicBoom"] := R9
- 84 [-]: GETGLOBAL R8 K6        ; R8 := 0x400E7765
- 85 [-]: GETGLOBAL R9 K27       ; R9 := _T
- 86 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["hbSonicBoom"]
- 87 [-]: GETTABLE  R9 R9 R4     ; R9 := R9[R4]
- 88 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 89 [-]: TEST      R8 0         ; if not R8 then PC := 95
- 90 [-]: JMP       95           ; PC := 95
- 91 [-]: GETGLOBAL R8 K27       ; R8 := _T
- 92 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["hbSonicBoom"]
- 93 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 94 [-]: SETTABLE  R8 R4 R9     ; R8[R4] := R9
- 95 [-]: GETGLOBAL R8 K27       ; R8 := _T
- 96 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["hbSonicBoom"]
- 97 [-]: GETTABLE  R8 R8 R4     ; R8 := R8[R4]
- 98 [-]: GETGLOBAL R9 K30       ; R9 := 0x58E5C2DB
- 99 [-]: CALL      R9 1 2       ; R9 := R9()
-100 [-]: SETTABLE  R8 K29 R9    ; R8["lastUsedTime"] := R9
-101 [-]: MOVE      R7 R1        ; R7 := R1
-102 [-]: GETGLOBAL R8 K31       ; R8 := 0x201191EA
-103 [-]: LOADK     R9 K21       ; R9 := 0
-104 [-]: CALL      R8 2 1       ; R8(R9)
-105 [-]: JMP       4            ; PC := 4
-106 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+  5 [-]: MOVE      R6 R0        ; R6 := R0
+  6 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+  7 [-]: TEST      R5 1         ; if R5 then PC := 111
+  8 [-]: JMP       111          ; PC := 111
+  9 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0["0x8B598ED4"]
+ 10 [-]: GETGLOBAL R7 K3        ; R7 := gLotusVehicleAvatarType
+ 11 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 12 [-]: TEST      R5 1         ; if R5 then PC := 15
+ 13 [-]: JMP       15           ; PC := 15
+ 14 [-]: JMP       111          ; PC := 111
+ 15 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0["0x5F9E3F4C"]
+ 16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 17 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8DB5D01F"]
+ 18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 19 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0x6978AC59"]
+ 20 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 21 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
+ 22 [-]: MOVE      R8 R5        ; R8 := R5
+ 23 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 24 [-]: TEST      R7 1         ; if R7 then PC := 107
+ 25 [-]: JMP       107          ; PC := 107
+ 26 [-]: SELF      R7 R0 K7     ; R8 := R0; R7 := R0["0xFD0BE5BF"]
+ 27 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 28 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+ 29 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["RUN"]
+ 30 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 33
+ 31 [-]: JMP       33           ; PC := 33
+ 32 [-]: MOVE      R7 R0        ; R7 := R0
+ 33 [-]: MOVE      R7 R1        ; R7 := R1
+ 34 [-]: EQ        0 R7 K10     ; if R7 ~= "0x1" then PC := 106
+ 35 [-]: JMP       106          ; PC := 106
+ 36 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 37 [-]: EQ        0 R8 K11     ; if R8 ~= "0x0" then PC := 106
+ 38 [-]: JMP       106          ; PC := 106
+ 39 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 40 [-]: MOVE      R9 R4        ; R9 := R4
+ 41 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 42 [-]: TEST      R8 1         ; if R8 then PC := 106
+ 43 [-]: JMP       106          ; PC := 106
+ 44 [-]: GETGLOBAL R8 K12       ; R8 := gRegion
+ 45 [-]: SELF      R8 R8 K13    ; R9 := R8; R8 := R8["0x4BC2A4A3"]
+ 46 [-]: MOVE      R10 R0       ; R10 := R0
+ 47 [-]: SELF      R11 R0 K14   ; R12 := R0; R11 := R0["0xBBAF192"]
+ 48 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 49 [-]: GETGLOBAL R12 K15      ; R12 := stunDamage
+ 50 [-]: GETUPVAL  R13 U3       ; R13 := U3
+ 51 [-]: GETUPVAL  R14 U0       ; R14 := U0
+ 52 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 53 [-]: LOADK     R14 K16      ; R14 := 100
+ 54 [-]: GETGLOBAL R15 K8       ; R15 := Engine
+ 55 [-]: GETTABLE  R15 R15 K17  ; R15 := R15["DT_IMPACT"]
+ 56 [-]: LOADNIL   R16 R16      ; R16 := nil
+ 57 [-]: MOVE      R17 R6       ; R17 := R6
+ 58 [-]: GETGLOBAL R18 K18      ; R18 := Game
+ 59 [-]: GETTABLE  R18 R18 K19  ; R18 := R18["PT_STUNNED"]
+ 60 [-]: MOVE      R19 R1       ; R19 := R1
+ 61 [-]: MOVE      R20 R1       ; R20 := R1
+ 62 [-]: MOVE      R21 R0       ; R21 := R0
+ 63 [-]: LOADK     R22 K20      ; R22 := 1
+ 64 [-]: MOVE      R23 R0       ; R23 := R0
+ 65 [-]: LOADNIL   R24 R24      ; R24 := nil
+ 66 [-]: LOADK     R25 K21      ; R25 := 0
+ 67 [-]: CALL      R8 18 1      ; R8(R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25)
+ 68 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
+ 69 [-]: GETGLOBAL R9 K22       ; R9 := sonicBoomFX
+ 70 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 71 [-]: TEST      R8 1         ; if R8 then PC := 80
+ 72 [-]: JMP       80           ; PC := 80
+ 73 [-]: SELF      R8 R0 K23    ; R9 := R0; R8 := R0["0xAB436EF2"]
+ 74 [-]: GETGLOBAL R10 K22      ; R10 := sonicBoomFX
+ 75 [-]: GETGLOBAL R11 K24      ; R11 := EMPTY_SYMBOL
+ 76 [-]: GETGLOBAL R12 K25      ; R12 := ZERO_VECTOR
+ 77 [-]: GETGLOBAL R13 K26      ; R13 := ZERO_ROTATION
+ 78 [-]: MOVE      R14 R0       ; R14 := R0
+ 79 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
+ 80 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
+ 81 [-]: GETGLOBAL R9 K27       ; R9 := _T
+ 82 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["hbSonicBoom"]
+ 83 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 84 [-]: TEST      R8 0         ; if not R8 then PC := 89
+ 85 [-]: JMP       89           ; PC := 89
+ 86 [-]: GETGLOBAL R8 K27       ; R8 := _T
+ 87 [-]: NEWTABLE  R9 0 0       ; R9 := {}
+ 88 [-]: SETTABLE  R8 K28 R9    ; R8["hbSonicBoom"] := R9
+ 89 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
+ 90 [-]: GETGLOBAL R9 K27       ; R9 := _T
+ 91 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["hbSonicBoom"]
+ 92 [-]: GETTABLE  R9 R9 R4     ; R9 := R9[R4]
+ 93 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 94 [-]: TEST      R8 0         ; if not R8 then PC := 100
+ 95 [-]: JMP       100          ; PC := 100
+ 96 [-]: GETGLOBAL R8 K27       ; R8 := _T
+ 97 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["hbSonicBoom"]
+ 98 [-]: NEWTABLE  R9 0 0       ; R9 := {}
+ 99 [-]: SETTABLE  R8 R4 R9     ; R8[R4] := R9
+100 [-]: GETGLOBAL R8 K27       ; R8 := _T
+101 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["hbSonicBoom"]
+102 [-]: GETTABLE  R8 R8 R4     ; R8 := R8[R4]
+103 [-]: GETGLOBAL R9 K30       ; R9 := 0x58E5C2DB
+104 [-]: CALL      R9 1 2       ; R9 := R9()
+105 [-]: SETTABLE  R8 K29 R9    ; R8["lastUsedTime"] := R9
+106 [-]: MOVE      R7 R1        ; R7 := R1
+107 [-]: GETGLOBAL R8 K31       ; R8 := 0x201191EA
+108 [-]: LOADK     R9 K21       ; R9 := 0
+109 [-]: CALL      R8 2 1       ; R8(R9)
+110 [-]: JMP       4            ; PC := 4
+111 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:

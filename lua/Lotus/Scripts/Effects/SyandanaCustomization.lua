@@ -6,7 +6,7 @@ code size: 60
 code size: 14
 code size: 293
 code size: 21
-code size: 97
+code size: 78
 code size: 21
 code size: 42
 code size: 34
@@ -16,7 +16,7 @@ code size: 100
 code size: 124
 code size: 94
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\SyandanaCustomization.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\SyandanaCustomization.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -653,7 +653,7 @@ code size: 94
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
   2 [-]: MOVE      R4 R1        ; R4 := R1
@@ -688,76 +688,57 @@ code size: 94
  31 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  32 [-]: SELF      R6 R2 K8     ; R7 := R2; R6 := R2["0x7885322A"]
  33 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 34 [-]: SELF      R7 R1 K9     ; R8 := R1; R7 := R1["0x25D68A52"]
- 35 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 36 [-]: SELF      R7 R7 K10    ; R8 := R7; R7 := R7["0x75EB3F77"]
- 37 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 38 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
- 39 [-]: MOVE      R9 R7        ; R9 := R7
- 40 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 41 [-]: TEST      R8 1         ; if R8 then PC := 51
- 42 [-]: JMP       51           ; PC := 51
- 43 [-]: SELF      R8 R7 K11    ; R9 := R7; R8 := R7["0x8B598ED4"]
- 44 [-]: GETGLOBAL R10 K12      ; R10 := gDecoModeActionType
- 45 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 46 [-]: TEST      R8 0         ; if not R8 then PC := 53
- 47 [-]: JMP       53           ; PC := 53
- 48 [-]: SELF      R8 R7 K13    ; R9 := R7; R8 := R7["0xBBB6CE89"]
- 49 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 50 [-]: JMP       53           ; PC := 53
- 51 [-]: MOVE      R8 R0        ; R8 := R0
- 52 [-]: MOVE      R8 R1        ; R8 := R1
- 53 [-]: GETTABLE  R9 R0 K14    ; R9 := R0["nonCombatLevel"]
- 54 [-]: TEST      R9 0         ; if not R9 then PC := 59
- 55 [-]: JMP       59           ; PC := 59
- 56 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 57 [-]: SETTABLE  R0 K15 R9    ; R0["stateTimer"] := R9
- 58 [-]: JMP       79           ; PC := 79
- 59 [-]: TEST      R4 0         ; if not R4 then PC := 64
- 60 [-]: JMP       64           ; PC := 64
- 61 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 62 [-]: SETTABLE  R0 K15 R9    ; R0["stateTimer"] := R9
- 63 [-]: JMP       79           ; PC := 79
- 64 [-]: GETTABLE  R9 R0 K16    ; R9 := R0["gamePaused"]
- 65 [-]: TEST      R9 1         ; if R9 then PC := 73
- 66 [-]: JMP       73           ; PC := 73
- 67 [-]: TEST      R5 1         ; if R5 then PC := 73
- 68 [-]: JMP       73           ; PC := 73
- 69 [-]: TEST      R6 1         ; if R6 then PC := 73
- 70 [-]: JMP       73           ; PC := 73
- 71 [-]: TEST      R3 0         ; if not R3 then PC := 79
- 72 [-]: JMP       79           ; PC := 79
- 73 [-]: GETTABLE  R9 R0 K15    ; R9 := R0["stateTimer"]
- 74 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 75 [-]: LT        0 R10 R9     ; if R10 >= R9 then PC := 79
- 76 [-]: JMP       79           ; PC := 79
- 77 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 78 [-]: SETTABLE  R0 K15 R9    ; R0["stateTimer"] := R9
- 79 [-]: TEST      R4 0         ; if not R4 then PC := 83
- 80 [-]: JMP       83           ; PC := 83
- 81 [-]: GETTABLE  R9 R0 K16    ; R9 := R0["gamePaused"]
- 82 [-]: RETURN    R9 2         ; return R9
- 83 [-]: TEST      R4 0         ; if not R4 then PC := 95
- 84 [-]: JMP       95           ; PC := 95
- 85 [-]: GETTABLE  R9 R0 K16    ; R9 := R0["gamePaused"]
- 86 [-]: TEST      R9 1         ; if R9 then PC := 96
- 87 [-]: JMP       96           ; PC := 96
- 88 [-]: TESTSET   R9 R5 1      ; if R5 then PC := 96 else R9 := R5
- 89 [-]: JMP       96           ; PC := 96
- 90 [-]: TESTSET   R9 R6 1      ; if R6 then PC := 96 else R9 := R6
- 91 [-]: JMP       96           ; PC := 96
- 92 [-]: MOVE      R9 R3        ; R9 := R3
- 93 [-]: JMP       96           ; PC := 96
- 94 [-]: MOVE      R9 R0        ; R9 := R0
- 95 [-]: MOVE      R9 R1        ; R9 := R1
- 96 [-]: RETURN    R9 2         ; return R9
- 97 [-]: RETURN    R0 1         ; return 
+ 34 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["nonCombatLevel"]
+ 35 [-]: TEST      R7 0         ; if not R7 then PC := 40
+ 36 [-]: JMP       40           ; PC := 40
+ 37 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 38 [-]: SETTABLE  R0 K10 R7    ; R0["stateTimer"] := R7
+ 39 [-]: JMP       60           ; PC := 60
+ 40 [-]: TEST      R4 0         ; if not R4 then PC := 45
+ 41 [-]: JMP       45           ; PC := 45
+ 42 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 43 [-]: SETTABLE  R0 K10 R7    ; R0["stateTimer"] := R7
+ 44 [-]: JMP       60           ; PC := 60
+ 45 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["gamePaused"]
+ 46 [-]: TEST      R7 1         ; if R7 then PC := 54
+ 47 [-]: JMP       54           ; PC := 54
+ 48 [-]: TEST      R5 1         ; if R5 then PC := 54
+ 49 [-]: JMP       54           ; PC := 54
+ 50 [-]: TEST      R6 1         ; if R6 then PC := 54
+ 51 [-]: JMP       54           ; PC := 54
+ 52 [-]: TEST      R3 0         ; if not R3 then PC := 60
+ 53 [-]: JMP       60           ; PC := 60
+ 54 [-]: GETTABLE  R7 R0 K10    ; R7 := R0["stateTimer"]
+ 55 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 56 [-]: LT        0 R8 R7      ; if R8 >= R7 then PC := 60
+ 57 [-]: JMP       60           ; PC := 60
+ 58 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 59 [-]: SETTABLE  R0 K10 R7    ; R0["stateTimer"] := R7
+ 60 [-]: TEST      R4 0         ; if not R4 then PC := 64
+ 61 [-]: JMP       64           ; PC := 64
+ 62 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["gamePaused"]
+ 63 [-]: RETURN    R7 2         ; return R7
+ 64 [-]: TEST      R4 0         ; if not R4 then PC := 76
+ 65 [-]: JMP       76           ; PC := 76
+ 66 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["gamePaused"]
+ 67 [-]: TEST      R7 1         ; if R7 then PC := 77
+ 68 [-]: JMP       77           ; PC := 77
+ 69 [-]: TESTSET   R7 R5 1      ; if R5 then PC := 77 else R7 := R5
+ 70 [-]: JMP       77           ; PC := 77
+ 71 [-]: TESTSET   R7 R6 1      ; if R6 then PC := 77 else R7 := R6
+ 72 [-]: JMP       77           ; PC := 77
+ 73 [-]: MOVE      R7 R3        ; R7 := R3
+ 74 [-]: JMP       77           ; PC := 77
+ 75 [-]: MOVE      R7 R0        ; R7 := R0
+ 76 [-]: MOVE      R7 R1        ; R7 := R1
+ 77 [-]: RETURN    R7 2         ; return R7
+ 78 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 242
+; Defined at line: 239
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -789,7 +770,7 @@ code size: 94
 ; Function #8.1:
 ;
 ; Name:            
-; Defined at line: 247
+; Defined at line: 244
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -842,7 +823,7 @@ code size: 94
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 271
+; Defined at line: 268
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -887,7 +868,7 @@ code size: 94
 ; Function #9.1:
 ;
 ; Name:            
-; Defined at line: 281
+; Defined at line: 278
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -925,7 +906,7 @@ code size: 94
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 295
+; Defined at line: 292
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -951,7 +932,7 @@ code size: 94
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 302
+; Defined at line: 299
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1062,7 +1043,7 @@ code size: 94
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 342
+; Defined at line: 339
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1197,7 +1178,7 @@ code size: 94
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 395
+; Defined at line: 392
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

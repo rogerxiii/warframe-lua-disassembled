@@ -6,7 +6,7 @@ code size: 153
 code size: 72
 code size: 27
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\FadeScaleMesh.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\FadeScaleMesh.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -41,7 +41,7 @@ code size: 27
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 25
+; Defined at line: 23
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -64,7 +64,7 @@ code size: 27
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 30
+; Defined at line: 28
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -89,7 +89,7 @@ code size: 27
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 34
+; Defined at line: 32
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -122,7 +122,7 @@ code size: 27
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 44
+; Defined at line: 42
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -286,7 +286,7 @@ code size: 27
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 87
+; Defined at line: 85
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -369,7 +369,7 @@ code size: 27
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 120
+; Defined at line: 118
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

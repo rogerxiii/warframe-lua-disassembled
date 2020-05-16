@@ -6,7 +6,7 @@ code size: 74
 code size: 109
 code size: 43
 code size: 54
-code size: 444
+code size: 440
 code size: 3
 code size: 13
 code size: 184
@@ -15,7 +15,7 @@ code size: 207
 code size: 113
 code size: 103
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\KhoraKavat.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\KhoraKavat.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -566,7 +566,7 @@ code size: 103
 ; #Upvalues:       7
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  26
+; Max Stack Size:  25
 
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
   2 [-]: MOVE      R4 R2        ; R4 := R2
@@ -721,8 +721,8 @@ code size: 103
 151 [-]: SELF      R7 R0 K25    ; R8 := R0; R7 := R0["0x244EE203"]
 152 [-]: GETUPVAL  R9 U2        ; R9 := U2
 153 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-154 [-]: EQ        0 R7 R6      ; if R7 ~= R6 then PC := 283
-155 [-]: JMP       283          ; PC := 283
+154 [-]: EQ        0 R7 R6      ; if R7 ~= R6 then PC := 279
+155 [-]: JMP       279          ; PC := 279
 156 [-]: GETGLOBAL R7 K1        ; R7 := _T
 157 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["khoraKavat"]
 158 [-]: EQ        1 R7 K3      ; if R7 == nil then PC := 181
@@ -772,8 +772,8 @@ code size: 103
 202 [-]: ADD       R9 R8 K28    ; R9 := R8 + 1
 203 [-]: GETUPVAL  R10 U3       ; R10 := U3
 204 [-]: MOD       R7 R9 R10    ; R7 := R9 % R10
-205 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 255
-206 [-]: JMP       255          ; PC := 255
+205 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 251
+206 [-]: JMP       251          ; PC := 251
 207 [-]: GETGLOBAL R9 K1        ; R9 := _T
 208 [-]: GETTABLE  R9 R9 K29    ; R9 := R9["khoraDissolve"]
 209 [-]: EQ        0 R9 K3      ; if R9 ~= nil then PC := 214
@@ -797,227 +797,223 @@ code size: 103
 227 [-]: GETTABLE  R9 R9 K32    ; R9 := R9["0xE7A9D99F"]
 228 [-]: ADD       R10 R7 K28   ; R10 := R7 + 1
 229 [-]: CALL      R9 2 1       ; R9(R10)
-230 [-]: SELF      R9 R1 K33    ; R10 := R1; R9 := R1["0x8DB5D01F"]
-231 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-232 [-]: SELF      R9 R9 K34    ; R10 := R9; R9 := R9["0x6978AC59"]
+230 [-]: GETGLOBAL R9 K33       ; R9 := Lotus_Game
+231 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["0x4DCAC4D9"]
+232 [-]: MOVE      R10 R1       ; R10 := R1
 233 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-234 [-]: GETGLOBAL R10 K35      ; R10 := Lotus_Game
-235 [-]: GETTABLE  R10 R10 K36  ; R10 := R10["0x4DCAC4D9"]
-236 [-]: MOVE      R11 R1       ; R11 := R1
-237 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-238 [-]: SELF      R11 R10 K37  ; R12 := R10; R11 := R10["0x4AD4D1A3"]
-239 [-]: MOVE      R13 R7       ; R13 := R7
-240 [-]: CALL      R11 3 1      ; R11(R12,R13)
-241 [-]: SELF      R11 R9 K38   ; R12 := R9; R11 := R9["0xD4FCD42F"]
-242 [-]: GETGLOBAL R13 K39      ; R13 := mOwner
-243 [-]: GETGLOBAL R14 K5       ; R14 := 0xEC274B1A
-244 [-]: LOADK     R15 K40      ; R15 := "SetMode"
-245 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-246 [-]: MOVE      R15 R10      ; R15 := R10
-247 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
-248 [-]: SELF      R11 R1 K41   ; R12 := R1; R11 := R1["0x25992394"]
-249 [-]: GETGLOBAL R13 K42      ; R13 := cycleSound
-250 [-]: MOVE      R14 R0       ; R14 := R0
-251 [-]: LOADK     R15 K20      ; R15 := 0
-252 [-]: MOVE      R16 R0       ; R16 := R0
-253 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-254 [-]: JMP       263          ; PC := 263
-255 [-]: GETGLOBAL R11 K1       ; R11 := _T
-256 [-]: GETTABLE  R11 R11 K43  ; R11 := R11["KHORA_ShowText"]
-257 [-]: EQ        1 R11 K3     ; if R11 == nil then PC := 263
-258 [-]: JMP       263          ; PC := 263
-259 [-]: GETGLOBAL R11 K1       ; R11 := _T
-260 [-]: GETTABLE  R11 R11 K44  ; R11 := R11["0xCD10B133"]
-261 [-]: LOADK     R12 K45      ; R12 := "/Lotus/Language/Suits/KhoraKavatModeLocked"
-262 [-]: CALL      R11 2 1      ; R11(R12)
-263 [-]: GETGLOBAL R11 K1       ; R11 := _T
-264 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["khoraKavat"]
-265 [-]: GETTABLE  R11 R11 R3   ; R11 := R11[R3]
-266 [-]: SETTABLE  R11 K46 K3   ; R11["target"] := nil
-267 [-]: GETGLOBAL R11 K9       ; R11 := 0x400E7765
-268 [-]: GETGLOBAL R12 K1       ; R12 := _T
-269 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["khoraKavat"]
-270 [-]: GETTABLE  R12 R12 R3   ; R12 := R12[R3]
-271 [-]: GETTABLE  R12 R12 K47  ; R12 := R12["effect"]
-272 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-273 [-]: TEST      R11 1        ; if R11 then PC := 281
-274 [-]: JMP       281          ; PC := 281
-275 [-]: GETGLOBAL R11 K1       ; R11 := _T
-276 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["khoraKavat"]
-277 [-]: GETTABLE  R11 R11 R3   ; R11 := R11[R3]
-278 [-]: GETTABLE  R11 R11 K47  ; R11 := R11["effect"]
-279 [-]: SELF      R11 R11 K48  ; R12 := R11; R11 := R11["0xD4C2743F"]
-280 [-]: CALL      R11 2 1      ; R11(R12)
-281 [-]: MOVE      R11 R0       ; R11 := R0
-282 [-]: RETURN    R11 2        ; return R11
-283 [-]: SELF      R11 R0 K15   ; R12 := R0; R11 := R0["0x55E96699"]
-284 [-]: GETUPVAL  R13 U4       ; R13 := U4
-285 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-286 [-]: SELF      R12 R0 K16   ; R13 := R0; R12 := R0["0x66ACFB34"]
-287 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-288 [-]: LT        0 R12 R11    ; if R12 >= R11 then PC := 297
-289 [-]: JMP       297          ; PC := 297
-290 [-]: SELF      R12 R1 K4    ; R13 := R1; R12 := R1["0x1F18E5A8"]
-291 [-]: GETGLOBAL R14 K5       ; R14 := 0xEC274B1A
-292 [-]: LOADK     R15 K17      ; R15 := "/Lotus/Language/Game/AbilityNeedMoreEnergy"
-293 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
-294 [-]: CALL      R12 0 1      ; R12(R13,...)
-295 [-]: MOVE      R12 R0       ; R12 := R0
-296 [-]: RETURN    R12 2        ; return R12
-297 [-]: GETGLOBAL R12 K1       ; R12 := _T
-298 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["khoraKavat"]
-299 [-]: EQ        1 R12 K3     ; if R12 == nil then PC := 323
-300 [-]: JMP       323          ; PC := 323
-301 [-]: GETGLOBAL R12 K1       ; R12 := _T
-302 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["khoraKavat"]
-303 [-]: GETTABLE  R12 R12 R3   ; R12 := R12[R3]
-304 [-]: EQ        1 R12 K3     ; if R12 == nil then PC := 323
-305 [-]: JMP       323          ; PC := 323
-306 [-]: GETGLOBAL R12 K1       ; R12 := _T
-307 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["khoraKavat"]
-308 [-]: GETTABLE  R12 R12 R3   ; R12 := R12[R3]
-309 [-]: GETTABLE  R12 R12 K49  ; R12 := R12["targetTime"]
-310 [-]: EQ        1 R12 K3     ; if R12 == nil then PC := 323
-311 [-]: JMP       323          ; PC := 323
-312 [-]: GETGLOBAL R12 K1       ; R12 := _T
-313 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["khoraKavat"]
-314 [-]: GETTABLE  R12 R12 R3   ; R12 := R12[R3]
-315 [-]: GETTABLE  R12 R12 K49  ; R12 := R12["targetTime"]
-316 [-]: ADD       R12 R12 K50  ; R12 := R12 + 2
-317 [-]: GETGLOBAL R13 K51      ; R13 := 0x58E5C2DB
-318 [-]: CALL      R13 1 2      ; R13 := R13()
-319 [-]: LT        0 R13 R12    ; if R13 >= R12 then PC := 323
-320 [-]: JMP       323          ; PC := 323
-321 [-]: MOVE      R12 R0       ; R12 := R0
-322 [-]: RETURN    R12 2        ; return R12
-323 [-]: GETGLOBAL R12 K39      ; R12 := mOwner
-324 [-]: SELF      R12 R12 K52  ; R13 := R12; R12 := R12["0xB3F0027"]
-325 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-326 [-]: TEST      R12 0        ; if not R12 then PC := 335
-327 [-]: JMP       335          ; PC := 335
-328 [-]: SELF      R12 R1 K4    ; R13 := R1; R12 := R1["0x1F18E5A8"]
-329 [-]: GETGLOBAL R14 K5       ; R14 := 0xEC274B1A
-330 [-]: LOADK     R15 K6       ; R15 := "/Lotus/Language/Game/AbilityInUse"
-331 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
-332 [-]: CALL      R12 0 1      ; R12(R13,...)
-333 [-]: MOVE      R12 R0       ; R12 := R0
-334 [-]: RETURN    R12 2        ; return R12
-335 [-]: LOADNIL   R12 R12      ; R12 := nil
-336 [-]: SELF      R13 R1 K33   ; R14 := R1; R13 := R1["0x8DB5D01F"]
-337 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-338 [-]: SELF      R13 R13 K53  ; R14 := R13; R13 := R13["0xD2399495"]
-339 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-340 [-]: MOVE      R14 R0       ; R14 := R0
-341 [-]: GETGLOBAL R15 K9       ; R15 := 0x400E7765
-342 [-]: MOVE      R16 R13      ; R16 := R13
-343 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-344 [-]: TEST      R15 1        ; if R15 then PC := 367
-345 [-]: JMP       367          ; PC := 367
-346 [-]: SELF      R15 R13 K54  ; R16 := R13; R15 := R13["0x8B598ED4"]
-347 [-]: GETGLOBAL R17 K55      ; R17 := gBaseAvatarType
-348 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-349 [-]: TEST      R15 0        ; if not R15 then PC := 367
-350 [-]: JMP       367          ; PC := 367
-351 [-]: MOVE      R14 R1       ; R14 := R1
-352 [-]: GETUPVAL  R15 U5       ; R15 := U5
-353 [-]: MOVE      R16 R1       ; R16 := R1
-354 [-]: MOVE      R17 R13      ; R17 := R13
-355 [-]: GETGLOBAL R18 K1       ; R18 := _T
-356 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["KHORA_CurrentMode"]
-357 [-]: GETTABLE  R18 R18 R3   ; R18 := R18[R3]
-358 [-]: GETUPVAL  R19 U6       ; R19 := U6
-359 [-]: EQ        0 R18 R19    ; if R18 ~= R19 then PC := 362
-360 [-]: JMP       362          ; PC := 362
-361 [-]: MOVE      R18 R0       ; R18 := R0
-362 [-]: MOVE      R18 R1       ; R18 := R1
-363 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
-364 [-]: TEST      R15 0        ; if not R15 then PC := 367
-365 [-]: JMP       367          ; PC := 367
-366 [-]: MOVE      R12 R13      ; R12 := R13
-367 [-]: GETGLOBAL R15 K9       ; R15 := 0x400E7765
-368 [-]: MOVE      R16 R12      ; R16 := R12
-369 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-370 [-]: TEST      R15 0        ; if not R15 then PC := 402
-371 [-]: JMP       402          ; PC := 402
-372 [-]: SELF      R15 R1 K56   ; R16 := R1; R15 := R1["0x44DEA82C"]
-373 [-]: LOADK     R17 K28      ; R17 := 1
-374 [-]: LOADK     R18 K57      ; R18 := 50
-375 [-]: LOADK     R19 K28      ; R19 := 1
-376 [-]: MOVE      R20 R1       ; R20 := R1
-377 [-]: MOVE      R21 R1       ; R21 := R1
-378 [-]: CALL      R15 7 2      ; R15 := R15(R16,R17,R18,R19,R20,R21)
-379 [-]: GETGLOBAL R16 K58      ; R16 := 0x63B09107
-380 [-]: MOVE      R17 R15      ; R17 := R15
-381 [-]: CALL      R16 2 4      ; R16,R17,R18 := R16(R17)
-382 [-]: JMP       400          ; PC := 400
-383 [-]: MOVE      R14 R1       ; R14 := R1
-384 [-]: GETUPVAL  R21 U5       ; R21 := U5
-385 [-]: MOVE      R22 R1       ; R22 := R1
-386 [-]: MOVE      R23 R20      ; R23 := R20
-387 [-]: GETGLOBAL R24 K1       ; R24 := _T
-388 [-]: GETTABLE  R24 R24 K27  ; R24 := R24["KHORA_CurrentMode"]
-389 [-]: GETTABLE  R24 R24 R3   ; R24 := R24[R3]
-390 [-]: GETUPVAL  R25 U6       ; R25 := U6
-391 [-]: EQ        0 R24 R25    ; if R24 ~= R25 then PC := 394
-392 [-]: JMP       394          ; PC := 394
-393 [-]: MOVE      R24 R0       ; R24 := R0
-394 [-]: MOVE      R24 R1       ; R24 := R1
-395 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-396 [-]: TEST      R21 0        ; if not R21 then PC := 400
-397 [-]: JMP       400          ; PC := 400
-398 [-]: MOVE      R12 R20      ; R12 := R20
-399 [-]: JMP       402          ; PC := 402
-400 [-]: TFORLOOP  R16 2        ; R19,R20 :=  R16(R17,R18); if R19 ~= nil then begin PC = 383; R18 := R19 end
-401 [-]: JMP       383          ; PC := 383
-402 [-]: GETGLOBAL R21 K9       ; R21 := 0x400E7765
-403 [-]: MOVE      R22 R12      ; R22 := R12
-404 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-405 [-]: TEST      R21 0        ; if not R21 then PC := 422
-406 [-]: JMP       422          ; PC := 422
-407 [-]: GETGLOBAL R21 K1       ; R21 := _T
-408 [-]: GETTABLE  R21 R21 K27  ; R21 := R21["KHORA_CurrentMode"]
-409 [-]: GETTABLE  R21 R21 R3   ; R21 := R21[R3]
-410 [-]: GETUPVAL  R22 U6       ; R22 := U6
-411 [-]: EQ        0 R21 R22    ; if R21 ~= R22 then PC := 415
-412 [-]: JMP       415          ; PC := 415
-413 [-]: MOVE      R12 R1       ; R12 := R1
-414 [-]: JMP       422          ; PC := 422
-415 [-]: SELF      R21 R1 K4    ; R22 := R1; R21 := R1["0x1F18E5A8"]
-416 [-]: GETGLOBAL R23 K5       ; R23 := 0xEC274B1A
-417 [-]: LOADK     R24 K59      ; R24 := "/Lotus/Language/Game/AbilityErrorInvalidTarget"
-418 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-419 [-]: CALL      R21 0 1      ; R21(R22,...)
-420 [-]: MOVE      R21 R0       ; R21 := R0
-421 [-]: RETURN    R21 2        ; return R21
-422 [-]: GETGLOBAL R21 K1       ; R21 := _T
-423 [-]: GETTABLE  R21 R21 K8   ; R21 := R21["khoraKavat"]
-424 [-]: EQ        1 R21 K3     ; if R21 == nil then PC := 439
-425 [-]: JMP       439          ; PC := 439
-426 [-]: GETGLOBAL R21 K1       ; R21 := _T
-427 [-]: GETTABLE  R21 R21 K8   ; R21 := R21["khoraKavat"]
-428 [-]: GETTABLE  R21 R21 R3   ; R21 := R21[R3]
-429 [-]: EQ        1 R21 K3     ; if R21 == nil then PC := 439
-430 [-]: JMP       439          ; PC := 439
-431 [-]: GETGLOBAL R21 K1       ; R21 := _T
-432 [-]: GETTABLE  R21 R21 K8   ; R21 := R21["khoraKavat"]
-433 [-]: GETTABLE  R21 R21 R3   ; R21 := R21[R3]
-434 [-]: GETTABLE  R21 R21 K46  ; R21 := R21["target"]
-435 [-]: EQ        0 R21 R12    ; if R21 ~= R12 then PC := 439
-436 [-]: JMP       439          ; PC := 439
-437 [-]: MOVE      R21 R0       ; R21 := R0
-438 [-]: RETURN    R21 2        ; return R21
-439 [-]: SELF      R21 R0 K60   ; R22 := R0; R21 := R0["0xACA59CC1"]
-440 [-]: MOVE      R23 R12      ; R23 := R12
-441 [-]: CALL      R21 3 1      ; R21(R22,R23)
-442 [-]: MOVE      R21 R1       ; R21 := R1
-443 [-]: RETURN    R21 2        ; return R21
-444 [-]: RETURN    R0 1         ; return 
+234 [-]: SELF      R10 R9 K35   ; R11 := R9; R10 := R9["0x4AD4D1A3"]
+235 [-]: MOVE      R12 R7       ; R12 := R7
+236 [-]: CALL      R10 3 1      ; R10(R11,R12)
+237 [-]: SELF      R10 R0 K36   ; R11 := R0; R10 := R0["0xD4FCD42F"]
+238 [-]: GETGLOBAL R12 K37      ; R12 := mOwner
+239 [-]: GETGLOBAL R13 K5       ; R13 := 0xEC274B1A
+240 [-]: LOADK     R14 K38      ; R14 := "SetMode"
+241 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+242 [-]: MOVE      R14 R9       ; R14 := R9
+243 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+244 [-]: SELF      R10 R1 K39   ; R11 := R1; R10 := R1["0x25992394"]
+245 [-]: GETGLOBAL R12 K40      ; R12 := cycleSound
+246 [-]: MOVE      R13 R0       ; R13 := R0
+247 [-]: LOADK     R14 K20      ; R14 := 0
+248 [-]: MOVE      R15 R0       ; R15 := R0
+249 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+250 [-]: JMP       259          ; PC := 259
+251 [-]: GETGLOBAL R10 K1       ; R10 := _T
+252 [-]: GETTABLE  R10 R10 K41  ; R10 := R10["KHORA_ShowText"]
+253 [-]: EQ        1 R10 K3     ; if R10 == nil then PC := 259
+254 [-]: JMP       259          ; PC := 259
+255 [-]: GETGLOBAL R10 K1       ; R10 := _T
+256 [-]: GETTABLE  R10 R10 K42  ; R10 := R10["0xCD10B133"]
+257 [-]: LOADK     R11 K43      ; R11 := "/Lotus/Language/Suits/KhoraKavatModeLocked"
+258 [-]: CALL      R10 2 1      ; R10(R11)
+259 [-]: GETGLOBAL R10 K1       ; R10 := _T
+260 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["khoraKavat"]
+261 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
+262 [-]: SETTABLE  R10 K44 K3   ; R10["target"] := nil
+263 [-]: GETGLOBAL R10 K9       ; R10 := 0x400E7765
+264 [-]: GETGLOBAL R11 K1       ; R11 := _T
+265 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["khoraKavat"]
+266 [-]: GETTABLE  R11 R11 R3   ; R11 := R11[R3]
+267 [-]: GETTABLE  R11 R11 K45  ; R11 := R11["effect"]
+268 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+269 [-]: TEST      R10 1        ; if R10 then PC := 277
+270 [-]: JMP       277          ; PC := 277
+271 [-]: GETGLOBAL R10 K1       ; R10 := _T
+272 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["khoraKavat"]
+273 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
+274 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["effect"]
+275 [-]: SELF      R10 R10 K46  ; R11 := R10; R10 := R10["0xD4C2743F"]
+276 [-]: CALL      R10 2 1      ; R10(R11)
+277 [-]: MOVE      R10 R0       ; R10 := R0
+278 [-]: RETURN    R10 2        ; return R10
+279 [-]: SELF      R10 R0 K15   ; R11 := R0; R10 := R0["0x55E96699"]
+280 [-]: GETUPVAL  R12 U4       ; R12 := U4
+281 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+282 [-]: SELF      R11 R0 K16   ; R12 := R0; R11 := R0["0x66ACFB34"]
+283 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+284 [-]: LT        0 R11 R10    ; if R11 >= R10 then PC := 293
+285 [-]: JMP       293          ; PC := 293
+286 [-]: SELF      R11 R1 K4    ; R12 := R1; R11 := R1["0x1F18E5A8"]
+287 [-]: GETGLOBAL R13 K5       ; R13 := 0xEC274B1A
+288 [-]: LOADK     R14 K17      ; R14 := "/Lotus/Language/Game/AbilityNeedMoreEnergy"
+289 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
+290 [-]: CALL      R11 0 1      ; R11(R12,...)
+291 [-]: MOVE      R11 R0       ; R11 := R0
+292 [-]: RETURN    R11 2        ; return R11
+293 [-]: GETGLOBAL R11 K1       ; R11 := _T
+294 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["khoraKavat"]
+295 [-]: EQ        1 R11 K3     ; if R11 == nil then PC := 319
+296 [-]: JMP       319          ; PC := 319
+297 [-]: GETGLOBAL R11 K1       ; R11 := _T
+298 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["khoraKavat"]
+299 [-]: GETTABLE  R11 R11 R3   ; R11 := R11[R3]
+300 [-]: EQ        1 R11 K3     ; if R11 == nil then PC := 319
+301 [-]: JMP       319          ; PC := 319
+302 [-]: GETGLOBAL R11 K1       ; R11 := _T
+303 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["khoraKavat"]
+304 [-]: GETTABLE  R11 R11 R3   ; R11 := R11[R3]
+305 [-]: GETTABLE  R11 R11 K47  ; R11 := R11["targetTime"]
+306 [-]: EQ        1 R11 K3     ; if R11 == nil then PC := 319
+307 [-]: JMP       319          ; PC := 319
+308 [-]: GETGLOBAL R11 K1       ; R11 := _T
+309 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["khoraKavat"]
+310 [-]: GETTABLE  R11 R11 R3   ; R11 := R11[R3]
+311 [-]: GETTABLE  R11 R11 K47  ; R11 := R11["targetTime"]
+312 [-]: ADD       R11 R11 K48  ; R11 := R11 + 2
+313 [-]: GETGLOBAL R12 K49      ; R12 := 0x58E5C2DB
+314 [-]: CALL      R12 1 2      ; R12 := R12()
+315 [-]: LT        0 R12 R11    ; if R12 >= R11 then PC := 319
+316 [-]: JMP       319          ; PC := 319
+317 [-]: MOVE      R11 R0       ; R11 := R0
+318 [-]: RETURN    R11 2        ; return R11
+319 [-]: GETGLOBAL R11 K37      ; R11 := mOwner
+320 [-]: SELF      R11 R11 K50  ; R12 := R11; R11 := R11["0xB3F0027"]
+321 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+322 [-]: TEST      R11 0        ; if not R11 then PC := 331
+323 [-]: JMP       331          ; PC := 331
+324 [-]: SELF      R11 R1 K4    ; R12 := R1; R11 := R1["0x1F18E5A8"]
+325 [-]: GETGLOBAL R13 K5       ; R13 := 0xEC274B1A
+326 [-]: LOADK     R14 K6       ; R14 := "/Lotus/Language/Game/AbilityInUse"
+327 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
+328 [-]: CALL      R11 0 1      ; R11(R12,...)
+329 [-]: MOVE      R11 R0       ; R11 := R0
+330 [-]: RETURN    R11 2        ; return R11
+331 [-]: LOADNIL   R11 R11      ; R11 := nil
+332 [-]: SELF      R12 R1 K51   ; R13 := R1; R12 := R1["0x8DB5D01F"]
+333 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+334 [-]: SELF      R12 R12 K52  ; R13 := R12; R12 := R12["0xD2399495"]
+335 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+336 [-]: MOVE      R13 R0       ; R13 := R0
+337 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
+338 [-]: MOVE      R15 R12      ; R15 := R12
+339 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+340 [-]: TEST      R14 1        ; if R14 then PC := 363
+341 [-]: JMP       363          ; PC := 363
+342 [-]: SELF      R14 R12 K53  ; R15 := R12; R14 := R12["0x8B598ED4"]
+343 [-]: GETGLOBAL R16 K54      ; R16 := gBaseAvatarType
+344 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+345 [-]: TEST      R14 0        ; if not R14 then PC := 363
+346 [-]: JMP       363          ; PC := 363
+347 [-]: MOVE      R13 R1       ; R13 := R1
+348 [-]: GETUPVAL  R14 U5       ; R14 := U5
+349 [-]: MOVE      R15 R1       ; R15 := R1
+350 [-]: MOVE      R16 R12      ; R16 := R12
+351 [-]: GETGLOBAL R17 K1       ; R17 := _T
+352 [-]: GETTABLE  R17 R17 K27  ; R17 := R17["KHORA_CurrentMode"]
+353 [-]: GETTABLE  R17 R17 R3   ; R17 := R17[R3]
+354 [-]: GETUPVAL  R18 U6       ; R18 := U6
+355 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 358
+356 [-]: JMP       358          ; PC := 358
+357 [-]: MOVE      R17 R0       ; R17 := R0
+358 [-]: MOVE      R17 R1       ; R17 := R1
+359 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
+360 [-]: TEST      R14 0        ; if not R14 then PC := 363
+361 [-]: JMP       363          ; PC := 363
+362 [-]: MOVE      R11 R12      ; R11 := R12
+363 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
+364 [-]: MOVE      R15 R11      ; R15 := R11
+365 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+366 [-]: TEST      R14 0        ; if not R14 then PC := 398
+367 [-]: JMP       398          ; PC := 398
+368 [-]: SELF      R14 R1 K55   ; R15 := R1; R14 := R1["0x44DEA82C"]
+369 [-]: LOADK     R16 K28      ; R16 := 1
+370 [-]: LOADK     R17 K56      ; R17 := 50
+371 [-]: LOADK     R18 K28      ; R18 := 1
+372 [-]: MOVE      R19 R1       ; R19 := R1
+373 [-]: MOVE      R20 R1       ; R20 := R1
+374 [-]: CALL      R14 7 2      ; R14 := R14(R15,R16,R17,R18,R19,R20)
+375 [-]: GETGLOBAL R15 K57      ; R15 := 0x63B09107
+376 [-]: MOVE      R16 R14      ; R16 := R14
+377 [-]: CALL      R15 2 4      ; R15,R16,R17 := R15(R16)
+378 [-]: JMP       396          ; PC := 396
+379 [-]: MOVE      R13 R1       ; R13 := R1
+380 [-]: GETUPVAL  R20 U5       ; R20 := U5
+381 [-]: MOVE      R21 R1       ; R21 := R1
+382 [-]: MOVE      R22 R19      ; R22 := R19
+383 [-]: GETGLOBAL R23 K1       ; R23 := _T
+384 [-]: GETTABLE  R23 R23 K27  ; R23 := R23["KHORA_CurrentMode"]
+385 [-]: GETTABLE  R23 R23 R3   ; R23 := R23[R3]
+386 [-]: GETUPVAL  R24 U6       ; R24 := U6
+387 [-]: EQ        0 R23 R24    ; if R23 ~= R24 then PC := 390
+388 [-]: JMP       390          ; PC := 390
+389 [-]: MOVE      R23 R0       ; R23 := R0
+390 [-]: MOVE      R23 R1       ; R23 := R1
+391 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
+392 [-]: TEST      R20 0        ; if not R20 then PC := 396
+393 [-]: JMP       396          ; PC := 396
+394 [-]: MOVE      R11 R19      ; R11 := R19
+395 [-]: JMP       398          ; PC := 398
+396 [-]: TFORLOOP  R15 2        ; R18,R19 :=  R15(R16,R17); if R18 ~= nil then begin PC = 379; R17 := R18 end
+397 [-]: JMP       379          ; PC := 379
+398 [-]: GETGLOBAL R20 K9       ; R20 := 0x400E7765
+399 [-]: MOVE      R21 R11      ; R21 := R11
+400 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+401 [-]: TEST      R20 0        ; if not R20 then PC := 418
+402 [-]: JMP       418          ; PC := 418
+403 [-]: GETGLOBAL R20 K1       ; R20 := _T
+404 [-]: GETTABLE  R20 R20 K27  ; R20 := R20["KHORA_CurrentMode"]
+405 [-]: GETTABLE  R20 R20 R3   ; R20 := R20[R3]
+406 [-]: GETUPVAL  R21 U6       ; R21 := U6
+407 [-]: EQ        0 R20 R21    ; if R20 ~= R21 then PC := 411
+408 [-]: JMP       411          ; PC := 411
+409 [-]: MOVE      R11 R1       ; R11 := R1
+410 [-]: JMP       418          ; PC := 418
+411 [-]: SELF      R20 R1 K4    ; R21 := R1; R20 := R1["0x1F18E5A8"]
+412 [-]: GETGLOBAL R22 K5       ; R22 := 0xEC274B1A
+413 [-]: LOADK     R23 K58      ; R23 := "/Lotus/Language/Game/AbilityErrorInvalidTarget"
+414 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+415 [-]: CALL      R20 0 1      ; R20(R21,...)
+416 [-]: MOVE      R20 R0       ; R20 := R0
+417 [-]: RETURN    R20 2        ; return R20
+418 [-]: GETGLOBAL R20 K1       ; R20 := _T
+419 [-]: GETTABLE  R20 R20 K8   ; R20 := R20["khoraKavat"]
+420 [-]: EQ        1 R20 K3     ; if R20 == nil then PC := 435
+421 [-]: JMP       435          ; PC := 435
+422 [-]: GETGLOBAL R20 K1       ; R20 := _T
+423 [-]: GETTABLE  R20 R20 K8   ; R20 := R20["khoraKavat"]
+424 [-]: GETTABLE  R20 R20 R3   ; R20 := R20[R3]
+425 [-]: EQ        1 R20 K3     ; if R20 == nil then PC := 435
+426 [-]: JMP       435          ; PC := 435
+427 [-]: GETGLOBAL R20 K1       ; R20 := _T
+428 [-]: GETTABLE  R20 R20 K8   ; R20 := R20["khoraKavat"]
+429 [-]: GETTABLE  R20 R20 R3   ; R20 := R20[R3]
+430 [-]: GETTABLE  R20 R20 K44  ; R20 := R20["target"]
+431 [-]: EQ        0 R20 R11    ; if R20 ~= R11 then PC := 435
+432 [-]: JMP       435          ; PC := 435
+433 [-]: MOVE      R20 R0       ; R20 := R0
+434 [-]: RETURN    R20 2        ; return R20
+435 [-]: SELF      R20 R0 K59   ; R21 := R0; R20 := R0["0xACA59CC1"]
+436 [-]: MOVE      R22 R11      ; R22 := R11
+437 [-]: CALL      R20 3 1      ; R20(R21,R22)
+438 [-]: MOVE      R20 R1       ; R20 := R1
+439 [-]: RETURN    R20 2        ; return R20
+440 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 329
+; Defined at line: 328
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1031,7 +1027,7 @@ code size: 103
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 333
+; Defined at line: 332
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1055,7 +1051,7 @@ code size: 103
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 339
+; Defined at line: 338
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1250,7 +1246,7 @@ code size: 103
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 386
+; Defined at line: 385
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1281,7 +1277,7 @@ code size: 103
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 392
+; Defined at line: 391
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1499,7 +1495,7 @@ code size: 103
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 477
+; Defined at line: 476
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1623,7 +1619,7 @@ code size: 103
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 521
+; Defined at line: 520
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

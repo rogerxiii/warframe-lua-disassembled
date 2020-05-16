@@ -6,7 +6,7 @@ code size: 882
 code size: 1
 code size: 1
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\StalkerSuit.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\StalkerSuit.luac 
 
 ; Name:            
 ; Defined at line: 0

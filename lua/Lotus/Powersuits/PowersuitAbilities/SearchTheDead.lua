@@ -6,7 +6,7 @@ code size: 22
 code size: 72
 code size: 118
 code size: 19
-code size: 114
+code size: 115
 code size: 52
 code size: 3
 code size: 13
@@ -21,7 +21,7 @@ code size: 17
 code size: 23
 code size: 41
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\SearchTheDead.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\SearchTheDead.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -607,7 +607,7 @@ code size: 41
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
   2 [-]: MOVE      R4 R1        ; R4 := R1
@@ -673,56 +673,57 @@ code size: 41
  62 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
  63 [-]: GETGLOBAL R5 K7        ; R5 := gGameRules
  64 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 65 [-]: TEST      R4 1         ; if R4 then PC := 112
- 66 [-]: JMP       112          ; PC := 112
+ 65 [-]: TEST      R4 1         ; if R4 then PC := 113
+ 66 [-]: JMP       113          ; PC := 113
  67 [-]: GETGLOBAL R4 K7        ; R4 := gGameRules
  68 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x3EE13D16"]
  69 [-]: MOVE      R6 R0        ; R6 := R0
  70 [-]: SELF      R7 R2 K9     ; R8 := R2; R7 := R2["0x6DA72501"]
  71 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  72 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 73 [-]: TEST      R4 0         ; if not R4 then PC := 112
- 74 [-]: JMP       112          ; PC := 112
+ 73 [-]: TEST      R4 0         ; if not R4 then PC := 113
+ 74 [-]: JMP       113          ; PC := 113
  75 [-]: MOVE      R4 R0        ; R4 := R0
  76 [-]: RETURN    R4 2         ; return R4
- 77 [-]: JMP       112          ; PC := 112
+ 77 [-]: JMP       113          ; PC := 113
  78 [-]: LOADK     R4 K10       ; R4 := 1
  79 [-]: SELF      R5 R1 K11    ; R6 := R1; R5 := R1["0xC432A31F"]
  80 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  81 [-]: LOADK     R6 K10       ; R6 := 1
- 82 [-]: FORPREP   R4 111       ; R4 -= R6; PC := 111
+ 82 [-]: FORPREP   R4 112       ; R4 -= R6; PC := 112
  83 [-]: SELF      R8 R1 K12    ; R9 := R1; R8 := R1["0x977EF3DA"]
  84 [-]: SUB       R10 R7 K10   ; R10 := R7 - 1
  85 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 86 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
- 87 [-]: MOVE      R10 R8       ; R10 := R8
- 88 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 89 [-]: TEST      R9 1         ; if R9 then PC := 111
- 90 [-]: JMP       111          ; PC := 111
- 91 [-]: SELF      R9 R8 K5     ; R10 := R8; R9 := R8["0x3D6BC661"]
- 92 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 93 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 94 [-]: TEST      R9 1         ; if R9 then PC := 109
- 95 [-]: JMP       109          ; PC := 109
- 96 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
- 97 [-]: GETGLOBAL R10 K7       ; R10 := gGameRules
- 98 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 99 [-]: TEST      R9 1         ; if R9 then PC := 111
-100 [-]: JMP       111          ; PC := 111
-101 [-]: GETGLOBAL R9 K7        ; R9 := gGameRules
-102 [-]: SELF      R9 R9 K8     ; R10 := R9; R9 := R9["0x3EE13D16"]
-103 [-]: MOVE      R11 R0       ; R11 := R0
-104 [-]: SELF      R12 R8 K9    ; R13 := R8; R12 := R8["0x6DA72501"]
-105 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
-106 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
-107 [-]: TEST      R9 0         ; if not R9 then PC := 111
-108 [-]: JMP       111          ; PC := 111
-109 [-]: MOVE      R9 R0        ; R9 := R0
-110 [-]: RETURN    R9 2         ; return R9
-111 [-]: FORLOOP   R4 83        ; R4 += R6; if R4 <= R5 then begin PC := 83; R7 := R4 end
-112 [-]: MOVE      R9 R1        ; R9 := R1
-113 [-]: RETURN    R9 2         ; return R9
-114 [-]: RETURN    R0 1         ; return 
+ 86 [-]: MOVE      R2 R8        ; R2 := R8
+ 87 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
+ 88 [-]: MOVE      R9 R2        ; R9 := R2
+ 89 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 90 [-]: TEST      R8 1         ; if R8 then PC := 112
+ 91 [-]: JMP       112          ; PC := 112
+ 92 [-]: SELF      R8 R2 K5     ; R9 := R2; R8 := R2["0x3D6BC661"]
+ 93 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 94 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 95 [-]: TEST      R8 1         ; if R8 then PC := 110
+ 96 [-]: JMP       110          ; PC := 110
+ 97 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
+ 98 [-]: GETGLOBAL R9 K7        ; R9 := gGameRules
+ 99 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+100 [-]: TEST      R8 1         ; if R8 then PC := 112
+101 [-]: JMP       112          ; PC := 112
+102 [-]: GETGLOBAL R8 K7        ; R8 := gGameRules
+103 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8["0x3EE13D16"]
+104 [-]: MOVE      R10 R0       ; R10 := R0
+105 [-]: SELF      R11 R2 K9    ; R12 := R2; R11 := R2["0x6DA72501"]
+106 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+107 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+108 [-]: TEST      R8 0         ; if not R8 then PC := 112
+109 [-]: JMP       112          ; PC := 112
+110 [-]: MOVE      R8 R0        ; R8 := R0
+111 [-]: RETURN    R8 2         ; return R8
+112 [-]: FORLOOP   R4 83        ; R4 += R6; if R4 <= R5 then begin PC := 83; R7 := R4 end
+113 [-]: MOVE      R8 R1        ; R8 := R1
+114 [-]: RETURN    R8 2         ; return R8
+115 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:

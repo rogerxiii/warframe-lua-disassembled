@@ -1,8 +1,8 @@
 code size: 7
-code size: 74
+code size: 85
 code size: 4
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\FusionOrnamentPickup.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\FusionOrnamentPickup.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -74,41 +74,52 @@ code size: 4
  43 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  44 [-]: MOVE      R2 R3        ; R2 := R3
  45 [-]: JMP       34           ; PC := 34
- 46 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2["0xE5170280"]
- 47 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 48 [-]: GETGLOBAL R4 K12       ; R4 := _T
- 49 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["FusionTreasureDecosRequested"]
- 50 [-]: EQ        0 R4 K14     ; if R4 ~= nil then PC := 55
- 51 [-]: JMP       55           ; PC := 55
- 52 [-]: GETGLOBAL R4 K12       ; R4 := _T
- 53 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 54 [-]: SETTABLE  R4 K13 R5    ; R4["FusionTreasureDecosRequested"] := R5
- 55 [-]: GETGLOBAL R4 K12       ; R4 := _T
- 56 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["FusionTreasureDecosRequested"]
- 57 [-]: SELF      R5 R3 K15    ; R6 := R3; R5 := R3["0x1B252E3C"]
- 58 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 59 [-]: GETTABLE  R4 R4 R5     ; R4 := R4[R5]
- 60 [-]: EQ        0 R4 K14     ; if R4 ~= nil then PC := 74
- 61 [-]: JMP       74           ; PC := 74
- 62 [-]: GETGLOBAL R4 K12       ; R4 := _T
- 63 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["FusionTreasureDecosRequested"]
- 64 [-]: SELF      R5 R3 K15    ; R6 := R3; R5 := R3["0x1B252E3C"]
- 65 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 66 [-]: SETTABLE  R4 R5 K16    ; R4[R5] := "0x1"
- 67 [-]: GETGLOBAL R4 K17       ; R4 := gGameRules
- 68 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4["0x4A57F63D"]
- 69 [-]: SELF      R6 R3 K15    ; R7 := R3; R6 := R3["0x1B252E3C"]
- 70 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 71 [-]: LOADK     R7 K19       ; R7 := "OnLoaded"
- 72 [-]: MOVE      R8 R1        ; R8 := R1
- 73 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 74 [-]: RETURN    R0 1         ; return 
+ 46 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2["0x8B598ED4"]
+ 47 [-]: GETGLOBAL R5 K11       ; R5 := gShipDecoItemType
+ 48 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 49 [-]: TEST      R3 1         ; if R3 then PC := 57
+ 50 [-]: JMP       57           ; PC := 57
+ 51 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2["0x8B598ED4"]
+ 52 [-]: GETGLOBAL R5 K12       ; R5 := gShipDecoStoreItemType
+ 53 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 54 [-]: TEST      R3 1         ; if R3 then PC := 57
+ 55 [-]: JMP       57           ; PC := 57
+ 56 [-]: RETURN    R0 1         ; return 
+ 57 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2["0xE5170280"]
+ 58 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 59 [-]: GETGLOBAL R4 K14       ; R4 := _T
+ 60 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["FusionTreasureDecosRequested"]
+ 61 [-]: EQ        0 R4 K16     ; if R4 ~= nil then PC := 66
+ 62 [-]: JMP       66           ; PC := 66
+ 63 [-]: GETGLOBAL R4 K14       ; R4 := _T
+ 64 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 65 [-]: SETTABLE  R4 K15 R5    ; R4["FusionTreasureDecosRequested"] := R5
+ 66 [-]: GETGLOBAL R4 K14       ; R4 := _T
+ 67 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["FusionTreasureDecosRequested"]
+ 68 [-]: SELF      R5 R3 K17    ; R6 := R3; R5 := R3["0x1B252E3C"]
+ 69 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 70 [-]: GETTABLE  R4 R4 R5     ; R4 := R4[R5]
+ 71 [-]: EQ        0 R4 K16     ; if R4 ~= nil then PC := 85
+ 72 [-]: JMP       85           ; PC := 85
+ 73 [-]: GETGLOBAL R4 K14       ; R4 := _T
+ 74 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["FusionTreasureDecosRequested"]
+ 75 [-]: SELF      R5 R3 K17    ; R6 := R3; R5 := R3["0x1B252E3C"]
+ 76 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 77 [-]: SETTABLE  R4 R5 K18    ; R4[R5] := "0x1"
+ 78 [-]: GETGLOBAL R4 K19       ; R4 := gGameRules
+ 79 [-]: SELF      R4 R4 K20    ; R5 := R4; R4 := R4["0x4A57F63D"]
+ 80 [-]: SELF      R6 R3 K17    ; R7 := R3; R6 := R3["0x1B252E3C"]
+ 81 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 82 [-]: LOADK     R7 K21       ; R7 := "OnLoaded"
+ 83 [-]: MOVE      R8 R1        ; R8 := R1
+ 84 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 85 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 37
+; Defined at line: 41
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

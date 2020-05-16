@@ -5,48 +5,48 @@ code size: 28
 code size: 81
 code size: 19
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\NewWarIntro.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\NewWarIntro.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  5
+; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x329BDC44
-  2 [-]: LOADK     R3 K1        ; R3 := "Lotus.Scripts.Libs.QuestLib"
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: GETGLOBAL R3 K0        ; R3 := 0x329BDC44
-  5 [-]: LOADK     R4 K2        ; R4 := "Lotus.Scripts.Libs.StoryLib"
-  6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  7 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
-  8 [-]: SETGLOBAL R4 K3        ; EnableAction := R4
-  9 [-]: SETGLOBAL R4 K4        ; 0xAA4C66DA := R4
- 10 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 11 [-]: MOVE      R0 R1        ; R0 := R1
- 12 [-]: SETGLOBAL R4 K5        ; OnDisabled := R4
- 13 [-]: SETGLOBAL R4 K6        ; 0x9CDFDE15 := R4
- 14 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 15 [-]: MOVE      R0 R2        ; R0 := R2
- 16 [-]: SETGLOBAL R4 K7        ; CompleteQuest := R4
- 17 [-]: SETGLOBAL R4 K8        ; 0x415A6648 := R4
- 18 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
- 19 [-]: MOVE      R0 R2        ; R0 := R2
- 20 [-]: SETGLOBAL R4 K9        ; OnDamaged := R4
- 21 [-]: SETGLOBAL R4 K10       ; 0x653EC65A := R4
- 22 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
- 23 [-]: MOVE      R0 R3        ; R0 := R3
- 24 [-]: MOVE      R0 R2        ; R0 := R2
- 25 [-]: SETGLOBAL R4 K11       ; SetUpFragment := R4
- 26 [-]: SETGLOBAL R4 K12       ; 0xFB6C946F := R4
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x329BDC44
+  2 [-]: LOADK     R2 K1        ; R2 := "Lotus.Scripts.Libs.QuestLib"
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: GETGLOBAL R2 K0        ; R2 := 0x329BDC44
+  5 [-]: LOADK     R3 K2        ; R3 := "Lotus.Scripts.Libs.StoryLib"
+  6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  7 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
+  8 [-]: SETGLOBAL R3 K3        ; EnableAction := R3
+  9 [-]: SETGLOBAL R3 K4        ; 0xAA4C66DA := R3
+ 10 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
+ 11 [-]: MOVE      R0 R0        ; R0 := R0
+ 12 [-]: SETGLOBAL R3 K5        ; OnDisabled := R3
+ 13 [-]: SETGLOBAL R3 K6        ; 0x9CDFDE15 := R3
+ 14 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+ 15 [-]: MOVE      R0 R1        ; R0 := R1
+ 16 [-]: SETGLOBAL R3 K7        ; CompleteQuest := R3
+ 17 [-]: SETGLOBAL R3 K8        ; 0x415A6648 := R3
+ 18 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
+ 19 [-]: MOVE      R0 R1        ; R0 := R1
+ 20 [-]: SETGLOBAL R3 K9        ; OnDamaged := R3
+ 21 [-]: SETGLOBAL R3 K10       ; 0x653EC65A := R3
+ 22 [-]: CLOSURE   R3 4         ; R3 := closure(Function #5)
+ 23 [-]: MOVE      R0 R2        ; R0 := R2
+ 24 [-]: MOVE      R0 R1        ; R0 := R1
+ 25 [-]: SETGLOBAL R3 K11       ; SetUpFragment := R3
+ 26 [-]: SETGLOBAL R3 K12       ; 0xFB6C946F := R3
  27 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 24
+; Defined at line: 22
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -114,7 +114,7 @@ code size: 19
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 44
+; Defined at line: 42
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -142,7 +142,7 @@ code size: 19
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 53
+; Defined at line: 51
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -181,7 +181,7 @@ code size: 19
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 76
+; Defined at line: 65
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -273,7 +273,7 @@ code size: 19
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 109
+; Defined at line: 98
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

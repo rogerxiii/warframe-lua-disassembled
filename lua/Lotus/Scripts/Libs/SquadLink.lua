@@ -1,8 +1,8 @@
-code size: 79
+code size: 78
 code size: 12
 code size: 17
 code size: 87
-code size: 26
+code size: 12
 code size: 62
 code size: 6
 code size: 40
@@ -12,16 +12,16 @@ code size: 15
 code size: 14
 code size: 12
 code size: 4
-code size: 15
+code size: 9
 code size: 26
 code size: 20
-code size: 12
+code size: 6
 code size: 24
 code size: 36
 code size: 25
 code size: 11
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\SquadLink.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Libs\SquadLink.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -58,57 +58,56 @@ code size: 11
  26 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
  27 [-]: CLOSURE   R6 3         ; R6 := closure(Function #4)
  28 [-]: MOVE      R0 R4        ; R0 := R4
- 29 [-]: MOVE      R0 R5        ; R0 := R5
- 30 [-]: CLOSURE   R7 4         ; R7 := closure(Function #5)
- 31 [-]: MOVE      R0 R6        ; R0 := R6
- 32 [-]: CLOSURE   R8 5         ; R8 := closure(Function #6)
- 33 [-]: SETGLOBAL R8 K16       ; EnableKillTracking := R8
- 34 [-]: SETGLOBAL R8 K17       ; 0xEF2177D := R8
- 35 [-]: CLOSURE   R8 6         ; R8 := closure(Function #7)
- 36 [-]: MOVE      R0 R3        ; R0 := R3
- 37 [-]: MOVE      R0 R5        ; R0 := R5
- 38 [-]: MOVE      R0 R0        ; R0 := R0
- 39 [-]: SETGLOBAL R8 K18       ; StartLink := R8
- 40 [-]: SETGLOBAL R8 K19       ; 0x9F0CD4F9 := R8
- 41 [-]: CLOSURE   R8 7         ; R8 := closure(Function #8)
- 42 [-]: MOVE      R0 R7        ; R0 := R7
- 43 [-]: MOVE      R0 R6        ; R0 := R6
- 44 [-]: MOVE      R0 R3        ; R0 := R3
- 45 [-]: SETGLOBAL R8 K20       ; AcceptLink := R8
- 46 [-]: SETGLOBAL R8 K21       ; 0x2B1062B6 := R8
- 47 [-]: CLOSURE   R8 8         ; R8 := closure(Function #9)
- 48 [-]: CLOSURE   R9 9         ; R9 := closure(Function #10)
- 49 [-]: MOVE      R0 R8        ; R0 := R8
- 50 [-]: SETGLOBAL R9 K22       ; StopAcceptingLinks := R9
- 51 [-]: SETGLOBAL R9 K23       ; 0x1714DD6E := R9
- 52 [-]: CLOSURE   R9 10        ; R9 := closure(Function #11)
- 53 [-]: MOVE      R0 R8        ; R0 := R8
- 54 [-]: SETGLOBAL R9 K24       ; CompleteLink := R9
- 55 [-]: SETGLOBAL R9 K25       ; 0xBF5613E1 := R9
- 56 [-]: CLOSURE   R9 11        ; R9 := closure(Function #12)
- 57 [-]: SETGLOBAL R9 K26       ; AcceptingLinks := R9
- 58 [-]: SETGLOBAL R9 K27       ; 0x991E4624 := R9
- 59 [-]: CLOSURE   R9 12        ; R9 := closure(Function #13)
- 60 [-]: SETGLOBAL R9 K28       ; IsLinked := R9
- 61 [-]: SETGLOBAL R9 K29       ; 0x24780B05 := R9
- 62 [-]: CLOSURE   R9 13        ; R9 := closure(Function #14)
- 63 [-]: SETGLOBAL R9 K30       ; UpdateProgress := R9
- 64 [-]: SETGLOBAL R9 K31       ; 0xE03F8790 := R9
- 65 [-]: CLOSURE   R9 14        ; R9 := closure(Function #15)
- 66 [-]: MOVE      R0 R6        ; R0 := R6
- 67 [-]: SETGLOBAL R9 K32       ; PushPlayerStatus := R9
- 68 [-]: SETGLOBAL R9 K33       ; 0x331B701F := R9
- 69 [-]: CLOSURE   R9 15        ; R9 := closure(Function #16)
- 70 [-]: MOVE      R0 R6        ; R0 := R6
- 71 [-]: SETGLOBAL R9 K34       ; PopPlayerStatus := R9
- 72 [-]: SETGLOBAL R9 K35       ; 0x84BA5CD5 := R9
- 73 [-]: CLOSURE   R9 16        ; R9 := closure(Function #17)
- 74 [-]: SETGLOBAL R9 K36       ; PlayerHasStatus := R9
- 75 [-]: SETGLOBAL R9 K37       ; 0xAADCD3C7 := R9
- 76 [-]: CLOSURE   R9 17        ; R9 := closure(Function #18)
- 77 [-]: SETGLOBAL R9 K38       ; SetProgressCallback := R9
- 78 [-]: SETGLOBAL R9 K39       ; 0x325B861A := R9
- 79 [-]: RETURN    R0 1         ; return 
+ 29 [-]: CLOSURE   R7 4         ; R7 := closure(Function #5)
+ 30 [-]: MOVE      R0 R6        ; R0 := R6
+ 31 [-]: CLOSURE   R8 5         ; R8 := closure(Function #6)
+ 32 [-]: SETGLOBAL R8 K16       ; EnableKillTracking := R8
+ 33 [-]: SETGLOBAL R8 K17       ; 0xEF2177D := R8
+ 34 [-]: CLOSURE   R8 6         ; R8 := closure(Function #7)
+ 35 [-]: MOVE      R0 R3        ; R0 := R3
+ 36 [-]: MOVE      R0 R5        ; R0 := R5
+ 37 [-]: MOVE      R0 R0        ; R0 := R0
+ 38 [-]: SETGLOBAL R8 K18       ; StartLink := R8
+ 39 [-]: SETGLOBAL R8 K19       ; 0x9F0CD4F9 := R8
+ 40 [-]: CLOSURE   R8 7         ; R8 := closure(Function #8)
+ 41 [-]: MOVE      R0 R7        ; R0 := R7
+ 42 [-]: MOVE      R0 R6        ; R0 := R6
+ 43 [-]: MOVE      R0 R3        ; R0 := R3
+ 44 [-]: SETGLOBAL R8 K20       ; AcceptLink := R8
+ 45 [-]: SETGLOBAL R8 K21       ; 0x2B1062B6 := R8
+ 46 [-]: CLOSURE   R8 8         ; R8 := closure(Function #9)
+ 47 [-]: CLOSURE   R9 9         ; R9 := closure(Function #10)
+ 48 [-]: MOVE      R0 R8        ; R0 := R8
+ 49 [-]: SETGLOBAL R9 K22       ; StopAcceptingLinks := R9
+ 50 [-]: SETGLOBAL R9 K23       ; 0x1714DD6E := R9
+ 51 [-]: CLOSURE   R9 10        ; R9 := closure(Function #11)
+ 52 [-]: MOVE      R0 R8        ; R0 := R8
+ 53 [-]: SETGLOBAL R9 K24       ; CompleteLink := R9
+ 54 [-]: SETGLOBAL R9 K25       ; 0xBF5613E1 := R9
+ 55 [-]: CLOSURE   R9 11        ; R9 := closure(Function #12)
+ 56 [-]: SETGLOBAL R9 K26       ; AcceptingLinks := R9
+ 57 [-]: SETGLOBAL R9 K27       ; 0x991E4624 := R9
+ 58 [-]: CLOSURE   R9 12        ; R9 := closure(Function #13)
+ 59 [-]: SETGLOBAL R9 K28       ; IsLinked := R9
+ 60 [-]: SETGLOBAL R9 K29       ; 0x24780B05 := R9
+ 61 [-]: CLOSURE   R9 13        ; R9 := closure(Function #14)
+ 62 [-]: SETGLOBAL R9 K30       ; UpdateProgress := R9
+ 63 [-]: SETGLOBAL R9 K31       ; 0xE03F8790 := R9
+ 64 [-]: CLOSURE   R9 14        ; R9 := closure(Function #15)
+ 65 [-]: MOVE      R0 R6        ; R0 := R6
+ 66 [-]: SETGLOBAL R9 K32       ; PushPlayerStatus := R9
+ 67 [-]: SETGLOBAL R9 K33       ; 0x331B701F := R9
+ 68 [-]: CLOSURE   R9 15        ; R9 := closure(Function #16)
+ 69 [-]: MOVE      R0 R6        ; R0 := R6
+ 70 [-]: SETGLOBAL R9 K34       ; PopPlayerStatus := R9
+ 71 [-]: SETGLOBAL R9 K35       ; 0x84BA5CD5 := R9
+ 72 [-]: CLOSURE   R9 16        ; R9 := closure(Function #17)
+ 73 [-]: SETGLOBAL R9 K36       ; PlayerHasStatus := R9
+ 74 [-]: SETGLOBAL R9 K37       ; 0xAADCD3C7 := R9
+ 75 [-]: CLOSURE   R9 17        ; R9 := closure(Function #18)
+ 76 [-]: SETGLOBAL R9 K38       ; SetProgressCallback := R9
+ 77 [-]: SETGLOBAL R9 K39       ; 0x325B861A := R9
+ 78 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -264,10 +263,10 @@ code size: 11
 ;
 ; Name:            
 ; Defined at line: 55
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := gMatchingService
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xAB4322EE"]
@@ -277,24 +276,10 @@ code size: 11
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: GETUPVAL  R0 U0        ; R0 := U0
   8 [-]: CALL      R0 1 2       ; R0 := R0()
-  9 [-]: TEST      R0 0         ; if not R0 then PC := 19
- 10 [-]: JMP       19           ; PC := 19
- 11 [-]: GETGLOBAL R0 K2        ; R0 := _T
- 12 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0xDBD60887"]
- 13 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
- 14 [-]: LOADK     R3 K4        ; R3 := "Initiators"
- 15 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 16 [-]: CALL      R4 1 0       ; R4,... := R4()
- 17 [-]: CALL      R0 0 1       ; R0(R1,...)
- 18 [-]: JMP       26           ; PC := 26
- 19 [-]: GETGLOBAL R0 K2        ; R0 := _T
- 20 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0xDBD60887"]
- 21 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
- 22 [-]: LOADK     R3 K5        ; R3 := "Responders"
- 23 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 24 [-]: CALL      R4 1 0       ; R4,... := R4()
- 25 [-]: CALL      R0 0 1       ; R0(R1,...)
- 26 [-]: RETURN    R0 1         ; return 
+  9 [-]: TEST      R0 0         ; if not R0 then PC := 12
+ 10 [-]: JMP       12           ; PC := 12
+ 11 [-]: JMP       12           ; PC := 12
+ 12 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
@@ -622,23 +607,17 @@ code size: 11
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := gMatchingService
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0xAB4322EE"]
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 13
-  5 [-]: JMP       13           ; PC := 13
-  6 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xDBD60887"]
-  8 [-]: LOADK     R3 K4        ; R3 := "LinkCompleted"
-  9 [-]: MOVE      R4 R1        ; R4 := R1
- 10 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
- 11 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 12 [-]: JMP       15           ; PC := 15
- 13 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 14 [-]: CALL      R2 1 1       ; R2()
- 15 [-]: RETURN    R0 1         ; return 
+  4 [-]: TEST      R2 0         ; if not R2 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: JMP       9            ; PC := 9
+  7 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  8 [-]: CALL      R2 1 1       ; R2()
+  9 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #12:
@@ -716,20 +695,14 @@ code size: 11
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := gMatchingService
   2 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0xAB4322EE"]
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 0         ; if not R3 then PC := 12
-  5 [-]: JMP       12           ; PC := 12
-  6 [-]: GETGLOBAL R3 K2        ; R3 := _T
-  7 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["0xDBD60887"]
-  8 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
-  9 [-]: MOVE      R6 R1        ; R6 := R1
- 10 [-]: MOVE      R7 R2        ; R7 := R2
- 11 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 12 [-]: RETURN    R0 1         ; return 
+  4 [-]: TEST      R3 0         ; if not R3 then PC := 6
+  5 [-]: JMP       6            ; PC := 6
+  6 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #15:

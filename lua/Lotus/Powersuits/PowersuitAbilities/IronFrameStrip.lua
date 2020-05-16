@@ -2,7 +2,7 @@ code size: 124
 code size: 89
 code size: 48
 code size: 30
-code size: 30
+code size: 37
 code size: 83
 code size: 63
 code size: 21
@@ -17,7 +17,7 @@ code size: 29
 code size: 56
 code size: 120
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\IronFrameStrip.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\IronFrameStrip.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -359,44 +359,51 @@ code size: 120
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  13
 
-  1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x8DB5D01F"]
-  2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  3 [-]: SELF      R3 R2 K1     ; R4 := R2; R3 := R2["0x6978AC59"]
-  4 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  5 [-]: SELF      R4 R3 K2     ; R5 := R3; R4 := R3["0xE2B32C65"]
-  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
-  8 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["PowerSuit_AUGMENT_ONE"]
-  9 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 28
- 10 [-]: JMP       28           ; PC := 28
- 11 [-]: SELF      R5 R2 K5     ; R6 := R2; R5 := R2["0xC7EA8CA1"]
- 12 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 13 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 14 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["AVATAR_ABILITY_STRENGTH"]
- 15 [-]: MOVE      R9 R4        ; R9 := R4
- 16 [-]: MOVE      R10 R3       ; R10 := R3
- 17 [-]: CALL      R5 6 2       ; R5 := R5(R6,R7,R8,R9,R10)
- 18 [-]: SELF      R6 R2 K5     ; R7 := R2; R6 := R2["0xC7EA8CA1"]
- 19 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 20 [-]: GETGLOBAL R9 K6        ; R9 := Game
- 21 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["AVATAR_ABILITY_STRENGTH"]
- 22 [-]: MOVE      R10 R4       ; R10 := R4
- 23 [-]: MOVE      R11 R3       ; R11 := R3
- 24 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
- 25 [-]: MOVE      R7 R5        ; R7 := R5
- 26 [-]: MOVE      R8 R6        ; R8 := R6
- 27 [-]: RETURN    R7 3         ; return R7,R8
- 28 [-]: LOADNIL   R7 R7        ; R7 := nil
- 29 [-]: RETURN    R7 2         ; return R7
- 30 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  2 [-]: GETUPVAL  R3 U1        ; R3 := U1
+  3 [-]: SELF      R4 R0 K0     ; R5 := R0; R4 := R0["0x8DB5D01F"]
+  4 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  5 [-]: SELF      R5 R4 K1     ; R6 := R4; R5 := R4["0x6978AC59"]
+  6 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+  7 [-]: GETGLOBAL R6 K2        ; R6 := 0x400E7765
+  8 [-]: MOVE      R7 R5        ; R7 := R5
+  9 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 10 [-]: TEST      R6 1         ; if R6 then PC := 34
+ 11 [-]: JMP       34           ; PC := 34
+ 12 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5["0xE2B32C65"]
+ 13 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 14 [-]: GETGLOBAL R7 K4        ; R7 := Lotus_Game
+ 15 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["PowerSuit_AUGMENT_ONE"]
+ 16 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 34
+ 17 [-]: JMP       34           ; PC := 34
+ 18 [-]: SELF      R7 R4 K6     ; R8 := R4; R7 := R4["0xC7EA8CA1"]
+ 19 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 20 [-]: GETGLOBAL R10 K7       ; R10 := Game
+ 21 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["AVATAR_ABILITY_STRENGTH"]
+ 22 [-]: MOVE      R11 R6       ; R11 := R6
+ 23 [-]: MOVE      R12 R5       ; R12 := R5
+ 24 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
+ 25 [-]: MOVE      R2 R7        ; R2 := R7
+ 26 [-]: SELF      R7 R4 K6     ; R8 := R4; R7 := R4["0xC7EA8CA1"]
+ 27 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 28 [-]: GETGLOBAL R10 K7       ; R10 := Game
+ 29 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["AVATAR_ABILITY_STRENGTH"]
+ 30 [-]: MOVE      R11 R6       ; R11 := R6
+ 31 [-]: MOVE      R12 R5       ; R12 := R5
+ 32 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
+ 33 [-]: MOVE      R3 R7        ; R3 := R7
+ 34 [-]: MOVE      R7 R2        ; R7 := R2
+ 35 [-]: MOVE      R8 R3        ; R8 := R3
+ 36 [-]: RETURN    R7 3         ; return R7,R8
+ 37 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 121
+; Defined at line: 125
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -490,7 +497,7 @@ code size: 120
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 157
+; Defined at line: 161
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -564,7 +571,7 @@ code size: 120
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 177
+; Defined at line: 181
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -596,7 +603,7 @@ code size: 120
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 191
+; Defined at line: 195
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -626,7 +633,7 @@ code size: 120
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 201
+; Defined at line: 205
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -656,7 +663,7 @@ code size: 120
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 210
+; Defined at line: 214
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -710,7 +717,7 @@ code size: 120
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 229
+; Defined at line: 233
 ; #Upvalues:       6
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -1093,7 +1100,7 @@ code size: 120
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 363
+; Defined at line: 367
 ; #Upvalues:       14
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1255,7 +1262,7 @@ code size: 120
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 399
+; Defined at line: 403
 ; #Upvalues:       3
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -1423,7 +1430,7 @@ code size: 120
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 456
+; Defined at line: 460
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1482,7 +1489,7 @@ code size: 120
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 470
+; Defined at line: 474
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1522,7 +1529,7 @@ code size: 120
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 480
+; Defined at line: 484
 ; #Upvalues:       8
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -1589,7 +1596,7 @@ code size: 120
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 498
+; Defined at line: 502
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

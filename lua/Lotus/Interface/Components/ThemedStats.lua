@@ -3,7 +3,7 @@ code size: 74
 code size: 32
 code size: 16
 code size: 25
-code size: 618
+code size: 628
 code size: 23
 code size: 4
 code size: 4
@@ -12,7 +12,7 @@ code size: 25
 code size: 23
 code size: 7
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\ThemedStats.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\ThemedStats.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -816,46 +816,56 @@ code size: 7
 582 [-]: EQ        0 R45 K51    ; if R45 ~= nil then PC := 585
 583 [-]: JMP       585          ; PC := 585
 584 [-]: SETTABLE  R0 K99 R44   ; R0["mEdgeStartAlpha"] := R44
-585 [-]: GETGLOBAL R45 K77      ; R45 := 0x52E17A90
-586 [-]: MOVE      R46 R1       ; R46 := R1
-587 [-]: GETTABLE  R47 R0 K20   ; R47 := R0["mClipName"]
-588 [-]: LOADK     R48 K40      ; R48 := ".Backer"
-589 [-]: CONCAT    R47 R47 R48  ; R47 := R47 .. R48
-590 [-]: GETGLOBAL R48 K78      ; R48 := UISys
-591 [-]: GETTABLE  R48 R48 K79  ; R48 := R48["FlashInstance_LINEAR"]
-592 [-]: NEWTABLE  R49 1 0      ; R49 := {}
-593 [-]: CLOSURE   R50 0        ; R50 := closure(Function #1.3.1)
-594 [-]: MOVE      R0 R44       ; R0 := R44
-595 [-]: MOVE      R0 R0        ; R0 := R0
-596 [-]: MOVE      R0 R1        ; R0 := R1
-597 [-]: MOVE      R0 R3        ; R0 := R3
-598 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
-599 [-]: NEWTABLE  R50 1 0      ; R50 := {}
-600 [-]: LOADK     R51 K19      ; R51 := 1
-601 [-]: SETLIST   R50 1 1      ; R50[(1-1)*FPF+i] := R(50+i), 1 <= i <= 1
-602 [-]: LOADK     R51 K18      ; R51 := 0.20000000298023
-603 [-]: MOVE      R52 R13      ; R52 := R13
-604 [-]: CLOSURE   R53 1        ; R53 := closure(Function #1.3.2)
-605 [-]: MOVE      R0 R0        ; R0 := R0
-606 [-]: MOVE      R0 R44       ; R0 := R44
-607 [-]: CALL      R45 9 1      ; R45(R46,R47,R48,R49,R50,R51,R52,R53)
-608 [-]: SELF      R45 R1 K42   ; R46 := R1; R45 := R1["0x302AAB2F"]
-609 [-]: GETTABLE  R47 R0 K20   ; R47 := R0["mClipName"]
-610 [-]: LOADK     R48 K40      ; R48 := ".Backer"
-611 [-]: CONCAT    R47 R47 R48  ; R47 := R47 .. R48
-612 [-]: LOADK     R48 K44      ; R48 := "RectInnerColor"
-613 [-]: GETTABLE  R49 R2 K100  ; R49 := R2["r"]
-614 [-]: GETTABLE  R50 R2 K101  ; R50 := R2["g"]
-615 [-]: GETTABLE  R51 R2 K102  ; R51 := R2["b"]
-616 [-]: LOADK     R52 K103     ; R52 := 0.60000002384186
-617 [-]: CALL      R45 8 1      ; R45(R46,R47,R48,R49,R50,R51,R52)
-618 [-]: RETURN    R0 1         ; return 
+585 [-]: SELF      R45 R1 K42   ; R46 := R1; R45 := R1["0x302AAB2F"]
+586 [-]: GETTABLE  R47 R0 K20   ; R47 := R0["mClipName"]
+587 [-]: LOADK     R48 K40      ; R48 := ".Backer"
+588 [-]: CONCAT    R47 R47 R48  ; R47 := R47 .. R48
+589 [-]: LOADK     R48 K43      ; R48 := "RectEdgeColor"
+590 [-]: GETTABLE  R49 R3 K100  ; R49 := R3["r"]
+591 [-]: GETTABLE  R50 R3 K101  ; R50 := R3["g"]
+592 [-]: GETTABLE  R51 R3 K102  ; R51 := R3["b"]
+593 [-]: GETTABLE  R52 R0 K99   ; R52 := R0["mEdgeStartAlpha"]
+594 [-]: CALL      R45 8 1      ; R45(R46,R47,R48,R49,R50,R51,R52)
+595 [-]: SELF      R45 R1 K42   ; R46 := R1; R45 := R1["0x302AAB2F"]
+596 [-]: GETTABLE  R47 R0 K20   ; R47 := R0["mClipName"]
+597 [-]: LOADK     R48 K40      ; R48 := ".Backer"
+598 [-]: CONCAT    R47 R47 R48  ; R47 := R47 .. R48
+599 [-]: LOADK     R48 K44      ; R48 := "RectInnerColor"
+600 [-]: GETTABLE  R49 R2 K100  ; R49 := R2["r"]
+601 [-]: GETTABLE  R50 R2 K101  ; R50 := R2["g"]
+602 [-]: GETTABLE  R51 R2 K102  ; R51 := R2["b"]
+603 [-]: LOADK     R52 K103     ; R52 := 0.60000002384186
+604 [-]: CALL      R45 8 1      ; R45(R46,R47,R48,R49,R50,R51,R52)
+605 [-]: GETGLOBAL R45 K77      ; R45 := 0x52E17A90
+606 [-]: MOVE      R46 R1       ; R46 := R1
+607 [-]: GETTABLE  R47 R0 K20   ; R47 := R0["mClipName"]
+608 [-]: LOADK     R48 K40      ; R48 := ".Backer"
+609 [-]: CONCAT    R47 R47 R48  ; R47 := R47 .. R48
+610 [-]: GETGLOBAL R48 K78      ; R48 := UISys
+611 [-]: GETTABLE  R48 R48 K79  ; R48 := R48["FlashInstance_LINEAR"]
+612 [-]: NEWTABLE  R49 1 0      ; R49 := {}
+613 [-]: CLOSURE   R50 0        ; R50 := closure(Function #1.3.1)
+614 [-]: MOVE      R0 R44       ; R0 := R44
+615 [-]: MOVE      R0 R0        ; R0 := R0
+616 [-]: MOVE      R0 R1        ; R0 := R1
+617 [-]: MOVE      R0 R3        ; R0 := R3
+618 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
+619 [-]: NEWTABLE  R50 1 0      ; R50 := {}
+620 [-]: LOADK     R51 K19      ; R51 := 1
+621 [-]: SETLIST   R50 1 1      ; R50[(1-1)*FPF+i] := R(50+i), 1 <= i <= 1
+622 [-]: LOADK     R51 K18      ; R51 := 0.20000000298023
+623 [-]: MOVE      R52 R13      ; R52 := R13
+624 [-]: CLOSURE   R53 1        ; R53 := closure(Function #1.3.2)
+625 [-]: MOVE      R0 R0        ; R0 := R0
+626 [-]: MOVE      R0 R44       ; R0 := R44
+627 [-]: CALL      R45 9 1      ; R45(R46,R47,R48,R49,R50,R51,R52,R53)
+628 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.3.1:
 ;
 ; Name:            
-; Defined at line: 220
+; Defined at line: 224
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -889,7 +899,7 @@ code size: 7
 ; Function #1.3.2:
 ;
 ; Name:            
-; Defined at line: 225
+; Defined at line: 229
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -904,7 +914,7 @@ code size: 7
 ; Function #1.4:
 ;
 ; Name:            
-; Defined at line: 232
+; Defined at line: 235
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -919,7 +929,7 @@ code size: 7
 ; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 239
+; Defined at line: 242
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -967,7 +977,7 @@ code size: 7
 ; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 259
+; Defined at line: 262
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1003,7 +1013,7 @@ code size: 7
 ; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 267
+; Defined at line: 270
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1037,7 +1047,7 @@ code size: 7
 ; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 280
+; Defined at line: 283
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

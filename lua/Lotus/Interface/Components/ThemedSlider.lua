@@ -1,5 +1,5 @@
 code size: 9
-code size: 162
+code size: 163
 code size: 41
 code size: 65
 code size: 13
@@ -12,16 +12,16 @@ code size: 4
 code size: 7
 code size: 14
 code size: 31
-code size: 31
+code size: 27
 code size: 40
 code size: 4
 code size: 82
 code size: 226
-code size: 161
+code size: 154
 code size: 88
 code size: 86
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\ThemedSlider.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\ThemedSlider.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -179,39 +179,40 @@ code size: 86
 127 [-]: GETTABLE  R14 R13 K57  ; R14 := R13["InputFieldFocused"]
 128 [-]: SETTABLE  R13 K56 R14  ; R13["InputFieldInputFieldFocused"] := R14
 129 [-]: CLOSURE   R14 8        ; R14 := closure(Function #1.9)
-130 [-]: SETTABLE  R13 K57 R14  ; R13["InputFieldFocused"] := R14
-131 [-]: GETTABLE  R14 R13 K59  ; R14 := R13["InputFieldTextChanged"]
-132 [-]: SETTABLE  R13 K58 R14  ; R13["InputFieldInputFieldTextChanged"] := R14
-133 [-]: CLOSURE   R14 9        ; R14 := closure(Function #1.10)
-134 [-]: SETTABLE  R13 K59 R14  ; R13["InputFieldTextChanged"] := R14
-135 [-]: CLOSURE   R14 10       ; R14 := closure(Function #1.11)
-136 [-]: SETTABLE  R13 K60 R14  ; R13["SetValue"] := R14
-137 [-]: CLOSURE   R14 11       ; R14 := closure(Function #1.12)
-138 [-]: SETTABLE  R13 K61 R14  ; R13["UpdateSlider"] := R14
-139 [-]: GETTABLE  R14 R13 K63  ; R14 := R13["Resize"]
-140 [-]: SETTABLE  R13 K62 R14  ; R13["InputFieldResize"] := R14
-141 [-]: CLOSURE   R14 12       ; R14 := closure(Function #1.13)
-142 [-]: SETTABLE  R13 K63 R14  ; R13["Resize"] := R14
-143 [-]: CLOSURE   R14 13       ; R14 := closure(Function #1.14)
-144 [-]: MOVE      R0 R8        ; R0 := R8
-145 [-]: MOVE      R0 R7        ; R0 := R7
-146 [-]: SETTABLE  R13 K64 R14  ; R13["UpdateColors"] := R14
-147 [-]: GETTABLE  R14 R13 K66  ; R14 := R13["Redraw"]
-148 [-]: SETTABLE  R13 K65 R14  ; R13["InputFieldRedraw"] := R14
-149 [-]: CLOSURE   R14 14       ; R14 := closure(Function #1.15)
-150 [-]: SETTABLE  R13 K66 R14  ; R13["Redraw"] := R14
-151 [-]: CLOSURE   R14 15       ; R14 := closure(Function #1.16)
-152 [-]: SETTABLE  R13 K67 R14  ; R13["Update"] := R14
-153 [-]: SETTABLE  R13 K68 K69  ; R13["mHookedUpCallbacks"] := "0x0"
-154 [-]: SELF      R14 R13 K70  ; R15 := R13; R14 := R13["0x37AAD7A"]
-155 [-]: CALL      R14 2 1      ; R14(R15)
-156 [-]: SELF      R14 R13 K71  ; R15 := R13; R14 := R13["0x755CB587"]
-157 [-]: LOADK     R16 K72      ; R16 := "right"
-158 [-]: CALL      R14 3 1      ; R14(R15,R16)
-159 [-]: SELF      R14 R13 K73  ; R15 := R13; R14 := R13["0x6470BAF4"]
-160 [-]: CALL      R14 2 1      ; R14(R15)
-161 [-]: RETURN    R13 2        ; return R13
-162 [-]: RETURN    R0 1         ; return 
+130 [-]: MOVE      R0 R2        ; R0 := R2
+131 [-]: SETTABLE  R13 K57 R14  ; R13["InputFieldFocused"] := R14
+132 [-]: GETTABLE  R14 R13 K59  ; R14 := R13["InputFieldTextChanged"]
+133 [-]: SETTABLE  R13 K58 R14  ; R13["InputFieldInputFieldTextChanged"] := R14
+134 [-]: CLOSURE   R14 9        ; R14 := closure(Function #1.10)
+135 [-]: SETTABLE  R13 K59 R14  ; R13["InputFieldTextChanged"] := R14
+136 [-]: CLOSURE   R14 10       ; R14 := closure(Function #1.11)
+137 [-]: SETTABLE  R13 K60 R14  ; R13["SetValue"] := R14
+138 [-]: CLOSURE   R14 11       ; R14 := closure(Function #1.12)
+139 [-]: SETTABLE  R13 K61 R14  ; R13["UpdateSlider"] := R14
+140 [-]: GETTABLE  R14 R13 K63  ; R14 := R13["Resize"]
+141 [-]: SETTABLE  R13 K62 R14  ; R13["InputFieldResize"] := R14
+142 [-]: CLOSURE   R14 12       ; R14 := closure(Function #1.13)
+143 [-]: SETTABLE  R13 K63 R14  ; R13["Resize"] := R14
+144 [-]: CLOSURE   R14 13       ; R14 := closure(Function #1.14)
+145 [-]: MOVE      R0 R8        ; R0 := R8
+146 [-]: MOVE      R0 R7        ; R0 := R7
+147 [-]: SETTABLE  R13 K64 R14  ; R13["UpdateColors"] := R14
+148 [-]: GETTABLE  R14 R13 K66  ; R14 := R13["Redraw"]
+149 [-]: SETTABLE  R13 K65 R14  ; R13["InputFieldRedraw"] := R14
+150 [-]: CLOSURE   R14 14       ; R14 := closure(Function #1.15)
+151 [-]: SETTABLE  R13 K66 R14  ; R13["Redraw"] := R14
+152 [-]: CLOSURE   R14 15       ; R14 := closure(Function #1.16)
+153 [-]: SETTABLE  R13 K67 R14  ; R13["Update"] := R14
+154 [-]: SETTABLE  R13 K68 K69  ; R13["mHookedUpCallbacks"] := "0x0"
+155 [-]: SELF      R14 R13 K70  ; R15 := R13; R14 := R13["0x37AAD7A"]
+156 [-]: CALL      R14 2 1      ; R14(R15)
+157 [-]: SELF      R14 R13 K71  ; R15 := R13; R14 := R13["0x755CB587"]
+158 [-]: LOADK     R16 K72      ; R16 := "right"
+159 [-]: CALL      R14 3 1      ; R14(R15,R16)
+160 [-]: SELF      R14 R13 K73  ; R15 := R13; R14 := R13["0x6470BAF4"]
+161 [-]: CALL      R14 2 1      ; R14(R15)
+162 [-]: RETURN    R13 2        ; return R13
+163 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
@@ -573,7 +574,7 @@ code size: 86
 ;
 ; Name:            
 ; Defined at line: 156
-; #Upvalues:       0
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  8
@@ -581,34 +582,30 @@ code size: 86
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x45FAB8D1"]
   2 [-]: MOVE      R4 R1        ; R4 := R1
   3 [-]: CALL      R2 3 1       ; R2(R3,R4)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 30
-  5 [-]: JMP       30           ; PC := 30
+  4 [-]: TEST      R1 1         ; if R1 then PC := 26
+  5 [-]: JMP       26           ; PC := 26
   6 [-]: GETGLOBAL R2 K1        ; R2 := 0xF595ADDE
   7 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mLabel"]
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: TEST      R2 1         ; if R2 then PC := 16
- 10 [-]: JMP       16           ; PC := 16
- 11 [-]: GETGLOBAL R2 K3        ; R2 := 0x6374FD98
- 12 [-]: LOADK     R3 K4        ; R3 := 0
- 13 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["mMinValue"]
- 14 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mMaxValue"]
- 15 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 16 [-]: GETGLOBAL R3 K1        ; R3 := 0xF595ADDE
- 17 [-]: GETGLOBAL R4 K7        ; R4 := string
- 18 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0x4B1F4F58"]
- 19 [-]: LOADK     R5 K9        ; R5 := "%."
- 20 [-]: GETTABLE  R6 R0 K10    ; R6 := R0["mDecimals"]
- 21 [-]: LOADK     R7 K11       ; R7 := "f"
- 22 [-]: CONCAT    R5 R5 R7     ; R5 := R5 .. R6 .. R7
- 23 [-]: MOVE      R6 R2        ; R6 := R2
- 24 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
- 25 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 26 [-]: MOVE      R2 R3        ; R2 := R3
- 27 [-]: SELF      R3 R0 K12    ; R4 := R0; R3 := R0["0xE1E5CD07"]
- 28 [-]: MOVE      R5 R2        ; R5 := R2
- 29 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 30 [-]: SETTABLE  R0 K13 K14   ; R0["mSliderPressed"] := "0x0"
- 31 [-]: RETURN    R0 1         ; return 
+  9 [-]: TEST      R2 1         ; if R2 then PC := 12
+ 10 [-]: JMP       12           ; PC := 12
+ 11 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 12 [-]: GETGLOBAL R3 K1        ; R3 := 0xF595ADDE
+ 13 [-]: GETGLOBAL R4 K3        ; R4 := string
+ 14 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["0x4B1F4F58"]
+ 15 [-]: LOADK     R5 K5        ; R5 := "%."
+ 16 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["mDecimals"]
+ 17 [-]: LOADK     R7 K7        ; R7 := "f"
+ 18 [-]: CONCAT    R5 R5 R7     ; R5 := R5 .. R6 .. R7
+ 19 [-]: MOVE      R6 R2        ; R6 := R2
+ 20 [-]: CALL      R4 3 0       ; R4,... := R4(R5,R6)
+ 21 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 22 [-]: MOVE      R2 R3        ; R2 := R3
+ 23 [-]: SELF      R3 R0 K8     ; R4 := R0; R3 := R0["0xE1E5CD07"]
+ 24 [-]: MOVE      R5 R2        ; R5 := R2
+ 25 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 26 [-]: SETTABLE  R0 K9 K10    ; R0["mSliderPressed"] := "0x0"
+ 27 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.10:
@@ -623,8 +620,8 @@ code size: 86
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0xF595ADDE
   2 [-]: MOVE      R3 R1        ; R3 := R1
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 21
-  5 [-]: JMP       21           ; PC := 21
+  4 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 20
+  5 [-]: JMP       20           ; PC := 20
   6 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMaxValue"]
   7 [-]: LT        0 K3 R3      ; if 0 >= R3 then PC := 13
   8 [-]: JMP       13           ; PC := 13
@@ -633,31 +630,31 @@ code size: 86
  11 [-]: JMP       13           ; PC := 13
  12 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mMaxValue"]
  13 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mMinValue"]
- 14 [-]: LT        0 R3 K3      ; if R3 >= 0 then PC := 25
- 15 [-]: JMP       25           ; PC := 25
+ 14 [-]: LT        0 R3 K3      ; if R3 >= 0 then PC := 20
+ 15 [-]: JMP       20           ; PC := 20
  16 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mMinValue"]
- 17 [-]: LT        0 R2 R3      ; if R2 >= R3 then PC := 25
- 18 [-]: JMP       25           ; PC := 25
+ 17 [-]: LT        0 R2 R3      ; if R2 >= R3 then PC := 20
+ 18 [-]: JMP       20           ; PC := 20
  19 [-]: GETTABLE  R1 R0 K4     ; R1 := R0["mMinValue"]
- 20 [-]: JMP       25           ; PC := 25
- 21 [-]: GETGLOBAL R3 K5        ; R3 := 0x9FAED6BC
- 22 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mMinValue"]
- 23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 24 [-]: MOVE      R1 R3        ; R1 := R3
- 25 [-]: GETTABLE  R3 R0 K6     ; R3 := R0["mLabel"]
+ 20 [-]: GETGLOBAL R3 K0        ; R3 := 0xF595ADDE
+ 21 [-]: MOVE      R4 R1        ; R4 := R1
+ 22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 23 [-]: EQ        1 R3 K1      ; if R3 == nil then PC := 28
+ 24 [-]: JMP       28           ; PC := 28
+ 25 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mLabel"]
  26 [-]: EQ        0 R1 R3      ; if R1 ~= R3 then PC := 29
  27 [-]: JMP       29           ; PC := 29
  28 [-]: MOVE      R3 R0        ; R3 := R0
  29 [-]: MOVE      R3 R1        ; R3 := R1
- 30 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0["0x95C778EC"]
+ 30 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0["0x95C778EC"]
  31 [-]: MOVE      R6 R1        ; R6 := R1
  32 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 33 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0["0xDACAC9A9"]
- 34 [-]: MOVE      R6 R1        ; R6 := R1
- 35 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 36 [-]: TEST      R3 0         ; if not R3 then PC := 40
- 37 [-]: JMP       40           ; PC := 40
- 38 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0["0x50024C19"]
+ 33 [-]: TEST      R3 0         ; if not R3 then PC := 40
+ 34 [-]: JMP       40           ; PC := 40
+ 35 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0["0xDACAC9A9"]
+ 36 [-]: MOVE      R6 R1        ; R6 := R1
+ 37 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 38 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0["0x50024C19"]
  39 [-]: CALL      R4 2 1       ; R4(R5)
  40 [-]: RETURN    R0 1         ; return 
 
@@ -665,7 +662,7 @@ code size: 86
 ; Function #1.11:
 ;
 ; Name:            
-; Defined at line: 193
+; Defined at line: 191
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -680,7 +677,7 @@ code size: 86
 ; Function #1.12:
 ;
 ; Name:            
-; Defined at line: 198
+; Defined at line: 196
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -773,7 +770,7 @@ code size: 86
 ; Function #1.13:
 ;
 ; Name:            
-; Defined at line: 218
+; Defined at line: 216
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1010,179 +1007,172 @@ code size: 86
 ; Function #1.14:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 261
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  18
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mApplyThemes"]
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
   3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["0xDDA3917C"]
   4 [-]: GETGLOBAL R3 K2        ; R3 := Lotus_Game
-  5 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["UIStyle_Content"]
+  5 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["UIStyle_FloatingContent"]
   6 [-]: MOVE      R4 R1        ; R4 := R1
   7 [-]: MOVE      R5 R1        ; R5 := R1
   8 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
   9 [-]: GETUPVAL  R3 U0        ; R3 := U0
  10 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["0xDDA3917C"]
  11 [-]: GETGLOBAL R4 K2        ; R4 := Lotus_Game
- 12 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["UIStyle_FloatingContent"]
+ 12 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["UIStyle_FloatingContentHighlight"]
  13 [-]: MOVE      R5 R1        ; R5 := R1
  14 [-]: MOVE      R6 R1        ; R6 := R1
  15 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 16 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 17 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["0xDDA3917C"]
- 18 [-]: GETGLOBAL R5 K2        ; R5 := Lotus_Game
- 19 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["UIStyle_FloatingContentHighlight"]
- 20 [-]: MOVE      R6 R1        ; R6 := R1
- 21 [-]: MOVE      R7 R1        ; R7 := R1
- 22 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 23 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mInnerColor"]
- 24 [-]: TEST      R5 1         ; if R5 then PC := 33
- 25 [-]: JMP       33           ; PC := 33
- 26 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 27 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["0xDDA3917C"]
- 28 [-]: GETGLOBAL R6 K2        ; R6 := Lotus_Game
- 29 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["UIStyle_Background1"]
- 30 [-]: MOVE      R7 R1        ; R7 := R1
- 31 [-]: MOVE      R8 R1        ; R8 := R1
- 32 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 33 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mMovie"]
- 34 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6["0x880196A7"]
- 35 [-]: GETTABLE  R8 R0 K10    ; R8 := R0["mClipName"]
- 36 [-]: LOADK     R9 K11       ; R9 := "Label"
- 37 [-]: LOADK     R10 K12      ; R10 := "_color"
- 38 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 39 [-]: GETTABLE  R11 R11 K13  ; R11 := R11["0xF81722A2"]
- 40 [-]: GETTABLE  R12 R0 K14   ; R12 := R0["mFocused"]
- 41 [-]: MOVE      R13 R4       ; R13 := R4
- 42 [-]: MOVE      R14 R3       ; R14 := R3
- 43 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
- 44 [-]: CALL      R6 0 1       ; R6(R7,...)
- 45 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mMovie"]
- 46 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6["0x880196A7"]
- 47 [-]: GETTABLE  R8 R0 K10    ; R8 := R0["mClipName"]
- 48 [-]: LOADK     R9 K15       ; R9 := "IconLeft"
- 49 [-]: LOADK     R10 K12      ; R10 := "_color"
- 50 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 51 [-]: GETTABLE  R11 R11 K13  ; R11 := R11["0xF81722A2"]
- 52 [-]: GETTABLE  R12 R0 K16   ; R12 := R0["mArrowFocused"]
- 53 [-]: EQ        1 R12 K17    ; if R12 == -1 then PC := 56
- 54 [-]: JMP       56           ; PC := 56
- 55 [-]: MOVE      R12 R0       ; R12 := R0
- 56 [-]: MOVE      R12 R1       ; R12 := R1
- 57 [-]: MOVE      R13 R4       ; R13 := R4
- 58 [-]: MOVE      R14 R3       ; R14 := R3
- 59 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
- 60 [-]: CALL      R6 0 1       ; R6(R7,...)
- 61 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mMovie"]
- 62 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6["0x880196A7"]
- 63 [-]: GETTABLE  R8 R0 K10    ; R8 := R0["mClipName"]
- 64 [-]: LOADK     R9 K18       ; R9 := "IconRight"
- 65 [-]: LOADK     R10 K12      ; R10 := "_color"
- 66 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 67 [-]: GETTABLE  R11 R11 K13  ; R11 := R11["0xF81722A2"]
- 68 [-]: GETTABLE  R12 R0 K16   ; R12 := R0["mArrowFocused"]
- 69 [-]: EQ        1 R12 K19    ; if R12 == 1 then PC := 72
- 70 [-]: JMP       72           ; PC := 72
- 71 [-]: MOVE      R12 R0       ; R12 := R0
- 72 [-]: MOVE      R12 R1       ; R12 := R1
- 73 [-]: MOVE      R13 R4       ; R13 := R4
- 74 [-]: MOVE      R14 R3       ; R14 := R3
- 75 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
- 76 [-]: CALL      R6 0 1       ; R6(R7,...)
- 77 [-]: GETTABLE  R6 R0 K20    ; R6 := R0["mSliderFocused"]
- 78 [-]: TEST      R6 0         ; if not R6 then PC := 83
- 79 [-]: JMP       83           ; PC := 83
- 80 [-]: GETTABLE  R6 R0 K21    ; R6 := R0["mFocusedEdgeAlpha"]
- 81 [-]: TEST      R6 1         ; if R6 then PC := 84
- 82 [-]: JMP       84           ; PC := 84
- 83 [-]: GETTABLE  R6 R0 K22    ; R6 := R0["mEdgeAlpha"]
- 84 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 85 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["0x97B78441"]
- 86 [-]: MOVE      R8 R4        ; R8 := R4
- 87 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 88 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 89 [-]: GETTABLE  R8 R8 K23    ; R8 := R8["0x97B78441"]
- 90 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 91 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["0xF81722A2"]
- 92 [-]: GETTABLE  R10 R0 K20   ; R10 := R0["mSliderFocused"]
- 93 [-]: MOVE      R11 R4       ; R11 := R4
- 94 [-]: MOVE      R12 R3       ; R12 := R3
- 95 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
- 96 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
- 97 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 98 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["0x97B78441"]
- 99 [-]: MOVE      R10 R5       ; R10 := R5
-100 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-101 [-]: GETUPVAL  R10 U1       ; R10 := U1
-102 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["0x97B78441"]
-103 [-]: MOVE      R11 R3       ; R11 := R3
-104 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-105 [-]: GETTABLE  R11 R0 K8    ; R11 := R0["mMovie"]
-106 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x302AAB2F"]
-107 [-]: GETTABLE  R13 R0 K10   ; R13 := R0["mClipName"]
-108 [-]: LOADK     R14 K25      ; R14 := ".Backer"
-109 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-110 [-]: LOADK     R14 K26      ; R14 := "RectEdgeColor"
-111 [-]: GETTABLE  R15 R7 K27   ; R15 := R7["r"]
-112 [-]: GETTABLE  R16 R7 K28   ; R16 := R7["g"]
-113 [-]: GETTABLE  R17 R7 K29   ; R17 := R7["b"]
-114 [-]: DIV       R18 R6 K30   ; R18 := R6 / 100
-115 [-]: CALL      R11 8 1      ; R11(R12,R13,R14,R15,R16,R17,R18)
-116 [-]: GETTABLE  R11 R0 K8    ; R11 := R0["mMovie"]
-117 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x302AAB2F"]
-118 [-]: GETTABLE  R13 R0 K10   ; R13 := R0["mClipName"]
-119 [-]: LOADK     R14 K25      ; R14 := ".Backer"
-120 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-121 [-]: LOADK     R14 K31      ; R14 := "RectInnerColor"
-122 [-]: GETTABLE  R15 R9 K27   ; R15 := R9["r"]
-123 [-]: GETTABLE  R16 R9 K28   ; R16 := R9["g"]
-124 [-]: GETTABLE  R17 R9 K29   ; R17 := R9["b"]
-125 [-]: GETTABLE  R18 R0 K32   ; R18 := R0["mInnerAlpha"]
-126 [-]: DIV       R18 R18 K30  ; R18 := R18 / 100
-127 [-]: CALL      R11 8 1      ; R11(R12,R13,R14,R15,R16,R17,R18)
-128 [-]: GETTABLE  R11 R0 K8    ; R11 := R0["mMovie"]
-129 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x302AAB2F"]
-130 [-]: GETTABLE  R13 R0 K10   ; R13 := R0["mClipName"]
-131 [-]: LOADK     R14 K33      ; R14 := ".Slider"
-132 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-133 [-]: LOADK     R14 K26      ; R14 := "RectEdgeColor"
-134 [-]: GETTABLE  R15 R8 K27   ; R15 := R8["r"]
-135 [-]: GETTABLE  R16 R8 K28   ; R16 := R8["g"]
-136 [-]: GETTABLE  R17 R8 K29   ; R17 := R8["b"]
-137 [-]: LOADK     R18 K19      ; R18 := 1
-138 [-]: CALL      R11 8 1      ; R11(R12,R13,R14,R15,R16,R17,R18)
-139 [-]: GETTABLE  R11 R0 K8    ; R11 := R0["mMovie"]
-140 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x302AAB2F"]
-141 [-]: GETTABLE  R13 R0 K10   ; R13 := R0["mClipName"]
-142 [-]: LOADK     R14 K33      ; R14 := ".Slider"
-143 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-144 [-]: LOADK     R14 K31      ; R14 := "RectInnerColor"
-145 [-]: GETTABLE  R15 R9 K27   ; R15 := R9["r"]
-146 [-]: GETTABLE  R16 R9 K28   ; R16 := R9["g"]
-147 [-]: GETTABLE  R17 R9 K29   ; R17 := R9["b"]
-148 [-]: LOADK     R18 K19      ; R18 := 1
-149 [-]: CALL      R11 8 1      ; R11(R12,R13,R14,R15,R16,R17,R18)
-150 [-]: GETTABLE  R11 R0 K8    ; R11 := R0["mMovie"]
-151 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x302AAB2F"]
-152 [-]: GETTABLE  R13 R0 K10   ; R13 := R0["mClipName"]
-153 [-]: LOADK     R14 K34      ; R14 := ".Fill"
-154 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-155 [-]: LOADK     R14 K31      ; R14 := "RectInnerColor"
-156 [-]: GETTABLE  R15 R10 K27  ; R15 := R10["r"]
-157 [-]: GETTABLE  R16 R10 K28  ; R16 := R10["g"]
-158 [-]: GETTABLE  R17 R10 K29  ; R17 := R10["b"]
-159 [-]: LOADK     R18 K19      ; R18 := 1
-160 [-]: CALL      R11 8 1      ; R11(R12,R13,R14,R15,R16,R17,R18)
-161 [-]: RETURN    R0 1         ; return 
+ 16 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["mInnerColor"]
+ 17 [-]: TEST      R4 1         ; if R4 then PC := 26
+ 18 [-]: JMP       26           ; PC := 26
+ 19 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 20 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["0xDDA3917C"]
+ 21 [-]: GETGLOBAL R5 K2        ; R5 := Lotus_Game
+ 22 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["UIStyle_Background1"]
+ 23 [-]: MOVE      R6 R1        ; R6 := R1
+ 24 [-]: MOVE      R7 R1        ; R7 := R1
+ 25 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+ 26 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mMovie"]
+ 27 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x880196A7"]
+ 28 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+ 29 [-]: LOADK     R8 K10       ; R8 := "Label"
+ 30 [-]: LOADK     R9 K11       ; R9 := "_color"
+ 31 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 32 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["0xF81722A2"]
+ 33 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mFocused"]
+ 34 [-]: MOVE      R12 R3       ; R12 := R3
+ 35 [-]: MOVE      R13 R2       ; R13 := R2
+ 36 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+ 37 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 38 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mMovie"]
+ 39 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x880196A7"]
+ 40 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+ 41 [-]: LOADK     R8 K14       ; R8 := "IconLeft"
+ 42 [-]: LOADK     R9 K11       ; R9 := "_color"
+ 43 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 44 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["0xF81722A2"]
+ 45 [-]: GETTABLE  R11 R0 K15   ; R11 := R0["mArrowFocused"]
+ 46 [-]: EQ        1 R11 K16    ; if R11 == -1 then PC := 49
+ 47 [-]: JMP       49           ; PC := 49
+ 48 [-]: MOVE      R11 R0       ; R11 := R0
+ 49 [-]: MOVE      R11 R1       ; R11 := R1
+ 50 [-]: MOVE      R12 R3       ; R12 := R3
+ 51 [-]: MOVE      R13 R2       ; R13 := R2
+ 52 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+ 53 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 54 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mMovie"]
+ 55 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x880196A7"]
+ 56 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+ 57 [-]: LOADK     R8 K17       ; R8 := "IconRight"
+ 58 [-]: LOADK     R9 K11       ; R9 := "_color"
+ 59 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 60 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["0xF81722A2"]
+ 61 [-]: GETTABLE  R11 R0 K15   ; R11 := R0["mArrowFocused"]
+ 62 [-]: EQ        1 R11 K18    ; if R11 == 1 then PC := 65
+ 63 [-]: JMP       65           ; PC := 65
+ 64 [-]: MOVE      R11 R0       ; R11 := R0
+ 65 [-]: MOVE      R11 R1       ; R11 := R1
+ 66 [-]: MOVE      R12 R3       ; R12 := R3
+ 67 [-]: MOVE      R13 R2       ; R13 := R2
+ 68 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+ 69 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 70 [-]: GETTABLE  R5 R0 K19    ; R5 := R0["mSliderFocused"]
+ 71 [-]: TEST      R5 0         ; if not R5 then PC := 76
+ 72 [-]: JMP       76           ; PC := 76
+ 73 [-]: GETTABLE  R5 R0 K20    ; R5 := R0["mFocusedEdgeAlpha"]
+ 74 [-]: TEST      R5 1         ; if R5 then PC := 77
+ 75 [-]: JMP       77           ; PC := 77
+ 76 [-]: GETTABLE  R5 R0 K21    ; R5 := R0["mEdgeAlpha"]
+ 77 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 78 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["0x97B78441"]
+ 79 [-]: MOVE      R7 R3        ; R7 := R3
+ 80 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 81 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 82 [-]: GETTABLE  R7 R7 K22    ; R7 := R7["0x97B78441"]
+ 83 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 84 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["0xF81722A2"]
+ 85 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["mSliderFocused"]
+ 86 [-]: MOVE      R10 R3       ; R10 := R3
+ 87 [-]: MOVE      R11 R2       ; R11 := R2
+ 88 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+ 89 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 90 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 91 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["0x97B78441"]
+ 92 [-]: MOVE      R9 R4        ; R9 := R4
+ 93 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 94 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 95 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["0x97B78441"]
+ 96 [-]: MOVE      R10 R2       ; R10 := R2
+ 97 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 98 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mMovie"]
+ 99 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10["0x302AAB2F"]
+100 [-]: GETTABLE  R12 R0 K9    ; R12 := R0["mClipName"]
+101 [-]: LOADK     R13 K24      ; R13 := ".Backer"
+102 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+103 [-]: LOADK     R13 K25      ; R13 := "RectEdgeColor"
+104 [-]: GETTABLE  R14 R6 K26   ; R14 := R6["r"]
+105 [-]: GETTABLE  R15 R6 K27   ; R15 := R6["g"]
+106 [-]: GETTABLE  R16 R6 K28   ; R16 := R6["b"]
+107 [-]: DIV       R17 R5 K29   ; R17 := R5 / 100
+108 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
+109 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mMovie"]
+110 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10["0x302AAB2F"]
+111 [-]: GETTABLE  R12 R0 K9    ; R12 := R0["mClipName"]
+112 [-]: LOADK     R13 K24      ; R13 := ".Backer"
+113 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+114 [-]: LOADK     R13 K30      ; R13 := "RectInnerColor"
+115 [-]: GETTABLE  R14 R8 K26   ; R14 := R8["r"]
+116 [-]: GETTABLE  R15 R8 K27   ; R15 := R8["g"]
+117 [-]: GETTABLE  R16 R8 K28   ; R16 := R8["b"]
+118 [-]: GETTABLE  R17 R0 K31   ; R17 := R0["mInnerAlpha"]
+119 [-]: DIV       R17 R17 K29  ; R17 := R17 / 100
+120 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
+121 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mMovie"]
+122 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10["0x302AAB2F"]
+123 [-]: GETTABLE  R12 R0 K9    ; R12 := R0["mClipName"]
+124 [-]: LOADK     R13 K32      ; R13 := ".Slider"
+125 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+126 [-]: LOADK     R13 K25      ; R13 := "RectEdgeColor"
+127 [-]: GETTABLE  R14 R7 K26   ; R14 := R7["r"]
+128 [-]: GETTABLE  R15 R7 K27   ; R15 := R7["g"]
+129 [-]: GETTABLE  R16 R7 K28   ; R16 := R7["b"]
+130 [-]: LOADK     R17 K18      ; R17 := 1
+131 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
+132 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mMovie"]
+133 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10["0x302AAB2F"]
+134 [-]: GETTABLE  R12 R0 K9    ; R12 := R0["mClipName"]
+135 [-]: LOADK     R13 K32      ; R13 := ".Slider"
+136 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+137 [-]: LOADK     R13 K30      ; R13 := "RectInnerColor"
+138 [-]: GETTABLE  R14 R8 K26   ; R14 := R8["r"]
+139 [-]: GETTABLE  R15 R8 K27   ; R15 := R8["g"]
+140 [-]: GETTABLE  R16 R8 K28   ; R16 := R8["b"]
+141 [-]: LOADK     R17 K18      ; R17 := 1
+142 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
+143 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["mMovie"]
+144 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10["0x302AAB2F"]
+145 [-]: GETTABLE  R12 R0 K9    ; R12 := R0["mClipName"]
+146 [-]: LOADK     R13 K33      ; R13 := ".Fill"
+147 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+148 [-]: LOADK     R13 K30      ; R13 := "RectInnerColor"
+149 [-]: GETTABLE  R14 R9 K26   ; R14 := R9["r"]
+150 [-]: GETTABLE  R15 R9 K27   ; R15 := R9["g"]
+151 [-]: GETTABLE  R16 R9 K28   ; R16 := R9["b"]
+152 [-]: LOADK     R17 K18      ; R17 := 1
+153 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
+154 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.15:
 ;
 ; Name:            
-; Defined at line: 288
+; Defined at line: 285
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1281,7 +1271,7 @@ code size: 86
 ; Function #1.16:
 ;
 ; Name:            
-; Defined at line: 317
+; Defined at line: 314
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

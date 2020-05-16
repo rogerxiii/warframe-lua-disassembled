@@ -1,5 +1,5 @@
 code size: 9
-code size: 219
+code size: 221
 code size: 6
 code size: 4
 code size: 13
@@ -52,8 +52,8 @@ code size: 360
 code size: 12
 code size: 16
 code size: 19
+code size: 35
 code size: 19
-code size: 7
 code size: 9
 code size: 71
 code size: 15
@@ -69,7 +69,7 @@ code size: 77
 code size: 147
 code size: 45
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\EE\Interface\Components\List.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\EE\Interface\Components\List.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -103,7 +103,7 @@ code size: 45
   3 [-]: LOADK     R6 K1        ; R6 := "_alpha"
   4 [-]: LOADK     R7 K2        ; R7 := 0
   5 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
-  6 [-]: NEWTABLE  R3 1 38      ; R3 := {}
+  6 [-]: NEWTABLE  R3 1 39      ; R3 := {}
   7 [-]: SETTABLE  R3 K3 R0     ; R3["mMovie"] := R0
   8 [-]: NEWTABLE  R4 0 0       ; R4 := {}
   9 [-]: SETTABLE  R3 K4 R4     ; R3["mElements"] := R4
@@ -293,30 +293,32 @@ code size: 45
 193 [-]: CLOSURE   R5 49        ; R5 := closure(Function #1.50)
 194 [-]: SETTABLE  R3 K126 R5   ; R3["RunForAllElements"] := R5
 195 [-]: CLOSURE   R5 50        ; R5 := closure(Function #1.51)
-196 [-]: SETTABLE  R3 K127 R5   ; R3["RunForAllVisibleElements"] := R5
+196 [-]: SETTABLE  R3 K127 R5   ; R3["_RunForAllVisibleElements"] := R5
 197 [-]: CLOSURE   R5 51        ; R5 := closure(Function #1.52)
-198 [-]: SETTABLE  R3 K128 R5   ; R3["CalculateScrollBarHeight"] := R5
+198 [-]: SETTABLE  R3 K128 R5   ; R3["RunForAllVisibleElements"] := R5
 199 [-]: CLOSURE   R5 52        ; R5 := closure(Function #1.53)
-200 [-]: SETTABLE  R3 K129 R5   ; R3["ScrollValueChangedCallback"] := R5
+200 [-]: SETTABLE  R3 K129 R5   ; R3["CalculateScrollBarHeight"] := R5
 201 [-]: CLOSURE   R5 53        ; R5 := closure(Function #1.54)
-202 [-]: SETTABLE  R3 K130 R5   ; R3["CanUseScrollBar"] := R5
+202 [-]: SETTABLE  R3 K130 R5   ; R3["ScrollValueChangedCallback"] := R5
 203 [-]: CLOSURE   R5 54        ; R5 := closure(Function #1.55)
-204 [-]: SETTABLE  R3 K131 R5   ; R3["AttachScrollBar"] := R5
+204 [-]: SETTABLE  R3 K131 R5   ; R3["CanUseScrollBar"] := R5
 205 [-]: CLOSURE   R5 55        ; R5 := closure(Function #1.56)
-206 [-]: SETTABLE  R3 K132 R5   ; R3["RedrawScrollBar"] := R5
+206 [-]: SETTABLE  R3 K132 R5   ; R3["AttachScrollBar"] := R5
 207 [-]: CLOSURE   R5 56        ; R5 := closure(Function #1.57)
-208 [-]: SETTABLE  R3 K133 R5   ; R3["EnableSmoothScroll"] := R5
+208 [-]: SETTABLE  R3 K133 R5   ; R3["RedrawScrollBar"] := R5
 209 [-]: CLOSURE   R5 57        ; R5 := closure(Function #1.58)
-210 [-]: SETTABLE  R3 K134 R5   ; R3["StopDragging"] := R5
+210 [-]: SETTABLE  R3 K134 R5   ; R3["EnableSmoothScroll"] := R5
 211 [-]: CLOSURE   R5 58        ; R5 := closure(Function #1.59)
-212 [-]: SETTABLE  R3 K135 R5   ; R3["EnableDrag"] := R5
+212 [-]: SETTABLE  R3 K135 R5   ; R3["StopDragging"] := R5
 213 [-]: CLOSURE   R5 59        ; R5 := closure(Function #1.60)
-214 [-]: SETTABLE  R3 K136 R5   ; R3["CreateDragClip"] := R5
+214 [-]: SETTABLE  R3 K136 R5   ; R3["EnableDrag"] := R5
 215 [-]: CLOSURE   R5 60        ; R5 := closure(Function #1.61)
-216 [-]: SETTABLE  R3 K137 R5   ; R3["Update"] := R5
-217 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
-218 [-]: RETURN    R3 2         ; return R3
-219 [-]: RETURN    R0 1         ; return 
+216 [-]: SETTABLE  R3 K137 R5   ; R3["CreateDragClip"] := R5
+217 [-]: CLOSURE   R5 61        ; R5 := closure(Function #1.62)
+218 [-]: SETTABLE  R3 K138 R5   ; R3["Update"] := R5
+219 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
+220 [-]: RETURN    R3 2         ; return R3
+221 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
@@ -2498,53 +2500,81 @@ code size: 45
 ; Name:            
 ; Defined at line: 853
 ; #Upvalues:       0
-; #Parameters:     2
+; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  12
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
-  2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mScroll"]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 10
-  5 [-]: JMP       10           ; PC := 10
-  6 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0["0x9D2060CB"]
-  7 [-]: MOVE      R4 R1        ; R4 := R1
-  8 [-]: CALL      R2 3 1       ; R2(R3,R4)
-  9 [-]: JMP       19           ; PC := 19
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 1         ; if R2 then PC := 19
- 14 [-]: JMP       19           ; PC := 19
- 15 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0["0x9D2060CB"]
- 16 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1.51.1)
- 17 [-]: MOVE      R0 R1        ; R0 := R1
- 18 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 19 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.51.1:
-;
-; Name:            
-; Defined at line: 858
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mClipName"]
-  2 [-]: EQ        1 R1 K1      ; if R1 == nil then PC := 7
-  3 [-]: JMP       7            ; PC := 7
-  4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: MOVE      R2 R0        ; R2 := R0
-  6 [-]: CALL      R1 2 1       ; R1(R2)
-  7 [-]: RETURN    R0 1         ; return 
+  1 [-]: LOADK     R3 K0        ; R3 := 1
+  2 [-]: LOADNIL   R4 R4        ; R4 := nil
+  3 [-]: TEST      R2 0         ; if not R2 then PC := 17
+  4 [-]: JMP       17           ; PC := 17
+  5 [-]: SELF      R5 R0 K1     ; R6 := R0; R5 := R0["0xAAA5CD00"]
+  6 [-]: CALL      R5 2 3       ; R5,R6 := R5(R6)
+  7 [-]: MOVE      R4 R6        ; R4 := R6
+  8 [-]: MOVE      R3 R5        ; R3 := R5
+  9 [-]: GETGLOBAL R5 K2        ; R5 := math
+ 10 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["0x65F9712A"]
+ 11 [-]: MOVE      R6 R4        ; R6 := R4
+ 12 [-]: GETTABLE  R7 R0 K4     ; R7 := R0["mElements"]
+ 13 [-]: LEN       R7 R7        ; R7 := # R7
+ 14 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 15 [-]: MOVE      R4 R5        ; R4 := R5
+ 16 [-]: JMP       19           ; PC := 19
+ 17 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["mElements"]
+ 18 [-]: LEN       R4 R5        ; R4 := # R5
+ 19 [-]: MOVE      R5 R3        ; R5 := R3
+ 20 [-]: MOVE      R6 R4        ; R6 := R4
+ 21 [-]: LOADK     R7 K0        ; R7 := 1
+ 22 [-]: FORPREP   R5 34        ; R5 -= R7; PC := 34
+ 23 [-]: GETTABLE  R9 R0 K4     ; R9 := R0["mElements"]
+ 24 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+ 25 [-]: GETTABLE  R10 R9 K5    ; R10 := R9["mClipName"]
+ 26 [-]: EQ        1 R10 K6     ; if R10 == nil then PC := 34
+ 27 [-]: JMP       34           ; PC := 34
+ 28 [-]: GETGLOBAL R10 K7       ; R10 := 0x1BF588C6
+ 29 [-]: LOADK     R11 K8       ; R11 := 0
+ 30 [-]: CALL      R10 2 1      ; R10(R11)
+ 31 [-]: MOVE      R10 R1       ; R10 := R1
+ 32 [-]: MOVE      R11 R9       ; R11 := R9
+ 33 [-]: CALL      R10 2 1      ; R10(R11)
+ 34 [-]: FORLOOP   R5 23        ; R5 += R7; if R5 <= R6 then begin PC := 23; R8 := R5 end
+ 35 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.52:
 ;
 ; Name:            
-; Defined at line: 867
+; Defined at line: 872
+; #Upvalues:       0
+; #Parameters:     3
+; Is_vararg:       0
+; Max Stack Size:  7
+
+  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+  2 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mScroll"]
+  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  4 [-]: TEST      R3 0         ; if not R3 then PC := 10
+  5 [-]: JMP       10           ; PC := 10
+  6 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x9D2060CB"]
+  7 [-]: MOVE      R5 R1        ; R5 := R1
+  8 [-]: CALL      R3 3 1       ; R3(R4,R5)
+  9 [-]: JMP       19           ; PC := 19
+ 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 11 [-]: MOVE      R4 R1        ; R4 := R1
+ 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 13 [-]: TEST      R3 1         ; if R3 then PC := 19
+ 14 [-]: JMP       19           ; PC := 19
+ 15 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0["0x7B6651C6"]
+ 16 [-]: MOVE      R5 R1        ; R5 := R1
+ 17 [-]: MOVE      R6 R2        ; R6 := R2
+ 18 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 19 [-]: RETURN    R0 1         ; return 
+
+
+; Function #1.53:
+;
+; Name:            
+; Defined at line: 881
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2561,10 +2591,10 @@ code size: 45
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.53:
+; Function #1.54:
 ;
 ; Name:            
-; Defined at line: 875
+; Defined at line: 889
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2600,7 +2630,7 @@ code size: 45
  28 [-]: MOVE      R9 R1        ; R9 := R1
  29 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  30 [-]: SELF      R5 R0 K13    ; R6 := R0; R5 := R0["0x51396186"]
- 31 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.53.1)
+ 31 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.54.1)
  32 [-]: MOVE      R0 R0        ; R0 := R0
  33 [-]: CALL      R5 3 1       ; R5(R6,R7)
  34 [-]: JMP       71           ; PC := 71
@@ -2637,16 +2667,16 @@ code size: 45
  65 [-]: MOVE      R11 R1       ; R11 := R1
  66 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  67 [-]: SELF      R7 R0 K13    ; R8 := R0; R7 := R0["0x51396186"]
- 68 [-]: CLOSURE   R9 1         ; R9 := closure(Function #1.53.2)
+ 68 [-]: CLOSURE   R9 1         ; R9 := closure(Function #1.54.2)
  69 [-]: MOVE      R0 R0        ; R0 := R0
  70 [-]: CALL      R7 3 1       ; R7(R8,R9)
  71 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.53.1:
+; Function #1.54.1:
 ;
 ; Name:            
-; Defined at line: 885
+; Defined at line: 899
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2669,10 +2699,10 @@ code size: 45
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.53.2:
+; Function #1.54.2:
 ;
 ; Name:            
-; Defined at line: 900
+; Defined at line: 914
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2695,10 +2725,10 @@ code size: 45
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.54:
+; Function #1.55:
 ;
 ; Name:            
-; Defined at line: 909
+; Defined at line: 923
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2709,10 +2739,10 @@ code size: 45
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.55:
+; Function #1.56:
 ;
 ; Name:            
-; Defined at line: 914
+; Defined at line: 928
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2749,7 +2779,7 @@ code size: 45
  29 [-]: MOVE      R9 R0        ; R9 := R0
  30 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  31 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mScrollBar"]
- 32 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1.55.1)
+ 32 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1.56.1)
  33 [-]: MOVE      R0 R0        ; R0 := R0
  34 [-]: SETTABLE  R5 K14 R6    ; R5["mScrollValueChangedCallback"] := R6
  35 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mScrollBar"]
@@ -2761,10 +2791,10 @@ code size: 45
  41 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.55.1:
+; Function #1.56.1:
 ;
 ; Name:            
-; Defined at line: 925
+; Defined at line: 939
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2778,10 +2808,10 @@ code size: 45
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.56:
+; Function #1.57:
 ;
 ; Name:            
-; Defined at line: 934
+; Defined at line: 948
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2856,10 +2886,10 @@ code size: 45
  67 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.57:
+; Function #1.58:
 ;
 ; Name:            
-; Defined at line: 953
+; Defined at line: 967
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2884,10 +2914,10 @@ code size: 45
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.58:
+; Function #1.59:
 ;
 ; Name:            
-; Defined at line: 963
+; Defined at line: 977
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2918,10 +2948,10 @@ code size: 45
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.59:
+; Function #1.60:
 ;
 ; Name:            
-; Defined at line: 975
+; Defined at line: 989
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2970,10 +3000,10 @@ code size: 45
  41 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.60:
+; Function #1.61:
 ;
 ; Name:            
-; Defined at line: 997
+; Defined at line: 1011
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3058,10 +3088,10 @@ code size: 45
  77 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.61:
+; Function #1.62:
 ;
 ; Name:            
-; Defined at line: 1022
+; Defined at line: 1036
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3165,7 +3195,7 @@ code size: 45
  96 [-]: LOADNIL   R9 R9        ; R9 := nil
  97 [-]: LOADK     R10 K11      ; R10 := 0
  98 [-]: SELF      R11 R0 K32   ; R12 := R0; R11 := R0["0x51396186"]
- 99 [-]: CLOSURE   R13 0        ; R13 := closure(Function #1.61.1)
+ 99 [-]: CLOSURE   R13 0        ; R13 := closure(Function #1.62.1)
 100 [-]: MOVE      R0 R0        ; R0 := R0
 101 [-]: MOVE      R0 R8        ; R0 := R8
 102 [-]: MOVE      R0 R9        ; R0 := R9
@@ -3216,10 +3246,10 @@ code size: 45
 147 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.61.1:
+; Function #1.62.1:
 ;
 ; Name:            
-; Defined at line: 1057
+; Defined at line: 1071
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0

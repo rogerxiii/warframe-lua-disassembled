@@ -12,7 +12,7 @@ code size: 176
 code size: 101
 code size: 4
 code size: 24
-code size: 324
+code size: 338
 code size: 104
 code size: 75
 code size: 52
@@ -20,7 +20,7 @@ code size: 120
 code size: 611
 code size: 19
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\PlayerPanelRedux.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\PlayerPanelRedux.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -840,312 +840,326 @@ code size: 19
  22 [-]: JMP       24           ; PC := 24
  23 [-]: RETURN    R0 1         ; return 
  24 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mClipName"]
- 25 [-]: GETTABLE  R4 R1 K7     ; R4 := R1["isDebuff"]
- 26 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["Change"]
- 27 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["IsDebuff"]
- 28 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 48
- 29 [-]: JMP       48           ; PC := 48
- 30 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 31 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["mMovie"]
- 32 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0x880196A7"]
- 33 [-]: MOVE      R6 R3        ; R6 := R3
- 34 [-]: LOADK     R7 K12       ; R7 := "Icon"
- 35 [-]: LOADK     R8 K13       ; R8 := "_color"
- 36 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 37 [-]: GETTABLE  R9 R9 K14    ; R9 := R9["0xF81722A2"]
- 38 [-]: GETTABLE  R10 R1 K7    ; R10 := R1["isDebuff"]
- 39 [-]: GETGLOBAL R11 K15      ; R11 := _G
- 40 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["UIColor_Health"]
- 41 [-]: GETGLOBAL R12 K15      ; R12 := _G
- 42 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["UIColor_Shield"]
- 43 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
- 44 [-]: CALL      R4 0 1       ; R4(R5,...)
- 45 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["Change"]
- 46 [-]: GETTABLE  R5 R1 K7     ; R5 := R1["isDebuff"]
- 47 [-]: SETTABLE  R4 K9 R5     ; R4["IsDebuff"] := R5
- 48 [-]: GETTABLE  R4 R1 K18    ; R4 := R1["abilityType"]
- 49 [-]: GETTABLE  R5 R0 K8     ; R5 := R0["Change"]
- 50 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["AbilityType"]
- 51 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 86
- 52 [-]: JMP       86           ; PC := 86
- 53 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["Change"]
- 54 [-]: GETTABLE  R5 R1 K18    ; R5 := R1["abilityType"]
- 55 [-]: SETTABLE  R4 K19 R5    ; R4["AbilityType"] := R5
- 56 [-]: GETGLOBAL R4 K20       ; R4 := 0x7C282057
- 57 [-]: GETTABLE  R5 R1 K18    ; R5 := R1["abilityType"]
- 58 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 59 [-]: GETGLOBAL R5 K4        ; R5 := 0x400E7765
- 60 [-]: MOVE      R6 R4        ; R6 := R4
- 61 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 62 [-]: TEST      R5 1         ; if R5 then PC := 86
- 63 [-]: JMP       86           ; PC := 86
- 64 [-]: SELF      R5 R4 K21    ; R6 := R4; R5 := R4["0x8B598ED4"]
- 65 [-]: GETGLOBAL R7 K22       ; R7 := gItemType
- 66 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 67 [-]: TEST      R5 0         ; if not R5 then PC := 80
- 68 [-]: JMP       80           ; PC := 80
- 69 [-]: SELF      R5 R4 K23    ; R6 := R4; R5 := R4["0xF1A9732E"]
- 70 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 71 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 72 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["mMovie"]
- 73 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6["0x26581636"]
- 74 [-]: MOVE      R8 R3        ; R8 := R3
- 75 [-]: LOADK     R9 K25       ; R9 := ".Icon"
- 76 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 77 [-]: MOVE      R9 R5        ; R9 := R5
- 78 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 79 [-]: JMP       86           ; PC := 86
- 80 [-]: GETGLOBAL R6 K26       ; R6 := 0xBE684813
- 81 [-]: LOADK     R7 K27       ; R7 := "PlayerPanelRedux abilityRes is not an item and has no icon texture! type: "
- 82 [-]: SELF      R8 R4 K28    ; R9 := R4; R8 := R4["0x1B252E3C"]
- 83 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 84 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 85 [-]: CALL      R6 2 1       ; R6(R7)
- 86 [-]: GETTABLE  R6 R2 K29    ; R6 := R2["buffData"]
- 87 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["Change"]
- 88 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["BuffDesc"]
- 89 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 101
- 90 [-]: JMP       101          ; PC := 101
- 91 [-]: GETTABLE  R7 R2 K31    ; R7 := R2["buffDataExtra"]
- 92 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["Change"]
- 93 [-]: GETTABLE  R8 R8 K32    ; R8 := R8["BuffDescExtra"]
- 94 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 101
- 95 [-]: JMP       101          ; PC := 101
- 96 [-]: GETTABLE  R7 R1 K33    ; R7 := R1["mBuffType"]
- 97 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["Change"]
- 98 [-]: GETTABLE  R8 R8 K34    ; R8 := R8["BuffType"]
- 99 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 324
-100 [-]: JMP       324          ; PC := 324
-101 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["Change"]
-102 [-]: SETTABLE  R7 K30 R6    ; R7["BuffDesc"] := R6
-103 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["Change"]
-104 [-]: GETTABLE  R8 R2 K31    ; R8 := R2["buffDataExtra"]
-105 [-]: SETTABLE  R7 K32 R8    ; R7["BuffDescExtra"] := R8
-106 [-]: GETTABLE  R7 R0 K8     ; R7 := R0["Change"]
-107 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-108 [-]: SETTABLE  R7 K34 R8    ; R7["BuffType"] := R8
-109 [-]: LOADNIL   R7 R7        ; R7 := nil
-110 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-111 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-112 [-]: GETTABLE  R9 R9 K36    ; R9 := R9["BT_PERCENT"]
-113 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 123
-114 [-]: JMP       123          ; PC := 123
-115 [-]: GETUPVAL  R8 U1        ; R8 := U1
-116 [-]: GETTABLE  R8 R8 K37    ; R8 := R8["0xB57E56DF"]
-117 [-]: MOVE      R9 R6        ; R9 := R6
-118 [-]: LOADK     R10 K38      ; R10 := 2
-119 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-120 [-]: LOADK     R9 K39       ; R9 := "%"
-121 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
-122 [-]: JMP       253          ; PC := 253
-123 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-124 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-125 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["BT_STACK"]
-126 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 132
-127 [-]: JMP       132          ; PC := 132
-128 [-]: LOADK     R8 K41       ; R8 := "x"
-129 [-]: MOVE      R9 R6        ; R9 := R6
-130 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
-131 [-]: JMP       253          ; PC := 253
-132 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-133 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-134 [-]: GETTABLE  R9 R9 K42    ; R9 := R9["BT_STATIC"]
-135 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 139
-136 [-]: JMP       139          ; PC := 139
-137 [-]: LOADK     R6 K43       ; R6 := ""
-138 [-]: JMP       253          ; PC := 253
-139 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-140 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-141 [-]: GETTABLE  R9 R9 K44    ; R9 := R9["BT_AMOUNT"]
-142 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 150
-143 [-]: JMP       150          ; PC := 150
-144 [-]: GETUPVAL  R8 U1        ; R8 := U1
-145 [-]: GETTABLE  R8 R8 K45    ; R8 := R8["0x2822759F"]
-146 [-]: MOVE      R9 R6        ; R9 := R6
-147 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-148 [-]: MOVE      R6 R8        ; R6 := R8
-149 [-]: JMP       253          ; PC := 253
-150 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-151 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-152 [-]: GETTABLE  R9 R9 K46    ; R9 := R9["BT_FLOAT"]
-153 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 163
-154 [-]: JMP       163          ; PC := 163
-155 [-]: GETUPVAL  R8 U1        ; R8 := U1
-156 [-]: GETTABLE  R8 R8 K47    ; R8 := R8["0x7E197415"]
-157 [-]: MOVE      R9 R6        ; R9 := R6
-158 [-]: LOADK     R10 K48      ; R10 := 1
-159 [-]: MOVE      R11 R0       ; R11 := R0
-160 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
-161 [-]: MOVE      R6 R8        ; R6 := R8
-162 [-]: JMP       253          ; PC := 253
-163 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-164 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-165 [-]: GETTABLE  R9 R9 K49    ; R9 := R9["BT_AMOUNT_STACK"]
-166 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 176
-167 [-]: JMP       176          ; PC := 176
-168 [-]: LOADK     R8 K41       ; R8 := "x"
-169 [-]: MOVE      R9 R6        ; R9 := R6
-170 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
-171 [-]: GETGLOBAL R8 K50       ; R8 := 0x9FAED6BC
-172 [-]: GETTABLE  R9 R0 K51    ; R9 := R0["mBuffDataExtra"]
-173 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-174 [-]: MOVE      R7 R8        ; R7 := R8
-175 [-]: JMP       253          ; PC := 253
-176 [-]: GETTABLE  R8 R0 K33    ; R8 := R0["mBuffType"]
-177 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-178 [-]: GETTABLE  R9 R9 K52    ; R9 := R9["BT_INT_FLOAT"]
-179 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 192
-180 [-]: JMP       192          ; PC := 192
-181 [-]: GETUPVAL  R8 U1        ; R8 := U1
-182 [-]: GETTABLE  R8 R8 K47    ; R8 := R8["0x7E197415"]
+ 25 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 26 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["mMovie"]
+ 27 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x1C19D966"]
+ 28 [-]: MOVE      R6 R3        ; R6 := R3
+ 29 [-]: LOADK     R7 K9        ; R7 := "_alpha"
+ 30 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 31 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["0xF81722A2"]
+ 32 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 33 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["mCached"]
+ 34 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["InPreDeath"]
+ 35 [-]: LOADK     R10 K13      ; R10 := 0
+ 36 [-]: LOADK     R11 K14      ; R11 := 100
+ 37 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+ 38 [-]: CALL      R4 0 1       ; R4(R5,...)
+ 39 [-]: GETTABLE  R4 R1 K15    ; R4 := R1["isDebuff"]
+ 40 [-]: GETTABLE  R5 R0 K16    ; R5 := R0["Change"]
+ 41 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["IsDebuff"]
+ 42 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 62
+ 43 [-]: JMP       62           ; PC := 62
+ 44 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 45 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["mMovie"]
+ 46 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4["0x880196A7"]
+ 47 [-]: MOVE      R6 R3        ; R6 := R3
+ 48 [-]: LOADK     R7 K19       ; R7 := "Icon"
+ 49 [-]: LOADK     R8 K20       ; R8 := "_color"
+ 50 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 51 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["0xF81722A2"]
+ 52 [-]: GETTABLE  R10 R1 K15   ; R10 := R1["isDebuff"]
+ 53 [-]: GETGLOBAL R11 K21      ; R11 := _G
+ 54 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["UIColor_Health"]
+ 55 [-]: GETGLOBAL R12 K21      ; R12 := _G
+ 56 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["UIColor_Shield"]
+ 57 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+ 58 [-]: CALL      R4 0 1       ; R4(R5,...)
+ 59 [-]: GETTABLE  R4 R0 K16    ; R4 := R0["Change"]
+ 60 [-]: GETTABLE  R5 R1 K15    ; R5 := R1["isDebuff"]
+ 61 [-]: SETTABLE  R4 K17 R5    ; R4["IsDebuff"] := R5
+ 62 [-]: GETTABLE  R4 R1 K24    ; R4 := R1["abilityType"]
+ 63 [-]: GETTABLE  R5 R0 K16    ; R5 := R0["Change"]
+ 64 [-]: GETTABLE  R5 R5 K25    ; R5 := R5["AbilityType"]
+ 65 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 100
+ 66 [-]: JMP       100          ; PC := 100
+ 67 [-]: GETTABLE  R4 R0 K16    ; R4 := R0["Change"]
+ 68 [-]: GETTABLE  R5 R1 K24    ; R5 := R1["abilityType"]
+ 69 [-]: SETTABLE  R4 K25 R5    ; R4["AbilityType"] := R5
+ 70 [-]: GETGLOBAL R4 K26       ; R4 := 0x7C282057
+ 71 [-]: GETTABLE  R5 R1 K24    ; R5 := R1["abilityType"]
+ 72 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 73 [-]: GETGLOBAL R5 K4        ; R5 := 0x400E7765
+ 74 [-]: MOVE      R6 R4        ; R6 := R4
+ 75 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 76 [-]: TEST      R5 1         ; if R5 then PC := 100
+ 77 [-]: JMP       100          ; PC := 100
+ 78 [-]: SELF      R5 R4 K27    ; R6 := R4; R5 := R4["0x8B598ED4"]
+ 79 [-]: GETGLOBAL R7 K28       ; R7 := gItemType
+ 80 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 81 [-]: TEST      R5 0         ; if not R5 then PC := 94
+ 82 [-]: JMP       94           ; PC := 94
+ 83 [-]: SELF      R5 R4 K29    ; R6 := R4; R5 := R4["0xF1A9732E"]
+ 84 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 85 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 86 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["mMovie"]
+ 87 [-]: SELF      R6 R6 K30    ; R7 := R6; R6 := R6["0x26581636"]
+ 88 [-]: MOVE      R8 R3        ; R8 := R3
+ 89 [-]: LOADK     R9 K31       ; R9 := ".Icon"
+ 90 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+ 91 [-]: MOVE      R9 R5        ; R9 := R5
+ 92 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 93 [-]: JMP       100          ; PC := 100
+ 94 [-]: GETGLOBAL R6 K32       ; R6 := 0xBE684813
+ 95 [-]: LOADK     R7 K33       ; R7 := "PlayerPanelRedux abilityRes is not an item and has no icon texture! type: "
+ 96 [-]: SELF      R8 R4 K34    ; R9 := R4; R8 := R4["0x1B252E3C"]
+ 97 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 98 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+ 99 [-]: CALL      R6 2 1       ; R6(R7)
+100 [-]: GETTABLE  R6 R2 K35    ; R6 := R2["buffData"]
+101 [-]: GETTABLE  R7 R0 K16    ; R7 := R0["Change"]
+102 [-]: GETTABLE  R7 R7 K36    ; R7 := R7["BuffDesc"]
+103 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 115
+104 [-]: JMP       115          ; PC := 115
+105 [-]: GETTABLE  R7 R2 K37    ; R7 := R2["buffDataExtra"]
+106 [-]: GETTABLE  R8 R0 K16    ; R8 := R0["Change"]
+107 [-]: GETTABLE  R8 R8 K38    ; R8 := R8["BuffDescExtra"]
+108 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 115
+109 [-]: JMP       115          ; PC := 115
+110 [-]: GETTABLE  R7 R1 K39    ; R7 := R1["mBuffType"]
+111 [-]: GETTABLE  R8 R0 K16    ; R8 := R0["Change"]
+112 [-]: GETTABLE  R8 R8 K40    ; R8 := R8["BuffType"]
+113 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 338
+114 [-]: JMP       338          ; PC := 338
+115 [-]: GETTABLE  R7 R0 K16    ; R7 := R0["Change"]
+116 [-]: SETTABLE  R7 K36 R6    ; R7["BuffDesc"] := R6
+117 [-]: GETTABLE  R7 R0 K16    ; R7 := R0["Change"]
+118 [-]: GETTABLE  R8 R2 K37    ; R8 := R2["buffDataExtra"]
+119 [-]: SETTABLE  R7 K38 R8    ; R7["BuffDescExtra"] := R8
+120 [-]: GETTABLE  R7 R0 K16    ; R7 := R0["Change"]
+121 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+122 [-]: SETTABLE  R7 K40 R8    ; R7["BuffType"] := R8
+123 [-]: LOADNIL   R7 R7        ; R7 := nil
+124 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+125 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+126 [-]: GETTABLE  R9 R9 K42    ; R9 := R9["BT_PERCENT"]
+127 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 137
+128 [-]: JMP       137          ; PC := 137
+129 [-]: GETUPVAL  R8 U1        ; R8 := U1
+130 [-]: GETTABLE  R8 R8 K43    ; R8 := R8["0xB57E56DF"]
+131 [-]: MOVE      R9 R6        ; R9 := R6
+132 [-]: LOADK     R10 K44      ; R10 := 2
+133 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+134 [-]: LOADK     R9 K45       ; R9 := "%"
+135 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
+136 [-]: JMP       267          ; PC := 267
+137 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+138 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+139 [-]: GETTABLE  R9 R9 K46    ; R9 := R9["BT_STACK"]
+140 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 146
+141 [-]: JMP       146          ; PC := 146
+142 [-]: LOADK     R8 K47       ; R8 := "x"
+143 [-]: MOVE      R9 R6        ; R9 := R6
+144 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
+145 [-]: JMP       267          ; PC := 267
+146 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+147 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+148 [-]: GETTABLE  R9 R9 K48    ; R9 := R9["BT_STATIC"]
+149 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 153
+150 [-]: JMP       153          ; PC := 153
+151 [-]: LOADK     R6 K49       ; R6 := ""
+152 [-]: JMP       267          ; PC := 267
+153 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+154 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+155 [-]: GETTABLE  R9 R9 K50    ; R9 := R9["BT_AMOUNT"]
+156 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 164
+157 [-]: JMP       164          ; PC := 164
+158 [-]: GETUPVAL  R8 U1        ; R8 := U1
+159 [-]: GETTABLE  R8 R8 K51    ; R8 := R8["0x2822759F"]
+160 [-]: MOVE      R9 R6        ; R9 := R6
+161 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+162 [-]: MOVE      R6 R8        ; R6 := R8
+163 [-]: JMP       267          ; PC := 267
+164 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+165 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+166 [-]: GETTABLE  R9 R9 K52    ; R9 := R9["BT_FLOAT"]
+167 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 177
+168 [-]: JMP       177          ; PC := 177
+169 [-]: GETUPVAL  R8 U1        ; R8 := U1
+170 [-]: GETTABLE  R8 R8 K53    ; R8 := R8["0x7E197415"]
+171 [-]: MOVE      R9 R6        ; R9 := R6
+172 [-]: LOADK     R10 K54      ; R10 := 1
+173 [-]: MOVE      R11 R0       ; R11 := R0
+174 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
+175 [-]: MOVE      R6 R8        ; R6 := R8
+176 [-]: JMP       267          ; PC := 267
+177 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+178 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+179 [-]: GETTABLE  R9 R9 K55    ; R9 := R9["BT_AMOUNT_STACK"]
+180 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 190
+181 [-]: JMP       190          ; PC := 190
+182 [-]: LOADK     R8 K47       ; R8 := "x"
 183 [-]: MOVE      R9 R6        ; R9 := R6
-184 [-]: LOADK     R10 K48      ; R10 := 1
-185 [-]: MOVE      R11 R1       ; R11 := R1
-186 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
-187 [-]: MOVE      R7 R8        ; R7 := R8
-188 [-]: LOADK     R8 K41       ; R8 := "x"
-189 [-]: GETTABLE  R9 R2 K31    ; R9 := R2["buffDataExtra"]
-190 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
-191 [-]: JMP       253          ; PC := 253
-192 [-]: GETGLOBAL R8 K35       ; R8 := Lotus_Game
-193 [-]: GETTABLE  R8 R8 K53    ; R8 := R8["0x8917176E"]
-194 [-]: GETTABLE  R9 R1 K33    ; R9 := R1["mBuffType"]
-195 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-196 [-]: TEST      R8 0         ; if not R8 then PC := 253
-197 [-]: JMP       253          ; PC := 253
-198 [-]: LE        0 K54 R6     ; if 0 > R6 then PC := 206
-199 [-]: JMP       206          ; PC := 206
-200 [-]: GETGLOBAL R8 K55       ; R8 := math
-201 [-]: GETTABLE  R8 R8 K56    ; R8 := R8["0xBCF846DF"]
-202 [-]: MOVE      R9 R6        ; R9 := R6
-203 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-204 [-]: MOVE      R6 R8        ; R6 := R8
-205 [-]: JMP       213          ; PC := 213
-206 [-]: GETUPVAL  R8 U0        ; R8 := U0
-207 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["mMovie"]
-208 [-]: SELF      R8 R8 K57    ; R9 := R8; R8 := R8["0x5DB0BD4"]
-209 [-]: LOADK     R10 K58      ; R10 := "<INFINITY>"
-210 [-]: MOVE      R11 R1       ; R11 := R1
-211 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
-212 [-]: MOVE      R6 R8        ; R6 := R8
-213 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-214 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-215 [-]: GETTABLE  R9 R9 K59    ; R9 := R9["BT_STACK_TIMER"]
-216 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 223
-217 [-]: JMP       223          ; PC := 223
-218 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-219 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-220 [-]: GETTABLE  R9 R9 K60    ; R9 := R9["BT_STACK_TIMER_DECAY"]
-221 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 232
-222 [-]: JMP       232          ; PC := 232
-223 [-]: GETTABLE  R8 R2 K31    ; R8 := R2["buffDataExtra"]
-224 [-]: LT        0 K54 R8     ; if 0 >= R8 then PC := 253
-225 [-]: JMP       253          ; PC := 253
-226 [-]: LOADK     R8 K41       ; R8 := "x"
-227 [-]: GETGLOBAL R9 K50       ; R9 := 0x9FAED6BC
-228 [-]: GETTABLE  R10 R2 K31   ; R10 := R2["buffDataExtra"]
-229 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-230 [-]: CONCAT    R7 R8 R9     ; R7 := R8 .. R9
-231 [-]: JMP       253          ; PC := 253
-232 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-233 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-234 [-]: GETTABLE  R9 R9 K61    ; R9 := R9["BT_AMOUNT_TIMER"]
-235 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 243
-236 [-]: JMP       243          ; PC := 243
-237 [-]: GETUPVAL  R8 U1        ; R8 := U1
-238 [-]: GETTABLE  R8 R8 K45    ; R8 := R8["0x2822759F"]
-239 [-]: GETTABLE  R9 R2 K31    ; R9 := R2["buffDataExtra"]
-240 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-241 [-]: MOVE      R7 R8        ; R7 := R8
-242 [-]: JMP       253          ; PC := 253
-243 [-]: GETTABLE  R8 R1 K33    ; R8 := R1["mBuffType"]
-244 [-]: GETGLOBAL R9 K35       ; R9 := Lotus_Game
-245 [-]: GETTABLE  R9 R9 K62    ; R9 := R9["BT_PERCENT_TIMER"]
-246 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 253
-247 [-]: JMP       253          ; PC := 253
-248 [-]: GETGLOBAL R8 K50       ; R8 := 0x9FAED6BC
-249 [-]: GETTABLE  R9 R2 K31    ; R9 := R2["buffDataExtra"]
-250 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-251 [-]: LOADK     R9 K39       ; R9 := "%"
-252 [-]: CONCAT    R7 R8 R9     ; R7 := R8 .. R9
-253 [-]: EQ        1 R7 K1      ; if R7 == nil then PC := 293
-254 [-]: JMP       293          ; PC := 293
-255 [-]: GETUPVAL  R8 U0        ; R8 := U0
-256 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["mMovie"]
-257 [-]: SELF      R8 R8 K63    ; R9 := R8; R8 := R8["0xD6A79FE9"]
-258 [-]: MOVE      R10 R3       ; R10 := R3
-259 [-]: LOADK     R11 K64      ; R11 := ".Data2.Desc"
-260 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-261 [-]: LOADK     R11 K65      ; R11 := "text"
-262 [-]: MOVE      R12 R7       ; R12 := R7
-263 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-264 [-]: GETUPVAL  R8 U0        ; R8 := U0
-265 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["mMovie"]
-266 [-]: SELF      R8 R8 K66    ; R9 := R8; R8 := R8["0x7E1F26D7"]
-267 [-]: MOVE      R10 R3       ; R10 := R3
-268 [-]: LOADK     R11 K67      ; R11 := ".Data2.Bg"
-269 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-270 [-]: GETGLOBAL R11 K15      ; R11 := _G
-271 [-]: GETTABLE  R11 R11 K68  ; R11 := R11["UIMaterial_SmoothEdge"]
-272 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
-273 [-]: GETGLOBAL R8 K69       ; R8 := 0xF595ADDE
-274 [-]: GETUPVAL  R9 U0        ; R9 := U0
-275 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["mMovie"]
-276 [-]: SELF      R9 R9 K70    ; R10 := R9; R9 := R9["0x6B7B470B"]
-277 [-]: MOVE      R11 R3       ; R11 := R3
-278 [-]: LOADK     R12 K64      ; R12 := ".Data2.Desc"
-279 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-280 [-]: LOADK     R12 K71      ; R12 := "textWidth"
-281 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
-282 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
-283 [-]: EQ        1 R8 K1      ; if R8 == nil then PC := 293
-284 [-]: JMP       293          ; PC := 293
-285 [-]: GETUPVAL  R9 U0        ; R9 := U0
-286 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["mMovie"]
-287 [-]: SELF      R9 R9 K11    ; R10 := R9; R9 := R9["0x880196A7"]
-288 [-]: MOVE      R11 R3       ; R11 := R3
-289 [-]: LOADK     R12 K72      ; R12 := "Data2.Bg"
-290 [-]: LOADK     R13 K73      ; R13 := "_width"
-291 [-]: ADD       R14 R8 K74   ; R14 := R8 + 6
-292 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
-293 [-]: GETUPVAL  R9 U0        ; R9 := U0
-294 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["mMovie"]
-295 [-]: SELF      R9 R9 K63    ; R10 := R9; R9 := R9["0xD6A79FE9"]
-296 [-]: MOVE      R11 R3       ; R11 := R3
-297 [-]: LOADK     R12 K75      ; R12 := ".Desc"
-298 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-299 [-]: LOADK     R12 K65      ; R12 := "text"
-300 [-]: MOVE      R13 R6       ; R13 := R6
-301 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-302 [-]: GETUPVAL  R9 U0        ; R9 := U0
-303 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["mMovie"]
-304 [-]: SELF      R9 R9 K11    ; R10 := R9; R9 := R9["0x880196A7"]
-305 [-]: MOVE      R11 R3       ; R11 := R3
-306 [-]: LOADK     R12 K76      ; R12 := "TimeBg"
-307 [-]: LOADK     R13 K77      ; R13 := "_visible"
-308 [-]: EQ        0 R6 K43     ; if R6 ~= "" then PC := 311
-309 [-]: JMP       311          ; PC := 311
-310 [-]: MOVE      R14 R0       ; R14 := R0
-311 [-]: MOVE      R14 R1       ; R14 := R1
-312 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
-313 [-]: GETUPVAL  R9 U0        ; R9 := U0
-314 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["mMovie"]
-315 [-]: SELF      R9 R9 K11    ; R10 := R9; R9 := R9["0x880196A7"]
-316 [-]: MOVE      R11 R3       ; R11 := R3
-317 [-]: LOADK     R12 K78      ; R12 := "Data2"
-318 [-]: LOADK     R13 K77      ; R13 := "_visible"
-319 [-]: EQ        0 R7 K1      ; if R7 ~= nil then PC := 322
-320 [-]: JMP       322          ; PC := 322
-321 [-]: MOVE      R14 R0       ; R14 := R0
-322 [-]: MOVE      R14 R1       ; R14 := R1
-323 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
-324 [-]: RETURN    R0 1         ; return 
+184 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
+185 [-]: GETGLOBAL R8 K56       ; R8 := 0x9FAED6BC
+186 [-]: GETTABLE  R9 R0 K57    ; R9 := R0["mBuffDataExtra"]
+187 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+188 [-]: MOVE      R7 R8        ; R7 := R8
+189 [-]: JMP       267          ; PC := 267
+190 [-]: GETTABLE  R8 R0 K39    ; R8 := R0["mBuffType"]
+191 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+192 [-]: GETTABLE  R9 R9 K58    ; R9 := R9["BT_INT_FLOAT"]
+193 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 206
+194 [-]: JMP       206          ; PC := 206
+195 [-]: GETUPVAL  R8 U1        ; R8 := U1
+196 [-]: GETTABLE  R8 R8 K53    ; R8 := R8["0x7E197415"]
+197 [-]: MOVE      R9 R6        ; R9 := R6
+198 [-]: LOADK     R10 K54      ; R10 := 1
+199 [-]: MOVE      R11 R1       ; R11 := R1
+200 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
+201 [-]: MOVE      R7 R8        ; R7 := R8
+202 [-]: LOADK     R8 K47       ; R8 := "x"
+203 [-]: GETTABLE  R9 R2 K37    ; R9 := R2["buffDataExtra"]
+204 [-]: CONCAT    R6 R8 R9     ; R6 := R8 .. R9
+205 [-]: JMP       267          ; PC := 267
+206 [-]: GETGLOBAL R8 K41       ; R8 := Lotus_Game
+207 [-]: GETTABLE  R8 R8 K59    ; R8 := R8["0x8917176E"]
+208 [-]: GETTABLE  R9 R1 K39    ; R9 := R1["mBuffType"]
+209 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+210 [-]: TEST      R8 0         ; if not R8 then PC := 267
+211 [-]: JMP       267          ; PC := 267
+212 [-]: LE        0 K13 R6     ; if 0 > R6 then PC := 220
+213 [-]: JMP       220          ; PC := 220
+214 [-]: GETGLOBAL R8 K60       ; R8 := math
+215 [-]: GETTABLE  R8 R8 K61    ; R8 := R8["0xBCF846DF"]
+216 [-]: MOVE      R9 R6        ; R9 := R6
+217 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+218 [-]: MOVE      R6 R8        ; R6 := R8
+219 [-]: JMP       227          ; PC := 227
+220 [-]: GETUPVAL  R8 U0        ; R8 := U0
+221 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["mMovie"]
+222 [-]: SELF      R8 R8 K62    ; R9 := R8; R8 := R8["0x5DB0BD4"]
+223 [-]: LOADK     R10 K63      ; R10 := "<INFINITY>"
+224 [-]: MOVE      R11 R1       ; R11 := R1
+225 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
+226 [-]: MOVE      R6 R8        ; R6 := R8
+227 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+228 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+229 [-]: GETTABLE  R9 R9 K64    ; R9 := R9["BT_STACK_TIMER"]
+230 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 237
+231 [-]: JMP       237          ; PC := 237
+232 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+233 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+234 [-]: GETTABLE  R9 R9 K65    ; R9 := R9["BT_STACK_TIMER_DECAY"]
+235 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 246
+236 [-]: JMP       246          ; PC := 246
+237 [-]: GETTABLE  R8 R2 K37    ; R8 := R2["buffDataExtra"]
+238 [-]: LT        0 K13 R8     ; if 0 >= R8 then PC := 267
+239 [-]: JMP       267          ; PC := 267
+240 [-]: LOADK     R8 K47       ; R8 := "x"
+241 [-]: GETGLOBAL R9 K56       ; R9 := 0x9FAED6BC
+242 [-]: GETTABLE  R10 R2 K37   ; R10 := R2["buffDataExtra"]
+243 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+244 [-]: CONCAT    R7 R8 R9     ; R7 := R8 .. R9
+245 [-]: JMP       267          ; PC := 267
+246 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+247 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+248 [-]: GETTABLE  R9 R9 K66    ; R9 := R9["BT_AMOUNT_TIMER"]
+249 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 257
+250 [-]: JMP       257          ; PC := 257
+251 [-]: GETUPVAL  R8 U1        ; R8 := U1
+252 [-]: GETTABLE  R8 R8 K51    ; R8 := R8["0x2822759F"]
+253 [-]: GETTABLE  R9 R2 K37    ; R9 := R2["buffDataExtra"]
+254 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+255 [-]: MOVE      R7 R8        ; R7 := R8
+256 [-]: JMP       267          ; PC := 267
+257 [-]: GETTABLE  R8 R1 K39    ; R8 := R1["mBuffType"]
+258 [-]: GETGLOBAL R9 K41       ; R9 := Lotus_Game
+259 [-]: GETTABLE  R9 R9 K67    ; R9 := R9["BT_PERCENT_TIMER"]
+260 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 267
+261 [-]: JMP       267          ; PC := 267
+262 [-]: GETGLOBAL R8 K56       ; R8 := 0x9FAED6BC
+263 [-]: GETTABLE  R9 R2 K37    ; R9 := R2["buffDataExtra"]
+264 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+265 [-]: LOADK     R9 K45       ; R9 := "%"
+266 [-]: CONCAT    R7 R8 R9     ; R7 := R8 .. R9
+267 [-]: EQ        1 R7 K1      ; if R7 == nil then PC := 307
+268 [-]: JMP       307          ; PC := 307
+269 [-]: GETUPVAL  R8 U0        ; R8 := U0
+270 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["mMovie"]
+271 [-]: SELF      R8 R8 K68    ; R9 := R8; R8 := R8["0xD6A79FE9"]
+272 [-]: MOVE      R10 R3       ; R10 := R3
+273 [-]: LOADK     R11 K69      ; R11 := ".Data2.Desc"
+274 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+275 [-]: LOADK     R11 K70      ; R11 := "text"
+276 [-]: MOVE      R12 R7       ; R12 := R7
+277 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+278 [-]: GETUPVAL  R8 U0        ; R8 := U0
+279 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["mMovie"]
+280 [-]: SELF      R8 R8 K71    ; R9 := R8; R8 := R8["0x7E1F26D7"]
+281 [-]: MOVE      R10 R3       ; R10 := R3
+282 [-]: LOADK     R11 K72      ; R11 := ".Data2.Bg"
+283 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+284 [-]: GETGLOBAL R11 K21      ; R11 := _G
+285 [-]: GETTABLE  R11 R11 K73  ; R11 := R11["UIMaterial_SmoothEdge"]
+286 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+287 [-]: GETGLOBAL R8 K74       ; R8 := 0xF595ADDE
+288 [-]: GETUPVAL  R9 U0        ; R9 := U0
+289 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mMovie"]
+290 [-]: SELF      R9 R9 K75    ; R10 := R9; R9 := R9["0x6B7B470B"]
+291 [-]: MOVE      R11 R3       ; R11 := R3
+292 [-]: LOADK     R12 K69      ; R12 := ".Data2.Desc"
+293 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
+294 [-]: LOADK     R12 K76      ; R12 := "textWidth"
+295 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+296 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+297 [-]: EQ        1 R8 K1      ; if R8 == nil then PC := 307
+298 [-]: JMP       307          ; PC := 307
+299 [-]: GETUPVAL  R9 U0        ; R9 := U0
+300 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mMovie"]
+301 [-]: SELF      R9 R9 K18    ; R10 := R9; R9 := R9["0x880196A7"]
+302 [-]: MOVE      R11 R3       ; R11 := R3
+303 [-]: LOADK     R12 K77      ; R12 := "Data2.Bg"
+304 [-]: LOADK     R13 K78      ; R13 := "_width"
+305 [-]: ADD       R14 R8 K79   ; R14 := R8 + 6
+306 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+307 [-]: GETUPVAL  R9 U0        ; R9 := U0
+308 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mMovie"]
+309 [-]: SELF      R9 R9 K68    ; R10 := R9; R9 := R9["0xD6A79FE9"]
+310 [-]: MOVE      R11 R3       ; R11 := R3
+311 [-]: LOADK     R12 K80      ; R12 := ".Desc"
+312 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
+313 [-]: LOADK     R12 K70      ; R12 := "text"
+314 [-]: MOVE      R13 R6       ; R13 := R6
+315 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
+316 [-]: GETUPVAL  R9 U0        ; R9 := U0
+317 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mMovie"]
+318 [-]: SELF      R9 R9 K18    ; R10 := R9; R9 := R9["0x880196A7"]
+319 [-]: MOVE      R11 R3       ; R11 := R3
+320 [-]: LOADK     R12 K81      ; R12 := "TimeBg"
+321 [-]: LOADK     R13 K82      ; R13 := "_visible"
+322 [-]: EQ        0 R6 K49     ; if R6 ~= "" then PC := 325
+323 [-]: JMP       325          ; PC := 325
+324 [-]: MOVE      R14 R0       ; R14 := R0
+325 [-]: MOVE      R14 R1       ; R14 := R1
+326 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+327 [-]: GETUPVAL  R9 U0        ; R9 := U0
+328 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mMovie"]
+329 [-]: SELF      R9 R9 K18    ; R10 := R9; R9 := R9["0x880196A7"]
+330 [-]: MOVE      R11 R3       ; R11 := R3
+331 [-]: LOADK     R12 K83      ; R12 := "Data2"
+332 [-]: LOADK     R13 K82      ; R13 := "_visible"
+333 [-]: EQ        0 R7 K1      ; if R7 ~= nil then PC := 336
+334 [-]: JMP       336          ; PC := 336
+335 [-]: MOVE      R14 R0       ; R14 := R0
+336 [-]: MOVE      R14 R1       ; R14 := R1
+337 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+338 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.12:
 ;
 ; Name:            
-; Defined at line: 308
+; Defined at line: 311
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1260,7 +1274,7 @@ code size: 19
 ; Function #1.13:
 ;
 ; Name:            
-; Defined at line: 347
+; Defined at line: 350
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1346,7 +1360,7 @@ code size: 19
 ; Function #1.14:
 ;
 ; Name:            
-; Defined at line: 375
+; Defined at line: 378
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1409,7 +1423,7 @@ code size: 19
 ; Function #1.15:
 ;
 ; Name:            
-; Defined at line: 397
+; Defined at line: 400
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1540,7 +1554,7 @@ code size: 19
 ; Function #1.16:
 ;
 ; Name:            
-; Defined at line: 451
+; Defined at line: 454
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2162,7 +2176,7 @@ code size: 19
 ; Function #1.17:
 ;
 ; Name:            
-; Defined at line: 647
+; Defined at line: 650
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

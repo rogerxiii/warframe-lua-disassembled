@@ -1,9 +1,9 @@
 code size: 44
 code size: 175
-code size: 15
+code size: 30
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Levels\GasCitySecurity.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Levels\GasCitySecurity.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -253,27 +253,42 @@ code size: 3
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := gGameRules
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xED0EE7FB"]
-  3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: LOADK     R4 K2        ; R4 := 0
-  5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  6 [-]: EQ        0 R1 K3      ; if R1 ~= 1 then PC := 11
-  7 [-]: JMP       11           ; PC := 11
-  8 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  9 [-]: MOVE      R3 R0        ; R3 := R0
- 10 [-]: CALL      R2 2 1       ; R2(R3)
- 11 [-]: GETGLOBAL R2 K4        ; R2 := 0x201191EA
- 12 [-]: LOADK     R3 K2        ; R3 := 0
- 13 [-]: CALL      R2 2 1       ; R2(R3)
- 14 [-]: JMP       1            ; PC := 1
- 15 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := gGameRules
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: TEST      R1 0         ; if not R1 then PC := 16
+  5 [-]: JMP       16           ; PC := 16
+  6 [-]: GETGLOBAL R1 K2        ; R1 := 0x12F3CEFA
+  7 [-]: GETGLOBAL R2 K3        ; R2 := gRegion
+  8 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0xA559F558"]
+  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 10 [-]: MOVE      R2 R2        ; R2 := R2
+ 11 [-]: CALL      R1 2 1       ; R1(R2)
+ 12 [-]: GETGLOBAL R1 K5        ; R1 := 0x201191EA
+ 13 [-]: LOADK     R2 K6        ; R2 := 0
+ 14 [-]: CALL      R1 2 1       ; R1(R2)
+ 15 [-]: JMP       1            ; PC := 1
+ 16 [-]: GETGLOBAL R1 K1        ; R1 := gGameRules
+ 17 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1["0xED0EE7FB"]
+ 18 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 19 [-]: LOADK     R4 K6        ; R4 := 0
+ 20 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
+ 21 [-]: EQ        0 R1 K8      ; if R1 ~= 1 then PC := 26
+ 22 [-]: JMP       26           ; PC := 26
+ 23 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 24 [-]: MOVE      R3 R0        ; R3 := R0
+ 25 [-]: CALL      R2 2 1       ; R2(R3)
+ 26 [-]: GETGLOBAL R2 K5        ; R2 := 0x201191EA
+ 27 [-]: LOADK     R3 K6        ; R3 := 0
+ 28 [-]: CALL      R2 2 1       ; R2(R3)
+ 29 [-]: JMP       16           ; PC := 16
+ 30 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 129
+; Defined at line: 135
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -19,7 +19,7 @@ code size: 122
 code size: 76
 code size: 27
 code size: 63
-code size: 85
+code size: 83
 code size: 7
 code size: 10
 code size: 10
@@ -54,7 +54,7 @@ code size: 15
 code size: 14
 code size: 18
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\StyleManager.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\StyleManager.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1492,26 +1492,24 @@ code size: 18
  63 [-]: GETGLOBAL R2 K26       ; R2 := 0xECFDD17
  64 [-]: GETGLOBAL R3 K27       ; R3 := sampleElements
  65 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
- 66 [-]: JMP       80           ; PC := 80
+ 66 [-]: JMP       78           ; PC := 78
  67 [-]: GETUPVAL  R7 U1        ; R7 := U1
  68 [-]: GETTABLE  R7 R7 K28    ; R7 := R7["0x1B75557F"]
  69 [-]: GETGLOBAL R8 K5        ; R8 := mMovie
  70 [-]: MOVE      R9 R6        ; R9 := R6
- 71 [-]: NEWTABLE  R10 0 1      ; R10 := {}
- 72 [-]: SETTABLE  R10 K29 K30  ; R10["SquareElement"] := "0x1"
- 73 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 74 [-]: SETTABLE  R7 K31 K32   ; R7["IconWidth"] := 277
- 75 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 76 [-]: SELF      R8 R8 K33    ; R9 := R8; R8 := R8["0xA77DA8EE"]
- 77 [-]: MOVE      R10 R7       ; R10 := R7
- 78 [-]: MOVE      R11 R1       ; R11 := R1
- 79 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 80 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 67; R4 := R5 end
- 81 [-]: JMP       67           ; PC := 67
- 82 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 83 [-]: SELF      R8 R8 K34    ; R9 := R8; R8 := R8["0x6470BAF4"]
- 84 [-]: CALL      R8 2 1       ; R8(R9)
- 85 [-]: RETURN    R0 1         ; return 
+ 71 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 72 [-]: SETTABLE  R7 K29 K30   ; R7["IconWidth"] := 277
+ 73 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 74 [-]: SELF      R8 R8 K31    ; R9 := R8; R8 := R8["0xA77DA8EE"]
+ 75 [-]: MOVE      R10 R7       ; R10 := R7
+ 76 [-]: MOVE      R11 R1       ; R11 := R1
+ 77 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+ 78 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 67; R4 := R5 end
+ 79 [-]: JMP       67           ; PC := 67
+ 80 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 81 [-]: SELF      R8 R8 K32    ; R9 := R8; R8 := R8["0x6470BAF4"]
+ 82 [-]: CALL      R8 2 1       ; R8(R9)
+ 83 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #18.1:

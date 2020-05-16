@@ -3,9 +3,9 @@ code size: 14
 code size: 35
 code size: 28
 code size: 87
-code size: 134
+code size: 130
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\GhoulExpiredJumpAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\GhoulExpiredJumpAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -249,138 +249,134 @@ code size: 134
 ; Max Stack Size:  16
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
-  2 [-]: GETGLOBAL R4 K1        ; R4 := animJump
+  2 [-]: MOVE      R4 R2        ; R4 := R2
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 134
-  5 [-]: JMP       134          ; PC := 134
-  6 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
-  7 [-]: MOVE      R4 R2        ; R4 := R2
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: TEST      R3 1         ; if R3 then PC := 134
- 10 [-]: JMP       134          ; PC := 134
- 11 [-]: GETGLOBAL R3 K2        ; R3 := 0x221C9700
- 12 [-]: CALL      R3 1 2       ; R3 := R3()
- 13 [-]: GETGLOBAL R4 K3        ; R4 := 0x1E4F6281
- 14 [-]: CALL      R4 1 2       ; R4 := R4()
- 15 [-]: SELF      R5 R1 K4     ; R6 := R1; R5 := R1["0x4D09A963"]
- 16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 17 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1["0xBBAF192"]
- 18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 19 [-]: SELF      R7 R2 K5     ; R8 := R2; R7 := R2["0xBBAF192"]
- 20 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 21 [-]: GETGLOBAL R8 K6        ; R8 := endDistanceToTarget
- 22 [-]: MUL       R8 R3 R8     ; R8 := R3 * R8
- 23 [-]: SUB       R7 R7 R8     ; R7 := R7 - R8
- 24 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 25 [-]: MOVE      R9 R1        ; R9 := R1
- 26 [-]: MOVE      R10 R2       ; R10 := R2
- 27 [-]: CALL      R8 3 3       ; R8,R9 := R8(R9,R10)
- 28 [-]: MOVE      R4 R9        ; R4 := R9
- 29 [-]: MOVE      R3 R8        ; R3 := R8
- 30 [-]: SELF      R8 R5 K7     ; R9 := R5; R8 := R5["0x547E9A00"]
- 31 [-]: MOVE      R10 R4       ; R10 := R4
- 32 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 33 [-]: SELF      R8 R1 K8     ; R9 := R1; R8 := R1["0x81E035B6"]
- 34 [-]: MOVE      R10 R6       ; R10 := R6
- 35 [-]: MOVE      R11 R4       ; R11 := R4
- 36 [-]: MOVE      R12 R1       ; R12 := R1
- 37 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
- 38 [-]: SELF      R8 R1 K9     ; R9 := R1; R8 := R1["0x868E646A"]
- 39 [-]: GETGLOBAL R10 K10      ; R10 := animJumpStart
- 40 [-]: MOVE      R11 R1       ; R11 := R1
- 41 [-]: GETGLOBAL R12 K11      ; R12 := Engine
- 42 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["ATMM_ANIMATION_DRIVEN"]
- 43 [-]: GETGLOBAL R13 K11      ; R13 := Engine
- 44 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["PRT_ONCE"]
- 45 [-]: MOVE      R14 R1       ; R14 := R1
- 46 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
- 47 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 48 [-]: MOVE      R9 R1        ; R9 := R1
- 49 [-]: MOVE      R10 R2       ; R10 := R2
- 50 [-]: CALL      R8 3 3       ; R8,R9 := R8(R9,R10)
- 51 [-]: MOVE      R4 R9        ; R4 := R9
- 52 [-]: MOVE      R3 R8        ; R3 := R8
- 53 [-]: SELF      R8 R5 K7     ; R9 := R5; R8 := R5["0x547E9A00"]
- 54 [-]: MOVE      R10 R4       ; R10 := R4
- 55 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 56 [-]: GETGLOBAL R8 K14       ; R8 := gRegion
- 57 [-]: SELF      R8 R8 K15    ; R9 := R8; R8 := R8["0xBDD34CC6"]
- 58 [-]: GETGLOBAL R10 K16      ; R10 := fxJump
- 59 [-]: SELF      R11 R1 K5    ; R12 := R1; R11 := R1["0xBBAF192"]
- 60 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 61 [-]: SELF      R12 R1 K17   ; R13 := R1; R12 := R1["0x3455E8A"]
- 62 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
- 63 [-]: CALL      R8 0 1       ; R8(R9,...)
- 64 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 65 [-]: MOVE      R9 R7        ; R9 := R7
- 66 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 67 [-]: SELF      R9 R1 K18    ; R10 := R1; R9 := R1["0xE9EA601D"]
- 68 [-]: MOVE      R11 R8       ; R11 := R8
- 69 [-]: MOVE      R12 R1       ; R12 := R1
- 70 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 71 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1["0x868E646A"]
- 72 [-]: GETGLOBAL R11 K1       ; R11 := animJump
- 73 [-]: MOVE      R12 R1       ; R12 := R1
- 74 [-]: GETGLOBAL R13 K11      ; R13 := Engine
- 75 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["ATMM_ANIMATION_DRIVEN"]
- 76 [-]: GETGLOBAL R14 K11      ; R14 := Engine
- 77 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["PRT_ONCE"]
- 78 [-]: MOVE      R15 R1       ; R15 := R1
- 79 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
- 80 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x4D09A963"]
- 81 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 82 [-]: SELF      R9 R9 K19    ; R10 := R9; R9 := R9["0xA7DFF9D"]
- 83 [-]: GETGLOBAL R11 K20      ; R11 := ZERO_VECTOR
- 84 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 85 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
- 86 [-]: MOVE      R10 R2       ; R10 := R2
+  4 [-]: TEST      R3 0         ; if not R3 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+  8 [-]: GETGLOBAL R4 K1        ; R4 := animJump
+  9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 10 [-]: TEST      R3 1         ; if R3 then PC := 130
+ 11 [-]: JMP       130          ; PC := 130
+ 12 [-]: GETGLOBAL R3 K2        ; R3 := 0x221C9700
+ 13 [-]: CALL      R3 1 2       ; R3 := R3()
+ 14 [-]: GETGLOBAL R4 K3        ; R4 := 0x1E4F6281
+ 15 [-]: CALL      R4 1 2       ; R4 := R4()
+ 16 [-]: SELF      R5 R1 K4     ; R6 := R1; R5 := R1["0x4D09A963"]
+ 17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 18 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1["0xBBAF192"]
+ 19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 20 [-]: SELF      R7 R2 K5     ; R8 := R2; R7 := R2["0xBBAF192"]
+ 21 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 22 [-]: GETGLOBAL R8 K6        ; R8 := endDistanceToTarget
+ 23 [-]: MUL       R8 R3 R8     ; R8 := R3 * R8
+ 24 [-]: SUB       R7 R7 R8     ; R7 := R7 - R8
+ 25 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 26 [-]: MOVE      R9 R1        ; R9 := R1
+ 27 [-]: MOVE      R10 R2       ; R10 := R2
+ 28 [-]: CALL      R8 3 3       ; R8,R9 := R8(R9,R10)
+ 29 [-]: MOVE      R4 R9        ; R4 := R9
+ 30 [-]: MOVE      R3 R8        ; R3 := R8
+ 31 [-]: SELF      R8 R5 K7     ; R9 := R5; R8 := R5["0x547E9A00"]
+ 32 [-]: MOVE      R10 R4       ; R10 := R4
+ 33 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 34 [-]: SELF      R8 R1 K8     ; R9 := R1; R8 := R1["0x81E035B6"]
+ 35 [-]: MOVE      R10 R6       ; R10 := R6
+ 36 [-]: MOVE      R11 R4       ; R11 := R4
+ 37 [-]: MOVE      R12 R1       ; R12 := R1
+ 38 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+ 39 [-]: SELF      R8 R1 K9     ; R9 := R1; R8 := R1["0x868E646A"]
+ 40 [-]: GETGLOBAL R10 K10      ; R10 := animJumpStart
+ 41 [-]: MOVE      R11 R1       ; R11 := R1
+ 42 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+ 43 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["ATMM_ANIMATION_DRIVEN"]
+ 44 [-]: GETGLOBAL R13 K11      ; R13 := Engine
+ 45 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["PRT_ONCE"]
+ 46 [-]: MOVE      R14 R1       ; R14 := R1
+ 47 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
+ 48 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
+ 49 [-]: MOVE      R9 R2        ; R9 := R2
+ 50 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 51 [-]: TEST      R8 1         ; if R8 then PC := 121
+ 52 [-]: JMP       121          ; PC := 121
+ 53 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 54 [-]: MOVE      R9 R1        ; R9 := R1
+ 55 [-]: MOVE      R10 R2       ; R10 := R2
+ 56 [-]: CALL      R8 3 3       ; R8,R9 := R8(R9,R10)
+ 57 [-]: MOVE      R4 R9        ; R4 := R9
+ 58 [-]: MOVE      R3 R8        ; R3 := R8
+ 59 [-]: SELF      R8 R5 K7     ; R9 := R5; R8 := R5["0x547E9A00"]
+ 60 [-]: MOVE      R10 R4       ; R10 := R4
+ 61 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 62 [-]: GETGLOBAL R8 K14       ; R8 := gRegion
+ 63 [-]: SELF      R8 R8 K15    ; R9 := R8; R8 := R8["0xBDD34CC6"]
+ 64 [-]: GETGLOBAL R10 K16      ; R10 := fxJump
+ 65 [-]: SELF      R11 R1 K5    ; R12 := R1; R11 := R1["0xBBAF192"]
+ 66 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 67 [-]: SELF      R12 R1 K17   ; R13 := R1; R12 := R1["0x3455E8A"]
+ 68 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
+ 69 [-]: CALL      R8 0 1       ; R8(R9,...)
+ 70 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 71 [-]: MOVE      R9 R7        ; R9 := R7
+ 72 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 73 [-]: SELF      R9 R1 K18    ; R10 := R1; R9 := R1["0xE9EA601D"]
+ 74 [-]: MOVE      R11 R8       ; R11 := R8
+ 75 [-]: MOVE      R12 R1       ; R12 := R1
+ 76 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+ 77 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1["0x868E646A"]
+ 78 [-]: GETGLOBAL R11 K1       ; R11 := animJump
+ 79 [-]: MOVE      R12 R1       ; R12 := R1
+ 80 [-]: GETGLOBAL R13 K11      ; R13 := Engine
+ 81 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["ATMM_ANIMATION_DRIVEN"]
+ 82 [-]: GETGLOBAL R14 K11      ; R14 := Engine
+ 83 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["PRT_ONCE"]
+ 84 [-]: MOVE      R15 R1       ; R15 := R1
+ 85 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
+ 86 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x4D09A963"]
  87 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 88 [-]: TEST      R9 1         ; if R9 then PC := 125
- 89 [-]: JMP       125          ; PC := 125
- 90 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 91 [-]: MOVE      R10 R1       ; R10 := R1
- 92 [-]: MOVE      R11 R2       ; R11 := R2
- 93 [-]: CALL      R9 3 3       ; R9,R10 := R9(R10,R11)
- 94 [-]: MOVE      R4 R10       ; R4 := R10
- 95 [-]: MOVE      R3 R9        ; R3 := R9
- 96 [-]: SELF      R9 R5 K7     ; R10 := R5; R9 := R5["0x547E9A00"]
- 97 [-]: MOVE      R11 R4       ; R11 := R4
- 98 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 99 [-]: SELF      R9 R1 K21    ; R10 := R1; R9 := R1["0xDFA4B7A1"]
-100 [-]: MOVE      R11 R2       ; R11 := R2
-101 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-102 [-]: GETGLOBAL R10 K22      ; R10 := runningStartRange
-103 [-]: LT        0 R10 R9     ; if R10 >= R9 then PC := 115
-104 [-]: JMP       115          ; PC := 115
-105 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1["0x868E646A"]
-106 [-]: GETGLOBAL R11 K23      ; R11 := animJumpEndRunning
-107 [-]: MOVE      R12 R1       ; R12 := R1
-108 [-]: GETGLOBAL R13 K11      ; R13 := Engine
-109 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["ATMM_ANIMATION_DRIVEN"]
-110 [-]: GETGLOBAL R14 K11      ; R14 := Engine
-111 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["PRT_ONCE"]
-112 [-]: MOVE      R15 R1       ; R15 := R1
-113 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
-114 [-]: JMP       134          ; PC := 134
-115 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1["0x868E646A"]
-116 [-]: GETGLOBAL R11 K24      ; R11 := animJumpEnd
-117 [-]: MOVE      R12 R1       ; R12 := R1
-118 [-]: GETGLOBAL R13 K11      ; R13 := Engine
-119 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["ATMM_ANIMATION_DRIVEN"]
-120 [-]: GETGLOBAL R14 K11      ; R14 := Engine
-121 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["PRT_ONCE"]
-122 [-]: MOVE      R15 R1       ; R15 := R1
-123 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
-124 [-]: JMP       134          ; PC := 134
-125 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1["0x868E646A"]
-126 [-]: GETGLOBAL R11 K24      ; R11 := animJumpEnd
-127 [-]: MOVE      R12 R1       ; R12 := R1
-128 [-]: GETGLOBAL R13 K11      ; R13 := Engine
-129 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["ATMM_ANIMATION_DRIVEN"]
-130 [-]: GETGLOBAL R14 K11      ; R14 := Engine
-131 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["PRT_ONCE"]
-132 [-]: MOVE      R15 R1       ; R15 := R1
-133 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
-134 [-]: RETURN    R0 1         ; return 
+ 88 [-]: SELF      R9 R9 K19    ; R10 := R9; R9 := R9["0xA7DFF9D"]
+ 89 [-]: GETGLOBAL R11 K20      ; R11 := ZERO_VECTOR
+ 90 [-]: CALL      R9 3 1       ; R9(R10,R11)
+ 91 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
+ 92 [-]: MOVE      R10 R2       ; R10 := R2
+ 93 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 94 [-]: TEST      R9 1         ; if R9 then PC := 121
+ 95 [-]: JMP       121          ; PC := 121
+ 96 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 97 [-]: MOVE      R10 R1       ; R10 := R1
+ 98 [-]: MOVE      R11 R2       ; R11 := R2
+ 99 [-]: CALL      R9 3 3       ; R9,R10 := R9(R10,R11)
+100 [-]: MOVE      R4 R10       ; R4 := R10
+101 [-]: MOVE      R3 R9        ; R3 := R9
+102 [-]: SELF      R9 R5 K7     ; R10 := R5; R9 := R5["0x547E9A00"]
+103 [-]: MOVE      R11 R4       ; R11 := R4
+104 [-]: CALL      R9 3 1       ; R9(R10,R11)
+105 [-]: SELF      R9 R1 K21    ; R10 := R1; R9 := R1["0xDFA4B7A1"]
+106 [-]: MOVE      R11 R2       ; R11 := R2
+107 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+108 [-]: GETGLOBAL R10 K22      ; R10 := runningStartRange
+109 [-]: LT        0 R10 R9     ; if R10 >= R9 then PC := 121
+110 [-]: JMP       121          ; PC := 121
+111 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1["0x868E646A"]
+112 [-]: GETGLOBAL R11 K23      ; R11 := animJumpEndRunning
+113 [-]: MOVE      R12 R1       ; R12 := R1
+114 [-]: GETGLOBAL R13 K11      ; R13 := Engine
+115 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["ATMM_ANIMATION_DRIVEN"]
+116 [-]: GETGLOBAL R14 K11      ; R14 := Engine
+117 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["PRT_ONCE"]
+118 [-]: MOVE      R15 R1       ; R15 := R1
+119 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
+120 [-]: RETURN    R0 1         ; return 
+121 [-]: SELF      R9 R1 K9     ; R10 := R1; R9 := R1["0x868E646A"]
+122 [-]: GETGLOBAL R11 K24      ; R11 := animJumpEnd
+123 [-]: MOVE      R12 R1       ; R12 := R1
+124 [-]: GETGLOBAL R13 K11      ; R13 := Engine
+125 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["ATMM_ANIMATION_DRIVEN"]
+126 [-]: GETGLOBAL R14 K11      ; R14 := Engine
+127 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["PRT_ONCE"]
+128 [-]: MOVE      R15 R1       ; R15 := R1
+129 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
+130 [-]: RETURN    R0 1         ; return 
 
 

@@ -51,7 +51,7 @@ code size: 13
 code size: 20
 code size: 21
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Intrinsics.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Intrinsics.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -252,7 +252,7 @@ code size: 21
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 67
+; Defined at line: 68
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -312,7 +312,7 @@ code size: 21
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 89
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -329,7 +329,7 @@ code size: 21
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 94
+; Defined at line: 95
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -343,7 +343,7 @@ code size: 21
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 98
+; Defined at line: 99
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -393,7 +393,7 @@ code size: 21
 ; Function #4.1:
 ;
 ; Name:            
-; Defined at line: 107
+; Defined at line: 108
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -419,7 +419,7 @@ code size: 21
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 112
+; Defined at line: 113
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -458,7 +458,7 @@ code size: 21
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 123
+; Defined at line: 124
 ; #Upvalues:       11
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -559,7 +559,7 @@ code size: 21
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 145
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -580,7 +580,7 @@ code size: 21
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 148
+; Defined at line: 149
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -627,7 +627,7 @@ code size: 21
  39 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 6; R6 := R7 end
  40 [-]: JMP       6            ; PC := 6
  41 [-]: GETGLOBAL R11 K14      ; R11 := mMovie
- 42 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0x5DB0BD4"]
+ 42 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0x6724E8D6"]
  43 [-]: LOADK     R13 K16      ; R13 := "/Lotus/Language/Archive/"
  44 [-]: GETUPVAL  R14 U0       ; R14 := U0
  45 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["0xF81722A2"]
@@ -638,28 +638,28 @@ code size: 21
  50 [-]: LOADK     R17 K21      ; R17 := "SprintControlsPC"
  51 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
  52 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 53 [-]: MOVE      R14 R1       ; R14 := R1
+ 53 [-]: GETGLOBAL R14 K22      ; R14 := descInputFilter
  54 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  55 [-]: SETTABLE  R3 K13 R11   ; R3["SPRINT"] := R11
  56 [-]: GETGLOBAL R11 K14      ; R11 := mMovie
- 57 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0x5DB0BD4"]
+ 57 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0x6724E8D6"]
  58 [-]: LOADK     R13 K16      ; R13 := "/Lotus/Language/Archive/"
  59 [-]: GETUPVAL  R14 U0       ; R14 := U0
  60 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["0xF81722A2"]
  61 [-]: GETGLOBAL R15 K18      ; R15 := Engine
  62 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0x9490FE70"]
  63 [-]: CALL      R15 1 2      ; R15 := R15()
- 64 [-]: LOADK     R16 K23      ; R16 := "DodgeControlsRailjackConsole"
- 65 [-]: LOADK     R17 K24      ; R17 := "DodgeControlsPC"
+ 64 [-]: LOADK     R16 K24      ; R16 := "DodgeControlsRailjackConsole"
+ 65 [-]: LOADK     R17 K25      ; R17 := "DodgeControlsPC"
  66 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
  67 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 68 [-]: MOVE      R14 R1       ; R14 := R1
+ 68 [-]: GETGLOBAL R14 K22      ; R14 := descInputFilter
  69 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 70 [-]: SETTABLE  R3 K22 R11   ; R3["ACTION"] := R11
+ 70 [-]: SETTABLE  R3 K23 R11   ; R3["ACTION"] := R11
  71 [-]: GETGLOBAL R11 K14      ; R11 := mMovie
- 72 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0x5DB0BD4"]
+ 72 [-]: SELF      R11 R11 K26  ; R12 := R11; R11 := R11["0x5DB0BD4"]
  73 [-]: MOVE      R13 R0       ; R13 := R0
- 74 [-]: LOADK     R14 K25      ; R14 := "Desc_"
+ 74 [-]: LOADK     R14 K27      ; R14 := "Desc_"
  75 [-]: MOVE      R15 R1       ; R15 := R1
  76 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
  77 [-]: MOVE      R14 R1       ; R14 := R1
@@ -672,7 +672,7 @@ code size: 21
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 169
+; Defined at line: 170
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -690,7 +690,7 @@ code size: 21
 ; Function #9.1:
 ;
 ; Name:            
-; Defined at line: 172
+; Defined at line: 173
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -748,7 +748,7 @@ code size: 21
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 188
+; Defined at line: 189
 ; #Upvalues:       10
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -887,7 +887,7 @@ code size: 21
 ; Function #10.1:
 ;
 ; Name:            
-; Defined at line: 200
+; Defined at line: 201
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -934,7 +934,7 @@ code size: 21
 ; Function #10.2:
 ;
 ; Name:            
-; Defined at line: 205
+; Defined at line: 206
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1066,7 +1066,7 @@ code size: 21
 ; Function #10.3:
 ;
 ; Name:            
-; Defined at line: 253
+; Defined at line: 254
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1097,7 +1097,7 @@ code size: 21
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 262
+; Defined at line: 263
 ; #Upvalues:       20
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1222,7 +1222,7 @@ code size: 21
 ; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 273
+; Defined at line: 274
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1484,7 +1484,7 @@ code size: 21
 ; Function #11.2:
 ;
 ; Name:            
-; Defined at line: 310
+; Defined at line: 311
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1531,7 +1531,7 @@ code size: 21
 ; Function #11.3:
 ;
 ; Name:            
-; Defined at line: 318
+; Defined at line: 319
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1723,7 +1723,7 @@ code size: 21
 ; Function #11.4:
 ;
 ; Name:            
-; Defined at line: 360
+; Defined at line: 361
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1776,7 +1776,7 @@ code size: 21
 ; Function #11.4.1:
 ;
 ; Name:            
-; Defined at line: 373
+; Defined at line: 374
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1851,7 +1851,7 @@ code size: 21
 ; Function #11.5:
 ;
 ; Name:            
-; Defined at line: 397
+; Defined at line: 398
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1916,7 +1916,7 @@ code size: 21
 ; Function #11.6:
 ;
 ; Name:            
-; Defined at line: 406
+; Defined at line: 407
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2150,7 +2150,7 @@ code size: 21
 ; Function #11.7:
 ;
 ; Name:            
-; Defined at line: 482
+; Defined at line: 483
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2214,7 +2214,7 @@ code size: 21
 ; Function #11.7.1:
 ;
 ; Name:            
-; Defined at line: 490
+; Defined at line: 491
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2233,7 +2233,7 @@ code size: 21
 ; Function #11.8:
 ;
 ; Name:            
-; Defined at line: 496
+; Defined at line: 497
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2327,7 +2327,7 @@ code size: 21
 ; Function #11.9:
 ;
 ; Name:            
-; Defined at line: 518
+; Defined at line: 519
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2355,7 +2355,7 @@ code size: 21
 ; Function #11.10:
 ;
 ; Name:            
-; Defined at line: 523
+; Defined at line: 524
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2372,7 +2372,7 @@ code size: 21
 ; Function #11.11:
 ;
 ; Name:            
-; Defined at line: 527
+; Defined at line: 528
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2430,7 +2430,7 @@ code size: 21
 ; Function #11.11.1:
 ;
 ; Name:            
-; Defined at line: 537
+; Defined at line: 538
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2461,7 +2461,7 @@ code size: 21
 ; Function #11.11.2:
 ;
 ; Name:            
-; Defined at line: 546
+; Defined at line: 547
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2484,7 +2484,7 @@ code size: 21
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 554
+; Defined at line: 555
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2511,7 +2511,7 @@ code size: 21
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 561
+; Defined at line: 562
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2544,7 +2544,7 @@ code size: 21
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 569
+; Defined at line: 570
 ; #Upvalues:       7
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2608,7 +2608,7 @@ code size: 21
 ; Function #14.1:
 ;
 ; Name:            
-; Defined at line: 577
+; Defined at line: 578
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2663,7 +2663,7 @@ code size: 21
 ; Function #14.2:
 ;
 ; Name:            
-; Defined at line: 584
+; Defined at line: 585
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2715,7 +2715,7 @@ code size: 21
 ; Function #14.2.1:
 ;
 ; Name:            
-; Defined at line: 596
+; Defined at line: 597
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2735,7 +2735,7 @@ code size: 21
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 608
+; Defined at line: 609
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2865,7 +2865,7 @@ code size: 21
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 631
+; Defined at line: 632
 ; #Upvalues:       15
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3029,7 +3029,7 @@ code size: 21
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 691
+; Defined at line: 692
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3079,7 +3079,7 @@ code size: 21
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 714
+; Defined at line: 715
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3121,7 +3121,7 @@ code size: 21
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 734
+; Defined at line: 735
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3146,7 +3146,7 @@ code size: 21
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 742
+; Defined at line: 743
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3171,7 +3171,7 @@ code size: 21
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 750
+; Defined at line: 751
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3193,7 +3193,7 @@ code size: 21
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 758
+; Defined at line: 759
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3215,7 +3215,7 @@ code size: 21
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 766
+; Defined at line: 767
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3229,7 +3229,7 @@ code size: 21
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 770
+; Defined at line: 771
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3243,7 +3243,7 @@ code size: 21
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 774
+; Defined at line: 775
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3276,7 +3276,7 @@ code size: 21
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 786
+; Defined at line: 787
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3300,7 +3300,7 @@ code size: 21
 ; Function #26.1:
 ;
 ; Name:            
-; Defined at line: 789
+; Defined at line: 790
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3331,7 +3331,7 @@ code size: 21
 ; Function #26.1.1:
 ;
 ; Name:            
-; Defined at line: 792
+; Defined at line: 793
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0

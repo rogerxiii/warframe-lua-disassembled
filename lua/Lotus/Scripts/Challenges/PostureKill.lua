@@ -1,12 +1,12 @@
 code size: 19
 code size: 16
 code size: 11
-code size: 157
+code size: 198
 code size: 15
 code size: 6
 code size: 6
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Challenges\PostureKill.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Challenges\PostureKill.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -39,7 +39,7 @@ code size: 6
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 7
+; Defined at line: 8
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -66,7 +66,7 @@ code size: 6
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 11
+; Defined at line: 12
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -88,11 +88,11 @@ code size: 6
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 20
+; Defined at line: 21
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  18
 
   1 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1["0x80B14403"]
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -138,34 +138,34 @@ code size: 6
  42 [-]: MOVE      R7 R1        ; R7 := R1
  43 [-]: RETURN    R7 2         ; return R7
  44 [-]: GETGLOBAL R7 K8        ; R7 := usePosture
- 45 [-]: TEST      R7 1         ; if R7 then PC := 86
- 46 [-]: JMP       86           ; PC := 86
+ 45 [-]: TEST      R7 1         ; if R7 then PC := 127
+ 46 [-]: JMP       127          ; PC := 127
  47 [-]: GETGLOBAL R7 K9        ; R7 := 0x400E7765
  48 [-]: MOVE      R8 R0        ; R8 := R0
  49 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 50 [-]: TEST      R7 1         ; if R7 then PC := 84
- 51 [-]: JMP       84           ; PC := 84
+ 50 [-]: TEST      R7 1         ; if R7 then PC := 125
+ 51 [-]: JMP       125          ; PC := 125
  52 [-]: GETGLOBAL R7 K10       ; R7 := requiredAttackAction
  53 [-]: GETGLOBAL R8 K4        ; R8 := Engine
  54 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["MELEE_FINISHER"]
- 55 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 84
- 56 [-]: JMP       84           ; PC := 84
+ 55 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 125
+ 56 [-]: JMP       125          ; PC := 125
  57 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0["0x936A038"]
  58 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  59 [-]: GETGLOBAL R8 K9        ; R8 := 0x400E7765
  60 [-]: MOVE      R9 R7        ; R9 := R7
  61 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 62 [-]: TEST      R8 1         ; if R8 then PC := 84
- 63 [-]: JMP       84           ; PC := 84
+ 62 [-]: TEST      R8 1         ; if R8 then PC := 102
+ 63 [-]: JMP       102          ; PC := 102
  64 [-]: SELF      R8 R7 K13    ; R9 := R7; R8 := R7["0x8B598ED4"]
  65 [-]: GETGLOBAL R10 K14      ; R10 := gLotusWeaponType
  66 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 67 [-]: TEST      R8 0         ; if not R8 then PC := 84
- 68 [-]: JMP       84           ; PC := 84
+ 67 [-]: TEST      R8 0         ; if not R8 then PC := 85
+ 68 [-]: JMP       85           ; PC := 85
  69 [-]: SELF      R8 R7 K15    ; R9 := R7; R8 := R7["0xCCDDAF9B"]
  70 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 71 [-]: TEST      R8 0         ; if not R8 then PC := 84
- 72 [-]: JMP       84           ; PC := 84
+ 71 [-]: TEST      R8 0         ; if not R8 then PC := 85
+ 72 [-]: JMP       85           ; PC := 85
  73 [-]: SELF      R8 R7 K16    ; R9 := R7; R8 := R7["0xEF752838"]
  74 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  75 [-]: GETGLOBAL R9 K10       ; R9 := requiredAttackAction
@@ -173,90 +173,131 @@ code size: 6
  77 [-]: JMP       82           ; PC := 82
  78 [-]: SELF      R8 R2 K17    ; R9 := R2; R8 := R2["0xF8FD58BD"]
  79 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 80 [-]: TEST      R8 0         ; if not R8 then PC := 84
- 81 [-]: JMP       84           ; PC := 84
+ 80 [-]: TEST      R8 0         ; if not R8 then PC := 85
+ 81 [-]: JMP       85           ; PC := 85
  82 [-]: MOVE      R8 R1        ; R8 := R1
  83 [-]: RETURN    R8 2         ; return R8
- 84 [-]: MOVE      R8 R0        ; R8 := R0
- 85 [-]: RETURN    R8 2         ; return R8
- 86 [-]: SELF      R8 R2 K18    ; R9 := R2; R8 := R2["0xFD0BE5BF"]
+ 84 [-]: JMP       125          ; PC := 125
+ 85 [-]: GETGLOBAL R8 K9        ; R8 := 0x400E7765
+ 86 [-]: GETGLOBAL R9 K18       ; R9 := finisherType
  87 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 88 [-]: GETGLOBAL R9 K19       ; R9 := requiredPosture
- 89 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 94
- 90 [-]: JMP       94           ; PC := 94
- 91 [-]: MOVE      R9 R1        ; R9 := R1
- 92 [-]: RETURN    R9 2         ; return R9
- 93 [-]: JMP       155          ; PC := 155
- 94 [-]: GETGLOBAL R9 K9        ; R9 := 0x400E7765
- 95 [-]: MOVE      R10 R0       ; R10 := R0
- 96 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 97 [-]: TEST      R9 1         ; if R9 then PC := 128
- 98 [-]: JMP       128          ; PC := 128
- 99 [-]: GETGLOBAL R9 K19       ; R9 := requiredPosture
-100 [-]: GETGLOBAL R10 K4       ; R10 := Engine
-101 [-]: GETTABLE  R10 R10 K20  ; R10 := R10["SLIDE"]
-102 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 128
-103 [-]: JMP       128          ; PC := 128
-104 [-]: SELF      R9 R0 K12    ; R10 := R0; R9 := R0["0x936A038"]
-105 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-106 [-]: GETGLOBAL R10 K9       ; R10 := 0x400E7765
-107 [-]: MOVE      R11 R9       ; R11 := R9
-108 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-109 [-]: TEST      R10 1        ; if R10 then PC := 155
-110 [-]: JMP       155          ; PC := 155
-111 [-]: SELF      R10 R9 K13   ; R11 := R9; R10 := R9["0x8B598ED4"]
-112 [-]: GETGLOBAL R12 K14      ; R12 := gLotusWeaponType
-113 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-114 [-]: TEST      R10 0        ; if not R10 then PC := 155
-115 [-]: JMP       155          ; PC := 155
-116 [-]: SELF      R10 R9 K15   ; R11 := R9; R10 := R9["0xCCDDAF9B"]
-117 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-118 [-]: TEST      R10 0        ; if not R10 then PC := 155
-119 [-]: JMP       155          ; PC := 155
-120 [-]: SELF      R10 R9 K16   ; R11 := R9; R10 := R9["0xEF752838"]
-121 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-122 [-]: GETGLOBAL R11 K10      ; R11 := requiredAttackAction
-123 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 155
-124 [-]: JMP       155          ; PC := 155
-125 [-]: MOVE      R10 R1       ; R10 := R1
-126 [-]: RETURN    R10 2        ; return R10
-127 [-]: JMP       155          ; PC := 155
-128 [-]: GETUPVAL  R10 U0       ; R10 := U0
-129 [-]: GETGLOBAL R11 K19      ; R11 := requiredPosture
-130 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-131 [-]: TEST      R10 0        ; if not R10 then PC := 155
-132 [-]: JMP       155          ; PC := 155
-133 [-]: GETUPVAL  R10 U0       ; R10 := U0
-134 [-]: MOVE      R11 R8       ; R11 := R8
-135 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-136 [-]: TEST      R10 0        ; if not R10 then PC := 141
-137 [-]: JMP       141          ; PC := 141
-138 [-]: MOVE      R10 R1       ; R10 := R1
-139 [-]: RETURN    R10 2        ; return R10
-140 [-]: JMP       155          ; PC := 155
-141 [-]: LOADK     R10 K2       ; R10 := 1
-142 [-]: GETGLOBAL R11 K3       ; R11 := requiredModifiers
-143 [-]: LEN       R11 R11      ; R11 := # R11
-144 [-]: LOADK     R12 K2       ; R12 := 1
-145 [-]: FORPREP   R10 154      ; R10 -= R12; PC := 154
-146 [-]: SELF      R14 R2 K7    ; R15 := R2; R14 := R2["0xF3340665"]
-147 [-]: GETGLOBAL R16 K3       ; R16 := requiredModifiers
-148 [-]: GETTABLE  R16 R16 R13  ; R16 := R16[R13]
-149 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-150 [-]: TEST      R14 0        ; if not R14 then PC := 154
-151 [-]: JMP       154          ; PC := 154
-152 [-]: MOVE      R14 R1       ; R14 := R1
-153 [-]: RETURN    R14 2        ; return R14
-154 [-]: FORLOOP   R10 146      ; R10 += R12; if R10 <= R11 then begin PC := 146; R13 := R10 end
-155 [-]: MOVE      R14 R0       ; R14 := R0
-156 [-]: RETURN    R14 2        ; return R14
-157 [-]: RETURN    R0 1         ; return 
+ 88 [-]: TEST      R8 1         ; if R8 then PC := 125
+ 89 [-]: JMP       125          ; PC := 125
+ 90 [-]: SELF      R8 R7 K13    ; R9 := R7; R8 := R7["0x8B598ED4"]
+ 91 [-]: GETGLOBAL R10 K18      ; R10 := finisherType
+ 92 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 93 [-]: TEST      R8 0         ; if not R8 then PC := 125
+ 94 [-]: JMP       125          ; PC := 125
+ 95 [-]: SELF      R8 R2 K17    ; R9 := R2; R8 := R2["0xF8FD58BD"]
+ 96 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 97 [-]: TEST      R8 0         ; if not R8 then PC := 125
+ 98 [-]: JMP       125          ; PC := 125
+ 99 [-]: MOVE      R8 R1        ; R8 := R1
+100 [-]: RETURN    R8 2         ; return R8
+101 [-]: JMP       125          ; PC := 125
+102 [-]: GETGLOBAL R8 K9        ; R8 := 0x400E7765
+103 [-]: GETGLOBAL R9 K18       ; R9 := finisherType
+104 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+105 [-]: TEST      R8 1         ; if R8 then PC := 125
+106 [-]: JMP       125          ; PC := 125
+107 [-]: SELF      R8 R0 K19    ; R9 := R0; R8 := R0["0xA9861A50"]
+108 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+109 [-]: GETGLOBAL R9 K9        ; R9 := 0x400E7765
+110 [-]: MOVE      R10 R8       ; R10 := R8
+111 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+112 [-]: TEST      R9 1         ; if R9 then PC := 125
+113 [-]: JMP       125          ; PC := 125
+114 [-]: SELF      R9 R8 K13    ; R10 := R8; R9 := R8["0x8B598ED4"]
+115 [-]: GETGLOBAL R11 K18      ; R11 := finisherType
+116 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+117 [-]: TEST      R9 0         ; if not R9 then PC := 125
+118 [-]: JMP       125          ; PC := 125
+119 [-]: SELF      R9 R2 K17    ; R10 := R2; R9 := R2["0xF8FD58BD"]
+120 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+121 [-]: TEST      R9 0         ; if not R9 then PC := 125
+122 [-]: JMP       125          ; PC := 125
+123 [-]: MOVE      R9 R1        ; R9 := R1
+124 [-]: RETURN    R9 2         ; return R9
+125 [-]: MOVE      R9 R0        ; R9 := R0
+126 [-]: RETURN    R9 2         ; return R9
+127 [-]: SELF      R9 R2 K20    ; R10 := R2; R9 := R2["0xFD0BE5BF"]
+128 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+129 [-]: GETGLOBAL R10 K21      ; R10 := requiredPosture
+130 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 135
+131 [-]: JMP       135          ; PC := 135
+132 [-]: MOVE      R10 R1       ; R10 := R1
+133 [-]: RETURN    R10 2        ; return R10
+134 [-]: JMP       196          ; PC := 196
+135 [-]: GETGLOBAL R10 K9       ; R10 := 0x400E7765
+136 [-]: MOVE      R11 R0       ; R11 := R0
+137 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+138 [-]: TEST      R10 1        ; if R10 then PC := 169
+139 [-]: JMP       169          ; PC := 169
+140 [-]: GETGLOBAL R10 K21      ; R10 := requiredPosture
+141 [-]: GETGLOBAL R11 K4       ; R11 := Engine
+142 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["SLIDE"]
+143 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 169
+144 [-]: JMP       169          ; PC := 169
+145 [-]: SELF      R10 R0 K12   ; R11 := R0; R10 := R0["0x936A038"]
+146 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+147 [-]: GETGLOBAL R11 K9       ; R11 := 0x400E7765
+148 [-]: MOVE      R12 R10      ; R12 := R10
+149 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+150 [-]: TEST      R11 1        ; if R11 then PC := 196
+151 [-]: JMP       196          ; PC := 196
+152 [-]: SELF      R11 R10 K13  ; R12 := R10; R11 := R10["0x8B598ED4"]
+153 [-]: GETGLOBAL R13 K14      ; R13 := gLotusWeaponType
+154 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+155 [-]: TEST      R11 0        ; if not R11 then PC := 196
+156 [-]: JMP       196          ; PC := 196
+157 [-]: SELF      R11 R10 K15  ; R12 := R10; R11 := R10["0xCCDDAF9B"]
+158 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+159 [-]: TEST      R11 0        ; if not R11 then PC := 196
+160 [-]: JMP       196          ; PC := 196
+161 [-]: SELF      R11 R10 K16  ; R12 := R10; R11 := R10["0xEF752838"]
+162 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+163 [-]: GETGLOBAL R12 K10      ; R12 := requiredAttackAction
+164 [-]: EQ        0 R11 R12    ; if R11 ~= R12 then PC := 196
+165 [-]: JMP       196          ; PC := 196
+166 [-]: MOVE      R11 R1       ; R11 := R1
+167 [-]: RETURN    R11 2        ; return R11
+168 [-]: JMP       196          ; PC := 196
+169 [-]: GETUPVAL  R11 U0       ; R11 := U0
+170 [-]: GETGLOBAL R12 K21      ; R12 := requiredPosture
+171 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+172 [-]: TEST      R11 0        ; if not R11 then PC := 196
+173 [-]: JMP       196          ; PC := 196
+174 [-]: GETUPVAL  R11 U0       ; R11 := U0
+175 [-]: MOVE      R12 R9       ; R12 := R9
+176 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+177 [-]: TEST      R11 0        ; if not R11 then PC := 182
+178 [-]: JMP       182          ; PC := 182
+179 [-]: MOVE      R11 R1       ; R11 := R1
+180 [-]: RETURN    R11 2        ; return R11
+181 [-]: JMP       196          ; PC := 196
+182 [-]: LOADK     R11 K2       ; R11 := 1
+183 [-]: GETGLOBAL R12 K3       ; R12 := requiredModifiers
+184 [-]: LEN       R12 R12      ; R12 := # R12
+185 [-]: LOADK     R13 K2       ; R13 := 1
+186 [-]: FORPREP   R11 195      ; R11 -= R13; PC := 195
+187 [-]: SELF      R15 R2 K7    ; R16 := R2; R15 := R2["0xF3340665"]
+188 [-]: GETGLOBAL R17 K3       ; R17 := requiredModifiers
+189 [-]: GETTABLE  R17 R17 R14  ; R17 := R17[R14]
+190 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+191 [-]: TEST      R15 0        ; if not R15 then PC := 195
+192 [-]: JMP       195          ; PC := 195
+193 [-]: MOVE      R15 R1       ; R15 := R1
+194 [-]: RETURN    R15 2        ; return R15
+195 [-]: FORLOOP   R11 187      ; R11 += R13; if R11 <= R12 then begin PC := 187; R14 := R11 end
+196 [-]: MOVE      R15 R0       ; R15 := R0
+197 [-]: RETURN    R15 2        ; return R15
+198 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 76
+; Defined at line: 86
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -282,7 +323,7 @@ code size: 6
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 84
+; Defined at line: 94
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -299,7 +340,7 @@ code size: 6
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 98
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0

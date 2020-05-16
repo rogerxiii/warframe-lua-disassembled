@@ -1,4 +1,4 @@
-code size: 35
+code size: 34
 code size: 14
 code size: 21
 code size: 171
@@ -7,56 +7,55 @@ code size: 7
 code size: 104
 code size: 1
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Lich\Dodge.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Lich\Dodge.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  6
+; Max Stack Size:  5
 
-  1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: GETGLOBAL R1 K0        ; R1 := 0x329BDC44
-  3 [-]: LOADK     R2 K1        ; R2 := "Lotus.Scripts.Libs.AbilitiesLib"
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: GETGLOBAL R2 K0        ; R2 := 0x329BDC44
-  6 [-]: LOADK     R3 K2        ; R3 := "Lotus.Scripts.Nemesis.NemesisGenerator"
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
-  9 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 10 [-]: SETGLOBAL R4 K3        ; AttachDodgeJumpFX := R4
- 11 [-]: SETGLOBAL R4 K4        ; 0xB61889B2 := R4
- 12 [-]: GETGLOBAL R4 K5        ; R4 := 0x2C00D429
- 13 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Types/Enemies/Kingpins/GrineerKuvaLichAvatar"
- 14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 15 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
- 16 [-]: MOVE      R0 R4        ; R0 := R4
- 17 [-]: MOVE      R0 R3        ; R0 := R3
- 18 [-]: SETGLOBAL R5 K7        ; NpcEvaluateAbility := R5
- 19 [-]: SETGLOBAL R5 K8        ; 0xECF1EA57 := R5
- 20 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
- 21 [-]: MOVE      R0 R1        ; R0 := R1
- 22 [-]: SETGLOBAL R5 K9        ; ReactToDamage := R5
- 23 [-]: SETGLOBAL R5 K10       ; 0x4B00FBD8 := R5
- 24 [-]: CLOSURE   R5 4         ; R5 := closure(Function #5)
- 25 [-]: SETGLOBAL R5 K11       ; InitializeAbility := R5
- 26 [-]: SETGLOBAL R5 K12       ; 0x3BDC280E := R5
- 27 [-]: CLOSURE   R5 5         ; R5 := closure(Function #6)
- 28 [-]: MOVE      R0 R4        ; R0 := R4
- 29 [-]: MOVE      R0 R2        ; R0 := R2
- 30 [-]: SETGLOBAL R5 K13       ; ActivateAbility := R5
- 31 [-]: SETGLOBAL R5 K14       ; 0xCC0B19E0 := R5
- 32 [-]: CLOSURE   R5 6         ; R5 := closure(Function #7)
- 33 [-]: SETGLOBAL R5 K15       ; DeactivateAbility := R5
- 34 [-]: SETGLOBAL R5 K16       ; 0x1FDB8A0 := R5
- 35 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
+  2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x329BDC44
+  5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Scripts.Nemesis.NemesisGenerator"
+  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  7 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
+  8 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
+  9 [-]: SETGLOBAL R3 K3        ; AttachDodgeJumpFX := R3
+ 10 [-]: SETGLOBAL R3 K4        ; 0xB61889B2 := R3
+ 11 [-]: GETGLOBAL R3 K5        ; R3 := 0x2C00D429
+ 12 [-]: LOADK     R4 K6        ; R4 := "/Lotus/Types/Enemies/Kingpins/GrineerKuvaLichAvatar"
+ 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 14 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
+ 15 [-]: MOVE      R0 R3        ; R0 := R3
+ 16 [-]: MOVE      R0 R2        ; R0 := R2
+ 17 [-]: SETGLOBAL R4 K7        ; NpcEvaluateAbility := R4
+ 18 [-]: SETGLOBAL R4 K8        ; 0xECF1EA57 := R4
+ 19 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
+ 20 [-]: MOVE      R0 R0        ; R0 := R0
+ 21 [-]: SETGLOBAL R4 K9        ; ReactToDamage := R4
+ 22 [-]: SETGLOBAL R4 K10       ; 0x4B00FBD8 := R4
+ 23 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
+ 24 [-]: SETGLOBAL R4 K11       ; InitializeAbility := R4
+ 25 [-]: SETGLOBAL R4 K12       ; 0x3BDC280E := R4
+ 26 [-]: CLOSURE   R4 5         ; R4 := closure(Function #6)
+ 27 [-]: MOVE      R0 R3        ; R0 := R3
+ 28 [-]: MOVE      R0 R1        ; R0 := R1
+ 29 [-]: SETGLOBAL R4 K13       ; ActivateAbility := R4
+ 30 [-]: SETGLOBAL R4 K14       ; 0xCC0B19E0 := R4
+ 31 [-]: CLOSURE   R4 6         ; R4 := closure(Function #7)
+ 32 [-]: SETGLOBAL R4 K15       ; DeactivateAbility := R4
+ 33 [-]: SETGLOBAL R4 K16       ; 0x1FDB8A0 := R4
+ 34 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 26
+; Defined at line: 12
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -81,7 +80,7 @@ code size: 1
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 38
+; Defined at line: 24
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -113,7 +112,7 @@ code size: 1
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 50
+; Defined at line: 36
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -295,7 +294,7 @@ code size: 1
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 109
+; Defined at line: 95
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -313,7 +312,7 @@ code size: 1
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 113
+; Defined at line: 99
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -331,7 +330,7 @@ code size: 1
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 117
+; Defined at line: 103
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -446,7 +445,7 @@ code size: 1
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 158
+; Defined at line: 144
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0

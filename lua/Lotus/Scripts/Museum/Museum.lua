@@ -7,15 +7,15 @@ code size: 364
 code size: 148
 code size: 32
 code size: 15
-code size: 38
+code size: 41
 code size: 8
 code size: 33
-code size: 27
+code size: 30
 code size: 40
 code size: 25
 code size: 62
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Museum\Museum.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Museum\Museum.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1123,50 +1123,53 @@ code size: 62
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 6
-  5 [-]: JMP       6            ; PC := 6
-  6 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
-  7 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0x4E46476E"]
-  8 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  9 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 10 [-]: TEST      R1 0         ; if not R1 then PC := 16
- 11 [-]: JMP       16           ; PC := 16
- 12 [-]: GETGLOBAL R1 K2        ; R1 := 0x201191EA
- 13 [-]: LOADK     R2 K3        ; R2 := 0
- 14 [-]: CALL      R1 2 1       ; R1(R2)
- 15 [-]: JMP       6            ; PC := 6
- 16 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 17 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["MUSEUM_SetupDeco"]
- 18 [-]: EQ        1 R1 K6      ; if R1 == nil then PC := 27
- 19 [-]: JMP       27           ; PC := 27
- 20 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 21 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xDA97C048"]
- 22 [-]: GETGLOBAL R2 K8        ; R2 := spinDeco
- 23 [-]: GETGLOBAL R3 K9        ; R3 := decoOffset
- 24 [-]: GETGLOBAL R4 K10       ; R4 := decoRotationAtten
- 25 [-]: GETGLOBAL R5 K11       ; R5 := focusFov
- 26 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
- 27 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
- 28 [-]: GETGLOBAL R2 K12       ; R2 := transmission
- 29 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 30 [-]: TEST      R1 1         ; if R1 then PC := 38
- 31 [-]: JMP       38           ; PC := 38
- 32 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 33 [-]: CALL      R1 1 1       ; R1()
- 34 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 35 [-]: GETTABLE  R1 R1 K13    ; R1 := R1["0x36414212"]
- 36 [-]: GETGLOBAL R2 K12       ; R2 := transmission
- 37 [-]: CALL      R1 2 1       ; R1(R2)
- 38 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
+  2 [-]: GETGLOBAL R2 K2        ; R2 := transmission
+  3 [-]: SETTABLE  R1 K1 R2     ; R1["MUSEUM_Transmission"] := R2
+  4 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+  5 [-]: MOVE      R2 R0        ; R2 := R0
+  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  7 [-]: TEST      R1 0         ; if not R1 then PC := 9
+  8 [-]: JMP       9            ; PC := 9
+  9 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+ 10 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0["0x4E46476E"]
+ 11 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
+ 12 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
+ 13 [-]: TEST      R1 0         ; if not R1 then PC := 19
+ 14 [-]: JMP       19           ; PC := 19
+ 15 [-]: GETGLOBAL R1 K5        ; R1 := 0x201191EA
+ 16 [-]: LOADK     R2 K6        ; R2 := 0
+ 17 [-]: CALL      R1 2 1       ; R1(R2)
+ 18 [-]: JMP       9            ; PC := 9
+ 19 [-]: GETGLOBAL R1 K0        ; R1 := _T
+ 20 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["MUSEUM_SetupDeco"]
+ 21 [-]: EQ        1 R1 K8      ; if R1 == nil then PC := 30
+ 22 [-]: JMP       30           ; PC := 30
+ 23 [-]: GETGLOBAL R1 K0        ; R1 := _T
+ 24 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["0xDA97C048"]
+ 25 [-]: GETGLOBAL R2 K10       ; R2 := spinDeco
+ 26 [-]: GETGLOBAL R3 K11       ; R3 := decoOffset
+ 27 [-]: GETGLOBAL R4 K12       ; R4 := decoRotationAtten
+ 28 [-]: GETGLOBAL R5 K13       ; R5 := focusFov
+ 29 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 30 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+ 31 [-]: GETGLOBAL R2 K2        ; R2 := transmission
+ 32 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 33 [-]: TEST      R1 1         ; if R1 then PC := 41
+ 34 [-]: JMP       41           ; PC := 41
+ 35 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 36 [-]: CALL      R1 1 1       ; R1()
+ 37 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 38 [-]: GETTABLE  R1 R1 K14    ; R1 := R1["0x36414212"]
+ 39 [-]: GETGLOBAL R2 K2        ; R2 := transmission
+ 40 [-]: CALL      R1 2 1       ; R1(R2)
+ 41 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 400
+; Defined at line: 402
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1185,7 +1188,7 @@ code size: 62
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 405
+; Defined at line: 407
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1229,17 +1232,17 @@ code size: 62
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 420
+; Defined at line: 422
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: TEST      R0 0         ; if not R0 then PC := 23
-  2 [-]: JMP       23           ; PC := 23
+  1 [-]: TEST      R0 0         ; if not R0 then PC := 26
+  2 [-]: JMP       26           ; PC := 26
   3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 23
-  5 [-]: JMP       23           ; PC := 23
+  4 [-]: TEST      R2 0         ; if not R2 then PC := 26
+  5 [-]: JMP       26           ; PC := 26
   6 [-]: GETGLOBAL R2 K0        ; R2 := gChallengeMgr
   7 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0x83829B2"]
   8 [-]: GETGLOBAL R4 K2        ; R4 := gRegion
@@ -1256,18 +1259,21 @@ code size: 62
  19 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["0x25992394"]
  20 [-]: GETGLOBAL R3 K7        ; R3 := donateSound
  21 [-]: CALL      R2 2 1       ; R2(R3)
- 22 [-]: JMP       27           ; PC := 27
- 23 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 24 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xB11F032"]
- 25 [-]: LOADK     R3 K9        ; R3 := "/Lotus/Language/Menu/CraftingErrorText_UnknownError"
- 26 [-]: CALL      R2 2 1       ; R2(R3)
- 27 [-]: RETURN    R0 1         ; return 
+ 22 [-]: GETGLOBAL R2 K8        ; R2 := gGameData
+ 23 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0xC5F3D29"]
+ 24 [-]: CALL      R2 2 1       ; R2(R3)
+ 25 [-]: JMP       30           ; PC := 30
+ 26 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 27 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["0xB11F032"]
+ 28 [-]: LOADK     R3 K11       ; R3 := "/Lotus/Language/Menu/CraftingErrorText_UnknownError"
+ 29 [-]: CALL      R2 2 1       ; R2(R3)
+ 30 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 430
+; Defined at line: 433
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1318,7 +1324,7 @@ code size: 62
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 443
+; Defined at line: 446
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1354,7 +1360,7 @@ code size: 62
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 451
+; Defined at line: 454
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0

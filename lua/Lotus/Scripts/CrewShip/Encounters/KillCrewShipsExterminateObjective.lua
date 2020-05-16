@@ -1,14 +1,14 @@
-code size: 83
+code size: 84
 code size: 16
 code size: 54
 code size: 7
 code size: 16
 code size: 36
 code size: 25
-code size: 79
+code size: 83
 code size: 65
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\Encounters\KillCrewShipsExterminateObjective.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\Encounters\KillCrewShipsExterminateObjective.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -83,23 +83,24 @@ code size: 65
  64 [-]: MOVE      R0 R5        ; R0 := R5
  65 [-]: MOVE      R0 R14       ; R0 := R14
  66 [-]: MOVE      R0 R21       ; R0 := R21
- 67 [-]: MOVE      R0 R16       ; R0 := R16
- 68 [-]: MOVE      R0 R2        ; R0 := R2
- 69 [-]: MOVE      R0 R8        ; R0 := R8
- 70 [-]: CLOSURE   R23 7        ; R23 := closure(Function #8)
- 71 [-]: MOVE      R0 R22       ; R0 := R22
- 72 [-]: MOVE      R0 R20       ; R0 := R20
- 73 [-]: MOVE      R0 R14       ; R0 := R14
- 74 [-]: MOVE      R0 R15       ; R0 := R15
- 75 [-]: MOVE      R0 R11       ; R0 := R11
- 76 [-]: MOVE      R0 R12       ; R0 := R12
- 77 [-]: MOVE      R0 R9        ; R0 := R9
- 78 [-]: MOVE      R0 R4        ; R0 := R4
- 79 [-]: MOVE      R0 R10       ; R0 := R10
- 80 [-]: MOVE      R0 R19       ; R0 := R19
- 81 [-]: SETGLOBAL R23 K13      ; KillCrewShipsExterminateObjective := R23
- 82 [-]: SETGLOBAL R23 K14      ; 0xA0133EDE := R23
- 83 [-]: RETURN    R0 1         ; return 
+ 67 [-]: MOVE      R0 R15       ; R0 := R15
+ 68 [-]: MOVE      R0 R16       ; R0 := R16
+ 69 [-]: MOVE      R0 R2        ; R0 := R2
+ 70 [-]: MOVE      R0 R8        ; R0 := R8
+ 71 [-]: CLOSURE   R23 7        ; R23 := closure(Function #8)
+ 72 [-]: MOVE      R0 R22       ; R0 := R22
+ 73 [-]: MOVE      R0 R20       ; R0 := R20
+ 74 [-]: MOVE      R0 R14       ; R0 := R14
+ 75 [-]: MOVE      R0 R15       ; R0 := R15
+ 76 [-]: MOVE      R0 R11       ; R0 := R11
+ 77 [-]: MOVE      R0 R12       ; R0 := R12
+ 78 [-]: MOVE      R0 R9        ; R0 := R9
+ 79 [-]: MOVE      R0 R4        ; R0 := R4
+ 80 [-]: MOVE      R0 R10       ; R0 := R10
+ 81 [-]: MOVE      R0 R19       ; R0 := R19
+ 82 [-]: SETGLOBAL R23 K13      ; KillCrewShipsExterminateObjective := R23
+ 83 [-]: SETGLOBAL R23 K14      ; 0xA0133EDE := R23
+ 84 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -326,7 +327,7 @@ code size: 65
 ;
 ; Name:            
 ; Defined at line: 108
-; #Upvalues:       13
+; #Upvalues:       14
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  11
@@ -382,40 +383,44 @@ code size: 65
  49 [-]: LOADK     R5 K14       ; R5 := 0
  50 [-]: CALL      R4 2 1       ; R4(R5)
  51 [-]: JMP       43           ; PC := 43
- 52 [-]: GETUPVAL  R4 U10       ; R4 := U10
- 53 [-]: CALL      R4 1 1       ; R4()
- 54 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 55 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4["0x2CF80F46"]
- 56 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 57 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 58 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5["0xBD1EF2BE"]
- 59 [-]: GETUPVAL  R7 U11       ; R7 := U11
- 60 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["0xF81722A2"]
- 61 [-]: EQ        1 R4 K14     ; if R4 == 0 then PC := 64
- 62 [-]: JMP       64           ; PC := 64
- 63 [-]: MOVE      R8 R0        ; R8 := R0
- 64 [-]: MOVE      R8 R1        ; R8 := R1
- 65 [-]: GETUPVAL  R9 U12       ; R9 := U12
- 66 [-]: MOVE      R10 R4       ; R10 := R4
- 67 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
- 68 [-]: CALL      R5 0 1       ; R5(R6,...)
- 69 [-]: SELF      R5 R0 K20    ; R6 := R0; R5 := R0["0x744365D5"]
- 70 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 71 [-]: GETGLOBAL R6 K21       ; R6 := Npc
- 72 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["ES_SETUP"]
- 73 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 79
- 74 [-]: JMP       79           ; PC := 79
- 75 [-]: SELF      R5 R0 K23    ; R6 := R0; R5 := R0["0xB76917A8"]
- 76 [-]: GETGLOBAL R7 K21       ; R7 := Npc
- 77 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["ES_ACTIVE"]
- 78 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 79 [-]: RETURN    R0 1         ; return 
+ 52 [-]: GETUPVAL  R4 U8        ; R4 := U8
+ 53 [-]: GETUPVAL  R5 U10       ; R5 := U10
+ 54 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 58
+ 55 [-]: JMP       58           ; PC := 58
+ 56 [-]: GETUPVAL  R4 U11       ; R4 := U11
+ 57 [-]: CALL      R4 1 1       ; R4()
+ 58 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 59 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4["0x2CF80F46"]
+ 60 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 61 [-]: GETUPVAL  R5 U4        ; R5 := U4
+ 62 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5["0xBD1EF2BE"]
+ 63 [-]: GETUPVAL  R7 U12       ; R7 := U12
+ 64 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["0xF81722A2"]
+ 65 [-]: EQ        1 R4 K14     ; if R4 == 0 then PC := 68
+ 66 [-]: JMP       68           ; PC := 68
+ 67 [-]: MOVE      R8 R0        ; R8 := R0
+ 68 [-]: MOVE      R8 R1        ; R8 := R1
+ 69 [-]: GETUPVAL  R9 U13       ; R9 := U13
+ 70 [-]: MOVE      R10 R4       ; R10 := R4
+ 71 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
+ 72 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 73 [-]: SELF      R5 R0 K20    ; R6 := R0; R5 := R0["0x744365D5"]
+ 74 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 75 [-]: GETGLOBAL R6 K21       ; R6 := Npc
+ 76 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["ES_SETUP"]
+ 77 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 83
+ 78 [-]: JMP       83           ; PC := 83
+ 79 [-]: SELF      R5 R0 K23    ; R6 := R0; R5 := R0["0xB76917A8"]
+ 80 [-]: GETGLOBAL R7 K21       ; R7 := Npc
+ 81 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["ES_ACTIVE"]
+ 82 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 83 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 146
+; Defined at line: 148
 ; #Upvalues:       10
 ; #Parameters:     1
 ; Is_vararg:       0

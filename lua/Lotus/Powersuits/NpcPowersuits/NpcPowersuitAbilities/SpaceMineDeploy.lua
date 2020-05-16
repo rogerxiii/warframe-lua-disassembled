@@ -1,11 +1,11 @@
 code size: 15
 code size: 10
 code size: 11
-code size: 54
+code size: 60
 code size: 133
 code size: 10
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\SpaceMineDeploy.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\SpaceMineDeploy.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -88,61 +88,67 @@ code size: 10
   3 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0x107A113D"]
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   5 [-]: GETTABLE  R3 R2 K2     ; R3 := R2["visible"]
-  6 [-]: TEST      R3 0         ; if not R3 then PC := 52
-  7 [-]: JMP       52           ; PC := 52
+  6 [-]: TEST      R3 0         ; if not R3 then PC := 58
+  7 [-]: JMP       58           ; PC := 58
   8 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
   9 [-]: GETTABLE  R4 R2 K4     ; R4 := R2["avatar"]
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: TEST      R3 1         ; if R3 then PC := 52
- 12 [-]: JMP       52           ; PC := 52
+ 11 [-]: TEST      R3 1         ; if R3 then PC := 58
+ 12 [-]: JMP       58           ; PC := 58
  13 [-]: GETTABLE  R3 R2 K4     ; R3 := R2["avatar"]
  14 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0xA56CD0BB"]
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: TEST      R3 1         ; if R3 then PC := 52
- 17 [-]: JMP       52           ; PC := 52
+ 16 [-]: TEST      R3 1         ; if R3 then PC := 58
+ 17 [-]: JMP       58           ; PC := 58
  18 [-]: GETTABLE  R3 R2 K6     ; R3 := R2["distanceToTarget"]
  19 [-]: GETGLOBAL R4 K7        ; R4 := minRange
- 20 [-]: LE        0 R4 R3      ; if R4 > R3 then PC := 52
- 21 [-]: JMP       52           ; PC := 52
+ 20 [-]: LE        0 R4 R3      ; if R4 > R3 then PC := 58
+ 21 [-]: JMP       58           ; PC := 58
  22 [-]: GETTABLE  R3 R2 K6     ; R3 := R2["distanceToTarget"]
  23 [-]: GETGLOBAL R4 K8        ; R4 := maxRange
- 24 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 52
- 25 [-]: JMP       52           ; PC := 52
- 26 [-]: GETGLOBAL R3 K9        ; R3 := 0xEDD2EBFF
- 27 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x6DA72501"]
- 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: GETTABLE  R5 R2 K4     ; R5 := R2["avatar"]
- 30 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5["0x6DA72501"]
- 31 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 32 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 33 [-]: GETGLOBAL R4 K11       ; R4 := math
- 34 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["0xF93F7CC8"]
- 35 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 36 [-]: GETTABLE  R6 R3 K13    ; R6 := R3["heading"]
- 37 [-]: SELF      R7 R1 K14    ; R8 := R1; R7 := R1["0x30889EE1"]
- 38 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 39 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["heading"]
- 40 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
- 41 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 42 [-]: GETGLOBAL R5 K15       ; R5 := allowedAttackAngle
- 43 [-]: LT        0 R5 R4      ; if R5 >= R4 then PC := 47
- 44 [-]: JMP       47           ; PC := 47
- 45 [-]: LOADK     R5 K16       ; R5 := 0
- 46 [-]: RETURN    R5 2         ; return R5
- 47 [-]: SELF      R5 R0 K17    ; R6 := R0; R5 := R0["0xACA59CC1"]
- 48 [-]: GETTABLE  R7 R2 K4     ; R7 := R2["avatar"]
- 49 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 50 [-]: LOADK     R5 K18       ; R5 := 1
- 51 [-]: RETURN    R5 2         ; return R5
- 52 [-]: LOADK     R5 K16       ; R5 := 0
- 53 [-]: RETURN    R5 2         ; return R5
- 54 [-]: RETURN    R0 1         ; return 
+ 24 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 58
+ 25 [-]: JMP       58           ; PC := 58
+ 26 [-]: SELF      R3 R1 K0     ; R4 := R1; R3 := R1["0xABD9DD93"]
+ 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 28 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x96EA2C9B"]
+ 29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 30 [-]: TEST      R3 0         ; if not R3 then PC := 58
+ 31 [-]: JMP       58           ; PC := 58
+ 32 [-]: GETGLOBAL R3 K10       ; R3 := 0xEDD2EBFF
+ 33 [-]: SELF      R4 R1 K11    ; R5 := R1; R4 := R1["0x6DA72501"]
+ 34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 35 [-]: GETTABLE  R5 R2 K4     ; R5 := R2["avatar"]
+ 36 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0x6DA72501"]
+ 37 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 38 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 39 [-]: GETGLOBAL R4 K12       ; R4 := math
+ 40 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["0xF93F7CC8"]
+ 41 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 42 [-]: GETTABLE  R6 R3 K14    ; R6 := R3["heading"]
+ 43 [-]: SELF      R7 R1 K15    ; R8 := R1; R7 := R1["0x30889EE1"]
+ 44 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 45 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["heading"]
+ 46 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
+ 47 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+ 48 [-]: GETGLOBAL R5 K16       ; R5 := allowedAttackAngle
+ 49 [-]: LT        0 R5 R4      ; if R5 >= R4 then PC := 53
+ 50 [-]: JMP       53           ; PC := 53
+ 51 [-]: LOADK     R5 K17       ; R5 := 0
+ 52 [-]: RETURN    R5 2         ; return R5
+ 53 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0["0xACA59CC1"]
+ 54 [-]: GETTABLE  R7 R2 K4     ; R7 := R2["avatar"]
+ 55 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 56 [-]: LOADK     R5 K19       ; R5 := 1
+ 57 [-]: RETURN    R5 2         ; return R5
+ 58 [-]: LOADK     R5 K17       ; R5 := 0
+ 59 [-]: RETURN    R5 2         ; return R5
+ 60 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 69
+; Defined at line: 70
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -286,7 +292,7 @@ code size: 10
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 125
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

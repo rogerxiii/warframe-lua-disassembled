@@ -4,7 +4,7 @@ code size: 189
 code size: 37
 code size: 47
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\AmalgamCorpusOverrideFinisherScript.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\AmalgamCorpusOverrideFinisherScript.luac 
 
 ; Name:            
 ; Defined at line: 0

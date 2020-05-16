@@ -1,7 +1,7 @@
 code size: 25
 code size: 31
 code size: 34
-code size: 209
+code size: 212
 code size: 59
 code size: 46
 code size: 39
@@ -10,7 +10,7 @@ code size: 45
 code size: 138
 code size: 16
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Levels\CorpusAmalgamLab.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Levels\CorpusAmalgamLab.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -49,7 +49,7 @@ code size: 16
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 37
+; Defined at line: 38
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -91,7 +91,7 @@ code size: 16
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 44
+; Defined at line: 45
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -136,7 +136,7 @@ code size: 16
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 59
+; Defined at line: 60
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -265,98 +265,101 @@ code size: 16
 121 [-]: MOVE      R19 R16      ; R19 := R16
 122 [-]: CALL      R17 3 1      ; R17(R18,R19)
 123 [-]: FORLOOP   R12 106      ; R12 += R14; if R12 <= R13 then begin PC := 106; R15 := R12 end
-124 [-]: LOADK     R17 K7       ; R17 := 3
-125 [-]: GETGLOBAL R18 K36      ; R18 := 0x201191EA
-126 [-]: LOADK     R19 K37      ; R19 := 0.10000000149012
-127 [-]: CALL      R18 2 1      ; R18(R19)
-128 [-]: LOADK     R18 K3       ; R18 := 1
-129 [-]: MOVE      R19 R17      ; R19 := R17
-130 [-]: LOADK     R20 K3       ; R20 := 1
-131 [-]: FORPREP   R18 198      ; R18 -= R20; PC := 198
-132 [-]: GETGLOBAL R22 K35      ; R22 := 0x7FD4B57D
-133 [-]: LOADK     R23 K3       ; R23 := 1
-134 [-]: GETGLOBAL R24 K13      ; R24 := spawnPoints
-135 [-]: LEN       R24 R24      ; R24 := # R24
-136 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-137 [-]: GETGLOBAL R23 K13      ; R23 := spawnPoints
-138 [-]: GETTABLE  R23 R23 R22  ; R23 := R23[R22]
-139 [-]: GETGLOBAL R24 K1       ; R24 := gRegion
-140 [-]: SELF      R24 R24 K38  ; R25 := R24; R24 := R24["0xF144999"]
-141 [-]: GETGLOBAL R26 K39      ; R26 := attendantDecoTag
-142 [-]: SELF      R27 R23 K40  ; R28 := R23; R27 := R23["0x6DA72501"]
-143 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-144 [-]: LOADK     R28 K0       ; R28 := 0
-145 [-]: LOADK     R29 K3       ; R29 := 1
-146 [-]: CALL      R24 6 2      ; R24 := R24(R25,R26,R27,R28,R29)
-147 [-]: TEST      R24 0        ; if not R24 then PC := 167
-148 [-]: JMP       167          ; PC := 167
-149 [-]: GETUPVAL  R24 U1       ; R24 := U1
-150 [-]: MOVE      R25 R23      ; R25 := R23
-151 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-152 [-]: EQ        0 R24 K41    ; if R24 ~= "0x1" then PC := 167
-153 [-]: JMP       167          ; PC := 167
-154 [-]: SELF      R24 R23 K42  ; R25 := R23; R24 := R23["0xC5E91BA6"]
-155 [-]: CALL      R24 2 1      ; R24(R25)
-156 [-]: GETGLOBAL R24 K33      ; R24 := table
-157 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
-158 [-]: GETGLOBAL R25 K13      ; R25 := spawnPoints
-159 [-]: MOVE      R26 R22      ; R26 := R22
-160 [-]: CALL      R24 3 1      ; R24(R25,R26)
-161 [-]: GETGLOBAL R24 K33      ; R24 := table
-162 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
-163 [-]: GETGLOBAL R25 K43      ; R25 := decoSkels
-164 [-]: MOVE      R26 R22      ; R26 := R22
-165 [-]: CALL      R24 3 1      ; R24(R25,R26)
-166 [-]: JMP       198          ; PC := 198
-167 [-]: GETGLOBAL R24 K1       ; R24 := gRegion
-168 [-]: SELF      R24 R24 K38  ; R25 := R24; R24 := R24["0xF144999"]
-169 [-]: GETGLOBAL R26 K39      ; R26 := attendantDecoTag
-170 [-]: SELF      R27 R23 K40  ; R28 := R23; R27 := R23["0x6DA72501"]
-171 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-172 [-]: LOADK     R28 K0       ; R28 := 0
-173 [-]: LOADK     R29 K3       ; R29 := 1
-174 [-]: CALL      R24 6 2      ; R24 := R24(R25,R26,R27,R28,R29)
-175 [-]: TEST      R24 0        ; if not R24 then PC := 186
-176 [-]: JMP       186          ; PC := 186
-177 [-]: GETUPVAL  R24 U1       ; R24 := U1
-178 [-]: MOVE      R25 R23      ; R25 := R23
-179 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-180 [-]: EQ        0 R24 K44    ; if R24 ~= "0x0" then PC := 186
-181 [-]: JMP       186          ; PC := 186
-182 [-]: GETGLOBAL R24 K36      ; R24 := 0x201191EA
-183 [-]: LOADK     R25 K37      ; R25 := 0.10000000149012
-184 [-]: CALL      R24 2 1      ; R24(R25)
-185 [-]: JMP       198          ; PC := 198
-186 [-]: SELF      R24 R23 K42  ; R25 := R23; R24 := R23["0xC5E91BA6"]
+124 [-]: GETGLOBAL R17 K36      ; R17 := spawnAdditionalNpcAttendants
+125 [-]: EQ        0 R17 K37    ; if R17 ~= "0x1" then PC := 212
+126 [-]: JMP       212          ; PC := 212
+127 [-]: LOADK     R17 K7       ; R17 := 3
+128 [-]: GETGLOBAL R18 K38      ; R18 := 0x201191EA
+129 [-]: LOADK     R19 K39      ; R19 := 0.10000000149012
+130 [-]: CALL      R18 2 1      ; R18(R19)
+131 [-]: LOADK     R18 K3       ; R18 := 1
+132 [-]: MOVE      R19 R17      ; R19 := R17
+133 [-]: LOADK     R20 K3       ; R20 := 1
+134 [-]: FORPREP   R18 201      ; R18 -= R20; PC := 201
+135 [-]: GETGLOBAL R22 K35      ; R22 := 0x7FD4B57D
+136 [-]: LOADK     R23 K3       ; R23 := 1
+137 [-]: GETGLOBAL R24 K13      ; R24 := spawnPoints
+138 [-]: LEN       R24 R24      ; R24 := # R24
+139 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
+140 [-]: GETGLOBAL R23 K13      ; R23 := spawnPoints
+141 [-]: GETTABLE  R23 R23 R22  ; R23 := R23[R22]
+142 [-]: GETGLOBAL R24 K1       ; R24 := gRegion
+143 [-]: SELF      R24 R24 K40  ; R25 := R24; R24 := R24["0xF144999"]
+144 [-]: GETGLOBAL R26 K41      ; R26 := attendantDecoTag
+145 [-]: SELF      R27 R23 K42  ; R28 := R23; R27 := R23["0x6DA72501"]
+146 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+147 [-]: LOADK     R28 K0       ; R28 := 0
+148 [-]: LOADK     R29 K3       ; R29 := 1
+149 [-]: CALL      R24 6 2      ; R24 := R24(R25,R26,R27,R28,R29)
+150 [-]: TEST      R24 0        ; if not R24 then PC := 170
+151 [-]: JMP       170          ; PC := 170
+152 [-]: GETUPVAL  R24 U1       ; R24 := U1
+153 [-]: MOVE      R25 R23      ; R25 := R23
+154 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+155 [-]: EQ        0 R24 K37    ; if R24 ~= "0x1" then PC := 170
+156 [-]: JMP       170          ; PC := 170
+157 [-]: SELF      R24 R23 K43  ; R25 := R23; R24 := R23["0xC5E91BA6"]
+158 [-]: CALL      R24 2 1      ; R24(R25)
+159 [-]: GETGLOBAL R24 K33      ; R24 := table
+160 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
+161 [-]: GETGLOBAL R25 K13      ; R25 := spawnPoints
+162 [-]: MOVE      R26 R22      ; R26 := R22
+163 [-]: CALL      R24 3 1      ; R24(R25,R26)
+164 [-]: GETGLOBAL R24 K33      ; R24 := table
+165 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
+166 [-]: GETGLOBAL R25 K44      ; R25 := decoSkels
+167 [-]: MOVE      R26 R22      ; R26 := R22
+168 [-]: CALL      R24 3 1      ; R24(R25,R26)
+169 [-]: JMP       201          ; PC := 201
+170 [-]: GETGLOBAL R24 K1       ; R24 := gRegion
+171 [-]: SELF      R24 R24 K40  ; R25 := R24; R24 := R24["0xF144999"]
+172 [-]: GETGLOBAL R26 K41      ; R26 := attendantDecoTag
+173 [-]: SELF      R27 R23 K42  ; R28 := R23; R27 := R23["0x6DA72501"]
+174 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+175 [-]: LOADK     R28 K0       ; R28 := 0
+176 [-]: LOADK     R29 K3       ; R29 := 1
+177 [-]: CALL      R24 6 2      ; R24 := R24(R25,R26,R27,R28,R29)
+178 [-]: TEST      R24 0        ; if not R24 then PC := 189
+179 [-]: JMP       189          ; PC := 189
+180 [-]: GETUPVAL  R24 U1       ; R24 := U1
+181 [-]: MOVE      R25 R23      ; R25 := R23
+182 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+183 [-]: EQ        0 R24 K45    ; if R24 ~= "0x0" then PC := 189
+184 [-]: JMP       189          ; PC := 189
+185 [-]: GETGLOBAL R24 K38      ; R24 := 0x201191EA
+186 [-]: LOADK     R25 K39      ; R25 := 0.10000000149012
 187 [-]: CALL      R24 2 1      ; R24(R25)
-188 [-]: GETGLOBAL R24 K33      ; R24 := table
-189 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
-190 [-]: GETGLOBAL R25 K13      ; R25 := spawnPoints
-191 [-]: MOVE      R26 R22      ; R26 := R22
-192 [-]: CALL      R24 3 1      ; R24(R25,R26)
-193 [-]: GETGLOBAL R24 K33      ; R24 := table
-194 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
-195 [-]: GETGLOBAL R25 K43      ; R25 := decoSkels
-196 [-]: MOVE      R26 R22      ; R26 := R22
-197 [-]: CALL      R24 3 1      ; R24(R25,R26)
-198 [-]: FORLOOP   R18 132      ; R18 += R20; if R18 <= R19 then begin PC := 132; R21 := R18 end
-199 [-]: LOADK     R24 K3       ; R24 := 1
-200 [-]: GETGLOBAL R25 K43      ; R25 := decoSkels
-201 [-]: LEN       R25 R25      ; R25 := # R25
-202 [-]: LOADK     R26 K3       ; R26 := 1
-203 [-]: FORPREP   R24 208      ; R24 -= R26; PC := 208
-204 [-]: GETGLOBAL R28 K43      ; R28 := decoSkels
-205 [-]: GETTABLE  R28 R28 R27  ; R28 := R28[R27]
-206 [-]: SELF      R28 R28 K45  ; R29 := R28; R28 := R28["0xD4C2743F"]
-207 [-]: CALL      R28 2 1      ; R28(R29)
-208 [-]: FORLOOP   R24 204      ; R24 += R26; if R24 <= R25 then begin PC := 204; R27 := R24 end
-209 [-]: RETURN    R0 1         ; return 
+188 [-]: JMP       201          ; PC := 201
+189 [-]: SELF      R24 R23 K43  ; R25 := R23; R24 := R23["0xC5E91BA6"]
+190 [-]: CALL      R24 2 1      ; R24(R25)
+191 [-]: GETGLOBAL R24 K33      ; R24 := table
+192 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
+193 [-]: GETGLOBAL R25 K13      ; R25 := spawnPoints
+194 [-]: MOVE      R26 R22      ; R26 := R22
+195 [-]: CALL      R24 3 1      ; R24(R25,R26)
+196 [-]: GETGLOBAL R24 K33      ; R24 := table
+197 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xCDB1FD5E"]
+198 [-]: GETGLOBAL R25 K44      ; R25 := decoSkels
+199 [-]: MOVE      R26 R22      ; R26 := R22
+200 [-]: CALL      R24 3 1      ; R24(R25,R26)
+201 [-]: FORLOOP   R18 135      ; R18 += R20; if R18 <= R19 then begin PC := 135; R21 := R18 end
+202 [-]: LOADK     R24 K3       ; R24 := 1
+203 [-]: GETGLOBAL R25 K44      ; R25 := decoSkels
+204 [-]: LEN       R25 R25      ; R25 := # R25
+205 [-]: LOADK     R26 K3       ; R26 := 1
+206 [-]: FORPREP   R24 211      ; R24 -= R26; PC := 211
+207 [-]: GETGLOBAL R28 K44      ; R28 := decoSkels
+208 [-]: GETTABLE  R28 R28 R27  ; R28 := R28[R27]
+209 [-]: SELF      R28 R28 K46  ; R29 := R28; R28 := R28["0xD4C2743F"]
+210 [-]: CALL      R28 2 1      ; R28(R29)
+211 [-]: FORLOOP   R24 207      ; R24 += R26; if R24 <= R25 then begin PC := 207; R27 := R24 end
+212 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 120
+; Defined at line: 123
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -426,7 +429,7 @@ code size: 16
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 140
+; Defined at line: 143
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -483,7 +486,7 @@ code size: 16
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 156
+; Defined at line: 159
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -533,7 +536,7 @@ code size: 16
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 173
+; Defined at line: 176
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -579,7 +582,7 @@ code size: 16
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 186
+; Defined at line: 189
 ; #Upvalues:       0
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -635,7 +638,7 @@ code size: 16
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 200
+; Defined at line: 203
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -784,7 +787,7 @@ code size: 16
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 233
+; Defined at line: 236
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

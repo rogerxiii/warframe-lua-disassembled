@@ -1,10 +1,10 @@
 code size: 18
-code size: 52
-code size: 50
-code size: 6
+code size: 53
+code size: 51
+code size: 7
 code size: 43
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\WorldStateUtilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\WorldStateUtilities.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -38,146 +38,149 @@ code size: 43
 ; Name:            
 ; Defined at line: 3
 ; #Upvalues:       0
-; #Parameters:     2
+; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
-  2 [-]: GETGLOBAL R3 K1        ; R3 := gGameData
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R1 2         ; return R1
-  7 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  8 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["SeasonParamString"]
-  9 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 24
- 10 [-]: JMP       24           ; PC := 24
- 11 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["SeasonParams"]
- 13 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 24
- 14 [-]: JMP       24           ; PC := 24
- 15 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 16 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["SeasonParamString"]
- 17 [-]: GETGLOBAL R3 K1        ; R3 := gGameData
- 18 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x2D0B8A86"]
- 19 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 20 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["mSeasonInfo"]
- 21 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["mParams"]
- 22 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 38
- 23 [-]: JMP       38           ; PC := 38
- 24 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 25 [-]: GETGLOBAL R3 K1        ; R3 := gGameData
- 26 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x2D0B8A86"]
- 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 28 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["mSeasonInfo"]
- 29 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["mParams"]
- 30 [-]: SETTABLE  R2 K3 R3     ; R2["SeasonParamString"] := R3
- 31 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 32 [-]: GETGLOBAL R3 K9        ; R3 := cjson
- 33 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["0x8A2E8315"]
- 34 [-]: GETGLOBAL R4 K2        ; R4 := _T
- 35 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["SeasonParamString"]
- 36 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 37 [-]: SETTABLE  R2 K5 R3     ; R2["SeasonParams"] := R3
- 38 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 39 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["SeasonParams"]
- 40 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 51
- 41 [-]: JMP       51           ; PC := 51
- 42 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 43 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["SeasonParams"]
- 44 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
- 45 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 51
- 46 [-]: JMP       51           ; PC := 51
- 47 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 48 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["SeasonParams"]
- 49 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
- 50 [-]: RETURN    R2 2         ; return R2
- 51 [-]: RETURN    R1 2         ; return R1
- 52 [-]: RETURN    R0 1         ; return 
+  1 [-]: TEST      R2 1         ; if R2 then PC := 4
+  2 [-]: JMP       4            ; PC := 4
+  3 [-]: GETGLOBAL R2 K0        ; R2 := gGameData
+  4 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+  5 [-]: MOVE      R4 R2        ; R4 := R2
+  6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  7 [-]: TEST      R3 0         ; if not R3 then PC := 10
+  8 [-]: JMP       10           ; PC := 10
+  9 [-]: RETURN    R1 2         ; return R1
+ 10 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["SeasonParamString"]
+ 12 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 26
+ 13 [-]: JMP       26           ; PC := 26
+ 14 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 15 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["SeasonParams"]
+ 16 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 26
+ 17 [-]: JMP       26           ; PC := 26
+ 18 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 19 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["SeasonParamString"]
+ 20 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2["0x2D0B8A86"]
+ 21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 22 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["mSeasonInfo"]
+ 23 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["mParams"]
+ 24 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 39
+ 25 [-]: JMP       39           ; PC := 39
+ 26 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 27 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2["0x2D0B8A86"]
+ 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 29 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["mSeasonInfo"]
+ 30 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["mParams"]
+ 31 [-]: SETTABLE  R3 K3 R4     ; R3["SeasonParamString"] := R4
+ 32 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 33 [-]: GETGLOBAL R4 K9        ; R4 := cjson
+ 34 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["0x8A2E8315"]
+ 35 [-]: GETGLOBAL R5 K2        ; R5 := _T
+ 36 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["SeasonParamString"]
+ 37 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 38 [-]: SETTABLE  R3 K5 R4     ; R3["SeasonParams"] := R4
+ 39 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 40 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["SeasonParams"]
+ 41 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 52
+ 42 [-]: JMP       52           ; PC := 52
+ 43 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 44 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["SeasonParams"]
+ 45 [-]: GETTABLE  R3 R3 R0     ; R3 := R3[R0]
+ 46 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 52
+ 47 [-]: JMP       52           ; PC := 52
+ 48 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 49 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["SeasonParams"]
+ 50 [-]: GETTABLE  R3 R3 R0     ; R3 := R3[R0]
+ 51 [-]: RETURN    R3 2         ; return R3
+ 52 [-]: RETURN    R1 2         ; return R1
+ 53 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 21
+; Defined at line: 25
 ; #Upvalues:       0
-; #Parameters:     2
+; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
-  2 [-]: GETGLOBAL R3 K1        ; R3 := gGameData
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R1 2         ; return R1
-  7 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  8 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["WorldStateOverrideString"]
-  9 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 23
- 10 [-]: JMP       23           ; PC := 23
- 11 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["WorldStateOverrides"]
- 13 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 23
- 14 [-]: JMP       23           ; PC := 23
- 15 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 16 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["WorldStateOverrideString"]
- 17 [-]: GETGLOBAL R3 K1        ; R3 := gGameData
- 18 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x2D0B8A86"]
- 19 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 20 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["mOverrides"]
- 21 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 36
- 22 [-]: JMP       36           ; PC := 36
- 23 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 24 [-]: GETGLOBAL R3 K1        ; R3 := gGameData
- 25 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x2D0B8A86"]
- 26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 27 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["mOverrides"]
- 28 [-]: SETTABLE  R2 K3 R3     ; R2["WorldStateOverrideString"] := R3
- 29 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 30 [-]: GETGLOBAL R3 K8        ; R3 := cjson
- 31 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0x8A2E8315"]
- 32 [-]: GETGLOBAL R4 K2        ; R4 := _T
- 33 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["WorldStateOverrideString"]
- 34 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 35 [-]: SETTABLE  R2 K5 R3     ; R2["WorldStateOverrides"] := R3
- 36 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 37 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["WorldStateOverrides"]
- 38 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 49
- 39 [-]: JMP       49           ; PC := 49
- 40 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 41 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["WorldStateOverrides"]
- 42 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
- 43 [-]: EQ        1 R2 K4      ; if R2 == nil then PC := 49
- 44 [-]: JMP       49           ; PC := 49
- 45 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 46 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["WorldStateOverrides"]
- 47 [-]: GETTABLE  R2 R2 R0     ; R2 := R2[R0]
- 48 [-]: RETURN    R2 2         ; return R2
- 49 [-]: RETURN    R1 2         ; return R1
- 50 [-]: RETURN    R0 1         ; return 
+  1 [-]: TEST      R2 1         ; if R2 then PC := 4
+  2 [-]: JMP       4            ; PC := 4
+  3 [-]: GETGLOBAL R2 K0        ; R2 := gGameData
+  4 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+  5 [-]: MOVE      R4 R2        ; R4 := R2
+  6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  7 [-]: TEST      R3 0         ; if not R3 then PC := 10
+  8 [-]: JMP       10           ; PC := 10
+  9 [-]: RETURN    R1 2         ; return R1
+ 10 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["WorldStateOverrideString"]
+ 12 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 25
+ 13 [-]: JMP       25           ; PC := 25
+ 14 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 15 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["WorldStateOverrides"]
+ 16 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 25
+ 17 [-]: JMP       25           ; PC := 25
+ 18 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 19 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["WorldStateOverrideString"]
+ 20 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2["0x2D0B8A86"]
+ 21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 22 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["mOverrides"]
+ 23 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 37
+ 24 [-]: JMP       37           ; PC := 37
+ 25 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 26 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2["0x2D0B8A86"]
+ 27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 28 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["mOverrides"]
+ 29 [-]: SETTABLE  R3 K3 R4     ; R3["WorldStateOverrideString"] := R4
+ 30 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 31 [-]: GETGLOBAL R4 K8        ; R4 := cjson
+ 32 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0x8A2E8315"]
+ 33 [-]: GETGLOBAL R5 K2        ; R5 := _T
+ 34 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["WorldStateOverrideString"]
+ 35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 36 [-]: SETTABLE  R3 K5 R4     ; R3["WorldStateOverrides"] := R4
+ 37 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 38 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["WorldStateOverrides"]
+ 39 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 50
+ 40 [-]: JMP       50           ; PC := 50
+ 41 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 42 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["WorldStateOverrides"]
+ 43 [-]: GETTABLE  R3 R3 R0     ; R3 := R3[R0]
+ 44 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 50
+ 45 [-]: JMP       50           ; PC := 50
+ 46 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 47 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["WorldStateOverrides"]
+ 48 [-]: GETTABLE  R3 R3 R0     ; R3 := R3[R0]
+ 49 [-]: RETURN    R3 2         ; return R3
+ 50 [-]: RETURN    R1 2         ; return R1
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 39
+; Defined at line: 47
 ; #Upvalues:       1
-; #Parameters:     2
+; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  7
 
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
-  5 [-]: RETURN    R2 0         ; return R2,...
-  6 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  2 [-]: MOVE      R4 R0        ; R4 := R0
+  3 [-]: MOVE      R5 R1        ; R5 := R1
+  4 [-]: MOVE      R6 R2        ; R6 := R2
+  5 [-]: TAILCALL  R3 4 0       ; R3,... := R3(R4,R5,R6)
+  6 [-]: RETURN    R3 0         ; return R3,...
+  7 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 43
+; Defined at line: 51
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

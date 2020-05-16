@@ -2,9 +2,9 @@ code size: 28
 code size: 61
 code size: 34
 code size: 282
-code size: 152
+code size: 150
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\VoidStorm.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\VoidStorm.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -46,7 +46,7 @@ code size: 152
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 14
+; Defined at line: 13
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -118,7 +118,7 @@ code size: 152
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 33
+; Defined at line: 32
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -163,7 +163,7 @@ code size: 152
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 52
+; Defined at line: 51
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -456,11 +456,11 @@ code size: 152
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 143
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  20
+; Max Stack Size:  19
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x90391273"]
@@ -564,55 +564,53 @@ code size: 152
 100 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 101 [-]: MOVE      R3 R12       ; R3 := R12
 102 [-]: LOADK     R12 K31      ; R12 := 1
-103 [-]: GETGLOBAL R13 K11      ; R13 := 0xB5A59043
-104 [-]: CALL      R13 1 2      ; R13 := R13()
-105 [-]: LOADK     R14 K9       ; R14 := 0
-106 [-]: GETGLOBAL R15 K7       ; R15 := _T
-107 [-]: GETTABLE  R15 R15 K8   ; R15 := R15["VoidStorm"]
-108 [-]: LT        0 R15 K31    ; if R15 >= 1 then PC := 152
-109 [-]: JMP       152          ; PC := 152
-110 [-]: GETGLOBAL R15 K38      ; R15 := 0x201191EA
-111 [-]: LOADK     R16 K9       ; R16 := 0
-112 [-]: CALL      R15 2 1      ; R15(R16)
-113 [-]: GETGLOBAL R15 K41      ; R15 := math
-114 [-]: GETTABLE  R15 R15 K42  ; R15 := R15["0x65F9712A"]
-115 [-]: LOADK     R16 K31      ; R16 := 1
-116 [-]: GETGLOBAL R17 K43      ; R17 := 0x4CDEF9FF
-117 [-]: CALL      R17 1 2      ; R17 := R17()
-118 [-]: MUL       R17 R17 K44  ; R17 := R17 * 0.014999999664724
-119 [-]: ADD       R17 R14 R17  ; R17 := R14 + R17
-120 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-121 [-]: MOVE      R14 R15      ; R14 := R15
-122 [-]: LT        0 K9 R12     ; if 0 >= R12 then PC := 149
-123 [-]: JMP       149          ; PC := 149
-124 [-]: GETGLOBAL R15 K41      ; R15 := math
-125 [-]: GETTABLE  R15 R15 K45  ; R15 := R15["0x8B011038"]
-126 [-]: LOADK     R16 K9       ; R16 := 0
-127 [-]: GETGLOBAL R17 K43      ; R17 := 0x4CDEF9FF
-128 [-]: CALL      R17 1 2      ; R17 := R17()
-129 [-]: MUL       R17 R17 K46  ; R17 := R17 * 0.20000000298023
-130 [-]: SUB       R17 R12 R17  ; R17 := R12 - R17
-131 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-132 [-]: MOVE      R12 R15      ; R12 := R15
-133 [-]: MUL       R15 R12 K22  ; R15 := R12 * 0.050000000745058
-134 [-]: SETTABLE  R5 K21 R15   ; R5["fade"] := R15
-135 [-]: SUB       R15 K31 R12  ; R15 := 1 - R12
-136 [-]: SETTABLE  R5 K23 R15   ; R5["saturation"] := R15
-137 [-]: LT        0 R12 K47    ; if R12 >= 0.0099999997764826 then PC := 146
-138 [-]: JMP       146          ; PC := 146
-139 [-]: GETGLOBAL R15 K11      ; R15 := 0xB5A59043
-140 [-]: LOADK     R16 K15      ; R16 := 255
-141 [-]: LOADK     R17 K15      ; R17 := 255
-142 [-]: LOADK     R18 K15      ; R18 := 255
-143 [-]: LOADK     R19 K15      ; R19 := 255
-144 [-]: CALL      R15 5 2      ; R15 := R15(R16,R17,R18,R19)
-145 [-]: SETTABLE  R5 K24 R15   ; R5["desaturateColor"] := R15
-146 [-]: GETTABLE  R15 R5 K48   ; R15 := R5["viewShake"]
-147 [-]: MUL       R16 R12 K50  ; R16 := R12 * 8
-148 [-]: SETTABLE  R15 K49 R16  ; R15["mShakeAmbient"] := R16
-149 [-]: GETGLOBAL R15 K7       ; R15 := _T
-150 [-]: SETTABLE  R15 K8 R14   ; R15["VoidStorm"] := R14
-151 [-]: JMP       106          ; PC := 106
-152 [-]: RETURN    R0 1         ; return 
+103 [-]: LOADK     R13 K9       ; R13 := 0
+104 [-]: GETGLOBAL R14 K7       ; R14 := _T
+105 [-]: GETTABLE  R14 R14 K8   ; R14 := R14["VoidStorm"]
+106 [-]: LT        0 R14 K31    ; if R14 >= 1 then PC := 150
+107 [-]: JMP       150          ; PC := 150
+108 [-]: GETGLOBAL R14 K38      ; R14 := 0x201191EA
+109 [-]: LOADK     R15 K9       ; R15 := 0
+110 [-]: CALL      R14 2 1      ; R14(R15)
+111 [-]: GETGLOBAL R14 K41      ; R14 := math
+112 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["0x65F9712A"]
+113 [-]: LOADK     R15 K31      ; R15 := 1
+114 [-]: GETGLOBAL R16 K43      ; R16 := 0x4CDEF9FF
+115 [-]: CALL      R16 1 2      ; R16 := R16()
+116 [-]: MUL       R16 R16 K44  ; R16 := R16 * 0.014999999664724
+117 [-]: ADD       R16 R13 R16  ; R16 := R13 + R16
+118 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+119 [-]: MOVE      R13 R14      ; R13 := R14
+120 [-]: LT        0 K9 R12     ; if 0 >= R12 then PC := 147
+121 [-]: JMP       147          ; PC := 147
+122 [-]: GETGLOBAL R14 K41      ; R14 := math
+123 [-]: GETTABLE  R14 R14 K45  ; R14 := R14["0x8B011038"]
+124 [-]: LOADK     R15 K9       ; R15 := 0
+125 [-]: GETGLOBAL R16 K43      ; R16 := 0x4CDEF9FF
+126 [-]: CALL      R16 1 2      ; R16 := R16()
+127 [-]: MUL       R16 R16 K46  ; R16 := R16 * 0.20000000298023
+128 [-]: SUB       R16 R12 R16  ; R16 := R12 - R16
+129 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+130 [-]: MOVE      R12 R14      ; R12 := R14
+131 [-]: MUL       R14 R12 K22  ; R14 := R12 * 0.050000000745058
+132 [-]: SETTABLE  R5 K21 R14   ; R5["fade"] := R14
+133 [-]: SUB       R14 K31 R12  ; R14 := 1 - R12
+134 [-]: SETTABLE  R5 K23 R14   ; R5["saturation"] := R14
+135 [-]: LT        0 R12 K47    ; if R12 >= 0.0099999997764826 then PC := 144
+136 [-]: JMP       144          ; PC := 144
+137 [-]: GETGLOBAL R14 K11      ; R14 := 0xB5A59043
+138 [-]: LOADK     R15 K15      ; R15 := 255
+139 [-]: LOADK     R16 K15      ; R16 := 255
+140 [-]: LOADK     R17 K15      ; R17 := 255
+141 [-]: LOADK     R18 K15      ; R18 := 255
+142 [-]: CALL      R14 5 2      ; R14 := R14(R15,R16,R17,R18)
+143 [-]: SETTABLE  R5 K24 R14   ; R5["desaturateColor"] := R14
+144 [-]: GETTABLE  R14 R5 K48   ; R14 := R5["viewShake"]
+145 [-]: MUL       R15 R12 K50  ; R15 := R12 * 8
+146 [-]: SETTABLE  R14 K49 R15  ; R14["mShakeAmbient"] := R15
+147 [-]: GETGLOBAL R14 K7       ; R14 := _T
+148 [-]: SETTABLE  R14 K8 R13   ; R14["VoidStorm"] := R13
+149 [-]: JMP       104          ; PC := 104
+150 [-]: RETURN    R0 1         ; return 
 
 

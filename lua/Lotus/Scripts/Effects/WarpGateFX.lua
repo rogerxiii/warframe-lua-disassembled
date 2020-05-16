@@ -4,7 +4,7 @@ code size: 196
 code size: 21
 code size: 17
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\WarpGateFX.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\WarpGateFX.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -36,7 +36,7 @@ code size: 17
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 28
+; Defined at line: 26
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -243,7 +243,7 @@ code size: 17
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 74
+; Defined at line: 72
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -450,7 +450,7 @@ code size: 17
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 120
+; Defined at line: 118
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -482,7 +482,7 @@ code size: 17
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 132
+; Defined at line: 130
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

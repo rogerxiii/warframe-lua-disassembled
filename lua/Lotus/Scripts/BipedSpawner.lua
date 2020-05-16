@@ -1,13 +1,13 @@
 code size: 27
 code size: 27
 code size: 31
-code size: 54
+code size: 74
 code size: 56
 code size: 104
 code size: 60
 code size: 50
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\BipedSpawner.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\BipedSpawner.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -137,8 +137,8 @@ code size: 50
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 54
-  5 [-]: JMP       54           ; PC := 54
+  4 [-]: TEST      R1 1         ; if R1 then PC := 74
+  5 [-]: JMP       74           ; PC := 74
   6 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   7 [-]: GETGLOBAL R2 K1        ; R2 := bipedSpawnPoint
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -166,34 +166,54 @@ code size: 50
  30 [-]: CALL      R1 3 1       ; R1(R2,R3)
  31 [-]: SELF      R1 R0 K9     ; R2 := R0; R1 := R0["0x80B14403"]
  32 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 33 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1["0x44590A2F"]
- 34 [-]: GETGLOBAL R4 K11       ; R4 := bipedSpawnPod
- 35 [-]: GETGLOBAL R5 K12       ; R5 := bipedAttachBone
- 36 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 37 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0xA78B7FA7"]
- 38 [-]: GETGLOBAL R4 K14       ; R4 := bipedAttachOffset
- 39 [-]: GETGLOBAL R5 K15       ; R5 := bipedAttachRotation
- 40 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 41 [-]: GETGLOBAL R2 K16       ; R2 := bipedDoorScript
- 42 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x8D5886B7"]
- 43 [-]: LOADK     R4 K17       ; R4 := "Execute"
- 44 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 45 [-]: GETGLOBAL R2 K18       ; R2 := 0x201191EA
- 46 [-]: LOADK     R3 K19       ; R3 := 1.5
- 47 [-]: CALL      R2 2 1       ; R2(R3)
- 48 [-]: SELF      R2 R1 K20    ; R3 := R1; R2 := R1["0x895CBBD1"]
- 49 [-]: CALL      R2 2 1       ; R2(R3)
- 50 [-]: SELF      R2 R0 K21    ; R3 := R0; R2 := R0["0x91ACEF1D"]
- 51 [-]: CALL      R2 2 1       ; R2(R3)
- 52 [-]: SELF      R2 R0 K22    ; R3 := R0; R2 := R0["0x750771BC"]
- 53 [-]: CALL      R2 2 1       ; R2(R3)
- 54 [-]: RETURN    R0 1         ; return 
+ 33 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 34 [-]: MOVE      R3 R1        ; R3 := R1
+ 35 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 36 [-]: TEST      R2 1         ; if R2 then PC := 74
+ 37 [-]: JMP       74           ; PC := 74
+ 38 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 39 [-]: GETGLOBAL R3 K10       ; R3 := bipedSpawnPod
+ 40 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 41 [-]: TEST      R2 1         ; if R2 then PC := 74
+ 42 [-]: JMP       74           ; PC := 74
+ 43 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1["0x44590A2F"]
+ 44 [-]: GETGLOBAL R4 K10       ; R4 := bipedSpawnPod
+ 45 [-]: GETGLOBAL R5 K12       ; R5 := bipedAttachBone
+ 46 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 47 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0xA78B7FA7"]
+ 48 [-]: GETGLOBAL R4 K14       ; R4 := bipedAttachOffset
+ 49 [-]: GETGLOBAL R5 K15       ; R5 := bipedAttachRotation
+ 50 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 51 [-]: GETGLOBAL R2 K16       ; R2 := bipedDoorScript
+ 52 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x8D5886B7"]
+ 53 [-]: LOADK     R4 K17       ; R4 := "Execute"
+ 54 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 55 [-]: GETGLOBAL R2 K18       ; R2 := 0x201191EA
+ 56 [-]: LOADK     R3 K19       ; R3 := 1.5
+ 57 [-]: CALL      R2 2 1       ; R2(R3)
+ 58 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 59 [-]: MOVE      R3 R1        ; R3 := R1
+ 60 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 61 [-]: TEST      R2 1         ; if R2 then PC := 65
+ 62 [-]: JMP       65           ; PC := 65
+ 63 [-]: SELF      R2 R1 K20    ; R3 := R1; R2 := R1["0x895CBBD1"]
+ 64 [-]: CALL      R2 2 1       ; R2(R3)
+ 65 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 66 [-]: MOVE      R3 R0        ; R3 := R0
+ 67 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 68 [-]: TEST      R2 1         ; if R2 then PC := 74
+ 69 [-]: JMP       74           ; PC := 74
+ 70 [-]: SELF      R2 R0 K21    ; R3 := R0; R2 := R0["0x91ACEF1D"]
+ 71 [-]: CALL      R2 2 1       ; R2(R3)
+ 72 [-]: SELF      R2 R0 K22    ; R3 := R0; R2 := R0["0x750771BC"]
+ 73 [-]: CALL      R2 2 1       ; R2(R3)
+ 74 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 83
+; Defined at line: 87
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -260,7 +280,7 @@ code size: 50
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 115
+; Defined at line: 119
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -375,7 +395,7 @@ code size: 50
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 157
+; Defined at line: 161
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -446,7 +466,7 @@ code size: 50
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 176
+; Defined at line: 180
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

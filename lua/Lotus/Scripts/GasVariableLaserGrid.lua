@@ -1,6 +1,6 @@
 code size: 823
 code size: 11
-code size: 98
+code size: 94
 code size: 31
 code size: 218
 code size: 19
@@ -11,7 +11,7 @@ code size: 16
 code size: 57
 code size: 24
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\GasVariableLaserGrid.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\GasVariableLaserGrid.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -879,107 +879,103 @@ code size: 24
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0x4C50A3E2"]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
-  4 [-]: TEST      R0 0         ; if not R0 then PC := 79
-  5 [-]: JMP       79           ; PC := 79
+  4 [-]: TEST      R0 0         ; if not R0 then PC := 75
+  5 [-]: JMP       75           ; PC := 75
   6 [-]: GETGLOBAL R0 K1        ; R0 := isPortForwarder
-  7 [-]: TEST      R0 0         ; if not R0 then PC := 22
-  8 [-]: JMP       22           ; PC := 22
+  7 [-]: TEST      R0 0         ; if not R0 then PC := 21
+  8 [-]: JMP       21           ; PC := 21
   9 [-]: LOADK     R0 K2        ; R0 := 1
- 10 [-]: GETGLOBAL R1 K3        ; R1 := 0x3FBCB13D
- 11 [-]: CALL      R1 1 2       ; R1 := R1()
- 12 [-]: LEN       R1 R1        ; R1 := # R1
- 13 [-]: LOADK     R2 K2        ; R2 := 1
- 14 [-]: FORPREP   R0 20        ; R0 -= R2; PC := 20
- 15 [-]: GETGLOBAL R4 K4        ; R4 := spySortieEntities
- 16 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
- 17 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4["0x8D5886B7"]
- 18 [-]: LOADK     R6 K6        ; R6 := "TriggerPort"
- 19 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 20 [-]: FORLOOP   R0 15        ; R0 += R2; if R0 <= R1 then begin PC := 15; R3 := R0 end
- 21 [-]: JMP       98           ; PC := 98
- 22 [-]: GETGLOBAL R4 K7        ; R4 := isScript
- 23 [-]: TEST      R4 0         ; if not R4 then PC := 38
- 24 [-]: JMP       38           ; PC := 38
- 25 [-]: LOADK     R4 K2        ; R4 := 1
- 26 [-]: GETGLOBAL R5 K3        ; R5 := 0x3FBCB13D
- 27 [-]: CALL      R5 1 2       ; R5 := R5()
- 28 [-]: LEN       R5 R5        ; R5 := # R5
- 29 [-]: LOADK     R6 K2        ; R6 := 1
- 30 [-]: FORPREP   R4 36        ; R4 -= R6; PC := 36
- 31 [-]: GETGLOBAL R8 K4        ; R8 := spySortieEntities
- 32 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
- 33 [-]: SELF      R8 R8 K5     ; R9 := R8; R8 := R8["0x8D5886B7"]
- 34 [-]: LOADK     R10 K8       ; R10 := "Execute"
- 35 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 36 [-]: FORLOOP   R4 31        ; R4 += R6; if R4 <= R5 then begin PC := 31; R7 := R4 end
- 37 [-]: JMP       98           ; PC := 98
- 38 [-]: GETGLOBAL R8 K9        ; R8 := enabling
- 39 [-]: TEST      R8 0         ; if not R8 then PC := 60
- 40 [-]: JMP       60           ; PC := 60
- 41 [-]: LOADK     R8 K2        ; R8 := 1
- 42 [-]: GETGLOBAL R9 K3        ; R9 := 0x3FBCB13D
- 43 [-]: CALL      R9 1 2       ; R9 := R9()
- 44 [-]: LEN       R9 R9        ; R9 := # R9
- 45 [-]: LOADK     R10 K2       ; R10 := 1
- 46 [-]: FORPREP   R8 58        ; R8 -= R10; PC := 58
- 47 [-]: GETGLOBAL R12 K4       ; R12 := spySortieEntities
- 48 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
- 49 [-]: SELF      R12 R12 K10  ; R13 := R12; R12 := R12["0xC5E91BA6"]
- 50 [-]: CALL      R12 2 1      ; R12(R13)
- 51 [-]: GETGLOBAL R12 K11      ; R12 := needsTogglingVisibility
- 52 [-]: TEST      R12 0        ; if not R12 then PC := 58
- 53 [-]: JMP       58           ; PC := 58
- 54 [-]: GETGLOBAL R12 K4       ; R12 := spySortieEntities
- 55 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
- 56 [-]: SELF      R12 R12 K12  ; R13 := R12; R12 := R12["0x7CC73200"]
- 57 [-]: CALL      R12 2 1      ; R12(R13)
- 58 [-]: FORLOOP   R8 47        ; R8 += R10; if R8 <= R9 then begin PC := 47; R11 := R8 end
- 59 [-]: JMP       98           ; PC := 98
- 60 [-]: LOADK     R12 K2       ; R12 := 1
- 61 [-]: GETGLOBAL R13 K3       ; R13 := 0x3FBCB13D
- 62 [-]: CALL      R13 1 2      ; R13 := R13()
- 63 [-]: LEN       R13 R13      ; R13 := # R13
- 64 [-]: LOADK     R14 K2       ; R14 := 1
- 65 [-]: FORPREP   R12 77       ; R12 -= R14; PC := 77
- 66 [-]: GETGLOBAL R16 K4       ; R16 := spySortieEntities
- 67 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
- 68 [-]: SELF      R16 R16 K13  ; R17 := R16; R16 := R16["0x2DB1272F"]
- 69 [-]: CALL      R16 2 1      ; R16(R17)
- 70 [-]: GETGLOBAL R16 K11      ; R16 := needsTogglingVisibility
- 71 [-]: TEST      R16 0        ; if not R16 then PC := 77
- 72 [-]: JMP       77           ; PC := 77
- 73 [-]: GETGLOBAL R16 K4       ; R16 := spySortieEntities
- 74 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
- 75 [-]: SELF      R16 R16 K14  ; R17 := R16; R16 := R16["0x79EA5337"]
- 76 [-]: CALL      R16 2 1      ; R16(R17)
- 77 [-]: FORLOOP   R12 66       ; R12 += R14; if R12 <= R13 then begin PC := 66; R15 := R12 end
- 78 [-]: JMP       98           ; PC := 98
- 79 [-]: GETGLOBAL R16 K15      ; R16 := disabledWhenNotInSortie
- 80 [-]: TEST      R16 0        ; if not R16 then PC := 98
- 81 [-]: JMP       98           ; PC := 98
- 82 [-]: GETGLOBAL R16 K1       ; R16 := isPortForwarder
- 83 [-]: TEST      R16 1        ; if R16 then PC := 98
- 84 [-]: JMP       98           ; PC := 98
- 85 [-]: GETGLOBAL R16 K7       ; R16 := isScript
- 86 [-]: TEST      R16 1        ; if R16 then PC := 98
- 87 [-]: JMP       98           ; PC := 98
- 88 [-]: LOADK     R16 K2       ; R16 := 1
- 89 [-]: GETGLOBAL R17 K4       ; R17 := spySortieEntities
- 90 [-]: LEN       R17 R17      ; R17 := # R17
- 91 [-]: LOADK     R18 K2       ; R18 := 1
- 92 [-]: FORPREP   R16 97       ; R16 -= R18; PC := 97
- 93 [-]: GETGLOBAL R20 K4       ; R20 := spySortieEntities
- 94 [-]: GETTABLE  R20 R20 R19  ; R20 := R20[R19]
- 95 [-]: SELF      R20 R20 K16  ; R21 := R20; R20 := R20["0xD4C2743F"]
- 96 [-]: CALL      R20 2 1      ; R20(R21)
- 97 [-]: FORLOOP   R16 93       ; R16 += R18; if R16 <= R17 then begin PC := 93; R19 := R16 end
- 98 [-]: RETURN    R0 1         ; return 
+ 10 [-]: GETGLOBAL R1 K3        ; R1 := spySortieEntities
+ 11 [-]: LEN       R1 R1        ; R1 := # R1
+ 12 [-]: LOADK     R2 K2        ; R2 := 1
+ 13 [-]: FORPREP   R0 19        ; R0 -= R2; PC := 19
+ 14 [-]: GETGLOBAL R4 K3        ; R4 := spySortieEntities
+ 15 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
+ 16 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0x8D5886B7"]
+ 17 [-]: LOADK     R6 K5        ; R6 := "TriggerPort"
+ 18 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 19 [-]: FORLOOP   R0 14        ; R0 += R2; if R0 <= R1 then begin PC := 14; R3 := R0 end
+ 20 [-]: JMP       94           ; PC := 94
+ 21 [-]: GETGLOBAL R4 K6        ; R4 := isScript
+ 22 [-]: TEST      R4 0         ; if not R4 then PC := 36
+ 23 [-]: JMP       36           ; PC := 36
+ 24 [-]: LOADK     R4 K2        ; R4 := 1
+ 25 [-]: GETGLOBAL R5 K3        ; R5 := spySortieEntities
+ 26 [-]: LEN       R5 R5        ; R5 := # R5
+ 27 [-]: LOADK     R6 K2        ; R6 := 1
+ 28 [-]: FORPREP   R4 34        ; R4 -= R6; PC := 34
+ 29 [-]: GETGLOBAL R8 K3        ; R8 := spySortieEntities
+ 30 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
+ 31 [-]: SELF      R8 R8 K4     ; R9 := R8; R8 := R8["0x8D5886B7"]
+ 32 [-]: LOADK     R10 K7       ; R10 := "Execute"
+ 33 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 34 [-]: FORLOOP   R4 29        ; R4 += R6; if R4 <= R5 then begin PC := 29; R7 := R4 end
+ 35 [-]: JMP       94           ; PC := 94
+ 36 [-]: GETGLOBAL R8 K8        ; R8 := enabling
+ 37 [-]: TEST      R8 0         ; if not R8 then PC := 57
+ 38 [-]: JMP       57           ; PC := 57
+ 39 [-]: LOADK     R8 K2        ; R8 := 1
+ 40 [-]: GETGLOBAL R9 K3        ; R9 := spySortieEntities
+ 41 [-]: LEN       R9 R9        ; R9 := # R9
+ 42 [-]: LOADK     R10 K2       ; R10 := 1
+ 43 [-]: FORPREP   R8 55        ; R8 -= R10; PC := 55
+ 44 [-]: GETGLOBAL R12 K3       ; R12 := spySortieEntities
+ 45 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
+ 46 [-]: SELF      R12 R12 K9   ; R13 := R12; R12 := R12["0xC5E91BA6"]
+ 47 [-]: CALL      R12 2 1      ; R12(R13)
+ 48 [-]: GETGLOBAL R12 K10      ; R12 := needsTogglingVisibility
+ 49 [-]: TEST      R12 0        ; if not R12 then PC := 55
+ 50 [-]: JMP       55           ; PC := 55
+ 51 [-]: GETGLOBAL R12 K3       ; R12 := spySortieEntities
+ 52 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
+ 53 [-]: SELF      R12 R12 K11  ; R13 := R12; R12 := R12["0x7CC73200"]
+ 54 [-]: CALL      R12 2 1      ; R12(R13)
+ 55 [-]: FORLOOP   R8 44        ; R8 += R10; if R8 <= R9 then begin PC := 44; R11 := R8 end
+ 56 [-]: JMP       94           ; PC := 94
+ 57 [-]: LOADK     R12 K2       ; R12 := 1
+ 58 [-]: GETGLOBAL R13 K3       ; R13 := spySortieEntities
+ 59 [-]: LEN       R13 R13      ; R13 := # R13
+ 60 [-]: LOADK     R14 K2       ; R14 := 1
+ 61 [-]: FORPREP   R12 73       ; R12 -= R14; PC := 73
+ 62 [-]: GETGLOBAL R16 K3       ; R16 := spySortieEntities
+ 63 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
+ 64 [-]: SELF      R16 R16 K12  ; R17 := R16; R16 := R16["0x2DB1272F"]
+ 65 [-]: CALL      R16 2 1      ; R16(R17)
+ 66 [-]: GETGLOBAL R16 K10      ; R16 := needsTogglingVisibility
+ 67 [-]: TEST      R16 0        ; if not R16 then PC := 73
+ 68 [-]: JMP       73           ; PC := 73
+ 69 [-]: GETGLOBAL R16 K3       ; R16 := spySortieEntities
+ 70 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
+ 71 [-]: SELF      R16 R16 K13  ; R17 := R16; R16 := R16["0x79EA5337"]
+ 72 [-]: CALL      R16 2 1      ; R16(R17)
+ 73 [-]: FORLOOP   R12 62       ; R12 += R14; if R12 <= R13 then begin PC := 62; R15 := R12 end
+ 74 [-]: JMP       94           ; PC := 94
+ 75 [-]: GETGLOBAL R16 K14      ; R16 := disabledWhenNotInSortie
+ 76 [-]: TEST      R16 0        ; if not R16 then PC := 94
+ 77 [-]: JMP       94           ; PC := 94
+ 78 [-]: GETGLOBAL R16 K1       ; R16 := isPortForwarder
+ 79 [-]: TEST      R16 1        ; if R16 then PC := 94
+ 80 [-]: JMP       94           ; PC := 94
+ 81 [-]: GETGLOBAL R16 K6       ; R16 := isScript
+ 82 [-]: TEST      R16 1        ; if R16 then PC := 94
+ 83 [-]: JMP       94           ; PC := 94
+ 84 [-]: LOADK     R16 K2       ; R16 := 1
+ 85 [-]: GETGLOBAL R17 K3       ; R17 := spySortieEntities
+ 86 [-]: LEN       R17 R17      ; R17 := # R17
+ 87 [-]: LOADK     R18 K2       ; R18 := 1
+ 88 [-]: FORPREP   R16 93       ; R16 -= R18; PC := 93
+ 89 [-]: GETGLOBAL R20 K3       ; R20 := spySortieEntities
+ 90 [-]: GETTABLE  R20 R20 R19  ; R20 := R20[R19]
+ 91 [-]: SELF      R20 R20 K15  ; R21 := R20; R20 := R20["0xD4C2743F"]
+ 92 [-]: CALL      R20 2 1      ; R20(R21)
+ 93 [-]: FORLOOP   R16 89       ; R16 += R18; if R16 <= R17 then begin PC := 89; R19 := R16 end
+ 94 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 82
+; Defined at line: 81
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1021,7 +1017,7 @@ code size: 24
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 94
+; Defined at line: 93
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1250,7 +1246,7 @@ code size: 24
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 172
+; Defined at line: 171
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1280,7 +1276,7 @@ code size: 24
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 180
+; Defined at line: 179
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1308,7 +1304,7 @@ code size: 24
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 187
+; Defined at line: 186
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1382,7 +1378,7 @@ code size: 24
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 202
+; Defined at line: 201
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1456,7 +1452,7 @@ code size: 24
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 217
+; Defined at line: 216
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1483,7 +1479,7 @@ code size: 24
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 224
+; Defined at line: 223
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1551,7 +1547,7 @@ code size: 24
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 250
+; Defined at line: 249
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -3,7 +3,7 @@ code size: 62
 code size: 53
 code size: 104
 code size: 11
-code size: 47
+code size: 40
 code size: 23
 code size: 20
 code size: 10
@@ -11,7 +11,7 @@ code size: 4
 code size: 13
 code size: 9
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\TitleBar.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\TitleBar.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -332,7 +332,7 @@ code size: 9
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mClipName"]
@@ -351,42 +351,35 @@ code size: 9
  15 [-]: MOVE      R7 R1        ; R7 := R1
  16 [-]: MOVE      R8 R3        ; R8 := R3
  17 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["0xDDA3917C"]
- 20 [-]: GETGLOBAL R7 K4        ; R7 := Lotus_Game
- 21 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["UIStyle_FloatingContentHighlight"]
- 22 [-]: MOVE      R8 R1        ; R8 := R1
- 23 [-]: MOVE      R9 R3        ; R9 := R3
- 24 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 25 [-]: SELF      R7 R1 K8     ; R8 := R1; R7 := R1["0x880196A7"]
- 26 [-]: MOVE      R9 R2        ; R9 := R2
- 27 [-]: LOADK     R10 K9       ; R10 := "Title.Label"
- 28 [-]: LOADK     R11 K10      ; R11 := "dropShadow_color"
- 29 [-]: MOVE      R12 R4       ; R12 := R4
- 30 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 31 [-]: SELF      R7 R1 K8     ; R8 := R1; R7 := R1["0x880196A7"]
- 32 [-]: MOVE      R9 R2        ; R9 := R2
- 33 [-]: LOADK     R10 K11      ; R10 := "Title.BookendIcon"
- 34 [-]: LOADK     R11 K12      ; R11 := "_color"
- 35 [-]: MOVE      R12 R5       ; R12 := R5
- 36 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 37 [-]: SELF      R7 R1 K8     ; R8 := R1; R7 := R1["0x880196A7"]
- 38 [-]: MOVE      R9 R2        ; R9 := R2
- 39 [-]: LOADK     R10 K13      ; R10 := "Underline"
- 40 [-]: LOADK     R11 K12      ; R11 := "_color"
- 41 [-]: MOVE      R12 R5       ; R12 := R5
- 42 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 43 [-]: SELF      R7 R0 K14    ; R8 := R0; R7 := R0["0x16DB4F2F"]
- 44 [-]: CALL      R7 2 1       ; R7(R8)
- 45 [-]: SELF      R7 R0 K15    ; R8 := R0; R7 := R0["0xB4170D77"]
- 46 [-]: CALL      R7 2 1       ; R7(R8)
- 47 [-]: RETURN    R0 1         ; return 
+ 18 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1["0x880196A7"]
+ 19 [-]: MOVE      R8 R2        ; R8 := R2
+ 20 [-]: LOADK     R9 K8        ; R9 := "Title.Label"
+ 21 [-]: LOADK     R10 K9       ; R10 := "dropShadow_color"
+ 22 [-]: MOVE      R11 R4       ; R11 := R4
+ 23 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 24 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1["0x880196A7"]
+ 25 [-]: MOVE      R8 R2        ; R8 := R2
+ 26 [-]: LOADK     R9 K10       ; R9 := "Title.BookendIcon"
+ 27 [-]: LOADK     R10 K11      ; R10 := "_color"
+ 28 [-]: MOVE      R11 R5       ; R11 := R5
+ 29 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 30 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1["0x880196A7"]
+ 31 [-]: MOVE      R8 R2        ; R8 := R2
+ 32 [-]: LOADK     R9 K12       ; R9 := "Underline"
+ 33 [-]: LOADK     R10 K11      ; R10 := "_color"
+ 34 [-]: MOVE      R11 R5       ; R11 := R5
+ 35 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 36 [-]: SELF      R6 R0 K13    ; R7 := R0; R6 := R0["0x16DB4F2F"]
+ 37 [-]: CALL      R6 2 1       ; R6(R7)
+ 38 [-]: SELF      R6 R0 K14    ; R7 := R0; R6 := R0["0xB4170D77"]
+ 39 [-]: CALL      R6 2 1       ; R6(R7)
+ 40 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 99
+; Defined at line: 98
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -420,7 +413,7 @@ code size: 9
 ; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 111
+; Defined at line: 110
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -451,7 +444,7 @@ code size: 9
 ; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 123
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -472,7 +465,7 @@ code size: 9
 ; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 129
+; Defined at line: 128
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -487,7 +480,7 @@ code size: 9
 ; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 136
+; Defined at line: 135
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -511,7 +504,7 @@ code size: 9
 ; Function #1.10:
 ;
 ; Name:            
-; Defined at line: 146
+; Defined at line: 145
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

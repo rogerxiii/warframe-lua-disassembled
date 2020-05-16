@@ -2,7 +2,7 @@ code size: 43
 code size: 138
 code size: 87
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\EphemeraPrimeA.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\EphemeraPrimeA.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -109,7 +109,7 @@ code size: 87
  42 [-]: RETURN    R0 1         ; return 
  43 [-]: GETGLOBAL R3 K12       ; R3 := Engine
  44 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["0xC5C0A29"]
- 45 [-]: MOVE      R4 R1        ; R4 := R1
+ 45 [-]: MOVE      R4 R0        ; R4 := R0
  46 [-]: CALL      R3 2 1       ; R3(R4)
  47 [-]: SELF      R3 R0 K14    ; R4 := R0; R3 := R0["0x7BAB77F"]
  48 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -248,7 +248,7 @@ code size: 87
  32 [-]: RETURN    R0 1         ; return 
  33 [-]: GETGLOBAL R3 K9        ; R3 := Engine
  34 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["0xC5C0A29"]
- 35 [-]: MOVE      R4 R1        ; R4 := R1
+ 35 [-]: MOVE      R4 R0        ; R4 := R0
  36 [-]: CALL      R3 2 1       ; R3(R4)
  37 [-]: LOADNIL   R3 R3        ; R3 := nil
  38 [-]: MOVE      R4 R0        ; R4 := R0

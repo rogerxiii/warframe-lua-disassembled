@@ -12,7 +12,7 @@ code size: 515
 code size: 436
 code size: 14
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\RevenantMask.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\RevenantMask.luac 
 
 ; Name:            
 ; Defined at line: 0

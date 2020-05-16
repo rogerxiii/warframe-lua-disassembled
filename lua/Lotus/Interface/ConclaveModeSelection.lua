@@ -1,4 +1,4 @@
-code size: 271
+code size: 270
 code size: 14
 code size: 3
 code size: 58
@@ -19,9 +19,9 @@ code size: 52
 code size: 52
 code size: 47
 code size: 47
-code size: 402
+code size: 400
 code size: 3
-code size: 95
+code size: 94
 code size: 6
 code size: 6
 code size: 22
@@ -29,8 +29,7 @@ code size: 49
 code size: 14
 code size: 7
 code size: 37
-code size: 75
-code size: 6
+code size: 72
 code size: 11
 code size: 124
 code size: 33
@@ -71,7 +70,7 @@ code size: 6
 code size: 10
 code size: 9
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\ConclaveModeSelection.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\ConclaveModeSelection.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -224,133 +223,132 @@ code size: 9
 142 [-]: CLOSURE   R30 18       ; R30 := closure(Function #19)
 143 [-]: MOVE      R0 R6        ; R0 := R6
 144 [-]: MOVE      R0 R8        ; R0 := R8
-145 [-]: MOVE      R0 R27       ; R0 := R27
-146 [-]: MOVE      R0 R28       ; R0 := R28
-147 [-]: MOVE      R0 R19       ; R0 := R19
-148 [-]: MOVE      R0 R3        ; R0 := R3
-149 [-]: MOVE      R0 R1        ; R0 := R1
-150 [-]: MOVE      R0 R7        ; R0 := R7
-151 [-]: MOVE      R0 R10       ; R0 := R10
-152 [-]: CLOSURE   R31 19       ; R31 := closure(Function #20)
-153 [-]: MOVE      R0 R6        ; R0 := R6
-154 [-]: MOVE      R0 R0        ; R0 := R0
-155 [-]: MOVE      R0 R14       ; R0 := R14
-156 [-]: MOVE      R0 R29       ; R0 := R29
-157 [-]: MOVE      R0 R1        ; R0 := R1
-158 [-]: MOVE      R0 R13       ; R0 := R13
-159 [-]: MOVE      R0 R19       ; R0 := R19
-160 [-]: MOVE      R0 R3        ; R0 := R3
-161 [-]: MOVE      R0 R7        ; R0 := R7
-162 [-]: CLOSURE   R32 20       ; R32 := closure(Function #21)
-163 [-]: MOVE      R0 R9        ; R0 := R9
-164 [-]: MOVE      R0 R24       ; R0 := R24
-165 [-]: CLOSURE   R33 21       ; R33 := closure(Function #22)
-166 [-]: MOVE      R0 R15       ; R0 := R15
-167 [-]: MOVE      R0 R0        ; R0 := R0
-168 [-]: MOVE      R0 R30       ; R0 := R30
-169 [-]: MOVE      R0 R32       ; R0 := R32
-170 [-]: CLOSURE   R34 22       ; R34 := closure(Function #23)
-171 [-]: MOVE      R0 R8        ; R0 := R8
-172 [-]: MOVE      R0 R1        ; R0 := R1
-173 [-]: MOVE      R0 R0        ; R0 := R0
-174 [-]: MOVE      R0 R21       ; R0 := R21
-175 [-]: SETGLOBAL R34 K43      ; GoToArsenal := R34
-176 [-]: SETGLOBAL R34 K44      ; 0x2675AE05 := R34
-177 [-]: CLOSURE   R34 23       ; R34 := closure(Function #24)
-178 [-]: MOVE      R0 R0        ; R0 := R0
-179 [-]: MOVE      R0 R4        ; R0 := R4
-180 [-]: MOVE      R0 R8        ; R0 := R8
-181 [-]: MOVE      R0 R13       ; R0 := R13
-182 [-]: MOVE      R0 R1        ; R0 := R1
-183 [-]: MOVE      R0 R31       ; R0 := R31
-184 [-]: MOVE      R0 R15       ; R0 := R15
-185 [-]: MOVE      R0 R16       ; R0 := R16
-186 [-]: MOVE      R0 R11       ; R0 := R11
-187 [-]: MOVE      R0 R33       ; R0 := R33
-188 [-]: MOVE      R0 R5        ; R0 := R5
-189 [-]: MOVE      R0 R29       ; R0 := R29
-190 [-]: SETGLOBAL R34 K45      ; Initialize := R34
-191 [-]: SETGLOBAL R34 K46      ; 0x62648036 := R34
-192 [-]: CLOSURE   R34 24       ; R34 := closure(Function #25)
-193 [-]: MOVE      R0 R15       ; R0 := R15
-194 [-]: MOVE      R0 R16       ; R0 := R16
-195 [-]: SETGLOBAL R34 K47      ; Shutdown := R34
-196 [-]: SETGLOBAL R34 K48      ; 0x3C577FA3 := R34
-197 [-]: CLOSURE   R34 25       ; R34 := closure(Function #26)
-198 [-]: MOVE      R0 R5        ; R0 := R5
-199 [-]: MOVE      R0 R4        ; R0 := R4
-200 [-]: MOVE      R0 R26       ; R0 := R26
-201 [-]: MOVE      R0 R14       ; R0 := R14
-202 [-]: MOVE      R0 R3        ; R0 := R3
-203 [-]: MOVE      R0 R1        ; R0 := R1
-204 [-]: MOVE      R0 R0        ; R0 := R0
-205 [-]: MOVE      R0 R6        ; R0 := R6
-206 [-]: MOVE      R0 R18       ; R0 := R18
-207 [-]: MOVE      R0 R15       ; R0 := R15
-208 [-]: MOVE      R0 R9        ; R0 := R9
-209 [-]: MOVE      R0 R19       ; R0 := R19
-210 [-]: SETGLOBAL R34 K49      ; Update := R34
-211 [-]: SETGLOBAL R34 K50      ; 0x8C7099E9 := R34
-212 [-]: CLOSURE   R34 26       ; R34 := closure(Function #27)
-213 [-]: MOVE      R0 R10       ; R0 := R10
-214 [-]: SETGLOBAL R34 K51      ; IsInputBlocked := R34
-215 [-]: SETGLOBAL R34 K52      ; 0x6FE7E740 := R34
-216 [-]: CLOSURE   R34 27       ; R34 := closure(Function #28)
-217 [-]: MOVE      R0 R6        ; R0 := R6
-218 [-]: SETGLOBAL R34 K53      ; MenuItemFocused := R34
-219 [-]: SETGLOBAL R34 K54      ; 0x882F52FA := R34
-220 [-]: CLOSURE   R34 28       ; R34 := closure(Function #29)
-221 [-]: MOVE      R0 R6        ; R0 := R6
-222 [-]: SETGLOBAL R34 K55      ; MenuItemUnfocused := R34
-223 [-]: SETGLOBAL R34 K56      ; 0xAB74686C := R34
-224 [-]: CLOSURE   R34 29       ; R34 := closure(Function #30)
-225 [-]: MOVE      R0 R10       ; R0 := R10
-226 [-]: MOVE      R0 R6        ; R0 := R6
-227 [-]: SETGLOBAL R34 K57      ; MenuItemPressed := R34
-228 [-]: SETGLOBAL R34 K58      ; 0x23362853 := R34
-229 [-]: CLOSURE   R34 30       ; R34 := closure(Function #31)
-230 [-]: MOVE      R0 R10       ; R0 := R10
-231 [-]: SETGLOBAL R34 K59      ; onKeyUp_MENU_SELECT := R34
-232 [-]: SETGLOBAL R34 K60      ; 0x4874089C := R34
-233 [-]: CLOSURE   R34 31       ; R34 := closure(Function #32)
-234 [-]: MOVE      R0 R10       ; R0 := R10
-235 [-]: SETGLOBAL R34 K61      ; onKeyDown_HIDE_PAUSE_MENU := R34
-236 [-]: SETGLOBAL R34 K62      ; 0xA57B4F90 := R34
-237 [-]: CLOSURE   R34 32       ; R34 := closure(Function #33)
-238 [-]: MOVE      R0 R12       ; R0 := R12
-239 [-]: SETGLOBAL R34 K63      ; SetTrigger := R34
-240 [-]: SETGLOBAL R34 K64      ; 0x3F956A34 := R34
-241 [-]: CLOSURE   R34 33       ; R34 := closure(Function #34)
-242 [-]: MOVE      R0 R1        ; R0 := R1
-243 [-]: SETGLOBAL R34 K65      ; onViewportSizeChanged := R34
-244 [-]: SETGLOBAL R34 K66      ; 0x3A900427 := R34
-245 [-]: CLOSURE   R34 34       ; R34 := closure(Function #35)
-246 [-]: MOVE      R0 R17       ; R0 := R17
-247 [-]: SETGLOBAL R34 K67      ; WorldStateWindowVisChanged := R34
-248 [-]: SETGLOBAL R34 K68      ; 0x6E3DB508 := R34
-249 [-]: CLOSURE   R34 35       ; R34 := closure(Function #36)
-250 [-]: MOVE      R0 R11       ; R0 := R11
-251 [-]: MOVE      R0 R13       ; R0 := R13
-252 [-]: MOVE      R0 R6        ; R0 := R6
-253 [-]: SETGLOBAL R34 K69      ; IconCacheFlushed := R34
-254 [-]: SETGLOBAL R34 K70      ; 0x5C92AF6F := R34
-255 [-]: CLOSURE   R34 36       ; R34 := closure(Function #37)
-256 [-]: SETGLOBAL R34 K71      ; OnUpdateSessionSettings := R34
-257 [-]: SETGLOBAL R34 K72      ; 0xF1D13E45 := R34
-258 [-]: CLOSURE   R34 37       ; R34 := closure(Function #38)
-259 [-]: MOVE      R0 R10       ; R0 := R10
-260 [-]: MOVE      R0 R6        ; R0 := R6
-261 [-]: SETGLOBAL R34 K73      ; onKeyDown_MENU_GENERIC1 := R34
-262 [-]: SETGLOBAL R34 K74      ; 0xAAAD7C40 := R34
-263 [-]: CLOSURE   R34 38       ; R34 := closure(Function #39)
-264 [-]: MOVE      R0 R18       ; R0 := R18
-265 [-]: SETGLOBAL R34 K75      ; HideScreenForPlatPurchase := R34
-266 [-]: SETGLOBAL R34 K76      ; 0x4A3EAA9D := R34
-267 [-]: CLOSURE   R34 39       ; R34 := closure(Function #40)
-268 [-]: MOVE      R0 R6        ; R0 := R6
-269 [-]: SETGLOBAL R34 K77      ; OnGamepadTransition := R34
-270 [-]: SETGLOBAL R34 K78      ; 0x98E4F633 := R34
-271 [-]: RETURN    R0 1         ; return 
+145 [-]: MOVE      R0 R28       ; R0 := R28
+146 [-]: MOVE      R0 R19       ; R0 := R19
+147 [-]: MOVE      R0 R3        ; R0 := R3
+148 [-]: MOVE      R0 R1        ; R0 := R1
+149 [-]: MOVE      R0 R7        ; R0 := R7
+150 [-]: MOVE      R0 R10       ; R0 := R10
+151 [-]: CLOSURE   R31 19       ; R31 := closure(Function #20)
+152 [-]: MOVE      R0 R6        ; R0 := R6
+153 [-]: MOVE      R0 R0        ; R0 := R0
+154 [-]: MOVE      R0 R14       ; R0 := R14
+155 [-]: MOVE      R0 R29       ; R0 := R29
+156 [-]: MOVE      R0 R1        ; R0 := R1
+157 [-]: MOVE      R0 R13       ; R0 := R13
+158 [-]: MOVE      R0 R19       ; R0 := R19
+159 [-]: MOVE      R0 R3        ; R0 := R3
+160 [-]: MOVE      R0 R7        ; R0 := R7
+161 [-]: CLOSURE   R32 20       ; R32 := closure(Function #21)
+162 [-]: MOVE      R0 R9        ; R0 := R9
+163 [-]: MOVE      R0 R24       ; R0 := R24
+164 [-]: CLOSURE   R33 21       ; R33 := closure(Function #22)
+165 [-]: MOVE      R0 R15       ; R0 := R15
+166 [-]: MOVE      R0 R0        ; R0 := R0
+167 [-]: MOVE      R0 R30       ; R0 := R30
+168 [-]: MOVE      R0 R32       ; R0 := R32
+169 [-]: CLOSURE   R34 22       ; R34 := closure(Function #23)
+170 [-]: MOVE      R0 R8        ; R0 := R8
+171 [-]: MOVE      R0 R1        ; R0 := R1
+172 [-]: MOVE      R0 R0        ; R0 := R0
+173 [-]: MOVE      R0 R21       ; R0 := R21
+174 [-]: SETGLOBAL R34 K43      ; GoToArsenal := R34
+175 [-]: SETGLOBAL R34 K44      ; 0x2675AE05 := R34
+176 [-]: CLOSURE   R34 23       ; R34 := closure(Function #24)
+177 [-]: MOVE      R0 R0        ; R0 := R0
+178 [-]: MOVE      R0 R4        ; R0 := R4
+179 [-]: MOVE      R0 R8        ; R0 := R8
+180 [-]: MOVE      R0 R13       ; R0 := R13
+181 [-]: MOVE      R0 R1        ; R0 := R1
+182 [-]: MOVE      R0 R31       ; R0 := R31
+183 [-]: MOVE      R0 R15       ; R0 := R15
+184 [-]: MOVE      R0 R16       ; R0 := R16
+185 [-]: MOVE      R0 R11       ; R0 := R11
+186 [-]: MOVE      R0 R33       ; R0 := R33
+187 [-]: MOVE      R0 R5        ; R0 := R5
+188 [-]: MOVE      R0 R29       ; R0 := R29
+189 [-]: SETGLOBAL R34 K45      ; Initialize := R34
+190 [-]: SETGLOBAL R34 K46      ; 0x62648036 := R34
+191 [-]: CLOSURE   R34 24       ; R34 := closure(Function #25)
+192 [-]: MOVE      R0 R15       ; R0 := R15
+193 [-]: MOVE      R0 R16       ; R0 := R16
+194 [-]: SETGLOBAL R34 K47      ; Shutdown := R34
+195 [-]: SETGLOBAL R34 K48      ; 0x3C577FA3 := R34
+196 [-]: CLOSURE   R34 25       ; R34 := closure(Function #26)
+197 [-]: MOVE      R0 R5        ; R0 := R5
+198 [-]: MOVE      R0 R4        ; R0 := R4
+199 [-]: MOVE      R0 R26       ; R0 := R26
+200 [-]: MOVE      R0 R14       ; R0 := R14
+201 [-]: MOVE      R0 R3        ; R0 := R3
+202 [-]: MOVE      R0 R1        ; R0 := R1
+203 [-]: MOVE      R0 R0        ; R0 := R0
+204 [-]: MOVE      R0 R6        ; R0 := R6
+205 [-]: MOVE      R0 R18       ; R0 := R18
+206 [-]: MOVE      R0 R15       ; R0 := R15
+207 [-]: MOVE      R0 R9        ; R0 := R9
+208 [-]: MOVE      R0 R19       ; R0 := R19
+209 [-]: SETGLOBAL R34 K49      ; Update := R34
+210 [-]: SETGLOBAL R34 K50      ; 0x8C7099E9 := R34
+211 [-]: CLOSURE   R34 26       ; R34 := closure(Function #27)
+212 [-]: MOVE      R0 R10       ; R0 := R10
+213 [-]: SETGLOBAL R34 K51      ; IsInputBlocked := R34
+214 [-]: SETGLOBAL R34 K52      ; 0x6FE7E740 := R34
+215 [-]: CLOSURE   R34 27       ; R34 := closure(Function #28)
+216 [-]: MOVE      R0 R6        ; R0 := R6
+217 [-]: SETGLOBAL R34 K53      ; MenuItemFocused := R34
+218 [-]: SETGLOBAL R34 K54      ; 0x882F52FA := R34
+219 [-]: CLOSURE   R34 28       ; R34 := closure(Function #29)
+220 [-]: MOVE      R0 R6        ; R0 := R6
+221 [-]: SETGLOBAL R34 K55      ; MenuItemUnfocused := R34
+222 [-]: SETGLOBAL R34 K56      ; 0xAB74686C := R34
+223 [-]: CLOSURE   R34 29       ; R34 := closure(Function #30)
+224 [-]: MOVE      R0 R10       ; R0 := R10
+225 [-]: MOVE      R0 R6        ; R0 := R6
+226 [-]: SETGLOBAL R34 K57      ; MenuItemPressed := R34
+227 [-]: SETGLOBAL R34 K58      ; 0x23362853 := R34
+228 [-]: CLOSURE   R34 30       ; R34 := closure(Function #31)
+229 [-]: MOVE      R0 R10       ; R0 := R10
+230 [-]: SETGLOBAL R34 K59      ; onKeyUp_MENU_SELECT := R34
+231 [-]: SETGLOBAL R34 K60      ; 0x4874089C := R34
+232 [-]: CLOSURE   R34 31       ; R34 := closure(Function #32)
+233 [-]: MOVE      R0 R10       ; R0 := R10
+234 [-]: SETGLOBAL R34 K61      ; onKeyDown_HIDE_PAUSE_MENU := R34
+235 [-]: SETGLOBAL R34 K62      ; 0xA57B4F90 := R34
+236 [-]: CLOSURE   R34 32       ; R34 := closure(Function #33)
+237 [-]: MOVE      R0 R12       ; R0 := R12
+238 [-]: SETGLOBAL R34 K63      ; SetTrigger := R34
+239 [-]: SETGLOBAL R34 K64      ; 0x3F956A34 := R34
+240 [-]: CLOSURE   R34 33       ; R34 := closure(Function #34)
+241 [-]: MOVE      R0 R1        ; R0 := R1
+242 [-]: SETGLOBAL R34 K65      ; onViewportSizeChanged := R34
+243 [-]: SETGLOBAL R34 K66      ; 0x3A900427 := R34
+244 [-]: CLOSURE   R34 34       ; R34 := closure(Function #35)
+245 [-]: MOVE      R0 R17       ; R0 := R17
+246 [-]: SETGLOBAL R34 K67      ; WorldStateWindowVisChanged := R34
+247 [-]: SETGLOBAL R34 K68      ; 0x6E3DB508 := R34
+248 [-]: CLOSURE   R34 35       ; R34 := closure(Function #36)
+249 [-]: MOVE      R0 R11       ; R0 := R11
+250 [-]: MOVE      R0 R13       ; R0 := R13
+251 [-]: MOVE      R0 R6        ; R0 := R6
+252 [-]: SETGLOBAL R34 K69      ; IconCacheFlushed := R34
+253 [-]: SETGLOBAL R34 K70      ; 0x5C92AF6F := R34
+254 [-]: CLOSURE   R34 36       ; R34 := closure(Function #37)
+255 [-]: SETGLOBAL R34 K71      ; OnUpdateSessionSettings := R34
+256 [-]: SETGLOBAL R34 K72      ; 0xF1D13E45 := R34
+257 [-]: CLOSURE   R34 37       ; R34 := closure(Function #38)
+258 [-]: MOVE      R0 R10       ; R0 := R10
+259 [-]: MOVE      R0 R6        ; R0 := R6
+260 [-]: SETGLOBAL R34 K73      ; onKeyDown_MENU_GENERIC1 := R34
+261 [-]: SETGLOBAL R34 K74      ; 0xAAAD7C40 := R34
+262 [-]: CLOSURE   R34 38       ; R34 := closure(Function #39)
+263 [-]: MOVE      R0 R18       ; R0 := R18
+264 [-]: SETGLOBAL R34 K75      ; HideScreenForPlatPurchase := R34
+265 [-]: SETGLOBAL R34 K76      ; 0x4A3EAA9D := R34
+266 [-]: CLOSURE   R34 39       ; R34 := closure(Function #40)
+267 [-]: MOVE      R0 R6        ; R0 := R6
+268 [-]: SETGLOBAL R34 K77      ; OnGamepadTransition := R34
+269 [-]: SETGLOBAL R34 K78      ; 0x98E4F633 := R34
+270 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -1202,10 +1200,10 @@ code size: 9
 ;
 ; Name:            
 ; Defined at line: 319
-; #Upvalues:       9
+; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  27
+; Max Stack Size:  26
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0xC51A5C9D"]
@@ -1223,398 +1221,396 @@ code size: 9
  14 [-]: TEST      R0 0         ; if not R0 then PC := 17
  15 [-]: JMP       17           ; PC := 17
  16 [-]: RETURN    R0 1         ; return 
- 17 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 18 [-]: CALL      R0 1 2       ; R0 := R0()
- 19 [-]: NEWTABLE  R1 0 4       ; R1 := {}
- 20 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
- 21 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["PVPMODE_CAPTURETHEFLAG"]
- 22 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 23 [-]: SETTABLE  R3 K6 K7     ; R3["TextInfo"] := nil
- 24 [-]: SETTABLE  R3 K8 K7     ; R3["ChallengeInstance"] := nil
- 25 [-]: SETTABLE  R1 R2 R3     ; R1[R2] := R3
- 26 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
- 27 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["PVPMODE_TEAMDEATHMATCH"]
- 28 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 29 [-]: SETTABLE  R3 K6 K7     ; R3["TextInfo"] := nil
- 30 [-]: SETTABLE  R3 K8 K7     ; R3["ChallengeInstance"] := nil
- 31 [-]: SETTABLE  R1 R2 R3     ; R1[R2] := R3
- 32 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
- 33 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["PVPMODE_DEATHMATCH"]
- 34 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 35 [-]: SETTABLE  R3 K6 K7     ; R3["TextInfo"] := nil
- 36 [-]: SETTABLE  R3 K8 K7     ; R3["ChallengeInstance"] := nil
- 37 [-]: SETTABLE  R1 R2 R3     ; R1[R2] := R3
- 38 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
- 39 [-]: GETTABLE  R2 R2 K11    ; R2 := R2["PVPMODE_SPEEDBALL"]
- 40 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 41 [-]: SETTABLE  R3 K6 K7     ; R3["TextInfo"] := nil
- 42 [-]: SETTABLE  R3 K8 K7     ; R3["ChallengeInstance"] := nil
- 43 [-]: SETTABLE  R1 R2 R3     ; R1[R2] := R3
- 44 [-]: NEWTABLE  R2 0 4       ; R2 := {}
- 45 [-]: GETGLOBAL R3 K4        ; R3 := Lotus_Game
- 46 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["PVPMODE_DEATHMATCH"]
- 47 [-]: SETTABLE  R2 R3 K7     ; R2[R3] := nil
- 48 [-]: GETGLOBAL R3 K4        ; R3 := Lotus_Game
- 49 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["PVPMODE_TEAMDEATHMATCH"]
- 50 [-]: SETTABLE  R2 R3 K7     ; R2[R3] := nil
- 51 [-]: GETGLOBAL R3 K4        ; R3 := Lotus_Game
- 52 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["PVPMODE_CAPTURETHEFLAG"]
- 53 [-]: SETTABLE  R2 R3 K7     ; R2[R3] := nil
- 54 [-]: GETGLOBAL R3 K4        ; R3 := Lotus_Game
- 55 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["PVPMODE_SPEEDBALL"]
- 56 [-]: NEWTABLE  R4 0 1       ; R4 := {}
- 57 [-]: GETGLOBAL R5 K13       ; R5 := 0xEC274B1A
- 58 [-]: LOADK     R6 K14       ; R6 := "/Lotus/Language/Menu/PVPLunaroAlternativeModeDesc"
- 59 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 60 [-]: SETTABLE  R4 K12 R5    ; R4["mDescriptionLoc"] := R5
- 61 [-]: SETTABLE  R2 R3 R4     ; R2[R3] := R4
- 62 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 63 [-]: CALL      R3 1 2       ; R3 := R3()
- 64 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
- 65 [-]: MOVE      R5 R3        ; R5 := R3
- 66 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 67 [-]: TEST      R4 1         ; if R4 then PC := 137
- 68 [-]: JMP       137          ; PC := 137
- 69 [-]: GETGLOBAL R4 K15       ; R4 := 0xECFDD17
- 70 [-]: GETTABLE  R5 R3 K16    ; R5 := R3["mPVPChallengeInstances"]
- 71 [-]: CALL      R4 2 4       ; R4,R5,R6 := R4(R5)
- 72 [-]: JMP       121          ; PC := 121
- 73 [-]: LOADNIL   R9 R9        ; R9 := nil
- 74 [-]: GETGLOBAL R10 K15      ; R10 := 0xECFDD17
- 75 [-]: GETGLOBAL R11 K17      ; R11 := PVPChallengeTypeManifest
- 76 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["mEntries"]
- 77 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
- 78 [-]: JMP       84           ; PC := 84
- 79 [-]: GETTABLE  R15 R8 K19   ; R15 := R8["mChallengeTypeRefID"]
- 80 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 84
+ 17 [-]: NEWTABLE  R0 0 4       ; R0 := {}
+ 18 [-]: GETGLOBAL R1 K4        ; R1 := Lotus_Game
+ 19 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["PVPMODE_CAPTURETHEFLAG"]
+ 20 [-]: NEWTABLE  R2 0 2       ; R2 := {}
+ 21 [-]: SETTABLE  R2 K6 K7     ; R2["TextInfo"] := nil
+ 22 [-]: SETTABLE  R2 K8 K7     ; R2["ChallengeInstance"] := nil
+ 23 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 24 [-]: GETGLOBAL R1 K4        ; R1 := Lotus_Game
+ 25 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["PVPMODE_TEAMDEATHMATCH"]
+ 26 [-]: NEWTABLE  R2 0 2       ; R2 := {}
+ 27 [-]: SETTABLE  R2 K6 K7     ; R2["TextInfo"] := nil
+ 28 [-]: SETTABLE  R2 K8 K7     ; R2["ChallengeInstance"] := nil
+ 29 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 30 [-]: GETGLOBAL R1 K4        ; R1 := Lotus_Game
+ 31 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["PVPMODE_DEATHMATCH"]
+ 32 [-]: NEWTABLE  R2 0 2       ; R2 := {}
+ 33 [-]: SETTABLE  R2 K6 K7     ; R2["TextInfo"] := nil
+ 34 [-]: SETTABLE  R2 K8 K7     ; R2["ChallengeInstance"] := nil
+ 35 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 36 [-]: GETGLOBAL R1 K4        ; R1 := Lotus_Game
+ 37 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["PVPMODE_SPEEDBALL"]
+ 38 [-]: NEWTABLE  R2 0 2       ; R2 := {}
+ 39 [-]: SETTABLE  R2 K6 K7     ; R2["TextInfo"] := nil
+ 40 [-]: SETTABLE  R2 K8 K7     ; R2["ChallengeInstance"] := nil
+ 41 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 42 [-]: NEWTABLE  R1 0 4       ; R1 := {}
+ 43 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
+ 44 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["PVPMODE_DEATHMATCH"]
+ 45 [-]: SETTABLE  R1 R2 K7     ; R1[R2] := nil
+ 46 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
+ 47 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["PVPMODE_TEAMDEATHMATCH"]
+ 48 [-]: SETTABLE  R1 R2 K7     ; R1[R2] := nil
+ 49 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
+ 50 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["PVPMODE_CAPTURETHEFLAG"]
+ 51 [-]: SETTABLE  R1 R2 K7     ; R1[R2] := nil
+ 52 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
+ 53 [-]: GETTABLE  R2 R2 K11    ; R2 := R2["PVPMODE_SPEEDBALL"]
+ 54 [-]: NEWTABLE  R3 0 1       ; R3 := {}
+ 55 [-]: GETGLOBAL R4 K13       ; R4 := 0xEC274B1A
+ 56 [-]: LOADK     R5 K14       ; R5 := "/Lotus/Language/Menu/PVPLunaroAlternativeModeDesc"
+ 57 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 58 [-]: SETTABLE  R3 K12 R4    ; R3["mDescriptionLoc"] := R4
+ 59 [-]: SETTABLE  R1 R2 R3     ; R1[R2] := R3
+ 60 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 61 [-]: CALL      R2 1 2       ; R2 := R2()
+ 62 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
+ 63 [-]: MOVE      R4 R2        ; R4 := R2
+ 64 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 65 [-]: TEST      R3 1         ; if R3 then PC := 135
+ 66 [-]: JMP       135          ; PC := 135
+ 67 [-]: GETGLOBAL R3 K15       ; R3 := 0xECFDD17
+ 68 [-]: GETTABLE  R4 R2 K16    ; R4 := R2["mPVPChallengeInstances"]
+ 69 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
+ 70 [-]: JMP       119          ; PC := 119
+ 71 [-]: LOADNIL   R8 R8        ; R8 := nil
+ 72 [-]: GETGLOBAL R9 K15       ; R9 := 0xECFDD17
+ 73 [-]: GETGLOBAL R10 K17      ; R10 := PVPChallengeTypeManifest
+ 74 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["mEntries"]
+ 75 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
+ 76 [-]: JMP       82           ; PC := 82
+ 77 [-]: GETTABLE  R14 R7 K19   ; R14 := R7["mChallengeTypeRefID"]
+ 78 [-]: EQ        0 R13 R14    ; if R13 ~= R14 then PC := 82
+ 79 [-]: JMP       82           ; PC := 82
+ 80 [-]: MOVE      R8 R13       ; R8 := R13
  81 [-]: JMP       84           ; PC := 84
- 82 [-]: MOVE      R9 R14       ; R9 := R14
- 83 [-]: JMP       86           ; PC := 86
- 84 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 79; R12 := R13 end
- 85 [-]: JMP       79           ; PC := 79
- 86 [-]: TEST      R9 0         ; if not R9 then PC := 121
- 87 [-]: JMP       121          ; PC := 121
- 88 [-]: GETGLOBAL R15 K20      ; R15 := 0x7C282057
- 89 [-]: MOVE      R16 R9       ; R16 := R9
- 90 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 91 [-]: GETTABLE  R16 R15 K21  ; R16 := R15["mAffectorType"]
- 92 [-]: GETGLOBAL R17 K4       ; R17 := Lotus_Game
- 93 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["PVPChallengeTypeAffectorType_MODE"]
- 94 [-]: EQ        0 R16 R17    ; if R16 ~= R17 then PC := 121
- 95 [-]: JMP       121          ; PC := 121
- 96 [-]: GETGLOBAL R16 K23      ; R16 := Engine
- 97 [-]: GETTABLE  R16 R16 K24  ; R16 := R16["0xD09D7910"]
- 98 [-]: GETTABLE  R17 R8 K25   ; R17 := R8["mEndDate"]
- 99 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-100 [-]: LT        0 K1 R16     ; if 0 >= R16 then PC := 121
-101 [-]: JMP       121          ; PC := 121
-102 [-]: GETTABLE  R17 R8 K26   ; R17 := R8["mPVPMode"]
-103 [-]: NEWTABLE  R18 0 2      ; R18 := {}
-104 [-]: NEWTABLE  R19 0 1      ; R19 := {}
-105 [-]: NEWTABLE  R20 1 0      ; R20 := {}
-106 [-]: SELF      R21 R8 K28   ; R22 := R8; R21 := R8["0x88F6DB61"]
-107 [-]: GETGLOBAL R23 K29      ; R23 := 0x9FAED6BC
-108 [-]: GETTABLE  R24 R15 K30  ; R24 := R15["mLocName"]
-109 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-110 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
-111 [-]: SELF      R22 R8 K28   ; R23 := R8; R22 := R8["0x88F6DB61"]
-112 [-]: GETGLOBAL R24 K29      ; R24 := 0x9FAED6BC
-113 [-]: GETTABLE  R25 R15 K31  ; R25 := R15["mLocDescription"]
-114 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
-115 [-]: CALL      R22 0 0      ; R22,... := R22(R23,...)
-116 [-]: SETLIST   R20 0 1      ; R20[(1-1)*FPF+i] := R(20+i), 1 <= i <= 0
-117 [-]: SETTABLE  R19 K27 R20  ; R19["Descriptions"] := R20
-118 [-]: SETTABLE  R18 K6 R19   ; R18["TextInfo"] := R19
-119 [-]: SETTABLE  R18 K8 R8    ; R18["ChallengeInstance"] := R8
-120 [-]: SETTABLE  R1 R17 R18   ; R1[R17] := R18
-121 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 73; R6 := R7 end
-122 [-]: JMP       73           ; PC := 73
-123 [-]: GETGLOBAL R17 K32      ; R17 := 0x63B09107
-124 [-]: GETTABLE  R18 R3 K33   ; R18 := R3["mPVPAlternativeModes"]
-125 [-]: CALL      R17 2 4      ; R17,R18,R19 := R17(R18)
-126 [-]: JMP       135          ; PC := 135
-127 [-]: GETGLOBAL R22 K3       ; R22 := 0x400E7765
-128 [-]: GETTABLE  R23 R21 K34  ; R23 := R21["mTargetMode"]
-129 [-]: GETTABLE  R23 R2 R23   ; R23 := R2[R23]
-130 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-131 [-]: TEST      R22 0        ; if not R22 then PC := 135
-132 [-]: JMP       135          ; PC := 135
-133 [-]: GETTABLE  R22 R21 K34  ; R22 := R21["mTargetMode"]
-134 [-]: SETTABLE  R2 R22 R21   ; R2[R22] := R21
-135 [-]: TFORLOOP  R17 2        ; R20,R21 :=  R17(R18,R19); if R20 ~= nil then begin PC = 127; R19 := R20 end
-136 [-]: JMP       127          ; PC := 127
-137 [-]: GETGLOBAL R22 K35      ; R22 := _G
-138 [-]: GETTABLE  R22 R22 K36  ; R22 := R22["ConclaveModeState"]
-139 [-]: EQ        0 R22 K7     ; if R22 ~= nil then PC := 168
-140 [-]: JMP       168          ; PC := 168
-141 [-]: GETGLOBAL R22 K35      ; R22 := _G
-142 [-]: NEWTABLE  R23 0 0      ; R23 := {}
-143 [-]: SETTABLE  R22 K36 R23  ; R22["ConclaveModeState"] := R23
-144 [-]: GETGLOBAL R22 K35      ; R22 := _G
-145 [-]: GETTABLE  R22 R22 K36  ; R22 := R22["ConclaveModeState"]
-146 [-]: GETUPVAL  R23 U4       ; R23 := U4
-147 [-]: GETTABLE  R23 R23 K37  ; R23 := R23["DM"]
-148 [-]: GETTABLE  R23 R23 K38  ; R23 := R23["index"]
-149 [-]: SETTABLE  R22 R23 K39  ; R22[R23] := "0x0"
-150 [-]: GETGLOBAL R22 K35      ; R22 := _G
-151 [-]: GETTABLE  R22 R22 K36  ; R22 := R22["ConclaveModeState"]
-152 [-]: GETUPVAL  R23 U4       ; R23 := U4
-153 [-]: GETTABLE  R23 R23 K40  ; R23 := R23["TDM"]
-154 [-]: GETTABLE  R23 R23 K38  ; R23 := R23["index"]
-155 [-]: SETTABLE  R22 R23 K39  ; R22[R23] := "0x0"
-156 [-]: GETGLOBAL R22 K35      ; R22 := _G
-157 [-]: GETTABLE  R22 R22 K36  ; R22 := R22["ConclaveModeState"]
-158 [-]: GETUPVAL  R23 U4       ; R23 := U4
-159 [-]: GETTABLE  R23 R23 K41  ; R23 := R23["CTF"]
-160 [-]: GETTABLE  R23 R23 K38  ; R23 := R23["index"]
-161 [-]: SETTABLE  R22 R23 K39  ; R22[R23] := "0x0"
-162 [-]: GETGLOBAL R22 K35      ; R22 := _G
-163 [-]: GETTABLE  R22 R22 K36  ; R22 := R22["ConclaveModeState"]
-164 [-]: GETUPVAL  R23 U4       ; R23 := U4
-165 [-]: GETTABLE  R23 R23 K42  ; R23 := R23["SB"]
-166 [-]: GETTABLE  R23 R23 K38  ; R23 := R23["index"]
-167 [-]: SETTABLE  R22 R23 K39  ; R22[R23] := "0x0"
-168 [-]: GETUPVAL  R22 U0       ; R22 := U0
-169 [-]: SELF      R22 R22 K43  ; R23 := R22; R22 := R22["0xA77DA8EE"]
-170 [-]: NEWTABLE  R24 0 12     ; R24 := {}
-171 [-]: GETUPVAL  R25 U4       ; R25 := U4
-172 [-]: GETTABLE  R25 R25 K37  ; R25 := R25["DM"]
-173 [-]: GETTABLE  R25 R25 K45  ; R25 := R25["title"]
-174 [-]: SETTABLE  R24 K44 R25  ; R24["Name"] := R25
-175 [-]: GETUPVAL  R25 U4       ; R25 := U4
-176 [-]: GETTABLE  R25 R25 K37  ; R25 := R25["DM"]
-177 [-]: GETTABLE  R25 R25 K47  ; R25 := R25["description"]
-178 [-]: SETTABLE  R24 K46 R25  ; R24["Description"] := R25
-179 [-]: SETTABLE  R24 K48 K49  ; R24["PlayerCount"] := "/Lotus/Language/Game/Conclave_8Players"
-180 [-]: GETGLOBAL R25 K51      ; R25 := iconDM
-181 [-]: SETTABLE  R24 K50 R25  ; R24["Icon"] := R25
-182 [-]: GETGLOBAL R25 K53      ; R25 := backgroundDM
-183 [-]: SETTABLE  R24 K52 R25  ; R24["Background"] := R25
-184 [-]: GETGLOBAL R25 K55      ; R25 := altDMIcon
-185 [-]: SETTABLE  R24 K54 R25  ; R24["AltIcon"] := R25
-186 [-]: GETGLOBAL R25 K57      ; R25 := altDMBackground
-187 [-]: SETTABLE  R24 K56 R25  ; R24["AltBackground"] := R25
-188 [-]: GETUPVAL  R25 U5       ; R25 := U5
-189 [-]: GETTABLE  R25 R25 K59  ; R25 := R25["0xF17616EF"]
-190 [-]: GETGLOBAL R26 K4       ; R26 := Lotus_Game
-191 [-]: GETTABLE  R26 R26 K10  ; R26 := R26["PVPMODE_DEATHMATCH"]
-192 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-193 [-]: GETUPVAL  R26 U6       ; R26 := U6
-194 [-]: GETTABLE  R26 R26 K60  ; R26 := R26["PVP_TAG"]
-195 [-]: CONCAT    R25 R25 R26  ; R25 := R25 .. R26
-196 [-]: SETTABLE  R24 K58 R25  ; R24["NodeName"] := R25
-197 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-198 [-]: GETTABLE  R25 R25 K10  ; R25 := R25["PVPMODE_DEATHMATCH"]
-199 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-200 [-]: GETTABLE  R25 R25 K6   ; R25 := R25["TextInfo"]
-201 [-]: SETTABLE  R24 K61 R25  ; R24["Alert"] := R25
-202 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-203 [-]: GETTABLE  R25 R25 K10  ; R25 := R25["PVPMODE_DEATHMATCH"]
-204 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-205 [-]: GETTABLE  R25 R25 K8   ; R25 := R25["ChallengeInstance"]
-206 [-]: SETTABLE  R24 K62 R25  ; R24["AlertChallengeInstance"] := R25
-207 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-208 [-]: GETTABLE  R25 R25 K10  ; R25 := R25["PVPMODE_DEATHMATCH"]
-209 [-]: GETTABLE  R25 R2 R25   ; R25 := R2[R25]
-210 [-]: SETTABLE  R24 K63 R25  ; R24["AlternativeMode"] := R25
-211 [-]: GETGLOBAL R25 K35      ; R25 := _G
-212 [-]: GETTABLE  R25 R25 K36  ; R25 := R25["ConclaveModeState"]
-213 [-]: GETUPVAL  R26 U4       ; R26 := U4
-214 [-]: GETTABLE  R26 R26 K37  ; R26 := R26["DM"]
-215 [-]: GETTABLE  R26 R26 K38  ; R26 := R26["index"]
-216 [-]: GETTABLE  R25 R25 R26  ; R25 := R25[R26]
-217 [-]: SETTABLE  R24 K64 R25  ; R24["InAltMode"] := R25
-218 [-]: MOVE      R25 R1       ; R25 := R1
-219 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
-220 [-]: GETUPVAL  R22 U0       ; R22 := U0
-221 [-]: SELF      R22 R22 K43  ; R23 := R22; R22 := R22["0xA77DA8EE"]
-222 [-]: NEWTABLE  R24 0 12     ; R24 := {}
-223 [-]: GETUPVAL  R25 U4       ; R25 := U4
-224 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["TDM"]
-225 [-]: GETTABLE  R25 R25 K45  ; R25 := R25["title"]
-226 [-]: SETTABLE  R24 K44 R25  ; R24["Name"] := R25
-227 [-]: GETUPVAL  R25 U4       ; R25 := U4
-228 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["TDM"]
-229 [-]: GETTABLE  R25 R25 K47  ; R25 := R25["description"]
-230 [-]: SETTABLE  R24 K46 R25  ; R24["Description"] := R25
-231 [-]: SETTABLE  R24 K48 K65  ; R24["PlayerCount"] := "/Lotus/Language/Game/Conclave_4v4"
-232 [-]: GETGLOBAL R25 K66      ; R25 := iconTDM
-233 [-]: SETTABLE  R24 K50 R25  ; R24["Icon"] := R25
-234 [-]: GETGLOBAL R25 K67      ; R25 := backgroundTDM
-235 [-]: SETTABLE  R24 K52 R25  ; R24["Background"] := R25
-236 [-]: GETGLOBAL R25 K68      ; R25 := altTDMIcon
-237 [-]: SETTABLE  R24 K54 R25  ; R24["AltIcon"] := R25
-238 [-]: GETGLOBAL R25 K69      ; R25 := altTDMBackground
-239 [-]: SETTABLE  R24 K56 R25  ; R24["AltBackground"] := R25
-240 [-]: GETUPVAL  R25 U5       ; R25 := U5
-241 [-]: GETTABLE  R25 R25 K59  ; R25 := R25["0xF17616EF"]
-242 [-]: GETGLOBAL R26 K4       ; R26 := Lotus_Game
-243 [-]: GETTABLE  R26 R26 K9   ; R26 := R26["PVPMODE_TEAMDEATHMATCH"]
-244 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-245 [-]: GETUPVAL  R26 U6       ; R26 := U6
-246 [-]: GETTABLE  R26 R26 K60  ; R26 := R26["PVP_TAG"]
-247 [-]: CONCAT    R25 R25 R26  ; R25 := R25 .. R26
-248 [-]: SETTABLE  R24 K58 R25  ; R24["NodeName"] := R25
-249 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-250 [-]: GETTABLE  R25 R25 K9   ; R25 := R25["PVPMODE_TEAMDEATHMATCH"]
-251 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-252 [-]: GETTABLE  R25 R25 K6   ; R25 := R25["TextInfo"]
-253 [-]: SETTABLE  R24 K61 R25  ; R24["Alert"] := R25
-254 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-255 [-]: GETTABLE  R25 R25 K9   ; R25 := R25["PVPMODE_TEAMDEATHMATCH"]
-256 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-257 [-]: GETTABLE  R25 R25 K8   ; R25 := R25["ChallengeInstance"]
-258 [-]: SETTABLE  R24 K62 R25  ; R24["AlertChallengeInstance"] := R25
-259 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-260 [-]: GETTABLE  R25 R25 K9   ; R25 := R25["PVPMODE_TEAMDEATHMATCH"]
-261 [-]: GETTABLE  R25 R2 R25   ; R25 := R2[R25]
-262 [-]: SETTABLE  R24 K63 R25  ; R24["AlternativeMode"] := R25
-263 [-]: GETGLOBAL R25 K35      ; R25 := _G
-264 [-]: GETTABLE  R25 R25 K36  ; R25 := R25["ConclaveModeState"]
-265 [-]: GETUPVAL  R26 U4       ; R26 := U4
-266 [-]: GETTABLE  R26 R26 K40  ; R26 := R26["TDM"]
-267 [-]: GETTABLE  R26 R26 K38  ; R26 := R26["index"]
-268 [-]: GETTABLE  R25 R25 R26  ; R25 := R25[R26]
-269 [-]: SETTABLE  R24 K64 R25  ; R24["InAltMode"] := R25
-270 [-]: MOVE      R25 R1       ; R25 := R1
-271 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
-272 [-]: GETUPVAL  R22 U0       ; R22 := U0
-273 [-]: SELF      R22 R22 K43  ; R23 := R22; R22 := R22["0xA77DA8EE"]
-274 [-]: NEWTABLE  R24 0 12     ; R24 := {}
-275 [-]: GETUPVAL  R25 U4       ; R25 := U4
-276 [-]: GETTABLE  R25 R25 K41  ; R25 := R25["CTF"]
-277 [-]: GETTABLE  R25 R25 K45  ; R25 := R25["title"]
-278 [-]: SETTABLE  R24 K44 R25  ; R24["Name"] := R25
-279 [-]: GETUPVAL  R25 U4       ; R25 := U4
-280 [-]: GETTABLE  R25 R25 K41  ; R25 := R25["CTF"]
-281 [-]: GETTABLE  R25 R25 K47  ; R25 := R25["description"]
-282 [-]: SETTABLE  R24 K46 R25  ; R24["Description"] := R25
-283 [-]: SETTABLE  R24 K48 K65  ; R24["PlayerCount"] := "/Lotus/Language/Game/Conclave_4v4"
-284 [-]: GETGLOBAL R25 K70      ; R25 := ctfIcon
-285 [-]: SETTABLE  R24 K50 R25  ; R24["Icon"] := R25
-286 [-]: GETGLOBAL R25 K71      ; R25 := ctfBackground
-287 [-]: SETTABLE  R24 K52 R25  ; R24["Background"] := R25
-288 [-]: GETGLOBAL R25 K72      ; R25 := altCTFIcon
-289 [-]: SETTABLE  R24 K54 R25  ; R24["AltIcon"] := R25
-290 [-]: GETGLOBAL R25 K73      ; R25 := altCTFBackground
-291 [-]: SETTABLE  R24 K56 R25  ; R24["AltBackground"] := R25
-292 [-]: GETUPVAL  R25 U5       ; R25 := U5
-293 [-]: GETTABLE  R25 R25 K59  ; R25 := R25["0xF17616EF"]
-294 [-]: GETGLOBAL R26 K4       ; R26 := Lotus_Game
-295 [-]: GETTABLE  R26 R26 K5   ; R26 := R26["PVPMODE_CAPTURETHEFLAG"]
-296 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-297 [-]: GETUPVAL  R26 U6       ; R26 := U6
-298 [-]: GETTABLE  R26 R26 K60  ; R26 := R26["PVP_TAG"]
-299 [-]: CONCAT    R25 R25 R26  ; R25 := R25 .. R26
-300 [-]: SETTABLE  R24 K58 R25  ; R24["NodeName"] := R25
-301 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-302 [-]: GETTABLE  R25 R25 K5   ; R25 := R25["PVPMODE_CAPTURETHEFLAG"]
-303 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-304 [-]: GETTABLE  R25 R25 K6   ; R25 := R25["TextInfo"]
-305 [-]: SETTABLE  R24 K61 R25  ; R24["Alert"] := R25
-306 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-307 [-]: GETTABLE  R25 R25 K5   ; R25 := R25["PVPMODE_CAPTURETHEFLAG"]
-308 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-309 [-]: GETTABLE  R25 R25 K8   ; R25 := R25["ChallengeInstance"]
-310 [-]: SETTABLE  R24 K62 R25  ; R24["AlertChallengeInstance"] := R25
-311 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-312 [-]: GETTABLE  R25 R25 K5   ; R25 := R25["PVPMODE_CAPTURETHEFLAG"]
-313 [-]: GETTABLE  R25 R2 R25   ; R25 := R2[R25]
-314 [-]: SETTABLE  R24 K63 R25  ; R24["AlternativeMode"] := R25
-315 [-]: GETGLOBAL R25 K35      ; R25 := _G
-316 [-]: GETTABLE  R25 R25 K36  ; R25 := R25["ConclaveModeState"]
-317 [-]: GETUPVAL  R26 U4       ; R26 := U4
-318 [-]: GETTABLE  R26 R26 K41  ; R26 := R26["CTF"]
-319 [-]: GETTABLE  R26 R26 K38  ; R26 := R26["index"]
-320 [-]: GETTABLE  R25 R25 R26  ; R25 := R25[R26]
-321 [-]: SETTABLE  R24 K64 R25  ; R24["InAltMode"] := R25
-322 [-]: MOVE      R25 R1       ; R25 := R1
-323 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
-324 [-]: GETUPVAL  R22 U0       ; R22 := U0
-325 [-]: SELF      R22 R22 K43  ; R23 := R22; R22 := R22["0xA77DA8EE"]
-326 [-]: NEWTABLE  R24 0 12     ; R24 := {}
-327 [-]: GETUPVAL  R25 U4       ; R25 := U4
-328 [-]: GETTABLE  R25 R25 K42  ; R25 := R25["SB"]
-329 [-]: GETTABLE  R25 R25 K45  ; R25 := R25["title"]
-330 [-]: SETTABLE  R24 K44 R25  ; R24["Name"] := R25
-331 [-]: GETUPVAL  R25 U4       ; R25 := U4
-332 [-]: GETTABLE  R25 R25 K42  ; R25 := R25["SB"]
-333 [-]: GETTABLE  R25 R25 K47  ; R25 := R25["description"]
-334 [-]: SETTABLE  R24 K46 R25  ; R24["Description"] := R25
-335 [-]: SETTABLE  R24 K48 K74  ; R24["PlayerCount"] := "/Lotus/Language/Game/Conclave_3v3"
-336 [-]: GETGLOBAL R25 K75      ; R25 := lunaroIcon
-337 [-]: SETTABLE  R24 K50 R25  ; R24["Icon"] := R25
-338 [-]: GETGLOBAL R25 K76      ; R25 := lunaroBackground
-339 [-]: SETTABLE  R24 K52 R25  ; R24["Background"] := R25
-340 [-]: GETGLOBAL R25 K77      ; R25 := lunaroAlternativeIcon
-341 [-]: SETTABLE  R24 K54 R25  ; R24["AltIcon"] := R25
-342 [-]: GETGLOBAL R25 K78      ; R25 := lunaroAlternativeBackground
-343 [-]: SETTABLE  R24 K56 R25  ; R24["AltBackground"] := R25
-344 [-]: GETUPVAL  R25 U5       ; R25 := U5
-345 [-]: GETTABLE  R25 R25 K59  ; R25 := R25["0xF17616EF"]
-346 [-]: GETGLOBAL R26 K4       ; R26 := Lotus_Game
-347 [-]: GETTABLE  R26 R26 K11  ; R26 := R26["PVPMODE_SPEEDBALL"]
-348 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-349 [-]: GETUPVAL  R26 U6       ; R26 := U6
-350 [-]: GETTABLE  R26 R26 K60  ; R26 := R26["PVP_TAG"]
-351 [-]: CONCAT    R25 R25 R26  ; R25 := R25 .. R26
-352 [-]: SETTABLE  R24 K58 R25  ; R24["NodeName"] := R25
-353 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-354 [-]: GETTABLE  R25 R25 K11  ; R25 := R25["PVPMODE_SPEEDBALL"]
-355 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-356 [-]: GETTABLE  R25 R25 K6   ; R25 := R25["TextInfo"]
-357 [-]: SETTABLE  R24 K61 R25  ; R24["Alert"] := R25
-358 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-359 [-]: GETTABLE  R25 R25 K11  ; R25 := R25["PVPMODE_SPEEDBALL"]
-360 [-]: GETTABLE  R25 R1 R25   ; R25 := R1[R25]
-361 [-]: GETTABLE  R25 R25 K8   ; R25 := R25["ChallengeInstance"]
-362 [-]: SETTABLE  R24 K62 R25  ; R24["AlertChallengeInstance"] := R25
-363 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
-364 [-]: GETTABLE  R25 R25 K11  ; R25 := R25["PVPMODE_SPEEDBALL"]
-365 [-]: GETTABLE  R25 R2 R25   ; R25 := R2[R25]
-366 [-]: SETTABLE  R24 K63 R25  ; R24["AlternativeMode"] := R25
-367 [-]: GETGLOBAL R25 K35      ; R25 := _G
-368 [-]: GETTABLE  R25 R25 K36  ; R25 := R25["ConclaveModeState"]
-369 [-]: GETUPVAL  R26 U4       ; R26 := U4
-370 [-]: GETTABLE  R26 R26 K42  ; R26 := R26["SB"]
-371 [-]: GETTABLE  R26 R26 K38  ; R26 := R26["index"]
-372 [-]: GETTABLE  R25 R25 R26  ; R25 := R25[R26]
-373 [-]: SETTABLE  R24 K64 R25  ; R24["InAltMode"] := R25
-374 [-]: MOVE      R25 R1       ; R25 := R1
-375 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
-376 [-]: GETUPVAL  R22 U0       ; R22 := U0
-377 [-]: GETUPVAL  R23 U7       ; R23 := U7
-378 [-]: GETUPVAL  R24 U0       ; R24 := U0
-379 [-]: SELF      R24 R24 K0   ; R25 := R24; R24 := R24["0xC51A5C9D"]
-380 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-381 [-]: SUB       R24 R24 K80  ; R24 := R24 - 1
-382 [-]: GETUPVAL  R25 U0       ; R25 := U0
-383 [-]: GETTABLE  R25 R25 K81  ; R25 := R25["mForcedHorizontalSeparation"]
-384 [-]: MUL       R24 R24 R25  ; R24 := R24 * R25
-385 [-]: MUL       R24 R24 K82  ; R24 := R24 * 0.5
-386 [-]: SUB       R23 R23 R24  ; R23 := R23 - R24
-387 [-]: SETTABLE  R22 K79 R23  ; R22["mInitialX"] := R23
-388 [-]: GETUPVAL  R22 U0       ; R22 := U0
-389 [-]: SELF      R22 R22 K83  ; R23 := R22; R22 := R22["0xE2A2E3AC"]
-390 [-]: GETGLOBAL R24 K84      ; R24 := _T
-391 [-]: GETTABLE  R24 R24 K85  ; R24 := R24["gPendingMission"]
-392 [-]: EQ        1 R24 K7     ; if R24 == nil then PC := 395
-393 [-]: JMP       395          ; PC := 395
-394 [-]: MOVE      R24 R0       ; R24 := R0
-395 [-]: MOVE      R24 R1       ; R24 := R1
-396 [-]: CALL      R22 3 1      ; R22(R23,R24)
-397 [-]: GETUPVAL  R22 U0       ; R22 := U0
-398 [-]: SELF      R22 R22 K86  ; R23 := R22; R22 := R22["0x6470BAF4"]
-399 [-]: CLOSURE   R24 0        ; R24 := closure(Function #19.1)
-400 [-]: GETUPVAL  R0 U8        ; R0 := U8
-401 [-]: CALL      R22 3 1      ; R22(R23,R24)
-402 [-]: RETURN    R0 1         ; return 
+ 82 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 77; R11 := R12 end
+ 83 [-]: JMP       77           ; PC := 77
+ 84 [-]: TEST      R8 0         ; if not R8 then PC := 119
+ 85 [-]: JMP       119          ; PC := 119
+ 86 [-]: GETGLOBAL R14 K20      ; R14 := 0x7C282057
+ 87 [-]: MOVE      R15 R8       ; R15 := R8
+ 88 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 89 [-]: GETTABLE  R15 R14 K21  ; R15 := R14["mAffectorType"]
+ 90 [-]: GETGLOBAL R16 K4       ; R16 := Lotus_Game
+ 91 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["PVPChallengeTypeAffectorType_MODE"]
+ 92 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 119
+ 93 [-]: JMP       119          ; PC := 119
+ 94 [-]: GETGLOBAL R15 K23      ; R15 := Engine
+ 95 [-]: GETTABLE  R15 R15 K24  ; R15 := R15["0xD09D7910"]
+ 96 [-]: GETTABLE  R16 R7 K25   ; R16 := R7["mEndDate"]
+ 97 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 98 [-]: LT        0 K1 R15     ; if 0 >= R15 then PC := 119
+ 99 [-]: JMP       119          ; PC := 119
+100 [-]: GETTABLE  R16 R7 K26   ; R16 := R7["mPVPMode"]
+101 [-]: NEWTABLE  R17 0 2      ; R17 := {}
+102 [-]: NEWTABLE  R18 0 1      ; R18 := {}
+103 [-]: NEWTABLE  R19 1 0      ; R19 := {}
+104 [-]: SELF      R20 R7 K28   ; R21 := R7; R20 := R7["0x88F6DB61"]
+105 [-]: GETGLOBAL R22 K29      ; R22 := 0x9FAED6BC
+106 [-]: GETTABLE  R23 R14 K30  ; R23 := R14["mLocName"]
+107 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+108 [-]: CALL      R20 0 2      ; R20 := R20(R21,...)
+109 [-]: SELF      R21 R7 K28   ; R22 := R7; R21 := R7["0x88F6DB61"]
+110 [-]: GETGLOBAL R23 K29      ; R23 := 0x9FAED6BC
+111 [-]: GETTABLE  R24 R14 K31  ; R24 := R14["mLocDescription"]
+112 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
+113 [-]: CALL      R21 0 0      ; R21,... := R21(R22,...)
+114 [-]: SETLIST   R19 0 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 0
+115 [-]: SETTABLE  R18 K27 R19  ; R18["Descriptions"] := R19
+116 [-]: SETTABLE  R17 K6 R18   ; R17["TextInfo"] := R18
+117 [-]: SETTABLE  R17 K8 R7    ; R17["ChallengeInstance"] := R7
+118 [-]: SETTABLE  R0 R16 R17   ; R0[R16] := R17
+119 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 71; R5 := R6 end
+120 [-]: JMP       71           ; PC := 71
+121 [-]: GETGLOBAL R16 K32      ; R16 := 0x63B09107
+122 [-]: GETTABLE  R17 R2 K33   ; R17 := R2["mPVPAlternativeModes"]
+123 [-]: CALL      R16 2 4      ; R16,R17,R18 := R16(R17)
+124 [-]: JMP       133          ; PC := 133
+125 [-]: GETGLOBAL R21 K3       ; R21 := 0x400E7765
+126 [-]: GETTABLE  R22 R20 K34  ; R22 := R20["mTargetMode"]
+127 [-]: GETTABLE  R22 R1 R22   ; R22 := R1[R22]
+128 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+129 [-]: TEST      R21 0        ; if not R21 then PC := 133
+130 [-]: JMP       133          ; PC := 133
+131 [-]: GETTABLE  R21 R20 K34  ; R21 := R20["mTargetMode"]
+132 [-]: SETTABLE  R1 R21 R20   ; R1[R21] := R20
+133 [-]: TFORLOOP  R16 2        ; R19,R20 :=  R16(R17,R18); if R19 ~= nil then begin PC = 125; R18 := R19 end
+134 [-]: JMP       125          ; PC := 125
+135 [-]: GETGLOBAL R21 K35      ; R21 := _G
+136 [-]: GETTABLE  R21 R21 K36  ; R21 := R21["ConclaveModeState"]
+137 [-]: EQ        0 R21 K7     ; if R21 ~= nil then PC := 166
+138 [-]: JMP       166          ; PC := 166
+139 [-]: GETGLOBAL R21 K35      ; R21 := _G
+140 [-]: NEWTABLE  R22 0 0      ; R22 := {}
+141 [-]: SETTABLE  R21 K36 R22  ; R21["ConclaveModeState"] := R22
+142 [-]: GETGLOBAL R21 K35      ; R21 := _G
+143 [-]: GETTABLE  R21 R21 K36  ; R21 := R21["ConclaveModeState"]
+144 [-]: GETUPVAL  R22 U3       ; R22 := U3
+145 [-]: GETTABLE  R22 R22 K37  ; R22 := R22["DM"]
+146 [-]: GETTABLE  R22 R22 K38  ; R22 := R22["index"]
+147 [-]: SETTABLE  R21 R22 K39  ; R21[R22] := "0x0"
+148 [-]: GETGLOBAL R21 K35      ; R21 := _G
+149 [-]: GETTABLE  R21 R21 K36  ; R21 := R21["ConclaveModeState"]
+150 [-]: GETUPVAL  R22 U3       ; R22 := U3
+151 [-]: GETTABLE  R22 R22 K40  ; R22 := R22["TDM"]
+152 [-]: GETTABLE  R22 R22 K38  ; R22 := R22["index"]
+153 [-]: SETTABLE  R21 R22 K39  ; R21[R22] := "0x0"
+154 [-]: GETGLOBAL R21 K35      ; R21 := _G
+155 [-]: GETTABLE  R21 R21 K36  ; R21 := R21["ConclaveModeState"]
+156 [-]: GETUPVAL  R22 U3       ; R22 := U3
+157 [-]: GETTABLE  R22 R22 K41  ; R22 := R22["CTF"]
+158 [-]: GETTABLE  R22 R22 K38  ; R22 := R22["index"]
+159 [-]: SETTABLE  R21 R22 K39  ; R21[R22] := "0x0"
+160 [-]: GETGLOBAL R21 K35      ; R21 := _G
+161 [-]: GETTABLE  R21 R21 K36  ; R21 := R21["ConclaveModeState"]
+162 [-]: GETUPVAL  R22 U3       ; R22 := U3
+163 [-]: GETTABLE  R22 R22 K42  ; R22 := R22["SB"]
+164 [-]: GETTABLE  R22 R22 K38  ; R22 := R22["index"]
+165 [-]: SETTABLE  R21 R22 K39  ; R21[R22] := "0x0"
+166 [-]: GETUPVAL  R21 U0       ; R21 := U0
+167 [-]: SELF      R21 R21 K43  ; R22 := R21; R21 := R21["0xA77DA8EE"]
+168 [-]: NEWTABLE  R23 0 12     ; R23 := {}
+169 [-]: GETUPVAL  R24 U3       ; R24 := U3
+170 [-]: GETTABLE  R24 R24 K37  ; R24 := R24["DM"]
+171 [-]: GETTABLE  R24 R24 K45  ; R24 := R24["title"]
+172 [-]: SETTABLE  R23 K44 R24  ; R23["Name"] := R24
+173 [-]: GETUPVAL  R24 U3       ; R24 := U3
+174 [-]: GETTABLE  R24 R24 K37  ; R24 := R24["DM"]
+175 [-]: GETTABLE  R24 R24 K47  ; R24 := R24["description"]
+176 [-]: SETTABLE  R23 K46 R24  ; R23["Description"] := R24
+177 [-]: SETTABLE  R23 K48 K49  ; R23["PlayerCount"] := "/Lotus/Language/Game/Conclave_8Players"
+178 [-]: GETGLOBAL R24 K51      ; R24 := iconDM
+179 [-]: SETTABLE  R23 K50 R24  ; R23["Icon"] := R24
+180 [-]: GETGLOBAL R24 K53      ; R24 := backgroundDM
+181 [-]: SETTABLE  R23 K52 R24  ; R23["Background"] := R24
+182 [-]: GETGLOBAL R24 K55      ; R24 := altDMIcon
+183 [-]: SETTABLE  R23 K54 R24  ; R23["AltIcon"] := R24
+184 [-]: GETGLOBAL R24 K57      ; R24 := altDMBackground
+185 [-]: SETTABLE  R23 K56 R24  ; R23["AltBackground"] := R24
+186 [-]: GETUPVAL  R24 U4       ; R24 := U4
+187 [-]: GETTABLE  R24 R24 K59  ; R24 := R24["0xF17616EF"]
+188 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
+189 [-]: GETTABLE  R25 R25 K10  ; R25 := R25["PVPMODE_DEATHMATCH"]
+190 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+191 [-]: GETUPVAL  R25 U5       ; R25 := U5
+192 [-]: GETTABLE  R25 R25 K60  ; R25 := R25["PVP_TAG"]
+193 [-]: CONCAT    R24 R24 R25  ; R24 := R24 .. R25
+194 [-]: SETTABLE  R23 K58 R24  ; R23["NodeName"] := R24
+195 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+196 [-]: GETTABLE  R24 R24 K10  ; R24 := R24["PVPMODE_DEATHMATCH"]
+197 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+198 [-]: GETTABLE  R24 R24 K6   ; R24 := R24["TextInfo"]
+199 [-]: SETTABLE  R23 K61 R24  ; R23["Alert"] := R24
+200 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+201 [-]: GETTABLE  R24 R24 K10  ; R24 := R24["PVPMODE_DEATHMATCH"]
+202 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+203 [-]: GETTABLE  R24 R24 K8   ; R24 := R24["ChallengeInstance"]
+204 [-]: SETTABLE  R23 K62 R24  ; R23["AlertChallengeInstance"] := R24
+205 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+206 [-]: GETTABLE  R24 R24 K10  ; R24 := R24["PVPMODE_DEATHMATCH"]
+207 [-]: GETTABLE  R24 R1 R24   ; R24 := R1[R24]
+208 [-]: SETTABLE  R23 K63 R24  ; R23["AlternativeMode"] := R24
+209 [-]: GETGLOBAL R24 K35      ; R24 := _G
+210 [-]: GETTABLE  R24 R24 K36  ; R24 := R24["ConclaveModeState"]
+211 [-]: GETUPVAL  R25 U3       ; R25 := U3
+212 [-]: GETTABLE  R25 R25 K37  ; R25 := R25["DM"]
+213 [-]: GETTABLE  R25 R25 K38  ; R25 := R25["index"]
+214 [-]: GETTABLE  R24 R24 R25  ; R24 := R24[R25]
+215 [-]: SETTABLE  R23 K64 R24  ; R23["InAltMode"] := R24
+216 [-]: MOVE      R24 R1       ; R24 := R1
+217 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
+218 [-]: GETUPVAL  R21 U0       ; R21 := U0
+219 [-]: SELF      R21 R21 K43  ; R22 := R21; R21 := R21["0xA77DA8EE"]
+220 [-]: NEWTABLE  R23 0 12     ; R23 := {}
+221 [-]: GETUPVAL  R24 U3       ; R24 := U3
+222 [-]: GETTABLE  R24 R24 K40  ; R24 := R24["TDM"]
+223 [-]: GETTABLE  R24 R24 K45  ; R24 := R24["title"]
+224 [-]: SETTABLE  R23 K44 R24  ; R23["Name"] := R24
+225 [-]: GETUPVAL  R24 U3       ; R24 := U3
+226 [-]: GETTABLE  R24 R24 K40  ; R24 := R24["TDM"]
+227 [-]: GETTABLE  R24 R24 K47  ; R24 := R24["description"]
+228 [-]: SETTABLE  R23 K46 R24  ; R23["Description"] := R24
+229 [-]: SETTABLE  R23 K48 K65  ; R23["PlayerCount"] := "/Lotus/Language/Game/Conclave_4v4"
+230 [-]: GETGLOBAL R24 K66      ; R24 := iconTDM
+231 [-]: SETTABLE  R23 K50 R24  ; R23["Icon"] := R24
+232 [-]: GETGLOBAL R24 K67      ; R24 := backgroundTDM
+233 [-]: SETTABLE  R23 K52 R24  ; R23["Background"] := R24
+234 [-]: GETGLOBAL R24 K68      ; R24 := altTDMIcon
+235 [-]: SETTABLE  R23 K54 R24  ; R23["AltIcon"] := R24
+236 [-]: GETGLOBAL R24 K69      ; R24 := altTDMBackground
+237 [-]: SETTABLE  R23 K56 R24  ; R23["AltBackground"] := R24
+238 [-]: GETUPVAL  R24 U4       ; R24 := U4
+239 [-]: GETTABLE  R24 R24 K59  ; R24 := R24["0xF17616EF"]
+240 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
+241 [-]: GETTABLE  R25 R25 K9   ; R25 := R25["PVPMODE_TEAMDEATHMATCH"]
+242 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+243 [-]: GETUPVAL  R25 U5       ; R25 := U5
+244 [-]: GETTABLE  R25 R25 K60  ; R25 := R25["PVP_TAG"]
+245 [-]: CONCAT    R24 R24 R25  ; R24 := R24 .. R25
+246 [-]: SETTABLE  R23 K58 R24  ; R23["NodeName"] := R24
+247 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+248 [-]: GETTABLE  R24 R24 K9   ; R24 := R24["PVPMODE_TEAMDEATHMATCH"]
+249 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+250 [-]: GETTABLE  R24 R24 K6   ; R24 := R24["TextInfo"]
+251 [-]: SETTABLE  R23 K61 R24  ; R23["Alert"] := R24
+252 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+253 [-]: GETTABLE  R24 R24 K9   ; R24 := R24["PVPMODE_TEAMDEATHMATCH"]
+254 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+255 [-]: GETTABLE  R24 R24 K8   ; R24 := R24["ChallengeInstance"]
+256 [-]: SETTABLE  R23 K62 R24  ; R23["AlertChallengeInstance"] := R24
+257 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+258 [-]: GETTABLE  R24 R24 K9   ; R24 := R24["PVPMODE_TEAMDEATHMATCH"]
+259 [-]: GETTABLE  R24 R1 R24   ; R24 := R1[R24]
+260 [-]: SETTABLE  R23 K63 R24  ; R23["AlternativeMode"] := R24
+261 [-]: GETGLOBAL R24 K35      ; R24 := _G
+262 [-]: GETTABLE  R24 R24 K36  ; R24 := R24["ConclaveModeState"]
+263 [-]: GETUPVAL  R25 U3       ; R25 := U3
+264 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["TDM"]
+265 [-]: GETTABLE  R25 R25 K38  ; R25 := R25["index"]
+266 [-]: GETTABLE  R24 R24 R25  ; R24 := R24[R25]
+267 [-]: SETTABLE  R23 K64 R24  ; R23["InAltMode"] := R24
+268 [-]: MOVE      R24 R1       ; R24 := R1
+269 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
+270 [-]: GETUPVAL  R21 U0       ; R21 := U0
+271 [-]: SELF      R21 R21 K43  ; R22 := R21; R21 := R21["0xA77DA8EE"]
+272 [-]: NEWTABLE  R23 0 12     ; R23 := {}
+273 [-]: GETUPVAL  R24 U3       ; R24 := U3
+274 [-]: GETTABLE  R24 R24 K41  ; R24 := R24["CTF"]
+275 [-]: GETTABLE  R24 R24 K45  ; R24 := R24["title"]
+276 [-]: SETTABLE  R23 K44 R24  ; R23["Name"] := R24
+277 [-]: GETUPVAL  R24 U3       ; R24 := U3
+278 [-]: GETTABLE  R24 R24 K41  ; R24 := R24["CTF"]
+279 [-]: GETTABLE  R24 R24 K47  ; R24 := R24["description"]
+280 [-]: SETTABLE  R23 K46 R24  ; R23["Description"] := R24
+281 [-]: SETTABLE  R23 K48 K65  ; R23["PlayerCount"] := "/Lotus/Language/Game/Conclave_4v4"
+282 [-]: GETGLOBAL R24 K70      ; R24 := ctfIcon
+283 [-]: SETTABLE  R23 K50 R24  ; R23["Icon"] := R24
+284 [-]: GETGLOBAL R24 K71      ; R24 := ctfBackground
+285 [-]: SETTABLE  R23 K52 R24  ; R23["Background"] := R24
+286 [-]: GETGLOBAL R24 K72      ; R24 := altCTFIcon
+287 [-]: SETTABLE  R23 K54 R24  ; R23["AltIcon"] := R24
+288 [-]: GETGLOBAL R24 K73      ; R24 := altCTFBackground
+289 [-]: SETTABLE  R23 K56 R24  ; R23["AltBackground"] := R24
+290 [-]: GETUPVAL  R24 U4       ; R24 := U4
+291 [-]: GETTABLE  R24 R24 K59  ; R24 := R24["0xF17616EF"]
+292 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
+293 [-]: GETTABLE  R25 R25 K5   ; R25 := R25["PVPMODE_CAPTURETHEFLAG"]
+294 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+295 [-]: GETUPVAL  R25 U5       ; R25 := U5
+296 [-]: GETTABLE  R25 R25 K60  ; R25 := R25["PVP_TAG"]
+297 [-]: CONCAT    R24 R24 R25  ; R24 := R24 .. R25
+298 [-]: SETTABLE  R23 K58 R24  ; R23["NodeName"] := R24
+299 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+300 [-]: GETTABLE  R24 R24 K5   ; R24 := R24["PVPMODE_CAPTURETHEFLAG"]
+301 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+302 [-]: GETTABLE  R24 R24 K6   ; R24 := R24["TextInfo"]
+303 [-]: SETTABLE  R23 K61 R24  ; R23["Alert"] := R24
+304 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+305 [-]: GETTABLE  R24 R24 K5   ; R24 := R24["PVPMODE_CAPTURETHEFLAG"]
+306 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+307 [-]: GETTABLE  R24 R24 K8   ; R24 := R24["ChallengeInstance"]
+308 [-]: SETTABLE  R23 K62 R24  ; R23["AlertChallengeInstance"] := R24
+309 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+310 [-]: GETTABLE  R24 R24 K5   ; R24 := R24["PVPMODE_CAPTURETHEFLAG"]
+311 [-]: GETTABLE  R24 R1 R24   ; R24 := R1[R24]
+312 [-]: SETTABLE  R23 K63 R24  ; R23["AlternativeMode"] := R24
+313 [-]: GETGLOBAL R24 K35      ; R24 := _G
+314 [-]: GETTABLE  R24 R24 K36  ; R24 := R24["ConclaveModeState"]
+315 [-]: GETUPVAL  R25 U3       ; R25 := U3
+316 [-]: GETTABLE  R25 R25 K41  ; R25 := R25["CTF"]
+317 [-]: GETTABLE  R25 R25 K38  ; R25 := R25["index"]
+318 [-]: GETTABLE  R24 R24 R25  ; R24 := R24[R25]
+319 [-]: SETTABLE  R23 K64 R24  ; R23["InAltMode"] := R24
+320 [-]: MOVE      R24 R1       ; R24 := R1
+321 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
+322 [-]: GETUPVAL  R21 U0       ; R21 := U0
+323 [-]: SELF      R21 R21 K43  ; R22 := R21; R21 := R21["0xA77DA8EE"]
+324 [-]: NEWTABLE  R23 0 12     ; R23 := {}
+325 [-]: GETUPVAL  R24 U3       ; R24 := U3
+326 [-]: GETTABLE  R24 R24 K42  ; R24 := R24["SB"]
+327 [-]: GETTABLE  R24 R24 K45  ; R24 := R24["title"]
+328 [-]: SETTABLE  R23 K44 R24  ; R23["Name"] := R24
+329 [-]: GETUPVAL  R24 U3       ; R24 := U3
+330 [-]: GETTABLE  R24 R24 K42  ; R24 := R24["SB"]
+331 [-]: GETTABLE  R24 R24 K47  ; R24 := R24["description"]
+332 [-]: SETTABLE  R23 K46 R24  ; R23["Description"] := R24
+333 [-]: SETTABLE  R23 K48 K74  ; R23["PlayerCount"] := "/Lotus/Language/Game/Conclave_3v3"
+334 [-]: GETGLOBAL R24 K75      ; R24 := lunaroIcon
+335 [-]: SETTABLE  R23 K50 R24  ; R23["Icon"] := R24
+336 [-]: GETGLOBAL R24 K76      ; R24 := lunaroBackground
+337 [-]: SETTABLE  R23 K52 R24  ; R23["Background"] := R24
+338 [-]: GETGLOBAL R24 K77      ; R24 := lunaroAlternativeIcon
+339 [-]: SETTABLE  R23 K54 R24  ; R23["AltIcon"] := R24
+340 [-]: GETGLOBAL R24 K78      ; R24 := lunaroAlternativeBackground
+341 [-]: SETTABLE  R23 K56 R24  ; R23["AltBackground"] := R24
+342 [-]: GETUPVAL  R24 U4       ; R24 := U4
+343 [-]: GETTABLE  R24 R24 K59  ; R24 := R24["0xF17616EF"]
+344 [-]: GETGLOBAL R25 K4       ; R25 := Lotus_Game
+345 [-]: GETTABLE  R25 R25 K11  ; R25 := R25["PVPMODE_SPEEDBALL"]
+346 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+347 [-]: GETUPVAL  R25 U5       ; R25 := U5
+348 [-]: GETTABLE  R25 R25 K60  ; R25 := R25["PVP_TAG"]
+349 [-]: CONCAT    R24 R24 R25  ; R24 := R24 .. R25
+350 [-]: SETTABLE  R23 K58 R24  ; R23["NodeName"] := R24
+351 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+352 [-]: GETTABLE  R24 R24 K11  ; R24 := R24["PVPMODE_SPEEDBALL"]
+353 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+354 [-]: GETTABLE  R24 R24 K6   ; R24 := R24["TextInfo"]
+355 [-]: SETTABLE  R23 K61 R24  ; R23["Alert"] := R24
+356 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+357 [-]: GETTABLE  R24 R24 K11  ; R24 := R24["PVPMODE_SPEEDBALL"]
+358 [-]: GETTABLE  R24 R0 R24   ; R24 := R0[R24]
+359 [-]: GETTABLE  R24 R24 K8   ; R24 := R24["ChallengeInstance"]
+360 [-]: SETTABLE  R23 K62 R24  ; R23["AlertChallengeInstance"] := R24
+361 [-]: GETGLOBAL R24 K4       ; R24 := Lotus_Game
+362 [-]: GETTABLE  R24 R24 K11  ; R24 := R24["PVPMODE_SPEEDBALL"]
+363 [-]: GETTABLE  R24 R1 R24   ; R24 := R1[R24]
+364 [-]: SETTABLE  R23 K63 R24  ; R23["AlternativeMode"] := R24
+365 [-]: GETGLOBAL R24 K35      ; R24 := _G
+366 [-]: GETTABLE  R24 R24 K36  ; R24 := R24["ConclaveModeState"]
+367 [-]: GETUPVAL  R25 U3       ; R25 := U3
+368 [-]: GETTABLE  R25 R25 K42  ; R25 := R25["SB"]
+369 [-]: GETTABLE  R25 R25 K38  ; R25 := R25["index"]
+370 [-]: GETTABLE  R24 R24 R25  ; R24 := R24[R25]
+371 [-]: SETTABLE  R23 K64 R24  ; R23["InAltMode"] := R24
+372 [-]: MOVE      R24 R1       ; R24 := R1
+373 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
+374 [-]: GETUPVAL  R21 U0       ; R21 := U0
+375 [-]: GETUPVAL  R22 U6       ; R22 := U6
+376 [-]: GETUPVAL  R23 U0       ; R23 := U0
+377 [-]: SELF      R23 R23 K0   ; R24 := R23; R23 := R23["0xC51A5C9D"]
+378 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+379 [-]: SUB       R23 R23 K80  ; R23 := R23 - 1
+380 [-]: GETUPVAL  R24 U0       ; R24 := U0
+381 [-]: GETTABLE  R24 R24 K81  ; R24 := R24["mForcedHorizontalSeparation"]
+382 [-]: MUL       R23 R23 R24  ; R23 := R23 * R24
+383 [-]: MUL       R23 R23 K82  ; R23 := R23 * 0.5
+384 [-]: SUB       R22 R22 R23  ; R22 := R22 - R23
+385 [-]: SETTABLE  R21 K79 R22  ; R21["mInitialX"] := R22
+386 [-]: GETUPVAL  R21 U0       ; R21 := U0
+387 [-]: SELF      R21 R21 K83  ; R22 := R21; R21 := R21["0xE2A2E3AC"]
+388 [-]: GETGLOBAL R23 K84      ; R23 := _T
+389 [-]: GETTABLE  R23 R23 K85  ; R23 := R23["gPendingMission"]
+390 [-]: EQ        1 R23 K7     ; if R23 == nil then PC := 393
+391 [-]: JMP       393          ; PC := 393
+392 [-]: MOVE      R23 R0       ; R23 := R0
+393 [-]: MOVE      R23 R1       ; R23 := R1
+394 [-]: CALL      R21 3 1      ; R21(R22,R23)
+395 [-]: GETUPVAL  R21 U0       ; R21 := U0
+396 [-]: SELF      R21 R21 K86  ; R22 := R21; R21 := R21["0x6470BAF4"]
+397 [-]: CLOSURE   R23 0        ; R23 := closure(Function #19.1)
+398 [-]: GETUPVAL  R0 U7        ; R0 := U7
+399 [-]: CALL      R21 3 1      ; R21(R22,R23)
+400 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #19.1:
 ;
 ; Name:            
-; Defined at line: 412
+; Defined at line: 410
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1628,7 +1624,7 @@ code size: 9
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 417
+; Defined at line: 415
 ; #Upvalues:       9
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1700,41 +1696,40 @@ code size: 9
  64 [-]: GETUPVAL  R1 U0        ; R1 := U0
  65 [-]: CLOSURE   R2 6         ; R2 := closure(Function #20.7)
  66 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 67 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 68 [-]: SETTABLE  R1 K31 R2    ; R1["SetHighlighted"] := R2
- 69 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 70 [-]: CLOSURE   R2 7         ; R2 := closure(Function #20.8)
- 71 [-]: SETTABLE  R1 K32 R2    ; R1["SetPlayNowFade"] := R2
- 72 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 73 [-]: CLOSURE   R2 8         ; R2 := closure(Function #20.9)
- 74 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 75 [-]: SETTABLE  R1 K33 R2    ; R1["UpdateAlert"] := R2
- 76 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 77 [-]: CLOSURE   R2 9         ; R2 := closure(Function #20.10)
- 78 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 79 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 80 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 81 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 82 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 83 [-]: GETUPVAL  R0 U7        ; R0 := U7
- 84 [-]: SETTABLE  R1 K34 R2    ; R1["mElementDrawCallback"] := R2
- 85 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 86 [-]: CLOSURE   R2 10        ; R2 := closure(Function #20.11)
- 87 [-]: SETTABLE  R1 K35 R2    ; R1["SetupPreInterpolationValues"] := R2
- 88 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 89 [-]: CLOSURE   R2 11        ; R2 := closure(Function #20.12)
- 90 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 91 [-]: SETTABLE  R1 K36 R2    ; R1["GetInterpolationProperties"] := R2
- 92 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 93 [-]: GETTABLE  R1 R1 K37    ; R1 := R1["mInitialX"]
- 94 [-]: MOVE      R1 R8        ; R1 := R8
- 95 [-]: RETURN    R0 1         ; return 
+ 67 [-]: SETTABLE  R1 K31 R2    ; R1["SetHighlighted"] := R2
+ 68 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 69 [-]: CLOSURE   R2 7         ; R2 := closure(Function #20.8)
+ 70 [-]: SETTABLE  R1 K32 R2    ; R1["SetPlayNowFade"] := R2
+ 71 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 72 [-]: CLOSURE   R2 8         ; R2 := closure(Function #20.9)
+ 73 [-]: GETUPVAL  R0 U4        ; R0 := U4
+ 74 [-]: SETTABLE  R1 K33 R2    ; R1["UpdateAlert"] := R2
+ 75 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 76 [-]: CLOSURE   R2 9         ; R2 := closure(Function #20.10)
+ 77 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 78 [-]: GETUPVAL  R0 U5        ; R0 := U5
+ 79 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 80 [-]: GETUPVAL  R0 U6        ; R0 := U6
+ 81 [-]: GETUPVAL  R0 U4        ; R0 := U4
+ 82 [-]: GETUPVAL  R0 U7        ; R0 := U7
+ 83 [-]: SETTABLE  R1 K34 R2    ; R1["mElementDrawCallback"] := R2
+ 84 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 85 [-]: CLOSURE   R2 10        ; R2 := closure(Function #20.11)
+ 86 [-]: SETTABLE  R1 K35 R2    ; R1["SetupPreInterpolationValues"] := R2
+ 87 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 88 [-]: CLOSURE   R2 11        ; R2 := closure(Function #20.12)
+ 89 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 90 [-]: SETTABLE  R1 K36 R2    ; R1["GetInterpolationProperties"] := R2
+ 91 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 92 [-]: GETTABLE  R1 R1 K37    ; R1 := R1["mInitialX"]
+ 93 [-]: MOVE      R1 R8        ; R1 := R8
+ 94 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #20.1:
 ;
 ; Name:            
-; Defined at line: 432
+; Defined at line: 430
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1751,7 +1746,7 @@ code size: 9
 ; Function #20.2:
 ;
 ; Name:            
-; Defined at line: 439
+; Defined at line: 437
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1768,7 +1763,7 @@ code size: 9
 ; Function #20.3:
 ;
 ; Name:            
-; Defined at line: 445
+; Defined at line: 443
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1801,7 +1796,7 @@ code size: 9
 ; Function #20.3.1:
 ;
 ; Name:            
-; Defined at line: 453
+; Defined at line: 451
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1861,7 +1856,7 @@ code size: 9
 ; Function #20.4:
 ;
 ; Name:            
-; Defined at line: 477
+; Defined at line: 475
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1886,7 +1881,7 @@ code size: 9
 ; Function #20.5:
 ;
 ; Name:            
-; Defined at line: 485
+; Defined at line: 483
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1904,7 +1899,7 @@ code size: 9
 ; Function #20.6:
 ;
 ; Name:            
-; Defined at line: 489
+; Defined at line: 487
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1952,11 +1947,11 @@ code size: 9
 ; Function #20.7:
 ;
 ; Name:            
-; Defined at line: 504
-; #Upvalues:       2
+; Defined at line: 502
+; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  16
 
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
   2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["0xF81722A2"]
@@ -1989,73 +1984,53 @@ code size: 9
  29 [-]: LOADK     R7 K14       ; R7 := 0
  30 [-]: LOADK     R8 K15       ; R8 := 0.25
  31 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 32 [-]: CLOSURE   R6 0         ; R6 := closure(Function #20.7.1)
- 33 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 34 [-]: MOVE      R0 R0        ; R0 := R0
- 35 [-]: GETGLOBAL R7 K16       ; R7 := 0x52E17A90
- 36 [-]: GETGLOBAL R8 K6        ; R8 := mMovie
- 37 [-]: GETTABLE  R9 R0 K8     ; R9 := R0["mClipName"]
- 38 [-]: LOADK     R10 K17      ; R10 := ".Highlight"
- 39 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
- 40 [-]: GETGLOBAL R10 K18      ; R10 := UISys
- 41 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["FlashInstance_SMOOTH_STEP"]
- 42 [-]: NEWTABLE  R11 1 0      ; R11 := {}
- 43 [-]: LOADK     R12 K20      ; R12 := "_alpha"
- 44 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 45 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 46 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 47 [-]: GETTABLE  R13 R13 K0   ; R13 := R13["0xF81722A2"]
- 48 [-]: MOVE      R14 R1       ; R14 := R1
- 49 [-]: LOADK     R15 K21      ; R15 := 100
- 50 [-]: LOADK     R16 K14      ; R16 := 0
- 51 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
- 52 [-]: SETLIST   R12 0 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 0
- 53 [-]: MOVE      R13 R5       ; R13 := R5
- 54 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 55 [-]: GETGLOBAL R7 K16       ; R7 := 0x52E17A90
- 56 [-]: GETGLOBAL R8 K6        ; R8 := mMovie
- 57 [-]: GETTABLE  R9 R0 K8     ; R9 := R0["mClipName"]
- 58 [-]: LOADK     R10 K22      ; R10 := ".Highlight.Label"
- 59 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
- 60 [-]: GETGLOBAL R10 K18      ; R10 := UISys
- 61 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["FlashInstance_SMOOTH_STEP"]
- 62 [-]: NEWTABLE  R11 1 0      ; R11 := {}
- 63 [-]: LOADK     R12 K23      ; R12 := "_y"
- 64 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 65 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 66 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 67 [-]: GETTABLE  R13 R13 K0   ; R13 := R13["0xF81722A2"]
- 68 [-]: MOVE      R14 R1       ; R14 := R1
- 69 [-]: LOADK     R15 K24      ; R15 := -22
- 70 [-]: LOADK     R16 K25      ; R16 := -17
- 71 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
- 72 [-]: SETLIST   R12 0 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 0
- 73 [-]: MOVE      R13 R5       ; R13 := R5
- 74 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 75 [-]: RETURN    R0 1         ; return 
-
-
-; Function #20.7.1:
-;
-; Name:            
-; Defined at line: 511
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x9EEF690D"]
-  3 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  4 [-]: MOVE      R3 R0        ; R3 := R0
-  5 [-]: CALL      R1 3 1       ; R1(R2,R3)
-  6 [-]: RETURN    R0 1         ; return 
+ 32 [-]: GETGLOBAL R6 K16       ; R6 := 0x52E17A90
+ 33 [-]: GETGLOBAL R7 K6        ; R7 := mMovie
+ 34 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["mClipName"]
+ 35 [-]: LOADK     R9 K17       ; R9 := ".Highlight"
+ 36 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+ 37 [-]: GETGLOBAL R9 K18       ; R9 := UISys
+ 38 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["FlashInstance_SMOOTH_STEP"]
+ 39 [-]: NEWTABLE  R10 1 0      ; R10 := {}
+ 40 [-]: LOADK     R11 K20      ; R11 := "_alpha"
+ 41 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
+ 42 [-]: NEWTABLE  R11 0 0      ; R11 := {}
+ 43 [-]: GETUPVAL  R12 U0       ; R12 := U0
+ 44 [-]: GETTABLE  R12 R12 K0   ; R12 := R12["0xF81722A2"]
+ 45 [-]: MOVE      R13 R1       ; R13 := R1
+ 46 [-]: LOADK     R14 K21      ; R14 := 100
+ 47 [-]: LOADK     R15 K14      ; R15 := 0
+ 48 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
+ 49 [-]: SETLIST   R11 0 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 0
+ 50 [-]: MOVE      R12 R5       ; R12 := R5
+ 51 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
+ 52 [-]: GETGLOBAL R6 K16       ; R6 := 0x52E17A90
+ 53 [-]: GETGLOBAL R7 K6        ; R7 := mMovie
+ 54 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["mClipName"]
+ 55 [-]: LOADK     R9 K22       ; R9 := ".Highlight.Label"
+ 56 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+ 57 [-]: GETGLOBAL R9 K18       ; R9 := UISys
+ 58 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["FlashInstance_SMOOTH_STEP"]
+ 59 [-]: NEWTABLE  R10 1 0      ; R10 := {}
+ 60 [-]: LOADK     R11 K23      ; R11 := "_y"
+ 61 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
+ 62 [-]: NEWTABLE  R11 0 0      ; R11 := {}
+ 63 [-]: GETUPVAL  R12 U0       ; R12 := U0
+ 64 [-]: GETTABLE  R12 R12 K0   ; R12 := R12["0xF81722A2"]
+ 65 [-]: MOVE      R13 R1       ; R13 := R1
+ 66 [-]: LOADK     R14 K24      ; R14 := -22
+ 67 [-]: LOADK     R15 K25      ; R15 := -17
+ 68 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
+ 69 [-]: SETLIST   R11 0 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 0
+ 70 [-]: MOVE      R12 R5       ; R12 := R5
+ 71 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
+ 72 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #20.8:
 ;
 ; Name:            
-; Defined at line: 518
+; Defined at line: 512
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2077,7 +2052,7 @@ code size: 9
 ; Function #20.9:
 ;
 ; Name:            
-; Defined at line: 524
+; Defined at line: 518
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2212,7 +2187,7 @@ code size: 9
 ; Function #20.9.1:
 ;
 ; Name:            
-; Defined at line: 561
+; Defined at line: 555
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2256,7 +2231,7 @@ code size: 9
 ; Function #20.10:
 ;
 ; Name:            
-; Defined at line: 570
+; Defined at line: 564
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2688,7 +2663,7 @@ code size: 9
 ; Function #20.10.1:
 ;
 ; Name:            
-; Defined at line: 672
+; Defined at line: 666
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2715,7 +2690,7 @@ code size: 9
 ; Function #20.10.2:
 ;
 ; Name:            
-; Defined at line: 677
+; Defined at line: 671
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2799,7 +2774,7 @@ code size: 9
 ; Function #20.10.3:
 ;
 ; Name:            
-; Defined at line: 687
+; Defined at line: 681
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2821,7 +2796,7 @@ code size: 9
 ; Function #20.10.4:
 ;
 ; Name:            
-; Defined at line: 692
+; Defined at line: 686
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2910,7 +2885,7 @@ code size: 9
 ; Function #20.10.4.1:
 ;
 ; Name:            
-; Defined at line: 704
+; Defined at line: 698
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2954,7 +2929,7 @@ code size: 9
 ; Function #20.10.4.2:
 ;
 ; Name:            
-; Defined at line: 710
+; Defined at line: 704
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2990,7 +2965,7 @@ code size: 9
 ; Function #20.10.5:
 ;
 ; Name:            
-; Defined at line: 717
+; Defined at line: 711
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3011,7 +2986,7 @@ code size: 9
 ; Function #20.10.6:
 ;
 ; Name:            
-; Defined at line: 723
+; Defined at line: 717
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3032,7 +3007,7 @@ code size: 9
 ; Function #20.10.7:
 ;
 ; Name:            
-; Defined at line: 729
+; Defined at line: 723
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3080,7 +3055,7 @@ code size: 9
 ; Function #20.11:
 ;
 ; Name:            
-; Defined at line: 747
+; Defined at line: 741
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3098,7 +3073,7 @@ code size: 9
 ; Function #20.12:
 ;
 ; Name:            
-; Defined at line: 751
+; Defined at line: 745
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3129,7 +3104,7 @@ code size: 9
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 759
+; Defined at line: 753
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3145,7 +3120,7 @@ code size: 9
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 764
+; Defined at line: 758
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3185,7 +3160,7 @@ code size: 9
 ; Function #22.1:
 ;
 ; Name:            
-; Defined at line: 771
+; Defined at line: 765
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3233,7 +3208,7 @@ code size: 9
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 780
+; Defined at line: 774
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3305,7 +3280,7 @@ code size: 9
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 802
+; Defined at line: 796
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3469,7 +3444,7 @@ code size: 9
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 861
+; Defined at line: 855
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3502,7 +3477,7 @@ code size: 9
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 874
+; Defined at line: 868
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3723,7 +3698,7 @@ code size: 9
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 944
+; Defined at line: 938
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3737,7 +3712,7 @@ code size: 9
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 948
+; Defined at line: 942
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3760,7 +3735,7 @@ code size: 9
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 954
+; Defined at line: 948
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3783,7 +3758,7 @@ code size: 9
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 960
+; Defined at line: 954
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3809,7 +3784,7 @@ code size: 9
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 966
+; Defined at line: 960
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3824,7 +3799,7 @@ code size: 9
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 976
+; Defined at line: 970
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3843,7 +3818,7 @@ code size: 9
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 983
+; Defined at line: 977
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3858,7 +3833,7 @@ code size: 9
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 988
+; Defined at line: 982
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3875,7 +3850,7 @@ code size: 9
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 992
+; Defined at line: 986
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3901,7 +3876,7 @@ code size: 9
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 997
+; Defined at line: 991
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3946,7 +3921,7 @@ code size: 9
 ; Function #36.1:
 ;
 ; Name:            
-; Defined at line: 1008
+; Defined at line: 1002
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3962,7 +3937,7 @@ code size: 9
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 1014
+; Defined at line: 1008
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3974,7 +3949,7 @@ code size: 9
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 1017
+; Defined at line: 1011
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4009,7 +3984,7 @@ code size: 9
 ; Function #38.1:
 ;
 ; Name:            
-; Defined at line: 1028
+; Defined at line: 1022
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4031,7 +4006,7 @@ code size: 9
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 1036
+; Defined at line: 1030
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4048,7 +4023,7 @@ code size: 9
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 1040
+; Defined at line: 1034
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4069,7 +4044,7 @@ code size: 9
 ; Function #40.1:
 ;
 ; Name:            
-; Defined at line: 1043
+; Defined at line: 1037
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

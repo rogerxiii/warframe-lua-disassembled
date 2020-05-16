@@ -1,9 +1,9 @@
 code size: 14
-code size: 13
+code size: 20
 code size: 34
 code size: 112
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Enemies\Grineer\SpecialEvents\SurveillanceDrone.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Enemies\Grineer\SpecialEvents\SurveillanceDrone.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -35,27 +35,34 @@ code size: 112
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  5
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x80B14403"]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
   4 [-]: MOVE      R3 R1        ; R3 := R1
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  6 [-]: TEST      R2 1         ; if R2 then PC := 13
-  7 [-]: JMP       13           ; PC := 13
+  6 [-]: TEST      R2 1         ; if R2 then PC := 20
+  7 [-]: JMP       20           ; PC := 20
   8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0xDBEF0FB6"]
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  10 [-]: GETGLOBAL R3 K3        ; R3 := _T
  11 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["DroneShouldCloak"]
- 12 [-]: SETTABLE  R3 R2 K5     ; R3[R2] := "0x1"
- 13 [-]: RETURN    R0 1         ; return 
+ 12 [-]: EQ        0 R3 K5      ; if R3 ~= nil then PC := 17
+ 13 [-]: JMP       17           ; PC := 17
+ 14 [-]: GETGLOBAL R3 K3        ; R3 := _T
+ 15 [-]: NEWTABLE  R4 0 0       ; R4 := {}
+ 16 [-]: SETTABLE  R3 K4 R4     ; R3["DroneShouldCloak"] := R4
+ 17 [-]: GETGLOBAL R3 K3        ; R3 := _T
+ 18 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["DroneShouldCloak"]
+ 19 [-]: SETTABLE  R3 R2 K6     ; R3[R2] := "0x1"
+ 20 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 18
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -100,7 +107,7 @@ code size: 112
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 30
+; Defined at line: 33
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -76,7 +76,7 @@ code size: 8
 code size: 3
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\EmotionChoice.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\EmotionChoice.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -11,7 +11,7 @@ code size: 62
 code size: 66
 code size: 110
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\RiotMoaHack.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\RiotMoaHack.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -727,7 +727,7 @@ code size: 110
 107 [-]: GETGLOBAL R15 K4       ; R15 := ambulasDataFragmentType
 108 [-]: MOVE      R16 R4       ; R16 := R4
 109 [-]: MOVE      R17 R8       ; R17 := R8
-110 [-]: CALL      R13 5 2      ; R13 := R13(R14,R15,R16,R17)
+110 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
 111 [-]: FORLOOP   R9 105       ; R9 += R11; if R9 <= R10 then begin PC := 105; R12 := R9 end
 112 [-]: RETURN    R0 1         ; return 
 
@@ -1401,7 +1401,7 @@ code size: 110
  62 [-]: GETGLOBAL R8 K13       ; R8 := ZERO_VECTOR
  63 [-]: GETGLOBAL R9 K14       ; R9 := ZERO_ROTATION
  64 [-]: MOVE      R10 R1       ; R10 := R1
- 65 [-]: CALL      R4 7 2       ; R4 := R4(R5,R6,R7,R8,R9,R10)
+ 65 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  66 [-]: RETURN    R0 1         ; return 
 
 
@@ -1466,23 +1466,23 @@ code size: 110
  50 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  51 [-]: TEST      R4 1         ; if R4 then PC := 79
  52 [-]: JMP       79           ; PC := 79
- 53 [-]: LT        0 R3 K14     ; if R3 >= 1 then PC := 79
- 54 [-]: JMP       79           ; PC := 79
- 55 [-]: GETGLOBAL R4 K12       ; R4 := 0x4CDEF9FF
- 56 [-]: CALL      R4 1 2       ; R4 := R4()
- 57 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
- 58 [-]: SELF      R4 R0 K15    ; R5 := R0; R4 := R0["0xE767ECA4"]
- 59 [-]: MUL       R6 R3 K16    ; R6 := R3 * 0.11999999731779
- 60 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 61 [-]: SELF      R4 R0 K17    ; R5 := R0; R4 := R0["0xD124E361"]
- 62 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 63 [-]: MUL       R7 K18 R3    ; R7 := 2 * R3
- 64 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 65 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 66 [-]: MOVE      R5 R0        ; R5 := R0
- 67 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 68 [-]: TEST      R4 1         ; if R4 then PC := 75
- 69 [-]: JMP       75           ; PC := 75
+ 53 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 54 [-]: MOVE      R5 R1        ; R5 := R1
+ 55 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 56 [-]: TEST      R4 1         ; if R4 then PC := 79
+ 57 [-]: JMP       79           ; PC := 79
+ 58 [-]: LT        0 R3 K14     ; if R3 >= 1 then PC := 79
+ 59 [-]: JMP       79           ; PC := 79
+ 60 [-]: GETGLOBAL R4 K12       ; R4 := 0x4CDEF9FF
+ 61 [-]: CALL      R4 1 2       ; R4 := R4()
+ 62 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
+ 63 [-]: SELF      R4 R0 K15    ; R5 := R0; R4 := R0["0xE767ECA4"]
+ 64 [-]: MUL       R6 R3 K16    ; R6 := R3 * 0.11999999731779
+ 65 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 66 [-]: SELF      R4 R0 K17    ; R5 := R0; R4 := R0["0xD124E361"]
+ 67 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 68 [-]: MUL       R7 K18 R3    ; R7 := 2 * R3
+ 69 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  70 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0["0x4E2CBDCF"]
  71 [-]: SELF      R6 R1 K4     ; R7 := R1; R6 := R1["0xA2B01604"]
  72 [-]: GETGLOBAL R8 K5        ; R8 := ambulasRangedHackBeamAttachBone

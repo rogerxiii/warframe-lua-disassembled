@@ -1,4 +1,4 @@
-code size: 62
+code size: 56
 code size: 138
 code size: 3
 code size: 9
@@ -13,83 +13,77 @@ code size: 3
 code size: 14
 code size: 166
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\RailjackText.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\RailjackText.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  11
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K0        ; R1 := 0x329BDC44
-  5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.LotusUtilities"
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: LOADK     R2 K3        ; R2 := ""
-  8 [-]: GETGLOBAL R3 K4        ; R3 := 0x221C9700
-  9 [-]: LOADK     R4 K5        ; R4 := 16
- 10 [-]: LOADK     R5 K5        ; R5 := 16
- 11 [-]: LOADK     R6 K5        ; R6 := 16
- 12 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 13 [-]: NEWTABLE  R4 3 0       ; R4 := {}
- 14 [-]: LOADK     R5 K6        ; R5 := 310
- 15 [-]: LOADK     R6 K7        ; R6 := 235
- 16 [-]: LOADK     R7 K8        ; R7 := 250
- 17 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
- 18 [-]: GETGLOBAL R5 K9        ; R5 := 0xEC274B1A
- 19 [-]: LOADK     R6 K10       ; R6 := "NameLeft"
- 20 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 21 [-]: CLOSURE   R6 0         ; R6 := closure(Function #1)
- 22 [-]: MOVE      R0 R4        ; R0 := R4
- 23 [-]: MOVE      R0 R2        ; R0 := R2
- 24 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
- 25 [-]: MOVE      R0 R6        ; R0 := R6
- 26 [-]: SETGLOBAL R7 K11       ; UpdateRailjackText := R7
- 27 [-]: SETGLOBAL R7 K12       ; 0x23A85BCC := R7
- 28 [-]: CLOSURE   R7 2         ; R7 := closure(Function #3)
- 29 [-]: SETGLOBAL R7 K13       ; SetRailjackTextColor := R7
- 30 [-]: SETGLOBAL R7 K14       ; 0x94871D0B := R7
- 31 [-]: CLOSURE   R7 3         ; R7 := closure(Function #4)
- 32 [-]: SETGLOBAL R7 K15       ; SetVertexColors := R7
- 33 [-]: SETGLOBAL R7 K16       ; 0xFCBC4C81 := R7
- 34 [-]: CLOSURE   R7 4         ; R7 := closure(Function #5)
- 35 [-]: SETGLOBAL R7 K17       ; Shutdown := R7
- 36 [-]: SETGLOBAL R7 K18       ; 0x3C577FA3 := R7
- 37 [-]: CLOSURE   R7 5         ; R7 := closure(Function #6)
- 38 [-]: SETGLOBAL R7 K19       ; Close := R7
- 39 [-]: SETGLOBAL R7 K20       ; 0xA58BB96C := R7
- 40 [-]: CLOSURE   R7 6         ; R7 := closure(Function #7)
- 41 [-]: CLOSURE   R8 7         ; R8 := closure(Function #8)
- 42 [-]: MOVE      R0 R7        ; R0 := R7
- 43 [-]: CLOSURE   R9 8         ; R9 := closure(Function #9)
- 44 [-]: MOVE      R0 R8        ; R0 := R8
- 45 [-]: MOVE      R0 R6        ; R0 := R6
- 46 [-]: CLOSURE   R10 9        ; R10 := closure(Function #10)
- 47 [-]: MOVE      R0 R9        ; R0 := R9
- 48 [-]: SETGLOBAL R10 K21      ; InitializePosition := R10
- 49 [-]: SETGLOBAL R10 K22      ; 0x6105A83 := R10
- 50 [-]: CLOSURE   R10 10       ; R10 := closure(Function #11)
- 51 [-]: MOVE      R0 R9        ; R0 := R9
- 52 [-]: SETGLOBAL R10 K23      ; Initialize := R10
- 53 [-]: SETGLOBAL R10 K24      ; 0x62648036 := R10
- 54 [-]: CLOSURE   R10 11       ; R10 := closure(Function #12)
- 55 [-]: SETGLOBAL R10 K25      ; Update := R10
- 56 [-]: SETGLOBAL R10 K26      ; 0x8C7099E9 := R10
- 57 [-]: CLOSURE   R10 12       ; R10 := closure(Function #13)
- 58 [-]: MOVE      R0 R0        ; R0 := R0
- 59 [-]: MOVE      R0 R3        ; R0 := R3
- 60 [-]: SETGLOBAL R10 K27      ; CreateInstance := R10
- 61 [-]: SETGLOBAL R10 K28      ; 0x161A32BC := R10
- 62 [-]: RETURN    R0 1         ; return 
+  4 [-]: LOADK     R1 K2        ; R1 := ""
+  5 [-]: GETGLOBAL R2 K3        ; R2 := 0x221C9700
+  6 [-]: LOADK     R3 K4        ; R3 := 16
+  7 [-]: LOADK     R4 K4        ; R4 := 16
+  8 [-]: LOADK     R5 K4        ; R5 := 16
+  9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
+ 10 [-]: NEWTABLE  R3 3 0       ; R3 := {}
+ 11 [-]: LOADK     R4 K5        ; R4 := 310
+ 12 [-]: LOADK     R5 K6        ; R5 := 235
+ 13 [-]: LOADK     R6 K7        ; R6 := 250
+ 14 [-]: SETLIST   R3 3 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 3
+ 15 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
+ 16 [-]: MOVE      R0 R3        ; R0 := R3
+ 17 [-]: MOVE      R0 R1        ; R0 := R1
+ 18 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
+ 19 [-]: MOVE      R0 R4        ; R0 := R4
+ 20 [-]: SETGLOBAL R5 K8        ; UpdateRailjackText := R5
+ 21 [-]: SETGLOBAL R5 K9        ; 0x23A85BCC := R5
+ 22 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
+ 23 [-]: SETGLOBAL R5 K10       ; SetRailjackTextColor := R5
+ 24 [-]: SETGLOBAL R5 K11       ; 0x94871D0B := R5
+ 25 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
+ 26 [-]: SETGLOBAL R5 K12       ; SetVertexColors := R5
+ 27 [-]: SETGLOBAL R5 K13       ; 0xFCBC4C81 := R5
+ 28 [-]: CLOSURE   R5 4         ; R5 := closure(Function #5)
+ 29 [-]: SETGLOBAL R5 K14       ; Shutdown := R5
+ 30 [-]: SETGLOBAL R5 K15       ; 0x3C577FA3 := R5
+ 31 [-]: CLOSURE   R5 5         ; R5 := closure(Function #6)
+ 32 [-]: SETGLOBAL R5 K16       ; Close := R5
+ 33 [-]: SETGLOBAL R5 K17       ; 0xA58BB96C := R5
+ 34 [-]: CLOSURE   R5 6         ; R5 := closure(Function #7)
+ 35 [-]: CLOSURE   R6 7         ; R6 := closure(Function #8)
+ 36 [-]: MOVE      R0 R5        ; R0 := R5
+ 37 [-]: CLOSURE   R7 8         ; R7 := closure(Function #9)
+ 38 [-]: MOVE      R0 R6        ; R0 := R6
+ 39 [-]: MOVE      R0 R4        ; R0 := R4
+ 40 [-]: CLOSURE   R8 9         ; R8 := closure(Function #10)
+ 41 [-]: MOVE      R0 R7        ; R0 := R7
+ 42 [-]: SETGLOBAL R8 K18       ; InitializePosition := R8
+ 43 [-]: SETGLOBAL R8 K19       ; 0x6105A83 := R8
+ 44 [-]: CLOSURE   R8 10        ; R8 := closure(Function #11)
+ 45 [-]: MOVE      R0 R7        ; R0 := R7
+ 46 [-]: SETGLOBAL R8 K20       ; Initialize := R8
+ 47 [-]: SETGLOBAL R8 K21       ; 0x62648036 := R8
+ 48 [-]: CLOSURE   R8 11        ; R8 := closure(Function #12)
+ 49 [-]: SETGLOBAL R8 K22       ; Update := R8
+ 50 [-]: SETGLOBAL R8 K23       ; 0x8C7099E9 := R8
+ 51 [-]: CLOSURE   R8 12        ; R8 := closure(Function #13)
+ 52 [-]: MOVE      R0 R0        ; R0 := R0
+ 53 [-]: MOVE      R0 R2        ; R0 := R2
+ 54 [-]: SETGLOBAL R8 K24       ; CreateInstance := R8
+ 55 [-]: SETGLOBAL R8 K25       ; 0x161A32BC := R8
+ 56 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 17
+; Defined at line: 15
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -238,7 +232,7 @@ code size: 166
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 67
+; Defined at line: 65
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -252,7 +246,7 @@ code size: 166
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 71
+; Defined at line: 69
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -272,7 +266,7 @@ code size: 166
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 75
+; Defined at line: 73
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -300,7 +294,7 @@ code size: 166
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 79
+; Defined at line: 77
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -312,7 +306,7 @@ code size: 166
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 83
+; Defined at line: 81
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -327,7 +321,7 @@ code size: 166
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 87
+; Defined at line: 85
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -366,7 +360,7 @@ code size: 166
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 99
+; Defined at line: 97
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -407,7 +401,7 @@ code size: 166
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 110
+; Defined at line: 108
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -439,7 +433,7 @@ code size: 166
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 121
+; Defined at line: 119
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -453,7 +447,7 @@ code size: 166
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 126
+; Defined at line: 124
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -467,7 +461,7 @@ code size: 166
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 130
+; Defined at line: 128
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -492,7 +486,7 @@ code size: 166
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 138
+; Defined at line: 136
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

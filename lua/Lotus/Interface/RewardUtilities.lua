@@ -3,10 +3,10 @@ code size: 12
 code size: 21
 code size: 222
 code size: 51
-code size: 75
+code size: 67
 code size: 55
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\RewardUtilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\RewardUtilities.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -423,7 +423,7 @@ code size: 55
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  16
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := gRegion
   2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0xB3ABFFBB"]
@@ -474,32 +474,24 @@ code size: 55
  47 [-]: MOVE      R8 R4        ; R8 := R4
  48 [-]: MOVE      R9 R5        ; R9 := R5
  49 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 50 [-]: GETGLOBAL R7 K4        ; R7 := gGameRules
- 51 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7["0x4503D699"]
- 52 [-]: GETGLOBAL R9 K17       ; R9 := 0xEC274B1A
- 53 [-]: LOADK     R10 K18      ; R10 := "SurvivalTime"
- 54 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 55 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 56 [-]: GETGLOBAL R8 K19       ; R8 := 0x93B1256B
- 57 [-]: LOADK     R9 K20       ; R9 := "Survival: Gave reward tier "
- 58 [-]: MOVE      R10 R6       ; R10 := R6
- 59 [-]: LOADK     R11 K21      ; R11 := " at "
- 60 [-]: MOVE      R12 R7       ; R12 := R7
- 61 [-]: CONCAT    R9 R9 R12    ; R9 := R9 .. R10 .. R11 .. R12
- 62 [-]: CALL      R8 2 1       ; R8(R9)
- 63 [-]: GETGLOBAL R8 K4        ; R8 := gGameRules
- 64 [-]: SELF      R8 R8 K22    ; R9 := R8; R8 := R8["0xDEAB1332"]
- 65 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 66 [-]: GETUPVAL  R9 U4        ; R9 := U4
- 67 [-]: MOVE      R10 R2       ; R10 := R2
- 68 [-]: MOVE      R11 R3       ; R11 := R3
- 69 [-]: MOVE      R12 R8       ; R12 := R8
- 70 [-]: MOVE      R13 R0       ; R13 := R0
- 71 [-]: LOADNIL   R14 R15      ; R14 := R15 := nil
- 72 [-]: MOVE      R16 R1       ; R16 := R1
- 73 [-]: TAILCALL  R9 8 0       ; R9,... := R9(R10,R11,R12,R13,R14,R15,R16)
- 74 [-]: RETURN    R9 0         ; return R9,...
- 75 [-]: RETURN    R0 1         ; return 
+ 50 [-]: GETGLOBAL R7 K16       ; R7 := 0x93B1256B
+ 51 [-]: LOADK     R8 K17       ; R8 := "RewardUtilities: Gave reward tier "
+ 52 [-]: MOVE      R9 R6        ; R9 := R6
+ 53 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+ 54 [-]: CALL      R7 2 1       ; R7(R8)
+ 55 [-]: GETGLOBAL R7 K4        ; R7 := gGameRules
+ 56 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7["0xDEAB1332"]
+ 57 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 58 [-]: GETUPVAL  R8 U4        ; R8 := U4
+ 59 [-]: MOVE      R9 R2        ; R9 := R2
+ 60 [-]: MOVE      R10 R3       ; R10 := R3
+ 61 [-]: MOVE      R11 R7       ; R11 := R7
+ 62 [-]: MOVE      R12 R0       ; R12 := R0
+ 63 [-]: LOADNIL   R13 R14      ; R13 := R14 := nil
+ 64 [-]: MOVE      R15 R1       ; R15 := R1
+ 65 [-]: TAILCALL  R8 8 0       ; R8,... := R8(R9,R10,R11,R12,R13,R14,R15)
+ 66 [-]: RETURN    R8 0         ; return R8,...
+ 67 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:

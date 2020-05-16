@@ -14,7 +14,7 @@ code size: 19
 code size: 740
 code size: 49
 code size: 24
-code size: 503
+code size: 508
 code size: 6
 code size: 5
 code size: 21
@@ -29,7 +29,7 @@ code size: 138
 code size: 76
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\BardQuest.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\BardQuest.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -3712,64 +3712,69 @@ code size: 5
 449 [-]: JMP       408          ; PC := 408
 450 [-]: SELF      R23 R9 K115  ; R24 := R9; R23 := R9["0xD4C2743F"]
 451 [-]: CALL      R23 2 1      ; R23(R24)
-452 [-]: SELF      R23 R1 K81   ; R24 := R1; R23 := R1["0xD610586B"]
-453 [-]: LOADK     R25 K37      ; R25 := 0
-454 [-]: CALL      R23 3 1      ; R23(R24,R25)
-455 [-]: GETGLOBAL R23 K82      ; R23 := 0x400E7765
-456 [-]: MOVE      R24 R11      ; R24 := R11
-457 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-458 [-]: TEST      R23 1        ; if R23 then PC := 463
-459 [-]: JMP       463          ; PC := 463
-460 [-]: SELF      R23 R11 K81  ; R24 := R11; R23 := R11["0xD610586B"]
-461 [-]: LOADK     R25 K37      ; R25 := 0
-462 [-]: CALL      R23 3 1      ; R23(R24,R25)
-463 [-]: TEST      R5 0         ; if not R5 then PC := 468
+452 [-]: GETGLOBAL R23 K82      ; R23 := 0x400E7765
+453 [-]: MOVE      R24 R1       ; R24 := R1
+454 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+455 [-]: TEST      R23 1        ; if R23 then PC := 460
+456 [-]: JMP       460          ; PC := 460
+457 [-]: SELF      R23 R1 K81   ; R24 := R1; R23 := R1["0xD610586B"]
+458 [-]: LOADK     R25 K37      ; R25 := 0
+459 [-]: CALL      R23 3 1      ; R23(R24,R25)
+460 [-]: GETGLOBAL R23 K82      ; R23 := 0x400E7765
+461 [-]: MOVE      R24 R11      ; R24 := R11
+462 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+463 [-]: TEST      R23 1        ; if R23 then PC := 468
 464 [-]: JMP       468          ; PC := 468
-465 [-]: SELF      R23 R6 K74   ; R24 := R6; R23 := R6["0x5259D5EB"]
-466 [-]: MOVE      R25 R0       ; R25 := R0
+465 [-]: SELF      R23 R11 K81  ; R24 := R11; R23 := R11["0xD610586B"]
+466 [-]: LOADK     R25 K37      ; R25 := 0
 467 [-]: CALL      R23 3 1      ; R23(R24,R25)
-468 [-]: GETGLOBAL R23 K11      ; R23 := _T
-469 [-]: GETTABLE  R23 R23 K109 ; R23 := R23["CompositionToolPuzzleSolved"]
-470 [-]: TEST      R23 0        ; if not R23 then PC := 494
-471 [-]: JMP       494          ; PC := 494
-472 [-]: EQ        0 R2 K5      ; if R2 ~= "BardQuestOrokinTower" then PC := 477
-473 [-]: JMP       477          ; PC := 477
-474 [-]: SELF      R23 R15 K115 ; R24 := R15; R23 := R15["0xD4C2743F"]
-475 [-]: CALL      R23 2 1      ; R23(R24)
-476 [-]: JMP       485          ; PC := 485
-477 [-]: SELF      R23 R15 K94  ; R24 := R15; R23 := R15["0x3257B29C"]
-478 [-]: GETUPVAL  R25 U10      ; R25 := U10
-479 [-]: GETTABLE  R25 R25 R2   ; R25 := R25[R2]
-480 [-]: CALL      R23 3 1      ; R23(R24,R25)
-481 [-]: SELF      R23 R15 K95  ; R24 := R15; R23 := R15["0x7A16C5BD"]
-482 [-]: LOADK     R25 K37      ; R25 := 0
-483 [-]: LOADK     R26 K96      ; R26 := 16
-484 [-]: CALL      R23 4 1      ; R23(R24,R25,R26)
-485 [-]: TEST      R5 0         ; if not R5 then PC := 503
-486 [-]: JMP       503          ; PC := 503
-487 [-]: SELF      R23 R6 K73   ; R24 := R6; R23 := R6["0xF96BA338"]
-488 [-]: MOVE      R25 R1       ; R25 := R1
-489 [-]: CALL      R23 3 1      ; R23(R24,R25)
-490 [-]: SELF      R23 R6 K116  ; R24 := R6; R23 := R6["0x1AA7AB7C"]
-491 [-]: MOVE      R25 R1       ; R25 := R1
-492 [-]: CALL      R23 3 1      ; R23(R24,R25)
-493 [-]: JMP       503          ; PC := 503
-494 [-]: GETGLOBAL R23 K82      ; R23 := 0x400E7765
-495 [-]: MOVE      R24 R0       ; R24 := R0
-496 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-497 [-]: TEST      R23 1        ; if R23 then PC := 503
-498 [-]: JMP       503          ; PC := 503
-499 [-]: SELF      R23 R15 K115 ; R24 := R15; R23 := R15["0xD4C2743F"]
-500 [-]: CALL      R23 2 1      ; R23(R24)
-501 [-]: SELF      R23 R0 K117  ; R24 := R0; R23 := R0["0xC5E91BA6"]
-502 [-]: CALL      R23 2 1      ; R23(R24)
-503 [-]: RETURN    R0 1         ; return 
+468 [-]: TEST      R5 0         ; if not R5 then PC := 473
+469 [-]: JMP       473          ; PC := 473
+470 [-]: SELF      R23 R6 K74   ; R24 := R6; R23 := R6["0x5259D5EB"]
+471 [-]: MOVE      R25 R0       ; R25 := R0
+472 [-]: CALL      R23 3 1      ; R23(R24,R25)
+473 [-]: GETGLOBAL R23 K11      ; R23 := _T
+474 [-]: GETTABLE  R23 R23 K109 ; R23 := R23["CompositionToolPuzzleSolved"]
+475 [-]: TEST      R23 0        ; if not R23 then PC := 499
+476 [-]: JMP       499          ; PC := 499
+477 [-]: EQ        0 R2 K5      ; if R2 ~= "BardQuestOrokinTower" then PC := 482
+478 [-]: JMP       482          ; PC := 482
+479 [-]: SELF      R23 R15 K115 ; R24 := R15; R23 := R15["0xD4C2743F"]
+480 [-]: CALL      R23 2 1      ; R23(R24)
+481 [-]: JMP       490          ; PC := 490
+482 [-]: SELF      R23 R15 K94  ; R24 := R15; R23 := R15["0x3257B29C"]
+483 [-]: GETUPVAL  R25 U10      ; R25 := U10
+484 [-]: GETTABLE  R25 R25 R2   ; R25 := R25[R2]
+485 [-]: CALL      R23 3 1      ; R23(R24,R25)
+486 [-]: SELF      R23 R15 K95  ; R24 := R15; R23 := R15["0x7A16C5BD"]
+487 [-]: LOADK     R25 K37      ; R25 := 0
+488 [-]: LOADK     R26 K96      ; R26 := 16
+489 [-]: CALL      R23 4 1      ; R23(R24,R25,R26)
+490 [-]: TEST      R5 0         ; if not R5 then PC := 508
+491 [-]: JMP       508          ; PC := 508
+492 [-]: SELF      R23 R6 K73   ; R24 := R6; R23 := R6["0xF96BA338"]
+493 [-]: MOVE      R25 R1       ; R25 := R1
+494 [-]: CALL      R23 3 1      ; R23(R24,R25)
+495 [-]: SELF      R23 R6 K116  ; R24 := R6; R23 := R6["0x1AA7AB7C"]
+496 [-]: MOVE      R25 R1       ; R25 := R1
+497 [-]: CALL      R23 3 1      ; R23(R24,R25)
+498 [-]: JMP       508          ; PC := 508
+499 [-]: GETGLOBAL R23 K82      ; R23 := 0x400E7765
+500 [-]: MOVE      R24 R0       ; R24 := R0
+501 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+502 [-]: TEST      R23 1        ; if R23 then PC := 508
+503 [-]: JMP       508          ; PC := 508
+504 [-]: SELF      R23 R15 K115 ; R24 := R15; R23 := R15["0xD4C2743F"]
+505 [-]: CALL      R23 2 1      ; R23(R24)
+506 [-]: SELF      R23 R0 K117  ; R24 := R0; R23 := R0["0xC5E91BA6"]
+507 [-]: CALL      R23 2 1      ; R23(R24)
+508 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 1222
+; Defined at line: 1224
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3786,7 +3791,7 @@ code size: 5
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 1226
+; Defined at line: 1228
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3802,7 +3807,7 @@ code size: 5
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 1231
+; Defined at line: 1233
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3834,7 +3839,7 @@ code size: 5
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 1239
+; Defined at line: 1241
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3860,7 +3865,7 @@ code size: 5
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 1246
+; Defined at line: 1248
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3992,7 +3997,7 @@ code size: 5
 ; Function #21.1:
 ;
 ; Name:            
-; Defined at line: 1259
+; Defined at line: 1261
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4005,7 +4010,7 @@ code size: 5
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 1296
+; Defined at line: 1298
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4116,7 +4121,7 @@ code size: 5
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 1332
+; Defined at line: 1334
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4138,7 +4143,7 @@ code size: 5
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 1341
+; Defined at line: 1343
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4160,7 +4165,7 @@ code size: 5
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 1350
+; Defined at line: 1352
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4342,7 +4347,7 @@ code size: 5
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 1416
+; Defined at line: 1418
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4491,7 +4496,7 @@ code size: 5
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 1471
+; Defined at line: 1473
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4578,7 +4583,7 @@ code size: 5
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 1505
+; Defined at line: 1507
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -3,15 +3,15 @@ code size: 35
 code size: 53
 code size: 35
 code size: 37
-code size: 53
-code size: 135
+code size: 87
+code size: 177
 code size: 184
 code size: 75
 code size: 16
 code size: 16
 code size: 125
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\RailjackHackerAction.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\RailjackHackerAction.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -85,7 +85,7 @@ code size: 125
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 18
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -131,7 +131,7 @@ code size: 125
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 34
+; Defined at line: 37
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -195,7 +195,7 @@ code size: 125
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 57
+; Defined at line: 60
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -241,7 +241,7 @@ code size: 125
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 74
+; Defined at line: 77
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -289,11 +289,11 @@ code size: 125
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 96
+; Defined at line: 99
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  21
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := SYSTEM_MOD
   2 [-]: EQ        0 R2 K1      ; if R2 ~= 0 then PC := 5
@@ -302,62 +302,96 @@ code size: 125
   5 [-]: GETGLOBAL R2 K0        ; R2 := SYSTEM_MOD
   6 [-]: GETUPVAL  R3 U0        ; R3 := U0
   7 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["DISABLE_GUNS"]
-  8 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 15
-  9 [-]: JMP       15           ; PC := 15
- 10 [-]: GETGLOBAL R2 K0        ; R2 := SYSTEM_MOD
- 11 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 12 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["DISABLE_BATTLE_CRAFTING"]
- 13 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 26
- 14 [-]: JMP       26           ; PC := 26
- 15 [-]: LOADK     R2 K4        ; R2 := 1
- 16 [-]: GETGLOBAL R3 K5        ; R3 := referenceEntity
- 17 [-]: LEN       R3 R3        ; R3 := # R3
- 18 [-]: LOADK     R4 K4        ; R4 := 1
- 19 [-]: FORPREP   R2 24        ; R2 -= R4; PC := 24
- 20 [-]: GETGLOBAL R6 K5        ; R6 := referenceEntity
- 21 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 22 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0x2DB1272F"]
- 23 [-]: CALL      R6 2 1       ; R6(R7)
- 24 [-]: FORLOOP   R2 20        ; R2 += R4; if R2 <= R3 then begin PC := 20; R5 := R2 end
- 25 [-]: JMP       53           ; PC := 53
- 26 [-]: GETGLOBAL R6 K0        ; R6 := SYSTEM_MOD
- 27 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 28 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["DISABLE_BATTLE_AVIONICS"]
- 29 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 35
- 30 [-]: JMP       35           ; PC := 35
- 31 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 32 [-]: MOVE      R7 R0        ; R7 := R0
- 33 [-]: CALL      R6 2 1       ; R6(R7)
- 34 [-]: JMP       53           ; PC := 53
- 35 [-]: GETGLOBAL R6 K0        ; R6 := SYSTEM_MOD
- 36 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 37 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["DISTORT_RAILJACK_SPEED_AND_BOOST"]
- 38 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 45
- 39 [-]: JMP       45           ; PC := 45
- 40 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 41 [-]: GETGLOBAL R7 K9        ; R7 := railJackSpeedChangePercentage
- 42 [-]: MOVE      R8 R0        ; R8 := R0
- 43 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 44 [-]: JMP       53           ; PC := 53
- 45 [-]: GETGLOBAL R6 K0        ; R6 := SYSTEM_MOD
- 46 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 47 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["DISABLE_CANNONS"]
- 48 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 53
- 49 [-]: JMP       53           ; PC := 53
- 50 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 51 [-]: MOVE      R7 R0        ; R7 := R0
- 52 [-]: CALL      R6 2 1       ; R6(R7)
- 53 [-]: RETURN    R0 1         ; return 
+  8 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 21
+  9 [-]: JMP       21           ; PC := 21
+ 10 [-]: LOADK     R2 K3        ; R2 := 1
+ 11 [-]: GETGLOBAL R3 K4        ; R3 := referenceEntity
+ 12 [-]: LEN       R3 R3        ; R3 := # R3
+ 13 [-]: LOADK     R4 K3        ; R4 := 1
+ 14 [-]: FORPREP   R2 19        ; R2 -= R4; PC := 19
+ 15 [-]: GETGLOBAL R6 K4        ; R6 := referenceEntity
+ 16 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
+ 17 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6["0x2DB1272F"]
+ 18 [-]: CALL      R6 2 1       ; R6(R7)
+ 19 [-]: FORLOOP   R2 15        ; R2 += R4; if R2 <= R3 then begin PC := 15; R5 := R2 end
+ 20 [-]: JMP       87           ; PC := 87
+ 21 [-]: GETGLOBAL R6 K0        ; R6 := SYSTEM_MOD
+ 22 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 23 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["DISABLE_BATTLE_CRAFTING"]
+ 24 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 60
+ 25 [-]: JMP       60           ; PC := 60
+ 26 [-]: LOADK     R6 K3        ; R6 := 1
+ 27 [-]: GETGLOBAL R7 K4        ; R7 := referenceEntity
+ 28 [-]: LEN       R7 R7        ; R7 := # R7
+ 29 [-]: LOADK     R8 K3        ; R8 := 1
+ 30 [-]: FORPREP   R6 35        ; R6 -= R8; PC := 35
+ 31 [-]: GETGLOBAL R10 K4       ; R10 := referenceEntity
+ 32 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
+ 33 [-]: SELF      R10 R10 K5   ; R11 := R10; R10 := R10["0x2DB1272F"]
+ 34 [-]: CALL      R10 2 1      ; R10(R11)
+ 35 [-]: FORLOOP   R6 31        ; R6 += R8; if R6 <= R7 then begin PC := 31; R9 := R6 end
+ 36 [-]: LOADK     R10 K3       ; R10 := 1
+ 37 [-]: GETGLOBAL R11 K7       ; R11 := refEntitiesForHackerJamEffect
+ 38 [-]: LEN       R11 R11      ; R11 := # R11
+ 39 [-]: LOADK     R12 K3       ; R12 := 1
+ 40 [-]: FORPREP   R10 47       ; R10 -= R12; PC := 47
+ 41 [-]: GETGLOBAL R14 K7       ; R14 := refEntitiesForHackerJamEffect
+ 42 [-]: GETTABLE  R14 R14 R13  ; R14 := R14[R13]
+ 43 [-]: SELF      R14 R14 K8   ; R15 := R14; R14 := R14["0xAB436EF2"]
+ 44 [-]: GETGLOBAL R16 K9       ; R16 := hackerForgeJamEffect
+ 45 [-]: GETGLOBAL R17 K10      ; R17 := EMPTY_SYMBOL
+ 46 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
+ 47 [-]: FORLOOP   R10 41       ; R10 += R12; if R10 <= R11 then begin PC := 41; R13 := R10 end
+ 48 [-]: LOADK     R14 K3       ; R14 := 1
+ 49 [-]: GETGLOBAL R15 K11      ; R15 := refEntitiesForForgeToHide
+ 50 [-]: LEN       R15 R15      ; R15 := # R15
+ 51 [-]: LOADK     R16 K3       ; R16 := 1
+ 52 [-]: FORPREP   R14 58       ; R14 -= R16; PC := 58
+ 53 [-]: GETGLOBAL R18 K11      ; R18 := refEntitiesForForgeToHide
+ 54 [-]: GETTABLE  R18 R18 R17  ; R18 := R18[R17]
+ 55 [-]: SELF      R18 R18 K12  ; R19 := R18; R18 := R18["0x7DBDDA0B"]
+ 56 [-]: MOVE      R20 R0       ; R20 := R0
+ 57 [-]: CALL      R18 3 1      ; R18(R19,R20)
+ 58 [-]: FORLOOP   R14 53       ; R14 += R16; if R14 <= R15 then begin PC := 53; R17 := R14 end
+ 59 [-]: JMP       87           ; PC := 87
+ 60 [-]: GETGLOBAL R18 K0       ; R18 := SYSTEM_MOD
+ 61 [-]: GETUPVAL  R19 U0       ; R19 := U0
+ 62 [-]: GETTABLE  R19 R19 K13  ; R19 := R19["DISABLE_BATTLE_AVIONICS"]
+ 63 [-]: EQ        0 R18 R19    ; if R18 ~= R19 then PC := 69
+ 64 [-]: JMP       69           ; PC := 69
+ 65 [-]: GETUPVAL  R18 U1       ; R18 := U1
+ 66 [-]: MOVE      R19 R0       ; R19 := R0
+ 67 [-]: CALL      R18 2 1      ; R18(R19)
+ 68 [-]: JMP       87           ; PC := 87
+ 69 [-]: GETGLOBAL R18 K0       ; R18 := SYSTEM_MOD
+ 70 [-]: GETUPVAL  R19 U0       ; R19 := U0
+ 71 [-]: GETTABLE  R19 R19 K14  ; R19 := R19["DISTORT_RAILJACK_SPEED_AND_BOOST"]
+ 72 [-]: EQ        0 R18 R19    ; if R18 ~= R19 then PC := 79
+ 73 [-]: JMP       79           ; PC := 79
+ 74 [-]: GETUPVAL  R18 U2       ; R18 := U2
+ 75 [-]: GETGLOBAL R19 K15      ; R19 := railJackSpeedChangePercentage
+ 76 [-]: MOVE      R20 R0       ; R20 := R0
+ 77 [-]: CALL      R18 3 1      ; R18(R19,R20)
+ 78 [-]: JMP       87           ; PC := 87
+ 79 [-]: GETGLOBAL R18 K0       ; R18 := SYSTEM_MOD
+ 80 [-]: GETUPVAL  R19 U0       ; R19 := U0
+ 81 [-]: GETTABLE  R19 R19 K16  ; R19 := R19["DISABLE_CANNONS"]
+ 82 [-]: EQ        0 R18 R19    ; if R18 ~= R19 then PC := 87
+ 83 [-]: JMP       87           ; PC := 87
+ 84 [-]: GETUPVAL  R18 U3       ; R18 := U3
+ 85 [-]: MOVE      R19 R0       ; R19 := R0
+ 86 [-]: CALL      R18 2 1      ; R18(R19)
+ 87 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 115
+; Defined at line: 131
 ; #Upvalues:       5
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  30
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := SYSTEM_MOD
   2 [-]: EQ        0 R3 K1      ; if R3 ~= 0 then PC := 5
@@ -441,65 +475,107 @@ code size: 125
  80 [-]: GETGLOBAL R10 K0       ; R10 := SYSTEM_MOD
  81 [-]: GETUPVAL  R11 U1       ; R11 := U1
  82 [-]: GETTABLE  R11 R11 K20  ; R11 := R11["DISABLE_GUNS"]
- 83 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 90
- 84 [-]: JMP       90           ; PC := 90
- 85 [-]: GETGLOBAL R10 K0       ; R10 := SYSTEM_MOD
- 86 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 87 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["DISABLE_BATTLE_CRAFTING"]
- 88 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 101
- 89 [-]: JMP       101          ; PC := 101
- 90 [-]: LOADK     R10 K12      ; R10 := 1
- 91 [-]: GETGLOBAL R11 K22      ; R11 := referenceEntity
- 92 [-]: LEN       R11 R11      ; R11 := # R11
- 93 [-]: LOADK     R12 K12      ; R12 := 1
- 94 [-]: FORPREP   R10 99       ; R10 -= R12; PC := 99
- 95 [-]: GETGLOBAL R14 K22      ; R14 := referenceEntity
- 96 [-]: GETTABLE  R14 R14 R13  ; R14 := R14[R13]
- 97 [-]: SELF      R14 R14 K23  ; R15 := R14; R14 := R14["0xC5E91BA6"]
- 98 [-]: CALL      R14 2 1      ; R14(R15)
- 99 [-]: FORLOOP   R10 95       ; R10 += R12; if R10 <= R11 then begin PC := 95; R13 := R10 end
-100 [-]: JMP       128          ; PC := 128
-101 [-]: GETGLOBAL R14 K0       ; R14 := SYSTEM_MOD
-102 [-]: GETUPVAL  R15 U1       ; R15 := U1
-103 [-]: GETTABLE  R15 R15 K24  ; R15 := R15["DISABLE_BATTLE_AVIONICS"]
-104 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 110
-105 [-]: JMP       110          ; PC := 110
-106 [-]: GETUPVAL  R14 U2       ; R14 := U2
-107 [-]: MOVE      R15 R1       ; R15 := R1
-108 [-]: CALL      R14 2 1      ; R14(R15)
-109 [-]: JMP       128          ; PC := 128
-110 [-]: GETGLOBAL R14 K0       ; R14 := SYSTEM_MOD
-111 [-]: GETUPVAL  R15 U1       ; R15 := U1
-112 [-]: GETTABLE  R15 R15 K25  ; R15 := R15["DISTORT_RAILJACK_SPEED_AND_BOOST"]
-113 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 120
-114 [-]: JMP       120          ; PC := 120
-115 [-]: GETUPVAL  R14 U3       ; R14 := U3
-116 [-]: GETGLOBAL R15 K26      ; R15 := railJackSpeedChangePercentage
-117 [-]: MOVE      R16 R1       ; R16 := R1
-118 [-]: CALL      R14 3 1      ; R14(R15,R16)
-119 [-]: JMP       128          ; PC := 128
-120 [-]: GETGLOBAL R14 K0       ; R14 := SYSTEM_MOD
-121 [-]: GETUPVAL  R15 U1       ; R15 := U1
-122 [-]: GETTABLE  R15 R15 K27  ; R15 := R15["DISABLE_CANNONS"]
-123 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 128
-124 [-]: JMP       128          ; PC := 128
-125 [-]: GETUPVAL  R14 U4       ; R14 := U4
-126 [-]: MOVE      R15 R1       ; R15 := R1
-127 [-]: CALL      R14 2 1      ; R14(R15)
-128 [-]: GETGLOBAL R14 K2       ; R14 := 0x400E7765
-129 [-]: MOVE      R15 R0       ; R15 := R0
-130 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-131 [-]: TEST      R14 1        ; if R14 then PC := 135
-132 [-]: JMP       135          ; PC := 135
-133 [-]: SELF      R14 R0 K23   ; R15 := R0; R14 := R0["0xC5E91BA6"]
-134 [-]: CALL      R14 2 1      ; R14(R15)
-135 [-]: RETURN    R0 1         ; return 
+ 83 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 96
+ 84 [-]: JMP       96           ; PC := 96
+ 85 [-]: LOADK     R10 K12      ; R10 := 1
+ 86 [-]: GETGLOBAL R11 K21      ; R11 := referenceEntity
+ 87 [-]: LEN       R11 R11      ; R11 := # R11
+ 88 [-]: LOADK     R12 K12      ; R12 := 1
+ 89 [-]: FORPREP   R10 94       ; R10 -= R12; PC := 94
+ 90 [-]: GETGLOBAL R14 K21      ; R14 := referenceEntity
+ 91 [-]: GETTABLE  R14 R14 R13  ; R14 := R14[R13]
+ 92 [-]: SELF      R14 R14 K22  ; R15 := R14; R14 := R14["0xC5E91BA6"]
+ 93 [-]: CALL      R14 2 1      ; R14(R15)
+ 94 [-]: FORLOOP   R10 90       ; R10 += R12; if R10 <= R11 then begin PC := 90; R13 := R10 end
+ 95 [-]: JMP       170          ; PC := 170
+ 96 [-]: GETGLOBAL R14 K0       ; R14 := SYSTEM_MOD
+ 97 [-]: GETUPVAL  R15 U1       ; R15 := U1
+ 98 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["DISABLE_BATTLE_CRAFTING"]
+ 99 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 143
+100 [-]: JMP       143          ; PC := 143
+101 [-]: LOADK     R14 K12      ; R14 := 1
+102 [-]: GETGLOBAL R15 K21      ; R15 := referenceEntity
+103 [-]: LEN       R15 R15      ; R15 := # R15
+104 [-]: LOADK     R16 K12      ; R16 := 1
+105 [-]: FORPREP   R14 110      ; R14 -= R16; PC := 110
+106 [-]: GETGLOBAL R18 K21      ; R18 := referenceEntity
+107 [-]: GETTABLE  R18 R18 R17  ; R18 := R18[R17]
+108 [-]: SELF      R18 R18 K22  ; R19 := R18; R18 := R18["0xC5E91BA6"]
+109 [-]: CALL      R18 2 1      ; R18(R19)
+110 [-]: FORLOOP   R14 106      ; R14 += R16; if R14 <= R15 then begin PC := 106; R17 := R14 end
+111 [-]: LOADK     R18 K12      ; R18 := 1
+112 [-]: GETGLOBAL R19 K24      ; R19 := refEntitiesForHackerJamEffect
+113 [-]: LEN       R19 R19      ; R19 := # R19
+114 [-]: LOADK     R20 K12      ; R20 := 1
+115 [-]: FORPREP   R18 130      ; R18 -= R20; PC := 130
+116 [-]: LOADNIL   R22 R22      ; R22 := nil
+117 [-]: GETGLOBAL R23 K24      ; R23 := refEntitiesForHackerJamEffect
+118 [-]: GETTABLE  R23 R23 R21  ; R23 := R23[R21]
+119 [-]: SELF      R23 R23 K25  ; R24 := R23; R23 := R23["0x9F1DC568"]
+120 [-]: GETGLOBAL R25 K26      ; R25 := hackerForgeJamEffect
+121 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+122 [-]: MOVE      R22 R23      ; R22 := R23
+123 [-]: GETGLOBAL R23 K2       ; R23 := 0x400E7765
+124 [-]: MOVE      R24 R22      ; R24 := R22
+125 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+126 [-]: TEST      R23 1        ; if R23 then PC := 130
+127 [-]: JMP       130          ; PC := 130
+128 [-]: SELF      R23 R22 K27  ; R24 := R22; R23 := R22["0xD4C2743F"]
+129 [-]: CALL      R23 2 1      ; R23(R24)
+130 [-]: FORLOOP   R18 116      ; R18 += R20; if R18 <= R19 then begin PC := 116; R21 := R18 end
+131 [-]: LOADK     R23 K12      ; R23 := 1
+132 [-]: GETGLOBAL R24 K28      ; R24 := refEntitiesForForgeToHide
+133 [-]: LEN       R24 R24      ; R24 := # R24
+134 [-]: LOADK     R25 K12      ; R25 := 1
+135 [-]: FORPREP   R23 141      ; R23 -= R25; PC := 141
+136 [-]: GETGLOBAL R27 K28      ; R27 := refEntitiesForForgeToHide
+137 [-]: GETTABLE  R27 R27 R26  ; R27 := R27[R26]
+138 [-]: SELF      R27 R27 K29  ; R28 := R27; R27 := R27["0x7DBDDA0B"]
+139 [-]: MOVE      R29 R1       ; R29 := R1
+140 [-]: CALL      R27 3 1      ; R27(R28,R29)
+141 [-]: FORLOOP   R23 136      ; R23 += R25; if R23 <= R24 then begin PC := 136; R26 := R23 end
+142 [-]: JMP       170          ; PC := 170
+143 [-]: GETGLOBAL R27 K0       ; R27 := SYSTEM_MOD
+144 [-]: GETUPVAL  R28 U1       ; R28 := U1
+145 [-]: GETTABLE  R28 R28 K30  ; R28 := R28["DISABLE_BATTLE_AVIONICS"]
+146 [-]: EQ        0 R27 R28    ; if R27 ~= R28 then PC := 152
+147 [-]: JMP       152          ; PC := 152
+148 [-]: GETUPVAL  R27 U2       ; R27 := U2
+149 [-]: MOVE      R28 R1       ; R28 := R1
+150 [-]: CALL      R27 2 1      ; R27(R28)
+151 [-]: JMP       170          ; PC := 170
+152 [-]: GETGLOBAL R27 K0       ; R27 := SYSTEM_MOD
+153 [-]: GETUPVAL  R28 U1       ; R28 := U1
+154 [-]: GETTABLE  R28 R28 K31  ; R28 := R28["DISTORT_RAILJACK_SPEED_AND_BOOST"]
+155 [-]: EQ        0 R27 R28    ; if R27 ~= R28 then PC := 162
+156 [-]: JMP       162          ; PC := 162
+157 [-]: GETUPVAL  R27 U3       ; R27 := U3
+158 [-]: GETGLOBAL R28 K32      ; R28 := railJackSpeedChangePercentage
+159 [-]: MOVE      R29 R1       ; R29 := R1
+160 [-]: CALL      R27 3 1      ; R27(R28,R29)
+161 [-]: JMP       170          ; PC := 170
+162 [-]: GETGLOBAL R27 K0       ; R27 := SYSTEM_MOD
+163 [-]: GETUPVAL  R28 U1       ; R28 := U1
+164 [-]: GETTABLE  R28 R28 K33  ; R28 := R28["DISABLE_CANNONS"]
+165 [-]: EQ        0 R27 R28    ; if R27 ~= R28 then PC := 170
+166 [-]: JMP       170          ; PC := 170
+167 [-]: GETUPVAL  R27 U4       ; R27 := U4
+168 [-]: MOVE      R28 R1       ; R28 := R1
+169 [-]: CALL      R27 2 1      ; R27(R28)
+170 [-]: GETGLOBAL R27 K2       ; R27 := 0x400E7765
+171 [-]: MOVE      R28 R0       ; R28 := R0
+172 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+173 [-]: TEST      R27 1        ; if R27 then PC := 177
+174 [-]: JMP       177          ; PC := 177
+175 [-]: SELF      R27 R0 K22   ; R28 := R0; R27 := R0["0xC5E91BA6"]
+176 [-]: CALL      R27 2 1      ; R27(R28)
+177 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 173
+; Defined at line: 204
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -694,7 +770,7 @@ code size: 125
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 255
+; Defined at line: 286
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -780,7 +856,7 @@ code size: 125
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 285
+; Defined at line: 316
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -807,7 +883,7 @@ code size: 125
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 292
+; Defined at line: 323
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -834,7 +910,7 @@ code size: 125
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 299
+; Defined at line: 330
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

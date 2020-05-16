@@ -4,9 +4,9 @@ code size: 19
 code size: 19
 code size: 49
 code size: 65
-code size: 69
+code size: 68
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\CrewShipManager.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\CrewShipManager.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -268,76 +268,75 @@ code size: 69
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETGLOBAL R2 K1        ; R2 := gRegion
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 65
-  5 [-]: JMP       65           ; PC := 65
-  6 [-]: MOVE      R1 R0        ; R1 := R0
-  7 [-]: GETGLOBAL R2 K1        ; R2 := gRegion
-  8 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0x3E2F6BF"]
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
- 11 [-]: MOVE      R4 R2        ; R4 := R2
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: TEST      R3 1         ; if R3 then PC := 65
- 14 [-]: JMP       65           ; PC := 65
- 15 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x8DB5D01F"]
- 16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 17 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3["0x7AEE2957"]
- 18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 19 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
- 20 [-]: MOVE      R6 R4        ; R6 := R4
- 21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: TEST      R5 0         ; if not R5 then PC := 33
- 23 [-]: JMP       33           ; PC := 33
- 24 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xFB685784"]
- 25 [-]: MOVE      R7 R2        ; R7 := R2
- 26 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 27 [-]: LT        0 K6 R5      ; if 0 >= R5 then PC := 65
- 28 [-]: JMP       65           ; PC := 65
- 29 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 30 [-]: MOVE      R7 R2        ; R7 := R2
- 31 [-]: CALL      R6 2 1       ; R6(R7)
- 32 [-]: JMP       65           ; PC := 65
- 33 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
- 34 [-]: MOVE      R7 R4        ; R7 := R4
- 35 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 36 [-]: TEST      R6 1         ; if R6 then PC := 65
- 37 [-]: JMP       65           ; PC := 65
- 38 [-]: SELF      R6 R4 K7     ; R7 := R4; R6 := R4["0x7A0EC30"]
- 39 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 40 [-]: EQ        0 R6 R2      ; if R6 ~= R2 then PC := 65
- 41 [-]: JMP       65           ; PC := 65
- 42 [-]: SELF      R6 R4 K8     ; R7 := R4; R6 := R4["0xA4499253"]
- 43 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 44 [-]: SELF      R7 R6 K9     ; R8 := R6; R7 := R6["0x4D09A963"]
- 45 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 46 [-]: SELF      R7 R7 K10    ; R8 := R7; R7 := R7["0x9FE589CA"]
- 47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 48 [-]: LT        0 R7 K11     ; if R7 >= 1 then PC := 65
- 49 [-]: JMP       65           ; PC := 65
- 50 [-]: SELF      R8 R6 K9     ; R9 := R6; R8 := R6["0x4D09A963"]
- 51 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 52 [-]: SELF      R8 R8 K12    ; R9 := R8; R8 := R8["0x4AF8EB28"]
- 53 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 54 [-]: LE        0 R7 R8      ; if R7 > R8 then PC := 60
- 55 [-]: JMP       60           ; PC := 60
- 56 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 57 [-]: MOVE      R9 R6        ; R9 := R6
- 58 [-]: CALL      R8 2 1       ; R8(R9)
- 59 [-]: JMP       65           ; PC := 65
- 60 [-]: LE        0 R7 K13     ; if R7 > 0.20000000298023 then PC := 65
- 61 [-]: JMP       65           ; PC := 65
- 62 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 63 [-]: MOVE      R9 R6        ; R9 := R6
- 64 [-]: CALL      R8 2 1       ; R8(R9)
- 65 [-]: GETGLOBAL R8 K14       ; R8 := 0x201191EA
- 66 [-]: LOADK     R9 K6        ; R9 := 0
- 67 [-]: CALL      R8 2 1       ; R8(R9)
- 68 [-]: JMP       1            ; PC := 1
- 69 [-]: RETURN    R0 1         ; return 
+  4 [-]: TEST      R1 1         ; if R1 then PC := 64
+  5 [-]: JMP       64           ; PC := 64
+  6 [-]: GETGLOBAL R1 K1        ; R1 := gRegion
+  7 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x3E2F6BF"]
+  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  9 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 10 [-]: MOVE      R3 R1        ; R3 := R1
+ 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 12 [-]: TEST      R2 1         ; if R2 then PC := 64
+ 13 [-]: JMP       64           ; PC := 64
+ 14 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x8DB5D01F"]
+ 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 16 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2["0x7AEE2957"]
+ 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 18 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 19 [-]: MOVE      R5 R3        ; R5 := R3
+ 20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 21 [-]: TEST      R4 0         ; if not R4 then PC := 32
+ 22 [-]: JMP       32           ; PC := 32
+ 23 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xFB685784"]
+ 24 [-]: MOVE      R6 R1        ; R6 := R1
+ 25 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 26 [-]: LT        0 K6 R4      ; if 0 >= R4 then PC := 64
+ 27 [-]: JMP       64           ; PC := 64
+ 28 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 29 [-]: MOVE      R6 R1        ; R6 := R1
+ 30 [-]: CALL      R5 2 1       ; R5(R6)
+ 31 [-]: JMP       64           ; PC := 64
+ 32 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+ 33 [-]: MOVE      R6 R3        ; R6 := R3
+ 34 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 35 [-]: TEST      R5 1         ; if R5 then PC := 64
+ 36 [-]: JMP       64           ; PC := 64
+ 37 [-]: SELF      R5 R3 K7     ; R6 := R3; R5 := R3["0x7A0EC30"]
+ 38 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 39 [-]: EQ        0 R5 R1      ; if R5 ~= R1 then PC := 64
+ 40 [-]: JMP       64           ; PC := 64
+ 41 [-]: SELF      R5 R3 K8     ; R6 := R3; R5 := R3["0xA4499253"]
+ 42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 43 [-]: SELF      R6 R5 K9     ; R7 := R5; R6 := R5["0x4D09A963"]
+ 44 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 45 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6["0x9FE589CA"]
+ 46 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 47 [-]: LT        0 R6 K11     ; if R6 >= 1 then PC := 64
+ 48 [-]: JMP       64           ; PC := 64
+ 49 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5["0x4D09A963"]
+ 50 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 51 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7["0x4AF8EB28"]
+ 52 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 53 [-]: LE        0 R6 R7      ; if R6 > R7 then PC := 59
+ 54 [-]: JMP       59           ; PC := 59
+ 55 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 56 [-]: MOVE      R8 R5        ; R8 := R5
+ 57 [-]: CALL      R7 2 1       ; R7(R8)
+ 58 [-]: JMP       64           ; PC := 64
+ 59 [-]: LE        0 R6 K13     ; if R6 > 0.20000000298023 then PC := 64
+ 60 [-]: JMP       64           ; PC := 64
+ 61 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 62 [-]: MOVE      R8 R5        ; R8 := R5
+ 63 [-]: CALL      R7 2 1       ; R7(R8)
+ 64 [-]: GETGLOBAL R7 K14       ; R7 := 0x201191EA
+ 65 [-]: LOADK     R8 K6        ; R8 := 0
+ 66 [-]: CALL      R7 2 1       ; R7(R8)
+ 67 [-]: JMP       1            ; PC := 1
+ 68 [-]: RETURN    R0 1         ; return 
 
 

@@ -1,6 +1,6 @@
 code size: 38
 code size: 120
-code size: 23
+code size: 28
 code size: 27
 code size: 24
 code size: 30
@@ -10,7 +10,7 @@ code size: 569
 code size: 163
 code size: 11
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\Dropship.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\Dropship.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -204,24 +204,29 @@ code size: 11
   3 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
   4 [-]: MOVE      R4 R1        ; R4 := R1
   5 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  6 [-]: TEST      R3 1         ; if R3 then PC := 21
-  7 [-]: JMP       21           ; PC := 21
+  6 [-]: TEST      R3 1         ; if R3 then PC := 26
+  7 [-]: JMP       26           ; PC := 26
   8 [-]: LOADK     R3 K2        ; R3 := 1
   9 [-]: LEN       R4 R2        ; R4 := # R2
  10 [-]: LOADK     R5 K2        ; R5 := 1
- 11 [-]: FORPREP   R3 20        ; R3 -= R5; PC := 20
- 12 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
- 13 [-]: SELF      R7 R7 K3     ; R8 := R7; R7 := R7["0x8B598ED4"]
- 14 [-]: MOVE      R9 R1        ; R9 := R1
- 15 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 16 [-]: TEST      R7 0         ; if not R7 then PC := 20
- 17 [-]: JMP       20           ; PC := 20
- 18 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
- 19 [-]: RETURN    R7 2         ; return R7
- 20 [-]: FORLOOP   R3 12        ; R3 += R5; if R3 <= R4 then begin PC := 12; R6 := R3 end
- 21 [-]: LOADNIL   R7 R7        ; R7 := nil
- 22 [-]: RETURN    R7 2         ; return R7
- 23 [-]: RETURN    R0 1         ; return 
+ 11 [-]: FORPREP   R3 25        ; R3 -= R5; PC := 25
+ 12 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
+ 13 [-]: GETTABLE  R8 R2 R6     ; R8 := R2[R6]
+ 14 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 15 [-]: TEST      R7 1         ; if R7 then PC := 25
+ 16 [-]: JMP       25           ; PC := 25
+ 17 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
+ 18 [-]: SELF      R7 R7 K3     ; R8 := R7; R7 := R7["0x8B598ED4"]
+ 19 [-]: MOVE      R9 R1        ; R9 := R1
+ 20 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 21 [-]: TEST      R7 0         ; if not R7 then PC := 25
+ 22 [-]: JMP       25           ; PC := 25
+ 23 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
+ 24 [-]: RETURN    R7 2         ; return R7
+ 25 [-]: FORLOOP   R3 12        ; R3 += R5; if R3 <= R4 then begin PC := 12; R6 := R3 end
+ 26 [-]: LOADNIL   R7 R7        ; R7 := nil
+ 27 [-]: RETURN    R7 2         ; return R7
+ 28 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:

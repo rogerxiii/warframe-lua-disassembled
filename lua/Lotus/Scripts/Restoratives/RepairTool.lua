@@ -1,19 +1,18 @@
-code size: 34
+code size: 29
 code size: 20
-code size: 69
+code size: 59
 code size: 10
-code size: 18
 code size: 11
 code size: 205
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Restoratives\RepairTool.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Restoratives\RepairTool.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  7
+; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
@@ -24,37 +23,32 @@ code size: 205
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x329BDC44
   8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Scripts.Libs.GearLib"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x329BDC44
- 11 [-]: LOADK     R4 K4        ; R4 := "EE.Interface.Utilities"
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
- 14 [-]: SETGLOBAL R4 K5        ; CanUse := R4
- 15 [-]: SETGLOBAL R4 K6        ; 0xB5BC9833 := R4
- 16 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 17 [-]: MOVE      R0 R3        ; R0 := R3
- 18 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
- 19 [-]: MOVE      R0 R4        ; R0 := R4
- 20 [-]: SETGLOBAL R5 K7        ; Deactivate := R5
- 21 [-]: SETGLOBAL R5 K8        ; 0xE15B9E90 := R5
- 22 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
- 23 [-]: CLOSURE   R6 4         ; R6 := closure(Function #5)
+ 10 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
+ 11 [-]: SETGLOBAL R3 K4        ; CanUse := R3
+ 12 [-]: SETGLOBAL R3 K5        ; 0xB5BC9833 := R3
+ 13 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
+ 14 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
+ 15 [-]: MOVE      R0 R3        ; R0 := R3
+ 16 [-]: SETGLOBAL R4 K6        ; Deactivate := R4
+ 17 [-]: SETGLOBAL R4 K7        ; 0xE15B9E90 := R4
+ 18 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
+ 19 [-]: MOVE      R0 R0        ; R0 := R0
+ 20 [-]: SETGLOBAL R4 K8        ; RecallToRailjack := R4
+ 21 [-]: SETGLOBAL R4 K9        ; 0xC4225D72 := R4
+ 22 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
+ 23 [-]: MOVE      R0 R1        ; R0 := R1
  24 [-]: MOVE      R0 R0        ; R0 := R0
- 25 [-]: SETGLOBAL R6 K9        ; RecallToRailjack := R6
- 26 [-]: SETGLOBAL R6 K10       ; 0xC4225D72 := R6
- 27 [-]: CLOSURE   R6 5         ; R6 := closure(Function #6)
- 28 [-]: MOVE      R0 R1        ; R0 := R1
- 29 [-]: MOVE      R0 R0        ; R0 := R0
- 30 [-]: MOVE      R0 R2        ; R0 := R2
- 31 [-]: MOVE      R0 R4        ; R0 := R4
- 32 [-]: SETGLOBAL R6 K11       ; Equip := R6
- 33 [-]: SETGLOBAL R6 K12       ; 0x290DDD35 := R6
- 34 [-]: RETURN    R0 1         ; return 
+ 25 [-]: MOVE      R0 R2        ; R0 := R2
+ 26 [-]: MOVE      R0 R3        ; R0 := R3
+ 27 [-]: SETGLOBAL R4 K10       ; Equip := R4
+ 28 [-]: SETGLOBAL R4 K11       ; 0x290DDD35 := R4
+ 29 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 14
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -85,11 +79,11 @@ code size: 205
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 25
-; #Upvalues:       1
+; Defined at line: 24
+; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
@@ -101,23 +95,23 @@ code size: 205
   8 [-]: CALL      R1 3 1       ; R1(R2,R3)
   9 [-]: GETGLOBAL R1 K3        ; R1 := _T
  10 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["lastMiningSlot"]
- 11 [-]: EQ        1 R1 K5      ; if R1 == nil then PC := 69
- 12 [-]: JMP       69           ; PC := 69
+ 11 [-]: EQ        1 R1 K5      ; if R1 == nil then PC := 59
+ 12 [-]: JMP       59           ; PC := 59
  13 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
  14 [-]: MOVE      R2 R0        ; R2 := R0
  15 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 16 [-]: TEST      R1 1         ; if R1 then PC := 67
- 17 [-]: JMP       67           ; PC := 67
+ 16 [-]: TEST      R1 1         ; if R1 then PC := 57
+ 17 [-]: JMP       57           ; PC := 57
  18 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0["0x8DB5D01F"]
  19 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  20 [-]: GETGLOBAL R2 K3        ; R2 := _T
  21 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["lastMiningSlot"]
- 22 [-]: TEST      R2 0         ; if not R2 then PC := 67
- 23 [-]: JMP       67           ; PC := 67
+ 22 [-]: TEST      R2 0         ; if not R2 then PC := 57
+ 23 [-]: JMP       57           ; PC := 57
  24 [-]: SELF      R2 R0 K7     ; R3 := R0; R2 := R0["0xA56CD0BB"]
  25 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 26 [-]: TEST      R2 1         ; if R2 then PC := 67
- 27 [-]: JMP       67           ; PC := 67
+ 26 [-]: TEST      R2 1         ; if R2 then PC := 57
+ 27 [-]: JMP       57           ; PC := 57
  28 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
  29 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0["0x8DB5D01F"]
  30 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -126,8 +120,8 @@ code size: 205
  33 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["MAIN_HAND"]
  34 [-]: CALL      R3 3 0       ; R3,... := R3(R4,R5)
  35 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 36 [-]: TEST      R2 1         ; if R2 then PC := 67
- 37 [-]: JMP       67           ; PC := 67
+ 36 [-]: TEST      R2 1         ; if R2 then PC := 57
+ 37 [-]: JMP       57           ; PC := 57
  38 [-]: SELF      R2 R0 K6     ; R3 := R0; R2 := R0["0x8DB5D01F"]
  39 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  40 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x6EA0928F"]
@@ -137,35 +131,25 @@ code size: 205
  44 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2["0x8B598ED4"]
  45 [-]: GETGLOBAL R4 K2        ; R4 := repairTool
  46 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 47 [-]: TEST      R2 0         ; if not R2 then PC := 67
- 48 [-]: JMP       67           ; PC := 67
- 49 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 50 [-]: GETTABLE  R2 R2 K12    ; R2 := R2["0xF81722A2"]
- 51 [-]: SELF      R3 R0 K11    ; R4 := R0; R3 := R0["0x8B598ED4"]
- 52 [-]: GETGLOBAL R5 K13       ; R5 := gLotusOperatorAvatarType
- 53 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 54 [-]: GETGLOBAL R4 K9        ; R4 := Engine
- 55 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["InventoryControllerBase_ES_INSTANT_EQUIP"]
- 56 [-]: GETGLOBAL R5 K9        ; R5 := Engine
- 57 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
- 58 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 59 [-]: SELF      R3 R1 K16    ; R4 := R1; R3 := R1["0x290DDD35"]
- 60 [-]: GETGLOBAL R5 K3        ; R5 := _T
- 61 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["lastMiningSlot"]
- 62 [-]: GETGLOBAL R6 K9        ; R6 := Engine
- 63 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["MAIN_HAND"]
- 64 [-]: GETGLOBAL R7 K9        ; R7 := Engine
- 65 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["InventoryControllerBase_ES_INSTANT_EQUIP"]
- 66 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 67 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 68 [-]: SETTABLE  R3 K4 K5     ; R3["lastMiningSlot"] := nil
- 69 [-]: RETURN    R0 1         ; return 
+ 47 [-]: TEST      R2 0         ; if not R2 then PC := 57
+ 48 [-]: JMP       57           ; PC := 57
+ 49 [-]: SELF      R2 R1 K12    ; R3 := R1; R2 := R1["0x290DDD35"]
+ 50 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 51 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["lastMiningSlot"]
+ 52 [-]: GETGLOBAL R5 K9        ; R5 := Engine
+ 53 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["MAIN_HAND"]
+ 54 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 55 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["InventoryControllerBase_ES_INSTANT_EQUIP"]
+ 56 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
+ 57 [-]: GETGLOBAL R2 K3        ; R2 := _T
+ 58 [-]: SETTABLE  R2 K4 K5     ; R2["lastMiningSlot"] := nil
+ 59 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 44
+; Defined at line: 41
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -186,36 +170,7 @@ code size: 205
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 52
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 14
-  5 [-]: JMP       14           ; PC := 14
-  6 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0xA56CD0BB"]
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: TEST      R2 1         ; if R2 then PC := 14
-  9 [-]: JMP       14           ; PC := 14
- 10 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0["0x5A115A02"]
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: TEST      R2 0         ; if not R2 then PC := 16
- 13 [-]: JMP       16           ; PC := 16
- 14 [-]: MOVE      R2 R1        ; R2 := R1
- 15 [-]: RETURN    R2 2         ; return R2
- 16 [-]: MOVE      R2 R0        ; R2 := R0
- 17 [-]: RETURN    R2 2         ; return R2
- 18 [-]: RETURN    R0 1         ; return 
-
-
-; Function #5:
-;
-; Name:            
-; Defined at line: 60
+; Defined at line: 49
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -234,10 +189,10 @@ code size: 205
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 64
+; Defined at line: 53
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0

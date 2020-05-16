@@ -12,10 +12,10 @@ code size: 6
 code size: 6
 code size: 29
 code size: 18
-code size: 306
+code size: 309
 code size: 22
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Venus\Encounters\SolarisCapture.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Venus\Encounters\SolarisCapture.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1475,292 +1475,295 @@ code size: 22
  24 [-]: LOADK     R3 K9        ; R3 := "Encounter: Camp Beacon: Requires Solaris quest completion, shutting down."
  25 [-]: CALL      R2 2 1       ; R2(R3)
  26 [-]: RETURN    R0 1         ; return 
- 27 [-]: LOADK     R2 K7        ; R2 := 0
- 28 [-]: LOADK     R3 K10       ; R3 := 1
- 29 [-]: LOADK     R4 K11       ; R4 := 2
- 30 [-]: GETGLOBAL R5 K12       ; R5 := 0xEC274B1A
- 31 [-]: LOADK     R6 K13       ; R6 := "SolarisCamp"
- 32 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 33 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 34 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["0x99705E85"]
- 35 [-]: MOVE      R7 R0        ; R7 := R0
- 36 [-]: LOADNIL   R8 R8        ; R8 := nil
- 37 [-]: GETGLOBAL R9 K12       ; R9 := 0xEC274B1A
- 38 [-]: LOADK     R10 K15      ; R10 := "SolarisConsoleActiveForwarder"
- 39 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 40 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 41 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 42 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["0x99705E85"]
- 43 [-]: MOVE      R8 R0        ; R8 := R0
- 44 [-]: LOADNIL   R9 R9        ; R9 := nil
- 45 [-]: GETGLOBAL R10 K12      ; R10 := 0xEC274B1A
- 46 [-]: LOADK     R11 K16      ; R11 := "SolarisConsoleCapturedForwarder"
- 47 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 48 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 49 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 50 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["0x99705E85"]
- 51 [-]: MOVE      R9 R0        ; R9 := R0
- 52 [-]: LOADNIL   R10 R10      ; R10 := nil
- 53 [-]: GETGLOBAL R11 K12      ; R11 := 0xEC274B1A
- 54 [-]: LOADK     R12 K17      ; R12 := "SolarisConsoleResetForwarder"
- 55 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 56 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
- 57 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 58 [-]: GETTABLE  R9 R9 K14    ; R9 := R9["0x99705E85"]
- 59 [-]: MOVE      R10 R0       ; R10 := R0
- 60 [-]: LOADNIL   R11 R11      ; R11 := nil
- 61 [-]: GETGLOBAL R12 K12      ; R12 := 0xEC274B1A
- 62 [-]: LOADK     R13 K18      ; R13 := "CapturedCampMarker"
- 63 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
- 64 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
- 65 [-]: GETGLOBAL R10 K2       ; R10 := gRegion
- 66 [-]: SELF      R10 R10 K19  ; R11 := R10; R10 := R10["0x6E5ED53D"]
- 67 [-]: GETGLOBAL R12 K12      ; R12 := 0xEC274B1A
- 68 [-]: LOADK     R13 K20      ; R13 := "CapturableCampHint"
- 69 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 70 [-]: SELF      R13 R0 K21   ; R14 := R0; R13 := R0["0x6DA72501"]
- 71 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 72 [-]: LOADK     R14 K7       ; R14 := 0
- 73 [-]: LOADK     R15 K22      ; R15 := 200
- 74 [-]: CALL      R10 6 2      ; R10 := R10(R11,R12,R13,R14,R15)
- 75 [-]: GETGLOBAL R11 K23      ; R11 := 0x400E7765
- 76 [-]: MOVE      R12 R10      ; R12 := R10
- 77 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 78 [-]: TEST      R11 0        ; if not R11 then PC := 81
- 79 [-]: JMP       81           ; PC := 81
- 80 [-]: RETURN    R0 1         ; return 
- 81 [-]: SELF      R11 R10 K24  ; R12 := R10; R11 := R10["0x1C539F50"]
- 82 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 83 [-]: SELF      R12 R11 K21  ; R13 := R11; R12 := R11["0x6DA72501"]
- 84 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 85 [-]: SELF      R13 R11 K25  ; R14 := R11; R13 := R11["0x857E9BFD"]
- 86 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 87 [-]: SELF      R14 R11 K26  ; R15 := R11; R14 := R11["0x78303C2E"]
- 88 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 89 [-]: SELF      R15 R14 K27  ; R16 := R14; R15 := R14["0x9156611C"]
- 90 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 91 [-]: GETGLOBAL R16 K2       ; R16 := gRegion
- 92 [-]: SELF      R16 R16 K28  ; R17 := R16; R16 := R16["0xA10978B4"]
- 93 [-]: GETGLOBAL R18 K12      ; R18 := 0xEC274B1A
- 94 [-]: LOADK     R19 K29      ; R19 := "VenusStoreEnabler"
- 95 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 96 [-]: MOVE      R19 R12      ; R19 := R12
- 97 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
- 98 [-]: GETGLOBAL R17 K2       ; R17 := gRegion
- 99 [-]: SELF      R17 R17 K28  ; R18 := R17; R17 := R17["0xA10978B4"]
-100 [-]: GETGLOBAL R19 K12      ; R19 := 0xEC274B1A
-101 [-]: LOADK     R20 K30      ; R20 := "VenusStoreDisabler"
-102 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-103 [-]: MOVE      R20 R12      ; R20 := R12
-104 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
-105 [-]: GETGLOBAL R18 K2       ; R18 := gRegion
-106 [-]: SELF      R18 R18 K31  ; R19 := R18; R18 := R18["0xF144999"]
-107 [-]: GETGLOBAL R20 K12      ; R20 := 0xEC274B1A
-108 [-]: LOADK     R21 K32      ; R21 := "SmallTurretSpawn"
-109 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-110 [-]: MOVE      R21 R12      ; R21 := R12
-111 [-]: LOADK     R22 K7       ; R22 := 0
-112 [-]: MOVE      R23 R13      ; R23 := R13
-113 [-]: CALL      R18 6 2      ; R18 := R18(R19,R20,R21,R22,R23)
-114 [-]: LOADNIL   R19 R19      ; R19 := nil
-115 [-]: LOADK     R20 K7       ; R20 := 0
-116 [-]: GETGLOBAL R21 K33      ; R21 := 0x63B09107
-117 [-]: MOVE      R22 R15      ; R22 := R15
-118 [-]: CALL      R21 2 4      ; R21,R22,R23 := R21(R22)
-119 [-]: JMP       132          ; PC := 132
-120 [-]: GETGLOBAL R26 K23      ; R26 := 0x400E7765
-121 [-]: MOVE      R27 R25      ; R27 := R25
-122 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-123 [-]: TEST      R26 1        ; if R26 then PC := 132
-124 [-]: JMP       132          ; PC := 132
-125 [-]: SELF      R26 R25 K34  ; R27 := R25; R26 := R25["0xAC8F6523"]
-126 [-]: MOVE      R28 R12      ; R28 := R12
-127 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-128 [-]: LT        0 R20 R26    ; if R20 >= R26 then PC := 132
-129 [-]: JMP       132          ; PC := 132
-130 [-]: MOVE      R20 R26      ; R20 := R26
-131 [-]: MOVE      R19 R25      ; R19 := R25
-132 [-]: TFORLOOP  R21 2        ; R24,R25 :=  R21(R22,R23); if R24 ~= nil then begin PC = 120; R23 := R24 end
-133 [-]: JMP       120          ; PC := 120
-134 [-]: GETGLOBAL R27 K35      ; R27 := math
-135 [-]: GETTABLE  R27 R27 K36  ; R27 := R27["0x8B011038"]
-136 [-]: MOVE      R28 R13      ; R28 := R13
-137 [-]: SELF      R29 R19 K37  ; R30 := R19; R29 := R19["0xFE51ED3B"]
-138 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-139 [-]: ADD       R29 R20 R29  ; R29 := R20 + R29
-140 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-141 [-]: SELF      R28 R9 K38   ; R29 := R9; R28 := R9["0xEC183DDC"]
-142 [-]: MOVE      R30 R12      ; R30 := R12
-143 [-]: CALL      R28 3 1      ; R28(R29,R30)
-144 [-]: SELF      R28 R9 K39   ; R29 := R9; R28 := R9["0xE767ECA4"]
-145 [-]: MOVE      R30 R27      ; R30 := R27
+ 27 [-]: GETGLOBAL R2 K0        ; R2 := 0x93B1256B
+ 28 [-]: LOADK     R3 K10       ; R3 := "Encounter: Camp Beacon: Started"
+ 29 [-]: CALL      R2 2 1       ; R2(R3)
+ 30 [-]: LOADK     R2 K7        ; R2 := 0
+ 31 [-]: LOADK     R3 K11       ; R3 := 1
+ 32 [-]: LOADK     R4 K12       ; R4 := 2
+ 33 [-]: GETGLOBAL R5 K13       ; R5 := 0xEC274B1A
+ 34 [-]: LOADK     R6 K14       ; R6 := "SolarisCamp"
+ 35 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 36 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 37 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["0x99705E85"]
+ 38 [-]: MOVE      R7 R0        ; R7 := R0
+ 39 [-]: LOADNIL   R8 R8        ; R8 := nil
+ 40 [-]: GETGLOBAL R9 K13       ; R9 := 0xEC274B1A
+ 41 [-]: LOADK     R10 K16      ; R10 := "SolarisConsoleActiveForwarder"
+ 42 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 43 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+ 44 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 45 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["0x99705E85"]
+ 46 [-]: MOVE      R8 R0        ; R8 := R0
+ 47 [-]: LOADNIL   R9 R9        ; R9 := nil
+ 48 [-]: GETGLOBAL R10 K13      ; R10 := 0xEC274B1A
+ 49 [-]: LOADK     R11 K17      ; R11 := "SolarisConsoleCapturedForwarder"
+ 50 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+ 51 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 52 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 53 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["0x99705E85"]
+ 54 [-]: MOVE      R9 R0        ; R9 := R0
+ 55 [-]: LOADNIL   R10 R10      ; R10 := nil
+ 56 [-]: GETGLOBAL R11 K13      ; R11 := 0xEC274B1A
+ 57 [-]: LOADK     R12 K18      ; R12 := "SolarisConsoleResetForwarder"
+ 58 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+ 59 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+ 60 [-]: GETUPVAL  R9 U2        ; R9 := U2
+ 61 [-]: GETTABLE  R9 R9 K15    ; R9 := R9["0x99705E85"]
+ 62 [-]: MOVE      R10 R0       ; R10 := R0
+ 63 [-]: LOADNIL   R11 R11      ; R11 := nil
+ 64 [-]: GETGLOBAL R12 K13      ; R12 := 0xEC274B1A
+ 65 [-]: LOADK     R13 K19      ; R13 := "CapturedCampMarker"
+ 66 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
+ 67 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
+ 68 [-]: GETGLOBAL R10 K2       ; R10 := gRegion
+ 69 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10["0x6E5ED53D"]
+ 70 [-]: GETGLOBAL R12 K13      ; R12 := 0xEC274B1A
+ 71 [-]: LOADK     R13 K21      ; R13 := "CapturableCampHint"
+ 72 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 73 [-]: SELF      R13 R0 K22   ; R14 := R0; R13 := R0["0x6DA72501"]
+ 74 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 75 [-]: LOADK     R14 K7       ; R14 := 0
+ 76 [-]: LOADK     R15 K23      ; R15 := 200
+ 77 [-]: CALL      R10 6 2      ; R10 := R10(R11,R12,R13,R14,R15)
+ 78 [-]: GETGLOBAL R11 K24      ; R11 := 0x400E7765
+ 79 [-]: MOVE      R12 R10      ; R12 := R10
+ 80 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 81 [-]: TEST      R11 0        ; if not R11 then PC := 84
+ 82 [-]: JMP       84           ; PC := 84
+ 83 [-]: RETURN    R0 1         ; return 
+ 84 [-]: SELF      R11 R10 K25  ; R12 := R10; R11 := R10["0x1C539F50"]
+ 85 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 86 [-]: SELF      R12 R11 K22  ; R13 := R11; R12 := R11["0x6DA72501"]
+ 87 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 88 [-]: SELF      R13 R11 K26  ; R14 := R11; R13 := R11["0x857E9BFD"]
+ 89 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 90 [-]: SELF      R14 R11 K27  ; R15 := R11; R14 := R11["0x78303C2E"]
+ 91 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 92 [-]: SELF      R15 R14 K28  ; R16 := R14; R15 := R14["0x9156611C"]
+ 93 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 94 [-]: GETGLOBAL R16 K2       ; R16 := gRegion
+ 95 [-]: SELF      R16 R16 K29  ; R17 := R16; R16 := R16["0xA10978B4"]
+ 96 [-]: GETGLOBAL R18 K13      ; R18 := 0xEC274B1A
+ 97 [-]: LOADK     R19 K30      ; R19 := "VenusStoreEnabler"
+ 98 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 99 [-]: MOVE      R19 R12      ; R19 := R12
+100 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+101 [-]: GETGLOBAL R17 K2       ; R17 := gRegion
+102 [-]: SELF      R17 R17 K29  ; R18 := R17; R17 := R17["0xA10978B4"]
+103 [-]: GETGLOBAL R19 K13      ; R19 := 0xEC274B1A
+104 [-]: LOADK     R20 K31      ; R20 := "VenusStoreDisabler"
+105 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+106 [-]: MOVE      R20 R12      ; R20 := R12
+107 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
+108 [-]: GETGLOBAL R18 K2       ; R18 := gRegion
+109 [-]: SELF      R18 R18 K32  ; R19 := R18; R18 := R18["0xF144999"]
+110 [-]: GETGLOBAL R20 K13      ; R20 := 0xEC274B1A
+111 [-]: LOADK     R21 K33      ; R21 := "SmallTurretSpawn"
+112 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+113 [-]: MOVE      R21 R12      ; R21 := R12
+114 [-]: LOADK     R22 K7       ; R22 := 0
+115 [-]: MOVE      R23 R13      ; R23 := R13
+116 [-]: CALL      R18 6 2      ; R18 := R18(R19,R20,R21,R22,R23)
+117 [-]: MOVE      R19 R11      ; R19 := R11
+118 [-]: LOADK     R20 K7       ; R20 := 0
+119 [-]: GETGLOBAL R21 K34      ; R21 := 0x63B09107
+120 [-]: MOVE      R22 R15      ; R22 := R15
+121 [-]: CALL      R21 2 4      ; R21,R22,R23 := R21(R22)
+122 [-]: JMP       135          ; PC := 135
+123 [-]: GETGLOBAL R26 K24      ; R26 := 0x400E7765
+124 [-]: MOVE      R27 R25      ; R27 := R25
+125 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+126 [-]: TEST      R26 1        ; if R26 then PC := 135
+127 [-]: JMP       135          ; PC := 135
+128 [-]: SELF      R26 R25 K35  ; R27 := R25; R26 := R25["0xAC8F6523"]
+129 [-]: MOVE      R28 R12      ; R28 := R12
+130 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+131 [-]: LT        0 R20 R26    ; if R20 >= R26 then PC := 135
+132 [-]: JMP       135          ; PC := 135
+133 [-]: MOVE      R20 R26      ; R20 := R26
+134 [-]: MOVE      R19 R25      ; R19 := R25
+135 [-]: TFORLOOP  R21 2        ; R24,R25 :=  R21(R22,R23); if R24 ~= nil then begin PC = 123; R23 := R24 end
+136 [-]: JMP       123          ; PC := 123
+137 [-]: GETGLOBAL R27 K36      ; R27 := math
+138 [-]: GETTABLE  R27 R27 K37  ; R27 := R27["0x8B011038"]
+139 [-]: MOVE      R28 R13      ; R28 := R13
+140 [-]: SELF      R29 R19 K38  ; R30 := R19; R29 := R19["0xFE51ED3B"]
+141 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+142 [-]: ADD       R29 R20 R29  ; R29 := R20 + R29
+143 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
+144 [-]: SELF      R28 R9 K39   ; R29 := R9; R28 := R9["0xEC183DDC"]
+145 [-]: MOVE      R30 R12      ; R30 := R12
 146 [-]: CALL      R28 3 1      ; R28(R29,R30)
-147 [-]: SELF      R28 R9 K40   ; R29 := R9; R28 := R9["0x107AAC16"]
-148 [-]: GETGLOBAL R30 K41      ; R30 := 0x994A1A7
-149 [-]: MOVE      R31 R27      ; R31 := R27
-150 [-]: LOADK     R32 K42      ; R32 := 5000
-151 [-]: CALL      R30 3 0      ; R30,... := R30(R31,R32)
-152 [-]: CALL      R28 0 1      ; R28(R29,...)
-153 [-]: MOVE      R28 R2       ; R28 := R2
-154 [-]: LOADNIL   R29 R29      ; R29 := nil
-155 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
-156 [-]: LOADK     R31 K43      ; R31 := "Encounter: Camp Beacon: Started"
-157 [-]: CALL      R30 2 1      ; R30(R31)
-158 [-]: SELF      R30 R0 K44   ; R31 := R0; R30 := R0["0x4D55CAE1"]
-159 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-160 [-]: TEST      R30 1        ; if R30 then PC := 277
-161 [-]: JMP       277          ; PC := 277
-162 [-]: GETUPVAL  R30 U2       ; R30 := U2
-163 [-]: GETTABLE  R30 R30 K45  ; R30 := R30["0x1A605AD"]
-164 [-]: MOVE      R31 R11      ; R31 := R11
-165 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-166 [-]: TEST      R30 0        ; if not R30 then PC := 170
-167 [-]: JMP       170          ; PC := 170
-168 [-]: MOVE      R28 R4       ; R28 := R4
-169 [-]: JMP       189          ; PC := 189
-170 [-]: GETGLOBAL R30 K23      ; R30 := 0x400E7765
-171 [-]: GETGLOBAL R31 K46      ; R31 := _T
-172 [-]: GETTABLE  R31 R31 K47  ; R31 := R31["DynamicMission"]
-173 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-174 [-]: TEST      R30 0        ; if not R30 then PC := 182
-175 [-]: JMP       182          ; PC := 182
-176 [-]: GETGLOBAL R30 K23      ; R30 := 0x400E7765
-177 [-]: GETGLOBAL R31 K46      ; R31 := _T
-178 [-]: GETTABLE  R31 R31 K48  ; R31 := R31["ActiveJob"]
-179 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-180 [-]: TEST      R30 1        ; if R30 then PC := 186
-181 [-]: JMP       186          ; PC := 186
-182 [-]: GETGLOBAL R30 K46      ; R30 := _T
-183 [-]: GETTABLE  R30 R30 K49  ; R30 := R30["BaseCaptureObjectiveHint"]
-184 [-]: EQ        0 R30 R11    ; if R30 ~= R11 then PC := 188
-185 [-]: JMP       188          ; PC := 188
-186 [-]: MOVE      R28 R3       ; R28 := R3
-187 [-]: JMP       189          ; PC := 189
-188 [-]: MOVE      R28 R2       ; R28 := R2
-189 [-]: EQ        1 R28 R29    ; if R28 == R29 then PC := 272
-190 [-]: JMP       272          ; PC := 272
-191 [-]: EQ        0 R28 R4     ; if R28 ~= R4 then PC := 210
-192 [-]: JMP       210          ; PC := 210
-193 [-]: SELF      R30 R7 K50   ; R31 := R7; R30 := R7["0x8D5886B7"]
-194 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
-195 [-]: CALL      R30 3 1      ; R30(R31,R32)
-196 [-]: SELF      R30 R16 K50  ; R31 := R16; R30 := R16["0x8D5886B7"]
+147 [-]: SELF      R28 R9 K40   ; R29 := R9; R28 := R9["0xE767ECA4"]
+148 [-]: MOVE      R30 R27      ; R30 := R27
+149 [-]: CALL      R28 3 1      ; R28(R29,R30)
+150 [-]: SELF      R28 R9 K41   ; R29 := R9; R28 := R9["0x107AAC16"]
+151 [-]: GETGLOBAL R30 K42      ; R30 := 0x994A1A7
+152 [-]: MOVE      R31 R27      ; R31 := R27
+153 [-]: LOADK     R32 K43      ; R32 := 5000
+154 [-]: CALL      R30 3 0      ; R30,... := R30(R31,R32)
+155 [-]: CALL      R28 0 1      ; R28(R29,...)
+156 [-]: MOVE      R28 R2       ; R28 := R2
+157 [-]: LOADNIL   R29 R29      ; R29 := nil
+158 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
+159 [-]: LOADK     R31 K10      ; R31 := "Encounter: Camp Beacon: Started"
+160 [-]: CALL      R30 2 1      ; R30(R31)
+161 [-]: SELF      R30 R0 K44   ; R31 := R0; R30 := R0["0x4D55CAE1"]
+162 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+163 [-]: TEST      R30 1        ; if R30 then PC := 280
+164 [-]: JMP       280          ; PC := 280
+165 [-]: GETUPVAL  R30 U2       ; R30 := U2
+166 [-]: GETTABLE  R30 R30 K45  ; R30 := R30["0x1A605AD"]
+167 [-]: MOVE      R31 R11      ; R31 := R11
+168 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+169 [-]: TEST      R30 0        ; if not R30 then PC := 173
+170 [-]: JMP       173          ; PC := 173
+171 [-]: MOVE      R28 R4       ; R28 := R4
+172 [-]: JMP       192          ; PC := 192
+173 [-]: GETGLOBAL R30 K24      ; R30 := 0x400E7765
+174 [-]: GETGLOBAL R31 K46      ; R31 := _T
+175 [-]: GETTABLE  R31 R31 K47  ; R31 := R31["DynamicMission"]
+176 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+177 [-]: TEST      R30 0        ; if not R30 then PC := 185
+178 [-]: JMP       185          ; PC := 185
+179 [-]: GETGLOBAL R30 K24      ; R30 := 0x400E7765
+180 [-]: GETGLOBAL R31 K46      ; R31 := _T
+181 [-]: GETTABLE  R31 R31 K48  ; R31 := R31["ActiveJob"]
+182 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+183 [-]: TEST      R30 1        ; if R30 then PC := 189
+184 [-]: JMP       189          ; PC := 189
+185 [-]: GETGLOBAL R30 K46      ; R30 := _T
+186 [-]: GETTABLE  R30 R30 K49  ; R30 := R30["BaseCaptureObjectiveHint"]
+187 [-]: EQ        0 R30 R11    ; if R30 ~= R11 then PC := 191
+188 [-]: JMP       191          ; PC := 191
+189 [-]: MOVE      R28 R3       ; R28 := R3
+190 [-]: JMP       192          ; PC := 192
+191 [-]: MOVE      R28 R2       ; R28 := R2
+192 [-]: EQ        1 R28 R29    ; if R28 == R29 then PC := 275
+193 [-]: JMP       275          ; PC := 275
+194 [-]: EQ        0 R28 R4     ; if R28 ~= R4 then PC := 213
+195 [-]: JMP       213          ; PC := 213
+196 [-]: SELF      R30 R7 K50   ; R31 := R7; R30 := R7["0x8D5886B7"]
 197 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
 198 [-]: CALL      R30 3 1      ; R30(R31,R32)
-199 [-]: GETUPVAL  R30 U3       ; R30 := U3
-200 [-]: MOVE      R31 R5       ; R31 := R5
-201 [-]: MOVE      R32 R18      ; R32 := R18
-202 [-]: GETGLOBAL R33 K12      ; R33 := 0xEC274B1A
-203 [-]: LOADK     R34 K52      ; R34 := "TENNO"
-204 [-]: CALL      R33 2 0      ; R33,... := R33(R34)
-205 [-]: CALL      R30 0 1      ; R30(R31,...)
-206 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
-207 [-]: LOADK     R31 K53      ; R31 := "Encounter: Camp Beacon: AREA_CAPTURED"
-208 [-]: CALL      R30 2 1      ; R30(R31)
-209 [-]: JMP       272          ; PC := 272
-210 [-]: EQ        0 R28 R3     ; if R28 ~= R3 then PC := 254
-211 [-]: JMP       254          ; PC := 254
-212 [-]: SELF      R30 R6 K50   ; R31 := R6; R30 := R6["0x8D5886B7"]
-213 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
-214 [-]: CALL      R30 3 1      ; R30(R31,R32)
-215 [-]: SELF      R30 R17 K50  ; R31 := R17; R30 := R17["0x8D5886B7"]
+199 [-]: SELF      R30 R16 K50  ; R31 := R16; R30 := R16["0x8D5886B7"]
+200 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
+201 [-]: CALL      R30 3 1      ; R30(R31,R32)
+202 [-]: GETUPVAL  R30 U3       ; R30 := U3
+203 [-]: MOVE      R31 R5       ; R31 := R5
+204 [-]: MOVE      R32 R18      ; R32 := R18
+205 [-]: GETGLOBAL R33 K13      ; R33 := 0xEC274B1A
+206 [-]: LOADK     R34 K52      ; R34 := "TENNO"
+207 [-]: CALL      R33 2 0      ; R33,... := R33(R34)
+208 [-]: CALL      R30 0 1      ; R30(R31,...)
+209 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
+210 [-]: LOADK     R31 K53      ; R31 := "Encounter: Camp Beacon: AREA_CAPTURED"
+211 [-]: CALL      R30 2 1      ; R30(R31)
+212 [-]: JMP       275          ; PC := 275
+213 [-]: EQ        0 R28 R3     ; if R28 ~= R3 then PC := 257
+214 [-]: JMP       257          ; PC := 257
+215 [-]: SELF      R30 R6 K50   ; R31 := R6; R30 := R6["0x8D5886B7"]
 216 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
 217 [-]: CALL      R30 3 1      ; R30(R31,R32)
-218 [-]: GETUPVAL  R30 U3       ; R30 := U3
-219 [-]: MOVE      R31 R5       ; R31 := R5
-220 [-]: MOVE      R32 R18      ; R32 := R18
-221 [-]: GETGLOBAL R33 K12      ; R33 := 0xEC274B1A
-222 [-]: LOADK     R34 K54      ; R34 := "Corpus"
-223 [-]: CALL      R33 2 0      ; R33,... := R33(R34)
-224 [-]: CALL      R30 0 1      ; R30(R31,...)
-225 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
-226 [-]: LOADK     R31 K55      ; R31 := "Encounter: Camp Beacon: AREA_ACTIVE"
-227 [-]: CALL      R30 2 1      ; R30(R31)
-228 [-]: GETGLOBAL R30 K23      ; R30 := 0x400E7765
-229 [-]: MOVE      R31 R29      ; R31 := R29
-230 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-231 [-]: TEST      R30 0        ; if not R30 then PC := 246
-232 [-]: JMP       246          ; PC := 246
-233 [-]: GETGLOBAL R30 K23      ; R30 := 0x400E7765
-234 [-]: MOVE      R31 R29      ; R31 := R29
-235 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-236 [-]: TEST      R30 0        ; if not R30 then PC := 272
-237 [-]: JMP       272          ; PC := 272
-238 [-]: SELF      R30 R11 K56  ; R31 := R11; R30 := R11["0x54AA24B0"]
-239 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-240 [-]: TEST      R30 1        ; if R30 then PC := 246
-241 [-]: JMP       246          ; PC := 246
-242 [-]: SELF      R30 R11 K57  ; R31 := R11; R30 := R11["0x94589863"]
-243 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-244 [-]: TEST      R30 0        ; if not R30 then PC := 272
-245 [-]: JMP       272          ; PC := 272
-246 [-]: SELF      R30 R1 K58   ; R31 := R1; R30 := R1["0x4702EAF9"]
-247 [-]: SELF      R32 R0 K21   ; R33 := R0; R32 := R0["0x6DA72501"]
-248 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-249 [-]: GETGLOBAL R33 K59      ; R33 := datamassCarrierEncounterType
-250 [-]: MOVE      R34 R0       ; R34 := R0
-251 [-]: LOADK     R35 K60      ; R35 := 5
-252 [-]: CALL      R30 6 1      ; R30(R31,R32,R33,R34,R35)
-253 [-]: JMP       272          ; PC := 272
-254 [-]: EQ        0 R28 R2     ; if R28 ~= R2 then PC := 272
-255 [-]: JMP       272          ; PC := 272
-256 [-]: SELF      R30 R8 K50   ; R31 := R8; R30 := R8["0x8D5886B7"]
-257 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
-258 [-]: CALL      R30 3 1      ; R30(R31,R32)
-259 [-]: SELF      R30 R17 K50  ; R31 := R17; R30 := R17["0x8D5886B7"]
+218 [-]: SELF      R30 R17 K50  ; R31 := R17; R30 := R17["0x8D5886B7"]
+219 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
+220 [-]: CALL      R30 3 1      ; R30(R31,R32)
+221 [-]: GETUPVAL  R30 U3       ; R30 := U3
+222 [-]: MOVE      R31 R5       ; R31 := R5
+223 [-]: MOVE      R32 R18      ; R32 := R18
+224 [-]: GETGLOBAL R33 K13      ; R33 := 0xEC274B1A
+225 [-]: LOADK     R34 K54      ; R34 := "Corpus"
+226 [-]: CALL      R33 2 0      ; R33,... := R33(R34)
+227 [-]: CALL      R30 0 1      ; R30(R31,...)
+228 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
+229 [-]: LOADK     R31 K55      ; R31 := "Encounter: Camp Beacon: AREA_ACTIVE"
+230 [-]: CALL      R30 2 1      ; R30(R31)
+231 [-]: GETGLOBAL R30 K24      ; R30 := 0x400E7765
+232 [-]: MOVE      R31 R29      ; R31 := R29
+233 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+234 [-]: TEST      R30 0        ; if not R30 then PC := 249
+235 [-]: JMP       249          ; PC := 249
+236 [-]: GETGLOBAL R30 K24      ; R30 := 0x400E7765
+237 [-]: MOVE      R31 R29      ; R31 := R29
+238 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+239 [-]: TEST      R30 0        ; if not R30 then PC := 275
+240 [-]: JMP       275          ; PC := 275
+241 [-]: SELF      R30 R11 K56  ; R31 := R11; R30 := R11["0x54AA24B0"]
+242 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+243 [-]: TEST      R30 1        ; if R30 then PC := 249
+244 [-]: JMP       249          ; PC := 249
+245 [-]: SELF      R30 R11 K57  ; R31 := R11; R30 := R11["0x94589863"]
+246 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+247 [-]: TEST      R30 0        ; if not R30 then PC := 275
+248 [-]: JMP       275          ; PC := 275
+249 [-]: SELF      R30 R1 K58   ; R31 := R1; R30 := R1["0x4702EAF9"]
+250 [-]: SELF      R32 R0 K22   ; R33 := R0; R32 := R0["0x6DA72501"]
+251 [-]: CALL      R32 2 2      ; R32 := R32(R33)
+252 [-]: GETGLOBAL R33 K59      ; R33 := datamassCarrierEncounterType
+253 [-]: MOVE      R34 R0       ; R34 := R0
+254 [-]: LOADK     R35 K60      ; R35 := 5
+255 [-]: CALL      R30 6 1      ; R30(R31,R32,R33,R34,R35)
+256 [-]: JMP       275          ; PC := 275
+257 [-]: EQ        0 R28 R2     ; if R28 ~= R2 then PC := 275
+258 [-]: JMP       275          ; PC := 275
+259 [-]: SELF      R30 R8 K50   ; R31 := R8; R30 := R8["0x8D5886B7"]
 260 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
 261 [-]: CALL      R30 3 1      ; R30(R31,R32)
-262 [-]: GETUPVAL  R30 U3       ; R30 := U3
-263 [-]: MOVE      R31 R5       ; R31 := R5
-264 [-]: MOVE      R32 R18      ; R32 := R18
-265 [-]: GETGLOBAL R33 K12      ; R33 := 0xEC274B1A
-266 [-]: LOADK     R34 K54      ; R34 := "Corpus"
-267 [-]: CALL      R33 2 0      ; R33,... := R33(R34)
-268 [-]: CALL      R30 0 1      ; R30(R31,...)
-269 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
-270 [-]: LOADK     R31 K61      ; R31 := "Encounter: Camp Beacon: AREA_INACTIVE"
-271 [-]: CALL      R30 2 1      ; R30(R31)
-272 [-]: MOVE      R29 R28      ; R29 := R28
-273 [-]: GETGLOBAL R30 K6       ; R30 := 0x201191EA
-274 [-]: LOADK     R31 K7       ; R31 := 0
-275 [-]: CALL      R30 2 1      ; R30(R31)
-276 [-]: JMP       158          ; PC := 158
-277 [-]: GETGLOBAL R30 K2       ; R30 := gRegion
-278 [-]: SELF      R30 R30 K62  ; R31 := R30; R30 := R30["0xBF5D7236"]
-279 [-]: GETUPVAL  R32 U4       ; R32 := U4
-280 [-]: MOVE      R33 R12      ; R33 := R12
-281 [-]: MUL       R34 R13 K11  ; R34 := R13 * 2
-282 [-]: CALL      R30 5 2      ; R30 := R30(R31,R32,R33,R34)
-283 [-]: GETGLOBAL R31 K23      ; R31 := 0x400E7765
-284 [-]: MOVE      R32 R30      ; R32 := R30
-285 [-]: CALL      R31 2 2      ; R31 := R31(R32)
-286 [-]: TEST      R31 1        ; if R31 then PC := 290
-287 [-]: JMP       290          ; PC := 290
-288 [-]: SELF      R31 R30 K63  ; R32 := R30; R31 := R30["0xD4C2743F"]
-289 [-]: CALL      R31 2 1      ; R31(R32)
-290 [-]: SELF      R31 R8 K50   ; R32 := R8; R31 := R8["0x8D5886B7"]
-291 [-]: LOADK     R33 K51      ; R33 := "TriggerPort"
-292 [-]: CALL      R31 3 1      ; R31(R32,R33)
-293 [-]: SELF      R31 R17 K50  ; R32 := R17; R31 := R17["0x8D5886B7"]
+262 [-]: SELF      R30 R17 K50  ; R31 := R17; R30 := R17["0x8D5886B7"]
+263 [-]: LOADK     R32 K51      ; R32 := "TriggerPort"
+264 [-]: CALL      R30 3 1      ; R30(R31,R32)
+265 [-]: GETUPVAL  R30 U3       ; R30 := U3
+266 [-]: MOVE      R31 R5       ; R31 := R5
+267 [-]: MOVE      R32 R18      ; R32 := R18
+268 [-]: GETGLOBAL R33 K13      ; R33 := 0xEC274B1A
+269 [-]: LOADK     R34 K54      ; R34 := "Corpus"
+270 [-]: CALL      R33 2 0      ; R33,... := R33(R34)
+271 [-]: CALL      R30 0 1      ; R30(R31,...)
+272 [-]: GETGLOBAL R30 K0       ; R30 := 0x93B1256B
+273 [-]: LOADK     R31 K61      ; R31 := "Encounter: Camp Beacon: AREA_INACTIVE"
+274 [-]: CALL      R30 2 1      ; R30(R31)
+275 [-]: MOVE      R29 R28      ; R29 := R28
+276 [-]: GETGLOBAL R30 K6       ; R30 := 0x201191EA
+277 [-]: LOADK     R31 K7       ; R31 := 0
+278 [-]: CALL      R30 2 1      ; R30(R31)
+279 [-]: JMP       161          ; PC := 161
+280 [-]: GETGLOBAL R30 K2       ; R30 := gRegion
+281 [-]: SELF      R30 R30 K62  ; R31 := R30; R30 := R30["0xBF5D7236"]
+282 [-]: GETUPVAL  R32 U4       ; R32 := U4
+283 [-]: MOVE      R33 R12      ; R33 := R12
+284 [-]: MUL       R34 R13 K12  ; R34 := R13 * 2
+285 [-]: CALL      R30 5 2      ; R30 := R30(R31,R32,R33,R34)
+286 [-]: GETGLOBAL R31 K24      ; R31 := 0x400E7765
+287 [-]: MOVE      R32 R30      ; R32 := R30
+288 [-]: CALL      R31 2 2      ; R31 := R31(R32)
+289 [-]: TEST      R31 1        ; if R31 then PC := 293
+290 [-]: JMP       293          ; PC := 293
+291 [-]: SELF      R31 R30 K63  ; R32 := R30; R31 := R30["0xD4C2743F"]
+292 [-]: CALL      R31 2 1      ; R31(R32)
+293 [-]: SELF      R31 R8 K50   ; R32 := R8; R31 := R8["0x8D5886B7"]
 294 [-]: LOADK     R33 K51      ; R33 := "TriggerPort"
 295 [-]: CALL      R31 3 1      ; R31(R32,R33)
-296 [-]: GETUPVAL  R31 U3       ; R31 := U3
-297 [-]: MOVE      R32 R5       ; R32 := R5
-298 [-]: MOVE      R33 R18      ; R33 := R18
-299 [-]: GETGLOBAL R34 K12      ; R34 := 0xEC274B1A
-300 [-]: LOADK     R35 K54      ; R35 := "Corpus"
-301 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
-302 [-]: CALL      R31 0 1      ; R31(R32,...)
-303 [-]: GETGLOBAL R31 K0       ; R31 := 0x93B1256B
-304 [-]: LOADK     R32 K64      ; R32 := "Encounter: Camp Beacon: Shutdown"
-305 [-]: CALL      R31 2 1      ; R31(R32)
-306 [-]: RETURN    R0 1         ; return 
+296 [-]: SELF      R31 R17 K50  ; R32 := R17; R31 := R17["0x8D5886B7"]
+297 [-]: LOADK     R33 K51      ; R33 := "TriggerPort"
+298 [-]: CALL      R31 3 1      ; R31(R32,R33)
+299 [-]: GETUPVAL  R31 U3       ; R31 := U3
+300 [-]: MOVE      R32 R5       ; R32 := R5
+301 [-]: MOVE      R33 R18      ; R33 := R18
+302 [-]: GETGLOBAL R34 K13      ; R34 := 0xEC274B1A
+303 [-]: LOADK     R35 K54      ; R35 := "Corpus"
+304 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
+305 [-]: CALL      R31 0 1      ; R31(R32,...)
+306 [-]: GETGLOBAL R31 K0       ; R31 := 0x93B1256B
+307 [-]: LOADK     R32 K64      ; R32 := "Encounter: Camp Beacon: Shutdown"
+308 [-]: CALL      R31 2 1      ; R31(R32)
+309 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 566
+; Defined at line: 567
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -75,7 +75,7 @@ code size: 13
 code size: 63
 code size: 33
 code size: 1
-code size: 85
+code size: 97
 code size: 34
 code size: 3
 code size: 274
@@ -84,7 +84,7 @@ code size: 34
 code size: 66
 code size: 61
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Inbox.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Inbox.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -521,9 +521,9 @@ code size: 61
 426 [-]: CLOSURE   R79 59       ; R79 := closure(Function #60)
 427 [-]: MOVE      R0 R76       ; R0 := R76
 428 [-]: MOVE      R0 R43       ; R0 := R43
-429 [-]: MOVE      R0 R44       ; R0 := R44
+429 [-]: MOVE      R0 R78       ; R0 := R78
 430 [-]: MOVE      R0 R5        ; R0 := R5
-431 [-]: MOVE      R0 R78       ; R0 := R78
+431 [-]: MOVE      R0 R44       ; R0 := R44
 432 [-]: MOVE      R0 R46       ; R0 := R46
 433 [-]: MOVE      R0 R77       ; R0 := R77
 434 [-]: CLOSURE   R80 60       ; R80 := closure(Function #61)
@@ -6494,77 +6494,89 @@ code size: 61
  18 [-]: LOADK     R6 K2        ; R6 := 1
  19 [-]: CALL      R4 3 1       ; R4(R5,R6)
  20 [-]: FORLOOP   R0 8         ; R0 += R2; if R0 <= R1 then begin PC := 8; R3 := R0 end
- 21 [-]: GETGLOBAL R4 K6        ; R4 := mMovie
- 22 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x5FF274BB"]
- 23 [-]: GETGLOBAL R6 K8        ; R6 := boosterPackMovie
- 24 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 25 [-]: GETGLOBAL R5 K6        ; R5 := mMovie
- 26 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5["0x5DB0BD4"]
- 27 [-]: LOADK     R7 K10       ; R7 := "/Lotus/Language/Menu/Store_GetRandomItem"
- 28 [-]: MOVE      R8 R0        ; R8 := R0
- 29 [-]: NEWTABLE  R9 0 1       ; R9 := {}
- 30 [-]: GETUPVAL  R10 U2       ; R10 := U2
- 31 [-]: SETTABLE  R9 K11 R10   ; R9["randomItem"] := R10
- 32 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
- 33 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 34 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["0x25992394"]
- 35 [-]: GETGLOBAL R7 K13       ; R7 := _G
- 36 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["UISound_Purchase"]
- 37 [-]: CALL      R6 2 1       ; R6(R7)
- 38 [-]: SELF      R6 R4 K15    ; R7 := R4; R6 := R4["0xB9C96BA0"]
- 39 [-]: LOADK     R8 K16       ; R8 := "SetText"
- 40 [-]: NEWTABLE  R9 1 0       ; R9 := {}
- 41 [-]: MOVE      R10 R5       ; R10 := R5
- 42 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
- 43 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 44 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 45 [-]: SUB       R6 R6 K2     ; R6 := R6 - 1
- 46 [-]: MOVE      R6 R4        ; R6 := R4
- 47 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 48 [-]: LT        0 R6 K2      ; if R6 >= 1 then PC := 55
- 49 [-]: JMP       55           ; PC := 55
- 50 [-]: SELF      R6 R4 K17    ; R7 := R4; R6 := R4["0x458F27A9"]
- 51 [-]: LOADK     R8 K18       ; R8 := "SetCallback"
- 52 [-]: LOADK     R9 K19       ; R9 := "OnBoosterPackShown"
- 53 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 54 [-]: JMP       59           ; PC := 59
- 55 [-]: SELF      R6 R4 K17    ; R7 := R4; R6 := R4["0x458F27A9"]
- 56 [-]: LOADK     R8 K18       ; R8 := "SetCallback"
- 57 [-]: LOADK     R9 K20       ; R9 := "ProcessBoosterPacks"
+ 21 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 22 [-]: SUB       R4 R4 K2     ; R4 := R4 - 1
+ 23 [-]: MOVE      R4 R2        ; R4 := R2
+ 24 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 25 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 26 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["0xF81722A2"]
+ 27 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 28 [-]: EQ        1 R6 K8      ; if R6 == 0 then PC := 31
+ 29 [-]: JMP       31           ; PC := 31
+ 30 [-]: MOVE      R6 R0        ; R6 := R0
+ 31 [-]: MOVE      R6 R1        ; R6 := R1
+ 32 [-]: LOADNIL   R7 R7        ; R7 := nil
+ 33 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 34 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
+ 35 [-]: SETTABLE  R4 K6 R5     ; R4["queuedBoosterPacks"] := R5
+ 36 [-]: GETGLOBAL R4 K9        ; R4 := mMovie
+ 37 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0x5FF274BB"]
+ 38 [-]: GETGLOBAL R6 K11       ; R6 := boosterPackMovie
+ 39 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 40 [-]: GETGLOBAL R5 K9        ; R5 := mMovie
+ 41 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0x5DB0BD4"]
+ 42 [-]: LOADK     R7 K13       ; R7 := "/Lotus/Language/Menu/Store_GetRandomItem"
+ 43 [-]: MOVE      R8 R0        ; R8 := R0
+ 44 [-]: NEWTABLE  R9 0 1       ; R9 := {}
+ 45 [-]: GETUPVAL  R10 U4       ; R10 := U4
+ 46 [-]: SETTABLE  R9 K14 R10   ; R9["randomItem"] := R10
+ 47 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
+ 48 [-]: GETUPVAL  R6 U3        ; R6 := U3
+ 49 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["0x25992394"]
+ 50 [-]: GETGLOBAL R7 K16       ; R7 := _G
+ 51 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["UISound_Purchase"]
+ 52 [-]: CALL      R6 2 1       ; R6(R7)
+ 53 [-]: SELF      R6 R4 K18    ; R7 := R4; R6 := R4["0xB9C96BA0"]
+ 54 [-]: LOADK     R8 K19       ; R8 := "SetText"
+ 55 [-]: NEWTABLE  R9 1 0       ; R9 := {}
+ 56 [-]: MOVE      R10 R5       ; R10 := R5
+ 57 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
  58 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 59 [-]: GETUPVAL  R6 U5        ; R6 := U5
- 60 [-]: LT        0 K2 R6      ; if 1 >= R6 then PC := 78
- 61 [-]: JMP       78           ; PC := 78
- 62 [-]: GETGLOBAL R6 K6        ; R6 := mMovie
- 63 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6["0x5DB0BD4"]
- 64 [-]: LOADK     R8 K21       ; R8 := "/Lotus/Language/Menu/Pack_Display_Count"
- 65 [-]: MOVE      R9 R0        ; R9 := R0
- 66 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 67 [-]: GETGLOBAL R7 K22       ; R7 := string
- 68 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["0x4B1F4F58"]
- 69 [-]: MOVE      R8 R6        ; R8 := R6
- 70 [-]: GETUPVAL  R9 U6        ; R9 := U6
- 71 [-]: GETUPVAL  R10 U5       ; R10 := U5
- 72 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 73 [-]: MOVE      R6 R7        ; R6 := R7
- 74 [-]: SELF      R7 R4 K17    ; R8 := R4; R7 := R4["0x458F27A9"]
- 75 [-]: LOADK     R9 K24       ; R9 := "SetCaption"
- 76 [-]: MOVE      R10 R6       ; R10 := R6
- 77 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 78 [-]: SELF      R7 R4 K17    ; R8 := R4; R7 := R4["0x458F27A9"]
- 79 [-]: LOADK     R9 K25       ; R9 := "SetNumOptions"
- 80 [-]: LOADK     R10 K2       ; R10 := 1
- 81 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 82 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 83 [-]: ADD       R7 R7 K2     ; R7 := R7 + 1
- 84 [-]: MOVE      R7 R6        ; R7 := R6
- 85 [-]: RETURN    R0 1         ; return 
+ 59 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 60 [-]: LT        0 R6 K2      ; if R6 >= 1 then PC := 67
+ 61 [-]: JMP       67           ; PC := 67
+ 62 [-]: SELF      R6 R4 K20    ; R7 := R4; R6 := R4["0x458F27A9"]
+ 63 [-]: LOADK     R8 K21       ; R8 := "SetCallback"
+ 64 [-]: LOADK     R9 K22       ; R9 := "OnBoosterPackShown"
+ 65 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 66 [-]: JMP       71           ; PC := 71
+ 67 [-]: SELF      R6 R4 K20    ; R7 := R4; R6 := R4["0x458F27A9"]
+ 68 [-]: LOADK     R8 K21       ; R8 := "SetCallback"
+ 69 [-]: LOADK     R9 K23       ; R9 := "ProcessBoosterPacks"
+ 70 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 71 [-]: GETUPVAL  R6 U5        ; R6 := U5
+ 72 [-]: LT        0 K2 R6      ; if 1 >= R6 then PC := 90
+ 73 [-]: JMP       90           ; PC := 90
+ 74 [-]: GETGLOBAL R6 K9        ; R6 := mMovie
+ 75 [-]: SELF      R6 R6 K12    ; R7 := R6; R6 := R6["0x5DB0BD4"]
+ 76 [-]: LOADK     R8 K24       ; R8 := "/Lotus/Language/Menu/Pack_Display_Count"
+ 77 [-]: MOVE      R9 R0        ; R9 := R0
+ 78 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
+ 79 [-]: GETGLOBAL R7 K25       ; R7 := string
+ 80 [-]: GETTABLE  R7 R7 K26    ; R7 := R7["0x4B1F4F58"]
+ 81 [-]: MOVE      R8 R6        ; R8 := R6
+ 82 [-]: GETUPVAL  R9 U6        ; R9 := U6
+ 83 [-]: GETUPVAL  R10 U5       ; R10 := U5
+ 84 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
+ 85 [-]: MOVE      R6 R7        ; R6 := R7
+ 86 [-]: SELF      R7 R4 K20    ; R8 := R4; R7 := R4["0x458F27A9"]
+ 87 [-]: LOADK     R9 K27       ; R9 := "SetCaption"
+ 88 [-]: MOVE      R10 R6       ; R10 := R6
+ 89 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 90 [-]: SELF      R7 R4 K20    ; R8 := R4; R7 := R4["0x458F27A9"]
+ 91 [-]: LOADK     R9 K28       ; R9 := "SetNumOptions"
+ 92 [-]: LOADK     R10 K2       ; R10 := 1
+ 93 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 94 [-]: GETUPVAL  R7 U6        ; R7 := U6
+ 95 [-]: ADD       R7 R7 K2     ; R7 := R7 + 1
+ 96 [-]: MOVE      R7 R6        ; R7 := R6
+ 97 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #61:
 ;
 ; Name:            
-; Defined at line: 1899
+; Defined at line: 1901
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6609,7 +6621,7 @@ code size: 61
 ; Function #62:
 ;
 ; Name:            
-; Defined at line: 1916
+; Defined at line: 1918
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6623,7 +6635,7 @@ code size: 61
 ; Function #63:
 ;
 ; Name:            
-; Defined at line: 1920
+; Defined at line: 1922
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6908,7 +6920,7 @@ code size: 61
 ; Function #64:
 ;
 ; Name:            
-; Defined at line: 2020
+; Defined at line: 2022
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6954,7 +6966,7 @@ code size: 61
 ; Function #65:
 ;
 ; Name:            
-; Defined at line: 2031
+; Defined at line: 2033
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6999,7 +7011,7 @@ code size: 61
 ; Function #66:
 ;
 ; Name:            
-; Defined at line: 2049
+; Defined at line: 2051
 ; #Upvalues:       7
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -7076,7 +7088,7 @@ code size: 61
 ; Function #67:
 ;
 ; Name:            
-; Defined at line: 2076
+; Defined at line: 2078
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0

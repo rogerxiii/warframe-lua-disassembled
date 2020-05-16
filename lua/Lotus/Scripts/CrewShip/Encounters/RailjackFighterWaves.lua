@@ -3,7 +3,7 @@ code size: 12
 code size: 23
 code size: 19
 code size: 34
-code size: 34
+code size: 44
 code size: 212
 code size: 67
 code size: 86
@@ -11,7 +11,7 @@ code size: 48
 code size: 143
 code size: 233
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\Encounters\RailjackFighterWaves.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\Encounters\RailjackFighterWaves.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -74,8 +74,8 @@ code size: 233
  52 [-]: CLOSURE   R39 4        ; R39 := closure(Function #5)
  53 [-]: MOVE      R0 R26       ; R0 := R26
  54 [-]: MOVE      R0 R30       ; R0 := R30
- 55 [-]: MOVE      R0 R34       ; R0 := R34
- 56 [-]: MOVE      R0 R31       ; R0 := R31
+ 55 [-]: MOVE      R0 R31       ; R0 := R31
+ 56 [-]: MOVE      R0 R34       ; R0 := R34
  57 [-]: CLOSURE   R40 5        ; R40 := closure(Function #6)
  58 [-]: MOVE      R0 R12       ; R0 := R12
  59 [-]: MOVE      R0 R21       ; R0 := R21
@@ -305,46 +305,56 @@ code size: 233
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1["0x83D9304A"]
-  3 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: GETGLOBAL R2 K1        ; R2 := 0x8C4A6742
-  6 [-]: LOADK     R3 K2        ; R3 := 0
-  7 [-]: LOADK     R4 K3        ; R4 := 1
-  8 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  9 [-]: GETGLOBAL R3 K4        ; R3 := chanceToStormDefenseTarget
- 10 [-]: LE        1 R2 R3      ; if R2 <= R3 then PC := 15
- 11 [-]: JMP       15           ; PC := 15
- 12 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 13 [-]: LT        0 R3 R1      ; if R3 >= R1 then PC := 25
- 14 [-]: JMP       25           ; PC := 25
- 15 [-]: GETGLOBAL R3 K5        ; R3 := 0x400E7765
- 16 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: TEST      R3 1         ; if R3 then PC := 34
- 19 [-]: JMP       34           ; PC := 34
- 20 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0["0x68A118A8"]
- 21 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 22 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 23 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 24 [-]: JMP       34           ; PC := 34
- 25 [-]: GETGLOBAL R3 K5        ; R3 := 0x400E7765
- 26 [-]: GETUPVAL  R4 U1        ; R4 := U1
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: TEST      R1 0         ; if not R1 then PC := 11
+  5 [-]: JMP       11           ; PC := 11
+  6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0x68A118A8"]
+  7 [-]: GETUPVAL  R3 U1        ; R3 := U1
+  8 [-]: GETUPVAL  R4 U2        ; R4 := U2
+  9 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 10 [-]: JMP       44           ; PC := 44
+ 11 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 12 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x83D9304A"]
+ 13 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 14 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 15 [-]: GETGLOBAL R2 K3        ; R2 := 0x8C4A6742
+ 16 [-]: LOADK     R3 K4        ; R3 := 0
+ 17 [-]: LOADK     R4 K5        ; R4 := 1
+ 18 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 19 [-]: GETGLOBAL R3 K6        ; R3 := chanceToStormDefenseTarget
+ 20 [-]: LE        1 R2 R3      ; if R2 <= R3 then PC := 25
+ 21 [-]: JMP       25           ; PC := 25
+ 22 [-]: GETUPVAL  R3 U3        ; R3 := U3
+ 23 [-]: LT        0 R3 R1      ; if R3 >= R1 then PC := 35
+ 24 [-]: JMP       35           ; PC := 35
+ 25 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 26 [-]: GETUPVAL  R4 U0        ; R4 := U0
  27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 28 [-]: TEST      R3 1         ; if R3 then PC := 34
- 29 [-]: JMP       34           ; PC := 34
- 30 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0["0x68A118A8"]
- 31 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 32 [-]: GETUPVAL  R6 U3        ; R6 := U3
+ 28 [-]: TEST      R3 1         ; if R3 then PC := 44
+ 29 [-]: JMP       44           ; PC := 44
+ 30 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0["0x68A118A8"]
+ 31 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 32 [-]: GETUPVAL  R6 U2        ; R6 := U2
  33 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 34 [-]: RETURN    R0 1         ; return 
+ 34 [-]: JMP       44           ; PC := 44
+ 35 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 36 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 38 [-]: TEST      R3 1         ; if R3 then PC := 44
+ 39 [-]: JMP       44           ; PC := 44
+ 40 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0["0x68A118A8"]
+ 41 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 42 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 43 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 44 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 114
+; Defined at line: 116
 ; #Upvalues:       10
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -567,7 +577,7 @@ code size: 233
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 203
+; Defined at line: 205
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -645,7 +655,7 @@ code size: 233
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 226
+; Defined at line: 228
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -742,7 +752,7 @@ code size: 233
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 267
+; Defined at line: 269
 ; #Upvalues:       13
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -801,7 +811,7 @@ code size: 233
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 284
+; Defined at line: 286
 ; #Upvalues:       21
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -955,7 +965,7 @@ code size: 233
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 327
+; Defined at line: 329
 ; #Upvalues:       24
 ; #Parameters:     1
 ; Is_vararg:       0

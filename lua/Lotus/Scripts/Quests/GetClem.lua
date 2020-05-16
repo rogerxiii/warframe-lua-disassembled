@@ -3,9 +3,9 @@ code size: 39
 code size: 40
 code size: 10
 code size: 10
-code size: 94
+code size: 109
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\GetClem.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\GetClem.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -233,56 +233,71 @@ code size: 94
  41 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
  42 [-]: MOVE      R6 R4        ; R6 := R4
  43 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 44 [-]: TEST      R5 1         ; if R5 then PC := 94
- 45 [-]: JMP       94           ; PC := 94
+ 44 [-]: TEST      R5 1         ; if R5 then PC := 109
+ 45 [-]: JMP       109          ; PC := 109
  46 [-]: MOVE      R5 R0        ; R5 := R0
  47 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
  48 [-]: MOVE      R7 R0        ; R7 := R0
  49 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 50 [-]: TEST      R6 1         ; if R6 then PC := 94
- 51 [-]: JMP       94           ; PC := 94
- 52 [-]: SELF      R6 R3 K14    ; R7 := R3; R6 := R3["0xA56CD0BB"]
- 53 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 54 [-]: TEST      R6 0         ; if not R6 then PC := 80
- 55 [-]: JMP       80           ; PC := 80
- 56 [-]: TEST      R5 1         ; if R5 then PC := 80
- 57 [-]: JMP       80           ; PC := 80
- 58 [-]: SELF      R6 R4 K15    ; R7 := R4; R6 := R4["0x8D5886B7"]
- 59 [-]: LOADK     R8 K16       ; R8 := "Enable"
- 60 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 61 [-]: MOVE      R5 R1        ; R5 := R1
- 62 [-]: LOADK     R6 K3        ; R6 := 0
- 63 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0xA56CD0BB"]
- 64 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 65 [-]: TEST      R7 0         ; if not R7 then PC := 90
- 66 [-]: JMP       90           ; PC := 90
- 67 [-]: GETGLOBAL R7 K17       ; R7 := 0x4CDEF9FF
- 68 [-]: CALL      R7 1 2       ; R7 := R7()
- 69 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
- 70 [-]: LT        0 K18 R6     ; if 20 >= R6 then PC := 75
- 71 [-]: JMP       75           ; PC := 75
- 72 [-]: SELF      R7 R0 K19    ; R8 := R0; R7 := R0["0x76C229EF"]
- 73 [-]: LOADK     R9 K20       ; R9 := 100
- 74 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 75 [-]: GETGLOBAL R7 K2        ; R7 := 0x201191EA
- 76 [-]: LOADK     R8 K3        ; R8 := 0
- 77 [-]: CALL      R7 2 1       ; R7(R8)
- 78 [-]: JMP       63           ; PC := 63
- 79 [-]: JMP       90           ; PC := 90
- 80 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0xA56CD0BB"]
- 81 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 82 [-]: TEST      R7 1         ; if R7 then PC := 90
- 83 [-]: JMP       90           ; PC := 90
- 84 [-]: TEST      R5 0         ; if not R5 then PC := 90
- 85 [-]: JMP       90           ; PC := 90
- 86 [-]: SELF      R7 R4 K15    ; R8 := R4; R7 := R4["0x8D5886B7"]
- 87 [-]: LOADK     R9 K21       ; R9 := "Disable"
- 88 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 89 [-]: MOVE      R5 R0        ; R5 := R0
- 90 [-]: GETGLOBAL R7 K2        ; R7 := 0x201191EA
- 91 [-]: LOADK     R8 K3        ; R8 := 0
- 92 [-]: CALL      R7 2 1       ; R7(R8)
- 93 [-]: JMP       47           ; PC := 47
- 94 [-]: RETURN    R0 1         ; return 
+ 50 [-]: TEST      R6 1         ; if R6 then PC := 109
+ 51 [-]: JMP       109          ; PC := 109
+ 52 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
+ 53 [-]: MOVE      R7 R3        ; R7 := R3
+ 54 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 55 [-]: TEST      R6 1         ; if R6 then PC := 109
+ 56 [-]: JMP       109          ; PC := 109
+ 57 [-]: SELF      R6 R3 K14    ; R7 := R3; R6 := R3["0xA56CD0BB"]
+ 58 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 59 [-]: TEST      R6 0         ; if not R6 then PC := 90
+ 60 [-]: JMP       90           ; PC := 90
+ 61 [-]: TEST      R5 1         ; if R5 then PC := 90
+ 62 [-]: JMP       90           ; PC := 90
+ 63 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
+ 64 [-]: MOVE      R7 R4        ; R7 := R4
+ 65 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 66 [-]: TEST      R6 1         ; if R6 then PC := 71
+ 67 [-]: JMP       71           ; PC := 71
+ 68 [-]: SELF      R6 R4 K15    ; R7 := R4; R6 := R4["0x8D5886B7"]
+ 69 [-]: LOADK     R8 K16       ; R8 := "Enable"
+ 70 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 71 [-]: MOVE      R5 R1        ; R5 := R1
+ 72 [-]: LOADK     R6 K3        ; R6 := 0
+ 73 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0xA56CD0BB"]
+ 74 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 75 [-]: TEST      R7 0         ; if not R7 then PC := 105
+ 76 [-]: JMP       105          ; PC := 105
+ 77 [-]: GETGLOBAL R7 K17       ; R7 := 0x4CDEF9FF
+ 78 [-]: CALL      R7 1 2       ; R7 := R7()
+ 79 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
+ 80 [-]: LT        0 K18 R6     ; if 20 >= R6 then PC := 85
+ 81 [-]: JMP       85           ; PC := 85
+ 82 [-]: SELF      R7 R0 K19    ; R8 := R0; R7 := R0["0x76C229EF"]
+ 83 [-]: LOADK     R9 K20       ; R9 := 100
+ 84 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 85 [-]: GETGLOBAL R7 K2        ; R7 := 0x201191EA
+ 86 [-]: LOADK     R8 K3        ; R8 := 0
+ 87 [-]: CALL      R7 2 1       ; R7(R8)
+ 88 [-]: JMP       73           ; PC := 73
+ 89 [-]: JMP       105          ; PC := 105
+ 90 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0xA56CD0BB"]
+ 91 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 92 [-]: TEST      R7 1         ; if R7 then PC := 105
+ 93 [-]: JMP       105          ; PC := 105
+ 94 [-]: TEST      R5 0         ; if not R5 then PC := 105
+ 95 [-]: JMP       105          ; PC := 105
+ 96 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
+ 97 [-]: MOVE      R8 R4        ; R8 := R4
+ 98 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 99 [-]: TEST      R7 1         ; if R7 then PC := 104
+100 [-]: JMP       104          ; PC := 104
+101 [-]: SELF      R7 R4 K15    ; R8 := R4; R7 := R4["0x8D5886B7"]
+102 [-]: LOADK     R9 K21       ; R9 := "Disable"
+103 [-]: CALL      R7 3 1       ; R7(R8,R9)
+104 [-]: MOVE      R5 R0        ; R5 := R0
+105 [-]: GETGLOBAL R7 K2        ; R7 := 0x201191EA
+106 [-]: LOADK     R8 K3        ; R8 := 0
+107 [-]: CALL      R7 2 1       ; R7(R8)
+108 [-]: JMP       47           ; PC := 47
+109 [-]: RETURN    R0 1         ; return 
 
 

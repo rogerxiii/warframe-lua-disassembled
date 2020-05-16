@@ -1,5 +1,5 @@
 code size: 61
-code size: 512
+code size: 523
 code size: 44
 code size: 49
 code size: 52
@@ -34,7 +34,7 @@ code size: 40
 code size: 28
 code size: 18
 code size: 38
-code size: 303
+code size: 298
 code size: 6
 code size: 10
 code size: 25
@@ -66,8 +66,9 @@ code size: 308
 code size: 31
 code size: 29
 code size: 44
-code size: 82
-code size: 34
+code size: 31
+code size: 81
+code size: 4
 code size: 4
 code size: 5
 code size: 4
@@ -79,15 +80,15 @@ code size: 14
 code size: 63
 code size: 19
 code size: 66
-code size: 24
+code size: 23
 code size: 48
 code size: 6
 code size: 38
+code size: 6
+code size: 4
+code size: 6
+code size: 4
 code size: 61
-code size: 6
-code size: 4
-code size: 6
-code size: 4
 code size: 28
 code size: 50
 code size: 6
@@ -99,7 +100,7 @@ code size: 56
 code size: 56
 code size: 9
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\ThemedCustomizationList.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\ThemedCustomizationList.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -527,13 +528,13 @@ code size: 9
 345 [-]: GETGLOBAL R5 K17       ; R5 := 0x400E7765
 346 [-]: MOVE      R6 R4        ; R6 := R4
 347 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-348 [-]: TEST      R5 1         ; if R5 then PC := 478
-349 [-]: JMP       478          ; PC := 478
+348 [-]: TEST      R5 1         ; if R5 then PC := 482
+349 [-]: JMP       482          ; PC := 482
 350 [-]: GETGLOBAL R5 K18       ; R5 := 0x9FAED6BC
 351 [-]: MOVE      R6 R4        ; R6 := R4
 352 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-353 [-]: EQ        1 R5 K19     ; if R5 == "undefined" then PC := 478
-354 [-]: JMP       478          ; PC := 478
+353 [-]: EQ        1 R5 K19     ; if R5 == "undefined" then PC := 482
+354 [-]: JMP       482          ; PC := 482
 355 [-]: GETUPVAL  R5 U7        ; R5 := U7
 356 [-]: GETTABLE  R5 R5 K150   ; R5 := R5["0x9A7B3F36"]
 357 [-]: MOVE      R6 R0        ; R6 := R0
@@ -621,77 +622,88 @@ code size: 9
 439 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
 440 [-]: CLOSURE   R6 45        ; R6 := closure(Function #1.46)
 441 [-]: MOVE      R0 R2        ; R0 := R2
-442 [-]: SETTABLE  R5 K178 R6   ; R5["GetSelectionStruct"] := R6
+442 [-]: SETTABLE  R5 K178 R6   ; R5["ConfirmSelection"] := R6
 443 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
 444 [-]: CLOSURE   R6 46        ; R6 := closure(Function #1.47)
-445 [-]: GETUPVAL  R0 U12       ; R0 := U12
-446 [-]: MOVE      R0 R2        ; R0 := R2
-447 [-]: SETTABLE  R5 K179 R6   ; R5["mClipCreatedCallback"] := R6
-448 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
-449 [-]: CLOSURE   R6 47        ; R6 := closure(Function #1.48)
+445 [-]: MOVE      R0 R2        ; R0 := R2
+446 [-]: SETTABLE  R5 K179 R6   ; R5["GetSelectionStruct"] := R6
+447 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
+448 [-]: CLOSURE   R6 47        ; R6 := closure(Function #1.48)
+449 [-]: GETUPVAL  R0 U12       ; R0 := U12
 450 [-]: MOVE      R0 R2        ; R0 := R2
-451 [-]: GETUPVAL  R0 U12       ; R0 := U12
-452 [-]: SETTABLE  R5 K180 R6   ; R5["mOnFocusedCallback"] := R6
-453 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
-454 [-]: CLOSURE   R6 48        ; R6 := closure(Function #1.49)
-455 [-]: MOVE      R0 R2        ; R0 := R2
-456 [-]: GETUPVAL  R0 U12       ; R0 := U12
-457 [-]: SETTABLE  R5 K181 R6   ; R5["mOnUnfocusedCallback"] := R6
-458 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
-459 [-]: CLOSURE   R6 49        ; R6 := closure(Function #1.50)
-460 [-]: GETUPVAL  R0 U4        ; R0 := U4
-461 [-]: MOVE      R0 R2        ; R0 := R2
-462 [-]: GETUPVAL  R0 U12       ; R0 := U12
-463 [-]: SETTABLE  R5 K182 R6   ; R5["mOnSelectedCallback"] := R6
-464 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
-465 [-]: CLOSURE   R6 50        ; R6 := closure(Function #1.51)
-466 [-]: MOVE      R0 R2        ; R0 := R2
-467 [-]: SETTABLE  R5 K183 R6   ; R5["mOnDoubleClickCallback"] := R6
+451 [-]: SETTABLE  R5 K180 R6   ; R5["mClipCreatedCallback"] := R6
+452 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
+453 [-]: CLOSURE   R6 48        ; R6 := closure(Function #1.49)
+454 [-]: MOVE      R0 R2        ; R0 := R2
+455 [-]: GETUPVAL  R0 U12       ; R0 := U12
+456 [-]: SETTABLE  R5 K181 R6   ; R5["mOnFocusedCallback"] := R6
+457 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
+458 [-]: CLOSURE   R6 49        ; R6 := closure(Function #1.50)
+459 [-]: MOVE      R0 R2        ; R0 := R2
+460 [-]: GETUPVAL  R0 U12       ; R0 := U12
+461 [-]: SETTABLE  R5 K182 R6   ; R5["mOnUnfocusedCallback"] := R6
+462 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
+463 [-]: CLOSURE   R6 50        ; R6 := closure(Function #1.51)
+464 [-]: GETUPVAL  R0 U4        ; R0 := U4
+465 [-]: MOVE      R0 R2        ; R0 := R2
+466 [-]: GETUPVAL  R0 U12       ; R0 := U12
+467 [-]: SETTABLE  R5 K183 R6   ; R5["mOnSelectedCallback"] := R6
 468 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
 469 [-]: CLOSURE   R6 51        ; R6 := closure(Function #1.52)
 470 [-]: MOVE      R0 R2        ; R0 := R2
-471 [-]: GETUPVAL  R0 U4        ; R0 := U4
-472 [-]: GETUPVAL  R0 U12       ; R0 := U12
-473 [-]: SETTABLE  R5 K116 R6   ; R5["mElementDrawCallback"] := R6
-474 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
-475 [-]: CLOSURE   R6 52        ; R6 := closure(Function #1.53)
-476 [-]: MOVE      R0 R2        ; R0 := R2
-477 [-]: SETTABLE  R5 K184 R6   ; R5["onViewportSizeChanged"] := R6
-478 [-]: CLOSURE   R5 53        ; R5 := closure(Function #1.54)
-479 [-]: GETUPVAL  R0 U8        ; R0 := U8
-480 [-]: GETUPVAL  R0 U9        ; R0 := U9
-481 [-]: SETTABLE  R2 K185 R5   ; R2["SetState"] := R5
+471 [-]: SETTABLE  R5 K184 R6   ; R5["mOnDoubleClickCallback"] := R6
+472 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
+473 [-]: CLOSURE   R6 52        ; R6 := closure(Function #1.53)
+474 [-]: MOVE      R0 R2        ; R0 := R2
+475 [-]: GETUPVAL  R0 U4        ; R0 := U4
+476 [-]: GETUPVAL  R0 U12       ; R0 := U12
+477 [-]: SETTABLE  R5 K116 R6   ; R5["mElementDrawCallback"] := R6
+478 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
+479 [-]: CLOSURE   R6 53        ; R6 := closure(Function #1.54)
+480 [-]: MOVE      R0 R2        ; R0 := R2
+481 [-]: SETTABLE  R5 K185 R6   ; R5["onViewportSizeChanged"] := R6
 482 [-]: CLOSURE   R5 54        ; R5 := closure(Function #1.55)
-483 [-]: SETTABLE  R2 K186 R5   ; R2["OnBuyItemResult"] := R5
-484 [-]: CLOSURE   R5 55        ; R5 := closure(Function #1.56)
-485 [-]: SETTABLE  R2 K187 R5   ; R2["Purchase"] := R5
-486 [-]: CLOSURE   R5 56        ; R5 := closure(Function #1.57)
-487 [-]: SETTABLE  R2 K188 R5   ; R2["Back"] := R5
-488 [-]: CLOSURE   R5 57        ; R5 := closure(Function #1.58)
-489 [-]: SETTABLE  R2 K189 R5   ; R2["UpdateButtons"] := R5
-490 [-]: CLOSURE   R5 58        ; R5 := closure(Function #1.59)
-491 [-]: SETTABLE  R2 K190 R5   ; R2["Scroll"] := R5
-492 [-]: CLOSURE   R5 59        ; R5 := closure(Function #1.60)
-493 [-]: SETTABLE  R2 K191 R5   ; R2["OnStyleChanged"] := R5
-494 [-]: CLOSURE   R5 60        ; R5 := closure(Function #1.61)
-495 [-]: SETTABLE  R2 K192 R5   ; R2["Up"] := R5
-496 [-]: CLOSURE   R5 61        ; R5 := closure(Function #1.62)
-497 [-]: SETTABLE  R2 K193 R5   ; R2["Down"] := R5
-498 [-]: CLOSURE   R5 62        ; R5 := closure(Function #1.63)
-499 [-]: SETTABLE  R2 K194 R5   ; R2["Left"] := R5
-500 [-]: CLOSURE   R5 63        ; R5 := closure(Function #1.64)
-501 [-]: SETTABLE  R2 K195 R5   ; R2["Right"] := R5
-502 [-]: CLOSURE   R5 64        ; R5 := closure(Function #1.65)
-503 [-]: SETTABLE  R2 K196 R5   ; R2["Shutdown"] := R5
-504 [-]: SELF      R5 R2 K197   ; R6 := R2; R5 := R2["0x29B47C50"]
-505 [-]: GETTABLE  R7 R2 K2     ; R7 := R2["State"]
-506 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["CUSTOMIZATION"]
-507 [-]: CALL      R5 3 1       ; R5(R6,R7)
-508 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
-509 [-]: SELF      R5 R5 K198   ; R6 := R5; R5 := R5["0x6A3F1C9E"]
-510 [-]: CALL      R5 2 1       ; R5(R6)
-511 [-]: RETURN    R2 2         ; return R2
-512 [-]: RETURN    R0 1         ; return 
+483 [-]: GETUPVAL  R0 U8        ; R0 := U8
+484 [-]: GETUPVAL  R0 U9        ; R0 := U9
+485 [-]: SETTABLE  R2 K186 R5   ; R2["SetState"] := R5
+486 [-]: CLOSURE   R5 55        ; R5 := closure(Function #1.56)
+487 [-]: SETTABLE  R2 K187 R5   ; R2["OnBuyItemResult"] := R5
+488 [-]: CLOSURE   R5 56        ; R5 := closure(Function #1.57)
+489 [-]: SETTABLE  R2 K188 R5   ; R2["Purchase"] := R5
+490 [-]: CLOSURE   R5 57        ; R5 := closure(Function #1.58)
+491 [-]: SETTABLE  R2 K189 R5   ; R2["Back"] := R5
+492 [-]: CLOSURE   R5 58        ; R5 := closure(Function #1.59)
+493 [-]: MOVE      R0 R2        ; R0 := R2
+494 [-]: SETTABLE  R2 K190 R5   ; R2["ResetDefaults"] := R5
+495 [-]: CLOSURE   R5 59        ; R5 := closure(Function #1.60)
+496 [-]: MOVE      R0 R2        ; R0 := R2
+497 [-]: SETTABLE  R2 K191 R5   ; R2["RandomizeAll"] := R5
+498 [-]: CLOSURE   R5 60        ; R5 := closure(Function #1.61)
+499 [-]: MOVE      R0 R2        ; R0 := R2
+500 [-]: SETTABLE  R2 K192 R5   ; R2["UpdateButtons"] := R5
+501 [-]: CLOSURE   R5 61        ; R5 := closure(Function #1.62)
+502 [-]: SETTABLE  R2 K193 R5   ; R2["Scroll"] := R5
+503 [-]: CLOSURE   R5 62        ; R5 := closure(Function #1.63)
+504 [-]: SETTABLE  R2 K194 R5   ; R2["OnStyleChanged"] := R5
+505 [-]: CLOSURE   R5 63        ; R5 := closure(Function #1.64)
+506 [-]: SETTABLE  R2 K195 R5   ; R2["Up"] := R5
+507 [-]: CLOSURE   R5 64        ; R5 := closure(Function #1.65)
+508 [-]: SETTABLE  R2 K196 R5   ; R2["Down"] := R5
+509 [-]: CLOSURE   R5 65        ; R5 := closure(Function #1.66)
+510 [-]: SETTABLE  R2 K197 R5   ; R2["Left"] := R5
+511 [-]: CLOSURE   R5 66        ; R5 := closure(Function #1.67)
+512 [-]: SETTABLE  R2 K198 R5   ; R2["Right"] := R5
+513 [-]: CLOSURE   R5 67        ; R5 := closure(Function #1.68)
+514 [-]: SETTABLE  R2 K199 R5   ; R2["Shutdown"] := R5
+515 [-]: SELF      R5 R2 K200   ; R6 := R2; R5 := R2["0x29B47C50"]
+516 [-]: GETTABLE  R7 R2 K2     ; R7 := R2["State"]
+517 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["CUSTOMIZATION"]
+518 [-]: CALL      R5 3 1       ; R5(R6,R7)
+519 [-]: GETTABLE  R5 R2 K149   ; R5 := R2["ItemSelectionGrid"]
+520 [-]: SELF      R5 R5 K201   ; R6 := R5; R5 := R5["0x6A3F1C9E"]
+521 [-]: CALL      R5 2 1       ; R5(R6)
+522 [-]: RETURN    R2 2         ; return R2
+523 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
@@ -3021,134 +3033,129 @@ code size: 9
 173 [-]: SETTABLE  R0 K30 K4    ; R0["TreeUpdate"] := nil
 174 [-]: GETUPVAL  R8 U0        ; R8 := U0
 175 [-]: GETTABLE  R8 R8 K36    ; R8 := R8["CustListScrollBar"]
-176 [-]: EQ        1 R8 K4      ; if R8 == nil then PC := 303
-177 [-]: JMP       303          ; PC := 303
+176 [-]: EQ        1 R8 K4      ; if R8 == nil then PC := 298
+177 [-]: JMP       298          ; PC := 298
 178 [-]: SELF      R8 R0 K37    ; R9 := R0; R8 := R0["0x8BF09FB6"]
 179 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 180 [-]: LOADK     R9 K9        ; R9 := 1
-181 [-]: EQ        1 R8 K13     ; if R8 == 0 then PC := 190
-182 [-]: JMP       190          ; PC := 190
+181 [-]: EQ        1 R8 K13     ; if R8 == 0 then PC := 185
+182 [-]: JMP       185          ; PC := 185
 183 [-]: GETTABLE  R10 R0 K38   ; R10 := R0["mMaxVisibleHeight"]
 184 [-]: DIV       R9 R10 R8    ; R9 := R10 / R8
-185 [-]: GETGLOBAL R10 K39      ; R10 := 0x93B1256B
-186 [-]: LOADK     R11 K40      ; R11 := "LOIST: "
-187 [-]: MOVE      R12 R8       ; R12 := R8
-188 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-189 [-]: CALL      R10 2 1      ; R10(R11)
-190 [-]: LT        1 R9 K9      ; if R9 < 1 then PC := 193
-191 [-]: JMP       193          ; PC := 193
-192 [-]: MOVE      R10 R0       ; R10 := R0
-193 [-]: MOVE      R10 R1       ; R10 := R1
-194 [-]: LOADK     R11 K13      ; R11 := 0
+185 [-]: LT        1 R9 K9      ; if R9 < 1 then PC := 188
+186 [-]: JMP       188          ; PC := 188
+187 [-]: MOVE      R10 R0       ; R10 := R0
+188 [-]: MOVE      R10 R1       ; R10 := R1
+189 [-]: LOADK     R11 K13      ; R11 := 0
+190 [-]: GETUPVAL  R12 U0       ; R12 := U0
+191 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["CustListScrollBar"]
+192 [-]: GETTABLE  R12 R12 K39  ; R12 := R12["mTotalHeight"]
+193 [-]: EQ        1 R12 K4     ; if R12 == nil then PC := 205
+194 [-]: JMP       205          ; PC := 205
 195 [-]: GETUPVAL  R12 U0       ; R12 := U0
 196 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["CustListScrollBar"]
-197 [-]: GETTABLE  R12 R12 K41  ; R12 := R12["mTotalHeight"]
-198 [-]: EQ        1 R12 K4     ; if R12 == nil then PC := 210
-199 [-]: JMP       210          ; PC := 210
-200 [-]: GETUPVAL  R12 U0       ; R12 := U0
-201 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["CustListScrollBar"]
-202 [-]: SELF      R12 R12 K42  ; R13 := R12; R12 := R12["0x52FA23CE"]
-203 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-204 [-]: GETUPVAL  R13 U0       ; R13 := U0
-205 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-206 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["mTotalHeight"]
-207 [-]: GETTABLE  R14 R0 K38   ; R14 := R0["mMaxVisibleHeight"]
-208 [-]: SUB       R13 R13 R14  ; R13 := R13 - R14
-209 [-]: MUL       R11 R12 R13  ; R11 := R12 * R13
-210 [-]: GETTABLE  R12 R0 K38   ; R12 := R0["mMaxVisibleHeight"]
-211 [-]: SUB       R12 R8 R12   ; R12 := R8 - R12
-212 [-]: DIV       R12 R11 R12  ; R12 := R11 / R12
-213 [-]: TEST      R10 0        ; if not R10 then PC := 221
-214 [-]: JMP       221          ; PC := 221
-215 [-]: GETUPVAL  R13 U0       ; R13 := U0
-216 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-217 [-]: SELF      R13 R13 K43  ; R14 := R13; R13 := R13["0xBBA39962"]
-218 [-]: GETTABLE  R15 R0 K38   ; R15 := R0["mMaxVisibleHeight"]
-219 [-]: MOVE      R16 R1       ; R16 := R1
-220 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-221 [-]: GETTABLE  R13 R0 K44   ; R13 := R0["mMovie"]
-222 [-]: SELF      R13 R13 K45  ; R14 := R13; R13 := R13["0x880196A7"]
-223 [-]: GETUPVAL  R15 U0       ; R15 := U0
-224 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["mClipName"]
-225 [-]: LOADK     R16 K46      ; R16 := "CustomizationPanel.Scrollbar"
-226 [-]: LOADK     R17 K47      ; R17 := "_visible"
-227 [-]: MOVE      R18 R10      ; R18 := R10
-228 [-]: CALL      R13 6 1      ; R13(R14,R15,R16,R17,R18)
-229 [-]: GETUPVAL  R13 U0       ; R13 := U0
-230 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-231 [-]: SETTABLE  R13 K41 R8   ; R13["mTotalHeight"] := R8
-232 [-]: GETUPVAL  R13 U0       ; R13 := U0
-233 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-234 [-]: CLOSURE   R14 1        ; R14 := closure(Function #1.28.2)
-235 [-]: GETUPVAL  R0 U1        ; R0 := U1
-236 [-]: MOVE      R0 R8        ; R0 := R8
-237 [-]: SETTABLE  R13 K48 R14  ; R13["GetMenuYAtScroll"] := R14
-238 [-]: GETUPVAL  R13 U0       ; R13 := U0
-239 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-240 [-]: CLOSURE   R14 2        ; R14 := closure(Function #1.28.3)
-241 [-]: GETUPVAL  R0 U0        ; R0 := U0
-242 [-]: MOVE      R0 R0        ; R0 := R0
-243 [-]: GETUPVAL  R0 U2        ; R0 := U2
-244 [-]: MOVE      R0 R8        ; R0 := R8
-245 [-]: SETTABLE  R13 K49 R14  ; R13["mScrollValueChangedCallback"] := R14
-246 [-]: GETUPVAL  R13 U0       ; R13 := U0
-247 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-248 [-]: GETUPVAL  R14 U2       ; R14 := U2
-249 [-]: GETTABLE  R14 R14 K51  ; R14 := R14["0xF81722A2"]
-250 [-]: MOVE      R15 R10      ; R15 := R10
-251 [-]: MOVE      R16 R9       ; R16 := R9
-252 [-]: LOADK     R17 K52      ; R17 := 0.5
-253 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
-254 [-]: SETTABLE  R13 K50 R14  ; R13["mVisibleProp"] := R14
-255 [-]: TEST      R4 0         ; if not R4 then PC := 265
-256 [-]: JMP       265          ; PC := 265
-257 [-]: GETUPVAL  R13 U0       ; R13 := U0
-258 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-259 [-]: SELF      R13 R13 K53  ; R14 := R13; R13 := R13["0x1B721C34"]
-260 [-]: MOVE      R15 R12      ; R15 := R12
-261 [-]: MOVE      R16 R0       ; R16 := R0
-262 [-]: MOVE      R17 R1       ; R17 := R1
-263 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-264 [-]: JMP       272          ; PC := 272
-265 [-]: GETUPVAL  R13 U0       ; R13 := U0
-266 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-267 [-]: SELF      R13 R13 K53  ; R14 := R13; R13 := R13["0x1B721C34"]
-268 [-]: LOADK     R15 K13      ; R15 := 0
-269 [-]: MOVE      R16 R0       ; R16 := R0
-270 [-]: MOVE      R17 R1       ; R17 := R1
-271 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+197 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12["0x52FA23CE"]
+198 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+199 [-]: GETUPVAL  R13 U0       ; R13 := U0
+200 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+201 [-]: GETTABLE  R13 R13 K39  ; R13 := R13["mTotalHeight"]
+202 [-]: GETTABLE  R14 R0 K38   ; R14 := R0["mMaxVisibleHeight"]
+203 [-]: SUB       R13 R13 R14  ; R13 := R13 - R14
+204 [-]: MUL       R11 R12 R13  ; R11 := R12 * R13
+205 [-]: GETTABLE  R12 R0 K38   ; R12 := R0["mMaxVisibleHeight"]
+206 [-]: SUB       R12 R8 R12   ; R12 := R8 - R12
+207 [-]: DIV       R12 R11 R12  ; R12 := R11 / R12
+208 [-]: TEST      R10 0        ; if not R10 then PC := 216
+209 [-]: JMP       216          ; PC := 216
+210 [-]: GETUPVAL  R13 U0       ; R13 := U0
+211 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+212 [-]: SELF      R13 R13 K41  ; R14 := R13; R13 := R13["0xBBA39962"]
+213 [-]: GETTABLE  R15 R0 K38   ; R15 := R0["mMaxVisibleHeight"]
+214 [-]: MOVE      R16 R1       ; R16 := R1
+215 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+216 [-]: GETTABLE  R13 R0 K42   ; R13 := R0["mMovie"]
+217 [-]: SELF      R13 R13 K43  ; R14 := R13; R13 := R13["0x880196A7"]
+218 [-]: GETUPVAL  R15 U0       ; R15 := U0
+219 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["mClipName"]
+220 [-]: LOADK     R16 K44      ; R16 := "CustomizationPanel.Scrollbar"
+221 [-]: LOADK     R17 K45      ; R17 := "_visible"
+222 [-]: MOVE      R18 R10      ; R18 := R10
+223 [-]: CALL      R13 6 1      ; R13(R14,R15,R16,R17,R18)
+224 [-]: GETUPVAL  R13 U0       ; R13 := U0
+225 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+226 [-]: SETTABLE  R13 K39 R8   ; R13["mTotalHeight"] := R8
+227 [-]: GETUPVAL  R13 U0       ; R13 := U0
+228 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+229 [-]: CLOSURE   R14 1        ; R14 := closure(Function #1.28.2)
+230 [-]: GETUPVAL  R0 U1        ; R0 := U1
+231 [-]: MOVE      R0 R8        ; R0 := R8
+232 [-]: SETTABLE  R13 K46 R14  ; R13["GetMenuYAtScroll"] := R14
+233 [-]: GETUPVAL  R13 U0       ; R13 := U0
+234 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+235 [-]: CLOSURE   R14 2        ; R14 := closure(Function #1.28.3)
+236 [-]: GETUPVAL  R0 U0        ; R0 := U0
+237 [-]: MOVE      R0 R0        ; R0 := R0
+238 [-]: GETUPVAL  R0 U2        ; R0 := U2
+239 [-]: MOVE      R0 R8        ; R0 := R8
+240 [-]: SETTABLE  R13 K47 R14  ; R13["mScrollValueChangedCallback"] := R14
+241 [-]: GETUPVAL  R13 U0       ; R13 := U0
+242 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+243 [-]: GETUPVAL  R14 U2       ; R14 := U2
+244 [-]: GETTABLE  R14 R14 K49  ; R14 := R14["0xF81722A2"]
+245 [-]: MOVE      R15 R10      ; R15 := R10
+246 [-]: MOVE      R16 R9       ; R16 := R9
+247 [-]: LOADK     R17 K50      ; R17 := 0.5
+248 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
+249 [-]: SETTABLE  R13 K48 R14  ; R13["mVisibleProp"] := R14
+250 [-]: TEST      R4 0         ; if not R4 then PC := 260
+251 [-]: JMP       260          ; PC := 260
+252 [-]: GETUPVAL  R13 U0       ; R13 := U0
+253 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+254 [-]: SELF      R13 R13 K51  ; R14 := R13; R13 := R13["0x1B721C34"]
+255 [-]: MOVE      R15 R12      ; R15 := R12
+256 [-]: MOVE      R16 R0       ; R16 := R0
+257 [-]: MOVE      R17 R1       ; R17 := R1
+258 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+259 [-]: JMP       267          ; PC := 267
+260 [-]: GETUPVAL  R13 U0       ; R13 := U0
+261 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+262 [-]: SELF      R13 R13 K51  ; R14 := R13; R13 := R13["0x1B721C34"]
+263 [-]: LOADK     R15 K13      ; R15 := 0
+264 [-]: MOVE      R16 R0       ; R16 := R0
+265 [-]: MOVE      R17 R1       ; R17 := R1
+266 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+267 [-]: GETUPVAL  R13 U0       ; R13 := U0
+268 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+269 [-]: SELF      R13 R13 K52  ; R14 := R13; R13 := R13["0x91791A08"]
+270 [-]: MOVE      R15 R10      ; R15 := R10
+271 [-]: CALL      R13 3 1      ; R13(R14,R15)
 272 [-]: GETUPVAL  R13 U0       ; R13 := U0
 273 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-274 [-]: SELF      R13 R13 K54  ; R14 := R13; R13 := R13["0x91791A08"]
-275 [-]: MOVE      R15 R10      ; R15 := R10
-276 [-]: CALL      R13 3 1      ; R13(R14,R15)
-277 [-]: GETUPVAL  R13 U0       ; R13 := U0
-278 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-279 [-]: SELF      R13 R13 K55  ; R14 := R13; R13 := R13["0x3B8EF1F4"]
-280 [-]: CALL      R13 2 1      ; R13(R14)
-281 [-]: GETUPVAL  R13 U0       ; R13 := U0
-282 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
-283 [-]: SUB       R14 K9 R9    ; R14 := 1 - R9
-284 [-]: SELF      R15 R0 K57   ; R16 := R0; R15 := R0["0xC51A5C9D"]
-285 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-286 [-]: ADD       R15 R15 K9   ; R15 := R15 + 1
-287 [-]: MUL       R14 R14 R15  ; R14 := R14 * R15
-288 [-]: DIV       R14 K9 R14   ; R14 := 1 / R14
-289 [-]: SETTABLE  R13 K56 R14  ; R13["mScrollStep"] := R14
-290 [-]: GETTABLE  R13 R0 K58   ; R13 := R0["mElementWidth"]
-291 [-]: EQ        1 R13 K4     ; if R13 == nil then PC := 302
-292 [-]: JMP       302          ; PC := 302
-293 [-]: GETTABLE  R13 R0 K44   ; R13 := R0["mMovie"]
-294 [-]: SELF      R13 R13 K59  ; R14 := R13; R13 := R13["0x1C19D966"]
-295 [-]: GETUPVAL  R15 U0       ; R15 := U0
-296 [-]: GETTABLE  R15 R15 K36  ; R15 := R15["CustListScrollBar"]
-297 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["mClipName"]
-298 [-]: LOADK     R16 K60      ; R16 := "_x"
-299 [-]: GETTABLE  R17 R0 K58   ; R17 := R0["mElementWidth"]
-300 [-]: ADD       R17 R17 K61  ; R17 := R17 + 10
-301 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-302 [-]: CLOSE     R8           ; SAVE R8,...
-303 [-]: RETURN    R0 1         ; return 
+274 [-]: SELF      R13 R13 K53  ; R14 := R13; R13 := R13["0x3B8EF1F4"]
+275 [-]: CALL      R13 2 1      ; R13(R14)
+276 [-]: GETUPVAL  R13 U0       ; R13 := U0
+277 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["CustListScrollBar"]
+278 [-]: SUB       R14 K9 R9    ; R14 := 1 - R9
+279 [-]: SELF      R15 R0 K55   ; R16 := R0; R15 := R0["0xC51A5C9D"]
+280 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+281 [-]: ADD       R15 R15 K9   ; R15 := R15 + 1
+282 [-]: MUL       R14 R14 R15  ; R14 := R14 * R15
+283 [-]: DIV       R14 K9 R14   ; R14 := 1 / R14
+284 [-]: SETTABLE  R13 K54 R14  ; R13["mScrollStep"] := R14
+285 [-]: GETTABLE  R13 R0 K56   ; R13 := R0["mElementWidth"]
+286 [-]: EQ        1 R13 K4     ; if R13 == nil then PC := 297
+287 [-]: JMP       297          ; PC := 297
+288 [-]: GETTABLE  R13 R0 K42   ; R13 := R0["mMovie"]
+289 [-]: SELF      R13 R13 K57  ; R14 := R13; R13 := R13["0x1C19D966"]
+290 [-]: GETUPVAL  R15 U0       ; R15 := U0
+291 [-]: GETTABLE  R15 R15 K36  ; R15 := R15["CustListScrollBar"]
+292 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["mClipName"]
+293 [-]: LOADK     R16 K58      ; R16 := "_x"
+294 [-]: GETTABLE  R17 R0 K56   ; R17 := R0["mElementWidth"]
+295 [-]: ADD       R17 R17 K59  ; R17 := R17 + 10
+296 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+297 [-]: CLOSE     R8           ; SAVE R8,...
+298 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.28.1:
@@ -3171,7 +3178,7 @@ code size: 9
 ; Function #1.28.2:
 ;
 ; Name:            
-; Defined at line: 921
+; Defined at line: 920
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3192,7 +3199,7 @@ code size: 9
 ; Function #1.28.3:
 ;
 ; Name:            
-; Defined at line: 925
+; Defined at line: 924
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3228,7 +3235,7 @@ code size: 9
 ; Function #1.29:
 ;
 ; Name:            
-; Defined at line: 945
+; Defined at line: 944
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3299,7 +3306,7 @@ code size: 9
 ; Function #1.29.1:
 ;
 ; Name:            
-; Defined at line: 956
+; Defined at line: 955
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3318,7 +3325,7 @@ code size: 9
 ; Function #1.29.1.1:
 ;
 ; Name:            
-; Defined at line: 960
+; Defined at line: 959
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3340,7 +3347,7 @@ code size: 9
 ; Function #1.29.2:
 ;
 ; Name:            
-; Defined at line: 967
+; Defined at line: 966
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3361,7 +3368,7 @@ code size: 9
 ; Function #1.29.3:
 ;
 ; Name:            
-; Defined at line: 973
+; Defined at line: 972
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3393,7 +3400,7 @@ code size: 9
 ; Function #1.30:
 ;
 ; Name:            
-; Defined at line: 986
+; Defined at line: 985
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -3425,7 +3432,7 @@ code size: 9
 ; Function #1.31:
 ;
 ; Name:            
-; Defined at line: 1001
+; Defined at line: 1000
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3459,7 +3466,7 @@ code size: 9
 ; Function #1.32:
 ;
 ; Name:            
-; Defined at line: 1013
+; Defined at line: 1012
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3513,7 +3520,7 @@ code size: 9
 ; Function #1.32.1:
 ;
 ; Name:            
-; Defined at line: 1022
+; Defined at line: 1021
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3531,7 +3538,7 @@ code size: 9
 ; Function #1.33:
 ;
 ; Name:            
-; Defined at line: 1038
+; Defined at line: 1037
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3561,7 +3568,7 @@ code size: 9
 ; Function #1.34:
 ;
 ; Name:            
-; Defined at line: 1047
+; Defined at line: 1046
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3575,7 +3582,7 @@ code size: 9
 ; Function #1.35:
 ;
 ; Name:            
-; Defined at line: 1051
+; Defined at line: 1050
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3622,7 +3629,7 @@ code size: 9
 ; Function #1.36:
 ;
 ; Name:            
-; Defined at line: 1064
+; Defined at line: 1063
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3683,7 +3690,7 @@ code size: 9
 ; Function #1.37:
 ;
 ; Name:            
-; Defined at line: 1078
+; Defined at line: 1077
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3744,7 +3751,7 @@ code size: 9
 ; Function #1.38:
 ;
 ; Name:            
-; Defined at line: 1092
+; Defined at line: 1091
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3762,7 +3769,7 @@ code size: 9
 ; Function #1.39:
 ;
 ; Name:            
-; Defined at line: 1097
+; Defined at line: 1096
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3825,7 +3832,7 @@ code size: 9
 ; Function #1.40:
 ;
 ; Name:            
-; Defined at line: 1112
+; Defined at line: 1111
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3840,7 +3847,7 @@ code size: 9
 ; Function #1.40.1:
 ;
 ; Name:            
-; Defined at line: 1114
+; Defined at line: 1113
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3863,7 +3870,7 @@ code size: 9
 ; Function #1.41:
 ;
 ; Name:            
-; Defined at line: 1155
+; Defined at line: 1154
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3892,7 +3899,7 @@ code size: 9
 ; Function #1.42:
 ;
 ; Name:            
-; Defined at line: 1172
+; Defined at line: 1171
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3920,7 +3927,7 @@ code size: 9
 ; Function #1.42.1:
 ;
 ; Name:            
-; Defined at line: 1176
+; Defined at line: 1175
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3961,7 +3968,7 @@ code size: 9
 ; Function #1.42.2:
 ;
 ; Name:            
-; Defined at line: 1186
+; Defined at line: 1185
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3979,7 +3986,7 @@ code size: 9
 ; Function #1.42.3:
 ;
 ; Name:            
-; Defined at line: 1190
+; Defined at line: 1189
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3997,7 +4004,7 @@ code size: 9
 ; Function #1.43:
 ;
 ; Name:            
-; Defined at line: 1195
+; Defined at line: 1194
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4019,7 +4026,7 @@ code size: 9
 ; Function #1.44:
 ;
 ; Name:            
-; Defined at line: 1203
+; Defined at line: 1202
 ; #Upvalues:       8
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4338,7 +4345,7 @@ code size: 9
 ; Function #1.44.1:
 ;
 ; Name:            
-; Defined at line: 1265
+; Defined at line: 1264
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4380,7 +4387,7 @@ code size: 9
 ; Function #1.44.2:
 ;
 ; Name:            
-; Defined at line: 1286
+; Defined at line: 1285
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4420,7 +4427,7 @@ code size: 9
 ; Function #1.45:
 ;
 ; Name:            
-; Defined at line: 1319
+; Defined at line: 1318
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4475,7 +4482,49 @@ code size: 9
 ; Function #1.46:
 ;
 ; Name:            
-; Defined at line: 1333
+; Defined at line: 1332
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x4AE52860"]
+  2 [-]: MOVE      R3 R0        ; R3 := R0
+  3 [-]: CALL      R1 3 1       ; R1(R2,R3)
+  4 [-]: LOADNIL   R1 R1        ; R1 := nil
+  5 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
+  6 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mSelectedElement"]
+  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  8 [-]: TEST      R2 1         ; if R2 then PC := 12
+  9 [-]: JMP       12           ; PC := 12
+ 10 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mSelectedElement"]
+ 11 [-]: GETTABLE  R1 R2 K3     ; R1 := R2["StoreItem"]
+ 12 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 13 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["CustomizationList"]
+ 14 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["mSelectedElement"]
+ 15 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["ItemSelectionData"]
+ 16 [-]: SETTABLE  R2 K6 R1     ; R2["CurrSelection"] := R1
+ 17 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 18 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["CustomizationList"]
+ 19 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xA372F64A"]
+ 20 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 21 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["CustomizationList"]
+ 22 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["mSelectedElement"]
+ 23 [-]: CALL      R2 2 1       ; R2(R3)
+ 24 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 25 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["CustomizationList"]
+ 26 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["mGoBackCallback"]
+ 27 [-]: EQ        1 R2 K9      ; if R2 == nil then PC := 31
+ 28 [-]: JMP       31           ; PC := 31
+ 29 [-]: MOVE      R3 R2        ; R3 := R2
+ 30 [-]: CALL      R3 1 1       ; R3()
+ 31 [-]: RETURN    R0 1         ; return 
+
+
+; Function #1.47:
+;
+; Name:            
+; Defined at line: 1350
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4502,118 +4551,87 @@ code size: 9
  19 [-]: EQ        1 R4 K6      ; if R4 == "0x0" then PC := 24
  20 [-]: JMP       24           ; PC := 24
  21 [-]: GETTABLE  R4 R1 K7     ; R4 := R1["mPurchased"]
- 22 [-]: TEST      R4 0         ; if not R4 then PC := 51
- 23 [-]: JMP       51           ; PC := 51
+ 22 [-]: TEST      R4 0         ; if not R4 then PC := 50
+ 23 [-]: JMP       50           ; PC := 50
  24 [-]: GETGLOBAL R4 K8        ; R4 := table
  25 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xE6450C9D"]
  26 [-]: MOVE      R5 R3        ; R5 := R3
  27 [-]: NEWTABLE  R6 0 3       ; R6 := {}
  28 [-]: SETTABLE  R6 K10 K11   ; R6["Label"] := "/Lotus/Language/Menu/ItemSelection_Equip"
  29 [-]: SETTABLE  R6 K12 K13   ; R6["CallOut"] := "MENU_SELECT"
- 30 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.46.1)
+ 30 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1.47.1)
  31 [-]: MOVE      R0 R0        ; R0 := R0
- 32 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 33 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
- 34 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 35 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 36 [-]: GETTABLE  R5 R1 K2     ; R5 := R1["StoreItem"]
- 37 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 38 [-]: TEST      R4 1         ; if R4 then PC := 75
- 39 [-]: JMP       75           ; PC := 75
- 40 [-]: GETGLOBAL R4 K8        ; R4 := table
- 41 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xE6450C9D"]
- 42 [-]: MOVE      R5 R3        ; R5 := R3
- 43 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 44 [-]: SETTABLE  R6 K10 K15   ; R6["Label"] := "/Lotus/Language/Menu/ProfilePicture_ViewPurchaseDialog"
- 45 [-]: SETTABLE  R6 K12 K16   ; R6["CallOut"] := "MENU_RTHUMB"
- 46 [-]: CLOSURE   R7 1         ; R7 := closure(Function #1.46.2)
- 47 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 48 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
- 49 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 50 [-]: JMP       75           ; PC := 75
- 51 [-]: GETTABLE  R4 R1 K17    ; R4 := R1["CanPreview"]
- 52 [-]: TEST      R4 0         ; if not R4 then PC := 65
- 53 [-]: JMP       65           ; PC := 65
- 54 [-]: GETGLOBAL R4 K8        ; R4 := table
- 55 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xE6450C9D"]
- 56 [-]: MOVE      R5 R3        ; R5 := R3
- 57 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 58 [-]: SETTABLE  R6 K10 K18   ; R6["Label"] := "/Lotus/Language/OstronCrafting/Crafting_Preview_NoIcon"
- 59 [-]: SETTABLE  R6 K12 K13   ; R6["CallOut"] := "MENU_SELECT"
- 60 [-]: CLOSURE   R7 2         ; R7 := closure(Function #1.46.3)
- 61 [-]: MOVE      R0 R0        ; R0 := R0
- 62 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
- 63 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 64 [-]: JMP       75           ; PC := 75
- 65 [-]: GETGLOBAL R4 K8        ; R4 := table
- 66 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xE6450C9D"]
- 67 [-]: MOVE      R5 R3        ; R5 := R3
- 68 [-]: NEWTABLE  R6 0 3       ; R6 := {}
- 69 [-]: SETTABLE  R6 K10 K19   ; R6["Label"] := "/Lotus/Language/Menu/Global_BuyItem"
- 70 [-]: SETTABLE  R6 K12 K13   ; R6["CallOut"] := "MENU_SELECT"
- 71 [-]: CLOSURE   R7 3         ; R7 := closure(Function #1.46.4)
- 72 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 73 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
- 74 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 75 [-]: TEST      R2 0         ; if not R2 then PC := 81
- 76 [-]: JMP       81           ; PC := 81
- 77 [-]: GETTABLE  R4 R3 K20    ; R4 := R3[1]
- 78 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["CallBack"]
- 79 [-]: RETURN    R4 2         ; return R4
- 80 [-]: JMP       82           ; PC := 82
- 81 [-]: RETURN    R3 2         ; return R3
- 82 [-]: RETURN    R0 1         ; return 
+ 32 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
+ 33 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 34 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 35 [-]: GETTABLE  R5 R1 K2     ; R5 := R1["StoreItem"]
+ 36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 37 [-]: TEST      R4 1         ; if R4 then PC := 74
+ 38 [-]: JMP       74           ; PC := 74
+ 39 [-]: GETGLOBAL R4 K8        ; R4 := table
+ 40 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xE6450C9D"]
+ 41 [-]: MOVE      R5 R3        ; R5 := R3
+ 42 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 43 [-]: SETTABLE  R6 K10 K15   ; R6["Label"] := "/Lotus/Language/Menu/ProfilePicture_ViewPurchaseDialog"
+ 44 [-]: SETTABLE  R6 K12 K16   ; R6["CallOut"] := "MENU_RTHUMB"
+ 45 [-]: CLOSURE   R7 1         ; R7 := closure(Function #1.47.2)
+ 46 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 47 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
+ 48 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 49 [-]: JMP       74           ; PC := 74
+ 50 [-]: GETTABLE  R4 R1 K17    ; R4 := R1["CanPreview"]
+ 51 [-]: TEST      R4 0         ; if not R4 then PC := 64
+ 52 [-]: JMP       64           ; PC := 64
+ 53 [-]: GETGLOBAL R4 K8        ; R4 := table
+ 54 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xE6450C9D"]
+ 55 [-]: MOVE      R5 R3        ; R5 := R3
+ 56 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 57 [-]: SETTABLE  R6 K10 K18   ; R6["Label"] := "/Lotus/Language/OstronCrafting/Crafting_Preview_NoIcon"
+ 58 [-]: SETTABLE  R6 K12 K13   ; R6["CallOut"] := "MENU_SELECT"
+ 59 [-]: CLOSURE   R7 2         ; R7 := closure(Function #1.47.3)
+ 60 [-]: MOVE      R0 R0        ; R0 := R0
+ 61 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
+ 62 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 63 [-]: JMP       74           ; PC := 74
+ 64 [-]: GETGLOBAL R4 K8        ; R4 := table
+ 65 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xE6450C9D"]
+ 66 [-]: MOVE      R5 R3        ; R5 := R3
+ 67 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 68 [-]: SETTABLE  R6 K10 K19   ; R6["Label"] := "/Lotus/Language/Menu/Global_BuyItem"
+ 69 [-]: SETTABLE  R6 K12 K13   ; R6["CallOut"] := "MENU_SELECT"
+ 70 [-]: CLOSURE   R7 3         ; R7 := closure(Function #1.47.4)
+ 71 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 72 [-]: SETTABLE  R6 K14 R7    ; R6["CallBack"] := R7
+ 73 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 74 [-]: TEST      R2 0         ; if not R2 then PC := 80
+ 75 [-]: JMP       80           ; PC := 80
+ 76 [-]: GETTABLE  R4 R3 K20    ; R4 := R3[1]
+ 77 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["CallBack"]
+ 78 [-]: RETURN    R4 2         ; return R4
+ 79 [-]: JMP       81           ; PC := 81
+ 80 [-]: RETURN    R3 2         ; return R3
+ 81 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.46.1:
+; Function #1.47.1:
 ;
 ; Name:            
-; Defined at line: 1342
-; #Upvalues:       2
+; Defined at line: 1359
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  2
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0x4AE52860"]
-  3 [-]: MOVE      R2 R0        ; R2 := R0
-  4 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  5 [-]: LOADNIL   R0 R0        ; R0 := nil
-  6 [-]: GETGLOBAL R1 K1        ; R1 := 0x400E7765
-  7 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  8 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["mSelectedElement"]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: TEST      R1 1         ; if R1 then PC := 15
- 11 [-]: JMP       15           ; PC := 15
- 12 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 13 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["mSelectedElement"]
- 14 [-]: GETTABLE  R0 R1 K3     ; R0 := R1["StoreItem"]
- 15 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 16 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["CustomizationList"]
- 17 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["mSelectedElement"]
- 18 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["ItemSelectionData"]
- 19 [-]: SETTABLE  R1 K6 R0     ; R1["CurrSelection"] := R0
- 20 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 21 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["CustomizationList"]
- 22 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xA372F64A"]
- 23 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 24 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["CustomizationList"]
- 25 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["mSelectedElement"]
- 26 [-]: CALL      R1 2 1       ; R1(R2)
- 27 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 28 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["CustomizationList"]
- 29 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["mGoBackCallback"]
- 30 [-]: EQ        1 R1 K9      ; if R1 == nil then PC := 34
- 31 [-]: JMP       34           ; PC := 34
- 32 [-]: MOVE      R2 R1        ; R2 := R1
- 33 [-]: CALL      R2 1 1       ; R2()
- 34 [-]: RETURN    R0 1         ; return 
+  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0x53D10399"]
+  3 [-]: CALL      R0 2 1       ; R0(R1)
+  4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.46.2:
+; Function #1.47.2:
 ;
 ; Name:            
-; Defined at line: 1362
+; Defined at line: 1365
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4625,10 +4643,10 @@ code size: 9
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.46.3:
+; Function #1.47.3:
 ;
 ; Name:            
-; Defined at line: 1370
+; Defined at line: 1373
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4641,10 +4659,10 @@ code size: 9
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.46.4:
+; Function #1.47.4:
 ;
 ; Name:            
-; Defined at line: 1375
+; Defined at line: 1378
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4656,10 +4674,10 @@ code size: 9
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.47:
+; Function #1.48:
 ;
 ; Name:            
-; Defined at line: 1387
+; Defined at line: 1390
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4677,10 +4695,10 @@ code size: 9
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.48:
+; Function #1.49:
 ;
 ; Name:            
-; Defined at line: 1391
+; Defined at line: 1394
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4723,10 +4741,10 @@ code size: 9
  35 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.49:
+; Function #1.50:
 ;
 ; Name:            
-; Defined at line: 1400
+; Defined at line: 1403
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4769,10 +4787,10 @@ code size: 9
  35 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.50:
+; Function #1.51:
 ;
 ; Name:            
-; Defined at line: 1409
+; Defined at line: 1412
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4913,10 +4931,10 @@ code size: 9
 133 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.51:
+; Function #1.52:
 ;
 ; Name:            
-; Defined at line: 1438
+; Defined at line: 1441
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4938,10 +4956,10 @@ code size: 9
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.52:
+; Function #1.53:
 ;
 ; Name:            
-; Defined at line: 1446
+; Defined at line: 1449
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5012,10 +5030,10 @@ code size: 9
  63 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.53:
+; Function #1.54:
 ;
 ; Name:            
-; Defined at line: 1473
+; Defined at line: 1476
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5042,10 +5060,10 @@ code size: 9
  19 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.54:
+; Function #1.55:
 ;
 ; Name:            
-; Defined at line: 1482
+; Defined at line: 1485
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5119,45 +5137,44 @@ code size: 9
  66 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.55:
+; Function #1.56:
 ;
 ; Name:            
-; Defined at line: 1502
+; Defined at line: 1505
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
 ; Max Stack Size:  7
 
-  1 [-]: TEST      R1 0         ; if not R1 then PC := 14
-  2 [-]: JMP       14           ; PC := 14
-  3 [-]: TEST      R2 1         ; if R2 then PC := 14
-  4 [-]: JMP       14           ; PC := 14
+  1 [-]: TEST      R1 0         ; if not R1 then PC := 13
+  2 [-]: JMP       13           ; PC := 13
+  3 [-]: TEST      R2 1         ; if R2 then PC := 13
+  4 [-]: JMP       13           ; PC := 13
   5 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
   6 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["ItemSelectionGrid"]
   7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  8 [-]: TEST      R3 1         ; if R3 then PC := 14
-  9 [-]: JMP       14           ; PC := 14
+  8 [-]: TEST      R3 1         ; if R3 then PC := 13
+  9 [-]: JMP       13           ; PC := 13
  10 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["ItemSelectionGrid"]
- 11 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0x4AE52860"]
- 12 [-]: MOVE      R5 R0        ; R5 := R0
- 13 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 14 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
- 15 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mChildMovie"]
- 16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 17 [-]: TEST      R3 1         ; if R3 then PC := 24
- 18 [-]: JMP       24           ; PC := 24
- 19 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mChildMovie"]
- 20 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x458F27A9"]
- 21 [-]: LOADK     R5 K5        ; R5 := "TransitionOut"
- 22 [-]: LOADK     R6 K6        ; R6 := ""
- 23 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 24 [-]: RETURN    R0 1         ; return 
+ 11 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0x53D10399"]
+ 12 [-]: CALL      R3 2 1       ; R3(R4)
+ 13 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 14 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mChildMovie"]
+ 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 16 [-]: TEST      R3 1         ; if R3 then PC := 23
+ 17 [-]: JMP       23           ; PC := 23
+ 18 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mChildMovie"]
+ 19 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x458F27A9"]
+ 20 [-]: LOADK     R5 K5        ; R5 := "TransitionOut"
+ 21 [-]: LOADK     R6 K6        ; R6 := ""
+ 22 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.56:
+; Function #1.57:
 ;
 ; Name:            
-; Defined at line: 1512
+; Defined at line: 1515
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5186,7 +5203,7 @@ code size: 9
  21 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["StoreItem"]
  22 [-]: SETTABLE  R3 K9 R4     ; R3["StoreItem"] := R4
  23 [-]: SETTABLE  R2 K8 R3     ; R2["ITEM"] := R3
- 24 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.56.1)
+ 24 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.57.1)
  25 [-]: MOVE      R0 R0        ; R0 := R0
  26 [-]: SETTABLE  R2 K10 R3    ; R2["CALLBACK"] := R3
  27 [-]: SETTABLE  R1 K6 R2     ; R1["marketDetailedViewParms"] := R2
@@ -5213,10 +5230,10 @@ code size: 9
  48 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.56.1:
+; Function #1.57.1:
 ;
 ; Name:            
-; Defined at line: 1518
+; Defined at line: 1521
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5230,10 +5247,10 @@ code size: 9
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.57:
+; Function #1.58:
 ;
 ; Name:            
-; Defined at line: 1525
+; Defined at line: 1528
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5279,11 +5296,75 @@ code size: 9
  38 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.58:
+; Function #1.59:
 ;
 ; Name:            
-; Defined at line: 1543
+; Defined at line: 1546
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["CustomizationList"]
+  3 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x9D2060CB"]
+  4 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.59.1)
+  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
+  6 [-]: RETURN    R0 1         ; return 
+
+
+; Function #1.59.1:
+;
+; Name:            
+; Defined at line: 1548
 ; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mButton"]
+  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x514145AB"]
+  3 [-]: CALL      R1 2 1       ; R1(R2)
+  4 [-]: RETURN    R0 1         ; return 
+
+
+; Function #1.60:
+;
+; Name:            
+; Defined at line: 1553
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["CustomizationList"]
+  3 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x9D2060CB"]
+  4 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.60.1)
+  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
+  6 [-]: RETURN    R0 1         ; return 
+
+
+; Function #1.60.1:
+;
+; Name:            
+; Defined at line: 1555
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mButton"]
+  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x7B5AE1E5"]
+  3 [-]: CALL      R1 2 1       ; R1(R2)
+  4 [-]: RETURN    R0 1         ; return 
+
+
+; Function #1.61:
+;
+; Name:            
+; Defined at line: 1560
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  10
@@ -5305,41 +5386,41 @@ code size: 9
  15 [-]: MOVE      R3 R1        ; R3 := R1
  16 [-]: NEWTABLE  R4 0 3       ; R4 := {}
  17 [-]: SETTABLE  R4 K7 K8     ; R4["Label"] := "/Lotus/Language/Menu/Cosmetics_ResetDefaults"
- 18 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.58.1)
- 19 [-]: MOVE      R0 R0        ; R0 := R0
+ 18 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 19 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["ResetDefaults"]
  20 [-]: SETTABLE  R4 K9 R5     ; R4["CallBack"] := R5
- 21 [-]: SETTABLE  R4 K10 K11   ; R4["CallOut"] := "MENU_GENERIC1"
+ 21 [-]: SETTABLE  R4 K11 K12   ; R4["CallOut"] := "MENU_GENERIC1"
  22 [-]: CALL      R2 3 1       ; R2(R3,R4)
  23 [-]: GETGLOBAL R2 K5        ; R2 := table
  24 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["0xE6450C9D"]
  25 [-]: MOVE      R3 R1        ; R3 := R1
  26 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 27 [-]: SETTABLE  R4 K7 K12    ; R4["Label"] := "/Lotus/Language/Menu/Cosmetics_RandomizeAll"
- 28 [-]: CLOSURE   R5 1         ; R5 := closure(Function #1.58.2)
- 29 [-]: MOVE      R0 R0        ; R0 := R0
+ 27 [-]: SETTABLE  R4 K7 K13    ; R4["Label"] := "/Lotus/Language/Menu/Cosmetics_RandomizeAll"
+ 28 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 29 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["RandomizeAll"]
  30 [-]: SETTABLE  R4 K9 R5     ; R4["CallBack"] := R5
- 31 [-]: SETTABLE  R4 K10 K13   ; R4["CallOut"] := "MENU_GENERIC2"
+ 31 [-]: SETTABLE  R4 K11 K15   ; R4["CallOut"] := "MENU_GENERIC2"
  32 [-]: CALL      R2 3 1       ; R2(R3,R4)
  33 [-]: JMP       60           ; PC := 60
  34 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mState"]
  35 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["State"]
- 36 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["ITEM_SELECTION"]
+ 36 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["ITEM_SELECTION"]
  37 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 60
  38 [-]: JMP       60           ; PC := 60
- 39 [-]: GETTABLE  R2 R0 K15    ; R2 := R0["ItemSelectionGrid"]
- 40 [-]: GETTABLE  R2 R2 K16    ; R2 := R2["mSelectedElement"]
+ 39 [-]: GETTABLE  R2 R0 K17    ; R2 := R0["ItemSelectionGrid"]
+ 40 [-]: GETTABLE  R2 R2 K18    ; R2 := R2["mSelectedElement"]
  41 [-]: EQ        1 R2 K0      ; if R2 == nil then PC := 60
  42 [-]: JMP       60           ; PC := 60
- 43 [-]: GETTABLE  R2 R0 K15    ; R2 := R0["ItemSelectionGrid"]
- 44 [-]: SELF      R2 R2 K17    ; R3 := R2; R2 := R2["0xE4A5302F"]
- 45 [-]: GETTABLE  R4 R0 K15    ; R4 := R0["ItemSelectionGrid"]
- 46 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["mSelectedElement"]
+ 43 [-]: GETTABLE  R2 R0 K17    ; R2 := R0["ItemSelectionGrid"]
+ 44 [-]: SELF      R2 R2 K19    ; R3 := R2; R2 := R2["0xE4A5302F"]
+ 45 [-]: GETTABLE  R4 R0 K17    ; R4 := R0["ItemSelectionGrid"]
+ 46 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["mSelectedElement"]
  47 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
  48 [-]: EQ        1 R2 K0      ; if R2 == nil then PC := 60
  49 [-]: JMP       60           ; PC := 60
- 50 [-]: LOADK     R3 K18       ; R3 := 1
+ 50 [-]: LOADK     R3 K20       ; R3 := 1
  51 [-]: LEN       R4 R2        ; R4 := # R2
- 52 [-]: LOADK     R5 K18       ; R5 := 1
+ 52 [-]: LOADK     R5 K20       ; R5 := 1
  53 [-]: FORPREP   R3 59        ; R3 -= R5; PC := 59
  54 [-]: GETGLOBAL R7 K5        ; R7 := table
  55 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["0xE6450C9D"]
@@ -5351,74 +5432,10 @@ code size: 9
  61 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.58.1:
+; Function #1.62:
 ;
 ; Name:            
-; Defined at line: 1551
-; #Upvalues:       1
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["CustomizationList"]
-  3 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x9D2060CB"]
-  4 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.58.1.1)
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.58.1.1:
-;
-; Name:            
-; Defined at line: 1553
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mButton"]
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x514145AB"]
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.58.2:
-;
-; Name:            
-; Defined at line: 1558
-; #Upvalues:       1
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["CustomizationList"]
-  3 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x9D2060CB"]
-  4 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.58.2.1)
-  5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.58.2.1:
-;
-; Name:            
-; Defined at line: 1560
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mButton"]
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x7B5AE1E5"]
-  3 [-]: CALL      R1 2 1       ; R1(R2)
-  4 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.59:
-;
-; Name:            
-; Defined at line: 1579
+; Defined at line: 1584
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5454,10 +5471,10 @@ code size: 9
  28 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.60:
+; Function #1.63:
 ;
 ; Name:            
-; Defined at line: 1595
+; Defined at line: 1600
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5465,7 +5482,7 @@ code size: 9
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["CustomizationList"]
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x9D2060CB"]
-  3 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.60.1)
+  3 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.63.1)
   4 [-]: MOVE      R0 R0        ; R0 := R0
   5 [-]: CALL      R1 3 1       ; R1(R2,R3)
   6 [-]: GETGLOBAL R1 K2        ; R1 := 0x400E7765
@@ -5484,7 +5501,7 @@ code size: 9
  19 [-]: TEST      R2 1         ; if R2 then PC := 25
  20 [-]: JMP       25           ; PC := 25
  21 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1["0x9D2060CB"]
- 22 [-]: CLOSURE   R4 1         ; R4 := closure(Function #1.60.2)
+ 22 [-]: CLOSURE   R4 1         ; R4 := closure(Function #1.63.2)
  23 [-]: MOVE      R0 R1        ; R0 := R1
  24 [-]: CALL      R2 3 1       ; R2(R3,R4)
  25 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["mState"]
@@ -5494,7 +5511,7 @@ code size: 9
  29 [-]: JMP       50           ; PC := 50
  30 [-]: GETTABLE  R2 R0 K9     ; R2 := R0["ItemSelectionGrid"]
  31 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2["0x51396186"]
- 32 [-]: CLOSURE   R4 2         ; R4 := closure(Function #1.60.3)
+ 32 [-]: CLOSURE   R4 2         ; R4 := closure(Function #1.63.3)
  33 [-]: MOVE      R0 R0        ; R0 := R0
  34 [-]: CALL      R2 3 1       ; R2(R3,R4)
  35 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
@@ -5515,10 +5532,10 @@ code size: 9
  50 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.60.1:
+; Function #1.63.1:
 ;
 ; Name:            
-; Defined at line: 1598
+; Defined at line: 1603
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5532,10 +5549,10 @@ code size: 9
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.60.2:
+; Function #1.63.2:
 ;
 ; Name:            
-; Defined at line: 1608
+; Defined at line: 1613
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5548,10 +5565,10 @@ code size: 9
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.60.3:
+; Function #1.63.3:
 ;
 ; Name:            
-; Defined at line: 1615
+; Defined at line: 1620
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5593,10 +5610,10 @@ code size: 9
  34 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.61:
+; Function #1.64:
 ;
 ; Name:            
-; Defined at line: 1628
+; Defined at line: 1633
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5632,10 +5649,10 @@ code size: 9
  28 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.62:
+; Function #1.65:
 ;
 ; Name:            
-; Defined at line: 1636
+; Defined at line: 1641
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5671,10 +5688,10 @@ code size: 9
  28 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.63:
+; Function #1.66:
 ;
 ; Name:            
-; Defined at line: 1644
+; Defined at line: 1649
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5738,10 +5755,10 @@ code size: 9
  56 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.64:
+; Function #1.67:
 ;
 ; Name:            
-; Defined at line: 1661
+; Defined at line: 1666
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5805,10 +5822,10 @@ code size: 9
  56 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.65:
+; Function #1.68:
 ;
 ; Name:            
-; Defined at line: 1678
+; Defined at line: 1683
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

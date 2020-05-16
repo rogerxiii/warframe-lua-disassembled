@@ -1,8 +1,8 @@
 code size: 7
 code size: 153
-code size: 95
+code size: 103
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Weapons\Sentients\Shedu\SheduArm.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Weapons\Sentients\Shedu\SheduArm.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -221,19 +221,19 @@ code size: 95
  26 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
  27 [-]: MOVE      R5 R1        ; R5 := R1
  28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: TEST      R4 1         ; if R4 then PC := 95
- 30 [-]: JMP       95           ; PC := 95
+ 29 [-]: TEST      R4 1         ; if R4 then PC := 103
+ 30 [-]: JMP       103          ; PC := 103
  31 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
  32 [-]: MOVE      R5 R3        ; R5 := R3
  33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 34 [-]: TEST      R4 1         ; if R4 then PC := 95
- 35 [-]: JMP       95           ; PC := 95
+ 34 [-]: TEST      R4 1         ; if R4 then PC := 103
+ 35 [-]: JMP       103          ; PC := 103
  36 [-]: SELF      R4 R1 K8     ; R5 := R1; R4 := R1["0xC1B008D9"]
  37 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  38 [-]: SELF      R5 R1 K9     ; R6 := R1; R5 := R1["0xFB2C1BA7"]
  39 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 40 [-]: LT        0 K10 R5     ; if 0 >= R5 then PC := 91
- 41 [-]: JMP       91           ; PC := 91
+ 40 [-]: LT        0 K10 R5     ; if 0 >= R5 then PC := 99
+ 41 [-]: JMP       99           ; PC := 99
  42 [-]: DIV       R4 R4 R5     ; R4 := R4 / R5
  43 [-]: GETGLOBAL R6 K11       ; R6 := minWeaponAtten
  44 [-]: LT        0 K10 R6     ; if 0 >= R6 then PC := 55
@@ -247,46 +247,54 @@ code size: 95
  52 [-]: MOVE      R9 R4        ; R9 := R4
  53 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
  54 [-]: MOVE      R4 R6        ; R4 := R6
- 55 [-]: TEST      R2 0         ; if not R2 then PC := 74
- 56 [-]: JMP       74           ; PC := 74
- 57 [-]: GETGLOBAL R6 K14       ; R6 := invertEmissiveOnDeco
- 58 [-]: TEST      R6 0         ; if not R6 then PC := 68
- 59 [-]: JMP       68           ; PC := 68
- 60 [-]: SELF      R6 R2 K15    ; R7 := R2; R6 := R2["0xD124E361"]
- 61 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
- 62 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
- 63 [-]: SUB       R9 K12 R4    ; R9 := 1 - R4
- 64 [-]: GETGLOBAL R10 K18      ; R10 := attenMultiplier
- 65 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 66 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 67 [-]: JMP       74           ; PC := 74
- 68 [-]: SELF      R6 R2 K15    ; R7 := R2; R6 := R2["0xD124E361"]
- 69 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
- 70 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
- 71 [-]: GETGLOBAL R9 K18       ; R9 := attenMultiplier
- 72 [-]: MUL       R9 R4 R9     ; R9 := R4 * R9
- 73 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 74 [-]: GETGLOBAL R6 K7        ; R6 := updateEmissivesOnMainAttachment
- 75 [-]: TEST      R6 0         ; if not R6 then PC := 91
- 76 [-]: JMP       91           ; PC := 91
- 77 [-]: GETGLOBAL R6 K19       ; R6 := invertEmissiveOnAttachment
- 78 [-]: TEST      R6 0         ; if not R6 then PC := 86
- 79 [-]: JMP       86           ; PC := 86
- 80 [-]: SELF      R6 R0 K15    ; R7 := R0; R6 := R0["0xD124E361"]
- 81 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
- 82 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
- 83 [-]: SUB       R9 K12 R4    ; R9 := 1 - R4
- 84 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 85 [-]: JMP       91           ; PC := 91
- 86 [-]: SELF      R6 R0 K15    ; R7 := R0; R6 := R0["0xD124E361"]
- 87 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
- 88 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
- 89 [-]: MOVE      R9 R4        ; R9 := R4
- 90 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 91 [-]: GETGLOBAL R6 K0        ; R6 := 0x201191EA
- 92 [-]: LOADK     R7 K10       ; R7 := 0
- 93 [-]: CALL      R6 2 1       ; R6(R7)
- 94 [-]: JMP       26           ; PC := 26
- 95 [-]: RETURN    R0 1         ; return 
+ 55 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
+ 56 [-]: MOVE      R7 R2        ; R7 := R2
+ 57 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 58 [-]: TEST      R6 1         ; if R6 then PC := 77
+ 59 [-]: JMP       77           ; PC := 77
+ 60 [-]: GETGLOBAL R6 K14       ; R6 := invertEmissiveOnDeco
+ 61 [-]: TEST      R6 0         ; if not R6 then PC := 71
+ 62 [-]: JMP       71           ; PC := 71
+ 63 [-]: SELF      R6 R2 K15    ; R7 := R2; R6 := R2["0xD124E361"]
+ 64 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
+ 65 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
+ 66 [-]: SUB       R9 K12 R4    ; R9 := 1 - R4
+ 67 [-]: GETGLOBAL R10 K18      ; R10 := attenMultiplier
+ 68 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
+ 69 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 70 [-]: JMP       77           ; PC := 77
+ 71 [-]: SELF      R6 R2 K15    ; R7 := R2; R6 := R2["0xD124E361"]
+ 72 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
+ 73 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
+ 74 [-]: GETGLOBAL R9 K18       ; R9 := attenMultiplier
+ 75 [-]: MUL       R9 R4 R9     ; R9 := R4 * R9
+ 76 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 77 [-]: GETGLOBAL R6 K7        ; R6 := updateEmissivesOnMainAttachment
+ 78 [-]: TEST      R6 0         ; if not R6 then PC := 99
+ 79 [-]: JMP       99           ; PC := 99
+ 80 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
+ 81 [-]: MOVE      R7 R0        ; R7 := R0
+ 82 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 83 [-]: TEST      R6 1         ; if R6 then PC := 99
+ 84 [-]: JMP       99           ; PC := 99
+ 85 [-]: GETGLOBAL R6 K19       ; R6 := invertEmissiveOnAttachment
+ 86 [-]: TEST      R6 0         ; if not R6 then PC := 94
+ 87 [-]: JMP       94           ; PC := 94
+ 88 [-]: SELF      R6 R0 K15    ; R7 := R0; R6 := R0["0xD124E361"]
+ 89 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
+ 90 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
+ 91 [-]: SUB       R9 K12 R4    ; R9 := 1 - R4
+ 92 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 93 [-]: JMP       99           ; PC := 99
+ 94 [-]: SELF      R6 R0 K15    ; R7 := R0; R6 := R0["0xD124E361"]
+ 95 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
+ 96 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["EMISSIVE_MAP_ATTEN"]
+ 97 [-]: MOVE      R9 R4        ; R9 := R4
+ 98 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 99 [-]: GETGLOBAL R6 K0        ; R6 := 0x201191EA
+100 [-]: LOADK     R7 K10       ; R7 := 0
+101 [-]: CALL      R6 2 1       ; R6(R7)
+102 [-]: JMP       26           ; PC := 26
+103 [-]: RETURN    R0 1         ; return 
 
 

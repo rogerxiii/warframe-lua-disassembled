@@ -1,8 +1,8 @@
 code size: 7
-code size: 84
+code size: 94
 code size: 79
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\DoorAnim.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\DoorAnim.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -61,64 +61,74 @@ code size: 79
  30 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  31 [-]: GETGLOBAL R4 K5        ; R4 := Npc
  32 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["NpcDoorHint_DS_OPEN"]
- 33 [-]: EQ        0 R2 R4      ; if R2 ~= R4 then PC := 60
- 34 [-]: JMP       60           ; PC := 60
+ 33 [-]: EQ        0 R2 R4      ; if R2 ~= R4 then PC := 65
+ 34 [-]: JMP       65           ; PC := 65
  35 [-]: GETGLOBAL R4 K5        ; R4 := Npc
  36 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["NpcDoorHint_DS_BLOCKED"]
- 37 [-]: EQ        1 R1 R4      ; if R1 == R4 then PC := 60
- 38 [-]: JMP       60           ; PC := 60
+ 37 [-]: EQ        1 R1 R4      ; if R1 == R4 then PC := 65
+ 38 [-]: JMP       65           ; PC := 65
  39 [-]: GETGLOBAL R4 K11       ; R4 := delayOpen
  40 [-]: LT        0 K12 R4     ; if 0.0099999997764826 >= R4 then PC := 45
  41 [-]: JMP       45           ; PC := 45
  42 [-]: GETGLOBAL R4 K13       ; R4 := 0x201191EA
  43 [-]: GETGLOBAL R5 K11       ; R5 := delayOpen
  44 [-]: CALL      R4 2 1       ; R4(R5)
- 45 [-]: GETGLOBAL R4 K2        ; R4 := doorInstance
- 46 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4["0x8D5886B7"]
- 47 [-]: LOADK     R6 K15       ; R6 := "OpenOccluder"
- 48 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 49 [-]: GETGLOBAL R4 K2        ; R4 := doorInstance
- 50 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4["0x7A97EAF5"]
- 51 [-]: GETGLOBAL R6 K17       ; R6 := openAnim
- 52 [-]: MOVE      R7 R1        ; R7 := R1
- 53 [-]: MOVE      R8 R0        ; R8 := R0
- 54 [-]: LOADK     R9 K18       ; R9 := 0
- 55 [-]: GETGLOBAL R10 K19      ; R10 := 0xEC274B1A
- 56 [-]: CALL      R10 1 2      ; R10 := R10()
- 57 [-]: GETGLOBAL R11 K20      ; R11 := openAnimRateOverride
- 58 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
- 59 [-]: JMP       84           ; PC := 84
- 60 [-]: GETGLOBAL R4 K5        ; R4 := Npc
- 61 [-]: GETTABLE  R4 R4 K21    ; R4 := R4["NpcDoorHint_DS_CLOSED"]
- 62 [-]: EQ        0 R2 R4      ; if R2 ~= R4 then PC := 84
- 63 [-]: JMP       84           ; PC := 84
- 64 [-]: GETGLOBAL R4 K22       ; R4 := delayClose
- 65 [-]: LT        0 K12 R4     ; if 0.0099999997764826 >= R4 then PC := 70
- 66 [-]: JMP       70           ; PC := 70
- 67 [-]: GETGLOBAL R4 K13       ; R4 := 0x201191EA
- 68 [-]: GETGLOBAL R5 K22       ; R5 := delayClose
- 69 [-]: CALL      R4 2 1       ; R4(R5)
- 70 [-]: GETGLOBAL R4 K2        ; R4 := doorInstance
- 71 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4["0x7A97EAF5"]
- 72 [-]: GETGLOBAL R6 K23       ; R6 := closeAnim
- 73 [-]: MOVE      R7 R1        ; R7 := R1
- 74 [-]: MOVE      R8 R0        ; R8 := R0
- 75 [-]: LOADK     R9 K18       ; R9 := 0
- 76 [-]: GETGLOBAL R10 K19      ; R10 := 0xEC274B1A
- 77 [-]: CALL      R10 1 2      ; R10 := R10()
- 78 [-]: GETGLOBAL R11 K24      ; R11 := closeAnimRateOverride
- 79 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
+ 45 [-]: GETGLOBAL R4 K1        ; R4 := 0x400E7765
+ 46 [-]: GETGLOBAL R5 K2        ; R5 := doorInstance
+ 47 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 48 [-]: TEST      R4 1         ; if R4 then PC := 94
+ 49 [-]: JMP       94           ; PC := 94
+ 50 [-]: GETGLOBAL R4 K2        ; R4 := doorInstance
+ 51 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4["0x8D5886B7"]
+ 52 [-]: LOADK     R6 K15       ; R6 := "OpenOccluder"
+ 53 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 54 [-]: GETGLOBAL R4 K2        ; R4 := doorInstance
+ 55 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4["0x7A97EAF5"]
+ 56 [-]: GETGLOBAL R6 K17       ; R6 := openAnim
+ 57 [-]: MOVE      R7 R1        ; R7 := R1
+ 58 [-]: MOVE      R8 R0        ; R8 := R0
+ 59 [-]: LOADK     R9 K18       ; R9 := 0
+ 60 [-]: GETGLOBAL R10 K19      ; R10 := 0xEC274B1A
+ 61 [-]: CALL      R10 1 2      ; R10 := R10()
+ 62 [-]: GETGLOBAL R11 K20      ; R11 := openAnimRateOverride
+ 63 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
+ 64 [-]: JMP       94           ; PC := 94
+ 65 [-]: GETGLOBAL R4 K5        ; R4 := Npc
+ 66 [-]: GETTABLE  R4 R4 K21    ; R4 := R4["NpcDoorHint_DS_CLOSED"]
+ 67 [-]: EQ        0 R2 R4      ; if R2 ~= R4 then PC := 94
+ 68 [-]: JMP       94           ; PC := 94
+ 69 [-]: GETGLOBAL R4 K22       ; R4 := delayClose
+ 70 [-]: LT        0 K12 R4     ; if 0.0099999997764826 >= R4 then PC := 75
+ 71 [-]: JMP       75           ; PC := 75
+ 72 [-]: GETGLOBAL R4 K13       ; R4 := 0x201191EA
+ 73 [-]: GETGLOBAL R5 K22       ; R5 := delayClose
+ 74 [-]: CALL      R4 2 1       ; R4(R5)
+ 75 [-]: GETGLOBAL R4 K1        ; R4 := 0x400E7765
+ 76 [-]: GETGLOBAL R5 K2        ; R5 := doorInstance
+ 77 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 78 [-]: TEST      R4 1         ; if R4 then PC := 94
+ 79 [-]: JMP       94           ; PC := 94
  80 [-]: GETGLOBAL R4 K2        ; R4 := doorInstance
- 81 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4["0x8D5886B7"]
- 82 [-]: LOADK     R6 K25       ; R6 := "CloseOccluder"
- 83 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 84 [-]: RETURN    R0 1         ; return 
+ 81 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4["0x7A97EAF5"]
+ 82 [-]: GETGLOBAL R6 K23       ; R6 := closeAnim
+ 83 [-]: MOVE      R7 R1        ; R7 := R1
+ 84 [-]: MOVE      R8 R0        ; R8 := R0
+ 85 [-]: LOADK     R9 K18       ; R9 := 0
+ 86 [-]: GETGLOBAL R10 K19      ; R10 := 0xEC274B1A
+ 87 [-]: CALL      R10 1 2      ; R10 := R10()
+ 88 [-]: GETGLOBAL R11 K24      ; R11 := closeAnimRateOverride
+ 89 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
+ 90 [-]: GETGLOBAL R4 K2        ; R4 := doorInstance
+ 91 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4["0x8D5886B7"]
+ 92 [-]: LOADK     R6 K25       ; R6 := "CloseOccluder"
+ 93 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 94 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 45
+; Defined at line: 49
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

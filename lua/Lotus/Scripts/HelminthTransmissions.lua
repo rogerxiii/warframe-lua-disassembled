@@ -1,10 +1,10 @@
 code size: 43
 code size: 77
 code size: 54
-code size: 109
+code size: 103
 code size: 56
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\HelminthTransmissions.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\HelminthTransmissions.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -218,7 +218,7 @@ code size: 56
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  11
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["LastInfestedRoomTransmission"]
@@ -256,85 +256,79 @@ code size: 56
  34 [-]: SELF      R6 R1 K14    ; R7 := R1; R6 := R1["0x8B598ED4"]
  35 [-]: GETUPVAL  R8 U1        ; R8 := U1
  36 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 37 [-]: TEST      R6 0         ; if not R6 then PC := 63
- 38 [-]: JMP       63           ; PC := 63
+ 37 [-]: TEST      R6 0         ; if not R6 then PC := 57
+ 38 [-]: JMP       57           ; PC := 57
  39 [-]: TEST      R5 1         ; if R5 then PC := 42
  40 [-]: JMP       42           ; PC := 42
  41 [-]: RETURN    R0 1         ; return 
- 42 [-]: GETGLOBAL R6 K6        ; R6 := gPlayerProfileMgr
- 43 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6["0x21EF7B1A"]
- 44 [-]: LOADK     R8 K8        ; R8 := 0
- 45 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 46 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6["0x654F1092"]
- 47 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 48 [-]: SELF      R7 R6 K15    ; R8 := R6; R7 := R6["0x21E2EEF2"]
- 49 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 50 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["mAlignment"]
- 51 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 52 [-]: LT        0 R8 R7      ; if R8 >= R7 then PC := 56
- 53 [-]: JMP       56           ; PC := 56
- 54 [-]: GETGLOBAL R4 K17       ; R4 := operatorSunTransmissions
- 55 [-]: JMP       69           ; PC := 69
- 56 [-]: GETUPVAL  R8 U3        ; R8 := U3
- 57 [-]: LT        0 R7 R8      ; if R7 >= R8 then PC := 61
- 58 [-]: JMP       61           ; PC := 61
- 59 [-]: GETGLOBAL R4 K18       ; R4 := operatorMoonTransmissions
- 60 [-]: JMP       69           ; PC := 69
- 61 [-]: GETGLOBAL R4 K19       ; R4 := operatorNeutralTransmissions
- 62 [-]: JMP       69           ; PC := 69
- 63 [-]: SELF      R8 R1 K14    ; R9 := R1; R8 := R1["0x8B598ED4"]
- 64 [-]: GETGLOBAL R10 K20      ; R10 := gTennoAvatarType
- 65 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 66 [-]: TEST      R8 1         ; if R8 then PC := 69
- 67 [-]: JMP       69           ; PC := 69
- 68 [-]: RETURN    R0 1         ; return 
- 69 [-]: LEN       R8 R4        ; R8 := # R4
- 70 [-]: EQ        0 R8 K8      ; if R8 ~= 0 then PC := 73
- 71 [-]: JMP       73           ; PC := 73
- 72 [-]: RETURN    R0 1         ; return 
- 73 [-]: GETGLOBAL R8 K11       ; R8 := dormantTransmissions
- 74 [-]: EQ        0 R4 R8      ; if R4 ~= R8 then PC := 97
- 75 [-]: JMP       97           ; PC := 97
- 76 [-]: GETGLOBAL R8 K0        ; R8 := _T
- 77 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["LastInfestedRoomTransmission"]
- 78 [-]: EQ        1 R8 K2      ; if R8 == nil then PC := 85
- 79 [-]: JMP       85           ; PC := 85
- 80 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 81 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["0x36414212"]
- 82 [-]: GETTABLE  R9 R4 K22    ; R9 := R4[2]
- 83 [-]: CALL      R8 2 1       ; R8(R9)
- 84 [-]: JMP       105          ; PC := 105
- 85 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 86 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["0x36414212"]
- 87 [-]: GETTABLE  R9 R4 K23    ; R9 := R4[1]
- 88 [-]: CALL      R8 2 1       ; R8(R9)
- 89 [-]: MOVE      R0 R5        ; R0 := R5
- 90 [-]: SELF      R8 R0 K24    ; R9 := R0; R8 := R0["0xB26452A2"]
- 91 [-]: GETGLOBAL R10 K25      ; R10 := 0xEC274B1A
- 92 [-]: LOADK     R11 K26      ; R11 := "OrdisIdleTransmissions"
- 93 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 94 [-]: MOVE      R11 R0       ; R11 := R0
- 95 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 96 [-]: JMP       105          ; PC := 105
- 97 [-]: GETUPVAL  R8 U4        ; R8 := U4
- 98 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["0x36414212"]
- 99 [-]: GETGLOBAL R9 K27       ; R9 := 0x7FD4B57D
-100 [-]: LOADK     R10 K23      ; R10 := 1
-101 [-]: LEN       R11 R4       ; R11 := # R4
-102 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-103 [-]: GETTABLE  R9 R4 R9     ; R9 := R4[R9]
-104 [-]: CALL      R8 2 1       ; R8(R9)
-105 [-]: GETGLOBAL R8 K0        ; R8 := _T
-106 [-]: GETGLOBAL R9 K3        ; R9 := 0x58E5C2DB
-107 [-]: CALL      R9 1 2       ; R9 := R9()
-108 [-]: SETTABLE  R8 K1 R9     ; R8["LastInfestedRoomTransmission"] := R9
-109 [-]: RETURN    R0 1         ; return 
+ 42 [-]: SELF      R6 R3 K15    ; R7 := R3; R6 := R3["0x21E2EEF2"]
+ 43 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 44 [-]: GETTABLE  R6 R6 K16    ; R6 := R6["mAlignment"]
+ 45 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 46 [-]: LT        0 R7 R6      ; if R7 >= R6 then PC := 50
+ 47 [-]: JMP       50           ; PC := 50
+ 48 [-]: GETGLOBAL R4 K17       ; R4 := operatorSunTransmissions
+ 49 [-]: JMP       63           ; PC := 63
+ 50 [-]: GETUPVAL  R7 U3        ; R7 := U3
+ 51 [-]: LT        0 R6 R7      ; if R6 >= R7 then PC := 55
+ 52 [-]: JMP       55           ; PC := 55
+ 53 [-]: GETGLOBAL R4 K18       ; R4 := operatorMoonTransmissions
+ 54 [-]: JMP       63           ; PC := 63
+ 55 [-]: GETGLOBAL R4 K19       ; R4 := operatorNeutralTransmissions
+ 56 [-]: JMP       63           ; PC := 63
+ 57 [-]: SELF      R7 R1 K14    ; R8 := R1; R7 := R1["0x8B598ED4"]
+ 58 [-]: GETGLOBAL R9 K20       ; R9 := gTennoAvatarType
+ 59 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 60 [-]: TEST      R7 1         ; if R7 then PC := 63
+ 61 [-]: JMP       63           ; PC := 63
+ 62 [-]: RETURN    R0 1         ; return 
+ 63 [-]: LEN       R7 R4        ; R7 := # R4
+ 64 [-]: EQ        0 R7 K8      ; if R7 ~= 0 then PC := 67
+ 65 [-]: JMP       67           ; PC := 67
+ 66 [-]: RETURN    R0 1         ; return 
+ 67 [-]: GETGLOBAL R7 K11       ; R7 := dormantTransmissions
+ 68 [-]: EQ        0 R4 R7      ; if R4 ~= R7 then PC := 91
+ 69 [-]: JMP       91           ; PC := 91
+ 70 [-]: GETGLOBAL R7 K0        ; R7 := _T
+ 71 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["LastInfestedRoomTransmission"]
+ 72 [-]: EQ        1 R7 K2      ; if R7 == nil then PC := 79
+ 73 [-]: JMP       79           ; PC := 79
+ 74 [-]: GETUPVAL  R7 U4        ; R7 := U4
+ 75 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["0x36414212"]
+ 76 [-]: GETTABLE  R8 R4 K22    ; R8 := R4[2]
+ 77 [-]: CALL      R7 2 1       ; R7(R8)
+ 78 [-]: JMP       99           ; PC := 99
+ 79 [-]: GETUPVAL  R7 U4        ; R7 := U4
+ 80 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["0x36414212"]
+ 81 [-]: GETTABLE  R8 R4 K23    ; R8 := R4[1]
+ 82 [-]: CALL      R7 2 1       ; R7(R8)
+ 83 [-]: MOVE      R0 R5        ; R0 := R5
+ 84 [-]: SELF      R7 R0 K24    ; R8 := R0; R7 := R0["0xB26452A2"]
+ 85 [-]: GETGLOBAL R9 K25       ; R9 := 0xEC274B1A
+ 86 [-]: LOADK     R10 K26      ; R10 := "OrdisIdleTransmissions"
+ 87 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 88 [-]: MOVE      R10 R0       ; R10 := R0
+ 89 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 90 [-]: JMP       99           ; PC := 99
+ 91 [-]: GETUPVAL  R7 U4        ; R7 := U4
+ 92 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["0x36414212"]
+ 93 [-]: GETGLOBAL R8 K27       ; R8 := 0x7FD4B57D
+ 94 [-]: LOADK     R9 K23       ; R9 := 1
+ 95 [-]: LEN       R10 R4       ; R10 := # R4
+ 96 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 97 [-]: GETTABLE  R8 R4 R8     ; R8 := R4[R8]
+ 98 [-]: CALL      R7 2 1       ; R7(R8)
+ 99 [-]: GETGLOBAL R7 K0        ; R7 := _T
+100 [-]: GETGLOBAL R8 K3        ; R8 := 0x58E5C2DB
+101 [-]: CALL      R8 1 2       ; R8 := R8()
+102 [-]: SETTABLE  R7 K1 R8     ; R7["LastInfestedRoomTransmission"] := R8
+103 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 143
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

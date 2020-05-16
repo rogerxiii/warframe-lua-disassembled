@@ -20,7 +20,7 @@ code size: 21
 code size: 12
 code size: 32
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\PVP\PVPTeamVoidTear.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\PVP\PVPTeamVoidTear.luac 
 
 ; Name:            
 ; Defined at line: 0

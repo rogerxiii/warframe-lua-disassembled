@@ -1,8 +1,10 @@
-code size: 115
-code size: 105
+code size: 122
+code size: 54
+code size: 25
+code size: 50
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\FortressUtilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\FortressUtilities.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -119,13 +121,20 @@ code size: 3
 106 [-]: MOVE      R0 R1        ; R0 := R1
 107 [-]: MOVE      R0 R2        ; R0 := R2
 108 [-]: MOVE      R0 R0        ; R0 := R0
-109 [-]: SETGLOBAL R3 K35       ; GetFortressPosition := R3
-110 [-]: SETGLOBAL R3 K36       ; 0xC0A4B428 := R3
-111 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
+109 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
+110 [-]: MOVE      R0 R1        ; R0 := R1
+111 [-]: MOVE      R0 R3        ; R0 := R3
 112 [-]: MOVE      R0 R2        ; R0 := R2
-113 [-]: SETGLOBAL R3 K37       ; GetSplinePoints := R3
-114 [-]: SETGLOBAL R3 K38       ; 0xB6EF57A6 := R3
-115 [-]: RETURN    R0 1         ; return 
+113 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
+114 [-]: MOVE      R0 R4        ; R0 := R4
+115 [-]: MOVE      R0 R1        ; R0 := R1
+116 [-]: SETGLOBAL R5 K35       ; GetFortressPosition := R5
+117 [-]: SETGLOBAL R5 K36       ; 0xC0A4B428 := R5
+118 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
+119 [-]: MOVE      R0 R2        ; R0 := R2
+120 [-]: SETGLOBAL R5 K37       ; GetSplinePoints := R5
+121 [-]: SETGLOBAL R5 K38       ; 0xB6EF57A6 := R5
+122 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -135,7 +144,108 @@ code size: 3
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  10
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: NEWTABLE  R1 0 0       ; R1 := {}
+  3 [-]: SETTABLE  R0 K0 R1     ; R0["Splines"] := R1
+  4 [-]: LOADK     R0 K1        ; R0 := 1
+  5 [-]: GETUPVAL  R1 U1        ; R1 := U1
+  6 [-]: LEN       R1 R1        ; R1 := # R1
+  7 [-]: SUB       R1 R1 K2     ; R1 := R1 - 3
+  8 [-]: LOADK     R2 K1        ; R2 := 1
+  9 [-]: FORPREP   R0 45        ; R0 -= R2; PC := 45
+ 10 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 11 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["Splines"]
+ 12 [-]: GETGLOBAL R5 K3        ; R5 := gRegion
+ 13 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5["0xBDD34CC6"]
+ 14 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 15 [-]: GETGLOBAL R8 K5        ; R8 := ZERO_VECTOR
+ 16 [-]: GETGLOBAL R9 K6        ; R9 := ZERO_ROTATION
+ 17 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
+ 18 [-]: SETTABLE  R4 R3 R5     ; R4[R3] := R5
+ 19 [-]: NEWTABLE  R4 4 0       ; R4 := {}
+ 20 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 21 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
+ 22 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 23 [-]: ADD       R7 R3 K1     ; R7 := R3 + 1
+ 24 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
+ 25 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 26 [-]: ADD       R8 R3 K7     ; R8 := R3 + 2
+ 27 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
+ 28 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 29 [-]: ADD       R9 R3 K2     ; R9 := R3 + 3
+ 30 [-]: GETTABLE  R8 R8 R9     ; R8 := R8[R9]
+ 31 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
+ 32 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 33 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["Splines"]
+ 34 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
+ 35 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x5BD03F6B"]
+ 36 [-]: MOVE      R7 R4        ; R7 := R4
+ 37 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 38 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 39 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["Splines"]
+ 40 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
+ 41 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5["0x7DBDDA0B"]
+ 42 [-]: MOVE      R7 R0        ; R7 := R0
+ 43 [-]: MOVE      R8 R1        ; R8 := R1
+ 44 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 45 [-]: FORLOOP   R0 10        ; R0 += R2; if R0 <= R1 then begin PC := 10; R3 := R0 end
+ 46 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 47 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 48 [-]: GETTABLE  R6 R6 K0     ; R6 := R6["Splines"]
+ 49 [-]: LEN       R6 R6        ; R6 := # R6
+ 50 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 51 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["LoopTime"]
+ 52 [-]: DIV       R6 R6 R7     ; R6 := R6 / R7
+ 53 [-]: SETTABLE  R5 K10 R6    ; R5["Velocity"] := R6
+ 54 [-]: RETURN    R0 1         ; return 
+
+
+; Function #2:
+;
+; Name:            
+; Defined at line: 37
+; #Upvalues:       3
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["Splines"]
+  3 [-]: EQ        0 R0 K1      ; if R0 ~= nil then PC := 8
+  4 [-]: JMP       8            ; PC := 8
+  5 [-]: GETUPVAL  R0 U1        ; R0 := U1
+  6 [-]: CALL      R0 1 1       ; R0()
+  7 [-]: RETURN    R0 1         ; return 
+  8 [-]: LOADK     R0 K2        ; R0 := 1
+  9 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 10 [-]: LEN       R1 R1        ; R1 := # R1
+ 11 [-]: SUB       R1 R1 K3     ; R1 := R1 - 3
+ 12 [-]: LOADK     R2 K2        ; R2 := 1
+ 13 [-]: FORPREP   R0 24        ; R0 -= R2; PC := 24
+ 14 [-]: GETGLOBAL R4 K4        ; R4 := 0x400E7765
+ 15 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 16 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["Splines"]
+ 17 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
+ 18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 19 [-]: TEST      R4 0         ; if not R4 then PC := 24
+ 20 [-]: JMP       24           ; PC := 24
+ 21 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 22 [-]: CALL      R4 1 1       ; R4()
+ 23 [-]: RETURN    R0 1         ; return 
+ 24 [-]: FORLOOP   R0 14        ; R0 += R2; if R0 <= R1 then begin PC := 14; R3 := R0 end
+ 25 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3:
+;
+; Name:            
+; Defined at line: 51
+; #Upvalues:       2
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
   2 [-]: GETGLOBAL R1 K1        ; R1 := gGameRules
@@ -145,109 +255,54 @@ code size: 3
   6 [-]: LOADNIL   R0 R0        ; R0 := nil
   7 [-]: RETURN    R0 2         ; return R0
   8 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  9 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["Splines"]
- 10 [-]: EQ        1 R0 K3      ; if R0 == nil then PC := 19
- 11 [-]: JMP       19           ; PC := 19
- 12 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
- 13 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 14 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["Splines"]
- 15 [-]: GETTABLE  R1 R1 K4     ; R1 := R1[1]
- 16 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 17 [-]: TEST      R0 0         ; if not R0 then PC := 72
- 18 [-]: JMP       72           ; PC := 72
- 19 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 20 [-]: NEWTABLE  R1 0 0       ; R1 := {}
- 21 [-]: SETTABLE  R0 K2 R1     ; R0["Splines"] := R1
- 22 [-]: LOADK     R0 K4        ; R0 := 1
- 23 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 24 [-]: LEN       R1 R1        ; R1 := # R1
- 25 [-]: SUB       R1 R1 K5     ; R1 := R1 - 3
- 26 [-]: LOADK     R2 K4        ; R2 := 1
- 27 [-]: FORPREP   R0 63        ; R0 -= R2; PC := 63
- 28 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 29 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["Splines"]
- 30 [-]: GETGLOBAL R5 K6        ; R5 := gRegion
- 31 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5["0xBDD34CC6"]
- 32 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 33 [-]: GETGLOBAL R8 K8        ; R8 := ZERO_VECTOR
- 34 [-]: GETGLOBAL R9 K9        ; R9 := ZERO_ROTATION
- 35 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
- 36 [-]: SETTABLE  R4 R3 R5     ; R4[R3] := R5
- 37 [-]: NEWTABLE  R4 4 0       ; R4 := {}
- 38 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 39 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 40 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 41 [-]: ADD       R7 R3 K4     ; R7 := R3 + 1
- 42 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
- 43 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 44 [-]: ADD       R8 R3 K10    ; R8 := R3 + 2
- 45 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
- 46 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 47 [-]: ADD       R9 R3 K5     ; R9 := R3 + 3
- 48 [-]: GETTABLE  R8 R8 R9     ; R8 := R8[R9]
- 49 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
- 50 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 51 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["Splines"]
- 52 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 53 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0x5BD03F6B"]
- 54 [-]: MOVE      R7 R4        ; R7 := R4
- 55 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 56 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 57 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["Splines"]
- 58 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 59 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0x7DBDDA0B"]
- 60 [-]: MOVE      R7 R0        ; R7 := R0
- 61 [-]: MOVE      R8 R1        ; R8 := R1
- 62 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 63 [-]: FORLOOP   R0 28        ; R0 += R2; if R0 <= R1 then begin PC := 28; R3 := R0 end
- 64 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 65 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 66 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["Splines"]
- 67 [-]: LEN       R6 R6        ; R6 := # R6
- 68 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 69 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["LoopTime"]
- 70 [-]: DIV       R6 R6 R7     ; R6 := R6 / R7
- 71 [-]: SETTABLE  R5 K13 R6    ; R5["Velocity"] := R6
- 72 [-]: GETGLOBAL R5 K1        ; R5 := gGameRules
- 73 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5["0x31B2814"]
- 74 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 75 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 76 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["Velocity"]
- 77 [-]: DIV       R6 K4 R6     ; R6 := 1 / R6
- 78 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 79 [-]: GETTABLE  R7 R7 K2     ; R7 := R7["Splines"]
- 80 [-]: LEN       R7 R7        ; R7 := # R7
- 81 [-]: MUL       R7 R6 R7     ; R7 := R6 * R7
- 82 [-]: MOD       R7 R5 R7     ; R7 := R5 % R7
- 83 [-]: GETGLOBAL R8 K16       ; R8 := math
- 84 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["0xF7005A7B"]
- 85 [-]: DIV       R9 R7 R6     ; R9 := R7 / R6
- 86 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 87 [-]: ADD       R8 K4 R8     ; R8 := 1 + R8
- 88 [-]: MOD       R9 R7 R6     ; R9 := R7 % R6
- 89 [-]: DIV       R9 R9 R6     ; R9 := R9 / R6
- 90 [-]: GETGLOBAL R10 K18      ; R10 := 0x6374FD98
- 91 [-]: MOVE      R11 R8       ; R11 := R8
- 92 [-]: LOADK     R12 K4       ; R12 := 1
- 93 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 94 [-]: GETTABLE  R13 R13 K2   ; R13 := R13["Splines"]
- 95 [-]: LEN       R13 R13      ; R13 := # R13
- 96 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 97 [-]: MOVE      R8 R10       ; R8 := R10
- 98 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 99 [-]: GETTABLE  R10 R10 K2   ; R10 := R10["Splines"]
-100 [-]: GETTABLE  R10 R10 R8   ; R10 := R10[R8]
-101 [-]: SELF      R10 R10 K19  ; R11 := R10; R10 := R10["0xAC71FD5A"]
-102 [-]: MOVE      R12 R9       ; R12 := R9
-103 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-104 [-]: RETURN    R10 2        ; return R10
-105 [-]: RETURN    R0 1         ; return 
+  9 [-]: CALL      R0 1 1       ; R0()
+ 10 [-]: GETGLOBAL R0 K1        ; R0 := gGameRules
+ 11 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x31B2814"]
+ 12 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 13 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 14 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["Velocity"]
+ 15 [-]: DIV       R1 K4 R1     ; R1 := 1 / R1
+ 16 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 17 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["Splines"]
+ 18 [-]: LEN       R2 R2        ; R2 := # R2
+ 19 [-]: MUL       R2 R1 R2     ; R2 := R1 * R2
+ 20 [-]: MOD       R2 R0 R2     ; R2 := R0 % R2
+ 21 [-]: GETGLOBAL R3 K6        ; R3 := math
+ 22 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["0xF7005A7B"]
+ 23 [-]: DIV       R4 R2 R1     ; R4 := R2 / R1
+ 24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 25 [-]: ADD       R3 K4 R3     ; R3 := 1 + R3
+ 26 [-]: MOD       R4 R2 R1     ; R4 := R2 % R1
+ 27 [-]: DIV       R4 R4 R1     ; R4 := R4 / R1
+ 28 [-]: GETGLOBAL R5 K8        ; R5 := 0x6374FD98
+ 29 [-]: MOVE      R6 R3        ; R6 := R3
+ 30 [-]: LOADK     R7 K4        ; R7 := 1
+ 31 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 32 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["Splines"]
+ 33 [-]: LEN       R8 R8        ; R8 := # R8
+ 34 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
+ 35 [-]: MOVE      R3 R5        ; R3 := R5
+ 36 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 37 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["Splines"]
+ 38 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
+ 39 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 40 [-]: MOVE      R7 R5        ; R7 := R5
+ 41 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 42 [-]: TEST      R6 1         ; if R6 then PC := 48
+ 43 [-]: JMP       48           ; PC := 48
+ 44 [-]: SELF      R6 R5 K9     ; R7 := R5; R6 := R5["0xAC71FD5A"]
+ 45 [-]: MOVE      R8 R4        ; R8 := R4
+ 46 [-]: TAILCALL  R6 3 0       ; R6,... := R6(R7,R8)
+ 47 [-]: RETURN    R6 0         ; return R6,...
+ 48 [-]: GETGLOBAL R6 K10       ; R6 := ZERO_VECTOR
+ 49 [-]: RETURN    R6 2         ; return R6
+ 50 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 52
+; Defined at line: 73
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -5,7 +5,7 @@ code size: 151
 code size: 114
 code size: 81
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Restoratives\AssassinBait.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Restoratives\AssassinBait.luac 
 
 ; Name:            
 ; Defined at line: 0

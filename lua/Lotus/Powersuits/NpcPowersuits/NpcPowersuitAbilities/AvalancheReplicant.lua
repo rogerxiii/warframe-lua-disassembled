@@ -1,4 +1,4 @@
-code size: 160
+code size: 159
 code size: 15
 code size: 89
 code size: 100
@@ -7,7 +7,6 @@ code size: 19
 code size: 18
 code size: 6
 code size: 19
-code size: 13
 code size: 55
 code size: 13
 code size: 871
@@ -15,14 +14,14 @@ code size: 37
 code size: 76
 code size: 134
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\AvalancheReplicant.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\AvalancheReplicant.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  25
+; Max Stack Size:  24
 
   1 [-]: LOADK     R0 K0        ; R0 := 20
   2 [-]: LOADK     R1 K1        ; R1 := 1000
@@ -136,54 +135,53 @@ code size: 134
 110 [-]: SETGLOBAL R23 K31      ; EvaluateAbility := R23
 111 [-]: SETGLOBAL R23 K32      ; 0x87647B87 := R23
 112 [-]: CLOSURE   R23 8        ; R23 := closure(Function #9)
-113 [-]: CLOSURE   R24 9        ; R24 := closure(Function #10)
-114 [-]: MOVE      R0 R18       ; R0 := R18
-115 [-]: SETGLOBAL R24 K33      ; NpcEvaluateAbility := R24
-116 [-]: SETGLOBAL R24 K34      ; 0xECF1EA57 := R24
-117 [-]: CLOSURE   R24 10       ; R24 := closure(Function #11)
-118 [-]: MOVE      R0 R13       ; R0 := R13
-119 [-]: SETGLOBAL R24 K35      ; InitializeAbility := R24
-120 [-]: SETGLOBAL R24 K36      ; 0x3BDC280E := R24
-121 [-]: CLOSURE   R24 11       ; R24 := closure(Function #12)
-122 [-]: MOVE      R0 R19       ; R0 := R19
-123 [-]: MOVE      R0 R20       ; R0 := R20
-124 [-]: MOVE      R0 R3        ; R0 := R3
-125 [-]: MOVE      R0 R4        ; R0 := R4
-126 [-]: MOVE      R0 R5        ; R0 := R5
-127 [-]: MOVE      R0 R6        ; R0 := R6
-128 [-]: MOVE      R0 R21       ; R0 := R21
-129 [-]: MOVE      R0 R16       ; R0 := R16
-130 [-]: MOVE      R0 R12       ; R0 := R12
-131 [-]: MOVE      R0 R7        ; R0 := R7
-132 [-]: MOVE      R0 R15       ; R0 := R15
-133 [-]: MOVE      R0 R0        ; R0 := R0
-134 [-]: MOVE      R0 R18       ; R0 := R18
-135 [-]: MOVE      R0 R14       ; R0 := R14
-136 [-]: MOVE      R0 R9        ; R0 := R9
-137 [-]: MOVE      R0 R10       ; R0 := R10
-138 [-]: MOVE      R0 R11       ; R0 := R11
-139 [-]: MOVE      R0 R22       ; R0 := R22
-140 [-]: MOVE      R0 R17       ; R0 := R17
-141 [-]: MOVE      R0 R8        ; R0 := R8
-142 [-]: MOVE      R0 R13       ; R0 := R13
-143 [-]: SETGLOBAL R24 K37      ; ActivateAbility := R24
-144 [-]: SETGLOBAL R24 K38      ; 0xCC0B19E0 := R24
-145 [-]: CLOSURE   R24 12       ; R24 := closure(Function #13)
-146 [-]: SETGLOBAL R24 K39      ; SpikeDecoScalar := R24
-147 [-]: SETGLOBAL R24 K40      ; 0x73486BF2 := R24
-148 [-]: CLOSURE   R24 13       ; R24 := closure(Function #14)
-149 [-]: MOVE      R0 R17       ; R0 := R17
-150 [-]: MOVE      R0 R8        ; R0 := R8
-151 [-]: MOVE      R0 R4        ; R0 := R4
-152 [-]: MOVE      R0 R6        ; R0 := R6
-153 [-]: MOVE      R0 R5        ; R0 := R5
-154 [-]: SETGLOBAL R24 K41      ; FrozenLoop := R24
-155 [-]: SETGLOBAL R24 K42      ; 0x43AE1ECB := R24
-156 [-]: CLOSURE   R24 14       ; R24 := closure(Function #15)
-157 [-]: MOVE      R0 R8        ; R0 := R8
-158 [-]: SETGLOBAL R24 K43      ; AugmentLoop := R24
-159 [-]: SETGLOBAL R24 K44      ; 0xD5D3C963 := R24
-160 [-]: RETURN    R0 1         ; return 
+113 [-]: MOVE      R0 R18       ; R0 := R18
+114 [-]: SETGLOBAL R23 K33      ; NpcEvaluateAbility := R23
+115 [-]: SETGLOBAL R23 K34      ; 0xECF1EA57 := R23
+116 [-]: CLOSURE   R23 9        ; R23 := closure(Function #10)
+117 [-]: MOVE      R0 R13       ; R0 := R13
+118 [-]: SETGLOBAL R23 K35      ; InitializeAbility := R23
+119 [-]: SETGLOBAL R23 K36      ; 0x3BDC280E := R23
+120 [-]: CLOSURE   R23 10       ; R23 := closure(Function #11)
+121 [-]: MOVE      R0 R19       ; R0 := R19
+122 [-]: MOVE      R0 R20       ; R0 := R20
+123 [-]: MOVE      R0 R3        ; R0 := R3
+124 [-]: MOVE      R0 R4        ; R0 := R4
+125 [-]: MOVE      R0 R5        ; R0 := R5
+126 [-]: MOVE      R0 R6        ; R0 := R6
+127 [-]: MOVE      R0 R21       ; R0 := R21
+128 [-]: MOVE      R0 R16       ; R0 := R16
+129 [-]: MOVE      R0 R12       ; R0 := R12
+130 [-]: MOVE      R0 R7        ; R0 := R7
+131 [-]: MOVE      R0 R15       ; R0 := R15
+132 [-]: MOVE      R0 R0        ; R0 := R0
+133 [-]: MOVE      R0 R18       ; R0 := R18
+134 [-]: MOVE      R0 R14       ; R0 := R14
+135 [-]: MOVE      R0 R9        ; R0 := R9
+136 [-]: MOVE      R0 R10       ; R0 := R10
+137 [-]: MOVE      R0 R11       ; R0 := R11
+138 [-]: MOVE      R0 R22       ; R0 := R22
+139 [-]: MOVE      R0 R17       ; R0 := R17
+140 [-]: MOVE      R0 R8        ; R0 := R8
+141 [-]: MOVE      R0 R13       ; R0 := R13
+142 [-]: SETGLOBAL R23 K37      ; ActivateAbility := R23
+143 [-]: SETGLOBAL R23 K38      ; 0xCC0B19E0 := R23
+144 [-]: CLOSURE   R23 11       ; R23 := closure(Function #12)
+145 [-]: SETGLOBAL R23 K39      ; SpikeDecoScalar := R23
+146 [-]: SETGLOBAL R23 K40      ; 0x73486BF2 := R23
+147 [-]: CLOSURE   R23 12       ; R23 := closure(Function #13)
+148 [-]: MOVE      R0 R17       ; R0 := R17
+149 [-]: MOVE      R0 R8        ; R0 := R8
+150 [-]: MOVE      R0 R4        ; R0 := R4
+151 [-]: MOVE      R0 R6        ; R0 := R6
+152 [-]: MOVE      R0 R5        ; R0 := R5
+153 [-]: SETGLOBAL R23 K41      ; FrozenLoop := R23
+154 [-]: SETGLOBAL R23 K42      ; 0x43AE1ECB := R23
+155 [-]: CLOSURE   R23 13       ; R23 := closure(Function #14)
+156 [-]: MOVE      R0 R8        ; R0 := R8
+157 [-]: SETGLOBAL R23 K43      ; AugmentLoop := R23
+158 [-]: SETGLOBAL R23 K44      ; 0xD5D3C963 := R23
+159 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -589,30 +587,6 @@ code size: 134
 ;
 ; Name:            
 ; Defined at line: 177
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: LOADK     R1 K1        ; R1 := "FrostNPC_"
-  7 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0["0xDBEF0FB6"]
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: CONCAT    R1 R1 R2     ; R1 := R1 .. R2
- 10 [-]: RETURN    R1 2         ; return R1
- 11 [-]: LOADNIL   R1 R1        ; R1 := nil
- 12 [-]: RETURN    R1 2         ; return R1
- 13 [-]: RETURN    R0 1         ; return 
-
-
-; Function #10:
-;
-; Name:            
-; Defined at line: 184
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -675,10 +649,10 @@ code size: 134
  55 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 216
+; Defined at line: 209
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -699,10 +673,10 @@ code size: 134
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 222
+; Defined at line: 215
 ; #Upvalues:       21
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1581,10 +1555,10 @@ code size: 134
 871 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 501
+; Defined at line: 494
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1629,10 +1603,10 @@ code size: 134
  37 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 518
+; Defined at line: 511
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1716,10 +1690,10 @@ code size: 134
  76 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 540
+; Defined at line: 533
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

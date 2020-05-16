@@ -1,17 +1,16 @@
-code size: 45
+code size: 44
 code size: 122
 code size: 99
-code size: 65
 code size: 61
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\FusionTreasureRenderingSetup.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\FusionTreasureRenderingSetup.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  15
+; Max Stack Size:  14
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
@@ -49,15 +48,14 @@ code size: 61
  34 [-]: MOVE      R0 R10       ; R0 := R10
  35 [-]: MOVE      R0 R5        ; R0 := R5
  36 [-]: CLOSURE   R13 2        ; R13 := closure(Function #3)
- 37 [-]: CLOSURE   R14 3        ; R14 := closure(Function #4)
- 38 [-]: MOVE      R0 R10       ; R0 := R10
- 39 [-]: MOVE      R0 R1        ; R0 := R1
- 40 [-]: MOVE      R0 R11       ; R0 := R11
- 41 [-]: MOVE      R0 R5        ; R0 := R5
- 42 [-]: MOVE      R0 R12       ; R0 := R12
- 43 [-]: SETGLOBAL R14 K12      ; FusionTreasureSetup := R14
- 44 [-]: SETGLOBAL R14 K13      ; 0xB9FAA6D0 := R14
- 45 [-]: RETURN    R0 1         ; return 
+ 37 [-]: MOVE      R0 R10       ; R0 := R10
+ 38 [-]: MOVE      R0 R1        ; R0 := R1
+ 39 [-]: MOVE      R0 R11       ; R0 := R11
+ 40 [-]: MOVE      R0 R5        ; R0 := R5
+ 41 [-]: MOVE      R0 R12       ; R0 := R12
+ 42 [-]: SETGLOBAL R13 K12      ; FusionTreasureSetup := R13
+ 43 [-]: SETGLOBAL R13 K13      ; 0xB9FAA6D0 := R13
+ 44 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -307,82 +305,6 @@ code size: 61
 ;
 ; Name:            
 ; Defined at line: 141
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  17
-
-  1 [-]: EQ        1 R0 K0      ; if R0 == "" then PC := 63
-  2 [-]: JMP       63           ; PC := 63
-  3 [-]: GETGLOBAL R1 K1        ; R1 := 0x400E7765
-  4 [-]: GETGLOBAL R2 K2        ; R2 := gPlayerProfileMgr
-  5 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x21EF7B1A"]
-  6 [-]: LOADK     R4 K4        ; R4 := 0
-  7 [-]: CALL      R2 3 0       ; R2,... := R2(R3,R4)
-  8 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
-  9 [-]: TEST      R1 1         ; if R1 then PC := 63
- 10 [-]: JMP       63           ; PC := 63
- 11 [-]: GETGLOBAL R1 K2        ; R1 := gPlayerProfileMgr
- 12 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0x21EF7B1A"]
- 13 [-]: LOADK     R3 K4        ; R3 := 0
- 14 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 15 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1["0x654F1092"]
- 16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 17 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1["0x6F2E05FD"]
- 18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 19 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2["0x48FD9992"]
- 20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 21 [-]: LOADK     R4 K8        ; R4 := 1
- 22 [-]: LEN       R5 R3        ; R5 := # R3
- 23 [-]: LOADK     R6 K8        ; R6 := 1
- 24 [-]: FORPREP   R4 32        ; R4 -= R6; PC := 32
- 25 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 26 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["mItemId"]
- 27 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["mId"]
- 28 [-]: EQ        0 R8 R0      ; if R8 ~= R0 then PC := 32
- 29 [-]: JMP       32           ; PC := 32
- 30 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 31 [-]: RETURN    R8 2         ; return R8
- 32 [-]: FORLOOP   R4 25        ; R4 += R6; if R4 <= R5 then begin PC := 25; R7 := R4 end
- 33 [-]: SELF      R8 R1 K11    ; R9 := R1; R8 := R1["0xC2341A51"]
- 34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 35 [-]: GETTABLE  R3 R8 K12    ; R3 := R8["mFusionTreasures"]
- 36 [-]: LOADK     R8 K8        ; R8 := 1
- 37 [-]: LEN       R9 R3        ; R9 := # R3
- 38 [-]: LOADK     R10 K8       ; R10 := 1
- 39 [-]: FORPREP   R8 47        ; R8 -= R10; PC := 47
- 40 [-]: GETTABLE  R12 R3 R11   ; R12 := R3[R11]
- 41 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["mItemId"]
- 42 [-]: GETTABLE  R12 R12 K10  ; R12 := R12["mId"]
- 43 [-]: EQ        0 R12 R0     ; if R12 ~= R0 then PC := 47
- 44 [-]: JMP       47           ; PC := 47
- 45 [-]: GETTABLE  R12 R3 R11   ; R12 := R3[R11]
- 46 [-]: RETURN    R12 2        ; return R12
- 47 [-]: FORLOOP   R8 40        ; R8 += R10; if R8 <= R9 then begin PC := 40; R11 := R8 end
- 48 [-]: SELF      R12 R1 K13   ; R13 := R1; R12 := R1["0x90E11E28"]
- 49 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 50 [-]: GETTABLE  R3 R12 K12   ; R3 := R12["mFusionTreasures"]
- 51 [-]: LOADK     R12 K8       ; R12 := 1
- 52 [-]: LEN       R13 R3       ; R13 := # R3
- 53 [-]: LOADK     R14 K8       ; R14 := 1
- 54 [-]: FORPREP   R12 62       ; R12 -= R14; PC := 62
- 55 [-]: GETTABLE  R16 R3 R15   ; R16 := R3[R15]
- 56 [-]: GETTABLE  R16 R16 K9   ; R16 := R16["mItemId"]
- 57 [-]: GETTABLE  R16 R16 K10  ; R16 := R16["mId"]
- 58 [-]: EQ        0 R16 R0     ; if R16 ~= R0 then PC := 62
- 59 [-]: JMP       62           ; PC := 62
- 60 [-]: GETTABLE  R16 R3 R15   ; R16 := R3[R15]
- 61 [-]: RETURN    R16 2        ; return R16
- 62 [-]: FORLOOP   R12 55       ; R12 += R14; if R12 <= R13 then begin PC := 55; R15 := R12 end
- 63 [-]: LOADNIL   R16 R16      ; R16 := nil
- 64 [-]: RETURN    R16 2        ; return R16
- 65 [-]: RETURN    R0 1         ; return 
-
-
-; Function #4:
-;
-; Name:            
-; Defined at line: 172
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0

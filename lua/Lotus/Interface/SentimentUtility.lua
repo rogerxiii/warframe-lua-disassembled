@@ -1,73 +1,70 @@
-code size: 52
+code size: 49
 code size: 125
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\SentimentUtility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\SentimentUtility.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  13
+; Max Stack Size:  12
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x38E3A30F
   2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
   3 [-]: GETGLOBAL R2 K1        ; R2 := package
   4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["seeall"]
   5 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := 0x329BDC44
-  7 [-]: LOADK     R1 K4        ; R1 := "EE.Interface.Utilities"
-  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: NEWTABLE  R1 0 3       ; R1 := {}
- 10 [-]: SETTABLE  R1 K5 K6     ; R1["_ja"] := "0x1"
- 11 [-]: SETTABLE  R1 K7 K6     ; R1["_zh"] := "0x1"
- 12 [-]: SETTABLE  R1 K8 K6     ; R1["_tc"] := "0x1"
- 13 [-]: NEWTABLE  R2 7 0       ; R2 := {}
- 14 [-]: GETGLOBAL R3 K9        ; R3 := 0xE6DC43B0
- 15 [-]: LOADK     R4 K10       ; R4 := "/Lotus/Language/Sentiment/Neutrall"
- 16 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 17 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 18 [-]: GETGLOBAL R4 K9        ; R4 := 0xE6DC43B0
- 19 [-]: LOADK     R5 K11       ; R5 := "/Lotus/Language/Sentiment/Happy"
- 20 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 21 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 22 [-]: GETGLOBAL R5 K9        ; R5 := 0xE6DC43B0
- 23 [-]: LOADK     R6 K12       ; R6 := "/Lotus/Language/Sentiment/Angry"
- 24 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 25 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 26 [-]: GETGLOBAL R6 K9        ; R6 := 0xE6DC43B0
- 27 [-]: LOADK     R7 K13       ; R7 := "/Lotus/Language/Sentiment/Sad"
- 28 [-]: NEWTABLE  R8 0 0       ; R8 := {}
- 29 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 30 [-]: GETGLOBAL R7 K9        ; R7 := 0xE6DC43B0
- 31 [-]: LOADK     R8 K14       ; R8 := "/Lotus/Language/Sentiment/Contempt"
- 32 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 33 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 34 [-]: GETGLOBAL R8 K9        ; R8 := 0xE6DC43B0
- 35 [-]: LOADK     R9 K15       ; R9 := "/Lotus/Language/Sentiment/Disgust"
- 36 [-]: NEWTABLE  R10 0 0      ; R10 := {}
- 37 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 38 [-]: GETGLOBAL R9 K9        ; R9 := 0xE6DC43B0
- 39 [-]: LOADK     R10 K16      ; R10 := "/Lotus/Language/Sentiment/Afraid"
- 40 [-]: NEWTABLE  R11 0 0      ; R11 := {}
- 41 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 42 [-]: GETGLOBAL R10 K9       ; R10 := 0xE6DC43B0
- 43 [-]: LOADK     R11 K17      ; R11 := "/Lotus/Language/Sentiment/Surprise"
- 44 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 45 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
- 46 [-]: SETLIST   R2 0 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 0
- 47 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
- 48 [-]: MOVE      R0 R1        ; R0 := R1
- 49 [-]: MOVE      R0 R2        ; R0 := R2
- 50 [-]: SETGLOBAL R3 K18       ; CalcMood := R3
- 51 [-]: SETGLOBAL R3 K19       ; 0x8A0FB92E := R3
- 52 [-]: RETURN    R0 1         ; return 
+  6 [-]: NEWTABLE  R0 0 3       ; R0 := {}
+  7 [-]: SETTABLE  R0 K3 K4     ; R0["_ja"] := "0x1"
+  8 [-]: SETTABLE  R0 K5 K4     ; R0["_zh"] := "0x1"
+  9 [-]: SETTABLE  R0 K6 K4     ; R0["_tc"] := "0x1"
+ 10 [-]: NEWTABLE  R1 7 0       ; R1 := {}
+ 11 [-]: GETGLOBAL R2 K7        ; R2 := 0xE6DC43B0
+ 12 [-]: LOADK     R3 K8        ; R3 := "/Lotus/Language/Sentiment/Neutrall"
+ 13 [-]: NEWTABLE  R4 0 0       ; R4 := {}
+ 14 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 15 [-]: GETGLOBAL R3 K7        ; R3 := 0xE6DC43B0
+ 16 [-]: LOADK     R4 K9        ; R4 := "/Lotus/Language/Sentiment/Happy"
+ 17 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 18 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 19 [-]: GETGLOBAL R4 K7        ; R4 := 0xE6DC43B0
+ 20 [-]: LOADK     R5 K10       ; R5 := "/Lotus/Language/Sentiment/Angry"
+ 21 [-]: NEWTABLE  R6 0 0       ; R6 := {}
+ 22 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 23 [-]: GETGLOBAL R5 K7        ; R5 := 0xE6DC43B0
+ 24 [-]: LOADK     R6 K11       ; R6 := "/Lotus/Language/Sentiment/Sad"
+ 25 [-]: NEWTABLE  R7 0 0       ; R7 := {}
+ 26 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 27 [-]: GETGLOBAL R6 K7        ; R6 := 0xE6DC43B0
+ 28 [-]: LOADK     R7 K12       ; R7 := "/Lotus/Language/Sentiment/Contempt"
+ 29 [-]: NEWTABLE  R8 0 0       ; R8 := {}
+ 30 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 31 [-]: GETGLOBAL R7 K7        ; R7 := 0xE6DC43B0
+ 32 [-]: LOADK     R8 K13       ; R8 := "/Lotus/Language/Sentiment/Disgust"
+ 33 [-]: NEWTABLE  R9 0 0       ; R9 := {}
+ 34 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 35 [-]: GETGLOBAL R8 K7        ; R8 := 0xE6DC43B0
+ 36 [-]: LOADK     R9 K14       ; R9 := "/Lotus/Language/Sentiment/Afraid"
+ 37 [-]: NEWTABLE  R10 0 0      ; R10 := {}
+ 38 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 39 [-]: GETGLOBAL R9 K7        ; R9 := 0xE6DC43B0
+ 40 [-]: LOADK     R10 K15      ; R10 := "/Lotus/Language/Sentiment/Surprise"
+ 41 [-]: NEWTABLE  R11 0 0      ; R11 := {}
+ 42 [-]: CALL      R9 3 0       ; R9,... := R9(R10,R11)
+ 43 [-]: SETLIST   R1 0 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 0
+ 44 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
+ 45 [-]: MOVE      R0 R0        ; R0 := R0
+ 46 [-]: MOVE      R0 R1        ; R0 := R1
+ 47 [-]: SETGLOBAL R2 K16       ; CalcMood := R2
+ 48 [-]: SETGLOBAL R2 K17       ; 0x8A0FB92E := R2
+ 49 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 18
+; Defined at line: 17
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

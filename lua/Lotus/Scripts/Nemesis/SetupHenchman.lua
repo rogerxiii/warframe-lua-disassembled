@@ -1,8 +1,8 @@
 code size: 20
-code size: 199
+code size: 210
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Nemesis\SetupHenchman.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Nemesis\SetupHenchman.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -202,8 +202,8 @@ code size: 8
 158 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
 159 [-]: MOVE      R19 R11      ; R19 := R11
 160 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-161 [-]: TEST      R18 1        ; if R18 then PC := 188
-162 [-]: JMP       188          ; PC := 188
+161 [-]: TEST      R18 1        ; if R18 then PC := 199
+162 [-]: JMP       199          ; PC := 199
 163 [-]: SELF      R18 R1 K57   ; R19 := R1; R18 := R1["0x8DB5D01F"]
 164 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 165 [-]: SELF      R19 R18 K58  ; R20 := R18; R19 := R18["0x6978AC59"]
@@ -211,36 +211,47 @@ code size: 8
 167 [-]: GETGLOBAL R20 K2       ; R20 := 0x400E7765
 168 [-]: MOVE      R21 R19      ; R21 := R19
 169 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-170 [-]: TEST      R20 0        ; if not R20 then PC := 179
-171 [-]: JMP       179          ; PC := 179
+170 [-]: TEST      R20 0        ; if not R20 then PC := 190
+171 [-]: JMP       190          ; PC := 190
 172 [-]: GETGLOBAL R20 K4       ; R20 := 0x201191EA
 173 [-]: LOADK     R21 K5       ; R21 := 0
 174 [-]: CALL      R20 2 1      ; R20(R21)
-175 [-]: SELF      R20 R18 K58  ; R21 := R18; R20 := R18["0x6978AC59"]
-176 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-177 [-]: MOVE      R19 R20      ; R19 := R20
-178 [-]: JMP       167          ; PC := 167
-179 [-]: SELF      R20 R19 K59  ; R21 := R19; R20 := R19["0xE9563099"]
-180 [-]: MOVE      R22 R11      ; R22 := R11
-181 [-]: CALL      R20 3 1      ; R20(R21,R22)
-182 [-]: SELF      R20 R19 K60  ; R21 := R19; R20 := R19["0x33BE3167"]
-183 [-]: LOADK     R22 K21      ; R22 := 1
-184 [-]: SELF      R23 R19 K61  ; R24 := R19; R23 := R19["0x6AA8517E"]
-185 [-]: MOVE      R25 R11      ; R25 := R11
-186 [-]: CALL      R23 3 0      ; R23,... := R23(R24,R25)
-187 [-]: CALL      R20 0 1      ; R20(R21,...)
-188 [-]: SELF      R20 R1 K62   ; R21 := R1; R20 := R1["0x5CAF59C5"]
-189 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-190 [-]: SELF      R21 R1 K63   ; R22 := R1; R21 := R1["0x3DB9408E"]
-191 [-]: MOVE      R23 R1       ; R23 := R1
-192 [-]: CALL      R21 3 1      ; R21(R22,R23)
-193 [-]: GETGLOBAL R21 K4       ; R21 := 0x201191EA
-194 [-]: LOADK     R22 K5       ; R22 := 0
-195 [-]: CALL      R21 2 1      ; R21(R22)
-196 [-]: SELF      R21 R1 K63   ; R22 := R1; R21 := R1["0x3DB9408E"]
-197 [-]: MOVE      R23 R20      ; R23 := R20
-198 [-]: CALL      R21 3 1      ; R21(R22,R23)
-199 [-]: RETURN    R0 1         ; return 
+175 [-]: GETGLOBAL R20 K2       ; R20 := 0x400E7765
+176 [-]: MOVE      R21 R1       ; R21 := R1
+177 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+178 [-]: TEST      R20 0        ; if not R20 then PC := 181
+179 [-]: JMP       181          ; PC := 181
+180 [-]: RETURN    R0 1         ; return 
+181 [-]: GETGLOBAL R20 K2       ; R20 := 0x400E7765
+182 [-]: MOVE      R21 R18      ; R21 := R18
+183 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+184 [-]: TEST      R20 1        ; if R20 then PC := 167
+185 [-]: JMP       167          ; PC := 167
+186 [-]: SELF      R20 R18 K58  ; R21 := R18; R20 := R18["0x6978AC59"]
+187 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+188 [-]: MOVE      R19 R20      ; R19 := R20
+189 [-]: JMP       167          ; PC := 167
+190 [-]: SELF      R20 R19 K59  ; R21 := R19; R20 := R19["0xE9563099"]
+191 [-]: MOVE      R22 R11      ; R22 := R11
+192 [-]: CALL      R20 3 1      ; R20(R21,R22)
+193 [-]: SELF      R20 R19 K60  ; R21 := R19; R20 := R19["0x33BE3167"]
+194 [-]: LOADK     R22 K21      ; R22 := 1
+195 [-]: SELF      R23 R19 K61  ; R24 := R19; R23 := R19["0x6AA8517E"]
+196 [-]: MOVE      R25 R11      ; R25 := R11
+197 [-]: CALL      R23 3 0      ; R23,... := R23(R24,R25)
+198 [-]: CALL      R20 0 1      ; R20(R21,...)
+199 [-]: SELF      R20 R1 K62   ; R21 := R1; R20 := R1["0x5CAF59C5"]
+200 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+201 [-]: SELF      R21 R1 K63   ; R22 := R1; R21 := R1["0x3DB9408E"]
+202 [-]: MOVE      R23 R1       ; R23 := R1
+203 [-]: CALL      R21 3 1      ; R21(R22,R23)
+204 [-]: GETGLOBAL R21 K4       ; R21 := 0x201191EA
+205 [-]: LOADK     R22 K5       ; R22 := 0
+206 [-]: CALL      R21 2 1      ; R21(R22)
+207 [-]: SELF      R21 R1 K63   ; R22 := R1; R21 := R1["0x3DB9408E"]
+208 [-]: MOVE      R23 R20      ; R23 := R20
+209 [-]: CALL      R21 3 1      ; R21(R22,R23)
+210 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:

@@ -12,7 +12,7 @@ code size: 30
 code size: 138
 code size: 134
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Friendly\Pets\MoaPets\MoaPetComponents\MoaShockwave.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Friendly\Pets\MoaPets\MoaPetComponents\MoaShockwave.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -600,17 +600,17 @@ code size: 134
  16 [-]: JMP       31           ; PC := 31
  17 [-]: TEST      R5 0         ; if not R5 then PC := 31
  18 [-]: JMP       31           ; PC := 31
- 19 [-]: GETGLOBAL R6 K4        ; R6 := 0x201191EA
- 20 [-]: LOADK     R7 K5        ; R7 := 0
- 21 [-]: CALL      R6 2 1       ; R6(R7)
- 22 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 23 [-]: MOVE      R7 R2        ; R7 := R2
- 24 [-]: SELF      R8 R4 K6     ; R9 := R4; R8 := R4["0x6DA72501"]
- 25 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 26 [-]: SELF      R9 R1 K6     ; R10 := R1; R9 := R1["0x6DA72501"]
- 27 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 28 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 29 [-]: MOVE      R5 R6        ; R5 := R6
+ 19 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 20 [-]: MOVE      R7 R2        ; R7 := R2
+ 21 [-]: SELF      R8 R4 K4     ; R9 := R4; R8 := R4["0x6DA72501"]
+ 22 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 23 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x6DA72501"]
+ 24 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 25 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+ 26 [-]: MOVE      R5 R6        ; R5 := R6
+ 27 [-]: GETGLOBAL R6 K5        ; R6 := 0x201191EA
+ 28 [-]: LOADK     R7 K6        ; R7 := 0
+ 29 [-]: CALL      R6 2 1       ; R6(R7)
  30 [-]: JMP       12           ; PC := 12
  31 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
  32 [-]: MOVE      R7 R4        ; R7 := R4
@@ -661,8 +661,8 @@ code size: 134
  77 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  78 [-]: TEST      R7 1         ; if R7 then PC := 84
  79 [-]: JMP       84           ; PC := 84
- 80 [-]: GETGLOBAL R7 K4        ; R7 := 0x201191EA
- 81 [-]: LOADK     R8 K5        ; R8 := 0
+ 80 [-]: GETGLOBAL R7 K5        ; R7 := 0x201191EA
+ 81 [-]: LOADK     R8 K6        ; R8 := 0
  82 [-]: CALL      R7 2 1       ; R7(R8)
  83 [-]: JMP       74           ; PC := 74
  84 [-]: GETGLOBAL R7 K20       ; R7 := gRegion
@@ -678,9 +678,9 @@ code size: 134
  94 [-]: GETGLOBAL R9 K25       ; R9 := maxDistanceForShockDamage
  95 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  96 [-]: GETUPVAL  R8 U5        ; R8 := U5
- 97 [-]: LOADK     R9 K5        ; R9 := 0
+ 97 [-]: LOADK     R9 K6        ; R9 := 0
  98 [-]: GETGLOBAL R10 K25      ; R10 := maxDistanceForShockDamage
- 99 [-]: LOADK     R11 K5       ; R11 := 0
+ 99 [-]: LOADK     R11 K6       ; R11 := 0
 100 [-]: GETGLOBAL R12 K26      ; R12 := maxHealthPercentForShockDamage
 101 [-]: MOVE      R13 R7       ; R13 := R7
 102 [-]: CALL      R8 6 2       ; R8 := R8(R9,R10,R11,R12,R13)

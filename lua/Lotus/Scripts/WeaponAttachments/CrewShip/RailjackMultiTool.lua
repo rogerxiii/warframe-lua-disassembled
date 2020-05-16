@@ -29,7 +29,7 @@ code size: 8
 code size: 59
 code size: 51
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\CrewShip\RailjackMultiTool.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\CrewShip\RailjackMultiTool.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -234,24 +234,24 @@ code size: 51
   3 [-]: JMP       26           ; PC := 26
   4 [-]: NEWTABLE  R0 0 5       ; R0 := {}
   5 [-]: NEWTABLE  R1 0 2       ; R1 := {}
-  6 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 10
-  7 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 600
+  6 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 25
+  7 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 2400
   8 [-]: SETTABLE  R0 K1 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/Fire"] := R1
   9 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 10 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 10
- 11 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 600
+ 10 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 25
+ 11 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 2400
  12 [-]: SETTABLE  R0 K6 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/ElectricityMalfunction"] := R1
  13 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 14 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 10
- 15 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 600
+ 14 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 25
+ 15 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 2400
  16 [-]: SETTABLE  R0 K7 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/IceMalfunction"] := R1
  17 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 18 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 10
- 19 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 600
+ 18 [-]: SETTABLE  R1 K2 K3     ; R1["cost"] := 25
+ 19 [-]: SETTABLE  R1 K4 K5     ; R1["reward"] := 2400
  20 [-]: SETTABLE  R0 K8 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/WallBreach"] := R1
  21 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 22 [-]: SETTABLE  R1 K2 K10    ; R1["cost"] := 30
- 23 [-]: SETTABLE  R1 K4 K11    ; R1["reward"] := 900
+ 22 [-]: SETTABLE  R1 K2 K10    ; R1["cost"] := 100
+ 23 [-]: SETTABLE  R1 K4 K11    ; R1["reward"] := 4000
  24 [-]: SETTABLE  R0 K9 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/MegaBreach"] := R1
  25 [-]: MOVE      R0 R0        ; R0 := R0
  26 [-]: GETUPVAL  R0 U0        ; R0 := U0

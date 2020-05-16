@@ -2,7 +2,7 @@ code size: 15
 code size: 3
 code size: 69
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\PVP\KillConfirmed.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\PVP\KillConfirmed.luac 
 
 ; Name:            
 ; Defined at line: 0

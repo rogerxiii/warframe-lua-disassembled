@@ -53,10 +53,10 @@ code size: 9
 code size: 50
 code size: 17
 code size: 469
-code size: 46
+code size: 40
 code size: 6
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\ThemedCustomizationButton.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\ThemedCustomizationButton.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -3656,60 +3656,54 @@ code size: 6
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  14
 
   1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0["0xD43991E8"]
   2 [-]: MOVE      R5 R1        ; R5 := R1
   3 [-]: CALL      R3 3 1       ; R3(R4,R5)
   4 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mMovie"]
   5 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mClipName"]
-  6 [-]: GETTABLE  R5 R0 K3     ; R5 := R0["mBigButton"]
-  7 [-]: SELF      R6 R3 K4     ; R7 := R3; R6 := R3["0x880196A7"]
-  8 [-]: MOVE      R8 R4        ; R8 := R4
-  9 [-]: LOADK     R9 K5        ; R9 := "Label"
- 10 [-]: LOADK     R10 K6       ; R10 := "letterSpacing"
- 11 [-]: LOADK     R11 K7       ; R11 := 0
- 12 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
- 13 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["mLabel"]
- 14 [-]: TEST      R2 1         ; if R2 then PC := 17
- 15 [-]: JMP       17           ; PC := 17
- 16 [-]: LOADK     R2 K9        ; R2 := ""
- 17 [-]: GETTABLE  R6 R0 K10    ; R6 := R0["mDesc"]
- 18 [-]: EQ        0 R6 R2      ; if R6 ~= R2 then PC := 21
- 19 [-]: JMP       21           ; PC := 21
- 20 [-]: MOVE      R6 R0        ; R6 := R0
- 21 [-]: MOVE      R6 R1        ; R6 := R1
- 22 [-]: SETTABLE  R0 K10 R2    ; R0["mDesc"] := R2
- 23 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 24 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["0xCC58B07A"]
- 25 [-]: MOVE      R8 R3        ; R8 := R3
- 26 [-]: MOVE      R9 R4        ; R9 := R4
- 27 [-]: LOADK     R10 K12      ; R10 := ".Desc"
- 28 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
- 29 [-]: LOADK     R10 K13      ; R10 := "..."
- 30 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 31 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0xD6A79FE9"]
- 32 [-]: MOVE      R9 R4        ; R9 := R4
- 33 [-]: LOADK     R10 K12      ; R10 := ".Desc"
- 34 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
- 35 [-]: LOADK     R10 K15      ; R10 := "text"
- 36 [-]: GETGLOBAL R11 K16      ; R11 := string
- 37 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["0x639C642A"]
- 38 [-]: SELF      R12 R3 K18   ; R13 := R3; R12 := R3["0x5DB0BD4"]
- 39 [-]: MOVE      R14 R2       ; R14 := R2
- 40 [-]: MOVE      R15 R0       ; R15 := R0
- 41 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
- 42 [-]: CALL      R11 0 0      ; R11,... := R11(R12,...)
- 43 [-]: CALL      R7 0 1       ; R7(R8,...)
- 44 [-]: SELF      R7 R0 K19    ; R8 := R0; R7 := R0["0xA0107BF2"]
- 45 [-]: CALL      R7 2 1       ; R7(R8)
- 46 [-]: RETURN    R0 1         ; return 
+  6 [-]: SELF      R5 R3 K3     ; R6 := R3; R5 := R3["0x880196A7"]
+  7 [-]: MOVE      R7 R4        ; R7 := R4
+  8 [-]: LOADK     R8 K4        ; R8 := "Label"
+  9 [-]: LOADK     R9 K5        ; R9 := "letterSpacing"
+ 10 [-]: LOADK     R10 K6       ; R10 := 0
+ 11 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 12 [-]: GETTABLE  R1 R0 K7     ; R1 := R0["mLabel"]
+ 13 [-]: TEST      R2 1         ; if R2 then PC := 16
+ 14 [-]: JMP       16           ; PC := 16
+ 15 [-]: LOADK     R2 K8        ; R2 := ""
+ 16 [-]: SETTABLE  R0 K9 R2     ; R0["mDesc"] := R2
+ 17 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 18 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["0xCC58B07A"]
+ 19 [-]: MOVE      R6 R3        ; R6 := R3
+ 20 [-]: MOVE      R7 R4        ; R7 := R4
+ 21 [-]: LOADK     R8 K11       ; R8 := ".Desc"
+ 22 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+ 23 [-]: LOADK     R8 K12       ; R8 := "..."
+ 24 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 25 [-]: SELF      R5 R3 K13    ; R6 := R3; R5 := R3["0xD6A79FE9"]
+ 26 [-]: MOVE      R7 R4        ; R7 := R4
+ 27 [-]: LOADK     R8 K11       ; R8 := ".Desc"
+ 28 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+ 29 [-]: LOADK     R8 K14       ; R8 := "text"
+ 30 [-]: GETGLOBAL R9 K15       ; R9 := string
+ 31 [-]: GETTABLE  R9 R9 K16    ; R9 := R9["0x639C642A"]
+ 32 [-]: SELF      R10 R3 K17   ; R11 := R3; R10 := R3["0x5DB0BD4"]
+ 33 [-]: MOVE      R12 R2       ; R12 := R2
+ 34 [-]: MOVE      R13 R0       ; R13 := R0
+ 35 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+ 36 [-]: CALL      R9 0 0       ; R9,... := R9(R10,...)
+ 37 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 38 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0["0xA0107BF2"]
+ 39 [-]: CALL      R5 2 1       ; R5(R6)
+ 40 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.33:
 ;
 ; Name:            
-; Defined at line: 1087
+; Defined at line: 1085
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0

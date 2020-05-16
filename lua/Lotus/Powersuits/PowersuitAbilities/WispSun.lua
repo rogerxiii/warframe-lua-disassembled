@@ -6,14 +6,14 @@ code size: 29
 code size: 1191
 code size: 17
 code size: 7
-code size: 265
+code size: 280
 code size: 24
 code size: 11
 code size: 11
 code size: 12
 code size: 12
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\WispSun.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\WispSun.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1800,65 +1800,80 @@ code size: 12
 210 [-]: JMP       213          ; PC := 213
 211 [-]: SELF      R27 R15 K56  ; R28 := R15; R27 := R15["0xD4C2743F"]
 212 [-]: CALL      R27 2 1      ; R27(R28)
-213 [-]: SELF      R27 R1 K67   ; R28 := R1; R27 := R1["0xC6330AF6"]
-214 [-]: MOVE      R29 R0       ; R29 := R0
-215 [-]: CALL      R27 3 1      ; R27(R28,R29)
-216 [-]: SELF      R27 R1 K68   ; R28 := R1; R27 := R1["0x4E08D599"]
-217 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-218 [-]: TEST      R27 0        ; if not R27 then PC := 223
-219 [-]: JMP       223          ; PC := 223
-220 [-]: SELF      R27 R1 K69   ; R28 := R1; R27 := R1["0x4B6C4D3A"]
-221 [-]: GETGLOBAL R29 K70      ; R29 := inputFilter
-222 [-]: CALL      R27 3 1      ; R27(R28,R29)
-223 [-]: SELF      R27 R1 K71   ; R28 := R1; R27 := R1["0x8DB5D01F"]
-224 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-225 [-]: SELF      R28 R27 K72  ; R29 := R27; R28 := R27["0x2793EA88"]
-226 [-]: GETGLOBAL R30 K33      ; R30 := Engine
-227 [-]: GETTABLE  R30 R30 K73  ; R30 := R30["MAIN_HAND"]
-228 [-]: GETGLOBAL R31 K33      ; R31 := Engine
-229 [-]: GETTABLE  R31 R31 K74  ; R31 := R31["GRAB"]
-230 [-]: CALL      R28 4 1      ; R28(R29,R30,R31)
-231 [-]: GETGLOBAL R28 K7       ; R28 := gRegion
-232 [-]: SELF      R28 R28 K75  ; R29 := R28; R28 := R28["0xA559F558"]
-233 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-234 [-]: TEST      R28 0        ; if not R28 then PC := 250
-235 [-]: JMP       250          ; PC := 250
-236 [-]: SELF      R28 R27 K76  ; R29 := R27; R28 := R27["0xF21555A7"]
-237 [-]: GETGLOBAL R30 K77      ; R30 := Game
-238 [-]: GETTABLE  R30 R30 K78  ; R30 := R30["AVATAR_MOVEMENT_SPEED"]
-239 [-]: GETGLOBAL R31 K77      ; R31 := Game
-240 [-]: GETTABLE  R31 R31 K79  ; R31 := R31["STACKING_MULTIPLY"]
-241 [-]: GETUPVAL  R32 U2       ; R32 := U2
-242 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
-243 [-]: SELF      R28 R27 K76  ; R29 := R27; R28 := R27["0xF21555A7"]
-244 [-]: GETGLOBAL R30 K77      ; R30 := Game
-245 [-]: GETTABLE  R30 R30 K78  ; R30 := R30["AVATAR_MOVEMENT_SPEED"]
-246 [-]: GETGLOBAL R31 K77      ; R31 := Game
-247 [-]: GETTABLE  R31 R31 K80  ; R31 := R31["MULTIPLY"]
-248 [-]: GETUPVAL  R32 U3       ; R32 := U3
-249 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
-250 [-]: SELF      R28 R0 K0    ; R29 := R0; R28 := R0["0xBADE9738"]
-251 [-]: GETGLOBAL R30 K1       ; R30 := 0x7C282057
-252 [-]: GETGLOBAL R31 K2       ; R31 := mOwner
-253 [-]: SELF      R31 R31 K3   ; R32 := R31; R31 := R31["0xE2B32C65"]
-254 [-]: CALL      R31 2 0      ; R31,... := R31(R32)
-255 [-]: CALL      R30 0 2      ; R30 := R30(R31,...)
-256 [-]: SELF      R30 R30 K4   ; R31 := R30; R30 := R30["0x73BD8B3C"]
-257 [-]: MOVE      R32 R0       ; R32 := R0
-258 [-]: CALL      R30 3 0      ; R30,... := R30(R31,R32)
-259 [-]: CALL      R28 0 1      ; R28(R29,...)
-260 [-]: GETUPVAL  R28 U0       ; R28 := U0
-261 [-]: GETTABLE  R28 R28 K81  ; R28 := R28["0xC16DC3C2"]
-262 [-]: MOVE      R29 R0       ; R29 := R0
-263 [-]: GETGLOBAL R30 K2       ; R30 := mOwner
-264 [-]: CALL      R28 3 1      ; R28(R29,R30)
-265 [-]: RETURN    R0 1         ; return 
+213 [-]: GETGLOBAL R27 K16      ; R27 := 0x400E7765
+214 [-]: MOVE      R28 R1       ; R28 := R1
+215 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+216 [-]: TEST      R27 1        ; if R27 then PC := 255
+217 [-]: JMP       255          ; PC := 255
+218 [-]: SELF      R27 R1 K67   ; R28 := R1; R27 := R1["0xC6330AF6"]
+219 [-]: MOVE      R29 R0       ; R29 := R0
+220 [-]: CALL      R27 3 1      ; R27(R28,R29)
+221 [-]: SELF      R27 R1 K68   ; R28 := R1; R27 := R1["0x4E08D599"]
+222 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+223 [-]: TEST      R27 0        ; if not R27 then PC := 228
+224 [-]: JMP       228          ; PC := 228
+225 [-]: SELF      R27 R1 K69   ; R28 := R1; R27 := R1["0x4B6C4D3A"]
+226 [-]: GETGLOBAL R29 K70      ; R29 := inputFilter
+227 [-]: CALL      R27 3 1      ; R27(R28,R29)
+228 [-]: SELF      R27 R1 K71   ; R28 := R1; R27 := R1["0x8DB5D01F"]
+229 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+230 [-]: SELF      R28 R27 K72  ; R29 := R27; R28 := R27["0x2793EA88"]
+231 [-]: GETGLOBAL R30 K33      ; R30 := Engine
+232 [-]: GETTABLE  R30 R30 K73  ; R30 := R30["MAIN_HAND"]
+233 [-]: GETGLOBAL R31 K33      ; R31 := Engine
+234 [-]: GETTABLE  R31 R31 K74  ; R31 := R31["GRAB"]
+235 [-]: CALL      R28 4 1      ; R28(R29,R30,R31)
+236 [-]: GETGLOBAL R28 K7       ; R28 := gRegion
+237 [-]: SELF      R28 R28 K75  ; R29 := R28; R28 := R28["0xA559F558"]
+238 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+239 [-]: TEST      R28 0        ; if not R28 then PC := 255
+240 [-]: JMP       255          ; PC := 255
+241 [-]: SELF      R28 R27 K76  ; R29 := R27; R28 := R27["0xF21555A7"]
+242 [-]: GETGLOBAL R30 K77      ; R30 := Game
+243 [-]: GETTABLE  R30 R30 K78  ; R30 := R30["AVATAR_MOVEMENT_SPEED"]
+244 [-]: GETGLOBAL R31 K77      ; R31 := Game
+245 [-]: GETTABLE  R31 R31 K79  ; R31 := R31["STACKING_MULTIPLY"]
+246 [-]: GETUPVAL  R32 U2       ; R32 := U2
+247 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
+248 [-]: SELF      R28 R27 K76  ; R29 := R27; R28 := R27["0xF21555A7"]
+249 [-]: GETGLOBAL R30 K77      ; R30 := Game
+250 [-]: GETTABLE  R30 R30 K78  ; R30 := R30["AVATAR_MOVEMENT_SPEED"]
+251 [-]: GETGLOBAL R31 K77      ; R31 := Game
+252 [-]: GETTABLE  R31 R31 K80  ; R31 := R31["MULTIPLY"]
+253 [-]: GETUPVAL  R32 U3       ; R32 := U3
+254 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
+255 [-]: GETGLOBAL R28 K16      ; R28 := 0x400E7765
+256 [-]: MOVE      R29 R0       ; R29 := R0
+257 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+258 [-]: TEST      R28 1        ; if R28 then PC := 280
+259 [-]: JMP       280          ; PC := 280
+260 [-]: GETGLOBAL R28 K16      ; R28 := 0x400E7765
+261 [-]: GETGLOBAL R29 K2       ; R29 := mOwner
+262 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+263 [-]: TEST      R28 1        ; if R28 then PC := 280
+264 [-]: JMP       280          ; PC := 280
+265 [-]: SELF      R28 R0 K0    ; R29 := R0; R28 := R0["0xBADE9738"]
+266 [-]: GETGLOBAL R30 K1       ; R30 := 0x7C282057
+267 [-]: GETGLOBAL R31 K2       ; R31 := mOwner
+268 [-]: SELF      R31 R31 K3   ; R32 := R31; R31 := R31["0xE2B32C65"]
+269 [-]: CALL      R31 2 0      ; R31,... := R31(R32)
+270 [-]: CALL      R30 0 2      ; R30 := R30(R31,...)
+271 [-]: SELF      R30 R30 K4   ; R31 := R30; R30 := R30["0x73BD8B3C"]
+272 [-]: MOVE      R32 R0       ; R32 := R0
+273 [-]: CALL      R30 3 0      ; R30,... := R30(R31,R32)
+274 [-]: CALL      R28 0 1      ; R28(R29,...)
+275 [-]: GETUPVAL  R28 U0       ; R28 := U0
+276 [-]: GETTABLE  R28 R28 K81  ; R28 := R28["0xC16DC3C2"]
+277 [-]: MOVE      R29 R0       ; R29 := R0
+278 [-]: GETGLOBAL R30 K2       ; R30 := mOwner
+279 [-]: CALL      R28 3 1      ; R28(R29,R30)
+280 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 623
+; Defined at line: 627
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1893,7 +1908,7 @@ code size: 12
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 632
+; Defined at line: 636
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1915,7 +1930,7 @@ code size: 12
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 636
+; Defined at line: 640
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1937,7 +1952,7 @@ code size: 12
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 640
+; Defined at line: 644
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1960,7 +1975,7 @@ code size: 12
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 647
+; Defined at line: 651
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0

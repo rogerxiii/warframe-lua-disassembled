@@ -2,12 +2,12 @@ code size: 79
 code size: 12
 code size: 21
 code size: 32
-code size: 1279
+code size: 1294
 code size: 5
 code size: 309
 code size: 11
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\ContextAction.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\ContextAction.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -383,8 +383,8 @@ code size: 11
 177 [-]: GETUPVAL  R12 U6       ; R12 := U6
 178 [-]: EQ        0 R12 R2     ; if R12 ~= R2 then PC := 182
 179 [-]: JMP       182          ; PC := 182
-180 [-]: TEST      R11 0        ; if not R11 then PC := 944
-181 [-]: JMP       944          ; PC := 944
+180 [-]: TEST      R11 0        ; if not R11 then PC := 959
+181 [-]: JMP       959          ; PC := 959
 182 [-]: MOVE      R2 R6        ; R2 := R6
 183 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
 184 [-]: GETUPVAL  R13 U6       ; R13 := U6
@@ -425,8 +425,8 @@ code size: 11
 219 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
 220 [-]: GETUPVAL  R16 U6       ; R16 := U6
 221 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-222 [-]: TEST      R15 1        ; if R15 then PC := 506
-223 [-]: JMP       506          ; PC := 506
+222 [-]: TEST      R15 1        ; if R15 then PC := 521
+223 [-]: JMP       521          ; PC := 521
 224 [-]: GETUPVAL  R15 U6       ; R15 := U6
 225 [-]: GETGLOBAL R16 K11      ; R16 := _T
 226 [-]: GETTABLE  R16 R16 K33  ; R16 := R16["InSimulacrum"]
@@ -525,970 +525,985 @@ code size: 11
 319 [-]: JMP       322          ; PC := 322
 320 [-]: MOVE      R18 R0       ; R18 := R0
 321 [-]: MOVE      R18 R1       ; R18 := R1
-322 [-]: TEST      R18 0        ; if not R18 then PC := 336
-323 [-]: JMP       336          ; PC := 336
-324 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
-325 [-]: SELF      R19 R19 K49  ; R20 := R19; R19 := R19["0x619FE9B4"]
-326 [-]: MOVE      R21 R15      ; R21 := R15
-327 [-]: MOVE      R22 R16      ; R22 := R16
-328 [-]: GETUPVAL  R23 U6       ; R23 := U6
-329 [-]: SELF      R23 R23 K50  ; R24 := R23; R23 := R23["0x9DAF742E"]
-330 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-331 [-]: GETUPVAL  R24 U6       ; R24 := U6
-332 [-]: SELF      R24 R24 K43  ; R25 := R24; R24 := R24["0xBB5E94BF"]
-333 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
-334 [-]: CALL      R19 0 1      ; R19(R20,...)
-335 [-]: JMP       347          ; PC := 347
-336 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
-337 [-]: SELF      R19 R19 K49  ; R20 := R19; R19 := R19["0x619FE9B4"]
-338 [-]: LOADNIL   R21 R21      ; R21 := nil
-339 [-]: GETGLOBAL R22 K51      ; R22 := ZERO_VECTOR
-340 [-]: GETGLOBAL R23 K52      ; R23 := ZERO_ROTATION
-341 [-]: GETGLOBAL R24 K53      ; R24 := 0x221C9700
-342 [-]: LOADK     R25 K7       ; R25 := 1
-343 [-]: LOADK     R26 K7       ; R26 := 1
-344 [-]: LOADK     R27 K7       ; R27 := 1
-345 [-]: CALL      R24 4 0      ; R24,... := R24(R25,R26,R27)
-346 [-]: CALL      R19 0 1      ; R19(R20,...)
-347 [-]: GETUPVAL  R19 U6       ; R19 := U6
-348 [-]: SELF      R19 R19 K54  ; R20 := R19; R19 := R19["0xD41A6D8C"]
-349 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-350 [-]: TEST      R19 0        ; if not R19 then PC := 359
-351 [-]: JMP       359          ; PC := 359
-352 [-]: GETUPVAL  R19 U10      ; R19 := U10
-353 [-]: GETTABLE  R19 R19 K55  ; R19 := R19["0x25992394"]
-354 [-]: GETGLOBAL R20 K56      ; R20 := onEnterSound
-355 [-]: GETUPVAL  R21 U6       ; R21 := U6
-356 [-]: SELF      R21 R21 K57  ; R22 := R21; R21 := R21["0x6DA72501"]
-357 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
-358 [-]: CALL      R19 0 1      ; R19(R20,...)
-359 [-]: GETUPVAL  R19 U11      ; R19 := U11
-360 [-]: EQ        1 R19 R18    ; if R19 == R18 then PC := 408
-361 [-]: JMP       408          ; PC := 408
-362 [-]: MOVE      R18 R11      ; R18 := R11
-363 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
-364 [-]: SELF      R19 R19 K58  ; R20 := R19; R19 := R19["0x7E1F26D7"]
-365 [-]: LOADK     R21 K59      ; R21 := "Marker.Callout"
-366 [-]: GETUPVAL  R22 U10      ; R22 := U10
-367 [-]: GETTABLE  R22 R22 K60  ; R22 := R22["0xF81722A2"]
-368 [-]: GETUPVAL  R23 U11      ; R23 := U11
-369 [-]: LOADNIL   R24 R24      ; R24 := nil
-370 [-]: GETGLOBAL R25 K14      ; R25 := _G
-371 [-]: GETTABLE  R25 R25 K61  ; R25 := R25["UIMaterial_PlainText"]
-372 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
+322 [-]: GETGLOBAL R19 K0       ; R19 := 0x400E7765
+323 [-]: GETUPVAL  R20 U3       ; R20 := U3
+324 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+325 [-]: TEST      R19 1        ; if R19 then PC := 337
+326 [-]: JMP       337          ; PC := 337
+327 [-]: GETUPVAL  R19 U3       ; R19 := U3
+328 [-]: SELF      R19 R19 K49  ; R20 := R19; R19 := R19["0x8DB5D01F"]
+329 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+330 [-]: SELF      R19 R19 K50  ; R20 := R19; R19 := R19["0x10252651"]
+331 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+332 [-]: TEST      R19 0        ; if not R19 then PC := 337
+333 [-]: JMP       337          ; PC := 337
+334 [-]: TEST      R13 0        ; if not R13 then PC := 337
+335 [-]: JMP       337          ; PC := 337
+336 [-]: MOVE      R18 R0       ; R18 := R0
+337 [-]: TEST      R18 0        ; if not R18 then PC := 351
+338 [-]: JMP       351          ; PC := 351
+339 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
+340 [-]: SELF      R19 R19 K51  ; R20 := R19; R19 := R19["0x619FE9B4"]
+341 [-]: MOVE      R21 R15      ; R21 := R15
+342 [-]: MOVE      R22 R16      ; R22 := R16
+343 [-]: GETUPVAL  R23 U6       ; R23 := U6
+344 [-]: SELF      R23 R23 K52  ; R24 := R23; R23 := R23["0x9DAF742E"]
+345 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+346 [-]: GETUPVAL  R24 U6       ; R24 := U6
+347 [-]: SELF      R24 R24 K43  ; R25 := R24; R24 := R24["0xBB5E94BF"]
+348 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
+349 [-]: CALL      R19 0 1      ; R19(R20,...)
+350 [-]: JMP       362          ; PC := 362
+351 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
+352 [-]: SELF      R19 R19 K51  ; R20 := R19; R19 := R19["0x619FE9B4"]
+353 [-]: LOADNIL   R21 R21      ; R21 := nil
+354 [-]: GETGLOBAL R22 K53      ; R22 := ZERO_VECTOR
+355 [-]: GETGLOBAL R23 K54      ; R23 := ZERO_ROTATION
+356 [-]: GETGLOBAL R24 K55      ; R24 := 0x221C9700
+357 [-]: LOADK     R25 K7       ; R25 := 1
+358 [-]: LOADK     R26 K7       ; R26 := 1
+359 [-]: LOADK     R27 K7       ; R27 := 1
+360 [-]: CALL      R24 4 0      ; R24,... := R24(R25,R26,R27)
+361 [-]: CALL      R19 0 1      ; R19(R20,...)
+362 [-]: GETUPVAL  R19 U6       ; R19 := U6
+363 [-]: SELF      R19 R19 K56  ; R20 := R19; R19 := R19["0xD41A6D8C"]
+364 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+365 [-]: TEST      R19 0        ; if not R19 then PC := 374
+366 [-]: JMP       374          ; PC := 374
+367 [-]: GETUPVAL  R19 U10      ; R19 := U10
+368 [-]: GETTABLE  R19 R19 K57  ; R19 := R19["0x25992394"]
+369 [-]: GETGLOBAL R20 K58      ; R20 := onEnterSound
+370 [-]: GETUPVAL  R21 U6       ; R21 := U6
+371 [-]: SELF      R21 R21 K59  ; R22 := R21; R21 := R21["0x6DA72501"]
+372 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
 373 [-]: CALL      R19 0 1      ; R19(R20,...)
-374 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
-375 [-]: SELF      R19 R19 K58  ; R20 := R19; R19 := R19["0x7E1F26D7"]
-376 [-]: LOADK     R21 K62      ; R21 := "Marker.Instruction"
-377 [-]: GETUPVAL  R22 U10      ; R22 := U10
-378 [-]: GETTABLE  R22 R22 K60  ; R22 := R22["0xF81722A2"]
-379 [-]: GETUPVAL  R23 U11      ; R23 := U11
-380 [-]: LOADNIL   R24 R24      ; R24 := nil
-381 [-]: GETGLOBAL R25 K14      ; R25 := _G
-382 [-]: GETTABLE  R25 R25 K61  ; R25 := R25["UIMaterial_PlainText"]
-383 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
-384 [-]: CALL      R19 0 1      ; R19(R20,...)
-385 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
-386 [-]: SELF      R19 R19 K58  ; R20 := R19; R19 := R19["0x7E1F26D7"]
-387 [-]: LOADK     R21 K63      ; R21 := "Marker.Panel.Foreground.LeftDeco"
-388 [-]: GETUPVAL  R22 U10      ; R22 := U10
-389 [-]: GETTABLE  R22 R22 K60  ; R22 := R22["0xF81722A2"]
-390 [-]: GETUPVAL  R23 U11      ; R23 := U11
-391 [-]: LOADNIL   R24 R24      ; R24 := nil
-392 [-]: GETGLOBAL R25 K14      ; R25 := _G
-393 [-]: GETTABLE  R25 R25 K64  ; R25 := R25["UIMaterial_Plain"]
-394 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
-395 [-]: CALL      R19 0 1      ; R19(R20,...)
-396 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
-397 [-]: SELF      R19 R19 K58  ; R20 := R19; R19 := R19["0x7E1F26D7"]
-398 [-]: LOADK     R21 K65      ; R21 := "Marker.Panel.Foreground.RightSide"
-399 [-]: GETUPVAL  R22 U10      ; R22 := U10
-400 [-]: GETTABLE  R22 R22 K60  ; R22 := R22["0xF81722A2"]
-401 [-]: GETUPVAL  R23 U11      ; R23 := U11
-402 [-]: GETGLOBAL R24 K14      ; R24 := _G
-403 [-]: GETTABLE  R24 R24 K66  ; R24 := R24["UIMaterial_Rectangle"]
-404 [-]: GETGLOBAL R25 K14      ; R25 := _G
-405 [-]: GETTABLE  R25 R25 K67  ; R25 := R25["UIMaterial_RectangleNoDepth"]
-406 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
-407 [-]: CALL      R19 0 1      ; R19(R20,...)
-408 [-]: GETUPVAL  R19 U8       ; R19 := U8
-409 [-]: TEST      R19 0        ; if not R19 then PC := 500
-410 [-]: JMP       500          ; PC := 500
+374 [-]: GETUPVAL  R19 U11      ; R19 := U11
+375 [-]: EQ        1 R19 R18    ; if R19 == R18 then PC := 423
+376 [-]: JMP       423          ; PC := 423
+377 [-]: MOVE      R18 R11      ; R18 := R11
+378 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
+379 [-]: SELF      R19 R19 K60  ; R20 := R19; R19 := R19["0x7E1F26D7"]
+380 [-]: LOADK     R21 K61      ; R21 := "Marker.Callout"
+381 [-]: GETUPVAL  R22 U10      ; R22 := U10
+382 [-]: GETTABLE  R22 R22 K62  ; R22 := R22["0xF81722A2"]
+383 [-]: GETUPVAL  R23 U11      ; R23 := U11
+384 [-]: LOADNIL   R24 R24      ; R24 := nil
+385 [-]: GETGLOBAL R25 K14      ; R25 := _G
+386 [-]: GETTABLE  R25 R25 K63  ; R25 := R25["UIMaterial_PlainText"]
+387 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
+388 [-]: CALL      R19 0 1      ; R19(R20,...)
+389 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
+390 [-]: SELF      R19 R19 K60  ; R20 := R19; R19 := R19["0x7E1F26D7"]
+391 [-]: LOADK     R21 K64      ; R21 := "Marker.Instruction"
+392 [-]: GETUPVAL  R22 U10      ; R22 := U10
+393 [-]: GETTABLE  R22 R22 K62  ; R22 := R22["0xF81722A2"]
+394 [-]: GETUPVAL  R23 U11      ; R23 := U11
+395 [-]: LOADNIL   R24 R24      ; R24 := nil
+396 [-]: GETGLOBAL R25 K14      ; R25 := _G
+397 [-]: GETTABLE  R25 R25 K63  ; R25 := R25["UIMaterial_PlainText"]
+398 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
+399 [-]: CALL      R19 0 1      ; R19(R20,...)
+400 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
+401 [-]: SELF      R19 R19 K60  ; R20 := R19; R19 := R19["0x7E1F26D7"]
+402 [-]: LOADK     R21 K65      ; R21 := "Marker.Panel.Foreground.LeftDeco"
+403 [-]: GETUPVAL  R22 U10      ; R22 := U10
+404 [-]: GETTABLE  R22 R22 K62  ; R22 := R22["0xF81722A2"]
+405 [-]: GETUPVAL  R23 U11      ; R23 := U11
+406 [-]: LOADNIL   R24 R24      ; R24 := nil
+407 [-]: GETGLOBAL R25 K14      ; R25 := _G
+408 [-]: GETTABLE  R25 R25 K66  ; R25 := R25["UIMaterial_Plain"]
+409 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
+410 [-]: CALL      R19 0 1      ; R19(R20,...)
 411 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
-412 [-]: SELF      R19 R19 K68  ; R20 := R19; R19 := R19["0x1C19D966"]
-413 [-]: LOADK     R21 K69      ; R21 := "Marker.Item"
-414 [-]: LOADK     R22 K70      ; R22 := "_visible"
-415 [-]: MOVE      R23 R1       ; R23 := R1
-416 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
-417 [-]: GETGLOBAL R19 K71      ; R19 := 0xD26C89A0
-418 [-]: GETGLOBAL R20 K1       ; R20 := mMovie
-419 [-]: SELF      R20 R20 K72  ; R21 := R20; R20 := R20["0x5DB0BD4"]
-420 [-]: GETGLOBAL R22 K11      ; R22 := _T
-421 [-]: GETTABLE  R22 R22 K22  ; R22 := R22["DisplayItemInContextAction"]
-422 [-]: SELF      R22 R22 K73  ; R23 := R22; R22 := R22["0x616C74B6"]
-423 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-424 [-]: SELF      R22 R22 K74  ; R23 := R22; R22 := R22["0x5EC7A3D2"]
-425 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-426 [-]: MOVE      R23 R0       ; R23 := R0
-427 [-]: CALL      R20 4 0      ; R20,... := R20(R21,R22,R23)
-428 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
-429 [-]: NEWTABLE  R20 0 1      ; R20 := {}
-430 [-]: GETGLOBAL R21 K76      ; R21 := nonDepthTestIconMaterial
-431 [-]: SETTABLE  R20 K75 R21  ; R20["Material"] := R21
-432 [-]: GETUPVAL  R21 U12      ; R21 := U12
-433 [-]: GETTABLE  R21 R21 K79  ; R21 := R21["0xF1A9732E"]
-434 [-]: GETGLOBAL R22 K11      ; R22 := _T
-435 [-]: GETTABLE  R22 R22 K22  ; R22 := R22["DisplayItemInContextAction"]
-436 [-]: MOVE      R23 R1       ; R23 := R1
-437 [-]: CALL      R21 3 3      ; R21,R22 := R21(R22,R23)
-438 [-]: SETTABLE  R20 K78 R22  ; R20["Themed"] := R22
-439 [-]: SETTABLE  R20 K77 R21  ; R20["Icon"] := R21
-440 [-]: GETUPVAL  R21 U12      ; R21 := U12
-441 [-]: GETTABLE  R21 R21 K80  ; R21 := R21["0x323C4EEF"]
-442 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-443 [-]: LOADK     R23 K69      ; R23 := "Marker.Item"
-444 [-]: MOVE      R24 R20      ; R24 := R20
-445 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
-446 [-]: GETUPVAL  R21 U10      ; R21 := U10
-447 [-]: GETTABLE  R21 R21 K60  ; R21 := R21["0xF81722A2"]
-448 [-]: GETTABLE  R22 R20 K78  ; R22 := R20["Themed"]
-449 [-]: LOADK     R23 K81      ; R23 := 135
-450 [-]: LOADK     R24 K82      ; R24 := 216
-451 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-452 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-453 [-]: SELF      R22 R22 K68  ; R23 := R22; R22 := R22["0x1C19D966"]
-454 [-]: LOADK     R24 K83      ; R24 := "Marker.Item.Image"
-455 [-]: LOADK     R25 K84      ; R25 := "_width"
-456 [-]: MOVE      R26 R21      ; R26 := R21
-457 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-458 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-459 [-]: SELF      R22 R22 K68  ; R23 := R22; R22 := R22["0x1C19D966"]
-460 [-]: LOADK     R24 K85      ; R24 := "Marker.Item.Shadow"
-461 [-]: LOADK     R25 K84      ; R25 := "_width"
-462 [-]: MOVE      R26 R21      ; R26 := R21
-463 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-464 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-465 [-]: SELF      R22 R22 K68  ; R23 := R22; R22 := R22["0x1C19D966"]
-466 [-]: LOADK     R24 K86      ; R24 := "Marker.Item.BackingTexture"
-467 [-]: LOADK     R25 K84      ; R25 := "_width"
-468 [-]: MOVE      R26 R21      ; R26 := R21
-469 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-470 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-471 [-]: SELF      R22 R22 K68  ; R23 := R22; R22 := R22["0x1C19D966"]
-472 [-]: LOADK     R24 K87      ; R24 := "Marker.Item.Blacker"
-473 [-]: LOADK     R25 K84      ; R25 := "_width"
-474 [-]: MOVE      R26 R21      ; R26 := R21
-475 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-476 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-477 [-]: SELF      R22 R22 K68  ; R23 := R22; R22 := R22["0x1C19D966"]
-478 [-]: LOADK     R24 K88      ; R24 := "Marker.Item.Blurer"
-479 [-]: LOADK     R25 K84      ; R25 := "_width"
-480 [-]: MOVE      R26 R21      ; R26 := R21
-481 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-482 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-483 [-]: SELF      R22 R22 K68  ; R23 := R22; R22 := R22["0x1C19D966"]
-484 [-]: LOADK     R24 K89      ; R24 := "Marker.Item.Name"
-485 [-]: LOADK     R25 K84      ; R25 := "_width"
-486 [-]: MOVE      R26 R21      ; R26 := R21
-487 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-488 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-489 [-]: SELF      R22 R22 K90  ; R23 := R22; R22 := R22["0xD6A79FE9"]
-490 [-]: LOADK     R24 K89      ; R24 := "Marker.Item.Name"
-491 [-]: LOADK     R25 K91      ; R25 := "text"
-492 [-]: MOVE      R26 R19      ; R26 := R19
-493 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-494 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-495 [-]: SELF      R22 R22 K58  ; R23 := R22; R22 := R22["0x7E1F26D7"]
-496 [-]: LOADK     R24 K89      ; R24 := "Marker.Item.Name"
-497 [-]: GETGLOBAL R25 K92      ; R25 := nonDepthTestMaterial
-498 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
-499 [-]: JMP       506          ; PC := 506
-500 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
-501 [-]: SELF      R22 R22 K68  ; R23 := R22; R22 := R22["0x1C19D966"]
-502 [-]: LOADK     R24 K69      ; R24 := "Marker.Item"
-503 [-]: LOADK     R25 K70      ; R25 := "_visible"
-504 [-]: MOVE      R26 R0       ; R26 := R0
-505 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
-506 [-]: GETGLOBAL R22 K93      ; R22 := 0x63B09107
-507 [-]: GETUPVAL  R23 U13      ; R23 := U13
-508 [-]: CALL      R22 2 4      ; R22,R23,R24 := R22(R23)
-509 [-]: JMP       536          ; PC := 536
-510 [-]: GETUPVAL  R27 U14      ; R27 := U14
-511 [-]: MOVE      R28 R25      ; R28 := R25
-512 [-]: MOVE      R29 R12      ; R29 := R12
-513 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-514 [-]: GETGLOBAL R28 K94      ; R28 := 0x52E17A90
-515 [-]: GETGLOBAL R29 K1       ; R29 := mMovie
-516 [-]: MOVE      R30 R26      ; R30 := R26
-517 [-]: GETGLOBAL R31 K95      ; R31 := UISys
-518 [-]: GETTABLE  R31 R31 K96  ; R31 := R31["FlashInstance_EASE_IN"]
-519 [-]: NEWTABLE  R32 2 0      ; R32 := {}
-520 [-]: LOADK     R33 K97      ; R33 := "_x"
-521 [-]: LOADK     R34 K98      ; R34 := "_alpha"
-522 [-]: SETLIST   R32 2 1      ; R32[(1-1)*FPF+i] := R(32+i), 1 <= i <= 2
-523 [-]: NEWTABLE  R33 1 0      ; R33 := {}
-524 [-]: GETTABLE  R34 R27 K44  ; R34 := R27["x"]
-525 [-]: GETUPVAL  R35 U10      ; R35 := U10
-526 [-]: GETTABLE  R35 R35 K60  ; R35 := R35["0xF81722A2"]
-527 [-]: TESTSET   R36 R12 0    ; if not R12 then PC := 530 else R36 := R12
-528 [-]: JMP       530          ; PC := 530
-529 [-]: GETUPVAL  R36 U11      ; R36 := U11
-530 [-]: LOADK     R37 K99      ; R37 := 100
-531 [-]: LOADK     R38 K6       ; R38 := 0
-532 [-]: CALL      R35 4 0      ; R35,... := R35(R36,R37,R38)
-533 [-]: SETLIST   R33 0 1      ; R33[(1-1)*FPF+i] := R(33+i), 1 <= i <= 0
-534 [-]: LOADK     R34 K100     ; R34 := 0.15000000596046
-535 [-]: CALL      R28 7 1      ; R28(R29,R30,R31,R32,R33,R34)
-536 [-]: TFORLOOP  R22 2        ; R25,R26 :=  R22(R23,R24); if R25 ~= nil then begin PC = 510; R24 := R25 end
-537 [-]: JMP       510          ; PC := 510
-538 [-]: TEST      R13 0        ; if not R13 then PC := 543
-539 [-]: JMP       543          ; PC := 543
-540 [-]: EQ        0 R3 K13     ; if R3 ~= "" then PC := 543
-541 [-]: JMP       543          ; PC := 543
-542 [-]: MOVE      R12 R0       ; R12 := R0
-543 [-]: TEST      R12 0        ; if not R12 then PC := 839
-544 [-]: JMP       839          ; PC := 839
-545 [-]: GETGLOBAL R28 K1       ; R28 := mMovie
-546 [-]: SELF      R28 R28 K101 ; R29 := R28; R28 := R28["0x625791A8"]
-547 [-]: MOVE      R30 R1       ; R30 := R1
-548 [-]: CALL      R28 3 1      ; R28(R29,R30)
-549 [-]: GETGLOBAL R28 K1       ; R28 := mMovie
-550 [-]: SELF      R28 R28 K72  ; R29 := R28; R28 := R28["0x5DB0BD4"]
-551 [-]: MOVE      R30 R3       ; R30 := R3
-552 [-]: MOVE      R31 R0       ; R31 := R0
-553 [-]: CALL      R28 4 2      ; R28 := R28(R29,R30,R31)
-554 [-]: LOADK     R29 K102     ; R29 := "<USE>"
-555 [-]: MOVE      R29 R15      ; R29 := R15
-556 [-]: MOVE      R29 R0       ; R29 := R0
-557 [-]: TEST      R29 0        ; if not R29 then PC := 592
-558 [-]: JMP       592          ; PC := 592
-559 [-]: TEST      R13 0        ; if not R13 then PC := 592
-560 [-]: JMP       592          ; PC := 592
-561 [-]: GETGLOBAL R29 K0       ; R29 := 0x400E7765
-562 [-]: GETUPVAL  R30 U1       ; R30 := U1
-563 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-564 [-]: TEST      R29 1        ; if R29 then PC := 592
-565 [-]: JMP       592          ; PC := 592
-566 [-]: GETGLOBAL R29 K0       ; R29 := 0x400E7765
-567 [-]: GETUPVAL  R30 U3       ; R30 := U3
-568 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-569 [-]: TEST      R29 1        ; if R29 then PC := 592
-570 [-]: JMP       592          ; PC := 592
-571 [-]: GETUPVAL  R29 U3       ; R29 := U3
-572 [-]: SELF      R29 R29 K103 ; R30 := R29; R29 := R29["0x8DB5D01F"]
-573 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-574 [-]: SELF      R29 R29 K104 ; R30 := R29; R29 := R29["0x6EA0928F"]
-575 [-]: GETGLOBAL R31 K105     ; R31 := Engine
-576 [-]: GETTABLE  R31 R31 K106 ; R31 := R31["MAIN_HAND"]
-577 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-578 [-]: GETGLOBAL R30 K0       ; R30 := 0x400E7765
-579 [-]: MOVE      R31 R29      ; R31 := R29
-580 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-581 [-]: TEST      R30 1        ; if R30 then PC := 590
-582 [-]: JMP       590          ; PC := 590
-583 [-]: SELF      R30 R29 K107 ; R31 := R29; R30 := R29["0xCCDDAF9B"]
-584 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-585 [-]: TEST      R30 0        ; if not R30 then PC := 590
-586 [-]: JMP       590          ; PC := 590
-587 [-]: LOADK     R30 K108     ; R30 := "<MELEE_SWING>"
-588 [-]: MOVE      R30 R15      ; R30 := R15
-589 [-]: JMP       592          ; PC := 592
-590 [-]: LOADK     R30 K109     ; R30 := "<MELEE>"
-591 [-]: MOVE      R30 R15      ; R30 := R15
-592 [-]: GETGLOBAL R30 K27      ; R30 := string
-593 [-]: GETTABLE  R30 R30 K110 ; R30 := R30["0x633C4246"]
-594 [-]: MOVE      R31 R28      ; R31 := R28
-595 [-]: GETUPVAL  R32 U15      ; R32 := U15
-596 [-]: LOADK     R33 K111     ; R33 := " "
-597 [-]: CONCAT    R32 R32 R33  ; R32 := R32 .. R33
-598 [-]: LOADK     R33 K13      ; R33 := ""
-599 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
-600 [-]: MOVE      R28 R30      ; R28 := R30
-601 [-]: GETGLOBAL R30 K27      ; R30 := string
-602 [-]: GETTABLE  R30 R30 K110 ; R30 := R30["0x633C4246"]
-603 [-]: MOVE      R31 R28      ; R31 := R28
-604 [-]: GETUPVAL  R32 U15      ; R32 := U15
-605 [-]: LOADK     R33 K13      ; R33 := ""
-606 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
-607 [-]: MOVE      R28 R30      ; R28 := R30
-608 [-]: LOADNIL   R30 R30      ; R30 := nil
-609 [-]: GETGLOBAL R31 K0       ; R31 := 0x400E7765
-610 [-]: GETUPVAL  R32 U3       ; R32 := U3
-611 [-]: CALL      R31 2 2      ; R31 := R31(R32)
-612 [-]: TEST      R31 1        ; if R31 then PC := 618
-613 [-]: JMP       618          ; PC := 618
-614 [-]: GETUPVAL  R31 U3       ; R31 := U3
-615 [-]: SELF      R31 R31 K112 ; R32 := R31; R31 := R31["0x160C324B"]
-616 [-]: CALL      R31 2 2      ; R31 := R31(R32)
-617 [-]: MOVE      R30 R31      ; R30 := R31
-618 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
-619 [-]: SELF      R31 R31 K113 ; R32 := R31; R31 := R31["0x6724E8D6"]
-620 [-]: GETUPVAL  R33 U15      ; R33 := U15
-621 [-]: MOVE      R34 R30      ; R34 := R30
-622 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
-623 [-]: MOVE      R31 R15      ; R31 := R15
-624 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
-625 [-]: SELF      R31 R31 K68  ; R32 := R31; R31 := R31["0x1C19D966"]
-626 [-]: LOADK     R33 K59      ; R33 := "Marker.Callout"
-627 [-]: LOADK     R34 K91      ; R34 := "text"
-628 [-]: GETUPVAL  R35 U15      ; R35 := U15
-629 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-630 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
-631 [-]: SELF      R31 R31 K68  ; R32 := R31; R31 := R31["0x1C19D966"]
-632 [-]: LOADK     R33 K114     ; R33 := "Marker.CalloutMiddle"
-633 [-]: LOADK     R34 K91      ; R34 := "text"
-634 [-]: GETUPVAL  R35 U15      ; R35 := U15
-635 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-636 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
-637 [-]: SELF      R31 R31 K90  ; R32 := R31; R31 := R31["0xD6A79FE9"]
-638 [-]: LOADK     R33 K62      ; R33 := "Marker.Instruction"
-639 [-]: LOADK     R34 K91      ; R34 := "text"
-640 [-]: MOVE      R35 R28      ; R35 := R28
-641 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-642 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
-643 [-]: SELF      R31 R31 K90  ; R32 := R31; R31 := R31["0xD6A79FE9"]
-644 [-]: LOADK     R33 K115     ; R33 := "Marker.InstructionMiddle"
-645 [-]: LOADK     R34 K91      ; R34 := "text"
-646 [-]: MOVE      R35 R28      ; R35 := R28
-647 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-648 [-]: GETGLOBAL R31 K116     ; R31 := 0xF595ADDE
-649 [-]: GETGLOBAL R32 K1       ; R32 := mMovie
-650 [-]: SELF      R32 R32 K117 ; R33 := R32; R32 := R32["0x6B7B470B"]
-651 [-]: LOADK     R34 K62      ; R34 := "Marker.Instruction"
-652 [-]: LOADK     R35 K118     ; R35 := "textWidth"
-653 [-]: CALL      R32 4 0      ; R32,... := R32(R33,R34,R35)
-654 [-]: CALL      R31 0 2      ; R31 := R31(R32,...)
-655 [-]: GETGLOBAL R32 K116     ; R32 := 0xF595ADDE
-656 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
-657 [-]: SELF      R33 R33 K117 ; R34 := R33; R33 := R33["0x6B7B470B"]
-658 [-]: LOADK     R35 K62      ; R35 := "Marker.Instruction"
-659 [-]: LOADK     R36 K119     ; R36 := "_xscale"
-660 [-]: CALL      R33 4 0      ; R33,... := R33(R34,R35,R36)
-661 [-]: CALL      R32 0 2      ; R32 := R32(R33,...)
-662 [-]: DIV       R32 R32 K99  ; R32 := R32 / 100
-663 [-]: MUL       R31 R31 R32  ; R31 := R31 * R32
-664 [-]: EQ        0 R28 K111   ; if R28 ~= " " then PC := 667
-665 [-]: JMP       667          ; PC := 667
-666 [-]: SUB       R31 R31 K120 ; R31 := R31 - 14
-667 [-]: GETGLOBAL R32 K94      ; R32 := 0x52E17A90
-668 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
-669 [-]: LOADK     R34 K62      ; R34 := "Marker.Instruction"
-670 [-]: GETGLOBAL R35 K95      ; R35 := UISys
-671 [-]: GETTABLE  R35 R35 K121 ; R35 := R35["FlashInstance_EASE_OUT"]
-672 [-]: NEWTABLE  R36 1 0      ; R36 := {}
-673 [-]: LOADK     R37 K98      ; R37 := "_alpha"
-674 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
-675 [-]: NEWTABLE  R37 1 0      ; R37 := {}
-676 [-]: LOADK     R38 K99      ; R38 := 100
-677 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
-678 [-]: LOADK     R38 K100     ; R38 := 0.15000000596046
-679 [-]: LOADK     R39 K122     ; R39 := 0.070000000298023
-680 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
-681 [-]: GETGLOBAL R32 K94      ; R32 := 0x52E17A90
-682 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
-683 [-]: LOADK     R34 K123     ; R34 := "Marker.Panel"
-684 [-]: GETGLOBAL R35 K95      ; R35 := UISys
-685 [-]: GETTABLE  R35 R35 K121 ; R35 := R35["FlashInstance_EASE_OUT"]
-686 [-]: NEWTABLE  R36 1 0      ; R36 := {}
-687 [-]: LOADK     R37 K98      ; R37 := "_alpha"
-688 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
-689 [-]: NEWTABLE  R37 1 0      ; R37 := {}
-690 [-]: LOADK     R38 K99      ; R38 := 100
-691 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
-692 [-]: LOADK     R38 K100     ; R38 := 0.15000000596046
-693 [-]: LOADK     R39 K122     ; R39 := 0.070000000298023
-694 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
-695 [-]: GETGLOBAL R32 K94      ; R32 := 0x52E17A90
-696 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
-697 [-]: LOADK     R34 K115     ; R34 := "Marker.InstructionMiddle"
-698 [-]: GETGLOBAL R35 K95      ; R35 := UISys
-699 [-]: GETTABLE  R35 R35 K121 ; R35 := R35["FlashInstance_EASE_OUT"]
-700 [-]: NEWTABLE  R36 1 0      ; R36 := {}
-701 [-]: LOADK     R37 K98      ; R37 := "_alpha"
-702 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
-703 [-]: NEWTABLE  R37 1 0      ; R37 := {}
-704 [-]: LOADK     R38 K124     ; R38 := 20
-705 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
-706 [-]: LOADK     R38 K100     ; R38 := 0.15000000596046
-707 [-]: LOADK     R39 K122     ; R39 := 0.070000000298023
-708 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
-709 [-]: GETUPVAL  R32 U11      ; R32 := U11
-710 [-]: TEST      R32 0        ; if not R32 then PC := 726
-711 [-]: JMP       726          ; PC := 726
-712 [-]: GETGLOBAL R32 K94      ; R32 := 0x52E17A90
-713 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
-714 [-]: LOADK     R34 K125     ; R34 := "Marker.Circle"
-715 [-]: GETGLOBAL R35 K95      ; R35 := UISys
-716 [-]: GETTABLE  R35 R35 K121 ; R35 := R35["FlashInstance_EASE_OUT"]
-717 [-]: NEWTABLE  R36 1 0      ; R36 := {}
-718 [-]: LOADK     R37 K98      ; R37 := "_alpha"
-719 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
-720 [-]: NEWTABLE  R37 1 0      ; R37 := {}
-721 [-]: LOADK     R38 K99      ; R38 := 100
-722 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
-723 [-]: LOADK     R38 K100     ; R38 := 0.15000000596046
-724 [-]: LOADK     R39 K122     ; R39 := 0.070000000298023
-725 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
-726 [-]: GETGLOBAL R32 K93      ; R32 := 0x63B09107
-727 [-]: MOVE      R33 R14      ; R33 := R14
-728 [-]: CALL      R32 2 4      ; R32,R33,R34 := R32(R33)
-729 [-]: JMP       747          ; PC := 747
-730 [-]: GETGLOBAL R37 K94      ; R37 := 0x52E17A90
-731 [-]: GETGLOBAL R38 K1       ; R38 := mMovie
-732 [-]: LOADK     R39 K126     ; R39 := "Marker.Panel."
-733 [-]: MOVE      R40 R36      ; R40 := R36
-734 [-]: LOADK     R41 K127     ; R41 := ".RightSide"
-735 [-]: CONCAT    R39 R39 R41  ; R39 := R39 .. R40 .. R41
-736 [-]: GETGLOBAL R40 K95      ; R40 := UISys
-737 [-]: GETTABLE  R40 R40 K121 ; R40 := R40["FlashInstance_EASE_OUT"]
-738 [-]: NEWTABLE  R41 1 0      ; R41 := {}
-739 [-]: LOADK     R42 K84      ; R42 := "_width"
-740 [-]: SETLIST   R41 1 1      ; R41[(1-1)*FPF+i] := R(41+i), 1 <= i <= 1
-741 [-]: NEWTABLE  R42 1 0      ; R42 := {}
-742 [-]: ADD       R43 R31 K128 ; R43 := R31 + 34
-743 [-]: SETLIST   R42 1 1      ; R42[(1-1)*FPF+i] := R(42+i), 1 <= i <= 1
-744 [-]: LOADK     R43 K100     ; R43 := 0.15000000596046
-745 [-]: LOADK     R44 K122     ; R44 := 0.070000000298023
-746 [-]: CALL      R37 8 1      ; R37(R38,R39,R40,R41,R42,R43,R44)
-747 [-]: TFORLOOP  R32 2        ; R35,R36 :=  R32(R33,R34); if R35 ~= nil then begin PC = 730; R34 := R35 end
-748 [-]: JMP       730          ; PC := 730
-749 [-]: GETUPVAL  R37 U16      ; R37 := U16
-750 [-]: CALL      R37 1 1      ; R37()
-751 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
-752 [-]: GETGLOBAL R38 K129     ; R38 := markerFx
-753 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-754 [-]: TEST      R37 1        ; if R37 then PC := 832
-755 [-]: JMP       832          ; PC := 832
-756 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
-757 [-]: GETUPVAL  R38 U3       ; R38 := U3
-758 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-759 [-]: TEST      R37 1        ; if R37 then PC := 832
-760 [-]: JMP       832          ; PC := 832
-761 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
-762 [-]: GETUPVAL  R38 U3       ; R38 := U3
-763 [-]: SELF      R38 R38 K130 ; R39 := R38; R38 := R38["0x5AF30A19"]
-764 [-]: CALL      R38 2 0      ; R38,... := R38(R39)
-765 [-]: CALL      R37 0 2      ; R37 := R37(R38,...)
-766 [-]: TEST      R37 1        ; if R37 then PC := 832
-767 [-]: JMP       832          ; PC := 832
-768 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
-769 [-]: GETUPVAL  R38 U6       ; R38 := U6
-770 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-771 [-]: TEST      R37 1        ; if R37 then PC := 832
-772 [-]: JMP       832          ; PC := 832
-773 [-]: GETUPVAL  R37 U10      ; R37 := U10
-774 [-]: GETTABLE  R37 R37 K131 ; R37 := R37["0x69B983D"]
-775 [-]: GETGLOBAL R38 K1       ; R38 := mMovie
-776 [-]: LOADK     R39 K132     ; R39 := "Marker"
-777 [-]: CALL      R37 3 3      ; R37,R38 := R37(R38,R39)
-778 [-]: GETUPVAL  R39 U6       ; R39 := U6
-779 [-]: SELF      R39 R39 K23  ; R40 := R39; R39 := R39["0x8B598ED4"]
-780 [-]: GETGLOBAL R41 K133     ; R41 := gZipLineActionType
-781 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
-782 [-]: TEST      R39 0        ; if not R39 then PC := 804
-783 [-]: JMP       804          ; PC := 804
-784 [-]: GETUPVAL  R39 U3       ; R39 := U3
-785 [-]: SELF      R39 R39 K134 ; R40 := R39; R39 := R39["0xA7003AD9"]
-786 [-]: CALL      R39 2 2      ; R39 := R39(R40)
-787 [-]: GETGLOBAL R40 K135     ; R40 := 0xA0DB3B89
-788 [-]: GETUPVAL  R41 U3       ; R41 := U3
-789 [-]: SELF      R41 R41 K130 ; R42 := R41; R41 := R41["0x5AF30A19"]
-790 [-]: CALL      R41 2 2      ; R41 := R41(R42)
-791 [-]: SELF      R41 R41 K136 ; R42 := R41; R41 := R41["0xBA563DE8"]
-792 [-]: CALL      R41 2 0      ; R41,... := R41(R42)
-793 [-]: CALL      R40 0 2      ; R40 := R40(R41,...)
-794 [-]: MUL       R41 R40 K137 ; R41 := R40 * 1.5
-795 [-]: ADD       R41 R39 R41  ; R41 := R39 + R41
-796 [-]: GETUPVAL  R42 U6       ; R42 := U6
-797 [-]: SELF      R42 R42 K138 ; R43 := R42; R42 := R42["0xF2341BE4"]
-798 [-]: MOVE      R44 R41      ; R44 := R41
-799 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
-800 [-]: GETTABLE  R43 R42 K45  ; R43 := R42["y"]
-801 [-]: SETTABLE  R42 K45 R43  ; R42["y"] := R43
-802 [-]: MOVE      R42 R17      ; R42 := R17
-803 [-]: JMP       832          ; PC := 832
-804 [-]: GETUPVAL  R43 U6       ; R43 := U6
-805 [-]: SELF      R43 R43 K139 ; R44 := R43; R43 := R43["0x307B8003"]
-806 [-]: CALL      R43 2 2      ; R43 := R43(R44)
-807 [-]: TEST      R43 0        ; if not R43 then PC := 826
-808 [-]: JMP       826          ; PC := 826
-809 [-]: GETUPVAL  R43 U6       ; R43 := U6
-810 [-]: SELF      R43 R43 K42  ; R44 := R43; R43 := R43["0xA100EDEC"]
-811 [-]: CALL      R43 2 2      ; R43 := R43(R44)
-812 [-]: GETUPVAL  R44 U3       ; R44 := U3
-813 [-]: SELF      R44 R44 K134 ; R45 := R44; R44 := R44["0xA7003AD9"]
-814 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-815 [-]: GETGLOBAL R45 K140     ; R45 := 0x4CBE9A09
-816 [-]: MOVE      R46 R43      ; R46 := R43
-817 [-]: GETUPVAL  R47 U3       ; R47 := U3
-818 [-]: SELF      R47 R47 K130 ; R48 := R47; R47 := R47["0x5AF30A19"]
-819 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-820 [-]: SELF      R47 R47 K136 ; R48 := R47; R47 := R47["0xBA563DE8"]
-821 [-]: CALL      R47 2 0      ; R47,... := R47(R48)
-822 [-]: CALL      R45 0 2      ; R45 := R45(R46,...)
-823 [-]: ADD       R44 R44 R45  ; R44 := R44 + R45
-824 [-]: MOVE      R44 R17      ; R44 := R17
-825 [-]: JMP       832          ; PC := 832
-826 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
-827 [-]: SELF      R44 R44 K141 ; R45 := R44; R44 := R44["0x2E5D8BC8"]
-828 [-]: MOVE      R46 R37      ; R46 := R37
-829 [-]: MOVE      R47 R38      ; R47 := R38
-830 [-]: CALL      R44 4 2      ; R44 := R44(R45,R46,R47)
-831 [-]: MOVE      R44 R17      ; R44 := R17
-832 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
-833 [-]: SELF      R44 R44 K68  ; R45 := R44; R44 := R44["0x1C19D966"]
-834 [-]: LOADK     R46 K142     ; R46 := "Marker.Corona"
-835 [-]: LOADK     R47 K70      ; R47 := "_visible"
-836 [-]: GETUPVAL  R48 U11      ; R48 := U11
-837 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
-838 [-]: JMP       944          ; PC := 944
-839 [-]: GETGLOBAL R44 K0       ; R44 := 0x400E7765
-840 [-]: GETGLOBAL R45 K11      ; R45 := _T
-841 [-]: GETTABLE  R45 R45 K143 ; R45 := R45["WeaponPickupDetailMovie"]
-842 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-843 [-]: TEST      R44 1        ; if R44 then PC := 851
-844 [-]: JMP       851          ; PC := 851
-845 [-]: GETGLOBAL R44 K11      ; R44 := _T
-846 [-]: GETTABLE  R44 R44 K143 ; R44 := R44["WeaponPickupDetailMovie"]
-847 [-]: SELF      R44 R44 K144 ; R45 := R44; R44 := R44["0xA58BB96C"]
-848 [-]: CALL      R44 2 1      ; R44(R45)
-849 [-]: GETGLOBAL R44 K11      ; R44 := _T
-850 [-]: SETTABLE  R44 K145 K20 ; R44["WeaponPickupDetailText"] := nil
-851 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
-852 [-]: SELF      R44 R44 K90  ; R45 := R44; R44 := R44["0xD6A79FE9"]
-853 [-]: LOADK     R46 K59      ; R46 := "Marker.Callout"
-854 [-]: LOADK     R47 K91      ; R47 := "text"
-855 [-]: LOADK     R48 K13      ; R48 := ""
-856 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
-857 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
-858 [-]: SELF      R44 R44 K90  ; R45 := R44; R44 := R44["0xD6A79FE9"]
-859 [-]: LOADK     R46 K114     ; R46 := "Marker.CalloutMiddle"
-860 [-]: LOADK     R47 K91      ; R47 := "text"
-861 [-]: LOADK     R48 K13      ; R48 := ""
-862 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
-863 [-]: GETGLOBAL R44 K94      ; R44 := 0x52E17A90
-864 [-]: GETGLOBAL R45 K1       ; R45 := mMovie
-865 [-]: LOADK     R46 K62      ; R46 := "Marker.Instruction"
-866 [-]: GETGLOBAL R47 K95      ; R47 := UISys
-867 [-]: GETTABLE  R47 R47 K121 ; R47 := R47["FlashInstance_EASE_OUT"]
-868 [-]: NEWTABLE  R48 1 0      ; R48 := {}
-869 [-]: LOADK     R49 K98      ; R49 := "_alpha"
-870 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
-871 [-]: NEWTABLE  R49 1 0      ; R49 := {}
-872 [-]: LOADK     R50 K6       ; R50 := 0
-873 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
-874 [-]: LOADK     R50 K100     ; R50 := 0.15000000596046
-875 [-]: LOADK     R51 K6       ; R51 := 0
-876 [-]: CLOSURE   R52 0        ; R52 := closure(Function #4.1)
-877 [-]: CALL      R44 9 1      ; R44(R45,R46,R47,R48,R49,R50,R51,R52)
-878 [-]: GETGLOBAL R44 K94      ; R44 := 0x52E17A90
+412 [-]: SELF      R19 R19 K60  ; R20 := R19; R19 := R19["0x7E1F26D7"]
+413 [-]: LOADK     R21 K67      ; R21 := "Marker.Panel.Foreground.RightSide"
+414 [-]: GETUPVAL  R22 U10      ; R22 := U10
+415 [-]: GETTABLE  R22 R22 K62  ; R22 := R22["0xF81722A2"]
+416 [-]: GETUPVAL  R23 U11      ; R23 := U11
+417 [-]: GETGLOBAL R24 K14      ; R24 := _G
+418 [-]: GETTABLE  R24 R24 K68  ; R24 := R24["UIMaterial_Rectangle"]
+419 [-]: GETGLOBAL R25 K14      ; R25 := _G
+420 [-]: GETTABLE  R25 R25 K69  ; R25 := R25["UIMaterial_RectangleNoDepth"]
+421 [-]: CALL      R22 4 0      ; R22,... := R22(R23,R24,R25)
+422 [-]: CALL      R19 0 1      ; R19(R20,...)
+423 [-]: GETUPVAL  R19 U8       ; R19 := U8
+424 [-]: TEST      R19 0        ; if not R19 then PC := 515
+425 [-]: JMP       515          ; PC := 515
+426 [-]: GETGLOBAL R19 K1       ; R19 := mMovie
+427 [-]: SELF      R19 R19 K70  ; R20 := R19; R19 := R19["0x1C19D966"]
+428 [-]: LOADK     R21 K71      ; R21 := "Marker.Item"
+429 [-]: LOADK     R22 K72      ; R22 := "_visible"
+430 [-]: MOVE      R23 R1       ; R23 := R1
+431 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
+432 [-]: GETGLOBAL R19 K73      ; R19 := 0xD26C89A0
+433 [-]: GETGLOBAL R20 K1       ; R20 := mMovie
+434 [-]: SELF      R20 R20 K74  ; R21 := R20; R20 := R20["0x5DB0BD4"]
+435 [-]: GETGLOBAL R22 K11      ; R22 := _T
+436 [-]: GETTABLE  R22 R22 K22  ; R22 := R22["DisplayItemInContextAction"]
+437 [-]: SELF      R22 R22 K75  ; R23 := R22; R22 := R22["0x616C74B6"]
+438 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+439 [-]: SELF      R22 R22 K76  ; R23 := R22; R22 := R22["0x5EC7A3D2"]
+440 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+441 [-]: MOVE      R23 R0       ; R23 := R0
+442 [-]: CALL      R20 4 0      ; R20,... := R20(R21,R22,R23)
+443 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
+444 [-]: NEWTABLE  R20 0 1      ; R20 := {}
+445 [-]: GETGLOBAL R21 K78      ; R21 := nonDepthTestIconMaterial
+446 [-]: SETTABLE  R20 K77 R21  ; R20["Material"] := R21
+447 [-]: GETUPVAL  R21 U12      ; R21 := U12
+448 [-]: GETTABLE  R21 R21 K81  ; R21 := R21["0xF1A9732E"]
+449 [-]: GETGLOBAL R22 K11      ; R22 := _T
+450 [-]: GETTABLE  R22 R22 K22  ; R22 := R22["DisplayItemInContextAction"]
+451 [-]: MOVE      R23 R1       ; R23 := R1
+452 [-]: CALL      R21 3 3      ; R21,R22 := R21(R22,R23)
+453 [-]: SETTABLE  R20 K80 R22  ; R20["Themed"] := R22
+454 [-]: SETTABLE  R20 K79 R21  ; R20["Icon"] := R21
+455 [-]: GETUPVAL  R21 U12      ; R21 := U12
+456 [-]: GETTABLE  R21 R21 K82  ; R21 := R21["0x323C4EEF"]
+457 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+458 [-]: LOADK     R23 K71      ; R23 := "Marker.Item"
+459 [-]: MOVE      R24 R20      ; R24 := R20
+460 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
+461 [-]: GETUPVAL  R21 U10      ; R21 := U10
+462 [-]: GETTABLE  R21 R21 K62  ; R21 := R21["0xF81722A2"]
+463 [-]: GETTABLE  R22 R20 K80  ; R22 := R20["Themed"]
+464 [-]: LOADK     R23 K83      ; R23 := 135
+465 [-]: LOADK     R24 K84      ; R24 := 216
+466 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
+467 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+468 [-]: SELF      R22 R22 K70  ; R23 := R22; R22 := R22["0x1C19D966"]
+469 [-]: LOADK     R24 K85      ; R24 := "Marker.Item.Image"
+470 [-]: LOADK     R25 K86      ; R25 := "_width"
+471 [-]: MOVE      R26 R21      ; R26 := R21
+472 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+473 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+474 [-]: SELF      R22 R22 K70  ; R23 := R22; R22 := R22["0x1C19D966"]
+475 [-]: LOADK     R24 K87      ; R24 := "Marker.Item.Shadow"
+476 [-]: LOADK     R25 K86      ; R25 := "_width"
+477 [-]: MOVE      R26 R21      ; R26 := R21
+478 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+479 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+480 [-]: SELF      R22 R22 K70  ; R23 := R22; R22 := R22["0x1C19D966"]
+481 [-]: LOADK     R24 K88      ; R24 := "Marker.Item.BackingTexture"
+482 [-]: LOADK     R25 K86      ; R25 := "_width"
+483 [-]: MOVE      R26 R21      ; R26 := R21
+484 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+485 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+486 [-]: SELF      R22 R22 K70  ; R23 := R22; R22 := R22["0x1C19D966"]
+487 [-]: LOADK     R24 K89      ; R24 := "Marker.Item.Blacker"
+488 [-]: LOADK     R25 K86      ; R25 := "_width"
+489 [-]: MOVE      R26 R21      ; R26 := R21
+490 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+491 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+492 [-]: SELF      R22 R22 K70  ; R23 := R22; R22 := R22["0x1C19D966"]
+493 [-]: LOADK     R24 K90      ; R24 := "Marker.Item.Blurer"
+494 [-]: LOADK     R25 K86      ; R25 := "_width"
+495 [-]: MOVE      R26 R21      ; R26 := R21
+496 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+497 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+498 [-]: SELF      R22 R22 K70  ; R23 := R22; R22 := R22["0x1C19D966"]
+499 [-]: LOADK     R24 K91      ; R24 := "Marker.Item.Name"
+500 [-]: LOADK     R25 K86      ; R25 := "_width"
+501 [-]: MOVE      R26 R21      ; R26 := R21
+502 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+503 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+504 [-]: SELF      R22 R22 K92  ; R23 := R22; R22 := R22["0xD6A79FE9"]
+505 [-]: LOADK     R24 K91      ; R24 := "Marker.Item.Name"
+506 [-]: LOADK     R25 K93      ; R25 := "text"
+507 [-]: MOVE      R26 R19      ; R26 := R19
+508 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+509 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+510 [-]: SELF      R22 R22 K60  ; R23 := R22; R22 := R22["0x7E1F26D7"]
+511 [-]: LOADK     R24 K91      ; R24 := "Marker.Item.Name"
+512 [-]: GETGLOBAL R25 K94      ; R25 := nonDepthTestMaterial
+513 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
+514 [-]: JMP       521          ; PC := 521
+515 [-]: GETGLOBAL R22 K1       ; R22 := mMovie
+516 [-]: SELF      R22 R22 K70  ; R23 := R22; R22 := R22["0x1C19D966"]
+517 [-]: LOADK     R24 K71      ; R24 := "Marker.Item"
+518 [-]: LOADK     R25 K72      ; R25 := "_visible"
+519 [-]: MOVE      R26 R0       ; R26 := R0
+520 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
+521 [-]: GETGLOBAL R22 K95      ; R22 := 0x63B09107
+522 [-]: GETUPVAL  R23 U13      ; R23 := U13
+523 [-]: CALL      R22 2 4      ; R22,R23,R24 := R22(R23)
+524 [-]: JMP       551          ; PC := 551
+525 [-]: GETUPVAL  R27 U14      ; R27 := U14
+526 [-]: MOVE      R28 R25      ; R28 := R25
+527 [-]: MOVE      R29 R12      ; R29 := R12
+528 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
+529 [-]: GETGLOBAL R28 K96      ; R28 := 0x52E17A90
+530 [-]: GETGLOBAL R29 K1       ; R29 := mMovie
+531 [-]: MOVE      R30 R26      ; R30 := R26
+532 [-]: GETGLOBAL R31 K97      ; R31 := UISys
+533 [-]: GETTABLE  R31 R31 K98  ; R31 := R31["FlashInstance_EASE_IN"]
+534 [-]: NEWTABLE  R32 2 0      ; R32 := {}
+535 [-]: LOADK     R33 K99      ; R33 := "_x"
+536 [-]: LOADK     R34 K100     ; R34 := "_alpha"
+537 [-]: SETLIST   R32 2 1      ; R32[(1-1)*FPF+i] := R(32+i), 1 <= i <= 2
+538 [-]: NEWTABLE  R33 1 0      ; R33 := {}
+539 [-]: GETTABLE  R34 R27 K44  ; R34 := R27["x"]
+540 [-]: GETUPVAL  R35 U10      ; R35 := U10
+541 [-]: GETTABLE  R35 R35 K62  ; R35 := R35["0xF81722A2"]
+542 [-]: TESTSET   R36 R12 0    ; if not R12 then PC := 545 else R36 := R12
+543 [-]: JMP       545          ; PC := 545
+544 [-]: GETUPVAL  R36 U11      ; R36 := U11
+545 [-]: LOADK     R37 K101     ; R37 := 100
+546 [-]: LOADK     R38 K6       ; R38 := 0
+547 [-]: CALL      R35 4 0      ; R35,... := R35(R36,R37,R38)
+548 [-]: SETLIST   R33 0 1      ; R33[(1-1)*FPF+i] := R(33+i), 1 <= i <= 0
+549 [-]: LOADK     R34 K102     ; R34 := 0.15000000596046
+550 [-]: CALL      R28 7 1      ; R28(R29,R30,R31,R32,R33,R34)
+551 [-]: TFORLOOP  R22 2        ; R25,R26 :=  R22(R23,R24); if R25 ~= nil then begin PC = 525; R24 := R25 end
+552 [-]: JMP       525          ; PC := 525
+553 [-]: TEST      R13 0        ; if not R13 then PC := 558
+554 [-]: JMP       558          ; PC := 558
+555 [-]: EQ        0 R3 K13     ; if R3 ~= "" then PC := 558
+556 [-]: JMP       558          ; PC := 558
+557 [-]: MOVE      R12 R0       ; R12 := R0
+558 [-]: TEST      R12 0        ; if not R12 then PC := 854
+559 [-]: JMP       854          ; PC := 854
+560 [-]: GETGLOBAL R28 K1       ; R28 := mMovie
+561 [-]: SELF      R28 R28 K103 ; R29 := R28; R28 := R28["0x625791A8"]
+562 [-]: MOVE      R30 R1       ; R30 := R1
+563 [-]: CALL      R28 3 1      ; R28(R29,R30)
+564 [-]: GETGLOBAL R28 K1       ; R28 := mMovie
+565 [-]: SELF      R28 R28 K74  ; R29 := R28; R28 := R28["0x5DB0BD4"]
+566 [-]: MOVE      R30 R3       ; R30 := R3
+567 [-]: MOVE      R31 R0       ; R31 := R0
+568 [-]: CALL      R28 4 2      ; R28 := R28(R29,R30,R31)
+569 [-]: LOADK     R29 K104     ; R29 := "<USE>"
+570 [-]: MOVE      R29 R15      ; R29 := R15
+571 [-]: MOVE      R29 R0       ; R29 := R0
+572 [-]: TEST      R29 0        ; if not R29 then PC := 607
+573 [-]: JMP       607          ; PC := 607
+574 [-]: TEST      R13 0        ; if not R13 then PC := 607
+575 [-]: JMP       607          ; PC := 607
+576 [-]: GETGLOBAL R29 K0       ; R29 := 0x400E7765
+577 [-]: GETUPVAL  R30 U1       ; R30 := U1
+578 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+579 [-]: TEST      R29 1        ; if R29 then PC := 607
+580 [-]: JMP       607          ; PC := 607
+581 [-]: GETGLOBAL R29 K0       ; R29 := 0x400E7765
+582 [-]: GETUPVAL  R30 U3       ; R30 := U3
+583 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+584 [-]: TEST      R29 1        ; if R29 then PC := 607
+585 [-]: JMP       607          ; PC := 607
+586 [-]: GETUPVAL  R29 U3       ; R29 := U3
+587 [-]: SELF      R29 R29 K49  ; R30 := R29; R29 := R29["0x8DB5D01F"]
+588 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+589 [-]: SELF      R29 R29 K105 ; R30 := R29; R29 := R29["0x6EA0928F"]
+590 [-]: GETGLOBAL R31 K106     ; R31 := Engine
+591 [-]: GETTABLE  R31 R31 K107 ; R31 := R31["MAIN_HAND"]
+592 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
+593 [-]: GETGLOBAL R30 K0       ; R30 := 0x400E7765
+594 [-]: MOVE      R31 R29      ; R31 := R29
+595 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+596 [-]: TEST      R30 1        ; if R30 then PC := 605
+597 [-]: JMP       605          ; PC := 605
+598 [-]: SELF      R30 R29 K108 ; R31 := R29; R30 := R29["0xCCDDAF9B"]
+599 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+600 [-]: TEST      R30 0        ; if not R30 then PC := 605
+601 [-]: JMP       605          ; PC := 605
+602 [-]: LOADK     R30 K109     ; R30 := "<MELEE_SWING>"
+603 [-]: MOVE      R30 R15      ; R30 := R15
+604 [-]: JMP       607          ; PC := 607
+605 [-]: LOADK     R30 K110     ; R30 := "<MELEE>"
+606 [-]: MOVE      R30 R15      ; R30 := R15
+607 [-]: GETGLOBAL R30 K27      ; R30 := string
+608 [-]: GETTABLE  R30 R30 K111 ; R30 := R30["0x633C4246"]
+609 [-]: MOVE      R31 R28      ; R31 := R28
+610 [-]: GETUPVAL  R32 U15      ; R32 := U15
+611 [-]: LOADK     R33 K112     ; R33 := " "
+612 [-]: CONCAT    R32 R32 R33  ; R32 := R32 .. R33
+613 [-]: LOADK     R33 K13      ; R33 := ""
+614 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
+615 [-]: MOVE      R28 R30      ; R28 := R30
+616 [-]: GETGLOBAL R30 K27      ; R30 := string
+617 [-]: GETTABLE  R30 R30 K111 ; R30 := R30["0x633C4246"]
+618 [-]: MOVE      R31 R28      ; R31 := R28
+619 [-]: GETUPVAL  R32 U15      ; R32 := U15
+620 [-]: LOADK     R33 K13      ; R33 := ""
+621 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
+622 [-]: MOVE      R28 R30      ; R28 := R30
+623 [-]: LOADNIL   R30 R30      ; R30 := nil
+624 [-]: GETGLOBAL R31 K0       ; R31 := 0x400E7765
+625 [-]: GETUPVAL  R32 U3       ; R32 := U3
+626 [-]: CALL      R31 2 2      ; R31 := R31(R32)
+627 [-]: TEST      R31 1        ; if R31 then PC := 633
+628 [-]: JMP       633          ; PC := 633
+629 [-]: GETUPVAL  R31 U3       ; R31 := U3
+630 [-]: SELF      R31 R31 K113 ; R32 := R31; R31 := R31["0x160C324B"]
+631 [-]: CALL      R31 2 2      ; R31 := R31(R32)
+632 [-]: MOVE      R30 R31      ; R30 := R31
+633 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
+634 [-]: SELF      R31 R31 K114 ; R32 := R31; R31 := R31["0x6724E8D6"]
+635 [-]: GETUPVAL  R33 U15      ; R33 := U15
+636 [-]: MOVE      R34 R30      ; R34 := R30
+637 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
+638 [-]: MOVE      R31 R15      ; R31 := R15
+639 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
+640 [-]: SELF      R31 R31 K70  ; R32 := R31; R31 := R31["0x1C19D966"]
+641 [-]: LOADK     R33 K61      ; R33 := "Marker.Callout"
+642 [-]: LOADK     R34 K93      ; R34 := "text"
+643 [-]: GETUPVAL  R35 U15      ; R35 := U15
+644 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
+645 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
+646 [-]: SELF      R31 R31 K70  ; R32 := R31; R31 := R31["0x1C19D966"]
+647 [-]: LOADK     R33 K115     ; R33 := "Marker.CalloutMiddle"
+648 [-]: LOADK     R34 K93      ; R34 := "text"
+649 [-]: GETUPVAL  R35 U15      ; R35 := U15
+650 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
+651 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
+652 [-]: SELF      R31 R31 K92  ; R32 := R31; R31 := R31["0xD6A79FE9"]
+653 [-]: LOADK     R33 K64      ; R33 := "Marker.Instruction"
+654 [-]: LOADK     R34 K93      ; R34 := "text"
+655 [-]: MOVE      R35 R28      ; R35 := R28
+656 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
+657 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
+658 [-]: SELF      R31 R31 K92  ; R32 := R31; R31 := R31["0xD6A79FE9"]
+659 [-]: LOADK     R33 K116     ; R33 := "Marker.InstructionMiddle"
+660 [-]: LOADK     R34 K93      ; R34 := "text"
+661 [-]: MOVE      R35 R28      ; R35 := R28
+662 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
+663 [-]: GETGLOBAL R31 K117     ; R31 := 0xF595ADDE
+664 [-]: GETGLOBAL R32 K1       ; R32 := mMovie
+665 [-]: SELF      R32 R32 K118 ; R33 := R32; R32 := R32["0x6B7B470B"]
+666 [-]: LOADK     R34 K64      ; R34 := "Marker.Instruction"
+667 [-]: LOADK     R35 K119     ; R35 := "textWidth"
+668 [-]: CALL      R32 4 0      ; R32,... := R32(R33,R34,R35)
+669 [-]: CALL      R31 0 2      ; R31 := R31(R32,...)
+670 [-]: GETGLOBAL R32 K117     ; R32 := 0xF595ADDE
+671 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
+672 [-]: SELF      R33 R33 K118 ; R34 := R33; R33 := R33["0x6B7B470B"]
+673 [-]: LOADK     R35 K64      ; R35 := "Marker.Instruction"
+674 [-]: LOADK     R36 K120     ; R36 := "_xscale"
+675 [-]: CALL      R33 4 0      ; R33,... := R33(R34,R35,R36)
+676 [-]: CALL      R32 0 2      ; R32 := R32(R33,...)
+677 [-]: DIV       R32 R32 K101 ; R32 := R32 / 100
+678 [-]: MUL       R31 R31 R32  ; R31 := R31 * R32
+679 [-]: EQ        0 R28 K112   ; if R28 ~= " " then PC := 682
+680 [-]: JMP       682          ; PC := 682
+681 [-]: SUB       R31 R31 K121 ; R31 := R31 - 14
+682 [-]: GETGLOBAL R32 K96      ; R32 := 0x52E17A90
+683 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
+684 [-]: LOADK     R34 K64      ; R34 := "Marker.Instruction"
+685 [-]: GETGLOBAL R35 K97      ; R35 := UISys
+686 [-]: GETTABLE  R35 R35 K122 ; R35 := R35["FlashInstance_EASE_OUT"]
+687 [-]: NEWTABLE  R36 1 0      ; R36 := {}
+688 [-]: LOADK     R37 K100     ; R37 := "_alpha"
+689 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
+690 [-]: NEWTABLE  R37 1 0      ; R37 := {}
+691 [-]: LOADK     R38 K101     ; R38 := 100
+692 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
+693 [-]: LOADK     R38 K102     ; R38 := 0.15000000596046
+694 [-]: LOADK     R39 K123     ; R39 := 0.070000000298023
+695 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
+696 [-]: GETGLOBAL R32 K96      ; R32 := 0x52E17A90
+697 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
+698 [-]: LOADK     R34 K124     ; R34 := "Marker.Panel"
+699 [-]: GETGLOBAL R35 K97      ; R35 := UISys
+700 [-]: GETTABLE  R35 R35 K122 ; R35 := R35["FlashInstance_EASE_OUT"]
+701 [-]: NEWTABLE  R36 1 0      ; R36 := {}
+702 [-]: LOADK     R37 K100     ; R37 := "_alpha"
+703 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
+704 [-]: NEWTABLE  R37 1 0      ; R37 := {}
+705 [-]: LOADK     R38 K101     ; R38 := 100
+706 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
+707 [-]: LOADK     R38 K102     ; R38 := 0.15000000596046
+708 [-]: LOADK     R39 K123     ; R39 := 0.070000000298023
+709 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
+710 [-]: GETGLOBAL R32 K96      ; R32 := 0x52E17A90
+711 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
+712 [-]: LOADK     R34 K116     ; R34 := "Marker.InstructionMiddle"
+713 [-]: GETGLOBAL R35 K97      ; R35 := UISys
+714 [-]: GETTABLE  R35 R35 K122 ; R35 := R35["FlashInstance_EASE_OUT"]
+715 [-]: NEWTABLE  R36 1 0      ; R36 := {}
+716 [-]: LOADK     R37 K100     ; R37 := "_alpha"
+717 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
+718 [-]: NEWTABLE  R37 1 0      ; R37 := {}
+719 [-]: LOADK     R38 K125     ; R38 := 20
+720 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
+721 [-]: LOADK     R38 K102     ; R38 := 0.15000000596046
+722 [-]: LOADK     R39 K123     ; R39 := 0.070000000298023
+723 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
+724 [-]: GETUPVAL  R32 U11      ; R32 := U11
+725 [-]: TEST      R32 0        ; if not R32 then PC := 741
+726 [-]: JMP       741          ; PC := 741
+727 [-]: GETGLOBAL R32 K96      ; R32 := 0x52E17A90
+728 [-]: GETGLOBAL R33 K1       ; R33 := mMovie
+729 [-]: LOADK     R34 K126     ; R34 := "Marker.Circle"
+730 [-]: GETGLOBAL R35 K97      ; R35 := UISys
+731 [-]: GETTABLE  R35 R35 K122 ; R35 := R35["FlashInstance_EASE_OUT"]
+732 [-]: NEWTABLE  R36 1 0      ; R36 := {}
+733 [-]: LOADK     R37 K100     ; R37 := "_alpha"
+734 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
+735 [-]: NEWTABLE  R37 1 0      ; R37 := {}
+736 [-]: LOADK     R38 K101     ; R38 := 100
+737 [-]: SETLIST   R37 1 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 1
+738 [-]: LOADK     R38 K102     ; R38 := 0.15000000596046
+739 [-]: LOADK     R39 K123     ; R39 := 0.070000000298023
+740 [-]: CALL      R32 8 1      ; R32(R33,R34,R35,R36,R37,R38,R39)
+741 [-]: GETGLOBAL R32 K95      ; R32 := 0x63B09107
+742 [-]: MOVE      R33 R14      ; R33 := R14
+743 [-]: CALL      R32 2 4      ; R32,R33,R34 := R32(R33)
+744 [-]: JMP       762          ; PC := 762
+745 [-]: GETGLOBAL R37 K96      ; R37 := 0x52E17A90
+746 [-]: GETGLOBAL R38 K1       ; R38 := mMovie
+747 [-]: LOADK     R39 K127     ; R39 := "Marker.Panel."
+748 [-]: MOVE      R40 R36      ; R40 := R36
+749 [-]: LOADK     R41 K128     ; R41 := ".RightSide"
+750 [-]: CONCAT    R39 R39 R41  ; R39 := R39 .. R40 .. R41
+751 [-]: GETGLOBAL R40 K97      ; R40 := UISys
+752 [-]: GETTABLE  R40 R40 K122 ; R40 := R40["FlashInstance_EASE_OUT"]
+753 [-]: NEWTABLE  R41 1 0      ; R41 := {}
+754 [-]: LOADK     R42 K86      ; R42 := "_width"
+755 [-]: SETLIST   R41 1 1      ; R41[(1-1)*FPF+i] := R(41+i), 1 <= i <= 1
+756 [-]: NEWTABLE  R42 1 0      ; R42 := {}
+757 [-]: ADD       R43 R31 K129 ; R43 := R31 + 34
+758 [-]: SETLIST   R42 1 1      ; R42[(1-1)*FPF+i] := R(42+i), 1 <= i <= 1
+759 [-]: LOADK     R43 K102     ; R43 := 0.15000000596046
+760 [-]: LOADK     R44 K123     ; R44 := 0.070000000298023
+761 [-]: CALL      R37 8 1      ; R37(R38,R39,R40,R41,R42,R43,R44)
+762 [-]: TFORLOOP  R32 2        ; R35,R36 :=  R32(R33,R34); if R35 ~= nil then begin PC = 745; R34 := R35 end
+763 [-]: JMP       745          ; PC := 745
+764 [-]: GETUPVAL  R37 U16      ; R37 := U16
+765 [-]: CALL      R37 1 1      ; R37()
+766 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
+767 [-]: GETGLOBAL R38 K130     ; R38 := markerFx
+768 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+769 [-]: TEST      R37 1        ; if R37 then PC := 847
+770 [-]: JMP       847          ; PC := 847
+771 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
+772 [-]: GETUPVAL  R38 U3       ; R38 := U3
+773 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+774 [-]: TEST      R37 1        ; if R37 then PC := 847
+775 [-]: JMP       847          ; PC := 847
+776 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
+777 [-]: GETUPVAL  R38 U3       ; R38 := U3
+778 [-]: SELF      R38 R38 K131 ; R39 := R38; R38 := R38["0x5AF30A19"]
+779 [-]: CALL      R38 2 0      ; R38,... := R38(R39)
+780 [-]: CALL      R37 0 2      ; R37 := R37(R38,...)
+781 [-]: TEST      R37 1        ; if R37 then PC := 847
+782 [-]: JMP       847          ; PC := 847
+783 [-]: GETGLOBAL R37 K0       ; R37 := 0x400E7765
+784 [-]: GETUPVAL  R38 U6       ; R38 := U6
+785 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+786 [-]: TEST      R37 1        ; if R37 then PC := 847
+787 [-]: JMP       847          ; PC := 847
+788 [-]: GETUPVAL  R37 U10      ; R37 := U10
+789 [-]: GETTABLE  R37 R37 K132 ; R37 := R37["0x69B983D"]
+790 [-]: GETGLOBAL R38 K1       ; R38 := mMovie
+791 [-]: LOADK     R39 K133     ; R39 := "Marker"
+792 [-]: CALL      R37 3 3      ; R37,R38 := R37(R38,R39)
+793 [-]: GETUPVAL  R39 U6       ; R39 := U6
+794 [-]: SELF      R39 R39 K23  ; R40 := R39; R39 := R39["0x8B598ED4"]
+795 [-]: GETGLOBAL R41 K134     ; R41 := gZipLineActionType
+796 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
+797 [-]: TEST      R39 0        ; if not R39 then PC := 819
+798 [-]: JMP       819          ; PC := 819
+799 [-]: GETUPVAL  R39 U3       ; R39 := U3
+800 [-]: SELF      R39 R39 K135 ; R40 := R39; R39 := R39["0xA7003AD9"]
+801 [-]: CALL      R39 2 2      ; R39 := R39(R40)
+802 [-]: GETGLOBAL R40 K136     ; R40 := 0xA0DB3B89
+803 [-]: GETUPVAL  R41 U3       ; R41 := U3
+804 [-]: SELF      R41 R41 K131 ; R42 := R41; R41 := R41["0x5AF30A19"]
+805 [-]: CALL      R41 2 2      ; R41 := R41(R42)
+806 [-]: SELF      R41 R41 K137 ; R42 := R41; R41 := R41["0xBA563DE8"]
+807 [-]: CALL      R41 2 0      ; R41,... := R41(R42)
+808 [-]: CALL      R40 0 2      ; R40 := R40(R41,...)
+809 [-]: MUL       R41 R40 K138 ; R41 := R40 * 1.5
+810 [-]: ADD       R41 R39 R41  ; R41 := R39 + R41
+811 [-]: GETUPVAL  R42 U6       ; R42 := U6
+812 [-]: SELF      R42 R42 K139 ; R43 := R42; R42 := R42["0xF2341BE4"]
+813 [-]: MOVE      R44 R41      ; R44 := R41
+814 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
+815 [-]: GETTABLE  R43 R42 K45  ; R43 := R42["y"]
+816 [-]: SETTABLE  R42 K45 R43  ; R42["y"] := R43
+817 [-]: MOVE      R42 R17      ; R42 := R17
+818 [-]: JMP       847          ; PC := 847
+819 [-]: GETUPVAL  R43 U6       ; R43 := U6
+820 [-]: SELF      R43 R43 K140 ; R44 := R43; R43 := R43["0x307B8003"]
+821 [-]: CALL      R43 2 2      ; R43 := R43(R44)
+822 [-]: TEST      R43 0        ; if not R43 then PC := 841
+823 [-]: JMP       841          ; PC := 841
+824 [-]: GETUPVAL  R43 U6       ; R43 := U6
+825 [-]: SELF      R43 R43 K42  ; R44 := R43; R43 := R43["0xA100EDEC"]
+826 [-]: CALL      R43 2 2      ; R43 := R43(R44)
+827 [-]: GETUPVAL  R44 U3       ; R44 := U3
+828 [-]: SELF      R44 R44 K135 ; R45 := R44; R44 := R44["0xA7003AD9"]
+829 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+830 [-]: GETGLOBAL R45 K141     ; R45 := 0x4CBE9A09
+831 [-]: MOVE      R46 R43      ; R46 := R43
+832 [-]: GETUPVAL  R47 U3       ; R47 := U3
+833 [-]: SELF      R47 R47 K131 ; R48 := R47; R47 := R47["0x5AF30A19"]
+834 [-]: CALL      R47 2 2      ; R47 := R47(R48)
+835 [-]: SELF      R47 R47 K137 ; R48 := R47; R47 := R47["0xBA563DE8"]
+836 [-]: CALL      R47 2 0      ; R47,... := R47(R48)
+837 [-]: CALL      R45 0 2      ; R45 := R45(R46,...)
+838 [-]: ADD       R44 R44 R45  ; R44 := R44 + R45
+839 [-]: MOVE      R44 R17      ; R44 := R17
+840 [-]: JMP       847          ; PC := 847
+841 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
+842 [-]: SELF      R44 R44 K142 ; R45 := R44; R44 := R44["0x2E5D8BC8"]
+843 [-]: MOVE      R46 R37      ; R46 := R37
+844 [-]: MOVE      R47 R38      ; R47 := R38
+845 [-]: CALL      R44 4 2      ; R44 := R44(R45,R46,R47)
+846 [-]: MOVE      R44 R17      ; R44 := R17
+847 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
+848 [-]: SELF      R44 R44 K70  ; R45 := R44; R44 := R44["0x1C19D966"]
+849 [-]: LOADK     R46 K143     ; R46 := "Marker.Corona"
+850 [-]: LOADK     R47 K72      ; R47 := "_visible"
+851 [-]: GETUPVAL  R48 U11      ; R48 := U11
+852 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
+853 [-]: JMP       959          ; PC := 959
+854 [-]: GETGLOBAL R44 K0       ; R44 := 0x400E7765
+855 [-]: GETGLOBAL R45 K11      ; R45 := _T
+856 [-]: GETTABLE  R45 R45 K144 ; R45 := R45["WeaponPickupDetailMovie"]
+857 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+858 [-]: TEST      R44 1        ; if R44 then PC := 866
+859 [-]: JMP       866          ; PC := 866
+860 [-]: GETGLOBAL R44 K11      ; R44 := _T
+861 [-]: GETTABLE  R44 R44 K144 ; R44 := R44["WeaponPickupDetailMovie"]
+862 [-]: SELF      R44 R44 K145 ; R45 := R44; R44 := R44["0xA58BB96C"]
+863 [-]: CALL      R44 2 1      ; R44(R45)
+864 [-]: GETGLOBAL R44 K11      ; R44 := _T
+865 [-]: SETTABLE  R44 K146 K20 ; R44["WeaponPickupDetailText"] := nil
+866 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
+867 [-]: SELF      R44 R44 K92  ; R45 := R44; R44 := R44["0xD6A79FE9"]
+868 [-]: LOADK     R46 K61      ; R46 := "Marker.Callout"
+869 [-]: LOADK     R47 K93      ; R47 := "text"
+870 [-]: LOADK     R48 K13      ; R48 := ""
+871 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
+872 [-]: GETGLOBAL R44 K1       ; R44 := mMovie
+873 [-]: SELF      R44 R44 K92  ; R45 := R44; R44 := R44["0xD6A79FE9"]
+874 [-]: LOADK     R46 K115     ; R46 := "Marker.CalloutMiddle"
+875 [-]: LOADK     R47 K93      ; R47 := "text"
+876 [-]: LOADK     R48 K13      ; R48 := ""
+877 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
+878 [-]: GETGLOBAL R44 K96      ; R44 := 0x52E17A90
 879 [-]: GETGLOBAL R45 K1       ; R45 := mMovie
-880 [-]: LOADK     R46 K115     ; R46 := "Marker.InstructionMiddle"
-881 [-]: GETGLOBAL R47 K95      ; R47 := UISys
-882 [-]: GETTABLE  R47 R47 K121 ; R47 := R47["FlashInstance_EASE_OUT"]
+880 [-]: LOADK     R46 K64      ; R46 := "Marker.Instruction"
+881 [-]: GETGLOBAL R47 K97      ; R47 := UISys
+882 [-]: GETTABLE  R47 R47 K122 ; R47 := R47["FlashInstance_EASE_OUT"]
 883 [-]: NEWTABLE  R48 1 0      ; R48 := {}
-884 [-]: LOADK     R49 K98      ; R49 := "_alpha"
+884 [-]: LOADK     R49 K100     ; R49 := "_alpha"
 885 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
 886 [-]: NEWTABLE  R49 1 0      ; R49 := {}
 887 [-]: LOADK     R50 K6       ; R50 := 0
 888 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
-889 [-]: LOADK     R50 K100     ; R50 := 0.15000000596046
-890 [-]: CALL      R44 7 1      ; R44(R45,R46,R47,R48,R49,R50)
-891 [-]: GETGLOBAL R44 K94      ; R44 := 0x52E17A90
-892 [-]: GETGLOBAL R45 K1       ; R45 := mMovie
-893 [-]: LOADK     R46 K125     ; R46 := "Marker.Circle"
-894 [-]: GETGLOBAL R47 K95      ; R47 := UISys
-895 [-]: GETTABLE  R47 R47 K121 ; R47 := R47["FlashInstance_EASE_OUT"]
-896 [-]: NEWTABLE  R48 1 0      ; R48 := {}
-897 [-]: LOADK     R49 K98      ; R49 := "_alpha"
-898 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
-899 [-]: NEWTABLE  R49 1 0      ; R49 := {}
-900 [-]: LOADK     R50 K6       ; R50 := 0
-901 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
-902 [-]: LOADK     R50 K100     ; R50 := 0.15000000596046
-903 [-]: LOADK     R51 K122     ; R51 := 0.070000000298023
-904 [-]: CALL      R44 8 1      ; R44(R45,R46,R47,R48,R49,R50,R51)
-905 [-]: GETGLOBAL R44 K94      ; R44 := 0x52E17A90
-906 [-]: GETGLOBAL R45 K1       ; R45 := mMovie
-907 [-]: LOADK     R46 K123     ; R46 := "Marker.Panel"
-908 [-]: GETGLOBAL R47 K95      ; R47 := UISys
-909 [-]: GETTABLE  R47 R47 K121 ; R47 := R47["FlashInstance_EASE_OUT"]
-910 [-]: NEWTABLE  R48 1 0      ; R48 := {}
-911 [-]: LOADK     R49 K98      ; R49 := "_alpha"
-912 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
-913 [-]: NEWTABLE  R49 1 0      ; R49 := {}
-914 [-]: LOADK     R50 K6       ; R50 := 0
-915 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
-916 [-]: LOADK     R50 K100     ; R50 := 0.15000000596046
-917 [-]: LOADK     R51 K122     ; R51 := 0.070000000298023
-918 [-]: CALL      R44 8 1      ; R44(R45,R46,R47,R48,R49,R50,R51)
-919 [-]: GETGLOBAL R44 K93      ; R44 := 0x63B09107
-920 [-]: MOVE      R45 R14      ; R45 := R14
-921 [-]: CALL      R44 2 4      ; R44,R45,R46 := R44(R45)
-922 [-]: JMP       940          ; PC := 940
-923 [-]: GETGLOBAL R49 K94      ; R49 := 0x52E17A90
-924 [-]: GETGLOBAL R50 K1       ; R50 := mMovie
-925 [-]: LOADK     R51 K126     ; R51 := "Marker.Panel."
-926 [-]: MOVE      R52 R48      ; R52 := R48
-927 [-]: LOADK     R53 K127     ; R53 := ".RightSide"
-928 [-]: CONCAT    R51 R51 R53  ; R51 := R51 .. R52 .. R53
-929 [-]: GETGLOBAL R52 K95      ; R52 := UISys
-930 [-]: GETTABLE  R52 R52 K121 ; R52 := R52["FlashInstance_EASE_OUT"]
-931 [-]: NEWTABLE  R53 1 0      ; R53 := {}
-932 [-]: LOADK     R54 K84      ; R54 := "_width"
-933 [-]: SETLIST   R53 1 1      ; R53[(1-1)*FPF+i] := R(53+i), 1 <= i <= 1
-934 [-]: NEWTABLE  R54 1 0      ; R54 := {}
-935 [-]: LOADK     R55 K99      ; R55 := 100
-936 [-]: SETLIST   R54 1 1      ; R54[(1-1)*FPF+i] := R(54+i), 1 <= i <= 1
-937 [-]: LOADK     R55 K100     ; R55 := 0.15000000596046
-938 [-]: LOADK     R56 K122     ; R56 := 0.070000000298023
-939 [-]: CALL      R49 8 1      ; R49(R50,R51,R52,R53,R54,R55,R56)
-940 [-]: TFORLOOP  R44 2        ; R47,R48 :=  R44(R45,R46); if R47 ~= nil then begin PC = 923; R46 := R47 end
-941 [-]: JMP       923          ; PC := 923
-942 [-]: GETUPVAL  R49 U16      ; R49 := U16
-943 [-]: CALL      R49 1 1      ; R49()
-944 [-]: GETGLOBAL R49 K0       ; R49 := 0x400E7765
-945 [-]: GETUPVAL  R50 U6       ; R50 := U6
-946 [-]: CALL      R49 2 2      ; R49 := R49(R50)
-947 [-]: TEST      R49 1        ; if R49 then PC := 1053
-948 [-]: JMP       1053         ; PC := 1053
-949 [-]: LOADNIL   R49 R49      ; R49 := nil
-950 [-]: GETGLOBAL R50 K0       ; R50 := 0x400E7765
-951 [-]: GETUPVAL  R51 U1       ; R51 := U1
-952 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-953 [-]: TEST      R50 1        ; if R50 then PC := 995
-954 [-]: JMP       995          ; PC := 995
-955 [-]: GETUPVAL  R50 U6       ; R50 := U6
-956 [-]: SELF      R50 R50 K23  ; R51 := R50; R50 := R50["0x8B598ED4"]
-957 [-]: GETGLOBAL R52 K133     ; R52 := gZipLineActionType
-958 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
-959 [-]: TEST      R50 0        ; if not R50 then PC := 995
-960 [-]: JMP       995          ; PC := 995
-961 [-]: GETGLOBAL R50 K0       ; R50 := 0x400E7765
-962 [-]: GETUPVAL  R51 U3       ; R51 := U3
-963 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-964 [-]: TEST      R50 1        ; if R50 then PC := 1027
-965 [-]: JMP       1027         ; PC := 1027
-966 [-]: GETGLOBAL R50 K0       ; R50 := 0x400E7765
-967 [-]: GETUPVAL  R51 U3       ; R51 := U3
-968 [-]: SELF      R51 R51 K130 ; R52 := R51; R51 := R51["0x5AF30A19"]
-969 [-]: CALL      R51 2 0      ; R51,... := R51(R52)
-970 [-]: CALL      R50 0 2      ; R50 := R50(R51,...)
-971 [-]: TEST      R50 1        ; if R50 then PC := 1027
-972 [-]: JMP       1027         ; PC := 1027
-973 [-]: GETUPVAL  R50 U3       ; R50 := U3
-974 [-]: SELF      R50 R50 K134 ; R51 := R50; R50 := R50["0xA7003AD9"]
-975 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-976 [-]: GETGLOBAL R51 K135     ; R51 := 0xA0DB3B89
-977 [-]: GETUPVAL  R52 U3       ; R52 := U3
-978 [-]: SELF      R52 R52 K130 ; R53 := R52; R52 := R52["0x5AF30A19"]
-979 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-980 [-]: SELF      R52 R52 K136 ; R53 := R52; R52 := R52["0xBA563DE8"]
-981 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
-982 [-]: CALL      R51 0 2      ; R51 := R51(R52,...)
-983 [-]: MUL       R52 R51 K137 ; R52 := R51 * 1.5
-984 [-]: ADD       R52 R50 R52  ; R52 := R50 + R52
-985 [-]: GETUPVAL  R53 U6       ; R53 := U6
-986 [-]: SELF      R53 R53 K138 ; R54 := R53; R53 := R53["0xF2341BE4"]
-987 [-]: MOVE      R55 R52      ; R55 := R52
-988 [-]: LOADK     R56 K146     ; R56 := 0.5
-989 [-]: CALL      R53 4 2      ; R53 := R53(R54,R55,R56)
-990 [-]: MOVE      R49 R53      ; R49 := R53
-991 [-]: GETTABLE  R53 R49 K45  ; R53 := R49["y"]
-992 [-]: SUB       R53 R53 K147 ; R53 := R53 - 0.10000000149012
-993 [-]: SETTABLE  R49 K45 R53  ; R49["y"] := R53
-994 [-]: JMP       1027         ; PC := 1027
-995 [-]: GETGLOBAL R53 K0       ; R53 := 0x400E7765
-996 [-]: GETUPVAL  R54 U3       ; R54 := U3
-997 [-]: CALL      R53 2 2      ; R53 := R53(R54)
-998 [-]: TEST      R53 1        ; if R53 then PC := 1027
-999 [-]: JMP       1027         ; PC := 1027
+889 [-]: LOADK     R50 K102     ; R50 := 0.15000000596046
+890 [-]: LOADK     R51 K6       ; R51 := 0
+891 [-]: CLOSURE   R52 0        ; R52 := closure(Function #4.1)
+892 [-]: CALL      R44 9 1      ; R44(R45,R46,R47,R48,R49,R50,R51,R52)
+893 [-]: GETGLOBAL R44 K96      ; R44 := 0x52E17A90
+894 [-]: GETGLOBAL R45 K1       ; R45 := mMovie
+895 [-]: LOADK     R46 K116     ; R46 := "Marker.InstructionMiddle"
+896 [-]: GETGLOBAL R47 K97      ; R47 := UISys
+897 [-]: GETTABLE  R47 R47 K122 ; R47 := R47["FlashInstance_EASE_OUT"]
+898 [-]: NEWTABLE  R48 1 0      ; R48 := {}
+899 [-]: LOADK     R49 K100     ; R49 := "_alpha"
+900 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
+901 [-]: NEWTABLE  R49 1 0      ; R49 := {}
+902 [-]: LOADK     R50 K6       ; R50 := 0
+903 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
+904 [-]: LOADK     R50 K102     ; R50 := 0.15000000596046
+905 [-]: CALL      R44 7 1      ; R44(R45,R46,R47,R48,R49,R50)
+906 [-]: GETGLOBAL R44 K96      ; R44 := 0x52E17A90
+907 [-]: GETGLOBAL R45 K1       ; R45 := mMovie
+908 [-]: LOADK     R46 K126     ; R46 := "Marker.Circle"
+909 [-]: GETGLOBAL R47 K97      ; R47 := UISys
+910 [-]: GETTABLE  R47 R47 K122 ; R47 := R47["FlashInstance_EASE_OUT"]
+911 [-]: NEWTABLE  R48 1 0      ; R48 := {}
+912 [-]: LOADK     R49 K100     ; R49 := "_alpha"
+913 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
+914 [-]: NEWTABLE  R49 1 0      ; R49 := {}
+915 [-]: LOADK     R50 K6       ; R50 := 0
+916 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
+917 [-]: LOADK     R50 K102     ; R50 := 0.15000000596046
+918 [-]: LOADK     R51 K123     ; R51 := 0.070000000298023
+919 [-]: CALL      R44 8 1      ; R44(R45,R46,R47,R48,R49,R50,R51)
+920 [-]: GETGLOBAL R44 K96      ; R44 := 0x52E17A90
+921 [-]: GETGLOBAL R45 K1       ; R45 := mMovie
+922 [-]: LOADK     R46 K124     ; R46 := "Marker.Panel"
+923 [-]: GETGLOBAL R47 K97      ; R47 := UISys
+924 [-]: GETTABLE  R47 R47 K122 ; R47 := R47["FlashInstance_EASE_OUT"]
+925 [-]: NEWTABLE  R48 1 0      ; R48 := {}
+926 [-]: LOADK     R49 K100     ; R49 := "_alpha"
+927 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
+928 [-]: NEWTABLE  R49 1 0      ; R49 := {}
+929 [-]: LOADK     R50 K6       ; R50 := 0
+930 [-]: SETLIST   R49 1 1      ; R49[(1-1)*FPF+i] := R(49+i), 1 <= i <= 1
+931 [-]: LOADK     R50 K102     ; R50 := 0.15000000596046
+932 [-]: LOADK     R51 K123     ; R51 := 0.070000000298023
+933 [-]: CALL      R44 8 1      ; R44(R45,R46,R47,R48,R49,R50,R51)
+934 [-]: GETGLOBAL R44 K95      ; R44 := 0x63B09107
+935 [-]: MOVE      R45 R14      ; R45 := R14
+936 [-]: CALL      R44 2 4      ; R44,R45,R46 := R44(R45)
+937 [-]: JMP       955          ; PC := 955
+938 [-]: GETGLOBAL R49 K96      ; R49 := 0x52E17A90
+939 [-]: GETGLOBAL R50 K1       ; R50 := mMovie
+940 [-]: LOADK     R51 K127     ; R51 := "Marker.Panel."
+941 [-]: MOVE      R52 R48      ; R52 := R48
+942 [-]: LOADK     R53 K128     ; R53 := ".RightSide"
+943 [-]: CONCAT    R51 R51 R53  ; R51 := R51 .. R52 .. R53
+944 [-]: GETGLOBAL R52 K97      ; R52 := UISys
+945 [-]: GETTABLE  R52 R52 K122 ; R52 := R52["FlashInstance_EASE_OUT"]
+946 [-]: NEWTABLE  R53 1 0      ; R53 := {}
+947 [-]: LOADK     R54 K86      ; R54 := "_width"
+948 [-]: SETLIST   R53 1 1      ; R53[(1-1)*FPF+i] := R(53+i), 1 <= i <= 1
+949 [-]: NEWTABLE  R54 1 0      ; R54 := {}
+950 [-]: LOADK     R55 K101     ; R55 := 100
+951 [-]: SETLIST   R54 1 1      ; R54[(1-1)*FPF+i] := R(54+i), 1 <= i <= 1
+952 [-]: LOADK     R55 K102     ; R55 := 0.15000000596046
+953 [-]: LOADK     R56 K123     ; R56 := 0.070000000298023
+954 [-]: CALL      R49 8 1      ; R49(R50,R51,R52,R53,R54,R55,R56)
+955 [-]: TFORLOOP  R44 2        ; R47,R48 :=  R44(R45,R46); if R47 ~= nil then begin PC = 938; R46 := R47 end
+956 [-]: JMP       938          ; PC := 938
+957 [-]: GETUPVAL  R49 U16      ; R49 := U16
+958 [-]: CALL      R49 1 1      ; R49()
+959 [-]: GETGLOBAL R49 K0       ; R49 := 0x400E7765
+960 [-]: GETUPVAL  R50 U6       ; R50 := U6
+961 [-]: CALL      R49 2 2      ; R49 := R49(R50)
+962 [-]: TEST      R49 1        ; if R49 then PC := 1068
+963 [-]: JMP       1068         ; PC := 1068
+964 [-]: LOADNIL   R49 R49      ; R49 := nil
+965 [-]: GETGLOBAL R50 K0       ; R50 := 0x400E7765
+966 [-]: GETUPVAL  R51 U1       ; R51 := U1
+967 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+968 [-]: TEST      R50 1        ; if R50 then PC := 1010
+969 [-]: JMP       1010         ; PC := 1010
+970 [-]: GETUPVAL  R50 U6       ; R50 := U6
+971 [-]: SELF      R50 R50 K23  ; R51 := R50; R50 := R50["0x8B598ED4"]
+972 [-]: GETGLOBAL R52 K134     ; R52 := gZipLineActionType
+973 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
+974 [-]: TEST      R50 0        ; if not R50 then PC := 1010
+975 [-]: JMP       1010         ; PC := 1010
+976 [-]: GETGLOBAL R50 K0       ; R50 := 0x400E7765
+977 [-]: GETUPVAL  R51 U3       ; R51 := U3
+978 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+979 [-]: TEST      R50 1        ; if R50 then PC := 1042
+980 [-]: JMP       1042         ; PC := 1042
+981 [-]: GETGLOBAL R50 K0       ; R50 := 0x400E7765
+982 [-]: GETUPVAL  R51 U3       ; R51 := U3
+983 [-]: SELF      R51 R51 K131 ; R52 := R51; R51 := R51["0x5AF30A19"]
+984 [-]: CALL      R51 2 0      ; R51,... := R51(R52)
+985 [-]: CALL      R50 0 2      ; R50 := R50(R51,...)
+986 [-]: TEST      R50 1        ; if R50 then PC := 1042
+987 [-]: JMP       1042         ; PC := 1042
+988 [-]: GETUPVAL  R50 U3       ; R50 := U3
+989 [-]: SELF      R50 R50 K135 ; R51 := R50; R50 := R50["0xA7003AD9"]
+990 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+991 [-]: GETGLOBAL R51 K136     ; R51 := 0xA0DB3B89
+992 [-]: GETUPVAL  R52 U3       ; R52 := U3
+993 [-]: SELF      R52 R52 K131 ; R53 := R52; R52 := R52["0x5AF30A19"]
+994 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+995 [-]: SELF      R52 R52 K137 ; R53 := R52; R52 := R52["0xBA563DE8"]
+996 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
+997 [-]: CALL      R51 0 2      ; R51 := R51(R52,...)
+998 [-]: MUL       R52 R51 K138 ; R52 := R51 * 1.5
+999 [-]: ADD       R52 R50 R52  ; R52 := R50 + R52
 1000 [-]: GETUPVAL  R53 U6       ; R53 := U6
-1001 [-]: SELF      R53 R53 K139 ; R54 := R53; R53 := R53["0x307B8003"]
-1002 [-]: CALL      R53 2 2      ; R53 := R53(R54)
-1003 [-]: TEST      R53 0        ; if not R53 then PC := 1027
-1004 [-]: JMP       1027         ; PC := 1027
-1005 [-]: GETGLOBAL R53 K0       ; R53 := 0x400E7765
-1006 [-]: GETUPVAL  R54 U3       ; R54 := U3
-1007 [-]: SELF      R54 R54 K130 ; R55 := R54; R54 := R54["0x5AF30A19"]
-1008 [-]: CALL      R54 2 0      ; R54,... := R54(R55)
-1009 [-]: CALL      R53 0 2      ; R53 := R53(R54,...)
-1010 [-]: TEST      R53 1        ; if R53 then PC := 1027
-1011 [-]: JMP       1027         ; PC := 1027
-1012 [-]: GETUPVAL  R53 U6       ; R53 := U6
-1013 [-]: SELF      R53 R53 K42  ; R54 := R53; R53 := R53["0xA100EDEC"]
-1014 [-]: CALL      R53 2 2      ; R53 := R53(R54)
-1015 [-]: GETUPVAL  R54 U3       ; R54 := U3
-1016 [-]: SELF      R54 R54 K134 ; R55 := R54; R54 := R54["0xA7003AD9"]
-1017 [-]: CALL      R54 2 2      ; R54 := R54(R55)
-1018 [-]: GETGLOBAL R55 K140     ; R55 := 0x4CBE9A09
-1019 [-]: MOVE      R56 R53      ; R56 := R53
-1020 [-]: GETUPVAL  R57 U3       ; R57 := U3
-1021 [-]: SELF      R57 R57 K130 ; R58 := R57; R57 := R57["0x5AF30A19"]
-1022 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-1023 [-]: SELF      R57 R57 K136 ; R58 := R57; R57 := R57["0xBA563DE8"]
-1024 [-]: CALL      R57 2 0      ; R57,... := R57(R58)
-1025 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
-1026 [-]: ADD       R49 R54 R55  ; R49 := R54 + R55
-1027 [-]: TEST      R49 0        ; if not R49 then PC := 1053
-1028 [-]: JMP       1053         ; PC := 1053
-1029 [-]: GETUPVAL  R54 U6       ; R54 := U6
-1030 [-]: SELF      R54 R54 K148 ; R55 := R54; R54 := R54["0x9CD925BF"]
-1031 [-]: MOVE      R56 R49      ; R56 := R49
-1032 [-]: CALL      R54 3 2      ; R54 := R54(R55,R56)
-1033 [-]: GETUPVAL  R55 U6       ; R55 := U6
-1034 [-]: SELF      R55 R55 K43  ; R56 := R55; R55 := R55["0xBB5E94BF"]
-1035 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-1036 [-]: GETTABLE  R56 R54 K44  ; R56 := R54["x"]
-1037 [-]: GETTABLE  R57 R55 K44  ; R57 := R55["x"]
-1038 [-]: DIV       R56 R56 R57  ; R56 := R56 / R57
-1039 [-]: SETTABLE  R54 K44 R56  ; R54["x"] := R56
-1040 [-]: GETTABLE  R56 R54 K45  ; R56 := R54["y"]
-1041 [-]: GETTABLE  R57 R55 K45  ; R57 := R55["y"]
-1042 [-]: DIV       R56 R56 R57  ; R56 := R56 / R57
-1043 [-]: SETTABLE  R54 K45 R56  ; R54["y"] := R56
-1044 [-]: GETTABLE  R56 R54 K46  ; R56 := R54["z"]
-1045 [-]: GETTABLE  R57 R55 K46  ; R57 := R55["z"]
-1046 [-]: DIV       R56 R56 R57  ; R56 := R56 / R57
-1047 [-]: SETTABLE  R54 K46 R56  ; R54["z"] := R56
-1048 [-]: GETGLOBAL R56 K1       ; R56 := mMovie
-1049 [-]: SELF      R56 R56 K149 ; R57 := R56; R56 := R56["0xC3203530"]
-1050 [-]: MOVE      R58 R54      ; R58 := R54
-1051 [-]: CALL      R56 3 1      ; R56(R57,R58)
-1052 [-]: MOVE      R49 R17      ; R49 := R17
-1053 [-]: GETGLOBAL R56 K0       ; R56 := 0x400E7765
-1054 [-]: GETUPVAL  R57 U6       ; R57 := U6
-1055 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-1056 [-]: TEST      R56 1        ; if R56 then PC := 1095
-1057 [-]: JMP       1095         ; PC := 1095
-1058 [-]: GETGLOBAL R56 K0       ; R56 := 0x400E7765
-1059 [-]: GETUPVAL  R57 U1       ; R57 := U1
-1060 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-1061 [-]: TEST      R56 1        ; if R56 then PC := 1095
-1062 [-]: JMP       1095         ; PC := 1095
-1063 [-]: GETGLOBAL R56 K0       ; R56 := 0x400E7765
-1064 [-]: GETUPVAL  R57 U3       ; R57 := U3
-1065 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-1066 [-]: TEST      R56 1        ; if R56 then PC := 1095
-1067 [-]: JMP       1095         ; PC := 1095
-1068 [-]: GETUPVAL  R56 U3       ; R56 := U3
-1069 [-]: SELF      R56 R56 K150 ; R57 := R56; R56 := R56["0xF3340665"]
-1070 [-]: GETGLOBAL R58 K105     ; R58 := Engine
-1071 [-]: GETTABLE  R58 R58 K151 ; R58 := R58["PM_AIM"]
-1072 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
-1073 [-]: GETUPVAL  R57 U18      ; R57 := U18
-1074 [-]: EQ        1 R57 R56    ; if R57 == R56 then PC := 1095
-1075 [-]: JMP       1095         ; PC := 1095
-1076 [-]: MOVE      R56 R18      ; R56 := R18
-1077 [-]: GETGLOBAL R57 K94      ; R57 := 0x52E17A90
-1078 [-]: GETGLOBAL R58 K1       ; R58 := mMovie
-1079 [-]: LOADK     R59 K152     ; R59 := "_root"
-1080 [-]: GETGLOBAL R60 K95      ; R60 := UISys
-1081 [-]: GETTABLE  R60 R60 K121 ; R60 := R60["FlashInstance_EASE_OUT"]
-1082 [-]: NEWTABLE  R61 1 0      ; R61 := {}
-1083 [-]: LOADK     R62 K98      ; R62 := "_alpha"
-1084 [-]: SETLIST   R61 1 1      ; R61[(1-1)*FPF+i] := R(61+i), 1 <= i <= 1
-1085 [-]: NEWTABLE  R62 0 0      ; R62 := {}
-1086 [-]: GETUPVAL  R63 U10      ; R63 := U10
-1087 [-]: GETTABLE  R63 R63 K60  ; R63 := R63["0xF81722A2"]
-1088 [-]: GETUPVAL  R64 U18      ; R64 := U18
-1089 [-]: LOADK     R65 K153     ; R65 := 15
-1090 [-]: LOADK     R66 K99      ; R66 := 100
-1091 [-]: CALL      R63 4 0      ; R63,... := R63(R64,R65,R66)
-1092 [-]: SETLIST   R62 0 1      ; R62[(1-1)*FPF+i] := R(62+i), 1 <= i <= 0
-1093 [-]: LOADK     R63 K100     ; R63 := 0.15000000596046
-1094 [-]: CALL      R57 7 1      ; R57(R58,R59,R60,R61,R62,R63)
-1095 [-]: GETUPVAL  R57 U9       ; R57 := U9
-1096 [-]: TEST      R57 0        ; if not R57 then PC := 1225
-1097 [-]: JMP       1225         ; PC := 1225
-1098 [-]: GETUPVAL  R57 U1       ; R57 := U1
-1099 [-]: SELF      R57 R57 K130 ; R58 := R57; R57 := R57["0x5AF30A19"]
-1100 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-1101 [-]: GETGLOBAL R58 K0       ; R58 := 0x400E7765
-1102 [-]: MOVE      R59 R57      ; R59 := R57
-1103 [-]: CALL      R58 2 2      ; R58 := R58(R59)
-1104 [-]: TEST      R58 1        ; if R58 then PC := 1252
-1105 [-]: JMP       1252         ; PC := 1252
-1106 [-]: GETGLOBAL R58 K1       ; R58 := mMovie
-1107 [-]: SELF      R58 R58 K154 ; R59 := R58; R58 := R58["0x205CE69C"]
-1108 [-]: CALL      R58 2 2      ; R58 := R58(R59)
-1109 [-]: SELF      R59 R57 K155 ; R60 := R57; R59 := R57["0x1E2B882F"]
-1110 [-]: CALL      R59 2 2      ; R59 := R59(R60)
-1111 [-]: GETGLOBAL R60 K1       ; R60 := mMovie
-1112 [-]: SELF      R60 R60 K156 ; R61 := R60; R60 := R60["0x6B503F9D"]
-1113 [-]: CALL      R60 2 2      ; R60 := R60(R61)
-1114 [-]: GETUPVAL  R61 U10      ; R61 := U10
-1115 [-]: GETTABLE  R61 R61 K60  ; R61 := R61["0xF81722A2"]
-1116 [-]: GETGLOBAL R62 K0       ; R62 := 0x400E7765
-1117 [-]: GETUPVAL  R63 U6       ; R63 := U6
-1118 [-]: CALL      R62 2 2      ; R62 := R62(R63)
-1119 [-]: MOVE      R62 R62      ; R62 := R62
-1120 [-]: GETUPVAL  R63 U6       ; R63 := U6
-1121 [-]: SELF      R63 R63 K157 ; R64 := R63; R63 := R63["0xE7588635"]
-1122 [-]: CALL      R63 2 2      ; R63 := R63(R64)
-1123 [-]: LOADK     R64 K6       ; R64 := 0
-1124 [-]: CALL      R61 4 2      ; R61 := R61(R62,R63,R64)
-1125 [-]: LT        0 K6 R61     ; if 0 >= R61 then PC := 1176
-1126 [-]: JMP       1176         ; PC := 1176
-1127 [-]: GETGLOBAL R62 K0       ; R62 := 0x400E7765
-1128 [-]: MOVE      R63 R60      ; R63 := R60
-1129 [-]: CALL      R62 2 2      ; R62 := R62(R63)
-1130 [-]: TEST      R62 1        ; if R62 then PC := 1176
-1131 [-]: JMP       1176         ; PC := 1176
-1132 [-]: SELF      R62 R60 K57  ; R63 := R60; R62 := R60["0x6DA72501"]
+1001 [-]: SELF      R53 R53 K139 ; R54 := R53; R53 := R53["0xF2341BE4"]
+1002 [-]: MOVE      R55 R52      ; R55 := R52
+1003 [-]: LOADK     R56 K147     ; R56 := 0.5
+1004 [-]: CALL      R53 4 2      ; R53 := R53(R54,R55,R56)
+1005 [-]: MOVE      R49 R53      ; R49 := R53
+1006 [-]: GETTABLE  R53 R49 K45  ; R53 := R49["y"]
+1007 [-]: SUB       R53 R53 K148 ; R53 := R53 - 0.10000000149012
+1008 [-]: SETTABLE  R49 K45 R53  ; R49["y"] := R53
+1009 [-]: JMP       1042         ; PC := 1042
+1010 [-]: GETGLOBAL R53 K0       ; R53 := 0x400E7765
+1011 [-]: GETUPVAL  R54 U3       ; R54 := U3
+1012 [-]: CALL      R53 2 2      ; R53 := R53(R54)
+1013 [-]: TEST      R53 1        ; if R53 then PC := 1042
+1014 [-]: JMP       1042         ; PC := 1042
+1015 [-]: GETUPVAL  R53 U6       ; R53 := U6
+1016 [-]: SELF      R53 R53 K140 ; R54 := R53; R53 := R53["0x307B8003"]
+1017 [-]: CALL      R53 2 2      ; R53 := R53(R54)
+1018 [-]: TEST      R53 0        ; if not R53 then PC := 1042
+1019 [-]: JMP       1042         ; PC := 1042
+1020 [-]: GETGLOBAL R53 K0       ; R53 := 0x400E7765
+1021 [-]: GETUPVAL  R54 U3       ; R54 := U3
+1022 [-]: SELF      R54 R54 K131 ; R55 := R54; R54 := R54["0x5AF30A19"]
+1023 [-]: CALL      R54 2 0      ; R54,... := R54(R55)
+1024 [-]: CALL      R53 0 2      ; R53 := R53(R54,...)
+1025 [-]: TEST      R53 1        ; if R53 then PC := 1042
+1026 [-]: JMP       1042         ; PC := 1042
+1027 [-]: GETUPVAL  R53 U6       ; R53 := U6
+1028 [-]: SELF      R53 R53 K42  ; R54 := R53; R53 := R53["0xA100EDEC"]
+1029 [-]: CALL      R53 2 2      ; R53 := R53(R54)
+1030 [-]: GETUPVAL  R54 U3       ; R54 := U3
+1031 [-]: SELF      R54 R54 K135 ; R55 := R54; R54 := R54["0xA7003AD9"]
+1032 [-]: CALL      R54 2 2      ; R54 := R54(R55)
+1033 [-]: GETGLOBAL R55 K141     ; R55 := 0x4CBE9A09
+1034 [-]: MOVE      R56 R53      ; R56 := R53
+1035 [-]: GETUPVAL  R57 U3       ; R57 := U3
+1036 [-]: SELF      R57 R57 K131 ; R58 := R57; R57 := R57["0x5AF30A19"]
+1037 [-]: CALL      R57 2 2      ; R57 := R57(R58)
+1038 [-]: SELF      R57 R57 K137 ; R58 := R57; R57 := R57["0xBA563DE8"]
+1039 [-]: CALL      R57 2 0      ; R57,... := R57(R58)
+1040 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
+1041 [-]: ADD       R49 R54 R55  ; R49 := R54 + R55
+1042 [-]: TEST      R49 0        ; if not R49 then PC := 1068
+1043 [-]: JMP       1068         ; PC := 1068
+1044 [-]: GETUPVAL  R54 U6       ; R54 := U6
+1045 [-]: SELF      R54 R54 K149 ; R55 := R54; R54 := R54["0x9CD925BF"]
+1046 [-]: MOVE      R56 R49      ; R56 := R49
+1047 [-]: CALL      R54 3 2      ; R54 := R54(R55,R56)
+1048 [-]: GETUPVAL  R55 U6       ; R55 := U6
+1049 [-]: SELF      R55 R55 K43  ; R56 := R55; R55 := R55["0xBB5E94BF"]
+1050 [-]: CALL      R55 2 2      ; R55 := R55(R56)
+1051 [-]: GETTABLE  R56 R54 K44  ; R56 := R54["x"]
+1052 [-]: GETTABLE  R57 R55 K44  ; R57 := R55["x"]
+1053 [-]: DIV       R56 R56 R57  ; R56 := R56 / R57
+1054 [-]: SETTABLE  R54 K44 R56  ; R54["x"] := R56
+1055 [-]: GETTABLE  R56 R54 K45  ; R56 := R54["y"]
+1056 [-]: GETTABLE  R57 R55 K45  ; R57 := R55["y"]
+1057 [-]: DIV       R56 R56 R57  ; R56 := R56 / R57
+1058 [-]: SETTABLE  R54 K45 R56  ; R54["y"] := R56
+1059 [-]: GETTABLE  R56 R54 K46  ; R56 := R54["z"]
+1060 [-]: GETTABLE  R57 R55 K46  ; R57 := R55["z"]
+1061 [-]: DIV       R56 R56 R57  ; R56 := R56 / R57
+1062 [-]: SETTABLE  R54 K46 R56  ; R54["z"] := R56
+1063 [-]: GETGLOBAL R56 K1       ; R56 := mMovie
+1064 [-]: SELF      R56 R56 K150 ; R57 := R56; R56 := R56["0xC3203530"]
+1065 [-]: MOVE      R58 R54      ; R58 := R54
+1066 [-]: CALL      R56 3 1      ; R56(R57,R58)
+1067 [-]: MOVE      R49 R17      ; R49 := R17
+1068 [-]: GETGLOBAL R56 K0       ; R56 := 0x400E7765
+1069 [-]: GETUPVAL  R57 U6       ; R57 := U6
+1070 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+1071 [-]: TEST      R56 1        ; if R56 then PC := 1110
+1072 [-]: JMP       1110         ; PC := 1110
+1073 [-]: GETGLOBAL R56 K0       ; R56 := 0x400E7765
+1074 [-]: GETUPVAL  R57 U1       ; R57 := U1
+1075 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+1076 [-]: TEST      R56 1        ; if R56 then PC := 1110
+1077 [-]: JMP       1110         ; PC := 1110
+1078 [-]: GETGLOBAL R56 K0       ; R56 := 0x400E7765
+1079 [-]: GETUPVAL  R57 U3       ; R57 := U3
+1080 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+1081 [-]: TEST      R56 1        ; if R56 then PC := 1110
+1082 [-]: JMP       1110         ; PC := 1110
+1083 [-]: GETUPVAL  R56 U3       ; R56 := U3
+1084 [-]: SELF      R56 R56 K151 ; R57 := R56; R56 := R56["0xF3340665"]
+1085 [-]: GETGLOBAL R58 K106     ; R58 := Engine
+1086 [-]: GETTABLE  R58 R58 K152 ; R58 := R58["PM_AIM"]
+1087 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
+1088 [-]: GETUPVAL  R57 U18      ; R57 := U18
+1089 [-]: EQ        1 R57 R56    ; if R57 == R56 then PC := 1110
+1090 [-]: JMP       1110         ; PC := 1110
+1091 [-]: MOVE      R56 R18      ; R56 := R18
+1092 [-]: GETGLOBAL R57 K96      ; R57 := 0x52E17A90
+1093 [-]: GETGLOBAL R58 K1       ; R58 := mMovie
+1094 [-]: LOADK     R59 K153     ; R59 := "_root"
+1095 [-]: GETGLOBAL R60 K97      ; R60 := UISys
+1096 [-]: GETTABLE  R60 R60 K122 ; R60 := R60["FlashInstance_EASE_OUT"]
+1097 [-]: NEWTABLE  R61 1 0      ; R61 := {}
+1098 [-]: LOADK     R62 K100     ; R62 := "_alpha"
+1099 [-]: SETLIST   R61 1 1      ; R61[(1-1)*FPF+i] := R(61+i), 1 <= i <= 1
+1100 [-]: NEWTABLE  R62 0 0      ; R62 := {}
+1101 [-]: GETUPVAL  R63 U10      ; R63 := U10
+1102 [-]: GETTABLE  R63 R63 K62  ; R63 := R63["0xF81722A2"]
+1103 [-]: GETUPVAL  R64 U18      ; R64 := U18
+1104 [-]: LOADK     R65 K154     ; R65 := 15
+1105 [-]: LOADK     R66 K101     ; R66 := 100
+1106 [-]: CALL      R63 4 0      ; R63,... := R63(R64,R65,R66)
+1107 [-]: SETLIST   R62 0 1      ; R62[(1-1)*FPF+i] := R(62+i), 1 <= i <= 0
+1108 [-]: LOADK     R63 K102     ; R63 := 0.15000000596046
+1109 [-]: CALL      R57 7 1      ; R57(R58,R59,R60,R61,R62,R63)
+1110 [-]: GETUPVAL  R57 U9       ; R57 := U9
+1111 [-]: TEST      R57 0        ; if not R57 then PC := 1240
+1112 [-]: JMP       1240         ; PC := 1240
+1113 [-]: GETUPVAL  R57 U1       ; R57 := U1
+1114 [-]: SELF      R57 R57 K131 ; R58 := R57; R57 := R57["0x5AF30A19"]
+1115 [-]: CALL      R57 2 2      ; R57 := R57(R58)
+1116 [-]: GETGLOBAL R58 K0       ; R58 := 0x400E7765
+1117 [-]: MOVE      R59 R57      ; R59 := R57
+1118 [-]: CALL      R58 2 2      ; R58 := R58(R59)
+1119 [-]: TEST      R58 1        ; if R58 then PC := 1267
+1120 [-]: JMP       1267         ; PC := 1267
+1121 [-]: GETGLOBAL R58 K1       ; R58 := mMovie
+1122 [-]: SELF      R58 R58 K155 ; R59 := R58; R58 := R58["0x205CE69C"]
+1123 [-]: CALL      R58 2 2      ; R58 := R58(R59)
+1124 [-]: SELF      R59 R57 K156 ; R60 := R57; R59 := R57["0x1E2B882F"]
+1125 [-]: CALL      R59 2 2      ; R59 := R59(R60)
+1126 [-]: GETGLOBAL R60 K1       ; R60 := mMovie
+1127 [-]: SELF      R60 R60 K157 ; R61 := R60; R60 := R60["0x6B503F9D"]
+1128 [-]: CALL      R60 2 2      ; R60 := R60(R61)
+1129 [-]: GETUPVAL  R61 U10      ; R61 := U10
+1130 [-]: GETTABLE  R61 R61 K62  ; R61 := R61["0xF81722A2"]
+1131 [-]: GETGLOBAL R62 K0       ; R62 := 0x400E7765
+1132 [-]: GETUPVAL  R63 U6       ; R63 := U6
 1133 [-]: CALL      R62 2 2      ; R62 := R62(R63)
-1134 [-]: SUB       R62 R59 R62  ; R62 := R59 - R62
-1135 [-]: SETTABLE  R62 K45 K6   ; R62["y"] := 0
-1136 [-]: GETGLOBAL R63 K158     ; R63 := 0x458357BC
-1137 [-]: MOVE      R64 R62      ; R64 := R62
-1138 [-]: CALL      R63 2 1      ; R63(R64)
-1139 [-]: MUL       R62 R62 R61  ; R62 := R62 * R61
-1140 [-]: SELF      R63 R60 K159 ; R64 := R60; R63 := R60["0x3455E8A"]
-1141 [-]: CALL      R63 2 2      ; R63 := R63(R64)
-1142 [-]: GETGLOBAL R64 K140     ; R64 := 0x4CBE9A09
-1143 [-]: MOVE      R65 R62      ; R65 := R62
-1144 [-]: GETGLOBAL R66 K160     ; R66 := 0x1E4F6281
-1145 [-]: GETTABLE  R67 R63 K161 ; R67 := R63["heading"]
-1146 [-]: UNM       R67 R67      ; R67 := - R67
-1147 [-]: GETTABLE  R68 R63 K162 ; R68 := R63["pitch"]
-1148 [-]: UNM       R68 R68      ; R68 := - R68
-1149 [-]: GETTABLE  R69 R63 K163 ; R69 := R63["bank"]
-1150 [-]: UNM       R69 R69      ; R69 := - R69
-1151 [-]: CALL      R66 4 0      ; R66,... := R66(R67,R68,R69)
-1152 [-]: CALL      R64 0 2      ; R64 := R64(R65,...)
-1153 [-]: GETUPVAL  R65 U6       ; R65 := U6
-1154 [-]: SELF      R65 R65 K42  ; R66 := R65; R65 := R65["0xA100EDEC"]
-1155 [-]: CALL      R65 2 2      ; R65 := R65(R66)
-1156 [-]: ADD       R65 R64 R65  ; R65 := R64 + R65
-1157 [-]: GETGLOBAL R66 K1       ; R66 := mMovie
-1158 [-]: SELF      R66 R66 K149 ; R67 := R66; R66 := R66["0xC3203530"]
-1159 [-]: MOVE      R68 R65      ; R68 := R65
-1160 [-]: CALL      R66 3 1      ; R66(R67,R68)
-1161 [-]: GETGLOBAL R66 K0       ; R66 := 0x400E7765
-1162 [-]: GETUPVAL  R67 U17      ; R67 := U17
-1163 [-]: CALL      R66 2 2      ; R66 := R66(R67)
-1164 [-]: TEST      R66 1        ; if R66 then PC := 1192
-1165 [-]: JMP       1192         ; PC := 1192
-1166 [-]: GETUPVAL  R66 U6       ; R66 := U6
-1167 [-]: SELF      R66 R66 K57  ; R67 := R66; R66 := R66["0x6DA72501"]
-1168 [-]: CALL      R66 2 2      ; R66 := R66(R67)
-1169 [-]: ADD       R66 R66 R62  ; R66 := R66 + R62
-1170 [-]: GETUPVAL  R67 U6       ; R67 := U6
-1171 [-]: SELF      R67 R67 K42  ; R68 := R67; R67 := R67["0xA100EDEC"]
-1172 [-]: CALL      R67 2 2      ; R67 := R67(R68)
-1173 [-]: ADD       R66 R66 R67  ; R66 := R66 + R67
-1174 [-]: MOVE      R66 R17      ; R66 := R17
-1175 [-]: JMP       1192         ; PC := 1192
+1134 [-]: MOVE      R62 R62      ; R62 := R62
+1135 [-]: GETUPVAL  R63 U6       ; R63 := U6
+1136 [-]: SELF      R63 R63 K158 ; R64 := R63; R63 := R63["0xE7588635"]
+1137 [-]: CALL      R63 2 2      ; R63 := R63(R64)
+1138 [-]: LOADK     R64 K6       ; R64 := 0
+1139 [-]: CALL      R61 4 2      ; R61 := R61(R62,R63,R64)
+1140 [-]: LT        0 K6 R61     ; if 0 >= R61 then PC := 1191
+1141 [-]: JMP       1191         ; PC := 1191
+1142 [-]: GETGLOBAL R62 K0       ; R62 := 0x400E7765
+1143 [-]: MOVE      R63 R60      ; R63 := R60
+1144 [-]: CALL      R62 2 2      ; R62 := R62(R63)
+1145 [-]: TEST      R62 1        ; if R62 then PC := 1191
+1146 [-]: JMP       1191         ; PC := 1191
+1147 [-]: SELF      R62 R60 K59  ; R63 := R60; R62 := R60["0x6DA72501"]
+1148 [-]: CALL      R62 2 2      ; R62 := R62(R63)
+1149 [-]: SUB       R62 R59 R62  ; R62 := R59 - R62
+1150 [-]: SETTABLE  R62 K45 K6   ; R62["y"] := 0
+1151 [-]: GETGLOBAL R63 K159     ; R63 := 0x458357BC
+1152 [-]: MOVE      R64 R62      ; R64 := R62
+1153 [-]: CALL      R63 2 1      ; R63(R64)
+1154 [-]: MUL       R62 R62 R61  ; R62 := R62 * R61
+1155 [-]: SELF      R63 R60 K160 ; R64 := R60; R63 := R60["0x3455E8A"]
+1156 [-]: CALL      R63 2 2      ; R63 := R63(R64)
+1157 [-]: GETGLOBAL R64 K141     ; R64 := 0x4CBE9A09
+1158 [-]: MOVE      R65 R62      ; R65 := R62
+1159 [-]: GETGLOBAL R66 K161     ; R66 := 0x1E4F6281
+1160 [-]: GETTABLE  R67 R63 K162 ; R67 := R63["heading"]
+1161 [-]: UNM       R67 R67      ; R67 := - R67
+1162 [-]: GETTABLE  R68 R63 K163 ; R68 := R63["pitch"]
+1163 [-]: UNM       R68 R68      ; R68 := - R68
+1164 [-]: GETTABLE  R69 R63 K164 ; R69 := R63["bank"]
+1165 [-]: UNM       R69 R69      ; R69 := - R69
+1166 [-]: CALL      R66 4 0      ; R66,... := R66(R67,R68,R69)
+1167 [-]: CALL      R64 0 2      ; R64 := R64(R65,...)
+1168 [-]: GETUPVAL  R65 U6       ; R65 := U6
+1169 [-]: SELF      R65 R65 K42  ; R66 := R65; R65 := R65["0xA100EDEC"]
+1170 [-]: CALL      R65 2 2      ; R65 := R65(R66)
+1171 [-]: ADD       R65 R64 R65  ; R65 := R64 + R65
+1172 [-]: GETGLOBAL R66 K1       ; R66 := mMovie
+1173 [-]: SELF      R66 R66 K150 ; R67 := R66; R66 := R66["0xC3203530"]
+1174 [-]: MOVE      R68 R65      ; R68 := R65
+1175 [-]: CALL      R66 3 1      ; R66(R67,R68)
 1176 [-]: GETGLOBAL R66 K0       ; R66 := 0x400E7765
 1177 [-]: GETUPVAL  R67 U17      ; R67 := U17
 1178 [-]: CALL      R66 2 2      ; R66 := R66(R67)
-1179 [-]: TEST      R66 1        ; if R66 then PC := 1192
-1180 [-]: JMP       1192         ; PC := 1192
-1181 [-]: GETUPVAL  R66 U10      ; R66 := U10
-1182 [-]: GETTABLE  R66 R66 K131 ; R66 := R66["0x69B983D"]
-1183 [-]: GETGLOBAL R67 K1       ; R67 := mMovie
-1184 [-]: LOADK     R68 K132     ; R68 := "Marker"
-1185 [-]: CALL      R66 3 3      ; R66,R67 := R66(R67,R68)
-1186 [-]: GETGLOBAL R68 K1       ; R68 := mMovie
-1187 [-]: SELF      R68 R68 K141 ; R69 := R68; R68 := R68["0x2E5D8BC8"]
-1188 [-]: MOVE      R70 R66      ; R70 := R66
-1189 [-]: MOVE      R71 R67      ; R71 := R67
-1190 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
-1191 [-]: MOVE      R68 R17      ; R68 := R17
-1192 [-]: GETGLOBAL R68 K1       ; R68 := mMovie
-1193 [-]: SELF      R68 R68 K164 ; R69 := R68; R68 := R68["0x11A94137"]
-1194 [-]: CALL      R68 2 2      ; R68 := R68(R69)
-1195 [-]: GETGLOBAL R69 K1       ; R69 := mMovie
-1196 [-]: SELF      R69 R69 K154 ; R70 := R69; R69 := R69["0x205CE69C"]
-1197 [-]: CALL      R69 2 2      ; R69 := R69(R70)
-1198 [-]: MOVE      R58 R69      ; R58 := R69
-1199 [-]: SUB       R69 R59 R58  ; R69 := R59 - R58
-1200 [-]: SETTABLE  R69 K45 K6   ; R69["y"] := 0
-1201 [-]: GETGLOBAL R70 K158     ; R70 := 0x458357BC
-1202 [-]: MOVE      R71 R69      ; R71 := R69
-1203 [-]: CALL      R70 2 1      ; R70(R71)
-1204 [-]: GETGLOBAL R70 K165     ; R70 := math
-1205 [-]: GETTABLE  R70 R70 K166 ; R70 := R70["0x3F636158"]
-1206 [-]: GETTABLE  R71 R69 K46  ; R71 := R69["z"]
-1207 [-]: GETTABLE  R72 R69 K44  ; R72 := R69["x"]
-1208 [-]: CALL      R70 3 2      ; R70 := R70(R71,R72)
-1209 [-]: GETUPVAL  R71 U10      ; R71 := U10
-1210 [-]: GETTABLE  R71 R71 K167 ; R71 := R71["0xBFE096C9"]
-1211 [-]: MOVE      R72 R70      ; R72 := R70
-1212 [-]: CALL      R71 2 2      ; R71 := R71(R72)
-1213 [-]: MOVE      R72 R71      ; R72 := R71
-1214 [-]: ADD       R73 R72 K168 ; R73 := R72 + 90
-1215 [-]: GETTABLE  R74 R68 K161 ; R74 := R68["heading"]
-1216 [-]: ADD       R72 R73 R74  ; R72 := R73 + R74
-1217 [-]: SUB       R72 K169 R72 ; R72 := 360 - R72
-1218 [-]: GETGLOBAL R73 K1       ; R73 := mMovie
-1219 [-]: SELF      R73 R73 K68  ; R74 := R73; R73 := R73["0x1C19D966"]
-1220 [-]: LOADK     R75 K132     ; R75 := "Marker"
-1221 [-]: LOADK     R76 K170     ; R76 := "_heading"
-1222 [-]: MOD       R77 R72 K169 ; R77 := R72 % 360
-1223 [-]: CALL      R73 5 1      ; R73(R74,R75,R76,R77)
-1224 [-]: JMP       1252         ; PC := 1252
-1225 [-]: GETGLOBAL R73 K0       ; R73 := 0x400E7765
-1226 [-]: GETUPVAL  R74 U17      ; R74 := U17
-1227 [-]: CALL      R73 2 2      ; R73 := R73(R74)
-1228 [-]: TEST      R73 1        ; if R73 then PC := 1241
-1229 [-]: JMP       1241         ; PC := 1241
-1230 [-]: GETUPVAL  R73 U10      ; R73 := U10
-1231 [-]: GETTABLE  R73 R73 K131 ; R73 := R73["0x69B983D"]
-1232 [-]: GETGLOBAL R74 K1       ; R74 := mMovie
-1233 [-]: LOADK     R75 K132     ; R75 := "Marker"
-1234 [-]: CALL      R73 3 3      ; R73,R74 := R73(R74,R75)
-1235 [-]: GETGLOBAL R75 K1       ; R75 := mMovie
-1236 [-]: SELF      R75 R75 K141 ; R76 := R75; R75 := R75["0x2E5D8BC8"]
-1237 [-]: MOVE      R77 R73      ; R77 := R73
-1238 [-]: MOVE      R78 R74      ; R78 := R74
-1239 [-]: CALL      R75 4 2      ; R75 := R75(R76,R77,R78)
-1240 [-]: MOVE      R75 R17      ; R75 := R17
-1241 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
-1242 [-]: MOVE      R76 R2       ; R76 := R2
-1243 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1244 [-]: TEST      R75 1        ; if R75 then PC := 1252
-1245 [-]: JMP       1252         ; PC := 1252
-1246 [-]: GETGLOBAL R75 K1       ; R75 := mMovie
-1247 [-]: SELF      R75 R75 K68  ; R76 := R75; R75 := R75["0x1C19D966"]
-1248 [-]: LOADK     R77 K132     ; R77 := "Marker"
-1249 [-]: LOADK     R78 K170     ; R78 := "_heading"
-1250 [-]: LOADK     R79 K6       ; R79 := 0
-1251 [-]: CALL      R75 5 1      ; R75(R76,R77,R78,R79)
-1252 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
-1253 [-]: GETUPVAL  R76 U17      ; R76 := U17
-1254 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1255 [-]: TEST      R75 1        ; if R75 then PC := 1279
-1256 [-]: JMP       1279         ; PC := 1279
-1257 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
-1258 [-]: GETUPVAL  R76 U19      ; R76 := U19
-1259 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1260 [-]: TEST      R75 0        ; if not R75 then PC := 1275
-1261 [-]: JMP       1275         ; PC := 1275
-1262 [-]: GETUPVAL  R75 U20      ; R75 := U20
-1263 [-]: TEST      R75 0        ; if not R75 then PC := 1279
-1264 [-]: JMP       1279         ; PC := 1279
-1265 [-]: GETGLOBAL R75 K2       ; R75 := gRegion
-1266 [-]: SELF      R75 R75 K171 ; R76 := R75; R75 := R75["0xBDD34CC6"]
-1267 [-]: GETGLOBAL R77 K129     ; R77 := markerFx
-1268 [-]: GETUPVAL  R78 U17      ; R78 := U17
-1269 [-]: GETGLOBAL R79 K52      ; R79 := ZERO_ROTATION
-1270 [-]: CALL      R75 5 2      ; R75 := R75(R76,R77,R78,R79)
-1271 [-]: MOVE      R75 R19      ; R75 := R19
-1272 [-]: MOVE      R75 R0       ; R75 := R0
-1273 [-]: MOVE      R75 R20      ; R75 := R20
-1274 [-]: JMP       1279         ; PC := 1279
-1275 [-]: GETUPVAL  R75 U19      ; R75 := U19
-1276 [-]: SELF      R75 R75 K172 ; R76 := R75; R75 := R75["0xEC183DDC"]
-1277 [-]: GETUPVAL  R77 U17      ; R77 := U17
-1278 [-]: CALL      R75 3 1      ; R75(R76,R77)
-1279 [-]: RETURN    R0 1         ; return 
+1179 [-]: TEST      R66 1        ; if R66 then PC := 1207
+1180 [-]: JMP       1207         ; PC := 1207
+1181 [-]: GETUPVAL  R66 U6       ; R66 := U6
+1182 [-]: SELF      R66 R66 K59  ; R67 := R66; R66 := R66["0x6DA72501"]
+1183 [-]: CALL      R66 2 2      ; R66 := R66(R67)
+1184 [-]: ADD       R66 R66 R62  ; R66 := R66 + R62
+1185 [-]: GETUPVAL  R67 U6       ; R67 := U6
+1186 [-]: SELF      R67 R67 K42  ; R68 := R67; R67 := R67["0xA100EDEC"]
+1187 [-]: CALL      R67 2 2      ; R67 := R67(R68)
+1188 [-]: ADD       R66 R66 R67  ; R66 := R66 + R67
+1189 [-]: MOVE      R66 R17      ; R66 := R17
+1190 [-]: JMP       1207         ; PC := 1207
+1191 [-]: GETGLOBAL R66 K0       ; R66 := 0x400E7765
+1192 [-]: GETUPVAL  R67 U17      ; R67 := U17
+1193 [-]: CALL      R66 2 2      ; R66 := R66(R67)
+1194 [-]: TEST      R66 1        ; if R66 then PC := 1207
+1195 [-]: JMP       1207         ; PC := 1207
+1196 [-]: GETUPVAL  R66 U10      ; R66 := U10
+1197 [-]: GETTABLE  R66 R66 K132 ; R66 := R66["0x69B983D"]
+1198 [-]: GETGLOBAL R67 K1       ; R67 := mMovie
+1199 [-]: LOADK     R68 K133     ; R68 := "Marker"
+1200 [-]: CALL      R66 3 3      ; R66,R67 := R66(R67,R68)
+1201 [-]: GETGLOBAL R68 K1       ; R68 := mMovie
+1202 [-]: SELF      R68 R68 K142 ; R69 := R68; R68 := R68["0x2E5D8BC8"]
+1203 [-]: MOVE      R70 R66      ; R70 := R66
+1204 [-]: MOVE      R71 R67      ; R71 := R67
+1205 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+1206 [-]: MOVE      R68 R17      ; R68 := R17
+1207 [-]: GETGLOBAL R68 K1       ; R68 := mMovie
+1208 [-]: SELF      R68 R68 K165 ; R69 := R68; R68 := R68["0x11A94137"]
+1209 [-]: CALL      R68 2 2      ; R68 := R68(R69)
+1210 [-]: GETGLOBAL R69 K1       ; R69 := mMovie
+1211 [-]: SELF      R69 R69 K155 ; R70 := R69; R69 := R69["0x205CE69C"]
+1212 [-]: CALL      R69 2 2      ; R69 := R69(R70)
+1213 [-]: MOVE      R58 R69      ; R58 := R69
+1214 [-]: SUB       R69 R59 R58  ; R69 := R59 - R58
+1215 [-]: SETTABLE  R69 K45 K6   ; R69["y"] := 0
+1216 [-]: GETGLOBAL R70 K159     ; R70 := 0x458357BC
+1217 [-]: MOVE      R71 R69      ; R71 := R69
+1218 [-]: CALL      R70 2 1      ; R70(R71)
+1219 [-]: GETGLOBAL R70 K166     ; R70 := math
+1220 [-]: GETTABLE  R70 R70 K167 ; R70 := R70["0x3F636158"]
+1221 [-]: GETTABLE  R71 R69 K46  ; R71 := R69["z"]
+1222 [-]: GETTABLE  R72 R69 K44  ; R72 := R69["x"]
+1223 [-]: CALL      R70 3 2      ; R70 := R70(R71,R72)
+1224 [-]: GETUPVAL  R71 U10      ; R71 := U10
+1225 [-]: GETTABLE  R71 R71 K168 ; R71 := R71["0xBFE096C9"]
+1226 [-]: MOVE      R72 R70      ; R72 := R70
+1227 [-]: CALL      R71 2 2      ; R71 := R71(R72)
+1228 [-]: MOVE      R72 R71      ; R72 := R71
+1229 [-]: ADD       R73 R72 K169 ; R73 := R72 + 90
+1230 [-]: GETTABLE  R74 R68 K162 ; R74 := R68["heading"]
+1231 [-]: ADD       R72 R73 R74  ; R72 := R73 + R74
+1232 [-]: SUB       R72 K170 R72 ; R72 := 360 - R72
+1233 [-]: GETGLOBAL R73 K1       ; R73 := mMovie
+1234 [-]: SELF      R73 R73 K70  ; R74 := R73; R73 := R73["0x1C19D966"]
+1235 [-]: LOADK     R75 K133     ; R75 := "Marker"
+1236 [-]: LOADK     R76 K171     ; R76 := "_heading"
+1237 [-]: MOD       R77 R72 K170 ; R77 := R72 % 360
+1238 [-]: CALL      R73 5 1      ; R73(R74,R75,R76,R77)
+1239 [-]: JMP       1267         ; PC := 1267
+1240 [-]: GETGLOBAL R73 K0       ; R73 := 0x400E7765
+1241 [-]: GETUPVAL  R74 U17      ; R74 := U17
+1242 [-]: CALL      R73 2 2      ; R73 := R73(R74)
+1243 [-]: TEST      R73 1        ; if R73 then PC := 1256
+1244 [-]: JMP       1256         ; PC := 1256
+1245 [-]: GETUPVAL  R73 U10      ; R73 := U10
+1246 [-]: GETTABLE  R73 R73 K132 ; R73 := R73["0x69B983D"]
+1247 [-]: GETGLOBAL R74 K1       ; R74 := mMovie
+1248 [-]: LOADK     R75 K133     ; R75 := "Marker"
+1249 [-]: CALL      R73 3 3      ; R73,R74 := R73(R74,R75)
+1250 [-]: GETGLOBAL R75 K1       ; R75 := mMovie
+1251 [-]: SELF      R75 R75 K142 ; R76 := R75; R75 := R75["0x2E5D8BC8"]
+1252 [-]: MOVE      R77 R73      ; R77 := R73
+1253 [-]: MOVE      R78 R74      ; R78 := R74
+1254 [-]: CALL      R75 4 2      ; R75 := R75(R76,R77,R78)
+1255 [-]: MOVE      R75 R17      ; R75 := R17
+1256 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
+1257 [-]: MOVE      R76 R2       ; R76 := R2
+1258 [-]: CALL      R75 2 2      ; R75 := R75(R76)
+1259 [-]: TEST      R75 1        ; if R75 then PC := 1267
+1260 [-]: JMP       1267         ; PC := 1267
+1261 [-]: GETGLOBAL R75 K1       ; R75 := mMovie
+1262 [-]: SELF      R75 R75 K70  ; R76 := R75; R75 := R75["0x1C19D966"]
+1263 [-]: LOADK     R77 K133     ; R77 := "Marker"
+1264 [-]: LOADK     R78 K171     ; R78 := "_heading"
+1265 [-]: LOADK     R79 K6       ; R79 := 0
+1266 [-]: CALL      R75 5 1      ; R75(R76,R77,R78,R79)
+1267 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
+1268 [-]: GETUPVAL  R76 U17      ; R76 := U17
+1269 [-]: CALL      R75 2 2      ; R75 := R75(R76)
+1270 [-]: TEST      R75 1        ; if R75 then PC := 1294
+1271 [-]: JMP       1294         ; PC := 1294
+1272 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
+1273 [-]: GETUPVAL  R76 U19      ; R76 := U19
+1274 [-]: CALL      R75 2 2      ; R75 := R75(R76)
+1275 [-]: TEST      R75 0        ; if not R75 then PC := 1290
+1276 [-]: JMP       1290         ; PC := 1290
+1277 [-]: GETUPVAL  R75 U20      ; R75 := U20
+1278 [-]: TEST      R75 0        ; if not R75 then PC := 1294
+1279 [-]: JMP       1294         ; PC := 1294
+1280 [-]: GETGLOBAL R75 K2       ; R75 := gRegion
+1281 [-]: SELF      R75 R75 K172 ; R76 := R75; R75 := R75["0xBDD34CC6"]
+1282 [-]: GETGLOBAL R77 K130     ; R77 := markerFx
+1283 [-]: GETUPVAL  R78 U17      ; R78 := U17
+1284 [-]: GETGLOBAL R79 K54      ; R79 := ZERO_ROTATION
+1285 [-]: CALL      R75 5 2      ; R75 := R75(R76,R77,R78,R79)
+1286 [-]: MOVE      R75 R19      ; R75 := R19
+1287 [-]: MOVE      R75 R0       ; R75 := R0
+1288 [-]: MOVE      R75 R20      ; R75 := R20
+1289 [-]: JMP       1294         ; PC := 1294
+1290 [-]: GETUPVAL  R75 U19      ; R75 := U19
+1291 [-]: SELF      R75 R75 K173 ; R76 := R75; R75 := R75["0xEC183DDC"]
+1292 [-]: GETUPVAL  R77 U17      ; R77 := U17
+1293 [-]: CALL      R75 3 1      ; R75(R76,R77)
+1294 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4.1:
 ;
 ; Name:            
-; Defined at line: 295
+; Defined at line: 298
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1504,7 +1519,7 @@ code size: 11
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 410
+; Defined at line: 413
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1824,7 +1839,7 @@ code size: 11
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 481
+; Defined at line: 484
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

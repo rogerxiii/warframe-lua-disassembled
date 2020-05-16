@@ -14,7 +14,7 @@ code size: 581
 code size: 168
 code size: 27
 code size: 60
-code size: 58
+code size: 62
 code size: 12
 code size: 49
 code size: 38
@@ -25,7 +25,7 @@ code size: 13
 code size: 95
 code size: 88
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\MonkeyHair.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\MonkeyHair.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1554,69 +1554,73 @@ code size: 88
 ; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R4 K0        ; R4 := _T
-  2 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["0x18B9D30B"]
-  3 [-]: GETGLOBAL R5 K2        ; R5 := mOwner
-  4 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5["0xE2B32C65"]
-  5 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  6 [-]: MOVE      R6 R1        ; R6 := R1
-  7 [-]: LOADK     R7 K4        ; R7 := 0
-  8 [-]: LOADK     R8 K4        ; R8 := 0
-  9 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 10 [-]: SELF      R4 R1 K5     ; R5 := R1; R4 := R1["0xD536546E"]
- 11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 12 [-]: TEST      R4 0         ; if not R4 then PC := 26
- 13 [-]: JMP       26           ; PC := 26
- 14 [-]: GETGLOBAL R4 K2        ; R4 := mOwner
- 15 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0xC5450C3A"]
- 16 [-]: GETGLOBAL R6 K7        ; R6 := 0xEC274B1A
- 17 [-]: LOADK     R7 K8        ; R7 := "CommandClone"
- 18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 19 [-]: MOVE      R7 R0        ; R7 := R0
- 20 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 21 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 22 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xC86606A6"]
- 23 [-]: LOADK     R5 K4        ; R5 := 0
- 24 [-]: MOVE      R6 R0        ; R6 := R0
- 25 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 26 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
- 27 [-]: GETGLOBAL R5 K11       ; R5 := deactivateSound
- 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: TEST      R4 1         ; if R4 then PC := 35
- 30 [-]: JMP       35           ; PC := 35
- 31 [-]: SELF      R4 R1 K12    ; R5 := R1; R4 := R1["0x25992394"]
- 32 [-]: GETGLOBAL R6 K11       ; R6 := deactivateSound
- 33 [-]: MOVE      R7 R0        ; R7 := R0
- 34 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 35 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 36 [-]: MOVE      R5 R0        ; R5 := R0
- 37 [-]: MOVE      R6 R1        ; R6 := R1
- 38 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 39 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
- 40 [-]: MOVE      R5 R1        ; R5 := R1
- 41 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 42 [-]: TEST      R4 1         ; if R4 then PC := 58
- 43 [-]: JMP       58           ; PC := 58
- 44 [-]: SELF      R4 R1 K13    ; R5 := R1; R4 := R1["0xDF13474F"]
- 45 [-]: GETGLOBAL R6 K14       ; R6 := activateAnim
- 46 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 47 [-]: TEST      R4 1         ; if R4 then PC := 54
- 48 [-]: JMP       54           ; PC := 54
- 49 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1["0xB709A931"]
- 50 [-]: GETGLOBAL R6 K14       ; R6 := activateAnim
- 51 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 52 [-]: TEST      R4 0         ; if not R4 then PC := 58
- 53 [-]: JMP       58           ; PC := 58
- 54 [-]: GETGLOBAL R4 K16       ; R4 := 0x201191EA
- 55 [-]: LOADK     R5 K4        ; R5 := 0
- 56 [-]: CALL      R4 2 1       ; R4(R5)
- 57 [-]: JMP       39           ; PC := 39
- 58 [-]: RETURN    R0 1         ; return 
+  2 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["AddAbilityTimer"]
+  3 [-]: EQ        1 R4 K2      ; if R4 == nil then PC := 14
+  4 [-]: JMP       14           ; PC := 14
+  5 [-]: GETGLOBAL R4 K0        ; R4 := _T
+  6 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["0x18B9D30B"]
+  7 [-]: GETGLOBAL R5 K4        ; R5 := mOwner
+  8 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5["0xE2B32C65"]
+  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 10 [-]: MOVE      R6 R1        ; R6 := R1
+ 11 [-]: LOADK     R7 K6        ; R7 := 0
+ 12 [-]: LOADK     R8 K6        ; R8 := 0
+ 13 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 14 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1["0xD536546E"]
+ 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 16 [-]: TEST      R4 0         ; if not R4 then PC := 30
+ 17 [-]: JMP       30           ; PC := 30
+ 18 [-]: GETGLOBAL R4 K4        ; R4 := mOwner
+ 19 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0xC5450C3A"]
+ 20 [-]: GETGLOBAL R6 K9        ; R6 := 0xEC274B1A
+ 21 [-]: LOADK     R7 K10       ; R7 := "CommandClone"
+ 22 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 23 [-]: MOVE      R7 R0        ; R7 := R0
+ 24 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 25 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 26 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["0xC86606A6"]
+ 27 [-]: LOADK     R5 K6        ; R5 := 0
+ 28 [-]: MOVE      R6 R0        ; R6 := R0
+ 29 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 30 [-]: GETGLOBAL R4 K12       ; R4 := 0x400E7765
+ 31 [-]: GETGLOBAL R5 K13       ; R5 := deactivateSound
+ 32 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 33 [-]: TEST      R4 1         ; if R4 then PC := 39
+ 34 [-]: JMP       39           ; PC := 39
+ 35 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1["0x25992394"]
+ 36 [-]: GETGLOBAL R6 K13       ; R6 := deactivateSound
+ 37 [-]: MOVE      R7 R0        ; R7 := R0
+ 38 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 39 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 40 [-]: MOVE      R5 R0        ; R5 := R0
+ 41 [-]: MOVE      R6 R1        ; R6 := R1
+ 42 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 43 [-]: GETGLOBAL R4 K12       ; R4 := 0x400E7765
+ 44 [-]: MOVE      R5 R1        ; R5 := R1
+ 45 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 46 [-]: TEST      R4 1         ; if R4 then PC := 62
+ 47 [-]: JMP       62           ; PC := 62
+ 48 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1["0xDF13474F"]
+ 49 [-]: GETGLOBAL R6 K16       ; R6 := activateAnim
+ 50 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 51 [-]: TEST      R4 1         ; if R4 then PC := 58
+ 52 [-]: JMP       58           ; PC := 58
+ 53 [-]: SELF      R4 R1 K17    ; R5 := R1; R4 := R1["0xB709A931"]
+ 54 [-]: GETGLOBAL R6 K16       ; R6 := activateAnim
+ 55 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 56 [-]: TEST      R4 0         ; if not R4 then PC := 62
+ 57 [-]: JMP       62           ; PC := 62
+ 58 [-]: GETGLOBAL R4 K18       ; R4 := 0x201191EA
+ 59 [-]: LOADK     R5 K6        ; R5 := 0
+ 60 [-]: CALL      R4 2 1       ; R4(R5)
+ 61 [-]: JMP       43           ; PC := 43
+ 62 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 537
+; Defined at line: 539
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1639,7 +1643,7 @@ code size: 88
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 542
+; Defined at line: 544
 ; #Upvalues:       6
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -1699,7 +1703,7 @@ code size: 88
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 558
+; Defined at line: 560
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1748,7 +1752,7 @@ code size: 88
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 574
+; Defined at line: 576
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1960,7 +1964,7 @@ code size: 88
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 649
+; Defined at line: 651
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1980,7 +1984,7 @@ code size: 88
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 653
+; Defined at line: 655
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1997,7 +2001,7 @@ code size: 88
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 658
+; Defined at line: 660
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2021,7 +2025,7 @@ code size: 88
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 666
+; Defined at line: 668
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2127,7 +2131,7 @@ code size: 88
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 707
+; Defined at line: 709
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -8,7 +8,7 @@ code size: 63
 code size: 193
 code size: 56
 code size: 42
-code size: 153
+code size: 168
 code size: 39
 code size: 20
 code size: 20
@@ -19,7 +19,7 @@ code size: 38
 code size: 24
 code size: 21
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Modes\SentientArtifactMissionEnvironment.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Modes\SentientArtifactMissionEnvironment.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1137,167 +1137,182 @@ code size: 21
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  20
+; Max Stack Size:  19
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
-  2 [-]: GETGLOBAL R1 K1        ; R1 := 0x400E7765
-  3 [-]: MOVE      R2 R0        ; R2 := R0
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 0         ; if not R1 then PC := 12
-  6 [-]: JMP       12           ; PC := 12
-  7 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
-  8 [-]: GETGLOBAL R1 K2        ; R1 := 0x201191EA
-  9 [-]: LOADK     R2 K3        ; R2 := 0
- 10 [-]: CALL      R1 2 1       ; R1(R2)
- 11 [-]: JMP       2            ; PC := 2
- 12 [-]: GETGLOBAL R1 K4        ; R1 := 0xEC274B1A
- 13 [-]: LOADK     R2 K5        ; R2 := "PlayRumbleSound"
- 14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 15 [-]: GETGLOBAL R2 K6        ; R2 := gRegion
- 16 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xA76F0612"]
- 17 [-]: GETGLOBAL R4 K4        ; R4 := 0xEC274B1A
- 18 [-]: LOADK     R5 K8        ; R5 := "MoonRumbleEffect"
- 19 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 20 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 21 [-]: GETGLOBAL R3 K6        ; R3 := gRegion
- 22 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xA933C036"]
- 23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 24 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["postProcess"]
- 25 [-]: GETTABLE  R4 R3 K11    ; R4 := R3["viewShake"]
- 26 [-]: SETTABLE  R4 K12 K3    ; R4["mShakeAmbient"] := 0
- 27 [-]: GETGLOBAL R4 K6        ; R4 := gRegion
- 28 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4["0xA559F558"]
- 29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 30 [-]: TEST      R4 0         ; if not R4 then PC := 47
- 31 [-]: JMP       47           ; PC := 47
- 32 [-]: GETGLOBAL R4 K14       ; R4 := _T
- 33 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["MoonQuakeActive"]
- 34 [-]: TEST      R4 0         ; if not R4 then PC := 41
- 35 [-]: JMP       41           ; PC := 41
- 36 [-]: SELF      R4 R0 K16    ; R5 := R0; R4 := R0["0xD015CBDC"]
- 37 [-]: MOVE      R6 R1        ; R6 := R1
- 38 [-]: LOADK     R7 K3        ; R7 := 0
- 39 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 40 [-]: JMP       53           ; PC := 53
- 41 [-]: SELF      R4 R0 K16    ; R5 := R0; R4 := R0["0xD015CBDC"]
- 42 [-]: MOVE      R6 R1        ; R6 := R1
- 43 [-]: LOADK     R7 K17       ; R7 := 999
- 44 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 45 [-]: RETURN    R0 1         ; return 
- 46 [-]: JMP       53           ; PC := 53
- 47 [-]: SELF      R4 R0 K18    ; R5 := R0; R4 := R0["0xED0EE7FB"]
- 48 [-]: MOVE      R6 R1        ; R6 := R1
- 49 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 50 [-]: EQ        0 R4 K17     ; if R4 ~= 999 then PC := 53
- 51 [-]: JMP       53           ; PC := 53
- 52 [-]: RETURN    R0 1         ; return 
- 53 [-]: GETGLOBAL R4 K19       ; R4 := 0x7FD4B57D
- 54 [-]: LOADK     R5 K20       ; R5 := 5
- 55 [-]: LOADK     R6 K21       ; R6 := 7
- 56 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 57 [-]: GETGLOBAL R5 K6        ; R5 := gRegion
- 58 [-]: SELF      R5 R5 K22    ; R6 := R5; R5 := R5["0x3E2F6BF"]
- 59 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 60 [-]: SELF      R6 R5 K23    ; R7 := R5; R6 := R5["0x6DA72501"]
- 61 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 62 [-]: GETGLOBAL R7 K6        ; R7 := gRegion
- 63 [-]: SELF      R7 R7 K24    ; R8 := R7; R7 := R7["0x25992394"]
- 64 [-]: GETGLOBAL R9 K25       ; R9 := shakeSound
- 65 [-]: MOVE      R10 R6       ; R10 := R6
- 66 [-]: MOVE      R11 R0       ; R11 := R0
- 67 [-]: CALL      R7 5 2       ; R7 := R7(R8,R9,R10,R11)
- 68 [-]: GETGLOBAL R8 K6        ; R8 := gRegion
- 69 [-]: SELF      R8 R8 K13    ; R9 := R8; R8 := R8["0xA559F558"]
- 70 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 71 [-]: TEST      R8 0         ; if not R8 then PC := 87
- 72 [-]: JMP       87           ; PC := 87
- 73 [-]: GETGLOBAL R8 K26       ; R8 := 0x63B09107
- 74 [-]: MOVE      R9 R2        ; R9 := R2
- 75 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
- 76 [-]: JMP       85           ; PC := 85
- 77 [-]: GETGLOBAL R13 K1       ; R13 := 0x400E7765
- 78 [-]: MOVE      R14 R12      ; R14 := R12
- 79 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 80 [-]: TEST      R13 1        ; if R13 then PC := 85
- 81 [-]: JMP       85           ; PC := 85
- 82 [-]: SELF      R13 R12 K27  ; R14 := R12; R13 := R12["0x8D5886B7"]
- 83 [-]: LOADK     R15 K28      ; R15 := "Burst"
- 84 [-]: CALL      R13 3 1      ; R13(R14,R15)
- 85 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 77; R10 := R11 end
- 86 [-]: JMP       77           ; PC := 77
- 87 [-]: GETGLOBAL R13 K1       ; R13 := 0x400E7765
- 88 [-]: MOVE      R14 R7       ; R14 := R7
- 89 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 90 [-]: TEST      R13 1        ; if R13 then PC := 101
- 91 [-]: JMP       101          ; PC := 101
- 92 [-]: SELF      R13 R7 K29   ; R14 := R7; R13 := R7["0xD6F5F878"]
- 93 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 94 [-]: GETTABLE  R14 R3 K11   ; R14 := R3["viewShake"]
- 95 [-]: MUL       R15 R13 R4   ; R15 := R13 * R4
- 96 [-]: SETTABLE  R14 K12 R15  ; R14["mShakeAmbient"] := R15
- 97 [-]: GETGLOBAL R14 K2       ; R14 := 0x201191EA
- 98 [-]: LOADK     R15 K3       ; R15 := 0
- 99 [-]: CALL      R14 2 1      ; R14(R15)
-100 [-]: JMP       87           ; PC := 87
-101 [-]: GETGLOBAL R14 K6       ; R14 := gRegion
-102 [-]: SELF      R14 R14 K13  ; R15 := R14; R14 := R14["0xA559F558"]
-103 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-104 [-]: TEST      R14 0        ; if not R14 then PC := 133
-105 [-]: JMP       133          ; PC := 133
-106 [-]: GETGLOBAL R14 K19      ; R14 := 0x7FD4B57D
-107 [-]: LOADK     R15 K20      ; R15 := 5
-108 [-]: LOADK     R16 K30      ; R16 := 15
-109 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-110 [-]: LOADK     R15 K3       ; R15 := 0
-111 [-]: LT        0 R15 R14    ; if R15 >= R14 then PC := 124
-112 [-]: JMP       124          ; PC := 124
-113 [-]: GETGLOBAL R16 K14      ; R16 := _T
-114 [-]: GETTABLE  R16 R16 K15  ; R16 := R16["MoonQuakeActive"]
-115 [-]: TEST      R16 0        ; if not R16 then PC := 124
-116 [-]: JMP       124          ; PC := 124
-117 [-]: GETGLOBAL R16 K31      ; R16 := 0x4CDEF9FF
-118 [-]: CALL      R16 1 2      ; R16 := R16()
-119 [-]: ADD       R15 R15 R16  ; R15 := R15 + R16
-120 [-]: GETGLOBAL R16 K2       ; R16 := 0x201191EA
-121 [-]: LOADK     R17 K3       ; R17 := 0
-122 [-]: CALL      R16 2 1      ; R16(R17)
-123 [-]: JMP       111          ; PC := 111
-124 [-]: GETGLOBAL R16 K14      ; R16 := _T
-125 [-]: GETTABLE  R16 R16 K15  ; R16 := R16["MoonQuakeActive"]
-126 [-]: TEST      R16 0        ; if not R16 then PC := 147
-127 [-]: JMP       147          ; PC := 147
-128 [-]: SELF      R16 R0 K16   ; R17 := R0; R16 := R0["0xD015CBDC"]
-129 [-]: MOVE      R18 R1       ; R18 := R1
-130 [-]: LOADK     R19 K32      ; R19 := 1
-131 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-132 [-]: JMP       147          ; PC := 147
-133 [-]: GETGLOBAL R16 K1       ; R16 := 0x400E7765
-134 [-]: MOVE      R17 R0       ; R17 := R0
-135 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-136 [-]: TEST      R16 1        ; if R16 then PC := 147
-137 [-]: JMP       147          ; PC := 147
-138 [-]: SELF      R16 R0 K18   ; R17 := R0; R16 := R0["0xED0EE7FB"]
-139 [-]: MOVE      R18 R1       ; R18 := R1
-140 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
-141 [-]: EQ        0 R16 K3     ; if R16 ~= 0 then PC := 147
-142 [-]: JMP       147          ; PC := 147
-143 [-]: GETGLOBAL R16 K2       ; R16 := 0x201191EA
-144 [-]: LOADK     R17 K33      ; R17 := 0.5
-145 [-]: CALL      R16 2 1      ; R16(R17)
-146 [-]: JMP       133          ; PC := 133
-147 [-]: GETGLOBAL R16 K2       ; R16 := 0x201191EA
-148 [-]: LOADK     R17 K3       ; R17 := 0
-149 [-]: CALL      R16 2 1      ; R16(R17)
-150 [-]: JMP       25           ; PC := 25
-151 [-]: GETTABLE  R16 R3 K11   ; R16 := R3["viewShake"]
-152 [-]: SETTABLE  R16 K12 K3   ; R16["mShakeAmbient"] := 0
-153 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := gGameRules
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 0         ; if not R0 then PC := 10
+  5 [-]: JMP       10           ; PC := 10
+  6 [-]: GETGLOBAL R0 K2        ; R0 := 0x201191EA
+  7 [-]: LOADK     R1 K3        ; R1 := 0
+  8 [-]: CALL      R0 2 1       ; R0(R1)
+  9 [-]: JMP       1            ; PC := 1
+ 10 [-]: GETGLOBAL R0 K4        ; R0 := 0xEC274B1A
+ 11 [-]: LOADK     R1 K5        ; R1 := "PlayRumbleSound"
+ 12 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 13 [-]: GETGLOBAL R1 K6        ; R1 := gRegion
+ 14 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1["0xA76F0612"]
+ 15 [-]: GETGLOBAL R3 K4        ; R3 := 0xEC274B1A
+ 16 [-]: LOADK     R4 K8        ; R4 := "MoonRumbleEffect"
+ 17 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
+ 18 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
+ 19 [-]: GETGLOBAL R2 K6        ; R2 := gRegion
+ 20 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0xA933C036"]
+ 21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 22 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["postProcess"]
+ 23 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 24 [-]: GETGLOBAL R4 K1        ; R4 := gGameRules
+ 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 26 [-]: TEST      R3 1         ; if R3 then PC := 166
+ 27 [-]: JMP       166          ; PC := 166
+ 28 [-]: GETTABLE  R3 R2 K11    ; R3 := R2["viewShake"]
+ 29 [-]: SETTABLE  R3 K12 K3    ; R3["mShakeAmbient"] := 0
+ 30 [-]: GETGLOBAL R3 K6        ; R3 := gRegion
+ 31 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3["0xA559F558"]
+ 32 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 33 [-]: TEST      R3 0         ; if not R3 then PC := 52
+ 34 [-]: JMP       52           ; PC := 52
+ 35 [-]: GETGLOBAL R3 K14       ; R3 := _T
+ 36 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["MoonQuakeActive"]
+ 37 [-]: TEST      R3 0         ; if not R3 then PC := 45
+ 38 [-]: JMP       45           ; PC := 45
+ 39 [-]: GETGLOBAL R3 K1        ; R3 := gGameRules
+ 40 [-]: SELF      R3 R3 K16    ; R4 := R3; R3 := R3["0xD015CBDC"]
+ 41 [-]: MOVE      R5 R0        ; R5 := R0
+ 42 [-]: LOADK     R6 K3        ; R6 := 0
+ 43 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 44 [-]: JMP       59           ; PC := 59
+ 45 [-]: GETGLOBAL R3 K1        ; R3 := gGameRules
+ 46 [-]: SELF      R3 R3 K16    ; R4 := R3; R3 := R3["0xD015CBDC"]
+ 47 [-]: MOVE      R5 R0        ; R5 := R0
+ 48 [-]: LOADK     R6 K17       ; R6 := 999
+ 49 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 50 [-]: RETURN    R0 1         ; return 
+ 51 [-]: JMP       59           ; PC := 59
+ 52 [-]: GETGLOBAL R3 K1        ; R3 := gGameRules
+ 53 [-]: SELF      R3 R3 K18    ; R4 := R3; R3 := R3["0xED0EE7FB"]
+ 54 [-]: MOVE      R5 R0        ; R5 := R0
+ 55 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 56 [-]: EQ        0 R3 K17     ; if R3 ~= 999 then PC := 59
+ 57 [-]: JMP       59           ; PC := 59
+ 58 [-]: RETURN    R0 1         ; return 
+ 59 [-]: GETGLOBAL R3 K19       ; R3 := 0x7FD4B57D
+ 60 [-]: LOADK     R4 K20       ; R4 := 5
+ 61 [-]: LOADK     R5 K21       ; R5 := 7
+ 62 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 63 [-]: GETGLOBAL R4 K6        ; R4 := gRegion
+ 64 [-]: SELF      R4 R4 K22    ; R5 := R4; R4 := R4["0x3E2F6BF"]
+ 65 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 66 [-]: LOADNIL   R5 R5        ; R5 := nil
+ 67 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 68 [-]: MOVE      R7 R4        ; R7 := R4
+ 69 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 70 [-]: TEST      R6 1         ; if R6 then PC := 81
+ 71 [-]: JMP       81           ; PC := 81
+ 72 [-]: SELF      R6 R4 K23    ; R7 := R4; R6 := R4["0x6DA72501"]
+ 73 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 74 [-]: GETGLOBAL R7 K6        ; R7 := gRegion
+ 75 [-]: SELF      R7 R7 K24    ; R8 := R7; R7 := R7["0x25992394"]
+ 76 [-]: GETGLOBAL R9 K25       ; R9 := shakeSound
+ 77 [-]: MOVE      R10 R6       ; R10 := R6
+ 78 [-]: MOVE      R11 R0       ; R11 := R0
+ 79 [-]: CALL      R7 5 2       ; R7 := R7(R8,R9,R10,R11)
+ 80 [-]: MOVE      R5 R7        ; R5 := R7
+ 81 [-]: GETGLOBAL R7 K6        ; R7 := gRegion
+ 82 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0xA559F558"]
+ 83 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 84 [-]: TEST      R7 0         ; if not R7 then PC := 100
+ 85 [-]: JMP       100          ; PC := 100
+ 86 [-]: GETGLOBAL R7 K26       ; R7 := 0x63B09107
+ 87 [-]: MOVE      R8 R1        ; R8 := R1
+ 88 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
+ 89 [-]: JMP       98           ; PC := 98
+ 90 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
+ 91 [-]: MOVE      R13 R11      ; R13 := R11
+ 92 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 93 [-]: TEST      R12 1        ; if R12 then PC := 98
+ 94 [-]: JMP       98           ; PC := 98
+ 95 [-]: SELF      R12 R11 K27  ; R13 := R11; R12 := R11["0x8D5886B7"]
+ 96 [-]: LOADK     R14 K28      ; R14 := "Burst"
+ 97 [-]: CALL      R12 3 1      ; R12(R13,R14)
+ 98 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 90; R9 := R10 end
+ 99 [-]: JMP       90           ; PC := 90
+100 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
+101 [-]: MOVE      R13 R5       ; R13 := R5
+102 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+103 [-]: TEST      R12 1        ; if R12 then PC := 114
+104 [-]: JMP       114          ; PC := 114
+105 [-]: SELF      R12 R5 K29   ; R13 := R5; R12 := R5["0xD6F5F878"]
+106 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+107 [-]: GETTABLE  R13 R2 K11   ; R13 := R2["viewShake"]
+108 [-]: MUL       R14 R12 R3   ; R14 := R12 * R3
+109 [-]: SETTABLE  R13 K12 R14  ; R13["mShakeAmbient"] := R14
+110 [-]: GETGLOBAL R13 K2       ; R13 := 0x201191EA
+111 [-]: LOADK     R14 K3       ; R14 := 0
+112 [-]: CALL      R13 2 1      ; R13(R14)
+113 [-]: JMP       100          ; PC := 100
+114 [-]: GETGLOBAL R13 K6       ; R13 := gRegion
+115 [-]: SELF      R13 R13 K13  ; R14 := R13; R13 := R13["0xA559F558"]
+116 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+117 [-]: TEST      R13 0        ; if not R13 then PC := 147
+118 [-]: JMP       147          ; PC := 147
+119 [-]: GETGLOBAL R13 K19      ; R13 := 0x7FD4B57D
+120 [-]: LOADK     R14 K20      ; R14 := 5
+121 [-]: LOADK     R15 K30      ; R15 := 15
+122 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+123 [-]: LOADK     R14 K3       ; R14 := 0
+124 [-]: LT        0 R14 R13    ; if R14 >= R13 then PC := 137
+125 [-]: JMP       137          ; PC := 137
+126 [-]: GETGLOBAL R15 K14      ; R15 := _T
+127 [-]: GETTABLE  R15 R15 K15  ; R15 := R15["MoonQuakeActive"]
+128 [-]: TEST      R15 0        ; if not R15 then PC := 137
+129 [-]: JMP       137          ; PC := 137
+130 [-]: GETGLOBAL R15 K31      ; R15 := 0x4CDEF9FF
+131 [-]: CALL      R15 1 2      ; R15 := R15()
+132 [-]: ADD       R14 R14 R15  ; R14 := R14 + R15
+133 [-]: GETGLOBAL R15 K2       ; R15 := 0x201191EA
+134 [-]: LOADK     R16 K3       ; R16 := 0
+135 [-]: CALL      R15 2 1      ; R15(R16)
+136 [-]: JMP       124          ; PC := 124
+137 [-]: GETGLOBAL R15 K14      ; R15 := _T
+138 [-]: GETTABLE  R15 R15 K15  ; R15 := R15["MoonQuakeActive"]
+139 [-]: TEST      R15 0        ; if not R15 then PC := 162
+140 [-]: JMP       162          ; PC := 162
+141 [-]: GETGLOBAL R15 K1       ; R15 := gGameRules
+142 [-]: SELF      R15 R15 K16  ; R16 := R15; R15 := R15["0xD015CBDC"]
+143 [-]: MOVE      R17 R0       ; R17 := R0
+144 [-]: LOADK     R18 K32      ; R18 := 1
+145 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+146 [-]: JMP       162          ; PC := 162
+147 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
+148 [-]: GETGLOBAL R16 K1       ; R16 := gGameRules
+149 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+150 [-]: TEST      R15 1        ; if R15 then PC := 162
+151 [-]: JMP       162          ; PC := 162
+152 [-]: GETGLOBAL R15 K1       ; R15 := gGameRules
+153 [-]: SELF      R15 R15 K18  ; R16 := R15; R15 := R15["0xED0EE7FB"]
+154 [-]: MOVE      R17 R0       ; R17 := R0
+155 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+156 [-]: EQ        0 R15 K3     ; if R15 ~= 0 then PC := 162
+157 [-]: JMP       162          ; PC := 162
+158 [-]: GETGLOBAL R15 K2       ; R15 := 0x201191EA
+159 [-]: LOADK     R16 K33      ; R16 := 0.5
+160 [-]: CALL      R15 2 1      ; R15(R16)
+161 [-]: JMP       147          ; PC := 147
+162 [-]: GETGLOBAL R15 K2       ; R15 := 0x201191EA
+163 [-]: LOADK     R16 K3       ; R16 := 0
+164 [-]: CALL      R15 2 1      ; R15(R16)
+165 [-]: JMP       23           ; PC := 23
+166 [-]: GETTABLE  R15 R2 K11   ; R15 := R2["viewShake"]
+167 [-]: SETTABLE  R15 K12 K3   ; R15["mShakeAmbient"] := 0
+168 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 447
+; Defined at line: 449
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1347,7 +1362,7 @@ code size: 21
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 472
+; Defined at line: 474
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1378,7 +1393,7 @@ code size: 21
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 483
+; Defined at line: 485
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1409,7 +1424,7 @@ code size: 21
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 496
+; Defined at line: 498
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1689,7 +1704,7 @@ code size: 21
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 613
+; Defined at line: 615
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1707,7 +1722,7 @@ code size: 21
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 617
+; Defined at line: 619
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1781,7 +1796,7 @@ code size: 21
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 635
+; Defined at line: 637
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1830,7 +1845,7 @@ code size: 21
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 651
+; Defined at line: 653
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1865,7 +1880,7 @@ code size: 21
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 663
+; Defined at line: 665
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

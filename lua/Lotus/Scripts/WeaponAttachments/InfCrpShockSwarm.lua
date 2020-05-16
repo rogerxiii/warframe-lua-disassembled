@@ -1,10 +1,10 @@
 code size: 22
 code size: 22
 code size: 405
-code size: 183
+code size: 184
 code size: 106
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\InfCrpShockSwarm.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\InfCrpShockSwarm.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -575,109 +575,110 @@ code size: 106
  78 [-]: GETGLOBAL R17 K32      ; R17 := attachedFlareType
  79 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
  80 [-]: LOADK     R16 K33      ; R16 := 0.30000001192093
- 81 [-]: LT        0 R11 R16    ; if R11 >= R16 then PC := 183
- 82 [-]: JMP       183          ; PC := 183
- 83 [-]: DIV       R12 R11 R16  ; R12 := R11 / R16
- 84 [-]: SELF      R17 R0 K34   ; R18 := R0; R17 := R0["0xD124E361"]
- 85 [-]: GETGLOBAL R19 K14      ; R19 := Lotus_Game
- 86 [-]: GETTABLE  R19 R19 K35  ; R19 := R19["TINT_COLOR"]
- 87 [-]: GETGLOBAL R20 K36      ; R20 := 0x93034B55
- 88 [-]: GETTABLE  R21 R4 K37   ; R21 := R4["red"]
- 89 [-]: GETTABLE  R22 R8 K37   ; R22 := R8["red"]
- 90 [-]: MOVE      R23 R12      ; R23 := R12
- 91 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
- 92 [-]: DIV       R20 R20 K12  ; R20 := R20 / 255
- 93 [-]: GETGLOBAL R21 K36      ; R21 := 0x93034B55
- 94 [-]: GETTABLE  R22 R4 K38   ; R22 := R4["green"]
- 95 [-]: GETTABLE  R23 R8 K38   ; R23 := R8["green"]
- 96 [-]: MOVE      R24 R12      ; R24 := R12
- 97 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
- 98 [-]: DIV       R21 R21 K12  ; R21 := R21 / 255
- 99 [-]: GETGLOBAL R22 K36      ; R22 := 0x93034B55
-100 [-]: GETTABLE  R23 R4 K39   ; R23 := R4["blue"]
-101 [-]: GETTABLE  R24 R8 K39   ; R24 := R8["blue"]
-102 [-]: MOVE      R25 R12      ; R25 := R12
-103 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-104 [-]: DIV       R22 R22 K12  ; R22 := R22 / 255
-105 [-]: LOADK     R23 K40      ; R23 := 1
-106 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
-107 [-]: SELF      R17 R0 K34   ; R18 := R0; R17 := R0["0xD124E361"]
-108 [-]: MOVE      R19 R13      ; R19 := R13
-109 [-]: GETGLOBAL R20 K36      ; R20 := 0x93034B55
-110 [-]: GETTABLE  R21 R7 K37   ; R21 := R7["red"]
-111 [-]: GETTABLE  R22 R9 K37   ; R22 := R9["red"]
-112 [-]: MOVE      R23 R12      ; R23 := R12
-113 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
-114 [-]: DIV       R20 R20 K12  ; R20 := R20 / 255
-115 [-]: GETGLOBAL R21 K36      ; R21 := 0x93034B55
-116 [-]: GETTABLE  R22 R7 K38   ; R22 := R7["green"]
-117 [-]: GETTABLE  R23 R9 K38   ; R23 := R9["green"]
-118 [-]: MOVE      R24 R12      ; R24 := R12
-119 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-120 [-]: DIV       R21 R21 K12  ; R21 := R21 / 255
-121 [-]: GETGLOBAL R22 K36      ; R22 := 0x93034B55
-122 [-]: GETTABLE  R23 R7 K39   ; R23 := R7["blue"]
-123 [-]: GETTABLE  R24 R9 K39   ; R24 := R9["blue"]
-124 [-]: MOVE      R25 R12      ; R25 := R12
-125 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-126 [-]: DIV       R22 R22 K12  ; R22 := R22 / 255
-127 [-]: LOADK     R23 K40      ; R23 := 1
-128 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
-129 [-]: SELF      R17 R0 K34   ; R18 := R0; R17 := R0["0xD124E361"]
-130 [-]: MOVE      R19 R14      ; R19 := R14
-131 [-]: GETGLOBAL R20 K36      ; R20 := 0x93034B55
-132 [-]: GETTABLE  R21 R6 K37   ; R21 := R6["red"]
-133 [-]: GETTABLE  R22 R10 K37  ; R22 := R10["red"]
-134 [-]: MOVE      R23 R12      ; R23 := R12
-135 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
-136 [-]: DIV       R20 R20 K12  ; R20 := R20 / 255
-137 [-]: GETGLOBAL R21 K36      ; R21 := 0x93034B55
-138 [-]: GETTABLE  R22 R6 K38   ; R22 := R6["green"]
-139 [-]: GETTABLE  R23 R10 K38  ; R23 := R10["green"]
-140 [-]: MOVE      R24 R12      ; R24 := R12
-141 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-142 [-]: DIV       R21 R21 K12  ; R21 := R21 / 255
-143 [-]: GETGLOBAL R22 K36      ; R22 := 0x93034B55
-144 [-]: GETTABLE  R23 R6 K39   ; R23 := R6["blue"]
-145 [-]: GETTABLE  R24 R10 K39  ; R24 := R10["blue"]
-146 [-]: MOVE      R25 R12      ; R25 := R12
-147 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-148 [-]: DIV       R22 R22 K12  ; R22 := R22 / 255
-149 [-]: LOADK     R23 K40      ; R23 := 1
-150 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
-151 [-]: GETGLOBAL R17 K5       ; R17 := 0x400E7765
-152 [-]: MOVE      R18 R15      ; R18 := R15
-153 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-154 [-]: TEST      R17 1        ; if R17 then PC := 176
-155 [-]: JMP       176          ; PC := 176
-156 [-]: SELF      R17 R15 K41  ; R18 := R15; R17 := R15["0xA20F64C0"]
-157 [-]: GETGLOBAL R19 K8       ; R19 := 0xB5A59043
-158 [-]: GETGLOBAL R20 K36      ; R20 := 0x93034B55
-159 [-]: GETTABLE  R21 R4 K37   ; R21 := R4["red"]
-160 [-]: GETTABLE  R22 R8 K37   ; R22 := R8["red"]
-161 [-]: MOVE      R23 R12      ; R23 := R12
-162 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
-163 [-]: GETGLOBAL R21 K36      ; R21 := 0x93034B55
-164 [-]: GETTABLE  R22 R4 K38   ; R22 := R4["green"]
-165 [-]: GETTABLE  R23 R8 K38   ; R23 := R8["green"]
-166 [-]: MOVE      R24 R12      ; R24 := R12
-167 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
-168 [-]: GETGLOBAL R22 K36      ; R22 := 0x93034B55
-169 [-]: GETTABLE  R23 R4 K39   ; R23 := R4["blue"]
-170 [-]: GETTABLE  R24 R8 K39   ; R24 := R8["blue"]
-171 [-]: MOVE      R25 R12      ; R25 := R12
-172 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-173 [-]: LOADK     R23 K12      ; R23 := 255
-174 [-]: CALL      R19 5 0      ; R19,... := R19(R20,R21,R22,R23)
-175 [-]: CALL      R17 0 1      ; R17(R18,...)
-176 [-]: GETGLOBAL R17 K42      ; R17 := 0x4CDEF9FF
-177 [-]: CALL      R17 1 2      ; R17 := R17()
-178 [-]: ADD       R11 R11 R17  ; R11 := R11 + R17
-179 [-]: GETGLOBAL R17 K0       ; R17 := 0x201191EA
-180 [-]: LOADK     R18 K1       ; R18 := 0
-181 [-]: CALL      R17 2 1      ; R17(R18)
-182 [-]: JMP       81           ; PC := 81
-183 [-]: RETURN    R0 1         ; return 
+ 81 [-]: GETGLOBAL R17 K34      ; R17 := TimeLength
+ 82 [-]: LT        0 R16 R17    ; if R16 >= R17 then PC := 184
+ 83 [-]: JMP       184          ; PC := 184
+ 84 [-]: DIV       R12 R11 R16  ; R12 := R11 / R16
+ 85 [-]: SELF      R17 R0 K35   ; R18 := R0; R17 := R0["0xD124E361"]
+ 86 [-]: GETGLOBAL R19 K14      ; R19 := Lotus_Game
+ 87 [-]: GETTABLE  R19 R19 K36  ; R19 := R19["TINT_COLOR"]
+ 88 [-]: GETGLOBAL R20 K37      ; R20 := 0x93034B55
+ 89 [-]: GETTABLE  R21 R4 K38   ; R21 := R4["red"]
+ 90 [-]: GETTABLE  R22 R8 K38   ; R22 := R8["red"]
+ 91 [-]: MOVE      R23 R12      ; R23 := R12
+ 92 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
+ 93 [-]: DIV       R20 R20 K12  ; R20 := R20 / 255
+ 94 [-]: GETGLOBAL R21 K37      ; R21 := 0x93034B55
+ 95 [-]: GETTABLE  R22 R4 K39   ; R22 := R4["green"]
+ 96 [-]: GETTABLE  R23 R8 K39   ; R23 := R8["green"]
+ 97 [-]: MOVE      R24 R12      ; R24 := R12
+ 98 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
+ 99 [-]: DIV       R21 R21 K12  ; R21 := R21 / 255
+100 [-]: GETGLOBAL R22 K37      ; R22 := 0x93034B55
+101 [-]: GETTABLE  R23 R4 K40   ; R23 := R4["blue"]
+102 [-]: GETTABLE  R24 R8 K40   ; R24 := R8["blue"]
+103 [-]: MOVE      R25 R12      ; R25 := R12
+104 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
+105 [-]: DIV       R22 R22 K12  ; R22 := R22 / 255
+106 [-]: LOADK     R23 K41      ; R23 := 1
+107 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
+108 [-]: SELF      R17 R0 K35   ; R18 := R0; R17 := R0["0xD124E361"]
+109 [-]: MOVE      R19 R13      ; R19 := R13
+110 [-]: GETGLOBAL R20 K37      ; R20 := 0x93034B55
+111 [-]: GETTABLE  R21 R7 K38   ; R21 := R7["red"]
+112 [-]: GETTABLE  R22 R9 K38   ; R22 := R9["red"]
+113 [-]: MOVE      R23 R12      ; R23 := R12
+114 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
+115 [-]: DIV       R20 R20 K12  ; R20 := R20 / 255
+116 [-]: GETGLOBAL R21 K37      ; R21 := 0x93034B55
+117 [-]: GETTABLE  R22 R7 K39   ; R22 := R7["green"]
+118 [-]: GETTABLE  R23 R9 K39   ; R23 := R9["green"]
+119 [-]: MOVE      R24 R12      ; R24 := R12
+120 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
+121 [-]: DIV       R21 R21 K12  ; R21 := R21 / 255
+122 [-]: GETGLOBAL R22 K37      ; R22 := 0x93034B55
+123 [-]: GETTABLE  R23 R7 K40   ; R23 := R7["blue"]
+124 [-]: GETTABLE  R24 R9 K40   ; R24 := R9["blue"]
+125 [-]: MOVE      R25 R12      ; R25 := R12
+126 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
+127 [-]: DIV       R22 R22 K12  ; R22 := R22 / 255
+128 [-]: LOADK     R23 K41      ; R23 := 1
+129 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
+130 [-]: SELF      R17 R0 K35   ; R18 := R0; R17 := R0["0xD124E361"]
+131 [-]: MOVE      R19 R14      ; R19 := R14
+132 [-]: GETGLOBAL R20 K37      ; R20 := 0x93034B55
+133 [-]: GETTABLE  R21 R6 K38   ; R21 := R6["red"]
+134 [-]: GETTABLE  R22 R10 K38  ; R22 := R10["red"]
+135 [-]: MOVE      R23 R12      ; R23 := R12
+136 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
+137 [-]: DIV       R20 R20 K12  ; R20 := R20 / 255
+138 [-]: GETGLOBAL R21 K37      ; R21 := 0x93034B55
+139 [-]: GETTABLE  R22 R6 K39   ; R22 := R6["green"]
+140 [-]: GETTABLE  R23 R10 K39  ; R23 := R10["green"]
+141 [-]: MOVE      R24 R12      ; R24 := R12
+142 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
+143 [-]: DIV       R21 R21 K12  ; R21 := R21 / 255
+144 [-]: GETGLOBAL R22 K37      ; R22 := 0x93034B55
+145 [-]: GETTABLE  R23 R6 K40   ; R23 := R6["blue"]
+146 [-]: GETTABLE  R24 R10 K40  ; R24 := R10["blue"]
+147 [-]: MOVE      R25 R12      ; R25 := R12
+148 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
+149 [-]: DIV       R22 R22 K12  ; R22 := R22 / 255
+150 [-]: LOADK     R23 K41      ; R23 := 1
+151 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
+152 [-]: GETGLOBAL R17 K5       ; R17 := 0x400E7765
+153 [-]: MOVE      R18 R15      ; R18 := R15
+154 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+155 [-]: TEST      R17 1        ; if R17 then PC := 177
+156 [-]: JMP       177          ; PC := 177
+157 [-]: SELF      R17 R15 K42  ; R18 := R15; R17 := R15["0xA20F64C0"]
+158 [-]: GETGLOBAL R19 K8       ; R19 := 0xB5A59043
+159 [-]: GETGLOBAL R20 K37      ; R20 := 0x93034B55
+160 [-]: GETTABLE  R21 R4 K38   ; R21 := R4["red"]
+161 [-]: GETTABLE  R22 R8 K38   ; R22 := R8["red"]
+162 [-]: MOVE      R23 R12      ; R23 := R12
+163 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
+164 [-]: GETGLOBAL R21 K37      ; R21 := 0x93034B55
+165 [-]: GETTABLE  R22 R4 K39   ; R22 := R4["green"]
+166 [-]: GETTABLE  R23 R8 K39   ; R23 := R8["green"]
+167 [-]: MOVE      R24 R12      ; R24 := R12
+168 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
+169 [-]: GETGLOBAL R22 K37      ; R22 := 0x93034B55
+170 [-]: GETTABLE  R23 R4 K40   ; R23 := R4["blue"]
+171 [-]: GETTABLE  R24 R8 K40   ; R24 := R8["blue"]
+172 [-]: MOVE      R25 R12      ; R25 := R12
+173 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
+174 [-]: LOADK     R23 K12      ; R23 := 255
+175 [-]: CALL      R19 5 0      ; R19,... := R19(R20,R21,R22,R23)
+176 [-]: CALL      R17 0 1      ; R17(R18,...)
+177 [-]: GETGLOBAL R17 K43      ; R17 := 0x4CDEF9FF
+178 [-]: CALL      R17 1 2      ; R17 := R17()
+179 [-]: ADD       R11 R11 R17  ; R11 := R11 + R17
+180 [-]: GETGLOBAL R17 K0       ; R17 := 0x201191EA
+181 [-]: LOADK     R18 K1       ; R18 := 0
+182 [-]: CALL      R17 2 1      ; R17(R18)
+183 [-]: JMP       81           ; PC := 81
+184 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:

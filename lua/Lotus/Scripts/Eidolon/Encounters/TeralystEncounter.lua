@@ -4,7 +4,7 @@ code size: 17
 code size: 34
 code size: 32
 code size: 22
-code size: 158
+code size: 163
 code size: 105
 code size: 99
 code size: 25
@@ -18,12 +18,12 @@ code size: 15
 code size: 15
 code size: 44
 code size: 41
-code size: 85
+code size: 100
 code size: 6
-code size: 131
+code size: 140
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\Encounters\TeralystEncounter.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\Encounters\TeralystEncounter.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -415,161 +415,166 @@ code size: 3
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETGLOBAL R2 K1        ; R2 := gGameRules
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 10
-  5 [-]: JMP       10           ; PC := 10
-  6 [-]: GETGLOBAL R1 K2        ; R1 := 0x201191EA
-  7 [-]: LOADK     R2 K3        ; R2 := 0
-  8 [-]: CALL      R1 2 1       ; R1(R2)
-  9 [-]: JMP       1            ; PC := 1
- 10 [-]: GETGLOBAL R1 K4        ; R1 := 0x93B1256B
- 11 [-]: LOADK     R2 K5        ; R2 := "Starting Teralyst Encounter"
- 12 [-]: CALL      R1 2 1       ; R1(R2)
- 13 [-]: GETGLOBAL R1 K4        ; R1 := 0x93B1256B
- 14 [-]: LOADK     R2 K6        ; R2 := "Current time is "
- 15 [-]: GETGLOBAL R3 K7        ; R3 := gRegion
- 16 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0xA933C036"]
- 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xCD4289A3"]
- 19 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 20 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
- 21 [-]: CALL      R1 2 1       ; R1(R2)
- 22 [-]: LOADNIL   R1 R1        ; R1 := nil
- 23 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 24 [-]: CALL      R2 1 2       ; R2 := R2()
- 25 [-]: TEST      R2 0         ; if not R2 then PC := 31
- 26 [-]: JMP       31           ; PC := 31
- 27 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 28 [-]: CALL      R3 1 2       ; R3 := R3()
- 29 [-]: MOVE      R1 R3        ; R1 := R3
- 30 [-]: JMP       46           ; PC := 46
- 31 [-]: GETGLOBAL R3 K1        ; R3 := gGameRules
- 32 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3["0xB8637349"]
- 33 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 34 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["goalTag"]
- 35 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3["0x315E860F"]
- 36 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 37 [-]: TEST      R3 0         ; if not R3 then PC := 41
- 38 [-]: JMP       41           ; PC := 41
- 39 [-]: RETURN    R0 1         ; return 
- 40 [-]: JMP       46           ; PC := 46
- 41 [-]: GETGLOBAL R3 K7        ; R3 := gRegion
- 42 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3["0x9139A00"]
- 43 [-]: GETGLOBAL R5 K14       ; R5 := teralystSpawnerType
- 44 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 45 [-]: MOVE      R1 R3        ; R1 := R3
- 46 [-]: LOADNIL   R3 R5        ; R3 := R4 := R5 := nil
- 47 [-]: LOADK     R6 K15       ; R6 := 50
- 48 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 49 [-]: MOVE      R8 R0        ; R8 := R0
- 50 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 51 [-]: TEST      R7 1         ; if R7 then PC := 57
- 52 [-]: JMP       57           ; PC := 57
- 53 [-]: TEST      R2 1         ; if R2 then PC := 57
- 54 [-]: JMP       57           ; PC := 57
- 55 [-]: MOVE      R5 R0        ; R5 := R0
- 56 [-]: JMP       81           ; PC := 81
- 57 [-]: LEN       R7 R1        ; R7 := # R1
- 58 [-]: LT        0 K3 R7      ; if 0 >= R7 then PC := 67
- 59 [-]: JMP       67           ; PC := 67
- 60 [-]: GETGLOBAL R7 K16       ; R7 := 0x290116D3
- 61 [-]: LOADK     R8 K17       ; R8 := 1
- 62 [-]: LEN       R9 R1        ; R9 := # R1
- 63 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 64 [-]: MOVE      R4 R7        ; R4 := R7
- 65 [-]: GETTABLE  R5 R1 R4     ; R5 := R1[R4]
- 66 [-]: JMP       81           ; PC := 81
- 67 [-]: GETGLOBAL R7 K4        ; R7 := 0x93B1256B
- 68 [-]: LOADK     R8 K18       ; R8 := "Couldn't find any teralyst spawns, so not spawning one."
- 69 [-]: CALL      R7 2 1       ; R7(R8)
- 70 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 71 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7["0xD015CBDC"]
- 72 [-]: GETUPVAL  R9 U3        ; R9 := U3
- 73 [-]: LOADK     R10 K3       ; R10 := 0
- 74 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+  4 [-]: TEST      R1 1         ; if R1 then PC := 11
+  5 [-]: JMP       11           ; PC := 11
+  6 [-]: GETGLOBAL R1 K1        ; R1 := gGameRules
+  7 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0xF63BCEF9"]
+  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  9 [-]: TEST      R1 1         ; if R1 then PC := 15
+ 10 [-]: JMP       15           ; PC := 15
+ 11 [-]: GETGLOBAL R1 K3        ; R1 := 0x201191EA
+ 12 [-]: LOADK     R2 K4        ; R2 := 0
+ 13 [-]: CALL      R1 2 1       ; R1(R2)
+ 14 [-]: JMP       1            ; PC := 1
+ 15 [-]: GETGLOBAL R1 K5        ; R1 := 0x93B1256B
+ 16 [-]: LOADK     R2 K6        ; R2 := "Starting Teralyst Encounter"
+ 17 [-]: CALL      R1 2 1       ; R1(R2)
+ 18 [-]: GETGLOBAL R1 K5        ; R1 := 0x93B1256B
+ 19 [-]: LOADK     R2 K7        ; R2 := "Current time is "
+ 20 [-]: GETGLOBAL R3 K8        ; R3 := gRegion
+ 21 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xA933C036"]
+ 22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 23 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3["0xCD4289A3"]
+ 24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 25 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
+ 26 [-]: CALL      R1 2 1       ; R1(R2)
+ 27 [-]: LOADNIL   R1 R1        ; R1 := nil
+ 28 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 29 [-]: CALL      R2 1 2       ; R2 := R2()
+ 30 [-]: TEST      R2 0         ; if not R2 then PC := 36
+ 31 [-]: JMP       36           ; PC := 36
+ 32 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 33 [-]: CALL      R3 1 2       ; R3 := R3()
+ 34 [-]: MOVE      R1 R3        ; R1 := R3
+ 35 [-]: JMP       51           ; PC := 51
+ 36 [-]: GETGLOBAL R3 K1        ; R3 := gGameRules
+ 37 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3["0xB8637349"]
+ 38 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 39 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["goalTag"]
+ 40 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3["0x315E860F"]
+ 41 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 42 [-]: TEST      R3 0         ; if not R3 then PC := 46
+ 43 [-]: JMP       46           ; PC := 46
+ 44 [-]: RETURN    R0 1         ; return 
+ 45 [-]: JMP       51           ; PC := 51
+ 46 [-]: GETGLOBAL R3 K8        ; R3 := gRegion
+ 47 [-]: SELF      R3 R3 K14    ; R4 := R3; R3 := R3["0x9139A00"]
+ 48 [-]: GETGLOBAL R5 K15       ; R5 := teralystSpawnerType
+ 49 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 50 [-]: MOVE      R1 R3        ; R1 := R3
+ 51 [-]: LOADNIL   R3 R5        ; R3 := R4 := R5 := nil
+ 52 [-]: LOADK     R6 K16       ; R6 := 50
+ 53 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 54 [-]: MOVE      R8 R0        ; R8 := R0
+ 55 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 56 [-]: TEST      R7 1         ; if R7 then PC := 62
+ 57 [-]: JMP       62           ; PC := 62
+ 58 [-]: TEST      R2 1         ; if R2 then PC := 62
+ 59 [-]: JMP       62           ; PC := 62
+ 60 [-]: MOVE      R5 R0        ; R5 := R0
+ 61 [-]: JMP       86           ; PC := 86
+ 62 [-]: LEN       R7 R1        ; R7 := # R1
+ 63 [-]: LT        0 K4 R7      ; if 0 >= R7 then PC := 72
+ 64 [-]: JMP       72           ; PC := 72
+ 65 [-]: GETGLOBAL R7 K17       ; R7 := 0x290116D3
+ 66 [-]: LOADK     R8 K18       ; R8 := 1
+ 67 [-]: LEN       R9 R1        ; R9 := # R1
+ 68 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 69 [-]: MOVE      R4 R7        ; R4 := R7
+ 70 [-]: GETTABLE  R5 R1 R4     ; R5 := R1[R4]
+ 71 [-]: JMP       86           ; PC := 86
+ 72 [-]: GETGLOBAL R7 K5        ; R7 := 0x93B1256B
+ 73 [-]: LOADK     R8 K19       ; R8 := "Couldn't find any teralyst spawns, so not spawning one."
+ 74 [-]: CALL      R7 2 1       ; R7(R8)
  75 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 76 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7["0xD015CBDC"]
- 77 [-]: GETUPVAL  R9 U4        ; R9 := U4
- 78 [-]: LOADK     R10 K3       ; R10 := 0
+ 76 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0xD015CBDC"]
+ 77 [-]: GETUPVAL  R9 U3        ; R9 := U3
+ 78 [-]: LOADK     R10 K4       ; R10 := 0
  79 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 80 [-]: RETURN    R0 1         ; return 
- 81 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 82 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0x9E199C91"]
- 83 [-]: GETGLOBAL R9 K21       ; R9 := teralystAgentTypes
- 84 [-]: GETTABLE  R9 R9 K17    ; R9 := R9[1]
- 85 [-]: MOVE      R10 R5       ; R10 := R5
- 86 [-]: GETGLOBAL R11 K22      ; R11 := 0xEC274B1A
- 87 [-]: LOADK     R12 K23      ; R12 := "Sentient"
- 88 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 89 [-]: MOVE      R12 R6       ; R12 := R6
- 90 [-]: GETGLOBAL R13 K24      ; R13 := tSpawnAnim
- 91 [-]: CALL      R7 7 2       ; R7 := R7(R8,R9,R10,R11,R12,R13)
- 92 [-]: MOVE      R3 R7        ; R3 := R7
- 93 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 94 [-]: MOVE      R8 R3        ; R8 := R3
- 95 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 96 [-]: TEST      R7 1         ; if R7 then PC := 155
- 97 [-]: JMP       155          ; PC := 155
- 98 [-]: SELF      R7 R3 K25    ; R8 := R3; R7 := R3["0x80B14403"]
- 99 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-100 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
-101 [-]: MOVE      R9 R7        ; R9 := R7
-102 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-103 [-]: TEST      R8 1         ; if R8 then PC := 107
-104 [-]: JMP       107          ; PC := 107
-105 [-]: SELF      R8 R7 K26    ; R9 := R7; R8 := R7["0x3C291F73"]
-106 [-]: CALL      R8 2 1       ; R8(R9)
-107 [-]: GETGLOBAL R8 K7        ; R8 := gRegion
-108 [-]: SELF      R8 R8 K27    ; R9 := R8; R8 := R8["0x848C9FE0"]
-109 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-110 [-]: LOADK     R9 K17       ; R9 := 1
-111 [-]: LEN       R10 R8       ; R10 := # R8
-112 [-]: LOADK     R11 K17      ; R11 := 1
-113 [-]: FORPREP   R9 131       ; R9 -= R11; PC := 131
-114 [-]: GETGLOBAL R13 K0       ; R13 := 0x400E7765
-115 [-]: MOVE      R14 R7       ; R14 := R7
-116 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-117 [-]: TEST      R13 1        ; if R13 then PC := 131
-118 [-]: JMP       131          ; PC := 131
-119 [-]: SELF      R13 R7 K28   ; R14 := R7; R13 := R7["0x83D9304A"]
-120 [-]: GETTABLE  R15 R8 R12   ; R15 := R8[R12]
-121 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
-122 [-]: LT        0 R13 K29    ; if R13 >= 400 then PC := 131
-123 [-]: JMP       131          ; PC := 131
-124 [-]: GETTABLE  R13 R8 R12   ; R13 := R8[R12]
-125 [-]: SELF      R13 R13 K30  ; R14 := R13; R13 := R13["0xB26452A2"]
-126 [-]: GETGLOBAL R15 K22      ; R15 := 0xEC274B1A
-127 [-]: LOADK     R16 K31      ; R16 := "PlayTeralystSpawnTransmission"
-128 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-129 [-]: MOVE      R16 R0       ; R16 := R0
-130 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-131 [-]: FORLOOP   R9 114       ; R9 += R11; if R9 <= R10 then begin PC := 114; R12 := R9 end
-132 [-]: TEST      R2 0         ; if not R2 then PC := 137
-133 [-]: JMP       137          ; PC := 137
-134 [-]: SELF      R13 R7 K32   ; R14 := R7; R13 := R7["0x9487625"]
-135 [-]: LOADK     R15 K33      ; R15 := 5
-136 [-]: CALL      R13 3 1      ; R13(R14,R15)
-137 [-]: GETUPVAL  R13 U6       ; R13 := U6
-138 [-]: MOVE      R14 R7       ; R14 := R7
-139 [-]: GETGLOBAL R15 K24      ; R15 := tSpawnAnim
-140 [-]: CALL      R13 3 1      ; R13(R14,R15)
-141 [-]: GETUPVAL  R13 U2       ; R13 := U2
-142 [-]: SELF      R13 R13 K19  ; R14 := R13; R13 := R13["0xD015CBDC"]
-143 [-]: GETUPVAL  R15 U3       ; R15 := U3
-144 [-]: LOADK     R16 K17      ; R16 := 1
-145 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+ 80 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 81 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0xD015CBDC"]
+ 82 [-]: GETUPVAL  R9 U4        ; R9 := U4
+ 83 [-]: LOADK     R10 K4       ; R10 := 0
+ 84 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 85 [-]: RETURN    R0 1         ; return 
+ 86 [-]: GETUPVAL  R7 U5        ; R7 := U5
+ 87 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7["0x9E199C91"]
+ 88 [-]: GETGLOBAL R9 K22       ; R9 := teralystAgentTypes
+ 89 [-]: GETTABLE  R9 R9 K18    ; R9 := R9[1]
+ 90 [-]: MOVE      R10 R5       ; R10 := R5
+ 91 [-]: GETGLOBAL R11 K23      ; R11 := 0xEC274B1A
+ 92 [-]: LOADK     R12 K24      ; R12 := "Sentient"
+ 93 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 94 [-]: MOVE      R12 R6       ; R12 := R6
+ 95 [-]: GETGLOBAL R13 K25      ; R13 := tSpawnAnim
+ 96 [-]: CALL      R7 7 2       ; R7 := R7(R8,R9,R10,R11,R12,R13)
+ 97 [-]: MOVE      R3 R7        ; R3 := R7
+ 98 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 99 [-]: MOVE      R8 R3        ; R8 := R3
+100 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+101 [-]: TEST      R7 1         ; if R7 then PC := 160
+102 [-]: JMP       160          ; PC := 160
+103 [-]: SELF      R7 R3 K26    ; R8 := R3; R7 := R3["0x80B14403"]
+104 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+105 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
+106 [-]: MOVE      R9 R7        ; R9 := R7
+107 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+108 [-]: TEST      R8 1         ; if R8 then PC := 112
+109 [-]: JMP       112          ; PC := 112
+110 [-]: SELF      R8 R7 K27    ; R9 := R7; R8 := R7["0x3C291F73"]
+111 [-]: CALL      R8 2 1       ; R8(R9)
+112 [-]: GETGLOBAL R8 K8        ; R8 := gRegion
+113 [-]: SELF      R8 R8 K28    ; R9 := R8; R8 := R8["0x848C9FE0"]
+114 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+115 [-]: LOADK     R9 K18       ; R9 := 1
+116 [-]: LEN       R10 R8       ; R10 := # R8
+117 [-]: LOADK     R11 K18      ; R11 := 1
+118 [-]: FORPREP   R9 136       ; R9 -= R11; PC := 136
+119 [-]: GETGLOBAL R13 K0       ; R13 := 0x400E7765
+120 [-]: MOVE      R14 R7       ; R14 := R7
+121 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+122 [-]: TEST      R13 1        ; if R13 then PC := 136
+123 [-]: JMP       136          ; PC := 136
+124 [-]: SELF      R13 R7 K29   ; R14 := R7; R13 := R7["0x83D9304A"]
+125 [-]: GETTABLE  R15 R8 R12   ; R15 := R8[R12]
+126 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+127 [-]: LT        0 R13 K30    ; if R13 >= 400 then PC := 136
+128 [-]: JMP       136          ; PC := 136
+129 [-]: GETTABLE  R13 R8 R12   ; R13 := R8[R12]
+130 [-]: SELF      R13 R13 K31  ; R14 := R13; R13 := R13["0xB26452A2"]
+131 [-]: GETGLOBAL R15 K23      ; R15 := 0xEC274B1A
+132 [-]: LOADK     R16 K32      ; R16 := "PlayTeralystSpawnTransmission"
+133 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+134 [-]: MOVE      R16 R0       ; R16 := R0
+135 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+136 [-]: FORLOOP   R9 119       ; R9 += R11; if R9 <= R10 then begin PC := 119; R12 := R9 end
+137 [-]: TEST      R2 0         ; if not R2 then PC := 142
+138 [-]: JMP       142          ; PC := 142
+139 [-]: SELF      R13 R7 K33   ; R14 := R7; R13 := R7["0x9487625"]
+140 [-]: LOADK     R15 K34      ; R15 := 5
+141 [-]: CALL      R13 3 1      ; R13(R14,R15)
+142 [-]: GETUPVAL  R13 U6       ; R13 := U6
+143 [-]: MOVE      R14 R7       ; R14 := R7
+144 [-]: GETGLOBAL R15 K25      ; R15 := tSpawnAnim
+145 [-]: CALL      R13 3 1      ; R13(R14,R15)
 146 [-]: GETUPVAL  R13 U2       ; R13 := U2
-147 [-]: SELF      R13 R13 K19  ; R14 := R13; R13 := R13["0xD015CBDC"]
-148 [-]: GETUPVAL  R15 U4       ; R15 := U4
-149 [-]: LOADK     R16 K3       ; R16 := 0
+147 [-]: SELF      R13 R13 K20  ; R14 := R13; R13 := R13["0xD015CBDC"]
+148 [-]: GETUPVAL  R15 U3       ; R15 := U3
+149 [-]: LOADK     R16 K18      ; R16 := 1
 150 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-151 [-]: GETGLOBAL R13 K4       ; R13 := 0x93B1256B
-152 [-]: LOADK     R14 K34      ; R14 := "Teralyst spawned"
-153 [-]: CALL      R13 2 1      ; R13(R14)
-154 [-]: JMP       158          ; PC := 158
-155 [-]: GETGLOBAL R13 K4       ; R13 := 0x93B1256B
-156 [-]: LOADK     R14 K35      ; R14 := "Teralyst didn't spawn, but should have"
-157 [-]: CALL      R13 2 1      ; R13(R14)
-158 [-]: RETURN    R0 1         ; return 
+151 [-]: GETUPVAL  R13 U2       ; R13 := U2
+152 [-]: SELF      R13 R13 K20  ; R14 := R13; R13 := R13["0xD015CBDC"]
+153 [-]: GETUPVAL  R15 U4       ; R15 := U4
+154 [-]: LOADK     R16 K4       ; R16 := 0
+155 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+156 [-]: GETGLOBAL R13 K5       ; R13 := 0x93B1256B
+157 [-]: LOADK     R14 K35      ; R14 := "Teralyst spawned"
+158 [-]: CALL      R13 2 1      ; R13(R14)
+159 [-]: JMP       163          ; PC := 163
+160 [-]: GETGLOBAL R13 K5       ; R13 := 0x93B1256B
+161 [-]: LOADK     R14 K36      ; R14 := "Teralyst didn't spawn, but should have"
+162 [-]: CALL      R13 2 1      ; R13(R14)
+163 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
@@ -1826,99 +1831,114 @@ code size: 3
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  16
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x8D5886B7"]
   2 [-]: LOADK     R4 K1        ; R4 := "Disable"
   3 [-]: CALL      R2 3 1       ; R2(R3,R4)
-  4 [-]: GETGLOBAL R2 K2        ; R2 := gGameRules
-  5 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
-  6 [-]: GETGLOBAL R4 K4        ; R4 := _T
-  7 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["ShardSacrificeList"]
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: TEST      R3 0         ; if not R3 then PC := 14
- 10 [-]: JMP       14           ; PC := 14
- 11 [-]: GETGLOBAL R3 K4        ; R3 := _T
- 12 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 13 [-]: SETTABLE  R3 K5 R4     ; R3["ShardSacrificeList"] := R4
- 14 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1["0xDE5882DD"]
- 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3["0x144A28F9"]
- 17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: MOVE      R5 R0        ; R5 := R0
- 19 [-]: LOADK     R6 K8        ; R6 := 1
- 20 [-]: GETGLOBAL R7 K4        ; R7 := _T
- 21 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["ShardSacrificeList"]
- 22 [-]: LEN       R7 R7        ; R7 := # R7
- 23 [-]: LOADK     R8 K8        ; R8 := 1
- 24 [-]: FORPREP   R6 32        ; R6 -= R8; PC := 32
- 25 [-]: GETGLOBAL R10 K4       ; R10 := _T
- 26 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["ShardSacrificeList"]
- 27 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
- 28 [-]: EQ        0 R4 R10     ; if R4 ~= R10 then PC := 32
- 29 [-]: JMP       32           ; PC := 32
- 30 [-]: MOVE      R5 R1        ; R5 := R1
- 31 [-]: JMP       33           ; PC := 33
- 32 [-]: FORLOOP   R6 25        ; R6 += R8; if R6 <= R7 then begin PC := 25; R9 := R6 end
- 33 [-]: TEST      R5 0         ; if not R5 then PC := 59
- 34 [-]: JMP       59           ; PC := 59
- 35 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 36 [-]: MOVE      R11 R0       ; R11 := R0
- 37 [-]: MOVE      R12 R1       ; R12 := R1
- 38 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 39 [-]: GETGLOBAL R10 K4       ; R10 := _T
- 40 [-]: GETTABLE  R10 R10 K5   ; R10 := R10["ShardSacrificeList"]
- 41 [-]: LEN       R10 R10      ; R10 := # R10
- 42 [-]: LOADK     R11 K8       ; R11 := 1
- 43 [-]: LOADK     R12 K9       ; R12 := -1
- 44 [-]: FORPREP   R10 57       ; R10 -= R12; PC := 57
- 45 [-]: GETGLOBAL R14 K4       ; R14 := _T
- 46 [-]: GETTABLE  R14 R14 K5   ; R14 := R14["ShardSacrificeList"]
- 47 [-]: GETTABLE  R14 R14 R13  ; R14 := R14[R13]
- 48 [-]: EQ        0 R4 R14     ; if R4 ~= R14 then PC := 57
- 49 [-]: JMP       57           ; PC := 57
- 50 [-]: GETGLOBAL R14 K10      ; R14 := table
- 51 [-]: GETTABLE  R14 R14 K11  ; R14 := R14["0xCDB1FD5E"]
- 52 [-]: GETGLOBAL R15 K4       ; R15 := _T
- 53 [-]: GETTABLE  R15 R15 K5   ; R15 := R15["ShardSacrificeList"]
- 54 [-]: MOVE      R16 R13      ; R16 := R13
- 55 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 56 [-]: JMP       69           ; PC := 69
- 57 [-]: FORLOOP   R10 45       ; R10 += R12; if R10 <= R11 then begin PC := 45; R13 := R10 end
- 58 [-]: JMP       69           ; PC := 69
- 59 [-]: GETUPVAL  R14 U1       ; R14 := U1
- 60 [-]: MOVE      R15 R0       ; R15 := R0
- 61 [-]: MOVE      R16 R1       ; R16 := R1
- 62 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 63 [-]: GETGLOBAL R14 K10      ; R14 := table
- 64 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["0xE6450C9D"]
- 65 [-]: GETGLOBAL R15 K4       ; R15 := _T
- 66 [-]: GETTABLE  R15 R15 K5   ; R15 := R15["ShardSacrificeList"]
- 67 [-]: MOVE      R16 R4       ; R16 := R4
- 68 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 69 [-]: GETGLOBAL R14 K13      ; R14 := 0x201191EA
- 70 [-]: LOADK     R15 K14      ; R15 := 1.3999999761581
- 71 [-]: CALL      R14 2 1      ; R14(R15)
- 72 [-]: SELF      R14 R2 K15   ; R15 := R2; R14 := R2["0xED0EE7FB"]
- 73 [-]: GETUPVAL  R16 U2       ; R16 := U2
- 74 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 75 [-]: EQ        0 R14 K16    ; if R14 ~= 0 then PC := 85
- 76 [-]: JMP       85           ; PC := 85
- 77 [-]: GETUPVAL  R14 U3       ; R14 := U3
- 78 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["0xE15207D0"]
- 79 [-]: CALL      R14 1 2      ; R14 := R14()
- 80 [-]: TEST      R14 0        ; if not R14 then PC := 85
- 81 [-]: JMP       85           ; PC := 85
- 82 [-]: SELF      R14 R0 K0    ; R15 := R0; R14 := R0["0x8D5886B7"]
- 83 [-]: LOADK     R16 K18      ; R16 := "Enable"
- 84 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 85 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+  5 [-]: GETGLOBAL R3 K3        ; R3 := gGameRules
+  6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  7 [-]: TEST      R2 0         ; if not R2 then PC := 19
+  8 [-]: JMP       19           ; PC := 19
+  9 [-]: GETGLOBAL R2 K4        ; R2 := 0x12F3CEFA
+ 10 [-]: GETGLOBAL R3 K5        ; R3 := gRegion
+ 11 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0xA559F558"]
+ 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 13 [-]: MOVE      R3 R3        ; R3 := R3
+ 14 [-]: CALL      R2 2 1       ; R2(R3)
+ 15 [-]: GETGLOBAL R2 K7        ; R2 := 0x201191EA
+ 16 [-]: LOADK     R3 K8        ; R3 := 0
+ 17 [-]: CALL      R2 2 1       ; R2(R3)
+ 18 [-]: JMP       4            ; PC := 4
+ 19 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+ 20 [-]: GETGLOBAL R3 K9        ; R3 := _T
+ 21 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["ShardSacrificeList"]
+ 22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 23 [-]: TEST      R2 0         ; if not R2 then PC := 28
+ 24 [-]: JMP       28           ; PC := 28
+ 25 [-]: GETGLOBAL R2 K9        ; R2 := _T
+ 26 [-]: NEWTABLE  R3 0 0       ; R3 := {}
+ 27 [-]: SETTABLE  R2 K10 R3    ; R2["ShardSacrificeList"] := R3
+ 28 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1["0xDE5882DD"]
+ 29 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 30 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x144A28F9"]
+ 31 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 32 [-]: MOVE      R4 R0        ; R4 := R0
+ 33 [-]: LOADK     R5 K13       ; R5 := 1
+ 34 [-]: GETGLOBAL R6 K9        ; R6 := _T
+ 35 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["ShardSacrificeList"]
+ 36 [-]: LEN       R6 R6        ; R6 := # R6
+ 37 [-]: LOADK     R7 K13       ; R7 := 1
+ 38 [-]: FORPREP   R5 46        ; R5 -= R7; PC := 46
+ 39 [-]: GETGLOBAL R9 K9        ; R9 := _T
+ 40 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["ShardSacrificeList"]
+ 41 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+ 42 [-]: EQ        0 R3 R9      ; if R3 ~= R9 then PC := 46
+ 43 [-]: JMP       46           ; PC := 46
+ 44 [-]: MOVE      R4 R1        ; R4 := R1
+ 45 [-]: JMP       47           ; PC := 47
+ 46 [-]: FORLOOP   R5 39        ; R5 += R7; if R5 <= R6 then begin PC := 39; R8 := R5 end
+ 47 [-]: TEST      R4 0         ; if not R4 then PC := 73
+ 48 [-]: JMP       73           ; PC := 73
+ 49 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 50 [-]: MOVE      R10 R0       ; R10 := R0
+ 51 [-]: MOVE      R11 R1       ; R11 := R1
+ 52 [-]: CALL      R9 3 1       ; R9(R10,R11)
+ 53 [-]: GETGLOBAL R9 K9        ; R9 := _T
+ 54 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["ShardSacrificeList"]
+ 55 [-]: LEN       R9 R9        ; R9 := # R9
+ 56 [-]: LOADK     R10 K13      ; R10 := 1
+ 57 [-]: LOADK     R11 K14      ; R11 := -1
+ 58 [-]: FORPREP   R9 71        ; R9 -= R11; PC := 71
+ 59 [-]: GETGLOBAL R13 K9       ; R13 := _T
+ 60 [-]: GETTABLE  R13 R13 K10  ; R13 := R13["ShardSacrificeList"]
+ 61 [-]: GETTABLE  R13 R13 R12  ; R13 := R13[R12]
+ 62 [-]: EQ        0 R3 R13     ; if R3 ~= R13 then PC := 71
+ 63 [-]: JMP       71           ; PC := 71
+ 64 [-]: GETGLOBAL R13 K15      ; R13 := table
+ 65 [-]: GETTABLE  R13 R13 K16  ; R13 := R13["0xCDB1FD5E"]
+ 66 [-]: GETGLOBAL R14 K9       ; R14 := _T
+ 67 [-]: GETTABLE  R14 R14 K10  ; R14 := R14["ShardSacrificeList"]
+ 68 [-]: MOVE      R15 R12      ; R15 := R12
+ 69 [-]: CALL      R13 3 1      ; R13(R14,R15)
+ 70 [-]: JMP       83           ; PC := 83
+ 71 [-]: FORLOOP   R9 59        ; R9 += R11; if R9 <= R10 then begin PC := 59; R12 := R9 end
+ 72 [-]: JMP       83           ; PC := 83
+ 73 [-]: GETUPVAL  R13 U1       ; R13 := U1
+ 74 [-]: MOVE      R14 R0       ; R14 := R0
+ 75 [-]: MOVE      R15 R1       ; R15 := R1
+ 76 [-]: CALL      R13 3 1      ; R13(R14,R15)
+ 77 [-]: GETGLOBAL R13 K15      ; R13 := table
+ 78 [-]: GETTABLE  R13 R13 K17  ; R13 := R13["0xE6450C9D"]
+ 79 [-]: GETGLOBAL R14 K9       ; R14 := _T
+ 80 [-]: GETTABLE  R14 R14 K10  ; R14 := R14["ShardSacrificeList"]
+ 81 [-]: MOVE      R15 R3       ; R15 := R3
+ 82 [-]: CALL      R13 3 1      ; R13(R14,R15)
+ 83 [-]: GETGLOBAL R13 K7       ; R13 := 0x201191EA
+ 84 [-]: LOADK     R14 K18      ; R14 := 1.3999999761581
+ 85 [-]: CALL      R13 2 1      ; R13(R14)
+ 86 [-]: GETGLOBAL R13 K3       ; R13 := gGameRules
+ 87 [-]: SELF      R13 R13 K19  ; R14 := R13; R13 := R13["0xED0EE7FB"]
+ 88 [-]: GETUPVAL  R15 U2       ; R15 := U2
+ 89 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+ 90 [-]: EQ        0 R13 K8     ; if R13 ~= 0 then PC := 100
+ 91 [-]: JMP       100          ; PC := 100
+ 92 [-]: GETUPVAL  R13 U3       ; R13 := U3
+ 93 [-]: GETTABLE  R13 R13 K20  ; R13 := R13["0xE15207D0"]
+ 94 [-]: CALL      R13 1 2      ; R13 := R13()
+ 95 [-]: TEST      R13 0        ; if not R13 then PC := 100
+ 96 [-]: JMP       100          ; PC := 100
+ 97 [-]: SELF      R13 R0 K0    ; R14 := R0; R13 := R0["0x8D5886B7"]
+ 98 [-]: LOADK     R15 K21      ; R15 := "Enable"
+ 99 [-]: CALL      R13 3 1      ; R13(R14,R15)
+100 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 703
+; Defined at line: 708
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1935,7 +1955,7 @@ code size: 3
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 707
+; Defined at line: 712
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1951,133 +1971,142 @@ code size: 3
   8 [-]: TEST      R0 1         ; if R0 then PC := 11
   9 [-]: JMP       11           ; PC := 11
  10 [-]: RETURN    R0 1         ; return 
- 11 [-]: GETGLOBAL R1 K3        ; R1 := gGameRules
- 12 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0xED0EE7FB"]
- 13 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 14 [-]: LOADK     R5 K5        ; R5 := 0
- 15 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 16 [-]: GETGLOBAL R3 K1        ; R3 := _T
- 17 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["TestLevel"]
- 18 [-]: TEST      R3 0         ; if not R3 then PC := 21
- 19 [-]: JMP       21           ; PC := 21
- 20 [-]: LOADK     R2 K7        ; R2 := 1
- 21 [-]: GETGLOBAL R3 K8        ; R3 := gRegion
- 22 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x90391273"]
- 23 [-]: GETGLOBAL R5 K10       ; R5 := 0xEC274B1A
- 24 [-]: LOADK     R6 K11       ; R6 := "MegalystAction"
- 25 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 26 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 27 [-]: GETGLOBAL R4 K8        ; R4 := gRegion
- 28 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x90391273"]
- 29 [-]: GETGLOBAL R6 K10       ; R6 := 0xEC274B1A
- 30 [-]: LOADK     R7 K12       ; R7 := "RainalystAction"
- 31 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 32 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 33 [-]: LOADNIL   R5 R5        ; R5 := nil
- 34 [-]: EQ        1 R2 K5      ; if R2 == 0 then PC := 38
- 35 [-]: JMP       38           ; PC := 38
- 36 [-]: EQ        0 R2 K13     ; if R2 ~= 3 then PC := 40
- 37 [-]: JMP       40           ; PC := 40
- 38 [-]: RETURN    R0 1         ; return 
- 39 [-]: JMP       47           ; PC := 47
- 40 [-]: EQ        0 R2 K7      ; if R2 ~= 1 then PC := 44
- 41 [-]: JMP       44           ; PC := 44
- 42 [-]: MOVE      R5 R3        ; R5 := R3
- 43 [-]: JMP       47           ; PC := 47
- 44 [-]: EQ        0 R2 K14     ; if R2 ~= 2 then PC := 47
- 45 [-]: JMP       47           ; PC := 47
- 46 [-]: MOVE      R5 R4        ; R5 := R4
- 47 [-]: GETGLOBAL R6 K1        ; R6 := _T
- 48 [-]: GETGLOBAL R7 K0        ; R7 := enableShrine
- 49 [-]: SETTABLE  R6 K2 R7     ; R6["shrineEnabled"] := R7
- 50 [-]: GETGLOBAL R6 K0        ; R6 := enableShrine
- 51 [-]: TEST      R6 0         ; if not R6 then PC := 96
- 52 [-]: JMP       96           ; PC := 96
- 53 [-]: GETGLOBAL R6 K15       ; R6 := 0x93B1256B
- 54 [-]: LOADK     R7 K16       ; R7 := "Shrine enabled"
- 55 [-]: CALL      R6 2 1       ; R6(R7)
- 56 [-]: GETGLOBAL R6 K17       ; R6 := 0x400E7765
- 57 [-]: MOVE      R7 R5        ; R7 := R5
- 58 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 59 [-]: TEST      R6 1         ; if R6 then PC := 63
- 60 [-]: JMP       63           ; PC := 63
- 61 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0xC5E91BA6"]
- 62 [-]: CALL      R6 2 1       ; R6(R7)
- 63 [-]: LOADK     R6 K7        ; R6 := 1
- 64 [-]: GETGLOBAL R7 K19       ; R7 := shrineLights
- 65 [-]: LEN       R7 R7        ; R7 := # R7
- 66 [-]: LOADK     R8 K7        ; R8 := 1
- 67 [-]: FORPREP   R6 73        ; R6 -= R8; PC := 73
- 68 [-]: GETGLOBAL R10 K19      ; R10 := shrineLights
- 69 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
- 70 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10["0x8D5886B7"]
- 71 [-]: LOADK     R12 K21      ; R12 := "TurnOn"
- 72 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 73 [-]: FORLOOP   R6 68        ; R6 += R8; if R6 <= R7 then begin PC := 68; R9 := R6 end
- 74 [-]: GETGLOBAL R10 K17      ; R10 := 0x400E7765
- 75 [-]: GETGLOBAL R11 K22      ; R11 := shrineSequencer
- 76 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 77 [-]: TEST      R10 1        ; if R10 then PC := 82
- 78 [-]: JMP       82           ; PC := 82
- 79 [-]: GETGLOBAL R10 K22      ; R10 := shrineSequencer
- 80 [-]: SELF      R10 R10 K18  ; R11 := R10; R10 := R10["0xC5E91BA6"]
- 81 [-]: CALL      R10 2 1      ; R10(R11)
- 82 [-]: LOADK     R10 K7       ; R10 := 1
- 83 [-]: GETGLOBAL R11 K23      ; R11 := lightDecos
- 84 [-]: LEN       R11 R11      ; R11 := # R11
- 85 [-]: LOADK     R12 K7       ; R12 := 1
- 86 [-]: FORPREP   R10 94       ; R10 -= R12; PC := 94
- 87 [-]: GETGLOBAL R14 K23      ; R14 := lightDecos
- 88 [-]: GETTABLE  R14 R14 R13  ; R14 := R14[R13]
- 89 [-]: SELF      R14 R14 K24  ; R15 := R14; R14 := R14["0xD124E361"]
- 90 [-]: GETGLOBAL R16 K25      ; R16 := Lotus_Game
- 91 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["EMISSIVE_MAP_ATTEN"]
- 92 [-]: LOADK     R17 K7       ; R17 := 1
- 93 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
- 94 [-]: FORLOOP   R10 87       ; R10 += R12; if R10 <= R11 then begin PC := 87; R13 := R10 end
- 95 [-]: JMP       131          ; PC := 131
- 96 [-]: GETGLOBAL R14 K15      ; R14 := 0x93B1256B
- 97 [-]: LOADK     R15 K27      ; R15 := "Shrine disabled"
- 98 [-]: CALL      R14 2 1      ; R14(R15)
- 99 [-]: GETGLOBAL R14 K17      ; R14 := 0x400E7765
-100 [-]: MOVE      R15 R5       ; R15 := R5
-101 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-102 [-]: TEST      R14 1        ; if R14 then PC := 106
-103 [-]: JMP       106          ; PC := 106
-104 [-]: SELF      R14 R5 K28   ; R15 := R5; R14 := R5["0x2DB1272F"]
-105 [-]: CALL      R14 2 1      ; R14(R15)
-106 [-]: GETGLOBAL R14 K17      ; R14 := 0x400E7765
-107 [-]: GETGLOBAL R15 K22      ; R15 := shrineSequencer
-108 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-109 [-]: TEST      R14 1        ; if R14 then PC := 114
-110 [-]: JMP       114          ; PC := 114
-111 [-]: GETGLOBAL R14 K22      ; R14 := shrineSequencer
-112 [-]: SELF      R14 R14 K28  ; R15 := R14; R14 := R14["0x2DB1272F"]
-113 [-]: CALL      R14 2 1      ; R14(R15)
-114 [-]: GETUPVAL  R14 U1       ; R14 := U1
-115 [-]: GETTABLE  R14 R14 K29  ; R14 := R14["0xE15207D0"]
-116 [-]: CALL      R14 1 2      ; R14 := R14()
-117 [-]: TEST      R14 0        ; if not R14 then PC := 127
-118 [-]: JMP       127          ; PC := 127
-119 [-]: SELF      R14 R1 K4    ; R15 := R1; R14 := R1["0xED0EE7FB"]
-120 [-]: GETUPVAL  R16 U2       ; R16 := U2
-121 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-122 [-]: LT        0 K5 R14     ; if 0 >= R14 then PC := 127
-123 [-]: JMP       127          ; PC := 127
-124 [-]: GETGLOBAL R14 K30      ; R14 := 0x201191EA
-125 [-]: LOADK     R15 K31      ; R15 := 20
-126 [-]: CALL      R14 2 1      ; R14(R15)
-127 [-]: GETUPVAL  R14 U3       ; R14 := U3
-128 [-]: MOVE      R15 R3       ; R15 := R3
-129 [-]: MOVE      R16 R4       ; R16 := R4
-130 [-]: CALL      R14 3 1      ; R14(R15,R16)
-131 [-]: RETURN    R0 1         ; return 
+ 11 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+ 12 [-]: GETGLOBAL R2 K4        ; R2 := gGameRules
+ 13 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 14 [-]: TEST      R1 0         ; if not R1 then PC := 20
+ 15 [-]: JMP       20           ; PC := 20
+ 16 [-]: GETGLOBAL R1 K5        ; R1 := 0x201191EA
+ 17 [-]: LOADK     R2 K6        ; R2 := 0
+ 18 [-]: CALL      R1 2 1       ; R1(R2)
+ 19 [-]: JMP       11           ; PC := 11
+ 20 [-]: GETGLOBAL R1 K4        ; R1 := gGameRules
+ 21 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1["0xED0EE7FB"]
+ 22 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 23 [-]: LOADK     R5 K6        ; R5 := 0
+ 24 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
+ 25 [-]: GETGLOBAL R3 K1        ; R3 := _T
+ 26 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["TestLevel"]
+ 27 [-]: TEST      R3 0         ; if not R3 then PC := 30
+ 28 [-]: JMP       30           ; PC := 30
+ 29 [-]: LOADK     R2 K9        ; R2 := 1
+ 30 [-]: GETGLOBAL R3 K10       ; R3 := gRegion
+ 31 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3["0x90391273"]
+ 32 [-]: GETGLOBAL R5 K12       ; R5 := 0xEC274B1A
+ 33 [-]: LOADK     R6 K13       ; R6 := "MegalystAction"
+ 34 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 35 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 36 [-]: GETGLOBAL R4 K10       ; R4 := gRegion
+ 37 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0x90391273"]
+ 38 [-]: GETGLOBAL R6 K12       ; R6 := 0xEC274B1A
+ 39 [-]: LOADK     R7 K14       ; R7 := "RainalystAction"
+ 40 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
+ 41 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+ 42 [-]: LOADNIL   R5 R5        ; R5 := nil
+ 43 [-]: EQ        1 R2 K6      ; if R2 == 0 then PC := 47
+ 44 [-]: JMP       47           ; PC := 47
+ 45 [-]: EQ        0 R2 K15     ; if R2 ~= 3 then PC := 49
+ 46 [-]: JMP       49           ; PC := 49
+ 47 [-]: RETURN    R0 1         ; return 
+ 48 [-]: JMP       56           ; PC := 56
+ 49 [-]: EQ        0 R2 K9      ; if R2 ~= 1 then PC := 53
+ 50 [-]: JMP       53           ; PC := 53
+ 51 [-]: MOVE      R5 R3        ; R5 := R3
+ 52 [-]: JMP       56           ; PC := 56
+ 53 [-]: EQ        0 R2 K16     ; if R2 ~= 2 then PC := 56
+ 54 [-]: JMP       56           ; PC := 56
+ 55 [-]: MOVE      R5 R4        ; R5 := R4
+ 56 [-]: GETGLOBAL R6 K1        ; R6 := _T
+ 57 [-]: GETGLOBAL R7 K0        ; R7 := enableShrine
+ 58 [-]: SETTABLE  R6 K2 R7     ; R6["shrineEnabled"] := R7
+ 59 [-]: GETGLOBAL R6 K0        ; R6 := enableShrine
+ 60 [-]: TEST      R6 0         ; if not R6 then PC := 105
+ 61 [-]: JMP       105          ; PC := 105
+ 62 [-]: GETGLOBAL R6 K17       ; R6 := 0x93B1256B
+ 63 [-]: LOADK     R7 K18       ; R7 := "Shrine enabled"
+ 64 [-]: CALL      R6 2 1       ; R6(R7)
+ 65 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
+ 66 [-]: MOVE      R7 R5        ; R7 := R5
+ 67 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 68 [-]: TEST      R6 1         ; if R6 then PC := 72
+ 69 [-]: JMP       72           ; PC := 72
+ 70 [-]: SELF      R6 R5 K19    ; R7 := R5; R6 := R5["0xC5E91BA6"]
+ 71 [-]: CALL      R6 2 1       ; R6(R7)
+ 72 [-]: LOADK     R6 K9        ; R6 := 1
+ 73 [-]: GETGLOBAL R7 K20       ; R7 := shrineLights
+ 74 [-]: LEN       R7 R7        ; R7 := # R7
+ 75 [-]: LOADK     R8 K9        ; R8 := 1
+ 76 [-]: FORPREP   R6 82        ; R6 -= R8; PC := 82
+ 77 [-]: GETGLOBAL R10 K20      ; R10 := shrineLights
+ 78 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
+ 79 [-]: SELF      R10 R10 K21  ; R11 := R10; R10 := R10["0x8D5886B7"]
+ 80 [-]: LOADK     R12 K22      ; R12 := "TurnOn"
+ 81 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 82 [-]: FORLOOP   R6 77        ; R6 += R8; if R6 <= R7 then begin PC := 77; R9 := R6 end
+ 83 [-]: GETGLOBAL R10 K3       ; R10 := 0x400E7765
+ 84 [-]: GETGLOBAL R11 K23      ; R11 := shrineSequencer
+ 85 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 86 [-]: TEST      R10 1        ; if R10 then PC := 91
+ 87 [-]: JMP       91           ; PC := 91
+ 88 [-]: GETGLOBAL R10 K23      ; R10 := shrineSequencer
+ 89 [-]: SELF      R10 R10 K19  ; R11 := R10; R10 := R10["0xC5E91BA6"]
+ 90 [-]: CALL      R10 2 1      ; R10(R11)
+ 91 [-]: LOADK     R10 K9       ; R10 := 1
+ 92 [-]: GETGLOBAL R11 K24      ; R11 := lightDecos
+ 93 [-]: LEN       R11 R11      ; R11 := # R11
+ 94 [-]: LOADK     R12 K9       ; R12 := 1
+ 95 [-]: FORPREP   R10 103      ; R10 -= R12; PC := 103
+ 96 [-]: GETGLOBAL R14 K24      ; R14 := lightDecos
+ 97 [-]: GETTABLE  R14 R14 R13  ; R14 := R14[R13]
+ 98 [-]: SELF      R14 R14 K25  ; R15 := R14; R14 := R14["0xD124E361"]
+ 99 [-]: GETGLOBAL R16 K26      ; R16 := Lotus_Game
+100 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["EMISSIVE_MAP_ATTEN"]
+101 [-]: LOADK     R17 K9       ; R17 := 1
+102 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
+103 [-]: FORLOOP   R10 96       ; R10 += R12; if R10 <= R11 then begin PC := 96; R13 := R10 end
+104 [-]: JMP       140          ; PC := 140
+105 [-]: GETGLOBAL R14 K17      ; R14 := 0x93B1256B
+106 [-]: LOADK     R15 K28      ; R15 := "Shrine disabled"
+107 [-]: CALL      R14 2 1      ; R14(R15)
+108 [-]: GETGLOBAL R14 K3       ; R14 := 0x400E7765
+109 [-]: MOVE      R15 R5       ; R15 := R5
+110 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+111 [-]: TEST      R14 1        ; if R14 then PC := 115
+112 [-]: JMP       115          ; PC := 115
+113 [-]: SELF      R14 R5 K29   ; R15 := R5; R14 := R5["0x2DB1272F"]
+114 [-]: CALL      R14 2 1      ; R14(R15)
+115 [-]: GETGLOBAL R14 K3       ; R14 := 0x400E7765
+116 [-]: GETGLOBAL R15 K23      ; R15 := shrineSequencer
+117 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+118 [-]: TEST      R14 1        ; if R14 then PC := 123
+119 [-]: JMP       123          ; PC := 123
+120 [-]: GETGLOBAL R14 K23      ; R14 := shrineSequencer
+121 [-]: SELF      R14 R14 K29  ; R15 := R14; R14 := R14["0x2DB1272F"]
+122 [-]: CALL      R14 2 1      ; R14(R15)
+123 [-]: GETUPVAL  R14 U1       ; R14 := U1
+124 [-]: GETTABLE  R14 R14 K30  ; R14 := R14["0xE15207D0"]
+125 [-]: CALL      R14 1 2      ; R14 := R14()
+126 [-]: TEST      R14 0        ; if not R14 then PC := 136
+127 [-]: JMP       136          ; PC := 136
+128 [-]: SELF      R14 R1 K7    ; R15 := R1; R14 := R1["0xED0EE7FB"]
+129 [-]: GETUPVAL  R16 U2       ; R16 := U2
+130 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+131 [-]: LT        0 K6 R14     ; if 0 >= R14 then PC := 136
+132 [-]: JMP       136          ; PC := 136
+133 [-]: GETGLOBAL R14 K5       ; R14 := 0x201191EA
+134 [-]: LOADK     R15 K31      ; R15 := 20
+135 [-]: CALL      R14 2 1      ; R14(R15)
+136 [-]: GETUPVAL  R14 U3       ; R14 := U3
+137 [-]: MOVE      R15 R3       ; R15 := R3
+138 [-]: MOVE      R16 R4       ; R16 := R4
+139 [-]: CALL      R14 3 1      ; R14(R15,R16)
+140 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 769
+; Defined at line: 778
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

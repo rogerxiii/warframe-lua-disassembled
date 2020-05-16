@@ -28,7 +28,7 @@ code size: 13
 code size: 42
 code size: 398
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Modes\HiveMission.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Modes\HiveMission.luac 
 
 ; Name:            
 ; Defined at line: 0

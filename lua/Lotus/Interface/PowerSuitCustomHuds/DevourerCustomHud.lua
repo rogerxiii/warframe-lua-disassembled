@@ -6,14 +6,14 @@ code size: 86
 code size: 125
 code size: 16
 code size: 19
-code size: 123
+code size: 125
 code size: 6
 code size: 6
 code size: 6
 code size: 5
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\PowerSuitCustomHuds\DevourerCustomHud.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\PowerSuitCustomHuds\DevourerCustomHud.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -509,104 +509,106 @@ code size: 8
  29 [-]: GETTABLE  R2 R1 K14    ; R2 := R1["0x46FF1A3C"]
  30 [-]: GETGLOBAL R3 K3        ; R3 := mMovie
  31 [-]: LOADK     R4 K15       ; R4 := "Quiver"
- 32 [-]: LOADK     R5 K10       ; R5 := 0
- 33 [-]: LOADK     R6 K16       ; R6 := "/Lotus/Language/Items/FairySoulHoldToSwitch"
+ 32 [-]: LOADK     R5 K16       ; R5 := 1
+ 33 [-]: LOADK     R6 K17       ; R6 := "/Lotus/Language/Items/FairySoulHoldToSwitch"
  34 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
  35 [-]: MOVE      R2 R0        ; R2 := R0
  36 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 37 [-]: GETGLOBAL R3 K18       ; R3 := consumeBuffs
+ 37 [-]: GETGLOBAL R3 K19       ; R3 := consumeBuffs
  38 [-]: LEN       R3 R3        ; R3 := # R3
- 39 [-]: SETTABLE  R2 K17 R3    ; R2["MAX_ABILITIES"] := R3
+ 39 [-]: SETTABLE  R2 K18 R3    ; R2["MAX_ABILITIES"] := R3
  40 [-]: GETUPVAL  R2 U0        ; R2 := U0
  41 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 42 [-]: SETTABLE  R2 K19 R3    ; R2["mAbilityIcons"] := R3
- 43 [-]: LOADK     R2 K20       ; R2 := 1
- 44 [-]: GETGLOBAL R3 K18       ; R3 := consumeBuffs
- 45 [-]: LEN       R3 R3        ; R3 := # R3
- 46 [-]: LOADK     R4 K20       ; R4 := 1
- 47 [-]: FORPREP   R2 57        ; R2 -= R4; PC := 57
- 48 [-]: GETGLOBAL R6 K21       ; R6 := table
- 49 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["0xE6450C9D"]
- 50 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 51 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["mAbilityIcons"]
- 52 [-]: GETGLOBAL R8 K18       ; R8 := consumeBuffs
- 53 [-]: GETTABLE  R8 R8 R5     ; R8 := R8[R5]
- 54 [-]: SELF      R8 R8 K23    ; R9 := R8; R8 := R8["0xF1A9732E"]
- 55 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 56 [-]: CALL      R6 0 1       ; R6(R7,...)
- 57 [-]: FORLOOP   R2 48        ; R2 += R4; if R2 <= R3 then begin PC := 48; R5 := R2 end
- 58 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 59 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6["0x62648036"]
- 60 [-]: CALL      R6 2 1       ; R6(R7)
- 61 [-]: LOADK     R6 K20       ; R6 := 1
- 62 [-]: GETGLOBAL R7 K18       ; R7 := consumeBuffs
- 63 [-]: LEN       R7 R7        ; R7 := # R7
- 64 [-]: LOADK     R8 K20       ; R8 := 1
- 65 [-]: FORPREP   R6 74        ; R6 -= R8; PC := 74
- 66 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 67 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["mAbilityProperties"]
- 68 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
- 69 [-]: GETGLOBAL R11 K18      ; R11 := consumeBuffs
- 70 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]
- 71 [-]: SELF      R11 R11 K27  ; R12 := R11; R11 := R11["0x616C74B6"]
- 72 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 73 [-]: SETTABLE  R10 K26 R11  ; R10["Name"] := R11
- 74 [-]: FORLOOP   R6 66        ; R6 += R8; if R6 <= R7 then begin PC := 66; R9 := R6 end
- 75 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 76 [-]: CLOSURE   R11 0        ; R11 := closure(Function #8.1)
- 77 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 78 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 79 [-]: SETTABLE  R10 K28 R11  ; R10["DEVOURER_SetConsumeSwitchProp"] := R11
- 80 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 81 [-]: CLOSURE   R11 1        ; R11 := closure(Function #8.2)
- 82 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 83 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 84 [-]: SETTABLE  R10 K29 R11  ; R10["DEVOURER_SetActiveConsume"] := R11
- 85 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 86 [-]: CLOSURE   R11 2        ; R11 := closure(Function #8.3)
- 87 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 88 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 89 [-]: SETTABLE  R10 K30 R11  ; R10["DEVOURER_SetConsumeTimer"] := R11
- 90 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 91 [-]: CLOSURE   R11 3        ; R11 := closure(Function #8.4)
- 92 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 93 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 94 [-]: SETTABLE  R10 K31 R11  ; R10["DEVOURER_UpdateConsumeTimers"] := R11
- 95 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 96 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 97 [-]: GETTABLE  R11 R11 K33  ; R11 := R11["GetAbilityLocTag"]
- 98 [-]: SETTABLE  R10 K32 R11  ; R10["DEVOURER_GetConsumeLocTag"] := R11
- 99 [-]: GETUPVAL  R10 U2       ; R10 := U2
-100 [-]: CALL      R10 1 1      ; R10()
-101 [-]: GETGLOBAL R10 K34      ; R10 := 0x400E7765
-102 [-]: GETGLOBAL R11 K0       ; R11 := _T
-103 [-]: GETTABLE  R11 R11 K35  ; R11 := R11["devourerConsumeIdx"]
-104 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-105 [-]: TEST      R10 1        ; if R10 then PC := 116
-106 [-]: JMP       116          ; PC := 116
-107 [-]: GETGLOBAL R10 K0       ; R10 := _T
-108 [-]: GETTABLE  R10 R10 K36  ; R10 := R10["0xED70B57D"]
-109 [-]: GETGLOBAL R11 K0       ; R11 := _T
-110 [-]: GETTABLE  R11 R11 K35  ; R11 := R11["devourerConsumeIdx"]
-111 [-]: GETUPVAL  R12 U0       ; R12 := U0
-112 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["MAX_ABILITIES"]
-113 [-]: MOD       R11 R11 R12  ; R11 := R11 % R12
-114 [-]: ADD       R11 R11 K20  ; R11 := R11 + 1
-115 [-]: CALL      R10 2 1      ; R10(R11)
-116 [-]: SELF      R10 R0 K37   ; R11 := R0; R10 := R0["0x7E9074BA"]
-117 [-]: LOADK     R12 K15      ; R12 := "Quiver"
-118 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-119 [-]: GETTABLE  R10 R10 K38  ; R10 := R10["y"]
-120 [-]: MOVE      R10 R3       ; R10 := R3
-121 [-]: MOVE      R10 R1       ; R10 := R1
-122 [-]: MOVE      R10 R4       ; R10 := R4
-123 [-]: RETURN    R0 1         ; return 
+ 42 [-]: SETTABLE  R2 K20 R3    ; R2["mAbilityIcons"] := R3
+ 43 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 44 [-]: SETTABLE  R2 K21 K22   ; R2["mPowerSuitAbilityLevelCheck"] := "0x0"
+ 45 [-]: LOADK     R2 K16       ; R2 := 1
+ 46 [-]: GETGLOBAL R3 K19       ; R3 := consumeBuffs
+ 47 [-]: LEN       R3 R3        ; R3 := # R3
+ 48 [-]: LOADK     R4 K16       ; R4 := 1
+ 49 [-]: FORPREP   R2 59        ; R2 -= R4; PC := 59
+ 50 [-]: GETGLOBAL R6 K23       ; R6 := table
+ 51 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["0xE6450C9D"]
+ 52 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 53 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["mAbilityIcons"]
+ 54 [-]: GETGLOBAL R8 K19       ; R8 := consumeBuffs
+ 55 [-]: GETTABLE  R8 R8 R5     ; R8 := R8[R5]
+ 56 [-]: SELF      R8 R8 K25    ; R9 := R8; R8 := R8["0xF1A9732E"]
+ 57 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
+ 58 [-]: CALL      R6 0 1       ; R6(R7,...)
+ 59 [-]: FORLOOP   R2 50        ; R2 += R4; if R2 <= R3 then begin PC := 50; R5 := R2 end
+ 60 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 61 [-]: SELF      R6 R6 K26    ; R7 := R6; R6 := R6["0x62648036"]
+ 62 [-]: CALL      R6 2 1       ; R6(R7)
+ 63 [-]: LOADK     R6 K16       ; R6 := 1
+ 64 [-]: GETGLOBAL R7 K19       ; R7 := consumeBuffs
+ 65 [-]: LEN       R7 R7        ; R7 := # R7
+ 66 [-]: LOADK     R8 K16       ; R8 := 1
+ 67 [-]: FORPREP   R6 76        ; R6 -= R8; PC := 76
+ 68 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 69 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["mAbilityProperties"]
+ 70 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
+ 71 [-]: GETGLOBAL R11 K19      ; R11 := consumeBuffs
+ 72 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]
+ 73 [-]: SELF      R11 R11 K29  ; R12 := R11; R11 := R11["0x616C74B6"]
+ 74 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 75 [-]: SETTABLE  R10 K28 R11  ; R10["Name"] := R11
+ 76 [-]: FORLOOP   R6 68        ; R6 += R8; if R6 <= R7 then begin PC := 68; R9 := R6 end
+ 77 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 78 [-]: CLOSURE   R11 0        ; R11 := closure(Function #8.1)
+ 79 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 80 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 81 [-]: SETTABLE  R10 K30 R11  ; R10["DEVOURER_SetConsumeSwitchProp"] := R11
+ 82 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 83 [-]: CLOSURE   R11 1        ; R11 := closure(Function #8.2)
+ 84 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 85 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 86 [-]: SETTABLE  R10 K31 R11  ; R10["DEVOURER_SetActiveConsume"] := R11
+ 87 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 88 [-]: CLOSURE   R11 2        ; R11 := closure(Function #8.3)
+ 89 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 90 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 91 [-]: SETTABLE  R10 K32 R11  ; R10["DEVOURER_SetConsumeTimer"] := R11
+ 92 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 93 [-]: CLOSURE   R11 3        ; R11 := closure(Function #8.4)
+ 94 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 95 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 96 [-]: SETTABLE  R10 K33 R11  ; R10["DEVOURER_UpdateConsumeTimers"] := R11
+ 97 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 98 [-]: GETUPVAL  R11 U0       ; R11 := U0
+ 99 [-]: GETTABLE  R11 R11 K35  ; R11 := R11["GetAbilityLocTag"]
+100 [-]: SETTABLE  R10 K34 R11  ; R10["DEVOURER_GetConsumeLocTag"] := R11
+101 [-]: GETUPVAL  R10 U2       ; R10 := U2
+102 [-]: CALL      R10 1 1      ; R10()
+103 [-]: GETGLOBAL R10 K36      ; R10 := 0x400E7765
+104 [-]: GETGLOBAL R11 K0       ; R11 := _T
+105 [-]: GETTABLE  R11 R11 K37  ; R11 := R11["devourerConsumeIdx"]
+106 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+107 [-]: TEST      R10 1        ; if R10 then PC := 118
+108 [-]: JMP       118          ; PC := 118
+109 [-]: GETGLOBAL R10 K0       ; R10 := _T
+110 [-]: GETTABLE  R10 R10 K38  ; R10 := R10["0xED70B57D"]
+111 [-]: GETGLOBAL R11 K0       ; R11 := _T
+112 [-]: GETTABLE  R11 R11 K37  ; R11 := R11["devourerConsumeIdx"]
+113 [-]: GETUPVAL  R12 U0       ; R12 := U0
+114 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["MAX_ABILITIES"]
+115 [-]: MOD       R11 R11 R12  ; R11 := R11 % R12
+116 [-]: ADD       R11 R11 K16  ; R11 := R11 + 1
+117 [-]: CALL      R10 2 1      ; R10(R11)
+118 [-]: SELF      R10 R0 K39   ; R11 := R0; R10 := R0["0x7E9074BA"]
+119 [-]: LOADK     R12 K15      ; R12 := "Quiver"
+120 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+121 [-]: GETTABLE  R10 R10 K40  ; R10 := R10["y"]
+122 [-]: MOVE      R10 R3       ; R10 := R3
+123 [-]: MOVE      R10 R1       ; R10 := R1
+124 [-]: MOVE      R10 R4       ; R10 := R4
+125 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8.1:
 ;
 ; Name:            
-; Defined at line: 179
+; Defined at line: 180
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       3
@@ -623,7 +625,7 @@ code size: 8
 ; Function #8.2:
 ;
 ; Name:            
-; Defined at line: 180
+; Defined at line: 181
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       3
@@ -640,7 +642,7 @@ code size: 8
 ; Function #8.3:
 ;
 ; Name:            
-; Defined at line: 181
+; Defined at line: 182
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       3
@@ -657,7 +659,7 @@ code size: 8
 ; Function #8.4:
 ;
 ; Name:            
-; Defined at line: 182
+; Defined at line: 183
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       3
@@ -673,7 +675,7 @@ code size: 8
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 196
+; Defined at line: 197
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

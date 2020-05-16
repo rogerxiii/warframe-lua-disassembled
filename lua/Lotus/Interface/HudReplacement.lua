@@ -1,38 +1,42 @@
-code size: 14
+code size: 18
 code size: 1
 code size: 7
-code size: 91
+code size: 116
 code size: 32
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\HudReplacement.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\HudReplacement.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  2
+; Max Stack Size:  3
 
-  1 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
-  2 [-]: SETGLOBAL R1 K0        ; ShutDown := R1
-  3 [-]: SETGLOBAL R1 K1        ; 0xC654049C := R1
-  4 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  5 [-]: SETGLOBAL R1 K2        ; Initialize := R1
-  6 [-]: SETGLOBAL R1 K3        ; 0x62648036 := R1
-  7 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
-  8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: SETGLOBAL R1 K4        ; Update := R1
- 10 [-]: SETGLOBAL R1 K5        ; 0x8C7099E9 := R1
- 11 [-]: CLOSURE   R1 3         ; R1 := closure(Function #4)
- 12 [-]: SETGLOBAL R1 K6        ; SetHintText := R1
- 13 [-]: SETGLOBAL R1 K7        ; 0x6A766F16 := R1
- 14 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x329BDC44
+  2 [-]: LOADK     R2 K1        ; R2 := "Lotus.Interface.LotusUtilities"
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
+  5 [-]: SETGLOBAL R2 K2        ; ShutDown := R2
+  6 [-]: SETGLOBAL R2 K3        ; 0xC654049C := R2
+  7 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
+  8 [-]: SETGLOBAL R2 K4        ; Initialize := R2
+  9 [-]: SETGLOBAL R2 K5        ; 0x62648036 := R2
+ 10 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
+ 11 [-]: MOVE      R0 R0        ; R0 := R0
+ 12 [-]: MOVE      R0 R1        ; R0 := R1
+ 13 [-]: SETGLOBAL R2 K6        ; Update := R2
+ 14 [-]: SETGLOBAL R2 K7        ; 0x8C7099E9 := R2
+ 15 [-]: CLOSURE   R2 3         ; R2 := closure(Function #4)
+ 16 [-]: SETGLOBAL R2 K8        ; SetHintText := R2
+ 17 [-]: SETGLOBAL R2 K9        ; 0x6A766F16 := R2
+ 18 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 6
+; Defined at line: 7
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -44,7 +48,7 @@ code size: 32
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 9
+; Defined at line: 10
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -62,8 +66,8 @@ code size: 32
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 13
-; #Upvalues:       1
+; Defined at line: 14
+; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  10
@@ -158,13 +162,38 @@ code size: 32
  88 [-]: LOADK     R8 K19       ; R8 := "_alpha"
  89 [-]: LOADK     R9 K21       ; R9 := 100
  90 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 91 [-]: RETURN    R0 1         ; return 
+ 91 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+ 92 [-]: GETGLOBAL R6 K7        ; R6 := gRegion
+ 93 [-]: SELF      R6 R6 K22    ; R7 := R6; R6 := R6["0x3E2F6BF"]
+ 94 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
+ 95 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+ 96 [-]: TEST      R5 1         ; if R5 then PC := 116
+ 97 [-]: JMP       116          ; PC := 116
+ 98 [-]: GETGLOBAL R5 K7        ; R5 := gRegion
+ 99 [-]: SELF      R5 R5 K22    ; R6 := R5; R5 := R5["0x3E2F6BF"]
+100 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+101 [-]: SELF      R5 R5 K23    ; R6 := R5; R5 := R5["0x8DB5D01F"]
+102 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+103 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0x1FE27991"]
+104 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+105 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+106 [-]: MOVE      R7 R5        ; R7 := R5
+107 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+108 [-]: TEST      R6 1         ; if R6 then PC := 116
+109 [-]: JMP       116          ; PC := 116
+110 [-]: GETUPVAL  R6 U1        ; R6 := U1
+111 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["0x36414212"]
+112 [-]: GETGLOBAL R7 K26       ; R7 := 0x7C282057
+113 [-]: MOVE      R8 R5        ; R8 := R5
+114 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+115 [-]: CALL      R6 0 1       ; R6(R7,...)
+116 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 48
+; Defined at line: 57
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

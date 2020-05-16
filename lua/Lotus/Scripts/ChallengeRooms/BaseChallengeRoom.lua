@@ -1,12 +1,12 @@
 code size: 123
 code size: 2
 code size: 7
-code size: 117
+code size: 125
 code size: 35
 code size: 45
 code size: 29
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\ChallengeRooms\BaseChallengeRoom.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\ChallengeRooms\BaseChallengeRoom.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -199,110 +199,118 @@ code size: 29
  17 [-]: GETGLOBAL R8 K7        ; R8 := _G
  18 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["TrainingMissionRank"]
  19 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 20 [-]: SELF      R4 R1 K9     ; R5 := R1; R4 := R1["0x8D5886B7"]
- 21 [-]: LOADK     R6 K10       ; R6 := "Open"
- 22 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 23 [-]: GETGLOBAL R4 K11       ; R4 := 0x201191EA
- 24 [-]: LOADK     R5 K12       ; R5 := 3
- 25 [-]: CALL      R4 2 1       ; R4(R5)
- 26 [-]: TEST      R2 1         ; if R2 then PC := 104
- 27 [-]: JMP       104          ; PC := 104
- 28 [-]: GETGLOBAL R4 K13       ; R4 := _T
- 29 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["ShowNotification"]
- 30 [-]: EQ        1 R4 K15     ; if R4 == nil then PC := 45
- 31 [-]: JMP       45           ; PC := 45
- 32 [-]: GETGLOBAL R4 K7        ; R4 := _G
- 33 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["TrainingMissionRank"]
- 34 [-]: MOD       R4 R4 K16    ; R4 := R4 % 2
- 35 [-]: EQ        0 R4 K17     ; if R4 ~= 0 then PC := 45
- 36 [-]: JMP       45           ; PC := 45
- 37 [-]: GETGLOBAL R4 K13       ; R4 := _T
- 38 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["0x761CAD7D"]
- 39 [-]: GETGLOBAL R5 K19       ; R5 := 0xE6DC43B0
- 40 [-]: LOADK     R6 K20       ; R6 := "/Lotus/Language/Menu/Loadout_NewSlotUnlocked"
- 41 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 42 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 43 [-]: LOADK     R6 K21       ; R6 := "LoadoutSlot"
- 44 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 45 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
- 46 [-]: GETGLOBAL R5 K7        ; R5 := _G
- 47 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["TrainingMissionRank"]
- 48 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 49 [-]: TEST      R4 1         ; if R4 then PC := 117
- 50 [-]: JMP       117          ; PC := 117
- 51 [-]: GETGLOBAL R4 K7        ; R4 := _G
- 52 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["TrainingMissionRank"]
- 53 [-]: LT        0 K17 R4     ; if 0 >= R4 then PC := 117
- 54 [-]: JMP       117          ; PC := 117
- 55 [-]: GETGLOBAL R4 K22       ; R4 := gPlayerProfileMgr
- 56 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4["0x21EF7B1A"]
- 57 [-]: LOADK     R6 K17       ; R6 := 0
- 58 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 59 [-]: NEWTABLE  R5 13 0      ; R5 := {}
- 60 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 61 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 62 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 63 [-]: GETUPVAL  R9 U3        ; R9 := U3
- 64 [-]: GETUPVAL  R10 U4       ; R10 := U4
- 65 [-]: GETUPVAL  R11 U5       ; R11 := U5
- 66 [-]: GETUPVAL  R12 U6       ; R12 := U6
- 67 [-]: GETUPVAL  R13 U7       ; R13 := U7
- 68 [-]: GETUPVAL  R14 U8       ; R14 := U8
- 69 [-]: GETUPVAL  R15 U9       ; R15 := U9
- 70 [-]: GETUPVAL  R16 U10      ; R16 := U10
- 71 [-]: GETUPVAL  R17 U11      ; R17 := U11
- 72 [-]: GETUPVAL  R18 U12      ; R18 := U12
- 73 [-]: SETLIST   R5 13 1      ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 13
- 74 [-]: LOADK     R6 K24       ; R6 := 1
- 75 [-]: LEN       R7 R5        ; R7 := # R5
- 76 [-]: LOADK     R8 K24       ; R8 := 1
- 77 [-]: FORPREP   R6 102       ; R6 -= R8; PC := 102
- 78 [-]: GETGLOBAL R10 K7       ; R10 := _G
- 79 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["TrainingMissionRank"]
- 80 [-]: EQ        0 R10 R9     ; if R10 ~= R9 then PC := 102
- 81 [-]: JMP       102          ; PC := 102
- 82 [-]: NEWTABLE  R10 0 0      ; R10 := {}
- 83 [-]: GETGLOBAL R11 K22      ; R11 := gPlayerProfileMgr
- 84 [-]: SELF      R11 R11 K23  ; R12 := R11; R11 := R11["0x21EF7B1A"]
- 85 [-]: LOADK     R13 K17      ; R13 := 0
- 86 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 87 [-]: SELF      R11 R11 K26  ; R12 := R11; R11 := R11["0x144A28F9"]
- 88 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 89 [-]: SETTABLE  R10 K25 R11  ; R10["PLAYER_NAME"] := R11
- 90 [-]: GETGLOBAL R11 K19      ; R11 := 0xE6DC43B0
- 91 [-]: GETUPVAL  R12 U13      ; R12 := U13
- 92 [-]: MOVE      R13 R10      ; R13 := R10
- 93 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 94 [-]: SELF      R12 R4 K27   ; R13 := R4; R12 := R4["0x6C2BBB1A"]
- 95 [-]: MOVE      R14 R11      ; R14 := R11
- 96 [-]: LOADK     R15 K28      ; R15 := " "
- 97 [-]: GETTABLE  R16 R5 R9    ; R16 := R5[R9]
- 98 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
- 99 [-]: GETUPVAL  R15 U14      ; R15 := U14
-100 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-101 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-102 [-]: FORLOOP   R6 78        ; R6 += R8; if R6 <= R7 then begin PC := 78; R9 := R6 end
-103 [-]: JMP       117          ; PC := 117
-104 [-]: GETGLOBAL R12 K29      ; R12 := gFlashMgr
-105 [-]: SELF      R12 R12 K30  ; R13 := R12; R12 := R12["0x616DD092"]
-106 [-]: MOVE      R14 R0       ; R14 := R0
-107 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-108 [-]: GETGLOBAL R13 K2       ; R13 := 0x400E7765
-109 [-]: MOVE      R14 R12      ; R14 := R12
-110 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-111 [-]: TEST      R13 1        ; if R13 then PC := 117
-112 [-]: JMP       117          ; PC := 117
-113 [-]: SELF      R13 R12 K31  ; R14 := R12; R13 := R12["0x458F27A9"]
-114 [-]: LOADK     R15 K32      ; R15 := "AutoClose"
-115 [-]: LOADK     R16 K33      ; R16 := ""
-116 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-117 [-]: RETURN    R0 1         ; return 
+ 20 [-]: GETGLOBAL R4 K9        ; R4 := gGameRules
+ 21 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0xB983BA95"]
+ 22 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 23 [-]: TEST      R4 0         ; if not R4 then PC := 28
+ 24 [-]: JMP       28           ; PC := 28
+ 25 [-]: GETGLOBAL R4 K9        ; R4 := gGameRules
+ 26 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0x35618693"]
+ 27 [-]: CALL      R4 2 1       ; R4(R5)
+ 28 [-]: SELF      R4 R1 K12    ; R5 := R1; R4 := R1["0x8D5886B7"]
+ 29 [-]: LOADK     R6 K13       ; R6 := "Open"
+ 30 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 31 [-]: GETGLOBAL R4 K14       ; R4 := 0x201191EA
+ 32 [-]: LOADK     R5 K15       ; R5 := 3
+ 33 [-]: CALL      R4 2 1       ; R4(R5)
+ 34 [-]: TEST      R2 1         ; if R2 then PC := 112
+ 35 [-]: JMP       112          ; PC := 112
+ 36 [-]: GETGLOBAL R4 K16       ; R4 := _T
+ 37 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["ShowNotification"]
+ 38 [-]: EQ        1 R4 K18     ; if R4 == nil then PC := 53
+ 39 [-]: JMP       53           ; PC := 53
+ 40 [-]: GETGLOBAL R4 K7        ; R4 := _G
+ 41 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["TrainingMissionRank"]
+ 42 [-]: MOD       R4 R4 K19    ; R4 := R4 % 2
+ 43 [-]: EQ        0 R4 K20     ; if R4 ~= 0 then PC := 53
+ 44 [-]: JMP       53           ; PC := 53
+ 45 [-]: GETGLOBAL R4 K16       ; R4 := _T
+ 46 [-]: GETTABLE  R4 R4 K21    ; R4 := R4["0x761CAD7D"]
+ 47 [-]: GETGLOBAL R5 K22       ; R5 := 0xE6DC43B0
+ 48 [-]: LOADK     R6 K23       ; R6 := "/Lotus/Language/Menu/Loadout_NewSlotUnlocked"
+ 49 [-]: NEWTABLE  R7 0 0       ; R7 := {}
+ 50 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 51 [-]: LOADK     R6 K24       ; R6 := "LoadoutSlot"
+ 52 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 53 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+ 54 [-]: GETGLOBAL R5 K7        ; R5 := _G
+ 55 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["TrainingMissionRank"]
+ 56 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 57 [-]: TEST      R4 1         ; if R4 then PC := 125
+ 58 [-]: JMP       125          ; PC := 125
+ 59 [-]: GETGLOBAL R4 K7        ; R4 := _G
+ 60 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["TrainingMissionRank"]
+ 61 [-]: LT        0 K20 R4     ; if 0 >= R4 then PC := 125
+ 62 [-]: JMP       125          ; PC := 125
+ 63 [-]: GETGLOBAL R4 K25       ; R4 := gPlayerProfileMgr
+ 64 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4["0x21EF7B1A"]
+ 65 [-]: LOADK     R6 K20       ; R6 := 0
+ 66 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 67 [-]: NEWTABLE  R5 13 0      ; R5 := {}
+ 68 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 69 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 70 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 71 [-]: GETUPVAL  R9 U3        ; R9 := U3
+ 72 [-]: GETUPVAL  R10 U4       ; R10 := U4
+ 73 [-]: GETUPVAL  R11 U5       ; R11 := U5
+ 74 [-]: GETUPVAL  R12 U6       ; R12 := U6
+ 75 [-]: GETUPVAL  R13 U7       ; R13 := U7
+ 76 [-]: GETUPVAL  R14 U8       ; R14 := U8
+ 77 [-]: GETUPVAL  R15 U9       ; R15 := U9
+ 78 [-]: GETUPVAL  R16 U10      ; R16 := U10
+ 79 [-]: GETUPVAL  R17 U11      ; R17 := U11
+ 80 [-]: GETUPVAL  R18 U12      ; R18 := U12
+ 81 [-]: SETLIST   R5 13 1      ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 13
+ 82 [-]: LOADK     R6 K27       ; R6 := 1
+ 83 [-]: LEN       R7 R5        ; R7 := # R5
+ 84 [-]: LOADK     R8 K27       ; R8 := 1
+ 85 [-]: FORPREP   R6 110       ; R6 -= R8; PC := 110
+ 86 [-]: GETGLOBAL R10 K7       ; R10 := _G
+ 87 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["TrainingMissionRank"]
+ 88 [-]: EQ        0 R10 R9     ; if R10 ~= R9 then PC := 110
+ 89 [-]: JMP       110          ; PC := 110
+ 90 [-]: NEWTABLE  R10 0 0      ; R10 := {}
+ 91 [-]: GETGLOBAL R11 K25      ; R11 := gPlayerProfileMgr
+ 92 [-]: SELF      R11 R11 K26  ; R12 := R11; R11 := R11["0x21EF7B1A"]
+ 93 [-]: LOADK     R13 K20      ; R13 := 0
+ 94 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+ 95 [-]: SELF      R11 R11 K29  ; R12 := R11; R11 := R11["0x144A28F9"]
+ 96 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 97 [-]: SETTABLE  R10 K28 R11  ; R10["PLAYER_NAME"] := R11
+ 98 [-]: GETGLOBAL R11 K22      ; R11 := 0xE6DC43B0
+ 99 [-]: GETUPVAL  R12 U13      ; R12 := U13
+100 [-]: MOVE      R13 R10      ; R13 := R10
+101 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+102 [-]: SELF      R12 R4 K30   ; R13 := R4; R12 := R4["0x6C2BBB1A"]
+103 [-]: MOVE      R14 R11      ; R14 := R11
+104 [-]: LOADK     R15 K31      ; R15 := " "
+105 [-]: GETTABLE  R16 R5 R9    ; R16 := R5[R9]
+106 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
+107 [-]: GETUPVAL  R15 U14      ; R15 := U14
+108 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
+109 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+110 [-]: FORLOOP   R6 86        ; R6 += R8; if R6 <= R7 then begin PC := 86; R9 := R6 end
+111 [-]: JMP       125          ; PC := 125
+112 [-]: GETGLOBAL R12 K32      ; R12 := gFlashMgr
+113 [-]: SELF      R12 R12 K33  ; R13 := R12; R12 := R12["0x616DD092"]
+114 [-]: MOVE      R14 R0       ; R14 := R0
+115 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+116 [-]: GETGLOBAL R13 K2       ; R13 := 0x400E7765
+117 [-]: MOVE      R14 R12      ; R14 := R12
+118 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+119 [-]: TEST      R13 1        ; if R13 then PC := 125
+120 [-]: JMP       125          ; PC := 125
+121 [-]: SELF      R13 R12 K34  ; R14 := R12; R13 := R12["0x458F27A9"]
+122 [-]: LOADK     R15 K35      ; R15 := "AutoClose"
+123 [-]: LOADK     R16 K36      ; R16 := ""
+124 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+125 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 98
+; Defined at line: 102
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -348,7 +356,7 @@ code size: 29
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 113
+; Defined at line: 117
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -404,7 +412,7 @@ code size: 29
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 127
+; Defined at line: 131
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -2,7 +2,7 @@ code size: 11
 code size: 47
 code size: 297
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Enemies\Sentients\Ropalolyst\LightningStrikeTrigger.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Enemies\Sentients\Ropalolyst\LightningStrikeTrigger.luac 
 
 ; Name:            
 ; Defined at line: 0

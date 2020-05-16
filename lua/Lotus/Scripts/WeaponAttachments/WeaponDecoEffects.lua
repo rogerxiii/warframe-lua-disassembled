@@ -4,7 +4,7 @@ code size: 14
 code size: 27
 code size: 11
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\WeaponDecoEffects.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\WeaponDecoEffects.luac 
 
 ; Name:            
 ; Defined at line: 0

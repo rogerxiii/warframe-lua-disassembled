@@ -1,5 +1,5 @@
 code size: 13
-code size: 50
+code size: 51
 code size: 89
 code size: 87
 code size: 29
@@ -7,13 +7,13 @@ code size: 32
 code size: 6
 code size: 84
 code size: 19
-code size: 73
+code size: 76
 code size: 32
 code size: 6
 code size: 30
 code size: 62
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\PowerSuitCustomHuds\AbilitySelector.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\PowerSuitCustomHuds\AbilitySelector.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -54,54 +54,55 @@ code size: 62
   6 [-]: SETTABLE  R4 K3 K4     ; R4["MAX_ABILITIES"] := 4
   7 [-]: SETTABLE  R4 K5 R2     ; R4["mPowerSuitAbilityIndex"] := R2
   8 [-]: SETTABLE  R4 K6 K7     ; R4["mPowerSuitAbilityLevel"] := nil
-  9 [-]: SETTABLE  R4 K8 K9     ; R4["mAbilitySwitchProp"] := 0
- 10 [-]: SETTABLE  R4 K10 K7    ; R4["mLastTipDisplayTime"] := nil
- 11 [-]: SETTABLE  R4 K11 K12   ; R4["mDisplayTipCooldown"] := 300
- 12 [-]: SETTABLE  R4 K13 R3    ; R4["mDisplayTipLocTag"] := R3
- 13 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.1)
- 14 [-]: MOVE      R0 R4        ; R0 := R4
- 15 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 16 [-]: SETTABLE  R4 K14 R5    ; R4["SetAbilitySwitchProp"] := R5
- 17 [-]: CLOSURE   R5 1         ; R5 := closure(Function #1.2)
- 18 [-]: MOVE      R0 R4        ; R0 := R4
- 19 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 20 [-]: SETTABLE  R4 K15 R5    ; R4["SetActiveAbility"] := R5
- 21 [-]: CLOSURE   R5 2         ; R5 := closure(Function #1.3)
- 22 [-]: MOVE      R0 R4        ; R0 := R4
- 23 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 24 [-]: SETTABLE  R4 K16 R5    ; R4["SetAbilityTimer"] := R5
- 25 [-]: CLOSURE   R5 3         ; R5 := closure(Function #1.4)
- 26 [-]: MOVE      R0 R4        ; R0 := R4
- 27 [-]: SETTABLE  R4 K17 R5    ; R4["ShowText"] := R5
- 28 [-]: CLOSURE   R5 4         ; R5 := closure(Function #1.5)
- 29 [-]: MOVE      R0 R4        ; R0 := R4
- 30 [-]: SETTABLE  R4 K18 R5    ; R4["GetAbilityLocTag"] := R5
- 31 [-]: CLOSURE   R5 5         ; R5 := closure(Function #1.6)
- 32 [-]: SETTABLE  R4 K19 R5    ; R4["InitializeAbilities"] := R5
- 33 [-]: CLOSURE   R5 6         ; R5 := closure(Function #1.7)
- 34 [-]: SETTABLE  R4 K20 R5    ; R4["InitializeAbilityTimers"] := R5
- 35 [-]: CLOSURE   R5 7         ; R5 := closure(Function #1.8)
- 36 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 37 [-]: SETTABLE  R4 K21 R5    ; R4["UpdateAbilityLocks"] := R5
- 38 [-]: CLOSURE   R5 8         ; R5 := closure(Function #1.9)
- 39 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 40 [-]: SETTABLE  R4 K22 R5    ; R4["UpdateAbilityTimers"] := R5
- 41 [-]: CLOSURE   R5 9         ; R5 := closure(Function #1.10)
- 42 [-]: SETTABLE  R4 K23 R5    ; R4["Update"] := R5
- 43 [-]: CLOSURE   R5 10        ; R5 := closure(Function #1.11)
- 44 [-]: SETTABLE  R4 K24 R5    ; R4["Shutdown"] := R5
- 45 [-]: CLOSURE   R5 11        ; R5 := closure(Function #1.12)
- 46 [-]: MOVE      R0 R0        ; R0 := R0
- 47 [-]: MOVE      R0 R1        ; R0 := R1
- 48 [-]: SETTABLE  R4 K25 R5    ; R4["Initialize"] := R5
- 49 [-]: RETURN    R4 2         ; return R4
- 50 [-]: RETURN    R0 1         ; return 
+  9 [-]: SETTABLE  R4 K8 K9     ; R4["mPowerSuitAbilityLevelCheck"] := "0x1"
+ 10 [-]: SETTABLE  R4 K10 K11   ; R4["mAbilitySwitchProp"] := 0
+ 11 [-]: SETTABLE  R4 K12 K7    ; R4["mLastTipDisplayTime"] := nil
+ 12 [-]: SETTABLE  R4 K13 K14   ; R4["mDisplayTipCooldown"] := 300
+ 13 [-]: SETTABLE  R4 K15 R3    ; R4["mDisplayTipLocTag"] := R3
+ 14 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.1)
+ 15 [-]: MOVE      R0 R4        ; R0 := R4
+ 16 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 17 [-]: SETTABLE  R4 K16 R5    ; R4["SetAbilitySwitchProp"] := R5
+ 18 [-]: CLOSURE   R5 1         ; R5 := closure(Function #1.2)
+ 19 [-]: MOVE      R0 R4        ; R0 := R4
+ 20 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 21 [-]: SETTABLE  R4 K17 R5    ; R4["SetActiveAbility"] := R5
+ 22 [-]: CLOSURE   R5 2         ; R5 := closure(Function #1.3)
+ 23 [-]: MOVE      R0 R4        ; R0 := R4
+ 24 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 25 [-]: SETTABLE  R4 K18 R5    ; R4["SetAbilityTimer"] := R5
+ 26 [-]: CLOSURE   R5 3         ; R5 := closure(Function #1.4)
+ 27 [-]: MOVE      R0 R4        ; R0 := R4
+ 28 [-]: SETTABLE  R4 K19 R5    ; R4["ShowText"] := R5
+ 29 [-]: CLOSURE   R5 4         ; R5 := closure(Function #1.5)
+ 30 [-]: MOVE      R0 R4        ; R0 := R4
+ 31 [-]: SETTABLE  R4 K20 R5    ; R4["GetAbilityLocTag"] := R5
+ 32 [-]: CLOSURE   R5 5         ; R5 := closure(Function #1.6)
+ 33 [-]: SETTABLE  R4 K21 R5    ; R4["InitializeAbilities"] := R5
+ 34 [-]: CLOSURE   R5 6         ; R5 := closure(Function #1.7)
+ 35 [-]: SETTABLE  R4 K22 R5    ; R4["InitializeAbilityTimers"] := R5
+ 36 [-]: CLOSURE   R5 7         ; R5 := closure(Function #1.8)
+ 37 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 38 [-]: SETTABLE  R4 K23 R5    ; R4["UpdateAbilityLocks"] := R5
+ 39 [-]: CLOSURE   R5 8         ; R5 := closure(Function #1.9)
+ 40 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 41 [-]: SETTABLE  R4 K24 R5    ; R4["UpdateAbilityTimers"] := R5
+ 42 [-]: CLOSURE   R5 9         ; R5 := closure(Function #1.10)
+ 43 [-]: SETTABLE  R4 K25 R5    ; R4["Update"] := R5
+ 44 [-]: CLOSURE   R5 10        ; R5 := closure(Function #1.11)
+ 45 [-]: SETTABLE  R4 K26 R5    ; R4["Shutdown"] := R5
+ 46 [-]: CLOSURE   R5 11        ; R5 := closure(Function #1.12)
+ 47 [-]: MOVE      R0 R0        ; R0 := R0
+ 48 [-]: MOVE      R0 R1        ; R0 := R1
+ 49 [-]: SETTABLE  R4 K27 R5    ; R4["Initialize"] := R5
+ 50 [-]: RETURN    R4 2         ; return R4
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 16
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -201,7 +202,7 @@ code size: 62
 ; Function #1.2:
 ;
 ; Name:            
-; Defined at line: 42
+; Defined at line: 43
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -299,7 +300,7 @@ code size: 62
 ; Function #1.3:
 ;
 ; Name:            
-; Defined at line: 67
+; Defined at line: 68
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -339,7 +340,7 @@ code size: 62
 ; Function #1.4:
 ;
 ; Name:            
-; Defined at line: 79
+; Defined at line: 80
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -382,7 +383,7 @@ code size: 62
 ; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 89
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -399,7 +400,7 @@ code size: 62
 ; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 93
+; Defined at line: 94
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -494,7 +495,7 @@ code size: 62
 ; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 116
+; Defined at line: 117
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -524,7 +525,7 @@ code size: 62
 ; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 125
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -536,8 +537,8 @@ code size: 62
   4 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
   5 [-]: MOVE      R3 R1        ; R3 := R1
   6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  7 [-]: TEST      R2 1         ; if R2 then PC := 73
-  8 [-]: JMP       73           ; PC := 73
+  7 [-]: TEST      R2 1         ; if R2 then PC := 76
+  8 [-]: JMP       76           ; PC := 76
   9 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x8DB5D01F"]
  10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  11 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x6978AC59"]
@@ -545,14 +546,14 @@ code size: 62
  13 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
  14 [-]: MOVE      R4 R2        ; R4 := R2
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: TEST      R3 1         ; if R3 then PC := 73
- 17 [-]: JMP       73           ; PC := 73
+ 16 [-]: TEST      R3 1         ; if R3 then PC := 76
+ 17 [-]: JMP       76           ; PC := 76
  18 [-]: SELF      R3 R2 K5     ; R4 := R2; R3 := R2["0x1498C3B6"]
  19 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["mPowerSuitAbilityIndex"]
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  21 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mPowerSuitAbilityLevel"]
- 22 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 73
- 23 [-]: JMP       73           ; PC := 73
+ 22 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 76
+ 23 [-]: JMP       76           ; PC := 76
  24 [-]: SETTABLE  R0 K7 R3     ; R0["mPowerSuitAbilityLevel"] := R3
  25 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["mMovie"]
  26 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x1C19D966"]
@@ -567,48 +568,51 @@ code size: 62
  35 [-]: LOADK     R4 K13       ; R4 := 1
  36 [-]: GETTABLE  R5 R0 K14    ; R5 := R0["MAX_ABILITIES"]
  37 [-]: LOADK     R6 K13       ; R6 := 1
- 38 [-]: FORPREP   R4 72        ; R4 -= R6; PC := 72
+ 38 [-]: FORPREP   R4 75        ; R4 -= R6; PC := 75
  39 [-]: GETTABLE  R8 R0 K10    ; R8 := R0["mClipName"]
  40 [-]: LOADK     R9 K15       ; R9 := ".Ability"
  41 [-]: MOVE      R10 R7       ; R10 := R7
  42 [-]: CONCAT    R8 R8 R10    ; R8 := R8 .. R9 .. R10
- 43 [-]: GETTABLE  R9 R0 K7     ; R9 := R0["mPowerSuitAbilityLevel"]
- 44 [-]: LT        1 R9 R7      ; if R9 < R7 then PC := 47
- 45 [-]: JMP       47           ; PC := 47
- 46 [-]: MOVE      R9 R0        ; R9 := R0
- 47 [-]: MOVE      R9 R1        ; R9 := R1
- 48 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mMovie"]
- 49 [-]: SELF      R10 R10 K16  ; R11 := R10; R10 := R10["0x880196A7"]
- 50 [-]: MOVE      R12 R8       ; R12 := R8
- 51 [-]: LOADK     R13 K17      ; R13 := "Icon"
- 52 [-]: LOADK     R14 K18      ; R14 := "_alpha"
- 53 [-]: GETUPVAL  R15 U0       ; R15 := U0
- 54 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0xF81722A2"]
- 55 [-]: MOVE      R16 R9       ; R16 := R9
- 56 [-]: LOADK     R17 K20      ; R17 := 50
- 57 [-]: LOADK     R18 K21      ; R18 := 100
- 58 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
- 59 [-]: CALL      R10 0 1      ; R10(R11,...)
- 60 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mMovie"]
- 61 [-]: SELF      R10 R10 K16  ; R11 := R10; R10 := R10["0x880196A7"]
- 62 [-]: MOVE      R12 R8       ; R12 := R8
- 63 [-]: LOADK     R13 K17      ; R13 := "Icon"
- 64 [-]: LOADK     R14 K22      ; R14 := "adjustcolor_saturation"
- 65 [-]: GETUPVAL  R15 U0       ; R15 := U0
- 66 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0xF81722A2"]
- 67 [-]: MOVE      R16 R9       ; R16 := R9
- 68 [-]: LOADK     R17 K23      ; R17 := -100
- 69 [-]: LOADK     R18 K24      ; R18 := -20
- 70 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
- 71 [-]: CALL      R10 0 1      ; R10(R11,...)
- 72 [-]: FORLOOP   R4 39        ; R4 += R6; if R4 <= R5 then begin PC := 39; R7 := R4 end
- 73 [-]: RETURN    R0 1         ; return 
+ 43 [-]: GETTABLE  R9 R0 K16    ; R9 := R0["mPowerSuitAbilityLevelCheck"]
+ 44 [-]: TEST      R9 0         ; if not R9 then PC := 51
+ 45 [-]: JMP       51           ; PC := 51
+ 46 [-]: GETTABLE  R9 R0 K7     ; R9 := R0["mPowerSuitAbilityLevel"]
+ 47 [-]: LT        1 R9 R7      ; if R9 < R7 then PC := 50
+ 48 [-]: JMP       50           ; PC := 50
+ 49 [-]: MOVE      R9 R0        ; R9 := R0
+ 50 [-]: MOVE      R9 R1        ; R9 := R1
+ 51 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mMovie"]
+ 52 [-]: SELF      R10 R10 K17  ; R11 := R10; R10 := R10["0x880196A7"]
+ 53 [-]: MOVE      R12 R8       ; R12 := R8
+ 54 [-]: LOADK     R13 K18      ; R13 := "Icon"
+ 55 [-]: LOADK     R14 K19      ; R14 := "_alpha"
+ 56 [-]: GETUPVAL  R15 U0       ; R15 := U0
+ 57 [-]: GETTABLE  R15 R15 K20  ; R15 := R15["0xF81722A2"]
+ 58 [-]: MOVE      R16 R9       ; R16 := R9
+ 59 [-]: LOADK     R17 K21      ; R17 := 50
+ 60 [-]: LOADK     R18 K22      ; R18 := 100
+ 61 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
+ 62 [-]: CALL      R10 0 1      ; R10(R11,...)
+ 63 [-]: GETTABLE  R10 R0 K8    ; R10 := R0["mMovie"]
+ 64 [-]: SELF      R10 R10 K17  ; R11 := R10; R10 := R10["0x880196A7"]
+ 65 [-]: MOVE      R12 R8       ; R12 := R8
+ 66 [-]: LOADK     R13 K18      ; R13 := "Icon"
+ 67 [-]: LOADK     R14 K23      ; R14 := "adjustcolor_saturation"
+ 68 [-]: GETUPVAL  R15 U0       ; R15 := U0
+ 69 [-]: GETTABLE  R15 R15 K20  ; R15 := R15["0xF81722A2"]
+ 70 [-]: MOVE      R16 R9       ; R16 := R9
+ 71 [-]: LOADK     R17 K24      ; R17 := -100
+ 72 [-]: LOADK     R18 K25      ; R18 := -20
+ 73 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
+ 74 [-]: CALL      R10 0 1      ; R10(R11,...)
+ 75 [-]: FORLOOP   R4 39        ; R4 += R6; if R4 <= R5 then begin PC := 39; R7 := R4 end
+ 76 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 146
+; Defined at line: 147
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -651,7 +655,7 @@ code size: 62
 ; Function #1.10:
 ;
 ; Name:            
-; Defined at line: 163
+; Defined at line: 164
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -668,7 +672,7 @@ code size: 62
 ; Function #1.11:
 ;
 ; Name:            
-; Defined at line: 170
+; Defined at line: 171
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -709,7 +713,7 @@ code size: 62
 ; Function #1.12:
 ;
 ; Name:            
-; Defined at line: 184
+; Defined at line: 185
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

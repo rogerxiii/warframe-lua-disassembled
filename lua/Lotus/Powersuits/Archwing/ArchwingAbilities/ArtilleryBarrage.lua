@@ -9,10 +9,10 @@ code size: 5
 code size: 6
 code size: 59
 code size: 52
-code size: 371
+code size: 368
 code size: 77
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Archwing\ArchwingAbilities\ArtilleryBarrage.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Archwing\ArchwingAbilities\ArtilleryBarrage.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -716,7 +716,7 @@ code size: 77
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  52
+; Max Stack Size:  51
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
@@ -787,314 +787,311 @@ code size: 77
  67 [-]: SELF      R6 R1 K18    ; R7 := R1; R6 := R1["0x1498C3B6"]
  68 [-]: MOVE      R8 R5        ; R8 := R5
  69 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 70 [-]: SELF      R7 R1 K19    ; R8 := R1; R7 := R1["0x1009A31B"]
- 71 [-]: MOVE      R9 R5        ; R9 := R5
- 72 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 73 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 74 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["0x97A42DF0"]
- 75 [-]: MOVE      R9 R2        ; R9 := R2
- 76 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 77 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 78 [-]: MOVE      R10 R6       ; R10 := R6
- 79 [-]: CALL      R9 2 1       ; R9(R10)
- 80 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 81 [-]: MOVE      R10 R2       ; R10 := R2
- 82 [-]: MOVE      R11 R8       ; R11 := R8
- 83 [-]: CALL      R9 3 6       ; R9,R10,R11,R12,R13 := R9(R10,R11)
- 84 [-]: GETGLOBAL R14 K0       ; R14 := 0x400E7765
- 85 [-]: MOVE      R15 R4       ; R15 := R4
- 86 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 87 [-]: TEST      R14 1        ; if R14 then PC := 92
- 88 [-]: JMP       92           ; PC := 92
- 89 [-]: SELF      R14 R4 K21   ; R15 := R4; R14 := R4["0x6A7E5F92"]
- 90 [-]: DIV       R16 R10 K22  ; R16 := R10 / 5
- 91 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 92 [-]: SELF      R14 R2 K23   ; R15 := R2; R14 := R2["0xB8613F53"]
- 93 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 94 [-]: TEST      R14 0        ; if not R14 then PC := 103
- 95 [-]: JMP       103          ; PC := 103
- 96 [-]: MOVE      R0 R3        ; R0 := R3
- 97 [-]: SELF      R14 R2 K24   ; R15 := R2; R14 := R2["0xB26452A2"]
- 98 [-]: GETGLOBAL R16 K25      ; R16 := 0xEC274B1A
- 99 [-]: LOADK     R17 K26      ; R17 := "Countdown"
-100 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-101 [-]: MOVE      R17 R0       ; R17 := R0
-102 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
-103 [-]: GETGLOBAL R14 K2       ; R14 := gRegion
-104 [-]: SELF      R14 R14 K3   ; R15 := R14; R14 := R14["0xA559F558"]
-105 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-106 [-]: TEST      R14 1        ; if R14 then PC := 109
-107 [-]: JMP       109          ; PC := 109
-108 [-]: RETURN    R0 1         ; return 
-109 [-]: GETGLOBAL R14 K0       ; R14 := 0x400E7765
-110 [-]: GETGLOBAL R15 K27      ; R15 := _T
-111 [-]: GETTABLE  R15 R15 K28  ; R15 := R15["artilleryBarrageBubbles"]
-112 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-113 [-]: TEST      R14 0        ; if not R14 then PC := 118
-114 [-]: JMP       118          ; PC := 118
-115 [-]: GETGLOBAL R14 K27      ; R14 := _T
-116 [-]: NEWTABLE  R15 0 0      ; R15 := {}
-117 [-]: SETTABLE  R14 K28 R15  ; R14["artilleryBarrageBubbles"] := R15
-118 [-]: SELF      R14 R2 K29   ; R15 := R2; R14 := R2["0xDBEF0FB6"]
-119 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-120 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
-121 [-]: GETGLOBAL R16 K27      ; R16 := _T
-122 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["artilleryBarrageBubbles"]
-123 [-]: GETTABLE  R16 R16 R14  ; R16 := R16[R14]
-124 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-125 [-]: TEST      R15 0        ; if not R15 then PC := 131
-126 [-]: JMP       131          ; PC := 131
-127 [-]: GETGLOBAL R15 K27      ; R15 := _T
-128 [-]: GETTABLE  R15 R15 K28  ; R15 := R15["artilleryBarrageBubbles"]
-129 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-130 [-]: SETTABLE  R15 R14 R16  ; R15[R14] := R16
-131 [-]: LOADK     R15 K30      ; R15 := 0
-132 [-]: LOADK     R16 K31      ; R16 := 1
-133 [-]: LOADK     R17 K32      ; R17 := 4
-134 [-]: LOADK     R18 K30      ; R18 := 0
-135 [-]: SELF      R19 R0 K33   ; R20 := R0; R19 := R0["0x6DA72501"]
-136 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-137 [-]: GETGLOBAL R20 K34      ; R20 := 0xECFDD17
-138 [-]: GETGLOBAL R21 K27      ; R21 := _T
-139 [-]: GETTABLE  R21 R21 K28  ; R21 := R21["artilleryBarrageBubbles"]
-140 [-]: GETTABLE  R21 R21 R14  ; R21 := R21[R14]
-141 [-]: CALL      R20 2 4      ; R20,R21,R22 := R20(R21)
-142 [-]: JMP       183          ; PC := 183
-143 [-]: GETGLOBAL R25 K0       ; R25 := 0x400E7765
-144 [-]: GETTABLE  R26 R24 K35  ; R26 := R24["bubble"]
-145 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-146 [-]: TEST      R25 1        ; if R25 then PC := 182
-147 [-]: JMP       182          ; PC := 182
-148 [-]: GETTABLE  R25 R24 K35  ; R25 := R24["bubble"]
-149 [-]: SELF      R25 R25 K36  ; R26 := R25; R25 := R25["0xAC8F6523"]
-150 [-]: MOVE      R27 R19      ; R27 := R19
-151 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
-152 [-]: LE        0 R25 R10    ; if R25 > R10 then PC := 182
-153 [-]: JMP       182          ; PC := 182
-154 [-]: LT        0 R16 R17    ; if R16 >= R17 then PC := 175
-155 [-]: JMP       175          ; PC := 175
-156 [-]: SUB       R25 R17 R16  ; R25 := R17 - R16
-157 [-]: GETTABLE  R26 R24 K37  ; R26 := R24["remainingExplosions"]
-158 [-]: GETTABLE  R27 R24 K38  ; R27 := R24["explosionDamage"]
-159 [-]: MUL       R26 R26 R27  ; R26 := R26 * R27
-160 [-]: GETGLOBAL R27 K39      ; R27 := math
-161 [-]: GETTABLE  R27 R27 K40  ; R27 := R27["0x8B011038"]
-162 [-]: MOVE      R28 R25      ; R28 := R25
-163 [-]: GETTABLE  R29 R24 K41  ; R29 := R24["stacks"]
-164 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-165 [-]: DIV       R27 R25 R27  ; R27 := R25 / R27
-166 [-]: MUL       R26 R26 R27  ; R26 := R26 * R27
-167 [-]: ADD       R15 R15 R26  ; R15 := R15 + R26
-168 [-]: GETGLOBAL R26 K39      ; R26 := math
-169 [-]: GETTABLE  R26 R26 K42  ; R26 := R26["0x65F9712A"]
-170 [-]: MOVE      R27 R17      ; R27 := R17
-171 [-]: GETTABLE  R28 R24 K41  ; R28 := R24["stacks"]
-172 [-]: ADD       R28 R16 R28  ; R28 := R16 + R28
-173 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-174 [-]: MOVE      R16 R26      ; R16 := R26
-175 [-]: GETTABLE  R26 R24 K35  ; R26 := R24["bubble"]
-176 [-]: SELF      R26 R26 K4   ; R27 := R26; R26 := R26["0xD4C2743F"]
-177 [-]: CALL      R26 2 1      ; R26(R27)
-178 [-]: GETGLOBAL R26 K27      ; R26 := _T
-179 [-]: GETTABLE  R26 R26 K28  ; R26 := R26["artilleryBarrageBubbles"]
-180 [-]: GETTABLE  R26 R26 R14  ; R26 := R26[R14]
-181 [-]: SETTABLE  R26 R23 K43  ; R26[R23] := nil
-182 [-]: MOVE      R18 R23      ; R18 := R23
-183 [-]: TFORLOOP  R20 2        ; R23,R24 :=  R20(R21,R22); if R23 ~= nil then begin PC = 143; R22 := R23 end
-184 [-]: JMP       143          ; PC := 143
-185 [-]: GETGLOBAL R26 K39      ; R26 := math
-186 [-]: GETTABLE  R26 R26 K44  ; R26 := R26["0xF7005A7B"]
-187 [-]: MUL       R27 R9 R11   ; R27 := R9 * R11
-188 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-189 [-]: MUL       R27 R26 R12  ; R27 := R26 * R12
-190 [-]: ADD       R27 R27 R15  ; R27 := R27 + R15
-191 [-]: DIV       R12 R27 R26  ; R12 := R27 / R26
-192 [-]: ADD       R27 R18 K31  ; R27 := R18 + 1
-193 [-]: LOADK     R28 K31      ; R28 := 1
-194 [-]: MOVE      R29 R18      ; R29 := R18
-195 [-]: LOADK     R30 K31      ; R30 := 1
-196 [-]: FORPREP   R28 205      ; R28 -= R30; PC := 205
-197 [-]: GETGLOBAL R32 K27      ; R32 := _T
-198 [-]: GETTABLE  R32 R32 K28  ; R32 := R32["artilleryBarrageBubbles"]
-199 [-]: GETTABLE  R32 R32 R14  ; R32 := R32[R14]
-200 [-]: GETTABLE  R32 R32 R31  ; R32 := R32[R31]
-201 [-]: EQ        0 R32 K43    ; if R32 ~= nil then PC := 205
-202 [-]: JMP       205          ; PC := 205
-203 [-]: MOVE      R27 R31      ; R27 := R31
-204 [-]: JMP       206          ; PC := 206
-205 [-]: FORLOOP   R28 197      ; R28 += R30; if R28 <= R29 then begin PC := 197; R31 := R28 end
-206 [-]: GETGLOBAL R32 K27      ; R32 := _T
-207 [-]: GETTABLE  R32 R32 K28  ; R32 := R32["artilleryBarrageBubbles"]
-208 [-]: GETTABLE  R32 R32 R14  ; R32 := R32[R14]
-209 [-]: NEWTABLE  R33 0 4      ; R33 := {}
-210 [-]: SETTABLE  R33 K35 R0   ; R33["bubble"] := R0
-211 [-]: SETTABLE  R33 K41 R16  ; R33["stacks"] := R16
-212 [-]: SETTABLE  R33 K37 R26  ; R33["remainingExplosions"] := R26
-213 [-]: SETTABLE  R33 K38 R12  ; R33["explosionDamage"] := R12
-214 [-]: SETTABLE  R32 R27 R33  ; R32[R27] := R33
-215 [-]: SELF      R32 R2 K15   ; R33 := R2; R32 := R2["0x390F386"]
-216 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-217 [-]: DIV       R33 K31 R11  ; R33 := 1 / R11
-218 [-]: LOADK     R34 K30      ; R34 := 0
-219 [-]: LT        0 K30 R9     ; if 0 >= R9 then PC := 347
-220 [-]: JMP       347          ; PC := 347
-221 [-]: GETGLOBAL R35 K0       ; R35 := 0x400E7765
-222 [-]: MOVE      R36 R3       ; R36 := R3
-223 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-224 [-]: TEST      R35 1        ; if R35 then PC := 347
-225 [-]: JMP       347          ; PC := 347
-226 [-]: GETGLOBAL R35 K0       ; R35 := 0x400E7765
-227 [-]: MOVE      R36 R1       ; R36 := R1
-228 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-229 [-]: TEST      R35 1        ; if R35 then PC := 347
-230 [-]: JMP       347          ; PC := 347
-231 [-]: SELF      R35 R1 K45   ; R36 := R1; R35 := R1["0x9C553A70"]
-232 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-233 [-]: TEST      R35 0        ; if not R35 then PC := 347
-234 [-]: JMP       347          ; PC := 347
-235 [-]: GETGLOBAL R35 K27      ; R35 := _T
-236 [-]: GETTABLE  R35 R35 K28  ; R35 := R35["artilleryBarrageBubbles"]
-237 [-]: GETTABLE  R35 R35 R14  ; R35 := R35[R14]
-238 [-]: GETTABLE  R35 R35 R27  ; R35 := R35[R27]
-239 [-]: EQ        1 R35 K43    ; if R35 == nil then PC := 347
-240 [-]: JMP       347          ; PC := 347
-241 [-]: GETGLOBAL R35 K27      ; R35 := _T
-242 [-]: GETTABLE  R35 R35 K28  ; R35 := R35["artilleryBarrageBubbles"]
-243 [-]: GETTABLE  R35 R35 R14  ; R35 := R35[R14]
-244 [-]: GETTABLE  R35 R35 R27  ; R35 := R35[R27]
-245 [-]: GETTABLE  R35 R35 K35  ; R35 := R35["bubble"]
-246 [-]: EQ        0 R35 R0     ; if R35 ~= R0 then PC := 347
-247 [-]: JMP       347          ; PC := 347
-248 [-]: GETGLOBAL R35 K27      ; R35 := _T
-249 [-]: GETTABLE  R35 R35 K28  ; R35 := R35["artilleryBarrageBubbles"]
-250 [-]: GETTABLE  R35 R35 R14  ; R35 := R35[R14]
-251 [-]: GETTABLE  R35 R35 R27  ; R35 := R35[R27]
-252 [-]: GETGLOBAL R36 K39      ; R36 := math
-253 [-]: GETTABLE  R36 R36 K44  ; R36 := R36["0xF7005A7B"]
-254 [-]: MUL       R37 R9 R11   ; R37 := R9 * R11
-255 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-256 [-]: SETTABLE  R35 K37 R36  ; R35["remainingExplosions"] := R36
-257 [-]: LE        0 R34 K30    ; if R34 > 0 then PC := 337
-258 [-]: JMP       337          ; PC := 337
-259 [-]: GETUPVAL  R35 U4       ; R35 := U4
-260 [-]: MOVE      R36 R19      ; R36 := R19
-261 [-]: SUB       R37 R10 R13  ; R37 := R10 - R13
-262 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
-263 [-]: TEST      R32 0        ; if not R32 then PC := 283
-264 [-]: JMP       283          ; PC := 283
-265 [-]: GETGLOBAL R36 K2       ; R36 := gRegion
-266 [-]: SELF      R36 R36 K12  ; R37 := R36; R36 := R36["0xBDD34CC6"]
-267 [-]: GETGLOBAL R38 K46      ; R38 := explosionWater
-268 [-]: MOVE      R39 R35      ; R39 := R35
-269 [-]: GETGLOBAL R40 K47      ; R40 := 0x1E4F6281
-270 [-]: GETGLOBAL R41 K48      ; R41 := 0x8C4A6742
-271 [-]: LOADK     R42 K49      ; R42 := -180
-272 [-]: LOADK     R43 K50      ; R43 := 180
-273 [-]: CALL      R41 3 2      ; R41 := R41(R42,R43)
-274 [-]: GETGLOBAL R42 K48      ; R42 := 0x8C4A6742
-275 [-]: LOADK     R43 K49      ; R43 := -180
-276 [-]: LOADK     R44 K50      ; R44 := 180
-277 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
-278 [-]: LOADK     R43 K30      ; R43 := 0
-279 [-]: CALL      R40 4 2      ; R40 := R40(R41,R42,R43)
-280 [-]: MOVE      R41 R1       ; R41 := R1
-281 [-]: CALL      R36 6 1      ; R36(R37,R38,R39,R40,R41)
-282 [-]: JMP       300          ; PC := 300
-283 [-]: GETGLOBAL R36 K2       ; R36 := gRegion
-284 [-]: SELF      R36 R36 K12  ; R37 := R36; R36 := R36["0xBDD34CC6"]
-285 [-]: GETGLOBAL R38 K51      ; R38 := explosionFx
-286 [-]: MOVE      R39 R35      ; R39 := R35
-287 [-]: GETGLOBAL R40 K47      ; R40 := 0x1E4F6281
-288 [-]: GETGLOBAL R41 K48      ; R41 := 0x8C4A6742
-289 [-]: LOADK     R42 K49      ; R42 := -180
-290 [-]: LOADK     R43 K50      ; R43 := 180
-291 [-]: CALL      R41 3 2      ; R41 := R41(R42,R43)
-292 [-]: GETGLOBAL R42 K48      ; R42 := 0x8C4A6742
-293 [-]: LOADK     R43 K49      ; R43 := -180
-294 [-]: LOADK     R44 K50      ; R44 := 180
-295 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
-296 [-]: LOADK     R43 K30      ; R43 := 0
-297 [-]: CALL      R40 4 2      ; R40 := R40(R41,R42,R43)
-298 [-]: MOVE      R41 R1       ; R41 := R1
-299 [-]: CALL      R36 6 1      ; R36(R37,R38,R39,R40,R41)
-300 [-]: GETGLOBAL R36 K0       ; R36 := 0x400E7765
-301 [-]: MOVE      R37 R2       ; R37 := R2
-302 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-303 [-]: TEST      R36 0        ; if not R36 then PC := 318
-304 [-]: JMP       318          ; PC := 318
-305 [-]: SELF      R36 R3 K52   ; R37 := R3; R36 := R3["0x80B14403"]
-306 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-307 [-]: MOVE      R2 R36       ; R2 := R36
-308 [-]: GETGLOBAL R36 K0       ; R36 := 0x400E7765
-309 [-]: MOVE      R37 R2       ; R37 := R2
-310 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-311 [-]: TEST      R36 1        ; if R36 then PC := 318
-312 [-]: JMP       318          ; PC := 318
-313 [-]: SELF      R36 R2 K53   ; R37 := R2; R36 := R2["0x8DB5D01F"]
-314 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-315 [-]: SELF      R36 R36 K54  ; R37 := R36; R36 := R36["0xE81AC1B1"]
-316 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-317 [-]: MOVE      R1 R36       ; R1 := R36
-318 [-]: GETGLOBAL R36 K2       ; R36 := gRegion
-319 [-]: SELF      R36 R36 K55  ; R37 := R36; R36 := R36["0x4BC2A4A3"]
-320 [-]: MOVE      R38 R2       ; R38 := R2
-321 [-]: MOVE      R39 R35      ; R39 := R35
-322 [-]: MOVE      R40 R12      ; R40 := R12
-323 [-]: MOVE      R41 R13      ; R41 := R13
-324 [-]: LOADK     R42 K30      ; R42 := 0
-325 [-]: GETGLOBAL R43 K56      ; R43 := Engine
-326 [-]: GETTABLE  R43 R43 K57  ; R43 := R43["DT_EXPLOSION"]
-327 [-]: MOVE      R44 R0       ; R44 := R0
-328 [-]: MOVE      R45 R1       ; R45 := R1
-329 [-]: LOADK     R46 K58      ; R46 := -1
-330 [-]: MOVE      R47 R0       ; R47 := R0
-331 [-]: MOVE      R48 R0       ; R48 := R0
-332 [-]: MOVE      R49 R0       ; R49 := R0
-333 [-]: LOADK     R50 K31      ; R50 := 1
-334 [-]: MOVE      R51 R1       ; R51 := R1
-335 [-]: CALL      R36 16 1     ; R36(R37,R38,R39,R40,R41,R42,R43,R44,R45,R46,R47,R48,R49,R50,R51)
-336 [-]: ADD       R34 R34 R33  ; R34 := R34 + R33
-337 [-]: GETGLOBAL R36 K59      ; R36 := 0x201191EA
-338 [-]: LOADK     R37 K30      ; R37 := 0
-339 [-]: CALL      R36 2 1      ; R36(R37)
-340 [-]: GETGLOBAL R36 K60      ; R36 := 0x4CDEF9FF
-341 [-]: CALL      R36 1 2      ; R36 := R36()
-342 [-]: SUB       R9 R9 R36    ; R9 := R9 - R36
-343 [-]: GETGLOBAL R36 K60      ; R36 := 0x4CDEF9FF
-344 [-]: CALL      R36 1 2      ; R36 := R36()
-345 [-]: SUB       R34 R34 R36  ; R34 := R34 - R36
-346 [-]: JMP       219          ; PC := 219
-347 [-]: GETGLOBAL R36 K27      ; R36 := _T
-348 [-]: GETTABLE  R36 R36 K28  ; R36 := R36["artilleryBarrageBubbles"]
-349 [-]: GETTABLE  R36 R36 R14  ; R36 := R36[R14]
-350 [-]: GETTABLE  R36 R36 R27  ; R36 := R36[R27]
-351 [-]: EQ        1 R36 K43    ; if R36 == nil then PC := 364
-352 [-]: JMP       364          ; PC := 364
-353 [-]: GETGLOBAL R36 K27      ; R36 := _T
-354 [-]: GETTABLE  R36 R36 K28  ; R36 := R36["artilleryBarrageBubbles"]
-355 [-]: GETTABLE  R36 R36 R14  ; R36 := R36[R14]
-356 [-]: GETTABLE  R36 R36 R27  ; R36 := R36[R27]
-357 [-]: GETTABLE  R36 R36 K35  ; R36 := R36["bubble"]
-358 [-]: EQ        0 R36 R0     ; if R36 ~= R0 then PC := 364
-359 [-]: JMP       364          ; PC := 364
-360 [-]: GETGLOBAL R36 K27      ; R36 := _T
-361 [-]: GETTABLE  R36 R36 K28  ; R36 := R36["artilleryBarrageBubbles"]
-362 [-]: GETTABLE  R36 R36 R14  ; R36 := R36[R14]
-363 [-]: SETTABLE  R36 R27 K43  ; R36[R27] := nil
-364 [-]: GETGLOBAL R36 K0       ; R36 := 0x400E7765
-365 [-]: MOVE      R37 R0       ; R37 := R0
-366 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-367 [-]: TEST      R36 1        ; if R36 then PC := 371
-368 [-]: JMP       371          ; PC := 371
-369 [-]: SELF      R36 R0 K4    ; R37 := R0; R36 := R0["0xD4C2743F"]
-370 [-]: CALL      R36 2 1      ; R36(R37)
-371 [-]: RETURN    R0 1         ; return 
+ 70 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 71 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["0x97A42DF0"]
+ 72 [-]: MOVE      R8 R2        ; R8 := R2
+ 73 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 74 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 75 [-]: MOVE      R9 R6        ; R9 := R6
+ 76 [-]: CALL      R8 2 1       ; R8(R9)
+ 77 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 78 [-]: MOVE      R9 R2        ; R9 := R2
+ 79 [-]: MOVE      R10 R7       ; R10 := R7
+ 80 [-]: CALL      R8 3 6       ; R8,R9,R10,R11,R12 := R8(R9,R10)
+ 81 [-]: GETGLOBAL R13 K0       ; R13 := 0x400E7765
+ 82 [-]: MOVE      R14 R4       ; R14 := R4
+ 83 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 84 [-]: TEST      R13 1        ; if R13 then PC := 89
+ 85 [-]: JMP       89           ; PC := 89
+ 86 [-]: SELF      R13 R4 K20   ; R14 := R4; R13 := R4["0x6A7E5F92"]
+ 87 [-]: DIV       R15 R9 K21   ; R15 := R9 / 5
+ 88 [-]: CALL      R13 3 1      ; R13(R14,R15)
+ 89 [-]: SELF      R13 R2 K22   ; R14 := R2; R13 := R2["0xB8613F53"]
+ 90 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 91 [-]: TEST      R13 0        ; if not R13 then PC := 100
+ 92 [-]: JMP       100          ; PC := 100
+ 93 [-]: MOVE      R0 R3        ; R0 := R3
+ 94 [-]: SELF      R13 R2 K23   ; R14 := R2; R13 := R2["0xB26452A2"]
+ 95 [-]: GETGLOBAL R15 K24      ; R15 := 0xEC274B1A
+ 96 [-]: LOADK     R16 K25      ; R16 := "Countdown"
+ 97 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 98 [-]: MOVE      R16 R0       ; R16 := R0
+ 99 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+100 [-]: GETGLOBAL R13 K2       ; R13 := gRegion
+101 [-]: SELF      R13 R13 K3   ; R14 := R13; R13 := R13["0xA559F558"]
+102 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+103 [-]: TEST      R13 1        ; if R13 then PC := 106
+104 [-]: JMP       106          ; PC := 106
+105 [-]: RETURN    R0 1         ; return 
+106 [-]: GETGLOBAL R13 K0       ; R13 := 0x400E7765
+107 [-]: GETGLOBAL R14 K26      ; R14 := _T
+108 [-]: GETTABLE  R14 R14 K27  ; R14 := R14["artilleryBarrageBubbles"]
+109 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+110 [-]: TEST      R13 0        ; if not R13 then PC := 115
+111 [-]: JMP       115          ; PC := 115
+112 [-]: GETGLOBAL R13 K26      ; R13 := _T
+113 [-]: NEWTABLE  R14 0 0      ; R14 := {}
+114 [-]: SETTABLE  R13 K27 R14  ; R13["artilleryBarrageBubbles"] := R14
+115 [-]: SELF      R13 R2 K28   ; R14 := R2; R13 := R2["0xDBEF0FB6"]
+116 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+117 [-]: GETGLOBAL R14 K0       ; R14 := 0x400E7765
+118 [-]: GETGLOBAL R15 K26      ; R15 := _T
+119 [-]: GETTABLE  R15 R15 K27  ; R15 := R15["artilleryBarrageBubbles"]
+120 [-]: GETTABLE  R15 R15 R13  ; R15 := R15[R13]
+121 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+122 [-]: TEST      R14 0        ; if not R14 then PC := 128
+123 [-]: JMP       128          ; PC := 128
+124 [-]: GETGLOBAL R14 K26      ; R14 := _T
+125 [-]: GETTABLE  R14 R14 K27  ; R14 := R14["artilleryBarrageBubbles"]
+126 [-]: NEWTABLE  R15 0 0      ; R15 := {}
+127 [-]: SETTABLE  R14 R13 R15  ; R14[R13] := R15
+128 [-]: LOADK     R14 K29      ; R14 := 0
+129 [-]: LOADK     R15 K30      ; R15 := 1
+130 [-]: LOADK     R16 K31      ; R16 := 4
+131 [-]: LOADK     R17 K29      ; R17 := 0
+132 [-]: SELF      R18 R0 K32   ; R19 := R0; R18 := R0["0x6DA72501"]
+133 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+134 [-]: GETGLOBAL R19 K33      ; R19 := 0xECFDD17
+135 [-]: GETGLOBAL R20 K26      ; R20 := _T
+136 [-]: GETTABLE  R20 R20 K27  ; R20 := R20["artilleryBarrageBubbles"]
+137 [-]: GETTABLE  R20 R20 R13  ; R20 := R20[R13]
+138 [-]: CALL      R19 2 4      ; R19,R20,R21 := R19(R20)
+139 [-]: JMP       180          ; PC := 180
+140 [-]: GETGLOBAL R24 K0       ; R24 := 0x400E7765
+141 [-]: GETTABLE  R25 R23 K34  ; R25 := R23["bubble"]
+142 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+143 [-]: TEST      R24 1        ; if R24 then PC := 179
+144 [-]: JMP       179          ; PC := 179
+145 [-]: GETTABLE  R24 R23 K34  ; R24 := R23["bubble"]
+146 [-]: SELF      R24 R24 K35  ; R25 := R24; R24 := R24["0xAC8F6523"]
+147 [-]: MOVE      R26 R18      ; R26 := R18
+148 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
+149 [-]: LE        0 R24 R9     ; if R24 > R9 then PC := 179
+150 [-]: JMP       179          ; PC := 179
+151 [-]: LT        0 R15 R16    ; if R15 >= R16 then PC := 172
+152 [-]: JMP       172          ; PC := 172
+153 [-]: SUB       R24 R16 R15  ; R24 := R16 - R15
+154 [-]: GETTABLE  R25 R23 K36  ; R25 := R23["remainingExplosions"]
+155 [-]: GETTABLE  R26 R23 K37  ; R26 := R23["explosionDamage"]
+156 [-]: MUL       R25 R25 R26  ; R25 := R25 * R26
+157 [-]: GETGLOBAL R26 K38      ; R26 := math
+158 [-]: GETTABLE  R26 R26 K39  ; R26 := R26["0x8B011038"]
+159 [-]: MOVE      R27 R24      ; R27 := R24
+160 [-]: GETTABLE  R28 R23 K40  ; R28 := R23["stacks"]
+161 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+162 [-]: DIV       R26 R24 R26  ; R26 := R24 / R26
+163 [-]: MUL       R25 R25 R26  ; R25 := R25 * R26
+164 [-]: ADD       R14 R14 R25  ; R14 := R14 + R25
+165 [-]: GETGLOBAL R25 K38      ; R25 := math
+166 [-]: GETTABLE  R25 R25 K41  ; R25 := R25["0x65F9712A"]
+167 [-]: MOVE      R26 R16      ; R26 := R16
+168 [-]: GETTABLE  R27 R23 K40  ; R27 := R23["stacks"]
+169 [-]: ADD       R27 R15 R27  ; R27 := R15 + R27
+170 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
+171 [-]: MOVE      R15 R25      ; R15 := R25
+172 [-]: GETTABLE  R25 R23 K34  ; R25 := R23["bubble"]
+173 [-]: SELF      R25 R25 K4   ; R26 := R25; R25 := R25["0xD4C2743F"]
+174 [-]: CALL      R25 2 1      ; R25(R26)
+175 [-]: GETGLOBAL R25 K26      ; R25 := _T
+176 [-]: GETTABLE  R25 R25 K27  ; R25 := R25["artilleryBarrageBubbles"]
+177 [-]: GETTABLE  R25 R25 R13  ; R25 := R25[R13]
+178 [-]: SETTABLE  R25 R22 K42  ; R25[R22] := nil
+179 [-]: MOVE      R17 R22      ; R17 := R22
+180 [-]: TFORLOOP  R19 2        ; R22,R23 :=  R19(R20,R21); if R22 ~= nil then begin PC = 140; R21 := R22 end
+181 [-]: JMP       140          ; PC := 140
+182 [-]: GETGLOBAL R25 K38      ; R25 := math
+183 [-]: GETTABLE  R25 R25 K43  ; R25 := R25["0xF7005A7B"]
+184 [-]: MUL       R26 R8 R10   ; R26 := R8 * R10
+185 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+186 [-]: MUL       R26 R25 R11  ; R26 := R25 * R11
+187 [-]: ADD       R26 R26 R14  ; R26 := R26 + R14
+188 [-]: DIV       R11 R26 R25  ; R11 := R26 / R25
+189 [-]: ADD       R26 R17 K30  ; R26 := R17 + 1
+190 [-]: LOADK     R27 K30      ; R27 := 1
+191 [-]: MOVE      R28 R17      ; R28 := R17
+192 [-]: LOADK     R29 K30      ; R29 := 1
+193 [-]: FORPREP   R27 202      ; R27 -= R29; PC := 202
+194 [-]: GETGLOBAL R31 K26      ; R31 := _T
+195 [-]: GETTABLE  R31 R31 K27  ; R31 := R31["artilleryBarrageBubbles"]
+196 [-]: GETTABLE  R31 R31 R13  ; R31 := R31[R13]
+197 [-]: GETTABLE  R31 R31 R30  ; R31 := R31[R30]
+198 [-]: EQ        0 R31 K42    ; if R31 ~= nil then PC := 202
+199 [-]: JMP       202          ; PC := 202
+200 [-]: MOVE      R26 R30      ; R26 := R30
+201 [-]: JMP       203          ; PC := 203
+202 [-]: FORLOOP   R27 194      ; R27 += R29; if R27 <= R28 then begin PC := 194; R30 := R27 end
+203 [-]: GETGLOBAL R31 K26      ; R31 := _T
+204 [-]: GETTABLE  R31 R31 K27  ; R31 := R31["artilleryBarrageBubbles"]
+205 [-]: GETTABLE  R31 R31 R13  ; R31 := R31[R13]
+206 [-]: NEWTABLE  R32 0 4      ; R32 := {}
+207 [-]: SETTABLE  R32 K34 R0   ; R32["bubble"] := R0
+208 [-]: SETTABLE  R32 K40 R15  ; R32["stacks"] := R15
+209 [-]: SETTABLE  R32 K36 R25  ; R32["remainingExplosions"] := R25
+210 [-]: SETTABLE  R32 K37 R11  ; R32["explosionDamage"] := R11
+211 [-]: SETTABLE  R31 R26 R32  ; R31[R26] := R32
+212 [-]: SELF      R31 R2 K15   ; R32 := R2; R31 := R2["0x390F386"]
+213 [-]: CALL      R31 2 2      ; R31 := R31(R32)
+214 [-]: DIV       R32 K30 R10  ; R32 := 1 / R10
+215 [-]: LOADK     R33 K29      ; R33 := 0
+216 [-]: LT        0 K29 R8     ; if 0 >= R8 then PC := 344
+217 [-]: JMP       344          ; PC := 344
+218 [-]: GETGLOBAL R34 K0       ; R34 := 0x400E7765
+219 [-]: MOVE      R35 R3       ; R35 := R3
+220 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+221 [-]: TEST      R34 1        ; if R34 then PC := 344
+222 [-]: JMP       344          ; PC := 344
+223 [-]: GETGLOBAL R34 K0       ; R34 := 0x400E7765
+224 [-]: MOVE      R35 R1       ; R35 := R1
+225 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+226 [-]: TEST      R34 1        ; if R34 then PC := 344
+227 [-]: JMP       344          ; PC := 344
+228 [-]: SELF      R34 R1 K44   ; R35 := R1; R34 := R1["0x9C553A70"]
+229 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+230 [-]: TEST      R34 0        ; if not R34 then PC := 344
+231 [-]: JMP       344          ; PC := 344
+232 [-]: GETGLOBAL R34 K26      ; R34 := _T
+233 [-]: GETTABLE  R34 R34 K27  ; R34 := R34["artilleryBarrageBubbles"]
+234 [-]: GETTABLE  R34 R34 R13  ; R34 := R34[R13]
+235 [-]: GETTABLE  R34 R34 R26  ; R34 := R34[R26]
+236 [-]: EQ        1 R34 K42    ; if R34 == nil then PC := 344
+237 [-]: JMP       344          ; PC := 344
+238 [-]: GETGLOBAL R34 K26      ; R34 := _T
+239 [-]: GETTABLE  R34 R34 K27  ; R34 := R34["artilleryBarrageBubbles"]
+240 [-]: GETTABLE  R34 R34 R13  ; R34 := R34[R13]
+241 [-]: GETTABLE  R34 R34 R26  ; R34 := R34[R26]
+242 [-]: GETTABLE  R34 R34 K34  ; R34 := R34["bubble"]
+243 [-]: EQ        0 R34 R0     ; if R34 ~= R0 then PC := 344
+244 [-]: JMP       344          ; PC := 344
+245 [-]: GETGLOBAL R34 K26      ; R34 := _T
+246 [-]: GETTABLE  R34 R34 K27  ; R34 := R34["artilleryBarrageBubbles"]
+247 [-]: GETTABLE  R34 R34 R13  ; R34 := R34[R13]
+248 [-]: GETTABLE  R34 R34 R26  ; R34 := R34[R26]
+249 [-]: GETGLOBAL R35 K38      ; R35 := math
+250 [-]: GETTABLE  R35 R35 K43  ; R35 := R35["0xF7005A7B"]
+251 [-]: MUL       R36 R8 R10   ; R36 := R8 * R10
+252 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+253 [-]: SETTABLE  R34 K36 R35  ; R34["remainingExplosions"] := R35
+254 [-]: LE        0 R33 K29    ; if R33 > 0 then PC := 334
+255 [-]: JMP       334          ; PC := 334
+256 [-]: GETUPVAL  R34 U4       ; R34 := U4
+257 [-]: MOVE      R35 R18      ; R35 := R18
+258 [-]: SUB       R36 R9 R12   ; R36 := R9 - R12
+259 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
+260 [-]: TEST      R31 0        ; if not R31 then PC := 280
+261 [-]: JMP       280          ; PC := 280
+262 [-]: GETGLOBAL R35 K2       ; R35 := gRegion
+263 [-]: SELF      R35 R35 K12  ; R36 := R35; R35 := R35["0xBDD34CC6"]
+264 [-]: GETGLOBAL R37 K45      ; R37 := explosionWater
+265 [-]: MOVE      R38 R34      ; R38 := R34
+266 [-]: GETGLOBAL R39 K46      ; R39 := 0x1E4F6281
+267 [-]: GETGLOBAL R40 K47      ; R40 := 0x8C4A6742
+268 [-]: LOADK     R41 K48      ; R41 := -180
+269 [-]: LOADK     R42 K49      ; R42 := 180
+270 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
+271 [-]: GETGLOBAL R41 K47      ; R41 := 0x8C4A6742
+272 [-]: LOADK     R42 K48      ; R42 := -180
+273 [-]: LOADK     R43 K49      ; R43 := 180
+274 [-]: CALL      R41 3 2      ; R41 := R41(R42,R43)
+275 [-]: LOADK     R42 K29      ; R42 := 0
+276 [-]: CALL      R39 4 2      ; R39 := R39(R40,R41,R42)
+277 [-]: MOVE      R40 R1       ; R40 := R1
+278 [-]: CALL      R35 6 1      ; R35(R36,R37,R38,R39,R40)
+279 [-]: JMP       297          ; PC := 297
+280 [-]: GETGLOBAL R35 K2       ; R35 := gRegion
+281 [-]: SELF      R35 R35 K12  ; R36 := R35; R35 := R35["0xBDD34CC6"]
+282 [-]: GETGLOBAL R37 K50      ; R37 := explosionFx
+283 [-]: MOVE      R38 R34      ; R38 := R34
+284 [-]: GETGLOBAL R39 K46      ; R39 := 0x1E4F6281
+285 [-]: GETGLOBAL R40 K47      ; R40 := 0x8C4A6742
+286 [-]: LOADK     R41 K48      ; R41 := -180
+287 [-]: LOADK     R42 K49      ; R42 := 180
+288 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
+289 [-]: GETGLOBAL R41 K47      ; R41 := 0x8C4A6742
+290 [-]: LOADK     R42 K48      ; R42 := -180
+291 [-]: LOADK     R43 K49      ; R43 := 180
+292 [-]: CALL      R41 3 2      ; R41 := R41(R42,R43)
+293 [-]: LOADK     R42 K29      ; R42 := 0
+294 [-]: CALL      R39 4 2      ; R39 := R39(R40,R41,R42)
+295 [-]: MOVE      R40 R1       ; R40 := R1
+296 [-]: CALL      R35 6 1      ; R35(R36,R37,R38,R39,R40)
+297 [-]: GETGLOBAL R35 K0       ; R35 := 0x400E7765
+298 [-]: MOVE      R36 R2       ; R36 := R2
+299 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+300 [-]: TEST      R35 0        ; if not R35 then PC := 315
+301 [-]: JMP       315          ; PC := 315
+302 [-]: SELF      R35 R3 K51   ; R36 := R3; R35 := R3["0x80B14403"]
+303 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+304 [-]: MOVE      R2 R35       ; R2 := R35
+305 [-]: GETGLOBAL R35 K0       ; R35 := 0x400E7765
+306 [-]: MOVE      R36 R2       ; R36 := R2
+307 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+308 [-]: TEST      R35 1        ; if R35 then PC := 315
+309 [-]: JMP       315          ; PC := 315
+310 [-]: SELF      R35 R2 K52   ; R36 := R2; R35 := R2["0x8DB5D01F"]
+311 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+312 [-]: SELF      R35 R35 K53  ; R36 := R35; R35 := R35["0xE81AC1B1"]
+313 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+314 [-]: MOVE      R1 R35       ; R1 := R35
+315 [-]: GETGLOBAL R35 K2       ; R35 := gRegion
+316 [-]: SELF      R35 R35 K54  ; R36 := R35; R35 := R35["0x4BC2A4A3"]
+317 [-]: MOVE      R37 R2       ; R37 := R2
+318 [-]: MOVE      R38 R34      ; R38 := R34
+319 [-]: MOVE      R39 R11      ; R39 := R11
+320 [-]: MOVE      R40 R12      ; R40 := R12
+321 [-]: LOADK     R41 K29      ; R41 := 0
+322 [-]: GETGLOBAL R42 K55      ; R42 := Engine
+323 [-]: GETTABLE  R42 R42 K56  ; R42 := R42["DT_EXPLOSION"]
+324 [-]: MOVE      R43 R0       ; R43 := R0
+325 [-]: MOVE      R44 R1       ; R44 := R1
+326 [-]: LOADK     R45 K57      ; R45 := -1
+327 [-]: MOVE      R46 R0       ; R46 := R0
+328 [-]: MOVE      R47 R0       ; R47 := R0
+329 [-]: MOVE      R48 R0       ; R48 := R0
+330 [-]: LOADK     R49 K30      ; R49 := 1
+331 [-]: MOVE      R50 R1       ; R50 := R1
+332 [-]: CALL      R35 16 1     ; R35(R36,R37,R38,R39,R40,R41,R42,R43,R44,R45,R46,R47,R48,R49,R50)
+333 [-]: ADD       R33 R33 R32  ; R33 := R33 + R32
+334 [-]: GETGLOBAL R35 K58      ; R35 := 0x201191EA
+335 [-]: LOADK     R36 K29      ; R36 := 0
+336 [-]: CALL      R35 2 1      ; R35(R36)
+337 [-]: GETGLOBAL R35 K59      ; R35 := 0x4CDEF9FF
+338 [-]: CALL      R35 1 2      ; R35 := R35()
+339 [-]: SUB       R8 R8 R35    ; R8 := R8 - R35
+340 [-]: GETGLOBAL R35 K59      ; R35 := 0x4CDEF9FF
+341 [-]: CALL      R35 1 2      ; R35 := R35()
+342 [-]: SUB       R33 R33 R35  ; R33 := R33 - R35
+343 [-]: JMP       216          ; PC := 216
+344 [-]: GETGLOBAL R35 K26      ; R35 := _T
+345 [-]: GETTABLE  R35 R35 K27  ; R35 := R35["artilleryBarrageBubbles"]
+346 [-]: GETTABLE  R35 R35 R13  ; R35 := R35[R13]
+347 [-]: GETTABLE  R35 R35 R26  ; R35 := R35[R26]
+348 [-]: EQ        1 R35 K42    ; if R35 == nil then PC := 361
+349 [-]: JMP       361          ; PC := 361
+350 [-]: GETGLOBAL R35 K26      ; R35 := _T
+351 [-]: GETTABLE  R35 R35 K27  ; R35 := R35["artilleryBarrageBubbles"]
+352 [-]: GETTABLE  R35 R35 R13  ; R35 := R35[R13]
+353 [-]: GETTABLE  R35 R35 R26  ; R35 := R35[R26]
+354 [-]: GETTABLE  R35 R35 K34  ; R35 := R35["bubble"]
+355 [-]: EQ        0 R35 R0     ; if R35 ~= R0 then PC := 361
+356 [-]: JMP       361          ; PC := 361
+357 [-]: GETGLOBAL R35 K26      ; R35 := _T
+358 [-]: GETTABLE  R35 R35 K27  ; R35 := R35["artilleryBarrageBubbles"]
+359 [-]: GETTABLE  R35 R35 R13  ; R35 := R35[R13]
+360 [-]: SETTABLE  R35 R26 K42  ; R35[R26] := nil
+361 [-]: GETGLOBAL R35 K0       ; R35 := 0x400E7765
+362 [-]: MOVE      R36 R0       ; R36 := R0
+363 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+364 [-]: TEST      R35 1        ; if R35 then PC := 368
+365 [-]: JMP       368          ; PC := 368
+366 [-]: SELF      R35 R0 K4    ; R36 := R0; R35 := R0["0xD4C2743F"]
+367 [-]: CALL      R35 2 1      ; R35(R36)
+368 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 331
+; Defined at line: 329
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

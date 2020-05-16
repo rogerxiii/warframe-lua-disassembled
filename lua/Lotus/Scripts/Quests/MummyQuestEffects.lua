@@ -1,19 +1,18 @@
-code size: 29
+code size: 28
 code size: 20
 code size: 130
 code size: 101
-code size: 18
 code size: 20
 code size: 28
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\MummyQuestEffects.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\MummyQuestEffects.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  6
+; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "BlueClipThreshold"
@@ -36,14 +35,13 @@ code size: 28
  19 [-]: SETGLOBAL R4 K7        ; DisplayJar := R4
  20 [-]: SETGLOBAL R4 K8        ; 0x8F194A9F := R4
  21 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
- 22 [-]: CLOSURE   R5 4         ; R5 := closure(Function #5)
- 23 [-]: MOVE      R0 R2        ; R0 := R2
- 24 [-]: SETGLOBAL R5 K9        ; DioramaSuit := R5
- 25 [-]: SETGLOBAL R5 K10       ; 0xDC3D0696 := R5
- 26 [-]: CLOSURE   R5 5         ; R5 := closure(Function #6)
- 27 [-]: SETGLOBAL R5 K11       ; OpenDiorama := R5
- 28 [-]: SETGLOBAL R5 K12       ; 0xADF60638 := R5
- 29 [-]: RETURN    R0 1         ; return 
+ 22 [-]: MOVE      R0 R2        ; R0 := R2
+ 23 [-]: SETGLOBAL R4 K9        ; DioramaSuit := R4
+ 24 [-]: SETGLOBAL R4 K10       ; 0xDC3D0696 := R4
+ 25 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
+ 26 [-]: SETGLOBAL R4 K11       ; OpenDiorama := R4
+ 27 [-]: SETGLOBAL R4 K12       ; 0xADF60638 := R4
+ 28 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -225,7 +223,7 @@ code size: 28
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  11
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gPlayerProfileMgr
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x32D83CC3"]
@@ -297,36 +295,36 @@ code size: 28
  68 [-]: GETUPVAL  R5 U0        ; R5 := U0
  69 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["0x52C8784B"]
  70 [-]: MOVE      R6 R4        ; R6 := R4
- 71 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
- 72 [-]: GETGLOBAL R8 K4        ; R8 := 0x400E7765
- 73 [-]: MOVE      R9 R5        ; R9 := R5
- 74 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 75 [-]: TEST      R8 1         ; if R8 then PC := 93
+ 71 [-]: CALL      R5 2 3       ; R5,R6 := R5(R6)
+ 72 [-]: GETGLOBAL R7 K4        ; R7 := 0x400E7765
+ 73 [-]: MOVE      R8 R5        ; R8 := R5
+ 74 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 75 [-]: TEST      R7 1         ; if R7 then PC := 93
  76 [-]: JMP       93           ; PC := 93
- 77 [-]: GETGLOBAL R8 K16       ; R8 := MummyQuest
- 78 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 93
+ 77 [-]: GETGLOBAL R7 K16       ; R7 := MummyQuest
+ 78 [-]: EQ        0 R5 R7      ; if R5 ~= R7 then PC := 93
  79 [-]: JMP       93           ; PC := 93
  80 [-]: LT        0 K17 R6     ; if 2 >= R6 then PC := 93
  81 [-]: JMP       93           ; PC := 93
  82 [-]: LT        0 R6 K18     ; if R6 >= 12 then PC := 93
  83 [-]: JMP       93           ; PC := 93
- 84 [-]: GETGLOBAL R8 K13       ; R8 := jarDeco
- 85 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0x7DBDDA0B"]
- 86 [-]: MOVE      R10 R1       ; R10 := R1
- 87 [-]: MOVE      R11 R1       ; R11 := R1
- 88 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 89 [-]: GETGLOBAL R8 K14       ; R8 := jarAction
- 90 [-]: SELF      R8 R8 K20    ; R9 := R8; R8 := R8["0xC5E91BA6"]
- 91 [-]: CALL      R8 2 1       ; R8(R9)
+ 84 [-]: GETGLOBAL R7 K13       ; R7 := jarDeco
+ 85 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7["0x7DBDDA0B"]
+ 86 [-]: MOVE      R9 R1        ; R9 := R1
+ 87 [-]: MOVE      R10 R1       ; R10 := R1
+ 88 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 89 [-]: GETGLOBAL R7 K14       ; R7 := jarAction
+ 90 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0xC5E91BA6"]
+ 91 [-]: CALL      R7 2 1       ; R7(R8)
  92 [-]: JMP       101          ; PC := 101
- 93 [-]: GETGLOBAL R8 K13       ; R8 := jarDeco
- 94 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0x7DBDDA0B"]
- 95 [-]: MOVE      R10 R0       ; R10 := R0
- 96 [-]: MOVE      R11 R1       ; R11 := R1
- 97 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 98 [-]: GETGLOBAL R8 K14       ; R8 := jarAction
- 99 [-]: SELF      R8 R8 K21    ; R9 := R8; R8 := R8["0x2DB1272F"]
-100 [-]: CALL      R8 2 1       ; R8(R9)
+ 93 [-]: GETGLOBAL R7 K13       ; R7 := jarDeco
+ 94 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7["0x7DBDDA0B"]
+ 95 [-]: MOVE      R9 R0        ; R9 := R0
+ 96 [-]: MOVE      R10 R1       ; R10 := R1
+ 97 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 98 [-]: GETGLOBAL R7 K14       ; R7 := jarAction
+ 99 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7["0x2DB1272F"]
+100 [-]: CALL      R7 2 1       ; R7(R8)
 101 [-]: RETURN    R0 1         ; return 
 
 
@@ -334,35 +332,6 @@ code size: 28
 ;
 ; Name:            
 ; Defined at line: 116
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  11
-
-  1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x15D4DAEE"]
-  2 [-]: GETGLOBAL R4 K1        ; R4 := gEntityType
-  3 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  4 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x328C9B8B"]
-  5 [-]: MOVE      R5 R1        ; R5 := R1
-  6 [-]: CALL      R3 3 1       ; R3(R4,R5)
-  7 [-]: GETGLOBAL R3 K3        ; R3 := 0x63B09107
-  8 [-]: MOVE      R4 R2        ; R4 := R2
-  9 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
- 10 [-]: JMP       16           ; PC := 16
- 11 [-]: EQ        1 R7 R0      ; if R7 == R0 then PC := 16
- 12 [-]: JMP       16           ; PC := 16
- 13 [-]: SELF      R8 R7 K2     ; R9 := R7; R8 := R7["0x328C9B8B"]
- 14 [-]: MOVE      R10 R1       ; R10 := R1
- 15 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 16 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 11; R5 := R6 end
- 17 [-]: JMP       11           ; PC := 11
- 18 [-]: RETURN    R0 1         ; return 
-
-
-; Function #5:
-;
-; Name:            
-; Defined at line: 127
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -390,10 +359,10 @@ code size: 28
  20 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 137
+; Defined at line: 126
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

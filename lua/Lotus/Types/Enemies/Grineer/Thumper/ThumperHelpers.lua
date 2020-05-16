@@ -9,7 +9,7 @@ code size: 182
 code size: 14
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Enemies\Grineer\Thumper\ThumperHelpers.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Enemies\Grineer\Thumper\ThumperHelpers.luac 
 
 ; Name:            
 ; Defined at line: 0

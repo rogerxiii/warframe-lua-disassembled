@@ -4,9 +4,9 @@ code size: 11
 code size: 74
 code size: 41
 code size: 197
-code size: 14
+code size: 17
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Friendly\Pets\KubrowPetBehaviors\KubrowDisarmAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Friendly\Pets\KubrowPetBehaviors\KubrowDisarmAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -442,21 +442,24 @@ code size: 14
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
   2 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0xA559F558"]
   3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  4 [-]: TEST      R4 0         ; if not R4 then PC := 14
-  5 [-]: JMP       14           ; PC := 14
+  4 [-]: TEST      R4 0         ; if not R4 then PC := 17
+  5 [-]: JMP       17           ; PC := 17
   6 [-]: SELF      R4 R1 K2     ; R5 := R1; R4 := R1["0xABD9DD93"]
   7 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  8 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4["0x52111782"]
-  9 [-]: CALL      R4 2 1       ; R4(R5)
- 10 [-]: SELF      R4 R1 K2     ; R5 := R1; R4 := R1["0xABD9DD93"]
- 11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 12 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0xDE46670C"]
- 13 [-]: CALL      R4 2 1       ; R4(R5)
- 14 [-]: RETURN    R0 1         ; return 
+  8 [-]: GETGLOBAL R5 K3        ; R5 := 0x400E7765
+  9 [-]: MOVE      R6 R4        ; R6 := R4
+ 10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 11 [-]: TEST      R5 1         ; if R5 then PC := 17
+ 12 [-]: JMP       17           ; PC := 17
+ 13 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4["0x52111782"]
+ 14 [-]: CALL      R5 2 1       ; R5(R6)
+ 15 [-]: SELF      R5 R4 K5     ; R6 := R4; R5 := R4["0xDE46670C"]
+ 16 [-]: CALL      R5 2 1       ; R5(R6)
+ 17 [-]: RETURN    R0 1         ; return 
 
 

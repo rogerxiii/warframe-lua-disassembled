@@ -1,4 +1,4 @@
-code size: 65
+code size: 64
 code size: 3
 code size: 2
 code size: 85
@@ -7,18 +7,17 @@ code size: 39
 code size: 77
 code size: 591
 code size: 121
-code size: 21
 code size: 80
 code size: 59
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\CodexLite.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\CodexLite.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  21
+; Max Stack Size:  20
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2C00D429
   2 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Types/Lore/Fragments/LoreCardFragments/LoreFragment"
@@ -77,14 +76,13 @@ code size: 59
  55 [-]: SETGLOBAL R19 K12      ; Initialize := R19
  56 [-]: SETGLOBAL R19 K13      ; 0x62648036 := R19
  57 [-]: CLOSURE   R19 8        ; R19 := closure(Function #9)
- 58 [-]: CLOSURE   R20 9        ; R20 := closure(Function #10)
- 59 [-]: MOVE      R0 R9        ; R0 := R9
- 60 [-]: MOVE      R0 R7        ; R0 := R7
- 61 [-]: MOVE      R0 R8        ; R0 := R8
- 62 [-]: MOVE      R0 R18       ; R0 := R18
- 63 [-]: SETGLOBAL R20 K14      ; Update := R20
- 64 [-]: SETGLOBAL R20 K15      ; 0x8C7099E9 := R20
- 65 [-]: RETURN    R0 1         ; return 
+ 58 [-]: MOVE      R0 R9        ; R0 := R9
+ 59 [-]: MOVE      R0 R7        ; R0 := R7
+ 60 [-]: MOVE      R0 R8        ; R0 := R8
+ 61 [-]: MOVE      R0 R18       ; R0 := R18
+ 62 [-]: SETGLOBAL R19 K14      ; Update := R19
+ 63 [-]: SETGLOBAL R19 K15      ; 0x8C7099E9 := R19
+ 64 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -1116,38 +1114,6 @@ code size: 59
 ;
 ; Name:            
 ; Defined at line: 346
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  10
-
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
-  2 [-]: GETGLOBAL R3 K1        ; R3 := gBackgroundRegion
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 21
-  5 [-]: JMP       21           ; PC := 21
-  6 [-]: GETGLOBAL R2 K1        ; R2 := gBackgroundRegion
-  7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0xA76F0612"]
-  8 [-]: MOVE      R4 R0        ; R4 := R0
-  9 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 10 [-]: TEST      R2 0         ; if not R2 then PC := 21
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: LOADK     R3 K3        ; R3 := 1
- 13 [-]: LEN       R4 R2        ; R4 := # R2
- 14 [-]: LOADK     R5 K3        ; R5 := 1
- 15 [-]: FORPREP   R3 20        ; R3 -= R5; PC := 20
- 16 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
- 17 [-]: SELF      R7 R7 K4     ; R8 := R7; R7 := R7["0x7DBDDA0B"]
- 18 [-]: MOVE      R9 R1        ; R9 := R1
- 19 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 20 [-]: FORLOOP   R3 16        ; R3 += R5; if R3 <= R4 then begin PC := 16; R6 := R3 end
- 21 [-]: RETURN    R0 1         ; return 
-
-
-; Function #10:
-;
-; Name:            
-; Defined at line: 357
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1229,16 +1195,16 @@ code size: 59
  74 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
  75 [-]: LOADK     R6 K11       ; R6 := 0.25
  76 [-]: LOADK     R7 K5        ; R7 := 0
- 77 [-]: CLOSURE   R8 0         ; R8 := closure(Function #10.1)
+ 77 [-]: CLOSURE   R8 0         ; R8 := closure(Function #9.1)
  78 [-]: GETUPVAL  R0 U3        ; R0 := U3
  79 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
  80 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10.1:
+; Function #9.1:
 ;
 ; Name:            
-; Defined at line: 371
+; Defined at line: 360
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

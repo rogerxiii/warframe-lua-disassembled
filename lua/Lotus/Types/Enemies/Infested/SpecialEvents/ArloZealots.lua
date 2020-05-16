@@ -6,7 +6,7 @@ code size: 124
 code size: 216
 code size: 793
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Enemies\Infested\SpecialEvents\ArloZealots.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Enemies\Infested\SpecialEvents\ArloZealots.luac 
 
 ; Name:            
 ; Defined at line: 0

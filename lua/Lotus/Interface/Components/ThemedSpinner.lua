@@ -2,7 +2,7 @@ code size: 21
 code size: 117
 code size: 1
 code size: 1
-code size: 58
+code size: 51
 code size: 3
 code size: 13
 code size: 94
@@ -11,9 +11,9 @@ code size: 3
 code size: 3
 code size: 8
 code size: 14
-code size: 115
+code size: 111
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\ThemedSpinner.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\ThemedSpinner.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -204,7 +204,7 @@ code size: 115
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mMovie"]
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mClipName"]
@@ -219,57 +219,50 @@ code size: 115
  11 [-]: GETUPVAL  R5 U0        ; R5 := U0
  12 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["0xDDA3917C"]
  13 [-]: GETGLOBAL R6 K4        ; R6 := Lotus_Game
- 14 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["UIStyle_FloatingContent"]
+ 14 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["UIStyle_FloatingContentHighlight"]
  15 [-]: MOVE      R7 R1        ; R7 := R1
  16 [-]: MOVE      R8 R3        ; R8 := R3
  17 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["0xDDA3917C"]
- 20 [-]: GETGLOBAL R7 K4        ; R7 := Lotus_Game
- 21 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["UIStyle_FloatingContentHighlight"]
- 22 [-]: MOVE      R8 R1        ; R8 := R1
- 23 [-]: MOVE      R9 R3        ; R9 := R3
- 24 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 25 [-]: TEST      R3 1         ; if R3 then PC := 34
- 26 [-]: JMP       34           ; PC := 34
- 27 [-]: LOADK     R4 K8        ; R4 := 0
- 28 [-]: SELF      R7 R1 K9     ; R8 := R1; R7 := R1["0x880196A7"]
- 29 [-]: MOVE      R9 R2        ; R9 := R2
- 30 [-]: LOADK     R10 K10      ; R10 := "Darkener"
- 31 [-]: LOADK     R11 K11      ; R11 := "_alpha"
- 32 [-]: LOADK     R12 K12      ; R12 := 60
- 33 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 34 [-]: SELF      R7 R1 K9     ; R8 := R1; R7 := R1["0x880196A7"]
- 35 [-]: MOVE      R9 R2        ; R9 := R2
- 36 [-]: LOADK     R10 K10      ; R10 := "Darkener"
- 37 [-]: LOADK     R11 K13      ; R11 := "_color"
- 38 [-]: MOVE      R12 R4       ; R12 := R4
- 39 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 40 [-]: SELF      R7 R1 K9     ; R8 := R1; R7 := R1["0x880196A7"]
- 41 [-]: MOVE      R9 R2        ; R9 := R2
- 42 [-]: LOADK     R10 K14      ; R10 := "Diamonds"
- 43 [-]: LOADK     R11 K13      ; R11 := "_color"
- 44 [-]: MOVE      R12 R6       ; R12 := R6
- 45 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 46 [-]: SELF      R7 R1 K9     ; R8 := R1; R7 := R1["0x880196A7"]
- 47 [-]: MOVE      R9 R2        ; R9 := R2
- 48 [-]: LOADK     R10 K15      ; R10 := "LeftLoom"
- 49 [-]: LOADK     R11 K13      ; R11 := "_color"
- 50 [-]: MOVE      R12 R6       ; R12 := R6
- 51 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 52 [-]: SELF      R7 R1 K9     ; R8 := R1; R7 := R1["0x880196A7"]
- 53 [-]: MOVE      R9 R2        ; R9 := R2
- 54 [-]: LOADK     R10 K16      ; R10 := "RightLoom"
- 55 [-]: LOADK     R11 K13      ; R11 := "_color"
- 56 [-]: MOVE      R12 R6       ; R12 := R6
- 57 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 58 [-]: RETURN    R0 1         ; return 
+ 18 [-]: TEST      R3 1         ; if R3 then PC := 27
+ 19 [-]: JMP       27           ; PC := 27
+ 20 [-]: LOADK     R4 K7        ; R4 := 0
+ 21 [-]: SELF      R6 R1 K8     ; R7 := R1; R6 := R1["0x880196A7"]
+ 22 [-]: MOVE      R8 R2        ; R8 := R2
+ 23 [-]: LOADK     R9 K9        ; R9 := "Darkener"
+ 24 [-]: LOADK     R10 K10      ; R10 := "_alpha"
+ 25 [-]: LOADK     R11 K11      ; R11 := 60
+ 26 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 27 [-]: SELF      R6 R1 K8     ; R7 := R1; R6 := R1["0x880196A7"]
+ 28 [-]: MOVE      R8 R2        ; R8 := R2
+ 29 [-]: LOADK     R9 K9        ; R9 := "Darkener"
+ 30 [-]: LOADK     R10 K12      ; R10 := "_color"
+ 31 [-]: MOVE      R11 R4       ; R11 := R4
+ 32 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 33 [-]: SELF      R6 R1 K8     ; R7 := R1; R6 := R1["0x880196A7"]
+ 34 [-]: MOVE      R8 R2        ; R8 := R2
+ 35 [-]: LOADK     R9 K13       ; R9 := "Diamonds"
+ 36 [-]: LOADK     R10 K12      ; R10 := "_color"
+ 37 [-]: MOVE      R11 R5       ; R11 := R5
+ 38 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 39 [-]: SELF      R6 R1 K8     ; R7 := R1; R6 := R1["0x880196A7"]
+ 40 [-]: MOVE      R8 R2        ; R8 := R2
+ 41 [-]: LOADK     R9 K14       ; R9 := "LeftLoom"
+ 42 [-]: LOADK     R10 K12      ; R10 := "_color"
+ 43 [-]: MOVE      R11 R5       ; R11 := R5
+ 44 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 45 [-]: SELF      R6 R1 K8     ; R7 := R1; R6 := R1["0x880196A7"]
+ 46 [-]: MOVE      R8 R2        ; R8 := R2
+ 47 [-]: LOADK     R9 K15       ; R9 := "RightLoom"
+ 48 [-]: LOADK     R10 K12      ; R10 := "_color"
+ 49 [-]: MOVE      R11 R5       ; R11 := R5
+ 50 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.4:
 ;
 ; Name:            
-; Defined at line: 51
+; Defined at line: 50
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -283,7 +276,7 @@ code size: 115
 ; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 56
+; Defined at line: 55
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -307,7 +300,7 @@ code size: 115
 ; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 63
+; Defined at line: 62
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -412,7 +405,7 @@ code size: 115
 ; Function #1.6.1:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 87
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -444,7 +437,7 @@ code size: 115
 ; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 102
+; Defined at line: 101
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -458,7 +451,7 @@ code size: 115
 ; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 107
+; Defined at line: 106
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -472,7 +465,7 @@ code size: 115
 ; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 112
+; Defined at line: 111
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -491,7 +484,7 @@ code size: 115
 ; Function #1.10:
 ;
 ; Name:            
-; Defined at line: 117
+; Defined at line: 116
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -516,11 +509,11 @@ code size: 115
 ; Function #1.11:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 123
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  26
+; Max Stack Size:  24
 
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mActive"]
   2 [-]: TEST      R2 0         ; if not R2 then PC := 7
@@ -538,104 +531,100 @@ code size: 115
  14 [-]: LOADK     R5 K6        ; R5 := ".RightLoom"
  15 [-]: SETLIST   R3 2 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 2
  16 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
- 17 [-]: JMP       113          ; PC := 113
+ 17 [-]: JMP       109          ; PC := 109
  18 [-]: GETTABLE  R7 R0 K7     ; R7 := R0["mClipName"]
  19 [-]: MOVE      R8 R6        ; R8 := R6
  20 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 21 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 22 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["0x6741B442"]
- 23 [-]: GETTABLE  R9 R0 K9     ; R9 := R0["mMovie"]
- 24 [-]: CALL      R8 2 3       ; R8,R9 := R8(R9)
- 25 [-]: GETGLOBAL R10 K10      ; R10 := 0xF595ADDE
- 26 [-]: GETTABLE  R11 R0 K9    ; R11 := R0["mMovie"]
- 27 [-]: SELF      R11 R11 K11  ; R12 := R11; R11 := R11["0x6B7B470B"]
- 28 [-]: MOVE      R13 R7       ; R13 := R7
- 29 [-]: LOADK     R14 K12      ; R14 := ".Flare1"
- 30 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 31 [-]: LOADK     R14 K13      ; R14 := "_x"
- 32 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
- 33 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 34 [-]: GETGLOBAL R11 K10      ; R11 := 0xF595ADDE
- 35 [-]: GETTABLE  R12 R0 K9    ; R12 := R0["mMovie"]
- 36 [-]: SELF      R12 R12 K11  ; R13 := R12; R12 := R12["0x6B7B470B"]
- 37 [-]: MOVE      R14 R7       ; R14 := R7
- 38 [-]: LOADK     R15 K14      ; R15 := ".BackCap1"
- 39 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
- 40 [-]: LOADK     R15 K13      ; R15 := "_x"
- 41 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
- 42 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
- 43 [-]: EQ        1 R10 K2     ; if R10 == nil then PC := 108
- 44 [-]: JMP       108          ; PC := 108
- 45 [-]: EQ        1 R11 K2     ; if R11 == nil then PC := 108
- 46 [-]: JMP       108          ; PC := 108
- 47 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 48 [-]: GETTABLE  R12 R12 K15  ; R12 := R12["0xF81722A2"]
- 49 [-]: LT        1 R11 R10    ; if R11 < R10 then PC := 52
- 50 [-]: JMP       52           ; PC := 52
- 51 [-]: MOVE      R13 R0       ; R13 := R0
- 52 [-]: MOVE      R13 R1       ; R13 := R1
- 53 [-]: MOVE      R14 R11      ; R14 := R11
- 54 [-]: MOVE      R15 R10      ; R15 := R10
- 55 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
- 56 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 57 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["0xF81722A2"]
- 58 [-]: LT        1 R11 R10    ; if R11 < R10 then PC := 61
- 59 [-]: JMP       61           ; PC := 61
- 60 [-]: MOVE      R14 R0       ; R14 := R0
- 61 [-]: MOVE      R14 R1       ; R14 := R1
- 62 [-]: MOVE      R15 R10      ; R15 := R10
- 63 [-]: MOVE      R16 R11      ; R16 := R11
- 64 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
- 65 [-]: SUB       R14 R13 R12  ; R14 := R13 - R12
- 66 [-]: MUL       R15 R14 K16  ; R15 := R14 * 0.5
- 67 [-]: ADD       R15 R12 R15  ; R15 := R12 + R15
- 68 [-]: DIV       R15 R15 K17  ; R15 := R15 / 512
- 69 [-]: ADD       R15 R15 K16  ; R15 := R15 + 0.5
- 70 [-]: MUL       R16 R14 K16  ; R16 := R14 * 0.5
- 71 [-]: ADD       R16 R16 K18  ; R16 := R16 + 20
- 72 [-]: DIV       R16 R16 K17  ; R16 := R16 / 512
- 73 [-]: LOADK     R17 K19      ; R17 := 0.01953125
- 74 [-]: GETTABLE  R18 R0 K9    ; R18 := R0["mMovie"]
- 75 [-]: SELF      R18 R18 K20  ; R19 := R18; R18 := R18["0x302AAB2F"]
- 76 [-]: MOVE      R20 R7       ; R20 := R7
- 77 [-]: LOADK     R21 K21      ; R21 := ".Loom"
- 78 [-]: CONCAT    R20 R20 R21  ; R20 := R20 .. R21
- 79 [-]: LOADK     R21 K22      ; R21 := "VisibilityCenter"
- 80 [-]: MOVE      R22 R15      ; R22 := R15
- 81 [-]: LOADK     R23 K3       ; R23 := 0
- 82 [-]: LOADK     R24 K3       ; R24 := 0
- 83 [-]: LOADK     R25 K3       ; R25 := 0
- 84 [-]: CALL      R18 8 1      ; R18(R19,R20,R21,R22,R23,R24,R25)
- 85 [-]: GETTABLE  R18 R0 K9    ; R18 := R0["mMovie"]
- 86 [-]: SELF      R18 R18 K20  ; R19 := R18; R18 := R18["0x302AAB2F"]
- 87 [-]: MOVE      R20 R7       ; R20 := R7
- 88 [-]: LOADK     R21 K21      ; R21 := ".Loom"
- 89 [-]: CONCAT    R20 R20 R21  ; R20 := R20 .. R21
- 90 [-]: LOADK     R21 K23      ; R21 := "VisibilitySize"
- 91 [-]: MOVE      R22 R16      ; R22 := R16
- 92 [-]: LOADK     R23 K3       ; R23 := 0
- 93 [-]: LOADK     R24 K3       ; R24 := 0
- 94 [-]: LOADK     R25 K3       ; R25 := 0
- 95 [-]: CALL      R18 8 1      ; R18(R19,R20,R21,R22,R23,R24,R25)
- 96 [-]: GETTABLE  R18 R0 K9    ; R18 := R0["mMovie"]
- 97 [-]: SELF      R18 R18 K20  ; R19 := R18; R18 := R18["0x302AAB2F"]
- 98 [-]: MOVE      R20 R7       ; R20 := R7
- 99 [-]: LOADK     R21 K21      ; R21 := ".Loom"
-100 [-]: CONCAT    R20 R20 R21  ; R20 := R20 .. R21
-101 [-]: LOADK     R21 K24      ; R21 := "VisibilityFadeSize"
-102 [-]: MOVE      R22 R17      ; R22 := R17
-103 [-]: LOADK     R23 K3       ; R23 := 0
-104 [-]: LOADK     R24 K3       ; R24 := 0
-105 [-]: LOADK     R25 K3       ; R25 := 0
-106 [-]: CALL      R18 8 1      ; R18(R19,R20,R21,R22,R23,R24,R25)
-107 [-]: JMP       113          ; PC := 113
-108 [-]: GETGLOBAL R18 K25      ; R18 := 0x93B1256B
-109 [-]: LOADK     R19 K26      ; R19 := "Outdated spinner: "
-110 [-]: GETTABLE  R20 R0 K7    ; R20 := R0["mClipName"]
-111 [-]: CONCAT    R19 R19 R20  ; R19 := R19 .. R20
-112 [-]: CALL      R18 2 1      ; R18(R19)
-113 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 18; R4 := R5 end
-114 [-]: JMP       18           ; PC := 18
-115 [-]: RETURN    R0 1         ; return 
+ 21 [-]: GETGLOBAL R8 K8        ; R8 := 0xF595ADDE
+ 22 [-]: GETTABLE  R9 R0 K9     ; R9 := R0["mMovie"]
+ 23 [-]: SELF      R9 R9 K10    ; R10 := R9; R9 := R9["0x6B7B470B"]
+ 24 [-]: MOVE      R11 R7       ; R11 := R7
+ 25 [-]: LOADK     R12 K11      ; R12 := ".Flare1"
+ 26 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
+ 27 [-]: LOADK     R12 K12      ; R12 := "_x"
+ 28 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+ 29 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+ 30 [-]: GETGLOBAL R9 K8        ; R9 := 0xF595ADDE
+ 31 [-]: GETTABLE  R10 R0 K9    ; R10 := R0["mMovie"]
+ 32 [-]: SELF      R10 R10 K10  ; R11 := R10; R10 := R10["0x6B7B470B"]
+ 33 [-]: MOVE      R12 R7       ; R12 := R7
+ 34 [-]: LOADK     R13 K13      ; R13 := ".BackCap1"
+ 35 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+ 36 [-]: LOADK     R13 K12      ; R13 := "_x"
+ 37 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+ 38 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
+ 39 [-]: EQ        1 R8 K2      ; if R8 == nil then PC := 104
+ 40 [-]: JMP       104          ; PC := 104
+ 41 [-]: EQ        1 R9 K2      ; if R9 == nil then PC := 104
+ 42 [-]: JMP       104          ; PC := 104
+ 43 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 44 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["0xF81722A2"]
+ 45 [-]: LT        1 R9 R8      ; if R9 < R8 then PC := 48
+ 46 [-]: JMP       48           ; PC := 48
+ 47 [-]: MOVE      R11 R0       ; R11 := R0
+ 48 [-]: MOVE      R11 R1       ; R11 := R1
+ 49 [-]: MOVE      R12 R9       ; R12 := R9
+ 50 [-]: MOVE      R13 R8       ; R13 := R8
+ 51 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
+ 52 [-]: GETUPVAL  R11 U0       ; R11 := U0
+ 53 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["0xF81722A2"]
+ 54 [-]: LT        1 R9 R8      ; if R9 < R8 then PC := 57
+ 55 [-]: JMP       57           ; PC := 57
+ 56 [-]: MOVE      R12 R0       ; R12 := R0
+ 57 [-]: MOVE      R12 R1       ; R12 := R1
+ 58 [-]: MOVE      R13 R8       ; R13 := R8
+ 59 [-]: MOVE      R14 R9       ; R14 := R9
+ 60 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
+ 61 [-]: SUB       R12 R11 R10  ; R12 := R11 - R10
+ 62 [-]: MUL       R13 R12 K15  ; R13 := R12 * 0.5
+ 63 [-]: ADD       R13 R10 R13  ; R13 := R10 + R13
+ 64 [-]: DIV       R13 R13 K16  ; R13 := R13 / 512
+ 65 [-]: ADD       R13 R13 K15  ; R13 := R13 + 0.5
+ 66 [-]: MUL       R14 R12 K15  ; R14 := R12 * 0.5
+ 67 [-]: ADD       R14 R14 K17  ; R14 := R14 + 20
+ 68 [-]: DIV       R14 R14 K16  ; R14 := R14 / 512
+ 69 [-]: LOADK     R15 K18      ; R15 := 0.01953125
+ 70 [-]: GETTABLE  R16 R0 K9    ; R16 := R0["mMovie"]
+ 71 [-]: SELF      R16 R16 K19  ; R17 := R16; R16 := R16["0x302AAB2F"]
+ 72 [-]: MOVE      R18 R7       ; R18 := R7
+ 73 [-]: LOADK     R19 K20      ; R19 := ".Loom"
+ 74 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
+ 75 [-]: LOADK     R19 K21      ; R19 := "VisibilityCenter"
+ 76 [-]: MOVE      R20 R13      ; R20 := R13
+ 77 [-]: LOADK     R21 K3       ; R21 := 0
+ 78 [-]: LOADK     R22 K3       ; R22 := 0
+ 79 [-]: LOADK     R23 K3       ; R23 := 0
+ 80 [-]: CALL      R16 8 1      ; R16(R17,R18,R19,R20,R21,R22,R23)
+ 81 [-]: GETTABLE  R16 R0 K9    ; R16 := R0["mMovie"]
+ 82 [-]: SELF      R16 R16 K19  ; R17 := R16; R16 := R16["0x302AAB2F"]
+ 83 [-]: MOVE      R18 R7       ; R18 := R7
+ 84 [-]: LOADK     R19 K20      ; R19 := ".Loom"
+ 85 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
+ 86 [-]: LOADK     R19 K22      ; R19 := "VisibilitySize"
+ 87 [-]: MOVE      R20 R14      ; R20 := R14
+ 88 [-]: LOADK     R21 K3       ; R21 := 0
+ 89 [-]: LOADK     R22 K3       ; R22 := 0
+ 90 [-]: LOADK     R23 K3       ; R23 := 0
+ 91 [-]: CALL      R16 8 1      ; R16(R17,R18,R19,R20,R21,R22,R23)
+ 92 [-]: GETTABLE  R16 R0 K9    ; R16 := R0["mMovie"]
+ 93 [-]: SELF      R16 R16 K19  ; R17 := R16; R16 := R16["0x302AAB2F"]
+ 94 [-]: MOVE      R18 R7       ; R18 := R7
+ 95 [-]: LOADK     R19 K20      ; R19 := ".Loom"
+ 96 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
+ 97 [-]: LOADK     R19 K23      ; R19 := "VisibilityFadeSize"
+ 98 [-]: MOVE      R20 R15      ; R20 := R15
+ 99 [-]: LOADK     R21 K3       ; R21 := 0
+100 [-]: LOADK     R22 K3       ; R22 := 0
+101 [-]: LOADK     R23 K3       ; R23 := 0
+102 [-]: CALL      R16 8 1      ; R16(R17,R18,R19,R20,R21,R22,R23)
+103 [-]: JMP       109          ; PC := 109
+104 [-]: GETGLOBAL R16 K24      ; R16 := 0x93B1256B
+105 [-]: LOADK     R17 K25      ; R17 := "Outdated spinner: "
+106 [-]: GETTABLE  R18 R0 K7    ; R18 := R0["mClipName"]
+107 [-]: CONCAT    R17 R17 R18  ; R17 := R17 .. R18
+108 [-]: CALL      R16 2 1      ; R16(R17)
+109 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 18; R4 := R5 end
+110 [-]: JMP       18           ; PC := 18
+111 [-]: RETURN    R0 1         ; return 
 
 

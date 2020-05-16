@@ -13,7 +13,7 @@ code size: 5
 code size: 16
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\PurchaseCelebration.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\PurchaseCelebration.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -403,7 +403,7 @@ code size: 3
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0xD1BD9D6"]
   3 [-]: GETGLOBAL R1 K1        ; R1 := mMovie
-  4 [-]: LOADK     R2 K2        ; R2 := "LabelContainer"
+  4 [-]: LOADK     R2 K2        ; R2 := "Logo"
   5 [-]: GETGLOBAL R3 K3        ; R3 := purchaseEffect
   6 [-]: LOADK     R4 K4        ; R4 := 0
   7 [-]: LOADK     R5 K4        ; R5 := 0

@@ -2,7 +2,7 @@ code size: 184
 code size: 89
 code size: 60
 code size: 44
-code size: 34
+code size: 42
 code size: 104
 code size: 68
 code size: 28
@@ -18,7 +18,7 @@ code size: 75
 code size: 49
 code size: 47
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\Speed.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\Speed.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -452,36 +452,44 @@ code size: 47
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
   3 [-]: SELF      R3 R2 K1     ; R4 := R2; R3 := R2["0x6978AC59"]
   4 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  5 [-]: SELF      R4 R3 K2     ; R5 := R3; R4 := R3["0xE2B32C65"]
-  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
-  8 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["PowerSuit_AUGMENT_ONE"]
-  9 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 20
- 10 [-]: JMP       20           ; PC := 20
- 11 [-]: SELF      R5 R2 K5     ; R6 := R2; R5 := R2["0xC7EA8CA1"]
- 12 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 13 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 14 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["AVATAR_ABILITY_STRENGTH"]
- 15 [-]: MOVE      R9 R4        ; R9 := R4
- 16 [-]: MOVE      R10 R3       ; R10 := R3
- 17 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
- 18 [-]: RETURN    R5 0         ; return R5,...
- 19 [-]: JMP       32           ; PC := 32
- 20 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
- 21 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["PowerSuit_AUGMENT_PVP_ONE"]
- 22 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 32
- 23 [-]: JMP       32           ; PC := 32
- 24 [-]: SELF      R5 R2 K5     ; R6 := R2; R5 := R2["0xC7EA8CA1"]
- 25 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 26 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 27 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["AVATAR_ABILITY_DURATION"]
- 28 [-]: MOVE      R9 R4        ; R9 := R4
- 29 [-]: MOVE      R10 R3       ; R10 := R3
- 30 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
- 31 [-]: RETURN    R5 0         ; return R5,...
- 32 [-]: LOADNIL   R5 R5        ; R5 := nil
- 33 [-]: RETURN    R5 2         ; return R5
- 34 [-]: RETURN    R0 1         ; return 
+  5 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+  6 [-]: MOVE      R5 R3        ; R5 := R3
+  7 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  8 [-]: TEST      R4 1         ; if R4 then PC := 14
+  9 [-]: JMP       14           ; PC := 14
+ 10 [-]: SELF      R4 R3 K3     ; R5 := R3; R4 := R3["0xE2B32C65"]
+ 11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 12 [-]: TEST      R4 1         ; if R4 then PC := 15
+ 13 [-]: JMP       15           ; PC := 15
+ 14 [-]: LOADNIL   R4 R4        ; R4 := nil
+ 15 [-]: GETGLOBAL R5 K4        ; R5 := Lotus_Game
+ 16 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["PowerSuit_AUGMENT_ONE"]
+ 17 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 28
+ 18 [-]: JMP       28           ; PC := 28
+ 19 [-]: SELF      R5 R2 K6     ; R6 := R2; R5 := R2["0xC7EA8CA1"]
+ 20 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 21 [-]: GETGLOBAL R8 K7        ; R8 := Game
+ 22 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["AVATAR_ABILITY_STRENGTH"]
+ 23 [-]: MOVE      R9 R4        ; R9 := R4
+ 24 [-]: MOVE      R10 R3       ; R10 := R3
+ 25 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
+ 26 [-]: RETURN    R5 0         ; return R5,...
+ 27 [-]: JMP       40           ; PC := 40
+ 28 [-]: GETGLOBAL R5 K4        ; R5 := Lotus_Game
+ 29 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["PowerSuit_AUGMENT_PVP_ONE"]
+ 30 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 40
+ 31 [-]: JMP       40           ; PC := 40
+ 32 [-]: SELF      R5 R2 K6     ; R6 := R2; R5 := R2["0xC7EA8CA1"]
+ 33 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 34 [-]: GETGLOBAL R8 K7        ; R8 := Game
+ 35 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["AVATAR_ABILITY_DURATION"]
+ 36 [-]: MOVE      R9 R4        ; R9 := R4
+ 37 [-]: MOVE      R10 R3       ; R10 := R3
+ 38 [-]: TAILCALL  R5 6 0       ; R5,... := R5(R6,R7,R8,R9,R10)
+ 39 [-]: RETURN    R5 0         ; return R5,...
+ 40 [-]: LOADNIL   R5 R5        ; R5 := nil
+ 41 [-]: RETURN    R5 2         ; return R5
+ 42 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:

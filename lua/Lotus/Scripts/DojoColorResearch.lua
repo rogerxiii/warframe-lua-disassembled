@@ -2,10 +2,10 @@ code size: 31
 code size: 23
 code size: 9
 code size: 22
-code size: 131
+code size: 137
 code size: 69
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\DojoColorResearch.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\DojoColorResearch.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -167,113 +167,119 @@ code size: 69
  22 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
  23 [-]: MOVE      R4 R1        ; R4 := R1
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 25 [-]: TEST      R3 1         ; if R3 then PC := 131
- 26 [-]: JMP       131          ; PC := 131
+ 25 [-]: TEST      R3 1         ; if R3 then PC := 137
+ 26 [-]: JMP       137          ; PC := 137
  27 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1["0xB17D5F27"]
  28 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  29 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
  30 [-]: MOVE      R5 R3        ; R5 := R3
  31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 32 [-]: TEST      R4 1         ; if R4 then PC := 131
- 33 [-]: JMP       131          ; PC := 131
- 34 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3["0x6E0050E0"]
- 35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 36 [-]: GETGLOBAL R5 K7        ; R5 := 0x2C00D429
- 37 [-]: LOADK     R6 K8        ; R6 := "/Lotus/Types/Items/MiscItems/ResourceItem"
- 38 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 39 [-]: SELF      R6 R1 K9     ; R7 := R1; R6 := R1["0x80B14403"]
- 40 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 41 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6["0x8DB5D01F"]
- 42 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 43 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0xC7EA8CA1"]
- 44 [-]: MOVE      R8 R4        ; R8 := R4
- 45 [-]: GETGLOBAL R9 K12       ; R9 := Game
- 46 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["GAMEPLAY_PICKUP_AMOUNT"]
- 47 [-]: MOVE      R10 R5       ; R10 := R5
- 48 [-]: LOADNIL   R11 R11      ; R11 := nil
- 49 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
- 50 [-]: MOVE      R4 R6        ; R4 := R6
- 51 [-]: SELF      R6 R1 K9     ; R7 := R1; R6 := R1["0x80B14403"]
- 52 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 53 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6["0x8DB5D01F"]
- 54 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 55 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0xC7EA8CA1"]
- 56 [-]: MOVE      R8 R4        ; R8 := R4
- 57 [-]: GETGLOBAL R9 K12       ; R9 := Game
- 58 [-]: GETTABLE  R9 R9 K14    ; R9 := R9["GAMEPLAY_PICKUP_RATE"]
- 59 [-]: MOVE      R10 R5       ; R10 := R5
- 60 [-]: LOADNIL   R11 R11      ; R11 := nil
- 61 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
- 62 [-]: MOVE      R4 R6        ; R4 := R6
- 63 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 64 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["0xB57E56DF"]
- 65 [-]: MOVE      R7 R4        ; R7 := R4
- 66 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 67 [-]: MOVE      R4 R6        ; R4 := R6
- 68 [-]: SELF      R6 R0 K16    ; R7 := R0; R6 := R0["0xF9A1DDCE"]
- 69 [-]: MOVE      R8 R4        ; R8 := R4
- 70 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 71 [-]: SELF      R6 R3 K17    ; R7 := R3; R6 := R3["0xDDA3917C"]
+ 32 [-]: TEST      R4 1         ; if R4 then PC := 137
+ 33 [-]: JMP       137          ; PC := 137
+ 34 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 35 [-]: SELF      R5 R1 K6     ; R6 := R1; R5 := R1["0x80B14403"]
+ 36 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 37 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+ 38 [-]: TEST      R4 1         ; if R4 then PC := 137
+ 39 [-]: JMP       137          ; PC := 137
+ 40 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3["0x6E0050E0"]
+ 41 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 42 [-]: GETGLOBAL R5 K8        ; R5 := 0x2C00D429
+ 43 [-]: LOADK     R6 K9        ; R6 := "/Lotus/Types/Items/MiscItems/ResourceItem"
+ 44 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 45 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1["0x80B14403"]
+ 46 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 47 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6["0x8DB5D01F"]
+ 48 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 49 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0xC7EA8CA1"]
+ 50 [-]: MOVE      R8 R4        ; R8 := R4
+ 51 [-]: GETGLOBAL R9 K12       ; R9 := Game
+ 52 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["GAMEPLAY_PICKUP_AMOUNT"]
+ 53 [-]: MOVE      R10 R5       ; R10 := R5
+ 54 [-]: LOADNIL   R11 R11      ; R11 := nil
+ 55 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
+ 56 [-]: MOVE      R4 R6        ; R4 := R6
+ 57 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1["0x80B14403"]
+ 58 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 59 [-]: SELF      R6 R6 K10    ; R7 := R6; R6 := R6["0x8DB5D01F"]
+ 60 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 61 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0xC7EA8CA1"]
+ 62 [-]: MOVE      R8 R4        ; R8 := R4
+ 63 [-]: GETGLOBAL R9 K12       ; R9 := Game
+ 64 [-]: GETTABLE  R9 R9 K14    ; R9 := R9["GAMEPLAY_PICKUP_RATE"]
+ 65 [-]: MOVE      R10 R5       ; R10 := R5
+ 66 [-]: LOADNIL   R11 R11      ; R11 := nil
+ 67 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
+ 68 [-]: MOVE      R4 R6        ; R4 := R6
+ 69 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 70 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["0xB57E56DF"]
+ 71 [-]: MOVE      R7 R4        ; R7 := R4
  72 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 73 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0["0xD124E361"]
- 74 [-]: GETGLOBAL R9 K19       ; R9 := Lotus_Game
- 75 [-]: GETTABLE  R9 R9 K20    ; R9 := R9["EMISSIVE_TINT_COLOR"]
- 76 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 77 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["0x767F3616"]
- 78 [-]: GETTABLE  R11 R6 K22   ; R11 := R6["red"]
- 79 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 80 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 81 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["0x767F3616"]
- 82 [-]: GETTABLE  R12 R6 K23   ; R12 := R6["green"]
- 83 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 84 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 85 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["0x767F3616"]
- 86 [-]: GETTABLE  R13 R6 K24   ; R13 := R6["blue"]
- 87 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 88 [-]: LOADK     R13 K25      ; R13 := 1
- 89 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 90 [-]: SETTABLE  R6 K26 K27   ; R6["alpha"] := 255
- 91 [-]: LOADK     R7 K25       ; R7 := 1
- 92 [-]: GETGLOBAL R8 K28       ; R8 := pickupEffects
- 93 [-]: LEN       R8 R8        ; R8 := # R8
- 94 [-]: LOADK     R9 K25       ; R9 := 1
- 95 [-]: FORPREP   R7 130       ; R7 -= R9; PC := 130
- 96 [-]: SELF      R11 R0 K29   ; R12 := R0; R11 := R0["0xAB436EF2"]
- 97 [-]: GETGLOBAL R13 K28      ; R13 := pickupEffects
- 98 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 99 [-]: GETGLOBAL R14 K30      ; R14 := EMPTY_SYMBOL
-100 [-]: GETUPVAL  R15 U2       ; R15 := U2
-101 [-]: CALL      R11 5 2      ; R11 := R11(R12,R13,R14,R15)
-102 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
-103 [-]: MOVE      R13 R11      ; R13 := R11
-104 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-105 [-]: TEST      R12 1        ; if R12 then PC := 130
-106 [-]: JMP       130          ; PC := 130
-107 [-]: SELF      R12 R11 K31  ; R13 := R11; R12 := R11["0x8B598ED4"]
-108 [-]: GETGLOBAL R14 K32      ; R14 := gLensFlareType
-109 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-110 [-]: TEST      R12 0        ; if not R12 then PC := 116
-111 [-]: JMP       116          ; PC := 116
-112 [-]: SELF      R12 R11 K33  ; R13 := R11; R12 := R11["0xA20F64C0"]
-113 [-]: MOVE      R14 R6       ; R14 := R6
-114 [-]: CALL      R12 3 1      ; R12(R13,R14)
-115 [-]: JMP       130          ; PC := 130
-116 [-]: SELF      R12 R11 K31  ; R13 := R11; R12 := R11["0x8B598ED4"]
-117 [-]: GETGLOBAL R14 K34      ; R14 := gParticleSysType
-118 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-119 [-]: TEST      R12 0        ; if not R12 then PC := 130
-120 [-]: JMP       130          ; PC := 130
-121 [-]: SELF      R12 R11 K35  ; R13 := R11; R12 := R11["0x408A179A"]
-122 [-]: MOVE      R14 R6       ; R14 := R6
-123 [-]: MOVE      R15 R6       ; R15 := R6
-124 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-125 [-]: GETUPVAL  R12 U1       ; R12 := U1
-126 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["0xBC9D6DBC"]
-127 [-]: MOVE      R13 R11      ; R13 := R11
+ 73 [-]: MOVE      R4 R6        ; R4 := R6
+ 74 [-]: SELF      R6 R0 K16    ; R7 := R0; R6 := R0["0xF9A1DDCE"]
+ 75 [-]: MOVE      R8 R4        ; R8 := R4
+ 76 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 77 [-]: SELF      R6 R3 K17    ; R7 := R3; R6 := R3["0xDDA3917C"]
+ 78 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 79 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0["0xD124E361"]
+ 80 [-]: GETGLOBAL R9 K19       ; R9 := Lotus_Game
+ 81 [-]: GETTABLE  R9 R9 K20    ; R9 := R9["EMISSIVE_TINT_COLOR"]
+ 82 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 83 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["0x767F3616"]
+ 84 [-]: GETTABLE  R11 R6 K22   ; R11 := R6["red"]
+ 85 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 86 [-]: GETUPVAL  R11 U1       ; R11 := U1
+ 87 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["0x767F3616"]
+ 88 [-]: GETTABLE  R12 R6 K23   ; R12 := R6["green"]
+ 89 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 90 [-]: GETUPVAL  R12 U1       ; R12 := U1
+ 91 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["0x767F3616"]
+ 92 [-]: GETTABLE  R13 R6 K24   ; R13 := R6["blue"]
+ 93 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 94 [-]: LOADK     R13 K25      ; R13 := 1
+ 95 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
+ 96 [-]: SETTABLE  R6 K26 K27   ; R6["alpha"] := 255
+ 97 [-]: LOADK     R7 K25       ; R7 := 1
+ 98 [-]: GETGLOBAL R8 K28       ; R8 := pickupEffects
+ 99 [-]: LEN       R8 R8        ; R8 := # R8
+100 [-]: LOADK     R9 K25       ; R9 := 1
+101 [-]: FORPREP   R7 136       ; R7 -= R9; PC := 136
+102 [-]: SELF      R11 R0 K29   ; R12 := R0; R11 := R0["0xAB436EF2"]
+103 [-]: GETGLOBAL R13 K28      ; R13 := pickupEffects
+104 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
+105 [-]: GETGLOBAL R14 K30      ; R14 := EMPTY_SYMBOL
+106 [-]: GETUPVAL  R15 U2       ; R15 := U2
+107 [-]: CALL      R11 5 2      ; R11 := R11(R12,R13,R14,R15)
+108 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
+109 [-]: MOVE      R13 R11      ; R13 := R11
+110 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+111 [-]: TEST      R12 1        ; if R12 then PC := 136
+112 [-]: JMP       136          ; PC := 136
+113 [-]: SELF      R12 R11 K31  ; R13 := R11; R12 := R11["0x8B598ED4"]
+114 [-]: GETGLOBAL R14 K32      ; R14 := gLensFlareType
+115 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+116 [-]: TEST      R12 0        ; if not R12 then PC := 122
+117 [-]: JMP       122          ; PC := 122
+118 [-]: SELF      R12 R11 K33  ; R13 := R11; R12 := R11["0xA20F64C0"]
+119 [-]: MOVE      R14 R6       ; R14 := R6
+120 [-]: CALL      R12 3 1      ; R12(R13,R14)
+121 [-]: JMP       136          ; PC := 136
+122 [-]: SELF      R12 R11 K31  ; R13 := R11; R12 := R11["0x8B598ED4"]
+123 [-]: GETGLOBAL R14 K34      ; R14 := gParticleSysType
+124 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+125 [-]: TEST      R12 0        ; if not R12 then PC := 136
+126 [-]: JMP       136          ; PC := 136
+127 [-]: SELF      R12 R11 K35  ; R13 := R11; R12 := R11["0x408A179A"]
 128 [-]: MOVE      R14 R6       ; R14 := R6
-129 [-]: CALL      R12 3 1      ; R12(R13,R14)
-130 [-]: FORLOOP   R7 96        ; R7 += R9; if R7 <= R8 then begin PC := 96; R10 := R7 end
-131 [-]: RETURN    R0 1         ; return 
+129 [-]: MOVE      R15 R6       ; R15 := R6
+130 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+131 [-]: GETUPVAL  R12 U1       ; R12 := U1
+132 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["0xBC9D6DBC"]
+133 [-]: MOVE      R13 R11      ; R13 := R11
+134 [-]: MOVE      R14 R6       ; R14 := R6
+135 [-]: CALL      R12 3 1      ; R12(R13,R14)
+136 [-]: FORLOOP   R7 102       ; R7 += R9; if R7 <= R8 then begin PC := 102; R10 := R7 end
+137 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:

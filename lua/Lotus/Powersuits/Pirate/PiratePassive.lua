@@ -6,7 +6,7 @@ code size: 26
 code size: 153
 code size: 13
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Pirate\PiratePassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Pirate\PiratePassive.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -188,160 +188,160 @@ code size: 13
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  17
 
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  2 [-]: CALL      R3 1 3       ; R3,R4 := R3()
+  2 [-]: CALL      R3 1 2       ; R3 := R3()
   3 [-]: EQ        1 R2 K0      ; if R2 == "MeleeSlam" then PC := 7
   4 [-]: JMP       7            ; PC := 7
   5 [-]: EQ        0 R2 K1      ; if R2 ~= "HeavySlam" then PC := 153
   6 [-]: JMP       153          ; PC := 153
-  7 [-]: GETGLOBAL R5 K2        ; R5 := 0x8C4A6742
-  8 [-]: LOADK     R6 K3        ; R6 := 0
-  9 [-]: LOADK     R7 K4        ; R7 := 1
- 10 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 11 [-]: LT        0 R5 R3      ; if R5 >= R3 then PC := 153
+  7 [-]: GETGLOBAL R4 K2        ; R4 := 0x8C4A6742
+  8 [-]: LOADK     R5 K3        ; R5 := 0
+  9 [-]: LOADK     R6 K4        ; R6 := 1
+ 10 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 11 [-]: LT        0 R4 R3      ; if R4 >= R3 then PC := 153
  12 [-]: JMP       153          ; PC := 153
- 13 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA4499253"]
- 14 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 15 [-]: GETGLOBAL R6 K6        ; R6 := 0x400E7765
- 16 [-]: MOVE      R7 R5        ; R7 := R5
- 17 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 18 [-]: TEST      R6 0         ; if not R6 then PC := 21
+ 13 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA4499253"]
+ 14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 15 [-]: GETGLOBAL R5 K6        ; R5 := 0x400E7765
+ 16 [-]: MOVE      R6 R4        ; R6 := R4
+ 17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 18 [-]: TEST      R5 0         ; if not R5 then PC := 21
  19 [-]: JMP       21           ; PC := 21
  20 [-]: RETURN    R0 1         ; return 
- 21 [-]: SELF      R6 R5 K7     ; R7 := R5; R6 := R5["0xA2B01604"]
- 22 [-]: GETGLOBAL R8 K8        ; R8 := 0xEC274B1A
- 23 [-]: LOADK     R9 K9        ; R9 := "GAME_R1_WEAPON1"
- 24 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 25 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 26 [-]: GETGLOBAL R7 K10       ; R7 := gRegion
- 27 [-]: SELF      R7 R7 K11    ; R8 := R7; R7 := R7["0xB29B96B"]
- 28 [-]: MOVE      R9 R6        ; R9 := R6
- 29 [-]: GETGLOBAL R10 K12      ; R10 := 0x221C9700
- 30 [-]: LOADK     R11 K3       ; R11 := 0
- 31 [-]: LOADK     R12 K13      ; R12 := 5
- 32 [-]: LOADK     R13 K3       ; R13 := 0
- 33 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 34 [-]: SUB       R10 R6 R10   ; R10 := R6 - R10
- 35 [-]: MOVE      R11 R5       ; R11 := R5
- 36 [-]: LOADNIL   R12 R12      ; R12 := nil
- 37 [-]: MOVE      R13 R6       ; R13 := R6
- 38 [-]: MOVE      R14 R1       ; R14 := R1
- 39 [-]: CALL      R7 8 2       ; R7 := R7(R8,R9,R10,R11,R12,R13,R14)
- 40 [-]: TEST      R7 1         ; if R7 then PC := 43
+ 21 [-]: SELF      R5 R4 K7     ; R6 := R4; R5 := R4["0xA2B01604"]
+ 22 [-]: GETGLOBAL R7 K8        ; R7 := 0xEC274B1A
+ 23 [-]: LOADK     R8 K9        ; R8 := "GAME_R1_WEAPON1"
+ 24 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 25 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+ 26 [-]: GETGLOBAL R6 K10       ; R6 := gRegion
+ 27 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0xB29B96B"]
+ 28 [-]: MOVE      R8 R5        ; R8 := R5
+ 29 [-]: GETGLOBAL R9 K12       ; R9 := 0x221C9700
+ 30 [-]: LOADK     R10 K3       ; R10 := 0
+ 31 [-]: LOADK     R11 K13      ; R11 := 5
+ 32 [-]: LOADK     R12 K3       ; R12 := 0
+ 33 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
+ 34 [-]: SUB       R9 R5 R9     ; R9 := R5 - R9
+ 35 [-]: MOVE      R10 R4       ; R10 := R4
+ 36 [-]: LOADNIL   R11 R11      ; R11 := nil
+ 37 [-]: MOVE      R12 R5       ; R12 := R5
+ 38 [-]: MOVE      R13 R1       ; R13 := R1
+ 39 [-]: CALL      R6 8 2       ; R6 := R6(R7,R8,R9,R10,R11,R12,R13)
+ 40 [-]: TEST      R6 1         ; if R6 then PC := 43
  41 [-]: JMP       43           ; PC := 43
  42 [-]: RETURN    R0 1         ; return 
- 43 [-]: GETGLOBAL R7 K14       ; R7 := tentacleType
- 44 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 45 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["0x232D0973"]
- 46 [-]: CALL      R8 1 2       ; R8 := R8()
- 47 [-]: TEST      R8 0         ; if not R8 then PC := 57
+ 43 [-]: GETGLOBAL R6 K14       ; R6 := tentacleType
+ 44 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 45 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["0x232D0973"]
+ 46 [-]: CALL      R7 1 2       ; R7 := R7()
+ 47 [-]: TEST      R7 0         ; if not R7 then PC := 57
  48 [-]: JMP       57           ; PC := 57
- 49 [-]: SELF      R8 R0 K16    ; R9 := R0; R8 := R0["0xBCD271D5"]
- 50 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 51 [-]: TEST      R8 0         ; if not R8 then PC := 55
+ 49 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0["0xBCD271D5"]
+ 50 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 51 [-]: TEST      R7 0         ; if not R7 then PC := 55
  52 [-]: JMP       55           ; PC := 55
- 53 [-]: GETGLOBAL R7 K17       ; R7 := tentacleTypePvpPrime
+ 53 [-]: GETGLOBAL R6 K17       ; R6 := tentacleTypePvpPrime
  54 [-]: JMP       62           ; PC := 62
- 55 [-]: GETGLOBAL R7 K18       ; R7 := tentacleTypePvp
+ 55 [-]: GETGLOBAL R6 K18       ; R6 := tentacleTypePvp
  56 [-]: JMP       62           ; PC := 62
- 57 [-]: SELF      R8 R0 K16    ; R9 := R0; R8 := R0["0xBCD271D5"]
- 58 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 59 [-]: TEST      R8 0         ; if not R8 then PC := 62
+ 57 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0["0xBCD271D5"]
+ 58 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 59 [-]: TEST      R7 0         ; if not R7 then PC := 62
  60 [-]: JMP       62           ; PC := 62
- 61 [-]: GETGLOBAL R7 K19       ; R7 := tentacleTypePrime
- 62 [-]: GETGLOBAL R8 K10       ; R8 := gRegion
- 63 [-]: SELF      R8 R8 K20    ; R9 := R8; R8 := R8["0xBDD34CC6"]
- 64 [-]: MOVE      R10 R7       ; R10 := R7
- 65 [-]: MOVE      R11 R6       ; R11 := R6
- 66 [-]: GETGLOBAL R12 K21      ; R12 := ZERO_ROTATION
- 67 [-]: MOVE      R13 R5       ; R13 := R5
- 68 [-]: CALL      R8 6 2       ; R8 := R8(R9,R10,R11,R12,R13)
- 69 [-]: GETGLOBAL R9 K6        ; R9 := 0x400E7765
- 70 [-]: MOVE      R10 R8       ; R10 := R8
- 71 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 72 [-]: TEST      R9 0         ; if not R9 then PC := 75
+ 61 [-]: GETGLOBAL R6 K19       ; R6 := tentacleTypePrime
+ 62 [-]: GETGLOBAL R7 K10       ; R7 := gRegion
+ 63 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0xBDD34CC6"]
+ 64 [-]: MOVE      R9 R6        ; R9 := R6
+ 65 [-]: MOVE      R10 R5       ; R10 := R5
+ 66 [-]: GETGLOBAL R11 K21      ; R11 := ZERO_ROTATION
+ 67 [-]: MOVE      R12 R4       ; R12 := R4
+ 68 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
+ 69 [-]: GETGLOBAL R8 K6        ; R8 := 0x400E7765
+ 70 [-]: MOVE      R9 R7        ; R9 := R7
+ 71 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 72 [-]: TEST      R8 0         ; if not R8 then PC := 75
  73 [-]: JMP       75           ; PC := 75
  74 [-]: RETURN    R0 1         ; return 
- 75 [-]: GETGLOBAL R9 K6        ; R9 := 0x400E7765
- 76 [-]: GETGLOBAL R10 K22      ; R10 := _T
- 77 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["piratePassive"]
- 78 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 79 [-]: TEST      R9 0         ; if not R9 then PC := 84
+ 75 [-]: GETGLOBAL R8 K6        ; R8 := 0x400E7765
+ 76 [-]: GETGLOBAL R9 K22       ; R9 := _T
+ 77 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["piratePassive"]
+ 78 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 79 [-]: TEST      R8 0         ; if not R8 then PC := 84
  80 [-]: JMP       84           ; PC := 84
- 81 [-]: GETGLOBAL R9 K22       ; R9 := _T
- 82 [-]: NEWTABLE  R10 0 0      ; R10 := {}
- 83 [-]: SETTABLE  R9 K23 R10   ; R9["piratePassive"] := R10
- 84 [-]: SELF      R9 R5 K24    ; R10 := R5; R9 := R5["0xDBEF0FB6"]
- 85 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 86 [-]: GETGLOBAL R10 K6       ; R10 := 0x400E7765
- 87 [-]: GETGLOBAL R11 K22      ; R11 := _T
- 88 [-]: GETTABLE  R11 R11 K23  ; R11 := R11["piratePassive"]
- 89 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]
- 90 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 91 [-]: TEST      R10 0        ; if not R10 then PC := 97
+ 81 [-]: GETGLOBAL R8 K22       ; R8 := _T
+ 82 [-]: NEWTABLE  R9 0 0       ; R9 := {}
+ 83 [-]: SETTABLE  R8 K23 R9    ; R8["piratePassive"] := R9
+ 84 [-]: SELF      R8 R4 K24    ; R9 := R4; R8 := R4["0xDBEF0FB6"]
+ 85 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 86 [-]: GETGLOBAL R9 K6        ; R9 := 0x400E7765
+ 87 [-]: GETGLOBAL R10 K22      ; R10 := _T
+ 88 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["piratePassive"]
+ 89 [-]: GETTABLE  R10 R10 R8   ; R10 := R10[R8]
+ 90 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 91 [-]: TEST      R9 0         ; if not R9 then PC := 97
  92 [-]: JMP       97           ; PC := 97
- 93 [-]: GETGLOBAL R10 K22      ; R10 := _T
- 94 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["piratePassive"]
- 95 [-]: NEWTABLE  R11 0 0      ; R11 := {}
- 96 [-]: SETTABLE  R10 R9 R11   ; R10[R9] := R11
- 97 [-]: GETGLOBAL R10 K22      ; R10 := _T
- 98 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["piratePassive"]
- 99 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
-100 [-]: LEN       R10 R10      ; R10 := # R10
-101 [-]: LOADK     R11 K4       ; R11 := 1
-102 [-]: LOADK     R12 K25      ; R12 := -1
-103 [-]: FORPREP   R10 119      ; R10 -= R12; PC := 119
-104 [-]: GETGLOBAL R14 K6       ; R14 := 0x400E7765
-105 [-]: GETGLOBAL R15 K22      ; R15 := _T
-106 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["piratePassive"]
-107 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-108 [-]: GETTABLE  R15 R15 R13  ; R15 := R15[R13]
-109 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-110 [-]: TEST      R14 0        ; if not R14 then PC := 119
+ 93 [-]: GETGLOBAL R9 K22       ; R9 := _T
+ 94 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["piratePassive"]
+ 95 [-]: NEWTABLE  R10 0 0      ; R10 := {}
+ 96 [-]: SETTABLE  R9 R8 R10    ; R9[R8] := R10
+ 97 [-]: GETGLOBAL R9 K22       ; R9 := _T
+ 98 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["piratePassive"]
+ 99 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+100 [-]: LEN       R9 R9        ; R9 := # R9
+101 [-]: LOADK     R10 K4       ; R10 := 1
+102 [-]: LOADK     R11 K25      ; R11 := -1
+103 [-]: FORPREP   R9 119       ; R9 -= R11; PC := 119
+104 [-]: GETGLOBAL R13 K6       ; R13 := 0x400E7765
+105 [-]: GETGLOBAL R14 K22      ; R14 := _T
+106 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["piratePassive"]
+107 [-]: GETTABLE  R14 R14 R8   ; R14 := R14[R8]
+108 [-]: GETTABLE  R14 R14 R12  ; R14 := R14[R12]
+109 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+110 [-]: TEST      R13 0        ; if not R13 then PC := 119
 111 [-]: JMP       119          ; PC := 119
-112 [-]: GETGLOBAL R14 K26      ; R14 := table
-113 [-]: GETTABLE  R14 R14 K27  ; R14 := R14["0xCDB1FD5E"]
-114 [-]: GETGLOBAL R15 K22      ; R15 := _T
-115 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["piratePassive"]
-116 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-117 [-]: MOVE      R16 R13      ; R16 := R13
-118 [-]: CALL      R14 3 1      ; R14(R15,R16)
-119 [-]: FORLOOP   R10 104      ; R10 += R12; if R10 <= R11 then begin PC := 104; R13 := R10 end
-120 [-]: GETGLOBAL R14 K22      ; R14 := _T
-121 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["piratePassive"]
-122 [-]: GETTABLE  R14 R14 R9   ; R14 := R14[R9]
-123 [-]: LEN       R14 R14      ; R14 := # R14
-124 [-]: GETUPVAL  R15 U2       ; R15 := U2
-125 [-]: LE        0 R15 R14    ; if R15 > R14 then PC := 140
+112 [-]: GETGLOBAL R13 K26      ; R13 := table
+113 [-]: GETTABLE  R13 R13 K27  ; R13 := R13["0xCDB1FD5E"]
+114 [-]: GETGLOBAL R14 K22      ; R14 := _T
+115 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["piratePassive"]
+116 [-]: GETTABLE  R14 R14 R8   ; R14 := R14[R8]
+117 [-]: MOVE      R15 R12      ; R15 := R12
+118 [-]: CALL      R13 3 1      ; R13(R14,R15)
+119 [-]: FORLOOP   R9 104       ; R9 += R11; if R9 <= R10 then begin PC := 104; R12 := R9 end
+120 [-]: GETGLOBAL R13 K22      ; R13 := _T
+121 [-]: GETTABLE  R13 R13 K23  ; R13 := R13["piratePassive"]
+122 [-]: GETTABLE  R13 R13 R8   ; R13 := R13[R8]
+123 [-]: LEN       R13 R13      ; R13 := # R13
+124 [-]: GETUPVAL  R14 U2       ; R14 := U2
+125 [-]: LE        0 R14 R13    ; if R14 > R13 then PC := 140
 126 [-]: JMP       140          ; PC := 140
-127 [-]: GETGLOBAL R14 K22      ; R14 := _T
-128 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["piratePassive"]
-129 [-]: GETTABLE  R14 R14 R9   ; R14 := R14[R9]
-130 [-]: GETTABLE  R14 R14 K4   ; R14 := R14[1]
-131 [-]: SELF      R14 R14 K28  ; R15 := R14; R14 := R14["0x5CC18C19"]
-132 [-]: CALL      R14 2 1      ; R14(R15)
-133 [-]: GETGLOBAL R14 K26      ; R14 := table
-134 [-]: GETTABLE  R14 R14 K27  ; R14 := R14["0xCDB1FD5E"]
-135 [-]: GETGLOBAL R15 K22      ; R15 := _T
-136 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["piratePassive"]
-137 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-138 [-]: LOADK     R16 K4       ; R16 := 1
-139 [-]: CALL      R14 3 1      ; R14(R15,R16)
-140 [-]: GETGLOBAL R14 K26      ; R14 := table
-141 [-]: GETTABLE  R14 R14 K29  ; R14 := R14["0xE6450C9D"]
-142 [-]: GETGLOBAL R15 K22      ; R15 := _T
-143 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["piratePassive"]
-144 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-145 [-]: MOVE      R16 R8       ; R16 := R8
-146 [-]: CALL      R14 3 1      ; R14(R15,R16)
-147 [-]: SELF      R14 R8 K30   ; R15 := R8; R14 := R8["0xB26452A2"]
-148 [-]: GETGLOBAL R16 K8       ; R16 := 0xEC274B1A
-149 [-]: LOADK     R17 K31      ; R17 := "TentacleWait"
-150 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-151 [-]: MOVE      R17 R0       ; R17 := R0
-152 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
+127 [-]: GETGLOBAL R13 K22      ; R13 := _T
+128 [-]: GETTABLE  R13 R13 K23  ; R13 := R13["piratePassive"]
+129 [-]: GETTABLE  R13 R13 R8   ; R13 := R13[R8]
+130 [-]: GETTABLE  R13 R13 K4   ; R13 := R13[1]
+131 [-]: SELF      R13 R13 K28  ; R14 := R13; R13 := R13["0x5CC18C19"]
+132 [-]: CALL      R13 2 1      ; R13(R14)
+133 [-]: GETGLOBAL R13 K26      ; R13 := table
+134 [-]: GETTABLE  R13 R13 K27  ; R13 := R13["0xCDB1FD5E"]
+135 [-]: GETGLOBAL R14 K22      ; R14 := _T
+136 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["piratePassive"]
+137 [-]: GETTABLE  R14 R14 R8   ; R14 := R14[R8]
+138 [-]: LOADK     R15 K4       ; R15 := 1
+139 [-]: CALL      R13 3 1      ; R13(R14,R15)
+140 [-]: GETGLOBAL R13 K26      ; R13 := table
+141 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["0xE6450C9D"]
+142 [-]: GETGLOBAL R14 K22      ; R14 := _T
+143 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["piratePassive"]
+144 [-]: GETTABLE  R14 R14 R8   ; R14 := R14[R8]
+145 [-]: MOVE      R15 R7       ; R15 := R7
+146 [-]: CALL      R13 3 1      ; R13(R14,R15)
+147 [-]: SELF      R13 R7 K30   ; R14 := R7; R13 := R7["0xB26452A2"]
+148 [-]: GETGLOBAL R15 K8       ; R15 := 0xEC274B1A
+149 [-]: LOADK     R16 K31      ; R16 := "TentacleWait"
+150 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+151 [-]: MOVE      R16 R0       ; R16 := R0
+152 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
 153 [-]: RETURN    R0 1         ; return 
 
 

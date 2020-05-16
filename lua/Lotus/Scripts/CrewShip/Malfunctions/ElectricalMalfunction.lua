@@ -6,7 +6,7 @@ code size: 104
 code size: 80
 code size: 72
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\Malfunctions\ElectricalMalfunction.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\Malfunctions\ElectricalMalfunction.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -15,7 +15,7 @@ code size: 72
 ; Is_vararg:       2
 ; Max Stack Size:  7
 
-  1 [-]: LOADK     R1 K0        ; R1 := -0.10000000149012
+  1 [-]: LOADK     R1 K0        ; R1 := -0.75
   2 [-]: GETGLOBAL R2 K1        ; R2 := 0x329BDC44
   3 [-]: LOADK     R3 K2        ; R3 := "Lotus.Scripts.Libs.TransmissionSet"
   4 [-]: CALL      R2 2 2       ; R2 := R2(R3)

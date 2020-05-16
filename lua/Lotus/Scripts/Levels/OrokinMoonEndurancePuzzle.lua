@@ -9,9 +9,9 @@ code size: 19
 code size: 3
 code size: 3
 code size: 40
-code size: 171
+code size: 177
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Levels\OrokinMoonEndurancePuzzle.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Levels\OrokinMoonEndurancePuzzle.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -410,133 +410,139 @@ code size: 171
  41 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  42 [-]: LOADK     R5 K18       ; R5 := 0
  43 [-]: LOADK     R6 K18       ; R6 := 0
- 44 [-]: GETGLOBAL R7 K19       ; R7 := lasers
- 45 [-]: GETTABLE  R7 R7 K17    ; R7 := R7[1]
- 46 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0xB3F0027"]
+ 44 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 45 [-]: GETGLOBAL R8 K19       ; R8 := lasers
+ 46 [-]: GETTABLE  R8 R8 K17    ; R8 := R8[1]
  47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 48 [-]: TEST      R7 1         ; if R7 then PC := 54
- 49 [-]: JMP       54           ; PC := 54
- 50 [-]: GETGLOBAL R7 K21       ; R7 := 0x201191EA
- 51 [-]: LOADK     R8 K18       ; R8 := 0
- 52 [-]: CALL      R7 2 1       ; R7(R8)
- 53 [-]: JMP       44           ; PC := 44
- 54 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 55 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 56 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 57 [-]: TEST      R7 1         ; if R7 then PC := 153
- 58 [-]: JMP       153          ; PC := 153
- 59 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 60 [-]: GETGLOBAL R8 K1        ; R8 := target
- 61 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 62 [-]: TEST      R7 1         ; if R7 then PC := 153
- 63 [-]: JMP       153          ; PC := 153
- 64 [-]: GETUPVAL  R7 U3        ; R7 := U3
- 65 [-]: CALL      R7 1 1       ; R7()
- 66 [-]: GETUPVAL  R7 U4        ; R7 := U4
- 67 [-]: TEST      R7 0         ; if not R7 then PC := 71
- 68 [-]: JMP       71           ; PC := 71
- 69 [-]: LOADK     R5 K18       ; R5 := 0
- 70 [-]: JMP       94           ; PC := 94
- 71 [-]: GETGLOBAL R7 K22       ; R7 := math
- 72 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["0x8B011038"]
- 73 [-]: LOADK     R8 K18       ; R8 := 0
- 74 [-]: GETUPVAL  R9 U5        ; R9 := U5
- 75 [-]: CALL      R9 1 2       ; R9 := R9()
- 76 [-]: GETUPVAL  R10 U6       ; R10 := U6
- 77 [-]: LEN       R10 R10      ; R10 := # R10
- 78 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
- 79 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 80 [-]: MOVE      R5 R7        ; R5 := R7
- 81 [-]: LE        0 K17 R6     ; if 1 > R6 then PC := 94
- 82 [-]: JMP       94           ; PC := 94
- 83 [-]: LT        0 K18 R5     ; if 0 >= R5 then PC := 93
- 84 [-]: JMP       93           ; PC := 93
- 85 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 86 [-]: GETUPVAL  R8 U7        ; R8 := U7
- 87 [-]: MUL       R8 R8 R5     ; R8 := R8 * R5
- 88 [-]: SETTABLE  R7 K24 R8    ; R7["baseAmount"] := R8
- 89 [-]: GETGLOBAL R7 K1        ; R7 := target
- 90 [-]: SELF      R7 R7 K25    ; R8 := R7; R7 := R7["0x4722B671"]
- 91 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 92 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 93 [-]: LOADK     R6 K18       ; R6 := 0
- 94 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 95 [-]: GETGLOBAL R8 K1        ; R8 := target
- 96 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 97 [-]: TEST      R7 1         ; if R7 then PC := 140
- 98 [-]: JMP       140          ; PC := 140
- 99 [-]: GETGLOBAL R7 K1        ; R7 := target
-100 [-]: SELF      R7 R7 K26    ; R8 := R7; R7 := R7["0x2F79FBD3"]
-101 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-102 [-]: LT        0 K18 R7     ; if 0 >= R7 then PC := 140
-103 [-]: JMP       140          ; PC := 140
-104 [-]: EQ        0 R5 K18     ; if R5 ~= 0 then PC := 125
-105 [-]: JMP       125          ; PC := 125
-106 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
-107 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7["0x7EB26CD0"]
-108 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-109 [-]: TEST      R7 1         ; if R7 then PC := 125
-110 [-]: JMP       125          ; PC := 125
-111 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
-112 [-]: SELF      R7 R7 K29    ; R8 := R7; R7 := R7["0xAEE9A43C"]
-113 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-114 [-]: LT        0 R7 K17     ; if R7 >= 1 then PC := 125
-115 [-]: JMP       125          ; PC := 125
-116 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
-117 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
-118 [-]: LOADK     R9 K31       ; R9 := "Start"
-119 [-]: CALL      R7 3 1       ; R7(R8,R9)
-120 [-]: GETGLOBAL R7 K32       ; R7 := waterEffectsOn
-121 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
-122 [-]: LOADK     R9 K33       ; R9 := "Execute"
-123 [-]: CALL      R7 3 1       ; R7(R8,R9)
-124 [-]: JMP       140          ; PC := 140
-125 [-]: LT        0 K18 R5     ; if 0 >= R5 then PC := 140
-126 [-]: JMP       140          ; PC := 140
-127 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
-128 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7["0x7EB26CD0"]
-129 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-130 [-]: TEST      R7 0         ; if not R7 then PC := 140
-131 [-]: JMP       140          ; PC := 140
-132 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
-133 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
-134 [-]: LOADK     R9 K34       ; R9 := "Stop"
-135 [-]: CALL      R7 3 1       ; R7(R8,R9)
-136 [-]: GETGLOBAL R7 K35       ; R7 := waterEffectsOff
-137 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
-138 [-]: LOADK     R9 K33       ; R9 := "Execute"
-139 [-]: CALL      R7 3 1       ; R7(R8,R9)
-140 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
-141 [-]: SELF      R7 R7 K29    ; R8 := R7; R7 := R7["0xAEE9A43C"]
-142 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-143 [-]: EQ        0 R7 K17     ; if R7 ~= 1 then PC := 146
-144 [-]: JMP       146          ; PC := 146
-145 [-]: JMP       153          ; PC := 153
-146 [-]: GETGLOBAL R7 K21       ; R7 := 0x201191EA
-147 [-]: LOADK     R8 K18       ; R8 := 0
-148 [-]: CALL      R7 2 1       ; R7(R8)
-149 [-]: GETGLOBAL R7 K36       ; R7 := 0x4CDEF9FF
-150 [-]: CALL      R7 1 2       ; R7 := R7()
-151 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
-152 [-]: JMP       54           ; PC := 54
-153 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
-154 [-]: GETGLOBAL R8 K1        ; R8 := target
-155 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-156 [-]: TEST      R7 1         ; if R7 then PC := 171
-157 [-]: JMP       171          ; PC := 171
-158 [-]: GETGLOBAL R7 K1        ; R7 := target
-159 [-]: SELF      R7 R7 K26    ; R8 := R7; R7 := R7["0x2F79FBD3"]
-160 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-161 [-]: LT        0 K18 R7     ; if 0 >= R7 then PC := 171
-162 [-]: JMP       171          ; PC := 171
-163 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
-164 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
-165 [-]: LOADK     R9 K34       ; R9 := "Stop"
-166 [-]: CALL      R7 3 1       ; R7(R8,R9)
-167 [-]: GETGLOBAL R7 K35       ; R7 := waterEffectsOff
-168 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
-169 [-]: LOADK     R9 K33       ; R9 := "Execute"
-170 [-]: CALL      R7 3 1       ; R7(R8,R9)
-171 [-]: RETURN    R0 1         ; return 
+ 48 [-]: TEST      R7 1         ; if R7 then PC := 56
+ 49 [-]: JMP       56           ; PC := 56
+ 50 [-]: GETGLOBAL R7 K19       ; R7 := lasers
+ 51 [-]: GETTABLE  R7 R7 K17    ; R7 := R7[1]
+ 52 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0xB3F0027"]
+ 53 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 54 [-]: TEST      R7 1         ; if R7 then PC := 60
+ 55 [-]: JMP       60           ; PC := 60
+ 56 [-]: GETGLOBAL R7 K21       ; R7 := 0x201191EA
+ 57 [-]: LOADK     R8 K18       ; R8 := 0
+ 58 [-]: CALL      R7 2 1       ; R7(R8)
+ 59 [-]: JMP       44           ; PC := 44
+ 60 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 61 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 62 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 63 [-]: TEST      R7 1         ; if R7 then PC := 159
+ 64 [-]: JMP       159          ; PC := 159
+ 65 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 66 [-]: GETGLOBAL R8 K1        ; R8 := target
+ 67 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 68 [-]: TEST      R7 1         ; if R7 then PC := 159
+ 69 [-]: JMP       159          ; PC := 159
+ 70 [-]: GETUPVAL  R7 U3        ; R7 := U3
+ 71 [-]: CALL      R7 1 1       ; R7()
+ 72 [-]: GETUPVAL  R7 U4        ; R7 := U4
+ 73 [-]: TEST      R7 0         ; if not R7 then PC := 77
+ 74 [-]: JMP       77           ; PC := 77
+ 75 [-]: LOADK     R5 K18       ; R5 := 0
+ 76 [-]: JMP       100          ; PC := 100
+ 77 [-]: GETGLOBAL R7 K22       ; R7 := math
+ 78 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["0x8B011038"]
+ 79 [-]: LOADK     R8 K18       ; R8 := 0
+ 80 [-]: GETUPVAL  R9 U5        ; R9 := U5
+ 81 [-]: CALL      R9 1 2       ; R9 := R9()
+ 82 [-]: GETUPVAL  R10 U6       ; R10 := U6
+ 83 [-]: LEN       R10 R10      ; R10 := # R10
+ 84 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
+ 85 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 86 [-]: MOVE      R5 R7        ; R5 := R7
+ 87 [-]: LE        0 K17 R6     ; if 1 > R6 then PC := 100
+ 88 [-]: JMP       100          ; PC := 100
+ 89 [-]: LT        0 K18 R5     ; if 0 >= R5 then PC := 99
+ 90 [-]: JMP       99           ; PC := 99
+ 91 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 92 [-]: GETUPVAL  R8 U7        ; R8 := U7
+ 93 [-]: MUL       R8 R8 R5     ; R8 := R8 * R5
+ 94 [-]: SETTABLE  R7 K24 R8    ; R7["baseAmount"] := R8
+ 95 [-]: GETGLOBAL R7 K1        ; R7 := target
+ 96 [-]: SELF      R7 R7 K25    ; R8 := R7; R7 := R7["0x4722B671"]
+ 97 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 98 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 99 [-]: LOADK     R6 K18       ; R6 := 0
+100 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+101 [-]: GETGLOBAL R8 K1        ; R8 := target
+102 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+103 [-]: TEST      R7 1         ; if R7 then PC := 146
+104 [-]: JMP       146          ; PC := 146
+105 [-]: GETGLOBAL R7 K1        ; R7 := target
+106 [-]: SELF      R7 R7 K26    ; R8 := R7; R7 := R7["0x2F79FBD3"]
+107 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+108 [-]: LT        0 K18 R7     ; if 0 >= R7 then PC := 146
+109 [-]: JMP       146          ; PC := 146
+110 [-]: EQ        0 R5 K18     ; if R5 ~= 0 then PC := 131
+111 [-]: JMP       131          ; PC := 131
+112 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
+113 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7["0x7EB26CD0"]
+114 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+115 [-]: TEST      R7 1         ; if R7 then PC := 131
+116 [-]: JMP       131          ; PC := 131
+117 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
+118 [-]: SELF      R7 R7 K29    ; R8 := R7; R7 := R7["0xAEE9A43C"]
+119 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+120 [-]: LT        0 R7 K17     ; if R7 >= 1 then PC := 131
+121 [-]: JMP       131          ; PC := 131
+122 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
+123 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
+124 [-]: LOADK     R9 K31       ; R9 := "Start"
+125 [-]: CALL      R7 3 1       ; R7(R8,R9)
+126 [-]: GETGLOBAL R7 K32       ; R7 := waterEffectsOn
+127 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
+128 [-]: LOADK     R9 K33       ; R9 := "Execute"
+129 [-]: CALL      R7 3 1       ; R7(R8,R9)
+130 [-]: JMP       146          ; PC := 146
+131 [-]: LT        0 K18 R5     ; if 0 >= R5 then PC := 146
+132 [-]: JMP       146          ; PC := 146
+133 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
+134 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7["0x7EB26CD0"]
+135 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+136 [-]: TEST      R7 0         ; if not R7 then PC := 146
+137 [-]: JMP       146          ; PC := 146
+138 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
+139 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
+140 [-]: LOADK     R9 K34       ; R9 := "Stop"
+141 [-]: CALL      R7 3 1       ; R7(R8,R9)
+142 [-]: GETGLOBAL R7 K35       ; R7 := waterEffectsOff
+143 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
+144 [-]: LOADK     R9 K33       ; R9 := "Execute"
+145 [-]: CALL      R7 3 1       ; R7(R8,R9)
+146 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
+147 [-]: SELF      R7 R7 K29    ; R8 := R7; R7 := R7["0xAEE9A43C"]
+148 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+149 [-]: EQ        0 R7 K17     ; if R7 ~= 1 then PC := 152
+150 [-]: JMP       152          ; PC := 152
+151 [-]: JMP       159          ; PC := 159
+152 [-]: GETGLOBAL R7 K21       ; R7 := 0x201191EA
+153 [-]: LOADK     R8 K18       ; R8 := 0
+154 [-]: CALL      R7 2 1       ; R7(R8)
+155 [-]: GETGLOBAL R7 K36       ; R7 := 0x4CDEF9FF
+156 [-]: CALL      R7 1 2       ; R7 := R7()
+157 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
+158 [-]: JMP       60           ; PC := 60
+159 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+160 [-]: GETGLOBAL R8 K1        ; R8 := target
+161 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+162 [-]: TEST      R7 1         ; if R7 then PC := 177
+163 [-]: JMP       177          ; PC := 177
+164 [-]: GETGLOBAL R7 K1        ; R7 := target
+165 [-]: SELF      R7 R7 K26    ; R8 := R7; R7 := R7["0x2F79FBD3"]
+166 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+167 [-]: LT        0 K18 R7     ; if 0 >= R7 then PC := 177
+168 [-]: JMP       177          ; PC := 177
+169 [-]: GETGLOBAL R7 K27       ; R7 := waterMover
+170 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
+171 [-]: LOADK     R9 K34       ; R9 := "Stop"
+172 [-]: CALL      R7 3 1       ; R7(R8,R9)
+173 [-]: GETGLOBAL R7 K35       ; R7 := waterEffectsOff
+174 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x8D5886B7"]
+175 [-]: LOADK     R9 K33       ; R9 := "Execute"
+176 [-]: CALL      R7 3 1       ; R7(R8,R9)
+177 [-]: RETURN    R0 1         ; return 
 
 

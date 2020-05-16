@@ -7,7 +7,7 @@ code size: 85
 code size: 51
 code size: 65
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\GrnQueenSceptre.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\GrnQueenSceptre.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -19,7 +19,7 @@ code size: 65
   1 [-]: LOADK     R0 K0        ; R0 := 2
   2 [-]: LOADK     R1 K0        ; R1 := 2
   3 [-]: GETGLOBAL R2 K1        ; R2 := Lotus_Game
-  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["ResistanceTable_RK_ROBOTIC"]
+  4 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["ResistanceKeyword_RK_ROBOTIC"]
   5 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
   6 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
   7 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)

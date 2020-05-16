@@ -22,9 +22,9 @@ code size: 161
 code size: 155
 code size: 57
 code size: 15
-code size: 58
+code size: 45
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\RussianRoulette.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\RussianRoulette.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -2666,7 +2666,7 @@ code size: 58
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
   2 [-]: MOVE      R5 R3        ; R5 := R3
@@ -2676,55 +2676,42 @@ code size: 58
   6 [-]: RETURN    R0 1         ; return 
   7 [-]: SELF      R4 R3 K1     ; R5 := R3; R4 := R3["0xB8613F53"]
   8 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  9 [-]: TEST      R4 0         ; if not R4 then PC := 47
- 10 [-]: JMP       47           ; PC := 47
- 11 [-]: SELF      R4 R3 K2     ; R5 := R3; R4 := R3["0x8DB5D01F"]
- 12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: SELF      R5 R4 K3     ; R6 := R4; R5 := R4["0x469E678A"]
- 14 [-]: GETGLOBAL R7 K4        ; R7 := Engine
- 15 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["MAIN_HAND"]
- 16 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 17 [-]: SELF      R6 R5 K6     ; R7 := R5; R6 := R5["0xC1B008D9"]
- 18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 19 [-]: SELF      R7 R5 K7     ; R8 := R5; R7 := R5["0x6F97EF5"]
- 20 [-]: SELF      R9 R5 K8     ; R10 := R5; R9 := R5["0x9C5E0E"]
- 21 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 22 [-]: MOVE      R10 R6       ; R10 := R6
- 23 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 24 [-]: GETGLOBAL R8 K9        ; R8 := Lotus_Game
- 25 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["0xFAFD4322"]
- 26 [-]: CALL      R8 1 2       ; R8 := R8()
- 27 [-]: SETTABLE  R8 K11 R2    ; R8["instigator"] := R2
- 28 [-]: NEWTABLE  R9 1 0       ; R9 := {}
- 29 [-]: MOVE      R10 R3       ; R10 := R3
- 30 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
- 31 [-]: SETTABLE  R8 K12 R9    ; R8["affected"] := R9
- 32 [-]: GETGLOBAL R9 K9        ; R9 := Lotus_Game
- 33 [-]: GETTABLE  R9 R9 K14    ; R9 := R9["BT_TIMER"]
- 34 [-]: SETTABLE  R8 K13 R9    ; R8["buffType"] := R9
- 35 [-]: SETTABLE  R8 K15 K16   ; R8["isDebuff"] := "0x1"
- 36 [-]: GETGLOBAL R9 K18       ; R9 := mOwner
- 37 [-]: SELF      R9 R9 K19    ; R10 := R9; R9 := R9["0xE2B32C65"]
- 38 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 39 [-]: SETTABLE  R8 K17 R9    ; R8["abilityType"] := R9
- 40 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 41 [-]: SETTABLE  R8 K20 R9    ; R8["buffData"] := R9
- 42 [-]: SELF      R9 R3 K21    ; R10 := R3; R9 := R3["0x584F13D6"]
- 43 [-]: MOVE      R11 R8       ; R11 := R8
- 44 [-]: MOVE      R12 R1       ; R12 := R1
- 45 [-]: MOVE      R13 R0       ; R13 := R0
- 46 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 47 [-]: GETGLOBAL R9 K22       ; R9 := gRegion
- 48 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9["0xA559F558"]
- 49 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 50 [-]: TEST      R9 0         ; if not R9 then PC := 58
- 51 [-]: JMP       58           ; PC := 58
- 52 [-]: SELF      R9 R3 K24    ; R10 := R3; R9 := R3["0xB26452A2"]
- 53 [-]: GETGLOBAL R11 K25      ; R11 := 0xEC274B1A
- 54 [-]: LOADK     R12 K26      ; R12 := "PvpDoAbilityImmune"
- 55 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 56 [-]: MOVE      R12 R0       ; R12 := R0
- 57 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 58 [-]: RETURN    R0 1         ; return 
+  9 [-]: TEST      R4 0         ; if not R4 then PC := 34
+ 10 [-]: JMP       34           ; PC := 34
+ 11 [-]: GETGLOBAL R4 K2        ; R4 := Lotus_Game
+ 12 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["0xFAFD4322"]
+ 13 [-]: CALL      R4 1 2       ; R4 := R4()
+ 14 [-]: SETTABLE  R4 K4 R2     ; R4["instigator"] := R2
+ 15 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 16 [-]: MOVE      R6 R3        ; R6 := R3
+ 17 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 18 [-]: SETTABLE  R4 K5 R5     ; R4["affected"] := R5
+ 19 [-]: GETGLOBAL R5 K2        ; R5 := Lotus_Game
+ 20 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["BT_TIMER"]
+ 21 [-]: SETTABLE  R4 K6 R5     ; R4["buffType"] := R5
+ 22 [-]: SETTABLE  R4 K8 K9     ; R4["isDebuff"] := "0x1"
+ 23 [-]: GETGLOBAL R5 K11       ; R5 := mOwner
+ 24 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0xE2B32C65"]
+ 25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 26 [-]: SETTABLE  R4 K10 R5    ; R4["abilityType"] := R5
+ 27 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 28 [-]: SETTABLE  R4 K13 R5    ; R4["buffData"] := R5
+ 29 [-]: SELF      R5 R3 K14    ; R6 := R3; R5 := R3["0x584F13D6"]
+ 30 [-]: MOVE      R7 R4        ; R7 := R4
+ 31 [-]: MOVE      R8 R1        ; R8 := R1
+ 32 [-]: MOVE      R9 R0        ; R9 := R0
+ 33 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 34 [-]: GETGLOBAL R5 K15       ; R5 := gRegion
+ 35 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5["0xA559F558"]
+ 36 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 37 [-]: TEST      R5 0         ; if not R5 then PC := 45
+ 38 [-]: JMP       45           ; PC := 45
+ 39 [-]: SELF      R5 R3 K17    ; R6 := R3; R5 := R3["0xB26452A2"]
+ 40 [-]: GETGLOBAL R7 K18       ; R7 := 0xEC274B1A
+ 41 [-]: LOADK     R8 K19       ; R8 := "PvpDoAbilityImmune"
+ 42 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 43 [-]: MOVE      R8 R0        ; R8 := R0
+ 44 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 45 [-]: RETURN    R0 1         ; return 
 
 

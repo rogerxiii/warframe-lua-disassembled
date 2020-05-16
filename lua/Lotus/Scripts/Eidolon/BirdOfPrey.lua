@@ -2,11 +2,11 @@ code size: 20
 code size: 30
 code size: 71
 code size: 1
-code size: 18
+code size: 21
 code size: 34
 code size: 17
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\BirdOfPrey.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\BirdOfPrey.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -194,17 +194,20 @@ code size: 17
  11 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0x15D4DAEE"]
  12 [-]: GETGLOBAL R4 K5        ; R4 := gScriptTriggerType
  13 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 14 [-]: GETTABLE  R3 R2 K6     ; R3 := R2[1]
- 15 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0xE767ECA4"]
- 16 [-]: GETGLOBAL R5 K8        ; R5 := triggerRadius
- 17 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 18 [-]: RETURN    R0 1         ; return 
+ 14 [-]: LEN       R3 R2        ; R3 := # R2
+ 15 [-]: LT        0 K1 R3      ; if 0 >= R3 then PC := 21
+ 16 [-]: JMP       21           ; PC := 21
+ 17 [-]: GETTABLE  R3 R2 K6     ; R3 := R2[1]
+ 18 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0xE767ECA4"]
+ 19 [-]: GETGLOBAL R5 K8        ; R5 := triggerRadius
+ 20 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 21 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 96
+; Defined at line: 98
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -249,7 +252,7 @@ code size: 17
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 109
+; Defined at line: 111
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

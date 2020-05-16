@@ -8,7 +8,7 @@ code size: 35
 code size: 7
 code size: 44
 code size: 44
-code size: 128
+code size: 133
 code size: 15
 code size: 16
 code size: 355
@@ -48,7 +48,7 @@ code size: 78
 code size: 33
 code size: 96
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\BardQuestFinalFight.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\BardQuestFinalFight.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -698,140 +698,145 @@ code size: 96
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0["0x1B252E3C"]
-  2 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  3 [-]: TEST      R2 0         ; if not R2 then PC := 18
-  4 [-]: JMP       18           ; PC := 18
-  5 [-]: GETGLOBAL R4 K1        ; R4 := _T
-  6 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["NoteStates"]
-  7 [-]: TEST      R4 0         ; if not R4 then PC := 18
-  8 [-]: JMP       18           ; PC := 18
-  9 [-]: GETGLOBAL R4 K1        ; R4 := _T
- 10 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["NoteStates"]
- 11 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
- 12 [-]: EQ        1 R4 K3      ; if R4 == nil then PC := 18
- 13 [-]: JMP       18           ; PC := 18
- 14 [-]: GETGLOBAL R5 K1        ; R5 := _T
- 15 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["NoteStates"]
- 16 [-]: MOVE      R6 R4        ; R6 := R4
- 17 [-]: SETTABLE  R5 R3 R6     ; R5[R3] := R6
- 18 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0["0x6DA72501"]
- 19 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 20 [-]: GETGLOBAL R6 K5        ; R6 := gRegion
- 21 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0xBDD34CC6"]
- 22 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 23 [-]: MOVE      R9 R5        ; R9 := R5
- 24 [-]: GETGLOBAL R10 K7       ; R10 := ZERO_ROTATION
- 25 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 26 [-]: GETGLOBAL R6 K1        ; R6 := _T
- 27 [-]: GETGLOBAL R7 K1        ; R7 := _T
- 28 [-]: GETTABLE  R7 R7 K2     ; R7 := R7["NoteStates"]
- 29 [-]: TEST      R7 1         ; if R7 then PC := 32
- 30 [-]: JMP       32           ; PC := 32
- 31 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 32 [-]: SETTABLE  R6 K2 R7     ; R6["NoteStates"] := R7
- 33 [-]: GETGLOBAL R6 K1        ; R6 := _T
- 34 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["NoteStates"]
- 35 [-]: GETTABLE  R6 R6 R3     ; R6 := R6[R3]
- 36 [-]: SELF      R7 R0 K8     ; R8 := R0; R7 := R0["0x8C1ACCEF"]
- 37 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 38 [-]: EQ        0 R6 K3      ; if R6 ~= nil then PC := 42
- 39 [-]: JMP       42           ; PC := 42
- 40 [-]: MOVE      R6 R7        ; R6 := R7
- 41 [-]: JMP       46           ; PC := 46
- 42 [-]: GETGLOBAL R8 K1        ; R8 := _T
- 43 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["NoteStates"]
- 44 [-]: MOVE      R9 R7        ; R9 := R7
- 45 [-]: SETTABLE  R8 R3 R9     ; R8[R3] := R9
- 46 [-]: SELF      R8 R0 K9     ; R9 := R0; R8 := R0["0x9F1DC568"]
- 47 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 48 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 49 [-]: SELF      R9 R0 K9     ; R10 := R0; R9 := R0["0x9F1DC568"]
- 50 [-]: GETGLOBAL R11 K10      ; R11 := gScriptTriggerType
- 51 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 52 [-]: TEST      R6 0         ; if not R6 then PC := 105
- 53 [-]: JMP       105          ; PC := 105
- 54 [-]: SELF      R10 R9 K11   ; R11 := R9; R10 := R9["0xC5E91BA6"]
- 55 [-]: CALL      R10 2 1      ; R10(R11)
- 56 [-]: TEST      R2 0         ; if not R2 then PC := 61
- 57 [-]: JMP       61           ; PC := 61
- 58 [-]: SELF      R10 R9 K12   ; R11 := R9; R10 := R9["0x8D5886B7"]
- 59 [-]: LOADK     R12 K13      ; R12 := "Execute"
- 60 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 61 [-]: GETGLOBAL R10 K14      ; R10 := 0x400E7765
- 62 [-]: MOVE      R11 R8       ; R11 := R8
- 63 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 64 [-]: TEST      R10 0        ; if not R10 then PC := 94
- 65 [-]: JMP       94           ; PC := 94
- 66 [-]: GETGLOBAL R10 K1       ; R10 := _T
- 67 [-]: GETGLOBAL R11 K1       ; R11 := _T
- 68 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["NumberBadNotesActive"]
- 69 [-]: ADD       R11 R11 K16  ; R11 := R11 + 1
- 70 [-]: SETTABLE  R10 K15 R11  ; R10["NumberBadNotesActive"] := R11
- 71 [-]: TEST      R2 0         ; if not R2 then PC := 91
- 72 [-]: JMP       91           ; PC := 91
- 73 [-]: GETGLOBAL R10 K1       ; R10 := _T
- 74 [-]: GETGLOBAL R11 K1       ; R11 := _T
- 75 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["ActivatedBadNoteCount"]
- 76 [-]: ADD       R11 R11 K16  ; R11 := R11 + 1
- 77 [-]: SETTABLE  R10 K17 R11  ; R10["ActivatedBadNoteCount"] := R11
- 78 [-]: GETGLOBAL R10 K1       ; R10 := _T
- 79 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["ActivatedBadNoteCount"]
- 80 [-]: EQ        0 R10 K18    ; if R10 ~= 3 then PC := 91
- 81 [-]: JMP       91           ; PC := 91
- 82 [-]: GETUPVAL  R10 U2       ; R10 := U2
- 83 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["0xFB594D4A"]
- 84 [-]: GETGLOBAL R11 K1       ; R11 := _T
- 85 [-]: GETTABLE  R11 R11 K20  ; R11 := R11["TransmissionSet"]
- 86 [-]: GETGLOBAL R12 K21      ; R12 := 0xEC274B1A
- 87 [-]: LOADK     R13 K22      ; R13 := "OrdisHintTwo"
- 88 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 89 [-]: LOADK     R13 K23      ; R13 := 0
- 90 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
- 91 [-]: SELF      R10 R0 K24   ; R11 := R0; R10 := R0["0x5CC18C19"]
- 92 [-]: CALL      R10 2 1      ; R10(R11)
- 93 [-]: JMP       123          ; PC := 123
- 94 [-]: GETGLOBAL R10 K14      ; R10 := 0x400E7765
- 95 [-]: MOVE      R11 R8       ; R11 := R8
- 96 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 97 [-]: TEST      R10 1        ; if R10 then PC := 123
- 98 [-]: JMP       123          ; PC := 123
- 99 [-]: GETGLOBAL R10 K1       ; R10 := _T
-100 [-]: GETGLOBAL R11 K1       ; R11 := _T
-101 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["NumberObjectiveNotesActive"]
-102 [-]: ADD       R11 R11 K16  ; R11 := R11 + 1
-103 [-]: SETTABLE  R10 K25 R11  ; R10["NumberObjectiveNotesActive"] := R11
-104 [-]: JMP       123          ; PC := 123
-105 [-]: SELF      R10 R0 K26   ; R11 := R0; R10 := R0["0x25992394"]
-106 [-]: GETUPVAL  R12 U3       ; R12 := U3
-107 [-]: MOVE      R13 R0       ; R13 := R0
-108 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-109 [-]: SELF      R10 R9 K27   ; R11 := R9; R10 := R9["0x2DB1272F"]
-110 [-]: CALL      R10 2 1      ; R10(R11)
-111 [-]: GETGLOBAL R10 K14      ; R10 := 0x400E7765
-112 [-]: MOVE      R11 R8       ; R11 := R8
-113 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-114 [-]: TEST      R10 0        ; if not R10 then PC := 123
-115 [-]: JMP       123          ; PC := 123
-116 [-]: GETGLOBAL R10 K1       ; R10 := _T
-117 [-]: GETGLOBAL R11 K1       ; R11 := _T
-118 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["NumberBadNotesActive"]
-119 [-]: SUB       R11 R11 K16  ; R11 := R11 - 1
-120 [-]: SETTABLE  R10 K15 R11  ; R10["NumberBadNotesActive"] := R11
-121 [-]: SELF      R10 R0 K28   ; R11 := R0; R10 := R0["0x810FE977"]
-122 [-]: CALL      R10 2 1      ; R10(R11)
-123 [-]: GETUPVAL  R10 U4       ; R10 := U4
-124 [-]: MOVE      R11 R6       ; R11 := R6
-125 [-]: MOVE      R12 R0       ; R12 := R0
-126 [-]: MOVE      R13 R1       ; R13 := R1
-127 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-128 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R3 K0        ; R3 := _T
+  2 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["SongStage"]
+  3 [-]: EQ        0 R3 K2      ; if R3 ~= nil then PC := 6
+  4 [-]: JMP       6            ; PC := 6
+  5 [-]: RETURN    R0 1         ; return 
+  6 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0["0x1B252E3C"]
+  7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  8 [-]: TEST      R2 0         ; if not R2 then PC := 23
+  9 [-]: JMP       23           ; PC := 23
+ 10 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 11 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["NoteStates"]
+ 12 [-]: TEST      R4 0         ; if not R4 then PC := 23
+ 13 [-]: JMP       23           ; PC := 23
+ 14 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 15 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["NoteStates"]
+ 16 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
+ 17 [-]: EQ        1 R4 K2      ; if R4 == nil then PC := 23
+ 18 [-]: JMP       23           ; PC := 23
+ 19 [-]: GETGLOBAL R5 K0        ; R5 := _T
+ 20 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["NoteStates"]
+ 21 [-]: MOVE      R6 R4        ; R6 := R4
+ 22 [-]: SETTABLE  R5 R3 R6     ; R5[R3] := R6
+ 23 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0x6DA72501"]
+ 24 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 25 [-]: GETGLOBAL R6 K6        ; R6 := gRegion
+ 26 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6["0xBDD34CC6"]
+ 27 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 28 [-]: MOVE      R9 R5        ; R9 := R5
+ 29 [-]: GETGLOBAL R10 K8       ; R10 := ZERO_ROTATION
+ 30 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+ 31 [-]: GETGLOBAL R6 K0        ; R6 := _T
+ 32 [-]: GETGLOBAL R7 K0        ; R7 := _T
+ 33 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["NoteStates"]
+ 34 [-]: TEST      R7 1         ; if R7 then PC := 37
+ 35 [-]: JMP       37           ; PC := 37
+ 36 [-]: NEWTABLE  R7 0 0       ; R7 := {}
+ 37 [-]: SETTABLE  R6 K4 R7     ; R6["NoteStates"] := R7
+ 38 [-]: GETGLOBAL R6 K0        ; R6 := _T
+ 39 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["NoteStates"]
+ 40 [-]: GETTABLE  R6 R6 R3     ; R6 := R6[R3]
+ 41 [-]: SELF      R7 R0 K9     ; R8 := R0; R7 := R0["0x8C1ACCEF"]
+ 42 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 43 [-]: EQ        0 R6 K2      ; if R6 ~= nil then PC := 47
+ 44 [-]: JMP       47           ; PC := 47
+ 45 [-]: MOVE      R6 R7        ; R6 := R7
+ 46 [-]: JMP       51           ; PC := 51
+ 47 [-]: GETGLOBAL R8 K0        ; R8 := _T
+ 48 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["NoteStates"]
+ 49 [-]: MOVE      R9 R7        ; R9 := R7
+ 50 [-]: SETTABLE  R8 R3 R9     ; R8[R3] := R9
+ 51 [-]: SELF      R8 R0 K10    ; R9 := R0; R8 := R0["0x9F1DC568"]
+ 52 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 53 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 54 [-]: SELF      R9 R0 K10    ; R10 := R0; R9 := R0["0x9F1DC568"]
+ 55 [-]: GETGLOBAL R11 K11      ; R11 := gScriptTriggerType
+ 56 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+ 57 [-]: TEST      R6 0         ; if not R6 then PC := 110
+ 58 [-]: JMP       110          ; PC := 110
+ 59 [-]: SELF      R10 R9 K12   ; R11 := R9; R10 := R9["0xC5E91BA6"]
+ 60 [-]: CALL      R10 2 1      ; R10(R11)
+ 61 [-]: TEST      R2 0         ; if not R2 then PC := 66
+ 62 [-]: JMP       66           ; PC := 66
+ 63 [-]: SELF      R10 R9 K13   ; R11 := R9; R10 := R9["0x8D5886B7"]
+ 64 [-]: LOADK     R12 K14      ; R12 := "Execute"
+ 65 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 66 [-]: GETGLOBAL R10 K15      ; R10 := 0x400E7765
+ 67 [-]: MOVE      R11 R8       ; R11 := R8
+ 68 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 69 [-]: TEST      R10 0        ; if not R10 then PC := 99
+ 70 [-]: JMP       99           ; PC := 99
+ 71 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 72 [-]: GETGLOBAL R11 K0       ; R11 := _T
+ 73 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["NumberBadNotesActive"]
+ 74 [-]: ADD       R11 R11 K17  ; R11 := R11 + 1
+ 75 [-]: SETTABLE  R10 K16 R11  ; R10["NumberBadNotesActive"] := R11
+ 76 [-]: TEST      R2 0         ; if not R2 then PC := 96
+ 77 [-]: JMP       96           ; PC := 96
+ 78 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 79 [-]: GETGLOBAL R11 K0       ; R11 := _T
+ 80 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["ActivatedBadNoteCount"]
+ 81 [-]: ADD       R11 R11 K17  ; R11 := R11 + 1
+ 82 [-]: SETTABLE  R10 K18 R11  ; R10["ActivatedBadNoteCount"] := R11
+ 83 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 84 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["ActivatedBadNoteCount"]
+ 85 [-]: EQ        0 R10 K19    ; if R10 ~= 3 then PC := 96
+ 86 [-]: JMP       96           ; PC := 96
+ 87 [-]: GETUPVAL  R10 U2       ; R10 := U2
+ 88 [-]: GETTABLE  R10 R10 K20  ; R10 := R10["0xFB594D4A"]
+ 89 [-]: GETGLOBAL R11 K0       ; R11 := _T
+ 90 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["TransmissionSet"]
+ 91 [-]: GETGLOBAL R12 K22      ; R12 := 0xEC274B1A
+ 92 [-]: LOADK     R13 K23      ; R13 := "OrdisHintTwo"
+ 93 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 94 [-]: LOADK     R13 K24      ; R13 := 0
+ 95 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+ 96 [-]: SELF      R10 R0 K25   ; R11 := R0; R10 := R0["0x5CC18C19"]
+ 97 [-]: CALL      R10 2 1      ; R10(R11)
+ 98 [-]: JMP       128          ; PC := 128
+ 99 [-]: GETGLOBAL R10 K15      ; R10 := 0x400E7765
+100 [-]: MOVE      R11 R8       ; R11 := R8
+101 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+102 [-]: TEST      R10 1        ; if R10 then PC := 128
+103 [-]: JMP       128          ; PC := 128
+104 [-]: GETGLOBAL R10 K0       ; R10 := _T
+105 [-]: GETGLOBAL R11 K0       ; R11 := _T
+106 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["NumberObjectiveNotesActive"]
+107 [-]: ADD       R11 R11 K17  ; R11 := R11 + 1
+108 [-]: SETTABLE  R10 K26 R11  ; R10["NumberObjectiveNotesActive"] := R11
+109 [-]: JMP       128          ; PC := 128
+110 [-]: SELF      R10 R0 K27   ; R11 := R0; R10 := R0["0x25992394"]
+111 [-]: GETUPVAL  R12 U3       ; R12 := U3
+112 [-]: MOVE      R13 R0       ; R13 := R0
+113 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+114 [-]: SELF      R10 R9 K28   ; R11 := R9; R10 := R9["0x2DB1272F"]
+115 [-]: CALL      R10 2 1      ; R10(R11)
+116 [-]: GETGLOBAL R10 K15      ; R10 := 0x400E7765
+117 [-]: MOVE      R11 R8       ; R11 := R8
+118 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+119 [-]: TEST      R10 0        ; if not R10 then PC := 128
+120 [-]: JMP       128          ; PC := 128
+121 [-]: GETGLOBAL R10 K0       ; R10 := _T
+122 [-]: GETGLOBAL R11 K0       ; R11 := _T
+123 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["NumberBadNotesActive"]
+124 [-]: SUB       R11 R11 K17  ; R11 := R11 - 1
+125 [-]: SETTABLE  R10 K16 R11  ; R10["NumberBadNotesActive"] := R11
+126 [-]: SELF      R10 R0 K29   ; R11 := R0; R10 := R0["0x810FE977"]
+127 [-]: CALL      R10 2 1      ; R10(R11)
+128 [-]: GETUPVAL  R10 U4       ; R10 := U4
+129 [-]: MOVE      R11 R6       ; R11 := R6
+130 [-]: MOVE      R12 R0       ; R12 := R0
+131 [-]: MOVE      R13 R1       ; R13 := R1
+132 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+133 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 269
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -857,7 +862,7 @@ code size: 96
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 272
+; Defined at line: 277
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -884,7 +889,7 @@ code size: 96
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 280
+; Defined at line: 285
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1250,7 +1255,7 @@ code size: 96
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 379
+; Defined at line: 384
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1283,7 +1288,7 @@ code size: 96
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 392
+; Defined at line: 397
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1497,7 +1502,7 @@ code size: 96
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 462
+; Defined at line: 467
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1532,7 +1537,7 @@ code size: 96
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 471
+; Defined at line: 476
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1598,7 +1603,7 @@ code size: 96
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 490
+; Defined at line: 495
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1740,7 +1745,7 @@ code size: 96
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 538
+; Defined at line: 543
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1942,7 +1947,7 @@ code size: 96
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 606
+; Defined at line: 611
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2005,7 +2010,7 @@ code size: 96
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 625
+; Defined at line: 630
 ; #Upvalues:       7
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2315,7 +2320,7 @@ code size: 96
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 726
+; Defined at line: 731
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2369,7 +2374,7 @@ code size: 96
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 741
+; Defined at line: 746
 ; #Upvalues:       18
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3055,7 +3060,7 @@ code size: 96
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 979
+; Defined at line: 984
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3132,7 +3137,7 @@ code size: 96
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 1003
+; Defined at line: 1008
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3317,7 +3322,7 @@ code size: 96
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 1077
+; Defined at line: 1082
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3377,7 +3382,7 @@ code size: 96
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 1101
+; Defined at line: 1106
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -3492,7 +3497,7 @@ code size: 96
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 1139
+; Defined at line: 1144
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3513,7 +3518,7 @@ code size: 96
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 1146
+; Defined at line: 1151
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -3642,7 +3647,7 @@ code size: 96
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 1187
+; Defined at line: 1192
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3855,7 +3860,7 @@ code size: 96
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 1253
+; Defined at line: 1258
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3889,7 +3894,7 @@ code size: 96
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 1264
+; Defined at line: 1269
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4023,7 +4028,7 @@ code size: 96
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 1310
+; Defined at line: 1315
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -4093,7 +4098,7 @@ code size: 96
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 1327
+; Defined at line: 1332
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4121,7 +4126,7 @@ code size: 96
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 1335
+; Defined at line: 1340
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4145,7 +4150,7 @@ code size: 96
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 1340
+; Defined at line: 1345
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4192,7 +4197,7 @@ code size: 96
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 1355
+; Defined at line: 1360
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4210,7 +4215,7 @@ code size: 96
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 1361
+; Defined at line: 1366
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4255,7 +4260,7 @@ code size: 96
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 1374
+; Defined at line: 1379
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4361,7 +4366,7 @@ code size: 96
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 1411
+; Defined at line: 1416
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4407,7 +4412,7 @@ code size: 96
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 1432
+; Defined at line: 1437
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4472,7 +4477,7 @@ code size: 96
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 1458
+; Defined at line: 1463
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4532,7 +4537,7 @@ code size: 96
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 1480
+; Defined at line: 1485
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4565,7 +4570,7 @@ code size: 96
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 1487
+; Defined at line: 1492
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4688,7 +4693,7 @@ code size: 96
 ; Function #45:
 ;
 ; Name:            
-; Defined at line: 1539
+; Defined at line: 1544
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4742,7 +4747,7 @@ code size: 96
 ; Function #46:
 ;
 ; Name:            
-; Defined at line: 1556
+; Defined at line: 1561
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4831,7 +4836,7 @@ code size: 96
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 1588
+; Defined at line: 1593
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4875,7 +4880,7 @@ code size: 96
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 1605
+; Defined at line: 1610
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

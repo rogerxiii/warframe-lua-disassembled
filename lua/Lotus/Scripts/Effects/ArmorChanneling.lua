@@ -8,7 +8,7 @@ code size: 162
 code size: 118
 code size: 145
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\ArmorChanneling.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\ArmorChanneling.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -959,7 +959,7 @@ code size: 145
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  22
+; Max Stack Size:  21
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x201191EA
   2 [-]: LOADK     R2 K1        ; R2 := 0
@@ -1052,59 +1052,59 @@ code size: 145
  89 [-]: CALL      R15 1 2      ; R15 := R15()
  90 [-]: ADD       R13 R13 R15  ; R13 := R13 + R15
  91 [-]: JMP       74           ; PC := 74
- 92 [-]: LOADK     R15 K1       ; R15 := 0
+ 92 [-]: LOADK     R13 K1       ; R13 := 0
  93 [-]: MOVE      R11 R14      ; R11 := R14
- 94 [-]: GETGLOBAL R16 K25      ; R16 := 0x8C4A6742
- 95 [-]: LOADK     R17 K32      ; R17 := 1.5
- 96 [-]: LOADK     R18 K33      ; R18 := 2.5
- 97 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 98 [-]: LT        0 R15 K20    ; if R15 >= 1 then PC := 128
+ 94 [-]: GETGLOBAL R15 K25      ; R15 := 0x8C4A6742
+ 95 [-]: LOADK     R16 K32      ; R16 := 1.5
+ 96 [-]: LOADK     R17 K33      ; R17 := 2.5
+ 97 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+ 98 [-]: LT        0 R13 K20    ; if R13 >= 1 then PC := 128
  99 [-]: JMP       128          ; PC := 128
-100 [-]: GETGLOBAL R17 K8       ; R17 := 0x400E7765
-101 [-]: MOVE      R18 R1       ; R18 := R1
-102 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-103 [-]: TEST      R17 1        ; if R17 then PC := 128
+100 [-]: GETGLOBAL R16 K8       ; R16 := 0x400E7765
+101 [-]: MOVE      R17 R1       ; R17 := R1
+102 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+103 [-]: TEST      R16 1        ; if R16 then PC := 128
 104 [-]: JMP       128          ; PC := 128
-105 [-]: SELF      R17 R1 K34   ; R18 := R1; R17 := R1["0xA2B01604"]
-106 [-]: GETUPVAL  R19 U1       ; R19 := U1
-107 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-108 [-]: MOVE      R12 R17      ; R12 := R17
-109 [-]: GETGLOBAL R17 K28      ; R17 := 0xE0C881B4
-110 [-]: MOVE      R18 R11      ; R18 := R11
-111 [-]: MOVE      R19 R12      ; R19 := R12
-112 [-]: GETGLOBAL R20 K35      ; R20 := 0x9E1B8940
-113 [-]: MOVE      R21 R15      ; R21 := R15
-114 [-]: CALL      R20 2 0      ; R20,... := R20(R21)
-115 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
-116 [-]: MOVE      R14 R17      ; R14 := R17
-117 [-]: SELF      R17 R0 K30   ; R18 := R0; R17 := R0["0xEC183DDC"]
-118 [-]: MOVE      R19 R14      ; R19 := R14
-119 [-]: CALL      R17 3 1      ; R17(R18,R19)
-120 [-]: GETGLOBAL R17 K0       ; R17 := 0x201191EA
-121 [-]: LOADK     R18 K1       ; R18 := 0
-122 [-]: CALL      R17 2 1      ; R17(R18)
-123 [-]: GETGLOBAL R17 K31      ; R17 := 0x4CDEF9FF
-124 [-]: CALL      R17 1 2      ; R17 := R17()
-125 [-]: MUL       R17 R17 R16  ; R17 := R17 * R16
-126 [-]: ADD       R15 R15 R17  ; R15 := R15 + R17
+105 [-]: SELF      R16 R1 K34   ; R17 := R1; R16 := R1["0xA2B01604"]
+106 [-]: GETUPVAL  R18 U1       ; R18 := U1
+107 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+108 [-]: MOVE      R12 R16      ; R12 := R16
+109 [-]: GETGLOBAL R16 K28      ; R16 := 0xE0C881B4
+110 [-]: MOVE      R17 R11      ; R17 := R11
+111 [-]: MOVE      R18 R12      ; R18 := R12
+112 [-]: GETGLOBAL R19 K35      ; R19 := 0x9E1B8940
+113 [-]: MOVE      R20 R13      ; R20 := R13
+114 [-]: CALL      R19 2 0      ; R19,... := R19(R20)
+115 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
+116 [-]: MOVE      R14 R16      ; R14 := R16
+117 [-]: SELF      R16 R0 K30   ; R17 := R0; R16 := R0["0xEC183DDC"]
+118 [-]: MOVE      R18 R14      ; R18 := R14
+119 [-]: CALL      R16 3 1      ; R16(R17,R18)
+120 [-]: GETGLOBAL R16 K0       ; R16 := 0x201191EA
+121 [-]: LOADK     R17 K1       ; R17 := 0
+122 [-]: CALL      R16 2 1      ; R16(R17)
+123 [-]: GETGLOBAL R16 K31      ; R16 := 0x4CDEF9FF
+124 [-]: CALL      R16 1 2      ; R16 := R16()
+125 [-]: MUL       R16 R16 R15  ; R16 := R16 * R15
+126 [-]: ADD       R13 R13 R16  ; R13 := R13 + R16
 127 [-]: JMP       98           ; PC := 98
-128 [-]: GETGLOBAL R17 K36      ; R17 := gRegion
-129 [-]: SELF      R17 R17 K37  ; R18 := R17; R17 := R17["0xBDD34CC6"]
-130 [-]: GETGLOBAL R19 K38      ; R19 := endPointEffect
-131 [-]: MOVE      R20 R14      ; R20 := R14
-132 [-]: GETGLOBAL R21 K39      ; R21 := ZERO_ROTATION
-133 [-]: CALL      R17 5 2      ; R17 := R17(R18,R19,R20,R21)
-134 [-]: GETGLOBAL R18 K8       ; R18 := 0x400E7765
-135 [-]: MOVE      R19 R17      ; R19 := R17
-136 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-137 [-]: TEST      R18 1        ; if R18 then PC := 143
+128 [-]: GETGLOBAL R16 K36      ; R16 := gRegion
+129 [-]: SELF      R16 R16 K37  ; R17 := R16; R16 := R16["0xBDD34CC6"]
+130 [-]: GETGLOBAL R18 K38      ; R18 := endPointEffect
+131 [-]: MOVE      R19 R14      ; R19 := R14
+132 [-]: GETGLOBAL R20 K39      ; R20 := ZERO_ROTATION
+133 [-]: CALL      R16 5 2      ; R16 := R16(R17,R18,R19,R20)
+134 [-]: GETGLOBAL R17 K8       ; R17 := 0x400E7765
+135 [-]: MOVE      R18 R16      ; R18 := R16
+136 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+137 [-]: TEST      R17 1        ; if R17 then PC := 143
 138 [-]: JMP       143          ; PC := 143
-139 [-]: SELF      R18 R17 K21  ; R19 := R17; R18 := R17["0x408A179A"]
-140 [-]: MOVE      R20 R2       ; R20 := R2
-141 [-]: MOVE      R21 R2       ; R21 := R2
-142 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-143 [-]: SELF      R18 R0 K40   ; R19 := R0; R18 := R0["0xD4C2743F"]
-144 [-]: CALL      R18 2 1      ; R18(R19)
+139 [-]: SELF      R17 R16 K21  ; R18 := R16; R17 := R16["0x408A179A"]
+140 [-]: MOVE      R19 R2       ; R19 := R2
+141 [-]: MOVE      R20 R2       ; R20 := R2
+142 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
+143 [-]: SELF      R17 R0 K40   ; R18 := R0; R17 := R0["0xD4C2743F"]
+144 [-]: CALL      R17 2 1      ; R17(R18)
 145 [-]: RETURN    R0 1         ; return 
 
 

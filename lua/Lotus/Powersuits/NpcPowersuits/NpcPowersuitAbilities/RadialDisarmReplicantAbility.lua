@@ -7,13 +7,13 @@ code size: 19
 code size: 61
 code size: 19
 code size: 13
-code size: 111
+code size: 112
 code size: 476
 code size: 125
 code size: 146
 code size: 117
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\RadialDisarmReplicantAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\RadialDisarmReplicantAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -528,7 +528,7 @@ code size: 117
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xEC274B1A
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
@@ -611,8 +611,8 @@ code size: 117
  79 [-]: GETGLOBAL R6 K10       ; R6 := 0x400E7765
  80 [-]: MOVE      R7 R0        ; R7 := R0
  81 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 82 [-]: TEST      R6 1         ; if R6 then PC := 111
- 83 [-]: JMP       111          ; PC := 111
+ 82 [-]: TEST      R6 1         ; if R6 then PC := 112
+ 83 [-]: JMP       112          ; PC := 112
  84 [-]: SELF      R6 R0 K28    ; R7 := R0; R6 := R0["0x124D3A74"]
  85 [-]: GETUPVAL  R8 U0        ; R8 := U0
  86 [-]: CALL      R6 3 1       ; R6(R7,R8)
@@ -621,26 +621,27 @@ code size: 117
  89 [-]: CALL      R6 3 1       ; R6(R7,R8)
  90 [-]: SELF      R6 R0 K9     ; R7 := R0; R6 := R0["0xABD9DD93"]
  91 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 92 [-]: GETGLOBAL R7 K10       ; R7 := 0x400E7765
- 93 [-]: MOVE      R8 R6        ; R8 := R6
- 94 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 95 [-]: TEST      R7 1         ; if R7 then PC := 104
- 96 [-]: JMP       104          ; PC := 104
- 97 [-]: SELF      R7 R6 K11    ; R8 := R6; R7 := R6["0xCCC71042"]
- 98 [-]: LOADNIL   R9 R9        ; R9 := nil
- 99 [-]: CALL      R7 3 1       ; R7(R8,R9)
-100 [-]: SELF      R7 R6 K12    ; R8 := R6; R7 := R6["0xDE46670C"]
-101 [-]: CALL      R7 2 1       ; R7(R8)
-102 [-]: SELF      R7 R6 K13    ; R8 := R6; R7 := R6["0x5AC4147B"]
-103 [-]: CALL      R7 2 1       ; R7(R8)
-104 [-]: GETGLOBAL R7 K10       ; R7 := 0x400E7765
-105 [-]: MOVE      R8 R3        ; R8 := R3
-106 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-107 [-]: TEST      R7 1         ; if R7 then PC := 111
-108 [-]: JMP       111          ; PC := 111
-109 [-]: SELF      R7 R3 K30    ; R8 := R3; R7 := R3["0xD4C2743F"]
-110 [-]: CALL      R7 2 1       ; R7(R8)
-111 [-]: RETURN    R0 1         ; return 
+ 92 [-]: MOVE      R2 R6        ; R2 := R6
+ 93 [-]: GETGLOBAL R6 K10       ; R6 := 0x400E7765
+ 94 [-]: MOVE      R7 R2        ; R7 := R2
+ 95 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 96 [-]: TEST      R6 1         ; if R6 then PC := 105
+ 97 [-]: JMP       105          ; PC := 105
+ 98 [-]: SELF      R6 R2 K11    ; R7 := R2; R6 := R2["0xCCC71042"]
+ 99 [-]: LOADNIL   R8 R8        ; R8 := nil
+100 [-]: CALL      R6 3 1       ; R6(R7,R8)
+101 [-]: SELF      R6 R2 K12    ; R7 := R2; R6 := R2["0xDE46670C"]
+102 [-]: CALL      R6 2 1       ; R6(R7)
+103 [-]: SELF      R6 R2 K13    ; R7 := R2; R6 := R2["0x5AC4147B"]
+104 [-]: CALL      R6 2 1       ; R6(R7)
+105 [-]: GETGLOBAL R6 K10       ; R6 := 0x400E7765
+106 [-]: MOVE      R7 R3        ; R7 := R3
+107 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+108 [-]: TEST      R6 1         ; if R6 then PC := 112
+109 [-]: JMP       112          ; PC := 112
+110 [-]: SELF      R6 R3 K30    ; R7 := R3; R6 := R3["0xD4C2743F"]
+111 [-]: CALL      R6 2 1       ; R6(R7)
+112 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #10:

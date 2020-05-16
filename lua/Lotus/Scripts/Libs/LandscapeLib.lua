@@ -20,9 +20,9 @@ code size: 13
 code size: 24
 code size: 288
 code size: 10
-code size: 17
+code size: 20
 code size: 11
-code size: 50
+code size: 70
 code size: 3
 code size: 44
 code size: 6
@@ -36,7 +36,7 @@ code size: 18
 code size: 13
 code size: 20
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\LandscapeLib.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Libs\LandscapeLib.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1337,19 +1337,22 @@ code size: 20
   2 [-]: SETTABLE  R3 K0 R0     ; R3["mStateChangedCallback"] := R0
   3 [-]: SETTABLE  R3 K1 R1     ; R3["mHint"] := R1
   4 [-]: SETTABLE  R3 K2 K3     ; R3["mModeState"] := 0
-  5 [-]: SETTABLE  R3 K4 R2     ; R3["mNetVars"] := R2
-  6 [-]: CLOSURE   R4 0         ; R4 := closure(Function #19.1)
-  7 [-]: SETTABLE  R3 K5 R4     ; R3["ClearNetVars"] := R4
-  8 [-]: CLOSURE   R4 1         ; R4 := closure(Function #19.2)
-  9 [-]: SETTABLE  R3 K6 R4     ; R3["SetModeState"] := R4
- 10 [-]: CLOSURE   R4 2         ; R4 := closure(Function #19.3)
- 11 [-]: SETTABLE  R3 K7 R4     ; R3["GetModeState"] := R4
- 12 [-]: CLOSURE   R4 3         ; R4 := closure(Function #19.4)
- 13 [-]: SETTABLE  R3 K8 R4     ; R3["ShutDown"] := R4
- 14 [-]: CLOSURE   R4 4         ; R4 := closure(Function #19.5)
- 15 [-]: SETTABLE  R3 K9 R4     ; R3["AddNetVar"] := R4
- 16 [-]: RETURN    R3 2         ; return R3
- 17 [-]: RETURN    R0 1         ; return 
+  5 [-]: TESTSET   R4 R2 1      ; if R2 then PC := 8 else R4 := R2
+  6 [-]: JMP       8            ; PC := 8
+  7 [-]: NEWTABLE  R4 0 0       ; R4 := {}
+  8 [-]: SETTABLE  R3 K4 R4     ; R3["mNetVars"] := R4
+  9 [-]: CLOSURE   R4 0         ; R4 := closure(Function #19.1)
+ 10 [-]: SETTABLE  R3 K5 R4     ; R3["ClearNetVars"] := R4
+ 11 [-]: CLOSURE   R4 1         ; R4 := closure(Function #19.2)
+ 12 [-]: SETTABLE  R3 K6 R4     ; R3["SetModeState"] := R4
+ 13 [-]: CLOSURE   R4 2         ; R4 := closure(Function #19.3)
+ 14 [-]: SETTABLE  R3 K7 R4     ; R3["GetModeState"] := R4
+ 15 [-]: CLOSURE   R4 3         ; R4 := closure(Function #19.4)
+ 16 [-]: SETTABLE  R3 K8 R4     ; R3["ShutDown"] := R4
+ 17 [-]: CLOSURE   R4 4         ; R4 := closure(Function #19.5)
+ 18 [-]: SETTABLE  R3 K9 R4     ; R3["AddNetVar"] := R4
+ 19 [-]: RETURN    R3 2         ; return R3
+ 20 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #19.1:
@@ -1381,64 +1384,84 @@ code size: 20
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  13
 
   1 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mModeState"]
-  2 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 45
-  3 [-]: JMP       45           ; PC := 45
+  2 [-]: EQ        1 R2 R1      ; if R2 == R1 then PC := 65
+  3 [-]: JMP       65           ; PC := 65
   4 [-]: GETTABLE  R2 R0 K0     ; R2 := R0["mModeState"]
   5 [-]: SETTABLE  R0 K0 R1     ; R0["mModeState"] := R1
-  6 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mHint"]
-  7 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0x26E34B37"]
-  8 [-]: MOVE      R5 R1        ; R5 := R1
-  9 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 10 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["0xF33B1EAA"]
- 11 [-]: CALL      R3 1 1       ; R3()
- 12 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mHint"]
- 13 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0xED4CA14A"]
- 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 15 [-]: GETGLOBAL R4 K5        ; R4 := 0x400E7765
- 16 [-]: MOVE      R5 R3        ; R5 := R3
- 17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 18 [-]: TEST      R4 1         ; if R4 then PC := 32
- 19 [-]: JMP       32           ; PC := 32
- 20 [-]: GETGLOBAL R4 K6        ; R4 := 0x93B1256B
- 21 [-]: LOADK     R5 K7        ; R5 := "Landscape"
- 22 [-]: LOADK     R6 K8        ; R6 := " - New State: "
- 23 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mModeState"]
- 24 [-]: LOADK     R8 K9        ; R8 := " for "
- 25 [-]: SELF      R9 R3 K10    ; R10 := R3; R9 := R3["0x1B252E3C"]
- 26 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 27 [-]: LOADK     R10 K11      ; R10 := ", was "
- 28 [-]: MOVE      R11 R2       ; R11 := R2
- 29 [-]: CONCAT    R5 R5 R11    ; R5 := R5 .. R6 .. R7 .. R8 .. R9 .. R10 .. R11
- 30 [-]: CALL      R4 2 1       ; R4(R5)
- 31 [-]: JMP       50           ; PC := 50
+  6 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+  7 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mHint"]
+  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  9 [-]: TEST      R3 1         ; if R3 then PC := 15
+ 10 [-]: JMP       15           ; PC := 15
+ 11 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mHint"]
+ 12 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0x26E34B37"]
+ 13 [-]: MOVE      R5 R1        ; R5 := R1
+ 14 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 15 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["0xF33B1EAA"]
+ 16 [-]: CALL      R3 1 1       ; R3()
+ 17 [-]: LOADNIL   R3 R3        ; R3 := nil
+ 18 [-]: GETGLOBAL R4 K1        ; R4 := 0x400E7765
+ 19 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mHint"]
+ 20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 21 [-]: TEST      R4 1         ; if R4 then PC := 27
+ 22 [-]: JMP       27           ; PC := 27
+ 23 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mHint"]
+ 24 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4["0xED4CA14A"]
+ 25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 26 [-]: MOVE      R3 R4        ; R3 := R4
+ 27 [-]: GETGLOBAL R4 K1        ; R4 := 0x400E7765
+ 28 [-]: MOVE      R5 R3        ; R5 := R3
+ 29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 30 [-]: TEST      R4 1         ; if R4 then PC := 44
+ 31 [-]: JMP       44           ; PC := 44
  32 [-]: GETGLOBAL R4 K6        ; R4 := 0x93B1256B
  33 [-]: LOADK     R5 K7        ; R5 := "Landscape"
  34 [-]: LOADK     R6 K8        ; R6 := " - New State: "
  35 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["mModeState"]
  36 [-]: LOADK     R8 K9        ; R8 := " for "
- 37 [-]: GETTABLE  R9 R0 K1     ; R9 := R0["mHint"]
- 38 [-]: SELF      R9 R9 K10    ; R10 := R9; R9 := R9["0x1B252E3C"]
- 39 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 40 [-]: LOADK     R10 K11      ; R10 := ", was "
- 41 [-]: MOVE      R11 R2       ; R11 := R2
- 42 [-]: CONCAT    R5 R5 R11    ; R5 := R5 .. R6 .. R7 .. R8 .. R9 .. R10 .. R11
- 43 [-]: CALL      R4 2 1       ; R4(R5)
- 44 [-]: JMP       50           ; PC := 50
- 45 [-]: GETGLOBAL R4 K6        ; R4 := 0x93B1256B
- 46 [-]: LOADK     R5 K7        ; R5 := "Landscape"
- 47 [-]: LOADK     R6 K12       ; R6 := " - trying to set mode to state we're already in"
- 48 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 49 [-]: CALL      R4 2 1       ; R4(R5)
- 50 [-]: RETURN    R0 1         ; return 
+ 37 [-]: SELF      R9 R3 K10    ; R10 := R3; R9 := R3["0x1B252E3C"]
+ 38 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 39 [-]: LOADK     R10 K11      ; R10 := ", was "
+ 40 [-]: MOVE      R11 R2       ; R11 := R2
+ 41 [-]: CONCAT    R5 R5 R11    ; R5 := R5 .. R6 .. R7 .. R8 .. R9 .. R10 .. R11
+ 42 [-]: CALL      R4 2 1       ; R4(R5)
+ 43 [-]: JMP       70           ; PC := 70
+ 44 [-]: LOADK     R4 K12       ; R4 := ""
+ 45 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+ 46 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mHint"]
+ 47 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 48 [-]: TEST      R5 1         ; if R5 then PC := 54
+ 49 [-]: JMP       54           ; PC := 54
+ 50 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mHint"]
+ 51 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5["0x1B252E3C"]
+ 52 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 53 [-]: MOVE      R4 R5        ; R4 := R5
+ 54 [-]: GETGLOBAL R5 K6        ; R5 := 0x93B1256B
+ 55 [-]: LOADK     R6 K7        ; R6 := "Landscape"
+ 56 [-]: LOADK     R7 K8        ; R7 := " - New State: "
+ 57 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mModeState"]
+ 58 [-]: LOADK     R9 K9        ; R9 := " for "
+ 59 [-]: MOVE      R10 R4       ; R10 := R4
+ 60 [-]: LOADK     R11 K11      ; R11 := ", was "
+ 61 [-]: MOVE      R12 R2       ; R12 := R2
+ 62 [-]: CONCAT    R6 R6 R12    ; R6 := R6 .. R7 .. R8 .. R9 .. R10 .. R11 .. R12
+ 63 [-]: CALL      R5 2 1       ; R5(R6)
+ 64 [-]: JMP       70           ; PC := 70
+ 65 [-]: GETGLOBAL R5 K6        ; R5 := 0x93B1256B
+ 66 [-]: LOADK     R6 K7        ; R6 := "Landscape"
+ 67 [-]: LOADK     R7 K13       ; R7 := " - trying to set mode to state we're already in"
+ 68 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+ 69 [-]: CALL      R5 2 1       ; R5(R6)
+ 70 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #19.3:
 ;
 ; Name:            
-; Defined at line: 421
+; Defined at line: 430
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1452,7 +1475,7 @@ code size: 20
 ; Function #19.4:
 ;
 ; Name:            
-; Defined at line: 424
+; Defined at line: 433
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1507,7 +1530,7 @@ code size: 20
 ; Function #19.5:
 ;
 ; Name:            
-; Defined at line: 442
+; Defined at line: 451
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1524,7 +1547,7 @@ code size: 20
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 449
+; Defined at line: 458
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1575,7 +1598,7 @@ code size: 20
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 461
+; Defined at line: 470
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1641,7 +1664,7 @@ code size: 20
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 476
+; Defined at line: 485
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1716,7 +1739,7 @@ code size: 20
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 493
+; Defined at line: 502
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1841,7 +1864,7 @@ code size: 20
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 544
+; Defined at line: 553
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1907,7 +1930,7 @@ code size: 20
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 570
+; Defined at line: 579
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1946,7 +1969,7 @@ code size: 20
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 588
+; Defined at line: 597
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1975,7 +1998,7 @@ code size: 20
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 598
+; Defined at line: 607
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1999,7 +2022,7 @@ code size: 20
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 605
+; Defined at line: 614
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

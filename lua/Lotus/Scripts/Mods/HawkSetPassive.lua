@@ -3,7 +3,7 @@ code size: 10
 code size: 152
 code size: 241
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Mods\HawkSetPassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Mods\HawkSetPassive.luac 
 
 ; Name:            
 ; Defined at line: 0

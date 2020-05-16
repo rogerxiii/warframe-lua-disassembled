@@ -1,12 +1,12 @@
 code size: 20
 code size: 21
-code size: 121
+code size: 141
 code size: 14
 code size: 28
 code size: 34
 code size: 76
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\NLMagistar.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\NLMagistar.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -40,7 +40,7 @@ code size: 76
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 17
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -72,11 +72,11 @@ code size: 76
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 25
+; Defined at line: 27
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  23
 
   1 [-]: SELF      R3 R1 K0     ; R4 := R1; R3 := R1["0x45933E1"]
   2 [-]: CALL      R3 2 2       ; R3 := R3(R4)
@@ -103,16 +103,16 @@ code size: 76
  23 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  24 [-]: MOVE      R10 R4       ; R10 := R4
  25 [-]: CALL      R5 6 2       ; R5 := R5(R6,R7,R8,R9,R10)
- 26 [-]: LT        0 K7 R5      ; if 0 >= R5 then PC := 121
- 27 [-]: JMP       121          ; PC := 121
+ 26 [-]: LT        0 K7 R5      ; if 0 >= R5 then PC := 141
+ 27 [-]: JMP       141          ; PC := 141
  28 [-]: SELF      R6 R3 K11    ; R7 := R3; R6 := R3["0x5A115A02"]
  29 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 30 [-]: TEST      R6 1         ; if R6 then PC := 121
- 31 [-]: JMP       121          ; PC := 121
+ 30 [-]: TEST      R6 1         ; if R6 then PC := 141
+ 31 [-]: JMP       141          ; PC := 141
  32 [-]: SELF      R6 R3 K12    ; R7 := R3; R6 := R3["0xA56CD0BB"]
  33 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 34 [-]: TEST      R6 1         ; if R6 then PC := 121
- 35 [-]: JMP       121          ; PC := 121
+ 34 [-]: TEST      R6 1         ; if R6 then PC := 141
+ 35 [-]: JMP       141          ; PC := 141
  36 [-]: GETGLOBAL R6 K13       ; R6 := math
  37 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["0x8B011038"]
  38 [-]: LOADK     R7 K7        ; R7 := 0
@@ -155,56 +155,76 @@ code size: 76
  75 [-]: GETGLOBAL R8 K2        ; R8 := gRegion
  76 [-]: SELF      R8 R8 K22    ; R9 := R8; R8 := R8["0x128C281"]
  77 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 78 [-]: LOADK     R9 K23       ; R9 := 1
- 79 [-]: LEN       R10 R8       ; R10 := # R8
- 80 [-]: LOADK     R11 K23      ; R11 := 1
- 81 [-]: FORPREP   R9 120       ; R9 -= R11; PC := 120
- 82 [-]: GETTABLE  R13 R8 R12   ; R13 := R8[R12]
- 83 [-]: GETGLOBAL R14 K1       ; R14 := 0x400E7765
- 84 [-]: MOVE      R15 R13      ; R15 := R13
- 85 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 86 [-]: TEST      R14 1        ; if R14 then PC := 120
- 87 [-]: JMP       120          ; PC := 120
- 88 [-]: SELF      R14 R13 K11  ; R15 := R13; R14 := R13["0x5A115A02"]
- 89 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 90 [-]: TEST      R14 1        ; if R14 then PC := 120
- 91 [-]: JMP       120          ; PC := 120
- 92 [-]: EQ        1 R13 R3     ; if R13 == R3 then PC := 120
- 93 [-]: JMP       120          ; PC := 120
- 94 [-]: SELF      R14 R13 K24  ; R15 := R13; R14 := R13["0x83D9304A"]
- 95 [-]: MOVE      R16 R3       ; R16 := R3
- 96 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 97 [-]: LE        0 R14 R7     ; if R14 > R7 then PC := 120
- 98 [-]: JMP       120          ; PC := 120
- 99 [-]: SELF      R14 R13 K12  ; R15 := R13; R14 := R13["0xA56CD0BB"]
-100 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-101 [-]: TEST      R14 1        ; if R14 then PC := 120
-102 [-]: JMP       120          ; PC := 120
-103 [-]: SELF      R14 R3 K25   ; R15 := R3; R14 := R3["0x6B4CBCD7"]
-104 [-]: MOVE      R16 R13      ; R16 := R13
-105 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-106 [-]: TEST      R14 0        ; if not R14 then PC := 120
-107 [-]: JMP       120          ; PC := 120
-108 [-]: SELF      R14 R13 K26  ; R15 := R13; R14 := R13["0x385BD2FE"]
-109 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-110 [-]: GETGLOBAL R15 K13      ; R15 := math
-111 [-]: GETTABLE  R15 R15 K27  ; R15 := R15["0x65F9712A"]
-112 [-]: MOVE      R16 R14      ; R16 := R14
-113 [-]: SELF      R17 R13 K28  ; R18 := R13; R17 := R13["0x2F79FBD3"]
-114 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-115 [-]: ADD       R17 R17 R6   ; R17 := R17 + R6
-116 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-117 [-]: SELF      R16 R13 K29  ; R17 := R13; R16 := R13["0x76C229EF"]
-118 [-]: MOVE      R18 R15      ; R18 := R15
-119 [-]: CALL      R16 3 1      ; R16(R17,R18)
-120 [-]: FORLOOP   R9 82        ; R9 += R11; if R9 <= R10 then begin PC := 82; R12 := R9 end
-121 [-]: RETURN    R0 1         ; return 
+ 78 [-]: GETGLOBAL R9 K23       ; R9 := 0xEC274B1A
+ 79 [-]: LOADK     R10 K24      ; R10 := "NLMagistar"
+ 80 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 81 [-]: LOADK     R10 K25      ; R10 := 1
+ 82 [-]: LEN       R11 R8       ; R11 := # R8
+ 83 [-]: LOADK     R12 K25      ; R12 := 1
+ 84 [-]: FORPREP   R10 140      ; R10 -= R12; PC := 140
+ 85 [-]: GETTABLE  R14 R8 R13   ; R14 := R8[R13]
+ 86 [-]: GETGLOBAL R15 K1       ; R15 := 0x400E7765
+ 87 [-]: MOVE      R16 R14      ; R16 := R14
+ 88 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 89 [-]: TEST      R15 1        ; if R15 then PC := 140
+ 90 [-]: JMP       140          ; PC := 140
+ 91 [-]: EQ        1 R14 R3     ; if R14 == R3 then PC := 140
+ 92 [-]: JMP       140          ; PC := 140
+ 93 [-]: SELF      R15 R14 K26  ; R16 := R14; R15 := R14["0x83D9304A"]
+ 94 [-]: MOVE      R17 R3       ; R17 := R3
+ 95 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+ 96 [-]: LE        0 R15 R7     ; if R15 > R7 then PC := 140
+ 97 [-]: JMP       140          ; PC := 140
+ 98 [-]: SELF      R15 R3 K27   ; R16 := R3; R15 := R3["0xCEE55F77"]
+ 99 [-]: MOVE      R17 R14      ; R17 := R14
+100 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+101 [-]: TEST      R15 0        ; if not R15 then PC := 140
+102 [-]: JMP       140          ; PC := 140
+103 [-]: SELF      R15 R14 K28  ; R16 := R14; R15 := R14["0x9B4AA3E9"]
+104 [-]: MOVE      R17 R3       ; R17 := R3
+105 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+106 [-]: TEST      R15 0        ; if not R15 then PC := 140
+107 [-]: JMP       140          ; PC := 140
+108 [-]: SELF      R15 R14 K29  ; R16 := R14; R15 := R14["0x495F554F"]
+109 [-]: GETGLOBAL R17 K30      ; R17 := Lotus_Game
+110 [-]: GETTABLE  R17 R17 K31  ; R17 := R17["AR_RESIST_HEAL"]
+111 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+112 [-]: TEST      R15 0        ; if not R15 then PC := 128
+113 [-]: JMP       128          ; PC := 128
+114 [-]: SELF      R15 R14 K5   ; R16 := R14; R15 := R14["0x8DB5D01F"]
+115 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+116 [-]: SELF      R15 R15 K32  ; R16 := R15; R15 := R15["0xCD475A2E"]
+117 [-]: MOVE      R17 R9       ; R17 := R9
+118 [-]: GETGLOBAL R18 K33      ; R18 := healResistDuration
+119 [-]: GETGLOBAL R19 K8       ; R19 := Game
+120 [-]: GETTABLE  R19 R19 K34  ; R19 := R19["AVATAR_HEAL_RATE_FORCED"]
+121 [-]: GETGLOBAL R20 K8       ; R20 := Game
+122 [-]: GETTABLE  R20 R20 K35  ; R20 := R20["ADD"]
+123 [-]: GETGLOBAL R21 K36      ; R21 := healResistHealth
+124 [-]: GETGLOBAL R22 K33      ; R22 := healResistDuration
+125 [-]: DIV       R21 R21 R22  ; R21 := R21 / R22
+126 [-]: CALL      R15 7 1      ; R15(R16,R17,R18,R19,R20,R21)
+127 [-]: JMP       140          ; PC := 140
+128 [-]: SELF      R15 R14 K37  ; R16 := R14; R15 := R14["0x385BD2FE"]
+129 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+130 [-]: GETGLOBAL R16 K13      ; R16 := math
+131 [-]: GETTABLE  R16 R16 K38  ; R16 := R16["0x65F9712A"]
+132 [-]: MOVE      R17 R15      ; R17 := R15
+133 [-]: SELF      R18 R14 K39  ; R19 := R14; R18 := R14["0x2F79FBD3"]
+134 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+135 [-]: ADD       R18 R18 R6   ; R18 := R18 + R6
+136 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+137 [-]: SELF      R17 R14 K40  ; R18 := R14; R17 := R14["0x76C229EF"]
+138 [-]: MOVE      R19 R16      ; R19 := R16
+139 [-]: CALL      R17 3 1      ; R17(R18,R19)
+140 [-]: FORLOOP   R10 85       ; R10 += R12; if R10 <= R11 then begin PC := 85; R13 := R10 end
+141 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 56
+; Defined at line: 68
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -229,7 +249,7 @@ code size: 76
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 62
+; Defined at line: 74
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -268,7 +288,7 @@ code size: 76
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 76
+; Defined at line: 88
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -313,7 +333,7 @@ code size: 76
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 89
+; Defined at line: 101
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

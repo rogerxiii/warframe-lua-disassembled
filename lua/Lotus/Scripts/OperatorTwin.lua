@@ -14,7 +14,7 @@ code size: 65
 code size: 60
 code size: 65
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\OperatorTwin.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\OperatorTwin.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -402,20 +402,20 @@ code size: 65
  54 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  55 [-]: SELF      R11 R1 K14   ; R12 := R1; R11 := R1["0xF23A7849"]
  56 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 57 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 57 [-]: CALL      R7 0 1       ; R7(R8,...)
  58 [-]: MOVE      R6 R1        ; R6 := R1
- 59 [-]: SELF      R8 R1 K15    ; R9 := R1; R8 := R1["0xD610586B"]
- 60 [-]: MOVE      R10 R5       ; R10 := R5
- 61 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 62 [-]: GETGLOBAL R8 K7        ; R8 := 0x4CDEF9FF
- 63 [-]: CALL      R8 1 2       ; R8 := R8()
- 64 [-]: ADD       R5 R5 R8     ; R5 := R5 + R8
- 65 [-]: GETGLOBAL R8 K8        ; R8 := 0x201191EA
- 66 [-]: LOADK     R9 K3        ; R9 := 0
- 67 [-]: CALL      R8 2 1       ; R8(R9)
+ 59 [-]: SELF      R7 R1 K15    ; R8 := R1; R7 := R1["0xD610586B"]
+ 60 [-]: MOVE      R9 R5        ; R9 := R5
+ 61 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 62 [-]: GETGLOBAL R7 K7        ; R7 := 0x4CDEF9FF
+ 63 [-]: CALL      R7 1 2       ; R7 := R7()
+ 64 [-]: ADD       R5 R5 R7     ; R5 := R5 + R7
+ 65 [-]: GETGLOBAL R7 K8        ; R7 := 0x201191EA
+ 66 [-]: LOADK     R8 K3        ; R8 := 0
+ 67 [-]: CALL      R7 2 1       ; R7(R8)
  68 [-]: JMP       44           ; PC := 44
- 69 [-]: SELF      R8 R1 K16    ; R9 := R1; R8 := R1["0xD4C2743F"]
- 70 [-]: CALL      R8 2 1       ; R8(R9)
+ 69 [-]: SELF      R7 R1 K16    ; R8 := R1; R7 := R1["0xD4C2743F"]
+ 70 [-]: CALL      R7 2 1       ; R7(R8)
  71 [-]: RETURN    R0 1         ; return 
 
 

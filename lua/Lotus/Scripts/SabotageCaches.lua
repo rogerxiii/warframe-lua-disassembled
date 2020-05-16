@@ -2,7 +2,7 @@ code size: 105
 code size: 33
 code size: 13
 code size: 37
-code size: 48
+code size: 64
 code size: 3
 code size: 26
 code size: 39
@@ -11,7 +11,7 @@ code size: 257
 code size: 278
 code size: 64
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\SabotageCaches.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\SabotageCaches.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -250,62 +250,78 @@ code size: 64
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
-  2 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0xED0EE7FB"]
-  3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0xED0EE7FB"]
-  6 [-]: GETUPVAL  R4 U1        ; R4 := U1
-  7 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  8 [-]: EQ        0 R2 K2      ; if R2 ~= 0 then PC := 11
-  9 [-]: JMP       11           ; PC := 11
- 10 [-]: RETURN    R0 1         ; return 
- 11 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 12 [-]: GETGLOBAL R4 K3        ; R4 := nativeFaction
- 13 [-]: GETGLOBAL R5 K4        ; R5 := 0xEC274B1A
- 14 [-]: LOADK     R6 K5        ; R6 := "Corpus"
- 15 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 16 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 20
- 17 [-]: JMP       20           ; PC := 20
- 18 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 19 [-]: JMP       27           ; PC := 27
- 20 [-]: GETGLOBAL R4 K3        ; R4 := nativeFaction
- 21 [-]: GETGLOBAL R5 K4        ; R5 := 0xEC274B1A
- 22 [-]: LOADK     R6 K6        ; R6 := "Orokin"
- 23 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 24 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 27
+  1 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
+  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xA559F558"]
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 1         ; if R0 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R0 K2        ; R0 := 0x400E7765
+  8 [-]: GETGLOBAL R1 K3        ; R1 := gGameRules
+  9 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 10 [-]: TEST      R0 0         ; if not R0 then PC := 16
+ 11 [-]: JMP       16           ; PC := 16
+ 12 [-]: GETGLOBAL R0 K4        ; R0 := 0x201191EA
+ 13 [-]: LOADK     R1 K5        ; R1 := 0
+ 14 [-]: CALL      R0 2 1       ; R0(R1)
+ 15 [-]: JMP       7            ; PC := 7
+ 16 [-]: GETGLOBAL R0 K3        ; R0 := gGameRules
+ 17 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0["0xED0EE7FB"]
+ 18 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 19 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+ 20 [-]: GETGLOBAL R1 K3        ; R1 := gGameRules
+ 21 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0xED0EE7FB"]
+ 22 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 23 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 24 [-]: EQ        0 R1 K5      ; if R1 ~= 0 then PC := 27
  25 [-]: JMP       27           ; PC := 27
- 26 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 27 [-]: GETUPVAL  R4 U5        ; R4 := U5
- 28 [-]: CALL      R4 1 2       ; R4 := R4()
- 29 [-]: TEST      R4 1         ; if R4 then PC := 35
- 30 [-]: JMP       35           ; PC := 35
- 31 [-]: GETGLOBAL R4 K7        ; R4 := _T
- 32 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["gTutorialMission"]
- 33 [-]: TEST      R4 0         ; if not R4 then PC := 42
- 34 [-]: JMP       42           ; PC := 42
- 35 [-]: GETUPVAL  R4 U6        ; R4 := U6
- 36 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xBFAE4F52"]
- 37 [-]: GETUPVAL  R5 U7        ; R5 := U7
- 38 [-]: MOVE      R6 R1        ; R6 := R1
- 39 [-]: MOVE      R7 R2        ; R7 := R2
- 40 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 41 [-]: JMP       48           ; PC := 48
- 42 [-]: GETUPVAL  R4 U6        ; R4 := U6
- 43 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["0x250DA1D0"]
- 44 [-]: MOVE      R5 R3        ; R5 := R3
- 45 [-]: MOVE      R6 R1        ; R6 := R1
- 46 [-]: MOVE      R7 R2        ; R7 := R2
- 47 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 48 [-]: RETURN    R0 1         ; return 
+ 26 [-]: RETURN    R0 1         ; return 
+ 27 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 28 [-]: GETGLOBAL R3 K7        ; R3 := nativeFaction
+ 29 [-]: GETGLOBAL R4 K8        ; R4 := 0xEC274B1A
+ 30 [-]: LOADK     R5 K9        ; R5 := "Corpus"
+ 31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 32 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 36
+ 33 [-]: JMP       36           ; PC := 36
+ 34 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 35 [-]: JMP       43           ; PC := 43
+ 36 [-]: GETGLOBAL R3 K7        ; R3 := nativeFaction
+ 37 [-]: GETGLOBAL R4 K8        ; R4 := 0xEC274B1A
+ 38 [-]: LOADK     R5 K10       ; R5 := "Orokin"
+ 39 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 40 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 43
+ 41 [-]: JMP       43           ; PC := 43
+ 42 [-]: GETUPVAL  R2 U4        ; R2 := U4
+ 43 [-]: GETUPVAL  R3 U5        ; R3 := U5
+ 44 [-]: CALL      R3 1 2       ; R3 := R3()
+ 45 [-]: TEST      R3 1         ; if R3 then PC := 51
+ 46 [-]: JMP       51           ; PC := 51
+ 47 [-]: GETGLOBAL R3 K11       ; R3 := _T
+ 48 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["gTutorialMission"]
+ 49 [-]: TEST      R3 0         ; if not R3 then PC := 58
+ 50 [-]: JMP       58           ; PC := 58
+ 51 [-]: GETUPVAL  R3 U6        ; R3 := U6
+ 52 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["0xBFAE4F52"]
+ 53 [-]: GETUPVAL  R4 U7        ; R4 := U7
+ 54 [-]: MOVE      R5 R0        ; R5 := R0
+ 55 [-]: MOVE      R6 R1        ; R6 := R1
+ 56 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 57 [-]: JMP       64           ; PC := 64
+ 58 [-]: GETUPVAL  R3 U6        ; R3 := U6
+ 59 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["0x250DA1D0"]
+ 60 [-]: MOVE      R4 R2        ; R4 := R2
+ 61 [-]: MOVE      R5 R0        ; R5 := R0
+ 62 [-]: MOVE      R6 R1        ; R6 := R1
+ 63 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 64 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 119
+; Defined at line: 125
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -319,7 +335,7 @@ code size: 64
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 123
+; Defined at line: 129
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -356,7 +372,7 @@ code size: 64
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 137
+; Defined at line: 143
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -406,7 +422,7 @@ code size: 64
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 152
+; Defined at line: 158
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -453,7 +469,7 @@ code size: 64
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 169
+; Defined at line: 175
 ; #Upvalues:       9
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -721,7 +737,7 @@ code size: 64
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 269
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1010,7 +1026,7 @@ code size: 64
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 382
+; Defined at line: 388
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0

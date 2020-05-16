@@ -17,7 +17,7 @@ code size: 20
 code size: 21
 code size: 14
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\Encounters\EventDefendMixer.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\Encounters\EventDefendMixer.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -391,7 +391,7 @@ code size: 14
  17 [-]: CONCAT    R0 R0 R2     ; R0 := R0 .. R1 .. R2
  18 [-]: GETUPVAL  R1 U2        ; R1 := U2
  19 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["0xBBA39962"]
- 20 [-]: LOADK     R2 K9        ; R2 := 18
+ 20 [-]: LOADK     R2 K9        ; R2 := 28
  21 [-]: MOVE      R3 R1        ; R3 := R1
  22 [-]: CALL      R1 3 1       ; R1(R2,R3)
  23 [-]: GETUPVAL  R1 U2        ; R1 := U2
@@ -417,7 +417,7 @@ code size: 14
  43 [-]: CONCAT    R0 R1 R3     ; R0 := R1 .. R2 .. R3
  44 [-]: GETUPVAL  R1 U4        ; R1 := U4
  45 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["0xBBA39962"]
- 46 [-]: LOADK     R2 K9        ; R2 := 18
+ 46 [-]: LOADK     R2 K9        ; R2 := 28
  47 [-]: MOVE      R3 R1        ; R3 := R1
  48 [-]: CALL      R1 3 1       ; R1(R2,R3)
  49 [-]: GETUPVAL  R1 U4        ; R1 := U4

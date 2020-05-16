@@ -6,12 +6,12 @@ code size: 31
 code size: 69
 code size: 88
 code size: 23
-code size: 206
+code size: 211
 code size: 104
-code size: 59
+code size: 56
 code size: 101
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\Malfunctions\WallBreach.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\Malfunctions\WallBreach.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -35,7 +35,7 @@ code size: 101
  13 [-]: LOADK     R6 K6        ; R6 := 100
  14 [-]: LOADK     R7 K7        ; R7 := "/Lotus/Types/Game/CrewShip/Malfunctions/WallBreach"
  15 [-]: MOVE      R8 R0        ; R8 := R0
- 16 [-]: LOADK     R9 K8        ; R9 := -0.30000001192093
+ 16 [-]: LOADK     R9 K8        ; R9 := -0.75
  17 [-]: LOADK     R10 K9       ; R10 := 0.20000000298023
  18 [-]: CLOSURE   R11 0        ; R11 := closure(Function #1)
  19 [-]: CLOSURE   R12 1        ; R12 := closure(Function #2)
@@ -89,7 +89,7 @@ code size: 101
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 22
+; Defined at line: 21
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -130,7 +130,7 @@ code size: 101
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 35
+; Defined at line: 34
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -155,7 +155,7 @@ code size: 101
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 41
+; Defined at line: 40
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -183,7 +183,7 @@ code size: 101
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 54
+; Defined at line: 53
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -225,7 +225,7 @@ code size: 101
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 72
+; Defined at line: 71
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -305,7 +305,7 @@ code size: 101
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 100
+; Defined at line: 99
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -404,7 +404,7 @@ code size: 101
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 129
+; Defined at line: 128
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -438,7 +438,7 @@ code size: 101
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 142
+; Defined at line: 141
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -467,8 +467,8 @@ code size: 101
  21 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
  22 [-]: MOVE      R3 R1        ; R3 := R1
  23 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 24 [-]: TEST      R2 1         ; if R2 then PC := 170
- 25 [-]: JMP       170          ; PC := 170
+ 24 [-]: TEST      R2 1         ; if R2 then PC := 175
+ 25 [-]: JMP       175          ; PC := 175
  26 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1["0xAAA5CD00"]
  27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  28 [-]: SELF      R4 R1 K7     ; R5 := R1; R4 := R1["0x6DA72501"]
@@ -525,137 +525,142 @@ code size: 101
  79 [-]: GETGLOBAL R14 K19      ; R14 := 0x9B21739C
  80 [-]: MOVE      R15 R8       ; R15 := R8
  81 [-]: CALL      R14 2 1      ; R14(R15)
- 82 [-]: TEST      R12 1        ; if R12 then PC := 101
- 83 [-]: JMP       101          ; PC := 101
- 84 [-]: GETGLOBAL R14 K31      ; R14 := 0x93B1256B
- 85 [-]: LOADK     R15 K32      ; R15 := "WARNING: WallBreach failed to generate a repair spline for "
- 86 [-]: GETUPVAL  R16 U3       ; R16 := U3
- 87 [-]: SELF      R16 R16 K33  ; R17 := R16; R16 := R16["0x1B252E3C"]
- 88 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 89 [-]: LOADK     R17 K34      ; R17 := " with projector "
- 90 [-]: SELF      R18 R1 K33   ; R19 := R1; R18 := R1["0x1B252E3C"]
- 91 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 92 [-]: LOADK     R19 K35      ; R19 := " at "
- 93 [-]: GETGLOBAL R20 K36      ; R20 := 0x9FAED6BC
- 94 [-]: SELF      R21 R1 K7    ; R22 := R1; R21 := R1["0x6DA72501"]
- 95 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
- 96 [-]: CALL      R20 0 2      ; R20 := R20(R21,...)
- 97 [-]: CONCAT    R15 R15 R20  ; R15 := R15 .. R16 .. R17 .. R18 .. R19 .. R20
- 98 [-]: CALL      R14 2 1      ; R14(R15)
- 99 [-]: MOVE      R2 R1        ; R2 := R1
-100 [-]: JMP       170          ; PC := 170
-101 [-]: GETUPVAL  R14 U6       ; R14 := U6
-102 [-]: MOVE      R15 R10      ; R15 := R10
-103 [-]: MOVE      R16 R11      ; R16 := R11
-104 [-]: CALL      R14 3 3      ; R14,R15 := R14(R15,R16)
-105 [-]: MOVE      R11 R15      ; R11 := R15
-106 [-]: MOVE      R10 R14      ; R10 := R14
-107 [-]: SETTABLE  R0 K37 R10   ; R0["boundsMin"] := R10
-108 [-]: SETTABLE  R0 K38 R11   ; R0["boundsMax"] := R11
-109 [-]: NEWTABLE  R14 0 0      ; R14 := {}
-110 [-]: LOADK     R15 K17      ; R15 := 1
-111 [-]: LEN       R16 R7       ; R16 := # R7
-112 [-]: LOADK     R17 K17      ; R17 := 1
-113 [-]: FORPREP   R15 119      ; R15 -= R17; PC := 119
-114 [-]: GETGLOBAL R19 K39      ; R19 := table
-115 [-]: GETTABLE  R19 R19 K40  ; R19 := R19["0xE6450C9D"]
-116 [-]: MOVE      R20 R14      ; R20 := R14
-117 [-]: GETTABLE  R21 R7 R18   ; R21 := R7[R18]
-118 [-]: CALL      R19 3 1      ; R19(R20,R21)
-119 [-]: FORLOOP   R15 114      ; R15 += R17; if R15 <= R16 then begin PC := 114; R18 := R15 end
-120 [-]: GETGLOBAL R19 K39      ; R19 := table
-121 [-]: GETTABLE  R19 R19 K40  ; R19 := R19["0xE6450C9D"]
-122 [-]: MOVE      R20 R14      ; R20 := R14
-123 [-]: GETTABLE  R21 R7 K17   ; R21 := R7[1]
-124 [-]: CALL      R19 3 1      ; R19(R20,R21)
-125 [-]: SELF      R19 R6 K41   ; R20 := R6; R19 := R6["0xD124E361"]
-126 [-]: GETGLOBAL R21 K42      ; R21 := 0xEC274B1A
-127 [-]: LOADK     R22 K43      ; R22 := "AlphaAtten"
-128 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-129 [-]: LOADK     R22 K17      ; R22 := 1
-130 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
-131 [-]: SELF      R19 R6 K44   ; R20 := R6; R19 := R6["0x5BD03F6B"]
-132 [-]: MOVE      R21 R14      ; R21 := R14
-133 [-]: CALL      R19 3 1      ; R19(R20,R21)
-134 [-]: SELF      R19 R6 K45   ; R20 := R6; R19 := R6["0x14839B5F"]
-135 [-]: GETGLOBAL R21 K46      ; R21 := math
-136 [-]: GETTABLE  R21 R21 K47  ; R21 := R21["0xBCF846DF"]
-137 [-]: GETUPVAL  R22 U7       ; R22 := U7
-138 [-]: DIV       R22 R22 R13  ; R22 := R22 / R13
-139 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
-140 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
-141 [-]: LOADK     R20 K17      ; R20 := 1
-142 [-]: LEN       R21 R19      ; R21 := # R19
-143 [-]: LOADK     R22 K17      ; R22 := 1
-144 [-]: FORPREP   R20 169      ; R20 -= R22; PC := 169
-145 [-]: GETGLOBAL R24 K48      ; R24 := 0x4CBE9A09
-146 [-]: GETTABLE  R25 R19 R23  ; R25 := R19[R23]
-147 [-]: MOVE      R26 R5       ; R26 := R5
-148 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-149 [-]: ADD       R24 R24 R4   ; R24 := R24 + R4
-150 [-]: GETGLOBAL R25 K39      ; R25 := table
-151 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["0xE6450C9D"]
-152 [-]: GETTABLE  R26 R0 K49   ; R26 := R0["points"]
-153 [-]: MOVE      R27 R24      ; R27 := R24
-154 [-]: CALL      R25 3 1      ; R25(R26,R27)
-155 [-]: GETUPVAL  R25 U8       ; R25 := U8
-156 [-]: TEST      R25 0        ; if not R25 then PC := 169
-157 [-]: JMP       169          ; PC := 169
-158 [-]: GETGLOBAL R25 K11      ; R25 := gRegion
-159 [-]: SELF      R25 R25 K50  ; R26 := R25; R25 := R25["0x693A02C8"]
-160 [-]: MOVE      R27 R24      ; R27 := R24
-161 [-]: LOADK     R28 K51      ; R28 := 0.050000000745058
-162 [-]: GETGLOBAL R29 K52      ; R29 := 0xB5A59043
-163 [-]: LOADK     R30 K53      ; R30 := 255
-164 [-]: LOADK     R31 K23      ; R31 := 0
-165 [-]: LOADK     R32 K23      ; R32 := 0
-166 [-]: CALL      R29 4 2      ; R29 := R29(R30,R31,R32)
-167 [-]: GETUPVAL  R30 U9       ; R30 := U9
-168 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
-169 [-]: FORLOOP   R20 145      ; R20 += R22; if R20 <= R21 then begin PC := 145; R23 := R20 end
-170 [-]: TEST      R2 0         ; if not R2 then PC := 202
-171 [-]: JMP       202          ; PC := 202
-172 [-]: GETGLOBAL R25 K31      ; R25 := 0x93B1256B
-173 [-]: LOADK     R26 K54      ; R26 := "WARNING WallBreach: Falling back to single point repair."
-174 [-]: CALL      R25 2 1      ; R25(R26)
-175 [-]: GETUPVAL  R25 U3       ; R25 := U3
-176 [-]: SELF      R25 R25 K7   ; R26 := R25; R25 := R25["0x6DA72501"]
-177 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-178 [-]: GETGLOBAL R26 K29      ; R26 := 0x221C9700
-179 [-]: LOADK     R27 K17      ; R27 := 1
-180 [-]: LOADK     R28 K17      ; R28 := 1
-181 [-]: LOADK     R29 K17      ; R29 := 1
-182 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
-183 [-]: SUB       R25 R25 R26  ; R25 := R25 - R26
-184 [-]: SETTABLE  R0 K37 R25   ; R0["boundsMin"] := R25
-185 [-]: GETUPVAL  R25 U3       ; R25 := U3
-186 [-]: SELF      R25 R25 K7   ; R26 := R25; R25 := R25["0x6DA72501"]
-187 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-188 [-]: GETGLOBAL R26 K29      ; R26 := 0x221C9700
-189 [-]: LOADK     R27 K17      ; R27 := 1
-190 [-]: LOADK     R28 K17      ; R28 := 1
-191 [-]: LOADK     R29 K17      ; R29 := 1
-192 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
-193 [-]: ADD       R25 R25 R26  ; R25 := R25 + R26
-194 [-]: SETTABLE  R0 K38 R25   ; R0["boundsMax"] := R25
-195 [-]: GETGLOBAL R25 K39      ; R25 := table
-196 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["0xE6450C9D"]
-197 [-]: GETTABLE  R26 R0 K49   ; R26 := R0["points"]
-198 [-]: GETUPVAL  R27 U3       ; R27 := U3
-199 [-]: SELF      R27 R27 K7   ; R28 := R27; R27 := R27["0x6DA72501"]
-200 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
-201 [-]: CALL      R25 0 1      ; R25(R26,...)
-202 [-]: GETGLOBAL R25 K1       ; R25 := _T
-203 [-]: GETTABLE  R25 R25 K2   ; R25 := R25["WallBreaches"]
-204 [-]: GETUPVAL  R26 U3       ; R26 := U3
-205 [-]: SETTABLE  R25 R26 R0   ; R25[R26] := R0
-206 [-]: RETURN    R0 1         ; return 
+ 82 [-]: GETGLOBAL R14 K0       ; R14 := 0x400E7765
+ 83 [-]: MOVE      R15 R6       ; R15 := R6
+ 84 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 85 [-]: TEST      R14 1        ; if R14 then PC := 89
+ 86 [-]: JMP       89           ; PC := 89
+ 87 [-]: TEST      R12 1        ; if R12 then PC := 106
+ 88 [-]: JMP       106          ; PC := 106
+ 89 [-]: GETGLOBAL R14 K31      ; R14 := 0x93B1256B
+ 90 [-]: LOADK     R15 K32      ; R15 := "WARNING: WallBreach failed to generate a repair spline for "
+ 91 [-]: GETUPVAL  R16 U3       ; R16 := U3
+ 92 [-]: SELF      R16 R16 K33  ; R17 := R16; R16 := R16["0x1B252E3C"]
+ 93 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+ 94 [-]: LOADK     R17 K34      ; R17 := " with projector "
+ 95 [-]: SELF      R18 R1 K33   ; R19 := R1; R18 := R1["0x1B252E3C"]
+ 96 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 97 [-]: LOADK     R19 K35      ; R19 := " at "
+ 98 [-]: GETGLOBAL R20 K36      ; R20 := 0x9FAED6BC
+ 99 [-]: SELF      R21 R1 K7    ; R22 := R1; R21 := R1["0x6DA72501"]
+100 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
+101 [-]: CALL      R20 0 2      ; R20 := R20(R21,...)
+102 [-]: CONCAT    R15 R15 R20  ; R15 := R15 .. R16 .. R17 .. R18 .. R19 .. R20
+103 [-]: CALL      R14 2 1      ; R14(R15)
+104 [-]: MOVE      R2 R1        ; R2 := R1
+105 [-]: JMP       175          ; PC := 175
+106 [-]: GETUPVAL  R14 U6       ; R14 := U6
+107 [-]: MOVE      R15 R10      ; R15 := R10
+108 [-]: MOVE      R16 R11      ; R16 := R11
+109 [-]: CALL      R14 3 3      ; R14,R15 := R14(R15,R16)
+110 [-]: MOVE      R11 R15      ; R11 := R15
+111 [-]: MOVE      R10 R14      ; R10 := R14
+112 [-]: SETTABLE  R0 K37 R10   ; R0["boundsMin"] := R10
+113 [-]: SETTABLE  R0 K38 R11   ; R0["boundsMax"] := R11
+114 [-]: NEWTABLE  R14 0 0      ; R14 := {}
+115 [-]: LOADK     R15 K17      ; R15 := 1
+116 [-]: LEN       R16 R7       ; R16 := # R7
+117 [-]: LOADK     R17 K17      ; R17 := 1
+118 [-]: FORPREP   R15 124      ; R15 -= R17; PC := 124
+119 [-]: GETGLOBAL R19 K39      ; R19 := table
+120 [-]: GETTABLE  R19 R19 K40  ; R19 := R19["0xE6450C9D"]
+121 [-]: MOVE      R20 R14      ; R20 := R14
+122 [-]: GETTABLE  R21 R7 R18   ; R21 := R7[R18]
+123 [-]: CALL      R19 3 1      ; R19(R20,R21)
+124 [-]: FORLOOP   R15 119      ; R15 += R17; if R15 <= R16 then begin PC := 119; R18 := R15 end
+125 [-]: GETGLOBAL R19 K39      ; R19 := table
+126 [-]: GETTABLE  R19 R19 K40  ; R19 := R19["0xE6450C9D"]
+127 [-]: MOVE      R20 R14      ; R20 := R14
+128 [-]: GETTABLE  R21 R7 K17   ; R21 := R7[1]
+129 [-]: CALL      R19 3 1      ; R19(R20,R21)
+130 [-]: SELF      R19 R6 K41   ; R20 := R6; R19 := R6["0xD124E361"]
+131 [-]: GETGLOBAL R21 K42      ; R21 := 0xEC274B1A
+132 [-]: LOADK     R22 K43      ; R22 := "AlphaAtten"
+133 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+134 [-]: LOADK     R22 K17      ; R22 := 1
+135 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
+136 [-]: SELF      R19 R6 K44   ; R20 := R6; R19 := R6["0x5BD03F6B"]
+137 [-]: MOVE      R21 R14      ; R21 := R14
+138 [-]: CALL      R19 3 1      ; R19(R20,R21)
+139 [-]: SELF      R19 R6 K45   ; R20 := R6; R19 := R6["0x14839B5F"]
+140 [-]: GETGLOBAL R21 K46      ; R21 := math
+141 [-]: GETTABLE  R21 R21 K47  ; R21 := R21["0xBCF846DF"]
+142 [-]: GETUPVAL  R22 U7       ; R22 := U7
+143 [-]: DIV       R22 R22 R13  ; R22 := R22 / R13
+144 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
+145 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
+146 [-]: LOADK     R20 K17      ; R20 := 1
+147 [-]: LEN       R21 R19      ; R21 := # R19
+148 [-]: LOADK     R22 K17      ; R22 := 1
+149 [-]: FORPREP   R20 174      ; R20 -= R22; PC := 174
+150 [-]: GETGLOBAL R24 K48      ; R24 := 0x4CBE9A09
+151 [-]: GETTABLE  R25 R19 R23  ; R25 := R19[R23]
+152 [-]: MOVE      R26 R5       ; R26 := R5
+153 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
+154 [-]: ADD       R24 R24 R4   ; R24 := R24 + R4
+155 [-]: GETGLOBAL R25 K39      ; R25 := table
+156 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["0xE6450C9D"]
+157 [-]: GETTABLE  R26 R0 K49   ; R26 := R0["points"]
+158 [-]: MOVE      R27 R24      ; R27 := R24
+159 [-]: CALL      R25 3 1      ; R25(R26,R27)
+160 [-]: GETUPVAL  R25 U8       ; R25 := U8
+161 [-]: TEST      R25 0        ; if not R25 then PC := 174
+162 [-]: JMP       174          ; PC := 174
+163 [-]: GETGLOBAL R25 K11      ; R25 := gRegion
+164 [-]: SELF      R25 R25 K50  ; R26 := R25; R25 := R25["0x693A02C8"]
+165 [-]: MOVE      R27 R24      ; R27 := R24
+166 [-]: LOADK     R28 K51      ; R28 := 0.050000000745058
+167 [-]: GETGLOBAL R29 K52      ; R29 := 0xB5A59043
+168 [-]: LOADK     R30 K53      ; R30 := 255
+169 [-]: LOADK     R31 K23      ; R31 := 0
+170 [-]: LOADK     R32 K23      ; R32 := 0
+171 [-]: CALL      R29 4 2      ; R29 := R29(R30,R31,R32)
+172 [-]: GETUPVAL  R30 U9       ; R30 := U9
+173 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
+174 [-]: FORLOOP   R20 150      ; R20 += R22; if R20 <= R21 then begin PC := 150; R23 := R20 end
+175 [-]: TEST      R2 0         ; if not R2 then PC := 207
+176 [-]: JMP       207          ; PC := 207
+177 [-]: GETGLOBAL R25 K31      ; R25 := 0x93B1256B
+178 [-]: LOADK     R26 K54      ; R26 := "WARNING WallBreach: Falling back to single point repair."
+179 [-]: CALL      R25 2 1      ; R25(R26)
+180 [-]: GETUPVAL  R25 U3       ; R25 := U3
+181 [-]: SELF      R25 R25 K7   ; R26 := R25; R25 := R25["0x6DA72501"]
+182 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+183 [-]: GETGLOBAL R26 K29      ; R26 := 0x221C9700
+184 [-]: LOADK     R27 K17      ; R27 := 1
+185 [-]: LOADK     R28 K17      ; R28 := 1
+186 [-]: LOADK     R29 K17      ; R29 := 1
+187 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
+188 [-]: SUB       R25 R25 R26  ; R25 := R25 - R26
+189 [-]: SETTABLE  R0 K37 R25   ; R0["boundsMin"] := R25
+190 [-]: GETUPVAL  R25 U3       ; R25 := U3
+191 [-]: SELF      R25 R25 K7   ; R26 := R25; R25 := R25["0x6DA72501"]
+192 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+193 [-]: GETGLOBAL R26 K29      ; R26 := 0x221C9700
+194 [-]: LOADK     R27 K17      ; R27 := 1
+195 [-]: LOADK     R28 K17      ; R28 := 1
+196 [-]: LOADK     R29 K17      ; R29 := 1
+197 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
+198 [-]: ADD       R25 R25 R26  ; R25 := R25 + R26
+199 [-]: SETTABLE  R0 K38 R25   ; R0["boundsMax"] := R25
+200 [-]: GETGLOBAL R25 K39      ; R25 := table
+201 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["0xE6450C9D"]
+202 [-]: GETTABLE  R26 R0 K49   ; R26 := R0["points"]
+203 [-]: GETUPVAL  R27 U3       ; R27 := U3
+204 [-]: SELF      R27 R27 K7   ; R28 := R27; R27 := R27["0x6DA72501"]
+205 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
+206 [-]: CALL      R25 0 1      ; R25(R26,...)
+207 [-]: GETGLOBAL R25 K1       ; R25 := _T
+208 [-]: GETTABLE  R25 R25 K2   ; R25 := R25["WallBreaches"]
+209 [-]: GETUPVAL  R26 U3       ; R26 := U3
+210 [-]: SETTABLE  R25 R26 R0   ; R25[R26] := R0
+211 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 220
+; Defined at line: 219
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -770,77 +775,74 @@ code size: 101
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 246
+; Defined at line: 245
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x221C9700
   2 [-]: CALL      R0 1 2       ; R0 := R0()
-  3 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  4 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x6DA72501"]
-  5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: NEWTABLE  R2 4 0       ; R2 := {}
-  7 [-]: GETGLOBAL R3 K2        ; R3 := gBaseAvatarType
-  8 [-]: GETGLOBAL R4 K3        ; R4 := gPickUpType
-  9 [-]: GETGLOBAL R5 K4        ; R5 := gRagdollType
- 10 [-]: GETGLOBAL R6 K5        ; R6 := gHitProxyType
- 11 [-]: SETLIST   R2 4 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 4
- 12 [-]: GETGLOBAL R3 K6        ; R3 := 0xA0DB3B89
- 13 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 14 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0xF23A7849"]
- 15 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 16 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 17 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 18 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0x6DA72501"]
- 19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 20 [-]: MUL       R5 R3 K8     ; R5 := R3 * 0.0099999997764826
- 21 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
- 22 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 23 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5["0x6DA72501"]
- 24 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 25 [-]: MUL       R6 R3 K9     ; R6 := R3 * 2
- 26 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
- 27 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 28 [-]: TEST      R6 0         ; if not R6 then PC := 41
- 29 [-]: JMP       41           ; PC := 41
- 30 [-]: GETGLOBAL R6 K10       ; R6 := gRegion
- 31 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0xB75056C8"]
- 32 [-]: MOVE      R8 R4        ; R8 := R4
- 33 [-]: MOVE      R9 R5        ; R9 := R5
- 34 [-]: GETGLOBAL R10 K12      ; R10 := 0xB5A59043
- 35 [-]: LOADK     R11 K13      ; R11 := 0
- 36 [-]: LOADK     R12 K13      ; R12 := 0
- 37 [-]: LOADK     R13 K14      ; R13 := 255
- 38 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 39 [-]: LOADK     R11 K15      ; R11 := 30
- 40 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
- 41 [-]: GETGLOBAL R6 K10       ; R6 := gRegion
- 42 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6["0x908D9C9C"]
- 43 [-]: MOVE      R8 R4        ; R8 := R4
- 44 [-]: MOVE      R9 R5        ; R9 := R5
- 45 [-]: MOVE      R10 R2       ; R10 := R2
- 46 [-]: LOADNIL   R11 R11      ; R11 := nil
- 47 [-]: MOVE      R12 R0       ; R12 := R0
- 48 [-]: CALL      R6 7 2       ; R6 := R6(R7,R8,R9,R10,R11,R12)
- 49 [-]: TEST      R6 0         ; if not R6 then PC := 56
- 50 [-]: JMP       56           ; PC := 56
- 51 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 52 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0xEC183DDC"]
- 53 [-]: MOVE      R9 R0        ; R9 := R0
- 54 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 55 [-]: JMP       59           ; PC := 59
- 56 [-]: GETGLOBAL R7 K18       ; R7 := 0x93B1256B
- 57 [-]: LOADK     R8 K19       ; R8 := "WARNING: WallBreach failed to place itself on wall"
- 58 [-]: CALL      R7 2 1       ; R7(R8)
- 59 [-]: RETURN    R0 1         ; return 
+  3 [-]: NEWTABLE  R1 4 0       ; R1 := {}
+  4 [-]: GETGLOBAL R2 K1        ; R2 := gBaseAvatarType
+  5 [-]: GETGLOBAL R3 K2        ; R3 := gPickUpType
+  6 [-]: GETGLOBAL R4 K3        ; R4 := gRagdollType
+  7 [-]: GETGLOBAL R5 K4        ; R5 := gHitProxyType
+  8 [-]: SETLIST   R1 4 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 4
+  9 [-]: GETGLOBAL R2 K5        ; R2 := 0xA0DB3B89
+ 10 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 11 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0xF23A7849"]
+ 12 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
+ 13 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+ 14 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 15 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0x6DA72501"]
+ 16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 17 [-]: MUL       R4 R2 K8     ; R4 := R2 * 0.0099999997764826
+ 18 [-]: SUB       R3 R3 R4     ; R3 := R3 - R4
+ 19 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 20 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x6DA72501"]
+ 21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 22 [-]: MUL       R5 R2 K9     ; R5 := R2 * 2
+ 23 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
+ 24 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 25 [-]: TEST      R5 0         ; if not R5 then PC := 38
+ 26 [-]: JMP       38           ; PC := 38
+ 27 [-]: GETGLOBAL R5 K10       ; R5 := gRegion
+ 28 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0xB75056C8"]
+ 29 [-]: MOVE      R7 R3        ; R7 := R3
+ 30 [-]: MOVE      R8 R4        ; R8 := R4
+ 31 [-]: GETGLOBAL R9 K12       ; R9 := 0xB5A59043
+ 32 [-]: LOADK     R10 K13      ; R10 := 0
+ 33 [-]: LOADK     R11 K13      ; R11 := 0
+ 34 [-]: LOADK     R12 K14      ; R12 := 255
+ 35 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
+ 36 [-]: LOADK     R10 K15      ; R10 := 30
+ 37 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 38 [-]: GETGLOBAL R5 K10       ; R5 := gRegion
+ 39 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5["0x908D9C9C"]
+ 40 [-]: MOVE      R7 R3        ; R7 := R3
+ 41 [-]: MOVE      R8 R4        ; R8 := R4
+ 42 [-]: MOVE      R9 R1        ; R9 := R1
+ 43 [-]: LOADNIL   R10 R10      ; R10 := nil
+ 44 [-]: MOVE      R11 R0       ; R11 := R0
+ 45 [-]: CALL      R5 7 2       ; R5 := R5(R6,R7,R8,R9,R10,R11)
+ 46 [-]: TEST      R5 0         ; if not R5 then PC := 53
+ 47 [-]: JMP       53           ; PC := 53
+ 48 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 49 [-]: SELF      R6 R6 K17    ; R7 := R6; R6 := R6["0xEC183DDC"]
+ 50 [-]: MOVE      R8 R0        ; R8 := R0
+ 51 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 52 [-]: JMP       56           ; PC := 56
+ 53 [-]: GETGLOBAL R6 K18       ; R6 := 0x93B1256B
+ 54 [-]: LOADK     R7 K19       ; R7 := "WARNING: WallBreach failed to place itself on wall"
+ 55 [-]: CALL      R6 2 1       ; R6(R7)
+ 56 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 262
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0

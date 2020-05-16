@@ -19,7 +19,7 @@ code size: 50
 code size: 42
 code size: 33
 code size: 77
-code size: 84
+code size: 86
 code size: 13
 code size: 6
 code size: 33
@@ -65,7 +65,7 @@ code size: 5
 code size: 14
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\RaidSquad.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\RaidSquad.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1645,53 +1645,55 @@ code size: 3
  35 [-]: GETGLOBAL R8 K1        ; R8 := _G
  36 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["UIColor_White"]
  37 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 38 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 39 [-]: GETTABLE  R6 R6 K0     ; R6 := R6["0xF81722A2"]
- 40 [-]: TESTSET   R7 R2 1      ; if R2 then PC := 46 else R7 := R2
- 41 [-]: JMP       46           ; PC := 46
- 42 [-]: GETGLOBAL R7 K14       ; R7 := 0x400E7765
- 43 [-]: GETTABLE  R8 R1 K15    ; R8 := R1["Player"]
- 44 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 45 [-]: MOVE      R7 R7        ; R7 := R7
- 46 [-]: LOADK     R8 K18       ; R8 := 100
- 47 [-]: LOADK     R9 K19       ; R9 := 50
- 48 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 49 [-]: GETGLOBAL R7 K6        ; R7 := mMovie
- 50 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0x880196A7"]
- 51 [-]: GETTABLE  R9 R1 K8     ; R9 := R1["mClipName"]
- 52 [-]: LOADK     R10 K21      ; R10 := "Name"
- 53 [-]: LOADK     R11 K22      ; R11 := "textColor"
- 54 [-]: MOVE      R12 R5       ; R12 := R5
- 55 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 56 [-]: GETGLOBAL R7 K6        ; R7 := mMovie
- 57 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0x880196A7"]
- 58 [-]: GETTABLE  R9 R1 K8     ; R9 := R1["mClipName"]
- 59 [-]: LOADK     R10 K21      ; R10 := "Name"
- 60 [-]: LOADK     R11 K23      ; R11 := "_alpha"
- 61 [-]: MOVE      R12 R6       ; R12 := R6
- 62 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 63 [-]: GETGLOBAL R7 K6        ; R7 := mMovie
- 64 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0x880196A7"]
- 65 [-]: GETTABLE  R9 R1 K8     ; R9 := R1["mClipName"]
- 66 [-]: LOADK     R10 K24      ; R10 := "Message"
- 67 [-]: LOADK     R11 K22      ; R11 := "textColor"
- 68 [-]: MOVE      R12 R5       ; R12 := R5
- 69 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 70 [-]: GETGLOBAL R7 K6        ; R7 := mMovie
- 71 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0x880196A7"]
- 72 [-]: GETTABLE  R9 R1 K8     ; R9 := R1["mClipName"]
- 73 [-]: LOADK     R10 K24      ; R10 := "Message"
- 74 [-]: LOADK     R11 K23      ; R11 := "_alpha"
- 75 [-]: MOVE      R12 R6       ; R12 := R6
- 76 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 77 [-]: GETGLOBAL R7 K6        ; R7 := mMovie
- 78 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0x880196A7"]
- 79 [-]: GETTABLE  R9 R1 K8     ; R9 := R1["mClipName"]
- 80 [-]: LOADK     R10 K25      ; R10 := "Icon"
- 81 [-]: LOADK     R11 K26      ; R11 := "_color"
- 82 [-]: MOVE      R12 R5       ; R12 := R5
- 83 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 84 [-]: RETURN    R0 1         ; return 
+ 38 [-]: MOVE      R3 R5        ; R3 := R5
+ 39 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 40 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["0xF81722A2"]
+ 41 [-]: TESTSET   R6 R2 1      ; if R2 then PC := 47 else R6 := R2
+ 42 [-]: JMP       47           ; PC := 47
+ 43 [-]: GETGLOBAL R6 K14       ; R6 := 0x400E7765
+ 44 [-]: GETTABLE  R7 R1 K15    ; R7 := R1["Player"]
+ 45 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 46 [-]: MOVE      R6 R6        ; R6 := R6
+ 47 [-]: LOADK     R7 K18       ; R7 := 100
+ 48 [-]: LOADK     R8 K19       ; R8 := 50
+ 49 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
+ 50 [-]: MOVE      R4 R5        ; R4 := R5
+ 51 [-]: GETGLOBAL R5 K6        ; R5 := mMovie
+ 52 [-]: SELF      R5 R5 K20    ; R6 := R5; R5 := R5["0x880196A7"]
+ 53 [-]: GETTABLE  R7 R1 K8     ; R7 := R1["mClipName"]
+ 54 [-]: LOADK     R8 K21       ; R8 := "Name"
+ 55 [-]: LOADK     R9 K22       ; R9 := "textColor"
+ 56 [-]: MOVE      R10 R3       ; R10 := R3
+ 57 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 58 [-]: GETGLOBAL R5 K6        ; R5 := mMovie
+ 59 [-]: SELF      R5 R5 K20    ; R6 := R5; R5 := R5["0x880196A7"]
+ 60 [-]: GETTABLE  R7 R1 K8     ; R7 := R1["mClipName"]
+ 61 [-]: LOADK     R8 K21       ; R8 := "Name"
+ 62 [-]: LOADK     R9 K23       ; R9 := "_alpha"
+ 63 [-]: MOVE      R10 R4       ; R10 := R4
+ 64 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 65 [-]: GETGLOBAL R5 K6        ; R5 := mMovie
+ 66 [-]: SELF      R5 R5 K20    ; R6 := R5; R5 := R5["0x880196A7"]
+ 67 [-]: GETTABLE  R7 R1 K8     ; R7 := R1["mClipName"]
+ 68 [-]: LOADK     R8 K24       ; R8 := "Message"
+ 69 [-]: LOADK     R9 K22       ; R9 := "textColor"
+ 70 [-]: MOVE      R10 R3       ; R10 := R3
+ 71 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 72 [-]: GETGLOBAL R5 K6        ; R5 := mMovie
+ 73 [-]: SELF      R5 R5 K20    ; R6 := R5; R5 := R5["0x880196A7"]
+ 74 [-]: GETTABLE  R7 R1 K8     ; R7 := R1["mClipName"]
+ 75 [-]: LOADK     R8 K24       ; R8 := "Message"
+ 76 [-]: LOADK     R9 K23       ; R9 := "_alpha"
+ 77 [-]: MOVE      R10 R4       ; R10 := R4
+ 78 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 79 [-]: GETGLOBAL R5 K6        ; R5 := mMovie
+ 80 [-]: SELF      R5 R5 K20    ; R6 := R5; R5 := R5["0x880196A7"]
+ 81 [-]: GETTABLE  R7 R1 K8     ; R7 := R1["mClipName"]
+ 82 [-]: LOADK     R8 K25       ; R8 := "Icon"
+ 83 [-]: LOADK     R9 K26       ; R9 := "_color"
+ 84 [-]: MOVE      R10 R3       ; R10 := R3
+ 85 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 86 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #18.2:

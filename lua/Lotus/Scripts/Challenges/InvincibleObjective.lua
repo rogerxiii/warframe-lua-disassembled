@@ -1,9 +1,9 @@
-code size: 16
+code size: 10
 code size: 9
 code size: 11
 code size: 30
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Challenges\InvincibleObjective.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Challenges\InvincibleObjective.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -12,22 +12,16 @@ code size: 30
 ; Is_vararg:       2
 ; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R0 K1        ; R0 := 0xEC274B1A
-  2 [-]: CALL      R0 1 2       ; R0 := R0()
-  3 [-]: SETGLOBAL R0 K0        ; startTag := R0
-  4 [-]: GETGLOBAL R0 K1        ; R0 := 0xEC274B1A
-  5 [-]: CALL      R0 1 2       ; R0 := R0()
-  6 [-]: SETGLOBAL R0 K2        ; endTag := R0
-  7 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  8 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  9 [-]: MOVE      R0 R0        ; R0 := R0
- 10 [-]: SETGLOBAL R1 K3        ; MatchAttackEvent := R1
- 11 [-]: SETGLOBAL R1 K4        ; 0xC323FF28 := R1
- 12 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
- 13 [-]: MOVE      R0 R0        ; R0 := R0
- 14 [-]: SETGLOBAL R1 K5        ; MatchTagEvent := R1
- 15 [-]: SETGLOBAL R1 K6        ; 0xB28DA066 := R1
- 16 [-]: RETURN    R0 1         ; return 
+  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
+  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
+  3 [-]: MOVE      R0 R0        ; R0 := R0
+  4 [-]: SETGLOBAL R1 K0        ; MatchAttackEvent := R1
+  5 [-]: SETGLOBAL R1 K1        ; 0xC323FF28 := R1
+  6 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
+  7 [-]: MOVE      R0 R0        ; R0 := R0
+  8 [-]: SETGLOBAL R1 K2        ; MatchTagEvent := R1
+  9 [-]: SETGLOBAL R1 K3        ; 0xB28DA066 := R1
+ 10 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:

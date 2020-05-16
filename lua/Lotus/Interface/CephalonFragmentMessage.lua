@@ -12,7 +12,7 @@ code size: 51
 code size: 89
 code size: 18
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\CephalonFragmentMessage.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\CephalonFragmentMessage.luac 
 
 ; Name:            
 ; Defined at line: 0

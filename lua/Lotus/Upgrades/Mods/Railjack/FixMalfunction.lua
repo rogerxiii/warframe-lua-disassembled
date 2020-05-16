@@ -3,26 +3,26 @@ code size: 10
 code size: 30
 code size: 57
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Upgrades\Mods\Railjack\FixMalfunction.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Upgrades\Mods\Railjack\FixMalfunction.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  10
+; Max Stack Size:  9
 
-  1 [-]: LOADK     R0 K0        ; R0 := 300
-  2 [-]: NEWTABLE  R1 8 0       ; R1 := {}
-  3 [-]: LOADK     R2 K1        ; R2 := 1
-  4 [-]: LOADK     R3 K2        ; R3 := 2
-  5 [-]: LOADK     R4 K3        ; R4 := 3
-  6 [-]: LOADK     R5 K4        ; R5 := 4
-  7 [-]: LOADK     R6 K5        ; R6 := 5
-  8 [-]: LOADK     R7 K6        ; R7 := 6
-  9 [-]: LOADK     R8 K7        ; R8 := 7
- 10 [-]: LOADK     R9 K8        ; R9 := 8
- 11 [-]: SETLIST   R1 8 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 8
+  1 [-]: NEWTABLE  R0 8 0       ; R0 := {}
+  2 [-]: LOADK     R1 K0        ; R1 := 300
+  3 [-]: LOADK     R2 K1        ; R2 := 290
+  4 [-]: LOADK     R3 K2        ; R3 := 275
+  5 [-]: LOADK     R4 K3        ; R4 := 260
+  6 [-]: LOADK     R5 K4        ; R5 := 245
+  7 [-]: LOADK     R6 K5        ; R6 := 230
+  8 [-]: LOADK     R7 K6        ; R7 := 215
+  9 [-]: LOADK     R8 K7        ; R8 := 200
+ 10 [-]: SETLIST   R0 8 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 8
+ 11 [-]: LOADK     R1 K8        ; R1 := 1
  12 [-]: GETGLOBAL R2 K9        ; R2 := 0x329BDC44
  13 [-]: LOADK     R3 K10       ; R3 := "Lotus.Scripts.Libs.AbilitiesLib"
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -30,18 +30,18 @@ code size: 57
  16 [-]: LOADK     R4 K11       ; R4 := "EE.Interface.Utilities"
  17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  18 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
- 19 [-]: MOVE      R0 R1        ; R0 := R1
+ 19 [-]: MOVE      R0 R0        ; R0 := R0
  20 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
  21 [-]: MOVE      R0 R4        ; R0 := R4
- 22 [-]: MOVE      R0 R0        ; R0 := R0
+ 22 [-]: MOVE      R0 R1        ; R0 := R1
  23 [-]: MOVE      R0 R3        ; R0 := R3
  24 [-]: MOVE      R0 R2        ; R0 := R2
  25 [-]: SETGLOBAL R5 K12       ; GetDescription := R5
  26 [-]: SETGLOBAL R5 K13       ; 0xE78DEE2B := R5
  27 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
  28 [-]: MOVE      R0 R2        ; R0 := R2
- 29 [-]: MOVE      R0 R0        ; R0 := R0
- 30 [-]: MOVE      R0 R4        ; R0 := R4
+ 29 [-]: MOVE      R0 R4        ; R0 := R4
+ 30 [-]: MOVE      R0 R1        ; R0 := R1
  31 [-]: SETGLOBAL R5 K14       ; ActivateAbility := R5
  32 [-]: SETGLOBAL R5 K15       ; 0xCC0B19E0 := R5
  33 [-]: RETURN    R0 1         ; return 
@@ -81,9 +81,9 @@ code size: 57
   2 [-]: MOVE      R4 R0        ; R4 := R0
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   4 [-]: NEWTABLE  R4 0 2       ; R4 := {}
-  5 [-]: SETTABLE  R4 K0 R3     ; R4["COUNT"] := R3
-  6 [-]: GETUPVAL  R5 U1        ; R5 := U1
-  7 [-]: SETTABLE  R4 K1 R5     ; R4["COOLDOWN"] := R5
+  5 [-]: GETUPVAL  R5 U1        ; R5 := U1
+  6 [-]: SETTABLE  R4 K0 R5     ; R4["COUNT"] := R5
+  7 [-]: SETTABLE  R4 K1 R3     ; R4["COOLDOWN"] := R3
   8 [-]: GETGLOBAL R5 K2        ; R5 := gRegion
   9 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5["0x3E2F6BF"]
  10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -97,7 +97,7 @@ code size: 57
  18 [-]: GETUPVAL  R7 U3        ; R7 := U3
  19 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["0x5F406B25"]
  20 [-]: MOVE      R8 R5        ; R8 := R5
- 21 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 21 [-]: MOVE      R9 R3        ; R9 := R3
  22 [-]: CALL      R7 3 0       ; R7,... := R7(R8,R9)
  23 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
  24 [-]: SETTABLE  R4 K1 R6     ; R4["COOLDOWN"] := R6
@@ -124,56 +124,56 @@ code size: 57
   4 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["0x5F406B25"]
   5 [-]: MOVE      R9 R5        ; R9 := R5
   6 [-]: GETUPVAL  R10 U1       ; R10 := U1
-  7 [-]: CALL      R8 3 0       ; R8,... := R8(R9,R10)
-  8 [-]: CALL      R6 0 1       ; R6(R7,...)
-  9 [-]: LOADNIL   R6 R6        ; R6 := nil
- 10 [-]: GETGLOBAL R7 K3        ; R7 := gRegion
- 11 [-]: SELF      R7 R7 K4     ; R8 := R7; R7 := R7["0x848C9FE0"]
- 12 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 13 [-]: GETGLOBAL R8 K5        ; R8 := 0xECFDD17
- 14 [-]: MOVE      R9 R7        ; R9 := R7
- 15 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
- 16 [-]: JMP       27           ; PC := 27
- 17 [-]: SELF      R13 R12 K6   ; R14 := R12; R13 := R12["0x8DB5D01F"]
- 18 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 19 [-]: SELF      R13 R13 K7   ; R14 := R13; R13 := R13["0x7AEE2957"]
+  7 [-]: MOVE      R11 R3       ; R11 := R3
+  8 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+  9 [-]: CALL      R8 0 0       ; R8,... := R8(R9,...)
+ 10 [-]: CALL      R6 0 1       ; R6(R7,...)
+ 11 [-]: LOADNIL   R6 R6        ; R6 := nil
+ 12 [-]: GETGLOBAL R7 K3        ; R7 := gRegion
+ 13 [-]: SELF      R7 R7 K4     ; R8 := R7; R7 := R7["0x848C9FE0"]
+ 14 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 15 [-]: GETGLOBAL R8 K5        ; R8 := 0xECFDD17
+ 16 [-]: MOVE      R9 R7        ; R9 := R7
+ 17 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
+ 18 [-]: JMP       29           ; PC := 29
+ 19 [-]: SELF      R13 R12 K6   ; R14 := R12; R13 := R12["0x8DB5D01F"]
  20 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 21 [-]: EQ        0 R13 R0     ; if R13 ~= R0 then PC := 27
- 22 [-]: JMP       27           ; PC := 27
- 23 [-]: SELF      R13 R12 K8   ; R14 := R12; R13 := R12["0x6DA72501"]
- 24 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 25 [-]: MOVE      R6 R13       ; R6 := R13
- 26 [-]: JMP       29           ; PC := 29
- 27 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 17; R10 := R11 end
- 28 [-]: JMP       17           ; PC := 17
- 29 [-]: LOADNIL   R13 R13      ; R13 := nil
- 30 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
- 31 [-]: MOVE      R15 R6       ; R15 := R6
- 32 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 33 [-]: TEST      R14 1        ; if R14 then PC := 42
- 34 [-]: JMP       42           ; PC := 42
- 35 [-]: GETGLOBAL R14 K3       ; R14 := gRegion
- 36 [-]: SELF      R14 R14 K10  ; R15 := R14; R14 := R14["0xA10978B4"]
- 37 [-]: GETGLOBAL R16 K11      ; R16 := malfunctionSpawnerTag
- 38 [-]: MOVE      R17 R6       ; R17 := R6
- 39 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
- 40 [-]: MOVE      R13 R14      ; R13 := R14
- 41 [-]: JMP       47           ; PC := 47
- 42 [-]: GETGLOBAL R14 K3       ; R14 := gRegion
- 43 [-]: SELF      R14 R14 K12  ; R15 := R14; R14 := R14["0x90391273"]
- 44 [-]: GETGLOBAL R16 K11      ; R16 := malfunctionSpawnerTag
- 45 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 46 [-]: MOVE      R13 R14      ; R13 := R14
- 47 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
- 48 [-]: MOVE      R15 R13      ; R15 := R13
- 49 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 50 [-]: TEST      R14 1        ; if R14 then PC := 57
- 51 [-]: JMP       57           ; PC := 57
- 52 [-]: SELF      R14 R13 K13  ; R15 := R13; R14 := R13["0x890A3A60"]
- 53 [-]: GETUPVAL  R16 U2       ; R16 := U2
- 54 [-]: MOVE      R17 R3       ; R17 := R3
- 55 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
- 56 [-]: CALL      R14 0 1      ; R14(R15,...)
+ 21 [-]: SELF      R13 R13 K7   ; R14 := R13; R13 := R13["0x7AEE2957"]
+ 22 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 23 [-]: EQ        0 R13 R0     ; if R13 ~= R0 then PC := 29
+ 24 [-]: JMP       29           ; PC := 29
+ 25 [-]: SELF      R13 R12 K8   ; R14 := R12; R13 := R12["0x6DA72501"]
+ 26 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 27 [-]: MOVE      R6 R13       ; R6 := R13
+ 28 [-]: JMP       31           ; PC := 31
+ 29 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 19; R10 := R11 end
+ 30 [-]: JMP       19           ; PC := 19
+ 31 [-]: LOADNIL   R13 R13      ; R13 := nil
+ 32 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
+ 33 [-]: MOVE      R15 R6       ; R15 := R6
+ 34 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 35 [-]: TEST      R14 1        ; if R14 then PC := 44
+ 36 [-]: JMP       44           ; PC := 44
+ 37 [-]: GETGLOBAL R14 K3       ; R14 := gRegion
+ 38 [-]: SELF      R14 R14 K10  ; R15 := R14; R14 := R14["0xA10978B4"]
+ 39 [-]: GETGLOBAL R16 K11      ; R16 := malfunctionSpawnerTag
+ 40 [-]: MOVE      R17 R6       ; R17 := R6
+ 41 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
+ 42 [-]: MOVE      R13 R14      ; R13 := R14
+ 43 [-]: JMP       49           ; PC := 49
+ 44 [-]: GETGLOBAL R14 K3       ; R14 := gRegion
+ 45 [-]: SELF      R14 R14 K12  ; R15 := R14; R14 := R14["0x90391273"]
+ 46 [-]: GETGLOBAL R16 K11      ; R16 := malfunctionSpawnerTag
+ 47 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+ 48 [-]: MOVE      R13 R14      ; R13 := R14
+ 49 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
+ 50 [-]: MOVE      R15 R13      ; R15 := R13
+ 51 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 52 [-]: TEST      R14 1        ; if R14 then PC := 57
+ 53 [-]: JMP       57           ; PC := 57
+ 54 [-]: SELF      R14 R13 K13  ; R15 := R13; R14 := R13["0x890A3A60"]
+ 55 [-]: GETUPVAL  R16 U2       ; R16 := U2
+ 56 [-]: CALL      R14 3 1      ; R14(R15,R16)
  57 [-]: RETURN    R0 1         ; return 
 
 

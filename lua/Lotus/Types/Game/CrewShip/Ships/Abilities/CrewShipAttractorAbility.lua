@@ -1,10 +1,10 @@
 code size: 29
 code size: 54
 code size: 16
-code size: 97
+code size: 104
 code size: 54
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Game\CrewShip\Ships\Abilities\CrewShipAttractorAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Game\CrewShip\Ships\Abilities\CrewShipAttractorAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -47,7 +47,7 @@ code size: 54
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 10
+; Defined at line: 12
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -112,7 +112,7 @@ code size: 54
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 38
+; Defined at line: 40
 ; #Upvalues:       4
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -139,11 +139,11 @@ code size: 54
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 48
+; Defined at line: 50
 ; #Upvalues:       3
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  18
 
   1 [-]: GETUPVAL  R6 U0        ; R6 := U0
   2 [-]: MOVE      R7 R3        ; R7 := R3
@@ -196,58 +196,65 @@ code size: 54
  49 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
  50 [-]: MOVE      R12 R10      ; R12 := R10
  51 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 52 [-]: TEST      R11 1        ; if R11 then PC := 76
- 53 [-]: JMP       76           ; PC := 76
- 54 [-]: SELF      R11 R10 K19  ; R12 := R10; R11 := R10["0x7669354A"]
- 55 [-]: MOVE      R13 R5       ; R13 := R5
- 56 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 57 [-]: SELF      R11 R10 K20  ; R12 := R10; R11 := R10["0x8A8A289A"]
- 58 [-]: MOVE      R13 R0       ; R13 := R0
- 59 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 60 [-]: SELF      R11 R10 K21  ; R12 := R10; R11 := R10["0x66016AD8"]
- 61 [-]: MOVE      R13 R1       ; R13 := R1
- 62 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 63 [-]: SELF      R11 R10 K22  ; R12 := R10; R11 := R10["0x40648A73"]
- 64 [-]: SELF      R13 R10 K23  ; R14 := R10; R13 := R10["0x17B537C1"]
- 65 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 66 [-]: SELF      R14 R6 K24   ; R15 := R6; R14 := R6["0xA127E73"]
- 67 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 68 [-]: ADD       R13 R13 R14  ; R13 := R13 + R14
+ 52 [-]: TEST      R11 1        ; if R11 then PC := 83
+ 53 [-]: JMP       83           ; PC := 83
+ 54 [-]: SELF      R11 R10 K19  ; R12 := R10; R11 := R10["0xAB436EF2"]
+ 55 [-]: GETGLOBAL R13 K20      ; R13 := attractorFx
+ 56 [-]: GETGLOBAL R14 K21      ; R14 := EMPTY_SYMBOL
+ 57 [-]: GETGLOBAL R15 K12      ; R15 := ZERO_VECTOR
+ 58 [-]: GETGLOBAL R16 K22      ; R16 := ZERO_ROTATION
+ 59 [-]: MOVE      R17 R1       ; R17 := R1
+ 60 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
+ 61 [-]: SELF      R11 R10 K23  ; R12 := R10; R11 := R10["0x7669354A"]
+ 62 [-]: MOVE      R13 R5       ; R13 := R5
+ 63 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 64 [-]: SELF      R11 R10 K24  ; R12 := R10; R11 := R10["0x8A8A289A"]
+ 65 [-]: MOVE      R13 R0       ; R13 := R0
+ 66 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 67 [-]: SELF      R11 R10 K25  ; R12 := R10; R11 := R10["0x66016AD8"]
+ 68 [-]: MOVE      R13 R1       ; R13 := R1
  69 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 70 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 71 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["0x6A44F4B4"]
- 72 [-]: MOVE      R12 R0       ; R12 := R0
- 73 [-]: GETGLOBAL R13 K26      ; R13 := mOwner
- 74 [-]: MOVE      R14 R10      ; R14 := R10
- 75 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
- 76 [-]: SELF      R11 R0 K27   ; R12 := R0; R11 := R0["0x8F7D879"]
- 77 [-]: CALL      R11 2 1      ; R11(R12)
- 78 [-]: SELF      R11 R0 K28   ; R12 := R0; R11 := R0["0xE5EB8241"]
- 79 [-]: CALL      R11 2 1      ; R11(R12)
- 80 [-]: GETUPVAL  R11 U2       ; R11 := U2
- 81 [-]: LT        0 K3 R11     ; if 0 >= R11 then PC := 97
- 82 [-]: JMP       97           ; PC := 97
- 83 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
- 84 [-]: MOVE      R12 R10      ; R12 := R10
- 85 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 86 [-]: TEST      R11 1        ; if R11 then PC := 97
- 87 [-]: JMP       97           ; PC := 97
- 88 [-]: GETGLOBAL R11 K29      ; R11 := 0x201191EA
- 89 [-]: LOADK     R12 K3       ; R12 := 0
- 90 [-]: CALL      R11 2 1      ; R11(R12)
- 91 [-]: GETUPVAL  R11 U2       ; R11 := U2
- 92 [-]: GETGLOBAL R12 K30      ; R12 := 0x4CDEF9FF
- 93 [-]: CALL      R12 1 2      ; R12 := R12()
- 94 [-]: SUB       R11 R11 R12  ; R11 := R11 - R12
- 95 [-]: MOVE      R11 R2       ; R11 := R2
- 96 [-]: JMP       80           ; PC := 80
- 97 [-]: RETURN    R0 1         ; return 
+ 70 [-]: SELF      R11 R10 K26  ; R12 := R10; R11 := R10["0x40648A73"]
+ 71 [-]: SELF      R13 R10 K27  ; R14 := R10; R13 := R10["0x17B537C1"]
+ 72 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 73 [-]: SELF      R14 R6 K28   ; R15 := R6; R14 := R6["0xA127E73"]
+ 74 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 75 [-]: ADD       R13 R13 R14  ; R13 := R13 + R14
+ 76 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 77 [-]: GETUPVAL  R11 U1       ; R11 := U1
+ 78 [-]: GETTABLE  R11 R11 K29  ; R11 := R11["0x6A44F4B4"]
+ 79 [-]: MOVE      R12 R0       ; R12 := R0
+ 80 [-]: GETGLOBAL R13 K30      ; R13 := mOwner
+ 81 [-]: MOVE      R14 R10      ; R14 := R10
+ 82 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+ 83 [-]: SELF      R11 R0 K31   ; R12 := R0; R11 := R0["0x8F7D879"]
+ 84 [-]: CALL      R11 2 1      ; R11(R12)
+ 85 [-]: SELF      R11 R0 K32   ; R12 := R0; R11 := R0["0xE5EB8241"]
+ 86 [-]: CALL      R11 2 1      ; R11(R12)
+ 87 [-]: GETUPVAL  R11 U2       ; R11 := U2
+ 88 [-]: LT        0 K3 R11     ; if 0 >= R11 then PC := 104
+ 89 [-]: JMP       104          ; PC := 104
+ 90 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
+ 91 [-]: MOVE      R12 R10      ; R12 := R10
+ 92 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 93 [-]: TEST      R11 1        ; if R11 then PC := 104
+ 94 [-]: JMP       104          ; PC := 104
+ 95 [-]: GETGLOBAL R11 K33      ; R11 := 0x201191EA
+ 96 [-]: LOADK     R12 K3       ; R12 := 0
+ 97 [-]: CALL      R11 2 1      ; R11(R12)
+ 98 [-]: GETUPVAL  R11 U2       ; R11 := U2
+ 99 [-]: GETGLOBAL R12 K34      ; R12 := 0x4CDEF9FF
+100 [-]: CALL      R12 1 2      ; R12 := R12()
+101 [-]: SUB       R11 R11 R12  ; R11 := R11 - R12
+102 [-]: MOVE      R11 R2       ; R11 := R2
+103 [-]: JMP       87           ; PC := 87
+104 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 81
+; Defined at line: 82
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -268,7 +275,7 @@ code size: 54
  13 [-]: JMP       54           ; PC := 54
  14 [-]: GETGLOBAL R5 K3        ; R5 := gRegion
  15 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5["0xBDD34CC6"]
- 16 [-]: GETGLOBAL R7 K5        ; R7 := explosionEffect
+ 16 [-]: GETGLOBAL R7 K5        ; R7 := attractorExplosionFx
  17 [-]: SELF      R8 R4 K6     ; R9 := R4; R8 := R4["0xBBAF192"]
  18 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  19 [-]: GETGLOBAL R9 K7        ; R9 := ZERO_ROTATION

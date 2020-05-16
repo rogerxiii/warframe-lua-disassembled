@@ -7,7 +7,7 @@ code size: 6
 code size: 327
 code size: 101
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\CommandMarkers\Repair.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\CommandMarkers\Repair.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -56,25 +56,25 @@ code size: 101
 
   1 [-]: NEWTABLE  R0 0 5       ; R0 := {}
   2 [-]: NEWTABLE  R1 0 2       ; R1 := {}
-  3 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 10
-  4 [-]: SETTABLE  R1 K3 K4     ; R1["reward"] := 600
+  3 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 25
+  4 [-]: SETTABLE  R1 K3 K4     ; R1["reward"] := 2400
   5 [-]: SETTABLE  R0 K0 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/Fire"] := R1
   6 [-]: NEWTABLE  R1 0 2       ; R1 := {}
-  7 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 10
-  8 [-]: SETTABLE  R1 K3 K4     ; R1["reward"] := 600
+  7 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 25
+  8 [-]: SETTABLE  R1 K3 K4     ; R1["reward"] := 2400
   9 [-]: SETTABLE  R0 K5 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/ElectricityMalfunction"] := R1
  10 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 11 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 10
- 12 [-]: SETTABLE  R1 K3 K4     ; R1["reward"] := 600
+ 11 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 25
+ 12 [-]: SETTABLE  R1 K3 K4     ; R1["reward"] := 2400
  13 [-]: SETTABLE  R0 K6 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/IceMalfunction"] := R1
  14 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 15 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 10
- 16 [-]: SETTABLE  R1 K3 K8     ; R1["reward"] := 300
+ 15 [-]: SETTABLE  R1 K1 K2     ; R1["cost"] := 25
+ 16 [-]: SETTABLE  R1 K3 K4     ; R1["reward"] := 2400
  17 [-]: SETTABLE  R0 K7 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/WallBreach"] := R1
  18 [-]: NEWTABLE  R1 0 2       ; R1 := {}
- 19 [-]: SETTABLE  R1 K1 K10    ; R1["cost"] := 30
- 20 [-]: SETTABLE  R1 K3 K11    ; R1["reward"] := 900
- 21 [-]: SETTABLE  R0 K9 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/MegaBreach"] := R1
+ 19 [-]: SETTABLE  R1 K1 K9     ; R1["cost"] := 100
+ 20 [-]: SETTABLE  R1 K3 K10    ; R1["reward"] := 4000
+ 21 [-]: SETTABLE  R0 K8 R1     ; R0["/Lotus/Types/Game/CrewShip/Malfunctions/MegaBreach"] := R1
  22 [-]: RETURN    R0 2         ; return R0
  23 [-]: RETURN    R0 1         ; return 
 

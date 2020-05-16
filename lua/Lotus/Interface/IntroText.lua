@@ -2,12 +2,12 @@ code size: 50
 code size: 5
 code size: 11
 code size: 4
-code size: 76
+code size: 77
 code size: 76
 code size: 264
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\IntroText.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\IntroText.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -128,7 +128,7 @@ code size: 5
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := mMovie
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x5DB0BD4"]
@@ -160,52 +160,53 @@ code size: 5
  28 [-]: GETTABLE  R3 R3 K11    ; R3 := R3[2]
  29 [-]: MOVE      R4 R0        ; R4 := R0
  30 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
- 31 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 32 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0xD6A79FE9"]
- 33 [-]: LOADK     R4 K12       ; R4 := "SubTitle"
- 34 [-]: LOADK     R5 K5        ; R5 := "text"
- 35 [-]: MOVE      R6 R1        ; R6 := R1
- 36 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 37 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 38 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x1C19D966"]
- 39 [-]: LOADK     R4 K12       ; R4 := "SubTitle"
- 40 [-]: LOADK     R5 K7        ; R5 := "_alpha"
- 41 [-]: LOADK     R6 K8        ; R6 := 0
- 42 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 43 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 44 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x1C19D966"]
- 45 [-]: LOADK     R4 K12       ; R4 := "SubTitle"
- 46 [-]: LOADK     R5 K9        ; R5 := "_heading"
- 47 [-]: LOADK     R6 K10       ; R6 := -20
- 48 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 49 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 50 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0x7E1F26D7"]
- 51 [-]: LOADK     R4 K14       ; R4 := "Scroll"
- 52 [-]: GETGLOBAL R5 K15       ; R5 := scrollMaterial
- 53 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 54 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 55 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0x5DB0BD4"]
- 56 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 57 [-]: MOVE      R5 R0        ; R5 := R0
- 58 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 59 [-]: MOVE      R1 R2        ; R1 := R2
- 60 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 61 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0xD6A79FE9"]
- 62 [-]: LOADK     R4 K14       ; R4 := "Scroll"
- 63 [-]: LOADK     R5 K5        ; R5 := "text"
- 64 [-]: MOVE      R6 R1        ; R6 := R1
- 65 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 66 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 67 [-]: SELF      R2 R2 K16    ; R3 := R2; R2 := R2["0xE7F490E3"]
- 68 [-]: LOADK     R4 K2        ; R4 := 1
- 69 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 70 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 71 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x1C19D966"]
- 72 [-]: LOADK     R4 K14       ; R4 := "Scroll"
- 73 [-]: LOADK     R5 K17       ; R5 := "_y"
- 74 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 75 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 76 [-]: RETURN    R0 1         ; return 
+ 31 [-]: MOVE      R0 R1        ; R0 := R1
+ 32 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 33 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0xD6A79FE9"]
+ 34 [-]: LOADK     R3 K12       ; R3 := "SubTitle"
+ 35 [-]: LOADK     R4 K5        ; R4 := "text"
+ 36 [-]: MOVE      R5 R0        ; R5 := R0
+ 37 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 38 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 39 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x1C19D966"]
+ 40 [-]: LOADK     R3 K12       ; R3 := "SubTitle"
+ 41 [-]: LOADK     R4 K7        ; R4 := "_alpha"
+ 42 [-]: LOADK     R5 K8        ; R5 := 0
+ 43 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 44 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 45 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x1C19D966"]
+ 46 [-]: LOADK     R3 K12       ; R3 := "SubTitle"
+ 47 [-]: LOADK     R4 K9        ; R4 := "_heading"
+ 48 [-]: LOADK     R5 K10       ; R5 := -20
+ 49 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 50 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 51 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1["0x7E1F26D7"]
+ 52 [-]: LOADK     R3 K14       ; R3 := "Scroll"
+ 53 [-]: GETGLOBAL R4 K15       ; R4 := scrollMaterial
+ 54 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 55 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 56 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x5DB0BD4"]
+ 57 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 58 [-]: MOVE      R4 R0        ; R4 := R0
+ 59 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
+ 60 [-]: MOVE      R0 R1        ; R0 := R1
+ 61 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 62 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0xD6A79FE9"]
+ 63 [-]: LOADK     R3 K14       ; R3 := "Scroll"
+ 64 [-]: LOADK     R4 K5        ; R4 := "text"
+ 65 [-]: MOVE      R5 R0        ; R5 := R0
+ 66 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 67 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 68 [-]: SELF      R1 R1 K16    ; R2 := R1; R1 := R1["0xE7F490E3"]
+ 69 [-]: LOADK     R3 K2        ; R3 := 1
+ 70 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 71 [-]: GETGLOBAL R1 K0        ; R1 := mMovie
+ 72 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x1C19D966"]
+ 73 [-]: LOADK     R3 K14       ; R3 := "Scroll"
+ 74 [-]: LOADK     R4 K17       ; R4 := "_y"
+ 75 [-]: GETUPVAL  R5 U2        ; R5 := U2
+ 76 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 77 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:

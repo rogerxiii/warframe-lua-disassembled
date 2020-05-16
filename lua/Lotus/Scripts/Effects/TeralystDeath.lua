@@ -3,7 +3,7 @@ code size: 25
 code size: 70
 code size: 67
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\TeralystDeath.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\TeralystDeath.luac 
 
 ; Name:            
 ; Defined at line: 0

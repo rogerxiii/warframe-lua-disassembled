@@ -9,7 +9,7 @@ code size: 105
 code size: 131
 code size: 14
 code size: 115
-code size: 179
+code size: 204
 code size: 9
 code size: 3
 code size: 4
@@ -30,14 +30,14 @@ code size: 47
 code size: 37
 code size: 2
 code size: 3
-code size: 393
+code size: 396
 code size: 59
 code size: 19
 code size: 17
 code size: 28
 code size: 33
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Dialog\Conversation.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Dialog\Conversation.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -198,7 +198,7 @@ code size: 33
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 55
+; Defined at line: 56
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -211,7 +211,7 @@ code size: 33
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 59
+; Defined at line: 60
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -236,7 +236,7 @@ code size: 33
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 69
+; Defined at line: 70
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -369,7 +369,7 @@ code size: 33
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 119
+; Defined at line: 120
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -398,7 +398,7 @@ code size: 33
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 129
+; Defined at line: 130
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -446,7 +446,7 @@ code size: 33
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 147
+; Defined at line: 148
 ; #Upvalues:       6
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -512,7 +512,7 @@ code size: 33
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 171
+; Defined at line: 172
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -628,7 +628,7 @@ code size: 33
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 222
+; Defined at line: 223
 ; #Upvalues:       6
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -770,7 +770,7 @@ code size: 33
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 280
+; Defined at line: 281
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -795,7 +795,7 @@ code size: 33
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 290
+; Defined at line: 291
 ; #Upvalues:       4
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -921,7 +921,7 @@ code size: 33
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 341
+; Defined at line: 342
 ; #Upvalues:       1
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -934,11 +934,11 @@ code size: 33
   5 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
   6 [-]: MOVE      R10 R8       ; R10 := R8
   7 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-  8 [-]: TEST      R9 0         ; if not R9 then PC := 170
-  9 [-]: JMP       170          ; PC := 170
+  8 [-]: TEST      R9 0         ; if not R9 then PC := 195
+  9 [-]: JMP       195          ; PC := 195
  10 [-]: LEN       R9 R1        ; R9 := # R1
- 11 [-]: LT        0 K3 R9      ; if 0 >= R9 then PC := 170
- 12 [-]: JMP       170          ; PC := 170
+ 11 [-]: LT        0 K3 R9      ; if 0 >= R9 then PC := 195
+ 12 [-]: JMP       195          ; PC := 195
  13 [-]: TEST      R7 0         ; if not R7 then PC := 25
  14 [-]: JMP       25           ; PC := 25
  15 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
@@ -965,8 +965,8 @@ code size: 33
  36 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
  37 [-]: MOVE      R10 R8       ; R10 := R8
  38 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 39 [-]: TEST      R9 1         ; if R9 then PC := 179
- 40 [-]: JMP       179          ; PC := 179
+ 39 [-]: TEST      R9 1         ; if R9 then PC := 204
+ 40 [-]: JMP       204          ; PC := 204
  41 [-]: EQ        0 R3 K12     ; if R3 ~= nil then PC := 44
  42 [-]: JMP       44           ; PC := 44
  43 [-]: MOVE      R3 R1        ; R3 := R1
@@ -1004,114 +1004,139 @@ code size: 33
  75 [-]: LOADK     R13 K23      ; R13 := "SetElementsFunction"
  76 [-]: LOADK     R14 K22      ; R14 := "GetMenuEntries"
  77 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
- 78 [-]: EQ        1 R5 K12     ; if R5 == nil then PC := 88
- 79 [-]: JMP       88           ; PC := 88
- 80 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 81 [-]: CLOSURE   R12 2        ; R12 := closure(Function #11.3)
- 82 [-]: MOVE      R0 R5        ; R0 := R5
- 83 [-]: SETTABLE  R11 K24 R12  ; R11["MenuOnFocusedCallback"] := R12
- 84 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
- 85 [-]: LOADK     R13 K25      ; R13 := "SetOnFocusedCallback"
- 86 [-]: LOADK     R14 K24      ; R14 := "MenuOnFocusedCallback"
- 87 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
- 88 [-]: EQ        1 R6 K12     ; if R6 == nil then PC := 98
- 89 [-]: JMP       98           ; PC := 98
- 90 [-]: GETGLOBAL R11 K5       ; R11 := _T
- 91 [-]: CLOSURE   R12 3        ; R12 := closure(Function #11.4)
- 92 [-]: MOVE      R0 R6        ; R0 := R6
- 93 [-]: SETTABLE  R11 K26 R12  ; R11["MenuOnUnfocusedCallback"] := R12
- 94 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
- 95 [-]: LOADK     R13 K27      ; R13 := "SetOnUnfocusedCallback"
- 96 [-]: LOADK     R14 K26      ; R14 := "MenuOnUnfocusedCallback"
- 97 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
- 98 [-]: TEST      R7 0         ; if not R7 then PC := 111
- 99 [-]: JMP       111          ; PC := 111
-100 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
-101 [-]: GETTABLE  R12 R7 K28   ; R12 := R7["focus"]
-102 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-103 [-]: TEST      R11 1        ; if R11 then PC := 111
-104 [-]: JMP       111          ; PC := 111
-105 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
-106 [-]: LOADK     R13 K29      ; R13 := "SetOnFocusedSound"
-107 [-]: GETTABLE  R14 R7 K28   ; R14 := R7["focus"]
-108 [-]: SELF      R14 R14 K7   ; R15 := R14; R14 := R14["0x1B252E3C"]
-109 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
-110 [-]: CALL      R11 0 1      ; R11(R12,...)
-111 [-]: TEST      R7 0         ; if not R7 then PC := 124
-112 [-]: JMP       124          ; PC := 124
-113 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
-114 [-]: GETTABLE  R12 R7 K30   ; R12 := R7["select"]
-115 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-116 [-]: TEST      R11 1        ; if R11 then PC := 124
-117 [-]: JMP       124          ; PC := 124
-118 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
-119 [-]: LOADK     R13 K31      ; R13 := "SetOnSelectedSound"
-120 [-]: GETTABLE  R14 R7 K30   ; R14 := R7["select"]
-121 [-]: SELF      R14 R14 K7   ; R15 := R14; R14 := R14["0x1B252E3C"]
-122 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
-123 [-]: CALL      R11 0 1      ; R11(R12,...)
-124 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
-125 [-]: LOADK     R13 K32      ; R13 := "SetTargetBackgroundAlpha"
-126 [-]: LOADK     R14 K33      ; R14 := "0"
-127 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-128 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
-129 [-]: LOADK     R13 K34      ; R13 := "SetAlignment"
-130 [-]: LOADK     R14 K35      ; R14 := "Bottom"
-131 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-132 [-]: EQ        0 R10 K12    ; if R10 ~= nil then PC := 143
-133 [-]: JMP       143          ; PC := 143
-134 [-]: TEST      R4 0         ; if not R4 then PC := 139
-135 [-]: JMP       139          ; PC := 139
-136 [-]: MOVE      R11 R4       ; R11 := R4
-137 [-]: MOVE      R12 R0       ; R12 := R0
-138 [-]: CALL      R11 2 1      ; R11(R12)
-139 [-]: GETGLOBAL R11 K36      ; R11 := 0x201191EA
-140 [-]: LOADK     R12 K3       ; R12 := 0
-141 [-]: CALL      R11 2 1      ; R11(R12)
-142 [-]: JMP       132          ; PC := 132
-143 [-]: EQ        1 R10 K11    ; if R10 == "0x0" then PC := 159
-144 [-]: JMP       159          ; PC := 159
-145 [-]: GETTABLE  R11 R10 K37  ; R11 := R10["mCallback"]
-146 [-]: EQ        1 R11 K12    ; if R11 == nil then PC := 159
-147 [-]: JMP       159          ; PC := 159
-148 [-]: GETGLOBAL R11 K38      ; R11 := 0x93B1256B
-149 [-]: LOADK     R12 K39      ; R12 := "Conversation option selected: "
-150 [-]: GETTABLE  R13 R10 K40  ; R13 := R10["mName"]
-151 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
-152 [-]: CALL      R11 2 1      ; R11(R12)
-153 [-]: GETTABLE  R11 R10 K41  ; R11 := R10["0x218E445B"]
-154 [-]: MOVE      R12 R0       ; R12 := R0
-155 [-]: CALL      R11 2 1      ; R11(R12)
-156 [-]: EQ        0 R10 K11    ; if R10 ~= "0x0" then PC := 159
-157 [-]: JMP       159          ; PC := 159
-158 [-]: RETURN    R0 1         ; return 
-159 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
-160 [-]: MOVE      R12 R2       ; R12 := R2
-161 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-162 [-]: TEST      R11 1        ; if R11 then PC := 168
-163 [-]: JMP       168          ; PC := 168
-164 [-]: MOVE      R11 R2       ; R11 := R2
-165 [-]: MOVE      R12 R0       ; R12 := R0
-166 [-]: MOVE      R13 R10      ; R13 := R10
-167 [-]: CALL      R11 3 1      ; R11(R12,R13)
-168 [-]: CLOSE     R9           ; SAVE R9,...
-169 [-]: JMP       179          ; PC := 179
-170 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
-171 [-]: MOVE      R10 R2       ; R10 := R2
-172 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-173 [-]: TEST      R9 1         ; if R9 then PC := 179
-174 [-]: JMP       179          ; PC := 179
-175 [-]: MOVE      R9 R2        ; R9 := R2
-176 [-]: MOVE      R10 R0       ; R10 := R0
-177 [-]: MOVE      R11 R0       ; R11 := R0
-178 [-]: CALL      R9 3 1       ; R9(R10,R11)
-179 [-]: RETURN    R0 1         ; return 
+ 78 [-]: GETGLOBAL R11 K24      ; R11 := buttonTag
+ 79 [-]: EQ        1 R11 K25    ; if R11 == "" then PC := 103
+ 80 [-]: JMP       103          ; PC := 103
+ 81 [-]: GETGLOBAL R11 K5       ; R11 := _T
+ 82 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["TaggedButtonsFunc"]
+ 83 [-]: EQ        1 R11 K12    ; if R11 == nil then PC := 103
+ 84 [-]: JMP       103          ; PC := 103
+ 85 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
+ 86 [-]: GETGLOBAL R12 K5       ; R12 := _T
+ 87 [-]: GETTABLE  R12 R12 K26  ; R12 := R12["TaggedButtonsFunc"]
+ 88 [-]: GETGLOBAL R13 K24      ; R13 := buttonTag
+ 89 [-]: GETTABLE  R12 R12 R13  ; R12 := R12[R13]
+ 90 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 91 [-]: TEST      R11 1        ; if R11 then PC := 103
+ 92 [-]: JMP       103          ; PC := 103
+ 93 [-]: GETGLOBAL R11 K5       ; R11 := _T
+ 94 [-]: GETGLOBAL R12 K5       ; R12 := _T
+ 95 [-]: GETTABLE  R12 R12 K26  ; R12 := R12["TaggedButtonsFunc"]
+ 96 [-]: GETGLOBAL R13 K24      ; R13 := buttonTag
+ 97 [-]: GETTABLE  R12 R12 R13  ; R12 := R12[R13]
+ 98 [-]: SETTABLE  R11 K27 R12  ; R11["DialogGetButtonsFunc"] := R12
+ 99 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
+100 [-]: LOADK     R13 K28      ; R13 := "SetGetButtonsFunction"
+101 [-]: LOADK     R14 K27      ; R14 := "DialogGetButtonsFunc"
+102 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+103 [-]: EQ        1 R5 K12     ; if R5 == nil then PC := 113
+104 [-]: JMP       113          ; PC := 113
+105 [-]: GETGLOBAL R11 K5       ; R11 := _T
+106 [-]: CLOSURE   R12 2        ; R12 := closure(Function #11.3)
+107 [-]: MOVE      R0 R5        ; R0 := R5
+108 [-]: SETTABLE  R11 K29 R12  ; R11["MenuOnFocusedCallback"] := R12
+109 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
+110 [-]: LOADK     R13 K30      ; R13 := "SetOnFocusedCallback"
+111 [-]: LOADK     R14 K29      ; R14 := "MenuOnFocusedCallback"
+112 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+113 [-]: EQ        1 R6 K12     ; if R6 == nil then PC := 123
+114 [-]: JMP       123          ; PC := 123
+115 [-]: GETGLOBAL R11 K5       ; R11 := _T
+116 [-]: CLOSURE   R12 3        ; R12 := closure(Function #11.4)
+117 [-]: MOVE      R0 R6        ; R0 := R6
+118 [-]: SETTABLE  R11 K31 R12  ; R11["MenuOnUnfocusedCallback"] := R12
+119 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
+120 [-]: LOADK     R13 K32      ; R13 := "SetOnUnfocusedCallback"
+121 [-]: LOADK     R14 K31      ; R14 := "MenuOnUnfocusedCallback"
+122 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+123 [-]: TEST      R7 0         ; if not R7 then PC := 136
+124 [-]: JMP       136          ; PC := 136
+125 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
+126 [-]: GETTABLE  R12 R7 K33   ; R12 := R7["focus"]
+127 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+128 [-]: TEST      R11 1        ; if R11 then PC := 136
+129 [-]: JMP       136          ; PC := 136
+130 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
+131 [-]: LOADK     R13 K34      ; R13 := "SetOnFocusedSound"
+132 [-]: GETTABLE  R14 R7 K33   ; R14 := R7["focus"]
+133 [-]: SELF      R14 R14 K7   ; R15 := R14; R14 := R14["0x1B252E3C"]
+134 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
+135 [-]: CALL      R11 0 1      ; R11(R12,...)
+136 [-]: TEST      R7 0         ; if not R7 then PC := 149
+137 [-]: JMP       149          ; PC := 149
+138 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
+139 [-]: GETTABLE  R12 R7 K35   ; R12 := R7["select"]
+140 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+141 [-]: TEST      R11 1        ; if R11 then PC := 149
+142 [-]: JMP       149          ; PC := 149
+143 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
+144 [-]: LOADK     R13 K36      ; R13 := "SetOnSelectedSound"
+145 [-]: GETTABLE  R14 R7 K35   ; R14 := R7["select"]
+146 [-]: SELF      R14 R14 K7   ; R15 := R14; R14 := R14["0x1B252E3C"]
+147 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
+148 [-]: CALL      R11 0 1      ; R11(R12,...)
+149 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
+150 [-]: LOADK     R13 K37      ; R13 := "SetTargetBackgroundAlpha"
+151 [-]: LOADK     R14 K38      ; R14 := "0"
+152 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+153 [-]: SELF      R11 R8 K13   ; R12 := R8; R11 := R8["0x458F27A9"]
+154 [-]: LOADK     R13 K39      ; R13 := "SetAlignment"
+155 [-]: LOADK     R14 K40      ; R14 := "Bottom"
+156 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+157 [-]: EQ        0 R10 K12    ; if R10 ~= nil then PC := 168
+158 [-]: JMP       168          ; PC := 168
+159 [-]: TEST      R4 0         ; if not R4 then PC := 164
+160 [-]: JMP       164          ; PC := 164
+161 [-]: MOVE      R11 R4       ; R11 := R4
+162 [-]: MOVE      R12 R0       ; R12 := R0
+163 [-]: CALL      R11 2 1      ; R11(R12)
+164 [-]: GETGLOBAL R11 K41      ; R11 := 0x201191EA
+165 [-]: LOADK     R12 K3       ; R12 := 0
+166 [-]: CALL      R11 2 1      ; R11(R12)
+167 [-]: JMP       157          ; PC := 157
+168 [-]: EQ        1 R10 K11    ; if R10 == "0x0" then PC := 184
+169 [-]: JMP       184          ; PC := 184
+170 [-]: GETTABLE  R11 R10 K42  ; R11 := R10["mCallback"]
+171 [-]: EQ        1 R11 K12    ; if R11 == nil then PC := 184
+172 [-]: JMP       184          ; PC := 184
+173 [-]: GETGLOBAL R11 K43      ; R11 := 0x93B1256B
+174 [-]: LOADK     R12 K44      ; R12 := "Conversation option selected: "
+175 [-]: GETTABLE  R13 R10 K45  ; R13 := R10["mName"]
+176 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+177 [-]: CALL      R11 2 1      ; R11(R12)
+178 [-]: GETTABLE  R11 R10 K46  ; R11 := R10["0x218E445B"]
+179 [-]: MOVE      R12 R0       ; R12 := R0
+180 [-]: CALL      R11 2 1      ; R11(R12)
+181 [-]: EQ        0 R10 K11    ; if R10 ~= "0x0" then PC := 184
+182 [-]: JMP       184          ; PC := 184
+183 [-]: RETURN    R0 1         ; return 
+184 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
+185 [-]: MOVE      R12 R2       ; R12 := R2
+186 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+187 [-]: TEST      R11 1        ; if R11 then PC := 193
+188 [-]: JMP       193          ; PC := 193
+189 [-]: MOVE      R11 R2       ; R11 := R2
+190 [-]: MOVE      R12 R0       ; R12 := R0
+191 [-]: MOVE      R13 R10      ; R13 := R10
+192 [-]: CALL      R11 3 1      ; R11(R12,R13)
+193 [-]: CLOSE     R9           ; SAVE R9,...
+194 [-]: JMP       204          ; PC := 204
+195 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
+196 [-]: MOVE      R10 R2       ; R10 := R2
+197 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+198 [-]: TEST      R9 1         ; if R9 then PC := 204
+199 [-]: JMP       204          ; PC := 204
+200 [-]: MOVE      R9 R2        ; R9 := R2
+201 [-]: MOVE      R10 R0       ; R10 := R0
+202 [-]: MOVE      R11 R0       ; R11 := R0
+203 [-]: CALL      R9 3 1       ; R9(R10,R11)
+204 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 369
+; Defined at line: 370
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1131,7 +1156,7 @@ code size: 33
 ; Function #11.2:
 ;
 ; Name:            
-; Defined at line: 379
+; Defined at line: 380
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1145,7 +1170,7 @@ code size: 33
 ; Function #11.3:
 ;
 ; Name:            
-; Defined at line: 386
+; Defined at line: 392
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1160,7 +1185,7 @@ code size: 33
 ; Function #11.4:
 ;
 ; Name:            
-; Defined at line: 393
+; Defined at line: 399
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1175,7 +1200,7 @@ code size: 33
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 436
+; Defined at line: 442
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1187,7 +1212,7 @@ code size: 33
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 439
+; Defined at line: 445
 ; #Upvalues:       3
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1338,7 +1363,7 @@ code size: 33
 ; Function #13.1:
 ;
 ; Name:            
-; Defined at line: 462
+; Defined at line: 468
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1423,7 +1448,7 @@ code size: 33
 ; Function #13.2:
 ;
 ; Name:            
-; Defined at line: 499
+; Defined at line: 505
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1443,7 +1468,7 @@ code size: 33
 ; Function #13.3:
 ;
 ; Name:            
-; Defined at line: 507
+; Defined at line: 513
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1463,7 +1488,7 @@ code size: 33
 ; Function #13.4:
 ;
 ; Name:            
-; Defined at line: 515
+; Defined at line: 521
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1483,7 +1508,7 @@ code size: 33
 ; Function #13.5:
 ;
 ; Name:            
-; Defined at line: 535
+; Defined at line: 541
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1525,7 +1550,7 @@ code size: 33
 ; Function #13.6:
 ;
 ; Name:            
-; Defined at line: 557
+; Defined at line: 563
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1572,7 +1597,7 @@ code size: 33
 ; Function #13.7:
 ;
 ; Name:            
-; Defined at line: 572
+; Defined at line: 578
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1636,7 +1661,7 @@ code size: 33
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 601
+; Defined at line: 607
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1649,7 +1674,7 @@ code size: 33
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 605
+; Defined at line: 611
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1676,7 +1701,7 @@ code size: 33
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 616
+; Defined at line: 622
 ; #Upvalues:       2
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1754,7 +1779,7 @@ code size: 33
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 650
+; Defined at line: 656
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1812,7 +1837,7 @@ code size: 33
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 674
+; Defined at line: 680
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1860,7 +1885,7 @@ code size: 33
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 694
+; Defined at line: 700
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1873,7 +1898,7 @@ code size: 33
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 698
+; Defined at line: 704
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1887,7 +1912,7 @@ code size: 33
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 702
+; Defined at line: 708
 ; #Upvalues:       15
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2189,109 +2214,112 @@ code size: 33
 294 [-]: SELF      R7 R3 K91    ; R8 := R3; R7 := R3["0x240B3CAB"]
 295 [-]: CALL      R7 2 1       ; R7(R8)
 296 [-]: GETTABLE  R7 R3 K36    ; R7 := R3["mReset"]
-297 [-]: TEST      R7 1         ; if R7 then PC := 293
-298 [-]: JMP       293          ; PC := 293
-299 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
-300 [-]: GETUPVAL  R8 U13       ; R8 := U13
-301 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-302 [-]: TEST      R7 1         ; if R7 then PC := 308
-303 [-]: JMP       308          ; PC := 308
-304 [-]: GETUPVAL  R7 U13       ; R7 := U13
-305 [-]: SELF      R7 R7 K92    ; R8 := R7; R7 := R7["0x2842784A"]
-306 [-]: MOVE      R9 R1        ; R9 := R1
-307 [-]: CALL      R7 3 1       ; R7(R8,R9)
-308 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
-309 [-]: GETGLOBAL R8 K93       ; R8 := closeSound
-310 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-311 [-]: TEST      R7 1         ; if R7 then PC := 317
-312 [-]: JMP       317          ; PC := 317
-313 [-]: GETUPVAL  R7 U14       ; R7 := U14
-314 [-]: GETTABLE  R7 R7 K53    ; R7 := R7["0x25992394"]
-315 [-]: GETGLOBAL R8 K93       ; R8 := closeSound
-316 [-]: CALL      R7 2 1       ; R7(R8)
-317 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
-318 [-]: MOVE      R8 R6        ; R8 := R6
-319 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-320 [-]: TEST      R7 1         ; if R7 then PC := 325
-321 [-]: JMP       325          ; PC := 325
-322 [-]: SELF      R7 R6 K86    ; R8 := R6; R7 := R6["0x29FB9F41"]
-323 [-]: LOADK     R9 K94       ; R9 := -1
-324 [-]: CALL      R7 3 1       ; R7(R8,R9)
-325 [-]: GETGLOBAL R7 K0        ; R7 := _T
-326 [-]: SETTABLE  R7 K89 K13   ; R7["DisableHeadTracking"] := nil
-327 [-]: GETGLOBAL R7 K0        ; R7 := _T
-328 [-]: SETTABLE  R7 K88 K13   ; R7["CurrentConversation"] := nil
-329 [-]: LOADNIL   R7 R7        ; R7 := nil
-330 [-]: MOVE      R7 R12       ; R7 := R12
-331 [-]: TEST      R5 0         ; if not R5 then PC := 341
-332 [-]: JMP       341          ; PC := 341
-333 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
-334 [-]: GETGLOBAL R8 K51       ; R8 := hubNpc
-335 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-336 [-]: TEST      R7 1         ; if R7 then PC := 341
-337 [-]: JMP       341          ; PC := 341
-338 [-]: GETGLOBAL R7 K51       ; R7 := hubNpc
-339 [-]: SELF      R7 R7 K95    ; R8 := R7; R7 := R7["0x9B88B0DA"]
-340 [-]: CALL      R7 2 1       ; R7(R8)
-341 [-]: SELF      R7 R1 K7     ; R8 := R1; R7 := R1["0xDE5882DD"]
-342 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-343 [-]: SELF      R7 R7 K96    ; R8 := R7; R7 := R7["0xCFB99505"]
-344 [-]: GETGLOBAL R9 K68       ; R9 := 0xEC274B1A
-345 [-]: LOADK     R10 K69      ; R10 := "ConversationDialogSkip"
-346 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-347 [-]: GETGLOBAL R10 K70      ; R10 := gFlashMgr
-348 [-]: SELF      R10 R10 K71  ; R11 := R10; R10 := R10["0x763B5C3F"]
-349 [-]: LOADK     R12 K72      ; R12 := "MENU_CLICK"
-350 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
-351 [-]: CALL      R7 0 1       ; R7(R8,...)
-352 [-]: SELF      R7 R1 K7     ; R8 := R1; R7 := R1["0xDE5882DD"]
-353 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-354 [-]: SELF      R7 R7 K96    ; R8 := R7; R7 := R7["0xCFB99505"]
-355 [-]: GETGLOBAL R9 K68       ; R9 := 0xEC274B1A
-356 [-]: LOADK     R10 K74      ; R10 := "ConversationDialogSkipController"
-357 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-358 [-]: GETGLOBAL R10 K70      ; R10 := gFlashMgr
-359 [-]: SELF      R10 R10 K71  ; R11 := R10; R10 := R10["0x763B5C3F"]
-360 [-]: LOADK     R12 K75      ; R12 := "MENU_SELECT"
-361 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
-362 [-]: CALL      R7 0 1       ; R7(R8,...)
-363 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
-364 [-]: GETGLOBAL R8 K65       ; R8 := inputFilter
-365 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-366 [-]: TEST      R7 1         ; if R7 then PC := 371
-367 [-]: JMP       371          ; PC := 371
-368 [-]: SELF      R7 R1 K97    ; R8 := R1; R7 := R1["0x4B6C4D3A"]
-369 [-]: GETGLOBAL R9 K65       ; R9 := inputFilter
-370 [-]: CALL      R7 3 1       ; R7(R8,R9)
-371 [-]: SELF      R7 R3 K98    ; R8 := R3; R7 := R3["0x180D73F2"]
-372 [-]: LOADK     R9 K64       ; R9 := 0.40000000596046
+297 [-]: TEST      R7 0         ; if not R7 then PC := 302
+298 [-]: JMP       302          ; PC := 302
+299 [-]: GETTABLE  R7 R3 K92    ; R7 := R3["ForceClose"]
+300 [-]: TEST      R7 0         ; if not R7 then PC := 293
+301 [-]: JMP       293          ; PC := 293
+302 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
+303 [-]: GETUPVAL  R8 U13       ; R8 := U13
+304 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+305 [-]: TEST      R7 1         ; if R7 then PC := 311
+306 [-]: JMP       311          ; PC := 311
+307 [-]: GETUPVAL  R7 U13       ; R7 := U13
+308 [-]: SELF      R7 R7 K93    ; R8 := R7; R7 := R7["0x2842784A"]
+309 [-]: MOVE      R9 R1        ; R9 := R1
+310 [-]: CALL      R7 3 1       ; R7(R8,R9)
+311 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
+312 [-]: GETGLOBAL R8 K94       ; R8 := closeSound
+313 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+314 [-]: TEST      R7 1         ; if R7 then PC := 320
+315 [-]: JMP       320          ; PC := 320
+316 [-]: GETUPVAL  R7 U14       ; R7 := U14
+317 [-]: GETTABLE  R7 R7 K53    ; R7 := R7["0x25992394"]
+318 [-]: GETGLOBAL R8 K94       ; R8 := closeSound
+319 [-]: CALL      R7 2 1       ; R7(R8)
+320 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
+321 [-]: MOVE      R8 R6        ; R8 := R6
+322 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+323 [-]: TEST      R7 1         ; if R7 then PC := 328
+324 [-]: JMP       328          ; PC := 328
+325 [-]: SELF      R7 R6 K86    ; R8 := R6; R7 := R6["0x29FB9F41"]
+326 [-]: LOADK     R9 K95       ; R9 := -1
+327 [-]: CALL      R7 3 1       ; R7(R8,R9)
+328 [-]: GETGLOBAL R7 K0        ; R7 := _T
+329 [-]: SETTABLE  R7 K89 K13   ; R7["DisableHeadTracking"] := nil
+330 [-]: GETGLOBAL R7 K0        ; R7 := _T
+331 [-]: SETTABLE  R7 K88 K13   ; R7["CurrentConversation"] := nil
+332 [-]: LOADNIL   R7 R7        ; R7 := nil
+333 [-]: MOVE      R7 R12       ; R7 := R12
+334 [-]: TEST      R5 0         ; if not R5 then PC := 344
+335 [-]: JMP       344          ; PC := 344
+336 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
+337 [-]: GETGLOBAL R8 K51       ; R8 := hubNpc
+338 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+339 [-]: TEST      R7 1         ; if R7 then PC := 344
+340 [-]: JMP       344          ; PC := 344
+341 [-]: GETGLOBAL R7 K51       ; R7 := hubNpc
+342 [-]: SELF      R7 R7 K96    ; R8 := R7; R7 := R7["0x9B88B0DA"]
+343 [-]: CALL      R7 2 1       ; R7(R8)
+344 [-]: SELF      R7 R1 K7     ; R8 := R1; R7 := R1["0xDE5882DD"]
+345 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+346 [-]: SELF      R7 R7 K97    ; R8 := R7; R7 := R7["0xCFB99505"]
+347 [-]: GETGLOBAL R9 K68       ; R9 := 0xEC274B1A
+348 [-]: LOADK     R10 K69      ; R10 := "ConversationDialogSkip"
+349 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+350 [-]: GETGLOBAL R10 K70      ; R10 := gFlashMgr
+351 [-]: SELF      R10 R10 K71  ; R11 := R10; R10 := R10["0x763B5C3F"]
+352 [-]: LOADK     R12 K72      ; R12 := "MENU_CLICK"
+353 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
+354 [-]: CALL      R7 0 1       ; R7(R8,...)
+355 [-]: SELF      R7 R1 K7     ; R8 := R1; R7 := R1["0xDE5882DD"]
+356 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+357 [-]: SELF      R7 R7 K97    ; R8 := R7; R7 := R7["0xCFB99505"]
+358 [-]: GETGLOBAL R9 K68       ; R9 := 0xEC274B1A
+359 [-]: LOADK     R10 K74      ; R10 := "ConversationDialogSkipController"
+360 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+361 [-]: GETGLOBAL R10 K70      ; R10 := gFlashMgr
+362 [-]: SELF      R10 R10 K71  ; R11 := R10; R10 := R10["0x763B5C3F"]
+363 [-]: LOADK     R12 K75      ; R12 := "MENU_SELECT"
+364 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
+365 [-]: CALL      R7 0 1       ; R7(R8,...)
+366 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
+367 [-]: GETGLOBAL R8 K65       ; R8 := inputFilter
+368 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+369 [-]: TEST      R7 1         ; if R7 then PC := 374
+370 [-]: JMP       374          ; PC := 374
+371 [-]: SELF      R7 R1 K98    ; R8 := R1; R7 := R1["0x4B6C4D3A"]
+372 [-]: GETGLOBAL R9 K65       ; R9 := inputFilter
 373 [-]: CALL      R7 3 1       ; R7(R8,R9)
-374 [-]: SELF      R7 R1 K59    ; R8 := R1; R7 := R1["0xB358843A"]
-375 [-]: MOVE      R9 R0        ; R9 := R0
+374 [-]: SELF      R7 R3 K99    ; R8 := R3; R7 := R3["0x180D73F2"]
+375 [-]: LOADK     R9 K64       ; R9 := 0.40000000596046
 376 [-]: CALL      R7 3 1       ; R7(R8,R9)
-377 [-]: SELF      R7 R1 K60    ; R8 := R1; R7 := R1["0x86A8AF40"]
-378 [-]: LOADK     R9 K9        ; R9 := 0
+377 [-]: SELF      R7 R1 K59    ; R8 := R1; R7 := R1["0xB358843A"]
+378 [-]: MOVE      R9 R0        ; R9 := R0
 379 [-]: CALL      R7 3 1       ; R7(R8,R9)
-380 [-]: GETGLOBAL R7 K0        ; R7 := _T
-381 [-]: SETTABLE  R7 K1 K13    ; R7["HideTransmissionComms"] := nil
-382 [-]: GETGLOBAL R7 K0        ; R7 := _T
-383 [-]: GETGLOBAL R8 K99       ; R8 := onEndFunction
-384 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
-385 [-]: EQ        1 R7 K13     ; if R7 == nil then PC := 392
-386 [-]: JMP       392          ; PC := 392
-387 [-]: GETGLOBAL R7 K0        ; R7 := _T
-388 [-]: GETGLOBAL R8 K99       ; R8 := onEndFunction
-389 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
-390 [-]: MOVE      R8 R3        ; R8 := R3
-391 [-]: CALL      R7 2 1       ; R7(R8)
-392 [-]: RETURN    R3 2         ; return R3
-393 [-]: RETURN    R0 1         ; return 
+380 [-]: SELF      R7 R1 K60    ; R8 := R1; R7 := R1["0x86A8AF40"]
+381 [-]: LOADK     R9 K9        ; R9 := 0
+382 [-]: CALL      R7 3 1       ; R7(R8,R9)
+383 [-]: GETGLOBAL R7 K0        ; R7 := _T
+384 [-]: SETTABLE  R7 K1 K13    ; R7["HideTransmissionComms"] := nil
+385 [-]: GETGLOBAL R7 K0        ; R7 := _T
+386 [-]: GETGLOBAL R8 K100      ; R8 := onEndFunction
+387 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
+388 [-]: EQ        1 R7 K13     ; if R7 == nil then PC := 395
+389 [-]: JMP       395          ; PC := 395
+390 [-]: GETGLOBAL R7 K0        ; R7 := _T
+391 [-]: GETGLOBAL R8 K100      ; R8 := onEndFunction
+392 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
+393 [-]: MOVE      R8 R3        ; R8 := R3
+394 [-]: CALL      R7 2 1       ; R7(R8)
+395 [-]: RETURN    R3 2         ; return R3
+396 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #21.1:
 ;
 ; Name:            
-; Defined at line: 782
+; Defined at line: 788
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2361,7 +2389,7 @@ code size: 33
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 890
+; Defined at line: 896
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2391,7 +2419,7 @@ code size: 33
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 899
+; Defined at line: 905
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2419,7 +2447,7 @@ code size: 33
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 908
+; Defined at line: 914
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2458,7 +2486,7 @@ code size: 33
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 914
+; Defined at line: 920
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

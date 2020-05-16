@@ -12,9 +12,9 @@ code size: 683
 code size: 203
 code size: 4
 code size: 188
-code size: 80
+code size: 87
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\GlassFragment.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\GlassFragment.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1806,8 +1806,8 @@ code size: 80
   6 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: TEST      R2 0         ; if not R2 then PC := 23
- 10 [-]: JMP       23           ; PC := 23
+  9 [-]: TEST      R2 1         ; if R2 then PC := 16
+ 10 [-]: JMP       16           ; PC := 16
  11 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0x8B598ED4"]
  12 [-]: GETGLOBAL R4 K5        ; R4 := gLotusAvatarType
  13 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
@@ -1829,54 +1829,61 @@ code size: 80
  29 [-]: GETGLOBAL R2 K6        ; R2 := gRegion
  30 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xA559F558"]
  31 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 32 [-]: TEST      R2 1         ; if R2 then PC := 57
- 33 [-]: JMP       57           ; PC := 57
+ 32 [-]: TEST      R2 1         ; if R2 then PC := 64
+ 33 [-]: JMP       64           ; PC := 64
  34 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1["0xDBEF0FB6"]
  35 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  36 [-]: GETGLOBAL R3 K9        ; R3 := _T
  37 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["glassFragment"]
- 38 [-]: EQ        0 R3 K11     ; if R3 ~= nil then PC := 49
- 39 [-]: JMP       49           ; PC := 49
+ 38 [-]: EQ        0 R3 K11     ; if R3 ~= nil then PC := 43
+ 39 [-]: JMP       43           ; PC := 43
  40 [-]: GETGLOBAL R3 K9        ; R3 := _T
  41 [-]: NEWTABLE  R4 0 0       ; R4 := {}
  42 [-]: SETTABLE  R3 K10 R4    ; R3["glassFragment"] := R4
  43 [-]: GETGLOBAL R3 K9        ; R3 := _T
  44 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["glassFragment"]
- 45 [-]: NEWTABLE  R4 0 1       ; R4 := {}
- 46 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 47 [-]: SETTABLE  R4 K12 R5    ; R4["mirrors"] := R5
- 48 [-]: SETTABLE  R3 R2 R4     ; R3[R2] := R4
- 49 [-]: GETGLOBAL R3 K13       ; R3 := table
- 50 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["0xE6450C9D"]
- 51 [-]: GETGLOBAL R4 K9        ; R4 := _T
- 52 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["glassFragment"]
- 53 [-]: GETTABLE  R4 R4 R2     ; R4 := R4[R2]
- 54 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["mirrors"]
- 55 [-]: MOVE      R5 R0        ; R5 := R0
- 56 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 57 [-]: SELF      R3 R1 K15    ; R4 := R1; R3 := R1["0x8DB5D01F"]
- 58 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 59 [-]: SELF      R3 R3 K16    ; R4 := R3; R3 := R3["0x6978AC59"]
- 60 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 61 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
- 62 [-]: MOVE      R5 R3        ; R5 := R3
- 63 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 64 [-]: TEST      R4 1         ; if R4 then PC := 73
- 65 [-]: JMP       73           ; PC := 73
- 66 [-]: SELF      R4 R3 K17    ; R5 := R3; R4 := R3["0xAFA67B2D"]
- 67 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 68 [-]: SELF      R5 R4 K18    ; R6 := R4; R5 := R4["0xD352979B"]
- 69 [-]: CALL      R5 2 1       ; R5(R6)
- 70 [-]: SELF      R5 R4 K19    ; R6 := R4; R5 := R4["0xB78068E1"]
- 71 [-]: MOVE      R7 R0        ; R7 := R0
- 72 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 73 [-]: SELF      R5 R0 K20    ; R6 := R0; R5 := R0["0xAB436EF2"]
- 74 [-]: GETGLOBAL R7 K21       ; R7 := fragmentAttach
- 75 [-]: GETGLOBAL R8 K22       ; R8 := EMPTY_SYMBOL
- 76 [-]: GETGLOBAL R9 K23       ; R9 := ZERO_VECTOR
- 77 [-]: GETGLOBAL R10 K24      ; R10 := ZERO_ROTATION
- 78 [-]: MOVE      R11 R3       ; R11 := R3
- 79 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 80 [-]: RETURN    R0 1         ; return 
+ 45 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
+ 46 [-]: EQ        0 R3 K11     ; if R3 ~= nil then PC := 56
+ 47 [-]: JMP       56           ; PC := 56
+ 48 [-]: GETGLOBAL R3 K9        ; R3 := _T
+ 49 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["glassFragment"]
+ 50 [-]: NEWTABLE  R4 0 2       ; R4 := {}
+ 51 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 52 [-]: SETTABLE  R4 K12 R5    ; R4["mirrors"] := R5
+ 53 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 54 [-]: SETTABLE  R4 K13 R5    ; R4["avatars"] := R5
+ 55 [-]: SETTABLE  R3 R2 R4     ; R3[R2] := R4
+ 56 [-]: GETGLOBAL R3 K14       ; R3 := table
+ 57 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["0xE6450C9D"]
+ 58 [-]: GETGLOBAL R4 K9        ; R4 := _T
+ 59 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["glassFragment"]
+ 60 [-]: GETTABLE  R4 R4 R2     ; R4 := R4[R2]
+ 61 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["mirrors"]
+ 62 [-]: MOVE      R5 R0        ; R5 := R0
+ 63 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 64 [-]: SELF      R3 R1 K16    ; R4 := R1; R3 := R1["0x8DB5D01F"]
+ 65 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 66 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3["0x6978AC59"]
+ 67 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 68 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
+ 69 [-]: MOVE      R5 R3        ; R5 := R3
+ 70 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 71 [-]: TEST      R4 1         ; if R4 then PC := 80
+ 72 [-]: JMP       80           ; PC := 80
+ 73 [-]: SELF      R4 R3 K18    ; R5 := R3; R4 := R3["0xAFA67B2D"]
+ 74 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 75 [-]: SELF      R5 R4 K19    ; R6 := R4; R5 := R4["0xD352979B"]
+ 76 [-]: CALL      R5 2 1       ; R5(R6)
+ 77 [-]: SELF      R5 R4 K20    ; R6 := R4; R5 := R4["0xB78068E1"]
+ 78 [-]: MOVE      R7 R0        ; R7 := R0
+ 79 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 80 [-]: SELF      R5 R0 K21    ; R6 := R0; R5 := R0["0xAB436EF2"]
+ 81 [-]: GETGLOBAL R7 K22       ; R7 := fragmentAttach
+ 82 [-]: GETGLOBAL R8 K23       ; R8 := EMPTY_SYMBOL
+ 83 [-]: GETGLOBAL R9 K24       ; R9 := ZERO_VECTOR
+ 84 [-]: GETGLOBAL R10 K25      ; R10 := ZERO_ROTATION
+ 85 [-]: MOVE      R11 R3       ; R11 := R3
+ 86 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
+ 87 [-]: RETURN    R0 1         ; return 
 
 

@@ -1,4 +1,4 @@
-code size: 58
+code size: 57
 code size: 129
 code size: 16
 code size: 11
@@ -6,7 +6,7 @@ code size: 36
 code size: 10
 code size: 89
 code size: 10
-code size: 205
+code size: 197
 code size: 19
 code size: 67
 code size: 16
@@ -15,7 +15,7 @@ code size: 3
 code size: 3
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\SyndicateTitleEarned.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\SyndicateTitleEarned.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -54,34 +54,33 @@ code size: 3
  28 [-]: MOVE      R0 R6        ; R0 := R6
  29 [-]: CLOSURE   R9 3         ; R9 := closure(Function #4)
  30 [-]: MOVE      R0 R0        ; R0 := R0
- 31 [-]: MOVE      R0 R1        ; R0 := R1
- 32 [-]: CLOSURE   R10 4        ; R10 := closure(Function #5)
- 33 [-]: MOVE      R0 R7        ; R0 := R7
- 34 [-]: MOVE      R0 R8        ; R0 := R8
- 35 [-]: MOVE      R0 R1        ; R0 := R1
- 36 [-]: MOVE      R0 R9        ; R0 := R9
- 37 [-]: SETGLOBAL R10 K8       ; Initialize := R10
- 38 [-]: SETGLOBAL R10 K9       ; 0x62648036 := R10
- 39 [-]: CLOSURE   R10 5        ; R10 := closure(Function #6)
- 40 [-]: MOVE      R0 R3        ; R0 := R3
- 41 [-]: SETGLOBAL R10 K10      ; Update := R10
- 42 [-]: SETGLOBAL R10 K11      ; 0x8C7099E9 := R10
- 43 [-]: CLOSURE   R10 6        ; R10 := closure(Function #7)
- 44 [-]: MOVE      R0 R1        ; R0 := R1
- 45 [-]: SETGLOBAL R10 K12      ; onViewportSizeChanged := R10
- 46 [-]: SETGLOBAL R10 K13      ; 0x3A900427 := R10
- 47 [-]: CLOSURE   R10 7        ; R10 := closure(Function #8)
- 48 [-]: MOVE      R0 R4        ; R0 := R4
- 49 [-]: SETGLOBAL R10 K14      ; IsInputBlocked := R10
- 50 [-]: SETGLOBAL R10 K15      ; 0x6FE7E740 := R10
- 51 [-]: CLOSURE   R10 8        ; R10 := closure(Function #9)
- 52 [-]: MOVE      R0 R8        ; R0 := R8
- 53 [-]: SETGLOBAL R10 K16      ; onKeyDown_MENU_CANCEL := R10
- 54 [-]: SETGLOBAL R10 K17      ; 0x5B2C0B28 := R10
- 55 [-]: CLOSURE   R10 9        ; R10 := closure(Function #10)
- 56 [-]: SETGLOBAL R10 K18      ; SupportsThemes := R10
- 57 [-]: SETGLOBAL R10 K19      ; 0xDBE73B9E := R10
- 58 [-]: RETURN    R0 1         ; return 
+ 31 [-]: CLOSURE   R10 4        ; R10 := closure(Function #5)
+ 32 [-]: MOVE      R0 R7        ; R0 := R7
+ 33 [-]: MOVE      R0 R8        ; R0 := R8
+ 34 [-]: MOVE      R0 R1        ; R0 := R1
+ 35 [-]: MOVE      R0 R9        ; R0 := R9
+ 36 [-]: SETGLOBAL R10 K8       ; Initialize := R10
+ 37 [-]: SETGLOBAL R10 K9       ; 0x62648036 := R10
+ 38 [-]: CLOSURE   R10 5        ; R10 := closure(Function #6)
+ 39 [-]: MOVE      R0 R3        ; R0 := R3
+ 40 [-]: SETGLOBAL R10 K10      ; Update := R10
+ 41 [-]: SETGLOBAL R10 K11      ; 0x8C7099E9 := R10
+ 42 [-]: CLOSURE   R10 6        ; R10 := closure(Function #7)
+ 43 [-]: MOVE      R0 R1        ; R0 := R1
+ 44 [-]: SETGLOBAL R10 K12      ; onViewportSizeChanged := R10
+ 45 [-]: SETGLOBAL R10 K13      ; 0x3A900427 := R10
+ 46 [-]: CLOSURE   R10 7        ; R10 := closure(Function #8)
+ 47 [-]: MOVE      R0 R4        ; R0 := R4
+ 48 [-]: SETGLOBAL R10 K14      ; IsInputBlocked := R10
+ 49 [-]: SETGLOBAL R10 K15      ; 0x6FE7E740 := R10
+ 50 [-]: CLOSURE   R10 8        ; R10 := closure(Function #9)
+ 51 [-]: MOVE      R0 R8        ; R0 := R8
+ 52 [-]: SETGLOBAL R10 K16      ; onKeyDown_MENU_CANCEL := R10
+ 53 [-]: SETGLOBAL R10 K17      ; 0x5B2C0B28 := R10
+ 54 [-]: CLOSURE   R10 9        ; R10 := closure(Function #10)
+ 55 [-]: SETGLOBAL R10 K18      ; SupportsThemes := R10
+ 56 [-]: SETGLOBAL R10 K19      ; 0xDBE73B9E := R10
+ 57 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -466,10 +465,10 @@ code size: 3
 ;
 ; Name:            
 ; Defined at line: 96
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  14
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0xDDA3917C"]
@@ -501,187 +500,179 @@ code size: 3
  28 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["UIStyle_BackerHighlight"]
  29 [-]: MOVE      R6 R1        ; R6 := R1
  30 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 31 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 32 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["0x97B78441"]
- 33 [-]: MOVE      R6 R4        ; R6 := R4
- 34 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 35 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 36 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["0x97B78441"]
- 37 [-]: MOVE      R7 R3        ; R7 := R3
- 38 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 39 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 40 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 41 [-]: LOADK     R9 K10       ; R9 := "Complete.Rank.Label"
- 42 [-]: LOADK     R10 K11      ; R10 := "textColor"
- 43 [-]: MOVE      R11 R2       ; R11 := R2
- 44 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 45 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 46 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 47 [-]: LOADK     R9 K12       ; R9 := "Complete.Rank.Cap"
- 48 [-]: LOADK     R10 K13      ; R10 := "_color"
- 49 [-]: MOVE      R11 R2       ; R11 := R2
- 50 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 51 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 52 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 53 [-]: LOADK     R9 K14       ; R9 := "Complete.Rank.Outline"
- 54 [-]: LOADK     R10 K13      ; R10 := "_color"
- 55 [-]: MOVE      R11 R1       ; R11 := R1
- 56 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 57 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 58 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 59 [-]: LOADK     R9 K15       ; R9 := "Complete.Rank.Fill"
- 60 [-]: LOADK     R10 K13      ; R10 := "_color"
- 61 [-]: MOVE      R11 R3       ; R11 := R3
- 62 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 63 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 64 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 65 [-]: LOADK     R9 K16       ; R9 := "Complete.Rank.Shadow"
- 66 [-]: LOADK     R10 K13      ; R10 := "_color"
- 67 [-]: MOVE      R11 R3       ; R11 := R3
- 68 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 69 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 70 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 71 [-]: LOADK     R9 K17       ; R9 := "Complete.Title"
- 72 [-]: LOADK     R10 K11      ; R10 := "textColor"
- 73 [-]: MOVE      R11 R2       ; R11 := R2
- 74 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 75 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 76 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 77 [-]: LOADK     R9 K18       ; R9 := "Complete.RankUpLabel"
- 78 [-]: LOADK     R10 K11      ; R10 := "textColor"
- 79 [-]: MOVE      R11 R0       ; R11 := R0
- 80 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 81 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 82 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7["0x7E1F26D7"]
- 83 [-]: LOADK     R9 K20       ; R9 := "Underglow"
- 84 [-]: GETGLOBAL R10 K21      ; R10 := lightRaysMaterial
- 85 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 86 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 87 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 88 [-]: LOADK     R9 K22       ; R9 := "Underglow.StarburstOne"
- 89 [-]: LOADK     R10 K13      ; R10 := "_color"
- 90 [-]: MOVE      R11 R4       ; R11 := R4
- 91 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 92 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 93 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
- 94 [-]: LOADK     R9 K23       ; R9 := "Underglow.StarburstTwo"
- 95 [-]: LOADK     R10 K13      ; R10 := "_color"
- 96 [-]: MOVE      R11 R3       ; R11 := R3
- 97 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 98 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 99 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-100 [-]: LOADK     R9 K24       ; R9 := "Underglow.Sparkles"
-101 [-]: LOADK     R10 K13      ; R10 := "_color"
-102 [-]: MOVE      R11 R2       ; R11 := R2
-103 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-104 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-105 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-106 [-]: LOADK     R9 K22       ; R9 := "Underglow.StarburstOne"
-107 [-]: LOADK     R10 K25      ; R10 := "_alpha"
-108 [-]: LOADK     R11 K26      ; R11 := 20
-109 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-110 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-111 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-112 [-]: LOADK     R9 K23       ; R9 := "Underglow.StarburstTwo"
-113 [-]: LOADK     R10 K25      ; R10 := "_alpha"
-114 [-]: LOADK     R11 K27      ; R11 := 10
-115 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-116 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-117 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-118 [-]: LOADK     R9 K24       ; R9 := "Underglow.Sparkles"
-119 [-]: LOADK     R10 K25      ; R10 := "_alpha"
-120 [-]: LOADK     R11 K28      ; R11 := 30
-121 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-122 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-123 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-124 [-]: LOADK     R9 K20       ; R9 := "Underglow"
-125 [-]: LOADK     R10 K29      ; R10 := "_xscale"
-126 [-]: LOADK     R11 K30      ; R11 := 200
-127 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-128 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-129 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-130 [-]: LOADK     R9 K20       ; R9 := "Underglow"
-131 [-]: LOADK     R10 K31      ; R10 := "_yscale"
-132 [-]: LOADK     R11 K30      ; R11 := 200
-133 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-134 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-135 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-136 [-]: LOADK     R9 K32       ; R9 := "Bg"
-137 [-]: LOADK     R10 K13      ; R10 := "_color"
-138 [-]: MOVE      R11 R3       ; R11 := R3
-139 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-140 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-141 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-142 [-]: LOADK     R9 K32       ; R9 := "Bg"
-143 [-]: LOADK     R10 K25      ; R10 := "_alpha"
-144 [-]: LOADK     R11 K33      ; R11 := 80
-145 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-146 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-147 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7["0x7E1F26D7"]
-148 [-]: LOADK     R9 K34       ; R9 := "BgLines.Left"
-149 [-]: GETGLOBAL R10 K35      ; R10 := leftLineMaterial
-150 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
-151 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-152 [-]: SELF      R7 R7 K19    ; R8 := R7; R7 := R7["0x7E1F26D7"]
-153 [-]: LOADK     R9 K36       ; R9 := "BgLines.Right"
-154 [-]: GETGLOBAL R10 K37      ; R10 := rightLineMaterial
-155 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
-156 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
-157 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x1C19D966"]
-158 [-]: LOADK     R9 K38       ; R9 := "BgLines"
-159 [-]: LOADK     R10 K13      ; R10 := "_color"
-160 [-]: MOVE      R11 R1       ; R11 := R1
-161 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-162 [-]: GETUPVAL  R7 U0        ; R7 := U0
-163 [-]: GETTABLE  R7 R7 K0     ; R7 := R7["0xDDA3917C"]
-164 [-]: GETGLOBAL R8 K1        ; R8 := Lotus_Game
-165 [-]: GETTABLE  R8 R8 K2     ; R8 := R8["UIStyle_Content"]
-166 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-167 [-]: GETGLOBAL R8 K8        ; R8 := mMovie
-168 [-]: SELF      R8 R8 K39    ; R9 := R8; R8 := R8["0x302AAB2F"]
-169 [-]: LOADK     R10 K34      ; R10 := "BgLines.Left"
-170 [-]: LOADK     R11 K40      ; R11 := "RipplesColor"
-171 [-]: GETTABLE  R12 R7 K41   ; R12 := R7["red"]
-172 [-]: DIV       R12 R12 K42  ; R12 := R12 / 255
-173 [-]: GETTABLE  R13 R7 K43   ; R13 := R7["green"]
-174 [-]: DIV       R13 R13 K42  ; R13 := R13 / 255
-175 [-]: GETTABLE  R14 R7 K44   ; R14 := R7["blue"]
-176 [-]: DIV       R14 R14 K42  ; R14 := R14 / 255
-177 [-]: LOADK     R15 K45      ; R15 := 0.5
-178 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
-179 [-]: GETGLOBAL R8 K8        ; R8 := mMovie
-180 [-]: SELF      R8 R8 K39    ; R9 := R8; R8 := R8["0x302AAB2F"]
-181 [-]: LOADK     R10 K36      ; R10 := "BgLines.Right"
-182 [-]: LOADK     R11 K40      ; R11 := "RipplesColor"
-183 [-]: GETTABLE  R12 R7 K41   ; R12 := R7["red"]
-184 [-]: DIV       R12 R12 K42  ; R12 := R12 / 255
-185 [-]: GETTABLE  R13 R7 K43   ; R13 := R7["green"]
-186 [-]: DIV       R13 R13 K42  ; R13 := R13 / 255
-187 [-]: GETTABLE  R14 R7 K44   ; R14 := R7["blue"]
-188 [-]: DIV       R14 R14 K42  ; R14 := R14 / 255
-189 [-]: LOADK     R15 K45      ; R15 := 0.5
-190 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
-191 [-]: CLOSURE   R8 0         ; R8 := closure(Function #4.1)
-192 [-]: GETGLOBAL R9 K46       ; R9 := 0x52E17A90
-193 [-]: GETGLOBAL R10 K8       ; R10 := mMovie
-194 [-]: LOADK     R11 K38      ; R11 := "BgLines"
-195 [-]: GETGLOBAL R12 K47      ; R12 := UISys
-196 [-]: GETTABLE  R12 R12 K48  ; R12 := R12["FlashInstance_EASE_OUT"]
-197 [-]: NEWTABLE  R13 1 0      ; R13 := {}
-198 [-]: MOVE      R14 R8       ; R14 := R8
-199 [-]: SETLIST   R13 1 1      ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 1
-200 [-]: NEWTABLE  R14 1 0      ; R14 := {}
-201 [-]: LOADK     R15 K49      ; R15 := 1
-202 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-203 [-]: LOADK     R15 K50      ; R15 := 1.5
-204 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
-205 [-]: RETURN    R0 1         ; return 
+ 31 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 32 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 33 [-]: LOADK     R7 K9        ; R7 := "Complete.Rank.Label"
+ 34 [-]: LOADK     R8 K10       ; R8 := "textColor"
+ 35 [-]: MOVE      R9 R2        ; R9 := R2
+ 36 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 37 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 38 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 39 [-]: LOADK     R7 K11       ; R7 := "Complete.Rank.Cap"
+ 40 [-]: LOADK     R8 K12       ; R8 := "_color"
+ 41 [-]: MOVE      R9 R2        ; R9 := R2
+ 42 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 43 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 44 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 45 [-]: LOADK     R7 K13       ; R7 := "Complete.Rank.Outline"
+ 46 [-]: LOADK     R8 K12       ; R8 := "_color"
+ 47 [-]: MOVE      R9 R1        ; R9 := R1
+ 48 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 49 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 50 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 51 [-]: LOADK     R7 K14       ; R7 := "Complete.Rank.Fill"
+ 52 [-]: LOADK     R8 K12       ; R8 := "_color"
+ 53 [-]: MOVE      R9 R3        ; R9 := R3
+ 54 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 55 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 56 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 57 [-]: LOADK     R7 K15       ; R7 := "Complete.Rank.Shadow"
+ 58 [-]: LOADK     R8 K12       ; R8 := "_color"
+ 59 [-]: MOVE      R9 R3        ; R9 := R3
+ 60 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 61 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 62 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 63 [-]: LOADK     R7 K16       ; R7 := "Complete.Title"
+ 64 [-]: LOADK     R8 K10       ; R8 := "textColor"
+ 65 [-]: MOVE      R9 R2        ; R9 := R2
+ 66 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 67 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 68 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 69 [-]: LOADK     R7 K17       ; R7 := "Complete.RankUpLabel"
+ 70 [-]: LOADK     R8 K10       ; R8 := "textColor"
+ 71 [-]: MOVE      R9 R0        ; R9 := R0
+ 72 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 73 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 74 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5["0x7E1F26D7"]
+ 75 [-]: LOADK     R7 K19       ; R7 := "Underglow"
+ 76 [-]: GETGLOBAL R8 K20       ; R8 := lightRaysMaterial
+ 77 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 78 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 79 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 80 [-]: LOADK     R7 K21       ; R7 := "Underglow.StarburstOne"
+ 81 [-]: LOADK     R8 K12       ; R8 := "_color"
+ 82 [-]: MOVE      R9 R4        ; R9 := R4
+ 83 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 84 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 85 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 86 [-]: LOADK     R7 K22       ; R7 := "Underglow.StarburstTwo"
+ 87 [-]: LOADK     R8 K12       ; R8 := "_color"
+ 88 [-]: MOVE      R9 R3        ; R9 := R3
+ 89 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 90 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 91 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 92 [-]: LOADK     R7 K23       ; R7 := "Underglow.Sparkles"
+ 93 [-]: LOADK     R8 K12       ; R8 := "_color"
+ 94 [-]: MOVE      R9 R2        ; R9 := R2
+ 95 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 96 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+ 97 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 98 [-]: LOADK     R7 K21       ; R7 := "Underglow.StarburstOne"
+ 99 [-]: LOADK     R8 K24       ; R8 := "_alpha"
+100 [-]: LOADK     R9 K25       ; R9 := 20
+101 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+102 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+103 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+104 [-]: LOADK     R7 K22       ; R7 := "Underglow.StarburstTwo"
+105 [-]: LOADK     R8 K24       ; R8 := "_alpha"
+106 [-]: LOADK     R9 K26       ; R9 := 10
+107 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+108 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+109 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+110 [-]: LOADK     R7 K23       ; R7 := "Underglow.Sparkles"
+111 [-]: LOADK     R8 K24       ; R8 := "_alpha"
+112 [-]: LOADK     R9 K27       ; R9 := 30
+113 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+114 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+115 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+116 [-]: LOADK     R7 K19       ; R7 := "Underglow"
+117 [-]: LOADK     R8 K28       ; R8 := "_xscale"
+118 [-]: LOADK     R9 K29       ; R9 := 200
+119 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+120 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+121 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+122 [-]: LOADK     R7 K19       ; R7 := "Underglow"
+123 [-]: LOADK     R8 K30       ; R8 := "_yscale"
+124 [-]: LOADK     R9 K29       ; R9 := 200
+125 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+126 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+127 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+128 [-]: LOADK     R7 K31       ; R7 := "Bg"
+129 [-]: LOADK     R8 K12       ; R8 := "_color"
+130 [-]: MOVE      R9 R3        ; R9 := R3
+131 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+132 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+133 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+134 [-]: LOADK     R7 K31       ; R7 := "Bg"
+135 [-]: LOADK     R8 K24       ; R8 := "_alpha"
+136 [-]: LOADK     R9 K32       ; R9 := 80
+137 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+138 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+139 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5["0x7E1F26D7"]
+140 [-]: LOADK     R7 K33       ; R7 := "BgLines.Left"
+141 [-]: GETGLOBAL R8 K34       ; R8 := leftLineMaterial
+142 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+143 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+144 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5["0x7E1F26D7"]
+145 [-]: LOADK     R7 K35       ; R7 := "BgLines.Right"
+146 [-]: GETGLOBAL R8 K36       ; R8 := rightLineMaterial
+147 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+148 [-]: GETGLOBAL R5 K7        ; R5 := mMovie
+149 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x1C19D966"]
+150 [-]: LOADK     R7 K37       ; R7 := "BgLines"
+151 [-]: LOADK     R8 K12       ; R8 := "_color"
+152 [-]: MOVE      R9 R1        ; R9 := R1
+153 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+154 [-]: GETUPVAL  R5 U0        ; R5 := U0
+155 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["0xDDA3917C"]
+156 [-]: GETGLOBAL R6 K1        ; R6 := Lotus_Game
+157 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["UIStyle_Content"]
+158 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+159 [-]: GETGLOBAL R6 K7        ; R6 := mMovie
+160 [-]: SELF      R6 R6 K38    ; R7 := R6; R6 := R6["0x302AAB2F"]
+161 [-]: LOADK     R8 K33       ; R8 := "BgLines.Left"
+162 [-]: LOADK     R9 K39       ; R9 := "RipplesColor"
+163 [-]: GETTABLE  R10 R5 K40   ; R10 := R5["red"]
+164 [-]: DIV       R10 R10 K41  ; R10 := R10 / 255
+165 [-]: GETTABLE  R11 R5 K42   ; R11 := R5["green"]
+166 [-]: DIV       R11 R11 K41  ; R11 := R11 / 255
+167 [-]: GETTABLE  R12 R5 K43   ; R12 := R5["blue"]
+168 [-]: DIV       R12 R12 K41  ; R12 := R12 / 255
+169 [-]: LOADK     R13 K44      ; R13 := 0.5
+170 [-]: CALL      R6 8 1       ; R6(R7,R8,R9,R10,R11,R12,R13)
+171 [-]: GETGLOBAL R6 K7        ; R6 := mMovie
+172 [-]: SELF      R6 R6 K38    ; R7 := R6; R6 := R6["0x302AAB2F"]
+173 [-]: LOADK     R8 K35       ; R8 := "BgLines.Right"
+174 [-]: LOADK     R9 K39       ; R9 := "RipplesColor"
+175 [-]: GETTABLE  R10 R5 K40   ; R10 := R5["red"]
+176 [-]: DIV       R10 R10 K41  ; R10 := R10 / 255
+177 [-]: GETTABLE  R11 R5 K42   ; R11 := R5["green"]
+178 [-]: DIV       R11 R11 K41  ; R11 := R11 / 255
+179 [-]: GETTABLE  R12 R5 K43   ; R12 := R5["blue"]
+180 [-]: DIV       R12 R12 K41  ; R12 := R12 / 255
+181 [-]: LOADK     R13 K44      ; R13 := 0.5
+182 [-]: CALL      R6 8 1       ; R6(R7,R8,R9,R10,R11,R12,R13)
+183 [-]: CLOSURE   R6 0         ; R6 := closure(Function #4.1)
+184 [-]: GETGLOBAL R7 K45       ; R7 := 0x52E17A90
+185 [-]: GETGLOBAL R8 K7        ; R8 := mMovie
+186 [-]: LOADK     R9 K37       ; R9 := "BgLines"
+187 [-]: GETGLOBAL R10 K46      ; R10 := UISys
+188 [-]: GETTABLE  R10 R10 K47  ; R10 := R10["FlashInstance_EASE_OUT"]
+189 [-]: NEWTABLE  R11 1 0      ; R11 := {}
+190 [-]: MOVE      R12 R6       ; R12 := R6
+191 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
+192 [-]: NEWTABLE  R12 1 0      ; R12 := {}
+193 [-]: LOADK     R13 K48      ; R13 := 1
+194 [-]: SETLIST   R12 1 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 1
+195 [-]: LOADK     R13 K49      ; R13 := 1.5
+196 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
+197 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4.1:
 ;
 ; Name:            
-; Defined at line: 132
+; Defined at line: 130
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -711,7 +702,7 @@ code size: 3
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 142
+; Defined at line: 140
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -789,7 +780,7 @@ code size: 3
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 164
+; Defined at line: 162
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -816,7 +807,7 @@ code size: 3
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 172
+; Defined at line: 170
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -844,7 +835,7 @@ code size: 3
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 178
+; Defined at line: 176
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -858,7 +849,7 @@ code size: 3
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 182
+; Defined at line: 180
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -872,7 +863,7 @@ code size: 3
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 186
+; Defined at line: 184
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

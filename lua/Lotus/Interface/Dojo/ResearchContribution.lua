@@ -8,8 +8,8 @@ code size: 28
 code size: 3
 code size: 8
 code size: 5
-code size: 91
-code size: 58
+code size: 103
+code size: 70
 code size: 74
 code size: 51
 code size: 6
@@ -44,7 +44,7 @@ code size: 15
 code size: 552
 code size: 108
 code size: 373
-code size: 381
+code size: 360
 code size: 16
 code size: 6
 code size: 3
@@ -56,8 +56,8 @@ code size: 3
 code size: 3
 code size: 52
 code size: 63
-code size: 7
-code size: 77
+code size: 19
+code size: 89
 code size: 40
 code size: 123
 code size: 50
@@ -83,7 +83,7 @@ code size: 18
 code size: 33
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Dojo\ResearchContribution.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Dojo\ResearchContribution.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -785,105 +785,117 @@ code size: 3
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  5
 
-  1 [-]: LOADK     R1 K0        ; R1 := ""
-  2 [-]: GETGLOBAL R2 K1        ; R2 := Lotus_Game
-  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["JsonProcLevelHelper_VALID_REQUEST"]
-  4 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 20
-  5 [-]: JMP       20           ; PC := 20
-  6 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  7 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  8 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["DECOS"]
-  9 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 13
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: LOADK     R1 K4        ; R1 := "/Lotus/Language/Dojo/DecoAbortSuccess"
- 12 [-]: JMP       81           ; PC := 81
- 13 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 14 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 15 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["ROOMS"]
- 16 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 81
- 17 [-]: JMP       81           ; PC := 81
- 18 [-]: LOADK     R1 K6        ; R1 := "/Lotus/Language/Dojo/BuildCancellationSuccessful"
- 19 [-]: JMP       81           ; PC := 81
- 20 [-]: GETGLOBAL R2 K1        ; R2 := Lotus_Game
- 21 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["JsonProcLevelHelper_INVALID_PERMISSION"]
- 22 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 26
- 23 [-]: JMP       26           ; PC := 26
- 24 [-]: LOADK     R1 K8        ; R1 := "/Lotus/Language/Dojo/Generic_INVALID_PERMISSION"
- 25 [-]: JMP       81           ; PC := 81
- 26 [-]: GETGLOBAL R2 K1        ; R2 := Lotus_Game
- 27 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["JsonProcLevelHelper_COMPONENT_NOT_FOUND"]
- 28 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 44
- 29 [-]: JMP       44           ; PC := 44
- 30 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 31 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 32 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["DECOS"]
- 33 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 37
- 34 [-]: JMP       37           ; PC := 37
- 35 [-]: LOADK     R1 K10       ; R1 := "/Lotus/Language/Dojo/DecoAbortFail_COMPONENT_NOT_FOUND"
- 36 [-]: JMP       81           ; PC := 81
- 37 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 38 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 39 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["ROOMS"]
- 40 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 81
- 41 [-]: JMP       81           ; PC := 81
- 42 [-]: LOADK     R1 K11       ; R1 := "/Lotus/Language/Dojo/AbortFail_COMPONENT_NOT_FOUND"
- 43 [-]: JMP       81           ; PC := 81
- 44 [-]: GETGLOBAL R2 K1        ; R2 := Lotus_Game
- 45 [-]: GETTABLE  R2 R2 K12    ; R2 := R2["JsonProcLevelHelper_CONSTRUCTION_STARTED"]
- 46 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 62
- 47 [-]: JMP       62           ; PC := 62
- 48 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 49 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 50 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["DECOS"]
- 51 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 55
- 52 [-]: JMP       55           ; PC := 55
- 53 [-]: LOADK     R1 K13       ; R1 := "/Lotus/Language/Dojo/DecoAbortFail_CONSTRUCTION_STARTED"
- 54 [-]: JMP       81           ; PC := 81
- 55 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 56 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 57 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["ROOMS"]
- 58 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 81
- 59 [-]: JMP       81           ; PC := 81
- 60 [-]: LOADK     R1 K14       ; R1 := "/Lotus/Language/Dojo/AbortFail_CONSTRUCTION_STARTED"
- 61 [-]: JMP       81           ; PC := 81
- 62 [-]: GETGLOBAL R2 K1        ; R2 := Lotus_Game
- 63 [-]: GETTABLE  R2 R2 K15    ; R2 := R2["JsonProcLevelHelper_ALREADY_ABORTING"]
- 64 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 80
- 65 [-]: JMP       80           ; PC := 80
- 66 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 67 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 68 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["DECOS"]
- 69 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 73
- 70 [-]: JMP       73           ; PC := 73
- 71 [-]: LOADK     R1 K10       ; R1 := "/Lotus/Language/Dojo/DecoAbortFail_COMPONENT_NOT_FOUND"
- 72 [-]: JMP       81           ; PC := 81
- 73 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 74 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 75 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["ROOMS"]
- 76 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 81
- 77 [-]: JMP       81           ; PC := 81
- 78 [-]: LOADK     R1 K16       ; R1 := "/Lotus/Language/Dojo/AbortFail_ALREADY_ABORTING"
- 79 [-]: JMP       81           ; PC := 81
- 80 [-]: LOADK     R1 K17       ; R1 := "/Lotus/Language/Dojo/AbortFail_UNKNOWN_ERROR"
- 81 [-]: GETGLOBAL R2 K18       ; R2 := string
- 82 [-]: GETTABLE  R2 R2 K19    ; R2 := R2["0xC6772A8A"]
- 83 [-]: MOVE      R3 R1        ; R3 := R1
- 84 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 85 [-]: LT        0 K20 R2     ; if 0 >= R2 then PC := 91
- 86 [-]: JMP       91           ; PC := 91
- 87 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 88 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["0xB11F032"]
- 89 [-]: MOVE      R3 R1        ; R3 := R1
- 90 [-]: CALL      R2 2 1       ; R2(R3)
- 91 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["BackgroundMovie"]
+  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  5 [-]: TEST      R1 1         ; if R1 then PC := 13
+  6 [-]: JMP       13           ; PC := 13
+  7 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  8 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["BackgroundMovie"]
+  9 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0x458F27A9"]
+ 10 [-]: LOADK     R3 K4        ; R3 := "ShowBlockingMessage"
+ 11 [-]: LOADK     R4 K5        ; R4 := "0"
+ 12 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 13 [-]: LOADK     R1 K6        ; R1 := ""
+ 14 [-]: GETGLOBAL R2 K7        ; R2 := Lotus_Game
+ 15 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["JsonProcLevelHelper_VALID_REQUEST"]
+ 16 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 32
+ 17 [-]: JMP       32           ; PC := 32
+ 18 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 19 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 20 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["DECOS"]
+ 21 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 25
+ 22 [-]: JMP       25           ; PC := 25
+ 23 [-]: LOADK     R1 K10       ; R1 := "/Lotus/Language/Dojo/DecoAbortSuccess"
+ 24 [-]: JMP       93           ; PC := 93
+ 25 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 26 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 27 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["ROOMS"]
+ 28 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 93
+ 29 [-]: JMP       93           ; PC := 93
+ 30 [-]: LOADK     R1 K12       ; R1 := "/Lotus/Language/Dojo/BuildCancellationSuccessful"
+ 31 [-]: JMP       93           ; PC := 93
+ 32 [-]: GETGLOBAL R2 K7        ; R2 := Lotus_Game
+ 33 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["JsonProcLevelHelper_INVALID_PERMISSION"]
+ 34 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 38
+ 35 [-]: JMP       38           ; PC := 38
+ 36 [-]: LOADK     R1 K14       ; R1 := "/Lotus/Language/Dojo/Generic_INVALID_PERMISSION"
+ 37 [-]: JMP       93           ; PC := 93
+ 38 [-]: GETGLOBAL R2 K7        ; R2 := Lotus_Game
+ 39 [-]: GETTABLE  R2 R2 K15    ; R2 := R2["JsonProcLevelHelper_COMPONENT_NOT_FOUND"]
+ 40 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 56
+ 41 [-]: JMP       56           ; PC := 56
+ 42 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 43 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 44 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["DECOS"]
+ 45 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 49
+ 46 [-]: JMP       49           ; PC := 49
+ 47 [-]: LOADK     R1 K16       ; R1 := "/Lotus/Language/Dojo/DecoAbortFail_COMPONENT_NOT_FOUND"
+ 48 [-]: JMP       93           ; PC := 93
+ 49 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 50 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 51 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["ROOMS"]
+ 52 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 93
+ 53 [-]: JMP       93           ; PC := 93
+ 54 [-]: LOADK     R1 K17       ; R1 := "/Lotus/Language/Dojo/AbortFail_COMPONENT_NOT_FOUND"
+ 55 [-]: JMP       93           ; PC := 93
+ 56 [-]: GETGLOBAL R2 K7        ; R2 := Lotus_Game
+ 57 [-]: GETTABLE  R2 R2 K18    ; R2 := R2["JsonProcLevelHelper_CONSTRUCTION_STARTED"]
+ 58 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 74
+ 59 [-]: JMP       74           ; PC := 74
+ 60 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 61 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 62 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["DECOS"]
+ 63 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 67
+ 64 [-]: JMP       67           ; PC := 67
+ 65 [-]: LOADK     R1 K19       ; R1 := "/Lotus/Language/Dojo/DecoAbortFail_CONSTRUCTION_STARTED"
+ 66 [-]: JMP       93           ; PC := 93
+ 67 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 68 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 69 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["ROOMS"]
+ 70 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 93
+ 71 [-]: JMP       93           ; PC := 93
+ 72 [-]: LOADK     R1 K20       ; R1 := "/Lotus/Language/Dojo/AbortFail_CONSTRUCTION_STARTED"
+ 73 [-]: JMP       93           ; PC := 93
+ 74 [-]: GETGLOBAL R2 K7        ; R2 := Lotus_Game
+ 75 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["JsonProcLevelHelper_ALREADY_ABORTING"]
+ 76 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 92
+ 77 [-]: JMP       92           ; PC := 92
+ 78 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 79 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 80 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["DECOS"]
+ 81 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 85
+ 82 [-]: JMP       85           ; PC := 85
+ 83 [-]: LOADK     R1 K16       ; R1 := "/Lotus/Language/Dojo/DecoAbortFail_COMPONENT_NOT_FOUND"
+ 84 [-]: JMP       93           ; PC := 93
+ 85 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 86 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 87 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["ROOMS"]
+ 88 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 93
+ 89 [-]: JMP       93           ; PC := 93
+ 90 [-]: LOADK     R1 K22       ; R1 := "/Lotus/Language/Dojo/AbortFail_ALREADY_ABORTING"
+ 91 [-]: JMP       93           ; PC := 93
+ 92 [-]: LOADK     R1 K23       ; R1 := "/Lotus/Language/Dojo/AbortFail_UNKNOWN_ERROR"
+ 93 [-]: GETGLOBAL R2 K24       ; R2 := string
+ 94 [-]: GETTABLE  R2 R2 K25    ; R2 := R2["0xC6772A8A"]
+ 95 [-]: MOVE      R3 R1        ; R3 := R1
+ 96 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 97 [-]: LT        0 K26 R2     ; if 0 >= R2 then PC := 103
+ 98 [-]: JMP       103          ; PC := 103
+ 99 [-]: GETUPVAL  R2 U2        ; R2 := U2
+100 [-]: GETTABLE  R2 R2 K27    ; R2 := R2["0xB11F032"]
+101 [-]: MOVE      R3 R1        ; R3 := R1
+102 [-]: CALL      R2 2 1       ; R2(R3)
+103 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 195
+; Defined at line: 199
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -894,65 +906,77 @@ code size: 3
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: GETGLOBAL R2 K1        ; R2 := Engine
   5 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["CI_SELECT"]
-  6 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 58
-  7 [-]: JMP       58           ; PC := 58
-  8 [-]: MOVE      R1 R1        ; R1 := R1
-  9 [-]: MOVE      R1 R0        ; R1 := R0
- 10 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 11 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 12 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["DECOS"]
- 13 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 25
- 14 [-]: JMP       25           ; PC := 25
- 15 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 16 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["DojoMgr"]
- 17 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x71471C2F"]
- 18 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 19 [-]: GETUPVAL  R4 U4        ; R4 := U4
- 20 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x4CC9B24B"]
- 21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 22 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 23 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
- 24 [-]: JMP       58           ; PC := 58
- 25 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 26 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 27 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["ROOMS"]
- 28 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 39
- 29 [-]: JMP       39           ; PC := 39
- 30 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 31 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["DojoMgr"]
- 32 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1["0x823398A"]
- 33 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 34 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0x4CC9B24B"]
- 35 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 36 [-]: GETUPVAL  R4 U5        ; R4 := U5
- 37 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 38 [-]: JMP       58           ; PC := 58
- 39 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 40 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 41 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["VAULT_RECIPES"]
- 42 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 58
- 43 [-]: JMP       58           ; PC := 58
- 44 [-]: GETGLOBAL R1 K11       ; R1 := 0x400E7765
- 45 [-]: GETUPVAL  R2 U6        ; R2 := U6
- 46 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 47 [-]: TEST      R1 1         ; if R1 then PC := 58
- 48 [-]: JMP       58           ; PC := 58
- 49 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 50 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["DojoMgr"]
- 51 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0x49180647"]
- 52 [-]: GETUPVAL  R3 U7        ; R3 := U7
- 53 [-]: GETUPVAL  R4 U6        ; R4 := U6
- 54 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["mType"]
- 55 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 56 [-]: GETUPVAL  R6 U8        ; R6 := U8
- 57 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
- 58 [-]: RETURN    R0 1         ; return 
+  6 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 70
+  7 [-]: JMP       70           ; PC := 70
+  8 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+  9 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 10 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["BackgroundMovie"]
+ 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 12 [-]: TEST      R1 1         ; if R1 then PC := 20
+ 13 [-]: JMP       20           ; PC := 20
+ 14 [-]: GETGLOBAL R1 K4        ; R1 := _T
+ 15 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["BackgroundMovie"]
+ 16 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x458F27A9"]
+ 17 [-]: LOADK     R3 K7        ; R3 := "ShowBlockingMessage"
+ 18 [-]: LOADK     R4 K8        ; R4 := "2"
+ 19 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 20 [-]: MOVE      R1 R1        ; R1 := R1
+ 21 [-]: MOVE      R1 R0        ; R1 := R0
+ 22 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 23 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 24 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["DECOS"]
+ 25 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 37
+ 26 [-]: JMP       37           ; PC := 37
+ 27 [-]: GETGLOBAL R1 K4        ; R1 := _T
+ 28 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["DojoMgr"]
+ 29 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1["0x71471C2F"]
+ 30 [-]: GETUPVAL  R3 U3        ; R3 := U3
+ 31 [-]: GETUPVAL  R4 U4        ; R4 := U4
+ 32 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x4CC9B24B"]
+ 33 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 34 [-]: GETUPVAL  R5 U5        ; R5 := U5
+ 35 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 36 [-]: JMP       70           ; PC := 70
+ 37 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 38 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 39 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["ROOMS"]
+ 40 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 51
+ 41 [-]: JMP       51           ; PC := 51
+ 42 [-]: GETGLOBAL R1 K4        ; R1 := _T
+ 43 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["DojoMgr"]
+ 44 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1["0x823398A"]
+ 45 [-]: GETUPVAL  R3 U4        ; R3 := U4
+ 46 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3["0x4CC9B24B"]
+ 47 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 48 [-]: GETUPVAL  R4 U5        ; R4 := U5
+ 49 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 50 [-]: JMP       70           ; PC := 70
+ 51 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 52 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 53 [-]: GETTABLE  R2 R2 K15    ; R2 := R2["VAULT_RECIPES"]
+ 54 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 70
+ 55 [-]: JMP       70           ; PC := 70
+ 56 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+ 57 [-]: GETUPVAL  R2 U6        ; R2 := U6
+ 58 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 59 [-]: TEST      R1 1         ; if R1 then PC := 70
+ 60 [-]: JMP       70           ; PC := 70
+ 61 [-]: GETGLOBAL R1 K4        ; R1 := _T
+ 62 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["DojoMgr"]
+ 63 [-]: SELF      R1 R1 K16    ; R2 := R1; R1 := R1["0x49180647"]
+ 64 [-]: GETUPVAL  R3 U7        ; R3 := U7
+ 65 [-]: GETUPVAL  R4 U6        ; R4 := U6
+ 66 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["mType"]
+ 67 [-]: GETUPVAL  R5 U5        ; R5 := U5
+ 68 [-]: GETUPVAL  R6 U8        ; R6 := U8
+ 69 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
+ 70 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 208
+; Defined at line: 215
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1037,7 +1061,7 @@ code size: 3
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 235
+; Defined at line: 242
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1099,7 +1123,7 @@ code size: 3
 ; Function #10.1:
 ;
 ; Name:            
-; Defined at line: 237
+; Defined at line: 244
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1116,7 +1140,7 @@ code size: 3
 ; Function #10.2:
 ;
 ; Name:            
-; Defined at line: 238
+; Defined at line: 245
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1133,7 +1157,7 @@ code size: 3
 ; Function #10.3:
 ;
 ; Name:            
-; Defined at line: 240
+; Defined at line: 247
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1150,7 +1174,7 @@ code size: 3
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 247
+; Defined at line: 254
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1169,7 +1193,7 @@ code size: 3
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 251
+; Defined at line: 258
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1200,7 +1224,7 @@ code size: 3
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 261
+; Defined at line: 268
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1231,7 +1255,7 @@ code size: 3
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 271
+; Defined at line: 278
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1264,7 +1288,7 @@ code size: 3
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 278
+; Defined at line: 285
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1294,7 +1318,7 @@ code size: 3
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 285
+; Defined at line: 292
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1307,7 +1331,7 @@ code size: 3
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 289
+; Defined at line: 296
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1363,7 +1387,7 @@ code size: 3
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 298
+; Defined at line: 305
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1611,7 +1635,7 @@ code size: 3
 ; Function #18.1:
 ;
 ; Name:            
-; Defined at line: 301
+; Defined at line: 308
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1636,7 +1660,7 @@ code size: 3
 ; Function #18.2:
 ;
 ; Name:            
-; Defined at line: 307
+; Defined at line: 314
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1666,7 +1690,7 @@ code size: 3
 ; Function #18.3:
 ;
 ; Name:            
-; Defined at line: 315
+; Defined at line: 322
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1683,7 +1707,7 @@ code size: 3
 ; Function #18.4:
 ;
 ; Name:            
-; Defined at line: 325
+; Defined at line: 332
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1708,7 +1732,7 @@ code size: 3
 ; Function #18.5:
 ;
 ; Name:            
-; Defined at line: 331
+; Defined at line: 338
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1738,7 +1762,7 @@ code size: 3
 ; Function #18.6:
 ;
 ; Name:            
-; Defined at line: 339
+; Defined at line: 346
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1755,7 +1779,7 @@ code size: 3
 ; Function #18.7:
 ;
 ; Name:            
-; Defined at line: 349
+; Defined at line: 356
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1780,7 +1804,7 @@ code size: 3
 ; Function #18.8:
 ;
 ; Name:            
-; Defined at line: 355
+; Defined at line: 362
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1810,7 +1834,7 @@ code size: 3
 ; Function #18.9:
 ;
 ; Name:            
-; Defined at line: 363
+; Defined at line: 370
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1827,7 +1851,7 @@ code size: 3
 ; Function #18.10:
 ;
 ; Name:            
-; Defined at line: 373
+; Defined at line: 380
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1852,7 +1876,7 @@ code size: 3
 ; Function #18.11:
 ;
 ; Name:            
-; Defined at line: 379
+; Defined at line: 386
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1882,7 +1906,7 @@ code size: 3
 ; Function #18.12:
 ;
 ; Name:            
-; Defined at line: 387
+; Defined at line: 394
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1899,7 +1923,7 @@ code size: 3
 ; Function #18.13:
 ;
 ; Name:            
-; Defined at line: 407
+; Defined at line: 414
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1945,7 +1969,7 @@ code size: 3
 ; Function #18.14:
 ;
 ; Name:            
-; Defined at line: 426
+; Defined at line: 433
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1982,7 +2006,7 @@ code size: 3
 ; Function #18.15:
 ;
 ; Name:            
-; Defined at line: 436
+; Defined at line: 443
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1996,7 +2020,7 @@ code size: 3
 ; Function #18.16:
 ;
 ; Name:            
-; Defined at line: 444
+; Defined at line: 451
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2018,7 +2042,7 @@ code size: 3
 ; Function #18.17:
 ;
 ; Name:            
-; Defined at line: 448
+; Defined at line: 455
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2035,7 +2059,7 @@ code size: 3
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 456
+; Defined at line: 463
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2061,7 +2085,7 @@ code size: 3
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 466
+; Defined at line: 473
 ; #Upvalues:       22
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2624,7 +2648,7 @@ code size: 3
 ; Function #20.1:
 ;
 ; Name:            
-; Defined at line: 473
+; Defined at line: 480
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2743,7 +2767,7 @@ code size: 3
 ; Function #20.2:
 ;
 ; Name:            
-; Defined at line: 502
+; Defined at line: 509
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3127,11 +3151,11 @@ code size: 3
 ; Function #20.3:
 ;
 ; Name:            
-; Defined at line: 552
+; Defined at line: 559
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  21
+; Max Stack Size:  20
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["ButtonsInitialized"]
   2 [-]: TEST      R1 1         ; if R1 then PC := 20
@@ -3345,181 +3369,160 @@ code size: 3
 210 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
 211 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
 212 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-213 [-]: NEWTABLE  R9 0 2       ; R9 := {}
+213 [-]: LOADK     R9 K68       ; R9 := "<font color=\""
 214 [-]: GETUPVAL  R10 U4       ; R10 := U4
-215 [-]: GETTABLE  R10 R10 K64  ; R10 := R10["0x7E197415"]
-216 [-]: GETTABLE  R11 R0 K36   ; R11 := R0["MyBank"]
-217 [-]: LOADK     R12 K40      ; R12 := 0
-218 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-219 [-]: SETTABLE  R9 K68 R10   ; R9["PersonalAmount"] := R10
-220 [-]: GETUPVAL  R10 U4       ; R10 := U4
-221 [-]: GETTABLE  R10 R10 K70  ; R10 := R10["0xF81722A2"]
-222 [-]: GETTABLE  R11 R0 K71   ; R11 := R0["Credits"]
-223 [-]: GETUPVAL  R12 U4       ; R12 := U4
-224 [-]: GETTABLE  R12 R12 K72  ; R12 := R12["0x1C719E76"]
-225 [-]: GETTABLE  R13 R0 K38   ; R13 := R0["VaultBank"]
-226 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-227 [-]: GETUPVAL  R13 U4       ; R13 := U4
-228 [-]: GETTABLE  R13 R13 K64  ; R13 := R13["0x7E197415"]
-229 [-]: GETTABLE  R14 R0 K38   ; R14 := R0["VaultBank"]
-230 [-]: LOADK     R15 K40      ; R15 := 0
-231 [-]: CALL      R13 3 0      ; R13,... := R13(R14,R15)
-232 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
-233 [-]: SETTABLE  R9 K69 R10   ; R9["VaultAmount"] := R10
-234 [-]: LOADK     R10 K73      ; R10 := "<font color=\""
-235 [-]: GETUPVAL  R11 U4       ; R11 := U4
-236 [-]: GETTABLE  R11 R11 K74  ; R11 := R11["0x93C88E0"]
-237 [-]: GETUPVAL  R12 U5       ; R12 := U5
-238 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-239 [-]: LOADK     R12 K75      ; R12 := "\">"
-240 [-]: CONCAT    R10 R10 R12  ; R10 := R10 .. R11 .. R12
-241 [-]: LOADK     R11 K76      ; R11 := "<p><font color=\""
-242 [-]: GETUPVAL  R12 U4       ; R12 := U4
-243 [-]: GETTABLE  R12 R12 K74  ; R12 := R12["0x93C88E0"]
-244 [-]: GETUPVAL  R13 U2       ; R13 := U2
-245 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-246 [-]: LOADK     R13 K75      ; R13 := "\">"
-247 [-]: GETGLOBAL R14 K4       ; R14 := mMovie
-248 [-]: SELF      R14 R14 K77  ; R15 := R14; R14 := R14["0x5DB0BD4"]
-249 [-]: LOADK     R16 K78      ; R16 := "<PLAYER>"
-250 [-]: MOVE      R17 R1       ; R17 := R1
-251 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
-252 [-]: MOVE      R15 R10      ; R15 := R10
-253 [-]: GETUPVAL  R16 U4       ; R16 := U4
-254 [-]: GETTABLE  R16 R16 K64  ; R16 := R16["0x7E197415"]
-255 [-]: GETTABLE  R17 R0 K36   ; R17 := R0["MyBank"]
-256 [-]: LOADK     R18 K40      ; R18 := 0
-257 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
-258 [-]: LOADK     R17 K79      ; R17 := " </font>"
-259 [-]: CONCAT    R11 R11 R17  ; R11 := R11 .. R12 .. R13 .. R14 .. R15 .. R16 .. R17
-260 [-]: GETUPVAL  R12 U6       ; R12 := U6
-261 [-]: TEST      R12 1        ; if R12 then PC := 284
-262 [-]: JMP       284          ; PC := 284
-263 [-]: MOVE      R12 R11      ; R12 := R11
-264 [-]: GETGLOBAL R13 K4       ; R13 := mMovie
-265 [-]: SELF      R13 R13 K77  ; R14 := R13; R13 := R13["0x5DB0BD4"]
-266 [-]: LOADK     R15 K80      ; R15 := "<VAULT>"
-267 [-]: MOVE      R16 R1       ; R16 := R1
-268 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-269 [-]: MOVE      R14 R10      ; R14 := R10
-270 [-]: GETUPVAL  R15 U4       ; R15 := U4
-271 [-]: GETTABLE  R15 R15 K70  ; R15 := R15["0xF81722A2"]
-272 [-]: GETTABLE  R16 R0 K71   ; R16 := R0["Credits"]
-273 [-]: GETUPVAL  R17 U4       ; R17 := U4
-274 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["0x1C719E76"]
-275 [-]: GETTABLE  R18 R0 K38   ; R18 := R0["VaultBank"]
-276 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-277 [-]: GETUPVAL  R18 U4       ; R18 := U4
-278 [-]: GETTABLE  R18 R18 K64  ; R18 := R18["0x7E197415"]
-279 [-]: GETTABLE  R19 R0 K38   ; R19 := R0["VaultBank"]
-280 [-]: LOADK     R20 K40      ; R20 := 0
-281 [-]: CALL      R18 3 0      ; R18,... := R18(R19,R20)
-282 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
-283 [-]: CONCAT    R11 R12 R15  ; R11 := R12 .. R13 .. R14 .. R15
-284 [-]: MOVE      R12 R11      ; R12 := R11
-285 [-]: LOADK     R13 K81      ; R13 := "</font></font></p>"
-286 [-]: CONCAT    R11 R12 R13  ; R11 := R12 .. R13
-287 [-]: GETGLOBAL R12 K4       ; R12 := mMovie
-288 [-]: SELF      R12 R12 K61  ; R13 := R12; R12 := R12["0xD6A79FE9"]
-289 [-]: GETTABLE  R14 R0 K5    ; R14 := R0["mClipName"]
-290 [-]: LOADK     R15 K24      ; R15 := ".Bank"
-291 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
-292 [-]: LOADK     R15 K63      ; R15 := "text"
-293 [-]: MOVE      R16 R11      ; R16 := R11
-294 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
-295 [-]: GETGLOBAL R12 K4       ; R12 := mMovie
-296 [-]: SELF      R12 R12 K61  ; R13 := R12; R12 := R12["0xD6A79FE9"]
-297 [-]: GETTABLE  R14 R0 K5    ; R14 := R0["mClipName"]
-298 [-]: LOADK     R15 K82      ; R15 := ".Donation.Label"
-299 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
-300 [-]: LOADK     R15 K83      ; R15 := "restrict"
-301 [-]: LOADK     R16 K84      ; R16 := "0123456789"
-302 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
-303 [-]: GETTABLE  R12 R0 K37   ; R12 := R0["MyDonation"]
-304 [-]: GETTABLE  R13 R0 K39   ; R13 := R0["MyVaultDonation"]
-305 [-]: ADD       R12 R12 R13  ; R12 := R12 + R13
-306 [-]: LE        1 K40 R12    ; if 0 <= R12 then PC := 316
-307 [-]: JMP       316          ; PC := 316
-308 [-]: GETTABLE  R13 R0 K36   ; R13 := R0["MyBank"]
-309 [-]: EQ        1 R13 K40    ; if R13 == 0 then PC := 316
-310 [-]: JMP       316          ; PC := 316
-311 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["Needed"]
-312 [-]: GETTABLE  R14 R0 K22   ; R14 := R0["Contributed"]
-313 [-]: SUB       R13 R13 R14  ; R13 := R13 - R14
-314 [-]: EQ        0 R13 K40    ; if R13 ~= 0 then PC := 331
-315 [-]: JMP       331          ; PC := 331
-316 [-]: GETTABLE  R13 R0 K46   ; R13 := R0["DonationField"]
-317 [-]: SELF      R13 R13 K85  ; R14 := R13; R13 := R13["0x81976046"]
-318 [-]: MOVE      R15 R12      ; R15 := R12
-319 [-]: LOADK     R16 K86      ; R16 := ""
-320 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-321 [-]: GETGLOBAL R13 K4       ; R13 := mMovie
-322 [-]: SELF      R13 R13 K61  ; R14 := R13; R13 := R13["0xD6A79FE9"]
-323 [-]: GETTABLE  R15 R0 K5    ; R15 := R0["mClipName"]
-324 [-]: LOADK     R16 K27      ; R16 := ".Donation"
-325 [-]: CONCAT    R15 R15 R16  ; R15 := R15 .. R16
-326 [-]: LOADK     R16 K63      ; R16 := "text"
-327 [-]: GETTABLE  R17 R0 K37   ; R17 := R0["MyDonation"]
-328 [-]: GETTABLE  R18 R0 K39   ; R18 := R0["MyVaultDonation"]
-329 [-]: ADD       R17 R17 R18  ; R17 := R17 + R18
-330 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-331 [-]: GETGLOBAL R13 K4       ; R13 := mMovie
-332 [-]: SELF      R13 R13 K61  ; R14 := R13; R13 := R13["0xD6A79FE9"]
-333 [-]: GETTABLE  R15 R0 K5    ; R15 := R0["mClipName"]
-334 [-]: LOADK     R16 K87      ; R16 := ".Material"
-335 [-]: CONCAT    R15 R15 R16  ; R15 := R15 .. R16
-336 [-]: LOADK     R16 K63      ; R16 := "text"
-337 [-]: GETGLOBAL R17 K88      ; R17 := 0xD26C89A0
-338 [-]: GETTABLE  R18 R0 K89   ; R18 := R0["Label"]
-339 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
-340 [-]: CALL      R13 0 1      ; R13(R14,...)
-341 [-]: GETGLOBAL R13 K90      ; R13 := 0x6374FD98
-342 [-]: GETUPVAL  R14 U4       ; R14 := U4
-343 [-]: GETTABLE  R14 R14 K91  ; R14 := R14["0xB57E56DF"]
-344 [-]: GETTABLE  R15 R0 K22   ; R15 := R0["Contributed"]
+215 [-]: GETTABLE  R10 R10 K69  ; R10 := R10["0x93C88E0"]
+216 [-]: GETUPVAL  R11 U5       ; R11 := U5
+217 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+218 [-]: LOADK     R11 K70      ; R11 := "\">"
+219 [-]: CONCAT    R9 R9 R11    ; R9 := R9 .. R10 .. R11
+220 [-]: LOADK     R10 K71      ; R10 := "<p><font color=\""
+221 [-]: GETUPVAL  R11 U4       ; R11 := U4
+222 [-]: GETTABLE  R11 R11 K69  ; R11 := R11["0x93C88E0"]
+223 [-]: GETUPVAL  R12 U2       ; R12 := U2
+224 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+225 [-]: LOADK     R12 K70      ; R12 := "\">"
+226 [-]: GETGLOBAL R13 K4       ; R13 := mMovie
+227 [-]: SELF      R13 R13 K72  ; R14 := R13; R13 := R13["0x5DB0BD4"]
+228 [-]: LOADK     R15 K73      ; R15 := "<PLAYER>"
+229 [-]: MOVE      R16 R1       ; R16 := R1
+230 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
+231 [-]: MOVE      R14 R9       ; R14 := R9
+232 [-]: GETUPVAL  R15 U4       ; R15 := U4
+233 [-]: GETTABLE  R15 R15 K64  ; R15 := R15["0x7E197415"]
+234 [-]: GETTABLE  R16 R0 K36   ; R16 := R0["MyBank"]
+235 [-]: LOADK     R17 K40      ; R17 := 0
+236 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+237 [-]: LOADK     R16 K74      ; R16 := " </font>"
+238 [-]: CONCAT    R10 R10 R16  ; R10 := R10 .. R11 .. R12 .. R13 .. R14 .. R15 .. R16
+239 [-]: GETUPVAL  R11 U6       ; R11 := U6
+240 [-]: TEST      R11 1        ; if R11 then PC := 263
+241 [-]: JMP       263          ; PC := 263
+242 [-]: MOVE      R11 R10      ; R11 := R10
+243 [-]: GETGLOBAL R12 K4       ; R12 := mMovie
+244 [-]: SELF      R12 R12 K72  ; R13 := R12; R12 := R12["0x5DB0BD4"]
+245 [-]: LOADK     R14 K75      ; R14 := "<VAULT>"
+246 [-]: MOVE      R15 R1       ; R15 := R1
+247 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
+248 [-]: MOVE      R13 R9       ; R13 := R9
+249 [-]: GETUPVAL  R14 U4       ; R14 := U4
+250 [-]: GETTABLE  R14 R14 K76  ; R14 := R14["0xF81722A2"]
+251 [-]: GETTABLE  R15 R0 K77   ; R15 := R0["Credits"]
+252 [-]: GETUPVAL  R16 U4       ; R16 := U4
+253 [-]: GETTABLE  R16 R16 K78  ; R16 := R16["0x1C719E76"]
+254 [-]: GETTABLE  R17 R0 K38   ; R17 := R0["VaultBank"]
+255 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+256 [-]: GETUPVAL  R17 U4       ; R17 := U4
+257 [-]: GETTABLE  R17 R17 K64  ; R17 := R17["0x7E197415"]
+258 [-]: GETTABLE  R18 R0 K38   ; R18 := R0["VaultBank"]
+259 [-]: LOADK     R19 K40      ; R19 := 0
+260 [-]: CALL      R17 3 0      ; R17,... := R17(R18,R19)
+261 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
+262 [-]: CONCAT    R10 R11 R14  ; R10 := R11 .. R12 .. R13 .. R14
+263 [-]: MOVE      R11 R10      ; R11 := R10
+264 [-]: LOADK     R12 K79      ; R12 := "</font></font></p>"
+265 [-]: CONCAT    R10 R11 R12  ; R10 := R11 .. R12
+266 [-]: GETGLOBAL R11 K4       ; R11 := mMovie
+267 [-]: SELF      R11 R11 K61  ; R12 := R11; R11 := R11["0xD6A79FE9"]
+268 [-]: GETTABLE  R13 R0 K5    ; R13 := R0["mClipName"]
+269 [-]: LOADK     R14 K24      ; R14 := ".Bank"
+270 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
+271 [-]: LOADK     R14 K63      ; R14 := "text"
+272 [-]: MOVE      R15 R10      ; R15 := R10
+273 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
+274 [-]: GETGLOBAL R11 K4       ; R11 := mMovie
+275 [-]: SELF      R11 R11 K61  ; R12 := R11; R11 := R11["0xD6A79FE9"]
+276 [-]: GETTABLE  R13 R0 K5    ; R13 := R0["mClipName"]
+277 [-]: LOADK     R14 K80      ; R14 := ".Donation.Label"
+278 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
+279 [-]: LOADK     R14 K81      ; R14 := "restrict"
+280 [-]: LOADK     R15 K82      ; R15 := "0123456789"
+281 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
+282 [-]: GETTABLE  R11 R0 K37   ; R11 := R0["MyDonation"]
+283 [-]: GETTABLE  R12 R0 K39   ; R12 := R0["MyVaultDonation"]
+284 [-]: ADD       R11 R11 R12  ; R11 := R11 + R12
+285 [-]: LE        1 K40 R11    ; if 0 <= R11 then PC := 295
+286 [-]: JMP       295          ; PC := 295
+287 [-]: GETTABLE  R12 R0 K36   ; R12 := R0["MyBank"]
+288 [-]: EQ        1 R12 K40    ; if R12 == 0 then PC := 295
+289 [-]: JMP       295          ; PC := 295
+290 [-]: GETTABLE  R12 R0 K23   ; R12 := R0["Needed"]
+291 [-]: GETTABLE  R13 R0 K22   ; R13 := R0["Contributed"]
+292 [-]: SUB       R12 R12 R13  ; R12 := R12 - R13
+293 [-]: EQ        0 R12 K40    ; if R12 ~= 0 then PC := 310
+294 [-]: JMP       310          ; PC := 310
+295 [-]: GETTABLE  R12 R0 K46   ; R12 := R0["DonationField"]
+296 [-]: SELF      R12 R12 K83  ; R13 := R12; R12 := R12["0x81976046"]
+297 [-]: MOVE      R14 R11      ; R14 := R11
+298 [-]: LOADK     R15 K84      ; R15 := ""
+299 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+300 [-]: GETGLOBAL R12 K4       ; R12 := mMovie
+301 [-]: SELF      R12 R12 K61  ; R13 := R12; R12 := R12["0xD6A79FE9"]
+302 [-]: GETTABLE  R14 R0 K5    ; R14 := R0["mClipName"]
+303 [-]: LOADK     R15 K27      ; R15 := ".Donation"
+304 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
+305 [-]: LOADK     R15 K63      ; R15 := "text"
+306 [-]: GETTABLE  R16 R0 K37   ; R16 := R0["MyDonation"]
+307 [-]: GETTABLE  R17 R0 K39   ; R17 := R0["MyVaultDonation"]
+308 [-]: ADD       R16 R16 R17  ; R16 := R16 + R17
+309 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
+310 [-]: GETGLOBAL R12 K4       ; R12 := mMovie
+311 [-]: SELF      R12 R12 K61  ; R13 := R12; R12 := R12["0xD6A79FE9"]
+312 [-]: GETTABLE  R14 R0 K5    ; R14 := R0["mClipName"]
+313 [-]: LOADK     R15 K85      ; R15 := ".Material"
+314 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
+315 [-]: LOADK     R15 K63      ; R15 := "text"
+316 [-]: GETGLOBAL R16 K86      ; R16 := 0xD26C89A0
+317 [-]: GETTABLE  R17 R0 K87   ; R17 := R0["Label"]
+318 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
+319 [-]: CALL      R12 0 1      ; R12(R13,...)
+320 [-]: GETGLOBAL R12 K88      ; R12 := 0x6374FD98
+321 [-]: GETUPVAL  R13 U4       ; R13 := U4
+322 [-]: GETTABLE  R13 R13 K89  ; R13 := R13["0xB57E56DF"]
+323 [-]: GETTABLE  R14 R0 K22   ; R14 := R0["Contributed"]
+324 [-]: GETTABLE  R15 R0 K23   ; R15 := R0["Needed"]
+325 [-]: DIV       R14 R14 R15  ; R14 := R14 / R15
+326 [-]: GETUPVAL  R15 U7       ; R15 := U7
+327 [-]: MUL       R14 R14 R15  ; R14 := R14 * R15
+328 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+329 [-]: LOADK     R14 K90      ; R14 := 0.0099999997764826
+330 [-]: GETUPVAL  R15 U7       ; R15 := U7
+331 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
+332 [-]: GETGLOBAL R13 K4       ; R13 := mMovie
+333 [-]: SELF      R13 R13 K33  ; R14 := R13; R13 := R13["0x880196A7"]
+334 [-]: GETTABLE  R15 R0 K5    ; R15 := R0["mClipName"]
+335 [-]: LOADK     R16 K91      ; R16 := "Progress.Fill1"
+336 [-]: LOADK     R17 K92      ; R17 := "_width"
+337 [-]: MOVE      R18 R12      ; R18 := R12
+338 [-]: CALL      R13 6 1      ; R13(R14,R15,R16,R17,R18)
+339 [-]: GETGLOBAL R13 K88      ; R13 := 0x6374FD98
+340 [-]: GETUPVAL  R14 U4       ; R14 := U4
+341 [-]: GETTABLE  R14 R14 K89  ; R14 := R14["0xB57E56DF"]
+342 [-]: GETTABLE  R15 R0 K37   ; R15 := R0["MyDonation"]
+343 [-]: GETTABLE  R16 R0 K39   ; R16 := R0["MyVaultDonation"]
+344 [-]: ADD       R15 R15 R16  ; R15 := R15 + R16
 345 [-]: GETTABLE  R16 R0 K23   ; R16 := R0["Needed"]
 346 [-]: DIV       R15 R15 R16  ; R15 := R15 / R16
 347 [-]: GETUPVAL  R16 U7       ; R16 := U7
 348 [-]: MUL       R15 R15 R16  ; R15 := R15 * R16
 349 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-350 [-]: LOADK     R15 K92      ; R15 := 0.0099999997764826
+350 [-]: LOADK     R15 K90      ; R15 := 0.0099999997764826
 351 [-]: GETUPVAL  R16 U7       ; R16 := U7
 352 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
 353 [-]: GETGLOBAL R14 K4       ; R14 := mMovie
 354 [-]: SELF      R14 R14 K33  ; R15 := R14; R14 := R14["0x880196A7"]
 355 [-]: GETTABLE  R16 R0 K5    ; R16 := R0["mClipName"]
-356 [-]: LOADK     R17 K93      ; R17 := "Progress.Fill1"
-357 [-]: LOADK     R18 K94      ; R18 := "_width"
-358 [-]: MOVE      R19 R13      ; R19 := R13
+356 [-]: LOADK     R17 K93      ; R17 := "Progress.Fill2"
+357 [-]: LOADK     R18 K92      ; R18 := "_width"
+358 [-]: ADD       R19 R13 R12  ; R19 := R13 + R12
 359 [-]: CALL      R14 6 1      ; R14(R15,R16,R17,R18,R19)
-360 [-]: GETGLOBAL R14 K90      ; R14 := 0x6374FD98
-361 [-]: GETUPVAL  R15 U4       ; R15 := U4
-362 [-]: GETTABLE  R15 R15 K91  ; R15 := R15["0xB57E56DF"]
-363 [-]: GETTABLE  R16 R0 K37   ; R16 := R0["MyDonation"]
-364 [-]: GETTABLE  R17 R0 K39   ; R17 := R0["MyVaultDonation"]
-365 [-]: ADD       R16 R16 R17  ; R16 := R16 + R17
-366 [-]: GETTABLE  R17 R0 K23   ; R17 := R0["Needed"]
-367 [-]: DIV       R16 R16 R17  ; R16 := R16 / R17
-368 [-]: GETUPVAL  R17 U7       ; R17 := U7
-369 [-]: MUL       R16 R16 R17  ; R16 := R16 * R17
-370 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-371 [-]: LOADK     R16 K92      ; R16 := 0.0099999997764826
-372 [-]: GETUPVAL  R17 U7       ; R17 := U7
-373 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
-374 [-]: GETGLOBAL R15 K4       ; R15 := mMovie
-375 [-]: SELF      R15 R15 K33  ; R16 := R15; R15 := R15["0x880196A7"]
-376 [-]: GETTABLE  R17 R0 K5    ; R17 := R0["mClipName"]
-377 [-]: LOADK     R18 K95      ; R18 := "Progress.Fill2"
-378 [-]: LOADK     R19 K94      ; R19 := "_width"
-379 [-]: ADD       R20 R14 R13  ; R20 := R14 + R13
-380 [-]: CALL      R15 6 1      ; R15(R16,R17,R18,R19,R20)
-381 [-]: RETURN    R0 1         ; return 
+360 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #20.4:
 ;
 ; Name:            
-; Defined at line: 618
+; Defined at line: 624
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3546,7 +3549,7 @@ code size: 3
 ; Function #20.5:
 ;
 ; Name:            
-; Defined at line: 625
+; Defined at line: 631
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3563,7 +3566,7 @@ code size: 3
 ; Function #20.6:
 ;
 ; Name:            
-; Defined at line: 784
+; Defined at line: 790
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3577,7 +3580,7 @@ code size: 3
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 790
+; Defined at line: 796
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3759,7 +3762,7 @@ code size: 3
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 858
+; Defined at line: 864
 ; #Upvalues:       9
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3829,7 +3832,7 @@ code size: 3
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 871
+; Defined at line: 877
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3940,7 +3943,7 @@ code size: 3
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 907
+; Defined at line: 913
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4026,7 +4029,7 @@ code size: 3
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 932
+; Defined at line: 938
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4040,7 +4043,7 @@ code size: 3
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 936
+; Defined at line: 942
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4054,7 +4057,7 @@ code size: 3
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 940
+; Defined at line: 946
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4117,7 +4120,7 @@ code size: 3
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 967
+; Defined at line: 973
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4191,25 +4194,37 @@ code size: 3
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 1000
+; Defined at line: 1006
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: MOVE      R0 R0        ; R0 := R0
-  2 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
-  3 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0x458F27A9"]
-  4 [-]: LOADK     R4 K2        ; R4 := "CommitContributionResult"
-  5 [-]: LOADK     R5 K3        ; R5 := ""
-  6 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
-  7 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  2 [-]: GETGLOBAL R3 K1        ; R3 := _T
+  3 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["BackgroundMovie"]
+  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  5 [-]: TEST      R2 1         ; if R2 then PC := 13
+  6 [-]: JMP       13           ; PC := 13
+  7 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  8 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["BackgroundMovie"]
+  9 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x458F27A9"]
+ 10 [-]: LOADK     R4 K4        ; R4 := "ShowBlockingMessage"
+ 11 [-]: LOADK     R5 K5        ; R5 := "0"
+ 12 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 13 [-]: MOVE      R0 R0        ; R0 := R0
+ 14 [-]: GETGLOBAL R2 K6        ; R2 := mMovie
+ 15 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x458F27A9"]
+ 16 [-]: LOADK     R4 K7        ; R4 := "CommitContributionResult"
+ 17 [-]: LOADK     R5 K8        ; R5 := ""
+ 18 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 19 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 1005
+; Defined at line: 1015
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4229,75 +4244,87 @@ code size: 3
  12 [-]: MOVE      R0 R1        ; R0 := R1
  13 [-]: MOVE      R0 R3        ; R0 := R3
  14 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 15 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 16 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 17 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["DECOS"]
- 18 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 36
- 19 [-]: JMP       36           ; PC := 36
- 20 [-]: GETGLOBAL R4 K3        ; R4 := _T
- 21 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["DojoMgr"]
- 22 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4["0x3A961342"]
- 23 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 24 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0x4CC9B24B"]
- 25 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 26 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 27 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7["0x4CC9B24B"]
- 28 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 29 [-]: MOVE      R8 R1        ; R8 := R1
- 30 [-]: MOVE      R9 R0        ; R9 := R0
- 31 [-]: MOVE      R10 R3       ; R10 := R3
- 32 [-]: MOVE      R11 R2       ; R11 := R2
- 33 [-]: GETUPVAL  R12 U6       ; R12 := U6
- 34 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
- 35 [-]: JMP       77           ; PC := 77
- 36 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 37 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 38 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["ROOMS"]
- 39 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 54
- 40 [-]: JMP       54           ; PC := 54
- 41 [-]: GETGLOBAL R4 K3        ; R4 := _T
- 42 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["DojoMgr"]
- 43 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x40A20D82"]
- 44 [-]: GETUPVAL  R6 U5        ; R6 := U5
- 45 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0x4CC9B24B"]
- 46 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 47 [-]: MOVE      R7 R1        ; R7 := R1
- 48 [-]: MOVE      R8 R0        ; R8 := R0
- 49 [-]: MOVE      R9 R3        ; R9 := R3
- 50 [-]: MOVE      R10 R2       ; R10 := R2
- 51 [-]: GETUPVAL  R11 U6       ; R11 := U6
- 52 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
- 53 [-]: JMP       77           ; PC := 77
- 54 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 55 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 56 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["VAULT_RECIPES"]
- 57 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 77
- 58 [-]: JMP       77           ; PC := 77
- 59 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
- 60 [-]: GETUPVAL  R5 U7        ; R5 := U7
- 61 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 62 [-]: TEST      R4 1         ; if R4 then PC := 77
- 63 [-]: JMP       77           ; PC := 77
- 64 [-]: GETGLOBAL R4 K3        ; R4 := _T
- 65 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["DojoMgr"]
- 66 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0x103B9738"]
- 67 [-]: GETUPVAL  R6 U8        ; R6 := U8
- 68 [-]: GETUPVAL  R7 U7        ; R7 := U7
- 69 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["mType"]
- 70 [-]: MOVE      R8 R1        ; R8 := R1
- 71 [-]: MOVE      R9 R0        ; R9 := R0
- 72 [-]: MOVE      R10 R3       ; R10 := R3
- 73 [-]: MOVE      R11 R2       ; R11 := R2
- 74 [-]: GETUPVAL  R12 U9       ; R12 := U9
- 75 [-]: GETUPVAL  R13 U6       ; R13 := U6
- 76 [-]: CALL      R4 10 1      ; R4(R5,R6,R7,R8,R9,R10,R11,R12,R13)
- 77 [-]: RETURN    R0 1         ; return 
+ 15 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+ 16 [-]: GETGLOBAL R5 K3        ; R5 := _T
+ 17 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["BackgroundMovie"]
+ 18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 19 [-]: TEST      R4 1         ; if R4 then PC := 27
+ 20 [-]: JMP       27           ; PC := 27
+ 21 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 22 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["BackgroundMovie"]
+ 23 [-]: SELF      R4 R4 K5     ; R5 := R4; R4 := R4["0x458F27A9"]
+ 24 [-]: LOADK     R6 K6        ; R6 := "ShowBlockingMessage"
+ 25 [-]: LOADK     R7 K7        ; R7 := "2"
+ 26 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 27 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 28 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 29 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["DECOS"]
+ 30 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 48
+ 31 [-]: JMP       48           ; PC := 48
+ 32 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 33 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["DojoMgr"]
+ 34 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0x3A961342"]
+ 35 [-]: GETUPVAL  R6 U4        ; R6 := U4
+ 36 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0x4CC9B24B"]
+ 37 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 38 [-]: GETUPVAL  R7 U5        ; R7 := U5
+ 39 [-]: SELF      R7 R7 K11    ; R8 := R7; R7 := R7["0x4CC9B24B"]
+ 40 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 41 [-]: MOVE      R8 R1        ; R8 := R1
+ 42 [-]: MOVE      R9 R0        ; R9 := R0
+ 43 [-]: MOVE      R10 R3       ; R10 := R3
+ 44 [-]: MOVE      R11 R2       ; R11 := R2
+ 45 [-]: GETUPVAL  R12 U6       ; R12 := U6
+ 46 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
+ 47 [-]: JMP       89           ; PC := 89
+ 48 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 49 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 50 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["ROOMS"]
+ 51 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 66
+ 52 [-]: JMP       66           ; PC := 66
+ 53 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 54 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["DojoMgr"]
+ 55 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4["0x40A20D82"]
+ 56 [-]: GETUPVAL  R6 U5        ; R6 := U5
+ 57 [-]: SELF      R6 R6 K11    ; R7 := R6; R6 := R6["0x4CC9B24B"]
+ 58 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 59 [-]: MOVE      R7 R1        ; R7 := R1
+ 60 [-]: MOVE      R8 R0        ; R8 := R0
+ 61 [-]: MOVE      R9 R3        ; R9 := R3
+ 62 [-]: MOVE      R10 R2       ; R10 := R2
+ 63 [-]: GETUPVAL  R11 U6       ; R11 := U6
+ 64 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
+ 65 [-]: JMP       89           ; PC := 89
+ 66 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 67 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 68 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["VAULT_RECIPES"]
+ 69 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 89
+ 70 [-]: JMP       89           ; PC := 89
+ 71 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+ 72 [-]: GETUPVAL  R5 U7        ; R5 := U7
+ 73 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 74 [-]: TEST      R4 1         ; if R4 then PC := 89
+ 75 [-]: JMP       89           ; PC := 89
+ 76 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 77 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["DojoMgr"]
+ 78 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4["0x103B9738"]
+ 79 [-]: GETUPVAL  R6 U8        ; R6 := U8
+ 80 [-]: GETUPVAL  R7 U7        ; R7 := U7
+ 81 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["mType"]
+ 82 [-]: MOVE      R8 R1        ; R8 := R1
+ 83 [-]: MOVE      R9 R0        ; R9 := R0
+ 84 [-]: MOVE      R10 R3       ; R10 := R3
+ 85 [-]: MOVE      R11 R2       ; R11 := R2
+ 86 [-]: GETUPVAL  R12 U9       ; R12 := U9
+ 87 [-]: GETUPVAL  R13 U6       ; R13 := U6
+ 88 [-]: CALL      R4 10 1      ; R4(R5,R6,R7,R8,R9,R10,R11,R12,R13)
+ 89 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #30.1:
 ;
 ; Name:            
-; Defined at line: 1014
+; Defined at line: 1024
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4348,7 +4375,7 @@ code size: 3
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 1043
+; Defined at line: 1057
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4482,7 +4509,7 @@ code size: 3
 ; Function #31.1:
 ;
 ; Name:            
-; Defined at line: 1054
+; Defined at line: 1068
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4543,7 +4570,7 @@ code size: 3
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 1100
+; Defined at line: 1114
 ; #Upvalues:       13
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4650,7 +4677,7 @@ code size: 3
 ; Function #32.1:
 ;
 ; Name:            
-; Defined at line: 1128
+; Defined at line: 1142
 ; #Upvalues:       11
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4800,7 +4827,7 @@ code size: 3
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 1186
+; Defined at line: 1200
 ; #Upvalues:       11
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4962,7 +4989,7 @@ code size: 3
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 1245
+; Defined at line: 1259
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4991,7 +5018,7 @@ code size: 3
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 1250
+; Defined at line: 1264
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5005,7 +5032,7 @@ code size: 3
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 1254
+; Defined at line: 1268
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5022,7 +5049,7 @@ code size: 3
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 1258
+; Defined at line: 1272
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5039,7 +5066,7 @@ code size: 3
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 1262
+; Defined at line: 1276
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5053,7 +5080,7 @@ code size: 3
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 1266
+; Defined at line: 1280
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5079,7 +5106,7 @@ code size: 3
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 1272
+; Defined at line: 1286
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5105,7 +5132,7 @@ code size: 3
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 1278
+; Defined at line: 1292
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5117,7 +5144,7 @@ code size: 3
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 1281
+; Defined at line: 1295
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5160,7 +5187,7 @@ code size: 3
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 1292
+; Defined at line: 1306
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5203,7 +5230,7 @@ code size: 3
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 1303
+; Defined at line: 1317
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5221,7 +5248,7 @@ code size: 3
 ; Function #45:
 ;
 ; Name:            
-; Defined at line: 1309
+; Defined at line: 1323
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5239,7 +5266,7 @@ code size: 3
 ; Function #46:
 ;
 ; Name:            
-; Defined at line: 1315
+; Defined at line: 1329
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5280,7 +5307,7 @@ code size: 3
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 1325
+; Defined at line: 1339
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5321,7 +5348,7 @@ code size: 3
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 1335
+; Defined at line: 1349
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5335,7 +5362,7 @@ code size: 3
 ; Function #49:
 ;
 ; Name:            
-; Defined at line: 1339
+; Defined at line: 1353
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5364,7 +5391,7 @@ code size: 3
 ; Function #49.1:
 ;
 ; Name:            
-; Defined at line: 1346
+; Defined at line: 1360
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5408,7 +5435,7 @@ code size: 3
 ; Function #50:
 ;
 ; Name:            
-; Defined at line: 1357
+; Defined at line: 1371
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

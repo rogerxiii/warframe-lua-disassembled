@@ -1,9 +1,10 @@
-code size: 27
+code size: 30
 code size: 54
 code size: 20
 code size: 26
+code size: 15
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Audio\PlayTransmission.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Audio\PlayTransmission.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -38,7 +39,10 @@ code size: 26
  24 [-]: MOVE      R0 R1        ; R0 := R1
  25 [-]: SETGLOBAL R4 K10       ; GiveOperatorTransmission := R4
  26 [-]: SETGLOBAL R4 K11       ; 0x6CC19995 := R4
- 27 [-]: RETURN    R0 1         ; return 
+ 27 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
+ 28 [-]: SETGLOBAL R4 K12       ; ForceCloseTransmission := R4
+ 29 [-]: SETGLOBAL R4 K13       ; 0x7BD10FF7 := R4
+ 30 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -172,5 +176,31 @@ code size: 26
  24 [-]: GETGLOBAL R2 K6        ; R2 := tag
  25 [-]: CALL      R1 2 1       ; R1(R2)
  26 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4:
+;
+; Name:            
+; Defined at line: 53
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  5
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := gFlashMgr
+  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x616DD092"]
+  3 [-]: GETGLOBAL R2 K2        ; R2 := _G
+  4 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["UIMovie_TransmissionMovie"]
+  5 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+  6 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
+  7 [-]: MOVE      R2 R0        ; R2 := R0
+  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  9 [-]: TEST      R1 1         ; if R1 then PC := 15
+ 10 [-]: JMP       15           ; PC := 15
+ 11 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0["0x458F27A9"]
+ 12 [-]: LOADK     R3 K6        ; R3 := "PreviewClose"
+ 13 [-]: LOADK     R4 K7        ; R4 := ""
+ 14 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 15 [-]: RETURN    R0 1         ; return 
 
 

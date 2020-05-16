@@ -28,8 +28,8 @@ code size: 229
 code size: 3
 code size: 3
 code size: 72
-code size: 7
-code size: 39
+code size: 19
+code size: 51
 code size: 18
 code size: 37
 code size: 3
@@ -53,7 +53,7 @@ code size: 53
 code size: 39
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Dojo\DojoRoomConstructionStatus.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Dojo\DojoRoomConstructionStatus.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -2561,69 +2561,93 @@ code size: 3
 ; Is_vararg:       0
 ; Max Stack Size:  6
 
-  1 [-]: MOVE      R0 R0        ; R0 := R0
-  2 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
-  3 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0x458F27A9"]
-  4 [-]: LOADK     R4 K2        ; R4 := "CommitContributionResult"
-  5 [-]: LOADK     R5 K3        ; R5 := ""
-  6 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
-  7 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  2 [-]: GETGLOBAL R3 K1        ; R3 := _T
+  3 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["BackgroundMovie"]
+  4 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  5 [-]: TEST      R2 1         ; if R2 then PC := 13
+  6 [-]: JMP       13           ; PC := 13
+  7 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  8 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["BackgroundMovie"]
+  9 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x458F27A9"]
+ 10 [-]: LOADK     R4 K4        ; R4 := "ShowBlockingMessage"
+ 11 [-]: LOADK     R5 K5        ; R5 := "0"
+ 12 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 13 [-]: MOVE      R0 R0        ; R0 := R0
+ 14 [-]: GETGLOBAL R2 K6        ; R2 := mMovie
+ 15 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x458F27A9"]
+ 16 [-]: LOADK     R4 K7        ; R4 := "CommitContributionResult"
+ 17 [-]: LOADK     R5 K8        ; R5 := ""
+ 18 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 19 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 692
+; Defined at line: 696
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  3 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["DECOS"]
-  4 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 22
-  5 [-]: JMP       22           ; PC := 22
-  6 [-]: GETGLOBAL R0 K1        ; R0 := _T
-  7 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["DojoMgr"]
-  8 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0["0x2F1998D6"]
-  9 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 10 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x4CC9B24B"]
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 13 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["id"]
- 14 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x4CC9B24B"]
- 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: GETUPVAL  R4 U4        ; R4 := U4
- 17 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 18 [-]: LOADK     R6 K6        ; R6 := 0
- 19 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 20 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
- 21 [-]: JMP       39           ; PC := 39
- 22 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 23 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 24 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["ROOMS"]
- 25 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 39
- 26 [-]: JMP       39           ; PC := 39
- 27 [-]: GETGLOBAL R0 K1        ; R0 := _T
- 28 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["DojoMgr"]
- 29 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0["0x681A5C04"]
- 30 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 31 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["id"]
- 32 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x4CC9B24B"]
- 33 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 34 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 35 [-]: GETUPVAL  R4 U5        ; R4 := U5
- 36 [-]: LOADK     R5 K6        ; R5 := 0
- 37 [-]: GETUPVAL  R6 U6        ; R6 := U6
- 38 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
- 39 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["BackgroundMovie"]
+  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  5 [-]: TEST      R0 1         ; if R0 then PC := 13
+  6 [-]: JMP       13           ; PC := 13
+  7 [-]: GETGLOBAL R0 K1        ; R0 := _T
+  8 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["BackgroundMovie"]
+  9 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0["0x458F27A9"]
+ 10 [-]: LOADK     R2 K4        ; R2 := "ShowBlockingMessage"
+ 11 [-]: LOADK     R3 K5        ; R3 := "2"
+ 12 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
+ 13 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 14 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 15 [-]: GETTABLE  R1 R1 K6     ; R1 := R1["DECOS"]
+ 16 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 34
+ 17 [-]: JMP       34           ; PC := 34
+ 18 [-]: GETGLOBAL R0 K1        ; R0 := _T
+ 19 [-]: GETTABLE  R0 R0 K7     ; R0 := R0["DojoMgr"]
+ 20 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0["0x2F1998D6"]
+ 21 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 22 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0x4CC9B24B"]
+ 23 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 24 [-]: GETUPVAL  R3 U3        ; R3 := U3
+ 25 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["id"]
+ 26 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x4CC9B24B"]
+ 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 28 [-]: GETUPVAL  R4 U4        ; R4 := U4
+ 29 [-]: GETUPVAL  R5 U5        ; R5 := U5
+ 30 [-]: LOADK     R6 K11       ; R6 := 0
+ 31 [-]: GETUPVAL  R7 U6        ; R7 := U6
+ 32 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
+ 33 [-]: JMP       51           ; PC := 51
+ 34 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 35 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 36 [-]: GETTABLE  R1 R1 K12    ; R1 := R1["ROOMS"]
+ 37 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 51
+ 38 [-]: JMP       51           ; PC := 51
+ 39 [-]: GETGLOBAL R0 K1        ; R0 := _T
+ 40 [-]: GETTABLE  R0 R0 K7     ; R0 := R0["DojoMgr"]
+ 41 [-]: SELF      R0 R0 K13    ; R1 := R0; R0 := R0["0x681A5C04"]
+ 42 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 43 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["id"]
+ 44 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0x4CC9B24B"]
+ 45 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 46 [-]: GETUPVAL  R3 U4        ; R3 := U4
+ 47 [-]: GETUPVAL  R4 U5        ; R4 := U5
+ 48 [-]: LOADK     R5 K11       ; R5 := 0
+ 49 [-]: GETUPVAL  R6 U6        ; R6 := U6
+ 50 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 700
+; Defined at line: 708
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2652,7 +2676,7 @@ code size: 3
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 707
+; Defined at line: 715
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2700,7 +2724,7 @@ code size: 3
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 721
+; Defined at line: 729
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2714,7 +2738,7 @@ code size: 3
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 725
+; Defined at line: 733
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2763,7 +2787,7 @@ code size: 3
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 742
+; Defined at line: 750
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2788,7 +2812,7 @@ code size: 3
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 749
+; Defined at line: 757
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2814,7 +2838,7 @@ code size: 3
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 756
+; Defined at line: 764
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2842,7 +2866,7 @@ code size: 3
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 766
+; Defined at line: 774
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2870,7 +2894,7 @@ code size: 3
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 776
+; Defined at line: 784
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2883,7 +2907,7 @@ code size: 3
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 780
+; Defined at line: 788
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2900,7 +2924,7 @@ code size: 3
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 784
+; Defined at line: 792
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2916,7 +2940,7 @@ code size: 3
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 789
+; Defined at line: 797
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2932,7 +2956,7 @@ code size: 3
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 794
+; Defined at line: 802
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2948,7 +2972,7 @@ code size: 3
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 799
+; Defined at line: 807
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2964,7 +2988,7 @@ code size: 3
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 804
+; Defined at line: 812
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2980,7 +3004,7 @@ code size: 3
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 809
+; Defined at line: 817
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2996,7 +3020,7 @@ code size: 3
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 814
+; Defined at line: 822
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3008,7 +3032,7 @@ code size: 3
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 817
+; Defined at line: 825
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3055,7 +3079,7 @@ code size: 3
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 831
+; Defined at line: 839
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3117,7 +3141,7 @@ code size: 3
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 841
+; Defined at line: 849
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3181,7 +3205,7 @@ code size: 3
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 860
+; Defined at line: 868
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3231,7 +3255,7 @@ code size: 3
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 870
+; Defined at line: 878
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

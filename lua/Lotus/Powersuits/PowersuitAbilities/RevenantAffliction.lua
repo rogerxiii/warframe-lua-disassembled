@@ -14,7 +14,7 @@ code size: 329
 code size: 27
 code size: 102
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\RevenantAffliction.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\RevenantAffliction.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -633,7 +633,7 @@ code size: 102
 ; #Upvalues:       14
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  31
+; Max Stack Size:  30
 
   1 [-]: GETUPVAL  R4 U0        ; R4 := U0
   2 [-]: MOVE      R5 R3        ; R5 := R3
@@ -851,104 +851,104 @@ code size: 102
 214 [-]: GETGLOBAL R24 K21      ; R24 := ZERO_VECTOR
 215 [-]: GETGLOBAL R25 K22      ; R25 := ZERO_ROTATION
 216 [-]: MOVE      R26 R0       ; R26 := R0
-217 [-]: CALL      R20 7 2      ; R20 := R20(R21,R22,R23,R24,R25,R26)
-218 [-]: SELF      R21 R0 K18   ; R22 := R0; R21 := R0["0xDD9E6F2D"]
-219 [-]: GETGLOBAL R23 K19      ; R23 := 0xEC274B1A
-220 [-]: LOADK     R24 K71      ; R24 := "AfflictionDeco"
-221 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-222 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
-223 [-]: SELF      R22 R1 K72   ; R23 := R1; R22 := R1["0x9F1DC568"]
-224 [-]: MOVE      R24 R21      ; R24 := R21
-225 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-226 [-]: GETGLOBAL R23 K65      ; R23 := 0x400E7765
-227 [-]: MOVE      R24 R22      ; R24 := R22
-228 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-229 [-]: TEST      R23 1        ; if R23 then PC := 233
+217 [-]: CALL      R20 7 1      ; R20(R21,R22,R23,R24,R25,R26)
+218 [-]: SELF      R20 R0 K18   ; R21 := R0; R20 := R0["0xDD9E6F2D"]
+219 [-]: GETGLOBAL R22 K19      ; R22 := 0xEC274B1A
+220 [-]: LOADK     R23 K71      ; R23 := "AfflictionDeco"
+221 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+222 [-]: CALL      R20 0 2      ; R20 := R20(R21,...)
+223 [-]: SELF      R21 R1 K72   ; R22 := R1; R21 := R1["0x9F1DC568"]
+224 [-]: MOVE      R23 R20      ; R23 := R20
+225 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
+226 [-]: GETGLOBAL R22 K65      ; R22 := 0x400E7765
+227 [-]: MOVE      R23 R21      ; R23 := R21
+228 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+229 [-]: TEST      R22 1        ; if R22 then PC := 233
 230 [-]: JMP       233          ; PC := 233
-231 [-]: SELF      R23 R22 K73  ; R24 := R22; R23 := R22["0xD4C2743F"]
-232 [-]: CALL      R23 2 1      ; R23(R24)
-233 [-]: SELF      R23 R1 K17   ; R24 := R1; R23 := R1["0xAB436EF2"]
-234 [-]: MOVE      R25 R21      ; R25 := R21
-235 [-]: GETGLOBAL R26 K61      ; R26 := EMPTY_SYMBOL
-236 [-]: GETGLOBAL R27 K62      ; R27 := 0x221C9700
-237 [-]: LOADK     R28 K5       ; R28 := 0
-238 [-]: LOADK     R29 K5       ; R29 := 0
-239 [-]: LOADK     R30 K56      ; R30 := 1
-240 [-]: CALL      R27 4 2      ; R27 := R27(R28,R29,R30)
-241 [-]: GETGLOBAL R28 K22      ; R28 := ZERO_ROTATION
-242 [-]: MOVE      R29 R0       ; R29 := R0
-243 [-]: CALL      R23 7 2      ; R23 := R23(R24,R25,R26,R27,R28,R29)
-244 [-]: GETGLOBAL R24 K65      ; R24 := 0x400E7765
-245 [-]: MOVE      R25 R23      ; R25 := R23
-246 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-247 [-]: TEST      R24 1        ; if R24 then PC := 257
+231 [-]: SELF      R22 R21 K73  ; R23 := R21; R22 := R21["0xD4C2743F"]
+232 [-]: CALL      R22 2 1      ; R22(R23)
+233 [-]: SELF      R22 R1 K17   ; R23 := R1; R22 := R1["0xAB436EF2"]
+234 [-]: MOVE      R24 R20      ; R24 := R20
+235 [-]: GETGLOBAL R25 K61      ; R25 := EMPTY_SYMBOL
+236 [-]: GETGLOBAL R26 K62      ; R26 := 0x221C9700
+237 [-]: LOADK     R27 K5       ; R27 := 0
+238 [-]: LOADK     R28 K5       ; R28 := 0
+239 [-]: LOADK     R29 K56      ; R29 := 1
+240 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
+241 [-]: GETGLOBAL R27 K22      ; R27 := ZERO_ROTATION
+242 [-]: MOVE      R28 R0       ; R28 := R0
+243 [-]: CALL      R22 7 2      ; R22 := R22(R23,R24,R25,R26,R27,R28)
+244 [-]: GETGLOBAL R23 K65      ; R23 := 0x400E7765
+245 [-]: MOVE      R24 R22      ; R24 := R22
+246 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+247 [-]: TEST      R23 1        ; if R23 then PC := 257
 248 [-]: JMP       257          ; PC := 257
-249 [-]: SELF      R24 R23 K74  ; R25 := R23; R24 := R23["0xD124E361"]
-250 [-]: GETUPVAL  R26 U12      ; R26 := U12
-251 [-]: GETTABLE  R27 R19 K67  ; R27 := R19["x"]
-252 [-]: DIV       R27 R27 K63  ; R27 := R27 / 6
-253 [-]: LOADK     R28 K56      ; R28 := 1
-254 [-]: LOADK     R29 K56      ; R29 := 1
-255 [-]: LOADK     R30 K5       ; R30 := 0
-256 [-]: CALL      R24 7 1      ; R24(R25,R26,R27,R28,R29,R30)
+249 [-]: SELF      R23 R22 K74  ; R24 := R22; R23 := R22["0xD124E361"]
+250 [-]: GETUPVAL  R25 U12      ; R25 := U12
+251 [-]: GETTABLE  R26 R19 K67  ; R26 := R19["x"]
+252 [-]: DIV       R26 R26 K63  ; R26 := R26 / 6
+253 [-]: LOADK     R27 K56      ; R27 := 1
+254 [-]: LOADK     R28 K56      ; R28 := 1
+255 [-]: LOADK     R29 K5       ; R29 := 0
+256 [-]: CALL      R23 7 1      ; R23(R24,R25,R26,R27,R28,R29)
 257 [-]: TEST      R9 0         ; if not R9 then PC := 262
 258 [-]: JMP       262          ; PC := 262
-259 [-]: GETUPVAL  R24 U13      ; R24 := U13
-260 [-]: MUL       R24 R24 K75  ; R24 := R24 * 0.5
-261 [-]: MOVE      R24 R13      ; R24 := R13
-262 [-]: GETUPVAL  R24 U2       ; R24 := U2
-263 [-]: LT        0 K5 R24     ; if 0 >= R24 then PC := 316
+259 [-]: GETUPVAL  R23 U13      ; R23 := U13
+260 [-]: MUL       R23 R23 K75  ; R23 := R23 * 0.5
+261 [-]: MOVE      R23 R13      ; R23 := R13
+262 [-]: GETUPVAL  R23 U2       ; R23 := U2
+263 [-]: LT        0 K5 R23     ; if 0 >= R23 then PC := 316
 264 [-]: JMP       316          ; PC := 316
-265 [-]: GETGLOBAL R24 K65      ; R24 := 0x400E7765
-266 [-]: MOVE      R25 R1       ; R25 := R1
-267 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-268 [-]: TEST      R24 1        ; if R24 then PC := 316
+265 [-]: GETGLOBAL R23 K65      ; R23 := 0x400E7765
+266 [-]: MOVE      R24 R1       ; R24 := R1
+267 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+268 [-]: TEST      R23 1        ; if R23 then PC := 316
 269 [-]: JMP       316          ; PC := 316
-270 [-]: SELF      R24 R1 K76   ; R25 := R1; R24 := R1["0x5A115A02"]
-271 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-272 [-]: TEST      R24 1        ; if R24 then PC := 316
+270 [-]: SELF      R23 R1 K76   ; R24 := R1; R23 := R1["0x5A115A02"]
+271 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+272 [-]: TEST      R23 1        ; if R23 then PC := 316
 273 [-]: JMP       316          ; PC := 316
-274 [-]: SELF      R24 R1 K77   ; R25 := R1; R24 := R1["0xA56CD0BB"]
-275 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-276 [-]: TEST      R24 1        ; if R24 then PC := 316
+274 [-]: SELF      R23 R1 K77   ; R24 := R1; R23 := R1["0xA56CD0BB"]
+275 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+276 [-]: TEST      R23 1        ; if R23 then PC := 316
 277 [-]: JMP       316          ; PC := 316
-278 [-]: GETGLOBAL R24 K65      ; R24 := 0x400E7765
-279 [-]: GETGLOBAL R25 K10      ; R25 := mOwner
-280 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-281 [-]: TEST      R24 1        ; if R24 then PC := 316
+278 [-]: GETGLOBAL R23 K65      ; R23 := 0x400E7765
+279 [-]: GETGLOBAL R24 K10      ; R24 := mOwner
+280 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+281 [-]: TEST      R23 1        ; if R23 then PC := 316
 282 [-]: JMP       316          ; PC := 316
-283 [-]: GETGLOBAL R24 K10      ; R24 := mOwner
-284 [-]: SELF      R24 R24 K78  ; R25 := R24; R24 := R24["0xE7AE25B5"]
-285 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-286 [-]: TEST      R24 1        ; if R24 then PC := 316
+283 [-]: GETGLOBAL R23 K10      ; R23 := mOwner
+284 [-]: SELF      R23 R23 K78  ; R24 := R23; R23 := R23["0xE7AE25B5"]
+285 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+286 [-]: TEST      R23 1        ; if R23 then PC := 316
 287 [-]: JMP       316          ; PC := 316
 288 [-]: TEST      R10 0        ; if not R10 then PC := 307
 289 [-]: JMP       307          ; PC := 307
-290 [-]: GETGLOBAL R24 K10      ; R24 := mOwner
-291 [-]: SELF      R24 R24 K79  ; R25 := R24; R24 := R24["0xB1627322"]
-292 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-293 [-]: TEST      R24 1        ; if R24 then PC := 301
+290 [-]: GETGLOBAL R23 K10      ; R23 := mOwner
+291 [-]: SELF      R23 R23 K79  ; R24 := R23; R23 := R23["0xB1627322"]
+292 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+293 [-]: TEST      R23 1        ; if R23 then PC := 301
 294 [-]: JMP       301          ; PC := 301
-295 [-]: SELF      R24 R0 K80   ; R25 := R0; R24 := R0["0x1FDB8A0"]
-296 [-]: GETGLOBAL R26 K10      ; R26 := mOwner
-297 [-]: SELF      R26 R26 K81  ; R27 := R26; R26 := R26["0xE2B32C65"]
-298 [-]: CALL      R26 2 0      ; R26,... := R26(R27)
-299 [-]: CALL      R24 0 1      ; R24(R25,...)
+295 [-]: SELF      R23 R0 K80   ; R24 := R0; R23 := R0["0x1FDB8A0"]
+296 [-]: GETGLOBAL R25 K10      ; R25 := mOwner
+297 [-]: SELF      R25 R25 K81  ; R26 := R25; R25 := R25["0xE2B32C65"]
+298 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
+299 [-]: CALL      R23 0 1      ; R23(R24,...)
 300 [-]: JMP       316          ; PC := 316
-301 [-]: SELF      R24 R8 K82   ; R25 := R8; R24 := R8["0xA7DFF9D"]
-302 [-]: SELF      R26 R1 K83   ; R27 := R1; R26 := R1["0xEA33AF61"]
-303 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-304 [-]: GETUPVAL  R27 U13      ; R27 := U13
-305 [-]: MUL       R26 R26 R27  ; R26 := R26 * R27
-306 [-]: CALL      R24 3 1      ; R24(R25,R26)
-307 [-]: GETGLOBAL R24 K84      ; R24 := 0x201191EA
-308 [-]: LOADK     R25 K5       ; R25 := 0
-309 [-]: CALL      R24 2 1      ; R24(R25)
-310 [-]: GETUPVAL  R24 U2       ; R24 := U2
-311 [-]: GETGLOBAL R25 K85      ; R25 := 0x4CDEF9FF
-312 [-]: CALL      R25 1 2      ; R25 := R25()
-313 [-]: SUB       R24 R24 R25  ; R24 := R24 - R25
-314 [-]: MOVE      R24 R2       ; R24 := R2
+301 [-]: SELF      R23 R8 K82   ; R24 := R8; R23 := R8["0xA7DFF9D"]
+302 [-]: SELF      R25 R1 K83   ; R26 := R1; R25 := R1["0xEA33AF61"]
+303 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+304 [-]: GETUPVAL  R26 U13      ; R26 := U13
+305 [-]: MUL       R25 R25 R26  ; R25 := R25 * R26
+306 [-]: CALL      R23 3 1      ; R23(R24,R25)
+307 [-]: GETGLOBAL R23 K84      ; R23 := 0x201191EA
+308 [-]: LOADK     R24 K5       ; R24 := 0
+309 [-]: CALL      R23 2 1      ; R23(R24)
+310 [-]: GETUPVAL  R23 U2       ; R23 := U2
+311 [-]: GETGLOBAL R24 K85      ; R24 := 0x4CDEF9FF
+312 [-]: CALL      R24 1 2      ; R24 := R24()
+313 [-]: SUB       R23 R23 R24  ; R23 := R23 - R24
+314 [-]: MOVE      R23 R2       ; R23 := R2
 315 [-]: JMP       262          ; PC := 262
 316 [-]: RETURN    R0 1         ; return 
 

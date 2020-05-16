@@ -63,7 +63,7 @@ code size: 10
 code size: 17
 code size: 3
 code size: 21
-code size: 204
+code size: 200
 code size: 5
 code size: 12
 code size: 12
@@ -90,7 +90,7 @@ code size: 3
 code size: 3
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\PlatBrowsing.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\PlatBrowsing.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -3245,159 +3245,155 @@ code size: 3
  49 [-]: MOVE      R10 R1       ; R10 := R1
  50 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  51 [-]: GETUPVAL  R6 U4        ; R6 := U4
- 52 [-]: NEWTABLE  R7 7 0       ; R7 := {}
+ 52 [-]: NEWTABLE  R7 5 0       ; R7 := {}
  53 [-]: GETGLOBAL R8 K13       ; R8 := visibleRangeMat
  54 [-]: GETGLOBAL R9 K14       ; R9 := rectangleVisibleRangeMat
  55 [-]: GETGLOBAL R10 K15      ; R10 := textVisibleRangeMat
  56 [-]: GETGLOBAL R11 K16      ; R11 := flareVisibleRangeMat
  57 [-]: GETGLOBAL R12 K17      ; R12 := _G
  58 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["UIMaterial_PigmentVisibilityRange"]
- 59 [-]: GETGLOBAL R13 K17      ; R13 := _G
- 60 [-]: GETTABLE  R13 R13 K19  ; R13 := R13["UIMaterial_SquareStoreItemVisRange"]
- 61 [-]: GETGLOBAL R14 K17      ; R14 := _G
- 62 [-]: GETTABLE  R14 R14 K20  ; R14 := R14["UIMaterial_SquareStoreItemShadowVisRange"]
- 63 [-]: SETLIST   R7 7 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 7
- 64 [-]: SETTABLE  R6 K12 R7    ; R6["Materials"] := R7
- 65 [-]: GETGLOBAL R6 K21       ; R6 := 0xECFDD17
- 66 [-]: GETGLOBAL R7 K17       ; R7 := _G
- 67 [-]: GETTABLE  R7 R7 K22    ; R7 := R7["UIMaterial_CosmeticEnhancersStore"]
- 68 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
- 69 [-]: JMP       76           ; PC := 76
- 70 [-]: GETGLOBAL R11 K23      ; R11 := table
- 71 [-]: GETTABLE  R11 R11 K24  ; R11 := R11["0xE6450C9D"]
- 72 [-]: GETUPVAL  R12 U4       ; R12 := U4
- 73 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["Materials"]
- 74 [-]: MOVE      R13 R10      ; R13 := R10
- 75 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 76 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 70; R8 := R9 end
- 77 [-]: JMP       70           ; PC := 70
- 78 [-]: GETGLOBAL R11 K21      ; R11 := 0xECFDD17
- 79 [-]: GETGLOBAL R12 K17      ; R12 := _G
- 80 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["UIMaterial_FocusLensStore"]
- 81 [-]: CALL      R11 2 4      ; R11,R12,R13 := R11(R12)
- 82 [-]: JMP       89           ; PC := 89
- 83 [-]: GETGLOBAL R16 K23      ; R16 := table
- 84 [-]: GETTABLE  R16 R16 K24  ; R16 := R16["0xE6450C9D"]
- 85 [-]: GETUPVAL  R17 U4       ; R17 := U4
- 86 [-]: GETTABLE  R17 R17 K12  ; R17 := R17["Materials"]
- 87 [-]: MOVE      R18 R15      ; R18 := R15
- 88 [-]: CALL      R16 3 1      ; R16(R17,R18)
- 89 [-]: TFORLOOP  R11 2        ; R14,R15 :=  R11(R12,R13); if R14 ~= nil then begin PC = 83; R13 := R14 end
- 90 [-]: JMP       83           ; PC := 83
- 91 [-]: GETGLOBAL R16 K21      ; R16 := 0xECFDD17
- 92 [-]: GETGLOBAL R17 K17      ; R17 := _G
- 93 [-]: GETTABLE  R17 R17 K26  ; R17 := R17["UIMaterial_Mods"]
- 94 [-]: CALL      R16 2 4      ; R16,R17,R18 := R16(R17)
- 95 [-]: JMP       108          ; PC := 108
- 96 [-]: GETGLOBAL R21 K21      ; R21 := 0xECFDD17
- 97 [-]: MOVE      R22 R20      ; R22 := R20
- 98 [-]: CALL      R21 2 4      ; R21,R22,R23 := R21(R22)
- 99 [-]: JMP       106          ; PC := 106
-100 [-]: GETGLOBAL R26 K23      ; R26 := table
-101 [-]: GETTABLE  R26 R26 K24  ; R26 := R26["0xE6450C9D"]
-102 [-]: GETUPVAL  R27 U4       ; R27 := U4
-103 [-]: GETTABLE  R27 R27 K12  ; R27 := R27["Materials"]
-104 [-]: MOVE      R28 R25      ; R28 := R25
-105 [-]: CALL      R26 3 1      ; R26(R27,R28)
-106 [-]: TFORLOOP  R21 2        ; R24,R25 :=  R21(R22,R23); if R24 ~= nil then begin PC = 100; R23 := R24 end
-107 [-]: JMP       100          ; PC := 100
-108 [-]: TFORLOOP  R16 2        ; R19,R20 :=  R16(R17,R18); if R19 ~= nil then begin PC = 96; R18 := R19 end
-109 [-]: JMP       96           ; PC := 96
-110 [-]: GETGLOBAL R26 K21      ; R26 := 0xECFDD17
-111 [-]: GETGLOBAL R27 K17      ; R27 := _G
-112 [-]: GETTABLE  R27 R27 K27  ; R27 := R27["UIMaterial_ModsSyndicateIcons"]
-113 [-]: CALL      R26 2 4      ; R26,R27,R28 := R26(R27)
-114 [-]: JMP       127          ; PC := 127
-115 [-]: GETGLOBAL R31 K21      ; R31 := 0xECFDD17
-116 [-]: MOVE      R32 R30      ; R32 := R30
-117 [-]: CALL      R31 2 4      ; R31,R32,R33 := R31(R32)
-118 [-]: JMP       125          ; PC := 125
-119 [-]: GETGLOBAL R36 K23      ; R36 := table
-120 [-]: GETTABLE  R36 R36 K24  ; R36 := R36["0xE6450C9D"]
-121 [-]: GETUPVAL  R37 U4       ; R37 := U4
-122 [-]: GETTABLE  R37 R37 K12  ; R37 := R37["Materials"]
-123 [-]: MOVE      R38 R35      ; R38 := R35
-124 [-]: CALL      R36 3 1      ; R36(R37,R38)
-125 [-]: TFORLOOP  R31 2        ; R34,R35 :=  R31(R32,R33); if R34 ~= nil then begin PC = 119; R33 := R34 end
-126 [-]: JMP       119          ; PC := 119
-127 [-]: TFORLOOP  R26 2        ; R29,R30 :=  R26(R27,R28); if R29 ~= nil then begin PC = 115; R28 := R29 end
-128 [-]: JMP       115          ; PC := 115
-129 [-]: GETGLOBAL R36 K3       ; R36 := mMovie
-130 [-]: SELF      R36 R36 K28  ; R37 := R36; R36 := R36["0x258E987B"]
-131 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-132 [-]: GETUPVAL  R37 U4       ; R37 := U4
-133 [-]: GETUPVAL  R38 U0       ; R38 := U0
-134 [-]: GETTABLE  R38 R38 K10  ; R38 := R38["mRows"]
-135 [-]: GETUPVAL  R39 U0       ; R39 := U0
-136 [-]: GETTABLE  R39 R39 K30  ; R39 := R39["mRowSeparation"]
-137 [-]: MUL       R38 R38 R39  ; R38 := R38 * R39
-138 [-]: GETUPVAL  R39 U0       ; R39 := U0
-139 [-]: GETTABLE  R39 R39 K31  ; R39 := R39["ElementDimBuffer"]
-140 [-]: SUB       R38 R38 R39  ; R38 := R38 - R39
-141 [-]: SETTABLE  R37 K29 R38  ; R37["Height"] := R38
-142 [-]: GETUPVAL  R37 U4       ; R37 := U4
-143 [-]: GETGLOBAL R38 K33      ; R38 := 0xF595ADDE
-144 [-]: GETGLOBAL R39 K3       ; R39 := mMovie
-145 [-]: SELF      R39 R39 K34  ; R40 := R39; R39 := R39["0x6B7B470B"]
-146 [-]: LOADK     R41 K35      ; R41 := "GridFrame"
-147 [-]: LOADK     R42 K36      ; R42 := "_y"
-148 [-]: CALL      R39 4 0      ; R39,... := R39(R40,R41,R42)
-149 [-]: CALL      R38 0 2      ; R38 := R38(R39,...)
-150 [-]: GETGLOBAL R39 K33      ; R39 := 0xF595ADDE
-151 [-]: GETGLOBAL R40 K3       ; R40 := mMovie
-152 [-]: SELF      R40 R40 K34  ; R41 := R40; R40 := R40["0x6B7B470B"]
-153 [-]: LOADK     R42 K37      ; R42 := "GridFrame.Grid"
-154 [-]: LOADK     R43 K36      ; R43 := "_y"
-155 [-]: CALL      R40 4 0      ; R40,... := R40(R41,R42,R43)
-156 [-]: CALL      R39 0 2      ; R39 := R39(R40,...)
+ 59 [-]: SETLIST   R7 5 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 5
+ 60 [-]: SETTABLE  R6 K12 R7    ; R6["Materials"] := R7
+ 61 [-]: GETGLOBAL R6 K19       ; R6 := 0xECFDD17
+ 62 [-]: GETGLOBAL R7 K17       ; R7 := _G
+ 63 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["UIMaterial_CosmeticEnhancersStore"]
+ 64 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
+ 65 [-]: JMP       72           ; PC := 72
+ 66 [-]: GETGLOBAL R11 K21      ; R11 := table
+ 67 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["0xE6450C9D"]
+ 68 [-]: GETUPVAL  R12 U4       ; R12 := U4
+ 69 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["Materials"]
+ 70 [-]: MOVE      R13 R10      ; R13 := R10
+ 71 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 72 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 66; R8 := R9 end
+ 73 [-]: JMP       66           ; PC := 66
+ 74 [-]: GETGLOBAL R11 K19      ; R11 := 0xECFDD17
+ 75 [-]: GETGLOBAL R12 K17      ; R12 := _G
+ 76 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["UIMaterial_FocusLensStore"]
+ 77 [-]: CALL      R11 2 4      ; R11,R12,R13 := R11(R12)
+ 78 [-]: JMP       85           ; PC := 85
+ 79 [-]: GETGLOBAL R16 K21      ; R16 := table
+ 80 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["0xE6450C9D"]
+ 81 [-]: GETUPVAL  R17 U4       ; R17 := U4
+ 82 [-]: GETTABLE  R17 R17 K12  ; R17 := R17["Materials"]
+ 83 [-]: MOVE      R18 R15      ; R18 := R15
+ 84 [-]: CALL      R16 3 1      ; R16(R17,R18)
+ 85 [-]: TFORLOOP  R11 2        ; R14,R15 :=  R11(R12,R13); if R14 ~= nil then begin PC = 79; R13 := R14 end
+ 86 [-]: JMP       79           ; PC := 79
+ 87 [-]: GETGLOBAL R16 K19      ; R16 := 0xECFDD17
+ 88 [-]: GETGLOBAL R17 K17      ; R17 := _G
+ 89 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["UIMaterial_Mods"]
+ 90 [-]: CALL      R16 2 4      ; R16,R17,R18 := R16(R17)
+ 91 [-]: JMP       104          ; PC := 104
+ 92 [-]: GETGLOBAL R21 K19      ; R21 := 0xECFDD17
+ 93 [-]: MOVE      R22 R20      ; R22 := R20
+ 94 [-]: CALL      R21 2 4      ; R21,R22,R23 := R21(R22)
+ 95 [-]: JMP       102          ; PC := 102
+ 96 [-]: GETGLOBAL R26 K21      ; R26 := table
+ 97 [-]: GETTABLE  R26 R26 K22  ; R26 := R26["0xE6450C9D"]
+ 98 [-]: GETUPVAL  R27 U4       ; R27 := U4
+ 99 [-]: GETTABLE  R27 R27 K12  ; R27 := R27["Materials"]
+100 [-]: MOVE      R28 R25      ; R28 := R25
+101 [-]: CALL      R26 3 1      ; R26(R27,R28)
+102 [-]: TFORLOOP  R21 2        ; R24,R25 :=  R21(R22,R23); if R24 ~= nil then begin PC = 96; R23 := R24 end
+103 [-]: JMP       96           ; PC := 96
+104 [-]: TFORLOOP  R16 2        ; R19,R20 :=  R16(R17,R18); if R19 ~= nil then begin PC = 92; R18 := R19 end
+105 [-]: JMP       92           ; PC := 92
+106 [-]: GETGLOBAL R26 K19      ; R26 := 0xECFDD17
+107 [-]: GETGLOBAL R27 K17      ; R27 := _G
+108 [-]: GETTABLE  R27 R27 K25  ; R27 := R27["UIMaterial_ModsSyndicateIcons"]
+109 [-]: CALL      R26 2 4      ; R26,R27,R28 := R26(R27)
+110 [-]: JMP       123          ; PC := 123
+111 [-]: GETGLOBAL R31 K19      ; R31 := 0xECFDD17
+112 [-]: MOVE      R32 R30      ; R32 := R30
+113 [-]: CALL      R31 2 4      ; R31,R32,R33 := R31(R32)
+114 [-]: JMP       121          ; PC := 121
+115 [-]: GETGLOBAL R36 K21      ; R36 := table
+116 [-]: GETTABLE  R36 R36 K22  ; R36 := R36["0xE6450C9D"]
+117 [-]: GETUPVAL  R37 U4       ; R37 := U4
+118 [-]: GETTABLE  R37 R37 K12  ; R37 := R37["Materials"]
+119 [-]: MOVE      R38 R35      ; R38 := R35
+120 [-]: CALL      R36 3 1      ; R36(R37,R38)
+121 [-]: TFORLOOP  R31 2        ; R34,R35 :=  R31(R32,R33); if R34 ~= nil then begin PC = 115; R33 := R34 end
+122 [-]: JMP       115          ; PC := 115
+123 [-]: TFORLOOP  R26 2        ; R29,R30 :=  R26(R27,R28); if R29 ~= nil then begin PC = 111; R28 := R29 end
+124 [-]: JMP       111          ; PC := 111
+125 [-]: GETGLOBAL R36 K3       ; R36 := mMovie
+126 [-]: SELF      R36 R36 K26  ; R37 := R36; R36 := R36["0x258E987B"]
+127 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+128 [-]: GETUPVAL  R37 U4       ; R37 := U4
+129 [-]: GETUPVAL  R38 U0       ; R38 := U0
+130 [-]: GETTABLE  R38 R38 K10  ; R38 := R38["mRows"]
+131 [-]: GETUPVAL  R39 U0       ; R39 := U0
+132 [-]: GETTABLE  R39 R39 K28  ; R39 := R39["mRowSeparation"]
+133 [-]: MUL       R38 R38 R39  ; R38 := R38 * R39
+134 [-]: GETUPVAL  R39 U0       ; R39 := U0
+135 [-]: GETTABLE  R39 R39 K29  ; R39 := R39["ElementDimBuffer"]
+136 [-]: SUB       R38 R38 R39  ; R38 := R38 - R39
+137 [-]: SETTABLE  R37 K27 R38  ; R37["Height"] := R38
+138 [-]: GETUPVAL  R37 U4       ; R37 := U4
+139 [-]: GETGLOBAL R38 K31      ; R38 := 0xF595ADDE
+140 [-]: GETGLOBAL R39 K3       ; R39 := mMovie
+141 [-]: SELF      R39 R39 K32  ; R40 := R39; R39 := R39["0x6B7B470B"]
+142 [-]: LOADK     R41 K33      ; R41 := "GridFrame"
+143 [-]: LOADK     R42 K34      ; R42 := "_y"
+144 [-]: CALL      R39 4 0      ; R39,... := R39(R40,R41,R42)
+145 [-]: CALL      R38 0 2      ; R38 := R38(R39,...)
+146 [-]: GETGLOBAL R39 K31      ; R39 := 0xF595ADDE
+147 [-]: GETGLOBAL R40 K3       ; R40 := mMovie
+148 [-]: SELF      R40 R40 K32  ; R41 := R40; R40 := R40["0x6B7B470B"]
+149 [-]: LOADK     R42 K35      ; R42 := "GridFrame.Grid"
+150 [-]: LOADK     R43 K34      ; R43 := "_y"
+151 [-]: CALL      R40 4 0      ; R40,... := R40(R41,R42,R43)
+152 [-]: CALL      R39 0 2      ; R39 := R39(R40,...)
+153 [-]: ADD       R38 R38 R39  ; R38 := R38 + R39
+154 [-]: GETUPVAL  R39 U4       ; R39 := U4
+155 [-]: GETTABLE  R39 R39 K27  ; R39 := R39["Height"]
+156 [-]: DIV       R39 R39 K36  ; R39 := R39 / 2
 157 [-]: ADD       R38 R38 R39  ; R38 := R38 + R39
-158 [-]: GETUPVAL  R39 U4       ; R39 := U4
-159 [-]: GETTABLE  R39 R39 K29  ; R39 := R39["Height"]
-160 [-]: DIV       R39 R39 K38  ; R39 := R39 / 2
-161 [-]: ADD       R38 R38 R39  ; R38 := R38 + R39
-162 [-]: SETTABLE  R37 K32 R38  ; R37["YPos"] := R38
-163 [-]: GETUPVAL  R37 U2       ; R37 := U2
-164 [-]: GETTABLE  R37 R37 K39  ; R37 := R37["0x65939576"]
-165 [-]: GETGLOBAL R38 K3       ; R38 := mMovie
-166 [-]: GETUPVAL  R39 U4       ; R39 := U4
-167 [-]: GETTABLE  R39 R39 K32  ; R39 := R39["YPos"]
-168 [-]: DIV       R40 R36 K38  ; R40 := R36 / 2
-169 [-]: SUB       R39 R39 R40  ; R39 := R39 - R40
-170 [-]: CALL      R37 3 2      ; R37 := R37(R38,R39)
-171 [-]: GETUPVAL  R38 U2       ; R38 := U2
-172 [-]: GETTABLE  R38 R38 K40  ; R38 := R38["0x9884F87F"]
-173 [-]: GETGLOBAL R39 K3       ; R39 := mMovie
-174 [-]: GETUPVAL  R40 U4       ; R40 := U4
-175 [-]: GETTABLE  R40 R40 K29  ; R40 := R40["Height"]
-176 [-]: CALL      R38 3 2      ; R38 := R38(R39,R40)
-177 [-]: GETUPVAL  R39 U2       ; R39 := U2
-178 [-]: GETTABLE  R39 R39 K41  ; R39 := R39["0x73838B63"]
-179 [-]: GETGLOBAL R40 K3       ; R40 := mMovie
-180 [-]: LOADK     R41 K42      ; R41 := 5
-181 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
-182 [-]: GETGLOBAL R40 K21      ; R40 := 0xECFDD17
-183 [-]: GETUPVAL  R41 U4       ; R41 := U4
-184 [-]: GETTABLE  R41 R41 K12  ; R41 := R41["Materials"]
-185 [-]: CALL      R40 2 4      ; R40,R41,R42 := R40(R41)
-186 [-]: JMP       202          ; PC := 202
-187 [-]: SELF      R45 R44 K43  ; R46 := R44; R45 := R44["0x94FB2E1A"]
-188 [-]: GETGLOBAL R47 K44      ; R47 := Lotus_Game
-189 [-]: GETTABLE  R47 R47 K45  ; R47 := R47["VISIBILITY_CENTER"]
-190 [-]: MOVE      R48 R37      ; R48 := R37
-191 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
-192 [-]: SELF      R45 R44 K43  ; R46 := R44; R45 := R44["0x94FB2E1A"]
-193 [-]: GETGLOBAL R47 K44      ; R47 := Lotus_Game
-194 [-]: GETTABLE  R47 R47 K46  ; R47 := R47["VISIBILITY_SIZE"]
-195 [-]: MOVE      R48 R38      ; R48 := R38
-196 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
-197 [-]: SELF      R45 R44 K43  ; R46 := R44; R45 := R44["0x94FB2E1A"]
-198 [-]: GETGLOBAL R47 K44      ; R47 := Lotus_Game
-199 [-]: GETTABLE  R47 R47 K47  ; R47 := R47["VISIBILITY_FADE_SIZE"]
-200 [-]: MOVE      R48 R39      ; R48 := R39
-201 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
-202 [-]: TFORLOOP  R40 2        ; R43,R44 :=  R40(R41,R42); if R43 ~= nil then begin PC = 187; R42 := R43 end
-203 [-]: JMP       187          ; PC := 187
-204 [-]: RETURN    R0 1         ; return 
+158 [-]: SETTABLE  R37 K30 R38  ; R37["YPos"] := R38
+159 [-]: GETUPVAL  R37 U2       ; R37 := U2
+160 [-]: GETTABLE  R37 R37 K37  ; R37 := R37["0x65939576"]
+161 [-]: GETGLOBAL R38 K3       ; R38 := mMovie
+162 [-]: GETUPVAL  R39 U4       ; R39 := U4
+163 [-]: GETTABLE  R39 R39 K30  ; R39 := R39["YPos"]
+164 [-]: DIV       R40 R36 K36  ; R40 := R36 / 2
+165 [-]: SUB       R39 R39 R40  ; R39 := R39 - R40
+166 [-]: CALL      R37 3 2      ; R37 := R37(R38,R39)
+167 [-]: GETUPVAL  R38 U2       ; R38 := U2
+168 [-]: GETTABLE  R38 R38 K38  ; R38 := R38["0x9884F87F"]
+169 [-]: GETGLOBAL R39 K3       ; R39 := mMovie
+170 [-]: GETUPVAL  R40 U4       ; R40 := U4
+171 [-]: GETTABLE  R40 R40 K27  ; R40 := R40["Height"]
+172 [-]: CALL      R38 3 2      ; R38 := R38(R39,R40)
+173 [-]: GETUPVAL  R39 U2       ; R39 := U2
+174 [-]: GETTABLE  R39 R39 K39  ; R39 := R39["0x73838B63"]
+175 [-]: GETGLOBAL R40 K3       ; R40 := mMovie
+176 [-]: LOADK     R41 K40      ; R41 := 5
+177 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
+178 [-]: GETGLOBAL R40 K19      ; R40 := 0xECFDD17
+179 [-]: GETUPVAL  R41 U4       ; R41 := U4
+180 [-]: GETTABLE  R41 R41 K12  ; R41 := R41["Materials"]
+181 [-]: CALL      R40 2 4      ; R40,R41,R42 := R40(R41)
+182 [-]: JMP       198          ; PC := 198
+183 [-]: SELF      R45 R44 K41  ; R46 := R44; R45 := R44["0x94FB2E1A"]
+184 [-]: GETGLOBAL R47 K42      ; R47 := Lotus_Game
+185 [-]: GETTABLE  R47 R47 K43  ; R47 := R47["VISIBILITY_CENTER"]
+186 [-]: MOVE      R48 R37      ; R48 := R37
+187 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
+188 [-]: SELF      R45 R44 K41  ; R46 := R44; R45 := R44["0x94FB2E1A"]
+189 [-]: GETGLOBAL R47 K42      ; R47 := Lotus_Game
+190 [-]: GETTABLE  R47 R47 K44  ; R47 := R47["VISIBILITY_SIZE"]
+191 [-]: MOVE      R48 R38      ; R48 := R38
+192 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
+193 [-]: SELF      R45 R44 K41  ; R46 := R44; R45 := R44["0x94FB2E1A"]
+194 [-]: GETGLOBAL R47 K42      ; R47 := Lotus_Game
+195 [-]: GETTABLE  R47 R47 K45  ; R47 := R47["VISIBILITY_FADE_SIZE"]
+196 [-]: MOVE      R48 R39      ; R48 := R39
+197 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
+198 [-]: TFORLOOP  R40 2        ; R43,R44 :=  R40(R41,R42); if R43 ~= nil then begin PC = 183; R42 := R43 end
+199 [-]: JMP       183          ; PC := 183
+200 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #50:

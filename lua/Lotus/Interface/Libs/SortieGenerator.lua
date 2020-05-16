@@ -2,10 +2,10 @@ code size: 486
 code size: 58
 code size: 3026
 code size: 785
-code size: 870
+code size: 864
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Libs\SortieGenerator.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Libs\SortieGenerator.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -4411,7 +4411,7 @@ code size: 3
 ; #Upvalues:       23
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  91
+; Max Stack Size:  90
 
   1 [-]: MOVE      R1 R0        ; R1 := R0
   2 [-]: TEST      R1 0         ; if not R1 then PC := 5
@@ -4490,805 +4490,799 @@ code size: 3
  75 [-]: CALL      R14 1 2      ; R14 := R14()
  76 [-]: SELF      R15 R14 K18  ; R16 := R14; R15 := R14["0x5B0E7439"]
  77 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 78 [-]: GETGLOBAL R16 K19      ; R16 := math
- 79 [-]: GETTABLE  R16 R16 K20  ; R16 := R16["0xF7005A7B"]
- 80 [-]: GETGLOBAL R17 K21      ; R17 := gGameRules
- 81 [-]: SELF      R17 R17 K22  ; R18 := R17; R17 := R17["0x31B2814"]
- 82 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
- 83 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
- 84 [-]: NEWTABLE  R17 3 0      ; R17 := {}
- 85 [-]: NEWTABLE  R18 0 5      ; R18 := {}
- 86 [-]: GETGLOBAL R19 K24      ; R19 := 0x2C00D429
- 87 [-]: LOADK     R20 K25      ; R20 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonExterminate"
- 88 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 89 [-]: SETTABLE  R18 K23 R19  ; R18["levelOverrideExtermination"] := R19
- 90 [-]: GETGLOBAL R19 K24      ; R19 := 0x2C00D429
- 91 [-]: LOADK     R20 K27      ; R20 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonRescue"
- 92 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 93 [-]: SETTABLE  R18 K26 R19  ; R18["levelOverrideRescue"] := R19
- 94 [-]: GETGLOBAL R19 K24      ; R19 := 0x2C00D429
- 95 [-]: LOADK     R20 K29      ; R20 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonCapture"
- 96 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 97 [-]: SETTABLE  R18 K28 R19  ; R18["levelOverrideCapture"] := R19
- 98 [-]: GETGLOBAL R19 K24      ; R19 := 0x2C00D429
- 99 [-]: LOADK     R20 K31      ; R20 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonMobileDefense"
-100 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-101 [-]: SETTABLE  R18 K30 R19  ; R18["levelOverrideMobileDefense"] := R19
-102 [-]: GETGLOBAL R19 K33      ; R19 := 0x7C282057
-103 [-]: LOADK     R20 K34      ; R20 := "/Lotus/Types/Game/EnemySpecs/GrineerSquadThree"
-104 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-105 [-]: SETTABLE  R18 K32 R19  ; R18["enemySpec"] := R19
-106 [-]: NEWTABLE  R19 0 5      ; R19 := {}
-107 [-]: GETGLOBAL R20 K24      ; R20 := 0x2C00D429
-108 [-]: LOADK     R21 K35      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipExterminate"
-109 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-110 [-]: SETTABLE  R19 K23 R20  ; R19["levelOverrideExtermination"] := R20
-111 [-]: GETGLOBAL R20 K24      ; R20 := 0x2C00D429
-112 [-]: LOADK     R21 K36      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipRescue"
-113 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-114 [-]: SETTABLE  R19 K26 R20  ; R19["levelOverrideRescue"] := R20
-115 [-]: GETGLOBAL R20 K24      ; R20 := 0x2C00D429
-116 [-]: LOADK     R21 K37      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipCapture"
-117 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-118 [-]: SETTABLE  R19 K28 R20  ; R19["levelOverrideCapture"] := R20
-119 [-]: GETGLOBAL R20 K24      ; R20 := 0x2C00D429
-120 [-]: LOADK     R21 K38      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipMobileDefense"
-121 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-122 [-]: SETTABLE  R19 K30 R20  ; R19["levelOverrideMobileDefense"] := R20
-123 [-]: GETGLOBAL R20 K33      ; R20 := 0x7C282057
-124 [-]: LOADK     R21 K39      ; R21 := "/Lotus/Types/Game/EnemySpecs/CorpusSquadC"
-125 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-126 [-]: SETTABLE  R19 K32 R20  ; R19["enemySpec"] := R20
-127 [-]: NEWTABLE  R20 0 5      ; R20 := {}
-128 [-]: GETGLOBAL R21 K24      ; R21 := 0x2C00D429
-129 [-]: LOADK     R22 K35      ; R22 := "/Lotus/Levels/Proc/Corpus/CorpusShipExterminate"
-130 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-131 [-]: SETTABLE  R20 K23 R21  ; R20["levelOverrideExtermination"] := R21
-132 [-]: GETGLOBAL R21 K24      ; R21 := 0x2C00D429
-133 [-]: LOADK     R22 K38      ; R22 := "/Lotus/Levels/Proc/Corpus/CorpusShipMobileDefense"
-134 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-135 [-]: SETTABLE  R20 K26 R21  ; R20["levelOverrideRescue"] := R21
-136 [-]: GETGLOBAL R21 K24      ; R21 := 0x2C00D429
-137 [-]: LOADK     R22 K37      ; R22 := "/Lotus/Levels/Proc/Corpus/CorpusShipCapture"
-138 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-139 [-]: SETTABLE  R20 K28 R21  ; R20["levelOverrideCapture"] := R21
-140 [-]: GETGLOBAL R21 K24      ; R21 := 0x2C00D429
-141 [-]: LOADK     R22 K38      ; R22 := "/Lotus/Levels/Proc/Corpus/CorpusShipMobileDefense"
-142 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-143 [-]: SETTABLE  R20 K30 R21  ; R20["levelOverrideMobileDefense"] := R21
-144 [-]: GETGLOBAL R21 K33      ; R21 := 0x7C282057
-145 [-]: LOADK     R22 K40      ; R22 := "/Lotus/Types/Game/EnemySpecs/InfestedSquadC"
-146 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-147 [-]: SETTABLE  R20 K32 R21  ; R20["enemySpec"] := R21
-148 [-]: SETLIST   R17 3 1      ; R17[(1-1)*FPF+i] := R(17+i), 1 <= i <= 3
-149 [-]: GETGLOBAL R18 K41      ; R18 := gPlayerProfileMgr
-150 [-]: SELF      R18 R18 K42  ; R19 := R18; R18 := R18["0x21EF7B1A"]
-151 [-]: LOADK     R20 K2       ; R20 := 0
-152 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-153 [-]: SELF      R18 R18 K43  ; R19 := R18; R18 := R18["0x654F1092"]
-154 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-155 [-]: MOVE      R19 R1       ; R19 := R1
-156 [-]: GETUPVAL  R20 U3       ; R20 := U3
-157 [-]: GETTABLE  R20 R20 K44  ; R20 := R20["0x2AAC7A8C"]
-158 [-]: GETUPVAL  R21 U4       ; R21 := U4
-159 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-160 [-]: TEST      R20 0        ; if not R20 then PC := 190
-161 [-]: JMP       190          ; PC := 190
-162 [-]: SELF      R20 R18 K45  ; R21 := R18; R20 := R18["0x6F2E05FD"]
-163 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-164 [-]: SELF      R20 R20 K46  ; R21 := R20; R20 := R20["0xD3A6CE65"]
-165 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-166 [-]: GETGLOBAL R21 K11      ; R21 := 0xECFDD17
-167 [-]: MOVE      R22 R20      ; R22 := R20
-168 [-]: CALL      R21 2 4      ; R21,R22,R23 := R21(R22)
-169 [-]: JMP       188          ; PC := 188
-170 [-]: GETGLOBAL R26 K47      ; R26 := 0x400E7765
-171 [-]: MOVE      R27 R25      ; R27 := R25
-172 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-173 [-]: TEST      R26 1        ; if R26 then PC := 188
-174 [-]: JMP       188          ; PC := 188
-175 [-]: GETGLOBAL R26 K48      ; R26 := gGameConfig
-176 [-]: SELF      R26 R26 K49  ; R27 := R26; R26 := R26["0x9E8E66BA"]
-177 [-]: GETTABLE  R28 R25 K50  ; R28 := R25["mXP"]
-178 [-]: GETTABLE  R29 R25 K51  ; R29 := R25["mItemType"]
-179 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
-180 [-]: GETGLOBAL R27 K48      ; R27 := gGameConfig
-181 [-]: SELF      R27 R27 K52  ; R28 := R27; R27 := R27["0x3070974D"]
-182 [-]: GETTABLE  R29 R25 K51  ; R29 := R25["mItemType"]
-183 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-184 [-]: LE        0 R27 R26    ; if R27 > R26 then PC := 188
-185 [-]: JMP       188          ; PC := 188
-186 [-]: MOVE      R19 R1       ; R19 := R1
-187 [-]: JMP       190          ; PC := 190
-188 [-]: TFORLOOP  R21 2        ; R24,R25 :=  R21(R22,R23); if R24 ~= nil then begin PC = 170; R23 := R24 end
-189 [-]: JMP       170          ; PC := 170
-190 [-]: LOADNIL   R26 R26      ; R26 := nil
-191 [-]: SELF      R27 R18 K53  ; R28 := R18; R27 := R18["0xCAED36EA"]
-192 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-193 [-]: GETGLOBAL R28 K47      ; R28 := 0x400E7765
-194 [-]: MOVE      R29 R27      ; R29 := R27
-195 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-196 [-]: TEST      R28 1        ; if R28 then PC := 205
-197 [-]: JMP       205          ; PC := 205
-198 [-]: LEN       R28 R27      ; R28 := # R27
-199 [-]: LT        0 K2 R28     ; if 0 >= R28 then PC := 205
-200 [-]: JMP       205          ; PC := 205
-201 [-]: LEN       R28 R27      ; R28 := # R27
-202 [-]: GETTABLE  R28 R27 R28  ; R28 := R27[R28]
-203 [-]: GETTABLE  R28 R28 K54  ; R28 := R28["mSortieId"]
-204 [-]: GETTABLE  R26 R28 K55  ; R26 := R28["mId"]
-205 [-]: LOADK     R28 K3       ; R28 := 1
-206 [-]: LEN       R29 R3       ; R29 := # R3
-207 [-]: LOADK     R30 K3       ; R30 := 1
-208 [-]: FORPREP   R28 867      ; R28 -= R30; PC := 867
-209 [-]: GETTABLE  R32 R3 R31   ; R32 := R3[R31]
-210 [-]: GETTABLE  R33 R32 K55  ; R33 := R32["mId"]
-211 [-]: GETTABLE  R33 R33 K55  ; R33 := R33["mId"]
-212 [-]: EQ        1 R26 R33    ; if R26 == R33 then PC := 215
-213 [-]: JMP       215          ; PC := 215
-214 [-]: MOVE      R34 R0       ; R34 := R0
-215 [-]: MOVE      R34 R1       ; R34 := R1
-216 [-]: GETGLOBAL R35 K6       ; R35 := Engine
-217 [-]: GETTABLE  R35 R35 K7   ; R35 := R35["0xD09D7910"]
-218 [-]: GETTABLE  R36 R32 K56  ; R36 := R32["mActivation"]
-219 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-220 [-]: LE        1 R35 K2     ; if R35 <= 0 then PC := 223
-221 [-]: JMP       223          ; PC := 223
-222 [-]: MOVE      R35 R0       ; R35 := R0
-223 [-]: MOVE      R35 R1       ; R35 := R1
-224 [-]: GETGLOBAL R36 K6       ; R36 := Engine
-225 [-]: GETTABLE  R36 R36 K7   ; R36 := R36["0xD09D7910"]
-226 [-]: GETTABLE  R37 R32 K8   ; R37 := R32["mExpiry"]
-227 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-228 [-]: TEST      R35 0        ; if not R35 then PC := 867
-229 [-]: JMP       867          ; PC := 867
-230 [-]: LT        0 K2 R36     ; if 0 >= R36 then PC := 867
-231 [-]: JMP       867          ; PC := 867
-232 [-]: GETTABLE  R37 R32 K57  ; R37 := R32["mVariants"]
-233 [-]: LEN       R37 R37      ; R37 := # R37
-234 [-]: LT        0 K2 R37     ; if 0 >= R37 then PC := 867
-235 [-]: JMP       867          ; PC := 867
-236 [-]: GETGLOBAL R37 K58      ; R37 := 0x9B21739C
-237 [-]: GETTABLE  R38 R32 K5   ; R38 := R32["mSeed"]
-238 [-]: CALL      R37 2 1      ; R37(R38)
-239 [-]: GETTABLE  R37 R32 K8   ; R37 := R32["mExpiry"]
-240 [-]: SELF      R37 R37 K59  ; R38 := R37; R37 := R37["0xA4269DBC"]
-241 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-242 [-]: MOVE      R37 R2       ; R37 := R2
-243 [-]: GETTABLE  R37 R32 K57  ; R37 := R32["mVariants"]
-244 [-]: GETUPVAL  R38 U5       ; R38 := U5
-245 [-]: GETTABLE  R39 R32 K60  ; R39 := R32["mBoss"]
-246 [-]: GETTABLE  R38 R38 R39  ; R38 := R38[R39]
-247 [-]: GETGLOBAL R39 K61      ; R39 := 0xD26C89A0
-248 [-]: GETGLOBAL R40 K62      ; R40 := 0xE6DC43B0
-249 [-]: GETTABLE  R41 R38 K63  ; R41 := R38["LocTag"]
-250 [-]: LOADNIL   R42 R42      ; R42 := nil
-251 [-]: CALL      R40 3 0      ; R40,... := R40(R41,R42)
-252 [-]: CALL      R39 0 2      ; R39 := R39(R40,...)
-253 [-]: GETGLOBAL R40 K62      ; R40 := 0xE6DC43B0
-254 [-]: LOADK     R41 K64      ; R41 := "/Lotus/Language/Sorties/SOSortieTitle"
-255 [-]: NEWTABLE  R42 0 1      ; R42 := {}
-256 [-]: SETTABLE  R42 K65 R39  ; R42["BOSS_NAME"] := R39
-257 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
-258 [-]: NEWTABLE  R41 0 0      ; R41 := {}
-259 [-]: LOADK     R42 K3       ; R42 := 1
-260 [-]: LEN       R43 R37      ; R43 := # R37
-261 [-]: LOADK     R44 K3       ; R44 := 1
-262 [-]: FORPREP   R42 866      ; R42 -= R44; PC := 866
-263 [-]: GETGLOBAL R46 K66      ; R46 := 0x1BF588C6
-264 [-]: LOADK     R47 K2       ; R47 := 0
-265 [-]: CALL      R46 2 1      ; R46(R47)
-266 [-]: GETTABLE  R46 R37 R45  ; R46 := R37[R45]
-267 [-]: SELF      R47 R14 K67  ; R48 := R14; R47 := R14["0xDF213CE1"]
-268 [-]: GETTABLE  R49 R46 K68  ; R49 := R46["node"]
-269 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
-270 [-]: GETGLOBAL R48 K69      ; R48 := 0x9FAED6BC
-271 [-]: GETTABLE  R49 R47 K70  ; R49 := R47["name"]
-272 [-]: CALL      R48 2 2      ; R48 := R48(R49)
-273 [-]: GETTABLE  R49 R47 K71  ; R49 := R47["region"]
-274 [-]: ADD       R50 R49 K3   ; R50 := R49 + 1
-275 [-]: GETTABLE  R50 R15 R50  ; R50 := R15[R50]
-276 [-]: LOADK     R51 K72      ; R51 := ""
-277 [-]: LOADNIL   R52 R52      ; R52 := nil
-278 [-]: GETTABLE  R53 R46 K73  ; R53 := R46["missionType"]
-279 [-]: GETGLOBAL R54 K74      ; R54 := Lotus_Game
-280 [-]: GETTABLE  R54 R54 K75  ; R54 := R54["MT_ASSASSINATION"]
-281 [-]: EQ        0 R53 R54    ; if R53 ~= R54 then PC := 327
-282 [-]: JMP       327          ; PC := 327
-283 [-]: GETGLOBAL R53 K76      ; R53 := string
-284 [-]: GETTABLE  R53 R53 K77  ; R53 := R53["0xDE44F664"]
-285 [-]: GETTABLE  R54 R38 K78  ; R54 := R38["BossNode"]
-286 [-]: LOADK     R55 K79      ; R55 := "/Keys/"
-287 [-]: CALL      R53 3 2      ; R53 := R53(R54,R55)
-288 [-]: TEST      R53 0        ; if not R53 then PC := 307
-289 [-]: JMP       307          ; PC := 307
-290 [-]: GETGLOBAL R53 K80      ; R53 := 0xCAA43ABB
-291 [-]: GETTABLE  R54 R38 K78  ; R54 := R38["BossNode"]
-292 [-]: CALL      R53 2 2      ; R53 := R53(R54)
-293 [-]: GETGLOBAL R54 K33      ; R54 := 0x7C282057
-294 [-]: MOVE      R55 R53      ; R55 := R53
-295 [-]: CALL      R54 2 2      ; R54 := R54(R55)
-296 [-]: SELF      R55 R54 K81  ; R56 := R54; R55 := R54["0xB8637349"]
-297 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-298 [-]: SELF      R55 R55 K59  ; R56 := R55; R55 := R55["0xA4269DBC"]
-299 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-300 [-]: MOVE      R52 R55      ; R52 := R55
-301 [-]: GETGLOBAL R55 K24      ; R55 := 0x2C00D429
-302 [-]: SELF      R56 R54 K83  ; R57 := R54; R56 := R54["0x1B252E3C"]
-303 [-]: CALL      R56 2 0      ; R56,... := R56(R57)
-304 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
-305 [-]: SETTABLE  R52 K82 R55  ; R52["levelKeyName"] := R55
-306 [-]: JMP       316          ; PC := 316
-307 [-]: SELF      R55 R14 K67  ; R56 := R14; R55 := R14["0xDF213CE1"]
-308 [-]: GETGLOBAL R57 K84      ; R57 := 0xEC274B1A
-309 [-]: GETTABLE  R58 R38 K78  ; R58 := R38["BossNode"]
-310 [-]: CALL      R57 2 0      ; R57,... := R57(R58)
-311 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
-312 [-]: GETTABLE  R56 R55 K85  ; R56 := R55["mission"]
-313 [-]: SELF      R56 R56 K59  ; R57 := R56; R56 := R56["0xA4269DBC"]
-314 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-315 [-]: MOVE      R52 R56      ; R52 := R56
-316 [-]: GETTABLE  R56 R47 K70  ; R56 := R47["name"]
-317 [-]: SETTABLE  R52 K86 R56  ; R52["location"] := R56
-318 [-]: GETTABLE  R56 R38 K87  ; R56 := R38["BossAssassinationLocTag"]
-319 [-]: TEST      R56 0        ; if not R56 then PC := 338
-320 [-]: JMP       338          ; PC := 338
-321 [-]: GETGLOBAL R56 K62      ; R56 := 0xE6DC43B0
-322 [-]: GETTABLE  R57 R38 K87  ; R57 := R38["BossAssassinationLocTag"]
-323 [-]: LOADNIL   R58 R58      ; R58 := nil
-324 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
-325 [-]: MOVE      R39 R56      ; R39 := R56
-326 [-]: JMP       338          ; PC := 338
-327 [-]: NEWTABLE  R56 1 0      ; R56 := {}
-328 [-]: GETTABLE  R57 R46 K73  ; R57 := R46["missionType"]
-329 [-]: SETLIST   R56 1 1      ; R56[(1-1)*FPF+i] := R(56+i), 1 <= i <= 1
-330 [-]: GETUPVAL  R57 U6       ; R57 := U6
-331 [-]: GETTABLE  R57 R57 K88  ; R57 := R57["0x75A3ACC5"]
-332 [-]: GETTABLE  R58 R47 K85  ; R58 := R47["mission"]
-333 [-]: GETTABLE  R58 R58 K86  ; R58 := R58["location"]
-334 [-]: MOVE      R59 R56      ; R59 := R56
-335 [-]: GETUPVAL  R60 U7       ; R60 := U7
-336 [-]: CALL      R57 4 2      ; R57 := R57(R58,R59,R60)
-337 [-]: MOVE      R52 R57      ; R52 := R57
-338 [-]: GETGLOBAL R57 K47      ; R57 := 0x400E7765
-339 [-]: MOVE      R58 R52      ; R58 := R52
-340 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-341 [-]: TEST      R57 0        ; if not R57 then PC := 348
-342 [-]: JMP       348          ; PC := 348
-343 [-]: GETGLOBAL R57 K89      ; R57 := 0x93B1256B
-344 [-]: LOADK     R58 K90      ; R58 := "failed to generate sortie!"
-345 [-]: CALL      R57 2 1      ; R57(R58)
-346 [-]: GETUPVAL  R57 U2       ; R57 := U2
-347 [-]: RETURN    R57 2        ; return R57
-348 [-]: SELF      R57 R52 K91  ; R58 := R52; R57 := R52["0x6D1FC7D8"]
-349 [-]: CALL      R57 2 1      ; R57(R58)
-350 [-]: MOVE      R57 R48      ; R57 := R48
-351 [-]: LOADK     R58 K93      ; R58 := "_"
-352 [-]: MOVE      R59 R33      ; R59 := R33
-353 [-]: CONCAT    R57 R57 R59  ; R57 := R57 .. R58 .. R59
-354 [-]: SETTABLE  R52 K92 R57  ; R52["sortieId"] := R57
-355 [-]: GETGLOBAL R57 K94      ; R57 := table
-356 [-]: GETTABLE  R57 R57 K95  ; R57 := R57["0xE6450C9D"]
-357 [-]: MOVE      R58 R41      ; R58 := R41
-358 [-]: NEWTABLE  R59 0 4      ; R59 := {}
-359 [-]: GETTABLE  R60 R52 K92  ; R60 := R52["sortieId"]
-360 [-]: SETTABLE  R59 K96 R60  ; R59["id"] := R60
-361 [-]: GETGLOBAL R60 K62      ; R60 := 0xE6DC43B0
-362 [-]: GETTABLE  R61 R50 K70  ; R61 := R50["name"]
-363 [-]: MOVE      R62 R0       ; R62 := R0
-364 [-]: CALL      R60 3 2      ; R60 := R60(R61,R62)
-365 [-]: SETTABLE  R59 K97 R60  ; R59["regionName"] := R60
-366 [-]: GETGLOBAL R60 K62      ; R60 := 0xE6DC43B0
-367 [-]: GETGLOBAL R61 K69      ; R61 := 0x9FAED6BC
-368 [-]: GETTABLE  R62 R47 K99  ; R62 := R47["locTag"]
-369 [-]: CALL      R61 2 2      ; R61 := R61(R62)
-370 [-]: LOADNIL   R62 R62      ; R62 := nil
-371 [-]: CALL      R60 3 2      ; R60 := R60(R61,R62)
-372 [-]: SETTABLE  R59 K98 R60  ; R59["sectorName"] := R60
-373 [-]: GETTABLE  R60 R52 K73  ; R60 := R52["missionType"]
-374 [-]: SETTABLE  R59 K73 R60  ; R59["missionType"] := R60
-375 [-]: CALL      R57 3 1      ; R57(R58,R59)
-376 [-]: SUB       R57 R45 K3   ; R57 := R45 - 1
-377 [-]: MUL       R57 R57 K101 ; R57 := R57 * 15
-378 [-]: ADD       R57 K102 R57 ; R57 := 50 + R57
-379 [-]: SETTABLE  R52 K100 R57 ; R52["minEnemyLevel"] := R57
-380 [-]: GETTABLE  R57 R52 K100 ; R57 := R52["minEnemyLevel"]
-381 [-]: ADD       R58 R45 K3   ; R58 := R45 + 1
-382 [-]: MUL       R58 R58 K104 ; R58 := R58 * 5
-383 [-]: ADD       R57 R57 R58  ; R57 := R57 + R58
-384 [-]: SETTABLE  R52 K103 R57 ; R52["maxEnemyLevel"] := R57
-385 [-]: SETTABLE  R52 K105 K106; R52["maxSuitReq"] := "0x1"
-386 [-]: SETTABLE  R52 K107 K3  ; R52["difficulty"] := 1
-387 [-]: GETTABLE  R57 R52 K108 ; R57 := R52["forceAllyFaction"]
-388 [-]: TEST      R57 0        ; if not R57 then PC := 438
-389 [-]: JMP       438          ; PC := 438
-390 [-]: SETTABLE  R52 K108 K13 ; R52["forceAllyFaction"] := "0x0"
-391 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-392 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-393 [-]: GETTABLE  R58 R58 K109 ; R58 := R58["MT_RESCUE"]
-394 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 402
-395 [-]: JMP       402          ; PC := 402
-396 [-]: GETTABLE  R57 R38 K111 ; R57 := R38["Faction"]
-397 [-]: ADD       R57 R57 K3   ; R57 := R57 + 1
-398 [-]: GETTABLE  R57 R17 R57  ; R57 := R17[R57]
-399 [-]: GETTABLE  R57 R57 K26  ; R57 := R57["levelOverrideRescue"]
-400 [-]: SETTABLE  R52 K110 R57 ; R52["levelOverride"] := R57
-401 [-]: JMP       432          ; PC := 432
-402 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-403 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-404 [-]: GETTABLE  R58 R58 K112 ; R58 := R58["MT_CAPTURE"]
-405 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 413
-406 [-]: JMP       413          ; PC := 413
-407 [-]: GETTABLE  R57 R38 K111 ; R57 := R38["Faction"]
-408 [-]: ADD       R57 R57 K3   ; R57 := R57 + 1
-409 [-]: GETTABLE  R57 R17 R57  ; R57 := R17[R57]
-410 [-]: GETTABLE  R57 R57 K28  ; R57 := R57["levelOverrideCapture"]
-411 [-]: SETTABLE  R52 K110 R57 ; R52["levelOverride"] := R57
-412 [-]: JMP       432          ; PC := 432
-413 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-414 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-415 [-]: GETTABLE  R58 R58 K113 ; R58 := R58["MT_MOBILE_DEFENSE"]
-416 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 424
-417 [-]: JMP       424          ; PC := 424
-418 [-]: GETTABLE  R57 R38 K111 ; R57 := R38["Faction"]
-419 [-]: ADD       R57 R57 K3   ; R57 := R57 + 1
-420 [-]: GETTABLE  R57 R17 R57  ; R57 := R17[R57]
-421 [-]: GETTABLE  R57 R57 K30  ; R57 := R57["levelOverrideMobileDefense"]
-422 [-]: SETTABLE  R52 K110 R57 ; R52["levelOverride"] := R57
-423 [-]: JMP       432          ; PC := 432
-424 [-]: GETGLOBAL R57 K74      ; R57 := Lotus_Game
-425 [-]: GETTABLE  R57 R57 K114 ; R57 := R57["MT_EXTERMINATION"]
-426 [-]: SETTABLE  R52 K73 R57  ; R52["missionType"] := R57
-427 [-]: GETTABLE  R57 R38 K111 ; R57 := R38["Faction"]
-428 [-]: ADD       R57 R57 K3   ; R57 := R57 + 1
-429 [-]: GETTABLE  R57 R17 R57  ; R57 := R17[R57]
-430 [-]: GETTABLE  R57 R57 K23  ; R57 := R57["levelOverrideExtermination"]
-431 [-]: SETTABLE  R52 K110 R57 ; R52["levelOverride"] := R57
-432 [-]: GETTABLE  R57 R38 K111 ; R57 := R38["Faction"]
-433 [-]: ADD       R57 R57 K3   ; R57 := R57 + 1
-434 [-]: GETTABLE  R57 R17 R57  ; R57 := R17[R57]
-435 [-]: GETTABLE  R57 R57 K32  ; R57 := R57["enemySpec"]
-436 [-]: SETTABLE  R52 K32 R57  ; R52["enemySpec"] := R57
-437 [-]: JMP       454          ; PC := 454
-438 [-]: GETGLOBAL R57 K47      ; R57 := 0x400E7765
-439 [-]: GETTABLE  R58 R52 K32  ; R58 := R52["enemySpec"]
-440 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-441 [-]: TEST      R57 1        ; if R57 then PC := 454
-442 [-]: JMP       454          ; PC := 454
-443 [-]: GETTABLE  R57 R52 K32  ; R57 := R52["enemySpec"]
-444 [-]: SELF      R57 R57 K115 ; R58 := R57; R57 := R57["0x8B598ED4"]
-445 [-]: GETUPVAL  R59 U8       ; R59 := U8
-446 [-]: CALL      R57 3 2      ; R57 := R57(R58,R59)
-447 [-]: TEST      R57 0        ; if not R57 then PC := 454
-448 [-]: JMP       454          ; PC := 454
-449 [-]: GETTABLE  R57 R38 K111 ; R57 := R38["Faction"]
-450 [-]: ADD       R57 R57 K3   ; R57 := R57 + 1
-451 [-]: GETTABLE  R57 R17 R57  ; R57 := R17[R57]
-452 [-]: GETTABLE  R57 R57 K32  ; R57 := R57["enemySpec"]
-453 [-]: SETTABLE  R52 K32 R57  ; R52["enemySpec"] := R57
-454 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-455 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-456 [-]: GETTABLE  R58 R58 K116 ; R58 := R58["MT_DEFENSE"]
-457 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 468
-458 [-]: JMP       468          ; PC := 468
-459 [-]: SETTABLE  R52 K117 K118; R52["maxWaveNum"] := 10
-460 [-]: ADD       R57 R49 K3   ; R57 := R49 + 1
-461 [-]: GETGLOBAL R58 K9       ; R58 := _T
-462 [-]: GETTABLE  R58 R58 K119 ; R58 := R58["REGION_ID_MOON"]
-463 [-]: EQ        1 R57 R58    ; if R57 == R58 then PC := 532
-464 [-]: JMP       532          ; PC := 532
-465 [-]: GETUPVAL  R57 U9       ; R57 := U9
-466 [-]: SETTABLE  R52 K120 R57 ; R52["vipAgent"] := R57
-467 [-]: JMP       532          ; PC := 532
-468 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-469 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-470 [-]: GETTABLE  R58 R58 K121 ; R58 := R58["MT_TERRITORY"]
-471 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 475
-472 [-]: JMP       475          ; PC := 475
-473 [-]: SETTABLE  R52 K117 K122; R52["maxWaveNum"] := 2
-474 [-]: JMP       532          ; PC := 532
-475 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-476 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-477 [-]: GETTABLE  R58 R58 K123 ; R58 := R58["MT_SURVIVAL"]
-478 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 482
-479 [-]: JMP       482          ; PC := 482
-480 [-]: SETTABLE  R52 K117 K118; R52["maxWaveNum"] := 10
-481 [-]: JMP       532          ; PC := 532
-482 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-483 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-484 [-]: GETTABLE  R58 R58 K124 ; R58 := R58["MT_EXCAVATE"]
-485 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 489
-486 [-]: JMP       489          ; PC := 489
-487 [-]: SETTABLE  R52 K117 K104; R52["maxWaveNum"] := 5
-488 [-]: JMP       532          ; PC := 532
-489 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-490 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-491 [-]: GETTABLE  R58 R58 K125 ; R58 := R58["MT_INTEL"]
-492 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 496
-493 [-]: JMP       496          ; PC := 496
-494 [-]: SETTABLE  R52 K117 K126; R52["maxWaveNum"] := 3
-495 [-]: JMP       532          ; PC := 532
-496 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-497 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-498 [-]: GETTABLE  R58 R58 K127 ; R58 := R58["MT_SABOTAGE"]
-499 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 503
-500 [-]: JMP       503          ; PC := 503
-501 [-]: SETTABLE  R52 K117 K122; R52["maxWaveNum"] := 2
-502 [-]: JMP       532          ; PC := 532
-503 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-504 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-505 [-]: GETTABLE  R58 R58 K109 ; R58 := R58["MT_RESCUE"]
-506 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 511
-507 [-]: JMP       511          ; PC := 511
-508 [-]: GETUPVAL  R57 U10      ; R57 := U10
-509 [-]: SETTABLE  R52 K128 R57 ; R52["goalTag"] := R57
-510 [-]: JMP       532          ; PC := 532
-511 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-512 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-513 [-]: GETTABLE  R58 R58 K129 ; R58 := R58["MT_PURIFY"]
-514 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 518
-515 [-]: JMP       518          ; PC := 518
-516 [-]: SETTABLE  R52 K117 K122; R52["maxWaveNum"] := 2
-517 [-]: JMP       532          ; PC := 532
-518 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-519 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-520 [-]: GETTABLE  R58 R58 K130 ; R58 := R58["MT_LANDSCAPE"]
-521 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 526
-522 [-]: JMP       526          ; PC := 526
-523 [-]: GETTABLE  R57 R32 K5   ; R57 := R32["mSeed"]
-524 [-]: SETTABLE  R52 K131 R57 ; R52["seed"] := R57
-525 [-]: JMP       532          ; PC := 532
-526 [-]: GETTABLE  R57 R52 K73  ; R57 := R52["missionType"]
-527 [-]: GETGLOBAL R58 K74      ; R58 := Lotus_Game
-528 [-]: GETTABLE  R58 R58 K132 ; R58 := R58["MT_ARTIFACT"]
-529 [-]: EQ        0 R57 R58    ; if R57 ~= R58 then PC := 532
-530 [-]: JMP       532          ; PC := 532
-531 [-]: SETTABLE  R52 K117 K133; R52["maxWaveNum"] := 8
-532 [-]: LT        0 K3 R45     ; if 1 >= R45 then PC := 559
-533 [-]: JMP       559          ; PC := 559
-534 [-]: LOADK     R57 K3       ; R57 := 1
-535 [-]: SUB       R58 R45 K3   ; R58 := R45 - 1
-536 [-]: LOADK     R59 K3       ; R59 := 1
-537 [-]: FORPREP   R57 542      ; R57 -= R59; PC := 542
-538 [-]: SELF      R61 R52 K134 ; R62 := R52; R61 := R52["0x7029CFB5"]
-539 [-]: GETTABLE  R63 R41 R60  ; R63 := R41[R60]
-540 [-]: GETTABLE  R63 R63 K96  ; R63 := R63["id"]
-541 [-]: CALL      R61 3 1      ; R61(R62,R63)
-542 [-]: FORLOOP   R57 538      ; R57 += R59; if R57 <= R58 then begin PC := 538; R60 := R57 end
-543 [-]: SUB       R61 R45 K3   ; R61 := R45 - 1
-544 [-]: GETTABLE  R61 R41 R61  ; R61 := R41[R61]
-545 [-]: GETTABLE  R61 R61 K98  ; R61 := R61["sectorName"]
-546 [-]: LOADK     R62 K135     ; R62 := " ("
-547 [-]: SUB       R63 R45 K3   ; R63 := R45 - 1
-548 [-]: GETTABLE  R63 R41 R63  ; R63 := R41[R63]
-549 [-]: GETTABLE  R63 R63 K97  ; R63 := R63["regionName"]
-550 [-]: LOADK     R64 K136     ; R64 := ")"
-551 [-]: CONCAT    R51 R61 R64  ; R51 := R61 .. R62 .. R63 .. R64
-552 [-]: SUB       R61 R45 K3   ; R61 := R45 - 1
-553 [-]: GETTABLE  R61 R41 R61  ; R61 := R41[R61]
-554 [-]: GETTABLE  R61 R61 K73  ; R61 := R61["missionType"]
-555 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-556 [-]: GETTABLE  R62 R62 K109 ; R62 := R62["MT_RESCUE"]
-557 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 559
-558 [-]: JMP       559          ; PC := 559
-559 [-]: LEN       R61 R37      ; R61 := # R37
-560 [-]: EQ        0 R45 R61    ; if R45 ~= R61 then PC := 565
-561 [-]: JMP       565          ; PC := 565
-562 [-]: GETUPVAL  R61 U11      ; R61 := U11
-563 [-]: SETTABLE  R52 K137 R61 ; R52["sortieTag"] := R61
-564 [-]: JMP       571          ; PC := 571
-565 [-]: GETGLOBAL R61 K84      ; R61 := 0xEC274B1A
-566 [-]: LOADK     R62 K138     ; R62 := "Mission"
-567 [-]: MOVE      R63 R45      ; R63 := R45
-568 [-]: CONCAT    R62 R62 R63  ; R62 := R62 .. R63
-569 [-]: CALL      R61 2 2      ; R61 := R61(R62)
-570 [-]: SETTABLE  R52 K137 R61 ; R52["sortieTag"] := R61
-571 [-]: GETTABLE  R61 R38 K111 ; R61 := R38["Faction"]
-572 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-573 [-]: GETTABLE  R62 R62 K139 ; R62 := R62["FC_INFESTATION"]
-574 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 683
-575 [-]: JMP       683          ; PC := 683
-576 [-]: GETTABLE  R61 R52 K140 ; R61 := R52["faction"]
-577 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-578 [-]: GETTABLE  R62 R62 K139 ; R62 := R62["FC_INFESTATION"]
-579 [-]: EQ        1 R61 R62    ; if R61 == R62 then PC := 683
-580 [-]: JMP       683          ; PC := 683
-581 [-]: GETGLOBAL R61 K74      ; R61 := Lotus_Game
-582 [-]: GETTABLE  R61 R61 K139 ; R61 := R61["FC_INFESTATION"]
-583 [-]: SETTABLE  R52 K140 R61 ; R52["faction"] := R61
-584 [-]: SETTABLE  R52 K141 K15 ; R52["customAdvancedSpawners"] := nil
-585 [-]: GETTABLE  R61 R52 K73  ; R61 := R52["missionType"]
-586 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-587 [-]: GETTABLE  R62 R62 K116 ; R62 := R62["MT_DEFENSE"]
-588 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 599
-589 [-]: JMP       599          ; PC := 599
-590 [-]: GETUPVAL  R61 U12      ; R61 := U12
-591 [-]: GETGLOBAL R62 K142     ; R62 := 0x290116D3
-592 [-]: LOADK     R63 K3       ; R63 := 1
-593 [-]: GETUPVAL  R64 U12      ; R64 := U12
-594 [-]: LEN       R64 R64      ; R64 := # R64
-595 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
-596 [-]: GETTABLE  R61 R61 R62  ; R61 := R61[R62]
-597 [-]: SETTABLE  R52 K32 R61  ; R52["enemySpec"] := R61
-598 [-]: JMP       683          ; PC := 683
-599 [-]: GETTABLE  R61 R52 K73  ; R61 := R52["missionType"]
-600 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-601 [-]: GETTABLE  R62 R62 K121 ; R62 := R62["MT_TERRITORY"]
-602 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 613
-603 [-]: JMP       613          ; PC := 613
-604 [-]: GETUPVAL  R61 U13      ; R61 := U13
-605 [-]: GETGLOBAL R62 K142     ; R62 := 0x290116D3
-606 [-]: LOADK     R63 K3       ; R63 := 1
-607 [-]: GETUPVAL  R64 U13      ; R64 := U13
-608 [-]: LEN       R64 R64      ; R64 := # R64
-609 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
-610 [-]: GETTABLE  R61 R61 R62  ; R61 := R61[R62]
-611 [-]: SETTABLE  R52 K32 R61  ; R52["enemySpec"] := R61
-612 [-]: JMP       683          ; PC := 683
-613 [-]: GETTABLE  R61 R52 K73  ; R61 := R52["missionType"]
-614 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-615 [-]: GETTABLE  R62 R62 K123 ; R62 := R62["MT_SURVIVAL"]
-616 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 627
-617 [-]: JMP       627          ; PC := 627
-618 [-]: GETUPVAL  R61 U14      ; R61 := U14
-619 [-]: GETGLOBAL R62 K142     ; R62 := 0x290116D3
-620 [-]: LOADK     R63 K3       ; R63 := 1
-621 [-]: GETUPVAL  R64 U14      ; R64 := U14
-622 [-]: LEN       R64 R64      ; R64 := # R64
-623 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
-624 [-]: GETTABLE  R61 R61 R62  ; R61 := R61[R62]
-625 [-]: SETTABLE  R52 K32 R61  ; R52["enemySpec"] := R61
-626 [-]: JMP       683          ; PC := 683
-627 [-]: GETTABLE  R61 R52 K73  ; R61 := R52["missionType"]
-628 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-629 [-]: GETTABLE  R62 R62 K124 ; R62 := R62["MT_EXCAVATE"]
-630 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 641
-631 [-]: JMP       641          ; PC := 641
-632 [-]: GETUPVAL  R61 U15      ; R61 := U15
-633 [-]: GETGLOBAL R62 K142     ; R62 := 0x290116D3
-634 [-]: LOADK     R63 K3       ; R63 := 1
-635 [-]: GETUPVAL  R64 U15      ; R64 := U15
-636 [-]: LEN       R64 R64      ; R64 := # R64
-637 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
-638 [-]: GETTABLE  R61 R61 R62  ; R61 := R61[R62]
-639 [-]: SETTABLE  R52 K32 R61  ; R52["enemySpec"] := R61
-640 [-]: JMP       683          ; PC := 683
-641 [-]: GETUPVAL  R61 U16      ; R61 := U16
-642 [-]: GETGLOBAL R62 K142     ; R62 := 0x290116D3
-643 [-]: LOADK     R63 K3       ; R63 := 1
-644 [-]: GETUPVAL  R64 U16      ; R64 := U16
-645 [-]: LEN       R64 R64      ; R64 := # R64
-646 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
-647 [-]: GETTABLE  R61 R61 R62  ; R61 := R61[R62]
-648 [-]: SETTABLE  R52 K32 R61  ; R52["enemySpec"] := R61
-649 [-]: GETTABLE  R61 R52 K73  ; R61 := R52["missionType"]
-650 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-651 [-]: GETTABLE  R62 R62 K125 ; R62 := R62["MT_INTEL"]
-652 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 663
-653 [-]: JMP       663          ; PC := 663
-654 [-]: GETUPVAL  R61 U17      ; R61 := U17
-655 [-]: GETGLOBAL R62 K142     ; R62 := 0x290116D3
-656 [-]: LOADK     R63 K3       ; R63 := 1
-657 [-]: GETUPVAL  R64 U17      ; R64 := U17
-658 [-]: LEN       R64 R64      ; R64 := # R64
-659 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
-660 [-]: GETTABLE  R61 R61 R62  ; R61 := R61[R62]
-661 [-]: SETTABLE  R52 K143 R61 ; R52["extraEnemySpec"] := R61
-662 [-]: JMP       683          ; PC := 683
-663 [-]: GETTABLE  R61 R52 K73  ; R61 := R52["missionType"]
-664 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-665 [-]: GETTABLE  R62 R62 K113 ; R62 := R62["MT_MOBILE_DEFENSE"]
-666 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 670
-667 [-]: JMP       670          ; PC := 670
-668 [-]: SETTABLE  R52 K143 K15 ; R52["extraEnemySpec"] := nil
-669 [-]: JMP       683          ; PC := 683
-670 [-]: GETTABLE  R61 R52 K73  ; R61 := R52["missionType"]
-671 [-]: GETGLOBAL R62 K74      ; R62 := Lotus_Game
-672 [-]: GETTABLE  R62 R62 K132 ; R62 := R62["MT_ARTIFACT"]
-673 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 683
-674 [-]: JMP       683          ; PC := 683
-675 [-]: GETUPVAL  R61 U18      ; R61 := U18
-676 [-]: GETGLOBAL R62 K142     ; R62 := 0x290116D3
-677 [-]: LOADK     R63 K3       ; R63 := 1
-678 [-]: GETUPVAL  R64 U18      ; R64 := U18
-679 [-]: LEN       R64 R64      ; R64 := # R64
-680 [-]: CALL      R62 3 2      ; R62 := R62(R63,R64)
-681 [-]: GETTABLE  R61 R61 R62  ; R61 := R61[R62]
-682 [-]: SETTABLE  R52 K143 R61 ; R52["extraEnemySpec"] := R61
-683 [-]: GETUPVAL  R61 U19      ; R61 := U19
-684 [-]: MOVE      R62 R52      ; R62 := R52
-685 [-]: GETTABLE  R63 R46 K144 ; R63 := R46["modifierType"]
-686 [-]: CALL      R61 3 3      ; R61,R62 := R61(R62,R63)
-687 [-]: LOADNIL   R63 R64      ; R63 := R64 := nil
-688 [-]: LT        0 K3 R45     ; if 1 >= R45 then PC := 696
-689 [-]: JMP       696          ; PC := 696
-690 [-]: SUB       R65 R45 K3   ; R65 := R45 - 1
-691 [-]: GETTABLE  R65 R41 R65  ; R65 := R41[R65]
-692 [-]: GETTABLE  R63 R65 K73  ; R63 := R65["missionType"]
-693 [-]: SUB       R65 R45 K3   ; R65 := R45 - 1
-694 [-]: GETTABLE  R65 R41 R65  ; R65 := R41[R65]
-695 [-]: GETTABLE  R64 R65 K98  ; R64 := R65["sectorName"]
-696 [-]: GETUPVAL  R65 U20      ; R65 := U20
-697 [-]: MOVE      R66 R52      ; R66 := R52
-698 [-]: GETTABLE  R67 R47 K99  ; R67 := R47["locTag"]
-699 [-]: MOVE      R68 R62      ; R68 := R62
-700 [-]: MOVE      R69 R39      ; R69 := R39
-701 [-]: MOVE      R70 R63      ; R70 := R63
-702 [-]: MOVE      R71 R64      ; R71 := R64
-703 [-]: CALL      R65 7 2      ; R65 := R65(R66,R67,R68,R69,R70,R71)
-704 [-]: TEST      R1 1         ; if R1 then PC := 710
-705 [-]: JMP       710          ; PC := 710
-706 [-]: GETUPVAL  R66 U21      ; R66 := U21
-707 [-]: SETTABLE  R52 K145 R66 ; R52["masteryReq"] := R66
-708 [-]: GETUPVAL  R66 U4       ; R66 := U4
-709 [-]: SETTABLE  R52 K146 R66 ; R52["questReq"] := R66
-710 [-]: SETTABLE  R52 K147 K122; R52["focusAtten"] := 2
-711 [-]: GETTABLE  R66 R52 K148 ; R66 := R52["missionReward"]
-712 [-]: GETUPVAL  R67 U22      ; R67 := U22
-713 [-]: GETGLOBAL R68 K150     ; R68 := 0x6374FD98
-714 [-]: MOVE      R69 R45      ; R69 := R45
-715 [-]: LOADK     R70 K3       ; R70 := 1
-716 [-]: GETUPVAL  R71 U22      ; R71 := U22
-717 [-]: LEN       R71 R71      ; R71 := # R71
-718 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
-719 [-]: GETTABLE  R67 R67 R68  ; R67 := R67[R68]
-720 [-]: SETTABLE  R66 K149 R67 ; R66["credits"] := R67
-721 [-]: SELF      R66 R0 K151  ; R67 := R0; R66 := R0["0x358F0911"]
-722 [-]: GETTABLE  R68 R52 K92  ; R68 := R52["sortieId"]
-723 [-]: CALL      R66 3 2      ; R66 := R66(R67,R68)
-724 [-]: MOVE      R67 R19      ; R67 := R19
-725 [-]: GETTABLE  R68 R52 K152 ; R68 := R52["prereqIds"]
-726 [-]: LEN       R68 R68      ; R68 := # R68
-727 [-]: LOADK     R69 K3       ; R69 := 1
-728 [-]: GETTABLE  R70 R52 K152 ; R70 := R52["prereqIds"]
-729 [-]: LEN       R70 R70      ; R70 := # R70
-730 [-]: LOADK     R71 K3       ; R71 := 1
-731 [-]: FORPREP   R69 739      ; R69 -= R71; PC := 739
-732 [-]: SELF      R73 R0 K151  ; R74 := R0; R73 := R0["0x358F0911"]
-733 [-]: GETTABLE  R75 R52 K152 ; R75 := R52["prereqIds"]
-734 [-]: GETTABLE  R75 R75 R72  ; R75 := R75[R72]
-735 [-]: CALL      R73 3 2      ; R73 := R73(R74,R75)
-736 [-]: TEST      R73 0        ; if not R73 then PC := 739
-737 [-]: JMP       739          ; PC := 739
-738 [-]: SUB       R68 R68 K3   ; R68 := R68 - 1
-739 [-]: FORLOOP   R69 732      ; R69 += R71; if R69 <= R70 then begin PC := 732; R72 := R69 end
-740 [-]: EQ        1 R68 K2     ; if R68 == 0 then PC := 745
-741 [-]: JMP       745          ; PC := 745
-742 [-]: MOVE      R73 R1       ; R73 := R1
-743 [-]: JMP       746          ; PC := 746
-744 [-]: MOVE      R73 R0       ; R73 := R0
-745 [-]: MOVE      R73 R1       ; R73 := R1
-746 [-]: SELF      R74 R50 K153 ; R75 := R50; R74 := R50["0x80A80EEB"]
-747 [-]: CALL      R74 2 2      ; R74 := R74(R75)
-748 [-]: GETGLOBAL R75 K74      ; R75 := Lotus_Game
-749 [-]: GETTABLE  R75 R75 K154 ; R75 := R75["RadialRegion_RCS_LOCKED"]
-750 [-]: EQ        0 R74 R75    ; if R74 ~= R75 then PC := 760
-751 [-]: JMP       760          ; PC := 760
-752 [-]: SELF      R74 R0 K155  ; R75 := R0; R74 := R0["0x79FEB0D"]
-753 [-]: MOVE      R76 R49      ; R76 := R49
-754 [-]: CALL      R74 3 2      ; R74 := R74(R75,R76)
-755 [-]: TEST      R74 1        ; if R74 then PC := 761
-756 [-]: JMP       761          ; PC := 761
-757 [-]: MOVE      R74 R1       ; R74 := R1
-758 [-]: JMP       761          ; PC := 761
-759 [-]: MOVE      R74 R0       ; R74 := R0
-760 [-]: MOVE      R74 R1       ; R74 := R1
-761 [-]: GETTABLE  R75 R47 K156 ; R75 := R47["unlocked"]
-762 [-]: GETGLOBAL R76 K9       ; R76 := _T
-763 [-]: GETTABLE  R76 R76 K12  ; R76 := R76["CachedSortieMissions"]
-764 [-]: NEWTABLE  R77 0 16     ; R77 := {}
-765 [-]: GETTABLE  R78 R47 K71  ; R78 := R47["region"]
-766 [-]: SETTABLE  R77 K157 R78 ; R77["mRegion"] := R78
-767 [-]: SETTABLE  R77 K158 R52 ; R77["mMissionInfo"] := R52
-768 [-]: SETTABLE  R77 K159 R67 ; R77["mVisible"] := R67
-769 [-]: TEST      R67 0        ; if not R67 then PC := 781
-770 [-]: JMP       781          ; PC := 781
-771 [-]: TEST      R73 0        ; if not R73 then PC := 781
-772 [-]: JMP       781          ; PC := 781
-773 [-]: TEST      R74 0        ; if not R74 then PC := 781
-774 [-]: JMP       781          ; PC := 781
-775 [-]: TEST      R75 0        ; if not R75 then PC := 781
-776 [-]: JMP       781          ; PC := 781
-777 [-]: TEST      R66 0        ; if not R66 then PC := 784
-778 [-]: JMP       784          ; PC := 784
-779 [-]: TESTSET   R78 R34 1    ; if R34 then PC := 785 else R78 := R34
-780 [-]: JMP       785          ; PC := 785
-781 [-]: MOVE      R78 R1       ; R78 := R1
-782 [-]: JMP       785          ; PC := 785
-783 [-]: MOVE      R78 R0       ; R78 := R0
-784 [-]: MOVE      R78 R1       ; R78 := R1
-785 [-]: SETTABLE  R77 K160 R78 ; R77["mShowInStarChart"] := R78
-786 [-]: TESTSET   R78 R75 0    ; if not R75 then PC := 789 else R78 := R75
-787 [-]: JMP       789          ; PC := 789
-788 [-]: MOVE      R78 R74      ; R78 := R74
-789 [-]: SETTABLE  R77 K161 R78 ; R77["mNodeUnlocked"] := R78
-790 [-]: GETUPVAL  R78 U2       ; R78 := U2
-791 [-]: SETTABLE  R77 K8 R78   ; R77["mExpiry"] := R78
-792 [-]: SETTABLE  R77 K162 R73 ; R77["mUnlocked"] := R73
-793 [-]: SETTABLE  R77 K163 R66 ; R77["mCompleted"] := R66
-794 [-]: SETTABLE  R77 K164 R51 ; R77["mPrereqDesc"] := R51
-795 [-]: GETGLOBAL R78 K166     ; R78 := _G
-796 [-]: GETTABLE  R78 R78 K167 ; R78 := R78["UITexture_SortieGeneric"]
-797 [-]: SETTABLE  R77 K165 R78 ; R77["mIcon"] := R78
-798 [-]: SETTABLE  R77 K168 R61 ; R77["mModifierAuraDesc"] := R61
-799 [-]: SETTABLE  R77 K169 R65 ; R77["mMissionDesc"] := R65
-800 [-]: SETTABLE  R77 K170 R45 ; R77["mMissionIndex"] := R45
-801 [-]: SETTABLE  R77 K171 R40 ; R77["mTitle"] := R40
-802 [-]: SETTABLE  R77 K172 R38 ; R77["mBossInfo"] := R38
-803 [-]: GETUPVAL  R78 U3       ; R78 := U3
-804 [-]: GETTABLE  R78 R78 K174 ; R78 := R78["0x4DC7A4B9"]
-805 [-]: MOVE      R79 R52      ; R79 := R52
-806 [-]: CALL      R78 2 2      ; R78 := R78(R79)
-807 [-]: SETTABLE  R77 K173 R78 ; R77["mLocationTexture"] := R78
-808 [-]: SETTABLE  R76 R48 R77  ; R76[R48] := R77
-809 [-]: GETGLOBAL R76 K9       ; R76 := _T
-810 [-]: SETTABLE  R76 K10 K106 ; R76["CachedSortieMissionsExist"] := "0x1"
-811 [-]: GETGLOBAL R76 K9       ; R76 := _T
-812 [-]: SETTABLE  R76 K16 R33  ; R76["CachedSortieId"] := R33
-813 [-]: GETGLOBAL R76 K47      ; R76 := 0x400E7765
-814 [-]: GETGLOBAL R77 K9       ; R77 := _T
-815 [-]: GETTABLE  R77 R77 K14  ; R77 := R77["CachedSortieRewardManifest"]
-816 [-]: CALL      R76 2 2      ; R76 := R76(R77)
-817 [-]: TEST      R76 0        ; if not R76 then PC := 822
-818 [-]: JMP       822          ; PC := 822
-819 [-]: GETGLOBAL R76 K9       ; R76 := _T
-820 [-]: GETTABLE  R77 R32 K175 ; R77 := R32["mReward"]
-821 [-]: SETTABLE  R76 K14 R77  ; R76["CachedSortieRewardManifest"] := R77
-822 [-]: GETUPVAL  R76 U1       ; R76 := U1
-823 [-]: GETGLOBAL R77 K9       ; R77 := _T
-824 [-]: GETTABLE  R77 R77 K12  ; R77 := R77["CachedSortieMissions"]
-825 [-]: GETTABLE  R77 R77 R48  ; R77 := R77[R48]
-826 [-]: CALL      R76 2 1      ; R76(R77)
-827 [-]: TEST      R1 0         ; if not R1 then PC := 866
-828 [-]: JMP       866          ; PC := 866
-829 [-]: MOVE      R76 R0       ; R76 := R0
-830 [-]: TEST      R76 0        ; if not R76 then PC := 866
-831 [-]: JMP       866          ; PC := 866
-832 [-]: GETGLOBAL R76 K89      ; R76 := 0x93B1256B
-833 [-]: LOADK     R77 K176     ; R77 := "Sortie["
-834 [-]: MOVE      R78 R31      ; R78 := R31
-835 [-]: LOADK     R79 K177     ; R79 := "] for Region="
-836 [-]: GETGLOBAL R80 K62      ; R80 := 0xE6DC43B0
-837 [-]: GETGLOBAL R81 K69      ; R81 := 0x9FAED6BC
-838 [-]: GETTABLE  R82 R47 K71  ; R82 := R47["region"]
-839 [-]: CALL      R81 2 2      ; R81 := R81(R82)
-840 [-]: MOVE      R82 R0       ; R82 := R0
-841 [-]: CALL      R80 3 2      ; R80 := R80(R81,R82)
-842 [-]: LOADK     R81 K178     ; R81 := " Node="
-843 [-]: MOVE      R82 R48      ; R82 := R48
-844 [-]: LOADK     R83 K135     ; R83 := " ("
-845 [-]: GETGLOBAL R84 K62      ; R84 := 0xE6DC43B0
-846 [-]: GETGLOBAL R85 K69      ; R85 := 0x9FAED6BC
-847 [-]: GETTABLE  R86 R50 K70  ; R86 := R50["name"]
-848 [-]: CALL      R85 2 2      ; R85 := R85(R86)
-849 [-]: LOADNIL   R86 R86      ; R86 := nil
-850 [-]: CALL      R84 3 2      ; R84 := R84(R85,R86)
-851 [-]: LOADK     R85 K179     ; R85 := ": "
-852 [-]: GETGLOBAL R86 K62      ; R86 := 0xE6DC43B0
-853 [-]: GETGLOBAL R87 K69      ; R87 := 0x9FAED6BC
-854 [-]: GETTABLE  R88 R47 K99  ; R88 := R47["locTag"]
+ 78 [-]: NEWTABLE  R16 3 0      ; R16 := {}
+ 79 [-]: NEWTABLE  R17 0 5      ; R17 := {}
+ 80 [-]: GETGLOBAL R18 K20      ; R18 := 0x2C00D429
+ 81 [-]: LOADK     R19 K21      ; R19 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonExterminate"
+ 82 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 83 [-]: SETTABLE  R17 K19 R18  ; R17["levelOverrideExtermination"] := R18
+ 84 [-]: GETGLOBAL R18 K20      ; R18 := 0x2C00D429
+ 85 [-]: LOADK     R19 K23      ; R19 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonRescue"
+ 86 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 87 [-]: SETTABLE  R17 K22 R18  ; R17["levelOverrideRescue"] := R18
+ 88 [-]: GETGLOBAL R18 K20      ; R18 := 0x2C00D429
+ 89 [-]: LOADK     R19 K25      ; R19 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonCapture"
+ 90 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 91 [-]: SETTABLE  R17 K24 R18  ; R17["levelOverrideCapture"] := R18
+ 92 [-]: GETGLOBAL R18 K20      ; R18 := 0x2C00D429
+ 93 [-]: LOADK     R19 K27      ; R19 := "/Lotus/Levels/Proc/Grineer/GrineerGalleonMobileDefense"
+ 94 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 95 [-]: SETTABLE  R17 K26 R18  ; R17["levelOverrideMobileDefense"] := R18
+ 96 [-]: GETGLOBAL R18 K29      ; R18 := 0x7C282057
+ 97 [-]: LOADK     R19 K30      ; R19 := "/Lotus/Types/Game/EnemySpecs/GrineerSquadThree"
+ 98 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 99 [-]: SETTABLE  R17 K28 R18  ; R17["enemySpec"] := R18
+100 [-]: NEWTABLE  R18 0 5      ; R18 := {}
+101 [-]: GETGLOBAL R19 K20      ; R19 := 0x2C00D429
+102 [-]: LOADK     R20 K31      ; R20 := "/Lotus/Levels/Proc/Corpus/CorpusShipExterminate"
+103 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+104 [-]: SETTABLE  R18 K19 R19  ; R18["levelOverrideExtermination"] := R19
+105 [-]: GETGLOBAL R19 K20      ; R19 := 0x2C00D429
+106 [-]: LOADK     R20 K32      ; R20 := "/Lotus/Levels/Proc/Corpus/CorpusShipRescue"
+107 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+108 [-]: SETTABLE  R18 K22 R19  ; R18["levelOverrideRescue"] := R19
+109 [-]: GETGLOBAL R19 K20      ; R19 := 0x2C00D429
+110 [-]: LOADK     R20 K33      ; R20 := "/Lotus/Levels/Proc/Corpus/CorpusShipCapture"
+111 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+112 [-]: SETTABLE  R18 K24 R19  ; R18["levelOverrideCapture"] := R19
+113 [-]: GETGLOBAL R19 K20      ; R19 := 0x2C00D429
+114 [-]: LOADK     R20 K34      ; R20 := "/Lotus/Levels/Proc/Corpus/CorpusShipMobileDefense"
+115 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+116 [-]: SETTABLE  R18 K26 R19  ; R18["levelOverrideMobileDefense"] := R19
+117 [-]: GETGLOBAL R19 K29      ; R19 := 0x7C282057
+118 [-]: LOADK     R20 K35      ; R20 := "/Lotus/Types/Game/EnemySpecs/CorpusSquadC"
+119 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+120 [-]: SETTABLE  R18 K28 R19  ; R18["enemySpec"] := R19
+121 [-]: NEWTABLE  R19 0 5      ; R19 := {}
+122 [-]: GETGLOBAL R20 K20      ; R20 := 0x2C00D429
+123 [-]: LOADK     R21 K31      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipExterminate"
+124 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+125 [-]: SETTABLE  R19 K19 R20  ; R19["levelOverrideExtermination"] := R20
+126 [-]: GETGLOBAL R20 K20      ; R20 := 0x2C00D429
+127 [-]: LOADK     R21 K34      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipMobileDefense"
+128 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+129 [-]: SETTABLE  R19 K22 R20  ; R19["levelOverrideRescue"] := R20
+130 [-]: GETGLOBAL R20 K20      ; R20 := 0x2C00D429
+131 [-]: LOADK     R21 K33      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipCapture"
+132 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+133 [-]: SETTABLE  R19 K24 R20  ; R19["levelOverrideCapture"] := R20
+134 [-]: GETGLOBAL R20 K20      ; R20 := 0x2C00D429
+135 [-]: LOADK     R21 K34      ; R21 := "/Lotus/Levels/Proc/Corpus/CorpusShipMobileDefense"
+136 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+137 [-]: SETTABLE  R19 K26 R20  ; R19["levelOverrideMobileDefense"] := R20
+138 [-]: GETGLOBAL R20 K29      ; R20 := 0x7C282057
+139 [-]: LOADK     R21 K36      ; R21 := "/Lotus/Types/Game/EnemySpecs/InfestedSquadC"
+140 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+141 [-]: SETTABLE  R19 K28 R20  ; R19["enemySpec"] := R20
+142 [-]: SETLIST   R16 3 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 3
+143 [-]: GETGLOBAL R17 K37      ; R17 := gPlayerProfileMgr
+144 [-]: SELF      R17 R17 K38  ; R18 := R17; R17 := R17["0x21EF7B1A"]
+145 [-]: LOADK     R19 K2       ; R19 := 0
+146 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+147 [-]: SELF      R17 R17 K39  ; R18 := R17; R17 := R17["0x654F1092"]
+148 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+149 [-]: MOVE      R18 R1       ; R18 := R1
+150 [-]: GETUPVAL  R19 U3       ; R19 := U3
+151 [-]: GETTABLE  R19 R19 K40  ; R19 := R19["0x2AAC7A8C"]
+152 [-]: GETUPVAL  R20 U4       ; R20 := U4
+153 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+154 [-]: TEST      R19 0        ; if not R19 then PC := 184
+155 [-]: JMP       184          ; PC := 184
+156 [-]: SELF      R19 R17 K41  ; R20 := R17; R19 := R17["0x6F2E05FD"]
+157 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+158 [-]: SELF      R19 R19 K42  ; R20 := R19; R19 := R19["0xD3A6CE65"]
+159 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+160 [-]: GETGLOBAL R20 K11      ; R20 := 0xECFDD17
+161 [-]: MOVE      R21 R19      ; R21 := R19
+162 [-]: CALL      R20 2 4      ; R20,R21,R22 := R20(R21)
+163 [-]: JMP       182          ; PC := 182
+164 [-]: GETGLOBAL R25 K43      ; R25 := 0x400E7765
+165 [-]: MOVE      R26 R24      ; R26 := R24
+166 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+167 [-]: TEST      R25 1        ; if R25 then PC := 182
+168 [-]: JMP       182          ; PC := 182
+169 [-]: GETGLOBAL R25 K44      ; R25 := gGameConfig
+170 [-]: SELF      R25 R25 K45  ; R26 := R25; R25 := R25["0x9E8E66BA"]
+171 [-]: GETTABLE  R27 R24 K46  ; R27 := R24["mXP"]
+172 [-]: GETTABLE  R28 R24 K47  ; R28 := R24["mItemType"]
+173 [-]: CALL      R25 4 2      ; R25 := R25(R26,R27,R28)
+174 [-]: GETGLOBAL R26 K44      ; R26 := gGameConfig
+175 [-]: SELF      R26 R26 K48  ; R27 := R26; R26 := R26["0x3070974D"]
+176 [-]: GETTABLE  R28 R24 K47  ; R28 := R24["mItemType"]
+177 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+178 [-]: LE        0 R26 R25    ; if R26 > R25 then PC := 182
+179 [-]: JMP       182          ; PC := 182
+180 [-]: MOVE      R18 R1       ; R18 := R1
+181 [-]: JMP       184          ; PC := 184
+182 [-]: TFORLOOP  R20 2        ; R23,R24 :=  R20(R21,R22); if R23 ~= nil then begin PC = 164; R22 := R23 end
+183 [-]: JMP       164          ; PC := 164
+184 [-]: LOADNIL   R25 R25      ; R25 := nil
+185 [-]: SELF      R26 R17 K49  ; R27 := R17; R26 := R17["0xCAED36EA"]
+186 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+187 [-]: GETGLOBAL R27 K43      ; R27 := 0x400E7765
+188 [-]: MOVE      R28 R26      ; R28 := R26
+189 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+190 [-]: TEST      R27 1        ; if R27 then PC := 199
+191 [-]: JMP       199          ; PC := 199
+192 [-]: LEN       R27 R26      ; R27 := # R26
+193 [-]: LT        0 K2 R27     ; if 0 >= R27 then PC := 199
+194 [-]: JMP       199          ; PC := 199
+195 [-]: LEN       R27 R26      ; R27 := # R26
+196 [-]: GETTABLE  R27 R26 R27  ; R27 := R26[R27]
+197 [-]: GETTABLE  R27 R27 K50  ; R27 := R27["mSortieId"]
+198 [-]: GETTABLE  R25 R27 K51  ; R25 := R27["mId"]
+199 [-]: LOADK     R27 K3       ; R27 := 1
+200 [-]: LEN       R28 R3       ; R28 := # R3
+201 [-]: LOADK     R29 K3       ; R29 := 1
+202 [-]: FORPREP   R27 861      ; R27 -= R29; PC := 861
+203 [-]: GETTABLE  R31 R3 R30   ; R31 := R3[R30]
+204 [-]: GETTABLE  R32 R31 K51  ; R32 := R31["mId"]
+205 [-]: GETTABLE  R32 R32 K51  ; R32 := R32["mId"]
+206 [-]: EQ        1 R25 R32    ; if R25 == R32 then PC := 209
+207 [-]: JMP       209          ; PC := 209
+208 [-]: MOVE      R33 R0       ; R33 := R0
+209 [-]: MOVE      R33 R1       ; R33 := R1
+210 [-]: GETGLOBAL R34 K6       ; R34 := Engine
+211 [-]: GETTABLE  R34 R34 K7   ; R34 := R34["0xD09D7910"]
+212 [-]: GETTABLE  R35 R31 K52  ; R35 := R31["mActivation"]
+213 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+214 [-]: LE        1 R34 K2     ; if R34 <= 0 then PC := 217
+215 [-]: JMP       217          ; PC := 217
+216 [-]: MOVE      R34 R0       ; R34 := R0
+217 [-]: MOVE      R34 R1       ; R34 := R1
+218 [-]: GETGLOBAL R35 K6       ; R35 := Engine
+219 [-]: GETTABLE  R35 R35 K7   ; R35 := R35["0xD09D7910"]
+220 [-]: GETTABLE  R36 R31 K8   ; R36 := R31["mExpiry"]
+221 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+222 [-]: TEST      R34 0        ; if not R34 then PC := 861
+223 [-]: JMP       861          ; PC := 861
+224 [-]: LT        0 K2 R35     ; if 0 >= R35 then PC := 861
+225 [-]: JMP       861          ; PC := 861
+226 [-]: GETTABLE  R36 R31 K53  ; R36 := R31["mVariants"]
+227 [-]: LEN       R36 R36      ; R36 := # R36
+228 [-]: LT        0 K2 R36     ; if 0 >= R36 then PC := 861
+229 [-]: JMP       861          ; PC := 861
+230 [-]: GETGLOBAL R36 K54      ; R36 := 0x9B21739C
+231 [-]: GETTABLE  R37 R31 K5   ; R37 := R31["mSeed"]
+232 [-]: CALL      R36 2 1      ; R36(R37)
+233 [-]: GETTABLE  R36 R31 K8   ; R36 := R31["mExpiry"]
+234 [-]: SELF      R36 R36 K55  ; R37 := R36; R36 := R36["0xA4269DBC"]
+235 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+236 [-]: MOVE      R36 R2       ; R36 := R2
+237 [-]: GETTABLE  R36 R31 K53  ; R36 := R31["mVariants"]
+238 [-]: GETUPVAL  R37 U5       ; R37 := U5
+239 [-]: GETTABLE  R38 R31 K56  ; R38 := R31["mBoss"]
+240 [-]: GETTABLE  R37 R37 R38  ; R37 := R37[R38]
+241 [-]: GETGLOBAL R38 K57      ; R38 := 0xD26C89A0
+242 [-]: GETGLOBAL R39 K58      ; R39 := 0xE6DC43B0
+243 [-]: GETTABLE  R40 R37 K59  ; R40 := R37["LocTag"]
+244 [-]: LOADNIL   R41 R41      ; R41 := nil
+245 [-]: CALL      R39 3 0      ; R39,... := R39(R40,R41)
+246 [-]: CALL      R38 0 2      ; R38 := R38(R39,...)
+247 [-]: GETGLOBAL R39 K58      ; R39 := 0xE6DC43B0
+248 [-]: LOADK     R40 K60      ; R40 := "/Lotus/Language/Sorties/SOSortieTitle"
+249 [-]: NEWTABLE  R41 0 1      ; R41 := {}
+250 [-]: SETTABLE  R41 K61 R38  ; R41["BOSS_NAME"] := R38
+251 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
+252 [-]: NEWTABLE  R40 0 0      ; R40 := {}
+253 [-]: LOADK     R41 K3       ; R41 := 1
+254 [-]: LEN       R42 R36      ; R42 := # R36
+255 [-]: LOADK     R43 K3       ; R43 := 1
+256 [-]: FORPREP   R41 860      ; R41 -= R43; PC := 860
+257 [-]: GETGLOBAL R45 K62      ; R45 := 0x1BF588C6
+258 [-]: LOADK     R46 K2       ; R46 := 0
+259 [-]: CALL      R45 2 1      ; R45(R46)
+260 [-]: GETTABLE  R45 R36 R44  ; R45 := R36[R44]
+261 [-]: SELF      R46 R14 K63  ; R47 := R14; R46 := R14["0xDF213CE1"]
+262 [-]: GETTABLE  R48 R45 K64  ; R48 := R45["node"]
+263 [-]: CALL      R46 3 2      ; R46 := R46(R47,R48)
+264 [-]: GETGLOBAL R47 K65      ; R47 := 0x9FAED6BC
+265 [-]: GETTABLE  R48 R46 K66  ; R48 := R46["name"]
+266 [-]: CALL      R47 2 2      ; R47 := R47(R48)
+267 [-]: GETTABLE  R48 R46 K67  ; R48 := R46["region"]
+268 [-]: ADD       R49 R48 K3   ; R49 := R48 + 1
+269 [-]: GETTABLE  R49 R15 R49  ; R49 := R15[R49]
+270 [-]: LOADK     R50 K68      ; R50 := ""
+271 [-]: LOADNIL   R51 R51      ; R51 := nil
+272 [-]: GETTABLE  R52 R45 K69  ; R52 := R45["missionType"]
+273 [-]: GETGLOBAL R53 K70      ; R53 := Lotus_Game
+274 [-]: GETTABLE  R53 R53 K71  ; R53 := R53["MT_ASSASSINATION"]
+275 [-]: EQ        0 R52 R53    ; if R52 ~= R53 then PC := 321
+276 [-]: JMP       321          ; PC := 321
+277 [-]: GETGLOBAL R52 K72      ; R52 := string
+278 [-]: GETTABLE  R52 R52 K73  ; R52 := R52["0xDE44F664"]
+279 [-]: GETTABLE  R53 R37 K74  ; R53 := R37["BossNode"]
+280 [-]: LOADK     R54 K75      ; R54 := "/Keys/"
+281 [-]: CALL      R52 3 2      ; R52 := R52(R53,R54)
+282 [-]: TEST      R52 0        ; if not R52 then PC := 301
+283 [-]: JMP       301          ; PC := 301
+284 [-]: GETGLOBAL R52 K76      ; R52 := 0xCAA43ABB
+285 [-]: GETTABLE  R53 R37 K74  ; R53 := R37["BossNode"]
+286 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+287 [-]: GETGLOBAL R53 K29      ; R53 := 0x7C282057
+288 [-]: MOVE      R54 R52      ; R54 := R52
+289 [-]: CALL      R53 2 2      ; R53 := R53(R54)
+290 [-]: SELF      R54 R53 K77  ; R55 := R53; R54 := R53["0xB8637349"]
+291 [-]: CALL      R54 2 2      ; R54 := R54(R55)
+292 [-]: SELF      R54 R54 K55  ; R55 := R54; R54 := R54["0xA4269DBC"]
+293 [-]: CALL      R54 2 2      ; R54 := R54(R55)
+294 [-]: MOVE      R51 R54      ; R51 := R54
+295 [-]: GETGLOBAL R54 K20      ; R54 := 0x2C00D429
+296 [-]: SELF      R55 R53 K79  ; R56 := R53; R55 := R53["0x1B252E3C"]
+297 [-]: CALL      R55 2 0      ; R55,... := R55(R56)
+298 [-]: CALL      R54 0 2      ; R54 := R54(R55,...)
+299 [-]: SETTABLE  R51 K78 R54  ; R51["levelKeyName"] := R54
+300 [-]: JMP       310          ; PC := 310
+301 [-]: SELF      R54 R14 K63  ; R55 := R14; R54 := R14["0xDF213CE1"]
+302 [-]: GETGLOBAL R56 K80      ; R56 := 0xEC274B1A
+303 [-]: GETTABLE  R57 R37 K74  ; R57 := R37["BossNode"]
+304 [-]: CALL      R56 2 0      ; R56,... := R56(R57)
+305 [-]: CALL      R54 0 2      ; R54 := R54(R55,...)
+306 [-]: GETTABLE  R55 R54 K81  ; R55 := R54["mission"]
+307 [-]: SELF      R55 R55 K55  ; R56 := R55; R55 := R55["0xA4269DBC"]
+308 [-]: CALL      R55 2 2      ; R55 := R55(R56)
+309 [-]: MOVE      R51 R55      ; R51 := R55
+310 [-]: GETTABLE  R55 R46 K66  ; R55 := R46["name"]
+311 [-]: SETTABLE  R51 K82 R55  ; R51["location"] := R55
+312 [-]: GETTABLE  R55 R37 K83  ; R55 := R37["BossAssassinationLocTag"]
+313 [-]: TEST      R55 0        ; if not R55 then PC := 332
+314 [-]: JMP       332          ; PC := 332
+315 [-]: GETGLOBAL R55 K58      ; R55 := 0xE6DC43B0
+316 [-]: GETTABLE  R56 R37 K83  ; R56 := R37["BossAssassinationLocTag"]
+317 [-]: LOADNIL   R57 R57      ; R57 := nil
+318 [-]: CALL      R55 3 2      ; R55 := R55(R56,R57)
+319 [-]: MOVE      R38 R55      ; R38 := R55
+320 [-]: JMP       332          ; PC := 332
+321 [-]: NEWTABLE  R55 1 0      ; R55 := {}
+322 [-]: GETTABLE  R56 R45 K69  ; R56 := R45["missionType"]
+323 [-]: SETLIST   R55 1 1      ; R55[(1-1)*FPF+i] := R(55+i), 1 <= i <= 1
+324 [-]: GETUPVAL  R56 U6       ; R56 := U6
+325 [-]: GETTABLE  R56 R56 K84  ; R56 := R56["0x75A3ACC5"]
+326 [-]: GETTABLE  R57 R46 K81  ; R57 := R46["mission"]
+327 [-]: GETTABLE  R57 R57 K82  ; R57 := R57["location"]
+328 [-]: MOVE      R58 R55      ; R58 := R55
+329 [-]: GETUPVAL  R59 U7       ; R59 := U7
+330 [-]: CALL      R56 4 2      ; R56 := R56(R57,R58,R59)
+331 [-]: MOVE      R51 R56      ; R51 := R56
+332 [-]: GETGLOBAL R56 K43      ; R56 := 0x400E7765
+333 [-]: MOVE      R57 R51      ; R57 := R51
+334 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+335 [-]: TEST      R56 0        ; if not R56 then PC := 342
+336 [-]: JMP       342          ; PC := 342
+337 [-]: GETGLOBAL R56 K85      ; R56 := 0x93B1256B
+338 [-]: LOADK     R57 K86      ; R57 := "failed to generate sortie!"
+339 [-]: CALL      R56 2 1      ; R56(R57)
+340 [-]: GETUPVAL  R56 U2       ; R56 := U2
+341 [-]: RETURN    R56 2        ; return R56
+342 [-]: SELF      R56 R51 K87  ; R57 := R51; R56 := R51["0x6D1FC7D8"]
+343 [-]: CALL      R56 2 1      ; R56(R57)
+344 [-]: MOVE      R56 R47      ; R56 := R47
+345 [-]: LOADK     R57 K89      ; R57 := "_"
+346 [-]: MOVE      R58 R32      ; R58 := R32
+347 [-]: CONCAT    R56 R56 R58  ; R56 := R56 .. R57 .. R58
+348 [-]: SETTABLE  R51 K88 R56  ; R51["sortieId"] := R56
+349 [-]: GETGLOBAL R56 K90      ; R56 := table
+350 [-]: GETTABLE  R56 R56 K91  ; R56 := R56["0xE6450C9D"]
+351 [-]: MOVE      R57 R40      ; R57 := R40
+352 [-]: NEWTABLE  R58 0 4      ; R58 := {}
+353 [-]: GETTABLE  R59 R51 K88  ; R59 := R51["sortieId"]
+354 [-]: SETTABLE  R58 K92 R59  ; R58["id"] := R59
+355 [-]: GETGLOBAL R59 K58      ; R59 := 0xE6DC43B0
+356 [-]: GETTABLE  R60 R49 K66  ; R60 := R49["name"]
+357 [-]: MOVE      R61 R0       ; R61 := R0
+358 [-]: CALL      R59 3 2      ; R59 := R59(R60,R61)
+359 [-]: SETTABLE  R58 K93 R59  ; R58["regionName"] := R59
+360 [-]: GETGLOBAL R59 K58      ; R59 := 0xE6DC43B0
+361 [-]: GETGLOBAL R60 K65      ; R60 := 0x9FAED6BC
+362 [-]: GETTABLE  R61 R46 K95  ; R61 := R46["locTag"]
+363 [-]: CALL      R60 2 2      ; R60 := R60(R61)
+364 [-]: LOADNIL   R61 R61      ; R61 := nil
+365 [-]: CALL      R59 3 2      ; R59 := R59(R60,R61)
+366 [-]: SETTABLE  R58 K94 R59  ; R58["sectorName"] := R59
+367 [-]: GETTABLE  R59 R51 K69  ; R59 := R51["missionType"]
+368 [-]: SETTABLE  R58 K69 R59  ; R58["missionType"] := R59
+369 [-]: CALL      R56 3 1      ; R56(R57,R58)
+370 [-]: SUB       R56 R44 K3   ; R56 := R44 - 1
+371 [-]: MUL       R56 R56 K97  ; R56 := R56 * 15
+372 [-]: ADD       R56 K98 R56  ; R56 := 50 + R56
+373 [-]: SETTABLE  R51 K96 R56  ; R51["minEnemyLevel"] := R56
+374 [-]: GETTABLE  R56 R51 K96  ; R56 := R51["minEnemyLevel"]
+375 [-]: ADD       R57 R44 K3   ; R57 := R44 + 1
+376 [-]: MUL       R57 R57 K100 ; R57 := R57 * 5
+377 [-]: ADD       R56 R56 R57  ; R56 := R56 + R57
+378 [-]: SETTABLE  R51 K99 R56  ; R51["maxEnemyLevel"] := R56
+379 [-]: SETTABLE  R51 K101 K102; R51["maxSuitReq"] := "0x1"
+380 [-]: SETTABLE  R51 K103 K3  ; R51["difficulty"] := 1
+381 [-]: GETTABLE  R56 R51 K104 ; R56 := R51["forceAllyFaction"]
+382 [-]: TEST      R56 0        ; if not R56 then PC := 432
+383 [-]: JMP       432          ; PC := 432
+384 [-]: SETTABLE  R51 K104 K13 ; R51["forceAllyFaction"] := "0x0"
+385 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+386 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+387 [-]: GETTABLE  R57 R57 K105 ; R57 := R57["MT_RESCUE"]
+388 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 396
+389 [-]: JMP       396          ; PC := 396
+390 [-]: GETTABLE  R56 R37 K107 ; R56 := R37["Faction"]
+391 [-]: ADD       R56 R56 K3   ; R56 := R56 + 1
+392 [-]: GETTABLE  R56 R16 R56  ; R56 := R16[R56]
+393 [-]: GETTABLE  R56 R56 K22  ; R56 := R56["levelOverrideRescue"]
+394 [-]: SETTABLE  R51 K106 R56 ; R51["levelOverride"] := R56
+395 [-]: JMP       426          ; PC := 426
+396 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+397 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+398 [-]: GETTABLE  R57 R57 K108 ; R57 := R57["MT_CAPTURE"]
+399 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 407
+400 [-]: JMP       407          ; PC := 407
+401 [-]: GETTABLE  R56 R37 K107 ; R56 := R37["Faction"]
+402 [-]: ADD       R56 R56 K3   ; R56 := R56 + 1
+403 [-]: GETTABLE  R56 R16 R56  ; R56 := R16[R56]
+404 [-]: GETTABLE  R56 R56 K24  ; R56 := R56["levelOverrideCapture"]
+405 [-]: SETTABLE  R51 K106 R56 ; R51["levelOverride"] := R56
+406 [-]: JMP       426          ; PC := 426
+407 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+408 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+409 [-]: GETTABLE  R57 R57 K109 ; R57 := R57["MT_MOBILE_DEFENSE"]
+410 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 418
+411 [-]: JMP       418          ; PC := 418
+412 [-]: GETTABLE  R56 R37 K107 ; R56 := R37["Faction"]
+413 [-]: ADD       R56 R56 K3   ; R56 := R56 + 1
+414 [-]: GETTABLE  R56 R16 R56  ; R56 := R16[R56]
+415 [-]: GETTABLE  R56 R56 K26  ; R56 := R56["levelOverrideMobileDefense"]
+416 [-]: SETTABLE  R51 K106 R56 ; R51["levelOverride"] := R56
+417 [-]: JMP       426          ; PC := 426
+418 [-]: GETGLOBAL R56 K70      ; R56 := Lotus_Game
+419 [-]: GETTABLE  R56 R56 K110 ; R56 := R56["MT_EXTERMINATION"]
+420 [-]: SETTABLE  R51 K69 R56  ; R51["missionType"] := R56
+421 [-]: GETTABLE  R56 R37 K107 ; R56 := R37["Faction"]
+422 [-]: ADD       R56 R56 K3   ; R56 := R56 + 1
+423 [-]: GETTABLE  R56 R16 R56  ; R56 := R16[R56]
+424 [-]: GETTABLE  R56 R56 K19  ; R56 := R56["levelOverrideExtermination"]
+425 [-]: SETTABLE  R51 K106 R56 ; R51["levelOverride"] := R56
+426 [-]: GETTABLE  R56 R37 K107 ; R56 := R37["Faction"]
+427 [-]: ADD       R56 R56 K3   ; R56 := R56 + 1
+428 [-]: GETTABLE  R56 R16 R56  ; R56 := R16[R56]
+429 [-]: GETTABLE  R56 R56 K28  ; R56 := R56["enemySpec"]
+430 [-]: SETTABLE  R51 K28 R56  ; R51["enemySpec"] := R56
+431 [-]: JMP       448          ; PC := 448
+432 [-]: GETGLOBAL R56 K43      ; R56 := 0x400E7765
+433 [-]: GETTABLE  R57 R51 K28  ; R57 := R51["enemySpec"]
+434 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+435 [-]: TEST      R56 1        ; if R56 then PC := 448
+436 [-]: JMP       448          ; PC := 448
+437 [-]: GETTABLE  R56 R51 K28  ; R56 := R51["enemySpec"]
+438 [-]: SELF      R56 R56 K111 ; R57 := R56; R56 := R56["0x8B598ED4"]
+439 [-]: GETUPVAL  R58 U8       ; R58 := U8
+440 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
+441 [-]: TEST      R56 0        ; if not R56 then PC := 448
+442 [-]: JMP       448          ; PC := 448
+443 [-]: GETTABLE  R56 R37 K107 ; R56 := R37["Faction"]
+444 [-]: ADD       R56 R56 K3   ; R56 := R56 + 1
+445 [-]: GETTABLE  R56 R16 R56  ; R56 := R16[R56]
+446 [-]: GETTABLE  R56 R56 K28  ; R56 := R56["enemySpec"]
+447 [-]: SETTABLE  R51 K28 R56  ; R51["enemySpec"] := R56
+448 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+449 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+450 [-]: GETTABLE  R57 R57 K112 ; R57 := R57["MT_DEFENSE"]
+451 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 462
+452 [-]: JMP       462          ; PC := 462
+453 [-]: SETTABLE  R51 K113 K114; R51["maxWaveNum"] := 10
+454 [-]: ADD       R56 R48 K3   ; R56 := R48 + 1
+455 [-]: GETGLOBAL R57 K9       ; R57 := _T
+456 [-]: GETTABLE  R57 R57 K115 ; R57 := R57["REGION_ID_MOON"]
+457 [-]: EQ        1 R56 R57    ; if R56 == R57 then PC := 526
+458 [-]: JMP       526          ; PC := 526
+459 [-]: GETUPVAL  R56 U9       ; R56 := U9
+460 [-]: SETTABLE  R51 K116 R56 ; R51["vipAgent"] := R56
+461 [-]: JMP       526          ; PC := 526
+462 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+463 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+464 [-]: GETTABLE  R57 R57 K117 ; R57 := R57["MT_TERRITORY"]
+465 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 469
+466 [-]: JMP       469          ; PC := 469
+467 [-]: SETTABLE  R51 K113 K118; R51["maxWaveNum"] := 2
+468 [-]: JMP       526          ; PC := 526
+469 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+470 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+471 [-]: GETTABLE  R57 R57 K119 ; R57 := R57["MT_SURVIVAL"]
+472 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 476
+473 [-]: JMP       476          ; PC := 476
+474 [-]: SETTABLE  R51 K113 K114; R51["maxWaveNum"] := 10
+475 [-]: JMP       526          ; PC := 526
+476 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+477 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+478 [-]: GETTABLE  R57 R57 K120 ; R57 := R57["MT_EXCAVATE"]
+479 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 483
+480 [-]: JMP       483          ; PC := 483
+481 [-]: SETTABLE  R51 K113 K100; R51["maxWaveNum"] := 5
+482 [-]: JMP       526          ; PC := 526
+483 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+484 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+485 [-]: GETTABLE  R57 R57 K121 ; R57 := R57["MT_INTEL"]
+486 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 490
+487 [-]: JMP       490          ; PC := 490
+488 [-]: SETTABLE  R51 K113 K122; R51["maxWaveNum"] := 3
+489 [-]: JMP       526          ; PC := 526
+490 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+491 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+492 [-]: GETTABLE  R57 R57 K123 ; R57 := R57["MT_SABOTAGE"]
+493 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 497
+494 [-]: JMP       497          ; PC := 497
+495 [-]: SETTABLE  R51 K113 K118; R51["maxWaveNum"] := 2
+496 [-]: JMP       526          ; PC := 526
+497 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+498 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+499 [-]: GETTABLE  R57 R57 K105 ; R57 := R57["MT_RESCUE"]
+500 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 505
+501 [-]: JMP       505          ; PC := 505
+502 [-]: GETUPVAL  R56 U10      ; R56 := U10
+503 [-]: SETTABLE  R51 K124 R56 ; R51["goalTag"] := R56
+504 [-]: JMP       526          ; PC := 526
+505 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+506 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+507 [-]: GETTABLE  R57 R57 K125 ; R57 := R57["MT_PURIFY"]
+508 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 512
+509 [-]: JMP       512          ; PC := 512
+510 [-]: SETTABLE  R51 K113 K118; R51["maxWaveNum"] := 2
+511 [-]: JMP       526          ; PC := 526
+512 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+513 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+514 [-]: GETTABLE  R57 R57 K126 ; R57 := R57["MT_LANDSCAPE"]
+515 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 520
+516 [-]: JMP       520          ; PC := 520
+517 [-]: GETTABLE  R56 R31 K5   ; R56 := R31["mSeed"]
+518 [-]: SETTABLE  R51 K127 R56 ; R51["seed"] := R56
+519 [-]: JMP       526          ; PC := 526
+520 [-]: GETTABLE  R56 R51 K69  ; R56 := R51["missionType"]
+521 [-]: GETGLOBAL R57 K70      ; R57 := Lotus_Game
+522 [-]: GETTABLE  R57 R57 K128 ; R57 := R57["MT_ARTIFACT"]
+523 [-]: EQ        0 R56 R57    ; if R56 ~= R57 then PC := 526
+524 [-]: JMP       526          ; PC := 526
+525 [-]: SETTABLE  R51 K113 K129; R51["maxWaveNum"] := 8
+526 [-]: LT        0 K3 R44     ; if 1 >= R44 then PC := 553
+527 [-]: JMP       553          ; PC := 553
+528 [-]: LOADK     R56 K3       ; R56 := 1
+529 [-]: SUB       R57 R44 K3   ; R57 := R44 - 1
+530 [-]: LOADK     R58 K3       ; R58 := 1
+531 [-]: FORPREP   R56 536      ; R56 -= R58; PC := 536
+532 [-]: SELF      R60 R51 K130 ; R61 := R51; R60 := R51["0x7029CFB5"]
+533 [-]: GETTABLE  R62 R40 R59  ; R62 := R40[R59]
+534 [-]: GETTABLE  R62 R62 K92  ; R62 := R62["id"]
+535 [-]: CALL      R60 3 1      ; R60(R61,R62)
+536 [-]: FORLOOP   R56 532      ; R56 += R58; if R56 <= R57 then begin PC := 532; R59 := R56 end
+537 [-]: SUB       R60 R44 K3   ; R60 := R44 - 1
+538 [-]: GETTABLE  R60 R40 R60  ; R60 := R40[R60]
+539 [-]: GETTABLE  R60 R60 K94  ; R60 := R60["sectorName"]
+540 [-]: LOADK     R61 K131     ; R61 := " ("
+541 [-]: SUB       R62 R44 K3   ; R62 := R44 - 1
+542 [-]: GETTABLE  R62 R40 R62  ; R62 := R40[R62]
+543 [-]: GETTABLE  R62 R62 K93  ; R62 := R62["regionName"]
+544 [-]: LOADK     R63 K132     ; R63 := ")"
+545 [-]: CONCAT    R50 R60 R63  ; R50 := R60 .. R61 .. R62 .. R63
+546 [-]: SUB       R60 R44 K3   ; R60 := R44 - 1
+547 [-]: GETTABLE  R60 R40 R60  ; R60 := R40[R60]
+548 [-]: GETTABLE  R60 R60 K69  ; R60 := R60["missionType"]
+549 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+550 [-]: GETTABLE  R61 R61 K105 ; R61 := R61["MT_RESCUE"]
+551 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 553
+552 [-]: JMP       553          ; PC := 553
+553 [-]: LEN       R60 R36      ; R60 := # R36
+554 [-]: EQ        0 R44 R60    ; if R44 ~= R60 then PC := 559
+555 [-]: JMP       559          ; PC := 559
+556 [-]: GETUPVAL  R60 U11      ; R60 := U11
+557 [-]: SETTABLE  R51 K133 R60 ; R51["sortieTag"] := R60
+558 [-]: JMP       565          ; PC := 565
+559 [-]: GETGLOBAL R60 K80      ; R60 := 0xEC274B1A
+560 [-]: LOADK     R61 K134     ; R61 := "Mission"
+561 [-]: MOVE      R62 R44      ; R62 := R44
+562 [-]: CONCAT    R61 R61 R62  ; R61 := R61 .. R62
+563 [-]: CALL      R60 2 2      ; R60 := R60(R61)
+564 [-]: SETTABLE  R51 K133 R60 ; R51["sortieTag"] := R60
+565 [-]: GETTABLE  R60 R37 K107 ; R60 := R37["Faction"]
+566 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+567 [-]: GETTABLE  R61 R61 K135 ; R61 := R61["FC_INFESTATION"]
+568 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 677
+569 [-]: JMP       677          ; PC := 677
+570 [-]: GETTABLE  R60 R51 K136 ; R60 := R51["faction"]
+571 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+572 [-]: GETTABLE  R61 R61 K135 ; R61 := R61["FC_INFESTATION"]
+573 [-]: EQ        1 R60 R61    ; if R60 == R61 then PC := 677
+574 [-]: JMP       677          ; PC := 677
+575 [-]: GETGLOBAL R60 K70      ; R60 := Lotus_Game
+576 [-]: GETTABLE  R60 R60 K135 ; R60 := R60["FC_INFESTATION"]
+577 [-]: SETTABLE  R51 K136 R60 ; R51["faction"] := R60
+578 [-]: SETTABLE  R51 K137 K15 ; R51["customAdvancedSpawners"] := nil
+579 [-]: GETTABLE  R60 R51 K69  ; R60 := R51["missionType"]
+580 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+581 [-]: GETTABLE  R61 R61 K112 ; R61 := R61["MT_DEFENSE"]
+582 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 593
+583 [-]: JMP       593          ; PC := 593
+584 [-]: GETUPVAL  R60 U12      ; R60 := U12
+585 [-]: GETGLOBAL R61 K138     ; R61 := 0x290116D3
+586 [-]: LOADK     R62 K3       ; R62 := 1
+587 [-]: GETUPVAL  R63 U12      ; R63 := U12
+588 [-]: LEN       R63 R63      ; R63 := # R63
+589 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+590 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
+591 [-]: SETTABLE  R51 K28 R60  ; R51["enemySpec"] := R60
+592 [-]: JMP       677          ; PC := 677
+593 [-]: GETTABLE  R60 R51 K69  ; R60 := R51["missionType"]
+594 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+595 [-]: GETTABLE  R61 R61 K117 ; R61 := R61["MT_TERRITORY"]
+596 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 607
+597 [-]: JMP       607          ; PC := 607
+598 [-]: GETUPVAL  R60 U13      ; R60 := U13
+599 [-]: GETGLOBAL R61 K138     ; R61 := 0x290116D3
+600 [-]: LOADK     R62 K3       ; R62 := 1
+601 [-]: GETUPVAL  R63 U13      ; R63 := U13
+602 [-]: LEN       R63 R63      ; R63 := # R63
+603 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+604 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
+605 [-]: SETTABLE  R51 K28 R60  ; R51["enemySpec"] := R60
+606 [-]: JMP       677          ; PC := 677
+607 [-]: GETTABLE  R60 R51 K69  ; R60 := R51["missionType"]
+608 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+609 [-]: GETTABLE  R61 R61 K119 ; R61 := R61["MT_SURVIVAL"]
+610 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 621
+611 [-]: JMP       621          ; PC := 621
+612 [-]: GETUPVAL  R60 U14      ; R60 := U14
+613 [-]: GETGLOBAL R61 K138     ; R61 := 0x290116D3
+614 [-]: LOADK     R62 K3       ; R62 := 1
+615 [-]: GETUPVAL  R63 U14      ; R63 := U14
+616 [-]: LEN       R63 R63      ; R63 := # R63
+617 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+618 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
+619 [-]: SETTABLE  R51 K28 R60  ; R51["enemySpec"] := R60
+620 [-]: JMP       677          ; PC := 677
+621 [-]: GETTABLE  R60 R51 K69  ; R60 := R51["missionType"]
+622 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+623 [-]: GETTABLE  R61 R61 K120 ; R61 := R61["MT_EXCAVATE"]
+624 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 635
+625 [-]: JMP       635          ; PC := 635
+626 [-]: GETUPVAL  R60 U15      ; R60 := U15
+627 [-]: GETGLOBAL R61 K138     ; R61 := 0x290116D3
+628 [-]: LOADK     R62 K3       ; R62 := 1
+629 [-]: GETUPVAL  R63 U15      ; R63 := U15
+630 [-]: LEN       R63 R63      ; R63 := # R63
+631 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+632 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
+633 [-]: SETTABLE  R51 K28 R60  ; R51["enemySpec"] := R60
+634 [-]: JMP       677          ; PC := 677
+635 [-]: GETUPVAL  R60 U16      ; R60 := U16
+636 [-]: GETGLOBAL R61 K138     ; R61 := 0x290116D3
+637 [-]: LOADK     R62 K3       ; R62 := 1
+638 [-]: GETUPVAL  R63 U16      ; R63 := U16
+639 [-]: LEN       R63 R63      ; R63 := # R63
+640 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+641 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
+642 [-]: SETTABLE  R51 K28 R60  ; R51["enemySpec"] := R60
+643 [-]: GETTABLE  R60 R51 K69  ; R60 := R51["missionType"]
+644 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+645 [-]: GETTABLE  R61 R61 K121 ; R61 := R61["MT_INTEL"]
+646 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 657
+647 [-]: JMP       657          ; PC := 657
+648 [-]: GETUPVAL  R60 U17      ; R60 := U17
+649 [-]: GETGLOBAL R61 K138     ; R61 := 0x290116D3
+650 [-]: LOADK     R62 K3       ; R62 := 1
+651 [-]: GETUPVAL  R63 U17      ; R63 := U17
+652 [-]: LEN       R63 R63      ; R63 := # R63
+653 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+654 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
+655 [-]: SETTABLE  R51 K139 R60 ; R51["extraEnemySpec"] := R60
+656 [-]: JMP       677          ; PC := 677
+657 [-]: GETTABLE  R60 R51 K69  ; R60 := R51["missionType"]
+658 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+659 [-]: GETTABLE  R61 R61 K109 ; R61 := R61["MT_MOBILE_DEFENSE"]
+660 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 664
+661 [-]: JMP       664          ; PC := 664
+662 [-]: SETTABLE  R51 K139 K15 ; R51["extraEnemySpec"] := nil
+663 [-]: JMP       677          ; PC := 677
+664 [-]: GETTABLE  R60 R51 K69  ; R60 := R51["missionType"]
+665 [-]: GETGLOBAL R61 K70      ; R61 := Lotus_Game
+666 [-]: GETTABLE  R61 R61 K128 ; R61 := R61["MT_ARTIFACT"]
+667 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 677
+668 [-]: JMP       677          ; PC := 677
+669 [-]: GETUPVAL  R60 U18      ; R60 := U18
+670 [-]: GETGLOBAL R61 K138     ; R61 := 0x290116D3
+671 [-]: LOADK     R62 K3       ; R62 := 1
+672 [-]: GETUPVAL  R63 U18      ; R63 := U18
+673 [-]: LEN       R63 R63      ; R63 := # R63
+674 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+675 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
+676 [-]: SETTABLE  R51 K139 R60 ; R51["extraEnemySpec"] := R60
+677 [-]: GETUPVAL  R60 U19      ; R60 := U19
+678 [-]: MOVE      R61 R51      ; R61 := R51
+679 [-]: GETTABLE  R62 R45 K140 ; R62 := R45["modifierType"]
+680 [-]: CALL      R60 3 3      ; R60,R61 := R60(R61,R62)
+681 [-]: LOADNIL   R62 R63      ; R62 := R63 := nil
+682 [-]: LT        0 K3 R44     ; if 1 >= R44 then PC := 690
+683 [-]: JMP       690          ; PC := 690
+684 [-]: SUB       R64 R44 K3   ; R64 := R44 - 1
+685 [-]: GETTABLE  R64 R40 R64  ; R64 := R40[R64]
+686 [-]: GETTABLE  R62 R64 K69  ; R62 := R64["missionType"]
+687 [-]: SUB       R64 R44 K3   ; R64 := R44 - 1
+688 [-]: GETTABLE  R64 R40 R64  ; R64 := R40[R64]
+689 [-]: GETTABLE  R63 R64 K94  ; R63 := R64["sectorName"]
+690 [-]: GETUPVAL  R64 U20      ; R64 := U20
+691 [-]: MOVE      R65 R51      ; R65 := R51
+692 [-]: GETTABLE  R66 R46 K95  ; R66 := R46["locTag"]
+693 [-]: MOVE      R67 R61      ; R67 := R61
+694 [-]: MOVE      R68 R38      ; R68 := R38
+695 [-]: MOVE      R69 R62      ; R69 := R62
+696 [-]: MOVE      R70 R63      ; R70 := R63
+697 [-]: CALL      R64 7 2      ; R64 := R64(R65,R66,R67,R68,R69,R70)
+698 [-]: TEST      R1 1         ; if R1 then PC := 704
+699 [-]: JMP       704          ; PC := 704
+700 [-]: GETUPVAL  R65 U21      ; R65 := U21
+701 [-]: SETTABLE  R51 K141 R65 ; R51["masteryReq"] := R65
+702 [-]: GETUPVAL  R65 U4       ; R65 := U4
+703 [-]: SETTABLE  R51 K142 R65 ; R51["questReq"] := R65
+704 [-]: SETTABLE  R51 K143 K118; R51["focusAtten"] := 2
+705 [-]: GETTABLE  R65 R51 K144 ; R65 := R51["missionReward"]
+706 [-]: GETUPVAL  R66 U22      ; R66 := U22
+707 [-]: GETGLOBAL R67 K146     ; R67 := 0x6374FD98
+708 [-]: MOVE      R68 R44      ; R68 := R44
+709 [-]: LOADK     R69 K3       ; R69 := 1
+710 [-]: GETUPVAL  R70 U22      ; R70 := U22
+711 [-]: LEN       R70 R70      ; R70 := # R70
+712 [-]: CALL      R67 4 2      ; R67 := R67(R68,R69,R70)
+713 [-]: GETTABLE  R66 R66 R67  ; R66 := R66[R67]
+714 [-]: SETTABLE  R65 K145 R66 ; R65["credits"] := R66
+715 [-]: SELF      R65 R0 K147  ; R66 := R0; R65 := R0["0x358F0911"]
+716 [-]: GETTABLE  R67 R51 K88  ; R67 := R51["sortieId"]
+717 [-]: CALL      R65 3 2      ; R65 := R65(R66,R67)
+718 [-]: MOVE      R66 R18      ; R66 := R18
+719 [-]: GETTABLE  R67 R51 K148 ; R67 := R51["prereqIds"]
+720 [-]: LEN       R67 R67      ; R67 := # R67
+721 [-]: LOADK     R68 K3       ; R68 := 1
+722 [-]: GETTABLE  R69 R51 K148 ; R69 := R51["prereqIds"]
+723 [-]: LEN       R69 R69      ; R69 := # R69
+724 [-]: LOADK     R70 K3       ; R70 := 1
+725 [-]: FORPREP   R68 733      ; R68 -= R70; PC := 733
+726 [-]: SELF      R72 R0 K147  ; R73 := R0; R72 := R0["0x358F0911"]
+727 [-]: GETTABLE  R74 R51 K148 ; R74 := R51["prereqIds"]
+728 [-]: GETTABLE  R74 R74 R71  ; R74 := R74[R71]
+729 [-]: CALL      R72 3 2      ; R72 := R72(R73,R74)
+730 [-]: TEST      R72 0        ; if not R72 then PC := 733
+731 [-]: JMP       733          ; PC := 733
+732 [-]: SUB       R67 R67 K3   ; R67 := R67 - 1
+733 [-]: FORLOOP   R68 726      ; R68 += R70; if R68 <= R69 then begin PC := 726; R71 := R68 end
+734 [-]: EQ        1 R67 K2     ; if R67 == 0 then PC := 739
+735 [-]: JMP       739          ; PC := 739
+736 [-]: MOVE      R72 R1       ; R72 := R1
+737 [-]: JMP       740          ; PC := 740
+738 [-]: MOVE      R72 R0       ; R72 := R0
+739 [-]: MOVE      R72 R1       ; R72 := R1
+740 [-]: SELF      R73 R49 K149 ; R74 := R49; R73 := R49["0x80A80EEB"]
+741 [-]: CALL      R73 2 2      ; R73 := R73(R74)
+742 [-]: GETGLOBAL R74 K70      ; R74 := Lotus_Game
+743 [-]: GETTABLE  R74 R74 K150 ; R74 := R74["RadialRegion_RCS_LOCKED"]
+744 [-]: EQ        0 R73 R74    ; if R73 ~= R74 then PC := 754
+745 [-]: JMP       754          ; PC := 754
+746 [-]: SELF      R73 R0 K151  ; R74 := R0; R73 := R0["0x79FEB0D"]
+747 [-]: MOVE      R75 R48      ; R75 := R48
+748 [-]: CALL      R73 3 2      ; R73 := R73(R74,R75)
+749 [-]: TEST      R73 1        ; if R73 then PC := 755
+750 [-]: JMP       755          ; PC := 755
+751 [-]: MOVE      R73 R1       ; R73 := R1
+752 [-]: JMP       755          ; PC := 755
+753 [-]: MOVE      R73 R0       ; R73 := R0
+754 [-]: MOVE      R73 R1       ; R73 := R1
+755 [-]: GETTABLE  R74 R46 K152 ; R74 := R46["unlocked"]
+756 [-]: GETGLOBAL R75 K9       ; R75 := _T
+757 [-]: GETTABLE  R75 R75 K12  ; R75 := R75["CachedSortieMissions"]
+758 [-]: NEWTABLE  R76 0 16     ; R76 := {}
+759 [-]: GETTABLE  R77 R46 K67  ; R77 := R46["region"]
+760 [-]: SETTABLE  R76 K153 R77 ; R76["mRegion"] := R77
+761 [-]: SETTABLE  R76 K154 R51 ; R76["mMissionInfo"] := R51
+762 [-]: SETTABLE  R76 K155 R66 ; R76["mVisible"] := R66
+763 [-]: TEST      R66 0        ; if not R66 then PC := 775
+764 [-]: JMP       775          ; PC := 775
+765 [-]: TEST      R72 0        ; if not R72 then PC := 775
+766 [-]: JMP       775          ; PC := 775
+767 [-]: TEST      R73 0        ; if not R73 then PC := 775
+768 [-]: JMP       775          ; PC := 775
+769 [-]: TEST      R74 0        ; if not R74 then PC := 775
+770 [-]: JMP       775          ; PC := 775
+771 [-]: TEST      R65 0        ; if not R65 then PC := 778
+772 [-]: JMP       778          ; PC := 778
+773 [-]: TESTSET   R77 R33 1    ; if R33 then PC := 779 else R77 := R33
+774 [-]: JMP       779          ; PC := 779
+775 [-]: MOVE      R77 R1       ; R77 := R1
+776 [-]: JMP       779          ; PC := 779
+777 [-]: MOVE      R77 R0       ; R77 := R0
+778 [-]: MOVE      R77 R1       ; R77 := R1
+779 [-]: SETTABLE  R76 K156 R77 ; R76["mShowInStarChart"] := R77
+780 [-]: TESTSET   R77 R74 0    ; if not R74 then PC := 783 else R77 := R74
+781 [-]: JMP       783          ; PC := 783
+782 [-]: MOVE      R77 R73      ; R77 := R73
+783 [-]: SETTABLE  R76 K157 R77 ; R76["mNodeUnlocked"] := R77
+784 [-]: GETUPVAL  R77 U2       ; R77 := U2
+785 [-]: SETTABLE  R76 K8 R77   ; R76["mExpiry"] := R77
+786 [-]: SETTABLE  R76 K158 R72 ; R76["mUnlocked"] := R72
+787 [-]: SETTABLE  R76 K159 R65 ; R76["mCompleted"] := R65
+788 [-]: SETTABLE  R76 K160 R50 ; R76["mPrereqDesc"] := R50
+789 [-]: GETGLOBAL R77 K162     ; R77 := _G
+790 [-]: GETTABLE  R77 R77 K163 ; R77 := R77["UITexture_SortieGeneric"]
+791 [-]: SETTABLE  R76 K161 R77 ; R76["mIcon"] := R77
+792 [-]: SETTABLE  R76 K164 R60 ; R76["mModifierAuraDesc"] := R60
+793 [-]: SETTABLE  R76 K165 R64 ; R76["mMissionDesc"] := R64
+794 [-]: SETTABLE  R76 K166 R44 ; R76["mMissionIndex"] := R44
+795 [-]: SETTABLE  R76 K167 R39 ; R76["mTitle"] := R39
+796 [-]: SETTABLE  R76 K168 R37 ; R76["mBossInfo"] := R37
+797 [-]: GETUPVAL  R77 U3       ; R77 := U3
+798 [-]: GETTABLE  R77 R77 K170 ; R77 := R77["0x4DC7A4B9"]
+799 [-]: MOVE      R78 R51      ; R78 := R51
+800 [-]: CALL      R77 2 2      ; R77 := R77(R78)
+801 [-]: SETTABLE  R76 K169 R77 ; R76["mLocationTexture"] := R77
+802 [-]: SETTABLE  R75 R47 R76  ; R75[R47] := R76
+803 [-]: GETGLOBAL R75 K9       ; R75 := _T
+804 [-]: SETTABLE  R75 K10 K102 ; R75["CachedSortieMissionsExist"] := "0x1"
+805 [-]: GETGLOBAL R75 K9       ; R75 := _T
+806 [-]: SETTABLE  R75 K16 R32  ; R75["CachedSortieId"] := R32
+807 [-]: GETGLOBAL R75 K43      ; R75 := 0x400E7765
+808 [-]: GETGLOBAL R76 K9       ; R76 := _T
+809 [-]: GETTABLE  R76 R76 K14  ; R76 := R76["CachedSortieRewardManifest"]
+810 [-]: CALL      R75 2 2      ; R75 := R75(R76)
+811 [-]: TEST      R75 0        ; if not R75 then PC := 816
+812 [-]: JMP       816          ; PC := 816
+813 [-]: GETGLOBAL R75 K9       ; R75 := _T
+814 [-]: GETTABLE  R76 R31 K171 ; R76 := R31["mReward"]
+815 [-]: SETTABLE  R75 K14 R76  ; R75["CachedSortieRewardManifest"] := R76
+816 [-]: GETUPVAL  R75 U1       ; R75 := U1
+817 [-]: GETGLOBAL R76 K9       ; R76 := _T
+818 [-]: GETTABLE  R76 R76 K12  ; R76 := R76["CachedSortieMissions"]
+819 [-]: GETTABLE  R76 R76 R47  ; R76 := R76[R47]
+820 [-]: CALL      R75 2 1      ; R75(R76)
+821 [-]: TEST      R1 0         ; if not R1 then PC := 860
+822 [-]: JMP       860          ; PC := 860
+823 [-]: MOVE      R75 R0       ; R75 := R0
+824 [-]: TEST      R75 0        ; if not R75 then PC := 860
+825 [-]: JMP       860          ; PC := 860
+826 [-]: GETGLOBAL R75 K85      ; R75 := 0x93B1256B
+827 [-]: LOADK     R76 K172     ; R76 := "Sortie["
+828 [-]: MOVE      R77 R30      ; R77 := R30
+829 [-]: LOADK     R78 K173     ; R78 := "] for Region="
+830 [-]: GETGLOBAL R79 K58      ; R79 := 0xE6DC43B0
+831 [-]: GETGLOBAL R80 K65      ; R80 := 0x9FAED6BC
+832 [-]: GETTABLE  R81 R46 K67  ; R81 := R46["region"]
+833 [-]: CALL      R80 2 2      ; R80 := R80(R81)
+834 [-]: MOVE      R81 R0       ; R81 := R0
+835 [-]: CALL      R79 3 2      ; R79 := R79(R80,R81)
+836 [-]: LOADK     R80 K174     ; R80 := " Node="
+837 [-]: MOVE      R81 R47      ; R81 := R47
+838 [-]: LOADK     R82 K131     ; R82 := " ("
+839 [-]: GETGLOBAL R83 K58      ; R83 := 0xE6DC43B0
+840 [-]: GETGLOBAL R84 K65      ; R84 := 0x9FAED6BC
+841 [-]: GETTABLE  R85 R49 K66  ; R85 := R49["name"]
+842 [-]: CALL      R84 2 2      ; R84 := R84(R85)
+843 [-]: LOADNIL   R85 R85      ; R85 := nil
+844 [-]: CALL      R83 3 2      ; R83 := R83(R84,R85)
+845 [-]: LOADK     R84 K175     ; R84 := ": "
+846 [-]: GETGLOBAL R85 K58      ; R85 := 0xE6DC43B0
+847 [-]: GETGLOBAL R86 K65      ; R86 := 0x9FAED6BC
+848 [-]: GETTABLE  R87 R46 K95  ; R87 := R46["locTag"]
+849 [-]: CALL      R86 2 2      ; R86 := R86(R87)
+850 [-]: LOADNIL   R87 R87      ; R87 := nil
+851 [-]: CALL      R85 3 2      ; R85 := R85(R86,R87)
+852 [-]: LOADK     R86 K176     ; R86 := "), Seed="
+853 [-]: GETGLOBAL R87 K4       ; R87 := 0xB28B44DC
+854 [-]: GETTABLE  R88 R31 K5   ; R88 := R31["mSeed"]
 855 [-]: CALL      R87 2 2      ; R87 := R87(R88)
-856 [-]: LOADNIL   R88 R88      ; R88 := nil
-857 [-]: CALL      R86 3 2      ; R86 := R86(R87,R88)
-858 [-]: LOADK     R87 K180     ; R87 := "), Seed="
-859 [-]: GETGLOBAL R88 K4       ; R88 := 0xB28B44DC
-860 [-]: GETTABLE  R89 R32 K5   ; R89 := R32["mSeed"]
-861 [-]: CALL      R88 2 2      ; R88 := R88(R89)
-862 [-]: LOADK     R89 K181     ; R89 := " Id="
-863 [-]: GETTABLE  R90 R52 K92  ; R90 := R52["sortieId"]
-864 [-]: CONCAT    R77 R77 R90  ; R77 := R77 .. R78 .. R79 .. R80 .. R81 .. R82 .. R83 .. R84 .. R85 .. R86 .. R87 .. R88 .. R89 .. R90
-865 [-]: CALL      R76 2 1      ; R76(R77)
-866 [-]: FORLOOP   R42 263      ; R42 += R44; if R42 <= R43 then begin PC := 263; R45 := R42 end
-867 [-]: FORLOOP   R28 209      ; R28 += R30; if R28 <= R29 then begin PC := 209; R31 := R28 end
-868 [-]: GETUPVAL  R76 U2       ; R76 := U2
-869 [-]: RETURN    R76 2        ; return R76
-870 [-]: RETURN    R0 1         ; return 
+856 [-]: LOADK     R88 K177     ; R88 := " Id="
+857 [-]: GETTABLE  R89 R51 K88  ; R89 := R51["sortieId"]
+858 [-]: CONCAT    R76 R76 R89  ; R76 := R76 .. R77 .. R78 .. R79 .. R80 .. R81 .. R82 .. R83 .. R84 .. R85 .. R86 .. R87 .. R88 .. R89
+859 [-]: CALL      R75 2 1      ; R75(R76)
+860 [-]: FORLOOP   R41 257      ; R41 += R43; if R41 <= R42 then begin PC := 257; R44 := R41 end
+861 [-]: FORLOOP   R27 203      ; R27 += R29; if R27 <= R28 then begin PC := 203; R30 := R27 end
+862 [-]: GETUPVAL  R75 U2       ; R75 := U2
+863 [-]: RETURN    R75 2        ; return R75
+864 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 947
+; Defined at line: 946
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

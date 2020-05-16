@@ -1,9 +1,9 @@
 code size: 32
 code size: 8
 code size: 235
-code size: 42
+code size: 47
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\AntiMatter\NovaPassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\AntiMatter\NovaPassive.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -325,42 +325,47 @@ code size: 42
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
   4 [-]: MOVE      R3 R1        ; R3 := R1
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  6 [-]: TEST      R2 0         ; if not R2 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x8DB5D01F"]
- 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 11 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x6978AC59"]
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
- 14 [-]: MOVE      R4 R2        ; R4 := R2
- 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: TEST      R3 0         ; if not R3 then PC := 19
- 17 [-]: JMP       19           ; PC := 19
- 18 [-]: RETURN    R0 1         ; return 
- 19 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2["0xAFA67B2D"]
+  6 [-]: TEST      R2 1         ; if R2 then PC := 13
+  7 [-]: JMP       13           ; PC := 13
+  8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x8B598ED4"]
+  9 [-]: GETGLOBAL R4 K3        ; R4 := gBaseAvatarType
+ 10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 11 [-]: TEST      R2 1         ; if R2 then PC := 14
+ 12 [-]: JMP       14           ; PC := 14
+ 13 [-]: RETURN    R0 1         ; return 
+ 14 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0x8DB5D01F"]
+ 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 16 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0x6978AC59"]
+ 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 18 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 19 [-]: MOVE      R4 R2        ; R4 := R2
  20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 21 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3["0xA11BA586"]
- 22 [-]: GETGLOBAL R6 K6        ; R6 := Lotus_Game
- 23 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["BodySkin"]
- 24 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 25 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
- 26 [-]: MOVE      R6 R4        ; R6 := R4
- 27 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 28 [-]: TEST      R5 1         ; if R5 then PC := 42
- 29 [-]: JMP       42           ; PC := 42
- 30 [-]: SELF      R5 R4 K8     ; R6 := R4; R5 := R4["0x8B598ED4"]
- 31 [-]: GETGLOBAL R7 K9        ; R7 := deluxeSkin
- 32 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 33 [-]: TEST      R5 0         ; if not R5 then PC := 42
- 34 [-]: JMP       42           ; PC := 42
- 35 [-]: SELF      R5 R1 K10    ; R6 := R1; R5 := R1["0xAB436EF2"]
- 36 [-]: GETGLOBAL R7 K11       ; R7 := deluxeArmsDecoType
- 37 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 38 [-]: GETGLOBAL R9 K12       ; R9 := ZERO_VECTOR
- 39 [-]: GETGLOBAL R10 K13      ; R10 := ZERO_ROTATION
- 40 [-]: MOVE      R11 R2       ; R11 := R2
- 41 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 42 [-]: RETURN    R0 1         ; return 
+ 21 [-]: TEST      R3 0         ; if not R3 then PC := 24
+ 22 [-]: JMP       24           ; PC := 24
+ 23 [-]: RETURN    R0 1         ; return 
+ 24 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0xAFA67B2D"]
+ 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 26 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3["0xA11BA586"]
+ 27 [-]: GETGLOBAL R6 K8        ; R6 := Lotus_Game
+ 28 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["BodySkin"]
+ 29 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 30 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+ 31 [-]: MOVE      R6 R4        ; R6 := R4
+ 32 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 33 [-]: TEST      R5 1         ; if R5 then PC := 47
+ 34 [-]: JMP       47           ; PC := 47
+ 35 [-]: SELF      R5 R4 K2     ; R6 := R4; R5 := R4["0x8B598ED4"]
+ 36 [-]: GETGLOBAL R7 K10       ; R7 := deluxeSkin
+ 37 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 38 [-]: TEST      R5 0         ; if not R5 then PC := 47
+ 39 [-]: JMP       47           ; PC := 47
+ 40 [-]: SELF      R5 R1 K11    ; R6 := R1; R5 := R1["0xAB436EF2"]
+ 41 [-]: GETGLOBAL R7 K12       ; R7 := deluxeArmsDecoType
+ 42 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 43 [-]: GETGLOBAL R9 K13       ; R9 := ZERO_VECTOR
+ 44 [-]: GETGLOBAL R10 K14      ; R10 := ZERO_ROTATION
+ 45 [-]: MOVE      R11 R2       ; R11 := R2
+ 46 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
+ 47 [-]: RETURN    R0 1         ; return 
 
 

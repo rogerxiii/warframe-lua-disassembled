@@ -2,12 +2,12 @@ code size: 27
 code size: 50
 code size: 43
 code size: 38
-code size: 13
+code size: 4
 code size: 42
 code size: 1
 code size: 35
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Scenarios\HackScenario.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Scenarios\HackScenario.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -216,21 +216,12 @@ code size: 35
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
-  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0xDBD60887"]
-  3 [-]: LOADK     R2 K2        ; R2 := "ScenarioCompleted"
-  4 [-]: NEWTABLE  R3 0 2       ; R3 := {}
-  5 [-]: SETTABLE  R3 K3 K4     ; R3["Id"] := "DataDownload"
-  6 [-]: SETTABLE  R3 K5 K6     ; R3["Success"] := "0x1"
-  7 [-]: LOADK     R4 K7        ; R4 := "ActiveScenario"
-  8 [-]: MOVE      R5 R0        ; R5 := R0
-  9 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
- 10 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 11 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["0x2FA153C4"]
- 12 [-]: CALL      R1 1 1       ; R1()
- 13 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x2FA153C4"]
+  3 [-]: CALL      R1 1 1       ; R1()
+  4 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:

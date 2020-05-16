@@ -1,10 +1,10 @@
-code size: 147
+code size: 146
 code size: 3
 code size: 7
 code size: 31
 code size: 4
 code size: 16
-code size: 28
+code size: 22
 code size: 79
 code size: 7
 code size: 18
@@ -40,7 +40,7 @@ code size: 1
 code size: 19
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\GraphicManifest.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\GraphicManifest.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -79,123 +79,122 @@ code size: 3
  28 [-]: MOVE      R0 R6        ; R0 := R6
  29 [-]: CLOSURE   R12 4        ; R12 := closure(Function #5)
  30 [-]: MOVE      R0 R6        ; R0 := R6
- 31 [-]: MOVE      R0 R0        ; R0 := R0
- 32 [-]: CLOSURE   R13 5        ; R13 := closure(Function #6)
- 33 [-]: MOVE      R0 R6        ; R0 := R6
- 34 [-]: MOVE      R0 R2        ; R0 := R2
- 35 [-]: CLOSURE   R14 6        ; R14 := closure(Function #7)
- 36 [-]: MOVE      R0 R6        ; R0 := R6
- 37 [-]: MOVE      R0 R11       ; R0 := R11
- 38 [-]: MOVE      R0 R12       ; R0 := R12
- 39 [-]: MOVE      R0 R5        ; R0 := R5
- 40 [-]: MOVE      R0 R0        ; R0 := R0
- 41 [-]: CLOSURE   R15 7        ; R15 := closure(Function #8)
- 42 [-]: MOVE      R0 R4        ; R0 := R4
- 43 [-]: MOVE      R0 R6        ; R0 := R6
- 44 [-]: MOVE      R0 R3        ; R0 := R3
- 45 [-]: SETGLOBAL R15 K9       ; Update := R15
- 46 [-]: SETGLOBAL R15 K10      ; 0x8C7099E9 := R15
- 47 [-]: CLOSURE   R15 8        ; R15 := closure(Function #9)
- 48 [-]: MOVE      R0 R9        ; R0 := R9
- 49 [-]: MOVE      R0 R10       ; R0 := R10
- 50 [-]: MOVE      R0 R5        ; R0 := R5
- 51 [-]: CLOSURE   R16 9        ; R16 := closure(Function #10)
- 52 [-]: MOVE      R0 R15       ; R0 := R15
- 53 [-]: SETGLOBAL R16 K11      ; ConfirmAcceptManifest := R16
- 54 [-]: SETGLOBAL R16 K12      ; 0x3D2576CC := R16
- 55 [-]: CLOSURE   R16 10       ; R16 := closure(Function #11)
- 56 [-]: MOVE      R0 R0        ; R0 := R0
- 57 [-]: MOVE      R0 R15       ; R0 := R15
- 58 [-]: CLOSURE   R17 11       ; R17 := closure(Function #12)
- 59 [-]: MOVE      R0 R16       ; R0 := R16
- 60 [-]: SETGLOBAL R17 K13      ; AcceptManifest := R17
- 61 [-]: SETGLOBAL R17 K14      ; 0xCCF64F7 := R17
- 62 [-]: CLOSURE   R17 12       ; R17 := closure(Function #13)
- 63 [-]: MOVE      R0 R15       ; R0 := R15
- 64 [-]: CLOSURE   R18 13       ; R18 := closure(Function #14)
- 65 [-]: MOVE      R0 R17       ; R0 := R17
- 66 [-]: SETGLOBAL R18 K15      ; RejectManifest := R18
- 67 [-]: SETGLOBAL R18 K16      ; 0x6802F046 := R18
- 68 [-]: CLOSURE   R18 14       ; R18 := closure(Function #15)
- 69 [-]: MOVE      R0 R7        ; R0 := R7
- 70 [-]: MOVE      R0 R0        ; R0 := R0
- 71 [-]: MOVE      R0 R8        ; R0 := R8
- 72 [-]: CLOSURE   R19 15       ; R19 := closure(Function #16)
- 73 [-]: MOVE      R0 R6        ; R0 := R6
- 74 [-]: MOVE      R0 R0        ; R0 := R0
- 75 [-]: CLOSURE   R20 16       ; R20 := closure(Function #17)
- 76 [-]: MOVE      R0 R0        ; R0 := R0
- 77 [-]: MOVE      R0 R7        ; R0 := R7
- 78 [-]: MOVE      R0 R8        ; R0 := R8
- 79 [-]: CLOSURE   R21 17       ; R21 := closure(Function #18)
- 80 [-]: MOVE      R0 R1        ; R0 := R1
- 81 [-]: MOVE      R0 R0        ; R0 := R0
- 82 [-]: MOVE      R0 R20       ; R0 := R20
- 83 [-]: MOVE      R0 R18       ; R0 := R18
- 84 [-]: MOVE      R0 R13       ; R0 := R13
- 85 [-]: MOVE      R0 R14       ; R0 := R14
- 86 [-]: MOVE      R0 R19       ; R0 := R19
- 87 [-]: MOVE      R0 R4        ; R0 := R4
- 88 [-]: SETGLOBAL R21 K17      ; Initialize := R21
- 89 [-]: SETGLOBAL R21 K18      ; 0x62648036 := R21
- 90 [-]: CLOSURE   R21 18       ; R21 := closure(Function #19)
- 91 [-]: MOVE      R0 R2        ; R0 := R2
- 92 [-]: SETGLOBAL R21 K19      ; Shutdown := R21
- 93 [-]: SETGLOBAL R21 K20      ; 0x3C577FA3 := R21
- 94 [-]: CLOSURE   R21 19       ; R21 := closure(Function #20)
- 95 [-]: MOVE      R0 R10       ; R0 := R10
- 96 [-]: SETGLOBAL R21 K21      ; Close := R21
- 97 [-]: SETGLOBAL R21 K22      ; 0xA58BB96C := R21
- 98 [-]: CLOSURE   R21 20       ; R21 := closure(Function #21)
- 99 [-]: MOVE      R0 R10       ; R0 := R10
-100 [-]: CLOSURE   R22 21       ; R22 := closure(Function #22)
-101 [-]: MOVE      R0 R21       ; R0 := R21
-102 [-]: SETGLOBAL R22 K23      ; TransitionOut := R22
-103 [-]: SETGLOBAL R22 K24      ; 0x7097B1B4 := R22
-104 [-]: CLOSURE   R22 22       ; R22 := closure(Function #23)
-105 [-]: SETGLOBAL R22 K25      ; ExitScreen := R22
-106 [-]: SETGLOBAL R22 K26      ; 0xDFB70305 := R22
-107 [-]: CLOSURE   R22 23       ; R22 := closure(Function #24)
-108 [-]: MOVE      R0 R9        ; R0 := R9
-109 [-]: SETGLOBAL R22 K27      ; SetCloseOnSendResult := R22
-110 [-]: SETGLOBAL R22 K28      ; 0x914A28E1 := R22
-111 [-]: CLOSURE   R22 24       ; R22 := closure(Function #25)
-112 [-]: SETGLOBAL R22 K29      ; GridElementSelected := R22
-113 [-]: SETGLOBAL R22 K30      ; 0xE11663BF := R22
-114 [-]: CLOSURE   R22 25       ; R22 := closure(Function #26)
-115 [-]: MOVE      R0 R6        ; R0 := R6
-116 [-]: SETGLOBAL R22 K31      ; GridElementFocused := R22
-117 [-]: SETGLOBAL R22 K32      ; 0x7BD7407E := R22
-118 [-]: CLOSURE   R22 26       ; R22 := closure(Function #27)
-119 [-]: MOVE      R0 R6        ; R0 := R6
-120 [-]: SETGLOBAL R22 K33      ; GridElementUnfocused := R22
-121 [-]: SETGLOBAL R22 K34      ; 0x833AD2CB := R22
-122 [-]: CLOSURE   R22 27       ; R22 := closure(Function #28)
-123 [-]: MOVE      R0 R19       ; R0 := R19
-124 [-]: SETGLOBAL R22 K35      ; onViewportSizeChanged := R22
-125 [-]: SETGLOBAL R22 K36      ; 0x3A900427 := R22
-126 [-]: CLOSURE   R22 28       ; R22 := closure(Function #29)
-127 [-]: MOVE      R0 R5        ; R0 := R5
-128 [-]: MOVE      R0 R16       ; R0 := R16
-129 [-]: SETGLOBAL R22 K37      ; onKeyUp_MENU_SELECT := R22
-130 [-]: SETGLOBAL R22 K38      ; 0x4874089C := R22
-131 [-]: CLOSURE   R22 29       ; R22 := closure(Function #30)
-132 [-]: MOVE      R0 R5        ; R0 := R5
-133 [-]: MOVE      R0 R17       ; R0 := R17
-134 [-]: SETGLOBAL R22 K39      ; onKeyUp_MENU_CANCEL := R22
-135 [-]: SETGLOBAL R22 K40      ; 0xD853E536 := R22
-136 [-]: CLOSURE   R22 30       ; R22 := closure(Function #31)
-137 [-]: SETGLOBAL R22 K41      ; MouseCatcherTrap := R22
-138 [-]: SETGLOBAL R22 K42      ; 0x737DFFE8 := R22
-139 [-]: CLOSURE   R22 31       ; R22 := closure(Function #32)
-140 [-]: MOVE      R0 R5        ; R0 := R5
-141 [-]: MOVE      R0 R6        ; R0 := R6
-142 [-]: SETGLOBAL R22 K43      ; onKeyDown_MENU_MOUSE_Z := R22
-143 [-]: SETGLOBAL R22 K44      ; 0x56EAD3A9 := R22
-144 [-]: CLOSURE   R22 32       ; R22 := closure(Function #33)
-145 [-]: SETGLOBAL R22 K45      ; SupportsThemes := R22
-146 [-]: SETGLOBAL R22 K46      ; 0xDBE73B9E := R22
-147 [-]: RETURN    R0 1         ; return 
+ 31 [-]: CLOSURE   R13 5        ; R13 := closure(Function #6)
+ 32 [-]: MOVE      R0 R6        ; R0 := R6
+ 33 [-]: MOVE      R0 R2        ; R0 := R2
+ 34 [-]: CLOSURE   R14 6        ; R14 := closure(Function #7)
+ 35 [-]: MOVE      R0 R6        ; R0 := R6
+ 36 [-]: MOVE      R0 R11       ; R0 := R11
+ 37 [-]: MOVE      R0 R12       ; R0 := R12
+ 38 [-]: MOVE      R0 R5        ; R0 := R5
+ 39 [-]: MOVE      R0 R0        ; R0 := R0
+ 40 [-]: CLOSURE   R15 7        ; R15 := closure(Function #8)
+ 41 [-]: MOVE      R0 R4        ; R0 := R4
+ 42 [-]: MOVE      R0 R6        ; R0 := R6
+ 43 [-]: MOVE      R0 R3        ; R0 := R3
+ 44 [-]: SETGLOBAL R15 K9       ; Update := R15
+ 45 [-]: SETGLOBAL R15 K10      ; 0x8C7099E9 := R15
+ 46 [-]: CLOSURE   R15 8        ; R15 := closure(Function #9)
+ 47 [-]: MOVE      R0 R9        ; R0 := R9
+ 48 [-]: MOVE      R0 R10       ; R0 := R10
+ 49 [-]: MOVE      R0 R5        ; R0 := R5
+ 50 [-]: CLOSURE   R16 9        ; R16 := closure(Function #10)
+ 51 [-]: MOVE      R0 R15       ; R0 := R15
+ 52 [-]: SETGLOBAL R16 K11      ; ConfirmAcceptManifest := R16
+ 53 [-]: SETGLOBAL R16 K12      ; 0x3D2576CC := R16
+ 54 [-]: CLOSURE   R16 10       ; R16 := closure(Function #11)
+ 55 [-]: MOVE      R0 R0        ; R0 := R0
+ 56 [-]: MOVE      R0 R15       ; R0 := R15
+ 57 [-]: CLOSURE   R17 11       ; R17 := closure(Function #12)
+ 58 [-]: MOVE      R0 R16       ; R0 := R16
+ 59 [-]: SETGLOBAL R17 K13      ; AcceptManifest := R17
+ 60 [-]: SETGLOBAL R17 K14      ; 0xCCF64F7 := R17
+ 61 [-]: CLOSURE   R17 12       ; R17 := closure(Function #13)
+ 62 [-]: MOVE      R0 R15       ; R0 := R15
+ 63 [-]: CLOSURE   R18 13       ; R18 := closure(Function #14)
+ 64 [-]: MOVE      R0 R17       ; R0 := R17
+ 65 [-]: SETGLOBAL R18 K15      ; RejectManifest := R18
+ 66 [-]: SETGLOBAL R18 K16      ; 0x6802F046 := R18
+ 67 [-]: CLOSURE   R18 14       ; R18 := closure(Function #15)
+ 68 [-]: MOVE      R0 R7        ; R0 := R7
+ 69 [-]: MOVE      R0 R0        ; R0 := R0
+ 70 [-]: MOVE      R0 R8        ; R0 := R8
+ 71 [-]: CLOSURE   R19 15       ; R19 := closure(Function #16)
+ 72 [-]: MOVE      R0 R6        ; R0 := R6
+ 73 [-]: MOVE      R0 R0        ; R0 := R0
+ 74 [-]: CLOSURE   R20 16       ; R20 := closure(Function #17)
+ 75 [-]: MOVE      R0 R0        ; R0 := R0
+ 76 [-]: MOVE      R0 R7        ; R0 := R7
+ 77 [-]: MOVE      R0 R8        ; R0 := R8
+ 78 [-]: CLOSURE   R21 17       ; R21 := closure(Function #18)
+ 79 [-]: MOVE      R0 R1        ; R0 := R1
+ 80 [-]: MOVE      R0 R0        ; R0 := R0
+ 81 [-]: MOVE      R0 R20       ; R0 := R20
+ 82 [-]: MOVE      R0 R18       ; R0 := R18
+ 83 [-]: MOVE      R0 R13       ; R0 := R13
+ 84 [-]: MOVE      R0 R14       ; R0 := R14
+ 85 [-]: MOVE      R0 R19       ; R0 := R19
+ 86 [-]: MOVE      R0 R4        ; R0 := R4
+ 87 [-]: SETGLOBAL R21 K17      ; Initialize := R21
+ 88 [-]: SETGLOBAL R21 K18      ; 0x62648036 := R21
+ 89 [-]: CLOSURE   R21 18       ; R21 := closure(Function #19)
+ 90 [-]: MOVE      R0 R2        ; R0 := R2
+ 91 [-]: SETGLOBAL R21 K19      ; Shutdown := R21
+ 92 [-]: SETGLOBAL R21 K20      ; 0x3C577FA3 := R21
+ 93 [-]: CLOSURE   R21 19       ; R21 := closure(Function #20)
+ 94 [-]: MOVE      R0 R10       ; R0 := R10
+ 95 [-]: SETGLOBAL R21 K21      ; Close := R21
+ 96 [-]: SETGLOBAL R21 K22      ; 0xA58BB96C := R21
+ 97 [-]: CLOSURE   R21 20       ; R21 := closure(Function #21)
+ 98 [-]: MOVE      R0 R10       ; R0 := R10
+ 99 [-]: CLOSURE   R22 21       ; R22 := closure(Function #22)
+100 [-]: MOVE      R0 R21       ; R0 := R21
+101 [-]: SETGLOBAL R22 K23      ; TransitionOut := R22
+102 [-]: SETGLOBAL R22 K24      ; 0x7097B1B4 := R22
+103 [-]: CLOSURE   R22 22       ; R22 := closure(Function #23)
+104 [-]: SETGLOBAL R22 K25      ; ExitScreen := R22
+105 [-]: SETGLOBAL R22 K26      ; 0xDFB70305 := R22
+106 [-]: CLOSURE   R22 23       ; R22 := closure(Function #24)
+107 [-]: MOVE      R0 R9        ; R0 := R9
+108 [-]: SETGLOBAL R22 K27      ; SetCloseOnSendResult := R22
+109 [-]: SETGLOBAL R22 K28      ; 0x914A28E1 := R22
+110 [-]: CLOSURE   R22 24       ; R22 := closure(Function #25)
+111 [-]: SETGLOBAL R22 K29      ; GridElementSelected := R22
+112 [-]: SETGLOBAL R22 K30      ; 0xE11663BF := R22
+113 [-]: CLOSURE   R22 25       ; R22 := closure(Function #26)
+114 [-]: MOVE      R0 R6        ; R0 := R6
+115 [-]: SETGLOBAL R22 K31      ; GridElementFocused := R22
+116 [-]: SETGLOBAL R22 K32      ; 0x7BD7407E := R22
+117 [-]: CLOSURE   R22 26       ; R22 := closure(Function #27)
+118 [-]: MOVE      R0 R6        ; R0 := R6
+119 [-]: SETGLOBAL R22 K33      ; GridElementUnfocused := R22
+120 [-]: SETGLOBAL R22 K34      ; 0x833AD2CB := R22
+121 [-]: CLOSURE   R22 27       ; R22 := closure(Function #28)
+122 [-]: MOVE      R0 R19       ; R0 := R19
+123 [-]: SETGLOBAL R22 K35      ; onViewportSizeChanged := R22
+124 [-]: SETGLOBAL R22 K36      ; 0x3A900427 := R22
+125 [-]: CLOSURE   R22 28       ; R22 := closure(Function #29)
+126 [-]: MOVE      R0 R5        ; R0 := R5
+127 [-]: MOVE      R0 R16       ; R0 := R16
+128 [-]: SETGLOBAL R22 K37      ; onKeyUp_MENU_SELECT := R22
+129 [-]: SETGLOBAL R22 K38      ; 0x4874089C := R22
+130 [-]: CLOSURE   R22 29       ; R22 := closure(Function #30)
+131 [-]: MOVE      R0 R5        ; R0 := R5
+132 [-]: MOVE      R0 R17       ; R0 := R17
+133 [-]: SETGLOBAL R22 K39      ; onKeyUp_MENU_CANCEL := R22
+134 [-]: SETGLOBAL R22 K40      ; 0xD853E536 := R22
+135 [-]: CLOSURE   R22 30       ; R22 := closure(Function #31)
+136 [-]: SETGLOBAL R22 K41      ; MouseCatcherTrap := R22
+137 [-]: SETGLOBAL R22 K42      ; 0x737DFFE8 := R22
+138 [-]: CLOSURE   R22 31       ; R22 := closure(Function #32)
+139 [-]: MOVE      R0 R5        ; R0 := R5
+140 [-]: MOVE      R0 R6        ; R0 := R6
+141 [-]: SETGLOBAL R22 K43      ; onKeyDown_MENU_MOUSE_Z := R22
+142 [-]: SETGLOBAL R22 K44      ; 0x56EAD3A9 := R22
+143 [-]: CLOSURE   R22 32       ; R22 := closure(Function #33)
+144 [-]: SETGLOBAL R22 K45      ; SupportsThemes := R22
+145 [-]: SETGLOBAL R22 K46      ; 0xDBE73B9E := R22
+146 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -318,39 +317,33 @@ code size: 3
 ;
 ; Name:            
 ; Defined at line: 47
-; #Upvalues:       2
+; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  4
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0xC51A5C9D"]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  5 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0xF81722A2"]
-  6 [-]: LT        1 K2 R0      ; if 6 < R0 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: MOVE      R2 R0        ; R2 := R0
-  9 [-]: MOVE      R2 R1        ; R2 := R1
- 10 [-]: LOADK     R3 K3        ; R3 := 3
- 11 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 12 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["0xF81722A2"]
- 13 [-]: LT        1 K3 R0      ; if 3 < R0 then PC := 16
- 14 [-]: JMP       16           ; PC := 16
- 15 [-]: MOVE      R5 R0        ; R5 := R0
- 16 [-]: MOVE      R5 R1        ; R5 := R1
- 17 [-]: LOADK     R6 K4        ; R6 := 2
- 18 [-]: LOADK     R7 K5        ; R7 := 1
- 19 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
- 20 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 21 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 22 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["mRowSeparation"]
- 23 [-]: SUB       R3 R1 K5     ; R3 := R1 - 1
- 24 [-]: MUL       R2 R2 R3     ; R2 := R2 * R3
- 25 [-]: DIV       R2 R2 K4     ; R2 := R2 / 2
- 26 [-]: SUB       R2 K7 R2     ; R2 := -18 - R2
- 27 [-]: RETURN    R2 2         ; return R2
- 28 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETGLOBAL R1 K1        ; R1 := math
+  5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["0x65F9712A"]
+  6 [-]: GETGLOBAL R2 K1        ; R2 := math
+  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xBCF846DF"]
+  8 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  9 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["mColumns"]
+ 10 [-]: DIV       R3 R0 R3     ; R3 := R0 / R3
+ 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 12 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 13 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["mRows"]
+ 14 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 15 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 16 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["mRowSeparation"]
+ 17 [-]: SUB       R3 R1 K7     ; R3 := R1 - 1
+ 18 [-]: MUL       R2 R2 R3     ; R2 := R2 * R3
+ 19 [-]: DIV       R2 R2 K8     ; R2 := R2 / 2
+ 20 [-]: SUB       R2 K9 R2     ; R2 := -18 - R2
+ 21 [-]: RETURN    R2 2         ; return R2
+ 22 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:

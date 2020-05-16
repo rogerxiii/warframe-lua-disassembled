@@ -1,25 +1,26 @@
 code size: 9
-code size: 122
+code size: 137
 code size: 5
 code size: 16
 code size: 5
 code size: 10
 code size: 15
-code size: 40
+code size: 36
 code size: 14
 code size: 3
-code size: 71
-code size: 43
-code size: 52
+code size: 69
+code size: 47
+code size: 67
 code size: 5
 code size: 11
-code size: 9
-code size: 61
+code size: 12
+code size: 56
+code size: 21
 code size: 29
 code size: 4
 code size: 11
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\DropDownMenu.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\DropDownMenu.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -83,99 +84,114 @@ code size: 11
  33 [-]: SETTABLE  R12 K18 K19  ; R12["mForcedVerticalSeparation"] := 30
  34 [-]: SETTABLE  R12 K20 K21  ; R12["mWidth"] := 370
  35 [-]: SETTABLE  R12 K22 K5   ; R12["mSelectedElement"] := nil
- 36 [-]: GETTABLE  R13 R10 K23  ; R13 := R10["0x46FF1A3C"]
- 37 [-]: MOVE      R14 R0       ; R14 := R0
- 38 [-]: MOVE      R15 R1       ; R15 := R1
- 39 [-]: LOADK     R16 K24      ; R16 := ".MainButton"
- 40 [-]: CONCAT    R15 R15 R16  ; R15 := R15 .. R16
- 41 [-]: LOADK     R16 K25      ; R16 := "----"
- 42 [-]: MOVE      R17 R3       ; R17 := R3
- 43 [-]: MOVE      R18 R4       ; R18 := R4
- 44 [-]: MOVE      R19 R5       ; R19 := R5
- 45 [-]: MOVE      R20 R6       ; R20 := R6
- 46 [-]: MOVE      R21 R7       ; R21 := R7
- 47 [-]: CALL      R13 9 2      ; R13 := R13(R14,R15,R16,R17,R18,R19,R20,R21)
- 48 [-]: SETTABLE  R13 K26 K27  ; R13["mTextBuffer"] := 5
- 49 [-]: SETTABLE  R13 K28 K17  ; R13["mPrefixCallout"] := "0x0"
- 50 [-]: GETTABLE  R14 R13 K30  ; R14 := R13["SetFocus"]
- 51 [-]: SETTABLE  R13 K29 R14  ; R13["ButtonSetFocus"] := R14
- 52 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1.1)
- 53 [-]: MOVE      R0 R13       ; R0 := R13
- 54 [-]: SETTABLE  R13 K30 R14  ; R13["SetFocus"] := R14
- 55 [-]: GETTABLE  R14 R13 K32  ; R14 := R13["Pressed"]
- 56 [-]: SETTABLE  R13 K31 R14  ; R13["ButtonPressed"] := R14
- 57 [-]: CLOSURE   R14 1        ; R14 := closure(Function #1.2)
+ 36 [-]: SETTABLE  R12 K23 K5   ; R12["mCustomizeButtonCallback"] := nil
+ 37 [-]: SETTABLE  R12 K24 K25  ; R12["mSelectedIconOnly"] := "0x1"
+ 38 [-]: GETTABLE  R13 R10 K26  ; R13 := R10["0x46FF1A3C"]
+ 39 [-]: MOVE      R14 R0       ; R14 := R0
+ 40 [-]: MOVE      R15 R1       ; R15 := R1
+ 41 [-]: LOADK     R16 K27      ; R16 := ".MainButton"
+ 42 [-]: CONCAT    R15 R15 R16  ; R15 := R15 .. R16
+ 43 [-]: TESTSET   R16 R2 1     ; if R2 then PC := 46 else R16 := R2
+ 44 [-]: JMP       46           ; PC := 46
+ 45 [-]: LOADK     R16 K28      ; R16 := "----"
+ 46 [-]: MOVE      R17 R3       ; R17 := R3
+ 47 [-]: MOVE      R18 R4       ; R18 := R4
+ 48 [-]: MOVE      R19 R5       ; R19 := R5
+ 49 [-]: MOVE      R20 R6       ; R20 := R6
+ 50 [-]: MOVE      R21 R7       ; R21 := R7
+ 51 [-]: CALL      R13 9 2      ; R13 := R13(R14,R15,R16,R17,R18,R19,R20,R21)
+ 52 [-]: SETTABLE  R13 K29 K30  ; R13["mTextBuffer"] := 5
+ 53 [-]: SETTABLE  R13 K31 K17  ; R13["mPrefixCallout"] := "0x0"
+ 54 [-]: SETTABLE  R13 K32 K25  ; R13["mFlipExpandedIcon"] := "0x1"
+ 55 [-]: GETTABLE  R14 R13 K34  ; R14 := R13["SetFocus"]
+ 56 [-]: SETTABLE  R13 K33 R14  ; R13["ButtonSetFocus"] := R14
+ 57 [-]: CLOSURE   R14 0        ; R14 := closure(Function #1.1)
  58 [-]: MOVE      R0 R13       ; R0 := R13
- 59 [-]: MOVE      R0 R12       ; R0 := R12
- 60 [-]: SETTABLE  R13 K32 R14  ; R13["Pressed"] := R14
- 61 [-]: CLOSURE   R14 2        ; R14 := closure(Function #1.3)
- 62 [-]: MOVE      R0 R12       ; R0 := R12
- 63 [-]: SETTABLE  R13 K33 R14  ; R13["SetValue"] := R14
- 64 [-]: SELF      R14 R13 K34  ; R15 := R13; R14 := R13["0x755CB587"]
- 65 [-]: LOADK     R16 K35      ; R16 := "left"
- 66 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 67 [-]: SELF      R14 R13 K36  ; R15 := R13; R14 := R13["0x881A50F4"]
- 68 [-]: GETTABLE  R16 R12 K20  ; R16 := R12["mWidth"]
- 69 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 70 [-]: SELF      R14 R13 K37  ; R15 := R13; R14 := R13["0x6470BAF4"]
- 71 [-]: CALL      R14 2 1      ; R14(R15)
- 72 [-]: SETTABLE  R12 K38 R13  ; R12["mMainButton"] := R13
- 73 [-]: CLOSURE   R14 3        ; R14 := closure(Function #1.4)
- 74 [-]: SETTABLE  R12 K39 R14  ; R12["SetWidth"] := R14
- 75 [-]: CLOSURE   R14 4        ; R14 := closure(Function #1.5)
- 76 [-]: MOVE      R0 R9        ; R0 := R9
- 77 [-]: MOVE      R0 R8        ; R0 := R8
- 78 [-]: SETTABLE  R12 K40 R14  ; R12["UpdateColors"] := R14
- 79 [-]: CLOSURE   R14 5        ; R14 := closure(Function #1.6)
- 80 [-]: SETTABLE  R12 K41 R14  ; R12["IsExpanded"] := R14
- 81 [-]: CLOSURE   R14 6        ; R14 := closure(Function #1.7)
- 82 [-]: SETTABLE  R12 K42 R14  ; R12["SetExpanded"] := R14
- 83 [-]: CLOSURE   R14 7        ; R14 := closure(Function #1.8)
- 84 [-]: SETTABLE  R12 K43 R14  ; R12["UpdateSelectedText"] := R14
- 85 [-]: GETTABLE  R14 R12 K45  ; R14 := R12["OnSelected"]
- 86 [-]: SETTABLE  R12 K44 R14  ; R12["ButtonOnSelected"] := R14
- 87 [-]: GETTABLE  R14 R12 K43  ; R14 := R12["UpdateSelectedText"]
- 88 [-]: SETTABLE  R12 K45 R14  ; R12["OnSelected"] := R14
- 89 [-]: GETTABLE  R14 R12 K47  ; R14 := R12["OnDraw"]
- 90 [-]: SETTABLE  R12 K46 R14  ; R12["ListOnDraw"] := R14
- 91 [-]: CLOSURE   R14 8        ; R14 := closure(Function #1.9)
- 92 [-]: MOVE      R0 R10       ; R0 := R10
- 93 [-]: MOVE      R0 R12       ; R0 := R12
- 94 [-]: SETTABLE  R12 K47 R14  ; R12["OnDraw"] := R14
- 95 [-]: GETTABLE  R14 R12 K49  ; R14 := R12["Redraw"]
- 96 [-]: SETTABLE  R12 K48 R14  ; R12["ListRedraw"] := R14
- 97 [-]: CLOSURE   R14 9        ; R14 := closure(Function #1.10)
- 98 [-]: SETTABLE  R12 K49 R14  ; R12["Redraw"] := R14
- 99 [-]: CLOSURE   R14 10       ; R14 := closure(Function #1.11)
-100 [-]: SETTABLE  R12 K50 R14  ; R12["OnMouseClick"] := R14
-101 [-]: CLOSURE   R14 11       ; R14 := closure(Function #1.12)
-102 [-]: SETTABLE  R12 K51 R14  ; R12["HookupCallbacks"] := R14
-103 [-]: SELF      R14 R0 K52   ; R15 := R0; R14 := R0["0x880196A7"]
-104 [-]: MOVE      R16 R1       ; R16 := R1
-105 [-]: LOADK     R17 K53      ; R17 := "Buttons"
-106 [-]: LOADK     R18 K54      ; R18 := "_y"
-107 [-]: GETTABLE  R19 R12 K18  ; R19 := R12["mForcedVerticalSeparation"]
-108 [-]: CALL      R14 6 1      ; R14(R15,R16,R17,R18,R19)
-109 [-]: SELF      R14 R0 K55   ; R15 := R0; R14 := R0["0x7E1F26D7"]
-110 [-]: MOVE      R16 R1       ; R16 := R1
-111 [-]: LOADK     R17 K11      ; R17 := ".Backer"
-112 [-]: CONCAT    R16 R16 R17  ; R16 := R16 .. R17
-113 [-]: GETGLOBAL R17 K56      ; R17 := _G
-114 [-]: GETTABLE  R17 R17 K57  ; R17 := R17["UIMaterial_Button"]
-115 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
-116 [-]: SELF      R14 R12 K58  ; R15 := R12; R14 := R12["0x7E30A890"]
-117 [-]: MOVE      R16 R0       ; R16 := R0
-118 [-]: CALL      R14 3 1      ; R14(R15,R16)
-119 [-]: SELF      R14 R12 K59  ; R15 := R12; R14 := R12["0x6A3F1C9E"]
-120 [-]: CALL      R14 2 1      ; R14(R15)
-121 [-]: RETURN    R12 2        ; return R12
-122 [-]: RETURN    R0 1         ; return 
+ 59 [-]: SETTABLE  R13 K34 R14  ; R13["SetFocus"] := R14
+ 60 [-]: GETTABLE  R14 R13 K36  ; R14 := R13["Pressed"]
+ 61 [-]: SETTABLE  R13 K35 R14  ; R13["ButtonPressed"] := R14
+ 62 [-]: CLOSURE   R14 1        ; R14 := closure(Function #1.2)
+ 63 [-]: MOVE      R0 R13       ; R0 := R13
+ 64 [-]: MOVE      R0 R12       ; R0 := R12
+ 65 [-]: SETTABLE  R13 K36 R14  ; R13["Pressed"] := R14
+ 66 [-]: CLOSURE   R14 2        ; R14 := closure(Function #1.3)
+ 67 [-]: MOVE      R0 R12       ; R0 := R12
+ 68 [-]: SETTABLE  R13 K37 R14  ; R13["SetValue"] := R14
+ 69 [-]: SELF      R14 R13 K38  ; R15 := R13; R14 := R13["0x755CB587"]
+ 70 [-]: LOADK     R16 K39      ; R16 := "left"
+ 71 [-]: CALL      R14 3 1      ; R14(R15,R16)
+ 72 [-]: SELF      R14 R13 K40  ; R15 := R13; R14 := R13["0x881A50F4"]
+ 73 [-]: GETTABLE  R16 R12 K20  ; R16 := R12["mWidth"]
+ 74 [-]: CALL      R14 3 1      ; R14(R15,R16)
+ 75 [-]: SELF      R14 R13 K41  ; R15 := R13; R14 := R13["0x6470BAF4"]
+ 76 [-]: CALL      R14 2 1      ; R14(R15)
+ 77 [-]: SETTABLE  R12 K42 R13  ; R12["mMainButton"] := R13
+ 78 [-]: CLOSURE   R14 3        ; R14 := closure(Function #1.4)
+ 79 [-]: SETTABLE  R12 K43 R14  ; R12["SetWidth"] := R14
+ 80 [-]: CLOSURE   R14 4        ; R14 := closure(Function #1.5)
+ 81 [-]: MOVE      R0 R9        ; R0 := R9
+ 82 [-]: MOVE      R0 R8        ; R0 := R8
+ 83 [-]: SETTABLE  R12 K44 R14  ; R12["UpdateColors"] := R14
+ 84 [-]: CLOSURE   R14 5        ; R14 := closure(Function #1.6)
+ 85 [-]: SETTABLE  R12 K45 R14  ; R12["IsExpanded"] := R14
+ 86 [-]: CLOSURE   R14 6        ; R14 := closure(Function #1.7)
+ 87 [-]: SETTABLE  R12 K46 R14  ; R12["SetExpanded"] := R14
+ 88 [-]: CLOSURE   R14 7        ; R14 := closure(Function #1.8)
+ 89 [-]: MOVE      R0 R12       ; R0 := R12
+ 90 [-]: SETTABLE  R12 K47 R14  ; R12["UpdateSelectedText"] := R14
+ 91 [-]: GETTABLE  R14 R12 K49  ; R14 := R12["OnSelected"]
+ 92 [-]: SETTABLE  R12 K48 R14  ; R12["ButtonOnSelected"] := R14
+ 93 [-]: GETTABLE  R14 R12 K47  ; R14 := R12["UpdateSelectedText"]
+ 94 [-]: SETTABLE  R12 K49 R14  ; R12["OnSelected"] := R14
+ 95 [-]: GETTABLE  R14 R12 K51  ; R14 := R12["OnDraw"]
+ 96 [-]: SETTABLE  R12 K50 R14  ; R12["ListOnDraw"] := R14
+ 97 [-]: CLOSURE   R14 8        ; R14 := closure(Function #1.9)
+ 98 [-]: MOVE      R0 R10       ; R0 := R10
+ 99 [-]: MOVE      R0 R12       ; R0 := R12
+100 [-]: SETTABLE  R12 K51 R14  ; R12["OnDraw"] := R14
+101 [-]: GETTABLE  R14 R12 K53  ; R14 := R12["Redraw"]
+102 [-]: SETTABLE  R12 K52 R14  ; R12["ListRedraw"] := R14
+103 [-]: CLOSURE   R14 9        ; R14 := closure(Function #1.10)
+104 [-]: SETTABLE  R12 K53 R14  ; R12["Redraw"] := R14
+105 [-]: CLOSURE   R14 10       ; R14 := closure(Function #1.11)
+106 [-]: SETTABLE  R12 K54 R14  ; R12["MouseOverClip"] := R14
+107 [-]: CLOSURE   R14 11       ; R14 := closure(Function #1.12)
+108 [-]: MOVE      R0 R1        ; R0 := R1
+109 [-]: SETTABLE  R12 K55 R14  ; R12["OnMouseClick"] := R14
+110 [-]: CLOSURE   R14 12       ; R14 := closure(Function #1.13)
+111 [-]: SETTABLE  R12 K56 R14  ; R12["HookupCallbacks"] := R14
+112 [-]: SELF      R14 R0 K57   ; R15 := R0; R14 := R0["0x880196A7"]
+113 [-]: MOVE      R16 R1       ; R16 := R1
+114 [-]: LOADK     R17 K58      ; R17 := "Buttons"
+115 [-]: LOADK     R18 K59      ; R18 := "_y"
+116 [-]: GETTABLE  R19 R12 K18  ; R19 := R12["mForcedVerticalSeparation"]
+117 [-]: CALL      R14 6 1      ; R14(R15,R16,R17,R18,R19)
+118 [-]: SELF      R14 R0 K57   ; R15 := R0; R14 := R0["0x880196A7"]
+119 [-]: MOVE      R16 R1       ; R16 := R1
+120 [-]: LOADK     R17 K60      ; R17 := "Backer"
+121 [-]: LOADK     R18 K59      ; R18 := "_y"
+122 [-]: GETTABLE  R19 R12 K18  ; R19 := R12["mForcedVerticalSeparation"]
+123 [-]: CALL      R14 6 1      ; R14(R15,R16,R17,R18,R19)
+124 [-]: SELF      R14 R0 K61   ; R15 := R0; R14 := R0["0x7E1F26D7"]
+125 [-]: MOVE      R16 R1       ; R16 := R1
+126 [-]: LOADK     R17 K11      ; R17 := ".Backer"
+127 [-]: CONCAT    R16 R16 R17  ; R16 := R16 .. R17
+128 [-]: GETGLOBAL R17 K62      ; R17 := _G
+129 [-]: GETTABLE  R17 R17 K63  ; R17 := R17["UIMaterial_Button"]
+130 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
+131 [-]: SELF      R14 R12 K64  ; R15 := R12; R14 := R12["0x7E30A890"]
+132 [-]: MOVE      R16 R0       ; R16 := R0
+133 [-]: CALL      R14 3 1      ; R14(R15,R16)
+134 [-]: SELF      R14 R12 K65  ; R15 := R12; R14 := R12["0x6A3F1C9E"]
+135 [-]: CALL      R14 2 1      ; R14(R15)
+136 [-]: RETURN    R12 2        ; return R12
+137 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
 ;
 ; Name:            
-; Defined at line: 27
+; Defined at line: 30
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -191,7 +207,7 @@ code size: 11
 ; Function #1.2:
 ;
 ; Name:            
-; Defined at line: 32
+; Defined at line: 35
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -218,7 +234,7 @@ code size: 11
 ; Function #1.3:
 ;
 ; Name:            
-; Defined at line: 40
+; Defined at line: 43
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -234,7 +250,7 @@ code size: 11
 ; Function #1.4:
 ;
 ; Name:            
-; Defined at line: 50
+; Defined at line: 53
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -255,7 +271,7 @@ code size: 11
 ; Function #1.4.1:
 ;
 ; Name:            
-; Defined at line: 54
+; Defined at line: 57
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -281,7 +297,7 @@ code size: 11
 ; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 62
+; Defined at line: 65
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -300,39 +316,35 @@ code size: 11
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  12 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mMovie"]
  13 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x302AAB2F"]
- 14 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mRootClipName"]
- 15 [-]: LOADK     R6 K8        ; R6 := ".Backer"
- 16 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 17 [-]: LOADK     R6 K9        ; R6 := "RectEdgeColor"
- 18 [-]: GETTABLE  R7 R2 K10    ; R7 := R2["r"]
- 19 [-]: GETTABLE  R8 R2 K11    ; R8 := R2["g"]
- 20 [-]: GETTABLE  R9 R2 K12    ; R9 := R2["b"]
- 21 [-]: LOADK     R10 K13      ; R10 := 0.80000001192093
- 22 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
- 23 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mMovie"]
- 24 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x302AAB2F"]
- 25 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mRootClipName"]
- 26 [-]: LOADK     R6 K8        ; R6 := ".Backer"
- 27 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 28 [-]: LOADK     R6 K14       ; R6 := "RectInnerColor"
- 29 [-]: GETTABLE  R7 R2 K10    ; R7 := R2["r"]
- 30 [-]: GETTABLE  R8 R2 K11    ; R8 := R2["g"]
- 31 [-]: GETTABLE  R9 R2 K12    ; R9 := R2["b"]
- 32 [-]: LOADK     R10 K13      ; R10 := 0.80000001192093
- 33 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
- 34 [-]: GETTABLE  R3 R0 K15    ; R3 := R0["mMainButton"]
- 35 [-]: SELF      R3 R3 K16    ; R4 := R3; R3 := R3["0x15ED7700"]
- 36 [-]: CALL      R3 2 1       ; R3(R4)
- 37 [-]: SELF      R3 R0 K17    ; R4 := R0; R3 := R0["0x9D2060CB"]
- 38 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.5.1)
- 39 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 40 [-]: RETURN    R0 1         ; return 
+ 14 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mHitboxClipName"]
+ 15 [-]: LOADK     R6 K8        ; R6 := "RectEdgeColor"
+ 16 [-]: GETTABLE  R7 R2 K9     ; R7 := R2["r"]
+ 17 [-]: GETTABLE  R8 R2 K10    ; R8 := R2["g"]
+ 18 [-]: GETTABLE  R9 R2 K11    ; R9 := R2["b"]
+ 19 [-]: LOADK     R10 K12      ; R10 := 0.80000001192093
+ 20 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
+ 21 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["mMovie"]
+ 22 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x302AAB2F"]
+ 23 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["mHitboxClipName"]
+ 24 [-]: LOADK     R6 K13       ; R6 := "RectInnerColor"
+ 25 [-]: GETTABLE  R7 R2 K9     ; R7 := R2["r"]
+ 26 [-]: GETTABLE  R8 R2 K10    ; R8 := R2["g"]
+ 27 [-]: GETTABLE  R9 R2 K11    ; R9 := R2["b"]
+ 28 [-]: LOADK     R10 K12      ; R10 := 0.80000001192093
+ 29 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
+ 30 [-]: GETTABLE  R3 R0 K14    ; R3 := R0["mMainButton"]
+ 31 [-]: SELF      R3 R3 K15    ; R4 := R3; R3 := R3["0x15ED7700"]
+ 32 [-]: CALL      R3 2 1       ; R3(R4)
+ 33 [-]: SELF      R3 R0 K16    ; R4 := R0; R3 := R0["0x9D2060CB"]
+ 34 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1.5.1)
+ 35 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 36 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.5.1:
 ;
 ; Name:            
-; Defined at line: 70
+; Defined at line: 73
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -357,7 +369,7 @@ code size: 11
 ; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 78
+; Defined at line: 81
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -371,7 +383,7 @@ code size: 11
 ; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 83
+; Defined at line: 86
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -393,68 +405,66 @@ code size: 11
  14 [-]: MOVE      R5 R0        ; R5 := R0
  15 [-]: MOVE      R6 R2        ; R6 := R2
  16 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 17 [-]: TEST      R1 0         ; if not R1 then PC := 40
- 18 [-]: JMP       40           ; PC := 40
+ 17 [-]: TEST      R1 0         ; if not R1 then PC := 35
+ 18 [-]: JMP       35           ; PC := 35
  19 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
- 20 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x880196A7"]
- 21 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mRootClipName"]
- 22 [-]: LOADK     R7 K9        ; R7 := "Backer"
- 23 [-]: LOADK     R8 K10       ; R8 := "_width"
- 24 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mWidth"]
- 25 [-]: ADD       R9 R9 K12    ; R9 := R9 + 2
- 26 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
- 27 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
- 28 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x880196A7"]
- 29 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mRootClipName"]
- 30 [-]: LOADK     R7 K9        ; R7 := "Backer"
- 31 [-]: LOADK     R8 K13       ; R8 := "_height"
- 32 [-]: GETTABLE  R9 R0 K14    ; R9 := R0["mForcedVerticalSeparation"]
- 33 [-]: GETTABLE  R10 R0 K15   ; R10 := R0["mElements"]
- 34 [-]: LEN       R10 R10      ; R10 := # R10
- 35 [-]: ADD       R10 R10 K16  ; R10 := R10 + 1
- 36 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 37 [-]: ADD       R9 R9 K12    ; R9 := R9 + 2
- 38 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
- 39 [-]: JMP       43           ; PC := 43
- 40 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
- 41 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4["0x9AD4043"]
- 42 [-]: CALL      R4 2 1       ; R4(R5)
- 43 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
- 44 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x880196A7"]
- 45 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mRootClipName"]
- 46 [-]: LOADK     R7 K18       ; R7 := "MainButton.Icon"
- 47 [-]: LOADK     R8 K19       ; R8 := "_rotation"
- 48 [-]: GETTABLE  R9 R0 K1     ; R9 := R0["UTIL"]
- 49 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["0xF81722A2"]
- 50 [-]: MOVE      R10 R1       ; R10 := R1
- 51 [-]: LOADK     R11 K20      ; R11 := 180
- 52 [-]: LOADK     R12 K21      ; R12 := 0
- 53 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
- 54 [-]: CALL      R4 0 1       ; R4(R5,...)
- 55 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
- 56 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x880196A7"]
- 57 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mRootClipName"]
- 58 [-]: LOADK     R7 K22       ; R7 := "Buttons"
- 59 [-]: LOADK     R8 K23       ; R8 := "_visible"
- 60 [-]: MOVE      R9 R1        ; R9 := R1
- 61 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
- 62 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
- 63 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x880196A7"]
- 64 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mRootClipName"]
- 65 [-]: LOADK     R7 K9        ; R7 := "Backer"
- 66 [-]: LOADK     R8 K23       ; R8 := "_visible"
- 67 [-]: MOVE      R9 R1        ; R9 := R1
- 68 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
- 69 [-]: SELF      R4 R0 K24    ; R5 := R0; R4 := R0["0x15ED7700"]
- 70 [-]: CALL      R4 2 1       ; R4(R5)
- 71 [-]: RETURN    R0 1         ; return 
+ 20 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x1C19D966"]
+ 21 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mHitboxClipName"]
+ 22 [-]: LOADK     R7 K9        ; R7 := "_width"
+ 23 [-]: GETTABLE  R8 R0 K10    ; R8 := R0["mWidth"]
+ 24 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 25 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
+ 26 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x1C19D966"]
+ 27 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mHitboxClipName"]
+ 28 [-]: LOADK     R7 K11       ; R7 := "_height"
+ 29 [-]: GETTABLE  R8 R0 K12    ; R8 := R0["mForcedVerticalSeparation"]
+ 30 [-]: GETTABLE  R9 R0 K13    ; R9 := R0["mElements"]
+ 31 [-]: LEN       R9 R9        ; R9 := # R9
+ 32 [-]: MUL       R8 R8 R9     ; R8 := R8 * R9
+ 33 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 34 [-]: JMP       38           ; PC := 38
+ 35 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
+ 36 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4["0x9AD4043"]
+ 37 [-]: CALL      R4 2 1       ; R4(R5)
+ 38 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
+ 39 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4["0x880196A7"]
+ 40 [-]: GETTABLE  R6 R0 K16    ; R6 := R0["mRootClipName"]
+ 41 [-]: LOADK     R7 K17       ; R7 := "MainButton.Icon"
+ 42 [-]: LOADK     R8 K18       ; R8 := "_rotation"
+ 43 [-]: GETTABLE  R9 R0 K1     ; R9 := R0["UTIL"]
+ 44 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["0xF81722A2"]
+ 45 [-]: GETTABLE  R10 R0 K19   ; R10 := R0["mMainButton"]
+ 46 [-]: GETTABLE  R10 R10 K20  ; R10 := R10["mFlipExpandedIcon"]
+ 47 [-]: TEST      R10 0        ; if not R10 then PC := 50
+ 48 [-]: JMP       50           ; PC := 50
+ 49 [-]: MOVE      R10 R1       ; R10 := R1
+ 50 [-]: LOADK     R11 K21      ; R11 := 180
+ 51 [-]: LOADK     R12 K22      ; R12 := 0
+ 52 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+ 53 [-]: CALL      R4 0 1       ; R4(R5,...)
+ 54 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
+ 55 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4["0x880196A7"]
+ 56 [-]: GETTABLE  R6 R0 K16    ; R6 := R0["mRootClipName"]
+ 57 [-]: LOADK     R7 K23       ; R7 := "Buttons"
+ 58 [-]: LOADK     R8 K24       ; R8 := "_visible"
+ 59 [-]: MOVE      R9 R1        ; R9 := R1
+ 60 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+ 61 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["mMovie"]
+ 62 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x1C19D966"]
+ 63 [-]: GETTABLE  R6 R0 K8     ; R6 := R0["mHitboxClipName"]
+ 64 [-]: LOADK     R7 K24       ; R7 := "_visible"
+ 65 [-]: MOVE      R8 R1        ; R8 := R1
+ 66 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 67 [-]: SELF      R4 R0 K25    ; R5 := R0; R4 := R0["0x15ED7700"]
+ 68 [-]: CALL      R4 2 1       ; R4(R5)
+ 69 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 106
-; #Upvalues:       0
+; Defined at line: 109
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  9
@@ -478,36 +488,40 @@ code size: 11
  17 [-]: SETTABLE  R8 K7 R3     ; R8["SELECTION"] := R3
  18 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
  19 [-]: MOVE      R3 R4        ; R3 := R4
- 20 [-]: EQ        1 R2 K0      ; if R2 == nil then PC := 29
- 21 [-]: JMP       29           ; PC := 29
- 22 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["mButton"]
- 23 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 29
- 24 [-]: JMP       29           ; PC := 29
- 25 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["mButton"]
- 26 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x303032DF"]
- 27 [-]: MOVE      R6 R0        ; R6 := R0
- 28 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 29 [-]: GETTABLE  R4 R1 K8     ; R4 := R1["mButton"]
- 30 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 36
- 31 [-]: JMP       36           ; PC := 36
- 32 [-]: GETTABLE  R4 R1 K8     ; R4 := R1["mButton"]
- 33 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x303032DF"]
- 34 [-]: MOVE      R6 R1        ; R6 := R1
- 35 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 36 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["mMainButton"]
- 37 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0x81976046"]
- 38 [-]: MOVE      R6 R3        ; R6 := R3
+ 20 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 21 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["mSelectedIconOnly"]
+ 22 [-]: TEST      R4 0         ; if not R4 then PC := 40
+ 23 [-]: JMP       40           ; PC := 40
+ 24 [-]: EQ        1 R2 K0      ; if R2 == nil then PC := 33
+ 25 [-]: JMP       33           ; PC := 33
+ 26 [-]: GETTABLE  R4 R2 K9     ; R4 := R2["mButton"]
+ 27 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 33
+ 28 [-]: JMP       33           ; PC := 33
+ 29 [-]: GETTABLE  R4 R2 K9     ; R4 := R2["mButton"]
+ 30 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0x303032DF"]
+ 31 [-]: MOVE      R6 R0        ; R6 := R0
+ 32 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 33 [-]: GETTABLE  R4 R1 K9     ; R4 := R1["mButton"]
+ 34 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 40
+ 35 [-]: JMP       40           ; PC := 40
+ 36 [-]: GETTABLE  R4 R1 K9     ; R4 := R1["mButton"]
+ 37 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0x303032DF"]
+ 38 [-]: MOVE      R6 R1        ; R6 := R1
  39 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 40 [-]: SELF      R4 R0 K12    ; R5 := R0; R4 := R0["0x7E30A890"]
- 41 [-]: MOVE      R6 R0        ; R6 := R0
- 42 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 43 [-]: RETURN    R0 1         ; return 
+ 40 [-]: GETTABLE  R4 R0 K11    ; R4 := R0["mMainButton"]
+ 41 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x81976046"]
+ 42 [-]: MOVE      R6 R3        ; R6 := R3
+ 43 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 44 [-]: SELF      R4 R0 K13    ; R5 := R0; R4 := R0["0x7E30A890"]
+ 45 [-]: MOVE      R6 R0        ; R6 := R0
+ 46 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 47 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 133
+; Defined at line: 138
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -538,39 +552,54 @@ code size: 11
  23 [-]: SETTABLE  R3 K11 K12   ; R3["mUnderlineAlpha"] := 0
  24 [-]: GETTABLE  R4 R3 K14    ; R4 := R3["SetFocus"]
  25 [-]: SETTABLE  R3 K13 R4    ; R3["ButtonSetFocus"] := R4
- 26 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1.9.1)
- 27 [-]: MOVE      R0 R3        ; R0 := R3
- 28 [-]: SETTABLE  R3 K14 R4    ; R3["SetFocus"] := R4
- 29 [-]: GETTABLE  R4 R3 K16    ; R4 := R3["Pressed"]
- 30 [-]: SETTABLE  R3 K15 R4    ; R3["ButtonPressed"] := R4
- 31 [-]: CLOSURE   R4 1         ; R4 := closure(Function #1.9.2)
- 32 [-]: MOVE      R0 R3        ; R0 := R3
- 33 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 34 [-]: MOVE      R0 R1        ; R0 := R1
- 35 [-]: SETTABLE  R3 K16 R4    ; R3["Pressed"] := R4
- 36 [-]: SELF      R4 R3 K17    ; R5 := R3; R4 := R3["0x303032DF"]
- 37 [-]: GETTABLE  R6 R0 K18    ; R6 := R0["mSelectedElement"]
- 38 [-]: EQ        1 R6 R1      ; if R6 == R1 then PC := 41
- 39 [-]: JMP       41           ; PC := 41
- 40 [-]: MOVE      R6 R0        ; R6 := R0
- 41 [-]: MOVE      R6 R1        ; R6 := R1
- 42 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 43 [-]: SELF      R4 R3 K19    ; R5 := R3; R4 := R3["0x755CB587"]
- 44 [-]: LOADK     R6 K20       ; R6 := "left"
- 45 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 46 [-]: SELF      R4 R3 K21    ; R5 := R3; R4 := R3["0x881A50F4"]
- 47 [-]: GETTABLE  R6 R0 K22    ; R6 := R0["mWidth"]
- 48 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 49 [-]: SELF      R4 R3 K23    ; R5 := R3; R4 := R3["0x6470BAF4"]
- 50 [-]: CALL      R4 2 1       ; R4(R5)
- 51 [-]: SETTABLE  R1 K24 R3    ; R1["mButton"] := R3
- 52 [-]: RETURN    R0 1         ; return 
+ 26 [-]: SETTABLE  R3 K15 K16   ; R3["mIconDefaultWidth"] := 24.5
+ 27 [-]: SETTABLE  R3 K17 K16   ; R3["mIconDefaultHeight"] := 24.5
+ 28 [-]: SETTABLE  R3 K18 K19   ; R3["mIconSimWidth"] := 32
+ 29 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1.9.1)
+ 30 [-]: MOVE      R0 R3        ; R0 := R3
+ 31 [-]: SETTABLE  R3 K14 R4    ; R3["SetFocus"] := R4
+ 32 [-]: GETTABLE  R4 R3 K21    ; R4 := R3["Pressed"]
+ 33 [-]: SETTABLE  R3 K20 R4    ; R3["ButtonPressed"] := R4
+ 34 [-]: CLOSURE   R4 1         ; R4 := closure(Function #1.9.2)
+ 35 [-]: MOVE      R0 R3        ; R0 := R3
+ 36 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 37 [-]: MOVE      R0 R1        ; R0 := R1
+ 38 [-]: SETTABLE  R3 K21 R4    ; R3["Pressed"] := R4
+ 39 [-]: SETTABLE  R1 K22 R3    ; R1["mButton"] := R3
+ 40 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 41 [-]: GETTABLE  R4 R4 K23    ; R4 := R4["mCustomizeButtonCallback"]
+ 42 [-]: EQ        1 R4 K3      ; if R4 == nil then PC := 48
+ 43 [-]: JMP       48           ; PC := 48
+ 44 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 45 [-]: GETTABLE  R4 R4 K24    ; R4 := R4["0x4B36282F"]
+ 46 [-]: MOVE      R5 R1        ; R5 := R1
+ 47 [-]: CALL      R4 2 1       ; R4(R5)
+ 48 [-]: SELF      R4 R3 K25    ; R5 := R3; R4 := R3["0x303032DF"]
+ 49 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 50 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["mSelectedIconOnly"]
+ 51 [-]: TEST      R6 0         ; if not R6 then PC := 57
+ 52 [-]: JMP       57           ; PC := 57
+ 53 [-]: GETTABLE  R6 R0 K27    ; R6 := R0["mSelectedElement"]
+ 54 [-]: EQ        1 R6 R1      ; if R6 == R1 then PC := 57
+ 55 [-]: JMP       57           ; PC := 57
+ 56 [-]: MOVE      R6 R0        ; R6 := R0
+ 57 [-]: MOVE      R6 R1        ; R6 := R1
+ 58 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 59 [-]: SELF      R4 R3 K28    ; R5 := R3; R4 := R3["0x755CB587"]
+ 60 [-]: LOADK     R6 K29       ; R6 := "left"
+ 61 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 62 [-]: SELF      R4 R3 K30    ; R5 := R3; R4 := R3["0x881A50F4"]
+ 63 [-]: GETTABLE  R6 R0 K31    ; R6 := R0["mWidth"]
+ 64 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 65 [-]: SELF      R4 R3 K32    ; R5 := R3; R4 := R3["0x6470BAF4"]
+ 66 [-]: CALL      R4 2 1       ; R4(R5)
+ 67 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.9.1:
 ;
 ; Name:            
-; Defined at line: 145
+; Defined at line: 153
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -586,7 +615,7 @@ code size: 11
 ; Function #1.9.2:
 ;
 ; Name:            
-; Defined at line: 150
+; Defined at line: 158
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -608,7 +637,7 @@ code size: 11
 ; Function #1.10:
 ;
 ; Name:            
-; Defined at line: 165
+; Defined at line: 178
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -619,88 +648,118 @@ code size: 11
   3 [-]: MOVE      R7 R2        ; R7 := R2
   4 [-]: MOVE      R8 R3        ; R8 := R3
   5 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
-  6 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mMainButton"]
-  7 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4["0x6470BAF4"]
-  8 [-]: CALL      R4 2 1       ; R4(R5)
-  9 [-]: RETURN    R0 1         ; return 
+  6 [-]: SELF      R4 R0 K1     ; R5 := R0; R4 := R0["0x7E30A890"]
+  7 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mExpanded"]
+  8 [-]: CALL      R4 3 1       ; R4(R5,R6)
+  9 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mMainButton"]
+ 10 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0x6470BAF4"]
+ 11 [-]: CALL      R4 2 1       ; R4(R5)
+ 12 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.11:
 ;
 ; Name:            
-; Defined at line: 172
+; Defined at line: 185
 ; #Upvalues:       0
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  12
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := 0xF595ADDE
+  2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mMovie"]
+  3 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0x6B7B470B"]
+  4 [-]: MOVE      R5 R1        ; R5 := R1
+  5 [-]: LOADK     R6 K3        ; R6 := "_screenX"
+  6 [-]: CALL      R3 4 0       ; R3,... := R3(R4,R5,R6)
+  7 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+  8 [-]: GETGLOBAL R3 K0        ; R3 := 0xF595ADDE
+  9 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mMovie"]
+ 10 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4["0x6B7B470B"]
+ 11 [-]: MOVE      R6 R1        ; R6 := R1
+ 12 [-]: LOADK     R7 K4        ; R7 := "_screenY"
+ 13 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
+ 14 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 15 [-]: GETGLOBAL R4 K0        ; R4 := 0xF595ADDE
+ 16 [-]: GETTABLE  R5 R0 K1     ; R5 := R0["mMovie"]
+ 17 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x6B7B470B"]
+ 18 [-]: MOVE      R7 R1        ; R7 := R1
+ 19 [-]: LOADK     R8 K5        ; R8 := "_width"
+ 20 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
+ 21 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+ 22 [-]: GETGLOBAL R5 K0        ; R5 := 0xF595ADDE
+ 23 [-]: GETTABLE  R6 R0 K1     ; R6 := R0["mMovie"]
+ 24 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6["0x6B7B470B"]
+ 25 [-]: MOVE      R8 R1        ; R8 := R1
+ 26 [-]: LOADK     R9 K6        ; R9 := "_height"
+ 27 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
+ 28 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+ 29 [-]: GETGLOBAL R6 K0        ; R6 := 0xF595ADDE
+ 30 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["mMovie"]
+ 31 [-]: SELF      R7 R7 K2     ; R8 := R7; R7 := R7["0x6B7B470B"]
+ 32 [-]: LOADK     R9 K7        ; R9 := "_root"
+ 33 [-]: LOADK     R10 K8       ; R10 := "_xmouse"
+ 34 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
+ 35 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+ 36 [-]: SUB       R6 R6 R2     ; R6 := R6 - R2
+ 37 [-]: GETGLOBAL R7 K0        ; R7 := 0xF595ADDE
+ 38 [-]: GETTABLE  R8 R0 K1     ; R8 := R0["mMovie"]
+ 39 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0x6B7B470B"]
+ 40 [-]: LOADK     R10 K7       ; R10 := "_root"
+ 41 [-]: LOADK     R11 K9       ; R11 := "_ymouse"
+ 42 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+ 43 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 44 [-]: SUB       R7 R7 R3     ; R7 := R7 - R3
+ 45 [-]: LT        1 R6 K10     ; if R6 < 0 then PC := 53
+ 46 [-]: JMP       53           ; PC := 53
+ 47 [-]: LT        1 R4 R6      ; if R4 < R6 then PC := 53
+ 48 [-]: JMP       53           ; PC := 53
+ 49 [-]: LT        1 R7 K10     ; if R7 < 0 then PC := 53
+ 50 [-]: JMP       53           ; PC := 53
+ 51 [-]: LT        0 R5 R7      ; if R5 >= R7 then PC := 54
+ 52 [-]: JMP       54           ; PC := 54
+ 53 [-]: MOVE      R8 R0        ; R8 := R0
+ 54 [-]: MOVE      R8 R1        ; R8 := R1
+ 55 [-]: RETURN    R8 2         ; return R8
+ 56 [-]: RETURN    R0 1         ; return 
+
+
+; Function #1.12:
+;
+; Name:            
+; Defined at line: 200
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  5
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x47F4805A"]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: TEST      R1 1         ; if R1 then PC := 6
   4 [-]: JMP       6            ; PC := 6
   5 [-]: RETURN    R0 1         ; return 
-  6 [-]: GETGLOBAL R1 K1        ; R1 := 0xF595ADDE
-  7 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mMovie"]
-  8 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x6B7B470B"]
-  9 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["mHitboxClipName"]
- 10 [-]: LOADK     R5 K5        ; R5 := "_screenX"
- 11 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
- 12 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 13 [-]: GETGLOBAL R2 K1        ; R2 := 0xF595ADDE
- 14 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
- 15 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0x6B7B470B"]
- 16 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["mHitboxClipName"]
- 17 [-]: LOADK     R6 K6        ; R6 := "_screenY"
- 18 [-]: CALL      R3 4 0       ; R3,... := R3(R4,R5,R6)
- 19 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 20 [-]: GETGLOBAL R3 K1        ; R3 := 0xF595ADDE
- 21 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mMovie"]
- 22 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4["0x6B7B470B"]
- 23 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["mHitboxClipName"]
- 24 [-]: LOADK     R7 K7        ; R7 := "_width"
- 25 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
- 26 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 27 [-]: GETGLOBAL R4 K1        ; R4 := 0xF595ADDE
- 28 [-]: GETTABLE  R5 R0 K2     ; R5 := R0["mMovie"]
- 29 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5["0x6B7B470B"]
- 30 [-]: GETTABLE  R7 R0 K4     ; R7 := R0["mHitboxClipName"]
- 31 [-]: LOADK     R8 K8        ; R8 := "_height"
- 32 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
- 33 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 34 [-]: GETGLOBAL R5 K1        ; R5 := 0xF595ADDE
- 35 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mMovie"]
- 36 [-]: SELF      R6 R6 K3     ; R7 := R6; R6 := R6["0x6B7B470B"]
- 37 [-]: LOADK     R8 K9        ; R8 := "_root"
- 38 [-]: LOADK     R9 K10       ; R9 := "_xmouse"
- 39 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
- 40 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
- 41 [-]: SUB       R5 R5 R1     ; R5 := R5 - R1
- 42 [-]: GETGLOBAL R6 K1        ; R6 := 0xF595ADDE
- 43 [-]: GETTABLE  R7 R0 K2     ; R7 := R0["mMovie"]
- 44 [-]: SELF      R7 R7 K3     ; R8 := R7; R7 := R7["0x6B7B470B"]
- 45 [-]: LOADK     R9 K9        ; R9 := "_root"
- 46 [-]: LOADK     R10 K11      ; R10 := "_ymouse"
- 47 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
- 48 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 49 [-]: SUB       R6 R6 R2     ; R6 := R6 - R2
- 50 [-]: LT        1 R5 K12     ; if R5 < 0 then PC := 58
- 51 [-]: JMP       58           ; PC := 58
- 52 [-]: LT        1 R3 R5      ; if R3 < R5 then PC := 58
- 53 [-]: JMP       58           ; PC := 58
- 54 [-]: LT        1 R6 K12     ; if R6 < 0 then PC := 58
- 55 [-]: JMP       58           ; PC := 58
- 56 [-]: LT        0 R4 R6      ; if R4 >= R6 then PC := 61
- 57 [-]: JMP       61           ; PC := 61
- 58 [-]: SELF      R7 R0 K13    ; R8 := R0; R7 := R0["0x7E30A890"]
- 59 [-]: MOVE      R9 R0        ; R9 := R0
- 60 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 61 [-]: RETURN    R0 1         ; return 
+  6 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0x4629C02C"]
+  7 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mHitboxClipName"]
+  8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+  9 [-]: TEST      R1 1         ; if R1 then PC := 21
+ 10 [-]: JMP       21           ; PC := 21
+ 11 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0x4629C02C"]
+ 12 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 13 [-]: LOADK     R4 K3        ; R4 := ".MainButton.Backer"
+ 14 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
+ 15 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 16 [-]: TEST      R1 1         ; if R1 then PC := 21
+ 17 [-]: JMP       21           ; PC := 21
+ 18 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0["0x7E30A890"]
+ 19 [-]: MOVE      R3 R0        ; R3 := R0
+ 20 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.12:
+; Function #1.13:
 ;
 ; Name:            
-; Defined at line: 194
+; Defined at line: 211
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -722,7 +781,7 @@ code size: 11
  14 [-]: GETTABLE  R3 R2 K5     ; R3 := R2["onKeyUp_MENU_CLICK"]
  15 [-]: EQ        0 R3 K4      ; if R3 ~= nil then PC := 23
  16 [-]: JMP       23           ; PC := 23
- 17 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.12.1)
+ 17 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1.13.1)
  18 [-]: MOVE      R0 R0        ; R0 := R0
  19 [-]: SETTABLE  R2 K5 R3     ; R2["onKeyUp_MENU_CLICK"] := R3
  20 [-]: GETTABLE  R3 R2 K5     ; R3 := R2["onKeyUp_MENU_CLICK"]
@@ -730,17 +789,17 @@ code size: 11
  22 [-]: JMP       29           ; PC := 29
  23 [-]: GETTABLE  R3 R2 K5     ; R3 := R2["onKeyUp_MENU_CLICK"]
  24 [-]: SETTABLE  R2 K3 R3     ; R2["onKeyUp_DROPDOWN_MENU_CLICK"] := R3
- 25 [-]: CLOSURE   R3 1         ; R3 := closure(Function #1.12.2)
+ 25 [-]: CLOSURE   R3 1         ; R3 := closure(Function #1.13.2)
  26 [-]: MOVE      R0 R0        ; R0 := R0
  27 [-]: MOVE      R0 R2        ; R0 := R2
  28 [-]: SETTABLE  R2 K5 R3     ; R2["onKeyUp_MENU_CLICK"] := R3
  29 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.12.1:
+; Function #1.13.1:
 ;
 ; Name:            
-; Defined at line: 206
+; Defined at line: 223
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -752,10 +811,10 @@ code size: 11
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.12.2:
+; Function #1.13.2:
 ;
 ; Name:            
-; Defined at line: 213
+; Defined at line: 230
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0

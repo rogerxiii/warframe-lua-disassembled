@@ -1,4 +1,4 @@
-code size: 183
+code size: 182
 code size: 3
 code size: 4
 code size: 34
@@ -23,32 +23,32 @@ code size: 3
 code size: 4
 code size: 48
 code size: 3
-code size: 60
+code size: 54
 code size: 50
 code size: 53
-code size: 168
+code size: 159
 code size: 11
 code size: 6
-code size: 337
+code size: 336
 code size: 224
 code size: 197
 code size: 99
 code size: 26
-code size: 55
+code size: 60
 code size: 11
 code size: 12
 code size: 12
 code size: 15
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\QuestPicker.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\QuestPicker.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  42
+; Max Stack Size:  41
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
@@ -84,55 +84,55 @@ code size: 3
  32 [-]: LOADNIL   R24 R24      ; R24 := nil
  33 [-]: MOVE      R25 R1       ; R25 := R1
  34 [-]: MOVE      R26 R0       ; R26 := R0
- 35 [-]: LOADNIL   R27 R29      ; R27 := R28 := R29 := nil
- 36 [-]: CLOSURE   R30 0        ; R30 := closure(Function #1)
+ 35 [-]: LOADNIL   R27 R28      ; R27 := R28 := nil
+ 36 [-]: CLOSURE   R29 0        ; R29 := closure(Function #1)
  37 [-]: MOVE      R0 R7        ; R0 := R7
- 38 [-]: SETGLOBAL R30 K8       ; IsInputBlocked := R30
- 39 [-]: SETGLOBAL R30 K9       ; 0x6FE7E740 := R30
- 40 [-]: CLOSURE   R30 1        ; R30 := closure(Function #2)
+ 38 [-]: SETGLOBAL R29 K8       ; IsInputBlocked := R29
+ 39 [-]: SETGLOBAL R29 K9       ; 0x6FE7E740 := R29
+ 40 [-]: CLOSURE   R29 1        ; R29 := closure(Function #2)
  41 [-]: MOVE      R0 R12       ; R0 := R12
- 42 [-]: SETGLOBAL R30 K10      ; SetTrigger := R30
- 43 [-]: SETGLOBAL R30 K11      ; 0x3F956A34 := R30
- 44 [-]: CLOSURE   R30 2        ; R30 := closure(Function #3)
+ 42 [-]: SETGLOBAL R29 K10      ; SetTrigger := R29
+ 43 [-]: SETGLOBAL R29 K11      ; 0x3F956A34 := R29
+ 44 [-]: CLOSURE   R29 2        ; R29 := closure(Function #3)
  45 [-]: MOVE      R0 R7        ; R0 := R7
  46 [-]: MOVE      R0 R0        ; R0 := R0
- 47 [-]: CLOSURE   R31 3        ; R31 := closure(Function #4)
+ 47 [-]: CLOSURE   R30 3        ; R30 := closure(Function #4)
  48 [-]: MOVE      R0 R23       ; R0 := R23
- 49 [-]: MOVE      R0 R30       ; R0 := R30
+ 49 [-]: MOVE      R0 R29       ; R0 := R29
  50 [-]: MOVE      R0 R1        ; R0 := R1
  51 [-]: MOVE      R0 R18       ; R0 := R18
- 52 [-]: CLOSURE   R32 4        ; R32 := closure(Function #5)
+ 52 [-]: CLOSURE   R31 4        ; R31 := closure(Function #5)
  53 [-]: MOVE      R0 R21       ; R0 := R21
  54 [-]: MOVE      R0 R0        ; R0 := R0
  55 [-]: MOVE      R0 R26       ; R0 := R26
  56 [-]: MOVE      R0 R9        ; R0 := R9
- 57 [-]: MOVE      R0 R29       ; R0 := R29
- 58 [-]: MOVE      R0 R32       ; R0 := R32
+ 57 [-]: MOVE      R0 R28       ; R0 := R28
+ 58 [-]: MOVE      R0 R31       ; R0 := R31
  59 [-]: MOVE      R0 R25       ; R0 := R25
- 60 [-]: CLOSURE   R33 5        ; R33 := closure(Function #6)
+ 60 [-]: CLOSURE   R32 5        ; R32 := closure(Function #6)
  61 [-]: MOVE      R0 R21       ; R0 := R21
  62 [-]: MOVE      R0 R22       ; R0 := R22
  63 [-]: MOVE      R0 R25       ; R0 := R25
- 64 [-]: MOVE      R0 R31       ; R0 := R31
- 65 [-]: MOVE      R0 R32       ; R0 := R32
+ 64 [-]: MOVE      R0 R30       ; R0 := R30
+ 65 [-]: MOVE      R0 R31       ; R0 := R31
  66 [-]: MOVE      R0 R0        ; R0 := R0
  67 [-]: MOVE      R0 R12       ; R0 := R12
- 68 [-]: CLOSURE   R34 6        ; R34 := closure(Function #7)
- 69 [-]: MOVE      R0 R33       ; R0 := R33
- 70 [-]: SETGLOBAL R34 K12      ; Close := R34
- 71 [-]: SETGLOBAL R34 K13      ; 0xA58BB96C := R34
- 72 [-]: CLOSURE   R34 7        ; R34 := closure(Function #8)
+ 68 [-]: CLOSURE   R33 6        ; R33 := closure(Function #7)
+ 69 [-]: MOVE      R0 R32       ; R0 := R32
+ 70 [-]: SETGLOBAL R33 K12      ; Close := R33
+ 71 [-]: SETGLOBAL R33 K13      ; 0xA58BB96C := R33
+ 72 [-]: CLOSURE   R33 7        ; R33 := closure(Function #8)
  73 [-]: MOVE      R0 R15       ; R0 := R15
  74 [-]: MOVE      R0 R2        ; R0 := R2
- 75 [-]: CLOSURE   R35 8        ; R35 := closure(Function #9)
- 76 [-]: MOVE      R0 R33       ; R0 := R33
+ 75 [-]: CLOSURE   R34 8        ; R34 := closure(Function #9)
+ 76 [-]: MOVE      R0 R32       ; R0 := R32
  77 [-]: MOVE      R0 R0        ; R0 := R0
- 78 [-]: SETGLOBAL R35 K14      ; OnActiveQuestSet := R35
- 79 [-]: SETGLOBAL R35 K15      ; 0xC9FFD1CC := R35
- 80 [-]: CLOSURE   R35 9        ; R35 := closure(Function #10)
+ 78 [-]: SETGLOBAL R34 K14      ; OnActiveQuestSet := R34
+ 79 [-]: SETGLOBAL R34 K15      ; 0xC9FFD1CC := R34
+ 80 [-]: CLOSURE   R34 9        ; R34 := closure(Function #10)
  81 [-]: MOVE      R0 R19       ; R0 := R19
  82 [-]: MOVE      R0 R0        ; R0 := R0
- 83 [-]: CLOSURE   R36 10       ; R36 := closure(Function #11)
+ 83 [-]: CLOSURE   R35 10       ; R35 := closure(Function #11)
  84 [-]: MOVE      R0 R1        ; R0 := R1
  85 [-]: MOVE      R0 R0        ; R0 := R0
  86 [-]: MOVE      R0 R8        ; R0 := R8
@@ -140,105 +140,104 @@ code size: 3
  88 [-]: MOVE      R0 R20       ; R0 := R20
  89 [-]: MOVE      R0 R10       ; R0 := R10
  90 [-]: MOVE      R0 R3        ; R0 := R3
- 91 [-]: CLOSURE   R37 11       ; R37 := closure(Function #12)
+ 91 [-]: CLOSURE   R36 11       ; R36 := closure(Function #12)
  92 [-]: MOVE      R0 R7        ; R0 := R7
- 93 [-]: MOVE      R0 R28       ; R0 := R28
- 94 [-]: CLOSURE   R38 12       ; R38 := closure(Function #13)
- 95 [-]: MOVE      R0 R1        ; R0 := R1
- 96 [-]: MOVE      R0 R37       ; R0 := R37
- 97 [-]: MOVE      R0 R36       ; R0 := R36
- 98 [-]: MOVE      R0 R23       ; R0 := R23
- 99 [-]: MOVE      R0 R24       ; R0 := R24
-100 [-]: MOVE      R0 R14       ; R0 := R14
-101 [-]: MOVE      R0 R22       ; R0 := R22
-102 [-]: CLOSURE   R39 13       ; R39 := closure(Function #14)
-103 [-]: MOVE      R0 R9        ; R0 := R9
-104 [-]: MOVE      R0 R0        ; R0 := R0
-105 [-]: MOVE      R0 R2        ; R0 := R2
-106 [-]: MOVE      R0 R23       ; R0 := R23
-107 [-]: MOVE      R0 R24       ; R0 := R24
-108 [-]: MOVE      R0 R22       ; R0 := R22
-109 [-]: MOVE      R0 R38       ; R0 := R38
-110 [-]: MOVE      R0 R1        ; R0 := R1
-111 [-]: MOVE      R0 R33       ; R0 := R33
-112 [-]: MOVE      R0 R4        ; R0 := R4
-113 [-]: MOVE      R0 R13       ; R0 := R13
-114 [-]: MOVE      R0 R15       ; R0 := R15
-115 [-]: CLOSURE   R29 14       ; R29 := closure(Function #15)
-116 [-]: MOVE      R0 R10       ; R0 := R10
-117 [-]: MOVE      R0 R1        ; R0 := R1
-118 [-]: MOVE      R0 R9        ; R0 := R9
-119 [-]: MOVE      R0 R26       ; R0 := R26
-120 [-]: CLOSURE   R40 15       ; R40 := closure(Function #16)
-121 [-]: MOVE      R0 R0        ; R0 := R0
-122 [-]: MOVE      R0 R13       ; R0 := R13
-123 [-]: MOVE      R0 R27       ; R0 := R27
-124 [-]: MOVE      R0 R10       ; R0 := R10
-125 [-]: MOVE      R0 R17       ; R0 := R17
-126 [-]: MOVE      R0 R16       ; R0 := R16
-127 [-]: MOVE      R0 R35       ; R0 := R35
-128 [-]: MOVE      R0 R34       ; R0 := R34
-129 [-]: MOVE      R0 R8        ; R0 := R8
-130 [-]: MOVE      R0 R5        ; R0 := R5
-131 [-]: MOVE      R0 R18       ; R0 := R18
-132 [-]: MOVE      R0 R22       ; R0 := R22
-133 [-]: MOVE      R0 R6        ; R0 := R6
-134 [-]: MOVE      R0 R39       ; R0 := R39
-135 [-]: MOVE      R0 R29       ; R0 := R29
-136 [-]: MOVE      R0 R32       ; R0 := R32
-137 [-]: MOVE      R0 R7        ; R0 := R7
-138 [-]: SETGLOBAL R40 K16      ; Initialize := R40
-139 [-]: SETGLOBAL R40 K17      ; 0x62648036 := R40
-140 [-]: CLOSURE   R40 16       ; R40 := closure(Function #17)
-141 [-]: MOVE      R0 R22       ; R0 := R22
-142 [-]: MOVE      R0 R27       ; R0 := R27
-143 [-]: MOVE      R0 R23       ; R0 := R23
-144 [-]: MOVE      R0 R24       ; R0 := R24
-145 [-]: MOVE      R0 R25       ; R0 := R25
-146 [-]: MOVE      R0 R14       ; R0 := R14
-147 [-]: MOVE      R0 R21       ; R0 := R21
+ 93 [-]: MOVE      R0 R27       ; R0 := R27
+ 94 [-]: CLOSURE   R37 12       ; R37 := closure(Function #13)
+ 95 [-]: MOVE      R0 R36       ; R0 := R36
+ 96 [-]: MOVE      R0 R35       ; R0 := R35
+ 97 [-]: MOVE      R0 R23       ; R0 := R23
+ 98 [-]: MOVE      R0 R24       ; R0 := R24
+ 99 [-]: MOVE      R0 R14       ; R0 := R14
+100 [-]: MOVE      R0 R22       ; R0 := R22
+101 [-]: CLOSURE   R38 13       ; R38 := closure(Function #14)
+102 [-]: MOVE      R0 R9        ; R0 := R9
+103 [-]: MOVE      R0 R0        ; R0 := R0
+104 [-]: MOVE      R0 R2        ; R0 := R2
+105 [-]: MOVE      R0 R23       ; R0 := R23
+106 [-]: MOVE      R0 R24       ; R0 := R24
+107 [-]: MOVE      R0 R22       ; R0 := R22
+108 [-]: MOVE      R0 R37       ; R0 := R37
+109 [-]: MOVE      R0 R1        ; R0 := R1
+110 [-]: MOVE      R0 R32       ; R0 := R32
+111 [-]: MOVE      R0 R4        ; R0 := R4
+112 [-]: MOVE      R0 R13       ; R0 := R13
+113 [-]: MOVE      R0 R15       ; R0 := R15
+114 [-]: CLOSURE   R28 14       ; R28 := closure(Function #15)
+115 [-]: MOVE      R0 R10       ; R0 := R10
+116 [-]: MOVE      R0 R1        ; R0 := R1
+117 [-]: MOVE      R0 R9        ; R0 := R9
+118 [-]: MOVE      R0 R26       ; R0 := R26
+119 [-]: CLOSURE   R39 15       ; R39 := closure(Function #16)
+120 [-]: MOVE      R0 R0        ; R0 := R0
+121 [-]: MOVE      R0 R13       ; R0 := R13
+122 [-]: MOVE      R0 R11       ; R0 := R11
+123 [-]: MOVE      R0 R10       ; R0 := R10
+124 [-]: MOVE      R0 R17       ; R0 := R17
+125 [-]: MOVE      R0 R16       ; R0 := R16
+126 [-]: MOVE      R0 R34       ; R0 := R34
+127 [-]: MOVE      R0 R33       ; R0 := R33
+128 [-]: MOVE      R0 R8        ; R0 := R8
+129 [-]: MOVE      R0 R5        ; R0 := R5
+130 [-]: MOVE      R0 R18       ; R0 := R18
+131 [-]: MOVE      R0 R22       ; R0 := R22
+132 [-]: MOVE      R0 R6        ; R0 := R6
+133 [-]: MOVE      R0 R38       ; R0 := R38
+134 [-]: MOVE      R0 R28       ; R0 := R28
+135 [-]: MOVE      R0 R31       ; R0 := R31
+136 [-]: MOVE      R0 R7        ; R0 := R7
+137 [-]: SETGLOBAL R39 K16      ; Initialize := R39
+138 [-]: SETGLOBAL R39 K17      ; 0x62648036 := R39
+139 [-]: CLOSURE   R39 16       ; R39 := closure(Function #17)
+140 [-]: MOVE      R0 R22       ; R0 := R22
+141 [-]: MOVE      R0 R11       ; R0 := R11
+142 [-]: MOVE      R0 R23       ; R0 := R23
+143 [-]: MOVE      R0 R24       ; R0 := R24
+144 [-]: MOVE      R0 R25       ; R0 := R25
+145 [-]: MOVE      R0 R14       ; R0 := R14
+146 [-]: MOVE      R0 R21       ; R0 := R21
+147 [-]: MOVE      R0 R30       ; R0 := R30
 148 [-]: MOVE      R0 R31       ; R0 := R31
 149 [-]: MOVE      R0 R32       ; R0 := R32
-150 [-]: MOVE      R0 R33       ; R0 := R33
-151 [-]: CLOSURE   R41 17       ; R41 := closure(Function #18)
-152 [-]: MOVE      R0 R13       ; R0 := R13
-153 [-]: MOVE      R0 R40       ; R0 := R40
-154 [-]: MOVE      R0 R27       ; R0 := R27
-155 [-]: SETGLOBAL R41 K18      ; Update := R41
-156 [-]: SETGLOBAL R41 K19      ; 0x8C7099E9 := R41
-157 [-]: CLOSURE   R41 18       ; R41 := closure(Function #19)
-158 [-]: MOVE      R0 R16       ; R0 := R16
-159 [-]: MOVE      R0 R28       ; R0 := R28
-160 [-]: MOVE      R0 R17       ; R0 := R17
-161 [-]: SETGLOBAL R41 K20      ; Shutdown := R41
-162 [-]: SETGLOBAL R41 K21      ; 0x3C577FA3 := R41
-163 [-]: CLOSURE   R41 19       ; R41 := closure(Function #20)
-164 [-]: MOVE      R0 R8        ; R0 := R8
-165 [-]: SETGLOBAL R41 K22      ; onViewportSizeChanged := R41
-166 [-]: SETGLOBAL R41 K23      ; 0x3A900427 := R41
-167 [-]: CLOSURE   R41 20       ; R41 := closure(Function #21)
-168 [-]: MOVE      R0 R9        ; R0 := R9
-169 [-]: SETGLOBAL R41 K24      ; QuestFocused := R41
-170 [-]: SETGLOBAL R41 K25      ; 0xB772F921 := R41
-171 [-]: CLOSURE   R41 21       ; R41 := closure(Function #22)
-172 [-]: MOVE      R0 R9        ; R0 := R9
-173 [-]: SETGLOBAL R41 K26      ; QuestUnfocused := R41
-174 [-]: SETGLOBAL R41 K27      ; 0xC3778563 := R41
-175 [-]: CLOSURE   R41 22       ; R41 := closure(Function #23)
-176 [-]: MOVE      R0 R7        ; R0 := R7
-177 [-]: MOVE      R0 R9        ; R0 := R9
-178 [-]: SETGLOBAL R41 K28      ; QuestPressed := R41
-179 [-]: SETGLOBAL R41 K29      ; 0xFAF12B0E := R41
-180 [-]: CLOSURE   R41 23       ; R41 := closure(Function #24)
-181 [-]: SETGLOBAL R41 K30      ; SupportsThemes := R41
-182 [-]: SETGLOBAL R41 K31      ; 0xDBE73B9E := R41
-183 [-]: RETURN    R0 1         ; return 
+150 [-]: CLOSURE   R40 17       ; R40 := closure(Function #18)
+151 [-]: MOVE      R0 R13       ; R0 := R13
+152 [-]: MOVE      R0 R39       ; R0 := R39
+153 [-]: MOVE      R0 R11       ; R0 := R11
+154 [-]: SETGLOBAL R40 K18      ; Update := R40
+155 [-]: SETGLOBAL R40 K19      ; 0x8C7099E9 := R40
+156 [-]: CLOSURE   R40 18       ; R40 := closure(Function #19)
+157 [-]: MOVE      R0 R16       ; R0 := R16
+158 [-]: MOVE      R0 R27       ; R0 := R27
+159 [-]: MOVE      R0 R17       ; R0 := R17
+160 [-]: SETGLOBAL R40 K20      ; Shutdown := R40
+161 [-]: SETGLOBAL R40 K21      ; 0x3C577FA3 := R40
+162 [-]: CLOSURE   R40 19       ; R40 := closure(Function #20)
+163 [-]: MOVE      R0 R8        ; R0 := R8
+164 [-]: SETGLOBAL R40 K22      ; onViewportSizeChanged := R40
+165 [-]: SETGLOBAL R40 K23      ; 0x3A900427 := R40
+166 [-]: CLOSURE   R40 20       ; R40 := closure(Function #21)
+167 [-]: MOVE      R0 R9        ; R0 := R9
+168 [-]: SETGLOBAL R40 K24      ; QuestFocused := R40
+169 [-]: SETGLOBAL R40 K25      ; 0xB772F921 := R40
+170 [-]: CLOSURE   R40 21       ; R40 := closure(Function #22)
+171 [-]: MOVE      R0 R9        ; R0 := R9
+172 [-]: SETGLOBAL R40 K26      ; QuestUnfocused := R40
+173 [-]: SETGLOBAL R40 K27      ; 0xC3778563 := R40
+174 [-]: CLOSURE   R40 22       ; R40 := closure(Function #23)
+175 [-]: MOVE      R0 R7        ; R0 := R7
+176 [-]: MOVE      R0 R9        ; R0 := R9
+177 [-]: SETGLOBAL R40 K28      ; QuestPressed := R40
+178 [-]: SETGLOBAL R40 K29      ; 0xFAF12B0E := R40
+179 [-]: CLOSURE   R40 23       ; R40 := closure(Function #24)
+180 [-]: SETGLOBAL R40 K30      ; SupportsThemes := R40
+181 [-]: SETGLOBAL R40 K31      ; 0xDBE73B9E := R40
+182 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 65
+; Defined at line: 64
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -252,7 +251,7 @@ code size: 3
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 69
+; Defined at line: 68
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -267,7 +266,7 @@ code size: 3
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 74
+; Defined at line: 73
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -312,7 +311,7 @@ code size: 3
 ; Function #3.1:
 ;
 ; Name:            
-; Defined at line: 79
+; Defined at line: 78
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -335,7 +334,7 @@ code size: 3
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 87
+; Defined at line: 86
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -481,7 +480,7 @@ code size: 3
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 128
+; Defined at line: 127
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -547,7 +546,7 @@ code size: 3
 ; Function #5.1:
 ;
 ; Name:            
-; Defined at line: 132
+; Defined at line: 131
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -571,7 +570,7 @@ code size: 3
 ; Function #5.2:
 ;
 ; Name:            
-; Defined at line: 141
+; Defined at line: 140
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -588,7 +587,7 @@ code size: 3
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 147
+; Defined at line: 146
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -685,7 +684,7 @@ code size: 3
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 185
+; Defined at line: 184
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -699,7 +698,7 @@ code size: 3
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 189
+; Defined at line: 188
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -771,7 +770,7 @@ code size: 3
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 201
+; Defined at line: 200
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -792,7 +791,7 @@ code size: 3
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 209
+; Defined at line: 208
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -918,7 +917,7 @@ code size: 3
 ; Function #10.1:
 ;
 ; Name:            
-; Defined at line: 213
+; Defined at line: 212
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1001,7 +1000,7 @@ code size: 3
 ; Function #10.2:
 ;
 ; Name:            
-; Defined at line: 244
+; Defined at line: 243
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1112,7 +1111,7 @@ code size: 3
 ; Function #10.3:
 ;
 ; Name:            
-; Defined at line: 266
+; Defined at line: 265
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1155,7 +1154,7 @@ code size: 3
 ; Function #10.4:
 ;
 ; Name:            
-; Defined at line: 277
+; Defined at line: 276
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1186,7 +1185,7 @@ code size: 3
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 289
+; Defined at line: 288
 ; #Upvalues:       7
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1722,7 +1721,7 @@ code size: 3
 ; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 352
+; Defined at line: 351
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1750,7 +1749,7 @@ code size: 3
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 432
+; Defined at line: 431
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1791,7 +1790,7 @@ code size: 3
 ; Function #12.1:
 ;
 ; Name:            
-; Defined at line: 436
+; Defined at line: 435
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1805,7 +1804,7 @@ code size: 3
 ; Function #12.2:
 ;
 ; Name:            
-; Defined at line: 440
+; Defined at line: 439
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1820,7 +1819,7 @@ code size: 3
 ; Function #12.3:
 ;
 ; Name:            
-; Defined at line: 444
+; Defined at line: 443
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1879,7 +1878,7 @@ code size: 3
 ; Function #12.3.1:
 ;
 ; Name:            
-; Defined at line: 452
+; Defined at line: 451
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1893,11 +1892,11 @@ code size: 3
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 458
-; #Upvalues:       7
+; Defined at line: 457
+; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETGLOBAL R2 K1        ; R2 := gGameData
@@ -1915,56 +1914,50 @@ code size: 3
  14 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x9E0B3260"]
  15 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
  16 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 17 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 18 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["0x68C19111"]
- 19 [-]: GETGLOBAL R3 K1        ; R3 := gGameData
- 20 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["KeyChain"]
- 21 [-]: MOVE      R5 R0        ; R5 := R0
- 22 [-]: CALL      R2 4 4       ; R2,R3,R4 := R2(R3,R4,R5)
- 23 [-]: GETTABLE  R5 R0 K6     ; R5 := R0["Completed"]
- 24 [-]: TEST      R5 0         ; if not R5 then PC := 30
- 25 [-]: JMP       30           ; PC := 30
- 26 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 27 [-]: MOVE      R6 R0        ; R6 := R0
- 28 [-]: CALL      R5 2 1       ; R5(R6)
- 29 [-]: RETURN    R0 1         ; return 
- 30 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
- 31 [-]: MOVE      R6 R1        ; R6 := R1
- 32 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 33 [-]: TEST      R5 1         ; if R5 then PC := 40
- 34 [-]: JMP       40           ; PC := 40
- 35 [-]: SELF      R5 R1 K7     ; R6 := R1; R5 := R1["0x8B598ED4"]
- 36 [-]: GETGLOBAL R7 K8        ; R7 := gLotusDioramaType
- 37 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 38 [-]: TEST      R5 1         ; if R5 then PC := 41
- 39 [-]: JMP       41           ; PC := 41
- 40 [-]: RETURN    R0 1         ; return 
- 41 [-]: SELF      R5 R1 K9     ; R6 := R1; R5 := R1["0x2855D567"]
- 42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 43 [-]: GETTABLE  R6 R5 K10    ; R6 := R5["level"]
- 44 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 45 [-]: MOVE      R8 R0        ; R8 := R0
- 46 [-]: GETTABLE  R9 R0 K2     ; R9 := R0["KeyChain"]
- 47 [-]: MOVE      R10 R0       ; R10 := R0
- 48 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 49 [-]: MOVE      R7 R0        ; R7 := R0
- 50 [-]: MOVE      R7 R3        ; R7 := R3
- 51 [-]: LOADNIL   R7 R7        ; R7 := nil
- 52 [-]: MOVE      R7 R4        ; R7 := R4
- 53 [-]: LOADNIL   R7 R7        ; R7 := nil
- 54 [-]: MOVE      R7 R5        ; R7 := R5
- 55 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 56 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["mDioramaLoader"]
- 57 [-]: SELF      R7 R7 K12    ; R8 := R7; R7 := R7["0xF0BB6DD"]
- 58 [-]: MOVE      R9 R6        ; R9 := R6
- 59 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 60 [-]: RETURN    R0 1         ; return 
+ 17 [-]: GETTABLE  R2 R0 K5     ; R2 := R0["Completed"]
+ 18 [-]: TEST      R2 0         ; if not R2 then PC := 24
+ 19 [-]: JMP       24           ; PC := 24
+ 20 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 21 [-]: MOVE      R3 R0        ; R3 := R0
+ 22 [-]: CALL      R2 2 1       ; R2(R3)
+ 23 [-]: RETURN    R0 1         ; return 
+ 24 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 25 [-]: MOVE      R3 R1        ; R3 := R1
+ 26 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 27 [-]: TEST      R2 1         ; if R2 then PC := 34
+ 28 [-]: JMP       34           ; PC := 34
+ 29 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1["0x8B598ED4"]
+ 30 [-]: GETGLOBAL R4 K7        ; R4 := gLotusDioramaType
+ 31 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 32 [-]: TEST      R2 1         ; if R2 then PC := 35
+ 33 [-]: JMP       35           ; PC := 35
+ 34 [-]: RETURN    R0 1         ; return 
+ 35 [-]: SELF      R2 R1 K8     ; R3 := R1; R2 := R1["0x2855D567"]
+ 36 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 37 [-]: GETTABLE  R3 R2 K9     ; R3 := R2["level"]
+ 38 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 39 [-]: MOVE      R5 R0        ; R5 := R0
+ 40 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["KeyChain"]
+ 41 [-]: MOVE      R7 R0        ; R7 := R0
+ 42 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 43 [-]: MOVE      R4 R0        ; R4 := R0
+ 44 [-]: MOVE      R4 R2        ; R4 := R2
+ 45 [-]: LOADNIL   R4 R4        ; R4 := nil
+ 46 [-]: MOVE      R4 R3        ; R4 := R3
+ 47 [-]: LOADNIL   R4 R4        ; R4 := nil
+ 48 [-]: MOVE      R4 R4        ; R4 := R4
+ 49 [-]: GETUPVAL  R4 U5        ; R4 := U5
+ 50 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["mDioramaLoader"]
+ 51 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0xF0BB6DD"]
+ 52 [-]: MOVE      R6 R3        ; R6 := R3
+ 53 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 54 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 486
+; Defined at line: 484
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2025,7 +2018,7 @@ code size: 3
 ; Function #14.1:
 ;
 ; Name:            
-; Defined at line: 493
+; Defined at line: 491
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2089,11 +2082,11 @@ code size: 3
 ; Function #14.2:
 ;
 ; Name:            
-; Defined at line: 502
+; Defined at line: 500
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  14
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Locked"]
   2 [-]: TEST      R1 0         ; if not R1 then PC := 5
@@ -2128,147 +2121,138 @@ code size: 3
  31 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x8B598ED4"]
  32 [-]: GETGLOBAL R3 K9        ; R3 := chimeraKeyChain
  33 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 34 [-]: TEST      R1 0         ; if not R1 then PC := 87
- 35 [-]: JMP       87           ; PC := 87
- 36 [-]: GETGLOBAL R1 K10       ; R1 := gGameData
- 37 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1["0x6F2E05FD"]
- 38 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 39 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0x52C8784B"]
- 40 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 41 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["Completed"]
- 42 [-]: TEST      R2 1         ; if R2 then PC := 168
- 43 [-]: JMP       168          ; PC := 168
- 44 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 45 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["0x2AAC7A8C"]
- 46 [-]: GETGLOBAL R3 K14       ; R3 := sacrificeKeyChain
- 47 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 48 [-]: TEST      R2 0         ; if not R2 then PC := 168
- 49 [-]: JMP       168          ; PC := 168
- 50 [-]: MOVE      R2 R0        ; R2 := R0
- 51 [-]: GETTABLE  R3 R0 K15    ; R3 := R0["QuestStage"]
- 52 [-]: EQ        1 R3 K16     ; if R3 == nil then PC := 60
- 53 [-]: JMP       60           ; PC := 60
- 54 [-]: MOVE      R2 R1        ; R2 := R1
- 55 [-]: GETGLOBAL R3 K10       ; R3 := gGameData
- 56 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3["0x6D450037"]
- 57 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["KeyChain"]
- 58 [-]: LOADK     R6 K18       ; R6 := "OnActiveQuestSet"
- 59 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 60 [-]: GETTABLE  R3 R0 K15    ; R3 := R0["QuestStage"]
- 61 [-]: EQ        1 R3 K16     ; if R3 == nil then PC := 66
- 62 [-]: JMP       66           ; PC := 66
- 63 [-]: GETTABLE  R3 R0 K15    ; R3 := R0["QuestStage"]
- 64 [-]: EQ        0 R3 K19     ; if R3 ~= 1 then PC := 82
- 65 [-]: JMP       82           ; PC := 82
- 66 [-]: GETGLOBAL R3 K20       ; R3 := gRegion
- 67 [-]: SELF      R3 R3 K21    ; R4 := R3; R3 := R3["0x90391273"]
- 68 [-]: GETGLOBAL R5 K22       ; R5 := 0xEC274B1A
- 69 [-]: LOADK     R6 K23       ; R6 := "LotusHelmetMarker"
- 70 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 71 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 72 [-]: GETGLOBAL R4 K1        ; R4 := 0x400E7765
- 73 [-]: MOVE      R5 R3        ; R5 := R3
- 74 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 75 [-]: TEST      R4 1         ; if R4 then PC := 82
- 76 [-]: JMP       82           ; PC := 82
- 77 [-]: SELF      R4 R3 K24    ; R5 := R3; R4 := R3["0xE3B00802"]
- 78 [-]: LOADK     R6 K25       ; R6 := 7
- 79 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 80 [-]: SELF      R4 R3 K26    ; R5 := R3; R4 := R3["0xC5E91BA6"]
- 81 [-]: CALL      R4 2 1       ; R4(R5)
- 82 [-]: TEST      R2 1         ; if R2 then PC := 168
- 83 [-]: JMP       168          ; PC := 168
- 84 [-]: GETUPVAL  R4 U5        ; R4 := U5
- 85 [-]: CALL      R4 1 1       ; R4()
- 86 [-]: JMP       168          ; PC := 168
- 87 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["KeyChain"]
- 88 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x8B598ED4"]
- 89 [-]: GETGLOBAL R6 K27       ; R6 := newWarIntroKeyChain
- 90 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 91 [-]: TEST      R4 0         ; if not R4 then PC := 168
- 92 [-]: JMP       168          ; PC := 168
- 93 [-]: GETGLOBAL R4 K28       ; R4 := _T
- 94 [-]: GETTABLE  R4 R4 K29    ; R4 := R4["GivingNewWarIntro"]
- 95 [-]: TEST      R4 1         ; if R4 then PC := 168
- 96 [-]: JMP       168          ; PC := 168
- 97 [-]: GETUPVAL  R4 U6        ; R4 := U6
- 98 [-]: GETTABLE  R4 R4 K30    ; R4 := R4["0x798B969F"]
- 99 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["KeyChain"]
-100 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-101 [-]: GETGLOBAL R5 K28       ; R5 := _T
-102 [-]: SETTABLE  R5 K29 K31   ; R5["GivingNewWarIntro"] := "0x1"
-103 [-]: GETUPVAL  R5 U6        ; R5 := U6
-104 [-]: GETTABLE  R5 R5 K32    ; R5 := R5["0x6F5A2238"]
-105 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["KeyChain"]
-106 [-]: CALL      R5 2 1       ; R5(R6)
-107 [-]: GETGLOBAL R5 K20       ; R5 := gRegion
-108 [-]: SELF      R5 R5 K33    ; R6 := R5; R5 := R5["0xA76F0612"]
-109 [-]: GETGLOBAL R7 K22       ; R7 := 0xEC274B1A
-110 [-]: LOADK     R8 K34       ; R8 := "LotusHelmet"
-111 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
-112 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
-113 [-]: LOADK     R6 K19       ; R6 := 1
-114 [-]: LEN       R7 R5        ; R7 := # R5
-115 [-]: LOADK     R8 K19       ; R8 := 1
-116 [-]: FORPREP   R6 128       ; R6 -= R8; PC := 128
-117 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
-118 [-]: SELF      R10 R10 K8   ; R11 := R10; R10 := R10["0x8B598ED4"]
-119 [-]: GETGLOBAL R12 K35      ; R12 := helmetWRes
-120 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-121 [-]: TEST      R10 0        ; if not R10 then PC := 128
-122 [-]: JMP       128          ; PC := 128
-123 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
-124 [-]: SELF      R10 R10 K36  ; R11 := R10; R10 := R10["0xAB436EF2"]
-125 [-]: GETGLOBAL R12 K37      ; R12 := introHelmetAttachType
-126 [-]: GETGLOBAL R13 K38      ; R13 := EMPTY_SYMBOL
-127 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-128 [-]: FORLOOP   R6 117       ; R6 += R8; if R6 <= R7 then begin PC := 117; R9 := R6 end
-129 [-]: GETGLOBAL R10 K20      ; R10 := gRegion
-130 [-]: SELF      R10 R10 K21  ; R11 := R10; R10 := R10["0x90391273"]
-131 [-]: GETGLOBAL R12 K22      ; R12 := 0xEC274B1A
-132 [-]: LOADK     R13 K39      ; R13 := "ChimeraAction"
-133 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
-134 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
-135 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
-136 [-]: MOVE      R12 R10      ; R12 := R10
-137 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-138 [-]: TEST      R11 1        ; if R11 then PC := 146
-139 [-]: JMP       146          ; PC := 146
-140 [-]: SELF      R11 R10 K40  ; R12 := R10; R11 := R10["0xB1627322"]
-141 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-142 [-]: TEST      R11 0        ; if not R11 then PC := 146
-143 [-]: JMP       146          ; PC := 146
-144 [-]: SELF      R11 R10 K41  ; R12 := R10; R11 := R10["0x2DB1272F"]
-145 [-]: CALL      R11 2 1      ; R11(R12)
-146 [-]: GETGLOBAL R11 K20      ; R11 := gRegion
-147 [-]: SELF      R11 R11 K21  ; R12 := R11; R11 := R11["0x90391273"]
-148 [-]: GETGLOBAL R13 K22      ; R13 := 0xEC274B1A
-149 [-]: LOADK     R14 K42      ; R14 := "NewWarIntroAction"
-150 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
-151 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
-152 [-]: GETGLOBAL R12 K1       ; R12 := 0x400E7765
-153 [-]: MOVE      R13 R11      ; R13 := R11
-154 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-155 [-]: TEST      R12 1        ; if R12 then PC := 163
-156 [-]: JMP       163          ; PC := 163
-157 [-]: SELF      R12 R11 K26  ; R13 := R11; R12 := R11["0xC5E91BA6"]
-158 [-]: CALL      R12 2 1      ; R12(R13)
-159 [-]: GETGLOBAL R12 K43      ; R12 := 0x94BCBD40
-160 [-]: MOVE      R13 R11      ; R13 := R11
-161 [-]: LOADK     R14 K44      ; R14 := "OnDisabled"
-162 [-]: CALL      R12 3 1      ; R12(R13,R14)
-163 [-]: GETUPVAL  R12 U7       ; R12 := U7
-164 [-]: SELF      R12 R12 K45  ; R13 := R12; R12 := R12["0x61494587"]
-165 [-]: LOADK     R14 K46      ; R14 := 0.15000000596046
-166 [-]: GETUPVAL  R15 U5       ; R15 := U5
-167 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-168 [-]: RETURN    R0 1         ; return 
+ 34 [-]: TEST      R1 0         ; if not R1 then PC := 82
+ 35 [-]: JMP       82           ; PC := 82
+ 36 [-]: GETTABLE  R1 R0 K6     ; R1 := R0["Completed"]
+ 37 [-]: TEST      R1 1         ; if R1 then PC := 159
+ 38 [-]: JMP       159          ; PC := 159
+ 39 [-]: GETUPVAL  R1 U4        ; R1 := U4
+ 40 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["0x2AAC7A8C"]
+ 41 [-]: GETGLOBAL R2 K11       ; R2 := sacrificeKeyChain
+ 42 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 43 [-]: TEST      R1 0         ; if not R1 then PC := 159
+ 44 [-]: JMP       159          ; PC := 159
+ 45 [-]: MOVE      R1 R0        ; R1 := R0
+ 46 [-]: GETTABLE  R2 R0 K12    ; R2 := R0["QuestStage"]
+ 47 [-]: EQ        1 R2 K13     ; if R2 == nil then PC := 55
+ 48 [-]: JMP       55           ; PC := 55
+ 49 [-]: MOVE      R1 R1        ; R1 := R1
+ 50 [-]: GETGLOBAL R2 K14       ; R2 := gGameData
+ 51 [-]: SELF      R2 R2 K15    ; R3 := R2; R2 := R2["0x6D450037"]
+ 52 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["KeyChain"]
+ 53 [-]: LOADK     R5 K16       ; R5 := "OnActiveQuestSet"
+ 54 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 55 [-]: GETTABLE  R2 R0 K12    ; R2 := R0["QuestStage"]
+ 56 [-]: EQ        1 R2 K13     ; if R2 == nil then PC := 61
+ 57 [-]: JMP       61           ; PC := 61
+ 58 [-]: GETTABLE  R2 R0 K12    ; R2 := R0["QuestStage"]
+ 59 [-]: EQ        0 R2 K17     ; if R2 ~= 1 then PC := 77
+ 60 [-]: JMP       77           ; PC := 77
+ 61 [-]: GETGLOBAL R2 K18       ; R2 := gRegion
+ 62 [-]: SELF      R2 R2 K19    ; R3 := R2; R2 := R2["0x90391273"]
+ 63 [-]: GETGLOBAL R4 K20       ; R4 := 0xEC274B1A
+ 64 [-]: LOADK     R5 K21       ; R5 := "LotusHelmetMarker"
+ 65 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 66 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+ 67 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 68 [-]: MOVE      R4 R2        ; R4 := R2
+ 69 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 70 [-]: TEST      R3 1         ; if R3 then PC := 77
+ 71 [-]: JMP       77           ; PC := 77
+ 72 [-]: SELF      R3 R2 K22    ; R4 := R2; R3 := R2["0xE3B00802"]
+ 73 [-]: LOADK     R5 K23       ; R5 := 7
+ 74 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 75 [-]: SELF      R3 R2 K24    ; R4 := R2; R3 := R2["0xC5E91BA6"]
+ 76 [-]: CALL      R3 2 1       ; R3(R4)
+ 77 [-]: TEST      R1 1         ; if R1 then PC := 159
+ 78 [-]: JMP       159          ; PC := 159
+ 79 [-]: GETUPVAL  R3 U5        ; R3 := U5
+ 80 [-]: CALL      R3 1 1       ; R3()
+ 81 [-]: JMP       159          ; PC := 159
+ 82 [-]: GETTABLE  R3 R0 K7     ; R3 := R0["KeyChain"]
+ 83 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0x8B598ED4"]
+ 84 [-]: GETGLOBAL R5 K25       ; R5 := newWarIntroKeyChain
+ 85 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 86 [-]: TEST      R3 0         ; if not R3 then PC := 159
+ 87 [-]: JMP       159          ; PC := 159
+ 88 [-]: GETGLOBAL R3 K26       ; R3 := _T
+ 89 [-]: GETTABLE  R3 R3 K27    ; R3 := R3["GivingNewWarIntro"]
+ 90 [-]: TEST      R3 1         ; if R3 then PC := 159
+ 91 [-]: JMP       159          ; PC := 159
+ 92 [-]: GETGLOBAL R3 K26       ; R3 := _T
+ 93 [-]: SETTABLE  R3 K27 K28   ; R3["GivingNewWarIntro"] := "0x1"
+ 94 [-]: GETUPVAL  R3 U6        ; R3 := U6
+ 95 [-]: GETTABLE  R3 R3 K29    ; R3 := R3["0x6F5A2238"]
+ 96 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["KeyChain"]
+ 97 [-]: CALL      R3 2 1       ; R3(R4)
+ 98 [-]: GETGLOBAL R3 K18       ; R3 := gRegion
+ 99 [-]: SELF      R3 R3 K30    ; R4 := R3; R3 := R3["0xA76F0612"]
+100 [-]: GETGLOBAL R5 K20       ; R5 := 0xEC274B1A
+101 [-]: LOADK     R6 K31       ; R6 := "LotusHelmet"
+102 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+103 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+104 [-]: LOADK     R4 K17       ; R4 := 1
+105 [-]: LEN       R5 R3        ; R5 := # R3
+106 [-]: LOADK     R6 K17       ; R6 := 1
+107 [-]: FORPREP   R4 119       ; R4 -= R6; PC := 119
+108 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
+109 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8["0x8B598ED4"]
+110 [-]: GETGLOBAL R10 K32      ; R10 := helmetWRes
+111 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+112 [-]: TEST      R8 0         ; if not R8 then PC := 119
+113 [-]: JMP       119          ; PC := 119
+114 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
+115 [-]: SELF      R8 R8 K33    ; R9 := R8; R8 := R8["0xAB436EF2"]
+116 [-]: GETGLOBAL R10 K34      ; R10 := introHelmetAttachType
+117 [-]: GETGLOBAL R11 K35      ; R11 := EMPTY_SYMBOL
+118 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+119 [-]: FORLOOP   R4 108       ; R4 += R6; if R4 <= R5 then begin PC := 108; R7 := R4 end
+120 [-]: GETGLOBAL R8 K18       ; R8 := gRegion
+121 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0x90391273"]
+122 [-]: GETGLOBAL R10 K20      ; R10 := 0xEC274B1A
+123 [-]: LOADK     R11 K36      ; R11 := "ChimeraAction"
+124 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+125 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+126 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
+127 [-]: MOVE      R10 R8       ; R10 := R8
+128 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+129 [-]: TEST      R9 1         ; if R9 then PC := 137
+130 [-]: JMP       137          ; PC := 137
+131 [-]: SELF      R9 R8 K37    ; R10 := R8; R9 := R8["0xB1627322"]
+132 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+133 [-]: TEST      R9 0         ; if not R9 then PC := 137
+134 [-]: JMP       137          ; PC := 137
+135 [-]: SELF      R9 R8 K38    ; R10 := R8; R9 := R8["0x2DB1272F"]
+136 [-]: CALL      R9 2 1       ; R9(R10)
+137 [-]: GETGLOBAL R9 K18       ; R9 := gRegion
+138 [-]: SELF      R9 R9 K19    ; R10 := R9; R9 := R9["0x90391273"]
+139 [-]: GETGLOBAL R11 K20      ; R11 := 0xEC274B1A
+140 [-]: LOADK     R12 K39      ; R12 := "NewWarIntroAction"
+141 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+142 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
+143 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+144 [-]: MOVE      R11 R9       ; R11 := R9
+145 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+146 [-]: TEST      R10 1        ; if R10 then PC := 154
+147 [-]: JMP       154          ; PC := 154
+148 [-]: SELF      R10 R9 K24   ; R11 := R9; R10 := R9["0xC5E91BA6"]
+149 [-]: CALL      R10 2 1      ; R10(R11)
+150 [-]: GETGLOBAL R10 K40      ; R10 := 0x94BCBD40
+151 [-]: MOVE      R11 R9       ; R11 := R9
+152 [-]: LOADK     R12 K41      ; R12 := "OnDisabled"
+153 [-]: CALL      R10 3 1      ; R10(R11,R12)
+154 [-]: GETUPVAL  R10 U7       ; R10 := U7
+155 [-]: SELF      R10 R10 K42  ; R11 := R10; R10 := R10["0x61494587"]
+156 [-]: LOADK     R12 K43      ; R12 := 0.15000000596046
+157 [-]: GETUPVAL  R13 U5       ; R13 := U5
+158 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+159 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14.3:
 ;
 ; Name:            
-; Defined at line: 569
+; Defined at line: 565
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2290,7 +2274,7 @@ code size: 3
 ; Function #14.4:
 ;
 ; Name:            
-; Defined at line: 574
+; Defined at line: 570
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2307,11 +2291,11 @@ code size: 3
 ; Function #14.5:
 ;
 ; Name:            
-; Defined at line: 578
+; Defined at line: 574
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  17
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1["0x97B489B5"]
@@ -2324,338 +2308,337 @@ code size: 3
   9 [-]: JMP       11           ; PC := 11
  10 [-]: MOVE      R2 R0        ; R2 := R0
  11 [-]: MOVE      R2 R1        ; R2 := R1
- 12 [-]: LOADK     R3 K3        ; R3 := ""
- 13 [-]: GETGLOBAL R4 K4        ; R4 := mysteryIcon
- 14 [-]: GETTABLE  R5 R0 K5     ; R5 := R0["Active"]
- 15 [-]: TEST      R5 0         ; if not R5 then PC := 19
- 16 [-]: JMP       19           ; PC := 19
- 17 [-]: GETGLOBAL R4 K6        ; R4 := activeIcon
- 18 [-]: JMP       33           ; PC := 33
- 19 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["Completed"]
- 20 [-]: TEST      R5 0         ; if not R5 then PC := 24
- 21 [-]: JMP       24           ; PC := 24
- 22 [-]: GETGLOBAL R4 K8        ; R4 := completedIcon
- 23 [-]: JMP       33           ; PC := 33
- 24 [-]: GETTABLE  R5 R0 K9     ; R5 := R0["QuestStage"]
- 25 [-]: EQ        1 R5 K1      ; if R5 == nil then PC := 29
- 26 [-]: JMP       29           ; PC := 29
- 27 [-]: GETGLOBAL R4 K10       ; R4 := availableIcon
- 28 [-]: JMP       33           ; PC := 33
- 29 [-]: GETTABLE  R5 R0 K11    ; R5 := R0["Locked"]
- 30 [-]: TEST      R5 1         ; if R5 then PC := 33
- 31 [-]: JMP       33           ; PC := 33
- 32 [-]: GETGLOBAL R4 K10       ; R4 := availableIcon
- 33 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
- 34 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
- 35 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
- 36 [-]: LOADK     R8 K15       ; R8 := "Highlight.Backer"
- 37 [-]: LOADK     R9 K16       ; R9 := "_color"
- 38 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 39 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["Background1"]
- 40 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
- 41 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
- 42 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
- 43 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
- 44 [-]: LOADK     R8 K18       ; R8 := "Header"
- 45 [-]: LOADK     R9 K16       ; R9 := "_color"
- 46 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 47 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["FloatingContent"]
- 48 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
- 49 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
- 50 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
- 51 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
- 52 [-]: LOADK     R8 K20       ; R8 := "HeaderShadow"
- 53 [-]: LOADK     R9 K16       ; R9 := "_color"
- 54 [-]: GETUPVAL  R10 U2       ; R10 := U2
- 55 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["0xF81722A2"]
- 56 [-]: GETTABLE  R11 R0 K7    ; R11 := R0["Completed"]
- 57 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 58 [-]: GETTABLE  R12 R12 K19  ; R12 := R12["FloatingContent"]
- 59 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 60 [-]: GETTABLE  R13 R13 K17  ; R13 := R13["Background1"]
- 61 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
- 62 [-]: CALL      R5 0 1       ; R5(R6,...)
- 63 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
- 64 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
- 65 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
- 66 [-]: LOADK     R8 K22       ; R8 := "HeaderSparks"
- 67 [-]: LOADK     R9 K23       ; R9 := "_visible"
- 68 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["Completed"]
- 69 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
- 70 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["Completed"]
- 71 [-]: TEST      R5 0         ; if not R5 then PC := 118
- 72 [-]: JMP       118          ; PC := 118
- 73 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
- 74 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0x7E1F26D7"]
- 75 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
- 76 [-]: LOADK     R8 K25       ; R8 := ".HeaderSparks"
- 77 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 78 [-]: GETGLOBAL R8 K26       ; R8 := headerShadowMaterial
- 79 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 80 [-]: GETGLOBAL R5 K26       ; R5 := headerShadowMaterial
- 81 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0x94FB2E1A"]
- 82 [-]: GETGLOBAL R7 K28       ; R7 := 0xEC274B1A
- 83 [-]: LOADK     R8 K29       ; R8 := "TintColor"
- 84 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 85 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 86 [-]: GETTABLE  R8 R8 K30    ; R8 := R8["FloatingContentHighlightObject"]
- 87 [-]: GETTABLE  R8 R8 K31    ; R8 := R8["red"]
- 88 [-]: DIV       R8 R8 K32    ; R8 := R8 / 500
- 89 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 90 [-]: GETTABLE  R9 R9 K30    ; R9 := R9["FloatingContentHighlightObject"]
- 91 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["green"]
- 92 [-]: DIV       R9 R9 K32    ; R9 := R9 / 500
- 93 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 94 [-]: GETTABLE  R10 R10 K30  ; R10 := R10["FloatingContentHighlightObject"]
- 95 [-]: GETTABLE  R10 R10 K34  ; R10 := R10["blue"]
- 96 [-]: DIV       R10 R10 K32  ; R10 := R10 / 500
- 97 [-]: LOADK     R11 K35      ; R11 := 1
- 98 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 99 [-]: GETGLOBAL R5 K26       ; R5 := headerShadowMaterial
-100 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0x94FB2E1A"]
-101 [-]: GETGLOBAL R7 K28       ; R7 := 0xEC274B1A
-102 [-]: LOADK     R8 K36       ; R8 := "GlowColor"
-103 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-104 [-]: GETUPVAL  R8 U1        ; R8 := U1
-105 [-]: GETTABLE  R8 R8 K30    ; R8 := R8["FloatingContentHighlightObject"]
-106 [-]: GETTABLE  R8 R8 K31    ; R8 := R8["red"]
-107 [-]: DIV       R8 R8 K37    ; R8 := R8 / 255
-108 [-]: GETUPVAL  R9 U1        ; R9 := U1
-109 [-]: GETTABLE  R9 R9 K30    ; R9 := R9["FloatingContentHighlightObject"]
-110 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["green"]
-111 [-]: DIV       R9 R9 K37    ; R9 := R9 / 255
-112 [-]: GETUPVAL  R10 U1       ; R10 := U1
-113 [-]: GETTABLE  R10 R10 K30  ; R10 := R10["FloatingContentHighlightObject"]
-114 [-]: GETTABLE  R10 R10 K34  ; R10 := R10["blue"]
-115 [-]: DIV       R10 R10 K37  ; R10 := R10 / 255
-116 [-]: LOADK     R11 K35      ; R11 := 1
-117 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
-118 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-119 [-]: SELF      R5 R5 K38    ; R6 := R5; R5 := R5["0x26581636"]
-120 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-121 [-]: LOADK     R8 K39       ; R8 := ".HeaderIcon"
-122 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
-123 [-]: MOVE      R8 R4        ; R8 := R4
-124 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-125 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-126 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
-127 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-128 [-]: LOADK     R8 K40       ; R8 := "HeaderIcon"
-129 [-]: LOADK     R9 K16       ; R9 := "_color"
-130 [-]: GETUPVAL  R10 U2       ; R10 := U2
-131 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["0xF81722A2"]
-132 [-]: GETTABLE  R11 R0 K7    ; R11 := R0["Completed"]
-133 [-]: GETUPVAL  R12 U1       ; R12 := U1
-134 [-]: GETTABLE  R12 R12 K41  ; R12 := R12["FloatingContentHighlight"]
-135 [-]: GETUPVAL  R13 U1       ; R13 := U1
-136 [-]: GETTABLE  R13 R13 K19  ; R13 := R13["FloatingContent"]
-137 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
-138 [-]: CALL      R5 0 1       ; R5(R6,...)
-139 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-140 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0x7E1F26D7"]
-141 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-142 [-]: LOADK     R8 K42       ; R8 := ".Bg"
-143 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
-144 [-]: GETGLOBAL R8 K43       ; R8 := _G
-145 [-]: GETTABLE  R8 R8 K44    ; R8 := R8["UIMaterial_RectangleNoDepth"]
-146 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-147 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-148 [-]: SELF      R5 R5 K45    ; R6 := R5; R5 := R5["0x302AAB2F"]
-149 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-150 [-]: LOADK     R8 K42       ; R8 := ".Bg"
-151 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
-152 [-]: LOADK     R8 K46       ; R8 := "RectInnerColor"
-153 [-]: LOADK     R9 K47       ; R9 := 0
-154 [-]: LOADK     R10 K47      ; R10 := 0
-155 [-]: LOADK     R11 K47      ; R11 := 0
-156 [-]: LOADK     R12 K47      ; R12 := 0
-157 [-]: CALL      R5 8 1       ; R5(R6,R7,R8,R9,R10,R11,R12)
-158 [-]: GETUPVAL  R5 U0        ; R5 := U0
-159 [-]: GETTABLE  R5 R5 K48    ; R5 := R5["0x43BB8121"]
-160 [-]: MOVE      R6 R0        ; R6 := R0
-161 [-]: MOVE      R7 R2        ; R7 := R2
-162 [-]: MOVE      R8 R1        ; R8 := R1
-163 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-164 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-165 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
-166 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-167 [-]: LOADK     R8 K49       ; R8 := "Title"
-168 [-]: LOADK     R9 K23       ; R9 := "_visible"
-169 [-]: GETTABLE  R10 R0 K50   ; R10 := R0["Unreleased"]
-170 [-]: TEST      R10 1        ; if R10 then PC := 174
-171 [-]: JMP       174          ; PC := 174
-172 [-]: GETTABLE  R10 R0 K11   ; R10 := R0["Locked"]
-173 [-]: MOVE      R10 R10      ; R10 := R10
-174 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
-175 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-176 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
-177 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-178 [-]: LOADK     R8 K49       ; R8 := "Title"
-179 [-]: LOADK     R9 K16       ; R9 := "_color"
-180 [-]: GETUPVAL  R10 U1       ; R10 := U1
-181 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["FloatingContent"]
-182 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
-183 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-184 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x880196A7"]
-185 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-186 [-]: LOADK     R8 K49       ; R8 := "Title"
-187 [-]: LOADK     R9 K51       ; R9 := "verticalAlignment"
-188 [-]: LOADK     R10 K52      ; R10 := "bottom"
-189 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
-190 [-]: GETGLOBAL R5 K12       ; R5 := mMovie
-191 [-]: SELF      R5 R5 K53    ; R6 := R5; R5 := R5["0x17028E8F"]
-192 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mClipName"]
-193 [-]: LOADK     R8 K54       ; R8 := ".Title.text"
-194 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
-195 [-]: GETGLOBAL R8 K55       ; R8 := 0x9FAED6BC
-196 [-]: GETTABLE  R9 R0 K56    ; R9 := R0["Name"]
-197 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
-198 [-]: CALL      R5 0 1       ; R5(R6,...)
-199 [-]: GETTABLE  R5 R0 K7     ; R5 := R0["Completed"]
-200 [-]: TEST      R5 0         ; if not R5 then PC := 277
-201 [-]: JMP       277          ; PC := 277
-202 [-]: GETGLOBAL R5 K57       ; R5 := 0xF595ADDE
-203 [-]: GETGLOBAL R6 K12       ; R6 := mMovie
-204 [-]: SELF      R6 R6 K58    ; R7 := R6; R6 := R6["0x6B7B470B"]
-205 [-]: GETTABLE  R8 R0 K14    ; R8 := R0["mClipName"]
-206 [-]: LOADK     R9 K59       ; R9 := ".Title"
-207 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
-208 [-]: LOADK     R9 K60       ; R9 := "_y"
-209 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
-210 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
-211 [-]: GETGLOBAL R6 K12       ; R6 := mMovie
-212 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6["0x880196A7"]
-213 [-]: GETTABLE  R8 R0 K14    ; R8 := R0["mClipName"]
-214 [-]: LOADK     R9 K7        ; R9 := "Completed"
-215 [-]: LOADK     R10 K60      ; R10 := "_y"
-216 [-]: MOVE      R11 R5       ; R11 := R5
-217 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-218 [-]: GETGLOBAL R6 K12       ; R6 := mMovie
-219 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6["0x880196A7"]
-220 [-]: GETTABLE  R8 R0 K14    ; R8 := R0["mClipName"]
-221 [-]: LOADK     R9 K7        ; R9 := "Completed"
-222 [-]: LOADK     R10 K16      ; R10 := "_color"
-223 [-]: GETUPVAL  R11 U1       ; R11 := U1
-224 [-]: GETTABLE  R11 R11 K41  ; R11 := R11["FloatingContentHighlight"]
-225 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-226 [-]: GETGLOBAL R6 K12       ; R6 := mMovie
-227 [-]: SELF      R6 R6 K53    ; R7 := R6; R6 := R6["0x17028E8F"]
-228 [-]: GETTABLE  R8 R0 K14    ; R8 := R0["mClipName"]
-229 [-]: LOADK     R9 K61       ; R9 := ".Completed.Label.text"
-230 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
-231 [-]: LOADK     R9 K62       ; R9 := "/Lotus/Language/Menu/CompletedPersonal"
-232 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
-233 [-]: GETGLOBAL R6 K57       ; R6 := 0xF595ADDE
-234 [-]: GETGLOBAL R7 K12       ; R7 := mMovie
-235 [-]: SELF      R7 R7 K58    ; R8 := R7; R7 := R7["0x6B7B470B"]
-236 [-]: GETTABLE  R9 R0 K14    ; R9 := R0["mClipName"]
-237 [-]: LOADK     R10 K63      ; R10 := ".Completed.Label"
-238 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-239 [-]: LOADK     R10 K64      ; R10 := "textWidth"
-240 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
-241 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
-242 [-]: GETGLOBAL R7 K65       ; R7 := 0x6374FD98
-243 [-]: MOVE      R8 R6        ; R8 := R6
-244 [-]: LOADK     R9 K66       ; R9 := 140
-245 [-]: LOADK     R10 K67      ; R10 := 195
-246 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
-247 [-]: GETGLOBAL R8 K68       ; R8 := 0x93034B55
-248 [-]: LOADK     R9 K69       ; R9 := -1
-249 [-]: LOADK     R10 K70      ; R10 := 3
-250 [-]: SUB       R11 R7 K66   ; R11 := R7 - 140
-251 [-]: DIV       R11 R11 K71  ; R11 := R11 / 55
-252 [-]: SUB       R11 K35 R11  ; R11 := 1 - R11
-253 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
-254 [-]: GETUPVAL  R9 U2        ; R9 := U2
-255 [-]: GETTABLE  R9 R9 K21    ; R9 := R9["0xF81722A2"]
-256 [-]: LT        1 K72 R7     ; if 186 < R7 then PC := 259
-257 [-]: JMP       259          ; PC := 259
-258 [-]: MOVE      R10 R0       ; R10 := R0
-259 [-]: MOVE      R10 R1       ; R10 := R1
-260 [-]: LOADK     R11 K73      ; R11 := 18
-261 [-]: LOADK     R12 K74      ; R12 := 19
-262 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
-263 [-]: GETGLOBAL R10 K12      ; R10 := mMovie
-264 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
-265 [-]: GETTABLE  R12 R0 K14   ; R12 := R0["mClipName"]
-266 [-]: LOADK     R13 K75      ; R13 := "Completed.Label"
-267 [-]: LOADK     R14 K76      ; R14 := "letterSpacing"
-268 [-]: MOVE      R15 R8       ; R15 := R8
-269 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
-270 [-]: GETGLOBAL R10 K12      ; R10 := mMovie
-271 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
-272 [-]: GETTABLE  R12 R0 K14   ; R12 := R0["mClipName"]
-273 [-]: LOADK     R13 K75      ; R13 := "Completed.Label"
-274 [-]: LOADK     R14 K77      ; R14 := "fontSize"
-275 [-]: MOVE      R15 R9       ; R15 := R9
-276 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
-277 [-]: GETGLOBAL R10 K12      ; R10 := mMovie
-278 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
-279 [-]: GETTABLE  R12 R0 K14   ; R12 := R0["mClipName"]
-280 [-]: LOADK     R13 K7       ; R13 := "Completed"
-281 [-]: LOADK     R14 K23      ; R14 := "_visible"
-282 [-]: GETTABLE  R15 R0 K7    ; R15 := R0["Completed"]
-283 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
-284 [-]: LOADNIL   R10 R10      ; R10 := nil
-285 [-]: GETTABLE  R11 R0 K50   ; R11 := R0["Unreleased"]
-286 [-]: TEST      R11 0        ; if not R11 then PC := 290
-287 [-]: JMP       290          ; PC := 290
-288 [-]: GETGLOBAL R10 K78      ; R10 := teaserQuestTexture
-289 [-]: JMP       293          ; PC := 293
-290 [-]: GETGLOBAL R11 K79      ; R11 := questIcons
-291 [-]: GETTABLE  R12 R0 K80   ; R12 := R0["Index"]
-292 [-]: GETTABLE  R10 R11 R12  ; R10 := R11[R12]
-293 [-]: GETGLOBAL R11 K12      ; R11 := mMovie
-294 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x7E1F26D7"]
-295 [-]: GETTABLE  R13 R0 K14   ; R13 := R0["mClipName"]
-296 [-]: LOADK     R14 K81      ; R14 := ".Image"
-297 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-298 [-]: GETUPVAL  R14 U2       ; R14 := U2
-299 [-]: GETTABLE  R14 R14 K21  ; R14 := R14["0xF81722A2"]
-300 [-]: GETTABLE  R15 R0 K11   ; R15 := R0["Locked"]
-301 [-]: GETGLOBAL R16 K82      ; R16 := questIconMaterial
-302 [-]: LOADNIL   R17 R17      ; R17 := nil
-303 [-]: CALL      R14 4 0      ; R14,... := R14(R15,R16,R17)
-304 [-]: CALL      R11 0 1      ; R11(R12,...)
-305 [-]: GETGLOBAL R11 K12      ; R11 := mMovie
-306 [-]: SELF      R11 R11 K13  ; R12 := R11; R11 := R11["0x880196A7"]
-307 [-]: GETTABLE  R13 R0 K14   ; R13 := R0["mClipName"]
-308 [-]: LOADK     R14 K83      ; R14 := "Image"
-309 [-]: LOADK     R15 K23      ; R15 := "_visible"
-310 [-]: GETGLOBAL R16 K84      ; R16 := 0x400E7765
-311 [-]: MOVE      R17 R10      ; R17 := R10
-312 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-313 [-]: MOVE      R16 R16      ; R16 := R16
-314 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-315 [-]: GETGLOBAL R11 K12      ; R11 := mMovie
-316 [-]: SELF      R11 R11 K38  ; R12 := R11; R11 := R11["0x26581636"]
-317 [-]: GETTABLE  R13 R0 K14   ; R13 := R0["mClipName"]
-318 [-]: LOADK     R14 K81      ; R14 := ".Image"
-319 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
-320 [-]: MOVE      R14 R10      ; R14 := R10
-321 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-322 [-]: GETGLOBAL R11 K12      ; R11 := mMovie
-323 [-]: SELF      R11 R11 K13  ; R12 := R11; R11 := R11["0x880196A7"]
-324 [-]: GETTABLE  R13 R0 K14   ; R13 := R0["mClipName"]
-325 [-]: LOADK     R14 K11      ; R14 := "Locked"
-326 [-]: LOADK     R15 K23      ; R15 := "_visible"
-327 [-]: GETTABLE  R16 R0 K11   ; R16 := R0["Locked"]
-328 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-329 [-]: GETGLOBAL R11 K12      ; R11 := mMovie
-330 [-]: SELF      R11 R11 K13  ; R12 := R11; R11 := R11["0x880196A7"]
-331 [-]: GETTABLE  R13 R0 K14   ; R13 := R0["mClipName"]
-332 [-]: LOADK     R14 K85      ; R14 := "Highlight"
-333 [-]: LOADK     R15 K23      ; R15 := "_visible"
-334 [-]: GETTABLE  R16 R0 K11   ; R16 := R0["Locked"]
-335 [-]: MOVE      R16 R16      ; R16 := R16
-336 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-337 [-]: RETURN    R0 1         ; return 
+ 12 [-]: GETGLOBAL R3 K3        ; R3 := mysteryIcon
+ 13 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["Active"]
+ 14 [-]: TEST      R4 0         ; if not R4 then PC := 18
+ 15 [-]: JMP       18           ; PC := 18
+ 16 [-]: GETGLOBAL R3 K5        ; R3 := activeIcon
+ 17 [-]: JMP       32           ; PC := 32
+ 18 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["Completed"]
+ 19 [-]: TEST      R4 0         ; if not R4 then PC := 23
+ 20 [-]: JMP       23           ; PC := 23
+ 21 [-]: GETGLOBAL R3 K7        ; R3 := completedIcon
+ 22 [-]: JMP       32           ; PC := 32
+ 23 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["QuestStage"]
+ 24 [-]: EQ        1 R4 K1      ; if R4 == nil then PC := 28
+ 25 [-]: JMP       28           ; PC := 28
+ 26 [-]: GETGLOBAL R3 K9        ; R3 := availableIcon
+ 27 [-]: JMP       32           ; PC := 32
+ 28 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["Locked"]
+ 29 [-]: TEST      R4 1         ; if R4 then PC := 32
+ 30 [-]: JMP       32           ; PC := 32
+ 31 [-]: GETGLOBAL R3 K9        ; R3 := availableIcon
+ 32 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+ 33 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+ 34 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+ 35 [-]: LOADK     R7 K14       ; R7 := "Highlight.Backer"
+ 36 [-]: LOADK     R8 K15       ; R8 := "_color"
+ 37 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 38 [-]: GETTABLE  R9 R9 K16    ; R9 := R9["Background1"]
+ 39 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+ 40 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+ 41 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+ 42 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+ 43 [-]: LOADK     R7 K17       ; R7 := "Header"
+ 44 [-]: LOADK     R8 K15       ; R8 := "_color"
+ 45 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 46 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["FloatingContent"]
+ 47 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+ 48 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+ 49 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+ 50 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+ 51 [-]: LOADK     R7 K19       ; R7 := "HeaderShadow"
+ 52 [-]: LOADK     R8 K15       ; R8 := "_color"
+ 53 [-]: GETUPVAL  R9 U2        ; R9 := U2
+ 54 [-]: GETTABLE  R9 R9 K20    ; R9 := R9["0xF81722A2"]
+ 55 [-]: GETTABLE  R10 R0 K6    ; R10 := R0["Completed"]
+ 56 [-]: GETUPVAL  R11 U1       ; R11 := U1
+ 57 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["FloatingContent"]
+ 58 [-]: GETUPVAL  R12 U1       ; R12 := U1
+ 59 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["Background1"]
+ 60 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+ 61 [-]: CALL      R4 0 1       ; R4(R5,...)
+ 62 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+ 63 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+ 64 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+ 65 [-]: LOADK     R7 K21       ; R7 := "HeaderSparks"
+ 66 [-]: LOADK     R8 K22       ; R8 := "_visible"
+ 67 [-]: GETTABLE  R9 R0 K6     ; R9 := R0["Completed"]
+ 68 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+ 69 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["Completed"]
+ 70 [-]: TEST      R4 0         ; if not R4 then PC := 117
+ 71 [-]: JMP       117          ; PC := 117
+ 72 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+ 73 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4["0x7E1F26D7"]
+ 74 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+ 75 [-]: LOADK     R7 K24       ; R7 := ".HeaderSparks"
+ 76 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+ 77 [-]: GETGLOBAL R7 K25       ; R7 := headerShadowMaterial
+ 78 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 79 [-]: GETGLOBAL R4 K25       ; R4 := headerShadowMaterial
+ 80 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4["0x94FB2E1A"]
+ 81 [-]: GETGLOBAL R6 K27       ; R6 := 0xEC274B1A
+ 82 [-]: LOADK     R7 K28       ; R7 := "TintColor"
+ 83 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 84 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 85 [-]: GETTABLE  R7 R7 K29    ; R7 := R7["FloatingContentHighlightObject"]
+ 86 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["red"]
+ 87 [-]: DIV       R7 R7 K31    ; R7 := R7 / 500
+ 88 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 89 [-]: GETTABLE  R8 R8 K29    ; R8 := R8["FloatingContentHighlightObject"]
+ 90 [-]: GETTABLE  R8 R8 K32    ; R8 := R8["green"]
+ 91 [-]: DIV       R8 R8 K31    ; R8 := R8 / 500
+ 92 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 93 [-]: GETTABLE  R9 R9 K29    ; R9 := R9["FloatingContentHighlightObject"]
+ 94 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["blue"]
+ 95 [-]: DIV       R9 R9 K31    ; R9 := R9 / 500
+ 96 [-]: LOADK     R10 K34      ; R10 := 1
+ 97 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+ 98 [-]: GETGLOBAL R4 K25       ; R4 := headerShadowMaterial
+ 99 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4["0x94FB2E1A"]
+100 [-]: GETGLOBAL R6 K27       ; R6 := 0xEC274B1A
+101 [-]: LOADK     R7 K35       ; R7 := "GlowColor"
+102 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+103 [-]: GETUPVAL  R7 U1        ; R7 := U1
+104 [-]: GETTABLE  R7 R7 K29    ; R7 := R7["FloatingContentHighlightObject"]
+105 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["red"]
+106 [-]: DIV       R7 R7 K36    ; R7 := R7 / 255
+107 [-]: GETUPVAL  R8 U1        ; R8 := U1
+108 [-]: GETTABLE  R8 R8 K29    ; R8 := R8["FloatingContentHighlightObject"]
+109 [-]: GETTABLE  R8 R8 K32    ; R8 := R8["green"]
+110 [-]: DIV       R8 R8 K36    ; R8 := R8 / 255
+111 [-]: GETUPVAL  R9 U1        ; R9 := U1
+112 [-]: GETTABLE  R9 R9 K29    ; R9 := R9["FloatingContentHighlightObject"]
+113 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["blue"]
+114 [-]: DIV       R9 R9 K36    ; R9 := R9 / 255
+115 [-]: LOADK     R10 K34      ; R10 := 1
+116 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+117 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+118 [-]: SELF      R4 R4 K37    ; R5 := R4; R4 := R4["0x26581636"]
+119 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+120 [-]: LOADK     R7 K38       ; R7 := ".HeaderIcon"
+121 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+122 [-]: MOVE      R7 R3        ; R7 := R3
+123 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+124 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+125 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+126 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+127 [-]: LOADK     R7 K39       ; R7 := "HeaderIcon"
+128 [-]: LOADK     R8 K15       ; R8 := "_color"
+129 [-]: GETUPVAL  R9 U2        ; R9 := U2
+130 [-]: GETTABLE  R9 R9 K20    ; R9 := R9["0xF81722A2"]
+131 [-]: GETTABLE  R10 R0 K6    ; R10 := R0["Completed"]
+132 [-]: GETUPVAL  R11 U1       ; R11 := U1
+133 [-]: GETTABLE  R11 R11 K40  ; R11 := R11["FloatingContentHighlight"]
+134 [-]: GETUPVAL  R12 U1       ; R12 := U1
+135 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["FloatingContent"]
+136 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+137 [-]: CALL      R4 0 1       ; R4(R5,...)
+138 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+139 [-]: SELF      R4 R4 K23    ; R5 := R4; R4 := R4["0x7E1F26D7"]
+140 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+141 [-]: LOADK     R7 K41       ; R7 := ".Bg"
+142 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+143 [-]: GETGLOBAL R7 K42       ; R7 := _G
+144 [-]: GETTABLE  R7 R7 K43    ; R7 := R7["UIMaterial_RectangleNoDepth"]
+145 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+146 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+147 [-]: SELF      R4 R4 K44    ; R5 := R4; R4 := R4["0x302AAB2F"]
+148 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+149 [-]: LOADK     R7 K41       ; R7 := ".Bg"
+150 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+151 [-]: LOADK     R7 K45       ; R7 := "RectInnerColor"
+152 [-]: LOADK     R8 K46       ; R8 := 0
+153 [-]: LOADK     R9 K46       ; R9 := 0
+154 [-]: LOADK     R10 K46      ; R10 := 0
+155 [-]: LOADK     R11 K46      ; R11 := 0
+156 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
+157 [-]: GETUPVAL  R4 U0        ; R4 := U0
+158 [-]: GETTABLE  R4 R4 K47    ; R4 := R4["0x43BB8121"]
+159 [-]: MOVE      R5 R0        ; R5 := R0
+160 [-]: MOVE      R6 R2        ; R6 := R2
+161 [-]: MOVE      R7 R1        ; R7 := R1
+162 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+163 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+164 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+165 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+166 [-]: LOADK     R7 K48       ; R7 := "Title"
+167 [-]: LOADK     R8 K22       ; R8 := "_visible"
+168 [-]: GETTABLE  R9 R0 K49    ; R9 := R0["Unreleased"]
+169 [-]: TEST      R9 1         ; if R9 then PC := 173
+170 [-]: JMP       173          ; PC := 173
+171 [-]: GETTABLE  R9 R0 K10    ; R9 := R0["Locked"]
+172 [-]: MOVE      R9 R9        ; R9 := R9
+173 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+174 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+175 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+176 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+177 [-]: LOADK     R7 K48       ; R7 := "Title"
+178 [-]: LOADK     R8 K15       ; R8 := "_color"
+179 [-]: GETUPVAL  R9 U1        ; R9 := U1
+180 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["FloatingContent"]
+181 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+182 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+183 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x880196A7"]
+184 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+185 [-]: LOADK     R7 K48       ; R7 := "Title"
+186 [-]: LOADK     R8 K50       ; R8 := "verticalAlignment"
+187 [-]: LOADK     R9 K51       ; R9 := "bottom"
+188 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+189 [-]: GETGLOBAL R4 K11       ; R4 := mMovie
+190 [-]: SELF      R4 R4 K52    ; R5 := R4; R4 := R4["0x17028E8F"]
+191 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
+192 [-]: LOADK     R7 K53       ; R7 := ".Title.text"
+193 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+194 [-]: GETGLOBAL R7 K54       ; R7 := 0x9FAED6BC
+195 [-]: GETTABLE  R8 R0 K55    ; R8 := R0["Name"]
+196 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+197 [-]: CALL      R4 0 1       ; R4(R5,...)
+198 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["Completed"]
+199 [-]: TEST      R4 0         ; if not R4 then PC := 276
+200 [-]: JMP       276          ; PC := 276
+201 [-]: GETGLOBAL R4 K56       ; R4 := 0xF595ADDE
+202 [-]: GETGLOBAL R5 K11       ; R5 := mMovie
+203 [-]: SELF      R5 R5 K57    ; R6 := R5; R5 := R5["0x6B7B470B"]
+204 [-]: GETTABLE  R7 R0 K13    ; R7 := R0["mClipName"]
+205 [-]: LOADK     R8 K58       ; R8 := ".Title"
+206 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+207 [-]: LOADK     R8 K59       ; R8 := "_y"
+208 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
+209 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+210 [-]: GETGLOBAL R5 K11       ; R5 := mMovie
+211 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0x880196A7"]
+212 [-]: GETTABLE  R7 R0 K13    ; R7 := R0["mClipName"]
+213 [-]: LOADK     R8 K6        ; R8 := "Completed"
+214 [-]: LOADK     R9 K59       ; R9 := "_y"
+215 [-]: MOVE      R10 R4       ; R10 := R4
+216 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+217 [-]: GETGLOBAL R5 K11       ; R5 := mMovie
+218 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0x880196A7"]
+219 [-]: GETTABLE  R7 R0 K13    ; R7 := R0["mClipName"]
+220 [-]: LOADK     R8 K6        ; R8 := "Completed"
+221 [-]: LOADK     R9 K15       ; R9 := "_color"
+222 [-]: GETUPVAL  R10 U1       ; R10 := U1
+223 [-]: GETTABLE  R10 R10 K40  ; R10 := R10["FloatingContentHighlight"]
+224 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+225 [-]: GETGLOBAL R5 K11       ; R5 := mMovie
+226 [-]: SELF      R5 R5 K52    ; R6 := R5; R5 := R5["0x17028E8F"]
+227 [-]: GETTABLE  R7 R0 K13    ; R7 := R0["mClipName"]
+228 [-]: LOADK     R8 K60       ; R8 := ".Completed.Label.text"
+229 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+230 [-]: LOADK     R8 K61       ; R8 := "/Lotus/Language/Menu/CompletedPersonal"
+231 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+232 [-]: GETGLOBAL R5 K56       ; R5 := 0xF595ADDE
+233 [-]: GETGLOBAL R6 K11       ; R6 := mMovie
+234 [-]: SELF      R6 R6 K57    ; R7 := R6; R6 := R6["0x6B7B470B"]
+235 [-]: GETTABLE  R8 R0 K13    ; R8 := R0["mClipName"]
+236 [-]: LOADK     R9 K62       ; R9 := ".Completed.Label"
+237 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+238 [-]: LOADK     R9 K63       ; R9 := "textWidth"
+239 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
+240 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+241 [-]: GETGLOBAL R6 K64       ; R6 := 0x6374FD98
+242 [-]: MOVE      R7 R5        ; R7 := R5
+243 [-]: LOADK     R8 K65       ; R8 := 140
+244 [-]: LOADK     R9 K66       ; R9 := 195
+245 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
+246 [-]: GETGLOBAL R7 K67       ; R7 := 0x93034B55
+247 [-]: LOADK     R8 K68       ; R8 := -1
+248 [-]: LOADK     R9 K69       ; R9 := 3
+249 [-]: SUB       R10 R6 K65   ; R10 := R6 - 140
+250 [-]: DIV       R10 R10 K70  ; R10 := R10 / 55
+251 [-]: SUB       R10 K34 R10  ; R10 := 1 - R10
+252 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
+253 [-]: GETUPVAL  R8 U2        ; R8 := U2
+254 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["0xF81722A2"]
+255 [-]: LT        1 K71 R6     ; if 186 < R6 then PC := 258
+256 [-]: JMP       258          ; PC := 258
+257 [-]: MOVE      R9 R0        ; R9 := R0
+258 [-]: MOVE      R9 R1        ; R9 := R1
+259 [-]: LOADK     R10 K72      ; R10 := 18
+260 [-]: LOADK     R11 K73      ; R11 := 19
+261 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
+262 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
+263 [-]: SELF      R9 R9 K12    ; R10 := R9; R9 := R9["0x880196A7"]
+264 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mClipName"]
+265 [-]: LOADK     R12 K74      ; R12 := "Completed.Label"
+266 [-]: LOADK     R13 K75      ; R13 := "letterSpacing"
+267 [-]: MOVE      R14 R7       ; R14 := R7
+268 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+269 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
+270 [-]: SELF      R9 R9 K12    ; R10 := R9; R9 := R9["0x880196A7"]
+271 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mClipName"]
+272 [-]: LOADK     R12 K74      ; R12 := "Completed.Label"
+273 [-]: LOADK     R13 K76      ; R13 := "fontSize"
+274 [-]: MOVE      R14 R8       ; R14 := R8
+275 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+276 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
+277 [-]: SELF      R9 R9 K12    ; R10 := R9; R9 := R9["0x880196A7"]
+278 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mClipName"]
+279 [-]: LOADK     R12 K6       ; R12 := "Completed"
+280 [-]: LOADK     R13 K22      ; R13 := "_visible"
+281 [-]: GETTABLE  R14 R0 K6    ; R14 := R0["Completed"]
+282 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+283 [-]: LOADNIL   R9 R9        ; R9 := nil
+284 [-]: GETTABLE  R10 R0 K49   ; R10 := R0["Unreleased"]
+285 [-]: TEST      R10 0        ; if not R10 then PC := 289
+286 [-]: JMP       289          ; PC := 289
+287 [-]: GETGLOBAL R9 K77       ; R9 := teaserQuestTexture
+288 [-]: JMP       292          ; PC := 292
+289 [-]: GETGLOBAL R10 K78      ; R10 := questIcons
+290 [-]: GETTABLE  R11 R0 K79   ; R11 := R0["Index"]
+291 [-]: GETTABLE  R9 R10 R11   ; R9 := R10[R11]
+292 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
+293 [-]: SELF      R10 R10 K23  ; R11 := R10; R10 := R10["0x7E1F26D7"]
+294 [-]: GETTABLE  R12 R0 K13   ; R12 := R0["mClipName"]
+295 [-]: LOADK     R13 K80      ; R13 := ".Image"
+296 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+297 [-]: GETUPVAL  R13 U2       ; R13 := U2
+298 [-]: GETTABLE  R13 R13 K20  ; R13 := R13["0xF81722A2"]
+299 [-]: GETTABLE  R14 R0 K10   ; R14 := R0["Locked"]
+300 [-]: GETGLOBAL R15 K81      ; R15 := questIconMaterial
+301 [-]: LOADNIL   R16 R16      ; R16 := nil
+302 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
+303 [-]: CALL      R10 0 1      ; R10(R11,...)
+304 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
+305 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0x880196A7"]
+306 [-]: GETTABLE  R12 R0 K13   ; R12 := R0["mClipName"]
+307 [-]: LOADK     R13 K82      ; R13 := "Image"
+308 [-]: LOADK     R14 K22      ; R14 := "_visible"
+309 [-]: GETGLOBAL R15 K83      ; R15 := 0x400E7765
+310 [-]: MOVE      R16 R9       ; R16 := R9
+311 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+312 [-]: MOVE      R15 R15      ; R15 := R15
+313 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+314 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
+315 [-]: SELF      R10 R10 K37  ; R11 := R10; R10 := R10["0x26581636"]
+316 [-]: GETTABLE  R12 R0 K13   ; R12 := R0["mClipName"]
+317 [-]: LOADK     R13 K80      ; R13 := ".Image"
+318 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+319 [-]: MOVE      R13 R9       ; R13 := R9
+320 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+321 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
+322 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0x880196A7"]
+323 [-]: GETTABLE  R12 R0 K13   ; R12 := R0["mClipName"]
+324 [-]: LOADK     R13 K10      ; R13 := "Locked"
+325 [-]: LOADK     R14 K22      ; R14 := "_visible"
+326 [-]: GETTABLE  R15 R0 K10   ; R15 := R0["Locked"]
+327 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+328 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
+329 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0x880196A7"]
+330 [-]: GETTABLE  R12 R0 K13   ; R12 := R0["mClipName"]
+331 [-]: LOADK     R13 K84      ; R13 := "Highlight"
+332 [-]: LOADK     R14 K22      ; R14 := "_visible"
+333 [-]: GETTABLE  R15 R0 K10   ; R15 := R0["Locked"]
+334 [-]: MOVE      R15 R15      ; R15 := R15
+335 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+336 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 646
+; Defined at line: 641
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2890,7 +2873,7 @@ code size: 3
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 709
+; Defined at line: 704
 ; #Upvalues:       17
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3098,7 +3081,7 @@ code size: 3
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 769
+; Defined at line: 764
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3208,7 +3191,7 @@ code size: 3
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 802
+; Defined at line: 797
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3245,7 +3228,7 @@ code size: 3
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 815
+; Defined at line: 810
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3280,38 +3263,43 @@ code size: 3
  27 [-]: GETGLOBAL R0 K1        ; R0 := _T
  28 [-]: GETTABLE  R0 R0 K6     ; R0 := R0["0x56A300BD"]
  29 [-]: CALL      R0 1 1       ; R0()
- 30 [-]: GETGLOBAL R0 K7        ; R0 := gRegion
- 31 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0["0x3E2F6BF"]
+ 30 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+ 31 [-]: GETGLOBAL R1 K7        ; R1 := gRegion
  32 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 33 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
- 34 [-]: MOVE      R2 R0        ; R2 := R0
- 35 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 36 [-]: TEST      R1 1         ; if R1 then PC := 44
- 37 [-]: JMP       44           ; PC := 44
- 38 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 39 [-]: TEST      R1 0         ; if not R1 then PC := 44
- 40 [-]: JMP       44           ; PC := 44
- 41 [-]: SELF      R1 R0 K9     ; R2 := R0; R1 := R0["0x24AE62CF"]
- 42 [-]: MOVE      R3 R1        ; R3 := R1
- 43 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 44 [-]: GETGLOBAL R1 K7        ; R1 := gRegion
- 45 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1["0xA933C036"]
- 46 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 47 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["postProcess"]
- 48 [-]: SETTABLE  R1 K12 K13   ; R1["fade"] := 0
- 49 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 50 [-]: SETTABLE  R2 K14 K15   ; R2["BlockAmbientTransmissions"] := nil
- 51 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 52 [-]: SETTABLE  R2 K16 K15   ; R2["QuestPickerOpen"] := nil
- 53 [-]: GETGLOBAL R2 K1        ; R2 := _T
- 54 [-]: SETTABLE  R2 K17 K15   ; R2["HideMarkers"] := nil
- 55 [-]: RETURN    R0 1         ; return 
+ 33 [-]: TEST      R0 1         ; if R0 then PC := 54
+ 34 [-]: JMP       54           ; PC := 54
+ 35 [-]: GETGLOBAL R0 K7        ; R0 := gRegion
+ 36 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0["0x3E2F6BF"]
+ 37 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 38 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+ 39 [-]: MOVE      R2 R0        ; R2 := R0
+ 40 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 41 [-]: TEST      R1 1         ; if R1 then PC := 49
+ 42 [-]: JMP       49           ; PC := 49
+ 43 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 44 [-]: TEST      R1 0         ; if not R1 then PC := 49
+ 45 [-]: JMP       49           ; PC := 49
+ 46 [-]: SELF      R1 R0 K9     ; R2 := R0; R1 := R0["0x24AE62CF"]
+ 47 [-]: MOVE      R3 R1        ; R3 := R1
+ 48 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 49 [-]: GETGLOBAL R1 K7        ; R1 := gRegion
+ 50 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1["0xA933C036"]
+ 51 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 52 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["postProcess"]
+ 53 [-]: SETTABLE  R1 K12 K13   ; R1["fade"] := 0
+ 54 [-]: GETGLOBAL R2 K1        ; R2 := _T
+ 55 [-]: SETTABLE  R2 K14 K15   ; R2["BlockAmbientTransmissions"] := nil
+ 56 [-]: GETGLOBAL R2 K1        ; R2 := _T
+ 57 [-]: SETTABLE  R2 K16 K15   ; R2["QuestPickerOpen"] := nil
+ 58 [-]: GETGLOBAL R2 K1        ; R2 := _T
+ 59 [-]: SETTABLE  R2 K17 K15   ; R2["HideMarkers"] := nil
+ 60 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 841
+; Defined at line: 838
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3333,7 +3321,7 @@ code size: 3
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 847
+; Defined at line: 844
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3356,7 +3344,7 @@ code size: 3
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 853
+; Defined at line: 850
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3379,7 +3367,7 @@ code size: 3
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 859
+; Defined at line: 856
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3405,7 +3393,7 @@ code size: 3
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 865
+; Defined at line: 862
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

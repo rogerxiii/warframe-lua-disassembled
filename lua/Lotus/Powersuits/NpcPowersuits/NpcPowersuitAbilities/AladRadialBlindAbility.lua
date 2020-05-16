@@ -1,9 +1,9 @@
 code size: 14
 code size: 48
 code size: 93
-code size: 19
+code size: 24
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\AladRadialBlindAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\AladRadialBlindAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -208,16 +208,21 @@ code size: 19
   6 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
   7 [-]: MOVE      R3 R1        ; R3 := R1
   8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: TEST      R2 1         ; if R2 then PC := 19
- 10 [-]: JMP       19           ; PC := 19
- 11 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 12 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["0x448832E9"]
- 13 [-]: MOVE      R3 R1        ; R3 := R1
- 14 [-]: LOADK     R4 K5        ; R4 := -1
- 15 [-]: LOADK     R5 K6        ; R5 := 0
- 16 [-]: GETGLOBAL R6 K7        ; R6 := fadeDuration
- 17 [-]: GETGLOBAL R7 K8        ; R7 := blindedDuration
- 18 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
- 19 [-]: RETURN    R0 1         ; return 
+  9 [-]: TEST      R2 1         ; if R2 then PC := 24
+ 10 [-]: JMP       24           ; PC := 24
+ 11 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0x8B598ED4"]
+ 12 [-]: GETGLOBAL R4 K5        ; R4 := gBaseAvatarType
+ 13 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 14 [-]: TEST      R2 0         ; if not R2 then PC := 24
+ 15 [-]: JMP       24           ; PC := 24
+ 16 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 17 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["0x448832E9"]
+ 18 [-]: MOVE      R3 R1        ; R3 := R1
+ 19 [-]: LOADK     R4 K7        ; R4 := -1
+ 20 [-]: LOADK     R5 K8        ; R5 := 0
+ 21 [-]: GETGLOBAL R6 K9        ; R6 := fadeDuration
+ 22 [-]: GETGLOBAL R7 K10       ; R7 := blindedDuration
+ 23 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
+ 24 [-]: RETURN    R0 1         ; return 
 
 

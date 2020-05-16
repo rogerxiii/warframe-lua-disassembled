@@ -6,9 +6,9 @@ code size: 64
 code size: 19
 code size: 384
 code size: 69
-code size: 36
+code size: 34
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Archwing\ArchwingAbilities\GravitationalInstability.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Archwing\ArchwingAbilities\GravitationalInstability.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -70,8 +70,8 @@ code size: 36
  51 [-]: SETGLOBAL R11 K14      ; DoPull := R11
  52 [-]: SETGLOBAL R11 K15      ; 0xAB13D9E1 := R11
  53 [-]: CLOSURE   R11 7        ; R11 := closure(Function #8)
- 54 [-]: MOVE      R0 R2        ; R0 := R2
- 55 [-]: MOVE      R0 R0        ; R0 := R0
+ 54 [-]: MOVE      R0 R0        ; R0 := R0
+ 55 [-]: MOVE      R0 R2        ; R0 := R2
  56 [-]: SETGLOBAL R11 K16      ; DoPullPickup := R11
  57 [-]: SETGLOBAL R11 K17      ; 0x3B3C05AF := R11
  58 [-]: RETURN    R0 1         ; return 
@@ -806,7 +806,7 @@ code size: 36
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
@@ -817,32 +817,30 @@ code size: 36
   7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0x6DA72501"]
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   9 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 10 [-]: SUB       R2 R2 R1     ; R2 := R2 - R1
- 11 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 12 [-]: LOADK     R4 K2        ; R4 := 0
- 13 [-]: LE        0 R4 R3      ; if R4 > R3 then PC := 36
- 14 [-]: JMP       36           ; PC := 36
- 15 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
- 16 [-]: MOVE      R6 R0        ; R6 := R0
- 17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 18 [-]: TEST      R5 1         ; if R5 then PC := 36
- 19 [-]: JMP       36           ; PC := 36
- 20 [-]: SELF      R5 R0 K3     ; R6 := R0; R5 := R0["0x39D7F449"]
- 21 [-]: GETGLOBAL R7 K4        ; R7 := 0xE0C881B4
- 22 [-]: MOVE      R8 R1        ; R8 := R1
- 23 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 24 [-]: DIV       R10 R4 R3    ; R10 := R4 / R3
- 25 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 26 [-]: SELF      R8 R0 K5     ; R9 := R0; R8 := R0["0xF23A7849"]
- 27 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 28 [-]: CALL      R5 0 1       ; R5(R6,...)
- 29 [-]: GETGLOBAL R5 K6        ; R5 := 0x201191EA
- 30 [-]: LOADK     R6 K2        ; R6 := 0
- 31 [-]: CALL      R5 2 1       ; R5(R6)
- 32 [-]: GETGLOBAL R5 K7        ; R5 := 0x4CDEF9FF
- 33 [-]: CALL      R5 1 2       ; R5 := R5()
- 34 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 35 [-]: JMP       13           ; PC := 13
- 36 [-]: RETURN    R0 1         ; return 
+ 10 [-]: LOADK     R3 K2        ; R3 := 0
+ 11 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 34
+ 12 [-]: JMP       34           ; PC := 34
+ 13 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 14 [-]: MOVE      R5 R0        ; R5 := R0
+ 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 16 [-]: TEST      R4 1         ; if R4 then PC := 34
+ 17 [-]: JMP       34           ; PC := 34
+ 18 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0["0x39D7F449"]
+ 19 [-]: GETGLOBAL R6 K4        ; R6 := 0xE0C881B4
+ 20 [-]: MOVE      R7 R1        ; R7 := R1
+ 21 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 22 [-]: DIV       R9 R3 R2     ; R9 := R3 / R2
+ 23 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
+ 24 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0["0xF23A7849"]
+ 25 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 26 [-]: CALL      R4 0 1       ; R4(R5,...)
+ 27 [-]: GETGLOBAL R4 K6        ; R4 := 0x201191EA
+ 28 [-]: LOADK     R5 K2        ; R5 := 0
+ 29 [-]: CALL      R4 2 1       ; R4(R5)
+ 30 [-]: GETGLOBAL R4 K7        ; R4 := 0x4CDEF9FF
+ 31 [-]: CALL      R4 1 2       ; R4 := R4()
+ 32 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
+ 33 [-]: JMP       11           ; PC := 11
+ 34 [-]: RETURN    R0 1         ; return 
 
 

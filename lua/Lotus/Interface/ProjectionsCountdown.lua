@@ -1,4 +1,4 @@
-code size: 138
+code size: 142
 code size: 11
 code size: 49
 code size: 38
@@ -19,6 +19,7 @@ code size: 11
 code size: 11
 code size: 20
 code size: 5
+code size: 5
 code size: 6
 code size: 58
 code size: 13
@@ -27,7 +28,7 @@ code size: 3
 code size: 3
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\ProjectionsCountdown.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\ProjectionsCountdown.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -147,33 +148,37 @@ code size: 5
 109 [-]: SETGLOBAL R27 K23      ; SetCountdownSoundThreshold := R27
 110 [-]: SETGLOBAL R27 K24      ; 0x2796F53D := R27
 111 [-]: CLOSURE   R27 19       ; R27 := closure(Function #20)
-112 [-]: MOVE      R0 R10       ; R0 := R10
-113 [-]: SETGLOBAL R27 K25      ; EnableAutoCountdown := R27
-114 [-]: SETGLOBAL R27 K26      ; 0x29F55AB4 := R27
+112 [-]: MOVE      R0 R3        ; R0 := R3
+113 [-]: SETGLOBAL R27 K25      ; SetCountdownSound := R27
+114 [-]: SETGLOBAL R27 K26      ; 0xB78FB43E := R27
 115 [-]: CLOSURE   R27 20       ; R27 := closure(Function #21)
-116 [-]: MOVE      R0 R4        ; R0 := R4
-117 [-]: MOVE      R0 R2        ; R0 := R2
-118 [-]: MOVE      R0 R17       ; R0 := R17
-119 [-]: SETGLOBAL R27 K27      ; SetPosition := R27
-120 [-]: SETGLOBAL R27 K28      ; 0xEC183DDC := R27
-121 [-]: CLOSURE   R27 21       ; R27 := closure(Function #22)
-122 [-]: SETGLOBAL R27 K29      ; SetScale := R27
-123 [-]: SETGLOBAL R27 K30      ; 0x4979A97A := R27
-124 [-]: CLOSURE   R27 22       ; R27 := closure(Function #23)
-125 [-]: SETGLOBAL R27 K31      ; SetHint := R27
-126 [-]: SETGLOBAL R27 K32      ; 0x375C17A6 := R27
-127 [-]: CLOSURE   R27 23       ; R27 := closure(Function #24)
-128 [-]: SETGLOBAL R27 K33      ; SupportsThemes := R27
-129 [-]: SETGLOBAL R27 K34      ; 0xDBE73B9E := R27
-130 [-]: CLOSURE   R27 24       ; R27 := closure(Function #25)
-131 [-]: MOVE      R0 R18       ; R0 := R18
-132 [-]: SETGLOBAL R27 K35      ; OnStyleChangedCallback := R27
-133 [-]: SETGLOBAL R27 K36      ; 0x9A764566 := R27
+116 [-]: MOVE      R0 R10       ; R0 := R10
+117 [-]: SETGLOBAL R27 K27      ; EnableAutoCountdown := R27
+118 [-]: SETGLOBAL R27 K28      ; 0x29F55AB4 := R27
+119 [-]: CLOSURE   R27 21       ; R27 := closure(Function #22)
+120 [-]: MOVE      R0 R4        ; R0 := R4
+121 [-]: MOVE      R0 R2        ; R0 := R2
+122 [-]: MOVE      R0 R17       ; R0 := R17
+123 [-]: SETGLOBAL R27 K29      ; SetPosition := R27
+124 [-]: SETGLOBAL R27 K30      ; 0xEC183DDC := R27
+125 [-]: CLOSURE   R27 22       ; R27 := closure(Function #23)
+126 [-]: SETGLOBAL R27 K31      ; SetScale := R27
+127 [-]: SETGLOBAL R27 K32      ; 0x4979A97A := R27
+128 [-]: CLOSURE   R27 23       ; R27 := closure(Function #24)
+129 [-]: SETGLOBAL R27 K33      ; SetHint := R27
+130 [-]: SETGLOBAL R27 K34      ; 0x375C17A6 := R27
+131 [-]: CLOSURE   R27 24       ; R27 := closure(Function #25)
+132 [-]: SETGLOBAL R27 K35      ; SupportsThemes := R27
+133 [-]: SETGLOBAL R27 K36      ; 0xDBE73B9E := R27
 134 [-]: CLOSURE   R27 25       ; R27 := closure(Function #26)
-135 [-]: MOVE      R0 R17       ; R0 := R17
-136 [-]: SETGLOBAL R27 K37      ; onViewportSizeChanged := R27
-137 [-]: SETGLOBAL R27 K38      ; 0x3A900427 := R27
-138 [-]: RETURN    R0 1         ; return 
+135 [-]: MOVE      R0 R18       ; R0 := R18
+136 [-]: SETGLOBAL R27 K37      ; OnStyleChangedCallback := R27
+137 [-]: SETGLOBAL R27 K38      ; 0x9A764566 := R27
+138 [-]: CLOSURE   R27 26       ; R27 := closure(Function #27)
+139 [-]: MOVE      R0 R17       ; R0 := R17
+140 [-]: SETGLOBAL R27 K39      ; onViewportSizeChanged := R27
+141 [-]: SETGLOBAL R27 K40      ; 0x3A900427 := R27
+142 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -903,6 +908,22 @@ code size: 5
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x7C282057
+  2 [-]: MOVE      R2 R0        ; R2 := R0
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: MOVE      R1 R0        ; R1 := R0
+  5 [-]: RETURN    R0 1         ; return 
+
+
+; Function #21:
+;
+; Name:            
+; Defined at line: 220
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
 ; Max Stack Size:  2
 
   1 [-]: EQ        0 R0 K0      ; if R0 ~= "false" then PC := 4
@@ -913,10 +934,10 @@ code size: 5
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #21:
+; Function #22:
 ;
 ; Name:            
-; Defined at line: 220
+; Defined at line: 224
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -982,10 +1003,10 @@ code size: 5
  58 [-]: RETURN    R0 1         ; return 
 
 
-; Function #22:
+; Function #23:
 ;
 ; Name:            
-; Defined at line: 238
+; Defined at line: 242
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1006,10 +1027,10 @@ code size: 5
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #23:
+; Function #24:
 ;
 ; Name:            
-; Defined at line: 243
+; Defined at line: 247
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1066,10 +1087,10 @@ code size: 5
  49 [-]: RETURN    R0 1         ; return 
 
 
-; Function #24:
+; Function #25:
 ;
 ; Name:            
-; Defined at line: 258
+; Defined at line: 262
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1080,10 +1101,10 @@ code size: 5
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #25:
+; Function #26:
 ;
 ; Name:            
-; Defined at line: 262
+; Defined at line: 266
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1094,10 +1115,10 @@ code size: 5
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #26:
+; Function #27:
 ;
 ; Name:            
-; Defined at line: 266
+; Defined at line: 270
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0

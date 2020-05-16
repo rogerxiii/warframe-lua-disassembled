@@ -1,9 +1,9 @@
 code size: 10
 code size: 51
-code size: 94
+code size: 104
 code size: 1
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Eidolon\SentientRopalolystAngry.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Eidolon\SentientRopalolystAngry.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -27,7 +27,7 @@ code size: 1
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 6
+; Defined at line: 4
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -89,7 +89,7 @@ code size: 1
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 27
+; Defined at line: 25
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -152,49 +152,59 @@ code size: 1
  55 [-]: GETGLOBAL R7 K15       ; R7 := 0x201191EA
  56 [-]: LOADK     R8 K16       ; R8 := 0
  57 [-]: CALL      R7 2 1       ; R7(R8)
- 58 [-]: SELF      R7 R1 K17    ; R8 := R1; R7 := R1["0xB709A931"]
- 59 [-]: MOVE      R9 R5        ; R9 := R5
- 60 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 61 [-]: TEST      R7 0         ; if not R7 then PC := 94
- 62 [-]: JMP       94           ; PC := 94
- 63 [-]: TEST      R4 0         ; if not R4 then PC := 90
- 64 [-]: JMP       90           ; PC := 90
- 65 [-]: SELF      R7 R1 K18    ; R8 := R1; R7 := R1["0x2A35B863"]
- 66 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0xBBAF192"]
- 67 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 68 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 69 [-]: LT        0 K20 R7     ; if 5 >= R7 then PC := 86
- 70 [-]: JMP       86           ; PC := 86
- 71 [-]: GETGLOBAL R7 K21       ; R7 := 0xEDD2EBFF
- 72 [-]: SELF      R8 R1 K19    ; R9 := R1; R8 := R1["0xBBAF192"]
- 73 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 74 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0xBBAF192"]
- 75 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 76 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
- 77 [-]: SELF      R8 R1 K23    ; R9 := R1; R8 := R1["0x3455E8A"]
- 78 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 79 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["pitch"]
- 80 [-]: SETTABLE  R7 K22 R8    ; R7["pitch"] := R8
- 81 [-]: SETTABLE  R7 K24 K16   ; R7["bank"] := 0
- 82 [-]: SELF      R8 R1 K25    ; R9 := R1; R8 := R1["0x86C7DDC2"]
- 83 [-]: MOVE      R10 R7       ; R10 := R7
- 84 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 85 [-]: JMP       90           ; PC := 90
- 86 [-]: SELF      R8 R1 K25    ; R9 := R1; R8 := R1["0x86C7DDC2"]
- 87 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3455E8A"]
- 88 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 89 [-]: CALL      R8 0 1       ; R8(R9,...)
- 90 [-]: GETGLOBAL R8 K15       ; R8 := 0x201191EA
- 91 [-]: LOADK     R9 K16       ; R9 := 0
- 92 [-]: CALL      R8 2 1       ; R8(R9)
- 93 [-]: JMP       58           ; PC := 58
- 94 [-]: RETURN    R0 1         ; return 
+ 58 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 59 [-]: MOVE      R8 R1        ; R8 := R1
+ 60 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 61 [-]: TEST      R7 1         ; if R7 then PC := 104
+ 62 [-]: JMP       104          ; PC := 104
+ 63 [-]: SELF      R7 R1 K17    ; R8 := R1; R7 := R1["0xB709A931"]
+ 64 [-]: MOVE      R9 R5        ; R9 := R5
+ 65 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 66 [-]: TEST      R7 0         ; if not R7 then PC := 104
+ 67 [-]: JMP       104          ; PC := 104
+ 68 [-]: TEST      R4 0         ; if not R4 then PC := 100
+ 69 [-]: JMP       100          ; PC := 100
+ 70 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 71 [-]: MOVE      R8 R2        ; R8 := R2
+ 72 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 73 [-]: TEST      R7 1         ; if R7 then PC := 96
+ 74 [-]: JMP       96           ; PC := 96
+ 75 [-]: SELF      R7 R1 K18    ; R8 := R1; R7 := R1["0x2A35B863"]
+ 76 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0xBBAF192"]
+ 77 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 78 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 79 [-]: LT        0 K20 R7     ; if 5 >= R7 then PC := 96
+ 80 [-]: JMP       96           ; PC := 96
+ 81 [-]: GETGLOBAL R7 K21       ; R7 := 0xEDD2EBFF
+ 82 [-]: SELF      R8 R1 K19    ; R9 := R1; R8 := R1["0xBBAF192"]
+ 83 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 84 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0xBBAF192"]
+ 85 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 86 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 87 [-]: SELF      R8 R1 K23    ; R9 := R1; R8 := R1["0x3455E8A"]
+ 88 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 89 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["pitch"]
+ 90 [-]: SETTABLE  R7 K22 R8    ; R7["pitch"] := R8
+ 91 [-]: SETTABLE  R7 K24 K16   ; R7["bank"] := 0
+ 92 [-]: SELF      R8 R1 K25    ; R9 := R1; R8 := R1["0x86C7DDC2"]
+ 93 [-]: MOVE      R10 R7       ; R10 := R7
+ 94 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 95 [-]: JMP       100          ; PC := 100
+ 96 [-]: SELF      R8 R1 K25    ; R9 := R1; R8 := R1["0x86C7DDC2"]
+ 97 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3455E8A"]
+ 98 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+ 99 [-]: CALL      R8 0 1       ; R8(R9,...)
+100 [-]: GETGLOBAL R8 K15       ; R8 := 0x201191EA
+101 [-]: LOADK     R9 K16       ; R9 := 0
+102 [-]: CALL      R8 2 1       ; R8(R9)
+103 [-]: JMP       58           ; PC := 58
+104 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 64
+; Defined at line: 62
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0

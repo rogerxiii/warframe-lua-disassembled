@@ -1,9 +1,9 @@
 code size: 14
 code size: 39
 code size: 55
-code size: 10
+code size: 15
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Lich\FireBlast.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Lich\FireBlast.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -31,7 +31,7 @@ code size: 10
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 10
+; Defined at line: 8
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -81,7 +81,7 @@ code size: 10
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 30
+; Defined at line: 28
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -126,20 +126,20 @@ code size: 10
  37 [-]: SELF      R9 R1 K15    ; R10 := R1; R9 := R1["0xF23A7849"]
  38 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  39 [-]: MOVE      R10 R1       ; R10 := R1
- 40 [-]: CALL      R5 6 2       ; R5 := R5(R6,R7,R8,R9,R10)
- 41 [-]: GETGLOBAL R6 K17       ; R6 := blastScaleTime
- 42 [-]: MOVE      R7 R1        ; R7 := R1
- 43 [-]: TEST      R7 0         ; if not R7 then PC := 55
+ 40 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+ 41 [-]: GETGLOBAL R5 K17       ; R5 := blastScaleTime
+ 42 [-]: MOVE      R6 R1        ; R6 := R1
+ 43 [-]: TEST      R6 0         ; if not R6 then PC := 55
  44 [-]: JMP       55           ; PC := 55
- 45 [-]: GETGLOBAL R8 K18       ; R8 := 0x4CDEF9FF
- 46 [-]: CALL      R8 1 2       ; R8 := R8()
- 47 [-]: SUB       R6 R6 R8     ; R6 := R6 - R8
- 48 [-]: LE        0 R6 K19     ; if R6 > 0 then PC := 51
+ 45 [-]: GETGLOBAL R7 K18       ; R7 := 0x4CDEF9FF
+ 46 [-]: CALL      R7 1 2       ; R7 := R7()
+ 47 [-]: SUB       R5 R5 R7     ; R5 := R5 - R7
+ 48 [-]: LE        0 R5 K19     ; if R5 > 0 then PC := 51
  49 [-]: JMP       51           ; PC := 51
- 50 [-]: MOVE      R7 R0        ; R7 := R0
- 51 [-]: GETGLOBAL R8 K20       ; R8 := 0x201191EA
- 52 [-]: LOADK     R9 K19       ; R9 := 0
- 53 [-]: CALL      R8 2 1       ; R8(R9)
+ 50 [-]: MOVE      R6 R0        ; R6 := R0
+ 51 [-]: GETGLOBAL R7 K20       ; R7 := 0x201191EA
+ 52 [-]: LOADK     R8 K19       ; R8 := 0
+ 53 [-]: CALL      R7 2 1       ; R7(R8)
  54 [-]: JMP       43           ; PC := 43
  55 [-]: RETURN    R0 1         ; return 
 
@@ -147,21 +147,26 @@ code size: 10
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 58
+; Defined at line: 54
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
 ; Max Stack Size:  11
 
-  1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1["0x868E646A"]
-  2 [-]: GETGLOBAL R6 K1        ; R6 := deactivateAnim
-  3 [-]: MOVE      R7 R1        ; R7 := R1
-  4 [-]: GETGLOBAL R8 K2        ; R8 := Engine
-  5 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["ATMM_PHYSICS_DRIVEN"]
-  6 [-]: GETGLOBAL R9 K2        ; R9 := Engine
-  7 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["PRT_ONCE"]
-  8 [-]: MOVE      R10 R1       ; R10 := R1
-  9 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
- 10 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+  2 [-]: MOVE      R5 R1        ; R5 := R1
+  3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  4 [-]: TEST      R4 1         ; if R4 then PC := 15
+  5 [-]: JMP       15           ; PC := 15
+  6 [-]: SELF      R4 R1 K1     ; R5 := R1; R4 := R1["0x868E646A"]
+  7 [-]: GETGLOBAL R6 K2        ; R6 := deactivateAnim
+  8 [-]: MOVE      R7 R1        ; R7 := R1
+  9 [-]: GETGLOBAL R8 K3        ; R8 := Engine
+ 10 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["ATMM_PHYSICS_DRIVEN"]
+ 11 [-]: GETGLOBAL R9 K3        ; R9 := Engine
+ 12 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["PRT_ONCE"]
+ 13 [-]: MOVE      R10 R1       ; R10 := R1
+ 14 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+ 15 [-]: RETURN    R0 1         ; return 
 
 

@@ -1,14 +1,14 @@
 code size: 45
 code size: 35
-code size: 7
+code size: 37
 code size: 3
 code size: 5
 code size: 197
 code size: 105
-code size: 80
+code size: 77
 code size: 14
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\OperatorFocus.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\OperatorFocus.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -117,21 +117,51 @@ code size: 14
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  10
 
-  1 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["0x87647B87"]
-  3 [-]: MOVE      R4 R0        ; R4 := R0
-  4 [-]: MOVE      R5 R1        ; R5 := R1
-  5 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-  6 [-]: RETURN    R3 2         ; return R3
-  7 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R3 K0        ; R3 := gGameRules
+  2 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0x1106FFC3"]
+  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  4 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+  5 [-]: MOVE      R5 R3        ; R5 := R3
+  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  7 [-]: TEST      R4 1         ; if R4 then PC := 31
+  8 [-]: JMP       31           ; PC := 31
+  9 [-]: SELF      R4 R3 K3     ; R5 := R3; R4 := R3["0x143DE652"]
+ 10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 11 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
+ 12 [-]: MOVE      R6 R4        ; R6 := R4
+ 13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 14 [-]: TEST      R5 1         ; if R5 then PC := 31
+ 15 [-]: JMP       31           ; PC := 31
+ 16 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4["0xA4499253"]
+ 17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 18 [-]: GETGLOBAL R6 K2        ; R6 := 0x400E7765
+ 19 [-]: MOVE      R7 R5        ; R7 := R5
+ 20 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 21 [-]: TEST      R6 1         ; if R6 then PC := 31
+ 22 [-]: JMP       31           ; PC := 31
+ 23 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5["0x2E4735B5"]
+ 24 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 25 [-]: GETGLOBAL R7 K6        ; R7 := Lotus_Game
+ 26 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["CrewShipAvatar_HDS_READY"]
+ 27 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 31
+ 28 [-]: JMP       31           ; PC := 31
+ 29 [-]: MOVE      R7 R0        ; R7 := R0
+ 30 [-]: RETURN    R7 2         ; return R7
+ 31 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 32 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["0x87647B87"]
+ 33 [-]: MOVE      R8 R0        ; R8 := R0
+ 34 [-]: MOVE      R9 R1        ; R9 := R1
+ 35 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 36 [-]: RETURN    R7 2         ; return R7
+ 37 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 45
+; Defined at line: 59
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -145,7 +175,7 @@ code size: 14
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 49
+; Defined at line: 63
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -161,7 +191,7 @@ code size: 14
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 53
+; Defined at line: 67
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -369,7 +399,7 @@ code size: 14
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 107
+; Defined at line: 121
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -485,7 +515,7 @@ code size: 14
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 143
+; Defined at line: 157
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -494,8 +524,8 @@ code size: 14
   1 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
   2 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0xA559F558"]
   3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  4 [-]: TEST      R4 0         ; if not R4 then PC := 80
-  5 [-]: JMP       80           ; PC := 80
+  4 [-]: TEST      R4 0         ; if not R4 then PC := 77
+  5 [-]: JMP       77           ; PC := 77
   6 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0["0xA4499253"]
   7 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   8 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
@@ -527,15 +557,15 @@ code size: 14
  34 [-]: GETGLOBAL R8 K20       ; R8 := _T
  35 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["operatorInstantRevives"]
  36 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 37 [-]: TEST      R7 1         ; if R7 then PC := 80
- 38 [-]: JMP       80           ; PC := 80
+ 37 [-]: TEST      R7 1         ; if R7 then PC := 77
+ 38 [-]: JMP       77           ; PC := 77
  39 [-]: SELF      R7 R4 K22    ; R8 := R4; R7 := R4["0x96D4FC9C"]
  40 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  41 [-]: GETGLOBAL R8 K19       ; R8 := 0x400E7765
  42 [-]: MOVE      R9 R7        ; R9 := R7
  43 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 44 [-]: TEST      R8 1         ; if R8 then PC := 80
- 45 [-]: JMP       80           ; PC := 80
+ 44 [-]: TEST      R8 1         ; if R8 then PC := 77
+ 45 [-]: JMP       77           ; PC := 77
  46 [-]: SELF      R8 R7 K23    ; R9 := R7; R8 := R7["0x8F7453D9"]
  47 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  48 [-]: LOADK     R9 K24       ; R9 := 0
@@ -558,25 +588,22 @@ code size: 14
  65 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["operatorInstantRevives"]
  66 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]
  67 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 68 [-]: TEST      R10 1        ; if R10 then PC := 80
- 69 [-]: JMP       80           ; PC := 80
+ 68 [-]: TEST      R10 1        ; if R10 then PC := 77
+ 69 [-]: JMP       77           ; PC := 77
  70 [-]: GETGLOBAL R10 K20      ; R10 := _T
  71 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["operatorInstantRevives"]
  72 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
  73 [-]: GETGLOBAL R11 K20      ; R11 := _T
  74 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["operatorInstantRevives"]
- 75 [-]: GETGLOBAL R12 K20      ; R12 := _T
- 76 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["operatorInstantRevives"]
- 77 [-]: GETTABLE  R12 R12 R9   ; R12 := R12[R9]
- 78 [-]: SUB       R12 R12 K10  ; R12 := R12 - 1
- 79 [-]: SETTABLE  R11 R9 R12   ; R11[R9] := R12
- 80 [-]: RETURN    R0 1         ; return 
+ 75 [-]: SUB       R12 R10 K10  ; R12 := R10 - 1
+ 76 [-]: SETTABLE  R11 R9 R12   ; R11[R9] := R12
+ 77 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 178
+; Defined at line: 192
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0

@@ -8,9 +8,9 @@ code size: 7
 code size: 32
 code size: 27
 code size: 28
-code size: 108
+code size: 107
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\AudioLib.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Libs\AudioLib.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -305,7 +305,7 @@ code size: 108
 ; #Upvalues:       9
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  33
+; Max Stack Size:  32
 
   1 [-]: NEWTABLE  R2 0 3       ; R2 := {}
   2 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -395,25 +395,24 @@ code size: 108
  86 [-]: EQ        1 R19 R5     ; if R19 == R5 then PC := 89
  87 [-]: JMP       89           ; PC := 89
  88 [-]: RETURN    R0 1         ; return 
- 89 [-]: LOADK     R19 K6       ; R19 := 1
- 90 [-]: LEN       R20 R5       ; R20 := # R5
- 91 [-]: LOADK     R21 K6       ; R21 := 1
- 92 [-]: FORPREP   R19 105      ; R19 -= R21; PC := 105
- 93 [-]: GETTABLE  R23 R5 R22   ; R23 := R5[R22]
- 94 [-]: GETTABLE  R24 R23 K2   ; R24 := R23["parameters"]
- 95 [-]: GETTABLE  R25 R23 K1   ; R25 := R23["finish"]
- 96 [-]: LOADK     R26 K6       ; R26 := 1
- 97 [-]: LEN       R27 R24      ; R27 := # R24
- 98 [-]: LOADK     R28 K6       ; R28 := 1
- 99 [-]: FORPREP   R26 104      ; R26 -= R28; PC := 104
-100 [-]: GETTABLE  R30 R24 R29  ; R30 := R24[R29]
-101 [-]: MOVE      R31 R25      ; R31 := R25
-102 [-]: MOVE      R32 R30      ; R32 := R30
-103 [-]: CALL      R31 2 1      ; R31(R32)
-104 [-]: FORLOOP   R26 100      ; R26 += R28; if R26 <= R27 then begin PC := 100; R29 := R26 end
-105 [-]: FORLOOP   R19 93       ; R19 += R21; if R19 <= R20 then begin PC := 93; R22 := R19 end
-106 [-]: GETGLOBAL R31 K3       ; R31 := _T
-107 [-]: SETTABLE  R31 K4 K7    ; R31["activeMixerTransitions"] := nil
-108 [-]: RETURN    R0 1         ; return 
+ 89 [-]: GETGLOBAL R19 K11      ; R19 := 0x63B09107
+ 90 [-]: MOVE      R20 R5       ; R20 := R5
+ 91 [-]: CALL      R19 2 4      ; R19,R20,R21 := R19(R20)
+ 92 [-]: JMP       103          ; PC := 103
+ 93 [-]: GETTABLE  R24 R23 K1   ; R24 := R23["finish"]
+ 94 [-]: GETGLOBAL R25 K11      ; R25 := 0x63B09107
+ 95 [-]: GETTABLE  R26 R23 K2   ; R26 := R23["parameters"]
+ 96 [-]: CALL      R25 2 4      ; R25,R26,R27 := R25(R26)
+ 97 [-]: JMP       101          ; PC := 101
+ 98 [-]: MOVE      R30 R24      ; R30 := R24
+ 99 [-]: MOVE      R31 R29      ; R31 := R29
+100 [-]: CALL      R30 2 1      ; R30(R31)
+101 [-]: TFORLOOP  R25 2        ; R28,R29 :=  R25(R26,R27); if R28 ~= nil then begin PC = 98; R27 := R28 end
+102 [-]: JMP       98           ; PC := 98
+103 [-]: TFORLOOP  R19 2        ; R22,R23 :=  R19(R20,R21); if R22 ~= nil then begin PC = 93; R21 := R22 end
+104 [-]: JMP       93           ; PC := 93
+105 [-]: GETGLOBAL R30 K3       ; R30 := _T
+106 [-]: SETTABLE  R30 K4 K7    ; R30["activeMixerTransitions"] := nil
+107 [-]: RETURN    R0 1         ; return 
 
 

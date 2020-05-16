@@ -1,19 +1,18 @@
-code size: 46
+code size: 45
 code size: 16
 code size: 10
-code size: 19
 code size: 199
 code size: 53
 code size: 82
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Bard\BardPassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Bard\BardPassive.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  10
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.AbilitiesLib"
@@ -43,24 +42,23 @@ code size: 82
  26 [-]: SETGLOBAL R8 K10       ; GetPassiveInfo := R8
  27 [-]: SETGLOBAL R8 K11       ; 0xBF79D112 := R8
  28 [-]: CLOSURE   R8 2         ; R8 := closure(Function #3)
- 29 [-]: CLOSURE   R9 3         ; R9 := closure(Function #4)
- 30 [-]: MOVE      R0 R0        ; R0 := R0
- 31 [-]: MOVE      R0 R3        ; R0 := R3
- 32 [-]: MOVE      R0 R4        ; R0 := R4
- 33 [-]: MOVE      R0 R5        ; R0 := R5
- 34 [-]: MOVE      R0 R6        ; R0 := R6
- 35 [-]: SETGLOBAL R9 K12       ; AddUpgrades := R9
- 36 [-]: SETGLOBAL R9 K13       ; 0xF9821444 := R9
- 37 [-]: CLOSURE   R9 4         ; R9 := closure(Function #5)
- 38 [-]: MOVE      R0 R0        ; R0 := R0
- 39 [-]: SETGLOBAL R9 K14       ; RemoveUpgrades := R9
- 40 [-]: SETGLOBAL R9 K15       ; 0x698F6403 := R9
- 41 [-]: CLOSURE   R9 5         ; R9 := closure(Function #6)
- 42 [-]: MOVE      R0 R7        ; R0 := R7
- 43 [-]: MOVE      R0 R2        ; R0 := R2
- 44 [-]: SETGLOBAL R9 K16       ; OnAbilityCast := R9
- 45 [-]: SETGLOBAL R9 K17       ; 0xE5E34B54 := R9
- 46 [-]: RETURN    R0 1         ; return 
+ 29 [-]: MOVE      R0 R0        ; R0 := R0
+ 30 [-]: MOVE      R0 R3        ; R0 := R3
+ 31 [-]: MOVE      R0 R4        ; R0 := R4
+ 32 [-]: MOVE      R0 R5        ; R0 := R5
+ 33 [-]: MOVE      R0 R6        ; R0 := R6
+ 34 [-]: SETGLOBAL R8 K12       ; AddUpgrades := R8
+ 35 [-]: SETGLOBAL R8 K13       ; 0xF9821444 := R8
+ 36 [-]: CLOSURE   R8 3         ; R8 := closure(Function #4)
+ 37 [-]: MOVE      R0 R0        ; R0 := R0
+ 38 [-]: SETGLOBAL R8 K14       ; RemoveUpgrades := R8
+ 39 [-]: SETGLOBAL R8 K15       ; 0x698F6403 := R8
+ 40 [-]: CLOSURE   R8 4         ; R8 := closure(Function #5)
+ 41 [-]: MOVE      R0 R7        ; R0 := R7
+ 42 [-]: MOVE      R0 R2        ; R0 := R2
+ 43 [-]: SETGLOBAL R8 K16       ; OnAbilityCast := R8
+ 44 [-]: SETGLOBAL R8 K17       ; 0xE5E34B54 := R8
+ 45 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -115,36 +113,6 @@ code size: 82
 ;
 ; Name:            
 ; Defined at line: 33
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  2 [-]: LOADK     R2 K0        ; R2 := 1
-  3 [-]: GETGLOBAL R3 K1        ; R3 := math
-  4 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["0x65F9712A"]
-  5 [-]: LOADK     R4 K3        ; R4 := 4
-  6 [-]: SELF      R5 R0 K4     ; R6 := R0; R5 := R0["0x4320AD3D"]
-  7 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
-  8 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
-  9 [-]: LOADK     R4 K0        ; R4 := 1
- 10 [-]: FORPREP   R2 17        ; R2 -= R4; PC := 17
- 11 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0xEA55C538"]
- 12 [-]: SUB       R8 R5 K0     ; R8 := R5 - 1
- 13 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 14 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0x258B70EB"]
- 15 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 16 [-]: SETTABLE  R1 R5 R6     ; R1[R5] := R6
- 17 [-]: FORLOOP   R2 11        ; R2 += R4; if R2 <= R3 then begin PC := 11; R5 := R2 end
- 18 [-]: RETURN    R1 2         ; return R1
- 19 [-]: RETURN    R0 1         ; return 
-
-
-; Function #4:
-;
-; Name:            
-; Defined at line: 41
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -351,10 +319,10 @@ code size: 82
 199 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 116
+; Defined at line: 108
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -415,10 +383,10 @@ code size: 82
  53 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 143
+; Defined at line: 135
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0

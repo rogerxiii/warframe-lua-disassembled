@@ -8,13 +8,13 @@ code size: 77
 code size: 23
 code size: 13
 code size: 11
-code size: 445
+code size: 474
 code size: 297
 code size: 50
 code size: 159
 code size: 92
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\IronSkin.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\IronSkin.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -953,8 +953,8 @@ code size: 92
 279 [-]: GETGLOBAL R25 K39      ; R25 := gRegion
 280 [-]: SELF      R25 R25 K40  ; R26 := R25; R25 := R25["0xA559F558"]
 281 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-282 [-]: TEST      R25 0        ; if not R25 then PC := 441
-283 [-]: JMP       441          ; PC := 441
+282 [-]: TEST      R25 0        ; if not R25 then PC := 470
+283 [-]: JMP       470          ; PC := 470
 284 [-]: GETGLOBAL R25 K15      ; R25 := 0x400E7765
 285 [-]: GETGLOBAL R26 K16      ; R26 := _T
 286 [-]: GETTABLE  R26 R26 K79  ; R26 := R26["rhinoStompAugment"]
@@ -1109,20 +1109,49 @@ code size: 92
 435 [-]: LOADK     R38 K2       ; R38 := 0
 436 [-]: CALL      R37 2 1      ; R37(R38)
 437 [-]: JMP       300          ; PC := 300
-438 [-]: SELF      R37 R0 K96   ; R38 := R0; R37 := R0["0x8A94B221"]
-439 [-]: CALL      R37 2 1      ; R37(R38)
-440 [-]: JMP       445          ; PC := 445
-441 [-]: GETGLOBAL R37 K74      ; R37 := 0x201191EA
-442 [-]: LOADK     R38 K19      ; R38 := 1
-443 [-]: CALL      R37 2 1      ; R37(R38)
-444 [-]: JMP       441          ; PC := 441
-445 [-]: RETURN    R0 1         ; return 
+438 [-]: TEST      R28 0        ; if not R28 then PC := 467
+439 [-]: JMP       467          ; PC := 467
+440 [-]: GETUPVAL  R37 U1       ; R37 := U1
+441 [-]: SUB       R37 R37 R28  ; R37 := R37 - R28
+442 [-]: TEST      R6 0         ; if not R6 then PC := 467
+443 [-]: JMP       467          ; PC := 467
+444 [-]: GETGLOBAL R38 K15      ; R38 := 0x400E7765
+445 [-]: MOVE      R39 R1       ; R39 := R1
+446 [-]: CALL      R38 2 2      ; R38 := R38(R39)
+447 [-]: TEST      R38 1        ; if R38 then PC := 467
+448 [-]: JMP       467          ; PC := 467
+449 [-]: GETGLOBAL R38 K15      ; R38 := 0x400E7765
+450 [-]: SELF      R39 R1 K81   ; R40 := R1; R39 := R1["0xDE5882DD"]
+451 [-]: CALL      R39 2 0      ; R39,... := R39(R40)
+452 [-]: CALL      R38 0 2      ; R38 := R38(R39,...)
+453 [-]: TEST      R38 1        ; if R38 then PC := 467
+454 [-]: JMP       467          ; PC := 467
+455 [-]: SELF      R38 R1 K81   ; R39 := R1; R38 := R1["0xDE5882DD"]
+456 [-]: CALL      R38 2 2      ; R38 := R38(R39)
+457 [-]: SELF      R38 R38 K96  ; R39 := R38; R38 := R38["0xC013A81B"]
+458 [-]: CALL      R38 2 2      ; R38 := R38(R39)
+459 [-]: GETGLOBAL R39 K15      ; R39 := 0x400E7765
+460 [-]: MOVE      R40 R38      ; R40 := R38
+461 [-]: CALL      R39 2 2      ; R39 := R39(R40)
+462 [-]: TEST      R39 1        ; if R39 then PC := 467
+463 [-]: JMP       467          ; PC := 467
+464 [-]: SELF      R39 R38 K97  ; R40 := R38; R39 := R38["0xE5620A65"]
+465 [-]: MOVE      R41 R37      ; R41 := R37
+466 [-]: CALL      R39 3 1      ; R39(R40,R41)
+467 [-]: SELF      R39 R0 K98   ; R40 := R0; R39 := R0["0x8A94B221"]
+468 [-]: CALL      R39 2 1      ; R39(R40)
+469 [-]: JMP       474          ; PC := 474
+470 [-]: GETGLOBAL R39 K74      ; R39 := 0x201191EA
+471 [-]: LOADK     R40 K19      ; R40 := 1
+472 [-]: CALL      R39 2 1      ; R39(R40)
+473 [-]: JMP       470          ; PC := 470
+474 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 414
+; Defined at line: 426
 ; #Upvalues:       7
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1430,7 +1459,7 @@ code size: 92
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 504
+; Defined at line: 516
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1491,7 +1520,7 @@ code size: 92
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 517
+; Defined at line: 529
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1661,7 +1690,7 @@ code size: 92
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 563
+; Defined at line: 575
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

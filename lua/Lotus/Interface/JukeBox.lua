@@ -46,7 +46,7 @@ code size: 105
 code size: 4
 code size: 22
 code size: 14
-code size: 36
+code size: 38
 code size: 190
 code size: 301
 code size: 3
@@ -66,7 +66,7 @@ code size: 20
 code size: 52
 code size: 64
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\JukeBox.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\JukeBox.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -3046,13 +3046,13 @@ code size: 64
 ; Max Stack Size:  5
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: TEST      R1 1         ; if R1 then PC := 36
-  3 [-]: JMP       36           ; PC := 36
+  2 [-]: TEST      R1 1         ; if R1 then PC := 38
+  3 [-]: JMP       38           ; PC := 38
   4 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   5 [-]: GETUPVAL  R2 U1        ; R2 := U1
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: TEST      R1 1         ; if R1 then PC := 36
-  8 [-]: JMP       36           ; PC := 36
+  7 [-]: TEST      R1 1         ; if R1 then PC := 38
+  8 [-]: JMP       38           ; PC := 38
   9 [-]: GETGLOBAL R1 K1        ; R1 := 0xF595ADDE
  10 [-]: MOVE      R2 R0        ; R2 := R0
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -3060,27 +3060,29 @@ code size: 64
  13 [-]: GETUPVAL  R1 U1        ; R1 := U1
  14 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["mElements"]
  15 [-]: GETTABLE  R1 R1 R0     ; R1 := R1[R0]
- 16 [-]: GETTABLE  R2 R1 K3     ; R2 := R1["Locked"]
- 17 [-]: TEST      R2 1         ; if R2 then PC := 32
- 18 [-]: JMP       32           ; PC := 32
- 19 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 20 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["0x25992394"]
- 21 [-]: GETGLOBAL R3 K5        ; R3 := _G
- 22 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["UISound_ButtonSelect"]
- 23 [-]: CALL      R2 2 1       ; R2(R3)
- 24 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 25 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xCE468565"]
- 26 [-]: GETTABLE  R4 R1 K8     ; R4 := R1["Id"]
- 27 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 28 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 29 [-]: MOVE      R3 R0        ; R3 := R0
- 30 [-]: CALL      R2 2 1       ; R2(R3)
- 31 [-]: JMP       36           ; PC := 36
- 32 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 33 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["0x25992394"]
- 34 [-]: GETGLOBAL R3 K9        ; R3 := lockedSound
- 35 [-]: CALL      R2 2 1       ; R2(R3)
- 36 [-]: RETURN    R0 1         ; return 
+ 16 [-]: EQ        1 R1 K3      ; if R1 == nil then PC := 34
+ 17 [-]: JMP       34           ; PC := 34
+ 18 [-]: GETTABLE  R2 R1 K4     ; R2 := R1["Locked"]
+ 19 [-]: TEST      R2 1         ; if R2 then PC := 34
+ 20 [-]: JMP       34           ; PC := 34
+ 21 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 22 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["0x25992394"]
+ 23 [-]: GETGLOBAL R3 K6        ; R3 := _G
+ 24 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["UISound_ButtonSelect"]
+ 25 [-]: CALL      R2 2 1       ; R2(R3)
+ 26 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 27 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0xCE468565"]
+ 28 [-]: GETTABLE  R4 R1 K9     ; R4 := R1["Id"]
+ 29 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 30 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 31 [-]: MOVE      R3 R0        ; R3 := R0
+ 32 [-]: CALL      R2 2 1       ; R2(R3)
+ 33 [-]: JMP       38           ; PC := 38
+ 34 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 35 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["0x25992394"]
+ 36 [-]: GETGLOBAL R3 K10       ; R3 := lockedSound
+ 37 [-]: CALL      R2 2 1       ; R2(R3)
+ 38 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #31:

@@ -5,8 +5,6 @@ code size: 35
 code size: 123
 code size: 13
 code size: 17
-code size: 15
-code size: 53
 code size: 20
 code size: 30
 code size: 142
@@ -35,9 +33,10 @@ code size: 6
 code size: 12
 code size: 4
 code size: 57
-code size: 138
+code size: 140
 code size: 13
-code size: 52
+code size: 61
+code size: 3
 code size: 3
 code size: 155
 code size: 3
@@ -49,15 +48,14 @@ code size: 179
 code size: 131
 code size: 67
 code size: 252
-code size: 366
+code size: 354
 code size: 46
-code size: 389
-code size: 35
+code size: 351
 code size: 6
 code size: 3
-code size: 31
+code size: 27
 code size: 40
-code size: 23
+code size: 24
 code size: 335
 code size: 38
 code size: 4
@@ -66,8 +64,9 @@ code size: 10
 code size: 16
 code size: 27
 code size: 39
-code size: 925
-code size: 340
+code size: 281
+code size: 726
+code size: 349
 code size: 216
 code size: 78
 code size: 26
@@ -75,20 +74,22 @@ code size: 35
 code size: 42
 code size: 73
 code size: 64
-code size: 624
+code size: 620
 code size: 22
 code size: 29
 code size: 66
 code size: 105
 code size: 198
 code size: 113
-code size: 155
+code size: 149
 code size: 58
 code size: 17
-code size: 384
+code size: 382
 code size: 30
 code size: 36
-code size: 68
+code size: 41
+code size: 24
+code size: 111
 code size: 1
 code size: 39
 code size: 1
@@ -104,7 +105,7 @@ code size: 15
 code size: 1
 code size: 3
 code size: 21
-code size: 290
+code size: 274
 code size: 38
 code size: 26
 code size: 83
@@ -117,10 +118,10 @@ code size: 55
 code size: 63
 code size: 93
 code size: 25
-code size: 115
-code size: 69
+code size: 213
+code size: 88
 code size: 26
-code size: 175
+code size: 133
 code size: 19
 code size: 44
 code size: 23
@@ -128,22 +129,21 @@ code size: 111
 code size: 198
 code size: 718
 code size: 36
-code size: 935
+code size: 926
 code size: 5
 code size: 8
-code size: 144
+code size: 165
 code size: 3
 code size: 20
 code size: 34
-code size: 334
+code size: 332
 code size: 35
 code size: 36
 code size: 19
 code size: 39
-code size: 1089
+code size: 1086
 code size: 55
 code size: 169
-code size: 70
 code size: 50
 code size: 15
 code size: 1280
@@ -153,20 +153,18 @@ code size: 40
 code size: 51
 code size: 48
 code size: 33
-code size: 1258
+code size: 1249
 code size: 35
 code size: 3
 code size: 62
 code size: 5
 code size: 51
 code size: 5
-code size: 40
-code size: 75
-code size: 223
-code size: 14
+code size: 42
+code size: 76
+code size: 226
+code size: 15
 code size: 19
-code size: 2
-code size: 1
 code size: 17
 code size: 103
 code size: 4
@@ -179,13 +177,12 @@ code size: 68
 code size: 8
 code size: 1573
 code size: 30
-code size: 30
 code size: 36
 code size: 927
 code size: 27
 code size: 131
 code size: 27
-code size: 653
+code size: 681
 code size: 62
 code size: 4
 code size: 17
@@ -194,7 +191,7 @@ code size: 11
 code size: 113
 code size: 6
 code size: 6
-code size: 127
+code size: 145
 code size: 373
 code size: 6
 code size: 6
@@ -208,7 +205,7 @@ code size: 3
 code size: 5
 code size: 3
 code size: 65
-code size: 203
+code size: 215
 code size: 10
 code size: 3
 code size: 49
@@ -216,14 +213,14 @@ code size: 5
 code size: 3
 code size: 4
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\MapRedux.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\MapRedux.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  247
+; Max Stack Size:  244
 
   1 [-]: NEWTABLE  R4 0 0       ; R4 := {}
   2 [-]: LOADNIL   R5 R7        ; R5 := R6 := R7 := nil
@@ -607,621 +604,621 @@ code size: 4
 380 [-]: LOADK     R116 K17     ; R116 := 0
 381 [-]: MOVE      R117 R0      ; R117 := R0
 382 [-]: LOADNIL   R118 R122    ; R118 := R119 := R120 := R121 := R122 := nil
-383 [-]: NEWTABLE  R123 0 0     ; R123 := {}
-384 [-]: NEWTABLE  R124 0 9     ; R124 := {}
-385 [-]: SETTABLE  R124 K173 K7 ; R124["IsVisible"] := "0x0"
-386 [-]: SETTABLE  R124 K174 K17; R124["X"] := 0
-387 [-]: SETTABLE  R124 K175 K17; R124["Y"] := 0
-388 [-]: SETTABLE  R124 K176 K33; R124["SpeedMultiplier"] := 1
-389 [-]: SETTABLE  R124 K177 K17; R124["MinX"] := 0
-390 [-]: SETTABLE  R124 K178 K17; R124["MinY"] := 0
-391 [-]: SETTABLE  R124 K179 K17; R124["MaxX"] := 0
-392 [-]: SETTABLE  R124 K180 K17; R124["MaxY"] := 0
-393 [-]: SETTABLE  R124 K181 K17; R124["MouseMoves"] := 0
-394 [-]: LOADNIL   R125 R126    ; R125 := R126 := nil
-395 [-]: NEWTABLE  R127 0 5     ; R127 := {}
-396 [-]: SETTABLE  R127 K182 K183; R127["SpaceMultiplier"] := 0.36000001430511
-397 [-]: SETTABLE  R127 K184 K185; R127["ZoomedMultiplier"] := 0.28000000119209
-398 [-]: SETTABLE  R127 K186 K31; R127["SpaceHoveringMultiplier"] := 0.15000000596046
-399 [-]: SETTABLE  R127 K187 K188; R127["ZoomedHoveringMultiplier"] := 0.10000000149012
-400 [-]: SETTABLE  R127 K189 K33; R127["AspectRatio"] := 1
-401 [-]: NEWTABLE  R128 0 10    ; R128 := {}
-402 [-]: SETTABLE  R128 K190 K17; R128["Velocity"] := 0
-403 [-]: SETTABLE  R128 K191 K192; R128["LoopTime"] := 192800
-404 [-]: SETTABLE  R128 K193 K194; R128["Tag"] := "/Lotus/Language/Locations/Fortress"
-405 [-]: SETTABLE  R128 K35 K10 ; R128["Region"] := nil
-406 [-]: SETTABLE  R128 K195 K7 ; R128["ShowPath"] := "0x0"
-407 [-]: NEWTABLE  R129 0 0     ; R129 := {}
-408 [-]: SETTABLE  R128 K196 R129; R128["Splines"] := R129
-409 [-]: NEWTABLE  R129 0 0     ; R129 := {}
-410 [-]: SETTABLE  R128 K197 R129; R128["Sectors"] := R129
-411 [-]: NEWTABLE  R129 0 0     ; R129 := {}
-412 [-]: SETTABLE  R128 K198 R129; R128["Nodes"] := R129
-413 [-]: SETTABLE  R128 K199 K10; R128["SubLabelIndex"] := nil
-414 [-]: SETTABLE  R128 K200 K10; R128["SplinePoints"] := nil
-415 [-]: MOVE      R129 R0      ; R129 := R0
-416 [-]: NEWTABLE  R130 0 0     ; R130 := {}
-417 [-]: CLOSURE   R131 0       ; R131 := closure(Function #1)
-418 [-]: MOVE      R0 R43       ; R0 := R43
-419 [-]: MOVE      R0 R98       ; R0 := R98
-420 [-]: MOVE      R0 R41       ; R0 := R41
-421 [-]: MOVE      R0 R127      ; R0 := R127
-422 [-]: MOVE      R0 R124      ; R0 := R124
-423 [-]: CLOSURE   R132 1       ; R132 := closure(Function #2)
-424 [-]: CLOSURE   R133 2       ; R133 := closure(Function #3)
-425 [-]: MOVE      R0 R98       ; R0 := R98
-426 [-]: MOVE      R0 R60       ; R0 := R60
-427 [-]: CLOSURE   R134 3       ; R134 := closure(Function #4)
-428 [-]: MOVE      R0 R133      ; R0 := R133
-429 [-]: MOVE      R0 R124      ; R0 := R124
-430 [-]: MOVE      R0 R98       ; R0 := R98
-431 [-]: MOVE      R0 R132      ; R0 := R132
-432 [-]: MOVE      R0 R0        ; R0 := R0
-433 [-]: MOVE      R0 R127      ; R0 := R127
-434 [-]: CLOSURE   R135 4       ; R135 := closure(Function #5)
-435 [-]: CLOSURE   R136 5       ; R136 := closure(Function #6)
-436 [-]: MOVE      R0 R98       ; R0 := R98
-437 [-]: CLOSURE   R137 6       ; R137 := closure(Function #7)
-438 [-]: MOVE      R0 R98       ; R0 := R98
-439 [-]: MOVE      R0 R123      ; R0 := R123
-440 [-]: CLOSURE   R138 7       ; R138 := closure(Function #8)
-441 [-]: MOVE      R0 R123      ; R0 := R123
-442 [-]: MOVE      R0 R98       ; R0 := R98
-443 [-]: CLOSURE   R139 8       ; R139 := closure(Function #9)
-444 [-]: CLOSURE   R140 9       ; R140 := closure(Function #10)
-445 [-]: CLOSURE   R141 10      ; R141 := closure(Function #11)
-446 [-]: MOVE      R0 R95       ; R0 := R95
-447 [-]: MOVE      R0 R94       ; R0 := R94
-448 [-]: MOVE      R0 R96       ; R0 := R96
-449 [-]: MOVE      R0 R92       ; R0 := R92
-450 [-]: MOVE      R0 R82       ; R0 := R82
+383 [-]: NEWTABLE  R123 0 9     ; R123 := {}
+384 [-]: SETTABLE  R123 K173 K7 ; R123["IsVisible"] := "0x0"
+385 [-]: SETTABLE  R123 K174 K17; R123["X"] := 0
+386 [-]: SETTABLE  R123 K175 K17; R123["Y"] := 0
+387 [-]: SETTABLE  R123 K176 K33; R123["SpeedMultiplier"] := 1
+388 [-]: SETTABLE  R123 K177 K17; R123["MinX"] := 0
+389 [-]: SETTABLE  R123 K178 K17; R123["MinY"] := 0
+390 [-]: SETTABLE  R123 K179 K17; R123["MaxX"] := 0
+391 [-]: SETTABLE  R123 K180 K17; R123["MaxY"] := 0
+392 [-]: SETTABLE  R123 K181 K17; R123["MouseMoves"] := 0
+393 [-]: LOADNIL   R124 R125    ; R124 := R125 := nil
+394 [-]: NEWTABLE  R126 0 5     ; R126 := {}
+395 [-]: SETTABLE  R126 K182 K183; R126["SpaceMultiplier"] := 0.36000001430511
+396 [-]: SETTABLE  R126 K184 K185; R126["ZoomedMultiplier"] := 0.28000000119209
+397 [-]: SETTABLE  R126 K186 K31; R126["SpaceHoveringMultiplier"] := 0.15000000596046
+398 [-]: SETTABLE  R126 K187 K188; R126["ZoomedHoveringMultiplier"] := 0.10000000149012
+399 [-]: SETTABLE  R126 K189 K33; R126["AspectRatio"] := 1
+400 [-]: NEWTABLE  R127 0 10    ; R127 := {}
+401 [-]: SETTABLE  R127 K190 K17; R127["Velocity"] := 0
+402 [-]: SETTABLE  R127 K191 K192; R127["LoopTime"] := 192800
+403 [-]: SETTABLE  R127 K193 K194; R127["Tag"] := "/Lotus/Language/Locations/Fortress"
+404 [-]: SETTABLE  R127 K35 K10 ; R127["Region"] := nil
+405 [-]: SETTABLE  R127 K195 K7 ; R127["ShowPath"] := "0x0"
+406 [-]: NEWTABLE  R128 0 0     ; R128 := {}
+407 [-]: SETTABLE  R127 K196 R128; R127["Splines"] := R128
+408 [-]: NEWTABLE  R128 0 0     ; R128 := {}
+409 [-]: SETTABLE  R127 K197 R128; R127["Sectors"] := R128
+410 [-]: NEWTABLE  R128 0 0     ; R128 := {}
+411 [-]: SETTABLE  R127 K198 R128; R127["Nodes"] := R128
+412 [-]: SETTABLE  R127 K199 K10; R127["SubLabelIndex"] := nil
+413 [-]: SETTABLE  R127 K200 K10; R127["SplinePoints"] := nil
+414 [-]: MOVE      R128 R0      ; R128 := R0
+415 [-]: NEWTABLE  R129 0 0     ; R129 := {}
+416 [-]: CLOSURE   R130 0       ; R130 := closure(Function #1)
+417 [-]: MOVE      R0 R43       ; R0 := R43
+418 [-]: MOVE      R0 R98       ; R0 := R98
+419 [-]: MOVE      R0 R41       ; R0 := R41
+420 [-]: MOVE      R0 R126      ; R0 := R126
+421 [-]: MOVE      R0 R123      ; R0 := R123
+422 [-]: CLOSURE   R131 1       ; R131 := closure(Function #2)
+423 [-]: CLOSURE   R132 2       ; R132 := closure(Function #3)
+424 [-]: MOVE      R0 R98       ; R0 := R98
+425 [-]: MOVE      R0 R60       ; R0 := R60
+426 [-]: CLOSURE   R133 3       ; R133 := closure(Function #4)
+427 [-]: MOVE      R0 R132      ; R0 := R132
+428 [-]: MOVE      R0 R123      ; R0 := R123
+429 [-]: MOVE      R0 R98       ; R0 := R98
+430 [-]: MOVE      R0 R131      ; R0 := R131
+431 [-]: MOVE      R0 R0        ; R0 := R0
+432 [-]: MOVE      R0 R126      ; R0 := R126
+433 [-]: CLOSURE   R134 4       ; R134 := closure(Function #5)
+434 [-]: CLOSURE   R135 5       ; R135 := closure(Function #6)
+435 [-]: MOVE      R0 R98       ; R0 := R98
+436 [-]: CLOSURE   R136 6       ; R136 := closure(Function #7)
+437 [-]: CLOSURE   R137 7       ; R137 := closure(Function #8)
+438 [-]: CLOSURE   R138 8       ; R138 := closure(Function #9)
+439 [-]: MOVE      R0 R95       ; R0 := R95
+440 [-]: MOVE      R0 R94       ; R0 := R94
+441 [-]: MOVE      R0 R96       ; R0 := R96
+442 [-]: MOVE      R0 R92       ; R0 := R92
+443 [-]: MOVE      R0 R82       ; R0 := R82
+444 [-]: CLOSURE   R139 9       ; R139 := closure(Function #10)
+445 [-]: MOVE      R0 R22       ; R0 := R22
+446 [-]: MOVE      R0 R138      ; R0 := R138
+447 [-]: LOADK     R140 K48     ; R140 := ""
+448 [-]: CLOSURE   R141 10      ; R141 := closure(Function #11)
+449 [-]: MOVE      R0 R67       ; R0 := R67
+450 [-]: MOVE      R0 R140      ; R0 := R140
 451 [-]: CLOSURE   R142 11      ; R142 := closure(Function #12)
-452 [-]: MOVE      R0 R22       ; R0 := R22
-453 [-]: MOVE      R0 R141      ; R0 := R141
-454 [-]: LOADK     R143 K48     ; R143 := ""
-455 [-]: CLOSURE   R144 12      ; R144 := closure(Function #13)
+452 [-]: MOVE      R0 R140      ; R0 := R140
+453 [-]: MOVE      R0 R67       ; R0 := R67
+454 [-]: CLOSURE   R143 12      ; R143 := closure(Function #13)
+455 [-]: MOVE      R0 R98       ; R0 := R98
 456 [-]: MOVE      R0 R67       ; R0 := R67
-457 [-]: MOVE      R0 R143      ; R0 := R143
-458 [-]: CLOSURE   R145 13      ; R145 := closure(Function #14)
-459 [-]: MOVE      R0 R143      ; R0 := R143
-460 [-]: MOVE      R0 R67       ; R0 := R67
-461 [-]: CLOSURE   R146 14      ; R146 := closure(Function #15)
-462 [-]: MOVE      R0 R98       ; R0 := R98
-463 [-]: MOVE      R0 R67       ; R0 := R67
-464 [-]: MOVE      R0 R99       ; R0 := R99
-465 [-]: CLOSURE   R147 15      ; R147 := closure(Function #16)
-466 [-]: MOVE      R0 R145      ; R0 := R145
-467 [-]: SETGLOBAL R147 K201    ; OnTransmissionDone := R147
-468 [-]: SETGLOBAL R147 K202    ; 0x72BF0075 := R147
-469 [-]: CLOSURE   R147 16      ; R147 := closure(Function #17)
-470 [-]: MOVE      R0 R68       ; R0 := R68
-471 [-]: MOVE      R0 R106      ; R0 := R106
-472 [-]: MOVE      R0 R43       ; R0 := R43
-473 [-]: MOVE      R0 R147      ; R0 := R147
-474 [-]: MOVE      R0 R14       ; R0 := R14
-475 [-]: MOVE      R0 R98       ; R0 := R98
-476 [-]: MOVE      R0 R144      ; R0 := R144
-477 [-]: CLOSURE   R148 17      ; R148 := closure(Function #18)
-478 [-]: MOVE      R0 R96       ; R0 := R96
-479 [-]: CLOSURE   R149 18      ; R149 := closure(Function #19)
-480 [-]: MOVE      R0 R88       ; R0 := R88
-481 [-]: MOVE      R0 R95       ; R0 := R95
-482 [-]: MOVE      R0 R94       ; R0 := R94
-483 [-]: MOVE      R0 R2        ; R0 := R2
-484 [-]: MOVE      R0 R96       ; R0 := R96
-485 [-]: MOVE      R0 R148      ; R0 := R148
-486 [-]: CLOSURE   R150 19      ; R150 := closure(Function #20)
-487 [-]: MOVE      R0 R63       ; R0 := R63
-488 [-]: MOVE      R0 R88       ; R0 := R88
-489 [-]: CLOSURE   R151 20      ; R151 := closure(Function #21)
-490 [-]: MOVE      R0 R95       ; R0 := R95
-491 [-]: MOVE      R0 R94       ; R0 := R94
-492 [-]: MOVE      R0 R150      ; R0 := R150
-493 [-]: MOVE      R0 R149      ; R0 := R149
-494 [-]: MOVE      R0 R142      ; R0 := R142
-495 [-]: CLOSURE   R152 21      ; R152 := closure(Function #22)
-496 [-]: MOVE      R0 R26       ; R0 := R26
-497 [-]: MOVE      R0 R27       ; R0 := R27
-498 [-]: MOVE      R0 R83       ; R0 := R83
-499 [-]: MOVE      R0 R1        ; R0 := R1
-500 [-]: MOVE      R0 R99       ; R0 := R99
-501 [-]: MOVE      R0 R5        ; R0 := R5
-502 [-]: MOVE      R0 R93       ; R0 := R93
-503 [-]: MOVE      R0 R23       ; R0 := R23
-504 [-]: MOVE      R0 R4        ; R0 := R4
-505 [-]: MOVE      R0 R2        ; R0 := R2
-506 [-]: CLOSURE   R153 22      ; R153 := closure(Function #23)
-507 [-]: MOVE      R0 R20       ; R0 := R20
-508 [-]: NEWTABLE  R154 0 0     ; R154 := {}
-509 [-]: CLOSURE   R155 23      ; R155 := closure(Function #24)
-510 [-]: MOVE      R0 R87       ; R0 := R87
-511 [-]: MOVE      R0 R88       ; R0 := R88
-512 [-]: MOVE      R0 R154      ; R0 := R154
-513 [-]: MOVE      R0 R23       ; R0 := R23
-514 [-]: MOVE      R0 R98       ; R0 := R98
-515 [-]: MOVE      R0 R2        ; R0 := R2
-516 [-]: MOVE      R0 R4        ; R0 := R4
-517 [-]: CLOSURE   R156 24      ; R156 := closure(Function #25)
-518 [-]: MOVE      R0 R98       ; R0 := R98
-519 [-]: MOVE      R0 R28       ; R0 := R28
-520 [-]: MOVE      R0 R35       ; R0 := R35
-521 [-]: MOVE      R0 R154      ; R0 := R154
-522 [-]: MOVE      R0 R88       ; R0 := R88
-523 [-]: MOVE      R0 R87       ; R0 := R87
-524 [-]: CLOSURE   R157 25      ; R157 := closure(Function #26)
-525 [-]: CLOSURE   R158 26      ; R158 := closure(Function #27)
-526 [-]: MOVE      R0 R86       ; R0 := R86
-527 [-]: MOVE      R0 R157      ; R0 := R157
-528 [-]: MOVE      R0 R85       ; R0 := R85
-529 [-]: MOVE      R0 R98       ; R0 := R98
-530 [-]: MOVE      R0 R121      ; R0 := R121
-531 [-]: MOVE      R0 R99       ; R0 := R99
-532 [-]: MOVE      R0 R65       ; R0 := R65
-533 [-]: MOVE      R0 R93       ; R0 := R93
-534 [-]: MOVE      R0 R128      ; R0 := R128
-535 [-]: MOVE      R0 R100      ; R0 := R100
-536 [-]: MOVE      R0 R25       ; R0 := R25
-537 [-]: MOVE      R0 R106      ; R0 := R106
-538 [-]: MOVE      R0 R0        ; R0 := R0
-539 [-]: MOVE      R0 R134      ; R0 := R134
-540 [-]: MOVE      R0 R152      ; R0 := R152
-541 [-]: MOVE      R0 R82       ; R0 := R82
-542 [-]: MOVE      R0 R14       ; R0 := R14
-543 [-]: MOVE      R0 R60       ; R0 := R60
-544 [-]: MOVE      R0 R29       ; R0 := R29
-545 [-]: MOVE      R0 R151      ; R0 := R151
-546 [-]: MOVE      R0 R94       ; R0 := R94
-547 [-]: MOVE      R0 R153      ; R0 := R153
-548 [-]: MOVE      R0 R125      ; R0 := R125
-549 [-]: CLOSURE   R159 27      ; R159 := closure(Function #28)
-550 [-]: MOVE      R0 R158      ; R0 := R158
-551 [-]: SETGLOBAL R159 K203    ; Initialize := R159
-552 [-]: SETGLOBAL R159 K204    ; 0x62648036 := R159
-553 [-]: CLOSURE   R159 28      ; R159 := closure(Function #29)
-554 [-]: MOVE      R0 R99       ; R0 := R99
-555 [-]: CLOSURE   R160 29      ; R160 := closure(Function #30)
-556 [-]: MOVE      R0 R15       ; R0 := R15
-557 [-]: MOVE      R0 R73       ; R0 := R73
-558 [-]: MOVE      R0 R159      ; R0 := R159
-559 [-]: MOVE      R0 R17       ; R0 := R17
-560 [-]: MOVE      R0 R18       ; R0 := R18
-561 [-]: MOVE      R0 R16       ; R0 := R16
-562 [-]: MOVE      R0 R58       ; R0 := R58
-563 [-]: MOVE      R0 R98       ; R0 := R98
-564 [-]: MOVE      R0 R99       ; R0 := R99
-565 [-]: CLOSURE   R161 30      ; R161 := closure(Function #31)
-566 [-]: MOVE      R0 R157      ; R0 := R157
-567 [-]: CLOSURE   R85 31       ; R85 := closure(Function #32)
-568 [-]: MOVE      R0 R86       ; R0 := R86
-569 [-]: MOVE      R0 R121      ; R0 := R121
-570 [-]: MOVE      R0 R160      ; R0 := R160
-571 [-]: MOVE      R0 R98       ; R0 := R98
-572 [-]: MOVE      R0 R161      ; R0 := R161
-573 [-]: MOVE      R0 R158      ; R0 := R158
-574 [-]: CLOSURE   R162 32      ; R162 := closure(Function #33)
-575 [-]: MOVE      R0 R85       ; R0 := R85
-576 [-]: SETGLOBAL R162 K205    ; ToggleRailJack := R162
-577 [-]: SETGLOBAL R162 K206    ; 0xB7E5FD73 := R162
-578 [-]: CLOSURE   R162 33      ; R162 := closure(Function #34)
-579 [-]: MOVE      R0 R17       ; R0 := R17
-580 [-]: MOVE      R0 R86       ; R0 := R86
-581 [-]: MOVE      R0 R99       ; R0 := R99
-582 [-]: MOVE      R0 R122      ; R0 := R122
-583 [-]: MOVE      R0 R15       ; R0 := R15
-584 [-]: MOVE      R0 R66       ; R0 := R66
-585 [-]: MOVE      R0 R98       ; R0 := R98
-586 [-]: MOVE      R0 R136      ; R0 := R136
-587 [-]: MOVE      R0 R135      ; R0 := R135
-588 [-]: MOVE      R0 R35       ; R0 := R35
-589 [-]: MOVE      R0 R28       ; R0 := R28
-590 [-]: MOVE      R0 R121      ; R0 := R121
-591 [-]: MOVE      R0 R93       ; R0 := R93
-592 [-]: CLOSURE   R163 34      ; R163 := closure(Function #35)
-593 [-]: MOVE      R0 R162      ; R0 := R162
-594 [-]: SETGLOBAL R163 K207    ; UpdateButtons := R163
-595 [-]: SETGLOBAL R163 K208    ; 0xB97434A0 := R163
-596 [-]: CLOSURE   R122 35      ; R122 := closure(Function #36)
-597 [-]: MOVE      R0 R162      ; R0 := R162
-598 [-]: CLOSURE   R163 36      ; R163 := closure(Function #37)
-599 [-]: CLOSURE   R164 37      ; R164 := closure(Function #38)
-600 [-]: CLOSURE   R165 38      ; R165 := closure(Function #39)
-601 [-]: MOVE      R0 R84       ; R0 := R84
+457 [-]: MOVE      R0 R99       ; R0 := R99
+458 [-]: CLOSURE   R144 13      ; R144 := closure(Function #14)
+459 [-]: MOVE      R0 R142      ; R0 := R142
+460 [-]: SETGLOBAL R144 K201    ; OnTransmissionDone := R144
+461 [-]: SETGLOBAL R144 K202    ; 0x72BF0075 := R144
+462 [-]: CLOSURE   R144 14      ; R144 := closure(Function #15)
+463 [-]: MOVE      R0 R68       ; R0 := R68
+464 [-]: MOVE      R0 R106      ; R0 := R106
+465 [-]: MOVE      R0 R43       ; R0 := R43
+466 [-]: MOVE      R0 R144      ; R0 := R144
+467 [-]: MOVE      R0 R14       ; R0 := R14
+468 [-]: MOVE      R0 R98       ; R0 := R98
+469 [-]: MOVE      R0 R141      ; R0 := R141
+470 [-]: CLOSURE   R145 15      ; R145 := closure(Function #16)
+471 [-]: MOVE      R0 R96       ; R0 := R96
+472 [-]: CLOSURE   R146 16      ; R146 := closure(Function #17)
+473 [-]: MOVE      R0 R88       ; R0 := R88
+474 [-]: MOVE      R0 R95       ; R0 := R95
+475 [-]: MOVE      R0 R94       ; R0 := R94
+476 [-]: MOVE      R0 R2        ; R0 := R2
+477 [-]: MOVE      R0 R96       ; R0 := R96
+478 [-]: MOVE      R0 R145      ; R0 := R145
+479 [-]: CLOSURE   R147 17      ; R147 := closure(Function #18)
+480 [-]: MOVE      R0 R63       ; R0 := R63
+481 [-]: MOVE      R0 R88       ; R0 := R88
+482 [-]: CLOSURE   R148 18      ; R148 := closure(Function #19)
+483 [-]: MOVE      R0 R95       ; R0 := R95
+484 [-]: MOVE      R0 R94       ; R0 := R94
+485 [-]: MOVE      R0 R147      ; R0 := R147
+486 [-]: MOVE      R0 R146      ; R0 := R146
+487 [-]: MOVE      R0 R139      ; R0 := R139
+488 [-]: CLOSURE   R149 19      ; R149 := closure(Function #20)
+489 [-]: MOVE      R0 R26       ; R0 := R26
+490 [-]: MOVE      R0 R27       ; R0 := R27
+491 [-]: MOVE      R0 R83       ; R0 := R83
+492 [-]: MOVE      R0 R1        ; R0 := R1
+493 [-]: MOVE      R0 R99       ; R0 := R99
+494 [-]: MOVE      R0 R5        ; R0 := R5
+495 [-]: MOVE      R0 R93       ; R0 := R93
+496 [-]: MOVE      R0 R23       ; R0 := R23
+497 [-]: MOVE      R0 R4        ; R0 := R4
+498 [-]: MOVE      R0 R2        ; R0 := R2
+499 [-]: CLOSURE   R150 20      ; R150 := closure(Function #21)
+500 [-]: MOVE      R0 R20       ; R0 := R20
+501 [-]: NEWTABLE  R151 0 0     ; R151 := {}
+502 [-]: CLOSURE   R152 21      ; R152 := closure(Function #22)
+503 [-]: MOVE      R0 R87       ; R0 := R87
+504 [-]: MOVE      R0 R88       ; R0 := R88
+505 [-]: MOVE      R0 R151      ; R0 := R151
+506 [-]: MOVE      R0 R23       ; R0 := R23
+507 [-]: MOVE      R0 R98       ; R0 := R98
+508 [-]: MOVE      R0 R2        ; R0 := R2
+509 [-]: MOVE      R0 R4        ; R0 := R4
+510 [-]: CLOSURE   R153 22      ; R153 := closure(Function #23)
+511 [-]: MOVE      R0 R98       ; R0 := R98
+512 [-]: MOVE      R0 R28       ; R0 := R28
+513 [-]: MOVE      R0 R35       ; R0 := R35
+514 [-]: MOVE      R0 R151      ; R0 := R151
+515 [-]: MOVE      R0 R88       ; R0 := R88
+516 [-]: MOVE      R0 R87       ; R0 := R87
+517 [-]: CLOSURE   R154 23      ; R154 := closure(Function #24)
+518 [-]: CLOSURE   R155 24      ; R155 := closure(Function #25)
+519 [-]: MOVE      R0 R86       ; R0 := R86
+520 [-]: MOVE      R0 R154      ; R0 := R154
+521 [-]: MOVE      R0 R85       ; R0 := R85
+522 [-]: MOVE      R0 R98       ; R0 := R98
+523 [-]: MOVE      R0 R121      ; R0 := R121
+524 [-]: MOVE      R0 R99       ; R0 := R99
+525 [-]: MOVE      R0 R65       ; R0 := R65
+526 [-]: MOVE      R0 R93       ; R0 := R93
+527 [-]: MOVE      R0 R127      ; R0 := R127
+528 [-]: MOVE      R0 R100      ; R0 := R100
+529 [-]: MOVE      R0 R25       ; R0 := R25
+530 [-]: MOVE      R0 R106      ; R0 := R106
+531 [-]: MOVE      R0 R0        ; R0 := R0
+532 [-]: MOVE      R0 R133      ; R0 := R133
+533 [-]: MOVE      R0 R149      ; R0 := R149
+534 [-]: MOVE      R0 R82       ; R0 := R82
+535 [-]: MOVE      R0 R14       ; R0 := R14
+536 [-]: MOVE      R0 R60       ; R0 := R60
+537 [-]: MOVE      R0 R29       ; R0 := R29
+538 [-]: MOVE      R0 R148      ; R0 := R148
+539 [-]: MOVE      R0 R94       ; R0 := R94
+540 [-]: MOVE      R0 R150      ; R0 := R150
+541 [-]: MOVE      R0 R124      ; R0 := R124
+542 [-]: CLOSURE   R156 25      ; R156 := closure(Function #26)
+543 [-]: MOVE      R0 R155      ; R0 := R155
+544 [-]: SETGLOBAL R156 K203    ; Initialize := R156
+545 [-]: SETGLOBAL R156 K204    ; 0x62648036 := R156
+546 [-]: CLOSURE   R156 26      ; R156 := closure(Function #27)
+547 [-]: MOVE      R0 R99       ; R0 := R99
+548 [-]: CLOSURE   R157 27      ; R157 := closure(Function #28)
+549 [-]: MOVE      R0 R15       ; R0 := R15
+550 [-]: MOVE      R0 R73       ; R0 := R73
+551 [-]: MOVE      R0 R156      ; R0 := R156
+552 [-]: MOVE      R0 R17       ; R0 := R17
+553 [-]: MOVE      R0 R18       ; R0 := R18
+554 [-]: MOVE      R0 R16       ; R0 := R16
+555 [-]: MOVE      R0 R58       ; R0 := R58
+556 [-]: MOVE      R0 R98       ; R0 := R98
+557 [-]: MOVE      R0 R99       ; R0 := R99
+558 [-]: CLOSURE   R158 28      ; R158 := closure(Function #29)
+559 [-]: MOVE      R0 R154      ; R0 := R154
+560 [-]: CLOSURE   R85 29       ; R85 := closure(Function #30)
+561 [-]: MOVE      R0 R29       ; R0 := R29
+562 [-]: MOVE      R0 R86       ; R0 := R86
+563 [-]: MOVE      R0 R121      ; R0 := R121
+564 [-]: MOVE      R0 R157      ; R0 := R157
+565 [-]: MOVE      R0 R98       ; R0 := R98
+566 [-]: MOVE      R0 R158      ; R0 := R158
+567 [-]: MOVE      R0 R155      ; R0 := R155
+568 [-]: CLOSURE   R159 30      ; R159 := closure(Function #31)
+569 [-]: MOVE      R0 R85       ; R0 := R85
+570 [-]: SETGLOBAL R159 K205    ; ToggleRailJack := R159
+571 [-]: SETGLOBAL R159 K206    ; 0xB7E5FD73 := R159
+572 [-]: CLOSURE   R159 31      ; R159 := closure(Function #32)
+573 [-]: MOVE      R0 R17       ; R0 := R17
+574 [-]: MOVE      R0 R86       ; R0 := R86
+575 [-]: MOVE      R0 R99       ; R0 := R99
+576 [-]: MOVE      R0 R122      ; R0 := R122
+577 [-]: MOVE      R0 R15       ; R0 := R15
+578 [-]: MOVE      R0 R66       ; R0 := R66
+579 [-]: MOVE      R0 R98       ; R0 := R98
+580 [-]: MOVE      R0 R135      ; R0 := R135
+581 [-]: MOVE      R0 R134      ; R0 := R134
+582 [-]: MOVE      R0 R35       ; R0 := R35
+583 [-]: MOVE      R0 R28       ; R0 := R28
+584 [-]: MOVE      R0 R121      ; R0 := R121
+585 [-]: MOVE      R0 R93       ; R0 := R93
+586 [-]: CLOSURE   R160 32      ; R160 := closure(Function #33)
+587 [-]: MOVE      R0 R159      ; R0 := R159
+588 [-]: SETGLOBAL R160 K207    ; UpdateButtons := R160
+589 [-]: SETGLOBAL R160 K208    ; 0xB97434A0 := R160
+590 [-]: CLOSURE   R122 33      ; R122 := closure(Function #34)
+591 [-]: MOVE      R0 R159      ; R0 := R159
+592 [-]: CLOSURE   R160 34      ; R160 := closure(Function #35)
+593 [-]: CLOSURE   R161 35      ; R161 := closure(Function #36)
+594 [-]: CLOSURE   R162 36      ; R162 := closure(Function #37)
+595 [-]: MOVE      R0 R84       ; R0 := R84
+596 [-]: MOVE      R0 R88       ; R0 := R88
+597 [-]: CLOSURE   R163 37      ; R163 := closure(Function #38)
+598 [-]: MOVE      R0 R160      ; R0 := R160
+599 [-]: MOVE      R0 R21       ; R0 := R21
+600 [-]: MOVE      R0 R86       ; R0 := R86
+601 [-]: MOVE      R0 R127      ; R0 := R127
 602 [-]: MOVE      R0 R88       ; R0 := R88
-603 [-]: CLOSURE   R166 39      ; R166 := closure(Function #40)
-604 [-]: MOVE      R0 R163      ; R0 := R163
-605 [-]: MOVE      R0 R21       ; R0 := R21
-606 [-]: MOVE      R0 R86       ; R0 := R86
-607 [-]: MOVE      R0 R128      ; R0 := R128
-608 [-]: MOVE      R0 R88       ; R0 := R88
-609 [-]: CLOSURE   R167 40      ; R167 := closure(Function #41)
-610 [-]: MOVE      R0 R65       ; R0 := R65
-611 [-]: MOVE      R0 R86       ; R0 := R86
-612 [-]: MOVE      R0 R87       ; R0 := R87
-613 [-]: MOVE      R0 R93       ; R0 := R93
-614 [-]: CLOSURE   R168 41      ; R168 := closure(Function #42)
-615 [-]: MOVE      R0 R65       ; R0 := R65
-616 [-]: MOVE      R0 R99       ; R0 := R99
-617 [-]: MOVE      R0 R1        ; R0 := R1
-618 [-]: CLOSURE   R169 42      ; R169 := closure(Function #43)
-619 [-]: MOVE      R0 R98       ; R0 := R98
-620 [-]: MOVE      R0 R99       ; R0 := R99
-621 [-]: CLOSURE   R170 43      ; R170 := closure(Function #44)
-622 [-]: MOVE      R0 R7        ; R0 := R7
-623 [-]: MOVE      R0 R1        ; R0 := R1
-624 [-]: MOVE      R0 R139      ; R0 := R139
-625 [-]: MOVE      R0 R137      ; R0 := R137
-626 [-]: MOVE      R0 R8        ; R0 := R8
-627 [-]: MOVE      R0 R107      ; R0 := R107
-628 [-]: MOVE      R0 R87       ; R0 := R87
-629 [-]: MOVE      R0 R108      ; R0 := R108
-630 [-]: MOVE      R0 R101      ; R0 := R101
-631 [-]: MOVE      R0 R115      ; R0 := R115
-632 [-]: MOVE      R0 R86       ; R0 := R86
-633 [-]: MOVE      R0 R111      ; R0 := R111
-634 [-]: MOVE      R0 R113      ; R0 := R113
-635 [-]: MOVE      R0 R114      ; R0 := R114
-636 [-]: MOVE      R0 R74       ; R0 := R74
-637 [-]: MOVE      R0 R88       ; R0 := R88
-638 [-]: CLOSURE   R171 44      ; R171 := closure(Function #45)
-639 [-]: CLOSURE   R172 45      ; R172 := closure(Function #46)
-640 [-]: MOVE      R0 R2        ; R0 := R2
-641 [-]: MOVE      R0 R1        ; R0 := R1
-642 [-]: MOVE      R0 R4        ; R0 := R4
-643 [-]: MOVE      R0 R164      ; R0 := R164
-644 [-]: MOVE      R0 R3        ; R0 := R3
-645 [-]: MOVE      R0 R21       ; R0 := R21
-646 [-]: MOVE      R0 R128      ; R0 := R128
-647 [-]: MOVE      R0 R137      ; R0 := R137
-648 [-]: MOVE      R0 R171      ; R0 := R171
-649 [-]: MOVE      R0 R28       ; R0 := R28
-650 [-]: MOVE      R0 R139      ; R0 := R139
-651 [-]: MOVE      R0 R86       ; R0 := R86
-652 [-]: MOVE      R0 R25       ; R0 := R25
-653 [-]: MOVE      R0 R88       ; R0 := R88
-654 [-]: MOVE      R0 R98       ; R0 := R98
-655 [-]: MOVE      R0 R166      ; R0 := R166
-656 [-]: CLOSURE   R173 46      ; R173 := closure(Function #47)
-657 [-]: MOVE      R0 R43       ; R0 := R43
-658 [-]: SETGLOBAL R173 K209    ; RollOverRegionLabel := R173
-659 [-]: SETGLOBAL R173 K210    ; 0xE570BFF2 := R173
-660 [-]: CLOSURE   R173 47      ; R173 := closure(Function #48)
-661 [-]: MOVE      R0 R43       ; R0 := R43
-662 [-]: SETGLOBAL R173 K211    ; RollOutRegionLabel := R173
-663 [-]: SETGLOBAL R173 K212    ; 0xEFF9053C := R173
-664 [-]: CLOSURE   R173 48      ; R173 := closure(Function #49)
-665 [-]: MOVE      R0 R1        ; R0 := R1
-666 [-]: MOVE      R0 R99       ; R0 := R99
-667 [-]: MOVE      R0 R170      ; R0 := R170
-668 [-]: MOVE      R0 R172      ; R0 := R172
-669 [-]: MOVE      R0 R61       ; R0 := R61
-670 [-]: MOVE      R0 R2        ; R0 := R2
-671 [-]: MOVE      R0 R88       ; R0 := R88
-672 [-]: CLOSURE   R174 49      ; R174 := closure(Function #50)
-673 [-]: MOVE      R0 R7        ; R0 := R7
-674 [-]: MOVE      R0 R8        ; R0 := R8
-675 [-]: CLOSURE   R175 50      ; R175 := closure(Function #51)
-676 [-]: MOVE      R0 R28       ; R0 := R28
-677 [-]: MOVE      R0 R35       ; R0 := R35
+603 [-]: CLOSURE   R164 38      ; R164 := closure(Function #39)
+604 [-]: MOVE      R0 R65       ; R0 := R65
+605 [-]: MOVE      R0 R86       ; R0 := R86
+606 [-]: MOVE      R0 R87       ; R0 := R87
+607 [-]: MOVE      R0 R93       ; R0 := R93
+608 [-]: CLOSURE   R165 39      ; R165 := closure(Function #40)
+609 [-]: MOVE      R0 R65       ; R0 := R65
+610 [-]: MOVE      R0 R99       ; R0 := R99
+611 [-]: MOVE      R0 R1        ; R0 := R1
+612 [-]: CLOSURE   R166 40      ; R166 := closure(Function #41)
+613 [-]: MOVE      R0 R98       ; R0 := R98
+614 [-]: MOVE      R0 R99       ; R0 := R99
+615 [-]: CLOSURE   R167 41      ; R167 := closure(Function #42)
+616 [-]: MOVE      R0 R7        ; R0 := R7
+617 [-]: MOVE      R0 R136      ; R0 := R136
+618 [-]: MOVE      R0 R8        ; R0 := R8
+619 [-]: MOVE      R0 R107      ; R0 := R107
+620 [-]: MOVE      R0 R87       ; R0 := R87
+621 [-]: MOVE      R0 R108      ; R0 := R108
+622 [-]: MOVE      R0 R101      ; R0 := R101
+623 [-]: MOVE      R0 R115      ; R0 := R115
+624 [-]: MOVE      R0 R86       ; R0 := R86
+625 [-]: MOVE      R0 R111      ; R0 := R111
+626 [-]: MOVE      R0 R113      ; R0 := R113
+627 [-]: MOVE      R0 R114      ; R0 := R114
+628 [-]: MOVE      R0 R74       ; R0 := R74
+629 [-]: MOVE      R0 R88       ; R0 := R88
+630 [-]: CLOSURE   R168 42      ; R168 := closure(Function #43)
+631 [-]: CLOSURE   R169 43      ; R169 := closure(Function #44)
+632 [-]: MOVE      R0 R4        ; R0 := R4
+633 [-]: MOVE      R0 R161      ; R0 := R161
+634 [-]: MOVE      R0 R3        ; R0 := R3
+635 [-]: MOVE      R0 R21       ; R0 := R21
+636 [-]: MOVE      R0 R2        ; R0 := R2
+637 [-]: MOVE      R0 R127      ; R0 := R127
+638 [-]: MOVE      R0 R168      ; R0 := R168
+639 [-]: MOVE      R0 R1        ; R0 := R1
+640 [-]: MOVE      R0 R28       ; R0 := R28
+641 [-]: MOVE      R0 R136      ; R0 := R136
+642 [-]: MOVE      R0 R25       ; R0 := R25
+643 [-]: MOVE      R0 R86       ; R0 := R86
+644 [-]: MOVE      R0 R88       ; R0 := R88
+645 [-]: MOVE      R0 R98       ; R0 := R98
+646 [-]: MOVE      R0 R163      ; R0 := R163
+647 [-]: CLOSURE   R170 44      ; R170 := closure(Function #45)
+648 [-]: MOVE      R0 R43       ; R0 := R43
+649 [-]: SETGLOBAL R170 K209    ; RollOverRegionLabel := R170
+650 [-]: SETGLOBAL R170 K210    ; 0xE570BFF2 := R170
+651 [-]: CLOSURE   R170 45      ; R170 := closure(Function #46)
+652 [-]: MOVE      R0 R43       ; R0 := R43
+653 [-]: SETGLOBAL R170 K211    ; RollOutRegionLabel := R170
+654 [-]: SETGLOBAL R170 K212    ; 0xEFF9053C := R170
+655 [-]: CLOSURE   R170 46      ; R170 := closure(Function #47)
+656 [-]: MOVE      R0 R167      ; R0 := R167
+657 [-]: MOVE      R0 R169      ; R0 := R169
+658 [-]: MOVE      R0 R61       ; R0 := R61
+659 [-]: MOVE      R0 R2        ; R0 := R2
+660 [-]: MOVE      R0 R88       ; R0 := R88
+661 [-]: CLOSURE   R171 47      ; R171 := closure(Function #48)
+662 [-]: MOVE      R0 R7        ; R0 := R7
+663 [-]: MOVE      R0 R8        ; R0 := R8
+664 [-]: CLOSURE   R172 48      ; R172 := closure(Function #49)
+665 [-]: MOVE      R0 R28       ; R0 := R28
+666 [-]: MOVE      R0 R35       ; R0 := R35
+667 [-]: MOVE      R0 R32       ; R0 := R32
+668 [-]: CLOSURE   R173 49      ; R173 := closure(Function #50)
+669 [-]: MOVE      R0 R2        ; R0 := R2
+670 [-]: MOVE      R0 R86       ; R0 := R86
+671 [-]: MOVE      R0 R72       ; R0 := R72
+672 [-]: MOVE      R0 R108      ; R0 := R108
+673 [-]: MOVE      R0 R114      ; R0 := R114
+674 [-]: MOVE      R0 R74       ; R0 := R74
+675 [-]: MOVE      R0 R80       ; R0 := R80
+676 [-]: MOVE      R0 R98       ; R0 := R98
+677 [-]: MOVE      R0 R84       ; R0 := R84
 678 [-]: MOVE      R0 R32       ; R0 := R32
-679 [-]: CLOSURE   R176 51      ; R176 := closure(Function #52)
-680 [-]: MOVE      R0 R2        ; R0 := R2
-681 [-]: MOVE      R0 R86       ; R0 := R86
-682 [-]: MOVE      R0 R72       ; R0 := R72
-683 [-]: MOVE      R0 R108      ; R0 := R108
-684 [-]: MOVE      R0 R114      ; R0 := R114
-685 [-]: MOVE      R0 R74       ; R0 := R74
-686 [-]: MOVE      R0 R80       ; R0 := R80
-687 [-]: MOVE      R0 R98       ; R0 := R98
-688 [-]: MOVE      R0 R84       ; R0 := R84
-689 [-]: MOVE      R0 R32       ; R0 := R32
-690 [-]: MOVE      R0 R28       ; R0 := R28
-691 [-]: MOVE      R0 R35       ; R0 := R35
-692 [-]: MOVE      R0 R63       ; R0 := R63
-693 [-]: MOVE      R0 R120      ; R0 := R120
-694 [-]: MOVE      R0 R106      ; R0 := R106
-695 [-]: MOVE      R0 R119      ; R0 := R119
-696 [-]: MOVE      R0 R118      ; R0 := R118
-697 [-]: MOVE      R0 R29       ; R0 := R29
-698 [-]: MOVE      R0 R162      ; R0 := R162
-699 [-]: MOVE      R0 R175      ; R0 := R175
-700 [-]: MOVE      R0 R21       ; R0 := R21
-701 [-]: CLOSURE   R177 52      ; R177 := closure(Function #53)
-702 [-]: MOVE      R0 R2        ; R0 := R2
-703 [-]: MOVE      R0 R61       ; R0 := R61
-704 [-]: CLOSURE   R178 53      ; R178 := closure(Function #54)
-705 [-]: MOVE      R0 R86       ; R0 := R86
-706 [-]: MOVE      R0 R87       ; R0 := R87
-707 [-]: MOVE      R0 R93       ; R0 := R93
-708 [-]: MOVE      R0 R25       ; R0 := R25
-709 [-]: MOVE      R0 R103      ; R0 := R103
-710 [-]: MOVE      R0 R65       ; R0 := R65
-711 [-]: MOVE      R0 R99       ; R0 := R99
-712 [-]: MOVE      R0 R12       ; R0 := R12
-713 [-]: MOVE      R0 R81       ; R0 := R81
-714 [-]: MOVE      R0 R1        ; R0 := R1
-715 [-]: MOVE      R0 R163      ; R0 := R163
-716 [-]: MOVE      R0 R22       ; R0 := R22
-717 [-]: MOVE      R0 R137      ; R0 := R137
-718 [-]: MOVE      R0 R88       ; R0 := R88
+679 [-]: MOVE      R0 R28       ; R0 := R28
+680 [-]: MOVE      R0 R35       ; R0 := R35
+681 [-]: MOVE      R0 R63       ; R0 := R63
+682 [-]: MOVE      R0 R120      ; R0 := R120
+683 [-]: MOVE      R0 R106      ; R0 := R106
+684 [-]: MOVE      R0 R119      ; R0 := R119
+685 [-]: MOVE      R0 R118      ; R0 := R118
+686 [-]: MOVE      R0 R29       ; R0 := R29
+687 [-]: MOVE      R0 R159      ; R0 := R159
+688 [-]: MOVE      R0 R172      ; R0 := R172
+689 [-]: MOVE      R0 R21       ; R0 := R21
+690 [-]: CLOSURE   R174 50      ; R174 := closure(Function #51)
+691 [-]: MOVE      R0 R2        ; R0 := R2
+692 [-]: MOVE      R0 R61       ; R0 := R61
+693 [-]: CLOSURE   R175 51      ; R175 := closure(Function #52)
+694 [-]: MOVE      R0 R86       ; R0 := R86
+695 [-]: MOVE      R0 R99       ; R0 := R99
+696 [-]: MOVE      R0 R87       ; R0 := R87
+697 [-]: MOVE      R0 R93       ; R0 := R93
+698 [-]: MOVE      R0 R25       ; R0 := R25
+699 [-]: MOVE      R0 R103      ; R0 := R103
+700 [-]: CLOSURE   R176 52      ; R176 := closure(Function #53)
+701 [-]: MOVE      R0 R175      ; R0 := R175
+702 [-]: MOVE      R0 R65       ; R0 := R65
+703 [-]: MOVE      R0 R99       ; R0 := R99
+704 [-]: MOVE      R0 R12       ; R0 := R12
+705 [-]: MOVE      R0 R87       ; R0 := R87
+706 [-]: MOVE      R0 R81       ; R0 := R81
+707 [-]: MOVE      R0 R1        ; R0 := R1
+708 [-]: MOVE      R0 R160      ; R0 := R160
+709 [-]: MOVE      R0 R22       ; R0 := R22
+710 [-]: MOVE      R0 R88       ; R0 := R88
+711 [-]: MOVE      R0 R23       ; R0 := R23
+712 [-]: MOVE      R0 R174      ; R0 := R174
+713 [-]: MOVE      R0 R162      ; R0 := R162
+714 [-]: MOVE      R0 R27       ; R0 := R27
+715 [-]: CLOSURE   R177 53      ; R177 := closure(Function #54)
+716 [-]: MOVE      R0 R165      ; R0 := R165
+717 [-]: MOVE      R0 R164      ; R0 := R164
+718 [-]: MOVE      R0 R166      ; R0 := R166
 719 [-]: MOVE      R0 R23       ; R0 := R23
-720 [-]: MOVE      R0 R177      ; R0 := R177
-721 [-]: MOVE      R0 R165      ; R0 := R165
-722 [-]: MOVE      R0 R27       ; R0 := R27
-723 [-]: CLOSURE   R179 54      ; R179 := closure(Function #55)
-724 [-]: MOVE      R0 R168      ; R0 := R168
-725 [-]: MOVE      R0 R167      ; R0 := R167
-726 [-]: MOVE      R0 R169      ; R0 := R169
-727 [-]: MOVE      R0 R23       ; R0 := R23
-728 [-]: MOVE      R0 R98       ; R0 := R98
-729 [-]: MOVE      R0 R78       ; R0 := R78
-730 [-]: MOVE      R0 R79       ; R0 := R79
-731 [-]: MOVE      R0 R84       ; R0 := R84
-732 [-]: MOVE      R0 R86       ; R0 := R86
-733 [-]: MOVE      R0 R141      ; R0 := R141
-734 [-]: CLOSURE   R180 55      ; R180 := closure(Function #56)
-735 [-]: MOVE      R0 R99       ; R0 := R99
-736 [-]: MOVE      R0 R23       ; R0 := R23
-737 [-]: MOVE      R0 R24       ; R0 := R24
-738 [-]: MOVE      R0 R1        ; R0 := R1
-739 [-]: CLOSURE   R181 56      ; R181 := closure(Function #57)
-740 [-]: MOVE      R0 R79       ; R0 := R79
-741 [-]: MOVE      R0 R78       ; R0 := R78
-742 [-]: MOVE      R0 R180      ; R0 := R180
-743 [-]: MOVE      R0 R22       ; R0 := R22
-744 [-]: MOVE      R0 R179      ; R0 := R179
-745 [-]: MOVE      R0 R152      ; R0 := R152
-746 [-]: CLOSURE   R182 57      ; R182 := closure(Function #58)
-747 [-]: MOVE      R0 R98       ; R0 := R98
-748 [-]: CLOSURE   R183 58      ; R183 := closure(Function #59)
-749 [-]: MOVE      R0 R22       ; R0 := R22
-750 [-]: MOVE      R0 R2        ; R0 := R2
-751 [-]: MOVE      R0 R182      ; R0 := R182
-752 [-]: CLOSURE   R184 59      ; R184 := closure(Function #60)
+720 [-]: MOVE      R0 R98       ; R0 := R98
+721 [-]: MOVE      R0 R78       ; R0 := R78
+722 [-]: MOVE      R0 R79       ; R0 := R79
+723 [-]: MOVE      R0 R84       ; R0 := R84
+724 [-]: MOVE      R0 R86       ; R0 := R86
+725 [-]: MOVE      R0 R138      ; R0 := R138
+726 [-]: CLOSURE   R178 54      ; R178 := closure(Function #55)
+727 [-]: MOVE      R0 R99       ; R0 := R99
+728 [-]: MOVE      R0 R23       ; R0 := R23
+729 [-]: MOVE      R0 R24       ; R0 := R24
+730 [-]: MOVE      R0 R1        ; R0 := R1
+731 [-]: CLOSURE   R179 55      ; R179 := closure(Function #56)
+732 [-]: MOVE      R0 R79       ; R0 := R79
+733 [-]: MOVE      R0 R78       ; R0 := R78
+734 [-]: MOVE      R0 R178      ; R0 := R178
+735 [-]: MOVE      R0 R22       ; R0 := R22
+736 [-]: MOVE      R0 R177      ; R0 := R177
+737 [-]: MOVE      R0 R149      ; R0 := R149
+738 [-]: CLOSURE   R180 56      ; R180 := closure(Function #57)
+739 [-]: MOVE      R0 R98       ; R0 := R98
+740 [-]: CLOSURE   R181 57      ; R181 := closure(Function #58)
+741 [-]: MOVE      R0 R22       ; R0 := R22
+742 [-]: MOVE      R0 R2        ; R0 := R2
+743 [-]: MOVE      R0 R180      ; R0 := R180
+744 [-]: CLOSURE   R182 58      ; R182 := closure(Function #59)
+745 [-]: MOVE      R0 R22       ; R0 := R22
+746 [-]: MOVE      R0 R2        ; R0 := R2
+747 [-]: MOVE      R0 R99       ; R0 := R99
+748 [-]: MOVE      R0 R177      ; R0 := R177
+749 [-]: MOVE      R0 R87       ; R0 := R87
+750 [-]: CLOSURE   R183 59      ; R183 := closure(Function #60)
+751 [-]: MOVE      R0 R22       ; R0 := R22
+752 [-]: CLOSURE   R184 60      ; R184 := closure(Function #61)
 753 [-]: MOVE      R0 R22       ; R0 := R22
-754 [-]: MOVE      R0 R2        ; R0 := R2
-755 [-]: MOVE      R0 R99       ; R0 := R99
-756 [-]: MOVE      R0 R179      ; R0 := R179
-757 [-]: MOVE      R0 R87       ; R0 := R87
-758 [-]: CLOSURE   R185 60      ; R185 := closure(Function #61)
-759 [-]: MOVE      R0 R22       ; R0 := R22
-760 [-]: CLOSURE   R186 61      ; R186 := closure(Function #62)
-761 [-]: MOVE      R0 R22       ; R0 := R22
-762 [-]: MOVE      R0 R23       ; R0 := R23
-763 [-]: MOVE      R0 R164      ; R0 := R164
-764 [-]: MOVE      R0 R5        ; R0 := R5
-765 [-]: MOVE      R0 R1        ; R0 := R1
-766 [-]: MOVE      R0 R99       ; R0 := R99
-767 [-]: MOVE      R0 R11       ; R0 := R11
-768 [-]: MOVE      R0 R84       ; R0 := R84
-769 [-]: MOVE      R0 R128      ; R0 := R128
-770 [-]: MOVE      R0 R178      ; R0 := R178
-771 [-]: MOVE      R0 R86       ; R0 := R86
-772 [-]: MOVE      R0 R2        ; R0 := R2
-773 [-]: MOVE      R0 R10       ; R0 := R10
-774 [-]: MOVE      R0 R25       ; R0 := R25
-775 [-]: MOVE      R0 R98       ; R0 := R98
-776 [-]: MOVE      R0 R142      ; R0 := R142
-777 [-]: CLOSURE   R187 62      ; R187 := closure(Function #63)
-778 [-]: CLOSURE   R188 63      ; R188 := closure(Function #64)
-779 [-]: CLOSURE   R189 64      ; R189 := closure(Function #65)
-780 [-]: MOVE      R0 R23       ; R0 := R23
-781 [-]: CLOSURE   R190 65      ; R190 := closure(Function #66)
-782 [-]: MOVE      R0 R3        ; R0 := R3
-783 [-]: MOVE      R0 R61       ; R0 := R61
-784 [-]: MOVE      R0 R2        ; R0 := R2
-785 [-]: MOVE      R0 R187      ; R0 := R187
-786 [-]: MOVE      R0 R189      ; R0 := R189
-787 [-]: MOVE      R0 R188      ; R0 := R188
-788 [-]: CLOSURE   R191 66      ; R191 := closure(Function #67)
-789 [-]: MOVE      R0 R6        ; R0 := R6
-790 [-]: MOVE      R0 R1        ; R0 := R1
-791 [-]: MOVE      R0 R63       ; R0 := R63
-792 [-]: MOVE      R0 R64       ; R0 := R64
-793 [-]: MOVE      R0 R23       ; R0 := R23
-794 [-]: MOVE      R0 R128      ; R0 := R128
-795 [-]: CLOSURE   R192 67      ; R192 := closure(Function #68)
-796 [-]: MOVE      R0 R86       ; R0 := R86
-797 [-]: MOVE      R0 R63       ; R0 := R63
+754 [-]: MOVE      R0 R23       ; R0 := R23
+755 [-]: MOVE      R0 R161      ; R0 := R161
+756 [-]: MOVE      R0 R99       ; R0 := R99
+757 [-]: MOVE      R0 R11       ; R0 := R11
+758 [-]: MOVE      R0 R84       ; R0 := R84
+759 [-]: MOVE      R0 R5        ; R0 := R5
+760 [-]: MOVE      R0 R127      ; R0 := R127
+761 [-]: MOVE      R0 R176      ; R0 := R176
+762 [-]: MOVE      R0 R86       ; R0 := R86
+763 [-]: MOVE      R0 R2        ; R0 := R2
+764 [-]: MOVE      R0 R1        ; R0 := R1
+765 [-]: MOVE      R0 R10       ; R0 := R10
+766 [-]: MOVE      R0 R25       ; R0 := R25
+767 [-]: MOVE      R0 R98       ; R0 := R98
+768 [-]: MOVE      R0 R139      ; R0 := R139
+769 [-]: CLOSURE   R185 61      ; R185 := closure(Function #62)
+770 [-]: CLOSURE   R186 62      ; R186 := closure(Function #63)
+771 [-]: CLOSURE   R187 63      ; R187 := closure(Function #64)
+772 [-]: MOVE      R0 R23       ; R0 := R23
+773 [-]: CLOSURE   R188 64      ; R188 := closure(Function #65)
+774 [-]: MOVE      R0 R3        ; R0 := R3
+775 [-]: MOVE      R0 R61       ; R0 := R61
+776 [-]: MOVE      R0 R2        ; R0 := R2
+777 [-]: MOVE      R0 R185      ; R0 := R185
+778 [-]: MOVE      R0 R187      ; R0 := R187
+779 [-]: MOVE      R0 R186      ; R0 := R186
+780 [-]: CLOSURE   R189 65      ; R189 := closure(Function #66)
+781 [-]: MOVE      R0 R6        ; R0 := R6
+782 [-]: MOVE      R0 R1        ; R0 := R1
+783 [-]: MOVE      R0 R63       ; R0 := R63
+784 [-]: MOVE      R0 R64       ; R0 := R64
+785 [-]: MOVE      R0 R23       ; R0 := R23
+786 [-]: MOVE      R0 R127      ; R0 := R127
+787 [-]: CLOSURE   R190 66      ; R190 := closure(Function #67)
+788 [-]: MOVE      R0 R86       ; R0 := R86
+789 [-]: MOVE      R0 R63       ; R0 := R63
+790 [-]: MOVE      R0 R98       ; R0 := R98
+791 [-]: MOVE      R0 R88       ; R0 := R88
+792 [-]: MOVE      R0 R188      ; R0 := R188
+793 [-]: CLOSURE   R191 67      ; R191 := closure(Function #68)
+794 [-]: MOVE      R0 R75       ; R0 := R75
+795 [-]: MOVE      R0 R63       ; R0 := R63
+796 [-]: MOVE      R0 R98       ; R0 := R98
+797 [-]: CLOSURE   R192 68      ; R192 := closure(Function #69)
 798 [-]: MOVE      R0 R98       ; R0 := R98
-799 [-]: MOVE      R0 R88       ; R0 := R88
-800 [-]: MOVE      R0 R190      ; R0 := R190
-801 [-]: CLOSURE   R193 68      ; R193 := closure(Function #69)
-802 [-]: MOVE      R0 R75       ; R0 := R75
-803 [-]: MOVE      R0 R63       ; R0 := R63
-804 [-]: MOVE      R0 R23       ; R0 := R23
-805 [-]: MOVE      R0 R98       ; R0 := R98
-806 [-]: CLOSURE   R194 69      ; R194 := closure(Function #70)
-807 [-]: MOVE      R0 R98       ; R0 := R98
-808 [-]: MOVE      R0 R86       ; R0 := R86
-809 [-]: MOVE      R0 R22       ; R0 := R22
-810 [-]: CLOSURE   R195 70      ; R195 := closure(Function #71)
-811 [-]: MOVE      R0 R81       ; R0 := R81
-812 [-]: CLOSURE   R196 71      ; R196 := closure(Function #72)
-813 [-]: MOVE      R0 R98       ; R0 := R98
-814 [-]: MOVE      R0 R13       ; R0 := R13
-815 [-]: MOVE      R0 R86       ; R0 := R86
-816 [-]: MOVE      R0 R87       ; R0 := R87
-817 [-]: MOVE      R0 R128      ; R0 := R128
-818 [-]: MOVE      R0 R195      ; R0 := R195
-819 [-]: MOVE      R0 R173      ; R0 := R173
-820 [-]: MOVE      R0 R186      ; R0 := R186
-821 [-]: MOVE      R0 R191      ; R0 := R191
-822 [-]: MOVE      R0 R194      ; R0 := R194
-823 [-]: MOVE      R0 R155      ; R0 := R155
-824 [-]: MOVE      R0 R23       ; R0 := R23
-825 [-]: MOVE      R0 R181      ; R0 := R181
-826 [-]: MOVE      R0 R183      ; R0 := R183
-827 [-]: MOVE      R0 R184      ; R0 := R184
-828 [-]: MOVE      R0 R192      ; R0 := R192
-829 [-]: MOVE      R0 R193      ; R0 := R193
-830 [-]: MOVE      R0 R138      ; R0 := R138
-831 [-]: MOVE      R0 R176      ; R0 := R176
-832 [-]: MOVE      R0 R159      ; R0 := R159
-833 [-]: CLOSURE   R197 72      ; R197 := closure(Function #73)
-834 [-]: MOVE      R0 R30       ; R0 := R30
-835 [-]: MOVE      R0 R31       ; R0 := R31
-836 [-]: MOVE      R0 R196      ; R0 := R196
-837 [-]: CLOSURE   R198 73      ; R198 := closure(Function #74)
-838 [-]: MOVE      R0 R30       ; R0 := R30
-839 [-]: MOVE      R0 R101      ; R0 := R101
-840 [-]: MOVE      R0 R86       ; R0 := R86
-841 [-]: CLOSURE   R199 74      ; R199 := closure(Function #75)
-842 [-]: MOVE      R0 R99       ; R0 := R99
-843 [-]: MOVE      R0 R31       ; R0 := R31
-844 [-]: CLOSURE   R200 75      ; R200 := closure(Function #76)
-845 [-]: CLOSURE   R201 76      ; R201 := closure(Function #77)
-846 [-]: MOVE      R0 R32       ; R0 := R32
-847 [-]: MOVE      R0 R55       ; R0 := R55
-848 [-]: CLOSURE   R202 77      ; R202 := closure(Function #78)
-849 [-]: MOVE      R0 R96       ; R0 := R96
-850 [-]: CLOSURE   R203 78      ; R203 := closure(Function #79)
-851 [-]: MOVE      R0 R92       ; R0 := R92
-852 [-]: MOVE      R0 R96       ; R0 := R96
-853 [-]: CLOSURE   R204 79      ; R204 := closure(Function #80)
-854 [-]: MOVE      R0 R99       ; R0 := R99
-855 [-]: CLOSURE   R205 80      ; R205 := closure(Function #81)
-856 [-]: MOVE      R0 R99       ; R0 := R99
-857 [-]: CLOSURE   R206 81      ; R206 := closure(Function #82)
-858 [-]: MOVE      R0 R205      ; R0 := R205
-859 [-]: SETGLOBAL R206 K213    ; AbortConfirm := R206
-860 [-]: SETGLOBAL R206 K214    ; 0x575A9B5 := R206
-861 [-]: CLOSURE   R206 82      ; R206 := closure(Function #83)
-862 [-]: MOVE      R0 R98       ; R0 := R98
-863 [-]: SETGLOBAL R206 K215    ; ShowQuestConfirm := R206
-864 [-]: SETGLOBAL R206 K216    ; 0x3CC13774 := R206
-865 [-]: CLOSURE   R206 83      ; R206 := closure(Function #84)
-866 [-]: SETGLOBAL R206 K217    ; CanOpenRailJackMissionInCrewship := R206
-867 [-]: SETGLOBAL R206 K218    ; 0xA5B49CBE := R206
-868 [-]: CLOSURE   R206 84      ; R206 := closure(Function #85)
-869 [-]: CLOSURE   R207 85      ; R207 := closure(Function #86)
-870 [-]: MOVE      R0 R206      ; R0 := R206
-871 [-]: SETGLOBAL R207 K219    ; OnUpdateSessionSettings := R207
-872 [-]: SETGLOBAL R207 K220    ; 0xF1D13E45 := R207
-873 [-]: CLOSURE   R207 86      ; R207 := closure(Function #87)
-874 [-]: MOVE      R0 R86       ; R0 := R86
-875 [-]: MOVE      R0 R157      ; R0 := R157
-876 [-]: CLOSURE   R208 87      ; R208 := closure(Function #88)
-877 [-]: MOVE      R0 R103      ; R0 := R103
-878 [-]: MOVE      R0 R99       ; R0 := R99
-879 [-]: MOVE      R0 R98       ; R0 := R98
-880 [-]: MOVE      R0 R207      ; R0 := R207
-881 [-]: MOVE      R0 R2        ; R0 := R2
-882 [-]: MOVE      R0 R102      ; R0 := R102
-883 [-]: MOVE      R0 R206      ; R0 := R206
-884 [-]: MOVE      R0 R121      ; R0 := R121
-885 [-]: MOVE      R0 R86       ; R0 := R86
-886 [-]: MOVE      R0 R205      ; R0 := R205
-887 [-]: CLOSURE   R209 88      ; R209 := closure(Function #89)
-888 [-]: MOVE      R0 R49       ; R0 := R49
-889 [-]: MOVE      R0 R29       ; R0 := R29
-890 [-]: CLOSURE   R210 89      ; R210 := closure(Function #90)
-891 [-]: MOVE      R0 R49       ; R0 := R49
-892 [-]: MOVE      R0 R29       ; R0 := R29
-893 [-]: MOVE      R0 R208      ; R0 := R208
-894 [-]: SETGLOBAL R210 K221    ; ConfirmInvasionFaction := R210
-895 [-]: SETGLOBAL R210 K222    ; 0xFBA5AB02 := R210
-896 [-]: CLOSURE   R210 90      ; R210 := closure(Function #91)
-897 [-]: MOVE      R0 R50       ; R0 := R50
-898 [-]: MOVE      R0 R99       ; R0 := R99
-899 [-]: MOVE      R0 R57       ; R0 := R57
-900 [-]: MOVE      R0 R15       ; R0 := R15
-901 [-]: MOVE      R0 R29       ; R0 := R29
-902 [-]: CLOSURE   R211 91      ; R211 := closure(Function #92)
-903 [-]: MOVE      R0 R50       ; R0 := R50
-904 [-]: MOVE      R0 R29       ; R0 := R29
-905 [-]: MOVE      R0 R15       ; R0 := R15
-906 [-]: MOVE      R0 R208      ; R0 := R208
-907 [-]: MOVE      R0 R57       ; R0 := R57
-908 [-]: MOVE      R0 R99       ; R0 := R99
-909 [-]: SETGLOBAL R211 K223    ; OnVoidProjectionChosen := R211
-910 [-]: SETGLOBAL R211 K224    ; 0x771EFB2E := R211
-911 [-]: CLOSURE   R211 92      ; R211 := closure(Function #93)
-912 [-]: SETGLOBAL R211 K225    ; ConfirmIncompatibleOnlineMode := R211
-913 [-]: SETGLOBAL R211 K226    ; 0x2CA9D97 := R211
-914 [-]: CLOSURE   R211 93      ; R211 := closure(Function #94)
-915 [-]: MOVE      R0 R51       ; R0 := R51
-916 [-]: MOVE      R0 R98       ; R0 := R98
-917 [-]: MOVE      R0 R29       ; R0 := R29
-918 [-]: CLOSURE   R212 94      ; R212 := closure(Function #95)
-919 [-]: MOVE      R0 R51       ; R0 := R51
-920 [-]: MOVE      R0 R29       ; R0 := R29
-921 [-]: MOVE      R0 R99       ; R0 := R99
-922 [-]: MOVE      R0 R208      ; R0 := R208
-923 [-]: SETGLOBAL R212 K227    ; ConfirmNightmare := R212
-924 [-]: SETGLOBAL R212 K228    ; 0xEEB0C7FF := R212
-925 [-]: CLOSURE   R212 95      ; R212 := closure(Function #96)
-926 [-]: SETGLOBAL R212 K229    ; ConfirmRaidSelection := R212
-927 [-]: SETGLOBAL R212 K230    ; 0x1E9A77E0 := R212
-928 [-]: CLOSURE   R212 96      ; R212 := closure(Function #97)
-929 [-]: MOVE      R0 R58       ; R0 := R58
-930 [-]: MOVE      R0 R15       ; R0 := R15
-931 [-]: MOVE      R0 R29       ; R0 := R29
-932 [-]: CLOSURE   R213 97      ; R213 := closure(Function #98)
-933 [-]: MOVE      R0 R58       ; R0 := R58
-934 [-]: MOVE      R0 R29       ; R0 := R29
-935 [-]: MOVE      R0 R15       ; R0 := R15
-936 [-]: MOVE      R0 R208      ; R0 := R208
-937 [-]: SETGLOBAL R213 K231    ; ConfirmWagerSelection := R213
-938 [-]: SETGLOBAL R213 K232    ; 0xAB823E52 := R213
-939 [-]: CLOSURE   R213 98      ; R213 := closure(Function #99)
-940 [-]: MOVE      R0 R29       ; R0 := R29
-941 [-]: MOVE      R0 R53       ; R0 := R53
-942 [-]: MOVE      R0 R99       ; R0 := R99
-943 [-]: MOVE      R0 R102      ; R0 := R102
-944 [-]: MOVE      R0 R98       ; R0 := R98
-945 [-]: SETGLOBAL R213 K233    ; OpenSoloMission := R213
-946 [-]: SETGLOBAL R213 K234    ; 0xE6723C78 := R213
-947 [-]: CLOSURE   R213 99      ; R213 := closure(Function #100)
-948 [-]: MOVE      R0 R52       ; R0 := R52
-949 [-]: MOVE      R0 R29       ; R0 := R29
-950 [-]: MOVE      R0 R53       ; R0 := R53
-951 [-]: SETGLOBAL R213 K235    ; ConfirmSoloMission := R213
-952 [-]: SETGLOBAL R213 K236    ; 0xCDF468C2 := R213
-953 [-]: CLOSURE   R213 100     ; R213 := closure(Function #101)
-954 [-]: MOVE      R0 R29       ; R0 := R29
-955 [-]: MOVE      R0 R1        ; R0 := R1
-956 [-]: MOVE      R0 R54       ; R0 := R54
-957 [-]: MOVE      R0 R98       ; R0 := R98
-958 [-]: MOVE      R0 R208      ; R0 := R208
-959 [-]: MOVE      R0 R70       ; R0 := R70
-960 [-]: MOVE      R0 R99       ; R0 := R99
-961 [-]: SETGLOBAL R213 K237    ; GotHubInstances := R213
-962 [-]: SETGLOBAL R213 K238    ; 0x924FB8E9 := R213
-963 [-]: CLOSURE   R213 101     ; R213 := closure(Function #102)
-964 [-]: MOVE      R0 R70       ; R0 := R70
-965 [-]: MOVE      R0 R1        ; R0 := R1
-966 [-]: MOVE      R0 R29       ; R0 := R29
-967 [-]: CLOSURE   R214 102     ; R214 := closure(Function #103)
-968 [-]: MOVE      R0 R99       ; R0 := R99
-969 [-]: CLOSURE   R215 103     ; R215 := closure(Function #104)
-970 [-]: MOVE      R0 R99       ; R0 := R99
-971 [-]: MOVE      R0 R29       ; R0 := R29
-972 [-]: MOVE      R0 R54       ; R0 := R54
-973 [-]: MOVE      R0 R209      ; R0 := R209
-974 [-]: MOVE      R0 R210      ; R0 := R210
-975 [-]: MOVE      R0 R23       ; R0 := R23
-976 [-]: MOVE      R0 R1        ; R0 := R1
-977 [-]: MOVE      R0 R103      ; R0 := R103
-978 [-]: MOVE      R0 R52       ; R0 := R52
-979 [-]: MOVE      R0 R53       ; R0 := R53
-980 [-]: MOVE      R0 R69       ; R0 := R69
-981 [-]: MOVE      R0 R208      ; R0 := R208
-982 [-]: MOVE      R0 R204      ; R0 := R204
-983 [-]: MOVE      R0 R214      ; R0 := R214
-984 [-]: MOVE      R0 R98       ; R0 := R98
-985 [-]: MOVE      R0 R87       ; R0 := R87
-986 [-]: CLOSURE   R216 104     ; R216 := closure(Function #105)
-987 [-]: MOVE      R0 R99       ; R0 := R99
-988 [-]: MOVE      R0 R98       ; R0 := R98
-989 [-]: CLOSURE   R217 105     ; R217 := closure(Function #106)
-990 [-]: MOVE      R0 R43       ; R0 := R43
-991 [-]: MOVE      R0 R86       ; R0 := R86
-992 [-]: MOVE      R0 R99       ; R0 := R99
-993 [-]: MOVE      R0 R98       ; R0 := R98
+799 [-]: MOVE      R0 R86       ; R0 := R86
+800 [-]: MOVE      R0 R22       ; R0 := R22
+801 [-]: CLOSURE   R193 69      ; R193 := closure(Function #70)
+802 [-]: MOVE      R0 R81       ; R0 := R81
+803 [-]: CLOSURE   R194 70      ; R194 := closure(Function #71)
+804 [-]: MOVE      R0 R98       ; R0 := R98
+805 [-]: MOVE      R0 R13       ; R0 := R13
+806 [-]: MOVE      R0 R86       ; R0 := R86
+807 [-]: MOVE      R0 R87       ; R0 := R87
+808 [-]: MOVE      R0 R127      ; R0 := R127
+809 [-]: MOVE      R0 R193      ; R0 := R193
+810 [-]: MOVE      R0 R170      ; R0 := R170
+811 [-]: MOVE      R0 R184      ; R0 := R184
+812 [-]: MOVE      R0 R189      ; R0 := R189
+813 [-]: MOVE      R0 R192      ; R0 := R192
+814 [-]: MOVE      R0 R152      ; R0 := R152
+815 [-]: MOVE      R0 R23       ; R0 := R23
+816 [-]: MOVE      R0 R179      ; R0 := R179
+817 [-]: MOVE      R0 R181      ; R0 := R181
+818 [-]: MOVE      R0 R182      ; R0 := R182
+819 [-]: MOVE      R0 R190      ; R0 := R190
+820 [-]: MOVE      R0 R191      ; R0 := R191
+821 [-]: MOVE      R0 R173      ; R0 := R173
+822 [-]: MOVE      R0 R156      ; R0 := R156
+823 [-]: CLOSURE   R195 71      ; R195 := closure(Function #72)
+824 [-]: MOVE      R0 R30       ; R0 := R30
+825 [-]: MOVE      R0 R31       ; R0 := R31
+826 [-]: MOVE      R0 R194      ; R0 := R194
+827 [-]: CLOSURE   R196 72      ; R196 := closure(Function #73)
+828 [-]: MOVE      R0 R30       ; R0 := R30
+829 [-]: MOVE      R0 R101      ; R0 := R101
+830 [-]: MOVE      R0 R86       ; R0 := R86
+831 [-]: CLOSURE   R197 73      ; R197 := closure(Function #74)
+832 [-]: CLOSURE   R198 74      ; R198 := closure(Function #75)
+833 [-]: MOVE      R0 R98       ; R0 := R98
+834 [-]: CLOSURE   R199 75      ; R199 := closure(Function #76)
+835 [-]: MOVE      R0 R7        ; R0 := R7
+836 [-]: MOVE      R0 R198      ; R0 := R198
+837 [-]: MOVE      R0 R2        ; R0 := R2
+838 [-]: MOVE      R0 R86       ; R0 := R86
+839 [-]: MOVE      R0 R197      ; R0 := R197
+840 [-]: MOVE      R0 R5        ; R0 := R5
+841 [-]: MOVE      R0 R175      ; R0 := R175
+842 [-]: MOVE      R0 R31       ; R0 := R31
+843 [-]: CLOSURE   R200 76      ; R200 := closure(Function #77)
+844 [-]: CLOSURE   R201 77      ; R201 := closure(Function #78)
+845 [-]: MOVE      R0 R32       ; R0 := R32
+846 [-]: MOVE      R0 R55       ; R0 := R55
+847 [-]: CLOSURE   R202 78      ; R202 := closure(Function #79)
+848 [-]: MOVE      R0 R96       ; R0 := R96
+849 [-]: CLOSURE   R203 79      ; R203 := closure(Function #80)
+850 [-]: MOVE      R0 R92       ; R0 := R92
+851 [-]: MOVE      R0 R96       ; R0 := R96
+852 [-]: CLOSURE   R204 80      ; R204 := closure(Function #81)
+853 [-]: MOVE      R0 R99       ; R0 := R99
+854 [-]: CLOSURE   R205 81      ; R205 := closure(Function #82)
+855 [-]: MOVE      R0 R99       ; R0 := R99
+856 [-]: CLOSURE   R206 82      ; R206 := closure(Function #83)
+857 [-]: MOVE      R0 R205      ; R0 := R205
+858 [-]: SETGLOBAL R206 K213    ; AbortConfirm := R206
+859 [-]: SETGLOBAL R206 K214    ; 0x575A9B5 := R206
+860 [-]: CLOSURE   R206 83      ; R206 := closure(Function #84)
+861 [-]: MOVE      R0 R98       ; R0 := R98
+862 [-]: SETGLOBAL R206 K215    ; ShowQuestConfirm := R206
+863 [-]: SETGLOBAL R206 K216    ; 0x3CC13774 := R206
+864 [-]: CLOSURE   R206 84      ; R206 := closure(Function #85)
+865 [-]: SETGLOBAL R206 K217    ; CanOpenRailJackMissionInCrewship := R206
+866 [-]: SETGLOBAL R206 K218    ; 0xA5B49CBE := R206
+867 [-]: CLOSURE   R206 85      ; R206 := closure(Function #86)
+868 [-]: CLOSURE   R207 86      ; R207 := closure(Function #87)
+869 [-]: MOVE      R0 R206      ; R0 := R206
+870 [-]: SETGLOBAL R207 K219    ; OnUpdateSessionSettings := R207
+871 [-]: SETGLOBAL R207 K220    ; 0xF1D13E45 := R207
+872 [-]: CLOSURE   R207 87      ; R207 := closure(Function #88)
+873 [-]: MOVE      R0 R86       ; R0 := R86
+874 [-]: MOVE      R0 R154      ; R0 := R154
+875 [-]: CLOSURE   R208 88      ; R208 := closure(Function #89)
+876 [-]: MOVE      R0 R103      ; R0 := R103
+877 [-]: MOVE      R0 R99       ; R0 := R99
+878 [-]: MOVE      R0 R98       ; R0 := R98
+879 [-]: MOVE      R0 R207      ; R0 := R207
+880 [-]: MOVE      R0 R2        ; R0 := R2
+881 [-]: MOVE      R0 R102      ; R0 := R102
+882 [-]: MOVE      R0 R206      ; R0 := R206
+883 [-]: MOVE      R0 R121      ; R0 := R121
+884 [-]: MOVE      R0 R86       ; R0 := R86
+885 [-]: MOVE      R0 R205      ; R0 := R205
+886 [-]: CLOSURE   R209 89      ; R209 := closure(Function #90)
+887 [-]: MOVE      R0 R49       ; R0 := R49
+888 [-]: MOVE      R0 R29       ; R0 := R29
+889 [-]: CLOSURE   R210 90      ; R210 := closure(Function #91)
+890 [-]: MOVE      R0 R49       ; R0 := R49
+891 [-]: MOVE      R0 R29       ; R0 := R29
+892 [-]: MOVE      R0 R208      ; R0 := R208
+893 [-]: SETGLOBAL R210 K221    ; ConfirmInvasionFaction := R210
+894 [-]: SETGLOBAL R210 K222    ; 0xFBA5AB02 := R210
+895 [-]: CLOSURE   R210 91      ; R210 := closure(Function #92)
+896 [-]: MOVE      R0 R50       ; R0 := R50
+897 [-]: MOVE      R0 R99       ; R0 := R99
+898 [-]: MOVE      R0 R57       ; R0 := R57
+899 [-]: MOVE      R0 R15       ; R0 := R15
+900 [-]: MOVE      R0 R29       ; R0 := R29
+901 [-]: CLOSURE   R211 92      ; R211 := closure(Function #93)
+902 [-]: MOVE      R0 R50       ; R0 := R50
+903 [-]: MOVE      R0 R29       ; R0 := R29
+904 [-]: MOVE      R0 R15       ; R0 := R15
+905 [-]: MOVE      R0 R208      ; R0 := R208
+906 [-]: MOVE      R0 R57       ; R0 := R57
+907 [-]: MOVE      R0 R99       ; R0 := R99
+908 [-]: SETGLOBAL R211 K223    ; OnVoidProjectionChosen := R211
+909 [-]: SETGLOBAL R211 K224    ; 0x771EFB2E := R211
+910 [-]: CLOSURE   R211 93      ; R211 := closure(Function #94)
+911 [-]: SETGLOBAL R211 K225    ; ConfirmIncompatibleOnlineMode := R211
+912 [-]: SETGLOBAL R211 K226    ; 0x2CA9D97 := R211
+913 [-]: CLOSURE   R211 94      ; R211 := closure(Function #95)
+914 [-]: MOVE      R0 R51       ; R0 := R51
+915 [-]: MOVE      R0 R98       ; R0 := R98
+916 [-]: MOVE      R0 R29       ; R0 := R29
+917 [-]: CLOSURE   R212 95      ; R212 := closure(Function #96)
+918 [-]: MOVE      R0 R51       ; R0 := R51
+919 [-]: MOVE      R0 R29       ; R0 := R29
+920 [-]: MOVE      R0 R99       ; R0 := R99
+921 [-]: MOVE      R0 R208      ; R0 := R208
+922 [-]: SETGLOBAL R212 K227    ; ConfirmNightmare := R212
+923 [-]: SETGLOBAL R212 K228    ; 0xEEB0C7FF := R212
+924 [-]: CLOSURE   R212 96      ; R212 := closure(Function #97)
+925 [-]: SETGLOBAL R212 K229    ; ConfirmRaidSelection := R212
+926 [-]: SETGLOBAL R212 K230    ; 0x1E9A77E0 := R212
+927 [-]: CLOSURE   R212 97      ; R212 := closure(Function #98)
+928 [-]: MOVE      R0 R58       ; R0 := R58
+929 [-]: MOVE      R0 R15       ; R0 := R15
+930 [-]: MOVE      R0 R29       ; R0 := R29
+931 [-]: CLOSURE   R213 98      ; R213 := closure(Function #99)
+932 [-]: MOVE      R0 R58       ; R0 := R58
+933 [-]: MOVE      R0 R29       ; R0 := R29
+934 [-]: MOVE      R0 R15       ; R0 := R15
+935 [-]: MOVE      R0 R208      ; R0 := R208
+936 [-]: SETGLOBAL R213 K231    ; ConfirmWagerSelection := R213
+937 [-]: SETGLOBAL R213 K232    ; 0xAB823E52 := R213
+938 [-]: CLOSURE   R213 99      ; R213 := closure(Function #100)
+939 [-]: MOVE      R0 R29       ; R0 := R29
+940 [-]: MOVE      R0 R53       ; R0 := R53
+941 [-]: MOVE      R0 R99       ; R0 := R99
+942 [-]: MOVE      R0 R102      ; R0 := R102
+943 [-]: MOVE      R0 R98       ; R0 := R98
+944 [-]: SETGLOBAL R213 K233    ; OpenSoloMission := R213
+945 [-]: SETGLOBAL R213 K234    ; 0xE6723C78 := R213
+946 [-]: CLOSURE   R213 100     ; R213 := closure(Function #101)
+947 [-]: MOVE      R0 R52       ; R0 := R52
+948 [-]: MOVE      R0 R29       ; R0 := R29
+949 [-]: MOVE      R0 R53       ; R0 := R53
+950 [-]: SETGLOBAL R213 K235    ; ConfirmSoloMission := R213
+951 [-]: SETGLOBAL R213 K236    ; 0xCDF468C2 := R213
+952 [-]: CLOSURE   R213 101     ; R213 := closure(Function #102)
+953 [-]: MOVE      R0 R29       ; R0 := R29
+954 [-]: MOVE      R0 R1        ; R0 := R1
+955 [-]: MOVE      R0 R70       ; R0 := R70
+956 [-]: MOVE      R0 R99       ; R0 := R99
+957 [-]: MOVE      R0 R54       ; R0 := R54
+958 [-]: MOVE      R0 R98       ; R0 := R98
+959 [-]: MOVE      R0 R208      ; R0 := R208
+960 [-]: SETGLOBAL R213 K237    ; GotHubInstances := R213
+961 [-]: SETGLOBAL R213 K238    ; 0x924FB8E9 := R213
+962 [-]: CLOSURE   R213 102     ; R213 := closure(Function #103)
+963 [-]: MOVE      R0 R70       ; R0 := R70
+964 [-]: MOVE      R0 R1        ; R0 := R1
+965 [-]: MOVE      R0 R29       ; R0 := R29
+966 [-]: CLOSURE   R214 103     ; R214 := closure(Function #104)
+967 [-]: MOVE      R0 R99       ; R0 := R99
+968 [-]: CLOSURE   R215 104     ; R215 := closure(Function #105)
+969 [-]: MOVE      R0 R99       ; R0 := R99
+970 [-]: MOVE      R0 R29       ; R0 := R29
+971 [-]: MOVE      R0 R54       ; R0 := R54
+972 [-]: MOVE      R0 R209      ; R0 := R209
+973 [-]: MOVE      R0 R210      ; R0 := R210
+974 [-]: MOVE      R0 R23       ; R0 := R23
+975 [-]: MOVE      R0 R1        ; R0 := R1
+976 [-]: MOVE      R0 R103      ; R0 := R103
+977 [-]: MOVE      R0 R52       ; R0 := R52
+978 [-]: MOVE      R0 R53       ; R0 := R53
+979 [-]: MOVE      R0 R69       ; R0 := R69
+980 [-]: MOVE      R0 R208      ; R0 := R208
+981 [-]: MOVE      R0 R204      ; R0 := R204
+982 [-]: MOVE      R0 R214      ; R0 := R214
+983 [-]: MOVE      R0 R98       ; R0 := R98
+984 [-]: MOVE      R0 R87       ; R0 := R87
+985 [-]: CLOSURE   R216 105     ; R216 := closure(Function #106)
+986 [-]: MOVE      R0 R99       ; R0 := R99
+987 [-]: MOVE      R0 R98       ; R0 := R98
+988 [-]: CLOSURE   R217 106     ; R217 := closure(Function #107)
+989 [-]: MOVE      R0 R43       ; R0 := R43
+990 [-]: MOVE      R0 R86       ; R0 := R86
+991 [-]: MOVE      R0 R99       ; R0 := R99
+992 [-]: MOVE      R0 R98       ; R0 := R98
+993 [-]: MOVE      R0 R207      ; R0 := R207
 994 [-]: MOVE      R0 R216      ; R0 := R216
 995 [-]: MOVE      R0 R208      ; R0 := R208
 996 [-]: MOVE      R0 R11       ; R0 := R11
-997 [-]: MOVE      R0 R167      ; R0 := R167
+997 [-]: MOVE      R0 R164      ; R0 := R164
 998 [-]: MOVE      R0 R210      ; R0 := R210
 999 [-]: MOVE      R0 R209      ; R0 := R209
 1000 [-]: MOVE      R0 R212      ; R0 := R212
@@ -1231,387 +1228,387 @@ code size: 4
 1004 [-]: MOVE      R0 R103      ; R0 := R103
 1005 [-]: MOVE      R0 R52       ; R0 := R52
 1006 [-]: MOVE      R0 R53       ; R0 := R53
-1007 [-]: CLOSURE   R218 106     ; R218 := closure(Function #107)
-1008 [-]: MOVE      R0 R161      ; R0 := R161
+1007 [-]: CLOSURE   R218 107     ; R218 := closure(Function #108)
+1008 [-]: MOVE      R0 R158      ; R0 := R158
 1009 [-]: SETGLOBAL R218 K239    ; InitializeRailJackMap := R218
 1010 [-]: SETGLOBAL R218 K240    ; 0x6A247BFE := R218
-1011 [-]: CLOSURE   R218 107     ; R218 := closure(Function #108)
+1011 [-]: CLOSURE   R218 108     ; R218 := closure(Function #109)
 1012 [-]: MOVE      R0 R98       ; R0 := R98
 1013 [-]: SETGLOBAL R218 K241    ; InitialFade := R218
 1014 [-]: SETGLOBAL R218 K242    ; 0x44C4C57C := R218
-1015 [-]: CLOSURE   R218 108     ; R218 := closure(Function #109)
+1015 [-]: CLOSURE   R218 109     ; R218 := closure(Function #110)
 1016 [-]: MOVE      R0 R15       ; R0 := R15
 1017 [-]: MOVE      R0 R99       ; R0 := R99
 1018 [-]: MOVE      R0 R86       ; R0 := R86
 1019 [-]: MOVE      R0 R17       ; R0 := R17
 1020 [-]: MOVE      R0 R18       ; R0 := R18
-1021 [-]: MOVE      R0 R198      ; R0 := R198
-1022 [-]: MOVE      R0 R199      ; R0 := R199
-1023 [-]: MOVE      R0 R140      ; R0 := R140
-1024 [-]: MOVE      R0 R200      ; R0 := R200
-1025 [-]: MOVE      R0 R201      ; R0 := R201
-1026 [-]: MOVE      R0 R202      ; R0 := R202
-1027 [-]: MOVE      R0 R162      ; R0 := R162
-1028 [-]: SETGLOBAL R218 K243    ; InitializeMore := R218
-1029 [-]: SETGLOBAL R218 K244    ; 0x3479F2F3 := R218
-1030 [-]: CLOSURE   R218 109     ; R218 := closure(Function #110)
-1031 [-]: MOVE      R0 R160      ; R0 := R160
-1032 [-]: SETGLOBAL R218 K245    ; Shutdown := R218
-1033 [-]: SETGLOBAL R218 K246    ; 0x3C577FA3 := R218
+1021 [-]: MOVE      R0 R1        ; R0 := R1
+1022 [-]: MOVE      R0 R7        ; R0 := R7
+1023 [-]: MOVE      R0 R2        ; R0 := R2
+1024 [-]: MOVE      R0 R5        ; R0 := R5
+1025 [-]: MOVE      R0 R196      ; R0 := R196
+1026 [-]: MOVE      R0 R199      ; R0 := R199
+1027 [-]: MOVE      R0 R137      ; R0 := R137
+1028 [-]: MOVE      R0 R200      ; R0 := R200
+1029 [-]: MOVE      R0 R201      ; R0 := R201
+1030 [-]: MOVE      R0 R202      ; R0 := R202
+1031 [-]: MOVE      R0 R159      ; R0 := R159
+1032 [-]: SETGLOBAL R218 K243    ; InitializeMore := R218
+1033 [-]: SETGLOBAL R218 K244    ; 0x3479F2F3 := R218
 1034 [-]: CLOSURE   R218 110     ; R218 := closure(Function #111)
-1035 [-]: MOVE      R0 R13       ; R0 := R13
-1036 [-]: CLOSURE   R219 111     ; R219 := closure(Function #112)
-1037 [-]: MOVE      R0 R98       ; R0 := R98
-1038 [-]: CLOSURE   R220 112     ; R220 := closure(Function #113)
-1039 [-]: MOVE      R0 R43       ; R0 := R43
-1040 [-]: MOVE      R0 R2        ; R0 := R2
-1041 [-]: MOVE      R0 R3        ; R0 := R3
-1042 [-]: MOVE      R0 R86       ; R0 := R86
-1043 [-]: MOVE      R0 R61       ; R0 := R61
-1044 [-]: MOVE      R0 R124      ; R0 := R124
-1045 [-]: MOVE      R0 R25       ; R0 := R25
-1046 [-]: MOVE      R0 R35       ; R0 := R35
-1047 [-]: MOVE      R0 R28       ; R0 := R28
-1048 [-]: MOVE      R0 R88       ; R0 := R88
-1049 [-]: MOVE      R0 R41       ; R0 := R41
-1050 [-]: MOVE      R0 R29       ; R0 := R29
-1051 [-]: MOVE      R0 R98       ; R0 := R98
-1052 [-]: MOVE      R0 R62       ; R0 := R62
-1053 [-]: MOVE      R0 R21       ; R0 := R21
-1054 [-]: CLOSURE   R221 113     ; R221 := closure(Function #114)
-1055 [-]: MOVE      R0 R86       ; R0 := R86
-1056 [-]: MOVE      R0 R108      ; R0 := R108
-1057 [-]: MOVE      R0 R74       ; R0 := R74
-1058 [-]: MOVE      R0 R41       ; R0 := R41
-1059 [-]: MOVE      R0 R35       ; R0 := R35
-1060 [-]: MOVE      R0 R116      ; R0 := R116
-1061 [-]: CLOSURE   R222 114     ; R222 := closure(Function #115)
-1062 [-]: MOVE      R0 R95       ; R0 := R95
-1063 [-]: MOVE      R0 R94       ; R0 := R94
-1064 [-]: MOVE      R0 R96       ; R0 := R96
-1065 [-]: MOVE      R0 R219      ; R0 := R219
-1066 [-]: MOVE      R0 R1        ; R0 := R1
-1067 [-]: MOVE      R0 R22       ; R0 := R22
-1068 [-]: MOVE      R0 R177      ; R0 := R177
-1069 [-]: MOVE      R0 R63       ; R0 := R63
-1070 [-]: MOVE      R0 R190      ; R0 := R190
-1071 [-]: MOVE      R0 R220      ; R0 := R220
-1072 [-]: MOVE      R0 R92       ; R0 := R92
-1073 [-]: MOVE      R0 R98       ; R0 := R98
-1074 [-]: MOVE      R0 R141      ; R0 := R141
-1075 [-]: MOVE      R0 R187      ; R0 := R187
-1076 [-]: MOVE      R0 R88       ; R0 := R88
-1077 [-]: MOVE      R0 R32       ; R0 := R32
-1078 [-]: MOVE      R0 R86       ; R0 := R86
-1079 [-]: MOVE      R0 R33       ; R0 := R33
-1080 [-]: MOVE      R0 R34       ; R0 := R34
-1081 [-]: MOVE      R0 R35       ; R0 := R35
-1082 [-]: MOVE      R0 R36       ; R0 := R36
-1083 [-]: MOVE      R0 R175      ; R0 := R175
-1084 [-]: MOVE      R0 R45       ; R0 := R45
-1085 [-]: MOVE      R0 R13       ; R0 := R13
-1086 [-]: MOVE      R0 R74       ; R0 := R74
-1087 [-]: MOVE      R0 R41       ; R0 := R41
-1088 [-]: MOVE      R0 R108      ; R0 := R108
-1089 [-]: MOVE      R0 R114      ; R0 := R114
-1090 [-]: MOVE      R0 R115      ; R0 := R115
-1091 [-]: MOVE      R0 R116      ; R0 := R116
-1092 [-]: MOVE      R0 R221      ; R0 := R221
-1093 [-]: MOVE      R0 R2        ; R0 := R2
-1094 [-]: MOVE      R0 R76       ; R0 := R76
-1095 [-]: MOVE      R0 R43       ; R0 := R43
-1096 [-]: MOVE      R0 R39       ; R0 := R39
-1097 [-]: MOVE      R0 R87       ; R0 := R87
-1098 [-]: MOVE      R0 R77       ; R0 := R77
-1099 [-]: MOVE      R0 R40       ; R0 := R40
-1100 [-]: MOVE      R0 R117      ; R0 := R117
-1101 [-]: CLOSURE   R223 115     ; R223 := closure(Function #116)
-1102 [-]: MOVE      R0 R72       ; R0 := R72
-1103 [-]: MOVE      R0 R61       ; R0 := R61
-1104 [-]: MOVE      R0 R98       ; R0 := R98
-1105 [-]: CLOSURE   R224 116     ; R224 := closure(Function #117)
-1106 [-]: MOVE      R0 R128      ; R0 := R128
-1107 [-]: MOVE      R0 R1        ; R0 := R1
-1108 [-]: MOVE      R0 R28       ; R0 := R28
-1109 [-]: MOVE      R0 R41       ; R0 := R41
-1110 [-]: MOVE      R0 R120      ; R0 := R120
-1111 [-]: MOVE      R0 R32       ; R0 := R32
-1112 [-]: MOVE      R0 R139      ; R0 := R139
-1113 [-]: MOVE      R0 R21       ; R0 := R21
-1114 [-]: MOVE      R0 R88       ; R0 := R88
-1115 [-]: MOVE      R0 R64       ; R0 := R64
-1116 [-]: MOVE      R0 R190      ; R0 := R190
-1117 [-]: MOVE      R0 R63       ; R0 := R63
-1118 [-]: CLOSURE   R225 117     ; R225 := closure(Function #118)
-1119 [-]: MOVE      R0 R20       ; R0 := R20
-1120 [-]: MOVE      R0 R2        ; R0 := R2
-1121 [-]: CLOSURE   R226 118     ; R226 := closure(Function #119)
-1122 [-]: MOVE      R0 R18       ; R0 := R18
-1123 [-]: MOVE      R0 R35       ; R0 := R35
-1124 [-]: MOVE      R0 R153      ; R0 := R153
-1125 [-]: MOVE      R0 R2        ; R0 := R2
-1126 [-]: MOVE      R0 R41       ; R0 := R41
-1127 [-]: CLOSURE   R227 119     ; R227 := closure(Function #120)
-1128 [-]: MOVE      R0 R98       ; R0 := R98
-1129 [-]: CLOSURE   R228 120     ; R228 := closure(Function #121)
-1130 [-]: MOVE      R0 R13       ; R0 := R13
-1131 [-]: MOVE      R0 R35       ; R0 := R35
-1132 [-]: MOVE      R0 R37       ; R0 := R37
-1133 [-]: MOVE      R0 R38       ; R0 := R38
-1134 [-]: MOVE      R0 R33       ; R0 := R33
-1135 [-]: MOVE      R0 R34       ; R0 := R34
-1136 [-]: MOVE      R0 R43       ; R0 := R43
-1137 [-]: MOVE      R0 R39       ; R0 := R39
-1138 [-]: MOVE      R0 R76       ; R0 := R76
-1139 [-]: MOVE      R0 R40       ; R0 := R40
-1140 [-]: MOVE      R0 R2        ; R0 := R2
-1141 [-]: MOVE      R0 R77       ; R0 := R77
-1142 [-]: MOVE      R0 R95       ; R0 := R95
-1143 [-]: MOVE      R0 R94       ; R0 := R94
-1144 [-]: MOVE      R0 R88       ; R0 := R88
-1145 [-]: MOVE      R0 R21       ; R0 := R21
-1146 [-]: MOVE      R0 R46       ; R0 := R46
-1147 [-]: MOVE      R0 R47       ; R0 := R47
-1148 [-]: MOVE      R0 R126      ; R0 := R126
-1149 [-]: MOVE      R0 R22       ; R0 := R22
-1150 [-]: MOVE      R0 R117      ; R0 := R117
-1151 [-]: MOVE      R0 R3        ; R0 := R3
-1152 [-]: MOVE      R0 R63       ; R0 := R63
-1153 [-]: MOVE      R0 R227      ; R0 := R227
-1154 [-]: MOVE      R0 R87       ; R0 := R87
-1155 [-]: MOVE      R0 R8        ; R0 := R8
-1156 [-]: MOVE      R0 R75       ; R0 := R75
-1157 [-]: MOVE      R0 R156      ; R0 := R156
-1158 [-]: MOVE      R0 R226      ; R0 := R226
-1159 [-]: MOVE      R0 R128      ; R0 := R128
-1160 [-]: MOVE      R0 R98       ; R0 := R98
-1161 [-]: MOVE      R0 R133      ; R0 := R133
-1162 [-]: MOVE      R0 R67       ; R0 := R67
-1163 [-]: MOVE      R0 R146      ; R0 := R146
-1164 [-]: MOVE      R0 R223      ; R0 := R223
-1165 [-]: MOVE      R0 R25       ; R0 := R25
-1166 [-]: MOVE      R0 R224      ; R0 := R224
-1167 [-]: MOVE      R0 R74       ; R0 := R74
-1168 [-]: MOVE      R0 R108      ; R0 := R108
-1169 [-]: MOVE      R0 R73       ; R0 := R73
-1170 [-]: GETGLOBAL R229 K12     ; R229 := 0x221C9700
-1171 [-]: CALL      R229 1 2     ; R229 := R229()
-1172 [-]: CLOSURE   R230 121     ; R230 := closure(Function #122)
-1173 [-]: MOVE      R0 R90       ; R0 := R90
-1174 [-]: MOVE      R0 R92       ; R0 := R92
-1175 [-]: MOVE      R0 R8        ; R0 := R8
-1176 [-]: MOVE      R0 R219      ; R0 := R219
-1177 [-]: MOVE      R0 R229      ; R0 := R229
-1178 [-]: CLOSURE   R125 122     ; R125 := closure(Function #123)
-1179 [-]: MOVE      R0 R124      ; R0 := R124
-1180 [-]: MOVE      R0 R22       ; R0 := R22
-1181 [-]: MOVE      R0 R98       ; R0 := R98
-1182 [-]: CLOSURE   R231 123     ; R231 := closure(Function #124)
-1183 [-]: MOVE      R0 R16       ; R0 := R16
-1184 [-]: MOVE      R0 R41       ; R0 := R41
-1185 [-]: MOVE      R0 R98       ; R0 := R98
-1186 [-]: CLOSURE   R232 124     ; R232 := closure(Function #125)
-1187 [-]: MOVE      R0 R58       ; R0 := R58
-1188 [-]: MOVE      R0 R22       ; R0 := R22
-1189 [-]: CLOSURE   R233 125     ; R233 := closure(Function #126)
-1190 [-]: MOVE      R0 R98       ; R0 := R98
-1191 [-]: MOVE      R0 R86       ; R0 := R86
-1192 [-]: SETTABLE  R86 K247 R233; R86["IntersectVoidPlane"] := R233
-1193 [-]: CLOSURE   R233 126     ; R233 := closure(Function #127)
-1194 [-]: MOVE      R0 R86       ; R0 := R86
-1195 [-]: SETTABLE  R86 K248 R233; R86["SetDistortions"] := R233
-1196 [-]: CLOSURE   R233 127     ; R233 := closure(Function #128)
-1197 [-]: MOVE      R0 R106      ; R0 := R106
-1198 [-]: MOVE      R0 R13       ; R0 := R13
-1199 [-]: MOVE      R0 R86       ; R0 := R86
-1200 [-]: MOVE      R0 R28       ; R0 := R28
-1201 [-]: MOVE      R0 R35       ; R0 := R35
-1202 [-]: MOVE      R0 R41       ; R0 := R41
-1203 [-]: MOVE      R0 R2        ; R0 := R2
-1204 [-]: MOVE      R0 R3        ; R0 := R3
-1205 [-]: MOVE      R0 R22       ; R0 := R22
-1206 [-]: MOVE      R0 R105      ; R0 := R105
-1207 [-]: MOVE      R0 R56       ; R0 := R56
-1208 [-]: MOVE      R0 R98       ; R0 := R98
-1209 [-]: MOVE      R0 R111      ; R0 := R111
-1210 [-]: MOVE      R0 R112      ; R0 := R112
-1211 [-]: MOVE      R0 R44       ; R0 := R44
-1212 [-]: MOVE      R0 R18       ; R0 := R18
-1213 [-]: MOVE      R0 R19       ; R0 := R19
-1214 [-]: MOVE      R0 R15       ; R0 := R15
-1215 [-]: MOVE      R0 R131      ; R0 := R131
-1216 [-]: MOVE      R0 R29       ; R0 := R29
-1217 [-]: MOVE      R0 R23       ; R0 := R23
-1218 [-]: MOVE      R0 R43       ; R0 := R43
-1219 [-]: MOVE      R0 R231      ; R0 := R231
-1220 [-]: MOVE      R0 R217      ; R0 := R217
-1221 [-]: MOVE      R0 R73       ; R0 := R73
-1222 [-]: MOVE      R0 R25       ; R0 := R25
-1223 [-]: MOVE      R0 R118      ; R0 := R118
-1224 [-]: MOVE      R0 R119      ; R0 := R119
-1225 [-]: MOVE      R0 R103      ; R0 := R103
-1226 [-]: MOVE      R0 R197      ; R0 := R197
-1227 [-]: MOVE      R0 R222      ; R0 := R222
-1228 [-]: MOVE      R0 R218      ; R0 := R218
-1229 [-]: MOVE      R0 R228      ; R0 := R228
-1230 [-]: MOVE      R0 R230      ; R0 := R230
-1231 [-]: MOVE      R0 R149      ; R0 := R149
-1232 [-]: MOVE      R0 R69       ; R0 := R69
-1233 [-]: MOVE      R0 R52       ; R0 := R52
-1234 [-]: MOVE      R0 R108      ; R0 := R108
-1235 [-]: MOVE      R0 R88       ; R0 := R88
-1236 [-]: MOVE      R0 R87       ; R0 := R87
-1237 [-]: MOVE      R0 R185      ; R0 := R185
-1238 [-]: MOVE      R0 R109      ; R0 := R109
-1239 [-]: MOVE      R0 R110      ; R0 := R110
-1240 [-]: MOVE      R0 R74       ; R0 := R74
-1241 [-]: MOVE      R0 R79       ; R0 := R79
-1242 [-]: MOVE      R0 R78       ; R0 := R78
-1243 [-]: MOVE      R0 R46       ; R0 := R46
-1244 [-]: MOVE      R0 R80       ; R0 := R80
-1245 [-]: MOVE      R0 R84       ; R0 := R84
-1246 [-]: MOVE      R0 R99       ; R0 := R99
-1247 [-]: MOVE      R0 R48       ; R0 := R48
-1248 [-]: MOVE      R0 R129      ; R0 := R129
-1249 [-]: MOVE      R0 R232      ; R0 := R232
-1250 [-]: MOVE      R0 R66       ; R0 := R66
-1251 [-]: MOVE      R0 R162      ; R0 := R162
-1252 [-]: SETGLOBAL R233 K249    ; Update := R233
-1253 [-]: SETGLOBAL R233 K250    ; 0x8C7099E9 := R233
-1254 [-]: CLOSURE   R233 128     ; R233 := closure(Function #129)
-1255 [-]: MOVE      R0 R86       ; R0 := R86
-1256 [-]: MOVE      R0 R102      ; R0 := R102
-1257 [-]: CLOSURE   R234 129     ; R234 := closure(Function #130)
-1258 [-]: MOVE      R0 R233      ; R0 := R233
-1259 [-]: MOVE      R0 R98       ; R0 := R98
-1260 [-]: CLOSURE   R121 130     ; R121 := closure(Function #131)
-1261 [-]: MOVE      R0 R29       ; R0 := R29
-1262 [-]: MOVE      R0 R15       ; R0 := R15
-1263 [-]: MOVE      R0 R18       ; R0 := R18
-1264 [-]: MOVE      R0 R95       ; R0 := R95
-1265 [-]: MOVE      R0 R94       ; R0 := R94
-1266 [-]: MOVE      R0 R151      ; R0 := R151
-1267 [-]: MOVE      R0 R35       ; R0 := R35
-1268 [-]: MOVE      R0 R28       ; R0 := R28
-1269 [-]: MOVE      R0 R98       ; R0 := R98
-1270 [-]: MOVE      R0 R233      ; R0 := R233
-1271 [-]: MOVE      R0 R32       ; R0 := R32
-1272 [-]: MOVE      R0 R108      ; R0 := R108
-1273 [-]: MOVE      R0 R74       ; R0 := R74
-1274 [-]: MOVE      R0 R114      ; R0 := R114
-1275 [-]: MOVE      R0 R234      ; R0 := R234
-1276 [-]: CLOSURE   R235 131     ; R235 := closure(Function #132)
-1277 [-]: MOVE      R0 R121      ; R0 := R121
-1278 [-]: SETGLOBAL R235 K251    ; TransitionOut := R235
-1279 [-]: SETGLOBAL R235 K252    ; 0x7097B1B4 := R235
-1280 [-]: CLOSURE   R235 132     ; R235 := closure(Function #133)
-1281 [-]: CLOSURE   R236 133     ; R236 := closure(Function #134)
-1282 [-]: CLOSURE   R237 134     ; R237 := closure(Function #135)
-1283 [-]: CLOSURE   R238 135     ; R238 := closure(Function #136)
-1284 [-]: MOVE      R0 R29       ; R0 := R29
-1285 [-]: MOVE      R0 R98       ; R0 := R98
-1286 [-]: MOVE      R0 R55       ; R0 := R55
-1287 [-]: MOVE      R0 R90       ; R0 := R90
-1288 [-]: MOVE      R0 R32       ; R0 := R32
-1289 [-]: MOVE      R0 R95       ; R0 := R95
-1290 [-]: MOVE      R0 R94       ; R0 := R94
-1291 [-]: MOVE      R0 R96       ; R0 := R96
-1292 [-]: CLOSURE   R239 136     ; R239 := closure(Function #137)
-1293 [-]: MOVE      R0 R238      ; R0 := R238
-1294 [-]: SETGLOBAL R239 K253    ; onKeyUp_MENU_CLICK := R239
-1295 [-]: SETGLOBAL R239 K254    ; 0x367BCD7E := R239
-1296 [-]: CLOSURE   R120 137     ; R120 := closure(Function #138)
-1297 [-]: CLOSURE   R239 138     ; R239 := closure(Function #139)
-1298 [-]: MOVE      R0 R2        ; R0 := R2
-1299 [-]: MOVE      R0 R45       ; R0 := R45
-1300 [-]: CLOSURE   R240 139     ; R240 := closure(Function #140)
-1301 [-]: MOVE      R0 R41       ; R0 := R41
-1302 [-]: MOVE      R0 R174      ; R0 := R174
-1303 [-]: MOVE      R0 R42       ; R0 := R42
-1304 [-]: CLOSURE   R119 140     ; R119 := closure(Function #141)
-1305 [-]: MOVE      R0 R41       ; R0 := R41
-1306 [-]: MOVE      R0 R240      ; R0 := R240
-1307 [-]: MOVE      R0 R120      ; R0 := R120
-1308 [-]: MOVE      R0 R32       ; R0 := R32
-1309 [-]: MOVE      R0 R35       ; R0 := R35
-1310 [-]: MOVE      R0 R36       ; R0 := R36
-1311 [-]: MOVE      R0 R80       ; R0 := R80
-1312 [-]: MOVE      R0 R98       ; R0 := R98
-1313 [-]: MOVE      R0 R84       ; R0 := R84
-1314 [-]: MOVE      R0 R162      ; R0 := R162
-1315 [-]: MOVE      R0 R112      ; R0 := R112
-1316 [-]: MOVE      R0 R86       ; R0 := R86
-1317 [-]: MOVE      R0 R1        ; R0 := R1
-1318 [-]: MOVE      R0 R104      ; R0 := R104
-1319 [-]: CLOSURE   R118 141     ; R118 := closure(Function #142)
-1320 [-]: MOVE      R0 R41       ; R0 := R41
-1321 [-]: MOVE      R0 R240      ; R0 := R240
-1322 [-]: MOVE      R0 R80       ; R0 := R80
-1323 [-]: MOVE      R0 R98       ; R0 := R98
-1324 [-]: MOVE      R0 R84       ; R0 := R84
-1325 [-]: MOVE      R0 R120      ; R0 := R120
-1326 [-]: MOVE      R0 R32       ; R0 := R32
-1327 [-]: MOVE      R0 R35       ; R0 := R35
-1328 [-]: MOVE      R0 R33       ; R0 := R33
-1329 [-]: MOVE      R0 R34       ; R0 := R34
-1330 [-]: MOVE      R0 R29       ; R0 := R29
-1331 [-]: MOVE      R0 R112      ; R0 := R112
-1332 [-]: CLOSURE   R241 142     ; R241 := closure(Function #143)
-1333 [-]: MOVE      R0 R48       ; R0 := R48
-1334 [-]: MOVE      R0 R99       ; R0 := R99
-1335 [-]: MOVE      R0 R9        ; R0 := R9
-1336 [-]: MOVE      R0 R98       ; R0 := R98
-1337 [-]: MOVE      R0 R27       ; R0 := R27
-1338 [-]: MOVE      R0 R43       ; R0 := R43
-1339 [-]: MOVE      R0 R89       ; R0 := R89
-1340 [-]: MOVE      R0 R86       ; R0 := R86
-1341 [-]: MOVE      R0 R87       ; R0 := R87
-1342 [-]: CLOSURE   R242 143     ; R242 := closure(Function #144)
-1343 [-]: MOVE      R0 R130      ; R0 := R130
-1344 [-]: MOVE      R0 R43       ; R0 := R43
-1345 [-]: SETGLOBAL R242 K255    ; OnEmblemReady := R242
-1346 [-]: SETGLOBAL R242 K256    ; 0x855C37AA := R242
-1347 [-]: CLOSURE   R242 144     ; R242 := closure(Function #145)
-1348 [-]: MOVE      R0 R46       ; R0 := R46
-1349 [-]: MOVE      R0 R47       ; R0 := R47
-1350 [-]: MOVE      R0 R43       ; R0 := R43
-1351 [-]: MOVE      R0 R165      ; R0 := R165
-1352 [-]: MOVE      R0 R22       ; R0 := R22
-1353 [-]: MOVE      R0 R44       ; R0 := R44
-1354 [-]: MOVE      R0 R95       ; R0 := R95
-1355 [-]: MOVE      R0 R94       ; R0 := R94
-1356 [-]: MOVE      R0 R147      ; R0 := R147
-1357 [-]: MOVE      R0 R98       ; R0 := R98
-1358 [-]: MOVE      R0 R231      ; R0 := R231
-1359 [-]: MOVE      R0 R81       ; R0 := R81
-1360 [-]: MOVE      R0 R71       ; R0 := R71
-1361 [-]: MOVE      R0 R1        ; R0 := R1
-1362 [-]: MOVE      R0 R99       ; R0 := R99
-1363 [-]: MOVE      R0 R23       ; R0 := R23
-1364 [-]: MOVE      R0 R86       ; R0 := R86
-1365 [-]: MOVE      R0 R241      ; R0 := R241
-1366 [-]: MOVE      R0 R60       ; R0 := R60
-1367 [-]: MOVE      R0 R130      ; R0 := R130
-1368 [-]: MOVE      R0 R14       ; R0 := R14
-1369 [-]: MOVE      R0 R9        ; R0 := R9
-1370 [-]: MOVE      R0 R67       ; R0 := R67
-1371 [-]: MOVE      R0 R88       ; R0 := R88
-1372 [-]: CLOSURE   R126 145     ; R126 := closure(Function #146)
-1373 [-]: MOVE      R0 R46       ; R0 := R46
-1374 [-]: MOVE      R0 R47       ; R0 := R47
-1375 [-]: MOVE      R0 R43       ; R0 := R43
-1376 [-]: MOVE      R0 R44       ; R0 := R44
-1377 [-]: MOVE      R0 R22       ; R0 := R22
-1378 [-]: MOVE      R0 R67       ; R0 := R67
-1379 [-]: MOVE      R0 R165      ; R0 := R165
-1380 [-]: MOVE      R0 R88       ; R0 := R88
-1381 [-]: MOVE      R0 R16       ; R0 := R16
-1382 [-]: CLOSURE   R243 146     ; R243 := closure(Function #147)
-1383 [-]: MOVE      R0 R29       ; R0 := R29
-1384 [-]: MOVE      R0 R15       ; R0 := R15
-1385 [-]: MOVE      R0 R86       ; R0 := R86
-1386 [-]: MOVE      R0 R43       ; R0 := R43
-1387 [-]: MOVE      R0 R2        ; R0 := R2
+1035 [-]: MOVE      R0 R157      ; R0 := R157
+1036 [-]: SETGLOBAL R218 K245    ; Shutdown := R218
+1037 [-]: SETGLOBAL R218 K246    ; 0x3C577FA3 := R218
+1038 [-]: CLOSURE   R218 111     ; R218 := closure(Function #112)
+1039 [-]: MOVE      R0 R13       ; R0 := R13
+1040 [-]: CLOSURE   R219 112     ; R219 := closure(Function #113)
+1041 [-]: MOVE      R0 R98       ; R0 := R98
+1042 [-]: CLOSURE   R220 113     ; R220 := closure(Function #114)
+1043 [-]: MOVE      R0 R43       ; R0 := R43
+1044 [-]: MOVE      R0 R2        ; R0 := R2
+1045 [-]: MOVE      R0 R3        ; R0 := R3
+1046 [-]: MOVE      R0 R86       ; R0 := R86
+1047 [-]: MOVE      R0 R61       ; R0 := R61
+1048 [-]: MOVE      R0 R123      ; R0 := R123
+1049 [-]: MOVE      R0 R25       ; R0 := R25
+1050 [-]: MOVE      R0 R35       ; R0 := R35
+1051 [-]: MOVE      R0 R28       ; R0 := R28
+1052 [-]: MOVE      R0 R88       ; R0 := R88
+1053 [-]: MOVE      R0 R41       ; R0 := R41
+1054 [-]: MOVE      R0 R29       ; R0 := R29
+1055 [-]: MOVE      R0 R98       ; R0 := R98
+1056 [-]: MOVE      R0 R62       ; R0 := R62
+1057 [-]: MOVE      R0 R21       ; R0 := R21
+1058 [-]: CLOSURE   R221 114     ; R221 := closure(Function #115)
+1059 [-]: MOVE      R0 R86       ; R0 := R86
+1060 [-]: MOVE      R0 R108      ; R0 := R108
+1061 [-]: MOVE      R0 R74       ; R0 := R74
+1062 [-]: MOVE      R0 R41       ; R0 := R41
+1063 [-]: MOVE      R0 R35       ; R0 := R35
+1064 [-]: MOVE      R0 R116      ; R0 := R116
+1065 [-]: CLOSURE   R222 115     ; R222 := closure(Function #116)
+1066 [-]: MOVE      R0 R95       ; R0 := R95
+1067 [-]: MOVE      R0 R94       ; R0 := R94
+1068 [-]: MOVE      R0 R96       ; R0 := R96
+1069 [-]: MOVE      R0 R219      ; R0 := R219
+1070 [-]: MOVE      R0 R1        ; R0 := R1
+1071 [-]: MOVE      R0 R22       ; R0 := R22
+1072 [-]: MOVE      R0 R174      ; R0 := R174
+1073 [-]: MOVE      R0 R63       ; R0 := R63
+1074 [-]: MOVE      R0 R188      ; R0 := R188
+1075 [-]: MOVE      R0 R220      ; R0 := R220
+1076 [-]: MOVE      R0 R92       ; R0 := R92
+1077 [-]: MOVE      R0 R98       ; R0 := R98
+1078 [-]: MOVE      R0 R138      ; R0 := R138
+1079 [-]: MOVE      R0 R185      ; R0 := R185
+1080 [-]: MOVE      R0 R88       ; R0 := R88
+1081 [-]: MOVE      R0 R32       ; R0 := R32
+1082 [-]: MOVE      R0 R86       ; R0 := R86
+1083 [-]: MOVE      R0 R33       ; R0 := R33
+1084 [-]: MOVE      R0 R34       ; R0 := R34
+1085 [-]: MOVE      R0 R35       ; R0 := R35
+1086 [-]: MOVE      R0 R36       ; R0 := R36
+1087 [-]: MOVE      R0 R172      ; R0 := R172
+1088 [-]: MOVE      R0 R45       ; R0 := R45
+1089 [-]: MOVE      R0 R13       ; R0 := R13
+1090 [-]: MOVE      R0 R74       ; R0 := R74
+1091 [-]: MOVE      R0 R41       ; R0 := R41
+1092 [-]: MOVE      R0 R108      ; R0 := R108
+1093 [-]: MOVE      R0 R114      ; R0 := R114
+1094 [-]: MOVE      R0 R115      ; R0 := R115
+1095 [-]: MOVE      R0 R116      ; R0 := R116
+1096 [-]: MOVE      R0 R221      ; R0 := R221
+1097 [-]: MOVE      R0 R2        ; R0 := R2
+1098 [-]: MOVE      R0 R76       ; R0 := R76
+1099 [-]: MOVE      R0 R43       ; R0 := R43
+1100 [-]: MOVE      R0 R39       ; R0 := R39
+1101 [-]: MOVE      R0 R87       ; R0 := R87
+1102 [-]: MOVE      R0 R77       ; R0 := R77
+1103 [-]: MOVE      R0 R40       ; R0 := R40
+1104 [-]: MOVE      R0 R117      ; R0 := R117
+1105 [-]: CLOSURE   R223 116     ; R223 := closure(Function #117)
+1106 [-]: MOVE      R0 R72       ; R0 := R72
+1107 [-]: MOVE      R0 R61       ; R0 := R61
+1108 [-]: MOVE      R0 R98       ; R0 := R98
+1109 [-]: CLOSURE   R224 117     ; R224 := closure(Function #118)
+1110 [-]: MOVE      R0 R127      ; R0 := R127
+1111 [-]: MOVE      R0 R1        ; R0 := R1
+1112 [-]: MOVE      R0 R28       ; R0 := R28
+1113 [-]: MOVE      R0 R41       ; R0 := R41
+1114 [-]: MOVE      R0 R120      ; R0 := R120
+1115 [-]: MOVE      R0 R32       ; R0 := R32
+1116 [-]: MOVE      R0 R136      ; R0 := R136
+1117 [-]: MOVE      R0 R21       ; R0 := R21
+1118 [-]: MOVE      R0 R88       ; R0 := R88
+1119 [-]: MOVE      R0 R64       ; R0 := R64
+1120 [-]: MOVE      R0 R188      ; R0 := R188
+1121 [-]: MOVE      R0 R63       ; R0 := R63
+1122 [-]: CLOSURE   R225 118     ; R225 := closure(Function #119)
+1123 [-]: MOVE      R0 R18       ; R0 := R18
+1124 [-]: MOVE      R0 R35       ; R0 := R35
+1125 [-]: MOVE      R0 R150      ; R0 := R150
+1126 [-]: MOVE      R0 R2        ; R0 := R2
+1127 [-]: MOVE      R0 R41       ; R0 := R41
+1128 [-]: CLOSURE   R226 119     ; R226 := closure(Function #120)
+1129 [-]: MOVE      R0 R98       ; R0 := R98
+1130 [-]: CLOSURE   R227 120     ; R227 := closure(Function #121)
+1131 [-]: MOVE      R0 R13       ; R0 := R13
+1132 [-]: MOVE      R0 R35       ; R0 := R35
+1133 [-]: MOVE      R0 R37       ; R0 := R37
+1134 [-]: MOVE      R0 R38       ; R0 := R38
+1135 [-]: MOVE      R0 R33       ; R0 := R33
+1136 [-]: MOVE      R0 R34       ; R0 := R34
+1137 [-]: MOVE      R0 R43       ; R0 := R43
+1138 [-]: MOVE      R0 R39       ; R0 := R39
+1139 [-]: MOVE      R0 R76       ; R0 := R76
+1140 [-]: MOVE      R0 R40       ; R0 := R40
+1141 [-]: MOVE      R0 R2        ; R0 := R2
+1142 [-]: MOVE      R0 R77       ; R0 := R77
+1143 [-]: MOVE      R0 R95       ; R0 := R95
+1144 [-]: MOVE      R0 R94       ; R0 := R94
+1145 [-]: MOVE      R0 R88       ; R0 := R88
+1146 [-]: MOVE      R0 R21       ; R0 := R21
+1147 [-]: MOVE      R0 R46       ; R0 := R46
+1148 [-]: MOVE      R0 R47       ; R0 := R47
+1149 [-]: MOVE      R0 R125      ; R0 := R125
+1150 [-]: MOVE      R0 R22       ; R0 := R22
+1151 [-]: MOVE      R0 R117      ; R0 := R117
+1152 [-]: MOVE      R0 R3        ; R0 := R3
+1153 [-]: MOVE      R0 R63       ; R0 := R63
+1154 [-]: MOVE      R0 R226      ; R0 := R226
+1155 [-]: MOVE      R0 R87       ; R0 := R87
+1156 [-]: MOVE      R0 R8        ; R0 := R8
+1157 [-]: MOVE      R0 R75       ; R0 := R75
+1158 [-]: MOVE      R0 R153      ; R0 := R153
+1159 [-]: MOVE      R0 R225      ; R0 := R225
+1160 [-]: MOVE      R0 R127      ; R0 := R127
+1161 [-]: MOVE      R0 R98       ; R0 := R98
+1162 [-]: MOVE      R0 R132      ; R0 := R132
+1163 [-]: MOVE      R0 R67       ; R0 := R67
+1164 [-]: MOVE      R0 R143      ; R0 := R143
+1165 [-]: MOVE      R0 R223      ; R0 := R223
+1166 [-]: MOVE      R0 R25       ; R0 := R25
+1167 [-]: MOVE      R0 R224      ; R0 := R224
+1168 [-]: MOVE      R0 R74       ; R0 := R74
+1169 [-]: MOVE      R0 R108      ; R0 := R108
+1170 [-]: MOVE      R0 R73       ; R0 := R73
+1171 [-]: GETGLOBAL R228 K12     ; R228 := 0x221C9700
+1172 [-]: CALL      R228 1 2     ; R228 := R228()
+1173 [-]: CLOSURE   R229 121     ; R229 := closure(Function #122)
+1174 [-]: MOVE      R0 R90       ; R0 := R90
+1175 [-]: MOVE      R0 R92       ; R0 := R92
+1176 [-]: MOVE      R0 R8        ; R0 := R8
+1177 [-]: MOVE      R0 R219      ; R0 := R219
+1178 [-]: MOVE      R0 R228      ; R0 := R228
+1179 [-]: CLOSURE   R124 122     ; R124 := closure(Function #123)
+1180 [-]: MOVE      R0 R123      ; R0 := R123
+1181 [-]: MOVE      R0 R22       ; R0 := R22
+1182 [-]: MOVE      R0 R98       ; R0 := R98
+1183 [-]: CLOSURE   R230 123     ; R230 := closure(Function #124)
+1184 [-]: MOVE      R0 R16       ; R0 := R16
+1185 [-]: MOVE      R0 R41       ; R0 := R41
+1186 [-]: MOVE      R0 R98       ; R0 := R98
+1187 [-]: CLOSURE   R231 124     ; R231 := closure(Function #125)
+1188 [-]: MOVE      R0 R58       ; R0 := R58
+1189 [-]: MOVE      R0 R22       ; R0 := R22
+1190 [-]: CLOSURE   R232 125     ; R232 := closure(Function #126)
+1191 [-]: MOVE      R0 R98       ; R0 := R98
+1192 [-]: MOVE      R0 R86       ; R0 := R86
+1193 [-]: SETTABLE  R86 K247 R232; R86["IntersectVoidPlane"] := R232
+1194 [-]: CLOSURE   R232 126     ; R232 := closure(Function #127)
+1195 [-]: MOVE      R0 R86       ; R0 := R86
+1196 [-]: SETTABLE  R86 K248 R232; R86["SetDistortions"] := R232
+1197 [-]: CLOSURE   R232 127     ; R232 := closure(Function #128)
+1198 [-]: MOVE      R0 R106      ; R0 := R106
+1199 [-]: MOVE      R0 R13       ; R0 := R13
+1200 [-]: MOVE      R0 R86       ; R0 := R86
+1201 [-]: MOVE      R0 R28       ; R0 := R28
+1202 [-]: MOVE      R0 R35       ; R0 := R35
+1203 [-]: MOVE      R0 R41       ; R0 := R41
+1204 [-]: MOVE      R0 R2        ; R0 := R2
+1205 [-]: MOVE      R0 R3        ; R0 := R3
+1206 [-]: MOVE      R0 R22       ; R0 := R22
+1207 [-]: MOVE      R0 R105      ; R0 := R105
+1208 [-]: MOVE      R0 R56       ; R0 := R56
+1209 [-]: MOVE      R0 R98       ; R0 := R98
+1210 [-]: MOVE      R0 R111      ; R0 := R111
+1211 [-]: MOVE      R0 R112      ; R0 := R112
+1212 [-]: MOVE      R0 R44       ; R0 := R44
+1213 [-]: MOVE      R0 R18       ; R0 := R18
+1214 [-]: MOVE      R0 R19       ; R0 := R19
+1215 [-]: MOVE      R0 R15       ; R0 := R15
+1216 [-]: MOVE      R0 R130      ; R0 := R130
+1217 [-]: MOVE      R0 R29       ; R0 := R29
+1218 [-]: MOVE      R0 R23       ; R0 := R23
+1219 [-]: MOVE      R0 R43       ; R0 := R43
+1220 [-]: MOVE      R0 R230      ; R0 := R230
+1221 [-]: MOVE      R0 R217      ; R0 := R217
+1222 [-]: MOVE      R0 R73       ; R0 := R73
+1223 [-]: MOVE      R0 R25       ; R0 := R25
+1224 [-]: MOVE      R0 R118      ; R0 := R118
+1225 [-]: MOVE      R0 R119      ; R0 := R119
+1226 [-]: MOVE      R0 R103      ; R0 := R103
+1227 [-]: MOVE      R0 R195      ; R0 := R195
+1228 [-]: MOVE      R0 R222      ; R0 := R222
+1229 [-]: MOVE      R0 R218      ; R0 := R218
+1230 [-]: MOVE      R0 R227      ; R0 := R227
+1231 [-]: MOVE      R0 R229      ; R0 := R229
+1232 [-]: MOVE      R0 R146      ; R0 := R146
+1233 [-]: MOVE      R0 R69       ; R0 := R69
+1234 [-]: MOVE      R0 R52       ; R0 := R52
+1235 [-]: MOVE      R0 R108      ; R0 := R108
+1236 [-]: MOVE      R0 R88       ; R0 := R88
+1237 [-]: MOVE      R0 R87       ; R0 := R87
+1238 [-]: MOVE      R0 R183      ; R0 := R183
+1239 [-]: MOVE      R0 R109      ; R0 := R109
+1240 [-]: MOVE      R0 R110      ; R0 := R110
+1241 [-]: MOVE      R0 R74       ; R0 := R74
+1242 [-]: MOVE      R0 R79       ; R0 := R79
+1243 [-]: MOVE      R0 R78       ; R0 := R78
+1244 [-]: MOVE      R0 R46       ; R0 := R46
+1245 [-]: MOVE      R0 R80       ; R0 := R80
+1246 [-]: MOVE      R0 R84       ; R0 := R84
+1247 [-]: MOVE      R0 R99       ; R0 := R99
+1248 [-]: MOVE      R0 R48       ; R0 := R48
+1249 [-]: MOVE      R0 R128      ; R0 := R128
+1250 [-]: MOVE      R0 R231      ; R0 := R231
+1251 [-]: MOVE      R0 R66       ; R0 := R66
+1252 [-]: MOVE      R0 R159      ; R0 := R159
+1253 [-]: SETGLOBAL R232 K249    ; Update := R232
+1254 [-]: SETGLOBAL R232 K250    ; 0x8C7099E9 := R232
+1255 [-]: CLOSURE   R232 128     ; R232 := closure(Function #129)
+1256 [-]: MOVE      R0 R86       ; R0 := R86
+1257 [-]: MOVE      R0 R102      ; R0 := R102
+1258 [-]: CLOSURE   R233 129     ; R233 := closure(Function #130)
+1259 [-]: MOVE      R0 R232      ; R0 := R232
+1260 [-]: MOVE      R0 R98       ; R0 := R98
+1261 [-]: CLOSURE   R121 130     ; R121 := closure(Function #131)
+1262 [-]: MOVE      R0 R29       ; R0 := R29
+1263 [-]: MOVE      R0 R15       ; R0 := R15
+1264 [-]: MOVE      R0 R18       ; R0 := R18
+1265 [-]: MOVE      R0 R95       ; R0 := R95
+1266 [-]: MOVE      R0 R94       ; R0 := R94
+1267 [-]: MOVE      R0 R148      ; R0 := R148
+1268 [-]: MOVE      R0 R35       ; R0 := R35
+1269 [-]: MOVE      R0 R28       ; R0 := R28
+1270 [-]: MOVE      R0 R98       ; R0 := R98
+1271 [-]: MOVE      R0 R232      ; R0 := R232
+1272 [-]: MOVE      R0 R32       ; R0 := R32
+1273 [-]: MOVE      R0 R108      ; R0 := R108
+1274 [-]: MOVE      R0 R74       ; R0 := R74
+1275 [-]: MOVE      R0 R114      ; R0 := R114
+1276 [-]: MOVE      R0 R233      ; R0 := R233
+1277 [-]: CLOSURE   R234 131     ; R234 := closure(Function #132)
+1278 [-]: MOVE      R0 R121      ; R0 := R121
+1279 [-]: SETGLOBAL R234 K251    ; TransitionOut := R234
+1280 [-]: SETGLOBAL R234 K252    ; 0x7097B1B4 := R234
+1281 [-]: CLOSURE   R234 132     ; R234 := closure(Function #133)
+1282 [-]: CLOSURE   R235 133     ; R235 := closure(Function #134)
+1283 [-]: MOVE      R0 R29       ; R0 := R29
+1284 [-]: MOVE      R0 R98       ; R0 := R98
+1285 [-]: MOVE      R0 R55       ; R0 := R55
+1286 [-]: MOVE      R0 R90       ; R0 := R90
+1287 [-]: MOVE      R0 R32       ; R0 := R32
+1288 [-]: MOVE      R0 R95       ; R0 := R95
+1289 [-]: MOVE      R0 R94       ; R0 := R94
+1290 [-]: MOVE      R0 R96       ; R0 := R96
+1291 [-]: CLOSURE   R236 134     ; R236 := closure(Function #135)
+1292 [-]: MOVE      R0 R235      ; R0 := R235
+1293 [-]: SETGLOBAL R236 K253    ; onKeyUp_MENU_CLICK := R236
+1294 [-]: SETGLOBAL R236 K254    ; 0x367BCD7E := R236
+1295 [-]: CLOSURE   R120 135     ; R120 := closure(Function #136)
+1296 [-]: CLOSURE   R236 136     ; R236 := closure(Function #137)
+1297 [-]: MOVE      R0 R2        ; R0 := R2
+1298 [-]: MOVE      R0 R45       ; R0 := R45
+1299 [-]: CLOSURE   R237 137     ; R237 := closure(Function #138)
+1300 [-]: MOVE      R0 R41       ; R0 := R41
+1301 [-]: MOVE      R0 R171      ; R0 := R171
+1302 [-]: MOVE      R0 R42       ; R0 := R42
+1303 [-]: CLOSURE   R119 138     ; R119 := closure(Function #139)
+1304 [-]: MOVE      R0 R41       ; R0 := R41
+1305 [-]: MOVE      R0 R237      ; R0 := R237
+1306 [-]: MOVE      R0 R120      ; R0 := R120
+1307 [-]: MOVE      R0 R32       ; R0 := R32
+1308 [-]: MOVE      R0 R35       ; R0 := R35
+1309 [-]: MOVE      R0 R36       ; R0 := R36
+1310 [-]: MOVE      R0 R80       ; R0 := R80
+1311 [-]: MOVE      R0 R98       ; R0 := R98
+1312 [-]: MOVE      R0 R84       ; R0 := R84
+1313 [-]: MOVE      R0 R159      ; R0 := R159
+1314 [-]: MOVE      R0 R112      ; R0 := R112
+1315 [-]: MOVE      R0 R86       ; R0 := R86
+1316 [-]: MOVE      R0 R1        ; R0 := R1
+1317 [-]: MOVE      R0 R104      ; R0 := R104
+1318 [-]: CLOSURE   R118 139     ; R118 := closure(Function #140)
+1319 [-]: MOVE      R0 R41       ; R0 := R41
+1320 [-]: MOVE      R0 R237      ; R0 := R237
+1321 [-]: MOVE      R0 R80       ; R0 := R80
+1322 [-]: MOVE      R0 R98       ; R0 := R98
+1323 [-]: MOVE      R0 R84       ; R0 := R84
+1324 [-]: MOVE      R0 R120      ; R0 := R120
+1325 [-]: MOVE      R0 R32       ; R0 := R32
+1326 [-]: MOVE      R0 R35       ; R0 := R35
+1327 [-]: MOVE      R0 R33       ; R0 := R33
+1328 [-]: MOVE      R0 R34       ; R0 := R34
+1329 [-]: MOVE      R0 R29       ; R0 := R29
+1330 [-]: MOVE      R0 R112      ; R0 := R112
+1331 [-]: CLOSURE   R238 140     ; R238 := closure(Function #141)
+1332 [-]: MOVE      R0 R48       ; R0 := R48
+1333 [-]: MOVE      R0 R99       ; R0 := R99
+1334 [-]: MOVE      R0 R9        ; R0 := R9
+1335 [-]: MOVE      R0 R98       ; R0 := R98
+1336 [-]: MOVE      R0 R27       ; R0 := R27
+1337 [-]: MOVE      R0 R43       ; R0 := R43
+1338 [-]: MOVE      R0 R89       ; R0 := R89
+1339 [-]: MOVE      R0 R86       ; R0 := R86
+1340 [-]: MOVE      R0 R87       ; R0 := R87
+1341 [-]: CLOSURE   R239 141     ; R239 := closure(Function #142)
+1342 [-]: MOVE      R0 R129      ; R0 := R129
+1343 [-]: MOVE      R0 R43       ; R0 := R43
+1344 [-]: SETGLOBAL R239 K255    ; OnEmblemReady := R239
+1345 [-]: SETGLOBAL R239 K256    ; 0x855C37AA := R239
+1346 [-]: CLOSURE   R239 142     ; R239 := closure(Function #143)
+1347 [-]: MOVE      R0 R46       ; R0 := R46
+1348 [-]: MOVE      R0 R47       ; R0 := R47
+1349 [-]: MOVE      R0 R43       ; R0 := R43
+1350 [-]: MOVE      R0 R162      ; R0 := R162
+1351 [-]: MOVE      R0 R22       ; R0 := R22
+1352 [-]: MOVE      R0 R44       ; R0 := R44
+1353 [-]: MOVE      R0 R95       ; R0 := R95
+1354 [-]: MOVE      R0 R94       ; R0 := R94
+1355 [-]: MOVE      R0 R144      ; R0 := R144
+1356 [-]: MOVE      R0 R98       ; R0 := R98
+1357 [-]: MOVE      R0 R230      ; R0 := R230
+1358 [-]: MOVE      R0 R81       ; R0 := R81
+1359 [-]: MOVE      R0 R71       ; R0 := R71
+1360 [-]: MOVE      R0 R1        ; R0 := R1
+1361 [-]: MOVE      R0 R99       ; R0 := R99
+1362 [-]: MOVE      R0 R23       ; R0 := R23
+1363 [-]: MOVE      R0 R86       ; R0 := R86
+1364 [-]: MOVE      R0 R238      ; R0 := R238
+1365 [-]: MOVE      R0 R60       ; R0 := R60
+1366 [-]: MOVE      R0 R129      ; R0 := R129
+1367 [-]: MOVE      R0 R14       ; R0 := R14
+1368 [-]: MOVE      R0 R9        ; R0 := R9
+1369 [-]: MOVE      R0 R67       ; R0 := R67
+1370 [-]: MOVE      R0 R88       ; R0 := R88
+1371 [-]: CLOSURE   R125 143     ; R125 := closure(Function #144)
+1372 [-]: MOVE      R0 R46       ; R0 := R46
+1373 [-]: MOVE      R0 R47       ; R0 := R47
+1374 [-]: MOVE      R0 R43       ; R0 := R43
+1375 [-]: MOVE      R0 R44       ; R0 := R44
+1376 [-]: MOVE      R0 R22       ; R0 := R22
+1377 [-]: MOVE      R0 R67       ; R0 := R67
+1378 [-]: MOVE      R0 R162      ; R0 := R162
+1379 [-]: MOVE      R0 R88       ; R0 := R88
+1380 [-]: MOVE      R0 R16       ; R0 := R16
+1381 [-]: CLOSURE   R240 144     ; R240 := closure(Function #145)
+1382 [-]: MOVE      R0 R29       ; R0 := R29
+1383 [-]: MOVE      R0 R15       ; R0 := R15
+1384 [-]: MOVE      R0 R86       ; R0 := R86
+1385 [-]: MOVE      R0 R43       ; R0 := R43
+1386 [-]: MOVE      R0 R2        ; R0 := R2
+1387 [-]: MOVE      R0 R87       ; R0 := R87
 1388 [-]: MOVE      R0 R98       ; R0 := R98
 1389 [-]: MOVE      R0 R95       ; R0 := R95
 1390 [-]: MOVE      R0 R94       ; R0 := R94
@@ -1619,12 +1616,12 @@ code size: 4
 1392 [-]: MOVE      R0 R219      ; R0 := R219
 1393 [-]: MOVE      R0 R22       ; R0 := R22
 1394 [-]: MOVE      R0 R92       ; R0 := R92
-1395 [-]: MOVE      R0 R148      ; R0 := R148
+1395 [-]: MOVE      R0 R145      ; R0 := R145
 1396 [-]: MOVE      R0 R32       ; R0 := R32
 1397 [-]: MOVE      R0 R90       ; R0 := R90
 1398 [-]: MOVE      R0 R8        ; R0 := R8
 1399 [-]: MOVE      R0 R91       ; R0 := R91
-1400 [-]: MOVE      R0 R237      ; R0 := R237
+1400 [-]: MOVE      R0 R234      ; R0 := R234
 1401 [-]: MOVE      R0 R59       ; R0 := R59
 1402 [-]: MOVE      R0 R55       ; R0 := R55
 1403 [-]: MOVE      R0 R93       ; R0 := R93
@@ -1633,28 +1630,28 @@ code size: 4
 1406 [-]: MOVE      R0 R217      ; R0 := R217
 1407 [-]: MOVE      R0 R73       ; R0 := R73
 1408 [-]: MOVE      R0 R119      ; R0 := R119
-1409 [-]: MOVE      R0 R124      ; R0 := R124
-1410 [-]: CLOSURE   R244 147     ; R244 := closure(Function #148)
-1411 [-]: MOVE      R0 R243      ; R0 := R243
-1412 [-]: SETGLOBAL R244 K257    ; onKeyDown_MENU_CLICK := R244
-1413 [-]: SETGLOBAL R244 K258    ; 0xE40A2FCA := R244
-1414 [-]: CLOSURE   R244 148     ; R244 := closure(Function #149)
+1409 [-]: MOVE      R0 R123      ; R0 := R123
+1410 [-]: CLOSURE   R241 145     ; R241 := closure(Function #146)
+1411 [-]: MOVE      R0 R240      ; R0 := R240
+1412 [-]: SETGLOBAL R241 K257    ; onKeyDown_MENU_CLICK := R241
+1413 [-]: SETGLOBAL R241 K258    ; 0xE40A2FCA := R241
+1414 [-]: CLOSURE   R241 146     ; R241 := closure(Function #147)
 1415 [-]: MOVE      R0 R43       ; R0 := R43
-1416 [-]: MOVE      R0 R243      ; R0 := R243
-1417 [-]: SETGLOBAL R244 K259    ; onKeyDown_MENU_SELECT := R244
-1418 [-]: SETGLOBAL R244 K260    ; 0xEEDD1ACF := R244
-1419 [-]: CLOSURE   R244 149     ; R244 := closure(Function #150)
+1416 [-]: MOVE      R0 R240      ; R0 := R240
+1417 [-]: SETGLOBAL R241 K259    ; onKeyDown_MENU_SELECT := R241
+1418 [-]: SETGLOBAL R241 K260    ; 0xEEDD1ACF := R241
+1419 [-]: CLOSURE   R241 147     ; R241 := closure(Function #148)
 1420 [-]: MOVE      R0 R43       ; R0 := R43
-1421 [-]: MOVE      R0 R238      ; R0 := R238
-1422 [-]: SETGLOBAL R244 K261    ; onKeyUp_MENU_SELECT := R244
-1423 [-]: SETGLOBAL R244 K262    ; 0x4874089C := R244
-1424 [-]: CLOSURE   R244 150     ; R244 := closure(Function #151)
+1421 [-]: MOVE      R0 R235      ; R0 := R235
+1422 [-]: SETGLOBAL R241 K261    ; onKeyUp_MENU_SELECT := R241
+1423 [-]: SETGLOBAL R241 K262    ; 0x4874089C := R241
+1424 [-]: CLOSURE   R241 148     ; R241 := closure(Function #149)
 1425 [-]: MOVE      R0 R29       ; R0 := R29
 1426 [-]: MOVE      R0 R90       ; R0 := R90
 1427 [-]: MOVE      R0 R32       ; R0 := R32
-1428 [-]: SETGLOBAL R244 K263    ; onKeyUp_MENU_RIGHT_CLICK := R244
-1429 [-]: SETGLOBAL R244 K264    ; 0x3A763170 := R244
-1430 [-]: CLOSURE   R244 151     ; R244 := closure(Function #152)
+1428 [-]: SETGLOBAL R241 K263    ; onKeyUp_MENU_RIGHT_CLICK := R241
+1429 [-]: SETGLOBAL R241 K264    ; 0x3A763170 := R241
+1430 [-]: CLOSURE   R241 149     ; R241 := closure(Function #150)
 1431 [-]: MOVE      R0 R29       ; R0 := R29
 1432 [-]: MOVE      R0 R15       ; R0 := R15
 1433 [-]: MOVE      R0 R90       ; R0 := R90
@@ -1666,19 +1663,19 @@ code size: 4
 1439 [-]: MOVE      R0 R84       ; R0 := R84
 1440 [-]: MOVE      R0 R41       ; R0 := R41
 1441 [-]: MOVE      R0 R42       ; R0 := R42
-1442 [-]: MOVE      R0 R126      ; R0 := R126
+1442 [-]: MOVE      R0 R125      ; R0 := R125
 1443 [-]: MOVE      R0 R112      ; R0 := R112
 1444 [-]: MOVE      R0 R113      ; R0 := R113
-1445 [-]: MOVE      R0 R162      ; R0 := R162
-1446 [-]: SETGLOBAL R244 K265    ; onKeyDown_MENU_RIGHT_CLICK := R244
-1447 [-]: SETGLOBAL R244 K266    ; 0xA930FBF := R244
-1448 [-]: CLOSURE   R244 152     ; R244 := closure(Function #153)
-1449 [-]: SETGLOBAL R244 K267    ; onKeyUp_NEXT_MENU := R244
-1450 [-]: SETGLOBAL R244 K268    ; 0x9D432BFE := R244
-1451 [-]: CLOSURE   R244 153     ; R244 := closure(Function #154)
-1452 [-]: SETGLOBAL R244 K269    ; onKeyDown_NEXT_MENU := R244
-1453 [-]: SETGLOBAL R244 K270    ; 0xE25DD8CF := R244
-1454 [-]: CLOSURE   R244 154     ; R244 := closure(Function #155)
+1445 [-]: MOVE      R0 R159      ; R0 := R159
+1446 [-]: SETGLOBAL R241 K265    ; onKeyDown_MENU_RIGHT_CLICK := R241
+1447 [-]: SETGLOBAL R241 K266    ; 0xA930FBF := R241
+1448 [-]: CLOSURE   R241 150     ; R241 := closure(Function #151)
+1449 [-]: SETGLOBAL R241 K267    ; onKeyUp_NEXT_MENU := R241
+1450 [-]: SETGLOBAL R241 K268    ; 0x9D432BFE := R241
+1451 [-]: CLOSURE   R241 151     ; R241 := closure(Function #152)
+1452 [-]: SETGLOBAL R241 K269    ; onKeyDown_NEXT_MENU := R241
+1453 [-]: SETGLOBAL R241 K270    ; 0xE25DD8CF := R241
+1454 [-]: CLOSURE   R241 152     ; R241 := closure(Function #153)
 1455 [-]: MOVE      R0 R29       ; R0 := R29
 1456 [-]: MOVE      R0 R28       ; R0 := R28
 1457 [-]: MOVE      R0 R35       ; R0 := R35
@@ -1686,129 +1683,129 @@ code size: 4
 1459 [-]: MOVE      R0 R94       ; R0 := R94
 1460 [-]: MOVE      R0 R43       ; R0 := R43
 1461 [-]: MOVE      R0 R41       ; R0 := R41
-1462 [-]: MOVE      R0 R132      ; R0 := R132
+1462 [-]: MOVE      R0 R131      ; R0 := R131
 1463 [-]: MOVE      R0 R98       ; R0 := R98
 1464 [-]: MOVE      R0 R119      ; R0 := R119
 1465 [-]: MOVE      R0 R121      ; R0 := R121
-1466 [-]: SETGLOBAL R244 K271    ; onKeyDown_MENU_MOUSE_Z := R244
-1467 [-]: SETGLOBAL R244 K272    ; 0x56EAD3A9 := R244
-1468 [-]: CLOSURE   R244 155     ; R244 := closure(Function #156)
+1466 [-]: SETGLOBAL R241 K271    ; onKeyDown_MENU_MOUSE_Z := R241
+1467 [-]: SETGLOBAL R241 K272    ; 0x56EAD3A9 := R241
+1468 [-]: CLOSURE   R241 153     ; R241 := closure(Function #154)
 1469 [-]: MOVE      R0 R93       ; R0 := R93
 1470 [-]: MOVE      R0 R98       ; R0 := R98
 1471 [-]: MOVE      R0 R92       ; R0 := R92
 1472 [-]: MOVE      R0 R95       ; R0 := R95
 1473 [-]: MOVE      R0 R94       ; R0 := R94
 1474 [-]: MOVE      R0 R203      ; R0 := R203
-1475 [-]: MOVE      R0 R142      ; R0 := R142
-1476 [-]: MOVE      R0 R151      ; R0 := R151
+1475 [-]: MOVE      R0 R139      ; R0 := R139
+1476 [-]: MOVE      R0 R148      ; R0 := R148
 1477 [-]: MOVE      R0 R1        ; R0 := R1
 1478 [-]: MOVE      R0 R96       ; R0 := R96
 1479 [-]: MOVE      R0 R63       ; R0 := R63
 1480 [-]: MOVE      R0 R6        ; R0 := R6
-1481 [-]: MOVE      R0 R148      ; R0 := R148
-1482 [-]: MOVE      R0 R192      ; R0 := R192
+1481 [-]: MOVE      R0 R145      ; R0 := R145
+1482 [-]: MOVE      R0 R190      ; R0 := R190
 1483 [-]: MOVE      R0 R2        ; R0 := R2
 1484 [-]: MOVE      R0 R119      ; R0 := R119
-1485 [-]: MOVE      R0 R149      ; R0 := R149
+1485 [-]: MOVE      R0 R146      ; R0 := R146
 1486 [-]: MOVE      R0 R71       ; R0 := R71
 1487 [-]: MOVE      R0 R15       ; R0 := R15
-1488 [-]: SETGLOBAL R244 K273    ; onRawInputEvent := R244
-1489 [-]: SETGLOBAL R244 K274    ; 0x11563913 := R244
-1490 [-]: CLOSURE   R244 156     ; R244 := closure(Function #157)
-1491 [-]: MOVE      R0 R242      ; R0 := R242
-1492 [-]: SETGLOBAL R244 K275    ; NodeRollOver := R244
-1493 [-]: SETGLOBAL R244 K276    ; 0xFA36E361 := R244
-1494 [-]: CLOSURE   R244 157     ; R244 := closure(Function #158)
-1495 [-]: MOVE      R0 R126      ; R0 := R126
-1496 [-]: SETGLOBAL R244 K277    ; NodeRollOut := R244
-1497 [-]: SETGLOBAL R244 K278    ; 0xA4A3822 := R244
-1498 [-]: CLOSURE   R244 158     ; R244 := closure(Function #159)
+1488 [-]: SETGLOBAL R241 K273    ; onRawInputEvent := R241
+1489 [-]: SETGLOBAL R241 K274    ; 0x11563913 := R241
+1490 [-]: CLOSURE   R241 154     ; R241 := closure(Function #155)
+1491 [-]: MOVE      R0 R239      ; R0 := R239
+1492 [-]: SETGLOBAL R241 K275    ; NodeRollOver := R241
+1493 [-]: SETGLOBAL R241 K276    ; 0xFA36E361 := R241
+1494 [-]: CLOSURE   R241 155     ; R241 := closure(Function #156)
+1495 [-]: MOVE      R0 R125      ; R0 := R125
+1496 [-]: SETGLOBAL R241 K277    ; NodeRollOut := R241
+1497 [-]: SETGLOBAL R241 K278    ; 0xA4A3822 := R241
+1498 [-]: CLOSURE   R241 156     ; R241 := closure(Function #157)
 1499 [-]: MOVE      R0 R46       ; R0 := R46
 1500 [-]: MOVE      R0 R47       ; R0 := R47
 1501 [-]: MOVE      R0 R22       ; R0 := R22
-1502 [-]: SETGLOBAL R244 K279    ; NodeSelect := R244
-1503 [-]: SETGLOBAL R244 K280    ; 0x6FB07481 := R244
-1504 [-]: CLOSURE   R244 159     ; R244 := closure(Function #160)
+1502 [-]: SETGLOBAL R241 K279    ; NodeSelect := R241
+1503 [-]: SETGLOBAL R241 K280    ; 0x6FB07481 := R241
+1504 [-]: CLOSURE   R241 157     ; R241 := closure(Function #158)
 1505 [-]: MOVE      R0 R15       ; R0 := R15
-1506 [-]: SETGLOBAL R244 K281    ; WorldStateWindowVisChanged := R244
-1507 [-]: SETGLOBAL R244 K282    ; 0x6E3DB508 := R244
-1508 [-]: CLOSURE   R244 160     ; R244 := closure(Function #161)
+1506 [-]: SETGLOBAL R241 K281    ; WorldStateWindowVisChanged := R241
+1507 [-]: SETGLOBAL R241 K282    ; 0x6E3DB508 := R241
+1508 [-]: CLOSURE   R241 158     ; R241 := closure(Function #159)
 1509 [-]: MOVE      R0 R15       ; R0 := R15
-1510 [-]: MOVE      R0 R162      ; R0 := R162
-1511 [-]: SETGLOBAL R244 K283    ; WSWDioramaChanged := R244
-1512 [-]: SETGLOBAL R244 K284    ; 0xE705EF6F := R244
-1513 [-]: CLOSURE   R244 161     ; R244 := closure(Function #162)
-1514 [-]: MOVE      R0 R134      ; R0 := R134
-1515 [-]: MOVE      R0 R228      ; R0 := R228
-1516 [-]: SETGLOBAL R244 K285    ; onViewportSizeChanged := R244
-1517 [-]: SETGLOBAL R244 K286    ; 0x3A900427 := R244
-1518 [-]: CLOSURE   R244 162     ; R244 := closure(Function #163)
+1510 [-]: MOVE      R0 R159      ; R0 := R159
+1511 [-]: SETGLOBAL R241 K283    ; WSWDioramaChanged := R241
+1512 [-]: SETGLOBAL R241 K284    ; 0xE705EF6F := R241
+1513 [-]: CLOSURE   R241 159     ; R241 := closure(Function #160)
+1514 [-]: MOVE      R0 R133      ; R0 := R133
+1515 [-]: MOVE      R0 R227      ; R0 := R227
+1516 [-]: SETGLOBAL R241 K285    ; onViewportSizeChanged := R241
+1517 [-]: SETGLOBAL R241 K286    ; 0x3A900427 := R241
+1518 [-]: CLOSURE   R241 160     ; R241 := closure(Function #161)
 1519 [-]: MOVE      R0 R106      ; R0 := R106
 1520 [-]: MOVE      R0 R13       ; R0 := R13
-1521 [-]: SETGLOBAL R244 K287    ; ForceUpdate3DElements := R244
-1522 [-]: SETGLOBAL R244 K288    ; 0xE9112D25 := R244
-1523 [-]: CLOSURE   R244 163     ; R244 := closure(Function #164)
+1521 [-]: SETGLOBAL R241 K287    ; ForceUpdate3DElements := R241
+1522 [-]: SETGLOBAL R241 K288    ; 0xE9112D25 := R241
+1523 [-]: CLOSURE   R241 161     ; R241 := closure(Function #162)
 1524 [-]: MOVE      R0 R29       ; R0 := R29
-1525 [-]: SETGLOBAL R244 K289    ; IsInputBlocked := R244
-1526 [-]: SETGLOBAL R244 K290    ; 0x6FE7E740 := R244
-1527 [-]: CLOSURE   R244 164     ; R244 := closure(Function #165)
-1528 [-]: SETGLOBAL R244 K291    ; SetTrigger := R244
-1529 [-]: SETGLOBAL R244 K292    ; 0x3F956A34 := R244
-1530 [-]: CLOSURE   R244 165     ; R244 := closure(Function #166)
-1531 [-]: MOVE      R0 R181      ; R0 := R181
-1532 [-]: SETGLOBAL R244 K293    ; OnQuestsChanged := R244
-1533 [-]: SETGLOBAL R244 K294    ; 0x406548E4 := R244
-1534 [-]: CLOSURE   R244 166     ; R244 := closure(Function #167)
+1525 [-]: SETGLOBAL R241 K289    ; IsInputBlocked := R241
+1526 [-]: SETGLOBAL R241 K290    ; 0x6FE7E740 := R241
+1527 [-]: CLOSURE   R241 162     ; R241 := closure(Function #163)
+1528 [-]: SETGLOBAL R241 K291    ; SetTrigger := R241
+1529 [-]: SETGLOBAL R241 K292    ; 0x3F956A34 := R241
+1530 [-]: CLOSURE   R241 163     ; R241 := closure(Function #164)
+1531 [-]: MOVE      R0 R179      ; R0 := R179
+1532 [-]: SETGLOBAL R241 K293    ; OnQuestsChanged := R241
+1533 [-]: SETGLOBAL R241 K294    ; 0x406548E4 := R241
+1534 [-]: CLOSURE   R241 164     ; R241 := closure(Function #165)
 1535 [-]: MOVE      R0 R79       ; R0 := R79
 1536 [-]: MOVE      R0 R78       ; R0 := R78
 1537 [-]: MOVE      R0 R23       ; R0 := R23
-1538 [-]: MOVE      R0 R179      ; R0 := R179
-1539 [-]: SETGLOBAL R244 K295    ; OnWorldStateChanged := R244
-1540 [-]: SETGLOBAL R244 K296    ; 0xECDF5016 := R244
-1541 [-]: GETGLOBAL R244 K297    ; R244 := _T
-1542 [-]: LOADK     R245 K298    ; R245 := "RadialSolarMapFade"
-1543 [-]: CLOSURE   R246 167     ; R246 := closure(Function #168)
+1538 [-]: MOVE      R0 R177      ; R0 := R177
+1539 [-]: SETGLOBAL R241 K295    ; OnWorldStateChanged := R241
+1540 [-]: SETGLOBAL R241 K296    ; 0xECDF5016 := R241
+1541 [-]: GETGLOBAL R241 K297    ; R241 := _T
+1542 [-]: LOADK     R242 K298    ; R242 := "RadialSolarMapFade"
+1543 [-]: CLOSURE   R243 165     ; R243 := closure(Function #166)
 1544 [-]: MOVE      R0 R73       ; R0 := R73
 1545 [-]: MOVE      R0 R29       ; R0 := R29
-1546 [-]: MOVE      R0 R239      ; R0 := R239
+1546 [-]: MOVE      R0 R236      ; R0 := R236
 1547 [-]: MOVE      R0 R32       ; R0 := R32
 1548 [-]: MOVE      R0 R35       ; R0 := R35
 1549 [-]: MOVE      R0 R13       ; R0 := R13
 1550 [-]: MOVE      R0 R74       ; R0 := R74
 1551 [-]: MOVE      R0 R108      ; R0 := R108
-1552 [-]: SETTABLE  R244 R245 R246; R244[R245] := R246
-1553 [-]: CLOSURE   R244 168     ; R244 := closure(Function #169)
-1554 [-]: MOVE      R0 R162      ; R0 := R162
-1555 [-]: SETGLOBAL R244 K299    ; PlayersChanged := R244
-1556 [-]: SETGLOBAL R244 K300    ; 0x2C9E65B5 := R244
-1557 [-]: CLOSURE   R244 169     ; R244 := closure(Function #170)
-1558 [-]: MOVE      R0 R129      ; R0 := R129
-1559 [-]: SETGLOBAL R244 K301    ; OnSquadMissionChanged := R244
-1560 [-]: SETGLOBAL R244 K302    ; 0xB5CFAF92 := R244
-1561 [-]: CLOSURE   R244 170     ; R244 := closure(Function #171)
+1552 [-]: SETTABLE  R241 R242 R243; R241[R242] := R243
+1553 [-]: CLOSURE   R241 166     ; R241 := closure(Function #167)
+1554 [-]: MOVE      R0 R159      ; R0 := R159
+1555 [-]: SETGLOBAL R241 K299    ; PlayersChanged := R241
+1556 [-]: SETGLOBAL R241 K300    ; 0x2C9E65B5 := R241
+1557 [-]: CLOSURE   R241 167     ; R241 := closure(Function #168)
+1558 [-]: MOVE      R0 R128      ; R0 := R128
+1559 [-]: SETGLOBAL R241 K301    ; OnSquadMissionChanged := R241
+1560 [-]: SETGLOBAL R241 K302    ; 0xB5CFAF92 := R241
+1561 [-]: CLOSURE   R241 168     ; R241 := closure(Function #169)
 1562 [-]: MOVE      R0 R30       ; R0 := R30
 1563 [-]: MOVE      R0 R98       ; R0 := R98
-1564 [-]: SETGLOBAL R244 K303    ; OnLoadoutChanged := R244
-1565 [-]: SETGLOBAL R244 K304    ; 0xB7028B7 := R244
-1566 [-]: CLOSURE   R244 171     ; R244 := closure(Function #172)
-1567 [-]: MOVE      R0 R162      ; R0 := R162
-1568 [-]: MOVE      R0 R194      ; R0 := R194
-1569 [-]: SETGLOBAL R244 K305    ; OnGamepadTransition := R244
-1570 [-]: SETGLOBAL R244 K306    ; 0x98E4F633 := R244
-1571 [-]: CLOSURE   R244 172     ; R244 := closure(Function #173)
-1572 [-]: SETGLOBAL R244 K307    ; SupportsThemes := R244
-1573 [-]: SETGLOBAL R244 K308    ; 0xDBE73B9E := R244
-1574 [-]: CLOSURE   R244 173     ; R244 := closure(Function #174)
+1564 [-]: SETGLOBAL R241 K303    ; OnLoadoutChanged := R241
+1565 [-]: SETGLOBAL R241 K304    ; 0xB7028B7 := R241
+1566 [-]: CLOSURE   R241 169     ; R241 := closure(Function #170)
+1567 [-]: MOVE      R0 R159      ; R0 := R159
+1568 [-]: MOVE      R0 R192      ; R0 := R192
+1569 [-]: SETGLOBAL R241 K305    ; OnGamepadTransition := R241
+1570 [-]: SETGLOBAL R241 K306    ; 0x98E4F633 := R241
+1571 [-]: CLOSURE   R241 170     ; R241 := closure(Function #171)
+1572 [-]: SETGLOBAL R241 K307    ; SupportsThemes := R241
+1573 [-]: SETGLOBAL R241 K308    ; 0xDBE73B9E := R241
+1574 [-]: CLOSURE   R241 171     ; R241 := closure(Function #172)
 1575 [-]: MOVE      R0 R86       ; R0 := R86
-1576 [-]: SETGLOBAL R244 K309    ; OnMatchMakingModeChanged := R244
-1577 [-]: SETGLOBAL R244 K310    ; 0x30A832FF := R244
+1576 [-]: SETGLOBAL R241 K309    ; OnMatchMakingModeChanged := R241
+1577 [-]: SETGLOBAL R241 K310    ; 0x30A832FF := R241
 1578 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 320
+; Defined at line: 314
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1943,7 +1940,7 @@ code size: 4
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 354
+; Defined at line: 348
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1967,7 +1964,7 @@ code size: 4
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 359
+; Defined at line: 353
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2013,7 +2010,7 @@ code size: 4
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 370
+; Defined at line: 364
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2147,7 +2144,7 @@ code size: 4
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 398
+; Defined at line: 392
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2171,7 +2168,7 @@ code size: 4
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 404
+; Defined at line: 398
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2199,97 +2196,7 @@ code size: 4
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 424
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x1B252E3C"]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["0xBFFBFE5E"]
-  5 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  6 [-]: MOVE      R4 R1        ; R4 := R1
-  7 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  8 [-]: TEST      R2 1         ; if R2 then PC := 15
-  9 [-]: JMP       15           ; PC := 15
- 10 [-]: GETGLOBAL R2 K2        ; R2 := table
- 11 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xE6450C9D"]
- 12 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 13 [-]: MOVE      R4 R1        ; R4 := R1
- 14 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 15 [-]: RETURN    R0 1         ; return 
-
-
-; Function #8:
-;
-; Name:            
-; Defined at line: 431
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  19
-
-  1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
-  2 [-]: GETGLOBAL R2 K0        ; R2 := 0x63B09107
-  3 [-]: GETGLOBAL R3 K1        ; R3 := decorationLoader
-  4 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
-  5 [-]: JMP       12           ; PC := 12
-  6 [-]: GETGLOBAL R7 K2        ; R7 := table
-  7 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["0xE6450C9D"]
-  8 [-]: MOVE      R8 R1        ; R8 := R1
-  9 [-]: SELF      R9 R6 K4     ; R10 := R6; R9 := R6["0x1B252E3C"]
- 10 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
- 11 [-]: CALL      R7 0 1       ; R7(R8,...)
- 12 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 6; R4 := R5 end
- 13 [-]: JMP       6            ; PC := 6
- 14 [-]: LOADK     R7 K5        ; R7 := 1
- 15 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 16 [-]: LEN       R8 R8        ; R8 := # R8
- 17 [-]: LOADK     R9 K5        ; R9 := 1
- 18 [-]: FORPREP   R7 34        ; R7 -= R9; PC := 34
- 19 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 20 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["0xBFFBFE5E"]
- 21 [-]: MOVE      R12 R1       ; R12 := R1
- 22 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 23 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 24 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 25 [-]: TEST      R11 1        ; if R11 then PC := 34
- 26 [-]: JMP       34           ; PC := 34
- 27 [-]: GETGLOBAL R11 K7       ; R11 := 0x93B1256B
- 28 [-]: LOADK     R12 K8       ; R12 := "ERROR: Not preloading "
- 29 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 30 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 31 [-]: LOADK     R14 K9       ; R14 := " Add it to the decorationLoader list in MapRedux.lua"
- 32 [-]: CONCAT    R12 R12 R14  ; R12 := R12 .. R13 .. R14
- 33 [-]: CALL      R11 2 1      ; R11(R12)
- 34 [-]: FORLOOP   R7 19        ; R7 += R9; if R7 <= R8 then begin PC := 19; R10 := R7 end
- 35 [-]: LOADK     R11 K5       ; R11 := 1
- 36 [-]: LEN       R12 R1       ; R12 := # R1
- 37 [-]: LOADK     R13 K5       ; R13 := 1
- 38 [-]: FORPREP   R11 52       ; R11 -= R13; PC := 52
- 39 [-]: GETUPVAL  R15 U1       ; R15 := U1
- 40 [-]: GETTABLE  R15 R15 K6   ; R15 := R15["0xBFFBFE5E"]
- 41 [-]: GETUPVAL  R16 U0       ; R16 := U0
- 42 [-]: GETTABLE  R17 R1 R14   ; R17 := R1[R14]
- 43 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 44 [-]: TEST      R15 1        ; if R15 then PC := 52
- 45 [-]: JMP       52           ; PC := 52
- 46 [-]: GETGLOBAL R15 K7       ; R15 := 0x93B1256B
- 47 [-]: LOADK     R16 K10      ; R16 := "ERROR: Preloading unused deco "
- 48 [-]: GETTABLE  R17 R1 R14   ; R17 := R1[R14]
- 49 [-]: LOADK     R18 K11      ; R18 := " Remove it from decorationLoader list in MapRedux.lua"
- 50 [-]: CONCAT    R16 R16 R18  ; R16 := R16 .. R17 .. R18
- 51 [-]: CALL      R15 2 1      ; R15(R16)
- 52 [-]: FORLOOP   R11 39       ; R11 += R13; if R11 <= R12 then begin PC := 39; R14 := R11 end
- 53 [-]: RETURN    R0 1         ; return 
-
-
-; Function #9:
-;
-; Name:            
-; Defined at line: 450
+; Defined at line: 418
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2317,10 +2224,10 @@ code size: 4
  20 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 465
+; Defined at line: 433
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2358,10 +2265,10 @@ code size: 4
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 482
+; Defined at line: 450
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2511,10 +2418,10 @@ code size: 4
 142 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 517
+; Defined at line: 485
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2535,10 +2442,10 @@ code size: 4
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 526
+; Defined at line: 494
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2660,10 +2567,10 @@ code size: 4
 114 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 585
+; Defined at line: 553
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2686,7 +2593,7 @@ code size: 4
  15 [-]: LOADK     R4 K2        ; R4 := "_alpha"
  16 [-]: LOADK     R5 K6        ; R5 := 0
  17 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
- 18 [-]: CLOSURE   R1 0         ; R1 := closure(Function #14.1)
+ 18 [-]: CLOSURE   R1 0         ; R1 := closure(Function #12.1)
  19 [-]: GETUPVAL  R0 U0        ; R0 := U0
  20 [-]: MOVE      R0 R0        ; R0 := R0
  21 [-]: GETUPVAL  R0 U1        ; R0 := U1
@@ -2703,17 +2610,17 @@ code size: 4
  32 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
  33 [-]: LOADK     R8 K11       ; R8 := 0.25
  34 [-]: LOADK     R9 K6        ; R9 := 0
- 35 [-]: CLOSURE   R10 1        ; R10 := closure(Function #14.2)
+ 35 [-]: CLOSURE   R10 1        ; R10 := closure(Function #12.2)
  36 [-]: GETUPVAL  R0 U0        ; R0 := U0
  37 [-]: GETUPVAL  R0 U1        ; R0 := U1
  38 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
  39 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14.1:
+; Function #12.1:
 ;
 ; Name:            
-; Defined at line: 592
+; Defined at line: 560
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2748,10 +2655,10 @@ code size: 4
  27 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14.2:
+; Function #12.2:
 ;
 ; Name:            
-; Defined at line: 603
+; Defined at line: 571
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2781,10 +2688,10 @@ code size: 4
  22 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 615
+; Defined at line: 583
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2804,10 +2711,10 @@ code size: 4
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #16:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 621
+; Defined at line: 589
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2818,10 +2725,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #17:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 625
+; Defined at line: 593
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2840,7 +2747,7 @@ code size: 4
  11 [-]: GETUPVAL  R2 U1        ; R2 := U1
  12 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0x61494587"]
  13 [-]: LOADK     R4 K6        ; R4 := 2
- 14 [-]: CLOSURE   R5 0         ; R5 := closure(Function #17.1)
+ 14 [-]: CLOSURE   R5 0         ; R5 := closure(Function #15.1)
  15 [-]: GETUPVAL  R0 U2        ; R0 := U2
  16 [-]: MOVE      R0 R0        ; R0 := R0
  17 [-]: GETUPVAL  R0 U3        ; R0 := U3
@@ -2889,10 +2796,10 @@ code size: 4
  60 [-]: RETURN    R0 1         ; return 
 
 
-; Function #17.1:
+; Function #15.1:
 ;
 ; Name:            
-; Defined at line: 629
+; Defined at line: 597
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2915,10 +2822,10 @@ code size: 4
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #18:
+; Function #16:
 ;
 ; Name:            
-; Defined at line: 652
+; Defined at line: 620
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2963,10 +2870,10 @@ code size: 4
  37 [-]: RETURN    R0 1         ; return 
 
 
-; Function #19:
+; Function #17:
 ;
 ; Name:            
-; Defined at line: 664
+; Defined at line: 632
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3063,10 +2970,10 @@ code size: 4
  89 [-]: RETURN    R0 1         ; return 
 
 
-; Function #20:
+; Function #18:
 ;
 ; Name:            
-; Defined at line: 693
+; Defined at line: 661
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3132,10 +3039,10 @@ code size: 4
  58 [-]: RETURN    R0 1         ; return 
 
 
-; Function #21:
+; Function #19:
 ;
 ; Name:            
-; Defined at line: 710
+; Defined at line: 678
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3166,10 +3073,10 @@ code size: 4
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #22:
+; Function #20:
 ;
 ; Name:            
-; Defined at line: 726
+; Defined at line: 694
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3215,7 +3122,7 @@ code size: 4
  38 [-]: GETUPVAL  R13 U4       ; R13 := U4
  39 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["KUVA_TOWER_MISSION_FLAG"]
  40 [-]: SETLIST   R0 13 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 13
- 41 [-]: CLOSURE   R1 0         ; R1 := closure(Function #22.1)
+ 41 [-]: CLOSURE   R1 0         ; R1 := closure(Function #20.1)
  42 [-]: MOVE      R0 R0        ; R0 := R0
  43 [-]: GETGLOBAL R2 K14       ; R2 := gMatchingService
  44 [-]: SELF      R2 R2 K15    ; R3 := R2; R2 := R2["0x40DFB818"]
@@ -3432,10 +3339,10 @@ code size: 4
 255 [-]: RETURN    R0 1         ; return 
 
 
-; Function #22.1:
+; Function #20.1:
 ;
 ; Name:            
-; Defined at line: 738
+; Defined at line: 706
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3461,10 +3368,10 @@ code size: 4
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #23:
+; Function #21:
 ;
 ; Name:            
-; Defined at line: 815
+; Defined at line: 783
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3500,10 +3407,10 @@ code size: 4
  28 [-]: RETURN    R0 1         ; return 
 
 
-; Function #24:
+; Function #22:
 ;
 ; Name:            
-; Defined at line: 831
+; Defined at line: 799
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3651,10 +3558,10 @@ code size: 4
 140 [-]: RETURN    R0 1         ; return 
 
 
-; Function #25:
+; Function #23:
 ;
 ; Name:            
-; Defined at line: 871
+; Defined at line: 839
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3888,10 +3795,10 @@ code size: 4
 226 [-]: RETURN    R0 1         ; return 
 
 
-; Function #26:
+; Function #24:
 ;
 ; Name:            
-; Defined at line: 947
+; Defined at line: 915
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3916,10 +3823,10 @@ code size: 4
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #27:
+; Function #25:
 ;
 ; Name:            
-; Defined at line: 951
+; Defined at line: 919
 ; #Upvalues:       23
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4035,7 +3942,7 @@ code size: 4
 108 [-]: MOVE      R5 R2        ; R5 := R2
 109 [-]: CALL      R3 3 1       ; R3(R4,R5)
 110 [-]: GETUPVAL  R3 U0        ; R3 := U0
-111 [-]: CLOSURE   R4 0         ; R4 := closure(Function #27.1)
+111 [-]: CLOSURE   R4 0         ; R4 := closure(Function #25.1)
 112 [-]: GETUPVAL  R0 U0        ; R0 := U0
 113 [-]: SETTABLE  R3 K32 R4    ; R3["UpdateButtonVisibility"] := R4
 114 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -4320,12 +4227,12 @@ code size: 4
 393 [-]: GETUPVAL  R9 U11       ; R9 := U11
 394 [-]: SELF      R9 R9 K105   ; R10 := R9; R9 := R9["0x61494587"]
 395 [-]: LOADK     R11 K106     ; R11 := 0.30000001192093
-396 [-]: CLOSURE   R12 1        ; R12 := closure(Function #27.2)
+396 [-]: CLOSURE   R12 1        ; R12 := closure(Function #25.2)
 397 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 398 [-]: GETUPVAL  R9 U11       ; R9 := U11
 399 [-]: SELF      R9 R9 K105   ; R10 := R9; R9 := R9["0x61494587"]
 400 [-]: LOADK     R11 K107     ; R11 := 0.60000002384186
-401 [-]: CLOSURE   R12 2        ; R12 := closure(Function #27.3)
+401 [-]: CLOSURE   R12 2        ; R12 := closure(Function #25.3)
 402 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 403 [-]: GETGLOBAL R9 K108      ; R9 := gGameStatsMgr
 404 [-]: EQ        1 R9 K18     ; if R9 == nil then PC := 413
@@ -4343,10 +4250,10 @@ code size: 4
 416 [-]: RETURN    R0 1         ; return 
 
 
-; Function #27.1:
+; Function #25.1:
 ;
 ; Name:            
-; Defined at line: 975
+; Defined at line: 943
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4432,10 +4339,10 @@ code size: 4
  78 [-]: RETURN    R0 1         ; return 
 
 
-; Function #27.2:
+; Function #25.2:
 ;
 ; Name:            
-; Defined at line: 1084
+; Defined at line: 1052
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4449,10 +4356,10 @@ code size: 4
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #27.3:
+; Function #25.3:
 ;
 ; Name:            
-; Defined at line: 1089
+; Defined at line: 1057
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4472,10 +4379,10 @@ code size: 4
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #28:
+; Function #26:
 ;
 ; Name:            
-; Defined at line: 1102
+; Defined at line: 1070
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4487,10 +4394,10 @@ code size: 4
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #29:
+; Function #27:
 ;
 ; Name:            
-; Defined at line: 1106
+; Defined at line: 1074
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4555,159 +4462,161 @@ code size: 4
  57 [-]: RETURN    R0 1         ; return 
 
 
-; Function #30:
+; Function #28:
 ;
 ; Name:            
-; Defined at line: 1130
+; Defined at line: 1098
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
-  2 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["Movie"]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: TEST      R1 1         ; if R1 then PC := 11
-  6 [-]: JMP       11           ; PC := 11
-  7 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["Movie"]
-  9 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0xA58BB96C"]
- 10 [-]: CALL      R1 2 1       ; R1(R2)
- 11 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 12 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["TransitioningOut"]
- 13 [-]: TEST      R1 0         ; if not R1 then PC := 19
- 14 [-]: JMP       19           ; PC := 19
- 15 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 16 [-]: CALL      R1 1 2       ; R1 := R1()
- 17 [-]: JMP       20           ; PC := 20
- 18 [-]: MOVE      R1 R0        ; R1 := R0
- 19 [-]: MOVE      R1 R1        ; R1 := R1
- 20 [-]: TEST      R0 1         ; if R0 then PC := 37
- 21 [-]: JMP       37           ; PC := 37
- 22 [-]: TEST      R1 0         ; if not R1 then PC := 37
- 23 [-]: JMP       37           ; PC := 37
- 24 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 25 [-]: GETGLOBAL R3 K4        ; R3 := _G
- 26 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["MapSoundInst"]
- 27 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 28 [-]: TEST      R2 1         ; if R2 then PC := 35
- 29 [-]: JMP       35           ; PC := 35
- 30 [-]: GETGLOBAL R2 K4        ; R2 := _G
- 31 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["MapSoundInst"]
- 32 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x2842784A"]
- 33 [-]: MOVE      R4 R0        ; R4 := R0
- 34 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 35 [-]: GETGLOBAL R2 K4        ; R2 := _G
- 36 [-]: SETTABLE  R2 K5 K7     ; R2["MapSoundInst"] := nil
- 37 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 38 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 39 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 40 [-]: TEST      R2 1         ; if R2 then PC := 45
- 41 [-]: JMP       45           ; PC := 45
- 42 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 43 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0xA58BB96C"]
- 44 [-]: CALL      R2 2 1       ; R2(R3)
- 45 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 46 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 47 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 48 [-]: TEST      R2 1         ; if R2 then PC := 53
- 49 [-]: JMP       53           ; PC := 53
- 50 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 51 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0xA58BB96C"]
- 52 [-]: CALL      R2 2 1       ; R2(R3)
- 53 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 54 [-]: GETUPVAL  R3 U5        ; R3 := U5
- 55 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 56 [-]: TEST      R2 1         ; if R2 then PC := 61
- 57 [-]: JMP       61           ; PC := 61
- 58 [-]: GETUPVAL  R2 U5        ; R2 := U5
- 59 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0xA58BB96C"]
- 60 [-]: CALL      R2 2 1       ; R2(R3)
- 61 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 62 [-]: GETUPVAL  R3 U6        ; R3 := U6
- 63 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["MovieInst"]
- 64 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 65 [-]: TEST      R2 1         ; if R2 then PC := 71
- 66 [-]: JMP       71           ; PC := 71
- 67 [-]: GETUPVAL  R2 U6        ; R2 := U6
- 68 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["MovieInst"]
- 69 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0xA58BB96C"]
- 70 [-]: CALL      R2 2 1       ; R2(R3)
- 71 [-]: GETGLOBAL R2 K9        ; R2 := gFlashMgr
- 72 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2["0x616DD092"]
- 73 [-]: GETUPVAL  R4 U7        ; R4 := U7
- 74 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["0xBCEEAD81"]
- 75 [-]: CALL      R4 1 0       ; R4,... := R4()
- 76 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 77 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
- 78 [-]: MOVE      R4 R2        ; R4 := R2
- 79 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 80 [-]: TEST      R3 1         ; if R3 then PC := 85
- 81 [-]: JMP       85           ; PC := 85
- 82 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0xD692CA7B"]
- 83 [-]: MOVE      R5 R0        ; R5 := R0
- 84 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 85 [-]: GETGLOBAL R3 K13       ; R3 := _T
- 86 [-]: SETTABLE  R3 K14 K15   ; R3["RadialSolarMapOpen"] := "0x0"
- 87 [-]: GETUPVAL  R3 U8        ; R3 := U8
- 88 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["0xB4BBB185"]
- 89 [-]: MOVE      R4 R0        ; R4 := R0
- 90 [-]: CALL      R3 2 1       ; R3(R4)
- 91 [-]: GETGLOBAL R3 K17       ; R3 := gGameStatsMgr
- 92 [-]: EQ        1 R3 K7      ; if R3 == nil then PC := 101
- 93 [-]: JMP       101          ; PC := 101
- 94 [-]: GETGLOBAL R3 K17       ; R3 := gGameStatsMgr
- 95 [-]: SELF      R3 R3 K18    ; R4 := R3; R3 := R3["0x47B87262"]
- 96 [-]: GETGLOBAL R5 K19       ; R5 := 0xEC274B1A
- 97 [-]: LOADK     R6 K20       ; R6 := "IN_SHIP_VIEW_TIME"
- 98 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 99 [-]: LOADK     R6 K21       ; R6 := "STARCHART"
-100 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
-101 [-]: GETGLOBAL R3 K22       ; R3 := gPlayerProfileMgr
-102 [-]: SELF      R3 R3 K23    ; R4 := R3; R3 := R3["0x21EF7B1A"]
-103 [-]: LOADK     R5 K24       ; R5 := 0
-104 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-105 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
-106 [-]: MOVE      R5 R3        ; R5 := R3
-107 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-108 [-]: TEST      R4 1         ; if R4 then PC := 117
-109 [-]: JMP       117          ; PC := 117
-110 [-]: SELF      R4 R3 K25    ; R5 := R3; R4 := R3["0x3EEB612E"]
-111 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-112 [-]: SELF      R5 R4 K26    ; R6 := R4; R5 := R4["0xF7E57216"]
-113 [-]: GETGLOBAL R7 K13       ; R7 := _T
-114 [-]: GETTABLE  R7 R7 K27    ; R7 := R7["ResourceDroneVisible"]
-115 [-]: MOVE      R7 R7        ; R7 := R7
-116 [-]: CALL      R5 3 1       ; R5(R6,R7)
-117 [-]: TEST      R0 1         ; if R0 then PC := 132
-118 [-]: JMP       132          ; PC := 132
-119 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
-120 [-]: GETGLOBAL R6 K13       ; R6 := _T
-121 [-]: GETTABLE  R6 R6 K28    ; R6 := R6["mTrigger"]
-122 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-123 [-]: TEST      R5 1         ; if R5 then PC := 132
-124 [-]: JMP       132          ; PC := 132
-125 [-]: GETGLOBAL R5 K13       ; R5 := _T
-126 [-]: GETTABLE  R5 R5 K28    ; R5 := R5["mTrigger"]
-127 [-]: SELF      R5 R5 K29    ; R6 := R5; R5 := R5["0x8D5886B7"]
-128 [-]: LOADK     R7 K30       ; R7 := "Close"
-129 [-]: CALL      R5 3 1       ; R5(R6,R7)
-130 [-]: GETGLOBAL R5 K13       ; R5 := _T
-131 [-]: SETTABLE  R5 K28 K7    ; R5["mTrigger"] := nil
-132 [-]: GETGLOBAL R5 K13       ; R5 := _T
-133 [-]: SETTABLE  R5 K31 K15   ; R5["InStarChart"] := "0x0"
-134 [-]: GETGLOBAL R5 K13       ; R5 := _T
-135 [-]: SETTABLE  R5 K32 K7    ; R5["InRailJackMode"] := nil
-136 [-]: GETGLOBAL R5 K13       ; R5 := _T
-137 [-]: SETTABLE  R5 K27 K7    ; R5["ResourceDroneVisible"] := nil
-138 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
+  2 [-]: SETTABLE  R1 K1 K2     ; R1["RadialSolarMap_OnAggregateResults"] := nil
+  3 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+  4 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  5 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["Movie"]
+  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  7 [-]: TEST      R1 1         ; if R1 then PC := 13
+  8 [-]: JMP       13           ; PC := 13
+  9 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 10 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["Movie"]
+ 11 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1["0xA58BB96C"]
+ 12 [-]: CALL      R1 2 1       ; R1(R2)
+ 13 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 14 [-]: GETTABLE  R1 R1 K6     ; R1 := R1["TransitioningOut"]
+ 15 [-]: TEST      R1 0         ; if not R1 then PC := 21
+ 16 [-]: JMP       21           ; PC := 21
+ 17 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 18 [-]: CALL      R1 1 2       ; R1 := R1()
+ 19 [-]: JMP       22           ; PC := 22
+ 20 [-]: MOVE      R1 R0        ; R1 := R0
+ 21 [-]: MOVE      R1 R1        ; R1 := R1
+ 22 [-]: TEST      R0 1         ; if R0 then PC := 39
+ 23 [-]: JMP       39           ; PC := 39
+ 24 [-]: TEST      R1 0         ; if not R1 then PC := 39
+ 25 [-]: JMP       39           ; PC := 39
+ 26 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 27 [-]: GETGLOBAL R3 K7        ; R3 := _G
+ 28 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["MapSoundInst"]
+ 29 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 30 [-]: TEST      R2 1         ; if R2 then PC := 37
+ 31 [-]: JMP       37           ; PC := 37
+ 32 [-]: GETGLOBAL R2 K7        ; R2 := _G
+ 33 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["MapSoundInst"]
+ 34 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0x2842784A"]
+ 35 [-]: MOVE      R4 R0        ; R4 := R0
+ 36 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 37 [-]: GETGLOBAL R2 K7        ; R2 := _G
+ 38 [-]: SETTABLE  R2 K8 K2     ; R2["MapSoundInst"] := nil
+ 39 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 40 [-]: GETUPVAL  R3 U3        ; R3 := U3
+ 41 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 42 [-]: TEST      R2 1         ; if R2 then PC := 47
+ 43 [-]: JMP       47           ; PC := 47
+ 44 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 45 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xA58BB96C"]
+ 46 [-]: CALL      R2 2 1       ; R2(R3)
+ 47 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 48 [-]: GETUPVAL  R3 U4        ; R3 := U4
+ 49 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 50 [-]: TEST      R2 1         ; if R2 then PC := 55
+ 51 [-]: JMP       55           ; PC := 55
+ 52 [-]: GETUPVAL  R2 U4        ; R2 := U4
+ 53 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xA58BB96C"]
+ 54 [-]: CALL      R2 2 1       ; R2(R3)
+ 55 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 56 [-]: GETUPVAL  R3 U5        ; R3 := U5
+ 57 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 58 [-]: TEST      R2 1         ; if R2 then PC := 63
+ 59 [-]: JMP       63           ; PC := 63
+ 60 [-]: GETUPVAL  R2 U5        ; R2 := U5
+ 61 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xA58BB96C"]
+ 62 [-]: CALL      R2 2 1       ; R2(R3)
+ 63 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 64 [-]: GETUPVAL  R3 U6        ; R3 := U6
+ 65 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["MovieInst"]
+ 66 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 67 [-]: TEST      R2 1         ; if R2 then PC := 73
+ 68 [-]: JMP       73           ; PC := 73
+ 69 [-]: GETUPVAL  R2 U6        ; R2 := U6
+ 70 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["MovieInst"]
+ 71 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xA58BB96C"]
+ 72 [-]: CALL      R2 2 1       ; R2(R3)
+ 73 [-]: GETGLOBAL R2 K11       ; R2 := gFlashMgr
+ 74 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2["0x616DD092"]
+ 75 [-]: GETUPVAL  R4 U7        ; R4 := U7
+ 76 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["0xBCEEAD81"]
+ 77 [-]: CALL      R4 1 0       ; R4,... := R4()
+ 78 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+ 79 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
+ 80 [-]: MOVE      R4 R2        ; R4 := R2
+ 81 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 82 [-]: TEST      R3 1         ; if R3 then PC := 87
+ 83 [-]: JMP       87           ; PC := 87
+ 84 [-]: SELF      R3 R2 K14    ; R4 := R2; R3 := R2["0xD692CA7B"]
+ 85 [-]: MOVE      R5 R0        ; R5 := R0
+ 86 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 87 [-]: GETGLOBAL R3 K0        ; R3 := _T
+ 88 [-]: SETTABLE  R3 K15 K16   ; R3["RadialSolarMapOpen"] := "0x0"
+ 89 [-]: GETUPVAL  R3 U8        ; R3 := U8
+ 90 [-]: GETTABLE  R3 R3 K17    ; R3 := R3["0xB4BBB185"]
+ 91 [-]: MOVE      R4 R0        ; R4 := R0
+ 92 [-]: CALL      R3 2 1       ; R3(R4)
+ 93 [-]: GETGLOBAL R3 K18       ; R3 := gGameStatsMgr
+ 94 [-]: EQ        1 R3 K2      ; if R3 == nil then PC := 103
+ 95 [-]: JMP       103          ; PC := 103
+ 96 [-]: GETGLOBAL R3 K18       ; R3 := gGameStatsMgr
+ 97 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3["0x47B87262"]
+ 98 [-]: GETGLOBAL R5 K20       ; R5 := 0xEC274B1A
+ 99 [-]: LOADK     R6 K21       ; R6 := "IN_SHIP_VIEW_TIME"
+100 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+101 [-]: LOADK     R6 K22       ; R6 := "STARCHART"
+102 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+103 [-]: GETGLOBAL R3 K23       ; R3 := gPlayerProfileMgr
+104 [-]: SELF      R3 R3 K24    ; R4 := R3; R3 := R3["0x21EF7B1A"]
+105 [-]: LOADK     R5 K25       ; R5 := 0
+106 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+107 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
+108 [-]: MOVE      R5 R3        ; R5 := R3
+109 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+110 [-]: TEST      R4 1         ; if R4 then PC := 119
+111 [-]: JMP       119          ; PC := 119
+112 [-]: SELF      R4 R3 K26    ; R5 := R3; R4 := R3["0x3EEB612E"]
+113 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+114 [-]: SELF      R5 R4 K27    ; R6 := R4; R5 := R4["0xF7E57216"]
+115 [-]: GETGLOBAL R7 K0        ; R7 := _T
+116 [-]: GETTABLE  R7 R7 K28    ; R7 := R7["ResourceDroneVisible"]
+117 [-]: MOVE      R7 R7        ; R7 := R7
+118 [-]: CALL      R5 3 1       ; R5(R6,R7)
+119 [-]: TEST      R0 1         ; if R0 then PC := 134
+120 [-]: JMP       134          ; PC := 134
+121 [-]: GETGLOBAL R5 K3        ; R5 := 0x400E7765
+122 [-]: GETGLOBAL R6 K0        ; R6 := _T
+123 [-]: GETTABLE  R6 R6 K29    ; R6 := R6["mTrigger"]
+124 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+125 [-]: TEST      R5 1         ; if R5 then PC := 134
+126 [-]: JMP       134          ; PC := 134
+127 [-]: GETGLOBAL R5 K0        ; R5 := _T
+128 [-]: GETTABLE  R5 R5 K29    ; R5 := R5["mTrigger"]
+129 [-]: SELF      R5 R5 K30    ; R6 := R5; R5 := R5["0x8D5886B7"]
+130 [-]: LOADK     R7 K31       ; R7 := "Close"
+131 [-]: CALL      R5 3 1       ; R5(R6,R7)
+132 [-]: GETGLOBAL R5 K0        ; R5 := _T
+133 [-]: SETTABLE  R5 K29 K2    ; R5["mTrigger"] := nil
+134 [-]: GETGLOBAL R5 K0        ; R5 := _T
+135 [-]: SETTABLE  R5 K32 K16   ; R5["InStarChart"] := "0x0"
+136 [-]: GETGLOBAL R5 K0        ; R5 := _T
+137 [-]: SETTABLE  R5 K33 K2    ; R5["InRailJackMode"] := nil
+138 [-]: GETGLOBAL R5 K0        ; R5 := _T
+139 [-]: SETTABLE  R5 K28 K2    ; R5["ResourceDroneVisible"] := nil
+140 [-]: RETURN    R0 1         ; return 
 
 
-; Function #31:
+; Function #29:
 ;
 ; Name:            
-; Defined at line: 1189
+; Defined at line: 1159
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4728,73 +4637,96 @@ code size: 4
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #32:
+; Function #30:
 ;
 ; Name:            
-; Defined at line: 1197
-; #Upvalues:       6
+; Defined at line: 1167
+; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["Active"]
-  4 [-]: MOVE      R1 R1        ; R1 := R1
-  5 [-]: SETTABLE  R0 K0 R1     ; R0["Active"] := R1
-  6 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  7 [-]: SETTABLE  R0 K1 K2     ; R0["Transitioned"] := "0x1"
-  8 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  9 [-]: MOVE      R1 R1        ; R1 := R1
- 10 [-]: LOADNIL   R2 R2        ; R2 := nil
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 13 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 14 [-]: MOVE      R1 R1        ; R1 := R1
- 15 [-]: CALL      R0 2 1       ; R0(R1)
- 16 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 17 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0xDB33ECB2"]
- 18 [-]: GETGLOBAL R1 K4        ; R1 := mMovie
- 19 [-]: LOADK     R2 K5        ; R2 := 1
- 20 [-]: LOADK     R3 K6        ; R3 := 0.20000000298023
- 21 [-]: LOADK     R4 K7        ; R4 := 0
- 22 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
- 23 [-]: GETGLOBAL R0 K8        ; R0 := 0x201191EA
- 24 [-]: LOADK     R1 K7        ; R1 := 0
- 25 [-]: CALL      R0 2 1       ; R0(R1)
- 26 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 27 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["Active"]
- 28 [-]: TEST      R0 0         ; if not R0 then PC := 35
- 29 [-]: JMP       35           ; PC := 35
- 30 [-]: GETGLOBAL R0 K9        ; R0 := _T
- 31 [-]: GETUPVAL  R1 U4        ; R1 := U4
- 32 [-]: CALL      R1 1 2       ; R1 := R1()
- 33 [-]: SETTABLE  R0 K10 R1    ; R0["InRailJackMode"] := R1
- 34 [-]: JMP       37           ; PC := 37
- 35 [-]: GETGLOBAL R0 K9        ; R0 := _T
- 36 [-]: SETTABLE  R0 K10 K11   ; R0["InRailJackMode"] := nil
- 37 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 38 [-]: CALL      R0 1 1       ; R0()
- 39 [-]: GETGLOBAL R0 K12       ; R0 := 0x52E17A90
- 40 [-]: GETGLOBAL R1 K4        ; R1 := mMovie
- 41 [-]: LOADK     R2 K13       ; R2 := "_root"
- 42 [-]: GETGLOBAL R3 K14       ; R3 := UISys
- 43 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["FlashInstance_LINEAR"]
- 44 [-]: NEWTABLE  R4 1 0       ; R4 := {}
- 45 [-]: LOADK     R5 K16       ; R5 := "_alpha"
- 46 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 47 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 48 [-]: LOADK     R6 K17       ; R6 := 100
- 49 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 50 [-]: LOADK     R6 K18       ; R6 := 0.30000001192093
- 51 [-]: CALL      R0 7 1       ; R0(R1,R2,R3,R4,R5,R6)
- 52 [-]: RETURN    R0 1         ; return 
+  2 [-]: TEST      R0 0         ; if not R0 then PC := 5
+  3 [-]: JMP       5            ; PC := 5
+  4 [-]: RETURN    R0 1         ; return 
+  5 [-]: MOVE      R0 R1        ; R0 := R1
+  6 [-]: MOVE      R0 R0        ; R0 := R0
+  7 [-]: GETUPVAL  R0 U1        ; R0 := U1
+  8 [-]: GETUPVAL  R1 U1        ; R1 := U1
+  9 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["Active"]
+ 10 [-]: MOVE      R1 R1        ; R1 := R1
+ 11 [-]: SETTABLE  R0 K0 R1     ; R0["Active"] := R1
+ 12 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 13 [-]: SETTABLE  R0 K1 K2     ; R0["Transitioned"] := "0x1"
+ 14 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 15 [-]: MOVE      R1 R1        ; R1 := R1
+ 16 [-]: LOADNIL   R2 R2        ; R2 := nil
+ 17 [-]: MOVE      R3 R1        ; R3 := R1
+ 18 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
+ 19 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 20 [-]: MOVE      R1 R1        ; R1 := R1
+ 21 [-]: CALL      R0 2 1       ; R0(R1)
+ 22 [-]: GETUPVAL  R0 U4        ; R0 := U4
+ 23 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0xDB33ECB2"]
+ 24 [-]: GETGLOBAL R1 K4        ; R1 := mMovie
+ 25 [-]: LOADK     R2 K5        ; R2 := 1
+ 26 [-]: LOADK     R3 K6        ; R3 := 0.20000000298023
+ 27 [-]: LOADK     R4 K7        ; R4 := 0
+ 28 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
+ 29 [-]: GETGLOBAL R0 K8        ; R0 := 0x201191EA
+ 30 [-]: LOADK     R1 K7        ; R1 := 0
+ 31 [-]: CALL      R0 2 1       ; R0(R1)
+ 32 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 33 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["Active"]
+ 34 [-]: TEST      R0 0         ; if not R0 then PC := 41
+ 35 [-]: JMP       41           ; PC := 41
+ 36 [-]: GETGLOBAL R0 K9        ; R0 := _T
+ 37 [-]: GETUPVAL  R1 U5        ; R1 := U5
+ 38 [-]: CALL      R1 1 2       ; R1 := R1()
+ 39 [-]: SETTABLE  R0 K10 R1    ; R0["InRailJackMode"] := R1
+ 40 [-]: JMP       43           ; PC := 43
+ 41 [-]: GETGLOBAL R0 K9        ; R0 := _T
+ 42 [-]: SETTABLE  R0 K10 K11   ; R0["InRailJackMode"] := nil
+ 43 [-]: GETUPVAL  R0 U6        ; R0 := U6
+ 44 [-]: CALL      R0 1 1       ; R0()
+ 45 [-]: GETGLOBAL R0 K12       ; R0 := 0x52E17A90
+ 46 [-]: GETGLOBAL R1 K4        ; R1 := mMovie
+ 47 [-]: LOADK     R2 K13       ; R2 := "_root"
+ 48 [-]: GETGLOBAL R3 K14       ; R3 := UISys
+ 49 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["FlashInstance_LINEAR"]
+ 50 [-]: NEWTABLE  R4 1 0       ; R4 := {}
+ 51 [-]: LOADK     R5 K16       ; R5 := "_alpha"
+ 52 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
+ 53 [-]: NEWTABLE  R5 1 0       ; R5 := {}
+ 54 [-]: LOADK     R6 K17       ; R6 := 100
+ 55 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
+ 56 [-]: LOADK     R6 K18       ; R6 := 0.30000001192093
+ 57 [-]: LOADK     R7 K7        ; R7 := 0
+ 58 [-]: CLOSURE   R8 0         ; R8 := closure(Function #30.1)
+ 59 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 60 [-]: CALL      R0 9 1       ; R0(R1,R2,R3,R4,R5,R6,R7,R8)
+ 61 [-]: RETURN    R0 1         ; return 
 
 
-; Function #33:
+; Function #30.1:
 ;
 ; Name:            
-; Defined at line: 1216
+; Defined at line: 1189
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: MOVE      R0 R0        ; R0 := R0
+  2 [-]: MOVE      R0 R0        ; R0 := R0
+  3 [-]: RETURN    R0 1         ; return 
+
+
+; Function #31:
+;
+; Name:            
+; Defined at line: 1194
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4805,10 +4737,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #34:
+; Function #32:
 ;
 ; Name:            
-; Defined at line: 1220
+; Defined at line: 1198
 ; #Upvalues:       13
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4971,10 +4903,10 @@ code size: 4
 155 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35:
+; Function #33:
 ;
 ; Name:            
-; Defined at line: 1278
+; Defined at line: 1256
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4985,10 +4917,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #36:
+; Function #34:
 ;
 ; Name:            
-; Defined at line: 1282
+; Defined at line: 1260
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5004,10 +4936,10 @@ code size: 4
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #37:
+; Function #35:
 ;
 ; Name:            
-; Defined at line: 1287
+; Defined at line: 1265
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -5065,10 +4997,10 @@ code size: 4
  50 [-]: RETURN    R0 1         ; return 
 
 
-; Function #38:
+; Function #36:
 ;
 ; Name:            
-; Defined at line: 1306
+; Defined at line: 1284
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5083,10 +5015,10 @@ code size: 4
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #39:
+; Function #37:
 ;
 ; Name:            
-; Defined at line: 1310
+; Defined at line: 1288
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5112,10 +5044,10 @@ code size: 4
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #40:
+; Function #38:
 ;
 ; Name:            
-; Defined at line: 1318
+; Defined at line: 1296
 ; #Upvalues:       5
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -5302,10 +5234,10 @@ code size: 4
 179 [-]: RETURN    R0 1         ; return 
 
 
-; Function #41:
+; Function #39:
 ;
 ; Name:            
-; Defined at line: 1366
+; Defined at line: 1344
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5444,10 +5376,10 @@ code size: 4
 131 [-]: RETURN    R0 1         ; return 
 
 
-; Function #42:
+; Function #40:
 ;
 ; Name:            
-; Defined at line: 1407
+; Defined at line: 1385
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5522,10 +5454,10 @@ code size: 4
  67 [-]: RETURN    R0 1         ; return 
 
 
-; Function #43:
+; Function #41:
 ;
 ; Name:            
-; Defined at line: 1425
+; Defined at line: 1403
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5785,11 +5717,11 @@ code size: 4
 252 [-]: RETURN    R0 1         ; return 
 
 
-; Function #44:
+; Function #42:
 ;
 ; Name:            
-; Defined at line: 1469
-; #Upvalues:       16
+; Defined at line: 1447
+; #Upvalues:       14
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  52
@@ -5812,360 +5744,348 @@ code size: 4
  16 [-]: CALL      R5 3 1       ; R5(R6,R7)
  17 [-]: TFORLOOP  R0 2         ; R3,R4 :=  R0(R1,R2); if R3 ~= nil then begin PC = 8; R2 := R3 end
  18 [-]: JMP       8            ; PC := 8
- 19 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 20 [-]: SELF      R5 R5 K6     ; R6 := R5; R5 := R5["0x871D2E8C"]
- 21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: MOVE      R5 R0        ; R5 := R0
- 23 [-]: LOADK     R5 K7        ; R5 := 1
- 24 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 25 [-]: LEN       R6 R6        ; R6 := # R6
- 26 [-]: LOADK     R7 K7        ; R7 := 1
- 27 [-]: FORPREP   R5 73        ; R5 -= R7; PC := 73
- 28 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 29 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
- 30 [-]: GETGLOBAL R10 K8       ; R10 := 0xCAA43ABB
- 31 [-]: GETTABLE  R11 R9 K9    ; R11 := R9["deco"]
- 32 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 33 [-]: GETGLOBAL R11 K10      ; R11 := 0x221C9700
- 34 [-]: GETTABLE  R12 R9 K11   ; R12 := R9["pos"]
- 35 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["x"]
- 36 [-]: GETTABLE  R13 R9 K11   ; R13 := R9["pos"]
- 37 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["y"]
- 38 [-]: GETTABLE  R14 R9 K11   ; R14 := R9["pos"]
- 39 [-]: GETTABLE  R14 R14 K14  ; R14 := R14["z"]
- 40 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 41 [-]: GETUPVAL  R12 U2       ; R12 := U2
- 42 [-]: MOVE      R13 R11      ; R13 := R11
- 43 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 44 [-]: MOVE      R11 R12      ; R11 := R12
- 45 [-]: SETTABLE  R9 K11 R11   ; R9["pos"] := R11
- 46 [-]: GETGLOBAL R12 K2       ; R12 := 0x400E7765
- 47 [-]: MOVE      R13 R10      ; R13 := R10
- 48 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 49 [-]: TEST      R12 1        ; if R12 then PC := 70
- 50 [-]: JMP       70           ; PC := 70
- 51 [-]: GETGLOBAL R12 K2       ; R12 := 0x400E7765
- 52 [-]: GETTABLE  R13 R9 K9    ; R13 := R9["deco"]
- 53 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 54 [-]: TEST      R12 1        ; if R12 then PC := 59
- 55 [-]: JMP       59           ; PC := 59
- 56 [-]: GETUPVAL  R12 U3       ; R12 := U3
- 57 [-]: GETTABLE  R13 R9 K9    ; R13 := R9["deco"]
- 58 [-]: CALL      R12 2 1      ; R12(R13)
- 59 [-]: GETGLOBAL R12 K4       ; R12 := gBackgroundRegion
- 60 [-]: SELF      R12 R12 K15  ; R13 := R12; R12 := R12["0xBDD34CC6"]
- 61 [-]: MOVE      R14 R10      ; R14 := R10
- 62 [-]: MOVE      R15 R11      ; R15 := R11
- 63 [-]: GETGLOBAL R16 K16      ; R16 := ZERO_ROTATION
- 64 [-]: CALL      R12 5 2      ; R12 := R12(R13,R14,R15,R16)
- 65 [-]: SETTABLE  R9 K3 R12    ; R9["instance"] := R12
- 66 [-]: GETTABLE  R12 R9 K3    ; R12 := R9["instance"]
- 67 [-]: SELF      R12 R12 K17  ; R13 := R12; R12 := R12["0x6A7E5F92"]
- 68 [-]: GETTABLE  R14 R9 K18   ; R14 := R9["scale"]
- 69 [-]: CALL      R12 3 1      ; R12(R13,R14)
- 70 [-]: LOADNIL   R12 R12      ; R12 := nil
- 71 [-]: GETUPVAL  R13 U4       ; R13 := U4
- 72 [-]: SETTABLE  R13 R8 R12   ; R13[R8] := R12
- 73 [-]: FORLOOP   R5 28        ; R5 += R7; if R5 <= R6 then begin PC := 28; R8 := R5 end
- 74 [-]: GETGLOBAL R13 K4       ; R13 := gBackgroundRegion
- 75 [-]: SELF      R13 R13 K19  ; R14 := R13; R13 := R13["0x90391273"]
- 76 [-]: GETUPVAL  R15 U6       ; R15 := U6
- 77 [-]: GETTABLE  R15 R15 K20  ; R15 := R15["STAR_CHART_ROOT"]
- 78 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
- 79 [-]: MOVE      R13 R5       ; R13 := R5
- 80 [-]: GETUPVAL  R13 U5       ; R13 := U5
- 81 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13["0x5097FD8C"]
- 82 [-]: GETGLOBAL R15 K22      ; R15 := 0x1E4F6281
- 83 [-]: LOADK     R16 K23      ; R16 := 0
- 84 [-]: LOADK     R17 K24      ; R17 := 60
- 85 [-]: LOADK     R18 K23      ; R18 := 0
- 86 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
- 87 [-]: CALL      R13 0 1      ; R13(R14,...)
- 88 [-]: GETGLOBAL R13 K4       ; R13 := gBackgroundRegion
- 89 [-]: SELF      R13 R13 K19  ; R14 := R13; R13 := R13["0x90391273"]
- 90 [-]: GETUPVAL  R15 U6       ; R15 := U6
- 91 [-]: GETTABLE  R15 R15 K25  ; R15 := R15["PLAYER"]
- 92 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
- 93 [-]: GETGLOBAL R14 K4       ; R14 := gBackgroundRegion
- 94 [-]: SELF      R14 R14 K19  ; R15 := R14; R14 := R14["0x90391273"]
- 95 [-]: GETUPVAL  R16 U6       ; R16 := U6
- 96 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["PLAYER_OPERATOR"]
- 97 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 98 [-]: GETGLOBAL R15 K27      ; R15 := gRegion
- 99 [-]: SELF      R15 R15 K28  ; R16 := R15; R15 := R15["0x3E2F6BF"]
-100 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-101 [-]: GETGLOBAL R16 K29      ; R16 := 0x2C00D429
-102 [-]: LOADK     R17 K30      ; R17 := "/Lotus/Types/Friendly/Tenno/OperatorHubAvatar"
-103 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-104 [-]: GETGLOBAL R17 K2       ; R17 := 0x400E7765
-105 [-]: MOVE      R18 R15      ; R18 := R15
-106 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-107 [-]: TEST      R17 1        ; if R17 then PC := 113
-108 [-]: JMP       113          ; PC := 113
-109 [-]: SELF      R17 R15 K31  ; R18 := R15; R17 := R15["0x8B598ED4"]
-110 [-]: MOVE      R19 R16      ; R19 := R16
-111 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-112 [-]: JMP       115          ; PC := 115
-113 [-]: MOVE      R17 R0       ; R17 := R0
-114 [-]: MOVE      R17 R1       ; R17 := R1
-115 [-]: TEST      R17 0        ; if not R17 then PC := 137
-116 [-]: JMP       137          ; PC := 137
-117 [-]: MOVE      R14 R7       ; R14 := R7
-118 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
-119 [-]: MOVE      R19 R13      ; R19 := R13
-120 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-121 [-]: TEST      R18 1        ; if R18 then PC := 126
-122 [-]: JMP       126          ; PC := 126
-123 [-]: SELF      R18 R13 K32  ; R19 := R13; R18 := R13["0x7DBDDA0B"]
-124 [-]: MOVE      R20 R0       ; R20 := R0
-125 [-]: CALL      R18 3 1      ; R18(R19,R20)
+ 19 [-]: LOADK     R5 K6        ; R5 := 1
+ 20 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 21 [-]: LEN       R6 R6        ; R6 := # R6
+ 22 [-]: LOADK     R7 K6        ; R7 := 1
+ 23 [-]: FORPREP   R5 61        ; R5 -= R7; PC := 61
+ 24 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 25 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+ 26 [-]: GETGLOBAL R10 K7       ; R10 := 0xCAA43ABB
+ 27 [-]: GETTABLE  R11 R9 K8    ; R11 := R9["deco"]
+ 28 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 29 [-]: GETGLOBAL R11 K9       ; R11 := 0x221C9700
+ 30 [-]: GETTABLE  R12 R9 K10   ; R12 := R9["pos"]
+ 31 [-]: GETTABLE  R12 R12 K11  ; R12 := R12["x"]
+ 32 [-]: GETTABLE  R13 R9 K10   ; R13 := R9["pos"]
+ 33 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["y"]
+ 34 [-]: GETTABLE  R14 R9 K10   ; R14 := R9["pos"]
+ 35 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["z"]
+ 36 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
+ 37 [-]: GETUPVAL  R12 U1       ; R12 := U1
+ 38 [-]: MOVE      R13 R11      ; R13 := R11
+ 39 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 40 [-]: MOVE      R11 R12      ; R11 := R12
+ 41 [-]: SETTABLE  R9 K10 R11   ; R9["pos"] := R11
+ 42 [-]: GETGLOBAL R12 K2       ; R12 := 0x400E7765
+ 43 [-]: MOVE      R13 R10      ; R13 := R10
+ 44 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 45 [-]: TEST      R12 1        ; if R12 then PC := 58
+ 46 [-]: JMP       58           ; PC := 58
+ 47 [-]: GETGLOBAL R12 K4       ; R12 := gBackgroundRegion
+ 48 [-]: SELF      R12 R12 K14  ; R13 := R12; R12 := R12["0xBDD34CC6"]
+ 49 [-]: MOVE      R14 R10      ; R14 := R10
+ 50 [-]: MOVE      R15 R11      ; R15 := R11
+ 51 [-]: GETGLOBAL R16 K15      ; R16 := ZERO_ROTATION
+ 52 [-]: CALL      R12 5 2      ; R12 := R12(R13,R14,R15,R16)
+ 53 [-]: SETTABLE  R9 K3 R12    ; R9["instance"] := R12
+ 54 [-]: GETTABLE  R12 R9 K3    ; R12 := R9["instance"]
+ 55 [-]: SELF      R12 R12 K16  ; R13 := R12; R12 := R12["0x6A7E5F92"]
+ 56 [-]: GETTABLE  R14 R9 K17   ; R14 := R9["scale"]
+ 57 [-]: CALL      R12 3 1      ; R12(R13,R14)
+ 58 [-]: LOADNIL   R12 R12      ; R12 := nil
+ 59 [-]: GETUPVAL  R13 U2       ; R13 := U2
+ 60 [-]: SETTABLE  R13 R8 R12   ; R13[R8] := R12
+ 61 [-]: FORLOOP   R5 24        ; R5 += R7; if R5 <= R6 then begin PC := 24; R8 := R5 end
+ 62 [-]: GETGLOBAL R13 K4       ; R13 := gBackgroundRegion
+ 63 [-]: SELF      R13 R13 K18  ; R14 := R13; R13 := R13["0x90391273"]
+ 64 [-]: GETUPVAL  R15 U4       ; R15 := U4
+ 65 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["STAR_CHART_ROOT"]
+ 66 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+ 67 [-]: MOVE      R13 R3       ; R13 := R3
+ 68 [-]: GETUPVAL  R13 U3       ; R13 := U3
+ 69 [-]: SELF      R13 R13 K20  ; R14 := R13; R13 := R13["0x5097FD8C"]
+ 70 [-]: GETGLOBAL R15 K21      ; R15 := 0x1E4F6281
+ 71 [-]: LOADK     R16 K22      ; R16 := 0
+ 72 [-]: LOADK     R17 K23      ; R17 := 60
+ 73 [-]: LOADK     R18 K22      ; R18 := 0
+ 74 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
+ 75 [-]: CALL      R13 0 1      ; R13(R14,...)
+ 76 [-]: GETGLOBAL R13 K4       ; R13 := gBackgroundRegion
+ 77 [-]: SELF      R13 R13 K18  ; R14 := R13; R13 := R13["0x90391273"]
+ 78 [-]: GETUPVAL  R15 U4       ; R15 := U4
+ 79 [-]: GETTABLE  R15 R15 K24  ; R15 := R15["PLAYER"]
+ 80 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+ 81 [-]: GETGLOBAL R14 K4       ; R14 := gBackgroundRegion
+ 82 [-]: SELF      R14 R14 K18  ; R15 := R14; R14 := R14["0x90391273"]
+ 83 [-]: GETUPVAL  R16 U4       ; R16 := U4
+ 84 [-]: GETTABLE  R16 R16 K25  ; R16 := R16["PLAYER_OPERATOR"]
+ 85 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+ 86 [-]: GETGLOBAL R15 K26      ; R15 := gRegion
+ 87 [-]: SELF      R15 R15 K27  ; R16 := R15; R15 := R15["0x3E2F6BF"]
+ 88 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 89 [-]: GETGLOBAL R16 K28      ; R16 := 0x2C00D429
+ 90 [-]: LOADK     R17 K29      ; R17 := "/Lotus/Types/Friendly/Tenno/OperatorHubAvatar"
+ 91 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+ 92 [-]: GETGLOBAL R17 K2       ; R17 := 0x400E7765
+ 93 [-]: MOVE      R18 R15      ; R18 := R15
+ 94 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+ 95 [-]: TEST      R17 1        ; if R17 then PC := 101
+ 96 [-]: JMP       101          ; PC := 101
+ 97 [-]: SELF      R17 R15 K30  ; R18 := R15; R17 := R15["0x8B598ED4"]
+ 98 [-]: MOVE      R19 R16      ; R19 := R16
+ 99 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+100 [-]: JMP       103          ; PC := 103
+101 [-]: MOVE      R17 R0       ; R17 := R0
+102 [-]: MOVE      R17 R1       ; R17 := R1
+103 [-]: TEST      R17 0        ; if not R17 then PC := 125
+104 [-]: JMP       125          ; PC := 125
+105 [-]: MOVE      R14 R5       ; R14 := R5
+106 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
+107 [-]: MOVE      R19 R13      ; R19 := R13
+108 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+109 [-]: TEST      R18 1        ; if R18 then PC := 114
+110 [-]: JMP       114          ; PC := 114
+111 [-]: SELF      R18 R13 K31  ; R19 := R13; R18 := R13["0x7DBDDA0B"]
+112 [-]: MOVE      R20 R0       ; R20 := R0
+113 [-]: CALL      R18 3 1      ; R18(R19,R20)
+114 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
+115 [-]: MOVE      R19 R14      ; R19 := R14
+116 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+117 [-]: TEST      R18 1        ; if R18 then PC := 134
+118 [-]: JMP       134          ; PC := 134
+119 [-]: GETUPVAL  R18 U6       ; R18 := U6
+120 [-]: GETTABLE  R18 R18 K32  ; R18 := R18["0x52F80741"]
+121 [-]: MOVE      R19 R14      ; R19 := R14
+122 [-]: MOVE      R20 R15      ; R20 := R15
+123 [-]: CALL      R18 3 1      ; R18(R19,R20)
+124 [-]: JMP       134          ; PC := 134
+125 [-]: MOVE      R13 R5       ; R13 := R5
 126 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
 127 [-]: MOVE      R19 R14      ; R19 := R14
 128 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-129 [-]: TEST      R18 1        ; if R18 then PC := 146
-130 [-]: JMP       146          ; PC := 146
-131 [-]: GETUPVAL  R18 U8       ; R18 := U8
-132 [-]: GETTABLE  R18 R18 K33  ; R18 := R18["0x52F80741"]
-133 [-]: MOVE      R19 R14      ; R19 := R14
-134 [-]: MOVE      R20 R15      ; R20 := R15
-135 [-]: CALL      R18 3 1      ; R18(R19,R20)
-136 [-]: JMP       146          ; PC := 146
-137 [-]: MOVE      R13 R7       ; R13 := R7
-138 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
-139 [-]: MOVE      R19 R14      ; R19 := R14
+129 [-]: TEST      R18 1        ; if R18 then PC := 134
+130 [-]: JMP       134          ; PC := 134
+131 [-]: SELF      R18 R14 K31  ; R19 := R14; R18 := R14["0x7DBDDA0B"]
+132 [-]: MOVE      R20 R0       ; R20 := R0
+133 [-]: CALL      R18 3 1      ; R18(R19,R20)
+134 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
+135 [-]: MOVE      R19 R15      ; R19 := R15
+136 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+137 [-]: TEST      R18 1        ; if R18 then PC := 179
+138 [-]: JMP       179          ; PC := 179
+139 [-]: SELF      R18 R15 K33  ; R19 := R15; R18 := R15["0x8DB5D01F"]
 140 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-141 [-]: TEST      R18 1        ; if R18 then PC := 146
-142 [-]: JMP       146          ; PC := 146
-143 [-]: SELF      R18 R14 K32  ; R19 := R14; R18 := R14["0x7DBDDA0B"]
-144 [-]: MOVE      R20 R0       ; R20 := R0
-145 [-]: CALL      R18 3 1      ; R18(R19,R20)
-146 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
-147 [-]: MOVE      R19 R15      ; R19 := R15
-148 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-149 [-]: TEST      R18 1        ; if R18 then PC := 191
-150 [-]: JMP       191          ; PC := 191
-151 [-]: SELF      R18 R15 K34  ; R19 := R15; R18 := R15["0x8DB5D01F"]
-152 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-153 [-]: SELF      R18 R18 K35  ; R19 := R18; R18 := R18["0x6978AC59"]
-154 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-155 [-]: GETGLOBAL R19 K2       ; R19 := 0x400E7765
-156 [-]: MOVE      R20 R18      ; R20 := R18
-157 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-158 [-]: TEST      R19 1        ; if R19 then PC := 191
-159 [-]: JMP       191          ; PC := 191
-160 [-]: GETGLOBAL R19 K1       ; R19 := 0x63B09107
-161 [-]: GETGLOBAL R20 K36      ; R20 := heavyFrames
-162 [-]: CALL      R19 2 4      ; R19,R20,R21 := R19(R20)
-163 [-]: JMP       172          ; PC := 172
-164 [-]: SELF      R24 R18 K31  ; R25 := R18; R24 := R18["0x8B598ED4"]
-165 [-]: MOVE      R26 R23      ; R26 := R23
-166 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-167 [-]: TEST      R24 0        ; if not R24 then PC := 172
-168 [-]: JMP       172          ; PC := 172
-169 [-]: GETGLOBAL R24 K37      ; R24 := kneelHeavyLoopAnim
-170 [-]: MOVE      R24 R9       ; R24 := R9
-171 [-]: JMP       174          ; PC := 174
-172 [-]: TFORLOOP  R19 2        ; R22,R23 :=  R19(R20,R21); if R22 ~= nil then begin PC = 164; R21 := R22 end
-173 [-]: JMP       164          ; PC := 164
-174 [-]: GETUPVAL  R24 U9       ; R24 := U9
-175 [-]: TEST      R24 1        ; if R24 then PC := 191
-176 [-]: JMP       191          ; PC := 191
-177 [-]: GETGLOBAL R24 K1       ; R24 := 0x63B09107
-178 [-]: GETGLOBAL R25 K38      ; R25 := veryHeavyFrames
-179 [-]: CALL      R24 2 4      ; R24,R25,R26 := R24(R25)
-180 [-]: JMP       189          ; PC := 189
-181 [-]: SELF      R29 R18 K31  ; R30 := R18; R29 := R18["0x8B598ED4"]
-182 [-]: MOVE      R31 R28      ; R31 := R28
-183 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-184 [-]: TEST      R29 0        ; if not R29 then PC := 189
-185 [-]: JMP       189          ; PC := 189
-186 [-]: GETGLOBAL R29 K39      ; R29 := kneelVeryHeavyLoopAnim
-187 [-]: MOVE      R29 R9       ; R29 := R9
-188 [-]: JMP       191          ; PC := 191
-189 [-]: TFORLOOP  R24 2        ; R27,R28 :=  R24(R25,R26); if R27 ~= nil then begin PC = 181; R26 := R27 end
-190 [-]: JMP       181          ; PC := 181
-191 [-]: GETUPVAL  R29 U9       ; R29 := U9
-192 [-]: TEST      R29 1        ; if R29 then PC := 196
-193 [-]: JMP       196          ; PC := 196
-194 [-]: GETGLOBAL R29 K40      ; R29 := kneelLoopAnim
-195 [-]: MOVE      R29 R9       ; R29 := R9
-196 [-]: GETGLOBAL R29 K2       ; R29 := 0x400E7765
-197 [-]: GETUPVAL  R30 U7       ; R30 := U7
-198 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-199 [-]: TEST      R29 1        ; if R29 then PC := 212
-200 [-]: JMP       212          ; PC := 212
-201 [-]: GETUPVAL  R29 U7       ; R29 := U7
-202 [-]: SELF      R29 R29 K41  ; R30 := R29; R29 := R29["0x7DEB8965"]
-203 [-]: MOVE      R31 R1       ; R31 := R1
-204 [-]: CALL      R29 3 1      ; R29(R30,R31)
-205 [-]: GETUPVAL  R29 U7       ; R29 := U7
-206 [-]: SELF      R29 R29 K32  ; R30 := R29; R29 := R29["0x7DBDDA0B"]
-207 [-]: GETUPVAL  R31 U10      ; R31 := U10
-208 [-]: GETTABLE  R31 R31 K42  ; R31 := R31["Active"]
-209 [-]: MOVE      R31 R31      ; R31 := R31
-210 [-]: MOVE      R32 R1       ; R32 := R1
-211 [-]: CALL      R29 4 1      ; R29(R30,R31,R32)
-212 [-]: GETGLOBAL R29 K4       ; R29 := gBackgroundRegion
-213 [-]: SELF      R29 R29 K19  ; R30 := R29; R29 := R29["0x90391273"]
-214 [-]: GETUPVAL  R31 U6       ; R31 := U6
-215 [-]: GETTABLE  R31 R31 K43  ; R31 := R31["PLAYER_LIGHT"]
-216 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-217 [-]: MOVE      R29 R11      ; R29 := R11
-218 [-]: GETGLOBAL R29 K2       ; R29 := 0x400E7765
-219 [-]: GETUPVAL  R30 U11      ; R30 := U11
-220 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-221 [-]: TEST      R29 1        ; if R29 then PC := 227
-222 [-]: JMP       227          ; PC := 227
-223 [-]: GETUPVAL  R29 U11      ; R29 := U11
-224 [-]: SELF      R29 R29 K44  ; R30 := R29; R29 := R29["0xDDA3917C"]
-225 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-226 [-]: MOVE      R29 R12      ; R29 := R12
-227 [-]: GETGLOBAL R29 K2       ; R29 := 0x400E7765
-228 [-]: GETUPVAL  R30 U7       ; R30 := U7
-229 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-230 [-]: TEST      R29 1        ; if R29 then PC := 246
-231 [-]: JMP       246          ; PC := 246
-232 [-]: GETUPVAL  R29 U7       ; R29 := U7
-233 [-]: SELF      R29 R29 K45  ; R30 := R29; R29 := R29["0x6DA72501"]
-234 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-235 [-]: MOVE      R29 R13      ; R29 := R13
-236 [-]: GETUPVAL  R29 U14      ; R29 := U14
-237 [-]: GETUPVAL  R30 U7       ; R30 := U7
-238 [-]: SELF      R30 R30 K45  ; R31 := R30; R30 := R30["0x6DA72501"]
-239 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-240 [-]: SETTABLE  R29 K46 R30  ; R29["Previous"] := R30
-241 [-]: GETUPVAL  R29 U14      ; R29 := U14
-242 [-]: GETUPVAL  R30 U7       ; R30 := U7
-243 [-]: SELF      R30 R30 K45  ; R31 := R30; R30 := R30["0x6DA72501"]
-244 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-245 [-]: SETTABLE  R29 K47 R30  ; R29["Target"] := R30
-246 [-]: GETUPVAL  R29 U14      ; R29 := U14
-247 [-]: TEST      R29 0        ; if not R29 then PC := 268
-248 [-]: JMP       268          ; PC := 268
-249 [-]: GETUPVAL  R29 U14      ; R29 := U14
-250 [-]: GETTABLE  R29 R29 K46  ; R29 := R29["Previous"]
-251 [-]: TEST      R29 0        ; if not R29 then PC := 268
-252 [-]: JMP       268          ; PC := 268
-253 [-]: GETUPVAL  R29 U11      ; R29 := U11
-254 [-]: SELF      R29 R29 K48  ; R30 := R29; R29 := R29["0xFCAE2926"]
-255 [-]: LOADK     R31 K49      ; R31 := 2
-256 [-]: CALL      R29 3 1      ; R29(R30,R31)
-257 [-]: GETUPVAL  R29 U11      ; R29 := U11
-258 [-]: SELF      R29 R29 K50  ; R30 := R29; R29 := R29["0xEC183DDC"]
-259 [-]: GETUPVAL  R31 U14      ; R31 := U14
-260 [-]: GETTABLE  R31 R31 K46  ; R31 := R31["Previous"]
-261 [-]: GETGLOBAL R32 K10      ; R32 := 0x221C9700
-262 [-]: LOADK     R33 K23      ; R33 := 0
-263 [-]: LOADK     R34 K51      ; R34 := 0.5
-264 [-]: LOADK     R35 K52      ; R35 := -0.5
-265 [-]: CALL      R32 4 2      ; R32 := R32(R33,R34,R35)
-266 [-]: ADD       R31 R31 R32  ; R31 := R31 + R32
-267 [-]: CALL      R29 3 1      ; R29(R30,R31)
-268 [-]: LOADK     R29 K7       ; R29 := 1
-269 [-]: LOADK     R30 K53      ; R30 := 9
-270 [-]: LOADK     R31 K7       ; R31 := 1
-271 [-]: FORPREP   R29 295      ; R29 -= R31; PC := 295
-272 [-]: GETUPVAL  R33 U5       ; R33 := U5
-273 [-]: SELF      R33 R33 K54  ; R34 := R33; R33 := R33["0xAB436EF2"]
-274 [-]: GETGLOBAL R35 K55      ; R35 := solarRing
-275 [-]: GETGLOBAL R36 K56      ; R36 := EMPTY_SYMBOL
-276 [-]: GETGLOBAL R37 K57      ; R37 := ZERO_VECTOR
-277 [-]: GETUPVAL  R38 U15      ; R38 := U15
-278 [-]: GETTABLE  R38 R38 K58  ; R38 := R38["RING_ROTATION"]
-279 [-]: CALL      R33 6 2      ; R33 := R33(R34,R35,R36,R37,R38)
-280 [-]: GETGLOBAL R34 K2       ; R34 := 0x400E7765
-281 [-]: MOVE      R35 R33      ; R35 := R33
-282 [-]: CALL      R34 2 2      ; R34 := R34(R35)
-283 [-]: TEST      R34 1        ; if R34 then PC := 295
-284 [-]: JMP       295          ; PC := 295
-285 [-]: GETGLOBAL R34 K59      ; R34 := math
-286 [-]: GETTABLE  R34 R34 K60  ; R34 := R34["0xD6F2D811"]
-287 [-]: MOVE      R35 R32      ; R35 := R32
-288 [-]: LOADK     R36 K61      ; R36 := 1.5
-289 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
-290 [-]: MUL       R34 R34 K62  ; R34 := R34 * 0.20000000298023
-291 [-]: SELF      R35 R33 K63  ; R36 := R33; R35 := R33["0x9F133E77"]
-292 [-]: MOVE      R37 R34      ; R37 := R34
-293 [-]: MOVE      R38 R34      ; R38 := R34
-294 [-]: CALL      R35 4 1      ; R35(R36,R37,R38)
-295 [-]: FORLOOP   R29 272      ; R29 += R31; if R29 <= R30 then begin PC := 272; R32 := R29 end
-296 [-]: LOADK     R35 K64      ; R35 := 8
-297 [-]: LOADK     R36 K7       ; R36 := 1
-298 [-]: MOVE      R37 R35      ; R37 := R35
-299 [-]: LOADK     R38 K7       ; R38 := 1
-300 [-]: FORPREP   R36 347      ; R36 -= R38; PC := 347
-301 [-]: GETGLOBAL R40 K4       ; R40 := gBackgroundRegion
-302 [-]: SELF      R40 R40 K15  ; R41 := R40; R40 := R40["0xBDD34CC6"]
-303 [-]: GETGLOBAL R42 K65      ; R42 := edgeLineTypeB
-304 [-]: GETGLOBAL R43 K57      ; R43 := ZERO_VECTOR
-305 [-]: GETGLOBAL R44 K16      ; R44 := ZERO_ROTATION
-306 [-]: CALL      R40 5 2      ; R40 := R40(R41,R42,R43,R44)
-307 [-]: DIV       R41 R39 R35  ; R41 := R39 / R35
-308 [-]: DIV       R41 R41 K49  ; R41 := R41 / 2
-309 [-]: LOADK     R42 K66      ; R42 := 7
-310 [-]: GETGLOBAL R43 K59      ; R43 := math
-311 [-]: GETTABLE  R43 R43 K67  ; R43 := R43["0x96330A01"]
-312 [-]: GETGLOBAL R44 K59      ; R44 := math
-313 [-]: GETTABLE  R44 R44 K68  ; R44 := R44["pi"]
-314 [-]: MUL       R44 R44 K49  ; R44 := R44 * 2
-315 [-]: GETGLOBAL R45 K69      ; R45 := 0xA1FD035F
-316 [-]: MOVE      R46 R41      ; R46 := R41
-317 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-318 [-]: MUL       R44 R44 R45  ; R44 := R44 * R45
-319 [-]: CALL      R43 2 2      ; R43 := R43(R44)
-320 [-]: MUL       R43 R43 R42  ; R43 := R43 * R42
-321 [-]: GETGLOBAL R44 K59      ; R44 := math
-322 [-]: GETTABLE  R44 R44 K70  ; R44 := R44["0xBB3F1476"]
-323 [-]: GETGLOBAL R45 K59      ; R45 := math
-324 [-]: GETTABLE  R45 R45 K68  ; R45 := R45["pi"]
-325 [-]: MUL       R45 R45 K49  ; R45 := R45 * 2
-326 [-]: GETGLOBAL R46 K69      ; R46 := 0xA1FD035F
-327 [-]: MOVE      R47 R41      ; R47 := R41
-328 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-329 [-]: MUL       R45 R45 R46  ; R45 := R45 * R46
-330 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-331 [-]: MUL       R44 R44 R42  ; R44 := R44 * R42
-332 [-]: NEWTABLE  R45 1 0      ; R45 := {}
-333 [-]: GETGLOBAL R46 K10      ; R46 := 0x221C9700
-334 [-]: UNM       R47 R43      ; R47 := - R43
-335 [-]: UNM       R48 R44      ; R48 := - R44
-336 [-]: LOADK     R49 K23      ; R49 := 0
-337 [-]: CALL      R46 4 2      ; R46 := R46(R47,R48,R49)
-338 [-]: GETGLOBAL R47 K10      ; R47 := 0x221C9700
-339 [-]: MOVE      R48 R43      ; R48 := R43
-340 [-]: MOVE      R49 R44      ; R49 := R44
-341 [-]: LOADK     R50 K23      ; R50 := 0
-342 [-]: CALL      R47 4 0      ; R47,... := R47(R48,R49,R50)
-343 [-]: SETLIST   R45 0 1      ; R45[(1-1)*FPF+i] := R(45+i), 1 <= i <= 0
-344 [-]: SELF      R46 R40 K71  ; R47 := R40; R46 := R40["0x5BD03F6B"]
-345 [-]: MOVE      R48 R45      ; R48 := R45
-346 [-]: CALL      R46 3 1      ; R46(R47,R48)
-347 [-]: FORLOOP   R36 301      ; R36 += R38; if R36 <= R37 then begin PC := 301; R39 := R36 end
-348 [-]: GETUPVAL  R46 U10      ; R46 := U10
-349 [-]: GETTABLE  R46 R46 K42  ; R46 := R46["Active"]
-350 [-]: TEST      R46 0        ; if not R46 then PC := 366
-351 [-]: JMP       366          ; PC := 366
-352 [-]: GETGLOBAL R46 K2       ; R46 := 0x400E7765
-353 [-]: GETUPVAL  R47 U5       ; R47 := U5
-354 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-355 [-]: TEST      R46 1        ; if R46 then PC := 366
-356 [-]: JMP       366          ; PC := 366
-357 [-]: GETUPVAL  R46 U5       ; R46 := U5
-358 [-]: SELF      R47 R46 K72  ; R48 := R46; R47 := R46["0x15D4DAEE"]
-359 [-]: GETGLOBAL R49 K73      ; R49 := gEntityType
-360 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
-361 [-]: LOADK     R48 K7       ; R48 := 1
-362 [-]: LEN       R49 R47      ; R49 := # R47
-363 [-]: LOADK     R50 K7       ; R50 := 1
-364 [-]: FORPREP   R48 365      ; R48 -= R50; PC := 365
-365 [-]: FORLOOP   R48 365      ; R48 += R50; if R48 <= R49 then begin PC := 365; R51 := R48 end
-366 [-]: RETURN    R0 1         ; return 
+141 [-]: SELF      R18 R18 K34  ; R19 := R18; R18 := R18["0x6978AC59"]
+142 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+143 [-]: GETGLOBAL R19 K2       ; R19 := 0x400E7765
+144 [-]: MOVE      R20 R18      ; R20 := R18
+145 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+146 [-]: TEST      R19 1        ; if R19 then PC := 179
+147 [-]: JMP       179          ; PC := 179
+148 [-]: GETGLOBAL R19 K1       ; R19 := 0x63B09107
+149 [-]: GETGLOBAL R20 K35      ; R20 := heavyFrames
+150 [-]: CALL      R19 2 4      ; R19,R20,R21 := R19(R20)
+151 [-]: JMP       160          ; PC := 160
+152 [-]: SELF      R24 R18 K30  ; R25 := R18; R24 := R18["0x8B598ED4"]
+153 [-]: MOVE      R26 R23      ; R26 := R23
+154 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
+155 [-]: TEST      R24 0        ; if not R24 then PC := 160
+156 [-]: JMP       160          ; PC := 160
+157 [-]: GETGLOBAL R24 K36      ; R24 := kneelHeavyLoopAnim
+158 [-]: MOVE      R24 R7       ; R24 := R7
+159 [-]: JMP       162          ; PC := 162
+160 [-]: TFORLOOP  R19 2        ; R22,R23 :=  R19(R20,R21); if R22 ~= nil then begin PC = 152; R21 := R22 end
+161 [-]: JMP       152          ; PC := 152
+162 [-]: GETUPVAL  R24 U7       ; R24 := U7
+163 [-]: TEST      R24 1        ; if R24 then PC := 179
+164 [-]: JMP       179          ; PC := 179
+165 [-]: GETGLOBAL R24 K1       ; R24 := 0x63B09107
+166 [-]: GETGLOBAL R25 K37      ; R25 := veryHeavyFrames
+167 [-]: CALL      R24 2 4      ; R24,R25,R26 := R24(R25)
+168 [-]: JMP       177          ; PC := 177
+169 [-]: SELF      R29 R18 K30  ; R30 := R18; R29 := R18["0x8B598ED4"]
+170 [-]: MOVE      R31 R28      ; R31 := R28
+171 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
+172 [-]: TEST      R29 0        ; if not R29 then PC := 177
+173 [-]: JMP       177          ; PC := 177
+174 [-]: GETGLOBAL R29 K38      ; R29 := kneelVeryHeavyLoopAnim
+175 [-]: MOVE      R29 R7       ; R29 := R7
+176 [-]: JMP       179          ; PC := 179
+177 [-]: TFORLOOP  R24 2        ; R27,R28 :=  R24(R25,R26); if R27 ~= nil then begin PC = 169; R26 := R27 end
+178 [-]: JMP       169          ; PC := 169
+179 [-]: GETUPVAL  R29 U7       ; R29 := U7
+180 [-]: TEST      R29 1        ; if R29 then PC := 184
+181 [-]: JMP       184          ; PC := 184
+182 [-]: GETGLOBAL R29 K39      ; R29 := kneelLoopAnim
+183 [-]: MOVE      R29 R7       ; R29 := R7
+184 [-]: GETGLOBAL R29 K2       ; R29 := 0x400E7765
+185 [-]: GETUPVAL  R30 U5       ; R30 := U5
+186 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+187 [-]: TEST      R29 1        ; if R29 then PC := 200
+188 [-]: JMP       200          ; PC := 200
+189 [-]: GETUPVAL  R29 U5       ; R29 := U5
+190 [-]: SELF      R29 R29 K40  ; R30 := R29; R29 := R29["0x7DEB8965"]
+191 [-]: MOVE      R31 R1       ; R31 := R1
+192 [-]: CALL      R29 3 1      ; R29(R30,R31)
+193 [-]: GETUPVAL  R29 U5       ; R29 := U5
+194 [-]: SELF      R29 R29 K31  ; R30 := R29; R29 := R29["0x7DBDDA0B"]
+195 [-]: GETUPVAL  R31 U8       ; R31 := U8
+196 [-]: GETTABLE  R31 R31 K41  ; R31 := R31["Active"]
+197 [-]: MOVE      R31 R31      ; R31 := R31
+198 [-]: MOVE      R32 R1       ; R32 := R1
+199 [-]: CALL      R29 4 1      ; R29(R30,R31,R32)
+200 [-]: GETGLOBAL R29 K4       ; R29 := gBackgroundRegion
+201 [-]: SELF      R29 R29 K18  ; R30 := R29; R29 := R29["0x90391273"]
+202 [-]: GETUPVAL  R31 U4       ; R31 := U4
+203 [-]: GETTABLE  R31 R31 K42  ; R31 := R31["PLAYER_LIGHT"]
+204 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
+205 [-]: MOVE      R29 R9       ; R29 := R9
+206 [-]: GETGLOBAL R29 K2       ; R29 := 0x400E7765
+207 [-]: GETUPVAL  R30 U9       ; R30 := U9
+208 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+209 [-]: TEST      R29 1        ; if R29 then PC := 215
+210 [-]: JMP       215          ; PC := 215
+211 [-]: GETUPVAL  R29 U9       ; R29 := U9
+212 [-]: SELF      R29 R29 K43  ; R30 := R29; R29 := R29["0xDDA3917C"]
+213 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+214 [-]: MOVE      R29 R10      ; R29 := R10
+215 [-]: GETGLOBAL R29 K2       ; R29 := 0x400E7765
+216 [-]: GETUPVAL  R30 U5       ; R30 := U5
+217 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+218 [-]: TEST      R29 1        ; if R29 then PC := 234
+219 [-]: JMP       234          ; PC := 234
+220 [-]: GETUPVAL  R29 U5       ; R29 := U5
+221 [-]: SELF      R29 R29 K44  ; R30 := R29; R29 := R29["0x6DA72501"]
+222 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+223 [-]: MOVE      R29 R11      ; R29 := R11
+224 [-]: GETUPVAL  R29 U12      ; R29 := U12
+225 [-]: GETUPVAL  R30 U5       ; R30 := U5
+226 [-]: SELF      R30 R30 K44  ; R31 := R30; R30 := R30["0x6DA72501"]
+227 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+228 [-]: SETTABLE  R29 K45 R30  ; R29["Previous"] := R30
+229 [-]: GETUPVAL  R29 U12      ; R29 := U12
+230 [-]: GETUPVAL  R30 U5       ; R30 := U5
+231 [-]: SELF      R30 R30 K44  ; R31 := R30; R30 := R30["0x6DA72501"]
+232 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+233 [-]: SETTABLE  R29 K46 R30  ; R29["Target"] := R30
+234 [-]: GETUPVAL  R29 U12      ; R29 := U12
+235 [-]: TEST      R29 0        ; if not R29 then PC := 256
+236 [-]: JMP       256          ; PC := 256
+237 [-]: GETUPVAL  R29 U12      ; R29 := U12
+238 [-]: GETTABLE  R29 R29 K45  ; R29 := R29["Previous"]
+239 [-]: TEST      R29 0        ; if not R29 then PC := 256
+240 [-]: JMP       256          ; PC := 256
+241 [-]: GETUPVAL  R29 U9       ; R29 := U9
+242 [-]: SELF      R29 R29 K47  ; R30 := R29; R29 := R29["0xFCAE2926"]
+243 [-]: LOADK     R31 K48      ; R31 := 2
+244 [-]: CALL      R29 3 1      ; R29(R30,R31)
+245 [-]: GETUPVAL  R29 U9       ; R29 := U9
+246 [-]: SELF      R29 R29 K49  ; R30 := R29; R29 := R29["0xEC183DDC"]
+247 [-]: GETUPVAL  R31 U12      ; R31 := U12
+248 [-]: GETTABLE  R31 R31 K45  ; R31 := R31["Previous"]
+249 [-]: GETGLOBAL R32 K9       ; R32 := 0x221C9700
+250 [-]: LOADK     R33 K22      ; R33 := 0
+251 [-]: LOADK     R34 K50      ; R34 := 0.5
+252 [-]: LOADK     R35 K51      ; R35 := -0.5
+253 [-]: CALL      R32 4 2      ; R32 := R32(R33,R34,R35)
+254 [-]: ADD       R31 R31 R32  ; R31 := R31 + R32
+255 [-]: CALL      R29 3 1      ; R29(R30,R31)
+256 [-]: LOADK     R29 K6       ; R29 := 1
+257 [-]: LOADK     R30 K52      ; R30 := 9
+258 [-]: LOADK     R31 K6       ; R31 := 1
+259 [-]: FORPREP   R29 283      ; R29 -= R31; PC := 283
+260 [-]: GETUPVAL  R33 U3       ; R33 := U3
+261 [-]: SELF      R33 R33 K53  ; R34 := R33; R33 := R33["0xAB436EF2"]
+262 [-]: GETGLOBAL R35 K54      ; R35 := solarRing
+263 [-]: GETGLOBAL R36 K55      ; R36 := EMPTY_SYMBOL
+264 [-]: GETGLOBAL R37 K56      ; R37 := ZERO_VECTOR
+265 [-]: GETUPVAL  R38 U13      ; R38 := U13
+266 [-]: GETTABLE  R38 R38 K57  ; R38 := R38["RING_ROTATION"]
+267 [-]: CALL      R33 6 2      ; R33 := R33(R34,R35,R36,R37,R38)
+268 [-]: GETGLOBAL R34 K2       ; R34 := 0x400E7765
+269 [-]: MOVE      R35 R33      ; R35 := R33
+270 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+271 [-]: TEST      R34 1        ; if R34 then PC := 283
+272 [-]: JMP       283          ; PC := 283
+273 [-]: GETGLOBAL R34 K58      ; R34 := math
+274 [-]: GETTABLE  R34 R34 K59  ; R34 := R34["0xD6F2D811"]
+275 [-]: MOVE      R35 R32      ; R35 := R32
+276 [-]: LOADK     R36 K60      ; R36 := 1.5
+277 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
+278 [-]: MUL       R34 R34 K61  ; R34 := R34 * 0.20000000298023
+279 [-]: SELF      R35 R33 K62  ; R36 := R33; R35 := R33["0x9F133E77"]
+280 [-]: MOVE      R37 R34      ; R37 := R34
+281 [-]: MOVE      R38 R34      ; R38 := R34
+282 [-]: CALL      R35 4 1      ; R35(R36,R37,R38)
+283 [-]: FORLOOP   R29 260      ; R29 += R31; if R29 <= R30 then begin PC := 260; R32 := R29 end
+284 [-]: LOADK     R35 K63      ; R35 := 8
+285 [-]: LOADK     R36 K6       ; R36 := 1
+286 [-]: MOVE      R37 R35      ; R37 := R35
+287 [-]: LOADK     R38 K6       ; R38 := 1
+288 [-]: FORPREP   R36 335      ; R36 -= R38; PC := 335
+289 [-]: GETGLOBAL R40 K4       ; R40 := gBackgroundRegion
+290 [-]: SELF      R40 R40 K14  ; R41 := R40; R40 := R40["0xBDD34CC6"]
+291 [-]: GETGLOBAL R42 K64      ; R42 := edgeLineTypeB
+292 [-]: GETGLOBAL R43 K56      ; R43 := ZERO_VECTOR
+293 [-]: GETGLOBAL R44 K15      ; R44 := ZERO_ROTATION
+294 [-]: CALL      R40 5 2      ; R40 := R40(R41,R42,R43,R44)
+295 [-]: DIV       R41 R39 R35  ; R41 := R39 / R35
+296 [-]: DIV       R41 R41 K48  ; R41 := R41 / 2
+297 [-]: LOADK     R42 K65      ; R42 := 7
+298 [-]: GETGLOBAL R43 K58      ; R43 := math
+299 [-]: GETTABLE  R43 R43 K66  ; R43 := R43["0x96330A01"]
+300 [-]: GETGLOBAL R44 K58      ; R44 := math
+301 [-]: GETTABLE  R44 R44 K67  ; R44 := R44["pi"]
+302 [-]: MUL       R44 R44 K48  ; R44 := R44 * 2
+303 [-]: GETGLOBAL R45 K68      ; R45 := 0xA1FD035F
+304 [-]: MOVE      R46 R41      ; R46 := R41
+305 [-]: CALL      R45 2 2      ; R45 := R45(R46)
+306 [-]: MUL       R44 R44 R45  ; R44 := R44 * R45
+307 [-]: CALL      R43 2 2      ; R43 := R43(R44)
+308 [-]: MUL       R43 R43 R42  ; R43 := R43 * R42
+309 [-]: GETGLOBAL R44 K58      ; R44 := math
+310 [-]: GETTABLE  R44 R44 K69  ; R44 := R44["0xBB3F1476"]
+311 [-]: GETGLOBAL R45 K58      ; R45 := math
+312 [-]: GETTABLE  R45 R45 K67  ; R45 := R45["pi"]
+313 [-]: MUL       R45 R45 K48  ; R45 := R45 * 2
+314 [-]: GETGLOBAL R46 K68      ; R46 := 0xA1FD035F
+315 [-]: MOVE      R47 R41      ; R47 := R41
+316 [-]: CALL      R46 2 2      ; R46 := R46(R47)
+317 [-]: MUL       R45 R45 R46  ; R45 := R45 * R46
+318 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+319 [-]: MUL       R44 R44 R42  ; R44 := R44 * R42
+320 [-]: NEWTABLE  R45 1 0      ; R45 := {}
+321 [-]: GETGLOBAL R46 K9       ; R46 := 0x221C9700
+322 [-]: UNM       R47 R43      ; R47 := - R43
+323 [-]: UNM       R48 R44      ; R48 := - R44
+324 [-]: LOADK     R49 K22      ; R49 := 0
+325 [-]: CALL      R46 4 2      ; R46 := R46(R47,R48,R49)
+326 [-]: GETGLOBAL R47 K9       ; R47 := 0x221C9700
+327 [-]: MOVE      R48 R43      ; R48 := R43
+328 [-]: MOVE      R49 R44      ; R49 := R44
+329 [-]: LOADK     R50 K22      ; R50 := 0
+330 [-]: CALL      R47 4 0      ; R47,... := R47(R48,R49,R50)
+331 [-]: SETLIST   R45 0 1      ; R45[(1-1)*FPF+i] := R(45+i), 1 <= i <= 0
+332 [-]: SELF      R46 R40 K70  ; R47 := R40; R46 := R40["0x5BD03F6B"]
+333 [-]: MOVE      R48 R45      ; R48 := R45
+334 [-]: CALL      R46 3 1      ; R46(R47,R48)
+335 [-]: FORLOOP   R36 289      ; R36 += R38; if R36 <= R37 then begin PC := 289; R39 := R36 end
+336 [-]: GETUPVAL  R46 U8       ; R46 := U8
+337 [-]: GETTABLE  R46 R46 K41  ; R46 := R46["Active"]
+338 [-]: TEST      R46 0        ; if not R46 then PC := 354
+339 [-]: JMP       354          ; PC := 354
+340 [-]: GETGLOBAL R46 K2       ; R46 := 0x400E7765
+341 [-]: GETUPVAL  R47 U3       ; R47 := U3
+342 [-]: CALL      R46 2 2      ; R46 := R46(R47)
+343 [-]: TEST      R46 1        ; if R46 then PC := 354
+344 [-]: JMP       354          ; PC := 354
+345 [-]: GETUPVAL  R46 U3       ; R46 := U3
+346 [-]: SELF      R47 R46 K71  ; R48 := R46; R47 := R46["0x15D4DAEE"]
+347 [-]: GETGLOBAL R49 K72      ; R49 := gEntityType
+348 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
+349 [-]: LOADK     R48 K6       ; R48 := 1
+350 [-]: LEN       R49 R47      ; R49 := # R47
+351 [-]: LOADK     R50 K6       ; R50 := 1
+352 [-]: FORPREP   R48 353      ; R48 -= R50; PC := 353
+353 [-]: FORLOOP   R48 353      ; R48 += R50; if R48 <= R49 then begin PC := 353; R51 := R48 end
+354 [-]: RETURN    R0 1         ; return 
 
 
-; Function #45:
+; Function #43:
 ;
 ; Name:            
-; Defined at line: 1622
+; Defined at line: 1593
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6219,456 +6139,372 @@ code size: 4
  46 [-]: RETURN    R0 1         ; return 
 
 
-; Function #46:
+; Function #44:
 ;
 ; Name:            
-; Defined at line: 1634
-; #Upvalues:       16
+; Defined at line: 1605
+; #Upvalues:       15
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  56
+; Max Stack Size:  55
 
-  1 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0x5B0E7439"]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: MOVE      R0 R0        ; R0 := R0
-  5 [-]: GETUPVAL  R0 U2        ; R0 := U2
-  6 [-]: EQ        1 R0 K1      ; if R0 == nil then PC := 17
-  7 [-]: JMP       17           ; PC := 17
-  8 [-]: GETGLOBAL R0 K2        ; R0 := 0x63B09107
-  9 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 10 [-]: CALL      R0 2 4       ; R0,R1,R2 := R0(R1)
- 11 [-]: JMP       15           ; PC := 15
- 12 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 13 [-]: MOVE      R6 R4        ; R6 := R4
- 14 [-]: CALL      R5 2 1       ; R5(R6)
- 15 [-]: TFORLOOP  R0 2         ; R3,R4 :=  R0(R1,R2); if R3 ~= nil then begin PC = 12; R2 := R3 end
- 16 [-]: JMP       12           ; PC := 12
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: EQ        1 R0 K0      ; if R0 == nil then PC := 13
+  3 [-]: JMP       13           ; PC := 13
+  4 [-]: GETGLOBAL R0 K1        ; R0 := 0x63B09107
+  5 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  6 [-]: CALL      R0 2 4       ; R0,R1,R2 := R0(R1)
+  7 [-]: JMP       11           ; PC := 11
+  8 [-]: GETUPVAL  R5 U1        ; R5 := U1
+  9 [-]: MOVE      R6 R4        ; R6 := R4
+ 10 [-]: CALL      R5 2 1       ; R5(R6)
+ 11 [-]: TFORLOOP  R0 2         ; R3,R4 :=  R0(R1,R2); if R3 ~= nil then begin PC = 8; R2 := R3 end
+ 12 [-]: JMP       8            ; PC := 8
+ 13 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 14 [-]: MOVE      R5 R0        ; R5 := R0
+ 15 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 16 [-]: MOVE      R5 R2        ; R5 := R2
  17 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 18 [-]: MOVE      R5 R2        ; R5 := R2
- 19 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 20 [-]: MOVE      R5 R4        ; R5 := R4
- 21 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 22 [-]: MOVE      R5 R5        ; R5 := R5
- 23 [-]: LOADK     R5 K3        ; R5 := 1
- 24 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 25 [-]: LEN       R6 R6        ; R6 := # R6
- 26 [-]: LOADK     R7 K3        ; R7 := 1
- 27 [-]: FORPREP   R5 388       ; R5 -= R7; PC := 388
- 28 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 29 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
- 30 [-]: GETGLOBAL R10 K4       ; R10 := 0xCAA43ABB
- 31 [-]: GETTABLE  R11 R9 K5    ; R11 := R9["decoRedux"]
- 32 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 33 [-]: MOVE      R11 R0       ; R11 := R0
- 34 [-]: GETGLOBAL R12 K6       ; R12 := 0x400E7765
- 35 [-]: GETUPVAL  R13 U6       ; R13 := U6
- 36 [-]: GETTABLE  R13 R13 K7   ; R13 := R13["Region"]
- 37 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 38 [-]: TEST      R12 0        ; if not R12 then PC := 48
- 39 [-]: JMP       48           ; PC := 48
- 40 [-]: GETTABLE  R12 R9 K8    ; R12 := R9["name"]
- 41 [-]: GETUPVAL  R13 U6       ; R13 := U6
- 42 [-]: GETTABLE  R13 R13 K9   ; R13 := R13["Tag"]
- 43 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 48
- 44 [-]: JMP       48           ; PC := 48
- 45 [-]: GETUPVAL  R12 U6       ; R12 := U6
- 46 [-]: SETTABLE  R12 K7 R9    ; R12["Region"] := R9
- 47 [-]: MOVE      R11 R1       ; R11 := R1
- 48 [-]: GETGLOBAL R12 K6       ; R12 := 0x400E7765
- 49 [-]: GETTABLE  R13 R9 K5    ; R13 := R9["decoRedux"]
- 50 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 51 [-]: TEST      R12 1        ; if R12 then PC := 56
- 52 [-]: JMP       56           ; PC := 56
- 53 [-]: GETUPVAL  R12 U7       ; R12 := U7
- 54 [-]: GETTABLE  R13 R9 K5    ; R13 := R9["decoRedux"]
- 55 [-]: CALL      R12 2 1      ; R12(R13)
- 56 [-]: GETGLOBAL R12 K6       ; R12 := 0x400E7765
- 57 [-]: MOVE      R13 R10      ; R13 := R10
- 58 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 59 [-]: TEST      R12 0        ; if not R12 then PC := 73
- 60 [-]: JMP       73           ; PC := 73
- 61 [-]: GETGLOBAL R12 K4       ; R12 := 0xCAA43ABB
- 62 [-]: GETTABLE  R13 R9 K10   ; R13 := R9["deco"]
- 63 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 64 [-]: MOVE      R10 R12      ; R10 := R12
- 65 [-]: GETGLOBAL R12 K6       ; R12 := 0x400E7765
- 66 [-]: GETTABLE  R13 R9 K10   ; R13 := R9["deco"]
- 67 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 68 [-]: TEST      R12 1        ; if R12 then PC := 73
- 69 [-]: JMP       73           ; PC := 73
- 70 [-]: GETUPVAL  R12 U7       ; R12 := U7
- 71 [-]: GETTABLE  R13 R9 K10   ; R13 := R9["deco"]
- 72 [-]: CALL      R12 2 1      ; R12(R13)
- 73 [-]: TEST      R11 0        ; if not R11 then PC := 234
- 74 [-]: JMP       234          ; PC := 234
- 75 [-]: GETUPVAL  R12 U6       ; R12 := U6
- 76 [-]: GETTABLE  R12 R12 K11  ; R12 := R12["SplinePoints"]
- 77 [-]: LOADNIL   R13 R13      ; R13 := nil
- 78 [-]: LOADK     R14 K3       ; R14 := 1
- 79 [-]: LEN       R15 R12      ; R15 := # R12
- 80 [-]: SUB       R15 R15 K12  ; R15 := R15 - 3
- 81 [-]: LOADK     R16 K3       ; R16 := 1
- 82 [-]: FORPREP   R14 136      ; R14 -= R16; PC := 136
- 83 [-]: GETGLOBAL R18 K6       ; R18 := 0x400E7765
- 84 [-]: GETUPVAL  R19 U6       ; R19 := U6
- 85 [-]: GETTABLE  R19 R19 K13  ; R19 := R19["Splines"]
- 86 [-]: GETTABLE  R19 R19 R17  ; R19 := R19[R17]
- 87 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 88 [-]: TEST      R18 1        ; if R18 then PC := 96
- 89 [-]: JMP       96           ; PC := 96
- 90 [-]: GETGLOBAL R18 K14      ; R18 := gBackgroundRegion
- 91 [-]: SELF      R18 R18 K15  ; R19 := R18; R18 := R18["0x9B0A3887"]
- 92 [-]: GETUPVAL  R20 U6       ; R20 := U6
- 93 [-]: GETTABLE  R20 R20 K13  ; R20 := R20["Splines"]
- 94 [-]: GETTABLE  R20 R20 R17  ; R20 := R20[R17]
- 95 [-]: CALL      R18 3 1      ; R18(R19,R20)
- 96 [-]: GETGLOBAL R18 K14      ; R18 := gBackgroundRegion
- 97 [-]: SELF      R18 R18 K16  ; R19 := R18; R18 := R18["0xBDD34CC6"]
- 98 [-]: GETGLOBAL R20 K17      ; R20 := splineConnectionType
- 99 [-]: GETGLOBAL R21 K18      ; R21 := ZERO_VECTOR
-100 [-]: GETGLOBAL R22 K19      ; R22 := ZERO_ROTATION
-101 [-]: CALL      R18 5 2      ; R18 := R18(R19,R20,R21,R22)
-102 [-]: MOVE      R13 R18      ; R13 := R18
-103 [-]: GETUPVAL  R18 U6       ; R18 := U6
-104 [-]: GETTABLE  R18 R18 K13  ; R18 := R18["Splines"]
-105 [-]: SETTABLE  R18 R17 R13  ; R18[R17] := R13
-106 [-]: NEWTABLE  R18 4 0      ; R18 := {}
-107 [-]: GETTABLE  R19 R12 R17  ; R19 := R12[R17]
-108 [-]: ADD       R20 R17 K3   ; R20 := R17 + 1
-109 [-]: GETTABLE  R20 R12 R20  ; R20 := R12[R20]
-110 [-]: ADD       R21 R17 K20  ; R21 := R17 + 2
-111 [-]: GETTABLE  R21 R12 R21  ; R21 := R12[R21]
-112 [-]: ADD       R22 R17 K12  ; R22 := R17 + 3
-113 [-]: GETTABLE  R22 R12 R22  ; R22 := R12[R22]
-114 [-]: SETLIST   R18 4 1      ; R18[(1-1)*FPF+i] := R(18+i), 1 <= i <= 4
-115 [-]: SELF      R19 R13 K21  ; R20 := R13; R19 := R13["0x5BD03F6B"]
-116 [-]: MOVE      R21 R18      ; R21 := R18
-117 [-]: CALL      R19 3 1      ; R19(R20,R21)
-118 [-]: SELF      R19 R13 K22  ; R20 := R13; R19 := R13["0xA20F64C0"]
-119 [-]: GETGLOBAL R21 K23      ; R21 := 0xB5A59043
-120 [-]: LOADK     R22 K24      ; R22 := 0
-121 [-]: LOADK     R23 K25      ; R23 := 255
-122 [-]: LOADK     R24 K24      ; R24 := 0
-123 [-]: LOADK     R25 K25      ; R25 := 255
-124 [-]: CALL      R21 5 0      ; R21,... := R21(R22,R23,R24,R25)
-125 [-]: CALL      R19 0 1      ; R19(R20,...)
-126 [-]: SELF      R19 R13 K26  ; R20 := R13; R19 := R13["0xD63FF2C2"]
-127 [-]: GETGLOBAL R21 K27      ; R21 := 0x994A1A7
-128 [-]: LOADK     R22 K24      ; R22 := 0
-129 [-]: LOADK     R23 K28      ; R23 := 30
-130 [-]: CALL      R21 3 0      ; R21,... := R21(R22,R23)
-131 [-]: CALL      R19 0 1      ; R19(R20,...)
-132 [-]: SELF      R19 R13 K29  ; R20 := R13; R19 := R13["0x7DBDDA0B"]
-133 [-]: MOVE      R21 R0       ; R21 := R0
-134 [-]: MOVE      R22 R1       ; R22 := R1
-135 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
-136 [-]: FORLOOP   R14 83       ; R14 += R16; if R14 <= R15 then begin PC := 83; R17 := R14 end
-137 [-]: GETGLOBAL R19 K30      ; R19 := _T
-138 [-]: GETTABLE  R19 R19 K31  ; R19 := R19["FortressLocation"]
-139 [-]: GETUPVAL  R20 U6       ; R20 := U6
-140 [-]: GETTABLE  R20 R20 K13  ; R20 := R20["Splines"]
-141 [-]: LEN       R20 R20      ; R20 := # R20
-142 [-]: SETTABLE  R19 K32 R20  ; R19["MaxSplines"] := R20
-143 [-]: GETUPVAL  R19 U6       ; R19 := U6
-144 [-]: GETGLOBAL R20 K30      ; R20 := _T
-145 [-]: GETTABLE  R20 R20 K31  ; R20 := R20["FortressLocation"]
-146 [-]: GETTABLE  R20 R20 K32  ; R20 := R20["MaxSplines"]
-147 [-]: GETUPVAL  R21 U6       ; R21 := U6
-148 [-]: GETTABLE  R21 R21 K34  ; R21 := R21["LoopTime"]
-149 [-]: DIV       R20 R20 R21  ; R20 := R20 / R21
-150 [-]: SETTABLE  R19 K33 R20  ; R19["Velocity"] := R20
-151 [-]: GETGLOBAL R19 K30      ; R19 := _T
-152 [-]: GETTABLE  R19 R19 K31  ; R19 := R19["FortressLocation"]
-153 [-]: GETUPVAL  R20 U6       ; R20 := U6
-154 [-]: GETTABLE  R20 R20 K33  ; R20 := R20["Velocity"]
-155 [-]: SETTABLE  R19 K33 R20  ; R19["Velocity"] := R20
-156 [-]: GETGLOBAL R19 K6       ; R19 := 0x400E7765
-157 [-]: GETGLOBAL R20 K35      ; R20 := gGameData
-158 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-159 [-]: TEST      R19 1        ; if R19 then PC := 164
-160 [-]: JMP       164          ; PC := 164
-161 [-]: GETUPVAL  R19 U8       ; R19 := U8
-162 [-]: MOVE      R20 R1       ; R20 := R1
-163 [-]: CALL      R19 2 1      ; R19(R20)
-164 [-]: GETUPVAL  R19 U6       ; R19 := U6
-165 [-]: GETTABLE  R19 R19 K13  ; R19 := R19["Splines"]
-166 [-]: GETGLOBAL R20 K30      ; R20 := _T
-167 [-]: GETTABLE  R20 R20 K31  ; R20 := R20["FortressLocation"]
-168 [-]: GETTABLE  R20 R20 K36  ; R20 := R20["SplineIndex"]
-169 [-]: GETTABLE  R19 R19 R20  ; R19 := R19[R20]
-170 [-]: SELF      R19 R19 K37  ; R20 := R19; R19 := R19["0xAC71FD5A"]
-171 [-]: GETGLOBAL R21 K30      ; R21 := _T
-172 [-]: GETTABLE  R21 R21 K31  ; R21 := R21["FortressLocation"]
-173 [-]: GETTABLE  R21 R21 K38  ; R21 := R21["Progress"]
-174 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
-175 [-]: GETUPVAL  R20 U1       ; R20 := U1
-176 [-]: SELF      R20 R20 K39  ; R21 := R20; R20 := R20["0x2721E25D"]
-177 [-]: GETUPVAL  R22 U6       ; R22 := U6
-178 [-]: GETTABLE  R22 R22 K7   ; R22 := R22["Region"]
-179 [-]: GETGLOBAL R23 K40      ; R23 := 0x221C9700
-180 [-]: GETTABLE  R24 R19 K41  ; R24 := R19["x"]
-181 [-]: MUL       R24 R24 K42  ; R24 := R24 * 0.041000001132488
-182 [-]: ADD       R24 K43 R24  ; R24 := 0.5 + R24
-183 [-]: GETTABLE  R25 R19 K44  ; R25 := R19["y"]
-184 [-]: ADD       R25 R25 K45  ; R25 := R25 + 0.029999999329448
-185 [-]: MUL       R25 R25 K46  ; R25 := R25 * 0.043000001460314
-186 [-]: SUB       R25 K43 R25  ; R25 := 0.5 - R25
-187 [-]: GETUPVAL  R26 U9       ; R26 := U9
-188 [-]: GETTABLE  R26 R26 K47  ; R26 := R26["MAX_ZOOM"]
-189 [-]: SUB       R26 R26 K48  ; R26 := R26 - 0.30000001192093
-190 [-]: GETTABLE  R27 R19 K49  ; R27 := R19["z"]
-191 [-]: ADD       R26 R26 R27  ; R26 := R26 + R27
-192 [-]: CALL      R23 4 0      ; R23,... := R23(R24,R25,R26)
-193 [-]: CALL      R20 0 1      ; R20(R21,...)
-194 [-]: SETTABLE  R9 K50 R19   ; R9["pos"] := R19
-195 [-]: LOADK     R20 K3       ; R20 := 1
-196 [-]: GETUPVAL  R21 U6       ; R21 := U6
-197 [-]: GETTABLE  R21 R21 K7   ; R21 := R21["Region"]
-198 [-]: GETTABLE  R21 R21 K51  ; R21 := R21["tiers"]
-199 [-]: LEN       R21 R21      ; R21 := # R21
-200 [-]: LOADK     R22 K3       ; R22 := 1
-201 [-]: FORPREP   R20 233      ; R20 -= R22; PC := 233
-202 [-]: GETUPVAL  R24 U6       ; R24 := U6
-203 [-]: GETTABLE  R24 R24 K7   ; R24 := R24["Region"]
-204 [-]: GETTABLE  R24 R24 K51  ; R24 := R24["tiers"]
-205 [-]: GETTABLE  R24 R24 R23  ; R24 := R24[R23]
-206 [-]: GETTABLE  R24 R24 K52  ; R24 := R24["sectors"]
-207 [-]: LOADK     R25 K3       ; R25 := 1
-208 [-]: LEN       R26 R24      ; R26 := # R24
-209 [-]: LOADK     R27 K3       ; R27 := 1
-210 [-]: FORPREP   R25 232      ; R25 -= R27; PC := 232
-211 [-]: GETTABLE  R29 R24 R28  ; R29 := R24[R28]
-212 [-]: GETTABLE  R30 R29 K53  ; R30 := R29["decoOffset"]
-213 [-]: ADD       R30 R19 R30  ; R30 := R19 + R30
-214 [-]: SETTABLE  R29 K50 R30  ; R29["pos"] := R30
-215 [-]: GETGLOBAL R30 K54      ; R30 := 0x9FAED6BC
-216 [-]: GETTABLE  R31 R29 K8   ; R31 := R29["name"]
-217 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-218 [-]: GETUPVAL  R31 U6       ; R31 := U6
-219 [-]: GETTABLE  R31 R31 K55  ; R31 := R31["Sectors"]
-220 [-]: GETTABLE  R31 R31 R30  ; R31 := R31[R30]
-221 [-]: EQ        1 R31 K1     ; if R31 == nil then PC := 229
-222 [-]: JMP       229          ; PC := 229
-223 [-]: GETGLOBAL R31 K56      ; R31 := 0x93B1256B
-224 [-]: LOADK     R32 K57      ; R32 := "Ignoring duplicate fortress sector"
-225 [-]: GETTABLE  R33 R29 K8   ; R33 := R29["name"]
-226 [-]: CONCAT    R32 R32 R33  ; R32 := R32 .. R33
-227 [-]: CALL      R31 2 1      ; R31(R32)
-228 [-]: JMP       232          ; PC := 232
-229 [-]: GETUPVAL  R31 U6       ; R31 := U6
-230 [-]: GETTABLE  R31 R31 K55  ; R31 := R31["Sectors"]
-231 [-]: SETTABLE  R31 R30 R29  ; R31[R30] := R29
-232 [-]: FORLOOP   R25 211      ; R25 += R27; if R25 <= R26 then begin PC := 211; R28 := R25 end
-233 [-]: FORLOOP   R20 202      ; R20 += R22; if R20 <= R21 then begin PC := 202; R23 := R20 end
-234 [-]: GETGLOBAL R31 K40      ; R31 := 0x221C9700
-235 [-]: GETTABLE  R32 R9 K50   ; R32 := R9["pos"]
-236 [-]: GETTABLE  R32 R32 K41  ; R32 := R32["x"]
-237 [-]: GETTABLE  R33 R9 K50   ; R33 := R9["pos"]
-238 [-]: GETTABLE  R33 R33 K44  ; R33 := R33["y"]
-239 [-]: GETTABLE  R34 R9 K50   ; R34 := R9["pos"]
-240 [-]: GETTABLE  R34 R34 K49  ; R34 := R34["z"]
-241 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
-242 [-]: GETUPVAL  R32 U10      ; R32 := U10
-243 [-]: MOVE      R33 R31      ; R33 := R31
-244 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-245 [-]: MOVE      R31 R32      ; R31 := R32
-246 [-]: SETTABLE  R9 K50 R31   ; R9["pos"] := R31
-247 [-]: GETGLOBAL R32 K14      ; R32 := gBackgroundRegion
-248 [-]: SELF      R32 R32 K16  ; R33 := R32; R32 := R32["0xBDD34CC6"]
-249 [-]: MOVE      R34 R10      ; R34 := R10
-250 [-]: MOVE      R35 R31      ; R35 := R31
-251 [-]: GETGLOBAL R36 K58      ; R36 := 0x1E4F6281
-252 [-]: LOADK     R37 K24      ; R37 := 0
-253 [-]: LOADK     R38 K59      ; R38 := -15
-254 [-]: LOADK     R39 K24      ; R39 := 0
-255 [-]: CALL      R36 4 0      ; R36,... := R36(R37,R38,R39)
-256 [-]: CALL      R32 0 2      ; R32 := R32(R33,...)
-257 [-]: SETTABLE  R9 K60 R32   ; R9["instance"] := R32
-258 [-]: GETGLOBAL R33 K6       ; R33 := 0x400E7765
-259 [-]: GETUPVAL  R34 U4       ; R34 := U4
-260 [-]: GETTABLE  R34 R34 R8   ; R34 := R34[R8]
-261 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-262 [-]: TEST      R33 1        ; if R33 then PC := 269
-263 [-]: JMP       269          ; PC := 269
-264 [-]: GETGLOBAL R33 K14      ; R33 := gBackgroundRegion
-265 [-]: SELF      R33 R33 K15  ; R34 := R33; R33 := R33["0x9B0A3887"]
-266 [-]: GETUPVAL  R35 U4       ; R35 := U4
-267 [-]: GETTABLE  R35 R35 R8   ; R35 := R35[R8]
-268 [-]: CALL      R33 3 1      ; R33(R34,R35)
-269 [-]: GETUPVAL  R33 U4       ; R33 := U4
-270 [-]: SETTABLE  R33 R8 R32   ; R33[R8] := R32
-271 [-]: SELF      R33 R32 K61  ; R34 := R32; R33 := R32["0x6A7E5F92"]
-272 [-]: GETTABLE  R35 R9 K62   ; R35 := R9["scale"]
-273 [-]: CALL      R33 3 1      ; R33(R34,R35)
-274 [-]: CLOSURE   R33 0        ; R33 := closure(Function #46.1)
-275 [-]: GETUPVAL  R34 U11      ; R34 := U11
-276 [-]: GETTABLE  R34 R34 K63  ; R34 := R34["Active"]
-277 [-]: TEST      R34 0        ; if not R34 then PC := 292
-278 [-]: JMP       292          ; PC := 292
-279 [-]: GETUPVAL  R34 U11      ; R34 := U11
-280 [-]: GETTABLE  R34 R34 K64  ; R34 := R34["Regions"]
-281 [-]: GETGLOBAL R35 K30      ; R35 := _T
-282 [-]: GETTABLE  R35 R35 K65  ; R35 := R35["REGION_ID_DOJO"]
-283 [-]: EQ        1 R8 R35     ; if R8 == R35 then PC := 290
-284 [-]: JMP       290          ; PC := 290
-285 [-]: MOVE      R35 R33      ; R35 := R33
-286 [-]: MOVE      R36 R9       ; R36 := R9
-287 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-288 [-]: JMP       291          ; PC := 291
-289 [-]: MOVE      R35 R0       ; R35 := R0
-290 [-]: MOVE      R35 R1       ; R35 := R1
-291 [-]: SETTABLE  R34 R8 R35   ; R34[R8] := R35
-292 [-]: GETUPVAL  R34 U12      ; R34 := U12
-293 [-]: GETTABLE  R34 R34 R8   ; R34 := R34[R8]
-294 [-]: EQ        1 R34 K66    ; if R34 == "0x1" then PC := 306
-295 [-]: JMP       306          ; PC := 306
-296 [-]: GETUPVAL  R34 U11      ; R34 := U11
-297 [-]: GETTABLE  R34 R34 K63  ; R34 := R34["Active"]
-298 [-]: TEST      R34 0        ; if not R34 then PC := 307
-299 [-]: JMP       307          ; PC := 307
-300 [-]: GETUPVAL  R34 U11      ; R34 := U11
-301 [-]: GETTABLE  R34 R34 K64  ; R34 := R34["Regions"]
-302 [-]: GETTABLE  R34 R34 R8   ; R34 := R34[R8]
-303 [-]: MOVE      R34 R34      ; R34 := R34
-304 [-]: JMP       307          ; PC := 307
-305 [-]: MOVE      R34 R0       ; R34 := R0
-306 [-]: MOVE      R34 R1       ; R34 := R1
-307 [-]: TEST      R34 0        ; if not R34 then PC := 326
-308 [-]: JMP       326          ; PC := 326
-309 [-]: SELF      R35 R32 K29  ; R36 := R32; R35 := R32["0x7DBDDA0B"]
-310 [-]: MOVE      R37 R0       ; R37 := R0
-311 [-]: MOVE      R38 R1       ; R38 := R1
-312 [-]: CALL      R35 4 1      ; R35(R36,R37,R38)
-313 [-]: SELF      R35 R32 K67  ; R36 := R32; R35 := R32["0x15D4DAEE"]
-314 [-]: GETGLOBAL R37 K68      ; R37 := gEntityType
-315 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
-316 [-]: LOADK     R36 K3       ; R36 := 1
-317 [-]: LEN       R37 R35      ; R37 := # R35
-318 [-]: LOADK     R38 K3       ; R38 := 1
-319 [-]: FORPREP   R36 325      ; R36 -= R38; PC := 325
-320 [-]: GETTABLE  R40 R35 R39  ; R40 := R35[R39]
-321 [-]: SELF      R40 R40 K29  ; R41 := R40; R40 := R40["0x7DBDDA0B"]
-322 [-]: MOVE      R42 R0       ; R42 := R0
-323 [-]: MOVE      R43 R1       ; R43 := R1
-324 [-]: CALL      R40 4 1      ; R40(R41,R42,R43)
-325 [-]: FORLOOP   R36 320      ; R36 += R38; if R36 <= R37 then begin PC := 320; R39 := R36 end
-326 [-]: GETUPVAL  R40 U11      ; R40 := U11
-327 [-]: GETTABLE  R40 R40 K64  ; R40 := R40["Regions"]
-328 [-]: GETTABLE  R40 R40 R8   ; R40 := R40[R8]
-329 [-]: TEST      R40 0        ; if not R40 then PC := 344
-330 [-]: JMP       344          ; PC := 344
-331 [-]: SELF      R40 R32 K67  ; R41 := R32; R40 := R32["0x15D4DAEE"]
-332 [-]: GETGLOBAL R42 K69      ; R42 := gLightType
-333 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
-334 [-]: LOADK     R41 K3       ; R41 := 1
-335 [-]: LEN       R42 R40      ; R42 := # R40
-336 [-]: LOADK     R43 K3       ; R43 := 1
-337 [-]: FORPREP   R41 343      ; R41 -= R43; PC := 343
-338 [-]: GETTABLE  R45 R40 R44  ; R45 := R40[R44]
-339 [-]: SELF      R45 R45 K29  ; R46 := R45; R45 := R45["0x7DBDDA0B"]
-340 [-]: MOVE      R47 R0       ; R47 := R0
-341 [-]: MOVE      R48 R1       ; R48 := R1
-342 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
-343 [-]: FORLOOP   R41 338      ; R41 += R43; if R41 <= R42 then begin PC := 338; R44 := R41 end
-344 [-]: GETGLOBAL R45 K40      ; R45 := 0x221C9700
-345 [-]: LOADK     R46 K24      ; R46 := 0
-346 [-]: GETTABLE  R47 R9 K62   ; R47 := R9["scale"]
-347 [-]: MUL       R47 R47 K70  ; R47 := R47 * 1.0499999523163
-348 [-]: GETUPVAL  R48 U13      ; R48 := U13
-349 [-]: GETTABLE  R48 R48 K71  ; R48 := R48["PLANET_UNIT_MULTIPLIER"]
-350 [-]: MUL       R47 R47 R48  ; R47 := R47 * R48
-351 [-]: LOADK     R48 K72      ; R48 := 9.9999997473788e-05
-352 [-]: CALL      R45 4 2      ; R45 := R45(R46,R47,R48)
-353 [-]: ADD       R45 R31 R45  ; R45 := R31 + R45
-354 [-]: GETUPVAL  R46 U14      ; R46 := U14
-355 [-]: GETTABLE  R46 R46 K73  ; R46 := R46["0xF81722A2"]
-356 [-]: GETUPVAL  R47 U11      ; R47 := U11
-357 [-]: GETTABLE  R47 R47 K63  ; R47 := R47["Active"]
-358 [-]: TEST      R47 0        ; if not R47 then PC := 365
-359 [-]: JMP       365          ; PC := 365
-360 [-]: GETUPVAL  R47 U11      ; R47 := U11
-361 [-]: GETTABLE  R47 R47 K64  ; R47 := R47["Regions"]
-362 [-]: GETTABLE  R47 R47 R8   ; R47 := R47[R8]
-363 [-]: JMP       366          ; PC := 366
-364 [-]: MOVE      R47 R0       ; R47 := R0
-365 [-]: MOVE      R47 R1       ; R47 := R1
-366 [-]: GETTABLE  R48 R9 K8    ; R48 := R9["name"]
-367 [-]: LOADK     R49 K74      ; R49 := ""
-368 [-]: CALL      R46 4 2      ; R46 := R46(R47,R48,R49)
-369 [-]: GETUPVAL  R47 U2       ; R47 := U2
-370 [-]: GETUPVAL  R48 U15      ; R48 := U15
-371 [-]: MOVE      R49 R46      ; R49 := R46
-372 [-]: MOVE      R50 R45      ; R50 := R45
-373 [-]: MOVE      R51 R0       ; R51 := R0
-374 [-]: LOADK     R52 K20      ; R52 := 2
-375 [-]: MOVE      R53 R34      ; R53 := R34
-376 [-]: NEWTABLE  R54 0 2      ; R54 := {}
-377 [-]: SETTABLE  R54 K75 K76  ; R54["RollOver"] := "RollOverRegionLabel"
-378 [-]: SETTABLE  R54 K77 K78  ; R54["RollOut"] := "RollOutRegionLabel"
-379 [-]: MOVE      R55 R8       ; R55 := R8
-380 [-]: CALL      R48 8 2      ; R48 := R48(R49,R50,R51,R52,R53,R54,R55)
-381 [-]: SETTABLE  R47 R8 R48   ; R47[R8] := R48
-382 [-]: TEST      R11 0        ; if not R11 then PC := 388
-383 [-]: JMP       388          ; PC := 388
-384 [-]: GETUPVAL  R47 U6       ; R47 := U6
-385 [-]: GETUPVAL  R48 U5       ; R48 := U5
-386 [-]: LEN       R48 R48      ; R48 := # R48
-387 [-]: SETTABLE  R47 K79 R48  ; R47["SubLabelIndex"] := R48
-388 [-]: FORLOOP   R5 28        ; R5 += R7; if R5 <= R6 then begin PC := 28; R8 := R5 end
-389 [-]: RETURN    R0 1         ; return 
+ 18 [-]: MOVE      R5 R3        ; R5 := R3
+ 19 [-]: LOADK     R5 K2        ; R5 := 1
+ 20 [-]: GETUPVAL  R6 U4        ; R6 := U4
+ 21 [-]: LEN       R6 R6        ; R6 := # R6
+ 22 [-]: LOADK     R7 K2        ; R7 := 1
+ 23 [-]: FORPREP   R5 350       ; R5 -= R7; PC := 350
+ 24 [-]: GETUPVAL  R9 U4        ; R9 := U4
+ 25 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+ 26 [-]: GETGLOBAL R10 K3       ; R10 := 0xCAA43ABB
+ 27 [-]: GETTABLE  R11 R9 K4    ; R11 := R9["decoRedux"]
+ 28 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 29 [-]: MOVE      R11 R0       ; R11 := R0
+ 30 [-]: GETGLOBAL R12 K5       ; R12 := 0x400E7765
+ 31 [-]: GETUPVAL  R13 U5       ; R13 := U5
+ 32 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["Region"]
+ 33 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 34 [-]: TEST      R12 0        ; if not R12 then PC := 44
+ 35 [-]: JMP       44           ; PC := 44
+ 36 [-]: GETTABLE  R12 R9 K7    ; R12 := R9["name"]
+ 37 [-]: GETUPVAL  R13 U5       ; R13 := U5
+ 38 [-]: GETTABLE  R13 R13 K8   ; R13 := R13["Tag"]
+ 39 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 44
+ 40 [-]: JMP       44           ; PC := 44
+ 41 [-]: GETUPVAL  R12 U5       ; R12 := U5
+ 42 [-]: SETTABLE  R12 K6 R9    ; R12["Region"] := R9
+ 43 [-]: MOVE      R11 R1       ; R11 := R1
+ 44 [-]: GETGLOBAL R12 K5       ; R12 := 0x400E7765
+ 45 [-]: MOVE      R13 R10      ; R13 := R10
+ 46 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 47 [-]: TEST      R12 0        ; if not R12 then PC := 53
+ 48 [-]: JMP       53           ; PC := 53
+ 49 [-]: GETGLOBAL R12 K3       ; R12 := 0xCAA43ABB
+ 50 [-]: GETTABLE  R13 R9 K9    ; R13 := R9["deco"]
+ 51 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 52 [-]: MOVE      R10 R12      ; R10 := R12
+ 53 [-]: TEST      R11 0        ; if not R11 then PC := 214
+ 54 [-]: JMP       214          ; PC := 214
+ 55 [-]: GETUPVAL  R12 U5       ; R12 := U5
+ 56 [-]: GETTABLE  R12 R12 K10  ; R12 := R12["SplinePoints"]
+ 57 [-]: LOADNIL   R13 R13      ; R13 := nil
+ 58 [-]: LOADK     R14 K2       ; R14 := 1
+ 59 [-]: LEN       R15 R12      ; R15 := # R12
+ 60 [-]: SUB       R15 R15 K11  ; R15 := R15 - 3
+ 61 [-]: LOADK     R16 K2       ; R16 := 1
+ 62 [-]: FORPREP   R14 116      ; R14 -= R16; PC := 116
+ 63 [-]: GETGLOBAL R18 K5       ; R18 := 0x400E7765
+ 64 [-]: GETUPVAL  R19 U5       ; R19 := U5
+ 65 [-]: GETTABLE  R19 R19 K12  ; R19 := R19["Splines"]
+ 66 [-]: GETTABLE  R19 R19 R17  ; R19 := R19[R17]
+ 67 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 68 [-]: TEST      R18 1        ; if R18 then PC := 76
+ 69 [-]: JMP       76           ; PC := 76
+ 70 [-]: GETGLOBAL R18 K13      ; R18 := gBackgroundRegion
+ 71 [-]: SELF      R18 R18 K14  ; R19 := R18; R18 := R18["0x9B0A3887"]
+ 72 [-]: GETUPVAL  R20 U5       ; R20 := U5
+ 73 [-]: GETTABLE  R20 R20 K12  ; R20 := R20["Splines"]
+ 74 [-]: GETTABLE  R20 R20 R17  ; R20 := R20[R17]
+ 75 [-]: CALL      R18 3 1      ; R18(R19,R20)
+ 76 [-]: GETGLOBAL R18 K13      ; R18 := gBackgroundRegion
+ 77 [-]: SELF      R18 R18 K15  ; R19 := R18; R18 := R18["0xBDD34CC6"]
+ 78 [-]: GETGLOBAL R20 K16      ; R20 := splineConnectionType
+ 79 [-]: GETGLOBAL R21 K17      ; R21 := ZERO_VECTOR
+ 80 [-]: GETGLOBAL R22 K18      ; R22 := ZERO_ROTATION
+ 81 [-]: CALL      R18 5 2      ; R18 := R18(R19,R20,R21,R22)
+ 82 [-]: MOVE      R13 R18      ; R13 := R18
+ 83 [-]: GETUPVAL  R18 U5       ; R18 := U5
+ 84 [-]: GETTABLE  R18 R18 K12  ; R18 := R18["Splines"]
+ 85 [-]: SETTABLE  R18 R17 R13  ; R18[R17] := R13
+ 86 [-]: NEWTABLE  R18 4 0      ; R18 := {}
+ 87 [-]: GETTABLE  R19 R12 R17  ; R19 := R12[R17]
+ 88 [-]: ADD       R20 R17 K2   ; R20 := R17 + 1
+ 89 [-]: GETTABLE  R20 R12 R20  ; R20 := R12[R20]
+ 90 [-]: ADD       R21 R17 K19  ; R21 := R17 + 2
+ 91 [-]: GETTABLE  R21 R12 R21  ; R21 := R12[R21]
+ 92 [-]: ADD       R22 R17 K11  ; R22 := R17 + 3
+ 93 [-]: GETTABLE  R22 R12 R22  ; R22 := R12[R22]
+ 94 [-]: SETLIST   R18 4 1      ; R18[(1-1)*FPF+i] := R(18+i), 1 <= i <= 4
+ 95 [-]: SELF      R19 R13 K20  ; R20 := R13; R19 := R13["0x5BD03F6B"]
+ 96 [-]: MOVE      R21 R18      ; R21 := R18
+ 97 [-]: CALL      R19 3 1      ; R19(R20,R21)
+ 98 [-]: SELF      R19 R13 K21  ; R20 := R13; R19 := R13["0xA20F64C0"]
+ 99 [-]: GETGLOBAL R21 K22      ; R21 := 0xB5A59043
+100 [-]: LOADK     R22 K23      ; R22 := 0
+101 [-]: LOADK     R23 K24      ; R23 := 255
+102 [-]: LOADK     R24 K23      ; R24 := 0
+103 [-]: LOADK     R25 K24      ; R25 := 255
+104 [-]: CALL      R21 5 0      ; R21,... := R21(R22,R23,R24,R25)
+105 [-]: CALL      R19 0 1      ; R19(R20,...)
+106 [-]: SELF      R19 R13 K25  ; R20 := R13; R19 := R13["0xD63FF2C2"]
+107 [-]: GETGLOBAL R21 K26      ; R21 := 0x994A1A7
+108 [-]: LOADK     R22 K23      ; R22 := 0
+109 [-]: LOADK     R23 K27      ; R23 := 30
+110 [-]: CALL      R21 3 0      ; R21,... := R21(R22,R23)
+111 [-]: CALL      R19 0 1      ; R19(R20,...)
+112 [-]: SELF      R19 R13 K28  ; R20 := R13; R19 := R13["0x7DBDDA0B"]
+113 [-]: MOVE      R21 R0       ; R21 := R0
+114 [-]: MOVE      R22 R1       ; R22 := R1
+115 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
+116 [-]: FORLOOP   R14 63       ; R14 += R16; if R14 <= R15 then begin PC := 63; R17 := R14 end
+117 [-]: GETGLOBAL R19 K29      ; R19 := _T
+118 [-]: GETTABLE  R19 R19 K30  ; R19 := R19["FortressLocation"]
+119 [-]: GETUPVAL  R20 U5       ; R20 := U5
+120 [-]: GETTABLE  R20 R20 K12  ; R20 := R20["Splines"]
+121 [-]: LEN       R20 R20      ; R20 := # R20
+122 [-]: SETTABLE  R19 K31 R20  ; R19["MaxSplines"] := R20
+123 [-]: GETUPVAL  R19 U5       ; R19 := U5
+124 [-]: GETGLOBAL R20 K29      ; R20 := _T
+125 [-]: GETTABLE  R20 R20 K30  ; R20 := R20["FortressLocation"]
+126 [-]: GETTABLE  R20 R20 K31  ; R20 := R20["MaxSplines"]
+127 [-]: GETUPVAL  R21 U5       ; R21 := U5
+128 [-]: GETTABLE  R21 R21 K33  ; R21 := R21["LoopTime"]
+129 [-]: DIV       R20 R20 R21  ; R20 := R20 / R21
+130 [-]: SETTABLE  R19 K32 R20  ; R19["Velocity"] := R20
+131 [-]: GETGLOBAL R19 K29      ; R19 := _T
+132 [-]: GETTABLE  R19 R19 K30  ; R19 := R19["FortressLocation"]
+133 [-]: GETUPVAL  R20 U5       ; R20 := U5
+134 [-]: GETTABLE  R20 R20 K32  ; R20 := R20["Velocity"]
+135 [-]: SETTABLE  R19 K32 R20  ; R19["Velocity"] := R20
+136 [-]: GETGLOBAL R19 K5       ; R19 := 0x400E7765
+137 [-]: GETGLOBAL R20 K34      ; R20 := gGameData
+138 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+139 [-]: TEST      R19 1        ; if R19 then PC := 144
+140 [-]: JMP       144          ; PC := 144
+141 [-]: GETUPVAL  R19 U6       ; R19 := U6
+142 [-]: MOVE      R20 R1       ; R20 := R1
+143 [-]: CALL      R19 2 1      ; R19(R20)
+144 [-]: GETUPVAL  R19 U5       ; R19 := U5
+145 [-]: GETTABLE  R19 R19 K12  ; R19 := R19["Splines"]
+146 [-]: GETGLOBAL R20 K29      ; R20 := _T
+147 [-]: GETTABLE  R20 R20 K30  ; R20 := R20["FortressLocation"]
+148 [-]: GETTABLE  R20 R20 K35  ; R20 := R20["SplineIndex"]
+149 [-]: GETTABLE  R19 R19 R20  ; R19 := R19[R20]
+150 [-]: SELF      R19 R19 K36  ; R20 := R19; R19 := R19["0xAC71FD5A"]
+151 [-]: GETGLOBAL R21 K29      ; R21 := _T
+152 [-]: GETTABLE  R21 R21 K30  ; R21 := R21["FortressLocation"]
+153 [-]: GETTABLE  R21 R21 K37  ; R21 := R21["Progress"]
+154 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
+155 [-]: GETUPVAL  R20 U7       ; R20 := U7
+156 [-]: SELF      R20 R20 K38  ; R21 := R20; R20 := R20["0x2721E25D"]
+157 [-]: GETUPVAL  R22 U5       ; R22 := U5
+158 [-]: GETTABLE  R22 R22 K6   ; R22 := R22["Region"]
+159 [-]: GETGLOBAL R23 K39      ; R23 := 0x221C9700
+160 [-]: GETTABLE  R24 R19 K40  ; R24 := R19["x"]
+161 [-]: MUL       R24 R24 K41  ; R24 := R24 * 0.041000001132488
+162 [-]: ADD       R24 K42 R24  ; R24 := 0.5 + R24
+163 [-]: GETTABLE  R25 R19 K43  ; R25 := R19["y"]
+164 [-]: ADD       R25 R25 K44  ; R25 := R25 + 0.029999999329448
+165 [-]: MUL       R25 R25 K45  ; R25 := R25 * 0.043000001460314
+166 [-]: SUB       R25 K42 R25  ; R25 := 0.5 - R25
+167 [-]: GETUPVAL  R26 U8       ; R26 := U8
+168 [-]: GETTABLE  R26 R26 K46  ; R26 := R26["MAX_ZOOM"]
+169 [-]: SUB       R26 R26 K47  ; R26 := R26 - 0.30000001192093
+170 [-]: GETTABLE  R27 R19 K48  ; R27 := R19["z"]
+171 [-]: ADD       R26 R26 R27  ; R26 := R26 + R27
+172 [-]: CALL      R23 4 0      ; R23,... := R23(R24,R25,R26)
+173 [-]: CALL      R20 0 1      ; R20(R21,...)
+174 [-]: SETTABLE  R9 K49 R19   ; R9["pos"] := R19
+175 [-]: LOADK     R20 K2       ; R20 := 1
+176 [-]: GETUPVAL  R21 U5       ; R21 := U5
+177 [-]: GETTABLE  R21 R21 K6   ; R21 := R21["Region"]
+178 [-]: GETTABLE  R21 R21 K50  ; R21 := R21["tiers"]
+179 [-]: LEN       R21 R21      ; R21 := # R21
+180 [-]: LOADK     R22 K2       ; R22 := 1
+181 [-]: FORPREP   R20 213      ; R20 -= R22; PC := 213
+182 [-]: GETUPVAL  R24 U5       ; R24 := U5
+183 [-]: GETTABLE  R24 R24 K6   ; R24 := R24["Region"]
+184 [-]: GETTABLE  R24 R24 K50  ; R24 := R24["tiers"]
+185 [-]: GETTABLE  R24 R24 R23  ; R24 := R24[R23]
+186 [-]: GETTABLE  R24 R24 K51  ; R24 := R24["sectors"]
+187 [-]: LOADK     R25 K2       ; R25 := 1
+188 [-]: LEN       R26 R24      ; R26 := # R24
+189 [-]: LOADK     R27 K2       ; R27 := 1
+190 [-]: FORPREP   R25 212      ; R25 -= R27; PC := 212
+191 [-]: GETTABLE  R29 R24 R28  ; R29 := R24[R28]
+192 [-]: GETTABLE  R30 R29 K52  ; R30 := R29["decoOffset"]
+193 [-]: ADD       R30 R19 R30  ; R30 := R19 + R30
+194 [-]: SETTABLE  R29 K49 R30  ; R29["pos"] := R30
+195 [-]: GETGLOBAL R30 K53      ; R30 := 0x9FAED6BC
+196 [-]: GETTABLE  R31 R29 K7   ; R31 := R29["name"]
+197 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+198 [-]: GETUPVAL  R31 U5       ; R31 := U5
+199 [-]: GETTABLE  R31 R31 K54  ; R31 := R31["Sectors"]
+200 [-]: GETTABLE  R31 R31 R30  ; R31 := R31[R30]
+201 [-]: EQ        1 R31 K0     ; if R31 == nil then PC := 209
+202 [-]: JMP       209          ; PC := 209
+203 [-]: GETGLOBAL R31 K55      ; R31 := 0x93B1256B
+204 [-]: LOADK     R32 K56      ; R32 := "Ignoring duplicate fortress sector"
+205 [-]: GETTABLE  R33 R29 K7   ; R33 := R29["name"]
+206 [-]: CONCAT    R32 R32 R33  ; R32 := R32 .. R33
+207 [-]: CALL      R31 2 1      ; R31(R32)
+208 [-]: JMP       212          ; PC := 212
+209 [-]: GETUPVAL  R31 U5       ; R31 := U5
+210 [-]: GETTABLE  R31 R31 K54  ; R31 := R31["Sectors"]
+211 [-]: SETTABLE  R31 R30 R29  ; R31[R30] := R29
+212 [-]: FORLOOP   R25 191      ; R25 += R27; if R25 <= R26 then begin PC := 191; R28 := R25 end
+213 [-]: FORLOOP   R20 182      ; R20 += R22; if R20 <= R21 then begin PC := 182; R23 := R20 end
+214 [-]: GETGLOBAL R31 K39      ; R31 := 0x221C9700
+215 [-]: GETTABLE  R32 R9 K49   ; R32 := R9["pos"]
+216 [-]: GETTABLE  R32 R32 K40  ; R32 := R32["x"]
+217 [-]: GETTABLE  R33 R9 K49   ; R33 := R9["pos"]
+218 [-]: GETTABLE  R33 R33 K43  ; R33 := R33["y"]
+219 [-]: GETTABLE  R34 R9 K49   ; R34 := R9["pos"]
+220 [-]: GETTABLE  R34 R34 K48  ; R34 := R34["z"]
+221 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
+222 [-]: GETUPVAL  R32 U9       ; R32 := U9
+223 [-]: MOVE      R33 R31      ; R33 := R31
+224 [-]: CALL      R32 2 2      ; R32 := R32(R33)
+225 [-]: MOVE      R31 R32      ; R31 := R32
+226 [-]: SETTABLE  R9 K49 R31   ; R9["pos"] := R31
+227 [-]: GETGLOBAL R32 K13      ; R32 := gBackgroundRegion
+228 [-]: SELF      R32 R32 K15  ; R33 := R32; R32 := R32["0xBDD34CC6"]
+229 [-]: MOVE      R34 R10      ; R34 := R10
+230 [-]: MOVE      R35 R31      ; R35 := R31
+231 [-]: GETGLOBAL R36 K57      ; R36 := 0x1E4F6281
+232 [-]: LOADK     R37 K23      ; R37 := 0
+233 [-]: LOADK     R38 K58      ; R38 := -15
+234 [-]: LOADK     R39 K23      ; R39 := 0
+235 [-]: CALL      R36 4 0      ; R36,... := R36(R37,R38,R39)
+236 [-]: CALL      R32 0 2      ; R32 := R32(R33,...)
+237 [-]: SETTABLE  R9 K59 R32   ; R9["instance"] := R32
+238 [-]: GETGLOBAL R33 K5       ; R33 := 0x400E7765
+239 [-]: GETUPVAL  R34 U2       ; R34 := U2
+240 [-]: GETTABLE  R34 R34 R8   ; R34 := R34[R8]
+241 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+242 [-]: TEST      R33 1        ; if R33 then PC := 249
+243 [-]: JMP       249          ; PC := 249
+244 [-]: GETGLOBAL R33 K13      ; R33 := gBackgroundRegion
+245 [-]: SELF      R33 R33 K14  ; R34 := R33; R33 := R33["0x9B0A3887"]
+246 [-]: GETUPVAL  R35 U2       ; R35 := U2
+247 [-]: GETTABLE  R35 R35 R8   ; R35 := R35[R8]
+248 [-]: CALL      R33 3 1      ; R33(R34,R35)
+249 [-]: GETUPVAL  R33 U2       ; R33 := U2
+250 [-]: SETTABLE  R33 R8 R32   ; R33[R8] := R32
+251 [-]: SELF      R33 R32 K60  ; R34 := R32; R33 := R32["0x6A7E5F92"]
+252 [-]: GETTABLE  R35 R9 K61   ; R35 := R9["scale"]
+253 [-]: CALL      R33 3 1      ; R33(R34,R35)
+254 [-]: GETUPVAL  R33 U10      ; R33 := U10
+255 [-]: GETTABLE  R33 R33 R8   ; R33 := R33[R8]
+256 [-]: EQ        1 R33 K62    ; if R33 == "0x1" then PC := 268
+257 [-]: JMP       268          ; PC := 268
+258 [-]: GETUPVAL  R33 U11      ; R33 := U11
+259 [-]: GETTABLE  R33 R33 K63  ; R33 := R33["Active"]
+260 [-]: TEST      R33 0        ; if not R33 then PC := 269
+261 [-]: JMP       269          ; PC := 269
+262 [-]: GETUPVAL  R33 U11      ; R33 := U11
+263 [-]: GETTABLE  R33 R33 K64  ; R33 := R33["Regions"]
+264 [-]: GETTABLE  R33 R33 R8   ; R33 := R33[R8]
+265 [-]: MOVE      R33 R33      ; R33 := R33
+266 [-]: JMP       269          ; PC := 269
+267 [-]: MOVE      R33 R0       ; R33 := R0
+268 [-]: MOVE      R33 R1       ; R33 := R1
+269 [-]: TEST      R33 0        ; if not R33 then PC := 288
+270 [-]: JMP       288          ; PC := 288
+271 [-]: SELF      R34 R32 K28  ; R35 := R32; R34 := R32["0x7DBDDA0B"]
+272 [-]: MOVE      R36 R0       ; R36 := R0
+273 [-]: MOVE      R37 R1       ; R37 := R1
+274 [-]: CALL      R34 4 1      ; R34(R35,R36,R37)
+275 [-]: SELF      R34 R32 K65  ; R35 := R32; R34 := R32["0x15D4DAEE"]
+276 [-]: GETGLOBAL R36 K66      ; R36 := gEntityType
+277 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
+278 [-]: LOADK     R35 K2       ; R35 := 1
+279 [-]: LEN       R36 R34      ; R36 := # R34
+280 [-]: LOADK     R37 K2       ; R37 := 1
+281 [-]: FORPREP   R35 287      ; R35 -= R37; PC := 287
+282 [-]: GETTABLE  R39 R34 R38  ; R39 := R34[R38]
+283 [-]: SELF      R39 R39 K28  ; R40 := R39; R39 := R39["0x7DBDDA0B"]
+284 [-]: MOVE      R41 R0       ; R41 := R0
+285 [-]: MOVE      R42 R1       ; R42 := R1
+286 [-]: CALL      R39 4 1      ; R39(R40,R41,R42)
+287 [-]: FORLOOP   R35 282      ; R35 += R37; if R35 <= R36 then begin PC := 282; R38 := R35 end
+288 [-]: GETUPVAL  R39 U11      ; R39 := U11
+289 [-]: GETTABLE  R39 R39 K64  ; R39 := R39["Regions"]
+290 [-]: GETTABLE  R39 R39 R8   ; R39 := R39[R8]
+291 [-]: TEST      R39 0        ; if not R39 then PC := 306
+292 [-]: JMP       306          ; PC := 306
+293 [-]: SELF      R39 R32 K65  ; R40 := R32; R39 := R32["0x15D4DAEE"]
+294 [-]: GETGLOBAL R41 K67      ; R41 := gLightType
+295 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
+296 [-]: LOADK     R40 K2       ; R40 := 1
+297 [-]: LEN       R41 R39      ; R41 := # R39
+298 [-]: LOADK     R42 K2       ; R42 := 1
+299 [-]: FORPREP   R40 305      ; R40 -= R42; PC := 305
+300 [-]: GETTABLE  R44 R39 R43  ; R44 := R39[R43]
+301 [-]: SELF      R44 R44 K28  ; R45 := R44; R44 := R44["0x7DBDDA0B"]
+302 [-]: MOVE      R46 R0       ; R46 := R0
+303 [-]: MOVE      R47 R1       ; R47 := R1
+304 [-]: CALL      R44 4 1      ; R44(R45,R46,R47)
+305 [-]: FORLOOP   R40 300      ; R40 += R42; if R40 <= R41 then begin PC := 300; R43 := R40 end
+306 [-]: GETGLOBAL R44 K39      ; R44 := 0x221C9700
+307 [-]: LOADK     R45 K23      ; R45 := 0
+308 [-]: GETTABLE  R46 R9 K61   ; R46 := R9["scale"]
+309 [-]: MUL       R46 R46 K68  ; R46 := R46 * 1.0499999523163
+310 [-]: GETUPVAL  R47 U12      ; R47 := U12
+311 [-]: GETTABLE  R47 R47 K69  ; R47 := R47["PLANET_UNIT_MULTIPLIER"]
+312 [-]: MUL       R46 R46 R47  ; R46 := R46 * R47
+313 [-]: LOADK     R47 K70      ; R47 := 9.9999997473788e-05
+314 [-]: CALL      R44 4 2      ; R44 := R44(R45,R46,R47)
+315 [-]: ADD       R44 R31 R44  ; R44 := R31 + R44
+316 [-]: GETUPVAL  R45 U13      ; R45 := U13
+317 [-]: GETTABLE  R45 R45 K71  ; R45 := R45["0xF81722A2"]
+318 [-]: GETUPVAL  R46 U11      ; R46 := U11
+319 [-]: GETTABLE  R46 R46 K63  ; R46 := R46["Active"]
+320 [-]: TEST      R46 0        ; if not R46 then PC := 327
+321 [-]: JMP       327          ; PC := 327
+322 [-]: GETUPVAL  R46 U11      ; R46 := U11
+323 [-]: GETTABLE  R46 R46 K64  ; R46 := R46["Regions"]
+324 [-]: GETTABLE  R46 R46 R8   ; R46 := R46[R8]
+325 [-]: JMP       328          ; PC := 328
+326 [-]: MOVE      R46 R0       ; R46 := R0
+327 [-]: MOVE      R46 R1       ; R46 := R1
+328 [-]: GETTABLE  R47 R9 K7    ; R47 := R9["name"]
+329 [-]: LOADK     R48 K72      ; R48 := ""
+330 [-]: CALL      R45 4 2      ; R45 := R45(R46,R47,R48)
+331 [-]: GETUPVAL  R46 U0       ; R46 := U0
+332 [-]: GETUPVAL  R47 U14      ; R47 := U14
+333 [-]: MOVE      R48 R45      ; R48 := R45
+334 [-]: MOVE      R49 R44      ; R49 := R44
+335 [-]: MOVE      R50 R0       ; R50 := R0
+336 [-]: LOADK     R51 K19      ; R51 := 2
+337 [-]: MOVE      R52 R33      ; R52 := R33
+338 [-]: NEWTABLE  R53 0 2      ; R53 := {}
+339 [-]: SETTABLE  R53 K73 K74  ; R53["RollOver"] := "RollOverRegionLabel"
+340 [-]: SETTABLE  R53 K75 K76  ; R53["RollOut"] := "RollOutRegionLabel"
+341 [-]: MOVE      R54 R8       ; R54 := R8
+342 [-]: CALL      R47 8 2      ; R47 := R47(R48,R49,R50,R51,R52,R53,R54)
+343 [-]: SETTABLE  R46 R8 R47   ; R46[R8] := R47
+344 [-]: TEST      R11 0        ; if not R11 then PC := 350
+345 [-]: JMP       350          ; PC := 350
+346 [-]: GETUPVAL  R46 U5       ; R46 := U5
+347 [-]: GETUPVAL  R47 U3       ; R47 := U3
+348 [-]: LEN       R47 R47      ; R47 := # R47
+349 [-]: SETTABLE  R46 K77 R47  ; R46["SubLabelIndex"] := R47
+350 [-]: FORLOOP   R5 24        ; R5 += R7; if R5 <= R6 then begin PC := 24; R8 := R5 end
+351 [-]: RETURN    R0 1         ; return 
 
 
-; Function #46.1:
+; Function #45:
 ;
 ; Name:            
-; Defined at line: 1732
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  13
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xECFDD17
-  2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["tiers"]
-  3 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
-  4 [-]: JMP       31           ; PC := 31
-  5 [-]: GETGLOBAL R6 K0        ; R6 := 0xECFDD17
-  6 [-]: GETTABLE  R7 R5 K2     ; R7 := R5["sectors"]
-  7 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
-  8 [-]: JMP       29           ; PC := 29
-  9 [-]: GETTABLE  R11 R10 K3   ; R11 := R10["mission"]
- 10 [-]: GETTABLE  R11 R11 K4   ; R11 := R11["missionType"]
- 11 [-]: GETGLOBAL R12 K5       ; R12 := Lotus_Game
- 12 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["MT_RAILJACK"]
- 13 [-]: EQ        0 R11 R12    ; if R11 ~= R12 then PC := 29
- 14 [-]: JMP       29           ; PC := 29
- 15 [-]: GETGLOBAL R11 K7       ; R11 := 0x400E7765
- 16 [-]: GETTABLE  R12 R10 K3   ; R12 := R10["mission"]
- 17 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["levelOverride"]
- 18 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 19 [-]: TEST      R11 1        ; if R11 then PC := 29
- 20 [-]: JMP       29           ; PC := 29
- 21 [-]: GETTABLE  R11 R10 K3   ; R11 := R10["mission"]
- 22 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["faction"]
- 23 [-]: GETGLOBAL R12 K5       ; R12 := Lotus_Game
- 24 [-]: GETTABLE  R12 R12 K10  ; R12 := R12["FC_GRINEER"]
- 25 [-]: EQ        0 R11 R12    ; if R11 ~= R12 then PC := 29
- 26 [-]: JMP       29           ; PC := 29
- 27 [-]: MOVE      R11 R1       ; R11 := R1
- 28 [-]: RETURN    R11 2        ; return R11
- 29 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 9; R8 := R9 end
- 30 [-]: JMP       9            ; PC := 9
- 31 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 5; R3 := R4 end
- 32 [-]: JMP       5            ; PC := 5
- 33 [-]: MOVE      R11 R0       ; R11 := R0
- 34 [-]: RETURN    R11 2        ; return R11
- 35 [-]: RETURN    R0 1         ; return 
-
-
-; Function #47:
-;
-; Name:            
-; Defined at line: 1772
+; Defined at line: 1720
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6682,10 +6518,10 @@ code size: 4
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #48:
+; Function #46:
 ;
 ; Name:            
-; Defined at line: 1776
+; Defined at line: 1724
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6696,52 +6532,48 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #49:
+; Function #47:
 ;
 ; Name:            
-; Defined at line: 1780
-; #Upvalues:       7
+; Defined at line: 1728
+; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0xBB3AACF2"]
-  3 [-]: CALL      R0 1 2       ; R0 := R0()
-  4 [-]: MOVE      R0 R0        ; R0 := R0
-  5 [-]: GETUPVAL  R0 U2        ; R0 := U2
-  6 [-]: CALL      R0 1 1       ; R0()
-  7 [-]: GETUPVAL  R0 U3        ; R0 := U3
-  8 [-]: CALL      R0 1 1       ; R0()
-  9 [-]: NEWTABLE  R0 0 0       ; R0 := {}
- 10 [-]: MOVE      R0 R4        ; R0 := R4
- 11 [-]: LOADNIL   R0 R0        ; R0 := nil
- 12 [-]: LOADK     R1 K1        ; R1 := 1
- 13 [-]: GETUPVAL  R2 U5        ; R2 := U5
- 14 [-]: LEN       R2 R2        ; R2 := # R2
- 15 [-]: LOADK     R3 K1        ; R3 := 1
- 16 [-]: FORPREP   R1 30        ; R1 -= R3; PC := 30
- 17 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 18 [-]: GETTABLE  R0 R5 R4     ; R0 := R5[R4]
- 19 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
- 20 [-]: GETTABLE  R6 R0 K3     ; R6 := R0["instance"]
- 21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 22 [-]: TEST      R5 1         ; if R5 then PC := 30
- 23 [-]: JMP       30           ; PC := 30
- 24 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 25 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["scale"]
- 26 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 27 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["PLANET_UNIT_MULTIPLIER"]
- 28 [-]: MUL       R6 R6 R7     ; R6 := R6 * R7
- 29 [-]: SETTABLE  R5 R4 R6     ; R5[R4] := R6
- 30 [-]: FORLOOP   R1 17        ; R1 += R3; if R1 <= R2 then begin PC := 17; R4 := R1 end
- 31 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: CALL      R0 1 1       ; R0()
+  3 [-]: GETUPVAL  R0 U1        ; R0 := U1
+  4 [-]: CALL      R0 1 1       ; R0()
+  5 [-]: NEWTABLE  R0 0 0       ; R0 := {}
+  6 [-]: MOVE      R0 R2        ; R0 := R2
+  7 [-]: LOADNIL   R0 R0        ; R0 := nil
+  8 [-]: LOADK     R1 K0        ; R1 := 1
+  9 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 10 [-]: LEN       R2 R2        ; R2 := # R2
+ 11 [-]: LOADK     R3 K0        ; R3 := 1
+ 12 [-]: FORPREP   R1 26        ; R1 -= R3; PC := 26
+ 13 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 14 [-]: GETTABLE  R0 R5 R4     ; R0 := R5[R4]
+ 15 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+ 16 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["instance"]
+ 17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 18 [-]: TEST      R5 1         ; if R5 then PC := 26
+ 19 [-]: JMP       26           ; PC := 26
+ 20 [-]: GETUPVAL  R5 U2        ; R5 := U2
+ 21 [-]: GETTABLE  R6 R0 K3     ; R6 := R0["scale"]
+ 22 [-]: GETUPVAL  R7 U4        ; R7 := U4
+ 23 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["PLANET_UNIT_MULTIPLIER"]
+ 24 [-]: MUL       R6 R6 R7     ; R6 := R6 * R7
+ 25 [-]: SETTABLE  R5 R4 R6     ; R5[R4] := R6
+ 26 [-]: FORLOOP   R1 13        ; R1 += R3; if R1 <= R2 then begin PC := 13; R4 := R1 end
+ 27 [-]: RETURN    R0 1         ; return 
 
 
-; Function #50:
+; Function #48:
 ;
 ; Name:            
-; Defined at line: 1795
+; Defined at line: 1742
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6789,14 +6621,14 @@ code size: 4
  40 [-]: RETURN    R0 1         ; return 
 
 
-; Function #51:
+; Function #49:
 ;
 ; Name:            
-; Defined at line: 1812
+; Defined at line: 1759
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x994A1A7
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -6813,20 +6645,21 @@ code size: 4
  13 [-]: SELF      R2 R0 K7     ; R3 := R0; R2 := R0["0x3B43F25"]
  14 [-]: MOVE      R4 R1        ; R4 := R1
  15 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 16 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 17 [-]: GETGLOBAL R4 K9        ; R4 := 0x93034B55
- 18 [-]: LOADK     R5 K10       ; R5 := 1
- 19 [-]: LOADK     R6 K11       ; R6 := 0.10000000149012
- 20 [-]: MOVE      R7 R2        ; R7 := R2
- 21 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 22 [-]: SETTABLE  R3 K8 R4     ; R3["mDragMultiplier"] := R4
- 23 [-]: RETURN    R0 1         ; return 
+ 16 [-]: MOVE      R1 R2        ; R1 := R2
+ 17 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 18 [-]: GETGLOBAL R3 K9        ; R3 := 0x93034B55
+ 19 [-]: LOADK     R4 K10       ; R4 := 1
+ 20 [-]: LOADK     R5 K11       ; R5 := 0.10000000149012
+ 21 [-]: MOVE      R6 R1        ; R6 := R1
+ 22 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
+ 23 [-]: SETTABLE  R2 K8 R3     ; R2["mDragMultiplier"] := R3
+ 24 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52:
+; Function #50:
 ;
 ; Name:            
-; Defined at line: 1819
+; Defined at line: 1766
 ; #Upvalues:       21
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7105,7 +6938,7 @@ code size: 4
 271 [-]: MOVE      R31 R1       ; R31 := R1
 272 [-]: GETTABLE  R32 R1 K68   ; R32 := R1["zoomedFraming"]
 273 [-]: CALL      R30 3 4      ; R30,R31,R32 := R30(R31,R32)
-274 [-]: CLOSURE   R33 0        ; R33 := closure(Function #52.1)
+274 [-]: CLOSURE   R33 0        ; R33 := closure(Function #50.1)
 275 [-]: GETUPVAL  R0 U11       ; R0 := U11
 276 [-]: MOVE      R0 R17       ; R0 := R17
 277 [-]: MOVE      R0 R32       ; R0 := R32
@@ -7117,7 +6950,7 @@ code size: 4
 283 [-]: GETUPVAL  R34 U14      ; R34 := U14
 284 [-]: SELF      R34 R34 K69  ; R35 := R34; R34 := R34["0x61494587"]
 285 [-]: LOADK     R36 K70      ; R36 := 0.55000001192093
-286 [-]: CLOSURE   R37 1        ; R37 := closure(Function #52.2)
+286 [-]: CLOSURE   R37 1        ; R37 := closure(Function #50.2)
 287 [-]: GETUPVAL  R0 U15       ; R0 := U15
 288 [-]: MOVE      R0 R1        ; R0 := R1
 289 [-]: CALL      R34 4 1      ; R34(R35,R36,R37)
@@ -7134,7 +6967,7 @@ code size: 4
 300 [-]: SETLIST   R39 1 1      ; R39[(1-1)*FPF+i] := R(39+i), 1 <= i <= 1
 301 [-]: LOADK     R40 K76      ; R40 := 0.75
 302 [-]: LOADK     R41 K77      ; R41 := 0.10000000149012
-303 [-]: CLOSURE   R42 2        ; R42 := closure(Function #52.3)
+303 [-]: CLOSURE   R42 2        ; R42 := closure(Function #50.3)
 304 [-]: MOVE      R0 R18       ; R0 := R18
 305 [-]: GETUPVAL  R0 U16       ; R0 := U16
 306 [-]: GETUPVAL  R0 U17       ; R0 := U17
@@ -7149,7 +6982,7 @@ code size: 4
 315 [-]: GETGLOBAL R33 K74      ; R33 := UISys
 316 [-]: GETTABLE  R33 R33 K75  ; R33 := R33["FlashInstance_LINEAR"]
 317 [-]: NEWTABLE  R34 1 0      ; R34 := {}
-318 [-]: CLOSURE   R35 3        ; R35 := closure(Function #52.4)
+318 [-]: CLOSURE   R35 3        ; R35 := closure(Function #50.4)
 319 [-]: GETUPVAL  R0 U11       ; R0 := U11
 320 [-]: MOVE      R0 R17       ; R0 := R17
 321 [-]: GETUPVAL  R0 U10       ; R0 := U10
@@ -7159,7 +6992,7 @@ code size: 4
 325 [-]: SETLIST   R35 1 1      ; R35[(1-1)*FPF+i] := R(35+i), 1 <= i <= 1
 326 [-]: LOADK     R36 K78      ; R36 := 0.64999997615814
 327 [-]: LOADK     R37 K2       ; R37 := 0
-328 [-]: CLOSURE   R38 4        ; R38 := closure(Function #52.5)
+328 [-]: CLOSURE   R38 4        ; R38 := closure(Function #50.5)
 329 [-]: GETUPVAL  R0 U17       ; R0 := U17
 330 [-]: GETUPVAL  R0 U18       ; R0 := U18
 331 [-]: GETUPVAL  R0 U19       ; R0 := U19
@@ -7169,10 +7002,10 @@ code size: 4
 335 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52.1:
+; Function #50.1:
 ;
 ; Name:            
-; Defined at line: 1914
+; Defined at line: 1861
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7218,10 +7051,10 @@ code size: 4
  38 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52.2:
+; Function #50.2:
 ;
 ; Name:            
-; Defined at line: 1921
+; Defined at line: 1868
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7233,10 +7066,10 @@ code size: 4
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52.3:
+; Function #50.3:
 ;
 ; Name:            
-; Defined at line: 1923
+; Defined at line: 1870
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7260,10 +7093,10 @@ code size: 4
  16 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52.4:
+; Function #50.4:
 ;
 ; Name:            
-; Defined at line: 1933
+; Defined at line: 1880
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7281,10 +7114,10 @@ code size: 4
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52.5:
+; Function #50.5:
 ;
 ; Name:            
-; Defined at line: 1934
+; Defined at line: 1881
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7301,17 +7134,17 @@ code size: 4
   9 [-]: GETUPVAL  R1 U3        ; R1 := U3
  10 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x61494587"]
  11 [-]: LOADK     R3 K2        ; R3 := 0.050000000745058
- 12 [-]: CLOSURE   R4 0         ; R4 := closure(Function #52.5.1)
+ 12 [-]: CLOSURE   R4 0         ; R4 := closure(Function #50.5.1)
  13 [-]: GETUPVAL  R0 U4        ; R0 := U4
  14 [-]: MOVE      R0 R0        ; R0 := R0
  15 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  16 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52.5.1:
+; Function #50.5.1:
 ;
 ; Name:            
-; Defined at line: 1941
+; Defined at line: 1888
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7346,10 +7179,10 @@ code size: 4
  27 [-]: RETURN    R0 1         ; return 
 
 
-; Function #53:
+; Function #51:
 ;
 ; Name:            
-; Defined at line: 1951
+; Defined at line: 1898
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7396,946 +7229,1039 @@ code size: 4
  39 [-]: RETURN    R0 1         ; return 
 
 
-; Function #54:
+; Function #52:
 ;
 ; Name:            
-; Defined at line: 1964
-; #Upvalues:       18
+; Defined at line: 1911
+; #Upvalues:       6
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["nodeType"]
+  2 [-]: GETGLOBAL R2 K1        ; R2 := Lotus_Game
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["NT_PVP"]
+  4 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 8
+  5 [-]: JMP       8            ; PC := 8
+  6 [-]: MOVE      R1 R0        ; R1 := R0
+  7 [-]: RETURN    R1 2         ; return R1
+  8 [-]: GETTABLE  R1 R0 K3     ; R1 := R0["locTag"]
+  9 [-]: GETGLOBAL R2 K4        ; R2 := EMPTY_SYMBOL
+ 10 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 14
+ 11 [-]: JMP       14           ; PC := 14
+ 12 [-]: MOVE      R1 R0        ; R1 := R0
+ 13 [-]: RETURN    R1 2         ; return R1
+ 14 [-]: GETGLOBAL R1 K5        ; R1 := 0x9FAED6BC
+ 15 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["name"]
+ 16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 17 [-]: GETGLOBAL R2 K7        ; R2 := string
+ 18 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xDE44F664"]
+ 19 [-]: MOVE      R3 R1        ; R3 := R1
+ 20 [-]: LOADK     R4 K9        ; R4 := "Dojo"
+ 21 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 22 [-]: EQ        0 R2 K10     ; if R2 ~= nil then PC := 25
+ 23 [-]: JMP       25           ; PC := 25
+ 24 [-]: MOVE      R2 R0        ; R2 := R0
+ 25 [-]: MOVE      R2 R1        ; R2 := R1
+ 26 [-]: GETTABLE  R3 R0 K11    ; R3 := R0["missionTag"]
+ 27 [-]: LOADNIL   R4 R4        ; R4 := nil
+ 28 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 29 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["Active"]
+ 30 [-]: TEST      R5 0         ; if not R5 then PC := 90
+ 31 [-]: JMP       90           ; PC := 90
+ 32 [-]: GETGLOBAL R5 K13       ; R5 := gMatchingService
+ 33 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5["0xA99F3BEF"]
+ 34 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 35 [-]: TEST      R5 1         ; if R5 then PC := 72
+ 36 [-]: JMP       72           ; PC := 72
+ 37 [-]: GETGLOBAL R5 K15       ; R5 := 0x400E7765
+ 38 [-]: GETGLOBAL R6 K13       ; R6 := gMatchingService
+ 39 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6["0xD5E03646"]
+ 40 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
+ 41 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+ 42 [-]: TEST      R5 0         ; if not R5 then PC := 72
+ 43 [-]: JMP       72           ; PC := 72
+ 44 [-]: GETGLOBAL R5 K17       ; R5 := gGameRules
+ 45 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5["0x8B598ED4"]
+ 46 [-]: GETGLOBAL R7 K19       ; R7 := gLotusGameRulesType
+ 47 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 48 [-]: TEST      R5 0         ; if not R5 then PC := 72
+ 49 [-]: JMP       72           ; PC := 72
+ 50 [-]: GETGLOBAL R5 K15       ; R5 := 0x400E7765
+ 51 [-]: GETGLOBAL R6 K17       ; R6 := gGameRules
+ 52 [-]: SELF      R6 R6 K20    ; R7 := R6; R6 := R6["0xB8637349"]
+ 53 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 54 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["levelKeyName"]
+ 55 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 56 [-]: TEST      R5 1         ; if R5 then PC := 70
+ 57 [-]: JMP       70           ; PC := 70
+ 58 [-]: GETGLOBAL R5 K22       ; R5 := 0xEC274B1A
+ 59 [-]: GETGLOBAL R6 K17       ; R6 := gGameRules
+ 60 [-]: SELF      R6 R6 K20    ; R7 := R6; R6 := R6["0xB8637349"]
+ 61 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 62 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["levelKeyName"]
+ 63 [-]: SELF      R6 R6 K23    ; R7 := R6; R6 := R6["0x1B252E3C"]
+ 64 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
+ 65 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+ 66 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 67 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["SCENARIO_EVENT_SPACE_TAG"]
+ 68 [-]: EQ        1 R5 R6      ; if R5 == R6 then PC := 71
+ 69 [-]: JMP       71           ; PC := 71
+ 70 [-]: MOVE      R5 R0        ; R5 := R0
+ 71 [-]: MOVE      R5 R1        ; R5 := R1
+ 72 [-]: TEST      R5 0         ; if not R5 then PC := 90
+ 73 [-]: JMP       90           ; PC := 90
+ 74 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 75 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["SQUAD_LINK_EVENT"]
+ 76 [-]: EQ        0 R3 R6      ; if R3 ~= R6 then PC := 88
+ 77 [-]: JMP       88           ; PC := 88
+ 78 [-]: GETGLOBAL R6 K26       ; R6 := _G
+ 79 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["CachedGoalInfo"]
+ 80 [-]: GETTABLE  R6 R6 R1     ; R6 := R6[R1]
+ 81 [-]: TEST      R6 1         ; if R6 then PC := 86
+ 82 [-]: JMP       86           ; PC := 86
+ 83 [-]: GETUPVAL  R6 U3        ; R6 := U3
+ 84 [-]: TEST      R6 0         ; if not R6 then PC := 88
+ 85 [-]: JMP       88           ; PC := 88
+ 86 [-]: MOVE      R4 R1        ; R4 := R1
+ 87 [-]: JMP       90           ; PC := 90
+ 88 [-]: MOVE      R6 R0        ; R6 := R0
+ 89 [-]: RETURN    R6 2         ; return R6
+ 90 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 91 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["Active"]
+ 92 [-]: TEST      R6 1         ; if R6 then PC := 116
+ 93 [-]: JMP       116          ; PC := 116
+ 94 [-]: GETTABLE  R6 R0 K28    ; R6 := R0["mission"]
+ 95 [-]: GETTABLE  R6 R6 K29    ; R6 := R6["missionType"]
+ 96 [-]: GETGLOBAL R7 K1        ; R7 := Lotus_Game
+ 97 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["MT_RAILJACK"]
+ 98 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 116
+ 99 [-]: JMP       116          ; PC := 116
+100 [-]: GETUPVAL  R6 U2        ; R6 := U2
+101 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["SQUAD_LINK_EVENT"]
+102 [-]: EQ        0 R3 R6      ; if R3 ~= R6 then PC := 114
+103 [-]: JMP       114          ; PC := 114
+104 [-]: GETGLOBAL R6 K26       ; R6 := _G
+105 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["CachedGoalInfo"]
+106 [-]: GETTABLE  R6 R6 R1     ; R6 := R6[R1]
+107 [-]: TEST      R6 1         ; if R6 then PC := 112
+108 [-]: JMP       112          ; PC := 112
+109 [-]: GETUPVAL  R6 U3        ; R6 := U3
+110 [-]: TEST      R6 0         ; if not R6 then PC := 114
+111 [-]: JMP       114          ; PC := 114
+112 [-]: MOVE      R4 R1        ; R4 := R1
+113 [-]: JMP       116          ; PC := 116
+114 [-]: MOVE      R6 R0        ; R6 := R0
+115 [-]: RETURN    R6 2         ; return R6
+116 [-]: GETUPVAL  R6 U0        ; R6 := U0
+117 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["Active"]
+118 [-]: TEST      R6 0         ; if not R6 then PC := 137
+119 [-]: JMP       137          ; PC := 137
+120 [-]: GETGLOBAL R6 K17       ; R6 := gGameRules
+121 [-]: SELF      R6 R6 K18    ; R7 := R6; R6 := R6["0x8B598ED4"]
+122 [-]: GETGLOBAL R8 K31       ; R8 := gLotusHubGameRulesType
+123 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+124 [-]: TEST      R6 0         ; if not R6 then PC := 137
+125 [-]: JMP       137          ; PC := 137
+126 [-]: GETGLOBAL R6 K7        ; R6 := string
+127 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["0xDE44F664"]
+128 [-]: GETGLOBAL R7 K5        ; R7 := 0x9FAED6BC
+129 [-]: GETTABLE  R8 R0 K6     ; R8 := R0["name"]
+130 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+131 [-]: LOADK     R8 K9        ; R8 := "Dojo"
+132 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+133 [-]: EQ        1 R6 K10     ; if R6 == nil then PC := 137
+134 [-]: JMP       137          ; PC := 137
+135 [-]: MOVE      R6 R0        ; R6 := R0
+136 [-]: RETURN    R6 2         ; return R6
+137 [-]: GETUPVAL  R6 U0        ; R6 := U0
+138 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["Active"]
+139 [-]: TEST      R6 0         ; if not R6 then PC := 167
+140 [-]: JMP       167          ; PC := 167
+141 [-]: TEST      R2 1         ; if R2 then PC := 167
+142 [-]: JMP       167          ; PC := 167
+143 [-]: TEST      R4 1         ; if R4 then PC := 167
+144 [-]: JMP       167          ; PC := 167
+145 [-]: GETTABLE  R6 R0 K28    ; R6 := R0["mission"]
+146 [-]: GETTABLE  R6 R6 K29    ; R6 := R6["missionType"]
+147 [-]: GETGLOBAL R7 K1        ; R7 := Lotus_Game
+148 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["MT_RAILJACK"]
+149 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 165
+150 [-]: JMP       165          ; PC := 165
+151 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["nodeType"]
+152 [-]: GETGLOBAL R7 K1        ; R7 := Lotus_Game
+153 [-]: GETTABLE  R7 R7 K32    ; R7 := R7["NT_SHORTCUT"]
+154 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 165
+155 [-]: JMP       165          ; PC := 165
+156 [-]: GETUPVAL  R6 U3        ; R6 := U3
+157 [-]: TEST      R6 1         ; if R6 then PC := 167
+158 [-]: JMP       167          ; PC := 167
+159 [-]: GETTABLE  R6 R0 K28    ; R6 := R0["mission"]
+160 [-]: GETTABLE  R6 R6 K33    ; R6 := R6["faction"]
+161 [-]: GETGLOBAL R7 K1        ; R7 := Lotus_Game
+162 [-]: GETTABLE  R7 R7 K34    ; R7 := R7["FC_CORPUS"]
+163 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 167
+164 [-]: JMP       167          ; PC := 167
+165 [-]: MOVE      R6 R0        ; R6 := R0
+166 [-]: RETURN    R6 2         ; return R6
+167 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["nodeType"]
+168 [-]: GETGLOBAL R7 K1        ; R7 := Lotus_Game
+169 [-]: GETTABLE  R7 R7 K35    ; R7 := R7["NT_EVENT"]
+170 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 191
+171 [-]: JMP       191          ; PC := 191
+172 [-]: GETGLOBAL R6 K26       ; R6 := _G
+173 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["CachedGoalInfo"]
+174 [-]: GETTABLE  R6 R6 R1     ; R6 := R6[R1]
+175 [-]: TEST      R6 1         ; if R6 then PC := 191
+176 [-]: JMP       191          ; PC := 191
+177 [-]: GETGLOBAL R6 K36       ; R6 := _T
+178 [-]: GETTABLE  R6 R6 K37    ; R6 := R6["WorldStateDerelictNodes"]
+179 [-]: TEST      R6 0         ; if not R6 then PC := 189
+180 [-]: JMP       189          ; PC := 189
+181 [-]: GETGLOBAL R6 K36       ; R6 := _T
+182 [-]: GETTABLE  R6 R6 K37    ; R6 := R6["WorldStateDerelictNodes"]
+183 [-]: GETGLOBAL R7 K5        ; R7 := 0x9FAED6BC
+184 [-]: GETTABLE  R8 R0 K6     ; R8 := R0["name"]
+185 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+186 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
+187 [-]: TEST      R6 1         ; if R6 then PC := 191
+188 [-]: JMP       191          ; PC := 191
+189 [-]: MOVE      R6 R0        ; R6 := R0
+190 [-]: RETURN    R6 2         ; return R6
+191 [-]: GETTABLE  R6 R0 K38    ; R6 := R0["region"]
+192 [-]: ADD       R6 R6 K39    ; R6 := R6 + 1
+193 [-]: GETGLOBAL R7 K36       ; R7 := _T
+194 [-]: GETTABLE  R7 R7 K40    ; R7 := R7["REGION_ID_MOON"]
+195 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 207
+196 [-]: JMP       207          ; PC := 207
+197 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["nodeType"]
+198 [-]: GETGLOBAL R7 K1        ; R7 := Lotus_Game
+199 [-]: GETTABLE  R7 R7 K32    ; R7 := R7["NT_SHORTCUT"]
+200 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 215
+201 [-]: JMP       215          ; PC := 215
+202 [-]: GETTABLE  R6 R0 K6     ; R6 := R0["name"]
+203 [-]: GETUPVAL  R7 U2        ; R7 := U2
+204 [-]: GETTABLE  R7 R7 K41    ; R7 := R7["MOON_SHORTCUT_TAG"]
+205 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 215
+206 [-]: JMP       215          ; PC := 215
+207 [-]: GETUPVAL  R6 U4        ; R6 := U4
+208 [-]: GETGLOBAL R7 K36       ; R7 := _T
+209 [-]: GETTABLE  R7 R7 K40    ; R7 := R7["REGION_ID_MOON"]
+210 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
+211 [-]: EQ        0 R6 K42     ; if R6 ~= "0x1" then PC := 215
+212 [-]: JMP       215          ; PC := 215
+213 [-]: MOVE      R6 R0        ; R6 := R0
+214 [-]: RETURN    R6 2         ; return R6
+215 [-]: GETTABLE  R6 R0 K38    ; R6 := R0["region"]
+216 [-]: ADD       R6 R6 K39    ; R6 := R6 + 1
+217 [-]: GETGLOBAL R7 K36       ; R7 := _T
+218 [-]: GETTABLE  R7 R7 K43    ; R7 := R7["REGION_ID_FORTRESS"]
+219 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 229
+220 [-]: JMP       229          ; PC := 229
+221 [-]: GETUPVAL  R6 U4        ; R6 := U4
+222 [-]: GETGLOBAL R7 K36       ; R7 := _T
+223 [-]: GETTABLE  R7 R7 K43    ; R7 := R7["REGION_ID_FORTRESS"]
+224 [-]: GETTABLE  R6 R6 R7     ; R6 := R6[R7]
+225 [-]: EQ        0 R6 K42     ; if R6 ~= "0x1" then PC := 229
+226 [-]: JMP       229          ; PC := 229
+227 [-]: MOVE      R6 R0        ; R6 := R0
+228 [-]: RETURN    R6 2         ; return R6
+229 [-]: GETGLOBAL R6 K26       ; R6 := _G
+230 [-]: GETTABLE  R6 R6 K44    ; R6 := R6["StarChartHiddenEventNode"]
+231 [-]: EQ        0 R1 R6      ; if R1 ~= R6 then PC := 235
+232 [-]: JMP       235          ; PC := 235
+233 [-]: MOVE      R6 R0        ; R6 := R0
+234 [-]: RETURN    R6 2         ; return R6
+235 [-]: GETUPVAL  R6 U2        ; R6 := U2
+236 [-]: GETTABLE  R6 R6 K45    ; R6 := R6["TENNOCON_RELAY"]
+237 [-]: EQ        0 R3 R6      ; if R3 ~= R6 then PC := 257
+238 [-]: JMP       257          ; PC := 257
+239 [-]: GETGLOBAL R6 K26       ; R6 := _G
+240 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["CachedGoalInfo"]
+241 [-]: GETTABLE  R6 R6 R1     ; R6 := R6[R1]
+242 [-]: TEST      R6 0         ; if not R6 then PC := 255
+243 [-]: JMP       255          ; PC := 255
+244 [-]: GETGLOBAL R6 K15       ; R6 := 0x400E7765
+245 [-]: GETGLOBAL R7 K46       ; R7 := gGameData
+246 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+247 [-]: TEST      R6 1         ; if R6 then PC := 257
+248 [-]: JMP       257          ; PC := 257
+249 [-]: GETUPVAL  R6 U5        ; R6 := U5
+250 [-]: GETTABLE  R6 R6 K47    ; R6 := R6["0x8D79D162"]
+251 [-]: GETGLOBAL R7 K46       ; R7 := gGameData
+252 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+253 [-]: TEST      R6 1         ; if R6 then PC := 257
+254 [-]: JMP       257          ; PC := 257
+255 [-]: MOVE      R6 R0        ; R6 := R0
+256 [-]: RETURN    R6 2         ; return R6
+257 [-]: GETTABLE  R6 R0 K38    ; R6 := R0["region"]
+258 [-]: ADD       R6 R6 K39    ; R6 := R6 + 1
+259 [-]: GETGLOBAL R7 K36       ; R7 := _T
+260 [-]: GETTABLE  R7 R7 K48    ; R7 := R7["REGION_ID_DARK_SECTOR"]
+261 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 265
+262 [-]: JMP       265          ; PC := 265
+263 [-]: MOVE      R6 R0        ; R6 := R0
+264 [-]: RETURN    R6 2         ; return R6
+265 [-]: GETUPVAL  R6 U3        ; R6 := U3
+266 [-]: TEST      R6 1         ; if R6 then PC := 279
+267 [-]: JMP       279          ; PC := 279
+268 [-]: GETUPVAL  R6 U2        ; R6 := U2
+269 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["SQUAD_LINK_EVENT"]
+270 [-]: EQ        0 R3 R6      ; if R3 ~= R6 then PC := 279
+271 [-]: JMP       279          ; PC := 279
+272 [-]: GETGLOBAL R6 K26       ; R6 := _G
+273 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["CachedGoalInfo"]
+274 [-]: GETTABLE  R6 R6 R1     ; R6 := R6[R1]
+275 [-]: TEST      R6 1         ; if R6 then PC := 279
+276 [-]: JMP       279          ; PC := 279
+277 [-]: MOVE      R6 R0        ; R6 := R0
+278 [-]: RETURN    R6 2         ; return R6
+279 [-]: MOVE      R6 R1        ; R6 := R1
+280 [-]: RETURN    R6 2         ; return R6
+281 [-]: RETURN    R0 1         ; return 
+
+
+; Function #53:
+;
+; Name:            
+; Defined at line: 1990
+; #Upvalues:       14
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  42
+; Max Stack Size:  39
 
   1 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 5
   2 [-]: JMP       5            ; PC := 5
   3 [-]: NEWTABLE  R2 0 0       ; R2 := {}
   4 [-]: MOVE      R1 R2        ; R1 := R2
-  5 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["nodeType"]
-  6 [-]: GETGLOBAL R3 K2        ; R3 := Lotus_Game
-  7 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["NT_PVP"]
-  8 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 11
+  5 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  6 [-]: MOVE      R3 R0        ; R3 := R0
+  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  8 [-]: TEST      R2 1         ; if R2 then PC := 11
   9 [-]: JMP       11           ; PC := 11
  10 [-]: RETURN    R0 1         ; return 
- 11 [-]: GETTABLE  R2 R0 K4     ; R2 := R0["locTag"]
- 12 [-]: GETGLOBAL R3 K5        ; R3 := EMPTY_SYMBOL
- 13 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 16
- 14 [-]: JMP       16           ; PC := 16
- 15 [-]: RETURN    R0 1         ; return 
- 16 [-]: GETGLOBAL R2 K6        ; R2 := 0x9FAED6BC
- 17 [-]: GETTABLE  R3 R0 K7     ; R3 := R0["name"]
- 18 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 19 [-]: GETGLOBAL R3 K8        ; R3 := string
- 20 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0xDE44F664"]
- 21 [-]: MOVE      R4 R2        ; R4 := R2
- 22 [-]: LOADK     R5 K10       ; R5 := "Dojo"
- 23 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 24 [-]: EQ        0 R3 K0      ; if R3 ~= nil then PC := 27
- 25 [-]: JMP       27           ; PC := 27
- 26 [-]: MOVE      R3 R0        ; R3 := R0
- 27 [-]: MOVE      R3 R1        ; R3 := R1
- 28 [-]: GETTABLE  R4 R0 K11    ; R4 := R0["missionTag"]
- 29 [-]: LOADNIL   R5 R5        ; R5 := nil
- 30 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 31 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["Active"]
- 32 [-]: TEST      R6 0         ; if not R6 then PC := 54
- 33 [-]: JMP       54           ; PC := 54
- 34 [-]: GETGLOBAL R6 K13       ; R6 := gMatchingService
- 35 [-]: SELF      R6 R6 K14    ; R7 := R6; R6 := R6["0xA99F3BEF"]
- 36 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 37 [-]: TEST      R6 0         ; if not R6 then PC := 54
- 38 [-]: JMP       54           ; PC := 54
- 39 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 40 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["SQUAD_LINK_EVENT"]
- 41 [-]: EQ        0 R4 R6      ; if R4 ~= R6 then PC := 53
- 42 [-]: JMP       53           ; PC := 53
- 43 [-]: GETGLOBAL R6 K16       ; R6 := _G
- 44 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["CachedGoalInfo"]
- 45 [-]: GETTABLE  R6 R6 R2     ; R6 := R6[R2]
- 46 [-]: TEST      R6 1         ; if R6 then PC := 51
- 47 [-]: JMP       51           ; PC := 51
- 48 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 49 [-]: TEST      R6 0         ; if not R6 then PC := 53
- 50 [-]: JMP       53           ; PC := 53
- 51 [-]: MOVE      R5 R1        ; R5 := R1
- 52 [-]: JMP       54           ; PC := 54
- 53 [-]: RETURN    R0 1         ; return 
- 54 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 55 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["Active"]
- 56 [-]: TEST      R6 1         ; if R6 then PC := 79
- 57 [-]: JMP       79           ; PC := 79
- 58 [-]: GETTABLE  R6 R0 K18    ; R6 := R0["mission"]
- 59 [-]: GETTABLE  R6 R6 K19    ; R6 := R6["missionType"]
- 60 [-]: GETGLOBAL R7 K2        ; R7 := Lotus_Game
- 61 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["MT_RAILJACK"]
- 62 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 79
- 63 [-]: JMP       79           ; PC := 79
- 64 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 65 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["SQUAD_LINK_EVENT"]
- 66 [-]: EQ        0 R4 R6      ; if R4 ~= R6 then PC := 78
- 67 [-]: JMP       78           ; PC := 78
- 68 [-]: GETGLOBAL R6 K16       ; R6 := _G
- 69 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["CachedGoalInfo"]
- 70 [-]: GETTABLE  R6 R6 R2     ; R6 := R6[R2]
- 71 [-]: TEST      R6 1         ; if R6 then PC := 76
- 72 [-]: JMP       76           ; PC := 76
- 73 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 74 [-]: TEST      R6 0         ; if not R6 then PC := 78
- 75 [-]: JMP       78           ; PC := 78
- 76 [-]: MOVE      R5 R1        ; R5 := R1
- 77 [-]: JMP       79           ; PC := 79
- 78 [-]: RETURN    R0 1         ; return 
- 79 [-]: GETGLOBAL R6 K21       ; R6 := gGameRules
- 80 [-]: SELF      R6 R6 K22    ; R7 := R6; R6 := R6["0x8B598ED4"]
- 81 [-]: GETGLOBAL R8 K23       ; R8 := gLotusHubGameRulesType
- 82 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 83 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 84 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["Active"]
- 85 [-]: TEST      R7 0         ; if not R7 then PC := 92
- 86 [-]: JMP       92           ; PC := 92
- 87 [-]: TEST      R6 0         ; if not R6 then PC := 92
- 88 [-]: JMP       92           ; PC := 92
- 89 [-]: TEST      R3 0         ; if not R3 then PC := 92
- 90 [-]: JMP       92           ; PC := 92
- 91 [-]: RETURN    R0 1         ; return 
- 92 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 93 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["Active"]
- 94 [-]: TEST      R7 0         ; if not R7 then PC := 112
- 95 [-]: JMP       112          ; PC := 112
- 96 [-]: TEST      R3 1         ; if R3 then PC := 112
- 97 [-]: JMP       112          ; PC := 112
- 98 [-]: TEST      R5 1         ; if R5 then PC := 112
- 99 [-]: JMP       112          ; PC := 112
-100 [-]: GETTABLE  R7 R0 K18    ; R7 := R0["mission"]
-101 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["missionType"]
-102 [-]: GETGLOBAL R8 K2        ; R8 := Lotus_Game
-103 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["MT_RAILJACK"]
-104 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 111
-105 [-]: JMP       111          ; PC := 111
-106 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["nodeType"]
-107 [-]: GETGLOBAL R8 K2        ; R8 := Lotus_Game
-108 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["NT_SHORTCUT"]
-109 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 112
-110 [-]: JMP       112          ; PC := 112
-111 [-]: RETURN    R0 1         ; return 
-112 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["nodeType"]
-113 [-]: GETGLOBAL R8 K2        ; R8 := Lotus_Game
-114 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["NT_EVENT"]
-115 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 135
-116 [-]: JMP       135          ; PC := 135
-117 [-]: GETGLOBAL R7 K16       ; R7 := _G
-118 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["CachedGoalInfo"]
-119 [-]: GETTABLE  R7 R7 R2     ; R7 := R7[R2]
-120 [-]: TEST      R7 1         ; if R7 then PC := 135
-121 [-]: JMP       135          ; PC := 135
-122 [-]: GETGLOBAL R7 K26       ; R7 := _T
-123 [-]: GETTABLE  R7 R7 K27    ; R7 := R7["WorldStateDerelictNodes"]
-124 [-]: TEST      R7 0         ; if not R7 then PC := 134
-125 [-]: JMP       134          ; PC := 134
-126 [-]: GETGLOBAL R7 K26       ; R7 := _T
-127 [-]: GETTABLE  R7 R7 K27    ; R7 := R7["WorldStateDerelictNodes"]
-128 [-]: GETGLOBAL R8 K6        ; R8 := 0x9FAED6BC
-129 [-]: GETTABLE  R9 R0 K7     ; R9 := R0["name"]
-130 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-131 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
-132 [-]: TEST      R7 1         ; if R7 then PC := 135
-133 [-]: JMP       135          ; PC := 135
-134 [-]: RETURN    R0 1         ; return 
-135 [-]: GETTABLE  R7 R0 K28    ; R7 := R0["region"]
-136 [-]: ADD       R7 R7 K29    ; R7 := R7 + 1
-137 [-]: GETGLOBAL R8 K26       ; R8 := _T
-138 [-]: GETTABLE  R8 R8 K30    ; R8 := R8["REGION_ID_MOON"]
-139 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 151
-140 [-]: JMP       151          ; PC := 151
-141 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["nodeType"]
-142 [-]: GETGLOBAL R8 K2        ; R8 := Lotus_Game
-143 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["NT_SHORTCUT"]
-144 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 158
-145 [-]: JMP       158          ; PC := 158
-146 [-]: GETTABLE  R7 R0 K7     ; R7 := R0["name"]
-147 [-]: GETUPVAL  R8 U1        ; R8 := U1
-148 [-]: GETTABLE  R8 R8 K31    ; R8 := R8["MOON_SHORTCUT_TAG"]
-149 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 158
-150 [-]: JMP       158          ; PC := 158
-151 [-]: GETUPVAL  R7 U3        ; R7 := U3
-152 [-]: GETGLOBAL R8 K26       ; R8 := _T
-153 [-]: GETTABLE  R8 R8 K30    ; R8 := R8["REGION_ID_MOON"]
-154 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
-155 [-]: EQ        0 R7 K32     ; if R7 ~= "0x1" then PC := 158
-156 [-]: JMP       158          ; PC := 158
-157 [-]: RETURN    R0 1         ; return 
-158 [-]: GETTABLE  R7 R0 K28    ; R7 := R0["region"]
-159 [-]: ADD       R7 R7 K29    ; R7 := R7 + 1
-160 [-]: GETGLOBAL R8 K26       ; R8 := _T
-161 [-]: GETTABLE  R8 R8 K33    ; R8 := R8["REGION_ID_FORTRESS"]
-162 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 171
-163 [-]: JMP       171          ; PC := 171
-164 [-]: GETUPVAL  R7 U3        ; R7 := U3
-165 [-]: GETGLOBAL R8 K26       ; R8 := _T
-166 [-]: GETTABLE  R8 R8 K33    ; R8 := R8["REGION_ID_FORTRESS"]
-167 [-]: GETTABLE  R7 R7 R8     ; R7 := R7[R8]
-168 [-]: EQ        0 R7 K32     ; if R7 ~= "0x1" then PC := 171
-169 [-]: JMP       171          ; PC := 171
-170 [-]: RETURN    R0 1         ; return 
-171 [-]: GETGLOBAL R7 K16       ; R7 := _G
-172 [-]: GETTABLE  R7 R7 K34    ; R7 := R7["StarChartHiddenEventNode"]
-173 [-]: EQ        0 R2 R7      ; if R2 ~= R7 then PC := 176
-174 [-]: JMP       176          ; PC := 176
+ 11 [-]: MOVE      R2 R0        ; R2 := R0
+ 12 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 13 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mission"]
+ 14 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["questReq"]
+ 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 16 [-]: TEST      R3 1         ; if R3 then PC := 108
+ 17 [-]: JMP       108          ; PC := 108
+ 18 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 19 [-]: GETGLOBAL R4 K4        ; R4 := gGameData
+ 20 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 21 [-]: TEST      R3 1         ; if R3 then PC := 108
+ 22 [-]: JMP       108          ; PC := 108
+ 23 [-]: GETGLOBAL R3 K4        ; R3 := gGameData
+ 24 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0x6F2E05FD"]
+ 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 26 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x52C8784B"]
+ 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 28 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mission"]
+ 29 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["questReq"]
+ 30 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 108
+ 31 [-]: JMP       108          ; PC := 108
+ 32 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 33 [-]: TEST      R3 1         ; if R3 then PC := 108
+ 34 [-]: JMP       108          ; PC := 108
+ 35 [-]: GETTABLE  R3 R0 K7     ; R3 := R0["name"]
+ 36 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 37 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["CETUS_NODE_TAG"]
+ 38 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 47
+ 39 [-]: JMP       47           ; PC := 47
+ 40 [-]: GETUPVAL  R3 U2        ; R3 := U2
+ 41 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0x2AAC7A8C"]
+ 42 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mission"]
+ 43 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["questReq"]
+ 44 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 45 [-]: MOVE      R2 R3        ; R2 := R3
+ 46 [-]: JMP       108          ; PC := 108
+ 47 [-]: GETTABLE  R3 R0 K7     ; R3 := R0["name"]
+ 48 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 49 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["PLAINS_NODE_TAG"]
+ 50 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 64
+ 51 [-]: JMP       64           ; PC := 64
+ 52 [-]: GETGLOBAL R3 K11       ; R3 := gPlayerProfileMgr
+ 53 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3["0x21EF7B1A"]
+ 54 [-]: LOADK     R5 K13       ; R5 := 0
+ 55 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 56 [-]: SELF      R3 R3 K14    ; R4 := R3; R3 := R3["0x654F1092"]
+ 57 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 58 [-]: SELF      R3 R3 K15    ; R4 := R3; R3 := R3["0x8572D26E"]
+ 59 [-]: GETUPVAL  R5 U2        ; R5 := U2
+ 60 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["PLAINS_NODE_TAG"]
+ 61 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 62 [-]: MOVE      R2 R3        ; R2 := R3
+ 63 [-]: JMP       108          ; PC := 108
+ 64 [-]: GETTABLE  R3 R0 K7     ; R3 := R0["name"]
+ 65 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 66 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["ORB_VALLIS_NODE_TAG"]
+ 67 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 75
+ 68 [-]: JMP       75           ; PC := 75
+ 69 [-]: GETUPVAL  R3 U2        ; R3 := U2
+ 70 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0x2AAC7A8C"]
+ 71 [-]: GETUPVAL  R4 U3        ; R4 := U3
+ 72 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 73 [-]: MOVE      R2 R3        ; R2 := R3
+ 74 [-]: JMP       108          ; PC := 108
+ 75 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mission"]
+ 76 [-]: GETTABLE  R3 R3 K17    ; R3 := R3["missionType"]
+ 77 [-]: GETGLOBAL R4 K18       ; R4 := Lotus_Game
+ 78 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["MT_ARTIFACT"]
+ 79 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 87
+ 80 [-]: JMP       87           ; PC := 87
+ 81 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mission"]
+ 82 [-]: GETTABLE  R3 R3 K17    ; R3 := R3["missionType"]
+ 83 [-]: GETGLOBAL R4 K18       ; R4 := Lotus_Game
+ 84 [-]: GETTABLE  R4 R4 K20    ; R4 := R4["MT_ASSASSINATION"]
+ 85 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 100
+ 86 [-]: JMP       100          ; PC := 100
+ 87 [-]: GETUPVAL  R3 U2        ; R3 := U2
+ 88 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0x2AAC7A8C"]
+ 89 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mission"]
+ 90 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["questReq"]
+ 91 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 92 [-]: TEST      R3 1         ; if R3 then PC := 97
+ 93 [-]: JMP       97           ; PC := 97
+ 94 [-]: GETTABLE  R3 R0 K21    ; R3 := R0["unlocked"]
+ 95 [-]: MOVE      R2 R3        ; R2 := R3
+ 96 [-]: JMP       108          ; PC := 108
+ 97 [-]: MOVE      R2 R0        ; R2 := R0
+ 98 [-]: MOVE      R2 R1        ; R2 := R1
+ 99 [-]: JMP       108          ; PC := 108
+100 [-]: GETUPVAL  R3 U2        ; R3 := U2
+101 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0x2AAC7A8C"]
+102 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mission"]
+103 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["questReq"]
+104 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+105 [-]: TEST      R3 1         ; if R3 then PC := 108
+106 [-]: JMP       108          ; PC := 108
+107 [-]: RETURN    R0 1         ; return 
+108 [-]: MOVE      R3 R1        ; R3 := R1
+109 [-]: GETTABLE  R4 R0 K22    ; R4 := R0["missionTag"]
+110 [-]: GETUPVAL  R5 U4        ; R5 := U4
+111 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["DESTROYED_NODE_TAG"]
+112 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 117
+113 [-]: JMP       117          ; PC := 117
+114 [-]: GETGLOBAL R5 K25       ; R5 := destroyedNodeDeco
+115 [-]: SETTABLE  R0 K24 R5    ; R0["deco"] := R5
+116 [-]: MOVE      R3 R0        ; R3 := R0
+117 [-]: LOADNIL   R5 R5        ; R5 := nil
+118 [-]: GETUPVAL  R6 U4        ; R6 := U4
+119 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["RECONSTRUCTION_NODE_TAG"]
+120 [-]: EQ        1 R4 R6      ; if R4 == R6 then PC := 126
+121 [-]: JMP       126          ; PC := 126
+122 [-]: GETUPVAL  R6 U4        ; R6 := U4
+123 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["UNDER_CONSTRUCTION_NODE_TAG"]
+124 [-]: EQ        0 R4 R6      ; if R4 ~= R6 then PC := 197
+125 [-]: JMP       197          ; PC := 197
+126 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["name"]
+127 [-]: SELF      R6 R6 K28    ; R7 := R6; R6 := R6["0x5EC7A3D2"]
+128 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+129 [-]: GETGLOBAL R7 K29       ; R7 := string
+130 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["0xDE44F664"]
+131 [-]: MOVE      R8 R6        ; R8 := R6
+132 [-]: LOADK     R9 K31       ; R9 := "Rebuild"
+133 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+134 [-]: MOVE      R8 R6        ; R8 := R6
+135 [-]: TEST      R7 0         ; if not R7 then PC := 144
+136 [-]: JMP       144          ; PC := 144
+137 [-]: GETGLOBAL R9 K29       ; R9 := string
+138 [-]: GETTABLE  R9 R9 K32    ; R9 := R9["0x7B782033"]
+139 [-]: MOVE      R10 R6       ; R10 := R6
+140 [-]: LOADK     R11 K33      ; R11 := 1
+141 [-]: SUB       R12 R7 K33   ; R12 := R7 - 1
+142 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
+143 [-]: MOVE      R8 R9        ; R8 := R9
+144 [-]: GETUPVAL  R9 U5        ; R9 := U5
+145 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+146 [-]: MOVE      R10 R0       ; R10 := R0
+147 [-]: LOADNIL   R11 R11      ; R11 := nil
+148 [-]: TEST      R9 0         ; if not R9 then PC := 166
+149 [-]: JMP       166          ; PC := 166
+150 [-]: GETTABLE  R11 R9 K34   ; R11 := R9["info"]
+151 [-]: TEST      R11 0        ; if not R11 then PC := 166
+152 [-]: JMP       166          ; PC := 166
+153 [-]: GETTABLE  R12 R11 K35  ; R12 := R11["mActivation"]
+154 [-]: SELF      R12 R12 K36  ; R13 := R12; R12 := R12["0x315E860F"]
+155 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+156 [-]: TEST      R12 0        ; if not R12 then PC := 166
+157 [-]: JMP       166          ; PC := 166
+158 [-]: GETGLOBAL R12 K37      ; R12 := Engine
+159 [-]: GETTABLE  R12 R12 K38  ; R12 := R12["0xD09D7910"]
+160 [-]: GETTABLE  R13 R9 K34   ; R13 := R9["info"]
+161 [-]: GETTABLE  R13 R13 K35  ; R13 := R13["mActivation"]
+162 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+163 [-]: LE        0 R12 K13    ; if R12 > 0 then PC := 166
+164 [-]: JMP       166          ; PC := 166
+165 [-]: MOVE      R10 R1       ; R10 := R1
+166 [-]: TEST      R10 0        ; if not R10 then PC := 169
+167 [-]: JMP       169          ; PC := 169
+168 [-]: GETTABLE  R5 R9 K39    ; R5 := R9["progress"]
+169 [-]: TEST      R7 0         ; if not R7 then PC := 177
+170 [-]: JMP       177          ; PC := 177
+171 [-]: TEST      R10 0        ; if not R10 then PC := 175
+172 [-]: JMP       175          ; PC := 175
+173 [-]: EQ        1 R5 K13     ; if R5 == 0 then PC := 197
+174 [-]: JMP       197          ; PC := 197
 175 [-]: RETURN    R0 1         ; return 
-176 [-]: GETUPVAL  R7 U1        ; R7 := U1
-177 [-]: GETTABLE  R7 R7 K35    ; R7 := R7["TENNOCON_RELAY"]
-178 [-]: EQ        0 R4 R7      ; if R4 ~= R7 then PC := 197
-179 [-]: JMP       197          ; PC := 197
-180 [-]: GETGLOBAL R7 K16       ; R7 := _G
-181 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["CachedGoalInfo"]
-182 [-]: GETTABLE  R7 R7 R2     ; R7 := R7[R2]
-183 [-]: TEST      R7 0         ; if not R7 then PC := 196
-184 [-]: JMP       196          ; PC := 196
-185 [-]: GETGLOBAL R7 K36       ; R7 := 0x400E7765
-186 [-]: GETGLOBAL R8 K37       ; R8 := gGameData
-187 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-188 [-]: TEST      R7 1         ; if R7 then PC := 197
-189 [-]: JMP       197          ; PC := 197
-190 [-]: GETUPVAL  R7 U4        ; R7 := U4
-191 [-]: GETTABLE  R7 R7 K38    ; R7 := R7["0x8D79D162"]
-192 [-]: GETGLOBAL R8 K37       ; R8 := gGameData
-193 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-194 [-]: TEST      R7 1         ; if R7 then PC := 197
-195 [-]: JMP       197          ; PC := 197
-196 [-]: RETURN    R0 1         ; return 
-197 [-]: GETTABLE  R7 R0 K28    ; R7 := R0["region"]
-198 [-]: ADD       R7 R7 K29    ; R7 := R7 + 1
-199 [-]: GETGLOBAL R8 K26       ; R8 := _T
-200 [-]: GETTABLE  R8 R8 K39    ; R8 := R8["REGION_ID_DARK_SECTOR"]
-201 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 204
-202 [-]: JMP       204          ; PC := 204
-203 [-]: RETURN    R0 1         ; return 
-204 [-]: GETUPVAL  R7 U2        ; R7 := U2
-205 [-]: TEST      R7 1         ; if R7 then PC := 217
-206 [-]: JMP       217          ; PC := 217
-207 [-]: GETUPVAL  R7 U1        ; R7 := U1
-208 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["SQUAD_LINK_EVENT"]
-209 [-]: EQ        0 R4 R7      ; if R4 ~= R7 then PC := 217
-210 [-]: JMP       217          ; PC := 217
-211 [-]: GETGLOBAL R7 K16       ; R7 := _G
-212 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["CachedGoalInfo"]
-213 [-]: GETTABLE  R7 R7 R2     ; R7 := R7[R2]
-214 [-]: TEST      R7 1         ; if R7 then PC := 217
-215 [-]: JMP       217          ; PC := 217
-216 [-]: RETURN    R0 1         ; return 
-217 [-]: MOVE      R7 R0        ; R7 := R0
-218 [-]: GETGLOBAL R8 K36       ; R8 := 0x400E7765
-219 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["mission"]
-220 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["questReq"]
-221 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-222 [-]: TEST      R8 1         ; if R8 then PC := 314
-223 [-]: JMP       314          ; PC := 314
-224 [-]: GETGLOBAL R8 K36       ; R8 := 0x400E7765
-225 [-]: GETGLOBAL R9 K37       ; R9 := gGameData
-226 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-227 [-]: TEST      R8 1         ; if R8 then PC := 314
-228 [-]: JMP       314          ; PC := 314
-229 [-]: GETGLOBAL R8 K37       ; R8 := gGameData
-230 [-]: SELF      R8 R8 K41    ; R9 := R8; R8 := R8["0x6F2E05FD"]
-231 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-232 [-]: SELF      R8 R8 K42    ; R9 := R8; R8 := R8["0x52C8784B"]
-233 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-234 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["mission"]
-235 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["questReq"]
-236 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 314
-237 [-]: JMP       314          ; PC := 314
-238 [-]: GETUPVAL  R8 U5        ; R8 := U5
-239 [-]: TEST      R8 1         ; if R8 then PC := 314
-240 [-]: JMP       314          ; PC := 314
-241 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["name"]
-242 [-]: GETUPVAL  R9 U6        ; R9 := U6
-243 [-]: GETTABLE  R9 R9 K43    ; R9 := R9["CETUS_NODE_TAG"]
-244 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 253
-245 [-]: JMP       253          ; PC := 253
-246 [-]: GETUPVAL  R8 U6        ; R8 := U6
-247 [-]: GETTABLE  R8 R8 K44    ; R8 := R8["0x2AAC7A8C"]
-248 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["mission"]
-249 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["questReq"]
-250 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-251 [-]: MOVE      R7 R8        ; R7 := R8
-252 [-]: JMP       314          ; PC := 314
-253 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["name"]
-254 [-]: GETUPVAL  R9 U6        ; R9 := U6
-255 [-]: GETTABLE  R9 R9 K45    ; R9 := R9["PLAINS_NODE_TAG"]
-256 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 270
-257 [-]: JMP       270          ; PC := 270
-258 [-]: GETGLOBAL R8 K46       ; R8 := gPlayerProfileMgr
-259 [-]: SELF      R8 R8 K47    ; R9 := R8; R8 := R8["0x21EF7B1A"]
-260 [-]: LOADK     R10 K48      ; R10 := 0
-261 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-262 [-]: SELF      R8 R8 K49    ; R9 := R8; R8 := R8["0x654F1092"]
-263 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-264 [-]: SELF      R8 R8 K50    ; R9 := R8; R8 := R8["0x8572D26E"]
-265 [-]: GETUPVAL  R10 U6       ; R10 := U6
-266 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["PLAINS_NODE_TAG"]
-267 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-268 [-]: MOVE      R7 R8        ; R7 := R8
-269 [-]: JMP       314          ; PC := 314
-270 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["name"]
-271 [-]: GETUPVAL  R9 U6        ; R9 := U6
-272 [-]: GETTABLE  R9 R9 K51    ; R9 := R9["ORB_VALLIS_NODE_TAG"]
-273 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 281
-274 [-]: JMP       281          ; PC := 281
-275 [-]: GETUPVAL  R8 U6        ; R8 := U6
-276 [-]: GETTABLE  R8 R8 K44    ; R8 := R8["0x2AAC7A8C"]
-277 [-]: GETUPVAL  R9 U7        ; R9 := U7
-278 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-279 [-]: MOVE      R7 R8        ; R7 := R8
-280 [-]: JMP       314          ; PC := 314
-281 [-]: GETTABLE  R8 R0 K18    ; R8 := R0["mission"]
-282 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["missionType"]
-283 [-]: GETGLOBAL R9 K2        ; R9 := Lotus_Game
-284 [-]: GETTABLE  R9 R9 K52    ; R9 := R9["MT_ARTIFACT"]
-285 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 293
-286 [-]: JMP       293          ; PC := 293
-287 [-]: GETTABLE  R8 R0 K18    ; R8 := R0["mission"]
-288 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["missionType"]
-289 [-]: GETGLOBAL R9 K2        ; R9 := Lotus_Game
-290 [-]: GETTABLE  R9 R9 K53    ; R9 := R9["MT_ASSASSINATION"]
-291 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 306
-292 [-]: JMP       306          ; PC := 306
-293 [-]: GETUPVAL  R8 U6        ; R8 := U6
-294 [-]: GETTABLE  R8 R8 K44    ; R8 := R8["0x2AAC7A8C"]
-295 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["mission"]
-296 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["questReq"]
-297 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-298 [-]: TEST      R8 1         ; if R8 then PC := 303
-299 [-]: JMP       303          ; PC := 303
-300 [-]: GETTABLE  R8 R0 K54    ; R8 := R0["unlocked"]
-301 [-]: MOVE      R7 R8        ; R7 := R8
-302 [-]: JMP       314          ; PC := 314
-303 [-]: MOVE      R7 R0        ; R7 := R0
-304 [-]: MOVE      R7 R1        ; R7 := R1
-305 [-]: JMP       314          ; PC := 314
-306 [-]: GETUPVAL  R8 U6        ; R8 := U6
-307 [-]: GETTABLE  R8 R8 K44    ; R8 := R8["0x2AAC7A8C"]
-308 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["mission"]
-309 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["questReq"]
-310 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-311 [-]: TEST      R8 1         ; if R8 then PC := 314
-312 [-]: JMP       314          ; PC := 314
-313 [-]: RETURN    R0 1         ; return 
-314 [-]: MOVE      R8 R1        ; R8 := R1
-315 [-]: GETUPVAL  R9 U1        ; R9 := U1
-316 [-]: GETTABLE  R9 R9 K55    ; R9 := R9["DESTROYED_NODE_TAG"]
-317 [-]: EQ        0 R4 R9      ; if R4 ~= R9 then PC := 322
-318 [-]: JMP       322          ; PC := 322
-319 [-]: GETGLOBAL R9 K57       ; R9 := destroyedNodeDeco
-320 [-]: SETTABLE  R0 K56 R9    ; R0["deco"] := R9
-321 [-]: MOVE      R8 R0        ; R8 := R0
-322 [-]: LOADNIL   R9 R9        ; R9 := nil
-323 [-]: GETUPVAL  R10 U1       ; R10 := U1
-324 [-]: GETTABLE  R10 R10 K58  ; R10 := R10["RECONSTRUCTION_NODE_TAG"]
-325 [-]: EQ        1 R4 R10     ; if R4 == R10 then PC := 331
-326 [-]: JMP       331          ; PC := 331
-327 [-]: GETUPVAL  R10 U1       ; R10 := U1
-328 [-]: GETTABLE  R10 R10 K59  ; R10 := R10["UNDER_CONSTRUCTION_NODE_TAG"]
-329 [-]: EQ        0 R4 R10     ; if R4 ~= R10 then PC := 402
-330 [-]: JMP       402          ; PC := 402
-331 [-]: GETTABLE  R10 R0 K7    ; R10 := R0["name"]
-332 [-]: SELF      R10 R10 K60  ; R11 := R10; R10 := R10["0x5EC7A3D2"]
-333 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-334 [-]: GETGLOBAL R11 K8       ; R11 := string
-335 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0xDE44F664"]
-336 [-]: MOVE      R12 R10      ; R12 := R10
-337 [-]: LOADK     R13 K61      ; R13 := "Rebuild"
-338 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-339 [-]: MOVE      R12 R10      ; R12 := R10
-340 [-]: TEST      R11 0        ; if not R11 then PC := 349
-341 [-]: JMP       349          ; PC := 349
-342 [-]: GETGLOBAL R13 K8       ; R13 := string
-343 [-]: GETTABLE  R13 R13 K62  ; R13 := R13["0x7B782033"]
-344 [-]: MOVE      R14 R10      ; R14 := R10
-345 [-]: LOADK     R15 K29      ; R15 := 1
-346 [-]: SUB       R16 R11 K29  ; R16 := R11 - 1
-347 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-348 [-]: MOVE      R12 R13      ; R12 := R13
-349 [-]: GETUPVAL  R13 U8       ; R13 := U8
-350 [-]: GETTABLE  R13 R13 R12  ; R13 := R13[R12]
-351 [-]: MOVE      R14 R0       ; R14 := R0
-352 [-]: LOADNIL   R15 R15      ; R15 := nil
-353 [-]: TEST      R13 0        ; if not R13 then PC := 371
-354 [-]: JMP       371          ; PC := 371
-355 [-]: GETTABLE  R15 R13 K63  ; R15 := R13["info"]
-356 [-]: TEST      R15 0        ; if not R15 then PC := 371
-357 [-]: JMP       371          ; PC := 371
-358 [-]: GETTABLE  R16 R15 K64  ; R16 := R15["mActivation"]
-359 [-]: SELF      R16 R16 K65  ; R17 := R16; R16 := R16["0x315E860F"]
-360 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-361 [-]: TEST      R16 0        ; if not R16 then PC := 371
-362 [-]: JMP       371          ; PC := 371
-363 [-]: GETGLOBAL R16 K66      ; R16 := Engine
-364 [-]: GETTABLE  R16 R16 K67  ; R16 := R16["0xD09D7910"]
-365 [-]: GETTABLE  R17 R13 K63  ; R17 := R13["info"]
-366 [-]: GETTABLE  R17 R17 K64  ; R17 := R17["mActivation"]
-367 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-368 [-]: LE        0 R16 K48    ; if R16 > 0 then PC := 371
-369 [-]: JMP       371          ; PC := 371
-370 [-]: MOVE      R14 R1       ; R14 := R1
-371 [-]: TEST      R14 0        ; if not R14 then PC := 374
-372 [-]: JMP       374          ; PC := 374
-373 [-]: GETTABLE  R9 R13 K68   ; R9 := R13["progress"]
-374 [-]: TEST      R11 0        ; if not R11 then PC := 382
-375 [-]: JMP       382          ; PC := 382
-376 [-]: TEST      R14 0        ; if not R14 then PC := 380
-377 [-]: JMP       380          ; PC := 380
-378 [-]: EQ        1 R9 K48     ; if R9 == 0 then PC := 402
-379 [-]: JMP       402          ; PC := 402
-380 [-]: RETURN    R0 1         ; return 
-381 [-]: JMP       402          ; PC := 402
-382 [-]: TEST      R14 1        ; if R14 then PC := 392
-383 [-]: JMP       392          ; PC := 392
-384 [-]: MOVE      R16 R1       ; R16 := R1
-385 [-]: TEST      R16 1        ; if R16 then PC := 402
-386 [-]: JMP       402          ; PC := 402
-387 [-]: MOVE      R8 R0        ; R8 := R0
-388 [-]: GETGLOBAL R17 K57      ; R17 := destroyedNodeDeco
-389 [-]: SETTABLE  R0 K56 R17   ; R0["deco"] := R17
-390 [-]: JMP       402          ; PC := 402
-391 [-]: JMP       402          ; PC := 402
-392 [-]: EQ        0 R9 K48     ; if R9 ~= 0 then PC := 396
-393 [-]: JMP       396          ; PC := 396
-394 [-]: RETURN    R0 1         ; return 
-395 [-]: JMP       402          ; PC := 402
-396 [-]: EQ        0 R9 K29     ; if R9 ~= 1 then PC := 402
-397 [-]: JMP       402          ; PC := 402
-398 [-]: GETGLOBAL R17 K2       ; R17 := Lotus_Game
-399 [-]: GETTABLE  R17 R17 K69  ; R17 := R17["NT_MISSION"]
-400 [-]: SETTABLE  R0 K1 R17    ; R0["nodeType"] := R17
-401 [-]: JMP       402          ; PC := 402
-402 [-]: GETTABLE  R17 R0 K70   ; R17 := R0["pos"]
-403 [-]: LOADNIL   R18 R18      ; R18 := nil
-404 [-]: GETGLOBAL R19 K16      ; R19 := _G
-405 [-]: GETTABLE  R19 R19 K17  ; R19 := R19["CachedGoalInfo"]
-406 [-]: GETTABLE  R19 R19 R2   ; R19 := R19[R2]
-407 [-]: TEST      R19 0        ; if not R19 then PC := 531
-408 [-]: JMP       531          ; PC := 531
-409 [-]: GETGLOBAL R19 K16      ; R19 := _G
-410 [-]: GETTABLE  R19 R19 K17  ; R19 := R19["CachedGoalInfo"]
-411 [-]: GETTABLE  R19 R19 R2   ; R19 := R19[R2]
-412 [-]: GETTABLE  R19 R19 K71  ; R19 := R19["mFomorian"]
-413 [-]: TEST      R19 0        ; if not R19 then PC := 474
-414 [-]: JMP       474          ; PC := 474
-415 [-]: GETUPVAL  R19 U9       ; R19 := U9
-416 [-]: SELF      R19 R19 K72  ; R20 := R19; R19 := R19["0xDF213CE1"]
-417 [-]: GETGLOBAL R21 K16      ; R21 := _G
-418 [-]: GETTABLE  R21 R21 K17  ; R21 := R21["CachedGoalInfo"]
-419 [-]: GETTABLE  R21 R21 R2   ; R21 := R21[R2]
-420 [-]: GETTABLE  R21 R21 K73  ; R21 := R21["mVictimNode"]
-421 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
-422 [-]: GETTABLE  R20 R19 K70  ; R20 := R19["pos"]
-423 [-]: SUB       R20 R20 R17  ; R20 := R20 - R17
-424 [-]: MUL       R21 R20 K74  ; R21 := R20 * 0.80000001192093
-425 [-]: GETGLOBAL R22 K16      ; R22 := _G
-426 [-]: GETTABLE  R22 R22 K17  ; R22 := R22["CachedGoalInfo"]
-427 [-]: GETTABLE  R22 R22 R2   ; R22 := R22[R2]
-428 [-]: GETTABLE  R22 R22 K64  ; R22 := R22["mActivation"]
-429 [-]: SELF      R22 R22 K75  ; R23 := R22; R22 := R22["0x6F4BAEB9"]
-430 [-]: GETGLOBAL R24 K16      ; R24 := _G
-431 [-]: GETTABLE  R24 R24 K17  ; R24 := R24["CachedGoalInfo"]
-432 [-]: GETTABLE  R24 R24 R2   ; R24 := R24[R2]
-433 [-]: GETTABLE  R24 R24 K76  ; R24 := R24["mExpiry"]
-434 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-435 [-]: GETGLOBAL R23 K77      ; R23 := 0x6374FD98
-436 [-]: GETGLOBAL R24 K66      ; R24 := Engine
-437 [-]: GETTABLE  R24 R24 K67  ; R24 := R24["0xD09D7910"]
-438 [-]: GETGLOBAL R25 K16      ; R25 := _G
-439 [-]: GETTABLE  R25 R25 K17  ; R25 := R25["CachedGoalInfo"]
-440 [-]: GETTABLE  R25 R25 R2   ; R25 := R25[R2]
-441 [-]: GETTABLE  R25 R25 K76  ; R25 := R25["mExpiry"]
-442 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-443 [-]: LOADK     R25 K48      ; R25 := 0
-444 [-]: MOVE      R26 R22      ; R26 := R22
-445 [-]: CALL      R23 4 2      ; R23 := R23(R24,R25,R26)
-446 [-]: DIV       R24 R23 R22  ; R24 := R23 / R22
-447 [-]: SUB       R24 K29 R24  ; R24 := 1 - R24
-448 [-]: MUL       R25 R21 R24  ; R25 := R21 * R24
-449 [-]: ADD       R17 R17 R25  ; R17 := R17 + R25
-450 [-]: GETGLOBAL R26 K16      ; R26 := _G
-451 [-]: GETTABLE  R26 R26 K17  ; R26 := R26["CachedGoalInfo"]
-452 [-]: GETTABLE  R26 R26 R2   ; R26 := R26[R2]
-453 [-]: GETTABLE  R26 R26 K78  ; R26 := R26["mFaction"]
-454 [-]: GETGLOBAL R27 K2       ; R27 := Lotus_Game
-455 [-]: GETTABLE  R27 R27 K79  ; R27 := R27["FC_CORPUS"]
-456 [-]: EQ        0 R26 R27    ; if R26 ~= R27 then PC := 466
-457 [-]: JMP       466          ; PC := 466
-458 [-]: GETGLOBAL R26 K80      ; R26 := armadaDeco
-459 [-]: SETTABLE  R0 K56 R26   ; R0["deco"] := R26
-460 [-]: GETGLOBAL R26 K82      ; R26 := 0x1E4F6281
-461 [-]: LOADK     R27 K83      ; R27 := 50
-462 [-]: LOADK     R28 K48      ; R28 := 0
-463 [-]: LOADK     R29 K48      ; R29 := 0
-464 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
-465 [-]: SETTABLE  R0 K81 R26   ; R0["decoRotation"] := R26
-466 [-]: GETGLOBAL R26 K16      ; R26 := _G
-467 [-]: GETTABLE  R26 R26 K17  ; R26 := R26["CachedGoalInfo"]
-468 [-]: GETTABLE  R26 R26 R2   ; R26 := R26[R2]
-469 [-]: GETTABLE  R26 R26 K84  ; R26 := R26["mHealthPct"]
-470 [-]: LE        0 R26 K48    ; if R26 > 0 then PC := 531
-471 [-]: JMP       531          ; PC := 531
-472 [-]: MOVE      R8 R0        ; R8 := R0
-473 [-]: JMP       531          ; PC := 531
-474 [-]: GETGLOBAL R26 K8       ; R26 := string
-475 [-]: GETTABLE  R26 R26 K9   ; R26 := R26["0xDE44F664"]
-476 [-]: GETGLOBAL R27 K6       ; R27 := 0x9FAED6BC
-477 [-]: GETGLOBAL R28 K16      ; R28 := _G
-478 [-]: GETTABLE  R28 R28 K17  ; R28 := R28["CachedGoalInfo"]
-479 [-]: GETTABLE  R28 R28 R2   ; R28 := R28[R2]
-480 [-]: GETTABLE  R28 R28 K85  ; R28 := R28["mTag"]
-481 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-482 [-]: LOADK     R28 K86      ; R28 := "Halloween"
-483 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-484 [-]: EQ        1 R26 K0     ; if R26 == nil then PC := 531
-485 [-]: JMP       531          ; PC := 531
-486 [-]: GETGLOBAL R26 K87      ; R26 := 0x2C00D429
-487 [-]: LOADK     R27 K88      ; R27 := "/Lotus/Upgrades/Skins/Festivities/PumpkinHeadDeco"
-488 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-489 [-]: SETTABLE  R0 K56 R26   ; R0["deco"] := R26
-490 [-]: GETGLOBAL R26 K82      ; R26 := 0x1E4F6281
-491 [-]: LOADK     R27 K89      ; R27 := 180
-492 [-]: LOADK     R28 K48      ; R28 := 0
-493 [-]: LOADK     R29 K48      ; R29 := 0
-494 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
-495 [-]: SETTABLE  R0 K81 R26   ; R0["decoRotation"] := R26
-496 [-]: SETTABLE  R0 K90 K91   ; R0["scale"] := 0.03999999910593
-497 [-]: GETGLOBAL R26 K82      ; R26 := 0x1E4F6281
-498 [-]: LOADK     R27 K92      ; R27 := -50
-499 [-]: LOADK     R28 K48      ; R28 := 0
-500 [-]: LOADK     R29 K48      ; R29 := 0
-501 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
-502 [-]: MOVE      R18 R26      ; R18 := R26
-503 [-]: EQ        0 R2 K93     ; if R2 ~= "EventNode24" then PC := 507
-504 [-]: JMP       507          ; PC := 507
-505 [-]: GETTABLE  R26 R0 K94   ; R26 := R0["decoOffset"]
-506 [-]: SETTABLE  R26 K95 K96  ; R26["z"] := -0.10000000149012
-507 [-]: GETGLOBAL R26 K26      ; R26 := _T
-508 [-]: GETTABLE  R26 R26 K97  ; R26 := R26["CachedGoalKeys"]
-509 [-]: TEST      R26 0        ; if not R26 then PC := 531
-510 [-]: JMP       531          ; PC := 531
-511 [-]: GETGLOBAL R26 K26      ; R26 := _T
-512 [-]: GETTABLE  R26 R26 K97  ; R26 := R26["CachedGoalKeys"]
-513 [-]: GETTABLE  R26 R26 R2   ; R26 := R26[R2]
-514 [-]: TEST      R26 0        ; if not R26 then PC := 531
-515 [-]: JMP       531          ; PC := 531
-516 [-]: GETGLOBAL R26 K26      ; R26 := _T
-517 [-]: GETTABLE  R26 R26 K97  ; R26 := R26["CachedGoalKeys"]
-518 [-]: GETTABLE  R26 R26 R2   ; R26 := R26[R2]
-519 [-]: SELF      R26 R26 K98  ; R27 := R26; R26 := R26["0x387DBBEB"]
-520 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-521 [-]: GETTABLE  R27 R26 K99  ; R27 := R26["x"]
-522 [-]: EQ        1 R27 K48    ; if R27 == 0 then PC := 531
-523 [-]: JMP       531          ; PC := 531
-524 [-]: GETTABLE  R27 R26 K100 ; R27 := R26["y"]
-525 [-]: EQ        1 R27 K48    ; if R27 == 0 then PC := 531
-526 [-]: JMP       531          ; PC := 531
-527 [-]: GETTABLE  R27 R26 K95  ; R27 := R26["z"]
-528 [-]: EQ        1 R27 K48    ; if R27 == 0 then PC := 531
-529 [-]: JMP       531          ; PC := 531
-530 [-]: SETTABLE  R0 K70 R26   ; R0["pos"] := R26
-531 [-]: GETUPVAL  R27 U10      ; R27 := U10
-532 [-]: LOADK     R28 K101     ; R28 := "Nodes.Node"
-533 [-]: LOADK     R29 K102     ; R29 := "Node"
-534 [-]: GETUPVAL  R30 U11      ; R30 := U11
-535 [-]: LEN       R30 R30      ; R30 := # R30
-536 [-]: ADD       R30 R30 K29  ; R30 := R30 + 1
-537 [-]: LOADK     R31 K103     ; R31 := -5000
-538 [-]: CALL      R27 5 2      ; R27 := R27(R28,R29,R30,R31)
-539 [-]: GETGLOBAL R28 K104     ; R28 := mMovie
-540 [-]: SELF      R28 R28 K105 ; R29 := R28; R28 := R28["0xA7FE5515"]
-541 [-]: MOVE      R30 R27      ; R30 := R27
-542 [-]: CALL      R28 3 2      ; R28 := R28(R29,R30)
-543 [-]: GETGLOBAL R29 K104     ; R29 := mMovie
-544 [-]: SELF      R29 R29 K105 ; R30 := R29; R29 := R29["0xA7FE5515"]
-545 [-]: MOVE      R31 R27      ; R31 := R27
-546 [-]: LOADK     R32 K106     ; R32 := ".Node"
-547 [-]: CONCAT    R31 R31 R32  ; R31 := R31 .. R32
-548 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-549 [-]: GETGLOBAL R30 K104     ; R30 := mMovie
-550 [-]: SELF      R30 R30 K107 ; R31 := R30; R30 := R30["0x7E1F26D7"]
-551 [-]: MOVE      R32 R27      ; R32 := R27
-552 [-]: LOADK     R33 K108     ; R33 := ".Name.Bg"
-553 [-]: CONCAT    R32 R32 R33  ; R32 := R32 .. R33
-554 [-]: GETGLOBAL R33 K16      ; R33 := _G
-555 [-]: GETTABLE  R33 R33 K109 ; R33 := R33["UIMaterial_SmoothEdgeNoDepthTest"]
-556 [-]: CALL      R30 4 1      ; R30(R31,R32,R33)
-557 [-]: GETGLOBAL R30 K104     ; R30 := mMovie
-558 [-]: SELF      R30 R30 K110 ; R31 := R30; R30 := R30["0x880196A7"]
-559 [-]: MOVE      R32 R27      ; R32 := R27
-560 [-]: LOADK     R33 K111     ; R33 := "Name.Bg"
-561 [-]: LOADK     R34 K112     ; R34 := "noMenuSelection"
-562 [-]: MOVE      R35 R1       ; R35 := R1
-563 [-]: CALL      R30 6 1      ; R30(R31,R32,R33,R34,R35)
-564 [-]: LOADNIL   R30 R30      ; R30 := nil
-565 [-]: GETGLOBAL R31 K36      ; R31 := 0x400E7765
-566 [-]: GETTABLE  R32 R0 K56   ; R32 := R0["deco"]
-567 [-]: CALL      R31 2 2      ; R31 := R31(R32)
-568 [-]: TEST      R31 1        ; if R31 then PC := 610
-569 [-]: JMP       610          ; PC := 610
-570 [-]: GETUPVAL  R31 U12      ; R31 := U12
-571 [-]: GETTABLE  R32 R0 K56   ; R32 := R0["deco"]
-572 [-]: CALL      R31 2 1      ; R31(R32)
-573 [-]: NEWTABLE  R31 0 3      ; R31 := {}
-574 [-]: GETTABLE  R32 R0 K94   ; R32 := R0["decoOffset"]
-575 [-]: SETTABLE  R31 K113 R32 ; R31["mOffset"] := R32
-576 [-]: GETTABLE  R32 R0 K81   ; R32 := R0["decoRotation"]
-577 [-]: SETTABLE  R31 K114 R32 ; R31["mRotation"] := R32
-578 [-]: GETTABLE  R32 R0 K90   ; R32 := R0["scale"]
-579 [-]: SETTABLE  R31 K115 R32 ; R31["mScale"] := R32
-580 [-]: MOVE      R30 R31      ; R30 := R31
-581 [-]: GETGLOBAL R31 K117     ; R31 := gBackgroundRegion
-582 [-]: SELF      R31 R31 K118 ; R32 := R31; R31 := R31["0xBDD34CC6"]
-583 [-]: GETGLOBAL R33 K119     ; R33 := 0xCAA43ABB
-584 [-]: GETTABLE  R34 R0 K56   ; R34 := R0["deco"]
-585 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-586 [-]: GETTABLE  R34 R30 K113 ; R34 := R30["mOffset"]
-587 [-]: ADD       R34 R17 R34  ; R34 := R17 + R34
-588 [-]: GETTABLE  R35 R30 K114 ; R35 := R30["mRotation"]
-589 [-]: CALL      R31 5 2      ; R31 := R31(R32,R33,R34,R35)
-590 [-]: SETTABLE  R30 K116 R31 ; R30["mInstance"] := R31
-591 [-]: GETGLOBAL R31 K36      ; R31 := 0x400E7765
-592 [-]: GETTABLE  R32 R30 K116 ; R32 := R30["mInstance"]
-593 [-]: CALL      R31 2 2      ; R31 := R31(R32)
-594 [-]: TEST      R31 1        ; if R31 then PC := 610
-595 [-]: JMP       610          ; PC := 610
-596 [-]: GETTABLE  R31 R30 K115 ; R31 := R30["mScale"]
-597 [-]: GETTABLE  R32 R30 K116 ; R32 := R30["mInstance"]
-598 [-]: SELF      R32 R32 K120 ; R33 := R32; R32 := R32["0x6A7E5F92"]
-599 [-]: GETUPVAL  R34 U13      ; R34 := U13
-600 [-]: GETTABLE  R34 R34 K121 ; R34 := R34["DECO_SCALE_MULTIPLIER"]
-601 [-]: MUL       R34 R31 R34  ; R34 := R31 * R34
-602 [-]: MOVE      R35 R1       ; R35 := R1
-603 [-]: CALL      R32 4 1      ; R32(R33,R34,R35)
-604 [-]: TEST      R18 0        ; if not R18 then PC := 610
-605 [-]: JMP       610          ; PC := 610
-606 [-]: GETTABLE  R32 R30 K116 ; R32 := R30["mInstance"]
-607 [-]: SELF      R32 R32 K122 ; R33 := R32; R32 := R32["0x8A42F754"]
-608 [-]: MOVE      R34 R18      ; R34 := R18
-609 [-]: CALL      R32 3 1      ; R32(R33,R34)
-610 [-]: GETGLOBAL R32 K26      ; R32 := _T
-611 [-]: GETTABLE  R32 R32 K123 ; R32 := R32["CachedActiveMissions"]
-612 [-]: TEST      R32 0        ; if not R32 then PC := 625
-613 [-]: JMP       625          ; PC := 625
-614 [-]: GETGLOBAL R32 K26      ; R32 := _T
-615 [-]: GETTABLE  R32 R32 K123 ; R32 := R32["CachedActiveMissions"]
-616 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-617 [-]: TEST      R32 0        ; if not R32 then PC := 625
-618 [-]: JMP       625          ; PC := 625
-619 [-]: GETGLOBAL R32 K26      ; R32 := _T
-620 [-]: GETTABLE  R32 R32 K123 ; R32 := R32["CachedActiveMissions"]
-621 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-622 [-]: GETTABLE  R32 R32 K124 ; R32 := R32["mVisible"]
-623 [-]: TEST      R32 1        ; if R32 then PC := 685
-624 [-]: JMP       685          ; PC := 685
-625 [-]: GETGLOBAL R32 K16      ; R32 := _G
-626 [-]: GETTABLE  R32 R32 K17  ; R32 := R32["CachedGoalInfo"]
-627 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-628 [-]: TEST      R32 1        ; if R32 then PC := 685
-629 [-]: JMP       685          ; PC := 685
-630 [-]: GETGLOBAL R32 K26      ; R32 := _T
-631 [-]: GETTABLE  R32 R32 K125 ; R32 := R32["CachedAlerts"]
-632 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-633 [-]: TEST      R32 0        ; if not R32 then PC := 641
-634 [-]: JMP       641          ; PC := 641
-635 [-]: GETGLOBAL R32 K26      ; R32 := _T
-636 [-]: GETTABLE  R32 R32 K125 ; R32 := R32["CachedAlerts"]
-637 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-638 [-]: GETTABLE  R32 R32 K124 ; R32 := R32["mVisible"]
-639 [-]: TEST      R32 1        ; if R32 then PC := 685
-640 [-]: JMP       685          ; PC := 685
-641 [-]: GETGLOBAL R32 K26      ; R32 := _T
-642 [-]: GETTABLE  R32 R32 K126 ; R32 := R32["CachedInvasionInfo"]
-643 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-644 [-]: TEST      R32 1        ; if R32 then PC := 685
-645 [-]: JMP       685          ; PC := 685
-646 [-]: GETGLOBAL R32 K26      ; R32 := _T
-647 [-]: GETTABLE  R32 R32 K127 ; R32 := R32["CachedSyndicateMissions"]
-648 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-649 [-]: TEST      R32 0        ; if not R32 then PC := 657
-650 [-]: JMP       657          ; PC := 657
-651 [-]: GETGLOBAL R32 K26      ; R32 := _T
-652 [-]: GETTABLE  R32 R32 K127 ; R32 := R32["CachedSyndicateMissions"]
-653 [-]: GETTABLE  R32 R32 R2   ; R32 := R32[R2]
-654 [-]: GETTABLE  R32 R32 K124 ; R32 := R32["mVisible"]
-655 [-]: TEST      R32 1        ; if R32 then PC := 685
-656 [-]: JMP       685          ; PC := 685
-657 [-]: GETTABLE  R32 R0 K1    ; R32 := R0["nodeType"]
-658 [-]: GETGLOBAL R33 K2       ; R33 := Lotus_Game
-659 [-]: GETTABLE  R33 R33 K128 ; R33 := R33["NT_HUB"]
-660 [-]: EQ        1 R32 R33    ; if R32 == R33 then PC := 684
-661 [-]: JMP       684          ; PC := 684
-662 [-]: GETGLOBAL R32 K36      ; R32 := 0x400E7765
-663 [-]: GETTABLE  R33 R0 K18   ; R33 := R0["mission"]
-664 [-]: GETTABLE  R33 R33 K129 ; R33 := R33["levelKeyName"]
-665 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-666 [-]: TEST      R32 0        ; if not R32 then PC := 684
-667 [-]: JMP       684          ; PC := 684
-668 [-]: GETGLOBAL R32 K36      ; R32 := 0x400E7765
-669 [-]: GETTABLE  R33 R0 K130  ; R33 := R0["keyChain"]
-670 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-671 [-]: TEST      R32 0        ; if not R32 then PC := 684
-672 [-]: JMP       684          ; PC := 684
-673 [-]: GETTABLE  R32 R0 K1    ; R32 := R0["nodeType"]
-674 [-]: GETGLOBAL R33 K2       ; R33 := Lotus_Game
-675 [-]: GETTABLE  R33 R33 K24  ; R33 := R33["NT_SHORTCUT"]
-676 [-]: EQ        1 R32 R33    ; if R32 == R33 then PC := 684
-677 [-]: JMP       684          ; PC := 684
-678 [-]: GETTABLE  R32 R0 K1    ; R32 := R0["nodeType"]
-679 [-]: GETGLOBAL R33 K2       ; R33 := Lotus_Game
-680 [-]: GETTABLE  R33 R33 K131 ; R33 := R33["NT_JUNCTION"]
-681 [-]: EQ        1 R32 R33    ; if R32 == R33 then PC := 684
-682 [-]: JMP       684          ; PC := 684
-683 [-]: MOVE      R32 R0       ; R32 := R0
-684 [-]: MOVE      R32 R1       ; R32 := R1
-685 [-]: GETGLOBAL R33 K26      ; R33 := _T
-686 [-]: GETTABLE  R33 R33 K132 ; R33 := R33["CachedNemesisMissions"]
-687 [-]: GETTABLE  R33 R33 R2   ; R33 := R33[R2]
-688 [-]: TEST      R33 0        ; if not R33 then PC := 704
-689 [-]: JMP       704          ; PC := 704
-690 [-]: GETGLOBAL R33 K26      ; R33 := _T
-691 [-]: GETTABLE  R33 R33 K132 ; R33 := R33["CachedNemesisMissions"]
-692 [-]: GETTABLE  R33 R33 R2   ; R33 := R33[R2]
-693 [-]: GETTABLE  R33 R33 K133 ; R33 := R33["attackType"]
-694 [-]: TEST      R33 0        ; if not R33 then PC := 704
-695 [-]: JMP       704          ; PC := 704
-696 [-]: GETGLOBAL R33 K26      ; R33 := _T
-697 [-]: GETTABLE  R33 R33 K132 ; R33 := R33["CachedNemesisMissions"]
-698 [-]: GETTABLE  R33 R33 R2   ; R33 := R33[R2]
-699 [-]: GETTABLE  R33 R33 K133 ; R33 := R33["attackType"]
-700 [-]: EQ        1 R33 K134   ; if R33 == "Blockade" then PC := 703
-701 [-]: JMP       703          ; PC := 703
-702 [-]: MOVE      R33 R0       ; R33 := R0
-703 [-]: MOVE      R33 R1       ; R33 := R1
-704 [-]: GETGLOBAL R34 K104     ; R34 := mMovie
-705 [-]: SELF      R34 R34 K135 ; R35 := R34; R34 := R34["0x5DB0BD4"]
-706 [-]: GETTABLE  R36 R0 K4    ; R36 := R0["locTag"]
-707 [-]: SELF      R36 R36 K60  ; R37 := R36; R36 := R36["0x5EC7A3D2"]
-708 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-709 [-]: MOVE      R37 R1       ; R37 := R1
-710 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
-711 [-]: TEST      R9 0         ; if not R9 then PC := 726
-712 [-]: JMP       726          ; PC := 726
-713 [-]: LT        0 K48 R9     ; if 0 >= R9 then PC := 726
-714 [-]: JMP       726          ; PC := 726
-715 [-]: EQ        0 R9 K29     ; if R9 ~= 1 then PC := 746
-716 [-]: JMP       746          ; PC := 746
-717 [-]: GETGLOBAL R35 K104     ; R35 := mMovie
-718 [-]: SELF      R35 R35 K135 ; R36 := R35; R35 := R35["0x5DB0BD4"]
-719 [-]: LOADK     R37 K136     ; R37 := "/Lotus/Language/RelayReconstruction/ReconstructionSiteAttack"
-720 [-]: MOVE      R38 R0       ; R38 := R0
-721 [-]: NEWTABLE  R39 0 1      ; R39 := {}
-722 [-]: SETTABLE  R39 K137 R34 ; R39["LOCATION"] := R34
-723 [-]: CALL      R35 5 2      ; R35 := R35(R36,R37,R38,R39)
-724 [-]: MOVE      R34 R35      ; R34 := R35
-725 [-]: JMP       746          ; PC := 746
-726 [-]: GETGLOBAL R35 K16      ; R35 := _G
-727 [-]: GETTABLE  R35 R35 K17  ; R35 := R35["CachedGoalInfo"]
-728 [-]: GETTABLE  R36 R0 K7    ; R36 := R0["name"]
-729 [-]: SELF      R36 R36 K60  ; R37 := R36; R36 := R36["0x5EC7A3D2"]
-730 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-731 [-]: GETTABLE  R35 R35 R36  ; R35 := R35[R36]
-732 [-]: TEST      R35 0        ; if not R35 then PC := 746
-733 [-]: JMP       746          ; PC := 746
-734 [-]: GETGLOBAL R35 K104     ; R35 := mMovie
-735 [-]: SELF      R35 R35 K135 ; R36 := R35; R35 := R35["0x5DB0BD4"]
-736 [-]: GETGLOBAL R37 K16      ; R37 := _G
-737 [-]: GETTABLE  R37 R37 K17  ; R37 := R37["CachedGoalInfo"]
-738 [-]: GETTABLE  R38 R0 K7    ; R38 := R0["name"]
-739 [-]: SELF      R38 R38 K60  ; R39 := R38; R38 := R38["0x5EC7A3D2"]
-740 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-741 [-]: GETTABLE  R37 R37 R38  ; R37 := R37[R38]
-742 [-]: GETTABLE  R37 R37 K138 ; R37 := R37["mDesc"]
-743 [-]: MOVE      R38 R1       ; R38 := R1
-744 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-745 [-]: MOVE      R34 R35      ; R34 := R35
-746 [-]: TEST      R33 0        ; if not R33 then PC := 761
-747 [-]: JMP       761          ; PC := 761
-748 [-]: MOVE      R35 R34      ; R35 := R34
-749 [-]: LOADK     R36 K139     ; R36 := " ("
-750 [-]: GETGLOBAL R37 K104     ; R37 := mMovie
-751 [-]: SELF      R37 R37 K135 ; R38 := R37; R37 := R37["0x5DB0BD4"]
-752 [-]: GETGLOBAL R39 K26      ; R39 := _T
-753 [-]: GETTABLE  R39 R39 K132 ; R39 := R39["CachedNemesisMissions"]
-754 [-]: GETTABLE  R39 R39 R2   ; R39 := R39[R2]
-755 [-]: GETTABLE  R39 R39 K140 ; R39 := R39["mMissionInfo"]
-756 [-]: GETTABLE  R39 R39 K141 ; R39 := R39["uniqueName"]
-757 [-]: MOVE      R40 R0       ; R40 := R0
-758 [-]: CALL      R37 4 2      ; R37 := R37(R38,R39,R40)
-759 [-]: LOADK     R38 K142     ; R38 := ")"
-760 [-]: CONCAT    R34 R35 R38  ; R34 := R35 .. R36 .. R37 .. R38
-761 [-]: NEWTABLE  R35 0 19     ; R35 := {}
-762 [-]: GETTABLE  R36 R0 K7    ; R36 := R0["name"]
-763 [-]: SETTABLE  R35 K7 R36   ; R35["name"] := R36
-764 [-]: GETGLOBAL R36 K8       ; R36 := string
-765 [-]: GETTABLE  R36 R36 K144 ; R36 := R36["0x639C642A"]
-766 [-]: MOVE      R37 R34      ; R37 := R34
-767 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-768 [-]: SETTABLE  R35 K143 R36 ; R35["locName"] := R36
-769 [-]: SETTABLE  R35 K145 R28 ; R35["memberIndex"] := R28
-770 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-771 [-]: SELF      R36 R36 K105 ; R37 := R36; R36 := R36["0xA7FE5515"]
-772 [-]: MOVE      R38 R27      ; R38 := R27
-773 [-]: LOADK     R39 K147     ; R39 := ".Name"
-774 [-]: CONCAT    R38 R38 R39  ; R38 := R38 .. R39
-775 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
-776 [-]: SETTABLE  R35 K146 R36 ; R35["labelIndex"] := R36
-777 [-]: SETTABLE  R35 K148 R29 ; R35["nodeIndex"] := R29
-778 [-]: SETTABLE  R35 K149 R27 ; R35["clipName"] := R27
-779 [-]: SETTABLE  R35 K150 R17 ; R35["position"] := R17
-780 [-]: SETTABLE  R35 K56 R30  ; R35["deco"] := R30
-781 [-]: SETTABLE  R35 K151 R0  ; R35["radialSector"] := R0
-782 [-]: GETTABLE  R36 R0 K1    ; R36 := R0["nodeType"]
-783 [-]: GETGLOBAL R37 K2       ; R37 := Lotus_Game
-784 [-]: GETTABLE  R37 R37 K24  ; R37 := R37["NT_SHORTCUT"]
-785 [-]: EQ        1 R36 R37    ; if R36 == R37 then PC := 788
-786 [-]: JMP       788          ; PC := 788
-787 [-]: MOVE      R36 R0       ; R36 := R0
-788 [-]: MOVE      R36 R1       ; R36 := R1
-789 [-]: SETTABLE  R35 K152 R36 ; R35["isShortcut"] := R36
-790 [-]: GETTABLE  R36 R0 K1    ; R36 := R0["nodeType"]
-791 [-]: GETGLOBAL R37 K2       ; R37 := Lotus_Game
-792 [-]: GETTABLE  R37 R37 K131 ; R37 := R37["NT_JUNCTION"]
-793 [-]: EQ        1 R36 R37    ; if R36 == R37 then PC := 796
-794 [-]: JMP       796          ; PC := 796
-795 [-]: MOVE      R36 R0       ; R36 := R0
-796 [-]: MOVE      R36 R1       ; R36 := R1
-797 [-]: SETTABLE  R35 K153 R36 ; R35["isJunction"] := R36
-798 [-]: SETTABLE  R35 K154 R9  ; R35["reconstructionProgress"] := R9
-799 [-]: GETTABLE  R36 R0 K1    ; R36 := R0["nodeType"]
-800 [-]: GETGLOBAL R37 K2       ; R37 := Lotus_Game
-801 [-]: GETTABLE  R37 R37 K156 ; R37 := R37["NT_EMPTY"]
-802 [-]: EQ        1 R36 R37    ; if R36 == R37 then PC := 805
-803 [-]: JMP       805          ; PC := 805
-804 [-]: MOVE      R36 R0       ; R36 := R0
-805 [-]: MOVE      R36 R1       ; R36 := R1
-806 [-]: SETTABLE  R35 K155 R36 ; R35["isEmpty"] := R36
-807 [-]: SETTABLE  R35 K157 R32 ; R35["isActiveMission"] := R32
-808 [-]: SETTABLE  R35 K158 R33 ; R35["isBlockaded"] := R33
-809 [-]: GETTABLE  R36 R0 K159  ; R36 := R0["isCriticalPath"]
-810 [-]: SETTABLE  R35 K159 R36 ; R35["isCriticalPath"] := R36
-811 [-]: SETTABLE  R35 K160 R8  ; R35["locationEnabled"] := R8
-812 [-]: GETTABLE  R36 R0 K161  ; R36 := R0["missionsCompleted"]
-813 [-]: SETTABLE  R35 K161 R36 ; R35["missionsCompleted"] := R36
-814 [-]: GETTABLE  R36 R1 K162  ; R36 := R1["guildId"]
-815 [-]: SETTABLE  R35 K162 R36 ; R35["guildId"] := R36
-816 [-]: GETTABLE  R36 R1 K163  ; R36 := R1["clanTier"]
-817 [-]: SETTABLE  R35 K163 R36 ; R35["clanTier"] := R36
-818 [-]: GETTABLE  R36 R1 K164  ; R36 := R1["overrideIconSize"]
-819 [-]: SETTABLE  R35 K164 R36 ; R35["overrideIconSize"] := R36
-820 [-]: TEST      R7 0         ; if not R7 then PC := 823
-821 [-]: JMP       823          ; PC := 823
-822 [-]: SETTABLE  R35 K165 K32 ; R35["edgesLocked"] := "0x1"
-823 [-]: GETGLOBAL R36 K166     ; R36 := table
-824 [-]: GETTABLE  R36 R36 K167 ; R36 := R36["0xE6450C9D"]
-825 [-]: GETUPVAL  R37 U11      ; R37 := U11
-826 [-]: MOVE      R38 R35      ; R38 := R35
-827 [-]: CALL      R36 3 1      ; R36(R37,R38)
-828 [-]: GETUPVAL  R36 U14      ; R36 := U14
-829 [-]: GETGLOBAL R37 K6       ; R37 := 0x9FAED6BC
-830 [-]: GETTABLE  R38 R35 K7   ; R38 := R35["name"]
-831 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-832 [-]: GETUPVAL  R38 U11      ; R38 := U11
-833 [-]: GETUPVAL  R39 U11      ; R39 := U11
-834 [-]: LEN       R39 R39      ; R39 := # R39
-835 [-]: GETTABLE  R38 R38 R39  ; R38 := R38[R39]
-836 [-]: SETTABLE  R36 R37 R38  ; R36[R37] := R38
-837 [-]: GETUPVAL  R36 U11      ; R36 := U11
-838 [-]: LEN       R36 R36      ; R36 := # R36
-839 [-]: SETTABLE  R35 K168 R36 ; R35["id"] := R36
-840 [-]: GETUPVAL  R36 U15      ; R36 := U15
-841 [-]: MOVE      R37 R35      ; R37 := R35
-842 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-843 [-]: SETTABLE  R35 K169 R36 ; R35["isSurfaceNode"] := R36
-844 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-845 [-]: SELF      R36 R36 K170 ; R37 := R36; R36 := R36["0x1C19D966"]
-846 [-]: MOVE      R38 R27      ; R38 := R27
-847 [-]: LOADK     R39 K171     ; R39 := "Id"
-848 [-]: GETTABLE  R40 R35 K168 ; R40 := R35["id"]
-849 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)
-850 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-851 [-]: SELF      R36 R36 K170 ; R37 := R36; R36 := R36["0x1C19D966"]
-852 [-]: MOVE      R38 R27      ; R38 := R27
-853 [-]: LOADK     R39 K172     ; R39 := "RollOverCallback"
-854 [-]: LOADK     R40 K173     ; R40 := "NodeRollOver"
-855 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)
-856 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-857 [-]: SELF      R36 R36 K170 ; R37 := R36; R36 := R36["0x1C19D966"]
-858 [-]: MOVE      R38 R27      ; R38 := R27
-859 [-]: LOADK     R39 K174     ; R39 := "RollOutCallback"
-860 [-]: LOADK     R40 K175     ; R40 := "NodeRollOut"
-861 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)
-862 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-863 [-]: SELF      R36 R36 K170 ; R37 := R36; R36 := R36["0x1C19D966"]
-864 [-]: MOVE      R38 R27      ; R38 := R27
-865 [-]: LOADK     R39 K176     ; R39 := "SelectCallback"
-866 [-]: LOADK     R40 K177     ; R40 := "NodeSelect"
-867 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)
-868 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-869 [-]: SELF      R36 R36 K110 ; R37 := R36; R36 := R36["0x880196A7"]
-870 [-]: MOVE      R38 R27      ; R38 := R27
-871 [-]: LOADK     R39 K178     ; R39 := "Btn"
-872 [-]: LOADK     R40 K179     ; R40 := "_width"
-873 [-]: LOADK     R41 K180     ; R41 := 48
-874 [-]: CALL      R36 6 1      ; R36(R37,R38,R39,R40,R41)
-875 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-876 [-]: SELF      R36 R36 K110 ; R37 := R36; R36 := R36["0x880196A7"]
-877 [-]: MOVE      R38 R27      ; R38 := R27
-878 [-]: LOADK     R39 K178     ; R39 := "Btn"
-879 [-]: LOADK     R40 K181     ; R40 := "_height"
-880 [-]: LOADK     R41 K182     ; R41 := 32
-881 [-]: CALL      R36 6 1      ; R36(R37,R38,R39,R40,R41)
-882 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-883 [-]: SELF      R36 R36 K183 ; R37 := R36; R36 := R36["0x445651FB"]
-884 [-]: GETTABLE  R38 R35 K145 ; R38 := R35["memberIndex"]
-885 [-]: LOADK     R39 K184     ; R39 := "_alpha"
-886 [-]: LOADK     R40 K48      ; R40 := 0
-887 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)
-888 [-]: GETGLOBAL R36 K104     ; R36 := mMovie
-889 [-]: SELF      R36 R36 K183 ; R37 := R36; R36 := R36["0x445651FB"]
-890 [-]: GETTABLE  R38 R35 K146 ; R38 := R35["labelIndex"]
-891 [-]: LOADK     R39 K184     ; R39 := "_alpha"
-892 [-]: GETUPVAL  R40 U16      ; R40 := U16
-893 [-]: MOVE      R41 R35      ; R41 := R35
-894 [-]: CALL      R40 2 0      ; R40,... := R40(R41)
-895 [-]: CALL      R36 0 1      ; R36(R37,...)
-896 [-]: GETGLOBAL R36 K16      ; R36 := _G
-897 [-]: GETTABLE  R36 R36 K185 ; R36 := R36["StalkerMode"]
-898 [-]: TEST      R36 0        ; if not R36 then PC := 924
-899 [-]: JMP       924          ; PC := 924
-900 [-]: GETUPVAL  R36 U6       ; R36 := U6
-901 [-]: GETTABLE  R36 R36 K186 ; R36 := R36["0xE4E5932F"]
-902 [-]: MOVE      R37 R2       ; R37 := R2
-903 [-]: GETUPVAL  R38 U9       ; R38 := U9
-904 [-]: MOVE      R39 R0       ; R39 := R0
-905 [-]: CALL      R36 4 2      ; R36 := R36(R37,R38,R39)
-906 [-]: GETGLOBAL R37 K104     ; R37 := mMovie
-907 [-]: SELF      R37 R37 K170 ; R38 := R37; R37 := R37["0x1C19D966"]
-908 [-]: MOVE      R39 R27      ; R39 := R27
-909 [-]: LOADK     R40 K187     ; R40 := "_visible"
-910 [-]: GETUPVAL  R41 U17      ; R41 := U17
-911 [-]: EQ        1 R41 K0     ; if R41 == nil then PC := 921
-912 [-]: JMP       921          ; PC := 921
-913 [-]: GETUPVAL  R41 U17      ; R41 := U17
-914 [-]: GETTABLE  R41 R41 R36  ; R41 := R41[R36]
-915 [-]: TEST      R41 0        ; if not R41 then PC := 923
-916 [-]: JMP       923          ; PC := 923
-917 [-]: GETUPVAL  R41 U17      ; R41 := U17
-918 [-]: GETTABLE  R41 R41 R36  ; R41 := R41[R36]
-919 [-]: LT        1 K48 R41    ; if 0 < R41 then PC := 922
-920 [-]: JMP       922          ; PC := 922
-921 [-]: MOVE      R41 R0       ; R41 := R0
-922 [-]: MOVE      R41 R1       ; R41 := R1
-923 [-]: CALL      R37 5 1      ; R37(R38,R39,R40,R41)
-924 [-]: RETURN    R35 2        ; return R35
-925 [-]: RETURN    R0 1         ; return 
+176 [-]: JMP       197          ; PC := 197
+177 [-]: TEST      R10 1        ; if R10 then PC := 187
+178 [-]: JMP       187          ; PC := 187
+179 [-]: MOVE      R12 R1       ; R12 := R1
+180 [-]: TEST      R12 1        ; if R12 then PC := 197
+181 [-]: JMP       197          ; PC := 197
+182 [-]: MOVE      R3 R0        ; R3 := R0
+183 [-]: GETGLOBAL R13 K25      ; R13 := destroyedNodeDeco
+184 [-]: SETTABLE  R0 K24 R13   ; R0["deco"] := R13
+185 [-]: JMP       197          ; PC := 197
+186 [-]: JMP       197          ; PC := 197
+187 [-]: EQ        0 R5 K13     ; if R5 ~= 0 then PC := 191
+188 [-]: JMP       191          ; PC := 191
+189 [-]: RETURN    R0 1         ; return 
+190 [-]: JMP       197          ; PC := 197
+191 [-]: EQ        0 R5 K33     ; if R5 ~= 1 then PC := 197
+192 [-]: JMP       197          ; PC := 197
+193 [-]: GETGLOBAL R13 K18      ; R13 := Lotus_Game
+194 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["NT_MISSION"]
+195 [-]: SETTABLE  R0 K40 R13   ; R0["nodeType"] := R13
+196 [-]: JMP       197          ; PC := 197
+197 [-]: GETTABLE  R13 R0 K42   ; R13 := R0["pos"]
+198 [-]: LOADNIL   R14 R14      ; R14 := nil
+199 [-]: GETGLOBAL R15 K43      ; R15 := 0x9FAED6BC
+200 [-]: GETTABLE  R16 R0 K7    ; R16 := R0["name"]
+201 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+202 [-]: GETGLOBAL R16 K44      ; R16 := _G
+203 [-]: GETTABLE  R16 R16 K45  ; R16 := R16["CachedGoalInfo"]
+204 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
+205 [-]: TEST      R16 0        ; if not R16 then PC := 329
+206 [-]: JMP       329          ; PC := 329
+207 [-]: GETGLOBAL R16 K44      ; R16 := _G
+208 [-]: GETTABLE  R16 R16 K45  ; R16 := R16["CachedGoalInfo"]
+209 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
+210 [-]: GETTABLE  R16 R16 K46  ; R16 := R16["mFomorian"]
+211 [-]: TEST      R16 0        ; if not R16 then PC := 272
+212 [-]: JMP       272          ; PC := 272
+213 [-]: GETUPVAL  R16 U6       ; R16 := U6
+214 [-]: SELF      R16 R16 K47  ; R17 := R16; R16 := R16["0xDF213CE1"]
+215 [-]: GETGLOBAL R18 K44      ; R18 := _G
+216 [-]: GETTABLE  R18 R18 K45  ; R18 := R18["CachedGoalInfo"]
+217 [-]: GETTABLE  R18 R18 R15  ; R18 := R18[R15]
+218 [-]: GETTABLE  R18 R18 K48  ; R18 := R18["mVictimNode"]
+219 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+220 [-]: GETTABLE  R17 R16 K42  ; R17 := R16["pos"]
+221 [-]: SUB       R17 R17 R13  ; R17 := R17 - R13
+222 [-]: MUL       R18 R17 K49  ; R18 := R17 * 0.80000001192093
+223 [-]: GETGLOBAL R19 K44      ; R19 := _G
+224 [-]: GETTABLE  R19 R19 K45  ; R19 := R19["CachedGoalInfo"]
+225 [-]: GETTABLE  R19 R19 R15  ; R19 := R19[R15]
+226 [-]: GETTABLE  R19 R19 K35  ; R19 := R19["mActivation"]
+227 [-]: SELF      R19 R19 K50  ; R20 := R19; R19 := R19["0x6F4BAEB9"]
+228 [-]: GETGLOBAL R21 K44      ; R21 := _G
+229 [-]: GETTABLE  R21 R21 K45  ; R21 := R21["CachedGoalInfo"]
+230 [-]: GETTABLE  R21 R21 R15  ; R21 := R21[R15]
+231 [-]: GETTABLE  R21 R21 K51  ; R21 := R21["mExpiry"]
+232 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
+233 [-]: GETGLOBAL R20 K52      ; R20 := 0x6374FD98
+234 [-]: GETGLOBAL R21 K37      ; R21 := Engine
+235 [-]: GETTABLE  R21 R21 K38  ; R21 := R21["0xD09D7910"]
+236 [-]: GETGLOBAL R22 K44      ; R22 := _G
+237 [-]: GETTABLE  R22 R22 K45  ; R22 := R22["CachedGoalInfo"]
+238 [-]: GETTABLE  R22 R22 R15  ; R22 := R22[R15]
+239 [-]: GETTABLE  R22 R22 K51  ; R22 := R22["mExpiry"]
+240 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+241 [-]: LOADK     R22 K13      ; R22 := 0
+242 [-]: MOVE      R23 R19      ; R23 := R19
+243 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
+244 [-]: DIV       R21 R20 R19  ; R21 := R20 / R19
+245 [-]: SUB       R21 K33 R21  ; R21 := 1 - R21
+246 [-]: MUL       R22 R18 R21  ; R22 := R18 * R21
+247 [-]: ADD       R13 R13 R22  ; R13 := R13 + R22
+248 [-]: GETGLOBAL R23 K44      ; R23 := _G
+249 [-]: GETTABLE  R23 R23 K45  ; R23 := R23["CachedGoalInfo"]
+250 [-]: GETTABLE  R23 R23 R15  ; R23 := R23[R15]
+251 [-]: GETTABLE  R23 R23 K53  ; R23 := R23["mFaction"]
+252 [-]: GETGLOBAL R24 K18      ; R24 := Lotus_Game
+253 [-]: GETTABLE  R24 R24 K54  ; R24 := R24["FC_CORPUS"]
+254 [-]: EQ        0 R23 R24    ; if R23 ~= R24 then PC := 264
+255 [-]: JMP       264          ; PC := 264
+256 [-]: GETGLOBAL R23 K55      ; R23 := armadaDeco
+257 [-]: SETTABLE  R0 K24 R23   ; R0["deco"] := R23
+258 [-]: GETGLOBAL R23 K57      ; R23 := 0x1E4F6281
+259 [-]: LOADK     R24 K58      ; R24 := 50
+260 [-]: LOADK     R25 K13      ; R25 := 0
+261 [-]: LOADK     R26 K13      ; R26 := 0
+262 [-]: CALL      R23 4 2      ; R23 := R23(R24,R25,R26)
+263 [-]: SETTABLE  R0 K56 R23   ; R0["decoRotation"] := R23
+264 [-]: GETGLOBAL R23 K44      ; R23 := _G
+265 [-]: GETTABLE  R23 R23 K45  ; R23 := R23["CachedGoalInfo"]
+266 [-]: GETTABLE  R23 R23 R15  ; R23 := R23[R15]
+267 [-]: GETTABLE  R23 R23 K59  ; R23 := R23["mHealthPct"]
+268 [-]: LE        0 R23 K13    ; if R23 > 0 then PC := 329
+269 [-]: JMP       329          ; PC := 329
+270 [-]: MOVE      R3 R0        ; R3 := R0
+271 [-]: JMP       329          ; PC := 329
+272 [-]: GETGLOBAL R23 K29      ; R23 := string
+273 [-]: GETTABLE  R23 R23 K30  ; R23 := R23["0xDE44F664"]
+274 [-]: GETGLOBAL R24 K43      ; R24 := 0x9FAED6BC
+275 [-]: GETGLOBAL R25 K44      ; R25 := _G
+276 [-]: GETTABLE  R25 R25 K45  ; R25 := R25["CachedGoalInfo"]
+277 [-]: GETTABLE  R25 R25 R15  ; R25 := R25[R15]
+278 [-]: GETTABLE  R25 R25 K60  ; R25 := R25["mTag"]
+279 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+280 [-]: LOADK     R25 K61      ; R25 := "Halloween"
+281 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+282 [-]: EQ        1 R23 K0     ; if R23 == nil then PC := 329
+283 [-]: JMP       329          ; PC := 329
+284 [-]: GETGLOBAL R23 K62      ; R23 := 0x2C00D429
+285 [-]: LOADK     R24 K63      ; R24 := "/Lotus/Upgrades/Skins/Festivities/PumpkinHeadDeco"
+286 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+287 [-]: SETTABLE  R0 K24 R23   ; R0["deco"] := R23
+288 [-]: GETGLOBAL R23 K57      ; R23 := 0x1E4F6281
+289 [-]: LOADK     R24 K64      ; R24 := 180
+290 [-]: LOADK     R25 K13      ; R25 := 0
+291 [-]: LOADK     R26 K13      ; R26 := 0
+292 [-]: CALL      R23 4 2      ; R23 := R23(R24,R25,R26)
+293 [-]: SETTABLE  R0 K56 R23   ; R0["decoRotation"] := R23
+294 [-]: SETTABLE  R0 K65 K66   ; R0["scale"] := 0.03999999910593
+295 [-]: GETGLOBAL R23 K57      ; R23 := 0x1E4F6281
+296 [-]: LOADK     R24 K67      ; R24 := -50
+297 [-]: LOADK     R25 K13      ; R25 := 0
+298 [-]: LOADK     R26 K13      ; R26 := 0
+299 [-]: CALL      R23 4 2      ; R23 := R23(R24,R25,R26)
+300 [-]: MOVE      R14 R23      ; R14 := R23
+301 [-]: EQ        0 R15 K68    ; if R15 ~= "EventNode24" then PC := 305
+302 [-]: JMP       305          ; PC := 305
+303 [-]: GETTABLE  R23 R0 K69   ; R23 := R0["decoOffset"]
+304 [-]: SETTABLE  R23 K70 K71  ; R23["z"] := -0.10000000149012
+305 [-]: GETGLOBAL R23 K72      ; R23 := _T
+306 [-]: GETTABLE  R23 R23 K73  ; R23 := R23["CachedGoalKeys"]
+307 [-]: TEST      R23 0        ; if not R23 then PC := 329
+308 [-]: JMP       329          ; PC := 329
+309 [-]: GETGLOBAL R23 K72      ; R23 := _T
+310 [-]: GETTABLE  R23 R23 K73  ; R23 := R23["CachedGoalKeys"]
+311 [-]: GETTABLE  R23 R23 R15  ; R23 := R23[R15]
+312 [-]: TEST      R23 0        ; if not R23 then PC := 329
+313 [-]: JMP       329          ; PC := 329
+314 [-]: GETGLOBAL R23 K72      ; R23 := _T
+315 [-]: GETTABLE  R23 R23 K73  ; R23 := R23["CachedGoalKeys"]
+316 [-]: GETTABLE  R23 R23 R15  ; R23 := R23[R15]
+317 [-]: SELF      R23 R23 K74  ; R24 := R23; R23 := R23["0x387DBBEB"]
+318 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+319 [-]: GETTABLE  R24 R23 K75  ; R24 := R23["x"]
+320 [-]: EQ        1 R24 K13    ; if R24 == 0 then PC := 329
+321 [-]: JMP       329          ; PC := 329
+322 [-]: GETTABLE  R24 R23 K76  ; R24 := R23["y"]
+323 [-]: EQ        1 R24 K13    ; if R24 == 0 then PC := 329
+324 [-]: JMP       329          ; PC := 329
+325 [-]: GETTABLE  R24 R23 K70  ; R24 := R23["z"]
+326 [-]: EQ        1 R24 K13    ; if R24 == 0 then PC := 329
+327 [-]: JMP       329          ; PC := 329
+328 [-]: SETTABLE  R0 K42 R23   ; R0["pos"] := R23
+329 [-]: GETUPVAL  R24 U7       ; R24 := U7
+330 [-]: LOADK     R25 K77      ; R25 := "Nodes.Node"
+331 [-]: LOADK     R26 K78      ; R26 := "Node"
+332 [-]: GETUPVAL  R27 U8       ; R27 := U8
+333 [-]: LEN       R27 R27      ; R27 := # R27
+334 [-]: ADD       R27 R27 K33  ; R27 := R27 + 1
+335 [-]: LOADK     R28 K79      ; R28 := -5000
+336 [-]: CALL      R24 5 2      ; R24 := R24(R25,R26,R27,R28)
+337 [-]: GETGLOBAL R25 K80      ; R25 := mMovie
+338 [-]: SELF      R25 R25 K81  ; R26 := R25; R25 := R25["0xA7FE5515"]
+339 [-]: MOVE      R27 R24      ; R27 := R24
+340 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
+341 [-]: GETGLOBAL R26 K80      ; R26 := mMovie
+342 [-]: SELF      R26 R26 K81  ; R27 := R26; R26 := R26["0xA7FE5515"]
+343 [-]: MOVE      R28 R24      ; R28 := R24
+344 [-]: LOADK     R29 K82      ; R29 := ".Node"
+345 [-]: CONCAT    R28 R28 R29  ; R28 := R28 .. R29
+346 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+347 [-]: GETGLOBAL R27 K80      ; R27 := mMovie
+348 [-]: SELF      R27 R27 K83  ; R28 := R27; R27 := R27["0x7E1F26D7"]
+349 [-]: MOVE      R29 R24      ; R29 := R24
+350 [-]: LOADK     R30 K84      ; R30 := ".Name.Bg"
+351 [-]: CONCAT    R29 R29 R30  ; R29 := R29 .. R30
+352 [-]: GETGLOBAL R30 K44      ; R30 := _G
+353 [-]: GETTABLE  R30 R30 K85  ; R30 := R30["UIMaterial_SmoothEdgeNoDepthTest"]
+354 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
+355 [-]: GETGLOBAL R27 K80      ; R27 := mMovie
+356 [-]: SELF      R27 R27 K86  ; R28 := R27; R27 := R27["0x880196A7"]
+357 [-]: MOVE      R29 R24      ; R29 := R24
+358 [-]: LOADK     R30 K87      ; R30 := "Name.Bg"
+359 [-]: LOADK     R31 K88      ; R31 := "noMenuSelection"
+360 [-]: MOVE      R32 R1       ; R32 := R1
+361 [-]: CALL      R27 6 1      ; R27(R28,R29,R30,R31,R32)
+362 [-]: LOADNIL   R27 R27      ; R27 := nil
+363 [-]: GETGLOBAL R28 K1       ; R28 := 0x400E7765
+364 [-]: GETTABLE  R29 R0 K24   ; R29 := R0["deco"]
+365 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+366 [-]: TEST      R28 1        ; if R28 then PC := 405
+367 [-]: JMP       405          ; PC := 405
+368 [-]: NEWTABLE  R28 0 3      ; R28 := {}
+369 [-]: GETTABLE  R29 R0 K69   ; R29 := R0["decoOffset"]
+370 [-]: SETTABLE  R28 K89 R29  ; R28["mOffset"] := R29
+371 [-]: GETTABLE  R29 R0 K56   ; R29 := R0["decoRotation"]
+372 [-]: SETTABLE  R28 K90 R29  ; R28["mRotation"] := R29
+373 [-]: GETTABLE  R29 R0 K65   ; R29 := R0["scale"]
+374 [-]: SETTABLE  R28 K91 R29  ; R28["mScale"] := R29
+375 [-]: MOVE      R27 R28      ; R27 := R28
+376 [-]: GETGLOBAL R28 K93      ; R28 := gBackgroundRegion
+377 [-]: SELF      R28 R28 K94  ; R29 := R28; R28 := R28["0xBDD34CC6"]
+378 [-]: GETGLOBAL R30 K95      ; R30 := 0xCAA43ABB
+379 [-]: GETTABLE  R31 R0 K24   ; R31 := R0["deco"]
+380 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+381 [-]: GETTABLE  R31 R27 K89  ; R31 := R27["mOffset"]
+382 [-]: ADD       R31 R13 R31  ; R31 := R13 + R31
+383 [-]: GETTABLE  R32 R27 K90  ; R32 := R27["mRotation"]
+384 [-]: CALL      R28 5 2      ; R28 := R28(R29,R30,R31,R32)
+385 [-]: SETTABLE  R27 K92 R28  ; R27["mInstance"] := R28
+386 [-]: GETGLOBAL R28 K1       ; R28 := 0x400E7765
+387 [-]: GETTABLE  R29 R27 K92  ; R29 := R27["mInstance"]
+388 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+389 [-]: TEST      R28 1        ; if R28 then PC := 405
+390 [-]: JMP       405          ; PC := 405
+391 [-]: GETTABLE  R28 R27 K91  ; R28 := R27["mScale"]
+392 [-]: GETTABLE  R29 R27 K92  ; R29 := R27["mInstance"]
+393 [-]: SELF      R29 R29 K96  ; R30 := R29; R29 := R29["0x6A7E5F92"]
+394 [-]: GETUPVAL  R31 U9       ; R31 := U9
+395 [-]: GETTABLE  R31 R31 K97  ; R31 := R31["DECO_SCALE_MULTIPLIER"]
+396 [-]: MUL       R31 R28 R31  ; R31 := R28 * R31
+397 [-]: MOVE      R32 R1       ; R32 := R1
+398 [-]: CALL      R29 4 1      ; R29(R30,R31,R32)
+399 [-]: TEST      R14 0        ; if not R14 then PC := 405
+400 [-]: JMP       405          ; PC := 405
+401 [-]: GETTABLE  R29 R27 K92  ; R29 := R27["mInstance"]
+402 [-]: SELF      R29 R29 K98  ; R30 := R29; R29 := R29["0x8A42F754"]
+403 [-]: MOVE      R31 R14      ; R31 := R14
+404 [-]: CALL      R29 3 1      ; R29(R30,R31)
+405 [-]: GETGLOBAL R29 K72      ; R29 := _T
+406 [-]: GETTABLE  R29 R29 K99  ; R29 := R29["CachedActiveMissions"]
+407 [-]: TEST      R29 0        ; if not R29 then PC := 420
+408 [-]: JMP       420          ; PC := 420
+409 [-]: GETGLOBAL R29 K72      ; R29 := _T
+410 [-]: GETTABLE  R29 R29 K99  ; R29 := R29["CachedActiveMissions"]
+411 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+412 [-]: TEST      R29 0        ; if not R29 then PC := 420
+413 [-]: JMP       420          ; PC := 420
+414 [-]: GETGLOBAL R29 K72      ; R29 := _T
+415 [-]: GETTABLE  R29 R29 K99  ; R29 := R29["CachedActiveMissions"]
+416 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+417 [-]: GETTABLE  R29 R29 K100 ; R29 := R29["mVisible"]
+418 [-]: TEST      R29 1        ; if R29 then PC := 480
+419 [-]: JMP       480          ; PC := 480
+420 [-]: GETGLOBAL R29 K44      ; R29 := _G
+421 [-]: GETTABLE  R29 R29 K45  ; R29 := R29["CachedGoalInfo"]
+422 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+423 [-]: TEST      R29 1        ; if R29 then PC := 480
+424 [-]: JMP       480          ; PC := 480
+425 [-]: GETGLOBAL R29 K72      ; R29 := _T
+426 [-]: GETTABLE  R29 R29 K101 ; R29 := R29["CachedAlerts"]
+427 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+428 [-]: TEST      R29 0        ; if not R29 then PC := 436
+429 [-]: JMP       436          ; PC := 436
+430 [-]: GETGLOBAL R29 K72      ; R29 := _T
+431 [-]: GETTABLE  R29 R29 K101 ; R29 := R29["CachedAlerts"]
+432 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+433 [-]: GETTABLE  R29 R29 K100 ; R29 := R29["mVisible"]
+434 [-]: TEST      R29 1        ; if R29 then PC := 480
+435 [-]: JMP       480          ; PC := 480
+436 [-]: GETGLOBAL R29 K72      ; R29 := _T
+437 [-]: GETTABLE  R29 R29 K102 ; R29 := R29["CachedInvasionInfo"]
+438 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+439 [-]: TEST      R29 1        ; if R29 then PC := 480
+440 [-]: JMP       480          ; PC := 480
+441 [-]: GETGLOBAL R29 K72      ; R29 := _T
+442 [-]: GETTABLE  R29 R29 K103 ; R29 := R29["CachedSyndicateMissions"]
+443 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+444 [-]: TEST      R29 0        ; if not R29 then PC := 452
+445 [-]: JMP       452          ; PC := 452
+446 [-]: GETGLOBAL R29 K72      ; R29 := _T
+447 [-]: GETTABLE  R29 R29 K103 ; R29 := R29["CachedSyndicateMissions"]
+448 [-]: GETTABLE  R29 R29 R15  ; R29 := R29[R15]
+449 [-]: GETTABLE  R29 R29 K100 ; R29 := R29["mVisible"]
+450 [-]: TEST      R29 1        ; if R29 then PC := 480
+451 [-]: JMP       480          ; PC := 480
+452 [-]: GETTABLE  R29 R0 K40   ; R29 := R0["nodeType"]
+453 [-]: GETGLOBAL R30 K18      ; R30 := Lotus_Game
+454 [-]: GETTABLE  R30 R30 K104 ; R30 := R30["NT_HUB"]
+455 [-]: EQ        1 R29 R30    ; if R29 == R30 then PC := 479
+456 [-]: JMP       479          ; PC := 479
+457 [-]: GETGLOBAL R29 K1       ; R29 := 0x400E7765
+458 [-]: GETTABLE  R30 R0 K2    ; R30 := R0["mission"]
+459 [-]: GETTABLE  R30 R30 K105 ; R30 := R30["levelKeyName"]
+460 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+461 [-]: TEST      R29 0        ; if not R29 then PC := 479
+462 [-]: JMP       479          ; PC := 479
+463 [-]: GETGLOBAL R29 K1       ; R29 := 0x400E7765
+464 [-]: GETTABLE  R30 R0 K106  ; R30 := R0["keyChain"]
+465 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+466 [-]: TEST      R29 0        ; if not R29 then PC := 479
+467 [-]: JMP       479          ; PC := 479
+468 [-]: GETTABLE  R29 R0 K40   ; R29 := R0["nodeType"]
+469 [-]: GETGLOBAL R30 K18      ; R30 := Lotus_Game
+470 [-]: GETTABLE  R30 R30 K107 ; R30 := R30["NT_SHORTCUT"]
+471 [-]: EQ        1 R29 R30    ; if R29 == R30 then PC := 479
+472 [-]: JMP       479          ; PC := 479
+473 [-]: GETTABLE  R29 R0 K40   ; R29 := R0["nodeType"]
+474 [-]: GETGLOBAL R30 K18      ; R30 := Lotus_Game
+475 [-]: GETTABLE  R30 R30 K108 ; R30 := R30["NT_JUNCTION"]
+476 [-]: EQ        1 R29 R30    ; if R29 == R30 then PC := 479
+477 [-]: JMP       479          ; PC := 479
+478 [-]: MOVE      R29 R0       ; R29 := R0
+479 [-]: MOVE      R29 R1       ; R29 := R1
+480 [-]: GETGLOBAL R30 K72      ; R30 := _T
+481 [-]: GETTABLE  R30 R30 K109 ; R30 := R30["CachedNemesisMissions"]
+482 [-]: GETTABLE  R30 R30 R15  ; R30 := R30[R15]
+483 [-]: TEST      R30 0        ; if not R30 then PC := 499
+484 [-]: JMP       499          ; PC := 499
+485 [-]: GETGLOBAL R30 K72      ; R30 := _T
+486 [-]: GETTABLE  R30 R30 K109 ; R30 := R30["CachedNemesisMissions"]
+487 [-]: GETTABLE  R30 R30 R15  ; R30 := R30[R15]
+488 [-]: GETTABLE  R30 R30 K110 ; R30 := R30["attackType"]
+489 [-]: TEST      R30 0        ; if not R30 then PC := 499
+490 [-]: JMP       499          ; PC := 499
+491 [-]: GETGLOBAL R30 K72      ; R30 := _T
+492 [-]: GETTABLE  R30 R30 K109 ; R30 := R30["CachedNemesisMissions"]
+493 [-]: GETTABLE  R30 R30 R15  ; R30 := R30[R15]
+494 [-]: GETTABLE  R30 R30 K110 ; R30 := R30["attackType"]
+495 [-]: EQ        1 R30 K111   ; if R30 == "Blockade" then PC := 498
+496 [-]: JMP       498          ; PC := 498
+497 [-]: MOVE      R30 R0       ; R30 := R0
+498 [-]: MOVE      R30 R1       ; R30 := R1
+499 [-]: GETGLOBAL R31 K80      ; R31 := mMovie
+500 [-]: SELF      R31 R31 K112 ; R32 := R31; R31 := R31["0x5DB0BD4"]
+501 [-]: GETTABLE  R33 R0 K113  ; R33 := R0["locTag"]
+502 [-]: SELF      R33 R33 K28  ; R34 := R33; R33 := R33["0x5EC7A3D2"]
+503 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+504 [-]: MOVE      R34 R1       ; R34 := R1
+505 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
+506 [-]: TEST      R5 0         ; if not R5 then PC := 521
+507 [-]: JMP       521          ; PC := 521
+508 [-]: LT        0 K13 R5     ; if 0 >= R5 then PC := 521
+509 [-]: JMP       521          ; PC := 521
+510 [-]: EQ        0 R5 K33     ; if R5 ~= 1 then PC := 541
+511 [-]: JMP       541          ; PC := 541
+512 [-]: GETGLOBAL R32 K80      ; R32 := mMovie
+513 [-]: SELF      R32 R32 K112 ; R33 := R32; R32 := R32["0x5DB0BD4"]
+514 [-]: LOADK     R34 K114     ; R34 := "/Lotus/Language/RelayReconstruction/ReconstructionSiteAttack"
+515 [-]: MOVE      R35 R0       ; R35 := R0
+516 [-]: NEWTABLE  R36 0 1      ; R36 := {}
+517 [-]: SETTABLE  R36 K115 R31 ; R36["LOCATION"] := R31
+518 [-]: CALL      R32 5 2      ; R32 := R32(R33,R34,R35,R36)
+519 [-]: MOVE      R31 R32      ; R31 := R32
+520 [-]: JMP       541          ; PC := 541
+521 [-]: GETGLOBAL R32 K44      ; R32 := _G
+522 [-]: GETTABLE  R32 R32 K45  ; R32 := R32["CachedGoalInfo"]
+523 [-]: GETTABLE  R33 R0 K7    ; R33 := R0["name"]
+524 [-]: SELF      R33 R33 K28  ; R34 := R33; R33 := R33["0x5EC7A3D2"]
+525 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+526 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
+527 [-]: TEST      R32 0        ; if not R32 then PC := 541
+528 [-]: JMP       541          ; PC := 541
+529 [-]: GETGLOBAL R32 K80      ; R32 := mMovie
+530 [-]: SELF      R32 R32 K112 ; R33 := R32; R32 := R32["0x5DB0BD4"]
+531 [-]: GETGLOBAL R34 K44      ; R34 := _G
+532 [-]: GETTABLE  R34 R34 K45  ; R34 := R34["CachedGoalInfo"]
+533 [-]: GETTABLE  R35 R0 K7    ; R35 := R0["name"]
+534 [-]: SELF      R35 R35 K28  ; R36 := R35; R35 := R35["0x5EC7A3D2"]
+535 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+536 [-]: GETTABLE  R34 R34 R35  ; R34 := R34[R35]
+537 [-]: GETTABLE  R34 R34 K116 ; R34 := R34["mDesc"]
+538 [-]: MOVE      R35 R1       ; R35 := R1
+539 [-]: CALL      R32 4 2      ; R32 := R32(R33,R34,R35)
+540 [-]: MOVE      R31 R32      ; R31 := R32
+541 [-]: TEST      R30 0        ; if not R30 then PC := 556
+542 [-]: JMP       556          ; PC := 556
+543 [-]: MOVE      R32 R31      ; R32 := R31
+544 [-]: LOADK     R33 K117     ; R33 := " ("
+545 [-]: GETGLOBAL R34 K80      ; R34 := mMovie
+546 [-]: SELF      R34 R34 K112 ; R35 := R34; R34 := R34["0x5DB0BD4"]
+547 [-]: GETGLOBAL R36 K72      ; R36 := _T
+548 [-]: GETTABLE  R36 R36 K109 ; R36 := R36["CachedNemesisMissions"]
+549 [-]: GETTABLE  R36 R36 R15  ; R36 := R36[R15]
+550 [-]: GETTABLE  R36 R36 K118 ; R36 := R36["mMissionInfo"]
+551 [-]: GETTABLE  R36 R36 K119 ; R36 := R36["uniqueName"]
+552 [-]: MOVE      R37 R0       ; R37 := R0
+553 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
+554 [-]: LOADK     R35 K120     ; R35 := ")"
+555 [-]: CONCAT    R31 R32 R35  ; R31 := R32 .. R33 .. R34 .. R35
+556 [-]: NEWTABLE  R32 0 19     ; R32 := {}
+557 [-]: GETTABLE  R33 R0 K7    ; R33 := R0["name"]
+558 [-]: SETTABLE  R32 K7 R33   ; R32["name"] := R33
+559 [-]: GETGLOBAL R33 K29      ; R33 := string
+560 [-]: GETTABLE  R33 R33 K122 ; R33 := R33["0x639C642A"]
+561 [-]: MOVE      R34 R31      ; R34 := R31
+562 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+563 [-]: SETTABLE  R32 K121 R33 ; R32["locName"] := R33
+564 [-]: SETTABLE  R32 K123 R25 ; R32["memberIndex"] := R25
+565 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+566 [-]: SELF      R33 R33 K81  ; R34 := R33; R33 := R33["0xA7FE5515"]
+567 [-]: MOVE      R35 R24      ; R35 := R24
+568 [-]: LOADK     R36 K125     ; R36 := ".Name"
+569 [-]: CONCAT    R35 R35 R36  ; R35 := R35 .. R36
+570 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
+571 [-]: SETTABLE  R32 K124 R33 ; R32["labelIndex"] := R33
+572 [-]: SETTABLE  R32 K126 R26 ; R32["nodeIndex"] := R26
+573 [-]: SETTABLE  R32 K127 R24 ; R32["clipName"] := R24
+574 [-]: SETTABLE  R32 K128 R13 ; R32["position"] := R13
+575 [-]: SETTABLE  R32 K24 R27  ; R32["deco"] := R27
+576 [-]: SETTABLE  R32 K129 R0  ; R32["radialSector"] := R0
+577 [-]: GETTABLE  R33 R0 K40   ; R33 := R0["nodeType"]
+578 [-]: GETGLOBAL R34 K18      ; R34 := Lotus_Game
+579 [-]: GETTABLE  R34 R34 K107 ; R34 := R34["NT_SHORTCUT"]
+580 [-]: EQ        1 R33 R34    ; if R33 == R34 then PC := 583
+581 [-]: JMP       583          ; PC := 583
+582 [-]: MOVE      R33 R0       ; R33 := R0
+583 [-]: MOVE      R33 R1       ; R33 := R1
+584 [-]: SETTABLE  R32 K130 R33 ; R32["isShortcut"] := R33
+585 [-]: GETTABLE  R33 R0 K40   ; R33 := R0["nodeType"]
+586 [-]: GETGLOBAL R34 K18      ; R34 := Lotus_Game
+587 [-]: GETTABLE  R34 R34 K108 ; R34 := R34["NT_JUNCTION"]
+588 [-]: EQ        1 R33 R34    ; if R33 == R34 then PC := 591
+589 [-]: JMP       591          ; PC := 591
+590 [-]: MOVE      R33 R0       ; R33 := R0
+591 [-]: MOVE      R33 R1       ; R33 := R1
+592 [-]: SETTABLE  R32 K131 R33 ; R32["isJunction"] := R33
+593 [-]: SETTABLE  R32 K132 R5  ; R32["reconstructionProgress"] := R5
+594 [-]: GETTABLE  R33 R0 K40   ; R33 := R0["nodeType"]
+595 [-]: GETGLOBAL R34 K18      ; R34 := Lotus_Game
+596 [-]: GETTABLE  R34 R34 K134 ; R34 := R34["NT_EMPTY"]
+597 [-]: EQ        1 R33 R34    ; if R33 == R34 then PC := 600
+598 [-]: JMP       600          ; PC := 600
+599 [-]: MOVE      R33 R0       ; R33 := R0
+600 [-]: MOVE      R33 R1       ; R33 := R1
+601 [-]: SETTABLE  R32 K133 R33 ; R32["isEmpty"] := R33
+602 [-]: SETTABLE  R32 K135 R29 ; R32["isActiveMission"] := R29
+603 [-]: SETTABLE  R32 K136 R30 ; R32["isBlockaded"] := R30
+604 [-]: GETTABLE  R33 R0 K137  ; R33 := R0["isCriticalPath"]
+605 [-]: SETTABLE  R32 K137 R33 ; R32["isCriticalPath"] := R33
+606 [-]: SETTABLE  R32 K138 R3  ; R32["locationEnabled"] := R3
+607 [-]: GETTABLE  R33 R0 K139  ; R33 := R0["missionsCompleted"]
+608 [-]: SETTABLE  R32 K139 R33 ; R32["missionsCompleted"] := R33
+609 [-]: GETTABLE  R33 R1 K140  ; R33 := R1["guildId"]
+610 [-]: SETTABLE  R32 K140 R33 ; R32["guildId"] := R33
+611 [-]: GETTABLE  R33 R1 K141  ; R33 := R1["clanTier"]
+612 [-]: SETTABLE  R32 K141 R33 ; R32["clanTier"] := R33
+613 [-]: GETTABLE  R33 R1 K142  ; R33 := R1["overrideIconSize"]
+614 [-]: SETTABLE  R32 K142 R33 ; R32["overrideIconSize"] := R33
+615 [-]: TEST      R2 0         ; if not R2 then PC := 618
+616 [-]: JMP       618          ; PC := 618
+617 [-]: SETTABLE  R32 K143 K144; R32["edgesLocked"] := "0x1"
+618 [-]: GETTABLE  R33 R32 K7   ; R33 := R32["name"]
+619 [-]: GETUPVAL  R34 U2       ; R34 := U2
+620 [-]: GETTABLE  R34 R34 K145 ; R34 := R34["SCENARIO_EVENT_HUB_TAG"]
+621 [-]: EQ        0 R33 R34    ; if R33 ~= R34 then PC := 624
+622 [-]: JMP       624          ; PC := 624
+623 [-]: SETTABLE  R32 K146 K144; R32["isFlotilla"] := "0x1"
+624 [-]: GETGLOBAL R33 K147     ; R33 := table
+625 [-]: GETTABLE  R33 R33 K148 ; R33 := R33["0xE6450C9D"]
+626 [-]: GETUPVAL  R34 U8       ; R34 := U8
+627 [-]: MOVE      R35 R32      ; R35 := R32
+628 [-]: CALL      R33 3 1      ; R33(R34,R35)
+629 [-]: GETUPVAL  R33 U10      ; R33 := U10
+630 [-]: GETGLOBAL R34 K43      ; R34 := 0x9FAED6BC
+631 [-]: GETTABLE  R35 R32 K7   ; R35 := R32["name"]
+632 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+633 [-]: GETUPVAL  R35 U8       ; R35 := U8
+634 [-]: GETUPVAL  R36 U8       ; R36 := U8
+635 [-]: LEN       R36 R36      ; R36 := # R36
+636 [-]: GETTABLE  R35 R35 R36  ; R35 := R35[R36]
+637 [-]: SETTABLE  R33 R34 R35  ; R33[R34] := R35
+638 [-]: GETUPVAL  R33 U8       ; R33 := U8
+639 [-]: LEN       R33 R33      ; R33 := # R33
+640 [-]: SETTABLE  R32 K149 R33 ; R32["id"] := R33
+641 [-]: GETUPVAL  R33 U11      ; R33 := U11
+642 [-]: MOVE      R34 R32      ; R34 := R32
+643 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+644 [-]: SETTABLE  R32 K150 R33 ; R32["isSurfaceNode"] := R33
+645 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+646 [-]: SELF      R33 R33 K151 ; R34 := R33; R33 := R33["0x1C19D966"]
+647 [-]: MOVE      R35 R24      ; R35 := R24
+648 [-]: LOADK     R36 K152     ; R36 := "Id"
+649 [-]: GETTABLE  R37 R32 K149 ; R37 := R32["id"]
+650 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
+651 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+652 [-]: SELF      R33 R33 K151 ; R34 := R33; R33 := R33["0x1C19D966"]
+653 [-]: MOVE      R35 R24      ; R35 := R24
+654 [-]: LOADK     R36 K153     ; R36 := "RollOverCallback"
+655 [-]: LOADK     R37 K154     ; R37 := "NodeRollOver"
+656 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
+657 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+658 [-]: SELF      R33 R33 K151 ; R34 := R33; R33 := R33["0x1C19D966"]
+659 [-]: MOVE      R35 R24      ; R35 := R24
+660 [-]: LOADK     R36 K155     ; R36 := "RollOutCallback"
+661 [-]: LOADK     R37 K156     ; R37 := "NodeRollOut"
+662 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
+663 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+664 [-]: SELF      R33 R33 K151 ; R34 := R33; R33 := R33["0x1C19D966"]
+665 [-]: MOVE      R35 R24      ; R35 := R24
+666 [-]: LOADK     R36 K157     ; R36 := "SelectCallback"
+667 [-]: LOADK     R37 K158     ; R37 := "NodeSelect"
+668 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
+669 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+670 [-]: SELF      R33 R33 K86  ; R34 := R33; R33 := R33["0x880196A7"]
+671 [-]: MOVE      R35 R24      ; R35 := R24
+672 [-]: LOADK     R36 K159     ; R36 := "Btn"
+673 [-]: LOADK     R37 K160     ; R37 := "_width"
+674 [-]: LOADK     R38 K161     ; R38 := 48
+675 [-]: CALL      R33 6 1      ; R33(R34,R35,R36,R37,R38)
+676 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+677 [-]: SELF      R33 R33 K86  ; R34 := R33; R33 := R33["0x880196A7"]
+678 [-]: MOVE      R35 R24      ; R35 := R24
+679 [-]: LOADK     R36 K159     ; R36 := "Btn"
+680 [-]: LOADK     R37 K162     ; R37 := "_height"
+681 [-]: LOADK     R38 K163     ; R38 := 32
+682 [-]: CALL      R33 6 1      ; R33(R34,R35,R36,R37,R38)
+683 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+684 [-]: SELF      R33 R33 K164 ; R34 := R33; R33 := R33["0x445651FB"]
+685 [-]: GETTABLE  R35 R32 K123 ; R35 := R32["memberIndex"]
+686 [-]: LOADK     R36 K165     ; R36 := "_alpha"
+687 [-]: LOADK     R37 K13      ; R37 := 0
+688 [-]: CALL      R33 5 1      ; R33(R34,R35,R36,R37)
+689 [-]: GETGLOBAL R33 K80      ; R33 := mMovie
+690 [-]: SELF      R33 R33 K164 ; R34 := R33; R33 := R33["0x445651FB"]
+691 [-]: GETTABLE  R35 R32 K124 ; R35 := R32["labelIndex"]
+692 [-]: LOADK     R36 K165     ; R36 := "_alpha"
+693 [-]: GETUPVAL  R37 U12      ; R37 := U12
+694 [-]: MOVE      R38 R32      ; R38 := R32
+695 [-]: CALL      R37 2 0      ; R37,... := R37(R38)
+696 [-]: CALL      R33 0 1      ; R33(R34,...)
+697 [-]: GETGLOBAL R33 K44      ; R33 := _G
+698 [-]: GETTABLE  R33 R33 K166 ; R33 := R33["StalkerMode"]
+699 [-]: TEST      R33 0        ; if not R33 then PC := 725
+700 [-]: JMP       725          ; PC := 725
+701 [-]: GETUPVAL  R33 U2       ; R33 := U2
+702 [-]: GETTABLE  R33 R33 K167 ; R33 := R33["0xE4E5932F"]
+703 [-]: MOVE      R34 R15      ; R34 := R15
+704 [-]: GETUPVAL  R35 U6       ; R35 := U6
+705 [-]: MOVE      R36 R0       ; R36 := R0
+706 [-]: CALL      R33 4 2      ; R33 := R33(R34,R35,R36)
+707 [-]: GETGLOBAL R34 K80      ; R34 := mMovie
+708 [-]: SELF      R34 R34 K151 ; R35 := R34; R34 := R34["0x1C19D966"]
+709 [-]: MOVE      R36 R24      ; R36 := R24
+710 [-]: LOADK     R37 K168     ; R37 := "_visible"
+711 [-]: GETUPVAL  R38 U13      ; R38 := U13
+712 [-]: EQ        1 R38 K0     ; if R38 == nil then PC := 722
+713 [-]: JMP       722          ; PC := 722
+714 [-]: GETUPVAL  R38 U13      ; R38 := U13
+715 [-]: GETTABLE  R38 R38 R33  ; R38 := R38[R33]
+716 [-]: TEST      R38 0        ; if not R38 then PC := 724
+717 [-]: JMP       724          ; PC := 724
+718 [-]: GETUPVAL  R38 U13      ; R38 := U13
+719 [-]: GETTABLE  R38 R38 R33  ; R38 := R38[R33]
+720 [-]: LT        1 K13 R38    ; if 0 < R38 then PC := 723
+721 [-]: JMP       723          ; PC := 723
+722 [-]: MOVE      R38 R0       ; R38 := R0
+723 [-]: MOVE      R38 R1       ; R38 := R1
+724 [-]: CALL      R34 5 1      ; R34(R35,R36,R37,R38)
+725 [-]: RETURN    R32 2        ; return R32
+726 [-]: RETURN    R0 1         ; return 
 
 
-; Function #55:
+; Function #54:
 ;
 ; Name:            
-; Defined at line: 2274
+; Defined at line: 2240
 ; #Upvalues:       10
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -8677,16 +8603,25 @@ code size: 4
 334 [-]: LOADK     R10 K61      ; R10 := "_visible"
 335 [-]: MOVE      R11 R0       ; R11 := R0
 336 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-337 [-]: GETUPVAL  R7 U9        ; R7 := U9
-338 [-]: MOVE      R8 R0        ; R8 := R0
-339 [-]: CALL      R7 2 1       ; R7(R8)
-340 [-]: RETURN    R0 1         ; return 
+337 [-]: GETTABLE  R7 R0 K79    ; R7 := R0["isFlotilla"]
+338 [-]: TEST      R7 0         ; if not R7 then PC := 346
+339 [-]: JMP       346          ; PC := 346
+340 [-]: GETGLOBAL R7 K35       ; R7 := table
+341 [-]: GETTABLE  R7 R7 K36    ; R7 := R7["0xE6450C9D"]
+342 [-]: GETUPVAL  R8 U6        ; R8 := U6
+343 [-]: NEWTABLE  R9 0 1       ; R9 := {}
+344 [-]: SETTABLE  R9 K37 R0    ; R9["Node"] := R0
+345 [-]: CALL      R7 3 1       ; R7(R8,R9)
+346 [-]: GETUPVAL  R7 U9        ; R7 := U9
+347 [-]: MOVE      R8 R0        ; R8 := R0
+348 [-]: CALL      R7 2 1       ; R7(R8)
+349 [-]: RETURN    R0 1         ; return 
 
 
-; Function #56:
+; Function #55:
 ;
 ; Name:            
-; Defined at line: 2377
+; Defined at line: 2346
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -8707,7 +8642,7 @@ code size: 4
  13 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
  14 [-]: MOVE      R2 R4        ; R2 := R4
  15 [-]: NEWTABLE  R4 0 0       ; R4 := {}
- 16 [-]: CLOSURE   R5 0         ; R5 := closure(Function #56.1)
+ 16 [-]: CLOSURE   R5 0         ; R5 := closure(Function #55.1)
  17 [-]: GETUPVAL  R0 U1        ; R0 := U1
  18 [-]: MOVE      R0 R0        ; R0 := R0
  19 [-]: MOVE      R0 R2        ; R0 := R2
@@ -8910,10 +8845,10 @@ code size: 4
 216 [-]: RETURN    R0 1         ; return 
 
 
-; Function #56.1:
+; Function #55.1:
 ;
 ; Name:            
-; Defined at line: 2386
+; Defined at line: 2355
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -8999,10 +8934,10 @@ code size: 4
  78 [-]: RETURN    R0 1         ; return 
 
 
-; Function #57:
+; Function #56:
 ;
 ; Name:            
-; Defined at line: 2465
+; Defined at line: 2434
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -9036,10 +8971,10 @@ code size: 4
  26 [-]: RETURN    R0 1         ; return 
 
 
-; Function #58:
+; Function #57:
 ;
 ; Name:            
-; Defined at line: 2482
+; Defined at line: 2451
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -9082,10 +9017,10 @@ code size: 4
  35 [-]: RETURN    R0 1         ; return 
 
 
-; Function #59:
+; Function #58:
 ;
 ; Name:            
-; Defined at line: 2491
+; Defined at line: 2460
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -9135,10 +9070,10 @@ code size: 4
  42 [-]: RETURN    R0 1         ; return 
 
 
-; Function #60:
+; Function #59:
 ;
 ; Name:            
-; Defined at line: 2516
+; Defined at line: 2485
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -9219,10 +9154,10 @@ code size: 4
  73 [-]: RETURN    R0 1         ; return 
 
 
-; Function #61:
+; Function #60:
 ;
 ; Name:            
-; Defined at line: 2540
+; Defined at line: 2509
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -9294,10 +9229,10 @@ code size: 4
  64 [-]: RETURN    R0 1         ; return 
 
 
-; Function #62:
+; Function #61:
 ;
 ; Name:            
-; Defined at line: 2564
+; Defined at line: 2533
 ; #Upvalues:       16
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -9331,608 +9266,604 @@ code size: 4
  26 [-]: CALL      R5 3 1       ; R5(R6,R7)
  27 [-]: TFORLOOP  R0 2         ; R3,R4 :=  R0(R1,R2); if R3 ~= nil then begin PC = 10; R2 := R3 end
  28 [-]: JMP       10           ; PC := 10
- 29 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 30 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x7E6E6726"]
- 31 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 32 [-]: MOVE      R5 R3        ; R5 := R3
- 33 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 34 [-]: MOVE      R5 R1        ; R5 := R1
- 35 [-]: NEWTABLE  R5 0 0       ; R5 := {}
- 36 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 37 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 38 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["0x7B440FBB"]
- 39 [-]: MOVE      R8 R5        ; R8 := R5
- 40 [-]: LOADNIL   R9 R9        ; R9 := nil
- 41 [-]: GETGLOBAL R10 K10      ; R10 := gGameRules
- 42 [-]: SELF      R10 R10 K11  ; R11 := R10; R10 := R10["0xC17093D6"]
- 43 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 44 [-]: CALL      R7 0 1       ; R7(R8,...)
- 45 [-]: LOADK     R7 K12       ; R7 := 1
- 46 [-]: LEN       R8 R5        ; R8 := # R5
- 47 [-]: LOADK     R9 K12       ; R9 := 1
- 48 [-]: FORPREP   R7 57        ; R7 -= R9; PC := 57
- 49 [-]: GETGLOBAL R11 K13      ; R11 := table
- 50 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["0xE6450C9D"]
- 51 [-]: MOVE      R12 R6       ; R12 := R6
- 52 [-]: GETTABLE  R13 R5 R10   ; R13 := R5[R10]
- 53 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["Type"]
- 54 [-]: SELF      R13 R13 K16  ; R14 := R13; R13 := R13["0x625DA4BB"]
- 55 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
- 56 [-]: CALL      R11 0 1      ; R11(R12,...)
- 57 [-]: FORLOOP   R7 49        ; R7 += R9; if R7 <= R8 then begin PC := 49; R10 := R7 end
- 58 [-]: GETUPVAL  R11 U5       ; R11 := U5
- 59 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["0x52C8784B"]
- 60 [-]: GETGLOBAL R12 K18      ; R12 := gGameData
- 61 [-]: CALL      R11 2 5      ; R11,R12,R13,R14 := R11(R12)
- 62 [-]: GETGLOBAL R15 K4       ; R15 := 0x400E7765
- 63 [-]: MOVE      R16 R11      ; R16 := R11
- 64 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 65 [-]: TEST      R15 1        ; if R15 then PC := 123
- 66 [-]: JMP       123          ; PC := 123
- 67 [-]: GETUPVAL  R15 U5       ; R15 := U5
- 68 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0x68C19111"]
- 69 [-]: GETGLOBAL R16 K18      ; R16 := gGameData
- 70 [-]: MOVE      R17 R11      ; R17 := R11
- 71 [-]: MOVE      R18 R1       ; R18 := R1
- 72 [-]: CALL      R15 4 5      ; R15,R16,R17,R18 := R15(R16,R17,R18)
- 73 [-]: GETGLOBAL R19 K4       ; R19 := 0x400E7765
- 74 [-]: MOVE      R20 R18      ; R20 := R18
- 75 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 76 [-]: TEST      R19 1        ; if R19 then PC := 123
- 77 [-]: JMP       123          ; PC := 123
- 78 [-]: NEWTABLE  R19 0 7      ; R19 := {}
- 79 [-]: GETGLOBAL R20 K21      ; R20 := Lotus_Game
- 80 [-]: GETTABLE  R20 R20 K22  ; R20 := R20["0xB880C02"]
- 81 [-]: MOVE      R21 R18      ; R21 := R18
- 82 [-]: LOADK     R22 K12      ; R22 := 1
- 83 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
- 84 [-]: SETTABLE  R19 K20 R20  ; R19["Key"] := R20
- 85 [-]: SETTABLE  R19 K23 R11  ; R19["KeyChain"] := R11
- 86 [-]: SETTABLE  R19 K15 R18  ; R19["Type"] := R18
- 87 [-]: GETGLOBAL R20 K25      ; R20 := 0xCAA43ABB
- 88 [-]: MOVE      R21 R18      ; R21 := R18
- 89 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 90 [-]: SETTABLE  R19 K24 R20  ; R19["Anchor"] := R20
- 91 [-]: GETGLOBAL R20 K27      ; R20 := 0xE6DC43B0
- 92 [-]: GETGLOBAL R21 K28      ; R21 := 0x9FAED6BC
- 93 [-]: SELF      R22 R18 K29  ; R23 := R18; R22 := R18["0x616C74B6"]
- 94 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
- 95 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
- 96 [-]: MOVE      R22 R0       ; R22 := R0
- 97 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
- 98 [-]: SETTABLE  R19 K26 R20  ; R19["Name"] := R20
- 99 [-]: GETGLOBAL R20 K27      ; R20 := 0xE6DC43B0
-100 [-]: GETGLOBAL R21 K28      ; R21 := 0x9FAED6BC
-101 [-]: SELF      R22 R18 K31  ; R23 := R18; R22 := R18["0x42300EB5"]
-102 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
-103 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
-104 [-]: MOVE      R22 R0       ; R22 := R0
-105 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
-106 [-]: SETTABLE  R19 K30 R20  ; R19["Description"] := R20
-107 [-]: SELF      R20 R11 K33  ; R21 := R11; R20 := R11["0xFD6CA2ED"]
-108 [-]: SUB       R22 R15 K12  ; R22 := R15 - 1
-109 [-]: MOVE      R23 R16      ; R23 := R16
-110 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
-111 [-]: SETTABLE  R19 K32 R20  ; R19["Difficulty"] := R20
-112 [-]: GETUPVAL  R20 U6       ; R20 := U6
-113 [-]: EQ        0 R11 R20    ; if R11 ~= R20 then PC := 118
-114 [-]: JMP       118          ; PC := 118
-115 [-]: SELF      R20 R18 K16  ; R21 := R18; R20 := R18["0x625DA4BB"]
-116 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-117 [-]: MOVE      R20 R7       ; R20 := R7
-118 [-]: GETGLOBAL R20 K13      ; R20 := table
-119 [-]: GETTABLE  R20 R20 K14  ; R20 := R20["0xE6450C9D"]
-120 [-]: MOVE      R21 R5       ; R21 := R5
-121 [-]: MOVE      R22 R19      ; R22 := R19
-122 [-]: CALL      R20 3 1      ; R20(R21,R22)
-123 [-]: LOADK     R20 K12      ; R20 := 1
-124 [-]: GETUPVAL  R21 U3       ; R21 := U3
-125 [-]: LEN       R21 R21      ; R21 := # R21
-126 [-]: LOADK     R22 K12      ; R22 := 1
-127 [-]: FORPREP   R20 167      ; R20 -= R22; PC := 167
-128 [-]: MOVE      R24 R0       ; R24 := R0
-129 [-]: GETUPVAL  R25 U3       ; R25 := U3
-130 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
-131 [-]: GETTABLE  R25 R25 K34  ; R25 := R25["name"]
-132 [-]: GETGLOBAL R26 K4       ; R26 := 0x400E7765
-133 [-]: GETUPVAL  R27 U3       ; R27 := U3
-134 [-]: GETTABLE  R27 R27 R23  ; R27 := R27[R23]
-135 [-]: GETTABLE  R27 R27 K35  ; R27 := R27["mission"]
-136 [-]: GETTABLE  R27 R27 K36  ; R27 := R27["levelKeyName"]
-137 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-138 [-]: TEST      R26 1        ; if R26 then PC := 150
-139 [-]: JMP       150          ; PC := 150
-140 [-]: MOVE      R24 R1       ; R24 := R1
-141 [-]: LOADK     R26 K12      ; R26 := 1
-142 [-]: LEN       R27 R6       ; R27 := # R6
-143 [-]: LOADK     R28 K12      ; R28 := 1
-144 [-]: FORPREP   R26 149      ; R26 -= R28; PC := 149
-145 [-]: GETTABLE  R30 R6 R29   ; R30 := R6[R29]
-146 [-]: EQ        0 R30 R25    ; if R30 ~= R25 then PC := 149
-147 [-]: JMP       149          ; PC := 149
-148 [-]: MOVE      R24 R0       ; R24 := R0
-149 [-]: FORLOOP   R26 145      ; R26 += R28; if R26 <= R27 then begin PC := 145; R29 := R26 end
-150 [-]: GETGLOBAL R30 K28      ; R30 := 0x9FAED6BC
-151 [-]: MOVE      R31 R25      ; R31 := R25
-152 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-153 [-]: MOVE      R25 R30      ; R25 := R30
-154 [-]: GETUPVAL  R30 U8       ; R30 := U8
-155 [-]: GETTABLE  R30 R30 K37  ; R30 := R30["Sectors"]
-156 [-]: GETTABLE  R30 R30 R25  ; R30 := R30[R25]
-157 [-]: EQ        0 R30 K0     ; if R30 ~= nil then PC := 161
-158 [-]: JMP       161          ; PC := 161
-159 [-]: GETUPVAL  R31 U3       ; R31 := U3
-160 [-]: GETTABLE  R30 R31 R23  ; R30 := R31[R23]
-161 [-]: TEST      R24 1        ; if R24 then PC := 167
-162 [-]: JMP       167          ; PC := 167
-163 [-]: GETUPVAL  R31 U9       ; R31 := U9
-164 [-]: SELF      R32 R30 K38  ; R33 := R30; R32 := R30["0xA4269DBC"]
-165 [-]: CALL      R32 2 0      ; R32,... := R32(R33)
-166 [-]: CALL      R31 0 1      ; R31(R32,...)
-167 [-]: FORLOOP   R20 128      ; R20 += R22; if R20 <= R21 then begin PC := 128; R23 := R20 end
-168 [-]: NEWTABLE  R31 0 0      ; R31 := {}
-169 [-]: LOADNIL   R32 R32      ; R32 := nil
-170 [-]: LOADK     R33 K12      ; R33 := 1
-171 [-]: LEN       R34 R5       ; R34 := # R5
-172 [-]: LOADK     R35 K12      ; R35 := 1
-173 [-]: FORPREP   R33 542      ; R33 -= R35; PC := 542
-174 [-]: GETGLOBAL R37 K39      ; R37 := 0x1BF588C6
-175 [-]: LOADK     R38 K40      ; R38 := 0
-176 [-]: CALL      R37 2 1      ; R37(R38)
-177 [-]: GETTABLE  R37 R5 R36   ; R37 := R5[R36]
-178 [-]: GETTABLE  R38 R37 K15  ; R38 := R37["Type"]
-179 [-]: SELF      R39 R38 K16  ; R40 := R38; R39 := R38["0x625DA4BB"]
-180 [-]: CALL      R39 2 2      ; R39 := R39(R40)
-181 [-]: SELF      R40 R38 K41  ; R41 := R38; R40 := R38["0xA26B0FA3"]
-182 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-183 [-]: GETUPVAL  R41 U1       ; R41 := U1
-184 [-]: GETGLOBAL R42 K28      ; R42 := 0x9FAED6BC
-185 [-]: MOVE      R43 R39      ; R43 := R39
-186 [-]: CALL      R42 2 2      ; R42 := R42(R43)
-187 [-]: GETTABLE  R41 R41 R42  ; R41 := R41[R42]
-188 [-]: LOADNIL   R42 R42      ; R42 := nil
-189 [-]: EQ        1 R41 K0     ; if R41 == nil then PC := 193
-190 [-]: JMP       193          ; PC := 193
-191 [-]: GETTABLE  R42 R41 K42  ; R42 := R41["radialSector"]
-192 [-]: JMP       197          ; PC := 197
-193 [-]: GETGLOBAL R43 K21      ; R43 := Lotus_Game
-194 [-]: GETTABLE  R43 R43 K43  ; R43 := R43["0xAE448D50"]
-195 [-]: CALL      R43 1 2      ; R43 := R43()
-196 [-]: MOVE      R42 R43      ; R42 := R43
-197 [-]: MOVE      R43 R0       ; R43 := R0
-198 [-]: SELF      R44 R38 K44  ; R45 := R38; R44 := R38["0x9B16E6AD"]
-199 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-200 [-]: GETGLOBAL R45 K45      ; R45 := _T
-201 [-]: GETTABLE  R45 R45 K46  ; R45 := R45["REGION_ID_DOJO"]
-202 [-]: EQ        0 R44 R45    ; if R44 ~= R45 then PC := 231
-203 [-]: JMP       231          ; PC := 231
-204 [-]: GETUPVAL  R44 U10      ; R44 := U10
-205 [-]: GETTABLE  R44 R44 K47  ; R44 := R44["Active"]
-206 [-]: TEST      R44 0        ; if not R44 then PC := 214
-207 [-]: JMP       214          ; PC := 214
-208 [-]: GETGLOBAL R44 K49      ; R44 := 0xEC274B1A
-209 [-]: LOADK     R45 K50      ; R45 := "/Lotus/Language/Dojo/DryDockMapLabel"
-210 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-211 [-]: SETTABLE  R42 K48 R44  ; R42["locTag"] := R44
-212 [-]: MOVE      R43 R1       ; R43 := R1
-213 [-]: JMP       270          ; PC := 270
-214 [-]: GETGLOBAL R44 K51      ; R44 := gPlayerProfileMgr
-215 [-]: SELF      R44 R44 K52  ; R45 := R44; R44 := R44["0x21EF7B1A"]
-216 [-]: LOADK     R46 K40      ; R46 := 0
-217 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
-218 [-]: GETGLOBAL R45 K4       ; R45 := 0x400E7765
-219 [-]: MOVE      R46 R44      ; R46 := R44
-220 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-221 [-]: TEST      R45 1        ; if R45 then PC := 270
-222 [-]: JMP       270          ; PC := 270
-223 [-]: GETGLOBAL R45 K49      ; R45 := 0xEC274B1A
-224 [-]: SELF      R46 R44 K53  ; R47 := R44; R46 := R44["0x654F1092"]
-225 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-226 [-]: SELF      R46 R46 K54  ; R47 := R46; R46 := R46["0x6D176768"]
-227 [-]: CALL      R46 2 0      ; R46,... := R46(R47)
-228 [-]: CALL      R45 0 2      ; R45 := R45(R46,...)
-229 [-]: SETTABLE  R42 K48 R45  ; R42["locTag"] := R45
-230 [-]: JMP       270          ; PC := 270
-231 [-]: TEST      R40 1        ; if R40 then PC := 270
-232 [-]: JMP       270          ; PC := 270
-233 [-]: GETGLOBAL R45 K55      ; R45 := mMovie
-234 [-]: SELF      R45 R45 K56  ; R46 := R45; R45 := R45["0x5DB0BD4"]
-235 [-]: GETTABLE  R47 R37 K26  ; R47 := R37["Name"]
-236 [-]: MOVE      R48 R1       ; R48 := R1
-237 [-]: CALL      R45 4 2      ; R45 := R45(R46,R47,R48)
-238 [-]: GETTABLE  R46 R37 K15  ; R46 := R37["Type"]
-239 [-]: SELF      R46 R46 K57  ; R47 := R46; R46 := R46["0xB8637349"]
-240 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-241 [-]: GETTABLE  R46 R46 K58  ; R46 := R46["uniqueName"]
-242 [-]: EQ        1 R46 K59    ; if R46 == "" then PC := 250
-243 [-]: JMP       250          ; PC := 250
-244 [-]: GETGLOBAL R47 K55      ; R47 := mMovie
-245 [-]: SELF      R47 R47 K56  ; R48 := R47; R47 := R47["0x5DB0BD4"]
-246 [-]: MOVE      R49 R46      ; R49 := R46
-247 [-]: MOVE      R50 R0       ; R50 := R0
-248 [-]: CALL      R47 4 2      ; R47 := R47(R48,R49,R50)
-249 [-]: MOVE      R45 R47      ; R45 := R47
-250 [-]: GETTABLE  R47 R37 K60  ; R47 := R37["Count"]
-251 [-]: TEST      R47 0        ; if not R47 then PC := 266
-252 [-]: JMP       266          ; PC := 266
-253 [-]: GETTABLE  R47 R37 K60  ; R47 := R37["Count"]
-254 [-]: LT        0 K12 R47    ; if 1 >= R47 then PC := 266
-255 [-]: JMP       266          ; PC := 266
-256 [-]: GETTABLE  R47 R37 K15  ; R47 := R37["Type"]
-257 [-]: SELF      R47 R47 K61  ; R48 := R47; R47 := R47["0x49F6C90A"]
-258 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-259 [-]: TEST      R47 0        ; if not R47 then PC := 266
-260 [-]: JMP       266          ; PC := 266
-261 [-]: MOVE      R47 R45      ; R47 := R45
-262 [-]: LOADK     R48 K62      ; R48 := " ["
-263 [-]: GETTABLE  R49 R37 K60  ; R49 := R37["Count"]
-264 [-]: LOADK     R50 K63      ; R50 := "]"
-265 [-]: CONCAT    R45 R47 R50  ; R45 := R47 .. R48 .. R49 .. R50
-266 [-]: GETGLOBAL R47 K49      ; R47 := 0xEC274B1A
-267 [-]: MOVE      R48 R45      ; R48 := R45
-268 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-269 [-]: SETTABLE  R42 K48 R47  ; R42["locTag"] := R47
-270 [-]: LOADNIL   R47 R47      ; R47 := nil
-271 [-]: TEST      R40 0        ; if not R40 then PC := 277
-272 [-]: JMP       277          ; PC := 277
-273 [-]: GETTABLE  R48 R42 K35  ; R48 := R42["mission"]
-274 [-]: SELF      R48 R48 K38  ; R49 := R48; R48 := R48["0xA4269DBC"]
+ 29 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 30 [-]: MOVE      R5 R1        ; R5 := R1
+ 31 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 32 [-]: NEWTABLE  R6 0 0       ; R6 := {}
+ 33 [-]: GETUPVAL  R7 U3        ; R7 := U3
+ 34 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["0x7B440FBB"]
+ 35 [-]: MOVE      R8 R5        ; R8 := R5
+ 36 [-]: LOADNIL   R9 R9        ; R9 := nil
+ 37 [-]: GETGLOBAL R10 K9       ; R10 := gGameRules
+ 38 [-]: SELF      R10 R10 K10  ; R11 := R10; R10 := R10["0xC17093D6"]
+ 39 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+ 40 [-]: CALL      R7 0 1       ; R7(R8,...)
+ 41 [-]: LOADK     R7 K11       ; R7 := 1
+ 42 [-]: LEN       R8 R5        ; R8 := # R5
+ 43 [-]: LOADK     R9 K11       ; R9 := 1
+ 44 [-]: FORPREP   R7 53        ; R7 -= R9; PC := 53
+ 45 [-]: GETGLOBAL R11 K12      ; R11 := table
+ 46 [-]: GETTABLE  R11 R11 K13  ; R11 := R11["0xE6450C9D"]
+ 47 [-]: MOVE      R12 R6       ; R12 := R6
+ 48 [-]: GETTABLE  R13 R5 R10   ; R13 := R5[R10]
+ 49 [-]: GETTABLE  R13 R13 K14  ; R13 := R13["Type"]
+ 50 [-]: SELF      R13 R13 K15  ; R14 := R13; R13 := R13["0x625DA4BB"]
+ 51 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
+ 52 [-]: CALL      R11 0 1      ; R11(R12,...)
+ 53 [-]: FORLOOP   R7 45        ; R7 += R9; if R7 <= R8 then begin PC := 45; R10 := R7 end
+ 54 [-]: GETUPVAL  R11 U3       ; R11 := U3
+ 55 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["0x52C8784B"]
+ 56 [-]: GETGLOBAL R12 K17      ; R12 := gGameData
+ 57 [-]: CALL      R11 2 5      ; R11,R12,R13,R14 := R11(R12)
+ 58 [-]: GETGLOBAL R15 K4       ; R15 := 0x400E7765
+ 59 [-]: MOVE      R16 R11      ; R16 := R11
+ 60 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 61 [-]: TEST      R15 1        ; if R15 then PC := 119
+ 62 [-]: JMP       119          ; PC := 119
+ 63 [-]: GETUPVAL  R15 U3       ; R15 := U3
+ 64 [-]: GETTABLE  R15 R15 K18  ; R15 := R15["0x68C19111"]
+ 65 [-]: GETGLOBAL R16 K17      ; R16 := gGameData
+ 66 [-]: MOVE      R17 R11      ; R17 := R11
+ 67 [-]: MOVE      R18 R1       ; R18 := R1
+ 68 [-]: CALL      R15 4 5      ; R15,R16,R17,R18 := R15(R16,R17,R18)
+ 69 [-]: GETGLOBAL R19 K4       ; R19 := 0x400E7765
+ 70 [-]: MOVE      R20 R18      ; R20 := R18
+ 71 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+ 72 [-]: TEST      R19 1        ; if R19 then PC := 119
+ 73 [-]: JMP       119          ; PC := 119
+ 74 [-]: NEWTABLE  R19 0 7      ; R19 := {}
+ 75 [-]: GETGLOBAL R20 K20      ; R20 := Lotus_Game
+ 76 [-]: GETTABLE  R20 R20 K21  ; R20 := R20["0xB880C02"]
+ 77 [-]: MOVE      R21 R18      ; R21 := R18
+ 78 [-]: LOADK     R22 K11      ; R22 := 1
+ 79 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
+ 80 [-]: SETTABLE  R19 K19 R20  ; R19["Key"] := R20
+ 81 [-]: SETTABLE  R19 K22 R11  ; R19["KeyChain"] := R11
+ 82 [-]: SETTABLE  R19 K14 R18  ; R19["Type"] := R18
+ 83 [-]: GETGLOBAL R20 K24      ; R20 := 0xCAA43ABB
+ 84 [-]: MOVE      R21 R18      ; R21 := R18
+ 85 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+ 86 [-]: SETTABLE  R19 K23 R20  ; R19["Anchor"] := R20
+ 87 [-]: GETGLOBAL R20 K26      ; R20 := 0xE6DC43B0
+ 88 [-]: GETGLOBAL R21 K27      ; R21 := 0x9FAED6BC
+ 89 [-]: SELF      R22 R18 K28  ; R23 := R18; R22 := R18["0x616C74B6"]
+ 90 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+ 91 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
+ 92 [-]: MOVE      R22 R0       ; R22 := R0
+ 93 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
+ 94 [-]: SETTABLE  R19 K25 R20  ; R19["Name"] := R20
+ 95 [-]: GETGLOBAL R20 K26      ; R20 := 0xE6DC43B0
+ 96 [-]: GETGLOBAL R21 K27      ; R21 := 0x9FAED6BC
+ 97 [-]: SELF      R22 R18 K30  ; R23 := R18; R22 := R18["0x42300EB5"]
+ 98 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+ 99 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
+100 [-]: MOVE      R22 R0       ; R22 := R0
+101 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
+102 [-]: SETTABLE  R19 K29 R20  ; R19["Description"] := R20
+103 [-]: SELF      R20 R11 K32  ; R21 := R11; R20 := R11["0xFD6CA2ED"]
+104 [-]: SUB       R22 R15 K11  ; R22 := R15 - 1
+105 [-]: MOVE      R23 R16      ; R23 := R16
+106 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
+107 [-]: SETTABLE  R19 K31 R20  ; R19["Difficulty"] := R20
+108 [-]: GETUPVAL  R20 U4       ; R20 := U4
+109 [-]: EQ        0 R11 R20    ; if R11 ~= R20 then PC := 114
+110 [-]: JMP       114          ; PC := 114
+111 [-]: SELF      R20 R18 K15  ; R21 := R18; R20 := R18["0x625DA4BB"]
+112 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+113 [-]: MOVE      R20 R5       ; R20 := R5
+114 [-]: GETGLOBAL R20 K12      ; R20 := table
+115 [-]: GETTABLE  R20 R20 K13  ; R20 := R20["0xE6450C9D"]
+116 [-]: MOVE      R21 R5       ; R21 := R5
+117 [-]: MOVE      R22 R19      ; R22 := R19
+118 [-]: CALL      R20 3 1      ; R20(R21,R22)
+119 [-]: LOADK     R20 K11      ; R20 := 1
+120 [-]: GETUPVAL  R21 U6       ; R21 := U6
+121 [-]: LEN       R21 R21      ; R21 := # R21
+122 [-]: LOADK     R22 K11      ; R22 := 1
+123 [-]: FORPREP   R20 163      ; R20 -= R22; PC := 163
+124 [-]: MOVE      R24 R0       ; R24 := R0
+125 [-]: GETUPVAL  R25 U6       ; R25 := U6
+126 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
+127 [-]: GETTABLE  R25 R25 K33  ; R25 := R25["name"]
+128 [-]: GETGLOBAL R26 K4       ; R26 := 0x400E7765
+129 [-]: GETUPVAL  R27 U6       ; R27 := U6
+130 [-]: GETTABLE  R27 R27 R23  ; R27 := R27[R23]
+131 [-]: GETTABLE  R27 R27 K34  ; R27 := R27["mission"]
+132 [-]: GETTABLE  R27 R27 K35  ; R27 := R27["levelKeyName"]
+133 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+134 [-]: TEST      R26 1        ; if R26 then PC := 146
+135 [-]: JMP       146          ; PC := 146
+136 [-]: MOVE      R24 R1       ; R24 := R1
+137 [-]: LOADK     R26 K11      ; R26 := 1
+138 [-]: LEN       R27 R6       ; R27 := # R6
+139 [-]: LOADK     R28 K11      ; R28 := 1
+140 [-]: FORPREP   R26 145      ; R26 -= R28; PC := 145
+141 [-]: GETTABLE  R30 R6 R29   ; R30 := R6[R29]
+142 [-]: EQ        0 R30 R25    ; if R30 ~= R25 then PC := 145
+143 [-]: JMP       145          ; PC := 145
+144 [-]: MOVE      R24 R0       ; R24 := R0
+145 [-]: FORLOOP   R26 141      ; R26 += R28; if R26 <= R27 then begin PC := 141; R29 := R26 end
+146 [-]: GETGLOBAL R30 K27      ; R30 := 0x9FAED6BC
+147 [-]: MOVE      R31 R25      ; R31 := R25
+148 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+149 [-]: MOVE      R25 R30      ; R25 := R30
+150 [-]: GETUPVAL  R30 U7       ; R30 := U7
+151 [-]: GETTABLE  R30 R30 K36  ; R30 := R30["Sectors"]
+152 [-]: GETTABLE  R30 R30 R25  ; R30 := R30[R25]
+153 [-]: EQ        0 R30 K0     ; if R30 ~= nil then PC := 157
+154 [-]: JMP       157          ; PC := 157
+155 [-]: GETUPVAL  R31 U6       ; R31 := U6
+156 [-]: GETTABLE  R30 R31 R23  ; R30 := R31[R23]
+157 [-]: TEST      R24 1        ; if R24 then PC := 163
+158 [-]: JMP       163          ; PC := 163
+159 [-]: GETUPVAL  R31 U8       ; R31 := U8
+160 [-]: SELF      R32 R30 K37  ; R33 := R30; R32 := R30["0xA4269DBC"]
+161 [-]: CALL      R32 2 0      ; R32,... := R32(R33)
+162 [-]: CALL      R31 0 1      ; R31(R32,...)
+163 [-]: FORLOOP   R20 124      ; R20 += R22; if R20 <= R21 then begin PC := 124; R23 := R20 end
+164 [-]: NEWTABLE  R31 0 0      ; R31 := {}
+165 [-]: LOADNIL   R32 R32      ; R32 := nil
+166 [-]: LOADK     R33 K11      ; R33 := 1
+167 [-]: LEN       R34 R5       ; R34 := # R5
+168 [-]: LOADK     R35 K11      ; R35 := 1
+169 [-]: FORPREP   R33 538      ; R33 -= R35; PC := 538
+170 [-]: GETGLOBAL R37 K38      ; R37 := 0x1BF588C6
+171 [-]: LOADK     R38 K39      ; R38 := 0
+172 [-]: CALL      R37 2 1      ; R37(R38)
+173 [-]: GETTABLE  R37 R5 R36   ; R37 := R5[R36]
+174 [-]: GETTABLE  R38 R37 K14  ; R38 := R37["Type"]
+175 [-]: SELF      R39 R38 K15  ; R40 := R38; R39 := R38["0x625DA4BB"]
+176 [-]: CALL      R39 2 2      ; R39 := R39(R40)
+177 [-]: SELF      R40 R38 K40  ; R41 := R38; R40 := R38["0xA26B0FA3"]
+178 [-]: CALL      R40 2 2      ; R40 := R40(R41)
+179 [-]: GETUPVAL  R41 U1       ; R41 := U1
+180 [-]: GETGLOBAL R42 K27      ; R42 := 0x9FAED6BC
+181 [-]: MOVE      R43 R39      ; R43 := R39
+182 [-]: CALL      R42 2 2      ; R42 := R42(R43)
+183 [-]: GETTABLE  R41 R41 R42  ; R41 := R41[R42]
+184 [-]: LOADNIL   R42 R42      ; R42 := nil
+185 [-]: EQ        1 R41 K0     ; if R41 == nil then PC := 189
+186 [-]: JMP       189          ; PC := 189
+187 [-]: GETTABLE  R42 R41 K41  ; R42 := R41["radialSector"]
+188 [-]: JMP       193          ; PC := 193
+189 [-]: GETGLOBAL R43 K20      ; R43 := Lotus_Game
+190 [-]: GETTABLE  R43 R43 K42  ; R43 := R43["0xAE448D50"]
+191 [-]: CALL      R43 1 2      ; R43 := R43()
+192 [-]: MOVE      R42 R43      ; R42 := R43
+193 [-]: MOVE      R43 R0       ; R43 := R0
+194 [-]: SELF      R44 R38 K43  ; R45 := R38; R44 := R38["0x9B16E6AD"]
+195 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+196 [-]: GETGLOBAL R45 K44      ; R45 := _T
+197 [-]: GETTABLE  R45 R45 K45  ; R45 := R45["REGION_ID_DOJO"]
+198 [-]: EQ        0 R44 R45    ; if R44 ~= R45 then PC := 227
+199 [-]: JMP       227          ; PC := 227
+200 [-]: GETUPVAL  R44 U9       ; R44 := U9
+201 [-]: GETTABLE  R44 R44 K46  ; R44 := R44["Active"]
+202 [-]: TEST      R44 0        ; if not R44 then PC := 210
+203 [-]: JMP       210          ; PC := 210
+204 [-]: GETGLOBAL R44 K48      ; R44 := 0xEC274B1A
+205 [-]: LOADK     R45 K49      ; R45 := "/Lotus/Language/Dojo/DryDockMapLabel"
+206 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+207 [-]: SETTABLE  R42 K47 R44  ; R42["locTag"] := R44
+208 [-]: MOVE      R43 R1       ; R43 := R1
+209 [-]: JMP       266          ; PC := 266
+210 [-]: GETGLOBAL R44 K50      ; R44 := gPlayerProfileMgr
+211 [-]: SELF      R44 R44 K51  ; R45 := R44; R44 := R44["0x21EF7B1A"]
+212 [-]: LOADK     R46 K39      ; R46 := 0
+213 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
+214 [-]: GETGLOBAL R45 K4       ; R45 := 0x400E7765
+215 [-]: MOVE      R46 R44      ; R46 := R44
+216 [-]: CALL      R45 2 2      ; R45 := R45(R46)
+217 [-]: TEST      R45 1        ; if R45 then PC := 266
+218 [-]: JMP       266          ; PC := 266
+219 [-]: GETGLOBAL R45 K48      ; R45 := 0xEC274B1A
+220 [-]: SELF      R46 R44 K52  ; R47 := R44; R46 := R44["0x654F1092"]
+221 [-]: CALL      R46 2 2      ; R46 := R46(R47)
+222 [-]: SELF      R46 R46 K53  ; R47 := R46; R46 := R46["0x6D176768"]
+223 [-]: CALL      R46 2 0      ; R46,... := R46(R47)
+224 [-]: CALL      R45 0 2      ; R45 := R45(R46,...)
+225 [-]: SETTABLE  R42 K47 R45  ; R42["locTag"] := R45
+226 [-]: JMP       266          ; PC := 266
+227 [-]: TEST      R40 1        ; if R40 then PC := 266
+228 [-]: JMP       266          ; PC := 266
+229 [-]: GETGLOBAL R45 K54      ; R45 := mMovie
+230 [-]: SELF      R45 R45 K55  ; R46 := R45; R45 := R45["0x5DB0BD4"]
+231 [-]: GETTABLE  R47 R37 K25  ; R47 := R37["Name"]
+232 [-]: MOVE      R48 R1       ; R48 := R1
+233 [-]: CALL      R45 4 2      ; R45 := R45(R46,R47,R48)
+234 [-]: GETTABLE  R46 R37 K14  ; R46 := R37["Type"]
+235 [-]: SELF      R46 R46 K56  ; R47 := R46; R46 := R46["0xB8637349"]
+236 [-]: CALL      R46 2 2      ; R46 := R46(R47)
+237 [-]: GETTABLE  R46 R46 K57  ; R46 := R46["uniqueName"]
+238 [-]: EQ        1 R46 K58    ; if R46 == "" then PC := 246
+239 [-]: JMP       246          ; PC := 246
+240 [-]: GETGLOBAL R47 K54      ; R47 := mMovie
+241 [-]: SELF      R47 R47 K55  ; R48 := R47; R47 := R47["0x5DB0BD4"]
+242 [-]: MOVE      R49 R46      ; R49 := R46
+243 [-]: MOVE      R50 R0       ; R50 := R0
+244 [-]: CALL      R47 4 2      ; R47 := R47(R48,R49,R50)
+245 [-]: MOVE      R45 R47      ; R45 := R47
+246 [-]: GETTABLE  R47 R37 K59  ; R47 := R37["Count"]
+247 [-]: TEST      R47 0        ; if not R47 then PC := 262
+248 [-]: JMP       262          ; PC := 262
+249 [-]: GETTABLE  R47 R37 K59  ; R47 := R37["Count"]
+250 [-]: LT        0 K11 R47    ; if 1 >= R47 then PC := 262
+251 [-]: JMP       262          ; PC := 262
+252 [-]: GETTABLE  R47 R37 K14  ; R47 := R37["Type"]
+253 [-]: SELF      R47 R47 K60  ; R48 := R47; R47 := R47["0x49F6C90A"]
+254 [-]: CALL      R47 2 2      ; R47 := R47(R48)
+255 [-]: TEST      R47 0        ; if not R47 then PC := 262
+256 [-]: JMP       262          ; PC := 262
+257 [-]: MOVE      R47 R45      ; R47 := R45
+258 [-]: LOADK     R48 K61      ; R48 := " ["
+259 [-]: GETTABLE  R49 R37 K59  ; R49 := R37["Count"]
+260 [-]: LOADK     R50 K62      ; R50 := "]"
+261 [-]: CONCAT    R45 R47 R50  ; R45 := R47 .. R48 .. R49 .. R50
+262 [-]: GETGLOBAL R47 K48      ; R47 := 0xEC274B1A
+263 [-]: MOVE      R48 R45      ; R48 := R45
+264 [-]: CALL      R47 2 2      ; R47 := R47(R48)
+265 [-]: SETTABLE  R42 K47 R47  ; R42["locTag"] := R47
+266 [-]: LOADNIL   R47 R47      ; R47 := nil
+267 [-]: TEST      R40 0        ; if not R40 then PC := 273
+268 [-]: JMP       273          ; PC := 273
+269 [-]: GETTABLE  R48 R42 K34  ; R48 := R42["mission"]
+270 [-]: SELF      R48 R48 K37  ; R49 := R48; R48 := R48["0xA4269DBC"]
+271 [-]: CALL      R48 2 2      ; R48 := R48(R49)
+272 [-]: MOVE      R47 R48      ; R47 := R48
+273 [-]: GETTABLE  R48 R37 K14  ; R48 := R37["Type"]
+274 [-]: SELF      R48 R48 K63  ; R49 := R48; R48 := R48["0x1B252E3C"]
 275 [-]: CALL      R48 2 2      ; R48 := R48(R49)
-276 [-]: MOVE      R47 R48      ; R47 := R48
-277 [-]: GETTABLE  R48 R37 K15  ; R48 := R37["Type"]
-278 [-]: SELF      R48 R48 K64  ; R49 := R48; R48 := R48["0x1B252E3C"]
-279 [-]: CALL      R48 2 2      ; R48 := R48(R49)
-280 [-]: GETGLOBAL R49 K65      ; R49 := string
-281 [-]: GETTABLE  R49 R49 K66  ; R49 := R49["0xDE44F664"]
-282 [-]: MOVE      R50 R48      ; R50 := R48
-283 [-]: LOADK     R51 K67      ; R51 := "Hub"
-284 [-]: CALL      R49 3 2      ; R49 := R49(R50,R51)
-285 [-]: TEST      R49 0        ; if not R49 then PC := 291
-286 [-]: JMP       291          ; PC := 291
-287 [-]: GETGLOBAL R49 K21      ; R49 := Lotus_Game
-288 [-]: GETTABLE  R49 R49 K69  ; R49 := R49["NT_HUB"]
-289 [-]: SETTABLE  R42 K68 R49  ; R42["nodeType"] := R49
-290 [-]: JMP       294          ; PC := 294
-291 [-]: GETGLOBAL R49 K21      ; R49 := Lotus_Game
-292 [-]: GETTABLE  R49 R49 K70  ; R49 := R49["NT_MISSION"]
-293 [-]: SETTABLE  R42 K68 R49  ; R42["nodeType"] := R49
-294 [-]: SETTABLE  R42 K71 K72  ; R42["unlocked"] := "0x1"
-295 [-]: GETTABLE  R49 R37 K15  ; R49 := R37["Type"]
-296 [-]: SELF      R49 R49 K57  ; R50 := R49; R49 := R49["0xB8637349"]
-297 [-]: CALL      R49 2 2      ; R49 := R49(R50)
-298 [-]: SELF      R49 R49 K38  ; R50 := R49; R49 := R49["0xA4269DBC"]
-299 [-]: CALL      R49 2 2      ; R49 := R49(R50)
-300 [-]: SETTABLE  R42 K35 R49  ; R42["mission"] := R49
-301 [-]: GETTABLE  R49 R42 K35  ; R49 := R42["mission"]
-302 [-]: GETGLOBAL R50 K73      ; R50 := 0x2C00D429
-303 [-]: GETTABLE  R51 R37 K15  ; R51 := R37["Type"]
-304 [-]: SELF      R51 R51 K64  ; R52 := R51; R51 := R51["0x1B252E3C"]
-305 [-]: CALL      R51 2 0      ; R51,... := R51(R52)
-306 [-]: CALL      R50 0 2      ; R50 := R50(R51,...)
-307 [-]: SETTABLE  R49 K36 R50  ; R49["levelKeyName"] := R50
-308 [-]: GETTABLE  R49 R37 K32  ; R49 := R37["Difficulty"]
-309 [-]: EQ        1 R49 K0     ; if R49 == nil then PC := 314
-310 [-]: JMP       314          ; PC := 314
-311 [-]: GETTABLE  R49 R42 K35  ; R49 := R42["mission"]
-312 [-]: GETTABLE  R50 R37 K32  ; R50 := R37["Difficulty"]
-313 [-]: SETTABLE  R49 K74 R50  ; R49["difficulty"] := R50
-314 [-]: GETTABLE  R49 R37 K23  ; R49 := R37["KeyChain"]
-315 [-]: SETTABLE  R42 K75 R49  ; R42["keyChain"] := R49
-316 [-]: LOADNIL   R49 R49      ; R49 := nil
-317 [-]: GETTABLE  R50 R37 K76  ; R50 := R37["RegionOverride"]
-318 [-]: EQ        1 R50 K0     ; if R50 == nil then PC := 322
-319 [-]: JMP       322          ; PC := 322
-320 [-]: GETTABLE  R49 R37 K76  ; R49 := R37["RegionOverride"]
-321 [-]: JMP       326          ; PC := 326
-322 [-]: GETTABLE  R50 R37 K15  ; R50 := R37["Type"]
-323 [-]: SELF      R50 R50 K44  ; R51 := R50; R50 := R50["0x9B16E6AD"]
-324 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-325 [-]: MOVE      R49 R50      ; R49 := R50
-326 [-]: GETUPVAL  R50 U11      ; R50 := U11
-327 [-]: LEN       R50 R50      ; R50 := # R50
-328 [-]: LE        0 R50 R49    ; if R50 > R49 then PC := 344
-329 [-]: JMP       344          ; PC := 344
-330 [-]: GETGLOBAL R50 K77      ; R50 := 0x93B1256B
-331 [-]: LOADK     R51 K78      ; R51 := "invalid region specified for key="
-332 [-]: GETGLOBAL R52 K28      ; R52 := 0x9FAED6BC
-333 [-]: GETTABLE  R53 R37 K15  ; R53 := R37["Type"]
-334 [-]: SELF      R53 R53 K64  ; R54 := R53; R53 := R53["0x1B252E3C"]
-335 [-]: CALL      R53 2 0      ; R53,... := R53(R54)
-336 [-]: CALL      R52 0 2      ; R52 := R52(R53,...)
-337 [-]: CONCAT    R51 R51 R52  ; R51 := R51 .. R52
-338 [-]: CALL      R50 2 1      ; R50(R51)
-339 [-]: GETUPVAL  R50 U4       ; R50 := U4
-340 [-]: SELF      R50 R50 K79  ; R51 := R50; R50 := R50["0xDF213CE1"]
-341 [-]: MOVE      R52 R39      ; R52 := R39
-342 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
-343 [-]: GETTABLE  R49 R50 K80  ; R49 := R50["region"]
-344 [-]: GETGLOBAL R50 K4       ; R50 := 0x400E7765
-345 [-]: MOVE      R51 R41      ; R51 := R41
-346 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-347 [-]: TEST      R50 0        ; if not R50 then PC := 455
-348 [-]: JMP       455          ; PC := 455
-349 [-]: GETTABLE  R50 R37 K15  ; R50 := R37["Type"]
-350 [-]: SELF      R50 R50 K81  ; R51 := R50; R50 := R50["0x8B598ED4"]
-351 [-]: GETUPVAL  R52 U12      ; R52 := U12
-352 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
-353 [-]: TEST      R50 1        ; if R50 then PC := 455
-354 [-]: JMP       455          ; PC := 455
-355 [-]: GETGLOBAL R50 K45      ; R50 := _T
-356 [-]: GETTABLE  R50 R50 K82  ; R50 := R50["REGION_ID_MOON"]
-357 [-]: EQ        0 R49 R50    ; if R49 ~= R50 then PC := 365
-358 [-]: JMP       365          ; PC := 365
-359 [-]: GETUPVAL  R50 U13      ; R50 := U13
-360 [-]: GETGLOBAL R51 K45      ; R51 := _T
-361 [-]: GETTABLE  R51 R51 K82  ; R51 := R51["REGION_ID_MOON"]
-362 [-]: GETTABLE  R50 R50 R51  ; R50 := R50[R51]
-363 [-]: EQ        1 R50 K72    ; if R50 == "0x1" then PC := 455
-364 [-]: JMP       455          ; PC := 455
-365 [-]: TEST      R43 0        ; if not R43 then PC := 372
-366 [-]: JMP       372          ; PC := 372
-367 [-]: GETGLOBAL R50 K49      ; R50 := 0xEC274B1A
-368 [-]: LOADK     R51 K83      ; R51 := "CrewBattleNodeDojo"
-369 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-370 [-]: SETTABLE  R42 K34 R50  ; R42["name"] := R50
-371 [-]: JMP       381          ; PC := 381
-372 [-]: GETGLOBAL R50 K49      ; R50 := 0xEC274B1A
-373 [-]: GETTABLE  R51 R37 K15  ; R51 := R37["Type"]
-374 [-]: SELF      R51 R51 K64  ; R52 := R51; R51 := R51["0x1B252E3C"]
-375 [-]: CALL      R51 2 2      ; R51 := R51(R52)
-376 [-]: GETUPVAL  R52 U5       ; R52 := U5
-377 [-]: GETTABLE  R52 R52 K84  ; R52 := R52["KEY_TAG"]
-378 [-]: CONCAT    R51 R51 R52  ; R51 := R51 .. R52
-379 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-380 [-]: SETTABLE  R42 K34 R50  ; R42["name"] := R50
-381 [-]: GETGLOBAL R50 K65      ; R50 := string
-382 [-]: GETTABLE  R50 R50 K66  ; R50 := R50["0xDE44F664"]
-383 [-]: MOVE      R51 R48      ; R51 := R48
-384 [-]: LOADK     R52 K67      ; R52 := "Hub"
-385 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
-386 [-]: TEST      R50 0        ; if not R50 then PC := 392
-387 [-]: JMP       392          ; PC := 392
-388 [-]: GETGLOBAL R50 K21      ; R50 := Lotus_Game
-389 [-]: GETTABLE  R50 R50 K69  ; R50 := R50["NT_HUB"]
-390 [-]: SETTABLE  R42 K68 R50  ; R42["nodeType"] := R50
-391 [-]: JMP       395          ; PC := 395
-392 [-]: GETGLOBAL R50 K21      ; R50 := Lotus_Game
-393 [-]: GETTABLE  R50 R50 K70  ; R50 := R50["NT_MISSION"]
-394 [-]: SETTABLE  R42 K68 R50  ; R42["nodeType"] := R50
-395 [-]: SETTABLE  R42 K80 R49  ; R42["region"] := R49
-396 [-]: GETTABLE  R50 R42 K80  ; R50 := R42["region"]
-397 [-]: GETTABLE  R50 R31 R50  ; R50 := R31[R50]
-398 [-]: EQ        0 R50 K0     ; if R50 ~= nil then PC := 402
-399 [-]: JMP       402          ; PC := 402
-400 [-]: GETTABLE  R50 R42 K80  ; R50 := R42["region"]
-401 [-]: SETTABLE  R31 R50 K40  ; R31[R50] := 0
-402 [-]: GETTABLE  R50 R37 K15  ; R50 := R37["Type"]
-403 [-]: SELF      R50 R50 K85  ; R51 := R50; R50 := R50["0x387DBBEB"]
-404 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-405 [-]: GETTABLE  R51 R50 K86  ; R51 := R50["x"]
-406 [-]: EQ        1 R51 K40    ; if R51 == 0 then PC := 416
-407 [-]: JMP       416          ; PC := 416
-408 [-]: GETTABLE  R51 R50 K87  ; R51 := R50["y"]
-409 [-]: EQ        1 R51 K40    ; if R51 == 0 then PC := 416
-410 [-]: JMP       416          ; PC := 416
-411 [-]: GETTABLE  R51 R50 K88  ; R51 := R50["z"]
-412 [-]: EQ        1 R51 K40    ; if R51 == 0 then PC := 416
-413 [-]: JMP       416          ; PC := 416
-414 [-]: SETTABLE  R42 K89 R50  ; R42["pos"] := R50
-415 [-]: JMP       432          ; PC := 432
-416 [-]: GETUPVAL  R51 U11      ; R51 := U11
-417 [-]: GETTABLE  R52 R42 K80  ; R52 := R42["region"]
-418 [-]: GETTABLE  R51 R51 R52  ; R51 := R51[R52]
-419 [-]: GETTABLE  R51 R51 K89  ; R51 := R51["pos"]
-420 [-]: GETGLOBAL R52 K90      ; R52 := 0x221C9700
-421 [-]: GETTABLE  R53 R42 K80  ; R53 := R42["region"]
-422 [-]: GETTABLE  R53 R31 R53  ; R53 := R31[R53]
-423 [-]: MUL       R53 R53 K91  ; R53 := R53 * 0.019999999552965
-424 [-]: GETTABLE  R54 R42 K80  ; R54 := R42["region"]
-425 [-]: GETTABLE  R54 R31 R54  ; R54 := R31[R54]
-426 [-]: UNM       R54 R54      ; R54 := - R54
-427 [-]: MUL       R54 R54 K91  ; R54 := R54 * 0.019999999552965
-428 [-]: LOADK     R55 K40      ; R55 := 0
-429 [-]: CALL      R52 4 2      ; R52 := R52(R53,R54,R55)
-430 [-]: ADD       R51 R51 R52  ; R51 := R51 + R52
-431 [-]: SETTABLE  R42 K89 R51  ; R42["pos"] := R51
-432 [-]: GETTABLE  R51 R37 K92  ; R51 := R37["DecoOverride"]
-433 [-]: EQ        1 R51 K0     ; if R51 == nil then PC := 439
-434 [-]: JMP       439          ; PC := 439
-435 [-]: GETTABLE  R51 R37 K92  ; R51 := R37["DecoOverride"]
-436 [-]: SETTABLE  R42 K3 R51   ; R42["deco"] := R51
-437 [-]: GETTABLE  R51 R37 K94  ; R51 := R37["DecoScale"]
-438 [-]: SETTABLE  R42 K93 R51  ; R42["scale"] := R51
-439 [-]: GETTABLE  R51 R37 K95  ; R51 := R37["NodeOffset"]
-440 [-]: EQ        1 R51 K0     ; if R51 == nil then PC := 446
-441 [-]: JMP       446          ; PC := 446
-442 [-]: GETTABLE  R51 R42 K89  ; R51 := R42["pos"]
-443 [-]: GETTABLE  R52 R37 K95  ; R52 := R37["NodeOffset"]
-444 [-]: ADD       R51 R51 R52  ; R51 := R51 + R52
-445 [-]: SETTABLE  R42 K89 R51  ; R42["pos"] := R51
-446 [-]: GETTABLE  R51 R42 K80  ; R51 := R42["region"]
-447 [-]: GETTABLE  R52 R42 K80  ; R52 := R42["region"]
-448 [-]: GETTABLE  R52 R31 R52  ; R52 := R31[R52]
-449 [-]: ADD       R52 R52 K12  ; R52 := R52 + 1
-450 [-]: SETTABLE  R31 R51 R52  ; R31[R51] := R52
-451 [-]: GETUPVAL  R51 U9       ; R51 := U9
-452 [-]: MOVE      R52 R42      ; R52 := R42
+276 [-]: GETGLOBAL R49 K64      ; R49 := string
+277 [-]: GETTABLE  R49 R49 K65  ; R49 := R49["0xDE44F664"]
+278 [-]: MOVE      R50 R48      ; R50 := R48
+279 [-]: LOADK     R51 K66      ; R51 := "Hub"
+280 [-]: CALL      R49 3 2      ; R49 := R49(R50,R51)
+281 [-]: TEST      R49 0        ; if not R49 then PC := 287
+282 [-]: JMP       287          ; PC := 287
+283 [-]: GETGLOBAL R49 K20      ; R49 := Lotus_Game
+284 [-]: GETTABLE  R49 R49 K68  ; R49 := R49["NT_HUB"]
+285 [-]: SETTABLE  R42 K67 R49  ; R42["nodeType"] := R49
+286 [-]: JMP       290          ; PC := 290
+287 [-]: GETGLOBAL R49 K20      ; R49 := Lotus_Game
+288 [-]: GETTABLE  R49 R49 K69  ; R49 := R49["NT_MISSION"]
+289 [-]: SETTABLE  R42 K67 R49  ; R42["nodeType"] := R49
+290 [-]: SETTABLE  R42 K70 K71  ; R42["unlocked"] := "0x1"
+291 [-]: GETTABLE  R49 R37 K14  ; R49 := R37["Type"]
+292 [-]: SELF      R49 R49 K56  ; R50 := R49; R49 := R49["0xB8637349"]
+293 [-]: CALL      R49 2 2      ; R49 := R49(R50)
+294 [-]: SELF      R49 R49 K37  ; R50 := R49; R49 := R49["0xA4269DBC"]
+295 [-]: CALL      R49 2 2      ; R49 := R49(R50)
+296 [-]: SETTABLE  R42 K34 R49  ; R42["mission"] := R49
+297 [-]: GETTABLE  R49 R42 K34  ; R49 := R42["mission"]
+298 [-]: GETGLOBAL R50 K72      ; R50 := 0x2C00D429
+299 [-]: GETTABLE  R51 R37 K14  ; R51 := R37["Type"]
+300 [-]: SELF      R51 R51 K63  ; R52 := R51; R51 := R51["0x1B252E3C"]
+301 [-]: CALL      R51 2 0      ; R51,... := R51(R52)
+302 [-]: CALL      R50 0 2      ; R50 := R50(R51,...)
+303 [-]: SETTABLE  R49 K35 R50  ; R49["levelKeyName"] := R50
+304 [-]: GETTABLE  R49 R37 K31  ; R49 := R37["Difficulty"]
+305 [-]: EQ        1 R49 K0     ; if R49 == nil then PC := 310
+306 [-]: JMP       310          ; PC := 310
+307 [-]: GETTABLE  R49 R42 K34  ; R49 := R42["mission"]
+308 [-]: GETTABLE  R50 R37 K31  ; R50 := R37["Difficulty"]
+309 [-]: SETTABLE  R49 K73 R50  ; R49["difficulty"] := R50
+310 [-]: GETTABLE  R49 R37 K22  ; R49 := R37["KeyChain"]
+311 [-]: SETTABLE  R42 K74 R49  ; R42["keyChain"] := R49
+312 [-]: LOADNIL   R49 R49      ; R49 := nil
+313 [-]: GETTABLE  R50 R37 K75  ; R50 := R37["RegionOverride"]
+314 [-]: EQ        1 R50 K0     ; if R50 == nil then PC := 318
+315 [-]: JMP       318          ; PC := 318
+316 [-]: GETTABLE  R49 R37 K75  ; R49 := R37["RegionOverride"]
+317 [-]: JMP       322          ; PC := 322
+318 [-]: GETTABLE  R50 R37 K14  ; R50 := R37["Type"]
+319 [-]: SELF      R50 R50 K43  ; R51 := R50; R50 := R50["0x9B16E6AD"]
+320 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+321 [-]: MOVE      R49 R50      ; R49 := R50
+322 [-]: GETUPVAL  R50 U10      ; R50 := U10
+323 [-]: LEN       R50 R50      ; R50 := # R50
+324 [-]: LE        0 R50 R49    ; if R50 > R49 then PC := 340
+325 [-]: JMP       340          ; PC := 340
+326 [-]: GETGLOBAL R50 K76      ; R50 := 0x93B1256B
+327 [-]: LOADK     R51 K77      ; R51 := "invalid region specified for key="
+328 [-]: GETGLOBAL R52 K27      ; R52 := 0x9FAED6BC
+329 [-]: GETTABLE  R53 R37 K14  ; R53 := R37["Type"]
+330 [-]: SELF      R53 R53 K63  ; R54 := R53; R53 := R53["0x1B252E3C"]
+331 [-]: CALL      R53 2 0      ; R53,... := R53(R54)
+332 [-]: CALL      R52 0 2      ; R52 := R52(R53,...)
+333 [-]: CONCAT    R51 R51 R52  ; R51 := R51 .. R52
+334 [-]: CALL      R50 2 1      ; R50(R51)
+335 [-]: GETUPVAL  R50 U11      ; R50 := U11
+336 [-]: SELF      R50 R50 K78  ; R51 := R50; R50 := R50["0xDF213CE1"]
+337 [-]: MOVE      R52 R39      ; R52 := R39
+338 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
+339 [-]: GETTABLE  R49 R50 K79  ; R49 := R50["region"]
+340 [-]: GETGLOBAL R50 K4       ; R50 := 0x400E7765
+341 [-]: MOVE      R51 R41      ; R51 := R41
+342 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+343 [-]: TEST      R50 0        ; if not R50 then PC := 451
+344 [-]: JMP       451          ; PC := 451
+345 [-]: GETTABLE  R50 R37 K14  ; R50 := R37["Type"]
+346 [-]: SELF      R50 R50 K80  ; R51 := R50; R50 := R50["0x8B598ED4"]
+347 [-]: GETUPVAL  R52 U12      ; R52 := U12
+348 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
+349 [-]: TEST      R50 1        ; if R50 then PC := 451
+350 [-]: JMP       451          ; PC := 451
+351 [-]: GETGLOBAL R50 K44      ; R50 := _T
+352 [-]: GETTABLE  R50 R50 K81  ; R50 := R50["REGION_ID_MOON"]
+353 [-]: EQ        0 R49 R50    ; if R49 ~= R50 then PC := 361
+354 [-]: JMP       361          ; PC := 361
+355 [-]: GETUPVAL  R50 U13      ; R50 := U13
+356 [-]: GETGLOBAL R51 K44      ; R51 := _T
+357 [-]: GETTABLE  R51 R51 K81  ; R51 := R51["REGION_ID_MOON"]
+358 [-]: GETTABLE  R50 R50 R51  ; R50 := R50[R51]
+359 [-]: EQ        1 R50 K71    ; if R50 == "0x1" then PC := 451
+360 [-]: JMP       451          ; PC := 451
+361 [-]: TEST      R43 0        ; if not R43 then PC := 368
+362 [-]: JMP       368          ; PC := 368
+363 [-]: GETGLOBAL R50 K48      ; R50 := 0xEC274B1A
+364 [-]: LOADK     R51 K82      ; R51 := "CrewBattleNodeDojo"
+365 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+366 [-]: SETTABLE  R42 K33 R50  ; R42["name"] := R50
+367 [-]: JMP       377          ; PC := 377
+368 [-]: GETGLOBAL R50 K48      ; R50 := 0xEC274B1A
+369 [-]: GETTABLE  R51 R37 K14  ; R51 := R37["Type"]
+370 [-]: SELF      R51 R51 K63  ; R52 := R51; R51 := R51["0x1B252E3C"]
+371 [-]: CALL      R51 2 2      ; R51 := R51(R52)
+372 [-]: GETUPVAL  R52 U3       ; R52 := U3
+373 [-]: GETTABLE  R52 R52 K83  ; R52 := R52["KEY_TAG"]
+374 [-]: CONCAT    R51 R51 R52  ; R51 := R51 .. R52
+375 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+376 [-]: SETTABLE  R42 K33 R50  ; R42["name"] := R50
+377 [-]: GETGLOBAL R50 K64      ; R50 := string
+378 [-]: GETTABLE  R50 R50 K65  ; R50 := R50["0xDE44F664"]
+379 [-]: MOVE      R51 R48      ; R51 := R48
+380 [-]: LOADK     R52 K66      ; R52 := "Hub"
+381 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
+382 [-]: TEST      R50 0        ; if not R50 then PC := 388
+383 [-]: JMP       388          ; PC := 388
+384 [-]: GETGLOBAL R50 K20      ; R50 := Lotus_Game
+385 [-]: GETTABLE  R50 R50 K68  ; R50 := R50["NT_HUB"]
+386 [-]: SETTABLE  R42 K67 R50  ; R42["nodeType"] := R50
+387 [-]: JMP       391          ; PC := 391
+388 [-]: GETGLOBAL R50 K20      ; R50 := Lotus_Game
+389 [-]: GETTABLE  R50 R50 K69  ; R50 := R50["NT_MISSION"]
+390 [-]: SETTABLE  R42 K67 R50  ; R42["nodeType"] := R50
+391 [-]: SETTABLE  R42 K79 R49  ; R42["region"] := R49
+392 [-]: GETTABLE  R50 R42 K79  ; R50 := R42["region"]
+393 [-]: GETTABLE  R50 R31 R50  ; R50 := R31[R50]
+394 [-]: EQ        0 R50 K0     ; if R50 ~= nil then PC := 398
+395 [-]: JMP       398          ; PC := 398
+396 [-]: GETTABLE  R50 R42 K79  ; R50 := R42["region"]
+397 [-]: SETTABLE  R31 R50 K39  ; R31[R50] := 0
+398 [-]: GETTABLE  R50 R37 K14  ; R50 := R37["Type"]
+399 [-]: SELF      R50 R50 K84  ; R51 := R50; R50 := R50["0x387DBBEB"]
+400 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+401 [-]: GETTABLE  R51 R50 K85  ; R51 := R50["x"]
+402 [-]: EQ        1 R51 K39    ; if R51 == 0 then PC := 412
+403 [-]: JMP       412          ; PC := 412
+404 [-]: GETTABLE  R51 R50 K86  ; R51 := R50["y"]
+405 [-]: EQ        1 R51 K39    ; if R51 == 0 then PC := 412
+406 [-]: JMP       412          ; PC := 412
+407 [-]: GETTABLE  R51 R50 K87  ; R51 := R50["z"]
+408 [-]: EQ        1 R51 K39    ; if R51 == 0 then PC := 412
+409 [-]: JMP       412          ; PC := 412
+410 [-]: SETTABLE  R42 K88 R50  ; R42["pos"] := R50
+411 [-]: JMP       428          ; PC := 428
+412 [-]: GETUPVAL  R51 U10      ; R51 := U10
+413 [-]: GETTABLE  R52 R42 K79  ; R52 := R42["region"]
+414 [-]: GETTABLE  R51 R51 R52  ; R51 := R51[R52]
+415 [-]: GETTABLE  R51 R51 K88  ; R51 := R51["pos"]
+416 [-]: GETGLOBAL R52 K89      ; R52 := 0x221C9700
+417 [-]: GETTABLE  R53 R42 K79  ; R53 := R42["region"]
+418 [-]: GETTABLE  R53 R31 R53  ; R53 := R31[R53]
+419 [-]: MUL       R53 R53 K90  ; R53 := R53 * 0.019999999552965
+420 [-]: GETTABLE  R54 R42 K79  ; R54 := R42["region"]
+421 [-]: GETTABLE  R54 R31 R54  ; R54 := R31[R54]
+422 [-]: UNM       R54 R54      ; R54 := - R54
+423 [-]: MUL       R54 R54 K90  ; R54 := R54 * 0.019999999552965
+424 [-]: LOADK     R55 K39      ; R55 := 0
+425 [-]: CALL      R52 4 2      ; R52 := R52(R53,R54,R55)
+426 [-]: ADD       R51 R51 R52  ; R51 := R51 + R52
+427 [-]: SETTABLE  R42 K88 R51  ; R42["pos"] := R51
+428 [-]: GETTABLE  R51 R37 K91  ; R51 := R37["DecoOverride"]
+429 [-]: EQ        1 R51 K0     ; if R51 == nil then PC := 435
+430 [-]: JMP       435          ; PC := 435
+431 [-]: GETTABLE  R51 R37 K91  ; R51 := R37["DecoOverride"]
+432 [-]: SETTABLE  R42 K3 R51   ; R42["deco"] := R51
+433 [-]: GETTABLE  R51 R37 K93  ; R51 := R37["DecoScale"]
+434 [-]: SETTABLE  R42 K92 R51  ; R42["scale"] := R51
+435 [-]: GETTABLE  R51 R37 K94  ; R51 := R37["NodeOffset"]
+436 [-]: EQ        1 R51 K0     ; if R51 == nil then PC := 442
+437 [-]: JMP       442          ; PC := 442
+438 [-]: GETTABLE  R51 R42 K88  ; R51 := R42["pos"]
+439 [-]: GETTABLE  R52 R37 K94  ; R52 := R37["NodeOffset"]
+440 [-]: ADD       R51 R51 R52  ; R51 := R51 + R52
+441 [-]: SETTABLE  R42 K88 R51  ; R42["pos"] := R51
+442 [-]: GETTABLE  R51 R42 K79  ; R51 := R42["region"]
+443 [-]: GETTABLE  R52 R42 K79  ; R52 := R42["region"]
+444 [-]: GETTABLE  R52 R31 R52  ; R52 := R31[R52]
+445 [-]: ADD       R52 R52 K11  ; R52 := R52 + 1
+446 [-]: SETTABLE  R31 R51 R52  ; R31[R51] := R52
+447 [-]: GETUPVAL  R51 U8       ; R51 := U8
+448 [-]: MOVE      R52 R42      ; R52 := R42
+449 [-]: CALL      R51 2 2      ; R51 := R51(R52)
+450 [-]: MOVE      R41 R51      ; R41 := R51
+451 [-]: GETGLOBAL R51 K4       ; R51 := 0x400E7765
+452 [-]: MOVE      R52 R41      ; R52 := R41
 453 [-]: CALL      R51 2 2      ; R51 := R51(R52)
-454 [-]: MOVE      R41 R51      ; R41 := R51
-455 [-]: GETGLOBAL R51 K4       ; R51 := 0x400E7765
-456 [-]: MOVE      R52 R41      ; R52 := R41
-457 [-]: CALL      R51 2 2      ; R51 := R51(R52)
-458 [-]: TEST      R51 1        ; if R51 then PC := 542
-459 [-]: JMP       542          ; PC := 542
-460 [-]: TEST      R40 1        ; if R40 then PC := 475
-461 [-]: JMP       475          ; PC := 475
-462 [-]: GETTABLE  R51 R42 K34  ; R51 := R42["name"]
-463 [-]: SETTABLE  R41 K34 R51  ; R41["name"] := R51
-464 [-]: GETGLOBAL R51 K65      ; R51 := string
-465 [-]: GETTABLE  R51 R51 K97  ; R51 := R51["0x639C642A"]
-466 [-]: GETGLOBAL R52 K55      ; R52 := mMovie
-467 [-]: SELF      R52 R52 K56  ; R53 := R52; R52 := R52["0x5DB0BD4"]
-468 [-]: GETTABLE  R54 R42 K48  ; R54 := R42["locTag"]
-469 [-]: SELF      R54 R54 K98  ; R55 := R54; R54 := R54["0x5EC7A3D2"]
-470 [-]: CALL      R54 2 2      ; R54 := R54(R55)
-471 [-]: MOVE      R55 R0       ; R55 := R0
-472 [-]: CALL      R52 4 0      ; R52,... := R52(R53,R54,R55)
-473 [-]: CALL      R51 0 2      ; R51 := R51(R52,...)
-474 [-]: SETTABLE  R41 K96 R51  ; R41["locName"] := R51
-475 [-]: GETGLOBAL R51 K4       ; R51 := 0x400E7765
-476 [-]: GETTABLE  R52 R37 K23  ; R52 := R37["KeyChain"]
-477 [-]: CALL      R51 2 2      ; R51 := R51(R52)
-478 [-]: TEST      R51 1        ; if R51 then PC := 482
-479 [-]: JMP       482          ; PC := 482
-480 [-]: SETTABLE  R41 K99 K100 ; R41["completed"] := "0x0"
-481 [-]: JMP       522          ; PC := 522
-482 [-]: GETTABLE  R51 R41 K99  ; R51 := R41["completed"]
-483 [-]: TEST      R51 1        ; if R51 then PC := 522
-484 [-]: JMP       522          ; PC := 522
-485 [-]: GETTABLE  R51 R37 K15  ; R51 := R37["Type"]
-486 [-]: SELF      R51 R51 K16  ; R52 := R51; R51 := R51["0x625DA4BB"]
-487 [-]: CALL      R51 2 2      ; R51 := R51(R52)
-488 [-]: SELF      R52 R39 K101 ; R53 := R39; R52 := R39["0x315E860F"]
-489 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-490 [-]: TEST      R52 0        ; if not R52 then PC := 522
-491 [-]: JMP       522          ; PC := 522
-492 [-]: EQ        0 R32 K0     ; if R32 ~= nil then PC := 503
-493 [-]: JMP       503          ; PC := 503
-494 [-]: GETGLOBAL R52 K51      ; R52 := gPlayerProfileMgr
-495 [-]: SELF      R52 R52 K52  ; R53 := R52; R52 := R52["0x21EF7B1A"]
-496 [-]: LOADK     R54 K40      ; R54 := 0
-497 [-]: CALL      R52 3 2      ; R52 := R52(R53,R54)
-498 [-]: SELF      R52 R52 K53  ; R53 := R52; R52 := R52["0x654F1092"]
-499 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-500 [-]: SELF      R52 R52 K102 ; R53 := R52; R52 := R52["0xC92135A6"]
-501 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-502 [-]: MOVE      R32 R52      ; R32 := R52
-503 [-]: GETGLOBAL R52 K1       ; R52 := 0xECFDD17
-504 [-]: MOVE      R53 R32      ; R53 := R32
-505 [-]: CALL      R52 2 4      ; R52,R53,R54 := R52(R53)
-506 [-]: JMP       520          ; PC := 520
-507 [-]: GETTABLE  R57 R56 K103 ; R57 := R56["mTag"]
-508 [-]: EQ        0 R57 R51    ; if R57 ~= R51 then PC := 520
-509 [-]: JMP       520          ; PC := 520
-510 [-]: GETTABLE  R57 R56 K104 ; R57 := R56["mCompletes"]
-511 [-]: LT        1 K40 R57    ; if 0 < R57 then PC := 514
-512 [-]: JMP       514          ; PC := 514
-513 [-]: MOVE      R57 R0       ; R57 := R0
-514 [-]: MOVE      R57 R1       ; R57 := R1
-515 [-]: SETTABLE  R41 K99 R57  ; R41["completed"] := R57
-516 [-]: GETTABLE  R57 R41 K42  ; R57 := R41["radialSector"]
-517 [-]: GETTABLE  R58 R56 K104 ; R58 := R56["mCompletes"]
-518 [-]: SETTABLE  R57 K105 R58 ; R57["missionsCompleted"] := R58
-519 [-]: JMP       522          ; PC := 522
-520 [-]: TFORLOOP  R52 2        ; R55,R56 :=  R52(R53,R54); if R55 ~= nil then begin PC = 507; R54 := R55 end
-521 [-]: JMP       507          ; PC := 507
-522 [-]: SETTABLE  R41 K106 K100; R41["locked"] := "0x0"
-523 [-]: SETTABLE  R41 K107 K72 ; R41["visibleLabel"] := "0x1"
-524 [-]: SETTABLE  R41 K108 K100; R41["isEmpty"] := "0x0"
-525 [-]: TEST      R40 0        ; if not R40 then PC := 528
-526 [-]: JMP       528          ; PC := 528
-527 [-]: SETTABLE  R41 K109 R47 ; R41["displayMissionOverride"] := R47
-528 [-]: GETTABLE  R57 R37 K32  ; R57 := R37["Difficulty"]
-529 [-]: EQ        1 R57 K0     ; if R57 == nil then PC := 542
-530 [-]: JMP       542          ; PC := 542
-531 [-]: GETTABLE  R57 R41 K42  ; R57 := R41["radialSector"]
-532 [-]: GETTABLE  R57 R57 K35  ; R57 := R57["mission"]
-533 [-]: GETTABLE  R58 R37 K32  ; R58 := R37["Difficulty"]
-534 [-]: SETTABLE  R57 K74 R58  ; R57["difficulty"] := R58
-535 [-]: GETUPVAL  R57 U0       ; R57 := U0
-536 [-]: GETTABLE  R58 R41 K110 ; R58 := R41["id"]
-537 [-]: GETTABLE  R57 R57 R58  ; R57 := R57[R58]
-538 [-]: GETTABLE  R57 R57 K42  ; R57 := R57["radialSector"]
-539 [-]: GETTABLE  R57 R57 K35  ; R57 := R57["mission"]
-540 [-]: GETTABLE  R58 R37 K32  ; R58 := R37["Difficulty"]
-541 [-]: SETTABLE  R57 K74 R58  ; R57["difficulty"] := R58
-542 [-]: FORLOOP   R33 174      ; R33 += R35; if R33 <= R34 then begin PC := 174; R36 := R33 end
-543 [-]: GETUPVAL  R57 U10      ; R57 := U10
-544 [-]: GETTABLE  R57 R57 K47  ; R57 := R57["Active"]
-545 [-]: TEST      R57 1        ; if R57 then PC := 622
-546 [-]: JMP       622          ; PC := 622
-547 [-]: GETGLOBAL R57 K51      ; R57 := gPlayerProfileMgr
-548 [-]: SELF      R57 R57 K52  ; R58 := R57; R57 := R57["0x21EF7B1A"]
-549 [-]: LOADK     R59 K40      ; R59 := 0
-550 [-]: CALL      R57 3 2      ; R57 := R57(R58,R59)
-551 [-]: SELF      R57 R57 K53  ; R58 := R57; R57 := R57["0x654F1092"]
-552 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-553 [-]: SELF      R57 R57 K111 ; R58 := R57; R57 := R57["0x2D0B8A86"]
-554 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-555 [-]: GETTABLE  R57 R57 K112 ; R57 := R57["mFeaturedGuilds"]
-556 [-]: LOADK     R58 K12      ; R58 := 1
-557 [-]: LEN       R59 R57      ; R59 := # R57
-558 [-]: LOADK     R60 K12      ; R60 := 1
-559 [-]: FORPREP   R58 621      ; R58 -= R60; PC := 621
-560 [-]: GETGLOBAL R62 K21      ; R62 := Lotus_Game
-561 [-]: GETTABLE  R62 R62 K43  ; R62 := R62["0xAE448D50"]
-562 [-]: CALL      R62 1 2      ; R62 := R62()
-563 [-]: GETUPVAL  R63 U14      ; R63 := U14
-564 [-]: GETTABLE  R63 R63 K113 ; R63 := R63["0xF81722A2"]
-565 [-]: GETUPVAL  R64 U14      ; R64 := U14
-566 [-]: GETTABLE  R64 R64 K114 ; R64 := R64["0x36BA5F48"]
-567 [-]: CALL      R64 1 2      ; R64 := R64()
-568 [-]: GETGLOBAL R65 K49      ; R65 := 0xEC274B1A
-569 [-]: LOADK     R66 K115     ; R66 := "/Lotus/Language/Clan/Clan_DOJO"
-570 [-]: CALL      R65 2 2      ; R65 := R65(R66)
-571 [-]: GETGLOBAL R66 K49      ; R66 := 0xEC274B1A
-572 [-]: GETTABLE  R67 R57 R61  ; R67 := R57[R61]
-573 [-]: GETTABLE  R67 R67 K116 ; R67 := R67["mName"]
-574 [-]: CALL      R66 2 0      ; R66,... := R66(R67)
-575 [-]: CALL      R63 0 2      ; R63 := R63(R64,...)
-576 [-]: SETTABLE  R62 K48 R63  ; R62["locTag"] := R63
-577 [-]: GETGLOBAL R63 K21      ; R63 := Lotus_Game
-578 [-]: GETTABLE  R63 R63 K69  ; R63 := R63["NT_HUB"]
-579 [-]: SETTABLE  R62 K68 R63  ; R62["nodeType"] := R63
-580 [-]: SETTABLE  R62 K71 K72  ; R62["unlocked"] := "0x1"
-581 [-]: GETGLOBAL R63 K49      ; R63 := 0xEC274B1A
-582 [-]: LOADK     R64 K117     ; R64 := "FeaturedDojoTier"
-583 [-]: MOVE      R65 R61      ; R65 := R61
-584 [-]: CONCAT    R64 R64 R65  ; R64 := R64 .. R65
-585 [-]: CALL      R63 2 2      ; R63 := R63(R64)
-586 [-]: SETTABLE  R62 K34 R63  ; R62["name"] := R63
-587 [-]: GETUPVAL  R63 U11      ; R63 := U11
-588 [-]: GETTABLE  R63 R63 K118 ; R63 := R63[14]
-589 [-]: GETTABLE  R63 R63 K89  ; R63 := R63["pos"]
-590 [-]: GETGLOBAL R64 K119     ; R64 := 0x4CBE9A09
-591 [-]: GETGLOBAL R65 K90      ; R65 := 0x221C9700
-592 [-]: LOADK     R66 K40      ; R66 := 0
-593 [-]: LOADK     R67 K120     ; R67 := -0.15999999642372
-594 [-]: LOADK     R68 K40      ; R68 := 0
-595 [-]: CALL      R65 4 2      ; R65 := R65(R66,R67,R68)
-596 [-]: GETGLOBAL R66 K121     ; R66 := 0x1E4F6281
-597 [-]: LOADK     R67 K40      ; R67 := 0
-598 [-]: LOADK     R68 K40      ; R68 := 0
-599 [-]: LEN       R69 R57      ; R69 := # R57
-600 [-]: SUB       R69 R69 K12  ; R69 := R69 - 1
-601 [-]: DIV       R69 R69 K122 ; R69 := R69 / 2
-602 [-]: SUB       R69 R69 R61  ; R69 := R69 - R61
-603 [-]: ADD       R69 R69 K12  ; R69 := R69 + 1
-604 [-]: MUL       R69 K123 R69 ; R69 := -30 * R69
-605 [-]: CALL      R66 4 0      ; R66,... := R66(R67,R68,R69)
-606 [-]: CALL      R64 0 2      ; R64 := R64(R65,...)
-607 [-]: ADD       R63 R63 R64  ; R63 := R63 + R64
-608 [-]: SETTABLE  R62 K89 R63  ; R62["pos"] := R63
-609 [-]: GETUPVAL  R63 U9       ; R63 := U9
-610 [-]: MOVE      R64 R62      ; R64 := R62
-611 [-]: NEWTABLE  R65 0 3      ; R65 := {}
+454 [-]: TEST      R51 1        ; if R51 then PC := 538
+455 [-]: JMP       538          ; PC := 538
+456 [-]: TEST      R40 1        ; if R40 then PC := 471
+457 [-]: JMP       471          ; PC := 471
+458 [-]: GETTABLE  R51 R42 K33  ; R51 := R42["name"]
+459 [-]: SETTABLE  R41 K33 R51  ; R41["name"] := R51
+460 [-]: GETGLOBAL R51 K64      ; R51 := string
+461 [-]: GETTABLE  R51 R51 K96  ; R51 := R51["0x639C642A"]
+462 [-]: GETGLOBAL R52 K54      ; R52 := mMovie
+463 [-]: SELF      R52 R52 K55  ; R53 := R52; R52 := R52["0x5DB0BD4"]
+464 [-]: GETTABLE  R54 R42 K47  ; R54 := R42["locTag"]
+465 [-]: SELF      R54 R54 K97  ; R55 := R54; R54 := R54["0x5EC7A3D2"]
+466 [-]: CALL      R54 2 2      ; R54 := R54(R55)
+467 [-]: MOVE      R55 R0       ; R55 := R0
+468 [-]: CALL      R52 4 0      ; R52,... := R52(R53,R54,R55)
+469 [-]: CALL      R51 0 2      ; R51 := R51(R52,...)
+470 [-]: SETTABLE  R41 K95 R51  ; R41["locName"] := R51
+471 [-]: GETGLOBAL R51 K4       ; R51 := 0x400E7765
+472 [-]: GETTABLE  R52 R37 K22  ; R52 := R37["KeyChain"]
+473 [-]: CALL      R51 2 2      ; R51 := R51(R52)
+474 [-]: TEST      R51 1        ; if R51 then PC := 478
+475 [-]: JMP       478          ; PC := 478
+476 [-]: SETTABLE  R41 K98 K99  ; R41["completed"] := "0x0"
+477 [-]: JMP       518          ; PC := 518
+478 [-]: GETTABLE  R51 R41 K98  ; R51 := R41["completed"]
+479 [-]: TEST      R51 1        ; if R51 then PC := 518
+480 [-]: JMP       518          ; PC := 518
+481 [-]: GETTABLE  R51 R37 K14  ; R51 := R37["Type"]
+482 [-]: SELF      R51 R51 K15  ; R52 := R51; R51 := R51["0x625DA4BB"]
+483 [-]: CALL      R51 2 2      ; R51 := R51(R52)
+484 [-]: SELF      R52 R39 K100 ; R53 := R39; R52 := R39["0x315E860F"]
+485 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+486 [-]: TEST      R52 0        ; if not R52 then PC := 518
+487 [-]: JMP       518          ; PC := 518
+488 [-]: EQ        0 R32 K0     ; if R32 ~= nil then PC := 499
+489 [-]: JMP       499          ; PC := 499
+490 [-]: GETGLOBAL R52 K50      ; R52 := gPlayerProfileMgr
+491 [-]: SELF      R52 R52 K51  ; R53 := R52; R52 := R52["0x21EF7B1A"]
+492 [-]: LOADK     R54 K39      ; R54 := 0
+493 [-]: CALL      R52 3 2      ; R52 := R52(R53,R54)
+494 [-]: SELF      R52 R52 K52  ; R53 := R52; R52 := R52["0x654F1092"]
+495 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+496 [-]: SELF      R52 R52 K101 ; R53 := R52; R52 := R52["0xC92135A6"]
+497 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+498 [-]: MOVE      R32 R52      ; R32 := R52
+499 [-]: GETGLOBAL R52 K1       ; R52 := 0xECFDD17
+500 [-]: MOVE      R53 R32      ; R53 := R32
+501 [-]: CALL      R52 2 4      ; R52,R53,R54 := R52(R53)
+502 [-]: JMP       516          ; PC := 516
+503 [-]: GETTABLE  R57 R56 K102 ; R57 := R56["mTag"]
+504 [-]: EQ        0 R57 R51    ; if R57 ~= R51 then PC := 516
+505 [-]: JMP       516          ; PC := 516
+506 [-]: GETTABLE  R57 R56 K103 ; R57 := R56["mCompletes"]
+507 [-]: LT        1 K39 R57    ; if 0 < R57 then PC := 510
+508 [-]: JMP       510          ; PC := 510
+509 [-]: MOVE      R57 R0       ; R57 := R0
+510 [-]: MOVE      R57 R1       ; R57 := R1
+511 [-]: SETTABLE  R41 K98 R57  ; R41["completed"] := R57
+512 [-]: GETTABLE  R57 R41 K41  ; R57 := R41["radialSector"]
+513 [-]: GETTABLE  R58 R56 K103 ; R58 := R56["mCompletes"]
+514 [-]: SETTABLE  R57 K104 R58 ; R57["missionsCompleted"] := R58
+515 [-]: JMP       518          ; PC := 518
+516 [-]: TFORLOOP  R52 2        ; R55,R56 :=  R52(R53,R54); if R55 ~= nil then begin PC = 503; R54 := R55 end
+517 [-]: JMP       503          ; PC := 503
+518 [-]: SETTABLE  R41 K105 K99 ; R41["locked"] := "0x0"
+519 [-]: SETTABLE  R41 K106 K71 ; R41["visibleLabel"] := "0x1"
+520 [-]: SETTABLE  R41 K107 K99 ; R41["isEmpty"] := "0x0"
+521 [-]: TEST      R40 0        ; if not R40 then PC := 524
+522 [-]: JMP       524          ; PC := 524
+523 [-]: SETTABLE  R41 K108 R47 ; R41["displayMissionOverride"] := R47
+524 [-]: GETTABLE  R57 R37 K31  ; R57 := R37["Difficulty"]
+525 [-]: EQ        1 R57 K0     ; if R57 == nil then PC := 538
+526 [-]: JMP       538          ; PC := 538
+527 [-]: GETTABLE  R57 R41 K41  ; R57 := R41["radialSector"]
+528 [-]: GETTABLE  R57 R57 K34  ; R57 := R57["mission"]
+529 [-]: GETTABLE  R58 R37 K31  ; R58 := R37["Difficulty"]
+530 [-]: SETTABLE  R57 K73 R58  ; R57["difficulty"] := R58
+531 [-]: GETUPVAL  R57 U0       ; R57 := U0
+532 [-]: GETTABLE  R58 R41 K109 ; R58 := R41["id"]
+533 [-]: GETTABLE  R57 R57 R58  ; R57 := R57[R58]
+534 [-]: GETTABLE  R57 R57 K41  ; R57 := R57["radialSector"]
+535 [-]: GETTABLE  R57 R57 K34  ; R57 := R57["mission"]
+536 [-]: GETTABLE  R58 R37 K31  ; R58 := R37["Difficulty"]
+537 [-]: SETTABLE  R57 K73 R58  ; R57["difficulty"] := R58
+538 [-]: FORLOOP   R33 170      ; R33 += R35; if R33 <= R34 then begin PC := 170; R36 := R33 end
+539 [-]: GETUPVAL  R57 U9       ; R57 := U9
+540 [-]: GETTABLE  R57 R57 K46  ; R57 := R57["Active"]
+541 [-]: TEST      R57 1        ; if R57 then PC := 618
+542 [-]: JMP       618          ; PC := 618
+543 [-]: GETGLOBAL R57 K50      ; R57 := gPlayerProfileMgr
+544 [-]: SELF      R57 R57 K51  ; R58 := R57; R57 := R57["0x21EF7B1A"]
+545 [-]: LOADK     R59 K39      ; R59 := 0
+546 [-]: CALL      R57 3 2      ; R57 := R57(R58,R59)
+547 [-]: SELF      R57 R57 K52  ; R58 := R57; R57 := R57["0x654F1092"]
+548 [-]: CALL      R57 2 2      ; R57 := R57(R58)
+549 [-]: SELF      R57 R57 K110 ; R58 := R57; R57 := R57["0x2D0B8A86"]
+550 [-]: CALL      R57 2 2      ; R57 := R57(R58)
+551 [-]: GETTABLE  R57 R57 K111 ; R57 := R57["mFeaturedGuilds"]
+552 [-]: LOADK     R58 K11      ; R58 := 1
+553 [-]: LEN       R59 R57      ; R59 := # R57
+554 [-]: LOADK     R60 K11      ; R60 := 1
+555 [-]: FORPREP   R58 617      ; R58 -= R60; PC := 617
+556 [-]: GETGLOBAL R62 K20      ; R62 := Lotus_Game
+557 [-]: GETTABLE  R62 R62 K42  ; R62 := R62["0xAE448D50"]
+558 [-]: CALL      R62 1 2      ; R62 := R62()
+559 [-]: GETUPVAL  R63 U14      ; R63 := U14
+560 [-]: GETTABLE  R63 R63 K112 ; R63 := R63["0xF81722A2"]
+561 [-]: GETUPVAL  R64 U14      ; R64 := U14
+562 [-]: GETTABLE  R64 R64 K113 ; R64 := R64["0x36BA5F48"]
+563 [-]: CALL      R64 1 2      ; R64 := R64()
+564 [-]: GETGLOBAL R65 K48      ; R65 := 0xEC274B1A
+565 [-]: LOADK     R66 K114     ; R66 := "/Lotus/Language/Clan/Clan_DOJO"
+566 [-]: CALL      R65 2 2      ; R65 := R65(R66)
+567 [-]: GETGLOBAL R66 K48      ; R66 := 0xEC274B1A
+568 [-]: GETTABLE  R67 R57 R61  ; R67 := R57[R61]
+569 [-]: GETTABLE  R67 R67 K115 ; R67 := R67["mName"]
+570 [-]: CALL      R66 2 0      ; R66,... := R66(R67)
+571 [-]: CALL      R63 0 2      ; R63 := R63(R64,...)
+572 [-]: SETTABLE  R62 K47 R63  ; R62["locTag"] := R63
+573 [-]: GETGLOBAL R63 K20      ; R63 := Lotus_Game
+574 [-]: GETTABLE  R63 R63 K68  ; R63 := R63["NT_HUB"]
+575 [-]: SETTABLE  R62 K67 R63  ; R62["nodeType"] := R63
+576 [-]: SETTABLE  R62 K70 K71  ; R62["unlocked"] := "0x1"
+577 [-]: GETGLOBAL R63 K48      ; R63 := 0xEC274B1A
+578 [-]: LOADK     R64 K116     ; R64 := "FeaturedDojoTier"
+579 [-]: MOVE      R65 R61      ; R65 := R61
+580 [-]: CONCAT    R64 R64 R65  ; R64 := R64 .. R65
+581 [-]: CALL      R63 2 2      ; R63 := R63(R64)
+582 [-]: SETTABLE  R62 K33 R63  ; R62["name"] := R63
+583 [-]: GETUPVAL  R63 U10      ; R63 := U10
+584 [-]: GETTABLE  R63 R63 K117 ; R63 := R63[14]
+585 [-]: GETTABLE  R63 R63 K88  ; R63 := R63["pos"]
+586 [-]: GETGLOBAL R64 K118     ; R64 := 0x4CBE9A09
+587 [-]: GETGLOBAL R65 K89      ; R65 := 0x221C9700
+588 [-]: LOADK     R66 K39      ; R66 := 0
+589 [-]: LOADK     R67 K119     ; R67 := -0.15999999642372
+590 [-]: LOADK     R68 K39      ; R68 := 0
+591 [-]: CALL      R65 4 2      ; R65 := R65(R66,R67,R68)
+592 [-]: GETGLOBAL R66 K120     ; R66 := 0x1E4F6281
+593 [-]: LOADK     R67 K39      ; R67 := 0
+594 [-]: LOADK     R68 K39      ; R68 := 0
+595 [-]: LEN       R69 R57      ; R69 := # R57
+596 [-]: SUB       R69 R69 K11  ; R69 := R69 - 1
+597 [-]: DIV       R69 R69 K121 ; R69 := R69 / 2
+598 [-]: SUB       R69 R69 R61  ; R69 := R69 - R61
+599 [-]: ADD       R69 R69 K11  ; R69 := R69 + 1
+600 [-]: MUL       R69 K122 R69 ; R69 := -30 * R69
+601 [-]: CALL      R66 4 0      ; R66,... := R66(R67,R68,R69)
+602 [-]: CALL      R64 0 2      ; R64 := R64(R65,...)
+603 [-]: ADD       R63 R63 R64  ; R63 := R63 + R64
+604 [-]: SETTABLE  R62 K88 R63  ; R62["pos"] := R63
+605 [-]: GETUPVAL  R63 U8       ; R63 := U8
+606 [-]: MOVE      R64 R62      ; R64 := R62
+607 [-]: NEWTABLE  R65 0 3      ; R65 := {}
+608 [-]: GETTABLE  R66 R57 R61  ; R66 := R57[R61]
+609 [-]: GETTABLE  R66 R66 K124 ; R66 := R66["mId"]
+610 [-]: GETTABLE  R66 R66 K124 ; R66 := R66["mId"]
+611 [-]: SETTABLE  R65 K123 R66 ; R65["guildId"] := R66
 612 [-]: GETTABLE  R66 R57 R61  ; R66 := R57[R61]
-613 [-]: GETTABLE  R66 R66 K125 ; R66 := R66["mId"]
-614 [-]: GETTABLE  R66 R66 K125 ; R66 := R66["mId"]
-615 [-]: SETTABLE  R65 K124 R66 ; R65["guildId"] := R66
-616 [-]: GETTABLE  R66 R57 R61  ; R66 := R57[R61]
-617 [-]: GETTABLE  R66 R66 K127 ; R66 := R66["mTier"]
-618 [-]: SETTABLE  R65 K126 R66 ; R65["clanTier"] := R66
-619 [-]: SETTABLE  R65 K128 K129; R65["overrideIconSize"] := 120
-620 [-]: CALL      R63 3 1      ; R63(R64,R65)
-621 [-]: FORLOOP   R58 560      ; R58 += R60; if R58 <= R59 then begin PC := 560; R61 := R58 end
-622 [-]: GETUPVAL  R63 U15      ; R63 := U15
-623 [-]: CALL      R63 1 1      ; R63()
-624 [-]: RETURN    R0 1         ; return 
+613 [-]: GETTABLE  R66 R66 K126 ; R66 := R66["mTier"]
+614 [-]: SETTABLE  R65 K125 R66 ; R65["clanTier"] := R66
+615 [-]: SETTABLE  R65 K127 K128; R65["overrideIconSize"] := 120
+616 [-]: CALL      R63 3 1      ; R63(R64,R65)
+617 [-]: FORLOOP   R58 556      ; R58 += R60; if R58 <= R59 then begin PC := 556; R61 := R58 end
+618 [-]: GETUPVAL  R63 U15      ; R63 := U15
+619 [-]: CALL      R63 1 1      ; R63()
+620 [-]: RETURN    R0 1         ; return 
 
 
-; Function #63:
+; Function #62:
 ;
 ; Name:            
-; Defined at line: 2813
+; Defined at line: 2781
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -9962,10 +9893,10 @@ code size: 4
  22 [-]: RETURN    R0 1         ; return 
 
 
-; Function #64:
+; Function #63:
 ;
 ; Name:            
-; Defined at line: 2823
+; Defined at line: 2791
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -10002,10 +9933,10 @@ code size: 4
  29 [-]: RETURN    R0 1         ; return 
 
 
-; Function #65:
+; Function #64:
 ;
 ; Name:            
-; Defined at line: 2835
+; Defined at line: 2803
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -10079,10 +10010,10 @@ code size: 4
  66 [-]: RETURN    R0 1         ; return 
 
 
-; Function #66:
+; Function #65:
 ;
 ; Name:            
-; Defined at line: 2872
+; Defined at line: 2840
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -10195,10 +10126,10 @@ code size: 4
 105 [-]: RETURN    R0 1         ; return 
 
 
-; Function #67:
+; Function #66:
 ;
 ; Name:            
-; Defined at line: 2906
+; Defined at line: 2874
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -10404,10 +10335,10 @@ code size: 4
 198 [-]: RETURN    R0 1         ; return 
 
 
-; Function #68:
+; Function #67:
 ;
 ; Name:            
-; Defined at line: 2981
+; Defined at line: 2949
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -10528,14 +10459,14 @@ code size: 4
 113 [-]: RETURN    R0 1         ; return 
 
 
-; Function #69:
+; Function #68:
 ;
 ; Name:            
-; Defined at line: 3023
-; #Upvalues:       4
+; Defined at line: 2991
+; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  18
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _G
   2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["StalkerMode"]
@@ -10549,24 +10480,24 @@ code size: 4
  10 [-]: GETGLOBAL R1 K5        ; R1 := 0x400E7765
  11 [-]: MOVE      R2 R0        ; R2 := R0
  12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: TEST      R1 1         ; if R1 then PC := 139
- 14 [-]: JMP       139          ; PC := 139
+ 13 [-]: TEST      R1 1         ; if R1 then PC := 133
+ 14 [-]: JMP       133          ; PC := 133
  15 [-]: SELF      R1 R0 K6     ; R2 := R0; R1 := R0["0x654F1092"]
  16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  17 [-]: GETGLOBAL R2 K5        ; R2 := 0x400E7765
  18 [-]: MOVE      R3 R1        ; R3 := R1
  19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 20 [-]: TEST      R2 1         ; if R2 then PC := 139
- 21 [-]: JMP       139          ; PC := 139
+ 20 [-]: TEST      R2 1         ; if R2 then PC := 133
+ 21 [-]: JMP       133          ; PC := 133
  22 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1["0x2D0B8A86"]
  23 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  24 [-]: GETTABLE  R3 R2 K8     ; R3 := R2["mVoidTraders"]
- 25 [-]: EQ        1 R3 K9      ; if R3 == nil then PC := 139
- 26 [-]: JMP       139          ; PC := 139
+ 25 [-]: EQ        1 R3 K9      ; if R3 == nil then PC := 133
+ 26 [-]: JMP       133          ; PC := 133
  27 [-]: GETTABLE  R3 R2 K8     ; R3 := R2["mVoidTraders"]
  28 [-]: LEN       R3 R3        ; R3 := # R3
- 29 [-]: LT        0 K4 R3      ; if 0 >= R3 then PC := 139
- 30 [-]: JMP       139          ; PC := 139
+ 29 [-]: LT        0 K4 R3      ; if 0 >= R3 then PC := 133
+ 30 [-]: JMP       133          ; PC := 133
  31 [-]: LOADK     R3 K10       ; R3 := 86400
  32 [-]: GETTABLE  R4 R2 K8     ; R4 := R2["mVoidTraders"]
  33 [-]: GETTABLE  R4 R4 K11    ; R4 := R4[1]
@@ -10608,8 +10539,8 @@ code size: 4
  69 [-]: SETTABLE  R5 K23 K24   ; R5["Active"] := "0x1"
  70 [-]: GETUPVAL  R5 U0        ; R5 := U0
  71 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["Active"]
- 72 [-]: TEST      R5 0         ; if not R5 then PC := 139
- 73 [-]: JMP       139          ; PC := 139
+ 72 [-]: TEST      R5 0         ; if not R5 then PC := 133
+ 73 [-]: JMP       133          ; PC := 133
  74 [-]: LOADNIL   R5 R5        ; R5 := nil
  75 [-]: MOVE      R6 R0        ; R6 := R0
  76 [-]: LOADK     R7 K11       ; R7 := 1
@@ -10650,54 +10581,48 @@ code size: 4
 111 [-]: GETGLOBAL R11 K5       ; R11 := 0x400E7765
 112 [-]: MOVE      R12 R5       ; R12 := R5
 113 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-114 [-]: TEST      R11 1        ; if R11 then PC := 137
-115 [-]: JMP       137          ; PC := 137
-116 [-]: GETUPVAL  R11 U2       ; R11 := U2
-117 [-]: GETGLOBAL R12 K28      ; R12 := 0x9FAED6BC
-118 [-]: GETUPVAL  R13 U0       ; R13 := U0
-119 [-]: GETTABLE  R13 R13 K19  ; R13 := R13["Location"]
-120 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-121 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
-122 [-]: GETUPVAL  R12 U0       ; R12 := U0
-123 [-]: GETTABLE  R13 R5 K30   ; R13 := R5["Instance"]
-124 [-]: SELF      R13 R13 K31  ; R14 := R13; R13 := R13["0xAC71FD5A"]
-125 [-]: GETUPVAL  R15 U3       ; R15 := U3
-126 [-]: GETTABLE  R15 R15 K32  ; R15 := R15["0xF81722A2"]
-127 [-]: MOVE      R16 R6       ; R16 := R6
-128 [-]: GETUPVAL  R17 U0       ; R17 := U0
-129 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["Progress"]
-130 [-]: GETUPVAL  R18 U0       ; R18 := U0
-131 [-]: GETTABLE  R18 R18 K22  ; R18 := R18["Progress"]
-132 [-]: SUB       R18 K11 R18  ; R18 := 1 - R18
-133 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
-134 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
-135 [-]: SETTABLE  R12 K29 R13  ; R12["Position"] := R13
-136 [-]: JMP       139          ; PC := 139
-137 [-]: GETUPVAL  R12 U0       ; R12 := U0
-138 [-]: SETTABLE  R12 K23 K33  ; R12["Active"] := "0x0"
-139 [-]: GETGLOBAL R12 K34      ; R12 := mMovie
-140 [-]: SELF      R12 R12 K35  ; R13 := R12; R12 := R12["0x1C19D966"]
-141 [-]: LOADK     R14 K36      ; R14 := "VoidTrader"
-142 [-]: LOADK     R15 K37      ; R15 := "_visible"
-143 [-]: GETUPVAL  R16 U0       ; R16 := U0
-144 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Active"]
-145 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
-146 [-]: GETUPVAL  R12 U0       ; R12 := U0
-147 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["Active"]
-148 [-]: TEST      R12 0        ; if not R12 then PC := 155
-149 [-]: JMP       155          ; PC := 155
-150 [-]: GETGLOBAL R12 K34      ; R12 := mMovie
-151 [-]: SELF      R12 R12 K38  ; R13 := R12; R12 := R12["0x26581636"]
-152 [-]: LOADK     R14 K39      ; R14 := "VoidTrader.Image"
-153 [-]: GETGLOBAL R15 K40      ; R15 := voidTraderIcon
-154 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-155 [-]: RETURN    R0 1         ; return 
+114 [-]: TEST      R11 1        ; if R11 then PC := 131
+115 [-]: JMP       131          ; PC := 131
+116 [-]: GETUPVAL  R11 U0       ; R11 := U0
+117 [-]: GETTABLE  R12 R5 K29   ; R12 := R5["Instance"]
+118 [-]: SELF      R12 R12 K30  ; R13 := R12; R12 := R12["0xAC71FD5A"]
+119 [-]: GETUPVAL  R14 U2       ; R14 := U2
+120 [-]: GETTABLE  R14 R14 K31  ; R14 := R14["0xF81722A2"]
+121 [-]: MOVE      R15 R6       ; R15 := R6
+122 [-]: GETUPVAL  R16 U0       ; R16 := U0
+123 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["Progress"]
+124 [-]: GETUPVAL  R17 U0       ; R17 := U0
+125 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["Progress"]
+126 [-]: SUB       R17 K11 R17  ; R17 := 1 - R17
+127 [-]: CALL      R14 4 0      ; R14,... := R14(R15,R16,R17)
+128 [-]: CALL      R12 0 2      ; R12 := R12(R13,...)
+129 [-]: SETTABLE  R11 K28 R12  ; R11["Position"] := R12
+130 [-]: JMP       133          ; PC := 133
+131 [-]: GETUPVAL  R11 U0       ; R11 := U0
+132 [-]: SETTABLE  R11 K23 K32  ; R11["Active"] := "0x0"
+133 [-]: GETGLOBAL R11 K33      ; R11 := mMovie
+134 [-]: SELF      R11 R11 K34  ; R12 := R11; R11 := R11["0x1C19D966"]
+135 [-]: LOADK     R13 K35      ; R13 := "VoidTrader"
+136 [-]: LOADK     R14 K36      ; R14 := "_visible"
+137 [-]: GETUPVAL  R15 U0       ; R15 := U0
+138 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["Active"]
+139 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
+140 [-]: GETUPVAL  R11 U0       ; R11 := U0
+141 [-]: GETTABLE  R11 R11 K23  ; R11 := R11["Active"]
+142 [-]: TEST      R11 0        ; if not R11 then PC := 149
+143 [-]: JMP       149          ; PC := 149
+144 [-]: GETGLOBAL R11 K33      ; R11 := mMovie
+145 [-]: SELF      R11 R11 K37  ; R12 := R11; R11 := R11["0x26581636"]
+146 [-]: LOADK     R13 K38      ; R13 := "VoidTrader.Image"
+147 [-]: GETGLOBAL R14 K39      ; R14 := voidTraderIcon
+148 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+149 [-]: RETURN    R0 1         ; return 
 
 
-; Function #70:
+; Function #69:
 ;
 ; Name:            
-; Defined at line: 3075
+; Defined at line: 3042
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -10763,10 +10688,10 @@ code size: 4
  58 [-]: RETURN    R0 1         ; return 
 
 
-; Function #71:
+; Function #70:
 ;
 ; Name:            
-; Defined at line: 3085
+; Defined at line: 3052
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -10791,11 +10716,11 @@ code size: 4
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #72:
+; Function #71:
 ;
 ; Name:            
-; Defined at line: 3095
-; #Upvalues:       20
+; Defined at line: 3062
+; #Upvalues:       19
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  33
@@ -11048,148 +10973,146 @@ code size: 4
 246 [-]: GETUPVAL  R20 U17      ; R20 := U17
 247 [-]: CALL      R20 1 1      ; R20()
 248 [-]: GETUPVAL  R20 U18      ; R20 := U18
-249 [-]: CALL      R20 1 1      ; R20()
-250 [-]: GETUPVAL  R20 U19      ; R20 := U19
-251 [-]: CALL      R20 1 2      ; R20 := R20()
-252 [-]: TEST      R20 1        ; if R20 then PC := 277
-253 [-]: JMP       277          ; PC := 277
-254 [-]: GETGLOBAL R20 K9       ; R20 := _G
-255 [-]: GETTABLE  R20 R20 K10  ; R20 := R20["StalkerMode"]
-256 [-]: TEST      R20 1        ; if R20 then PC := 277
-257 [-]: JMP       277          ; PC := 277
-258 [-]: GETGLOBAL R20 K42      ; R20 := 0x400E7765
-259 [-]: GETGLOBAL R21 K68      ; R21 := mapSoundMusic
-260 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-261 [-]: TEST      R20 1        ; if R20 then PC := 277
-262 [-]: JMP       277          ; PC := 277
-263 [-]: GETGLOBAL R20 K42      ; R20 := 0x400E7765
-264 [-]: GETGLOBAL R21 K9       ; R21 := _G
-265 [-]: GETTABLE  R21 R21 K69  ; R21 := R21["MapSoundInst"]
-266 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-267 [-]: TEST      R20 0        ; if not R20 then PC := 277
-268 [-]: JMP       277          ; PC := 277
-269 [-]: GETGLOBAL R20 K9       ; R20 := _G
-270 [-]: GETGLOBAL R21 K4       ; R21 := gBackgroundRegion
-271 [-]: SELF      R21 R21 K12  ; R22 := R21; R21 := R21["0x25992394"]
-272 [-]: GETGLOBAL R23 K68      ; R23 := mapSoundMusic
-273 [-]: GETGLOBAL R24 K70      ; R24 := ZERO_VECTOR
-274 [-]: MOVE      R25 R0       ; R25 := R0
-275 [-]: CALL      R21 5 2      ; R21 := R21(R22,R23,R24,R25)
-276 [-]: SETTABLE  R20 K69 R21  ; R20["MapSoundInst"] := R21
-277 [-]: GETGLOBAL R20 K57      ; R20 := _T
-278 [-]: SETTABLE  R20 K71 K72  ; R20["InStarChart"] := "0x1"
-279 [-]: GETUPVAL  R20 U2       ; R20 := U2
-280 [-]: GETGLOBAL R21 K4       ; R21 := gBackgroundRegion
-281 [-]: SELF      R21 R21 K50  ; R22 := R21; R21 := R21["0xA76F0612"]
-282 [-]: GETGLOBAL R23 K51      ; R23 := 0xEC274B1A
-283 [-]: LOADK     R24 K74      ; R24 := "Void"
-284 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-285 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
-286 [-]: SETTABLE  R20 K73 R21  ; R20["voidDecos"] := R21
-287 [-]: GETGLOBAL R20 K42      ; R20 := 0x400E7765
-288 [-]: GETUPVAL  R21 U2       ; R21 := U2
-289 [-]: GETTABLE  R21 R21 K73  ; R21 := R21["voidDecos"]
-290 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-291 [-]: TEST      R20 1        ; if R20 then PC := 384
-292 [-]: JMP       384          ; PC := 384
-293 [-]: GETUPVAL  R20 U2       ; R20 := U2
-294 [-]: GETTABLE  R20 R20 K73  ; R20 := R20["voidDecos"]
-295 [-]: LEN       R20 R20      ; R20 := # R20
-296 [-]: LT        0 K2 R20     ; if 0 >= R20 then PC := 384
-297 [-]: JMP       384          ; PC := 384
-298 [-]: GETUPVAL  R20 U2       ; R20 := U2
-299 [-]: NEWTABLE  R21 0 0      ; R21 := {}
-300 [-]: SETTABLE  R20 K75 R21  ; R20["voidDecoData"] := R21
-301 [-]: LOADK     R20 K8       ; R20 := 1
-302 [-]: GETUPVAL  R21 U2       ; R21 := U2
-303 [-]: GETTABLE  R21 R21 K73  ; R21 := R21["voidDecos"]
-304 [-]: LEN       R21 R21      ; R21 := # R21
-305 [-]: LOADK     R22 K8       ; R22 := 1
-306 [-]: FORPREP   R20 367      ; R20 -= R22; PC := 367
-307 [-]: GETUPVAL  R24 U2       ; R24 := U2
-308 [-]: GETTABLE  R24 R24 K73  ; R24 := R24["voidDecos"]
-309 [-]: GETTABLE  R24 R24 R23  ; R24 := R24[R23]
-310 [-]: GETUPVAL  R25 U2       ; R25 := U2
-311 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
-312 [-]: NEWTABLE  R26 0 0      ; R26 := {}
-313 [-]: SETTABLE  R25 R23 R26  ; R25[R23] := R26
-314 [-]: GETUPVAL  R25 U2       ; R25 := U2
-315 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
-316 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
-317 [-]: SELF      R26 R24 K18  ; R27 := R24; R26 := R24["0x6DA72501"]
-318 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-319 [-]: SETTABLE  R25 K23 R26  ; R25["pos"] := R26
-320 [-]: GETUPVAL  R25 U2       ; R25 := U2
-321 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
-322 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
-323 [-]: SELF      R26 R24 K77  ; R27 := R24; R26 := R24["0xEFE96608"]
-324 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-325 [-]: SETTABLE  R25 K76 R26  ; R25["BMin"] := R26
-326 [-]: GETUPVAL  R25 U2       ; R25 := U2
-327 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
-328 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
-329 [-]: SELF      R26 R24 K79  ; R27 := R24; R26 := R24["0x3D6ED718"]
-330 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-331 [-]: SETTABLE  R25 K78 R26  ; R25["BMax"] := R26
-332 [-]: GETUPVAL  R25 U2       ; R25 := U2
-333 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
-334 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
-335 [-]: GETUPVAL  R26 U2       ; R26 := U2
-336 [-]: GETTABLE  R26 R26 K75  ; R26 := R26["voidDecoData"]
-337 [-]: GETTABLE  R26 R26 R23  ; R26 := R26[R23]
-338 [-]: GETTABLE  R26 R26 K78  ; R26 := R26["BMax"]
-339 [-]: GETUPVAL  R27 U2       ; R27 := U2
-340 [-]: GETTABLE  R27 R27 K75  ; R27 := R27["voidDecoData"]
-341 [-]: GETTABLE  R27 R27 R23  ; R27 := R27[R23]
-342 [-]: GETTABLE  R27 R27 K76  ; R27 := R27["BMin"]
-343 [-]: SUB       R26 R26 R27  ; R26 := R26 - R27
-344 [-]: SETTABLE  R25 K80 R26  ; R25["BScale"] := R26
-345 [-]: GETUPVAL  R25 U2       ; R25 := U2
-346 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
-347 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
-348 [-]: GETTABLE  R25 R25 K80  ; R25 := R25["BScale"]
-349 [-]: GETUPVAL  R26 U2       ; R26 := U2
-350 [-]: GETTABLE  R26 R26 K75  ; R26 := R26["voidDecoData"]
-351 [-]: GETTABLE  R26 R26 R23  ; R26 := R26[R23]
-352 [-]: GETTABLE  R26 R26 K80  ; R26 := R26["BScale"]
-353 [-]: GETTABLE  R26 R26 K24  ; R26 := R26["x"]
-354 [-]: DIV       R26 K8 R26   ; R26 := 1 / R26
-355 [-]: SETTABLE  R25 K24 R26  ; R25["x"] := R26
-356 [-]: GETUPVAL  R25 U2       ; R25 := U2
-357 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
-358 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
-359 [-]: GETTABLE  R25 R25 K80  ; R25 := R25["BScale"]
-360 [-]: GETUPVAL  R26 U2       ; R26 := U2
-361 [-]: GETTABLE  R26 R26 K75  ; R26 := R26["voidDecoData"]
-362 [-]: GETTABLE  R26 R26 R23  ; R26 := R26[R23]
-363 [-]: GETTABLE  R26 R26 K80  ; R26 := R26["BScale"]
-364 [-]: GETTABLE  R26 R26 K25  ; R26 := R26["y"]
-365 [-]: DIV       R26 K8 R26   ; R26 := 1 / R26
-366 [-]: SETTABLE  R25 K25 R26  ; R25["y"] := R26
-367 [-]: FORLOOP   R20 307      ; R20 += R22; if R20 <= R21 then begin PC := 307; R23 := R20 end
-368 [-]: GETUPVAL  R25 U2       ; R25 := U2
-369 [-]: NEWTABLE  R26 0 0      ; R26 := {}
-370 [-]: SETTABLE  R25 K81 R26  ; R25["uvHoles"] := R26
-371 [-]: LOADK     R25 K8       ; R25 := 1
-372 [-]: LOADK     R26 K82      ; R26 := 20
-373 [-]: LOADK     R27 K8       ; R27 := 1
-374 [-]: FORPREP   R25 383      ; R25 -= R27; PC := 383
-375 [-]: GETUPVAL  R29 U2       ; R29 := U2
-376 [-]: GETTABLE  R29 R29 K81  ; R29 := R29["uvHoles"]
-377 [-]: GETGLOBAL R30 K51      ; R30 := 0xEC274B1A
-378 [-]: LOADK     R31 K83      ; R31 := "UvHole"
-379 [-]: SUB       R32 R28 K8   ; R32 := R28 - 1
-380 [-]: CONCAT    R31 R31 R32  ; R31 := R31 .. R32
-381 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-382 [-]: SETTABLE  R29 R28 R30  ; R29[R28] := R30
-383 [-]: FORLOOP   R25 375      ; R25 += R27; if R25 <= R26 then begin PC := 375; R28 := R25 end
-384 [-]: RETURN    R0 1         ; return 
+249 [-]: CALL      R20 1 2      ; R20 := R20()
+250 [-]: TEST      R20 1        ; if R20 then PC := 275
+251 [-]: JMP       275          ; PC := 275
+252 [-]: GETGLOBAL R20 K9       ; R20 := _G
+253 [-]: GETTABLE  R20 R20 K10  ; R20 := R20["StalkerMode"]
+254 [-]: TEST      R20 1        ; if R20 then PC := 275
+255 [-]: JMP       275          ; PC := 275
+256 [-]: GETGLOBAL R20 K42      ; R20 := 0x400E7765
+257 [-]: GETGLOBAL R21 K68      ; R21 := mapSoundMusic
+258 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+259 [-]: TEST      R20 1        ; if R20 then PC := 275
+260 [-]: JMP       275          ; PC := 275
+261 [-]: GETGLOBAL R20 K42      ; R20 := 0x400E7765
+262 [-]: GETGLOBAL R21 K9       ; R21 := _G
+263 [-]: GETTABLE  R21 R21 K69  ; R21 := R21["MapSoundInst"]
+264 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+265 [-]: TEST      R20 0        ; if not R20 then PC := 275
+266 [-]: JMP       275          ; PC := 275
+267 [-]: GETGLOBAL R20 K9       ; R20 := _G
+268 [-]: GETGLOBAL R21 K4       ; R21 := gBackgroundRegion
+269 [-]: SELF      R21 R21 K12  ; R22 := R21; R21 := R21["0x25992394"]
+270 [-]: GETGLOBAL R23 K68      ; R23 := mapSoundMusic
+271 [-]: GETGLOBAL R24 K70      ; R24 := ZERO_VECTOR
+272 [-]: MOVE      R25 R0       ; R25 := R0
+273 [-]: CALL      R21 5 2      ; R21 := R21(R22,R23,R24,R25)
+274 [-]: SETTABLE  R20 K69 R21  ; R20["MapSoundInst"] := R21
+275 [-]: GETGLOBAL R20 K57      ; R20 := _T
+276 [-]: SETTABLE  R20 K71 K72  ; R20["InStarChart"] := "0x1"
+277 [-]: GETUPVAL  R20 U2       ; R20 := U2
+278 [-]: GETGLOBAL R21 K4       ; R21 := gBackgroundRegion
+279 [-]: SELF      R21 R21 K50  ; R22 := R21; R21 := R21["0xA76F0612"]
+280 [-]: GETGLOBAL R23 K51      ; R23 := 0xEC274B1A
+281 [-]: LOADK     R24 K74      ; R24 := "Void"
+282 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
+283 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
+284 [-]: SETTABLE  R20 K73 R21  ; R20["voidDecos"] := R21
+285 [-]: GETGLOBAL R20 K42      ; R20 := 0x400E7765
+286 [-]: GETUPVAL  R21 U2       ; R21 := U2
+287 [-]: GETTABLE  R21 R21 K73  ; R21 := R21["voidDecos"]
+288 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+289 [-]: TEST      R20 1        ; if R20 then PC := 382
+290 [-]: JMP       382          ; PC := 382
+291 [-]: GETUPVAL  R20 U2       ; R20 := U2
+292 [-]: GETTABLE  R20 R20 K73  ; R20 := R20["voidDecos"]
+293 [-]: LEN       R20 R20      ; R20 := # R20
+294 [-]: LT        0 K2 R20     ; if 0 >= R20 then PC := 382
+295 [-]: JMP       382          ; PC := 382
+296 [-]: GETUPVAL  R20 U2       ; R20 := U2
+297 [-]: NEWTABLE  R21 0 0      ; R21 := {}
+298 [-]: SETTABLE  R20 K75 R21  ; R20["voidDecoData"] := R21
+299 [-]: LOADK     R20 K8       ; R20 := 1
+300 [-]: GETUPVAL  R21 U2       ; R21 := U2
+301 [-]: GETTABLE  R21 R21 K73  ; R21 := R21["voidDecos"]
+302 [-]: LEN       R21 R21      ; R21 := # R21
+303 [-]: LOADK     R22 K8       ; R22 := 1
+304 [-]: FORPREP   R20 365      ; R20 -= R22; PC := 365
+305 [-]: GETUPVAL  R24 U2       ; R24 := U2
+306 [-]: GETTABLE  R24 R24 K73  ; R24 := R24["voidDecos"]
+307 [-]: GETTABLE  R24 R24 R23  ; R24 := R24[R23]
+308 [-]: GETUPVAL  R25 U2       ; R25 := U2
+309 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
+310 [-]: NEWTABLE  R26 0 0      ; R26 := {}
+311 [-]: SETTABLE  R25 R23 R26  ; R25[R23] := R26
+312 [-]: GETUPVAL  R25 U2       ; R25 := U2
+313 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
+314 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
+315 [-]: SELF      R26 R24 K18  ; R27 := R24; R26 := R24["0x6DA72501"]
+316 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+317 [-]: SETTABLE  R25 K23 R26  ; R25["pos"] := R26
+318 [-]: GETUPVAL  R25 U2       ; R25 := U2
+319 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
+320 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
+321 [-]: SELF      R26 R24 K77  ; R27 := R24; R26 := R24["0xEFE96608"]
+322 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+323 [-]: SETTABLE  R25 K76 R26  ; R25["BMin"] := R26
+324 [-]: GETUPVAL  R25 U2       ; R25 := U2
+325 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
+326 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
+327 [-]: SELF      R26 R24 K79  ; R27 := R24; R26 := R24["0x3D6ED718"]
+328 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+329 [-]: SETTABLE  R25 K78 R26  ; R25["BMax"] := R26
+330 [-]: GETUPVAL  R25 U2       ; R25 := U2
+331 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
+332 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
+333 [-]: GETUPVAL  R26 U2       ; R26 := U2
+334 [-]: GETTABLE  R26 R26 K75  ; R26 := R26["voidDecoData"]
+335 [-]: GETTABLE  R26 R26 R23  ; R26 := R26[R23]
+336 [-]: GETTABLE  R26 R26 K78  ; R26 := R26["BMax"]
+337 [-]: GETUPVAL  R27 U2       ; R27 := U2
+338 [-]: GETTABLE  R27 R27 K75  ; R27 := R27["voidDecoData"]
+339 [-]: GETTABLE  R27 R27 R23  ; R27 := R27[R23]
+340 [-]: GETTABLE  R27 R27 K76  ; R27 := R27["BMin"]
+341 [-]: SUB       R26 R26 R27  ; R26 := R26 - R27
+342 [-]: SETTABLE  R25 K80 R26  ; R25["BScale"] := R26
+343 [-]: GETUPVAL  R25 U2       ; R25 := U2
+344 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
+345 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
+346 [-]: GETTABLE  R25 R25 K80  ; R25 := R25["BScale"]
+347 [-]: GETUPVAL  R26 U2       ; R26 := U2
+348 [-]: GETTABLE  R26 R26 K75  ; R26 := R26["voidDecoData"]
+349 [-]: GETTABLE  R26 R26 R23  ; R26 := R26[R23]
+350 [-]: GETTABLE  R26 R26 K80  ; R26 := R26["BScale"]
+351 [-]: GETTABLE  R26 R26 K24  ; R26 := R26["x"]
+352 [-]: DIV       R26 K8 R26   ; R26 := 1 / R26
+353 [-]: SETTABLE  R25 K24 R26  ; R25["x"] := R26
+354 [-]: GETUPVAL  R25 U2       ; R25 := U2
+355 [-]: GETTABLE  R25 R25 K75  ; R25 := R25["voidDecoData"]
+356 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
+357 [-]: GETTABLE  R25 R25 K80  ; R25 := R25["BScale"]
+358 [-]: GETUPVAL  R26 U2       ; R26 := U2
+359 [-]: GETTABLE  R26 R26 K75  ; R26 := R26["voidDecoData"]
+360 [-]: GETTABLE  R26 R26 R23  ; R26 := R26[R23]
+361 [-]: GETTABLE  R26 R26 K80  ; R26 := R26["BScale"]
+362 [-]: GETTABLE  R26 R26 K25  ; R26 := R26["y"]
+363 [-]: DIV       R26 K8 R26   ; R26 := 1 / R26
+364 [-]: SETTABLE  R25 K25 R26  ; R25["y"] := R26
+365 [-]: FORLOOP   R20 305      ; R20 += R22; if R20 <= R21 then begin PC := 305; R23 := R20 end
+366 [-]: GETUPVAL  R25 U2       ; R25 := U2
+367 [-]: NEWTABLE  R26 0 0      ; R26 := {}
+368 [-]: SETTABLE  R25 K81 R26  ; R25["uvHoles"] := R26
+369 [-]: LOADK     R25 K8       ; R25 := 1
+370 [-]: LOADK     R26 K82      ; R26 := 20
+371 [-]: LOADK     R27 K8       ; R27 := 1
+372 [-]: FORPREP   R25 381      ; R25 -= R27; PC := 381
+373 [-]: GETUPVAL  R29 U2       ; R29 := U2
+374 [-]: GETTABLE  R29 R29 K81  ; R29 := R29["uvHoles"]
+375 [-]: GETGLOBAL R30 K51      ; R30 := 0xEC274B1A
+376 [-]: LOADK     R31 K83      ; R31 := "UvHole"
+377 [-]: SUB       R32 R28 K8   ; R32 := R28 - 1
+378 [-]: CONCAT    R31 R31 R32  ; R31 := R31 .. R32
+379 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+380 [-]: SETTABLE  R29 R28 R30  ; R29[R28] := R30
+381 [-]: FORLOOP   R25 373      ; R25 += R27; if R25 <= R26 then begin PC := 373; R28 := R25 end
+382 [-]: RETURN    R0 1         ; return 
 
 
-; Function #73:
+; Function #72:
 ;
 ; Name:            
-; Defined at line: 3198
+; Defined at line: 3164
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11227,10 +11150,10 @@ code size: 4
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #74:
+; Function #73:
 ;
 ; Name:            
-; Defined at line: 3209
+; Defined at line: 3175
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11274,14 +11197,101 @@ code size: 4
  36 [-]: RETURN    R0 1         ; return 
 
 
+; Function #74:
+;
+; Name:            
+; Defined at line: 3192
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  13
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xECFDD17
+  2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["tiers"]
+  3 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
+  4 [-]: JMP       37           ; PC := 37
+  5 [-]: GETGLOBAL R6 K0        ; R6 := 0xECFDD17
+  6 [-]: GETTABLE  R7 R5 K2     ; R7 := R5["sectors"]
+  7 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
+  8 [-]: JMP       35           ; PC := 35
+  9 [-]: GETTABLE  R11 R10 K3   ; R11 := R10["mission"]
+ 10 [-]: GETTABLE  R11 R11 K4   ; R11 := R11["missionType"]
+ 11 [-]: GETGLOBAL R12 K5       ; R12 := Lotus_Game
+ 12 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["MT_RAILJACK"]
+ 13 [-]: EQ        0 R11 R12    ; if R11 ~= R12 then PC := 35
+ 14 [-]: JMP       35           ; PC := 35
+ 15 [-]: GETGLOBAL R11 K7       ; R11 := 0x400E7765
+ 16 [-]: GETTABLE  R12 R10 K3   ; R12 := R10["mission"]
+ 17 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["levelOverride"]
+ 18 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 19 [-]: TEST      R11 1        ; if R11 then PC := 35
+ 20 [-]: JMP       35           ; PC := 35
+ 21 [-]: GETTABLE  R11 R10 K3   ; R11 := R10["mission"]
+ 22 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["faction"]
+ 23 [-]: GETGLOBAL R12 K5       ; R12 := Lotus_Game
+ 24 [-]: GETTABLE  R12 R12 K10  ; R12 := R12["FC_GRINEER"]
+ 25 [-]: EQ        1 R11 R12    ; if R11 == R12 then PC := 33
+ 26 [-]: JMP       33           ; PC := 33
+ 27 [-]: GETTABLE  R11 R10 K3   ; R11 := R10["mission"]
+ 28 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["faction"]
+ 29 [-]: GETGLOBAL R12 K5       ; R12 := Lotus_Game
+ 30 [-]: GETTABLE  R12 R12 K11  ; R12 := R12["FC_CORPUS"]
+ 31 [-]: EQ        0 R11 R12    ; if R11 ~= R12 then PC := 35
+ 32 [-]: JMP       35           ; PC := 35
+ 33 [-]: MOVE      R11 R1       ; R11 := R1
+ 34 [-]: RETURN    R11 2        ; return R11
+ 35 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 9; R8 := R9 end
+ 36 [-]: JMP       9            ; PC := 9
+ 37 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 5; R3 := R4 end
+ 38 [-]: JMP       5            ; PC := 5
+ 39 [-]: MOVE      R11 R0       ; R11 := R0
+ 40 [-]: RETURN    R11 2        ; return R11
+ 41 [-]: RETURN    R0 1         ; return 
+
+
 ; Function #75:
 ;
 ; Name:            
-; Defined at line: 3226
-; #Upvalues:       2
+; Defined at line: 3203
+; #Upvalues:       1
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  2 [-]: MOVE      R3 R1        ; R3 := R1
+  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  4 [-]: TEST      R2 0         ; if not R2 then PC := 8
+  5 [-]: JMP       8            ; PC := 8
+  6 [-]: MOVE      R2 R0        ; R2 := R0
+  7 [-]: RETURN    R2 2         ; return R2
+  8 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1["0x1B252E3C"]
+  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 10 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 11 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["0xBFFBFE5E"]
+ 12 [-]: MOVE      R4 R0        ; R4 := R0
+ 13 [-]: MOVE      R5 R2        ; R5 := R2
+ 14 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 15 [-]: TEST      R3 1         ; if R3 then PC := 22
+ 16 [-]: JMP       22           ; PC := 22
+ 17 [-]: GETGLOBAL R3 K3        ; R3 := table
+ 18 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["0xE6450C9D"]
+ 19 [-]: MOVE      R4 R0        ; R4 := R0
+ 20 [-]: MOVE      R5 R2        ; R5 := R2
+ 21 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 22 [-]: MOVE      R3 R1        ; R3 := R1
+ 23 [-]: RETURN    R3 2         ; return R3
+ 24 [-]: RETURN    R0 1         ; return 
+
+
+; Function #76:
+;
+; Name:            
+; Defined at line: 3215
+; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  15
+; Max Stack Size:  22
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: GETGLOBAL R1 K0        ; R1 := gPlayerProfileMgr
@@ -11316,47 +11326,90 @@ code size: 4
  31 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  32 [-]: CALL      R6 0 0       ; R6,... := R6(R7,...)
  33 [-]: CALL      R4 0 1       ; R4(R5,...)
- 34 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 35 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["0xBB3AACF2"]
- 36 [-]: CALL      R4 1 2       ; R4 := R4()
- 37 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x5B0E7439"]
- 38 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 39 [-]: GETGLOBAL R5 K13       ; R5 := 0xECFDD17
- 40 [-]: MOVE      R6 R4        ; R6 := R4
- 41 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
- 42 [-]: JMP       57           ; PC := 57
- 43 [-]: GETGLOBAL R10 K3       ; R10 := 0x400E7765
- 44 [-]: GETTABLE  R11 R9 K14   ; R11 := R9["zoomedInEffects"]
- 45 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 46 [-]: TEST      R10 1        ; if R10 then PC := 57
- 47 [-]: JMP       57           ; PC := 57
- 48 [-]: GETGLOBAL R10 K7       ; R10 := table
- 49 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["0xE6450C9D"]
- 50 [-]: MOVE      R11 R0       ; R11 := R0
- 51 [-]: GETGLOBAL R12 K9       ; R12 := 0x9FAED6BC
- 52 [-]: GETTABLE  R13 R9 K14   ; R13 := R9["zoomedInEffects"]
- 53 [-]: SELF      R13 R13 K10  ; R14 := R13; R13 := R13["0x1B252E3C"]
- 54 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
- 55 [-]: CALL      R12 0 0      ; R12,... := R12(R13,...)
- 56 [-]: CALL      R10 0 1      ; R10(R11,...)
- 57 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 43; R7 := R8 end
- 58 [-]: JMP       43           ; PC := 43
- 59 [-]: LEN       R10 R0       ; R10 := # R0
- 60 [-]: LT        0 K2 R10     ; if 0 >= R10 then PC := 68
- 61 [-]: JMP       68           ; PC := 68
- 62 [-]: GETGLOBAL R10 K15      ; R10 := UISys
- 63 [-]: GETTABLE  R10 R10 K16  ; R10 := R10["0x449B53E0"]
- 64 [-]: MOVE      R11 R0       ; R11 := R0
- 65 [-]: MOVE      R12 R1       ; R12 := R1
- 66 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 67 [-]: MOVE      R10 R1       ; R10 := R1
- 68 [-]: RETURN    R0 1         ; return 
+ 34 [-]: LOADK     R4 K11       ; R4 := 1
+ 35 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 36 [-]: LEN       R5 R5        ; R5 := # R5
+ 37 [-]: LOADK     R6 K11       ; R6 := 1
+ 38 [-]: FORPREP   R4 45        ; R4 -= R6; PC := 45
+ 39 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 40 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
+ 41 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 42 [-]: MOVE      R10 R0       ; R10 := R0
+ 43 [-]: GETTABLE  R11 R8 K12   ; R11 := R8["deco"]
+ 44 [-]: CALL      R9 3 1       ; R9(R10,R11)
+ 45 [-]: FORLOOP   R4 39        ; R4 += R6; if R4 <= R5 then begin PC := 39; R7 := R4 end
+ 46 [-]: LOADK     R9 K11       ; R9 := 1
+ 47 [-]: GETUPVAL  R10 U2       ; R10 := U2
+ 48 [-]: LEN       R10 R10      ; R10 := # R10
+ 49 [-]: LOADK     R11 K11      ; R11 := 1
+ 50 [-]: FORPREP   R9 84        ; R9 -= R11; PC := 84
+ 51 [-]: GETUPVAL  R13 U2       ; R13 := U2
+ 52 [-]: GETTABLE  R13 R13 R12  ; R13 := R13[R12]
+ 53 [-]: GETUPVAL  R14 U3       ; R14 := U3
+ 54 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["Active"]
+ 55 [-]: TEST      R14 0        ; if not R14 then PC := 70
+ 56 [-]: JMP       70           ; PC := 70
+ 57 [-]: GETUPVAL  R14 U3       ; R14 := U3
+ 58 [-]: GETTABLE  R14 R14 K14  ; R14 := R14["Regions"]
+ 59 [-]: GETGLOBAL R15 K15      ; R15 := _T
+ 60 [-]: GETTABLE  R15 R15 K16  ; R15 := R15["REGION_ID_DOJO"]
+ 61 [-]: EQ        1 R12 R15    ; if R12 == R15 then PC := 68
+ 62 [-]: JMP       68           ; PC := 68
+ 63 [-]: GETUPVAL  R15 U4       ; R15 := U4
+ 64 [-]: MOVE      R16 R13      ; R16 := R13
+ 65 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 66 [-]: JMP       69           ; PC := 69
+ 67 [-]: MOVE      R15 R0       ; R15 := R0
+ 68 [-]: MOVE      R15 R1       ; R15 := R1
+ 69 [-]: SETTABLE  R14 R12 R15  ; R14[R12] := R15
+ 70 [-]: GETUPVAL  R14 U1       ; R14 := U1
+ 71 [-]: MOVE      R15 R0       ; R15 := R0
+ 72 [-]: GETTABLE  R16 R13 K17  ; R16 := R13["zoomedInEffects"]
+ 73 [-]: CALL      R14 3 1      ; R14(R15,R16)
+ 74 [-]: GETUPVAL  R14 U1       ; R14 := U1
+ 75 [-]: MOVE      R15 R0       ; R15 := R0
+ 76 [-]: GETTABLE  R16 R13 K18  ; R16 := R13["decoRedux"]
+ 77 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+ 78 [-]: TEST      R14 1        ; if R14 then PC := 84
+ 79 [-]: JMP       84           ; PC := 84
+ 80 [-]: GETUPVAL  R14 U1       ; R14 := U1
+ 81 [-]: MOVE      R15 R0       ; R15 := R0
+ 82 [-]: GETTABLE  R16 R13 K12  ; R16 := R13["deco"]
+ 83 [-]: CALL      R14 3 1      ; R14(R15,R16)
+ 84 [-]: FORLOOP   R9 51        ; R9 += R11; if R9 <= R10 then begin PC := 51; R12 := R9 end
+ 85 [-]: LOADK     R14 K11      ; R14 := 1
+ 86 [-]: GETUPVAL  R15 U5       ; R15 := U5
+ 87 [-]: LEN       R15 R15      ; R15 := # R15
+ 88 [-]: LOADK     R16 K11      ; R16 := 1
+ 89 [-]: FORPREP   R14 101      ; R14 -= R16; PC := 101
+ 90 [-]: GETUPVAL  R18 U5       ; R18 := U5
+ 91 [-]: GETTABLE  R18 R18 R17  ; R18 := R18[R17]
+ 92 [-]: GETUPVAL  R19 U6       ; R19 := U6
+ 93 [-]: MOVE      R20 R18      ; R20 := R18
+ 94 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+ 95 [-]: TEST      R19 0        ; if not R19 then PC := 101
+ 96 [-]: JMP       101          ; PC := 101
+ 97 [-]: GETUPVAL  R19 U1       ; R19 := U1
+ 98 [-]: MOVE      R20 R0       ; R20 := R0
+ 99 [-]: GETTABLE  R21 R18 K12  ; R21 := R18["deco"]
+100 [-]: CALL      R19 3 1      ; R19(R20,R21)
+101 [-]: FORLOOP   R14 90       ; R14 += R16; if R14 <= R15 then begin PC := 90; R17 := R14 end
+102 [-]: LEN       R19 R0       ; R19 := # R0
+103 [-]: LT        0 K2 R19     ; if 0 >= R19 then PC := 111
+104 [-]: JMP       111          ; PC := 111
+105 [-]: GETGLOBAL R19 K19      ; R19 := UISys
+106 [-]: GETTABLE  R19 R19 K20  ; R19 := R19["0x449B53E0"]
+107 [-]: MOVE      R20 R0       ; R20 := R0
+108 [-]: MOVE      R21 R1       ; R21 := R1
+109 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
+110 [-]: MOVE      R19 R7       ; R19 := R7
+111 [-]: RETURN    R0 1         ; return 
 
 
-; Function #76:
+; Function #77:
 ;
 ; Name:            
-; Defined at line: 3252
+; Defined at line: 3265
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11365,10 +11418,10 @@ code size: 4
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #77:
+; Function #78:
 ;
 ; Name:            
-; Defined at line: 3259
+; Defined at line: 3272
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11392,14 +11445,14 @@ code size: 4
  16 [-]: CALL      R6 7 2       ; R6 := R6(R7,R8,R9,R10,R11,R12)
  17 [-]: MOVE      R6 R0        ; R6 := R0
  18 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 19 [-]: CLOSURE   R7 0         ; R7 := closure(Function #77.1)
+ 19 [-]: CLOSURE   R7 0         ; R7 := closure(Function #78.1)
  20 [-]: SETTABLE  R6 K6 R7     ; R6["OnScroll"] := R7
  21 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 22 [-]: CLOSURE   R7 1         ; R7 := closure(Function #77.2)
+ 22 [-]: CLOSURE   R7 1         ; R7 := closure(Function #78.2)
  23 [-]: GETUPVAL  R0 U0        ; R0 := U0
  24 [-]: SETTABLE  R6 K7 R7     ; R6["mOnStopDrag"] := R7
  25 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 26 [-]: CLOSURE   R7 2         ; R7 := closure(Function #77.3)
+ 26 [-]: CLOSURE   R7 2         ; R7 := closure(Function #78.3)
  27 [-]: GETUPVAL  R0 U1        ; R0 := U1
  28 [-]: SETTABLE  R6 K8 R7     ; R6["mOnDeselectCallback"] := R7
  29 [-]: GETUPVAL  R6 U0        ; R6 := U0
@@ -11415,10 +11468,10 @@ code size: 4
  39 [-]: RETURN    R0 1         ; return 
 
 
-; Function #77.1:
+; Function #78.1:
 ;
 ; Name:            
-; Defined at line: 3269
+; Defined at line: 3282
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -11427,10 +11480,10 @@ code size: 4
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #77.2:
+; Function #78.2:
 ;
 ; Name:            
-; Defined at line: 3273
+; Defined at line: 3286
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11445,10 +11498,10 @@ code size: 4
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #77.3:
+; Function #78.3:
 ;
 ; Name:            
-; Defined at line: 3279
+; Defined at line: 3292
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11458,10 +11511,10 @@ code size: 4
   2 [-]: RETURN    R0 1         ; return 
 
 
-; Function #78:
+; Function #79:
 ;
 ; Name:            
-; Defined at line: 3286
+; Defined at line: 3299
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11488,10 +11541,10 @@ code size: 4
  19 [-]: RETURN    R0 1         ; return 
 
 
-; Function #79:
+; Function #80:
 ;
 ; Name:            
-; Defined at line: 3300
+; Defined at line: 3313
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11520,10 +11573,10 @@ code size: 4
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #80:
+; Function #81:
 ;
 ; Name:            
-; Defined at line: 3310
+; Defined at line: 3323
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11597,10 +11650,10 @@ code size: 4
  66 [-]: RETURN    R0 1         ; return 
 
 
-; Function #81:
+; Function #82:
 ;
 ; Name:            
-; Defined at line: 3333
+; Defined at line: 3346
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -11662,10 +11715,10 @@ code size: 4
  54 [-]: RETURN    R0 1         ; return 
 
 
-; Function #82:
+; Function #83:
 ;
 ; Name:            
-; Defined at line: 3349
+; Defined at line: 3362
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -11691,10 +11744,10 @@ code size: 4
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #83:
+; Function #84:
 ;
 ; Name:            
-; Defined at line: 3358
+; Defined at line: 3371
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -11708,10 +11761,10 @@ code size: 4
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #84:
+; Function #85:
 ;
 ; Name:            
-; Defined at line: 3362
+; Defined at line: 3375
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -11734,10 +11787,10 @@ code size: 4
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #85:
+; Function #86:
 ;
 ; Name:            
-; Defined at line: 3370
+; Defined at line: 3383
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11746,10 +11799,10 @@ code size: 4
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #86:
+; Function #87:
 ;
 ; Name:            
-; Defined at line: 3373
+; Defined at line: 3386
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -11760,10 +11813,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #87:
+; Function #88:
 ;
 ; Name:            
-; Defined at line: 3380
+; Defined at line: 3393
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -11792,14 +11845,14 @@ code size: 4
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #88:
+; Function #89:
 ;
 ; Name:            
-; Defined at line: 3384
+; Defined at line: 3397
 ; #Upvalues:       10
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  43
+; Max Stack Size:  41
 
   1 [-]: GETUPVAL  R6 U0        ; R6 := U0
   2 [-]: GETTABLE  R6 R6 K0     ; R6 := R6["0x8ECD61A2"]
@@ -11824,12 +11877,12 @@ code size: 4
  21 [-]: MOVE      R11 R0       ; R11 := R0
  22 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
  23 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
- 24 [-]: TEST      R8 0         ; if not R8 then PC := 117
- 25 [-]: JMP       117          ; PC := 117
+ 24 [-]: TEST      R8 0         ; if not R8 then PC := 99
+ 25 [-]: JMP       99           ; PC := 99
  26 [-]: GETTABLE  R9 R8 K6     ; R9 := R8["skillReqs"]
  27 [-]: LEN       R9 R9        ; R9 := # R9
- 28 [-]: LT        0 K7 R9      ; if 0 >= R9 then PC := 117
- 29 [-]: JMP       117          ; PC := 117
+ 28 [-]: LT        0 K7 R9      ; if 0 >= R9 then PC := 99
+ 29 [-]: JMP       99           ; PC := 99
  30 [-]: NEWTABLE  R9 6 0       ; R9 := {}
  31 [-]: LOADK     R10 K8       ; R10 := "Intrinsics"
  32 [-]: LOADK     R11 K9       ; R11 := "RailjackIntrinsicPilot"
@@ -11841,7 +11894,7 @@ code size: 4
  38 [-]: GETGLOBAL R10 K14      ; R10 := 0xECFDD17
  39 [-]: GETTABLE  R11 R8 K6    ; R11 := R8["skillReqs"]
  40 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
- 41 [-]: JMP       115          ; PC := 115
+ 41 [-]: JMP       97           ; PC := 97
  42 [-]: LOADK     R15 K7       ; R15 := 0
  43 [-]: GETTABLE  R16 R14 K15  ; R16 := R14["skill"]
  44 [-]: GETGLOBAL R17 K16      ; R17 := Lotus_Game
@@ -11871,8 +11924,8 @@ code size: 4
  68 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
  69 [-]: MOVE      R15 R20      ; R15 := R20
  70 [-]: GETTABLE  R20 R14 K24  ; R20 := R14["req"]
- 71 [-]: LT        0 R15 R20    ; if R15 >= R20 then PC := 115
- 72 [-]: JMP       115          ; PC := 115
+ 71 [-]: LT        0 R15 R20    ; if R15 >= R20 then PC := 97
+ 72 [-]: JMP       97           ; PC := 97
  73 [-]: GETTABLE  R20 R14 K15  ; R20 := R14["skill"]
  74 [-]: ADD       R20 R20 K19  ; R20 := R20 + 1
  75 [-]: GETTABLE  R20 R9 R20   ; R20 := R9[R20]
@@ -11885,218 +11938,202 @@ code size: 4
  82 [-]: LOADNIL   R24 R24      ; R24 := nil
  83 [-]: CALL      R22 3 0      ; R22,... := R22(R23,R24)
  84 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
- 85 [-]: NEWTABLE  R22 0 1      ; R22 := {}
- 86 [-]: GETGLOBAL R23 K27      ; R23 := 0xE6DC43B0
- 87 [-]: LOADK     R24 K30      ; R24 := "/Lotus/Language/Menu/InsufficientSkill"
- 88 [-]: NEWTABLE  R25 0 2      ; R25 := {}
- 89 [-]: SETTABLE  R25 K31 R21  ; R25["SKILL"] := R21
- 90 [-]: GETTABLE  R26 R14 K24  ; R26 := R14["req"]
- 91 [-]: SETTABLE  R25 K32 R26  ; R25["RANK"] := R26
- 92 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
- 93 [-]: SETTABLE  R22 K29 R23  ; R22["text"] := R23
- 94 [-]: GETGLOBAL R23 K33      ; R23 := mMovie
- 95 [-]: SELF      R23 R23 K34  ; R24 := R23; R23 := R23["0x5DB0BD4"]
- 96 [-]: GETTABLE  R25 R22 K29  ; R25 := R22["text"]
- 97 [-]: MOVE      R26 R0       ; R26 := R0
- 98 [-]: NEWTABLE  R27 0 5      ; R27 := {}
- 99 [-]: GETTABLE  R28 R22 K36  ; R28 := R22["player"]
-100 [-]: SETTABLE  R27 K35 R28  ; R27["PLAYER_NAME"] := R28
-101 [-]: GETTABLE  R28 R22 K38  ; R28 := R22["value"]
-102 [-]: SETTABLE  R27 K37 R28  ; R27["VALUE"] := R28
-103 [-]: GETTABLE  R28 R22 K39  ; R28 := R22["MIN"]
-104 [-]: SETTABLE  R27 K39 R28  ; R27["MIN"] := R28
-105 [-]: GETTABLE  R28 R22 K40  ; R28 := R22["MAX"]
-106 [-]: SETTABLE  R27 K40 R28  ; R27["MAX"] := R28
-107 [-]: GETTABLE  R28 R22 K41  ; R28 := R22["ITEM"]
-108 [-]: SETTABLE  R27 K41 R28  ; R27["ITEM"] := R28
-109 [-]: CALL      R23 5 2      ; R23 := R23(R24,R25,R26,R27)
-110 [-]: GETUPVAL  R24 U2       ; R24 := U2
-111 [-]: GETTABLE  R24 R24 K42  ; R24 := R24["0xB11F032"]
-112 [-]: MOVE      R25 R23      ; R25 := R23
-113 [-]: CALL      R24 2 1      ; R24(R25)
-114 [-]: RETURN    R0 1         ; return 
-115 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 42; R12 := R13 end
-116 [-]: JMP       42           ; PC := 42
-117 [-]: GETGLOBAL R24 K43      ; R24 := gRegion
-118 [-]: SELF      R24 R24 K44  ; R25 := R24; R24 := R24["0x3E2F6BF"]
-119 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-120 [-]: GETUPVAL  R25 U3       ; R25 := U3
-121 [-]: MOVE      R26 R24      ; R26 := R24
+ 85 [-]: GETGLOBAL R22 K27      ; R22 := 0xE6DC43B0
+ 86 [-]: LOADK     R23 K29      ; R23 := "/Lotus/Language/Menu/InsufficientSkill"
+ 87 [-]: NEWTABLE  R24 0 2      ; R24 := {}
+ 88 [-]: SETTABLE  R24 K30 R21  ; R24["SKILL"] := R21
+ 89 [-]: GETTABLE  R25 R14 K24  ; R25 := R14["req"]
+ 90 [-]: SETTABLE  R24 K31 R25  ; R24["RANK"] := R25
+ 91 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
+ 92 [-]: GETUPVAL  R23 U2       ; R23 := U2
+ 93 [-]: GETTABLE  R23 R23 K32  ; R23 := R23["0xB11F032"]
+ 94 [-]: MOVE      R24 R22      ; R24 := R22
+ 95 [-]: CALL      R23 2 1      ; R23(R24)
+ 96 [-]: RETURN    R0 1         ; return 
+ 97 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 42; R12 := R13 end
+ 98 [-]: JMP       42           ; PC := 42
+ 99 [-]: GETGLOBAL R23 K33      ; R23 := gRegion
+100 [-]: SELF      R23 R23 K34  ; R24 := R23; R23 := R23["0x3E2F6BF"]
+101 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+102 [-]: GETGLOBAL R24 K35      ; R24 := 0x400E7765
+103 [-]: MOVE      R25 R23      ; R25 := R23
+104 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+105 [-]: TEST      R24 1        ; if R24 then PC := 203
+106 [-]: JMP       203          ; PC := 203
+107 [-]: GETUPVAL  R24 U3       ; R24 := U3
+108 [-]: MOVE      R25 R23      ; R25 := R23
+109 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+110 [-]: TEST      R24 0        ; if not R24 then PC := 203
+111 [-]: JMP       203          ; PC := 203
+112 [-]: GETGLOBAL R24 K36      ; R24 := gGameRules
+113 [-]: SELF      R24 R24 K37  ; R25 := R24; R24 := R24["0x1106FFC3"]
+114 [-]: CALL      R24 2 2      ; R24 := R24(R25)
+115 [-]: GETGLOBAL R25 K35      ; R25 := 0x400E7765
+116 [-]: MOVE      R26 R7       ; R26 := R7
+117 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+118 [-]: TEST      R25 1        ; if R25 then PC := 135
+119 [-]: JMP       135          ; PC := 135
+120 [-]: GETGLOBAL R25 K35      ; R25 := 0x400E7765
+121 [-]: MOVE      R26 R23      ; R26 := R23
 122 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-123 [-]: TEST      R25 0        ; if not R25 then PC := 219
-124 [-]: JMP       219          ; PC := 219
-125 [-]: GETGLOBAL R25 K43      ; R25 := gRegion
-126 [-]: SELF      R25 R25 K44  ; R26 := R25; R25 := R25["0x3E2F6BF"]
+123 [-]: TEST      R25 1        ; if R25 then PC := 135
+124 [-]: JMP       135          ; PC := 135
+125 [-]: GETGLOBAL R25 K35      ; R25 := 0x400E7765
+126 [-]: MOVE      R26 R24      ; R26 := R24
 127 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-128 [-]: GETGLOBAL R26 K45      ; R26 := gGameRules
-129 [-]: SELF      R26 R26 K46  ; R27 := R26; R26 := R26["0x1106FFC3"]
-130 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-131 [-]: GETGLOBAL R27 K47      ; R27 := 0x400E7765
-132 [-]: MOVE      R28 R7       ; R28 := R7
-133 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-134 [-]: TEST      R27 1        ; if R27 then PC := 151
-135 [-]: JMP       151          ; PC := 151
-136 [-]: GETGLOBAL R27 K47      ; R27 := 0x400E7765
-137 [-]: MOVE      R28 R25      ; R28 := R25
-138 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-139 [-]: TEST      R27 1        ; if R27 then PC := 151
-140 [-]: JMP       151          ; PC := 151
-141 [-]: GETGLOBAL R27 K47      ; R27 := 0x400E7765
-142 [-]: MOVE      R28 R26      ; R28 := R26
-143 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-144 [-]: TEST      R27 1        ; if R27 then PC := 151
-145 [-]: JMP       151          ; PC := 151
-146 [-]: SELF      R27 R26 K48  ; R28 := R26; R27 := R26["0xE67B2EA2"]
-147 [-]: MOVE      R29 R25      ; R29 := R25
-148 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-149 [-]: TEST      R27 1        ; if R27 then PC := 152
-150 [-]: JMP       152          ; PC := 152
-151 [-]: RETURN    R0 1         ; return 
-152 [-]: GETGLOBAL R27 K49      ; R27 := 0x93B1256B
-153 [-]: LOADK     R28 K50      ; R28 := "RJ GoToMission - "
-154 [-]: GETGLOBAL R29 K51      ; R29 := 0x9FAED6BC
-155 [-]: MOVE      R30 R0       ; R30 := R0
-156 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-157 [-]: CONCAT    R28 R28 R29  ; R28 := R28 .. R29
-158 [-]: CALL      R27 2 1      ; R27(R28)
-159 [-]: GETGLOBAL R27 K52      ; R27 := _T
-160 [-]: GETGLOBAL R28 K1       ; R28 := 0xEC274B1A
-161 [-]: MOVE      R29 R0       ; R29 := R0
-162 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-163 [-]: SETTABLE  R27 K53 R28  ; R27["RailJackNextMissionNode"] := R28
-164 [-]: GETGLOBAL R27 K52      ; R27 := _T
-165 [-]: GETGLOBAL R28 K45      ; R28 := gGameRules
-166 [-]: SELF      R28 R28 K55  ; R29 := R28; R28 := R28["0x8B598ED4"]
-167 [-]: GETGLOBAL R30 K56      ; R30 := gLotusAttractModeGameRulesType
-168 [-]: CALL      R28 3 2      ; R28 := R28(R29,R30)
-169 [-]: SETTABLE  R27 K54 R28  ; R27["SeamlessRailJackTransition"] := R28
-170 [-]: NEWTABLE  R27 0 2      ; R27 := {}
-171 [-]: SETTABLE  R27 K57 R0   ; R27["name"] := R0
-172 [-]: SETTABLE  R27 K58 K7   ; R27["difficulty"] := 0
-173 [-]: GETGLOBAL R28 K59      ; R28 := cjson
-174 [-]: GETTABLE  R28 R28 K60  ; R28 := R28["0x8DC1075B"]
-175 [-]: MOVE      R29 R27      ; R29 := R27
-176 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-177 [-]: GETGLOBAL R29 K61      ; R29 := gMatchingService
-178 [-]: SELF      R29 R29 K62  ; R30 := R29; R29 := R29["0x3016115E"]
-179 [-]: MOVE      R31 R28      ; R31 := R28
-180 [-]: CALL      R29 3 1      ; R29(R30,R31)
-181 [-]: SELF      R29 R7 K63   ; R30 := R7; R29 := R7["0xDF213CE1"]
-182 [-]: GETGLOBAL R31 K1       ; R31 := 0xEC274B1A
-183 [-]: LOADK     R32 K64      ; R32 := "CrewShipGenericTunnel"
-184 [-]: CALL      R31 2 0      ; R31,... := R31(R32)
-185 [-]: CALL      R29 0 2      ; R29 := R29(R30,...)
-186 [-]: SELF      R30 R26 K65  ; R31 := R26; R30 := R26["0xD93C7568"]
-187 [-]: GETTABLE  R32 R29 K66  ; R32 := R29["mission"]
-188 [-]: CALL      R30 3 1      ; R30(R31,R32)
-189 [-]: GETUPVAL  R30 U4       ; R30 := U4
-190 [-]: SETTABLE  R30 K67 K2   ; R30["mSelectedRegion"] := nil
-191 [-]: GETGLOBAL R30 K61      ; R30 := gMatchingService
-192 [-]: SELF      R30 R30 K68  ; R31 := R30; R30 := R30["0x1FEAD306"]
-193 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-194 [-]: TEST      R30 0        ; if not R30 then PC := 211
-195 [-]: JMP       211          ; PC := 211
-196 [-]: GETGLOBAL R30 K45      ; R30 := gGameRules
-197 [-]: SELF      R30 R30 K55  ; R31 := R30; R30 := R30["0x8B598ED4"]
-198 [-]: GETGLOBAL R32 K69      ; R32 := gLotusHubGameRulesType
-199 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
-200 [-]: TEST      R30 1        ; if R30 then PC := 211
-201 [-]: JMP       211          ; PC := 211
-202 [-]: MOVE      R30 R1       ; R30 := R1
-203 [-]: MOVE      R31 R0       ; R31 := R0
-204 [-]: GETUPVAL  R32 U5       ; R32 := U5
-205 [-]: GETTABLE  R32 R32 K70  ; R32 := R32["0xAD27E97A"]
-206 [-]: MOVE      R33 R0       ; R33 := R0
-207 [-]: MOVE      R34 R30      ; R34 := R30
-208 [-]: MOVE      R35 R31      ; R35 := R31
-209 [-]: GETUPVAL  R36 U6       ; R36 := U6
-210 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
-211 [-]: MOVE      R32 R1       ; R32 := R1
-212 [-]: GETUPVAL  R33 U7       ; R33 := U7
-213 [-]: MOVE      R34 R32      ; R34 := R32
-214 [-]: CALL      R33 2 1      ; R33(R34)
-215 [-]: GETUPVAL  R33 U8       ; R33 := U8
-216 [-]: SETTABLE  R33 K71 K2   ; R33["SelectionNode"] := nil
-217 [-]: MOVE      R33 R1       ; R33 := R1
-218 [-]: RETURN    R33 2        ; return R33
-219 [-]: NEWTABLE  R33 0 4      ; R33 := {}
-220 [-]: SETTABLE  R33 K57 R0   ; R33["name"] := R0
-221 [-]: SETTABLE  R33 K72 R1   ; R33["quest"] := R1
-222 [-]: SETTABLE  R33 K58 R3   ; R33["difficulty"] := R3
-223 [-]: SETTABLE  R33 K73 R5   ; R33["wager"] := R5
-224 [-]: TEST      R2 0         ; if not R2 then PC := 229
-225 [-]: JMP       229          ; PC := 229
-226 [-]: EQ        1 R2 K74     ; if R2 == "" then PC := 229
-227 [-]: JMP       229          ; PC := 229
-228 [-]: SETTABLE  R33 K75 R2   ; R33["raid"] := R2
-229 [-]: TEST      R4 0         ; if not R4 then PC := 234
-230 [-]: JMP       234          ; PC := 234
-231 [-]: EQ        1 R4 K74     ; if R4 == "" then PC := 234
-232 [-]: JMP       234          ; PC := 234
-233 [-]: SETTABLE  R33 K76 R4   ; R33["voidTier"] := R4
-234 [-]: GETGLOBAL R34 K47      ; R34 := 0x400E7765
-235 [-]: MOVE      R35 R1       ; R35 := R1
-236 [-]: CALL      R34 2 2      ; R34 := R34(R35)
-237 [-]: TEST      R34 1        ; if R34 then PC := 285
-238 [-]: JMP       285          ; PC := 285
-239 [-]: GETGLOBAL R34 K25      ; R34 := string
-240 [-]: GETTABLE  R34 R34 K77  ; R34 := R34["0xDE44F664"]
-241 [-]: MOVE      R35 R0       ; R35 := R0
-242 [-]: GETUPVAL  R36 U1       ; R36 := U1
-243 [-]: GETTABLE  R36 R36 K78  ; R36 := R36["KEY_TAG"]
-244 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
-245 [-]: TEST      R34 0        ; if not R34 then PC := 285
-246 [-]: JMP       285          ; PC := 285
-247 [-]: GETGLOBAL R34 K25      ; R34 := string
-248 [-]: GETTABLE  R34 R34 K77  ; R34 := R34["0xDE44F664"]
-249 [-]: MOVE      R35 R0       ; R35 := R0
-250 [-]: GETUPVAL  R36 U1       ; R36 := U1
-251 [-]: GETTABLE  R36 R36 K78  ; R36 := R36["KEY_TAG"]
-252 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
-253 [-]: EQ        1 R34 K2     ; if R34 == nil then PC := 285
-254 [-]: JMP       285          ; PC := 285
-255 [-]: GETGLOBAL R35 K25      ; R35 := string
-256 [-]: GETTABLE  R35 R35 K79  ; R35 := R35["0x7B782033"]
-257 [-]: MOVE      R36 R0       ; R36 := R0
-258 [-]: LOADK     R37 K19      ; R37 := 1
-259 [-]: SUB       R38 R34 K19  ; R38 := R34 - 1
-260 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-261 [-]: GETGLOBAL R36 K80      ; R36 := 0x7C282057
-262 [-]: MOVE      R37 R35      ; R37 := R35
-263 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-264 [-]: GETGLOBAL R37 K47      ; R37 := 0x400E7765
-265 [-]: MOVE      R38 R36      ; R38 := R36
-266 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-267 [-]: TEST      R37 1        ; if R37 then PC := 285
-268 [-]: JMP       285          ; PC := 285
-269 [-]: SELF      R37 R36 K81  ; R38 := R36; R37 := R36["0x9BC3049C"]
-270 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-271 [-]: TEST      R37 0        ; if not R37 then PC := 285
-272 [-]: JMP       285          ; PC := 285
-273 [-]: GETGLOBAL R37 K52      ; R37 := _T
-274 [-]: SETTABLE  R37 K82 R33  ; R37["sectorInfo"] := R33
-275 [-]: GETGLOBAL R37 K33      ; R37 := mMovie
-276 [-]: SELF      R37 R37 K83  ; R38 := R37; R37 := R37["0x458F27A9"]
-277 [-]: LOADK     R39 K84      ; R39 := "ShowQuestConfirm"
-278 [-]: GETGLOBAL R40 K51      ; R40 := 0x9FAED6BC
-279 [-]: SELF      R41 R36 K85  ; R42 := R36; R41 := R36["0x5F68C582"]
-280 [-]: CALL      R41 2 0      ; R41,... := R41(R42)
-281 [-]: CALL      R40 0 0      ; R40,... := R40(R41,...)
-282 [-]: CALL      R37 0 1      ; R37(R38,...)
-283 [-]: MOVE      R37 R1       ; R37 := R1
-284 [-]: RETURN    R37 2        ; return R37
-285 [-]: GETUPVAL  R37 U9       ; R37 := U9
-286 [-]: MOVE      R38 R33      ; R38 := R33
-287 [-]: CALL      R37 2 1      ; R37(R38)
-288 [-]: MOVE      R37 R1       ; R37 := R1
-289 [-]: RETURN    R37 2        ; return R37
-290 [-]: RETURN    R0 1         ; return 
+128 [-]: TEST      R25 1        ; if R25 then PC := 135
+129 [-]: JMP       135          ; PC := 135
+130 [-]: SELF      R25 R24 K38  ; R26 := R24; R25 := R24["0xE67B2EA2"]
+131 [-]: MOVE      R27 R23      ; R27 := R23
+132 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
+133 [-]: TEST      R25 1        ; if R25 then PC := 136
+134 [-]: JMP       136          ; PC := 136
+135 [-]: RETURN    R0 1         ; return 
+136 [-]: GETGLOBAL R25 K39      ; R25 := 0x93B1256B
+137 [-]: LOADK     R26 K40      ; R26 := "RJ GoToMission - "
+138 [-]: GETGLOBAL R27 K41      ; R27 := 0x9FAED6BC
+139 [-]: MOVE      R28 R0       ; R28 := R0
+140 [-]: CALL      R27 2 2      ; R27 := R27(R28)
+141 [-]: CONCAT    R26 R26 R27  ; R26 := R26 .. R27
+142 [-]: CALL      R25 2 1      ; R25(R26)
+143 [-]: GETGLOBAL R25 K42      ; R25 := _T
+144 [-]: GETGLOBAL R26 K1       ; R26 := 0xEC274B1A
+145 [-]: MOVE      R27 R0       ; R27 := R0
+146 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+147 [-]: SETTABLE  R25 K43 R26  ; R25["RailJackNextMissionNode"] := R26
+148 [-]: GETGLOBAL R25 K42      ; R25 := _T
+149 [-]: GETGLOBAL R26 K36      ; R26 := gGameRules
+150 [-]: SELF      R26 R26 K45  ; R27 := R26; R26 := R26["0x8B598ED4"]
+151 [-]: GETGLOBAL R28 K46      ; R28 := gLotusAttractModeGameRulesType
+152 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+153 [-]: SETTABLE  R25 K44 R26  ; R25["SeamlessRailJackTransition"] := R26
+154 [-]: NEWTABLE  R25 0 2      ; R25 := {}
+155 [-]: SETTABLE  R25 K47 R0   ; R25["name"] := R0
+156 [-]: SETTABLE  R25 K48 K7   ; R25["difficulty"] := 0
+157 [-]: GETGLOBAL R26 K49      ; R26 := cjson
+158 [-]: GETTABLE  R26 R26 K50  ; R26 := R26["0x8DC1075B"]
+159 [-]: MOVE      R27 R25      ; R27 := R25
+160 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+161 [-]: GETGLOBAL R27 K51      ; R27 := gMatchingService
+162 [-]: SELF      R27 R27 K52  ; R28 := R27; R27 := R27["0x3016115E"]
+163 [-]: MOVE      R29 R26      ; R29 := R26
+164 [-]: CALL      R27 3 1      ; R27(R28,R29)
+165 [-]: SELF      R27 R7 K53   ; R28 := R7; R27 := R7["0xDF213CE1"]
+166 [-]: GETGLOBAL R29 K1       ; R29 := 0xEC274B1A
+167 [-]: LOADK     R30 K54      ; R30 := "CrewShipGenericTunnel"
+168 [-]: CALL      R29 2 0      ; R29,... := R29(R30)
+169 [-]: CALL      R27 0 2      ; R27 := R27(R28,...)
+170 [-]: SELF      R28 R24 K55  ; R29 := R24; R28 := R24["0xD93C7568"]
+171 [-]: GETTABLE  R30 R27 K56  ; R30 := R27["mission"]
+172 [-]: CALL      R28 3 1      ; R28(R29,R30)
+173 [-]: GETUPVAL  R28 U4       ; R28 := U4
+174 [-]: SETTABLE  R28 K57 K2   ; R28["mSelectedRegion"] := nil
+175 [-]: GETGLOBAL R28 K51      ; R28 := gMatchingService
+176 [-]: SELF      R28 R28 K58  ; R29 := R28; R28 := R28["0x1FEAD306"]
+177 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+178 [-]: TEST      R28 0        ; if not R28 then PC := 195
+179 [-]: JMP       195          ; PC := 195
+180 [-]: GETGLOBAL R28 K36      ; R28 := gGameRules
+181 [-]: SELF      R28 R28 K45  ; R29 := R28; R28 := R28["0x8B598ED4"]
+182 [-]: GETGLOBAL R30 K59      ; R30 := gLotusHubGameRulesType
+183 [-]: CALL      R28 3 2      ; R28 := R28(R29,R30)
+184 [-]: TEST      R28 1        ; if R28 then PC := 195
+185 [-]: JMP       195          ; PC := 195
+186 [-]: MOVE      R28 R1       ; R28 := R1
+187 [-]: MOVE      R29 R0       ; R29 := R0
+188 [-]: GETUPVAL  R30 U5       ; R30 := U5
+189 [-]: GETTABLE  R30 R30 K60  ; R30 := R30["0xAD27E97A"]
+190 [-]: MOVE      R31 R0       ; R31 := R0
+191 [-]: MOVE      R32 R28      ; R32 := R28
+192 [-]: MOVE      R33 R29      ; R33 := R29
+193 [-]: GETUPVAL  R34 U6       ; R34 := U6
+194 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
+195 [-]: MOVE      R30 R1       ; R30 := R1
+196 [-]: GETUPVAL  R31 U7       ; R31 := U7
+197 [-]: MOVE      R32 R30      ; R32 := R30
+198 [-]: CALL      R31 2 1      ; R31(R32)
+199 [-]: GETUPVAL  R31 U8       ; R31 := U8
+200 [-]: SETTABLE  R31 K61 K2   ; R31["SelectionNode"] := nil
+201 [-]: MOVE      R31 R1       ; R31 := R1
+202 [-]: RETURN    R31 2        ; return R31
+203 [-]: NEWTABLE  R31 0 4      ; R31 := {}
+204 [-]: SETTABLE  R31 K47 R0   ; R31["name"] := R0
+205 [-]: SETTABLE  R31 K62 R1   ; R31["quest"] := R1
+206 [-]: SETTABLE  R31 K48 R3   ; R31["difficulty"] := R3
+207 [-]: SETTABLE  R31 K63 R5   ; R31["wager"] := R5
+208 [-]: TEST      R2 0         ; if not R2 then PC := 213
+209 [-]: JMP       213          ; PC := 213
+210 [-]: EQ        1 R2 K64     ; if R2 == "" then PC := 213
+211 [-]: JMP       213          ; PC := 213
+212 [-]: SETTABLE  R31 K65 R2   ; R31["raid"] := R2
+213 [-]: TEST      R4 0         ; if not R4 then PC := 218
+214 [-]: JMP       218          ; PC := 218
+215 [-]: EQ        1 R4 K64     ; if R4 == "" then PC := 218
+216 [-]: JMP       218          ; PC := 218
+217 [-]: SETTABLE  R31 K66 R4   ; R31["voidTier"] := R4
+218 [-]: GETGLOBAL R32 K35      ; R32 := 0x400E7765
+219 [-]: MOVE      R33 R1       ; R33 := R1
+220 [-]: CALL      R32 2 2      ; R32 := R32(R33)
+221 [-]: TEST      R32 1        ; if R32 then PC := 269
+222 [-]: JMP       269          ; PC := 269
+223 [-]: GETGLOBAL R32 K25      ; R32 := string
+224 [-]: GETTABLE  R32 R32 K67  ; R32 := R32["0xDE44F664"]
+225 [-]: MOVE      R33 R0       ; R33 := R0
+226 [-]: GETUPVAL  R34 U1       ; R34 := U1
+227 [-]: GETTABLE  R34 R34 K68  ; R34 := R34["KEY_TAG"]
+228 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
+229 [-]: TEST      R32 0        ; if not R32 then PC := 269
+230 [-]: JMP       269          ; PC := 269
+231 [-]: GETGLOBAL R32 K25      ; R32 := string
+232 [-]: GETTABLE  R32 R32 K67  ; R32 := R32["0xDE44F664"]
+233 [-]: MOVE      R33 R0       ; R33 := R0
+234 [-]: GETUPVAL  R34 U1       ; R34 := U1
+235 [-]: GETTABLE  R34 R34 K68  ; R34 := R34["KEY_TAG"]
+236 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
+237 [-]: EQ        1 R32 K2     ; if R32 == nil then PC := 269
+238 [-]: JMP       269          ; PC := 269
+239 [-]: GETGLOBAL R33 K25      ; R33 := string
+240 [-]: GETTABLE  R33 R33 K69  ; R33 := R33["0x7B782033"]
+241 [-]: MOVE      R34 R0       ; R34 := R0
+242 [-]: LOADK     R35 K19      ; R35 := 1
+243 [-]: SUB       R36 R32 K19  ; R36 := R32 - 1
+244 [-]: CALL      R33 4 2      ; R33 := R33(R34,R35,R36)
+245 [-]: GETGLOBAL R34 K70      ; R34 := 0x7C282057
+246 [-]: MOVE      R35 R33      ; R35 := R33
+247 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+248 [-]: GETGLOBAL R35 K35      ; R35 := 0x400E7765
+249 [-]: MOVE      R36 R34      ; R36 := R34
+250 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+251 [-]: TEST      R35 1        ; if R35 then PC := 269
+252 [-]: JMP       269          ; PC := 269
+253 [-]: SELF      R35 R34 K71  ; R36 := R34; R35 := R34["0x9BC3049C"]
+254 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+255 [-]: TEST      R35 0        ; if not R35 then PC := 269
+256 [-]: JMP       269          ; PC := 269
+257 [-]: GETGLOBAL R35 K42      ; R35 := _T
+258 [-]: SETTABLE  R35 K72 R31  ; R35["sectorInfo"] := R31
+259 [-]: GETGLOBAL R35 K73      ; R35 := mMovie
+260 [-]: SELF      R35 R35 K74  ; R36 := R35; R35 := R35["0x458F27A9"]
+261 [-]: LOADK     R37 K75      ; R37 := "ShowQuestConfirm"
+262 [-]: GETGLOBAL R38 K41      ; R38 := 0x9FAED6BC
+263 [-]: SELF      R39 R34 K76  ; R40 := R34; R39 := R34["0x5F68C582"]
+264 [-]: CALL      R39 2 0      ; R39,... := R39(R40)
+265 [-]: CALL      R38 0 0      ; R38,... := R38(R39,...)
+266 [-]: CALL      R35 0 1      ; R35(R36,...)
+267 [-]: MOVE      R35 R1       ; R35 := R1
+268 [-]: RETURN    R35 2        ; return R35
+269 [-]: GETUPVAL  R35 U9       ; R35 := U9
+270 [-]: MOVE      R36 R31      ; R36 := R31
+271 [-]: CALL      R35 2 1      ; R35(R36)
+272 [-]: MOVE      R35 R1       ; R35 := R1
+273 [-]: RETURN    R35 2        ; return R35
+274 [-]: RETURN    R0 1         ; return 
 
 
-; Function #89:
+; Function #90:
 ;
 ; Name:            
-; Defined at line: 3506
+; Defined at line: 3517
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12142,10 +12179,10 @@ code size: 4
  38 [-]: RETURN    R0 1         ; return 
 
 
-; Function #90:
+; Function #91:
 ;
 ; Name:            
-; Defined at line: 3521
+; Defined at line: 3532
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12179,10 +12216,10 @@ code size: 4
  26 [-]: RETURN    R0 1         ; return 
 
 
-; Function #91:
+; Function #92:
 ;
 ; Name:            
-; Defined at line: 3534
+; Defined at line: 3545
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12273,10 +12310,10 @@ code size: 4
  83 [-]: RETURN    R0 1         ; return 
 
 
-; Function #92:
+; Function #93:
 ;
 ; Name:            
-; Defined at line: 3564
+; Defined at line: 3575
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12326,10 +12363,10 @@ code size: 4
  42 [-]: RETURN    R0 1         ; return 
 
 
-; Function #93:
+; Function #94:
 ;
 ; Name:            
-; Defined at line: 3581
+; Defined at line: 3592
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -12338,10 +12375,10 @@ code size: 4
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #94:
+; Function #95:
 ;
 ; Name:            
-; Defined at line: 3584
+; Defined at line: 3595
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12381,10 +12418,10 @@ code size: 4
  32 [-]: RETURN    R0 1         ; return 
 
 
-; Function #95:
+; Function #96:
 ;
 ; Name:            
-; Defined at line: 3603
+; Defined at line: 3614
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12431,10 +12468,10 @@ code size: 4
  39 [-]: RETURN    R0 1         ; return 
 
 
-; Function #96:
+; Function #97:
 ;
 ; Name:            
-; Defined at line: 3624
+; Defined at line: 3635
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12443,10 +12480,10 @@ code size: 4
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #97:
+; Function #98:
 ;
 ; Name:            
-; Defined at line: 3627
+; Defined at line: 3638
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -12509,10 +12546,10 @@ code size: 4
  55 [-]: RETURN    R0 1         ; return 
 
 
-; Function #98:
+; Function #99:
 ;
 ; Name:            
-; Defined at line: 3650
+; Defined at line: 3661
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -12583,10 +12620,10 @@ code size: 4
  63 [-]: RETURN    R0 1         ; return 
 
 
-; Function #99:
+; Function #100:
 ;
 ; Name:            
-; Defined at line: 3675
+; Defined at line: 3686
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -12687,10 +12724,10 @@ code size: 4
  93 [-]: RETURN    R0 1         ; return 
 
 
-; Function #100:
+; Function #101:
 ;
 ; Name:            
-; Defined at line: 3711
+; Defined at line: 3722
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -12723,14 +12760,14 @@ code size: 4
  25 [-]: RETURN    R0 1         ; return 
 
 
-; Function #101:
+; Function #102:
 ;
 ; Name:            
-; Defined at line: 3729
+; Defined at line: 3740
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  26
 
   1 [-]: MOVE      R1 R0        ; R1 := R0
   2 [-]: MOVE      R1 R0        ; R1 := R0
@@ -12749,114 +12786,212 @@ code size: 4
  15 [-]: GETUPVAL  R1 U1        ; R1 := U1
  16 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0xB7E9C2EF"]
  17 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 18 [-]: GETTABLE  R2 R1 K7     ; R2 := R1["playerCount"]
- 19 [-]: GETTABLE  R3 R1 K8     ; R3 := R1["scenarioStart"]
- 20 [-]: GETTABLE  R4 R1 K9     ; R4 := R1["scenarioProgress"]
- 21 [-]: GETGLOBAL R5 K0        ; R5 := _T
- 22 [-]: CLOSURE   R6 0         ; R6 := closure(Function #101.1)
- 23 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 24 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 25 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 26 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 27 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 28 [-]: SETTABLE  R5 K10 R6    ; R5["MenuSelectionDone"] := R6
- 29 [-]: TEST      R0 0         ; if not R0 then PC := 76
- 30 [-]: JMP       76           ; PC := 76
- 31 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 32 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["mAutoJoinIfNotBusy"]
- 33 [-]: TEST      R5 0         ; if not R5 then PC := 76
- 34 [-]: JMP       76           ; PC := 76
- 35 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 36 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["mBusyPlayerLoad"]
- 37 [-]: LT        0 K13 R5     ; if 0 >= R5 then PC := 76
- 38 [-]: JMP       76           ; PC := 76
- 39 [-]: MOVE      R5 R1        ; R5 := R1
- 40 [-]: LOADK     R6 K14       ; R6 := 2
- 41 [-]: LEN       R7 R2        ; R7 := # R2
- 42 [-]: LOADK     R8 K15       ; R8 := 1
- 43 [-]: FORPREP   R6 49        ; R6 -= R8; PC := 49
- 44 [-]: GETTABLE  R10 R2 R9    ; R10 := R2[R9]
- 45 [-]: LT        0 K13 R10    ; if 0 >= R10 then PC := 49
- 46 [-]: JMP       49           ; PC := 49
- 47 [-]: MOVE      R5 R0        ; R5 := R0
- 48 [-]: JMP       50           ; PC := 50
- 49 [-]: FORLOOP   R6 44        ; R6 += R8; if R6 <= R7 then begin PC := 44; R9 := R6 end
- 50 [-]: TEST      R5 0         ; if not R5 then PC := 76
- 51 [-]: JMP       76           ; PC := 76
- 52 [-]: GETTABLE  R10 R2 K15   ; R10 := R2[1]
- 53 [-]: GETTABLE  R11 R1 K16   ; R11 := R1["hubCapacity"]
- 54 [-]: DIV       R10 R10 R11  ; R10 := R10 / R11
- 55 [-]: GETUPVAL  R11 U5       ; R11 := U5
- 56 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["mBusyPlayerLoad"]
- 57 [-]: LE        0 R10 R11    ; if R10 > R11 then PC := 76
- 58 [-]: JMP       76           ; PC := 76
- 59 [-]: GETGLOBAL R11 K5       ; R11 := 0x400E7765
- 60 [-]: GETUPVAL  R12 U2       ; R12 := U2
- 61 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 62 [-]: TEST      R11 1        ; if R11 then PC := 67
- 63 [-]: JMP       67           ; PC := 67
- 64 [-]: GETUPVAL  R11 U2       ; R11 := U2
- 65 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0xA58BB96C"]
- 66 [-]: CALL      R11 2 1      ; R11(R12)
- 67 [-]: GETGLOBAL R11 K0       ; R11 := _T
- 68 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["0x968C0654"]
- 69 [-]: NEWTABLE  R12 1 0      ; R12 := {}
- 70 [-]: NEWTABLE  R13 0 2      ; R13 := {}
- 71 [-]: SETTABLE  R13 K19 K13  ; R13["Instance"] := 0
- 72 [-]: SETTABLE  R13 K20 K21  ; R13["IsFull"] := "0x0"
- 73 [-]: SETLIST   R12 1 1      ; R12[(1-1)*FPF+i] := R(12+i), 1 <= i <= 1
- 74 [-]: CALL      R11 2 1      ; R11(R12)
- 75 [-]: RETURN    R0 1         ; return 
- 76 [-]: CLOSURE   R11 1        ; R11 := closure(Function #101.2)
- 77 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 78 [-]: GETGLOBAL R12 K22      ; R12 := mMovie
- 79 [-]: SELF      R12 R12 K23  ; R13 := R12; R12 := R12["0x5FF274BB"]
- 80 [-]: GETGLOBAL R14 K24      ; R14 := genericMenuMovie
- 81 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
- 82 [-]: MOVE      R12 R2       ; R12 := R2
- 83 [-]: GETUPVAL  R12 U2       ; R12 := U2
- 84 [-]: SELF      R12 R12 K2   ; R13 := R12; R12 := R12["0x458F27A9"]
- 85 [-]: LOADK     R14 K25      ; R14 := "SetTitle"
- 86 [-]: LOADK     R15 K26      ; R15 := "/Lotus/Language/Menu/ConfirmMultiHubInstance"
- 87 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
- 88 [-]: GETUPVAL  R12 U2       ; R12 := U2
- 89 [-]: SELF      R12 R12 K2   ; R13 := R12; R12 := R12["0x458F27A9"]
- 90 [-]: LOADK     R14 K27      ; R14 := "SetCallBack"
- 91 [-]: LOADK     R15 K10      ; R15 := "MenuSelectionDone"
- 92 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
- 93 [-]: TEST      R0 0         ; if not R0 then PC := 106
- 94 [-]: JMP       106          ; PC := 106
- 95 [-]: GETGLOBAL R12 K0       ; R12 := _T
- 96 [-]: CLOSURE   R13 2        ; R13 := closure(Function #101.3)
- 97 [-]: MOVE      R0 R2        ; R0 := R2
- 98 [-]: MOVE      R0 R1        ; R0 := R1
- 99 [-]: MOVE      R0 R11       ; R0 := R11
-100 [-]: GETUPVAL  R0 U5        ; R0 := U5
-101 [-]: MOVE      R0 R3        ; R0 := R3
-102 [-]: GETUPVAL  R0 U6        ; R0 := U6
-103 [-]: MOVE      R0 R4        ; R0 := R4
-104 [-]: SETTABLE  R12 K28 R13  ; R12["GetMenuEntries"] := R13
-105 [-]: JMP       110          ; PC := 110
-106 [-]: GETGLOBAL R12 K0       ; R12 := _T
-107 [-]: CLOSURE   R13 3        ; R13 := closure(Function #101.4)
-108 [-]: GETUPVAL  R0 U5        ; R0 := U5
-109 [-]: SETTABLE  R12 K28 R13  ; R12["GetMenuEntries"] := R13
-110 [-]: GETUPVAL  R12 U2       ; R12 := U2
-111 [-]: SELF      R12 R12 K2   ; R13 := R12; R12 := R12["0x458F27A9"]
-112 [-]: LOADK     R14 K29      ; R14 := "SetElementsFunction"
-113 [-]: LOADK     R15 K28      ; R15 := "GetMenuEntries"
-114 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-115 [-]: RETURN    R0 1         ; return 
+ 18 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 19 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["sectorName"]
+ 20 [-]: GETTABLE  R3 R1 K8     ; R3 := R1["playerCount"]
+ 21 [-]: GETTABLE  R4 R1 K9     ; R4 := R1["scenarioProgress"]
+ 22 [-]: LOADK     R5 K10       ; R5 := 0
+ 23 [-]: LOADK     R6 K10       ; R6 := 0
+ 24 [-]: LOADK     R7 K11       ; R7 := 100
+ 25 [-]: LOADNIL   R8 R10       ; R8 := R9 := R10 := nil
+ 26 [-]: TEST      R2 0         ; if not R2 then PC := 37
+ 27 [-]: JMP       37           ; PC := 37
+ 28 [-]: EQ        0 R2 K12     ; if R2 ~= "ScenarioEventHub5" then PC := 37
+ 29 [-]: JMP       37           ; PC := 37
+ 30 [-]: GETGLOBAL R11 K13      ; R11 := _G
+ 31 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["CachedGoalInfo"]
+ 32 [-]: TEST      R11 0        ; if not R11 then PC := 37
+ 33 [-]: JMP       37           ; PC := 37
+ 34 [-]: GETGLOBAL R11 K13      ; R11 := _G
+ 35 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["CachedGoalInfo"]
+ 36 [-]: GETTABLE  R10 R11 R2   ; R10 := R11[R2]
+ 37 [-]: TEST      R10 0        ; if not R10 then PC := 88
+ 38 [-]: JMP       88           ; PC := 88
+ 39 [-]: GETTABLE  R11 R10 K15  ; R11 := R10["mMetadata"]
+ 40 [-]: TEST      R11 0        ; if not R11 then PC := 51
+ 41 [-]: JMP       51           ; PC := 51
+ 42 [-]: EQ        1 R11 K16    ; if R11 == "" then PC := 51
+ 43 [-]: JMP       51           ; PC := 51
+ 44 [-]: GETGLOBAL R12 K17      ; R12 := cjson
+ 45 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["0x8A2E8315"]
+ 46 [-]: MOVE      R13 R11      ; R13 := R11
+ 47 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 48 [-]: TEST      R12 0        ; if not R12 then PC := 51
+ 49 [-]: JMP       51           ; PC := 51
+ 50 [-]: GETTABLE  R7 R12 K19   ; R7 := R12["progressReq"]
+ 51 [-]: GETGLOBAL R13 K20      ; R13 := Engine
+ 52 [-]: GETTABLE  R13 R13 K21  ; R13 := R13["0xD09D7910"]
+ 53 [-]: GETTABLE  R14 R10 K22  ; R14 := R10["mAltExpiry"]
+ 54 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 55 [-]: MOVE      R6 R13       ; R6 := R13
+ 56 [-]: LT        0 R6 K10     ; if R6 >= 0 then PC := 76
+ 57 [-]: JMP       76           ; PC := 76
+ 58 [-]: GETGLOBAL R13 K20      ; R13 := Engine
+ 59 [-]: GETTABLE  R13 R13 K21  ; R13 := R13["0xD09D7910"]
+ 60 [-]: GETTABLE  R14 R10 K23  ; R14 := R10["mNextAltActivation"]
+ 61 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 62 [-]: MOVE      R5 R13       ; R5 := R13
+ 63 [-]: GETGLOBAL R13 K24      ; R13 := 0xE6DC43B0
+ 64 [-]: LOADK     R14 K25      ; R14 := "/Lotus/Language/Events/FragmentArrivalTime"
+ 65 [-]: NEWTABLE  R15 0 1      ; R15 := {}
+ 66 [-]: GETUPVAL  R16 U3       ; R16 := U3
+ 67 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["0xC65D09DD"]
+ 68 [-]: GETGLOBAL R17 K28      ; R17 := mMovie
+ 69 [-]: MOVE      R18 R5       ; R18 := R5
+ 70 [-]: LOADK     R19 K29      ; R19 := "Compact"
+ 71 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+ 72 [-]: SETTABLE  R15 K26 R16  ; R15["VALUE"] := R16
+ 73 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+ 74 [-]: MOVE      R9 R13       ; R9 := R13
+ 75 [-]: JMP       88           ; PC := 88
+ 76 [-]: GETGLOBAL R13 K24      ; R13 := 0xE6DC43B0
+ 77 [-]: LOADK     R14 K30      ; R14 := "/Lotus/Language/Events/FlotillaTimeRemainingInstanceSelector"
+ 78 [-]: NEWTABLE  R15 0 1      ; R15 := {}
+ 79 [-]: GETUPVAL  R16 U3       ; R16 := U3
+ 80 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["0xC65D09DD"]
+ 81 [-]: GETGLOBAL R17 K28      ; R17 := mMovie
+ 82 [-]: MOVE      R18 R6       ; R18 := R6
+ 83 [-]: LOADK     R19 K29      ; R19 := "Compact"
+ 84 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+ 85 [-]: SETTABLE  R15 K26 R16  ; R15["VALUE"] := R16
+ 86 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+ 87 [-]: MOVE      R8 R13       ; R8 := R13
+ 88 [-]: GETGLOBAL R13 K0       ; R13 := _T
+ 89 [-]: CLOSURE   R14 0        ; R14 := closure(Function #102.1)
+ 90 [-]: GETUPVAL  R0 U4        ; R0 := U4
+ 91 [-]: GETUPVAL  R0 U5        ; R0 := U5
+ 92 [-]: GETUPVAL  R0 U6        ; R0 := U6
+ 93 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 94 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 95 [-]: SETTABLE  R13 K31 R14  ; R13["MenuSelectionDone"] := R14
+ 96 [-]: TEST      R0 0         ; if not R0 then PC := 153
+ 97 [-]: JMP       153          ; PC := 153
+ 98 [-]: GETUPVAL  R13 U2       ; R13 := U2
+ 99 [-]: GETTABLE  R13 R13 K32  ; R13 := R13["mAutoJoinIfNotBusy"]
+100 [-]: TEST      R13 0        ; if not R13 then PC := 153
+101 [-]: JMP       153          ; PC := 153
+102 [-]: GETUPVAL  R13 U2       ; R13 := U2
+103 [-]: GETTABLE  R13 R13 K33  ; R13 := R13["mBusyPlayerLoad"]
+104 [-]: LT        0 K10 R13    ; if 0 >= R13 then PC := 153
+105 [-]: JMP       153          ; PC := 153
+106 [-]: MOVE      R13 R1       ; R13 := R1
+107 [-]: LEN       R14 R4       ; R14 := # R4
+108 [-]: LT        0 K10 R14    ; if 0 >= R14 then PC := 114
+109 [-]: JMP       114          ; PC := 114
+110 [-]: GETTABLE  R14 R4 K34   ; R14 := R4[1]
+111 [-]: LE        0 R7 R14     ; if R7 > R14 then PC := 114
+112 [-]: JMP       114          ; PC := 114
+113 [-]: MOVE      R13 R0       ; R13 := R0
+114 [-]: TEST      R13 0        ; if not R13 then PC := 153
+115 [-]: JMP       153          ; PC := 153
+116 [-]: MOVE      R14 R1       ; R14 := R1
+117 [-]: LOADK     R15 K35      ; R15 := 2
+118 [-]: LEN       R16 R3       ; R16 := # R3
+119 [-]: LOADK     R17 K34      ; R17 := 1
+120 [-]: FORPREP   R15 126      ; R15 -= R17; PC := 126
+121 [-]: GETTABLE  R19 R3 R18   ; R19 := R3[R18]
+122 [-]: LT        0 K10 R19    ; if 0 >= R19 then PC := 126
+123 [-]: JMP       126          ; PC := 126
+124 [-]: MOVE      R14 R0       ; R14 := R0
+125 [-]: JMP       127          ; PC := 127
+126 [-]: FORLOOP   R15 121      ; R15 += R17; if R15 <= R16 then begin PC := 121; R18 := R15 end
+127 [-]: TEST      R14 0        ; if not R14 then PC := 153
+128 [-]: JMP       153          ; PC := 153
+129 [-]: GETTABLE  R19 R3 K34   ; R19 := R3[1]
+130 [-]: GETTABLE  R20 R1 K36   ; R20 := R1["hubCapacity"]
+131 [-]: DIV       R19 R19 R20  ; R19 := R19 / R20
+132 [-]: GETUPVAL  R20 U2       ; R20 := U2
+133 [-]: GETTABLE  R20 R20 K33  ; R20 := R20["mBusyPlayerLoad"]
+134 [-]: LE        0 R19 R20    ; if R19 > R20 then PC := 153
+135 [-]: JMP       153          ; PC := 153
+136 [-]: GETGLOBAL R20 K5       ; R20 := 0x400E7765
+137 [-]: GETUPVAL  R21 U4       ; R21 := U4
+138 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+139 [-]: TEST      R20 1        ; if R20 then PC := 144
+140 [-]: JMP       144          ; PC := 144
+141 [-]: GETUPVAL  R20 U4       ; R20 := U4
+142 [-]: SELF      R20 R20 K37  ; R21 := R20; R20 := R20["0xA58BB96C"]
+143 [-]: CALL      R20 2 1      ; R20(R21)
+144 [-]: GETGLOBAL R20 K0       ; R20 := _T
+145 [-]: GETTABLE  R20 R20 K38  ; R20 := R20["0x968C0654"]
+146 [-]: NEWTABLE  R21 1 0      ; R21 := {}
+147 [-]: NEWTABLE  R22 0 2      ; R22 := {}
+148 [-]: SETTABLE  R22 K39 K10  ; R22["Instance"] := 0
+149 [-]: SETTABLE  R22 K40 K41  ; R22["IsFull"] := "0x0"
+150 [-]: SETLIST   R21 1 1      ; R21[(1-1)*FPF+i] := R(21+i), 1 <= i <= 1
+151 [-]: CALL      R20 2 1      ; R20(R21)
+152 [-]: RETURN    R0 1         ; return 
+153 [-]: CLOSURE   R20 1        ; R20 := closure(Function #102.2)
+154 [-]: GETUPVAL  R0 U2        ; R0 := U2
+155 [-]: LOADK     R21 K42      ; R21 := "/Lotus/Language/Menu/ConfirmMultiHubInstance"
+156 [-]: TEST      R9 1         ; if R9 then PC := 160
+157 [-]: JMP       160          ; PC := 160
+158 [-]: TEST      R8 0         ; if not R8 then PC := 176
+159 [-]: JMP       176          ; PC := 176
+160 [-]: GETGLOBAL R22 K24      ; R22 := 0xE6DC43B0
+161 [-]: MOVE      R23 R21      ; R23 := R21
+162 [-]: MOVE      R24 R1       ; R24 := R1
+163 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
+164 [-]: MOVE      R21 R22      ; R21 := R22
+165 [-]: TEST      R9 0         ; if not R9 then PC := 172
+166 [-]: JMP       172          ; PC := 172
+167 [-]: MOVE      R22 R21      ; R22 := R21
+168 [-]: LOADK     R23 K43      ; R23 := " | "
+169 [-]: MOVE      R24 R9       ; R24 := R9
+170 [-]: CONCAT    R21 R22 R24  ; R21 := R22 .. R23 .. R24
+171 [-]: JMP       176          ; PC := 176
+172 [-]: MOVE      R22 R21      ; R22 := R21
+173 [-]: LOADK     R23 K43      ; R23 := " | "
+174 [-]: MOVE      R24 R8       ; R24 := R8
+175 [-]: CONCAT    R21 R22 R24  ; R21 := R22 .. R23 .. R24
+176 [-]: GETGLOBAL R22 K28      ; R22 := mMovie
+177 [-]: SELF      R22 R22 K44  ; R23 := R22; R22 := R22["0x5FF274BB"]
+178 [-]: GETGLOBAL R24 K45      ; R24 := genericMenuMovie
+179 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
+180 [-]: MOVE      R22 R4       ; R22 := R4
+181 [-]: GETUPVAL  R22 U4       ; R22 := U4
+182 [-]: SELF      R22 R22 K2   ; R23 := R22; R22 := R22["0x458F27A9"]
+183 [-]: LOADK     R24 K46      ; R24 := "SetTitle"
+184 [-]: MOVE      R25 R21      ; R25 := R21
+185 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
+186 [-]: GETUPVAL  R22 U4       ; R22 := U4
+187 [-]: SELF      R22 R22 K2   ; R23 := R22; R22 := R22["0x458F27A9"]
+188 [-]: LOADK     R24 K47      ; R24 := "SetCallBack"
+189 [-]: LOADK     R25 K31      ; R25 := "MenuSelectionDone"
+190 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
+191 [-]: TEST      R0 0         ; if not R0 then PC := 204
+192 [-]: JMP       204          ; PC := 204
+193 [-]: GETGLOBAL R22 K0       ; R22 := _T
+194 [-]: CLOSURE   R23 2        ; R23 := closure(Function #102.3)
+195 [-]: MOVE      R0 R3        ; R0 := R3
+196 [-]: MOVE      R0 R4        ; R0 := R4
+197 [-]: MOVE      R0 R1        ; R0 := R1
+198 [-]: MOVE      R0 R7        ; R0 := R7
+199 [-]: MOVE      R0 R20       ; R0 := R20
+200 [-]: GETUPVAL  R0 U2        ; R0 := U2
+201 [-]: MOVE      R0 R6        ; R0 := R6
+202 [-]: SETTABLE  R22 K48 R23  ; R22["GetMenuEntries"] := R23
+203 [-]: JMP       208          ; PC := 208
+204 [-]: GETGLOBAL R22 K0       ; R22 := _T
+205 [-]: CLOSURE   R23 3        ; R23 := closure(Function #102.4)
+206 [-]: GETUPVAL  R0 U2        ; R0 := U2
+207 [-]: SETTABLE  R22 K48 R23  ; R22["GetMenuEntries"] := R23
+208 [-]: GETUPVAL  R22 U4       ; R22 := U4
+209 [-]: SELF      R22 R22 K2   ; R23 := R22; R22 := R22["0x458F27A9"]
+210 [-]: LOADK     R24 K49      ; R24 := "SetElementsFunction"
+211 [-]: LOADK     R25 K48      ; R25 := "GetMenuEntries"
+212 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
+213 [-]: RETURN    R0 1         ; return 
 
 
-; Function #101.1:
+; Function #102.1:
 ;
 ; Name:            
-; Defined at line: 3763
+; Defined at line: 3800
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  9
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: SETTABLE  R1 K1 K2     ; R1["GetComponents"] := nil
@@ -12865,74 +13000,93 @@ code size: 4
   5 [-]: LOADNIL   R1 R1        ; R1 := nil
   6 [-]: MOVE      R1 R0        ; R1 := R0
   7 [-]: GETTABLE  R1 R0 K4     ; R1 := R0[1]
-  8 [-]: EQ        1 R1 K2      ; if R1 == nil then PC := 69
-  9 [-]: JMP       69           ; PC := 69
- 10 [-]: GETTABLE  R1 R0 K4     ; R1 := R0[1]
- 11 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["Instance"]
- 12 [-]: EQ        1 R1 K2      ; if R1 == nil then PC := 69
- 13 [-]: JMP       69           ; PC := 69
- 14 [-]: GETTABLE  R1 R0 K4     ; R1 := R0[1]
- 15 [-]: GETTABLE  R1 R1 K6     ; R1 := R1["IsFull"]
- 16 [-]: EQ        0 R1 K7      ; if R1 ~= "0x1" then PC := 28
- 17 [-]: JMP       28           ; PC := 28
- 18 [-]: GETGLOBAL R1 K8        ; R1 := mMovie
- 19 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1["0x5DB0BD4"]
- 20 [-]: LOADK     R3 K10       ; R3 := "/Lotus/Language/Menu/MissionInstanceIsFull"
- 21 [-]: MOVE      R4 R0        ; R4 := R0
- 22 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
- 23 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 24 [-]: GETTABLE  R2 R2 K11    ; R2 := R2["0xB11F032"]
- 25 [-]: MOVE      R3 R1        ; R3 := R1
- 26 [-]: CALL      R2 2 1       ; R2(R3)
- 27 [-]: RETURN    R0 1         ; return 
- 28 [-]: GETGLOBAL R2 K12       ; R2 := gMatchingService
- 29 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0x35DDC67D"]
- 30 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 31 [-]: LT        0 K4 R2      ; if 1 >= R2 then PC := 46
- 32 [-]: JMP       46           ; PC := 46
- 33 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 34 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 35 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["sectorName"]
- 36 [-]: GETUPVAL  R4 U4        ; R4 := U4
- 37 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["HUB_TAG"]
- 38 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 39 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
- 40 [-]: LOADK     R6 K16       ; R6 := 0.5
- 41 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 42 [-]: TEST      R2 1         ; if R2 then PC := 64
- 43 [-]: JMP       64           ; PC := 64
- 44 [-]: RETURN    R0 1         ; return 
- 45 [-]: JMP       64           ; PC := 64
- 46 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 47 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 48 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["sectorName"]
- 49 [-]: GETUPVAL  R4 U4        ; R4 := U4
- 50 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["HUB_TAG"]
- 51 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
- 52 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
- 53 [-]: LOADK     R6 K16       ; R6 := 0.5
- 54 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
- 55 [-]: TEST      R2 1         ; if R2 then PC := 58
- 56 [-]: JMP       58           ; PC := 58
- 57 [-]: RETURN    R0 1         ; return 
- 58 [-]: GETGLOBAL R2 K0        ; R2 := _T
- 59 [-]: GETTABLE  R2 R2 K17    ; R2 := R2["SquadOverlay"]
- 60 [-]: SELF      R2 R2 K18    ; R3 := R2; R2 := R2["0x458F27A9"]
- 61 [-]: LOADK     R4 K19       ; R4 := "NotifyForceLoadSoloMission"
- 62 [-]: LOADK     R5 K20       ; R5 := "dontLockSession"
- 63 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 64 [-]: GETGLOBAL R2 K12       ; R2 := gMatchingService
- 65 [-]: SELF      R2 R2 K21    ; R3 := R2; R2 := R2["0xEDAA4B70"]
- 66 [-]: GETTABLE  R4 R0 K4     ; R4 := R0[1]
- 67 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["Instance"]
- 68 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 69 [-]: RETURN    R0 1         ; return 
+  8 [-]: EQ        1 R1 K2      ; if R1 == nil then PC := 88
+  9 [-]: JMP       88           ; PC := 88
+ 10 [-]: GETTABLE  R2 R1 K5     ; R2 := R1["Instance"]
+ 11 [-]: EQ        1 R2 K2      ; if R2 == nil then PC := 88
+ 12 [-]: JMP       88           ; PC := 88
+ 13 [-]: LOADK     R2 K6        ; R2 := "Selected hub index "
+ 14 [-]: GETTABLE  R3 R1 K5     ; R3 := R1["Instance"]
+ 15 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
+ 16 [-]: GETTABLE  R3 R1 K7     ; R3 := R1["Players"]
+ 17 [-]: EQ        1 R3 K2      ; if R3 == nil then PC := 24
+ 18 [-]: JMP       24           ; PC := 24
+ 19 [-]: MOVE      R3 R2        ; R3 := R2
+ 20 [-]: LOADK     R4 K8        ; R4 := " with "
+ 21 [-]: GETTABLE  R5 R1 K7     ; R5 := R1["Players"]
+ 22 [-]: LOADK     R6 K9        ; R6 := " players"
+ 23 [-]: CONCAT    R2 R3 R6     ; R2 := R3 .. R4 .. R5 .. R6
+ 24 [-]: GETTABLE  R3 R1 K10    ; R3 := R1["Progress"]
+ 25 [-]: EQ        1 R3 K2      ; if R3 == nil then PC := 32
+ 26 [-]: JMP       32           ; PC := 32
+ 27 [-]: MOVE      R3 R2        ; R3 := R2
+ 28 [-]: LOADK     R4 K11       ; R4 := " (Progress: "
+ 29 [-]: GETTABLE  R5 R1 K10    ; R5 := R1["Progress"]
+ 30 [-]: LOADK     R6 K12       ; R6 := ")"
+ 31 [-]: CONCAT    R2 R3 R6     ; R2 := R3 .. R4 .. R5 .. R6
+ 32 [-]: GETGLOBAL R3 K13       ; R3 := 0x93B1256B
+ 33 [-]: MOVE      R4 R2        ; R4 := R2
+ 34 [-]: CALL      R3 2 1       ; R3(R4)
+ 35 [-]: GETTABLE  R3 R1 K14    ; R3 := R1["IsFull"]
+ 36 [-]: EQ        0 R3 K15     ; if R3 ~= "0x1" then PC := 48
+ 37 [-]: JMP       48           ; PC := 48
+ 38 [-]: GETGLOBAL R3 K16       ; R3 := mMovie
+ 39 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3["0x5DB0BD4"]
+ 40 [-]: LOADK     R5 K18       ; R5 := "/Lotus/Language/Menu/MissionInstanceIsFull"
+ 41 [-]: MOVE      R6 R0        ; R6 := R0
+ 42 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
+ 43 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 44 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["0xB11F032"]
+ 45 [-]: MOVE      R5 R3        ; R5 := R3
+ 46 [-]: CALL      R4 2 1       ; R4(R5)
+ 47 [-]: RETURN    R0 1         ; return 
+ 48 [-]: GETGLOBAL R4 K20       ; R4 := gMatchingService
+ 49 [-]: SELF      R4 R4 K21    ; R5 := R4; R4 := R4["0x35DDC67D"]
+ 50 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 51 [-]: LT        0 K4 R4      ; if 1 >= R4 then PC := 66
+ 52 [-]: JMP       66           ; PC := 66
+ 53 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 54 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 55 [-]: GETTABLE  R5 R5 K22    ; R5 := R5["sectorName"]
+ 56 [-]: GETUPVAL  R6 U4        ; R6 := U4
+ 57 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["HUB_TAG"]
+ 58 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
+ 59 [-]: LOADNIL   R6 R7        ; R6 := R7 := nil
+ 60 [-]: LOADK     R8 K24       ; R8 := 0.5
+ 61 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
+ 62 [-]: TEST      R4 1         ; if R4 then PC := 84
+ 63 [-]: JMP       84           ; PC := 84
+ 64 [-]: RETURN    R0 1         ; return 
+ 65 [-]: JMP       84           ; PC := 84
+ 66 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 67 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 68 [-]: GETTABLE  R5 R5 K22    ; R5 := R5["sectorName"]
+ 69 [-]: GETUPVAL  R6 U4        ; R6 := U4
+ 70 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["HUB_TAG"]
+ 71 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
+ 72 [-]: LOADNIL   R6 R7        ; R6 := R7 := nil
+ 73 [-]: LOADK     R8 K24       ; R8 := 0.5
+ 74 [-]: CALL      R4 5 2       ; R4 := R4(R5,R6,R7,R8)
+ 75 [-]: TEST      R4 1         ; if R4 then PC := 78
+ 76 [-]: JMP       78           ; PC := 78
+ 77 [-]: RETURN    R0 1         ; return 
+ 78 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 79 [-]: GETTABLE  R4 R4 K25    ; R4 := R4["SquadOverlay"]
+ 80 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4["0x458F27A9"]
+ 81 [-]: LOADK     R6 K27       ; R6 := "NotifyForceLoadSoloMission"
+ 82 [-]: LOADK     R7 K28       ; R7 := "dontLockSession"
+ 83 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 84 [-]: GETGLOBAL R4 K20       ; R4 := gMatchingService
+ 85 [-]: SELF      R4 R4 K29    ; R5 := R4; R4 := R4["0xEDAA4B70"]
+ 86 [-]: GETTABLE  R6 R1 K5     ; R6 := R1["Instance"]
+ 87 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 88 [-]: RETURN    R0 1         ; return 
 
 
-; Function #101.2:
+; Function #102.2:
 ;
 ; Name:            
-; Defined at line: 3819
+; Defined at line: 3880
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -12966,196 +13120,154 @@ code size: 4
  26 [-]: RETURN    R0 1         ; return 
 
 
-; Function #101.3:
+; Function #102.3:
 ;
 ; Name:            
-; Defined at line: 3843
+; Defined at line: 3913
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  33
+; Max Stack Size:  23
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
-  2 [-]: LOADNIL   R1 R1        ; R1 := nil
-  3 [-]: GETGLOBAL R2 K0        ; R2 := _G
-  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["CachedGoalInfo"]
-  5 [-]: TEST      R2 0         ; if not R2 then PC := 10
-  6 [-]: JMP       10           ; PC := 10
-  7 [-]: GETGLOBAL R2 K0        ; R2 := _G
-  8 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["CachedGoalInfo"]
-  9 [-]: GETTABLE  R1 R2 K2     ; R1 := R2["ScenarioEventHub5"]
- 10 [-]: LOADK     R2 K3        ; R2 := 300
- 11 [-]: LOADK     R3 K4        ; R3 := 180
- 12 [-]: TEST      R1 0         ; if not R1 then PC := 27
- 13 [-]: JMP       27           ; PC := 27
- 14 [-]: GETTABLE  R4 R1 K5     ; R4 := R1["mMetadata"]
- 15 [-]: TEST      R4 0         ; if not R4 then PC := 27
- 16 [-]: JMP       27           ; PC := 27
- 17 [-]: EQ        1 R4 K6      ; if R4 == "" then PC := 27
- 18 [-]: JMP       27           ; PC := 27
- 19 [-]: GETGLOBAL R5 K7        ; R5 := cjson
- 20 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["0x8A2E8315"]
- 21 [-]: MOVE      R6 R4        ; R6 := R4
- 22 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 23 [-]: TEST      R5 0         ; if not R5 then PC := 27
- 24 [-]: JMP       27           ; PC := 27
- 25 [-]: GETTABLE  R2 R5 K9     ; R2 := R5["progressReq"]
- 26 [-]: GETTABLE  R3 R5 K10    ; R3 := R5["duration"]
- 27 [-]: MOVE      R6 R1        ; R6 := R1
- 28 [-]: LOADK     R7 K11       ; R7 := 1
- 29 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 30 [-]: LEN       R8 R8        ; R8 := # R8
- 31 [-]: LOADK     R9 K11       ; R9 := 1
- 32 [-]: FORPREP   R7 141       ; R7 -= R9; PC := 141
- 33 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 34 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
- 35 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 36 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["hubCapacity"]
- 37 [-]: LE        1 R12 R11    ; if R12 <= R11 then PC := 40
- 38 [-]: JMP       40           ; PC := 40
- 39 [-]: MOVE      R11 R0       ; R11 := R0
- 40 [-]: MOVE      R11 R1       ; R11 := R1
- 41 [-]: GETUPVAL  R12 U2       ; R12 := U2
- 42 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 43 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 44 [-]: GETUPVAL  R14 U1       ; R14 := U1
- 45 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["hubCapacity"]
- 46 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
- 47 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 48 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 49 [-]: GETUPVAL  R14 U1       ; R14 := U1
- 50 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["hubCapacity"]
- 51 [-]: DIV       R13 R13 R14  ; R13 := R13 / R14
- 52 [-]: GETUPVAL  R14 U3       ; R14 := U3
- 53 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["mBusyPlayerLoad"]
- 54 [-]: LE        1 R14 R13    ; if R14 <= R13 then PC := 57
- 55 [-]: JMP       57           ; PC := 57
- 56 [-]: MOVE      R13 R0       ; R13 := R0
- 57 [-]: MOVE      R13 R1       ; R13 := R1
- 58 [-]: TEST      R11 1        ; if R11 then PC := 138
- 59 [-]: JMP       138          ; PC := 138
- 60 [-]: GETUPVAL  R14 U0       ; R14 := U0
- 61 [-]: GETTABLE  R14 R14 R10  ; R14 := R14[R10]
- 62 [-]: LT        1 K14 R14    ; if 0 < R14 then PC := 67
- 63 [-]: JMP       67           ; PC := 67
- 64 [-]: LEN       R14 R0       ; R14 := # R0
- 65 [-]: EQ        0 R14 K14    ; if R14 ~= 0 then PC := 138
- 66 [-]: JMP       138          ; PC := 138
- 67 [-]: GETUPVAL  R14 U3       ; R14 := U3
- 68 [-]: GETTABLE  R14 R14 K15  ; R14 := R14["sectorLoc"]
- 69 [-]: LOADK     R15 K16      ; R15 := " "
- 70 [-]: MOVE      R16 R10      ; R16 := R10
- 71 [-]: LOADK     R17 K17      ; R17 := ": "
- 72 [-]: MOVE      R18 R12      ; R18 := R12
- 73 [-]: CONCAT    R14 R14 R18  ; R14 := R14 .. R15 .. R16 .. R17 .. R18
- 74 [-]: TEST      R1 0         ; if not R1 then PC := 125
- 75 [-]: JMP       125          ; PC := 125
- 76 [-]: GETUPVAL  R15 U4       ; R15 := U4
- 77 [-]: GETTABLE  R15 R15 R10  ; R15 := R15[R10]
- 78 [-]: EQ        1 R15 K18    ; if R15 == "0" then PC := 125
- 79 [-]: JMP       125          ; PC := 125
- 80 [-]: GETGLOBAL R15 K19      ; R15 := Engine
- 81 [-]: GETTABLE  R15 R15 K20  ; R15 := R15["0xD00E5479"]
- 82 [-]: GETUPVAL  R16 U4       ; R16 := U4
- 83 [-]: GETTABLE  R16 R16 R10  ; R16 := R16[R10]
- 84 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 85 [-]: LE        0 R15 K14    ; if R15 > 0 then PC := 110
- 86 [-]: JMP       110          ; PC := 110
- 87 [-]: MUL       R16 R3 K21   ; R16 := R3 * 60
- 88 [-]: ADD       R17 R15 R16  ; R17 := R15 + R16
- 89 [-]: LT        0 K14 R17    ; if 0 >= R17 then PC := 125
- 90 [-]: JMP       125          ; PC := 125
- 91 [-]: GETUPVAL  R18 U5       ; R18 := U5
- 92 [-]: GETTABLE  R18 R18 K22  ; R18 := R18["0xC65D09DD"]
- 93 [-]: GETGLOBAL R19 K23      ; R19 := mMovie
- 94 [-]: MOVE      R20 R17      ; R20 := R17
- 95 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
- 96 [-]: GETUPVAL  R19 U6       ; R19 := U6
- 97 [-]: GETTABLE  R19 R19 R10  ; R19 := R19[R10]
- 98 [-]: GETGLOBAL R20 K24      ; R20 := 0xE6DC43B0
- 99 [-]: LOADK     R21 K25      ; R21 := "/Lotus/Language/Events/FlotillaProgress"
-100 [-]: NEWTABLE  R22 0 3      ; R22 := {}
-101 [-]: SETTABLE  R22 K26 R19  ; R22["PROGRESS"] := R19
-102 [-]: SETTABLE  R22 K27 R2   ; R22["REQ"] := R2
-103 [-]: SETTABLE  R22 K28 R18  ; R22["REMAINING"] := R18
-104 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
-105 [-]: MOVE      R21 R14      ; R21 := R14
-106 [-]: LOADK     R22 K29      ; R22 := " - "
-107 [-]: MOVE      R23 R20      ; R23 := R20
-108 [-]: CONCAT    R14 R21 R23  ; R14 := R21 .. R22 .. R23
-109 [-]: JMP       125          ; PC := 125
-110 [-]: GETGLOBAL R21 K24      ; R21 := 0xE6DC43B0
-111 [-]: LOADK     R22 K30      ; R22 := "/Lotus/Language/Events/FragmentArrivalTime"
-112 [-]: NEWTABLE  R23 0 1      ; R23 := {}
-113 [-]: GETUPVAL  R24 U5       ; R24 := U5
-114 [-]: GETTABLE  R24 R24 K22  ; R24 := R24["0xC65D09DD"]
-115 [-]: GETGLOBAL R25 K23      ; R25 := mMovie
-116 [-]: MOVE      R26 R15      ; R26 := R15
-117 [-]: LOADK     R27 K32      ; R27 := "Compact"
-118 [-]: CALL      R24 4 2      ; R24 := R24(R25,R26,R27)
-119 [-]: SETTABLE  R23 K31 R24  ; R23["VALUE"] := R24
-120 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-121 [-]: MOVE      R22 R14      ; R22 := R14
-122 [-]: LOADK     R23 K29      ; R23 := " - "
-123 [-]: MOVE      R24 R21      ; R24 := R21
-124 [-]: CONCAT    R14 R22 R24  ; R14 := R22 .. R23 .. R24
-125 [-]: GETGLOBAL R22 K33      ; R22 := table
-126 [-]: GETTABLE  R22 R22 K34  ; R22 := R22["0xE6450C9D"]
-127 [-]: MOVE      R23 R0       ; R23 := R0
-128 [-]: NEWTABLE  R24 0 3      ; R24 := {}
-129 [-]: GETGLOBAL R25 K36      ; R25 := string
-130 [-]: GETTABLE  R25 R25 K37  ; R25 := R25["0x639C642A"]
-131 [-]: MOVE      R26 R14      ; R26 := R14
-132 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-133 [-]: SETTABLE  R24 K35 R25  ; R24["mName"] := R25
-134 [-]: SUB       R25 R10 K11  ; R25 := R10 - 1
-135 [-]: SETTABLE  R24 K38 R25  ; R24["Instance"] := R25
-136 [-]: SETTABLE  R24 K39 R11  ; R24["IsFull"] := R11
-137 [-]: CALL      R22 3 1      ; R22(R23,R24)
-138 [-]: TEST      R13 1        ; if R13 then PC := 141
-139 [-]: JMP       141          ; PC := 141
-140 [-]: MOVE      R6 R0        ; R6 := R0
-141 [-]: FORLOOP   R7 33        ; R7 += R9; if R7 <= R8 then begin PC := 33; R10 := R7 end
-142 [-]: TEST      R6 1         ; if R6 then PC := 147
-143 [-]: JMP       147          ; PC := 147
-144 [-]: LEN       R22 R0       ; R22 := # R0
-145 [-]: EQ        0 R22 K14    ; if R22 ~= 0 then PC := 174
-146 [-]: JMP       174          ; PC := 174
-147 [-]: GETUPVAL  R22 U0       ; R22 := U0
-148 [-]: LEN       R22 R22      ; R22 := # R22
-149 [-]: ADD       R22 R22 K11  ; R22 := R22 + 1
-150 [-]: GETUPVAL  R23 U2       ; R23 := U2
-151 [-]: LOADK     R24 K14      ; R24 := 0
-152 [-]: GETUPVAL  R25 U1       ; R25 := U1
-153 [-]: GETTABLE  R25 R25 K12  ; R25 := R25["hubCapacity"]
-154 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
-155 [-]: GETGLOBAL R24 K33      ; R24 := table
-156 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["0xE6450C9D"]
-157 [-]: MOVE      R25 R0       ; R25 := R0
-158 [-]: NEWTABLE  R26 0 3      ; R26 := {}
-159 [-]: GETGLOBAL R27 K36      ; R27 := string
-160 [-]: GETTABLE  R27 R27 K37  ; R27 := R27["0x639C642A"]
-161 [-]: GETUPVAL  R28 U3       ; R28 := U3
-162 [-]: GETTABLE  R28 R28 K15  ; R28 := R28["sectorLoc"]
-163 [-]: LOADK     R29 K16      ; R29 := " "
-164 [-]: MOVE      R30 R22      ; R30 := R22
-165 [-]: LOADK     R31 K17      ; R31 := ": "
-166 [-]: MOVE      R32 R23      ; R32 := R23
-167 [-]: CONCAT    R28 R28 R32  ; R28 := R28 .. R29 .. R30 .. R31 .. R32
-168 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-169 [-]: SETTABLE  R26 K35 R27  ; R26["mName"] := R27
-170 [-]: SUB       R27 R22 K11  ; R27 := R22 - 1
-171 [-]: SETTABLE  R26 K38 R27  ; R26["Instance"] := R27
-172 [-]: SETTABLE  R26 K39 K40  ; R26["IsFull"] := "0x0"
-173 [-]: CALL      R24 3 1      ; R24(R25,R26)
-174 [-]: RETURN    R0 2         ; return R0
-175 [-]: RETURN    R0 1         ; return 
+  2 [-]: MOVE      R1 R1        ; R1 := R1
+  3 [-]: LOADK     R2 K0        ; R2 := 1
+  4 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  5 [-]: LEN       R3 R3        ; R3 := # R3
+  6 [-]: LOADK     R4 K0        ; R4 := 1
+  7 [-]: FORPREP   R2 98        ; R2 -= R4; PC := 98
+  8 [-]: GETUPVAL  R6 U1        ; R6 := U1
+  9 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
+ 10 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 11 [-]: GETTABLE  R7 R7 R5     ; R7 := R7[R5]
+ 12 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 13 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["hubCapacity"]
+ 14 [-]: LE        1 R8 R7      ; if R8 <= R7 then PC := 17
+ 15 [-]: JMP       17           ; PC := 17
+ 16 [-]: MOVE      R7 R0        ; R7 := R0
+ 17 [-]: MOVE      R7 R1        ; R7 := R1
+ 18 [-]: TEST      R7 1         ; if R7 then PC := 27
+ 19 [-]: JMP       27           ; PC := 27
+ 20 [-]: TESTSET   R7 R6 0      ; if not R6 then PC := 27 else R7 := R6
+ 21 [-]: JMP       27           ; PC := 27
+ 22 [-]: GETUPVAL  R8 U3        ; R8 := U3
+ 23 [-]: LE        1 R8 R6      ; if R8 <= R6 then PC := 26
+ 24 [-]: JMP       26           ; PC := 26
+ 25 [-]: MOVE      R7 R0        ; R7 := R0
+ 26 [-]: MOVE      R7 R1        ; R7 := R1
+ 27 [-]: GETUPVAL  R8 U4        ; R8 := U4
+ 28 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 29 [-]: GETTABLE  R9 R9 R5     ; R9 := R9[R5]
+ 30 [-]: GETUPVAL  R10 U2       ; R10 := U2
+ 31 [-]: GETTABLE  R10 R10 K1   ; R10 := R10["hubCapacity"]
+ 32 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+ 33 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 34 [-]: GETTABLE  R9 R9 R5     ; R9 := R9[R5]
+ 35 [-]: GETUPVAL  R10 U2       ; R10 := U2
+ 36 [-]: GETTABLE  R10 R10 K1   ; R10 := R10["hubCapacity"]
+ 37 [-]: DIV       R9 R9 R10    ; R9 := R9 / R10
+ 38 [-]: GETUPVAL  R10 U5       ; R10 := U5
+ 39 [-]: GETTABLE  R10 R10 K2   ; R10 := R10["mBusyPlayerLoad"]
+ 40 [-]: LE        1 R10 R9     ; if R10 <= R9 then PC := 43
+ 41 [-]: JMP       43           ; PC := 43
+ 42 [-]: MOVE      R9 R0        ; R9 := R0
+ 43 [-]: MOVE      R9 R1        ; R9 := R1
+ 44 [-]: TEST      R7 1         ; if R7 then PC := 95
+ 45 [-]: JMP       95           ; PC := 95
+ 46 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 47 [-]: GETTABLE  R10 R10 R5   ; R10 := R10[R5]
+ 48 [-]: LT        1 K3 R10     ; if 0 < R10 then PC := 53
+ 49 [-]: JMP       53           ; PC := 53
+ 50 [-]: LEN       R10 R0       ; R10 := # R0
+ 51 [-]: EQ        0 R10 K3     ; if R10 ~= 0 then PC := 95
+ 52 [-]: JMP       95           ; PC := 95
+ 53 [-]: GETUPVAL  R10 U5       ; R10 := U5
+ 54 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["sectorLoc"]
+ 55 [-]: LOADK     R11 K5       ; R11 := " "
+ 56 [-]: MOVE      R12 R5       ; R12 := R5
+ 57 [-]: LOADK     R13 K6       ; R13 := ": "
+ 58 [-]: MOVE      R14 R8       ; R14 := R8
+ 59 [-]: CONCAT    R10 R10 R14  ; R10 := R10 .. R11 .. R12 .. R13 .. R14
+ 60 [-]: TEST      R6 0         ; if not R6 then PC := 78
+ 61 [-]: JMP       78           ; PC := 78
+ 62 [-]: LT        0 K3 R6      ; if 0 >= R6 then PC := 78
+ 63 [-]: JMP       78           ; PC := 78
+ 64 [-]: GETUPVAL  R11 U6       ; R11 := U6
+ 65 [-]: LT        0 K3 R11     ; if 0 >= R11 then PC := 78
+ 66 [-]: JMP       78           ; PC := 78
+ 67 [-]: GETGLOBAL R11 K7       ; R11 := 0xE6DC43B0
+ 68 [-]: LOADK     R12 K8       ; R12 := "/Lotus/Language/Events/FlotillaProgressInstanceSelector"
+ 69 [-]: NEWTABLE  R13 0 2      ; R13 := {}
+ 70 [-]: SETTABLE  R13 K9 R6    ; R13["PROGRESS"] := R6
+ 71 [-]: GETUPVAL  R14 U3       ; R14 := U3
+ 72 [-]: SETTABLE  R13 K10 R14  ; R13["REQ"] := R14
+ 73 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+ 74 [-]: MOVE      R12 R10      ; R12 := R10
+ 75 [-]: LOADK     R13 K11      ; R13 := " - "
+ 76 [-]: MOVE      R14 R11      ; R14 := R11
+ 77 [-]: CONCAT    R10 R12 R14  ; R10 := R12 .. R13 .. R14
+ 78 [-]: GETGLOBAL R12 K12      ; R12 := table
+ 79 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["0xE6450C9D"]
+ 80 [-]: MOVE      R13 R0       ; R13 := R0
+ 81 [-]: NEWTABLE  R14 0 5      ; R14 := {}
+ 82 [-]: GETGLOBAL R15 K15      ; R15 := string
+ 83 [-]: GETTABLE  R15 R15 K16  ; R15 := R15["0x639C642A"]
+ 84 [-]: MOVE      R16 R10      ; R16 := R10
+ 85 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 86 [-]: SETTABLE  R14 K14 R15  ; R14["mName"] := R15
+ 87 [-]: SUB       R15 R5 K0    ; R15 := R5 - 1
+ 88 [-]: SETTABLE  R14 K17 R15  ; R14["Instance"] := R15
+ 89 [-]: SETTABLE  R14 K18 R7   ; R14["IsFull"] := R7
+ 90 [-]: GETUPVAL  R15 U0       ; R15 := U0
+ 91 [-]: GETTABLE  R15 R15 R5   ; R15 := R15[R5]
+ 92 [-]: SETTABLE  R14 K19 R15  ; R14["Players"] := R15
+ 93 [-]: SETTABLE  R14 K20 R6   ; R14["Progress"] := R6
+ 94 [-]: CALL      R12 3 1      ; R12(R13,R14)
+ 95 [-]: TEST      R9 1         ; if R9 then PC := 98
+ 96 [-]: JMP       98           ; PC := 98
+ 97 [-]: MOVE      R1 R0        ; R1 := R0
+ 98 [-]: FORLOOP   R2 8         ; R2 += R4; if R2 <= R3 then begin PC := 8; R5 := R2 end
+ 99 [-]: TEST      R1 1         ; if R1 then PC := 104
+100 [-]: JMP       104          ; PC := 104
+101 [-]: LEN       R12 R0       ; R12 := # R0
+102 [-]: EQ        0 R12 K3     ; if R12 ~= 0 then PC := 132
+103 [-]: JMP       132          ; PC := 132
+104 [-]: GETUPVAL  R12 U0       ; R12 := U0
+105 [-]: LEN       R12 R12      ; R12 := # R12
+106 [-]: ADD       R12 R12 K0   ; R12 := R12 + 1
+107 [-]: GETUPVAL  R13 U4       ; R13 := U4
+108 [-]: LOADK     R14 K3       ; R14 := 0
+109 [-]: GETUPVAL  R15 U2       ; R15 := U2
+110 [-]: GETTABLE  R15 R15 K1   ; R15 := R15["hubCapacity"]
+111 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+112 [-]: GETGLOBAL R14 K12      ; R14 := table
+113 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["0xE6450C9D"]
+114 [-]: MOVE      R15 R0       ; R15 := R0
+115 [-]: NEWTABLE  R16 0 4      ; R16 := {}
+116 [-]: GETGLOBAL R17 K15      ; R17 := string
+117 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["0x639C642A"]
+118 [-]: GETUPVAL  R18 U5       ; R18 := U5
+119 [-]: GETTABLE  R18 R18 K4   ; R18 := R18["sectorLoc"]
+120 [-]: LOADK     R19 K5       ; R19 := " "
+121 [-]: MOVE      R20 R12      ; R20 := R12
+122 [-]: LOADK     R21 K6       ; R21 := ": "
+123 [-]: MOVE      R22 R13      ; R22 := R13
+124 [-]: CONCAT    R18 R18 R22  ; R18 := R18 .. R19 .. R20 .. R21 .. R22
+125 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+126 [-]: SETTABLE  R16 K14 R17  ; R16["mName"] := R17
+127 [-]: SUB       R17 R12 K0   ; R17 := R12 - 1
+128 [-]: SETTABLE  R16 K17 R17  ; R16["Instance"] := R17
+129 [-]: SETTABLE  R16 K18 K21  ; R16["IsFull"] := "0x0"
+130 [-]: SETTABLE  R16 K19 K3   ; R16["Players"] := 0
+131 [-]: CALL      R14 3 1      ; R14(R15,R16)
+132 [-]: RETURN    R0 2         ; return R0
+133 [-]: RETURN    R0 1         ; return 
 
 
-; Function #101.4:
+; Function #102.4:
 ;
 ; Name:            
-; Defined at line: 3909
+; Defined at line: 3951
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -13182,10 +13294,10 @@ code size: 4
  19 [-]: RETURN    R0 1         ; return 
 
 
-; Function #102:
+; Function #103:
 ;
 ; Name:            
-; Defined at line: 3921
+; Defined at line: 3963
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -13237,10 +13349,10 @@ code size: 4
  44 [-]: RETURN    R0 1         ; return 
 
 
-; Function #103:
+; Function #104:
 ;
 ; Name:            
-; Defined at line: 3942
+; Defined at line: 3984
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -13271,10 +13383,10 @@ code size: 4
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #104:
+; Function #105:
 ;
 ; Name:            
-; Defined at line: 3948
+; Defined at line: 3990
 ; #Upvalues:       16
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -13342,7 +13454,7 @@ code size: 4
  60 [-]: LOADK     R15 K21      ; R15 := "/Lotus/Language/Menu/ConfirmMultiMission"
  61 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
  62 [-]: GETGLOBAL R12 K22      ; R12 := _T
- 63 [-]: CLOSURE   R13 0        ; R13 := closure(Function #104.1)
+ 63 [-]: CLOSURE   R13 0        ; R13 := closure(Function #105.1)
  64 [-]: GETUPVAL  R0 U1        ; R0 := U1
  65 [-]: GETUPVAL  R0 U2        ; R0 := U2
  66 [-]: MOVE      R0 R0        ; R0 := R0
@@ -13370,7 +13482,7 @@ code size: 4
  88 [-]: LOADK     R15 K23      ; R15 := "MenuSelectionDone"
  89 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
  90 [-]: GETGLOBAL R12 K22      ; R12 := _T
- 91 [-]: CLOSURE   R13 1        ; R13 := closure(Function #104.2)
+ 91 [-]: CLOSURE   R13 1        ; R13 := closure(Function #105.2)
  92 [-]: MOVE      R0 R0        ; R0 := R0
  93 [-]: GETUPVAL  R0 U12       ; R0 := U12
  94 [-]: MOVE      R0 R6        ; R0 := R6
@@ -13393,10 +13505,10 @@ code size: 4
 111 [-]: RETURN    R0 1         ; return 
 
 
-; Function #104.1:
+; Function #105.1:
 ;
 ; Name:            
-; Defined at line: 3977
+; Defined at line: 4019
 ; #Upvalues:       20
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -13602,10 +13714,10 @@ code size: 4
 198 [-]: RETURN    R0 1         ; return 
 
 
-; Function #104.2:
+; Function #105.2:
 ;
 ; Name:            
-; Defined at line: 4040
+; Defined at line: 4082
 ; #Upvalues:       9
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -14331,10 +14443,10 @@ code size: 4
 718 [-]: RETURN    R0 1         ; return 
 
 
-; Function #105:
+; Function #106:
 ;
 ; Name:            
-; Defined at line: 4175
+; Defined at line: 4217
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -14378,14 +14490,14 @@ code size: 4
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #106:
+; Function #107:
 ;
 ; Name:            
-; Defined at line: 4196
-; #Upvalues:       17
+; Defined at line: 4238
+; #Upvalues:       18
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  24
+; Max Stack Size:  23
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["Node"]
@@ -14524,13 +14636,13 @@ code size: 4
 135 [-]: MOVE      R9 R1        ; R9 := R1
 136 [-]: LOADK     R10 K30      ; R10 := "FeaturedDojo"
 137 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-138 [-]: TEST      R8 0         ; if not R8 then PC := 205
-139 [-]: JMP       205          ; PC := 205
+138 [-]: TEST      R8 0         ; if not R8 then PC := 196
+139 [-]: JMP       196          ; PC := 196
 140 [-]: GETUPVAL  R8 U3        ; R8 := U3
 141 [-]: GETTABLE  R8 R8 K31    ; R8 := R8["0x36BA5F48"]
 142 [-]: CALL      R8 1 2       ; R8 := R8()
-143 [-]: TEST      R8 1         ; if R8 then PC := 196
-144 [-]: JMP       196          ; PC := 196
+143 [-]: TEST      R8 1         ; if R8 then PC := 187
+144 [-]: JMP       187          ; PC := 187
 145 [-]: GETGLOBAL R8 K32       ; R8 := 0xF595ADDE
 146 [-]: GETGLOBAL R9 K20       ; R9 := string
 147 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["0xAF449107"]
@@ -14553,781 +14665,772 @@ code size: 4
 164 [-]: GETGLOBAL R11 K3       ; R11 := _T
 165 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["SquadOverlay"]
 166 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-167 [-]: TEST      R10 1        ; if R10 then PC := 204
-168 [-]: JMP       204          ; PC := 204
-169 [-]: GETGLOBAL R10 K42      ; R10 := gChallengeMgr
-170 [-]: SELF      R10 R10 K43  ; R11 := R10; R10 := R10["0x83829B2"]
-171 [-]: GETGLOBAL R12 K44      ; R12 := gRegion
-172 [-]: SELF      R12 R12 K45  ; R13 := R12; R12 := R12["0x372CB914"]
-173 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-174 [-]: GETGLOBAL R13 K46      ; R13 := 0xEC274B1A
-175 [-]: LOADK     R14 K47      ; R14 := "VISIT_FEATURED_DOJO"
-176 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
-177 [-]: CALL      R10 0 1      ; R10(R11,...)
-178 [-]: GETGLOBAL R10 K3       ; R10 := _T
-179 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["SquadOverlay"]
-180 [-]: SELF      R10 R10 K11  ; R11 := R10; R10 := R10["0x458F27A9"]
-181 [-]: LOADK     R12 K48      ; R12 := "InitiateDojoVisit"
-182 [-]: GETTABLE  R13 R9 K41   ; R13 := R9["mId"]
-183 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-184 [-]: NEWTABLE  R10 0 3      ; R10 := {}
-185 [-]: SETTABLE  R10 K8 K49   ; R10["name"] := "DojoHUB_HUB"
-186 [-]: SETTABLE  R10 K50 K13  ; R10["quest"] := ""
-187 [-]: SETTABLE  R10 K17 K13  ; R10["difficulty"] := ""
-188 [-]: GETGLOBAL R11 K51      ; R11 := gMatchingService
-189 [-]: SELF      R11 R11 K52  ; R12 := R11; R11 := R11["0x3016115E"]
-190 [-]: GETGLOBAL R13 K53      ; R13 := cjson
-191 [-]: GETTABLE  R13 R13 K54  ; R13 := R13["0x8DC1075B"]
-192 [-]: MOVE      R14 R10      ; R14 := R10
-193 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
+167 [-]: TEST      R10 1        ; if R10 then PC := 195
+168 [-]: JMP       195          ; PC := 195
+169 [-]: GETGLOBAL R10 K3       ; R10 := _T
+170 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["SquadOverlay"]
+171 [-]: SELF      R10 R10 K11  ; R11 := R10; R10 := R10["0x458F27A9"]
+172 [-]: LOADK     R12 K42      ; R12 := "InitiateDojoVisit"
+173 [-]: GETTABLE  R13 R9 K41   ; R13 := R9["mId"]
+174 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+175 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+176 [-]: SETTABLE  R10 K8 K43   ; R10["name"] := "DojoHUB_HUB"
+177 [-]: SETTABLE  R10 K44 K13  ; R10["quest"] := ""
+178 [-]: SETTABLE  R10 K17 K13  ; R10["difficulty"] := ""
+179 [-]: GETGLOBAL R11 K45      ; R11 := gMatchingService
+180 [-]: SELF      R11 R11 K46  ; R12 := R11; R11 := R11["0x3016115E"]
+181 [-]: GETGLOBAL R13 K47      ; R13 := cjson
+182 [-]: GETTABLE  R13 R13 K48  ; R13 := R13["0x8DC1075B"]
+183 [-]: MOVE      R14 R10      ; R14 := R10
+184 [-]: CALL      R13 2 0      ; R13,... := R13(R14)
+185 [-]: CALL      R11 0 1      ; R11(R12,...)
+186 [-]: JMP       195          ; PC := 195
+187 [-]: GETUPVAL  R11 U3       ; R11 := U3
+188 [-]: GETTABLE  R11 R11 K49  ; R11 := R11["0xB11F032"]
+189 [-]: GETGLOBAL R12 K50      ; R12 := mMovie
+190 [-]: SELF      R12 R12 K51  ; R13 := R12; R12 := R12["0x5DB0BD4"]
+191 [-]: LOADK     R14 K52      ; R14 := "/Lotus/Language/Clan/RestrictedUGCWarning"
+192 [-]: MOVE      R15 R0       ; R15 := R0
+193 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
 194 [-]: CALL      R11 0 1      ; R11(R12,...)
-195 [-]: JMP       204          ; PC := 204
-196 [-]: GETUPVAL  R11 U3       ; R11 := U3
-197 [-]: GETTABLE  R11 R11 K55  ; R11 := R11["0xB11F032"]
-198 [-]: GETGLOBAL R12 K56      ; R12 := mMovie
-199 [-]: SELF      R12 R12 K57  ; R13 := R12; R12 := R12["0x5DB0BD4"]
-200 [-]: LOADK     R14 K58      ; R14 := "/Lotus/Language/Clan/RestrictedUGCWarning"
-201 [-]: MOVE      R15 R0       ; R15 := R0
-202 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
-203 [-]: CALL      R11 0 1      ; R11(R12,...)
-204 [-]: RETURN    R0 1         ; return 
-205 [-]: GETUPVAL  R11 U1       ; R11 := U1
-206 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["Active"]
-207 [-]: TEST      R11 1        ; if R11 then PC := 220
-208 [-]: JMP       220          ; PC := 220
-209 [-]: GETGLOBAL R11 K20      ; R11 := string
-210 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["0xDE44F664"]
-211 [-]: MOVE      R12 R1       ; R12 := R1
-212 [-]: LOADK     R13 K59      ; R13 := "Dojo"
-213 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-214 [-]: TEST      R11 0        ; if not R11 then PC := 220
-215 [-]: JMP       220          ; PC := 220
-216 [-]: GETUPVAL  R11 U4       ; R11 := U4
-217 [-]: CALL      R11 1 1      ; R11()
-218 [-]: RETURN    R0 1         ; return 
-219 [-]: JMP       285          ; PC := 285
-220 [-]: GETGLOBAL R11 K20      ; R11 := string
-221 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["0xDE44F664"]
-222 [-]: MOVE      R12 R1       ; R12 := R1
-223 [-]: LOADK     R13 K60      ; R13 := "StalkerHideout"
-224 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-225 [-]: TEST      R11 0        ; if not R11 then PC := 285
-226 [-]: JMP       285          ; PC := 285
-227 [-]: LOADNIL   R11 R11      ; R11 := nil
-228 [-]: GETGLOBAL R12 K20      ; R12 := string
-229 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["0xDE44F664"]
-230 [-]: MOVE      R13 R1       ; R13 := R1
-231 [-]: GETUPVAL  R14 U2       ; R14 := U2
-232 [-]: GETTABLE  R14 R14 K22  ; R14 := R14["KEY_TAG"]
-233 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-234 [-]: EQ        1 R12 K5     ; if R12 == nil then PC := 284
-235 [-]: JMP       284          ; PC := 284
-236 [-]: GETGLOBAL R13 K20      ; R13 := string
-237 [-]: GETTABLE  R13 R13 K25  ; R13 := R13["0x7B782033"]
-238 [-]: MOVE      R14 R1       ; R14 := R1
-239 [-]: LOADK     R15 K26      ; R15 := 1
-240 [-]: SUB       R16 R12 K26  ; R16 := R12 - 1
-241 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-242 [-]: GETGLOBAL R14 K27      ; R14 := 0x7C282057
-243 [-]: MOVE      R15 R13      ; R15 := R13
-244 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-245 [-]: MOVE      R11 R14      ; R11 := R14
-246 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
-247 [-]: MOVE      R15 R11      ; R15 := R11
-248 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-249 [-]: TEST      R14 1        ; if R14 then PC := 284
-250 [-]: JMP       284          ; PC := 284
-251 [-]: SELF      R14 R11 K61  ; R15 := R11; R14 := R11["0xB8637349"]
-252 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-253 [-]: GETGLOBAL R15 K9       ; R15 := 0x400E7765
-254 [-]: GETTABLE  R16 R14 K62  ; R16 := R14["levelOverride"]
-255 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-256 [-]: TEST      R15 1        ; if R15 then PC := 284
-257 [-]: JMP       284          ; PC := 284
-258 [-]: GETGLOBAL R15 K63      ; R15 := _G
-259 [-]: SETTABLE  R15 K64 K65  ; R15["StalkerMode"] := "0x1"
-260 [-]: GETGLOBAL R15 K66      ; R15 := gGameConfig
-261 [-]: SELF      R15 R15 K67  ; R16 := R15; R15 := R15["0x92CE9D7D"]
-262 [-]: GETTABLE  R17 R14 K62  ; R17 := R14["levelOverride"]
-263 [-]: CALL      R15 3 1      ; R15(R16,R17)
-264 [-]: GETGLOBAL R15 K44      ; R15 := gRegion
-265 [-]: SELF      R15 R15 K68  ; R16 := R15; R15 := R15["0xD2075696"]
-266 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-267 [-]: GETTABLE  R16 R14 K62  ; R16 := R14["levelOverride"]
-268 [-]: SETTABLE  R15 K69 R16  ; R15["level"] := R16
-269 [-]: GETTABLE  R16 R14 K70  ; R16 := R14["gameRules"]
-270 [-]: SETTABLE  R15 K70 R16  ; R15["gameRules"] := R16
-271 [-]: GETGLOBAL R16 K71      ; R16 := gGameData
-272 [-]: SELF      R16 R16 K72  ; R17 := R16; R16 := R16["0x33ABF5D"]
-273 [-]: MOVE      R18 R15      ; R18 := R15
-274 [-]: MOVE      R19 R1       ; R19 := R1
-275 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-276 [-]: GETGLOBAL R16 K71      ; R16 := gGameData
-277 [-]: SELF      R16 R16 K73  ; R17 := R16; R16 := R16["0x19F7DE8"]
-278 [-]: MOVE      R18 R1       ; R18 := R1
-279 [-]: CALL      R16 3 1      ; R16(R17,R18)
-280 [-]: GETGLOBAL R16 K74      ; R16 := Engine
-281 [-]: GETTABLE  R16 R16 K75  ; R16 := R16["0xC53FF352"]
-282 [-]: MOVE      R17 R0       ; R17 := R0
-283 [-]: CALL      R16 2 1      ; R16(R17)
-284 [-]: RETURN    R0 1         ; return 
-285 [-]: GETGLOBAL R16 K63      ; R16 := _G
-286 [-]: GETTABLE  R16 R16 K64  ; R16 := R16["StalkerMode"]
-287 [-]: TEST      R16 0        ; if not R16 then PC := 314
-288 [-]: JMP       314          ; PC := 314
-289 [-]: GETUPVAL  R16 U0       ; R16 := U0
-290 [-]: GETTABLE  R16 R16 K0   ; R16 := R16["Node"]
-291 [-]: GETTABLE  R16 R16 K6   ; R16 := R16["radialSector"]
-292 [-]: GETTABLE  R16 R16 K76  ; R16 := R16["nodeType"]
-293 [-]: GETGLOBAL R17 K77      ; R17 := Lotus_Game
-294 [-]: GETTABLE  R17 R17 K78  ; R17 := R17["NT_CLAN"]
-295 [-]: EQ        0 R16 R17    ; if R16 ~= R17 then PC := 307
-296 [-]: JMP       307          ; PC := 307
-297 [-]: GETUPVAL  R16 U5       ; R16 := U5
-298 [-]: MOVE      R17 R1       ; R17 := R1
-299 [-]: GETUPVAL  R18 U2       ; R18 := U2
-300 [-]: GETTABLE  R18 R18 K79  ; R18 := R18["BADLAND_MISSION_TAG"]
-301 [-]: CONCAT    R17 R17 R18  ; R17 := R17 .. R18
-302 [-]: MOVE      R18 R2       ; R18 := R2
-303 [-]: MOVE      R19 R3       ; R19 := R3
-304 [-]: MOVE      R20 R4       ; R20 := R4
-305 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
-306 [-]: JMP       313          ; PC := 313
-307 [-]: GETUPVAL  R16 U5       ; R16 := U5
-308 [-]: MOVE      R17 R1       ; R17 := R1
-309 [-]: MOVE      R18 R2       ; R18 := R2
-310 [-]: MOVE      R19 R3       ; R19 := R3
-311 [-]: MOVE      R20 R4       ; R20 := R4
-312 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
-313 [-]: RETURN    R0 1         ; return 
-314 [-]: GETGLOBAL R16 K9       ; R16 := 0x400E7765
-315 [-]: MOVE      R17 R2       ; R17 := R2
-316 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-317 [-]: TEST      R16 1        ; if R16 then PC := 322
-318 [-]: JMP       322          ; PC := 322
-319 [-]: GETUPVAL  R16 U6       ; R16 := U6
-320 [-]: EQ        1 R2 R16     ; if R2 == R16 then PC := 323
-321 [-]: JMP       323          ; PC := 323
-322 [-]: MOVE      R16 R0       ; R16 := R0
-323 [-]: MOVE      R16 R1       ; R16 := R1
-324 [-]: TEST      R16 1        ; if R16 then PC := 611
-325 [-]: JMP       611          ; PC := 611
-326 [-]: GETUPVAL  R17 U0       ; R17 := U0
-327 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-328 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-329 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["nodeType"]
-330 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-331 [-]: GETTABLE  R18 R18 K80  ; R18 := R18["NT_MISSION"]
-332 [-]: EQ        1 R17 R18    ; if R17 == R18 then PC := 352
-333 [-]: JMP       352          ; PC := 352
-334 [-]: GETUPVAL  R17 U0       ; R17 := U0
-335 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-336 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-337 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["nodeType"]
-338 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-339 [-]: GETTABLE  R18 R18 K78  ; R18 := R18["NT_CLAN"]
-340 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 611
-341 [-]: JMP       611          ; PC := 611
-342 [-]: GETGLOBAL R17 K3       ; R17 := _T
-343 [-]: GETTABLE  R17 R17 K81  ; R17 := R17["CachedEliteAlertMissions"]
-344 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-345 [-]: TEST      R17 1        ; if R17 then PC := 352
-346 [-]: JMP       352          ; PC := 352
-347 [-]: GETGLOBAL R17 K3       ; R17 := _T
-348 [-]: GETTABLE  R17 R17 K82  ; R17 := R17["CachedNemesisMissions"]
-349 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-350 [-]: TEST      R17 0        ; if not R17 then PC := 611
-351 [-]: JMP       611          ; PC := 611
-352 [-]: GETUPVAL  R17 U7       ; R17 := U7
-353 [-]: GETUPVAL  R18 U0       ; R18 := U0
-354 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-355 [-]: MOVE      R19 R1       ; R19 := R1
-356 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-357 [-]: TEST      R17 0        ; if not R17 then PC := 611
-358 [-]: JMP       611          ; PC := 611
-359 [-]: GETGLOBAL R17 K9       ; R17 := 0x400E7765
-360 [-]: GETUPVAL  R18 U0       ; R18 := U0
-361 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-362 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-363 [-]: GETTABLE  R18 R18 K15  ; R18 := R18["keyChain"]
-364 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-365 [-]: TEST      R17 0        ; if not R17 then PC := 468
-366 [-]: JMP       468          ; PC := 468
-367 [-]: GETGLOBAL R17 K3       ; R17 := _T
-368 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedAlerts"]
-369 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-370 [-]: TEST      R17 0        ; if not R17 then PC := 378
-371 [-]: JMP       378          ; PC := 378
-372 [-]: GETGLOBAL R17 K3       ; R17 := _T
-373 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedAlerts"]
+195 [-]: RETURN    R0 1         ; return 
+196 [-]: GETUPVAL  R11 U4       ; R11 := U4
+197 [-]: GETGLOBAL R12 K53      ; R12 := gRegion
+198 [-]: SELF      R12 R12 K54  ; R13 := R12; R12 := R12["0x3E2F6BF"]
+199 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
+200 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
+201 [-]: TEST      R11 1        ; if R11 then PC := 214
+202 [-]: JMP       214          ; PC := 214
+203 [-]: GETGLOBAL R11 K20      ; R11 := string
+204 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["0xDE44F664"]
+205 [-]: MOVE      R12 R1       ; R12 := R1
+206 [-]: LOADK     R13 K55      ; R13 := "Dojo"
+207 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+208 [-]: TEST      R11 0        ; if not R11 then PC := 214
+209 [-]: JMP       214          ; PC := 214
+210 [-]: GETUPVAL  R11 U5       ; R11 := U5
+211 [-]: CALL      R11 1 1      ; R11()
+212 [-]: RETURN    R0 1         ; return 
+213 [-]: JMP       279          ; PC := 279
+214 [-]: GETGLOBAL R11 K20      ; R11 := string
+215 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["0xDE44F664"]
+216 [-]: MOVE      R12 R1       ; R12 := R1
+217 [-]: LOADK     R13 K56      ; R13 := "StalkerHideout"
+218 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+219 [-]: TEST      R11 0        ; if not R11 then PC := 279
+220 [-]: JMP       279          ; PC := 279
+221 [-]: LOADNIL   R11 R11      ; R11 := nil
+222 [-]: GETGLOBAL R12 K20      ; R12 := string
+223 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["0xDE44F664"]
+224 [-]: MOVE      R13 R1       ; R13 := R1
+225 [-]: GETUPVAL  R14 U2       ; R14 := U2
+226 [-]: GETTABLE  R14 R14 K22  ; R14 := R14["KEY_TAG"]
+227 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+228 [-]: EQ        1 R12 K5     ; if R12 == nil then PC := 278
+229 [-]: JMP       278          ; PC := 278
+230 [-]: GETGLOBAL R13 K20      ; R13 := string
+231 [-]: GETTABLE  R13 R13 K25  ; R13 := R13["0x7B782033"]
+232 [-]: MOVE      R14 R1       ; R14 := R1
+233 [-]: LOADK     R15 K26      ; R15 := 1
+234 [-]: SUB       R16 R12 K26  ; R16 := R12 - 1
+235 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
+236 [-]: GETGLOBAL R14 K27      ; R14 := 0x7C282057
+237 [-]: MOVE      R15 R13      ; R15 := R13
+238 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+239 [-]: MOVE      R11 R14      ; R11 := R14
+240 [-]: GETGLOBAL R14 K9       ; R14 := 0x400E7765
+241 [-]: MOVE      R15 R11      ; R15 := R11
+242 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+243 [-]: TEST      R14 1        ; if R14 then PC := 278
+244 [-]: JMP       278          ; PC := 278
+245 [-]: SELF      R14 R11 K57  ; R15 := R11; R14 := R11["0xB8637349"]
+246 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+247 [-]: GETGLOBAL R15 K9       ; R15 := 0x400E7765
+248 [-]: GETTABLE  R16 R14 K58  ; R16 := R14["levelOverride"]
+249 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+250 [-]: TEST      R15 1        ; if R15 then PC := 278
+251 [-]: JMP       278          ; PC := 278
+252 [-]: GETGLOBAL R15 K59      ; R15 := _G
+253 [-]: SETTABLE  R15 K60 K61  ; R15["StalkerMode"] := "0x1"
+254 [-]: GETGLOBAL R15 K62      ; R15 := gGameConfig
+255 [-]: SELF      R15 R15 K63  ; R16 := R15; R15 := R15["0x92CE9D7D"]
+256 [-]: GETTABLE  R17 R14 K58  ; R17 := R14["levelOverride"]
+257 [-]: CALL      R15 3 1      ; R15(R16,R17)
+258 [-]: GETGLOBAL R15 K53      ; R15 := gRegion
+259 [-]: SELF      R15 R15 K64  ; R16 := R15; R15 := R15["0xD2075696"]
+260 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+261 [-]: GETTABLE  R16 R14 K58  ; R16 := R14["levelOverride"]
+262 [-]: SETTABLE  R15 K65 R16  ; R15["level"] := R16
+263 [-]: GETTABLE  R16 R14 K66  ; R16 := R14["gameRules"]
+264 [-]: SETTABLE  R15 K66 R16  ; R15["gameRules"] := R16
+265 [-]: GETGLOBAL R16 K67      ; R16 := gGameData
+266 [-]: SELF      R16 R16 K68  ; R17 := R16; R16 := R16["0x33ABF5D"]
+267 [-]: MOVE      R18 R15      ; R18 := R15
+268 [-]: MOVE      R19 R1       ; R19 := R1
+269 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+270 [-]: GETGLOBAL R16 K67      ; R16 := gGameData
+271 [-]: SELF      R16 R16 K69  ; R17 := R16; R16 := R16["0x19F7DE8"]
+272 [-]: MOVE      R18 R1       ; R18 := R1
+273 [-]: CALL      R16 3 1      ; R16(R17,R18)
+274 [-]: GETGLOBAL R16 K70      ; R16 := Engine
+275 [-]: GETTABLE  R16 R16 K71  ; R16 := R16["0xC53FF352"]
+276 [-]: MOVE      R17 R0       ; R17 := R0
+277 [-]: CALL      R16 2 1      ; R16(R17)
+278 [-]: RETURN    R0 1         ; return 
+279 [-]: GETGLOBAL R16 K59      ; R16 := _G
+280 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["StalkerMode"]
+281 [-]: TEST      R16 0        ; if not R16 then PC := 308
+282 [-]: JMP       308          ; PC := 308
+283 [-]: GETUPVAL  R16 U0       ; R16 := U0
+284 [-]: GETTABLE  R16 R16 K0   ; R16 := R16["Node"]
+285 [-]: GETTABLE  R16 R16 K6   ; R16 := R16["radialSector"]
+286 [-]: GETTABLE  R16 R16 K72  ; R16 := R16["nodeType"]
+287 [-]: GETGLOBAL R17 K73      ; R17 := Lotus_Game
+288 [-]: GETTABLE  R17 R17 K74  ; R17 := R17["NT_CLAN"]
+289 [-]: EQ        0 R16 R17    ; if R16 ~= R17 then PC := 301
+290 [-]: JMP       301          ; PC := 301
+291 [-]: GETUPVAL  R16 U6       ; R16 := U6
+292 [-]: MOVE      R17 R1       ; R17 := R1
+293 [-]: GETUPVAL  R18 U2       ; R18 := U2
+294 [-]: GETTABLE  R18 R18 K75  ; R18 := R18["BADLAND_MISSION_TAG"]
+295 [-]: CONCAT    R17 R17 R18  ; R17 := R17 .. R18
+296 [-]: MOVE      R18 R2       ; R18 := R2
+297 [-]: MOVE      R19 R3       ; R19 := R3
+298 [-]: MOVE      R20 R4       ; R20 := R4
+299 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
+300 [-]: JMP       307          ; PC := 307
+301 [-]: GETUPVAL  R16 U6       ; R16 := U6
+302 [-]: MOVE      R17 R1       ; R17 := R1
+303 [-]: MOVE      R18 R2       ; R18 := R2
+304 [-]: MOVE      R19 R3       ; R19 := R3
+305 [-]: MOVE      R20 R4       ; R20 := R4
+306 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
+307 [-]: RETURN    R0 1         ; return 
+308 [-]: GETGLOBAL R16 K9       ; R16 := 0x400E7765
+309 [-]: MOVE      R17 R2       ; R17 := R2
+310 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+311 [-]: TEST      R16 1        ; if R16 then PC := 316
+312 [-]: JMP       316          ; PC := 316
+313 [-]: GETUPVAL  R16 U7       ; R16 := U7
+314 [-]: EQ        1 R2 R16     ; if R2 == R16 then PC := 317
+315 [-]: JMP       317          ; PC := 317
+316 [-]: MOVE      R16 R0       ; R16 := R0
+317 [-]: MOVE      R16 R1       ; R16 := R1
+318 [-]: TEST      R16 1        ; if R16 then PC := 605
+319 [-]: JMP       605          ; PC := 605
+320 [-]: GETUPVAL  R17 U0       ; R17 := U0
+321 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+322 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+323 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["nodeType"]
+324 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+325 [-]: GETTABLE  R18 R18 K76  ; R18 := R18["NT_MISSION"]
+326 [-]: EQ        1 R17 R18    ; if R17 == R18 then PC := 346
+327 [-]: JMP       346          ; PC := 346
+328 [-]: GETUPVAL  R17 U0       ; R17 := U0
+329 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+330 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+331 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["nodeType"]
+332 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+333 [-]: GETTABLE  R18 R18 K74  ; R18 := R18["NT_CLAN"]
+334 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 605
+335 [-]: JMP       605          ; PC := 605
+336 [-]: GETGLOBAL R17 K3       ; R17 := _T
+337 [-]: GETTABLE  R17 R17 K77  ; R17 := R17["CachedEliteAlertMissions"]
+338 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+339 [-]: TEST      R17 1        ; if R17 then PC := 346
+340 [-]: JMP       346          ; PC := 346
+341 [-]: GETGLOBAL R17 K3       ; R17 := _T
+342 [-]: GETTABLE  R17 R17 K78  ; R17 := R17["CachedNemesisMissions"]
+343 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+344 [-]: TEST      R17 0        ; if not R17 then PC := 605
+345 [-]: JMP       605          ; PC := 605
+346 [-]: GETUPVAL  R17 U8       ; R17 := U8
+347 [-]: GETUPVAL  R18 U0       ; R18 := U0
+348 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+349 [-]: MOVE      R19 R1       ; R19 := R1
+350 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+351 [-]: TEST      R17 0        ; if not R17 then PC := 605
+352 [-]: JMP       605          ; PC := 605
+353 [-]: GETGLOBAL R17 K9       ; R17 := 0x400E7765
+354 [-]: GETUPVAL  R18 U0       ; R18 := U0
+355 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+356 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
+357 [-]: GETTABLE  R18 R18 K15  ; R18 := R18["keyChain"]
+358 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+359 [-]: TEST      R17 0        ; if not R17 then PC := 462
+360 [-]: JMP       462          ; PC := 462
+361 [-]: GETGLOBAL R17 K3       ; R17 := _T
+362 [-]: GETTABLE  R17 R17 K79  ; R17 := R17["CachedAlerts"]
+363 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+364 [-]: TEST      R17 0        ; if not R17 then PC := 372
+365 [-]: JMP       372          ; PC := 372
+366 [-]: GETGLOBAL R17 K3       ; R17 := _T
+367 [-]: GETTABLE  R17 R17 K79  ; R17 := R17["CachedAlerts"]
+368 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+369 [-]: GETTABLE  R17 R17 K80  ; R17 := R17["mVisible"]
+370 [-]: TEST      R17 1        ; if R17 then PC := 462
+371 [-]: JMP       462          ; PC := 462
+372 [-]: GETGLOBAL R17 K59      ; R17 := _G
+373 [-]: GETTABLE  R17 R17 K81  ; R17 := R17["CachedGoalInfo"]
 374 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-375 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["mVisible"]
-376 [-]: TEST      R17 1        ; if R17 then PC := 468
-377 [-]: JMP       468          ; PC := 468
-378 [-]: GETGLOBAL R17 K63      ; R17 := _G
-379 [-]: GETTABLE  R17 R17 K85  ; R17 := R17["CachedGoalInfo"]
-380 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-381 [-]: TEST      R17 1        ; if R17 then PC := 468
-382 [-]: JMP       468          ; PC := 468
-383 [-]: GETGLOBAL R17 K63      ; R17 := _G
-384 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["MergedGoalNodes"]
-385 [-]: TEST      R17 0        ; if not R17 then PC := 392
-386 [-]: JMP       392          ; PC := 392
-387 [-]: GETGLOBAL R17 K63      ; R17 := _G
-388 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["MergedGoalNodes"]
-389 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-390 [-]: TEST      R17 1        ; if R17 then PC := 468
-391 [-]: JMP       468          ; PC := 468
-392 [-]: GETGLOBAL R17 K3       ; R17 := _T
-393 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["CachedSyndicateMissions"]
-394 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-395 [-]: TEST      R17 0        ; if not R17 then PC := 403
-396 [-]: JMP       403          ; PC := 403
+375 [-]: TEST      R17 1        ; if R17 then PC := 462
+376 [-]: JMP       462          ; PC := 462
+377 [-]: GETGLOBAL R17 K59      ; R17 := _G
+378 [-]: GETTABLE  R17 R17 K82  ; R17 := R17["MergedGoalNodes"]
+379 [-]: TEST      R17 0        ; if not R17 then PC := 386
+380 [-]: JMP       386          ; PC := 386
+381 [-]: GETGLOBAL R17 K59      ; R17 := _G
+382 [-]: GETTABLE  R17 R17 K82  ; R17 := R17["MergedGoalNodes"]
+383 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+384 [-]: TEST      R17 1        ; if R17 then PC := 462
+385 [-]: JMP       462          ; PC := 462
+386 [-]: GETGLOBAL R17 K3       ; R17 := _T
+387 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedSyndicateMissions"]
+388 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+389 [-]: TEST      R17 0        ; if not R17 then PC := 397
+390 [-]: JMP       397          ; PC := 397
+391 [-]: GETGLOBAL R17 K3       ; R17 := _T
+392 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedSyndicateMissions"]
+393 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+394 [-]: GETTABLE  R17 R17 K80  ; R17 := R17["mVisible"]
+395 [-]: TEST      R17 1        ; if R17 then PC := 462
+396 [-]: JMP       462          ; PC := 462
 397 [-]: GETGLOBAL R17 K3       ; R17 := _T
-398 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["CachedSyndicateMissions"]
+398 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["CachedSortieMissions"]
 399 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-400 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["mVisible"]
-401 [-]: TEST      R17 1        ; if R17 then PC := 468
-402 [-]: JMP       468          ; PC := 468
-403 [-]: GETGLOBAL R17 K3       ; R17 := _T
-404 [-]: GETTABLE  R17 R17 K88  ; R17 := R17["CachedSortieMissions"]
-405 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-406 [-]: TEST      R17 0        ; if not R17 then PC := 414
-407 [-]: JMP       414          ; PC := 414
+400 [-]: TEST      R17 0        ; if not R17 then PC := 408
+401 [-]: JMP       408          ; PC := 408
+402 [-]: GETGLOBAL R17 K3       ; R17 := _T
+403 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["CachedSortieMissions"]
+404 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+405 [-]: GETTABLE  R17 R17 K85  ; R17 := R17["mShowInStarChart"]
+406 [-]: TEST      R17 1        ; if R17 then PC := 462
+407 [-]: JMP       462          ; PC := 462
 408 [-]: GETGLOBAL R17 K3       ; R17 := _T
-409 [-]: GETTABLE  R17 R17 K88  ; R17 := R17["CachedSortieMissions"]
+409 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["CachedActiveMissions"]
 410 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-411 [-]: GETTABLE  R17 R17 K89  ; R17 := R17["mShowInStarChart"]
-412 [-]: TEST      R17 1        ; if R17 then PC := 468
-413 [-]: JMP       468          ; PC := 468
-414 [-]: GETGLOBAL R17 K3       ; R17 := _T
-415 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedActiveMissions"]
-416 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-417 [-]: TEST      R17 0        ; if not R17 then PC := 431
-418 [-]: JMP       431          ; PC := 431
+411 [-]: TEST      R17 0        ; if not R17 then PC := 425
+412 [-]: JMP       425          ; PC := 425
+413 [-]: GETGLOBAL R17 K3       ; R17 := _T
+414 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["CachedActiveMissions"]
+415 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+416 [-]: GETTABLE  R17 R17 K80  ; R17 := R17["mVisible"]
+417 [-]: TEST      R17 0        ; if not R17 then PC := 425
+418 [-]: JMP       425          ; PC := 425
 419 [-]: GETGLOBAL R17 K3       ; R17 := _T
-420 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedActiveMissions"]
+420 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["CachedActiveMissions"]
 421 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-422 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["mVisible"]
-423 [-]: TEST      R17 0        ; if not R17 then PC := 431
-424 [-]: JMP       431          ; PC := 431
+422 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["mUnlocked"]
+423 [-]: TEST      R17 1        ; if R17 then PC := 462
+424 [-]: JMP       462          ; PC := 462
 425 [-]: GETGLOBAL R17 K3       ; R17 := _T
-426 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedActiveMissions"]
+426 [-]: GETTABLE  R17 R17 K88  ; R17 := R17["CachedInvasionInfo"]
 427 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-428 [-]: GETTABLE  R17 R17 K91  ; R17 := R17["mUnlocked"]
-429 [-]: TEST      R17 1        ; if R17 then PC := 468
-430 [-]: JMP       468          ; PC := 468
-431 [-]: GETGLOBAL R17 K3       ; R17 := _T
-432 [-]: GETTABLE  R17 R17 K92  ; R17 := R17["CachedInvasionInfo"]
-433 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-434 [-]: TEST      R17 1        ; if R17 then PC := 468
-435 [-]: JMP       468          ; PC := 468
-436 [-]: GETGLOBAL R17 K3       ; R17 := _T
-437 [-]: GETTABLE  R17 R17 K93  ; R17 := R17["CachedSkullNodes"]
-438 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-439 [-]: EQ        0 R17 K5     ; if R17 ~= nil then PC := 468
-440 [-]: JMP       468          ; PC := 468
-441 [-]: GETGLOBAL R17 K3       ; R17 := _T
-442 [-]: GETTABLE  R17 R17 K94  ; R17 := R17["CachedGhostTowerMissions"]
-443 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-444 [-]: EQ        1 R17 K5     ; if R17 == nil then PC := 452
-445 [-]: JMP       452          ; PC := 452
+428 [-]: TEST      R17 1        ; if R17 then PC := 462
+429 [-]: JMP       462          ; PC := 462
+430 [-]: GETGLOBAL R17 K3       ; R17 := _T
+431 [-]: GETTABLE  R17 R17 K89  ; R17 := R17["CachedSkullNodes"]
+432 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+433 [-]: EQ        0 R17 K5     ; if R17 ~= nil then PC := 462
+434 [-]: JMP       462          ; PC := 462
+435 [-]: GETGLOBAL R17 K3       ; R17 := _T
+436 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedGhostTowerMissions"]
+437 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+438 [-]: EQ        1 R17 K5     ; if R17 == nil then PC := 446
+439 [-]: JMP       446          ; PC := 446
+440 [-]: GETGLOBAL R17 K3       ; R17 := _T
+441 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedGhostTowerMissions"]
+442 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+443 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["mUnlocked"]
+444 [-]: TEST      R17 1        ; if R17 then PC := 462
+445 [-]: JMP       462          ; PC := 462
 446 [-]: GETGLOBAL R17 K3       ; R17 := _T
-447 [-]: GETTABLE  R17 R17 K94  ; R17 := R17["CachedGhostTowerMissions"]
+447 [-]: GETTABLE  R17 R17 K77  ; R17 := R17["CachedEliteAlertMissions"]
 448 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-449 [-]: GETTABLE  R17 R17 K91  ; R17 := R17["mUnlocked"]
-450 [-]: TEST      R17 1        ; if R17 then PC := 468
-451 [-]: JMP       468          ; PC := 468
-452 [-]: GETGLOBAL R17 K3       ; R17 := _T
-453 [-]: GETTABLE  R17 R17 K81  ; R17 := R17["CachedEliteAlertMissions"]
-454 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-455 [-]: EQ        1 R17 K5     ; if R17 == nil then PC := 463
-456 [-]: JMP       463          ; PC := 463
+449 [-]: EQ        1 R17 K5     ; if R17 == nil then PC := 457
+450 [-]: JMP       457          ; PC := 457
+451 [-]: GETGLOBAL R17 K3       ; R17 := _T
+452 [-]: GETTABLE  R17 R17 K77  ; R17 := R17["CachedEliteAlertMissions"]
+453 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+454 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["mUnlocked"]
+455 [-]: TEST      R17 1        ; if R17 then PC := 462
+456 [-]: JMP       462          ; PC := 462
 457 [-]: GETGLOBAL R17 K3       ; R17 := _T
-458 [-]: GETTABLE  R17 R17 K81  ; R17 := R17["CachedEliteAlertMissions"]
+458 [-]: GETTABLE  R17 R17 K78  ; R17 := R17["CachedNemesisMissions"]
 459 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-460 [-]: GETTABLE  R17 R17 K91  ; R17 := R17["mUnlocked"]
-461 [-]: TEST      R17 1        ; if R17 then PC := 468
-462 [-]: JMP       468          ; PC := 468
-463 [-]: GETGLOBAL R17 K3       ; R17 := _T
-464 [-]: GETTABLE  R17 R17 K82  ; R17 := R17["CachedNemesisMissions"]
-465 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-466 [-]: TEST      R17 0        ; if not R17 then PC := 611
-467 [-]: JMP       611          ; PC := 611
-468 [-]: GETGLOBAL R17 K3       ; R17 := _T
-469 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["DesiredGoToNodeTag"]
-470 [-]: TEST      R17 0        ; if not R17 then PC := 513
-471 [-]: JMP       513          ; PC := 513
+460 [-]: TEST      R17 0        ; if not R17 then PC := 605
+461 [-]: JMP       605          ; PC := 605
+462 [-]: GETGLOBAL R17 K3       ; R17 := _T
+463 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["DesiredGoToNodeTag"]
+464 [-]: TEST      R17 0        ; if not R17 then PC := 507
+465 [-]: JMP       507          ; PC := 507
+466 [-]: GETGLOBAL R17 K3       ; R17 := _T
+467 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["DesiredGoToNodeTag"]
+468 [-]: GETUPVAL  R18 U2       ; R18 := U2
+469 [-]: GETTABLE  R18 R18 K91  ; R18 := R18["ACTIVE_MISSION_TAG"]
+470 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 478
+471 [-]: JMP       478          ; PC := 478
 472 [-]: GETGLOBAL R17 K3       ; R17 := _T
-473 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["DesiredGoToNodeTag"]
-474 [-]: GETUPVAL  R18 U2       ; R18 := U2
-475 [-]: GETTABLE  R18 R18 K95  ; R18 := R18["ACTIVE_MISSION_TAG"]
-476 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 484
-477 [-]: JMP       484          ; PC := 484
+473 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
+474 [-]: GETUPVAL  R17 U9       ; R17 := U9
+475 [-]: MOVE      R18 R1       ; R18 := R1
+476 [-]: CALL      R17 2 1      ; R17(R18)
+477 [-]: JMP       505          ; PC := 505
 478 [-]: GETGLOBAL R17 K3       ; R17 := _T
-479 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
-480 [-]: GETUPVAL  R17 U8       ; R17 := U8
-481 [-]: MOVE      R18 R1       ; R18 := R1
-482 [-]: CALL      R17 2 1      ; R17(R18)
-483 [-]: JMP       511          ; PC := 511
+479 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["DesiredGoToNodeTag"]
+480 [-]: GETUPVAL  R18 U2       ; R18 := U2
+481 [-]: GETTABLE  R18 R18 K92  ; R18 := R18["INVASION_ATTACKER_TAG"]
+482 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 490
+483 [-]: JMP       490          ; PC := 490
 484 [-]: GETGLOBAL R17 K3       ; R17 := _T
-485 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["DesiredGoToNodeTag"]
-486 [-]: GETUPVAL  R18 U2       ; R18 := U2
-487 [-]: GETTABLE  R18 R18 K96  ; R18 := R18["INVASION_ATTACKER_TAG"]
-488 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 496
-489 [-]: JMP       496          ; PC := 496
-490 [-]: GETGLOBAL R17 K3       ; R17 := _T
-491 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
-492 [-]: GETUPVAL  R17 U9       ; R17 := U9
-493 [-]: MOVE      R18 R1       ; R18 := R1
-494 [-]: CALL      R17 2 1      ; R17(R18)
-495 [-]: JMP       511          ; PC := 511
-496 [-]: GETGLOBAL R17 K14      ; R17 := 0x9FAED6BC
-497 [-]: GETUPVAL  R18 U0       ; R18 := U0
-498 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-499 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-500 [-]: GETTABLE  R18 R18 K8   ; R18 := R18["name"]
-501 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-502 [-]: GETGLOBAL R18 K3       ; R18 := _T
-503 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["DesiredGoToNodeTag"]
-504 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
-505 [-]: GETGLOBAL R17 K3       ; R17 := _T
-506 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
-507 [-]: GETUPVAL  R17 U5       ; R17 := U5
-508 [-]: MOVE      R18 R1       ; R18 := R1
-509 [-]: LOADNIL   R19 R21      ; R19 := R20 := R21 := nil
-510 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
-511 [-]: RETURN    R0 1         ; return 
-512 [-]: JMP       611          ; PC := 611
-513 [-]: GETUPVAL  R17 U0       ; R17 := U0
-514 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-515 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-516 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["mission"]
-517 [-]: GETTABLE  R17 R17 K97  ; R17 := R17["missionType"]
-518 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-519 [-]: GETTABLE  R18 R18 K98  ; R18 := R18["MT_ARENA"]
-520 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 561
-521 [-]: JMP       561          ; PC := 561
-522 [-]: GETUPVAL  R17 U0       ; R17 := U0
-523 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-524 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-525 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["mission"]
-526 [-]: GETTABLE  R17 R17 K99  ; R17 := R17["faction"]
-527 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-528 [-]: GETTABLE  R18 R18 K100 ; R18 := R18["FC_CORPUS"]
-529 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 561
-530 [-]: JMP       561          ; PC := 561
-531 [-]: GETUPVAL  R17 U0       ; R17 := U0
-532 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-533 [-]: GETTABLE  R17 R17 K8   ; R17 := R17["name"]
-534 [-]: TEST      R17 0        ; if not R17 then PC := 561
-535 [-]: JMP       561          ; PC := 561
+485 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
+486 [-]: GETUPVAL  R17 U10      ; R17 := U10
+487 [-]: MOVE      R18 R1       ; R18 := R1
+488 [-]: CALL      R17 2 1      ; R17(R18)
+489 [-]: JMP       505          ; PC := 505
+490 [-]: GETGLOBAL R17 K14      ; R17 := 0x9FAED6BC
+491 [-]: GETUPVAL  R18 U0       ; R18 := U0
+492 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+493 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
+494 [-]: GETTABLE  R18 R18 K8   ; R18 := R18["name"]
+495 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+496 [-]: GETGLOBAL R18 K3       ; R18 := _T
+497 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["DesiredGoToNodeTag"]
+498 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
+499 [-]: GETGLOBAL R17 K3       ; R17 := _T
+500 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
+501 [-]: GETUPVAL  R17 U6       ; R17 := U6
+502 [-]: MOVE      R18 R1       ; R18 := R1
+503 [-]: LOADNIL   R19 R21      ; R19 := R20 := R21 := nil
+504 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+505 [-]: RETURN    R0 1         ; return 
+506 [-]: JMP       605          ; PC := 605
+507 [-]: GETUPVAL  R17 U0       ; R17 := U0
+508 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+509 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+510 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["mission"]
+511 [-]: GETTABLE  R17 R17 K93  ; R17 := R17["missionType"]
+512 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+513 [-]: GETTABLE  R18 R18 K94  ; R18 := R18["MT_ARENA"]
+514 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 555
+515 [-]: JMP       555          ; PC := 555
+516 [-]: GETUPVAL  R17 U0       ; R17 := U0
+517 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+518 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+519 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["mission"]
+520 [-]: GETTABLE  R17 R17 K95  ; R17 := R17["faction"]
+521 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+522 [-]: GETTABLE  R18 R18 K96  ; R18 := R18["FC_CORPUS"]
+523 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 555
+524 [-]: JMP       555          ; PC := 555
+525 [-]: GETUPVAL  R17 U0       ; R17 := U0
+526 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+527 [-]: GETTABLE  R17 R17 K8   ; R17 := R17["name"]
+528 [-]: TEST      R17 0        ; if not R17 then PC := 555
+529 [-]: JMP       555          ; PC := 555
+530 [-]: GETGLOBAL R17 K3       ; R17 := _T
+531 [-]: GETTABLE  R17 R17 K97  ; R17 := R17["DesiredGoToQuest"]
+532 [-]: TEST      R17 0        ; if not R17 then PC := 539
+533 [-]: JMP       539          ; PC := 539
+534 [-]: GETGLOBAL R17 K3       ; R17 := _T
+535 [-]: GETTABLE  R2 R17 K97   ; R2 := R17["DesiredGoToQuest"]
 536 [-]: GETGLOBAL R17 K3       ; R17 := _T
-537 [-]: GETTABLE  R17 R17 K101 ; R17 := R17["DesiredGoToQuest"]
-538 [-]: TEST      R17 0        ; if not R17 then PC := 545
-539 [-]: JMP       545          ; PC := 545
-540 [-]: GETGLOBAL R17 K3       ; R17 := _T
-541 [-]: GETTABLE  R2 R17 K101  ; R2 := R17["DesiredGoToQuest"]
-542 [-]: GETGLOBAL R17 K3       ; R17 := _T
-543 [-]: SETTABLE  R17 K101 K5  ; R17["DesiredGoToQuest"] := nil
-544 [-]: JMP       553          ; PC := 553
-545 [-]: GETGLOBAL R17 K9       ; R17 := 0x400E7765
-546 [-]: MOVE      R18 R2       ; R18 := R2
-547 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-548 [-]: TEST      R17 1        ; if R17 then PC := 553
-549 [-]: JMP       553          ; PC := 553
-550 [-]: SELF      R17 R2 K24   ; R18 := R2; R17 := R2["0x1B252E3C"]
-551 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-552 [-]: MOVE      R2 R17       ; R2 := R17
-553 [-]: GETUPVAL  R17 U10      ; R17 := U10
-554 [-]: MOVE      R18 R1       ; R18 := R1
-555 [-]: MOVE      R19 R1       ; R19 := R1
-556 [-]: MOVE      R20 R2       ; R20 := R2
-557 [-]: MOVE      R21 R4       ; R21 := R4
-558 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
-559 [-]: RETURN    R0 1         ; return 
-560 [-]: JMP       611          ; PC := 611
+537 [-]: SETTABLE  R17 K97 K5   ; R17["DesiredGoToQuest"] := nil
+538 [-]: JMP       547          ; PC := 547
+539 [-]: GETGLOBAL R17 K9       ; R17 := 0x400E7765
+540 [-]: MOVE      R18 R2       ; R18 := R2
+541 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+542 [-]: TEST      R17 1        ; if R17 then PC := 547
+543 [-]: JMP       547          ; PC := 547
+544 [-]: SELF      R17 R2 K24   ; R18 := R2; R17 := R2["0x1B252E3C"]
+545 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+546 [-]: MOVE      R2 R17       ; R2 := R17
+547 [-]: GETUPVAL  R17 U11      ; R17 := U11
+548 [-]: MOVE      R18 R1       ; R18 := R1
+549 [-]: MOVE      R19 R1       ; R19 := R1
+550 [-]: MOVE      R20 R2       ; R20 := R2
+551 [-]: MOVE      R21 R4       ; R21 := R4
+552 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+553 [-]: RETURN    R0 1         ; return 
+554 [-]: JMP       605          ; PC := 605
+555 [-]: GETGLOBAL R17 K3       ; R17 := _T
+556 [-]: GETTABLE  R17 R17 K97  ; R17 := R17["DesiredGoToQuest"]
+557 [-]: TEST      R17 0        ; if not R17 then PC := 564
+558 [-]: JMP       564          ; PC := 564
+559 [-]: GETGLOBAL R17 K3       ; R17 := _T
+560 [-]: GETTABLE  R2 R17 K97   ; R2 := R17["DesiredGoToQuest"]
 561 [-]: GETGLOBAL R17 K3       ; R17 := _T
-562 [-]: GETTABLE  R17 R17 K101 ; R17 := R17["DesiredGoToQuest"]
-563 [-]: TEST      R17 0        ; if not R17 then PC := 570
-564 [-]: JMP       570          ; PC := 570
-565 [-]: GETGLOBAL R17 K3       ; R17 := _T
-566 [-]: GETTABLE  R2 R17 K101  ; R2 := R17["DesiredGoToQuest"]
-567 [-]: GETGLOBAL R17 K3       ; R17 := _T
-568 [-]: SETTABLE  R17 K101 K5  ; R17["DesiredGoToQuest"] := nil
-569 [-]: JMP       611          ; PC := 611
-570 [-]: GETUPVAL  R17 U0       ; R17 := U0
-571 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-572 [-]: GETTABLE  R17 R17 K102 ; R17 := R17["isBlockaded"]
-573 [-]: TEST      R17 0        ; if not R17 then PC := 589
-574 [-]: JMP       589          ; PC := 589
-575 [-]: GETGLOBAL R17 K14      ; R17 := 0x9FAED6BC
-576 [-]: GETUPVAL  R18 U0       ; R18 := U0
-577 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-578 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-579 [-]: GETTABLE  R18 R18 K8   ; R18 := R18["name"]
-580 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-581 [-]: GETUPVAL  R18 U2       ; R18 := U2
-582 [-]: GETTABLE  R18 R18 K103 ; R18 := R18["NEMESIS_MISSION_TAG"]
-583 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
-584 [-]: GETUPVAL  R17 U5       ; R17 := U5
-585 [-]: MOVE      R18 R1       ; R18 := R1
-586 [-]: CALL      R17 2 1      ; R17(R18)
-587 [-]: RETURN    R0 1         ; return 
-588 [-]: JMP       611          ; PC := 611
-589 [-]: GETGLOBAL R17 K63      ; R17 := _G
-590 [-]: GETTABLE  R17 R17 K85  ; R17 := R17["CachedGoalInfo"]
-591 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-592 [-]: TEST      R17 0        ; if not R17 then PC := 603
-593 [-]: JMP       603          ; PC := 603
-594 [-]: GETGLOBAL R17 K3       ; R17 := _T
-595 [-]: GETTABLE  R17 R17 K104 ; R17 := R17["LockedGoalMissionInfo"]
-596 [-]: TEST      R17 0        ; if not R17 then PC := 611
-597 [-]: JMP       611          ; PC := 611
-598 [-]: GETGLOBAL R17 K3       ; R17 := _T
-599 [-]: GETTABLE  R17 R17 K104 ; R17 := R17["LockedGoalMissionInfo"]
-600 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-601 [-]: TEST      R17 0        ; if not R17 then PC := 611
-602 [-]: JMP       611          ; PC := 611
-603 [-]: GETUPVAL  R17 U11      ; R17 := U11
-604 [-]: GETUPVAL  R18 U0       ; R18 := U0
-605 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-606 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-607 [-]: MOVE      R19 R2       ; R19 := R2
-608 [-]: MOVE      R20 R3       ; R20 := R3
-609 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
-610 [-]: RETURN    R0 1         ; return 
-611 [-]: GETGLOBAL R17 K9       ; R17 := 0x400E7765
-612 [-]: GETUPVAL  R18 U0       ; R18 := U0
-613 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-614 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-615 [-]: GETTABLE  R18 R18 K15  ; R18 := R18["keyChain"]
-616 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-617 [-]: TEST      R17 1        ; if R17 then PC := 627
-618 [-]: JMP       627          ; PC := 627
-619 [-]: GETUPVAL  R17 U0       ; R17 := U0
-620 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-621 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-622 [-]: GETTABLE  R17 R17 K15  ; R17 := R17["keyChain"]
-623 [-]: SELF      R17 R17 K24  ; R18 := R17; R17 := R17["0x1B252E3C"]
-624 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-625 [-]: MOVE      R2 R17       ; R2 := R17
-626 [-]: JMP       823          ; PC := 823
-627 [-]: TEST      R2 1         ; if R2 then PC := 823
-628 [-]: JMP       823          ; PC := 823
-629 [-]: GETGLOBAL R17 K3       ; R17 := _T
-630 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedAlerts"]
-631 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-632 [-]: TEST      R17 0        ; if not R17 then PC := 651
-633 [-]: JMP       651          ; PC := 651
+562 [-]: SETTABLE  R17 K97 K5   ; R17["DesiredGoToQuest"] := nil
+563 [-]: JMP       605          ; PC := 605
+564 [-]: GETUPVAL  R17 U0       ; R17 := U0
+565 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+566 [-]: GETTABLE  R17 R17 K98  ; R17 := R17["isBlockaded"]
+567 [-]: TEST      R17 0        ; if not R17 then PC := 583
+568 [-]: JMP       583          ; PC := 583
+569 [-]: GETGLOBAL R17 K14      ; R17 := 0x9FAED6BC
+570 [-]: GETUPVAL  R18 U0       ; R18 := U0
+571 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+572 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
+573 [-]: GETTABLE  R18 R18 K8   ; R18 := R18["name"]
+574 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+575 [-]: GETUPVAL  R18 U2       ; R18 := U2
+576 [-]: GETTABLE  R18 R18 K99  ; R18 := R18["NEMESIS_MISSION_TAG"]
+577 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
+578 [-]: GETUPVAL  R17 U6       ; R17 := U6
+579 [-]: MOVE      R18 R1       ; R18 := R1
+580 [-]: CALL      R17 2 1      ; R17(R18)
+581 [-]: RETURN    R0 1         ; return 
+582 [-]: JMP       605          ; PC := 605
+583 [-]: GETGLOBAL R17 K59      ; R17 := _G
+584 [-]: GETTABLE  R17 R17 K81  ; R17 := R17["CachedGoalInfo"]
+585 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+586 [-]: TEST      R17 0        ; if not R17 then PC := 597
+587 [-]: JMP       597          ; PC := 597
+588 [-]: GETGLOBAL R17 K3       ; R17 := _T
+589 [-]: GETTABLE  R17 R17 K100 ; R17 := R17["LockedGoalMissionInfo"]
+590 [-]: TEST      R17 0        ; if not R17 then PC := 605
+591 [-]: JMP       605          ; PC := 605
+592 [-]: GETGLOBAL R17 K3       ; R17 := _T
+593 [-]: GETTABLE  R17 R17 K100 ; R17 := R17["LockedGoalMissionInfo"]
+594 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+595 [-]: TEST      R17 0        ; if not R17 then PC := 605
+596 [-]: JMP       605          ; PC := 605
+597 [-]: GETUPVAL  R17 U12      ; R17 := U12
+598 [-]: GETUPVAL  R18 U0       ; R18 := U0
+599 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+600 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
+601 [-]: MOVE      R19 R2       ; R19 := R2
+602 [-]: MOVE      R20 R3       ; R20 := R3
+603 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
+604 [-]: RETURN    R0 1         ; return 
+605 [-]: GETGLOBAL R17 K9       ; R17 := 0x400E7765
+606 [-]: GETUPVAL  R18 U0       ; R18 := U0
+607 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+608 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
+609 [-]: GETTABLE  R18 R18 K15  ; R18 := R18["keyChain"]
+610 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+611 [-]: TEST      R17 1        ; if R17 then PC := 621
+612 [-]: JMP       621          ; PC := 621
+613 [-]: GETUPVAL  R17 U0       ; R17 := U0
+614 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+615 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+616 [-]: GETTABLE  R17 R17 K15  ; R17 := R17["keyChain"]
+617 [-]: SELF      R17 R17 K24  ; R18 := R17; R17 := R17["0x1B252E3C"]
+618 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+619 [-]: MOVE      R2 R17       ; R2 := R17
+620 [-]: JMP       814          ; PC := 814
+621 [-]: TEST      R2 1         ; if R2 then PC := 814
+622 [-]: JMP       814          ; PC := 814
+623 [-]: GETGLOBAL R17 K3       ; R17 := _T
+624 [-]: GETTABLE  R17 R17 K79  ; R17 := R17["CachedAlerts"]
+625 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+626 [-]: TEST      R17 0        ; if not R17 then PC := 645
+627 [-]: JMP       645          ; PC := 645
+628 [-]: GETGLOBAL R17 K3       ; R17 := _T
+629 [-]: GETTABLE  R17 R17 K79  ; R17 := R17["CachedAlerts"]
+630 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+631 [-]: GETTABLE  R17 R17 K80  ; R17 := R17["mVisible"]
+632 [-]: TEST      R17 0        ; if not R17 then PC := 645
+633 [-]: JMP       645          ; PC := 645
 634 [-]: GETGLOBAL R17 K3       ; R17 := _T
-635 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedAlerts"]
+635 [-]: GETTABLE  R17 R17 K79  ; R17 := R17["CachedAlerts"]
 636 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-637 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["mVisible"]
-638 [-]: TEST      R17 0        ; if not R17 then PC := 651
-639 [-]: JMP       651          ; PC := 651
-640 [-]: GETGLOBAL R17 K3       ; R17 := _T
-641 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedAlerts"]
-642 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-643 [-]: GETTABLE  R17 R17 K91  ; R17 := R17["mUnlocked"]
-644 [-]: TEST      R17 0        ; if not R17 then PC := 651
-645 [-]: JMP       651          ; PC := 651
-646 [-]: MOVE      R17 R1       ; R17 := R1
-647 [-]: GETUPVAL  R18 U2       ; R18 := U2
-648 [-]: GETTABLE  R18 R18 K105 ; R18 := R18["ALERT_TAG"]
-649 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
-650 [-]: JMP       823          ; PC := 823
-651 [-]: GETGLOBAL R17 K63      ; R17 := _G
-652 [-]: GETTABLE  R17 R17 K85  ; R17 := R17["CachedGoalInfo"]
-653 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-654 [-]: TEST      R17 0        ; if not R17 then PC := 680
-655 [-]: JMP       680          ; PC := 680
-656 [-]: GETUPVAL  R17 U0       ; R17 := U0
-657 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-658 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-659 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["nodeType"]
-660 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-661 [-]: GETTABLE  R18 R18 K106 ; R18 := R18["NT_HUB"]
-662 [-]: EQ        1 R17 R18    ; if R17 == R18 then PC := 680
-663 [-]: JMP       680          ; PC := 680
-664 [-]: GETGLOBAL R17 K3       ; R17 := _T
-665 [-]: GETTABLE  R17 R17 K92  ; R17 := R17["CachedInvasionInfo"]
-666 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-667 [-]: TEST      R17 0        ; if not R17 then PC := 675
-668 [-]: JMP       675          ; PC := 675
-669 [-]: GETGLOBAL R17 K3       ; R17 := _T
-670 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
-671 [-]: GETUPVAL  R17 U9       ; R17 := U9
-672 [-]: MOVE      R18 R1       ; R18 := R1
-673 [-]: CALL      R17 2 1      ; R17(R18)
-674 [-]: RETURN    R0 1         ; return 
-675 [-]: MOVE      R17 R1       ; R17 := R1
-676 [-]: GETUPVAL  R18 U2       ; R18 := U2
-677 [-]: GETTABLE  R18 R18 K107 ; R18 := R18["EVENT_TAG"]
-678 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
-679 [-]: JMP       823          ; PC := 823
-680 [-]: GETGLOBAL R17 K3       ; R17 := _T
-681 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["CachedSyndicateMissions"]
-682 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-683 [-]: TEST      R17 0        ; if not R17 then PC := 702
-684 [-]: JMP       702          ; PC := 702
+637 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["mUnlocked"]
+638 [-]: TEST      R17 0        ; if not R17 then PC := 645
+639 [-]: JMP       645          ; PC := 645
+640 [-]: MOVE      R17 R1       ; R17 := R1
+641 [-]: GETUPVAL  R18 U2       ; R18 := U2
+642 [-]: GETTABLE  R18 R18 K101 ; R18 := R18["ALERT_TAG"]
+643 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
+644 [-]: JMP       814          ; PC := 814
+645 [-]: GETGLOBAL R17 K59      ; R17 := _G
+646 [-]: GETTABLE  R17 R17 K81  ; R17 := R17["CachedGoalInfo"]
+647 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+648 [-]: TEST      R17 0        ; if not R17 then PC := 674
+649 [-]: JMP       674          ; PC := 674
+650 [-]: GETUPVAL  R17 U0       ; R17 := U0
+651 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+652 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+653 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["nodeType"]
+654 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+655 [-]: GETTABLE  R18 R18 K102 ; R18 := R18["NT_HUB"]
+656 [-]: EQ        1 R17 R18    ; if R17 == R18 then PC := 674
+657 [-]: JMP       674          ; PC := 674
+658 [-]: GETGLOBAL R17 K3       ; R17 := _T
+659 [-]: GETTABLE  R17 R17 K88  ; R17 := R17["CachedInvasionInfo"]
+660 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+661 [-]: TEST      R17 0        ; if not R17 then PC := 669
+662 [-]: JMP       669          ; PC := 669
+663 [-]: GETGLOBAL R17 K3       ; R17 := _T
+664 [-]: SETTABLE  R17 K23 K5   ; R17["DesiredGoToNodeTag"] := nil
+665 [-]: GETUPVAL  R17 U10      ; R17 := U10
+666 [-]: MOVE      R18 R1       ; R18 := R1
+667 [-]: CALL      R17 2 1      ; R17(R18)
+668 [-]: RETURN    R0 1         ; return 
+669 [-]: MOVE      R17 R1       ; R17 := R1
+670 [-]: GETUPVAL  R18 U2       ; R18 := U2
+671 [-]: GETTABLE  R18 R18 K103 ; R18 := R18["EVENT_TAG"]
+672 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
+673 [-]: JMP       814          ; PC := 814
+674 [-]: GETGLOBAL R17 K3       ; R17 := _T
+675 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedSyndicateMissions"]
+676 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+677 [-]: TEST      R17 0        ; if not R17 then PC := 696
+678 [-]: JMP       696          ; PC := 696
+679 [-]: GETGLOBAL R17 K3       ; R17 := _T
+680 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedSyndicateMissions"]
+681 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+682 [-]: GETTABLE  R17 R17 K80  ; R17 := R17["mVisible"]
+683 [-]: TEST      R17 0        ; if not R17 then PC := 696
+684 [-]: JMP       696          ; PC := 696
 685 [-]: GETGLOBAL R17 K3       ; R17 := _T
-686 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["CachedSyndicateMissions"]
+686 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["CachedSyndicateMissions"]
 687 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-688 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["mVisible"]
-689 [-]: TEST      R17 0        ; if not R17 then PC := 702
-690 [-]: JMP       702          ; PC := 702
-691 [-]: GETGLOBAL R17 K3       ; R17 := _T
-692 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["CachedSyndicateMissions"]
-693 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-694 [-]: GETTABLE  R17 R17 K91  ; R17 := R17["mUnlocked"]
-695 [-]: TEST      R17 0        ; if not R17 then PC := 702
-696 [-]: JMP       702          ; PC := 702
-697 [-]: MOVE      R17 R1       ; R17 := R1
-698 [-]: GETUPVAL  R18 U2       ; R18 := U2
-699 [-]: GETTABLE  R18 R18 K108 ; R18 := R18["SYNDICATE_MISSION_TAG"]
-700 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
-701 [-]: JMP       823          ; PC := 823
-702 [-]: GETGLOBAL R17 K3       ; R17 := _T
-703 [-]: GETTABLE  R17 R17 K88  ; R17 := R17["CachedSortieMissions"]
-704 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-705 [-]: TEST      R17 0        ; if not R17 then PC := 718
-706 [-]: JMP       718          ; PC := 718
-707 [-]: GETGLOBAL R17 K3       ; R17 := _T
-708 [-]: GETTABLE  R17 R17 K88  ; R17 := R17["CachedSortieMissions"]
-709 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-710 [-]: GETTABLE  R17 R17 K89  ; R17 := R17["mShowInStarChart"]
-711 [-]: TEST      R17 0        ; if not R17 then PC := 718
-712 [-]: JMP       718          ; PC := 718
-713 [-]: MOVE      R17 R1       ; R17 := R1
-714 [-]: GETUPVAL  R18 U2       ; R18 := U2
-715 [-]: GETTABLE  R18 R18 K109 ; R18 := R18["SORTIE_MISSION_TAG"]
-716 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
-717 [-]: JMP       823          ; PC := 823
-718 [-]: GETGLOBAL R17 K3       ; R17 := _T
-719 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedActiveMissions"]
-720 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-721 [-]: TEST      R17 0        ; if not R17 then PC := 740
-722 [-]: JMP       740          ; PC := 740
+688 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["mUnlocked"]
+689 [-]: TEST      R17 0        ; if not R17 then PC := 696
+690 [-]: JMP       696          ; PC := 696
+691 [-]: MOVE      R17 R1       ; R17 := R1
+692 [-]: GETUPVAL  R18 U2       ; R18 := U2
+693 [-]: GETTABLE  R18 R18 K104 ; R18 := R18["SYNDICATE_MISSION_TAG"]
+694 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
+695 [-]: JMP       814          ; PC := 814
+696 [-]: GETGLOBAL R17 K3       ; R17 := _T
+697 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["CachedSortieMissions"]
+698 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+699 [-]: TEST      R17 0        ; if not R17 then PC := 712
+700 [-]: JMP       712          ; PC := 712
+701 [-]: GETGLOBAL R17 K3       ; R17 := _T
+702 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["CachedSortieMissions"]
+703 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+704 [-]: GETTABLE  R17 R17 K85  ; R17 := R17["mShowInStarChart"]
+705 [-]: TEST      R17 0        ; if not R17 then PC := 712
+706 [-]: JMP       712          ; PC := 712
+707 [-]: MOVE      R17 R1       ; R17 := R1
+708 [-]: GETUPVAL  R18 U2       ; R18 := U2
+709 [-]: GETTABLE  R18 R18 K105 ; R18 := R18["SORTIE_MISSION_TAG"]
+710 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
+711 [-]: JMP       814          ; PC := 814
+712 [-]: GETGLOBAL R17 K3       ; R17 := _T
+713 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["CachedActiveMissions"]
+714 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+715 [-]: TEST      R17 0        ; if not R17 then PC := 734
+716 [-]: JMP       734          ; PC := 734
+717 [-]: GETGLOBAL R17 K3       ; R17 := _T
+718 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["CachedActiveMissions"]
+719 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+720 [-]: GETTABLE  R17 R17 K80  ; R17 := R17["mVisible"]
+721 [-]: TEST      R17 0        ; if not R17 then PC := 734
+722 [-]: JMP       734          ; PC := 734
 723 [-]: GETGLOBAL R17 K3       ; R17 := _T
-724 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedActiveMissions"]
+724 [-]: GETTABLE  R17 R17 K86  ; R17 := R17["CachedActiveMissions"]
 725 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-726 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["mVisible"]
-727 [-]: TEST      R17 0        ; if not R17 then PC := 740
-728 [-]: JMP       740          ; PC := 740
-729 [-]: GETGLOBAL R17 K3       ; R17 := _T
-730 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["CachedActiveMissions"]
-731 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-732 [-]: GETTABLE  R17 R17 K91  ; R17 := R17["mUnlocked"]
-733 [-]: TEST      R17 0        ; if not R17 then PC := 740
-734 [-]: JMP       740          ; PC := 740
-735 [-]: GETUPVAL  R17 U8       ; R17 := U8
-736 [-]: MOVE      R18 R1       ; R18 := R1
-737 [-]: CALL      R17 2 1      ; R17(R18)
-738 [-]: RETURN    R0 1         ; return 
-739 [-]: JMP       823          ; PC := 823
-740 [-]: GETGLOBAL R17 K3       ; R17 := _T
-741 [-]: GETTABLE  R17 R17 K92  ; R17 := R17["CachedInvasionInfo"]
-742 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-743 [-]: TEST      R17 0        ; if not R17 then PC := 750
-744 [-]: JMP       750          ; PC := 750
-745 [-]: GETUPVAL  R17 U9       ; R17 := U9
-746 [-]: MOVE      R18 R1       ; R18 := R1
-747 [-]: CALL      R17 2 1      ; R17(R18)
-748 [-]: RETURN    R0 1         ; return 
-749 [-]: JMP       823          ; PC := 823
-750 [-]: GETGLOBAL R17 K3       ; R17 := _T
-751 [-]: GETTABLE  R17 R17 K93  ; R17 := R17["CachedSkullNodes"]
-752 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
-753 [-]: EQ        1 R17 K5     ; if R17 == nil then PC := 760
-754 [-]: JMP       760          ; PC := 760
-755 [-]: GETUPVAL  R17 U12      ; R17 := U12
-756 [-]: MOVE      R18 R1       ; R18 := R1
-757 [-]: CALL      R17 2 1      ; R17(R18)
-758 [-]: RETURN    R0 1         ; return 
-759 [-]: JMP       823          ; PC := 823
-760 [-]: GETUPVAL  R17 U0       ; R17 := U0
-761 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-762 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-763 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["nodeType"]
-764 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-765 [-]: GETTABLE  R18 R18 K78  ; R18 := R18["NT_CLAN"]
-766 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 779
-767 [-]: JMP       779          ; PC := 779
-768 [-]: GETUPVAL  R17 U5       ; R17 := U5
-769 [-]: MOVE      R18 R1       ; R18 := R1
-770 [-]: GETUPVAL  R19 U2       ; R19 := U2
-771 [-]: GETTABLE  R19 R19 K79  ; R19 := R19["BADLAND_MISSION_TAG"]
-772 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
-773 [-]: LOADK     R19 K13      ; R19 := ""
-774 [-]: LOADK     R20 K13      ; R20 := ""
-775 [-]: LOADK     R21 K13      ; R21 := ""
-776 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
-777 [-]: RETURN    R0 1         ; return 
-778 [-]: JMP       823          ; PC := 823
-779 [-]: GETUPVAL  R17 U0       ; R17 := U0
-780 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-781 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-782 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["nodeType"]
-783 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-784 [-]: GETTABLE  R18 R18 K110 ; R18 := R18["NT_PVP"]
-785 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 792
-786 [-]: JMP       792          ; PC := 792
-787 [-]: MOVE      R17 R1       ; R17 := R1
-788 [-]: GETUPVAL  R18 U2       ; R18 := U2
-789 [-]: GETTABLE  R18 R18 K111 ; R18 := R18["PVP_TAG"]
-790 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
-791 [-]: JMP       823          ; PC := 823
-792 [-]: GETUPVAL  R17 U0       ; R17 := U0
-793 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
-794 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
-795 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["nodeType"]
-796 [-]: GETGLOBAL R18 K77      ; R18 := Lotus_Game
-797 [-]: GETTABLE  R18 R18 K106 ; R18 := R18["NT_HUB"]
-798 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 823
-799 [-]: JMP       823          ; PC := 823
-800 [-]: GETGLOBAL R17 K51      ; R17 := gMatchingService
-801 [-]: SELF      R17 R17 K112 ; R18 := R17; R17 := R17["0xA99F3BEF"]
-802 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-803 [-]: TEST      R17 0        ; if not R17 then PC := 817
-804 [-]: JMP       817          ; PC := 817
-805 [-]: GETGLOBAL R17 K71      ; R17 := gGameData
-806 [-]: SELF      R17 R17 K113 ; R18 := R17; R17 := R17["0xA775A0E7"]
-807 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-808 [-]: GETUPVAL  R18 U5       ; R18 := U5
-809 [-]: MOVE      R19 R1       ; R19 := R1
-810 [-]: GETUPVAL  R20 U2       ; R20 := U2
-811 [-]: GETTABLE  R20 R20 K114 ; R20 := R20["HUB_TAG"]
-812 [-]: CONCAT    R19 R19 R20  ; R19 := R19 .. R20
-813 [-]: LOADNIL   R20 R21      ; R20 := R21 := nil
-814 [-]: LOADK     R22 K115     ; R22 := 0.5
-815 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
-816 [-]: RETURN    R0 1         ; return 
-817 [-]: GETUPVAL  R18 U13      ; R18 := U13
-818 [-]: GETUPVAL  R19 U0       ; R19 := U0
-819 [-]: GETTABLE  R19 R19 K0   ; R19 := R19["Node"]
-820 [-]: GETTABLE  R19 R19 K6   ; R19 := R19["radialSector"]
-821 [-]: CALL      R18 2 1      ; R18(R19)
-822 [-]: RETURN    R0 1         ; return 
-823 [-]: GETUPVAL  R18 U0       ; R18 := U0
-824 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-825 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-826 [-]: GETTABLE  R18 R18 K16  ; R18 := R18["mission"]
-827 [-]: GETTABLE  R18 R18 K97  ; R18 := R18["missionType"]
-828 [-]: GETGLOBAL R19 K77      ; R19 := Lotus_Game
-829 [-]: GETTABLE  R19 R19 K98  ; R19 := R19["MT_ARENA"]
-830 [-]: EQ        0 R18 R19    ; if R18 ~= R19 then PC := 853
-831 [-]: JMP       853          ; PC := 853
-832 [-]: GETUPVAL  R18 U0       ; R18 := U0
-833 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-834 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-835 [-]: GETTABLE  R18 R18 K16  ; R18 := R18["mission"]
-836 [-]: GETTABLE  R18 R18 K99  ; R18 := R18["faction"]
-837 [-]: GETGLOBAL R19 K77      ; R19 := Lotus_Game
-838 [-]: GETTABLE  R19 R19 K100 ; R19 := R19["FC_CORPUS"]
-839 [-]: EQ        0 R18 R19    ; if R18 ~= R19 then PC := 853
-840 [-]: JMP       853          ; PC := 853
-841 [-]: GETUPVAL  R18 U0       ; R18 := U0
-842 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-843 [-]: GETTABLE  R18 R18 K8   ; R18 := R18["name"]
-844 [-]: TEST      R18 0        ; if not R18 then PC := 853
-845 [-]: JMP       853          ; PC := 853
-846 [-]: GETUPVAL  R18 U10      ; R18 := U10
-847 [-]: MOVE      R19 R1       ; R19 := R1
-848 [-]: MOVE      R20 R1       ; R20 := R1
-849 [-]: MOVE      R21 R2       ; R21 := R2
-850 [-]: MOVE      R22 R4       ; R22 := R4
-851 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
-852 [-]: RETURN    R0 1         ; return 
-853 [-]: GETUPVAL  R18 U0       ; R18 := U0
-854 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
-855 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
-856 [-]: GETTABLE  R18 R18 K16  ; R18 := R18["mission"]
-857 [-]: GETTABLE  R18 R18 K116 ; R18 := R18["soloMode"]
-858 [-]: TEST      R18 0        ; if not R18 then PC := 921
-859 [-]: JMP       921          ; PC := 921
-860 [-]: GETGLOBAL R18 K51      ; R18 := gMatchingService
-861 [-]: SELF      R18 R18 K117 ; R19 := R18; R18 := R18["0x35DDC67D"]
-862 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-863 [-]: LT        0 K26 R18    ; if 1 >= R18 then PC := 897
-864 [-]: JMP       897          ; PC := 897
-865 [-]: GETUPVAL  R18 U14      ; R18 := U14
-866 [-]: GETTABLE  R18 R18 K118 ; R18 := R18["0x8ECD61A2"]
-867 [-]: GETGLOBAL R19 K46      ; R19 := 0xEC274B1A
-868 [-]: MOVE      R20 R1       ; R20 := R1
-869 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-870 [-]: MOVE      R20 R1       ; R20 := R1
-871 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-872 [-]: EQ        1 R18 K5     ; if R18 == nil then PC := 879
-873 [-]: JMP       879          ; PC := 879
-874 [-]: GETUPVAL  R19 U14      ; R19 := U14
-875 [-]: GETTABLE  R19 R19 K119 ; R19 := R19["0xDABD460F"]
-876 [-]: MOVE      R20 R18      ; R20 := R18
-877 [-]: CALL      R19 2 1      ; R19(R20)
-878 [-]: JMP       920          ; PC := 920
-879 [-]: GETGLOBAL R19 K9       ; R19 := 0x400E7765
-880 [-]: GETUPVAL  R20 U15      ; R20 := U15
-881 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-882 [-]: TEST      R19 0        ; if not R19 then PC := 920
-883 [-]: JMP       920          ; PC := 920
-884 [-]: GETUPVAL  R19 U16      ; R19 := U16
-885 [-]: GETUPVAL  R20 U0       ; R20 := U0
-886 [-]: GETTABLE  R20 R20 K0   ; R20 := R20["Node"]
-887 [-]: SETTABLE  R19 K0 R20   ; R19["Node"] := R20
-888 [-]: GETUPVAL  R19 U16      ; R19 := U16
-889 [-]: SETTABLE  R19 K120 R1  ; R19["SectorName"] := R1
-890 [-]: GETUPVAL  R19 U3       ; R19 := U3
-891 [-]: GETTABLE  R19 R19 K121 ; R19 := R19["0x1C988750"]
-892 [-]: LOADK     R20 K122     ; R20 := "/Lotus/Language/Menu/SoloModeRequired"
-893 [-]: LOADK     R21 K123     ; R21 := "ConfirmSoloMission"
-894 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
-895 [-]: MOVE      R19 R15      ; R19 := R15
-896 [-]: JMP       920          ; PC := 920
-897 [-]: GETUPVAL  R19 U0       ; R19 := U0
-898 [-]: GETTABLE  R19 R19 K0   ; R19 := R19["Node"]
-899 [-]: TEST      R19 0        ; if not R19 then PC := 920
-900 [-]: JMP       920          ; PC := 920
-901 [-]: GETUPVAL  R19 U0       ; R19 := U0
-902 [-]: GETTABLE  R19 R19 K0   ; R19 := R19["Node"]
-903 [-]: GETTABLE  R19 R19 K6   ; R19 := R19["radialSector"]
-904 [-]: TEST      R19 0        ; if not R19 then PC := 920
-905 [-]: JMP       920          ; PC := 920
-906 [-]: GETUPVAL  R19 U5       ; R19 := U5
-907 [-]: MOVE      R20 R1       ; R20 := R1
-908 [-]: MOVE      R21 R2       ; R21 := R2
-909 [-]: MOVE      R22 R3       ; R22 := R3
-910 [-]: MOVE      R23 R4       ; R23 := R4
-911 [-]: CALL      R19 5 2      ; R19 := R19(R20,R21,R22,R23)
-912 [-]: TEST      R19 0        ; if not R19 then PC := 920
-913 [-]: JMP       920          ; PC := 920
-914 [-]: GETGLOBAL R19 K3       ; R19 := _T
-915 [-]: GETTABLE  R19 R19 K10  ; R19 := R19["SquadOverlay"]
-916 [-]: SELF      R19 R19 K11  ; R20 := R19; R19 := R19["0x458F27A9"]
-917 [-]: LOADK     R21 K124     ; R21 := "NotifyForceLoadSoloMission"
-918 [-]: LOADK     R22 K13      ; R22 := ""
-919 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
-920 [-]: RETURN    R0 1         ; return 
-921 [-]: GETUPVAL  R19 U1       ; R19 := U1
-922 [-]: GETTABLE  R19 R19 K18  ; R19 := R19["Active"]
-923 [-]: TEST      R19 0        ; if not R19 then PC := 929
-924 [-]: JMP       929          ; PC := 929
-925 [-]: GETUPVAL  R19 U1       ; R19 := U1
-926 [-]: GETUPVAL  R20 U0       ; R20 := U0
-927 [-]: GETTABLE  R20 R20 K0   ; R20 := R20["Node"]
-928 [-]: SETTABLE  R19 K125 R20 ; R19["SelectionNode"] := R20
-929 [-]: GETUPVAL  R19 U5       ; R19 := U5
-930 [-]: MOVE      R20 R1       ; R20 := R1
-931 [-]: MOVE      R21 R2       ; R21 := R2
-932 [-]: MOVE      R22 R3       ; R22 := R3
-933 [-]: MOVE      R23 R4       ; R23 := R4
-934 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
-935 [-]: RETURN    R0 1         ; return 
+726 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["mUnlocked"]
+727 [-]: TEST      R17 0        ; if not R17 then PC := 734
+728 [-]: JMP       734          ; PC := 734
+729 [-]: GETUPVAL  R17 U9       ; R17 := U9
+730 [-]: MOVE      R18 R1       ; R18 := R1
+731 [-]: CALL      R17 2 1      ; R17(R18)
+732 [-]: RETURN    R0 1         ; return 
+733 [-]: JMP       814          ; PC := 814
+734 [-]: GETGLOBAL R17 K3       ; R17 := _T
+735 [-]: GETTABLE  R17 R17 K88  ; R17 := R17["CachedInvasionInfo"]
+736 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+737 [-]: TEST      R17 0        ; if not R17 then PC := 744
+738 [-]: JMP       744          ; PC := 744
+739 [-]: GETUPVAL  R17 U10      ; R17 := U10
+740 [-]: MOVE      R18 R1       ; R18 := R1
+741 [-]: CALL      R17 2 1      ; R17(R18)
+742 [-]: RETURN    R0 1         ; return 
+743 [-]: JMP       814          ; PC := 814
+744 [-]: GETGLOBAL R17 K3       ; R17 := _T
+745 [-]: GETTABLE  R17 R17 K89  ; R17 := R17["CachedSkullNodes"]
+746 [-]: GETTABLE  R17 R17 R1   ; R17 := R17[R1]
+747 [-]: EQ        1 R17 K5     ; if R17 == nil then PC := 754
+748 [-]: JMP       754          ; PC := 754
+749 [-]: GETUPVAL  R17 U13      ; R17 := U13
+750 [-]: MOVE      R18 R1       ; R18 := R1
+751 [-]: CALL      R17 2 1      ; R17(R18)
+752 [-]: RETURN    R0 1         ; return 
+753 [-]: JMP       814          ; PC := 814
+754 [-]: GETUPVAL  R17 U0       ; R17 := U0
+755 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+756 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+757 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["nodeType"]
+758 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+759 [-]: GETTABLE  R18 R18 K74  ; R18 := R18["NT_CLAN"]
+760 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 773
+761 [-]: JMP       773          ; PC := 773
+762 [-]: GETUPVAL  R17 U6       ; R17 := U6
+763 [-]: MOVE      R18 R1       ; R18 := R1
+764 [-]: GETUPVAL  R19 U2       ; R19 := U2
+765 [-]: GETTABLE  R19 R19 K75  ; R19 := R19["BADLAND_MISSION_TAG"]
+766 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
+767 [-]: LOADK     R19 K13      ; R19 := ""
+768 [-]: LOADK     R20 K13      ; R20 := ""
+769 [-]: LOADK     R21 K13      ; R21 := ""
+770 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+771 [-]: RETURN    R0 1         ; return 
+772 [-]: JMP       814          ; PC := 814
+773 [-]: GETUPVAL  R17 U0       ; R17 := U0
+774 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+775 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+776 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["nodeType"]
+777 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+778 [-]: GETTABLE  R18 R18 K106 ; R18 := R18["NT_PVP"]
+779 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 786
+780 [-]: JMP       786          ; PC := 786
+781 [-]: MOVE      R17 R1       ; R17 := R1
+782 [-]: GETUPVAL  R18 U2       ; R18 := U2
+783 [-]: GETTABLE  R18 R18 K107 ; R18 := R18["PVP_TAG"]
+784 [-]: CONCAT    R1 R17 R18   ; R1 := R17 .. R18
+785 [-]: JMP       814          ; PC := 814
+786 [-]: GETUPVAL  R17 U0       ; R17 := U0
+787 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+788 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+789 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["nodeType"]
+790 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+791 [-]: GETTABLE  R18 R18 K102 ; R18 := R18["NT_HUB"]
+792 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 814
+793 [-]: JMP       814          ; PC := 814
+794 [-]: GETGLOBAL R17 K45      ; R17 := gMatchingService
+795 [-]: SELF      R17 R17 K108 ; R18 := R17; R17 := R17["0xA99F3BEF"]
+796 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+797 [-]: TEST      R17 0        ; if not R17 then PC := 808
+798 [-]: JMP       808          ; PC := 808
+799 [-]: GETUPVAL  R17 U6       ; R17 := U6
+800 [-]: MOVE      R18 R1       ; R18 := R1
+801 [-]: GETUPVAL  R19 U2       ; R19 := U2
+802 [-]: GETTABLE  R19 R19 K109 ; R19 := R19["HUB_TAG"]
+803 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
+804 [-]: LOADNIL   R19 R20      ; R19 := R20 := nil
+805 [-]: LOADK     R21 K110     ; R21 := 0.5
+806 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+807 [-]: RETURN    R0 1         ; return 
+808 [-]: GETUPVAL  R17 U14      ; R17 := U14
+809 [-]: GETUPVAL  R18 U0       ; R18 := U0
+810 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+811 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
+812 [-]: CALL      R17 2 1      ; R17(R18)
+813 [-]: RETURN    R0 1         ; return 
+814 [-]: GETUPVAL  R17 U0       ; R17 := U0
+815 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+816 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+817 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["mission"]
+818 [-]: GETTABLE  R17 R17 K93  ; R17 := R17["missionType"]
+819 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+820 [-]: GETTABLE  R18 R18 K94  ; R18 := R18["MT_ARENA"]
+821 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 844
+822 [-]: JMP       844          ; PC := 844
+823 [-]: GETUPVAL  R17 U0       ; R17 := U0
+824 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+825 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+826 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["mission"]
+827 [-]: GETTABLE  R17 R17 K95  ; R17 := R17["faction"]
+828 [-]: GETGLOBAL R18 K73      ; R18 := Lotus_Game
+829 [-]: GETTABLE  R18 R18 K96  ; R18 := R18["FC_CORPUS"]
+830 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 844
+831 [-]: JMP       844          ; PC := 844
+832 [-]: GETUPVAL  R17 U0       ; R17 := U0
+833 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+834 [-]: GETTABLE  R17 R17 K8   ; R17 := R17["name"]
+835 [-]: TEST      R17 0        ; if not R17 then PC := 844
+836 [-]: JMP       844          ; PC := 844
+837 [-]: GETUPVAL  R17 U11      ; R17 := U11
+838 [-]: MOVE      R18 R1       ; R18 := R1
+839 [-]: MOVE      R19 R1       ; R19 := R1
+840 [-]: MOVE      R20 R2       ; R20 := R2
+841 [-]: MOVE      R21 R4       ; R21 := R4
+842 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+843 [-]: RETURN    R0 1         ; return 
+844 [-]: GETUPVAL  R17 U0       ; R17 := U0
+845 [-]: GETTABLE  R17 R17 K0   ; R17 := R17["Node"]
+846 [-]: GETTABLE  R17 R17 K6   ; R17 := R17["radialSector"]
+847 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["mission"]
+848 [-]: GETTABLE  R17 R17 K111 ; R17 := R17["soloMode"]
+849 [-]: TEST      R17 0        ; if not R17 then PC := 912
+850 [-]: JMP       912          ; PC := 912
+851 [-]: GETGLOBAL R17 K45      ; R17 := gMatchingService
+852 [-]: SELF      R17 R17 K112 ; R18 := R17; R17 := R17["0x35DDC67D"]
+853 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+854 [-]: LT        0 K26 R17    ; if 1 >= R17 then PC := 888
+855 [-]: JMP       888          ; PC := 888
+856 [-]: GETUPVAL  R17 U15      ; R17 := U15
+857 [-]: GETTABLE  R17 R17 K113 ; R17 := R17["0x8ECD61A2"]
+858 [-]: GETGLOBAL R18 K114     ; R18 := 0xEC274B1A
+859 [-]: MOVE      R19 R1       ; R19 := R1
+860 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+861 [-]: MOVE      R19 R1       ; R19 := R1
+862 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+863 [-]: EQ        1 R17 K5     ; if R17 == nil then PC := 870
+864 [-]: JMP       870          ; PC := 870
+865 [-]: GETUPVAL  R18 U15      ; R18 := U15
+866 [-]: GETTABLE  R18 R18 K115 ; R18 := R18["0xDABD460F"]
+867 [-]: MOVE      R19 R17      ; R19 := R17
+868 [-]: CALL      R18 2 1      ; R18(R19)
+869 [-]: JMP       911          ; PC := 911
+870 [-]: GETGLOBAL R18 K9       ; R18 := 0x400E7765
+871 [-]: GETUPVAL  R19 U16      ; R19 := U16
+872 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+873 [-]: TEST      R18 0        ; if not R18 then PC := 911
+874 [-]: JMP       911          ; PC := 911
+875 [-]: GETUPVAL  R18 U17      ; R18 := U17
+876 [-]: GETUPVAL  R19 U0       ; R19 := U0
+877 [-]: GETTABLE  R19 R19 K0   ; R19 := R19["Node"]
+878 [-]: SETTABLE  R18 K0 R19   ; R18["Node"] := R19
+879 [-]: GETUPVAL  R18 U17      ; R18 := U17
+880 [-]: SETTABLE  R18 K116 R1  ; R18["SectorName"] := R1
+881 [-]: GETUPVAL  R18 U3       ; R18 := U3
+882 [-]: GETTABLE  R18 R18 K117 ; R18 := R18["0x1C988750"]
+883 [-]: LOADK     R19 K118     ; R19 := "/Lotus/Language/Menu/SoloModeRequired"
+884 [-]: LOADK     R20 K119     ; R20 := "ConfirmSoloMission"
+885 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
+886 [-]: MOVE      R18 R16      ; R18 := R16
+887 [-]: JMP       911          ; PC := 911
+888 [-]: GETUPVAL  R18 U0       ; R18 := U0
+889 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+890 [-]: TEST      R18 0        ; if not R18 then PC := 911
+891 [-]: JMP       911          ; PC := 911
+892 [-]: GETUPVAL  R18 U0       ; R18 := U0
+893 [-]: GETTABLE  R18 R18 K0   ; R18 := R18["Node"]
+894 [-]: GETTABLE  R18 R18 K6   ; R18 := R18["radialSector"]
+895 [-]: TEST      R18 0        ; if not R18 then PC := 911
+896 [-]: JMP       911          ; PC := 911
+897 [-]: GETUPVAL  R18 U6       ; R18 := U6
+898 [-]: MOVE      R19 R1       ; R19 := R1
+899 [-]: MOVE      R20 R2       ; R20 := R2
+900 [-]: MOVE      R21 R3       ; R21 := R3
+901 [-]: MOVE      R22 R4       ; R22 := R4
+902 [-]: CALL      R18 5 2      ; R18 := R18(R19,R20,R21,R22)
+903 [-]: TEST      R18 0        ; if not R18 then PC := 911
+904 [-]: JMP       911          ; PC := 911
+905 [-]: GETGLOBAL R18 K3       ; R18 := _T
+906 [-]: GETTABLE  R18 R18 K10  ; R18 := R18["SquadOverlay"]
+907 [-]: SELF      R18 R18 K11  ; R19 := R18; R18 := R18["0x458F27A9"]
+908 [-]: LOADK     R20 K120     ; R20 := "NotifyForceLoadSoloMission"
+909 [-]: LOADK     R21 K13      ; R21 := ""
+910 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
+911 [-]: RETURN    R0 1         ; return 
+912 [-]: GETUPVAL  R18 U1       ; R18 := U1
+913 [-]: GETTABLE  R18 R18 K18  ; R18 := R18["Active"]
+914 [-]: TEST      R18 0        ; if not R18 then PC := 920
+915 [-]: JMP       920          ; PC := 920
+916 [-]: GETUPVAL  R18 U1       ; R18 := U1
+917 [-]: GETUPVAL  R19 U0       ; R19 := U0
+918 [-]: GETTABLE  R19 R19 K0   ; R19 := R19["Node"]
+919 [-]: SETTABLE  R18 K121 R19 ; R18["SelectionNode"] := R19
+920 [-]: GETUPVAL  R18 U6       ; R18 := U6
+921 [-]: MOVE      R19 R1       ; R19 := R1
+922 [-]: MOVE      R20 R2       ; R20 := R2
+923 [-]: MOVE      R21 R3       ; R21 := R3
+924 [-]: MOVE      R22 R4       ; R22 := R4
+925 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
+926 [-]: RETURN    R0 1         ; return 
 
 
-; Function #107:
+; Function #108:
 ;
 ; Name:            
-; Defined at line: 4410
+; Defined at line: 4449
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -15340,10 +15443,10 @@ code size: 4
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #108:
+; Function #109:
 ;
 ; Name:            
-; Defined at line: 4414
+; Defined at line: 4453
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -15359,11 +15462,11 @@ code size: 4
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #109:
+; Function #110:
 ;
 ; Name:            
-; Defined at line: 4418
-; #Upvalues:       12
+; Defined at line: 4457
+; #Upvalues:       16
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  8
@@ -15378,146 +15481,167 @@ code size: 4
   8 [-]: GETGLOBAL R2 K2        ; R2 := _T
   9 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["SquadOverlay"]
  10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 11 [-]: TEST      R1 1         ; if R1 then PC := 41
- 12 [-]: JMP       41           ; PC := 41
+ 11 [-]: TEST      R1 1         ; if R1 then PC := 46
+ 12 [-]: JMP       46           ; PC := 46
  13 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
  14 [-]: GETGLOBAL R2 K6        ; R2 := gMatchingService
  15 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xD5E03646"]
  16 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
  17 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
- 18 [-]: TEST      R1 0         ; if not R1 then PC := 41
- 19 [-]: JMP       41           ; PC := 41
+ 18 [-]: TEST      R1 0         ; if not R1 then PC := 46
+ 19 [-]: JMP       46           ; PC := 46
  20 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
  21 [-]: GETGLOBAL R2 K8        ; R2 := gClient
  22 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 23 [-]: TEST      R1 1         ; if R1 then PC := 41
- 24 [-]: JMP       41           ; PC := 41
+ 23 [-]: TEST      R1 1         ; if R1 then PC := 46
+ 24 [-]: JMP       46           ; PC := 46
  25 [-]: GETGLOBAL R1 K8        ; R1 := gClient
  26 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1["0xC6E8F98F"]
  27 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 28 [-]: TEST      R1 1         ; if R1 then PC := 41
- 29 [-]: JMP       41           ; PC := 41
- 30 [-]: TEST      R0 1         ; if R0 then PC := 41
- 31 [-]: JMP       41           ; PC := 41
- 32 [-]: GETGLOBAL R1 K10       ; R1 := 0x93B1256B
- 33 [-]: LOADK     R2 K11       ; R2 := "Hosting lobby from MapRedux.lua (InitializeMore)"
- 34 [-]: CALL      R1 2 1       ; R1(R2)
- 35 [-]: GETGLOBAL R1 K2        ; R1 := _T
- 36 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["SquadOverlay"]
- 37 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0x458F27A9"]
- 38 [-]: LOADK     R3 K13       ; R3 := "HostLobby"
- 39 [-]: LOADK     R4 K14       ; R4 := ""
- 40 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 41 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
- 42 [-]: GETGLOBAL R2 K15       ; R2 := worldStateMovie
- 43 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 44 [-]: TEST      R1 1         ; if R1 then PC := 77
- 45 [-]: JMP       77           ; PC := 77
- 46 [-]: TEST      R0 1         ; if R0 then PC := 77
- 47 [-]: JMP       77           ; PC := 77
- 48 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 49 [-]: GETGLOBAL R2 K17       ; R2 := gFlashMgr
- 50 [-]: SELF      R2 R2 K18    ; R3 := R2; R2 := R2["0x616DD092"]
- 51 [-]: GETGLOBAL R4 K15       ; R4 := worldStateMovie
- 52 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 53 [-]: SETTABLE  R1 K16 R2    ; R1["Movie"] := R2
- 54 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
- 55 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 56 [-]: GETTABLE  R2 R2 K16    ; R2 := R2["Movie"]
- 57 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 58 [-]: TEST      R1 0         ; if not R1 then PC := 66
- 59 [-]: JMP       66           ; PC := 66
- 60 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 61 [-]: GETGLOBAL R2 K17       ; R2 := gFlashMgr
- 62 [-]: SELF      R2 R2 K19    ; R3 := R2; R2 := R2["0x24FF386"]
- 63 [-]: GETGLOBAL R4 K15       ; R4 := worldStateMovie
- 64 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 65 [-]: SETTABLE  R1 K16 R2    ; R1["Movie"] := R2
- 66 [-]: GETGLOBAL R1 K2        ; R1 := _T
- 67 [-]: GETTABLE  R1 R1 K20    ; R1 := R1["MAP_HideExtraUI"]
- 68 [-]: TEST      R1 0         ; if not R1 then PC := 77
- 69 [-]: JMP       77           ; PC := 77
- 70 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 71 [-]: GETTABLE  R1 R1 K16    ; R1 := R1["Movie"]
- 72 [-]: SELF      R1 R1 K21    ; R2 := R1; R1 := R1["0x1C19D966"]
- 73 [-]: LOADK     R3 K22       ; R3 := "_root"
- 74 [-]: LOADK     R4 K23       ; R4 := "_visible"
- 75 [-]: MOVE      R5 R0        ; R5 := R0
- 76 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
- 77 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 78 [-]: GETTABLE  R1 R1 K24    ; R1 := R1["0x5B8EB241"]
- 79 [-]: CALL      R1 1 2       ; R1 := R1()
- 80 [-]: TEST      R1 1         ; if R1 then PC := 95
- 81 [-]: JMP       95           ; PC := 95
- 82 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
- 83 [-]: GETGLOBAL R2 K25       ; R2 := gGameData
- 84 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 85 [-]: TEST      R1 1         ; if R1 then PC := 93
- 86 [-]: JMP       93           ; PC := 93
- 87 [-]: GETGLOBAL R1 K25       ; R1 := gGameData
- 88 [-]: SELF      R1 R1 K26    ; R2 := R1; R1 := R1["0x17358D95"]
+ 28 [-]: TEST      R1 1         ; if R1 then PC := 46
+ 29 [-]: JMP       46           ; PC := 46
+ 30 [-]: TEST      R0 1         ; if R0 then PC := 46
+ 31 [-]: JMP       46           ; PC := 46
+ 32 [-]: GETGLOBAL R1 K6        ; R1 := gMatchingService
+ 33 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1["0xD01F29AC"]
+ 34 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 35 [-]: EQ        0 R1 K11     ; if R1 ~= 0 then PC := 46
+ 36 [-]: JMP       46           ; PC := 46
+ 37 [-]: GETGLOBAL R1 K12       ; R1 := 0x93B1256B
+ 38 [-]: LOADK     R2 K13       ; R2 := "Hosting lobby from MapRedux.lua (InitializeMore)"
+ 39 [-]: CALL      R1 2 1       ; R1(R2)
+ 40 [-]: GETGLOBAL R1 K2        ; R1 := _T
+ 41 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["SquadOverlay"]
+ 42 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1["0x458F27A9"]
+ 43 [-]: LOADK     R3 K15       ; R3 := "HostLobby"
+ 44 [-]: LOADK     R4 K16       ; R4 := ""
+ 45 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 46 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
+ 47 [-]: GETGLOBAL R2 K17       ; R2 := worldStateMovie
+ 48 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 49 [-]: TEST      R1 1         ; if R1 then PC := 82
+ 50 [-]: JMP       82           ; PC := 82
+ 51 [-]: TEST      R0 1         ; if R0 then PC := 82
+ 52 [-]: JMP       82           ; PC := 82
+ 53 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 54 [-]: GETGLOBAL R2 K19       ; R2 := gFlashMgr
+ 55 [-]: SELF      R2 R2 K20    ; R3 := R2; R2 := R2["0x616DD092"]
+ 56 [-]: GETGLOBAL R4 K17       ; R4 := worldStateMovie
+ 57 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 58 [-]: SETTABLE  R1 K18 R2    ; R1["Movie"] := R2
+ 59 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
+ 60 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 61 [-]: GETTABLE  R2 R2 K18    ; R2 := R2["Movie"]
+ 62 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 63 [-]: TEST      R1 0         ; if not R1 then PC := 71
+ 64 [-]: JMP       71           ; PC := 71
+ 65 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 66 [-]: GETGLOBAL R2 K19       ; R2 := gFlashMgr
+ 67 [-]: SELF      R2 R2 K21    ; R3 := R2; R2 := R2["0x24FF386"]
+ 68 [-]: GETGLOBAL R4 K17       ; R4 := worldStateMovie
+ 69 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 70 [-]: SETTABLE  R1 K18 R2    ; R1["Movie"] := R2
+ 71 [-]: GETGLOBAL R1 K2        ; R1 := _T
+ 72 [-]: GETTABLE  R1 R1 K22    ; R1 := R1["MAP_HideExtraUI"]
+ 73 [-]: TEST      R1 0         ; if not R1 then PC := 82
+ 74 [-]: JMP       82           ; PC := 82
+ 75 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 76 [-]: GETTABLE  R1 R1 K18    ; R1 := R1["Movie"]
+ 77 [-]: SELF      R1 R1 K23    ; R2 := R1; R1 := R1["0x1C19D966"]
+ 78 [-]: LOADK     R3 K24       ; R3 := "_root"
+ 79 [-]: LOADK     R4 K25       ; R4 := "_visible"
+ 80 [-]: MOVE      R5 R0        ; R5 := R0
+ 81 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
+ 82 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 83 [-]: GETTABLE  R1 R1 K26    ; R1 := R1["0x5B8EB241"]
+ 84 [-]: CALL      R1 1 2       ; R1 := R1()
+ 85 [-]: TEST      R1 1         ; if R1 then PC := 100
+ 86 [-]: JMP       100          ; PC := 100
+ 87 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
+ 88 [-]: GETGLOBAL R2 K27       ; R2 := gGameData
  89 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 90 [-]: SELF      R1 R1 K27    ; R2 := R1; R1 := R1["0xB3F0027"]
- 91 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 92 [-]: JMP       95           ; PC := 95
- 93 [-]: MOVE      R1 R0        ; R1 := R0
- 94 [-]: MOVE      R1 R1        ; R1 := R1
- 95 [-]: TEST      R1 0         ; if not R1 then PC := 114
- 96 [-]: JMP       114          ; PC := 114
- 97 [-]: GETGLOBAL R2 K28       ; R2 := gPlayerProfileMgr
- 98 [-]: SELF      R2 R2 K29    ; R3 := R2; R2 := R2["0x21EF7B1A"]
- 99 [-]: LOADK     R4 K30       ; R4 := 0
-100 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-101 [-]: SELF      R3 R2 K31    ; R4 := R2; R3 := R2["0x3EEB612E"]
-102 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-103 [-]: SELF      R4 R3 K32    ; R5 := R3; R4 := R3["0xDEFFE28B"]
-104 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-105 [-]: TESTSET   R1 R4 1      ; if R4 then PC := 109 else R1 := R4
-106 [-]: JMP       109          ; PC := 109
-107 [-]: GETUPVAL  R4 U2        ; R4 := U2
-108 [-]: GETTABLE  R1 R4 K33    ; R1 := R4["Active"]
-109 [-]: GETGLOBAL R4 K34       ; R4 := mMovie
-110 [-]: SELF      R4 R4 K35    ; R5 := R4; R4 := R4["0x5FF274BB"]
-111 [-]: GETGLOBAL R6 K36       ; R6 := episodeStatusMovie
-112 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-113 [-]: MOVE      R4 R3        ; R4 := R3
-114 [-]: GETGLOBAL R4 K2        ; R4 := _T
-115 [-]: MOVE      R5 R1        ; R5 := R1
-116 [-]: SETTABLE  R4 K37 R5    ; R4["ResourceDroneVisible"] := R5
-117 [-]: GETGLOBAL R4 K34       ; R4 := mMovie
-118 [-]: SELF      R4 R4 K35    ; R5 := R4; R4 := R4["0x5FF274BB"]
-119 [-]: GETGLOBAL R6 K38       ; R6 := resourceDroneMovie
-120 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
-121 [-]: MOVE      R4 R4        ; R4 := R4
-122 [-]: GETUPVAL  R4 U4        ; R4 := U4
-123 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x458F27A9"]
-124 [-]: LOADK     R6 K39       ; R6 := "OnRegionZoomOut"
-125 [-]: LOADK     R7 K14       ; R7 := ""
-126 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
-127 [-]: GETGLOBAL R4 K17       ; R4 := gFlashMgr
-128 [-]: SELF      R4 R4 K40    ; R5 := R4; R4 := R4["0xC4E70543"]
-129 [-]: CALL      R4 2 1       ; R4(R5)
-130 [-]: GETUPVAL  R4 U5        ; R4 := U5
-131 [-]: CALL      R4 1 1       ; R4()
-132 [-]: GETUPVAL  R4 U6        ; R4 := U6
-133 [-]: CALL      R4 1 1       ; R4()
-134 [-]: GETUPVAL  R4 U7        ; R4 := U7
-135 [-]: CALL      R4 1 1       ; R4()
-136 [-]: GETUPVAL  R4 U8        ; R4 := U8
-137 [-]: CALL      R4 1 1       ; R4()
-138 [-]: GETUPVAL  R4 U9        ; R4 := U9
-139 [-]: CALL      R4 1 1       ; R4()
-140 [-]: GETUPVAL  R4 U10       ; R4 := U10
-141 [-]: CALL      R4 1 1       ; R4()
-142 [-]: GETUPVAL  R4 U11       ; R4 := U11
-143 [-]: CALL      R4 1 1       ; R4()
-144 [-]: RETURN    R0 1         ; return 
+ 90 [-]: TEST      R1 1         ; if R1 then PC := 98
+ 91 [-]: JMP       98           ; PC := 98
+ 92 [-]: GETGLOBAL R1 K27       ; R1 := gGameData
+ 93 [-]: SELF      R1 R1 K28    ; R2 := R1; R1 := R1["0x17358D95"]
+ 94 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 95 [-]: SELF      R1 R1 K29    ; R2 := R1; R1 := R1["0xB3F0027"]
+ 96 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 97 [-]: JMP       100          ; PC := 100
+ 98 [-]: MOVE      R1 R0        ; R1 := R0
+ 99 [-]: MOVE      R1 R1        ; R1 := R1
+100 [-]: TEST      R1 0         ; if not R1 then PC := 119
+101 [-]: JMP       119          ; PC := 119
+102 [-]: GETGLOBAL R2 K30       ; R2 := gPlayerProfileMgr
+103 [-]: SELF      R2 R2 K31    ; R3 := R2; R2 := R2["0x21EF7B1A"]
+104 [-]: LOADK     R4 K11       ; R4 := 0
+105 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+106 [-]: SELF      R3 R2 K32    ; R4 := R2; R3 := R2["0x3EEB612E"]
+107 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+108 [-]: SELF      R4 R3 K33    ; R5 := R3; R4 := R3["0xDEFFE28B"]
+109 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+110 [-]: TESTSET   R1 R4 1      ; if R4 then PC := 114 else R1 := R4
+111 [-]: JMP       114          ; PC := 114
+112 [-]: GETUPVAL  R4 U2        ; R4 := U2
+113 [-]: GETTABLE  R1 R4 K34    ; R1 := R4["Active"]
+114 [-]: GETGLOBAL R4 K35       ; R4 := mMovie
+115 [-]: SELF      R4 R4 K36    ; R5 := R4; R4 := R4["0x5FF274BB"]
+116 [-]: GETGLOBAL R6 K37       ; R6 := episodeStatusMovie
+117 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+118 [-]: MOVE      R4 R3        ; R4 := R3
+119 [-]: GETGLOBAL R4 K2        ; R4 := _T
+120 [-]: MOVE      R5 R1        ; R5 := R1
+121 [-]: SETTABLE  R4 K38 R5    ; R4["ResourceDroneVisible"] := R5
+122 [-]: GETGLOBAL R4 K35       ; R4 := mMovie
+123 [-]: SELF      R4 R4 K36    ; R5 := R4; R4 := R4["0x5FF274BB"]
+124 [-]: GETGLOBAL R6 K39       ; R6 := resourceDroneMovie
+125 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+126 [-]: MOVE      R4 R4        ; R4 := R4
+127 [-]: GETUPVAL  R4 U4        ; R4 := U4
+128 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4["0x458F27A9"]
+129 [-]: LOADK     R6 K40       ; R6 := "OnRegionZoomOut"
+130 [-]: LOADK     R7 K16       ; R7 := ""
+131 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+132 [-]: GETUPVAL  R4 U1        ; R4 := U1
+133 [-]: GETTABLE  R4 R4 K41    ; R4 := R4["0xBB3AACF2"]
+134 [-]: CALL      R4 1 2       ; R4 := R4()
+135 [-]: MOVE      R4 R5        ; R4 := R5
+136 [-]: GETUPVAL  R4 U5        ; R4 := U5
+137 [-]: SELF      R4 R4 K42    ; R5 := R4; R4 := R4["0x871D2E8C"]
+138 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+139 [-]: MOVE      R4 R6        ; R4 := R6
+140 [-]: GETUPVAL  R4 U5        ; R4 := U5
+141 [-]: SELF      R4 R4 K43    ; R5 := R4; R4 := R4["0x5B0E7439"]
+142 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+143 [-]: MOVE      R4 R7        ; R4 := R7
+144 [-]: GETUPVAL  R4 U5        ; R4 := U5
+145 [-]: SELF      R4 R4 K44    ; R5 := R4; R4 := R4["0x7E6E6726"]
+146 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+147 [-]: MOVE      R4 R8        ; R4 := R8
+148 [-]: GETGLOBAL R4 K19       ; R4 := gFlashMgr
+149 [-]: SELF      R4 R4 K45    ; R5 := R4; R4 := R4["0xC4E70543"]
+150 [-]: CALL      R4 2 1       ; R4(R5)
+151 [-]: GETUPVAL  R4 U9        ; R4 := U9
+152 [-]: CALL      R4 1 1       ; R4()
+153 [-]: GETUPVAL  R4 U10       ; R4 := U10
+154 [-]: CALL      R4 1 1       ; R4()
+155 [-]: GETUPVAL  R4 U11       ; R4 := U11
+156 [-]: CALL      R4 1 1       ; R4()
+157 [-]: GETUPVAL  R4 U12       ; R4 := U12
+158 [-]: CALL      R4 1 1       ; R4()
+159 [-]: GETUPVAL  R4 U13       ; R4 := U13
+160 [-]: CALL      R4 1 1       ; R4()
+161 [-]: GETUPVAL  R4 U14       ; R4 := U14
+162 [-]: CALL      R4 1 1       ; R4()
+163 [-]: GETUPVAL  R4 U15       ; R4 := U15
+164 [-]: CALL      R4 1 1       ; R4()
+165 [-]: RETURN    R0 1         ; return 
 
 
-; Function #110:
+; Function #111:
 ;
 ; Name:            
-; Defined at line: 4463
+; Defined at line: 4508
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -15528,10 +15652,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #111:
+; Function #112:
 ;
 ; Name:            
-; Defined at line: 4467
+; Defined at line: 4512
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -15559,10 +15683,10 @@ code size: 4
  20 [-]: RETURN    R0 1         ; return 
 
 
-; Function #112:
+; Function #113:
 ;
 ; Name:            
-; Defined at line: 4481
+; Defined at line: 4526
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -15604,14 +15728,14 @@ code size: 4
  34 [-]: RETURN    R0 1         ; return 
 
 
-; Function #113:
+; Function #114:
 ;
 ; Name:            
-; Defined at line: 4491
+; Defined at line: 4536
 ; #Upvalues:       15
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  40
+; Max Stack Size:  39
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x221C9700
   2 [-]: CALL      R0 1 2       ; R0 := R0()
@@ -15788,19 +15912,19 @@ code size: 4
 173 [-]: SETTABLE  R21 K4 K5    ; R21["Region"] := nil
 174 [-]: GETUPVAL  R21 U0       ; R21 := U0
 175 [-]: GETTABLE  R21 R21 K4   ; R21 := R21["Region"]
-176 [-]: EQ        1 R2 R21     ; if R2 == R21 then PC := 333
-177 [-]: JMP       333          ; PC := 333
+176 [-]: EQ        1 R2 R21     ; if R2 == R21 then PC := 331
+177 [-]: JMP       331          ; PC := 331
 178 [-]: GETUPVAL  R21 U0       ; R21 := U0
 179 [-]: GETTABLE  R21 R21 K4   ; R21 := R21["Region"]
-180 [-]: EQ        1 R21 K5     ; if R21 == nil then PC := 275
-181 [-]: JMP       275          ; PC := 275
+180 [-]: EQ        1 R21 K5     ; if R21 == nil then PC := 274
+181 [-]: JMP       274          ; PC := 274
 182 [-]: GETGLOBAL R21 K8       ; R21 := 0x400E7765
 183 [-]: GETUPVAL  R22 U0       ; R22 := U0
 184 [-]: GETTABLE  R22 R22 K4   ; R22 := R22["Region"]
 185 [-]: GETTABLE  R22 R22 K29  ; R22 := R22["instance"]
 186 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-187 [-]: TEST      R21 1        ; if R21 then PC := 275
-188 [-]: JMP       275          ; PC := 275
+187 [-]: TEST      R21 1        ; if R21 then PC := 274
+188 [-]: JMP       274          ; PC := 274
 189 [-]: GETUPVAL  R21 U11      ; R21 := U11
 190 [-]: TEST      R21 1        ; if R21 then PC := 196
 191 [-]: JMP       196          ; PC := 196
@@ -15809,150 +15933,148 @@ code size: 4
 194 [-]: GETGLOBAL R22 K31      ; R22 := rollOverRegionSound
 195 [-]: CALL      R21 2 1      ; R21(R22)
 196 [-]: GETUPVAL  R21 U4       ; R21 := U4
-197 [-]: GETTABLE  R21 R21 R8   ; R21 := R21[R8]
-198 [-]: GETUPVAL  R22 U13      ; R22 := U13
-199 [-]: GETTABLE  R22 R22 R8   ; R22 := R22[R8]
-200 [-]: EQ        0 R22 K5     ; if R22 ~= nil then PC := 205
+197 [-]: GETTABLE  R9 R21 R8    ; R9 := R21[R8]
+198 [-]: GETUPVAL  R21 U13      ; R21 := U13
+199 [-]: GETTABLE  R21 R21 R8   ; R21 := R21[R8]
+200 [-]: EQ        0 R21 K5     ; if R21 ~= nil then PC := 205
 201 [-]: JMP       205          ; PC := 205
-202 [-]: GETUPVAL  R22 U13      ; R22 := U13
-203 [-]: NEWTABLE  R23 0 0      ; R23 := {}
-204 [-]: SETTABLE  R22 R8 R23   ; R22[R8] := R23
-205 [-]: EQ        1 R21 K5     ; if R21 == nil then PC := 274
+202 [-]: GETUPVAL  R21 U13      ; R21 := U13
+203 [-]: NEWTABLE  R22 0 0      ; R22 := {}
+204 [-]: SETTABLE  R21 R8 R22   ; R21[R8] := R22
+205 [-]: EQ        1 R9 K5      ; if R9 == nil then PC := 274
 206 [-]: JMP       274          ; PC := 274
-207 [-]: GETUPVAL  R22 U13      ; R22 := U13
-208 [-]: GETTABLE  R22 R22 R8   ; R22 := R22[R8]
-209 [-]: GETGLOBAL R23 K8       ; R23 := 0x400E7765
-210 [-]: GETTABLE  R24 R22 K15  ; R24 := R22[1]
-211 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-212 [-]: TEST      R23 0        ; if not R23 then PC := 226
+207 [-]: GETUPVAL  R21 U13      ; R21 := U13
+208 [-]: GETTABLE  R21 R21 R8   ; R21 := R21[R8]
+209 [-]: GETGLOBAL R22 K8       ; R22 := 0x400E7765
+210 [-]: GETTABLE  R23 R21 K15  ; R23 := R21[1]
+211 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+212 [-]: TEST      R22 0        ; if not R22 then PC := 226
 213 [-]: JMP       226          ; PC := 226
-214 [-]: GETGLOBAL R23 K9       ; R23 := gBackgroundRegion
-215 [-]: SELF      R23 R23 K32  ; R24 := R23; R23 := R23["0xBDD34CC6"]
-216 [-]: GETGLOBAL R25 K33      ; R25 := hoverRing
-217 [-]: GETUPVAL  R26 U0       ; R26 := U0
-218 [-]: GETTABLE  R26 R26 K4   ; R26 := R26["Region"]
-219 [-]: GETTABLE  R26 R26 K29  ; R26 := R26["instance"]
-220 [-]: SELF      R26 R26 K34  ; R27 := R26; R26 := R26["0x6DA72501"]
-221 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-222 [-]: GETUPVAL  R27 U9       ; R27 := U9
-223 [-]: GETTABLE  R27 R27 K35  ; R27 := R27["RING_ROTATION"]
-224 [-]: CALL      R23 5 2      ; R23 := R23(R24,R25,R26,R27)
-225 [-]: SETTABLE  R22 K15 R23  ; R22[1] := R23
-226 [-]: GETGLOBAL R23 K8       ; R23 := 0x400E7765
-227 [-]: GETTABLE  R24 R22 K36  ; R24 := R22[2]
-228 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-229 [-]: TEST      R23 0        ; if not R23 then PC := 252
+214 [-]: GETGLOBAL R22 K9       ; R22 := gBackgroundRegion
+215 [-]: SELF      R22 R22 K32  ; R23 := R22; R22 := R22["0xBDD34CC6"]
+216 [-]: GETGLOBAL R24 K33      ; R24 := hoverRing
+217 [-]: GETUPVAL  R25 U0       ; R25 := U0
+218 [-]: GETTABLE  R25 R25 K4   ; R25 := R25["Region"]
+219 [-]: GETTABLE  R25 R25 K29  ; R25 := R25["instance"]
+220 [-]: SELF      R25 R25 K34  ; R26 := R25; R25 := R25["0x6DA72501"]
+221 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+222 [-]: GETUPVAL  R26 U9       ; R26 := U9
+223 [-]: GETTABLE  R26 R26 K35  ; R26 := R26["RING_ROTATION"]
+224 [-]: CALL      R22 5 2      ; R22 := R22(R23,R24,R25,R26)
+225 [-]: SETTABLE  R21 K15 R22  ; R21[1] := R22
+226 [-]: GETGLOBAL R22 K8       ; R22 := 0x400E7765
+227 [-]: GETTABLE  R23 R21 K36  ; R23 := R21[2]
+228 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+229 [-]: TEST      R22 0        ; if not R22 then PC := 252
 230 [-]: JMP       252          ; PC := 252
-231 [-]: GETGLOBAL R23 K9       ; R23 := gBackgroundRegion
-232 [-]: SELF      R23 R23 K32  ; R24 := R23; R23 := R23["0xBDD34CC6"]
-233 [-]: GETGLOBAL R25 K33      ; R25 := hoverRing
-234 [-]: GETUPVAL  R26 U0       ; R26 := U0
-235 [-]: GETTABLE  R26 R26 K4   ; R26 := R26["Region"]
-236 [-]: GETTABLE  R26 R26 K29  ; R26 := R26["instance"]
-237 [-]: SELF      R26 R26 K34  ; R27 := R26; R26 := R26["0x6DA72501"]
-238 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-239 [-]: GETUPVAL  R27 U9       ; R27 := U9
-240 [-]: GETTABLE  R27 R27 K35  ; R27 := R27["RING_ROTATION"]
-241 [-]: CALL      R23 5 2      ; R23 := R23(R24,R25,R26,R27)
-242 [-]: SETTABLE  R22 K36 R23  ; R22[2] := R23
-243 [-]: GETTABLE  R23 R22 K36  ; R23 := R22[2]
-244 [-]: SELF      R23 R23 K37  ; R24 := R23; R23 := R23["0xA20F64C0"]
-245 [-]: GETGLOBAL R25 K38      ; R25 := 0xB5A59043
-246 [-]: LOADK     R26 K39      ; R26 := 255
-247 [-]: LOADK     R27 K39      ; R27 := 255
-248 [-]: LOADK     R28 K39      ; R28 := 255
-249 [-]: LOADK     R29 K40      ; R29 := 150
-250 [-]: CALL      R25 5 0      ; R25,... := R25(R26,R27,R28,R29)
-251 [-]: CALL      R23 0 1      ; R23(R24,...)
-252 [-]: GETTABLE  R23 R22 K15  ; R23 := R22[1]
-253 [-]: GETTABLE  R24 R22 K36  ; R24 := R22[2]
-254 [-]: CLOSURE   R25 0        ; R25 := closure(Function #113.1)
-255 [-]: MOVE      R0 R23       ; R0 := R23
-256 [-]: MOVE      R0 R21       ; R0 := R21
-257 [-]: MOVE      R0 R24       ; R0 := R24
-258 [-]: GETGLOBAL R26 K41      ; R26 := 0x52E17A90
-259 [-]: GETGLOBAL R27 K1       ; R27 := mMovie
-260 [-]: GETUPVAL  R28 U14      ; R28 := U14
-261 [-]: GETTABLE  R28 R28 R8   ; R28 := R28[R8]
-262 [-]: GETTABLE  R28 R28 K42  ; R28 := R28["clipName"]
-263 [-]: GETGLOBAL R29 K43      ; R29 := UISys
-264 [-]: GETTABLE  R29 R29 K44  ; R29 := R29["FlashInstance_EASE_OUT"]
-265 [-]: NEWTABLE  R30 1 0      ; R30 := {}
-266 [-]: MOVE      R31 R25      ; R31 := R25
-267 [-]: SETLIST   R30 1 1      ; R30[(1-1)*FPF+i] := R(30+i), 1 <= i <= 1
-268 [-]: NEWTABLE  R31 1 0      ; R31 := {}
-269 [-]: LOADK     R32 K15      ; R32 := 1
-270 [-]: SETLIST   R31 1 1      ; R31[(1-1)*FPF+i] := R(31+i), 1 <= i <= 1
-271 [-]: LOADK     R32 K45      ; R32 := 0.25
-272 [-]: CALL      R26 7 1      ; R26(R27,R28,R29,R30,R31,R32)
-273 [-]: CLOSE     R22          ; SAVE R22,...
-274 [-]: CLOSE     R21          ; SAVE R21,...
-275 [-]: EQ        1 R2 K5      ; if R2 == nil then PC := 333
-276 [-]: JMP       333          ; PC := 333
-277 [-]: GETGLOBAL R21 K8       ; R21 := 0x400E7765
-278 [-]: GETTABLE  R22 R2 K29   ; R22 := R2["instance"]
-279 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-280 [-]: TEST      R21 1        ; if R21 then PC := 333
-281 [-]: JMP       333          ; PC := 333
-282 [-]: LOADK     R21 K7       ; R21 := 0
-283 [-]: LOADK     R22 K15      ; R22 := 1
-284 [-]: GETUPVAL  R23 U1       ; R23 := U1
-285 [-]: LEN       R23 R23      ; R23 := # R23
-286 [-]: LOADK     R24 K15      ; R24 := 1
-287 [-]: FORPREP   R22 294      ; R22 -= R24; PC := 294
-288 [-]: GETUPVAL  R26 U1       ; R26 := U1
-289 [-]: GETTABLE  R26 R26 R25  ; R26 := R26[R25]
-290 [-]: EQ        0 R26 R2     ; if R26 ~= R2 then PC := 294
-291 [-]: JMP       294          ; PC := 294
-292 [-]: MOVE      R21 R25      ; R21 := R25
-293 [-]: JMP       295          ; PC := 295
-294 [-]: FORLOOP   R22 288      ; R22 += R24; if R22 <= R23 then begin PC := 288; R25 := R22 end
-295 [-]: GETUPVAL  R26 U4       ; R26 := U4
-296 [-]: GETTABLE  R26 R26 R21  ; R26 := R26[R21]
-297 [-]: EQ        1 R26 K5     ; if R26 == nil then PC := 332
-298 [-]: JMP       332          ; PC := 332
-299 [-]: GETGLOBAL R27 K8       ; R27 := 0x400E7765
-300 [-]: GETTABLE  R28 R2 K29   ; R28 := R2["instance"]
-301 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-302 [-]: TEST      R27 1        ; if R27 then PC := 332
-303 [-]: JMP       332          ; PC := 332
-304 [-]: GETUPVAL  R27 U13      ; R27 := U13
-305 [-]: GETTABLE  R27 R27 R21  ; R27 := R27[R21]
-306 [-]: GETTABLE  R28 R27 K15  ; R28 := R27[1]
-307 [-]: GETTABLE  R29 R27 K36  ; R29 := R27[2]
-308 [-]: CLOSURE   R30 1        ; R30 := closure(Function #113.2)
-309 [-]: MOVE      R0 R28       ; R0 := R28
-310 [-]: MOVE      R0 R26       ; R0 := R26
-311 [-]: MOVE      R0 R29       ; R0 := R29
-312 [-]: GETGLOBAL R31 K41      ; R31 := 0x52E17A90
-313 [-]: GETGLOBAL R32 K1       ; R32 := mMovie
-314 [-]: GETUPVAL  R33 U14      ; R33 := U14
-315 [-]: GETTABLE  R33 R33 R21  ; R33 := R33[R21]
-316 [-]: GETTABLE  R33 R33 K42  ; R33 := R33["clipName"]
-317 [-]: GETGLOBAL R34 K43      ; R34 := UISys
-318 [-]: GETTABLE  R34 R34 K46  ; R34 := R34["FlashInstance_EASE_IN"]
-319 [-]: NEWTABLE  R35 1 0      ; R35 := {}
-320 [-]: MOVE      R36 R30      ; R36 := R30
-321 [-]: SETLIST   R35 1 1      ; R35[(1-1)*FPF+i] := R(35+i), 1 <= i <= 1
-322 [-]: NEWTABLE  R36 1 0      ; R36 := {}
-323 [-]: LOADK     R37 K15      ; R37 := 1
-324 [-]: SETLIST   R36 1 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 1
-325 [-]: LOADK     R37 K47      ; R37 := 0.15000000596046
-326 [-]: LOADK     R38 K7       ; R38 := 0
-327 [-]: CLOSURE   R39 2        ; R39 := closure(Function #113.3)
+231 [-]: GETGLOBAL R22 K9       ; R22 := gBackgroundRegion
+232 [-]: SELF      R22 R22 K32  ; R23 := R22; R22 := R22["0xBDD34CC6"]
+233 [-]: GETGLOBAL R24 K33      ; R24 := hoverRing
+234 [-]: GETUPVAL  R25 U0       ; R25 := U0
+235 [-]: GETTABLE  R25 R25 K4   ; R25 := R25["Region"]
+236 [-]: GETTABLE  R25 R25 K29  ; R25 := R25["instance"]
+237 [-]: SELF      R25 R25 K34  ; R26 := R25; R25 := R25["0x6DA72501"]
+238 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+239 [-]: GETUPVAL  R26 U9       ; R26 := U9
+240 [-]: GETTABLE  R26 R26 K35  ; R26 := R26["RING_ROTATION"]
+241 [-]: CALL      R22 5 2      ; R22 := R22(R23,R24,R25,R26)
+242 [-]: SETTABLE  R21 K36 R22  ; R21[2] := R22
+243 [-]: GETTABLE  R22 R21 K36  ; R22 := R21[2]
+244 [-]: SELF      R22 R22 K37  ; R23 := R22; R22 := R22["0xA20F64C0"]
+245 [-]: GETGLOBAL R24 K38      ; R24 := 0xB5A59043
+246 [-]: LOADK     R25 K39      ; R25 := 255
+247 [-]: LOADK     R26 K39      ; R26 := 255
+248 [-]: LOADK     R27 K39      ; R27 := 255
+249 [-]: LOADK     R28 K40      ; R28 := 150
+250 [-]: CALL      R24 5 0      ; R24,... := R24(R25,R26,R27,R28)
+251 [-]: CALL      R22 0 1      ; R22(R23,...)
+252 [-]: GETTABLE  R22 R21 K15  ; R22 := R21[1]
+253 [-]: GETTABLE  R23 R21 K36  ; R23 := R21[2]
+254 [-]: CLOSURE   R24 0        ; R24 := closure(Function #114.1)
+255 [-]: MOVE      R0 R22       ; R0 := R22
+256 [-]: MOVE      R0 R9        ; R0 := R9
+257 [-]: MOVE      R0 R23       ; R0 := R23
+258 [-]: GETGLOBAL R25 K41      ; R25 := 0x52E17A90
+259 [-]: GETGLOBAL R26 K1       ; R26 := mMovie
+260 [-]: GETUPVAL  R27 U14      ; R27 := U14
+261 [-]: GETTABLE  R27 R27 R8   ; R27 := R27[R8]
+262 [-]: GETTABLE  R27 R27 K42  ; R27 := R27["clipName"]
+263 [-]: GETGLOBAL R28 K43      ; R28 := UISys
+264 [-]: GETTABLE  R28 R28 K44  ; R28 := R28["FlashInstance_EASE_OUT"]
+265 [-]: NEWTABLE  R29 1 0      ; R29 := {}
+266 [-]: MOVE      R30 R24      ; R30 := R24
+267 [-]: SETLIST   R29 1 1      ; R29[(1-1)*FPF+i] := R(29+i), 1 <= i <= 1
+268 [-]: NEWTABLE  R30 1 0      ; R30 := {}
+269 [-]: LOADK     R31 K15      ; R31 := 1
+270 [-]: SETLIST   R30 1 1      ; R30[(1-1)*FPF+i] := R(30+i), 1 <= i <= 1
+271 [-]: LOADK     R31 K45      ; R31 := 0.25
+272 [-]: CALL      R25 7 1      ; R25(R26,R27,R28,R29,R30,R31)
+273 [-]: CLOSE     R21          ; SAVE R21,...
+274 [-]: EQ        1 R2 K5      ; if R2 == nil then PC := 331
+275 [-]: JMP       331          ; PC := 331
+276 [-]: GETGLOBAL R21 K8       ; R21 := 0x400E7765
+277 [-]: GETTABLE  R22 R2 K29   ; R22 := R2["instance"]
+278 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+279 [-]: TEST      R21 1        ; if R21 then PC := 331
+280 [-]: JMP       331          ; PC := 331
+281 [-]: LOADK     R21 K7       ; R21 := 0
+282 [-]: LOADK     R22 K15      ; R22 := 1
+283 [-]: GETUPVAL  R23 U1       ; R23 := U1
+284 [-]: LEN       R23 R23      ; R23 := # R23
+285 [-]: LOADK     R24 K15      ; R24 := 1
+286 [-]: FORPREP   R22 293      ; R22 -= R24; PC := 293
+287 [-]: GETUPVAL  R26 U1       ; R26 := U1
+288 [-]: GETTABLE  R26 R26 R25  ; R26 := R26[R25]
+289 [-]: EQ        0 R26 R2     ; if R26 ~= R2 then PC := 293
+290 [-]: JMP       293          ; PC := 293
+291 [-]: MOVE      R21 R25      ; R21 := R25
+292 [-]: JMP       294          ; PC := 294
+293 [-]: FORLOOP   R22 287      ; R22 += R24; if R22 <= R23 then begin PC := 287; R25 := R22 end
+294 [-]: GETUPVAL  R26 U4       ; R26 := U4
+295 [-]: GETTABLE  R9 R26 R21   ; R9 := R26[R21]
+296 [-]: EQ        1 R9 K5      ; if R9 == nil then PC := 331
+297 [-]: JMP       331          ; PC := 331
+298 [-]: GETGLOBAL R26 K8       ; R26 := 0x400E7765
+299 [-]: GETTABLE  R27 R2 K29   ; R27 := R2["instance"]
+300 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+301 [-]: TEST      R26 1        ; if R26 then PC := 331
+302 [-]: JMP       331          ; PC := 331
+303 [-]: GETUPVAL  R26 U13      ; R26 := U13
+304 [-]: GETTABLE  R26 R26 R21  ; R26 := R26[R21]
+305 [-]: GETTABLE  R27 R26 K15  ; R27 := R26[1]
+306 [-]: GETTABLE  R28 R26 K36  ; R28 := R26[2]
+307 [-]: CLOSURE   R29 1        ; R29 := closure(Function #114.2)
+308 [-]: MOVE      R0 R27       ; R0 := R27
+309 [-]: MOVE      R0 R9        ; R0 := R9
+310 [-]: MOVE      R0 R28       ; R0 := R28
+311 [-]: GETGLOBAL R30 K41      ; R30 := 0x52E17A90
+312 [-]: GETGLOBAL R31 K1       ; R31 := mMovie
+313 [-]: GETUPVAL  R32 U14      ; R32 := U14
+314 [-]: GETTABLE  R32 R32 R21  ; R32 := R32[R21]
+315 [-]: GETTABLE  R32 R32 K42  ; R32 := R32["clipName"]
+316 [-]: GETGLOBAL R33 K43      ; R33 := UISys
+317 [-]: GETTABLE  R33 R33 K46  ; R33 := R33["FlashInstance_EASE_IN"]
+318 [-]: NEWTABLE  R34 1 0      ; R34 := {}
+319 [-]: MOVE      R35 R29      ; R35 := R29
+320 [-]: SETLIST   R34 1 1      ; R34[(1-1)*FPF+i] := R(34+i), 1 <= i <= 1
+321 [-]: NEWTABLE  R35 1 0      ; R35 := {}
+322 [-]: LOADK     R36 K15      ; R36 := 1
+323 [-]: SETLIST   R35 1 1      ; R35[(1-1)*FPF+i] := R(35+i), 1 <= i <= 1
+324 [-]: LOADK     R36 K47      ; R36 := 0.15000000596046
+325 [-]: LOADK     R37 K7       ; R37 := 0
+326 [-]: CLOSURE   R38 2        ; R38 := closure(Function #114.3)
+327 [-]: MOVE      R0 R27       ; R0 := R27
 328 [-]: MOVE      R0 R28       ; R0 := R28
-329 [-]: MOVE      R0 R29       ; R0 := R29
-330 [-]: CALL      R31 9 1      ; R31(R32,R33,R34,R35,R36,R37,R38,R39)
-331 [-]: CLOSE     R27          ; SAVE R27,...
-332 [-]: CLOSE     R21          ; SAVE R21,...
-333 [-]: RETURN    R4 2         ; return R4
-334 [-]: RETURN    R0 1         ; return 
+329 [-]: CALL      R30 9 1      ; R30(R31,R32,R33,R34,R35,R36,R37,R38)
+330 [-]: CLOSE     R26          ; SAVE R26,...
+331 [-]: RETURN    R4 2         ; return R4
+332 [-]: RETURN    R0 1         ; return 
 
 
-; Function #113.1:
+; Function #114.1:
 ;
 ; Name:            
-; Defined at line: 4589
+; Defined at line: 4634
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -15995,10 +16117,10 @@ code size: 4
  35 [-]: RETURN    R0 1         ; return 
 
 
-; Function #113.2:
+; Function #114.2:
 ;
 ; Name:            
-; Defined at line: 4621
+; Defined at line: 4666
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -16042,10 +16164,10 @@ code size: 4
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #113.3:
+; Function #114.3:
 ;
 ; Name:            
-; Defined at line: 4634
+; Defined at line: 4679
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -16072,10 +16194,10 @@ code size: 4
  19 [-]: RETURN    R0 1         ; return 
 
 
-; Function #114:
+; Function #115:
 ;
 ; Name:            
-; Defined at line: 4649
+; Defined at line: 4694
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -16122,14 +16244,14 @@ code size: 4
  39 [-]: RETURN    R0 1         ; return 
 
 
-; Function #115:
+; Function #116:
 ;
 ; Name:            
-; Defined at line: 4669
+; Defined at line: 4714
 ; #Upvalues:       39
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  91
+; Max Stack Size:  90
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETUPVAL  R1 U1        ; R1 := U1
@@ -17188,44 +17310,41 @@ code size: 4
 1055 [-]: CALL      R87 2 0      ; R87,... := R87(R88)
 1056 [-]: CALL      R84 0 1      ; R84(R85,...)
 1057 [-]: GETUPVAL  R84 U36      ; R84 := U36
-1058 [-]: SELF      R84 R84 K106 ; R85 := R84; R84 := R84["0xC4E503B0"]
-1059 [-]: CALL      R84 2 2      ; R84 := R84(R85)
-1060 [-]: GETUPVAL  R85 U36      ; R85 := U36
-1061 [-]: SELF      R85 R85 K96  ; R86 := R85; R85 := R85["0xDB349344"]
-1062 [-]: GETUPVAL  R87 U11      ; R87 := U11
-1063 [-]: GETTABLE  R87 R87 K72  ; R87 := R87["0xF81722A2"]
-1064 [-]: GETUPVAL  R88 U33      ; R88 := U33
-1065 [-]: GETTABLE  R88 R88 K111 ; R88 := R88["Region"]
-1066 [-]: EQ        0 R88 K19    ; if R88 ~= nil then PC := 1069
-1067 [-]: JMP       1069         ; PC := 1069
-1068 [-]: MOVE      R88 R0       ; R88 := R0
-1069 [-]: MOVE      R88 R1       ; R88 := R1
-1070 [-]: LOADK     R89 K22      ; R89 := 1
-1071 [-]: LOADK     R90 K6       ; R90 := 0
-1072 [-]: CALL      R87 4 0      ; R87,... := R87(R88,R89,R90)
-1073 [-]: CALL      R85 0 1      ; R85(R86,...)
-1074 [-]: GETUPVAL  R85 U36      ; R85 := U36
-1075 [-]: SELF      R85 R85 K89  ; R86 := R85; R85 := R85["0x8C7099E9"]
-1076 [-]: GETGLOBAL R87 K88      ; R87 := 0x4CDEF9FF
-1077 [-]: CALL      R87 1 0      ; R87,... := R87()
-1078 [-]: CALL      R85 0 1      ; R85(R86,...)
-1079 [-]: GETUPVAL  R85 U33      ; R85 := U33
-1080 [-]: GETTABLE  R85 R85 K111 ; R85 := R85["Region"]
-1081 [-]: EQ        1 R85 K19    ; if R85 == nil then PC := 1087
-1082 [-]: JMP       1087         ; PC := 1087
-1083 [-]: GETUPVAL  R85 U37      ; R85 := U37
-1084 [-]: GETUPVAL  R86 U33      ; R86 := U33
-1085 [-]: GETTABLE  R86 R86 K111 ; R86 := R86["Region"]
-1086 [-]: SETTABLE  R85 K111 R86 ; R85["Region"] := R86
-1087 [-]: MOVE      R85 R0       ; R85 := R0
-1088 [-]: MOVE      R85 R38      ; R85 := R38
-1089 [-]: RETURN    R0 1         ; return 
+1058 [-]: SELF      R84 R84 K96  ; R85 := R84; R84 := R84["0xDB349344"]
+1059 [-]: GETUPVAL  R86 U11      ; R86 := U11
+1060 [-]: GETTABLE  R86 R86 K72  ; R86 := R86["0xF81722A2"]
+1061 [-]: GETUPVAL  R87 U33      ; R87 := U33
+1062 [-]: GETTABLE  R87 R87 K111 ; R87 := R87["Region"]
+1063 [-]: EQ        0 R87 K19    ; if R87 ~= nil then PC := 1066
+1064 [-]: JMP       1066         ; PC := 1066
+1065 [-]: MOVE      R87 R0       ; R87 := R0
+1066 [-]: MOVE      R87 R1       ; R87 := R1
+1067 [-]: LOADK     R88 K22      ; R88 := 1
+1068 [-]: LOADK     R89 K6       ; R89 := 0
+1069 [-]: CALL      R86 4 0      ; R86,... := R86(R87,R88,R89)
+1070 [-]: CALL      R84 0 1      ; R84(R85,...)
+1071 [-]: GETUPVAL  R84 U36      ; R84 := U36
+1072 [-]: SELF      R84 R84 K89  ; R85 := R84; R84 := R84["0x8C7099E9"]
+1073 [-]: GETGLOBAL R86 K88      ; R86 := 0x4CDEF9FF
+1074 [-]: CALL      R86 1 0      ; R86,... := R86()
+1075 [-]: CALL      R84 0 1      ; R84(R85,...)
+1076 [-]: GETUPVAL  R84 U33      ; R84 := U33
+1077 [-]: GETTABLE  R84 R84 K111 ; R84 := R84["Region"]
+1078 [-]: EQ        1 R84 K19    ; if R84 == nil then PC := 1084
+1079 [-]: JMP       1084         ; PC := 1084
+1080 [-]: GETUPVAL  R84 U37      ; R84 := U37
+1081 [-]: GETUPVAL  R85 U33      ; R85 := U33
+1082 [-]: GETTABLE  R85 R85 K111 ; R85 := R85["Region"]
+1083 [-]: SETTABLE  R84 K111 R85 ; R84["Region"] := R85
+1084 [-]: MOVE      R84 R0       ; R84 := R0
+1085 [-]: MOVE      R84 R38      ; R84 := R38
+1086 [-]: RETURN    R0 1         ; return 
 
 
-; Function #116:
+; Function #117:
 ;
 ; Name:            
-; Defined at line: 5000
+; Defined at line: 5044
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -17288,10 +17407,10 @@ code size: 4
  55 [-]: RETURN    R0 1         ; return 
 
 
-; Function #117:
+; Function #118:
 ;
 ; Name:            
-; Defined at line: 5014
+; Defined at line: 5058
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -17468,91 +17587,10 @@ code size: 4
 169 [-]: RETURN    R0 1         ; return 
 
 
-; Function #118:
-;
-; Name:            
-; Defined at line: 5052
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  13
-
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: EQ        0 R1 R0      ; if R1 ~= R0 then PC := 5
-  3 [-]: JMP       5            ; PC := 5
-  4 [-]: RETURN    R0 1         ; return 
-  5 [-]: MOVE      R0 R0        ; R0 := R0
-  6 [-]: GETUPVAL  R1 U1        ; R1 := U1
-  7 [-]: GETTABLE  R1 R1 R0     ; R1 := R1[R0]
-  8 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
-  9 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0x5DB0BD4"]
- 10 [-]: GETGLOBAL R4 K2        ; R4 := 0x9FAED6BC
- 11 [-]: GETTABLE  R5 R1 K3     ; R5 := R1["name"]
- 12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: MOVE      R5 R0        ; R5 := R0
- 14 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 15 [-]: GETGLOBAL R3 K0        ; R3 := mMovie
- 16 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0xD6A79FE9"]
- 17 [-]: LOADK     R5 K5        ; R5 := "RegionInfo.Title"
- 18 [-]: LOADK     R6 K6        ; R6 := "text"
- 19 [-]: GETGLOBAL R7 K7        ; R7 := string
- 20 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["0x639C642A"]
- 21 [-]: MOVE      R8 R2        ; R8 := R2
- 22 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
- 23 [-]: CALL      R3 0 1       ; R3(R4,...)
- 24 [-]: SELF      R3 R1 K9     ; R4 := R1; R3 := R1["0xF377E16C"]
- 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 26 [-]: LOADK     R4 K10       ; R4 := ""
- 27 [-]: GETTABLE  R5 R3 K11    ; R5 := R3["availableMissions"]
- 28 [-]: LT        0 K12 R5     ; if 0 >= R5 then PC := 42
- 29 [-]: JMP       42           ; PC := 42
- 30 [-]: GETGLOBAL R5 K0        ; R5 := mMovie
- 31 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5["0x5DB0BD4"]
- 32 [-]: LOADK     R7 K13       ; R7 := "/Lotus/Language/Menu/CompletedMissions"
- 33 [-]: MOVE      R8 R0        ; R8 := R0
- 34 [-]: NEWTABLE  R9 0 2       ; R9 := {}
- 35 [-]: GETTABLE  R10 R3 K15   ; R10 := R3["completedMissions"]
- 36 [-]: SETTABLE  R9 K14 R10   ; R9["COMPLETED"] := R10
- 37 [-]: GETTABLE  R10 R3 K11   ; R10 := R3["availableMissions"]
- 38 [-]: SETTABLE  R9 K16 R10   ; R9["TOTAL"] := R10
- 39 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
- 40 [-]: LOADK     R6 K17       ; R6 := "\r\n"
- 41 [-]: CONCAT    R4 R5 R6     ; R4 := R5 .. R6
- 42 [-]: MOVE      R5 R4        ; R5 := R4
- 43 [-]: GETGLOBAL R6 K0        ; R6 := mMovie
- 44 [-]: SELF      R6 R6 K1     ; R7 := R6; R6 := R6["0x5DB0BD4"]
- 45 [-]: GETGLOBAL R8 K2        ; R8 := 0x9FAED6BC
- 46 [-]: GETTABLE  R9 R1 K18    ; R9 := R1["desc"]
- 47 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 48 [-]: MOVE      R9 R0        ; R9 := R0
- 49 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
- 50 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 51 [-]: GETGLOBAL R6 K0        ; R6 := mMovie
- 52 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6["0xD6A79FE9"]
- 53 [-]: LOADK     R8 K19       ; R8 := "RegionInfo.RegionDesc"
- 54 [-]: LOADK     R9 K6        ; R9 := "text"
- 55 [-]: MOVE      R10 R5       ; R10 := R5
- 56 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 57 [-]: GETGLOBAL R6 K20       ; R6 := 0x52E17A90
- 58 [-]: GETGLOBAL R7 K0        ; R7 := mMovie
- 59 [-]: LOADK     R8 K21       ; R8 := "RegionInfo"
- 60 [-]: GETGLOBAL R9 K22       ; R9 := UISys
- 61 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["FlashInstance_SMOOTH_STEP"]
- 62 [-]: NEWTABLE  R10 1 0      ; R10 := {}
- 63 [-]: LOADK     R11 K24      ; R11 := "_alpha"
- 64 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 65 [-]: NEWTABLE  R11 1 0      ; R11 := {}
- 66 [-]: LOADK     R12 K25      ; R12 := 100
- 67 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 68 [-]: LOADK     R12 K26      ; R12 := 0.20000000298023
- 69 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
- 70 [-]: RETURN    R0 1         ; return 
-
-
 ; Function #119:
 ;
 ; Name:            
-; Defined at line: 5077
+; Defined at line: 5096
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -17613,7 +17651,7 @@ code size: 4
 ; Function #120:
 ;
 ; Name:            
-; Defined at line: 5104
+; Defined at line: 5123
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -17639,7 +17677,7 @@ code size: 4
 ; Function #121:
 ;
 ; Name:            
-; Defined at line: 5111
+; Defined at line: 5130
 ; #Upvalues:       40
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -18930,7 +18968,7 @@ code size: 4
 ; Function #122:
 ;
 ; Name:            
-; Defined at line: 5466
+; Defined at line: 5485
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -18974,7 +19012,7 @@ code size: 4
 ; Function #123:
 ;
 ; Name:            
-; Defined at line: 5478
+; Defined at line: 5497
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -19034,7 +19072,7 @@ code size: 4
 ; Function #124:
 ;
 ; Name:            
-; Defined at line: 5490
+; Defined at line: 5509
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -19085,7 +19123,7 @@ code size: 4
 ; Function #125:
 ;
 ; Name:            
-; Defined at line: 5502
+; Defined at line: 5521
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -19147,7 +19185,7 @@ code size: 4
 ; Function #126:
 ;
 ; Name:            
-; Defined at line: 5515
+; Defined at line: 5534
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -19206,7 +19244,7 @@ code size: 4
 ; Function #127:
 ;
 ; Name:            
-; Defined at line: 5529
+; Defined at line: 5548
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -19250,11 +19288,11 @@ code size: 4
 ; Function #128:
 ;
 ; Name:            
-; Defined at line: 5545
+; Defined at line: 5564
 ; #Upvalues:       55
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  78
+; Max Stack Size:  77
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x6306558E
   2 [-]: CALL      R0 1 2       ; R0 := R0()
@@ -20095,8 +20133,8 @@ code size: 4
 837 [-]: SELF      R46 R46 K133 ; R47 := R46; R46 := R46["0x35FF770F"]
 838 [-]: CALL      R46 2 2      ; R46 := R46(R47)
 839 [-]: GETGLOBAL R47 K2       ; R47 := mMovie
-840 [-]: EQ        0 R46 R47    ; if R46 ~= R47 then PC := 1020
-841 [-]: JMP       1020         ; PC := 1020
+840 [-]: EQ        0 R46 R47    ; if R46 ~= R47 then PC := 1011
+841 [-]: JMP       1011         ; PC := 1011
 842 [-]: GETGLOBAL R46 K94      ; R46 := math
 843 [-]: GETTABLE  R46 R46 K134 ; R46 := R46["0x8B011038"]
 844 [-]: GETGLOBAL R47 K2       ; R47 := mMovie
@@ -20106,420 +20144,411 @@ code size: 4
 848 [-]: SELF      R48 R48 K135 ; R49 := R48; R48 := R48["0xF3E132E0"]
 849 [-]: CALL      R48 2 0      ; R48,... := R48(R49)
 850 [-]: CALL      R46 0 2      ; R46 := R46(R47,...)
-851 [-]: GETGLOBAL R47 K94      ; R47 := math
-852 [-]: GETTABLE  R47 R47 K134 ; R47 := R47["0x8B011038"]
-853 [-]: GETGLOBAL R48 K2       ; R48 := mMovie
-854 [-]: SELF      R48 R48 K92  ; R49 := R48; R48 := R48["0xEE069D65"]
-855 [-]: CALL      R48 2 2      ; R48 := R48(R49)
-856 [-]: GETGLOBAL R49 K2       ; R49 := mMovie
-857 [-]: SELF      R49 R49 K136 ; R50 := R49; R49 := R49["0x68998E7D"]
-858 [-]: CALL      R49 2 0      ; R49,... := R49(R50)
-859 [-]: CALL      R47 0 2      ; R47 := R47(R48,...)
-860 [-]: GETUPVAL  R48 U44      ; R48 := U44
-861 [-]: LEN       R48 R48      ; R48 := # R48
-862 [-]: LT        1 K19 R48    ; if 0 < R48 then PC := 868
-863 [-]: JMP       868          ; PC := 868
-864 [-]: GETUPVAL  R48 U45      ; R48 := U45
-865 [-]: LEN       R48 R48      ; R48 := # R48
-866 [-]: LT        0 K19 R48    ; if 0 >= R48 then PC := 1020
-867 [-]: JMP       1020         ; PC := 1020
-868 [-]: GETUPVAL  R48 U46      ; R48 := U46
-869 [-]: LT        0 K19 R48    ; if 0 >= R48 then PC := 1020
-870 [-]: JMP       1020         ; PC := 1020
-871 [-]: GETUPVAL  R48 U47      ; R48 := U47
-872 [-]: GETGLOBAL R49 K83      ; R49 := 0x4CDEF9FF
-873 [-]: CALL      R49 1 2      ; R49 := R49()
-874 [-]: SUB       R48 R48 R49  ; R48 := R48 - R49
-875 [-]: MOVE      R48 R47      ; R48 := R47
-876 [-]: GETUPVAL  R48 U47      ; R48 := U47
-877 [-]: LE        0 R48 K19    ; if R48 > 0 then PC := 1020
-878 [-]: JMP       1020         ; PC := 1020
-879 [-]: GETUPVAL  R48 U11      ; R48 := U11
-880 [-]: GETTABLE  R48 R48 K137 ; R48 := R48["0xF81722A2"]
-881 [-]: GETUPVAL  R49 U48      ; R49 := U48
-882 [-]: LOADK     R50 K22      ; R50 := 1
-883 [-]: LOADK     R51 K54      ; R51 := 2
-884 [-]: CALL      R48 4 2      ; R48 := R48(R49,R50,R51)
-885 [-]: MOVE      R48 R47      ; R48 := R47
-886 [-]: MOVE      R48 R0       ; R48 := R0
-887 [-]: LOADK     R49 K22      ; R49 := 1
-888 [-]: GETUPVAL  R50 U44      ; R50 := U44
-889 [-]: LEN       R50 R50      ; R50 := # R50
-890 [-]: LOADK     R51 K22      ; R51 := 1
-891 [-]: FORPREP   R49 953      ; R49 -= R51; PC := 953
-892 [-]: GETGLOBAL R53 K138     ; R53 := 0xF595ADDE
-893 [-]: GETGLOBAL R54 K2       ; R54 := mMovie
-894 [-]: SELF      R54 R54 K139 ; R55 := R54; R54 := R54["0x294C4B0B"]
-895 [-]: GETUPVAL  R56 U44      ; R56 := U44
-896 [-]: GETTABLE  R56 R56 R52  ; R56 := R56[R52]
-897 [-]: GETTABLE  R56 R56 K121 ; R56 := R56["Node"]
-898 [-]: GETTABLE  R56 R56 K140 ; R56 := R56["memberIndex"]
-899 [-]: LOADK     R57 K141     ; R57 := "_x"
-900 [-]: CALL      R54 4 0      ; R54,... := R54(R55,R56,R57)
-901 [-]: CALL      R53 0 2      ; R53 := R53(R54,...)
-902 [-]: GETGLOBAL R54 K138     ; R54 := 0xF595ADDE
-903 [-]: GETGLOBAL R55 K2       ; R55 := mMovie
-904 [-]: SELF      R55 R55 K139 ; R56 := R55; R55 := R55["0x294C4B0B"]
-905 [-]: GETUPVAL  R57 U44      ; R57 := U44
-906 [-]: GETTABLE  R57 R57 R52  ; R57 := R57[R52]
-907 [-]: GETTABLE  R57 R57 K121 ; R57 := R57["Node"]
-908 [-]: GETTABLE  R57 R57 K140 ; R57 := R57["memberIndex"]
-909 [-]: LOADK     R58 K142     ; R58 := "_y"
-910 [-]: CALL      R55 4 0      ; R55,... := R55(R56,R57,R58)
-911 [-]: CALL      R54 0 2      ; R54 := R54(R55,...)
-912 [-]: GETUPVAL  R55 U11      ; R55 := U11
-913 [-]: GETTABLE  R55 R55 K143 ; R55 := R55["0x4F6BF2C8"]
-914 [-]: GETGLOBAL R56 K2       ; R56 := mMovie
-915 [-]: NEWTABLE  R57 0 2      ; R57 := {}
-916 [-]: SETTABLE  R57 K93 R53  ; R57["x"] := R53
-917 [-]: SETTABLE  R57 K100 R54 ; R57["y"] := R54
-918 [-]: CALL      R55 3 2      ; R55 := R55(R56,R57)
-919 [-]: GETTABLE  R56 R55 K93  ; R56 := R55["x"]
-920 [-]: LT        0 K19 R56    ; if 0 >= R56 then PC := 952
-921 [-]: JMP       952          ; PC := 952
-922 [-]: GETTABLE  R56 R55 K100 ; R56 := R55["y"]
-923 [-]: LT        0 K19 R56    ; if 0 >= R56 then PC := 952
-924 [-]: JMP       952          ; PC := 952
-925 [-]: GETTABLE  R56 R55 K93  ; R56 := R55["x"]
-926 [-]: LT        0 R56 K22    ; if R56 >= 1 then PC := 952
-927 [-]: JMP       952          ; PC := 952
-928 [-]: GETTABLE  R56 R55 K100 ; R56 := R55["y"]
-929 [-]: LT        0 R56 K22    ; if R56 >= 1 then PC := 952
-930 [-]: JMP       952          ; PC := 952
-931 [-]: GETUPVAL  R56 U0       ; R56 := U0
-932 [-]: SELF      R56 R56 K144 ; R57 := R56; R56 := R56["0x61494587"]
-933 [-]: DIV       R58 R53 R46  ; R58 := R53 / R46
-934 [-]: MUL       R58 R58 K22  ; R58 := R58 * 1
-935 [-]: CLOSURE   R59 1        ; R59 := closure(Function #128.2)
-936 [-]: GETUPVAL  R0 U44       ; R0 := U44
-937 [-]: MOVE      R0 R52       ; R0 := R52
-938 [-]: GETUPVAL  R0 U2        ; R0 := U2
-939 [-]: GETUPVAL  R0 U10       ; R0 := U10
-940 [-]: GETUPVAL  R0 U11       ; R0 := U11
-941 [-]: CALL      R56 4 1      ; R56(R57,R58,R59)
-942 [-]: TEST      R48 1        ; if R48 then PC := 952
-943 [-]: JMP       952          ; PC := 952
-944 [-]: MOVE      R48 R1       ; R48 := R1
-945 [-]: GETUPVAL  R56 U0       ; R56 := U0
-946 [-]: SELF      R56 R56 K144 ; R57 := R56; R56 := R56["0x61494587"]
-947 [-]: DIV       R58 R53 R46  ; R58 := R53 / R46
-948 [-]: MUL       R58 R58 K22  ; R58 := R58 * 1
-949 [-]: CLOSURE   R59 2        ; R59 := closure(Function #128.3)
-950 [-]: GETUPVAL  R0 U11       ; R0 := U11
-951 [-]: CALL      R56 4 1      ; R56(R57,R58,R59)
-952 [-]: CLOSE     R52          ; SAVE R52,...
-953 [-]: FORLOOP   R49 892      ; R49 += R51; if R49 <= R50 then begin PC := 892; R52 := R49 end
-954 [-]: LOADK     R52 K22      ; R52 := 1
-955 [-]: GETUPVAL  R53 U45      ; R53 := U45
-956 [-]: LEN       R53 R53      ; R53 := # R53
-957 [-]: LOADK     R54 K22      ; R54 := 1
-958 [-]: FORPREP   R52 1019     ; R52 -= R54; PC := 1019
-959 [-]: GETGLOBAL R56 K138     ; R56 := 0xF595ADDE
-960 [-]: GETGLOBAL R57 K2       ; R57 := mMovie
-961 [-]: SELF      R57 R57 K139 ; R58 := R57; R57 := R57["0x294C4B0B"]
-962 [-]: GETUPVAL  R59 U45      ; R59 := U45
-963 [-]: GETTABLE  R59 R59 R55  ; R59 := R59[R55]
-964 [-]: GETTABLE  R59 R59 K121 ; R59 := R59["Node"]
-965 [-]: GETTABLE  R59 R59 K140 ; R59 := R59["memberIndex"]
-966 [-]: LOADK     R60 K141     ; R60 := "_x"
-967 [-]: CALL      R57 4 0      ; R57,... := R57(R58,R59,R60)
-968 [-]: CALL      R56 0 2      ; R56 := R56(R57,...)
-969 [-]: GETGLOBAL R57 K138     ; R57 := 0xF595ADDE
-970 [-]: GETGLOBAL R58 K2       ; R58 := mMovie
-971 [-]: SELF      R58 R58 K139 ; R59 := R58; R58 := R58["0x294C4B0B"]
-972 [-]: GETUPVAL  R60 U45      ; R60 := U45
-973 [-]: GETTABLE  R60 R60 R55  ; R60 := R60[R55]
-974 [-]: GETTABLE  R60 R60 K121 ; R60 := R60["Node"]
-975 [-]: GETTABLE  R60 R60 K140 ; R60 := R60["memberIndex"]
-976 [-]: LOADK     R61 K142     ; R61 := "_y"
-977 [-]: CALL      R58 4 0      ; R58,... := R58(R59,R60,R61)
-978 [-]: CALL      R57 0 2      ; R57 := R57(R58,...)
-979 [-]: GETUPVAL  R58 U11      ; R58 := U11
-980 [-]: GETTABLE  R58 R58 K143 ; R58 := R58["0x4F6BF2C8"]
-981 [-]: GETGLOBAL R59 K2       ; R59 := mMovie
-982 [-]: NEWTABLE  R60 0 2      ; R60 := {}
-983 [-]: SETTABLE  R60 K93 R56  ; R60["x"] := R56
-984 [-]: SETTABLE  R60 K100 R57 ; R60["y"] := R57
-985 [-]: CALL      R58 3 2      ; R58 := R58(R59,R60)
-986 [-]: GETTABLE  R59 R58 K93  ; R59 := R58["x"]
-987 [-]: LT        0 K19 R59    ; if 0 >= R59 then PC := 1018
-988 [-]: JMP       1018         ; PC := 1018
-989 [-]: GETTABLE  R59 R58 K100 ; R59 := R58["y"]
-990 [-]: LT        0 K19 R59    ; if 0 >= R59 then PC := 1018
-991 [-]: JMP       1018         ; PC := 1018
-992 [-]: GETTABLE  R59 R58 K93  ; R59 := R58["x"]
-993 [-]: LT        0 R59 K22    ; if R59 >= 1 then PC := 1018
-994 [-]: JMP       1018         ; PC := 1018
-995 [-]: GETTABLE  R59 R58 K100 ; R59 := R58["y"]
-996 [-]: LT        0 R59 K22    ; if R59 >= 1 then PC := 1018
-997 [-]: JMP       1018         ; PC := 1018
-998 [-]: GETUPVAL  R59 U0       ; R59 := U0
-999 [-]: SELF      R59 R59 K144 ; R60 := R59; R59 := R59["0x61494587"]
-1000 [-]: DIV       R61 R56 R46  ; R61 := R56 / R46
-1001 [-]: MUL       R61 R61 K22  ; R61 := R61 * 1
-1002 [-]: CLOSURE   R62 3        ; R62 := closure(Function #128.4)
-1003 [-]: GETUPVAL  R0 U45       ; R0 := U45
-1004 [-]: MOVE      R0 R55       ; R0 := R55
-1005 [-]: GETUPVAL  R0 U10       ; R0 := U10
-1006 [-]: GETUPVAL  R0 U11       ; R0 := U11
-1007 [-]: CALL      R59 4 1      ; R59(R60,R61,R62)
-1008 [-]: TEST      R48 1        ; if R48 then PC := 1018
-1009 [-]: JMP       1018         ; PC := 1018
-1010 [-]: MOVE      R48 R1       ; R48 := R1
-1011 [-]: GETUPVAL  R59 U0       ; R59 := U0
-1012 [-]: SELF      R59 R59 K144 ; R60 := R59; R59 := R59["0x61494587"]
-1013 [-]: DIV       R61 R56 R46  ; R61 := R56 / R46
-1014 [-]: MUL       R61 R61 K22  ; R61 := R61 * 1
-1015 [-]: CLOSURE   R62 4        ; R62 := closure(Function #128.5)
-1016 [-]: GETUPVAL  R0 U11       ; R0 := U11
-1017 [-]: CALL      R59 4 1      ; R59(R60,R61,R62)
-1018 [-]: CLOSE     R55          ; SAVE R55,...
-1019 [-]: FORLOOP   R52 959      ; R52 += R54; if R52 <= R53 then begin PC := 959; R55 := R52 end
-1020 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1021 [-]: GETTABLE  R55 R55 K121 ; R55 := R55["Node"]
-1022 [-]: EQ        1 R55 K38    ; if R55 == nil then PC := 1164
-1023 [-]: JMP       1164         ; PC := 1164
-1024 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1025 [-]: GETTABLE  R55 R55 K145 ; R55 := R55["UpdateTimer"]
-1026 [-]: EQ        1 R55 K38    ; if R55 == nil then PC := 1164
-1027 [-]: JMP       1164         ; PC := 1164
-1028 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1029 [-]: GETTABLE  R55 R55 K146 ; R55 := R55["TimerPre"]
-1030 [-]: EQ        1 R55 K38    ; if R55 == nil then PC := 1164
-1031 [-]: JMP       1164         ; PC := 1164
+851 [-]: GETUPVAL  R47 U44      ; R47 := U44
+852 [-]: LEN       R47 R47      ; R47 := # R47
+853 [-]: LT        1 K19 R47    ; if 0 < R47 then PC := 859
+854 [-]: JMP       859          ; PC := 859
+855 [-]: GETUPVAL  R47 U45      ; R47 := U45
+856 [-]: LEN       R47 R47      ; R47 := # R47
+857 [-]: LT        0 K19 R47    ; if 0 >= R47 then PC := 1011
+858 [-]: JMP       1011         ; PC := 1011
+859 [-]: GETUPVAL  R47 U46      ; R47 := U46
+860 [-]: LT        0 K19 R47    ; if 0 >= R47 then PC := 1011
+861 [-]: JMP       1011         ; PC := 1011
+862 [-]: GETUPVAL  R47 U47      ; R47 := U47
+863 [-]: GETGLOBAL R48 K83      ; R48 := 0x4CDEF9FF
+864 [-]: CALL      R48 1 2      ; R48 := R48()
+865 [-]: SUB       R47 R47 R48  ; R47 := R47 - R48
+866 [-]: MOVE      R47 R47      ; R47 := R47
+867 [-]: GETUPVAL  R47 U47      ; R47 := U47
+868 [-]: LE        0 R47 K19    ; if R47 > 0 then PC := 1011
+869 [-]: JMP       1011         ; PC := 1011
+870 [-]: GETUPVAL  R47 U11      ; R47 := U11
+871 [-]: GETTABLE  R47 R47 K136 ; R47 := R47["0xF81722A2"]
+872 [-]: GETUPVAL  R48 U48      ; R48 := U48
+873 [-]: LOADK     R49 K22      ; R49 := 1
+874 [-]: LOADK     R50 K54      ; R50 := 2
+875 [-]: CALL      R47 4 2      ; R47 := R47(R48,R49,R50)
+876 [-]: MOVE      R47 R47      ; R47 := R47
+877 [-]: MOVE      R47 R0       ; R47 := R0
+878 [-]: LOADK     R48 K22      ; R48 := 1
+879 [-]: GETUPVAL  R49 U44      ; R49 := U44
+880 [-]: LEN       R49 R49      ; R49 := # R49
+881 [-]: LOADK     R50 K22      ; R50 := 1
+882 [-]: FORPREP   R48 944      ; R48 -= R50; PC := 944
+883 [-]: GETGLOBAL R52 K137     ; R52 := 0xF595ADDE
+884 [-]: GETGLOBAL R53 K2       ; R53 := mMovie
+885 [-]: SELF      R53 R53 K138 ; R54 := R53; R53 := R53["0x294C4B0B"]
+886 [-]: GETUPVAL  R55 U44      ; R55 := U44
+887 [-]: GETTABLE  R55 R55 R51  ; R55 := R55[R51]
+888 [-]: GETTABLE  R55 R55 K121 ; R55 := R55["Node"]
+889 [-]: GETTABLE  R55 R55 K139 ; R55 := R55["memberIndex"]
+890 [-]: LOADK     R56 K140     ; R56 := "_x"
+891 [-]: CALL      R53 4 0      ; R53,... := R53(R54,R55,R56)
+892 [-]: CALL      R52 0 2      ; R52 := R52(R53,...)
+893 [-]: GETGLOBAL R53 K137     ; R53 := 0xF595ADDE
+894 [-]: GETGLOBAL R54 K2       ; R54 := mMovie
+895 [-]: SELF      R54 R54 K138 ; R55 := R54; R54 := R54["0x294C4B0B"]
+896 [-]: GETUPVAL  R56 U44      ; R56 := U44
+897 [-]: GETTABLE  R56 R56 R51  ; R56 := R56[R51]
+898 [-]: GETTABLE  R56 R56 K121 ; R56 := R56["Node"]
+899 [-]: GETTABLE  R56 R56 K139 ; R56 := R56["memberIndex"]
+900 [-]: LOADK     R57 K141     ; R57 := "_y"
+901 [-]: CALL      R54 4 0      ; R54,... := R54(R55,R56,R57)
+902 [-]: CALL      R53 0 2      ; R53 := R53(R54,...)
+903 [-]: GETUPVAL  R54 U11      ; R54 := U11
+904 [-]: GETTABLE  R54 R54 K142 ; R54 := R54["0x4F6BF2C8"]
+905 [-]: GETGLOBAL R55 K2       ; R55 := mMovie
+906 [-]: NEWTABLE  R56 0 2      ; R56 := {}
+907 [-]: SETTABLE  R56 K93 R52  ; R56["x"] := R52
+908 [-]: SETTABLE  R56 K100 R53 ; R56["y"] := R53
+909 [-]: CALL      R54 3 2      ; R54 := R54(R55,R56)
+910 [-]: GETTABLE  R55 R54 K93  ; R55 := R54["x"]
+911 [-]: LT        0 K19 R55    ; if 0 >= R55 then PC := 943
+912 [-]: JMP       943          ; PC := 943
+913 [-]: GETTABLE  R55 R54 K100 ; R55 := R54["y"]
+914 [-]: LT        0 K19 R55    ; if 0 >= R55 then PC := 943
+915 [-]: JMP       943          ; PC := 943
+916 [-]: GETTABLE  R55 R54 K93  ; R55 := R54["x"]
+917 [-]: LT        0 R55 K22    ; if R55 >= 1 then PC := 943
+918 [-]: JMP       943          ; PC := 943
+919 [-]: GETTABLE  R55 R54 K100 ; R55 := R54["y"]
+920 [-]: LT        0 R55 K22    ; if R55 >= 1 then PC := 943
+921 [-]: JMP       943          ; PC := 943
+922 [-]: GETUPVAL  R55 U0       ; R55 := U0
+923 [-]: SELF      R55 R55 K143 ; R56 := R55; R55 := R55["0x61494587"]
+924 [-]: DIV       R57 R52 R46  ; R57 := R52 / R46
+925 [-]: MUL       R57 R57 K22  ; R57 := R57 * 1
+926 [-]: CLOSURE   R58 1        ; R58 := closure(Function #128.2)
+927 [-]: GETUPVAL  R0 U44       ; R0 := U44
+928 [-]: MOVE      R0 R51       ; R0 := R51
+929 [-]: GETUPVAL  R0 U2        ; R0 := U2
+930 [-]: GETUPVAL  R0 U10       ; R0 := U10
+931 [-]: GETUPVAL  R0 U11       ; R0 := U11
+932 [-]: CALL      R55 4 1      ; R55(R56,R57,R58)
+933 [-]: TEST      R47 1        ; if R47 then PC := 943
+934 [-]: JMP       943          ; PC := 943
+935 [-]: MOVE      R47 R1       ; R47 := R1
+936 [-]: GETUPVAL  R55 U0       ; R55 := U0
+937 [-]: SELF      R55 R55 K143 ; R56 := R55; R55 := R55["0x61494587"]
+938 [-]: DIV       R57 R52 R46  ; R57 := R52 / R46
+939 [-]: MUL       R57 R57 K22  ; R57 := R57 * 1
+940 [-]: CLOSURE   R58 2        ; R58 := closure(Function #128.3)
+941 [-]: GETUPVAL  R0 U11       ; R0 := U11
+942 [-]: CALL      R55 4 1      ; R55(R56,R57,R58)
+943 [-]: CLOSE     R51          ; SAVE R51,...
+944 [-]: FORLOOP   R48 883      ; R48 += R50; if R48 <= R49 then begin PC := 883; R51 := R48 end
+945 [-]: LOADK     R51 K22      ; R51 := 1
+946 [-]: GETUPVAL  R52 U45      ; R52 := U45
+947 [-]: LEN       R52 R52      ; R52 := # R52
+948 [-]: LOADK     R53 K22      ; R53 := 1
+949 [-]: FORPREP   R51 1010     ; R51 -= R53; PC := 1010
+950 [-]: GETGLOBAL R55 K137     ; R55 := 0xF595ADDE
+951 [-]: GETGLOBAL R56 K2       ; R56 := mMovie
+952 [-]: SELF      R56 R56 K138 ; R57 := R56; R56 := R56["0x294C4B0B"]
+953 [-]: GETUPVAL  R58 U45      ; R58 := U45
+954 [-]: GETTABLE  R58 R58 R54  ; R58 := R58[R54]
+955 [-]: GETTABLE  R58 R58 K121 ; R58 := R58["Node"]
+956 [-]: GETTABLE  R58 R58 K139 ; R58 := R58["memberIndex"]
+957 [-]: LOADK     R59 K140     ; R59 := "_x"
+958 [-]: CALL      R56 4 0      ; R56,... := R56(R57,R58,R59)
+959 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
+960 [-]: GETGLOBAL R56 K137     ; R56 := 0xF595ADDE
+961 [-]: GETGLOBAL R57 K2       ; R57 := mMovie
+962 [-]: SELF      R57 R57 K138 ; R58 := R57; R57 := R57["0x294C4B0B"]
+963 [-]: GETUPVAL  R59 U45      ; R59 := U45
+964 [-]: GETTABLE  R59 R59 R54  ; R59 := R59[R54]
+965 [-]: GETTABLE  R59 R59 K121 ; R59 := R59["Node"]
+966 [-]: GETTABLE  R59 R59 K139 ; R59 := R59["memberIndex"]
+967 [-]: LOADK     R60 K141     ; R60 := "_y"
+968 [-]: CALL      R57 4 0      ; R57,... := R57(R58,R59,R60)
+969 [-]: CALL      R56 0 2      ; R56 := R56(R57,...)
+970 [-]: GETUPVAL  R57 U11      ; R57 := U11
+971 [-]: GETTABLE  R57 R57 K142 ; R57 := R57["0x4F6BF2C8"]
+972 [-]: GETGLOBAL R58 K2       ; R58 := mMovie
+973 [-]: NEWTABLE  R59 0 2      ; R59 := {}
+974 [-]: SETTABLE  R59 K93 R55  ; R59["x"] := R55
+975 [-]: SETTABLE  R59 K100 R56 ; R59["y"] := R56
+976 [-]: CALL      R57 3 2      ; R57 := R57(R58,R59)
+977 [-]: GETTABLE  R58 R57 K93  ; R58 := R57["x"]
+978 [-]: LT        0 K19 R58    ; if 0 >= R58 then PC := 1009
+979 [-]: JMP       1009         ; PC := 1009
+980 [-]: GETTABLE  R58 R57 K100 ; R58 := R57["y"]
+981 [-]: LT        0 K19 R58    ; if 0 >= R58 then PC := 1009
+982 [-]: JMP       1009         ; PC := 1009
+983 [-]: GETTABLE  R58 R57 K93  ; R58 := R57["x"]
+984 [-]: LT        0 R58 K22    ; if R58 >= 1 then PC := 1009
+985 [-]: JMP       1009         ; PC := 1009
+986 [-]: GETTABLE  R58 R57 K100 ; R58 := R57["y"]
+987 [-]: LT        0 R58 K22    ; if R58 >= 1 then PC := 1009
+988 [-]: JMP       1009         ; PC := 1009
+989 [-]: GETUPVAL  R58 U0       ; R58 := U0
+990 [-]: SELF      R58 R58 K143 ; R59 := R58; R58 := R58["0x61494587"]
+991 [-]: DIV       R60 R55 R46  ; R60 := R55 / R46
+992 [-]: MUL       R60 R60 K22  ; R60 := R60 * 1
+993 [-]: CLOSURE   R61 3        ; R61 := closure(Function #128.4)
+994 [-]: GETUPVAL  R0 U45       ; R0 := U45
+995 [-]: MOVE      R0 R54       ; R0 := R54
+996 [-]: GETUPVAL  R0 U10       ; R0 := U10
+997 [-]: GETUPVAL  R0 U11       ; R0 := U11
+998 [-]: CALL      R58 4 1      ; R58(R59,R60,R61)
+999 [-]: TEST      R47 1        ; if R47 then PC := 1009
+1000 [-]: JMP       1009         ; PC := 1009
+1001 [-]: MOVE      R47 R1       ; R47 := R1
+1002 [-]: GETUPVAL  R58 U0       ; R58 := U0
+1003 [-]: SELF      R58 R58 K143 ; R59 := R58; R58 := R58["0x61494587"]
+1004 [-]: DIV       R60 R55 R46  ; R60 := R55 / R46
+1005 [-]: MUL       R60 R60 K22  ; R60 := R60 * 1
+1006 [-]: CLOSURE   R61 4        ; R61 := closure(Function #128.5)
+1007 [-]: GETUPVAL  R0 U11       ; R0 := U11
+1008 [-]: CALL      R58 4 1      ; R58(R59,R60,R61)
+1009 [-]: CLOSE     R54          ; SAVE R54,...
+1010 [-]: FORLOOP   R51 950      ; R51 += R53; if R51 <= R52 then begin PC := 950; R54 := R51 end
+1011 [-]: GETUPVAL  R54 U21      ; R54 := U21
+1012 [-]: GETTABLE  R54 R54 K121 ; R54 := R54["Node"]
+1013 [-]: EQ        1 R54 K38    ; if R54 == nil then PC := 1155
+1014 [-]: JMP       1155         ; PC := 1155
+1015 [-]: GETUPVAL  R54 U21      ; R54 := U21
+1016 [-]: GETTABLE  R54 R54 K144 ; R54 := R54["UpdateTimer"]
+1017 [-]: EQ        1 R54 K38    ; if R54 == nil then PC := 1155
+1018 [-]: JMP       1155         ; PC := 1155
+1019 [-]: GETUPVAL  R54 U21      ; R54 := U21
+1020 [-]: GETTABLE  R54 R54 K145 ; R54 := R54["TimerPre"]
+1021 [-]: EQ        1 R54 K38    ; if R54 == nil then PC := 1155
+1022 [-]: JMP       1155         ; PC := 1155
+1023 [-]: GETUPVAL  R54 U21      ; R54 := U21
+1024 [-]: GETTABLE  R54 R54 K146 ; R54 := R54["TimerPost"]
+1025 [-]: EQ        1 R54 K38    ; if R54 == nil then PC := 1155
+1026 [-]: JMP       1155         ; PC := 1155
+1027 [-]: GETUPVAL  R54 U21      ; R54 := U21
+1028 [-]: GETTABLE  R54 R54 K147 ; R54 := R54["NodeTime"]
+1029 [-]: EQ        1 R54 K38    ; if R54 == nil then PC := 1155
+1030 [-]: JMP       1155         ; PC := 1155
+1031 [-]: GETUPVAL  R54 U21      ; R54 := U21
 1032 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1033 [-]: GETTABLE  R55 R55 K147 ; R55 := R55["TimerPost"]
-1034 [-]: EQ        1 R55 K38    ; if R55 == nil then PC := 1164
-1035 [-]: JMP       1164         ; PC := 1164
-1036 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1037 [-]: GETTABLE  R55 R55 K148 ; R55 := R55["NodeTime"]
-1038 [-]: EQ        1 R55 K38    ; if R55 == nil then PC := 1164
-1039 [-]: JMP       1164         ; PC := 1164
-1040 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1041 [-]: GETUPVAL  R56 U21      ; R56 := U21
-1042 [-]: GETTABLE  R56 R56 K145 ; R56 := R56["UpdateTimer"]
-1043 [-]: ADD       R56 R56 R0   ; R56 := R56 + R0
-1044 [-]: SETTABLE  R55 K145 R56 ; R55["UpdateTimer"] := R56
-1045 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1046 [-]: GETTABLE  R55 R55 K145 ; R55 := R55["UpdateTimer"]
-1047 [-]: LT        0 K22 R55    ; if 1 >= R55 then PC := 1164
-1048 [-]: JMP       1164         ; PC := 1164
-1049 [-]: GETUPVAL  R55 U21      ; R55 := U21
-1050 [-]: GETUPVAL  R56 U21      ; R56 := U21
-1051 [-]: GETTABLE  R56 R56 K148 ; R56 := R56["NodeTime"]
-1052 [-]: GETUPVAL  R57 U21      ; R57 := U21
-1053 [-]: GETTABLE  R57 R57 K145 ; R57 := R57["UpdateTimer"]
-1054 [-]: SUB       R56 R56 R57  ; R56 := R56 - R57
-1055 [-]: SETTABLE  R55 K148 R56 ; R55["NodeTime"] := R56
-1056 [-]: GETUPVAL  R55 U49      ; R55 := U49
-1057 [-]: GETTABLE  R55 R55 K149 ; R55 := R55["0x555EFA5"]
-1058 [-]: GETUPVAL  R56 U50      ; R56 := U50
-1059 [-]: GETTABLE  R56 R56 K150 ; R56 := R56["mMission"]
-1060 [-]: GETTABLE  R56 R56 K151 ; R56 := R56["location"]
-1061 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-1062 [-]: GETUPVAL  R56 U49      ; R56 := U49
-1063 [-]: GETTABLE  R56 R56 K152 ; R56 := R56["0x447FCC2F"]
-1064 [-]: MOVE      R57 R55      ; R57 := R55
-1065 [-]: GETUPVAL  R58 U50      ; R58 := U50
-1066 [-]: GETTABLE  R58 R58 K150 ; R58 := R58["mMission"]
-1067 [-]: GETTABLE  R58 R58 K151 ; R58 := R58["location"]
-1068 [-]: CALL      R56 3 4      ; R56,R57,R58 := R56(R57,R58)
-1069 [-]: GETUPVAL  R59 U21      ; R59 := U21
-1070 [-]: GETTABLE  R59 R59 K148 ; R59 := R59["NodeTime"]
-1071 [-]: LT        0 R59 K19    ; if R59 >= 0 then PC := 1076
-1072 [-]: JMP       1076         ; PC := 1076
-1073 [-]: GETUPVAL  R59 U21      ; R59 := U21
-1074 [-]: SETTABLE  R59 K148 R58 ; R59["NodeTime"] := R58
-1075 [-]: JMP       1078         ; PC := 1078
-1076 [-]: GETUPVAL  R59 U21      ; R59 := U21
-1077 [-]: GETTABLE  R58 R59 K148 ; R58 := R59["NodeTime"]
-1078 [-]: GETUPVAL  R59 U21      ; R59 := U21
-1079 [-]: GETTABLE  R59 R59 K146 ; R59 := R59["TimerPre"]
-1080 [-]: GETUPVAL  R60 U50      ; R60 := U50
-1081 [-]: GETTABLE  R60 R60 K150 ; R60 := R60["mMission"]
-1082 [-]: GETTABLE  R60 R60 K151 ; R60 := R60["location"]
-1083 [-]: GETUPVAL  R61 U49      ; R61 := U49
-1084 [-]: GETTABLE  R61 R61 K153 ; R61 := R61["ORB_VALLIS_NODE_TAG"]
-1085 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 1120
-1086 [-]: JMP       1120         ; PC := 1120
-1087 [-]: MOVE      R60 R59      ; R60 := R59
-1088 [-]: LOADK     R61 K154     ; R61 := "<font color=\"#A9A9A9\">"
-1089 [-]: GETGLOBAL R62 K27      ; R62 := string
-1090 [-]: GETTABLE  R62 R62 K155 ; R62 := R62["0x639C642A"]
-1091 [-]: GETGLOBAL R63 K2       ; R63 := mMovie
-1092 [-]: SELF      R63 R63 K156 ; R64 := R63; R63 := R63["0x5DB0BD4"]
-1093 [-]: LOADK     R65 K157     ; R65 := "/Lotus/Language/SolarisVenus/Temperature"
-1094 [-]: MOVE      R66 R1       ; R66 := R1
-1095 [-]: CALL      R63 4 0      ; R63,... := R63(R64,R65,R66)
-1096 [-]: CALL      R62 0 2      ; R62 := R62(R63,...)
-1097 [-]: LOADK     R63 K158     ; R63 := "  </font><font color=\"#CACACA\"><b>"
-1098 [-]: GETGLOBAL R64 K2       ; R64 := mMovie
-1099 [-]: SELF      R64 R64 K156 ; R65 := R64; R64 := R64["0x5DB0BD4"]
-1100 [-]: LOADK     R66 K159     ; R66 := "/Lotus/Language/SystemMessages/TimeUntil"
-1101 [-]: MOVE      R67 R0       ; R67 := R0
-1102 [-]: NEWTABLE  R68 0 2      ; R68 := {}
-1103 [-]: GETGLOBAL R69 K2       ; R69 := mMovie
-1104 [-]: SELF      R69 R69 K156 ; R70 := R69; R69 := R69["0x5DB0BD4"]
-1105 [-]: MOVE      R71 R57      ; R71 := R57
-1106 [-]: MOVE      R72 R0       ; R72 := R0
-1107 [-]: CALL      R69 4 2      ; R69 := R69(R70,R71,R72)
-1108 [-]: SETTABLE  R68 K160 R69 ; R68["LABEL"] := R69
-1109 [-]: GETUPVAL  R69 U49      ; R69 := U49
-1110 [-]: GETTABLE  R69 R69 K162 ; R69 := R69["0xC65D09DD"]
-1111 [-]: GETGLOBAL R70 K2       ; R70 := mMovie
-1112 [-]: MOVE      R71 R58      ; R71 := R58
-1113 [-]: LOADK     R72 K163     ; R72 := "CompactOne"
-1114 [-]: CALL      R69 4 2      ; R69 := R69(R70,R71,R72)
-1115 [-]: SETTABLE  R68 K161 R69 ; R68["TIME"] := R69
-1116 [-]: CALL      R64 5 2      ; R64 := R64(R65,R66,R67,R68)
-1117 [-]: LOADK     R65 K164     ; R65 := "</b><br></font>"
-1118 [-]: CONCAT    R59 R60 R65  ; R59 := R60 .. R61 .. R62 .. R63 .. R64 .. R65
-1119 [-]: JMP       1152         ; PC := 1152
-1120 [-]: MOVE      R60 R59      ; R60 := R59
-1121 [-]: LOADK     R61 K154     ; R61 := "<font color=\"#A9A9A9\">"
-1122 [-]: GETGLOBAL R62 K27      ; R62 := string
-1123 [-]: GETTABLE  R62 R62 K155 ; R62 := R62["0x639C642A"]
-1124 [-]: GETGLOBAL R63 K2       ; R63 := mMovie
-1125 [-]: SELF      R63 R63 K156 ; R64 := R63; R63 := R63["0x5DB0BD4"]
-1126 [-]: LOADK     R65 K165     ; R65 := "/Lotus/Language/Menu/Photobooth_TimeOfDay"
-1127 [-]: MOVE      R66 R1       ; R66 := R1
-1128 [-]: CALL      R63 4 0      ; R63,... := R63(R64,R65,R66)
-1129 [-]: CALL      R62 0 2      ; R62 := R62(R63,...)
-1130 [-]: LOADK     R63 K158     ; R63 := "  </font><font color=\"#CACACA\"><b>"
-1131 [-]: GETGLOBAL R64 K2       ; R64 := mMovie
-1132 [-]: SELF      R64 R64 K156 ; R65 := R64; R64 := R64["0x5DB0BD4"]
-1133 [-]: LOADK     R66 K159     ; R66 := "/Lotus/Language/SystemMessages/TimeUntil"
-1134 [-]: MOVE      R67 R0       ; R67 := R0
-1135 [-]: NEWTABLE  R68 0 2      ; R68 := {}
-1136 [-]: GETGLOBAL R69 K2       ; R69 := mMovie
-1137 [-]: SELF      R69 R69 K156 ; R70 := R69; R69 := R69["0x5DB0BD4"]
-1138 [-]: MOVE      R71 R57      ; R71 := R57
-1139 [-]: MOVE      R72 R0       ; R72 := R0
-1140 [-]: CALL      R69 4 2      ; R69 := R69(R70,R71,R72)
-1141 [-]: SETTABLE  R68 K160 R69 ; R68["LABEL"] := R69
-1142 [-]: GETUPVAL  R69 U49      ; R69 := U49
-1143 [-]: GETTABLE  R69 R69 K162 ; R69 := R69["0xC65D09DD"]
-1144 [-]: GETGLOBAL R70 K2       ; R70 := mMovie
-1145 [-]: MOVE      R71 R58      ; R71 := R58
-1146 [-]: LOADK     R72 K163     ; R72 := "CompactOne"
-1147 [-]: CALL      R69 4 2      ; R69 := R69(R70,R71,R72)
-1148 [-]: SETTABLE  R68 K161 R69 ; R68["TIME"] := R69
-1149 [-]: CALL      R64 5 2      ; R64 := R64(R65,R66,R67,R68)
-1150 [-]: LOADK     R65 K164     ; R65 := "</b><br></font>"
-1151 [-]: CONCAT    R59 R60 R65  ; R59 := R60 .. R61 .. R62 .. R63 .. R64 .. R65
-1152 [-]: MOVE      R60 R59      ; R60 := R59
-1153 [-]: GETUPVAL  R61 U21      ; R61 := U21
-1154 [-]: GETTABLE  R61 R61 K147 ; R61 := R61["TimerPost"]
-1155 [-]: CONCAT    R59 R60 R61  ; R59 := R60 .. R61
-1156 [-]: GETGLOBAL R60 K2       ; R60 := mMovie
-1157 [-]: SELF      R60 R60 K166 ; R61 := R60; R60 := R60["0x1C19D966"]
-1158 [-]: LOADK     R62 K167     ; R62 := "InfoTip.Label"
-1159 [-]: LOADK     R63 K168     ; R63 := "text"
-1160 [-]: MOVE      R64 R59      ; R64 := R59
-1161 [-]: CALL      R60 5 1      ; R60(R61,R62,R63,R64)
-1162 [-]: GETUPVAL  R60 U21      ; R60 := U21
-1163 [-]: SETTABLE  R60 K145 K19 ; R60["UpdateTimer"] := 0
-1164 [-]: GETGLOBAL R60 K1       ; R60 := 0x400E7765
-1165 [-]: GETUPVAL  R61 U10      ; R61 := U10
-1166 [-]: GETTABLE  R61 R61 K169 ; R61 := R61["CountDownFx"]
-1167 [-]: CALL      R60 2 2      ; R60 := R60(R61)
-1168 [-]: TEST      R60 1        ; if R60 then PC := 1182
-1169 [-]: JMP       1182         ; PC := 1182
-1170 [-]: GETGLOBAL R60 K1       ; R60 := 0x400E7765
-1171 [-]: GETUPVAL  R61 U10      ; R61 := U10
-1172 [-]: GETTABLE  R61 R61 K169 ; R61 := R61["CountDownFx"]
-1173 [-]: GETTABLE  R61 R61 K39  ; R61 := R61["mInstance"]
-1174 [-]: CALL      R60 2 2      ; R60 := R60(R61)
-1175 [-]: TEST      R60 1        ; if R60 then PC := 1182
-1176 [-]: JMP       1182         ; PC := 1182
-1177 [-]: GETUPVAL  R60 U10      ; R60 := U10
-1178 [-]: GETTABLE  R60 R60 K169 ; R60 := R60["CountDownFx"]
-1179 [-]: SELF      R60 R60 K4   ; R61 := R60; R60 := R60["0x8C7099E9"]
-1180 [-]: MOVE      R62 R0       ; R62 := R0
-1181 [-]: CALL      R60 3 1      ; R60(R61,R62)
-1182 [-]: GETGLOBAL R60 K170     ; R60 := 0xECFDD17
-1183 [-]: GETUPVAL  R61 U10      ; R61 := U10
-1184 [-]: GETTABLE  R61 R61 K171 ; R61 := R61["PendingFx"]
-1185 [-]: CALL      R60 2 4      ; R60,R61,R62 := R60(R61)
-1186 [-]: JMP       1199         ; PC := 1199
-1187 [-]: GETGLOBAL R65 K1       ; R65 := 0x400E7765
-1188 [-]: GETTABLE  R66 R64 K39  ; R66 := R64["mInstance"]
-1189 [-]: CALL      R65 2 2      ; R65 := R65(R66)
-1190 [-]: TEST      R65 1        ; if R65 then PC := 1196
-1191 [-]: JMP       1196         ; PC := 1196
-1192 [-]: SELF      R65 R64 K4   ; R66 := R64; R65 := R64["0x8C7099E9"]
-1193 [-]: MOVE      R67 R0       ; R67 := R0
-1194 [-]: CALL      R65 3 1      ; R65(R66,R67)
-1195 [-]: JMP       1199         ; PC := 1199
-1196 [-]: GETUPVAL  R65 U10      ; R65 := U10
-1197 [-]: GETTABLE  R65 R65 K171 ; R65 := R65["PendingFx"]
-1198 [-]: SETTABLE  R65 R63 K38  ; R65[R63] := nil
-1199 [-]: TFORLOOP  R60 2        ; R63,R64 :=  R60(R61,R62); if R63 ~= nil then begin PC = 1187; R62 := R63 end
-1200 [-]: JMP       1187         ; PC := 1187
-1201 [-]: GETGLOBAL R65 K170     ; R65 := 0xECFDD17
-1202 [-]: GETUPVAL  R66 U10      ; R66 := U10
-1203 [-]: GETTABLE  R66 R66 K172 ; R66 := R66["QuestFx"]
-1204 [-]: CALL      R65 2 4      ; R65,R66,R67 := R65(R66)
-1205 [-]: JMP       1218         ; PC := 1218
-1206 [-]: GETGLOBAL R70 K1       ; R70 := 0x400E7765
-1207 [-]: GETTABLE  R71 R69 K39  ; R71 := R69["mInstance"]
-1208 [-]: CALL      R70 2 2      ; R70 := R70(R71)
-1209 [-]: TEST      R70 1        ; if R70 then PC := 1215
-1210 [-]: JMP       1215         ; PC := 1215
-1211 [-]: SELF      R70 R69 K4   ; R71 := R69; R70 := R69["0x8C7099E9"]
-1212 [-]: MOVE      R72 R0       ; R72 := R0
-1213 [-]: CALL      R70 3 1      ; R70(R71,R72)
-1214 [-]: JMP       1218         ; PC := 1218
-1215 [-]: GETUPVAL  R70 U10      ; R70 := U10
-1216 [-]: GETTABLE  R70 R70 K172 ; R70 := R70["QuestFx"]
-1217 [-]: SETTABLE  R70 R68 K38  ; R70[R68] := nil
-1218 [-]: TFORLOOP  R65 2        ; R68,R69 :=  R65(R66,R67); if R68 ~= nil then begin PC = 1206; R67 := R68 end
-1219 [-]: JMP       1206         ; PC := 1206
-1220 [-]: GETGLOBAL R70 K170     ; R70 := 0xECFDD17
-1221 [-]: GETUPVAL  R71 U10      ; R71 := U10
-1222 [-]: GETTABLE  R71 R71 K37  ; R71 := R71["SentientFx"]
-1223 [-]: CALL      R70 2 4      ; R70,R71,R72 := R70(R71)
-1224 [-]: JMP       1237         ; PC := 1237
-1225 [-]: GETGLOBAL R75 K1       ; R75 := 0x400E7765
-1226 [-]: GETTABLE  R76 R74 K39  ; R76 := R74["mInstance"]
-1227 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1228 [-]: TEST      R75 1        ; if R75 then PC := 1234
-1229 [-]: JMP       1234         ; PC := 1234
-1230 [-]: SELF      R75 R74 K4   ; R76 := R74; R75 := R74["0x8C7099E9"]
-1231 [-]: MOVE      R77 R0       ; R77 := R0
-1232 [-]: CALL      R75 3 1      ; R75(R76,R77)
-1233 [-]: JMP       1237         ; PC := 1237
-1234 [-]: GETUPVAL  R75 U10      ; R75 := U10
-1235 [-]: GETTABLE  R75 R75 K37  ; R75 := R75["SentientFx"]
-1236 [-]: SETTABLE  R75 R73 K38  ; R75[R73] := nil
-1237 [-]: TFORLOOP  R70 2        ; R73,R74 :=  R70(R71,R72); if R73 ~= nil then begin PC = 1225; R72 := R73 end
-1238 [-]: JMP       1225         ; PC := 1225
-1239 [-]: GETUPVAL  R75 U51      ; R75 := U51
-1240 [-]: TEST      R75 0        ; if not R75 then PC := 1246
-1241 [-]: JMP       1246         ; PC := 1246
-1242 [-]: MOVE      R75 R0       ; R75 := R0
-1243 [-]: MOVE      R75 R51      ; R75 := R51
-1244 [-]: GETUPVAL  R75 U52      ; R75 := U52
-1245 [-]: CALL      R75 1 1      ; R75()
-1246 [-]: GETGLOBAL R75 K62      ; R75 := _T
-1247 [-]: GETTABLE  R75 R75 K173 ; R75 := R75["UserInvitePending"]
-1248 [-]: EQ        0 R75 K38    ; if R75 ~= nil then PC := 1251
-1249 [-]: JMP       1251         ; PC := 1251
-1250 [-]: MOVE      R75 R0       ; R75 := R0
-1251 [-]: MOVE      R75 R1       ; R75 := R1
-1252 [-]: GETUPVAL  R76 U53      ; R76 := U53
-1253 [-]: EQ        1 R76 R75    ; if R76 == R75 then PC := 1258
-1254 [-]: JMP       1258         ; PC := 1258
-1255 [-]: MOVE      R75 R53      ; R75 := R53
-1256 [-]: GETUPVAL  R76 U54      ; R76 := U54
-1257 [-]: CALL      R76 1 1      ; R76()
-1258 [-]: RETURN    R0 1         ; return 
+1033 [-]: GETTABLE  R55 R55 K144 ; R55 := R55["UpdateTimer"]
+1034 [-]: ADD       R55 R55 R0   ; R55 := R55 + R0
+1035 [-]: SETTABLE  R54 K144 R55 ; R54["UpdateTimer"] := R55
+1036 [-]: GETUPVAL  R54 U21      ; R54 := U21
+1037 [-]: GETTABLE  R54 R54 K144 ; R54 := R54["UpdateTimer"]
+1038 [-]: LT        0 K22 R54    ; if 1 >= R54 then PC := 1155
+1039 [-]: JMP       1155         ; PC := 1155
+1040 [-]: GETUPVAL  R54 U21      ; R54 := U21
+1041 [-]: GETUPVAL  R55 U21      ; R55 := U21
+1042 [-]: GETTABLE  R55 R55 K147 ; R55 := R55["NodeTime"]
+1043 [-]: GETUPVAL  R56 U21      ; R56 := U21
+1044 [-]: GETTABLE  R56 R56 K144 ; R56 := R56["UpdateTimer"]
+1045 [-]: SUB       R55 R55 R56  ; R55 := R55 - R56
+1046 [-]: SETTABLE  R54 K147 R55 ; R54["NodeTime"] := R55
+1047 [-]: GETUPVAL  R54 U49      ; R54 := U49
+1048 [-]: GETTABLE  R54 R54 K148 ; R54 := R54["0x555EFA5"]
+1049 [-]: GETUPVAL  R55 U50      ; R55 := U50
+1050 [-]: GETTABLE  R55 R55 K149 ; R55 := R55["mMission"]
+1051 [-]: GETTABLE  R55 R55 K150 ; R55 := R55["location"]
+1052 [-]: CALL      R54 2 2      ; R54 := R54(R55)
+1053 [-]: GETUPVAL  R55 U49      ; R55 := U49
+1054 [-]: GETTABLE  R55 R55 K151 ; R55 := R55["0x447FCC2F"]
+1055 [-]: MOVE      R56 R54      ; R56 := R54
+1056 [-]: GETUPVAL  R57 U50      ; R57 := U50
+1057 [-]: GETTABLE  R57 R57 K149 ; R57 := R57["mMission"]
+1058 [-]: GETTABLE  R57 R57 K150 ; R57 := R57["location"]
+1059 [-]: CALL      R55 3 4      ; R55,R56,R57 := R55(R56,R57)
+1060 [-]: GETUPVAL  R58 U21      ; R58 := U21
+1061 [-]: GETTABLE  R58 R58 K147 ; R58 := R58["NodeTime"]
+1062 [-]: LT        0 R58 K19    ; if R58 >= 0 then PC := 1067
+1063 [-]: JMP       1067         ; PC := 1067
+1064 [-]: GETUPVAL  R58 U21      ; R58 := U21
+1065 [-]: SETTABLE  R58 K147 R57 ; R58["NodeTime"] := R57
+1066 [-]: JMP       1069         ; PC := 1069
+1067 [-]: GETUPVAL  R58 U21      ; R58 := U21
+1068 [-]: GETTABLE  R57 R58 K147 ; R57 := R58["NodeTime"]
+1069 [-]: GETUPVAL  R58 U21      ; R58 := U21
+1070 [-]: GETTABLE  R58 R58 K145 ; R58 := R58["TimerPre"]
+1071 [-]: GETUPVAL  R59 U50      ; R59 := U50
+1072 [-]: GETTABLE  R59 R59 K149 ; R59 := R59["mMission"]
+1073 [-]: GETTABLE  R59 R59 K150 ; R59 := R59["location"]
+1074 [-]: GETUPVAL  R60 U49      ; R60 := U49
+1075 [-]: GETTABLE  R60 R60 K152 ; R60 := R60["ORB_VALLIS_NODE_TAG"]
+1076 [-]: EQ        0 R59 R60    ; if R59 ~= R60 then PC := 1111
+1077 [-]: JMP       1111         ; PC := 1111
+1078 [-]: MOVE      R59 R58      ; R59 := R58
+1079 [-]: LOADK     R60 K153     ; R60 := "<font color=\"#A9A9A9\">"
+1080 [-]: GETGLOBAL R61 K27      ; R61 := string
+1081 [-]: GETTABLE  R61 R61 K154 ; R61 := R61["0x639C642A"]
+1082 [-]: GETGLOBAL R62 K2       ; R62 := mMovie
+1083 [-]: SELF      R62 R62 K155 ; R63 := R62; R62 := R62["0x5DB0BD4"]
+1084 [-]: LOADK     R64 K156     ; R64 := "/Lotus/Language/SolarisVenus/Temperature"
+1085 [-]: MOVE      R65 R1       ; R65 := R1
+1086 [-]: CALL      R62 4 0      ; R62,... := R62(R63,R64,R65)
+1087 [-]: CALL      R61 0 2      ; R61 := R61(R62,...)
+1088 [-]: LOADK     R62 K157     ; R62 := "  </font><font color=\"#CACACA\"><b>"
+1089 [-]: GETGLOBAL R63 K2       ; R63 := mMovie
+1090 [-]: SELF      R63 R63 K155 ; R64 := R63; R63 := R63["0x5DB0BD4"]
+1091 [-]: LOADK     R65 K158     ; R65 := "/Lotus/Language/SystemMessages/TimeUntil"
+1092 [-]: MOVE      R66 R0       ; R66 := R0
+1093 [-]: NEWTABLE  R67 0 2      ; R67 := {}
+1094 [-]: GETGLOBAL R68 K2       ; R68 := mMovie
+1095 [-]: SELF      R68 R68 K155 ; R69 := R68; R68 := R68["0x5DB0BD4"]
+1096 [-]: MOVE      R70 R56      ; R70 := R56
+1097 [-]: MOVE      R71 R0       ; R71 := R0
+1098 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+1099 [-]: SETTABLE  R67 K159 R68 ; R67["LABEL"] := R68
+1100 [-]: GETUPVAL  R68 U49      ; R68 := U49
+1101 [-]: GETTABLE  R68 R68 K161 ; R68 := R68["0xC65D09DD"]
+1102 [-]: GETGLOBAL R69 K2       ; R69 := mMovie
+1103 [-]: MOVE      R70 R57      ; R70 := R57
+1104 [-]: LOADK     R71 K162     ; R71 := "CompactOne"
+1105 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+1106 [-]: SETTABLE  R67 K160 R68 ; R67["TIME"] := R68
+1107 [-]: CALL      R63 5 2      ; R63 := R63(R64,R65,R66,R67)
+1108 [-]: LOADK     R64 K163     ; R64 := "</b><br></font>"
+1109 [-]: CONCAT    R58 R59 R64  ; R58 := R59 .. R60 .. R61 .. R62 .. R63 .. R64
+1110 [-]: JMP       1143         ; PC := 1143
+1111 [-]: MOVE      R59 R58      ; R59 := R58
+1112 [-]: LOADK     R60 K153     ; R60 := "<font color=\"#A9A9A9\">"
+1113 [-]: GETGLOBAL R61 K27      ; R61 := string
+1114 [-]: GETTABLE  R61 R61 K154 ; R61 := R61["0x639C642A"]
+1115 [-]: GETGLOBAL R62 K2       ; R62 := mMovie
+1116 [-]: SELF      R62 R62 K155 ; R63 := R62; R62 := R62["0x5DB0BD4"]
+1117 [-]: LOADK     R64 K164     ; R64 := "/Lotus/Language/Menu/Photobooth_TimeOfDay"
+1118 [-]: MOVE      R65 R1       ; R65 := R1
+1119 [-]: CALL      R62 4 0      ; R62,... := R62(R63,R64,R65)
+1120 [-]: CALL      R61 0 2      ; R61 := R61(R62,...)
+1121 [-]: LOADK     R62 K157     ; R62 := "  </font><font color=\"#CACACA\"><b>"
+1122 [-]: GETGLOBAL R63 K2       ; R63 := mMovie
+1123 [-]: SELF      R63 R63 K155 ; R64 := R63; R63 := R63["0x5DB0BD4"]
+1124 [-]: LOADK     R65 K158     ; R65 := "/Lotus/Language/SystemMessages/TimeUntil"
+1125 [-]: MOVE      R66 R0       ; R66 := R0
+1126 [-]: NEWTABLE  R67 0 2      ; R67 := {}
+1127 [-]: GETGLOBAL R68 K2       ; R68 := mMovie
+1128 [-]: SELF      R68 R68 K155 ; R69 := R68; R68 := R68["0x5DB0BD4"]
+1129 [-]: MOVE      R70 R56      ; R70 := R56
+1130 [-]: MOVE      R71 R0       ; R71 := R0
+1131 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+1132 [-]: SETTABLE  R67 K159 R68 ; R67["LABEL"] := R68
+1133 [-]: GETUPVAL  R68 U49      ; R68 := U49
+1134 [-]: GETTABLE  R68 R68 K161 ; R68 := R68["0xC65D09DD"]
+1135 [-]: GETGLOBAL R69 K2       ; R69 := mMovie
+1136 [-]: MOVE      R70 R57      ; R70 := R57
+1137 [-]: LOADK     R71 K162     ; R71 := "CompactOne"
+1138 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+1139 [-]: SETTABLE  R67 K160 R68 ; R67["TIME"] := R68
+1140 [-]: CALL      R63 5 2      ; R63 := R63(R64,R65,R66,R67)
+1141 [-]: LOADK     R64 K163     ; R64 := "</b><br></font>"
+1142 [-]: CONCAT    R58 R59 R64  ; R58 := R59 .. R60 .. R61 .. R62 .. R63 .. R64
+1143 [-]: MOVE      R59 R58      ; R59 := R58
+1144 [-]: GETUPVAL  R60 U21      ; R60 := U21
+1145 [-]: GETTABLE  R60 R60 K146 ; R60 := R60["TimerPost"]
+1146 [-]: CONCAT    R58 R59 R60  ; R58 := R59 .. R60
+1147 [-]: GETGLOBAL R59 K2       ; R59 := mMovie
+1148 [-]: SELF      R59 R59 K165 ; R60 := R59; R59 := R59["0x1C19D966"]
+1149 [-]: LOADK     R61 K166     ; R61 := "InfoTip.Label"
+1150 [-]: LOADK     R62 K167     ; R62 := "text"
+1151 [-]: MOVE      R63 R58      ; R63 := R58
+1152 [-]: CALL      R59 5 1      ; R59(R60,R61,R62,R63)
+1153 [-]: GETUPVAL  R59 U21      ; R59 := U21
+1154 [-]: SETTABLE  R59 K144 K19 ; R59["UpdateTimer"] := 0
+1155 [-]: GETGLOBAL R59 K1       ; R59 := 0x400E7765
+1156 [-]: GETUPVAL  R60 U10      ; R60 := U10
+1157 [-]: GETTABLE  R60 R60 K168 ; R60 := R60["CountDownFx"]
+1158 [-]: CALL      R59 2 2      ; R59 := R59(R60)
+1159 [-]: TEST      R59 1        ; if R59 then PC := 1173
+1160 [-]: JMP       1173         ; PC := 1173
+1161 [-]: GETGLOBAL R59 K1       ; R59 := 0x400E7765
+1162 [-]: GETUPVAL  R60 U10      ; R60 := U10
+1163 [-]: GETTABLE  R60 R60 K168 ; R60 := R60["CountDownFx"]
+1164 [-]: GETTABLE  R60 R60 K39  ; R60 := R60["mInstance"]
+1165 [-]: CALL      R59 2 2      ; R59 := R59(R60)
+1166 [-]: TEST      R59 1        ; if R59 then PC := 1173
+1167 [-]: JMP       1173         ; PC := 1173
+1168 [-]: GETUPVAL  R59 U10      ; R59 := U10
+1169 [-]: GETTABLE  R59 R59 K168 ; R59 := R59["CountDownFx"]
+1170 [-]: SELF      R59 R59 K4   ; R60 := R59; R59 := R59["0x8C7099E9"]
+1171 [-]: MOVE      R61 R0       ; R61 := R0
+1172 [-]: CALL      R59 3 1      ; R59(R60,R61)
+1173 [-]: GETGLOBAL R59 K169     ; R59 := 0xECFDD17
+1174 [-]: GETUPVAL  R60 U10      ; R60 := U10
+1175 [-]: GETTABLE  R60 R60 K170 ; R60 := R60["PendingFx"]
+1176 [-]: CALL      R59 2 4      ; R59,R60,R61 := R59(R60)
+1177 [-]: JMP       1190         ; PC := 1190
+1178 [-]: GETGLOBAL R64 K1       ; R64 := 0x400E7765
+1179 [-]: GETTABLE  R65 R63 K39  ; R65 := R63["mInstance"]
+1180 [-]: CALL      R64 2 2      ; R64 := R64(R65)
+1181 [-]: TEST      R64 1        ; if R64 then PC := 1187
+1182 [-]: JMP       1187         ; PC := 1187
+1183 [-]: SELF      R64 R63 K4   ; R65 := R63; R64 := R63["0x8C7099E9"]
+1184 [-]: MOVE      R66 R0       ; R66 := R0
+1185 [-]: CALL      R64 3 1      ; R64(R65,R66)
+1186 [-]: JMP       1190         ; PC := 1190
+1187 [-]: GETUPVAL  R64 U10      ; R64 := U10
+1188 [-]: GETTABLE  R64 R64 K170 ; R64 := R64["PendingFx"]
+1189 [-]: SETTABLE  R64 R62 K38  ; R64[R62] := nil
+1190 [-]: TFORLOOP  R59 2        ; R62,R63 :=  R59(R60,R61); if R62 ~= nil then begin PC = 1178; R61 := R62 end
+1191 [-]: JMP       1178         ; PC := 1178
+1192 [-]: GETGLOBAL R64 K169     ; R64 := 0xECFDD17
+1193 [-]: GETUPVAL  R65 U10      ; R65 := U10
+1194 [-]: GETTABLE  R65 R65 K171 ; R65 := R65["QuestFx"]
+1195 [-]: CALL      R64 2 4      ; R64,R65,R66 := R64(R65)
+1196 [-]: JMP       1209         ; PC := 1209
+1197 [-]: GETGLOBAL R69 K1       ; R69 := 0x400E7765
+1198 [-]: GETTABLE  R70 R68 K39  ; R70 := R68["mInstance"]
+1199 [-]: CALL      R69 2 2      ; R69 := R69(R70)
+1200 [-]: TEST      R69 1        ; if R69 then PC := 1206
+1201 [-]: JMP       1206         ; PC := 1206
+1202 [-]: SELF      R69 R68 K4   ; R70 := R68; R69 := R68["0x8C7099E9"]
+1203 [-]: MOVE      R71 R0       ; R71 := R0
+1204 [-]: CALL      R69 3 1      ; R69(R70,R71)
+1205 [-]: JMP       1209         ; PC := 1209
+1206 [-]: GETUPVAL  R69 U10      ; R69 := U10
+1207 [-]: GETTABLE  R69 R69 K171 ; R69 := R69["QuestFx"]
+1208 [-]: SETTABLE  R69 R67 K38  ; R69[R67] := nil
+1209 [-]: TFORLOOP  R64 2        ; R67,R68 :=  R64(R65,R66); if R67 ~= nil then begin PC = 1197; R66 := R67 end
+1210 [-]: JMP       1197         ; PC := 1197
+1211 [-]: GETGLOBAL R69 K169     ; R69 := 0xECFDD17
+1212 [-]: GETUPVAL  R70 U10      ; R70 := U10
+1213 [-]: GETTABLE  R70 R70 K37  ; R70 := R70["SentientFx"]
+1214 [-]: CALL      R69 2 4      ; R69,R70,R71 := R69(R70)
+1215 [-]: JMP       1228         ; PC := 1228
+1216 [-]: GETGLOBAL R74 K1       ; R74 := 0x400E7765
+1217 [-]: GETTABLE  R75 R73 K39  ; R75 := R73["mInstance"]
+1218 [-]: CALL      R74 2 2      ; R74 := R74(R75)
+1219 [-]: TEST      R74 1        ; if R74 then PC := 1225
+1220 [-]: JMP       1225         ; PC := 1225
+1221 [-]: SELF      R74 R73 K4   ; R75 := R73; R74 := R73["0x8C7099E9"]
+1222 [-]: MOVE      R76 R0       ; R76 := R0
+1223 [-]: CALL      R74 3 1      ; R74(R75,R76)
+1224 [-]: JMP       1228         ; PC := 1228
+1225 [-]: GETUPVAL  R74 U10      ; R74 := U10
+1226 [-]: GETTABLE  R74 R74 K37  ; R74 := R74["SentientFx"]
+1227 [-]: SETTABLE  R74 R72 K38  ; R74[R72] := nil
+1228 [-]: TFORLOOP  R69 2        ; R72,R73 :=  R69(R70,R71); if R72 ~= nil then begin PC = 1216; R71 := R72 end
+1229 [-]: JMP       1216         ; PC := 1216
+1230 [-]: GETUPVAL  R74 U51      ; R74 := U51
+1231 [-]: TEST      R74 0        ; if not R74 then PC := 1237
+1232 [-]: JMP       1237         ; PC := 1237
+1233 [-]: MOVE      R74 R0       ; R74 := R0
+1234 [-]: MOVE      R74 R51      ; R74 := R51
+1235 [-]: GETUPVAL  R74 U52      ; R74 := U52
+1236 [-]: CALL      R74 1 1      ; R74()
+1237 [-]: GETGLOBAL R74 K62      ; R74 := _T
+1238 [-]: GETTABLE  R74 R74 K172 ; R74 := R74["UserInvitePending"]
+1239 [-]: EQ        0 R74 K38    ; if R74 ~= nil then PC := 1242
+1240 [-]: JMP       1242         ; PC := 1242
+1241 [-]: MOVE      R74 R0       ; R74 := R0
+1242 [-]: MOVE      R74 R1       ; R74 := R1
+1243 [-]: GETUPVAL  R75 U53      ; R75 := U53
+1244 [-]: EQ        1 R75 R74    ; if R75 == R74 then PC := 1249
+1245 [-]: JMP       1249         ; PC := 1249
+1246 [-]: MOVE      R74 R53      ; R74 := R53
+1247 [-]: GETUPVAL  R75 U54      ; R75 := U54
+1248 [-]: CALL      R75 1 1      ; R75()
+1249 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #128.1:
 ;
 ; Name:            
-; Defined at line: 5661
+; Defined at line: 5680
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -20565,7 +20594,7 @@ code size: 4
 ; Function #128.1.1:
 ;
 ; Name:            
-; Defined at line: 5673
+; Defined at line: 5692
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -20579,7 +20608,7 @@ code size: 4
 ; Function #128.2:
 ;
 ; Name:            
-; Defined at line: 5821
+; Defined at line: 5839
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -20652,7 +20681,7 @@ code size: 4
 ; Function #128.3:
 ;
 ; Name:            
-; Defined at line: 5834
+; Defined at line: 5852
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -20668,7 +20697,7 @@ code size: 4
 ; Function #128.4:
 ;
 ; Name:            
-; Defined at line: 5848
+; Defined at line: 5866
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -20730,7 +20759,7 @@ code size: 4
 ; Function #128.5:
 ;
 ; Name:            
-; Defined at line: 5860
+; Defined at line: 5878
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -20746,144 +20775,147 @@ code size: 4
 ; Function #129:
 ;
 ; Name:            
-; Defined at line: 5941
+; Defined at line: 5959
 ; #Upvalues:       2
-; #Parameters:     0
+; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["Active"]
-  3 [-]: TEST      R0 0         ; if not R0 then PC := 20
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["Active"]
+  3 [-]: TEST      R1 0         ; if not R1 then PC := 20
   4 [-]: JMP       20           ; PC := 20
-  5 [-]: GETGLOBAL R0 K1        ; R0 := gMatchingService
-  6 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0xD5E03646"]
-  7 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  8 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
-  9 [-]: MOVE      R2 R0        ; R2 := R0
- 10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 11 [-]: TEST      R1 1         ; if R1 then PC := 20
+  5 [-]: GETGLOBAL R1 K1        ; R1 := gMatchingService
+  6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0xD5E03646"]
+  7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  8 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+  9 [-]: MOVE      R3 R1        ; R3 := R1
+ 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 11 [-]: TEST      R2 1         ; if R2 then PC := 20
  12 [-]: JMP       20           ; PC := 20
- 13 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0["0xEB3F45BE"]
- 14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 15 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["gameModeId"]
- 16 [-]: EQ        1 R1 K6      ; if R1 == 0 then PC := 20
+ 13 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0xEB3F45BE"]
+ 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 15 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["gameModeId"]
+ 16 [-]: EQ        1 R2 K6      ; if R2 == 0 then PC := 20
  17 [-]: JMP       20           ; PC := 20
- 18 [-]: MOVE      R1 R0        ; R1 := R0
- 19 [-]: RETURN    R1 2         ; return R1
- 20 [-]: LOADK     R1 K7        ; R1 := 30
- 21 [-]: GETGLOBAL R2 K1        ; R2 := gMatchingService
- 22 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x35DDC67D"]
- 23 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 24 [-]: LE        0 R2 K9      ; if R2 > 1 then PC := 37
- 25 [-]: JMP       37           ; PC := 37
- 26 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 27 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["0xEC3342D8"]
- 28 [-]: CALL      R2 1 2       ; R2 := R2()
- 29 [-]: TEST      R2 0         ; if not R2 then PC := 39
- 30 [-]: JMP       39           ; PC := 39
- 31 [-]: GETGLOBAL R2 K1        ; R2 := gMatchingService
- 32 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2["0x9BCA84D2"]
- 33 [-]: MOVE      R4 R1        ; R4 := R1
- 34 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 35 [-]: MOVE      R2 R2        ; R2 := R2
- 36 [-]: JMP       39           ; PC := 39
- 37 [-]: MOVE      R2 R0        ; R2 := R0
- 38 [-]: MOVE      R2 R1        ; R2 := R1
- 39 [-]: RETURN    R2 2         ; return R2
- 40 [-]: RETURN    R0 1         ; return 
+ 18 [-]: MOVE      R2 R0        ; R2 := R0
+ 19 [-]: RETURN    R2 2         ; return R2
+ 20 [-]: LOADK     R2 K7        ; R2 := 30
+ 21 [-]: TEST      R0 1         ; if R0 then PC := 39
+ 22 [-]: JMP       39           ; PC := 39
+ 23 [-]: GETGLOBAL R3 K1        ; R3 := gMatchingService
+ 24 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0x35DDC67D"]
+ 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 26 [-]: LE        0 R3 K9      ; if R3 > 1 then PC := 39
+ 27 [-]: JMP       39           ; PC := 39
+ 28 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 29 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["0xEC3342D8"]
+ 30 [-]: CALL      R3 1 2       ; R3 := R3()
+ 31 [-]: TEST      R3 0         ; if not R3 then PC := 41
+ 32 [-]: JMP       41           ; PC := 41
+ 33 [-]: GETGLOBAL R3 K1        ; R3 := gMatchingService
+ 34 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3["0x9BCA84D2"]
+ 35 [-]: MOVE      R5 R2        ; R5 := R2
+ 36 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 37 [-]: MOVE      R3 R3        ; R3 := R3
+ 38 [-]: JMP       41           ; PC := 41
+ 39 [-]: MOVE      R3 R0        ; R3 := R0
+ 40 [-]: MOVE      R3 R1        ; R3 := R1
+ 41 [-]: RETURN    R3 2         ; return R3
+ 42 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #130:
 ;
 ; Name:            
-; Defined at line: 5956
+; Defined at line: 5972
 ; #Upvalues:       2
-; #Parameters:     0
+; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x8709CE86"]
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K2        ; R1 := 0x400E7765
-  5 [-]: MOVE      R2 R0        ; R2 := R0
-  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  7 [-]: TEST      R1 1         ; if R1 then PC := 12
+  1 [-]: GETGLOBAL R1 K0        ; R1 := gGameRules
+  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x8709CE86"]
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+  5 [-]: MOVE      R3 R1        ; R3 := R1
+  6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  7 [-]: TEST      R2 1         ; if R2 then PC := 12
   8 [-]: JMP       12           ; PC := 12
-  9 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0["0x625791A8"]
- 10 [-]: MOVE      R3 R1        ; R3 := R1
- 11 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 12 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 13 [-]: CALL      R1 1 2       ; R1 := R1()
- 14 [-]: TEST      R1 0         ; if not R1 then PC := 28
- 15 [-]: JMP       28           ; PC := 28
- 16 [-]: GETGLOBAL R1 K2        ; R1 := 0x400E7765
- 17 [-]: GETGLOBAL R2 K4        ; R2 := _T
- 18 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["SquadOverlay"]
- 19 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 20 [-]: TEST      R1 1         ; if R1 then PC := 28
- 21 [-]: JMP       28           ; PC := 28
- 22 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 23 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["SquadOverlay"]
- 24 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x458F27A9"]
- 25 [-]: LOADK     R3 K7        ; R3 := "ForceExitMap"
- 26 [-]: LOADK     R4 K8        ; R4 := ""
- 27 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 28 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 29 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["0x18468666"]
- 30 [-]: LOADK     R2 K10       ; R2 := "Clan"
- 31 [-]: CALL      R1 2 1       ; R1(R2)
- 32 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 33 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["0x18468666"]
- 34 [-]: LOADK     R2 K11       ; R2 := "ClanSearch"
- 35 [-]: CALL      R1 2 1       ; R1(R2)
- 36 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 37 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["0x18468666"]
- 38 [-]: LOADK     R2 K12       ; R2 := "InvasionSelection"
- 39 [-]: CALL      R1 2 1       ; R1(R2)
- 40 [-]: GETGLOBAL R1 K2        ; R1 := 0x400E7765
- 41 [-]: GETGLOBAL R2 K4        ; R2 := _T
- 42 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["mTrigger"]
- 43 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 44 [-]: TEST      R1 1         ; if R1 then PC := 53
- 45 [-]: JMP       53           ; PC := 53
- 46 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 47 [-]: GETTABLE  R1 R1 K13    ; R1 := R1["mTrigger"]
- 48 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1["0x8D5886B7"]
- 49 [-]: LOADK     R3 K15       ; R3 := "Close"
- 50 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 51 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 52 [-]: SETTABLE  R1 K13 K16   ; R1["mTrigger"] := nil
- 53 [-]: GETGLOBAL R1 K4        ; R1 := _T
- 54 [-]: SETTABLE  R1 K17 K16   ; R1["DiegeticPosition"] := nil
- 55 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 56 [-]: GETTABLE  R1 R1 K18    ; R1 := R1["0x25992394"]
- 57 [-]: GETGLOBAL R2 K19       ; R2 := closeSound
- 58 [-]: CALL      R1 2 1       ; R1(R2)
- 59 [-]: GETGLOBAL R1 K20       ; R1 := gRegion
- 60 [-]: SELF      R1 R1 K21    ; R2 := R1; R1 := R1["0x3E2F6BF"]
- 61 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 62 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
- 63 [-]: MOVE      R3 R1        ; R3 := R1
- 64 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 65 [-]: TEST      R2 1         ; if R2 then PC := 72
- 66 [-]: JMP       72           ; PC := 72
- 67 [-]: SELF      R2 R1 K22    ; R3 := R1; R2 := R1["0x28609C89"]
- 68 [-]: GETGLOBAL R4 K23       ; R4 := 0xEC274B1A
- 69 [-]: LOADK     R5 K24       ; R5 := "IDLE"
- 70 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
- 71 [-]: CALL      R2 0 1       ; R2(R3,...)
- 72 [-]: GETGLOBAL R2 K25       ; R2 := mMovie
- 73 [-]: SELF      R2 R2 K26    ; R3 := R2; R2 := R2["0xA58BB96C"]
- 74 [-]: CALL      R2 2 1       ; R2(R3)
- 75 [-]: RETURN    R0 1         ; return 
+  9 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x625791A8"]
+ 10 [-]: MOVE      R4 R1        ; R4 := R1
+ 11 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 12 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 13 [-]: MOVE      R3 R0        ; R3 := R0
+ 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 15 [-]: TEST      R2 0         ; if not R2 then PC := 29
+ 16 [-]: JMP       29           ; PC := 29
+ 17 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+ 18 [-]: GETGLOBAL R3 K4        ; R3 := _T
+ 19 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["SquadOverlay"]
+ 20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 21 [-]: TEST      R2 1         ; if R2 then PC := 29
+ 22 [-]: JMP       29           ; PC := 29
+ 23 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 24 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["SquadOverlay"]
+ 25 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x458F27A9"]
+ 26 [-]: LOADK     R4 K7        ; R4 := "ForceExitMap"
+ 27 [-]: LOADK     R5 K8        ; R5 := ""
+ 28 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 29 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 30 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["0x18468666"]
+ 31 [-]: LOADK     R3 K10       ; R3 := "Clan"
+ 32 [-]: CALL      R2 2 1       ; R2(R3)
+ 33 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 34 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["0x18468666"]
+ 35 [-]: LOADK     R3 K11       ; R3 := "ClanSearch"
+ 36 [-]: CALL      R2 2 1       ; R2(R3)
+ 37 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 38 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["0x18468666"]
+ 39 [-]: LOADK     R3 K12       ; R3 := "InvasionSelection"
+ 40 [-]: CALL      R2 2 1       ; R2(R3)
+ 41 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+ 42 [-]: GETGLOBAL R3 K4        ; R3 := _T
+ 43 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["mTrigger"]
+ 44 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 45 [-]: TEST      R2 1         ; if R2 then PC := 54
+ 46 [-]: JMP       54           ; PC := 54
+ 47 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 48 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["mTrigger"]
+ 49 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2["0x8D5886B7"]
+ 50 [-]: LOADK     R4 K15       ; R4 := "Close"
+ 51 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 52 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 53 [-]: SETTABLE  R2 K13 K16   ; R2["mTrigger"] := nil
+ 54 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 55 [-]: SETTABLE  R2 K17 K16   ; R2["DiegeticPosition"] := nil
+ 56 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 57 [-]: GETTABLE  R2 R2 K18    ; R2 := R2["0x25992394"]
+ 58 [-]: GETGLOBAL R3 K19       ; R3 := closeSound
+ 59 [-]: CALL      R2 2 1       ; R2(R3)
+ 60 [-]: GETGLOBAL R2 K20       ; R2 := gRegion
+ 61 [-]: SELF      R2 R2 K21    ; R3 := R2; R2 := R2["0x3E2F6BF"]
+ 62 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 63 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+ 64 [-]: MOVE      R4 R2        ; R4 := R2
+ 65 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 66 [-]: TEST      R3 1         ; if R3 then PC := 73
+ 67 [-]: JMP       73           ; PC := 73
+ 68 [-]: SELF      R3 R2 K22    ; R4 := R2; R3 := R2["0x28609C89"]
+ 69 [-]: GETGLOBAL R5 K23       ; R5 := 0xEC274B1A
+ 70 [-]: LOADK     R6 K24       ; R6 := "IDLE"
+ 71 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 72 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 73 [-]: GETGLOBAL R3 K25       ; R3 := mMovie
+ 74 [-]: SELF      R3 R3 K26    ; R4 := R3; R3 := R3["0xA58BB96C"]
+ 75 [-]: CALL      R3 2 1       ; R3(R4)
+ 76 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #131:
 ;
 ; Name:            
-; Defined at line: 5988
+; Defined at line: 6004
 ; #Upvalues:       15
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -21006,119 +21038,122 @@ code size: 4
 115 [-]: GETGLOBAL R4 K28       ; R4 := closeSound
 116 [-]: CALL      R3 2 1       ; R3(R4)
 117 [-]: GETUPVAL  R3 U9        ; R3 := U9
-118 [-]: CALL      R3 1 2       ; R3 := R3()
-119 [-]: TEST      R3 0         ; if not R3 then PC := 133
-120 [-]: JMP       133          ; PC := 133
-121 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
-122 [-]: GETGLOBAL R4 K11       ; R4 := _T
-123 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["SquadOverlay"]
-124 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-125 [-]: TEST      R3 1         ; if R3 then PC := 133
-126 [-]: JMP       133          ; PC := 133
-127 [-]: GETGLOBAL R3 K11       ; R3 := _T
-128 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["SquadOverlay"]
-129 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x458F27A9"]
-130 [-]: LOADK     R5 K29       ; R5 := "ForceExitMap"
-131 [-]: LOADK     R6 K6        ; R6 := ""
-132 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
-133 [-]: GETGLOBAL R3 K11       ; R3 := _T
-134 [-]: GETTABLE  R3 R3 K30    ; R3 := R3["0x45CBC39B"]
-135 [-]: CALL      R3 1 1       ; R3()
-136 [-]: MOVE      R3 R1        ; R3 := R1
-137 [-]: MOVE      R3 R0        ; R3 := R0
-138 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
-139 [-]: GETUPVAL  R4 U10       ; R4 := U10
-140 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-141 [-]: TEST      R3 1         ; if R3 then PC := 153
-142 [-]: JMP       153          ; PC := 153
-143 [-]: GETUPVAL  R3 U10       ; R3 := U10
-144 [-]: SELF      R3 R3 K31    ; R4 := R3; R3 := R3["0xCE468565"]
-145 [-]: LOADK     R5 K32       ; R5 := "x"
-146 [-]: LOADK     R6 K33       ; R6 := 0.5
-147 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
-148 [-]: GETUPVAL  R3 U10       ; R3 := U10
-149 [-]: SELF      R3 R3 K31    ; R4 := R3; R3 := R3["0xCE468565"]
-150 [-]: LOADK     R5 K34       ; R5 := "y"
-151 [-]: LOADK     R6 K33       ; R6 := 0.5
-152 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
-153 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
-154 [-]: GETUPVAL  R4 U11       ; R4 := U11
-155 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-156 [-]: TEST      R3 1         ; if R3 then PC := 184
-157 [-]: JMP       184          ; PC := 184
-158 [-]: GETUPVAL  R3 U12       ; R3 := U12
-159 [-]: SETTABLE  R3 K35 K36   ; R3["Locked"] := "0x1"
-160 [-]: GETUPVAL  R3 U12       ; R3 := U12
-161 [-]: GETUPVAL  R4 U11       ; R4 := U11
-162 [-]: SELF      R4 R4 K38    ; R5 := R4; R4 := R4["0x6DA72501"]
-163 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-164 [-]: SETTABLE  R3 K37 R4    ; R3["Previous"] := R4
-165 [-]: GETUPVAL  R3 U12       ; R3 := U12
-166 [-]: GETUPVAL  R4 U13       ; R4 := U13
-167 [-]: GETGLOBAL R5 K40       ; R5 := 0x221C9700
-168 [-]: LOADK     R6 K25       ; R6 := 0
-169 [-]: LOADK     R7 K25       ; R7 := 0
-170 [-]: LOADK     R8 K41       ; R8 := 35
-171 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
-172 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
-173 [-]: SETTABLE  R3 K39 R4    ; R3["Target"] := R4
-174 [-]: GETUPVAL  R3 U12       ; R3 := U12
-175 [-]: GETTABLE  R3 R3 K42    ; R3 := R3["Prop"]
-176 [-]: SELF      R3 R3 K43    ; R4 := R3; R3 := R3["0x5A7A6B1"]
-177 [-]: LOADK     R5 K25       ; R5 := 0
-178 [-]: CALL      R3 3 1       ; R3(R4,R5)
-179 [-]: GETUPVAL  R3 U12       ; R3 := U12
-180 [-]: GETTABLE  R3 R3 K42    ; R3 := R3["Prop"]
-181 [-]: SELF      R3 R3 K44    ; R4 := R3; R3 := R3["0xDB349344"]
-182 [-]: LOADK     R5 K45       ; R5 := 1
-183 [-]: CALL      R3 3 1       ; R3(R4,R5)
-184 [-]: GETUPVAL  R3 U6        ; R3 := U6
-185 [-]: SELF      R3 R3 K44    ; R4 := R3; R3 := R3["0xDB349344"]
-186 [-]: LOADK     R5 K46       ; R5 := -100
-187 [-]: CALL      R3 3 1       ; R3(R4,R5)
-188 [-]: GETGLOBAL R3 K17       ; R3 := mMovie
-189 [-]: SELF      R3 R3 K47    ; R4 := R3; R3 := R3["0xD692CA7B"]
-190 [-]: MOVE      R5 R0        ; R5 := R0
-191 [-]: CALL      R3 3 1       ; R3(R4,R5)
-192 [-]: TEST      R1 0         ; if not R1 then PC := 200
-193 [-]: JMP       200          ; PC := 200
-194 [-]: GETGLOBAL R3 K48       ; R3 := gFlashMgr
-195 [-]: SELF      R3 R3 K49    ; R4 := R3; R3 := R3["0xC4E70543"]
-196 [-]: CALL      R3 2 1       ; R3(R4)
-197 [-]: GETUPVAL  R3 U14       ; R3 := U14
-198 [-]: CALL      R3 1 1       ; R3()
-199 [-]: JMP       223          ; PC := 223
-200 [-]: GETGLOBAL R3 K20       ; R3 := 0x52E17A90
-201 [-]: GETGLOBAL R4 K17       ; R4 := mMovie
-202 [-]: LOADK     R5 K21       ; R5 := "_root"
-203 [-]: GETGLOBAL R6 K22       ; R6 := UISys
-204 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["FlashInstance_LINEAR"]
-205 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-206 [-]: LOADK     R8 K24       ; R8 := "_alpha"
-207 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-208 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-209 [-]: LOADK     R9 K25       ; R9 := 0
-210 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-211 [-]: LOADK     R9 K26       ; R9 := 0.30000001192093
-212 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
-213 [-]: GETUPVAL  R3 U8        ; R3 := U8
-214 [-]: GETTABLE  R3 R3 K50    ; R3 := R3["0xDB33ECB2"]
-215 [-]: GETGLOBAL R4 K17       ; R4 := mMovie
-216 [-]: LOADK     R5 K45       ; R5 := 1
-217 [-]: LOADK     R6 K26       ; R6 := 0.30000001192093
-218 [-]: LOADK     R7 K25       ; R7 := 0
-219 [-]: CLOSURE   R8 0         ; R8 := closure(Function #131.1)
-220 [-]: GETUPVAL  R0 U14       ; R0 := U14
-221 [-]: GETUPVAL  R0 U8        ; R0 := U8
-222 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
-223 [-]: RETURN    R0 1         ; return 
+118 [-]: MOVE      R4 R2        ; R4 := R2
+119 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+120 [-]: TEST      R3 0         ; if not R3 then PC := 134
+121 [-]: JMP       134          ; PC := 134
+122 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+123 [-]: GETGLOBAL R4 K11       ; R4 := _T
+124 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["SquadOverlay"]
+125 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+126 [-]: TEST      R3 1         ; if R3 then PC := 134
+127 [-]: JMP       134          ; PC := 134
+128 [-]: GETGLOBAL R3 K11       ; R3 := _T
+129 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["SquadOverlay"]
+130 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x458F27A9"]
+131 [-]: LOADK     R5 K29       ; R5 := "ForceExitMap"
+132 [-]: LOADK     R6 K6        ; R6 := ""
+133 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+134 [-]: GETGLOBAL R3 K11       ; R3 := _T
+135 [-]: GETTABLE  R3 R3 K30    ; R3 := R3["0x45CBC39B"]
+136 [-]: CALL      R3 1 1       ; R3()
+137 [-]: MOVE      R3 R1        ; R3 := R1
+138 [-]: MOVE      R3 R0        ; R3 := R0
+139 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+140 [-]: GETUPVAL  R4 U10       ; R4 := U10
+141 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+142 [-]: TEST      R3 1         ; if R3 then PC := 154
+143 [-]: JMP       154          ; PC := 154
+144 [-]: GETUPVAL  R3 U10       ; R3 := U10
+145 [-]: SELF      R3 R3 K31    ; R4 := R3; R3 := R3["0xCE468565"]
+146 [-]: LOADK     R5 K32       ; R5 := "x"
+147 [-]: LOADK     R6 K33       ; R6 := 0.5
+148 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+149 [-]: GETUPVAL  R3 U10       ; R3 := U10
+150 [-]: SELF      R3 R3 K31    ; R4 := R3; R3 := R3["0xCE468565"]
+151 [-]: LOADK     R5 K34       ; R5 := "y"
+152 [-]: LOADK     R6 K33       ; R6 := 0.5
+153 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+154 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+155 [-]: GETUPVAL  R4 U11       ; R4 := U11
+156 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+157 [-]: TEST      R3 1         ; if R3 then PC := 185
+158 [-]: JMP       185          ; PC := 185
+159 [-]: GETUPVAL  R3 U12       ; R3 := U12
+160 [-]: SETTABLE  R3 K35 K36   ; R3["Locked"] := "0x1"
+161 [-]: GETUPVAL  R3 U12       ; R3 := U12
+162 [-]: GETUPVAL  R4 U11       ; R4 := U11
+163 [-]: SELF      R4 R4 K38    ; R5 := R4; R4 := R4["0x6DA72501"]
+164 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+165 [-]: SETTABLE  R3 K37 R4    ; R3["Previous"] := R4
+166 [-]: GETUPVAL  R3 U12       ; R3 := U12
+167 [-]: GETUPVAL  R4 U13       ; R4 := U13
+168 [-]: GETGLOBAL R5 K40       ; R5 := 0x221C9700
+169 [-]: LOADK     R6 K25       ; R6 := 0
+170 [-]: LOADK     R7 K25       ; R7 := 0
+171 [-]: LOADK     R8 K41       ; R8 := 35
+172 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
+173 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
+174 [-]: SETTABLE  R3 K39 R4    ; R3["Target"] := R4
+175 [-]: GETUPVAL  R3 U12       ; R3 := U12
+176 [-]: GETTABLE  R3 R3 K42    ; R3 := R3["Prop"]
+177 [-]: SELF      R3 R3 K43    ; R4 := R3; R3 := R3["0x5A7A6B1"]
+178 [-]: LOADK     R5 K25       ; R5 := 0
+179 [-]: CALL      R3 3 1       ; R3(R4,R5)
+180 [-]: GETUPVAL  R3 U12       ; R3 := U12
+181 [-]: GETTABLE  R3 R3 K42    ; R3 := R3["Prop"]
+182 [-]: SELF      R3 R3 K44    ; R4 := R3; R3 := R3["0xDB349344"]
+183 [-]: LOADK     R5 K45       ; R5 := 1
+184 [-]: CALL      R3 3 1       ; R3(R4,R5)
+185 [-]: GETUPVAL  R3 U6        ; R3 := U6
+186 [-]: SELF      R3 R3 K44    ; R4 := R3; R3 := R3["0xDB349344"]
+187 [-]: LOADK     R5 K46       ; R5 := -100
+188 [-]: CALL      R3 3 1       ; R3(R4,R5)
+189 [-]: GETGLOBAL R3 K17       ; R3 := mMovie
+190 [-]: SELF      R3 R3 K47    ; R4 := R3; R3 := R3["0xD692CA7B"]
+191 [-]: MOVE      R5 R0        ; R5 := R0
+192 [-]: CALL      R3 3 1       ; R3(R4,R5)
+193 [-]: TEST      R1 0         ; if not R1 then PC := 202
+194 [-]: JMP       202          ; PC := 202
+195 [-]: GETGLOBAL R3 K48       ; R3 := gFlashMgr
+196 [-]: SELF      R3 R3 K49    ; R4 := R3; R3 := R3["0xC4E70543"]
+197 [-]: CALL      R3 2 1       ; R3(R4)
+198 [-]: GETUPVAL  R3 U14       ; R3 := U14
+199 [-]: MOVE      R4 R2        ; R4 := R2
+200 [-]: CALL      R3 2 1       ; R3(R4)
+201 [-]: JMP       226          ; PC := 226
+202 [-]: GETGLOBAL R3 K20       ; R3 := 0x52E17A90
+203 [-]: GETGLOBAL R4 K17       ; R4 := mMovie
+204 [-]: LOADK     R5 K21       ; R5 := "_root"
+205 [-]: GETGLOBAL R6 K22       ; R6 := UISys
+206 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["FlashInstance_LINEAR"]
+207 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+208 [-]: LOADK     R8 K24       ; R8 := "_alpha"
+209 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+210 [-]: NEWTABLE  R8 1 0       ; R8 := {}
+211 [-]: LOADK     R9 K25       ; R9 := 0
+212 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
+213 [-]: LOADK     R9 K26       ; R9 := 0.30000001192093
+214 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
+215 [-]: GETUPVAL  R3 U8        ; R3 := U8
+216 [-]: GETTABLE  R3 R3 K50    ; R3 := R3["0xDB33ECB2"]
+217 [-]: GETGLOBAL R4 K17       ; R4 := mMovie
+218 [-]: LOADK     R5 K45       ; R5 := 1
+219 [-]: LOADK     R6 K26       ; R6 := 0.30000001192093
+220 [-]: LOADK     R7 K25       ; R7 := 0
+221 [-]: CLOSURE   R8 0         ; R8 := closure(Function #131.1)
+222 [-]: GETUPVAL  R0 U14       ; R0 := U14
+223 [-]: MOVE      R0 R2        ; R0 := R2
+224 [-]: GETUPVAL  R0 U8        ; R0 := U8
+225 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
+226 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #131.1:
 ;
 ; Name:            
-; Defined at line: 6063
-; #Upvalues:       2
+; Defined at line: 6079
+; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  6
@@ -21127,22 +21162,23 @@ code size: 4
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xC4E70543"]
   3 [-]: CALL      R0 2 1       ; R0(R1)
   4 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  5 [-]: CALL      R0 1 1       ; R0()
-  6 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  7 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["0xDB33ECB2"]
-  8 [-]: GETGLOBAL R1 K3        ; R1 := mMovie
-  9 [-]: LOADK     R2 K4        ; R2 := 0
- 10 [-]: LOADK     R3 K5        ; R3 := 0.20000000298023
- 11 [-]: LOADK     R4 K4        ; R4 := 0
- 12 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 13 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
- 14 [-]: RETURN    R0 1         ; return 
+  5 [-]: GETUPVAL  R1 U1        ; R1 := U1
+  6 [-]: CALL      R0 2 1       ; R0(R1)
+  7 [-]: GETUPVAL  R0 U2        ; R0 := U2
+  8 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["0xDB33ECB2"]
+  9 [-]: GETGLOBAL R1 K3        ; R1 := mMovie
+ 10 [-]: LOADK     R2 K4        ; R2 := 0
+ 11 [-]: LOADK     R3 K5        ; R3 := 0.20000000298023
+ 12 [-]: LOADK     R4 K4        ; R4 := 0
+ 13 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 14 [-]: CALL      R0 6 1       ; R0(R1,R2,R3,R4,R5)
+ 15 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #132:
 ;
 ; Name:            
-; Defined at line: 6071
+; Defined at line: 6087
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -21172,32 +21208,7 @@ code size: 4
 ; Function #133:
 ;
 ; Name:            
-; Defined at line: 6075
-; #Upvalues:       0
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: RETURN    R0 2         ; return R0
-  2 [-]: RETURN    R0 1         ; return 
-
-
-; Function #134:
-;
-; Name:            
-; Defined at line: 6079
-; #Upvalues:       0
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: RETURN    R0 1         ; return 
-
-
-; Function #135:
-;
-; Name:            
-; Defined at line: 6082
+; Defined at line: 6091
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -21222,10 +21233,10 @@ code size: 4
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #136:
+; Function #134:
 ;
 ; Name:            
-; Defined at line: 6096
+; Defined at line: 6105
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -21336,10 +21347,10 @@ code size: 4
 103 [-]: RETURN    R0 1         ; return 
 
 
-; Function #137:
+; Function #135:
 ;
 ; Name:            
-; Defined at line: 6135
+; Defined at line: 6144
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -21351,10 +21362,10 @@ code size: 4
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #138:
+; Function #136:
 ;
 ; Name:            
-; Defined at line: 6139
+; Defined at line: 6148
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -21367,10 +21378,10 @@ code size: 4
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #139:
+; Function #137:
 ;
 ; Name:            
-; Defined at line: 6161
+; Defined at line: 6170
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -21428,10 +21439,10 @@ code size: 4
  50 [-]: RETURN    R0 1         ; return 
 
 
-; Function #140:
+; Function #138:
 ;
 ; Name:            
-; Defined at line: 6186
+; Defined at line: 6195
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -21453,10 +21464,10 @@ code size: 4
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #141:
+; Function #139:
 ;
 ; Name:            
-; Defined at line: 6198
+; Defined at line: 6207
 ; #Upvalues:       14
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -21625,10 +21636,10 @@ code size: 4
 161 [-]: RETURN    R0 1         ; return 
 
 
-; Function #142:
+; Function #140:
 ;
 ; Name:            
-; Defined at line: 6259
+; Defined at line: 6268
 ; #Upvalues:       12
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -21686,7 +21697,7 @@ code size: 4
  50 [-]: JMP       52           ; PC := 52
  51 [-]: LOADK     R11 K10      ; R11 := 0
  52 [-]: LOADK     R12 K16      ; R12 := -2
- 53 [-]: CLOSURE   R13 0        ; R13 := closure(Function #142.1)
+ 53 [-]: CLOSURE   R13 0        ; R13 := closure(Function #140.1)
  54 [-]: MOVE      R0 R10       ; R0 := R10
  55 [-]: MOVE      R0 R12       ; R0 := R12
  56 [-]: MOVE      R0 R4        ; R0 := R4
@@ -21715,7 +21726,7 @@ code size: 4
  79 [-]: SETLIST   R19 1 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 1
  80 [-]: MOVE      R20 R11      ; R20 := R11
  81 [-]: LOADK     R21 K10      ; R21 := 0
- 82 [-]: CLOSURE   R22 1        ; R22 := closure(Function #142.2)
+ 82 [-]: CLOSURE   R22 1        ; R22 := closure(Function #140.2)
  83 [-]: GETUPVAL  R0 U10       ; R0 := U10
  84 [-]: MOVE      R0 R1        ; R0 := R1
  85 [-]: CALL      R14 9 1      ; R14(R15,R16,R17,R18,R19,R20,R21,R22)
@@ -21762,10 +21773,10 @@ code size: 4
 126 [-]: RETURN    R0 1         ; return 
 
 
-; Function #142.1:
+; Function #140.1:
 ;
 ; Name:            
-; Defined at line: 6286
+; Defined at line: 6295
 ; #Upvalues:       13
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -21841,10 +21852,10 @@ code size: 4
  68 [-]: RETURN    R0 1         ; return 
 
 
-; Function #142.2:
+; Function #140.2:
 ;
 ; Name:            
-; Defined at line: 6309
+; Defined at line: 6318
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -21860,14 +21871,14 @@ code size: 4
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #143:
+; Function #141:
 ;
 ; Name:            
-; Defined at line: 6327
+; Defined at line: 6336
 ; #Upvalues:       9
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  111
+; Max Stack Size:  108
 
   1 [-]: GETGLOBAL R5 K0        ; R5 := 0x9FAED6BC
   2 [-]: GETTABLE  R6 R0 K1     ; R6 := R0["name"]
@@ -21988,1466 +21999,1466 @@ code size: 4
 117 [-]: GETTABLE  R25 R25 K32  ; R25 := R25["gActiveMatchMakingMode"]
 118 [-]: GETGLOBAL R26 K13      ; R26 := _T
 119 [-]: GETTABLE  R26 R26 K33  ; R26 := R26["MATCHMAKING_QUICKMATCH_GAMEMODE"]
-120 [-]: EQ        0 R25 R26    ; if R25 ~= R26 then PC := 145
-121 [-]: JMP       145          ; PC := 145
+120 [-]: EQ        0 R25 R26    ; if R25 ~= R26 then PC := 146
+121 [-]: JMP       146          ; PC := 146
 122 [-]: GETUPVAL  R25 U1       ; R25 := U1
 123 [-]: GETTABLE  R25 R25 K34  ; R25 := R25["0x25E52949"]
 124 [-]: GETTABLE  R26 R0 K2    ; R26 := R0["radialSector"]
 125 [-]: GETTABLE  R26 R26 K35  ; R26 := R26["region"]
 126 [-]: ADD       R26 R26 K36  ; R26 := R26 + 1
 127 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-128 [-]: TEST      R25 1        ; if R25 then PC := 145
-129 [-]: JMP       145          ; PC := 145
+128 [-]: TEST      R25 1        ; if R25 then PC := 146
+129 [-]: JMP       146          ; PC := 146
 130 [-]: GETUPVAL  R25 U1       ; R25 := U1
 131 [-]: GETTABLE  R25 R25 K37  ; R25 := R25["0xE4E5932F"]
 132 [-]: MOVE      R26 R5       ; R26 := R5
 133 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-134 [-]: GETUPVAL  R26 U4       ; R26 := U4
-135 [-]: GETTABLE  R26 R26 R25  ; R26 := R26[R25]
-136 [-]: TEST      R26 0        ; if not R26 then PC := 144
-137 [-]: JMP       144          ; PC := 144
-138 [-]: GETUPVAL  R26 U4       ; R26 := U4
-139 [-]: GETTABLE  R26 R26 R25  ; R26 := R26[R25]
-140 [-]: LT        0 K30 R26    ; if 0 >= R26 then PC := 144
-141 [-]: JMP       144          ; PC := 144
-142 [-]: GETUPVAL  R26 U4       ; R26 := U4
-143 [-]: GETTABLE  R16 R26 R25  ; R16 := R26[R25]
-144 [-]: MOVE      R17 R1       ; R17 := R1
-145 [-]: LOADNIL   R26 R28      ; R26 := R27 := R28 := nil
-146 [-]: LOADK     R29 K8       ; R29 := ""
-147 [-]: CLOSURE   R30 0        ; R30 := closure(Function #143.1)
-148 [-]: MOVE      R0 R29       ; R0 := R29
-149 [-]: CLOSURE   R31 1        ; R31 := closure(Function #143.2)
-150 [-]: MOVE      R0 R29       ; R0 := R29
-151 [-]: LOADK     R29 K38      ; R29 := "<p>"
-152 [-]: TEST      R13 1        ; if R13 then PC := 156
-153 [-]: JMP       156          ; PC := 156
-154 [-]: TEST      R14 0        ; if not R14 then PC := 158
-155 [-]: JMP       158          ; PC := 158
-156 [-]: MOVE      R17 R0       ; R17 := R0
-157 [-]: JMP       743          ; PC := 743
-158 [-]: GETUPVAL  R32 U0       ; R32 := U0
-159 [-]: GETTABLE  R32 R32 K39  ; R32 := R32["mAlertInfo"]
-160 [-]: EQ        1 R32 K22    ; if R32 == nil then PC := 230
-161 [-]: JMP       230          ; PC := 230
-162 [-]: LOADK     R32 K40      ; R32 := " ("
-163 [-]: GETGLOBAL R33 K11      ; R33 := 0xE6DC43B0
-164 [-]: LOADK     R34 K41      ; R34 := "/Lotus/Language/Menu/Notification_Alert"
-165 [-]: MOVE      R35 R0       ; R35 := R0
-166 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-167 [-]: LOADK     R34 K42      ; R34 := ")"
-168 [-]: CONCAT    R10 R32 R34  ; R10 := R32 .. R33 .. R34
-169 [-]: GETGLOBAL R32 K43      ; R32 := Engine
-170 [-]: GETTABLE  R32 R32 K44  ; R32 := R32["0xD09D7910"]
-171 [-]: GETGLOBAL R33 K13      ; R33 := _T
-172 [-]: GETTABLE  R33 R33 K16  ; R33 := R33["CachedAlerts"]
-173 [-]: GETTABLE  R33 R33 R5   ; R33 := R33[R5]
-174 [-]: GETTABLE  R33 R33 K39  ; R33 := R33["mAlertInfo"]
-175 [-]: GETTABLE  R33 R33 K45  ; R33 := R33["mExpiry"]
-176 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-177 [-]: GETUPVAL  R33 U1       ; R33 := U1
-178 [-]: GETTABLE  R33 R33 K46  ; R33 := R33["0x9E1A1D26"]
-179 [-]: MOVE      R34 R32      ; R34 := R32
-180 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-181 [-]: MOVE      R26 R33      ; R26 := R33
-182 [-]: GETGLOBAL R33 K13      ; R33 := _T
-183 [-]: GETTABLE  R33 R33 K16  ; R33 := R33["CachedAlerts"]
-184 [-]: GETTABLE  R33 R33 R5   ; R33 := R33[R5]
-185 [-]: TEST      R33 0        ; if not R33 then PC := 221
-186 [-]: JMP       221          ; PC := 221
-187 [-]: GETGLOBAL R33 K13      ; R33 := _T
-188 [-]: GETTABLE  R33 R33 K16  ; R33 := R33["CachedAlerts"]
-189 [-]: GETTABLE  R33 R33 R5   ; R33 := R33[R5]
-190 [-]: GETTABLE  R33 R33 K39  ; R33 := R33["mAlertInfo"]
-191 [-]: GETTABLE  R33 R33 K47  ; R33 := R33["mTag"]
-192 [-]: GETGLOBAL R34 K48      ; R34 := EMPTY_SYMBOL
-193 [-]: EQ        1 R33 R34    ; if R33 == R34 then PC := 221
-194 [-]: JMP       221          ; PC := 221
-195 [-]: GETGLOBAL R33 K13      ; R33 := _T
-196 [-]: GETTABLE  R33 R33 K16  ; R33 := R33["CachedAlerts"]
-197 [-]: GETTABLE  R33 R33 R5   ; R33 := R33[R5]
-198 [-]: GETTABLE  R33 R33 K39  ; R33 := R33["mAlertInfo"]
-199 [-]: GETTABLE  R33 R33 K49  ; R33 := R33["mMissionInfo"]
-200 [-]: GETTABLE  R33 R33 K50  ; R33 := R33["descText"]
-201 [-]: GETGLOBAL R34 K48      ; R34 := EMPTY_SYMBOL
-202 [-]: EQ        1 R33 R34    ; if R33 == R34 then PC := 221
-203 [-]: JMP       221          ; PC := 221
-204 [-]: LOADK     R33 K40      ; R33 := " ("
-205 [-]: GETGLOBAL R34 K9       ; R34 := string
-206 [-]: GETTABLE  R34 R34 K10  ; R34 := R34["0x639C642A"]
-207 [-]: GETGLOBAL R35 K11      ; R35 := 0xE6DC43B0
-208 [-]: GETGLOBAL R36 K0       ; R36 := 0x9FAED6BC
-209 [-]: GETGLOBAL R37 K13      ; R37 := _T
-210 [-]: GETTABLE  R37 R37 K16  ; R37 := R37["CachedAlerts"]
-211 [-]: GETTABLE  R37 R37 R5   ; R37 := R37[R5]
-212 [-]: GETTABLE  R37 R37 K39  ; R37 := R37["mAlertInfo"]
-213 [-]: GETTABLE  R37 R37 K49  ; R37 := R37["mMissionInfo"]
-214 [-]: GETTABLE  R37 R37 K50  ; R37 := R37["descText"]
-215 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-216 [-]: MOVE      R37 R0       ; R37 := R0
-217 [-]: CALL      R35 3 0      ; R35,... := R35(R36,R37)
-218 [-]: CALL      R34 0 2      ; R34 := R34(R35,...)
-219 [-]: LOADK     R35 K42      ; R35 := ")"
-220 [-]: CONCAT    R10 R33 R35  ; R10 := R33 .. R34 .. R35
-221 [-]: GETUPVAL  R33 U1       ; R33 := U1
-222 [-]: GETTABLE  R33 R33 K51  ; R33 := R33["0xF030C338"]
-223 [-]: GETGLOBAL R34 K23      ; R34 := mMovie
-224 [-]: GETUPVAL  R35 U0       ; R35 := U0
-225 [-]: GETTABLE  R35 R35 K39  ; R35 := R35["mAlertInfo"]
-226 [-]: GETTABLE  R35 R35 K52  ; R35 := R35["missionReward"]
-227 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-228 [-]: MOVE      R27 R33      ; R27 := R33
-229 [-]: JMP       743          ; PC := 743
-230 [-]: GETUPVAL  R33 U0       ; R33 := U0
-231 [-]: GETTABLE  R33 R33 K53  ; R33 := R33["mGoalInfo"]
-232 [-]: TEST      R33 0        ; if not R33 then PC := 297
-233 [-]: JMP       297          ; PC := 297
-234 [-]: GETGLOBAL R33 K9       ; R33 := string
-235 [-]: GETTABLE  R33 R33 K10  ; R33 := R33["0x639C642A"]
-236 [-]: GETGLOBAL R34 K11      ; R34 := 0xE6DC43B0
-237 [-]: GETUPVAL  R35 U0       ; R35 := U0
-238 [-]: GETTABLE  R35 R35 K53  ; R35 := R35["mGoalInfo"]
-239 [-]: GETTABLE  R35 R35 K54  ; R35 := R35["mDesc"]
-240 [-]: MOVE      R36 R0       ; R36 := R0
-241 [-]: CALL      R34 3 0      ; R34,... := R34(R35,R36)
-242 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)
-243 [-]: MOVE      R12 R33      ; R12 := R33
-244 [-]: GETGLOBAL R33 K9       ; R33 := string
-245 [-]: GETTABLE  R33 R33 K10  ; R33 := R33["0x639C642A"]
-246 [-]: GETGLOBAL R34 K23      ; R34 := mMovie
-247 [-]: SELF      R34 R34 K24  ; R35 := R34; R34 := R34["0x5DB0BD4"]
-248 [-]: LOADK     R36 K55      ; R36 := "/Lotus/Language/Game/MissionName_"
-249 [-]: GETUPVAL  R37 U1       ; R37 := U1
-250 [-]: GETTABLE  R37 R37 K56  ; R37 := R37["0x87B2D555"]
-251 [-]: GETUPVAL  R38 U0       ; R38 := U0
-252 [-]: GETTABLE  R38 R38 K57  ; R38 := R38["mMission"]
-253 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-254 [-]: CONCAT    R36 R36 R37  ; R36 := R36 .. R37
-255 [-]: MOVE      R37 R0       ; R37 := R0
-256 [-]: CALL      R34 4 0      ; R34,... := R34(R35,R36,R37)
-257 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)
-258 [-]: MOVE      R8 R33       ; R8 := R33
-259 [-]: GETUPVAL  R33 U0       ; R33 := U0
-260 [-]: GETTABLE  R33 R33 K57  ; R33 := R33["mMission"]
-261 [-]: GETTABLE  R33 R33 K58  ; R33 := R33["archwingRequired"]
-262 [-]: TEST      R33 0        ; if not R33 then PC := 743
-263 [-]: JMP       743          ; PC := 743
-264 [-]: GETGLOBAL R33 K23      ; R33 := mMovie
-265 [-]: SELF      R33 R33 K24  ; R34 := R33; R33 := R33["0x5DB0BD4"]
-266 [-]: LOADK     R35 K59      ; R35 := "<ARCHWING>"
-267 [-]: MOVE      R36 R1       ; R36 := R1
-268 [-]: CALL      R33 4 2      ; R33 := R33(R34,R35,R36)
-269 [-]: LOADK     R34 K60      ; R34 := " "
-270 [-]: MOVE      R35 R8       ; R35 := R8
-271 [-]: CONCAT    R8 R33 R35   ; R8 := R33 .. R34 .. R35
-272 [-]: GETUPVAL  R33 U0       ; R33 := U0
-273 [-]: GETTABLE  R33 R33 K57  ; R33 := R33["mMission"]
-274 [-]: GETTABLE  R33 R33 K61  ; R33 := R33["isSharkwingMission"]
-275 [-]: TEST      R33 0        ; if not R33 then PC := 287
-276 [-]: JMP       287          ; PC := 287
-277 [-]: MOVE      R33 R8       ; R33 := R8
-278 [-]: LOADK     R34 K40      ; R34 := " ("
-279 [-]: GETGLOBAL R35 K23      ; R35 := mMovie
-280 [-]: SELF      R35 R35 K24  ; R36 := R35; R35 := R35["0x5DB0BD4"]
-281 [-]: LOADK     R37 K62      ; R37 := "/Lotus/Language/Menu/Sharkwing"
-282 [-]: MOVE      R38 R0       ; R38 := R0
-283 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-284 [-]: LOADK     R36 K42      ; R36 := ")"
-285 [-]: CONCAT    R8 R33 R36   ; R8 := R33 .. R34 .. R35 .. R36
-286 [-]: JMP       743          ; PC := 743
-287 [-]: MOVE      R33 R8       ; R33 := R8
-288 [-]: LOADK     R34 K40      ; R34 := " ("
-289 [-]: GETGLOBAL R35 K23      ; R35 := mMovie
-290 [-]: SELF      R35 R35 K24  ; R36 := R35; R35 := R35["0x5DB0BD4"]
-291 [-]: LOADK     R37 K63      ; R37 := "/Lotus/Language/Menu/Loadout_Archwing"
-292 [-]: MOVE      R38 R0       ; R38 := R0
-293 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-294 [-]: LOADK     R36 K42      ; R36 := ")"
-295 [-]: CONCAT    R8 R33 R36   ; R8 := R33 .. R34 .. R35 .. R36
-296 [-]: JMP       743          ; PC := 743
-297 [-]: GETUPVAL  R33 U0       ; R33 := U0
-298 [-]: GETTABLE  R33 R33 K64  ; R33 := R33["mGhostTowerMissionInfo"]
-299 [-]: EQ        1 R33 K22    ; if R33 == nil then PC := 322
-300 [-]: JMP       322          ; PC := 322
-301 [-]: GETUPVAL  R33 U3       ; R33 := U3
-302 [-]: GETTABLE  R33 R33 K19  ; R33 := R33["0xF81722A2"]
-303 [-]: GETUPVAL  R34 U0       ; R34 := U0
-304 [-]: GETTABLE  R34 R34 K64  ; R34 := R34["mGhostTowerMissionInfo"]
-305 [-]: GETTABLE  R34 R34 K49  ; R34 := R34["mMissionInfo"]
-306 [-]: GETTABLE  R34 R34 K65  ; R34 := R34["minEnemyLevel"]
-307 [-]: LE        1 K66 R34    ; if 80 <= R34 then PC := 310
-308 [-]: JMP       310          ; PC := 310
-309 [-]: MOVE      R34 R0       ; R34 := R0
-310 [-]: MOVE      R34 R1       ; R34 := R1
-311 [-]: LOADK     R35 K67      ; R35 := "/Lotus/Language/Menu/GhostTowerHardMissionName"
-312 [-]: LOADK     R36 K68      ; R36 := "/Lotus/Language/Menu/GhostTowerMissionName"
-313 [-]: CALL      R33 4 2      ; R33 := R33(R34,R35,R36)
-314 [-]: LOADK     R34 K40      ; R34 := " ("
-315 [-]: GETGLOBAL R35 K11      ; R35 := 0xE6DC43B0
-316 [-]: MOVE      R36 R33      ; R36 := R33
-317 [-]: MOVE      R37 R0       ; R37 := R0
-318 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
-319 [-]: LOADK     R36 K42      ; R36 := ")"
-320 [-]: CONCAT    R10 R34 R36  ; R10 := R34 .. R35 .. R36
-321 [-]: JMP       743          ; PC := 743
-322 [-]: GETGLOBAL R34 K13      ; R34 := _T
-323 [-]: GETTABLE  R34 R34 K69  ; R34 := R34["CachedSkullNodes"]
-324 [-]: GETTABLE  R34 R34 R5   ; R34 := R34[R5]
-325 [-]: EQ        1 R34 K22    ; if R34 == nil then PC := 364
-326 [-]: JMP       364          ; PC := 364
-327 [-]: TEST      R3 0         ; if not R3 then PC := 364
-328 [-]: JMP       364          ; PC := 364
-329 [-]: LOADK     R10 K40      ; R10 := " ("
-330 [-]: LOADK     R34 K36      ; R34 := 1
-331 [-]: GETGLOBAL R35 K13      ; R35 := _T
-332 [-]: GETTABLE  R35 R35 K69  ; R35 := R35["CachedSkullNodes"]
-333 [-]: GETTABLE  R35 R35 R5   ; R35 := R35[R5]
-334 [-]: LEN       R35 R35      ; R35 := # R35
-335 [-]: LOADK     R36 K36      ; R36 := 1
-336 [-]: FORPREP   R34 359      ; R34 -= R36; PC := 359
-337 [-]: EQ        1 R37 K36    ; if R37 == 1 then PC := 345
-338 [-]: JMP       345          ; PC := 345
-339 [-]: GETGLOBAL R38 K9       ; R38 := string
-340 [-]: GETTABLE  R38 R38 K10  ; R38 := R38["0x639C642A"]
-341 [-]: MOVE      R39 R10      ; R39 := R10
-342 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-343 [-]: LOADK     R39 K70      ; R39 := ", "
-344 [-]: CONCAT    R10 R38 R39  ; R10 := R38 .. R39
-345 [-]: MOVE      R38 R10      ; R38 := R10
-346 [-]: GETGLOBAL R39 K9       ; R39 := string
-347 [-]: GETTABLE  R39 R39 K10  ; R39 := R39["0x639C642A"]
-348 [-]: GETGLOBAL R40 K23      ; R40 := mMovie
-349 [-]: SELF      R40 R40 K24  ; R41 := R40; R40 := R40["0x5DB0BD4"]
-350 [-]: GETGLOBAL R42 K13      ; R42 := _T
-351 [-]: GETTABLE  R42 R42 K69  ; R42 := R42["CachedSkullNodes"]
-352 [-]: GETTABLE  R42 R42 R5   ; R42 := R42[R5]
-353 [-]: GETTABLE  R42 R42 R37  ; R42 := R42[R37]
-354 [-]: GETTABLE  R42 R42 K71  ; R42 := R42[2]
-355 [-]: MOVE      R43 R0       ; R43 := R0
-356 [-]: CALL      R40 4 0      ; R40,... := R40(R41,R42,R43)
-357 [-]: CALL      R39 0 2      ; R39 := R39(R40,...)
-358 [-]: CONCAT    R10 R38 R39  ; R10 := R38 .. R39
-359 [-]: FORLOOP   R34 337      ; R34 += R36; if R34 <= R35 then begin PC := 337; R37 := R34 end
-360 [-]: MOVE      R38 R10      ; R38 := R10
-361 [-]: LOADK     R39 K42      ; R39 := ")"
-362 [-]: CONCAT    R10 R38 R39  ; R10 := R38 .. R39
-363 [-]: JMP       743          ; PC := 743
-364 [-]: GETGLOBAL R38 K13      ; R38 := _T
-365 [-]: GETTABLE  R38 R38 K72  ; R38 := R38["CachedSortieMissions"]
-366 [-]: GETTABLE  R38 R38 R5   ; R38 := R38[R5]
-367 [-]: TEST      R38 0        ; if not R38 then PC := 399
-368 [-]: JMP       399          ; PC := 399
-369 [-]: GETGLOBAL R38 K13      ; R38 := _T
-370 [-]: GETTABLE  R38 R38 K72  ; R38 := R38["CachedSortieMissions"]
-371 [-]: GETTABLE  R38 R38 R5   ; R38 := R38[R5]
-372 [-]: GETTABLE  R38 R38 K73  ; R38 := R38["mShowInStarChart"]
-373 [-]: TEST      R38 0        ; if not R38 then PC := 399
-374 [-]: JMP       399          ; PC := 399
-375 [-]: LOADK     R38 K40      ; R38 := " ("
-376 [-]: GETGLOBAL R39 K11      ; R39 := 0xE6DC43B0
-377 [-]: LOADK     R40 K74      ; R40 := "/Lotus/Language/Menu/SortieMissionName"
-378 [-]: LOADNIL   R41 R41      ; R41 := nil
-379 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
-380 [-]: LOADK     R40 K42      ; R40 := ")"
-381 [-]: CONCAT    R10 R38 R40  ; R10 := R38 .. R39 .. R40
-382 [-]: GETGLOBAL R38 K43      ; R38 := Engine
-383 [-]: GETTABLE  R38 R38 K44  ; R38 := R38["0xD09D7910"]
-384 [-]: GETGLOBAL R39 K13      ; R39 := _T
-385 [-]: GETTABLE  R39 R39 K72  ; R39 := R39["CachedSortieMissions"]
-386 [-]: GETTABLE  R39 R39 R5   ; R39 := R39[R5]
-387 [-]: GETTABLE  R39 R39 K45  ; R39 := R39["mExpiry"]
-388 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-389 [-]: GETUPVAL  R39 U1       ; R39 := U1
-390 [-]: GETTABLE  R39 R39 K75  ; R39 := R39["0xE233A311"]
-391 [-]: MOVE      R40 R38      ; R40 := R38
-392 [-]: CALL      R39 2 2      ; R39 := R39(R40)
-393 [-]: MOVE      R26 R39      ; R26 := R39
-394 [-]: GETGLOBAL R39 K13      ; R39 := _T
-395 [-]: GETTABLE  R39 R39 K72  ; R39 := R39["CachedSortieMissions"]
-396 [-]: GETTABLE  R39 R39 R5   ; R39 := R39[R5]
-397 [-]: GETTABLE  R28 R39 K76  ; R28 := R39["mModifierAuraDesc"]
-398 [-]: JMP       743          ; PC := 743
-399 [-]: GETGLOBAL R39 K13      ; R39 := _T
-400 [-]: GETTABLE  R39 R39 K14  ; R39 := R39["CachedSyndicateMissions"]
-401 [-]: GETTABLE  R39 R39 R5   ; R39 := R39[R5]
-402 [-]: TEST      R39 0        ; if not R39 then PC := 441
-403 [-]: JMP       441          ; PC := 441
-404 [-]: GETGLOBAL R39 K13      ; R39 := _T
-405 [-]: GETTABLE  R39 R39 K14  ; R39 := R39["CachedSyndicateMissions"]
-406 [-]: GETTABLE  R39 R39 R5   ; R39 := R39[R5]
-407 [-]: GETTABLE  R39 R39 K15  ; R39 := R39["mVisible"]
-408 [-]: TEST      R39 0        ; if not R39 then PC := 441
-409 [-]: JMP       441          ; PC := 441
-410 [-]: LOADK     R39 K40      ; R39 := " ("
-411 [-]: GETGLOBAL R40 K11      ; R40 := 0xE6DC43B0
-412 [-]: LOADK     R41 K77      ; R41 := "/Lotus/Language/Menu/SyndicateMissionName"
-413 [-]: MOVE      R42 R0       ; R42 := R0
-414 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
-415 [-]: LOADK     R41 K42      ; R41 := ")"
-416 [-]: CONCAT    R10 R39 R41  ; R10 := R39 .. R40 .. R41
-417 [-]: GETGLOBAL R39 K43      ; R39 := Engine
-418 [-]: GETTABLE  R39 R39 K44  ; R39 := R39["0xD09D7910"]
-419 [-]: GETGLOBAL R40 K13      ; R40 := _T
-420 [-]: GETTABLE  R40 R40 K14  ; R40 := R40["CachedSyndicateMissions"]
-421 [-]: GETTABLE  R40 R40 R5   ; R40 := R40[R5]
-422 [-]: GETTABLE  R40 R40 K45  ; R40 := R40["mExpiry"]
-423 [-]: CALL      R39 2 2      ; R39 := R39(R40)
-424 [-]: GETUPVAL  R40 U1       ; R40 := U1
-425 [-]: GETTABLE  R40 R40 K46  ; R40 := R40["0x9E1A1D26"]
-426 [-]: MOVE      R41 R39      ; R41 := R39
-427 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-428 [-]: MOVE      R26 R40      ; R26 := R40
-429 [-]: GETGLOBAL R40 K23      ; R40 := mMovie
-430 [-]: SELF      R40 R40 K24  ; R41 := R40; R40 := R40["0x5DB0BD4"]
-431 [-]: LOADK     R42 K78      ; R42 := "/Lotus/Language/Menu/Syndicates_Reputation"
-432 [-]: MOVE      R43 R1       ; R43 := R1
-433 [-]: CALL      R40 4 2      ; R40 := R40(R41,R42,R43)
-434 [-]: GETGLOBAL R41 K13      ; R41 := _T
-435 [-]: GETTABLE  R41 R41 K14  ; R41 := R41["CachedSyndicateMissions"]
-436 [-]: GETTABLE  R41 R41 R5   ; R41 := R41[R5]
-437 [-]: GETTABLE  R41 R41 K49  ; R41 := R41["mMissionInfo"]
-438 [-]: GETTABLE  R41 R41 K79  ; R41 := R41["syndicateXP"]
-439 [-]: CONCAT    R27 R40 R41  ; R27 := R40 .. R41
-440 [-]: JMP       743          ; PC := 743
-441 [-]: GETGLOBAL R40 K13      ; R40 := _T
-442 [-]: GETTABLE  R40 R40 K80  ; R40 := R40["CachedActiveMissions"]
-443 [-]: TEST      R40 0        ; if not R40 then PC := 473
-444 [-]: JMP       473          ; PC := 473
-445 [-]: GETGLOBAL R40 K13      ; R40 := _T
-446 [-]: GETTABLE  R40 R40 K80  ; R40 := R40["CachedActiveMissions"]
-447 [-]: GETTABLE  R40 R40 R5   ; R40 := R40[R5]
-448 [-]: TEST      R40 0        ; if not R40 then PC := 473
-449 [-]: JMP       473          ; PC := 473
-450 [-]: GETGLOBAL R40 K13      ; R40 := _T
-451 [-]: GETTABLE  R40 R40 K80  ; R40 := R40["CachedActiveMissions"]
-452 [-]: GETTABLE  R40 R40 R5   ; R40 := R40[R5]
-453 [-]: GETTABLE  R40 R40 K15  ; R40 := R40["mVisible"]
-454 [-]: TEST      R40 0        ; if not R40 then PC := 473
-455 [-]: JMP       473          ; PC := 473
-456 [-]: GETGLOBAL R40 K43      ; R40 := Engine
-457 [-]: GETTABLE  R40 R40 K44  ; R40 := R40["0xD09D7910"]
-458 [-]: GETGLOBAL R41 K13      ; R41 := _T
-459 [-]: GETTABLE  R41 R41 K80  ; R41 := R41["CachedActiveMissions"]
-460 [-]: GETTABLE  R41 R41 R5   ; R41 := R41[R5]
-461 [-]: GETTABLE  R41 R41 K45  ; R41 := R41["mExpiry"]
-462 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-463 [-]: GETUPVAL  R41 U1       ; R41 := U1
-464 [-]: GETTABLE  R41 R41 K75  ; R41 := R41["0xE233A311"]
-465 [-]: MOVE      R42 R40      ; R42 := R40
-466 [-]: CALL      R41 2 2      ; R41 := R41(R42)
-467 [-]: MOVE      R26 R41      ; R26 := R41
-468 [-]: GETGLOBAL R41 K13      ; R41 := _T
-469 [-]: GETTABLE  R41 R41 K80  ; R41 := R41["CachedActiveMissions"]
-470 [-]: GETTABLE  R41 R41 R5   ; R41 := R41[R5]
-471 [-]: GETTABLE  R28 R41 K76  ; R28 := R41["mModifierAuraDesc"]
-472 [-]: JMP       743          ; PC := 743
-473 [-]: GETUPVAL  R41 U0       ; R41 := U0
-474 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["mInvasionInfo"]
-475 [-]: EQ        1 R41 K22    ; if R41 == nil then PC := 743
-476 [-]: JMP       743          ; PC := 743
-477 [-]: GETUPVAL  R41 U0       ; R41 := U0
-478 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["mInvasionInfo"]
-479 [-]: GETTABLE  R41 R41 K82  ; R41 := R41["mFaction"]
-480 [-]: GETGLOBAL R42 K27      ; R42 := Lotus_Game
-481 [-]: GETTABLE  R42 R42 K83  ; R42 := R42["FC_INFESTATION"]
-482 [-]: EQ        1 R41 R42    ; if R41 == R42 then PC := 485
-483 [-]: JMP       485          ; PC := 485
-484 [-]: MOVE      R23 R0       ; R23 := R0
-485 [-]: MOVE      R23 R1       ; R23 := R1
-486 [-]: GETUPVAL  R41 U0       ; R41 := U0
-487 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["mInvasionInfo"]
-488 [-]: GETTABLE  R41 R41 K84  ; R41 := R41["mEventTag"]
-489 [-]: GETGLOBAL R42 K48      ; R42 := EMPTY_SYMBOL
-490 [-]: EQ        0 R41 R42    ; if R41 ~= R42 then PC := 527
-491 [-]: JMP       527          ; PC := 527
-492 [-]: GETUPVAL  R41 U0       ; R41 := U0
-493 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["mInvasionInfo"]
-494 [-]: GETTABLE  R41 R41 K85  ; R41 := R41["mCount"]
-495 [-]: GETUPVAL  R42 U0       ; R42 := U0
-496 [-]: GETTABLE  R42 R42 K81  ; R42 := R42["mInvasionInfo"]
-497 [-]: GETTABLE  R42 R42 K86  ; R42 := R42["mGoal"]
-498 [-]: DIV       R41 R41 R42  ; R41 := R41 / R42
-499 [-]: MUL       R41 R41 K87  ; R41 := R41 * 50
-500 [-]: ADD       R41 K87 R41  ; R41 := 50 + R41
-501 [-]: TEST      R23 0        ; if not R23 then PC := 513
-502 [-]: JMP       513          ; PC := 513
-503 [-]: GETUPVAL  R42 U0       ; R42 := U0
-504 [-]: GETTABLE  R42 R42 K81  ; R42 := R42["mInvasionInfo"]
-505 [-]: GETTABLE  R42 R42 K85  ; R42 := R42["mCount"]
-506 [-]: GETUPVAL  R43 U0       ; R43 := U0
-507 [-]: GETTABLE  R43 R43 K81  ; R43 := R43["mInvasionInfo"]
-508 [-]: GETTABLE  R43 R43 K86  ; R43 := R43["mGoal"]
-509 [-]: DIV       R42 R42 R43  ; R42 := R42 / R43
-510 [-]: MUL       R42 R42 K88  ; R42 := R42 * 100
-511 [-]: ADD       R41 K88 R42  ; R41 := 100 + R42
-512 [-]: JMP       521          ; PC := 521
-513 [-]: GETUPVAL  R42 U0       ; R42 := U0
-514 [-]: GETTABLE  R42 R42 K81  ; R42 := R42["mInvasionInfo"]
-515 [-]: GETTABLE  R42 R42 K89  ; R42 := R42["mAttackerMissionInfo"]
-516 [-]: GETTABLE  R42 R42 K90  ; R42 := R42["faction"]
-517 [-]: GETGLOBAL R43 K27      ; R43 := Lotus_Game
-518 [-]: GETTABLE  R43 R43 K83  ; R43 := R43["FC_INFESTATION"]
-519 [-]: EQ        0 R42 R43    ; if R42 ~= R43 then PC := 521
-520 [-]: JMP       521          ; PC := 521
-521 [-]: GETUPVAL  R42 U1       ; R42 := U1
-522 [-]: GETTABLE  R42 R42 K91  ; R42 := R42["0x90BB414A"]
-523 [-]: MOVE      R43 R41      ; R43 := R41
-524 [-]: CALL      R42 2 2      ; R42 := R42(R43)
-525 [-]: MOVE      R18 R42      ; R18 := R42
-526 [-]: JMP       562          ; PC := 562
-527 [-]: GETUPVAL  R42 U0       ; R42 := U0
-528 [-]: GETTABLE  R42 R42 K81  ; R42 := R42["mInvasionInfo"]
-529 [-]: GETTABLE  R42 R42 K85  ; R42 := R42["mCount"]
-530 [-]: GETUPVAL  R43 U0       ; R43 := U0
-531 [-]: GETTABLE  R43 R43 K81  ; R43 := R43["mInvasionInfo"]
-532 [-]: GETTABLE  R43 R43 K86  ; R43 := R43["mGoal"]
-533 [-]: DIV       R42 R42 R43  ; R42 := R42 / R43
-534 [-]: MUL       R42 R42 K87  ; R42 := R42 * 50
-535 [-]: ADD       R42 K87 R42  ; R42 := 50 + R42
-536 [-]: GETUPVAL  R43 U0       ; R43 := U0
-537 [-]: GETTABLE  R43 R43 K81  ; R43 := R43["mInvasionInfo"]
-538 [-]: GETTABLE  R43 R43 K85  ; R43 := R43["mCount"]
-539 [-]: GETUPVAL  R44 U0       ; R44 := U0
-540 [-]: GETTABLE  R44 R44 K81  ; R44 := R44["mInvasionInfo"]
-541 [-]: GETTABLE  R44 R44 K86  ; R44 := R44["mGoal"]
-542 [-]: DIV       R43 R43 R44  ; R43 := R43 / R44
-543 [-]: MUL       R43 R43 K87  ; R43 := R43 * 50
-544 [-]: SUB       R43 K87 R43  ; R43 := 50 - R43
-545 [-]: GETUPVAL  R44 U1       ; R44 := U1
-546 [-]: GETTABLE  R44 R44 K91  ; R44 := R44["0x90BB414A"]
-547 [-]: MOVE      R45 R42      ; R45 := R42
-548 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-549 [-]: GETUPVAL  R45 U1       ; R45 := U1
-550 [-]: GETTABLE  R45 R45 K91  ; R45 := R45["0x90BB414A"]
-551 [-]: MOVE      R46 R43      ; R46 := R43
-552 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-553 [-]: GETGLOBAL R46 K11      ; R46 := 0xE6DC43B0
-554 [-]: LOADK     R47 K92      ; R47 := "/Lotus/Language/Menu/DilemmaActiveProgress"
-555 [-]: NEWTABLE  R48 0 4      ; R48 := {}
-556 [-]: SETTABLE  R48 K93 K94  ; R48["OPTION_ONE"] := "Nef Anyo"
-557 [-]: SETTABLE  R48 K95 K96  ; R48["OPTION_TWO"] := "Alad V"
-558 [-]: SETTABLE  R48 K97 R44  ; R48["VALUE_ONE"] := R44
-559 [-]: SETTABLE  R48 K98 R45  ; R48["VALUE_TWO"] := R45
-560 [-]: CALL      R46 3 2      ; R46 := R46(R47,R48)
-561 [-]: MOVE      R18 R46      ; R18 := R46
-562 [-]: TEST      R23 0        ; if not R23 then PC := 574
-563 [-]: JMP       574          ; PC := 574
-564 [-]: GETGLOBAL R46 K11      ; R46 := 0xE6DC43B0
-565 [-]: LOADK     R47 K99      ; R47 := "/Lotus/Language/Menu/MissionIntro_Invasion"
-566 [-]: MOVE      R48 R0       ; R48 := R0
-567 [-]: CALL      R46 3 2      ; R46 := R46(R47,R48)
-568 [-]: MOVE      R8 R46       ; R8 := R46
-569 [-]: LOADK     R46 K40      ; R46 := " ("
-570 [-]: GETUPVAL  R47 U0       ; R47 := U0
-571 [-]: GETTABLE  R47 R47 K5   ; R47 := R47["mName"]
-572 [-]: LOADK     R48 K42      ; R48 := ")"
-573 [-]: CONCAT    R10 R46 R48  ; R10 := R46 .. R47 .. R48
-574 [-]: GETGLOBAL R46 K100     ; R46 := 0x400E7765
-575 [-]: GETGLOBAL R47 K101     ; R47 := gGameData
-576 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-577 [-]: TEST      R46 1        ; if R46 then PC := 743
-578 [-]: JMP       743          ; PC := 743
-579 [-]: GETGLOBAL R46 K101     ; R46 := gGameData
-580 [-]: SELF      R46 R46 K102 ; R47 := R46; R46 := R46["0x8EA5238E"]
-581 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-582 [-]: LOADK     R47 K36      ; R47 := 1
-583 [-]: LEN       R48 R46      ; R48 := # R46
-584 [-]: LOADK     R49 K36      ; R49 := 1
-585 [-]: FORPREP   R47 656      ; R47 -= R49; PC := 656
-586 [-]: GETTABLE  R51 R46 R50  ; R51 := R46[R50]
-587 [-]: GETTABLE  R51 R51 K103 ; R51 := R51["mId"]
-588 [-]: GETTABLE  R51 R51 K103 ; R51 := R51["mId"]
-589 [-]: GETUPVAL  R52 U0       ; R52 := U0
-590 [-]: GETTABLE  R52 R52 K81  ; R52 := R52["mInvasionInfo"]
-591 [-]: GETTABLE  R52 R52 K103 ; R52 := R52["mId"]
-592 [-]: GETTABLE  R52 R52 K103 ; R52 := R52["mId"]
-593 [-]: EQ        0 R51 R52    ; if R51 ~= R52 then PC := 656
-594 [-]: JMP       656          ; PC := 656
-595 [-]: GETTABLE  R51 R46 R50  ; R51 := R46[R50]
-596 [-]: GETTABLE  R19 R51 K104 ; R19 := R51["mDelta"]
-597 [-]: LT        0 K30 R19    ; if 0 >= R19 then PC := 624
-598 [-]: JMP       624          ; PC := 624
-599 [-]: GETUPVAL  R51 U0       ; R51 := U0
-600 [-]: GETTABLE  R51 R51 K81  ; R51 := R51["mInvasionInfo"]
-601 [-]: GETTABLE  R21 R51 K82  ; R21 := R51["mFaction"]
-602 [-]: GETUPVAL  R51 U3       ; R51 := U3
-603 [-]: GETTABLE  R51 R51 K19  ; R51 := R51["0xF81722A2"]
-604 [-]: GETUPVAL  R52 U0       ; R52 := U0
-605 [-]: GETTABLE  R52 R52 K81  ; R52 := R52["mInvasionInfo"]
-606 [-]: GETTABLE  R52 R52 K105 ; R52 := R52["mAttackerName"]
-607 [-]: GETGLOBAL R53 K48      ; R53 := EMPTY_SYMBOL
-608 [-]: EQ        1 R52 R53    ; if R52 == R53 then PC := 611
-609 [-]: JMP       611          ; PC := 611
-610 [-]: MOVE      R52 R0       ; R52 := R0
-611 [-]: MOVE      R52 R1       ; R52 := R1
-612 [-]: GETUPVAL  R53 U1       ; R53 := U1
-613 [-]: GETTABLE  R53 R53 K106 ; R53 := R53["FactionNames"]
-614 [-]: ADD       R54 R21 K36  ; R54 := R21 + 1
-615 [-]: GETTABLE  R53 R53 R54  ; R53 := R53[R54]
-616 [-]: GETGLOBAL R54 K0       ; R54 := 0x9FAED6BC
-617 [-]: GETUPVAL  R55 U0       ; R55 := U0
-618 [-]: GETTABLE  R55 R55 K81  ; R55 := R55["mInvasionInfo"]
-619 [-]: GETTABLE  R55 R55 K105 ; R55 := R55["mAttackerName"]
-620 [-]: CALL      R54 2 0      ; R54,... := R54(R55)
-621 [-]: CALL      R51 0 2      ; R51 := R51(R52,...)
-622 [-]: MOVE      R22 R51      ; R22 := R51
-623 [-]: JMP       656          ; PC := 656
-624 [-]: LT        0 R19 K30    ; if R19 >= 0 then PC := 656
-625 [-]: JMP       656          ; PC := 656
-626 [-]: GETGLOBAL R51 K107     ; R51 := math
-627 [-]: GETTABLE  R51 R51 K108 ; R51 := R51["0xF93F7CC8"]
-628 [-]: MOVE      R52 R19      ; R52 := R19
-629 [-]: CALL      R51 2 2      ; R51 := R51(R52)
-630 [-]: MOVE      R19 R51      ; R19 := R51
-631 [-]: GETUPVAL  R51 U0       ; R51 := U0
-632 [-]: GETTABLE  R51 R51 K81  ; R51 := R51["mInvasionInfo"]
-633 [-]: GETTABLE  R51 R51 K89  ; R51 := R51["mAttackerMissionInfo"]
-634 [-]: GETTABLE  R21 R51 K90  ; R21 := R51["faction"]
-635 [-]: GETUPVAL  R51 U3       ; R51 := U3
-636 [-]: GETTABLE  R51 R51 K19  ; R51 := R51["0xF81722A2"]
-637 [-]: GETUPVAL  R52 U0       ; R52 := U0
-638 [-]: GETTABLE  R52 R52 K81  ; R52 := R52["mInvasionInfo"]
-639 [-]: GETTABLE  R52 R52 K109 ; R52 := R52["mDefenderName"]
-640 [-]: GETGLOBAL R53 K48      ; R53 := EMPTY_SYMBOL
-641 [-]: EQ        1 R52 R53    ; if R52 == R53 then PC := 644
-642 [-]: JMP       644          ; PC := 644
-643 [-]: MOVE      R52 R0       ; R52 := R0
-644 [-]: MOVE      R52 R1       ; R52 := R1
-645 [-]: GETUPVAL  R53 U1       ; R53 := U1
-646 [-]: GETTABLE  R53 R53 K106 ; R53 := R53["FactionNames"]
-647 [-]: ADD       R54 R21 K36  ; R54 := R21 + 1
-648 [-]: GETTABLE  R53 R53 R54  ; R53 := R53[R54]
-649 [-]: GETGLOBAL R54 K0       ; R54 := 0x9FAED6BC
-650 [-]: GETUPVAL  R55 U0       ; R55 := U0
-651 [-]: GETTABLE  R55 R55 K81  ; R55 := R55["mInvasionInfo"]
-652 [-]: GETTABLE  R55 R55 K109 ; R55 := R55["mDefenderName"]
-653 [-]: CALL      R54 2 0      ; R54,... := R54(R55)
-654 [-]: CALL      R51 0 2      ; R51 := R51(R52,...)
-655 [-]: MOVE      R22 R51      ; R22 := R51
-656 [-]: FORLOOP   R47 586      ; R47 += R49; if R47 <= R48 then begin PC := 586; R50 := R47 end
-657 [-]: GETUPVAL  R51 U1       ; R51 := U1
-658 [-]: GETTABLE  R51 R51 K51  ; R51 := R51["0xF030C338"]
-659 [-]: GETGLOBAL R52 K23      ; R52 := mMovie
-660 [-]: GETUPVAL  R53 U0       ; R53 := U0
-661 [-]: GETTABLE  R53 R53 K81  ; R53 := R53["mInvasionInfo"]
-662 [-]: GETTABLE  R53 R53 K110 ; R53 := R53["mAttackerReward"]
-663 [-]: CALL      R51 3 2      ; R51 := R51(R52,R53)
-664 [-]: GETUPVAL  R52 U1       ; R52 := U1
-665 [-]: GETTABLE  R52 R52 K51  ; R52 := R52["0xF030C338"]
-666 [-]: GETGLOBAL R53 K23      ; R53 := mMovie
-667 [-]: GETUPVAL  R54 U0       ; R54 := U0
-668 [-]: GETTABLE  R54 R54 K81  ; R54 := R54["mInvasionInfo"]
-669 [-]: GETTABLE  R54 R54 K111 ; R54 := R54["mDefenderReward"]
-670 [-]: CALL      R52 3 2      ; R52 := R52(R53,R54)
-671 [-]: GETUPVAL  R53 U3       ; R53 := U3
-672 [-]: GETTABLE  R53 R53 K19  ; R53 := R53["0xF81722A2"]
-673 [-]: MOVE      R54 R23      ; R54 := R23
-674 [-]: MOVE      R55 R51      ; R55 := R51
-675 [-]: LOADK     R56 K60      ; R56 := " "
-676 [-]: GETGLOBAL R57 K23      ; R57 := mMovie
-677 [-]: SELF      R57 R57 K24  ; R58 := R57; R57 := R57["0x5DB0BD4"]
-678 [-]: LOADK     R59 K112     ; R59 := "/Lotus/Language/Menu/MissionBoard_InvasionRewardCompare"
-679 [-]: MOVE      R60 R0       ; R60 := R0
-680 [-]: CALL      R57 4 2      ; R57 := R57(R58,R59,R60)
-681 [-]: LOADK     R58 K60      ; R58 := " "
-682 [-]: MOVE      R59 R52      ; R59 := R52
-683 [-]: CONCAT    R55 R55 R59  ; R55 := R55 .. R56 .. R57 .. R58 .. R59
-684 [-]: MOVE      R56 R52      ; R56 := R52
-685 [-]: CALL      R53 4 2      ; R53 := R53(R54,R55,R56)
-686 [-]: MOVE      R24 R53      ; R24 := R53
-687 [-]: LOADK     R53 K113     ; R53 := "\r\n"
-688 [-]: MOVE      R54 R18      ; R54 := R18
-689 [-]: LOADK     R55 K113     ; R55 := "\r\n"
-690 [-]: MOVE      R56 R19      ; R56 := R19
-691 [-]: LOADK     R57 K114     ; R57 := "/"
-692 [-]: MOVE      R58 R20      ; R58 := R20
-693 [-]: CONCAT    R15 R53 R58  ; R15 := R53 .. R54 .. R55 .. R56 .. R57 .. R58
-694 [-]: TEST      R21 0        ; if not R21 then PC := 706
-695 [-]: JMP       706          ; PC := 706
-696 [-]: TEST      R23 1        ; if R23 then PC := 706
-697 [-]: JMP       706          ; PC := 706
-698 [-]: MOVE      R53 R15      ; R53 := R15
-699 [-]: LOADK     R54 K60      ; R54 := " "
-700 [-]: GETGLOBAL R55 K23      ; R55 := mMovie
-701 [-]: SELF      R55 R55 K24  ; R56 := R55; R55 := R55["0x5DB0BD4"]
-702 [-]: MOVE      R57 R22      ; R57 := R22
-703 [-]: MOVE      R58 R0       ; R58 := R0
-704 [-]: CALL      R55 4 2      ; R55 := R55(R56,R57,R58)
-705 [-]: CONCAT    R15 R53 R55  ; R15 := R53 .. R54 .. R55
-706 [-]: MOVE      R53 R15      ; R53 := R15
-707 [-]: LOADK     R54 K113     ; R54 := "\r\n"
-708 [-]: MOVE      R55 R24      ; R55 := R24
-709 [-]: CONCAT    R15 R53 R55  ; R15 := R53 .. R54 .. R55
-710 [-]: GETGLOBAL R53 K43      ; R53 := Engine
-711 [-]: GETTABLE  R53 R53 K44  ; R53 := R53["0xD09D7910"]
-712 [-]: GETUPVAL  R54 U0       ; R54 := U0
-713 [-]: GETTABLE  R54 R54 K81  ; R54 := R54["mInvasionInfo"]
-714 [-]: GETTABLE  R54 R54 K45  ; R54 := R54["mExpiry"]
-715 [-]: CALL      R53 2 2      ; R53 := R53(R54)
-716 [-]: LE        0 K115 R53   ; if -600 > R53 then PC := 743
-717 [-]: JMP       743          ; PC := 743
-718 [-]: LE        0 R53 K116   ; if R53 > 43200 then PC := 743
-719 [-]: JMP       743          ; PC := 743
-720 [-]: GETUPVAL  R54 U1       ; R54 := U1
-721 [-]: GETTABLE  R54 R54 K117 ; R54 := R54["0xE5892312"]
-722 [-]: MOVE      R55 R53      ; R55 := R53
-723 [-]: CALL      R54 2 2      ; R54 := R54(R55)
-724 [-]: LT        0 R53 K30    ; if R53 >= 0 then PC := 731
-725 [-]: JMP       731          ; PC := 731
-726 [-]: GETUPVAL  R55 U1       ; R55 := U1
-727 [-]: GETTABLE  R55 R55 K117 ; R55 := R55["0xE5892312"]
-728 [-]: LOADK     R56 K30      ; R56 := 0
-729 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-730 [-]: MOVE      R54 R55      ; R54 := R55
-731 [-]: MOVE      R55 R12      ; R55 := R12
-732 [-]: LOADK     R56 K17      ; R56 := " - "
-733 [-]: GETGLOBAL R57 K9       ; R57 := string
-734 [-]: GETTABLE  R57 R57 K10  ; R57 := R57["0x639C642A"]
-735 [-]: GETGLOBAL R58 K11      ; R58 := 0xE6DC43B0
-736 [-]: LOADK     R59 K118     ; R59 := "/Lotus/Language/Menu/Notification_Expiry_Heading"
-737 [-]: LOADNIL   R60 R60      ; R60 := nil
-738 [-]: CALL      R58 3 0      ; R58,... := R58(R59,R60)
-739 [-]: CALL      R57 0 2      ; R57 := R57(R58,...)
-740 [-]: LOADK     R58 K60      ; R58 := " "
-741 [-]: MOVE      R59 R54      ; R59 := R54
-742 [-]: CONCAT    R12 R55 R59  ; R12 := R55 .. R56 .. R57 .. R58 .. R59
-743 [-]: GETUPVAL  R55 U0       ; R55 := U0
-744 [-]: GETTABLE  R55 R55 K57  ; R55 := R55["mMission"]
-745 [-]: GETTABLE  R55 R55 K119 ; R55 := R55["missionType"]
-746 [-]: GETGLOBAL R56 K27      ; R56 := Lotus_Game
-747 [-]: GETTABLE  R56 R56 K120 ; R56 := R56["MT_RAILJACK"]
-748 [-]: EQ        0 R55 R56    ; if R55 ~= R56 then PC := 796
-749 [-]: JMP       796          ; PC := 796
-750 [-]: GETGLOBAL R55 K100     ; R55 := 0x400E7765
-751 [-]: GETUPVAL  R56 U0       ; R56 := U0
-752 [-]: GETTABLE  R56 R56 K57  ; R56 := R56["mMission"]
-753 [-]: SELF      R56 R56 K121 ; R57 := R56; R56 := R56["0x70C51B59"]
-754 [-]: CALL      R56 2 0      ; R56,... := R56(R57)
-755 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
-756 [-]: TEST      R55 0        ; if not R55 then PC := 796
-757 [-]: JMP       796          ; PC := 796
-758 [-]: GETGLOBAL R55 K23      ; R55 := mMovie
-759 [-]: SELF      R55 R55 K24  ; R56 := R55; R55 := R55["0x5DB0BD4"]
-760 [-]: LOADK     R57 K122     ; R57 := "<RAILJACK>"
-761 [-]: MOVE      R58 R1       ; R58 := R1
-762 [-]: CALL      R55 4 2      ; R55 := R55(R56,R57,R58)
-763 [-]: LOADK     R56 K60      ; R56 := " "
-764 [-]: GETGLOBAL R57 K9       ; R57 := string
-765 [-]: GETTABLE  R57 R57 K10  ; R57 := R57["0x639C642A"]
-766 [-]: GETGLOBAL R58 K23      ; R58 := mMovie
-767 [-]: SELF      R58 R58 K24  ; R59 := R58; R58 := R58["0x5DB0BD4"]
-768 [-]: LOADK     R60 K123     ; R60 := "/Lotus/Language/Railjack/Railjack"
-769 [-]: MOVE      R61 R0       ; R61 := R0
-770 [-]: CALL      R58 4 0      ; R58,... := R58(R59,R60,R61)
-771 [-]: CALL      R57 0 2      ; R57 := R57(R58,...)
-772 [-]: CONCAT    R8 R55 R57   ; R8 := R55 .. R56 .. R57
-773 [-]: MOVE      R55 R30      ; R55 := R30
-774 [-]: LOADK     R56 K124     ; R56 := "/Lotus/Language/Menu/Lobby_Mission"
-775 [-]: MOVE      R57 R8       ; R57 := R8
-776 [-]: CALL      R55 3 1      ; R55(R56,R57)
-777 [-]: GETGLOBAL R55 K9       ; R55 := string
-778 [-]: GETTABLE  R55 R55 K125 ; R55 := R55["0xC6772A8A"]
-779 [-]: MOVE      R56 R29      ; R56 := R29
-780 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-781 [-]: MOVE      R56 R29      ; R56 := R29
-782 [-]: LOADK     R57 K126     ; R57 := "</p>"
-783 [-]: CONCAT    R29 R56 R57  ; R29 := R56 .. R57
-784 [-]: GETUPVAL  R56 U5       ; R56 := U5
-785 [-]: GETTABLE  R56 R56 K127 ; R56 := R56["UpdateTimer"]
-786 [-]: EQ        1 R56 K22    ; if R56 == nil then PC := 795
-787 [-]: JMP       795          ; PC := 795
-788 [-]: GETUPVAL  R56 U5       ; R56 := U5
-789 [-]: GETGLOBAL R57 K9       ; R57 := string
-790 [-]: GETTABLE  R57 R57 K129 ; R57 := R57["0x7B782033"]
-791 [-]: MOVE      R58 R29      ; R58 := R29
-792 [-]: ADD       R59 R55 K36  ; R59 := R55 + 1
-793 [-]: CALL      R57 3 2      ; R57 := R57(R58,R59)
-794 [-]: SETTABLE  R56 K128 R57 ; R56["TimerPost"] := R57
-795 [-]: RETURN    R29 2        ; return R29
-796 [-]: GETGLOBAL R56 K27      ; R56 := Lotus_Game
-797 [-]: GETTABLE  R56 R56 K28  ; R56 := R56["NT_HUB"]
-798 [-]: EQ        1 R7 R56     ; if R7 == R56 then PC := 806
-799 [-]: JMP       806          ; PC := 806
-800 [-]: MOVE      R56 R30      ; R56 := R30
-801 [-]: LOADK     R57 K124     ; R57 := "/Lotus/Language/Menu/Lobby_Mission"
-802 [-]: MOVE      R58 R8       ; R58 := R8
-803 [-]: MOVE      R59 R10      ; R59 := R10
-804 [-]: CONCAT    R58 R58 R59  ; R58 := R58 .. R59
-805 [-]: CALL      R56 3 1      ; R56(R57,R58)
-806 [-]: GETUPVAL  R56 U0       ; R56 := U0
-807 [-]: GETTABLE  R56 R56 K57  ; R56 := R56["mMission"]
-808 [-]: GETTABLE  R56 R56 K130 ; R56 := R56["goalTag"]
-809 [-]: SELF      R56 R56 K131 ; R57 := R56; R56 := R56["0x5EC7A3D2"]
-810 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-811 [-]: EQ        0 R56 K132   ; if R56 ~= "NoMods" then PC := 826
-812 [-]: JMP       826          ; PC := 826
-813 [-]: GETGLOBAL R56 K23      ; R56 := mMovie
-814 [-]: SELF      R56 R56 K24  ; R57 := R56; R56 := R56["0x5DB0BD4"]
-815 [-]: LOADK     R58 K133     ; R58 := "/Lotus/Language/Sorties/SOModifierNoMods"
-816 [-]: MOVE      R59 R0       ; R59 := R0
-817 [-]: CALL      R56 4 2      ; R56 := R56(R57,R58,R59)
-818 [-]: GETGLOBAL R57 K23      ; R57 := mMovie
-819 [-]: SELF      R57 R57 K24  ; R58 := R57; R57 := R57["0x5DB0BD4"]
-820 [-]: LOADK     R59 K134     ; R59 := "/Lotus/Language/Sorties/SOModifierCaption"
-821 [-]: MOVE      R60 R0       ; R60 := R0
-822 [-]: NEWTABLE  R61 0 1      ; R61 := {}
-823 [-]: SETTABLE  R61 K135 R56 ; R61["MODIFIER_DESC"] := R56
-824 [-]: CALL      R57 5 2      ; R57 := R57(R58,R59,R60,R61)
-825 [-]: MOVE      R28 R57      ; R28 := R57
-826 [-]: EQ        1 R15 K22    ; if R15 == nil then PC := 903
-827 [-]: JMP       903          ; PC := 903
-828 [-]: TEST      R23 1        ; if R23 then PC := 903
-829 [-]: JMP       903          ; PC := 903
-830 [-]: GETGLOBAL R57 K11      ; R57 := 0xE6DC43B0
-831 [-]: GETGLOBAL R58 K0       ; R58 := 0x9FAED6BC
-832 [-]: GETUPVAL  R59 U1       ; R59 := U1
-833 [-]: GETTABLE  R59 R59 K106 ; R59 := R59["FactionNames"]
-834 [-]: GETUPVAL  R60 U0       ; R60 := U0
-835 [-]: GETTABLE  R60 R60 K81  ; R60 := R60["mInvasionInfo"]
-836 [-]: GETTABLE  R60 R60 K82  ; R60 := R60["mFaction"]
-837 [-]: ADD       R60 R60 K36  ; R60 := R60 + 1
-838 [-]: GETTABLE  R59 R59 R60  ; R59 := R59[R60]
-839 [-]: CALL      R58 2 2      ; R58 := R58(R59)
-840 [-]: MOVE      R59 R0       ; R59 := R0
-841 [-]: CALL      R57 3 2      ; R57 := R57(R58,R59)
-842 [-]: LOADK     R58 K40      ; R58 := " ("
-843 [-]: GETGLOBAL R59 K9       ; R59 := string
-844 [-]: GETTABLE  R59 R59 K10  ; R59 := R59["0x639C642A"]
-845 [-]: GETGLOBAL R60 K23      ; R60 := mMovie
-846 [-]: SELF      R60 R60 K24  ; R61 := R60; R60 := R60["0x5DB0BD4"]
-847 [-]: LOADK     R62 K55      ; R62 := "/Lotus/Language/Game/MissionName_"
-848 [-]: GETUPVAL  R63 U1       ; R63 := U1
-849 [-]: GETTABLE  R63 R63 K56  ; R63 := R63["0x87B2D555"]
-850 [-]: GETUPVAL  R64 U0       ; R64 := U0
-851 [-]: GETTABLE  R64 R64 K81  ; R64 := R64["mInvasionInfo"]
-852 [-]: GETTABLE  R64 R64 K89  ; R64 := R64["mAttackerMissionInfo"]
-853 [-]: CALL      R63 2 2      ; R63 := R63(R64)
-854 [-]: CONCAT    R62 R62 R63  ; R62 := R62 .. R63
-855 [-]: MOVE      R63 R0       ; R63 := R0
-856 [-]: CALL      R60 4 0      ; R60,... := R60(R61,R62,R63)
-857 [-]: CALL      R59 0 2      ; R59 := R59(R60,...)
-858 [-]: LOADK     R60 K42      ; R60 := ")"
-859 [-]: CONCAT    R57 R57 R60  ; R57 := R57 .. R58 .. R59 .. R60
-860 [-]: GETGLOBAL R58 K11      ; R58 := 0xE6DC43B0
-861 [-]: GETGLOBAL R59 K0       ; R59 := 0x9FAED6BC
-862 [-]: GETUPVAL  R60 U1       ; R60 := U1
-863 [-]: GETTABLE  R60 R60 K106 ; R60 := R60["FactionNames"]
-864 [-]: GETUPVAL  R61 U0       ; R61 := U0
-865 [-]: GETTABLE  R61 R61 K81  ; R61 := R61["mInvasionInfo"]
-866 [-]: GETTABLE  R61 R61 K89  ; R61 := R61["mAttackerMissionInfo"]
-867 [-]: GETTABLE  R61 R61 K90  ; R61 := R61["faction"]
-868 [-]: ADD       R61 R61 K36  ; R61 := R61 + 1
-869 [-]: GETTABLE  R60 R60 R61  ; R60 := R60[R61]
-870 [-]: CALL      R59 2 2      ; R59 := R59(R60)
-871 [-]: MOVE      R60 R0       ; R60 := R0
-872 [-]: CALL      R58 3 2      ; R58 := R58(R59,R60)
-873 [-]: LOADK     R59 K40      ; R59 := " ("
-874 [-]: GETGLOBAL R60 K9       ; R60 := string
-875 [-]: GETTABLE  R60 R60 K10  ; R60 := R60["0x639C642A"]
-876 [-]: GETGLOBAL R61 K23      ; R61 := mMovie
-877 [-]: SELF      R61 R61 K24  ; R62 := R61; R61 := R61["0x5DB0BD4"]
-878 [-]: LOADK     R63 K55      ; R63 := "/Lotus/Language/Game/MissionName_"
-879 [-]: GETUPVAL  R64 U1       ; R64 := U1
-880 [-]: GETTABLE  R64 R64 K56  ; R64 := R64["0x87B2D555"]
-881 [-]: GETUPVAL  R65 U0       ; R65 := U0
-882 [-]: GETTABLE  R65 R65 K81  ; R65 := R65["mInvasionInfo"]
-883 [-]: GETTABLE  R65 R65 K136 ; R65 := R65["mDefenderMissionInfo"]
-884 [-]: CALL      R64 2 2      ; R64 := R64(R65)
-885 [-]: CONCAT    R63 R63 R64  ; R63 := R63 .. R64
-886 [-]: MOVE      R64 R0       ; R64 := R0
-887 [-]: CALL      R61 4 0      ; R61,... := R61(R62,R63,R64)
-888 [-]: CALL      R60 0 2      ; R60 := R60(R61,...)
-889 [-]: LOADK     R61 K42      ; R61 := ")"
-890 [-]: CONCAT    R58 R58 R61  ; R58 := R58 .. R59 .. R60 .. R61
-891 [-]: MOVE      R59 R30      ; R59 := R30
-892 [-]: LOADNIL   R60 R60      ; R60 := nil
-893 [-]: MOVE      R61 R57      ; R61 := R57
-894 [-]: LOADK     R62 K60      ; R62 := " "
-895 [-]: GETGLOBAL R63 K11      ; R63 := 0xE6DC43B0
-896 [-]: LOADK     R64 K112     ; R64 := "/Lotus/Language/Menu/MissionBoard_InvasionRewardCompare"
-897 [-]: LOADNIL   R65 R65      ; R65 := nil
-898 [-]: CALL      R63 3 2      ; R63 := R63(R64,R65)
-899 [-]: LOADK     R64 K113     ; R64 := "\r\n"
-900 [-]: MOVE      R65 R58      ; R65 := R58
-901 [-]: CONCAT    R61 R61 R65  ; R61 := R61 .. R62 .. R63 .. R64 .. R65
-902 [-]: CALL      R59 3 1      ; R59(R60,R61)
-903 [-]: GETUPVAL  R59 U0       ; R59 := U0
-904 [-]: GETTABLE  R59 R59 K57  ; R59 := R59["mMission"]
-905 [-]: GETTABLE  R59 R59 K119 ; R59 := R59["missionType"]
-906 [-]: GETGLOBAL R60 K27      ; R60 := Lotus_Game
-907 [-]: GETTABLE  R60 R60 K137 ; R60 := R60["MT_LANDSCAPE"]
-908 [-]: EQ        1 R59 R60    ; if R59 == R60 then PC := 918
-909 [-]: JMP       918          ; PC := 918
-910 [-]: GETGLOBAL R59 K27      ; R59 := Lotus_Game
-911 [-]: GETTABLE  R59 R59 K28  ; R59 := R59["NT_HUB"]
-912 [-]: EQ        0 R7 R59     ; if R7 ~= R59 then PC := 990
-913 [-]: JMP       990          ; PC := 990
-914 [-]: GETUPVAL  R59 U1       ; R59 := U1
-915 [-]: GETTABLE  R59 R59 K138 ; R59 := R59["CETUS_NODE_TAG"]
-916 [-]: EQ        0 R6 R59     ; if R6 ~= R59 then PC := 990
-917 [-]: JMP       990          ; PC := 990
-918 [-]: GETUPVAL  R59 U5       ; R59 := U5
-919 [-]: SETTABLE  R59 K127 K30 ; R59["UpdateTimer"] := 0
-920 [-]: GETUPVAL  R59 U5       ; R59 := U5
-921 [-]: SETTABLE  R59 K139 R29 ; R59["TimerPre"] := R29
-922 [-]: GETUPVAL  R59 U1       ; R59 := U1
-923 [-]: GETTABLE  R59 R59 K140 ; R59 := R59["0x555EFA5"]
-924 [-]: GETUPVAL  R60 U0       ; R60 := U0
-925 [-]: GETTABLE  R60 R60 K57  ; R60 := R60["mMission"]
-926 [-]: GETTABLE  R60 R60 K141 ; R60 := R60["location"]
-927 [-]: CALL      R59 2 2      ; R59 := R59(R60)
-928 [-]: GETUPVAL  R60 U1       ; R60 := U1
-929 [-]: GETTABLE  R60 R60 K142 ; R60 := R60["0x447FCC2F"]
-930 [-]: MOVE      R61 R59      ; R61 := R59
-931 [-]: GETUPVAL  R62 U0       ; R62 := U0
-932 [-]: GETTABLE  R62 R62 K57  ; R62 := R62["mMission"]
-933 [-]: GETTABLE  R62 R62 K141 ; R62 := R62["location"]
-934 [-]: CALL      R60 3 4      ; R60,R61,R62 := R60(R61,R62)
-935 [-]: GETUPVAL  R63 U5       ; R63 := U5
-936 [-]: SETTABLE  R63 K143 R62 ; R63["NodeTime"] := R62
-937 [-]: GETUPVAL  R63 U0       ; R63 := U0
-938 [-]: GETTABLE  R63 R63 K57  ; R63 := R63["mMission"]
-939 [-]: GETTABLE  R63 R63 K141 ; R63 := R63["location"]
-940 [-]: GETUPVAL  R64 U1       ; R64 := U1
-941 [-]: GETTABLE  R64 R64 K144 ; R64 := R64["ORB_VALLIS_NODE_TAG"]
-942 [-]: EQ        0 R63 R64    ; if R63 ~= R64 then PC := 967
-943 [-]: JMP       967          ; PC := 967
-944 [-]: MOVE      R63 R30      ; R63 := R30
-945 [-]: LOADK     R64 K145     ; R64 := "/Lotus/Language/SolarisVenus/Temperature"
-946 [-]: GETGLOBAL R65 K23      ; R65 := mMovie
-947 [-]: SELF      R65 R65 K24  ; R66 := R65; R65 := R65["0x5DB0BD4"]
-948 [-]: LOADK     R67 K146     ; R67 := "/Lotus/Language/SystemMessages/TimeUntil"
-949 [-]: MOVE      R68 R0       ; R68 := R0
-950 [-]: NEWTABLE  R69 0 2      ; R69 := {}
-951 [-]: GETGLOBAL R70 K23      ; R70 := mMovie
-952 [-]: SELF      R70 R70 K24  ; R71 := R70; R70 := R70["0x5DB0BD4"]
-953 [-]: MOVE      R72 R61      ; R72 := R61
-954 [-]: MOVE      R73 R0       ; R73 := R0
-955 [-]: CALL      R70 4 2      ; R70 := R70(R71,R72,R73)
-956 [-]: SETTABLE  R69 K147 R70 ; R69["LABEL"] := R70
-957 [-]: GETUPVAL  R70 U1       ; R70 := U1
-958 [-]: GETTABLE  R70 R70 K149 ; R70 := R70["0xC65D09DD"]
-959 [-]: GETGLOBAL R71 K23      ; R71 := mMovie
-960 [-]: MOVE      R72 R62      ; R72 := R62
-961 [-]: LOADK     R73 K150     ; R73 := "CompactOne"
-962 [-]: CALL      R70 4 2      ; R70 := R70(R71,R72,R73)
-963 [-]: SETTABLE  R69 K148 R70 ; R69["TIME"] := R70
-964 [-]: CALL      R65 5 0      ; R65,... := R65(R66,R67,R68,R69)
-965 [-]: CALL      R63 0 1      ; R63(R64,...)
-966 [-]: JMP       998          ; PC := 998
-967 [-]: MOVE      R63 R30      ; R63 := R30
-968 [-]: LOADK     R64 K151     ; R64 := "/Lotus/Language/Menu/Photobooth_TimeOfDay"
-969 [-]: GETGLOBAL R65 K23      ; R65 := mMovie
-970 [-]: SELF      R65 R65 K24  ; R66 := R65; R65 := R65["0x5DB0BD4"]
-971 [-]: LOADK     R67 K146     ; R67 := "/Lotus/Language/SystemMessages/TimeUntil"
-972 [-]: MOVE      R68 R0       ; R68 := R0
-973 [-]: NEWTABLE  R69 0 2      ; R69 := {}
-974 [-]: GETGLOBAL R70 K23      ; R70 := mMovie
-975 [-]: SELF      R70 R70 K24  ; R71 := R70; R70 := R70["0x5DB0BD4"]
-976 [-]: MOVE      R72 R61      ; R72 := R61
-977 [-]: MOVE      R73 R0       ; R73 := R0
-978 [-]: CALL      R70 4 2      ; R70 := R70(R71,R72,R73)
-979 [-]: SETTABLE  R69 K147 R70 ; R69["LABEL"] := R70
-980 [-]: GETUPVAL  R70 U1       ; R70 := U1
-981 [-]: GETTABLE  R70 R70 K149 ; R70 := R70["0xC65D09DD"]
-982 [-]: GETGLOBAL R71 K23      ; R71 := mMovie
-983 [-]: MOVE      R72 R62      ; R72 := R62
-984 [-]: LOADK     R73 K150     ; R73 := "CompactOne"
-985 [-]: CALL      R70 4 2      ; R70 := R70(R71,R72,R73)
-986 [-]: SETTABLE  R69 K148 R70 ; R69["TIME"] := R70
-987 [-]: CALL      R65 5 0      ; R65,... := R65(R66,R67,R68,R69)
-988 [-]: CALL      R63 0 1      ; R63(R64,...)
-989 [-]: JMP       998          ; PC := 998
-990 [-]: GETUPVAL  R63 U5       ; R63 := U5
-991 [-]: SETTABLE  R63 K127 K22 ; R63["UpdateTimer"] := nil
-992 [-]: GETUPVAL  R63 U5       ; R63 := U5
-993 [-]: SETTABLE  R63 K143 K22 ; R63["NodeTime"] := nil
-994 [-]: GETUPVAL  R63 U5       ; R63 := U5
-995 [-]: SETTABLE  R63 K139 K22 ; R63["TimerPre"] := nil
-996 [-]: GETUPVAL  R63 U5       ; R63 := U5
-997 [-]: SETTABLE  R63 K128 K22 ; R63["TimerPost"] := nil
-998 [-]: GETGLOBAL R63 K9       ; R63 := string
-999 [-]: GETTABLE  R63 R63 K125 ; R63 := R63["0xC6772A8A"]
-1000 [-]: MOVE      R64 R29      ; R64 := R29
-1001 [-]: CALL      R63 2 2      ; R63 := R63(R64)
-1002 [-]: GETUPVAL  R64 U1       ; R64 := U1
-1003 [-]: GETTABLE  R64 R64 K152 ; R64 := R64["OPTIONAL_GOAL_PREFIX"]
-1004 [-]: MOVE      R65 R5       ; R65 := R5
-1005 [-]: CONCAT    R64 R64 R65  ; R64 := R64 .. R65
-1006 [-]: GETTABLE  R65 R9 R64   ; R65 := R9[R64]
-1007 [-]: TEST      R65 0        ; if not R65 then PC := 1017
-1008 [-]: JMP       1017         ; PC := 1017
-1009 [-]: MOVE      R65 R30      ; R65 := R30
-1010 [-]: LOADK     R66 K153     ; R66 := "/Lotus/Language/Menu/WorldStatePanel_Event"
-1011 [-]: GETGLOBAL R67 K11      ; R67 := 0xE6DC43B0
-1012 [-]: GETTABLE  R68 R9 R64   ; R68 := R9[R64]
-1013 [-]: GETTABLE  R68 R68 K54  ; R68 := R68["mDesc"]
-1014 [-]: LOADNIL   R69 R69      ; R69 := nil
-1015 [-]: CALL      R67 3 0      ; R67,... := R67(R68,R69)
-1016 [-]: CALL      R65 0 1      ; R65(R66,...)
-1017 [-]: GETUPVAL  R65 U0       ; R65 := U0
-1018 [-]: GETTABLE  R65 R65 K57  ; R65 := R65["mMission"]
-1019 [-]: GETTABLE  R65 R65 K119 ; R65 := R65["missionType"]
-1020 [-]: GETGLOBAL R66 K27      ; R66 := Lotus_Game
-1021 [-]: GETTABLE  R66 R66 K154 ; R66 := R66["MT_ASSASSINATION"]
-1022 [-]: EQ        0 R65 R66    ; if R65 ~= R66 then PC := 1035
-1023 [-]: JMP       1035         ; PC := 1035
-1024 [-]: TEST      R14 1        ; if R14 then PC := 1035
-1025 [-]: JMP       1035         ; PC := 1035
-1026 [-]: MOVE      R65 R30      ; R65 := R30
-1027 [-]: LOADK     R66 K155     ; R66 := "/Lotus/Language/Menu/MissionIntro_Target"
-1028 [-]: GETGLOBAL R67 K9       ; R67 := string
-1029 [-]: GETTABLE  R67 R67 K10  ; R67 := R67["0x639C642A"]
-1030 [-]: GETUPVAL  R68 U0       ; R68 := U0
-1031 [-]: GETTABLE  R68 R68 K54  ; R68 := R68["mDesc"]
-1032 [-]: CALL      R67 2 0      ; R67,... := R67(R68)
-1033 [-]: CALL      R65 0 1      ; R65(R66,...)
-1034 [-]: JMP       1110         ; PC := 1110
-1035 [-]: GETTABLE  R65 R0 K156  ; R65 := R0["guildId"]
-1036 [-]: EQ        1 R65 K22    ; if R65 == nil then PC := 1061
-1037 [-]: JMP       1061         ; PC := 1061
-1038 [-]: GETTABLE  R65 R0 K157  ; R65 := R0["clanTier"]
-1039 [-]: EQ        1 R65 K22    ; if R65 == nil then PC := 1061
-1040 [-]: JMP       1061         ; PC := 1061
-1041 [-]: MOVE      R65 R30      ; R65 := R30
-1042 [-]: LOADK     R66 K158     ; R66 := "/Lotus/Language/Menu/Profile_Clan"
-1043 [-]: GETGLOBAL R67 K9       ; R67 := string
-1044 [-]: GETTABLE  R67 R67 K10  ; R67 := R67["0x639C642A"]
-1045 [-]: GETTABLE  R68 R0 K159  ; R68 := R0["locName"]
-1046 [-]: CALL      R67 2 0      ; R67,... := R67(R68)
-1047 [-]: CALL      R65 0 1      ; R65(R66,...)
-1048 [-]: MOVE      R65 R30      ; R65 := R30
-1049 [-]: LOADK     R66 K160     ; R66 := "/Lotus/Language/Dojo/ClanTier"
-1050 [-]: GETGLOBAL R67 K9       ; R67 := string
-1051 [-]: GETTABLE  R67 R67 K10  ; R67 := R67["0x639C642A"]
-1052 [-]: GETGLOBAL R68 K11      ; R68 := 0xE6DC43B0
-1053 [-]: GETUPVAL  R69 U6       ; R69 := U6
-1054 [-]: GETTABLE  R70 R0 K157  ; R70 := R0["clanTier"]
-1055 [-]: GETTABLE  R69 R69 R70  ; R69 := R69[R70]
-1056 [-]: LOADNIL   R70 R70      ; R70 := nil
-1057 [-]: CALL      R68 3 0      ; R68,... := R68(R69,R70)
-1058 [-]: CALL      R67 0 0      ; R67,... := R67(R68,...)
-1059 [-]: CALL      R65 0 1      ; R65(R66,...)
-1060 [-]: JMP       1110         ; PC := 1110
-1061 [-]: GETGLOBAL R65 K27      ; R65 := Lotus_Game
-1062 [-]: GETTABLE  R65 R65 K28  ; R65 := R65["NT_HUB"]
-1063 [-]: EQ        0 R7 R65     ; if R7 ~= R65 then PC := 1082
-1064 [-]: JMP       1082         ; PC := 1082
-1065 [-]: LOADNIL   R65 R65      ; R65 := nil
-1066 [-]: EQ        0 R5 K161    ; if R5 ~= "IronwakeHUB3" then PC := 1070
-1067 [-]: JMP       1070         ; PC := 1070
-1068 [-]: LOADK     R65 K162     ; R65 := "/Lotus/Language/Factions/SteelMeridianName"
-1069 [-]: JMP       1071         ; PC := 1071
-1070 [-]: LOADK     R65 K163     ; R65 := "/Lotus/Language/Menu/Codex_Tenno"
-1071 [-]: MOVE      R66 R30      ; R66 := R30
-1072 [-]: LOADK     R67 K164     ; R67 := "/Lotus/Language/Menu/MissionIntro_Faction"
-1073 [-]: GETGLOBAL R68 K9       ; R68 := string
-1074 [-]: GETTABLE  R68 R68 K10  ; R68 := R68["0x639C642A"]
-1075 [-]: GETGLOBAL R69 K11      ; R69 := 0xE6DC43B0
-1076 [-]: MOVE      R70 R65      ; R70 := R65
-1077 [-]: LOADNIL   R71 R71      ; R71 := nil
-1078 [-]: CALL      R69 3 0      ; R69,... := R69(R70,R71)
-1079 [-]: CALL      R68 0 0      ; R68,... := R68(R69,...)
-1080 [-]: CALL      R66 0 1      ; R66(R67,...)
-1081 [-]: JMP       1110         ; PC := 1110
-1082 [-]: TEST      R14 0        ; if not R14 then PC := 1088
-1083 [-]: JMP       1088         ; PC := 1088
-1084 [-]: GETUPVAL  R66 U7       ; R66 := U7
-1085 [-]: GETTABLE  R66 R66 K165 ; R66 := R66["Active"]
-1086 [-]: TEST      R66 1        ; if R66 then PC := 1110
-1087 [-]: JMP       1110         ; PC := 1110
-1088 [-]: GETGLOBAL R66 K9       ; R66 := string
-1089 [-]: GETTABLE  R66 R66 K10  ; R66 := R66["0x639C642A"]
-1090 [-]: GETUPVAL  R67 U0       ; R67 := U0
-1091 [-]: GETTABLE  R67 R67 K54  ; R67 := R67["mDesc"]
-1092 [-]: CALL      R66 2 2      ; R66 := R66(R67)
-1093 [-]: TEST      R4 0         ; if not R4 then PC := 1106
-1094 [-]: JMP       1106         ; PC := 1106
-1095 [-]: MOVE      R67 R66      ; R67 := R66
-1096 [-]: LOADK     R68 K40      ; R68 := " ("
-1097 [-]: GETGLOBAL R69 K9       ; R69 := string
-1098 [-]: GETTABLE  R69 R69 K10  ; R69 := R69["0x639C642A"]
-1099 [-]: GETGLOBAL R70 K11      ; R70 := 0xE6DC43B0
-1100 [-]: LOADK     R71 K166     ; R71 := "/Lotus/Language/Menu/OccupyingFaction"
-1101 [-]: LOADNIL   R72 R72      ; R72 := nil
-1102 [-]: CALL      R70 3 0      ; R70,... := R70(R71,R72)
-1103 [-]: CALL      R69 0 2      ; R69 := R69(R70,...)
-1104 [-]: LOADK     R70 K42      ; R70 := ")"
-1105 [-]: CONCAT    R66 R67 R70  ; R66 := R67 .. R68 .. R69 .. R70
-1106 [-]: MOVE      R67 R30      ; R67 := R30
-1107 [-]: LOADK     R68 K164     ; R68 := "/Lotus/Language/Menu/MissionIntro_Faction"
-1108 [-]: MOVE      R69 R66      ; R69 := R66
-1109 [-]: CALL      R67 3 1      ; R67(R68,R69)
-1110 [-]: TEST      R13 1        ; if R13 then PC := 1168
-1111 [-]: JMP       1168         ; PC := 1168
-1112 [-]: TEST      R14 1        ; if R14 then PC := 1168
-1113 [-]: JMP       1168         ; PC := 1168
-1114 [-]: GETUPVAL  R67 U3       ; R67 := U3
-1115 [-]: GETTABLE  R67 R67 K19  ; R67 := R67["0xF81722A2"]
-1116 [-]: EQ        1 R3 K167    ; if R3 == "0x1" then PC := 1119
-1117 [-]: JMP       1119         ; PC := 1119
-1118 [-]: MOVE      R68 R0       ; R68 := R0
-1119 [-]: MOVE      R68 R1       ; R68 := R1
-1120 [-]: LOADK     R69 K168     ; R69 := 10
-1121 [-]: LOADK     R70 K30      ; R70 := 0
-1122 [-]: CALL      R67 4 2      ; R67 := R67(R68,R69,R70)
-1123 [-]: GETUPVAL  R68 U0       ; R68 := U0
-1124 [-]: GETTABLE  R68 R68 K169 ; R68 := R68["mLevelMin"]
-1125 [-]: ADD       R68 R68 R67  ; R68 := R68 + R67
-1126 [-]: LOADK     R69 K170     ; R69 := "-"
-1127 [-]: GETUPVAL  R70 U0       ; R70 := U0
-1128 [-]: GETTABLE  R70 R70 K171 ; R70 := R70["mLevelMax"]
-1129 [-]: ADD       R70 R70 R67  ; R70 := R70 + R67
-1130 [-]: CONCAT    R68 R68 R70  ; R68 := R68 .. R69 .. R70
-1131 [-]: GETUPVAL  R69 U0       ; R69 := U0
-1132 [-]: GETTABLE  R69 R69 K172 ; R69 := R69["mConclaveMax"]
-1133 [-]: LT        0 K30 R69    ; if 0 >= R69 then PC := 1145
-1134 [-]: JMP       1145         ; PC := 1145
-1135 [-]: MOVE      R69 R68      ; R69 := R68
-1136 [-]: LOADK     R70 K173     ; R70 := "  "
-1137 [-]: GETGLOBAL R71 K23      ; R71 := mMovie
-1138 [-]: SELF      R71 R71 K24  ; R72 := R71; R71 := R71["0x5DB0BD4"]
-1139 [-]: LOADK     R73 K174     ; R73 := "<CONCLAVE>"
-1140 [-]: MOVE      R74 R1       ; R74 := R1
-1141 [-]: CALL      R71 4 2      ; R71 := R71(R72,R73,R74)
-1142 [-]: GETUPVAL  R72 U0       ; R72 := U0
-1143 [-]: GETTABLE  R72 R72 K172 ; R72 := R72["mConclaveMax"]
-1144 [-]: CONCAT    R68 R69 R72  ; R68 := R69 .. R70 .. R71 .. R72
-1145 [-]: MOVE      R69 R30      ; R69 := R30
-1146 [-]: LOADK     R70 K175     ; R70 := "/Lotus/Language/Menu/MissionBoard_Level"
-1147 [-]: MOVE      R71 R68      ; R71 := R68
-1148 [-]: CALL      R69 3 1      ; R69(R70,R71)
-1149 [-]: GETUPVAL  R69 U0       ; R69 := U0
-1150 [-]: GETTABLE  R69 R69 K57  ; R69 := R69["mMission"]
-1151 [-]: GETTABLE  R69 R69 K119 ; R69 := R69["missionType"]
-1152 [-]: GETGLOBAL R70 K27      ; R70 := Lotus_Game
-1153 [-]: GETTABLE  R70 R70 K120 ; R70 := R70["MT_RAILJACK"]
-1154 [-]: EQ        0 R69 R70    ; if R69 ~= R70 then PC := 1168
-1155 [-]: JMP       1168         ; PC := 1168
-1156 [-]: GETUPVAL  R69 U0       ; R69 := U0
-1157 [-]: GETTABLE  R69 R69 K57  ; R69 := R69["mMission"]
-1158 [-]: GETTABLE  R69 R69 K176 ; R69 := R69["minSpaceEnemyLevel"]
-1159 [-]: LOADK     R70 K170     ; R70 := "-"
-1160 [-]: GETUPVAL  R71 U0       ; R71 := U0
-1161 [-]: GETTABLE  R71 R71 K57  ; R71 := R71["mMission"]
-1162 [-]: GETTABLE  R71 R71 K177 ; R71 := R71["maxSpaceEnemyLevel"]
-1163 [-]: CONCAT    R69 R69 R71  ; R69 := R69 .. R70 .. R71
-1164 [-]: MOVE      R70 R30      ; R70 := R30
-1165 [-]: LOADK     R71 K178     ; R71 := "/Lotus/Language/Menu/MissionBoard_SpaceLevel"
-1166 [-]: MOVE      R72 R69      ; R72 := R69
-1167 [-]: CALL      R70 3 1      ; R70(R71,R72)
-1168 [-]: GETGLOBAL R70 K100     ; R70 := 0x400E7765
-1169 [-]: GETUPVAL  R71 U0       ; R71 := U0
-1170 [-]: GETTABLE  R71 R71 K57  ; R71 := R71["mMission"]
-1171 [-]: GETTABLE  R71 R71 K179 ; R71 := R71["exclusiveWeapon"]
-1172 [-]: CALL      R70 2 2      ; R70 := R70(R71)
-1173 [-]: TEST      R70 1        ; if R70 then PC := 1217
-1174 [-]: JMP       1217         ; PC := 1217
-1175 [-]: GETGLOBAL R70 K11      ; R70 := 0xE6DC43B0
-1176 [-]: GETGLOBAL R71 K0       ; R71 := 0x9FAED6BC
-1177 [-]: GETGLOBAL R72 K180     ; R72 := 0x7C282057
-1178 [-]: GETUPVAL  R73 U0       ; R73 := U0
-1179 [-]: GETTABLE  R73 R73 K57  ; R73 := R73["mMission"]
-1180 [-]: GETTABLE  R73 R73 K179 ; R73 := R73["exclusiveWeapon"]
-1181 [-]: CALL      R72 2 2      ; R72 := R72(R73)
-1182 [-]: SELF      R72 R72 K181 ; R73 := R72; R72 := R72["0x616C74B6"]
-1183 [-]: CALL      R72 2 0      ; R72,... := R72(R73)
-1184 [-]: CALL      R71 0 2      ; R71 := R71(R72,...)
-1185 [-]: MOVE      R72 R0       ; R72 := R0
-1186 [-]: CALL      R70 3 2      ; R70 := R70(R71,R72)
-1187 [-]: GETGLOBAL R71 K11      ; R71 := 0xE6DC43B0
-1188 [-]: LOADK     R72 K182     ; R72 := "/Lotus/Language/Menu/Lobby_RestrictionDesc"
-1189 [-]: NEWTABLE  R73 0 1      ; R73 := {}
-1190 [-]: SETTABLE  R73 K183 R70 ; R73["ITEM"] := R70
-1191 [-]: CALL      R71 3 2      ; R71 := R71(R72,R73)
-1192 [-]: GETUPVAL  R72 U0       ; R72 := U0
-1193 [-]: GETTABLE  R72 R72 K53  ; R72 := R72["mGoalInfo"]
-1194 [-]: TEST      R72 0        ; if not R72 then PC := 1212
-1195 [-]: JMP       1212         ; PC := 1212
-1196 [-]: GETUPVAL  R72 U0       ; R72 := U0
-1197 [-]: GETTABLE  R72 R72 K53  ; R72 := R72["mGoalInfo"]
-1198 [-]: GETTABLE  R72 R72 K47  ; R72 := R72["mTag"]
-1199 [-]: GETUPVAL  R73 U8       ; R73 := U8
-1200 [-]: GETTABLE  R73 R73 K184 ; R73 := R73["MACHETE_MAYHEM"]
-1201 [-]: EQ        0 R72 R73    ; if R72 ~= R73 then PC := 1212
-1202 [-]: JMP       1212         ; PC := 1212
-1203 [-]: GETGLOBAL R72 K11      ; R72 := 0xE6DC43B0
-1204 [-]: LOADK     R73 K185     ; R73 := "/Lotus/Language/Menu/EnergyRestrictionDesc"
-1205 [-]: NEWTABLE  R74 0 1      ; R74 := {}
-1206 [-]: SETTABLE  R74 K186 K187; R74["AMOUNT"] := 25
-1207 [-]: CALL      R72 3 2      ; R72 := R72(R73,R74)
-1208 [-]: MOVE      R73 R71      ; R73 := R71
-1209 [-]: LOADK     R74 K70      ; R74 := ", "
-1210 [-]: MOVE      R75 R72      ; R75 := R72
-1211 [-]: CONCAT    R71 R73 R75  ; R71 := R73 .. R74 .. R75
-1212 [-]: MOVE      R73 R30      ; R73 := R30
-1213 [-]: LOADK     R74 K188     ; R74 := "/Lotus/Language/Menu/Lobby_Restriction"
-1214 [-]: MOVE      R75 R71      ; R75 := R71
-1215 [-]: CALL      R73 3 1      ; R73(R74,R75)
-1216 [-]: JMP       1325         ; PC := 1325
-1217 [-]: GETGLOBAL R73 K100     ; R73 := 0x400E7765
-1218 [-]: GETUPVAL  R74 U0       ; R74 := U0
-1219 [-]: GETTABLE  R74 R74 K57  ; R74 := R74["mMission"]
-1220 [-]: GETTABLE  R74 R74 K189 ; R74 := R74["miscItemFee"]
-1221 [-]: GETTABLE  R74 R74 K190 ; R74 := R74["mItemType"]
-1222 [-]: CALL      R73 2 2      ; R73 := R73(R74)
-1223 [-]: TEST      R73 1        ; if R73 then PC := 1325
-1224 [-]: JMP       1325         ; PC := 1325
-1225 [-]: EQ        0 R15 K22    ; if R15 ~= nil then PC := 1325
-1226 [-]: JMP       1325         ; PC := 1325
-1227 [-]: GETUPVAL  R73 U0       ; R73 := U0
-1228 [-]: GETTABLE  R73 R73 K57  ; R73 := R73["mMission"]
-1229 [-]: GETTABLE  R73 R73 K189 ; R73 := R73["miscItemFee"]
-1230 [-]: GETTABLE  R73 R73 K190 ; R73 := R73["mItemType"]
-1231 [-]: GETGLOBAL R74 K0       ; R74 := 0x9FAED6BC
-1232 [-]: GETUPVAL  R75 U0       ; R75 := U0
-1233 [-]: GETTABLE  R75 R75 K57  ; R75 := R75["mMission"]
-1234 [-]: GETTABLE  R75 R75 K189 ; R75 := R75["miscItemFee"]
-1235 [-]: GETTABLE  R75 R75 K190 ; R75 := R75["mItemType"]
-1236 [-]: SELF      R75 R75 K191 ; R76 := R75; R75 := R75["0x1B252E3C"]
-1237 [-]: CALL      R75 2 0      ; R75,... := R75(R76)
-1238 [-]: CALL      R74 0 2      ; R74 := R74(R75,...)
-1239 [-]: GETGLOBAL R75 K13      ; R75 := _T
-1240 [-]: GETTABLE  R75 R75 K192 ; R75 := R75["OwnedFeeItems"]
-1241 [-]: TEST      R75 1        ; if R75 then PC := 1246
-1242 [-]: JMP       1246         ; PC := 1246
-1243 [-]: GETGLOBAL R75 K13      ; R75 := _T
-1244 [-]: NEWTABLE  R76 0 0      ; R76 := {}
-1245 [-]: SETTABLE  R75 K192 R76 ; R75["OwnedFeeItems"] := R76
-1246 [-]: GETGLOBAL R75 K13      ; R75 := _T
-1247 [-]: GETTABLE  R75 R75 K192 ; R75 := R75["OwnedFeeItems"]
-1248 [-]: GETTABLE  R75 R75 R74  ; R75 := R75[R74]
-1249 [-]: TEST      R75 1        ; if R75 then PC := 1302
-1250 [-]: JMP       1302         ; PC := 1302
-1251 [-]: GETGLOBAL R75 K13      ; R75 := _T
-1252 [-]: GETTABLE  R75 R75 K192 ; R75 := R75["OwnedFeeItems"]
-1253 [-]: NEWTABLE  R76 0 0      ; R76 := {}
-1254 [-]: SETTABLE  R75 R74 R76  ; R75[R74] := R76
-1255 [-]: GETGLOBAL R75 K13      ; R75 := _T
-1256 [-]: GETTABLE  R75 R75 K192 ; R75 := R75["OwnedFeeItems"]
-1257 [-]: GETTABLE  R75 R75 R74  ; R75 := R75[R74]
-1258 [-]: SETTABLE  R75 K193 K30 ; R75["Count"] := 0
-1259 [-]: GETGLOBAL R75 K13      ; R75 := _T
-1260 [-]: GETTABLE  R75 R75 K192 ; R75 := R75["OwnedFeeItems"]
-1261 [-]: GETTABLE  R75 R75 R74  ; R75 := R75[R74]
-1262 [-]: GETGLOBAL R76 K11      ; R76 := 0xE6DC43B0
-1263 [-]: GETGLOBAL R77 K0       ; R77 := 0x9FAED6BC
-1264 [-]: GETGLOBAL R78 K180     ; R78 := 0x7C282057
-1265 [-]: MOVE      R79 R73      ; R79 := R73
-1266 [-]: CALL      R78 2 2      ; R78 := R78(R79)
-1267 [-]: SELF      R78 R78 K181 ; R79 := R78; R78 := R78["0x616C74B6"]
-1268 [-]: CALL      R78 2 0      ; R78,... := R78(R79)
-1269 [-]: CALL      R77 0 2      ; R77 := R77(R78,...)
-1270 [-]: MOVE      R78 R0       ; R78 := R0
-1271 [-]: CALL      R76 3 2      ; R76 := R76(R77,R78)
-1272 [-]: SETTABLE  R75 K194 R76 ; R75["LocText"] := R76
-1273 [-]: GETGLOBAL R75 K195     ; R75 := gPlayerProfileMgr
-1274 [-]: SELF      R75 R75 K196 ; R76 := R75; R75 := R75["0x21EF7B1A"]
-1275 [-]: LOADK     R77 K30      ; R77 := 0
-1276 [-]: CALL      R75 3 2      ; R75 := R75(R76,R77)
-1277 [-]: SELF      R75 R75 K197 ; R76 := R75; R75 := R75["0x654F1092"]
-1278 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1279 [-]: SELF      R75 R75 K198 ; R76 := R75; R75 := R75["0x6F2E05FD"]
-1280 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1281 [-]: SELF      R75 R75 K199 ; R76 := R75; R75 := R75["0x3329FBFF"]
-1282 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1283 [-]: LOADK     R76 K36      ; R76 := 1
-1284 [-]: LEN       R77 R75      ; R77 := # R75
-1285 [-]: LOADK     R78 K36      ; R78 := 1
-1286 [-]: FORPREP   R76 1301     ; R76 -= R78; PC := 1301
-1287 [-]: GETTABLE  R80 R75 R79  ; R80 := R75[R79]
-1288 [-]: GETTABLE  R80 R80 K190 ; R80 := R80["mItemType"]
-1289 [-]: SELF      R80 R80 K200 ; R81 := R80; R80 := R80["0x8B598ED4"]
-1290 [-]: MOVE      R82 R73      ; R82 := R73
-1291 [-]: CALL      R80 3 2      ; R80 := R80(R81,R82)
-1292 [-]: TEST      R80 0        ; if not R80 then PC := 1301
-1293 [-]: JMP       1301         ; PC := 1301
-1294 [-]: GETGLOBAL R80 K13      ; R80 := _T
-1295 [-]: GETTABLE  R80 R80 K192 ; R80 := R80["OwnedFeeItems"]
-1296 [-]: GETTABLE  R80 R80 R74  ; R80 := R80[R74]
-1297 [-]: GETTABLE  R81 R75 R79  ; R81 := R75[R79]
-1298 [-]: GETTABLE  R81 R81 K201 ; R81 := R81["mItemCount"]
-1299 [-]: SETTABLE  R80 K193 R81 ; R80["Count"] := R81
-1300 [-]: JMP       1302         ; PC := 1302
-1301 [-]: FORLOOP   R76 1287     ; R76 += R78; if R76 <= R77 then begin PC := 1287; R79 := R76 end
-1302 [-]: GETGLOBAL R80 K11      ; R80 := 0xE6DC43B0
-1303 [-]: LOADK     R81 K202     ; R81 := "/Lotus/Language/Menu/Lobby_CountedItemRestrictionDesc"
-1304 [-]: NEWTABLE  R82 0 3      ; R82 := {}
-1305 [-]: GETGLOBAL R83 K13      ; R83 := _T
-1306 [-]: GETTABLE  R83 R83 K192 ; R83 := R83["OwnedFeeItems"]
-1307 [-]: GETTABLE  R83 R83 R74  ; R83 := R83[R74]
-1308 [-]: GETTABLE  R83 R83 K194 ; R83 := R83["LocText"]
-1309 [-]: SETTABLE  R82 K183 R83 ; R82["ITEM"] := R83
-1310 [-]: GETUPVAL  R83 U0       ; R83 := U0
-1311 [-]: GETTABLE  R83 R83 K57  ; R83 := R83["mMission"]
-1312 [-]: GETTABLE  R83 R83 K189 ; R83 := R83["miscItemFee"]
-1313 [-]: GETTABLE  R83 R83 K201 ; R83 := R83["mItemCount"]
-1314 [-]: SETTABLE  R82 K203 R83 ; R82["COUNT"] := R83
-1315 [-]: GETGLOBAL R83 K13      ; R83 := _T
-1316 [-]: GETTABLE  R83 R83 K192 ; R83 := R83["OwnedFeeItems"]
-1317 [-]: GETTABLE  R83 R83 R74  ; R83 := R83[R74]
-1318 [-]: GETTABLE  R83 R83 K193 ; R83 := R83["Count"]
-1319 [-]: SETTABLE  R82 K204 R83 ; R82["OWNED"] := R83
-1320 [-]: CALL      R80 3 2      ; R80 := R80(R81,R82)
-1321 [-]: MOVE      R81 R30      ; R81 := R30
-1322 [-]: LOADK     R82 K8       ; R82 := ""
-1323 [-]: MOVE      R83 R80      ; R83 := R80
-1324 [-]: CALL      R81 3 1      ; R81(R82,R83)
-1325 [-]: GETTABLE  R81 R2 K119  ; R81 := R2["missionType"]
-1326 [-]: GETGLOBAL R82 K27      ; R82 := Lotus_Game
-1327 [-]: GETTABLE  R82 R82 K205 ; R82 := R82["MT_ARENA"]
-1328 [-]: EQ        0 R81 R82    ; if R81 ~= R82 then PC := 1380
-1329 [-]: JMP       1380         ; PC := 1380
-1330 [-]: GETTABLE  R81 R2 K90   ; R81 := R2["faction"]
-1331 [-]: GETGLOBAL R82 K27      ; R82 := Lotus_Game
-1332 [-]: GETTABLE  R82 R82 K206 ; R82 := R82["FC_CORPUS"]
-1333 [-]: EQ        0 R81 R82    ; if R81 ~= R82 then PC := 1380
-1334 [-]: JMP       1380         ; PC := 1380
-1335 [-]: SELF      R81 R2 K207  ; R82 := R2; R81 := R2["0x62A99A22"]
-1336 [-]: CALL      R81 2 2      ; R81 := R81(R82)
-1337 [-]: LEN       R82 R81      ; R82 := # R81
-1338 [-]: LT        0 K30 R82    ; if 0 >= R82 then PC := 1380
-1339 [-]: JMP       1380         ; PC := 1380
-1340 [-]: GETUPVAL  R82 U3       ; R82 := U3
-1341 [-]: GETTABLE  R82 R82 K208 ; R82 := R82["0x7E197415"]
-1342 [-]: GETTABLE  R83 R81 K36  ; R83 := R81[1]
-1343 [-]: GETTABLE  R83 R83 K209 ; R83 := R83["mCreditsFee"]
-1344 [-]: CALL      R82 2 2      ; R82 := R82(R83)
-1345 [-]: LOADK     R83 K30      ; R83 := 0
-1346 [-]: GETGLOBAL R84 K100     ; R84 := 0x400E7765
-1347 [-]: GETGLOBAL R85 K101     ; R85 := gGameData
-1348 [-]: CALL      R84 2 2      ; R84 := R84(R85)
-1349 [-]: TEST      R84 1        ; if R84 then PC := 1358
-1350 [-]: JMP       1358         ; PC := 1358
-1351 [-]: GETUPVAL  R84 U3       ; R84 := U3
-1352 [-]: GETTABLE  R84 R84 K210 ; R84 := R84["0x1C719E76"]
-1353 [-]: GETGLOBAL R85 K101     ; R85 := gGameData
-1354 [-]: SELF      R85 R85 K211 ; R86 := R85; R85 := R85["0xCD5A25A6"]
-1355 [-]: CALL      R85 2 0      ; R85,... := R85(R86)
-1356 [-]: CALL      R84 0 2      ; R84 := R84(R85,...)
-1357 [-]: MOVE      R83 R84      ; R83 := R84
-1358 [-]: GETGLOBAL R84 K23      ; R84 := mMovie
-1359 [-]: SELF      R84 R84 K24  ; R85 := R84; R84 := R84["0x5DB0BD4"]
-1360 [-]: LOADK     R86 K212     ; R86 := "/Lotus/Language/Menu/CreditsFormatted"
-1361 [-]: MOVE      R87 R1       ; R87 := R1
-1362 [-]: NEWTABLE  R88 0 1      ; R88 := {}
-1363 [-]: SETTABLE  R88 K213 R82 ; R88["CREDITS"] := R82
-1364 [-]: CALL      R84 5 2      ; R84 := R84(R85,R86,R87,R88)
-1365 [-]: MOVE      R85 R30      ; R85 := R30
-1366 [-]: LOADK     R86 K214     ; R86 := "/Lotus/Language/Menu/Lobby_GreedCreditsRequirementDesc"
-1367 [-]: MOVE      R87 R84      ; R87 := R84
-1368 [-]: CALL      R85 3 1      ; R85(R86,R87)
-1369 [-]: GETGLOBAL R85 K23      ; R85 := mMovie
-1370 [-]: SELF      R85 R85 K24  ; R86 := R85; R85 := R85["0x5DB0BD4"]
-1371 [-]: LOADK     R87 K215     ; R87 := "/Lotus/Language/Menu/CreditsFormattedOwned"
-1372 [-]: MOVE      R88 R1       ; R88 := R1
-1373 [-]: NEWTABLE  R89 0 1      ; R89 := {}
-1374 [-]: SETTABLE  R89 K204 R83 ; R89["OWNED"] := R83
-1375 [-]: CALL      R85 5 2      ; R85 := R85(R86,R87,R88,R89)
-1376 [-]: MOVE      R86 R30      ; R86 := R30
-1377 [-]: LOADK     R87 K216     ; R87 := "/Lotus/Language/Menu/Lobby_GreedCreditsOwnedRequirementDesc"
-1378 [-]: MOVE      R88 R85      ; R88 := R85
-1379 [-]: CALL      R86 3 1      ; R86(R87,R88)
-1380 [-]: GETTABLE  R86 R2 K217  ; R86 := R2["skillReqs"]
-1381 [-]: LEN       R86 R86      ; R86 := # R86
-1382 [-]: LT        0 K30 R86    ; if 0 >= R86 then PC := 1422
+134 [-]: MOVE      R1 R25       ; R1 := R25
+135 [-]: GETUPVAL  R25 U4       ; R25 := U4
+136 [-]: GETTABLE  R25 R25 R1   ; R25 := R25[R1]
+137 [-]: TEST      R25 0        ; if not R25 then PC := 145
+138 [-]: JMP       145          ; PC := 145
+139 [-]: GETUPVAL  R25 U4       ; R25 := U4
+140 [-]: GETTABLE  R25 R25 R1   ; R25 := R25[R1]
+141 [-]: LT        0 K30 R25    ; if 0 >= R25 then PC := 145
+142 [-]: JMP       145          ; PC := 145
+143 [-]: GETUPVAL  R25 U4       ; R25 := U4
+144 [-]: GETTABLE  R16 R25 R1   ; R16 := R25[R1]
+145 [-]: MOVE      R17 R1       ; R17 := R1
+146 [-]: LOADNIL   R25 R27      ; R25 := R26 := R27 := nil
+147 [-]: LOADK     R28 K8       ; R28 := ""
+148 [-]: CLOSURE   R29 0        ; R29 := closure(Function #141.1)
+149 [-]: MOVE      R0 R28       ; R0 := R28
+150 [-]: LOADK     R28 K38      ; R28 := "<p>"
+151 [-]: TEST      R13 1        ; if R13 then PC := 155
+152 [-]: JMP       155          ; PC := 155
+153 [-]: TEST      R14 0        ; if not R14 then PC := 157
+154 [-]: JMP       157          ; PC := 157
+155 [-]: MOVE      R17 R0       ; R17 := R0
+156 [-]: JMP       742          ; PC := 742
+157 [-]: GETUPVAL  R30 U0       ; R30 := U0
+158 [-]: GETTABLE  R30 R30 K39  ; R30 := R30["mAlertInfo"]
+159 [-]: EQ        1 R30 K22    ; if R30 == nil then PC := 229
+160 [-]: JMP       229          ; PC := 229
+161 [-]: LOADK     R30 K40      ; R30 := " ("
+162 [-]: GETGLOBAL R31 K11      ; R31 := 0xE6DC43B0
+163 [-]: LOADK     R32 K41      ; R32 := "/Lotus/Language/Menu/Notification_Alert"
+164 [-]: MOVE      R33 R0       ; R33 := R0
+165 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+166 [-]: LOADK     R32 K42      ; R32 := ")"
+167 [-]: CONCAT    R10 R30 R32  ; R10 := R30 .. R31 .. R32
+168 [-]: GETGLOBAL R30 K43      ; R30 := Engine
+169 [-]: GETTABLE  R30 R30 K44  ; R30 := R30["0xD09D7910"]
+170 [-]: GETGLOBAL R31 K13      ; R31 := _T
+171 [-]: GETTABLE  R31 R31 K16  ; R31 := R31["CachedAlerts"]
+172 [-]: GETTABLE  R31 R31 R5   ; R31 := R31[R5]
+173 [-]: GETTABLE  R31 R31 K39  ; R31 := R31["mAlertInfo"]
+174 [-]: GETTABLE  R31 R31 K45  ; R31 := R31["mExpiry"]
+175 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+176 [-]: GETUPVAL  R31 U1       ; R31 := U1
+177 [-]: GETTABLE  R31 R31 K46  ; R31 := R31["0x9E1A1D26"]
+178 [-]: MOVE      R32 R30      ; R32 := R30
+179 [-]: CALL      R31 2 2      ; R31 := R31(R32)
+180 [-]: MOVE      R25 R31      ; R25 := R31
+181 [-]: GETGLOBAL R31 K13      ; R31 := _T
+182 [-]: GETTABLE  R31 R31 K16  ; R31 := R31["CachedAlerts"]
+183 [-]: GETTABLE  R31 R31 R5   ; R31 := R31[R5]
+184 [-]: TEST      R31 0        ; if not R31 then PC := 220
+185 [-]: JMP       220          ; PC := 220
+186 [-]: GETGLOBAL R31 K13      ; R31 := _T
+187 [-]: GETTABLE  R31 R31 K16  ; R31 := R31["CachedAlerts"]
+188 [-]: GETTABLE  R31 R31 R5   ; R31 := R31[R5]
+189 [-]: GETTABLE  R31 R31 K39  ; R31 := R31["mAlertInfo"]
+190 [-]: GETTABLE  R31 R31 K47  ; R31 := R31["mTag"]
+191 [-]: GETGLOBAL R32 K48      ; R32 := EMPTY_SYMBOL
+192 [-]: EQ        1 R31 R32    ; if R31 == R32 then PC := 220
+193 [-]: JMP       220          ; PC := 220
+194 [-]: GETGLOBAL R31 K13      ; R31 := _T
+195 [-]: GETTABLE  R31 R31 K16  ; R31 := R31["CachedAlerts"]
+196 [-]: GETTABLE  R31 R31 R5   ; R31 := R31[R5]
+197 [-]: GETTABLE  R31 R31 K39  ; R31 := R31["mAlertInfo"]
+198 [-]: GETTABLE  R31 R31 K49  ; R31 := R31["mMissionInfo"]
+199 [-]: GETTABLE  R31 R31 K50  ; R31 := R31["descText"]
+200 [-]: GETGLOBAL R32 K48      ; R32 := EMPTY_SYMBOL
+201 [-]: EQ        1 R31 R32    ; if R31 == R32 then PC := 220
+202 [-]: JMP       220          ; PC := 220
+203 [-]: LOADK     R31 K40      ; R31 := " ("
+204 [-]: GETGLOBAL R32 K9       ; R32 := string
+205 [-]: GETTABLE  R32 R32 K10  ; R32 := R32["0x639C642A"]
+206 [-]: GETGLOBAL R33 K11      ; R33 := 0xE6DC43B0
+207 [-]: GETGLOBAL R34 K0       ; R34 := 0x9FAED6BC
+208 [-]: GETGLOBAL R35 K13      ; R35 := _T
+209 [-]: GETTABLE  R35 R35 K16  ; R35 := R35["CachedAlerts"]
+210 [-]: GETTABLE  R35 R35 R5   ; R35 := R35[R5]
+211 [-]: GETTABLE  R35 R35 K39  ; R35 := R35["mAlertInfo"]
+212 [-]: GETTABLE  R35 R35 K49  ; R35 := R35["mMissionInfo"]
+213 [-]: GETTABLE  R35 R35 K50  ; R35 := R35["descText"]
+214 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+215 [-]: MOVE      R35 R0       ; R35 := R0
+216 [-]: CALL      R33 3 0      ; R33,... := R33(R34,R35)
+217 [-]: CALL      R32 0 2      ; R32 := R32(R33,...)
+218 [-]: LOADK     R33 K42      ; R33 := ")"
+219 [-]: CONCAT    R10 R31 R33  ; R10 := R31 .. R32 .. R33
+220 [-]: GETUPVAL  R31 U1       ; R31 := U1
+221 [-]: GETTABLE  R31 R31 K51  ; R31 := R31["0xF030C338"]
+222 [-]: GETGLOBAL R32 K23      ; R32 := mMovie
+223 [-]: GETUPVAL  R33 U0       ; R33 := U0
+224 [-]: GETTABLE  R33 R33 K39  ; R33 := R33["mAlertInfo"]
+225 [-]: GETTABLE  R33 R33 K52  ; R33 := R33["missionReward"]
+226 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+227 [-]: MOVE      R26 R31      ; R26 := R31
+228 [-]: JMP       742          ; PC := 742
+229 [-]: GETUPVAL  R31 U0       ; R31 := U0
+230 [-]: GETTABLE  R31 R31 K53  ; R31 := R31["mGoalInfo"]
+231 [-]: TEST      R31 0        ; if not R31 then PC := 296
+232 [-]: JMP       296          ; PC := 296
+233 [-]: GETGLOBAL R31 K9       ; R31 := string
+234 [-]: GETTABLE  R31 R31 K10  ; R31 := R31["0x639C642A"]
+235 [-]: GETGLOBAL R32 K11      ; R32 := 0xE6DC43B0
+236 [-]: GETUPVAL  R33 U0       ; R33 := U0
+237 [-]: GETTABLE  R33 R33 K53  ; R33 := R33["mGoalInfo"]
+238 [-]: GETTABLE  R33 R33 K54  ; R33 := R33["mDesc"]
+239 [-]: MOVE      R34 R0       ; R34 := R0
+240 [-]: CALL      R32 3 0      ; R32,... := R32(R33,R34)
+241 [-]: CALL      R31 0 2      ; R31 := R31(R32,...)
+242 [-]: MOVE      R12 R31      ; R12 := R31
+243 [-]: GETGLOBAL R31 K9       ; R31 := string
+244 [-]: GETTABLE  R31 R31 K10  ; R31 := R31["0x639C642A"]
+245 [-]: GETGLOBAL R32 K23      ; R32 := mMovie
+246 [-]: SELF      R32 R32 K24  ; R33 := R32; R32 := R32["0x5DB0BD4"]
+247 [-]: LOADK     R34 K55      ; R34 := "/Lotus/Language/Game/MissionName_"
+248 [-]: GETUPVAL  R35 U1       ; R35 := U1
+249 [-]: GETTABLE  R35 R35 K56  ; R35 := R35["0x87B2D555"]
+250 [-]: GETUPVAL  R36 U0       ; R36 := U0
+251 [-]: GETTABLE  R36 R36 K57  ; R36 := R36["mMission"]
+252 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+253 [-]: CONCAT    R34 R34 R35  ; R34 := R34 .. R35
+254 [-]: MOVE      R35 R0       ; R35 := R0
+255 [-]: CALL      R32 4 0      ; R32,... := R32(R33,R34,R35)
+256 [-]: CALL      R31 0 2      ; R31 := R31(R32,...)
+257 [-]: MOVE      R8 R31       ; R8 := R31
+258 [-]: GETUPVAL  R31 U0       ; R31 := U0
+259 [-]: GETTABLE  R31 R31 K57  ; R31 := R31["mMission"]
+260 [-]: GETTABLE  R31 R31 K58  ; R31 := R31["archwingRequired"]
+261 [-]: TEST      R31 0        ; if not R31 then PC := 742
+262 [-]: JMP       742          ; PC := 742
+263 [-]: GETGLOBAL R31 K23      ; R31 := mMovie
+264 [-]: SELF      R31 R31 K24  ; R32 := R31; R31 := R31["0x5DB0BD4"]
+265 [-]: LOADK     R33 K59      ; R33 := "<ARCHWING>"
+266 [-]: MOVE      R34 R1       ; R34 := R1
+267 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
+268 [-]: LOADK     R32 K60      ; R32 := " "
+269 [-]: MOVE      R33 R8       ; R33 := R8
+270 [-]: CONCAT    R8 R31 R33   ; R8 := R31 .. R32 .. R33
+271 [-]: GETUPVAL  R31 U0       ; R31 := U0
+272 [-]: GETTABLE  R31 R31 K57  ; R31 := R31["mMission"]
+273 [-]: GETTABLE  R31 R31 K61  ; R31 := R31["isSharkwingMission"]
+274 [-]: TEST      R31 0        ; if not R31 then PC := 286
+275 [-]: JMP       286          ; PC := 286
+276 [-]: MOVE      R31 R8       ; R31 := R8
+277 [-]: LOADK     R32 K40      ; R32 := " ("
+278 [-]: GETGLOBAL R33 K23      ; R33 := mMovie
+279 [-]: SELF      R33 R33 K24  ; R34 := R33; R33 := R33["0x5DB0BD4"]
+280 [-]: LOADK     R35 K62      ; R35 := "/Lotus/Language/Menu/Sharkwing"
+281 [-]: MOVE      R36 R0       ; R36 := R0
+282 [-]: CALL      R33 4 2      ; R33 := R33(R34,R35,R36)
+283 [-]: LOADK     R34 K42      ; R34 := ")"
+284 [-]: CONCAT    R8 R31 R34   ; R8 := R31 .. R32 .. R33 .. R34
+285 [-]: JMP       742          ; PC := 742
+286 [-]: MOVE      R31 R8       ; R31 := R8
+287 [-]: LOADK     R32 K40      ; R32 := " ("
+288 [-]: GETGLOBAL R33 K23      ; R33 := mMovie
+289 [-]: SELF      R33 R33 K24  ; R34 := R33; R33 := R33["0x5DB0BD4"]
+290 [-]: LOADK     R35 K63      ; R35 := "/Lotus/Language/Menu/Loadout_Archwing"
+291 [-]: MOVE      R36 R0       ; R36 := R0
+292 [-]: CALL      R33 4 2      ; R33 := R33(R34,R35,R36)
+293 [-]: LOADK     R34 K42      ; R34 := ")"
+294 [-]: CONCAT    R8 R31 R34   ; R8 := R31 .. R32 .. R33 .. R34
+295 [-]: JMP       742          ; PC := 742
+296 [-]: GETUPVAL  R31 U0       ; R31 := U0
+297 [-]: GETTABLE  R31 R31 K64  ; R31 := R31["mGhostTowerMissionInfo"]
+298 [-]: EQ        1 R31 K22    ; if R31 == nil then PC := 321
+299 [-]: JMP       321          ; PC := 321
+300 [-]: GETUPVAL  R31 U3       ; R31 := U3
+301 [-]: GETTABLE  R31 R31 K19  ; R31 := R31["0xF81722A2"]
+302 [-]: GETUPVAL  R32 U0       ; R32 := U0
+303 [-]: GETTABLE  R32 R32 K64  ; R32 := R32["mGhostTowerMissionInfo"]
+304 [-]: GETTABLE  R32 R32 K49  ; R32 := R32["mMissionInfo"]
+305 [-]: GETTABLE  R32 R32 K65  ; R32 := R32["minEnemyLevel"]
+306 [-]: LE        1 K66 R32    ; if 80 <= R32 then PC := 309
+307 [-]: JMP       309          ; PC := 309
+308 [-]: MOVE      R32 R0       ; R32 := R0
+309 [-]: MOVE      R32 R1       ; R32 := R1
+310 [-]: LOADK     R33 K67      ; R33 := "/Lotus/Language/Menu/GhostTowerHardMissionName"
+311 [-]: LOADK     R34 K68      ; R34 := "/Lotus/Language/Menu/GhostTowerMissionName"
+312 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
+313 [-]: LOADK     R32 K40      ; R32 := " ("
+314 [-]: GETGLOBAL R33 K11      ; R33 := 0xE6DC43B0
+315 [-]: MOVE      R34 R31      ; R34 := R31
+316 [-]: MOVE      R35 R0       ; R35 := R0
+317 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
+318 [-]: LOADK     R34 K42      ; R34 := ")"
+319 [-]: CONCAT    R10 R32 R34  ; R10 := R32 .. R33 .. R34
+320 [-]: JMP       742          ; PC := 742
+321 [-]: GETGLOBAL R32 K13      ; R32 := _T
+322 [-]: GETTABLE  R32 R32 K69  ; R32 := R32["CachedSkullNodes"]
+323 [-]: GETTABLE  R32 R32 R5   ; R32 := R32[R5]
+324 [-]: EQ        1 R32 K22    ; if R32 == nil then PC := 363
+325 [-]: JMP       363          ; PC := 363
+326 [-]: TEST      R3 0         ; if not R3 then PC := 363
+327 [-]: JMP       363          ; PC := 363
+328 [-]: LOADK     R10 K40      ; R10 := " ("
+329 [-]: LOADK     R32 K36      ; R32 := 1
+330 [-]: GETGLOBAL R33 K13      ; R33 := _T
+331 [-]: GETTABLE  R33 R33 K69  ; R33 := R33["CachedSkullNodes"]
+332 [-]: GETTABLE  R33 R33 R5   ; R33 := R33[R5]
+333 [-]: LEN       R33 R33      ; R33 := # R33
+334 [-]: LOADK     R34 K36      ; R34 := 1
+335 [-]: FORPREP   R32 358      ; R32 -= R34; PC := 358
+336 [-]: EQ        1 R35 K36    ; if R35 == 1 then PC := 344
+337 [-]: JMP       344          ; PC := 344
+338 [-]: GETGLOBAL R36 K9       ; R36 := string
+339 [-]: GETTABLE  R36 R36 K10  ; R36 := R36["0x639C642A"]
+340 [-]: MOVE      R37 R10      ; R37 := R10
+341 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+342 [-]: LOADK     R37 K70      ; R37 := ", "
+343 [-]: CONCAT    R10 R36 R37  ; R10 := R36 .. R37
+344 [-]: MOVE      R36 R10      ; R36 := R10
+345 [-]: GETGLOBAL R37 K9       ; R37 := string
+346 [-]: GETTABLE  R37 R37 K10  ; R37 := R37["0x639C642A"]
+347 [-]: GETGLOBAL R38 K23      ; R38 := mMovie
+348 [-]: SELF      R38 R38 K24  ; R39 := R38; R38 := R38["0x5DB0BD4"]
+349 [-]: GETGLOBAL R40 K13      ; R40 := _T
+350 [-]: GETTABLE  R40 R40 K69  ; R40 := R40["CachedSkullNodes"]
+351 [-]: GETTABLE  R40 R40 R5   ; R40 := R40[R5]
+352 [-]: GETTABLE  R40 R40 R35  ; R40 := R40[R35]
+353 [-]: GETTABLE  R40 R40 K71  ; R40 := R40[2]
+354 [-]: MOVE      R41 R0       ; R41 := R0
+355 [-]: CALL      R38 4 0      ; R38,... := R38(R39,R40,R41)
+356 [-]: CALL      R37 0 2      ; R37 := R37(R38,...)
+357 [-]: CONCAT    R10 R36 R37  ; R10 := R36 .. R37
+358 [-]: FORLOOP   R32 336      ; R32 += R34; if R32 <= R33 then begin PC := 336; R35 := R32 end
+359 [-]: MOVE      R36 R10      ; R36 := R10
+360 [-]: LOADK     R37 K42      ; R37 := ")"
+361 [-]: CONCAT    R10 R36 R37  ; R10 := R36 .. R37
+362 [-]: JMP       742          ; PC := 742
+363 [-]: GETGLOBAL R36 K13      ; R36 := _T
+364 [-]: GETTABLE  R36 R36 K72  ; R36 := R36["CachedSortieMissions"]
+365 [-]: GETTABLE  R36 R36 R5   ; R36 := R36[R5]
+366 [-]: TEST      R36 0        ; if not R36 then PC := 398
+367 [-]: JMP       398          ; PC := 398
+368 [-]: GETGLOBAL R36 K13      ; R36 := _T
+369 [-]: GETTABLE  R36 R36 K72  ; R36 := R36["CachedSortieMissions"]
+370 [-]: GETTABLE  R36 R36 R5   ; R36 := R36[R5]
+371 [-]: GETTABLE  R36 R36 K73  ; R36 := R36["mShowInStarChart"]
+372 [-]: TEST      R36 0        ; if not R36 then PC := 398
+373 [-]: JMP       398          ; PC := 398
+374 [-]: LOADK     R36 K40      ; R36 := " ("
+375 [-]: GETGLOBAL R37 K11      ; R37 := 0xE6DC43B0
+376 [-]: LOADK     R38 K74      ; R38 := "/Lotus/Language/Menu/SortieMissionName"
+377 [-]: LOADNIL   R39 R39      ; R39 := nil
+378 [-]: CALL      R37 3 2      ; R37 := R37(R38,R39)
+379 [-]: LOADK     R38 K42      ; R38 := ")"
+380 [-]: CONCAT    R10 R36 R38  ; R10 := R36 .. R37 .. R38
+381 [-]: GETGLOBAL R36 K43      ; R36 := Engine
+382 [-]: GETTABLE  R36 R36 K44  ; R36 := R36["0xD09D7910"]
+383 [-]: GETGLOBAL R37 K13      ; R37 := _T
+384 [-]: GETTABLE  R37 R37 K72  ; R37 := R37["CachedSortieMissions"]
+385 [-]: GETTABLE  R37 R37 R5   ; R37 := R37[R5]
+386 [-]: GETTABLE  R37 R37 K45  ; R37 := R37["mExpiry"]
+387 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+388 [-]: GETUPVAL  R37 U1       ; R37 := U1
+389 [-]: GETTABLE  R37 R37 K75  ; R37 := R37["0xE233A311"]
+390 [-]: MOVE      R38 R36      ; R38 := R36
+391 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+392 [-]: MOVE      R25 R37      ; R25 := R37
+393 [-]: GETGLOBAL R37 K13      ; R37 := _T
+394 [-]: GETTABLE  R37 R37 K72  ; R37 := R37["CachedSortieMissions"]
+395 [-]: GETTABLE  R37 R37 R5   ; R37 := R37[R5]
+396 [-]: GETTABLE  R27 R37 K76  ; R27 := R37["mModifierAuraDesc"]
+397 [-]: JMP       742          ; PC := 742
+398 [-]: GETGLOBAL R37 K13      ; R37 := _T
+399 [-]: GETTABLE  R37 R37 K14  ; R37 := R37["CachedSyndicateMissions"]
+400 [-]: GETTABLE  R37 R37 R5   ; R37 := R37[R5]
+401 [-]: TEST      R37 0        ; if not R37 then PC := 440
+402 [-]: JMP       440          ; PC := 440
+403 [-]: GETGLOBAL R37 K13      ; R37 := _T
+404 [-]: GETTABLE  R37 R37 K14  ; R37 := R37["CachedSyndicateMissions"]
+405 [-]: GETTABLE  R37 R37 R5   ; R37 := R37[R5]
+406 [-]: GETTABLE  R37 R37 K15  ; R37 := R37["mVisible"]
+407 [-]: TEST      R37 0        ; if not R37 then PC := 440
+408 [-]: JMP       440          ; PC := 440
+409 [-]: LOADK     R37 K40      ; R37 := " ("
+410 [-]: GETGLOBAL R38 K11      ; R38 := 0xE6DC43B0
+411 [-]: LOADK     R39 K77      ; R39 := "/Lotus/Language/Menu/SyndicateMissionName"
+412 [-]: MOVE      R40 R0       ; R40 := R0
+413 [-]: CALL      R38 3 2      ; R38 := R38(R39,R40)
+414 [-]: LOADK     R39 K42      ; R39 := ")"
+415 [-]: CONCAT    R10 R37 R39  ; R10 := R37 .. R38 .. R39
+416 [-]: GETGLOBAL R37 K43      ; R37 := Engine
+417 [-]: GETTABLE  R37 R37 K44  ; R37 := R37["0xD09D7910"]
+418 [-]: GETGLOBAL R38 K13      ; R38 := _T
+419 [-]: GETTABLE  R38 R38 K14  ; R38 := R38["CachedSyndicateMissions"]
+420 [-]: GETTABLE  R38 R38 R5   ; R38 := R38[R5]
+421 [-]: GETTABLE  R38 R38 K45  ; R38 := R38["mExpiry"]
+422 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+423 [-]: GETUPVAL  R38 U1       ; R38 := U1
+424 [-]: GETTABLE  R38 R38 K46  ; R38 := R38["0x9E1A1D26"]
+425 [-]: MOVE      R39 R37      ; R39 := R37
+426 [-]: CALL      R38 2 2      ; R38 := R38(R39)
+427 [-]: MOVE      R25 R38      ; R25 := R38
+428 [-]: GETGLOBAL R38 K23      ; R38 := mMovie
+429 [-]: SELF      R38 R38 K24  ; R39 := R38; R38 := R38["0x5DB0BD4"]
+430 [-]: LOADK     R40 K78      ; R40 := "/Lotus/Language/Menu/Syndicates_Reputation"
+431 [-]: MOVE      R41 R1       ; R41 := R1
+432 [-]: CALL      R38 4 2      ; R38 := R38(R39,R40,R41)
+433 [-]: GETGLOBAL R39 K13      ; R39 := _T
+434 [-]: GETTABLE  R39 R39 K14  ; R39 := R39["CachedSyndicateMissions"]
+435 [-]: GETTABLE  R39 R39 R5   ; R39 := R39[R5]
+436 [-]: GETTABLE  R39 R39 K49  ; R39 := R39["mMissionInfo"]
+437 [-]: GETTABLE  R39 R39 K79  ; R39 := R39["syndicateXP"]
+438 [-]: CONCAT    R26 R38 R39  ; R26 := R38 .. R39
+439 [-]: JMP       742          ; PC := 742
+440 [-]: GETGLOBAL R38 K13      ; R38 := _T
+441 [-]: GETTABLE  R38 R38 K80  ; R38 := R38["CachedActiveMissions"]
+442 [-]: TEST      R38 0        ; if not R38 then PC := 472
+443 [-]: JMP       472          ; PC := 472
+444 [-]: GETGLOBAL R38 K13      ; R38 := _T
+445 [-]: GETTABLE  R38 R38 K80  ; R38 := R38["CachedActiveMissions"]
+446 [-]: GETTABLE  R38 R38 R5   ; R38 := R38[R5]
+447 [-]: TEST      R38 0        ; if not R38 then PC := 472
+448 [-]: JMP       472          ; PC := 472
+449 [-]: GETGLOBAL R38 K13      ; R38 := _T
+450 [-]: GETTABLE  R38 R38 K80  ; R38 := R38["CachedActiveMissions"]
+451 [-]: GETTABLE  R38 R38 R5   ; R38 := R38[R5]
+452 [-]: GETTABLE  R38 R38 K15  ; R38 := R38["mVisible"]
+453 [-]: TEST      R38 0        ; if not R38 then PC := 472
+454 [-]: JMP       472          ; PC := 472
+455 [-]: GETGLOBAL R38 K43      ; R38 := Engine
+456 [-]: GETTABLE  R38 R38 K44  ; R38 := R38["0xD09D7910"]
+457 [-]: GETGLOBAL R39 K13      ; R39 := _T
+458 [-]: GETTABLE  R39 R39 K80  ; R39 := R39["CachedActiveMissions"]
+459 [-]: GETTABLE  R39 R39 R5   ; R39 := R39[R5]
+460 [-]: GETTABLE  R39 R39 K45  ; R39 := R39["mExpiry"]
+461 [-]: CALL      R38 2 2      ; R38 := R38(R39)
+462 [-]: GETUPVAL  R39 U1       ; R39 := U1
+463 [-]: GETTABLE  R39 R39 K75  ; R39 := R39["0xE233A311"]
+464 [-]: MOVE      R40 R38      ; R40 := R38
+465 [-]: CALL      R39 2 2      ; R39 := R39(R40)
+466 [-]: MOVE      R25 R39      ; R25 := R39
+467 [-]: GETGLOBAL R39 K13      ; R39 := _T
+468 [-]: GETTABLE  R39 R39 K80  ; R39 := R39["CachedActiveMissions"]
+469 [-]: GETTABLE  R39 R39 R5   ; R39 := R39[R5]
+470 [-]: GETTABLE  R27 R39 K76  ; R27 := R39["mModifierAuraDesc"]
+471 [-]: JMP       742          ; PC := 742
+472 [-]: GETUPVAL  R39 U0       ; R39 := U0
+473 [-]: GETTABLE  R39 R39 K81  ; R39 := R39["mInvasionInfo"]
+474 [-]: EQ        1 R39 K22    ; if R39 == nil then PC := 742
+475 [-]: JMP       742          ; PC := 742
+476 [-]: GETUPVAL  R39 U0       ; R39 := U0
+477 [-]: GETTABLE  R39 R39 K81  ; R39 := R39["mInvasionInfo"]
+478 [-]: GETTABLE  R39 R39 K82  ; R39 := R39["mFaction"]
+479 [-]: GETGLOBAL R40 K27      ; R40 := Lotus_Game
+480 [-]: GETTABLE  R40 R40 K83  ; R40 := R40["FC_INFESTATION"]
+481 [-]: EQ        1 R39 R40    ; if R39 == R40 then PC := 484
+482 [-]: JMP       484          ; PC := 484
+483 [-]: MOVE      R23 R0       ; R23 := R0
+484 [-]: MOVE      R23 R1       ; R23 := R1
+485 [-]: GETUPVAL  R39 U0       ; R39 := U0
+486 [-]: GETTABLE  R39 R39 K81  ; R39 := R39["mInvasionInfo"]
+487 [-]: GETTABLE  R39 R39 K84  ; R39 := R39["mEventTag"]
+488 [-]: GETGLOBAL R40 K48      ; R40 := EMPTY_SYMBOL
+489 [-]: EQ        0 R39 R40    ; if R39 ~= R40 then PC := 526
+490 [-]: JMP       526          ; PC := 526
+491 [-]: GETUPVAL  R39 U0       ; R39 := U0
+492 [-]: GETTABLE  R39 R39 K81  ; R39 := R39["mInvasionInfo"]
+493 [-]: GETTABLE  R39 R39 K85  ; R39 := R39["mCount"]
+494 [-]: GETUPVAL  R40 U0       ; R40 := U0
+495 [-]: GETTABLE  R40 R40 K81  ; R40 := R40["mInvasionInfo"]
+496 [-]: GETTABLE  R40 R40 K86  ; R40 := R40["mGoal"]
+497 [-]: DIV       R39 R39 R40  ; R39 := R39 / R40
+498 [-]: MUL       R39 R39 K87  ; R39 := R39 * 50
+499 [-]: ADD       R39 K87 R39  ; R39 := 50 + R39
+500 [-]: TEST      R23 0        ; if not R23 then PC := 512
+501 [-]: JMP       512          ; PC := 512
+502 [-]: GETUPVAL  R40 U0       ; R40 := U0
+503 [-]: GETTABLE  R40 R40 K81  ; R40 := R40["mInvasionInfo"]
+504 [-]: GETTABLE  R40 R40 K85  ; R40 := R40["mCount"]
+505 [-]: GETUPVAL  R41 U0       ; R41 := U0
+506 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["mInvasionInfo"]
+507 [-]: GETTABLE  R41 R41 K86  ; R41 := R41["mGoal"]
+508 [-]: DIV       R40 R40 R41  ; R40 := R40 / R41
+509 [-]: MUL       R40 R40 K88  ; R40 := R40 * 100
+510 [-]: ADD       R39 K88 R40  ; R39 := 100 + R40
+511 [-]: JMP       520          ; PC := 520
+512 [-]: GETUPVAL  R40 U0       ; R40 := U0
+513 [-]: GETTABLE  R40 R40 K81  ; R40 := R40["mInvasionInfo"]
+514 [-]: GETTABLE  R40 R40 K89  ; R40 := R40["mAttackerMissionInfo"]
+515 [-]: GETTABLE  R40 R40 K90  ; R40 := R40["faction"]
+516 [-]: GETGLOBAL R41 K27      ; R41 := Lotus_Game
+517 [-]: GETTABLE  R41 R41 K83  ; R41 := R41["FC_INFESTATION"]
+518 [-]: EQ        0 R40 R41    ; if R40 ~= R41 then PC := 520
+519 [-]: JMP       520          ; PC := 520
+520 [-]: GETUPVAL  R40 U1       ; R40 := U1
+521 [-]: GETTABLE  R40 R40 K91  ; R40 := R40["0x90BB414A"]
+522 [-]: MOVE      R41 R39      ; R41 := R39
+523 [-]: CALL      R40 2 2      ; R40 := R40(R41)
+524 [-]: MOVE      R18 R40      ; R18 := R40
+525 [-]: JMP       561          ; PC := 561
+526 [-]: GETUPVAL  R40 U0       ; R40 := U0
+527 [-]: GETTABLE  R40 R40 K81  ; R40 := R40["mInvasionInfo"]
+528 [-]: GETTABLE  R40 R40 K85  ; R40 := R40["mCount"]
+529 [-]: GETUPVAL  R41 U0       ; R41 := U0
+530 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["mInvasionInfo"]
+531 [-]: GETTABLE  R41 R41 K86  ; R41 := R41["mGoal"]
+532 [-]: DIV       R40 R40 R41  ; R40 := R40 / R41
+533 [-]: MUL       R40 R40 K87  ; R40 := R40 * 50
+534 [-]: ADD       R40 K87 R40  ; R40 := 50 + R40
+535 [-]: GETUPVAL  R41 U0       ; R41 := U0
+536 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["mInvasionInfo"]
+537 [-]: GETTABLE  R41 R41 K85  ; R41 := R41["mCount"]
+538 [-]: GETUPVAL  R42 U0       ; R42 := U0
+539 [-]: GETTABLE  R42 R42 K81  ; R42 := R42["mInvasionInfo"]
+540 [-]: GETTABLE  R42 R42 K86  ; R42 := R42["mGoal"]
+541 [-]: DIV       R41 R41 R42  ; R41 := R41 / R42
+542 [-]: MUL       R41 R41 K87  ; R41 := R41 * 50
+543 [-]: SUB       R41 K87 R41  ; R41 := 50 - R41
+544 [-]: GETUPVAL  R42 U1       ; R42 := U1
+545 [-]: GETTABLE  R42 R42 K91  ; R42 := R42["0x90BB414A"]
+546 [-]: MOVE      R43 R40      ; R43 := R40
+547 [-]: CALL      R42 2 2      ; R42 := R42(R43)
+548 [-]: GETUPVAL  R43 U1       ; R43 := U1
+549 [-]: GETTABLE  R43 R43 K91  ; R43 := R43["0x90BB414A"]
+550 [-]: MOVE      R44 R41      ; R44 := R41
+551 [-]: CALL      R43 2 2      ; R43 := R43(R44)
+552 [-]: GETGLOBAL R44 K11      ; R44 := 0xE6DC43B0
+553 [-]: LOADK     R45 K92      ; R45 := "/Lotus/Language/Menu/DilemmaActiveProgress"
+554 [-]: NEWTABLE  R46 0 4      ; R46 := {}
+555 [-]: SETTABLE  R46 K93 K94  ; R46["OPTION_ONE"] := "Nef Anyo"
+556 [-]: SETTABLE  R46 K95 K96  ; R46["OPTION_TWO"] := "Alad V"
+557 [-]: SETTABLE  R46 K97 R42  ; R46["VALUE_ONE"] := R42
+558 [-]: SETTABLE  R46 K98 R43  ; R46["VALUE_TWO"] := R43
+559 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
+560 [-]: MOVE      R18 R44      ; R18 := R44
+561 [-]: TEST      R23 0        ; if not R23 then PC := 573
+562 [-]: JMP       573          ; PC := 573
+563 [-]: GETGLOBAL R44 K11      ; R44 := 0xE6DC43B0
+564 [-]: LOADK     R45 K99      ; R45 := "/Lotus/Language/Menu/MissionIntro_Invasion"
+565 [-]: MOVE      R46 R0       ; R46 := R0
+566 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
+567 [-]: MOVE      R8 R44       ; R8 := R44
+568 [-]: LOADK     R44 K40      ; R44 := " ("
+569 [-]: GETUPVAL  R45 U0       ; R45 := U0
+570 [-]: GETTABLE  R45 R45 K5   ; R45 := R45["mName"]
+571 [-]: LOADK     R46 K42      ; R46 := ")"
+572 [-]: CONCAT    R10 R44 R46  ; R10 := R44 .. R45 .. R46
+573 [-]: GETGLOBAL R44 K100     ; R44 := 0x400E7765
+574 [-]: GETGLOBAL R45 K101     ; R45 := gGameData
+575 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+576 [-]: TEST      R44 1        ; if R44 then PC := 742
+577 [-]: JMP       742          ; PC := 742
+578 [-]: GETGLOBAL R44 K101     ; R44 := gGameData
+579 [-]: SELF      R44 R44 K102 ; R45 := R44; R44 := R44["0x8EA5238E"]
+580 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+581 [-]: LOADK     R45 K36      ; R45 := 1
+582 [-]: LEN       R46 R44      ; R46 := # R44
+583 [-]: LOADK     R47 K36      ; R47 := 1
+584 [-]: FORPREP   R45 655      ; R45 -= R47; PC := 655
+585 [-]: GETTABLE  R49 R44 R48  ; R49 := R44[R48]
+586 [-]: GETTABLE  R49 R49 K103 ; R49 := R49["mId"]
+587 [-]: GETTABLE  R49 R49 K103 ; R49 := R49["mId"]
+588 [-]: GETUPVAL  R50 U0       ; R50 := U0
+589 [-]: GETTABLE  R50 R50 K81  ; R50 := R50["mInvasionInfo"]
+590 [-]: GETTABLE  R50 R50 K103 ; R50 := R50["mId"]
+591 [-]: GETTABLE  R50 R50 K103 ; R50 := R50["mId"]
+592 [-]: EQ        0 R49 R50    ; if R49 ~= R50 then PC := 655
+593 [-]: JMP       655          ; PC := 655
+594 [-]: GETTABLE  R49 R44 R48  ; R49 := R44[R48]
+595 [-]: GETTABLE  R19 R49 K104 ; R19 := R49["mDelta"]
+596 [-]: LT        0 K30 R19    ; if 0 >= R19 then PC := 623
+597 [-]: JMP       623          ; PC := 623
+598 [-]: GETUPVAL  R49 U0       ; R49 := U0
+599 [-]: GETTABLE  R49 R49 K81  ; R49 := R49["mInvasionInfo"]
+600 [-]: GETTABLE  R21 R49 K82  ; R21 := R49["mFaction"]
+601 [-]: GETUPVAL  R49 U3       ; R49 := U3
+602 [-]: GETTABLE  R49 R49 K19  ; R49 := R49["0xF81722A2"]
+603 [-]: GETUPVAL  R50 U0       ; R50 := U0
+604 [-]: GETTABLE  R50 R50 K81  ; R50 := R50["mInvasionInfo"]
+605 [-]: GETTABLE  R50 R50 K105 ; R50 := R50["mAttackerName"]
+606 [-]: GETGLOBAL R51 K48      ; R51 := EMPTY_SYMBOL
+607 [-]: EQ        1 R50 R51    ; if R50 == R51 then PC := 610
+608 [-]: JMP       610          ; PC := 610
+609 [-]: MOVE      R50 R0       ; R50 := R0
+610 [-]: MOVE      R50 R1       ; R50 := R1
+611 [-]: GETUPVAL  R51 U1       ; R51 := U1
+612 [-]: GETTABLE  R51 R51 K106 ; R51 := R51["FactionNames"]
+613 [-]: ADD       R52 R21 K36  ; R52 := R21 + 1
+614 [-]: GETTABLE  R51 R51 R52  ; R51 := R51[R52]
+615 [-]: GETGLOBAL R52 K0       ; R52 := 0x9FAED6BC
+616 [-]: GETUPVAL  R53 U0       ; R53 := U0
+617 [-]: GETTABLE  R53 R53 K81  ; R53 := R53["mInvasionInfo"]
+618 [-]: GETTABLE  R53 R53 K105 ; R53 := R53["mAttackerName"]
+619 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
+620 [-]: CALL      R49 0 2      ; R49 := R49(R50,...)
+621 [-]: MOVE      R22 R49      ; R22 := R49
+622 [-]: JMP       655          ; PC := 655
+623 [-]: LT        0 R19 K30    ; if R19 >= 0 then PC := 655
+624 [-]: JMP       655          ; PC := 655
+625 [-]: GETGLOBAL R49 K107     ; R49 := math
+626 [-]: GETTABLE  R49 R49 K108 ; R49 := R49["0xF93F7CC8"]
+627 [-]: MOVE      R50 R19      ; R50 := R19
+628 [-]: CALL      R49 2 2      ; R49 := R49(R50)
+629 [-]: MOVE      R19 R49      ; R19 := R49
+630 [-]: GETUPVAL  R49 U0       ; R49 := U0
+631 [-]: GETTABLE  R49 R49 K81  ; R49 := R49["mInvasionInfo"]
+632 [-]: GETTABLE  R49 R49 K89  ; R49 := R49["mAttackerMissionInfo"]
+633 [-]: GETTABLE  R21 R49 K90  ; R21 := R49["faction"]
+634 [-]: GETUPVAL  R49 U3       ; R49 := U3
+635 [-]: GETTABLE  R49 R49 K19  ; R49 := R49["0xF81722A2"]
+636 [-]: GETUPVAL  R50 U0       ; R50 := U0
+637 [-]: GETTABLE  R50 R50 K81  ; R50 := R50["mInvasionInfo"]
+638 [-]: GETTABLE  R50 R50 K109 ; R50 := R50["mDefenderName"]
+639 [-]: GETGLOBAL R51 K48      ; R51 := EMPTY_SYMBOL
+640 [-]: EQ        1 R50 R51    ; if R50 == R51 then PC := 643
+641 [-]: JMP       643          ; PC := 643
+642 [-]: MOVE      R50 R0       ; R50 := R0
+643 [-]: MOVE      R50 R1       ; R50 := R1
+644 [-]: GETUPVAL  R51 U1       ; R51 := U1
+645 [-]: GETTABLE  R51 R51 K106 ; R51 := R51["FactionNames"]
+646 [-]: ADD       R52 R21 K36  ; R52 := R21 + 1
+647 [-]: GETTABLE  R51 R51 R52  ; R51 := R51[R52]
+648 [-]: GETGLOBAL R52 K0       ; R52 := 0x9FAED6BC
+649 [-]: GETUPVAL  R53 U0       ; R53 := U0
+650 [-]: GETTABLE  R53 R53 K81  ; R53 := R53["mInvasionInfo"]
+651 [-]: GETTABLE  R53 R53 K109 ; R53 := R53["mDefenderName"]
+652 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
+653 [-]: CALL      R49 0 2      ; R49 := R49(R50,...)
+654 [-]: MOVE      R22 R49      ; R22 := R49
+655 [-]: FORLOOP   R45 585      ; R45 += R47; if R45 <= R46 then begin PC := 585; R48 := R45 end
+656 [-]: GETUPVAL  R49 U1       ; R49 := U1
+657 [-]: GETTABLE  R49 R49 K51  ; R49 := R49["0xF030C338"]
+658 [-]: GETGLOBAL R50 K23      ; R50 := mMovie
+659 [-]: GETUPVAL  R51 U0       ; R51 := U0
+660 [-]: GETTABLE  R51 R51 K81  ; R51 := R51["mInvasionInfo"]
+661 [-]: GETTABLE  R51 R51 K110 ; R51 := R51["mAttackerReward"]
+662 [-]: CALL      R49 3 2      ; R49 := R49(R50,R51)
+663 [-]: GETUPVAL  R50 U1       ; R50 := U1
+664 [-]: GETTABLE  R50 R50 K51  ; R50 := R50["0xF030C338"]
+665 [-]: GETGLOBAL R51 K23      ; R51 := mMovie
+666 [-]: GETUPVAL  R52 U0       ; R52 := U0
+667 [-]: GETTABLE  R52 R52 K81  ; R52 := R52["mInvasionInfo"]
+668 [-]: GETTABLE  R52 R52 K111 ; R52 := R52["mDefenderReward"]
+669 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
+670 [-]: GETUPVAL  R51 U3       ; R51 := U3
+671 [-]: GETTABLE  R51 R51 K19  ; R51 := R51["0xF81722A2"]
+672 [-]: MOVE      R52 R23      ; R52 := R23
+673 [-]: MOVE      R53 R49      ; R53 := R49
+674 [-]: LOADK     R54 K60      ; R54 := " "
+675 [-]: GETGLOBAL R55 K23      ; R55 := mMovie
+676 [-]: SELF      R55 R55 K24  ; R56 := R55; R55 := R55["0x5DB0BD4"]
+677 [-]: LOADK     R57 K112     ; R57 := "/Lotus/Language/Menu/MissionBoard_InvasionRewardCompare"
+678 [-]: MOVE      R58 R0       ; R58 := R0
+679 [-]: CALL      R55 4 2      ; R55 := R55(R56,R57,R58)
+680 [-]: LOADK     R56 K60      ; R56 := " "
+681 [-]: MOVE      R57 R50      ; R57 := R50
+682 [-]: CONCAT    R53 R53 R57  ; R53 := R53 .. R54 .. R55 .. R56 .. R57
+683 [-]: MOVE      R54 R50      ; R54 := R50
+684 [-]: CALL      R51 4 2      ; R51 := R51(R52,R53,R54)
+685 [-]: MOVE      R24 R51      ; R24 := R51
+686 [-]: LOADK     R51 K113     ; R51 := "\r\n"
+687 [-]: MOVE      R52 R18      ; R52 := R18
+688 [-]: LOADK     R53 K113     ; R53 := "\r\n"
+689 [-]: MOVE      R54 R19      ; R54 := R19
+690 [-]: LOADK     R55 K114     ; R55 := "/"
+691 [-]: MOVE      R56 R20      ; R56 := R20
+692 [-]: CONCAT    R15 R51 R56  ; R15 := R51 .. R52 .. R53 .. R54 .. R55 .. R56
+693 [-]: TEST      R21 0        ; if not R21 then PC := 705
+694 [-]: JMP       705          ; PC := 705
+695 [-]: TEST      R23 1        ; if R23 then PC := 705
+696 [-]: JMP       705          ; PC := 705
+697 [-]: MOVE      R51 R15      ; R51 := R15
+698 [-]: LOADK     R52 K60      ; R52 := " "
+699 [-]: GETGLOBAL R53 K23      ; R53 := mMovie
+700 [-]: SELF      R53 R53 K24  ; R54 := R53; R53 := R53["0x5DB0BD4"]
+701 [-]: MOVE      R55 R22      ; R55 := R22
+702 [-]: MOVE      R56 R0       ; R56 := R0
+703 [-]: CALL      R53 4 2      ; R53 := R53(R54,R55,R56)
+704 [-]: CONCAT    R15 R51 R53  ; R15 := R51 .. R52 .. R53
+705 [-]: MOVE      R51 R15      ; R51 := R15
+706 [-]: LOADK     R52 K113     ; R52 := "\r\n"
+707 [-]: MOVE      R53 R24      ; R53 := R24
+708 [-]: CONCAT    R15 R51 R53  ; R15 := R51 .. R52 .. R53
+709 [-]: GETGLOBAL R51 K43      ; R51 := Engine
+710 [-]: GETTABLE  R51 R51 K44  ; R51 := R51["0xD09D7910"]
+711 [-]: GETUPVAL  R52 U0       ; R52 := U0
+712 [-]: GETTABLE  R52 R52 K81  ; R52 := R52["mInvasionInfo"]
+713 [-]: GETTABLE  R52 R52 K45  ; R52 := R52["mExpiry"]
+714 [-]: CALL      R51 2 2      ; R51 := R51(R52)
+715 [-]: LE        0 K115 R51   ; if -600 > R51 then PC := 742
+716 [-]: JMP       742          ; PC := 742
+717 [-]: LE        0 R51 K116   ; if R51 > 43200 then PC := 742
+718 [-]: JMP       742          ; PC := 742
+719 [-]: GETUPVAL  R52 U1       ; R52 := U1
+720 [-]: GETTABLE  R52 R52 K117 ; R52 := R52["0xE5892312"]
+721 [-]: MOVE      R53 R51      ; R53 := R51
+722 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+723 [-]: LT        0 R51 K30    ; if R51 >= 0 then PC := 730
+724 [-]: JMP       730          ; PC := 730
+725 [-]: GETUPVAL  R53 U1       ; R53 := U1
+726 [-]: GETTABLE  R53 R53 K117 ; R53 := R53["0xE5892312"]
+727 [-]: LOADK     R54 K30      ; R54 := 0
+728 [-]: CALL      R53 2 2      ; R53 := R53(R54)
+729 [-]: MOVE      R52 R53      ; R52 := R53
+730 [-]: MOVE      R53 R12      ; R53 := R12
+731 [-]: LOADK     R54 K17      ; R54 := " - "
+732 [-]: GETGLOBAL R55 K9       ; R55 := string
+733 [-]: GETTABLE  R55 R55 K10  ; R55 := R55["0x639C642A"]
+734 [-]: GETGLOBAL R56 K11      ; R56 := 0xE6DC43B0
+735 [-]: LOADK     R57 K118     ; R57 := "/Lotus/Language/Menu/Notification_Expiry_Heading"
+736 [-]: LOADNIL   R58 R58      ; R58 := nil
+737 [-]: CALL      R56 3 0      ; R56,... := R56(R57,R58)
+738 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
+739 [-]: LOADK     R56 K60      ; R56 := " "
+740 [-]: MOVE      R57 R52      ; R57 := R52
+741 [-]: CONCAT    R12 R53 R57  ; R12 := R53 .. R54 .. R55 .. R56 .. R57
+742 [-]: GETUPVAL  R53 U0       ; R53 := U0
+743 [-]: GETTABLE  R53 R53 K57  ; R53 := R53["mMission"]
+744 [-]: GETTABLE  R53 R53 K119 ; R53 := R53["missionType"]
+745 [-]: GETGLOBAL R54 K27      ; R54 := Lotus_Game
+746 [-]: GETTABLE  R54 R54 K120 ; R54 := R54["MT_RAILJACK"]
+747 [-]: EQ        0 R53 R54    ; if R53 ~= R54 then PC := 795
+748 [-]: JMP       795          ; PC := 795
+749 [-]: GETGLOBAL R53 K100     ; R53 := 0x400E7765
+750 [-]: GETUPVAL  R54 U0       ; R54 := U0
+751 [-]: GETTABLE  R54 R54 K57  ; R54 := R54["mMission"]
+752 [-]: SELF      R54 R54 K121 ; R55 := R54; R54 := R54["0x70C51B59"]
+753 [-]: CALL      R54 2 0      ; R54,... := R54(R55)
+754 [-]: CALL      R53 0 2      ; R53 := R53(R54,...)
+755 [-]: TEST      R53 0        ; if not R53 then PC := 795
+756 [-]: JMP       795          ; PC := 795
+757 [-]: GETGLOBAL R53 K23      ; R53 := mMovie
+758 [-]: SELF      R53 R53 K24  ; R54 := R53; R53 := R53["0x5DB0BD4"]
+759 [-]: LOADK     R55 K122     ; R55 := "<RAILJACK>"
+760 [-]: MOVE      R56 R1       ; R56 := R1
+761 [-]: CALL      R53 4 2      ; R53 := R53(R54,R55,R56)
+762 [-]: LOADK     R54 K60      ; R54 := " "
+763 [-]: GETGLOBAL R55 K9       ; R55 := string
+764 [-]: GETTABLE  R55 R55 K10  ; R55 := R55["0x639C642A"]
+765 [-]: GETGLOBAL R56 K23      ; R56 := mMovie
+766 [-]: SELF      R56 R56 K24  ; R57 := R56; R56 := R56["0x5DB0BD4"]
+767 [-]: LOADK     R58 K123     ; R58 := "/Lotus/Language/Railjack/Railjack"
+768 [-]: MOVE      R59 R0       ; R59 := R0
+769 [-]: CALL      R56 4 0      ; R56,... := R56(R57,R58,R59)
+770 [-]: CALL      R55 0 2      ; R55 := R55(R56,...)
+771 [-]: CONCAT    R8 R53 R55   ; R8 := R53 .. R54 .. R55
+772 [-]: MOVE      R53 R29      ; R53 := R29
+773 [-]: LOADK     R54 K124     ; R54 := "/Lotus/Language/Menu/Lobby_Mission"
+774 [-]: MOVE      R55 R8       ; R55 := R8
+775 [-]: CALL      R53 3 1      ; R53(R54,R55)
+776 [-]: GETGLOBAL R53 K9       ; R53 := string
+777 [-]: GETTABLE  R53 R53 K125 ; R53 := R53["0xC6772A8A"]
+778 [-]: MOVE      R54 R28      ; R54 := R28
+779 [-]: CALL      R53 2 2      ; R53 := R53(R54)
+780 [-]: MOVE      R54 R28      ; R54 := R28
+781 [-]: LOADK     R55 K126     ; R55 := "</p>"
+782 [-]: CONCAT    R28 R54 R55  ; R28 := R54 .. R55
+783 [-]: GETUPVAL  R54 U5       ; R54 := U5
+784 [-]: GETTABLE  R54 R54 K127 ; R54 := R54["UpdateTimer"]
+785 [-]: EQ        1 R54 K22    ; if R54 == nil then PC := 794
+786 [-]: JMP       794          ; PC := 794
+787 [-]: GETUPVAL  R54 U5       ; R54 := U5
+788 [-]: GETGLOBAL R55 K9       ; R55 := string
+789 [-]: GETTABLE  R55 R55 K129 ; R55 := R55["0x7B782033"]
+790 [-]: MOVE      R56 R28      ; R56 := R28
+791 [-]: ADD       R57 R53 K36  ; R57 := R53 + 1
+792 [-]: CALL      R55 3 2      ; R55 := R55(R56,R57)
+793 [-]: SETTABLE  R54 K128 R55 ; R54["TimerPost"] := R55
+794 [-]: RETURN    R28 2        ; return R28
+795 [-]: GETGLOBAL R54 K27      ; R54 := Lotus_Game
+796 [-]: GETTABLE  R54 R54 K28  ; R54 := R54["NT_HUB"]
+797 [-]: EQ        1 R7 R54     ; if R7 == R54 then PC := 805
+798 [-]: JMP       805          ; PC := 805
+799 [-]: MOVE      R54 R29      ; R54 := R29
+800 [-]: LOADK     R55 K124     ; R55 := "/Lotus/Language/Menu/Lobby_Mission"
+801 [-]: MOVE      R56 R8       ; R56 := R8
+802 [-]: MOVE      R57 R10      ; R57 := R10
+803 [-]: CONCAT    R56 R56 R57  ; R56 := R56 .. R57
+804 [-]: CALL      R54 3 1      ; R54(R55,R56)
+805 [-]: GETUPVAL  R54 U0       ; R54 := U0
+806 [-]: GETTABLE  R54 R54 K57  ; R54 := R54["mMission"]
+807 [-]: GETTABLE  R54 R54 K130 ; R54 := R54["goalTag"]
+808 [-]: SELF      R54 R54 K131 ; R55 := R54; R54 := R54["0x5EC7A3D2"]
+809 [-]: CALL      R54 2 2      ; R54 := R54(R55)
+810 [-]: EQ        0 R54 K132   ; if R54 ~= "NoMods" then PC := 825
+811 [-]: JMP       825          ; PC := 825
+812 [-]: GETGLOBAL R54 K23      ; R54 := mMovie
+813 [-]: SELF      R54 R54 K24  ; R55 := R54; R54 := R54["0x5DB0BD4"]
+814 [-]: LOADK     R56 K133     ; R56 := "/Lotus/Language/Sorties/SOModifierNoMods"
+815 [-]: MOVE      R57 R0       ; R57 := R0
+816 [-]: CALL      R54 4 2      ; R54 := R54(R55,R56,R57)
+817 [-]: GETGLOBAL R55 K23      ; R55 := mMovie
+818 [-]: SELF      R55 R55 K24  ; R56 := R55; R55 := R55["0x5DB0BD4"]
+819 [-]: LOADK     R57 K134     ; R57 := "/Lotus/Language/Sorties/SOModifierCaption"
+820 [-]: MOVE      R58 R0       ; R58 := R0
+821 [-]: NEWTABLE  R59 0 1      ; R59 := {}
+822 [-]: SETTABLE  R59 K135 R54 ; R59["MODIFIER_DESC"] := R54
+823 [-]: CALL      R55 5 2      ; R55 := R55(R56,R57,R58,R59)
+824 [-]: MOVE      R27 R55      ; R27 := R55
+825 [-]: EQ        1 R15 K22    ; if R15 == nil then PC := 902
+826 [-]: JMP       902          ; PC := 902
+827 [-]: TEST      R23 1        ; if R23 then PC := 902
+828 [-]: JMP       902          ; PC := 902
+829 [-]: GETGLOBAL R55 K11      ; R55 := 0xE6DC43B0
+830 [-]: GETGLOBAL R56 K0       ; R56 := 0x9FAED6BC
+831 [-]: GETUPVAL  R57 U1       ; R57 := U1
+832 [-]: GETTABLE  R57 R57 K106 ; R57 := R57["FactionNames"]
+833 [-]: GETUPVAL  R58 U0       ; R58 := U0
+834 [-]: GETTABLE  R58 R58 K81  ; R58 := R58["mInvasionInfo"]
+835 [-]: GETTABLE  R58 R58 K82  ; R58 := R58["mFaction"]
+836 [-]: ADD       R58 R58 K36  ; R58 := R58 + 1
+837 [-]: GETTABLE  R57 R57 R58  ; R57 := R57[R58]
+838 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+839 [-]: MOVE      R57 R0       ; R57 := R0
+840 [-]: CALL      R55 3 2      ; R55 := R55(R56,R57)
+841 [-]: LOADK     R56 K40      ; R56 := " ("
+842 [-]: GETGLOBAL R57 K9       ; R57 := string
+843 [-]: GETTABLE  R57 R57 K10  ; R57 := R57["0x639C642A"]
+844 [-]: GETGLOBAL R58 K23      ; R58 := mMovie
+845 [-]: SELF      R58 R58 K24  ; R59 := R58; R58 := R58["0x5DB0BD4"]
+846 [-]: LOADK     R60 K55      ; R60 := "/Lotus/Language/Game/MissionName_"
+847 [-]: GETUPVAL  R61 U1       ; R61 := U1
+848 [-]: GETTABLE  R61 R61 K56  ; R61 := R61["0x87B2D555"]
+849 [-]: GETUPVAL  R62 U0       ; R62 := U0
+850 [-]: GETTABLE  R62 R62 K81  ; R62 := R62["mInvasionInfo"]
+851 [-]: GETTABLE  R62 R62 K89  ; R62 := R62["mAttackerMissionInfo"]
+852 [-]: CALL      R61 2 2      ; R61 := R61(R62)
+853 [-]: CONCAT    R60 R60 R61  ; R60 := R60 .. R61
+854 [-]: MOVE      R61 R0       ; R61 := R0
+855 [-]: CALL      R58 4 0      ; R58,... := R58(R59,R60,R61)
+856 [-]: CALL      R57 0 2      ; R57 := R57(R58,...)
+857 [-]: LOADK     R58 K42      ; R58 := ")"
+858 [-]: CONCAT    R55 R55 R58  ; R55 := R55 .. R56 .. R57 .. R58
+859 [-]: GETGLOBAL R56 K11      ; R56 := 0xE6DC43B0
+860 [-]: GETGLOBAL R57 K0       ; R57 := 0x9FAED6BC
+861 [-]: GETUPVAL  R58 U1       ; R58 := U1
+862 [-]: GETTABLE  R58 R58 K106 ; R58 := R58["FactionNames"]
+863 [-]: GETUPVAL  R59 U0       ; R59 := U0
+864 [-]: GETTABLE  R59 R59 K81  ; R59 := R59["mInvasionInfo"]
+865 [-]: GETTABLE  R59 R59 K89  ; R59 := R59["mAttackerMissionInfo"]
+866 [-]: GETTABLE  R59 R59 K90  ; R59 := R59["faction"]
+867 [-]: ADD       R59 R59 K36  ; R59 := R59 + 1
+868 [-]: GETTABLE  R58 R58 R59  ; R58 := R58[R59]
+869 [-]: CALL      R57 2 2      ; R57 := R57(R58)
+870 [-]: MOVE      R58 R0       ; R58 := R0
+871 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
+872 [-]: LOADK     R57 K40      ; R57 := " ("
+873 [-]: GETGLOBAL R58 K9       ; R58 := string
+874 [-]: GETTABLE  R58 R58 K10  ; R58 := R58["0x639C642A"]
+875 [-]: GETGLOBAL R59 K23      ; R59 := mMovie
+876 [-]: SELF      R59 R59 K24  ; R60 := R59; R59 := R59["0x5DB0BD4"]
+877 [-]: LOADK     R61 K55      ; R61 := "/Lotus/Language/Game/MissionName_"
+878 [-]: GETUPVAL  R62 U1       ; R62 := U1
+879 [-]: GETTABLE  R62 R62 K56  ; R62 := R62["0x87B2D555"]
+880 [-]: GETUPVAL  R63 U0       ; R63 := U0
+881 [-]: GETTABLE  R63 R63 K81  ; R63 := R63["mInvasionInfo"]
+882 [-]: GETTABLE  R63 R63 K136 ; R63 := R63["mDefenderMissionInfo"]
+883 [-]: CALL      R62 2 2      ; R62 := R62(R63)
+884 [-]: CONCAT    R61 R61 R62  ; R61 := R61 .. R62
+885 [-]: MOVE      R62 R0       ; R62 := R0
+886 [-]: CALL      R59 4 0      ; R59,... := R59(R60,R61,R62)
+887 [-]: CALL      R58 0 2      ; R58 := R58(R59,...)
+888 [-]: LOADK     R59 K42      ; R59 := ")"
+889 [-]: CONCAT    R56 R56 R59  ; R56 := R56 .. R57 .. R58 .. R59
+890 [-]: MOVE      R57 R29      ; R57 := R29
+891 [-]: LOADNIL   R58 R58      ; R58 := nil
+892 [-]: MOVE      R59 R55      ; R59 := R55
+893 [-]: LOADK     R60 K60      ; R60 := " "
+894 [-]: GETGLOBAL R61 K11      ; R61 := 0xE6DC43B0
+895 [-]: LOADK     R62 K112     ; R62 := "/Lotus/Language/Menu/MissionBoard_InvasionRewardCompare"
+896 [-]: LOADNIL   R63 R63      ; R63 := nil
+897 [-]: CALL      R61 3 2      ; R61 := R61(R62,R63)
+898 [-]: LOADK     R62 K113     ; R62 := "\r\n"
+899 [-]: MOVE      R63 R56      ; R63 := R56
+900 [-]: CONCAT    R59 R59 R63  ; R59 := R59 .. R60 .. R61 .. R62 .. R63
+901 [-]: CALL      R57 3 1      ; R57(R58,R59)
+902 [-]: GETUPVAL  R57 U0       ; R57 := U0
+903 [-]: GETTABLE  R57 R57 K57  ; R57 := R57["mMission"]
+904 [-]: GETTABLE  R57 R57 K119 ; R57 := R57["missionType"]
+905 [-]: GETGLOBAL R58 K27      ; R58 := Lotus_Game
+906 [-]: GETTABLE  R58 R58 K137 ; R58 := R58["MT_LANDSCAPE"]
+907 [-]: EQ        1 R57 R58    ; if R57 == R58 then PC := 917
+908 [-]: JMP       917          ; PC := 917
+909 [-]: GETGLOBAL R57 K27      ; R57 := Lotus_Game
+910 [-]: GETTABLE  R57 R57 K28  ; R57 := R57["NT_HUB"]
+911 [-]: EQ        0 R7 R57     ; if R7 ~= R57 then PC := 989
+912 [-]: JMP       989          ; PC := 989
+913 [-]: GETUPVAL  R57 U1       ; R57 := U1
+914 [-]: GETTABLE  R57 R57 K138 ; R57 := R57["CETUS_NODE_TAG"]
+915 [-]: EQ        0 R6 R57     ; if R6 ~= R57 then PC := 989
+916 [-]: JMP       989          ; PC := 989
+917 [-]: GETUPVAL  R57 U5       ; R57 := U5
+918 [-]: SETTABLE  R57 K127 K30 ; R57["UpdateTimer"] := 0
+919 [-]: GETUPVAL  R57 U5       ; R57 := U5
+920 [-]: SETTABLE  R57 K139 R28 ; R57["TimerPre"] := R28
+921 [-]: GETUPVAL  R57 U1       ; R57 := U1
+922 [-]: GETTABLE  R57 R57 K140 ; R57 := R57["0x555EFA5"]
+923 [-]: GETUPVAL  R58 U0       ; R58 := U0
+924 [-]: GETTABLE  R58 R58 K57  ; R58 := R58["mMission"]
+925 [-]: GETTABLE  R58 R58 K141 ; R58 := R58["location"]
+926 [-]: CALL      R57 2 2      ; R57 := R57(R58)
+927 [-]: GETUPVAL  R58 U1       ; R58 := U1
+928 [-]: GETTABLE  R58 R58 K142 ; R58 := R58["0x447FCC2F"]
+929 [-]: MOVE      R59 R57      ; R59 := R57
+930 [-]: GETUPVAL  R60 U0       ; R60 := U0
+931 [-]: GETTABLE  R60 R60 K57  ; R60 := R60["mMission"]
+932 [-]: GETTABLE  R60 R60 K141 ; R60 := R60["location"]
+933 [-]: CALL      R58 3 4      ; R58,R59,R60 := R58(R59,R60)
+934 [-]: GETUPVAL  R61 U5       ; R61 := U5
+935 [-]: SETTABLE  R61 K143 R60 ; R61["NodeTime"] := R60
+936 [-]: GETUPVAL  R61 U0       ; R61 := U0
+937 [-]: GETTABLE  R61 R61 K57  ; R61 := R61["mMission"]
+938 [-]: GETTABLE  R61 R61 K141 ; R61 := R61["location"]
+939 [-]: GETUPVAL  R62 U1       ; R62 := U1
+940 [-]: GETTABLE  R62 R62 K144 ; R62 := R62["ORB_VALLIS_NODE_TAG"]
+941 [-]: EQ        0 R61 R62    ; if R61 ~= R62 then PC := 966
+942 [-]: JMP       966          ; PC := 966
+943 [-]: MOVE      R61 R29      ; R61 := R29
+944 [-]: LOADK     R62 K145     ; R62 := "/Lotus/Language/SolarisVenus/Temperature"
+945 [-]: GETGLOBAL R63 K23      ; R63 := mMovie
+946 [-]: SELF      R63 R63 K24  ; R64 := R63; R63 := R63["0x5DB0BD4"]
+947 [-]: LOADK     R65 K146     ; R65 := "/Lotus/Language/SystemMessages/TimeUntil"
+948 [-]: MOVE      R66 R0       ; R66 := R0
+949 [-]: NEWTABLE  R67 0 2      ; R67 := {}
+950 [-]: GETGLOBAL R68 K23      ; R68 := mMovie
+951 [-]: SELF      R68 R68 K24  ; R69 := R68; R68 := R68["0x5DB0BD4"]
+952 [-]: MOVE      R70 R59      ; R70 := R59
+953 [-]: MOVE      R71 R0       ; R71 := R0
+954 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+955 [-]: SETTABLE  R67 K147 R68 ; R67["LABEL"] := R68
+956 [-]: GETUPVAL  R68 U1       ; R68 := U1
+957 [-]: GETTABLE  R68 R68 K149 ; R68 := R68["0xC65D09DD"]
+958 [-]: GETGLOBAL R69 K23      ; R69 := mMovie
+959 [-]: MOVE      R70 R60      ; R70 := R60
+960 [-]: LOADK     R71 K150     ; R71 := "CompactOne"
+961 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+962 [-]: SETTABLE  R67 K148 R68 ; R67["TIME"] := R68
+963 [-]: CALL      R63 5 0      ; R63,... := R63(R64,R65,R66,R67)
+964 [-]: CALL      R61 0 1      ; R61(R62,...)
+965 [-]: JMP       997          ; PC := 997
+966 [-]: MOVE      R61 R29      ; R61 := R29
+967 [-]: LOADK     R62 K151     ; R62 := "/Lotus/Language/Menu/Photobooth_TimeOfDay"
+968 [-]: GETGLOBAL R63 K23      ; R63 := mMovie
+969 [-]: SELF      R63 R63 K24  ; R64 := R63; R63 := R63["0x5DB0BD4"]
+970 [-]: LOADK     R65 K146     ; R65 := "/Lotus/Language/SystemMessages/TimeUntil"
+971 [-]: MOVE      R66 R0       ; R66 := R0
+972 [-]: NEWTABLE  R67 0 2      ; R67 := {}
+973 [-]: GETGLOBAL R68 K23      ; R68 := mMovie
+974 [-]: SELF      R68 R68 K24  ; R69 := R68; R68 := R68["0x5DB0BD4"]
+975 [-]: MOVE      R70 R59      ; R70 := R59
+976 [-]: MOVE      R71 R0       ; R71 := R0
+977 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+978 [-]: SETTABLE  R67 K147 R68 ; R67["LABEL"] := R68
+979 [-]: GETUPVAL  R68 U1       ; R68 := U1
+980 [-]: GETTABLE  R68 R68 K149 ; R68 := R68["0xC65D09DD"]
+981 [-]: GETGLOBAL R69 K23      ; R69 := mMovie
+982 [-]: MOVE      R70 R60      ; R70 := R60
+983 [-]: LOADK     R71 K150     ; R71 := "CompactOne"
+984 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
+985 [-]: SETTABLE  R67 K148 R68 ; R67["TIME"] := R68
+986 [-]: CALL      R63 5 0      ; R63,... := R63(R64,R65,R66,R67)
+987 [-]: CALL      R61 0 1      ; R61(R62,...)
+988 [-]: JMP       997          ; PC := 997
+989 [-]: GETUPVAL  R61 U5       ; R61 := U5
+990 [-]: SETTABLE  R61 K127 K22 ; R61["UpdateTimer"] := nil
+991 [-]: GETUPVAL  R61 U5       ; R61 := U5
+992 [-]: SETTABLE  R61 K143 K22 ; R61["NodeTime"] := nil
+993 [-]: GETUPVAL  R61 U5       ; R61 := U5
+994 [-]: SETTABLE  R61 K139 K22 ; R61["TimerPre"] := nil
+995 [-]: GETUPVAL  R61 U5       ; R61 := U5
+996 [-]: SETTABLE  R61 K128 K22 ; R61["TimerPost"] := nil
+997 [-]: GETGLOBAL R61 K9       ; R61 := string
+998 [-]: GETTABLE  R61 R61 K125 ; R61 := R61["0xC6772A8A"]
+999 [-]: MOVE      R62 R28      ; R62 := R28
+1000 [-]: CALL      R61 2 2      ; R61 := R61(R62)
+1001 [-]: GETUPVAL  R62 U1       ; R62 := U1
+1002 [-]: GETTABLE  R62 R62 K152 ; R62 := R62["OPTIONAL_GOAL_PREFIX"]
+1003 [-]: MOVE      R63 R5       ; R63 := R5
+1004 [-]: CONCAT    R62 R62 R63  ; R62 := R62 .. R63
+1005 [-]: GETTABLE  R63 R9 R62   ; R63 := R9[R62]
+1006 [-]: TEST      R63 0        ; if not R63 then PC := 1016
+1007 [-]: JMP       1016         ; PC := 1016
+1008 [-]: MOVE      R63 R29      ; R63 := R29
+1009 [-]: LOADK     R64 K153     ; R64 := "/Lotus/Language/Menu/WorldStatePanel_Event"
+1010 [-]: GETGLOBAL R65 K11      ; R65 := 0xE6DC43B0
+1011 [-]: GETTABLE  R66 R9 R62   ; R66 := R9[R62]
+1012 [-]: GETTABLE  R66 R66 K54  ; R66 := R66["mDesc"]
+1013 [-]: LOADNIL   R67 R67      ; R67 := nil
+1014 [-]: CALL      R65 3 0      ; R65,... := R65(R66,R67)
+1015 [-]: CALL      R63 0 1      ; R63(R64,...)
+1016 [-]: GETUPVAL  R63 U0       ; R63 := U0
+1017 [-]: GETTABLE  R63 R63 K57  ; R63 := R63["mMission"]
+1018 [-]: GETTABLE  R63 R63 K119 ; R63 := R63["missionType"]
+1019 [-]: GETGLOBAL R64 K27      ; R64 := Lotus_Game
+1020 [-]: GETTABLE  R64 R64 K154 ; R64 := R64["MT_ASSASSINATION"]
+1021 [-]: EQ        0 R63 R64    ; if R63 ~= R64 then PC := 1034
+1022 [-]: JMP       1034         ; PC := 1034
+1023 [-]: TEST      R14 1        ; if R14 then PC := 1034
+1024 [-]: JMP       1034         ; PC := 1034
+1025 [-]: MOVE      R63 R29      ; R63 := R29
+1026 [-]: LOADK     R64 K155     ; R64 := "/Lotus/Language/Menu/MissionIntro_Target"
+1027 [-]: GETGLOBAL R65 K9       ; R65 := string
+1028 [-]: GETTABLE  R65 R65 K10  ; R65 := R65["0x639C642A"]
+1029 [-]: GETUPVAL  R66 U0       ; R66 := U0
+1030 [-]: GETTABLE  R66 R66 K54  ; R66 := R66["mDesc"]
+1031 [-]: CALL      R65 2 0      ; R65,... := R65(R66)
+1032 [-]: CALL      R63 0 1      ; R63(R64,...)
+1033 [-]: JMP       1109         ; PC := 1109
+1034 [-]: GETTABLE  R63 R0 K156  ; R63 := R0["guildId"]
+1035 [-]: EQ        1 R63 K22    ; if R63 == nil then PC := 1060
+1036 [-]: JMP       1060         ; PC := 1060
+1037 [-]: GETTABLE  R63 R0 K157  ; R63 := R0["clanTier"]
+1038 [-]: EQ        1 R63 K22    ; if R63 == nil then PC := 1060
+1039 [-]: JMP       1060         ; PC := 1060
+1040 [-]: MOVE      R63 R29      ; R63 := R29
+1041 [-]: LOADK     R64 K158     ; R64 := "/Lotus/Language/Menu/Profile_Clan"
+1042 [-]: GETGLOBAL R65 K9       ; R65 := string
+1043 [-]: GETTABLE  R65 R65 K10  ; R65 := R65["0x639C642A"]
+1044 [-]: GETTABLE  R66 R0 K159  ; R66 := R0["locName"]
+1045 [-]: CALL      R65 2 0      ; R65,... := R65(R66)
+1046 [-]: CALL      R63 0 1      ; R63(R64,...)
+1047 [-]: MOVE      R63 R29      ; R63 := R29
+1048 [-]: LOADK     R64 K160     ; R64 := "/Lotus/Language/Dojo/ClanTier"
+1049 [-]: GETGLOBAL R65 K9       ; R65 := string
+1050 [-]: GETTABLE  R65 R65 K10  ; R65 := R65["0x639C642A"]
+1051 [-]: GETGLOBAL R66 K11      ; R66 := 0xE6DC43B0
+1052 [-]: GETUPVAL  R67 U6       ; R67 := U6
+1053 [-]: GETTABLE  R68 R0 K157  ; R68 := R0["clanTier"]
+1054 [-]: GETTABLE  R67 R67 R68  ; R67 := R67[R68]
+1055 [-]: LOADNIL   R68 R68      ; R68 := nil
+1056 [-]: CALL      R66 3 0      ; R66,... := R66(R67,R68)
+1057 [-]: CALL      R65 0 0      ; R65,... := R65(R66,...)
+1058 [-]: CALL      R63 0 1      ; R63(R64,...)
+1059 [-]: JMP       1109         ; PC := 1109
+1060 [-]: GETGLOBAL R63 K27      ; R63 := Lotus_Game
+1061 [-]: GETTABLE  R63 R63 K28  ; R63 := R63["NT_HUB"]
+1062 [-]: EQ        0 R7 R63     ; if R7 ~= R63 then PC := 1081
+1063 [-]: JMP       1081         ; PC := 1081
+1064 [-]: LOADNIL   R63 R63      ; R63 := nil
+1065 [-]: EQ        0 R5 K161    ; if R5 ~= "IronwakeHUB3" then PC := 1069
+1066 [-]: JMP       1069         ; PC := 1069
+1067 [-]: LOADK     R63 K162     ; R63 := "/Lotus/Language/Factions/SteelMeridianName"
+1068 [-]: JMP       1070         ; PC := 1070
+1069 [-]: LOADK     R63 K163     ; R63 := "/Lotus/Language/Menu/Codex_Tenno"
+1070 [-]: MOVE      R64 R29      ; R64 := R29
+1071 [-]: LOADK     R65 K164     ; R65 := "/Lotus/Language/Menu/MissionIntro_Faction"
+1072 [-]: GETGLOBAL R66 K9       ; R66 := string
+1073 [-]: GETTABLE  R66 R66 K10  ; R66 := R66["0x639C642A"]
+1074 [-]: GETGLOBAL R67 K11      ; R67 := 0xE6DC43B0
+1075 [-]: MOVE      R68 R63      ; R68 := R63
+1076 [-]: LOADNIL   R69 R69      ; R69 := nil
+1077 [-]: CALL      R67 3 0      ; R67,... := R67(R68,R69)
+1078 [-]: CALL      R66 0 0      ; R66,... := R66(R67,...)
+1079 [-]: CALL      R64 0 1      ; R64(R65,...)
+1080 [-]: JMP       1109         ; PC := 1109
+1081 [-]: TEST      R14 0        ; if not R14 then PC := 1087
+1082 [-]: JMP       1087         ; PC := 1087
+1083 [-]: GETUPVAL  R64 U7       ; R64 := U7
+1084 [-]: GETTABLE  R64 R64 K165 ; R64 := R64["Active"]
+1085 [-]: TEST      R64 1        ; if R64 then PC := 1109
+1086 [-]: JMP       1109         ; PC := 1109
+1087 [-]: GETGLOBAL R64 K9       ; R64 := string
+1088 [-]: GETTABLE  R64 R64 K10  ; R64 := R64["0x639C642A"]
+1089 [-]: GETUPVAL  R65 U0       ; R65 := U0
+1090 [-]: GETTABLE  R65 R65 K54  ; R65 := R65["mDesc"]
+1091 [-]: CALL      R64 2 2      ; R64 := R64(R65)
+1092 [-]: TEST      R4 0         ; if not R4 then PC := 1105
+1093 [-]: JMP       1105         ; PC := 1105
+1094 [-]: MOVE      R65 R64      ; R65 := R64
+1095 [-]: LOADK     R66 K40      ; R66 := " ("
+1096 [-]: GETGLOBAL R67 K9       ; R67 := string
+1097 [-]: GETTABLE  R67 R67 K10  ; R67 := R67["0x639C642A"]
+1098 [-]: GETGLOBAL R68 K11      ; R68 := 0xE6DC43B0
+1099 [-]: LOADK     R69 K166     ; R69 := "/Lotus/Language/Menu/OccupyingFaction"
+1100 [-]: LOADNIL   R70 R70      ; R70 := nil
+1101 [-]: CALL      R68 3 0      ; R68,... := R68(R69,R70)
+1102 [-]: CALL      R67 0 2      ; R67 := R67(R68,...)
+1103 [-]: LOADK     R68 K42      ; R68 := ")"
+1104 [-]: CONCAT    R64 R65 R68  ; R64 := R65 .. R66 .. R67 .. R68
+1105 [-]: MOVE      R65 R29      ; R65 := R29
+1106 [-]: LOADK     R66 K164     ; R66 := "/Lotus/Language/Menu/MissionIntro_Faction"
+1107 [-]: MOVE      R67 R64      ; R67 := R64
+1108 [-]: CALL      R65 3 1      ; R65(R66,R67)
+1109 [-]: TEST      R13 1        ; if R13 then PC := 1167
+1110 [-]: JMP       1167         ; PC := 1167
+1111 [-]: TEST      R14 1        ; if R14 then PC := 1167
+1112 [-]: JMP       1167         ; PC := 1167
+1113 [-]: GETUPVAL  R65 U3       ; R65 := U3
+1114 [-]: GETTABLE  R65 R65 K19  ; R65 := R65["0xF81722A2"]
+1115 [-]: EQ        1 R3 K167    ; if R3 == "0x1" then PC := 1118
+1116 [-]: JMP       1118         ; PC := 1118
+1117 [-]: MOVE      R66 R0       ; R66 := R0
+1118 [-]: MOVE      R66 R1       ; R66 := R1
+1119 [-]: LOADK     R67 K168     ; R67 := 10
+1120 [-]: LOADK     R68 K30      ; R68 := 0
+1121 [-]: CALL      R65 4 2      ; R65 := R65(R66,R67,R68)
+1122 [-]: GETUPVAL  R66 U0       ; R66 := U0
+1123 [-]: GETTABLE  R66 R66 K169 ; R66 := R66["mLevelMin"]
+1124 [-]: ADD       R66 R66 R65  ; R66 := R66 + R65
+1125 [-]: LOADK     R67 K170     ; R67 := "-"
+1126 [-]: GETUPVAL  R68 U0       ; R68 := U0
+1127 [-]: GETTABLE  R68 R68 K171 ; R68 := R68["mLevelMax"]
+1128 [-]: ADD       R68 R68 R65  ; R68 := R68 + R65
+1129 [-]: CONCAT    R66 R66 R68  ; R66 := R66 .. R67 .. R68
+1130 [-]: GETUPVAL  R67 U0       ; R67 := U0
+1131 [-]: GETTABLE  R67 R67 K172 ; R67 := R67["mConclaveMax"]
+1132 [-]: LT        0 K30 R67    ; if 0 >= R67 then PC := 1144
+1133 [-]: JMP       1144         ; PC := 1144
+1134 [-]: MOVE      R67 R66      ; R67 := R66
+1135 [-]: LOADK     R68 K173     ; R68 := "  "
+1136 [-]: GETGLOBAL R69 K23      ; R69 := mMovie
+1137 [-]: SELF      R69 R69 K24  ; R70 := R69; R69 := R69["0x5DB0BD4"]
+1138 [-]: LOADK     R71 K174     ; R71 := "<CONCLAVE>"
+1139 [-]: MOVE      R72 R1       ; R72 := R1
+1140 [-]: CALL      R69 4 2      ; R69 := R69(R70,R71,R72)
+1141 [-]: GETUPVAL  R70 U0       ; R70 := U0
+1142 [-]: GETTABLE  R70 R70 K172 ; R70 := R70["mConclaveMax"]
+1143 [-]: CONCAT    R66 R67 R70  ; R66 := R67 .. R68 .. R69 .. R70
+1144 [-]: MOVE      R67 R29      ; R67 := R29
+1145 [-]: LOADK     R68 K175     ; R68 := "/Lotus/Language/Menu/MissionBoard_Level"
+1146 [-]: MOVE      R69 R66      ; R69 := R66
+1147 [-]: CALL      R67 3 1      ; R67(R68,R69)
+1148 [-]: GETUPVAL  R67 U0       ; R67 := U0
+1149 [-]: GETTABLE  R67 R67 K57  ; R67 := R67["mMission"]
+1150 [-]: GETTABLE  R67 R67 K119 ; R67 := R67["missionType"]
+1151 [-]: GETGLOBAL R68 K27      ; R68 := Lotus_Game
+1152 [-]: GETTABLE  R68 R68 K120 ; R68 := R68["MT_RAILJACK"]
+1153 [-]: EQ        0 R67 R68    ; if R67 ~= R68 then PC := 1167
+1154 [-]: JMP       1167         ; PC := 1167
+1155 [-]: GETUPVAL  R67 U0       ; R67 := U0
+1156 [-]: GETTABLE  R67 R67 K57  ; R67 := R67["mMission"]
+1157 [-]: GETTABLE  R67 R67 K176 ; R67 := R67["minSpaceEnemyLevel"]
+1158 [-]: LOADK     R68 K170     ; R68 := "-"
+1159 [-]: GETUPVAL  R69 U0       ; R69 := U0
+1160 [-]: GETTABLE  R69 R69 K57  ; R69 := R69["mMission"]
+1161 [-]: GETTABLE  R69 R69 K177 ; R69 := R69["maxSpaceEnemyLevel"]
+1162 [-]: CONCAT    R67 R67 R69  ; R67 := R67 .. R68 .. R69
+1163 [-]: MOVE      R68 R29      ; R68 := R29
+1164 [-]: LOADK     R69 K178     ; R69 := "/Lotus/Language/Menu/MissionBoard_SpaceLevel"
+1165 [-]: MOVE      R70 R67      ; R70 := R67
+1166 [-]: CALL      R68 3 1      ; R68(R69,R70)
+1167 [-]: GETGLOBAL R68 K100     ; R68 := 0x400E7765
+1168 [-]: GETUPVAL  R69 U0       ; R69 := U0
+1169 [-]: GETTABLE  R69 R69 K57  ; R69 := R69["mMission"]
+1170 [-]: GETTABLE  R69 R69 K179 ; R69 := R69["exclusiveWeapon"]
+1171 [-]: CALL      R68 2 2      ; R68 := R68(R69)
+1172 [-]: TEST      R68 1        ; if R68 then PC := 1216
+1173 [-]: JMP       1216         ; PC := 1216
+1174 [-]: GETGLOBAL R68 K11      ; R68 := 0xE6DC43B0
+1175 [-]: GETGLOBAL R69 K0       ; R69 := 0x9FAED6BC
+1176 [-]: GETGLOBAL R70 K180     ; R70 := 0x7C282057
+1177 [-]: GETUPVAL  R71 U0       ; R71 := U0
+1178 [-]: GETTABLE  R71 R71 K57  ; R71 := R71["mMission"]
+1179 [-]: GETTABLE  R71 R71 K179 ; R71 := R71["exclusiveWeapon"]
+1180 [-]: CALL      R70 2 2      ; R70 := R70(R71)
+1181 [-]: SELF      R70 R70 K181 ; R71 := R70; R70 := R70["0x616C74B6"]
+1182 [-]: CALL      R70 2 0      ; R70,... := R70(R71)
+1183 [-]: CALL      R69 0 2      ; R69 := R69(R70,...)
+1184 [-]: MOVE      R70 R0       ; R70 := R0
+1185 [-]: CALL      R68 3 2      ; R68 := R68(R69,R70)
+1186 [-]: GETGLOBAL R69 K11      ; R69 := 0xE6DC43B0
+1187 [-]: LOADK     R70 K182     ; R70 := "/Lotus/Language/Menu/Lobby_RestrictionDesc"
+1188 [-]: NEWTABLE  R71 0 1      ; R71 := {}
+1189 [-]: SETTABLE  R71 K183 R68 ; R71["ITEM"] := R68
+1190 [-]: CALL      R69 3 2      ; R69 := R69(R70,R71)
+1191 [-]: GETUPVAL  R70 U0       ; R70 := U0
+1192 [-]: GETTABLE  R70 R70 K53  ; R70 := R70["mGoalInfo"]
+1193 [-]: TEST      R70 0        ; if not R70 then PC := 1211
+1194 [-]: JMP       1211         ; PC := 1211
+1195 [-]: GETUPVAL  R70 U0       ; R70 := U0
+1196 [-]: GETTABLE  R70 R70 K53  ; R70 := R70["mGoalInfo"]
+1197 [-]: GETTABLE  R70 R70 K47  ; R70 := R70["mTag"]
+1198 [-]: GETUPVAL  R71 U8       ; R71 := U8
+1199 [-]: GETTABLE  R71 R71 K184 ; R71 := R71["MACHETE_MAYHEM"]
+1200 [-]: EQ        0 R70 R71    ; if R70 ~= R71 then PC := 1211
+1201 [-]: JMP       1211         ; PC := 1211
+1202 [-]: GETGLOBAL R70 K11      ; R70 := 0xE6DC43B0
+1203 [-]: LOADK     R71 K185     ; R71 := "/Lotus/Language/Menu/EnergyRestrictionDesc"
+1204 [-]: NEWTABLE  R72 0 1      ; R72 := {}
+1205 [-]: SETTABLE  R72 K186 K187; R72["AMOUNT"] := 25
+1206 [-]: CALL      R70 3 2      ; R70 := R70(R71,R72)
+1207 [-]: MOVE      R71 R69      ; R71 := R69
+1208 [-]: LOADK     R72 K70      ; R72 := ", "
+1209 [-]: MOVE      R73 R70      ; R73 := R70
+1210 [-]: CONCAT    R69 R71 R73  ; R69 := R71 .. R72 .. R73
+1211 [-]: MOVE      R71 R29      ; R71 := R29
+1212 [-]: LOADK     R72 K188     ; R72 := "/Lotus/Language/Menu/Lobby_Restriction"
+1213 [-]: MOVE      R73 R69      ; R73 := R69
+1214 [-]: CALL      R71 3 1      ; R71(R72,R73)
+1215 [-]: JMP       1324         ; PC := 1324
+1216 [-]: GETGLOBAL R71 K100     ; R71 := 0x400E7765
+1217 [-]: GETUPVAL  R72 U0       ; R72 := U0
+1218 [-]: GETTABLE  R72 R72 K57  ; R72 := R72["mMission"]
+1219 [-]: GETTABLE  R72 R72 K189 ; R72 := R72["miscItemFee"]
+1220 [-]: GETTABLE  R72 R72 K190 ; R72 := R72["mItemType"]
+1221 [-]: CALL      R71 2 2      ; R71 := R71(R72)
+1222 [-]: TEST      R71 1        ; if R71 then PC := 1324
+1223 [-]: JMP       1324         ; PC := 1324
+1224 [-]: EQ        0 R15 K22    ; if R15 ~= nil then PC := 1324
+1225 [-]: JMP       1324         ; PC := 1324
+1226 [-]: GETUPVAL  R71 U0       ; R71 := U0
+1227 [-]: GETTABLE  R71 R71 K57  ; R71 := R71["mMission"]
+1228 [-]: GETTABLE  R71 R71 K189 ; R71 := R71["miscItemFee"]
+1229 [-]: GETTABLE  R71 R71 K190 ; R71 := R71["mItemType"]
+1230 [-]: GETGLOBAL R72 K0       ; R72 := 0x9FAED6BC
+1231 [-]: GETUPVAL  R73 U0       ; R73 := U0
+1232 [-]: GETTABLE  R73 R73 K57  ; R73 := R73["mMission"]
+1233 [-]: GETTABLE  R73 R73 K189 ; R73 := R73["miscItemFee"]
+1234 [-]: GETTABLE  R73 R73 K190 ; R73 := R73["mItemType"]
+1235 [-]: SELF      R73 R73 K191 ; R74 := R73; R73 := R73["0x1B252E3C"]
+1236 [-]: CALL      R73 2 0      ; R73,... := R73(R74)
+1237 [-]: CALL      R72 0 2      ; R72 := R72(R73,...)
+1238 [-]: GETGLOBAL R73 K13      ; R73 := _T
+1239 [-]: GETTABLE  R73 R73 K192 ; R73 := R73["OwnedFeeItems"]
+1240 [-]: TEST      R73 1        ; if R73 then PC := 1245
+1241 [-]: JMP       1245         ; PC := 1245
+1242 [-]: GETGLOBAL R73 K13      ; R73 := _T
+1243 [-]: NEWTABLE  R74 0 0      ; R74 := {}
+1244 [-]: SETTABLE  R73 K192 R74 ; R73["OwnedFeeItems"] := R74
+1245 [-]: GETGLOBAL R73 K13      ; R73 := _T
+1246 [-]: GETTABLE  R73 R73 K192 ; R73 := R73["OwnedFeeItems"]
+1247 [-]: GETTABLE  R73 R73 R72  ; R73 := R73[R72]
+1248 [-]: TEST      R73 1        ; if R73 then PC := 1301
+1249 [-]: JMP       1301         ; PC := 1301
+1250 [-]: GETGLOBAL R73 K13      ; R73 := _T
+1251 [-]: GETTABLE  R73 R73 K192 ; R73 := R73["OwnedFeeItems"]
+1252 [-]: NEWTABLE  R74 0 0      ; R74 := {}
+1253 [-]: SETTABLE  R73 R72 R74  ; R73[R72] := R74
+1254 [-]: GETGLOBAL R73 K13      ; R73 := _T
+1255 [-]: GETTABLE  R73 R73 K192 ; R73 := R73["OwnedFeeItems"]
+1256 [-]: GETTABLE  R73 R73 R72  ; R73 := R73[R72]
+1257 [-]: SETTABLE  R73 K193 K30 ; R73["Count"] := 0
+1258 [-]: GETGLOBAL R73 K13      ; R73 := _T
+1259 [-]: GETTABLE  R73 R73 K192 ; R73 := R73["OwnedFeeItems"]
+1260 [-]: GETTABLE  R73 R73 R72  ; R73 := R73[R72]
+1261 [-]: GETGLOBAL R74 K11      ; R74 := 0xE6DC43B0
+1262 [-]: GETGLOBAL R75 K0       ; R75 := 0x9FAED6BC
+1263 [-]: GETGLOBAL R76 K180     ; R76 := 0x7C282057
+1264 [-]: MOVE      R77 R71      ; R77 := R71
+1265 [-]: CALL      R76 2 2      ; R76 := R76(R77)
+1266 [-]: SELF      R76 R76 K181 ; R77 := R76; R76 := R76["0x616C74B6"]
+1267 [-]: CALL      R76 2 0      ; R76,... := R76(R77)
+1268 [-]: CALL      R75 0 2      ; R75 := R75(R76,...)
+1269 [-]: MOVE      R76 R0       ; R76 := R0
+1270 [-]: CALL      R74 3 2      ; R74 := R74(R75,R76)
+1271 [-]: SETTABLE  R73 K194 R74 ; R73["LocText"] := R74
+1272 [-]: GETGLOBAL R73 K195     ; R73 := gPlayerProfileMgr
+1273 [-]: SELF      R73 R73 K196 ; R74 := R73; R73 := R73["0x21EF7B1A"]
+1274 [-]: LOADK     R75 K30      ; R75 := 0
+1275 [-]: CALL      R73 3 2      ; R73 := R73(R74,R75)
+1276 [-]: SELF      R73 R73 K197 ; R74 := R73; R73 := R73["0x654F1092"]
+1277 [-]: CALL      R73 2 2      ; R73 := R73(R74)
+1278 [-]: SELF      R73 R73 K198 ; R74 := R73; R73 := R73["0x6F2E05FD"]
+1279 [-]: CALL      R73 2 2      ; R73 := R73(R74)
+1280 [-]: SELF      R73 R73 K199 ; R74 := R73; R73 := R73["0x3329FBFF"]
+1281 [-]: CALL      R73 2 2      ; R73 := R73(R74)
+1282 [-]: LOADK     R74 K36      ; R74 := 1
+1283 [-]: LEN       R75 R73      ; R75 := # R73
+1284 [-]: LOADK     R76 K36      ; R76 := 1
+1285 [-]: FORPREP   R74 1300     ; R74 -= R76; PC := 1300
+1286 [-]: GETTABLE  R78 R73 R77  ; R78 := R73[R77]
+1287 [-]: GETTABLE  R78 R78 K190 ; R78 := R78["mItemType"]
+1288 [-]: SELF      R78 R78 K200 ; R79 := R78; R78 := R78["0x8B598ED4"]
+1289 [-]: MOVE      R80 R71      ; R80 := R71
+1290 [-]: CALL      R78 3 2      ; R78 := R78(R79,R80)
+1291 [-]: TEST      R78 0        ; if not R78 then PC := 1300
+1292 [-]: JMP       1300         ; PC := 1300
+1293 [-]: GETGLOBAL R78 K13      ; R78 := _T
+1294 [-]: GETTABLE  R78 R78 K192 ; R78 := R78["OwnedFeeItems"]
+1295 [-]: GETTABLE  R78 R78 R72  ; R78 := R78[R72]
+1296 [-]: GETTABLE  R79 R73 R77  ; R79 := R73[R77]
+1297 [-]: GETTABLE  R79 R79 K201 ; R79 := R79["mItemCount"]
+1298 [-]: SETTABLE  R78 K193 R79 ; R78["Count"] := R79
+1299 [-]: JMP       1301         ; PC := 1301
+1300 [-]: FORLOOP   R74 1286     ; R74 += R76; if R74 <= R75 then begin PC := 1286; R77 := R74 end
+1301 [-]: GETGLOBAL R78 K11      ; R78 := 0xE6DC43B0
+1302 [-]: LOADK     R79 K202     ; R79 := "/Lotus/Language/Menu/Lobby_CountedItemRestrictionDesc"
+1303 [-]: NEWTABLE  R80 0 3      ; R80 := {}
+1304 [-]: GETGLOBAL R81 K13      ; R81 := _T
+1305 [-]: GETTABLE  R81 R81 K192 ; R81 := R81["OwnedFeeItems"]
+1306 [-]: GETTABLE  R81 R81 R72  ; R81 := R81[R72]
+1307 [-]: GETTABLE  R81 R81 K194 ; R81 := R81["LocText"]
+1308 [-]: SETTABLE  R80 K183 R81 ; R80["ITEM"] := R81
+1309 [-]: GETUPVAL  R81 U0       ; R81 := U0
+1310 [-]: GETTABLE  R81 R81 K57  ; R81 := R81["mMission"]
+1311 [-]: GETTABLE  R81 R81 K189 ; R81 := R81["miscItemFee"]
+1312 [-]: GETTABLE  R81 R81 K201 ; R81 := R81["mItemCount"]
+1313 [-]: SETTABLE  R80 K203 R81 ; R80["COUNT"] := R81
+1314 [-]: GETGLOBAL R81 K13      ; R81 := _T
+1315 [-]: GETTABLE  R81 R81 K192 ; R81 := R81["OwnedFeeItems"]
+1316 [-]: GETTABLE  R81 R81 R72  ; R81 := R81[R72]
+1317 [-]: GETTABLE  R81 R81 K193 ; R81 := R81["Count"]
+1318 [-]: SETTABLE  R80 K204 R81 ; R80["OWNED"] := R81
+1319 [-]: CALL      R78 3 2      ; R78 := R78(R79,R80)
+1320 [-]: MOVE      R79 R29      ; R79 := R29
+1321 [-]: LOADK     R80 K8       ; R80 := ""
+1322 [-]: MOVE      R81 R78      ; R81 := R78
+1323 [-]: CALL      R79 3 1      ; R79(R80,R81)
+1324 [-]: GETTABLE  R79 R2 K119  ; R79 := R2["missionType"]
+1325 [-]: GETGLOBAL R80 K27      ; R80 := Lotus_Game
+1326 [-]: GETTABLE  R80 R80 K205 ; R80 := R80["MT_ARENA"]
+1327 [-]: EQ        0 R79 R80    ; if R79 ~= R80 then PC := 1380
+1328 [-]: JMP       1380         ; PC := 1380
+1329 [-]: GETTABLE  R79 R2 K90   ; R79 := R2["faction"]
+1330 [-]: GETGLOBAL R80 K27      ; R80 := Lotus_Game
+1331 [-]: GETTABLE  R80 R80 K206 ; R80 := R80["FC_CORPUS"]
+1332 [-]: EQ        0 R79 R80    ; if R79 ~= R80 then PC := 1380
+1333 [-]: JMP       1380         ; PC := 1380
+1334 [-]: SELF      R79 R2 K207  ; R80 := R2; R79 := R2["0x62A99A22"]
+1335 [-]: CALL      R79 2 2      ; R79 := R79(R80)
+1336 [-]: LEN       R80 R79      ; R80 := # R79
+1337 [-]: LT        0 K30 R80    ; if 0 >= R80 then PC := 1380
+1338 [-]: JMP       1380         ; PC := 1380
+1339 [-]: GETUPVAL  R80 U3       ; R80 := U3
+1340 [-]: GETTABLE  R80 R80 K208 ; R80 := R80["0x7E197415"]
+1341 [-]: GETTABLE  R81 R79 K36  ; R81 := R79[1]
+1342 [-]: GETTABLE  R81 R81 K209 ; R81 := R81["mCreditsFee"]
+1343 [-]: CALL      R80 2 2      ; R80 := R80(R81)
+1344 [-]: LOADK     R81 K30      ; R81 := 0
+1345 [-]: GETGLOBAL R82 K100     ; R82 := 0x400E7765
+1346 [-]: GETGLOBAL R83 K101     ; R83 := gGameData
+1347 [-]: CALL      R82 2 2      ; R82 := R82(R83)
+1348 [-]: TEST      R82 1        ; if R82 then PC := 1357
+1349 [-]: JMP       1357         ; PC := 1357
+1350 [-]: GETUPVAL  R82 U3       ; R82 := U3
+1351 [-]: GETTABLE  R82 R82 K210 ; R82 := R82["0x1C719E76"]
+1352 [-]: GETGLOBAL R83 K101     ; R83 := gGameData
+1353 [-]: SELF      R83 R83 K211 ; R84 := R83; R83 := R83["0xCD5A25A6"]
+1354 [-]: CALL      R83 2 0      ; R83,... := R83(R84)
+1355 [-]: CALL      R82 0 2      ; R82 := R82(R83,...)
+1356 [-]: MOVE      R81 R82      ; R81 := R82
+1357 [-]: GETGLOBAL R82 K23      ; R82 := mMovie
+1358 [-]: SELF      R82 R82 K24  ; R83 := R82; R82 := R82["0x5DB0BD4"]
+1359 [-]: LOADK     R84 K212     ; R84 := "/Lotus/Language/Menu/CreditsFormatted"
+1360 [-]: MOVE      R85 R1       ; R85 := R1
+1361 [-]: NEWTABLE  R86 0 1      ; R86 := {}
+1362 [-]: SETTABLE  R86 K213 R80 ; R86["CREDITS"] := R80
+1363 [-]: CALL      R82 5 2      ; R82 := R82(R83,R84,R85,R86)
+1364 [-]: MOVE      R83 R29      ; R83 := R29
+1365 [-]: LOADK     R84 K214     ; R84 := "/Lotus/Language/Menu/Lobby_GreedCreditsRequirementDesc"
+1366 [-]: MOVE      R85 R82      ; R85 := R82
+1367 [-]: CALL      R83 3 1      ; R83(R84,R85)
+1368 [-]: GETGLOBAL R83 K23      ; R83 := mMovie
+1369 [-]: SELF      R83 R83 K24  ; R84 := R83; R83 := R83["0x5DB0BD4"]
+1370 [-]: LOADK     R85 K215     ; R85 := "/Lotus/Language/Menu/CreditsFormattedOwned"
+1371 [-]: MOVE      R86 R1       ; R86 := R1
+1372 [-]: NEWTABLE  R87 0 1      ; R87 := {}
+1373 [-]: SETTABLE  R87 K204 R81 ; R87["OWNED"] := R81
+1374 [-]: CALL      R83 5 2      ; R83 := R83(R84,R85,R86,R87)
+1375 [-]: MOVE      R82 R83      ; R82 := R83
+1376 [-]: MOVE      R83 R29      ; R83 := R29
+1377 [-]: LOADK     R84 K216     ; R84 := "/Lotus/Language/Menu/Lobby_GreedCreditsOwnedRequirementDesc"
+1378 [-]: MOVE      R85 R82      ; R85 := R82
+1379 [-]: CALL      R83 3 1      ; R83(R84,R85)
+1380 [-]: GETTABLE  R83 R2 K217  ; R83 := R2["skillReqs"]
+1381 [-]: LEN       R83 R83      ; R83 := # R83
+1382 [-]: LT        0 K30 R83    ; if 0 >= R83 then PC := 1422
 1383 [-]: JMP       1422         ; PC := 1422
-1384 [-]: NEWTABLE  R86 6 0      ; R86 := {}
-1385 [-]: LOADK     R87 K218     ; R87 := "Intrinsics"
-1386 [-]: LOADK     R88 K219     ; R88 := "RailjackIntrinsicPilot"
-1387 [-]: LOADK     R89 K220     ; R89 := "RailjackIntrinsicGunner"
-1388 [-]: LOADK     R90 K221     ; R90 := "RailjackIntrinsicTactic"
-1389 [-]: LOADK     R91 K222     ; R91 := "RailjackIntrinsicEngineer"
-1390 [-]: LOADK     R92 K223     ; R92 := "RailjackIntrinsicCommand"
-1391 [-]: SETLIST   R86 6 1      ; R86[(1-1)*FPF+i] := R(86+i), 1 <= i <= 6
-1392 [-]: LOADK     R87 K8       ; R87 := ""
-1393 [-]: GETGLOBAL R88 K224     ; R88 := 0xECFDD17
-1394 [-]: GETTABLE  R89 R2 K217  ; R89 := R2["skillReqs"]
-1395 [-]: CALL      R88 2 4      ; R88,R89,R90 := R88(R89)
+1384 [-]: NEWTABLE  R83 6 0      ; R83 := {}
+1385 [-]: LOADK     R84 K218     ; R84 := "Intrinsics"
+1386 [-]: LOADK     R85 K219     ; R85 := "RailjackIntrinsicPilot"
+1387 [-]: LOADK     R86 K220     ; R86 := "RailjackIntrinsicGunner"
+1388 [-]: LOADK     R87 K221     ; R87 := "RailjackIntrinsicTactic"
+1389 [-]: LOADK     R88 K222     ; R88 := "RailjackIntrinsicEngineer"
+1390 [-]: LOADK     R89 K223     ; R89 := "RailjackIntrinsicCommand"
+1391 [-]: SETLIST   R83 6 1      ; R83[(1-1)*FPF+i] := R(83+i), 1 <= i <= 6
+1392 [-]: LOADK     R84 K8       ; R84 := ""
+1393 [-]: GETGLOBAL R85 K224     ; R85 := 0xECFDD17
+1394 [-]: GETTABLE  R86 R2 K217  ; R86 := R2["skillReqs"]
+1395 [-]: CALL      R85 2 4      ; R85,R86,R87 := R85(R86)
 1396 [-]: JMP       1416         ; PC := 1416
-1397 [-]: GETTABLE  R93 R92 K225 ; R93 := R92["skill"]
-1398 [-]: ADD       R93 R93 K36  ; R93 := R93 + 1
-1399 [-]: GETTABLE  R93 R86 R93  ; R93 := R86[R93]
-1400 [-]: GETGLOBAL R94 K11      ; R94 := 0xE6DC43B0
-1401 [-]: LOADK     R95 K226     ; R95 := "/Lotus/Language/Intrinsics/"
-1402 [-]: MOVE      R96 R93      ; R96 := R93
-1403 [-]: CONCAT    R95 R95 R96  ; R95 := R95 .. R96
-1404 [-]: LOADNIL   R96 R96      ; R96 := nil
-1405 [-]: CALL      R94 3 2      ; R94 := R94(R95,R96)
-1406 [-]: GETGLOBAL R95 K9       ; R95 := string
-1407 [-]: GETTABLE  R95 R95 K10  ; R95 := R95["0x639C642A"]
-1408 [-]: MOVE      R96 R87      ; R96 := R87
-1409 [-]: MOVE      R97 R94      ; R97 := R94
-1410 [-]: LOADK     R98 K60      ; R98 := " "
-1411 [-]: GETTABLE  R99 R92 K227 ; R99 := R92["req"]
-1412 [-]: LOADK     R100 K60     ; R100 := " "
-1413 [-]: CONCAT    R96 R96 R100 ; R96 := R96 .. R97 .. R98 .. R99 .. R100
-1414 [-]: CALL      R95 2 2      ; R95 := R95(R96)
-1415 [-]: MOVE      R87 R95      ; R87 := R95
-1416 [-]: TFORLOOP  R88 2        ; R91,R92 :=  R88(R89,R90); if R91 ~= nil then begin PC = 1397; R90 := R91 end
+1397 [-]: GETTABLE  R90 R89 K225 ; R90 := R89["skill"]
+1398 [-]: ADD       R90 R90 K36  ; R90 := R90 + 1
+1399 [-]: GETTABLE  R90 R83 R90  ; R90 := R83[R90]
+1400 [-]: GETGLOBAL R91 K11      ; R91 := 0xE6DC43B0
+1401 [-]: LOADK     R92 K226     ; R92 := "/Lotus/Language/Intrinsics/"
+1402 [-]: MOVE      R93 R90      ; R93 := R90
+1403 [-]: CONCAT    R92 R92 R93  ; R92 := R92 .. R93
+1404 [-]: LOADNIL   R93 R93      ; R93 := nil
+1405 [-]: CALL      R91 3 2      ; R91 := R91(R92,R93)
+1406 [-]: GETGLOBAL R92 K9       ; R92 := string
+1407 [-]: GETTABLE  R92 R92 K10  ; R92 := R92["0x639C642A"]
+1408 [-]: MOVE      R93 R84      ; R93 := R84
+1409 [-]: MOVE      R94 R91      ; R94 := R91
+1410 [-]: LOADK     R95 K60      ; R95 := " "
+1411 [-]: GETTABLE  R96 R89 K227 ; R96 := R89["req"]
+1412 [-]: LOADK     R97 K60      ; R97 := " "
+1413 [-]: CONCAT    R93 R93 R97  ; R93 := R93 .. R94 .. R95 .. R96 .. R97
+1414 [-]: CALL      R92 2 2      ; R92 := R92(R93)
+1415 [-]: MOVE      R84 R92      ; R84 := R92
+1416 [-]: TFORLOOP  R85 2        ; R88,R89 :=  R85(R86,R87); if R88 ~= nil then begin PC = 1397; R87 := R88 end
 1417 [-]: JMP       1397         ; PC := 1397
-1418 [-]: MOVE      R95 R30      ; R95 := R30
-1419 [-]: LOADK     R96 K228     ; R96 := "/Game/Requires"
-1420 [-]: MOVE      R97 R87      ; R97 := R87
-1421 [-]: CALL      R95 3 1      ; R95(R96,R97)
-1422 [-]: GETGLOBAL R95 K27      ; R95 := Lotus_Game
-1423 [-]: GETTABLE  R95 R95 K229 ; R95 := R95["NT_CLAN"]
-1424 [-]: EQ        0 R7 R95     ; if R7 ~= R95 then PC := 1459
+1418 [-]: MOVE      R92 R29      ; R92 := R29
+1419 [-]: LOADK     R93 K228     ; R93 := "/Game/Requires"
+1420 [-]: MOVE      R94 R84      ; R94 := R84
+1421 [-]: CALL      R92 3 1      ; R92(R93,R94)
+1422 [-]: GETGLOBAL R92 K27      ; R92 := Lotus_Game
+1423 [-]: GETTABLE  R92 R92 K229 ; R92 := R92["NT_CLAN"]
+1424 [-]: EQ        0 R7 R92     ; if R7 ~= R92 then PC := 1459
 1425 [-]: JMP       1459         ; PC := 1459
-1426 [-]: SELF      R95 R2 K230  ; R96 := R2; R95 := R2["0xC2648A91"]
-1427 [-]: CALL      R95 2 2      ; R95 := R95(R96)
-1428 [-]: GETGLOBAL R96 K100     ; R96 := 0x400E7765
-1429 [-]: MOVE      R97 R95      ; R97 := R95
-1430 [-]: CALL      R96 2 2      ; R96 := R96(R97)
-1431 [-]: TEST      R96 1        ; if R96 then PC := 1459
+1426 [-]: SELF      R92 R2 K230  ; R93 := R2; R92 := R2["0xC2648A91"]
+1427 [-]: CALL      R92 2 2      ; R92 := R92(R93)
+1428 [-]: GETGLOBAL R93 K100     ; R93 := 0x400E7765
+1429 [-]: MOVE      R94 R92      ; R94 := R92
+1430 [-]: CALL      R93 2 2      ; R93 := R93(R94)
+1431 [-]: TEST      R93 1        ; if R93 then PC := 1459
 1432 [-]: JMP       1459         ; PC := 1459
-1433 [-]: LOADK     R96 K8       ; R96 := ""
-1434 [-]: LOADK     R97 K36      ; R97 := 1
-1435 [-]: LEN       R98 R95      ; R98 := # R95
-1436 [-]: LOADK     R99 K36      ; R99 := 1
-1437 [-]: FORPREP   R97 1454     ; R97 -= R99; PC := 1454
-1438 [-]: MOVE      R101 R96     ; R101 := R96
-1439 [-]: GETTABLE  R102 R95 R100; R102 := R95[R100]
-1440 [-]: SELF      R102 R102 K231; R103 := R102; R102 := R102["0x2683916D"]
-1441 [-]: MOVE      R104 R1      ; R104 := R1
-1442 [-]: CALL      R102 3 2     ; R102 := R102(R103,R104)
-1443 [-]: GETUPVAL  R103 U3      ; R103 := U3
-1444 [-]: GETTABLE  R103 R103 K19; R103 := R103["0xF81722A2"]
-1445 [-]: LEN       R104 R95     ; R104 := # R95
-1446 [-]: EQ        1 R100 R104  ; if R100 == R104 then PC := 1449
+1433 [-]: LOADK     R93 K8       ; R93 := ""
+1434 [-]: LOADK     R94 K36      ; R94 := 1
+1435 [-]: LEN       R95 R92      ; R95 := # R92
+1436 [-]: LOADK     R96 K36      ; R96 := 1
+1437 [-]: FORPREP   R94 1454     ; R94 -= R96; PC := 1454
+1438 [-]: MOVE      R98 R93      ; R98 := R93
+1439 [-]: GETTABLE  R99 R92 R97  ; R99 := R92[R97]
+1440 [-]: SELF      R99 R99 K231 ; R100 := R99; R99 := R99["0x2683916D"]
+1441 [-]: MOVE      R101 R1      ; R101 := R1
+1442 [-]: CALL      R99 3 2      ; R99 := R99(R100,R101)
+1443 [-]: GETUPVAL  R100 U3      ; R100 := U3
+1444 [-]: GETTABLE  R100 R100 K19; R100 := R100["0xF81722A2"]
+1445 [-]: LEN       R101 R92     ; R101 := # R92
+1446 [-]: EQ        1 R97 R101   ; if R97 == R101 then PC := 1449
 1447 [-]: JMP       1449         ; PC := 1449
-1448 [-]: MOVE      R104 R0      ; R104 := R0
-1449 [-]: MOVE      R104 R1      ; R104 := R1
-1450 [-]: LOADK     R105 K8      ; R105 := ""
-1451 [-]: LOADK     R106 K232    ; R106 := "<br>"
-1452 [-]: CALL      R103 4 2     ; R103 := R103(R104,R105,R106)
-1453 [-]: CONCAT    R96 R101 R103; R96 := R101 .. R102 .. R103
-1454 [-]: FORLOOP   R97 1438     ; R97 += R99; if R97 <= R98 then begin PC := 1438; R100 := R97 end
-1455 [-]: MOVE      R101 R30     ; R101 := R30
-1456 [-]: LOADK     R102 K233    ; R102 := "/Lotus/Language/Menu/BonusBounty"
-1457 [-]: MOVE      R103 R96     ; R103 := R96
-1458 [-]: CALL      R101 3 1     ; R101(R102,R103)
+1448 [-]: MOVE      R101 R0      ; R101 := R0
+1449 [-]: MOVE      R101 R1      ; R101 := R1
+1450 [-]: LOADK     R102 K8      ; R102 := ""
+1451 [-]: LOADK     R103 K232    ; R103 := "<br>"
+1452 [-]: CALL      R100 4 2     ; R100 := R100(R101,R102,R103)
+1453 [-]: CONCAT    R93 R98 R100 ; R93 := R98 .. R99 .. R100
+1454 [-]: FORLOOP   R94 1438     ; R94 += R96; if R94 <= R95 then begin PC := 1438; R97 := R94 end
+1455 [-]: MOVE      R98 R29      ; R98 := R29
+1456 [-]: LOADK     R99 K233     ; R99 := "/Lotus/Language/Menu/BonusBounty"
+1457 [-]: MOVE      R100 R93     ; R100 := R93
+1458 [-]: CALL      R98 3 1      ; R98(R99,R100)
 1459 [-]: EQ        1 R15 K22    ; if R15 == nil then PC := 1489
 1460 [-]: JMP       1489         ; PC := 1489
-1461 [-]: MOVE      R101 R30     ; R101 := R30
-1462 [-]: LOADK     R102 K234    ; R102 := "/Lotus/Language/Menu/MissionBoard_InvasionStatus"
-1463 [-]: MOVE      R103 R18     ; R103 := R18
-1464 [-]: CALL      R101 3 1     ; R101(R102,R103)
-1465 [-]: MOVE      R101 R19     ; R101 := R19
-1466 [-]: LOADK     R102 K114    ; R102 := "/"
-1467 [-]: MOVE      R103 R20     ; R103 := R20
-1468 [-]: CONCAT    R101 R101 R103; R101 := R101 .. R102 .. R103
+1461 [-]: MOVE      R98 R29      ; R98 := R29
+1462 [-]: LOADK     R99 K234     ; R99 := "/Lotus/Language/Menu/MissionBoard_InvasionStatus"
+1463 [-]: MOVE      R100 R18     ; R100 := R18
+1464 [-]: CALL      R98 3 1      ; R98(R99,R100)
+1465 [-]: MOVE      R98 R19      ; R98 := R19
+1466 [-]: LOADK     R99 K114     ; R99 := "/"
+1467 [-]: MOVE      R100 R20     ; R100 := R20
+1468 [-]: CONCAT    R98 R98 R100 ; R98 := R98 .. R99 .. R100
 1469 [-]: TEST      R21 0        ; if not R21 then PC := 1481
 1470 [-]: JMP       1481         ; PC := 1481
 1471 [-]: TEST      R23 1        ; if R23 then PC := 1481
 1472 [-]: JMP       1481         ; PC := 1481
-1473 [-]: MOVE      R102 R101    ; R102 := R101
-1474 [-]: LOADK     R103 K60     ; R103 := " "
-1475 [-]: GETGLOBAL R104 K23     ; R104 := mMovie
-1476 [-]: SELF      R104 R104 K24; R105 := R104; R104 := R104["0x5DB0BD4"]
-1477 [-]: MOVE      R106 R22     ; R106 := R22
-1478 [-]: MOVE      R107 R0      ; R107 := R0
-1479 [-]: CALL      R104 4 2     ; R104 := R104(R105,R106,R107)
-1480 [-]: CONCAT    R101 R102 R104; R101 := R102 .. R103 .. R104
-1481 [-]: MOVE      R102 R30     ; R102 := R30
-1482 [-]: LOADK     R103 K235    ; R103 := "/Lotus/Language/Menu/MissionBoard_InvasionCompletions"
-1483 [-]: MOVE      R104 R101    ; R104 := R101
-1484 [-]: CALL      R102 3 1     ; R102(R103,R104)
-1485 [-]: MOVE      R102 R30     ; R102 := R30
-1486 [-]: LOADK     R103 K236    ; R103 := "/Lotus/Language/Menu/MissionBoard_InvasionPayment"
-1487 [-]: MOVE      R104 R24     ; R104 := R24
-1488 [-]: CALL      R102 3 1     ; R102(R103,R104)
-1489 [-]: EQ        1 R26 K22    ; if R26 == nil then PC := 1495
+1473 [-]: MOVE      R99 R98      ; R99 := R98
+1474 [-]: LOADK     R100 K60     ; R100 := " "
+1475 [-]: GETGLOBAL R101 K23     ; R101 := mMovie
+1476 [-]: SELF      R101 R101 K24; R102 := R101; R101 := R101["0x5DB0BD4"]
+1477 [-]: MOVE      R103 R22     ; R103 := R22
+1478 [-]: MOVE      R104 R0      ; R104 := R0
+1479 [-]: CALL      R101 4 2     ; R101 := R101(R102,R103,R104)
+1480 [-]: CONCAT    R98 R99 R101 ; R98 := R99 .. R100 .. R101
+1481 [-]: MOVE      R99 R29      ; R99 := R29
+1482 [-]: LOADK     R100 K235    ; R100 := "/Lotus/Language/Menu/MissionBoard_InvasionCompletions"
+1483 [-]: MOVE      R101 R98     ; R101 := R98
+1484 [-]: CALL      R99 3 1      ; R99(R100,R101)
+1485 [-]: MOVE      R99 R29      ; R99 := R29
+1486 [-]: LOADK     R100 K236    ; R100 := "/Lotus/Language/Menu/MissionBoard_InvasionPayment"
+1487 [-]: MOVE      R101 R24     ; R101 := R24
+1488 [-]: CALL      R99 3 1      ; R99(R100,R101)
+1489 [-]: EQ        1 R25 K22    ; if R25 == nil then PC := 1495
 1490 [-]: JMP       1495         ; PC := 1495
-1491 [-]: MOVE      R102 R30     ; R102 := R30
-1492 [-]: LOADK     R103 K118    ; R103 := "/Lotus/Language/Menu/Notification_Expiry_Heading"
-1493 [-]: MOVE      R104 R26     ; R104 := R26
-1494 [-]: CALL      R102 3 1     ; R102(R103,R104)
-1495 [-]: EQ        1 R27 K22    ; if R27 == nil then PC := 1501
+1491 [-]: MOVE      R99 R29      ; R99 := R29
+1492 [-]: LOADK     R100 K118    ; R100 := "/Lotus/Language/Menu/Notification_Expiry_Heading"
+1493 [-]: MOVE      R101 R25     ; R101 := R25
+1494 [-]: CALL      R99 3 1      ; R99(R100,R101)
+1495 [-]: EQ        1 R26 K22    ; if R26 == nil then PC := 1501
 1496 [-]: JMP       1501         ; PC := 1501
-1497 [-]: MOVE      R102 R30     ; R102 := R30
-1498 [-]: LOADK     R103 K237    ; R103 := "/Lotus/Language/Menu/AlertPopup_Rewards"
-1499 [-]: MOVE      R104 R27     ; R104 := R27
-1500 [-]: CALL      R102 3 1     ; R102(R103,R104)
-1501 [-]: EQ        1 R28 K22    ; if R28 == nil then PC := 1510
+1497 [-]: MOVE      R99 R29      ; R99 := R29
+1498 [-]: LOADK     R100 K237    ; R100 := "/Lotus/Language/Menu/AlertPopup_Rewards"
+1499 [-]: MOVE      R101 R26     ; R101 := R26
+1500 [-]: CALL      R99 3 1      ; R99(R100,R101)
+1501 [-]: EQ        1 R27 K22    ; if R27 == nil then PC := 1510
 1502 [-]: JMP       1510         ; PC := 1510
-1503 [-]: MOVE      R102 R30     ; R102 := R30
-1504 [-]: LOADNIL   R103 R103    ; R103 := nil
-1505 [-]: GETGLOBAL R104 K9      ; R104 := string
-1506 [-]: GETTABLE  R104 R104 K10; R104 := R104["0x639C642A"]
-1507 [-]: MOVE      R105 R28     ; R105 := R28
-1508 [-]: CALL      R104 2 0     ; R104,... := R104(R105)
-1509 [-]: CALL      R102 0 1     ; R102(R103,...)
-1510 [-]: GETGLOBAL R102 K100    ; R102 := 0x400E7765
-1511 [-]: GETTABLE  R103 R2 K238 ; R103 := R2["questReq"]
-1512 [-]: CALL      R102 2 2     ; R102 := R102(R103)
-1513 [-]: TEST      R102 1       ; if R102 then PC := 1542
+1503 [-]: MOVE      R99 R29      ; R99 := R29
+1504 [-]: LOADNIL   R100 R100    ; R100 := nil
+1505 [-]: GETGLOBAL R101 K9      ; R101 := string
+1506 [-]: GETTABLE  R101 R101 K10; R101 := R101["0x639C642A"]
+1507 [-]: MOVE      R102 R27     ; R102 := R27
+1508 [-]: CALL      R101 2 0     ; R101,... := R101(R102)
+1509 [-]: CALL      R99 0 1      ; R99(R100,...)
+1510 [-]: GETGLOBAL R99 K100     ; R99 := 0x400E7765
+1511 [-]: GETTABLE  R100 R2 K238 ; R100 := R2["questReq"]
+1512 [-]: CALL      R99 2 2      ; R99 := R99(R100)
+1513 [-]: TEST      R99 1        ; if R99 then PC := 1542
 1514 [-]: JMP       1542         ; PC := 1542
-1515 [-]: GETUPVAL  R102 U1      ; R102 := U1
-1516 [-]: GETTABLE  R102 R102 K239; R102 := R102["0x2AAC7A8C"]
-1517 [-]: GETTABLE  R103 R2 K238 ; R103 := R2["questReq"]
-1518 [-]: CALL      R102 2 2     ; R102 := R102(R103)
-1519 [-]: TEST      R102 1       ; if R102 then PC := 1542
+1515 [-]: GETUPVAL  R99 U1       ; R99 := U1
+1516 [-]: GETTABLE  R99 R99 K239 ; R99 := R99["0x2AAC7A8C"]
+1517 [-]: GETTABLE  R100 R2 K238 ; R100 := R2["questReq"]
+1518 [-]: CALL      R99 2 2      ; R99 := R99(R100)
+1519 [-]: TEST      R99 1        ; if R99 then PC := 1542
 1520 [-]: JMP       1542         ; PC := 1542
-1521 [-]: GETGLOBAL R102 K180    ; R102 := 0x7C282057
-1522 [-]: GETTABLE  R103 R2 K238 ; R103 := R2["questReq"]
-1523 [-]: CALL      R102 2 2     ; R102 := R102(R103)
-1524 [-]: GETGLOBAL R103 K23     ; R103 := mMovie
-1525 [-]: SELF      R103 R103 K24; R104 := R103; R103 := R103["0x5DB0BD4"]
-1526 [-]: GETGLOBAL R105 K0      ; R105 := 0x9FAED6BC
-1527 [-]: SELF      R106 R102 K181; R107 := R102; R106 := R102["0x616C74B6"]
-1528 [-]: CALL      R106 2 0     ; R106,... := R106(R107)
-1529 [-]: CALL      R105 0 2     ; R105 := R105(R106,...)
-1530 [-]: MOVE      R106 R0      ; R106 := R0
-1531 [-]: CALL      R103 4 2     ; R103 := R103(R104,R105,R106)
-1532 [-]: MOVE      R104 R30     ; R104 := R30
-1533 [-]: LOADK     R105 K240    ; R105 := "/Lotus/Language/Menu/MissionLocked"
-1534 [-]: GETGLOBAL R106 K23     ; R106 := mMovie
-1535 [-]: SELF      R106 R106 K24; R107 := R106; R106 := R106["0x5DB0BD4"]
-1536 [-]: LOADK     R108 K241    ; R108 := "/Lotus/Language/Game/MissionNodeQuestRequired"
-1537 [-]: MOVE      R109 R0      ; R109 := R0
-1538 [-]: NEWTABLE  R110 0 1     ; R110 := {}
-1539 [-]: SETTABLE  R110 K242 R103; R110["QUESTNAME"] := R103
-1540 [-]: CALL      R106 5 0     ; R106,... := R106(R107,R108,R109,R110)
-1541 [-]: CALL      R104 0 1     ; R104(R105,...)
+1521 [-]: GETGLOBAL R99 K180     ; R99 := 0x7C282057
+1522 [-]: GETTABLE  R100 R2 K238 ; R100 := R2["questReq"]
+1523 [-]: CALL      R99 2 2      ; R99 := R99(R100)
+1524 [-]: GETGLOBAL R100 K23     ; R100 := mMovie
+1525 [-]: SELF      R100 R100 K24; R101 := R100; R100 := R100["0x5DB0BD4"]
+1526 [-]: GETGLOBAL R102 K0      ; R102 := 0x9FAED6BC
+1527 [-]: SELF      R103 R99 K181; R104 := R99; R103 := R99["0x616C74B6"]
+1528 [-]: CALL      R103 2 0     ; R103,... := R103(R104)
+1529 [-]: CALL      R102 0 2     ; R102 := R102(R103,...)
+1530 [-]: MOVE      R103 R0      ; R103 := R0
+1531 [-]: CALL      R100 4 2     ; R100 := R100(R101,R102,R103)
+1532 [-]: MOVE      R101 R29     ; R101 := R29
+1533 [-]: LOADK     R102 K240    ; R102 := "/Lotus/Language/Menu/MissionLocked"
+1534 [-]: GETGLOBAL R103 K23     ; R103 := mMovie
+1535 [-]: SELF      R103 R103 K24; R104 := R103; R103 := R103["0x5DB0BD4"]
+1536 [-]: LOADK     R105 K241    ; R105 := "/Lotus/Language/Game/MissionNodeQuestRequired"
+1537 [-]: MOVE      R106 R0      ; R106 := R0
+1538 [-]: NEWTABLE  R107 0 1     ; R107 := {}
+1539 [-]: SETTABLE  R107 K242 R100; R107["QUESTNAME"] := R100
+1540 [-]: CALL      R103 5 0     ; R103,... := R103(R104,R105,R106,R107)
+1541 [-]: CALL      R101 0 1     ; R101(R102,...)
 1542 [-]: TEST      R17 0        ; if not R17 then PC := 1550
 1543 [-]: JMP       1550         ; PC := 1550
-1544 [-]: MOVE      R104 R30     ; R104 := R30
-1545 [-]: LOADK     R105 K243    ; R105 := "/Lotus/Language/Menu/MissionBoard_Squads"
-1546 [-]: GETGLOBAL R106 K0      ; R106 := 0x9FAED6BC
-1547 [-]: MOVE      R107 R16     ; R107 := R16
-1548 [-]: CALL      R106 2 0     ; R106,... := R106(R107)
-1549 [-]: CALL      R104 0 1     ; R104(R105,...)
-1550 [-]: MOVE      R104 R30     ; R104 := R30
-1551 [-]: LOADNIL   R105 R105    ; R105 := nil
-1552 [-]: LOADK     R106 K60     ; R106 := " "
-1553 [-]: CALL      R104 3 1     ; R104(R105,R106)
-1554 [-]: MOVE      R104 R30     ; R104 := R30
-1555 [-]: LOADNIL   R105 R105    ; R105 := nil
-1556 [-]: LOADK     R106 K60     ; R106 := " "
-1557 [-]: CALL      R104 3 1     ; R104(R105,R106)
-1558 [-]: MOVE      R104 R29     ; R104 := R29
-1559 [-]: LOADK     R105 K126    ; R105 := "</p>"
-1560 [-]: CONCAT    R29 R104 R105; R29 := R104 .. R105
-1561 [-]: GETUPVAL  R104 U5      ; R104 := U5
-1562 [-]: GETTABLE  R104 R104 K127; R104 := R104["UpdateTimer"]
-1563 [-]: EQ        1 R104 K22   ; if R104 == nil then PC := 1572
+1544 [-]: MOVE      R101 R29     ; R101 := R29
+1545 [-]: LOADK     R102 K243    ; R102 := "/Lotus/Language/Menu/MissionBoard_Squads"
+1546 [-]: GETGLOBAL R103 K0      ; R103 := 0x9FAED6BC
+1547 [-]: MOVE      R104 R16     ; R104 := R16
+1548 [-]: CALL      R103 2 0     ; R103,... := R103(R104)
+1549 [-]: CALL      R101 0 1     ; R101(R102,...)
+1550 [-]: MOVE      R101 R29     ; R101 := R29
+1551 [-]: LOADNIL   R102 R102    ; R102 := nil
+1552 [-]: LOADK     R103 K60     ; R103 := " "
+1553 [-]: CALL      R101 3 1     ; R101(R102,R103)
+1554 [-]: MOVE      R101 R29     ; R101 := R29
+1555 [-]: LOADNIL   R102 R102    ; R102 := nil
+1556 [-]: LOADK     R103 K60     ; R103 := " "
+1557 [-]: CALL      R101 3 1     ; R101(R102,R103)
+1558 [-]: MOVE      R101 R28     ; R101 := R28
+1559 [-]: LOADK     R102 K126    ; R102 := "</p>"
+1560 [-]: CONCAT    R28 R101 R102; R28 := R101 .. R102
+1561 [-]: GETUPVAL  R101 U5      ; R101 := U5
+1562 [-]: GETTABLE  R101 R101 K127; R101 := R101["UpdateTimer"]
+1563 [-]: EQ        1 R101 K22   ; if R101 == nil then PC := 1572
 1564 [-]: JMP       1572         ; PC := 1572
-1565 [-]: GETUPVAL  R104 U5      ; R104 := U5
-1566 [-]: GETGLOBAL R105 K9      ; R105 := string
-1567 [-]: GETTABLE  R105 R105 K129; R105 := R105["0x7B782033"]
-1568 [-]: MOVE      R106 R29     ; R106 := R29
-1569 [-]: ADD       R107 R63 K36 ; R107 := R63 + 1
-1570 [-]: CALL      R105 3 2     ; R105 := R105(R106,R107)
-1571 [-]: SETTABLE  R104 K128 R105; R104["TimerPost"] := R105
-1572 [-]: RETURN    R29 2        ; return R29
+1565 [-]: GETUPVAL  R101 U5      ; R101 := U5
+1566 [-]: GETGLOBAL R102 K9      ; R102 := string
+1567 [-]: GETTABLE  R102 R102 K129; R102 := R102["0x7B782033"]
+1568 [-]: MOVE      R103 R28     ; R103 := R28
+1569 [-]: ADD       R104 R61 K36 ; R104 := R61 + 1
+1570 [-]: CALL      R102 3 2     ; R102 := R102(R103,R104)
+1571 [-]: SETTABLE  R101 K128 R102; R101["TimerPost"] := R102
+1572 [-]: RETURN    R28 2        ; return R28
 1573 [-]: RETURN    R0 1         ; return 
 
 
-; Function #143.1:
+; Function #141.1:
 ;
 ; Name:            
-; Defined at line: 6372
+; Defined at line: 6381
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -23485,51 +23496,10 @@ code size: 4
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #143.2:
+; Function #142:
 ;
 ; Name:            
-; Defined at line: 6382
-; #Upvalues:       1
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  9
-
-  1 [-]: EQ        1 R0 K0      ; if R0 == nil then PC := 16
-  2 [-]: JMP       16           ; PC := 16
-  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: LOADK     R3 K1        ; R3 := "<font color=\"#A9A9A9\">"
-  5 [-]: GETGLOBAL R4 K2        ; R4 := string
-  6 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["0x639C642A"]
-  7 [-]: GETGLOBAL R5 K4        ; R5 := mMovie
-  8 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5["0x5DB0BD4"]
-  9 [-]: MOVE      R7 R0        ; R7 := R0
- 10 [-]: MOVE      R8 R1        ; R8 := R1
- 11 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
- 12 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 13 [-]: LOADK     R5 K6        ; R5 := "  </font>"
- 14 [-]: CONCAT    R2 R2 R5     ; R2 := R2 .. R3 .. R4 .. R5
- 15 [-]: MOVE      R2 R0        ; R2 := R0
- 16 [-]: EQ        1 R1 K0      ; if R1 == nil then PC := 30
- 17 [-]: JMP       30           ; PC := 30
- 18 [-]: GETGLOBAL R2 K2        ; R2 := string
- 19 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xC6772A8A"]
- 20 [-]: MOVE      R3 R1        ; R3 := R1
- 21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 22 [-]: LT        0 K8 R2      ; if 0 >= R2 then PC := 30
- 23 [-]: JMP       30           ; PC := 30
- 24 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 25 [-]: LOADK     R3 K9        ; R3 := "<font color=\"#CACACA\"><b>"
- 26 [-]: MOVE      R4 R1        ; R4 := R1
- 27 [-]: LOADK     R5 K10       ; R5 := "</b> </font>"
- 28 [-]: CONCAT    R2 R2 R5     ; R2 := R2 .. R3 .. R4 .. R5
- 29 [-]: MOVE      R2 R0        ; R2 := R0
- 30 [-]: RETURN    R0 1         ; return 
-
-
-; Function #144:
-;
-; Name:            
-; Defined at line: 6734
+; Defined at line: 6733
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -23573,10 +23543,10 @@ code size: 4
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #145:
+; Function #143:
 ;
 ; Name:            
-; Defined at line: 6752
+; Defined at line: 6751
 ; #Upvalues:       24
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -24494,7 +24464,7 @@ code size: 4
 910 [-]: GETGLOBAL R47 K21      ; R47 := UISys
 911 [-]: GETTABLE  R47 R47 K171 ; R47 := R47["FlashInstance_EASE_OUT"]
 912 [-]: NEWTABLE  R48 1 0      ; R48 := {}
-913 [-]: CLOSURE   R49 0        ; R49 := closure(Function #145.1)
+913 [-]: CLOSURE   R49 0        ; R49 := closure(Function #143.1)
 914 [-]: MOVE      R0 R4        ; R0 := R4
 915 [-]: GETUPVAL  R0 U23       ; R0 := U23
 916 [-]: SETLIST   R48 1 1      ; R48[(1-1)*FPF+i] := R(48+i), 1 <= i <= 1
@@ -24511,10 +24481,10 @@ code size: 4
 927 [-]: RETURN    R0 1         ; return 
 
 
-; Function #145.1:
+; Function #143.1:
 ;
 ; Name:            
-; Defined at line: 6972
+; Defined at line: 6971
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -24549,10 +24519,10 @@ code size: 4
  27 [-]: RETURN    R0 1         ; return 
 
 
-; Function #146:
+; Function #144:
 ;
 ; Name:            
-; Defined at line: 6983
+; Defined at line: 6982
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -24667,7 +24637,7 @@ code size: 4
 107 [-]: GETGLOBAL R6 K19       ; R6 := UISys
 108 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["FlashInstance_EASE_OUT"]
 109 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-110 [-]: CLOSURE   R8 0         ; R8 := closure(Function #146.1)
+110 [-]: CLOSURE   R8 0         ; R8 := closure(Function #144.1)
 111 [-]: MOVE      R0 R1        ; R0 := R1
 112 [-]: GETUPVAL  R0 U7        ; R0 := U7
 113 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
@@ -24691,10 +24661,10 @@ code size: 4
 131 [-]: RETURN    R0 1         ; return 
 
 
-; Function #146.1:
+; Function #144.1:
 ;
 ; Name:            
-; Defined at line: 7013
+; Defined at line: 7012
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -24729,11 +24699,11 @@ code size: 4
  27 [-]: RETURN    R0 1         ; return 
 
 
-; Function #147:
+; Function #145:
 ;
 ; Name:            
-; Defined at line: 7028
-; #Upvalues:       27
+; Defined at line: 7027
+; #Upvalues:       28
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  31
@@ -24795,608 +24765,636 @@ code size: 4
  55 [-]: GETGLOBAL R2 K17       ; R2 := gGameConfig
  56 [-]: SELF      R2 R2 K18    ; R3 := R2; R2 := R2["0x89E53943"]
  57 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 58 [-]: TEST      R2 1         ; if R2 then PC := 67
- 59 [-]: JMP       67           ; PC := 67
+ 58 [-]: TEST      R2 1         ; if R2 then PC := 71
+ 59 [-]: JMP       71           ; PC := 71
  60 [-]: GETUPVAL  R2 U2        ; R2 := U2
  61 [-]: GETTABLE  R2 R2 K19    ; R2 := R2["Active"]
- 62 [-]: TEST      R2 0         ; if not R2 then PC := 127
- 63 [-]: JMP       127          ; PC := 127
+ 62 [-]: TEST      R2 0         ; if not R2 then PC := 155
+ 63 [-]: JMP       155          ; PC := 155
  64 [-]: GETGLOBAL R2 K20       ; R2 := gPromotedToHost
- 65 [-]: TEST      R2 0         ; if not R2 then PC := 127
- 66 [-]: JMP       127          ; PC := 127
- 67 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 68 [-]: GETTABLE  R2 R2 K19    ; R2 := R2["Active"]
- 69 [-]: TEST      R2 0         ; if not R2 then PC := 102
- 70 [-]: JMP       102          ; PC := 102
- 71 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 72 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["Region"]
- 73 [-]: EQ        1 R2 K12     ; if R2 == nil then PC := 83
- 74 [-]: JMP       83           ; PC := 83
+ 65 [-]: TEST      R2 0         ; if not R2 then PC := 155
+ 66 [-]: JMP       155          ; PC := 155
+ 67 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 68 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["Node"]
+ 69 [-]: TEST      R2 0         ; if not R2 then PC := 155
+ 70 [-]: JMP       155          ; PC := 155
+ 71 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 72 [-]: GETTABLE  R2 R2 K19    ; R2 := R2["Active"]
+ 73 [-]: TEST      R2 0         ; if not R2 then PC := 106
+ 74 [-]: JMP       106          ; PC := 106
  75 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 76 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["Region"]
- 77 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 78 [-]: GETGLOBAL R4 K8        ; R4 := _T
- 79 [-]: GETTABLE  R4 R4 K22    ; R4 := R4["REGION_ID_DOJO"]
- 80 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 81 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 101
- 82 [-]: JMP       101          ; PC := 101
- 83 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 84 [-]: GETTABLE  R2 R2 K23    ; R2 := R2["Node"]
- 85 [-]: TEST      R2 0         ; if not R2 then PC := 102
- 86 [-]: JMP       102          ; PC := 102
+ 76 [-]: GETTABLE  R2 R2 K22    ; R2 := R2["Region"]
+ 77 [-]: EQ        1 R2 K12     ; if R2 == nil then PC := 87
+ 78 [-]: JMP       87           ; PC := 87
+ 79 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 80 [-]: GETTABLE  R2 R2 K22    ; R2 := R2["Region"]
+ 81 [-]: GETUPVAL  R3 U4        ; R3 := U4
+ 82 [-]: GETGLOBAL R4 K8        ; R4 := _T
+ 83 [-]: GETTABLE  R4 R4 K23    ; R4 := R4["REGION_ID_DOJO"]
+ 84 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
+ 85 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 105
+ 86 [-]: JMP       105          ; PC := 105
  87 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 88 [-]: GETTABLE  R2 R2 K23    ; R2 := R2["Node"]
- 89 [-]: GETTABLE  R2 R2 K24    ; R2 := R2["radialSector"]
- 90 [-]: TEST      R2 0         ; if not R2 then PC := 102
- 91 [-]: JMP       102          ; PC := 102
- 92 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 93 [-]: GETTABLE  R2 R2 K23    ; R2 := R2["Node"]
- 94 [-]: GETTABLE  R2 R2 K24    ; R2 := R2["radialSector"]
- 95 [-]: GETTABLE  R2 R2 K25    ; R2 := R2["region"]
- 96 [-]: GETGLOBAL R3 K8        ; R3 := _T
- 97 [-]: GETTABLE  R3 R3 K22    ; R3 := R3["REGION_ID_DOJO"]
- 98 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 101
- 99 [-]: JMP       101          ; PC := 101
-100 [-]: MOVE      R2 R0        ; R2 := R0
-101 [-]: MOVE      R2 R1        ; R2 := R1
-102 [-]: TEST      R2 1         ; if R2 then PC := 127
-103 [-]: JMP       127          ; PC := 127
-104 [-]: LOADNIL   R3 R3        ; R3 := nil
-105 [-]: GETUPVAL  R4 U2        ; R4 := U2
-106 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["Active"]
-107 [-]: TEST      R4 0         ; if not R4 then PC := 117
-108 [-]: JMP       117          ; PC := 117
-109 [-]: GETUPVAL  R4 U5        ; R4 := U5
-110 [-]: GETTABLE  R4 R4 K26    ; R4 := R4["0xF81722A2"]
-111 [-]: GETGLOBAL R5 K20       ; R5 := gPromotedToHost
-112 [-]: LOADK     R6 K27       ; R6 := "/Lotus/Language/Menu/HostMigrationMissionsBlocked"
-113 [-]: LOADK     R7 K28       ; R7 := "/Lotus/Language/Menu/MainMenu_NewBuildMissionsBlockedRailjack"
-114 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
-115 [-]: MOVE      R3 R4        ; R3 := R4
-116 [-]: JMP       118          ; PC := 118
-117 [-]: LOADK     R3 K29       ; R3 := "/Lotus/Language/Menu/MainMenu_NewBuildMissionsBlocked"
-118 [-]: GETUPVAL  R4 U5        ; R4 := U5
-119 [-]: GETTABLE  R4 R4 K30    ; R4 := R4["0xB11F032"]
-120 [-]: GETGLOBAL R5 K2        ; R5 := mMovie
-121 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5["0x5DB0BD4"]
-122 [-]: MOVE      R7 R3        ; R7 := R3
-123 [-]: MOVE      R8 R0        ; R8 := R0
-124 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
-125 [-]: CALL      R4 0 1       ; R4(R5,...)
-126 [-]: RETURN    R0 1         ; return 
-127 [-]: GETGLOBAL R4 K32       ; R4 := Engine
-128 [-]: GETTABLE  R4 R4 K33    ; R4 := R4["0x9490FE70"]
-129 [-]: CALL      R4 1 2       ; R4 := R4()
-130 [-]: TEST      R4 0         ; if not R4 then PC := 147
-131 [-]: JMP       147          ; PC := 147
-132 [-]: GETGLOBAL R4 K34       ; R4 := 0x400E7765
-133 [-]: GETGLOBAL R5 K8        ; R5 := _T
-134 [-]: GETTABLE  R5 R5 K35    ; R5 := R5["SquadOverlay"]
-135 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-136 [-]: TEST      R4 1         ; if R4 then PC := 147
-137 [-]: JMP       147          ; PC := 147
-138 [-]: GETGLOBAL R4 K8        ; R4 := _T
-139 [-]: GETTABLE  R4 R4 K35    ; R4 := R4["SquadOverlay"]
-140 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4["0x458F27A9"]
-141 [-]: LOADK     R6 K36       ; R6 := "MatchmakingFocused"
-142 [-]: LOADK     R7 K15       ; R7 := ""
-143 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
-144 [-]: TEST      R4 0         ; if not R4 then PC := 147
-145 [-]: JMP       147          ; PC := 147
-146 [-]: RETURN    R0 1         ; return 
-147 [-]: GETUPVAL  R4 U6        ; R4 := U6
-148 [-]: GETUPVAL  R5 U7        ; R5 := U7
-149 [-]: GETTABLE  R5 R5 K37    ; R5 := R5["EDIT_REGIONS"]
-150 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 221
-151 [-]: JMP       221          ; PC := 221
-152 [-]: GETGLOBAL R4 K34       ; R4 := 0x400E7765
-153 [-]: GETUPVAL  R5 U3        ; R5 := U3
-154 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["Region"]
-155 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-156 [-]: TEST      R4 1         ; if R4 then PC := 221
-157 [-]: JMP       221          ; PC := 221
-158 [-]: GETUPVAL  R4 U8        ; R4 := U8
-159 [-]: GETUPVAL  R5 U3        ; R5 := U3
-160 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["Region"]
-161 [-]: SETTABLE  R4 K38 R5    ; R4["mMovingRegion"] := R5
-162 [-]: GETUPVAL  R4 U8        ; R4 := U8
-163 [-]: GETUPVAL  R5 U3        ; R5 := U3
-164 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["Region"]
-165 [-]: GETTABLE  R5 R5 K40    ; R5 := R5["instance"]
-166 [-]: SELF      R5 R5 K41    ; R6 := R5; R5 := R5["0x6DA72501"]
-167 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-168 [-]: SETTABLE  R4 K39 R5    ; R4["mInitialPosition"] := R5
-169 [-]: GETUPVAL  R4 U8        ; R4 := U8
-170 [-]: GETUPVAL  R5 U9        ; R5 := U9
-171 [-]: CALL      R5 1 2       ; R5 := R5()
-172 [-]: SETTABLE  R4 K42 R5    ; R4["mInitialWorldCursor"] := R5
-173 [-]: LOADNIL   R4 R4        ; R4 := nil
-174 [-]: GETGLOBAL R5 K43       ; R5 := 0x63B09107
-175 [-]: GETUPVAL  R6 U4        ; R6 := U4
-176 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
-177 [-]: JMP       184          ; PC := 184
-178 [-]: GETUPVAL  R10 U3       ; R10 := U3
-179 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["Region"]
-180 [-]: EQ        0 R10 R9     ; if R10 ~= R9 then PC := 184
-181 [-]: JMP       184          ; PC := 184
-182 [-]: SUB       R4 R8 K44    ; R4 := R8 - 1
-183 [-]: JMP       186          ; PC := 186
-184 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 178; R7 := R8 end
-185 [-]: JMP       178          ; PC := 178
-186 [-]: GETGLOBAL R10 K34      ; R10 := 0x400E7765
-187 [-]: MOVE      R11 R4       ; R11 := R4
-188 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-189 [-]: TEST      R10 1        ; if R10 then PC := 651
-190 [-]: JMP       651          ; PC := 651
-191 [-]: GETUPVAL  R10 U8       ; R10 := U8
-192 [-]: NEWTABLE  R11 0 0      ; R11 := {}
-193 [-]: SETTABLE  R10 K45 R11  ; R10["mChildNodes"] := R11
-194 [-]: GETGLOBAL R10 K43      ; R10 := 0x63B09107
-195 [-]: GETUPVAL  R11 U10      ; R11 := U10
-196 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
-197 [-]: JMP       218          ; PC := 218
-198 [-]: GETTABLE  R15 R14 K24  ; R15 := R14["radialSector"]
-199 [-]: GETTABLE  R15 R15 K25  ; R15 := R15["region"]
-200 [-]: EQ        0 R15 R4     ; if R15 ~= R4 then PC := 218
-201 [-]: JMP       218          ; PC := 218
-202 [-]: GETGLOBAL R15 K46      ; R15 := table
-203 [-]: GETTABLE  R15 R15 K47  ; R15 := R15["0xE6450C9D"]
-204 [-]: GETUPVAL  R16 U8       ; R16 := U8
-205 [-]: GETTABLE  R16 R16 K45  ; R16 := R16["mChildNodes"]
-206 [-]: NEWTABLE  R17 0 2      ; R17 := {}
-207 [-]: SETTABLE  R17 K48 R13  ; R17["NodeIndex"] := R13
-208 [-]: GETGLOBAL R18 K50      ; R18 := 0x221C9700
-209 [-]: GETTABLE  R19 R14 K51  ; R19 := R14["position"]
-210 [-]: GETTABLE  R19 R19 K52  ; R19 := R19["x"]
-211 [-]: GETTABLE  R20 R14 K51  ; R20 := R14["position"]
-212 [-]: GETTABLE  R20 R20 K53  ; R20 := R20["y"]
-213 [-]: GETTABLE  R21 R14 K51  ; R21 := R14["position"]
-214 [-]: GETTABLE  R21 R21 K54  ; R21 := R21["z"]
-215 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
-216 [-]: SETTABLE  R17 K49 R18  ; R17["InitialPosition"] := R18
-217 [-]: CALL      R15 3 1      ; R15(R16,R17)
-218 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 198; R12 := R13 end
-219 [-]: JMP       198          ; PC := 198
-220 [-]: JMP       651          ; PC := 651
-221 [-]: GETUPVAL  R15 U6       ; R15 := U6
-222 [-]: GETUPVAL  R16 U7       ; R16 := U7
-223 [-]: GETTABLE  R16 R16 K55  ; R16 := R16["EDIT_NODES"]
-224 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 263
-225 [-]: JMP       263          ; PC := 263
-226 [-]: GETGLOBAL R15 K34      ; R15 := 0x400E7765
-227 [-]: GETUPVAL  R16 U3       ; R16 := U3
-228 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-229 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-230 [-]: TEST      R15 1        ; if R15 then PC := 263
-231 [-]: JMP       263          ; PC := 263
-232 [-]: GETUPVAL  R15 U8       ; R15 := U8
-233 [-]: GETUPVAL  R16 U3       ; R16 := U3
-234 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-235 [-]: SETTABLE  R15 K56 R16  ; R15["mMovingNode"] := R16
-236 [-]: GETUPVAL  R15 U8       ; R15 := U8
-237 [-]: GETGLOBAL R16 K50      ; R16 := 0x221C9700
-238 [-]: GETUPVAL  R17 U3       ; R17 := U3
-239 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["Node"]
-240 [-]: GETTABLE  R17 R17 K51  ; R17 := R17["position"]
-241 [-]: GETTABLE  R17 R17 K52  ; R17 := R17["x"]
-242 [-]: GETUPVAL  R18 U3       ; R18 := U3
-243 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["Node"]
-244 [-]: GETTABLE  R18 R18 K51  ; R18 := R18["position"]
-245 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["y"]
-246 [-]: GETUPVAL  R19 U3       ; R19 := U3
-247 [-]: GETTABLE  R19 R19 K23  ; R19 := R19["Node"]
-248 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["position"]
-249 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["z"]
-250 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-251 [-]: SETTABLE  R15 K39 R16  ; R15["mInitialPosition"] := R16
-252 [-]: GETUPVAL  R15 U8       ; R15 := U8
-253 [-]: GETUPVAL  R16 U9       ; R16 := U9
-254 [-]: CALL      R16 1 2      ; R16 := R16()
-255 [-]: SETTABLE  R15 K42 R16  ; R15["mInitialWorldCursor"] := R16
-256 [-]: GETUPVAL  R15 U8       ; R15 := U8
-257 [-]: GETUPVAL  R16 U5       ; R16 := U5
-258 [-]: GETTABLE  R16 R16 K58  ; R16 := R16["0x5328C56B"]
-259 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
-260 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-261 [-]: SETTABLE  R15 K57 R16  ; R15["mInitialMousePosition"] := R16
-262 [-]: JMP       651          ; PC := 651
-263 [-]: GETUPVAL  R15 U6       ; R15 := U6
-264 [-]: GETUPVAL  R16 U7       ; R16 := U7
-265 [-]: GETTABLE  R16 R16 K59  ; R16 := R16["EDIT_EDGES"]
-266 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 344
-267 [-]: JMP       344          ; PC := 344
-268 [-]: GETGLOBAL R15 K34      ; R15 := 0x400E7765
-269 [-]: GETUPVAL  R16 U3       ; R16 := U3
-270 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-271 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-272 [-]: TEST      R15 0        ; if not R15 then PC := 279
-273 [-]: JMP       279          ; PC := 279
-274 [-]: GETUPVAL  R15 U8       ; R15 := U8
-275 [-]: SETTABLE  R15 K60 K12  ; R15["mEdgeNode1"] := nil
-276 [-]: GETUPVAL  R15 U8       ; R15 := U8
-277 [-]: SETTABLE  R15 K61 K12  ; R15["mEdgeNode2"] := nil
-278 [-]: JMP       336          ; PC := 336
-279 [-]: GETGLOBAL R15 K34      ; R15 := 0x400E7765
-280 [-]: GETUPVAL  R16 U8       ; R16 := U8
-281 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["mEdgeNode1"]
-282 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-283 [-]: TEST      R15 1        ; if R15 then PC := 293
-284 [-]: JMP       293          ; PC := 293
-285 [-]: GETUPVAL  R15 U11      ; R15 := U11
-286 [-]: GETTABLE  R15 R15 K62  ; R15 := R15["mControlDown"]
-287 [-]: TEST      R15 1        ; if R15 then PC := 298
-288 [-]: JMP       298          ; PC := 298
-289 [-]: GETUPVAL  R15 U11      ; R15 := U11
-290 [-]: GETTABLE  R15 R15 K63  ; R15 := R15["mShiftDown"]
-291 [-]: TEST      R15 1        ; if R15 then PC := 298
-292 [-]: JMP       298          ; PC := 298
-293 [-]: GETUPVAL  R15 U8       ; R15 := U8
-294 [-]: GETUPVAL  R16 U3       ; R16 := U3
-295 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-296 [-]: SETTABLE  R15 K60 R16  ; R15["mEdgeNode1"] := R16
-297 [-]: JMP       310          ; PC := 310
-298 [-]: GETUPVAL  R15 U3       ; R15 := U3
-299 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["Node"]
-300 [-]: GETTABLE  R15 R15 K64  ; R15 := R15["name"]
-301 [-]: GETUPVAL  R16 U8       ; R16 := U8
-302 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["mEdgeNode1"]
-303 [-]: GETTABLE  R16 R16 K64  ; R16 := R16["name"]
-304 [-]: EQ        1 R15 R16    ; if R15 == R16 then PC := 310
-305 [-]: JMP       310          ; PC := 310
-306 [-]: GETUPVAL  R15 U8       ; R15 := U8
-307 [-]: GETUPVAL  R16 U3       ; R16 := U3
-308 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-309 [-]: SETTABLE  R15 K61 R16  ; R15["mEdgeNode2"] := R16
-310 [-]: GETUPVAL  R15 U8       ; R15 := U8
-311 [-]: GETGLOBAL R16 K50      ; R16 := 0x221C9700
-312 [-]: GETUPVAL  R17 U3       ; R17 := U3
-313 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["Node"]
-314 [-]: GETTABLE  R17 R17 K51  ; R17 := R17["position"]
-315 [-]: GETTABLE  R17 R17 K52  ; R17 := R17["x"]
-316 [-]: GETUPVAL  R18 U3       ; R18 := U3
-317 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["Node"]
-318 [-]: GETTABLE  R18 R18 K51  ; R18 := R18["position"]
-319 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["y"]
-320 [-]: GETUPVAL  R19 U3       ; R19 := U3
-321 [-]: GETTABLE  R19 R19 K23  ; R19 := R19["Node"]
-322 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["position"]
-323 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["z"]
-324 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-325 [-]: SETTABLE  R15 K39 R16  ; R15["mInitialPosition"] := R16
-326 [-]: GETUPVAL  R15 U8       ; R15 := U8
-327 [-]: GETUPVAL  R16 U9       ; R16 := U9
-328 [-]: CALL      R16 1 2      ; R16 := R16()
-329 [-]: SETTABLE  R15 K42 R16  ; R15["mInitialWorldCursor"] := R16
-330 [-]: GETUPVAL  R15 U8       ; R15 := U8
-331 [-]: GETUPVAL  R16 U5       ; R16 := U5
-332 [-]: GETTABLE  R16 R16 K58  ; R16 := R16["0x5328C56B"]
-333 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
-334 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-335 [-]: SETTABLE  R15 K57 R16  ; R15["mInitialMousePosition"] := R16
-336 [-]: GETGLOBAL R15 K2       ; R15 := mMovie
-337 [-]: SELF      R15 R15 K65  ; R16 := R15; R15 := R15["0x1C19D966"]
-338 [-]: LOADK     R17 K66      ; R17 := "ScreenModeLabel"
-339 [-]: LOADK     R18 K67      ; R18 := "text"
-340 [-]: GETUPVAL  R19 U12      ; R19 := U12
-341 [-]: CALL      R19 1 0      ; R19,... := R19()
-342 [-]: CALL      R15 0 1      ; R15(R16,...)
-343 [-]: JMP       651          ; PC := 651
-344 [-]: GETUPVAL  R15 U6       ; R15 := U6
-345 [-]: GETUPVAL  R16 U7       ; R16 := U7
-346 [-]: GETTABLE  R16 R16 K68  ; R16 := R16["EDIT_NODE_DECOS"]
-347 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 460
-348 [-]: JMP       460          ; PC := 460
-349 [-]: GETGLOBAL R15 K34      ; R15 := 0x400E7765
-350 [-]: GETUPVAL  R16 U3       ; R16 := U3
-351 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-352 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-353 [-]: TEST      R15 1        ; if R15 then PC := 460
-354 [-]: JMP       460          ; PC := 460
-355 [-]: GETUPVAL  R15 U3       ; R15 := U3
-356 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["Node"]
-357 [-]: GETTABLE  R15 R15 K69  ; R15 := R15["deco"]
-358 [-]: EQ        1 R15 K12    ; if R15 == nil then PC := 368
-359 [-]: JMP       368          ; PC := 368
-360 [-]: GETGLOBAL R15 K34      ; R15 := 0x400E7765
-361 [-]: GETUPVAL  R16 U3       ; R16 := U3
-362 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-363 [-]: GETTABLE  R16 R16 K69  ; R16 := R16["deco"]
-364 [-]: GETTABLE  R16 R16 K70  ; R16 := R16["mInstance"]
-365 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-366 [-]: TEST      R15 0        ; if not R15 then PC := 369
-367 [-]: JMP       369          ; PC := 369
-368 [-]: RETURN    R0 1         ; return 
-369 [-]: GETUPVAL  R15 U8       ; R15 := U8
-370 [-]: GETUPVAL  R16 U3       ; R16 := U3
-371 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-372 [-]: SETTABLE  R15 K56 R16  ; R15["mMovingNode"] := R16
-373 [-]: GETUPVAL  R15 U8       ; R15 := U8
-374 [-]: SETTABLE  R15 K71 K72  ; R15["mEditingOffset"] := "0x0"
-375 [-]: GETUPVAL  R15 U8       ; R15 := U8
-376 [-]: SETTABLE  R15 K73 K72  ; R15["mEditingRotation"] := "0x0"
-377 [-]: GETUPVAL  R15 U8       ; R15 := U8
-378 [-]: SETTABLE  R15 K74 K72  ; R15["mEditingScale"] := "0x0"
-379 [-]: GETUPVAL  R15 U11      ; R15 := U11
-380 [-]: GETTABLE  R15 R15 K75  ; R15 := R15["mAltDown"]
-381 [-]: TEST      R15 0        ; if not R15 then PC := 398
-382 [-]: JMP       398          ; PC := 398
-383 [-]: GETUPVAL  R15 U8       ; R15 := U8
-384 [-]: GETUPVAL  R16 U3       ; R16 := U3
-385 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["Node"]
-386 [-]: GETTABLE  R16 R16 K69  ; R16 := R16["deco"]
-387 [-]: GETTABLE  R16 R16 K77  ; R16 := R16["mScale"]
-388 [-]: SETTABLE  R15 K76 R16  ; R15["mInitialScale"] := R16
-389 [-]: GETUPVAL  R15 U8       ; R15 := U8
-390 [-]: GETUPVAL  R16 U5       ; R16 := U5
-391 [-]: GETTABLE  R16 R16 K58  ; R16 := R16["0x5328C56B"]
-392 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
-393 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-394 [-]: SETTABLE  R15 K57 R16  ; R15["mInitialMousePosition"] := R16
-395 [-]: GETUPVAL  R15 U8       ; R15 := U8
-396 [-]: SETTABLE  R15 K74 K78  ; R15["mEditingScale"] := "0x1"
-397 [-]: JMP       455          ; PC := 455
-398 [-]: GETUPVAL  R15 U11      ; R15 := U11
-399 [-]: GETTABLE  R15 R15 K63  ; R15 := R15["mShiftDown"]
-400 [-]: TEST      R15 1        ; if R15 then PC := 406
-401 [-]: JMP       406          ; PC := 406
-402 [-]: GETUPVAL  R15 U11      ; R15 := U11
-403 [-]: GETTABLE  R15 R15 K62  ; R15 := R15["mControlDown"]
-404 [-]: TEST      R15 0        ; if not R15 then PC := 434
-405 [-]: JMP       434          ; PC := 434
-406 [-]: GETUPVAL  R15 U8       ; R15 := U8
-407 [-]: GETGLOBAL R16 K80      ; R16 := 0x1E4F6281
-408 [-]: GETUPVAL  R17 U3       ; R17 := U3
-409 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["Node"]
-410 [-]: GETTABLE  R17 R17 K69  ; R17 := R17["deco"]
-411 [-]: GETTABLE  R17 R17 K81  ; R17 := R17["mRotation"]
-412 [-]: GETTABLE  R17 R17 K82  ; R17 := R17["heading"]
-413 [-]: GETUPVAL  R18 U3       ; R18 := U3
-414 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["Node"]
-415 [-]: GETTABLE  R18 R18 K69  ; R18 := R18["deco"]
-416 [-]: GETTABLE  R18 R18 K81  ; R18 := R18["mRotation"]
-417 [-]: GETTABLE  R18 R18 K83  ; R18 := R18["pitch"]
-418 [-]: GETUPVAL  R19 U3       ; R19 := U3
-419 [-]: GETTABLE  R19 R19 K23  ; R19 := R19["Node"]
-420 [-]: GETTABLE  R19 R19 K69  ; R19 := R19["deco"]
-421 [-]: GETTABLE  R19 R19 K81  ; R19 := R19["mRotation"]
-422 [-]: GETTABLE  R19 R19 K84  ; R19 := R19["bank"]
-423 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-424 [-]: SETTABLE  R15 K79 R16  ; R15["mInitialRotation"] := R16
-425 [-]: GETUPVAL  R15 U8       ; R15 := U8
-426 [-]: GETUPVAL  R16 U5       ; R16 := U5
-427 [-]: GETTABLE  R16 R16 K58  ; R16 := R16["0x5328C56B"]
-428 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
-429 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-430 [-]: SETTABLE  R15 K57 R16  ; R15["mInitialMousePosition"] := R16
-431 [-]: GETUPVAL  R15 U8       ; R15 := U8
-432 [-]: SETTABLE  R15 K73 K78  ; R15["mEditingRotation"] := "0x1"
-433 [-]: JMP       455          ; PC := 455
-434 [-]: GETUPVAL  R15 U8       ; R15 := U8
-435 [-]: GETGLOBAL R16 K50      ; R16 := 0x221C9700
+ 88 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["Node"]
+ 89 [-]: TEST      R2 0         ; if not R2 then PC := 106
+ 90 [-]: JMP       106          ; PC := 106
+ 91 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 92 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["Node"]
+ 93 [-]: GETTABLE  R2 R2 K24    ; R2 := R2["radialSector"]
+ 94 [-]: TEST      R2 0         ; if not R2 then PC := 106
+ 95 [-]: JMP       106          ; PC := 106
+ 96 [-]: GETUPVAL  R2 U3        ; R2 := U3
+ 97 [-]: GETTABLE  R2 R2 K21    ; R2 := R2["Node"]
+ 98 [-]: GETTABLE  R2 R2 K24    ; R2 := R2["radialSector"]
+ 99 [-]: GETTABLE  R2 R2 K25    ; R2 := R2["region"]
+100 [-]: GETGLOBAL R3 K8        ; R3 := _T
+101 [-]: GETTABLE  R3 R3 K23    ; R3 := R3["REGION_ID_DOJO"]
+102 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 105
+103 [-]: JMP       105          ; PC := 105
+104 [-]: MOVE      R2 R0        ; R2 := R0
+105 [-]: MOVE      R2 R1        ; R2 := R1
+106 [-]: TEST      R2 1         ; if R2 then PC := 130
+107 [-]: JMP       130          ; PC := 130
+108 [-]: GETUPVAL  R3 U2        ; R3 := U2
+109 [-]: GETTABLE  R3 R3 K19    ; R3 := R3["Active"]
+110 [-]: TEST      R3 0         ; if not R3 then PC := 130
+111 [-]: JMP       130          ; PC := 130
+112 [-]: GETUPVAL  R3 U3        ; R3 := U3
+113 [-]: GETTABLE  R3 R3 K21    ; R3 := R3["Node"]
+114 [-]: TEST      R3 0         ; if not R3 then PC := 129
+115 [-]: JMP       129          ; PC := 129
+116 [-]: GETUPVAL  R3 U3        ; R3 := U3
+117 [-]: GETTABLE  R3 R3 K21    ; R3 := R3["Node"]
+118 [-]: GETTABLE  R3 R3 K24    ; R3 := R3["radialSector"]
+119 [-]: TEST      R3 0         ; if not R3 then PC := 130
+120 [-]: JMP       130          ; PC := 130
+121 [-]: GETUPVAL  R3 U3        ; R3 := U3
+122 [-]: GETTABLE  R3 R3 K21    ; R3 := R3["Node"]
+123 [-]: GETTABLE  R3 R3 K24    ; R3 := R3["radialSector"]
+124 [-]: GETTABLE  R3 R3 K26    ; R3 := R3["missionTag"]
+125 [-]: GETUPVAL  R4 U5        ; R4 := U5
+126 [-]: GETTABLE  R4 R4 K27    ; R4 := R4["SQUAD_LINK_EVENT"]
+127 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 130
+128 [-]: JMP       130          ; PC := 130
+129 [-]: MOVE      R2 R1        ; R2 := R1
+130 [-]: TEST      R2 1         ; if R2 then PC := 155
+131 [-]: JMP       155          ; PC := 155
+132 [-]: LOADNIL   R3 R3        ; R3 := nil
+133 [-]: GETUPVAL  R4 U2        ; R4 := U2
+134 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["Active"]
+135 [-]: TEST      R4 0         ; if not R4 then PC := 145
+136 [-]: JMP       145          ; PC := 145
+137 [-]: GETUPVAL  R4 U6        ; R4 := U6
+138 [-]: GETTABLE  R4 R4 K28    ; R4 := R4["0xF81722A2"]
+139 [-]: GETGLOBAL R5 K20       ; R5 := gPromotedToHost
+140 [-]: LOADK     R6 K29       ; R6 := "/Lotus/Language/Menu/HostMigrationMissionsBlocked"
+141 [-]: LOADK     R7 K30       ; R7 := "/Lotus/Language/Menu/MainMenu_NewBuildMissionsBlockedRailjack"
+142 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+143 [-]: MOVE      R3 R4        ; R3 := R4
+144 [-]: JMP       146          ; PC := 146
+145 [-]: LOADK     R3 K31       ; R3 := "/Lotus/Language/Menu/MainMenu_NewBuildMissionsBlocked"
+146 [-]: GETUPVAL  R4 U6        ; R4 := U6
+147 [-]: GETTABLE  R4 R4 K32    ; R4 := R4["0xB11F032"]
+148 [-]: GETGLOBAL R5 K2        ; R5 := mMovie
+149 [-]: SELF      R5 R5 K33    ; R6 := R5; R5 := R5["0x5DB0BD4"]
+150 [-]: MOVE      R7 R3        ; R7 := R3
+151 [-]: MOVE      R8 R0        ; R8 := R0
+152 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
+153 [-]: CALL      R4 0 1       ; R4(R5,...)
+154 [-]: RETURN    R0 1         ; return 
+155 [-]: GETGLOBAL R4 K34       ; R4 := Engine
+156 [-]: GETTABLE  R4 R4 K35    ; R4 := R4["0x9490FE70"]
+157 [-]: CALL      R4 1 2       ; R4 := R4()
+158 [-]: TEST      R4 0         ; if not R4 then PC := 175
+159 [-]: JMP       175          ; PC := 175
+160 [-]: GETGLOBAL R4 K36       ; R4 := 0x400E7765
+161 [-]: GETGLOBAL R5 K8        ; R5 := _T
+162 [-]: GETTABLE  R5 R5 K37    ; R5 := R5["SquadOverlay"]
+163 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+164 [-]: TEST      R4 1         ; if R4 then PC := 175
+165 [-]: JMP       175          ; PC := 175
+166 [-]: GETGLOBAL R4 K8        ; R4 := _T
+167 [-]: GETTABLE  R4 R4 K37    ; R4 := R4["SquadOverlay"]
+168 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4["0x458F27A9"]
+169 [-]: LOADK     R6 K38       ; R6 := "MatchmakingFocused"
+170 [-]: LOADK     R7 K15       ; R7 := ""
+171 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+172 [-]: TEST      R4 0         ; if not R4 then PC := 175
+173 [-]: JMP       175          ; PC := 175
+174 [-]: RETURN    R0 1         ; return 
+175 [-]: GETUPVAL  R4 U7        ; R4 := U7
+176 [-]: GETUPVAL  R5 U8        ; R5 := U8
+177 [-]: GETTABLE  R5 R5 K39    ; R5 := R5["EDIT_REGIONS"]
+178 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 249
+179 [-]: JMP       249          ; PC := 249
+180 [-]: GETGLOBAL R4 K36       ; R4 := 0x400E7765
+181 [-]: GETUPVAL  R5 U3        ; R5 := U3
+182 [-]: GETTABLE  R5 R5 K22    ; R5 := R5["Region"]
+183 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+184 [-]: TEST      R4 1         ; if R4 then PC := 249
+185 [-]: JMP       249          ; PC := 249
+186 [-]: GETUPVAL  R4 U9        ; R4 := U9
+187 [-]: GETUPVAL  R5 U3        ; R5 := U3
+188 [-]: GETTABLE  R5 R5 K22    ; R5 := R5["Region"]
+189 [-]: SETTABLE  R4 K40 R5    ; R4["mMovingRegion"] := R5
+190 [-]: GETUPVAL  R4 U9        ; R4 := U9
+191 [-]: GETUPVAL  R5 U3        ; R5 := U3
+192 [-]: GETTABLE  R5 R5 K22    ; R5 := R5["Region"]
+193 [-]: GETTABLE  R5 R5 K42    ; R5 := R5["instance"]
+194 [-]: SELF      R5 R5 K43    ; R6 := R5; R5 := R5["0x6DA72501"]
+195 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+196 [-]: SETTABLE  R4 K41 R5    ; R4["mInitialPosition"] := R5
+197 [-]: GETUPVAL  R4 U9        ; R4 := U9
+198 [-]: GETUPVAL  R5 U10       ; R5 := U10
+199 [-]: CALL      R5 1 2       ; R5 := R5()
+200 [-]: SETTABLE  R4 K44 R5    ; R4["mInitialWorldCursor"] := R5
+201 [-]: LOADNIL   R4 R4        ; R4 := nil
+202 [-]: GETGLOBAL R5 K45       ; R5 := 0x63B09107
+203 [-]: GETUPVAL  R6 U4        ; R6 := U4
+204 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
+205 [-]: JMP       212          ; PC := 212
+206 [-]: GETUPVAL  R10 U3       ; R10 := U3
+207 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["Region"]
+208 [-]: EQ        0 R10 R9     ; if R10 ~= R9 then PC := 212
+209 [-]: JMP       212          ; PC := 212
+210 [-]: SUB       R4 R8 K46    ; R4 := R8 - 1
+211 [-]: JMP       214          ; PC := 214
+212 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 206; R7 := R8 end
+213 [-]: JMP       206          ; PC := 206
+214 [-]: GETGLOBAL R10 K36      ; R10 := 0x400E7765
+215 [-]: MOVE      R11 R4       ; R11 := R4
+216 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+217 [-]: TEST      R10 1        ; if R10 then PC := 679
+218 [-]: JMP       679          ; PC := 679
+219 [-]: GETUPVAL  R10 U9       ; R10 := U9
+220 [-]: NEWTABLE  R11 0 0      ; R11 := {}
+221 [-]: SETTABLE  R10 K47 R11  ; R10["mChildNodes"] := R11
+222 [-]: GETGLOBAL R10 K45      ; R10 := 0x63B09107
+223 [-]: GETUPVAL  R11 U11      ; R11 := U11
+224 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
+225 [-]: JMP       246          ; PC := 246
+226 [-]: GETTABLE  R15 R14 K24  ; R15 := R14["radialSector"]
+227 [-]: GETTABLE  R15 R15 K25  ; R15 := R15["region"]
+228 [-]: EQ        0 R15 R4     ; if R15 ~= R4 then PC := 246
+229 [-]: JMP       246          ; PC := 246
+230 [-]: GETGLOBAL R15 K48      ; R15 := table
+231 [-]: GETTABLE  R15 R15 K49  ; R15 := R15["0xE6450C9D"]
+232 [-]: GETUPVAL  R16 U9       ; R16 := U9
+233 [-]: GETTABLE  R16 R16 K47  ; R16 := R16["mChildNodes"]
+234 [-]: NEWTABLE  R17 0 2      ; R17 := {}
+235 [-]: SETTABLE  R17 K50 R13  ; R17["NodeIndex"] := R13
+236 [-]: GETGLOBAL R18 K52      ; R18 := 0x221C9700
+237 [-]: GETTABLE  R19 R14 K53  ; R19 := R14["position"]
+238 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["x"]
+239 [-]: GETTABLE  R20 R14 K53  ; R20 := R14["position"]
+240 [-]: GETTABLE  R20 R20 K55  ; R20 := R20["y"]
+241 [-]: GETTABLE  R21 R14 K53  ; R21 := R14["position"]
+242 [-]: GETTABLE  R21 R21 K56  ; R21 := R21["z"]
+243 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
+244 [-]: SETTABLE  R17 K51 R18  ; R17["InitialPosition"] := R18
+245 [-]: CALL      R15 3 1      ; R15(R16,R17)
+246 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 226; R12 := R13 end
+247 [-]: JMP       226          ; PC := 226
+248 [-]: JMP       679          ; PC := 679
+249 [-]: GETUPVAL  R15 U7       ; R15 := U7
+250 [-]: GETUPVAL  R16 U8       ; R16 := U8
+251 [-]: GETTABLE  R16 R16 K57  ; R16 := R16["EDIT_NODES"]
+252 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 291
+253 [-]: JMP       291          ; PC := 291
+254 [-]: GETGLOBAL R15 K36      ; R15 := 0x400E7765
+255 [-]: GETUPVAL  R16 U3       ; R16 := U3
+256 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+257 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+258 [-]: TEST      R15 1        ; if R15 then PC := 291
+259 [-]: JMP       291          ; PC := 291
+260 [-]: GETUPVAL  R15 U9       ; R15 := U9
+261 [-]: GETUPVAL  R16 U3       ; R16 := U3
+262 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+263 [-]: SETTABLE  R15 K58 R16  ; R15["mMovingNode"] := R16
+264 [-]: GETUPVAL  R15 U9       ; R15 := U9
+265 [-]: GETGLOBAL R16 K52      ; R16 := 0x221C9700
+266 [-]: GETUPVAL  R17 U3       ; R17 := U3
+267 [-]: GETTABLE  R17 R17 K21  ; R17 := R17["Node"]
+268 [-]: GETTABLE  R17 R17 K53  ; R17 := R17["position"]
+269 [-]: GETTABLE  R17 R17 K54  ; R17 := R17["x"]
+270 [-]: GETUPVAL  R18 U3       ; R18 := U3
+271 [-]: GETTABLE  R18 R18 K21  ; R18 := R18["Node"]
+272 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["position"]
+273 [-]: GETTABLE  R18 R18 K55  ; R18 := R18["y"]
+274 [-]: GETUPVAL  R19 U3       ; R19 := U3
+275 [-]: GETTABLE  R19 R19 K21  ; R19 := R19["Node"]
+276 [-]: GETTABLE  R19 R19 K53  ; R19 := R19["position"]
+277 [-]: GETTABLE  R19 R19 K56  ; R19 := R19["z"]
+278 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+279 [-]: SETTABLE  R15 K41 R16  ; R15["mInitialPosition"] := R16
+280 [-]: GETUPVAL  R15 U9       ; R15 := U9
+281 [-]: GETUPVAL  R16 U10      ; R16 := U10
+282 [-]: CALL      R16 1 2      ; R16 := R16()
+283 [-]: SETTABLE  R15 K44 R16  ; R15["mInitialWorldCursor"] := R16
+284 [-]: GETUPVAL  R15 U9       ; R15 := U9
+285 [-]: GETUPVAL  R16 U6       ; R16 := U6
+286 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["0x5328C56B"]
+287 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
+288 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+289 [-]: SETTABLE  R15 K59 R16  ; R15["mInitialMousePosition"] := R16
+290 [-]: JMP       679          ; PC := 679
+291 [-]: GETUPVAL  R15 U7       ; R15 := U7
+292 [-]: GETUPVAL  R16 U8       ; R16 := U8
+293 [-]: GETTABLE  R16 R16 K61  ; R16 := R16["EDIT_EDGES"]
+294 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 372
+295 [-]: JMP       372          ; PC := 372
+296 [-]: GETGLOBAL R15 K36      ; R15 := 0x400E7765
+297 [-]: GETUPVAL  R16 U3       ; R16 := U3
+298 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+299 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+300 [-]: TEST      R15 0        ; if not R15 then PC := 307
+301 [-]: JMP       307          ; PC := 307
+302 [-]: GETUPVAL  R15 U9       ; R15 := U9
+303 [-]: SETTABLE  R15 K62 K12  ; R15["mEdgeNode1"] := nil
+304 [-]: GETUPVAL  R15 U9       ; R15 := U9
+305 [-]: SETTABLE  R15 K63 K12  ; R15["mEdgeNode2"] := nil
+306 [-]: JMP       364          ; PC := 364
+307 [-]: GETGLOBAL R15 K36      ; R15 := 0x400E7765
+308 [-]: GETUPVAL  R16 U9       ; R16 := U9
+309 [-]: GETTABLE  R16 R16 K62  ; R16 := R16["mEdgeNode1"]
+310 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+311 [-]: TEST      R15 1        ; if R15 then PC := 321
+312 [-]: JMP       321          ; PC := 321
+313 [-]: GETUPVAL  R15 U12      ; R15 := U12
+314 [-]: GETTABLE  R15 R15 K64  ; R15 := R15["mControlDown"]
+315 [-]: TEST      R15 1        ; if R15 then PC := 326
+316 [-]: JMP       326          ; PC := 326
+317 [-]: GETUPVAL  R15 U12      ; R15 := U12
+318 [-]: GETTABLE  R15 R15 K65  ; R15 := R15["mShiftDown"]
+319 [-]: TEST      R15 1        ; if R15 then PC := 326
+320 [-]: JMP       326          ; PC := 326
+321 [-]: GETUPVAL  R15 U9       ; R15 := U9
+322 [-]: GETUPVAL  R16 U3       ; R16 := U3
+323 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+324 [-]: SETTABLE  R15 K62 R16  ; R15["mEdgeNode1"] := R16
+325 [-]: JMP       338          ; PC := 338
+326 [-]: GETUPVAL  R15 U3       ; R15 := U3
+327 [-]: GETTABLE  R15 R15 K21  ; R15 := R15["Node"]
+328 [-]: GETTABLE  R15 R15 K66  ; R15 := R15["name"]
+329 [-]: GETUPVAL  R16 U9       ; R16 := U9
+330 [-]: GETTABLE  R16 R16 K62  ; R16 := R16["mEdgeNode1"]
+331 [-]: GETTABLE  R16 R16 K66  ; R16 := R16["name"]
+332 [-]: EQ        1 R15 R16    ; if R15 == R16 then PC := 338
+333 [-]: JMP       338          ; PC := 338
+334 [-]: GETUPVAL  R15 U9       ; R15 := U9
+335 [-]: GETUPVAL  R16 U3       ; R16 := U3
+336 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+337 [-]: SETTABLE  R15 K63 R16  ; R15["mEdgeNode2"] := R16
+338 [-]: GETUPVAL  R15 U9       ; R15 := U9
+339 [-]: GETGLOBAL R16 K52      ; R16 := 0x221C9700
+340 [-]: GETUPVAL  R17 U3       ; R17 := U3
+341 [-]: GETTABLE  R17 R17 K21  ; R17 := R17["Node"]
+342 [-]: GETTABLE  R17 R17 K53  ; R17 := R17["position"]
+343 [-]: GETTABLE  R17 R17 K54  ; R17 := R17["x"]
+344 [-]: GETUPVAL  R18 U3       ; R18 := U3
+345 [-]: GETTABLE  R18 R18 K21  ; R18 := R18["Node"]
+346 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["position"]
+347 [-]: GETTABLE  R18 R18 K55  ; R18 := R18["y"]
+348 [-]: GETUPVAL  R19 U3       ; R19 := U3
+349 [-]: GETTABLE  R19 R19 K21  ; R19 := R19["Node"]
+350 [-]: GETTABLE  R19 R19 K53  ; R19 := R19["position"]
+351 [-]: GETTABLE  R19 R19 K56  ; R19 := R19["z"]
+352 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+353 [-]: SETTABLE  R15 K41 R16  ; R15["mInitialPosition"] := R16
+354 [-]: GETUPVAL  R15 U9       ; R15 := U9
+355 [-]: GETUPVAL  R16 U10      ; R16 := U10
+356 [-]: CALL      R16 1 2      ; R16 := R16()
+357 [-]: SETTABLE  R15 K44 R16  ; R15["mInitialWorldCursor"] := R16
+358 [-]: GETUPVAL  R15 U9       ; R15 := U9
+359 [-]: GETUPVAL  R16 U6       ; R16 := U6
+360 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["0x5328C56B"]
+361 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
+362 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+363 [-]: SETTABLE  R15 K59 R16  ; R15["mInitialMousePosition"] := R16
+364 [-]: GETGLOBAL R15 K2       ; R15 := mMovie
+365 [-]: SELF      R15 R15 K67  ; R16 := R15; R15 := R15["0x1C19D966"]
+366 [-]: LOADK     R17 K68      ; R17 := "ScreenModeLabel"
+367 [-]: LOADK     R18 K69      ; R18 := "text"
+368 [-]: GETUPVAL  R19 U13      ; R19 := U13
+369 [-]: CALL      R19 1 0      ; R19,... := R19()
+370 [-]: CALL      R15 0 1      ; R15(R16,...)
+371 [-]: JMP       679          ; PC := 679
+372 [-]: GETUPVAL  R15 U7       ; R15 := U7
+373 [-]: GETUPVAL  R16 U8       ; R16 := U8
+374 [-]: GETTABLE  R16 R16 K70  ; R16 := R16["EDIT_NODE_DECOS"]
+375 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 488
+376 [-]: JMP       488          ; PC := 488
+377 [-]: GETGLOBAL R15 K36      ; R15 := 0x400E7765
+378 [-]: GETUPVAL  R16 U3       ; R16 := U3
+379 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+380 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+381 [-]: TEST      R15 1        ; if R15 then PC := 488
+382 [-]: JMP       488          ; PC := 488
+383 [-]: GETUPVAL  R15 U3       ; R15 := U3
+384 [-]: GETTABLE  R15 R15 K21  ; R15 := R15["Node"]
+385 [-]: GETTABLE  R15 R15 K71  ; R15 := R15["deco"]
+386 [-]: EQ        1 R15 K12    ; if R15 == nil then PC := 396
+387 [-]: JMP       396          ; PC := 396
+388 [-]: GETGLOBAL R15 K36      ; R15 := 0x400E7765
+389 [-]: GETUPVAL  R16 U3       ; R16 := U3
+390 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+391 [-]: GETTABLE  R16 R16 K71  ; R16 := R16["deco"]
+392 [-]: GETTABLE  R16 R16 K72  ; R16 := R16["mInstance"]
+393 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+394 [-]: TEST      R15 0        ; if not R15 then PC := 397
+395 [-]: JMP       397          ; PC := 397
+396 [-]: RETURN    R0 1         ; return 
+397 [-]: GETUPVAL  R15 U9       ; R15 := U9
+398 [-]: GETUPVAL  R16 U3       ; R16 := U3
+399 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+400 [-]: SETTABLE  R15 K58 R16  ; R15["mMovingNode"] := R16
+401 [-]: GETUPVAL  R15 U9       ; R15 := U9
+402 [-]: SETTABLE  R15 K73 K74  ; R15["mEditingOffset"] := "0x0"
+403 [-]: GETUPVAL  R15 U9       ; R15 := U9
+404 [-]: SETTABLE  R15 K75 K74  ; R15["mEditingRotation"] := "0x0"
+405 [-]: GETUPVAL  R15 U9       ; R15 := U9
+406 [-]: SETTABLE  R15 K76 K74  ; R15["mEditingScale"] := "0x0"
+407 [-]: GETUPVAL  R15 U12      ; R15 := U12
+408 [-]: GETTABLE  R15 R15 K77  ; R15 := R15["mAltDown"]
+409 [-]: TEST      R15 0        ; if not R15 then PC := 426
+410 [-]: JMP       426          ; PC := 426
+411 [-]: GETUPVAL  R15 U9       ; R15 := U9
+412 [-]: GETUPVAL  R16 U3       ; R16 := U3
+413 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["Node"]
+414 [-]: GETTABLE  R16 R16 K71  ; R16 := R16["deco"]
+415 [-]: GETTABLE  R16 R16 K79  ; R16 := R16["mScale"]
+416 [-]: SETTABLE  R15 K78 R16  ; R15["mInitialScale"] := R16
+417 [-]: GETUPVAL  R15 U9       ; R15 := U9
+418 [-]: GETUPVAL  R16 U6       ; R16 := U6
+419 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["0x5328C56B"]
+420 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
+421 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+422 [-]: SETTABLE  R15 K59 R16  ; R15["mInitialMousePosition"] := R16
+423 [-]: GETUPVAL  R15 U9       ; R15 := U9
+424 [-]: SETTABLE  R15 K76 K80  ; R15["mEditingScale"] := "0x1"
+425 [-]: JMP       483          ; PC := 483
+426 [-]: GETUPVAL  R15 U12      ; R15 := U12
+427 [-]: GETTABLE  R15 R15 K65  ; R15 := R15["mShiftDown"]
+428 [-]: TEST      R15 1        ; if R15 then PC := 434
+429 [-]: JMP       434          ; PC := 434
+430 [-]: GETUPVAL  R15 U12      ; R15 := U12
+431 [-]: GETTABLE  R15 R15 K64  ; R15 := R15["mControlDown"]
+432 [-]: TEST      R15 0        ; if not R15 then PC := 462
+433 [-]: JMP       462          ; PC := 462
+434 [-]: GETUPVAL  R15 U9       ; R15 := U9
+435 [-]: GETGLOBAL R16 K82      ; R16 := 0x1E4F6281
 436 [-]: GETUPVAL  R17 U3       ; R17 := U3
-437 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["Node"]
-438 [-]: GETTABLE  R17 R17 K69  ; R17 := R17["deco"]
-439 [-]: GETTABLE  R17 R17 K85  ; R17 := R17["mOffset"]
-440 [-]: GETTABLE  R17 R17 K52  ; R17 := R17["x"]
+437 [-]: GETTABLE  R17 R17 K21  ; R17 := R17["Node"]
+438 [-]: GETTABLE  R17 R17 K71  ; R17 := R17["deco"]
+439 [-]: GETTABLE  R17 R17 K83  ; R17 := R17["mRotation"]
+440 [-]: GETTABLE  R17 R17 K84  ; R17 := R17["heading"]
 441 [-]: GETUPVAL  R18 U3       ; R18 := U3
-442 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["Node"]
-443 [-]: GETTABLE  R18 R18 K69  ; R18 := R18["deco"]
-444 [-]: GETTABLE  R18 R18 K85  ; R18 := R18["mOffset"]
-445 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["y"]
+442 [-]: GETTABLE  R18 R18 K21  ; R18 := R18["Node"]
+443 [-]: GETTABLE  R18 R18 K71  ; R18 := R18["deco"]
+444 [-]: GETTABLE  R18 R18 K83  ; R18 := R18["mRotation"]
+445 [-]: GETTABLE  R18 R18 K85  ; R18 := R18["pitch"]
 446 [-]: GETUPVAL  R19 U3       ; R19 := U3
-447 [-]: GETTABLE  R19 R19 K23  ; R19 := R19["Node"]
-448 [-]: GETTABLE  R19 R19 K69  ; R19 := R19["deco"]
-449 [-]: GETTABLE  R19 R19 K85  ; R19 := R19["mOffset"]
-450 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["z"]
+447 [-]: GETTABLE  R19 R19 K21  ; R19 := R19["Node"]
+448 [-]: GETTABLE  R19 R19 K71  ; R19 := R19["deco"]
+449 [-]: GETTABLE  R19 R19 K83  ; R19 := R19["mRotation"]
+450 [-]: GETTABLE  R19 R19 K86  ; R19 := R19["bank"]
 451 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-452 [-]: SETTABLE  R15 K39 R16  ; R15["mInitialPosition"] := R16
-453 [-]: GETUPVAL  R15 U8       ; R15 := U8
-454 [-]: SETTABLE  R15 K71 K78  ; R15["mEditingOffset"] := "0x1"
-455 [-]: GETUPVAL  R15 U8       ; R15 := U8
-456 [-]: GETUPVAL  R16 U9       ; R16 := U9
-457 [-]: CALL      R16 1 2      ; R16 := R16()
-458 [-]: SETTABLE  R15 K42 R16  ; R15["mInitialWorldCursor"] := R16
-459 [-]: JMP       651          ; PC := 651
-460 [-]: GETUPVAL  R15 U6       ; R15 := U6
-461 [-]: GETUPVAL  R16 U7       ; R16 := U7
-462 [-]: GETTABLE  R16 R16 K86  ; R16 := R16["EDIT_REGION_FRAMING"]
-463 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 469
-464 [-]: JMP       469          ; PC := 469
-465 [-]: GETUPVAL  R15 U13      ; R15 := U13
-466 [-]: SELF      R15 R15 K87  ; R16 := R15; R15 := R15["0x3AEEE6C2"]
-467 [-]: CALL      R15 2 1      ; R15(R16)
-468 [-]: JMP       651          ; PC := 651
-469 [-]: GETUPVAL  R15 U6       ; R15 := U6
-470 [-]: GETUPVAL  R16 U7       ; R16 := U7
-471 [-]: GETTABLE  R16 R16 K88  ; R16 := R16["EDIT_SHORTCUT_CONTROL_POINTS"]
-472 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 503
-473 [-]: JMP       503          ; PC := 503
-474 [-]: GETGLOBAL R15 K34      ; R15 := 0x400E7765
-475 [-]: GETUPVAL  R16 U8       ; R16 := U8
-476 [-]: GETTABLE  R16 R16 K89  ; R16 := R16["mMovingControlPoint"]
-477 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-478 [-]: TEST      R15 1        ; if R15 then PC := 503
-479 [-]: JMP       503          ; PC := 503
-480 [-]: GETUPVAL  R15 U8       ; R15 := U8
-481 [-]: SETTABLE  R15 K90 K78  ; R15["mControlPointHeld"] := "0x1"
-482 [-]: GETUPVAL  R15 U8       ; R15 := U8
-483 [-]: GETUPVAL  R16 U9       ; R16 := U9
-484 [-]: CALL      R16 1 2      ; R16 := R16()
-485 [-]: SETTABLE  R15 K42 R16  ; R15["mInitialWorldCursor"] := R16
-486 [-]: GETUPVAL  R15 U8       ; R15 := U8
-487 [-]: GETGLOBAL R16 K50      ; R16 := 0x221C9700
-488 [-]: GETUPVAL  R17 U8       ; R17 := U8
-489 [-]: GETTABLE  R17 R17 K89  ; R17 := R17["mMovingControlPoint"]
-490 [-]: GETTABLE  R17 R17 K51  ; R17 := R17["position"]
-491 [-]: GETTABLE  R17 R17 K52  ; R17 := R17["x"]
-492 [-]: GETUPVAL  R18 U8       ; R18 := U8
-493 [-]: GETTABLE  R18 R18 K89  ; R18 := R18["mMovingControlPoint"]
-494 [-]: GETTABLE  R18 R18 K51  ; R18 := R18["position"]
-495 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["y"]
-496 [-]: GETUPVAL  R19 U8       ; R19 := U8
-497 [-]: GETTABLE  R19 R19 K89  ; R19 := R19["mMovingControlPoint"]
-498 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["position"]
-499 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["z"]
-500 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-501 [-]: SETTABLE  R15 K39 R16  ; R15["mInitialPosition"] := R16
-502 [-]: JMP       651          ; PC := 651
-503 [-]: GETUPVAL  R15 U14      ; R15 := U14
-504 [-]: TEST      R15 0        ; if not R15 then PC := 615
-505 [-]: JMP       615          ; PC := 615
-506 [-]: GETUPVAL  R15 U15      ; R15 := U15
-507 [-]: GETUPVAL  R16 U14      ; R16 := U14
-508 [-]: GETTABLE  R15 R15 R16  ; R15 := R15[R16]
-509 [-]: TEST      R15 0        ; if not R15 then PC := 651
-510 [-]: JMP       651          ; PC := 651
-511 [-]: GETUPVAL  R15 U11      ; R15 := U11
-512 [-]: GETTABLE  R15 R15 K63  ; R15 := R15["mShiftDown"]
-513 [-]: TEST      R15 0        ; if not R15 then PC := 582
-514 [-]: JMP       582          ; PC := 582
-515 [-]: GETUPVAL  R15 U15      ; R15 := U15
-516 [-]: GETUPVAL  R16 U16      ; R16 := U16
-517 [-]: GETTABLE  R15 R15 R16  ; R15 := R15[R16]
-518 [-]: TEST      R15 0        ; if not R15 then PC := 651
-519 [-]: JMP       651          ; PC := 651
-520 [-]: GETUPVAL  R15 U9       ; R15 := U9
-521 [-]: CALL      R15 1 2      ; R15 := R15()
-522 [-]: GETUPVAL  R16 U15      ; R16 := U15
-523 [-]: GETUPVAL  R17 U14      ; R17 := U14
-524 [-]: GETTABLE  R16 R16 R17  ; R16 := R16[R17]
-525 [-]: SELF      R16 R16 K91  ; R17 := R16; R16 := R16["0x27D983EC"]
-526 [-]: MOVE      R18 R15      ; R18 := R15
-527 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
-528 [-]: GETUPVAL  R17 U15      ; R17 := U15
-529 [-]: GETUPVAL  R18 U14      ; R18 := U14
-530 [-]: GETTABLE  R17 R17 R18  ; R17 := R17[R18]
-531 [-]: SELF      R17 R17 K92  ; R18 := R17; R17 := R17["0x178C31B9"]
-532 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-533 [-]: GETUPVAL  R18 U17      ; R18 := U17
-534 [-]: MOVE      R19 R17      ; R19 := R17
-535 [-]: MOVE      R20 R16      ; R20 := R16
-536 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-537 [-]: GETUPVAL  R19 U18      ; R19 := U18
-538 [-]: EQ        0 R19 K12    ; if R19 ~= nil then PC := 542
-539 [-]: JMP       542          ; PC := 542
-540 [-]: MOVE      R18 R18      ; R18 := R18
-541 [-]: JMP       651          ; PC := 651
-542 [-]: GETUPVAL  R19 U18      ; R19 := U18
-543 [-]: MOVE      R20 R18      ; R20 := R18
-544 [-]: GETUPVAL  R21 U15      ; R21 := U15
-545 [-]: GETUPVAL  R22 U16      ; R22 := U16
-546 [-]: GETTABLE  R21 R21 R22  ; R21 := R21[R22]
-547 [-]: SELF      R21 R21 K92  ; R22 := R21; R21 := R21["0x178C31B9"]
-548 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-549 [-]: LOADK     R22 K44      ; R22 := 1
-550 [-]: LEN       R23 R21      ; R23 := # R21
-551 [-]: LOADK     R24 K44      ; R24 := 1
-552 [-]: FORPREP   R22 567      ; R22 -= R24; PC := 567
-553 [-]: GETUPVAL  R26 U15      ; R26 := U15
-554 [-]: GETUPVAL  R27 U16      ; R27 := U16
-555 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-556 [-]: SELF      R26 R26 K93  ; R27 := R26; R26 := R26["0x96C67B0"]
-557 [-]: GETTABLE  R28 R21 R25  ; R28 := R21[R25]
-558 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-559 [-]: SETTABLE  R21 R25 R26  ; R21[R25] := R26
-560 [-]: GETUPVAL  R26 U15      ; R26 := U15
-561 [-]: GETUPVAL  R27 U14      ; R27 := U14
-562 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-563 [-]: SELF      R26 R26 K91  ; R27 := R26; R26 := R26["0x27D983EC"]
-564 [-]: GETTABLE  R28 R21 R25  ; R28 := R21[R25]
-565 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-566 [-]: SETTABLE  R21 R25 R26  ; R21[R25] := R26
-567 [-]: FORLOOP   R22 553      ; R22 += R24; if R22 <= R23 then begin PC := 553; R25 := R22 end
-568 [-]: GETUPVAL  R26 U15      ; R26 := U15
-569 [-]: GETUPVAL  R27 U14      ; R27 := U14
-570 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-571 [-]: SELF      R26 R26 K94  ; R27 := R26; R26 := R26["0x75123FC4"]
-572 [-]: MOVE      R28 R19      ; R28 := R19
-573 [-]: MOVE      R29 R20      ; R29 := R20
-574 [-]: MOVE      R30 R21      ; R30 := R21
-575 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
-576 [-]: GETUPVAL  R26 U15      ; R26 := U15
-577 [-]: GETUPVAL  R27 U14      ; R27 := U14
-578 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-579 [-]: SELF      R26 R26 K95  ; R27 := R26; R26 := R26["0x1E436B2A"]
-580 [-]: CALL      R26 2 1      ; R26(R27)
-581 [-]: JMP       651          ; PC := 651
-582 [-]: GETUPVAL  R26 U11      ; R26 := U11
-583 [-]: GETTABLE  R26 R26 K75  ; R26 := R26["mAltDown"]
-584 [-]: TEST      R26 0        ; if not R26 then PC := 598
-585 [-]: JMP       598          ; PC := 598
-586 [-]: GETUPVAL  R26 U15      ; R26 := U15
-587 [-]: GETUPVAL  R27 U14      ; R27 := U14
-588 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-589 [-]: SELF      R26 R26 K96  ; R27 := R26; R26 := R26["0x5BD03F6B"]
-590 [-]: NEWTABLE  R28 0 0      ; R28 := {}
-591 [-]: CALL      R26 3 1      ; R26(R27,R28)
-592 [-]: GETUPVAL  R26 U15      ; R26 := U15
-593 [-]: GETUPVAL  R27 U14      ; R27 := U14
-594 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-595 [-]: SELF      R26 R26 K95  ; R27 := R26; R26 := R26["0x1E436B2A"]
-596 [-]: CALL      R26 2 1      ; R26(R27)
-597 [-]: JMP       651          ; PC := 651
-598 [-]: GETUPVAL  R26 U11      ; R26 := U11
-599 [-]: GETTABLE  R26 R26 K62  ; R26 := R26["mControlDown"]
-600 [-]: TEST      R26 1        ; if R26 then PC := 651
-601 [-]: JMP       651          ; PC := 651
-602 [-]: GETUPVAL  R26 U15      ; R26 := U15
-603 [-]: GETUPVAL  R27 U14      ; R27 := U14
-604 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-605 [-]: SELF      R26 R26 K97  ; R27 := R26; R26 := R26["0xD856231D"]
-606 [-]: GETUPVAL  R28 U9       ; R28 := U9
-607 [-]: CALL      R28 1 0      ; R28,... := R28()
-608 [-]: CALL      R26 0 1      ; R26(R27,...)
-609 [-]: GETUPVAL  R26 U15      ; R26 := U15
-610 [-]: GETUPVAL  R27 U14      ; R27 := U14
-611 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
-612 [-]: SELF      R26 R26 K95  ; R27 := R26; R26 := R26["0x1E436B2A"]
-613 [-]: CALL      R26 2 1      ; R26(R27)
-614 [-]: JMP       651          ; PC := 651
-615 [-]: GETUPVAL  R26 U3       ; R26 := U3
-616 [-]: GETTABLE  R26 R26 K23  ; R26 := R26["Node"]
-617 [-]: TEST      R26 0        ; if not R26 then PC := 630
-618 [-]: JMP       630          ; PC := 630
-619 [-]: CLOSURE   R26 0        ; R26 := closure(Function #147.1)
-620 [-]: GETUPVAL  R0 U3        ; R0 := U3
-621 [-]: GETUPVAL  R0 U20       ; R0 := U20
-622 [-]: GETUPVAL  R0 U21       ; R0 := U21
-623 [-]: GETUPVAL  R0 U4        ; R0 := U4
-624 [-]: GETUPVAL  R0 U22       ; R0 := U22
-625 [-]: GETUPVAL  R0 U5        ; R0 := U5
-626 [-]: GETUPVAL  R0 U23       ; R0 := U23
-627 [-]: GETUPVAL  R0 U24       ; R0 := U24
-628 [-]: MOVE      R26 R19      ; R26 := R19
-629 [-]: JMP       651          ; PC := 651
-630 [-]: GETUPVAL  R26 U3       ; R26 := U3
-631 [-]: GETTABLE  R26 R26 K21  ; R26 := R26["Region"]
-632 [-]: TEST      R26 0        ; if not R26 then PC := 639
-633 [-]: JMP       639          ; PC := 639
-634 [-]: GETUPVAL  R26 U25      ; R26 := U25
-635 [-]: GETUPVAL  R27 U3       ; R27 := U3
-636 [-]: GETTABLE  R27 R27 K21  ; R27 := R27["Region"]
-637 [-]: CALL      R26 2 1      ; R26(R27)
-638 [-]: JMP       651          ; PC := 651
-639 [-]: GETUPVAL  R26 U26      ; R26 := U26
-640 [-]: GETTABLE  R26 R26 K98  ; R26 := R26["IsVisible"]
-641 [-]: TEST      R26 1        ; if R26 then PC := 651
-642 [-]: JMP       651          ; PC := 651
-643 [-]: GETGLOBAL R26 K32      ; R26 := Engine
-644 [-]: GETTABLE  R26 R26 K99  ; R26 := R26["0x918EF8CE"]
-645 [-]: CALL      R26 1 2      ; R26 := R26()
-646 [-]: TEST      R26 1        ; if R26 then PC := 651
-647 [-]: JMP       651          ; PC := 651
-648 [-]: GETUPVAL  R26 U13      ; R26 := U13
-649 [-]: SELF      R26 R26 K87  ; R27 := R26; R26 := R26["0x3AEEE6C2"]
-650 [-]: CALL      R26 2 1      ; R26(R27)
-651 [-]: MOVE      R26 R0       ; R26 := R0
-652 [-]: RETURN    R26 2        ; return R26
-653 [-]: RETURN    R0 1         ; return 
+452 [-]: SETTABLE  R15 K81 R16  ; R15["mInitialRotation"] := R16
+453 [-]: GETUPVAL  R15 U9       ; R15 := U9
+454 [-]: GETUPVAL  R16 U6       ; R16 := U6
+455 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["0x5328C56B"]
+456 [-]: GETGLOBAL R17 K2       ; R17 := mMovie
+457 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+458 [-]: SETTABLE  R15 K59 R16  ; R15["mInitialMousePosition"] := R16
+459 [-]: GETUPVAL  R15 U9       ; R15 := U9
+460 [-]: SETTABLE  R15 K75 K80  ; R15["mEditingRotation"] := "0x1"
+461 [-]: JMP       483          ; PC := 483
+462 [-]: GETUPVAL  R15 U9       ; R15 := U9
+463 [-]: GETGLOBAL R16 K52      ; R16 := 0x221C9700
+464 [-]: GETUPVAL  R17 U3       ; R17 := U3
+465 [-]: GETTABLE  R17 R17 K21  ; R17 := R17["Node"]
+466 [-]: GETTABLE  R17 R17 K71  ; R17 := R17["deco"]
+467 [-]: GETTABLE  R17 R17 K87  ; R17 := R17["mOffset"]
+468 [-]: GETTABLE  R17 R17 K54  ; R17 := R17["x"]
+469 [-]: GETUPVAL  R18 U3       ; R18 := U3
+470 [-]: GETTABLE  R18 R18 K21  ; R18 := R18["Node"]
+471 [-]: GETTABLE  R18 R18 K71  ; R18 := R18["deco"]
+472 [-]: GETTABLE  R18 R18 K87  ; R18 := R18["mOffset"]
+473 [-]: GETTABLE  R18 R18 K55  ; R18 := R18["y"]
+474 [-]: GETUPVAL  R19 U3       ; R19 := U3
+475 [-]: GETTABLE  R19 R19 K21  ; R19 := R19["Node"]
+476 [-]: GETTABLE  R19 R19 K71  ; R19 := R19["deco"]
+477 [-]: GETTABLE  R19 R19 K87  ; R19 := R19["mOffset"]
+478 [-]: GETTABLE  R19 R19 K56  ; R19 := R19["z"]
+479 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+480 [-]: SETTABLE  R15 K41 R16  ; R15["mInitialPosition"] := R16
+481 [-]: GETUPVAL  R15 U9       ; R15 := U9
+482 [-]: SETTABLE  R15 K73 K80  ; R15["mEditingOffset"] := "0x1"
+483 [-]: GETUPVAL  R15 U9       ; R15 := U9
+484 [-]: GETUPVAL  R16 U10      ; R16 := U10
+485 [-]: CALL      R16 1 2      ; R16 := R16()
+486 [-]: SETTABLE  R15 K44 R16  ; R15["mInitialWorldCursor"] := R16
+487 [-]: JMP       679          ; PC := 679
+488 [-]: GETUPVAL  R15 U7       ; R15 := U7
+489 [-]: GETUPVAL  R16 U8       ; R16 := U8
+490 [-]: GETTABLE  R16 R16 K88  ; R16 := R16["EDIT_REGION_FRAMING"]
+491 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 497
+492 [-]: JMP       497          ; PC := 497
+493 [-]: GETUPVAL  R15 U14      ; R15 := U14
+494 [-]: SELF      R15 R15 K89  ; R16 := R15; R15 := R15["0x3AEEE6C2"]
+495 [-]: CALL      R15 2 1      ; R15(R16)
+496 [-]: JMP       679          ; PC := 679
+497 [-]: GETUPVAL  R15 U7       ; R15 := U7
+498 [-]: GETUPVAL  R16 U8       ; R16 := U8
+499 [-]: GETTABLE  R16 R16 K90  ; R16 := R16["EDIT_SHORTCUT_CONTROL_POINTS"]
+500 [-]: EQ        0 R15 R16    ; if R15 ~= R16 then PC := 531
+501 [-]: JMP       531          ; PC := 531
+502 [-]: GETGLOBAL R15 K36      ; R15 := 0x400E7765
+503 [-]: GETUPVAL  R16 U9       ; R16 := U9
+504 [-]: GETTABLE  R16 R16 K91  ; R16 := R16["mMovingControlPoint"]
+505 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+506 [-]: TEST      R15 1        ; if R15 then PC := 531
+507 [-]: JMP       531          ; PC := 531
+508 [-]: GETUPVAL  R15 U9       ; R15 := U9
+509 [-]: SETTABLE  R15 K92 K80  ; R15["mControlPointHeld"] := "0x1"
+510 [-]: GETUPVAL  R15 U9       ; R15 := U9
+511 [-]: GETUPVAL  R16 U10      ; R16 := U10
+512 [-]: CALL      R16 1 2      ; R16 := R16()
+513 [-]: SETTABLE  R15 K44 R16  ; R15["mInitialWorldCursor"] := R16
+514 [-]: GETUPVAL  R15 U9       ; R15 := U9
+515 [-]: GETGLOBAL R16 K52      ; R16 := 0x221C9700
+516 [-]: GETUPVAL  R17 U9       ; R17 := U9
+517 [-]: GETTABLE  R17 R17 K91  ; R17 := R17["mMovingControlPoint"]
+518 [-]: GETTABLE  R17 R17 K53  ; R17 := R17["position"]
+519 [-]: GETTABLE  R17 R17 K54  ; R17 := R17["x"]
+520 [-]: GETUPVAL  R18 U9       ; R18 := U9
+521 [-]: GETTABLE  R18 R18 K91  ; R18 := R18["mMovingControlPoint"]
+522 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["position"]
+523 [-]: GETTABLE  R18 R18 K55  ; R18 := R18["y"]
+524 [-]: GETUPVAL  R19 U9       ; R19 := U9
+525 [-]: GETTABLE  R19 R19 K91  ; R19 := R19["mMovingControlPoint"]
+526 [-]: GETTABLE  R19 R19 K53  ; R19 := R19["position"]
+527 [-]: GETTABLE  R19 R19 K56  ; R19 := R19["z"]
+528 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+529 [-]: SETTABLE  R15 K41 R16  ; R15["mInitialPosition"] := R16
+530 [-]: JMP       679          ; PC := 679
+531 [-]: GETUPVAL  R15 U15      ; R15 := U15
+532 [-]: TEST      R15 0        ; if not R15 then PC := 643
+533 [-]: JMP       643          ; PC := 643
+534 [-]: GETUPVAL  R15 U16      ; R15 := U16
+535 [-]: GETUPVAL  R16 U15      ; R16 := U15
+536 [-]: GETTABLE  R15 R15 R16  ; R15 := R15[R16]
+537 [-]: TEST      R15 0        ; if not R15 then PC := 679
+538 [-]: JMP       679          ; PC := 679
+539 [-]: GETUPVAL  R15 U12      ; R15 := U12
+540 [-]: GETTABLE  R15 R15 K65  ; R15 := R15["mShiftDown"]
+541 [-]: TEST      R15 0        ; if not R15 then PC := 610
+542 [-]: JMP       610          ; PC := 610
+543 [-]: GETUPVAL  R15 U16      ; R15 := U16
+544 [-]: GETUPVAL  R16 U17      ; R16 := U17
+545 [-]: GETTABLE  R15 R15 R16  ; R15 := R15[R16]
+546 [-]: TEST      R15 0        ; if not R15 then PC := 679
+547 [-]: JMP       679          ; PC := 679
+548 [-]: GETUPVAL  R15 U10      ; R15 := U10
+549 [-]: CALL      R15 1 2      ; R15 := R15()
+550 [-]: GETUPVAL  R16 U16      ; R16 := U16
+551 [-]: GETUPVAL  R17 U15      ; R17 := U15
+552 [-]: GETTABLE  R16 R16 R17  ; R16 := R16[R17]
+553 [-]: SELF      R16 R16 K93  ; R17 := R16; R16 := R16["0x27D983EC"]
+554 [-]: MOVE      R18 R15      ; R18 := R15
+555 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+556 [-]: GETUPVAL  R17 U16      ; R17 := U16
+557 [-]: GETUPVAL  R18 U15      ; R18 := U15
+558 [-]: GETTABLE  R17 R17 R18  ; R17 := R17[R18]
+559 [-]: SELF      R17 R17 K94  ; R18 := R17; R17 := R17["0x178C31B9"]
+560 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+561 [-]: GETUPVAL  R18 U18      ; R18 := U18
+562 [-]: MOVE      R19 R17      ; R19 := R17
+563 [-]: MOVE      R20 R16      ; R20 := R16
+564 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
+565 [-]: GETUPVAL  R19 U19      ; R19 := U19
+566 [-]: EQ        0 R19 K12    ; if R19 ~= nil then PC := 570
+567 [-]: JMP       570          ; PC := 570
+568 [-]: MOVE      R18 R19      ; R18 := R19
+569 [-]: JMP       679          ; PC := 679
+570 [-]: GETUPVAL  R19 U19      ; R19 := U19
+571 [-]: MOVE      R20 R18      ; R20 := R18
+572 [-]: GETUPVAL  R21 U16      ; R21 := U16
+573 [-]: GETUPVAL  R22 U17      ; R22 := U17
+574 [-]: GETTABLE  R21 R21 R22  ; R21 := R21[R22]
+575 [-]: SELF      R21 R21 K94  ; R22 := R21; R21 := R21["0x178C31B9"]
+576 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+577 [-]: LOADK     R22 K46      ; R22 := 1
+578 [-]: LEN       R23 R21      ; R23 := # R21
+579 [-]: LOADK     R24 K46      ; R24 := 1
+580 [-]: FORPREP   R22 595      ; R22 -= R24; PC := 595
+581 [-]: GETUPVAL  R26 U16      ; R26 := U16
+582 [-]: GETUPVAL  R27 U17      ; R27 := U17
+583 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+584 [-]: SELF      R26 R26 K95  ; R27 := R26; R26 := R26["0x96C67B0"]
+585 [-]: GETTABLE  R28 R21 R25  ; R28 := R21[R25]
+586 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+587 [-]: SETTABLE  R21 R25 R26  ; R21[R25] := R26
+588 [-]: GETUPVAL  R26 U16      ; R26 := U16
+589 [-]: GETUPVAL  R27 U15      ; R27 := U15
+590 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+591 [-]: SELF      R26 R26 K93  ; R27 := R26; R26 := R26["0x27D983EC"]
+592 [-]: GETTABLE  R28 R21 R25  ; R28 := R21[R25]
+593 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+594 [-]: SETTABLE  R21 R25 R26  ; R21[R25] := R26
+595 [-]: FORLOOP   R22 581      ; R22 += R24; if R22 <= R23 then begin PC := 581; R25 := R22 end
+596 [-]: GETUPVAL  R26 U16      ; R26 := U16
+597 [-]: GETUPVAL  R27 U15      ; R27 := U15
+598 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+599 [-]: SELF      R26 R26 K96  ; R27 := R26; R26 := R26["0x75123FC4"]
+600 [-]: MOVE      R28 R19      ; R28 := R19
+601 [-]: MOVE      R29 R20      ; R29 := R20
+602 [-]: MOVE      R30 R21      ; R30 := R21
+603 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
+604 [-]: GETUPVAL  R26 U16      ; R26 := U16
+605 [-]: GETUPVAL  R27 U15      ; R27 := U15
+606 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+607 [-]: SELF      R26 R26 K97  ; R27 := R26; R26 := R26["0x1E436B2A"]
+608 [-]: CALL      R26 2 1      ; R26(R27)
+609 [-]: JMP       679          ; PC := 679
+610 [-]: GETUPVAL  R26 U12      ; R26 := U12
+611 [-]: GETTABLE  R26 R26 K77  ; R26 := R26["mAltDown"]
+612 [-]: TEST      R26 0        ; if not R26 then PC := 626
+613 [-]: JMP       626          ; PC := 626
+614 [-]: GETUPVAL  R26 U16      ; R26 := U16
+615 [-]: GETUPVAL  R27 U15      ; R27 := U15
+616 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+617 [-]: SELF      R26 R26 K98  ; R27 := R26; R26 := R26["0x5BD03F6B"]
+618 [-]: NEWTABLE  R28 0 0      ; R28 := {}
+619 [-]: CALL      R26 3 1      ; R26(R27,R28)
+620 [-]: GETUPVAL  R26 U16      ; R26 := U16
+621 [-]: GETUPVAL  R27 U15      ; R27 := U15
+622 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+623 [-]: SELF      R26 R26 K97  ; R27 := R26; R26 := R26["0x1E436B2A"]
+624 [-]: CALL      R26 2 1      ; R26(R27)
+625 [-]: JMP       679          ; PC := 679
+626 [-]: GETUPVAL  R26 U12      ; R26 := U12
+627 [-]: GETTABLE  R26 R26 K64  ; R26 := R26["mControlDown"]
+628 [-]: TEST      R26 1        ; if R26 then PC := 679
+629 [-]: JMP       679          ; PC := 679
+630 [-]: GETUPVAL  R26 U16      ; R26 := U16
+631 [-]: GETUPVAL  R27 U15      ; R27 := U15
+632 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+633 [-]: SELF      R26 R26 K99  ; R27 := R26; R26 := R26["0xD856231D"]
+634 [-]: GETUPVAL  R28 U10      ; R28 := U10
+635 [-]: CALL      R28 1 0      ; R28,... := R28()
+636 [-]: CALL      R26 0 1      ; R26(R27,...)
+637 [-]: GETUPVAL  R26 U16      ; R26 := U16
+638 [-]: GETUPVAL  R27 U15      ; R27 := U15
+639 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+640 [-]: SELF      R26 R26 K97  ; R27 := R26; R26 := R26["0x1E436B2A"]
+641 [-]: CALL      R26 2 1      ; R26(R27)
+642 [-]: JMP       679          ; PC := 679
+643 [-]: GETUPVAL  R26 U3       ; R26 := U3
+644 [-]: GETTABLE  R26 R26 K21  ; R26 := R26["Node"]
+645 [-]: TEST      R26 0        ; if not R26 then PC := 658
+646 [-]: JMP       658          ; PC := 658
+647 [-]: CLOSURE   R26 0        ; R26 := closure(Function #145.1)
+648 [-]: GETUPVAL  R0 U3        ; R0 := U3
+649 [-]: GETUPVAL  R0 U21       ; R0 := U21
+650 [-]: GETUPVAL  R0 U22       ; R0 := U22
+651 [-]: GETUPVAL  R0 U4        ; R0 := U4
+652 [-]: GETUPVAL  R0 U23       ; R0 := U23
+653 [-]: GETUPVAL  R0 U6        ; R0 := U6
+654 [-]: GETUPVAL  R0 U24       ; R0 := U24
+655 [-]: GETUPVAL  R0 U25       ; R0 := U25
+656 [-]: MOVE      R26 R20      ; R26 := R20
+657 [-]: JMP       679          ; PC := 679
+658 [-]: GETUPVAL  R26 U3       ; R26 := U3
+659 [-]: GETTABLE  R26 R26 K22  ; R26 := R26["Region"]
+660 [-]: TEST      R26 0        ; if not R26 then PC := 667
+661 [-]: JMP       667          ; PC := 667
+662 [-]: GETUPVAL  R26 U26      ; R26 := U26
+663 [-]: GETUPVAL  R27 U3       ; R27 := U3
+664 [-]: GETTABLE  R27 R27 K22  ; R27 := R27["Region"]
+665 [-]: CALL      R26 2 1      ; R26(R27)
+666 [-]: JMP       679          ; PC := 679
+667 [-]: GETUPVAL  R26 U27      ; R26 := U27
+668 [-]: GETTABLE  R26 R26 K100 ; R26 := R26["IsVisible"]
+669 [-]: TEST      R26 1        ; if R26 then PC := 679
+670 [-]: JMP       679          ; PC := 679
+671 [-]: GETGLOBAL R26 K34      ; R26 := Engine
+672 [-]: GETTABLE  R26 R26 K101 ; R26 := R26["0xE3029851"]
+673 [-]: CALL      R26 1 2      ; R26 := R26()
+674 [-]: TEST      R26 1        ; if R26 then PC := 679
+675 [-]: JMP       679          ; PC := 679
+676 [-]: GETUPVAL  R26 U14      ; R26 := U14
+677 [-]: SELF      R26 R26 K89  ; R27 := R26; R26 := R26["0x3AEEE6C2"]
+678 [-]: CALL      R26 2 1      ; R26(R27)
+679 [-]: MOVE      R26 R0       ; R26 := R0
+680 [-]: RETURN    R26 2        ; return R26
+681 [-]: RETURN    R0 1         ; return 
 
 
-; Function #147.1:
+; Function #145.1:
 ;
 ; Name:            
-; Defined at line: 7180
+; Defined at line: 7189
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25466,10 +25464,10 @@ code size: 4
  62 [-]: RETURN    R0 1         ; return 
 
 
-; Function #148:
+; Function #146:
 ;
 ; Name:            
-; Defined at line: 7205
+; Defined at line: 7214
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25481,10 +25479,10 @@ code size: 4
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #149:
+; Function #147:
 ;
 ; Name:            
-; Defined at line: 7209
+; Defined at line: 7218
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25509,10 +25507,10 @@ code size: 4
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #150:
+; Function #148:
 ;
 ; Name:            
-; Defined at line: 7221
+; Defined at line: 7230
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25532,10 +25530,10 @@ code size: 4
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #151:
+; Function #149:
 ;
 ; Name:            
-; Defined at line: 7230
+; Defined at line: 7239
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25554,10 +25552,10 @@ code size: 4
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #152:
+; Function #150:
 ;
 ; Name:            
-; Defined at line: 7240
+; Defined at line: 7249
 ; #Upvalues:       15
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25678,10 +25676,10 @@ code size: 4
 113 [-]: RETURN    R0 1         ; return 
 
 
-; Function #153:
+; Function #151:
 ;
 ; Name:            
-; Defined at line: 7278
+; Defined at line: 7287
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25695,10 +25693,10 @@ code size: 4
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #154:
+; Function #152:
 ;
 ; Name:            
-; Defined at line: 7282
+; Defined at line: 7291
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -25712,30 +25710,30 @@ code size: 4
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #155:
+; Function #153:
 ;
 ; Name:            
-; Defined at line: 7286
+; Defined at line: 7295
 ; #Upvalues:       11
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  12
 
   1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: TEST      R2 1         ; if R2 then PC := 127
-  3 [-]: JMP       127          ; PC := 127
+  2 [-]: TEST      R2 1         ; if R2 then PC := 145
+  3 [-]: JMP       145          ; PC := 145
   4 [-]: GETGLOBAL R2 K0        ; R2 := _T
   5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["MouseInWorldStateWindow"]
-  6 [-]: TEST      R2 1         ; if R2 then PC := 127
-  7 [-]: JMP       127          ; PC := 127
+  6 [-]: TEST      R2 1         ; if R2 then PC := 145
+  7 [-]: JMP       145          ; PC := 145
   8 [-]: GETGLOBAL R2 K0        ; R2 := _T
   9 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["MouseInChatArea"]
- 10 [-]: TEST      R2 1         ; if R2 then PC := 127
- 11 [-]: JMP       127          ; PC := 127
+ 10 [-]: TEST      R2 1         ; if R2 then PC := 145
+ 11 [-]: JMP       145          ; PC := 145
  12 [-]: GETGLOBAL R2 K0        ; R2 := _T
  13 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["JunctionTasksUIRadialSector"]
- 14 [-]: EQ        0 R2 K4      ; if R2 ~= nil then PC := 127
- 15 [-]: JMP       127          ; PC := 127
+ 14 [-]: EQ        0 R2 K4      ; if R2 ~= nil then PC := 145
+ 15 [-]: JMP       145          ; PC := 145
  16 [-]: GETUPVAL  R2 U1        ; R2 := U1
  17 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["MIN_ZOOM"]
  18 [-]: GETUPVAL  R3 U1        ; R3 := U1
@@ -25766,8 +25764,8 @@ code size: 4
  43 [-]: GETGLOBAL R5 K16       ; R5 := 0xF595ADDE
  44 [-]: MOVE      R6 R1        ; R6 := R1
  45 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 46 [-]: LT        0 R5 K17     ; if R5 >= 0 then PC := 98
- 47 [-]: JMP       98           ; PC := 98
+ 46 [-]: LT        0 R5 K17     ; if R5 >= 0 then PC := 116
+ 47 [-]: JMP       116          ; PC := 116
  48 [-]: GETGLOBAL R5 K18       ; R5 := 0x400E7765
  49 [-]: GETUPVAL  R6 U5        ; R6 := U5
  50 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -25807,53 +25805,71 @@ code size: 4
  84 [-]: MOVE      R8 R1        ; R8 := R1
  85 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
  86 [-]: RETURN    R0 1         ; return 
- 87 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 88 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0xDB349344"]
- 89 [-]: GETGLOBAL R7 K25       ; R7 := 0x6374FD98
- 90 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 91 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["mTargetVal"]
- 92 [-]: ADD       R8 R8 R4     ; R8 := R8 + R4
- 93 [-]: MOVE      R9 R2        ; R9 := R2
- 94 [-]: MOVE      R10 R3       ; R10 := R3
- 95 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
- 96 [-]: CALL      R5 0 1       ; R5(R6,...)
- 97 [-]: JMP       127          ; PC := 127
- 98 [-]: GETGLOBAL R5 K16       ; R5 := 0xF595ADDE
- 99 [-]: MOVE      R6 R1        ; R6 := R1
-100 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-101 [-]: LT        0 K17 R5     ; if 0 >= R5 then PC := 127
-102 [-]: JMP       127          ; PC := 127
-103 [-]: GETUPVAL  R5 U2        ; R5 := U2
-104 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0xDB349344"]
-105 [-]: GETGLOBAL R7 K25       ; R7 := 0x6374FD98
-106 [-]: GETUPVAL  R8 U2        ; R8 := U2
-107 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["mTargetVal"]
-108 [-]: SUB       R8 R8 R4     ; R8 := R8 - R4
-109 [-]: MOVE      R9 R2        ; R9 := R2
-110 [-]: MOVE      R10 R3       ; R10 := R3
-111 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
-112 [-]: CALL      R5 0 1       ; R5(R6,...)
-113 [-]: GETGLOBAL R5 K18       ; R5 := 0x400E7765
-114 [-]: GETUPVAL  R6 U6        ; R6 := U6
-115 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-116 [-]: TEST      R5 1         ; if R5 then PC := 127
-117 [-]: JMP       127          ; PC := 127
-118 [-]: GETUPVAL  R5 U2        ; R5 := U2
-119 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["mTargetVal"]
-120 [-]: GETUPVAL  R6 U1        ; R6 := U1
-121 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["ZOOM_OUT_THRESHOLD"]
-122 [-]: LE        0 R5 R6      ; if R5 > R6 then PC := 127
-123 [-]: JMP       127          ; PC := 127
-124 [-]: GETUPVAL  R5 U10       ; R5 := U10
-125 [-]: MOVE      R6 R0        ; R6 := R0
-126 [-]: CALL      R5 2 1       ; R5(R6)
-127 [-]: RETURN    R0 1         ; return 
+ 87 [-]: MOVE      R5 R3        ; R5 := R3
+ 88 [-]: GETGLOBAL R6 K18       ; R6 := 0x400E7765
+ 89 [-]: GETUPVAL  R7 U6        ; R7 := U6
+ 90 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 91 [-]: TEST      R6 1         ; if R6 then PC := 101
+ 92 [-]: JMP       101          ; PC := 101
+ 93 [-]: GETGLOBAL R6 K24       ; R6 := math
+ 94 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["0x8B011038"]
+ 95 [-]: MOVE      R7 R5        ; R7 := R5
+ 96 [-]: GETUPVAL  R8 U6        ; R8 := U6
+ 97 [-]: GETTABLE  R8 R8 K26    ; R8 := R8["zoomedFraming"]
+ 98 [-]: GETTABLE  R8 R8 K27    ; R8 := R8["z"]
+ 99 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+100 [-]: MOVE      R5 R6        ; R5 := R6
+101 [-]: GETUPVAL  R6 U2        ; R6 := U2
+102 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["mTargetVal"]
+103 [-]: LT        0 R6 R5      ; if R6 >= R5 then PC := 145
+104 [-]: JMP       145          ; PC := 145
+105 [-]: GETUPVAL  R6 U2        ; R6 := U2
+106 [-]: SELF      R6 R6 K28    ; R7 := R6; R6 := R6["0xDB349344"]
+107 [-]: GETGLOBAL R8 K29       ; R8 := 0x6374FD98
+108 [-]: GETUPVAL  R9 U2        ; R9 := U2
+109 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mTargetVal"]
+110 [-]: ADD       R9 R9 R4     ; R9 := R9 + R4
+111 [-]: MOVE      R10 R2       ; R10 := R2
+112 [-]: MOVE      R11 R5       ; R11 := R5
+113 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+114 [-]: CALL      R6 0 1       ; R6(R7,...)
+115 [-]: JMP       145          ; PC := 145
+116 [-]: GETGLOBAL R6 K16       ; R6 := 0xF595ADDE
+117 [-]: MOVE      R7 R1        ; R7 := R1
+118 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+119 [-]: LT        0 K17 R6     ; if 0 >= R6 then PC := 145
+120 [-]: JMP       145          ; PC := 145
+121 [-]: GETUPVAL  R6 U2        ; R6 := U2
+122 [-]: SELF      R6 R6 K28    ; R7 := R6; R6 := R6["0xDB349344"]
+123 [-]: GETGLOBAL R8 K29       ; R8 := 0x6374FD98
+124 [-]: GETUPVAL  R9 U2        ; R9 := U2
+125 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["mTargetVal"]
+126 [-]: SUB       R9 R9 R4     ; R9 := R9 - R4
+127 [-]: MOVE      R10 R2       ; R10 := R2
+128 [-]: MOVE      R11 R3       ; R11 := R3
+129 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+130 [-]: CALL      R6 0 1       ; R6(R7,...)
+131 [-]: GETGLOBAL R6 K18       ; R6 := 0x400E7765
+132 [-]: GETUPVAL  R7 U6        ; R7 := U6
+133 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+134 [-]: TEST      R6 1         ; if R6 then PC := 145
+135 [-]: JMP       145          ; PC := 145
+136 [-]: GETUPVAL  R6 U2        ; R6 := U2
+137 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["mTargetVal"]
+138 [-]: GETUPVAL  R7 U1        ; R7 := U1
+139 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["ZOOM_OUT_THRESHOLD"]
+140 [-]: LE        0 R6 R7      ; if R6 > R7 then PC := 145
+141 [-]: JMP       145          ; PC := 145
+142 [-]: GETUPVAL  R6 U10       ; R6 := U10
+143 [-]: MOVE      R7 R0        ; R7 := R0
+144 [-]: CALL      R6 2 1       ; R6(R7)
+145 [-]: RETURN    R0 1         ; return 
 
 
-; Function #156:
+; Function #154:
 ;
 ; Name:            
-; Defined at line: 7318
+; Defined at line: 7334
 ; #Upvalues:       19
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -26234,44 +26250,44 @@ code size: 4
 373 [-]: RETURN    R0 1         ; return 
 
 
+; Function #155:
+;
+; Name:            
+; Defined at line: 7440
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETGLOBAL R2 K0        ; R2 := 0xF595ADDE
+  3 [-]: MOVE      R3 R0        ; R3 := R0
+  4 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
+  5 [-]: CALL      R1 0 1       ; R1(R2,...)
+  6 [-]: RETURN    R0 1         ; return 
+
+
+; Function #156:
+;
+; Name:            
+; Defined at line: 7444
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETGLOBAL R2 K0        ; R2 := 0xF595ADDE
+  3 [-]: MOVE      R3 R0        ; R3 := R0
+  4 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
+  5 [-]: CALL      R1 0 1       ; R1(R2,...)
+  6 [-]: RETURN    R0 1         ; return 
+
+
 ; Function #157:
 ;
 ; Name:            
-; Defined at line: 7424
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETGLOBAL R2 K0        ; R2 := 0xF595ADDE
-  3 [-]: MOVE      R3 R0        ; R3 := R0
-  4 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  5 [-]: CALL      R1 0 1       ; R1(R2,...)
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #158:
-;
-; Name:            
-; Defined at line: 7428
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETGLOBAL R2 K0        ; R2 := 0xF595ADDE
-  3 [-]: MOVE      R3 R0        ; R3 := R0
-  4 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  5 [-]: CALL      R1 0 1       ; R1(R2,...)
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #159:
-;
-; Name:            
-; Defined at line: 7432
+; Defined at line: 7448
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -26296,10 +26312,10 @@ code size: 4
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #160:
+; Function #158:
 ;
 ; Name:            
-; Defined at line: 7443
+; Defined at line: 7459
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -26323,10 +26339,10 @@ code size: 4
  16 [-]: RETURN    R0 1         ; return 
 
 
-; Function #161:
+; Function #159:
 ;
 ; Name:            
-; Defined at line: 7448
+; Defined at line: 7464
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -26343,10 +26359,10 @@ code size: 4
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #162:
+; Function #160:
 ;
 ; Name:            
-; Defined at line: 7454
+; Defined at line: 7470
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -26360,10 +26376,10 @@ code size: 4
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #163:
+; Function #161:
 ;
 ; Name:            
-; Defined at line: 7460
+; Defined at line: 7476
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26372,16 +26388,16 @@ code size: 4
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0x61494587"]
   3 [-]: LOADK     R2 K1        ; R2 := 0.050000000745058
-  4 [-]: CLOSURE   R3 0         ; R3 := closure(Function #163.1)
+  4 [-]: CLOSURE   R3 0         ; R3 := closure(Function #161.1)
   5 [-]: GETUPVAL  R0 U1        ; R0 := U1
   6 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #163.1:
+; Function #161.1:
 ;
 ; Name:            
-; Defined at line: 7462
+; Defined at line: 7478
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26392,10 +26408,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #164:
+; Function #162:
 ;
 ; Name:            
-; Defined at line: 7467
+; Defined at line: 7483
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26406,10 +26422,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #165:
+; Function #163:
 ;
 ; Name:            
-; Defined at line: 7471
+; Defined at line: 7487
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -26422,10 +26438,10 @@ code size: 4
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #166:
+; Function #164:
 ;
 ; Name:            
-; Defined at line: 7476
+; Defined at line: 7492
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26436,10 +26452,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #167:
+; Function #165:
 ;
 ; Name:            
-; Defined at line: 7480
+; Defined at line: 7496
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26512,14 +26528,14 @@ code size: 4
  65 [-]: RETURN    R0 1         ; return 
 
 
-; Function #168:
+; Function #166:
 ;
 ; Name:            
-; Defined at line: 7504
+; Defined at line: 7520
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  14
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETGLOBAL R2 K1        ; R2 := mMovie
@@ -26640,96 +26656,108 @@ code size: 4
 117 [-]: JMP       122          ; PC := 122
 118 [-]: GETUPVAL  R5 U0        ; R5 := U0
 119 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["TargetZoom"]
-120 [-]: EQ        0 R5 K3      ; if R5 ~= nil then PC := 130
-121 [-]: JMP       130          ; PC := 130
-122 [-]: GETUPVAL  R5 U0        ; R5 := U0
-123 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["InitialFOV"]
-124 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 180
-125 [-]: JMP       180          ; PC := 180
-126 [-]: GETUPVAL  R5 U0        ; R5 := U0
-127 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["TargetFOV"]
-128 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 180
-129 [-]: JMP       180          ; PC := 180
-130 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
-131 [-]: GETUPVAL  R6 U5        ; R6 := U5
-132 [-]: GETTABLE  R6 R6 K18    ; R6 := R6["cameraSpot"]
-133 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-134 [-]: TEST      R5 1         ; if R5 then PC := 148
-135 [-]: JMP       148          ; PC := 148
-136 [-]: GETUPVAL  R5 U5        ; R5 := U5
-137 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["cameraSpot"]
-138 [-]: SELF      R5 R5 K38    ; R6 := R5; R5 := R5["0x95E6F2AA"]
-139 [-]: GETGLOBAL R7 K39       ; R7 := 0x93034B55
-140 [-]: GETUPVAL  R8 U0        ; R8 := U0
-141 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["InitialFOV"]
-142 [-]: GETUPVAL  R9 U0        ; R9 := U0
-143 [-]: GETTABLE  R9 R9 K21    ; R9 := R9["TargetFOV"]
-144 [-]: MOVE      R10 R4       ; R10 := R4
-145 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
-146 [-]: CALL      R5 0 1       ; R5(R6,...)
-147 [-]: JMP       158          ; PC := 158
-148 [-]: GETUPVAL  R5 U4        ; R5 := U4
-149 [-]: SELF      R5 R5 K30    ; R6 := R5; R5 := R5["0x5A7A6B1"]
-150 [-]: GETGLOBAL R7 K39       ; R7 := 0x93034B55
-151 [-]: GETUPVAL  R8 U0        ; R8 := U0
-152 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["InitialZoom"]
-153 [-]: GETUPVAL  R9 U0        ; R9 := U0
-154 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["TargetZoom"]
-155 [-]: MOVE      R10 R4       ; R10 := R4
-156 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
-157 [-]: CALL      R5 0 1       ; R5(R6,...)
-158 [-]: GETUPVAL  R5 U3        ; R5 := U3
-159 [-]: SELF      R5 R5 K40    ; R6 := R5; R5 := R5["0xCE468565"]
-160 [-]: LOADK     R7 K10       ; R7 := "x"
-161 [-]: GETGLOBAL R8 K39       ; R8 := 0x93034B55
-162 [-]: GETUPVAL  R9 U0        ; R9 := U0
-163 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["InitialX"]
-164 [-]: GETUPVAL  R10 U0       ; R10 := U0
-165 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["TargetX"]
-166 [-]: MOVE      R11 R4       ; R11 := R4
-167 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
-168 [-]: CALL      R5 0 1       ; R5(R6,...)
-169 [-]: GETUPVAL  R5 U3        ; R5 := U3
-170 [-]: SELF      R5 R5 K40    ; R6 := R5; R5 := R5["0xCE468565"]
-171 [-]: LOADK     R7 K12       ; R7 := "y"
-172 [-]: GETGLOBAL R8 K39       ; R8 := 0x93034B55
-173 [-]: GETUPVAL  R9 U0        ; R9 := U0
-174 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["InitialY"]
-175 [-]: GETUPVAL  R10 U0       ; R10 := U0
-176 [-]: GETTABLE  R10 R10 K16  ; R10 := R10["TargetY"]
-177 [-]: MOVE      R11 R4       ; R11 := R4
-178 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
-179 [-]: CALL      R5 0 1       ; R5(R6,...)
-180 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
-181 [-]: GETUPVAL  R6 U7        ; R6 := U7
-182 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-183 [-]: TEST      R5 1         ; if R5 then PC := 203
-184 [-]: JMP       203          ; PC := 203
-185 [-]: GETUPVAL  R5 U6        ; R5 := U6
-186 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["Previous"]
-187 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 203
-188 [-]: JMP       203          ; PC := 203
-189 [-]: GETUPVAL  R5 U6        ; R5 := U6
-190 [-]: GETTABLE  R5 R5 K27    ; R5 := R5["Target"]
-191 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 203
-192 [-]: JMP       203          ; PC := 203
-193 [-]: GETUPVAL  R5 U7        ; R5 := U7
-194 [-]: SELF      R5 R5 K41    ; R6 := R5; R5 := R5["0xEC183DDC"]
-195 [-]: GETGLOBAL R7 K42       ; R7 := 0xE0C881B4
-196 [-]: GETUPVAL  R8 U6        ; R8 := U6
-197 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["Previous"]
-198 [-]: GETUPVAL  R9 U6        ; R9 := U6
-199 [-]: GETTABLE  R9 R9 K27    ; R9 := R9["Target"]
-200 [-]: MOVE      R10 R4       ; R10 := R4
-201 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
-202 [-]: CALL      R5 0 1       ; R5(R6,...)
-203 [-]: RETURN    R0 1         ; return 
+120 [-]: EQ        0 R5 K3      ; if R5 ~= nil then PC := 123
+121 [-]: JMP       123          ; PC := 123
+122 [-]: MOVE      R5 R0        ; R5 := R0
+123 [-]: MOVE      R5 R1        ; R5 := R1
+124 [-]: GETUPVAL  R6 U0        ; R6 := U0
+125 [-]: GETTABLE  R6 R6 K19    ; R6 := R6["InitialFOV"]
+126 [-]: EQ        1 R6 K3      ; if R6 == nil then PC := 132
+127 [-]: JMP       132          ; PC := 132
+128 [-]: GETUPVAL  R6 U0        ; R6 := U0
+129 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["TargetFOV"]
+130 [-]: EQ        0 R6 K3      ; if R6 ~= nil then PC := 133
+131 [-]: JMP       133          ; PC := 133
+132 [-]: MOVE      R6 R0        ; R6 := R0
+133 [-]: MOVE      R6 R1        ; R6 := R1
+134 [-]: TEST      R5 1         ; if R5 then PC := 138
+135 [-]: JMP       138          ; PC := 138
+136 [-]: TEST      R6 0         ; if not R6 then PC := 192
+137 [-]: JMP       192          ; PC := 192
+138 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+139 [-]: GETUPVAL  R8 U5        ; R8 := U5
+140 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["cameraSpot"]
+141 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+142 [-]: TEST      R7 1         ; if R7 then PC := 158
+143 [-]: JMP       158          ; PC := 158
+144 [-]: TEST      R6 0         ; if not R6 then PC := 158
+145 [-]: JMP       158          ; PC := 158
+146 [-]: GETUPVAL  R7 U5        ; R7 := U5
+147 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["cameraSpot"]
+148 [-]: SELF      R7 R7 K38    ; R8 := R7; R7 := R7["0x95E6F2AA"]
+149 [-]: GETGLOBAL R9 K39       ; R9 := 0x93034B55
+150 [-]: GETUPVAL  R10 U0       ; R10 := U0
+151 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["InitialFOV"]
+152 [-]: GETUPVAL  R11 U0       ; R11 := U0
+153 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["TargetFOV"]
+154 [-]: MOVE      R12 R4       ; R12 := R4
+155 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+156 [-]: CALL      R7 0 1       ; R7(R8,...)
+157 [-]: JMP       170          ; PC := 170
+158 [-]: TEST      R5 0         ; if not R5 then PC := 170
+159 [-]: JMP       170          ; PC := 170
+160 [-]: GETUPVAL  R7 U4        ; R7 := U4
+161 [-]: SELF      R7 R7 K30    ; R8 := R7; R7 := R7["0x5A7A6B1"]
+162 [-]: GETGLOBAL R9 K39       ; R9 := 0x93034B55
+163 [-]: GETUPVAL  R10 U0       ; R10 := U0
+164 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["InitialZoom"]
+165 [-]: GETUPVAL  R11 U0       ; R11 := U0
+166 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["TargetZoom"]
+167 [-]: MOVE      R12 R4       ; R12 := R4
+168 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+169 [-]: CALL      R7 0 1       ; R7(R8,...)
+170 [-]: GETUPVAL  R7 U3        ; R7 := U3
+171 [-]: SELF      R7 R7 K40    ; R8 := R7; R7 := R7["0xCE468565"]
+172 [-]: LOADK     R9 K10       ; R9 := "x"
+173 [-]: GETGLOBAL R10 K39      ; R10 := 0x93034B55
+174 [-]: GETUPVAL  R11 U0       ; R11 := U0
+175 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["InitialX"]
+176 [-]: GETUPVAL  R12 U0       ; R12 := U0
+177 [-]: GETTABLE  R12 R12 K15  ; R12 := R12["TargetX"]
+178 [-]: MOVE      R13 R4       ; R13 := R4
+179 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+180 [-]: CALL      R7 0 1       ; R7(R8,...)
+181 [-]: GETUPVAL  R7 U3        ; R7 := U3
+182 [-]: SELF      R7 R7 K40    ; R8 := R7; R7 := R7["0xCE468565"]
+183 [-]: LOADK     R9 K12       ; R9 := "y"
+184 [-]: GETGLOBAL R10 K39      ; R10 := 0x93034B55
+185 [-]: GETUPVAL  R11 U0       ; R11 := U0
+186 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["InitialY"]
+187 [-]: GETUPVAL  R12 U0       ; R12 := U0
+188 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["TargetY"]
+189 [-]: MOVE      R13 R4       ; R13 := R4
+190 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+191 [-]: CALL      R7 0 1       ; R7(R8,...)
+192 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+193 [-]: GETUPVAL  R8 U7        ; R8 := U7
+194 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+195 [-]: TEST      R7 1         ; if R7 then PC := 215
+196 [-]: JMP       215          ; PC := 215
+197 [-]: GETUPVAL  R7 U6        ; R7 := U6
+198 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["Previous"]
+199 [-]: EQ        1 R7 K3      ; if R7 == nil then PC := 215
+200 [-]: JMP       215          ; PC := 215
+201 [-]: GETUPVAL  R7 U6        ; R7 := U6
+202 [-]: GETTABLE  R7 R7 K27    ; R7 := R7["Target"]
+203 [-]: EQ        1 R7 K3      ; if R7 == nil then PC := 215
+204 [-]: JMP       215          ; PC := 215
+205 [-]: GETUPVAL  R7 U7        ; R7 := U7
+206 [-]: SELF      R7 R7 K41    ; R8 := R7; R7 := R7["0xEC183DDC"]
+207 [-]: GETGLOBAL R9 K42       ; R9 := 0xE0C881B4
+208 [-]: GETUPVAL  R10 U6       ; R10 := U6
+209 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["Previous"]
+210 [-]: GETUPVAL  R11 U6       ; R11 := U6
+211 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["Target"]
+212 [-]: MOVE      R12 R4       ; R12 := R4
+213 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+214 [-]: CALL      R7 0 1       ; R7(R8,...)
+215 [-]: RETURN    R0 1         ; return 
 
 
-; Function #169:
+; Function #167:
 ;
 ; Name:            
-; Defined at line: 7558
+; Defined at line: 7576
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26747,10 +26775,10 @@ code size: 4
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #170:
+; Function #168:
 ;
 ; Name:            
-; Defined at line: 7565
+; Defined at line: 7583
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26761,10 +26789,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #171:
+; Function #169:
 ;
 ; Name:            
-; Defined at line: 7569
+; Defined at line: 7587
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26821,10 +26849,10 @@ code size: 4
  49 [-]: RETURN    R0 1         ; return 
 
 
-; Function #172:
+; Function #170:
 ;
 ; Name:            
-; Defined at line: 7584
+; Defined at line: 7602
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -26837,10 +26865,10 @@ code size: 4
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #173:
+; Function #171:
 ;
 ; Name:            
-; Defined at line: 7589
+; Defined at line: 7607
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -26851,10 +26879,10 @@ code size: 4
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #174:
+; Function #172:
 ;
 ; Name:            
-; Defined at line: 7593
+; Defined at line: 7611
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

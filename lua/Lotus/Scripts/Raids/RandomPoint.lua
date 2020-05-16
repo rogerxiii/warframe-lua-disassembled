@@ -1,6 +1,6 @@
 code size: 201
 code size: 20
-code size: 56
+code size: 73
 code size: 21
 code size: 35
 code size: 75
@@ -15,7 +15,7 @@ code size: 43
 code size: 10
 code size: 198
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Raids\RandomPoint.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Raids\RandomPoint.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -267,68 +267,85 @@ code size: 198
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0xE20DC519"]
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: GETGLOBAL R1 K1        ; R1 := Lotus_Game
-  5 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["MT_RAID"]
-  6 [-]: EQ        1 R0 R1      ; if R0 == R1 then PC := 9
-  7 [-]: JMP       9            ; PC := 9
-  8 [-]: RETURN    R0 1         ; return 
-  9 [-]: GETGLOBAL R0 K3        ; R0 := gRegion
- 10 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0["0xA76F0612"]
- 11 [-]: GETGLOBAL R2 K5        ; R2 := 0xEC274B1A
- 12 [-]: LOADK     R3 K6        ; R3 := "Raid"
- 13 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
- 14 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 15 [-]: GETGLOBAL R1 K7        ; R1 := 0x63B09107
- 16 [-]: MOVE      R2 R0        ; R2 := R0
- 17 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
- 18 [-]: JMP       54           ; PC := 54
- 19 [-]: GETGLOBAL R6 K3        ; R6 := gRegion
- 20 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xA559F558"]
- 21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: TEST      R6 0         ; if not R6 then PC := 45
- 23 [-]: JMP       45           ; PC := 45
- 24 [-]: SELF      R6 R5 K9     ; R7 := R5; R6 := R5["0x8B598ED4"]
- 25 [-]: GETGLOBAL R8 K10       ; R8 := gTriggerType
- 26 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 27 [-]: TEST      R6 0         ; if not R6 then PC := 45
- 28 [-]: JMP       45           ; PC := 45
- 29 [-]: SELF      R6 R5 K11    ; R7 := R5; R6 := R5["0xC5E91BA6"]
- 30 [-]: CALL      R6 2 1       ; R6(R7)
- 31 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 32 [-]: SELF      R6 R6 K12    ; R7 := R6; R6 := R6["0x2359D5C"]
- 33 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 34 [-]: TEST      R6 0         ; if not R6 then PC := 54
- 35 [-]: JMP       54           ; PC := 54
- 36 [-]: SELF      R6 R5 K9     ; R7 := R5; R6 := R5["0x8B598ED4"]
- 37 [-]: GETGLOBAL R8 K13       ; R8 := gDamageTriggerType
- 38 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 39 [-]: TEST      R6 0         ; if not R6 then PC := 54
- 40 [-]: JMP       54           ; PC := 54
- 41 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5["0x155B2C47"]
- 42 [-]: LOADK     R8 K15       ; R8 := 10
- 43 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 44 [-]: JMP       54           ; PC := 54
- 45 [-]: SELF      R6 R5 K9     ; R7 := R5; R6 := R5["0x8B598ED4"]
- 46 [-]: GETGLOBAL R8 K16       ; R8 := gEntityType
- 47 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 48 [-]: TEST      R6 0         ; if not R6 then PC := 54
- 49 [-]: JMP       54           ; PC := 54
- 50 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x7DBDDA0B"]
- 51 [-]: MOVE      R8 R1        ; R8 := R1
- 52 [-]: MOVE      R9 R1        ; R9 := R1
- 53 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 54 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 19; R3 := R4 end
- 55 [-]: JMP       19           ; PC := 19
- 56 [-]: RETURN    R0 1         ; return 
+  4 [-]: TEST      R0 0         ; if not R0 then PC := 18
+  5 [-]: JMP       18           ; PC := 18
+  6 [-]: GETGLOBAL R0 K1        ; R0 := 0x12F3CEFA
+  7 [-]: GETGLOBAL R1 K2        ; R1 := gRegion
+  8 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0xA559F558"]
+  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 10 [-]: MOVE      R1 R1        ; R1 := R1
+ 11 [-]: CALL      R0 2 1       ; R0(R1)
+ 12 [-]: GETGLOBAL R0 K4        ; R0 := 0x201191EA
+ 13 [-]: LOADK     R1 K5        ; R1 := 0
+ 14 [-]: CALL      R0 2 1       ; R0(R1)
+ 15 [-]: GETGLOBAL R0 K6        ; R0 := gGameRules
+ 16 [-]: MOVE      R0 R0        ; R0 := R0
+ 17 [-]: JMP       1            ; PC := 1
+ 18 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 19 [-]: SELF      R0 R0 K7     ; R1 := R0; R0 := R0["0xE20DC519"]
+ 20 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 21 [-]: GETGLOBAL R1 K8        ; R1 := Lotus_Game
+ 22 [-]: GETTABLE  R1 R1 K9     ; R1 := R1["MT_RAID"]
+ 23 [-]: EQ        1 R0 R1      ; if R0 == R1 then PC := 26
+ 24 [-]: JMP       26           ; PC := 26
+ 25 [-]: RETURN    R0 1         ; return 
+ 26 [-]: GETGLOBAL R0 K2        ; R0 := gRegion
+ 27 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0["0xA76F0612"]
+ 28 [-]: GETGLOBAL R2 K11       ; R2 := 0xEC274B1A
+ 29 [-]: LOADK     R3 K12       ; R3 := "Raid"
+ 30 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
+ 31 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
+ 32 [-]: GETGLOBAL R1 K13       ; R1 := 0x63B09107
+ 33 [-]: MOVE      R2 R0        ; R2 := R0
+ 34 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
+ 35 [-]: JMP       71           ; PC := 71
+ 36 [-]: GETGLOBAL R6 K2        ; R6 := gRegion
+ 37 [-]: SELF      R6 R6 K3     ; R7 := R6; R6 := R6["0xA559F558"]
+ 38 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 39 [-]: TEST      R6 0         ; if not R6 then PC := 62
+ 40 [-]: JMP       62           ; PC := 62
+ 41 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5["0x8B598ED4"]
+ 42 [-]: GETGLOBAL R8 K15       ; R8 := gTriggerType
+ 43 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 44 [-]: TEST      R6 0         ; if not R6 then PC := 62
+ 45 [-]: JMP       62           ; PC := 62
+ 46 [-]: SELF      R6 R5 K16    ; R7 := R5; R6 := R5["0xC5E91BA6"]
+ 47 [-]: CALL      R6 2 1       ; R6(R7)
+ 48 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 49 [-]: SELF      R6 R6 K17    ; R7 := R6; R6 := R6["0x2359D5C"]
+ 50 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 51 [-]: TEST      R6 0         ; if not R6 then PC := 71
+ 52 [-]: JMP       71           ; PC := 71
+ 53 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5["0x8B598ED4"]
+ 54 [-]: GETGLOBAL R8 K18       ; R8 := gDamageTriggerType
+ 55 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 56 [-]: TEST      R6 0         ; if not R6 then PC := 71
+ 57 [-]: JMP       71           ; PC := 71
+ 58 [-]: SELF      R6 R5 K19    ; R7 := R5; R6 := R5["0x155B2C47"]
+ 59 [-]: LOADK     R8 K20       ; R8 := 10
+ 60 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 61 [-]: JMP       71           ; PC := 71
+ 62 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5["0x8B598ED4"]
+ 63 [-]: GETGLOBAL R8 K21       ; R8 := gEntityType
+ 64 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 65 [-]: TEST      R6 0         ; if not R6 then PC := 71
+ 66 [-]: JMP       71           ; PC := 71
+ 67 [-]: SELF      R6 R5 K22    ; R7 := R5; R6 := R5["0x7DBDDA0B"]
+ 68 [-]: MOVE      R8 R1        ; R8 := R1
+ 69 [-]: MOVE      R9 R1        ; R9 := R1
+ 70 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 71 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 36; R3 := R4 end
+ 72 [-]: JMP       36           ; PC := 36
+ 73 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 114
+; Defined at line: 121
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -360,7 +377,7 @@ code size: 198
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 122
+; Defined at line: 129
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -406,7 +423,7 @@ code size: 198
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 146
+; Defined at line: 153
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -492,7 +509,7 @@ code size: 198
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 172
+; Defined at line: 179
 ; #Upvalues:       15
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1013,7 +1030,7 @@ code size: 198
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 379
+; Defined at line: 386
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1082,7 +1099,7 @@ code size: 198
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 400
+; Defined at line: 407
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1177,7 +1194,7 @@ code size: 198
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 419
+; Defined at line: 426
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1411,7 +1428,7 @@ code size: 198
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 500
+; Defined at line: 507
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1496,7 +1513,7 @@ code size: 198
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 530
+; Defined at line: 537
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1540,7 +1557,7 @@ code size: 198
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 538
+; Defined at line: 545
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1737,7 +1754,7 @@ code size: 198
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 588
+; Defined at line: 595
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1791,7 +1808,7 @@ code size: 198
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 603
+; Defined at line: 610
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1812,7 +1829,7 @@ code size: 198
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 609
+; Defined at line: 616
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0

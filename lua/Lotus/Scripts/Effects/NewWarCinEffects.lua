@@ -1,16 +1,15 @@
-code size: 31
+code size: 28
 code size: 14
-code size: 33
+code size: 32
 code size: 31
 code size: 38
-code size: 6
 code size: 58
 code size: 80
 code size: 17
 code size: 20
 code size: 22
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\NewWarCinEffects.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\NewWarCinEffects.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -32,24 +31,21 @@ code size: 22
  11 [-]: SETGLOBAL R0 K6        ; VisionFadeOut := R0
  12 [-]: SETGLOBAL R0 K7        ; 0xE885E776 := R0
  13 [-]: CLOSURE   R0 4         ; R0 := closure(Function #5)
- 14 [-]: SETGLOBAL R0 K8        ; VisionWindUpdate := R0
- 15 [-]: SETGLOBAL R0 K9        ; 0xDE2EF6AE := R0
+ 14 [-]: SETGLOBAL R0 K8        ; SentientScareInit := R0
+ 15 [-]: SETGLOBAL R0 K9        ; 0x60F12C8 := R0
  16 [-]: CLOSURE   R0 5         ; R0 := closure(Function #6)
- 17 [-]: SETGLOBAL R0 K10       ; SentientScareInit := R0
- 18 [-]: SETGLOBAL R0 K11       ; 0x60F12C8 := R0
+ 17 [-]: SETGLOBAL R0 K10       ; SentientScareFadeIn := R0
+ 18 [-]: SETGLOBAL R0 K11       ; 0x6D66DEFC := R0
  19 [-]: CLOSURE   R0 6         ; R0 := closure(Function #7)
- 20 [-]: SETGLOBAL R0 K12       ; SentientScareFadeIn := R0
- 21 [-]: SETGLOBAL R0 K13       ; 0x6D66DEFC := R0
+ 20 [-]: SETGLOBAL R0 K12       ; HairMask := R0
+ 21 [-]: SETGLOBAL R0 K13       ; 0xBA34163B := R0
  22 [-]: CLOSURE   R0 7         ; R0 := closure(Function #8)
- 23 [-]: SETGLOBAL R0 K14       ; HairMask := R0
- 24 [-]: SETGLOBAL R0 K15       ; 0xBA34163B := R0
+ 23 [-]: SETGLOBAL R0 K14       ; VoidTransitionPost := R0
+ 24 [-]: SETGLOBAL R0 K15       ; 0x1BEB63FC := R0
  25 [-]: CLOSURE   R0 8         ; R0 := closure(Function #9)
- 26 [-]: SETGLOBAL R0 K16       ; VoidTransitionPost := R0
- 27 [-]: SETGLOBAL R0 K17       ; 0x1BEB63FC := R0
- 28 [-]: CLOSURE   R0 9         ; R0 := closure(Function #10)
- 29 [-]: SETGLOBAL R0 K18       ; LotusBackgroundGlow := R0
- 30 [-]: SETGLOBAL R0 K19       ; 0xD1ED07CB := R0
- 31 [-]: RETURN    R0 1         ; return 
+ 26 [-]: SETGLOBAL R0 K16       ; LotusBackgroundGlow := R0
+ 27 [-]: SETGLOBAL R0 K17       ; 0xD1ED07CB := R0
+ 28 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -84,47 +80,46 @@ code size: 22
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  4
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x221C9700
   2 [-]: LOADK     R1 K1        ; R1 := 720
   3 [-]: LOADK     R2 K2        ; R2 := -960
   4 [-]: LOADK     R3 K3        ; R3 := -600
   5 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
-  6 [-]: LOADK     R1 K4        ; R1 := 0
-  7 [-]: GETGLOBAL R2 K5        ; R2 := 0x400E7765
-  8 [-]: GETGLOBAL R3 K6        ; R3 := zoneAttr
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: TEST      R2 1         ; if R2 then PC := 33
- 11 [-]: JMP       33           ; PC := 33
- 12 [-]: GETGLOBAL R2 K5        ; R2 := 0x400E7765
- 13 [-]: GETGLOBAL R3 K7        ; R3 := gRegion
- 14 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0x7B2F8B2F"]
- 15 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 16 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 17 [-]: TEST      R2 1         ; if R2 then PC := 33
- 18 [-]: JMP       33           ; PC := 33
- 19 [-]: GETTABLE  R2 R0 K9     ; R2 := R0["z"]
- 20 [-]: GETGLOBAL R3 K10       ; R3 := 0x4CDEF9FF
- 21 [-]: CALL      R3 1 2       ; R3 := R3()
- 22 [-]: MUL       R3 R3 K11    ; R3 := R3 * 2
- 23 [-]: SUB       R2 R2 R3     ; R2 := R2 - R3
- 24 [-]: SETTABLE  R0 K9 R2     ; R0["z"] := R2
- 25 [-]: GETGLOBAL R2 K6        ; R2 := zoneAttr
- 26 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2["0xEC183DDC"]
- 27 [-]: MOVE      R4 R0        ; R4 := R0
- 28 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 29 [-]: GETGLOBAL R2 K13       ; R2 := 0x201191EA
- 30 [-]: LOADK     R3 K4        ; R3 := 0
- 31 [-]: CALL      R2 2 1       ; R2(R3)
- 32 [-]: JMP       7            ; PC := 7
- 33 [-]: RETURN    R0 1         ; return 
+  6 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
+  7 [-]: GETGLOBAL R2 K5        ; R2 := zoneAttr
+  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  9 [-]: TEST      R1 1         ; if R1 then PC := 32
+ 10 [-]: JMP       32           ; PC := 32
+ 11 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
+ 12 [-]: GETGLOBAL R2 K6        ; R2 := gRegion
+ 13 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0x7B2F8B2F"]
+ 14 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
+ 15 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
+ 16 [-]: TEST      R1 1         ; if R1 then PC := 32
+ 17 [-]: JMP       32           ; PC := 32
+ 18 [-]: GETTABLE  R1 R0 K8     ; R1 := R0["z"]
+ 19 [-]: GETGLOBAL R2 K9        ; R2 := 0x4CDEF9FF
+ 20 [-]: CALL      R2 1 2       ; R2 := R2()
+ 21 [-]: MUL       R2 R2 K10    ; R2 := R2 * 2
+ 22 [-]: SUB       R1 R1 R2     ; R1 := R1 - R2
+ 23 [-]: SETTABLE  R0 K8 R1     ; R0["z"] := R1
+ 24 [-]: GETGLOBAL R1 K5        ; R1 := zoneAttr
+ 25 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1["0xEC183DDC"]
+ 26 [-]: MOVE      R3 R0        ; R3 := R0
+ 27 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 28 [-]: GETGLOBAL R1 K12       ; R1 := 0x201191EA
+ 29 [-]: LOADK     R2 K13       ; R2 := 0
+ 30 [-]: CALL      R1 2 1       ; R1(R2)
+ 31 [-]: JMP       6            ; PC := 6
+ 32 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 24
+; Defined at line: 23
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -166,7 +161,7 @@ code size: 22
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 38
+; Defined at line: 37
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -215,24 +210,7 @@ code size: 22
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 55
-; #Upvalues:       0
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x221C9700
-  2 [-]: LOADK     R2 K1        ; R2 := -2.5
-  3 [-]: LOADK     R3 K2        ; R3 := 0.40000000596046
-  4 [-]: LOADK     R4 K3        ; R4 := -1
-  5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 60
+; Defined at line: 54
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -298,10 +276,10 @@ code size: 22
  58 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 81
+; Defined at line: 75
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -389,10 +367,10 @@ code size: 22
  80 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 112
+; Defined at line: 106
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -417,10 +395,10 @@ code size: 22
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 120
+; Defined at line: 114
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -448,10 +426,10 @@ code size: 22
  20 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 130
+; Defined at line: 124
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

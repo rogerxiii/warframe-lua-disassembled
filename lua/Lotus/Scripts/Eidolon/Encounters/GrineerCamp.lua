@@ -1,6 +1,5 @@
-code size: 76
+code size: 74
 code size: 190
-code size: 14
 code size: 14
 code size: 68
 code size: 28
@@ -13,14 +12,14 @@ code size: 7
 code size: 3
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\Encounters\GrineerCamp.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\Encounters\GrineerCamp.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  19
+; Max Stack Size:  18
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "LureAvatar"
@@ -65,39 +64,37 @@ code size: 5
  41 [-]: CLOSURE   R13 4        ; R13 := closure(Function #5)
  42 [-]: MOVE      R0 R8        ; R0 := R8
  43 [-]: CLOSURE   R14 5        ; R14 := closure(Function #6)
- 44 [-]: MOVE      R0 R8        ; R0 := R8
+ 44 [-]: MOVE      R0 R0        ; R0 := R0
  45 [-]: CLOSURE   R15 6        ; R15 := closure(Function #7)
- 46 [-]: MOVE      R0 R0        ; R0 := R0
- 47 [-]: CLOSURE   R16 7        ; R16 := closure(Function #8)
- 48 [-]: MOVE      R0 R2        ; R0 := R2
- 49 [-]: MOVE      R0 R5        ; R0 := R5
- 50 [-]: MOVE      R0 R3        ; R0 := R3
- 51 [-]: MOVE      R0 R0        ; R0 := R0
- 52 [-]: CLOSURE   R17 8        ; R17 := closure(Function #9)
- 53 [-]: CLOSURE   R18 9        ; R18 := closure(Function #10)
- 54 [-]: MOVE      R0 R16       ; R0 := R16
- 55 [-]: MOVE      R0 R8        ; R0 := R8
- 56 [-]: MOVE      R0 R10       ; R0 := R10
- 57 [-]: MOVE      R0 R17       ; R0 := R17
- 58 [-]: MOVE      R0 R12       ; R0 := R12
- 59 [-]: MOVE      R0 R14       ; R0 := R14
- 60 [-]: MOVE      R0 R15       ; R0 := R15
- 61 [-]: MOVE      R0 R2        ; R0 := R2
- 62 [-]: SETGLOBAL R18 K13      ; GrineerCampEncounter := R18
- 63 [-]: SETGLOBAL R18 K14      ; 0xF8361099 := R18
- 64 [-]: CLOSURE   R18 10       ; R18 := closure(Function #11)
- 65 [-]: MOVE      R0 R14       ; R0 := R14
- 66 [-]: SETGLOBAL R18 K15      ; GrineerCampShutdown := R18
- 67 [-]: SETGLOBAL R18 K16      ; 0x35BD7A88 := R18
- 68 [-]: CLOSURE   R18 11       ; R18 := closure(Function #12)
- 69 [-]: MOVE      R0 R13       ; R0 := R13
- 70 [-]: SETGLOBAL R18 K17      ; OnDeactivated := R18
- 71 [-]: SETGLOBAL R18 K18      ; 0xB85DD00B := R18
- 72 [-]: CLOSURE   R18 12       ; R18 := closure(Function #13)
- 73 [-]: MOVE      R0 R9        ; R0 := R9
- 74 [-]: SETGLOBAL R18 K19      ; OnPlayersChanged := R18
- 75 [-]: SETGLOBAL R18 K20      ; 0x1AC2CE51 := R18
- 76 [-]: RETURN    R0 1         ; return 
+ 46 [-]: MOVE      R0 R2        ; R0 := R2
+ 47 [-]: MOVE      R0 R5        ; R0 := R5
+ 48 [-]: MOVE      R0 R3        ; R0 := R3
+ 49 [-]: MOVE      R0 R0        ; R0 := R0
+ 50 [-]: CLOSURE   R16 7        ; R16 := closure(Function #8)
+ 51 [-]: CLOSURE   R17 8        ; R17 := closure(Function #9)
+ 52 [-]: MOVE      R0 R15       ; R0 := R15
+ 53 [-]: MOVE      R0 R8        ; R0 := R8
+ 54 [-]: MOVE      R0 R10       ; R0 := R10
+ 55 [-]: MOVE      R0 R16       ; R0 := R16
+ 56 [-]: MOVE      R0 R11       ; R0 := R11
+ 57 [-]: MOVE      R0 R13       ; R0 := R13
+ 58 [-]: MOVE      R0 R14       ; R0 := R14
+ 59 [-]: MOVE      R0 R2        ; R0 := R2
+ 60 [-]: SETGLOBAL R17 K13      ; GrineerCampEncounter := R17
+ 61 [-]: SETGLOBAL R17 K14      ; 0xF8361099 := R17
+ 62 [-]: CLOSURE   R17 9        ; R17 := closure(Function #10)
+ 63 [-]: MOVE      R0 R13       ; R0 := R13
+ 64 [-]: SETGLOBAL R17 K15      ; GrineerCampShutdown := R17
+ 65 [-]: SETGLOBAL R17 K16      ; 0x35BD7A88 := R17
+ 66 [-]: CLOSURE   R17 10       ; R17 := closure(Function #11)
+ 67 [-]: MOVE      R0 R12       ; R0 := R12
+ 68 [-]: SETGLOBAL R17 K17      ; OnDeactivated := R17
+ 69 [-]: SETGLOBAL R17 K18      ; 0xB85DD00B := R17
+ 70 [-]: CLOSURE   R17 11       ; R17 := closure(Function #12)
+ 71 [-]: MOVE      R0 R9        ; R0 := R9
+ 72 [-]: SETGLOBAL R17 K19      ; OnPlayersChanged := R17
+ 73 [-]: SETGLOBAL R17 K20      ; 0x1AC2CE51 := R17
+ 74 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -331,31 +328,6 @@ code size: 5
 ; Name:            
 ; Defined at line: 129
 ; #Upvalues:       1
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x63B09107
-  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: CALL      R0 2 4       ; R0,R1,R2 := R0(R1)
-  4 [-]: JMP       12           ; PC := 12
-  5 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
-  6 [-]: GETUPVAL  R6 U0        ; R6 := U0
-  7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  8 [-]: TEST      R5 1         ; if R5 then PC := 12
-  9 [-]: JMP       12           ; PC := 12
- 10 [-]: SELF      R5 R4 K2     ; R6 := R4; R5 := R4["0x2DB1272F"]
- 11 [-]: CALL      R5 2 1       ; R5(R6)
- 12 [-]: TFORLOOP  R0 2         ; R3,R4 :=  R0(R1,R2); if R3 ~= nil then begin PC = 5; R2 := R3 end
- 13 [-]: JMP       5            ; PC := 5
- 14 [-]: RETURN    R0 1         ; return 
-
-
-; Function #4:
-;
-; Name:            
-; Defined at line: 137
-; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  17
@@ -430,10 +402,10 @@ code size: 5
  68 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 162
+; Defined at line: 154
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -469,10 +441,10 @@ code size: 5
  28 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 174
+; Defined at line: 166
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -516,10 +488,10 @@ code size: 5
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 192
+; Defined at line: 184
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -552,10 +524,10 @@ code size: 5
  25 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 202
+; Defined at line: 194
 ; #Upvalues:       4
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -897,10 +869,10 @@ code size: 5
 334 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 330
+; Defined at line: 322
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -991,10 +963,10 @@ code size: 5
  83 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 362
+; Defined at line: 354
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1204,10 +1176,10 @@ code size: 5
 202 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 453
+; Defined at line: 445
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1222,10 +1194,10 @@ code size: 5
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 459
+; Defined at line: 451
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1236,10 +1208,10 @@ code size: 5
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 464
+; Defined at line: 456
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

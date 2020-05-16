@@ -8,10 +8,10 @@ code size: 22
 code size: 274
 code size: 16
 code size: 14
-code size: 28
+code size: 33
 code size: 295
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\EnemySpawner.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\EnemySpawner.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -682,40 +682,45 @@ code size: 295
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x48FBE19F"]
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := gRegion
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: MOVE      R0 R0        ; R0 := R0
-  5 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
-  6 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x9139A00"]
-  7 [-]: GETGLOBAL R2 K3        ; R2 := gPlayerSpawnType
-  8 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
-  9 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
- 10 [-]: MOVE      R2 R0        ; R2 := R0
- 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: TEST      R1 1         ; if R1 then PC := 28
- 13 [-]: JMP       28           ; PC := 28
- 14 [-]: LEN       R1 R0        ; R1 := # R0
- 15 [-]: LT        0 K5 R1      ; if 0 >= R1 then PC := 28
- 16 [-]: JMP       28           ; PC := 28
- 17 [-]: LOADK     R1 K6        ; R1 := 1
- 18 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 19 [-]: LEN       R2 R2        ; R2 := # R2
- 20 [-]: LOADK     R3 K6        ; R3 := 1
- 21 [-]: FORPREP   R1 27        ; R1 -= R3; PC := 27
- 22 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 23 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
- 24 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5["0xA9BB1F2"]
- 25 [-]: GETTABLE  R7 R0 K6     ; R7 := R0[1]
- 26 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 27 [-]: FORLOOP   R1 22        ; R1 += R3; if R1 <= R2 then begin PC := 22; R4 := R1 end
- 28 [-]: RETURN    R0 1         ; return 
+  4 [-]: TEST      R0 1         ; if R0 then PC := 33
+  5 [-]: JMP       33           ; PC := 33
+  6 [-]: GETGLOBAL R0 K1        ; R0 := gRegion
+  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x48FBE19F"]
+  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  9 [-]: MOVE      R0 R0        ; R0 := R0
+ 10 [-]: GETGLOBAL R0 K1        ; R0 := gRegion
+ 11 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0["0x9139A00"]
+ 12 [-]: GETGLOBAL R2 K4        ; R2 := gPlayerSpawnType
+ 13 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+ 14 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+ 15 [-]: MOVE      R2 R0        ; R2 := R0
+ 16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 17 [-]: TEST      R1 1         ; if R1 then PC := 33
+ 18 [-]: JMP       33           ; PC := 33
+ 19 [-]: LEN       R1 R0        ; R1 := # R0
+ 20 [-]: LT        0 K5 R1      ; if 0 >= R1 then PC := 33
+ 21 [-]: JMP       33           ; PC := 33
+ 22 [-]: LOADK     R1 K6        ; R1 := 1
+ 23 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 24 [-]: LEN       R2 R2        ; R2 := # R2
+ 25 [-]: LOADK     R3 K6        ; R3 := 1
+ 26 [-]: FORPREP   R1 32        ; R1 -= R3; PC := 32
+ 27 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 28 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
+ 29 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5["0xA9BB1F2"]
+ 30 [-]: GETTABLE  R7 R0 K6     ; R7 := R0[1]
+ 31 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 32 [-]: FORLOOP   R1 27        ; R1 += R3; if R1 <= R2 then begin PC := 27; R4 := R1 end
+ 33 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 201
+; Defined at line: 203
 ; #Upvalues:       11
 ; #Parameters:     0
 ; Is_vararg:       0

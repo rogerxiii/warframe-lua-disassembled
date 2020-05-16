@@ -1,5 +1,5 @@
 code size: 25
-code size: 47
+code size: 57
 code size: 28
 code size: 7
 code size: 7
@@ -7,7 +7,7 @@ code size: 33
 code size: 15
 code size: 14
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\HookBehavior.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\HookBehavior.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -55,56 +55,66 @@ code size: 14
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETGLOBAL R2 K1        ; R2 := hookToSymbol
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 47
-  5 [-]: JMP       47           ; PC := 47
+  4 [-]: TEST      R1 1         ; if R1 then PC := 57
+  5 [-]: JMP       57           ; PC := 57
   6 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   7 [-]: GETGLOBAL R2 K2        ; R2 := hookBehavior
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: TEST      R1 1         ; if R1 then PC := 47
- 10 [-]: JMP       47           ; PC := 47
+  9 [-]: TEST      R1 1         ; if R1 then PC := 57
+ 10 [-]: JMP       57           ; PC := 57
  11 [-]: GETGLOBAL R1 K2        ; R1 := hookBehavior
  12 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0x8B598ED4"]
  13 [-]: GETUPVAL  R3 U0        ; R3 := U0
  14 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 15 [-]: TEST      R1 0         ; if not R1 then PC := 47
- 16 [-]: JMP       47           ; PC := 47
+ 15 [-]: TEST      R1 0         ; if not R1 then PC := 57
+ 16 [-]: JMP       57           ; PC := 57
  17 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0["0xB18C895A"]
  18 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 19 [-]: TEST      R1 1         ; if R1 then PC := 22
- 20 [-]: JMP       22           ; PC := 22
- 21 [-]: RETURN    R0 1         ; return 
- 22 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0xABD9DD93"]
- 23 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 24 [-]: EQ        0 R2 K6      ; if R2 ~= nil then PC := 35
- 25 [-]: JMP       35           ; PC := 35
- 26 [-]: GETGLOBAL R3 K7        ; R3 := 0x201191EA
- 27 [-]: LOADK     R4 K8        ; R4 := 1
- 28 [-]: CALL      R3 2 1       ; R3(R4)
- 29 [-]: SELF      R3 R0 K4     ; R4 := R0; R3 := R0["0xB18C895A"]
- 30 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 31 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0xABD9DD93"]
- 32 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 33 [-]: MOVE      R2 R3        ; R2 := R3
- 34 [-]: JMP       24           ; PC := 24
- 35 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x6EB9497F"]
- 36 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 37 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 38 [-]: MOVE      R5 R3        ; R5 := R3
- 39 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 40 [-]: TEST      R4 1         ; if R4 then PC := 47
- 41 [-]: JMP       47           ; PC := 47
- 42 [-]: SELF      R4 R3 K10    ; R5 := R3; R4 := R3["0xC022C8A8"]
- 43 [-]: GETGLOBAL R6 K1        ; R6 := hookToSymbol
- 44 [-]: GETGLOBAL R7 K2        ; R7 := hookBehavior
- 45 [-]: MOVE      R8 R0        ; R8 := R0
- 46 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 47 [-]: RETURN    R0 1         ; return 
+ 19 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 20 [-]: MOVE      R3 R1        ; R3 := R1
+ 21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 22 [-]: TEST      R2 0         ; if not R2 then PC := 25
+ 23 [-]: JMP       25           ; PC := 25
+ 24 [-]: RETURN    R0 1         ; return 
+ 25 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0xABD9DD93"]
+ 26 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 27 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 28 [-]: MOVE      R4 R2        ; R4 := R2
+ 29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 30 [-]: TEST      R3 0         ; if not R3 then PC := 45
+ 31 [-]: JMP       45           ; PC := 45
+ 32 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 33 [-]: MOVE      R4 R1        ; R4 := R1
+ 34 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 35 [-]: TEST      R3 0         ; if not R3 then PC := 38
+ 36 [-]: JMP       38           ; PC := 38
+ 37 [-]: RETURN    R0 1         ; return 
+ 38 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1["0xABD9DD93"]
+ 39 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 40 [-]: MOVE      R2 R3        ; R2 := R3
+ 41 [-]: GETGLOBAL R3 K6        ; R3 := 0x201191EA
+ 42 [-]: LOADK     R4 K7        ; R4 := 1
+ 43 [-]: CALL      R3 2 1       ; R3(R4)
+ 44 [-]: JMP       27           ; PC := 27
+ 45 [-]: SELF      R3 R2 K8     ; R4 := R2; R3 := R2["0x6EB9497F"]
+ 46 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 47 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 48 [-]: MOVE      R5 R3        ; R5 := R3
+ 49 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 50 [-]: TEST      R4 1         ; if R4 then PC := 57
+ 51 [-]: JMP       57           ; PC := 57
+ 52 [-]: SELF      R4 R3 K9     ; R5 := R3; R4 := R3["0xC022C8A8"]
+ 53 [-]: GETGLOBAL R6 K1        ; R6 := hookToSymbol
+ 54 [-]: GETGLOBAL R7 K2        ; R7 := hookBehavior
+ 55 [-]: MOVE      R8 R0        ; R8 := R0
+ 56 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 57 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 27
+; Defined at line: 31
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -143,7 +153,7 @@ code size: 14
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 43
+; Defined at line: 47
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -161,7 +171,7 @@ code size: 14
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 47
+; Defined at line: 51
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -179,7 +189,7 @@ code size: 14
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 52
+; Defined at line: 56
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -223,7 +233,7 @@ code size: 14
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 62
+; Defined at line: 66
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -249,7 +259,7 @@ code size: 14
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 70
+; Defined at line: 74
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

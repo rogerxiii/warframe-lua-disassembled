@@ -12,7 +12,7 @@ code size: 698
 code size: 42
 code size: 165
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\ShieldRegenMagReplicant.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\ShieldRegenMagReplicant.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1356,11 +1356,11 @@ code size: 165
 605 [-]: GETTABLE  R54 R54 K117 ; R54 := R54["MAIN_HAND"]
 606 [-]: CALL      R52 3 2      ; R52 := R52(R53,R54)
 607 [-]: GETGLOBAL R53 K3       ; R53 := Lotus_Game
-608 [-]: GETTABLE  R53 R53 K118 ; R53 := R53["ResistanceTable_RK_ROBOTIC"]
+608 [-]: GETTABLE  R53 R53 K118 ; R53 := R53["ResistanceKeyword_RK_ROBOTIC"]
 609 [-]: EQ        1 R51 R53    ; if R51 == R53 then PC := 624
 610 [-]: JMP       624          ; PC := 624
 611 [-]: GETGLOBAL R53 K3       ; R53 := Lotus_Game
-612 [-]: GETTABLE  R53 R53 K119 ; R53 := R53["ResistanceTable_RK_MACHINERY"]
+612 [-]: GETTABLE  R53 R53 K119 ; R53 := R53["ResistanceKeyword_RK_MACHINERY"]
 613 [-]: EQ        1 R51 R53    ; if R51 == R53 then PC := 624
 614 [-]: JMP       624          ; PC := 624
 615 [-]: GETGLOBAL R53 K35      ; R53 := 0x400E7765
@@ -1534,11 +1534,11 @@ code size: 165
  21 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0xAB05A97"]
  22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  23 [-]: GETGLOBAL R4 K1        ; R4 := Lotus_Game
- 24 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["ResistanceTable_RK_ROBOTIC"]
+ 24 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["ResistanceKeyword_RK_ROBOTIC"]
  25 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 32
  26 [-]: JMP       32           ; PC := 32
  27 [-]: GETGLOBAL R4 K1        ; R4 := Lotus_Game
- 28 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["ResistanceTable_RK_MACHINERY"]
+ 28 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["ResistanceKeyword_RK_MACHINERY"]
  29 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 32
  30 [-]: JMP       32           ; PC := 32
  31 [-]: MOVE      R4 R0        ; R4 := R0

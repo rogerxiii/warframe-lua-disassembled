@@ -31,9 +31,9 @@ code size: 41
 code size: 3
 code size: 124
 code size: 35
-code size: 350
+code size: 355
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Arbitration.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Arbitration.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1393,14 +1393,14 @@ code size: 350
  94 [-]: GETGLOBAL R18 K16      ; R18 := 0x201191EA
  95 [-]: LOADK     R19 K2       ; R19 := 1
  96 [-]: CALL      R18 2 1      ; R18(R19)
- 97 [-]: JMP       92           ; PC := 92
+ 97 [-]: JMP       87           ; PC := 87
  98 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 386
+; Defined at line: 384
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1425,7 +1425,7 @@ code size: 350
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 393
+; Defined at line: 391
 ; #Upvalues:       4
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1469,7 +1469,7 @@ code size: 350
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 412
+; Defined at line: 410
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1488,7 +1488,7 @@ code size: 350
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 418
+; Defined at line: 416
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1761,7 +1761,7 @@ code size: 350
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 510
+; Defined at line: 508
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1835,7 +1835,7 @@ code size: 350
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 530
+; Defined at line: 528
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1887,7 +1887,7 @@ code size: 350
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 546
+; Defined at line: 544
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1901,7 +1901,7 @@ code size: 350
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 550
+; Defined at line: 548
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2036,7 +2036,7 @@ code size: 350
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 606
+; Defined at line: 604
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2082,7 +2082,7 @@ code size: 350
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 621
+; Defined at line: 619
 ; #Upvalues:       16
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2339,7 +2339,7 @@ code size: 350
 249 [-]: GETGLOBAL R34 K13      ; R34 := 0x63B09107
 250 [-]: MOVE      R35 R27      ; R35 := R27
 251 [-]: CALL      R34 2 4      ; R34,R35,R36 := R34(R35)
-252 [-]: JMP       344          ; PC := 344
+252 [-]: JMP       349          ; PC := 349
 253 [-]: GETGLOBAL R39 K3       ; R39 := gRegion
 254 [-]: SELF      R39 R39 K44  ; R40 := R39; R39 := R39["0xA10978B4"]
 255 [-]: GETUPVAL  R41 U13      ; R41 := U13
@@ -2352,12 +2352,12 @@ code size: 350
 262 [-]: GETGLOBAL R42 K2       ; R42 := 0x400E7765
 263 [-]: MOVE      R43 R40      ; R43 := R40
 264 [-]: CALL      R42 2 2      ; R42 := R42(R43)
-265 [-]: TEST      R42 1        ; if R42 then PC := 310
-266 [-]: JMP       310          ; PC := 310
+265 [-]: TEST      R42 1        ; if R42 then PC := 315
+266 [-]: JMP       315          ; PC := 315
 267 [-]: GETGLOBAL R42 K13      ; R42 := 0x63B09107
 268 [-]: MOVE      R43 R13      ; R43 := R13
 269 [-]: CALL      R42 2 4      ; R42,R43,R44 := R42(R43)
-270 [-]: JMP       298          ; PC := 298
+270 [-]: JMP       303          ; PC := 303
 271 [-]: SELF      R47 R46 K27  ; R48 := R46; R47 := R46["0x80B14403"]
 272 [-]: CALL      R47 2 2      ; R47 := R47(R48)
 273 [-]: GETGLOBAL R48 K2       ; R48 := 0x400E7765
@@ -2373,70 +2373,75 @@ code size: 350
 283 [-]: JMP       286          ; PC := 286
 284 [-]: MOVE      R41 R0       ; R41 := R0
 285 [-]: MOVE      R41 R1       ; R41 := R1
-286 [-]: TEST      R41 0        ; if not R41 then PC := 298
-287 [-]: JMP       298          ; PC := 298
-288 [-]: SELF      R48 R47 K46  ; R49 := R47; R48 := R47["0xDE5882DD"]
-289 [-]: CALL      R48 2 2      ; R48 := R48(R49)
-290 [-]: GETGLOBAL R49 K2       ; R49 := 0x400E7765
-291 [-]: MOVE      R50 R48      ; R50 := R48
-292 [-]: CALL      R49 2 2      ; R49 := R49(R50)
-293 [-]: TEST      R49 1        ; if R49 then PC := 300
-294 [-]: JMP       300          ; PC := 300
-295 [-]: SELF      R49 R48 K47  ; R50 := R48; R49 := R48["0x3039CE95"]
-296 [-]: CALL      R49 2 1      ; R49(R50)
-297 [-]: JMP       300          ; PC := 300
-298 [-]: TFORLOOP  R42 2        ; R45,R46 :=  R42(R43,R44); if R45 ~= nil then begin PC = 271; R44 := R45 end
-299 [-]: JMP       271          ; PC := 271
-300 [-]: TEST      R41 1        ; if R41 then PC := 344
-301 [-]: JMP       344          ; PC := 344
-302 [-]: GETUPVAL  R49 U14      ; R49 := U14
-303 [-]: MOVE      R50 R38      ; R50 := R38
-304 [-]: MOVE      R51 R39      ; R51 := R39
-305 [-]: CALL      R49 3 1      ; R49(R50,R51)
-306 [-]: GETUPVAL  R49 U15      ; R49 := U15
-307 [-]: CALL      R49 1 1      ; R49()
-308 [-]: JMP       346          ; PC := 346
-309 [-]: JMP       344          ; PC := 344
-310 [-]: MOVE      R49 R0       ; R49 := R0
-311 [-]: GETGLOBAL R50 K13      ; R50 := 0x63B09107
-312 [-]: MOVE      R51 R13      ; R51 := R13
-313 [-]: CALL      R50 2 4      ; R50,R51,R52 := R50(R51)
-314 [-]: JMP       336          ; PC := 336
-315 [-]: SELF      R55 R54 K27  ; R56 := R54; R55 := R54["0x80B14403"]
-316 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-317 [-]: GETGLOBAL R56 K2       ; R56 := 0x400E7765
-318 [-]: MOVE      R57 R55      ; R57 := R55
-319 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-320 [-]: TEST      R56 1        ; if R56 then PC := 336
-321 [-]: JMP       336          ; PC := 336
-322 [-]: SELF      R56 R55 K28  ; R57 := R55; R56 := R55["0x5A115A02"]
-323 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-324 [-]: TEST      R56 0        ; if not R56 then PC := 336
-325 [-]: JMP       336          ; PC := 336
-326 [-]: GETUPVAL  R56 U10      ; R56 := U10
-327 [-]: MOVE      R57 R55      ; R57 := R55
+286 [-]: TEST      R41 0        ; if not R41 then PC := 303
+287 [-]: JMP       303          ; PC := 303
+288 [-]: GETGLOBAL R48 K2       ; R48 := 0x400E7765
+289 [-]: MOVE      R49 R47      ; R49 := R47
+290 [-]: CALL      R48 2 2      ; R48 := R48(R49)
+291 [-]: TEST      R48 1        ; if R48 then PC := 305
+292 [-]: JMP       305          ; PC := 305
+293 [-]: SELF      R48 R47 K46  ; R49 := R47; R48 := R47["0xDE5882DD"]
+294 [-]: CALL      R48 2 2      ; R48 := R48(R49)
+295 [-]: GETGLOBAL R49 K2       ; R49 := 0x400E7765
+296 [-]: MOVE      R50 R48      ; R50 := R48
+297 [-]: CALL      R49 2 2      ; R49 := R49(R50)
+298 [-]: TEST      R49 1        ; if R49 then PC := 305
+299 [-]: JMP       305          ; PC := 305
+300 [-]: SELF      R49 R48 K47  ; R50 := R48; R49 := R48["0x3039CE95"]
+301 [-]: CALL      R49 2 1      ; R49(R50)
+302 [-]: JMP       305          ; PC := 305
+303 [-]: TFORLOOP  R42 2        ; R45,R46 :=  R42(R43,R44); if R45 ~= nil then begin PC = 271; R44 := R45 end
+304 [-]: JMP       271          ; PC := 271
+305 [-]: TEST      R41 1        ; if R41 then PC := 349
+306 [-]: JMP       349          ; PC := 349
+307 [-]: GETUPVAL  R49 U14      ; R49 := U14
+308 [-]: MOVE      R50 R38      ; R50 := R38
+309 [-]: MOVE      R51 R39      ; R51 := R39
+310 [-]: CALL      R49 3 1      ; R49(R50,R51)
+311 [-]: GETUPVAL  R49 U15      ; R49 := U15
+312 [-]: CALL      R49 1 1      ; R49()
+313 [-]: JMP       351          ; PC := 351
+314 [-]: JMP       349          ; PC := 349
+315 [-]: MOVE      R49 R0       ; R49 := R0
+316 [-]: GETGLOBAL R50 K13      ; R50 := 0x63B09107
+317 [-]: MOVE      R51 R13      ; R51 := R13
+318 [-]: CALL      R50 2 4      ; R50,R51,R52 := R50(R51)
+319 [-]: JMP       341          ; PC := 341
+320 [-]: SELF      R55 R54 K27  ; R56 := R54; R55 := R54["0x80B14403"]
+321 [-]: CALL      R55 2 2      ; R55 := R55(R56)
+322 [-]: GETGLOBAL R56 K2       ; R56 := 0x400E7765
+323 [-]: MOVE      R57 R55      ; R57 := R55
+324 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+325 [-]: TEST      R56 1        ; if R56 then PC := 341
+326 [-]: JMP       341          ; PC := 341
+327 [-]: SELF      R56 R55 K28  ; R57 := R55; R56 := R55["0x5A115A02"]
 328 [-]: CALL      R56 2 2      ; R56 := R56(R57)
-329 [-]: TEST      R56 1        ; if R56 then PC := 336
-330 [-]: JMP       336          ; PC := 336
-331 [-]: SELF      R56 R39 K48  ; R57 := R39; R56 := R39["0xE103D6D0"]
-332 [-]: MOVE      R58 R55      ; R58 := R55
-333 [-]: CALL      R56 3 1      ; R56(R57,R58)
-334 [-]: MOVE      R49 R1       ; R49 := R1
-335 [-]: JMP       338          ; PC := 338
-336 [-]: TFORLOOP  R50 2        ; R53,R54 :=  R50(R51,R52); if R53 ~= nil then begin PC = 315; R52 := R53 end
-337 [-]: JMP       315          ; PC := 315
-338 [-]: TEST      R49 1        ; if R49 then PC := 344
-339 [-]: JMP       344          ; PC := 344
-340 [-]: GETUPVAL  R56 U14      ; R56 := U14
-341 [-]: MOVE      R57 R38      ; R57 := R38
-342 [-]: MOVE      R58 R39      ; R58 := R39
-343 [-]: CALL      R56 3 1      ; R56(R57,R58)
-344 [-]: TFORLOOP  R34 2        ; R37,R38 :=  R34(R35,R36); if R37 ~= nil then begin PC = 253; R36 := R37 end
-345 [-]: JMP       253          ; PC := 253
-346 [-]: GETGLOBAL R56 K5       ; R56 := 0x201191EA
-347 [-]: LOADK     R57 K6       ; R57 := 0
-348 [-]: CALL      R56 2 1      ; R56(R57)
-349 [-]: JMP       30           ; PC := 30
-350 [-]: RETURN    R0 1         ; return 
+329 [-]: TEST      R56 0        ; if not R56 then PC := 341
+330 [-]: JMP       341          ; PC := 341
+331 [-]: GETUPVAL  R56 U10      ; R56 := U10
+332 [-]: MOVE      R57 R55      ; R57 := R55
+333 [-]: CALL      R56 2 2      ; R56 := R56(R57)
+334 [-]: TEST      R56 1        ; if R56 then PC := 341
+335 [-]: JMP       341          ; PC := 341
+336 [-]: SELF      R56 R39 K48  ; R57 := R39; R56 := R39["0xE103D6D0"]
+337 [-]: MOVE      R58 R55      ; R58 := R55
+338 [-]: CALL      R56 3 1      ; R56(R57,R58)
+339 [-]: MOVE      R49 R1       ; R49 := R1
+340 [-]: JMP       343          ; PC := 343
+341 [-]: TFORLOOP  R50 2        ; R53,R54 :=  R50(R51,R52); if R53 ~= nil then begin PC = 320; R52 := R53 end
+342 [-]: JMP       320          ; PC := 320
+343 [-]: TEST      R49 1        ; if R49 then PC := 349
+344 [-]: JMP       349          ; PC := 349
+345 [-]: GETUPVAL  R56 U14      ; R56 := U14
+346 [-]: MOVE      R57 R38      ; R57 := R38
+347 [-]: MOVE      R58 R39      ; R58 := R39
+348 [-]: CALL      R56 3 1      ; R56(R57,R58)
+349 [-]: TFORLOOP  R34 2        ; R37,R38 :=  R34(R35,R36); if R37 ~= nil then begin PC = 253; R36 := R37 end
+350 [-]: JMP       253          ; PC := 253
+351 [-]: GETGLOBAL R56 K5       ; R56 := 0x201191EA
+352 [-]: LOADK     R57 K6       ; R57 := 0
+353 [-]: CALL      R56 2 1      ; R56(R57)
+354 [-]: JMP       30           ; PC := 30
+355 [-]: RETURN    R0 1         ; return 
 
 

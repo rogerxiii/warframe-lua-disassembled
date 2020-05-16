@@ -6,7 +6,7 @@ code size: 8
 code size: 150
 code size: 27
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Sentinels\SentinelAbilities\WarframeSuckAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Sentinels\SentinelAbilities\WarframeSuckAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -39,7 +39,7 @@ code size: 27
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 4
+; Defined at line: 5
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -64,7 +64,7 @@ code size: 27
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 16
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -86,7 +86,7 @@ code size: 27
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 20
+; Defined at line: 21
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -126,7 +126,7 @@ code size: 27
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 37
+; Defined at line: 38
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -145,7 +145,7 @@ code size: 27
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 41
+; Defined at line: 42
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -209,7 +209,7 @@ code size: 27
  56 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["gSuckTriggers"]
  57 [-]: SELF      R9 R5 K10    ; R10 := R5; R9 := R5["0xAB436EF2"]
  58 [-]: GETGLOBAL R11 K11      ; R11 := triggerType
- 59 [-]: GETGLOBAL R12 K12      ; R12 := EMPTY_SYMBOL
+ 59 [-]: GETGLOBAL R12 K12      ; R12 := triggerAttachBone
  60 [-]: GETGLOBAL R13 K13      ; R13 := ZERO_VECTOR
  61 [-]: GETGLOBAL R14 K14      ; R14 := ZERO_ROTATION
  62 [-]: MOVE      R15 R1       ; R15 := R1
@@ -306,7 +306,7 @@ code size: 27
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 105
+; Defined at line: 106
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0

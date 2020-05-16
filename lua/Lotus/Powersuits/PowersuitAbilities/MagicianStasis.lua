@@ -4,10 +4,10 @@ code size: 26
 code size: 33
 code size: 3
 code size: 13
-code size: 236
+code size: 244
 code size: 64
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\MagicianStasis.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\MagicianStasis.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -368,8 +368,8 @@ code size: 64
 127 [-]: GETGLOBAL R9 K13       ; R9 := 0x400E7765
 128 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
 129 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-130 [-]: TEST      R9 1         ; if R9 then PC := 142
-131 [-]: JMP       142          ; PC := 142
+130 [-]: TEST      R9 1         ; if R9 then PC := 146
+131 [-]: JMP       146          ; PC := 146
 132 [-]: GETUPVAL  R9 U2        ; R9 := U2
 133 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["0x6A44F4B4"]
 134 [-]: MOVE      R10 R0       ; R10 := R0
@@ -377,110 +377,118 @@ code size: 64
 136 [-]: MOVE      R12 R1       ; R12 := R1
 137 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 138 [-]: GETGLOBAL R9 K33       ; R9 := gGameRules
-139 [-]: SELF      R9 R9 K36    ; R10 := R9; R9 := R9["0xC241F261"]
-140 [-]: MOVE      R11 R1       ; R11 := R1
+139 [-]: SELF      R9 R9 K36    ; R10 := R9; R9 := R9["0xFA5C61DD"]
+140 [-]: MOVE      R11 R4       ; R11 := R4
 141 [-]: CALL      R9 3 1       ; R9(R10,R11)
-142 [-]: GETGLOBAL R9 K35       ; R9 := mOwner
-143 [-]: SELF      R9 R9 K37    ; R10 := R9; R9 := R9["0xE2B32C65"]
-144 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-145 [-]: LT        0 K38 R4     ; if 0 >= R4 then PC := 178
-146 [-]: JMP       178          ; PC := 178
-147 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
-148 [-]: MOVE      R11 R1       ; R11 := R1
-149 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-150 [-]: TEST      R10 1        ; if R10 then PC := 178
-151 [-]: JMP       178          ; PC := 178
-152 [-]: SELF      R10 R1 K39   ; R11 := R1; R10 := R1["0x5A115A02"]
+142 [-]: GETGLOBAL R9 K33       ; R9 := gGameRules
+143 [-]: SELF      R9 R9 K37    ; R10 := R9; R9 := R9["0xC241F261"]
+144 [-]: MOVE      R11 R1       ; R11 := R1
+145 [-]: CALL      R9 3 1       ; R9(R10,R11)
+146 [-]: GETGLOBAL R9 K35       ; R9 := mOwner
+147 [-]: SELF      R9 R9 K38    ; R10 := R9; R9 := R9["0xE2B32C65"]
+148 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+149 [-]: LT        0 K39 R4     ; if 0 >= R4 then PC := 182
+150 [-]: JMP       182          ; PC := 182
+151 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
+152 [-]: MOVE      R11 R1       ; R11 := R1
 153 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-154 [-]: TEST      R10 1        ; if R10 then PC := 178
-155 [-]: JMP       178          ; PC := 178
-156 [-]: GETGLOBAL R10 K35      ; R10 := mOwner
-157 [-]: SELF      R10 R10 K40  ; R11 := R10; R10 := R10["0xE7AE25B5"]
-158 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-159 [-]: TEST      R10 1        ; if R10 then PC := 178
-160 [-]: JMP       178          ; PC := 178
-161 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
-162 [-]: GETGLOBAL R11 K33      ; R11 := gGameRules
-163 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-164 [-]: TEST      R10 1        ; if R10 then PC := 178
-165 [-]: JMP       178          ; PC := 178
-166 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
-167 [-]: SELF      R10 R10 K41  ; R11 := R10; R10 := R10["0x3B3B606D"]
-168 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-169 [-]: TEST      R10 0        ; if not R10 then PC := 178
-170 [-]: JMP       178          ; PC := 178
-171 [-]: GETGLOBAL R10 K14      ; R10 := _T
-172 [-]: GETTABLE  R10 R10 K42  ; R10 := R10["0x18B9D30B"]
-173 [-]: MOVE      R11 R9       ; R11 := R9
-174 [-]: MOVE      R12 R1       ; R12 := R1
-175 [-]: MOVE      R13 R4       ; R13 := R4
-176 [-]: LOADK     R14 K38      ; R14 := 0
-177 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
-178 [-]: LT        0 K38 R4     ; if 0 >= R4 then PC := 236
-179 [-]: JMP       236          ; PC := 236
-180 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
-181 [-]: MOVE      R11 R1       ; R11 := R1
-182 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-183 [-]: TEST      R10 1        ; if R10 then PC := 236
-184 [-]: JMP       236          ; PC := 236
-185 [-]: SELF      R10 R1 K39   ; R11 := R1; R10 := R1["0x5A115A02"]
+154 [-]: TEST      R10 1        ; if R10 then PC := 182
+155 [-]: JMP       182          ; PC := 182
+156 [-]: SELF      R10 R1 K40   ; R11 := R1; R10 := R1["0x5A115A02"]
+157 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+158 [-]: TEST      R10 1        ; if R10 then PC := 182
+159 [-]: JMP       182          ; PC := 182
+160 [-]: GETGLOBAL R10 K35      ; R10 := mOwner
+161 [-]: SELF      R10 R10 K41  ; R11 := R10; R10 := R10["0xE7AE25B5"]
+162 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+163 [-]: TEST      R10 1        ; if R10 then PC := 182
+164 [-]: JMP       182          ; PC := 182
+165 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
+166 [-]: GETGLOBAL R11 K33      ; R11 := gGameRules
+167 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+168 [-]: TEST      R10 1        ; if R10 then PC := 182
+169 [-]: JMP       182          ; PC := 182
+170 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
+171 [-]: SELF      R10 R10 K42  ; R11 := R10; R10 := R10["0x3B3B606D"]
+172 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+173 [-]: TEST      R10 0        ; if not R10 then PC := 182
+174 [-]: JMP       182          ; PC := 182
+175 [-]: GETGLOBAL R10 K14      ; R10 := _T
+176 [-]: GETTABLE  R10 R10 K43  ; R10 := R10["0x18B9D30B"]
+177 [-]: MOVE      R11 R9       ; R11 := R9
+178 [-]: MOVE      R12 R1       ; R12 := R1
+179 [-]: MOVE      R13 R4       ; R13 := R4
+180 [-]: LOADK     R14 K39      ; R14 := 0
+181 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+182 [-]: LT        0 K39 R4     ; if 0 >= R4 then PC := 244
+183 [-]: JMP       244          ; PC := 244
+184 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
+185 [-]: MOVE      R11 R1       ; R11 := R1
 186 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-187 [-]: TEST      R10 1        ; if R10 then PC := 236
-188 [-]: JMP       236          ; PC := 236
-189 [-]: GETGLOBAL R10 K35      ; R10 := mOwner
-190 [-]: SELF      R10 R10 K40  ; R11 := R10; R10 := R10["0xE7AE25B5"]
-191 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-192 [-]: TEST      R10 1        ; if R10 then PC := 236
-193 [-]: JMP       236          ; PC := 236
-194 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
-195 [-]: GETGLOBAL R11 K33      ; R11 := gGameRules
-196 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-197 [-]: TEST      R10 1        ; if R10 then PC := 236
-198 [-]: JMP       236          ; PC := 236
-199 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
-200 [-]: SELF      R10 R10 K41  ; R11 := R10; R10 := R10["0x3B3B606D"]
-201 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-202 [-]: TEST      R10 0        ; if not R10 then PC := 236
-203 [-]: JMP       236          ; PC := 236
-204 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
-205 [-]: MOVE      R11 R8       ; R11 := R8
-206 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-207 [-]: TEST      R10 0        ; if not R10 then PC := 214
-208 [-]: JMP       214          ; PC := 214
-209 [-]: SELF      R10 R1 K28   ; R11 := R1; R10 := R1["0x9F1DC568"]
-210 [-]: GETGLOBAL R12 K29      ; R12 := riftDecoType
-211 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-212 [-]: MOVE      R8 R10       ; R8 := R10
-213 [-]: JMP       229          ; PC := 229
-214 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
-215 [-]: SELF      R10 R10 K43  ; R11 := R10; R10 := R10["0x1B757BE0"]
-216 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-217 [-]: SELF      R11 R8 K44   ; R12 := R8; R11 := R8["0xD124E361"]
-218 [-]: GETUPVAL  R13 U3       ; R13 := U3
-219 [-]: GETGLOBAL R14 K45      ; R14 := math
-220 [-]: GETTABLE  R14 R14 K46  ; R14 := R14["0x65F9712A"]
-221 [-]: GETGLOBAL R15 K45      ; R15 := math
-222 [-]: GETTABLE  R15 R15 K47  ; R15 := R15["0xD6F2D811"]
-223 [-]: MOVE      R16 R10      ; R16 := R10
-224 [-]: LOADK     R17 K48      ; R17 := 3
-225 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-226 [-]: LOADK     R16 K6       ; R16 := 1
-227 [-]: CALL      R14 3 0      ; R14,... := R14(R15,R16)
-228 [-]: CALL      R11 0 1      ; R11(R12,...)
-229 [-]: GETGLOBAL R11 K49      ; R11 := 0x201191EA
-230 [-]: LOADK     R12 K38      ; R12 := 0
-231 [-]: CALL      R11 2 1      ; R11(R12)
-232 [-]: GETGLOBAL R11 K50      ; R11 := 0x4CDEF9FF
-233 [-]: CALL      R11 1 2      ; R11 := R11()
-234 [-]: SUB       R4 R4 R11    ; R4 := R4 - R11
-235 [-]: JMP       178          ; PC := 178
-236 [-]: RETURN    R0 1         ; return 
+187 [-]: TEST      R10 1        ; if R10 then PC := 244
+188 [-]: JMP       244          ; PC := 244
+189 [-]: SELF      R10 R1 K40   ; R11 := R1; R10 := R1["0x5A115A02"]
+190 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+191 [-]: TEST      R10 1        ; if R10 then PC := 244
+192 [-]: JMP       244          ; PC := 244
+193 [-]: GETGLOBAL R10 K35      ; R10 := mOwner
+194 [-]: SELF      R10 R10 K41  ; R11 := R10; R10 := R10["0xE7AE25B5"]
+195 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+196 [-]: TEST      R10 1        ; if R10 then PC := 244
+197 [-]: JMP       244          ; PC := 244
+198 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
+199 [-]: GETGLOBAL R11 K33      ; R11 := gGameRules
+200 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+201 [-]: TEST      R10 1        ; if R10 then PC := 244
+202 [-]: JMP       244          ; PC := 244
+203 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
+204 [-]: SELF      R10 R10 K42  ; R11 := R10; R10 := R10["0x3B3B606D"]
+205 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+206 [-]: TEST      R10 0        ; if not R10 then PC := 244
+207 [-]: JMP       244          ; PC := 244
+208 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
+209 [-]: SELF      R10 R10 K36  ; R11 := R10; R10 := R10["0xFA5C61DD"]
+210 [-]: MOVE      R12 R4       ; R12 := R4
+211 [-]: CALL      R10 3 1      ; R10(R11,R12)
+212 [-]: GETGLOBAL R10 K13      ; R10 := 0x400E7765
+213 [-]: MOVE      R11 R8       ; R11 := R8
+214 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+215 [-]: TEST      R10 0        ; if not R10 then PC := 222
+216 [-]: JMP       222          ; PC := 222
+217 [-]: SELF      R10 R1 K28   ; R11 := R1; R10 := R1["0x9F1DC568"]
+218 [-]: GETGLOBAL R12 K29      ; R12 := riftDecoType
+219 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+220 [-]: MOVE      R8 R10       ; R8 := R10
+221 [-]: JMP       237          ; PC := 237
+222 [-]: GETGLOBAL R10 K33      ; R10 := gGameRules
+223 [-]: SELF      R10 R10 K44  ; R11 := R10; R10 := R10["0x1B757BE0"]
+224 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+225 [-]: SELF      R11 R8 K45   ; R12 := R8; R11 := R8["0xD124E361"]
+226 [-]: GETUPVAL  R13 U3       ; R13 := U3
+227 [-]: GETGLOBAL R14 K46      ; R14 := math
+228 [-]: GETTABLE  R14 R14 K47  ; R14 := R14["0x65F9712A"]
+229 [-]: GETGLOBAL R15 K46      ; R15 := math
+230 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["0xD6F2D811"]
+231 [-]: MOVE      R16 R10      ; R16 := R10
+232 [-]: LOADK     R17 K49      ; R17 := 3
+233 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+234 [-]: LOADK     R16 K6       ; R16 := 1
+235 [-]: CALL      R14 3 0      ; R14,... := R14(R15,R16)
+236 [-]: CALL      R11 0 1      ; R11(R12,...)
+237 [-]: GETGLOBAL R11 K50      ; R11 := 0x201191EA
+238 [-]: LOADK     R12 K39      ; R12 := 0
+239 [-]: CALL      R11 2 1      ; R11(R12)
+240 [-]: GETGLOBAL R11 K51      ; R11 := 0x4CDEF9FF
+241 [-]: CALL      R11 1 2      ; R11 := R11()
+242 [-]: SUB       R4 R4 R11    ; R4 := R4 - R11
+243 [-]: JMP       182          ; PC := 182
+244 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 147
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0

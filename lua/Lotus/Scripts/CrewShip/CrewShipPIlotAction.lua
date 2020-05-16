@@ -5,7 +5,7 @@ code size: 5
 code size: 5
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\CrewShipPIlotAction.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\CrewShipPIlotAction.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -222,7 +222,7 @@ code size: 5
 110 [-]: TEST      R18 1        ; if R18 then PC := 119
 111 [-]: JMP       119          ; PC := 119
 112 [-]: GETGLOBAL R18 K26      ; R18 := gChallengeMgr
-113 [-]: SELF      R18 R18 K27  ; R19 := R18; R18 := R18["0x83829B2"]
+113 [-]: SELF      R18 R18 K27  ; R19 := R18; R18 := R18["0xAC24FDCC"]
 114 [-]: MOVE      R20 R17      ; R20 := R17
 115 [-]: GETGLOBAL R21 K28      ; R21 := 0xEC274B1A
 116 [-]: LOADK     R22 K29      ; R22 := "PILOTING_HIJACKED_CREWSHIP"

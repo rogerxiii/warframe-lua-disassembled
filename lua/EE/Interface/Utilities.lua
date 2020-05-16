@@ -75,9 +75,9 @@ code size: 85
 code size: 12
 code size: 27
 code size: 28
-code size: 81
-code size: 104
-code size: 10
+code size: 83
+code size: 134
+code size: 26
 code size: 11
 code size: 20
 code size: 21
@@ -91,9 +91,9 @@ code size: 53
 code size: 5
 code size: 194
 code size: 5
-code size: 42
+code size: 47
 code size: 59
-code size: 15
+code size: 20
 code size: 44
 code size: 9
 code size: 15
@@ -113,7 +113,7 @@ code size: 22
 code size: 23
 code size: 19
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\EE\Interface\Utilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\EE\Interface\Utilities.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -3451,176 +3451,224 @@ code size: 19
  51 [-]: SELF      R8 R5 K20    ; R9 := R5; R8 := R5["0xF7C1BE25"]
  52 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  53 [-]: SETTABLE  R7 K19 R8    ; R7["CameraEntity"] := R8
- 54 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
- 55 [-]: GETTABLE  R9 R7 K15    ; R9 := R7["mInstance"]
- 56 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 57 [-]: TEST      R8 0         ; if not R8 then PC := 68
- 58 [-]: JMP       68           ; PC := 68
- 59 [-]: GETGLOBAL R8 K21       ; R8 := 0x93B1256B
- 60 [-]: LOADK     R9 K22       ; R9 := "ERROR: Failed to CreateUIParticles clipname="
- 61 [-]: GETGLOBAL R10 K23      ; R10 := 0x9FAED6BC
- 62 [-]: MOVE      R11 R1       ; R11 := R1
- 63 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 64 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
- 65 [-]: CALL      R8 2 1       ; R8(R9)
- 66 [-]: LOADNIL   R8 R8        ; R8 := nil
- 67 [-]: RETURN    R8 2         ; return R8
- 68 [-]: CLOSURE   R8 0         ; R8 := closure(Function #71.1)
- 69 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 70 [-]: MOVE      R0 R7        ; R0 := R7
- 71 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 72 [-]: SETTABLE  R7 K24 R8    ; R7["Update"] := R8
- 73 [-]: CLOSURE   R8 1         ; R8 := closure(Function #71.2)
- 74 [-]: SETTABLE  R7 K25 R8    ; R7["SetVisibility"] := R8
- 75 [-]: CLOSURE   R8 2         ; R8 := closure(Function #71.3)
- 76 [-]: SETTABLE  R7 K26 R8    ; R7["Destroy"] := R8
- 77 [-]: SELF      R8 R7 K27    ; R9 := R7; R8 := R7["0x8C7099E9"]
- 78 [-]: LOADK     R10 K5       ; R10 := 0
- 79 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 80 [-]: RETURN    R7 2         ; return R7
- 81 [-]: RETURN    R0 1         ; return 
+ 54 [-]: SETTABLE  R7 K21 K22   ; R7["mVisible"] := "0x1"
+ 55 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
+ 56 [-]: GETTABLE  R9 R7 K15    ; R9 := R7["mInstance"]
+ 57 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 58 [-]: TEST      R8 0         ; if not R8 then PC := 69
+ 59 [-]: JMP       69           ; PC := 69
+ 60 [-]: GETGLOBAL R8 K23       ; R8 := 0x93B1256B
+ 61 [-]: LOADK     R9 K24       ; R9 := "ERROR: Failed to CreateUIParticles clipname="
+ 62 [-]: GETGLOBAL R10 K25      ; R10 := 0x9FAED6BC
+ 63 [-]: MOVE      R11 R1       ; R11 := R1
+ 64 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 65 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
+ 66 [-]: CALL      R8 2 1       ; R8(R9)
+ 67 [-]: LOADNIL   R8 R8        ; R8 := nil
+ 68 [-]: RETURN    R8 2         ; return R8
+ 69 [-]: CLOSURE   R8 0         ; R8 := closure(Function #71.1)
+ 70 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 71 [-]: MOVE      R0 R7        ; R0 := R7
+ 72 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 73 [-]: SETTABLE  R7 K26 R8    ; R7["Update"] := R8
+ 74 [-]: CLOSURE   R8 1         ; R8 := closure(Function #71.2)
+ 75 [-]: MOVE      R0 R7        ; R0 := R7
+ 76 [-]: SETTABLE  R7 K27 R8    ; R7["SetVisibility"] := R8
+ 77 [-]: CLOSURE   R8 2         ; R8 := closure(Function #71.3)
+ 78 [-]: SETTABLE  R7 K28 R8    ; R7["Destroy"] := R8
+ 79 [-]: SELF      R8 R7 K29    ; R9 := R7; R8 := R7["0x8C7099E9"]
+ 80 [-]: LOADK     R10 K5       ; R10 := 0
+ 81 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 82 [-]: RETURN    R7 2         ; return R7
+ 83 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #71.1:
 ;
 ; Name:            
-; Defined at line: 1038
+; Defined at line: 1039
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  15
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
-  2 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mInstance"]
+  1 [-]: GETTABLE  R3 R0 K0     ; R3 := R0["mMovie"]
+  2 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0x8C1ACCEF"]
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 104
-  5 [-]: JMP       104          ; PC := 104
-  6 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mDiegetic"]
-  7 [-]: GETTABLE  R4 R0 K3     ; R4 := R0["mMovie"]
-  8 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0x8BF7ABD3"]
-  9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 10 [-]: SETTABLE  R0 K2 R4     ; R0["mDiegetic"] := R4
- 11 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["mDiegetic"]
- 12 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 28
- 13 [-]: JMP       28           ; PC := 28
- 14 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["DiegeticChangeCallback"]
- 15 [-]: EQ        1 R4 K6      ; if R4 == nil then PC := 19
- 16 [-]: JMP       19           ; PC := 19
- 17 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0["0xCFDF5E72"]
- 18 [-]: CALL      R4 2 1       ; R4(R5)
- 19 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mInstance"]
- 20 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0xE2EEF6B4"]
- 21 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mDiegetic"]
- 22 [-]: MOVE      R6 R6        ; R6 := R6
- 23 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 24 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mInstance"]
- 25 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x250A9159"]
- 26 [-]: GETTABLE  R6 R0 K2     ; R6 := R0["mDiegetic"]
- 27 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 28 [-]: LOADK     R4 K10       ; R4 := 0
- 29 [-]: LOADK     R5 K10       ; R5 := 0
- 30 [-]: EQ        1 R2 K6      ; if R2 == nil then PC := 35
- 31 [-]: JMP       35           ; PC := 35
- 32 [-]: GETTABLE  R4 R2 K11    ; R4 := R2["X"]
- 33 [-]: GETTABLE  R5 R2 K12    ; R5 := R2["Y"]
- 34 [-]: JMP       45           ; PC := 45
- 35 [-]: GETTABLE  R6 R0 K13    ; R6 := R0["mClipName"]
- 36 [-]: EQ        1 R6 K6      ; if R6 == nil then PC := 45
- 37 [-]: JMP       45           ; PC := 45
- 38 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 39 [-]: GETTABLE  R7 R0 K3     ; R7 := R0["mMovie"]
- 40 [-]: GETTABLE  R8 R0 K13    ; R8 := R0["mClipName"]
- 41 [-]: MOVE      R9 R1        ; R9 := R1
- 42 [-]: CALL      R6 4 3       ; R6,R7 := R6(R7,R8,R9)
- 43 [-]: MOVE      R5 R7        ; R5 := R7
- 44 [-]: MOVE      R4 R6        ; R4 := R6
- 45 [-]: GETTABLE  R6 R0 K14    ; R6 := R0["mOffsetX"]
- 46 [-]: ADD       R4 R4 R6     ; R4 := R4 + R6
- 47 [-]: GETTABLE  R6 R0 K15    ; R6 := R0["mOffsetY"]
- 48 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
- 49 [-]: LOADNIL   R6 R6        ; R6 := nil
- 50 [-]: GETTABLE  R7 R0 K2     ; R7 := R0["mDiegetic"]
- 51 [-]: TEST      R7 0         ; if not R7 then PC := 60
- 52 [-]: JMP       60           ; PC := 60
- 53 [-]: GETTABLE  R7 R0 K3     ; R7 := R0["mMovie"]
- 54 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7["0x2E5D8BC8"]
- 55 [-]: MOVE      R9 R4        ; R9 := R4
- 56 [-]: MOVE      R10 R5       ; R10 := R5
- 57 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 58 [-]: MOVE      R6 R7        ; R6 := R7
- 59 [-]: JMP       96           ; PC := 96
- 60 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 61 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 62 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["CameraEntity"]
- 63 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 64 [-]: TEST      R7 0         ; if not R7 then PC := 71
- 65 [-]: JMP       71           ; PC := 71
- 66 [-]: GETGLOBAL R7 K18       ; R7 := 0x93B1256B
- 67 [-]: LOADK     R8 K19       ; R8 := "ERROR: There wasnt a valid pRegion:GetGameCamera()"
- 68 [-]: CALL      R7 2 1       ; R7(R8)
- 69 [-]: LOADNIL   R7 R7        ; R7 := nil
- 70 [-]: RETURN    R7 2         ; return R7
- 71 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 72 [-]: GETTABLE  R8 R0 K3     ; R8 := R0["mMovie"]
- 73 [-]: MOVE      R9 R4        ; R9 := R4
- 74 [-]: MOVE      R10 R5       ; R10 := R5
- 75 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 76 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["CameraEntity"]
- 77 [-]: CALL      R7 5 3       ; R7,R8 := R7(R8,R9,R10,R11)
- 78 [-]: GETGLOBAL R9 K20       ; R9 := 0x221C9700
- 79 [-]: MOVE      R10 R7       ; R10 := R7
- 80 [-]: MOVE      R11 R8       ; R11 := R8
- 81 [-]: LOADK     R12 K21      ; R12 := 1
- 82 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 83 [-]: MOVE      R6 R9        ; R6 := R9
- 84 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 85 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["CameraEntity"]
- 86 [-]: SELF      R9 R9 K22    ; R10 := R9; R9 := R9["0x6DA72501"]
- 87 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 88 [-]: GETGLOBAL R10 K23      ; R10 := 0x4CBE9A09
- 89 [-]: MOVE      R11 R6       ; R11 := R6
- 90 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 91 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["CameraEntity"]
- 92 [-]: SELF      R12 R12 K24  ; R13 := R12; R12 := R12["0xF23A7849"]
- 93 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
- 94 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 95 [-]: ADD       R6 R9 R10    ; R6 := R9 + R10
- 96 [-]: GETTABLE  R9 R0 K1     ; R9 := R0["mInstance"]
- 97 [-]: SELF      R9 R9 K25    ; R10 := R9; R9 := R9["0x24AE62CF"]
- 98 [-]: MOVE      R11 R1       ; R11 := R1
- 99 [-]: CALL      R9 3 1       ; R9(R10,R11)
-100 [-]: GETTABLE  R9 R0 K1     ; R9 := R0["mInstance"]
-101 [-]: SELF      R9 R9 K26    ; R10 := R9; R9 := R9["0xEC183DDC"]
+  4 [-]: TEST      R3 0         ; if not R3 then PC := 17
+  5 [-]: JMP       17           ; PC := 17
+  6 [-]: GETGLOBAL R3 K2        ; R3 := 0xF595ADDE
+  7 [-]: GETTABLE  R4 R0 K0     ; R4 := R0["mMovie"]
+  8 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4["0x6B7B470B"]
+  9 [-]: LOADK     R6 K4        ; R6 := "_root"
+ 10 [-]: LOADK     R7 K5        ; R7 := "_alpha"
+ 11 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
+ 12 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 13 [-]: LT        1 K6 R3      ; if 0 < R3 then PC := 16
+ 14 [-]: JMP       16           ; PC := 16
+ 15 [-]: MOVE      R3 R0        ; R3 := R0
+ 16 [-]: MOVE      R3 R1        ; R3 := R1
+ 17 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["mVisible"]
+ 18 [-]: EQ        1 R4 R3      ; if R4 == R3 then PC := 25
+ 19 [-]: JMP       25           ; PC := 25
+ 20 [-]: SETTABLE  R0 K7 R3     ; R0["mVisible"] := R3
+ 21 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0["0x7DBDDA0B"]
+ 22 [-]: GETTABLE  R6 R0 K7     ; R6 := R0["mVisible"]
+ 23 [-]: MOVE      R7 R1        ; R7 := R1
+ 24 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 25 [-]: GETGLOBAL R4 K9        ; R4 := 0x400E7765
+ 26 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mInstance"]
+ 27 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 28 [-]: TEST      R4 1         ; if R4 then PC := 134
+ 29 [-]: JMP       134          ; PC := 134
+ 30 [-]: GETTABLE  R4 R0 K11    ; R4 := R0["mDiegetic"]
+ 31 [-]: GETTABLE  R5 R0 K0     ; R5 := R0["mMovie"]
+ 32 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0x8BF7ABD3"]
+ 33 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 34 [-]: SETTABLE  R0 K11 R5    ; R0["mDiegetic"] := R5
+ 35 [-]: GETTABLE  R5 R0 K11    ; R5 := R0["mDiegetic"]
+ 36 [-]: EQ        1 R5 R4      ; if R5 == R4 then PC := 52
+ 37 [-]: JMP       52           ; PC := 52
+ 38 [-]: GETTABLE  R5 R0 K13    ; R5 := R0["DiegeticChangeCallback"]
+ 39 [-]: EQ        1 R5 K14     ; if R5 == nil then PC := 43
+ 40 [-]: JMP       43           ; PC := 43
+ 41 [-]: SELF      R5 R0 K15    ; R6 := R0; R5 := R0["0xCFDF5E72"]
+ 42 [-]: CALL      R5 2 1       ; R5(R6)
+ 43 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mInstance"]
+ 44 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5["0xE2EEF6B4"]
+ 45 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["mDiegetic"]
+ 46 [-]: MOVE      R7 R7        ; R7 := R7
+ 47 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 48 [-]: GETTABLE  R5 R0 K10    ; R5 := R0["mInstance"]
+ 49 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5["0x250A9159"]
+ 50 [-]: GETTABLE  R7 R0 K11    ; R7 := R0["mDiegetic"]
+ 51 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 52 [-]: LOADK     R5 K6        ; R5 := 0
+ 53 [-]: LOADK     R6 K6        ; R6 := 0
+ 54 [-]: EQ        1 R2 K14     ; if R2 == nil then PC := 59
+ 55 [-]: JMP       59           ; PC := 59
+ 56 [-]: GETTABLE  R5 R2 K18    ; R5 := R2["X"]
+ 57 [-]: GETTABLE  R6 R2 K19    ; R6 := R2["Y"]
+ 58 [-]: JMP       69           ; PC := 69
+ 59 [-]: GETTABLE  R7 R0 K20    ; R7 := R0["mClipName"]
+ 60 [-]: EQ        1 R7 K14     ; if R7 == nil then PC := 69
+ 61 [-]: JMP       69           ; PC := 69
+ 62 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 63 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mMovie"]
+ 64 [-]: GETTABLE  R9 R0 K20    ; R9 := R0["mClipName"]
+ 65 [-]: MOVE      R10 R1       ; R10 := R1
+ 66 [-]: CALL      R7 4 3       ; R7,R8 := R7(R8,R9,R10)
+ 67 [-]: MOVE      R6 R8        ; R6 := R8
+ 68 [-]: MOVE      R5 R7        ; R5 := R7
+ 69 [-]: GETTABLE  R7 R0 K21    ; R7 := R0["mOffsetX"]
+ 70 [-]: ADD       R5 R5 R7     ; R5 := R5 + R7
+ 71 [-]: GETTABLE  R7 R0 K22    ; R7 := R0["mOffsetY"]
+ 72 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
+ 73 [-]: LOADNIL   R7 R7        ; R7 := nil
+ 74 [-]: GETTABLE  R8 R0 K11    ; R8 := R0["mDiegetic"]
+ 75 [-]: TEST      R8 0         ; if not R8 then PC := 88
+ 76 [-]: JMP       88           ; PC := 88
+ 77 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mMovie"]
+ 78 [-]: SELF      R8 R8 K23    ; R9 := R8; R8 := R8["0x2E5D8BC8"]
+ 79 [-]: MOVE      R10 R5       ; R10 := R5
+ 80 [-]: MOVE      R11 R6       ; R11 := R6
+ 81 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
+ 82 [-]: MOVE      R7 R8        ; R7 := R8
+ 83 [-]: GETTABLE  R8 R0 K10    ; R8 := R0["mInstance"]
+ 84 [-]: SELF      R8 R8 K24    ; R9 := R8; R8 := R8["0xEC183DDC"]
+ 85 [-]: MOVE      R10 R7       ; R10 := R7
+ 86 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 87 [-]: JMP       130          ; PC := 130
+ 88 [-]: GETGLOBAL R8 K9        ; R8 := 0x400E7765
+ 89 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 90 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["CameraEntity"]
+ 91 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 92 [-]: TEST      R8 0         ; if not R8 then PC := 99
+ 93 [-]: JMP       99           ; PC := 99
+ 94 [-]: GETGLOBAL R8 K26       ; R8 := 0x93B1256B
+ 95 [-]: LOADK     R9 K27       ; R9 := "ERROR: There wasnt a valid pRegion:GetGameCamera()"
+ 96 [-]: CALL      R8 2 1       ; R8(R9)
+ 97 [-]: LOADNIL   R8 R8        ; R8 := nil
+ 98 [-]: RETURN    R8 2         ; return R8
+ 99 [-]: GETUPVAL  R8 U2        ; R8 := U2
+100 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mMovie"]
+101 [-]: MOVE      R10 R5       ; R10 := R5
 102 [-]: MOVE      R11 R6       ; R11 := R6
-103 [-]: CALL      R9 3 1       ; R9(R10,R11)
-104 [-]: RETURN    R0 1         ; return 
+103 [-]: GETUPVAL  R12 U1       ; R12 := U1
+104 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["CameraEntity"]
+105 [-]: CALL      R8 5 3       ; R8,R9 := R8(R9,R10,R11,R12)
+106 [-]: GETUPVAL  R10 U1       ; R10 := U1
+107 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["CameraEntity"]
+108 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10["0xF23A7849"]
+109 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+110 [-]: GETGLOBAL R11 K29      ; R11 := 0x221C9700
+111 [-]: MOVE      R12 R8       ; R12 := R8
+112 [-]: MOVE      R13 R9       ; R13 := R9
+113 [-]: LOADK     R14 K30      ; R14 := 1
+114 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
+115 [-]: MOVE      R7 R11       ; R7 := R11
+116 [-]: GETUPVAL  R11 U1       ; R11 := U1
+117 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["CameraEntity"]
+118 [-]: SELF      R11 R11 K31  ; R12 := R11; R11 := R11["0x6DA72501"]
+119 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+120 [-]: GETGLOBAL R12 K32      ; R12 := 0x4CBE9A09
+121 [-]: MOVE      R13 R7       ; R13 := R7
+122 [-]: MOVE      R14 R10      ; R14 := R10
+123 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+124 [-]: ADD       R7 R11 R12   ; R7 := R11 + R12
+125 [-]: GETTABLE  R11 R0 K10   ; R11 := R0["mInstance"]
+126 [-]: SELF      R11 R11 K33  ; R12 := R11; R11 := R11["0x39D7F449"]
+127 [-]: MOVE      R13 R7       ; R13 := R7
+128 [-]: MOVE      R14 R10      ; R14 := R10
+129 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+130 [-]: GETTABLE  R11 R0 K10   ; R11 := R0["mInstance"]
+131 [-]: SELF      R11 R11 K34  ; R12 := R11; R11 := R11["0x24AE62CF"]
+132 [-]: MOVE      R13 R1       ; R13 := R1
+133 [-]: CALL      R11 3 1      ; R11(R12,R13)
+134 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #71.2:
 ;
 ; Name:            
-; Defined at line: 1078
-; #Upvalues:       0
+; Defined at line: 1086
+; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
-  2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mInstance"]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 10
-  5 [-]: JMP       10           ; PC := 10
-  6 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mInstance"]
-  7 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0x7DBDDA0B"]
-  8 [-]: MOVE      R4 R1        ; R4 := R1
-  9 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 10 [-]: RETURN    R0 1         ; return 
+  1 [-]: TEST      R1 1         ; if R1 then PC := 13
+  2 [-]: JMP       13           ; PC := 13
+  3 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  4 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mInstance"]
+  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  6 [-]: TEST      R2 1         ; if R2 then PC := 13
+  7 [-]: JMP       13           ; PC := 13
+  8 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mRegion"]
+  9 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x9B0A3887"]
+ 10 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mInstance"]
+ 11 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 12 [-]: JMP       26           ; PC := 26
+ 13 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 14 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mInstance"]
+ 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 16 [-]: TEST      R2 0         ; if not R2 then PC := 26
+ 17 [-]: JMP       26           ; PC := 26
+ 18 [-]: GETTABLE  R2 R0 K2     ; R2 := R0["mRegion"]
+ 19 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0xBDD34CC6"]
+ 20 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 21 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["mFx"]
+ 22 [-]: GETGLOBAL R5 K6        ; R5 := ZERO_VECTOR
+ 23 [-]: GETGLOBAL R6 K7        ; R6 := ZERO_ROTATION
+ 24 [-]: CALL      R2 5 2       ; R2 := R2(R3,R4,R5,R6)
+ 25 [-]: SETTABLE  R0 K1 R2     ; R0["mInstance"] := R2
+ 26 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #71.3:
 ;
 ; Name:            
-; Defined at line: 1084
+; Defined at line: 1094
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3642,7 +3690,7 @@ code size: 19
 ; Function #72:
 ;
 ; Name:            
-; Defined at line: 1096
+; Defined at line: 1106
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3673,7 +3721,7 @@ code size: 19
 ; Function #73:
 ;
 ; Name:            
-; Defined at line: 1106
+; Defined at line: 1116
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -3705,7 +3753,7 @@ code size: 19
 ; Function #74:
 ;
 ; Name:            
-; Defined at line: 1117
+; Defined at line: 1127
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3745,7 +3793,7 @@ code size: 19
 ; Function #75:
 ;
 ; Name:            
-; Defined at line: 1131
+; Defined at line: 1141
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -3823,7 +3871,7 @@ code size: 19
 ; Function #76:
 ;
 ; Name:            
-; Defined at line: 1155
+; Defined at line: 1165
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3842,7 +3890,7 @@ code size: 19
 ; Function #77:
 ;
 ; Name:            
-; Defined at line: 1159
+; Defined at line: 1169
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3890,7 +3938,7 @@ code size: 19
 ; Function #78:
 ;
 ; Name:            
-; Defined at line: 1172
+; Defined at line: 1182
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -3931,7 +3979,7 @@ code size: 19
 ; Function #78.1:
 ;
 ; Name:            
-; Defined at line: 1180
+; Defined at line: 1190
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       3
@@ -3953,7 +4001,7 @@ code size: 19
 ; Function #79:
 ;
 ; Name:            
-; Defined at line: 1189
+; Defined at line: 1199
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4017,7 +4065,7 @@ code size: 19
 ; Function #80:
 ;
 ; Name:            
-; Defined at line: 1198
+; Defined at line: 1208
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4033,7 +4081,7 @@ code size: 19
 ; Function #81:
 ;
 ; Name:            
-; Defined at line: 1202
+; Defined at line: 1212
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4238,7 +4286,7 @@ code size: 19
 ; Function #82:
 ;
 ; Name:            
-; Defined at line: 1257
+; Defined at line: 1267
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4254,60 +4302,65 @@ code size: 19
 ; Function #83:
 ;
 ; Name:            
-; Defined at line: 1261
+; Defined at line: 1271
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := string
-  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["0xDE44F664"]
-  3 [-]: MOVE      R3 R0        ; R3 := R0
-  4 [-]: LOADK     R4 K2        ; R4 := "Friend Invite Restriction"
-  5 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  6 [-]: EQ        1 R2 K3      ; if R2 == nil then PC := 10
-  7 [-]: JMP       10           ; PC := 10
-  8 [-]: LOADK     R1 K4        ; R1 := "/Lotus/Language/Game/Friend_Invite_Restriction"
-  9 [-]: JMP       41           ; PC := 41
- 10 [-]: GETGLOBAL R2 K0        ; R2 := string
- 11 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["0xDE44F664"]
- 12 [-]: MOVE      R3 R0        ; R3 := R0
- 13 [-]: LOADK     R4 K5        ; R4 := "Player has too many friends"
- 14 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 15 [-]: EQ        1 R2 K3      ; if R2 == nil then PC := 19
- 16 [-]: JMP       19           ; PC := 19
- 17 [-]: LOADK     R1 K6        ; R1 := "/Lotus/Language/Game/TooManyFriends"
- 18 [-]: JMP       41           ; PC := 41
- 19 [-]: GETGLOBAL R2 K0        ; R2 := string
- 20 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["0xDE44F664"]
- 21 [-]: MOVE      R3 R0        ; R3 := R0
- 22 [-]: LOADK     R4 K7        ; R4 := "Target player has too many friends"
- 23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 24 [-]: EQ        1 R2 K3      ; if R2 == nil then PC := 28
- 25 [-]: JMP       28           ; PC := 28
- 26 [-]: LOADK     R1 K8        ; R1 := "/Lotus/Language/Game/TargetTooManyFriends"
- 27 [-]: JMP       41           ; PC := 41
- 28 [-]: GETGLOBAL R2 K0        ; R2 := string
- 29 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["0xDE44F664"]
- 30 [-]: MOVE      R3 R0        ; R3 := R0
- 31 [-]: LOADK     R4 K9        ; R4 := "Account Suspended"
- 32 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 33 [-]: EQ        1 R2 K3      ; if R2 == nil then PC := 37
- 34 [-]: JMP       37           ; PC := 37
- 35 [-]: LOADK     R1 K10       ; R1 := "/Lotus/Language/CustomerSupport/CompromisedAccountGenericMessage"
- 36 [-]: JMP       41           ; PC := 41
- 37 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 38 [-]: MOVE      R3 R0        ; R3 := R0
- 39 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 40 [-]: MOVE      R1 R2        ; R1 := R2
- 41 [-]: RETURN    R1 2         ; return R1
- 42 [-]: RETURN    R0 1         ; return 
+  1 [-]: LEN       R2 R0        ; R2 := # R0
+  2 [-]: EQ        0 R2 K0      ; if R2 ~= 0 then PC := 6
+  3 [-]: JMP       6            ; PC := 6
+  4 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Language/Menu/SocialOverlay_NonExistentUserError"
+  5 [-]: JMP       46           ; PC := 46
+  6 [-]: GETGLOBAL R2 K2        ; R2 := string
+  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xDE44F664"]
+  8 [-]: MOVE      R3 R0        ; R3 := R0
+  9 [-]: LOADK     R4 K4        ; R4 := "Friend Invite Restriction"
+ 10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 11 [-]: EQ        1 R2 K5      ; if R2 == nil then PC := 15
+ 12 [-]: JMP       15           ; PC := 15
+ 13 [-]: LOADK     R1 K6        ; R1 := "/Lotus/Language/Game/Friend_Invite_Restriction"
+ 14 [-]: JMP       46           ; PC := 46
+ 15 [-]: GETGLOBAL R2 K2        ; R2 := string
+ 16 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xDE44F664"]
+ 17 [-]: MOVE      R3 R0        ; R3 := R0
+ 18 [-]: LOADK     R4 K7        ; R4 := "Player has too many friends"
+ 19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 20 [-]: EQ        1 R2 K5      ; if R2 == nil then PC := 24
+ 21 [-]: JMP       24           ; PC := 24
+ 22 [-]: LOADK     R1 K8        ; R1 := "/Lotus/Language/Game/TooManyFriends"
+ 23 [-]: JMP       46           ; PC := 46
+ 24 [-]: GETGLOBAL R2 K2        ; R2 := string
+ 25 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xDE44F664"]
+ 26 [-]: MOVE      R3 R0        ; R3 := R0
+ 27 [-]: LOADK     R4 K9        ; R4 := "Target player has too many friends"
+ 28 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 29 [-]: EQ        1 R2 K5      ; if R2 == nil then PC := 33
+ 30 [-]: JMP       33           ; PC := 33
+ 31 [-]: LOADK     R1 K10       ; R1 := "/Lotus/Language/Game/TargetTooManyFriends"
+ 32 [-]: JMP       46           ; PC := 46
+ 33 [-]: GETGLOBAL R2 K2        ; R2 := string
+ 34 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xDE44F664"]
+ 35 [-]: MOVE      R3 R0        ; R3 := R0
+ 36 [-]: LOADK     R4 K11       ; R4 := "Account Suspended"
+ 37 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 38 [-]: EQ        1 R2 K5      ; if R2 == nil then PC := 42
+ 39 [-]: JMP       42           ; PC := 42
+ 40 [-]: LOADK     R1 K12       ; R1 := "/Lotus/Language/CustomerSupport/CompromisedAccountGenericMessage"
+ 41 [-]: JMP       46           ; PC := 46
+ 42 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 43 [-]: MOVE      R3 R0        ; R3 := R0
+ 44 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 45 [-]: MOVE      R1 R2        ; R1 := R2
+ 46 [-]: RETURN    R1 2         ; return R1
+ 47 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #84:
 ;
 ; Name:            
-; Defined at line: 1278
+; Defined at line: 1290
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4377,33 +4430,38 @@ code size: 19
 ; Function #85:
 ;
 ; Name:            
-; Defined at line: 1310
+; Defined at line: 1322
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := Engine
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0x918EF8CE"]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0xFE85F2DD"]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
-  4 [-]: TEST      R0 1         ; if R0 then PC := 14
-  5 [-]: JMP       14           ; PC := 14
+  4 [-]: TEST      R0 1         ; if R0 then PC := 19
+  5 [-]: JMP       19           ; PC := 19
   6 [-]: GETGLOBAL R0 K0        ; R0 := Engine
-  7 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["0x695D4229"]
+  7 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["0x918EF8CE"]
   8 [-]: CALL      R0 1 2       ; R0 := R0()
-  9 [-]: TEST      R0 1         ; if R0 then PC := 14
- 10 [-]: JMP       14           ; PC := 14
+  9 [-]: TEST      R0 1         ; if R0 then PC := 19
+ 10 [-]: JMP       19           ; PC := 19
  11 [-]: GETGLOBAL R0 K0        ; R0 := Engine
- 12 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0x47916128"]
+ 12 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["0x695D4229"]
  13 [-]: CALL      R0 1 2       ; R0 := R0()
- 14 [-]: RETURN    R0 2         ; return R0
- 15 [-]: RETURN    R0 1         ; return 
+ 14 [-]: TEST      R0 1         ; if R0 then PC := 19
+ 15 [-]: JMP       19           ; PC := 19
+ 16 [-]: GETGLOBAL R0 K0        ; R0 := Engine
+ 17 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["0x47916128"]
+ 18 [-]: CALL      R0 1 2       ; R0 := R0()
+ 19 [-]: RETURN    R0 2         ; return R0
+ 20 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #86:
 ;
 ; Name:            
-; Defined at line: 1314
+; Defined at line: 1326
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4458,7 +4516,7 @@ code size: 19
 ; Function #87:
 ;
 ; Name:            
-; Defined at line: 1340
+; Defined at line: 1352
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4478,7 +4536,7 @@ code size: 19
 ; Function #88:
 ;
 ; Name:            
-; Defined at line: 1344
+; Defined at line: 1356
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4504,7 +4562,7 @@ code size: 19
 ; Function #89:
 ;
 ; Name:            
-; Defined at line: 1349
+; Defined at line: 1361
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4526,7 +4584,7 @@ code size: 19
 ; Function #90:
 ;
 ; Name:            
-; Defined at line: 1354
+; Defined at line: 1366
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4551,7 +4609,7 @@ code size: 19
 ; Function #91:
 ;
 ; Name:            
-; Defined at line: 1363
+; Defined at line: 1375
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4652,7 +4710,7 @@ code size: 19
 ; Function #92:
 ;
 ; Name:            
-; Defined at line: 1393
+; Defined at line: 1405
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -4711,7 +4769,7 @@ code size: 19
 ; Function #93:
 ;
 ; Name:            
-; Defined at line: 1405
+; Defined at line: 1417
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4754,7 +4812,7 @@ code size: 19
 ; Function #94:
 ;
 ; Name:            
-; Defined at line: 1414
+; Defined at line: 1426
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4770,7 +4828,7 @@ code size: 19
 ; Function #95:
 ;
 ; Name:            
-; Defined at line: 1418
+; Defined at line: 1430
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4824,7 +4882,7 @@ code size: 19
 ; Function #96:
 ;
 ; Name:            
-; Defined at line: 1446
+; Defined at line: 1458
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4840,7 +4898,7 @@ code size: 19
 ; Function #97:
 ;
 ; Name:            
-; Defined at line: 1450
+; Defined at line: 1462
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4880,7 +4938,7 @@ code size: 19
 ; Function #98:
 ;
 ; Name:            
-; Defined at line: 1465
+; Defined at line: 1477
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4978,7 +5036,7 @@ code size: 19
 ; Function #99:
 ;
 ; Name:            
-; Defined at line: 1487
+; Defined at line: 1499
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5007,7 +5065,7 @@ code size: 19
 ; Function #100:
 ;
 ; Name:            
-; Defined at line: 1499
+; Defined at line: 1511
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5082,7 +5140,7 @@ code size: 19
 ; Function #101:
 ;
 ; Name:            
-; Defined at line: 1531
+; Defined at line: 1543
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5115,7 +5173,7 @@ code size: 19
 ; Function #102:
 ;
 ; Name:            
-; Defined at line: 1542
+; Defined at line: 1554
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -5149,7 +5207,7 @@ code size: 19
 ; Function #102.1:
 ;
 ; Name:            
-; Defined at line: 1550
+; Defined at line: 1562
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0

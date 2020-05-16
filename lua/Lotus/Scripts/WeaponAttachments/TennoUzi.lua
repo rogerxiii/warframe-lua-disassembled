@@ -9,7 +9,7 @@ code size: 51
 code size: 78
 code size: 41
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\TennoUzi.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\TennoUzi.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -279,7 +279,7 @@ code size: 41
  88 [-]: SELF      R10 R1 K22   ; R11 := R1; R10 := R1["0xF23A7849"]
  89 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  90 [-]: MOVE      R11 R2       ; R11 := R2
- 91 [-]: CALL      R6 6 2       ; R6 := R6(R7,R8,R9,R10,R11)
+ 91 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  92 [-]: RETURN    R0 1         ; return 
 
 

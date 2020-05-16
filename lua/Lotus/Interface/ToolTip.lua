@@ -1,10 +1,11 @@
-code size: 92
+code size: 95
 code size: 7
 code size: 3
 code size: 23
 code size: 3
 code size: 85
 code size: 46
+code size: 3
 code size: 154
 code size: 86
 code size: 284
@@ -12,7 +13,7 @@ code size: 5
 code size: 3
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\ToolTip.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\ToolTip.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -75,44 +76,47 @@ code size: 5
  52 [-]: SETGLOBAL R21 K17      ; Initialize := R21
  53 [-]: SETGLOBAL R21 K18      ; 0x62648036 := R21
  54 [-]: CLOSURE   R21 6        ; R21 := closure(Function #7)
- 55 [-]: MOVE      R0 R6        ; R0 := R6
- 56 [-]: MOVE      R0 R9        ; R0 := R9
- 57 [-]: MOVE      R0 R7        ; R0 := R7
- 58 [-]: MOVE      R0 R4        ; R0 := R4
- 59 [-]: MOVE      R0 R18       ; R0 := R18
- 60 [-]: CLOSURE   R16 7        ; R16 := closure(Function #8)
- 61 [-]: MOVE      R0 R2        ; R0 := R2
- 62 [-]: LOADK     R22 K5       ; R22 := 0
- 63 [-]: CLOSURE   R23 8        ; R23 := closure(Function #9)
- 64 [-]: MOVE      R0 R3        ; R0 := R3
- 65 [-]: MOVE      R0 R14       ; R0 := R14
- 66 [-]: MOVE      R0 R17       ; R0 := R17
- 67 [-]: MOVE      R0 R12       ; R0 := R12
- 68 [-]: MOVE      R0 R22       ; R0 := R22
- 69 [-]: MOVE      R0 R4        ; R0 := R4
- 70 [-]: MOVE      R0 R15       ; R0 := R15
- 71 [-]: MOVE      R0 R21       ; R0 := R21
- 72 [-]: MOVE      R0 R16       ; R0 := R16
- 73 [-]: MOVE      R0 R20       ; R0 := R20
- 74 [-]: MOVE      R0 R8        ; R0 := R8
- 75 [-]: MOVE      R0 R13       ; R0 := R13
- 76 [-]: MOVE      R0 R7        ; R0 := R7
- 77 [-]: MOVE      R0 R6        ; R0 := R6
- 78 [-]: MOVE      R0 R10       ; R0 := R10
- 79 [-]: MOVE      R0 R11       ; R0 := R11
- 80 [-]: MOVE      R0 R1        ; R0 := R1
- 81 [-]: SETGLOBAL R23 K19      ; Update := R23
- 82 [-]: SETGLOBAL R23 K20      ; 0x8C7099E9 := R23
- 83 [-]: CLOSURE   R23 9        ; R23 := closure(Function #10)
- 84 [-]: MOVE      R0 R17       ; R0 := R17
- 85 [-]: SETGLOBAL R23 K21      ; onViewportSizeChanged := R23
- 86 [-]: SETGLOBAL R23 K22      ; 0x3A900427 := R23
- 87 [-]: CLOSURE   R23 10       ; R23 := closure(Function #11)
- 88 [-]: MOVE      R0 R20       ; R0 := R20
- 89 [-]: MOVE      R0 R15       ; R0 := R15
- 90 [-]: SETGLOBAL R23 K23      ; OnGamepadTransition := R23
- 91 [-]: SETGLOBAL R23 K24      ; 0x98E4F633 := R23
- 92 [-]: RETURN    R0 1         ; return 
+ 55 [-]: SETGLOBAL R21 K19      ; Shutdown := R21
+ 56 [-]: SETGLOBAL R21 K20      ; 0x3C577FA3 := R21
+ 57 [-]: CLOSURE   R21 7        ; R21 := closure(Function #8)
+ 58 [-]: MOVE      R0 R6        ; R0 := R6
+ 59 [-]: MOVE      R0 R9        ; R0 := R9
+ 60 [-]: MOVE      R0 R7        ; R0 := R7
+ 61 [-]: MOVE      R0 R4        ; R0 := R4
+ 62 [-]: MOVE      R0 R18       ; R0 := R18
+ 63 [-]: CLOSURE   R16 8        ; R16 := closure(Function #9)
+ 64 [-]: MOVE      R0 R2        ; R0 := R2
+ 65 [-]: LOADK     R22 K5       ; R22 := 0
+ 66 [-]: CLOSURE   R23 9        ; R23 := closure(Function #10)
+ 67 [-]: MOVE      R0 R3        ; R0 := R3
+ 68 [-]: MOVE      R0 R14       ; R0 := R14
+ 69 [-]: MOVE      R0 R17       ; R0 := R17
+ 70 [-]: MOVE      R0 R12       ; R0 := R12
+ 71 [-]: MOVE      R0 R22       ; R0 := R22
+ 72 [-]: MOVE      R0 R4        ; R0 := R4
+ 73 [-]: MOVE      R0 R15       ; R0 := R15
+ 74 [-]: MOVE      R0 R21       ; R0 := R21
+ 75 [-]: MOVE      R0 R16       ; R0 := R16
+ 76 [-]: MOVE      R0 R20       ; R0 := R20
+ 77 [-]: MOVE      R0 R8        ; R0 := R8
+ 78 [-]: MOVE      R0 R13       ; R0 := R13
+ 79 [-]: MOVE      R0 R7        ; R0 := R7
+ 80 [-]: MOVE      R0 R6        ; R0 := R6
+ 81 [-]: MOVE      R0 R10       ; R0 := R10
+ 82 [-]: MOVE      R0 R11       ; R0 := R11
+ 83 [-]: MOVE      R0 R1        ; R0 := R1
+ 84 [-]: SETGLOBAL R23 K21      ; Update := R23
+ 85 [-]: SETGLOBAL R23 K22      ; 0x8C7099E9 := R23
+ 86 [-]: CLOSURE   R23 10       ; R23 := closure(Function #11)
+ 87 [-]: MOVE      R0 R17       ; R0 := R17
+ 88 [-]: SETGLOBAL R23 K23      ; onViewportSizeChanged := R23
+ 89 [-]: SETGLOBAL R23 K24      ; 0x3A900427 := R23
+ 90 [-]: CLOSURE   R23 11       ; R23 := closure(Function #12)
+ 91 [-]: MOVE      R0 R20       ; R0 := R20
+ 92 [-]: MOVE      R0 R15       ; R0 := R15
+ 93 [-]: SETGLOBAL R23 K25      ; OnGamepadTransition := R23
+ 94 [-]: SETGLOBAL R23 K26      ; 0x98E4F633 := R23
+ 95 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -352,6 +356,20 @@ code size: 5
 ;
 ; Name:            
 ; Defined at line: 100
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
+  2 [-]: SETTABLE  R0 K1 K2     ; R0["ToolTipUpdateColors"] := nil
+  3 [-]: RETURN    R0 1         ; return 
+
+
+; Function #8:
+;
+; Name:            
+; Defined at line: 104
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -513,10 +531,10 @@ code size: 5
 154 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 123
+; Defined at line: 127
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -610,10 +628,10 @@ code size: 5
  86 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 148
+; Defined at line: 152
 ; #Upvalues:       17
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -817,7 +835,7 @@ code size: 5
 196 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 197 [-]: LOADK     R9 K39       ; R9 := 0.15000000596046
 198 [-]: LOADK     R10 K29      ; R10 := 0
-199 [-]: CLOSURE   R11 0        ; R11 := closure(Function #9.1)
+199 [-]: CLOSURE   R11 0        ; R11 := closure(Function #10.1)
 200 [-]: CALL      R3 9 1       ; R3(R4,R5,R6,R7,R8,R9,R10,R11)
 201 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
 202 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -905,10 +923,10 @@ code size: 5
 284 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9.1:
+; Function #10.1:
 ;
 ; Name:            
-; Defined at line: 224
+; Defined at line: 228
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -921,10 +939,10 @@ code size: 5
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 256
+; Defined at line: 260
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -935,10 +953,10 @@ code size: 5
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 260
+; Defined at line: 264
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

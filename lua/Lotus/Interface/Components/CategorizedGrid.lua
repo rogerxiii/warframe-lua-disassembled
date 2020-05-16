@@ -1,5 +1,5 @@
 code size: 9
-code size: 320
+code size: 322
 code size: 1
 code size: 21
 code size: 18
@@ -7,15 +7,14 @@ code size: 17
 code size: 14
 code size: 41
 code size: 3
-code size: 25
+code size: 28
 code size: 20
 code size: 34
 code size: 23
-code size: 11
+code size: 12
 code size: 1
 code size: 29
-code size: 293
-code size: 7
+code size: 292
 code size: 7
 code size: 7
 code size: 7
@@ -32,7 +31,7 @@ code size: 31
 code size: 14
 code size: 27
 code size: 16
-code size: 32
+code size: 19
 code size: 239
 code size: 55
 code size: 31
@@ -62,7 +61,7 @@ code size: 51
 code size: 29
 code size: 9
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\CategorizedGrid.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\CategorizedGrid.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -141,282 +140,284 @@ code size: 9
  48 [-]: SETTABLE  R10 K42 R8   ; R10["mDiegeticMode"] := R8
  49 [-]: SETTABLE  R10 K43 K9   ; R10["mDebugScroll"] := "0x0"
  50 [-]: SETTABLE  R10 K44 K9   ; R10["mNoSelectSounds"] := "0x0"
- 51 [-]: SETTABLE  R10 K45 K27  ; R10["AdditionalFilterFunction"] := nil
- 52 [-]: GETTABLE  R11 R10 K40  ; R11 := R10["mRootClip"]
- 53 [-]: TEST      R11 1        ; if R11 then PC := 56
- 54 [-]: JMP       56           ; PC := 56
- 55 [-]: SETTABLE  R10 K40 K46  ; R10["mRootClip"] := "_root"
- 56 [-]: GETTABLE  R11 R10 K15  ; R11 := R10["mCategoryNameClipName"]
- 57 [-]: TEST      R11 1        ; if R11 then PC := 60
- 58 [-]: JMP       60           ; PC := 60
- 59 [-]: SETTABLE  R10 K15 K47  ; R10["mCategoryNameClipName"] := "CategoryName"
- 60 [-]: CLOSURE   R11 0        ; R11 := closure(Function #1.1)
- 61 [-]: SETTABLE  R10 K48 R11  ; R10["Print"] := R11
- 62 [-]: CLOSURE   R11 1        ; R11 := closure(Function #1.2)
- 63 [-]: SETTABLE  R10 K49 R11  ; R10["SetIdOnUnfiltered"] := R11
- 64 [-]: CLOSURE   R11 2        ; R11 := closure(Function #1.3)
- 65 [-]: SETTABLE  R10 K50 R11  ; R10["AddCategoryCounts"] := R11
- 66 [-]: GETTABLE  R11 R10 K52  ; R11 := R10["AddElement"]
- 67 [-]: SETTABLE  R10 K51 R11  ; R10["_CategorizedGrid_AddElement"] := R11
- 68 [-]: CLOSURE   R11 3        ; R11 := closure(Function #1.4)
- 69 [-]: SETTABLE  R10 K52 R11  ; R10["AddElement"] := R11
- 70 [-]: GETTABLE  R11 R10 K54  ; R11 := R10["FocusElement"]
- 71 [-]: SETTABLE  R10 K53 R11  ; R10["_CategorizedGrid_FocusElement"] := R11
- 72 [-]: CLOSURE   R11 4        ; R11 := closure(Function #1.5)
- 73 [-]: MOVE      R0 R10       ; R0 := R10
- 74 [-]: SETTABLE  R10 K54 R11  ; R10["FocusElement"] := R11
- 75 [-]: GETTABLE  R11 R10 K56  ; R11 := R10["FocusElementInDirection"]
- 76 [-]: SETTABLE  R10 K55 R11  ; R10["_CategorizedGrid_FocusElementInDirection"] := R11
- 77 [-]: CLOSURE   R11 5        ; R11 := closure(Function #1.6)
- 78 [-]: SETTABLE  R10 K56 R11  ; R10["FocusElementInDirection"] := R11
- 79 [-]: CLOSURE   R11 6        ; R11 := closure(Function #1.7)
- 80 [-]: SETTABLE  R10 K57 R11  ; R10["GetFilterBy"] := R11
- 81 [-]: CLOSURE   R11 7        ; R11 := closure(Function #1.8)
- 82 [-]: SETTABLE  R10 K58 R11  ; R10["Filter"] := R11
- 83 [-]: CLOSURE   R11 8        ; R11 := closure(Function #1.9)
- 84 [-]: SETTABLE  R10 K59 R11  ; R10["Sort"] := R11
- 85 [-]: CLOSURE   R11 9        ; R11 := closure(Function #1.10)
- 86 [-]: SETTABLE  R10 K60 R11  ; R10["DoubleSort"] := R11
- 87 [-]: CLOSURE   R11 10       ; R11 := closure(Function #1.11)
- 88 [-]: SETTABLE  R10 K61 R11  ; R10["DoubleSortWithFunction"] := R11
- 89 [-]: GETTABLE  R11 R10 K63  ; R11 := R10["RemoveElements"]
- 90 [-]: SETTABLE  R10 K62 R11  ; R10["_CategorizedGrid_RemoveElements"] := R11
- 91 [-]: CLOSURE   R11 11       ; R11 := closure(Function #1.12)
- 92 [-]: MOVE      R0 R10       ; R0 := R10
- 93 [-]: SETTABLE  R10 K63 R11  ; R10["RemoveElements"] := R11
- 94 [-]: CLOSURE   R11 12       ; R11 := closure(Function #1.13)
- 95 [-]: SETTABLE  R10 K64 R11  ; R10["OnPreSort"] := R11
- 96 [-]: CLOSURE   R11 13       ; R11 := closure(Function #1.14)
- 97 [-]: SETTABLE  R10 K65 R11  ; R10["OnFilteredElementsReady"] := R11
- 98 [-]: GETTABLE  R11 R10 K67  ; R11 := R10["Redraw"]
- 99 [-]: SETTABLE  R10 K66 R11  ; R10["_CategorizedGrid_Redraw"] := R11
-100 [-]: CLOSURE   R11 14       ; R11 := closure(Function #1.15)
-101 [-]: SETTABLE  R10 K67 R11  ; R10["Redraw"] := R11
-102 [-]: CLOSURE   R11 15       ; R11 := closure(Function #1.16)
-103 [-]: SETTABLE  R10 K68 R11  ; R10["SetupPreInterpolationValues"] := R11
-104 [-]: CLOSURE   R11 16       ; R11 := closure(Function #1.17)
-105 [-]: SETTABLE  R10 K69 R11  ; R10["GetInterpolationProperties"] := R11
-106 [-]: CLOSURE   R11 17       ; R11 := closure(Function #1.18)
-107 [-]: SETTABLE  R10 K70 R11  ; R10["AddCategory"] := R11
-108 [-]: CLOSURE   R11 18       ; R11 := closure(Function #1.19)
-109 [-]: SETTABLE  R10 K71 R11  ; R10["SetCategory"] := R11
-110 [-]: CLOSURE   R11 19       ; R11 := closure(Function #1.20)
-111 [-]: SETTABLE  R10 K72 R11  ; R10["SetCategory_Internal"] := R11
-112 [-]: CLOSURE   R11 20       ; R11 := closure(Function #1.21)
-113 [-]: SETTABLE  R10 K73 R11  ; R10["AddSortBy"] := R11
-114 [-]: CLOSURE   R11 21       ; R11 := closure(Function #1.22)
-115 [-]: SETTABLE  R10 K74 R11  ; R10["GetSortById"] := R11
-116 [-]: CLOSURE   R11 22       ; R11 := closure(Function #1.23)
-117 [-]: SETTABLE  R10 K75 R11  ; R10["SetSortBy"] := R11
-118 [-]: CLOSURE   R11 23       ; R11 := closure(Function #1.24)
-119 [-]: SETTABLE  R10 K76 R11  ; R10["SetSortBy_Internal"] := R11
-120 [-]: GETTABLE  R11 R10 K78  ; R11 := R10["RunForAllElements"]
-121 [-]: SETTABLE  R10 K77 R11  ; R10["_CategorizedGrid_RunForAllElements"] := R11
-122 [-]: CLOSURE   R11 24       ; R11 := closure(Function #1.25)
-123 [-]: SETTABLE  R10 K78 R11  ; R10["RunForAllElements"] := R11
-124 [-]: CLOSURE   R11 25       ; R11 := closure(Function #1.26)
-125 [-]: SETTABLE  R10 K79 R11  ; R10["RunForAllVisibleElements"] := R11
-126 [-]: GETTABLE  R11 R10 K81  ; R11 := R10["OnSelected"]
-127 [-]: SETTABLE  R10 K80 R11  ; R10["_CategorizedGrid_OnSelected"] := R11
-128 [-]: CLOSURE   R11 26       ; R11 := closure(Function #1.27)
-129 [-]: SETTABLE  R10 K81 R11  ; R10["OnSelected"] := R11
-130 [-]: GETTABLE  R11 R10 K83  ; R11 := R10["OnFocused"]
-131 [-]: SETTABLE  R10 K82 R11  ; R10["_CategorizedGrid_OnFocused"] := R11
-132 [-]: CLOSURE   R11 27       ; R11 := closure(Function #1.28)
-133 [-]: SETTABLE  R10 K83 R11  ; R10["OnFocused"] := R11
-134 [-]: GETTABLE  R11 R10 K85  ; R11 := R10["OnUnfocused"]
-135 [-]: SETTABLE  R10 K84 R11  ; R10["_CategorizedGrid_OnUnfocused"] := R11
-136 [-]: CLOSURE   R11 28       ; R11 := closure(Function #1.29)
-137 [-]: SETTABLE  R10 K85 R11  ; R10["OnUnfocused"] := R11
-138 [-]: GETTABLE  R11 R10 K87  ; R11 := R10["OnDraw"]
-139 [-]: SETTABLE  R10 K86 R11  ; R10["_CategorizedGrid_OnDraw"] := R11
-140 [-]: CLOSURE   R11 29       ; R11 := closure(Function #1.30)
-141 [-]: SETTABLE  R10 K87 R11  ; R10["OnDraw"] := R11
-142 [-]: CLOSURE   R11 30       ; R11 := closure(Function #1.31)
-143 [-]: SETTABLE  R10 K88 R11  ; R10["OnElementTransitionStarted"] := R11
-144 [-]: CLOSURE   R11 31       ; R11 := closure(Function #1.32)
-145 [-]: SETTABLE  R10 K89 R11  ; R10["OnElementTransitionEnded"] := R11
-146 [-]: CLOSURE   R11 32       ; R11 := closure(Function #1.33)
-147 [-]: SETTABLE  R10 K90 R11  ; R10["ToggleCategory"] := R11
-148 [-]: CLOSURE   R11 33       ; R11 := closure(Function #1.34)
-149 [-]: MOVE      R0 R10       ; R0 := R10
-150 [-]: SETTABLE  R10 K91 R11  ; R10["PreviousCategory"] := R11
-151 [-]: CLOSURE   R11 34       ; R11 := closure(Function #1.35)
-152 [-]: MOVE      R0 R10       ; R0 := R10
-153 [-]: SETTABLE  R10 K92 R11  ; R10["NextCategory"] := R11
-154 [-]: CLOSURE   R11 35       ; R11 := closure(Function #1.36)
-155 [-]: SETTABLE  R10 K93 R11  ; R10["OnCategoryPress"] := R11
-156 [-]: CLOSURE   R11 36       ; R11 := closure(Function #1.37)
-157 [-]: SETTABLE  R10 K94 R11  ; R10["Update"] := R11
-158 [-]: CLOSURE   R11 37       ; R11 := closure(Function #1.38)
-159 [-]: SETTABLE  R10 K95 R11  ; R10["onKeyUp_MENU_SELECT"] := R11
-160 [-]: CLOSURE   R11 38       ; R11 := closure(Function #1.39)
-161 [-]: SETTABLE  R10 K96 R11  ; R10["onKeyUp_MENU_CANCEL"] := R11
-162 [-]: CLOSURE   R11 39       ; R11 := closure(Function #1.40)
-163 [-]: SETTABLE  R10 K97 R11  ; R10["onKeyUp_MENU_CLICK"] := R11
-164 [-]: CLOSURE   R11 40       ; R11 := closure(Function #1.41)
-165 [-]: SETTABLE  R10 K98 R11  ; R10["OnUnfilteredElementRemoved"] := R11
-166 [-]: CLOSURE   R11 41       ; R11 := closure(Function #1.42)
-167 [-]: SETTABLE  R10 K99 R11  ; R10["RemoveUnfilteredElementById"] := R11
-168 [-]: CLOSURE   R11 42       ; R11 := closure(Function #1.43)
-169 [-]: SETTABLE  R10 K100 R11 ; R10["EnableSmoothScroll"] := R11
-170 [-]: CLOSURE   R11 43       ; R11 := closure(Function #1.44)
-171 [-]: SETTABLE  R10 K101 R11 ; R10["GetUnfilteredElementById"] := R11
-172 [-]: CLOSURE   R11 44       ; R11 := closure(Function #1.45)
-173 [-]: SETTABLE  R10 K102 R11 ; R10["GetUnfilteredElementIndexById"] := R11
-174 [-]: GETTABLE  R11 R10 K14  ; R11 := R10["mCategoryClipName"]
-175 [-]: EQ        1 R11 K27    ; if R11 == nil then PC := 218
-176 [-]: JMP       218          ; PC := 218
-177 [-]: LOADNIL   R11 R11      ; R11 := nil
-178 [-]: GETTABLE  R12 R10 K10  ; R12 := R10["mApplyThemes"]
-179 [-]: TEST      R12 0        ; if not R12 then PC := 186
-180 [-]: JMP       186          ; PC := 186
-181 [-]: GETGLOBAL R12 K0       ; R12 := 0x329BDC44
-182 [-]: LOADK     R13 K103     ; R13 := "Lotus.Interface.Components.ThemedCategoriesMenu"
-183 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-184 [-]: MOVE      R11 R12      ; R11 := R12
-185 [-]: JMP       190          ; PC := 190
-186 [-]: GETGLOBAL R12 K0       ; R12 := 0x329BDC44
-187 [-]: LOADK     R13 K104     ; R13 := "Lotus.Interface.Components.CategoriesMenu"
-188 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-189 [-]: MOVE      R11 R12      ; R11 := R12
-190 [-]: GETTABLE  R12 R11 K105 ; R12 := R11["0x46FF1A3C"]
-191 [-]: GETTABLE  R13 R10 K106 ; R13 := R10["mMovie"]
-192 [-]: GETTABLE  R14 R10 K14  ; R14 := R10["mCategoryClipName"]
-193 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-194 [-]: SETTABLE  R10 K26 R12  ; R10["mCategoryMenu"] := R12
-195 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
-196 [-]: SETTABLE  R12 K107 K9  ; R12["mHideEmptyCategories"] := "0x0"
+ 51 [-]: SETTABLE  R10 K45 K35  ; R10["mQuickFilterAll"] := "0x1"
+ 52 [-]: SETTABLE  R10 K46 K27  ; R10["AdditionalFilterFunction"] := nil
+ 53 [-]: SETTABLE  R10 K47 K48  ; R10["mNonFillerElements"] := 0
+ 54 [-]: GETTABLE  R11 R10 K40  ; R11 := R10["mRootClip"]
+ 55 [-]: TEST      R11 1        ; if R11 then PC := 58
+ 56 [-]: JMP       58           ; PC := 58
+ 57 [-]: SETTABLE  R10 K40 K49  ; R10["mRootClip"] := "_root"
+ 58 [-]: GETTABLE  R11 R10 K15  ; R11 := R10["mCategoryNameClipName"]
+ 59 [-]: TEST      R11 1        ; if R11 then PC := 62
+ 60 [-]: JMP       62           ; PC := 62
+ 61 [-]: SETTABLE  R10 K15 K50  ; R10["mCategoryNameClipName"] := "CategoryName"
+ 62 [-]: CLOSURE   R11 0        ; R11 := closure(Function #1.1)
+ 63 [-]: SETTABLE  R10 K51 R11  ; R10["Print"] := R11
+ 64 [-]: CLOSURE   R11 1        ; R11 := closure(Function #1.2)
+ 65 [-]: SETTABLE  R10 K52 R11  ; R10["SetIdOnUnfiltered"] := R11
+ 66 [-]: CLOSURE   R11 2        ; R11 := closure(Function #1.3)
+ 67 [-]: SETTABLE  R10 K53 R11  ; R10["AddCategoryCounts"] := R11
+ 68 [-]: GETTABLE  R11 R10 K55  ; R11 := R10["AddElement"]
+ 69 [-]: SETTABLE  R10 K54 R11  ; R10["_CategorizedGrid_AddElement"] := R11
+ 70 [-]: CLOSURE   R11 3        ; R11 := closure(Function #1.4)
+ 71 [-]: SETTABLE  R10 K55 R11  ; R10["AddElement"] := R11
+ 72 [-]: GETTABLE  R11 R10 K57  ; R11 := R10["FocusElement"]
+ 73 [-]: SETTABLE  R10 K56 R11  ; R10["_CategorizedGrid_FocusElement"] := R11
+ 74 [-]: CLOSURE   R11 4        ; R11 := closure(Function #1.5)
+ 75 [-]: MOVE      R0 R10       ; R0 := R10
+ 76 [-]: SETTABLE  R10 K57 R11  ; R10["FocusElement"] := R11
+ 77 [-]: GETTABLE  R11 R10 K59  ; R11 := R10["FocusElementInDirection"]
+ 78 [-]: SETTABLE  R10 K58 R11  ; R10["_CategorizedGrid_FocusElementInDirection"] := R11
+ 79 [-]: CLOSURE   R11 5        ; R11 := closure(Function #1.6)
+ 80 [-]: SETTABLE  R10 K59 R11  ; R10["FocusElementInDirection"] := R11
+ 81 [-]: CLOSURE   R11 6        ; R11 := closure(Function #1.7)
+ 82 [-]: SETTABLE  R10 K60 R11  ; R10["GetFilterBy"] := R11
+ 83 [-]: CLOSURE   R11 7        ; R11 := closure(Function #1.8)
+ 84 [-]: SETTABLE  R10 K61 R11  ; R10["Filter"] := R11
+ 85 [-]: CLOSURE   R11 8        ; R11 := closure(Function #1.9)
+ 86 [-]: SETTABLE  R10 K62 R11  ; R10["Sort"] := R11
+ 87 [-]: CLOSURE   R11 9        ; R11 := closure(Function #1.10)
+ 88 [-]: SETTABLE  R10 K63 R11  ; R10["DoubleSort"] := R11
+ 89 [-]: CLOSURE   R11 10       ; R11 := closure(Function #1.11)
+ 90 [-]: SETTABLE  R10 K64 R11  ; R10["DoubleSortWithFunction"] := R11
+ 91 [-]: GETTABLE  R11 R10 K66  ; R11 := R10["RemoveElements"]
+ 92 [-]: SETTABLE  R10 K65 R11  ; R10["_CategorizedGrid_RemoveElements"] := R11
+ 93 [-]: CLOSURE   R11 11       ; R11 := closure(Function #1.12)
+ 94 [-]: MOVE      R0 R10       ; R0 := R10
+ 95 [-]: SETTABLE  R10 K66 R11  ; R10["RemoveElements"] := R11
+ 96 [-]: CLOSURE   R11 12       ; R11 := closure(Function #1.13)
+ 97 [-]: SETTABLE  R10 K67 R11  ; R10["OnPreSort"] := R11
+ 98 [-]: CLOSURE   R11 13       ; R11 := closure(Function #1.14)
+ 99 [-]: SETTABLE  R10 K68 R11  ; R10["OnFilteredElementsReady"] := R11
+100 [-]: GETTABLE  R11 R10 K70  ; R11 := R10["Redraw"]
+101 [-]: SETTABLE  R10 K69 R11  ; R10["_CategorizedGrid_Redraw"] := R11
+102 [-]: CLOSURE   R11 14       ; R11 := closure(Function #1.15)
+103 [-]: SETTABLE  R10 K70 R11  ; R10["Redraw"] := R11
+104 [-]: CLOSURE   R11 15       ; R11 := closure(Function #1.16)
+105 [-]: SETTABLE  R10 K71 R11  ; R10["SetupPreInterpolationValues"] := R11
+106 [-]: CLOSURE   R11 16       ; R11 := closure(Function #1.17)
+107 [-]: SETTABLE  R10 K72 R11  ; R10["GetInterpolationProperties"] := R11
+108 [-]: CLOSURE   R11 17       ; R11 := closure(Function #1.18)
+109 [-]: SETTABLE  R10 K73 R11  ; R10["AddCategory"] := R11
+110 [-]: CLOSURE   R11 18       ; R11 := closure(Function #1.19)
+111 [-]: SETTABLE  R10 K74 R11  ; R10["SetCategory"] := R11
+112 [-]: CLOSURE   R11 19       ; R11 := closure(Function #1.20)
+113 [-]: SETTABLE  R10 K75 R11  ; R10["SetCategory_Internal"] := R11
+114 [-]: CLOSURE   R11 20       ; R11 := closure(Function #1.21)
+115 [-]: SETTABLE  R10 K76 R11  ; R10["AddSortBy"] := R11
+116 [-]: CLOSURE   R11 21       ; R11 := closure(Function #1.22)
+117 [-]: SETTABLE  R10 K77 R11  ; R10["GetSortById"] := R11
+118 [-]: CLOSURE   R11 22       ; R11 := closure(Function #1.23)
+119 [-]: SETTABLE  R10 K78 R11  ; R10["SetSortBy"] := R11
+120 [-]: CLOSURE   R11 23       ; R11 := closure(Function #1.24)
+121 [-]: SETTABLE  R10 K79 R11  ; R10["SetSortBy_Internal"] := R11
+122 [-]: GETTABLE  R11 R10 K81  ; R11 := R10["RunForAllElements"]
+123 [-]: SETTABLE  R10 K80 R11  ; R10["_CategorizedGrid_RunForAllElements"] := R11
+124 [-]: CLOSURE   R11 24       ; R11 := closure(Function #1.25)
+125 [-]: SETTABLE  R10 K81 R11  ; R10["RunForAllElements"] := R11
+126 [-]: CLOSURE   R11 25       ; R11 := closure(Function #1.26)
+127 [-]: SETTABLE  R10 K82 R11  ; R10["RunForAllVisibleElements"] := R11
+128 [-]: GETTABLE  R11 R10 K84  ; R11 := R10["OnSelected"]
+129 [-]: SETTABLE  R10 K83 R11  ; R10["_CategorizedGrid_OnSelected"] := R11
+130 [-]: CLOSURE   R11 26       ; R11 := closure(Function #1.27)
+131 [-]: SETTABLE  R10 K84 R11  ; R10["OnSelected"] := R11
+132 [-]: GETTABLE  R11 R10 K86  ; R11 := R10["OnFocused"]
+133 [-]: SETTABLE  R10 K85 R11  ; R10["_CategorizedGrid_OnFocused"] := R11
+134 [-]: CLOSURE   R11 27       ; R11 := closure(Function #1.28)
+135 [-]: SETTABLE  R10 K86 R11  ; R10["OnFocused"] := R11
+136 [-]: GETTABLE  R11 R10 K88  ; R11 := R10["OnUnfocused"]
+137 [-]: SETTABLE  R10 K87 R11  ; R10["_CategorizedGrid_OnUnfocused"] := R11
+138 [-]: CLOSURE   R11 28       ; R11 := closure(Function #1.29)
+139 [-]: SETTABLE  R10 K88 R11  ; R10["OnUnfocused"] := R11
+140 [-]: GETTABLE  R11 R10 K90  ; R11 := R10["OnDraw"]
+141 [-]: SETTABLE  R10 K89 R11  ; R10["_CategorizedGrid_OnDraw"] := R11
+142 [-]: CLOSURE   R11 29       ; R11 := closure(Function #1.30)
+143 [-]: SETTABLE  R10 K90 R11  ; R10["OnDraw"] := R11
+144 [-]: CLOSURE   R11 30       ; R11 := closure(Function #1.31)
+145 [-]: SETTABLE  R10 K91 R11  ; R10["OnElementTransitionStarted"] := R11
+146 [-]: CLOSURE   R11 31       ; R11 := closure(Function #1.32)
+147 [-]: SETTABLE  R10 K92 R11  ; R10["OnElementTransitionEnded"] := R11
+148 [-]: CLOSURE   R11 32       ; R11 := closure(Function #1.33)
+149 [-]: SETTABLE  R10 K93 R11  ; R10["ToggleCategory"] := R11
+150 [-]: CLOSURE   R11 33       ; R11 := closure(Function #1.34)
+151 [-]: MOVE      R0 R10       ; R0 := R10
+152 [-]: SETTABLE  R10 K94 R11  ; R10["PreviousCategory"] := R11
+153 [-]: CLOSURE   R11 34       ; R11 := closure(Function #1.35)
+154 [-]: MOVE      R0 R10       ; R0 := R10
+155 [-]: SETTABLE  R10 K95 R11  ; R10["NextCategory"] := R11
+156 [-]: CLOSURE   R11 35       ; R11 := closure(Function #1.36)
+157 [-]: SETTABLE  R10 K96 R11  ; R10["OnCategoryPress"] := R11
+158 [-]: CLOSURE   R11 36       ; R11 := closure(Function #1.37)
+159 [-]: SETTABLE  R10 K97 R11  ; R10["Update"] := R11
+160 [-]: CLOSURE   R11 37       ; R11 := closure(Function #1.38)
+161 [-]: SETTABLE  R10 K98 R11  ; R10["onKeyUp_MENU_SELECT"] := R11
+162 [-]: CLOSURE   R11 38       ; R11 := closure(Function #1.39)
+163 [-]: SETTABLE  R10 K99 R11  ; R10["onKeyUp_MENU_CANCEL"] := R11
+164 [-]: CLOSURE   R11 39       ; R11 := closure(Function #1.40)
+165 [-]: SETTABLE  R10 K100 R11 ; R10["onKeyUp_MENU_CLICK"] := R11
+166 [-]: CLOSURE   R11 40       ; R11 := closure(Function #1.41)
+167 [-]: SETTABLE  R10 K101 R11 ; R10["OnUnfilteredElementRemoved"] := R11
+168 [-]: CLOSURE   R11 41       ; R11 := closure(Function #1.42)
+169 [-]: SETTABLE  R10 K102 R11 ; R10["RemoveUnfilteredElementById"] := R11
+170 [-]: CLOSURE   R11 42       ; R11 := closure(Function #1.43)
+171 [-]: SETTABLE  R10 K103 R11 ; R10["EnableSmoothScroll"] := R11
+172 [-]: CLOSURE   R11 43       ; R11 := closure(Function #1.44)
+173 [-]: SETTABLE  R10 K104 R11 ; R10["GetUnfilteredElementById"] := R11
+174 [-]: CLOSURE   R11 44       ; R11 := closure(Function #1.45)
+175 [-]: SETTABLE  R10 K105 R11 ; R10["GetUnfilteredElementIndexById"] := R11
+176 [-]: GETTABLE  R11 R10 K14  ; R11 := R10["mCategoryClipName"]
+177 [-]: EQ        1 R11 K27    ; if R11 == nil then PC := 220
+178 [-]: JMP       220          ; PC := 220
+179 [-]: LOADNIL   R11 R11      ; R11 := nil
+180 [-]: GETTABLE  R12 R10 K10  ; R12 := R10["mApplyThemes"]
+181 [-]: TEST      R12 0        ; if not R12 then PC := 188
+182 [-]: JMP       188          ; PC := 188
+183 [-]: GETGLOBAL R12 K0       ; R12 := 0x329BDC44
+184 [-]: LOADK     R13 K106     ; R13 := "Lotus.Interface.Components.ThemedCategoriesMenu"
+185 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+186 [-]: MOVE      R11 R12      ; R11 := R12
+187 [-]: JMP       192          ; PC := 192
+188 [-]: GETGLOBAL R12 K0       ; R12 := 0x329BDC44
+189 [-]: LOADK     R13 K107     ; R13 := "Lotus.Interface.Components.CategoriesMenu"
+190 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+191 [-]: MOVE      R11 R12      ; R11 := R12
+192 [-]: GETTABLE  R12 R11 K108 ; R12 := R11["0x46FF1A3C"]
+193 [-]: GETTABLE  R13 R10 K109 ; R13 := R10["mMovie"]
+194 [-]: GETTABLE  R14 R10 K14  ; R14 := R10["mCategoryClipName"]
+195 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+196 [-]: SETTABLE  R10 K26 R12  ; R10["mCategoryMenu"] := R12
 197 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
-198 [-]: SETTABLE  R12 K108 K27 ; R12["mPendingCategory"] := nil
+198 [-]: SETTABLE  R12 K110 K9  ; R12["mHideEmptyCategories"] := "0x0"
 199 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
-200 [-]: NEWTABLE  R13 0 5      ; R13 := {}
-201 [-]: SETTABLE  R13 K110 K27 ; R13["Time"] := nil
-202 [-]: SETTABLE  R13 K111 K27 ; R13["PrevCycleTime"] := nil
-203 [-]: SETTABLE  R13 K112 K113; R13["Direction"] := 0
-204 [-]: SETTABLE  R13 K114 K18 ; R13["Threshold"] := 1
-205 [-]: SETTABLE  R13 K115 K116; R13["PerCycle"] := 0.25
-206 [-]: SETTABLE  R12 K109 R13 ; R12["mDownInfo"] := R13
-207 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
-208 [-]: CLOSURE   R13 45       ; R13 := closure(Function #1.46)
-209 [-]: SETTABLE  R12 K117 R13 ; R12["HasCategory"] := R13
-210 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
-211 [-]: CLOSURE   R13 46       ; R13 := closure(Function #1.47)
-212 [-]: MOVE      R0 R10       ; R0 := R10
-213 [-]: SETTABLE  R12 K118 R13 ; R12["mOnSelectedCallback"] := R13
-214 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
-215 [-]: CLOSURE   R13 47       ; R13 := closure(Function #1.48)
-216 [-]: MOVE      R0 R10       ; R0 := R10
-217 [-]: SETTABLE  R12 K119 R13 ; R12["mElementDrawCallback"] := R13
-218 [-]: GETTABLE  R12 R10 K16  ; R12 := R10["mSortClipName"]
-219 [-]: TEST      R12 0        ; if not R12 then PC := 319
-220 [-]: JMP       319          ; PC := 319
-221 [-]: GETTABLE  R12 R10 K106 ; R12 := R10["mMovie"]
-222 [-]: SELF      R12 R12 K120 ; R13 := R12; R12 := R12["0x6B7B470B"]
-223 [-]: GETTABLE  R14 R10 K16  ; R14 := R10["mSortClipName"]
-224 [-]: LOADK     R15 K121     ; R15 := ".Buttons"
-225 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
-226 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-227 [-]: EQ        0 R12 K122   ; if R12 ~= "undefined" then PC := 230
-228 [-]: JMP       230          ; PC := 230
-229 [-]: MOVE      R12 R0       ; R12 := R0
-230 [-]: MOVE      R12 R1       ; R12 := R1
-231 [-]: TEST      R12 0        ; if not R12 then PC := 242
-232 [-]: JMP       242          ; PC := 242
-233 [-]: GETGLOBAL R13 K0       ; R13 := 0x329BDC44
-234 [-]: LOADK     R14 K123     ; R14 := "Lotus.Interface.Components.DropDownMenu"
-235 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-236 [-]: GETTABLE  R14 R13 K105 ; R14 := R13["0x46FF1A3C"]
-237 [-]: GETTABLE  R15 R10 K106 ; R15 := R10["mMovie"]
-238 [-]: GETTABLE  R16 R10 K16  ; R16 := R10["mSortClipName"]
-239 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
-240 [-]: SETTABLE  R10 K124 R14 ; R10["mSortMenu"] := R14
-241 [-]: JMP       250          ; PC := 250
-242 [-]: GETGLOBAL R14 K0       ; R14 := 0x329BDC44
-243 [-]: LOADK     R15 K125     ; R15 := "EE.Interface.Components.DropDownMenu"
-244 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-245 [-]: GETTABLE  R15 R14 K126 ; R15 := R14["0xA74E8C2F"]
-246 [-]: GETTABLE  R16 R10 K106 ; R16 := R10["mMovie"]
-247 [-]: GETTABLE  R17 R10 K16  ; R17 := R10["mSortClipName"]
-248 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-249 [-]: SETTABLE  R10 K124 R15 ; R10["mSortMenu"] := R15
-250 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-251 [-]: SETTABLE  R15 K127 R12 ; R15["mNewStyle"] := R12
-252 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-253 [-]: GETTABLE  R16 R10 K129 ; R16 := R10["UTIL"]
-254 [-]: GETTABLE  R16 R16 K130 ; R16 := R16["0xF81722A2"]
-255 [-]: GETTABLE  R17 R10 K10  ; R17 := R10["mApplyThemes"]
-256 [-]: LOADK     R18 K131     ; R18 := "/Lotus/Language/Menu/SortBy_NoPrefix"
-257 [-]: LOADK     R19 K132     ; R19 := "/Lotus/Language/Menu/SortBy_Prefix"
-258 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-259 [-]: SETTABLE  R15 K128 R16 ; R15["mSelectedPrefix"] := R16
-260 [-]: GETTABLE  R15 R10 K106 ; R15 := R10["mMovie"]
-261 [-]: SELF      R15 R15 K133 ; R16 := R15; R15 := R15["0x1C19D966"]
-262 [-]: GETTABLE  R17 R10 K16  ; R17 := R10["mSortClipName"]
-263 [-]: LOADK     R18 K134     ; R18 := "_visible"
-264 [-]: MOVE      R19 R0       ; R19 := R0
-265 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-266 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-267 [-]: SELF      R15 R15 K135 ; R16 := R15; R15 := R15["0xE13A565"]
-268 [-]: LOADK     R17 K136     ; R17 := "SortByPressed"
-269 [-]: LOADK     R18 K137     ; R18 := "SortByFocused"
-270 [-]: LOADK     R19 K138     ; R19 := "SortByUnfocused"
-271 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-272 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-273 [-]: SETTABLE  R15 K17 K18  ; R15["mDepthDirection"] := 1
-274 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-275 [-]: GETGLOBAL R16 K140     ; R16 := 0xF595ADDE
-276 [-]: GETGLOBAL R17 K141     ; R17 := 0x8C64AFA9
-277 [-]: GETTABLE  R18 R10 K106 ; R18 := R10["mMovie"]
-278 [-]: GETTABLE  R19 R10 K16  ; R19 := R10["mSortClipName"]
-279 [-]: LOADK     R20 K142     ; R20 := ".getDepth"
-280 [-]: CONCAT    R19 R19 R20  ; R19 := R19 .. R20
-281 [-]: CALL      R17 3 0      ; R17,... := R17(R18,R19)
-282 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
-283 [-]: SETTABLE  R15 K139 R16 ; R15["mStartingDepth"] := R16
-284 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-285 [-]: CLOSURE   R16 48       ; R16 := closure(Function #1.49)
-286 [-]: MOVE      R0 R10       ; R0 := R10
-287 [-]: MOVE      R0 R12       ; R0 := R12
-288 [-]: SETTABLE  R15 K118 R16 ; R15["mOnSelectedCallback"] := R16
-289 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-290 [-]: CLOSURE   R16 49       ; R16 := closure(Function #1.50)
-291 [-]: MOVE      R0 R10       ; R0 := R10
-292 [-]: SETTABLE  R15 K119 R16 ; R15["mElementDrawCallback"] := R16
-293 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-294 [-]: CLOSURE   R16 50       ; R16 := closure(Function #1.51)
-295 [-]: MOVE      R0 R10       ; R0 := R10
-296 [-]: SETTABLE  R15 K143 R16 ; R15["OnExpandCallback"] := R16
-297 [-]: GETTABLE  R15 R10 K124 ; R15 := R10["mSortMenu"]
-298 [-]: CLOSURE   R16 51       ; R16 := closure(Function #1.52)
-299 [-]: MOVE      R0 R10       ; R0 := R10
-300 [-]: SETTABLE  R15 K144 R16 ; R15["OnCollapseCallback"] := R16
-301 [-]: GETTABLE  R15 R10 K106 ; R15 := R10["mMovie"]
-302 [-]: SELF      R15 R15 K145 ; R16 := R15; R15 := R15["0x8BF7ABD3"]
-303 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-304 [-]: TEST      R15 0        ; if not R15 then PC := 310
-305 [-]: JMP       310          ; PC := 310
-306 [-]: GETGLOBAL R15 K146     ; R15 := _G
-307 [-]: GETTABLE  R15 R15 K147 ; R15 := R15["UIMaterial_DepthTestText"]
-308 [-]: TEST      R15 1        ; if R15 then PC := 312
-309 [-]: JMP       312          ; PC := 312
-310 [-]: GETGLOBAL R15 K146     ; R15 := _G
-311 [-]: GETTABLE  R15 R15 K148 ; R15 := R15["UIMaterial_PlainText"]
-312 [-]: SELF      R16 R0 K149  ; R17 := R0; R16 := R0["0x7E1F26D7"]
-313 [-]: GETTABLE  R18 R10 K16  ; R18 := R10["mSortClipName"]
-314 [-]: LOADK     R19 K150     ; R19 := ".Selected"
-315 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
-316 [-]: MOVE      R19 R15      ; R19 := R15
-317 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-318 [-]: CLOSE     R12          ; SAVE R12,...
-319 [-]: RETURN    R10 2        ; return R10
-320 [-]: RETURN    R0 1         ; return 
+200 [-]: SETTABLE  R12 K111 K27 ; R12["mPendingCategory"] := nil
+201 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
+202 [-]: NEWTABLE  R13 0 5      ; R13 := {}
+203 [-]: SETTABLE  R13 K113 K27 ; R13["Time"] := nil
+204 [-]: SETTABLE  R13 K114 K27 ; R13["PrevCycleTime"] := nil
+205 [-]: SETTABLE  R13 K115 K48 ; R13["Direction"] := 0
+206 [-]: SETTABLE  R13 K116 K18 ; R13["Threshold"] := 1
+207 [-]: SETTABLE  R13 K117 K118; R13["PerCycle"] := 0.25
+208 [-]: SETTABLE  R12 K112 R13 ; R12["mDownInfo"] := R13
+209 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
+210 [-]: CLOSURE   R13 45       ; R13 := closure(Function #1.46)
+211 [-]: SETTABLE  R12 K119 R13 ; R12["HasCategory"] := R13
+212 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
+213 [-]: CLOSURE   R13 46       ; R13 := closure(Function #1.47)
+214 [-]: MOVE      R0 R10       ; R0 := R10
+215 [-]: SETTABLE  R12 K120 R13 ; R12["mOnSelectedCallback"] := R13
+216 [-]: GETTABLE  R12 R10 K26  ; R12 := R10["mCategoryMenu"]
+217 [-]: CLOSURE   R13 47       ; R13 := closure(Function #1.48)
+218 [-]: MOVE      R0 R10       ; R0 := R10
+219 [-]: SETTABLE  R12 K121 R13 ; R12["mElementDrawCallback"] := R13
+220 [-]: GETTABLE  R12 R10 K16  ; R12 := R10["mSortClipName"]
+221 [-]: TEST      R12 0        ; if not R12 then PC := 321
+222 [-]: JMP       321          ; PC := 321
+223 [-]: GETTABLE  R12 R10 K109 ; R12 := R10["mMovie"]
+224 [-]: SELF      R12 R12 K122 ; R13 := R12; R12 := R12["0x6B7B470B"]
+225 [-]: GETTABLE  R14 R10 K16  ; R14 := R10["mSortClipName"]
+226 [-]: LOADK     R15 K123     ; R15 := ".Buttons"
+227 [-]: CONCAT    R14 R14 R15  ; R14 := R14 .. R15
+228 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+229 [-]: EQ        0 R12 K124   ; if R12 ~= "undefined" then PC := 232
+230 [-]: JMP       232          ; PC := 232
+231 [-]: MOVE      R12 R0       ; R12 := R0
+232 [-]: MOVE      R12 R1       ; R12 := R1
+233 [-]: TEST      R12 0        ; if not R12 then PC := 244
+234 [-]: JMP       244          ; PC := 244
+235 [-]: GETGLOBAL R13 K0       ; R13 := 0x329BDC44
+236 [-]: LOADK     R14 K125     ; R14 := "Lotus.Interface.Components.DropDownMenu"
+237 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+238 [-]: GETTABLE  R14 R13 K108 ; R14 := R13["0x46FF1A3C"]
+239 [-]: GETTABLE  R15 R10 K109 ; R15 := R10["mMovie"]
+240 [-]: GETTABLE  R16 R10 K16  ; R16 := R10["mSortClipName"]
+241 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
+242 [-]: SETTABLE  R10 K126 R14 ; R10["mSortMenu"] := R14
+243 [-]: JMP       252          ; PC := 252
+244 [-]: GETGLOBAL R14 K0       ; R14 := 0x329BDC44
+245 [-]: LOADK     R15 K127     ; R15 := "EE.Interface.Components.DropDownMenu"
+246 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+247 [-]: GETTABLE  R15 R14 K128 ; R15 := R14["0xA74E8C2F"]
+248 [-]: GETTABLE  R16 R10 K109 ; R16 := R10["mMovie"]
+249 [-]: GETTABLE  R17 R10 K16  ; R17 := R10["mSortClipName"]
+250 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+251 [-]: SETTABLE  R10 K126 R15 ; R10["mSortMenu"] := R15
+252 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+253 [-]: SETTABLE  R15 K129 R12 ; R15["mNewStyle"] := R12
+254 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+255 [-]: GETTABLE  R16 R10 K131 ; R16 := R10["UTIL"]
+256 [-]: GETTABLE  R16 R16 K132 ; R16 := R16["0xF81722A2"]
+257 [-]: GETTABLE  R17 R10 K10  ; R17 := R10["mApplyThemes"]
+258 [-]: LOADK     R18 K133     ; R18 := "/Lotus/Language/Menu/SortBy_NoPrefix"
+259 [-]: LOADK     R19 K134     ; R19 := "/Lotus/Language/Menu/SortBy_Prefix"
+260 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+261 [-]: SETTABLE  R15 K130 R16 ; R15["mSelectedPrefix"] := R16
+262 [-]: GETTABLE  R15 R10 K109 ; R15 := R10["mMovie"]
+263 [-]: SELF      R15 R15 K135 ; R16 := R15; R15 := R15["0x1C19D966"]
+264 [-]: GETTABLE  R17 R10 K16  ; R17 := R10["mSortClipName"]
+265 [-]: LOADK     R18 K136     ; R18 := "_visible"
+266 [-]: MOVE      R19 R0       ; R19 := R0
+267 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+268 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+269 [-]: SELF      R15 R15 K137 ; R16 := R15; R15 := R15["0xE13A565"]
+270 [-]: LOADK     R17 K138     ; R17 := "SortByPressed"
+271 [-]: LOADK     R18 K139     ; R18 := "SortByFocused"
+272 [-]: LOADK     R19 K140     ; R19 := "SortByUnfocused"
+273 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+274 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+275 [-]: SETTABLE  R15 K17 K18  ; R15["mDepthDirection"] := 1
+276 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+277 [-]: GETGLOBAL R16 K142     ; R16 := 0xF595ADDE
+278 [-]: GETGLOBAL R17 K143     ; R17 := 0x8C64AFA9
+279 [-]: GETTABLE  R18 R10 K109 ; R18 := R10["mMovie"]
+280 [-]: GETTABLE  R19 R10 K16  ; R19 := R10["mSortClipName"]
+281 [-]: LOADK     R20 K144     ; R20 := ".getDepth"
+282 [-]: CONCAT    R19 R19 R20  ; R19 := R19 .. R20
+283 [-]: CALL      R17 3 0      ; R17,... := R17(R18,R19)
+284 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
+285 [-]: SETTABLE  R15 K141 R16 ; R15["mStartingDepth"] := R16
+286 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+287 [-]: CLOSURE   R16 48       ; R16 := closure(Function #1.49)
+288 [-]: MOVE      R0 R10       ; R0 := R10
+289 [-]: MOVE      R0 R12       ; R0 := R12
+290 [-]: SETTABLE  R15 K120 R16 ; R15["mOnSelectedCallback"] := R16
+291 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+292 [-]: CLOSURE   R16 49       ; R16 := closure(Function #1.50)
+293 [-]: MOVE      R0 R10       ; R0 := R10
+294 [-]: SETTABLE  R15 K121 R16 ; R15["mElementDrawCallback"] := R16
+295 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+296 [-]: CLOSURE   R16 50       ; R16 := closure(Function #1.51)
+297 [-]: MOVE      R0 R10       ; R0 := R10
+298 [-]: SETTABLE  R15 K145 R16 ; R15["OnExpandCallback"] := R16
+299 [-]: GETTABLE  R15 R10 K126 ; R15 := R10["mSortMenu"]
+300 [-]: CLOSURE   R16 51       ; R16 := closure(Function #1.52)
+301 [-]: MOVE      R0 R10       ; R0 := R10
+302 [-]: SETTABLE  R15 K146 R16 ; R15["OnCollapseCallback"] := R16
+303 [-]: GETTABLE  R15 R10 K109 ; R15 := R10["mMovie"]
+304 [-]: SELF      R15 R15 K147 ; R16 := R15; R15 := R15["0x8BF7ABD3"]
+305 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+306 [-]: TEST      R15 0        ; if not R15 then PC := 312
+307 [-]: JMP       312          ; PC := 312
+308 [-]: GETGLOBAL R15 K148     ; R15 := _G
+309 [-]: GETTABLE  R15 R15 K149 ; R15 := R15["UIMaterial_DepthTestText"]
+310 [-]: TEST      R15 1        ; if R15 then PC := 314
+311 [-]: JMP       314          ; PC := 314
+312 [-]: GETGLOBAL R15 K148     ; R15 := _G
+313 [-]: GETTABLE  R15 R15 K150 ; R15 := R15["UIMaterial_PlainText"]
+314 [-]: SELF      R16 R0 K151  ; R17 := R0; R16 := R0["0x7E1F26D7"]
+315 [-]: GETTABLE  R18 R10 K16  ; R18 := R10["mSortClipName"]
+316 [-]: LOADK     R19 K152     ; R19 := ".Selected"
+317 [-]: CONCAT    R18 R18 R19  ; R18 := R18 .. R19
+318 [-]: MOVE      R19 R15      ; R19 := R15
+319 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+320 [-]: CLOSE     R12          ; SAVE R12,...
+321 [-]: RETURN    R10 2        ; return R10
+322 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.1:
 ;
 ; Name:            
-; Defined at line: 40
+; Defined at line: 42
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -428,7 +429,7 @@ code size: 9
 ; Function #1.2:
 ;
 ; Name:            
-; Defined at line: 44
+; Defined at line: 46
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -460,7 +461,7 @@ code size: 9
 ; Function #1.3:
 ;
 ; Name:            
-; Defined at line: 59
+; Defined at line: 61
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -489,7 +490,7 @@ code size: 9
 ; Function #1.4:
 ;
 ; Name:            
-; Defined at line: 71
+; Defined at line: 73
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -517,7 +518,7 @@ code size: 9
 ; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 84
+; Defined at line: 86
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -542,7 +543,7 @@ code size: 9
 ; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 91
+; Defined at line: 93
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -594,7 +595,7 @@ code size: 9
 ; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 106
+; Defined at line: 108
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -608,7 +609,7 @@ code size: 9
 ; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 110
+; Defined at line: 112
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -616,35 +617,38 @@ code size: 9
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x7F0BD1E3"]
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  3 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 14
-  4 [-]: JMP       14           ; PC := 14
-  5 [-]: EQ        1 R2 K2      ; if R2 == 0 then PC := 14
-  6 [-]: JMP       14           ; PC := 14
-  7 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["UTIL"]
-  8 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["0xBFFBFE5E"]
-  9 [-]: GETTABLE  R4 R1 K5     ; R4 := R1["Categories"]
- 10 [-]: MOVE      R5 R2        ; R5 := R2
- 11 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 12 [-]: TEST      R3 0         ; if not R3 then PC := 23
- 13 [-]: JMP       23           ; PC := 23
- 14 [-]: MOVE      R3 R0        ; R3 := R0
- 15 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["AdditionalFilterFunction"]
- 16 [-]: EQ        1 R4 K1      ; if R4 == nil then PC := 22
- 17 [-]: JMP       22           ; PC := 22
- 18 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["0x1F644B9"]
- 19 [-]: MOVE      R5 R1        ; R5 := R1
- 20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 21 [-]: MOVE      R3 R4        ; R3 := R4
- 22 [-]: RETURN    R3 2         ; return R3
- 23 [-]: MOVE      R4 R1        ; R4 := R1
- 24 [-]: RETURN    R4 2         ; return R4
- 25 [-]: RETURN    R0 1         ; return 
+  3 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 17
+  4 [-]: JMP       17           ; PC := 17
+  5 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mQuickFilterAll"]
+  6 [-]: TEST      R3 0         ; if not R3 then PC := 10
+  7 [-]: JMP       10           ; PC := 10
+  8 [-]: EQ        1 R2 K3      ; if R2 == 0 then PC := 17
+  9 [-]: JMP       17           ; PC := 17
+ 10 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["UTIL"]
+ 11 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["0xBFFBFE5E"]
+ 12 [-]: GETTABLE  R4 R1 K6     ; R4 := R1["Categories"]
+ 13 [-]: MOVE      R5 R2        ; R5 := R2
+ 14 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 15 [-]: TEST      R3 0         ; if not R3 then PC := 26
+ 16 [-]: JMP       26           ; PC := 26
+ 17 [-]: MOVE      R3 R0        ; R3 := R0
+ 18 [-]: GETTABLE  R4 R0 K7     ; R4 := R0["AdditionalFilterFunction"]
+ 19 [-]: EQ        1 R4 K1      ; if R4 == nil then PC := 25
+ 20 [-]: JMP       25           ; PC := 25
+ 21 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["0x1F644B9"]
+ 22 [-]: MOVE      R5 R1        ; R5 := R1
+ 23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 24 [-]: MOVE      R3 R4        ; R3 := R4
+ 25 [-]: RETURN    R3 2         ; return R3
+ 26 [-]: MOVE      R4 R1        ; R4 := R1
+ 27 [-]: RETURN    R4 2         ; return R4
+ 28 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 126
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -675,7 +679,7 @@ code size: 9
 ; Function #1.10:
 ;
 ; Name:            
-; Defined at line: 131
+; Defined at line: 133
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -720,7 +724,7 @@ code size: 9
 ; Function #1.11:
 ;
 ; Name:            
-; Defined at line: 143
+; Defined at line: 145
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -754,7 +758,7 @@ code size: 9
 ; Function #1.12:
 ;
 ; Name:            
-; Defined at line: 154
+; Defined at line: 156
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -767,16 +771,17 @@ code size: 9
   5 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
   6 [-]: NEWTABLE  R3 0 0       ; R3 := {}
   7 [-]: SETTABLE  R0 K1 R3     ; R0["mUnfilteredElements"] := R3
-  8 [-]: NEWTABLE  R3 0 0       ; R3 := {}
-  9 [-]: SETTABLE  R0 K2 R3     ; R0["mCategoriesCount"] := R3
- 10 [-]: SETTABLE  R0 K3 K4     ; R0["mLastFilterBy"] := nil
- 11 [-]: RETURN    R0 1         ; return 
+  8 [-]: SETTABLE  R0 K2 K3     ; R0["mNonFillerElements"] := 0
+  9 [-]: NEWTABLE  R3 0 0       ; R3 := {}
+ 10 [-]: SETTABLE  R0 K4 R3     ; R0["mCategoriesCount"] := R3
+ 11 [-]: SETTABLE  R0 K5 K6     ; R0["mLastFilterBy"] := nil
+ 12 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.13:
 ;
 ; Name:            
-; Defined at line: 161
+; Defined at line: 164
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -788,7 +793,7 @@ code size: 9
 ; Function #1.14:
 ;
 ; Name:            
-; Defined at line: 164
+; Defined at line: 167
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -828,329 +833,310 @@ code size: 9
 ; Function #1.15:
 ;
 ; Name:            
-; Defined at line: 176
+; Defined at line: 179
 ; #Upvalues:       0
 ; #Parameters:     6
 ; Is_vararg:       0
-; Max Stack Size:  25
+; Max Stack Size:  24
 
   1 [-]: GETTABLE  R6 R0 K0     ; R6 := R0["mUnfilteredElements"]
   2 [-]: LEN       R6 R6        ; R6 := # R6
-  3 [-]: LOADK     R7 K1        ; R7 := 0
-  4 [-]: SELF      R8 R0 K2     ; R9 := R0; R8 := R0["0x3DFBB1D4"]
-  5 [-]: CLOSURE   R10 0        ; R10 := closure(Function #1.15.1)
-  6 [-]: MOVE      R0 R7        ; R0 := R7
-  7 [-]: CALL      R8 3 1       ; R8(R9,R10)
-  8 [-]: GETTABLE  R8 R0 K3     ; R8 := R0["mLastFilterBy"]
-  9 [-]: SELF      R9 R0 K4     ; R10 := R0; R9 := R0["0x7F0BD1E3"]
- 10 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 11 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 27
- 12 [-]: JMP       27           ; PC := 27
- 13 [-]: GETTABLE  R8 R0 K5     ; R8 := R0["mSortingChanged"]
- 14 [-]: TEST      R8 1         ; if R8 then PC := 27
- 15 [-]: JMP       27           ; PC := 27
- 16 [-]: TEST      R2 1         ; if R2 then PC := 27
- 17 [-]: JMP       27           ; PC := 27
- 18 [-]: SELF      R8 R0 K4     ; R9 := R0; R8 := R0["0x7F0BD1E3"]
- 19 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 20 [-]: EQ        0 R8 K6      ; if R8 ~= nil then PC := 231
- 21 [-]: JMP       231          ; PC := 231
- 22 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 231
- 23 [-]: JMP       231          ; PC := 231
- 24 [-]: GETTABLE  R8 R0 K7     ; R8 := R0["mRedrawFromScrollBar"]
- 25 [-]: TEST      R8 1         ; if R8 then PC := 231
- 26 [-]: JMP       231          ; PC := 231
- 27 [-]: GETGLOBAL R8 K8        ; R8 := 0x8C64AFA9
- 28 [-]: GETTABLE  R9 R0 K9     ; R9 := R0["mMovie"]
- 29 [-]: GETTABLE  R10 R0 K10   ; R10 := R0["mClipName"]
- 30 [-]: LOADK     R11 K11      ; R11 := ".swapDepths"
- 31 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
- 32 [-]: GETTABLE  R11 R0 K12   ; R11 := R0["mInitialDepth"]
- 33 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 34 [-]: SELF      R8 R0 K13    ; R9 := R0; R8 := R0["0x5019FA9B"]
- 35 [-]: MOVE      R10 R1       ; R10 := R1
- 36 [-]: MOVE      R11 R1       ; R11 := R1
- 37 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 38 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0["0x90A97C9C"]
- 39 [-]: CALL      R8 2 1       ; R8(R9)
- 40 [-]: GETTABLE  R8 R0 K15    ; R8 := R0["mSortBy"]
- 41 [-]: TEST      R8 0         ; if not R8 then PC := 88
- 42 [-]: JMP       88           ; PC := 88
- 43 [-]: GETTABLE  R8 R0 K15    ; R8 := R0["mSortBy"]
- 44 [-]: TEST      R8 0         ; if not R8 then PC := 57
- 45 [-]: JMP       57           ; PC := 57
- 46 [-]: GETGLOBAL R8 K16       ; R8 := 0x6A235628
- 47 [-]: GETTABLE  R9 R0 K15    ; R9 := R0["mSortBy"]
- 48 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 49 [-]: EQ        0 R8 K17     ; if R8 ~= "function" then PC := 57
- 50 [-]: JMP       57           ; PC := 57
- 51 [-]: GETGLOBAL R8 K18       ; R8 := table
- 52 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["0xA5C58010"]
- 53 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mUnfilteredElements"]
- 54 [-]: GETTABLE  R10 R0 K15   ; R10 := R0["mSortBy"]
- 55 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 56 [-]: JMP       88           ; PC := 88
- 57 [-]: GETTABLE  R8 R0 K20    ; R8 := R0["mLastSortBy"]
- 58 [-]: TEST      R8 0         ; if not R8 then PC := 82
- 59 [-]: JMP       82           ; PC := 82
- 60 [-]: GETTABLE  R8 R0 K15    ; R8 := R0["mSortBy"]
- 61 [-]: TEST      R8 0         ; if not R8 then PC := 82
- 62 [-]: JMP       82           ; PC := 82
- 63 [-]: GETGLOBAL R8 K16       ; R8 := 0x6A235628
- 64 [-]: GETTABLE  R9 R0 K20    ; R9 := R0["mLastSortBy"]
- 65 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 66 [-]: EQ        0 R8 K17     ; if R8 ~= "function" then PC := 75
- 67 [-]: JMP       75           ; PC := 75
- 68 [-]: GETGLOBAL R8 K18       ; R8 := table
- 69 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["0xA5C58010"]
- 70 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mUnfilteredElements"]
- 71 [-]: CLOSURE   R10 1        ; R10 := closure(Function #1.15.2)
- 72 [-]: MOVE      R0 R0        ; R0 := R0
- 73 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 74 [-]: JMP       88           ; PC := 88
- 75 [-]: GETGLOBAL R8 K18       ; R8 := table
- 76 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["0xA5C58010"]
- 77 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mUnfilteredElements"]
- 78 [-]: CLOSURE   R10 2        ; R10 := closure(Function #1.15.3)
- 79 [-]: MOVE      R0 R0        ; R0 := R0
- 80 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 81 [-]: JMP       88           ; PC := 88
- 82 [-]: GETGLOBAL R8 K18       ; R8 := table
- 83 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["0xA5C58010"]
- 84 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mUnfilteredElements"]
- 85 [-]: CLOSURE   R10 3        ; R10 := closure(Function #1.15.4)
- 86 [-]: MOVE      R0 R0        ; R0 := R0
- 87 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 88 [-]: GETGLOBAL R8 K21       ; R8 := 0x1BF588C6
- 89 [-]: LOADK     R9 K1        ; R9 := 0
- 90 [-]: CALL      R8 2 1       ; R8(R9)
- 91 [-]: GETGLOBAL R8 K22       ; R8 := 0x400E7765
- 92 [-]: GETTABLE  R9 R0 K23    ; R9 := R0["mCategoryMenu"]
- 93 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 94 [-]: TEST      R8 1         ; if R8 then PC := 201
- 95 [-]: JMP       201          ; PC := 201
- 96 [-]: GETTABLE  R8 R0 K23    ; R8 := R0["mCategoryMenu"]
- 97 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["mHideEmptyCategories"]
- 98 [-]: TEST      R8 0         ; if not R8 then PC := 201
- 99 [-]: JMP       201          ; PC := 201
-100 [-]: TEST      R4 1         ; if R4 then PC := 201
-101 [-]: JMP       201          ; PC := 201
-102 [-]: TEST      R5 1         ; if R5 then PC := 201
-103 [-]: JMP       201          ; PC := 201
-104 [-]: GETTABLE  R8 R0 K23    ; R8 := R0["mCategoryMenu"]
-105 [-]: SELF      R8 R8 K25    ; R9 := R8; R8 := R8["0x7CF71D03"]
-106 [-]: MOVE      R10 R1       ; R10 := R1
-107 [-]: MOVE      R11 R1       ; R11 := R1
-108 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
-109 [-]: LOADK     R8 K26       ; R8 := 1
-110 [-]: GETTABLE  R9 R0 K27    ; R9 := R0["mUnfilteredCategories"]
-111 [-]: LEN       R9 R9        ; R9 := # R9
-112 [-]: LOADK     R10 K26      ; R10 := 1
-113 [-]: FORPREP   R8 145       ; R8 -= R10; PC := 145
-114 [-]: GETTABLE  R12 R0 K27   ; R12 := R0["mUnfilteredCategories"]
-115 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
-116 [-]: SETTABLE  R12 K10 K6   ; R12["mClipName"] := nil
-117 [-]: GETTABLE  R12 R0 K27   ; R12 := R0["mUnfilteredCategories"]
-118 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
-119 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["Category"]
-120 [-]: EQ        1 R12 K1     ; if R12 == 0 then PC := 136
-121 [-]: JMP       136          ; PC := 136
-122 [-]: GETTABLE  R12 R0 K29   ; R12 := R0["mCategoriesCount"]
-123 [-]: GETTABLE  R13 R0 K27   ; R13 := R0["mUnfilteredCategories"]
-124 [-]: GETTABLE  R13 R13 R11  ; R13 := R13[R11]
-125 [-]: GETTABLE  R13 R13 K28  ; R13 := R13["Category"]
-126 [-]: GETTABLE  R12 R12 R13  ; R12 := R12[R13]
-127 [-]: EQ        1 R12 K6     ; if R12 == nil then PC := 145
-128 [-]: JMP       145          ; PC := 145
-129 [-]: GETTABLE  R12 R0 K29   ; R12 := R0["mCategoriesCount"]
-130 [-]: GETTABLE  R13 R0 K27   ; R13 := R0["mUnfilteredCategories"]
-131 [-]: GETTABLE  R13 R13 R11  ; R13 := R13[R11]
-132 [-]: GETTABLE  R13 R13 K28  ; R13 := R13["Category"]
-133 [-]: GETTABLE  R12 R12 R13  ; R12 := R12[R13]
-134 [-]: LT        0 K1 R12     ; if 0 >= R12 then PC := 145
-135 [-]: JMP       145          ; PC := 145
-136 [-]: GETTABLE  R12 R0 K27   ; R12 := R0["mUnfilteredCategories"]
-137 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
-138 [-]: SETTABLE  R12 K30 K31  ; R12["mInitialized"] := "0x0"
-139 [-]: GETTABLE  R12 R0 K23   ; R12 := R0["mCategoryMenu"]
-140 [-]: SELF      R12 R12 K32  ; R13 := R12; R12 := R12["0xA77DA8EE"]
-141 [-]: GETTABLE  R14 R0 K27   ; R14 := R0["mUnfilteredCategories"]
-142 [-]: GETTABLE  R14 R14 R11  ; R14 := R14[R11]
-143 [-]: MOVE      R15 R1       ; R15 := R1
-144 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-145 [-]: FORLOOP   R8 114       ; R8 += R10; if R8 <= R9 then begin PC := 114; R11 := R8 end
-146 [-]: SELF      R12 R0 K4    ; R13 := R0; R12 := R0["0x7F0BD1E3"]
-147 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-148 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
-149 [-]: GETTABLE  R13 R13 K33  ; R13 := R13["mPendingCategory"]
-150 [-]: EQ        1 R13 K6     ; if R13 == nil then PC := 154
-151 [-]: JMP       154          ; PC := 154
-152 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
-153 [-]: GETTABLE  R12 R13 K33  ; R12 := R13["mPendingCategory"]
-154 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
-155 [-]: SELF      R13 R13 K34  ; R14 := R13; R13 := R13["0xEAE2988B"]
-156 [-]: MOVE      R15 R12      ; R15 := R12
-157 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
-158 [-]: TEST      R13 1        ; if R13 then PC := 172
-159 [-]: JMP       172          ; PC := 172
-160 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
-161 [-]: SELF      R13 R13 K35  ; R14 := R13; R13 := R13["0xD75E681A"]
-162 [-]: LOADK     R15 K26      ; R15 := 1
-163 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
-164 [-]: GETGLOBAL R14 K22      ; R14 := 0x400E7765
-165 [-]: MOVE      R15 R13      ; R15 := R13
-166 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-167 [-]: TEST      R14 1        ; if R14 then PC := 171
-168 [-]: JMP       171          ; PC := 171
-169 [-]: GETTABLE  R12 R13 K28  ; R12 := R13["Category"]
-170 [-]: JMP       172          ; PC := 172
-171 [-]: LOADNIL   R12 R12      ; R12 := nil
-172 [-]: GETTABLE  R14 R0 K23   ; R14 := R0["mCategoryMenu"]
-173 [-]: GETTABLE  R14 R14 K33  ; R14 := R14["mPendingCategory"]
-174 [-]: EQ        1 R14 K6     ; if R14 == nil then PC := 182
-175 [-]: JMP       182          ; PC := 182
-176 [-]: SELF      R14 R0 K36   ; R15 := R0; R14 := R0["0x26174AC9"]
-177 [-]: MOVE      R16 R12      ; R16 := R12
-178 [-]: CALL      R14 3 1      ; R14(R15,R16)
-179 [-]: GETTABLE  R14 R0 K23   ; R14 := R0["mCategoryMenu"]
-180 [-]: SETTABLE  R14 K33 K6   ; R14["mPendingCategory"] := nil
-181 [-]: JMP       201          ; PC := 201
-182 [-]: EQ        1 R12 K6     ; if R12 == nil then PC := 201
-183 [-]: JMP       201          ; PC := 201
-184 [-]: GETTABLE  R14 R0 K23   ; R14 := R0["mCategoryMenu"]
-185 [-]: SETTABLE  R14 K37 K38  ; R14["mQueueInstantReposition"] := "0x1"
-186 [-]: SELF      R14 R0 K4    ; R15 := R0; R14 := R0["0x7F0BD1E3"]
-187 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-188 [-]: EQ        1 R12 R14    ; if R12 == R14 then PC := 192
-189 [-]: JMP       192          ; PC := 192
-190 [-]: SETTABLE  R0 K39 K6    ; R0["mFilterBy"] := nil
-191 [-]: JMP       198          ; PC := 198
-192 [-]: GETTABLE  R14 R0 K23   ; R14 := R0["mCategoryMenu"]
-193 [-]: SELF      R14 R14 K40  ; R15 := R14; R14 := R14["0x6470BAF4"]
-194 [-]: LOADNIL   R16 R16      ; R16 := nil
-195 [-]: MOVE      R17 R1       ; R17 := R1
-196 [-]: MOVE      R18 R1       ; R18 := R1
-197 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-198 [-]: SELF      R14 R0 K36   ; R15 := R0; R14 := R0["0x26174AC9"]
-199 [-]: MOVE      R16 R12      ; R16 := R12
-200 [-]: CALL      R14 3 1      ; R14(R15,R16)
-201 [-]: SELF      R14 R0 K4    ; R15 := R0; R14 := R0["0x7F0BD1E3"]
-202 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-203 [-]: SETTABLE  R0 K3 R14    ; R0["mLastFilterBy"] := R14
-204 [-]: SETTABLE  R0 K5 K31    ; R0["mSortingChanged"] := "0x0"
-205 [-]: GETTABLE  R14 R0 K0    ; R14 := R0["mUnfilteredElements"]
-206 [-]: LEN       R6 R14       ; R6 := # R14
-207 [-]: LOADK     R14 K26      ; R14 := 1
-208 [-]: MOVE      R15 R6       ; R15 := R6
-209 [-]: LOADK     R16 K26      ; R16 := 1
-210 [-]: FORPREP   R14 228      ; R14 -= R16; PC := 228
-211 [-]: GETGLOBAL R18 K21      ; R18 := 0x1BF588C6
-212 [-]: LOADK     R19 K1       ; R19 := 0
-213 [-]: CALL      R18 2 1      ; R18(R19)
-214 [-]: GETTABLE  R18 R0 K0    ; R18 := R0["mUnfilteredElements"]
-215 [-]: GETTABLE  R18 R18 R17  ; R18 := R18[R17]
-216 [-]: SETTABLE  R18 K10 K6   ; R18["mClipName"] := nil
-217 [-]: SELF      R18 R0 K41   ; R19 := R0; R18 := R0["0xD3A15315"]
-218 [-]: GETTABLE  R20 R0 K0    ; R20 := R0["mUnfilteredElements"]
-219 [-]: GETTABLE  R20 R20 R17  ; R20 := R20[R17]
-220 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-221 [-]: TEST      R18 1        ; if R18 then PC := 228
-222 [-]: JMP       228          ; PC := 228
-223 [-]: SELF      R18 R0 K42   ; R19 := R0; R18 := R0["0x1B82EAE0"]
-224 [-]: GETTABLE  R20 R0 K0    ; R20 := R0["mUnfilteredElements"]
-225 [-]: GETTABLE  R20 R20 R17  ; R20 := R20[R17]
-226 [-]: MOVE      R21 R1       ; R21 := R1
-227 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-228 [-]: FORLOOP   R14 211      ; R14 += R16; if R14 <= R15 then begin PC := 211; R17 := R14 end
-229 [-]: SELF      R18 R0 K43   ; R19 := R0; R18 := R0["0xAF9D6590"]
-230 [-]: CALL      R18 2 1      ; R18(R19)
-231 [-]: SELF      R18 R0 K44   ; R19 := R0; R18 := R0["0xE24E8C6E"]
-232 [-]: MOVE      R20 R1       ; R20 := R1
-233 [-]: MOVE      R21 R2       ; R21 := R2
-234 [-]: MOVE      R22 R3       ; R22 := R3
-235 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
-236 [-]: GETTABLE  R18 R0 K45   ; R18 := R0["mInitialX"]
-237 [-]: GETTABLE  R19 R0 K46   ; R19 := R0["mColumns"]
-238 [-]: SUB       R19 R19 K26  ; R19 := R19 - 1
-239 [-]: GETTABLE  R20 R0 K47   ; R20 := R0["mColumnSeparation"]
-240 [-]: MUL       R19 R19 R20  ; R19 := R19 * R20
-241 [-]: ADD       R18 R18 R19  ; R18 := R18 + R19
-242 [-]: GETTABLE  R19 R0 K48   ; R19 := R0["mInitialY"]
-243 [-]: GETTABLE  R20 R0 K49   ; R20 := R0["mSortMenu"]
-244 [-]: TEST      R20 0        ; if not R20 then PC := 279
-245 [-]: JMP       279          ; PC := 279
-246 [-]: GETTABLE  R20 R0 K49   ; R20 := R0["mSortMenu"]
-247 [-]: SELF      R20 R20 K50  ; R21 := R20; R20 := R20["0xC51A5C9D"]
-248 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-249 [-]: LT        0 K26 R20    ; if 1 >= R20 then PC := 257
-250 [-]: JMP       257          ; PC := 257
-251 [-]: GETTABLE  R20 R0 K9    ; R20 := R0["mMovie"]
-252 [-]: SELF      R20 R20 K51  ; R21 := R20; R20 := R20["0x1C19D966"]
-253 [-]: GETTABLE  R22 R0 K52   ; R22 := R0["mSortClipName"]
-254 [-]: LOADK     R23 K53      ; R23 := "_visible"
-255 [-]: MOVE      R24 R1       ; R24 := R1
-256 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
-257 [-]: GETTABLE  R20 R0 K54   ; R20 := R0["mSortMenuHorizontalOffset"]
-258 [-]: EQ        1 R20 K6     ; if R20 == nil then PC := 268
-259 [-]: JMP       268          ; PC := 268
-260 [-]: GETTABLE  R20 R0 K9    ; R20 := R0["mMovie"]
-261 [-]: SELF      R20 R20 K51  ; R21 := R20; R20 := R20["0x1C19D966"]
-262 [-]: GETTABLE  R22 R0 K49   ; R22 := R0["mSortMenu"]
-263 [-]: GETTABLE  R22 R22 K55  ; R22 := R22["mContainerClipName"]
-264 [-]: LOADK     R23 K56      ; R23 := "_x"
-265 [-]: GETTABLE  R24 R0 K54   ; R24 := R0["mSortMenuHorizontalOffset"]
-266 [-]: ADD       R24 R18 R24  ; R24 := R18 + R24
-267 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
-268 [-]: GETTABLE  R20 R0 K57   ; R20 := R0["mSortMenuVerticalOffset"]
-269 [-]: EQ        1 R20 K6     ; if R20 == nil then PC := 279
-270 [-]: JMP       279          ; PC := 279
-271 [-]: GETTABLE  R20 R0 K9    ; R20 := R0["mMovie"]
-272 [-]: SELF      R20 R20 K51  ; R21 := R20; R20 := R20["0x1C19D966"]
-273 [-]: GETTABLE  R22 R0 K49   ; R22 := R0["mSortMenu"]
-274 [-]: GETTABLE  R22 R22 K55  ; R22 := R22["mContainerClipName"]
-275 [-]: LOADK     R23 K58      ; R23 := "_y"
-276 [-]: GETTABLE  R24 R0 K57   ; R24 := R0["mSortMenuVerticalOffset"]
-277 [-]: ADD       R24 R19 R24  ; R24 := R19 + R24
-278 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
-279 [-]: GETTABLE  R20 R0 K59   ; R20 := R0["mScrollBar"]
-280 [-]: TEST      R20 0        ; if not R20 then PC := 293
-281 [-]: JMP       293          ; PC := 293
-282 [-]: GETTABLE  R20 R0 K60   ; R20 := R0["mScrollBarHorizontalOffset"]
-283 [-]: EQ        1 R20 K6     ; if R20 == nil then PC := 293
-284 [-]: JMP       293          ; PC := 293
-285 [-]: GETTABLE  R20 R0 K9    ; R20 := R0["mMovie"]
-286 [-]: SELF      R20 R20 K51  ; R21 := R20; R20 := R20["0x1C19D966"]
-287 [-]: GETTABLE  R22 R0 K59   ; R22 := R0["mScrollBar"]
-288 [-]: GETTABLE  R22 R22 K10  ; R22 := R22["mClipName"]
-289 [-]: LOADK     R23 K56      ; R23 := "_x"
-290 [-]: GETTABLE  R24 R0 K60   ; R24 := R0["mScrollBarHorizontalOffset"]
-291 [-]: ADD       R24 R18 R24  ; R24 := R18 + R24
-292 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
-293 [-]: RETURN    R0 1         ; return 
+  3 [-]: GETTABLE  R7 R0 K1     ; R7 := R0["mLastFilterBy"]
+  4 [-]: SELF      R8 R0 K2     ; R9 := R0; R8 := R0["0x7F0BD1E3"]
+  5 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+  6 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 23
+  7 [-]: JMP       23           ; PC := 23
+  8 [-]: GETTABLE  R7 R0 K3     ; R7 := R0["mSortingChanged"]
+  9 [-]: TEST      R7 1         ; if R7 then PC := 23
+ 10 [-]: JMP       23           ; PC := 23
+ 11 [-]: TEST      R2 1         ; if R2 then PC := 23
+ 12 [-]: JMP       23           ; PC := 23
+ 13 [-]: SELF      R7 R0 K2     ; R8 := R0; R7 := R0["0x7F0BD1E3"]
+ 14 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 15 [-]: EQ        0 R7 K4      ; if R7 ~= nil then PC := 230
+ 16 [-]: JMP       230          ; PC := 230
+ 17 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mNonFillerElements"]
+ 18 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 230
+ 19 [-]: JMP       230          ; PC := 230
+ 20 [-]: GETTABLE  R7 R0 K6     ; R7 := R0["mRedrawFromScrollBar"]
+ 21 [-]: TEST      R7 1         ; if R7 then PC := 230
+ 22 [-]: JMP       230          ; PC := 230
+ 23 [-]: GETGLOBAL R7 K7        ; R7 := 0x8C64AFA9
+ 24 [-]: GETTABLE  R8 R0 K8     ; R8 := R0["mMovie"]
+ 25 [-]: GETTABLE  R9 R0 K9     ; R9 := R0["mClipName"]
+ 26 [-]: LOADK     R10 K10      ; R10 := ".swapDepths"
+ 27 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
+ 28 [-]: GETTABLE  R10 R0 K11   ; R10 := R0["mInitialDepth"]
+ 29 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 30 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0["0x5019FA9B"]
+ 31 [-]: MOVE      R9 R1        ; R9 := R1
+ 32 [-]: MOVE      R10 R1       ; R10 := R1
+ 33 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 34 [-]: SELF      R7 R0 K13    ; R8 := R0; R7 := R0["0x90A97C9C"]
+ 35 [-]: CALL      R7 2 1       ; R7(R8)
+ 36 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mSortBy"]
+ 37 [-]: TEST      R7 0         ; if not R7 then PC := 84
+ 38 [-]: JMP       84           ; PC := 84
+ 39 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mSortBy"]
+ 40 [-]: TEST      R7 0         ; if not R7 then PC := 53
+ 41 [-]: JMP       53           ; PC := 53
+ 42 [-]: GETGLOBAL R7 K15       ; R7 := 0x6A235628
+ 43 [-]: GETTABLE  R8 R0 K14    ; R8 := R0["mSortBy"]
+ 44 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 45 [-]: EQ        0 R7 K16     ; if R7 ~= "function" then PC := 53
+ 46 [-]: JMP       53           ; PC := 53
+ 47 [-]: GETGLOBAL R7 K17       ; R7 := table
+ 48 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["0xA5C58010"]
+ 49 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mUnfilteredElements"]
+ 50 [-]: GETTABLE  R9 R0 K14    ; R9 := R0["mSortBy"]
+ 51 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 52 [-]: JMP       84           ; PC := 84
+ 53 [-]: GETTABLE  R7 R0 K19    ; R7 := R0["mLastSortBy"]
+ 54 [-]: TEST      R7 0         ; if not R7 then PC := 78
+ 55 [-]: JMP       78           ; PC := 78
+ 56 [-]: GETTABLE  R7 R0 K14    ; R7 := R0["mSortBy"]
+ 57 [-]: TEST      R7 0         ; if not R7 then PC := 78
+ 58 [-]: JMP       78           ; PC := 78
+ 59 [-]: GETGLOBAL R7 K15       ; R7 := 0x6A235628
+ 60 [-]: GETTABLE  R8 R0 K19    ; R8 := R0["mLastSortBy"]
+ 61 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 62 [-]: EQ        0 R7 K16     ; if R7 ~= "function" then PC := 71
+ 63 [-]: JMP       71           ; PC := 71
+ 64 [-]: GETGLOBAL R7 K17       ; R7 := table
+ 65 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["0xA5C58010"]
+ 66 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mUnfilteredElements"]
+ 67 [-]: CLOSURE   R9 0         ; R9 := closure(Function #1.15.1)
+ 68 [-]: MOVE      R0 R0        ; R0 := R0
+ 69 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 70 [-]: JMP       84           ; PC := 84
+ 71 [-]: GETGLOBAL R7 K17       ; R7 := table
+ 72 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["0xA5C58010"]
+ 73 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mUnfilteredElements"]
+ 74 [-]: CLOSURE   R9 1         ; R9 := closure(Function #1.15.2)
+ 75 [-]: MOVE      R0 R0        ; R0 := R0
+ 76 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 77 [-]: JMP       84           ; PC := 84
+ 78 [-]: GETGLOBAL R7 K17       ; R7 := table
+ 79 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["0xA5C58010"]
+ 80 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mUnfilteredElements"]
+ 81 [-]: CLOSURE   R9 2         ; R9 := closure(Function #1.15.3)
+ 82 [-]: MOVE      R0 R0        ; R0 := R0
+ 83 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 84 [-]: GETGLOBAL R7 K20       ; R7 := 0x1BF588C6
+ 85 [-]: LOADK     R8 K21       ; R8 := 0
+ 86 [-]: CALL      R7 2 1       ; R7(R8)
+ 87 [-]: GETGLOBAL R7 K22       ; R7 := 0x400E7765
+ 88 [-]: GETTABLE  R8 R0 K23    ; R8 := R0["mCategoryMenu"]
+ 89 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 90 [-]: TEST      R7 1         ; if R7 then PC := 197
+ 91 [-]: JMP       197          ; PC := 197
+ 92 [-]: GETTABLE  R7 R0 K23    ; R7 := R0["mCategoryMenu"]
+ 93 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["mHideEmptyCategories"]
+ 94 [-]: TEST      R7 0         ; if not R7 then PC := 197
+ 95 [-]: JMP       197          ; PC := 197
+ 96 [-]: TEST      R4 1         ; if R4 then PC := 197
+ 97 [-]: JMP       197          ; PC := 197
+ 98 [-]: TEST      R5 1         ; if R5 then PC := 197
+ 99 [-]: JMP       197          ; PC := 197
+100 [-]: GETTABLE  R7 R0 K23    ; R7 := R0["mCategoryMenu"]
+101 [-]: SELF      R7 R7 K25    ; R8 := R7; R7 := R7["0x7CF71D03"]
+102 [-]: MOVE      R9 R1        ; R9 := R1
+103 [-]: MOVE      R10 R1       ; R10 := R1
+104 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+105 [-]: LOADK     R7 K26       ; R7 := 1
+106 [-]: GETTABLE  R8 R0 K27    ; R8 := R0["mUnfilteredCategories"]
+107 [-]: LEN       R8 R8        ; R8 := # R8
+108 [-]: LOADK     R9 K26       ; R9 := 1
+109 [-]: FORPREP   R7 141       ; R7 -= R9; PC := 141
+110 [-]: GETTABLE  R11 R0 K27   ; R11 := R0["mUnfilteredCategories"]
+111 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
+112 [-]: SETTABLE  R11 K9 K4    ; R11["mClipName"] := nil
+113 [-]: GETTABLE  R11 R0 K27   ; R11 := R0["mUnfilteredCategories"]
+114 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
+115 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["Category"]
+116 [-]: EQ        1 R11 K21    ; if R11 == 0 then PC := 132
+117 [-]: JMP       132          ; PC := 132
+118 [-]: GETTABLE  R11 R0 K29   ; R11 := R0["mCategoriesCount"]
+119 [-]: GETTABLE  R12 R0 K27   ; R12 := R0["mUnfilteredCategories"]
+120 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
+121 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["Category"]
+122 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
+123 [-]: EQ        1 R11 K4     ; if R11 == nil then PC := 141
+124 [-]: JMP       141          ; PC := 141
+125 [-]: GETTABLE  R11 R0 K29   ; R11 := R0["mCategoriesCount"]
+126 [-]: GETTABLE  R12 R0 K27   ; R12 := R0["mUnfilteredCategories"]
+127 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
+128 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["Category"]
+129 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
+130 [-]: LT        0 K21 R11    ; if 0 >= R11 then PC := 141
+131 [-]: JMP       141          ; PC := 141
+132 [-]: GETTABLE  R11 R0 K27   ; R11 := R0["mUnfilteredCategories"]
+133 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
+134 [-]: SETTABLE  R11 K30 K31  ; R11["mInitialized"] := "0x0"
+135 [-]: GETTABLE  R11 R0 K23   ; R11 := R0["mCategoryMenu"]
+136 [-]: SELF      R11 R11 K32  ; R12 := R11; R11 := R11["0xA77DA8EE"]
+137 [-]: GETTABLE  R13 R0 K27   ; R13 := R0["mUnfilteredCategories"]
+138 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
+139 [-]: MOVE      R14 R1       ; R14 := R1
+140 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
+141 [-]: FORLOOP   R7 110       ; R7 += R9; if R7 <= R8 then begin PC := 110; R10 := R7 end
+142 [-]: SELF      R11 R0 K2    ; R12 := R0; R11 := R0["0x7F0BD1E3"]
+143 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+144 [-]: GETTABLE  R12 R0 K23   ; R12 := R0["mCategoryMenu"]
+145 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["mPendingCategory"]
+146 [-]: EQ        1 R12 K4     ; if R12 == nil then PC := 150
+147 [-]: JMP       150          ; PC := 150
+148 [-]: GETTABLE  R12 R0 K23   ; R12 := R0["mCategoryMenu"]
+149 [-]: GETTABLE  R11 R12 K33  ; R11 := R12["mPendingCategory"]
+150 [-]: GETTABLE  R12 R0 K23   ; R12 := R0["mCategoryMenu"]
+151 [-]: SELF      R12 R12 K34  ; R13 := R12; R12 := R12["0xEAE2988B"]
+152 [-]: MOVE      R14 R11      ; R14 := R11
+153 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+154 [-]: TEST      R12 1        ; if R12 then PC := 168
+155 [-]: JMP       168          ; PC := 168
+156 [-]: GETTABLE  R12 R0 K23   ; R12 := R0["mCategoryMenu"]
+157 [-]: SELF      R12 R12 K35  ; R13 := R12; R12 := R12["0xD75E681A"]
+158 [-]: LOADK     R14 K26      ; R14 := 1
+159 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+160 [-]: GETGLOBAL R13 K22      ; R13 := 0x400E7765
+161 [-]: MOVE      R14 R12      ; R14 := R12
+162 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+163 [-]: TEST      R13 1        ; if R13 then PC := 167
+164 [-]: JMP       167          ; PC := 167
+165 [-]: GETTABLE  R11 R12 K28  ; R11 := R12["Category"]
+166 [-]: JMP       168          ; PC := 168
+167 [-]: LOADNIL   R11 R11      ; R11 := nil
+168 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
+169 [-]: GETTABLE  R13 R13 K33  ; R13 := R13["mPendingCategory"]
+170 [-]: EQ        1 R13 K4     ; if R13 == nil then PC := 178
+171 [-]: JMP       178          ; PC := 178
+172 [-]: SELF      R13 R0 K36   ; R14 := R0; R13 := R0["0x26174AC9"]
+173 [-]: MOVE      R15 R11      ; R15 := R11
+174 [-]: CALL      R13 3 1      ; R13(R14,R15)
+175 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
+176 [-]: SETTABLE  R13 K33 K4   ; R13["mPendingCategory"] := nil
+177 [-]: JMP       197          ; PC := 197
+178 [-]: EQ        1 R11 K4     ; if R11 == nil then PC := 197
+179 [-]: JMP       197          ; PC := 197
+180 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
+181 [-]: SETTABLE  R13 K37 K38  ; R13["mQueueInstantReposition"] := "0x1"
+182 [-]: SELF      R13 R0 K2    ; R14 := R0; R13 := R0["0x7F0BD1E3"]
+183 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+184 [-]: EQ        1 R11 R13    ; if R11 == R13 then PC := 188
+185 [-]: JMP       188          ; PC := 188
+186 [-]: SETTABLE  R0 K39 K4    ; R0["mFilterBy"] := nil
+187 [-]: JMP       194          ; PC := 194
+188 [-]: GETTABLE  R13 R0 K23   ; R13 := R0["mCategoryMenu"]
+189 [-]: SELF      R13 R13 K40  ; R14 := R13; R13 := R13["0x6470BAF4"]
+190 [-]: LOADNIL   R15 R15      ; R15 := nil
+191 [-]: MOVE      R16 R1       ; R16 := R1
+192 [-]: MOVE      R17 R1       ; R17 := R1
+193 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+194 [-]: SELF      R13 R0 K36   ; R14 := R0; R13 := R0["0x26174AC9"]
+195 [-]: MOVE      R15 R11      ; R15 := R11
+196 [-]: CALL      R13 3 1      ; R13(R14,R15)
+197 [-]: SELF      R13 R0 K2    ; R14 := R0; R13 := R0["0x7F0BD1E3"]
+198 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+199 [-]: SETTABLE  R0 K1 R13    ; R0["mLastFilterBy"] := R13
+200 [-]: SETTABLE  R0 K3 K31    ; R0["mSortingChanged"] := "0x0"
+201 [-]: GETTABLE  R13 R0 K0    ; R13 := R0["mUnfilteredElements"]
+202 [-]: LEN       R6 R13       ; R6 := # R13
+203 [-]: LOADK     R13 K26      ; R13 := 1
+204 [-]: MOVE      R14 R6       ; R14 := R6
+205 [-]: LOADK     R15 K26      ; R15 := 1
+206 [-]: FORPREP   R13 224      ; R13 -= R15; PC := 224
+207 [-]: GETGLOBAL R17 K20      ; R17 := 0x1BF588C6
+208 [-]: LOADK     R18 K21      ; R18 := 0
+209 [-]: CALL      R17 2 1      ; R17(R18)
+210 [-]: GETTABLE  R17 R0 K0    ; R17 := R0["mUnfilteredElements"]
+211 [-]: GETTABLE  R17 R17 R16  ; R17 := R17[R16]
+212 [-]: SETTABLE  R17 K9 K4    ; R17["mClipName"] := nil
+213 [-]: SELF      R17 R0 K41   ; R18 := R0; R17 := R0["0xD3A15315"]
+214 [-]: GETTABLE  R19 R0 K0    ; R19 := R0["mUnfilteredElements"]
+215 [-]: GETTABLE  R19 R19 R16  ; R19 := R19[R16]
+216 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+217 [-]: TEST      R17 1        ; if R17 then PC := 224
+218 [-]: JMP       224          ; PC := 224
+219 [-]: SELF      R17 R0 K42   ; R18 := R0; R17 := R0["0x1B82EAE0"]
+220 [-]: GETTABLE  R19 R0 K0    ; R19 := R0["mUnfilteredElements"]
+221 [-]: GETTABLE  R19 R19 R16  ; R19 := R19[R16]
+222 [-]: MOVE      R20 R1       ; R20 := R1
+223 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
+224 [-]: FORLOOP   R13 207      ; R13 += R15; if R13 <= R14 then begin PC := 207; R16 := R13 end
+225 [-]: SELF      R17 R0 K43   ; R18 := R0; R17 := R0["0xC51A5C9D"]
+226 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+227 [-]: SETTABLE  R0 K5 R17    ; R0["mNonFillerElements"] := R17
+228 [-]: SELF      R17 R0 K44   ; R18 := R0; R17 := R0["0xAF9D6590"]
+229 [-]: CALL      R17 2 1      ; R17(R18)
+230 [-]: SELF      R17 R0 K45   ; R18 := R0; R17 := R0["0xE24E8C6E"]
+231 [-]: MOVE      R19 R1       ; R19 := R1
+232 [-]: MOVE      R20 R2       ; R20 := R2
+233 [-]: MOVE      R21 R3       ; R21 := R3
+234 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+235 [-]: GETTABLE  R17 R0 K46   ; R17 := R0["mInitialX"]
+236 [-]: GETTABLE  R18 R0 K47   ; R18 := R0["mColumns"]
+237 [-]: SUB       R18 R18 K26  ; R18 := R18 - 1
+238 [-]: GETTABLE  R19 R0 K48   ; R19 := R0["mColumnSeparation"]
+239 [-]: MUL       R18 R18 R19  ; R18 := R18 * R19
+240 [-]: ADD       R17 R17 R18  ; R17 := R17 + R18
+241 [-]: GETTABLE  R18 R0 K49   ; R18 := R0["mInitialY"]
+242 [-]: GETTABLE  R19 R0 K50   ; R19 := R0["mSortMenu"]
+243 [-]: TEST      R19 0        ; if not R19 then PC := 278
+244 [-]: JMP       278          ; PC := 278
+245 [-]: GETTABLE  R19 R0 K50   ; R19 := R0["mSortMenu"]
+246 [-]: SELF      R19 R19 K43  ; R20 := R19; R19 := R19["0xC51A5C9D"]
+247 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+248 [-]: LT        0 K26 R19    ; if 1 >= R19 then PC := 256
+249 [-]: JMP       256          ; PC := 256
+250 [-]: GETTABLE  R19 R0 K8    ; R19 := R0["mMovie"]
+251 [-]: SELF      R19 R19 K51  ; R20 := R19; R19 := R19["0x1C19D966"]
+252 [-]: GETTABLE  R21 R0 K52   ; R21 := R0["mSortClipName"]
+253 [-]: LOADK     R22 K53      ; R22 := "_visible"
+254 [-]: MOVE      R23 R1       ; R23 := R1
+255 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
+256 [-]: GETTABLE  R19 R0 K54   ; R19 := R0["mSortMenuHorizontalOffset"]
+257 [-]: EQ        1 R19 K4     ; if R19 == nil then PC := 267
+258 [-]: JMP       267          ; PC := 267
+259 [-]: GETTABLE  R19 R0 K8    ; R19 := R0["mMovie"]
+260 [-]: SELF      R19 R19 K51  ; R20 := R19; R19 := R19["0x1C19D966"]
+261 [-]: GETTABLE  R21 R0 K50   ; R21 := R0["mSortMenu"]
+262 [-]: GETTABLE  R21 R21 K55  ; R21 := R21["mContainerClipName"]
+263 [-]: LOADK     R22 K56      ; R22 := "_x"
+264 [-]: GETTABLE  R23 R0 K54   ; R23 := R0["mSortMenuHorizontalOffset"]
+265 [-]: ADD       R23 R17 R23  ; R23 := R17 + R23
+266 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
+267 [-]: GETTABLE  R19 R0 K57   ; R19 := R0["mSortMenuVerticalOffset"]
+268 [-]: EQ        1 R19 K4     ; if R19 == nil then PC := 278
+269 [-]: JMP       278          ; PC := 278
+270 [-]: GETTABLE  R19 R0 K8    ; R19 := R0["mMovie"]
+271 [-]: SELF      R19 R19 K51  ; R20 := R19; R19 := R19["0x1C19D966"]
+272 [-]: GETTABLE  R21 R0 K50   ; R21 := R0["mSortMenu"]
+273 [-]: GETTABLE  R21 R21 K55  ; R21 := R21["mContainerClipName"]
+274 [-]: LOADK     R22 K58      ; R22 := "_y"
+275 [-]: GETTABLE  R23 R0 K57   ; R23 := R0["mSortMenuVerticalOffset"]
+276 [-]: ADD       R23 R18 R23  ; R23 := R18 + R23
+277 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
+278 [-]: GETTABLE  R19 R0 K59   ; R19 := R0["mScrollBar"]
+279 [-]: TEST      R19 0        ; if not R19 then PC := 292
+280 [-]: JMP       292          ; PC := 292
+281 [-]: GETTABLE  R19 R0 K60   ; R19 := R0["mScrollBarHorizontalOffset"]
+282 [-]: EQ        1 R19 K4     ; if R19 == nil then PC := 292
+283 [-]: JMP       292          ; PC := 292
+284 [-]: GETTABLE  R19 R0 K8    ; R19 := R0["mMovie"]
+285 [-]: SELF      R19 R19 K51  ; R20 := R19; R19 := R19["0x1C19D966"]
+286 [-]: GETTABLE  R21 R0 K59   ; R21 := R0["mScrollBar"]
+287 [-]: GETTABLE  R21 R21 K9   ; R21 := R21["mClipName"]
+288 [-]: LOADK     R22 K56      ; R22 := "_x"
+289 [-]: GETTABLE  R23 R0 K60   ; R23 := R0["mScrollBarHorizontalOffset"]
+290 [-]: ADD       R23 R17 R23  ; R23 := R17 + R23
+291 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
+292 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.15.1:
 ;
 ; Name:            
-; Defined at line: 180
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Filler"]
-  2 [-]: TEST      R1 1         ; if R1 then PC := 7
-  3 [-]: JMP       7            ; PC := 7
-  4 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  5 [-]: ADD       R1 R1 K1     ; R1 := R1 + 1
-  6 [-]: MOVE      R1 R0        ; R1 := R0
-  7 [-]: RETURN    R0 1         ; return 
-
-
-; Function #1.15.2:
-;
-; Name:            
-; Defined at line: 201
+; Defined at line: 197
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1165,10 +1151,10 @@ code size: 9
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.15.3:
+; Function #1.15.2:
 ;
 ; Name:            
-; Defined at line: 206
+; Defined at line: 202
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1183,10 +1169,10 @@ code size: 9
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #1.15.4:
+; Function #1.15.3:
 ;
 ; Name:            
-; Defined at line: 212
+; Defined at line: 208
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1204,7 +1190,7 @@ code size: 9
 ; Function #1.16:
 ;
 ; Name:            
-; Defined at line: 309
+; Defined at line: 306
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1228,7 +1214,7 @@ code size: 9
 ; Function #1.17:
 ;
 ; Name:            
-; Defined at line: 314
+; Defined at line: 311
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1267,7 +1253,7 @@ code size: 9
 ; Function #1.18:
 ;
 ; Name:            
-; Defined at line: 320
+; Defined at line: 317
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1301,7 +1287,7 @@ code size: 9
 ; Function #1.19:
 ;
 ; Name:            
-; Defined at line: 332
+; Defined at line: 329
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1355,7 +1341,7 @@ code size: 9
 ; Function #1.19.1:
 ;
 ; Name:            
-; Defined at line: 341
+; Defined at line: 338
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1373,7 +1359,7 @@ code size: 9
 ; Function #1.20:
 ;
 ; Name:            
-; Defined at line: 357
+; Defined at line: 354
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1404,7 +1390,7 @@ code size: 9
 ; Function #1.20.1:
 ;
 ; Name:            
-; Defined at line: 363
+; Defined at line: 360
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1421,7 +1407,7 @@ code size: 9
 ; Function #1.21:
 ;
 ; Name:            
-; Defined at line: 371
+; Defined at line: 368
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1440,7 +1426,7 @@ code size: 9
 ; Function #1.22:
 ;
 ; Name:            
-; Defined at line: 377
+; Defined at line: 374
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1463,7 +1449,7 @@ code size: 9
 ; Function #1.23:
 ;
 ; Name:            
-; Defined at line: 387
+; Defined at line: 384
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1505,7 +1491,7 @@ code size: 9
 ; Function #1.23.1:
 ;
 ; Name:            
-; Defined at line: 391
+; Defined at line: 388
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1530,7 +1516,7 @@ code size: 9
 ; Function #1.24:
 ;
 ; Name:            
-; Defined at line: 406
+; Defined at line: 403
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1568,7 +1554,7 @@ code size: 9
 ; Function #1.25:
 ;
 ; Name:            
-; Defined at line: 421
+; Defined at line: 418
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1595,50 +1581,37 @@ code size: 9
 ; Function #1.26:
 ;
 ; Name:            
-; Defined at line: 430
+; Defined at line: 427
 ; #Upvalues:       0
-; #Parameters:     2
+; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  7
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
-  2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mScroll"]
-  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 10
+  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+  2 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["mScroll"]
+  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  4 [-]: TEST      R3 0         ; if not R3 then PC := 10
   5 [-]: JMP       10           ; PC := 10
-  6 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0["0x3DFBB1D4"]
-  7 [-]: MOVE      R4 R1        ; R4 := R1
-  8 [-]: CALL      R2 3 1       ; R2(R3,R4)
-  9 [-]: JMP       32           ; PC := 32
- 10 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 11 [-]: MOVE      R3 R1        ; R3 := R1
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 1         ; if R2 then PC := 32
- 14 [-]: JMP       32           ; PC := 32
- 15 [-]: LOADK     R2 K3        ; R2 := 1
- 16 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mElements"]
- 17 [-]: LEN       R3 R3        ; R3 := # R3
- 18 [-]: LOADK     R4 K3        ; R4 := 1
- 19 [-]: FORPREP   R2 31        ; R2 -= R4; PC := 31
- 20 [-]: GETTABLE  R6 R0 K4     ; R6 := R0["mElements"]
- 21 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 22 [-]: GETTABLE  R7 R6 K5     ; R7 := R6["mClipName"]
- 23 [-]: EQ        1 R7 K6      ; if R7 == nil then PC := 31
- 24 [-]: JMP       31           ; PC := 31
- 25 [-]: GETGLOBAL R7 K7        ; R7 := 0x1BF588C6
- 26 [-]: LOADK     R8 K8        ; R8 := 0
- 27 [-]: CALL      R7 2 1       ; R7(R8)
- 28 [-]: MOVE      R7 R1        ; R7 := R1
- 29 [-]: MOVE      R8 R6        ; R8 := R6
- 30 [-]: CALL      R7 2 1       ; R7(R8)
- 31 [-]: FORLOOP   R2 20        ; R2 += R4; if R2 <= R3 then begin PC := 20; R5 := R2 end
- 32 [-]: RETURN    R0 1         ; return 
+  6 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x3DFBB1D4"]
+  7 [-]: MOVE      R5 R1        ; R5 := R1
+  8 [-]: CALL      R3 3 1       ; R3(R4,R5)
+  9 [-]: JMP       19           ; PC := 19
+ 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+ 11 [-]: MOVE      R4 R1        ; R4 := R1
+ 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 13 [-]: TEST      R3 1         ; if R3 then PC := 19
+ 14 [-]: JMP       19           ; PC := 19
+ 15 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0["0x7B6651C6"]
+ 16 [-]: MOVE      R5 R1        ; R5 := R1
+ 17 [-]: MOVE      R6 R2        ; R6 := R2
+ 18 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 19 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.27:
 ;
 ; Name:            
-; Defined at line: 445
+; Defined at line: 436
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1888,7 +1861,7 @@ code size: 9
 ; Function #1.28:
 ;
 ; Name:            
-; Defined at line: 490
+; Defined at line: 481
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1954,7 +1927,7 @@ code size: 9
 ; Function #1.29:
 ;
 ; Name:            
-; Defined at line: 503
+; Defined at line: 494
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1996,7 +1969,7 @@ code size: 9
 ; Function #1.30:
 ;
 ; Name:            
-; Defined at line: 512
+; Defined at line: 503
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2106,7 +2079,7 @@ code size: 9
 ; Function #1.31:
 ;
 ; Name:            
-; Defined at line: 532
+; Defined at line: 523
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2124,7 +2097,7 @@ code size: 9
 ; Function #1.32:
 ;
 ; Name:            
-; Defined at line: 536
+; Defined at line: 527
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2160,7 +2133,7 @@ code size: 9
 ; Function #1.32.1:
 ;
 ; Name:            
-; Defined at line: 539
+; Defined at line: 530
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2187,7 +2160,7 @@ code size: 9
 ; Function #1.33:
 ;
 ; Name:            
-; Defined at line: 547
+; Defined at line: 538
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2210,7 +2183,7 @@ code size: 9
 ; Function #1.34:
 ;
 ; Name:            
-; Defined at line: 555
+; Defined at line: 546
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2282,7 +2255,7 @@ code size: 9
 ; Function #1.35:
 ;
 ; Name:            
-; Defined at line: 576
+; Defined at line: 567
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2354,7 +2327,7 @@ code size: 9
 ; Function #1.36:
 ;
 ; Name:            
-; Defined at line: 597
+; Defined at line: 588
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2408,7 +2381,7 @@ code size: 9
 ; Function #1.37:
 ;
 ; Name:            
-; Defined at line: 617
+; Defined at line: 608
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2473,7 +2446,7 @@ code size: 9
 ; Function #1.38:
 ;
 ; Name:            
-; Defined at line: 643
+; Defined at line: 634
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2510,7 +2483,7 @@ code size: 9
 ; Function #1.39:
 ;
 ; Name:            
-; Defined at line: 661
+; Defined at line: 652
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2553,7 +2526,7 @@ code size: 9
 ; Function #1.40:
 ;
 ; Name:            
-; Defined at line: 679
+; Defined at line: 670
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2573,7 +2546,7 @@ code size: 9
 ; Function #1.41:
 ;
 ; Name:            
-; Defined at line: 685
+; Defined at line: 676
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2605,7 +2578,7 @@ code size: 9
 ; Function #1.42:
 ;
 ; Name:            
-; Defined at line: 697
+; Defined at line: 688
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2657,7 +2630,7 @@ code size: 9
 ; Function #1.43:
 ;
 ; Name:            
-; Defined at line: 716
+; Defined at line: 707
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2690,7 +2663,7 @@ code size: 9
 ; Function #1.44:
 ;
 ; Name:            
-; Defined at line: 727
+; Defined at line: 718
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2718,7 +2691,7 @@ code size: 9
 ; Function #1.45:
 ;
 ; Name:            
-; Defined at line: 736
+; Defined at line: 727
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2744,7 +2717,7 @@ code size: 9
 ; Function #1.46:
 ;
 ; Name:            
-; Defined at line: 761
+; Defined at line: 752
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2763,7 +2736,7 @@ code size: 9
 ; Function #1.46.1:
 ;
 ; Name:            
-; Defined at line: 765
+; Defined at line: 756
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2785,7 +2758,7 @@ code size: 9
 ; Function #1.47:
 ;
 ; Name:            
-; Defined at line: 772
+; Defined at line: 763
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2806,7 +2779,7 @@ code size: 9
 ; Function #1.48:
 ;
 ; Name:            
-; Defined at line: 778
+; Defined at line: 769
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2838,7 +2811,7 @@ code size: 9
 ; Function #1.49:
 ;
 ; Name:            
-; Defined at line: 801
+; Defined at line: 792
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2872,7 +2845,7 @@ code size: 9
 ; Function #1.50:
 ;
 ; Name:            
-; Defined at line: 812
+; Defined at line: 803
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2934,7 +2907,7 @@ code size: 9
 ; Function #1.51:
 ;
 ; Name:            
-; Defined at line: 819
+; Defined at line: 810
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2974,7 +2947,7 @@ code size: 9
 ; Function #1.52:
 ;
 ; Name:            
-; Defined at line: 827
+; Defined at line: 818
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0

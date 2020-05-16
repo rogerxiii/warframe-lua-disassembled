@@ -14,7 +14,7 @@ code size: 137
 code size: 118
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\Encounters\GrineerAsteroidHangarEncounter.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\Encounters\GrineerAsteroidHangarEncounter.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -582,7 +582,7 @@ code size: 5
  49 [-]: FORPREP   R4 54        ; R4 -= R6; PC := 54
  50 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
  51 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0x8D5886B7"]
- 52 [-]: LOADK     R10 K19      ; R10 := "Open"
+ 52 [-]: LOADK     R10 K19      ; R10 := "Hide"
  53 [-]: CALL      R8 3 1       ; R8(R9,R10)
  54 [-]: FORLOOP   R4 50        ; R4 += R6; if R4 <= R5 then begin PC := 50; R7 := R4 end
  55 [-]: GETGLOBAL R8 K20       ; R8 := _T

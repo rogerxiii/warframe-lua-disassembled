@@ -16,7 +16,7 @@ code size: 103
 code size: 12
 code size: 100
 code size: 107
-code size: 109
+code size: 114
 code size: 14
 code size: 34
 code size: 181
@@ -31,7 +31,7 @@ code size: 4
 code size: 5
 code size: 18
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\RailJackShip.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\RailJackShip.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1462,7 +1462,7 @@ code size: 18
  42 [-]: LOADK     R12 K0       ; R12 := 1
  43 [-]: LEN       R13 R0       ; R13 := # R0
  44 [-]: LOADK     R14 K0       ; R14 := 1
- 45 [-]: FORPREP   R12 108      ; R12 -= R14; PC := 108
+ 45 [-]: FORPREP   R12 113      ; R12 -= R14; PC := 113
  46 [-]: GETTABLE  R7 R0 R15    ; R7 := R0[R15]
  47 [-]: GETGLOBAL R16 K11      ; R16 := gRegion
  48 [-]: SELF      R16 R16 K12  ; R17 := R16; R16 := R16["0xA76F0612"]
@@ -1472,12 +1472,12 @@ code size: 18
  52 [-]: LOADK     R16 K0       ; R16 := 1
  53 [-]: LEN       R17 R4       ; R17 := # R4
  54 [-]: LOADK     R18 K0       ; R18 := 1
- 55 [-]: FORPREP   R16 107      ; R16 -= R18; PC := 107
+ 55 [-]: FORPREP   R16 112      ; R16 -= R18; PC := 112
  56 [-]: GETGLOBAL R20 K1       ; R20 := 0x400E7765
  57 [-]: GETTABLE  R21 R4 R19   ; R21 := R4[R19]
  58 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 59 [-]: TEST      R20 1        ; if R20 then PC := 107
- 60 [-]: JMP       107          ; PC := 107
+ 59 [-]: TEST      R20 1        ; if R20 then PC := 112
+ 60 [-]: JMP       112          ; PC := 112
  61 [-]: GETTABLE  R5 R4 R19    ; R5 := R4[R19]
  62 [-]: GETGLOBAL R20 K1       ; R20 := 0x400E7765
  63 [-]: MOVE      R21 R5       ; R21 := R5
@@ -1494,45 +1494,50 @@ code size: 18
  74 [-]: SELF      R21 R20 K14  ; R22 := R20; R21 := R20["0x828F05DE"]
  75 [-]: CALL      R21 2 2      ; R21 := R21(R22)
  76 [-]: MOVE      R6 R21       ; R6 := R21
- 77 [-]: EQ        0 R2 R6      ; if R2 ~= R6 then PC := 107
- 78 [-]: JMP       107          ; PC := 107
- 79 [-]: TEST      R3 0         ; if not R3 then PC := 96
- 80 [-]: JMP       96           ; PC := 96
+ 77 [-]: EQ        0 R2 R6      ; if R2 ~= R6 then PC := 112
+ 78 [-]: JMP       112          ; PC := 112
+ 79 [-]: TEST      R3 0         ; if not R3 then PC := 101
+ 80 [-]: JMP       101          ; PC := 101
  81 [-]: SELF      R21 R5 K2    ; R22 := R5; R21 := R5["0x8B598ED4"]
  82 [-]: GETGLOBAL R23 K3       ; R23 := gLightType
  83 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
- 84 [-]: TEST      R21 0        ; if not R21 then PC := 93
- 85 [-]: JMP       93           ; PC := 93
+ 84 [-]: TEST      R21 0        ; if not R21 then PC := 98
+ 85 [-]: JMP       98           ; PC := 98
  86 [-]: GETGLOBAL R21 K4       ; R21 := 0x201191EA
  87 [-]: LOADK     R22 K5       ; R22 := 0.30000001192093
  88 [-]: CALL      R21 2 1      ; R21(R22)
- 89 [-]: SELF      R21 R5 K6    ; R22 := R5; R21 := R5["0x8D5886B7"]
- 90 [-]: LOADK     R23 K7       ; R23 := "TurnOn"
- 91 [-]: CALL      R21 3 1      ; R21(R22,R23)
- 92 [-]: JMP       107          ; PC := 107
- 93 [-]: SELF      R21 R5 K8    ; R22 := R5; R21 := R5["0xC5E91BA6"]
- 94 [-]: CALL      R21 2 1      ; R21(R22)
- 95 [-]: JMP       107          ; PC := 107
- 96 [-]: SELF      R21 R5 K2    ; R22 := R5; R21 := R5["0x8B598ED4"]
- 97 [-]: GETGLOBAL R23 K3       ; R23 := gLightType
- 98 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
- 99 [-]: TEST      R21 0        ; if not R21 then PC := 105
-100 [-]: JMP       105          ; PC := 105
-101 [-]: SELF      R21 R5 K6    ; R22 := R5; R21 := R5["0x8D5886B7"]
-102 [-]: LOADK     R23 K9       ; R23 := "TurnOff"
-103 [-]: CALL      R21 3 1      ; R21(R22,R23)
-104 [-]: JMP       107          ; PC := 107
-105 [-]: SELF      R21 R5 K10   ; R22 := R5; R21 := R5["0x2DB1272F"]
-106 [-]: CALL      R21 2 1      ; R21(R22)
-107 [-]: FORLOOP   R16 56       ; R16 += R18; if R16 <= R17 then begin PC := 56; R19 := R16 end
-108 [-]: FORLOOP   R12 46       ; R12 += R14; if R12 <= R13 then begin PC := 46; R15 := R12 end
-109 [-]: RETURN    R0 1         ; return 
+ 89 [-]: GETGLOBAL R21 K1       ; R21 := 0x400E7765
+ 90 [-]: MOVE      R22 R5       ; R22 := R5
+ 91 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+ 92 [-]: TEST      R21 1        ; if R21 then PC := 112
+ 93 [-]: JMP       112          ; PC := 112
+ 94 [-]: SELF      R21 R5 K6    ; R22 := R5; R21 := R5["0x8D5886B7"]
+ 95 [-]: LOADK     R23 K7       ; R23 := "TurnOn"
+ 96 [-]: CALL      R21 3 1      ; R21(R22,R23)
+ 97 [-]: JMP       112          ; PC := 112
+ 98 [-]: SELF      R21 R5 K8    ; R22 := R5; R21 := R5["0xC5E91BA6"]
+ 99 [-]: CALL      R21 2 1      ; R21(R22)
+100 [-]: JMP       112          ; PC := 112
+101 [-]: SELF      R21 R5 K2    ; R22 := R5; R21 := R5["0x8B598ED4"]
+102 [-]: GETGLOBAL R23 K3       ; R23 := gLightType
+103 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
+104 [-]: TEST      R21 0        ; if not R21 then PC := 110
+105 [-]: JMP       110          ; PC := 110
+106 [-]: SELF      R21 R5 K6    ; R22 := R5; R21 := R5["0x8D5886B7"]
+107 [-]: LOADK     R23 K9       ; R23 := "TurnOff"
+108 [-]: CALL      R21 3 1      ; R21(R22,R23)
+109 [-]: JMP       112          ; PC := 112
+110 [-]: SELF      R21 R5 K10   ; R22 := R5; R21 := R5["0x2DB1272F"]
+111 [-]: CALL      R21 2 1      ; R21(R22)
+112 [-]: FORLOOP   R16 56       ; R16 += R18; if R16 <= R17 then begin PC := 56; R19 := R16 end
+113 [-]: FORLOOP   R12 46       ; R12 += R14; if R12 <= R13 then begin PC := 46; R15 := R12 end
+114 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 613
+; Defined at line: 615
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1557,7 +1562,7 @@ code size: 18
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 623
+; Defined at line: 625
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1602,7 +1607,7 @@ code size: 18
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 631
+; Defined at line: 633
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1794,7 +1799,7 @@ code size: 18
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 696
+; Defined at line: 698
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1820,7 +1825,7 @@ code size: 18
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 703
+; Defined at line: 705
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1911,7 +1916,7 @@ code size: 18
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 729
+; Defined at line: 731
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2065,7 +2070,7 @@ code size: 18
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 783
+; Defined at line: 785
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2077,7 +2082,7 @@ code size: 18
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 787
+; Defined at line: 789
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2219,7 +2224,7 @@ code size: 18
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 842
+; Defined at line: 844
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2276,7 +2281,7 @@ code size: 18
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 867
+; Defined at line: 869
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2404,7 +2409,7 @@ code size: 18
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 910
+; Defined at line: 912
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2419,7 +2424,7 @@ code size: 18
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 914
+; Defined at line: 916
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2435,7 +2440,7 @@ code size: 18
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 918
+; Defined at line: 920
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -5,7 +5,7 @@ code size: 27
 code size: 90
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Arachnoid\ArachnoidCamperIndoorAngry.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Arachnoid\ArachnoidCamperIndoorAngry.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -265,7 +265,7 @@ code size: 5
  50 [-]: MOVE      R1 R2        ; R1 := R2
  51 [-]: SELF      R7 R1 K18    ; R8 := R1; R7 := R1["0x8D3D2462"]
  52 [-]: GETGLOBAL R9 K19       ; R9 := animEventToWaitFor
- 53 [-]: SELF      R10 R1 K20   ; R11 := R1; R10 := R1["0x868E646A"]
+ 53 [-]: SELF      R10 R1 K20   ; R11 := R1; R10 := R1["0x7A97EAF5"]
  54 [-]: GETGLOBAL R12 K21      ; R12 := activateAnim
  55 [-]: MOVE      R13 R0       ; R13 := R0
  56 [-]: GETGLOBAL R14 K3       ; R14 := Engine

@@ -1,18 +1,20 @@
-code size: 24
+code size: 34
 code size: 209
 code size: 54
-code size: 181
+code size: 135
 code size: 12
+code size: 22
+code size: 73
 code size: 1
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Railjack\RamSledBoarding.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Railjack\RamSledBoarding.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  6
+; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "ShowGrineerPod"
@@ -21,29 +23,39 @@ code size: 1
   5 [-]: LOADK     R2 K2        ; R2 := "ShowCorpusPod"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0xEC274B1A
-  8 [-]: LOADK     R3 K3        ; R3 := "ShowSentientPod"
+  8 [-]: LOADK     R3 K3        ; R3 := "ShowCorpusIcePod"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 11 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
- 12 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
- 13 [-]: SETGLOBAL R5 K4        ; NpcEvaluateAbility := R5
- 14 [-]: SETGLOBAL R5 K5        ; 0xECF1EA57 := R5
- 15 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
- 16 [-]: MOVE      R0 R0        ; R0 := R0
- 17 [-]: MOVE      R0 R1        ; R0 := R1
- 18 [-]: MOVE      R0 R2        ; R0 := R2
- 19 [-]: SETGLOBAL R5 K6        ; ActivateAbility := R5
- 20 [-]: SETGLOBAL R5 K7        ; 0xCC0B19E0 := R5
- 21 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
- 22 [-]: SETGLOBAL R5 K8        ; DeactivateAbility := R5
- 23 [-]: SETGLOBAL R5 K9        ; 0x1FDB8A0 := R5
- 24 [-]: RETURN    R0 1         ; return 
+ 10 [-]: GETGLOBAL R3 K0        ; R3 := 0xEC274B1A
+ 11 [-]: LOADK     R4 K4        ; R4 := "ShowSentientPod"
+ 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 13 [-]: NEWTABLE  R4 0 0       ; R4 := {}
+ 14 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
+ 15 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
+ 16 [-]: SETGLOBAL R6 K5        ; NpcEvaluateAbility := R6
+ 17 [-]: SETGLOBAL R6 K6        ; 0xECF1EA57 := R6
+ 18 [-]: CLOSURE   R6 2         ; R6 := closure(Function #3)
+ 19 [-]: MOVE      R0 R0        ; R0 := R0
+ 20 [-]: MOVE      R0 R1        ; R0 := R1
+ 21 [-]: MOVE      R0 R2        ; R0 := R2
+ 22 [-]: MOVE      R0 R3        ; R0 := R3
+ 23 [-]: CLOSURE   R7 3         ; R7 := closure(Function #4)
+ 24 [-]: MOVE      R0 R6        ; R0 := R6
+ 25 [-]: SETGLOBAL R7 K7        ; DoBoardingEvent := R7
+ 26 [-]: SETGLOBAL R7 K8        ; 0xDC2557AA := R7
+ 27 [-]: CLOSURE   R7 4         ; R7 := closure(Function #5)
+ 28 [-]: MOVE      R0 R6        ; R0 := R6
+ 29 [-]: SETGLOBAL R7 K9        ; ActivateAbility := R7
+ 30 [-]: SETGLOBAL R7 K10       ; 0xCC0B19E0 := R7
+ 31 [-]: CLOSURE   R7 5         ; R7 := closure(Function #6)
+ 32 [-]: SETGLOBAL R7 K11       ; DeactivateAbility := R7
+ 33 [-]: SETGLOBAL R7 K12       ; 0x1FDB8A0 := R7
+ 34 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 19
+; Defined at line: 21
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -263,7 +275,7 @@ code size: 1
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 96
+; Defined at line: 98
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -328,199 +340,153 @@ code size: 1
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 125
-; #Upvalues:       3
-; #Parameters:     4
+; Defined at line: 127
+; #Upvalues:       4
+; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  24
+; Max Stack Size:  20
 
-  1 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
-  2 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0xA559F558"]
-  3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  4 [-]: TEST      R4 1         ; if R4 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
-  8 [-]: GETGLOBAL R5 K3        ; R5 := _T
-  9 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["repelRamSledChance"]
- 10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 11 [-]: TEST      R4 1         ; if R4 then PC := 20
- 12 [-]: JMP       20           ; PC := 20
- 13 [-]: GETGLOBAL R4 K5        ; R4 := 0x58C463C2
- 14 [-]: CALL      R4 1 2       ; R4 := R4()
- 15 [-]: GETGLOBAL R5 K3        ; R5 := _T
- 16 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["repelRamSledChance"]
- 17 [-]: LE        0 R4 R5      ; if R4 > R5 then PC := 20
- 18 [-]: JMP       20           ; PC := 20
- 19 [-]: RETURN    R0 1         ; return 
- 20 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
- 21 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0xD1CEF990"]
- 22 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 23 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x20092973"]
- 24 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 25 [-]: SELF      R5 R1 K8     ; R6 := R1; R5 := R1["0xABD9DD93"]
- 26 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 27 [-]: SELF      R6 R1 K9     ; R7 := R1; R6 := R1["0xB26452A2"]
- 28 [-]: GETGLOBAL R8 K10       ; R8 := 0xEC274B1A
- 29 [-]: LOADK     R9 K11       ; R9 := "CameraTilt"
- 30 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 31 [-]: MOVE      R9 R0        ; R9 := R0
- 32 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 33 [-]: SELF      R6 R1 K12    ; R7 := R1; R6 := R1["0x7DBDDA0B"]
- 34 [-]: MOVE      R8 R0        ; R8 := R0
- 35 [-]: MOVE      R9 R1        ; R9 := R1
- 36 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 37 [-]: GETGLOBAL R6 K0        ; R6 := gRegion
- 38 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6["0xBDD34CC6"]
- 39 [-]: GETGLOBAL R8 K14       ; R8 := collisionFx
- 40 [-]: SELF      R9 R1 K15    ; R10 := R1; R9 := R1["0x6DA72501"]
- 41 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 42 [-]: GETGLOBAL R10 K16      ; R10 := ZERO_ROTATION
- 43 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 44 [-]: GETGLOBAL R6 K2        ; R6 := 0x400E7765
- 45 [-]: MOVE      R7 R2        ; R7 := R2
- 46 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 47 [-]: TEST      R6 1         ; if R6 then PC := 73
- 48 [-]: JMP       73           ; PC := 73
- 49 [-]: SELF      R6 R2 K17    ; R7 := R2; R6 := R2["0x8B598ED4"]
- 50 [-]: GETGLOBAL R8 K18       ; R8 := gCrewShipAvatarType
- 51 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 52 [-]: TEST      R6 1         ; if R6 then PC := 73
- 53 [-]: JMP       73           ; PC := 73
- 54 [-]: GETGLOBAL R6 K19       ; R6 := Engine
- 55 [-]: GETTABLE  R6 R6 K20    ; R6 := R6["0xFA1ED226"]
- 56 [-]: CALL      R6 1 2       ; R6 := R6()
- 57 [-]: SELF      R7 R6 K21    ; R8 := R6; R7 := R6["0xC4A45AF8"]
- 58 [-]: GETGLOBAL R9 K19       ; R9 := Engine
- 59 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["DT_IMPACT"]
- 60 [-]: LOADK     R10 K23      ; R10 := 1
- 61 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 62 [-]: GETGLOBAL R7 K25       ; R7 := kamikazeDamage
- 63 [-]: SETTABLE  R6 K24 R7    ; R6["baseAmount"] := R7
- 64 [-]: SELF      R7 R6 K26    ; R8 := R6; R7 := R6["0xE6EDB183"]
- 65 [-]: MOVE      R9 R1        ; R9 := R1
- 66 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 67 [-]: SELF      R7 R2 K27    ; R8 := R2; R7 := R2["0x4722B671"]
- 68 [-]: MOVE      R9 R6        ; R9 := R6
- 69 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 70 [-]: SELF      R7 R1 K28    ; R8 := R1; R7 := R1["0xA5110D8A"]
- 71 [-]: CALL      R7 2 1       ; R7(R8)
- 72 [-]: RETURN    R0 1         ; return 
- 73 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 74 [-]: GETGLOBAL R8 K29       ; R8 := faction
- 75 [-]: GETGLOBAL R9 K10       ; R9 := 0xEC274B1A
- 76 [-]: LOADK     R10 K30      ; R10 := "Corpus"
- 77 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 78 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 82
- 79 [-]: JMP       82           ; PC := 82
- 80 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 81 [-]: JMP       89           ; PC := 89
- 82 [-]: GETGLOBAL R8 K29       ; R8 := faction
- 83 [-]: GETGLOBAL R9 K10       ; R9 := 0xEC274B1A
- 84 [-]: LOADK     R10 K31      ; R10 := "Sentient"
- 85 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 86 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 89
- 87 [-]: JMP       89           ; PC := 89
- 88 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 89 [-]: GETGLOBAL R8 K32       ; R8 := gGameRules
- 90 [-]: SELF      R8 R8 K33    ; R9 := R8; R8 := R8["0x1106FFC3"]
- 91 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 92 [-]: SELF      R8 R8 K34    ; R9 := R8; R8 := R8["0x143DE652"]
- 93 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 94 [-]: SELF      R9 R8 K35    ; R10 := R8; R9 := R8["0x871EBF84"]
- 95 [-]: SELF      R11 R1 K15   ; R12 := R1; R11 := R1["0x6DA72501"]
- 96 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 97 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
- 98 [-]: GETGLOBAL R10 K0       ; R10 := gRegion
- 99 [-]: SELF      R10 R10 K36  ; R11 := R10; R10 := R10["0xA76F0612"]
-100 [-]: GETGLOBAL R12 K10      ; R12 := 0xEC274B1A
-101 [-]: LOADK     R13 K37      ; R13 := "BoardingPartyHint"
-102 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
-103 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
-104 [-]: GETGLOBAL R11 K38      ; R11 := table
-105 [-]: GETTABLE  R11 R11 K39  ; R11 := R11["0xA5C58010"]
-106 [-]: MOVE      R12 R10      ; R12 := R10
-107 [-]: CLOSURE   R13 0        ; R13 := closure(Function #3.1)
-108 [-]: MOVE      R0 R9        ; R0 := R9
-109 [-]: CALL      R11 3 1      ; R11(R12,R13)
-110 [-]: LOADNIL   R11 R11      ; R11 := nil
-111 [-]: GETGLOBAL R12 K40      ; R12 := 0x63B09107
-112 [-]: MOVE      R13 R10      ; R13 := R10
-113 [-]: CALL      R12 2 4      ; R12,R13,R14 := R12(R13)
-114 [-]: JMP       125          ; PC := 125
-115 [-]: SELF      R17 R16 K41  ; R18 := R16; R17 := R16["0xB1627322"]
-116 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-117 [-]: TEST      R17 0        ; if not R17 then PC := 125
-118 [-]: JMP       125          ; PC := 125
-119 [-]: SELF      R17 R16 K42  ; R18 := R16; R17 := R16["0xB3F0027"]
-120 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-121 [-]: TEST      R17 1        ; if R17 then PC := 125
-122 [-]: JMP       125          ; PC := 125
-123 [-]: MOVE      R11 R16      ; R11 := R16
-124 [-]: JMP       127          ; PC := 127
-125 [-]: TFORLOOP  R12 2        ; R15,R16 :=  R12(R13,R14); if R15 ~= nil then begin PC = 115; R14 := R15 end
-126 [-]: JMP       115          ; PC := 115
-127 [-]: GETGLOBAL R17 K2       ; R17 := 0x400E7765
-128 [-]: MOVE      R18 R11      ; R18 := R11
-129 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-130 [-]: TEST      R17 0        ; if not R17 then PC := 136
-131 [-]: JMP       136          ; PC := 136
-132 [-]: GETGLOBAL R17 K43      ; R17 := 0x93B1256B
-133 [-]: LOADK     R18 K44      ; R18 := "RamSledBoarding.lua - No available hint for boarding"
-134 [-]: CALL      R17 2 1      ; R17(R18)
-135 [-]: JMP       179          ; PC := 179
-136 [-]: GETGLOBAL R17 K0       ; R17 := gRegion
-137 [-]: SELF      R17 R17 K45  ; R18 := R17; R17 := R17["0xA10978B4"]
-138 [-]: MOVE      R19 R7       ; R19 := R7
-139 [-]: SELF      R20 R11 K15  ; R21 := R11; R20 := R11["0x6DA72501"]
-140 [-]: CALL      R20 2 0      ; R20,... := R20(R21)
-141 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
-142 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
-143 [-]: MOVE      R19 R17      ; R19 := R17
-144 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-145 [-]: TEST      R18 0        ; if not R18 then PC := 151
-146 [-]: JMP       151          ; PC := 151
-147 [-]: GETGLOBAL R18 K43      ; R18 := 0x93B1256B
-148 [-]: LOADK     R19 K46      ; R19 := "RamSledBoarding.lua - No pod found for boarding"
-149 [-]: CALL      R18 2 1      ; R18(R19)
-150 [-]: JMP       179          ; PC := 179
-151 [-]: GETGLOBAL R18 K0       ; R18 := gRegion
-152 [-]: SELF      R18 R18 K13  ; R19 := R18; R18 := R18["0xBDD34CC6"]
-153 [-]: GETGLOBAL R20 K47      ; R20 := boardingFx
-154 [-]: SELF      R21 R17 K15  ; R22 := R17; R21 := R17["0x6DA72501"]
-155 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-156 [-]: GETGLOBAL R22 K16      ; R22 := ZERO_ROTATION
-157 [-]: CALL      R18 5 2      ; R18 := R18(R19,R20,R21,R22)
-158 [-]: GETGLOBAL R19 K0       ; R19 := gRegion
-159 [-]: SELF      R19 R19 K13  ; R20 := R19; R19 := R19["0xBDD34CC6"]
-160 [-]: GETGLOBAL R21 K48      ; R21 := boardedSoundSequencerType
-161 [-]: SELF      R22 R17 K15  ; R23 := R17; R22 := R17["0x6DA72501"]
-162 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-163 [-]: GETGLOBAL R23 K16      ; R23 := ZERO_ROTATION
-164 [-]: CALL      R19 5 2      ; R19 := R19(R20,R21,R22,R23)
-165 [-]: SELF      R20 R17 K49  ; R21 := R17; R20 := R17["0x8D5886B7"]
-166 [-]: LOADK     R22 K50      ; R22 := "TriggerPort"
-167 [-]: CALL      R20 3 1      ; R20(R21,R22)
-168 [-]: SELF      R20 R4 K51   ; R21 := R4; R20 := R4["0xCD14CEFE"]
-169 [-]: MOVE      R22 R11      ; R22 := R11
-170 [-]: GETGLOBAL R23 K52      ; R23 := boardingPartyEncounterType
-171 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
-172 [-]: GETGLOBAL R20 K2       ; R20 := 0x400E7765
-173 [-]: MOVE      R21 R18      ; R21 := R18
-174 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-175 [-]: TEST      R20 1        ; if R20 then PC := 179
-176 [-]: JMP       179          ; PC := 179
-177 [-]: SELF      R20 R18 K53  ; R21 := R18; R20 := R18["0xD4C2743F"]
-178 [-]: CALL      R20 2 1      ; R20(R21)
-179 [-]: SELF      R20 R1 K53   ; R21 := R1; R20 := R1["0xD4C2743F"]
-180 [-]: CALL      R20 2 1      ; R20(R21)
-181 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R2 K0        ; R2 := gRegion
+  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0xD1CEF990"]
+  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  4 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0x20092973"]
+  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  6 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0xBB5B91D7"]
+  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  8 [-]: TEST      R2 1         ; if R2 then PC := 11
+  9 [-]: JMP       11           ; PC := 11
+ 10 [-]: RETURN    R0 1         ; return 
+ 11 [-]: GETGLOBAL R2 K4        ; R2 := gGameRules
+ 12 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0x1106FFC3"]
+ 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 14 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x143DE652"]
+ 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 16 [-]: GETGLOBAL R3 K0        ; R3 := gRegion
+ 17 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0xA76F0612"]
+ 18 [-]: GETGLOBAL R5 K8        ; R5 := 0xEC274B1A
+ 19 [-]: LOADK     R6 K9        ; R6 := "BoardingPartyHint"
+ 20 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 21 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 22 [-]: SELF      R4 R2 K10    ; R5 := R2; R4 := R2["0x871EBF84"]
+ 23 [-]: MOVE      R6 R0        ; R6 := R0
+ 24 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 25 [-]: GETGLOBAL R5 K11       ; R5 := table
+ 26 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["0xA5C58010"]
+ 27 [-]: MOVE      R6 R3        ; R6 := R3
+ 28 [-]: CLOSURE   R7 0         ; R7 := closure(Function #3.1)
+ 29 [-]: MOVE      R0 R4        ; R0 := R4
+ 30 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 31 [-]: LOADNIL   R5 R5        ; R5 := nil
+ 32 [-]: GETGLOBAL R6 K13       ; R6 := 0x63B09107
+ 33 [-]: MOVE      R7 R3        ; R7 := R3
+ 34 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
+ 35 [-]: JMP       46           ; PC := 46
+ 36 [-]: SELF      R11 R10 K14  ; R12 := R10; R11 := R10["0xB1627322"]
+ 37 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 38 [-]: TEST      R11 0        ; if not R11 then PC := 46
+ 39 [-]: JMP       46           ; PC := 46
+ 40 [-]: SELF      R11 R10 K15  ; R12 := R10; R11 := R10["0xB3F0027"]
+ 41 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 42 [-]: TEST      R11 1        ; if R11 then PC := 46
+ 43 [-]: JMP       46           ; PC := 46
+ 44 [-]: MOVE      R5 R10       ; R5 := R10
+ 45 [-]: JMP       48           ; PC := 48
+ 46 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 36; R8 := R9 end
+ 47 [-]: JMP       36           ; PC := 36
+ 48 [-]: GETGLOBAL R11 K16      ; R11 := 0x400E7765
+ 49 [-]: MOVE      R12 R5       ; R12 := R5
+ 50 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 51 [-]: TEST      R11 0        ; if not R11 then PC := 57
+ 52 [-]: JMP       57           ; PC := 57
+ 53 [-]: GETGLOBAL R11 K17      ; R11 := 0x93B1256B
+ 54 [-]: LOADK     R12 K18      ; R12 := "RamSledBoarding.lua - No available hint for boarding"
+ 55 [-]: CALL      R11 2 1      ; R11(R12)
+ 56 [-]: JMP       135          ; PC := 135
+ 57 [-]: GETUPVAL  R11 U0       ; R11 := U0
+ 58 [-]: GETGLOBAL R12 K19      ; R12 := faction
+ 59 [-]: GETGLOBAL R13 K8       ; R13 := 0xEC274B1A
+ 60 [-]: LOADK     R14 K20      ; R14 := "Corpus"
+ 61 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 62 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 69
+ 63 [-]: JMP       69           ; PC := 69
+ 64 [-]: GETGLOBAL R12 K21      ; R12 := corpusIceSled
+ 65 [-]: TEST      R12 1        ; if R12 then PC := 69
+ 66 [-]: JMP       69           ; PC := 69
+ 67 [-]: GETUPVAL  R11 U1       ; R11 := U1
+ 68 [-]: JMP       87           ; PC := 87
+ 69 [-]: GETGLOBAL R12 K19      ; R12 := faction
+ 70 [-]: GETGLOBAL R13 K8       ; R13 := 0xEC274B1A
+ 71 [-]: LOADK     R14 K20      ; R14 := "Corpus"
+ 72 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 73 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 80
+ 74 [-]: JMP       80           ; PC := 80
+ 75 [-]: GETGLOBAL R12 K21      ; R12 := corpusIceSled
+ 76 [-]: TEST      R12 0        ; if not R12 then PC := 80
+ 77 [-]: JMP       80           ; PC := 80
+ 78 [-]: GETUPVAL  R11 U2       ; R11 := U2
+ 79 [-]: JMP       87           ; PC := 87
+ 80 [-]: GETGLOBAL R12 K19      ; R12 := faction
+ 81 [-]: GETGLOBAL R13 K8       ; R13 := 0xEC274B1A
+ 82 [-]: LOADK     R14 K22      ; R14 := "Sentient"
+ 83 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 84 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 87
+ 85 [-]: JMP       87           ; PC := 87
+ 86 [-]: GETUPVAL  R11 U3       ; R11 := U3
+ 87 [-]: GETGLOBAL R12 K0       ; R12 := gRegion
+ 88 [-]: SELF      R12 R12 K23  ; R13 := R12; R12 := R12["0xA10978B4"]
+ 89 [-]: MOVE      R14 R11      ; R14 := R11
+ 90 [-]: SELF      R15 R5 K24   ; R16 := R5; R15 := R5["0x6DA72501"]
+ 91 [-]: CALL      R15 2 0      ; R15,... := R15(R16)
+ 92 [-]: CALL      R12 0 2      ; R12 := R12(R13,...)
+ 93 [-]: GETGLOBAL R13 K16      ; R13 := 0x400E7765
+ 94 [-]: MOVE      R14 R12      ; R14 := R12
+ 95 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 96 [-]: TEST      R13 0        ; if not R13 then PC := 102
+ 97 [-]: JMP       102          ; PC := 102
+ 98 [-]: GETGLOBAL R13 K17      ; R13 := 0x93B1256B
+ 99 [-]: LOADK     R14 K25      ; R14 := "RamSledBoarding.lua - No pod found for boarding"
+100 [-]: CALL      R13 2 1      ; R13(R14)
+101 [-]: JMP       135          ; PC := 135
+102 [-]: GETGLOBAL R13 K0       ; R13 := gRegion
+103 [-]: SELF      R13 R13 K26  ; R14 := R13; R13 := R13["0xBDD34CC6"]
+104 [-]: GETGLOBAL R15 K27      ; R15 := boardingFx
+105 [-]: SELF      R16 R12 K24  ; R17 := R12; R16 := R12["0x6DA72501"]
+106 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+107 [-]: GETGLOBAL R17 K28      ; R17 := ZERO_ROTATION
+108 [-]: CALL      R13 5 2      ; R13 := R13(R14,R15,R16,R17)
+109 [-]: GETGLOBAL R14 K0       ; R14 := gRegion
+110 [-]: SELF      R14 R14 K26  ; R15 := R14; R14 := R14["0xBDD34CC6"]
+111 [-]: GETGLOBAL R16 K29      ; R16 := boardedSoundSequencerType
+112 [-]: SELF      R17 R12 K24  ; R18 := R12; R17 := R12["0x6DA72501"]
+113 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+114 [-]: GETGLOBAL R18 K28      ; R18 := ZERO_ROTATION
+115 [-]: CALL      R14 5 2      ; R14 := R14(R15,R16,R17,R18)
+116 [-]: SELF      R15 R12 K30  ; R16 := R12; R15 := R12["0x8D5886B7"]
+117 [-]: LOADK     R17 K31      ; R17 := "TriggerPort"
+118 [-]: CALL      R15 3 1      ; R15(R16,R17)
+119 [-]: GETGLOBAL R15 K0       ; R15 := gRegion
+120 [-]: SELF      R15 R15 K1   ; R16 := R15; R15 := R15["0xD1CEF990"]
+121 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+122 [-]: SELF      R15 R15 K2   ; R16 := R15; R15 := R15["0x20092973"]
+123 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+124 [-]: SELF      R16 R15 K32  ; R17 := R15; R16 := R15["0xCD14CEFE"]
+125 [-]: MOVE      R18 R5       ; R18 := R5
+126 [-]: MOVE      R19 R1       ; R19 := R1
+127 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+128 [-]: GETGLOBAL R16 K16      ; R16 := 0x400E7765
+129 [-]: MOVE      R17 R13      ; R17 := R13
+130 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+131 [-]: TEST      R16 1        ; if R16 then PC := 135
+132 [-]: JMP       135          ; PC := 135
+133 [-]: SELF      R16 R13 K33  ; R17 := R13; R16 := R13["0xD4C2743F"]
+134 [-]: CALL      R16 2 1      ; R16(R17)
+135 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3.1:
 ;
 ; Name:            
-; Defined at line: 165
+; Defined at line: 136
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -543,7 +509,124 @@ code size: 1
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 199
+; Defined at line: 177
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
+  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xA559F558"]
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 1         ; if R0 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R0 K3        ; R0 := 0xEC274B1A
+  8 [-]: LOADK     R1 K4        ; R1 := "Grineer"
+  9 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 10 [-]: SETGLOBAL R0 K2        ; faction := R0
+ 11 [-]: GETGLOBAL R0 K5        ; R0 := 0x2C00D429
+ 12 [-]: LOADK     R1 K6        ; R1 := "/Lotus/Types/Gameplay/CrewShip/Encounters/GrineerBoardingParty"
+ 13 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 14 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 15 [-]: GETGLOBAL R2 K0        ; R2 := gRegion
+ 16 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0x3E2F6BF"]
+ 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 18 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x6DA72501"]
+ 19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 20 [-]: MOVE      R3 R0        ; R3 := R0
+ 21 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 22 [-]: RETURN    R0 1         ; return 
+
+
+; Function #5:
+;
+; Name:            
+; Defined at line: 187
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
+  2 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0xA559F558"]
+  3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  4 [-]: TEST      R4 1         ; if R4 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+  8 [-]: GETGLOBAL R5 K3        ; R5 := _T
+  9 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["repelRamSledChance"]
+ 10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 11 [-]: TEST      R4 1         ; if R4 then PC := 20
+ 12 [-]: JMP       20           ; PC := 20
+ 13 [-]: GETGLOBAL R4 K5        ; R4 := 0x58C463C2
+ 14 [-]: CALL      R4 1 2       ; R4 := R4()
+ 15 [-]: GETGLOBAL R5 K3        ; R5 := _T
+ 16 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["repelRamSledChance"]
+ 17 [-]: LE        0 R4 R5      ; if R4 > R5 then PC := 20
+ 18 [-]: JMP       20           ; PC := 20
+ 19 [-]: RETURN    R0 1         ; return 
+ 20 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1["0xB26452A2"]
+ 21 [-]: GETGLOBAL R6 K7        ; R6 := 0xEC274B1A
+ 22 [-]: LOADK     R7 K8        ; R7 := "CameraTilt"
+ 23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 24 [-]: MOVE      R7 R0        ; R7 := R0
+ 25 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 26 [-]: SELF      R4 R1 K9     ; R5 := R1; R4 := R1["0x7DBDDA0B"]
+ 27 [-]: MOVE      R6 R0        ; R6 := R0
+ 28 [-]: MOVE      R7 R1        ; R7 := R1
+ 29 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 30 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
+ 31 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0xBDD34CC6"]
+ 32 [-]: GETGLOBAL R6 K11       ; R6 := collisionFx
+ 33 [-]: SELF      R7 R1 K12    ; R8 := R1; R7 := R1["0x6DA72501"]
+ 34 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 35 [-]: GETGLOBAL R8 K13       ; R8 := ZERO_ROTATION
+ 36 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 37 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+ 38 [-]: MOVE      R5 R2        ; R5 := R2
+ 39 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 40 [-]: TEST      R4 1         ; if R4 then PC := 66
+ 41 [-]: JMP       66           ; PC := 66
+ 42 [-]: SELF      R4 R2 K14    ; R5 := R2; R4 := R2["0x8B598ED4"]
+ 43 [-]: GETGLOBAL R6 K15       ; R6 := gCrewShipAvatarType
+ 44 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 45 [-]: TEST      R4 1         ; if R4 then PC := 66
+ 46 [-]: JMP       66           ; PC := 66
+ 47 [-]: GETGLOBAL R4 K16       ; R4 := Engine
+ 48 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["0xFA1ED226"]
+ 49 [-]: CALL      R4 1 2       ; R4 := R4()
+ 50 [-]: SELF      R5 R4 K18    ; R6 := R4; R5 := R4["0xC4A45AF8"]
+ 51 [-]: GETGLOBAL R7 K16       ; R7 := Engine
+ 52 [-]: GETTABLE  R7 R7 K19    ; R7 := R7["DT_IMPACT"]
+ 53 [-]: LOADK     R8 K20       ; R8 := 1
+ 54 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 55 [-]: GETGLOBAL R5 K22       ; R5 := kamikazeDamage
+ 56 [-]: SETTABLE  R4 K21 R5    ; R4["baseAmount"] := R5
+ 57 [-]: SELF      R5 R4 K23    ; R6 := R4; R5 := R4["0xE6EDB183"]
+ 58 [-]: MOVE      R7 R1        ; R7 := R1
+ 59 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 60 [-]: SELF      R5 R2 K24    ; R6 := R2; R5 := R2["0x4722B671"]
+ 61 [-]: MOVE      R7 R4        ; R7 := R4
+ 62 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 63 [-]: SELF      R5 R1 K25    ; R6 := R1; R5 := R1["0xA5110D8A"]
+ 64 [-]: CALL      R5 2 1       ; R5(R6)
+ 65 [-]: RETURN    R0 1         ; return 
+ 66 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 67 [-]: SELF      R6 R1 K12    ; R7 := R1; R6 := R1["0x6DA72501"]
+ 68 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 69 [-]: GETGLOBAL R7 K26       ; R7 := boardingPartyEncounterType
+ 70 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 71 [-]: SELF      R5 R1 K27    ; R6 := R1; R5 := R1["0xD4C2743F"]
+ 72 [-]: CALL      R5 2 1       ; R5(R6)
+ 73 [-]: RETURN    R0 1         ; return 
+
+
+; Function #6:
+;
+; Name:            
+; Defined at line: 216
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

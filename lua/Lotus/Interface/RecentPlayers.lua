@@ -1,4 +1,4 @@
-code size: 174
+code size: 159
 code size: 9
 code size: 36
 code size: 3
@@ -26,23 +26,20 @@ code size: 8
 code size: 3
 code size: 26
 code size: 24
-code size: 12
-code size: 51
-code size: 20
 code size: 10
-code size: 28
-code size: 29
+code size: 51
+code size: 1
 code size: 33
 code size: 15
 code size: 6
 code size: 33
 code size: 17
 code size: 23
-code size: 198
+code size: 199
 code size: 3
 code size: 3
 code size: 5
-code size: 3
+code size: 6
 code size: 3
 code size: 6
 code size: 4
@@ -51,14 +48,14 @@ code size: 96
 code size: 3
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\RecentPlayers.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\RecentPlayers.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  29
+; Max Stack Size:  28
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.LotusUtilities"
@@ -171,69 +168,54 @@ code size: 3
 109 [-]: MOVE      R0 R2        ; R0 := R2
 110 [-]: MOVE      R0 R5        ; R0 := R5
 111 [-]: CLOSURE   R23 24       ; R23 := closure(Function #25)
-112 [-]: MOVE      R0 R5        ; R0 := R5
-113 [-]: MOVE      R0 R8        ; R0 := R8
-114 [-]: SETGLOBAL R23 K33      ; AddFriendMessage := R23
-115 [-]: SETGLOBAL R23 K34      ; 0x81617811 := R23
-116 [-]: CLOSURE   R23 25       ; R23 := closure(Function #26)
-117 [-]: MOVE      R0 R5        ; R0 := R5
-118 [-]: MOVE      R0 R8        ; R0 := R8
-119 [-]: SETGLOBAL R23 K35      ; OSKAddFriendMessage := R23
-120 [-]: SETGLOBAL R23 K36      ; 0xD8A09838 := R23
-121 [-]: CLOSURE   R23 26       ; R23 := closure(Function #27)
-122 [-]: MOVE      R0 R2        ; R0 := R2
-123 [-]: SETGLOBAL R23 K37      ; OnAddFriend := R23
-124 [-]: SETGLOBAL R23 K38      ; 0x6B0A026B := R23
-125 [-]: CLOSURE   R23 27       ; R23 := closure(Function #28)
-126 [-]: MOVE      R0 R5        ; R0 := R5
+112 [-]: SETGLOBAL R23 K33      ; OnAddFriend := R23
+113 [-]: SETGLOBAL R23 K34      ; 0x6B0A026B := R23
+114 [-]: CLOSURE   R23 25       ; R23 := closure(Function #26)
+115 [-]: MOVE      R0 R2        ; R0 := R2
+116 [-]: MOVE      R0 R9        ; R0 := R9
+117 [-]: SETGLOBAL R23 K35      ; OnAddToGuild := R23
+118 [-]: SETGLOBAL R23 K36      ; 0x6F0B6222 := R23
+119 [-]: CLOSURE   R23 26       ; R23 := closure(Function #27)
+120 [-]: MOVE      R0 R9        ; R0 := R9
+121 [-]: MOVE      R0 R8        ; R0 := R8
+122 [-]: MOVE      R0 R5        ; R0 := R5
+123 [-]: CLOSURE   R24 27       ; R24 := closure(Function #28)
+124 [-]: SETGLOBAL R24 K37      ; OnInvitePlayer := R24
+125 [-]: SETGLOBAL R24 K38      ; 0x9EB8459E := R24
+126 [-]: CLOSURE   R24 28       ; R24 := closure(Function #29)
 127 [-]: MOVE      R0 R8        ; R0 := R8
-128 [-]: MOVE      R0 R0        ; R0 := R0
-129 [-]: CLOSURE   R24 28       ; R24 := closure(Function #29)
-130 [-]: MOVE      R0 R2        ; R0 := R2
-131 [-]: MOVE      R0 R9        ; R0 := R9
-132 [-]: SETGLOBAL R24 K39      ; OnAddToGuild := R24
-133 [-]: SETGLOBAL R24 K40      ; 0x6F0B6222 := R24
-134 [-]: CLOSURE   R24 29       ; R24 := closure(Function #30)
-135 [-]: MOVE      R0 R9        ; R0 := R9
+128 [-]: MOVE      R0 R1        ; R0 := R1
+129 [-]: MOVE      R0 R2        ; R0 := R2
+130 [-]: CLOSURE   R25 29       ; R25 := closure(Function #30)
+131 [-]: MOVE      R0 R2        ; R0 := R2
+132 [-]: MOVE      R0 R8        ; R0 := R8
+133 [-]: CLOSURE   R26 30       ; R26 := closure(Function #31)
+134 [-]: MOVE      R0 R5        ; R0 := R5
+135 [-]: CLOSURE   R11 31       ; R11 := closure(Function #32)
 136 [-]: MOVE      R0 R8        ; R0 := R8
-137 [-]: MOVE      R0 R5        ; R0 := R5
-138 [-]: CLOSURE   R25 30       ; R25 := closure(Function #31)
-139 [-]: SETGLOBAL R25 K41      ; OnInvitePlayer := R25
-140 [-]: SETGLOBAL R25 K42      ; 0x9EB8459E := R25
-141 [-]: CLOSURE   R25 31       ; R25 := closure(Function #32)
-142 [-]: MOVE      R0 R8        ; R0 := R8
-143 [-]: MOVE      R0 R1        ; R0 := R1
-144 [-]: MOVE      R0 R2        ; R0 := R2
-145 [-]: CLOSURE   R26 32       ; R26 := closure(Function #33)
-146 [-]: MOVE      R0 R2        ; R0 := R2
-147 [-]: MOVE      R0 R8        ; R0 := R8
-148 [-]: CLOSURE   R27 33       ; R27 := closure(Function #34)
-149 [-]: MOVE      R0 R5        ; R0 := R5
-150 [-]: CLOSURE   R11 34       ; R11 := closure(Function #35)
-151 [-]: MOVE      R0 R8        ; R0 := R8
-152 [-]: MOVE      R0 R27       ; R0 := R27
-153 [-]: MOVE      R0 R6        ; R0 := R6
-154 [-]: MOVE      R0 R26       ; R0 := R26
-155 [-]: MOVE      R0 R1        ; R0 := R1
-156 [-]: MOVE      R0 R25       ; R0 := R25
-157 [-]: MOVE      R0 R23       ; R0 := R23
-158 [-]: MOVE      R0 R5        ; R0 := R5
-159 [-]: MOVE      R0 R24       ; R0 := R24
-160 [-]: MOVE      R0 R21       ; R0 := R21
-161 [-]: MOVE      R0 R22       ; R0 := R22
-162 [-]: CLOSURE   R28 35       ; R28 := closure(Function #36)
-163 [-]: MOVE      R0 R4        ; R0 := R4
-164 [-]: MOVE      R0 R6        ; R0 := R6
-165 [-]: MOVE      R0 R11       ; R0 := R11
-166 [-]: SETGLOBAL R28 K43      ; onRawInputEvent := R28
-167 [-]: SETGLOBAL R28 K44      ; 0x11563913 := R28
-168 [-]: CLOSURE   R28 36       ; R28 := closure(Function #37)
-169 [-]: SETGLOBAL R28 K45      ; onKeyDown_HIDE_PAUSE_MENU := R28
-170 [-]: SETGLOBAL R28 K46      ; 0xA57B4F90 := R28
-171 [-]: CLOSURE   R28 37       ; R28 := closure(Function #38)
-172 [-]: SETGLOBAL R28 K47      ; onKeyUp_HIDE_PAUSE_MENU := R28
-173 [-]: SETGLOBAL R28 K48      ; 0xFBCEB10C := R28
-174 [-]: RETURN    R0 1         ; return 
+137 [-]: MOVE      R0 R26       ; R0 := R26
+138 [-]: MOVE      R0 R6        ; R0 := R6
+139 [-]: MOVE      R0 R25       ; R0 := R25
+140 [-]: MOVE      R0 R1        ; R0 := R1
+141 [-]: MOVE      R0 R24       ; R0 := R24
+142 [-]: MOVE      R0 R0        ; R0 := R0
+143 [-]: MOVE      R0 R5        ; R0 := R5
+144 [-]: MOVE      R0 R23       ; R0 := R23
+145 [-]: MOVE      R0 R21       ; R0 := R21
+146 [-]: MOVE      R0 R22       ; R0 := R22
+147 [-]: CLOSURE   R27 32       ; R27 := closure(Function #33)
+148 [-]: MOVE      R0 R4        ; R0 := R4
+149 [-]: MOVE      R0 R6        ; R0 := R6
+150 [-]: MOVE      R0 R11       ; R0 := R11
+151 [-]: SETGLOBAL R27 K39      ; onRawInputEvent := R27
+152 [-]: SETGLOBAL R27 K40      ; 0x11563913 := R27
+153 [-]: CLOSURE   R27 33       ; R27 := closure(Function #34)
+154 [-]: SETGLOBAL R27 K41      ; onKeyDown_HIDE_PAUSE_MENU := R27
+155 [-]: SETGLOBAL R27 K42      ; 0xA57B4F90 := R27
+156 [-]: CLOSURE   R27 34       ; R27 := closure(Function #35)
+157 [-]: SETGLOBAL R27 K43      ; onKeyUp_HIDE_PAUSE_MENU := R27
+158 [-]: SETGLOBAL R27 K44      ; 0xFBCEB10C := R27
+159 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -589,7 +571,7 @@ code size: 3
  15 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x37AAD7A"]
  16 [-]: CALL      R1 2 1       ; R1(R2)
  17 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 18 [-]: SETTABLE  R1 K9 K10    ; R1["mShowMateryRank"] := "0x0"
+ 18 [-]: SETTABLE  R1 K9 K10    ; R1["mShowMasteryRank"] := "0x0"
  19 [-]: GETUPVAL  R1 U0        ; R1 := U0
  20 [-]: SETTABLE  R1 K11 K12   ; R1["mRowSeparation"] := 24
  21 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -1130,20 +1112,18 @@ code size: 3
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U1        ; R0 := U1
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0x87F83DE1"]
   3 [-]: GETGLOBAL R1 K1        ; R1 := mMovie
   4 [-]: GETUPVAL  R2 U2        ; R2 := U2
   5 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["User"]
-  6 [-]: GETUPVAL  R3 U2        ; R3 := U2
-  7 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["AccountId"]
-  8 [-]: CALL      R0 4 2       ; R0 := R0(R1,R2,R3)
-  9 [-]: MOVE      R0 R0        ; R0 := R0
- 10 [-]: MOVE      R0 R0        ; R0 := R0
- 11 [-]: RETURN    R0 2         ; return R0
- 12 [-]: RETURN    R0 1         ; return 
+  6 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+  7 [-]: MOVE      R0 R0        ; R0 := R0
+  8 [-]: MOVE      R0 R0        ; R0 := R0
+  9 [-]: RETURN    R0 2         ; return R0
+ 10 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #24:
@@ -1212,137 +1192,18 @@ code size: 3
 ;
 ; Name:            
 ; Defined at line: 269
-; #Upvalues:       2
-; #Parameters:     3
+; #Upvalues:       0
+; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  2
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
-  2 [-]: MOVE      R4 R2        ; R4 := R2
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 20
-  5 [-]: JMP       20           ; PC := 20
-  6 [-]: GETGLOBAL R3 K1        ; R3 := 0xF595ADDE
-  7 [-]: MOVE      R4 R2        ; R4 := R2
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: GETGLOBAL R4 K2        ; R4 := Engine
- 10 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["CI_SELECT"]
- 11 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 20
- 12 [-]: JMP       20           ; PC := 20
- 13 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 14 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x5FBAC3D"]
- 15 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 16 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["User"]
- 17 [-]: MOVE      R6 R0        ; R6 := R0
- 18 [-]: LOADK     R7 K6        ; R7 := "OnAddFriend"
- 19 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 20 [-]: RETURN    R0 1         ; return 
+  1 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 275
-; #Upvalues:       2
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: TEST      R0 1         ; if R0 then PC := 10
-  2 [-]: JMP       10           ; PC := 10
-  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  4 [-]: SELF      R2 R2 K0     ; R3 := R2; R2 := R2["0x5FBAC3D"]
-  5 [-]: GETUPVAL  R4 U1        ; R4 := U1
-  6 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["User"]
-  7 [-]: MOVE      R5 R1        ; R5 := R1
-  8 [-]: LOADK     R6 K2        ; R6 := "OnAddFriend"
-  9 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 10 [-]: RETURN    R0 1         ; return 
-
-
-; Function #27:
-;
-; Name:            
-; Defined at line: 281
-; #Upvalues:       1
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: TEST      R0 1         ; if R0 then PC := 20
-  2 [-]: JMP       20           ; PC := 20
-  3 [-]: EQ        1 R1 K0      ; if R1 == nil then PC := 7
-  4 [-]: JMP       7            ; PC := 7
-  5 [-]: EQ        0 R1 K1      ; if R1 ~= "" then PC := 12
-  6 [-]: JMP       12           ; PC := 12
-  7 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  8 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["0xB11F032"]
-  9 [-]: LOADK     R3 K3        ; R3 := "/Lotus/Language/Menu/SocialOverlay_NonExistentUserError"
- 10 [-]: CALL      R2 2 1       ; R2(R3)
- 11 [-]: JMP       19           ; PC := 19
- 12 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 13 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["0xB11F032"]
- 14 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 15 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["0x254FB3E6"]
- 16 [-]: MOVE      R4 R1        ; R4 := R1
- 17 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 18 [-]: CALL      R2 0 1       ; R2(R3,...)
- 19 [-]: RETURN    R0 1         ; return 
- 20 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 21 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["0xB11F032"]
- 22 [-]: GETGLOBAL R3 K5        ; R3 := mMovie
- 23 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x5DB0BD4"]
- 24 [-]: LOADK     R5 K7        ; R5 := "/Lotus/Language/Menu/SocialOverlay_FriendAddConfirm"
- 25 [-]: MOVE      R6 R0        ; R6 := R0
- 26 [-]: CALL      R3 4 0       ; R3,... := R3(R4,R5,R6)
- 27 [-]: CALL      R2 0 1       ; R2(R3,...)
- 28 [-]: RETURN    R0 1         ; return 
-
-
-; Function #28:
-;
-; Name:            
-; Defined at line: 294
-; #Upvalues:       3
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  8
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
-  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: TEST      R0 1         ; if R0 then PC := 29
-  5 [-]: JMP       29           ; PC := 29
-  6 [-]: GETGLOBAL R0 K1        ; R0 := Engine
-  7 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["0x695D4229"]
-  8 [-]: CALL      R0 1 2       ; R0 := R0()
-  9 [-]: TEST      R0 0         ; if not R0 then PC := 19
- 10 [-]: JMP       19           ; PC := 19
- 11 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 12 [-]: SELF      R0 R0 K3     ; R1 := R0; R0 := R0["0x5FBAC3D"]
- 13 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 14 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["User"]
- 15 [-]: LOADK     R3 K5        ; R3 := ""
- 16 [-]: LOADK     R4 K6        ; R4 := "OnAddFriend"
- 17 [-]: CALL      R0 5 1       ; R0(R1,R2,R3,R4)
- 18 [-]: JMP       29           ; PC := 29
- 19 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 20 [-]: GETTABLE  R0 R0 K7     ; R0 := R0["0x3F74D42B"]
- 21 [-]: GETGLOBAL R1 K8        ; R1 := mMovie
- 22 [-]: LOADK     R2 K9        ; R2 := "/Lotus/Language/Menu/Message"
- 23 [-]: LOADK     R3 K5        ; R3 := ""
- 24 [-]: LOADK     R4 K10       ; R4 := 200
- 25 [-]: LOADK     R5 K11       ; R5 := "AddFriendMessage"
- 26 [-]: LOADK     R6 K12       ; R6 := "OSKAddFriendMessage"
- 27 [-]: MOVE      R7 R1        ; R7 := R1
- 28 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
- 29 [-]: RETURN    R0 1         ; return 
-
-
-; Function #29:
-;
-; Name:            
-; Defined at line: 304
+; Defined at line: 272
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1383,10 +1244,10 @@ code size: 3
  33 [-]: RETURN    R0 1         ; return 
 
 
-; Function #30:
+; Function #27:
 ;
 ; Name:            
-; Defined at line: 317
+; Defined at line: 285
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1409,10 +1270,10 @@ code size: 3
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #31:
+; Function #28:
 ;
 ; Name:            
-; Defined at line: 324
+; Defined at line: 292
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1426,10 +1287,10 @@ code size: 3
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #32:
+; Function #29:
 ;
 ; Name:            
-; Defined at line: 328
+; Defined at line: 296
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1470,10 +1331,10 @@ code size: 3
  33 [-]: RETURN    R0 1         ; return 
 
 
-; Function #33:
+; Function #30:
 ;
 ; Name:            
-; Defined at line: 343
+; Defined at line: 311
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1498,10 +1359,10 @@ code size: 3
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #34:
+; Function #31:
 ;
 ; Name:            
-; Defined at line: 350
+; Defined at line: 318
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1532,10 +1393,10 @@ code size: 3
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35:
+; Function #32:
 ;
 ; Name:            
-; Defined at line: 364
+; Defined at line: 332
 ; #Upvalues:       11
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1577,7 +1438,7 @@ code size: 3
  34 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xA77DA8EE"]
  35 [-]: NEWTABLE  R8 0 2       ; R8 := {}
  36 [-]: SETTABLE  R8 K9 K10    ; R8["Name"] := "/Lotus/Language/Menu/Chat_ContextMenu_Talk"
- 37 [-]: CLOSURE   R9 0         ; R9 := closure(Function #35.1)
+ 37 [-]: CLOSURE   R9 0         ; R9 := closure(Function #32.1)
  38 [-]: GETUPVAL  R0 U3        ; R0 := U3
  39 [-]: SETTABLE  R8 K11 R9    ; R8["PressedCallback"] := R9
  40 [-]: MOVE      R9 R1        ; R9 := R1
@@ -1595,7 +1456,7 @@ code size: 3
  52 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xA77DA8EE"]
  53 [-]: NEWTABLE  R8 0 2       ; R8 := {}
  54 [-]: SETTABLE  R8 K9 K15    ; R8["Name"] := "/Lotus/Language/Menu/SocialOverlay_ContextInvite"
- 55 [-]: CLOSURE   R9 1         ; R9 := closure(Function #35.2)
+ 55 [-]: CLOSURE   R9 1         ; R9 := closure(Function #32.2)
  56 [-]: GETUPVAL  R0 U5        ; R0 := U5
  57 [-]: SETTABLE  R8 K11 R9    ; R8["PressedCallback"] := R9
  58 [-]: MOVE      R9 R1        ; R9 := R1
@@ -1611,140 +1472,141 @@ code size: 3
  68 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xA77DA8EE"]
  69 [-]: NEWTABLE  R8 0 2       ; R8 := {}
  70 [-]: SETTABLE  R8 K9 K18    ; R8["Name"] := "/Lotus/Language/Menu/SocialOverlay_ViewProfile"
- 71 [-]: CLOSURE   R9 2         ; R9 := closure(Function #35.3)
+ 71 [-]: CLOSURE   R9 2         ; R9 := closure(Function #32.3)
  72 [-]: GETUPVAL  R0 U2        ; R0 := U2
  73 [-]: GETUPVAL  R0 U0        ; R0 := U0
  74 [-]: SETTABLE  R8 K11 R9    ; R8["PressedCallback"] := R9
  75 [-]: MOVE      R9 R1        ; R9 := R1
  76 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 77 [-]: TEST      R3 1         ; if R3 then PC := 89
- 78 [-]: JMP       89           ; PC := 89
+ 77 [-]: TEST      R3 1         ; if R3 then PC := 90
+ 78 [-]: JMP       90           ; PC := 90
  79 [-]: GETUPVAL  R6 U2        ; R6 := U2
  80 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["mContextMenu"]
  81 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xA77DA8EE"]
  82 [-]: NEWTABLE  R8 0 2       ; R8 := {}
  83 [-]: SETTABLE  R8 K9 K19    ; R8["Name"] := "/Lotus/Language/Menu/SocialOverlay_AddFriend"
- 84 [-]: CLOSURE   R9 3         ; R9 := closure(Function #35.4)
+ 84 [-]: CLOSURE   R9 3         ; R9 := closure(Function #32.4)
  85 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 86 [-]: SETTABLE  R8 K11 R9    ; R8["PressedCallback"] := R9
- 87 [-]: MOVE      R9 R1        ; R9 := R1
- 88 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 89 [-]: GETGLOBAL R6 K4        ; R6 := 0x400E7765
- 90 [-]: GETUPVAL  R7 U7        ; R7 := U7
- 91 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 92 [-]: TEST      R6 0         ; if not R6 then PC := 95
- 93 [-]: JMP       95           ; PC := 95
- 94 [-]: RETURN    R0 1         ; return 
- 95 [-]: GETUPVAL  R6 U7        ; R6 := U7
- 96 [-]: SELF      R6 R6 K20    ; R7 := R6; R6 := R6["0xD35AC00A"]
- 97 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 98 [-]: LEN       R7 R6        ; R7 := # R6
- 99 [-]: LT        0 K3 R7      ; if 0 >= R7 then PC := 134
-100 [-]: JMP       134          ; PC := 134
-101 [-]: GETUPVAL  R7 U7        ; R7 := U7
-102 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7["0x8E3B3DA2"]
-103 [-]: GETGLOBAL R9 K22       ; R9 := Lotus_Game
-104 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["RECRUITER"]
-105 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-106 [-]: TEST      R7 0         ; if not R7 then PC := 134
-107 [-]: JMP       134          ; PC := 134
-108 [-]: MOVE      R7 R0        ; R7 := R0
-109 [-]: LOADK     R8 K24       ; R8 := 1
-110 [-]: LEN       R9 R6        ; R9 := # R6
-111 [-]: LOADK     R10 K24      ; R10 := 1
-112 [-]: FORPREP   R8 121       ; R8 -= R10; PC := 121
-113 [-]: GETTABLE  R12 R6 R11   ; R12 := R6[R11]
-114 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["mId"]
-115 [-]: GETUPVAL  R13 U0       ; R13 := U0
-116 [-]: GETTABLE  R13 R13 K26  ; R13 := R13["AccountId"]
-117 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 121
-118 [-]: JMP       121          ; PC := 121
-119 [-]: MOVE      R7 R1        ; R7 := R1
-120 [-]: JMP       122          ; PC := 122
-121 [-]: FORLOOP   R8 113       ; R8 += R10; if R8 <= R9 then begin PC := 113; R11 := R8 end
-122 [-]: TEST      R7 1         ; if R7 then PC := 134
-123 [-]: JMP       134          ; PC := 134
-124 [-]: GETUPVAL  R12 U2       ; R12 := U2
-125 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["mContextMenu"]
-126 [-]: SELF      R12 R12 K8   ; R13 := R12; R12 := R12["0xA77DA8EE"]
-127 [-]: NEWTABLE  R14 0 2      ; R14 := {}
-128 [-]: SETTABLE  R14 K9 K27   ; R14["Name"] := "/Lotus/Language/Menu/SocialOverlay_OrderInvite"
-129 [-]: CLOSURE   R15 4        ; R15 := closure(Function #35.5)
-130 [-]: GETUPVAL  R0 U8        ; R0 := U8
-131 [-]: SETTABLE  R14 K11 R15  ; R14["PressedCallback"] := R15
-132 [-]: MOVE      R15 R1       ; R15 := R1
-133 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-134 [-]: GETGLOBAL R12 K28      ; R12 := Engine
-135 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["0x1398DAFB"]
-136 [-]: CALL      R12 1 2      ; R12 := R12()
-137 [-]: TEST      R12 0        ; if not R12 then PC := 155
-138 [-]: JMP       155          ; PC := 155
-139 [-]: GETGLOBAL R12 K28      ; R12 := Engine
-140 [-]: GETTABLE  R12 R12 K30  ; R12 := R12["0x47916128"]
-141 [-]: CALL      R12 1 2      ; R12 := R12()
-142 [-]: TEST      R12 1        ; if R12 then PC := 155
-143 [-]: JMP       155          ; PC := 155
-144 [-]: GETUPVAL  R12 U2       ; R12 := U2
-145 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["mContextMenu"]
-146 [-]: SELF      R12 R12 K8   ; R13 := R12; R12 := R12["0xA77DA8EE"]
-147 [-]: NEWTABLE  R14 0 2      ; R14 := {}
-148 [-]: SETTABLE  R14 K9 K31   ; R14["Name"] := "/Lotus/Language/Menu/ShowGamerCard_LowerCase_Windows"
-149 [-]: CLOSURE   R15 5        ; R15 := closure(Function #35.6)
-150 [-]: GETUPVAL  R0 U2        ; R0 := U2
-151 [-]: GETUPVAL  R0 U0        ; R0 := U0
-152 [-]: SETTABLE  R14 K11 R15  ; R14["PressedCallback"] := R15
-153 [-]: MOVE      R15 R1       ; R15 := R1
-154 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-155 [-]: GETUPVAL  R12 U2       ; R12 := U2
-156 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["mContextMenu"]
-157 [-]: SELF      R12 R12 K8   ; R13 := R12; R12 := R12["0xA77DA8EE"]
-158 [-]: NEWTABLE  R14 0 2      ; R14 := {}
-159 [-]: SETTABLE  R14 K9 K32   ; R14["Name"] := "/Lotus/Language/Menu/SocialOverlay_ReportPlayer"
-160 [-]: CLOSURE   R15 6        ; R15 := closure(Function #35.7)
-161 [-]: GETUPVAL  R0 U9        ; R0 := U9
-162 [-]: SETTABLE  R14 K11 R15  ; R14["PressedCallback"] := R15
-163 [-]: MOVE      R15 R1       ; R15 := R1
-164 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-165 [-]: LOADK     R12 K33      ; R12 := ""
-166 [-]: GETUPVAL  R13 U7       ; R13 := U7
-167 [-]: SELF      R13 R13 K34  ; R14 := R13; R13 := R13["0xF075C8EC"]
-168 [-]: GETUPVAL  R15 U0       ; R15 := U0
-169 [-]: GETTABLE  R15 R15 K0   ; R15 := R15["User"]
-170 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
-171 [-]: TEST      R13 0        ; if not R13 then PC := 175
-172 [-]: JMP       175          ; PC := 175
-173 [-]: LOADK     R12 K35      ; R12 := "/Lotus/Language/Menu/Chat_ContextMenu_Listen"
-174 [-]: JMP       176          ; PC := 176
-175 [-]: LOADK     R12 K36      ; R12 := "/Lotus/Language/Menu/Chat_ContextMenu_Ignore"
-176 [-]: GETUPVAL  R13 U2       ; R13 := U2
-177 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mContextMenu"]
-178 [-]: SELF      R13 R13 K8   ; R14 := R13; R13 := R13["0xA77DA8EE"]
-179 [-]: NEWTABLE  R15 0 2      ; R15 := {}
-180 [-]: SETTABLE  R15 K9 R12   ; R15["Name"] := R12
-181 [-]: CLOSURE   R16 7        ; R16 := closure(Function #35.8)
-182 [-]: GETUPVAL  R0 U10       ; R0 := U10
-183 [-]: SETTABLE  R15 K11 R16  ; R15["PressedCallback"] := R16
-184 [-]: MOVE      R16 R1       ; R16 := R1
-185 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-186 [-]: GETUPVAL  R13 U2       ; R13 := U2
-187 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mContextMenu"]
-188 [-]: SELF      R13 R13 K37  ; R14 := R13; R13 := R13["0xC51A5C9D"]
-189 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-190 [-]: LT        0 K3 R13     ; if 0 >= R13 then PC := 198
-191 [-]: JMP       198          ; PC := 198
-192 [-]: GETUPVAL  R13 U2       ; R13 := U2
-193 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mContextMenu"]
-194 [-]: SELF      R13 R13 K38  ; R14 := R13; R13 := R13["0x7CC73200"]
-195 [-]: MOVE      R15 R1       ; R15 := R1
-196 [-]: MOVE      R16 R2       ; R16 := R2
-197 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-198 [-]: RETURN    R0 1         ; return 
+ 86 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 87 [-]: SETTABLE  R8 K11 R9    ; R8["PressedCallback"] := R9
+ 88 [-]: MOVE      R9 R1        ; R9 := R1
+ 89 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 90 [-]: GETGLOBAL R6 K4        ; R6 := 0x400E7765
+ 91 [-]: GETUPVAL  R7 U7        ; R7 := U7
+ 92 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 93 [-]: TEST      R6 0         ; if not R6 then PC := 96
+ 94 [-]: JMP       96           ; PC := 96
+ 95 [-]: RETURN    R0 1         ; return 
+ 96 [-]: GETUPVAL  R6 U7        ; R6 := U7
+ 97 [-]: SELF      R6 R6 K20    ; R7 := R6; R6 := R6["0xD35AC00A"]
+ 98 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 99 [-]: LEN       R7 R6        ; R7 := # R6
+100 [-]: LT        0 K3 R7      ; if 0 >= R7 then PC := 135
+101 [-]: JMP       135          ; PC := 135
+102 [-]: GETUPVAL  R7 U7        ; R7 := U7
+103 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7["0x8E3B3DA2"]
+104 [-]: GETGLOBAL R9 K22       ; R9 := Lotus_Game
+105 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["RECRUITER"]
+106 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+107 [-]: TEST      R7 0         ; if not R7 then PC := 135
+108 [-]: JMP       135          ; PC := 135
+109 [-]: MOVE      R7 R0        ; R7 := R0
+110 [-]: LOADK     R8 K24       ; R8 := 1
+111 [-]: LEN       R9 R6        ; R9 := # R6
+112 [-]: LOADK     R10 K24      ; R10 := 1
+113 [-]: FORPREP   R8 122       ; R8 -= R10; PC := 122
+114 [-]: GETTABLE  R12 R6 R11   ; R12 := R6[R11]
+115 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["mId"]
+116 [-]: GETUPVAL  R13 U0       ; R13 := U0
+117 [-]: GETTABLE  R13 R13 K26  ; R13 := R13["AccountId"]
+118 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 122
+119 [-]: JMP       122          ; PC := 122
+120 [-]: MOVE      R7 R1        ; R7 := R1
+121 [-]: JMP       123          ; PC := 123
+122 [-]: FORLOOP   R8 114       ; R8 += R10; if R8 <= R9 then begin PC := 114; R11 := R8 end
+123 [-]: TEST      R7 1         ; if R7 then PC := 135
+124 [-]: JMP       135          ; PC := 135
+125 [-]: GETUPVAL  R12 U2       ; R12 := U2
+126 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["mContextMenu"]
+127 [-]: SELF      R12 R12 K8   ; R13 := R12; R12 := R12["0xA77DA8EE"]
+128 [-]: NEWTABLE  R14 0 2      ; R14 := {}
+129 [-]: SETTABLE  R14 K9 K27   ; R14["Name"] := "/Lotus/Language/Menu/SocialOverlay_OrderInvite"
+130 [-]: CLOSURE   R15 4        ; R15 := closure(Function #32.5)
+131 [-]: GETUPVAL  R0 U8        ; R0 := U8
+132 [-]: SETTABLE  R14 K11 R15  ; R14["PressedCallback"] := R15
+133 [-]: MOVE      R15 R1       ; R15 := R1
+134 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+135 [-]: GETGLOBAL R12 K28      ; R12 := Engine
+136 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["0x1398DAFB"]
+137 [-]: CALL      R12 1 2      ; R12 := R12()
+138 [-]: TEST      R12 0        ; if not R12 then PC := 156
+139 [-]: JMP       156          ; PC := 156
+140 [-]: GETGLOBAL R12 K28      ; R12 := Engine
+141 [-]: GETTABLE  R12 R12 K30  ; R12 := R12["0x47916128"]
+142 [-]: CALL      R12 1 2      ; R12 := R12()
+143 [-]: TEST      R12 1        ; if R12 then PC := 156
+144 [-]: JMP       156          ; PC := 156
+145 [-]: GETUPVAL  R12 U2       ; R12 := U2
+146 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["mContextMenu"]
+147 [-]: SELF      R12 R12 K8   ; R13 := R12; R12 := R12["0xA77DA8EE"]
+148 [-]: NEWTABLE  R14 0 2      ; R14 := {}
+149 [-]: SETTABLE  R14 K9 K31   ; R14["Name"] := "/Lotus/Language/Menu/ShowGamerCard_LowerCase_Windows"
+150 [-]: CLOSURE   R15 5        ; R15 := closure(Function #32.6)
+151 [-]: GETUPVAL  R0 U2        ; R0 := U2
+152 [-]: GETUPVAL  R0 U0        ; R0 := U0
+153 [-]: SETTABLE  R14 K11 R15  ; R14["PressedCallback"] := R15
+154 [-]: MOVE      R15 R1       ; R15 := R1
+155 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+156 [-]: GETUPVAL  R12 U2       ; R12 := U2
+157 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["mContextMenu"]
+158 [-]: SELF      R12 R12 K8   ; R13 := R12; R12 := R12["0xA77DA8EE"]
+159 [-]: NEWTABLE  R14 0 2      ; R14 := {}
+160 [-]: SETTABLE  R14 K9 K32   ; R14["Name"] := "/Lotus/Language/Menu/SocialOverlay_ReportPlayer"
+161 [-]: CLOSURE   R15 6        ; R15 := closure(Function #32.7)
+162 [-]: GETUPVAL  R0 U9        ; R0 := U9
+163 [-]: SETTABLE  R14 K11 R15  ; R14["PressedCallback"] := R15
+164 [-]: MOVE      R15 R1       ; R15 := R1
+165 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+166 [-]: LOADK     R12 K33      ; R12 := ""
+167 [-]: GETUPVAL  R13 U7       ; R13 := U7
+168 [-]: SELF      R13 R13 K34  ; R14 := R13; R13 := R13["0xF075C8EC"]
+169 [-]: GETUPVAL  R15 U0       ; R15 := U0
+170 [-]: GETTABLE  R15 R15 K0   ; R15 := R15["User"]
+171 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+172 [-]: TEST      R13 0        ; if not R13 then PC := 176
+173 [-]: JMP       176          ; PC := 176
+174 [-]: LOADK     R12 K35      ; R12 := "/Lotus/Language/Menu/Chat_ContextMenu_Listen"
+175 [-]: JMP       177          ; PC := 177
+176 [-]: LOADK     R12 K36      ; R12 := "/Lotus/Language/Menu/Chat_ContextMenu_Ignore"
+177 [-]: GETUPVAL  R13 U2       ; R13 := U2
+178 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mContextMenu"]
+179 [-]: SELF      R13 R13 K8   ; R14 := R13; R13 := R13["0xA77DA8EE"]
+180 [-]: NEWTABLE  R15 0 2      ; R15 := {}
+181 [-]: SETTABLE  R15 K9 R12   ; R15["Name"] := R12
+182 [-]: CLOSURE   R16 7        ; R16 := closure(Function #32.8)
+183 [-]: GETUPVAL  R0 U10       ; R0 := U10
+184 [-]: SETTABLE  R15 K11 R16  ; R15["PressedCallback"] := R16
+185 [-]: MOVE      R16 R1       ; R16 := R1
+186 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+187 [-]: GETUPVAL  R13 U2       ; R13 := U2
+188 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mContextMenu"]
+189 [-]: SELF      R13 R13 K37  ; R14 := R13; R13 := R13["0xC51A5C9D"]
+190 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+191 [-]: LT        0 K3 R13     ; if 0 >= R13 then PC := 199
+192 [-]: JMP       199          ; PC := 199
+193 [-]: GETUPVAL  R13 U2       ; R13 := U2
+194 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mContextMenu"]
+195 [-]: SELF      R13 R13 K38  ; R14 := R13; R13 := R13["0x7CC73200"]
+196 [-]: MOVE      R15 R1       ; R15 := R1
+197 [-]: MOVE      R16 R2       ; R16 := R2
+198 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+199 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35.1:
+; Function #32.1:
 ;
 ; Name:            
-; Defined at line: 377
+; Defined at line: 345
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1755,10 +1617,10 @@ code size: 3
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35.2:
+; Function #32.2:
 ;
 ; Name:            
-; Defined at line: 381
+; Defined at line: 349
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1769,10 +1631,10 @@ code size: 3
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35.3:
+; Function #32.3:
 ;
 ; Name:            
-; Defined at line: 385
+; Defined at line: 353
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1785,10 +1647,27 @@ code size: 3
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35.4:
+; Function #32.4:
 ;
 ; Name:            
-; Defined at line: 389
+; Defined at line: 357
+; #Upvalues:       2
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0x5FBAC3D"]
+  3 [-]: GETUPVAL  R1 U1        ; R1 := U1
+  4 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["User"]
+  5 [-]: CALL      R0 2 1       ; R0(R1)
+  6 [-]: RETURN    R0 1         ; return 
+
+
+; Function #32.5:
+;
+; Name:            
+; Defined at line: 373
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1799,24 +1678,10 @@ code size: 3
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35.5:
+; Function #32.6:
 ;
 ; Name:            
-; Defined at line: 405
-; #Upvalues:       1
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  2
-
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: CALL      R0 1 1       ; R0()
-  3 [-]: RETURN    R0 1         ; return 
-
-
-; Function #35.6:
-;
-; Name:            
-; Defined at line: 410
+; Defined at line: 378
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1830,10 +1695,10 @@ code size: 3
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35.7:
+; Function #32.7:
 ;
 ; Name:            
-; Defined at line: 413
+; Defined at line: 381
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1845,10 +1710,10 @@ code size: 3
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35.8:
+; Function #32.8:
 ;
 ; Name:            
-; Defined at line: 422
+; Defined at line: 390
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1859,10 +1724,10 @@ code size: 3
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #36:
+; Function #33:
 ;
 ; Name:            
-; Defined at line: 429
+; Defined at line: 397
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1966,10 +1831,10 @@ code size: 3
  96 [-]: RETURN    R0 1         ; return 
 
 
-; Function #37:
+; Function #34:
 ;
 ; Name:            
-; Defined at line: 455
+; Defined at line: 423
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1980,10 +1845,10 @@ code size: 3
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #38:
+; Function #35:
 ;
 ; Name:            
-; Defined at line: 459
+; Defined at line: 427
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

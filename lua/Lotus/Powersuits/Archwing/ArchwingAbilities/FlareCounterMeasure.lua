@@ -5,10 +5,10 @@ code size: 52
 code size: 14
 code size: 197
 code size: 1
-code size: 18
+code size: 15
 code size: 18
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Archwing\ArchwingAbilities\FlareCounterMeasure.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Archwing\ArchwingAbilities\FlareCounterMeasure.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -469,32 +469,29 @@ code size: 18
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  6
 
-  1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x1009A31B"]
+  1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x1498C3B6"]
   2 [-]: LOADK     R4 K1        ; R4 := 1
   3 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  4 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x1498C3B6"]
-  5 [-]: LOADK     R5 K1        ; R5 := 1
-  6 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-  7 [-]: GETGLOBAL R4 K3        ; R4 := life
-  8 [-]: GETTABLE  R4 R4 R3     ; R4 := R4[R3]
-  9 [-]: LT        0 K4 R4      ; if 0 >= R4 then PC := 18
- 10 [-]: JMP       18           ; PC := 18
- 11 [-]: GETGLOBAL R5 K5        ; R5 := 0x201191EA
- 12 [-]: LOADK     R6 K4        ; R6 := 0
- 13 [-]: CALL      R5 2 1       ; R5(R6)
- 14 [-]: GETGLOBAL R5 K6        ; R5 := 0x4CDEF9FF
- 15 [-]: CALL      R5 1 2       ; R5 := R5()
- 16 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
- 17 [-]: JMP       9            ; PC := 9
- 18 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETGLOBAL R3 K2        ; R3 := life
+  5 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
+  6 [-]: LT        0 K3 R3      ; if 0 >= R3 then PC := 15
+  7 [-]: JMP       15           ; PC := 15
+  8 [-]: GETGLOBAL R4 K4        ; R4 := 0x201191EA
+  9 [-]: LOADK     R5 K3        ; R5 := 0
+ 10 [-]: CALL      R4 2 1       ; R4(R5)
+ 11 [-]: GETGLOBAL R4 K5        ; R4 := 0x4CDEF9FF
+ 12 [-]: CALL      R4 1 2       ; R4 := R4()
+ 13 [-]: SUB       R3 R3 R4     ; R3 := R3 - R4
+ 14 [-]: JMP       6            ; PC := 6
+ 15 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 157
+; Defined at line: 156
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

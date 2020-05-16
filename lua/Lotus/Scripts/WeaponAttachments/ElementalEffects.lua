@@ -1,100 +1,33 @@
-code size: 79
+code size: 12
 code size: 155
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\ElementalEffects.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\ElementalEffects.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  19
+; Max Stack Size:  3
 
-  1 [-]: NEWTABLE  R0 13 0      ; R0 := {}
-  2 [-]: LOADK     R1 K0        ; R1 := "DT_IMPACT"
-  3 [-]: LOADK     R2 K1        ; R2 := "DT_PUNCTURE"
-  4 [-]: LOADK     R3 K2        ; R3 := "DT_SLASH"
-  5 [-]: LOADK     R4 K3        ; R4 := "DT_FIRE"
-  6 [-]: LOADK     R5 K4        ; R5 := "DT_FREEZE"
-  7 [-]: LOADK     R6 K5        ; R6 := "DT_ELECTRICITY"
-  8 [-]: LOADK     R7 K6        ; R7 := "DT_POISON"
-  9 [-]: LOADK     R8 K7        ; R8 := "DT_EXPLOSION"
- 10 [-]: LOADK     R9 K8        ; R9 := "DT_RADIATION"
- 11 [-]: LOADK     R10 K9       ; R10 := "DT_GAS"
- 12 [-]: LOADK     R11 K10      ; R11 := "DT_MAGNETIC"
- 13 [-]: LOADK     R12 K11      ; R12 := "DT_VIRAL"
- 14 [-]: LOADK     R13 K12      ; R13 := "DT_CORROSIVE"
- 15 [-]: SETLIST   R0 13 1      ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 13
- 16 [-]: NEWTABLE  R1 12 0      ; R1 := {}
- 17 [-]: GETGLOBAL R2 K13       ; R2 := 0xB5A59043
- 18 [-]: CALL      R2 1 2       ; R2 := R2()
- 19 [-]: GETGLOBAL R3 K13       ; R3 := 0xB5A59043
- 20 [-]: CALL      R3 1 2       ; R3 := R3()
- 21 [-]: GETGLOBAL R4 K13       ; R4 := 0xB5A59043
- 22 [-]: CALL      R4 1 2       ; R4 := R4()
- 23 [-]: GETGLOBAL R5 K13       ; R5 := 0xB5A59043
- 24 [-]: LOADK     R6 K14       ; R6 := 255
- 25 [-]: LOADK     R7 K15       ; R7 := 166
- 26 [-]: LOADK     R8 K16       ; R8 := 39
- 27 [-]: LOADK     R9 K14       ; R9 := 255
- 28 [-]: CALL      R5 5 2       ; R5 := R5(R6,R7,R8,R9)
- 29 [-]: GETGLOBAL R6 K13       ; R6 := 0xB5A59043
- 30 [-]: CALL      R6 1 2       ; R6 := R6()
- 31 [-]: GETGLOBAL R7 K13       ; R7 := 0xB5A59043
- 32 [-]: LOADK     R8 K17       ; R8 := 80
- 33 [-]: LOADK     R9 K18       ; R9 := 86
- 34 [-]: LOADK     R10 K14      ; R10 := 255
- 35 [-]: LOADK     R11 K14      ; R11 := 255
- 36 [-]: CALL      R7 5 2       ; R7 := R7(R8,R9,R10,R11)
- 37 [-]: GETGLOBAL R8 K13       ; R8 := 0xB5A59043
- 38 [-]: CALL      R8 1 2       ; R8 := R8()
- 39 [-]: GETGLOBAL R9 K13       ; R9 := 0xB5A59043
- 40 [-]: LOADK     R10 K14      ; R10 := 255
- 41 [-]: LOADK     R11 K15      ; R11 := 166
- 42 [-]: LOADK     R12 K16      ; R12 := 39
- 43 [-]: LOADK     R13 K14      ; R13 := 255
- 44 [-]: CALL      R9 5 2       ; R9 := R9(R10,R11,R12,R13)
- 45 [-]: GETGLOBAL R10 K13      ; R10 := 0xB5A59043
- 46 [-]: LOADK     R11 K19      ; R11 := 96
- 47 [-]: LOADK     R12 K20      ; R12 := 193
- 48 [-]: LOADK     R13 K21      ; R13 := 180
- 49 [-]: LOADK     R14 K14      ; R14 := 255
- 50 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
- 51 [-]: GETGLOBAL R11 K13      ; R11 := 0xB5A59043
- 52 [-]: CALL      R11 1 2      ; R11 := R11()
- 53 [-]: GETGLOBAL R12 K13      ; R12 := 0xB5A59043
- 54 [-]: LOADK     R13 K19      ; R13 := 96
- 55 [-]: LOADK     R14 K15      ; R14 := 166
- 56 [-]: LOADK     R15 K22      ; R15 := 185
- 57 [-]: LOADK     R16 K14      ; R16 := 255
- 58 [-]: CALL      R12 5 2      ; R12 := R12(R13,R14,R15,R16)
- 59 [-]: GETGLOBAL R13 K13      ; R13 := 0xB5A59043
- 60 [-]: CALL      R13 1 2      ; R13 := R13()
- 61 [-]: GETGLOBAL R14 K13      ; R14 := 0xB5A59043
- 62 [-]: LOADK     R15 K22      ; R15 := 185
- 63 [-]: LOADK     R16 K14      ; R16 := 255
- 64 [-]: LOADK     R17 K23      ; R17 := 46
- 65 [-]: LOADK     R18 K14      ; R18 := 255
- 66 [-]: CALL      R14 5 0      ; R14,... := R14(R15,R16,R17,R18)
- 67 [-]: SETLIST   R1 0 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 0
- 68 [-]: GETGLOBAL R2 K24       ; R2 := 0x2C00D429
- 69 [-]: LOADK     R3 K25       ; R3 := "/Lotus/Powersuits/Harlequin/IllusionMirrorAvatar"
- 70 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 71 [-]: GETGLOBAL R3 K26       ; R3 := 0x329BDC44
- 72 [-]: LOADK     R4 K27       ; R4 := "Lotus.Scripts.Effects.EffectsColorUtilities"
- 73 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 74 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
- 75 [-]: MOVE      R0 R2        ; R0 := R2
- 76 [-]: MOVE      R0 R3        ; R0 := R3
- 77 [-]: SETGLOBAL R4 K28       ; ElementFxLights := R4
- 78 [-]: SETGLOBAL R4 K29       ; 0x9F051D7B := R4
- 79 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x2C00D429
+  2 [-]: LOADK     R1 K1        ; R1 := "/Lotus/Powersuits/Harlequin/IllusionMirrorAvatar"
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: GETGLOBAL R1 K2        ; R1 := 0x329BDC44
+  5 [-]: LOADK     R2 K3        ; R2 := "Lotus.Scripts.Effects.EffectsColorUtilities"
+  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  7 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
+  8 [-]: MOVE      R0 R0        ; R0 := R0
+  9 [-]: MOVE      R0 R1        ; R0 := R1
+ 10 [-]: SETGLOBAL R2 K4        ; ElementFxLights := R2
+ 11 [-]: SETGLOBAL R2 K5        ; 0x9F051D7B := R2
+ 12 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 39
+; Defined at line: 8
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

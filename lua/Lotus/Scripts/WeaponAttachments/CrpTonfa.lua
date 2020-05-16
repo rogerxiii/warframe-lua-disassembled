@@ -1,49 +1,46 @@
-code size: 26
+code size: 23
 code size: 282
 code size: 48
-code size: 59
+code size: 55
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\CrpTonfa.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\CrpTonfa.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  7
+; Max Stack Size:  6
 
   1 [-]: LOADK     R0 K0        ; R0 := 3.5
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0xEC274B1A
-  3 [-]: LOADK     R2 K2        ; R2 := "AlphaAtten"
+  3 [-]: LOADK     R2 K2        ; R2 := "UnlitAtten"
   4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: GETGLOBAL R2 K1        ; R2 := 0xEC274B1A
-  6 [-]: LOADK     R3 K3        ; R3 := "UnlitAtten"
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: GETGLOBAL R3 K4        ; R3 := 0x221C9700
-  9 [-]: LOADK     R4 K5        ; R4 := 0
- 10 [-]: LOADK     R5 K6        ; R5 := -0.30000001192093
- 11 [-]: LOADK     R6 K7        ; R6 := -0.34999999403954
- 12 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
- 13 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
- 14 [-]: MOVE      R0 R2        ; R0 := R2
- 15 [-]: MOVE      R0 R0        ; R0 := R0
- 16 [-]: MOVE      R0 R3        ; R0 := R3
- 17 [-]: SETGLOBAL R4 K8        ; ConstantGlow := R4
- 18 [-]: SETGLOBAL R4 K9        ; 0x7535ECC6 := R4
- 19 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 20 [-]: MOVE      R0 R0        ; R0 := R0
- 21 [-]: SETGLOBAL R4 K10       ; WeaponAttack := R4
- 22 [-]: SETGLOBAL R4 K11       ; 0x2D52CE93 := R4
- 23 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 24 [-]: SETGLOBAL R4 K12       ; OnDamageDone := R4
- 25 [-]: SETGLOBAL R4 K13       ; 0x6873074 := R4
- 26 [-]: RETURN    R0 1         ; return 
+  5 [-]: GETGLOBAL R2 K3        ; R2 := 0x221C9700
+  6 [-]: LOADK     R3 K4        ; R3 := 0
+  7 [-]: LOADK     R4 K5        ; R4 := -0.30000001192093
+  8 [-]: LOADK     R5 K6        ; R5 := -0.34999999403954
+  9 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
+ 10 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
+ 11 [-]: MOVE      R0 R1        ; R0 := R1
+ 12 [-]: MOVE      R0 R0        ; R0 := R0
+ 13 [-]: MOVE      R0 R2        ; R0 := R2
+ 14 [-]: SETGLOBAL R3 K7        ; ConstantGlow := R3
+ 15 [-]: SETGLOBAL R3 K8        ; 0x7535ECC6 := R3
+ 16 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
+ 17 [-]: MOVE      R0 R0        ; R0 := R0
+ 18 [-]: SETGLOBAL R3 K9        ; WeaponAttack := R3
+ 19 [-]: SETGLOBAL R3 K10       ; 0x2D52CE93 := R3
+ 20 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+ 21 [-]: SETGLOBAL R3 K11       ; OnDamageDone := R3
+ 22 [-]: SETGLOBAL R3 K12       ; 0x6873074 := R3
+ 23 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 21
+; Defined at line: 20
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -336,7 +333,7 @@ code size: 59
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 129
+; Defined at line: 128
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -395,28 +392,28 @@ code size: 59
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 143
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  12
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
   2 [-]: MOVE      R4 R2        ; R4 := R2
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 59
-  5 [-]: JMP       59           ; PC := 59
+  4 [-]: TEST      R3 1         ; if R3 then PC := 55
+  5 [-]: JMP       55           ; PC := 55
   6 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
   7 [-]: MOVE      R4 R0        ; R4 := R0
   8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: TEST      R3 1         ; if R3 then PC := 59
- 10 [-]: JMP       59           ; PC := 59
+  9 [-]: TEST      R3 1         ; if R3 then PC := 55
+ 10 [-]: JMP       55           ; PC := 55
  11 [-]: SELF      R3 R1 K1     ; R4 := R1; R3 := R1["0xF79D67CF"]
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: GETGLOBAL R4 K2        ; R4 := Engine
  14 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["DHT_MELEE"]
- 15 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 59
- 16 [-]: JMP       59           ; PC := 59
+ 15 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 55
+ 16 [-]: JMP       55           ; PC := 55
  17 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2["0xA3F6069B"]
  18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  19 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0x16EEC1AD"]
@@ -432,33 +429,29 @@ code size: 59
  29 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
  30 [-]: MOVE      R6 R3        ; R6 := R3
  31 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 32 [-]: TEST      R5 1         ; if R5 then PC := 59
- 33 [-]: JMP       59           ; PC := 59
+ 32 [-]: TEST      R5 1         ; if R5 then PC := 55
+ 33 [-]: JMP       55           ; PC := 55
  34 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
  35 [-]: MOVE      R6 R4        ; R6 := R4
  36 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 37 [-]: TEST      R5 1         ; if R5 then PC := 59
- 38 [-]: JMP       59           ; PC := 59
- 39 [-]: GETGLOBAL R5 K10       ; R5 := 0x8C4A6742
- 40 [-]: LOADK     R6 K11       ; R6 := 0
- 41 [-]: LOADK     R7 K12       ; R7 := 0.85000002384186
- 42 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 43 [-]: SELF      R6 R2 K13    ; R7 := R2; R6 := R2["0xAB436EF2"]
- 44 [-]: GETGLOBAL R8 K14       ; R8 := beamType
- 45 [-]: MOVE      R9 R3        ; R9 := R3
- 46 [-]: GETGLOBAL R10 K15      ; R10 := ZERO_VECTOR
- 47 [-]: GETGLOBAL R11 K16      ; R11 := ZERO_ROTATION
- 48 [-]: MOVE      R12 R0       ; R12 := R0
- 49 [-]: CALL      R6 7 2       ; R6 := R6(R7,R8,R9,R10,R11,R12)
- 50 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 51 [-]: MOVE      R8 R6        ; R8 := R6
- 52 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 53 [-]: TEST      R7 1         ; if R7 then PC := 59
- 54 [-]: JMP       59           ; PC := 59
- 55 [-]: SELF      R7 R6 K17    ; R8 := R6; R7 := R6["0xE7ACF503"]
- 56 [-]: MOVE      R9 R4        ; R9 := R4
- 57 [-]: GETGLOBAL R10 K18      ; R10 := EMPTY_SYMBOL
- 58 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 59 [-]: RETURN    R0 1         ; return 
+ 37 [-]: TEST      R5 1         ; if R5 then PC := 55
+ 38 [-]: JMP       55           ; PC := 55
+ 39 [-]: SELF      R5 R2 K10    ; R6 := R2; R5 := R2["0xAB436EF2"]
+ 40 [-]: GETGLOBAL R7 K11       ; R7 := beamType
+ 41 [-]: MOVE      R8 R3        ; R8 := R3
+ 42 [-]: GETGLOBAL R9 K12       ; R9 := ZERO_VECTOR
+ 43 [-]: GETGLOBAL R10 K13      ; R10 := ZERO_ROTATION
+ 44 [-]: MOVE      R11 R0       ; R11 := R0
+ 45 [-]: CALL      R5 7 2       ; R5 := R5(R6,R7,R8,R9,R10,R11)
+ 46 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 47 [-]: MOVE      R7 R5        ; R7 := R5
+ 48 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 49 [-]: TEST      R6 1         ; if R6 then PC := 55
+ 50 [-]: JMP       55           ; PC := 55
+ 51 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5["0xE7ACF503"]
+ 52 [-]: MOVE      R8 R4        ; R8 := R4
+ 53 [-]: GETGLOBAL R9 K15       ; R9 := EMPTY_SYMBOL
+ 54 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 55 [-]: RETURN    R0 1         ; return 
 
 

@@ -1,7 +1,7 @@
 code size: 4
-code size: 92
+code size: 94
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Upgrades\CosmeticEnhancers\Utility\RadialHeal.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Upgrades\CosmeticEnhancers\Utility\RadialHeal.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -23,99 +23,101 @@ code size: 92
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  21
+; Max Stack Size:  22
 
   1 [-]: GETGLOBAL R5 K0        ; R5 := gRegion
   2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5["0xA559F558"]
   3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 0         ; if not R5 then PC := 84
-  5 [-]: JMP       84           ; PC := 84
+  4 [-]: TEST      R5 0         ; if not R5 then PC := 86
+  5 [-]: JMP       86           ; PC := 86
   6 [-]: GETGLOBAL R5 K0        ; R5 := gRegion
   7 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x2F6A773B"]
   8 [-]: SELF      R7 R0 K3     ; R8 := R0; R7 := R0["0x86E626FB"]
   9 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  10 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
- 11 [-]: GETGLOBAL R6 K4        ; R6 := 0x63B09107
- 12 [-]: MOVE      R7 R5        ; R7 := R5
- 13 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
- 14 [-]: JMP       82           ; PC := 82
- 15 [-]: SELF      R11 R0 K5    ; R12 := R0; R11 := R0["0x6B4CBCD7"]
- 16 [-]: MOVE      R13 R10      ; R13 := R10
- 17 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 18 [-]: TEST      R11 0        ; if not R11 then PC := 82
- 19 [-]: JMP       82           ; PC := 82
- 20 [-]: SELF      R11 R0 K6    ; R12 := R0; R11 := R0["0x83D9304A"]
- 21 [-]: MOVE      R13 R10      ; R13 := R10
- 22 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
- 23 [-]: GETGLOBAL R12 K7       ; R12 := healRadius
- 24 [-]: GETTABLE  R12 R12 R2   ; R12 := R12[R2]
- 25 [-]: LT        0 R11 R12    ; if R11 >= R12 then PC := 82
- 26 [-]: JMP       82           ; PC := 82
- 27 [-]: LOADK     R11 K8       ; R11 := 0
- 28 [-]: GETGLOBAL R12 K9       ; R12 := isEnergy
- 29 [-]: TEST      R12 0        ; if not R12 then PC := 57
- 30 [-]: JMP       57           ; PC := 57
- 31 [-]: SELF      R12 R10 K10  ; R13 := R10; R12 := R10["0x8DB5D01F"]
- 32 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 33 [-]: SELF      R12 R12 K11  ; R13 := R12; R12 := R12["0x6978AC59"]
- 34 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 35 [-]: GETGLOBAL R13 K12      ; R13 := 0x400E7765
- 36 [-]: MOVE      R14 R12      ; R14 := R12
- 37 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 38 [-]: TEST      R13 1        ; if R13 then PC := 74
- 39 [-]: JMP       74           ; PC := 74
- 40 [-]: SELF      R13 R12 K13  ; R14 := R12; R13 := R12["0xFF54E717"]
- 41 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 42 [-]: SELF      R14 R12 K14  ; R15 := R12; R14 := R12["0x66ACFB34"]
+ 11 [-]: SELF      R6 R0 K3     ; R7 := R0; R6 := R0["0x86E626FB"]
+ 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 13 [-]: GETGLOBAL R7 K4        ; R7 := 0x63B09107
+ 14 [-]: MOVE      R8 R5        ; R8 := R5
+ 15 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
+ 16 [-]: JMP       84           ; PC := 84
+ 17 [-]: SELF      R12 R0 K5    ; R13 := R0; R12 := R0["0x83D9304A"]
+ 18 [-]: MOVE      R14 R11      ; R14 := R11
+ 19 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+ 20 [-]: GETGLOBAL R13 K6       ; R13 := healRadius
+ 21 [-]: GETTABLE  R13 R13 R2   ; R13 := R13[R2]
+ 22 [-]: LT        0 R12 R13    ; if R12 >= R13 then PC := 84
+ 23 [-]: JMP       84           ; PC := 84
+ 24 [-]: SELF      R12 R0 K7    ; R13 := R0; R12 := R0["0xCEE55F77"]
+ 25 [-]: MOVE      R14 R11      ; R14 := R11
+ 26 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+ 27 [-]: TEST      R12 0        ; if not R12 then PC := 84
+ 28 [-]: JMP       84           ; PC := 84
+ 29 [-]: LOADK     R12 K8       ; R12 := 0
+ 30 [-]: GETGLOBAL R13 K9       ; R13 := isEnergy
+ 31 [-]: TEST      R13 0        ; if not R13 then PC := 59
+ 32 [-]: JMP       59           ; PC := 59
+ 33 [-]: SELF      R13 R11 K10  ; R14 := R11; R13 := R11["0x8DB5D01F"]
+ 34 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 35 [-]: SELF      R13 R13 K11  ; R14 := R13; R13 := R13["0x6978AC59"]
+ 36 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 37 [-]: GETGLOBAL R14 K12      ; R14 := 0x400E7765
+ 38 [-]: MOVE      R15 R13      ; R15 := R13
+ 39 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 40 [-]: TEST      R14 1        ; if R14 then PC := 76
+ 41 [-]: JMP       76           ; PC := 76
+ 42 [-]: SELF      R14 R13 K13  ; R15 := R13; R14 := R13["0xFF54E717"]
  43 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 44 [-]: GETGLOBAL R15 K15      ; R15 := math
- 45 [-]: GETTABLE  R15 R15 K16  ; R15 := R15["0x65F9712A"]
- 46 [-]: SUB       R16 R13 R14  ; R16 := R13 - R14
- 47 [-]: GETGLOBAL R17 K17      ; R17 := healAmount
- 48 [-]: GETTABLE  R17 R17 R2   ; R17 := R17[R2]
- 49 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 50 [-]: MOVE      R11 R15      ; R11 := R15
- 51 [-]: LT        0 K8 R11     ; if 0 >= R11 then PC := 74
- 52 [-]: JMP       74           ; PC := 74
- 53 [-]: SELF      R15 R12 K18  ; R16 := R12; R15 := R12["0xEBCD1EE0"]
- 54 [-]: MOVE      R17 R11      ; R17 := R11
- 55 [-]: CALL      R15 3 1      ; R15(R16,R17)
- 56 [-]: JMP       74           ; PC := 74
- 57 [-]: GETGLOBAL R15 K15      ; R15 := math
- 58 [-]: GETTABLE  R15 R15 K16  ; R15 := R15["0x65F9712A"]
- 59 [-]: SELF      R16 R10 K19  ; R17 := R10; R16 := R10["0x385BD2FE"]
- 60 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 61 [-]: SELF      R17 R10 K20  ; R18 := R10; R17 := R10["0x2F79FBD3"]
+ 44 [-]: SELF      R15 R13 K14  ; R16 := R13; R15 := R13["0x66ACFB34"]
+ 45 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 46 [-]: GETGLOBAL R16 K15      ; R16 := math
+ 47 [-]: GETTABLE  R16 R16 K16  ; R16 := R16["0x65F9712A"]
+ 48 [-]: SUB       R17 R14 R15  ; R17 := R14 - R15
+ 49 [-]: GETGLOBAL R18 K17      ; R18 := healAmount
+ 50 [-]: GETTABLE  R18 R18 R2   ; R18 := R18[R2]
+ 51 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+ 52 [-]: MOVE      R12 R16      ; R12 := R16
+ 53 [-]: LT        0 K8 R12     ; if 0 >= R12 then PC := 76
+ 54 [-]: JMP       76           ; PC := 76
+ 55 [-]: SELF      R16 R13 K18  ; R17 := R13; R16 := R13["0xEBCD1EE0"]
+ 56 [-]: MOVE      R18 R12      ; R18 := R12
+ 57 [-]: CALL      R16 3 1      ; R16(R17,R18)
+ 58 [-]: JMP       76           ; PC := 76
+ 59 [-]: GETGLOBAL R16 K15      ; R16 := math
+ 60 [-]: GETTABLE  R16 R16 K16  ; R16 := R16["0x65F9712A"]
+ 61 [-]: SELF      R17 R11 K19  ; R18 := R11; R17 := R11["0x385BD2FE"]
  62 [-]: CALL      R17 2 2      ; R17 := R17(R18)
- 63 [-]: SUB       R16 R16 R17  ; R16 := R16 - R17
- 64 [-]: GETGLOBAL R17 K17      ; R17 := healAmount
- 65 [-]: GETTABLE  R17 R17 R2   ; R17 := R17[R2]
- 66 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 67 [-]: MOVE      R11 R15      ; R11 := R15
- 68 [-]: LT        0 K8 R11     ; if 0 >= R11 then PC := 74
- 69 [-]: JMP       74           ; PC := 74
- 70 [-]: SELF      R15 R0 K21   ; R16 := R0; R15 := R0["0xD53BF424"]
- 71 [-]: MOVE      R17 R10      ; R17 := R10
- 72 [-]: MOVE      R18 R11      ; R18 := R11
- 73 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
- 74 [-]: LT        0 K8 R11     ; if 0 >= R11 then PC := 82
- 75 [-]: JMP       82           ; PC := 82
- 76 [-]: SELF      R15 R10 K10  ; R16 := R10; R15 := R10["0x8DB5D01F"]
- 77 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 78 [-]: SELF      R15 R15 K22  ; R16 := R15; R15 := R15["0x29EB5722"]
- 79 [-]: GETGLOBAL R17 K23      ; R17 := healLoc
- 80 [-]: MOVE      R18 R11      ; R18 := R11
- 81 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
- 82 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 15; R8 := R9 end
- 83 [-]: JMP       15           ; PC := 15
- 84 [-]: GETGLOBAL R15 K0       ; R15 := gRegion
- 85 [-]: SELF      R15 R15 K24  ; R16 := R15; R15 := R15["0xBDD34CC6"]
- 86 [-]: GETGLOBAL R17 K25      ; R17 := burstEffect
- 87 [-]: SELF      R18 R0 K26   ; R19 := R0; R18 := R0["0x6DA72501"]
- 88 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 89 [-]: GETGLOBAL R19 K27      ; R19 := ZERO_ROTATION
- 90 [-]: MOVE      R20 R0       ; R20 := R0
- 91 [-]: CALL      R15 6 1      ; R15(R16,R17,R18,R19,R20)
- 92 [-]: RETURN    R0 1         ; return 
+ 63 [-]: SELF      R18 R11 K20  ; R19 := R11; R18 := R11["0x2F79FBD3"]
+ 64 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 65 [-]: SUB       R17 R17 R18  ; R17 := R17 - R18
+ 66 [-]: GETGLOBAL R18 K17      ; R18 := healAmount
+ 67 [-]: GETTABLE  R18 R18 R2   ; R18 := R18[R2]
+ 68 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+ 69 [-]: MOVE      R12 R16      ; R12 := R16
+ 70 [-]: LT        0 K8 R12     ; if 0 >= R12 then PC := 76
+ 71 [-]: JMP       76           ; PC := 76
+ 72 [-]: SELF      R16 R0 K21   ; R17 := R0; R16 := R0["0xD53BF424"]
+ 73 [-]: MOVE      R18 R11      ; R18 := R11
+ 74 [-]: MOVE      R19 R12      ; R19 := R12
+ 75 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+ 76 [-]: LT        0 K8 R12     ; if 0 >= R12 then PC := 84
+ 77 [-]: JMP       84           ; PC := 84
+ 78 [-]: SELF      R16 R11 K10  ; R17 := R11; R16 := R11["0x8DB5D01F"]
+ 79 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+ 80 [-]: SELF      R16 R16 K22  ; R17 := R16; R16 := R16["0x29EB5722"]
+ 81 [-]: GETGLOBAL R18 K23      ; R18 := healLoc
+ 82 [-]: MOVE      R19 R12      ; R19 := R12
+ 83 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+ 84 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 17; R9 := R10 end
+ 85 [-]: JMP       17           ; PC := 17
+ 86 [-]: GETGLOBAL R16 K0       ; R16 := gRegion
+ 87 [-]: SELF      R16 R16 K24  ; R17 := R16; R16 := R16["0xBDD34CC6"]
+ 88 [-]: GETGLOBAL R18 K25      ; R18 := burstEffect
+ 89 [-]: SELF      R19 R0 K26   ; R20 := R0; R19 := R0["0x6DA72501"]
+ 90 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+ 91 [-]: GETGLOBAL R20 K27      ; R20 := ZERO_ROTATION
+ 92 [-]: MOVE      R21 R0       ; R21 := R0
+ 93 [-]: CALL      R16 6 1      ; R16(R17,R18,R19,R20,R21)
+ 94 [-]: RETURN    R0 1         ; return 
 
 

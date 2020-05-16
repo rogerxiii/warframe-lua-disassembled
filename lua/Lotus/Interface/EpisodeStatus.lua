@@ -1,4 +1,4 @@
-code size: 99
+code size: 100
 code size: 9
 code size: 1
 code size: 67
@@ -12,7 +12,7 @@ code size: 3
 code size: 68
 code size: 11
 code size: 6
-code size: 11
+code size: 16
 code size: 20
 code size: 15
 code size: 24
@@ -21,7 +21,7 @@ code size: 1
 code size: 3
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\EpisodeStatus.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\EpisodeStatus.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -102,33 +102,34 @@ code size: 3
  70 [-]: SETGLOBAL R13 K28      ; Unfocused := R13
  71 [-]: SETGLOBAL R13 K29      ; 0x64DA107D := R13
  72 [-]: CLOSURE   R13 13       ; R13 := closure(Function #14)
- 73 [-]: SETGLOBAL R13 K30      ; Pressed := R13
- 74 [-]: SETGLOBAL R13 K31      ; 0xBB68C6EB := R13
- 75 [-]: CLOSURE   R13 14       ; R13 := closure(Function #15)
- 76 [-]: MOVE      R0 R1        ; R0 := R1
- 77 [-]: MOVE      R0 R4        ; R0 := R4
- 78 [-]: SETGLOBAL R13 K32      ; NemesisBtnFocused := R13
- 79 [-]: SETGLOBAL R13 K33      ; 0x4D8909D7 := R13
- 80 [-]: CLOSURE   R13 15       ; R13 := closure(Function #16)
- 81 [-]: MOVE      R0 R1        ; R0 := R1
- 82 [-]: MOVE      R0 R4        ; R0 := R4
- 83 [-]: SETGLOBAL R13 K34      ; NemesisBtnUnfocused := R13
- 84 [-]: SETGLOBAL R13 K35      ; 0xB1BFA241 := R13
- 85 [-]: CLOSURE   R13 16       ; R13 := closure(Function #17)
- 86 [-]: MOVE      R0 R9        ; R0 := R9
- 87 [-]: SETGLOBAL R13 K36      ; NemesisButtonPressed := R13
- 88 [-]: SETGLOBAL R13 K37      ; 0x7375AFFF := R13
- 89 [-]: CLOSURE   R13 17       ; R13 := closure(Function #18)
- 90 [-]: SETGLOBAL R13 K38      ; Released := R13
- 91 [-]: SETGLOBAL R13 K39      ; 0x44233F7C := R13
- 92 [-]: CLOSURE   R13 18       ; R13 := closure(Function #19)
- 93 [-]: SETGLOBAL R13 K40      ; SupportsThemes := R13
- 94 [-]: SETGLOBAL R13 K41      ; 0xDBE73B9E := R13
- 95 [-]: CLOSURE   R13 19       ; R13 := closure(Function #20)
- 96 [-]: MOVE      R0 R10       ; R0 := R10
- 97 [-]: SETGLOBAL R13 K42      ; OnStyleChangedCallback := R13
- 98 [-]: SETGLOBAL R13 K43      ; 0x9A764566 := R13
- 99 [-]: RETURN    R0 1         ; return 
+ 73 [-]: MOVE      R0 R2        ; R0 := R2
+ 74 [-]: SETGLOBAL R13 K30      ; Pressed := R13
+ 75 [-]: SETGLOBAL R13 K31      ; 0xBB68C6EB := R13
+ 76 [-]: CLOSURE   R13 14       ; R13 := closure(Function #15)
+ 77 [-]: MOVE      R0 R1        ; R0 := R1
+ 78 [-]: MOVE      R0 R4        ; R0 := R4
+ 79 [-]: SETGLOBAL R13 K32      ; NemesisBtnFocused := R13
+ 80 [-]: SETGLOBAL R13 K33      ; 0x4D8909D7 := R13
+ 81 [-]: CLOSURE   R13 15       ; R13 := closure(Function #16)
+ 82 [-]: MOVE      R0 R1        ; R0 := R1
+ 83 [-]: MOVE      R0 R4        ; R0 := R4
+ 84 [-]: SETGLOBAL R13 K34      ; NemesisBtnUnfocused := R13
+ 85 [-]: SETGLOBAL R13 K35      ; 0xB1BFA241 := R13
+ 86 [-]: CLOSURE   R13 16       ; R13 := closure(Function #17)
+ 87 [-]: MOVE      R0 R9        ; R0 := R9
+ 88 [-]: SETGLOBAL R13 K36      ; NemesisButtonPressed := R13
+ 89 [-]: SETGLOBAL R13 K37      ; 0x7375AFFF := R13
+ 90 [-]: CLOSURE   R13 17       ; R13 := closure(Function #18)
+ 91 [-]: SETGLOBAL R13 K38      ; Released := R13
+ 92 [-]: SETGLOBAL R13 K39      ; 0x44233F7C := R13
+ 93 [-]: CLOSURE   R13 18       ; R13 := closure(Function #19)
+ 94 [-]: SETGLOBAL R13 K40      ; SupportsThemes := R13
+ 95 [-]: SETGLOBAL R13 K41      ; 0xDBE73B9E := R13
+ 96 [-]: CLOSURE   R13 19       ; R13 := closure(Function #20)
+ 97 [-]: MOVE      R0 R10       ; R0 := R10
+ 98 [-]: SETGLOBAL R13 K42      ; OnStyleChangedCallback := R13
+ 99 [-]: SETGLOBAL R13 K43      ; 0x9A764566 := R13
+100 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -879,22 +880,27 @@ code size: 3
 ;
 ; Name:            
 ; Defined at line: 211
-; #Upvalues:       0
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  4
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := gFlashMgr
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xCC01AE7A"]
-  3 [-]: GETGLOBAL R3 K2        ; R3 := episodeChallengesMovie
-  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: TEST      R1 1         ; if R1 then PC := 11
-  6 [-]: JMP       11           ; PC := 11
-  7 [-]: GETGLOBAL R1 K0        ; R1 := gFlashMgr
-  8 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0x24FF386"]
-  9 [-]: GETGLOBAL R3 K2        ; R3 := episodeChallengesMovie
- 10 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 11 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x5B8EB241"]
+  3 [-]: CALL      R1 1 2       ; R1 := R1()
+  4 [-]: TEST      R1 0         ; if not R1 then PC := 16
+  5 [-]: JMP       16           ; PC := 16
+  6 [-]: GETGLOBAL R1 K1        ; R1 := gFlashMgr
+  7 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0xCC01AE7A"]
+  8 [-]: GETGLOBAL R3 K3        ; R3 := episodeChallengesMovie
+  9 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 10 [-]: TEST      R1 1         ; if R1 then PC := 16
+ 11 [-]: JMP       16           ; PC := 16
+ 12 [-]: GETGLOBAL R1 K1        ; R1 := gFlashMgr
+ 13 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1["0x24FF386"]
+ 14 [-]: GETGLOBAL R3 K3        ; R3 := episodeChallengesMovie
+ 15 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 16 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #15:

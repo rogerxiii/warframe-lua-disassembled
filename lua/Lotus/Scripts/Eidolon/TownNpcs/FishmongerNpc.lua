@@ -1,27 +1,29 @@
-code size: 96
+code size: 99
 code size: 18
 code size: 41
 code size: 99
 code size: 15
 code size: 56
 code size: 44
-code size: 61
-code size: 72
+code size: 11
+code size: 62
+code size: 138
 code size: 5
+code size: 4
 code size: 4
 code size: 69
 code size: 65
 code size: 5
 code size: 153
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\TownNpcs\FishmongerNpc.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\TownNpcs\FishmongerNpc.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  18
+; Max Stack Size:  19
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.LotusUtilities"
@@ -92,33 +94,36 @@ code size: 153
  67 [-]: MOVE      R0 R9        ; R0 := R9
  68 [-]: MOVE      R0 R11       ; R0 := R11
  69 [-]: CLOSURE   R17 4        ; R17 := closure(Function #5)
- 70 [-]: MOVE      R0 R12       ; R0 := R12
- 71 [-]: MOVE      R0 R0        ; R0 := R0
- 72 [-]: MOVE      R0 R8        ; R0 := R8
- 73 [-]: MOVE      R0 R11       ; R0 := R11
- 74 [-]: MOVE      R0 R3        ; R0 := R3
- 75 [-]: MOVE      R0 R9        ; R0 := R9
- 76 [-]: MOVE      R0 R13       ; R0 := R13
- 77 [-]: MOVE      R0 R15       ; R0 := R15
- 78 [-]: MOVE      R0 R16       ; R0 := R16
- 79 [-]: MOVE      R0 R1        ; R0 := R1
- 80 [-]: MOVE      R0 R14       ; R0 := R14
- 81 [-]: SETGLOBAL R17 K16      ; OpenDonateScreen := R17
- 82 [-]: SETGLOBAL R17 K17      ; 0xC9AD637B := R17
- 83 [-]: CLOSURE   R17 5        ; R17 := closure(Function #6)
- 84 [-]: MOVE      R0 R0        ; R0 := R0
- 85 [-]: MOVE      R0 R10       ; R0 := R10
- 86 [-]: MOVE      R0 R9        ; R0 := R9
- 87 [-]: MOVE      R0 R13       ; R0 := R13
- 88 [-]: MOVE      R0 R15       ; R0 := R15
- 89 [-]: MOVE      R0 R11       ; R0 := R11
- 90 [-]: MOVE      R0 R3        ; R0 := R3
- 91 [-]: MOVE      R0 R1        ; R0 := R1
- 92 [-]: MOVE      R0 R2        ; R0 := R2
- 93 [-]: MOVE      R0 R14       ; R0 := R14
- 94 [-]: SETGLOBAL R17 K18      ; OpenCutBaitScreen := R17
- 95 [-]: SETGLOBAL R17 K19      ; 0x1E957DB3 := R17
- 96 [-]: RETURN    R0 1         ; return 
+ 70 [-]: MOVE      R0 R9        ; R0 := R9
+ 71 [-]: CLOSURE   R18 5        ; R18 := closure(Function #6)
+ 72 [-]: MOVE      R0 R12       ; R0 := R12
+ 73 [-]: MOVE      R0 R0        ; R0 := R0
+ 74 [-]: MOVE      R0 R8        ; R0 := R8
+ 75 [-]: MOVE      R0 R11       ; R0 := R11
+ 76 [-]: MOVE      R0 R3        ; R0 := R3
+ 77 [-]: MOVE      R0 R9        ; R0 := R9
+ 78 [-]: MOVE      R0 R13       ; R0 := R13
+ 79 [-]: MOVE      R0 R15       ; R0 := R15
+ 80 [-]: MOVE      R0 R16       ; R0 := R16
+ 81 [-]: MOVE      R0 R17       ; R0 := R17
+ 82 [-]: MOVE      R0 R1        ; R0 := R1
+ 83 [-]: MOVE      R0 R14       ; R0 := R14
+ 84 [-]: SETGLOBAL R18 K16      ; OpenDonateScreen := R18
+ 85 [-]: SETGLOBAL R18 K17      ; 0xC9AD637B := R18
+ 86 [-]: CLOSURE   R18 6        ; R18 := closure(Function #7)
+ 87 [-]: MOVE      R0 R0        ; R0 := R0
+ 88 [-]: MOVE      R0 R10       ; R0 := R10
+ 89 [-]: MOVE      R0 R9        ; R0 := R9
+ 90 [-]: MOVE      R0 R13       ; R0 := R13
+ 91 [-]: MOVE      R0 R15       ; R0 := R15
+ 92 [-]: MOVE      R0 R11       ; R0 := R11
+ 93 [-]: MOVE      R0 R3        ; R0 := R3
+ 94 [-]: MOVE      R0 R1        ; R0 := R1
+ 95 [-]: MOVE      R0 R2        ; R0 := R2
+ 96 [-]: MOVE      R0 R14       ; R0 := R14
+ 97 [-]: SETGLOBAL R18 K18      ; OpenCutBaitScreen := R18
+ 98 [-]: SETGLOBAL R18 K19      ; 0x1E957DB3 := R18
+ 99 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -464,7 +469,29 @@ code size: 153
 ;
 ; Name:            
 ; Defined at line: 152
-; #Upvalues:       11
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  5
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: TEST      R1 1         ; if R1 then PC := 11
+  5 [-]: JMP       11           ; PC := 11
+  6 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  7 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x458F27A9"]
+  8 [-]: LOADK     R3 K2        ; R3 := "FishFunctionCancelled"
+  9 [-]: LOADK     R4 K3        ; R4 := ""
+ 10 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 11 [-]: RETURN    R0 1         ; return 
+
+
+; Function #6:
+;
+; Name:            
+; Defined at line: 158
+; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  10
@@ -506,40 +533,41 @@ code size: 153
  35 [-]: GETUPVAL  R1 U2        ; R1 := U2
  36 [-]: GETTABLE  R1 R1 R0     ; R1 := R1[R0]
  37 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 38 [-]: CLOSURE   R3 0         ; R3 := closure(Function #5.1)
+ 38 [-]: CLOSURE   R3 0         ; R3 := closure(Function #6.1)
  39 [-]: GETUPVAL  R0 U3        ; R0 := U3
  40 [-]: GETUPVAL  R0 U4        ; R0 := U4
  41 [-]: GETUPVAL  R0 U5        ; R0 := U5
  42 [-]: GETUPVAL  R0 U6        ; R0 := U6
  43 [-]: GETUPVAL  R0 U7        ; R0 := U7
  44 [-]: GETUPVAL  R0 U8        ; R0 := U8
- 45 [-]: MOVE      R0 R1        ; R0 := R1
- 46 [-]: GETUPVAL  R0 U9        ; R0 := U9
- 47 [-]: SETTABLE  R2 K15 R3    ; R2["DonateFish"] := R3
- 48 [-]: GETUPVAL  R2 U10       ; R2 := U10
- 49 [-]: CALL      R2 1 1       ; R2()
- 50 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 51 [-]: GETUPVAL  R3 U5        ; R3 := U5
- 52 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 53 [-]: TEST      R2 1         ; if R2 then PC := 59
- 54 [-]: JMP       59           ; PC := 59
- 55 [-]: GETGLOBAL R2 K19       ; R2 := 0x201191EA
- 56 [-]: LOADK     R3 K20       ; R3 := 0
- 57 [-]: CALL      R2 2 1       ; R2(R3)
- 58 [-]: JMP       50           ; PC := 50
- 59 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 60 [-]: SETTABLE  R2 K3 K21    ; R2["InFishMgmt"] := "0x0"
- 61 [-]: RETURN    R0 1         ; return 
+ 45 [-]: GETUPVAL  R0 U9        ; R0 := U9
+ 46 [-]: GETUPVAL  R0 U10       ; R0 := U10
+ 47 [-]: MOVE      R0 R1        ; R0 := R1
+ 48 [-]: SETTABLE  R2 K15 R3    ; R2["DonateFish"] := R3
+ 49 [-]: GETUPVAL  R2 U11       ; R2 := U11
+ 50 [-]: CALL      R2 1 1       ; R2()
+ 51 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 52 [-]: GETUPVAL  R3 U5        ; R3 := U5
+ 53 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 54 [-]: TEST      R2 1         ; if R2 then PC := 60
+ 55 [-]: JMP       60           ; PC := 60
+ 56 [-]: GETGLOBAL R2 K19       ; R2 := 0x201191EA
+ 57 [-]: LOADK     R3 K20       ; R3 := 0
+ 58 [-]: CALL      R2 2 1       ; R2(R3)
+ 59 [-]: JMP       51           ; PC := 51
+ 60 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 61 [-]: SETTABLE  R2 K3 K21    ; R2["InFishMgmt"] := "0x0"
+ 62 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.1:
+; Function #6.1:
 ;
 ; Name:            
-; Defined at line: 165
-; #Upvalues:       8
+; Defined at line: 171
+; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  22
 
   1 [-]: LOADK     R1 K0        ; R1 := 0
   2 [-]: NEWTABLE  R2 0 0       ; R2 := {}
@@ -590,35 +618,101 @@ code size: 153
  47 [-]: GETUPVAL  R9 U3        ; R9 := U3
  48 [-]: GETUPVAL  R10 U2       ; R10 := U2
  49 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 50 [-]: CLOSURE   R10 0        ; R10 := closure(Function #5.1.1)
+ 50 [-]: CLOSURE   R10 0        ; R10 := closure(Function #6.1.1)
  51 [-]: GETUPVAL  R0 U4        ; R0 := U4
  52 [-]: SETTABLE  R9 K14 R10   ; R9["OnExchangeOperation"] := R10
- 53 [-]: CLOSURE   R10 1        ; R10 := closure(Function #5.1.2)
+ 53 [-]: CLOSURE   R10 1        ; R10 := closure(Function #6.1.2)
  54 [-]: GETUPVAL  R0 U5        ; R0 := U5
  55 [-]: SETTABLE  R9 K15 R10   ; R9["DonateConfirmed"] := R10
- 56 [-]: GETUPVAL  R10 U2       ; R10 := U2
- 57 [-]: SELF      R10 R10 K16  ; R11 := R10; R10 := R10["0x5DB0BD4"]
- 58 [-]: GETUPVAL  R12 U6       ; R12 := U6
- 59 [-]: MOVE      R13 R1       ; R13 := R1
- 60 [-]: NEWTABLE  R14 0 1      ; R14 := {}
- 61 [-]: GETUPVAL  R15 U7       ; R15 := U7
- 62 [-]: GETTABLE  R15 R15 K18  ; R15 := R15["0x7E197415"]
- 63 [-]: MOVE      R16 R1       ; R16 := R1
- 64 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 65 [-]: SETTABLE  R14 K17 R15  ; R14["STANDING"] := R15
- 66 [-]: CALL      R10 5 2      ; R10 := R10(R11,R12,R13,R14)
- 67 [-]: GETUPVAL  R11 U7       ; R11 := U7
- 68 [-]: GETTABLE  R11 R11 K19  ; R11 := R11["0x1C988750"]
- 69 [-]: MOVE      R12 R10      ; R12 := R10
- 70 [-]: LOADK     R13 K15      ; R13 := "DonateConfirmed"
- 71 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 72 [-]: RETURN    R0 1         ; return 
+ 56 [-]: CLOSURE   R10 2        ; R10 := closure(Function #6.1.3)
+ 57 [-]: GETUPVAL  R0 U6        ; R0 := U6
+ 58 [-]: SETTABLE  R9 K16 R10   ; R9["DonateCancelled"] := R10
+ 59 [-]: GETGLOBAL R10 K17      ; R10 := _T
+ 60 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["FishInvInfo"]
+ 61 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["MaxRep"]
+ 62 [-]: SUB       R10 R1 R10   ; R10 := R1 - R10
+ 63 [-]: LOADK     R11 K20      ; R11 := ""
+ 64 [-]: GETGLOBAL R12 K17      ; R12 := _T
+ 65 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["FishInvInfo"]
+ 66 [-]: GETTABLE  R12 R12 K19  ; R12 := R12["MaxRep"]
+ 67 [-]: EQ        0 R12 K0     ; if R12 ~= 0 then PC := 96
+ 68 [-]: JMP       96           ; PC := 96
+ 69 [-]: GETGLOBAL R12 K21      ; R12 := syndicate
+ 70 [-]: SELF      R12 R12 K22  ; R13 := R12; R12 := R12["0xFA66CF82"]
+ 71 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 72 [-]: SELF      R12 R12 K23  ; R13 := R12; R12 := R12["0x5EC7A3D2"]
+ 73 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 74 [-]: EQ        0 R12 K24    ; if R12 ~= "/Lotus/Language/Syndicates/CetusName" then PC := 77
+ 75 [-]: JMP       77           ; PC := 77
+ 76 [-]: LOADK     R12 K25      ; R12 := "/Lotus/Language/Syndicates/CetusNameInline"
+ 77 [-]: GETUPVAL  R13 U2       ; R13 := U2
+ 78 [-]: SELF      R13 R13 K26  ; R14 := R13; R13 := R13["0x5DB0BD4"]
+ 79 [-]: MOVE      R15 R12      ; R15 := R12
+ 80 [-]: MOVE      R16 R0       ; R16 := R0
+ 81 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
+ 82 [-]: GETUPVAL  R14 U2       ; R14 := U2
+ 83 [-]: SELF      R14 R14 K26  ; R15 := R14; R14 := R14["0x5DB0BD4"]
+ 84 [-]: LOADK     R16 K27      ; R16 := "/Lotus/Language/SystemMessages/SyndicateDailyStandingCapped"
+ 85 [-]: MOVE      R17 R1       ; R17 := R1
+ 86 [-]: NEWTABLE  R18 0 1      ; R18 := {}
+ 87 [-]: SETTABLE  R18 K28 R13  ; R18["SYNDICATE"] := R13
+ 88 [-]: CALL      R14 5 2      ; R14 := R14(R15,R16,R17,R18)
+ 89 [-]: GETUPVAL  R15 U7       ; R15 := U7
+ 90 [-]: GETTABLE  R15 R15 K29  ; R15 := R15["0xB11F032"]
+ 91 [-]: MOVE      R16 R14      ; R16 := R14
+ 92 [-]: LOADK     R17 K16      ; R17 := "DonateCancelled"
+ 93 [-]: CALL      R15 3 1      ; R15(R16,R17)
+ 94 [-]: RETURN    R0 1         ; return 
+ 95 [-]: JMP       133          ; PC := 133
+ 96 [-]: LT        0 K0 R10     ; if 0 >= R10 then PC := 121
+ 97 [-]: JMP       121          ; PC := 121
+ 98 [-]: GETUPVAL  R15 U2       ; R15 := U2
+ 99 [-]: SELF      R15 R15 K26  ; R16 := R15; R15 := R15["0x5DB0BD4"]
+100 [-]: GETUPVAL  R17 U8       ; R17 := U8
+101 [-]: MOVE      R18 R1       ; R18 := R1
+102 [-]: NEWTABLE  R19 0 1      ; R19 := {}
+103 [-]: GETUPVAL  R20 U7       ; R20 := U7
+104 [-]: GETTABLE  R20 R20 K31  ; R20 := R20["0x7E197415"]
+105 [-]: SUB       R21 R1 R10   ; R21 := R1 - R10
+106 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+107 [-]: SETTABLE  R19 K30 R20  ; R19["STANDING"] := R20
+108 [-]: CALL      R15 5 2      ; R15 := R15(R16,R17,R18,R19)
+109 [-]: MOVE      R11 R15      ; R11 := R15
+110 [-]: MOVE      R15 R11      ; R15 := R11
+111 [-]: LOADK     R16 K32      ; R16 := "\r\n"
+112 [-]: GETUPVAL  R17 U2       ; R17 := U2
+113 [-]: SELF      R17 R17 K26  ; R18 := R17; R17 := R17["0x5DB0BD4"]
+114 [-]: LOADK     R19 K33      ; R19 := "/Lotus/Language/SystemMessages/SyndicateStandingOverflow"
+115 [-]: MOVE      R20 R1       ; R20 := R1
+116 [-]: NEWTABLE  R21 0 1      ; R21 := {}
+117 [-]: SETTABLE  R21 K30 R10  ; R21["STANDING"] := R10
+118 [-]: CALL      R17 5 2      ; R17 := R17(R18,R19,R20,R21)
+119 [-]: CONCAT    R11 R15 R17  ; R11 := R15 .. R16 .. R17
+120 [-]: JMP       133          ; PC := 133
+121 [-]: GETUPVAL  R15 U2       ; R15 := U2
+122 [-]: SELF      R15 R15 K26  ; R16 := R15; R15 := R15["0x5DB0BD4"]
+123 [-]: GETUPVAL  R17 U8       ; R17 := U8
+124 [-]: MOVE      R18 R1       ; R18 := R1
+125 [-]: NEWTABLE  R19 0 1      ; R19 := {}
+126 [-]: GETUPVAL  R20 U7       ; R20 := U7
+127 [-]: GETTABLE  R20 R20 K31  ; R20 := R20["0x7E197415"]
+128 [-]: MOVE      R21 R1       ; R21 := R1
+129 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+130 [-]: SETTABLE  R19 K30 R20  ; R19["STANDING"] := R20
+131 [-]: CALL      R15 5 2      ; R15 := R15(R16,R17,R18,R19)
+132 [-]: MOVE      R11 R15      ; R11 := R15
+133 [-]: GETUPVAL  R15 U7       ; R15 := U7
+134 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["0x1C988750"]
+135 [-]: MOVE      R16 R11      ; R16 := R11
+136 [-]: LOADK     R17 K15      ; R17 := "DonateConfirmed"
+137 [-]: CALL      R15 3 1      ; R15(R16,R17)
+138 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.1.1:
+; Function #6.1.1:
 ;
 ; Name:            
-; Defined at line: 178
+; Defined at line: 184
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -631,10 +725,10 @@ code size: 153
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.1.2:
+; Function #6.1.2:
 ;
 ; Name:            
-; Defined at line: 181
+; Defined at line: 187
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -646,10 +740,25 @@ code size: 153
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #6.1.3:
 ;
 ; Name:            
-; Defined at line: 198
+; Defined at line: 190
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: MOVE      R2 R0        ; R2 := R0
+  3 [-]: CALL      R1 2 1       ; R1(R2)
+  4 [-]: RETURN    R0 1         ; return 
+
+
+; Function #7:
+;
+; Name:            
+; Defined at line: 225
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -686,7 +795,7 @@ code size: 153
  29 [-]: SETTABLE  R6 K15 R7    ; R6["SellBtnLabel"] := R7
  30 [-]: SETTABLE  R5 K12 R6    ; R5["FishInvInfo"] := R6
  31 [-]: GETGLOBAL R5 K0        ; R5 := _T
- 32 [-]: CLOSURE   R6 0         ; R6 := closure(Function #6.1)
+ 32 [-]: CLOSURE   R6 0         ; R6 := closure(Function #7.1)
  33 [-]: GETUPVAL  R0 U1        ; R0 := U1
  34 [-]: GETUPVAL  R0 U2        ; R0 := U2
  35 [-]: GETUPVAL  R0 U3        ; R0 := U3
@@ -694,7 +803,7 @@ code size: 153
  37 [-]: GETUPVAL  R0 U5        ; R0 := U5
  38 [-]: SETTABLE  R5 K19 R6    ; R5["CutConfirmed"] := R6
  39 [-]: GETGLOBAL R5 K0        ; R5 := _T
- 40 [-]: CLOSURE   R6 1         ; R6 := closure(Function #6.2)
+ 40 [-]: CLOSURE   R6 1         ; R6 := closure(Function #7.2)
  41 [-]: GETUPVAL  R0 U5        ; R0 := U5
  42 [-]: GETUPVAL  R0 U6        ; R0 := U6
  43 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -726,10 +835,10 @@ code size: 153
  69 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.1:
+; Function #7.1:
 ;
 ; Name:            
-; Defined at line: 213
+; Defined at line: 240
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -790,7 +899,7 @@ code size: 153
  53 [-]: GETUPVAL  R1 U2        ; R1 := U2
  54 [-]: GETUPVAL  R2 U0        ; R2 := U0
  55 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 56 [-]: CLOSURE   R2 0         ; R2 := closure(Function #6.1.1)
+ 56 [-]: CLOSURE   R2 0         ; R2 := closure(Function #7.1.1)
  57 [-]: GETUPVAL  R0 U3        ; R0 := U3
  58 [-]: SETTABLE  R1 K13 R2    ; R1["OnCutOperation"] := R2
  59 [-]: GETGLOBAL R2 K8        ; R2 := gGameData
@@ -802,10 +911,10 @@ code size: 153
  65 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.1.1:
+; Function #7.1.1:
 ;
 ; Name:            
-; Defined at line: 233
+; Defined at line: 260
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -818,10 +927,10 @@ code size: 153
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.2:
+; Function #7.2:
 ;
 ; Name:            
-; Defined at line: 241
+; Defined at line: 268
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0

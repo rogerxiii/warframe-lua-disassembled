@@ -37,7 +37,7 @@ code size: 66
 code size: 8
 code size: 212
 code size: 36
-code size: 571
+code size: 560
 code size: 161
 code size: 273
 code size: 18
@@ -53,7 +53,7 @@ code size: 40
 code size: 82
 code size: 3
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\SpectatorHUD.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\SpectatorHUD.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -2719,167 +2719,156 @@ code size: 3
 414 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 415 [-]: GETUPVAL  R9 U14       ; R9 := U14
 416 [-]: CALL      R9 1 1       ; R9()
-417 [-]: GETGLOBAL R9 K10       ; R9 := mMovie
-418 [-]: SELF      R9 R9 K90    ; R10 := R9; R9 := R9["0x5DB0BD4"]
-419 [-]: LOADK     R11 K91      ; R11 := "/Lotus/Language/SystemMessages/NoReviveHint"
-420 [-]: MOVE      R12 R0       ; R12 := R0
-421 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
-422 [-]: GETUPVAL  R10 U11      ; R10 := U11
-423 [-]: LT        0 K43 R10    ; if 0 >= R10 then PC := 484
-424 [-]: JMP       484          ; PC := 484
-425 [-]: GETUPVAL  R10 U15      ; R10 := U15
-426 [-]: CALL      R10 1 2      ; R10 := R10()
-427 [-]: SELF      R11 R5 K92   ; R12 := R5; R11 := R5["0x8DB5D01F"]
-428 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-429 [-]: SELF      R11 R11 K93  ; R12 := R11; R11 := R11["0xD8995784"]
-430 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-431 [-]: GETGLOBAL R12 K10      ; R12 := mMovie
-432 [-]: SELF      R12 R12 K90  ; R13 := R12; R12 := R12["0x5DB0BD4"]
-433 [-]: LOADK     R14 K94      ; R14 := "/Lotus/Language/SystemMessages/AffinityCostInfo"
-434 [-]: MOVE      R15 R0       ; R15 := R0
-435 [-]: NEWTABLE  R16 0 4      ; R16 := {}
-436 [-]: LOADK     R17 K96      ; R17 := "<font color=\""
-437 [-]: GETUPVAL  R18 U16      ; R18 := U16
-438 [-]: GETTABLE  R18 R18 K97  ; R18 := R18["FloatingContentHighlightHex"]
-439 [-]: LOADK     R19 K98      ; R19 := "\">"
-440 [-]: CONCAT    R17 R17 R19  ; R17 := R17 .. R18 .. R19
-441 [-]: SETTABLE  R16 K95 R17  ; R16["OPEN_COLOR"] := R17
-442 [-]: SETTABLE  R16 K99 K100 ; R16["CLOSE_COLOR"] := "</font>"
-443 [-]: GETUPVAL  R17 U17      ; R17 := U17
-444 [-]: GETTABLE  R17 R17 K102 ; R17 := R17["0x7E197415"]
-445 [-]: MOVE      R18 R11      ; R18 := R11
-446 [-]: LOADK     R19 K43      ; R19 := 0
-447 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-448 [-]: SETTABLE  R16 K101 R17 ; R16["COST"] := R17
-449 [-]: GETUPVAL  R17 U17      ; R17 := U17
-450 [-]: GETTABLE  R17 R17 K102 ; R17 := R17["0x7E197415"]
-451 [-]: MOVE      R18 R10      ; R18 := R10
-452 [-]: LOADK     R19 K43      ; R19 := 0
-453 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-454 [-]: SETTABLE  R16 K103 R17 ; R16["TOTAL"] := R17
-455 [-]: CALL      R12 5 2      ; R12 := R12(R13,R14,R15,R16)
-456 [-]: LOADK     R13 K104     ; R13 := "<p><font color=\""
-457 [-]: GETUPVAL  R14 U16      ; R14 := U16
-458 [-]: GETTABLE  R14 R14 K105 ; R14 := R14["FloatingContentHex"]
-459 [-]: LOADK     R15 K98      ; R15 := "\">"
-460 [-]: MOVE      R16 R12      ; R16 := R12
-461 [-]: LOADK     R17 K100     ; R17 := "</font>"
-462 [-]: CONCAT    R13 R13 R17  ; R13 := R13 .. R14 .. R15 .. R16 .. R17
-463 [-]: GETUPVAL  R14 U7       ; R14 := U7
-464 [-]: LT        0 K67 R14    ; if 1 >= R14 then PC := 474
-465 [-]: JMP       474          ; PC := 474
-466 [-]: MOVE      R14 R13      ; R14 := R13
-467 [-]: LOADK     R15 K96      ; R15 := "<font color=\""
-468 [-]: GETUPVAL  R16 U16      ; R16 := U16
-469 [-]: GETTABLE  R16 R16 K97  ; R16 := R16["FloatingContentHighlightHex"]
-470 [-]: LOADK     R17 K106     ; R17 := "\"><br>"
-471 [-]: MOVE      R18 R9       ; R18 := R9
-472 [-]: LOADK     R19 K100     ; R19 := "</font>"
-473 [-]: CONCAT    R13 R14 R19  ; R13 := R14 .. R15 .. R16 .. R17 .. R18 .. R19
-474 [-]: MOVE      R14 R13      ; R14 := R13
-475 [-]: LOADK     R15 K107     ; R15 := "</p>"
-476 [-]: CONCAT    R13 R14 R15  ; R13 := R14 .. R15
-477 [-]: GETGLOBAL R14 K10      ; R14 := mMovie
-478 [-]: SELF      R14 R14 K108 ; R15 := R14; R14 := R14["0xD6A79FE9"]
-479 [-]: LOADK     R16 K109     ; R16 := "RevivePanel.Status"
-480 [-]: LOADK     R17 K89      ; R17 := "text"
-481 [-]: MOVE      R18 R13      ; R18 := R13
-482 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-483 [-]: JMP       496          ; PC := 496
-484 [-]: GETGLOBAL R14 K10      ; R14 := mMovie
-485 [-]: SELF      R14 R14 K108 ; R15 := R14; R14 := R14["0xD6A79FE9"]
-486 [-]: LOADK     R16 K109     ; R16 := "RevivePanel.Status"
-487 [-]: LOADK     R17 K89      ; R17 := "text"
-488 [-]: LOADK     R18 K104     ; R18 := "<p><font color=\""
-489 [-]: GETUPVAL  R19 U16      ; R19 := U16
-490 [-]: GETTABLE  R19 R19 K97  ; R19 := R19["FloatingContentHighlightHex"]
-491 [-]: LOADK     R20 K98      ; R20 := "\">"
-492 [-]: MOVE      R21 R9       ; R21 := R9
-493 [-]: LOADK     R22 K110     ; R22 := "</font></p>"
-494 [-]: CONCAT    R18 R18 R22  ; R18 := R18 .. R19 .. R20 .. R21 .. R22
-495 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-496 [-]: GETGLOBAL R14 K10      ; R14 := mMovie
-497 [-]: SELF      R14 R14 K27  ; R15 := R14; R14 := R14["0x1C19D966"]
-498 [-]: LOADK     R16 K59      ; R16 := "RevivePanel"
-499 [-]: LOADK     R17 K111     ; R17 := "_alpha"
-500 [-]: LOADK     R18 K43      ; R18 := 0
-501 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-502 [-]: GETUPVAL  R14 U18      ; R14 := U18
-503 [-]: GETGLOBAL R15 K112     ; R15 := particleFX
-504 [-]: CALL      R14 2 1      ; R14(R15)
-505 [-]: GETGLOBAL R14 K113     ; R14 := Script
-506 [-]: GETTABLE  R14 R14 K114 ; R14 := R14["ObjectType_RM_SERVER_ONLY"]
-507 [-]: GETGLOBAL R15 K18      ; R15 := gRegion
-508 [-]: SELF      R15 R15 K115 ; R16 := R15; R15 := R15["0xA559F558"]
-509 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-510 [-]: TEST      R15 1        ; if R15 then PC := 514
-511 [-]: JMP       514          ; PC := 514
-512 [-]: GETGLOBAL R15 K113     ; R15 := Script
-513 [-]: GETTABLE  R14 R15 K116 ; R14 := R15["ObjectType_RM_CLIENT_ONLY"]
-514 [-]: GETGLOBAL R15 K117     ; R15 := 0x52E17A90
-515 [-]: GETGLOBAL R16 K10      ; R16 := mMovie
-516 [-]: LOADK     R17 K59      ; R17 := "RevivePanel"
-517 [-]: GETGLOBAL R18 K118     ; R18 := UISys
-518 [-]: GETTABLE  R18 R18 K119 ; R18 := R18["FlashInstance_EASE_IN_OUT_BACK"]
-519 [-]: NEWTABLE  R19 1 0      ; R19 := {}
-520 [-]: LOADK     R20 K111     ; R20 := "_alpha"
-521 [-]: SETLIST   R19 1 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 1
-522 [-]: NEWTABLE  R20 1 0      ; R20 := {}
-523 [-]: LOADK     R21 K120     ; R21 := 100
-524 [-]: SETLIST   R20 1 1      ; R20[(1-1)*FPF+i] := R(20+i), 1 <= i <= 1
-525 [-]: LOADK     R21 K121     ; R21 := 0.5
-526 [-]: LOADK     R22 K43      ; R22 := 0
-527 [-]: LOADNIL   R23 R23      ; R23 := nil
-528 [-]: CALL      R15 9 1      ; R15(R16,R17,R18,R19,R20,R21,R22,R23)
-529 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
-530 [-]: GETGLOBAL R16 K1       ; R16 := _T
-531 [-]: GETTABLE  R16 R16 K122 ; R16 := R16["EnableUIInput"]
-532 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-533 [-]: TEST      R15 1        ; if R15 then PC := 539
-534 [-]: JMP       539          ; PC := 539
-535 [-]: GETGLOBAL R15 K1       ; R15 := _T
-536 [-]: GETTABLE  R15 R15 K123 ; R15 := R15["0x8ED0D55D"]
-537 [-]: MOVE      R16 R1       ; R16 := R1
-538 [-]: CALL      R15 2 1      ; R15(R16)
-539 [-]: GETGLOBAL R15 K1       ; R15 := _T
-540 [-]: SETTABLE  R15 K124 K31 ; R15["SpectatorHudOpen"] := "0x1"
-541 [-]: GETGLOBAL R15 K12      ; R15 := gGameRules
-542 [-]: SELF      R15 R15 K125 ; R16 := R15; R15 := R15["0x2AE9D5B2"]
-543 [-]: CALL      R15 2 1      ; R15(R16)
-544 [-]: GETGLOBAL R15 K126     ; R15 := gFlashMgr
-545 [-]: SELF      R15 R15 K127 ; R16 := R15; R15 := R15["0x616DD092"]
-546 [-]: GETUPVAL  R17 U17      ; R17 := U17
-547 [-]: GETTABLE  R17 R17 K128 ; R17 := R17["0xBCEEAD81"]
-548 [-]: CALL      R17 1 0      ; R17,... := R17()
-549 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
-550 [-]: GETGLOBAL R16 K0       ; R16 := 0x400E7765
-551 [-]: MOVE      R17 R15      ; R17 := R15
-552 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-553 [-]: TEST      R16 1        ; if R16 then PC := 565
-554 [-]: JMP       565          ; PC := 565
-555 [-]: SELF      R16 R15 K129 ; R17 := R15; R16 := R15["0x458F27A9"]
-556 [-]: LOADK     R18 K130     ; R18 := "IsMaximized"
-557 [-]: LOADK     R19 K131     ; R19 := ""
-558 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
-559 [-]: TEST      R16 0        ; if not R16 then PC := 565
-560 [-]: JMP       565          ; PC := 565
-561 [-]: SELF      R16 R15 K129 ; R17 := R15; R16 := R15["0x458F27A9"]
-562 [-]: LOADK     R18 K132     ; R18 := "ToggleFocus"
-563 [-]: LOADK     R19 K131     ; R19 := ""
-564 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-565 [-]: GETGLOBAL R16 K10      ; R16 := mMovie
-566 [-]: SELF      R16 R16 K133 ; R17 := R16; R16 := R16["0xC324B42D"]
-567 [-]: MOVE      R18 R1       ; R18 := R1
-568 [-]: CALL      R16 3 1      ; R16(R17,R18)
-569 [-]: MOVE      R16 R1       ; R16 := R1
-570 [-]: MOVE      R16 R19      ; R16 := R19
-571 [-]: RETURN    R0 1         ; return 
+417 [-]: GETUPVAL  R9 U11       ; R9 := U11
+418 [-]: LT        0 K43 R9     ; if 0 >= R9 then PC := 465
+419 [-]: JMP       465          ; PC := 465
+420 [-]: GETUPVAL  R9 U15       ; R9 := U15
+421 [-]: CALL      R9 1 2       ; R9 := R9()
+422 [-]: SELF      R10 R5 K90   ; R11 := R5; R10 := R5["0x8DB5D01F"]
+423 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+424 [-]: SELF      R10 R10 K91  ; R11 := R10; R10 := R10["0xD8995784"]
+425 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+426 [-]: GETGLOBAL R11 K10      ; R11 := mMovie
+427 [-]: SELF      R11 R11 K92  ; R12 := R11; R11 := R11["0x5DB0BD4"]
+428 [-]: LOADK     R13 K93      ; R13 := "/Lotus/Language/SystemMessages/AffinityCostInfo"
+429 [-]: MOVE      R14 R0       ; R14 := R0
+430 [-]: NEWTABLE  R15 0 4      ; R15 := {}
+431 [-]: LOADK     R16 K95      ; R16 := "<font color=\""
+432 [-]: GETUPVAL  R17 U16      ; R17 := U16
+433 [-]: GETTABLE  R17 R17 K96  ; R17 := R17["FloatingContentHighlightHex"]
+434 [-]: LOADK     R18 K97      ; R18 := "\">"
+435 [-]: CONCAT    R16 R16 R18  ; R16 := R16 .. R17 .. R18
+436 [-]: SETTABLE  R15 K94 R16  ; R15["OPEN_COLOR"] := R16
+437 [-]: SETTABLE  R15 K98 K99  ; R15["CLOSE_COLOR"] := "</font>"
+438 [-]: GETUPVAL  R16 U17      ; R16 := U17
+439 [-]: GETTABLE  R16 R16 K101 ; R16 := R16["0x7E197415"]
+440 [-]: MOVE      R17 R10      ; R17 := R10
+441 [-]: LOADK     R18 K43      ; R18 := 0
+442 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+443 [-]: SETTABLE  R15 K100 R16 ; R15["COST"] := R16
+444 [-]: GETUPVAL  R16 U17      ; R16 := U17
+445 [-]: GETTABLE  R16 R16 K101 ; R16 := R16["0x7E197415"]
+446 [-]: MOVE      R17 R9       ; R17 := R9
+447 [-]: LOADK     R18 K43      ; R18 := 0
+448 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+449 [-]: SETTABLE  R15 K102 R16 ; R15["TOTAL"] := R16
+450 [-]: CALL      R11 5 2      ; R11 := R11(R12,R13,R14,R15)
+451 [-]: LOADK     R12 K103     ; R12 := "<p><font color=\""
+452 [-]: GETUPVAL  R13 U16      ; R13 := U16
+453 [-]: GETTABLE  R13 R13 K104 ; R13 := R13["FloatingContentHex"]
+454 [-]: LOADK     R14 K97      ; R14 := "\">"
+455 [-]: MOVE      R15 R11      ; R15 := R11
+456 [-]: LOADK     R16 K105     ; R16 := "</font></p>"
+457 [-]: CONCAT    R12 R12 R16  ; R12 := R12 .. R13 .. R14 .. R15 .. R16
+458 [-]: GETGLOBAL R13 K10      ; R13 := mMovie
+459 [-]: SELF      R13 R13 K106 ; R14 := R13; R13 := R13["0xD6A79FE9"]
+460 [-]: LOADK     R15 K107     ; R15 := "RevivePanel.Status"
+461 [-]: LOADK     R16 K89      ; R16 := "text"
+462 [-]: MOVE      R17 R12      ; R17 := R12
+463 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+464 [-]: JMP       485          ; PC := 485
+465 [-]: GETUPVAL  R13 U1       ; R13 := U1
+466 [-]: TEST      R13 0        ; if not R13 then PC := 485
+467 [-]: JMP       485          ; PC := 485
+468 [-]: GETGLOBAL R13 K10      ; R13 := mMovie
+469 [-]: SELF      R13 R13 K92  ; R14 := R13; R13 := R13["0x5DB0BD4"]
+470 [-]: LOADK     R15 K108     ; R15 := "/Lotus/Language/SystemMessages/NoReviveHint"
+471 [-]: MOVE      R16 R0       ; R16 := R0
+472 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
+473 [-]: GETGLOBAL R14 K10      ; R14 := mMovie
+474 [-]: SELF      R14 R14 K106 ; R15 := R14; R14 := R14["0xD6A79FE9"]
+475 [-]: LOADK     R16 K107     ; R16 := "RevivePanel.Status"
+476 [-]: LOADK     R17 K89      ; R17 := "text"
+477 [-]: LOADK     R18 K103     ; R18 := "<p><font color=\""
+478 [-]: GETUPVAL  R19 U16      ; R19 := U16
+479 [-]: GETTABLE  R19 R19 K96  ; R19 := R19["FloatingContentHighlightHex"]
+480 [-]: LOADK     R20 K97      ; R20 := "\">"
+481 [-]: MOVE      R21 R13      ; R21 := R13
+482 [-]: LOADK     R22 K105     ; R22 := "</font></p>"
+483 [-]: CONCAT    R18 R18 R22  ; R18 := R18 .. R19 .. R20 .. R21 .. R22
+484 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
+485 [-]: GETGLOBAL R14 K10      ; R14 := mMovie
+486 [-]: SELF      R14 R14 K27  ; R15 := R14; R14 := R14["0x1C19D966"]
+487 [-]: LOADK     R16 K59      ; R16 := "RevivePanel"
+488 [-]: LOADK     R17 K109     ; R17 := "_alpha"
+489 [-]: LOADK     R18 K43      ; R18 := 0
+490 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
+491 [-]: GETUPVAL  R14 U18      ; R14 := U18
+492 [-]: GETGLOBAL R15 K110     ; R15 := particleFX
+493 [-]: CALL      R14 2 1      ; R14(R15)
+494 [-]: GETGLOBAL R14 K111     ; R14 := Script
+495 [-]: GETTABLE  R14 R14 K112 ; R14 := R14["ObjectType_RM_SERVER_ONLY"]
+496 [-]: GETGLOBAL R15 K18      ; R15 := gRegion
+497 [-]: SELF      R15 R15 K113 ; R16 := R15; R15 := R15["0xA559F558"]
+498 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+499 [-]: TEST      R15 1        ; if R15 then PC := 503
+500 [-]: JMP       503          ; PC := 503
+501 [-]: GETGLOBAL R15 K111     ; R15 := Script
+502 [-]: GETTABLE  R14 R15 K114 ; R14 := R15["ObjectType_RM_CLIENT_ONLY"]
+503 [-]: GETGLOBAL R15 K115     ; R15 := 0x52E17A90
+504 [-]: GETGLOBAL R16 K10      ; R16 := mMovie
+505 [-]: LOADK     R17 K59      ; R17 := "RevivePanel"
+506 [-]: GETGLOBAL R18 K116     ; R18 := UISys
+507 [-]: GETTABLE  R18 R18 K117 ; R18 := R18["FlashInstance_EASE_IN_OUT_BACK"]
+508 [-]: NEWTABLE  R19 1 0      ; R19 := {}
+509 [-]: LOADK     R20 K109     ; R20 := "_alpha"
+510 [-]: SETLIST   R19 1 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 1
+511 [-]: NEWTABLE  R20 1 0      ; R20 := {}
+512 [-]: LOADK     R21 K118     ; R21 := 100
+513 [-]: SETLIST   R20 1 1      ; R20[(1-1)*FPF+i] := R(20+i), 1 <= i <= 1
+514 [-]: LOADK     R21 K119     ; R21 := 0.5
+515 [-]: LOADK     R22 K43      ; R22 := 0
+516 [-]: LOADNIL   R23 R23      ; R23 := nil
+517 [-]: CALL      R15 9 1      ; R15(R16,R17,R18,R19,R20,R21,R22,R23)
+518 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
+519 [-]: GETGLOBAL R16 K1       ; R16 := _T
+520 [-]: GETTABLE  R16 R16 K120 ; R16 := R16["EnableUIInput"]
+521 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+522 [-]: TEST      R15 1        ; if R15 then PC := 528
+523 [-]: JMP       528          ; PC := 528
+524 [-]: GETGLOBAL R15 K1       ; R15 := _T
+525 [-]: GETTABLE  R15 R15 K121 ; R15 := R15["0x8ED0D55D"]
+526 [-]: MOVE      R16 R1       ; R16 := R1
+527 [-]: CALL      R15 2 1      ; R15(R16)
+528 [-]: GETGLOBAL R15 K1       ; R15 := _T
+529 [-]: SETTABLE  R15 K122 K31 ; R15["SpectatorHudOpen"] := "0x1"
+530 [-]: GETGLOBAL R15 K12      ; R15 := gGameRules
+531 [-]: SELF      R15 R15 K123 ; R16 := R15; R15 := R15["0x2AE9D5B2"]
+532 [-]: CALL      R15 2 1      ; R15(R16)
+533 [-]: GETGLOBAL R15 K124     ; R15 := gFlashMgr
+534 [-]: SELF      R15 R15 K125 ; R16 := R15; R15 := R15["0x616DD092"]
+535 [-]: GETUPVAL  R17 U17      ; R17 := U17
+536 [-]: GETTABLE  R17 R17 K126 ; R17 := R17["0xBCEEAD81"]
+537 [-]: CALL      R17 1 0      ; R17,... := R17()
+538 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
+539 [-]: GETGLOBAL R16 K0       ; R16 := 0x400E7765
+540 [-]: MOVE      R17 R15      ; R17 := R15
+541 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+542 [-]: TEST      R16 1        ; if R16 then PC := 554
+543 [-]: JMP       554          ; PC := 554
+544 [-]: SELF      R16 R15 K127 ; R17 := R15; R16 := R15["0x458F27A9"]
+545 [-]: LOADK     R18 K128     ; R18 := "IsMaximized"
+546 [-]: LOADK     R19 K129     ; R19 := ""
+547 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+548 [-]: TEST      R16 0        ; if not R16 then PC := 554
+549 [-]: JMP       554          ; PC := 554
+550 [-]: SELF      R16 R15 K127 ; R17 := R15; R16 := R15["0x458F27A9"]
+551 [-]: LOADK     R18 K130     ; R18 := "ToggleFocus"
+552 [-]: LOADK     R19 K129     ; R19 := ""
+553 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+554 [-]: GETGLOBAL R16 K10      ; R16 := mMovie
+555 [-]: SELF      R16 R16 K131 ; R17 := R16; R16 := R16["0xC324B42D"]
+556 [-]: MOVE      R18 R1       ; R18 := R1
+557 [-]: CALL      R16 3 1      ; R16(R17,R18)
+558 [-]: MOVE      R16 R1       ; R16 := R1
+559 [-]: MOVE      R16 R19      ; R16 := R19
+560 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 767
+; Defined at line: 763
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3051,7 +3040,7 @@ code size: 3
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 822
+; Defined at line: 818
 ; #Upvalues:       20
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3335,7 +3324,7 @@ code size: 3
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 912
+; Defined at line: 908
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3364,7 +3353,7 @@ code size: 3
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 923
+; Defined at line: 919
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3385,7 +3374,7 @@ code size: 3
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 929
+; Defined at line: 925
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3409,7 +3398,7 @@ code size: 3
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 936
+; Defined at line: 932
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3437,7 +3426,7 @@ code size: 3
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 942
+; Defined at line: 938
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3465,7 +3454,7 @@ code size: 3
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 948
+; Defined at line: 944
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3482,7 +3471,7 @@ code size: 3
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 954
+; Defined at line: 950
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3510,7 +3499,7 @@ code size: 3
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 962
+; Defined at line: 958
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3527,7 +3516,7 @@ code size: 3
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 968
+; Defined at line: 964
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3555,7 +3544,7 @@ code size: 3
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 977
+; Defined at line: 973
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3606,7 +3595,7 @@ code size: 3
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 995
+; Defined at line: 991
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3699,7 +3688,7 @@ code size: 3
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 1012
+; Defined at line: 1008
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

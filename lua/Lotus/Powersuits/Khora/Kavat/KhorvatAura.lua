@@ -1,12 +1,12 @@
 code size: 44
 code size: 19
 code size: 38
-code size: 34
+code size: 26
 code size: 108
 code size: 358
 code size: 173
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Khora\Kavat\KhorvatAura.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Khora\Kavat\KhorvatAura.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -152,43 +152,35 @@ code size: 173
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
   2 [-]: MOVE      R3 R1        ; R3 := R1
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 32
-  5 [-]: JMP       32           ; PC := 32
-  6 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1["0x6B4CBCD7"]
-  7 [-]: MOVE      R4 R0        ; R4 := R0
+  4 [-]: TEST      R2 1         ; if R2 then PC := 24
+  5 [-]: JMP       24           ; PC := 24
+  6 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0xCEE55F77"]
+  7 [-]: MOVE      R4 R1        ; R4 := R1
   8 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  9 [-]: TEST      R2 0         ; if not R2 then PC := 32
- 10 [-]: JMP       32           ; PC := 32
- 11 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0xA56CD0BB"]
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: TEST      R2 1         ; if R2 then PC := 32
- 14 [-]: JMP       32           ; PC := 32
- 15 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x5A115A02"]
- 16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 17 [-]: TEST      R2 1         ; if R2 then PC := 32
- 18 [-]: JMP       32           ; PC := 32
- 19 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0x9B4AA3E9"]
- 20 [-]: MOVE      R4 R0        ; R4 := R0
- 21 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 22 [-]: TEST      R2 0         ; if not R2 then PC := 32
- 23 [-]: JMP       32           ; PC := 32
- 24 [-]: GETGLOBAL R2 K5        ; R2 := mOwner
- 25 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x9DE181D4"]
- 26 [-]: MOVE      R4 R1        ; R4 := R1
- 27 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 28 [-]: TEST      R2 1         ; if R2 then PC := 32
- 29 [-]: JMP       32           ; PC := 32
- 30 [-]: MOVE      R2 R1        ; R2 := R1
- 31 [-]: RETURN    R2 2         ; return R2
- 32 [-]: MOVE      R2 R0        ; R2 := R0
- 33 [-]: RETURN    R2 2         ; return R2
- 34 [-]: RETURN    R0 1         ; return 
+  9 [-]: TEST      R2 0         ; if not R2 then PC := 24
+ 10 [-]: JMP       24           ; PC := 24
+ 11 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x9B4AA3E9"]
+ 12 [-]: MOVE      R4 R0        ; R4 := R0
+ 13 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 14 [-]: TEST      R2 0         ; if not R2 then PC := 24
+ 15 [-]: JMP       24           ; PC := 24
+ 16 [-]: GETGLOBAL R2 K3        ; R2 := mOwner
+ 17 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x9DE181D4"]
+ 18 [-]: MOVE      R4 R1        ; R4 := R1
+ 19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 20 [-]: TEST      R2 1         ; if R2 then PC := 24
+ 21 [-]: JMP       24           ; PC := 24
+ 22 [-]: MOVE      R2 R1        ; R2 := R1
+ 23 [-]: RETURN    R2 2         ; return R2
+ 24 [-]: MOVE      R2 R0        ; R2 := R0
+ 25 [-]: RETURN    R2 2         ; return R2
+ 26 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 59
+; Defined at line: 57
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -307,7 +299,7 @@ code size: 173
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 104
+; Defined at line: 102
 ; #Upvalues:       9
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -676,7 +668,7 @@ code size: 173
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 223
+; Defined at line: 221
 ; #Upvalues:       3
 ; #Parameters:     4
 ; Is_vararg:       0

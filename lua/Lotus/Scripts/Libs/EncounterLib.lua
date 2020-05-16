@@ -1,10 +1,8 @@
-code size: 98
+code size: 52
 code size: 7
 code size: 158
 code size: 56
 code size: 30
-code size: 51
-code size: 79
 code size: 13
 code size: 9
 code size: 14
@@ -15,119 +13,73 @@ code size: 37
 code size: 14
 code size: 5
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\EncounterLib.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Libs\EncounterLib.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  15
+; Max Stack Size:  9
 
-  1 [-]: NEWTABLE  R0 9 0       ; R0 := {}
-  2 [-]: GETGLOBAL R1 K0        ; R1 := 0xEC274B1A
-  3 [-]: LOADK     R2 K1        ; R2 := "DoNotUse"
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: GETGLOBAL R2 K0        ; R2 := 0xEC274B1A
-  6 [-]: LOADK     R3 K2        ; R3 := "DroneSpawn"
-  7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: GETGLOBAL R3 K0        ; R3 := 0xEC274B1A
-  9 [-]: LOADK     R4 K3        ; R4 := "BipedSpecialSpawn"
- 10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: GETGLOBAL R4 K0        ; R4 := 0xEC274B1A
- 12 [-]: LOADK     R5 K4        ; R5 := "GroupSpawn"
- 13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 14 [-]: GETGLOBAL R5 K0        ; R5 := 0xEC274B1A
- 15 [-]: LOADK     R6 K5        ; R6 := "TurretSpawn"
- 16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 17 [-]: GETGLOBAL R6 K0        ; R6 := 0xEC274B1A
- 18 [-]: LOADK     R7 K6        ; R7 := "CameraSpawn"
- 19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 20 [-]: GETGLOBAL R7 K0        ; R7 := 0xEC274B1A
- 21 [-]: LOADK     R8 K7        ; R8 := "FixedCameraSpawn"
- 22 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 23 [-]: GETGLOBAL R8 K0        ; R8 := 0xEC274B1A
- 24 [-]: LOADK     R9 K8        ; R9 := "dSpawn"
- 25 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 26 [-]: GETGLOBAL R9 K0        ; R9 := 0xEC274B1A
- 27 [-]: LOADK     R10 K9       ; R10 := "hSpawn"
- 28 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 29 [-]: GETGLOBAL R10 K0       ; R10 := 0xEC274B1A
- 30 [-]: LOADK     R11 K10      ; R11 := "DefenseAgentSpawn"
- 31 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 32 [-]: SETLIST   R0 0 1       ; R0[(1-1)*FPF+i] := R(0+i), 1 <= i <= 0
- 33 [-]: GETGLOBAL R1 K0        ; R1 := 0xEC274B1A
- 34 [-]: LOADK     R2 K11       ; R2 := "Objective"
- 35 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 36 [-]: GETGLOBAL R2 K0        ; R2 := 0xEC274B1A
- 37 [-]: LOADK     R3 K12       ; R3 := "Exit"
- 38 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 39 [-]: LOADK     R3 K13       ; R3 := 0
- 40 [-]: MOVE      R4 R0        ; R4 := R0
- 41 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
- 42 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
- 43 [-]: CLOSURE   R7 2         ; R7 := closure(Function #3)
- 44 [-]: MOVE      R0 R3        ; R0 := R3
- 45 [-]: CLOSURE   R8 3         ; R8 := closure(Function #4)
- 46 [-]: CLOSURE   R9 4         ; R9 := closure(Function #5)
- 47 [-]: MOVE      R0 R4        ; R0 := R4
- 48 [-]: MOVE      R0 R5        ; R0 := R5
- 49 [-]: CLOSURE   R10 5        ; R10 := closure(Function #6)
- 50 [-]: MOVE      R0 R0        ; R0 := R0
- 51 [-]: MOVE      R0 R2        ; R0 := R2
- 52 [-]: MOVE      R0 R1        ; R0 := R1
- 53 [-]: GETGLOBAL R11 K14      ; R11 := _T
- 54 [-]: SETTABLE  R11 K15 K16  ; R11["EncounterTargetPlayer"] := nil
- 55 [-]: GETGLOBAL R11 K14      ; R11 := _T
- 56 [-]: SETTABLE  R11 K17 K18  ; R11["gEncounterActive"] := "0x0"
- 57 [-]: NEWTABLE  R11 0 0      ; R11 := {}
- 58 [-]: NEWTABLE  R12 0 0      ; R12 := {}
- 59 [-]: NEWTABLE  R13 0 10     ; R13 := {}
- 60 [-]: NEWTABLE  R14 0 4      ; R14 := {}
- 61 [-]: SETTABLE  R14 K20 K13  ; R14["ENEMY_KILLED"] := 0
- 62 [-]: SETTABLE  R14 K21 K22  ; R14["ENEMY_FLEE"] := 1
- 63 [-]: SETTABLE  R14 K23 K24  ; R14["ENEMY_BORED"] := 2
- 64 [-]: SETTABLE  R14 K25 K26  ; R14["PLAYER_KILLED"] := 3
- 65 [-]: SETTABLE  R13 K19 R14  ; R13["MONITOR_EVENTS"] := R14
- 66 [-]: CLOSURE   R14 6        ; R14 := closure(Function #7)
- 67 [-]: MOVE      R0 R6        ; R0 := R6
- 68 [-]: SETTABLE  R13 K27 R14  ; R13["StalkerFlicker"] := R14
- 69 [-]: CLOSURE   R14 7        ; R14 := closure(Function #8)
- 70 [-]: MOVE      R0 R6        ; R0 := R6
- 71 [-]: SETTABLE  R13 K28 R14  ; R13["PersistentEnemyFlicker"] := R14
- 72 [-]: CLOSURE   R14 8        ; R14 := closure(Function #9)
- 73 [-]: MOVE      R0 R6        ; R0 := R6
- 74 [-]: SETTABLE  R13 K29 R14  ; R13["FactionHunterFlicker"] := R14
- 75 [-]: CLOSURE   R14 9        ; R14 := closure(Function #10)
- 76 [-]: MOVE      R0 R5        ; R0 := R5
- 77 [-]: MOVE      R0 R7        ; R0 := R7
- 78 [-]: MOVE      R0 R8        ; R0 := R8
- 79 [-]: SETTABLE  R13 K30 R14  ; R13["SpawnEnemy"] := R14
- 80 [-]: CLOSURE   R14 10       ; R14 := closure(Function #11)
- 81 [-]: MOVE      R0 R5        ; R0 := R5
- 82 [-]: SETTABLE  R13 K31 R14  ; R13["MonitorEnemy"] := R14
- 83 [-]: CLOSURE   R14 11       ; R14 := closure(Function #12)
- 84 [-]: SETTABLE  R13 K32 R14  ; R13["EncountersAllowed"] := R14
- 85 [-]: CLOSURE   R14 12       ; R14 := closure(Function #13)
- 86 [-]: MOVE      R0 R11       ; R0 := R11
- 87 [-]: MOVE      R0 R12       ; R0 := R12
- 88 [-]: SETTABLE  R13 K33 R14  ; R13["RequestEncounter"] := R14
- 89 [-]: CLOSURE   R14 13       ; R14 := closure(Function #14)
- 90 [-]: MOVE      R0 R11       ; R0 := R11
- 91 [-]: MOVE      R0 R12       ; R0 := R12
- 92 [-]: SETTABLE  R13 K34 R14  ; R13["ReleaseEncounter"] := R14
- 93 [-]: CLOSURE   R14 14       ; R14 := closure(Function #15)
- 94 [-]: MOVE      R0 R12       ; R0 := R12
- 95 [-]: MOVE      R0 R11       ; R0 := R11
- 96 [-]: SETTABLE  R13 K35 R14  ; R13["Reset"] := R14
- 97 [-]: RETURN    R13 2        ; return R13
- 98 [-]: RETURN    R0 1         ; return 
+  1 [-]: LOADK     R0 K0        ; R0 := 0
+  2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
+  3 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
+  4 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+  5 [-]: MOVE      R0 R0        ; R0 := R0
+  6 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
+  7 [-]: GETGLOBAL R5 K1        ; R5 := _T
+  8 [-]: SETTABLE  R5 K2 K3     ; R5["EncounterTargetPlayer"] := nil
+  9 [-]: GETGLOBAL R5 K1        ; R5 := _T
+ 10 [-]: SETTABLE  R5 K4 K5     ; R5["gEncounterActive"] := "0x0"
+ 11 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 12 [-]: NEWTABLE  R6 0 0       ; R6 := {}
+ 13 [-]: NEWTABLE  R7 0 10      ; R7 := {}
+ 14 [-]: NEWTABLE  R8 0 4       ; R8 := {}
+ 15 [-]: SETTABLE  R8 K7 K0     ; R8["ENEMY_KILLED"] := 0
+ 16 [-]: SETTABLE  R8 K8 K9     ; R8["ENEMY_FLEE"] := 1
+ 17 [-]: SETTABLE  R8 K10 K11   ; R8["ENEMY_BORED"] := 2
+ 18 [-]: SETTABLE  R8 K12 K13   ; R8["PLAYER_KILLED"] := 3
+ 19 [-]: SETTABLE  R7 K6 R8     ; R7["MONITOR_EVENTS"] := R8
+ 20 [-]: CLOSURE   R8 4         ; R8 := closure(Function #5)
+ 21 [-]: MOVE      R0 R2        ; R0 := R2
+ 22 [-]: SETTABLE  R7 K14 R8    ; R7["StalkerFlicker"] := R8
+ 23 [-]: CLOSURE   R8 5         ; R8 := closure(Function #6)
+ 24 [-]: MOVE      R0 R2        ; R0 := R2
+ 25 [-]: SETTABLE  R7 K15 R8    ; R7["PersistentEnemyFlicker"] := R8
+ 26 [-]: CLOSURE   R8 6         ; R8 := closure(Function #7)
+ 27 [-]: MOVE      R0 R2        ; R0 := R2
+ 28 [-]: SETTABLE  R7 K16 R8    ; R7["FactionHunterFlicker"] := R8
+ 29 [-]: CLOSURE   R8 7         ; R8 := closure(Function #8)
+ 30 [-]: MOVE      R0 R1        ; R0 := R1
+ 31 [-]: MOVE      R0 R3        ; R0 := R3
+ 32 [-]: MOVE      R0 R4        ; R0 := R4
+ 33 [-]: SETTABLE  R7 K17 R8    ; R7["SpawnEnemy"] := R8
+ 34 [-]: CLOSURE   R8 8         ; R8 := closure(Function #9)
+ 35 [-]: MOVE      R0 R1        ; R0 := R1
+ 36 [-]: SETTABLE  R7 K18 R8    ; R7["MonitorEnemy"] := R8
+ 37 [-]: CLOSURE   R8 9         ; R8 := closure(Function #10)
+ 38 [-]: SETTABLE  R7 K19 R8    ; R7["EncountersAllowed"] := R8
+ 39 [-]: CLOSURE   R8 10        ; R8 := closure(Function #11)
+ 40 [-]: MOVE      R0 R5        ; R0 := R5
+ 41 [-]: MOVE      R0 R6        ; R0 := R6
+ 42 [-]: SETTABLE  R7 K20 R8    ; R7["RequestEncounter"] := R8
+ 43 [-]: CLOSURE   R8 11        ; R8 := closure(Function #12)
+ 44 [-]: MOVE      R0 R5        ; R0 := R5
+ 45 [-]: MOVE      R0 R6        ; R0 := R6
+ 46 [-]: SETTABLE  R7 K21 R8    ; R7["ReleaseEncounter"] := R8
+ 47 [-]: CLOSURE   R8 12        ; R8 := closure(Function #13)
+ 48 [-]: MOVE      R0 R6        ; R0 := R6
+ 49 [-]: MOVE      R0 R5        ; R0 := R5
+ 50 [-]: SETTABLE  R7 K22 R8    ; R7["Reset"] := R8
+ 51 [-]: RETURN    R7 2         ; return R7
+ 52 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 7
+; Defined at line: 3
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -145,7 +97,7 @@ code size: 5
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 13
+; Defined at line: 9
 ; #Upvalues:       0
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -314,7 +266,7 @@ code size: 5
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 73
+; Defined at line: 69
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -381,7 +333,7 @@ code size: 5
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 98
+; Defined at line: 94
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -422,159 +374,7 @@ code size: 5
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 115
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  16
-
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x72E5DB62"]
-  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xE0C25A13"]
-  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  5 [-]: MOVE      R2 R0        ; R2 := R0
-  6 [-]: TEST      R2 1         ; if R2 then PC := 51
-  7 [-]: JMP       51           ; PC := 51
-  8 [-]: GETGLOBAL R3 K2        ; R3 := gRegion
-  9 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0x848C9FE0"]
- 10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: LOADNIL   R4 R4        ; R4 := nil
- 12 [-]: GETGLOBAL R5 K4        ; R5 := 0xECFDD17
- 13 [-]: MOVE      R6 R3        ; R6 := R3
- 14 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
- 15 [-]: JMP       45           ; PC := 45
- 16 [-]: SELF      R10 R9 K0    ; R11 := R9; R10 := R9["0x72E5DB62"]
- 17 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 18 [-]: MOVE      R4 R10       ; R4 := R10
- 19 [-]: GETGLOBAL R10 K5       ; R10 := 0x400E7765
- 20 [-]: MOVE      R11 R4       ; R11 := R4
- 21 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 22 [-]: TEST      R10 1        ; if R10 then PC := 45
- 23 [-]: JMP       45           ; PC := 45
- 24 [-]: SELF      R10 R4 K1    ; R11 := R4; R10 := R4["0xE0C25A13"]
- 25 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 26 [-]: MOVE      R4 R10       ; R4 := R10
- 27 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 28 [-]: TEST      R10 0        ; if not R10 then PC := 41
- 29 [-]: JMP       41           ; PC := 41
- 30 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 31 [-]: LOADK     R11 K6       ; R11 := "player at: "
- 32 [-]: GETGLOBAL R12 K7       ; R12 := 0x9FAED6BC
- 33 [-]: MOVE      R13 R4       ; R13 := R4
- 34 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 35 [-]: LOADK     R13 K8       ; R13 := "  enemy at: "
- 36 [-]: GETGLOBAL R14 K7       ; R14 := 0x9FAED6BC
- 37 [-]: MOVE      R15 R1       ; R15 := R1
- 38 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 39 [-]: CONCAT    R11 R11 R14  ; R11 := R11 .. R12 .. R13 .. R14
- 40 [-]: CALL      R10 2 1      ; R10(R11)
- 41 [-]: EQ        0 R4 R1      ; if R4 ~= R1 then PC := 45
- 42 [-]: JMP       45           ; PC := 45
- 43 [-]: MOVE      R2 R1        ; R2 := R1
- 44 [-]: JMP       47           ; PC := 47
- 45 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 16; R7 := R8 end
- 46 [-]: JMP       16           ; PC := 16
- 47 [-]: GETGLOBAL R10 K9       ; R10 := 0x201191EA
- 48 [-]: LOADK     R11 K10      ; R11 := 1
- 49 [-]: CALL      R10 2 1      ; R10(R11)
- 50 [-]: JMP       6            ; PC := 6
- 51 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 139
-; #Upvalues:       3
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  16
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x9139A00"]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := gNpcSpawnPointType
-  4 [-]: GETGLOBAL R3 K3        ; R3 := 0x221C9700
-  5 [-]: CALL      R3 1 2       ; R3 := R3()
-  6 [-]: LOADK     R4 K4        ; R4 := 50
-  7 [-]: LOADK     R5 K5        ; R5 := 300
-  8 [-]: CALL      R0 6 2       ; R0 := R0(R1,R2,R3,R4,R5)
-  9 [-]: LOADNIL   R1 R1        ; R1 := nil
- 10 [-]: GETGLOBAL R2 K6        ; R2 := gGameRules
- 11 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xE20DC519"]
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: GETGLOBAL R3 K8        ; R3 := 0x400E7765
- 14 [-]: MOVE      R4 R0        ; R4 := R0
- 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: TEST      R3 1         ; if R3 then PC := 78
- 17 [-]: JMP       78           ; PC := 78
- 18 [-]: LEN       R3 R0        ; R3 := # R0
- 19 [-]: LT        0 K9 R3      ; if 0 >= R3 then PC := 78
- 20 [-]: JMP       78           ; PC := 78
- 21 [-]: GETGLOBAL R3 K10       ; R3 := 0x7FD4B57D
- 22 [-]: LOADK     R4 K11       ; R4 := 1
- 23 [-]: LEN       R5 R0        ; R5 := # R0
- 24 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 25 [-]: GETTABLE  R4 R0 R3     ; R4 := R0[R3]
- 26 [-]: SELF      R5 R4 K12    ; R6 := R4; R5 := R4["0xB1627322"]
- 27 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 28 [-]: TEST      R5 0         ; if not R5 then PC := 72
- 29 [-]: JMP       72           ; PC := 72
- 30 [-]: MOVE      R5 R1        ; R5 := R1
- 31 [-]: SELF      R6 R4 K13    ; R7 := R4; R6 := R4["0xCE832AFF"]
- 32 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 33 [-]: LOADK     R7 K11       ; R7 := 1
- 34 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 35 [-]: LEN       R8 R8        ; R8 := # R8
- 36 [-]: LOADK     R9 K11       ; R9 := 1
- 37 [-]: FORPREP   R7 44        ; R7 -= R9; PC := 44
- 38 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 39 [-]: GETTABLE  R11 R11 R10  ; R11 := R11[R10]
- 40 [-]: EQ        0 R6 R11     ; if R6 ~= R11 then PC := 44
- 41 [-]: JMP       44           ; PC := 44
- 42 [-]: MOVE      R5 R0        ; R5 := R0
- 43 [-]: JMP       45           ; PC := 45
- 44 [-]: FORLOOP   R7 38        ; R7 += R9; if R7 <= R8 then begin PC := 38; R10 := R7 end
- 45 [-]: TEST      R5 0         ; if not R5 then PC := 72
- 46 [-]: JMP       72           ; PC := 72
- 47 [-]: SELF      R11 R4 K14   ; R12 := R4; R11 := R4["0x72E5DB62"]
- 48 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 49 [-]: GETGLOBAL R12 K8       ; R12 := 0x400E7765
- 50 [-]: MOVE      R13 R11      ; R13 := R11
- 51 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 52 [-]: TEST      R12 1        ; if R12 then PC := 72
- 53 [-]: JMP       72           ; PC := 72
- 54 [-]: SELF      R12 R11 K13  ; R13 := R11; R12 := R11["0xCE832AFF"]
- 55 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 56 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 57 [-]: EQ        1 R12 R13    ; if R12 == R13 then PC := 72
- 58 [-]: JMP       72           ; PC := 72
- 59 [-]: GETGLOBAL R13 K15      ; R13 := Lotus_Game
- 60 [-]: GETTABLE  R13 R13 K16  ; R13 := R13["MT_RESCUE"]
- 61 [-]: EQ        1 R2 R13     ; if R2 == R13 then PC := 67
- 62 [-]: JMP       67           ; PC := 67
- 63 [-]: GETGLOBAL R13 K15      ; R13 := Lotus_Game
- 64 [-]: GETTABLE  R13 R13 K17  ; R13 := R13["MT_INTEL"]
- 65 [-]: EQ        0 R2 R13     ; if R2 ~= R13 then PC := 70
- 66 [-]: JMP       70           ; PC := 70
- 67 [-]: GETUPVAL  R13 U2       ; R13 := U2
- 68 [-]: EQ        1 R12 R13    ; if R12 == R13 then PC := 72
- 69 [-]: JMP       72           ; PC := 72
- 70 [-]: MOVE      R1 R4        ; R1 := R4
- 71 [-]: JMP       78           ; PC := 78
- 72 [-]: GETGLOBAL R13 K18      ; R13 := table
- 73 [-]: GETTABLE  R13 R13 K19  ; R13 := R13["0xCDB1FD5E"]
- 74 [-]: MOVE      R14 R0       ; R14 := R0
- 75 [-]: MOVE      R15 R3       ; R15 := R3
- 76 [-]: CALL      R13 3 1      ; R13(R14,R15)
- 77 [-]: JMP       13           ; PC := 13
- 78 [-]: RETURN    R1 2         ; return R1
- 79 [-]: RETURN    R0 1         ; return 
-
-
-; Function #7:
-;
-; Name:            
-; Defined at line: 195
+; Defined at line: 127
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -595,10 +395,10 @@ code size: 5
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 200
+; Defined at line: 132
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -615,10 +415,10 @@ code size: 5
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 204
+; Defined at line: 136
 ; #Upvalues:       1
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -640,10 +440,10 @@ code size: 5
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 209
+; Defined at line: 141
 ; #Upvalues:       3
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -831,10 +631,10 @@ code size: 5
 180 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 292
+; Defined at line: 224
 ; #Upvalues:       1
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1039,10 +839,10 @@ code size: 5
 197 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 405
+; Defined at line: 337
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1102,10 +902,10 @@ code size: 5
  52 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 413
+; Defined at line: 345
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1150,10 +950,10 @@ code size: 5
  37 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 433
+; Defined at line: 365
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1175,10 +975,10 @@ code size: 5
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 441
+; Defined at line: 373
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0

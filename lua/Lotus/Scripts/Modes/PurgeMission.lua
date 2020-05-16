@@ -1,7 +1,7 @@
 code size: 87
 code size: 1
 code size: 1
-code size: 13
+code size: 11
 code size: 19
 code size: 6
 code size: 97
@@ -14,7 +14,7 @@ code size: 26
 code size: 1
 code size: 26
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Modes\PurgeMission.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Modes\PurgeMission.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -146,18 +146,16 @@ code size: 26
 ; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x3E2F6BF"]
+  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x372CB914"]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0["0xDE5882DD"]
+  4 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0["0x62914D1F"]
   5 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  6 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0x62914D1F"]
-  7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  8 [-]: GETGLOBAL R2 K4        ; R2 := gGameRules
-  9 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0x306217CF"]
- 10 [-]: MOVE      R4 R1        ; R4 := R1
- 11 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
- 12 [-]: RETURN    R2 0         ; return R2,...
- 13 [-]: RETURN    R0 1         ; return 
+  6 [-]: GETGLOBAL R2 K3        ; R2 := gGameRules
+  7 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x306217CF"]
+  8 [-]: MOVE      R4 R1        ; R4 := R1
+  9 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
+ 10 [-]: RETURN    R2 0         ; return R2,...
+ 11 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:

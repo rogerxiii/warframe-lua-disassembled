@@ -1,8 +1,7 @@
-code size: 15
+code size: 10
 code size: 28
-code size: 14
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\WeaponAttachments\CorpusFreezeRay.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\WeaponAttachments\CorpusFreezeRay.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -20,12 +19,7 @@ code size: 14
   7 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   8 [-]: SETGLOBAL R2 K4        ; BeamMain := R2
   9 [-]: SETGLOBAL R2 K5        ; 0x73430C78 := R2
- 10 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
- 11 [-]: MOVE      R0 R1        ; R0 := R1
- 12 [-]: MOVE      R0 R0        ; R0 := R0
- 13 [-]: SETGLOBAL R2 K6        ; ProjUpdateWorldPos := R2
- 14 [-]: SETGLOBAL R2 K7        ; 0x2798347F := R2
- 15 [-]: RETURN    R0 1         ; return 
+ 10 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -65,30 +59,5 @@ code size: 14
  26 [-]: CALL      R3 2 1       ; R3(R4)
  27 [-]: JMP       1            ; PC := 1
  28 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 16
-; #Upvalues:       2
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
-  2 [-]: MOVE      R2 R0        ; R2 := R0
-  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 0         ; if not R1 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0x7BAB77F"]
-  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 10 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["0xE11298E3"]
- 11 [-]: MOVE      R3 R0        ; R3 := R0
- 12 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 13 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 14 [-]: RETURN    R0 1         ; return 
 
 

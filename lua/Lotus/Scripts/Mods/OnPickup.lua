@@ -2,14 +2,14 @@ code size: 40
 code size: 4
 code size: 15
 code size: 12
-code size: 172
+code size: 177
 code size: 3
 code size: 15
 code size: 237
 code size: 16
 code size: 86
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Mods\OnPickup.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Mods\OnPickup.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -283,34 +283,39 @@ code size: 86
 148 [-]: LOADK     R19 K36      ; R19 := 0
 149 [-]: CALL      R18 2 1      ; R18(R19)
 150 [-]: JMP       85           ; PC := 85
-151 [-]: SELF      R18 R5 K37   ; R19 := R5; R18 := R5["0xF21555A7"]
-152 [-]: GETGLOBAL R20 K5       ; R20 := Game
-153 [-]: GETTABLE  R20 R20 K6   ; R20 := R20["AVATAR_ABILITY_STRENGTH"]
-154 [-]: GETGLOBAL R21 K5       ; R21 := Game
-155 [-]: GETTABLE  R21 R21 K7   ; R21 := R21["STACKING_MULTIPLY"]
-156 [-]: GETUPVAL  R22 U0       ; R22 := U0
-157 [-]: MOVE      R23 R2       ; R23 := R2
-158 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
-159 [-]: CALL      R18 0 1      ; R18(R19,...)
-160 [-]: GETGLOBAL R18 K0       ; R18 := 0x400E7765
-161 [-]: MOVE      R19 R6       ; R19 := R6
-162 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-163 [-]: TEST      R18 1        ; if R18 then PC := 167
-164 [-]: JMP       167          ; PC := 167
-165 [-]: SELF      R18 R6 K34   ; R19 := R6; R18 := R6["0xD4C2743F"]
-166 [-]: CALL      R18 2 1      ; R18(R19)
-167 [-]: SELF      R18 R0 K20   ; R19 := R0; R18 := R0["0x584F13D6"]
-168 [-]: MOVE      R20 R7       ; R20 := R7
-169 [-]: MOVE      R21 R0       ; R21 := R0
-170 [-]: MOVE      R22 R1       ; R22 := R1
-171 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
-172 [-]: RETURN    R0 1         ; return 
+151 [-]: GETGLOBAL R18 K0       ; R18 := 0x400E7765
+152 [-]: MOVE      R19 R6       ; R19 := R6
+153 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+154 [-]: TEST      R18 1        ; if R18 then PC := 158
+155 [-]: JMP       158          ; PC := 158
+156 [-]: SELF      R18 R6 K34   ; R19 := R6; R18 := R6["0xD4C2743F"]
+157 [-]: CALL      R18 2 1      ; R18(R19)
+158 [-]: GETGLOBAL R18 K0       ; R18 := 0x400E7765
+159 [-]: MOVE      R19 R0       ; R19 := R0
+160 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+161 [-]: TEST      R18 1        ; if R18 then PC := 177
+162 [-]: JMP       177          ; PC := 177
+163 [-]: SELF      R18 R5 K37   ; R19 := R5; R18 := R5["0xF21555A7"]
+164 [-]: GETGLOBAL R20 K5       ; R20 := Game
+165 [-]: GETTABLE  R20 R20 K6   ; R20 := R20["AVATAR_ABILITY_STRENGTH"]
+166 [-]: GETGLOBAL R21 K5       ; R21 := Game
+167 [-]: GETTABLE  R21 R21 K7   ; R21 := R21["STACKING_MULTIPLY"]
+168 [-]: GETUPVAL  R22 U0       ; R22 := U0
+169 [-]: MOVE      R23 R2       ; R23 := R2
+170 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+171 [-]: CALL      R18 0 1      ; R18(R19,...)
+172 [-]: SELF      R18 R0 K20   ; R19 := R0; R18 := R0["0x584F13D6"]
+173 [-]: MOVE      R20 R7       ; R20 := R7
+174 [-]: MOVE      R21 R0       ; R21 := R0
+175 [-]: MOVE      R22 R1       ; R22 := R1
+176 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
+177 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 85
+; Defined at line: 87
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -324,7 +329,7 @@ code size: 86
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 89
+; Defined at line: 91
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -350,7 +355,7 @@ code size: 86
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 104
+; Defined at line: 106
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -598,7 +603,7 @@ code size: 86
 ; Function #7.1:
 ;
 ; Name:            
-; Defined at line: 115
+; Defined at line: 117
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -625,7 +630,7 @@ code size: 86
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 217
+; Defined at line: 219
 ; #Upvalues:       3
 ; #Parameters:     5
 ; Is_vararg:       0

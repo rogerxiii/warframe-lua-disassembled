@@ -1,16 +1,14 @@
-code size: 27
-code size: 37
-code size: 11
+code size: 20
 code size: 386
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\ExplosionDeath.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\ExplosionDeath.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  8
+; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "CloakHDR"
@@ -24,97 +22,20 @@ code size: 386
  10 [-]: GETGLOBAL R3 K5        ; R3 := 0xCAA43ABB
  11 [-]: LOADK     R4 K6        ; R4 := "/EE/Types/Physics/Ragdoll"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K0        ; R4 := 0xEC274B1A
- 14 [-]: LOADK     R5 K7        ; R5 := "EffectsDeco"
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: CLOSURE   R5 0         ; R5 := closure(Function #1)
- 17 [-]: MOVE      R0 R4        ; R0 := R4
- 18 [-]: CLOSURE   R6 1         ; R6 := closure(Function #2)
- 19 [-]: MOVE      R0 R1        ; R0 := R1
- 20 [-]: CLOSURE   R7 2         ; R7 := closure(Function #3)
- 21 [-]: MOVE      R0 R3        ; R0 := R3
- 22 [-]: MOVE      R0 R2        ; R0 := R2
- 23 [-]: MOVE      R0 R0        ; R0 := R0
- 24 [-]: MOVE      R0 R1        ; R0 := R1
- 25 [-]: SETGLOBAL R7 K8        ; DissolveTheEnemy := R7
- 26 [-]: SETGLOBAL R7 K9        ; 0xF1458724 := R7
- 27 [-]: RETURN    R0 1         ; return 
+ 13 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
+ 14 [-]: MOVE      R0 R3        ; R0 := R3
+ 15 [-]: MOVE      R0 R2        ; R0 := R2
+ 16 [-]: MOVE      R0 R0        ; R0 := R0
+ 17 [-]: MOVE      R0 R1        ; R0 := R1
+ 18 [-]: SETGLOBAL R4 K7        ; DissolveTheEnemy := R4
+ 19 [-]: SETGLOBAL R4 K8        ; 0xF1458724 := R4
+ 20 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 17
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  13
-
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x15D4DAEE"]
-  2 [-]: GETGLOBAL R3 K1        ; R3 := gDecorationType
-  3 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  4 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  5 [-]: GETGLOBAL R3 K2        ; R3 := 0x63B09107
-  6 [-]: MOVE      R4 R1        ; R4 := R1
-  7 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
-  8 [-]: JMP       29           ; PC := 29
-  9 [-]: SELF      R8 R7 K3     ; R9 := R7; R8 := R7["0x6A2E414D"]
- 10 [-]: LOADK     R10 K4       ; R10 := 0
- 11 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 12 [-]: SELF      R9 R8 K5     ; R10 := R8; R9 := R8["0x9FB1775E"]
- 13 [-]: GETGLOBAL R11 K6       ; R11 := Lotus_Game
- 14 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["UNLIT_ATTEN"]
- 15 [-]: LOADK     R12 K4       ; R12 := 0
- 16 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 17 [-]: LT        0 K8 R9      ; if 100 >= R9 then PC := 29
- 18 [-]: JMP       29           ; PC := 29
- 19 [-]: SELF      R10 R7 K9    ; R11 := R7; R10 := R7["0xCE832AFF"]
- 20 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 21 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 22 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 29
- 23 [-]: JMP       29           ; PC := 29
- 24 [-]: GETGLOBAL R10 K10      ; R10 := table
- 25 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["0xE6450C9D"]
- 26 [-]: MOVE      R11 R2       ; R11 := R2
- 27 [-]: MOVE      R12 R7       ; R12 := R7
- 28 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 29 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 9; R5 := R6 end
- 30 [-]: JMP       9            ; PC := 9
- 31 [-]: GETGLOBAL R10 K10      ; R10 := table
- 32 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["0xE6450C9D"]
- 33 [-]: MOVE      R11 R2       ; R11 := R2
- 34 [-]: MOVE      R12 R0       ; R12 := R0
- 35 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 36 [-]: RETURN    R2 2         ; return R2
- 37 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 31
-; #Upvalues:       1
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  10
-
-  1 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1["0xA2B01604"]
-  2 [-]: MOVE      R4 R0        ; R4 := R0
-  3 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
-  4 [-]: SELF      R3 R1 K1     ; R4 := R1; R3 := R1["0xD124E361"]
-  5 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  6 [-]: GETTABLE  R6 R2 K2     ; R6 := R2["x"]
-  7 [-]: GETTABLE  R7 R2 K3     ; R7 := R2["y"]
-  8 [-]: GETTABLE  R8 R2 K4     ; R8 := R2["z"]
-  9 [-]: LOADK     R9 K5        ; R9 := 2.5
- 10 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
- 11 [-]: RETURN    R0 1         ; return 
-
-
-; Function #3:
-;
-; Name:            
-; Defined at line: 36
+; Defined at line: 16
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -10,7 +10,7 @@ code size: 86
 code size: 55
 code size: 42
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Railjack\CrewshipMedicBubbleAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Railjack\CrewshipMedicBubbleAbility.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -40,7 +40,7 @@ code size: 31
 code size: 72
 code size: 21
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\EE\Interface\Components\ScrollBar.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\EE\Interface\Components\ScrollBar.luac 
 
 ; Name:            
 ; Defined at line: 0

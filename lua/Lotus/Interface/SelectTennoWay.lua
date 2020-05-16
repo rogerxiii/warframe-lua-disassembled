@@ -11,7 +11,7 @@ code size: 48
 code size: 93
 code size: 5
 code size: 14
-code size: 202
+code size: 191
 code size: 5
 code size: 51
 code size: 1
@@ -51,7 +51,7 @@ code size: 1
 code size: 3
 code size: 6
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\SelectTennoWay.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\SelectTennoWay.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -683,8 +683,8 @@ code size: 6
   6 [-]: SELF      R1 R1 K0     ; R2 := R1; R1 := R1["0x9D2060CB"]
   7 [-]: CLOSURE   R3 0         ; R3 := closure(Function #8.1)
   8 [-]: MOVE      R0 R0        ; R0 := R0
-  9 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 10 [-]: GETUPVAL  R0 U1        ; R0 := U1
+  9 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 10 [-]: GETUPVAL  R0 U2        ; R0 := U2
  11 [-]: GETUPVAL  R0 U3        ; R0 := U3
  12 [-]: GETUPVAL  R0 U4        ; R0 := U4
  13 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -698,7 +698,7 @@ code size: 6
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  14
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: EQ        1 R1 K0      ; if R1 == nil then PC := 9
@@ -711,203 +711,192 @@ code size: 6
   9 [-]: MOVE      R1 R0        ; R1 := R0
  10 [-]: MOVE      R1 R1        ; R1 := R1
  11 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 12 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["0xF81722A2"]
- 13 [-]: MOVE      R3 R1        ; R3 := R1
- 14 [-]: LOADK     R4 K3        ; R4 := 100
- 15 [-]: LOADK     R5 K4        ; R5 := 75
- 16 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 17 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 18 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0x1C692998"]
- 19 [-]: MOVE      R5 R0        ; R5 := R0
- 20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 21 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 22 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 37
- 23 [-]: JMP       37           ; PC := 37
- 24 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["Id"]
- 25 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 26 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["Id"]
- 27 [-]: LT        0 R4 R5      ; if R4 >= R5 then PC := 31
- 28 [-]: JMP       31           ; PC := 31
- 29 [-]: SUB       R3 R3 K6     ; R3 := R3 - 40
- 30 [-]: JMP       37           ; PC := 37
- 31 [-]: GETTABLE  R4 R0 K1     ; R4 := R0["Id"]
- 32 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 33 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["Id"]
- 34 [-]: LT        0 R5 R4      ; if R5 >= R4 then PC := 37
- 35 [-]: JMP       37           ; PC := 37
- 36 [-]: ADD       R3 R3 K6     ; R3 := R3 + 40
- 37 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 38 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["0xF81722A2"]
- 39 [-]: MOVE      R5 R1        ; R5 := R1
- 40 [-]: LOADK     R6 K7        ; R6 := 340
- 41 [-]: LOADK     R7 K8        ; R7 := 260
- 42 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 43 [-]: NEWTABLE  R5 3 0       ; R5 := {}
- 44 [-]: MOVE      R6 R2        ; R6 := R2
- 45 [-]: MOVE      R7 R3        ; R7 := R3
- 46 [-]: MOVE      R8 R4        ; R8 := R4
- 47 [-]: SETLIST   R5 3 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 3
- 48 [-]: GETGLOBAL R6 K9        ; R6 := 0x52E17A90
- 49 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
- 50 [-]: GETTABLE  R8 R0 K11    ; R8 := R0["mClipName"]
- 51 [-]: GETGLOBAL R9 K12       ; R9 := UISys
- 52 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["FlashInstance_EASE_OUT"]
- 53 [-]: NEWTABLE  R10 1 0      ; R10 := {}
- 54 [-]: LOADK     R11 K14      ; R11 := "_x"
- 55 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 56 [-]: NEWTABLE  R11 1 0      ; R11 := {}
- 57 [-]: MOVE      R12 R3       ; R12 := R3
- 58 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 59 [-]: LOADK     R12 K15      ; R12 := 0.44999998807907
- 60 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
- 61 [-]: GETGLOBAL R6 K9        ; R6 := 0x52E17A90
- 62 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
- 63 [-]: GETTABLE  R8 R0 K11    ; R8 := R0["mClipName"]
- 64 [-]: LOADK     R9 K16       ; R9 := ".Mask"
- 65 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 66 [-]: GETGLOBAL R9 K12       ; R9 := UISys
- 67 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["FlashInstance_EASE_OUT"]
- 68 [-]: NEWTABLE  R10 1 0      ; R10 := {}
- 69 [-]: LOADK     R11 K17      ; R11 := "_width"
- 70 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
- 71 [-]: NEWTABLE  R11 1 0      ; R11 := {}
- 72 [-]: MOVE      R12 R4       ; R12 := R4
- 73 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 74 [-]: LOADK     R12 K15      ; R12 := 0.44999998807907
- 75 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
- 76 [-]: GETGLOBAL R6 K9        ; R6 := 0x52E17A90
- 77 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
- 78 [-]: GETTABLE  R8 R0 K11    ; R8 := R0["mClipName"]
- 79 [-]: LOADK     R9 K18       ; R9 := ".Bg"
- 80 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 81 [-]: GETGLOBAL R9 K12       ; R9 := UISys
- 82 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["FlashInstance_EASE_OUT"]
- 83 [-]: NEWTABLE  R10 2 0      ; R10 := {}
- 84 [-]: LOADK     R11 K17      ; R11 := "_width"
- 85 [-]: CLOSURE   R12 0        ; R12 := closure(Function #8.1.1)
- 86 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 87 [-]: MOVE      R0 R0        ; R0 := R0
- 88 [-]: SETLIST   R10 2 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 2
- 89 [-]: NEWTABLE  R11 2 0      ; R11 := {}
- 90 [-]: MOVE      R12 R4       ; R12 := R4
- 91 [-]: LOADK     R13 K19      ; R13 := 1
- 92 [-]: SETLIST   R11 2 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 2
- 93 [-]: LOADK     R12 K15      ; R12 := 0.44999998807907
- 94 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
- 95 [-]: GETGLOBAL R6 K9        ; R6 := 0x52E17A90
- 96 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
- 97 [-]: GETTABLE  R8 R0 K11    ; R8 := R0["mClipName"]
- 98 [-]: LOADK     R9 K20       ; R9 := ".RightEdge"
- 99 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
-100 [-]: GETGLOBAL R9 K12       ; R9 := UISys
-101 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["FlashInstance_EASE_OUT"]
-102 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-103 [-]: LOADK     R11 K14      ; R11 := "_x"
-104 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-105 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-106 [-]: MUL       R12 R4 K21   ; R12 := R4 * 0.5
-107 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-108 [-]: LOADK     R12 K15      ; R12 := 0.44999998807907
-109 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
-110 [-]: GETGLOBAL R6 K9        ; R6 := 0x52E17A90
-111 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-112 [-]: GETTABLE  R8 R0 K11    ; R8 := R0["mClipName"]
-113 [-]: LOADK     R9 K22       ; R9 := ".LeftEdge"
-114 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
-115 [-]: GETGLOBAL R9 K12       ; R9 := UISys
-116 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["FlashInstance_EASE_OUT"]
-117 [-]: NEWTABLE  R10 1 0      ; R10 := {}
-118 [-]: LOADK     R11 K14      ; R11 := "_x"
-119 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
-120 [-]: NEWTABLE  R11 1 0      ; R11 := {}
-121 [-]: UNM       R12 R4       ; R12 := - R4
-122 [-]: MUL       R12 R12 K21  ; R12 := R12 * 0.5
-123 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
-124 [-]: LOADK     R12 K15      ; R12 := 0.44999998807907
-125 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
-126 [-]: GETUPVAL  R6 U1        ; R6 := U1
-127 [-]: GETTABLE  R6 R6 K2     ; R6 := R6["0xF81722A2"]
-128 [-]: MOVE      R7 R1        ; R7 := R1
-129 [-]: GETUPVAL  R8 U3        ; R8 := U3
-130 [-]: GETUPVAL  R9 U4        ; R9 := U4
-131 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
-132 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-133 [-]: SELF      R7 R7 K23    ; R8 := R7; R7 := R7["0x880196A7"]
-134 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mClipName"]
-135 [-]: LOADK     R10 K24      ; R10 := "Icon"
-136 [-]: LOADK     R11 K25      ; R11 := "_color"
-137 [-]: MOVE      R12 R6       ; R12 := R6
-138 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-139 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-140 [-]: SELF      R7 R7 K23    ; R8 := R7; R7 := R7["0x880196A7"]
-141 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mClipName"]
-142 [-]: LOADK     R10 K26      ; R10 := "Underline"
-143 [-]: LOADK     R11 K25      ; R11 := "_color"
-144 [-]: MOVE      R12 R6       ; R12 := R6
-145 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-146 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-147 [-]: SELF      R7 R7 K23    ; R8 := R7; R7 := R7["0x880196A7"]
-148 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mClipName"]
-149 [-]: LOADK     R10 K27      ; R10 := "Rings"
-150 [-]: LOADK     R11 K25      ; R11 := "_color"
-151 [-]: MOVE      R12 R6       ; R12 := R6
-152 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-153 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-154 [-]: SELF      R7 R7 K23    ; R8 := R7; R7 := R7["0x880196A7"]
-155 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mClipName"]
-156 [-]: LOADK     R10 K28      ; R10 := "Name"
-157 [-]: LOADK     R11 K29      ; R11 := "textColor"
-158 [-]: GETUPVAL  R12 U1       ; R12 := U1
-159 [-]: GETTABLE  R12 R12 K2   ; R12 := R12["0xF81722A2"]
-160 [-]: MOVE      R13 R1       ; R13 := R1
-161 [-]: GETGLOBAL R14 K30      ; R14 := _G
-162 [-]: GETTABLE  R14 R14 K31  ; R14 := R14["UIColor_Black"]
-163 [-]: GETUPVAL  R15 U4       ; R15 := U4
-164 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
-165 [-]: CALL      R7 0 1       ; R7(R8,...)
-166 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-167 [-]: SELF      R7 R7 K32    ; R8 := R7; R7 := R7["0x7E1F26D7"]
-168 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mClipName"]
-169 [-]: LOADK     R10 K18      ; R10 := ".Bg"
-170 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-171 [-]: GETUPVAL  R10 U1       ; R10 := U1
-172 [-]: GETTABLE  R10 R10 K2   ; R10 := R10["0xF81722A2"]
-173 [-]: MOVE      R11 R1       ; R11 := R1
-174 [-]: GETGLOBAL R12 K33      ; R12 := bgHoverMaterial
-175 [-]: GETGLOBAL R13 K34      ; R13 := bgMaterial
-176 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
-177 [-]: CALL      R7 0 1       ; R7(R8,...)
-178 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-179 [-]: SELF      R7 R7 K32    ; R8 := R7; R7 := R7["0x7E1F26D7"]
-180 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mClipName"]
-181 [-]: LOADK     R10 K20      ; R10 := ".RightEdge"
-182 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-183 [-]: GETUPVAL  R10 U1       ; R10 := U1
-184 [-]: GETTABLE  R10 R10 K2   ; R10 := R10["0xF81722A2"]
-185 [-]: MOVE      R11 R1       ; R11 := R1
-186 [-]: GETGLOBAL R12 K35      ; R12 := edgeHoverRightMaterial
-187 [-]: GETGLOBAL R13 K36      ; R13 := edgeRightMaterial
-188 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
-189 [-]: CALL      R7 0 1       ; R7(R8,...)
-190 [-]: GETGLOBAL R7 K10       ; R7 := mMovie
-191 [-]: SELF      R7 R7 K32    ; R8 := R7; R7 := R7["0x7E1F26D7"]
-192 [-]: GETTABLE  R9 R0 K11    ; R9 := R0["mClipName"]
-193 [-]: LOADK     R10 K22      ; R10 := ".LeftEdge"
-194 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-195 [-]: GETUPVAL  R10 U1       ; R10 := U1
-196 [-]: GETTABLE  R10 R10 K2   ; R10 := R10["0xF81722A2"]
-197 [-]: MOVE      R11 R1       ; R11 := R1
-198 [-]: GETGLOBAL R12 K37      ; R12 := edgeHoverMaterial
-199 [-]: GETGLOBAL R13 K38      ; R13 := edgeMaterial
-200 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
-201 [-]: CALL      R7 0 1       ; R7(R8,...)
-202 [-]: RETURN    R0 1         ; return 
+ 12 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0x1C692998"]
+ 13 [-]: MOVE      R4 R0        ; R4 := R0
+ 14 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 15 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 16 [-]: EQ        1 R3 K0      ; if R3 == nil then PC := 31
+ 17 [-]: JMP       31           ; PC := 31
+ 18 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["Id"]
+ 19 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 20 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["Id"]
+ 21 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 25
+ 22 [-]: JMP       25           ; PC := 25
+ 23 [-]: SUB       R2 R2 K3     ; R2 := R2 - 40
+ 24 [-]: JMP       31           ; PC := 31
+ 25 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["Id"]
+ 26 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 27 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["Id"]
+ 28 [-]: LT        0 R4 R3      ; if R4 >= R3 then PC := 31
+ 29 [-]: JMP       31           ; PC := 31
+ 30 [-]: ADD       R2 R2 K3     ; R2 := R2 + 40
+ 31 [-]: GETUPVAL  R3 U2        ; R3 := U2
+ 32 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["0xF81722A2"]
+ 33 [-]: MOVE      R4 R1        ; R4 := R1
+ 34 [-]: LOADK     R5 K5        ; R5 := 340
+ 35 [-]: LOADK     R6 K6        ; R6 := 260
+ 36 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
+ 37 [-]: GETGLOBAL R4 K7        ; R4 := 0x52E17A90
+ 38 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+ 39 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]
+ 40 [-]: GETGLOBAL R7 K10       ; R7 := UISys
+ 41 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["FlashInstance_EASE_OUT"]
+ 42 [-]: NEWTABLE  R8 1 0       ; R8 := {}
+ 43 [-]: LOADK     R9 K12       ; R9 := "_x"
+ 44 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
+ 45 [-]: NEWTABLE  R9 1 0       ; R9 := {}
+ 46 [-]: MOVE      R10 R2       ; R10 := R2
+ 47 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
+ 48 [-]: LOADK     R10 K13      ; R10 := 0.44999998807907
+ 49 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+ 50 [-]: GETGLOBAL R4 K7        ; R4 := 0x52E17A90
+ 51 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+ 52 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]
+ 53 [-]: LOADK     R7 K14       ; R7 := ".Mask"
+ 54 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+ 55 [-]: GETGLOBAL R7 K10       ; R7 := UISys
+ 56 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["FlashInstance_EASE_OUT"]
+ 57 [-]: NEWTABLE  R8 1 0       ; R8 := {}
+ 58 [-]: LOADK     R9 K15       ; R9 := "_width"
+ 59 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
+ 60 [-]: NEWTABLE  R9 1 0       ; R9 := {}
+ 61 [-]: MOVE      R10 R3       ; R10 := R3
+ 62 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
+ 63 [-]: LOADK     R10 K13      ; R10 := 0.44999998807907
+ 64 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+ 65 [-]: GETGLOBAL R4 K7        ; R4 := 0x52E17A90
+ 66 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+ 67 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]
+ 68 [-]: LOADK     R7 K16       ; R7 := ".Bg"
+ 69 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+ 70 [-]: GETGLOBAL R7 K10       ; R7 := UISys
+ 71 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["FlashInstance_EASE_OUT"]
+ 72 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+ 73 [-]: LOADK     R9 K15       ; R9 := "_width"
+ 74 [-]: CLOSURE   R10 0        ; R10 := closure(Function #8.1.1)
+ 75 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 76 [-]: MOVE      R0 R0        ; R0 := R0
+ 77 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+ 78 [-]: NEWTABLE  R9 2 0       ; R9 := {}
+ 79 [-]: MOVE      R10 R3       ; R10 := R3
+ 80 [-]: LOADK     R11 K17      ; R11 := 1
+ 81 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
+ 82 [-]: LOADK     R10 K13      ; R10 := 0.44999998807907
+ 83 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+ 84 [-]: GETGLOBAL R4 K7        ; R4 := 0x52E17A90
+ 85 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+ 86 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]
+ 87 [-]: LOADK     R7 K18       ; R7 := ".RightEdge"
+ 88 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+ 89 [-]: GETGLOBAL R7 K10       ; R7 := UISys
+ 90 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["FlashInstance_EASE_OUT"]
+ 91 [-]: NEWTABLE  R8 1 0       ; R8 := {}
+ 92 [-]: LOADK     R9 K12       ; R9 := "_x"
+ 93 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
+ 94 [-]: NEWTABLE  R9 1 0       ; R9 := {}
+ 95 [-]: MUL       R10 R3 K19   ; R10 := R3 * 0.5
+ 96 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
+ 97 [-]: LOADK     R10 K13      ; R10 := 0.44999998807907
+ 98 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+ 99 [-]: GETGLOBAL R4 K7        ; R4 := 0x52E17A90
+100 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+101 [-]: GETTABLE  R6 R0 K9     ; R6 := R0["mClipName"]
+102 [-]: LOADK     R7 K20       ; R7 := ".LeftEdge"
+103 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+104 [-]: GETGLOBAL R7 K10       ; R7 := UISys
+105 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["FlashInstance_EASE_OUT"]
+106 [-]: NEWTABLE  R8 1 0       ; R8 := {}
+107 [-]: LOADK     R9 K12       ; R9 := "_x"
+108 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
+109 [-]: NEWTABLE  R9 1 0       ; R9 := {}
+110 [-]: UNM       R10 R3       ; R10 := - R3
+111 [-]: MUL       R10 R10 K19  ; R10 := R10 * 0.5
+112 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
+113 [-]: LOADK     R10 K13      ; R10 := 0.44999998807907
+114 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
+115 [-]: GETUPVAL  R4 U2        ; R4 := U2
+116 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["0xF81722A2"]
+117 [-]: MOVE      R5 R1        ; R5 := R1
+118 [-]: GETUPVAL  R6 U3        ; R6 := U3
+119 [-]: GETUPVAL  R7 U4        ; R7 := U4
+120 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+121 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+122 [-]: SELF      R5 R5 K21    ; R6 := R5; R5 := R5["0x880196A7"]
+123 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+124 [-]: LOADK     R8 K22       ; R8 := "Icon"
+125 [-]: LOADK     R9 K23       ; R9 := "_color"
+126 [-]: MOVE      R10 R4       ; R10 := R4
+127 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+128 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+129 [-]: SELF      R5 R5 K21    ; R6 := R5; R5 := R5["0x880196A7"]
+130 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+131 [-]: LOADK     R8 K24       ; R8 := "Underline"
+132 [-]: LOADK     R9 K23       ; R9 := "_color"
+133 [-]: MOVE      R10 R4       ; R10 := R4
+134 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+135 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+136 [-]: SELF      R5 R5 K21    ; R6 := R5; R5 := R5["0x880196A7"]
+137 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+138 [-]: LOADK     R8 K25       ; R8 := "Rings"
+139 [-]: LOADK     R9 K23       ; R9 := "_color"
+140 [-]: MOVE      R10 R4       ; R10 := R4
+141 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
+142 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+143 [-]: SELF      R5 R5 K21    ; R6 := R5; R5 := R5["0x880196A7"]
+144 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+145 [-]: LOADK     R8 K26       ; R8 := "Name"
+146 [-]: LOADK     R9 K27       ; R9 := "textColor"
+147 [-]: GETUPVAL  R10 U2       ; R10 := U2
+148 [-]: GETTABLE  R10 R10 K4   ; R10 := R10["0xF81722A2"]
+149 [-]: MOVE      R11 R1       ; R11 := R1
+150 [-]: GETGLOBAL R12 K28      ; R12 := _G
+151 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["UIColor_Black"]
+152 [-]: GETUPVAL  R13 U4       ; R13 := U4
+153 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+154 [-]: CALL      R5 0 1       ; R5(R6,...)
+155 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+156 [-]: SELF      R5 R5 K30    ; R6 := R5; R5 := R5["0x7E1F26D7"]
+157 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+158 [-]: LOADK     R8 K16       ; R8 := ".Bg"
+159 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+160 [-]: GETUPVAL  R8 U2        ; R8 := U2
+161 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["0xF81722A2"]
+162 [-]: MOVE      R9 R1        ; R9 := R1
+163 [-]: GETGLOBAL R10 K31      ; R10 := bgHoverMaterial
+164 [-]: GETGLOBAL R11 K32      ; R11 := bgMaterial
+165 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+166 [-]: CALL      R5 0 1       ; R5(R6,...)
+167 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+168 [-]: SELF      R5 R5 K30    ; R6 := R5; R5 := R5["0x7E1F26D7"]
+169 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+170 [-]: LOADK     R8 K18       ; R8 := ".RightEdge"
+171 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+172 [-]: GETUPVAL  R8 U2        ; R8 := U2
+173 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["0xF81722A2"]
+174 [-]: MOVE      R9 R1        ; R9 := R1
+175 [-]: GETGLOBAL R10 K33      ; R10 := edgeHoverRightMaterial
+176 [-]: GETGLOBAL R11 K34      ; R11 := edgeRightMaterial
+177 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+178 [-]: CALL      R5 0 1       ; R5(R6,...)
+179 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+180 [-]: SELF      R5 R5 K30    ; R6 := R5; R5 := R5["0x7E1F26D7"]
+181 [-]: GETTABLE  R7 R0 K9     ; R7 := R0["mClipName"]
+182 [-]: LOADK     R8 K20       ; R8 := ".LeftEdge"
+183 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
+184 [-]: GETUPVAL  R8 U2        ; R8 := U2
+185 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["0xF81722A2"]
+186 [-]: MOVE      R9 R1        ; R9 := R1
+187 [-]: GETGLOBAL R10 K35      ; R10 := edgeHoverMaterial
+188 [-]: GETGLOBAL R11 K36      ; R11 := edgeMaterial
+189 [-]: CALL      R8 4 0       ; R8,... := R8(R9,R10,R11)
+190 [-]: CALL      R5 0 1       ; R5(R6,...)
+191 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8.1.1:
 ;
 ; Name:            
-; Defined at line: 168
+; Defined at line: 166
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -923,7 +912,7 @@ code size: 6
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 185
+; Defined at line: 183
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -985,7 +974,7 @@ code size: 6
 ; Function #9.1:
 ;
 ; Name:            
-; Defined at line: 195
+; Defined at line: 193
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -997,7 +986,7 @@ code size: 6
 ; Function #9.2:
 ;
 ; Name:            
-; Defined at line: 199
+; Defined at line: 197
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1024,7 +1013,7 @@ code size: 6
 ; Function #9.3:
 ;
 ; Name:            
-; Defined at line: 207
+; Defined at line: 205
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1050,7 +1039,7 @@ code size: 6
 ; Function #9.4:
 ;
 ; Name:            
-; Defined at line: 216
+; Defined at line: 214
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1072,7 +1061,7 @@ code size: 6
 ; Function #9.5:
 ;
 ; Name:            
-; Defined at line: 224
+; Defined at line: 222
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1271,7 +1260,7 @@ code size: 6
 ; Function #9.6:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 262
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1327,7 +1316,7 @@ code size: 6
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 274
+; Defined at line: 272
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1366,7 +1355,7 @@ code size: 6
 ; Function #10.1:
 ;
 ; Name:            
-; Defined at line: 284
+; Defined at line: 282
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1432,7 +1421,7 @@ code size: 6
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 295
+; Defined at line: 293
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1663,7 +1652,7 @@ code size: 6
 ; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 317
+; Defined at line: 315
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1682,7 +1671,7 @@ code size: 6
 ; Function #11.2:
 ;
 ; Name:            
-; Defined at line: 336
+; Defined at line: 334
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1700,7 +1689,7 @@ code size: 6
 ; Function #11.2.1:
 ;
 ; Name:            
-; Defined at line: 338
+; Defined at line: 336
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1719,7 +1708,7 @@ code size: 6
 ; Function #11.3:
 ;
 ; Name:            
-; Defined at line: 346
+; Defined at line: 344
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1881,7 +1870,7 @@ code size: 6
 ; Function #11.3.1:
 ;
 ; Name:            
-; Defined at line: 361
+; Defined at line: 359
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1897,7 +1886,7 @@ code size: 6
 ; Function #11.3.2:
 ;
 ; Name:            
-; Defined at line: 362
+; Defined at line: 360
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1994,7 +1983,7 @@ code size: 6
 ; Function #11.3.2.1:
 ;
 ; Name:            
-; Defined at line: 368
+; Defined at line: 366
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2017,7 +2006,7 @@ code size: 6
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 383
+; Defined at line: 381
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2045,7 +2034,7 @@ code size: 6
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 388
+; Defined at line: 386
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2058,7 +2047,7 @@ code size: 6
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 392
+; Defined at line: 390
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2071,7 +2060,7 @@ code size: 6
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 396
+; Defined at line: 394
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2167,7 +2156,7 @@ code size: 6
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 423
+; Defined at line: 421
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2236,7 +2225,7 @@ code size: 6
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 454
+; Defined at line: 452
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2262,7 +2251,7 @@ code size: 6
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 464
+; Defined at line: 462
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2275,7 +2264,7 @@ code size: 6
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 468
+; Defined at line: 466
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2289,7 +2278,7 @@ code size: 6
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 472
+; Defined at line: 470
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2303,7 +2292,7 @@ code size: 6
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 476
+; Defined at line: 474
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2317,7 +2306,7 @@ code size: 6
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 480
+; Defined at line: 478
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2340,7 +2329,7 @@ code size: 6
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 488
+; Defined at line: 486
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2361,7 +2350,7 @@ code size: 6
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 494
+; Defined at line: 492
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2384,7 +2373,7 @@ code size: 6
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 500
+; Defined at line: 498
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2410,7 +2399,7 @@ code size: 6
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 506
+; Defined at line: 504
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2437,7 +2426,7 @@ code size: 6
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 512
+; Defined at line: 510
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2453,7 +2442,7 @@ code size: 6
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 517
+; Defined at line: 515
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2470,7 +2459,7 @@ code size: 6
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 521
+; Defined at line: 519
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2482,7 +2471,7 @@ code size: 6
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 524
+; Defined at line: 522
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2496,7 +2485,7 @@ code size: 6
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 528
+; Defined at line: 526
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

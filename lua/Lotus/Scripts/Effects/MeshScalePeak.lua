@@ -1,80 +1,31 @@
-code size: 11
-code size: 13
 code size: 8
 code size: 8
-code size: 17
 code size: 14
 code size: 90
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\MeshScalePeak.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\MeshScalePeak.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  6
+; Max Stack Size:  3
 
   1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
   2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
   3 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
-  4 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
-  5 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
-  6 [-]: CLOSURE   R5 5         ; R5 := closure(Function #6)
-  7 [-]: MOVE      R0 R2        ; R0 := R2
-  8 [-]: MOVE      R0 R4        ; R0 := R4
-  9 [-]: SETGLOBAL R5 K0        ; MaterialFadePeakMeshScale := R5
- 10 [-]: SETGLOBAL R5 K1        ; 0xDACE5A82 := R5
- 11 [-]: RETURN    R0 1         ; return 
+  4 [-]: MOVE      R0 R0        ; R0 := R0
+  5 [-]: MOVE      R0 R1        ; R0 := R1
+  6 [-]: SETGLOBAL R2 K0        ; MaterialFadePeakMeshScale := R2
+  7 [-]: SETGLOBAL R2 K1        ; 0xDACE5A82 := R2
+  8 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 13
-; #Upvalues:       0
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: LOADK     R4 K0        ; R4 := 1.7015800476074
-  2 [-]: DIV       R5 R0 R1     ; R5 := R0 / R1
-  3 [-]: SUB       R0 R5 K1     ; R0 := R5 - 1
-  4 [-]: MUL       R5 R0 R0     ; R5 := R0 * R0
-  5 [-]: ADD       R6 R4 K1     ; R6 := R4 + 1
-  6 [-]: MUL       R6 R6 R0     ; R6 := R6 * R0
-  7 [-]: ADD       R6 R6 R4     ; R6 := R6 + R4
-  8 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
-  9 [-]: ADD       R5 R5 K1     ; R5 := R5 + 1
- 10 [-]: MUL       R5 R3 R5     ; R5 := R3 * R5
- 11 [-]: ADD       R5 R5 R2     ; R5 := R5 + R2
- 12 [-]: RETURN    R5 2         ; return R5
- 13 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 20
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  4
-
-  1 [-]: DIV       R2 K0 R0     ; R2 := 1 / R0
-  2 [-]: SUB       R2 R2 K1     ; R2 := R2 - 2
-  3 [-]: SUB       R3 K0 R1     ; R3 := 1 - R1
-  4 [-]: MUL       R2 R2 R3     ; R2 := R2 * R3
-  5 [-]: ADD       R2 R2 K0     ; R2 := R2 + 1
-  6 [-]: DIV       R2 R1 R2     ; R2 := R1 / R2
-  7 [-]: RETURN    R2 2         ; return R2
-  8 [-]: RETURN    R0 1         ; return 
-
-
-; Function #3:
-;
-; Name:            
-; Defined at line: 25
+; Defined at line: 14
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -90,38 +41,10 @@ code size: 90
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #4:
+; Function #2:
 ;
 ; Name:            
-; Defined at line: 31
-; #Upvalues:       0
-; #Parameters:     4
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: EQ        0 R0 R3      ; if R0 ~= R3 then PC := 6
-  2 [-]: JMP       6            ; PC := 6
-  3 [-]: ADD       R4 R1 R2     ; R4 := R1 + R2
-  4 [-]: RETURN    R4 2         ; return R4
-  5 [-]: JMP       17           ; PC := 17
-  6 [-]: GETGLOBAL R4 K0        ; R4 := math
-  7 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["0xD6F2D811"]
-  8 [-]: LOADK     R5 K2        ; R5 := 2
-  9 [-]: MUL       R6 K3 R0     ; R6 := -10 * R0
- 10 [-]: DIV       R6 R6 R3     ; R6 := R6 / R3
- 11 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 12 [-]: UNM       R4 R4        ; R4 := - R4
- 13 [-]: ADD       R4 R4 K4     ; R4 := R4 + 1
- 14 [-]: MUL       R4 R2 R4     ; R4 := R2 * R4
- 15 [-]: ADD       R4 R4 R1     ; R4 := R4 + R1
- 16 [-]: RETURN    R4 2         ; return R4
- 17 [-]: RETURN    R0 1         ; return 
-
-
-; Function #5:
-;
-; Name:            
-; Defined at line: 40
+; Defined at line: 20
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -143,10 +66,10 @@ code size: 90
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #3:
 ;
 ; Name:            
-; Defined at line: 44
+; Defined at line: 24
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -4,7 +4,7 @@ code size: 15
 code size: 114
 code size: 28
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Game\CrewShip\Ships\Abilities\Tactical\CrewShipEnemyShipDebuffs.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Game\CrewShip\Ships\Abilities\Tactical\CrewShipEnemyShipDebuffs.luac 
 
 ; Name:            
 ; Defined at line: 0

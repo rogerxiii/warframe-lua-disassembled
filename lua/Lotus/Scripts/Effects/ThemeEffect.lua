@@ -1,8 +1,9 @@
-code size: 20
+code size: 23
 code size: 59
+code size: 26
 code size: 246
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\ThemeEffect.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\ThemeEffect.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -26,11 +27,14 @@ code size: 246
  13 [-]: SETGLOBAL R3 K4        ; ApplyEffectThemeColors := R3
  14 [-]: SETGLOBAL R3 K5        ; 0x8488F25D := R3
  15 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
- 16 [-]: MOVE      R0 R1        ; R0 := R1
- 17 [-]: MOVE      R0 R2        ; R0 := R2
- 18 [-]: SETGLOBAL R3 K6        ; ApplyFogSphereColors := R3
- 19 [-]: SETGLOBAL R3 K7        ; 0xD84D9D6F := R3
- 20 [-]: RETURN    R0 1         ; return 
+ 16 [-]: SETGLOBAL R3 K6        ; ApplyEnergyColors := R3
+ 17 [-]: SETGLOBAL R3 K7        ; 0x3A481F4A := R3
+ 18 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+ 19 [-]: MOVE      R0 R1        ; R0 := R1
+ 20 [-]: MOVE      R0 R2        ; R0 := R2
+ 21 [-]: SETGLOBAL R3 K8        ; ApplyFogSphereColors := R3
+ 22 [-]: SETGLOBAL R3 K9        ; 0xD84D9D6F := R3
+ 23 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -107,6 +111,43 @@ code size: 246
 ;
 ; Name:            
 ; Defined at line: 30
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  7
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
+  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x3E2F6BF"]
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+  5 [-]: MOVE      R3 R1        ; R3 := R1
+  6 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  7 [-]: TEST      R2 1         ; if R2 then PC := 26
+  8 [-]: JMP       26           ; PC := 26
+  9 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x8DB5D01F"]
+ 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 11 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+ 12 [-]: MOVE      R4 R2        ; R4 := R2
+ 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 14 [-]: TEST      R3 1         ; if R3 then PC := 26
+ 15 [-]: JMP       26           ; PC := 26
+ 16 [-]: SELF      R3 R2 K4     ; R4 := R2; R3 := R2["0x6978AC59"]
+ 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 18 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+ 19 [-]: MOVE      R5 R3        ; R5 := R3
+ 20 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 21 [-]: TEST      R4 1         ; if R4 then PC := 26
+ 22 [-]: JMP       26           ; PC := 26
+ 23 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3["0x86B2F94F"]
+ 24 [-]: MOVE      R6 R0        ; R6 := R0
+ 25 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 26 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3:
+;
+; Name:            
+; Defined at line: 43
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

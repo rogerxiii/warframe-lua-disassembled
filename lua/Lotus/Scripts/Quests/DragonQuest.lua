@@ -1,6 +1,6 @@
 code size: 35
 code size: 54
-code size: 61
+code size: 57
 code size: 42
 code size: 3
 code size: 23
@@ -8,7 +8,7 @@ code size: 50
 code size: 57
 code size: 23
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\DragonQuest.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\DragonQuest.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -126,7 +126,7 @@ code size: 23
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  15
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x201191EA
   2 [-]: GETGLOBAL R2 K1        ; R2 := scanObjectiveHudDelay
@@ -146,49 +146,45 @@ code size: 23
  16 [-]: TEST      R4 0         ; if not R4 then PC := 19
  17 [-]: JMP       19           ; PC := 19
  18 [-]: RETURN    R0 1         ; return 
- 19 [-]: GETGLOBAL R4 K8        ; R4 := 0x329BDC44
- 20 [-]: LOADK     R5 K9        ; R5 := "Lotus.Interface.LotusUtilities"
- 21 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 22 [-]: LOADNIL   R5 R5        ; R5 := nil
- 23 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 24 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["0xD69A3D49"]
- 25 [-]: LOADK     R7 K11       ; R7 := "/Lotus/Language/G1Quests/DragonQuestSynthChroma"
- 26 [-]: CALL      R6 2 1       ; R6(R7)
- 27 [-]: GETGLOBAL R6 K12       ; R6 := numScansRequired
- 28 [-]: LT        0 R1 R6      ; if R1 >= R6 then PC := 52
- 29 [-]: JMP       52           ; PC := 52
- 30 [-]: GETGLOBAL R6 K13       ; R6 := gRegion
- 31 [-]: SELF      R6 R6 K14    ; R7 := R6; R6 := R6["0x848C9FE0"]
- 32 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 33 [-]: LOADK     R1 K2        ; R1 := 0
- 34 [-]: GETGLOBAL R7 K15       ; R7 := 0x63B09107
- 35 [-]: MOVE      R8 R6        ; R8 := R6
- 36 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
- 37 [-]: JMP       44           ; PC := 44
- 38 [-]: SELF      R12 R11 K16  ; R13 := R11; R12 := R11["0x8DB5D01F"]
- 39 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 40 [-]: SELF      R12 R12 K17  ; R13 := R12; R12 := R12["0x878E51D7"]
- 41 [-]: MOVE      R14 R2       ; R14 := R2
- 42 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
- 43 [-]: ADD       R1 R1 R12    ; R1 := R1 + R12
- 44 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 38; R9 := R10 end
- 45 [-]: JMP       38           ; PC := 38
- 46 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 47 [-]: CALL      R12 1 1      ; R12()
- 48 [-]: GETGLOBAL R12 K0       ; R12 := 0x201191EA
- 49 [-]: LOADK     R13 K18      ; R13 := 1
- 50 [-]: CALL      R12 2 1      ; R12(R13)
- 51 [-]: JMP       27           ; PC := 27
- 52 [-]: GETGLOBAL R12 K13      ; R12 := gRegion
- 53 [-]: SELF      R12 R12 K19  ; R13 := R12; R12 := R12["0xBDD34CC6"]
- 54 [-]: GETGLOBAL R14 K20      ; R14 := finishedScanEffect
- 55 [-]: SELF      R15 R0 K21   ; R16 := R0; R15 := R0["0xE681382B"]
- 56 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 57 [-]: GETGLOBAL R16 K22      ; R16 := ZERO_ROTATION
- 58 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
- 59 [-]: SELF      R12 R0 K23   ; R13 := R0; R12 := R0["0xD4C2743F"]
- 60 [-]: CALL      R12 2 1      ; R12(R13)
- 61 [-]: RETURN    R0 1         ; return 
+ 19 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 20 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0xD69A3D49"]
+ 21 [-]: LOADK     R5 K9        ; R5 := "/Lotus/Language/G1Quests/DragonQuestSynthChroma"
+ 22 [-]: CALL      R4 2 1       ; R4(R5)
+ 23 [-]: GETGLOBAL R4 K10       ; R4 := numScansRequired
+ 24 [-]: LT        0 R1 R4      ; if R1 >= R4 then PC := 48
+ 25 [-]: JMP       48           ; PC := 48
+ 26 [-]: GETGLOBAL R4 K11       ; R4 := gRegion
+ 27 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x848C9FE0"]
+ 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 29 [-]: LOADK     R1 K2        ; R1 := 0
+ 30 [-]: GETGLOBAL R5 K13       ; R5 := 0x63B09107
+ 31 [-]: MOVE      R6 R4        ; R6 := R4
+ 32 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
+ 33 [-]: JMP       40           ; PC := 40
+ 34 [-]: SELF      R10 R9 K14   ; R11 := R9; R10 := R9["0x8DB5D01F"]
+ 35 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 36 [-]: SELF      R10 R10 K15  ; R11 := R10; R10 := R10["0x878E51D7"]
+ 37 [-]: MOVE      R12 R2       ; R12 := R2
+ 38 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+ 39 [-]: ADD       R1 R1 R10    ; R1 := R1 + R10
+ 40 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 34; R7 := R8 end
+ 41 [-]: JMP       34           ; PC := 34
+ 42 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 43 [-]: CALL      R10 1 1      ; R10()
+ 44 [-]: GETGLOBAL R10 K0       ; R10 := 0x201191EA
+ 45 [-]: LOADK     R11 K16      ; R11 := 1
+ 46 [-]: CALL      R10 2 1      ; R10(R11)
+ 47 [-]: JMP       23           ; PC := 23
+ 48 [-]: GETGLOBAL R10 K11      ; R10 := gRegion
+ 49 [-]: SELF      R10 R10 K17  ; R11 := R10; R10 := R10["0xBDD34CC6"]
+ 50 [-]: GETGLOBAL R12 K18      ; R12 := finishedScanEffect
+ 51 [-]: SELF      R13 R0 K19   ; R14 := R0; R13 := R0["0xE681382B"]
+ 52 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 53 [-]: GETGLOBAL R14 K20      ; R14 := ZERO_ROTATION
+ 54 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+ 55 [-]: SELF      R10 R0 K21   ; R11 := R0; R10 := R0["0xD4C2743F"]
+ 56 [-]: CALL      R10 2 1      ; R10(R11)
+ 57 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:

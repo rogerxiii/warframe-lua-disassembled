@@ -4,7 +4,7 @@ code size: 7
 code size: 78
 code size: 20
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Volt\VoltPassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Volt\VoltPassive.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -70,14 +70,14 @@ code size: 20
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  3
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: CALL      R0 1 4       ; R0,R1,R2 := R0()
-  3 [-]: GETGLOBAL R3 K0        ; R3 := _T
-  4 [-]: NEWTABLE  R4 0 1       ; R4 := {}
-  5 [-]: SETTABLE  R4 K2 R0     ; R4["DAMAGE"] := R0
-  6 [-]: SETTABLE  R3 K1 R4     ; R3["PassiveInfo"] := R4
+  2 [-]: CALL      R0 1 2       ; R0 := R0()
+  3 [-]: GETGLOBAL R1 K0        ; R1 := _T
+  4 [-]: NEWTABLE  R2 0 1       ; R2 := {}
+  5 [-]: SETTABLE  R2 K2 R0     ; R2["DAMAGE"] := R0
+  6 [-]: SETTABLE  R1 K1 R2     ; R1["PassiveInfo"] := R2
   7 [-]: RETURN    R0 1         ; return 
 
 

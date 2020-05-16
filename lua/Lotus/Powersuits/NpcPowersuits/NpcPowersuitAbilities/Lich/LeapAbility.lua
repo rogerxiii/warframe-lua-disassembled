@@ -1,5 +1,5 @@
 code size: 33
-code size: 170
+code size: 172
 code size: 7
 code size: 7
 code size: 69
@@ -7,7 +7,7 @@ code size: 125
 code size: 3
 code size: 62
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Lich\LeapAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\Lich\LeapAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -217,25 +217,27 @@ code size: 62
 155 [-]: MOVE      R23 R21      ; R23 := R21
 156 [-]: MOVE      R24 R13      ; R24 := R13
 157 [-]: CALL      R22 3 2      ; R22 := R22(R23,R24)
-158 [-]: LT        0 K42 R22    ; if 4 >= R22 then PC := 162
-159 [-]: JMP       162          ; PC := 162
+158 [-]: LT        0 K42 R22    ; if 4 >= R22 then PC := 163
+159 [-]: JMP       163          ; PC := 163
 160 [-]: LOADK     R22 K2       ; R22 := 0
 161 [-]: RETURN    R22 2        ; return R22
-162 [-]: SELF      R22 R0 K43   ; R23 := R0; R22 := R0["0xACA59CC1"]
-163 [-]: GETTABLE  R24 R5 K20   ; R24 := R5["avatar"]
-164 [-]: CALL      R22 3 1      ; R22(R23,R24)
-165 [-]: SELF      R22 R0 K44   ; R23 := R0; R22 := R0["0xED853941"]
-166 [-]: MOVE      R24 R13      ; R24 := R13
-167 [-]: CALL      R22 3 1      ; R22(R23,R24)
-168 [-]: LOADK     R22 K26      ; R22 := 1
-169 [-]: RETURN    R22 2        ; return R22
-170 [-]: RETURN    R0 1         ; return 
+162 [-]: JMP       164          ; PC := 164
+163 [-]: MOVE      R13 R21      ; R13 := R21
+164 [-]: SELF      R22 R0 K43   ; R23 := R0; R22 := R0["0xACA59CC1"]
+165 [-]: GETTABLE  R24 R5 K20   ; R24 := R5["avatar"]
+166 [-]: CALL      R22 3 1      ; R22(R23,R24)
+167 [-]: SELF      R22 R0 K44   ; R23 := R0; R22 := R0["0xED853941"]
+168 [-]: MOVE      R24 R13      ; R24 := R13
+169 [-]: CALL      R22 3 1      ; R22(R23,R24)
+170 [-]: LOADK     R22 K26      ; R22 := 1
+171 [-]: RETURN    R22 2        ; return R22
+172 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 90
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -253,7 +255,7 @@ code size: 62
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 92
+; Defined at line: 94
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -271,7 +273,7 @@ code size: 62
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 96
+; Defined at line: 98
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -351,7 +353,7 @@ code size: 62
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 126
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -487,7 +489,7 @@ code size: 62
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 184
+; Defined at line: 186
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -501,7 +503,7 @@ code size: 62
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 188
+; Defined at line: 190
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

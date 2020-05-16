@@ -1,8 +1,10 @@
-code size: 47
+code size: 53
 code size: 35
 code size: 31
 code size: 47
+code size: 26
 code size: 32
+code size: 59
 code size: 10
 code size: 9
 code size: 66
@@ -15,7 +17,7 @@ code size: 35
 code size: 42
 code size: 31
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\OverrideMaterials.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\OverrideMaterials.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -34,49 +36,55 @@ code size: 31
   8 [-]: SETGLOBAL R0 K4        ; OverrideMaterials := R0
   9 [-]: SETGLOBAL R0 K5        ; 0x499DF353 := R0
  10 [-]: CLOSURE   R0 3         ; R0 := closure(Function #4)
- 11 [-]: SETGLOBAL R0 K6        ; OverrideMaterialsMulti := R0
- 12 [-]: SETGLOBAL R0 K7        ; 0x542EC300 := R0
+ 11 [-]: SETGLOBAL R0 K6        ; OverrideMaterialsTagged := R0
+ 12 [-]: SETGLOBAL R0 K7        ; 0xE222C104 := R0
  13 [-]: CLOSURE   R0 4         ; R0 := closure(Function #5)
- 14 [-]: SETGLOBAL R0 K8        ; RemoveAllMaterialOverrides := R0
- 15 [-]: SETGLOBAL R0 K9        ; 0xD750CDDE := R0
+ 14 [-]: SETGLOBAL R0 K8        ; OverrideMaterialsMulti := R0
+ 15 [-]: SETGLOBAL R0 K9        ; 0x542EC300 := R0
  16 [-]: CLOSURE   R0 5         ; R0 := closure(Function #6)
- 17 [-]: SETGLOBAL R0 K10       ; CinematicTargetRemoveAllMaterialOverrides := R0
- 18 [-]: SETGLOBAL R0 K11       ; 0xB2306421 := R0
+ 17 [-]: SETGLOBAL R0 K10       ; OverrideMaterialsRandom := R0
+ 18 [-]: SETGLOBAL R0 K11       ; 0x9B5E9CE2 := R0
  19 [-]: CLOSURE   R0 6         ; R0 := closure(Function #7)
- 20 [-]: CLOSURE   R1 7         ; R1 := closure(Function #8)
- 21 [-]: CLOSURE   R2 8         ; R2 := closure(Function #9)
- 22 [-]: MOVE      R0 R1        ; R0 := R1
- 23 [-]: MOVE      R0 R0        ; R0 := R0
- 24 [-]: SETGLOBAL R2 K12       ; OverrideDoorMaterials := R2
- 25 [-]: SETGLOBAL R2 K13       ; 0x9A7DD165 := R2
- 26 [-]: CLOSURE   R2 9         ; R2 := closure(Function #10)
- 27 [-]: MOVE      R0 R1        ; R0 := R1
- 28 [-]: MOVE      R0 R0        ; R0 := R0
- 29 [-]: SETGLOBAL R2 K14       ; OverrideDoorMaterialsMulti := R2
- 30 [-]: SETGLOBAL R2 K15       ; 0x8D621931 := R2
- 31 [-]: CLOSURE   R2 10        ; R2 := closure(Function #11)
- 32 [-]: MOVE      R0 R1        ; R0 := R1
- 33 [-]: SETGLOBAL R2 K16       ; OverrideDoorEmissiveTint := R2
- 34 [-]: SETGLOBAL R2 K17       ; 0x9E7EDB88 := R2
- 35 [-]: CLOSURE   R2 11        ; R2 := closure(Function #12)
- 36 [-]: SETGLOBAL R2 K18       ; OverrideParentMaterial := R2
- 37 [-]: SETGLOBAL R2 K19       ; 0xFD50729B := R2
- 38 [-]: CLOSURE   R2 12        ; R2 := closure(Function #13)
- 39 [-]: SETGLOBAL R2 K20       ; OverrideChildMaterial := R2
- 40 [-]: SETGLOBAL R2 K21       ; 0xE2676EA2 := R2
+ 20 [-]: SETGLOBAL R0 K12       ; RemoveAllMaterialOverrides := R0
+ 21 [-]: SETGLOBAL R0 K13       ; 0xD750CDDE := R0
+ 22 [-]: CLOSURE   R0 7         ; R0 := closure(Function #8)
+ 23 [-]: SETGLOBAL R0 K14       ; CinematicTargetRemoveAllMaterialOverrides := R0
+ 24 [-]: SETGLOBAL R0 K15       ; 0xB2306421 := R0
+ 25 [-]: CLOSURE   R0 8         ; R0 := closure(Function #9)
+ 26 [-]: CLOSURE   R1 9         ; R1 := closure(Function #10)
+ 27 [-]: CLOSURE   R2 10        ; R2 := closure(Function #11)
+ 28 [-]: MOVE      R0 R1        ; R0 := R1
+ 29 [-]: MOVE      R0 R0        ; R0 := R0
+ 30 [-]: SETGLOBAL R2 K16       ; OverrideDoorMaterials := R2
+ 31 [-]: SETGLOBAL R2 K17       ; 0x9A7DD165 := R2
+ 32 [-]: CLOSURE   R2 11        ; R2 := closure(Function #12)
+ 33 [-]: MOVE      R0 R1        ; R0 := R1
+ 34 [-]: MOVE      R0 R0        ; R0 := R0
+ 35 [-]: SETGLOBAL R2 K18       ; OverrideDoorMaterialsMulti := R2
+ 36 [-]: SETGLOBAL R2 K19       ; 0x8D621931 := R2
+ 37 [-]: CLOSURE   R2 12        ; R2 := closure(Function #13)
+ 38 [-]: MOVE      R0 R1        ; R0 := R1
+ 39 [-]: SETGLOBAL R2 K20       ; OverrideDoorEmissiveTint := R2
+ 40 [-]: SETGLOBAL R2 K21       ; 0x9E7EDB88 := R2
  41 [-]: CLOSURE   R2 13        ; R2 := closure(Function #14)
- 42 [-]: SETGLOBAL R2 K22       ; SetupCapDoorFrames := R2
- 43 [-]: SETGLOBAL R2 K23       ; 0xB7CD557A := R2
+ 42 [-]: SETGLOBAL R2 K22       ; OverrideParentMaterial := R2
+ 43 [-]: SETGLOBAL R2 K23       ; 0xFD50729B := R2
  44 [-]: CLOSURE   R2 14        ; R2 := closure(Function #15)
- 45 [-]: SETGLOBAL R2 K24       ; HackDoorFrameSwitch := R2
- 46 [-]: SETGLOBAL R2 K25       ; 0x926C1ACC := R2
- 47 [-]: RETURN    R0 1         ; return 
+ 45 [-]: SETGLOBAL R2 K24       ; OverrideChildMaterial := R2
+ 46 [-]: SETGLOBAL R2 K25       ; 0xE2676EA2 := R2
+ 47 [-]: CLOSURE   R2 15        ; R2 := closure(Function #16)
+ 48 [-]: SETGLOBAL R2 K26       ; SetupCapDoorFrames := R2
+ 49 [-]: SETGLOBAL R2 K27       ; 0xB7CD557A := R2
+ 50 [-]: CLOSURE   R2 16        ; R2 := closure(Function #17)
+ 51 [-]: SETGLOBAL R2 K28       ; HackDoorFrameSwitch := R2
+ 52 [-]: SETGLOBAL R2 K29       ; 0x926C1ACC := R2
+ 53 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 35
+; Defined at line: 37
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -122,7 +130,7 @@ code size: 31
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 48
+; Defined at line: 50
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -164,7 +172,7 @@ code size: 31
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 61
+; Defined at line: 63
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -222,7 +230,44 @@ code size: 31
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 76
+; Defined at line: 78
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  10
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := tag
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 1         ; if R0 then PC := 11
+  5 [-]: JMP       11           ; PC := 11
+  6 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  7 [-]: GETGLOBAL R1 K2        ; R1 := material
+  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  9 [-]: TEST      R0 0         ; if not R0 then PC := 12
+ 10 [-]: JMP       12           ; PC := 12
+ 11 [-]: RETURN    R0 1         ; return 
+ 12 [-]: GETGLOBAL R0 K3        ; R0 := gRegion
+ 13 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0["0xA76F0612"]
+ 14 [-]: GETGLOBAL R2 K1        ; R2 := tag
+ 15 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+ 16 [-]: GETGLOBAL R1 K5        ; R1 := 0x63B09107
+ 17 [-]: MOVE      R2 R0        ; R2 := R0
+ 18 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
+ 19 [-]: JMP       24           ; PC := 24
+ 20 [-]: SELF      R6 R5 K6     ; R7 := R5; R6 := R5["0x670C945E"]
+ 21 [-]: GETGLOBAL R8 K7        ; R8 := slot
+ 22 [-]: GETGLOBAL R9 K2        ; R9 := material
+ 23 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 24 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 20; R3 := R4 end
+ 25 [-]: JMP       20           ; PC := 20
+ 26 [-]: RETURN    R0 1         ; return 
+
+
+; Function #5:
+;
+; Name:            
+; Defined at line: 89
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -262,10 +307,80 @@ code size: 31
  32 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 101
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  14
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := materials
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 1         ; if R0 then PC := 11
+  5 [-]: JMP       11           ; PC := 11
+  6 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  7 [-]: GETGLOBAL R1 K2        ; R1 := decorations
+  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  9 [-]: TEST      R0 0         ; if not R0 then PC := 12
+ 10 [-]: JMP       12           ; PC := 12
+ 11 [-]: RETURN    R0 1         ; return 
+ 12 [-]: GETGLOBAL R0 K1        ; R0 := materials
+ 13 [-]: EQ        1 R0 K3      ; if R0 == 0 then PC := 18
+ 14 [-]: JMP       18           ; PC := 18
+ 15 [-]: GETGLOBAL R0 K2        ; R0 := decorations
+ 16 [-]: EQ        0 R0 K3      ; if R0 ~= 0 then PC := 19
+ 17 [-]: JMP       19           ; PC := 19
+ 18 [-]: RETURN    R0 1         ; return 
+ 19 [-]: GETGLOBAL R0 K4        ; R0 := unique
+ 20 [-]: TEST      R0 0         ; if not R0 then PC := 41
+ 21 [-]: JMP       41           ; PC := 41
+ 22 [-]: LOADK     R0 K5        ; R0 := 1
+ 23 [-]: GETGLOBAL R1 K2        ; R1 := decorations
+ 24 [-]: LEN       R1 R1        ; R1 := # R1
+ 25 [-]: LOADK     R2 K5        ; R2 := 1
+ 26 [-]: FORPREP   R0 39        ; R0 -= R2; PC := 39
+ 27 [-]: GETGLOBAL R4 K6        ; R4 := 0x7FD4B57D
+ 28 [-]: LOADK     R5 K5        ; R5 := 1
+ 29 [-]: GETGLOBAL R6 K1        ; R6 := materials
+ 30 [-]: LEN       R6 R6        ; R6 := # R6
+ 31 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 32 [-]: GETGLOBAL R5 K2        ; R5 := decorations
+ 33 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
+ 34 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5["0x670C945E"]
+ 35 [-]: GETGLOBAL R7 K8        ; R7 := slot
+ 36 [-]: GETGLOBAL R8 K1        ; R8 := materials
+ 37 [-]: GETTABLE  R8 R8 R4     ; R8 := R8[R4]
+ 38 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 39 [-]: FORLOOP   R0 27        ; R0 += R2; if R0 <= R1 then begin PC := 27; R3 := R0 end
+ 40 [-]: JMP       59           ; PC := 59
+ 41 [-]: GETGLOBAL R5 K6        ; R5 := 0x7FD4B57D
+ 42 [-]: LOADK     R6 K5        ; R6 := 1
+ 43 [-]: GETGLOBAL R7 K1        ; R7 := materials
+ 44 [-]: LEN       R7 R7        ; R7 := # R7
+ 45 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 46 [-]: LOADK     R6 K5        ; R6 := 1
+ 47 [-]: GETGLOBAL R7 K2        ; R7 := decorations
+ 48 [-]: LEN       R7 R7        ; R7 := # R7
+ 49 [-]: LOADK     R8 K5        ; R8 := 1
+ 50 [-]: FORPREP   R6 58        ; R6 -= R8; PC := 58
+ 51 [-]: GETGLOBAL R10 K2       ; R10 := decorations
+ 52 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
+ 53 [-]: SELF      R10 R10 K7   ; R11 := R10; R10 := R10["0x670C945E"]
+ 54 [-]: GETGLOBAL R12 K8       ; R12 := slot
+ 55 [-]: GETGLOBAL R13 K1       ; R13 := materials
+ 56 [-]: GETTABLE  R13 R13 R5   ; R13 := R13[R5]
+ 57 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+ 58 [-]: FORLOOP   R6 51        ; R6 += R8; if R6 <= R7 then begin PC := 51; R9 := R6 end
+ 59 [-]: RETURN    R0 1         ; return 
+
+
+; Function #7:
+;
+; Name:            
+; Defined at line: 123
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -283,10 +398,10 @@ code size: 31
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 94
+; Defined at line: 129
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -303,10 +418,10 @@ code size: 31
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 100
+; Defined at line: 135
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -380,10 +495,10 @@ code size: 31
  66 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 125
+; Defined at line: 160
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -429,10 +544,10 @@ code size: 31
  38 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 142
+; Defined at line: 177
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -503,10 +618,10 @@ code size: 31
  63 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 178
+; Defined at line: 213
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -598,10 +713,10 @@ code size: 31
  84 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 215
+; Defined at line: 250
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -753,10 +868,10 @@ code size: 31
 144 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 299
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -796,10 +911,10 @@ code size: 31
  32 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 278
+; Defined at line: 313
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -842,10 +957,10 @@ code size: 31
  35 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #16:
 ;
 ; Name:            
-; Defined at line: 293
+; Defined at line: 328
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -895,10 +1010,10 @@ code size: 31
  42 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #17:
 ;
 ; Name:            
-; Defined at line: 309
+; Defined at line: 344
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -9,7 +9,7 @@ code size: 362
 code size: 158
 code size: 81
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Libs\InvasionMissionGenerator.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Libs\InvasionMissionGenerator.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1067,7 +1067,7 @@ code size: 81
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  25
+; Max Stack Size:  23
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
   2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["InvasionTest"]
@@ -1207,24 +1207,24 @@ code size: 81
 136 [-]: MOVE      R19 R12      ; R19 := R12
 137 [-]: MOVE      R20 R17      ; R20 := R17
 138 [-]: MOVE      R21 R1       ; R21 := R1
-139 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
-140 [-]: GETUPVAL  R19 U2       ; R19 := U2
-141 [-]: MOVE      R20 R12      ; R20 := R12
-142 [-]: MOVE      R21 R17      ; R21 := R17
-143 [-]: MOVE      R22 R0       ; R22 := R0
-144 [-]: CALL      R19 4 2      ; R19 := R19(R20,R21,R22)
+139 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
+140 [-]: GETUPVAL  R18 U2       ; R18 := U2
+141 [-]: MOVE      R19 R12      ; R19 := R12
+142 [-]: MOVE      R20 R17      ; R20 := R17
+143 [-]: MOVE      R21 R0       ; R21 := R0
+144 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
 145 [-]: ADD       R6 R6 K11    ; R6 := R6 + 1
 146 [-]: TFORLOOP  R13 2        ; R16,R17 :=  R13(R14,R15); if R16 ~= nil then begin PC = 81; R15 := R16 end
 147 [-]: JMP       81           ; PC := 81
 148 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 54; R9 := R10 end
 149 [-]: JMP       54           ; PC := 54
-150 [-]: GETGLOBAL R20 K31      ; R20 := 0x93B1256B
-151 [-]: LOADK     R21 K32      ; R21 := "Generated cycle "
-152 [-]: MOVE      R22 R5       ; R22 := R5
-153 [-]: LOADK     R23 K33      ; R23 := " of invasion missions on all eligible starchart nodes. Num generated="
-154 [-]: MOVE      R24 R6       ; R24 := R6
-155 [-]: CONCAT    R21 R21 R24  ; R21 := R21 .. R22 .. R23 .. R24
-156 [-]: CALL      R20 2 1      ; R20(R21)
+150 [-]: GETGLOBAL R18 K31      ; R18 := 0x93B1256B
+151 [-]: LOADK     R19 K32      ; R19 := "Generated cycle "
+152 [-]: MOVE      R20 R5       ; R20 := R5
+153 [-]: LOADK     R21 K33      ; R21 := " of invasion missions on all eligible starchart nodes. Num generated="
+154 [-]: MOVE      R22 R6       ; R22 := R6
+155 [-]: CONCAT    R19 R19 R22  ; R19 := R19 .. R20 .. R21 .. R22
+156 [-]: CALL      R18 2 1      ; R18(R19)
 157 [-]: FORLOOP   R2 49        ; R2 += R4; if R2 <= R3 then begin PC := 49; R5 := R2 end
 158 [-]: RETURN    R0 1         ; return 
 

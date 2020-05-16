@@ -1,22 +1,23 @@
-code size: 58
+code size: 60
 code size: 25
 code size: 205
 code size: 1
 code size: 16
 code size: 4
-code size: 149
+code size: 21
+code size: 168
 code size: 3
 code size: 134
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\RailjackResourceLite.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\RailjackResourceLite.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  18
+; Max Stack Size:  19
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Interface.LotusUtilities"
@@ -49,33 +50,35 @@ code size: 8
  29 [-]: SETGLOBAL R16 K7       ; 0x3C577FA3 := R16
  30 [-]: CLOSURE   R16 3        ; R16 := closure(Function #4)
  31 [-]: CLOSURE   R17 4        ; R17 := closure(Function #5)
- 32 [-]: MOVE      R0 R2        ; R0 := R2
- 33 [-]: MOVE      R0 R7        ; R0 := R7
- 34 [-]: MOVE      R0 R9        ; R0 := R9
- 35 [-]: MOVE      R0 R10       ; R0 := R10
- 36 [-]: MOVE      R0 R11       ; R0 := R11
- 37 [-]: MOVE      R0 R12       ; R0 := R12
- 38 [-]: MOVE      R0 R8        ; R0 := R8
- 39 [-]: MOVE      R0 R1        ; R0 := R1
- 40 [-]: MOVE      R0 R13       ; R0 := R13
- 41 [-]: MOVE      R0 R3        ; R0 := R3
- 42 [-]: MOVE      R0 R4        ; R0 := R4
- 43 [-]: MOVE      R0 R15       ; R0 := R15
- 44 [-]: SETGLOBAL R17 K8       ; Update := R17
- 45 [-]: SETGLOBAL R17 K9       ; 0x8C7099E9 := R17
- 46 [-]: CLOSURE   R17 5        ; R17 := closure(Function #6)
- 47 [-]: MOVE      R0 R16       ; R0 := R16
- 48 [-]: SETGLOBAL R17 K10      ; Close := R17
- 49 [-]: SETGLOBAL R17 K11      ; 0xA58BB96C := R17
- 50 [-]: CLOSURE   R17 6        ; R17 := closure(Function #7)
- 51 [-]: MOVE      R0 R14       ; R0 := R14
- 52 [-]: MOVE      R0 R2        ; R0 := R2
- 53 [-]: SETGLOBAL R17 K12      ; Initialize := R17
- 54 [-]: SETGLOBAL R17 K13      ; 0x62648036 := R17
- 55 [-]: CLOSURE   R17 7        ; R17 := closure(Function #8)
- 56 [-]: SETGLOBAL R17 K14      ; ShowLiteMovie := R17
- 57 [-]: SETGLOBAL R17 K15      ; 0x75ACDE95 := R17
- 58 [-]: RETURN    R0 1         ; return 
+ 32 [-]: CLOSURE   R18 5        ; R18 := closure(Function #6)
+ 33 [-]: MOVE      R0 R2        ; R0 := R2
+ 34 [-]: MOVE      R0 R7        ; R0 := R7
+ 35 [-]: MOVE      R0 R9        ; R0 := R9
+ 36 [-]: MOVE      R0 R10       ; R0 := R10
+ 37 [-]: MOVE      R0 R11       ; R0 := R11
+ 38 [-]: MOVE      R0 R12       ; R0 := R12
+ 39 [-]: MOVE      R0 R8        ; R0 := R8
+ 40 [-]: MOVE      R0 R1        ; R0 := R1
+ 41 [-]: MOVE      R0 R13       ; R0 := R13
+ 42 [-]: MOVE      R0 R3        ; R0 := R3
+ 43 [-]: MOVE      R0 R4        ; R0 := R4
+ 44 [-]: MOVE      R0 R15       ; R0 := R15
+ 45 [-]: MOVE      R0 R17       ; R0 := R17
+ 46 [-]: SETGLOBAL R18 K8       ; Update := R18
+ 47 [-]: SETGLOBAL R18 K9       ; 0x8C7099E9 := R18
+ 48 [-]: CLOSURE   R18 6        ; R18 := closure(Function #7)
+ 49 [-]: MOVE      R0 R16       ; R0 := R16
+ 50 [-]: SETGLOBAL R18 K10      ; Close := R18
+ 51 [-]: SETGLOBAL R18 K11      ; 0xA58BB96C := R18
+ 52 [-]: CLOSURE   R18 7        ; R18 := closure(Function #8)
+ 53 [-]: MOVE      R0 R14       ; R0 := R14
+ 54 [-]: MOVE      R0 R2        ; R0 := R2
+ 55 [-]: SETGLOBAL R18 K12      ; Initialize := R18
+ 56 [-]: SETGLOBAL R18 K13      ; 0x62648036 := R18
+ 57 [-]: CLOSURE   R18 8        ; R18 := closure(Function #9)
+ 58 [-]: SETGLOBAL R18 K14      ; ShowLiteMovie := R18
+ 59 [-]: SETGLOBAL R18 K15      ; 0x75ACDE95 := R18
+ 60 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -388,10 +391,42 @@ code size: 8
 ;
 ; Name:            
 ; Defined at line: 93
-; #Upvalues:       12
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  7
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := string
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0x639C642A"]
+  3 [-]: GETGLOBAL R2 K2        ; R2 := mMovie
+  4 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x5DB0BD4"]
+  5 [-]: MOVE      R4 R0        ; R4 := R0
+  6 [-]: MOVE      R5 R0        ; R5 := R0
+  7 [-]: CALL      R2 4 0       ; R2,... := R2(R3,R4,R5)
+  8 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
+  9 [-]: GETGLOBAL R2 K2        ; R2 := mMovie
+ 10 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0xD6A79FE9"]
+ 11 [-]: LOADK     R4 K5        ; R4 := "Wings.Label"
+ 12 [-]: LOADK     R5 K6        ; R5 := "text"
+ 13 [-]: MOVE      R6 R1        ; R6 := R1
+ 14 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
+ 15 [-]: GETGLOBAL R2 K2        ; R2 := mMovie
+ 16 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0xD6A79FE9"]
+ 17 [-]: LOADK     R4 K7        ; R4 := "Wings.LabelShadow"
+ 18 [-]: LOADK     R5 K6        ; R5 := "text"
+ 19 [-]: MOVE      R6 R1        ; R6 := R1
+ 20 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
+ 21 [-]: RETURN    R0 1         ; return 
+
+
+; Function #6:
+;
+; Name:            
+; Defined at line: 99
+; #Upvalues:       13
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  10
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: TEST      R0 0         ; if not R0 then PC := 9
@@ -501,13 +536,13 @@ code size: 8
 106 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
 107 [-]: MOVE      R3 R6        ; R3 := R6
 108 [-]: GETUPVAL  R3 U1        ; R3 := U1
-109 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 141
-110 [-]: JMP       141          ; PC := 141
+109 [-]: EQ        1 R3 K4      ; if R3 == nil then PC := 160
+110 [-]: JMP       160          ; PC := 160
 111 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
 112 [-]: GETUPVAL  R4 U6        ; R4 := U6
 113 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-114 [-]: TEST      R3 1         ; if R3 then PC := 141
-115 [-]: JMP       141          ; PC := 141
+114 [-]: TEST      R3 1         ; if R3 then PC := 160
+115 [-]: JMP       160          ; PC := 160
 116 [-]: GETUPVAL  R3 U6        ; R3 := U6
 117 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3["0x945AD535"]
 118 [-]: GETUPVAL  R5 U1        ; R5 := U1
@@ -520,8 +555,8 @@ code size: 8
 125 [-]: EQ        0 R3 R5      ; if R3 ~= R5 then PC := 130
 126 [-]: JMP       130          ; PC := 130
 127 [-]: GETUPVAL  R5 U10       ; R5 := U10
-128 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 141
-129 [-]: JMP       141          ; PC := 141
+128 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 142
+129 [-]: JMP       142          ; PC := 142
 130 [-]: MOVE      R3 R9        ; R3 := R9
 131 [-]: MOVE      R4 R10       ; R4 := R10
 132 [-]: GETUPVAL  R5 U10       ; R5 := U10
@@ -533,21 +568,40 @@ code size: 8
 138 [-]: GETUPVAL  R6 U11       ; R6 := U11
 139 [-]: MOVE      R7 R5        ; R7 := R5
 140 [-]: CALL      R6 2 1       ; R6(R7)
-141 [-]: GETGLOBAL R6 K1        ; R6 := mMovie
-142 [-]: SELF      R6 R6 K20    ; R7 := R6; R6 := R6["0x8BF7ABD3"]
-143 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-144 [-]: TEST      R6 1         ; if R6 then PC := 149
-145 [-]: JMP       149          ; PC := 149
-146 [-]: GETGLOBAL R6 K1        ; R6 := mMovie
-147 [-]: SELF      R6 R6 K21    ; R7 := R6; R6 := R6["0xA58BB96C"]
-148 [-]: CALL      R6 2 1       ; R6(R7)
-149 [-]: RETURN    R0 1         ; return 
+141 [-]: JMP       160          ; PC := 160
+142 [-]: GETGLOBAL R6 K1        ; R6 := mMovie
+143 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6["0x6B503F9D"]
+144 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+145 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+146 [-]: MOVE      R8 R6        ; R8 := R6
+147 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+148 [-]: TEST      R7 1         ; if R7 then PC := 160
+149 [-]: JMP       160          ; PC := 160
+150 [-]: GETUPVAL  R7 U12       ; R7 := U12
+151 [-]: SELF      R8 R6 K20    ; R9 := R6; R8 := R6["0xB1627322"]
+152 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+153 [-]: TEST      R8 0         ; if not R8 then PC := 158
+154 [-]: JMP       158          ; PC := 158
+155 [-]: LOADK     R8 K21       ; R8 := "/Lotus/Language/Railjack/ResourceConsoleReady"
+156 [-]: TEST      R8 1         ; if R8 then PC := 159
+157 [-]: JMP       159          ; PC := 159
+158 [-]: LOADK     R8 K22       ; R8 := "/Lotus/Language/Railjack/ResourceConsoleHacked"
+159 [-]: CALL      R7 2 1       ; R7(R8)
+160 [-]: GETGLOBAL R7 K1        ; R7 := mMovie
+161 [-]: SELF      R7 R7 K23    ; R8 := R7; R7 := R7["0x8BF7ABD3"]
+162 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+163 [-]: TEST      R7 1         ; if R7 then PC := 168
+164 [-]: JMP       168          ; PC := 168
+165 [-]: GETGLOBAL R7 K1        ; R7 := mMovie
+166 [-]: SELF      R7 R7 K24    ; R8 := R7; R7 := R7["0xA58BB96C"]
+167 [-]: CALL      R7 2 1       ; R7(R8)
+168 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 146
+; Defined at line: 157
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -558,10 +612,10 @@ code size: 8
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 150
+; Defined at line: 161
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -703,10 +757,10 @@ code size: 8
 134 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 180
+; Defined at line: 191
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

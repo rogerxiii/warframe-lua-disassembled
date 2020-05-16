@@ -1,14 +1,14 @@
 code size: 22
 code size: 21
 code size: 21
-code size: 21
+code size: 26
 code size: 31
 code size: 147
 code size: 89
 code size: 18
 code size: 1
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Restoratives\NpcBuffs.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Restoratives\NpcBuffs.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -114,27 +114,32 @@ code size: 1
 ; Is_vararg:       0
 ; Max Stack Size:  9
 
-  1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0["0x8B598ED4"]
-  2 [-]: GETGLOBAL R5 K1        ; R5 := gLotusNpcAvatarType
-  3 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 7
-  5 [-]: JMP       7            ; PC := 7
-  6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x8DB5D01F"]
-  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  9 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
- 10 [-]: MOVE      R5 R3        ; R5 := R3
- 11 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 12 [-]: TEST      R4 0         ; if not R4 then PC := 15
- 13 [-]: JMP       15           ; PC := 15
- 14 [-]: RETURN    R0 1         ; return 
- 15 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3["0xF21555A7"]
- 16 [-]: MOVE      R6 R1        ; R6 := R1
- 17 [-]: GETGLOBAL R7 K5        ; R7 := Game
- 18 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["MULTIPLY"]
- 19 [-]: MOVE      R8 R2        ; R8 := R2
- 20 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 21 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+  2 [-]: MOVE      R4 R0        ; R4 := R0
+  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  4 [-]: TEST      R3 1         ; if R3 then PC := 11
+  5 [-]: JMP       11           ; PC := 11
+  6 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0["0x8B598ED4"]
+  7 [-]: GETGLOBAL R5 K2        ; R5 := gLotusNpcAvatarType
+  8 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+  9 [-]: TEST      R3 1         ; if R3 then PC := 12
+ 10 [-]: JMP       12           ; PC := 12
+ 11 [-]: RETURN    R0 1         ; return 
+ 12 [-]: SELF      R3 R0 K3     ; R4 := R0; R3 := R0["0x8DB5D01F"]
+ 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 14 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 15 [-]: MOVE      R5 R3        ; R5 := R3
+ 16 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 17 [-]: TEST      R4 0         ; if not R4 then PC := 20
+ 18 [-]: JMP       20           ; PC := 20
+ 19 [-]: RETURN    R0 1         ; return 
+ 20 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3["0xF21555A7"]
+ 21 [-]: MOVE      R6 R1        ; R6 := R1
+ 22 [-]: GETGLOBAL R7 K5        ; R7 := Game
+ 23 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["MULTIPLY"]
+ 24 [-]: MOVE      R8 R2        ; R8 := R2
+ 25 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 26 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:

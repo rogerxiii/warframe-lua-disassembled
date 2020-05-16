@@ -5,7 +5,7 @@ code size: 18
 code size: 4
 code size: 27
 code size: 42
-code size: 192
+code size: 187
 code size: 29
 code size: 7
 code size: 7
@@ -18,7 +18,7 @@ code size: 78
 code size: 3
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\AlignmentDisplay.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\AlignmentDisplay.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -288,7 +288,7 @@ code size: 8
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  23
+; Max Stack Size:  22
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
   2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["mAlignment"]
@@ -308,186 +308,181 @@ code size: 8
  16 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
  17 [-]: MUL       R2 R2 R2     ; R2 := R2 * R2
  18 [-]: MUL       R3 R1 K6     ; R3 := R1 * 89
- 19 [-]: GETGLOBAL R4 K7        ; R4 := 0x93034B55
- 20 [-]: LOADK     R5 K8        ; R5 := 50
- 21 [-]: LOADK     R6 K9        ; R6 := 125
- 22 [-]: MOVE      R7 R2        ; R7 := R2
- 23 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 24 [-]: GETGLOBAL R5 K10       ; R5 := math
- 25 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["0x8B011038"]
- 26 [-]: GETGLOBAL R6 K10       ; R6 := math
- 27 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["0xF93F7CC8"]
- 28 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 29 [-]: SUB       R7 R7 R0     ; R7 := R7 - R0
- 30 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 31 [-]: MUL       R6 R6 K13    ; R6 := R6 * 0.80000001192093
- 32 [-]: LOADK     R7 K14       ; R7 := 0.25
- 33 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 34 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 35 [-]: CLOSURE   R7 0         ; R7 := closure(Function #6.1)
- 36 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 37 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 38 [-]: GETGLOBAL R8 K15       ; R8 := 0x63B09107
- 39 [-]: NEWTABLE  R9 2 0       ; R9 := {}
- 40 [-]: LOADK     R10 K16      ; R10 := "Sun"
- 41 [-]: LOADK     R11 K17      ; R11 := "Moon"
- 42 [-]: SETLIST   R9 2 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 2
- 43 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
- 44 [-]: JMP       101          ; PC := 101
- 45 [-]: GETGLOBAL R13 K18      ; R13 := 0xF595ADDE
- 46 [-]: GETGLOBAL R14 K19      ; R14 := mMovie
- 47 [-]: SELF      R14 R14 K20  ; R15 := R14; R14 := R14["0x6B7B470B"]
- 48 [-]: LOADK     R16 K21      ; R16 := "Alignment.Contents."
- 49 [-]: MOVE      R17 R12      ; R17 := R12
- 50 [-]: LOADK     R18 K22      ; R18 := "Diorama"
- 51 [-]: CONCAT    R16 R16 R18  ; R16 := R16 .. R17 .. R18
- 52 [-]: LOADK     R17 K23      ; R17 := "_currentframe"
- 53 [-]: CALL      R14 4 0      ; R14,... := R14(R15,R16,R17)
- 54 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
- 55 [-]: LOADK     R14 K1       ; R14 := 0
- 56 [-]: EQ        0 R12 K16    ; if R12 ~= "Sun" then PC := 69
- 57 [-]: JMP       69           ; PC := 69
- 58 [-]: LT        0 K1 R0      ; if 0 >= R0 then PC := 67
- 59 [-]: JMP       67           ; PC := 67
- 60 [-]: GETGLOBAL R15 K7       ; R15 := 0x93034B55
- 61 [-]: LOADK     R16 K5       ; R16 := 1
- 62 [-]: GETUPVAL  R17 U4       ; R17 := U4
- 63 [-]: MOVE      R18 R0       ; R18 := R0
- 64 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
- 65 [-]: MOVE      R14 R15      ; R14 := R15
- 66 [-]: JMP       79           ; PC := 79
- 67 [-]: LOADK     R14 K5       ; R14 := 1
- 68 [-]: JMP       79           ; PC := 79
- 69 [-]: LT        0 R0 K1      ; if R0 >= 0 then PC := 78
- 70 [-]: JMP       78           ; PC := 78
- 71 [-]: GETGLOBAL R15 K7       ; R15 := 0x93034B55
- 72 [-]: LOADK     R16 K5       ; R16 := 1
- 73 [-]: GETUPVAL  R17 U4       ; R17 := U4
- 74 [-]: UNM       R18 R0       ; R18 := - R0
- 75 [-]: CALL      R15 4 2      ; R15 := R15(R16,R17,R18)
- 76 [-]: MOVE      R14 R15      ; R14 := R15
- 77 [-]: JMP       79           ; PC := 79
- 78 [-]: LOADK     R14 K5       ; R14 := 1
- 79 [-]: GETGLOBAL R15 K24      ; R15 := 0x52E17A90
- 80 [-]: GETGLOBAL R16 K19      ; R16 := mMovie
- 81 [-]: LOADK     R17 K21      ; R17 := "Alignment.Contents."
- 82 [-]: MOVE      R18 R12      ; R18 := R12
- 83 [-]: LOADK     R19 K22      ; R19 := "Diorama"
- 84 [-]: CONCAT    R17 R17 R19  ; R17 := R17 .. R18 .. R19
- 85 [-]: GETGLOBAL R18 K25      ; R18 := UISys
- 86 [-]: GETTABLE  R18 R18 K26  ; R18 := R18["FlashInstance_EASE_OUT"]
- 87 [-]: NEWTABLE  R19 1 0      ; R19 := {}
- 88 [-]: CLOSURE   R20 1        ; R20 := closure(Function #6.2)
- 89 [-]: MOVE      R0 R7        ; R0 := R7
- 90 [-]: MOVE      R0 R12       ; R0 := R12
- 91 [-]: MOVE      R0 R13       ; R0 := R13
- 92 [-]: MOVE      R0 R14       ; R0 := R14
- 93 [-]: SETLIST   R19 1 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 1
- 94 [-]: NEWTABLE  R20 1 0      ; R20 := {}
- 95 [-]: LOADK     R21 K5       ; R21 := 1
- 96 [-]: SETLIST   R20 1 1      ; R20[(1-1)*FPF+i] := R(20+i), 1 <= i <= 1
- 97 [-]: MOVE      R21 R5       ; R21 := R5
- 98 [-]: CALL      R15 7 1      ; R15(R16,R17,R18,R19,R20,R21)
- 99 [-]: CLOSE     R13          ; SAVE R13,...
-100 [-]: CLOSE     R11          ; SAVE R11,...
-101 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 45; R10 := R11 end
-102 [-]: JMP       45           ; PC := 45
-103 [-]: GETGLOBAL R11 K24      ; R11 := 0x52E17A90
-104 [-]: GETGLOBAL R12 K19      ; R12 := mMovie
-105 [-]: LOADK     R13 K27      ; R13 := "Alignment.Contents.Pattern1"
-106 [-]: GETGLOBAL R14 K25      ; R14 := UISys
-107 [-]: GETTABLE  R14 R14 K26  ; R14 := R14["FlashInstance_EASE_OUT"]
-108 [-]: NEWTABLE  R15 2 0      ; R15 := {}
-109 [-]: LOADK     R16 K28      ; R16 := "_rotation"
-110 [-]: CLOSURE   R17 2        ; R17 := closure(Function #6.3)
-111 [-]: GETUPVAL  R0 U1        ; R0 := U1
-112 [-]: MOVE      R0 R6        ; R0 := R6
-113 [-]: MOVE      R0 R0        ; R0 := R0
-114 [-]: SETLIST   R15 2 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 2
-115 [-]: NEWTABLE  R16 2 0      ; R16 := {}
-116 [-]: MOVE      R17 R3       ; R17 := R3
-117 [-]: LOADK     R18 K5       ; R18 := 1
-118 [-]: SETLIST   R16 2 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 2
-119 [-]: MOVE      R17 R5       ; R17 := R5
-120 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
-121 [-]: GETGLOBAL R11 K24      ; R11 := 0x52E17A90
-122 [-]: GETGLOBAL R12 K19      ; R12 := mMovie
-123 [-]: LOADK     R13 K29      ; R13 := "Alignment.Contents.Pattern2"
-124 [-]: GETGLOBAL R14 K25      ; R14 := UISys
-125 [-]: GETTABLE  R14 R14 K26  ; R14 := R14["FlashInstance_EASE_OUT"]
-126 [-]: NEWTABLE  R15 1 0      ; R15 := {}
-127 [-]: LOADK     R16 K28      ; R16 := "_rotation"
-128 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-129 [-]: NEWTABLE  R16 1 0      ; R16 := {}
-130 [-]: MOVE      R17 R3       ; R17 := R3
-131 [-]: SETLIST   R16 1 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 1
-132 [-]: MOVE      R17 R5       ; R17 := R5
-133 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
-134 [-]: LOADK     R11 K14      ; R11 := 0.25
-135 [-]: LOADK     R12 K30      ; R12 := 16
-136 [-]: LOADK     R13 K5       ; R13 := 1
-137 [-]: MOVE      R14 R12      ; R14 := R12
-138 [-]: LOADK     R15 K5       ; R15 := 1
-139 [-]: FORPREP   R13 174      ; R13 -= R15; PC := 174
-140 [-]: GETUPVAL  R17 U5       ; R17 := U5
-141 [-]: GETTABLE  R17 R17 K31  ; R17 := R17["HIDDEN"]
-142 [-]: GETUPVAL  R18 U0       ; R18 := U0
-143 [-]: GETTABLE  R18 R18 K3   ; R18 := R18["mWisdom"]
-144 [-]: LE        0 R16 R18    ; if R16 > R18 then PC := 159
-145 [-]: JMP       159          ; PC := 159
-146 [-]: LT        0 R11 R0     ; if R11 >= R0 then PC := 151
-147 [-]: JMP       151          ; PC := 151
-148 [-]: GETUPVAL  R18 U5       ; R18 := U5
-149 [-]: GETTABLE  R17 R18 K32  ; R17 := R18["POSITIVE"]
-150 [-]: JMP       159          ; PC := 159
-151 [-]: UNM       R18 R11      ; R18 := - R11
-152 [-]: LT        0 R0 R18     ; if R0 >= R18 then PC := 157
-153 [-]: JMP       157          ; PC := 157
-154 [-]: GETUPVAL  R18 U5       ; R18 := U5
-155 [-]: GETTABLE  R17 R18 K33  ; R17 := R18["NEGATIVE"]
-156 [-]: JMP       159          ; PC := 159
-157 [-]: GETUPVAL  R18 U5       ; R18 := U5
-158 [-]: GETTABLE  R17 R18 K34  ; R17 := R18["NEUTRAL"]
-159 [-]: GETUPVAL  R18 U6       ; R18 := U6
-160 [-]: GETTABLE  R18 R18 R16  ; R18 := R18[R16]
-161 [-]: EQ        1 R18 R17    ; if R18 == R17 then PC := 174
-162 [-]: JMP       174          ; PC := 174
-163 [-]: GETUPVAL  R18 U6       ; R18 := U6
-164 [-]: SETTABLE  R18 R16 R17  ; R18[R16] := R17
-165 [-]: GETGLOBAL R18 K35      ; R18 := 0x8C64AFA9
-166 [-]: GETGLOBAL R19 K19      ; R19 := mMovie
-167 [-]: LOADK     R20 K36      ; R20 := "Alignment.Blossom"
-168 [-]: MOVE      R21 R16      ; R21 := R16
-169 [-]: LOADK     R22 K37      ; R22 := ".gotoAndPlay"
-170 [-]: CONCAT    R20 R20 R22  ; R20 := R20 .. R21 .. R22
-171 [-]: GETUPVAL  R21 U7       ; R21 := U7
-172 [-]: GETTABLE  R21 R21 R17  ; R21 := R21[R17]
-173 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-174 [-]: FORLOOP   R13 140      ; R13 += R15; if R13 <= R14 then begin PC := 140; R16 := R13 end
-175 [-]: GETUPVAL  R18 U8       ; R18 := U8
-176 [-]: GETGLOBAL R19 K10      ; R19 := math
-177 [-]: GETTABLE  R19 R19 K12  ; R19 := R19["0xF93F7CC8"]
-178 [-]: MOVE      R20 R0       ; R20 := R0
-179 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-180 [-]: LT        0 R11 R19    ; if R11 >= R19 then PC := 183
-181 [-]: JMP       183          ; PC := 183
-182 [-]: LOADK     R18 K38      ; R18 := 111
-183 [-]: GETUPVAL  R19 U9       ; R19 := U9
-184 [-]: EQ        1 R19 R18    ; if R19 == R18 then PC := 192
-185 [-]: JMP       192          ; PC := 192
-186 [-]: MOVE      R18 R9       ; R18 := R9
-187 [-]: GETGLOBAL R19 K35      ; R19 := 0x8C64AFA9
-188 [-]: GETGLOBAL R20 K19      ; R20 := mMovie
-189 [-]: LOADK     R21 K39      ; R21 := "Alignment.MetalFrame.swapDepths"
-190 [-]: MOVE      R22 R18      ; R22 := R18
-191 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
-192 [-]: RETURN    R0 1         ; return 
+ 19 [-]: GETGLOBAL R4 K7        ; R4 := math
+ 20 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0x8B011038"]
+ 21 [-]: GETGLOBAL R5 K7        ; R5 := math
+ 22 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["0xF93F7CC8"]
+ 23 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 24 [-]: SUB       R6 R6 R0     ; R6 := R6 - R0
+ 25 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 26 [-]: MUL       R5 R5 K10    ; R5 := R5 * 0.80000001192093
+ 27 [-]: LOADK     R6 K11       ; R6 := 0.25
+ 28 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 29 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 30 [-]: CLOSURE   R6 0         ; R6 := closure(Function #6.1)
+ 31 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 32 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 33 [-]: GETGLOBAL R7 K12       ; R7 := 0x63B09107
+ 34 [-]: NEWTABLE  R8 2 0       ; R8 := {}
+ 35 [-]: LOADK     R9 K13       ; R9 := "Sun"
+ 36 [-]: LOADK     R10 K14      ; R10 := "Moon"
+ 37 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
+ 38 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
+ 39 [-]: JMP       96           ; PC := 96
+ 40 [-]: GETGLOBAL R12 K15      ; R12 := 0xF595ADDE
+ 41 [-]: GETGLOBAL R13 K16      ; R13 := mMovie
+ 42 [-]: SELF      R13 R13 K17  ; R14 := R13; R13 := R13["0x6B7B470B"]
+ 43 [-]: LOADK     R15 K18      ; R15 := "Alignment.Contents."
+ 44 [-]: MOVE      R16 R11      ; R16 := R11
+ 45 [-]: LOADK     R17 K19      ; R17 := "Diorama"
+ 46 [-]: CONCAT    R15 R15 R17  ; R15 := R15 .. R16 .. R17
+ 47 [-]: LOADK     R16 K20      ; R16 := "_currentframe"
+ 48 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
+ 49 [-]: CALL      R12 0 2      ; R12 := R12(R13,...)
+ 50 [-]: LOADK     R13 K1       ; R13 := 0
+ 51 [-]: EQ        0 R11 K13    ; if R11 ~= "Sun" then PC := 64
+ 52 [-]: JMP       64           ; PC := 64
+ 53 [-]: LT        0 K1 R0      ; if 0 >= R0 then PC := 62
+ 54 [-]: JMP       62           ; PC := 62
+ 55 [-]: GETGLOBAL R14 K21      ; R14 := 0x93034B55
+ 56 [-]: LOADK     R15 K5       ; R15 := 1
+ 57 [-]: GETUPVAL  R16 U4       ; R16 := U4
+ 58 [-]: MOVE      R17 R0       ; R17 := R0
+ 59 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
+ 60 [-]: MOVE      R13 R14      ; R13 := R14
+ 61 [-]: JMP       74           ; PC := 74
+ 62 [-]: LOADK     R13 K5       ; R13 := 1
+ 63 [-]: JMP       74           ; PC := 74
+ 64 [-]: LT        0 R0 K1      ; if R0 >= 0 then PC := 73
+ 65 [-]: JMP       73           ; PC := 73
+ 66 [-]: GETGLOBAL R14 K21      ; R14 := 0x93034B55
+ 67 [-]: LOADK     R15 K5       ; R15 := 1
+ 68 [-]: GETUPVAL  R16 U4       ; R16 := U4
+ 69 [-]: UNM       R17 R0       ; R17 := - R0
+ 70 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
+ 71 [-]: MOVE      R13 R14      ; R13 := R14
+ 72 [-]: JMP       74           ; PC := 74
+ 73 [-]: LOADK     R13 K5       ; R13 := 1
+ 74 [-]: GETGLOBAL R14 K22      ; R14 := 0x52E17A90
+ 75 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+ 76 [-]: LOADK     R16 K18      ; R16 := "Alignment.Contents."
+ 77 [-]: MOVE      R17 R11      ; R17 := R11
+ 78 [-]: LOADK     R18 K19      ; R18 := "Diorama"
+ 79 [-]: CONCAT    R16 R16 R18  ; R16 := R16 .. R17 .. R18
+ 80 [-]: GETGLOBAL R17 K23      ; R17 := UISys
+ 81 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["FlashInstance_EASE_OUT"]
+ 82 [-]: NEWTABLE  R18 1 0      ; R18 := {}
+ 83 [-]: CLOSURE   R19 1        ; R19 := closure(Function #6.2)
+ 84 [-]: MOVE      R0 R6        ; R0 := R6
+ 85 [-]: MOVE      R0 R11       ; R0 := R11
+ 86 [-]: MOVE      R0 R12       ; R0 := R12
+ 87 [-]: MOVE      R0 R13       ; R0 := R13
+ 88 [-]: SETLIST   R18 1 1      ; R18[(1-1)*FPF+i] := R(18+i), 1 <= i <= 1
+ 89 [-]: NEWTABLE  R19 1 0      ; R19 := {}
+ 90 [-]: LOADK     R20 K5       ; R20 := 1
+ 91 [-]: SETLIST   R19 1 1      ; R19[(1-1)*FPF+i] := R(19+i), 1 <= i <= 1
+ 92 [-]: MOVE      R20 R4       ; R20 := R4
+ 93 [-]: CALL      R14 7 1      ; R14(R15,R16,R17,R18,R19,R20)
+ 94 [-]: CLOSE     R12          ; SAVE R12,...
+ 95 [-]: CLOSE     R10          ; SAVE R10,...
+ 96 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 40; R9 := R10 end
+ 97 [-]: JMP       40           ; PC := 40
+ 98 [-]: GETGLOBAL R10 K22      ; R10 := 0x52E17A90
+ 99 [-]: GETGLOBAL R11 K16      ; R11 := mMovie
+100 [-]: LOADK     R12 K25      ; R12 := "Alignment.Contents.Pattern1"
+101 [-]: GETGLOBAL R13 K23      ; R13 := UISys
+102 [-]: GETTABLE  R13 R13 K24  ; R13 := R13["FlashInstance_EASE_OUT"]
+103 [-]: NEWTABLE  R14 2 0      ; R14 := {}
+104 [-]: LOADK     R15 K26      ; R15 := "_rotation"
+105 [-]: CLOSURE   R16 2        ; R16 := closure(Function #6.3)
+106 [-]: GETUPVAL  R0 U1        ; R0 := U1
+107 [-]: MOVE      R0 R5        ; R0 := R5
+108 [-]: MOVE      R0 R0        ; R0 := R0
+109 [-]: SETLIST   R14 2 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 2
+110 [-]: NEWTABLE  R15 2 0      ; R15 := {}
+111 [-]: MOVE      R16 R3       ; R16 := R3
+112 [-]: LOADK     R17 K5       ; R17 := 1
+113 [-]: SETLIST   R15 2 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 2
+114 [-]: MOVE      R16 R4       ; R16 := R4
+115 [-]: CALL      R10 7 1      ; R10(R11,R12,R13,R14,R15,R16)
+116 [-]: GETGLOBAL R10 K22      ; R10 := 0x52E17A90
+117 [-]: GETGLOBAL R11 K16      ; R11 := mMovie
+118 [-]: LOADK     R12 K27      ; R12 := "Alignment.Contents.Pattern2"
+119 [-]: GETGLOBAL R13 K23      ; R13 := UISys
+120 [-]: GETTABLE  R13 R13 K24  ; R13 := R13["FlashInstance_EASE_OUT"]
+121 [-]: NEWTABLE  R14 1 0      ; R14 := {}
+122 [-]: LOADK     R15 K26      ; R15 := "_rotation"
+123 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
+124 [-]: NEWTABLE  R15 1 0      ; R15 := {}
+125 [-]: MOVE      R16 R3       ; R16 := R3
+126 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
+127 [-]: MOVE      R16 R4       ; R16 := R4
+128 [-]: CALL      R10 7 1      ; R10(R11,R12,R13,R14,R15,R16)
+129 [-]: LOADK     R10 K11      ; R10 := 0.25
+130 [-]: LOADK     R11 K28      ; R11 := 16
+131 [-]: LOADK     R12 K5       ; R12 := 1
+132 [-]: MOVE      R13 R11      ; R13 := R11
+133 [-]: LOADK     R14 K5       ; R14 := 1
+134 [-]: FORPREP   R12 169      ; R12 -= R14; PC := 169
+135 [-]: GETUPVAL  R16 U5       ; R16 := U5
+136 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["HIDDEN"]
+137 [-]: GETUPVAL  R17 U0       ; R17 := U0
+138 [-]: GETTABLE  R17 R17 K3   ; R17 := R17["mWisdom"]
+139 [-]: LE        0 R15 R17    ; if R15 > R17 then PC := 154
+140 [-]: JMP       154          ; PC := 154
+141 [-]: LT        0 R10 R0     ; if R10 >= R0 then PC := 146
+142 [-]: JMP       146          ; PC := 146
+143 [-]: GETUPVAL  R17 U5       ; R17 := U5
+144 [-]: GETTABLE  R16 R17 K30  ; R16 := R17["POSITIVE"]
+145 [-]: JMP       154          ; PC := 154
+146 [-]: UNM       R17 R10      ; R17 := - R10
+147 [-]: LT        0 R0 R17     ; if R0 >= R17 then PC := 152
+148 [-]: JMP       152          ; PC := 152
+149 [-]: GETUPVAL  R17 U5       ; R17 := U5
+150 [-]: GETTABLE  R16 R17 K31  ; R16 := R17["NEGATIVE"]
+151 [-]: JMP       154          ; PC := 154
+152 [-]: GETUPVAL  R17 U5       ; R17 := U5
+153 [-]: GETTABLE  R16 R17 K32  ; R16 := R17["NEUTRAL"]
+154 [-]: GETUPVAL  R17 U6       ; R17 := U6
+155 [-]: GETTABLE  R17 R17 R15  ; R17 := R17[R15]
+156 [-]: EQ        1 R17 R16    ; if R17 == R16 then PC := 169
+157 [-]: JMP       169          ; PC := 169
+158 [-]: GETUPVAL  R17 U6       ; R17 := U6
+159 [-]: SETTABLE  R17 R15 R16  ; R17[R15] := R16
+160 [-]: GETGLOBAL R17 K33      ; R17 := 0x8C64AFA9
+161 [-]: GETGLOBAL R18 K16      ; R18 := mMovie
+162 [-]: LOADK     R19 K34      ; R19 := "Alignment.Blossom"
+163 [-]: MOVE      R20 R15      ; R20 := R15
+164 [-]: LOADK     R21 K35      ; R21 := ".gotoAndPlay"
+165 [-]: CONCAT    R19 R19 R21  ; R19 := R19 .. R20 .. R21
+166 [-]: GETUPVAL  R20 U7       ; R20 := U7
+167 [-]: GETTABLE  R20 R20 R16  ; R20 := R20[R16]
+168 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
+169 [-]: FORLOOP   R12 135      ; R12 += R14; if R12 <= R13 then begin PC := 135; R15 := R12 end
+170 [-]: GETUPVAL  R17 U8       ; R17 := U8
+171 [-]: GETGLOBAL R18 K7       ; R18 := math
+172 [-]: GETTABLE  R18 R18 K9   ; R18 := R18["0xF93F7CC8"]
+173 [-]: MOVE      R19 R0       ; R19 := R0
+174 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+175 [-]: LT        0 R10 R18    ; if R10 >= R18 then PC := 178
+176 [-]: JMP       178          ; PC := 178
+177 [-]: LOADK     R17 K36      ; R17 := 111
+178 [-]: GETUPVAL  R18 U9       ; R18 := U9
+179 [-]: EQ        1 R18 R17    ; if R18 == R17 then PC := 187
+180 [-]: JMP       187          ; PC := 187
+181 [-]: MOVE      R17 R9       ; R17 := R9
+182 [-]: GETGLOBAL R18 K33      ; R18 := 0x8C64AFA9
+183 [-]: GETGLOBAL R19 K16      ; R19 := mMovie
+184 [-]: LOADK     R20 K37      ; R20 := "Alignment.MetalFrame.swapDepths"
+185 [-]: MOVE      R21 R17      ; R21 := R17
+186 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
+187 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6.1:
 ;
 ; Name:            
-; Defined at line: 77
+; Defined at line: 76
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -527,7 +522,7 @@ code size: 8
 ; Function #6.2:
 ;
 ; Name:            
-; Defined at line: 102
+; Defined at line: 101
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -545,7 +540,7 @@ code size: 8
 ; Function #6.3:
 ;
 ; Name:            
-; Defined at line: 108
+; Defined at line: 107
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -563,7 +558,7 @@ code size: 8
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 141
+; Defined at line: 140
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -585,7 +580,7 @@ code size: 8
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 145
+; Defined at line: 144
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -607,7 +602,7 @@ code size: 8
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 149
+; Defined at line: 148
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -654,7 +649,7 @@ code size: 8
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 173
+; Defined at line: 172
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -680,7 +675,7 @@ code size: 8
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 181
+; Defined at line: 180
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -722,7 +717,7 @@ code size: 8
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 192
+; Defined at line: 191
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -811,7 +806,7 @@ code size: 8
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 218
+; Defined at line: 217
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -825,7 +820,7 @@ code size: 8
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 222
+; Defined at line: 221
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

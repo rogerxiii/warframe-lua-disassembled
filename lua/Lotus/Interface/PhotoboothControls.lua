@@ -204,7 +204,7 @@ code size: 22
 code size: 6
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\PhotoboothControls.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\PhotoboothControls.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -6797,7 +6797,7 @@ code size: 8
  84 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
  85 [-]: LOADK     R1 K28       ; R1 := "<F6>"
  86 [-]: GETGLOBAL R2 K3        ; R2 := Engine
- 87 [-]: GETTABLE  R2 R2 K29    ; R2 := R2["0x918EF8CE"]
+ 87 [-]: GETTABLE  R2 R2 K29    ; R2 := R2["0xE3029851"]
  88 [-]: CALL      R2 1 2       ; R2 := R2()
  89 [-]: TEST      R2 0         ; if not R2 then PC := 93
  90 [-]: JMP       93           ; PC := 93
@@ -8887,7 +8887,7 @@ code size: 8
 229 [-]: GETUPVAL  R26 U23      ; R26 := U23
 230 [-]: SETTABLE  R25 K34 R26  ; R25["CallBack"] := R26
 231 [-]: GETGLOBAL R26 K60      ; R26 := Engine
-232 [-]: GETTABLE  R26 R26 K61  ; R26 := R26["0x918EF8CE"]
+232 [-]: GETTABLE  R26 R26 K61  ; R26 := R26["0xE3029851"]
 233 [-]: CALL      R26 1 2      ; R26 := R26()
 234 [-]: TEST      R26 1        ; if R26 then PC := 239
 235 [-]: JMP       239          ; PC := 239
@@ -9052,7 +9052,7 @@ code size: 8
 ; Max Stack Size:  2
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := Engine
-  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0x918EF8CE"]
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["0xE3029851"]
   3 [-]: CALL      R0 1 2       ; R0 := R0()
   4 [-]: TEST      R0 1         ; if R0 then PC := 9
   5 [-]: JMP       9            ; PC := 9

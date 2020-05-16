@@ -1,19 +1,18 @@
-code size: 25
-code size: 12
+code size: 24
 code size: 178
 code size: 70
 code size: 21
 code size: 61
 code size: 13
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\SabotageEffects.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\SabotageEffects.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  4
+; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "ModularObjectiveTime"
@@ -22,53 +21,29 @@ code size: 13
   5 [-]: LOADK     R2 K2        ; R2 := "SabotageCoreResult"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
-  8 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
-  9 [-]: MOVE      R0 R0        ; R0 := R0
- 10 [-]: SETGLOBAL R3 K3        ; IceDefenseMaterials := R3
- 11 [-]: SETGLOBAL R3 K4        ; 0x7E9F5F49 := R3
- 12 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
- 13 [-]: MOVE      R0 R1        ; R0 := R1
- 14 [-]: SETGLOBAL R3 K5        ; UpdateReactorMaterials := R3
- 15 [-]: SETGLOBAL R3 K6        ; 0x54ECB562 := R3
- 16 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
- 17 [-]: SETGLOBAL R3 K7        ; PipeDefenseAvatarDamaged := R3
- 18 [-]: SETGLOBAL R3 K8        ; 0xF26739E := R3
- 19 [-]: CLOSURE   R3 4         ; R3 := closure(Function #5)
- 20 [-]: SETGLOBAL R3 K9        ; PipeDefenseAvatarDied := R3
- 21 [-]: SETGLOBAL R3 K10       ; 0xF4EB138D := R3
- 22 [-]: CLOSURE   R3 5         ; R3 := closure(Function #6)
- 23 [-]: SETGLOBAL R3 K11       ; ReactorPlayAnims := R3
- 24 [-]: SETGLOBAL R3 K12       ; 0xFA09E5FC := R3
- 25 [-]: RETURN    R0 1         ; return 
+  8 [-]: MOVE      R0 R0        ; R0 := R0
+  9 [-]: SETGLOBAL R2 K3        ; IceDefenseMaterials := R2
+ 10 [-]: SETGLOBAL R2 K4        ; 0x7E9F5F49 := R2
+ 11 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
+ 12 [-]: MOVE      R0 R1        ; R0 := R1
+ 13 [-]: SETGLOBAL R2 K5        ; UpdateReactorMaterials := R2
+ 14 [-]: SETGLOBAL R2 K6        ; 0x54ECB562 := R2
+ 15 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
+ 16 [-]: SETGLOBAL R2 K7        ; PipeDefenseAvatarDamaged := R2
+ 17 [-]: SETGLOBAL R2 K8        ; 0xF26739E := R2
+ 18 [-]: CLOSURE   R2 3         ; R2 := closure(Function #4)
+ 19 [-]: SETGLOBAL R2 K9        ; PipeDefenseAvatarDied := R2
+ 20 [-]: SETGLOBAL R2 K10       ; 0xF4EB138D := R2
+ 21 [-]: CLOSURE   R2 4         ; R2 := closure(Function #5)
+ 22 [-]: SETGLOBAL R2 K11       ; ReactorPlayAnims := R2
+ 23 [-]: SETGLOBAL R2 K12       ; 0xFA09E5FC := R2
+ 24 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
 ; Defined at line: 48
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: TESTSET   R2 R1 1      ; if R1 then PC := 4 else R2 := R1
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: LOADK     R2 K0        ; R2 := 0
-  4 [-]: MOVE      R2 K1        ; R2 := K1
-  5 [-]: GETGLOBAL R3 K2        ; R3 := math
-  6 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["0xF7005A7B"]
-  7 [-]: MUL       R4 R0 R2     ; R4 := R0 * R2
-  8 [-]: ADD       R4 R4 K4     ; R4 := R4 + 0.5
-  9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 10 [-]: DIV       R3 R3 R2     ; R3 := R3 / R2
- 11 [-]: RETURN    R3 2         ; return R3
- 12 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 53
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -254,10 +229,10 @@ code size: 13
 178 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3:
+; Function #2:
 ;
 ; Name:            
-; Defined at line: 127
+; Defined at line: 122
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -335,10 +310,10 @@ code size: 13
  70 [-]: RETURN    R0 1         ; return 
 
 
-; Function #4:
+; Function #3:
 ;
 ; Name:            
-; Defined at line: 158
+; Defined at line: 153
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -367,10 +342,10 @@ code size: 13
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 175
+; Defined at line: 170
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -439,10 +414,10 @@ code size: 13
  61 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 192
+; Defined at line: 187
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

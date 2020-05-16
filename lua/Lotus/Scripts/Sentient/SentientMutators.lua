@@ -1,9 +1,9 @@
 code size: 24
 code size: 16
 code size: 10
-code size: 95
+code size: 100
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Sentient\SentientMutators.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Sentient\SentientMutators.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -113,25 +113,25 @@ code size: 95
  16 [-]: LOADK     R6 K8        ; R6 := 1
  17 [-]: LEN       R7 R5        ; R7 := # R5
  18 [-]: LOADK     R8 K8        ; R8 := 1
- 19 [-]: FORPREP   R6 94        ; R6 -= R8; PC := 94
+ 19 [-]: FORPREP   R6 99        ; R6 -= R8; PC := 99
  20 [-]: GETGLOBAL R10 K9       ; R10 := 0x400E7765
  21 [-]: GETTABLE  R11 R5 R9    ; R11 := R5[R9]
  22 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 23 [-]: TEST      R10 1        ; if R10 then PC := 94
- 24 [-]: JMP       94           ; PC := 94
+ 23 [-]: TEST      R10 1        ; if R10 then PC := 99
+ 24 [-]: JMP       99           ; PC := 99
  25 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
- 26 [-]: EQ        1 R0 R10     ; if R0 == R10 then PC := 94
- 27 [-]: JMP       94           ; PC := 94
+ 26 [-]: EQ        1 R0 R10     ; if R0 == R10 then PC := 99
+ 27 [-]: JMP       99           ; PC := 99
  28 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
  29 [-]: SELF      R10 R10 K10  ; R11 := R10; R10 := R10["0xB6293ABC"]
  30 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 31 [-]: TEST      R10 1        ; if R10 then PC := 94
- 32 [-]: JMP       94           ; PC := 94
+ 31 [-]: TEST      R10 1        ; if R10 then PC := 99
+ 32 [-]: JMP       99           ; PC := 99
  33 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
  34 [-]: SELF      R10 R10 K11  ; R11 := R10; R10 := R10["0xBF8DC153"]
  35 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 36 [-]: EQ        0 R10 R2     ; if R10 ~= R2 then PC := 94
- 37 [-]: JMP       94           ; PC := 94
+ 36 [-]: EQ        0 R10 R2     ; if R10 ~= R2 then PC := 99
+ 37 [-]: JMP       99           ; PC := 99
  38 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
  39 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0xA3F6069B"]
  40 [-]: CALL      R10 2 2      ; R10 := R10(R11)
@@ -182,13 +182,18 @@ code size: 95
  85 [-]: LOADK     R17 K17      ; R17 := 0
  86 [-]: CALL      R16 2 1      ; R16(R17)
  87 [-]: JMP       58           ; PC := 58
- 88 [-]: GETTABLE  R16 R5 R9    ; R16 := R5[R9]
- 89 [-]: SELF      R16 R16 K22  ; R17 := R16; R16 := R16["0xAB436EF2"]
- 90 [-]: GETUPVAL  R18 U1       ; R18 := U1
- 91 [-]: GETGLOBAL R19 K23      ; R19 := EMPTY_SYMBOL
- 92 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
- 93 [-]: JMP       95           ; PC := 95
- 94 [-]: FORLOOP   R6 20        ; R6 += R8; if R6 <= R7 then begin PC := 20; R9 := R6 end
- 95 [-]: RETURN    R0 1         ; return 
+ 88 [-]: GETGLOBAL R16 K9       ; R16 := 0x400E7765
+ 89 [-]: GETTABLE  R17 R5 R9    ; R17 := R5[R9]
+ 90 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+ 91 [-]: TEST      R16 1        ; if R16 then PC := 100
+ 92 [-]: JMP       100          ; PC := 100
+ 93 [-]: GETTABLE  R16 R5 R9    ; R16 := R5[R9]
+ 94 [-]: SELF      R16 R16 K22  ; R17 := R16; R16 := R16["0xAB436EF2"]
+ 95 [-]: GETUPVAL  R18 U1       ; R18 := U1
+ 96 [-]: GETGLOBAL R19 K23      ; R19 := EMPTY_SYMBOL
+ 97 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+ 98 [-]: JMP       100          ; PC := 100
+ 99 [-]: FORLOOP   R6 20        ; R6 += R8; if R6 <= R7 then begin PC := 20; R9 := R6 end
+100 [-]: RETURN    R0 1         ; return 
 
 

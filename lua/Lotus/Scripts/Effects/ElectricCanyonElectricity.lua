@@ -1,10 +1,10 @@
 code size: 28
 code size: 17
-code size: 131
+code size: 93
 code size: 58
 code size: 17
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\ElectricCanyonElectricity.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\ElectricCanyonElectricity.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -46,7 +46,7 @@ code size: 17
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 34
+; Defined at line: 30
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -74,11 +74,11 @@ code size: 17
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 42
+; Defined at line: 38
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  17
+; Max Stack Size:  13
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := DoRotation
   2 [-]: EQ        0 R1 K1      ; if R1 ~= "0x1" then PC := 10
@@ -116,8 +116,8 @@ code size: 17
  34 [-]: LOADK     R8 K11       ; R8 := 1
  35 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
  36 [-]: GETGLOBAL R2 K15       ; R2 := DoRandomNoise
- 37 [-]: EQ        0 R2 K1      ; if R2 ~= "0x1" then PC := 131
- 38 [-]: JMP       131          ; PC := 131
+ 37 [-]: EQ        0 R2 K1      ; if R2 ~= "0x1" then PC := 93
+ 38 [-]: JMP       93           ; PC := 93
  39 [-]: GETGLOBAL R2 K8        ; R2 := math
  40 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["0x865961F7"]
  41 [-]: GETGLOBAL R3 K16       ; R3 := RandomOffsetL
@@ -130,93 +130,55 @@ code size: 17
  48 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  49 [-]: GETGLOBAL R4 K8        ; R4 := math
  50 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0x865961F7"]
- 51 [-]: GETGLOBAL R5 K20       ; R5 := nAmtL
- 52 [-]: MUL       R5 R5 K21    ; R5 := R5 * 1000
- 53 [-]: GETGLOBAL R6 K22       ; R6 := nAmtH
- 54 [-]: MUL       R6 R6 K21    ; R6 := R6 * 1000
- 55 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 56 [-]: DIV       R4 R4 K21    ; R4 := R4 / 1000
- 57 [-]: GETGLOBAL R5 K8        ; R5 := math
- 58 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["0x865961F7"]
- 59 [-]: GETGLOBAL R6 K23       ; R6 := nFrqL
- 60 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["x"]
- 61 [-]: MUL       R6 R6 K21    ; R6 := R6 * 1000
- 62 [-]: GETGLOBAL R7 K25       ; R7 := nFrqH
- 63 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["x"]
- 64 [-]: MUL       R7 R7 K21    ; R7 := R7 * 1000
- 65 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 66 [-]: DIV       R5 R5 K21    ; R5 := R5 / 1000
- 67 [-]: GETGLOBAL R6 K8        ; R6 := math
- 68 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["0x865961F7"]
- 69 [-]: GETGLOBAL R7 K23       ; R7 := nFrqL
- 70 [-]: GETTABLE  R7 R7 K26    ; R7 := R7["y"]
- 71 [-]: MUL       R7 R7 K21    ; R7 := R7 * 1000
- 72 [-]: GETGLOBAL R8 K25       ; R8 := nFrqH
- 73 [-]: GETTABLE  R8 R8 K26    ; R8 := R8["y"]
- 74 [-]: MUL       R8 R8 K21    ; R8 := R8 * 1000
- 75 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 76 [-]: DIV       R6 R6 K21    ; R6 := R6 / 1000
- 77 [-]: GETGLOBAL R7 K8        ; R7 := math
- 78 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["0x865961F7"]
- 79 [-]: GETGLOBAL R8 K23       ; R8 := nFrqL
- 80 [-]: GETTABLE  R8 R8 K27    ; R8 := R8["z"]
- 81 [-]: MUL       R8 R8 K21    ; R8 := R8 * 1000
- 82 [-]: GETGLOBAL R9 K25       ; R9 := nFrqH
- 83 [-]: GETTABLE  R9 R9 K27    ; R9 := R9["z"]
- 84 [-]: MUL       R9 R9 K21    ; R9 := R9 * 1000
- 85 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 86 [-]: DIV       R7 R7 K21    ; R7 := R7 / 1000
- 87 [-]: GETGLOBAL R8 K8        ; R8 := math
- 88 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["0x865961F7"]
- 89 [-]: GETGLOBAL R9 K28       ; R9 := nSclL
- 90 [-]: GETTABLE  R9 R9 K24    ; R9 := R9["x"]
- 91 [-]: MUL       R9 R9 K21    ; R9 := R9 * 1000
- 92 [-]: GETGLOBAL R10 K29      ; R10 := nSclH
- 93 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["x"]
- 94 [-]: MUL       R10 R10 K21  ; R10 := R10 * 1000
- 95 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 96 [-]: DIV       R8 R8 K21    ; R8 := R8 / 1000
- 97 [-]: GETGLOBAL R9 K8        ; R9 := math
- 98 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["0x865961F7"]
- 99 [-]: GETGLOBAL R10 K28      ; R10 := nSclL
-100 [-]: GETTABLE  R10 R10 K26  ; R10 := R10["y"]
-101 [-]: MUL       R10 R10 K21  ; R10 := R10 * 1000
-102 [-]: GETGLOBAL R11 K29      ; R11 := nSclH
-103 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["y"]
-104 [-]: MUL       R11 R11 K21  ; R11 := R11 * 1000
-105 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-106 [-]: DIV       R9 R9 K21    ; R9 := R9 / 1000
-107 [-]: GETGLOBAL R10 K8       ; R10 := math
-108 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["0x865961F7"]
-109 [-]: GETGLOBAL R11 K28      ; R11 := nSclL
-110 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["z"]
-111 [-]: MUL       R11 R11 K21  ; R11 := R11 * 1000
-112 [-]: GETGLOBAL R12 K29      ; R12 := nSclH
-113 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["z"]
-114 [-]: MUL       R12 R12 K21  ; R12 := R12 * 1000
-115 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-116 [-]: DIV       R10 R10 K21  ; R10 := R10 / 1000
-117 [-]: SELF      R11 R0 K12   ; R12 := R0; R11 := R0["0xD124E361"]
-118 [-]: GETUPVAL  R13 U1       ; R13 := U1
-119 [-]: MOVE      R14 R2       ; R14 := R2
-120 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-121 [-]: SELF      R11 R0 K12   ; R12 := R0; R11 := R0["0xD124E361"]
-122 [-]: GETUPVAL  R13 U2       ; R13 := U2
-123 [-]: MOVE      R14 R3       ; R14 := R3
-124 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-125 [-]: SELF      R11 R0 K12   ; R12 := R0; R11 := R0["0xD124E361"]
-126 [-]: GETUPVAL  R13 U3       ; R13 := U3
-127 [-]: MOVE      R14 R8       ; R14 := R8
-128 [-]: MOVE      R15 R9       ; R15 := R9
-129 [-]: MOVE      R16 R10      ; R16 := R10
-130 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-131 [-]: RETURN    R0 1         ; return 
+ 51 [-]: GETGLOBAL R5 K20       ; R5 := nSclL
+ 52 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["x"]
+ 53 [-]: MUL       R5 R5 K22    ; R5 := R5 * 1000
+ 54 [-]: GETGLOBAL R6 K23       ; R6 := nSclH
+ 55 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["x"]
+ 56 [-]: MUL       R6 R6 K22    ; R6 := R6 * 1000
+ 57 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 58 [-]: DIV       R4 R4 K22    ; R4 := R4 / 1000
+ 59 [-]: GETGLOBAL R5 K8        ; R5 := math
+ 60 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["0x865961F7"]
+ 61 [-]: GETGLOBAL R6 K20       ; R6 := nSclL
+ 62 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["y"]
+ 63 [-]: MUL       R6 R6 K22    ; R6 := R6 * 1000
+ 64 [-]: GETGLOBAL R7 K23       ; R7 := nSclH
+ 65 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["y"]
+ 66 [-]: MUL       R7 R7 K22    ; R7 := R7 * 1000
+ 67 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 68 [-]: DIV       R5 R5 K22    ; R5 := R5 / 1000
+ 69 [-]: GETGLOBAL R6 K8        ; R6 := math
+ 70 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["0x865961F7"]
+ 71 [-]: GETGLOBAL R7 K20       ; R7 := nSclL
+ 72 [-]: GETTABLE  R7 R7 K25    ; R7 := R7["z"]
+ 73 [-]: MUL       R7 R7 K22    ; R7 := R7 * 1000
+ 74 [-]: GETGLOBAL R8 K23       ; R8 := nSclH
+ 75 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["z"]
+ 76 [-]: MUL       R8 R8 K22    ; R8 := R8 * 1000
+ 77 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 78 [-]: DIV       R6 R6 K22    ; R6 := R6 / 1000
+ 79 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0["0xD124E361"]
+ 80 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 81 [-]: MOVE      R10 R2       ; R10 := R2
+ 82 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 83 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0["0xD124E361"]
+ 84 [-]: GETUPVAL  R9 U2        ; R9 := U2
+ 85 [-]: MOVE      R10 R3       ; R10 := R3
+ 86 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 87 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0["0xD124E361"]
+ 88 [-]: GETUPVAL  R9 U3        ; R9 := U3
+ 89 [-]: MOVE      R10 R4       ; R10 := R4
+ 90 [-]: MOVE      R11 R5       ; R11 := R5
+ 91 [-]: MOVE      R12 R6       ; R12 := R6
+ 92 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+ 93 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 73
+; Defined at line: 65
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -285,7 +247,7 @@ code size: 17
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 96
+; Defined at line: 88
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

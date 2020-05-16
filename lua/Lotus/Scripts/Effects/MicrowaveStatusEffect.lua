@@ -1,17 +1,16 @@
-code size: 37
-code size: 42
+code size: 26
 code size: 11
 code size: 190
 code size: 31
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\MicrowaveStatusEffect.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\MicrowaveStatusEffect.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  10
+; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "impactPoint"
@@ -22,93 +21,29 @@ code size: 31
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0xEC274B1A
   8 [-]: LOADK     R3 K3        ; R3 := "CloakVector"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0xEC274B1A
- 11 [-]: LOADK     R4 K4        ; R4 := "LowColor"
+ 10 [-]: GETGLOBAL R3 K4        ; R3 := 0x329BDC44
+ 11 [-]: LOADK     R4 K5        ; R4 := "Lotus.Scripts.Effects.EffectsUtilities"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K0        ; R4 := 0xEC274B1A
- 14 [-]: LOADK     R5 K5        ; R5 := "HighColor"
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: GETGLOBAL R5 K6        ; R5 := 0x329BDC44
- 17 [-]: LOADK     R6 K7        ; R6 := "Lotus.Scripts.Effects.EffectsUtilities"
- 18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 19 [-]: GETGLOBAL R6 K0        ; R6 := 0xEC274B1A
- 20 [-]: LOADK     R7 K8        ; R7 := "EffectsDeco"
- 21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
- 23 [-]: MOVE      R0 R6        ; R0 := R6
- 24 [-]: CLOSURE   R8 1         ; R8 := closure(Function #2)
- 25 [-]: MOVE      R0 R2        ; R0 := R2
- 26 [-]: CLOSURE   R9 2         ; R9 := closure(Function #3)
- 27 [-]: MOVE      R0 R1        ; R0 := R1
- 28 [-]: MOVE      R0 R5        ; R0 := R5
- 29 [-]: MOVE      R0 R8        ; R0 := R8
- 30 [-]: MOVE      R0 R2        ; R0 := R2
- 31 [-]: SETGLOBAL R9 K9        ; MicrowaveTheEnemy := R9
- 32 [-]: SETGLOBAL R9 K10       ; 0x5C12444F := R9
- 33 [-]: CLOSURE   R9 3         ; R9 := closure(Function #4)
- 34 [-]: MOVE      R0 R0        ; R0 := R0
- 35 [-]: SETGLOBAL R9 K11       ; ProjUpdateWorldPos := R9
- 36 [-]: SETGLOBAL R9 K12       ; 0x2798347F := R9
- 37 [-]: RETURN    R0 1         ; return 
+ 13 [-]: CLOSURE   R4 0         ; R4 := closure(Function #1)
+ 14 [-]: MOVE      R0 R2        ; R0 := R2
+ 15 [-]: CLOSURE   R5 1         ; R5 := closure(Function #2)
+ 16 [-]: MOVE      R0 R1        ; R0 := R1
+ 17 [-]: MOVE      R0 R3        ; R0 := R3
+ 18 [-]: MOVE      R0 R4        ; R0 := R4
+ 19 [-]: MOVE      R0 R2        ; R0 := R2
+ 20 [-]: SETGLOBAL R5 K6        ; MicrowaveTheEnemy := R5
+ 21 [-]: SETGLOBAL R5 K7        ; 0x5C12444F := R5
+ 22 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
+ 23 [-]: MOVE      R0 R0        ; R0 := R0
+ 24 [-]: SETGLOBAL R5 K8        ; ProjUpdateWorldPos := R5
+ 25 [-]: SETGLOBAL R5 K9        ; 0x2798347F := R5
+ 26 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 13
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  13
-
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x15D4DAEE"]
-  2 [-]: GETGLOBAL R3 K1        ; R3 := gDecorationType
-  3 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  4 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  5 [-]: GETGLOBAL R3 K2        ; R3 := 0x63B09107
-  6 [-]: MOVE      R4 R1        ; R4 := R1
-  7 [-]: CALL      R3 2 4       ; R3,R4,R5 := R3(R4)
-  8 [-]: JMP       34           ; PC := 34
-  9 [-]: SELF      R8 R7 K3     ; R9 := R7; R8 := R7["0x6A2E414D"]
- 10 [-]: LOADK     R10 K4       ; R10 := 0
- 11 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 12 [-]: GETGLOBAL R9 K5        ; R9 := 0x400E7765
- 13 [-]: MOVE      R10 R8       ; R10 := R8
- 14 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 15 [-]: TEST      R9 1         ; if R9 then PC := 34
- 16 [-]: JMP       34           ; PC := 34
- 17 [-]: SELF      R9 R8 K6     ; R10 := R8; R9 := R8["0x9FB1775E"]
- 18 [-]: GETGLOBAL R11 K7       ; R11 := Lotus_Game
- 19 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["UNLIT_ATTEN"]
- 20 [-]: LOADK     R12 K4       ; R12 := 0
- 21 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 22 [-]: LT        0 K9 R9      ; if 100 >= R9 then PC := 34
- 23 [-]: JMP       34           ; PC := 34
- 24 [-]: SELF      R10 R7 K10   ; R11 := R7; R10 := R7["0xCE832AFF"]
- 25 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 26 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 27 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 34
- 28 [-]: JMP       34           ; PC := 34
- 29 [-]: GETGLOBAL R10 K11      ; R10 := table
- 30 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["0xE6450C9D"]
- 31 [-]: MOVE      R11 R2       ; R11 := R2
- 32 [-]: MOVE      R12 R7       ; R12 := R7
- 33 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 34 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 9; R5 := R6 end
- 35 [-]: JMP       9            ; PC := 9
- 36 [-]: GETGLOBAL R10 K11      ; R10 := table
- 37 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["0xE6450C9D"]
- 38 [-]: MOVE      R11 R2       ; R11 := R2
- 39 [-]: MOVE      R12 R0       ; R12 := R0
- 40 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 41 [-]: RETURN    R2 2         ; return R2
- 42 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 29
+; Defined at line: 9
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -127,10 +62,10 @@ code size: 31
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3:
+; Function #2:
 ;
 ; Name:            
-; Defined at line: 34
+; Defined at line: 14
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -328,10 +263,10 @@ code size: 31
 190 [-]: RETURN    R0 1         ; return 
 
 
-; Function #4:
+; Function #3:
 ;
 ; Name:            
-; Defined at line: 97
+; Defined at line: 77
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

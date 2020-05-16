@@ -1,11 +1,10 @@
-code size: 52
+code size: 51
 code size: 73
 code size: 32
-code size: 11
 code size: 6
 code size: 6
 code size: 11
-code size: 24
+code size: 22
 code size: 3
 code size: 3
 code size: 12
@@ -18,14 +17,14 @@ code size: 30
 code size: 62
 code size: 12
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\PVPLib.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\PVPLib.luac 
 
 ; Name:            
 ; Defined at line: 0
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  7
+; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x38E3A30F
   2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
@@ -40,45 +39,44 @@ code size: 12
  11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
  12 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
  13 [-]: CLOSURE   R3 1         ; R3 := closure(Function #2)
- 14 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3)
- 15 [-]: NEWTABLE  R5 0 15      ; R5 := {}
- 16 [-]: CLOSURE   R6 3         ; R6 := closure(Function #4)
- 17 [-]: MOVE      R0 R2        ; R0 := R2
- 18 [-]: SETTABLE  R5 K6 R6     ; R5["IsValidPvpTarget"] := R6
- 19 [-]: CLOSURE   R6 4         ; R6 := closure(Function #5)
- 20 [-]: MOVE      R0 R3        ; R0 := R3
- 21 [-]: SETTABLE  R5 K7 R6     ; R5["IsValidNpcTarget"] := R6
- 22 [-]: CLOSURE   R6 5         ; R6 := closure(Function #6)
- 23 [-]: SETTABLE  R5 K8 R6     ; R5["ApplySlow"] := R6
- 24 [-]: CLOSURE   R6 6         ; R6 := closure(Function #7)
- 25 [-]: SETTABLE  R5 K9 R6     ; R5["ApplyDisarm"] := R6
- 26 [-]: CLOSURE   R6 7         ; R6 := closure(Function #8)
- 27 [-]: SETTABLE  R5 K10 R6    ; R5["ApplySilence"] := R6
- 28 [-]: CLOSURE   R6 8         ; R6 := closure(Function #9)
- 29 [-]: SETTABLE  R5 K11 R6    ; R5["ApplyFear"] := R6
- 30 [-]: CLOSURE   R6 9         ; R6 := closure(Function #10)
- 31 [-]: SETTABLE  R5 K12 R6    ; R5["ApplyFrozen"] := R6
- 32 [-]: CLOSURE   R6 10        ; R6 := closure(Function #11)
- 33 [-]: SETTABLE  R5 K13 R6    ; R5["ApplyPvPSlow"] := R6
- 34 [-]: CLOSURE   R6 11        ; R6 := closure(Function #12)
- 35 [-]: MOVE      R0 R2        ; R0 := R2
- 36 [-]: SETTABLE  R5 K14 R6    ; R5["DamageOnce"] := R6
- 37 [-]: CLOSURE   R6 12        ; R6 := closure(Function #13)
- 38 [-]: SETTABLE  R5 K15 R6    ; R5["IsPvpEnabled"] := R6
- 39 [-]: CLOSURE   R6 13        ; R6 := closure(Function #14)
- 40 [-]: SETTABLE  R5 K16 R6    ; R5["IsFightingGame"] := R6
- 41 [-]: CLOSURE   R6 14        ; R6 := closure(Function #15)
- 42 [-]: SETTABLE  R5 K17 R6    ; R5["DisablePassives"] := R6
- 43 [-]: CLOSURE   R6 15        ; R6 := closure(Function #16)
- 44 [-]: MOVE      R0 R0        ; R0 := R0
- 45 [-]: MOVE      R0 R1        ; R0 := R1
- 46 [-]: SETTABLE  R5 K18 R6    ; R5["DropCephalonIfCarrying"] := R6
- 47 [-]: CLOSURE   R6 16        ; R6 := closure(Function #17)
- 48 [-]: SETTABLE  R5 K19 R6    ; R5["ApplyPvPDot"] := R6
- 49 [-]: CLOSURE   R6 17        ; R6 := closure(Function #18)
- 50 [-]: SETTABLE  R5 K20 R6    ; R5["GetModifiedSoftTargetRadius"] := R6
- 51 [-]: RETURN    R5 2         ; return R5
- 52 [-]: RETURN    R0 1         ; return 
+ 14 [-]: NEWTABLE  R4 0 15      ; R4 := {}
+ 15 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
+ 16 [-]: MOVE      R0 R2        ; R0 := R2
+ 17 [-]: SETTABLE  R4 K6 R5     ; R4["IsValidPvpTarget"] := R5
+ 18 [-]: CLOSURE   R5 3         ; R5 := closure(Function #4)
+ 19 [-]: MOVE      R0 R3        ; R0 := R3
+ 20 [-]: SETTABLE  R4 K7 R5     ; R4["IsValidNpcTarget"] := R5
+ 21 [-]: CLOSURE   R5 4         ; R5 := closure(Function #5)
+ 22 [-]: SETTABLE  R4 K8 R5     ; R4["ApplySlow"] := R5
+ 23 [-]: CLOSURE   R5 5         ; R5 := closure(Function #6)
+ 24 [-]: SETTABLE  R4 K9 R5     ; R4["ApplyDisarm"] := R5
+ 25 [-]: CLOSURE   R5 6         ; R5 := closure(Function #7)
+ 26 [-]: SETTABLE  R4 K10 R5    ; R4["ApplySilence"] := R5
+ 27 [-]: CLOSURE   R5 7         ; R5 := closure(Function #8)
+ 28 [-]: SETTABLE  R4 K11 R5    ; R4["ApplyFear"] := R5
+ 29 [-]: CLOSURE   R5 8         ; R5 := closure(Function #9)
+ 30 [-]: SETTABLE  R4 K12 R5    ; R4["ApplyFrozen"] := R5
+ 31 [-]: CLOSURE   R5 9         ; R5 := closure(Function #10)
+ 32 [-]: SETTABLE  R4 K13 R5    ; R4["ApplyPvPSlow"] := R5
+ 33 [-]: CLOSURE   R5 10        ; R5 := closure(Function #11)
+ 34 [-]: MOVE      R0 R2        ; R0 := R2
+ 35 [-]: SETTABLE  R4 K14 R5    ; R4["DamageOnce"] := R5
+ 36 [-]: CLOSURE   R5 11        ; R5 := closure(Function #12)
+ 37 [-]: SETTABLE  R4 K15 R5    ; R4["IsPvpEnabled"] := R5
+ 38 [-]: CLOSURE   R5 12        ; R5 := closure(Function #13)
+ 39 [-]: SETTABLE  R4 K16 R5    ; R4["IsFightingGame"] := R5
+ 40 [-]: CLOSURE   R5 13        ; R5 := closure(Function #14)
+ 41 [-]: SETTABLE  R4 K17 R5    ; R4["DisablePassives"] := R5
+ 42 [-]: CLOSURE   R5 14        ; R5 := closure(Function #15)
+ 43 [-]: MOVE      R0 R0        ; R0 := R0
+ 44 [-]: MOVE      R0 R1        ; R0 := R1
+ 45 [-]: SETTABLE  R4 K18 R5    ; R4["DropCephalonIfCarrying"] := R5
+ 46 [-]: CLOSURE   R5 15        ; R5 := closure(Function #16)
+ 47 [-]: SETTABLE  R4 K19 R5    ; R4["ApplyPvPDot"] := R5
+ 48 [-]: CLOSURE   R5 16        ; R5 := closure(Function #17)
+ 49 [-]: SETTABLE  R4 K20 R5    ; R4["GetModifiedSoftTargetRadius"] := R5
+ 50 [-]: RETURN    R4 2         ; return R4
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -211,29 +209,24 @@ code size: 12
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 65
-; #Upvalues:       0
-; #Parameters:     1
+; Defined at line: 68
+; #Upvalues:       1
+; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  5
 
-  1 [-]: LOADK     R1 K0        ; R1 := 0
-  2 [-]: LT        0 R1 R0      ; if R1 >= R0 then PC := 11
-  3 [-]: JMP       11           ; PC := 11
-  4 [-]: GETGLOBAL R2 K1        ; R2 := 0x4CDEF9FF
-  5 [-]: CALL      R2 1 2       ; R2 := R2()
-  6 [-]: ADD       R1 R1 R2     ; R1 := R1 + R2
-  7 [-]: GETGLOBAL R2 K2        ; R2 := 0x201191EA
-  8 [-]: LOADK     R3 K0        ; R3 := 0
-  9 [-]: CALL      R2 2 1       ; R2(R3)
- 10 [-]: JMP       2            ; PC := 2
- 11 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  2 [-]: MOVE      R3 R0        ; R3 := R0
+  3 [-]: MOVE      R4 R1        ; R4 := R1
+  4 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
+  5 [-]: RETURN    R2 0         ; return R2,...
+  6 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 79
+; Defined at line: 74
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -250,24 +243,7 @@ code size: 12
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 85
-; #Upvalues:       1
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  5
-
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: MOVE      R3 R0        ; R3 := R0
-  3 [-]: MOVE      R4 R1        ; R4 := R1
-  4 [-]: TAILCALL  R2 3 0       ; R2,... := R2(R3,R4)
-  5 [-]: RETURN    R2 0         ; return R2,...
-  6 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 92
+; Defined at line: 81
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -286,14 +262,14 @@ code size: 12
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 104
+; Defined at line: 93
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  6
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0xB8613F53"]
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -302,29 +278,41 @@ code size: 12
   5 [-]: RETURN    R0 1         ; return 
   6 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0x8DB5D01F"]
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x53F87356"]
-  9 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 10 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
- 11 [-]: MOVE      R5 R2        ; R5 := R2
- 12 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 13 [-]: TEST      R4 1         ; if R4 then PC := 24
- 14 [-]: JMP       24           ; PC := 24
- 15 [-]: SELF      R4 R2 K4     ; R5 := R2; R4 := R2["0x6C366432"]
- 16 [-]: MOVE      R6 R0        ; R6 := R0
- 17 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 18 [-]: GETGLOBAL R4 K5        ; R4 := 0x201191EA
- 19 [-]: MOVE      R5 R1        ; R5 := R1
- 20 [-]: CALL      R4 2 1       ; R4(R5)
- 21 [-]: SELF      R4 R2 K4     ; R5 := R2; R4 := R2["0x6C366432"]
- 22 [-]: MOVE      R6 R1        ; R6 := R1
- 23 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 24 [-]: RETURN    R0 1         ; return 
+  8 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+  9 [-]: MOVE      R4 R2        ; R4 := R2
+ 10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 11 [-]: TEST      R3 1         ; if R3 then PC := 22
+ 12 [-]: JMP       22           ; PC := 22
+ 13 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x6C366432"]
+ 14 [-]: MOVE      R5 R0        ; R5 := R0
+ 15 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 16 [-]: GETGLOBAL R3 K4        ; R3 := 0x201191EA
+ 17 [-]: MOVE      R4 R1        ; R4 := R1
+ 18 [-]: CALL      R3 2 1       ; R3(R4)
+ 19 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x6C366432"]
+ 20 [-]: MOVE      R5 R1        ; R5 := R1
+ 21 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 22 [-]: RETURN    R0 1         ; return 
+
+
+; Function #7:
+;
+; Name:            
+; Defined at line: 109
+; #Upvalues:       0
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: MOVE      R2 R1        ; R2 := R1
+  2 [-]: RETURN    R2 2         ; return R2
+  3 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 121
+; Defined at line: 115
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -338,21 +326,7 @@ code size: 12
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 127
-; #Upvalues:       0
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: MOVE      R2 R1        ; R2 := R1
-  2 [-]: RETURN    R2 2         ; return R2
-  3 [-]: RETURN    R0 1         ; return 
-
-
-; Function #10:
-;
-; Name:            
-; Defined at line: 133
+; Defined at line: 121
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -372,10 +346,10 @@ code size: 12
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 141
+; Defined at line: 129
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -458,10 +432,10 @@ code size: 12
  75 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 161
+; Defined at line: 149
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -518,10 +492,10 @@ code size: 12
  49 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 181
+; Defined at line: 169
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -554,10 +528,10 @@ code size: 12
  25 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 185
+; Defined at line: 173
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -579,10 +553,10 @@ code size: 12
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 189
+; Defined at line: 177
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -614,10 +588,10 @@ code size: 12
  24 [-]: RETURN    R0 1         ; return 
 
 
-; Function #16:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 193
+; Defined at line: 181
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -655,10 +629,10 @@ code size: 12
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #17:
+; Function #16:
 ;
 ; Name:            
-; Defined at line: 204
+; Defined at line: 192
 ; #Upvalues:       0
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -728,10 +702,10 @@ code size: 12
  62 [-]: RETURN    R0 1         ; return 
 
 
-; Function #18:
+; Function #17:
 ;
 ; Name:            
-; Defined at line: 235
+; Defined at line: 223
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0

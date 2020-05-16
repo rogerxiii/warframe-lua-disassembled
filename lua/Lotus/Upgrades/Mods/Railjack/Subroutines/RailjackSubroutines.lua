@@ -4,9 +4,9 @@ code size: 21
 code size: 9
 code size: 82
 code size: 11
-code size: 115
-code size: 14
-code size: 15
+code size: 119
+code size: 11
+code size: 12
 code size: 11
 code size: 131
 code size: 89
@@ -26,9 +26,10 @@ code size: 9
 code size: 72
 code size: 16
 code size: 9
-code size: 72
+code size: 38
+code size: 50
 code size: 9
-code size: 30
+code size: 32
 code size: 3
 code size: 18
 code size: 9
@@ -53,7 +54,7 @@ code size: 13
 code size: 7
 code size: 9
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Upgrades\Mods\Railjack\Subroutines\RailjackSubroutines.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Upgrades\Mods\Railjack\Subroutines\RailjackSubroutines.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -462,7 +463,7 @@ code size: 9
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  14
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xA559F558"]
@@ -530,55 +531,59 @@ code size: 9
  64 [-]: CLOSURE   R8 0         ; R8 := closure(Function #6.1)
  65 [-]: GETUPVAL  R0 U0        ; R0 := U0
  66 [-]: CLOSURE   R9 1         ; R9 := closure(Function #6.2)
- 67 [-]: SELF      R10 R0 K12   ; R11 := R0; R10 := R0["0x5A115A02"]
- 68 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 69 [-]: TEST      R10 1        ; if R10 then PC := 115
- 70 [-]: JMP       115          ; PC := 115
- 71 [-]: LOADK     R4 K6        ; R4 := 0
- 72 [-]: SELF      R10 R1 K7    ; R11 := R1; R10 := R1["0xA1A15ED3"]
- 73 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 74 [-]: EQ        1 R3 R10     ; if R3 == R10 then PC := 84
- 75 [-]: JMP       84           ; PC := 84
- 76 [-]: SELF      R10 R1 K13   ; R11 := R1; R10 := R1["0xE25D70AC"]
- 77 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 78 [-]: SELF      R10 R10 K14  ; R11 := R10; R10 := R10["0x7A69719D"]
- 79 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 80 [-]: GETGLOBAL R11 K15      ; R11 := shieldDamageRedirection
- 81 [-]: MUL       R10 R10 R11  ; R10 := R10 * R11
- 82 [-]: GETGLOBAL R11 K16      ; R11 := shieldDamageConversionRate
- 83 [-]: MUL       R4 R10 R11   ; R4 := R10 * R11
- 84 [-]: SELF      R10 R1 K7    ; R11 := R1; R10 := R1["0xA1A15ED3"]
- 85 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 86 [-]: MOVE      R3 R10       ; R3 := R10
- 87 [-]: MOVE      R10 R9       ; R10 := R9
- 88 [-]: MOVE      R11 R6       ; R11 := R6
- 89 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 90 [-]: MOVE      R11 R9       ; R11 := R9
- 91 [-]: MOVE      R12 R7       ; R12 := R7
- 92 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 93 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 96
- 94 [-]: JMP       96           ; PC := 96
- 95 [-]: LOADK     R5 K6        ; R5 := 0
- 96 [-]: EQ        1 R4 K6      ; if R4 == 0 then PC := 103
- 97 [-]: JMP       103          ; PC := 103
- 98 [-]: ADD       R5 R5 R4     ; R5 := R5 + R4
- 99 [-]: GETGLOBAL R10 K17      ; R10 := maxDamageRedirectionBonus
-100 [-]: LT        0 R10 R5     ; if R10 >= R5 then PC := 103
-101 [-]: JMP       103          ; PC := 103
-102 [-]: GETGLOBAL R5 K17       ; R5 := maxDamageRedirectionBonus
-103 [-]: MOVE      R10 R8       ; R10 := R8
-104 [-]: MOVE      R11 R6       ; R11 := R6
-105 [-]: MOVE      R12 R5       ; R12 := R5
-106 [-]: CALL      R10 3 1      ; R10(R11,R12)
-107 [-]: MOVE      R10 R8       ; R10 := R8
-108 [-]: MOVE      R11 R7       ; R11 := R7
-109 [-]: MOVE      R12 R5       ; R12 := R5
-110 [-]: CALL      R10 3 1      ; R10(R11,R12)
-111 [-]: GETGLOBAL R10 K5       ; R10 := 0x201191EA
-112 [-]: LOADK     R11 K6       ; R11 := 0
-113 [-]: CALL      R10 2 1      ; R10(R11)
-114 [-]: JMP       67           ; PC := 67
-115 [-]: RETURN    R0 1         ; return 
+ 67 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 68 [-]: SELF      R10 R0 K12   ; R11 := R0; R10 := R0["0x5A115A02"]
+ 69 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 70 [-]: TEST      R10 1        ; if R10 then PC := 119
+ 71 [-]: JMP       119          ; PC := 119
+ 72 [-]: LOADK     R4 K6        ; R4 := 0
+ 73 [-]: SELF      R10 R1 K7    ; R11 := R1; R10 := R1["0xA1A15ED3"]
+ 74 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 75 [-]: EQ        1 R3 R10     ; if R3 == R10 then PC := 85
+ 76 [-]: JMP       85           ; PC := 85
+ 77 [-]: SELF      R10 R1 K13   ; R11 := R1; R10 := R1["0xE25D70AC"]
+ 78 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 79 [-]: SELF      R10 R10 K14  ; R11 := R10; R10 := R10["0x7A69719D"]
+ 80 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 81 [-]: GETGLOBAL R11 K15      ; R11 := shieldDamageRedirection
+ 82 [-]: MUL       R10 R10 R11  ; R10 := R10 * R11
+ 83 [-]: GETGLOBAL R11 K16      ; R11 := shieldDamageConversionRate
+ 84 [-]: MUL       R4 R10 R11   ; R4 := R10 * R11
+ 85 [-]: SELF      R10 R1 K7    ; R11 := R1; R10 := R1["0xA1A15ED3"]
+ 86 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 87 [-]: MOVE      R3 R10       ; R3 := R10
+ 88 [-]: MOVE      R10 R5       ; R10 := R5
+ 89 [-]: MOVE      R11 R9       ; R11 := R9
+ 90 [-]: MOVE      R12 R6       ; R12 := R6
+ 91 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 92 [-]: MOVE      R12 R9       ; R12 := R9
+ 93 [-]: MOVE      R13 R7       ; R13 := R7
+ 94 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 95 [-]: EQ        1 R11 R12    ; if R11 == R12 then PC := 98
+ 96 [-]: JMP       98           ; PC := 98
+ 97 [-]: LOADK     R5 K6        ; R5 := 0
+ 98 [-]: EQ        1 R4 K6      ; if R4 == 0 then PC := 105
+ 99 [-]: JMP       105          ; PC := 105
+100 [-]: ADD       R5 R5 R4     ; R5 := R5 + R4
+101 [-]: GETGLOBAL R11 K17      ; R11 := maxDamageRedirectionBonus
+102 [-]: LT        0 R11 R5     ; if R11 >= R5 then PC := 105
+103 [-]: JMP       105          ; PC := 105
+104 [-]: GETGLOBAL R5 K17       ; R5 := maxDamageRedirectionBonus
+105 [-]: EQ        1 R10 R5     ; if R10 == R5 then PC := 115
+106 [-]: JMP       115          ; PC := 115
+107 [-]: MOVE      R11 R8       ; R11 := R8
+108 [-]: MOVE      R12 R6       ; R12 := R6
+109 [-]: MOVE      R13 R5       ; R13 := R5
+110 [-]: CALL      R11 3 1      ; R11(R12,R13)
+111 [-]: MOVE      R11 R8       ; R11 := R8
+112 [-]: MOVE      R12 R7       ; R12 := R7
+113 [-]: MOVE      R13 R5       ; R13 := R5
+114 [-]: CALL      R11 3 1      ; R11(R12,R13)
+115 [-]: GETGLOBAL R11 K5       ; R11 := 0x201191EA
+116 [-]: LOADK     R12 K6       ; R12 := 0
+117 [-]: CALL      R11 2 1      ; R11(R12)
+118 [-]: JMP       68           ; PC := 68
+119 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6.1:
@@ -588,7 +593,7 @@ code size: 9
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
   2 [-]: MOVE      R3 R0        ; R3 := R0
@@ -596,21 +601,18 @@ code size: 9
   4 [-]: TEST      R2 0         ; if not R2 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0xF92283DD"]
-  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  9 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x728F09C3"]
- 10 [-]: ADD       R5 R2 R1     ; R5 := R2 + R1
- 11 [-]: DIV       R5 R5 R2     ; R5 := R5 / R2
- 12 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 13 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 14 [-]: RETURN    R0 1         ; return 
+  7 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0xFC27F261"]
+  8 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  9 [-]: MOVE      R5 R1        ; R5 := R1
+ 10 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 11 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6.2:
 ;
 ; Name:            
-; Defined at line: 165
-; #Upvalues:       0
+; Defined at line: 164
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  4
@@ -622,20 +624,17 @@ code size: 9
   5 [-]: JMP       8            ; PC := 8
   6 [-]: LOADK     R1 K1        ; R1 := 0
   7 [-]: RETURN    R1 2         ; return R1
-  8 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0["0xF92283DD"]
-  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 10 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0["0x4FE50FA3"]
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: MUL       R3 R1 R2     ; R3 := R1 * R2
- 13 [-]: SUB       R3 R3 R1     ; R3 := R3 - R1
- 14 [-]: RETURN    R3 2         ; return R3
- 15 [-]: RETURN    R0 1         ; return 
+  8 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0["0x31F80DF1"]
+  9 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 10 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 11 [-]: RETURN    R1 2         ; return R1
+ 12 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 202
+; Defined at line: 204
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -657,7 +656,7 @@ code size: 9
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 210
+; Defined at line: 212
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -799,7 +798,7 @@ code size: 9
 ; Function #8.1:
 ;
 ; Name:            
-; Defined at line: 235
+; Defined at line: 237
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -899,7 +898,7 @@ code size: 9
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 288
+; Defined at line: 290
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -955,7 +954,7 @@ code size: 9
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 303
+; Defined at line: 305
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -977,7 +976,7 @@ code size: 9
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 311
+; Defined at line: 313
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1088,7 +1087,7 @@ code size: 9
 ; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 336
+; Defined at line: 338
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1184,7 +1183,7 @@ code size: 9
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 380
+; Defined at line: 382
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1245,7 +1244,7 @@ code size: 9
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 397
+; Defined at line: 399
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1265,7 +1264,7 @@ code size: 9
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 404
+; Defined at line: 406
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1337,7 +1336,7 @@ code size: 9
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 425
+; Defined at line: 427
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1359,7 +1358,7 @@ code size: 9
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 433
+; Defined at line: 435
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1451,7 +1450,7 @@ code size: 9
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 457
+; Defined at line: 459
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1471,7 +1470,7 @@ code size: 9
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 465
+; Defined at line: 467
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1554,7 +1553,7 @@ code size: 9
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 493
+; Defined at line: 495
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1581,7 +1580,7 @@ code size: 9
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 501
+; Defined at line: 503
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1601,7 +1600,7 @@ code size: 9
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 509
+; Defined at line: 511
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1684,7 +1683,7 @@ code size: 9
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 537
+; Defined at line: 539
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1711,7 +1710,7 @@ code size: 9
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 545
+; Defined at line: 547
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1731,11 +1730,11 @@ code size: 9
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 553
+; Defined at line: 555
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  10
+; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xA559F558"]
@@ -1743,78 +1742,105 @@ code size: 9
   4 [-]: TEST      R1 1         ; if R1 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0["0x8DB5D01F"]
-  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
- 10 [-]: MOVE      R3 R1        ; R3 := R1
- 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: TEST      R2 1         ; if R2 then PC := 72
- 13 [-]: JMP       72           ; PC := 72
- 14 [-]: SELF      R2 R1 K4     ; R3 := R1; R2 := R1["0x6978AC59"]
- 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
- 17 [-]: MOVE      R4 R2        ; R4 := R2
- 18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 19 [-]: TEST      R3 0         ; if not R3 then PC := 28
- 20 [-]: JMP       28           ; PC := 28
- 21 [-]: GETGLOBAL R3 K5        ; R3 := 0x201191EA
- 22 [-]: LOADK     R4 K6        ; R4 := 0
- 23 [-]: CALL      R3 2 1       ; R3(R4)
- 24 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1["0x6978AC59"]
- 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 26 [-]: MOVE      R2 R3        ; R2 := R3
- 27 [-]: JMP       16           ; PC := 16
- 28 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
- 29 [-]: MOVE      R4 R2        ; R4 := R2
- 30 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 31 [-]: TEST      R3 1         ; if R3 then PC := 72
- 32 [-]: JMP       72           ; PC := 72
- 33 [-]: GETGLOBAL R3 K7        ; R3 := _T
- 34 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["RJSub_ConvertCapToShield_Sleep"]
- 35 [-]: EQ        1 R3 K9      ; if R3 == nil then PC := 46
- 36 [-]: JMP       46           ; PC := 46
- 37 [-]: GETGLOBAL R3 K7        ; R3 := _T
- 38 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["RJSub_ConvertCapToShield_Sleep"]
- 39 [-]: TEST      R3 0         ; if not R3 then PC := 46
- 40 [-]: JMP       46           ; PC := 46
- 41 [-]: GETGLOBAL R3 K7        ; R3 := _T
- 42 [-]: SETTABLE  R3 K8 K9     ; R3["RJSub_ConvertCapToShield_Sleep"] := nil
- 43 [-]: GETGLOBAL R3 K5        ; R3 := 0x201191EA
- 44 [-]: LOADK     R4 K6        ; R4 := 0
- 45 [-]: CALL      R3 2 1       ; R3(R4)
- 46 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2["0xF7DCFA1E"]
- 47 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 48 [-]: GETGLOBAL R4 K7        ; R4 := _T
- 49 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["oldCapacity"]
- 50 [-]: EQ        1 R4 K9      ; if R4 == nil then PC := 62
- 51 [-]: JMP       62           ; PC := 62
- 52 [-]: SELF      R4 R1 K12    ; R5 := R1; R4 := R1["0xF21555A7"]
- 53 [-]: GETGLOBAL R6 K13       ; R6 := Game
- 54 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["AVATAR_SHIELD_MAX"]
- 55 [-]: GETGLOBAL R7 K13       ; R7 := Game
- 56 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["ADD"]
- 57 [-]: GETGLOBAL R8 K7        ; R8 := _T
- 58 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["oldCapacity"]
- 59 [-]: GETGLOBAL R9 K16       ; R9 := upgradeVal
- 60 [-]: MUL       R8 R8 R9     ; R8 := R8 * R9
- 61 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 62 [-]: SELF      R4 R1 K17    ; R5 := R1; R4 := R1["0x3B1B11B9"]
- 63 [-]: GETGLOBAL R6 K13       ; R6 := Game
- 64 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["AVATAR_SHIELD_MAX"]
- 65 [-]: GETGLOBAL R7 K13       ; R7 := Game
- 66 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["ADD"]
- 67 [-]: GETGLOBAL R8 K16       ; R8 := upgradeVal
- 68 [-]: MUL       R8 R3 R8     ; R8 := R3 * R8
- 69 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 70 [-]: GETGLOBAL R4 K7        ; R4 := _T
- 71 [-]: SETTABLE  R4 K11 R3    ; R4["oldCapacity"] := R3
- 72 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R1 K2        ; R1 := _T
+  8 [-]: CLOSURE   R2 0         ; R2 := closure(Function #24.1)
+  9 [-]: SETTABLE  R1 K3 R2     ; R1["ConvertCapacityToShields"] := R2
+ 10 [-]: GETGLOBAL R1 K4        ; R1 := 0x400E7765
+ 11 [-]: MOVE      R2 R0        ; R2 := R0
+ 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 13 [-]: TEST      R1 1         ; if R1 then PC := 38
+ 14 [-]: JMP       38           ; PC := 38
+ 15 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0["0x8DB5D01F"]
+ 16 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 17 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x6978AC59"]
+ 18 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 19 [-]: GETGLOBAL R2 K4        ; R2 := 0x400E7765
+ 20 [-]: MOVE      R3 R1        ; R3 := R1
+ 21 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 22 [-]: TEST      R2 0         ; if not R2 then PC := 33
+ 23 [-]: JMP       33           ; PC := 33
+ 24 [-]: GETGLOBAL R2 K7        ; R2 := 0x201191EA
+ 25 [-]: LOADK     R3 K8        ; R3 := 0
+ 26 [-]: CALL      R2 2 1       ; R2(R3)
+ 27 [-]: SELF      R2 R0 K5     ; R3 := R0; R2 := R0["0x8DB5D01F"]
+ 28 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 29 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x6978AC59"]
+ 30 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 31 [-]: MOVE      R1 R2        ; R1 := R2
+ 32 [-]: JMP       19           ; PC := 19
+ 33 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 34 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["0x8F405DF7"]
+ 35 [-]: MOVE      R3 R0        ; R3 := R0
+ 36 [-]: MOVE      R4 R1        ; R4 := R1
+ 37 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 38 [-]: RETURN    R0 1         ; return 
+
+
+; Function #24.1:
+;
+; Name:            
+; Defined at line: 560
+; #Upvalues:       0
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  10
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  2 [-]: MOVE      R3 R1        ; R3 := R1
+  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  4 [-]: TEST      R2 1         ; if R2 then PC := 50
+  5 [-]: JMP       50           ; PC := 50
+  6 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  7 [-]: MOVE      R3 R0        ; R3 := R0
+  8 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  9 [-]: TEST      R2 1         ; if R2 then PC := 50
+ 10 [-]: JMP       50           ; PC := 50
+ 11 [-]: SELF      R2 R0 K1     ; R3 := R0; R2 := R0["0x8DB5D01F"]
+ 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 13 [-]: SELF      R3 R1 K2     ; R4 := R1; R3 := R1["0xF7DCFA1E"]
+ 14 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 15 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 16 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["oldCapacity"]
+ 17 [-]: EQ        1 R4 K5      ; if R4 == nil then PC := 29
+ 18 [-]: JMP       29           ; PC := 29
+ 19 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2["0xF21555A7"]
+ 20 [-]: GETGLOBAL R6 K7        ; R6 := Game
+ 21 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["AVATAR_SHIELD_MAX"]
+ 22 [-]: GETGLOBAL R7 K7        ; R7 := Game
+ 23 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 24 [-]: GETGLOBAL R8 K3        ; R8 := _T
+ 25 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["oldCapacity"]
+ 26 [-]: GETGLOBAL R9 K10       ; R9 := upgradeVal
+ 27 [-]: MUL       R8 R8 R9     ; R8 := R8 * R9
+ 28 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 29 [-]: SELF      R4 R2 K11    ; R5 := R2; R4 := R2["0x3B1B11B9"]
+ 30 [-]: GETGLOBAL R6 K7        ; R6 := Game
+ 31 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["AVATAR_SHIELD_MAX"]
+ 32 [-]: GETGLOBAL R7 K7        ; R7 := Game
+ 33 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 34 [-]: GETGLOBAL R8 K10       ; R8 := upgradeVal
+ 35 [-]: MUL       R8 R3 R8     ; R8 := R3 * R8
+ 36 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 37 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 38 [-]: SETTABLE  R4 K4 R3     ; R4["oldCapacity"] := R3
+ 39 [-]: SELF      R4 R0 K12    ; R5 := R0; R4 := R0["0xA3F6069B"]
+ 40 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 41 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+ 42 [-]: MOVE      R6 R4        ; R6 := R4
+ 43 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 44 [-]: TEST      R5 1         ; if R5 then PC := 50
+ 45 [-]: JMP       50           ; PC := 50
+ 46 [-]: SELF      R5 R4 K13    ; R6 := R4; R5 := R4["0x8938B1C9"]
+ 47 [-]: SELF      R7 R4 K14    ; R8 := R4; R7 := R4["0xF27096B7"]
+ 48 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 49 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 50 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 583
+; Defined at line: 588
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1834,7 +1860,7 @@ code size: 9
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 591
+; Defined at line: 596
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1869,13 +1895,15 @@ code size: 9
  27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  28 [-]: GETGLOBAL R2 K4        ; R2 := _T
  29 [-]: SETTABLE  R2 K5 K6     ; R2["oldCapacity"] := nil
- 30 [-]: RETURN    R0 1         ; return 
+ 30 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 31 [-]: SETTABLE  R2 K12 K6    ; R2["ConvertCapacityToShields"] := nil
+ 32 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 605
+; Defined at line: 612
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1889,7 +1917,7 @@ code size: 9
 ; Function #27.1:
 ;
 ; Name:            
-; Defined at line: 607
+; Defined at line: 614
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1918,7 +1946,7 @@ code size: 9
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 616
+; Defined at line: 623
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1938,7 +1966,7 @@ code size: 9
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 624
+; Defined at line: 631
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2014,7 +2042,7 @@ code size: 9
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 646
+; Defined at line: 653
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2041,7 +2069,7 @@ code size: 9
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 654
+; Defined at line: 661
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2061,7 +2089,7 @@ code size: 9
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 662
+; Defined at line: 669
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2075,7 +2103,7 @@ code size: 9
 ; Function #32.1:
 ;
 ; Name:            
-; Defined at line: 664
+; Defined at line: 671
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2102,7 +2130,7 @@ code size: 9
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 672
+; Defined at line: 679
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2124,7 +2152,7 @@ code size: 9
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 680
+; Defined at line: 687
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2138,7 +2166,7 @@ code size: 9
 ; Function #34.1:
 ;
 ; Name:            
-; Defined at line: 682
+; Defined at line: 689
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2185,7 +2213,7 @@ code size: 9
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 691
+; Defined at line: 698
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2207,7 +2235,7 @@ code size: 9
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 699
+; Defined at line: 706
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2222,7 +2250,7 @@ code size: 9
 ; Function #36.1:
 ;
 ; Name:            
-; Defined at line: 702
+; Defined at line: 709
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2258,7 +2286,7 @@ code size: 9
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 714
+; Defined at line: 721
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2280,7 +2308,7 @@ code size: 9
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 722
+; Defined at line: 729
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2295,7 +2323,7 @@ code size: 9
 ; Function #38.1:
 ;
 ; Name:            
-; Defined at line: 725
+; Defined at line: 732
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2333,7 +2361,7 @@ code size: 9
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 738
+; Defined at line: 745
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2355,7 +2383,7 @@ code size: 9
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 746
+; Defined at line: 753
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2370,7 +2398,7 @@ code size: 9
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 752
+; Defined at line: 759
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2390,7 +2418,7 @@ code size: 9
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 760
+; Defined at line: 767
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2414,7 +2442,7 @@ code size: 9
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 770
+; Defined at line: 777
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2432,7 +2460,7 @@ code size: 9
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 777
+; Defined at line: 784
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -2,7 +2,7 @@ code size: 14
 code size: 39
 code size: 139
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Enemies\Corpus\Vip\Ambulas\AmbulasBossTransmissions.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Enemies\Corpus\Vip\Ambulas\AmbulasBossTransmissions.luac 
 
 ; Name:            
 ; Defined at line: 0

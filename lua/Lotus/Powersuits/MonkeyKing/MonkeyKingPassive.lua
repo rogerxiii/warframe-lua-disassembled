@@ -1,4 +1,4 @@
-code size: 71
+code size: 68
 code size: 11
 code size: 37
 code size: 18
@@ -22,7 +22,6 @@ code size: 12
 code size: 22
 code size: 28
 code size: 17
-code size: 38
 code size: 336
 code size: 44
 code size: 47
@@ -31,7 +30,7 @@ code size: 9
 code size: 41
 code size: 12
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\MonkeyKing\MonkeyKingPassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\MonkeyKing\MonkeyKingPassive.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -74,43 +73,40 @@ code size: 12
  32 [-]: CLOSURE   R13 7        ; R13 := closure(Function #8)
  33 [-]: MOVE      R0 R11       ; R0 := R11
  34 [-]: CLOSURE   R14 8        ; R14 := closure(Function #9)
- 35 [-]: MOVE      R0 R11       ; R0 := R11
- 36 [-]: MOVE      R0 R12       ; R0 := R12
- 37 [-]: CLOSURE   R15 9        ; R15 := closure(Function #10)
- 38 [-]: MOVE      R0 R0        ; R0 := R0
- 39 [-]: MOVE      R0 R11       ; R0 := R11
- 40 [-]: MOVE      R0 R2        ; R0 := R2
- 41 [-]: MOVE      R0 R12       ; R0 := R12
- 42 [-]: MOVE      R0 R3        ; R0 := R3
- 43 [-]: MOVE      R0 R4        ; R0 := R4
- 44 [-]: SETGLOBAL R15 K6       ; AddUpgrades := R15
- 45 [-]: SETGLOBAL R15 K7       ; 0xF9821444 := R15
- 46 [-]: CLOSURE   R15 10       ; R15 := closure(Function #11)
- 47 [-]: MOVE      R0 R0        ; R0 := R0
- 48 [-]: MOVE      R0 R11       ; R0 := R11
- 49 [-]: SETGLOBAL R15 K8       ; RemoveUpgrades := R15
- 50 [-]: SETGLOBAL R15 K9       ; 0x698F6403 := R15
- 51 [-]: CLOSURE   R15 11       ; R15 := closure(Function #12)
- 52 [-]: MOVE      R0 R11       ; R0 := R11
- 53 [-]: MOVE      R0 R12       ; R0 := R12
- 54 [-]: SETGLOBAL R15 K10      ; InitInvuln := R15
- 55 [-]: SETGLOBAL R15 K11      ; 0x36D51F7A := R15
- 56 [-]: CLOSURE   R15 12       ; R15 := closure(Function #13)
- 57 [-]: MOVE      R0 R12       ; R0 := R12
- 58 [-]: MOVE      R0 R13       ; R0 := R13
- 59 [-]: SETGLOBAL R15 K12      ; ProcInvuln := R15
- 60 [-]: SETGLOBAL R15 K13      ; 0x64357396 := R15
- 61 [-]: CLOSURE   R15 13       ; R15 := closure(Function #14)
- 62 [-]: SETGLOBAL R15 K14      ; ProcEnd := R15
- 63 [-]: SETGLOBAL R15 K15      ; 0xA5190685 := R15
- 64 [-]: CLOSURE   R15 14       ; R15 := closure(Function #15)
- 65 [-]: SETGLOBAL R15 K16      ; OnKill := R15
- 66 [-]: SETGLOBAL R15 K17      ; 0x7AB90D17 := R15
- 67 [-]: CLOSURE   R15 15       ; R15 := closure(Function #16)
- 68 [-]: MOVE      R0 R7        ; R0 := R7
- 69 [-]: SETGLOBAL R15 K18      ; DoInvis := R15
- 70 [-]: SETGLOBAL R15 K19      ; 0x92E51124 := R15
- 71 [-]: RETURN    R0 1         ; return 
+ 35 [-]: MOVE      R0 R0        ; R0 := R0
+ 36 [-]: MOVE      R0 R11       ; R0 := R11
+ 37 [-]: MOVE      R0 R2        ; R0 := R2
+ 38 [-]: MOVE      R0 R12       ; R0 := R12
+ 39 [-]: MOVE      R0 R3        ; R0 := R3
+ 40 [-]: MOVE      R0 R4        ; R0 := R4
+ 41 [-]: SETGLOBAL R14 K6       ; AddUpgrades := R14
+ 42 [-]: SETGLOBAL R14 K7       ; 0xF9821444 := R14
+ 43 [-]: CLOSURE   R14 9        ; R14 := closure(Function #10)
+ 44 [-]: MOVE      R0 R0        ; R0 := R0
+ 45 [-]: MOVE      R0 R11       ; R0 := R11
+ 46 [-]: SETGLOBAL R14 K8       ; RemoveUpgrades := R14
+ 47 [-]: SETGLOBAL R14 K9       ; 0x698F6403 := R14
+ 48 [-]: CLOSURE   R14 10       ; R14 := closure(Function #11)
+ 49 [-]: MOVE      R0 R11       ; R0 := R11
+ 50 [-]: MOVE      R0 R12       ; R0 := R12
+ 51 [-]: SETGLOBAL R14 K10      ; InitInvuln := R14
+ 52 [-]: SETGLOBAL R14 K11      ; 0x36D51F7A := R14
+ 53 [-]: CLOSURE   R14 11       ; R14 := closure(Function #12)
+ 54 [-]: MOVE      R0 R12       ; R0 := R12
+ 55 [-]: MOVE      R0 R13       ; R0 := R13
+ 56 [-]: SETGLOBAL R14 K12      ; ProcInvuln := R14
+ 57 [-]: SETGLOBAL R14 K13      ; 0x64357396 := R14
+ 58 [-]: CLOSURE   R14 12       ; R14 := closure(Function #13)
+ 59 [-]: SETGLOBAL R14 K14      ; ProcEnd := R14
+ 60 [-]: SETGLOBAL R14 K15      ; 0xA5190685 := R14
+ 61 [-]: CLOSURE   R14 13       ; R14 := closure(Function #14)
+ 62 [-]: SETGLOBAL R14 K16      ; OnKill := R14
+ 63 [-]: SETGLOBAL R14 K17      ; 0x7AB90D17 := R14
+ 64 [-]: CLOSURE   R14 14       ; R14 := closure(Function #15)
+ 65 [-]: MOVE      R0 R7        ; R0 := R7
+ 66 [-]: SETGLOBAL R14 K18      ; DoInvis := R14
+ 67 [-]: SETGLOBAL R14 K19      ; 0x92E51124 := R14
+ 68 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -912,55 +908,6 @@ code size: 12
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 220
-; #Upvalues:       2
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  14
-
-  1 [-]: LOADK     R2 K0        ; R2 := "D: "
-  2 [-]: SELF      R3 R1 K1     ; R4 := R1; R3 := R1["0xE72E0E61"]
-  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: LOADK     R4 K2        ; R4 := "\n      "
-  5 [-]: CONCAT    R2 R2 R4     ; R2 := R2 .. R3 .. R4
-  6 [-]: LOADK     R3 K3        ; R3 := 1
-  7 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  8 [-]: LEN       R4 R4        ; R4 := # R4
-  9 [-]: LOADK     R5 K3        ; R5 := 1
- 10 [-]: FORPREP   R3 34        ; R3 -= R5; PC := 34
- 11 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 12 [-]: MOVE      R8 R0        ; R8 := R0
- 13 [-]: MOVE      R9 R6        ; R9 := R6
- 14 [-]: MOVE      R10 R1       ; R10 := R1
- 15 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 16 [-]: MOVE      R8 R2        ; R8 := R2
- 17 [-]: LOADK     R9 K4        ; R9 := "  "
- 18 [-]: MOVE      R10 R6       ; R10 := R6
- 19 [-]: LOADK     R11 K5       ; R11 := ": "
- 20 [-]: GETGLOBAL R12 K6       ; R12 := 0x9FAED6BC
- 21 [-]: MOVE      R13 R7       ; R13 := R7
- 22 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 23 [-]: CONCAT    R2 R8 R12    ; R2 := R8 .. R9 .. R10 .. R11 .. R12
- 24 [-]: GETGLOBAL R8 K7        ; R8 := 0x12F3CEFA
- 25 [-]: GETGLOBAL R9 K8        ; R9 := _T
- 26 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["monkeyPassive"]
- 27 [-]: GETTABLE  R9 R9 R0     ; R9 := R9[R0]
- 28 [-]: GETTABLE  R9 R9 R6     ; R9 := R9[R6]
- 29 [-]: EQ        1 R7 R9      ; if R7 == R9 then PC := 32
- 30 [-]: JMP       32           ; PC := 32
- 31 [-]: MOVE      R9 R0        ; R9 := R0
- 32 [-]: MOVE      R9 R1        ; R9 := R1
- 33 [-]: CALL      R8 2 1       ; R8(R9)
- 34 [-]: FORLOOP   R3 11        ; R3 += R5; if R3 <= R4 then begin PC := 11; R6 := R3 end
- 35 [-]: GETGLOBAL R8 K10       ; R8 := 0xE40A882D
- 36 [-]: MOVE      R9 R2        ; R9 := R2
- 37 [-]: CALL      R8 2 1       ; R8(R9)
- 38 [-]: RETURN    R0 1         ; return 
-
-
-; Function #10:
-;
-; Name:            
 ; Defined at line: 230
 ; #Upvalues:       6
 ; #Parameters:     1
@@ -1305,7 +1252,7 @@ code size: 12
 336 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
 ; Defined at line: 389
@@ -1360,7 +1307,7 @@ code size: 12
  44 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
 ; Defined at line: 413
@@ -1418,7 +1365,7 @@ code size: 12
  47 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #12:
 ;
 ; Name:            
 ; Defined at line: 436
@@ -1486,7 +1433,7 @@ code size: 12
  57 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #13:
 ;
 ; Name:            
 ; Defined at line: 460
@@ -1506,7 +1453,7 @@ code size: 12
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #14:
 ;
 ; Name:            
 ; Defined at line: 464
@@ -1558,7 +1505,7 @@ code size: 12
  41 [-]: RETURN    R0 1         ; return 
 
 
-; Function #16:
+; Function #15:
 ;
 ; Name:            
 ; Defined at line: 482

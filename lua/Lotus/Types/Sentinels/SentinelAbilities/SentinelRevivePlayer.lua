@@ -6,7 +6,7 @@ code size: 38
 code size: 168
 code size: 98
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Sentinels\SentinelAbilities\SentinelRevivePlayer.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Sentinels\SentinelAbilities\SentinelRevivePlayer.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -237,40 +237,40 @@ code size: 98
  55 [-]: TEST      R15 0        ; if not R15 then PC := 142
  56 [-]: JMP       142          ; PC := 142
  57 [-]: MOVE      R7 R1        ; R7 := R1
- 58 [-]: LOADK     R15 K5       ; R15 := 1
- 59 [-]: LEN       R16 R6       ; R16 := # R6
- 60 [-]: LOADK     R17 K5       ; R17 := 1
- 61 [-]: FORPREP   R15 74       ; R15 -= R17; PC := 74
- 62 [-]: GETTABLE  R19 R6 R18   ; R19 := R6[R18]
- 63 [-]: SELF      R19 R19 K8   ; R20 := R19; R19 := R19["0x93E48FE9"]
- 64 [-]: CALL      R19 2 2      ; R19 := R19(R20)
- 65 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
- 66 [-]: MOVE      R21 R19      ; R21 := R19
- 67 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 68 [-]: TEST      R20 1        ; if R20 then PC := 74
- 69 [-]: JMP       74           ; PC := 74
- 70 [-]: EQ        0 R19 R5     ; if R19 ~= R5 then PC := 74
- 71 [-]: JMP       74           ; PC := 74
- 72 [-]: MOVE      R7 R0        ; R7 := R0
- 73 [-]: JMP       75           ; PC := 75
- 74 [-]: FORLOOP   R15 62       ; R15 += R17; if R15 <= R16 then begin PC := 62; R18 := R15 end
+ 58 [-]: GETGLOBAL R15 K13      ; R15 := 0x63B09107
+ 59 [-]: MOVE      R16 R6       ; R16 := R6
+ 60 [-]: CALL      R15 2 4      ; R15,R16,R17 := R15(R16)
+ 61 [-]: JMP       73           ; PC := 73
+ 62 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
+ 63 [-]: MOVE      R21 R19      ; R21 := R19
+ 64 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+ 65 [-]: TEST      R20 1        ; if R20 then PC := 73
+ 66 [-]: JMP       73           ; PC := 73
+ 67 [-]: SELF      R20 R19 K8   ; R21 := R19; R20 := R19["0x93E48FE9"]
+ 68 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+ 69 [-]: EQ        0 R20 R5     ; if R20 ~= R5 then PC := 73
+ 70 [-]: JMP       73           ; PC := 73
+ 71 [-]: MOVE      R7 R0        ; R7 := R0
+ 72 [-]: JMP       75           ; PC := 75
+ 73 [-]: TFORLOOP  R15 2        ; R18,R19 :=  R15(R16,R17); if R18 ~= nil then begin PC = 62; R17 := R18 end
+ 74 [-]: JMP       62           ; PC := 62
  75 [-]: SELF      R20 R5 K4    ; R21 := R5; R20 := R5["0xA3F6069B"]
  76 [-]: CALL      R20 2 2      ; R20 := R20(R21)
- 77 [-]: SELF      R20 R20 K13  ; R21 := R20; R20 := R20["0x8BDB3355"]
+ 77 [-]: SELF      R20 R20 K14  ; R21 := R20; R20 := R20["0x8BDB3355"]
  78 [-]: MOVE      R22 R1       ; R22 := R1
  79 [-]: CALL      R20 3 1      ; R20(R21,R22)
- 80 [-]: GETGLOBAL R20 K14      ; R20 := 0x4CDEF9FF
+ 80 [-]: GETGLOBAL R20 K15      ; R20 := 0x4CDEF9FF
  81 [-]: CALL      R20 1 2      ; R20 := R20()
  82 [-]: ADD       R12 R12 R20  ; R12 := R12 + R20
  83 [-]: TEST      R7 0         ; if not R7 then PC := 109
  84 [-]: JMP       109          ; PC := 109
  85 [-]: GETGLOBAL R20 K1       ; R20 := gRegion
- 86 [-]: SELF      R20 R20 K15  ; R21 := R20; R20 := R20["0xA559F558"]
+ 86 [-]: SELF      R20 R20 K16  ; R21 := R20; R20 := R20["0xA559F558"]
  87 [-]: CALL      R20 2 2      ; R20 := R20(R21)
  88 [-]: TEST      R20 0        ; if not R20 then PC := 96
  89 [-]: JMP       96           ; PC := 96
- 90 [-]: SELF      R20 R5 K16   ; R21 := R5; R20 := R5["0xB62A769F"]
- 91 [-]: GETGLOBAL R22 K14      ; R22 := 0x4CDEF9FF
+ 90 [-]: SELF      R20 R5 K17   ; R21 := R5; R20 := R5["0xB62A769F"]
+ 91 [-]: GETGLOBAL R22 K15      ; R22 := 0x4CDEF9FF
  92 [-]: CALL      R22 1 2      ; R22 := R22()
  93 [-]: MUL       R22 R22 R14  ; R22 := R22 * R14
  94 [-]: DIV       R22 R22 R13  ; R22 := R22 / R13
@@ -282,12 +282,12 @@ code size: 98
 100 [-]: JMP       109          ; PC := 109
 101 [-]: LE        0 R11 R12    ; if R11 > R12 then PC := 109
 102 [-]: JMP       109          ; PC := 109
-103 [-]: SELF      R20 R1 K17   ; R21 := R1; R20 := R1["0xAB436EF2"]
-104 [-]: GETGLOBAL R22 K18      ; R22 := castFX
-105 [-]: GETGLOBAL R23 K19      ; R23 := EMPTY_SYMBOL
+103 [-]: SELF      R20 R1 K18   ; R21 := R1; R20 := R1["0xAB436EF2"]
+104 [-]: GETGLOBAL R22 K19      ; R22 := castFX
+105 [-]: GETGLOBAL R23 K20      ; R23 := EMPTY_SYMBOL
 106 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
 107 [-]: MOVE      R9 R20       ; R9 := R20
-108 [-]: LOADK     R12 K20      ; R12 := 0
+108 [-]: LOADK     R12 K21      ; R12 := 0
 109 [-]: SELF      R20 R5 K7    ; R21 := R5; R20 := R5["0x4E830126"]
 110 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 111 [-]: TESTSET   R10 R20 0    ; if not R20 then PC := 119 else R10 := R20
@@ -303,13 +303,13 @@ code size: 98
 121 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 122 [-]: TEST      R20 1        ; if R20 then PC := 130
 123 [-]: JMP       130          ; PC := 130
-124 [-]: SELF      R20 R1 K21   ; R21 := R1; R20 := R1["0x5A115A02"]
+124 [-]: SELF      R20 R1 K22   ; R21 := R1; R20 := R1["0x5A115A02"]
 125 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 126 [-]: TEST      R20 1        ; if R20 then PC := 130
 127 [-]: JMP       130          ; PC := 130
 128 [-]: TEST      R10 0        ; if not R10 then PC := 138
 129 [-]: JMP       138          ; PC := 138
-130 [-]: SELF      R20 R5 K22   ; R21 := R5; R20 := R5["0x7D6A2400"]
+130 [-]: SELF      R20 R5 K23   ; R21 := R5; R20 := R5["0x7D6A2400"]
 131 [-]: CALL      R20 2 1      ; R20(R21)
 132 [-]: TEST      R10 0        ; if not R10 then PC := 142
 133 [-]: JMP       142          ; PC := 142
@@ -318,18 +318,18 @@ code size: 98
 136 [-]: CALL      R20 3 1      ; R20(R21,R22)
 137 [-]: JMP       142          ; PC := 142
 138 [-]: GETGLOBAL R20 K6       ; R20 := 0x201191EA
-139 [-]: LOADK     R21 K20      ; R21 := 0
+139 [-]: LOADK     R21 K21      ; R21 := 0
 140 [-]: CALL      R20 2 1      ; R20(R21)
 141 [-]: JMP       48           ; PC := 48
 142 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
-143 [-]: GETGLOBAL R21 K23      ; R21 := _T
-144 [-]: GETTABLE  R21 R21 K24  ; R21 := R21["sentinelRevive"]
+143 [-]: GETGLOBAL R21 K24      ; R21 := _T
+144 [-]: GETTABLE  R21 R21 K25  ; R21 := R21["sentinelRevive"]
 145 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 146 [-]: TEST      R20 0        ; if not R20 then PC := 151
 147 [-]: JMP       151          ; PC := 151
-148 [-]: GETGLOBAL R20 K23      ; R20 := _T
+148 [-]: GETGLOBAL R20 K24      ; R20 := _T
 149 [-]: NEWTABLE  R21 0 0      ; R21 := {}
-150 [-]: SETTABLE  R20 K24 R21  ; R20["sentinelRevive"] := R21
+150 [-]: SETTABLE  R20 K25 R21  ; R20["sentinelRevive"] := R21
 151 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
 152 [-]: MOVE      R21 R5       ; R21 := R5
 153 [-]: CALL      R20 2 2      ; R20 := R20(R21)
@@ -337,15 +337,15 @@ code size: 98
 155 [-]: JMP       168          ; PC := 168
 156 [-]: SELF      R20 R5 K4    ; R21 := R5; R20 := R5["0xA3F6069B"]
 157 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-158 [-]: SELF      R20 R20 K13  ; R21 := R20; R20 := R20["0x8BDB3355"]
+158 [-]: SELF      R20 R20 K14  ; R21 := R20; R20 := R20["0x8BDB3355"]
 159 [-]: MOVE      R22 R0       ; R22 := R0
 160 [-]: CALL      R20 3 1      ; R20(R21,R22)
-161 [-]: SELF      R20 R5 K25   ; R21 := R5; R20 := R5["0xDE5882DD"]
+161 [-]: SELF      R20 R5 K26   ; R21 := R5; R20 := R5["0xDE5882DD"]
 162 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-163 [-]: SELF      R20 R20 K26  ; R21 := R20; R20 := R20["0x144A28F9"]
+163 [-]: SELF      R20 R20 K27  ; R21 := R20; R20 := R20["0x144A28F9"]
 164 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-165 [-]: GETGLOBAL R21 K23      ; R21 := _T
-166 [-]: GETTABLE  R21 R21 K24  ; R21 := R21["sentinelRevive"]
+165 [-]: GETGLOBAL R21 K24      ; R21 := _T
+166 [-]: GETTABLE  R21 R21 K25  ; R21 := R21["sentinelRevive"]
 167 [-]: SETTABLE  R21 R20 R7   ; R21[R20] := R7
 168 [-]: RETURN    R0 1         ; return 
 
@@ -353,7 +353,7 @@ code size: 98
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 119
+; Defined at line: 118
 ; #Upvalues:       3
 ; #Parameters:     5
 ; Is_vararg:       0

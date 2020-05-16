@@ -1,9 +1,9 @@
 code size: 10
-code size: 147
+code size: 149
 code size: 109
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\MoaLeapAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\MoaLeapAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -167,25 +167,27 @@ code size: 8
 132 [-]: MOVE      R21 R19      ; R21 := R19
 133 [-]: MOVE      R22 R11      ; R22 := R11
 134 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
-135 [-]: LT        0 K35 R20    ; if 4 >= R20 then PC := 139
-136 [-]: JMP       139          ; PC := 139
+135 [-]: LT        0 K35 R20    ; if 4 >= R20 then PC := 140
+136 [-]: JMP       140          ; PC := 140
 137 [-]: LOADK     R20 K2       ; R20 := 0
 138 [-]: RETURN    R20 2        ; return R20
-139 [-]: SELF      R20 R0 K36   ; R21 := R0; R20 := R0["0xACA59CC1"]
-140 [-]: GETTABLE  R22 R5 K13   ; R22 := R5["avatar"]
-141 [-]: CALL      R20 3 1      ; R20(R21,R22)
-142 [-]: SELF      R20 R0 K37   ; R21 := R0; R20 := R0["0xED853941"]
-143 [-]: MOVE      R22 R11      ; R22 := R11
-144 [-]: CALL      R20 3 1      ; R20(R21,R22)
-145 [-]: LOADK     R20 K19      ; R20 := 1
-146 [-]: RETURN    R20 2        ; return R20
-147 [-]: RETURN    R0 1         ; return 
+139 [-]: JMP       141          ; PC := 141
+140 [-]: MOVE      R11 R19      ; R11 := R19
+141 [-]: SELF      R20 R0 K36   ; R21 := R0; R20 := R0["0xACA59CC1"]
+142 [-]: GETTABLE  R22 R5 K13   ; R22 := R5["avatar"]
+143 [-]: CALL      R20 3 1      ; R20(R21,R22)
+144 [-]: SELF      R20 R0 K37   ; R21 := R0; R20 := R0["0xED853941"]
+145 [-]: MOVE      R22 R11      ; R22 := R11
+146 [-]: CALL      R20 3 1      ; R20(R21,R22)
+147 [-]: LOADK     R20 K19      ; R20 := 1
+148 [-]: RETURN    R20 2        ; return R20
+149 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 77
+; Defined at line: 79
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -305,7 +307,7 @@ code size: 8
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 118
+; Defined at line: 120
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

@@ -9,10 +9,10 @@ code size: 54
 code size: 22
 code size: 30
 code size: 17
-code size: 128
+code size: 125
 code size: 331
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\AbilityList.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\AbilityList.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -765,7 +765,7 @@ code size: 331
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  20
+; Max Stack Size:  19
 
   1 [-]: GETUPVAL  R3 U0        ; R3 := U0
   2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["0xDDA3917C"]
@@ -791,116 +791,113 @@ code size: 331
  22 [-]: GETTABLE  R7 R0 K7     ; R7 := R0["mAbilityColor2"]
  23 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7["0x479E62B4"]
  24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 25 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 26 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["0xC0A66760"]
- 27 [-]: CALL      R8 1 2       ; R8 := R8()
- 28 [-]: NEWTABLE  R9 4 0       ; R9 := {}
- 29 [-]: LOADK     R10 K9       ; R10 := 0
- 30 [-]: LOADK     R11 K10      ; R11 := 3342336
- 31 [-]: LOADK     R12 K11      ; R12 := 8912896
- 32 [-]: LOADK     R13 K12      ; R13 := 12255232
- 33 [-]: SETLIST   R9 4 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 4
- 34 [-]: TEST      R2 0         ; if not R2 then PC := 38
- 35 [-]: JMP       38           ; PC := 38
- 36 [-]: TESTSET   R10 R5 1     ; if R5 then PC := 39 else R10 := R5
- 37 [-]: JMP       39           ; PC := 39
- 38 [-]: MOVE      R10 R4       ; R10 := R4
- 39 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
- 40 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
- 41 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
- 42 [-]: LOADK     R14 K16      ; R14 := "Icon.Icon"
- 43 [-]: LOADK     R15 K17      ; R15 := "_color"
- 44 [-]: GETUPVAL  R16 U1       ; R16 := U1
- 45 [-]: GETTABLE  R16 R16 K18  ; R16 := R16["0xF81722A2"]
- 46 [-]: GETTABLE  R17 R1 K19   ; R17 := R1["IsPassive"]
- 47 [-]: MOVE      R18 R4       ; R18 := R4
- 48 [-]: LOADK     R19 K20      ; R19 := 16777215
- 49 [-]: CALL      R16 4 0      ; R16,... := R16(R17,R18,R19)
- 50 [-]: CALL      R11 0 1      ; R11(R12,...)
- 51 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
- 52 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
- 53 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
- 54 [-]: LOADK     R14 K21      ; R14 := "Glow"
- 55 [-]: LOADK     R15 K17      ; R15 := "_color"
- 56 [-]: MOVE      R16 R5       ; R16 := R5
- 57 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
- 58 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
- 59 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
- 60 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
- 61 [-]: LOADK     R14 K22      ; R14 := "Icon.Shadow"
- 62 [-]: LOADK     R15 K17      ; R15 := "_color"
- 63 [-]: MOVE      R16 R6       ; R16 := R6
- 64 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
- 65 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
- 66 [-]: SELF      R11 R11 K23  ; R12 := R11; R11 := R11["0x302AAB2F"]
- 67 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
- 68 [-]: LOADK     R14 K24      ; R14 := ".Icon.Shadow"
- 69 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 70 [-]: LOADK     R14 K25      ; R14 := "CheapGlowColor"
+ 25 [-]: NEWTABLE  R8 4 0       ; R8 := {}
+ 26 [-]: LOADK     R9 K8        ; R9 := 0
+ 27 [-]: LOADK     R10 K9       ; R10 := 3342336
+ 28 [-]: LOADK     R11 K10      ; R11 := 8912896
+ 29 [-]: LOADK     R12 K11      ; R12 := 12255232
+ 30 [-]: SETLIST   R8 4 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 4
+ 31 [-]: TEST      R2 0         ; if not R2 then PC := 35
+ 32 [-]: JMP       35           ; PC := 35
+ 33 [-]: TESTSET   R9 R5 1      ; if R5 then PC := 36 else R9 := R5
+ 34 [-]: JMP       36           ; PC := 36
+ 35 [-]: MOVE      R9 R4        ; R9 := R4
+ 36 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+ 37 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+ 38 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+ 39 [-]: LOADK     R13 K15      ; R13 := "Icon.Icon"
+ 40 [-]: LOADK     R14 K16      ; R14 := "_color"
+ 41 [-]: GETUPVAL  R15 U1       ; R15 := U1
+ 42 [-]: GETTABLE  R15 R15 K17  ; R15 := R15["0xF81722A2"]
+ 43 [-]: GETTABLE  R16 R1 K18   ; R16 := R1["IsPassive"]
+ 44 [-]: MOVE      R17 R4       ; R17 := R4
+ 45 [-]: LOADK     R18 K19      ; R18 := 16777215
+ 46 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
+ 47 [-]: CALL      R10 0 1      ; R10(R11,...)
+ 48 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+ 49 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+ 50 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+ 51 [-]: LOADK     R13 K20      ; R13 := "Glow"
+ 52 [-]: LOADK     R14 K16      ; R14 := "_color"
+ 53 [-]: MOVE      R15 R5       ; R15 := R5
+ 54 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+ 55 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+ 56 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+ 57 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+ 58 [-]: LOADK     R13 K21      ; R13 := "Icon.Shadow"
+ 59 [-]: LOADK     R14 K16      ; R14 := "_color"
+ 60 [-]: MOVE      R15 R6       ; R15 := R6
+ 61 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+ 62 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+ 63 [-]: SELF      R10 R10 K22  ; R11 := R10; R10 := R10["0x302AAB2F"]
+ 64 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+ 65 [-]: LOADK     R13 K23      ; R13 := ".Icon.Shadow"
+ 66 [-]: CONCAT    R12 R12 R13  ; R12 := R12 .. R13
+ 67 [-]: LOADK     R13 K24      ; R13 := "CheapGlowColor"
+ 68 [-]: GETTABLE  R14 R0 K5    ; R14 := R0["mAbilityColor1"]
+ 69 [-]: GETTABLE  R14 R14 K25  ; R14 := R14["red"]
+ 70 [-]: DIV       R14 R14 K26  ; R14 := R14 / 255
  71 [-]: GETTABLE  R15 R0 K5    ; R15 := R0["mAbilityColor1"]
- 72 [-]: GETTABLE  R15 R15 K26  ; R15 := R15["red"]
- 73 [-]: DIV       R15 R15 K27  ; R15 := R15 / 255
+ 72 [-]: GETTABLE  R15 R15 K27  ; R15 := R15["green"]
+ 73 [-]: DIV       R15 R15 K26  ; R15 := R15 / 255
  74 [-]: GETTABLE  R16 R0 K5    ; R16 := R0["mAbilityColor1"]
- 75 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["green"]
- 76 [-]: DIV       R16 R16 K27  ; R16 := R16 / 255
- 77 [-]: GETTABLE  R17 R0 K5    ; R17 := R0["mAbilityColor1"]
- 78 [-]: GETTABLE  R17 R17 K29  ; R17 := R17["blue"]
- 79 [-]: DIV       R17 R17 K27  ; R17 := R17 / 255
- 80 [-]: LOADK     R18 K30      ; R18 := 1
- 81 [-]: CALL      R11 8 1      ; R11(R12,R13,R14,R15,R16,R17,R18)
- 82 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
- 83 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
- 84 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
- 85 [-]: LOADK     R14 K31      ; R14 := "Title"
- 86 [-]: LOADK     R15 K17      ; R15 := "_color"
- 87 [-]: MOVE      R16 R10      ; R16 := R10
- 88 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
- 89 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
- 90 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
- 91 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
- 92 [-]: LOADK     R14 K32      ; R14 := "Rank"
- 93 [-]: LOADK     R15 K17      ; R15 := "_color"
- 94 [-]: MOVE      R16 R3       ; R16 := R3
- 95 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
- 96 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
- 97 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
- 98 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
- 99 [-]: LOADK     R14 K33      ; R14 := "Gradient"
-100 [-]: LOADK     R15 K34      ; R15 := "_alpha"
-101 [-]: LOADK     R16 K9       ; R16 := 0
-102 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-103 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
-104 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
-105 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
-106 [-]: LOADK     R14 K35      ; R14 := "Highlight.StarburstOne"
-107 [-]: LOADK     R15 K17      ; R15 := "_color"
-108 [-]: MOVE      R16 R7       ; R16 := R7
-109 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-110 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
-111 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
-112 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
-113 [-]: LOADK     R14 K36      ; R14 := "Highlight.StarburstTwo"
-114 [-]: LOADK     R15 K17      ; R15 := "_color"
-115 [-]: MOVE      R16 R6       ; R16 := R6
-116 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-117 [-]: GETTABLE  R11 R0 K13   ; R11 := R0["mMovie"]
-118 [-]: SELF      R11 R11 K14  ; R12 := R11; R11 := R11["0x880196A7"]
-119 [-]: GETTABLE  R13 R1 K15   ; R13 := R1["mClipName"]
-120 [-]: LOADK     R14 K37      ; R14 := "Sparkles"
-121 [-]: LOADK     R15 K17      ; R15 := "_color"
-122 [-]: GETTABLE  R16 R1 K38   ; R16 := R1["mIndex"]
-123 [-]: SELF      R17 R0 K39   ; R18 := R0; R17 := R0["0xC51A5C9D"]
-124 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-125 [-]: MOD       R16 R16 R17  ; R16 := R16 % R17
-126 [-]: GETTABLE  R16 R9 R16   ; R16 := R9[R16]
-127 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-128 [-]: RETURN    R0 1         ; return 
+ 75 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["blue"]
+ 76 [-]: DIV       R16 R16 K26  ; R16 := R16 / 255
+ 77 [-]: LOADK     R17 K29      ; R17 := 1
+ 78 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
+ 79 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+ 80 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+ 81 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+ 82 [-]: LOADK     R13 K30      ; R13 := "Title"
+ 83 [-]: LOADK     R14 K16      ; R14 := "_color"
+ 84 [-]: MOVE      R15 R9       ; R15 := R9
+ 85 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+ 86 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+ 87 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+ 88 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+ 89 [-]: LOADK     R13 K31      ; R13 := "Rank"
+ 90 [-]: LOADK     R14 K16      ; R14 := "_color"
+ 91 [-]: MOVE      R15 R3       ; R15 := R3
+ 92 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+ 93 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+ 94 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+ 95 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+ 96 [-]: LOADK     R13 K32      ; R13 := "Gradient"
+ 97 [-]: LOADK     R14 K33      ; R14 := "_alpha"
+ 98 [-]: LOADK     R15 K8       ; R15 := 0
+ 99 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+100 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+101 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+102 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+103 [-]: LOADK     R13 K34      ; R13 := "Highlight.StarburstOne"
+104 [-]: LOADK     R14 K16      ; R14 := "_color"
+105 [-]: MOVE      R15 R7       ; R15 := R7
+106 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+107 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+108 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+109 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+110 [-]: LOADK     R13 K35      ; R13 := "Highlight.StarburstTwo"
+111 [-]: LOADK     R14 K16      ; R14 := "_color"
+112 [-]: MOVE      R15 R6       ; R15 := R6
+113 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+114 [-]: GETTABLE  R10 R0 K12   ; R10 := R0["mMovie"]
+115 [-]: SELF      R10 R10 K13  ; R11 := R10; R10 := R10["0x880196A7"]
+116 [-]: GETTABLE  R12 R1 K14   ; R12 := R1["mClipName"]
+117 [-]: LOADK     R13 K36      ; R13 := "Sparkles"
+118 [-]: LOADK     R14 K16      ; R14 := "_color"
+119 [-]: GETTABLE  R15 R1 K37   ; R15 := R1["mIndex"]
+120 [-]: SELF      R16 R0 K38   ; R17 := R0; R16 := R0["0xC51A5C9D"]
+121 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+122 [-]: MOD       R15 R15 R16  ; R15 := R15 % R16
+123 [-]: GETTABLE  R15 R8 R15   ; R15 := R8[R15]
+124 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
+125 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3.7:
 ;
 ; Name:            
-; Defined at line: 237
+; Defined at line: 236
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0

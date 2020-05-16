@@ -5,13 +5,13 @@ code size: 23
 code size: 49
 code size: 55
 code size: 73
-code size: 31
+code size: 43
 code size: 43
 code size: 24
 code size: 32
 code size: 179
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Dojo\DojoScreenLauncher.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Dojo\DojoScreenLauncher.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -572,29 +572,41 @@ code size: 179
  12 [-]: MOVE      R3 R0        ; R3 := R0
  13 [-]: RETURN    R3 2         ; return R3
  14 [-]: GETGLOBAL R3 K5        ; R3 := gGameRules
- 15 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3["0x15793965"]
- 16 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 17 [-]: SELF      R5 R2 K6     ; R6 := R2; R5 := R2["0x15793965"]
- 18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 19 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 23
- 20 [-]: JMP       23           ; PC := 23
- 21 [-]: MOVE      R4 R0        ; R4 := R0
- 22 [-]: RETURN    R4 2         ; return R4
- 23 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3["0x254751D2"]
- 24 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 25 [-]: TEST      R4 1         ; if R4 then PC := 29
- 26 [-]: JMP       29           ; PC := 29
- 27 [-]: MOVE      R4 R0        ; R4 := R0
- 28 [-]: RETURN    R4 2         ; return R4
- 29 [-]: MOVE      R4 R1        ; R4 := R1
- 30 [-]: RETURN    R4 2         ; return R4
- 31 [-]: RETURN    R0 1         ; return 
+ 15 [-]: GETGLOBAL R4 K4        ; R4 := 0x400E7765
+ 16 [-]: MOVE      R5 R3        ; R5 := R3
+ 17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 18 [-]: TEST      R4 1         ; if R4 then PC := 25
+ 19 [-]: JMP       25           ; PC := 25
+ 20 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3["0x8B598ED4"]
+ 21 [-]: GETGLOBAL R6 K7        ; R6 := gLotusDojoGameRulesType
+ 22 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 23 [-]: TEST      R4 1         ; if R4 then PC := 27
+ 24 [-]: JMP       27           ; PC := 27
+ 25 [-]: MOVE      R4 R0        ; R4 := R0
+ 26 [-]: RETURN    R4 2         ; return R4
+ 27 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0x15793965"]
+ 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 29 [-]: SELF      R5 R2 K8     ; R6 := R2; R5 := R2["0x15793965"]
+ 30 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 31 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 35
+ 32 [-]: JMP       35           ; PC := 35
+ 33 [-]: MOVE      R4 R0        ; R4 := R0
+ 34 [-]: RETURN    R4 2         ; return R4
+ 35 [-]: SELF      R4 R3 K9     ; R5 := R3; R4 := R3["0x254751D2"]
+ 36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 37 [-]: TEST      R4 1         ; if R4 then PC := 41
+ 38 [-]: JMP       41           ; PC := 41
+ 39 [-]: MOVE      R4 R0        ; R4 := R0
+ 40 [-]: RETURN    R4 2         ; return R4
+ 41 [-]: MOVE      R4 R1        ; R4 := R1
+ 42 [-]: RETURN    R4 2         ; return R4
+ 43 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 229
+; Defined at line: 233
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -648,7 +660,7 @@ code size: 179
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 244
+; Defined at line: 248
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -683,7 +695,7 @@ code size: 179
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 259
+; Defined at line: 263
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -726,7 +738,7 @@ code size: 179
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 273
+; Defined at line: 277
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0

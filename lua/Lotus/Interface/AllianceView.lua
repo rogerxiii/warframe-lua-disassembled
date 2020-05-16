@@ -94,7 +94,7 @@ code size: 96
 code size: 69
 code size: 6
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\AllianceView.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\AllianceView.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1874,7 +1874,7 @@ code size: 6
 126 [-]: LEN       R4 R4        ; R4 := # R4
 127 [-]: ADD       R4 R4 K41    ; R4 := R4 + 1
 128 [-]: NEWTABLE  R5 0 3       ; R5 := {}
-129 [-]: SETTABLE  R5 K42 K47   ; R5["Name"] := "/Lotus/Language/Clan/EditMOTD"
+129 [-]: SETTABLE  R5 K42 K47   ; R5["Name"] := "/Lotus/Language/Clan/EditAllianceMOTD"
 130 [-]: SETTABLE  R5 K44 K48   ; R5["ButtonCallback"] := "EditMOTDButton"
 131 [-]: CLOSURE   R6 1         ; R6 := closure(Function #21.2)
 132 [-]: SETTABLE  R5 K46 R6    ; R5["PressedCallback"] := R6
@@ -3095,7 +3095,7 @@ code size: 6
  14 [-]: GETUPVAL  R1 U2        ; R1 := U2
  15 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["0x3F74D42B"]
  16 [-]: GETGLOBAL R2 K6        ; R2 := mMovie
- 17 [-]: LOADK     R3 K7        ; R3 := "/Lotus/Language/Clan/EditMOTD"
+ 17 [-]: LOADK     R3 K7        ; R3 := "/Lotus/Language/Clan/EditAllianceMOTD"
  18 [-]: MOVE      R4 R0        ; R4 := R0
  19 [-]: LOADK     R5 K8        ; R5 := 256
  20 [-]: LOADK     R6 K9        ; R6 := "ChangeMOTD"

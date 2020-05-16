@@ -15,7 +15,7 @@ code size: 146
 code size: 59
 code size: 61
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\NPC\SecurityCamera.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\NPC\SecurityCamera.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -27,7 +27,7 @@ code size: 61
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "SecurityLevel"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 K2        ; R1 := 20
+  4 [-]: LOADK     R1 K2        ; R1 := 25
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: SETGLOBAL R2 K3        ; OnLaserDoorPathingEnabled := R2
   7 [-]: SETGLOBAL R2 K4        ; 0xBB6E71F5 := R2

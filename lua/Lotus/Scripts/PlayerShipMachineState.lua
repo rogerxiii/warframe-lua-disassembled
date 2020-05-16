@@ -1,13 +1,13 @@
 code size: 31
 code size: 10
 code size: 13
-code size: 89
+code size: 76
 code size: 6
 code size: 44
 code size: 6
 code size: 9
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\PlayerShipMachineState.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\PlayerShipMachineState.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -101,7 +101,7 @@ code size: 9
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  24
+; Max Stack Size:  20
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xA76F0612"]
@@ -122,82 +122,69 @@ code size: 9
  17 [-]: SELF      R8 R7 K8     ; R9 := R7; R8 := R7["0x654F1092"]
  18 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  19 [-]: GETGLOBAL R9 K9        ; R9 := featureTag
- 20 [-]: GETGLOBAL R10 K10      ; R10 := math
- 21 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["0x865961F7"]
- 22 [-]: CALL      R10 1 2      ; R10 := R10()
- 23 [-]: GETUPVAL  R11 U0       ; R11 := U0
- 24 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]
- 25 [-]: GETGLOBAL R12 K12      ; R12 := 0x400E7765
- 26 [-]: MOVE      R13 R7       ; R13 := R7
- 27 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 28 [-]: TEST      R12 1        ; if R12 then PC := 89
- 29 [-]: JMP       89           ; PC := 89
- 30 [-]: GETGLOBAL R12 K12      ; R12 := 0x400E7765
- 31 [-]: MOVE      R13 R8       ; R13 := R8
- 32 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 33 [-]: TEST      R12 1        ; if R12 then PC := 89
- 34 [-]: JMP       89           ; PC := 89
- 35 [-]: MOVE      R12 R0       ; R12 := R0
- 36 [-]: TEST      R11 0        ; if not R11 then PC := 47
- 37 [-]: JMP       47           ; PC := 47
- 38 [-]: GETGLOBAL R13 K12      ; R13 := 0x400E7765
- 39 [-]: MOVE      R14 R11      ; R14 := R11
- 40 [-]: CALL      R13 2 2      ; R13 := R13(R14)
- 41 [-]: TEST      R13 1        ; if R13 then PC := 47
- 42 [-]: JMP       47           ; PC := 47
- 43 [-]: SELF      R13 R8 K13   ; R14 := R8; R13 := R8["0xB451D706"]
- 44 [-]: MOVE      R15 R11      ; R15 := R11
- 45 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
- 46 [-]: MOVE      R12 R13      ; R12 := R13
- 47 [-]: TEST      R12 1        ; if R12 then PC := 65
- 48 [-]: JMP       65           ; PC := 65
- 49 [-]: GETGLOBAL R13 K14      ; R13 := 0xC9457441
- 50 [-]: GETGLOBAL R14 K15      ; R14 := 0x49D2F3F2
- 51 [-]: GETGLOBAL R15 K16      ; R15 := 0x58E5C2DB
- 52 [-]: CALL      R15 1 2      ; R15 := R15()
- 53 [-]: MUL       R15 R15 K17  ; R15 := R15 * 0.5
- 54 [-]: ADD       R15 R10 R15  ; R15 := R10 + R15
- 55 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
- 56 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
- 57 [-]: MUL       R14 R13 R13  ; R14 := R13 * R13
- 58 [-]: MUL       R14 R14 K18  ; R14 := R14 * 5
- 59 [-]: ADD       R14 K7 R14   ; R14 := 0 + R14
- 60 [-]: GETUPVAL  R15 U1       ; R15 := U1
- 61 [-]: MOVE      R16 R0       ; R16 := R0
- 62 [-]: GETGLOBAL R17 K19      ; R17 := emissiveAttenOff
- 63 [-]: CALL      R15 3 1      ; R15(R16,R17)
- 64 [-]: JMP       85           ; PC := 85
- 65 [-]: GETGLOBAL R15 K20      ; R15 := 0x201191EA
- 66 [-]: LOADK     R16 K21      ; R16 := 2
- 67 [-]: CALL      R15 2 1      ; R15(R16)
- 68 [-]: GETGLOBAL R15 K0       ; R15 := gRegion
- 69 [-]: SELF      R15 R15 K1   ; R16 := R15; R15 := R15["0xA76F0612"]
- 70 [-]: GETGLOBAL R17 K2       ; R17 := lightTag
- 71 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 72 [-]: GETGLOBAL R16 K3       ; R16 := 0x63B09107
- 73 [-]: MOVE      R17 R15      ; R17 := R15
- 74 [-]: CALL      R16 2 4      ; R16,R17,R18 := R16(R17)
- 75 [-]: JMP       78           ; PC := 78
- 76 [-]: SELF      R21 R20 K22  ; R22 := R20; R21 := R20["0xEF5C4E85"]
- 77 [-]: CALL      R21 2 1      ; R21(R22)
- 78 [-]: TFORLOOP  R16 2        ; R19,R20 :=  R16(R17,R18); if R19 ~= nil then begin PC = 76; R18 := R19 end
- 79 [-]: JMP       76           ; PC := 76
- 80 [-]: GETUPVAL  R21 U1       ; R21 := U1
- 81 [-]: MOVE      R22 R0       ; R22 := R0
- 82 [-]: GETGLOBAL R23 K23      ; R23 := emissiveAttenOn
- 83 [-]: CALL      R21 3 1      ; R21(R22,R23)
- 84 [-]: RETURN    R0 1         ; return 
- 85 [-]: GETGLOBAL R21 K20      ; R21 := 0x201191EA
- 86 [-]: LOADK     R22 K7       ; R22 := 0
- 87 [-]: CALL      R21 2 1      ; R21(R22)
- 88 [-]: JMP       25           ; PC := 25
- 89 [-]: RETURN    R0 1         ; return 
+ 20 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 21 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
+ 22 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
+ 23 [-]: MOVE      R12 R7       ; R12 := R7
+ 24 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 25 [-]: TEST      R11 1        ; if R11 then PC := 76
+ 26 [-]: JMP       76           ; PC := 76
+ 27 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
+ 28 [-]: MOVE      R12 R8       ; R12 := R8
+ 29 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 30 [-]: TEST      R11 1        ; if R11 then PC := 76
+ 31 [-]: JMP       76           ; PC := 76
+ 32 [-]: MOVE      R11 R0       ; R11 := R0
+ 33 [-]: TEST      R10 0        ; if not R10 then PC := 44
+ 34 [-]: JMP       44           ; PC := 44
+ 35 [-]: GETGLOBAL R12 K10      ; R12 := 0x400E7765
+ 36 [-]: MOVE      R13 R10      ; R13 := R10
+ 37 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 38 [-]: TEST      R12 1        ; if R12 then PC := 44
+ 39 [-]: JMP       44           ; PC := 44
+ 40 [-]: SELF      R12 R8 K11   ; R13 := R8; R12 := R8["0xB451D706"]
+ 41 [-]: MOVE      R14 R10      ; R14 := R10
+ 42 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+ 43 [-]: MOVE      R11 R12      ; R11 := R12
+ 44 [-]: TEST      R11 1        ; if R11 then PC := 51
+ 45 [-]: JMP       51           ; PC := 51
+ 46 [-]: GETUPVAL  R12 U1       ; R12 := U1
+ 47 [-]: MOVE      R13 R0       ; R13 := R0
+ 48 [-]: GETGLOBAL R14 K12      ; R14 := emissiveAttenOff
+ 49 [-]: CALL      R12 3 1      ; R12(R13,R14)
+ 50 [-]: JMP       72           ; PC := 72
+ 51 [-]: GETGLOBAL R12 K13      ; R12 := 0x201191EA
+ 52 [-]: LOADK     R13 K14      ; R13 := 2
+ 53 [-]: CALL      R12 2 1      ; R12(R13)
+ 54 [-]: GETGLOBAL R12 K0       ; R12 := gRegion
+ 55 [-]: SELF      R12 R12 K1   ; R13 := R12; R12 := R12["0xA76F0612"]
+ 56 [-]: GETGLOBAL R14 K2       ; R14 := lightTag
+ 57 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+ 58 [-]: MOVE      R1 R12       ; R1 := R12
+ 59 [-]: GETGLOBAL R12 K3       ; R12 := 0x63B09107
+ 60 [-]: MOVE      R13 R1       ; R13 := R1
+ 61 [-]: CALL      R12 2 4      ; R12,R13,R14 := R12(R13)
+ 62 [-]: JMP       65           ; PC := 65
+ 63 [-]: SELF      R17 R16 K15  ; R18 := R16; R17 := R16["0xEF5C4E85"]
+ 64 [-]: CALL      R17 2 1      ; R17(R18)
+ 65 [-]: TFORLOOP  R12 2        ; R15,R16 :=  R12(R13,R14); if R15 ~= nil then begin PC = 63; R14 := R15 end
+ 66 [-]: JMP       63           ; PC := 63
+ 67 [-]: GETUPVAL  R17 U1       ; R17 := U1
+ 68 [-]: MOVE      R18 R0       ; R18 := R0
+ 69 [-]: GETGLOBAL R19 K16      ; R19 := emissiveAttenOn
+ 70 [-]: CALL      R17 3 1      ; R17(R18,R19)
+ 71 [-]: RETURN    R0 1         ; return 
+ 72 [-]: GETGLOBAL R17 K13      ; R17 := 0x201191EA
+ 73 [-]: LOADK     R18 K7       ; R18 := 0
+ 74 [-]: CALL      R17 2 1      ; R17(R18)
+ 75 [-]: JMP       22           ; PC := 22
+ 76 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 62
+; Defined at line: 59
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -214,7 +201,7 @@ code size: 9
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 68
+; Defined at line: 65
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -269,7 +256,7 @@ code size: 9
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 87
+; Defined at line: 84
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -286,7 +273,7 @@ code size: 9
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 92
+; Defined at line: 89
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0

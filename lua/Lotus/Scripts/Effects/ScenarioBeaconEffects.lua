@@ -1,11 +1,11 @@
 code size: 24
-code size: 49
+code size: 69
 code size: 37
 code size: 47
 code size: 17
 code size: 40
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\ScenarioBeaconEffects.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\ScenarioBeaconEffects.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -49,61 +49,81 @@ code size: 40
 ; Is_vararg:       0
 ; Max Stack Size:  19
 
-  1 [-]: LOADK     R1 K0        ; R1 := 1
-  2 [-]: NEWTABLE  R2 0 0       ; R2 := {}
-  3 [-]: LOADK     R3 K0        ; R3 := 1
-  4 [-]: MOVE      R4 R1        ; R4 := R1
-  5 [-]: LOADK     R5 K0        ; R5 := 1
-  6 [-]: FORPREP   R3 16        ; R3 -= R5; PC := 16
-  7 [-]: SELF      R7 R0 K1     ; R8 := R0; R7 := R0["0xAB436EF2"]
-  8 [-]: GETGLOBAL R9 K2        ; R9 := laserType
-  9 [-]: GETGLOBAL R10 K3       ; R10 := EMPTY_SYMBOL
- 10 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 11 [-]: GETGLOBAL R8 K4        ; R8 := table
- 12 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["0xE6450C9D"]
- 13 [-]: MOVE      R9 R2        ; R9 := R2
- 14 [-]: MOVE      R10 R7       ; R10 := R7
- 15 [-]: CALL      R8 3 1       ; R8(R9,R10)
- 16 [-]: FORLOOP   R3 7         ; R3 += R5; if R3 <= R4 then begin PC := 7; R6 := R3 end
- 17 [-]: LOADK     R8 K6        ; R8 := 0
- 18 [-]: GETGLOBAL R9 K7        ; R9 := 0x1E4F6281
- 19 [-]: CALL      R9 1 2       ; R9 := R9()
- 20 [-]: GETGLOBAL R10 K8       ; R10 := 0x63B09107
- 21 [-]: MOVE      R11 R2       ; R11 := R2
- 22 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
- 23 [-]: JMP       40           ; PC := 40
- 24 [-]: GETGLOBAL R15 K10      ; R15 := math
- 25 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["0xBB3F1476"]
- 26 [-]: MUL       R16 R13 K0   ; R16 := R13 * 1
- 27 [-]: GETGLOBAL R17 K10      ; R17 := math
- 28 [-]: GETTABLE  R17 R17 K12  ; R17 := R17["pi"]
- 29 [-]: DIV       R16 R16 R17  ; R16 := R16 / R17
- 30 [-]: MUL       R17 R8 K13   ; R17 := R8 * 0.40000000596046
- 31 [-]: ADD       R16 R16 R17  ; R16 := R16 + R17
- 32 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 33 [-]: MUL       R15 R15 K14  ; R15 := R15 * 30
- 34 [-]: SUB       R15 R15 K14  ; R15 := R15 - 30
- 35 [-]: SETTABLE  R9 K9 R15    ; R9["pitch"] := R15
- 36 [-]: SELF      R15 R14 K15  ; R16 := R14; R15 := R14["0xA78B7FA7"]
- 37 [-]: GETGLOBAL R17 K16      ; R17 := ZERO_VECTOR
- 38 [-]: MOVE      R18 R9       ; R18 := R9
- 39 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
- 40 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 24; R12 := R13 end
- 41 [-]: JMP       24           ; PC := 24
- 42 [-]: GETGLOBAL R15 K17      ; R15 := 0x201191EA
- 43 [-]: LOADK     R16 K6       ; R16 := 0
- 44 [-]: CALL      R15 2 1      ; R15(R16)
- 45 [-]: GETGLOBAL R15 K18      ; R15 := 0x4CDEF9FF
- 46 [-]: CALL      R15 1 2      ; R15 := R15()
- 47 [-]: ADD       R8 R8 R15    ; R8 := R8 + R15
- 48 [-]: JMP       20           ; PC := 20
- 49 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
+  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xA559F558"]
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: TEST      R1 1         ; if R1 then PC := 9
+  5 [-]: JMP       9            ; PC := 9
+  6 [-]: GETGLOBAL R1 K2        ; R1 := 0x201191EA
+  7 [-]: LOADK     R2 K3        ; R2 := 1
+  8 [-]: CALL      R1 2 1       ; R1(R2)
+  9 [-]: LOADK     R1 K3        ; R1 := 1
+ 10 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0["0x15D4DAEE"]
+ 11 [-]: GETGLOBAL R4 K5        ; R4 := laserType
+ 12 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 13 [-]: GETGLOBAL R3 K6        ; R3 := 0x400E7765
+ 14 [-]: MOVE      R4 R2        ; R4 := R2
+ 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 16 [-]: TEST      R3 1         ; if R3 then PC := 21
+ 17 [-]: JMP       21           ; PC := 21
+ 18 [-]: LEN       R3 R2        ; R3 := # R2
+ 19 [-]: EQ        0 R3 K7      ; if R3 ~= 0 then PC := 37
+ 20 [-]: JMP       37           ; PC := 37
+ 21 [-]: NEWTABLE  R3 0 0       ; R3 := {}
+ 22 [-]: MOVE      R2 R3        ; R2 := R3
+ 23 [-]: LOADK     R3 K3        ; R3 := 1
+ 24 [-]: MOVE      R4 R1        ; R4 := R1
+ 25 [-]: LOADK     R5 K3        ; R5 := 1
+ 26 [-]: FORPREP   R3 36        ; R3 -= R5; PC := 36
+ 27 [-]: SELF      R7 R0 K8     ; R8 := R0; R7 := R0["0xAB436EF2"]
+ 28 [-]: GETGLOBAL R9 K5        ; R9 := laserType
+ 29 [-]: GETGLOBAL R10 K9       ; R10 := EMPTY_SYMBOL
+ 30 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
+ 31 [-]: GETGLOBAL R8 K10       ; R8 := table
+ 32 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["0xE6450C9D"]
+ 33 [-]: MOVE      R9 R2        ; R9 := R2
+ 34 [-]: MOVE      R10 R7       ; R10 := R7
+ 35 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 36 [-]: FORLOOP   R3 27        ; R3 += R5; if R3 <= R4 then begin PC := 27; R6 := R3 end
+ 37 [-]: LOADK     R8 K7        ; R8 := 0
+ 38 [-]: GETGLOBAL R9 K12       ; R9 := 0x1E4F6281
+ 39 [-]: CALL      R9 1 2       ; R9 := R9()
+ 40 [-]: GETGLOBAL R10 K13      ; R10 := 0x63B09107
+ 41 [-]: MOVE      R11 R2       ; R11 := R2
+ 42 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
+ 43 [-]: JMP       60           ; PC := 60
+ 44 [-]: GETGLOBAL R15 K15      ; R15 := math
+ 45 [-]: GETTABLE  R15 R15 K16  ; R15 := R15["0xBB3F1476"]
+ 46 [-]: MUL       R16 R13 K3   ; R16 := R13 * 1
+ 47 [-]: GETGLOBAL R17 K15      ; R17 := math
+ 48 [-]: GETTABLE  R17 R17 K17  ; R17 := R17["pi"]
+ 49 [-]: DIV       R16 R16 R17  ; R16 := R16 / R17
+ 50 [-]: MUL       R17 R8 K18   ; R17 := R8 * 0.40000000596046
+ 51 [-]: ADD       R16 R16 R17  ; R16 := R16 + R17
+ 52 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 53 [-]: MUL       R15 R15 K19  ; R15 := R15 * 30
+ 54 [-]: SUB       R15 R15 K19  ; R15 := R15 - 30
+ 55 [-]: SETTABLE  R9 K14 R15   ; R9["pitch"] := R15
+ 56 [-]: SELF      R15 R14 K20  ; R16 := R14; R15 := R14["0xA78B7FA7"]
+ 57 [-]: GETGLOBAL R17 K21      ; R17 := ZERO_VECTOR
+ 58 [-]: MOVE      R18 R9       ; R18 := R9
+ 59 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+ 60 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 44; R12 := R13 end
+ 61 [-]: JMP       44           ; PC := 44
+ 62 [-]: GETGLOBAL R15 K2       ; R15 := 0x201191EA
+ 63 [-]: LOADK     R16 K7       ; R16 := 0
+ 64 [-]: CALL      R15 2 1      ; R15(R16)
+ 65 [-]: GETGLOBAL R15 K22      ; R15 := 0x4CDEF9FF
+ 66 [-]: CALL      R15 1 2      ; R15 := R15()
+ 67 [-]: ADD       R8 R8 R15    ; R8 := R8 + R15
+ 68 [-]: JMP       40           ; PC := 40
+ 69 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 27
+; Defined at line: 33
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -151,7 +171,7 @@ code size: 40
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 40
+; Defined at line: 46
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -209,7 +229,7 @@ code size: 40
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 61
+; Defined at line: 67
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -237,7 +257,7 @@ code size: 40
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 67
+; Defined at line: 73
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -14,14 +14,14 @@ code size: 13
 code size: 79
 code size: 12
 code size: 163
-code size: 27
+code size: 33
 code size: 50
 code size: 43
 code size: 31
 code size: 282
 code size: 47
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Friendly\Pets\KubrowPetBehaviors\KubrowLootAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Friendly\Pets\KubrowPetBehaviors\KubrowLootAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -1071,39 +1071,45 @@ code size: 47
 ; Is_vararg:       0
 ; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
-  2 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0xA559F558"]
+  1 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+  2 [-]: MOVE      R5 R1        ; R5 := R1
   3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  4 [-]: TEST      R4 0         ; if not R4 then PC := 17
-  5 [-]: JMP       17           ; PC := 17
-  6 [-]: SELF      R4 R1 K2     ; R5 := R1; R4 := R1["0xABD9DD93"]
-  7 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  8 [-]: GETGLOBAL R5 K3        ; R5 := 0x400E7765
-  9 [-]: MOVE      R6 R4        ; R6 := R4
- 10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 11 [-]: TEST      R5 1         ; if R5 then PC := 17
- 12 [-]: JMP       17           ; PC := 17
- 13 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4["0x52111782"]
- 14 [-]: CALL      R5 2 1       ; R5(R6)
- 15 [-]: SELF      R5 R4 K5     ; R6 := R4; R5 := R4["0xDE46670C"]
- 16 [-]: CALL      R5 2 1       ; R5(R6)
- 17 [-]: SELF      R5 R1 K6     ; R6 := R1; R5 := R1["0x9F1DC568"]
- 18 [-]: GETGLOBAL R7 K7        ; R7 := activeEffect
- 19 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 20 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
- 21 [-]: MOVE      R7 R5        ; R7 := R5
- 22 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 23 [-]: TEST      R6 1         ; if R6 then PC := 27
- 24 [-]: JMP       27           ; PC := 27
- 25 [-]: SELF      R6 R5 K8     ; R7 := R5; R6 := R5["0xD4C2743F"]
- 26 [-]: CALL      R6 2 1       ; R6(R7)
- 27 [-]: RETURN    R0 1         ; return 
+  4 [-]: TEST      R4 0         ; if not R4 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R4 K1        ; R4 := gRegion
+  8 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4["0xA559F558"]
+  9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 10 [-]: TEST      R4 0         ; if not R4 then PC := 23
+ 11 [-]: JMP       23           ; PC := 23
+ 12 [-]: SELF      R4 R1 K3     ; R5 := R1; R4 := R1["0xABD9DD93"]
+ 13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 14 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+ 15 [-]: MOVE      R6 R4        ; R6 := R4
+ 16 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 17 [-]: TEST      R5 1         ; if R5 then PC := 23
+ 18 [-]: JMP       23           ; PC := 23
+ 19 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4["0x52111782"]
+ 20 [-]: CALL      R5 2 1       ; R5(R6)
+ 21 [-]: SELF      R5 R4 K5     ; R6 := R4; R5 := R4["0xDE46670C"]
+ 22 [-]: CALL      R5 2 1       ; R5(R6)
+ 23 [-]: SELF      R5 R1 K6     ; R6 := R1; R5 := R1["0x9F1DC568"]
+ 24 [-]: GETGLOBAL R7 K7        ; R7 := activeEffect
+ 25 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 26 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 27 [-]: MOVE      R7 R5        ; R7 := R5
+ 28 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 29 [-]: TEST      R6 1         ; if R6 then PC := 33
+ 30 [-]: JMP       33           ; PC := 33
+ 31 [-]: SELF      R6 R5 K8     ; R7 := R5; R6 := R5["0xD4C2743F"]
+ 32 [-]: CALL      R6 2 1       ; R6(R7)
+ 33 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 380
+; Defined at line: 384
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1164,7 +1170,7 @@ code size: 47
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 392
+; Defined at line: 396
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1218,7 +1224,7 @@ code size: 47
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 408
+; Defined at line: 412
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1260,7 +1266,7 @@ code size: 47
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 419
+; Defined at line: 423
 ; #Upvalues:       7
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1553,7 +1559,7 @@ code size: 47
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 561
+; Defined at line: 565
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

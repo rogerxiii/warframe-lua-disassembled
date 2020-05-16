@@ -6,7 +6,7 @@ code size: 31
 code size: 21
 code size: 18
 code size: 172
-code size: 70
+code size: 77
 code size: 624
 code size: 103
 code size: 65
@@ -15,7 +15,7 @@ code size: 28
 code size: 4
 code size: 29
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Friendly\Pets\KubrowPetBehaviors\KubrowChargerStrainAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Friendly\Pets\KubrowPetBehaviors\KubrowChargerStrainAbility.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -515,7 +515,7 @@ code size: 29
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  11
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0xDBEF0FB6"]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -533,60 +533,67 @@ code size: 29
  14 [-]: TEST      R2 0         ; if not R2 then PC := 17
  15 [-]: JMP       17           ; PC := 17
  16 [-]: RETURN    R0 1         ; return 
- 17 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 18 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["chargerStrain"]
- 19 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
- 20 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["maggotDuration"]
- 21 [-]: LT        0 K5 R2      ; if 0 >= R2 then PC := 30
- 22 [-]: JMP       30           ; PC := 30
- 23 [-]: GETGLOBAL R3 K6        ; R3 := 0x4CDEF9FF
- 24 [-]: CALL      R3 1 2       ; R3 := R3()
- 25 [-]: SUB       R2 R2 R3     ; R2 := R2 - R3
- 26 [-]: GETGLOBAL R3 K7        ; R3 := 0x201191EA
- 27 [-]: LOADK     R4 K5        ; R4 := 0
- 28 [-]: CALL      R3 2 1       ; R3(R4)
- 29 [-]: JMP       21           ; PC := 21
+ 17 [-]: GETGLOBAL R2 K4        ; R2 := 0x201191EA
+ 18 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 19 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["chargerStrain"]
+ 20 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
+ 21 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["maggotDuration"]
+ 22 [-]: CALL      R2 2 1       ; R2(R3)
+ 23 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
+ 24 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 25 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["chargerStrain"]
+ 26 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 27 [-]: TEST      R2 1         ; if R2 then PC := 36
+ 28 [-]: JMP       36           ; PC := 36
+ 29 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
  30 [-]: GETGLOBAL R3 K2        ; R3 := _T
  31 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["chargerStrain"]
  32 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
- 33 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["maggots"]
- 34 [-]: LEN       R4 R3        ; R4 := # R3
- 35 [-]: LT        0 K5 R4      ; if 0 >= R4 then PC := 58
- 36 [-]: JMP       58           ; PC := 58
- 37 [-]: LOADK     R4 K9        ; R4 := 1
- 38 [-]: LEN       R5 R3        ; R5 := # R3
- 39 [-]: LOADK     R6 K9        ; R6 := 1
- 40 [-]: FORPREP   R4 57        ; R4 -= R6; PC := 57
- 41 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
- 42 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]
- 43 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 44 [-]: TEST      R8 1         ; if R8 then PC := 57
- 45 [-]: JMP       57           ; PC := 57
- 46 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 47 [-]: SELF      R8 R8 K10    ; R9 := R8; R8 := R8["0x5A115A02"]
- 48 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 49 [-]: TEST      R8 1         ; if R8 then PC := 57
- 50 [-]: JMP       57           ; PC := 57
- 51 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 52 [-]: SELF      R8 R8 K11    ; R9 := R8; R8 := R8["0xC29BD898"]
- 53 [-]: LOADK     R10 K5       ; R10 := 0
- 54 [-]: GETGLOBAL R11 K12      ; R11 := Engine
- 55 [-]: GETTABLE  R11 R11 K13  ; R11 := R11["DT_SUICIDE"]
- 56 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
- 57 [-]: FORLOOP   R4 41        ; R4 += R6; if R4 <= R5 then begin PC := 41; R7 := R4 end
- 58 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
- 59 [-]: GETGLOBAL R9 K2        ; R9 := _T
- 60 [-]: GETTABLE  R9 R9 K3     ; R9 := R9["chargerStrain"]
- 61 [-]: GETTABLE  R9 R9 R1     ; R9 := R9[R1]
- 62 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 63 [-]: TEST      R8 1         ; if R8 then PC := 70
- 64 [-]: JMP       70           ; PC := 70
- 65 [-]: GETGLOBAL R8 K2        ; R8 := _T
- 66 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["chargerStrain"]
- 67 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
- 68 [-]: NEWTABLE  R9 0 0       ; R9 := {}
- 69 [-]: SETTABLE  R8 K8 R9     ; R8["maggots"] := R9
- 70 [-]: RETURN    R0 1         ; return 
+ 33 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 34 [-]: TEST      R2 0         ; if not R2 then PC := 37
+ 35 [-]: JMP       37           ; PC := 37
+ 36 [-]: RETURN    R0 1         ; return 
+ 37 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 38 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["chargerStrain"]
+ 39 [-]: GETTABLE  R2 R2 R1     ; R2 := R2[R1]
+ 40 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["maggots"]
+ 41 [-]: LEN       R3 R2        ; R3 := # R2
+ 42 [-]: LT        0 K7 R3      ; if 0 >= R3 then PC := 65
+ 43 [-]: JMP       65           ; PC := 65
+ 44 [-]: LOADK     R3 K8        ; R3 := 1
+ 45 [-]: LEN       R4 R2        ; R4 := # R2
+ 46 [-]: LOADK     R5 K8        ; R5 := 1
+ 47 [-]: FORPREP   R3 64        ; R3 -= R5; PC := 64
+ 48 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
+ 49 [-]: GETTABLE  R8 R2 R6     ; R8 := R2[R6]
+ 50 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 51 [-]: TEST      R7 1         ; if R7 then PC := 64
+ 52 [-]: JMP       64           ; PC := 64
+ 53 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
+ 54 [-]: SELF      R7 R7 K9     ; R8 := R7; R7 := R7["0x5A115A02"]
+ 55 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 56 [-]: TEST      R7 1         ; if R7 then PC := 64
+ 57 [-]: JMP       64           ; PC := 64
+ 58 [-]: GETTABLE  R7 R2 R6     ; R7 := R2[R6]
+ 59 [-]: SELF      R7 R7 K10    ; R8 := R7; R7 := R7["0xC29BD898"]
+ 60 [-]: LOADK     R9 K7        ; R9 := 0
+ 61 [-]: GETGLOBAL R10 K11      ; R10 := Engine
+ 62 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DT_SUICIDE"]
+ 63 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+ 64 [-]: FORLOOP   R3 48        ; R3 += R5; if R3 <= R4 then begin PC := 48; R6 := R3 end
+ 65 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
+ 66 [-]: GETGLOBAL R8 K2        ; R8 := _T
+ 67 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["chargerStrain"]
+ 68 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
+ 69 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 70 [-]: TEST      R7 1         ; if R7 then PC := 77
+ 71 [-]: JMP       77           ; PC := 77
+ 72 [-]: GETGLOBAL R7 K2        ; R7 := _T
+ 73 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["chargerStrain"]
+ 74 [-]: GETTABLE  R7 R7 R1     ; R7 := R7[R1]
+ 75 [-]: NEWTABLE  R8 0 0       ; R8 := {}
+ 76 [-]: SETTABLE  R7 K6 R8     ; R7["maggots"] := R8
+ 77 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:

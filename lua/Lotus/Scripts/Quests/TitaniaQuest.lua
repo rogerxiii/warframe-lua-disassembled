@@ -3,8 +3,8 @@ code size: 27
 code size: 33
 code size: 271
 code size: 76
-code size: 117
-code size: 30
+code size: 122
+code size: 31
 code size: 40
 code size: 140
 code size: 2
@@ -16,7 +16,7 @@ code size: 17
 code size: 19
 code size: 37
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\TitaniaQuest.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\TitaniaQuest.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -625,172 +625,178 @@ code size: 37
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  24
+; Max Stack Size:  23
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gGameRules
-  2 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1["0xED0EE7FB"]
-  3 [-]: GETUPVAL  R4 U0        ; R4 := U0
-  4 [-]: LOADK     R5 K2        ; R5 := 0
-  5 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
-  6 [-]: GETGLOBAL R3 K3        ; R3 := gPromotedToHost
-  7 [-]: TEST      R3 1         ; if R3 then PC := 23
-  8 [-]: JMP       23           ; PC := 23
-  9 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1["0xB8637349"]
- 10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["goalTag"]
- 12 [-]: GETGLOBAL R4 K6        ; R4 := 0xEC274B1A
- 13 [-]: LOADK     R5 K7        ; R5 := "FairyQuestA"
- 14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 15 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 23
- 16 [-]: JMP       23           ; PC := 23
- 17 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 18 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["0xD69A3D49"]
- 19 [-]: LOADK     R4 K9        ; R4 := "/Lotus/Language/G1Quests/FairyQuestMissionBC"
- 20 [-]: LOADK     R5 K10       ; R5 := 1
- 21 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 22 [-]: RETURN    R0 1         ; return 
- 23 [-]: SELF      R3 R1 K11    ; R4 := R1; R3 := R1["0x38C26D14"]
- 24 [-]: MOVE      R5 R1        ; R5 := R1
- 25 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 26 [-]: EQ        0 R2 K2      ; if R2 ~= 0 then PC := 37
- 27 [-]: JMP       37           ; PC := 37
- 28 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 29 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["0xD69A3D49"]
- 30 [-]: LOADK     R4 K12       ; R4 := "/Lotus/Language/G1Quests/FairyQuestMissionA"
- 31 [-]: LOADK     R5 K2        ; R5 := 0
- 32 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 33 [-]: SELF      R3 R1 K13    ; R4 := R1; R3 := R1["0xD015CBDC"]
- 34 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 35 [-]: LOADK     R6 K10       ; R6 := 1
- 36 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 37 [-]: LOADK     R3 K10       ; R3 := 1
- 38 [-]: NEWTABLE  R4 4 0       ; R4 := {}
- 39 [-]: LOADNIL   R5 R8        ; R5 := R6 := R7 := R8 := nil
- 40 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
- 41 [-]: SELF      R5 R0 K14    ; R6 := R0; R5 := R0["0x72E5DB62"]
- 42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 43 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5["0x828F05DE"]
- 44 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 45 [-]: SUB       R6 R5 K10    ; R6 := R5 - 1
- 46 [-]: SELF      R7 R1 K1     ; R8 := R1; R7 := R1["0xED0EE7FB"]
- 47 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 48 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 49 [-]: EQ        0 R7 K10     ; if R7 ~= 1 then PC := 117
- 50 [-]: JMP       117          ; PC := 117
- 51 [-]: EQ        0 R7 K10     ; if R7 ~= 1 then PC := 117
- 52 [-]: JMP       117          ; PC := 117
- 53 [-]: LOADK     R8 K16       ; R8 := ""
- 54 [-]: GETGLOBAL R9 K17       ; R9 := gRegion
- 55 [-]: SELF      R9 R9 K18    ; R10 := R9; R9 := R9["0x848C9FE0"]
- 56 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 57 [-]: GETGLOBAL R10 K19      ; R10 := 0x63B09107
- 58 [-]: MOVE      R11 R9       ; R11 := R9
- 59 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
- 60 [-]: JMP       107          ; PC := 107
- 61 [-]: SELF      R15 R14 K14  ; R16 := R14; R15 := R14["0x72E5DB62"]
- 62 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 63 [-]: GETGLOBAL R16 K20      ; R16 := 0x400E7765
- 64 [-]: MOVE      R17 R15      ; R17 := R15
- 65 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 66 [-]: TEST      R16 1        ; if R16 then PC := 107
- 67 [-]: JMP       107          ; PC := 107
- 68 [-]: SELF      R16 R15 K15  ; R17 := R15; R16 := R15["0x828F05DE"]
- 69 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 70 [-]: MOVE      R17 R16      ; R17 := R16
- 71 [-]: GETGLOBAL R18 K20      ; R18 := 0x400E7765
- 72 [-]: GETTABLE  R19 R4 R13   ; R19 := R4[R13]
- 73 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 74 [-]: TEST      R18 1        ; if R18 then PC := 80
- 75 [-]: JMP       80           ; PC := 80
- 76 [-]: GETTABLE  R18 R4 R13   ; R18 := R4[R13]
- 77 [-]: SELF      R18 R18 K15  ; R19 := R18; R18 := R18["0x828F05DE"]
- 78 [-]: CALL      R18 2 2      ; R18 := R18(R19)
- 79 [-]: MOVE      R17 R18      ; R17 := R18
- 80 [-]: EQ        1 R16 R17    ; if R16 == R17 then PC := 93
- 81 [-]: JMP       93           ; PC := 93
- 82 [-]: EQ        1 R16 R5     ; if R16 == R5 then PC := 93
- 83 [-]: JMP       93           ; PC := 93
- 84 [-]: EQ        1 R17 R5     ; if R17 == R5 then PC := 93
- 85 [-]: JMP       93           ; PC := 93
- 86 [-]: EQ        0 R16 R6     ; if R16 ~= R6 then PC := 90
- 87 [-]: JMP       90           ; PC := 90
- 88 [-]: LOADK     R8 K21       ; R8 := "Warmer"
- 89 [-]: JMP       93           ; PC := 93
- 90 [-]: EQ        0 R17 R6     ; if R17 ~= R6 then PC := 93
- 91 [-]: JMP       93           ; PC := 93
- 92 [-]: LOADK     R8 K22       ; R8 := "Colder"
- 93 [-]: EQ        1 R8 K16     ; if R8 == "" then PC := 106
- 94 [-]: JMP       106          ; PC := 106
- 95 [-]: GETUPVAL  R18 U2       ; R18 := U2
- 96 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["0x8249707B"]
- 97 [-]: GETGLOBAL R19 K24      ; R19 := _T
- 98 [-]: GETTABLE  R19 R19 K25  ; R19 := R19["MissionTransmissionSet"]
- 99 [-]: GETGLOBAL R20 K6       ; R20 := 0xEC274B1A
-100 [-]: LOADK     R21 K26      ; R21 := "FindShrineHint"
-101 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-102 [-]: LOADK     R21 K2       ; R21 := 0
-103 [-]: MOVE      R22 R14      ; R22 := R14
-104 [-]: MOVE      R23 R8       ; R23 := R8
-105 [-]: CALL      R18 6 1      ; R18(R19,R20,R21,R22,R23)
-106 [-]: SETTABLE  R4 R13 R15   ; R4[R13] := R15
-107 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 61; R12 := R13 end
-108 [-]: JMP       61           ; PC := 61
-109 [-]: GETGLOBAL R18 K27      ; R18 := 0x201191EA
-110 [-]: MOVE      R19 R3       ; R19 := R3
-111 [-]: CALL      R18 2 1      ; R18(R19)
-112 [-]: SELF      R18 R1 K1    ; R19 := R1; R18 := R1["0xED0EE7FB"]
-113 [-]: GETUPVAL  R20 U0       ; R20 := U0
-114 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-115 [-]: MOVE      R7 R18       ; R7 := R18
-116 [-]: JMP       51           ; PC := 51
-117 [-]: RETURN    R0 1         ; return 
+  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xED0EE7FB"]
+  3 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  4 [-]: LOADK     R4 K2        ; R4 := 0
+  5 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
+  6 [-]: GETGLOBAL R2 K3        ; R2 := gPromotedToHost
+  7 [-]: TEST      R2 1         ; if R2 then PC := 24
+  8 [-]: JMP       24           ; PC := 24
+  9 [-]: GETGLOBAL R2 K0        ; R2 := gGameRules
+ 10 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0xB8637349"]
+ 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 12 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["goalTag"]
+ 13 [-]: GETGLOBAL R3 K6        ; R3 := 0xEC274B1A
+ 14 [-]: LOADK     R4 K7        ; R4 := "FairyQuestA"
+ 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 16 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 24
+ 17 [-]: JMP       24           ; PC := 24
+ 18 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 19 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xD69A3D49"]
+ 20 [-]: LOADK     R3 K9        ; R3 := "/Lotus/Language/G1Quests/FairyQuestMissionBC"
+ 21 [-]: LOADK     R4 K10       ; R4 := 1
+ 22 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 23 [-]: RETURN    R0 1         ; return 
+ 24 [-]: GETGLOBAL R2 K0        ; R2 := gGameRules
+ 25 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2["0x38C26D14"]
+ 26 [-]: MOVE      R4 R1        ; R4 := R1
+ 27 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 28 [-]: EQ        0 R1 K2      ; if R1 ~= 0 then PC := 40
+ 29 [-]: JMP       40           ; PC := 40
+ 30 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 31 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xD69A3D49"]
+ 32 [-]: LOADK     R3 K12       ; R3 := "/Lotus/Language/G1Quests/FairyQuestMissionA"
+ 33 [-]: LOADK     R4 K2        ; R4 := 0
+ 34 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 35 [-]: GETGLOBAL R2 K0        ; R2 := gGameRules
+ 36 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0xD015CBDC"]
+ 37 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 38 [-]: LOADK     R5 K10       ; R5 := 1
+ 39 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 40 [-]: LOADK     R2 K10       ; R2 := 1
+ 41 [-]: NEWTABLE  R3 4 0       ; R3 := {}
+ 42 [-]: LOADNIL   R4 R7        ; R4 := R5 := R6 := R7 := nil
+ 43 [-]: SETLIST   R3 4 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 4
+ 44 [-]: SELF      R4 R0 K14    ; R5 := R0; R4 := R0["0x72E5DB62"]
+ 45 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 46 [-]: SELF      R4 R4 K15    ; R5 := R4; R4 := R4["0x828F05DE"]
+ 47 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 48 [-]: SUB       R5 R4 K10    ; R5 := R4 - 1
+ 49 [-]: GETGLOBAL R6 K0        ; R6 := gGameRules
+ 50 [-]: SELF      R6 R6 K1     ; R7 := R6; R6 := R6["0xED0EE7FB"]
+ 51 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 52 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 53 [-]: EQ        0 R6 K10     ; if R6 ~= 1 then PC := 122
+ 54 [-]: JMP       122          ; PC := 122
+ 55 [-]: EQ        0 R6 K10     ; if R6 ~= 1 then PC := 122
+ 56 [-]: JMP       122          ; PC := 122
+ 57 [-]: LOADK     R7 K16       ; R7 := ""
+ 58 [-]: GETGLOBAL R8 K17       ; R8 := gRegion
+ 59 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0x848C9FE0"]
+ 60 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 61 [-]: GETGLOBAL R9 K19       ; R9 := 0x63B09107
+ 62 [-]: MOVE      R10 R8       ; R10 := R8
+ 63 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
+ 64 [-]: JMP       111          ; PC := 111
+ 65 [-]: SELF      R14 R13 K14  ; R15 := R13; R14 := R13["0x72E5DB62"]
+ 66 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+ 67 [-]: GETGLOBAL R15 K20      ; R15 := 0x400E7765
+ 68 [-]: MOVE      R16 R14      ; R16 := R14
+ 69 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 70 [-]: TEST      R15 1        ; if R15 then PC := 111
+ 71 [-]: JMP       111          ; PC := 111
+ 72 [-]: SELF      R15 R14 K15  ; R16 := R14; R15 := R14["0x828F05DE"]
+ 73 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 74 [-]: MOVE      R16 R15      ; R16 := R15
+ 75 [-]: GETGLOBAL R17 K20      ; R17 := 0x400E7765
+ 76 [-]: GETTABLE  R18 R3 R12   ; R18 := R3[R12]
+ 77 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+ 78 [-]: TEST      R17 1        ; if R17 then PC := 84
+ 79 [-]: JMP       84           ; PC := 84
+ 80 [-]: GETTABLE  R17 R3 R12   ; R17 := R3[R12]
+ 81 [-]: SELF      R17 R17 K15  ; R18 := R17; R17 := R17["0x828F05DE"]
+ 82 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+ 83 [-]: MOVE      R16 R17      ; R16 := R17
+ 84 [-]: EQ        1 R15 R16    ; if R15 == R16 then PC := 97
+ 85 [-]: JMP       97           ; PC := 97
+ 86 [-]: EQ        1 R15 R4     ; if R15 == R4 then PC := 97
+ 87 [-]: JMP       97           ; PC := 97
+ 88 [-]: EQ        1 R16 R4     ; if R16 == R4 then PC := 97
+ 89 [-]: JMP       97           ; PC := 97
+ 90 [-]: EQ        0 R15 R5     ; if R15 ~= R5 then PC := 94
+ 91 [-]: JMP       94           ; PC := 94
+ 92 [-]: LOADK     R7 K21       ; R7 := "Warmer"
+ 93 [-]: JMP       97           ; PC := 97
+ 94 [-]: EQ        0 R16 R5     ; if R16 ~= R5 then PC := 97
+ 95 [-]: JMP       97           ; PC := 97
+ 96 [-]: LOADK     R7 K22       ; R7 := "Colder"
+ 97 [-]: EQ        1 R7 K16     ; if R7 == "" then PC := 110
+ 98 [-]: JMP       110          ; PC := 110
+ 99 [-]: GETUPVAL  R17 U2       ; R17 := U2
+100 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["0x8249707B"]
+101 [-]: GETGLOBAL R18 K24      ; R18 := _T
+102 [-]: GETTABLE  R18 R18 K25  ; R18 := R18["MissionTransmissionSet"]
+103 [-]: GETGLOBAL R19 K6       ; R19 := 0xEC274B1A
+104 [-]: LOADK     R20 K26      ; R20 := "FindShrineHint"
+105 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+106 [-]: LOADK     R20 K2       ; R20 := 0
+107 [-]: MOVE      R21 R13      ; R21 := R13
+108 [-]: MOVE      R22 R7       ; R22 := R7
+109 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+110 [-]: SETTABLE  R3 R12 R14   ; R3[R12] := R14
+111 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 65; R11 := R12 end
+112 [-]: JMP       65           ; PC := 65
+113 [-]: GETGLOBAL R17 K27      ; R17 := 0x201191EA
+114 [-]: MOVE      R18 R2       ; R18 := R2
+115 [-]: CALL      R17 2 1      ; R17(R18)
+116 [-]: GETGLOBAL R17 K0       ; R17 := gGameRules
+117 [-]: SELF      R17 R17 K1   ; R18 := R17; R17 := R17["0xED0EE7FB"]
+118 [-]: GETUPVAL  R19 U0       ; R19 := U0
+119 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+120 [-]: MOVE      R6 R17       ; R6 := R17
+121 [-]: JMP       55           ; PC := 55
+122 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 262
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  6
+; Max Stack Size:  5
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xD1CEF990"]
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
   4 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x20092973"]
   5 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  6 [-]: GETGLOBAL R1 K3        ; R1 := gGameRules
-  7 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0["0xF96BA338"]
-  8 [-]: MOVE      R4 R0        ; R4 := R0
-  9 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 10 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 11 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["0xFB594D4A"]
- 12 [-]: GETGLOBAL R3 K6        ; R3 := _T
- 13 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["MissionTransmissionSet"]
- 14 [-]: GETGLOBAL R4 K8        ; R4 := 0xEC274B1A
- 15 [-]: LOADK     R5 K9        ; R5 := "ArriveAtShrine"
- 16 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 17 [-]: LOADK     R5 K10       ; R5 := 0
- 18 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 19 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1["0xD015CBDC"]
- 20 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 21 [-]: LOADK     R5 K12       ; R5 := 2
- 22 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 23 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0x38C26D14"]
- 24 [-]: MOVE      R4 R1        ; R4 := R1
- 25 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 26 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 27 [-]: GETTABLE  R2 R2 K14    ; R2 := R2["0xD69A3D49"]
- 28 [-]: LOADK     R3 K15       ; R3 := "/Lotus/Language/Quests/TitaniaAnointShrine"
- 29 [-]: CALL      R2 2 1       ; R2(R3)
- 30 [-]: RETURN    R0 1         ; return 
+  6 [-]: SELF      R1 R0 K3     ; R2 := R0; R1 := R0["0xF96BA338"]
+  7 [-]: MOVE      R3 R0        ; R3 := R0
+  8 [-]: CALL      R1 3 1       ; R1(R2,R3)
+  9 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 10 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["0xFB594D4A"]
+ 11 [-]: GETGLOBAL R2 K5        ; R2 := _T
+ 12 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["MissionTransmissionSet"]
+ 13 [-]: GETGLOBAL R3 K7        ; R3 := 0xEC274B1A
+ 14 [-]: LOADK     R4 K8        ; R4 := "ArriveAtShrine"
+ 15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 16 [-]: LOADK     R4 K9        ; R4 := 0
+ 17 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 18 [-]: GETGLOBAL R1 K10       ; R1 := gGameRules
+ 19 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1["0xD015CBDC"]
+ 20 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 21 [-]: LOADK     R4 K12       ; R4 := 2
+ 22 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 23 [-]: GETGLOBAL R1 K10       ; R1 := gGameRules
+ 24 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1["0x38C26D14"]
+ 25 [-]: MOVE      R3 R1        ; R3 := R1
+ 26 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 27 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 28 [-]: GETTABLE  R1 R1 K14    ; R1 := R1["0xD69A3D49"]
+ 29 [-]: LOADK     R2 K15       ; R2 := "/Lotus/Language/Quests/TitaniaAnointShrine"
+ 30 [-]: CALL      R1 2 1       ; R1(R2)
+ 31 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 273
+; Defined at line: 271
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -841,7 +847,7 @@ code size: 37
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 292
+; Defined at line: 290
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -992,7 +998,7 @@ code size: 37
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 361
+; Defined at line: 359
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1005,7 +1011,7 @@ code size: 37
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 365
+; Defined at line: 363
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1047,7 +1053,7 @@ code size: 37
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 380
+; Defined at line: 378
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1173,7 +1179,7 @@ code size: 37
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 427
+; Defined at line: 425
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1414,7 +1420,7 @@ code size: 37
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 508
+; Defined at line: 506
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1462,7 +1468,7 @@ code size: 37
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 524
+; Defined at line: 522
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1490,7 +1496,7 @@ code size: 37
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 530
+; Defined at line: 528
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1520,7 +1526,7 @@ code size: 37
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 537
+; Defined at line: 535
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

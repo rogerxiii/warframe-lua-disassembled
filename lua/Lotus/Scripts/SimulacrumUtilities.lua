@@ -1,5 +1,5 @@
 code size: 45
-code size: 146
+code size: 155
 code size: 3
 code size: 176
 code size: 36
@@ -7,7 +7,7 @@ code size: 20
 code size: 37
 code size: 40
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\SimulacrumUtilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\SimulacrumUtilities.luac 
 
 ; Name:            
 ; Defined at line: 0
@@ -213,17 +213,26 @@ code size: 40
 139 [-]: MOVE      R11 R7       ; R11 := R7
 140 [-]: MOVE      R12 R0       ; R12 := R0
 141 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-142 [-]: GETGLOBAL R9 K21       ; R9 := Engine
-143 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["0x56DF865D"]
-144 [-]: MOVE      R10 R6       ; R10 := R6
-145 [-]: CALL      R9 2 1       ; R9(R10)
-146 [-]: RETURN    R0 1         ; return 
+142 [-]: GETGLOBAL R9 K4        ; R9 := gMatchingService
+143 [-]: SELF      R9 R9 K40    ; R10 := R9; R9 := R9["0xA99F3BEF"]
+144 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+145 [-]: TEST      R9 0         ; if not R9 then PC := 151
+146 [-]: JMP       151          ; PC := 151
+147 [-]: GETGLOBAL R9 K32       ; R9 := gGameRules
+148 [-]: SELF      R9 R9 K41    ; R10 := R9; R9 := R9["0x819AC35E"]
+149 [-]: MOVE      R11 R1       ; R11 := R1
+150 [-]: CALL      R9 3 1       ; R9(R10,R11)
+151 [-]: GETGLOBAL R9 K21       ; R9 := Engine
+152 [-]: GETTABLE  R9 R9 K42    ; R9 := R9["0x56DF865D"]
+153 [-]: MOVE      R10 R6       ; R10 := R6
+154 [-]: CALL      R9 2 1       ; R9(R10)
+155 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 61
+; Defined at line: 65
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -237,7 +246,7 @@ code size: 40
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 65
+; Defined at line: 69
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -424,7 +433,7 @@ code size: 40
 ; Function #3.1:
 ;
 ; Name:            
-; Defined at line: 120
+; Defined at line: 124
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -471,7 +480,7 @@ code size: 40
 ; Function #3.2:
 ;
 ; Name:            
-; Defined at line: 137
+; Defined at line: 141
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -502,7 +511,7 @@ code size: 40
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 154
+; Defined at line: 158
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -550,7 +559,7 @@ code size: 40
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 168
+; Defined at line: 172
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
