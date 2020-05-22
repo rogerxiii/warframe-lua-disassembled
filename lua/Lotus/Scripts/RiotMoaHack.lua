@@ -3,7 +3,7 @@ code size: 61
 code size: 127
 code size: 81
 code size: 37
-code size: 168
+code size: 171
 code size: 112
 code size: 64
 code size: 437
@@ -471,148 +471,151 @@ code size: 110
  30 [-]: GETGLOBAL R7 K5        ; R7 := damageOnFail
  31 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  32 [-]: RETURN    R0 1         ; return 
- 33 [-]: GETGLOBAL R4 K6        ; R4 := gRegion
- 34 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0xA559F558"]
- 35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 36 [-]: TEST      R4 0         ; if not R4 then PC := 144
- 37 [-]: JMP       144          ; PC := 144
- 38 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0xE50E1085"]
- 39 [-]: GETGLOBAL R6 K9        ; R6 := Engine
- 40 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["PM_MENACE"]
- 41 [-]: MOVE      R7 R1        ; R7 := R1
- 42 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 43 [-]: SELF      R4 R3 K11    ; R5 := R3; R4 := R3["0x9F1DC568"]
- 44 [-]: GETGLOBAL R6 K12       ; R6 := hackedFx
- 45 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 46 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
- 47 [-]: MOVE      R6 R4        ; R6 := R4
- 48 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 49 [-]: TEST      R5 1         ; if R5 then PC := 53
- 50 [-]: JMP       53           ; PC := 53
- 51 [-]: SELF      R5 R4 K13    ; R6 := R4; R5 := R4["0xD4C2743F"]
- 52 [-]: CALL      R5 2 1       ; R5(R6)
- 53 [-]: SELF      R5 R3 K14    ; R6 := R3; R5 := R3["0xAB436EF2"]
- 54 [-]: GETGLOBAL R7 K12       ; R7 := hackedFx
- 55 [-]: GETGLOBAL R8 K15       ; R8 := EMPTY_SYMBOL
- 56 [-]: GETGLOBAL R9 K16       ; R9 := ZERO_VECTOR
- 57 [-]: GETGLOBAL R10 K17      ; R10 := ZERO_ROTATION
- 58 [-]: MOVE      R11 R0       ; R11 := R0
- 59 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 60 [-]: SELF      R5 R2 K3     ; R6 := R2; R5 := R2["0x2DB1272F"]
- 61 [-]: CALL      R5 2 1       ; R5(R6)
- 62 [-]: SELF      R5 R3 K18    ; R6 := R3; R5 := R3["0x76C229EF"]
- 63 [-]: SELF      R7 R3 K19    ; R8 := R3; R7 := R3["0x385BD2FE"]
- 64 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 65 [-]: MOVE      R8 R0        ; R8 := R0
- 66 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 67 [-]: SELF      R5 R3 K20    ; R6 := R3; R5 := R3["0xA3F6069B"]
- 68 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 69 [-]: SELF      R5 R5 K21    ; R6 := R5; R5 := R5["0x8938B1C9"]
- 70 [-]: SELF      R7 R3 K20    ; R8 := R3; R7 := R3["0xA3F6069B"]
- 71 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 72 [-]: SELF      R7 R7 K22    ; R8 := R7; R7 := R7["0xF27096B7"]
- 73 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
- 74 [-]: CALL      R5 0 1       ; R5(R6,...)
- 75 [-]: SELF      R5 R3 K20    ; R6 := R3; R5 := R3["0xA3F6069B"]
- 76 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 77 [-]: SELF      R5 R5 K23    ; R6 := R5; R5 := R5["0xE817E70D"]
- 78 [-]: MOVE      R7 R0        ; R7 := R0
- 79 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 80 [-]: SELF      R5 R3 K20    ; R6 := R3; R5 := R3["0xA3F6069B"]
- 81 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 82 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0xF02288DF"]
- 83 [-]: MOVE      R7 R0        ; R7 := R0
- 84 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 85 [-]: SELF      R5 R3 K25    ; R6 := R3; R5 := R3["0x6B4CBCD7"]
+ 33 [-]: LT        0 K6 R1      ; if 1 >= R1 then PC := 36
+ 34 [-]: JMP       36           ; PC := 36
+ 35 [-]: RETURN    R0 1         ; return 
+ 36 [-]: GETGLOBAL R4 K7        ; R4 := gRegion
+ 37 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0xA559F558"]
+ 38 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 39 [-]: TEST      R4 0         ; if not R4 then PC := 147
+ 40 [-]: JMP       147          ; PC := 147
+ 41 [-]: SELF      R4 R3 K9     ; R5 := R3; R4 := R3["0xE50E1085"]
+ 42 [-]: GETGLOBAL R6 K10       ; R6 := Engine
+ 43 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["PM_MENACE"]
+ 44 [-]: MOVE      R7 R1        ; R7 := R1
+ 45 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 46 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3["0x9F1DC568"]
+ 47 [-]: GETGLOBAL R6 K13       ; R6 := hackedFx
+ 48 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 49 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+ 50 [-]: MOVE      R6 R4        ; R6 := R4
+ 51 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 52 [-]: TEST      R5 1         ; if R5 then PC := 56
+ 53 [-]: JMP       56           ; PC := 56
+ 54 [-]: SELF      R5 R4 K14    ; R6 := R4; R5 := R4["0xD4C2743F"]
+ 55 [-]: CALL      R5 2 1       ; R5(R6)
+ 56 [-]: SELF      R5 R3 K15    ; R6 := R3; R5 := R3["0xAB436EF2"]
+ 57 [-]: GETGLOBAL R7 K13       ; R7 := hackedFx
+ 58 [-]: GETGLOBAL R8 K16       ; R8 := EMPTY_SYMBOL
+ 59 [-]: GETGLOBAL R9 K17       ; R9 := ZERO_VECTOR
+ 60 [-]: GETGLOBAL R10 K18      ; R10 := ZERO_ROTATION
+ 61 [-]: MOVE      R11 R0       ; R11 := R0
+ 62 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
+ 63 [-]: SELF      R5 R2 K3     ; R6 := R2; R5 := R2["0x2DB1272F"]
+ 64 [-]: CALL      R5 2 1       ; R5(R6)
+ 65 [-]: SELF      R5 R3 K19    ; R6 := R3; R5 := R3["0x76C229EF"]
+ 66 [-]: SELF      R7 R3 K20    ; R8 := R3; R7 := R3["0x385BD2FE"]
+ 67 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 68 [-]: MOVE      R8 R0        ; R8 := R0
+ 69 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 70 [-]: SELF      R5 R3 K21    ; R6 := R3; R5 := R3["0xA3F6069B"]
+ 71 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 72 [-]: SELF      R5 R5 K22    ; R6 := R5; R5 := R5["0x8938B1C9"]
+ 73 [-]: SELF      R7 R3 K21    ; R8 := R3; R7 := R3["0xA3F6069B"]
+ 74 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 75 [-]: SELF      R7 R7 K23    ; R8 := R7; R7 := R7["0xF27096B7"]
+ 76 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 77 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 78 [-]: SELF      R5 R3 K21    ; R6 := R3; R5 := R3["0xA3F6069B"]
+ 79 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 80 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0xE817E70D"]
+ 81 [-]: MOVE      R7 R0        ; R7 := R0
+ 82 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 83 [-]: SELF      R5 R3 K21    ; R6 := R3; R5 := R3["0xA3F6069B"]
+ 84 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 85 [-]: SELF      R5 R5 K25    ; R6 := R5; R5 := R5["0xF02288DF"]
  86 [-]: MOVE      R7 R0        ; R7 := R0
- 87 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 88 [-]: TEST      R5 1         ; if R5 then PC := 134
- 89 [-]: JMP       134          ; PC := 134
- 90 [-]: SELF      R5 R3 K26    ; R6 := R3; R5 := R3["0x8B598ED4"]
- 91 [-]: GETGLOBAL R7 K27       ; R7 := gRiotBipedRobotAvatarType
- 92 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 93 [-]: TEST      R5 0         ; if not R5 then PC := 123
- 94 [-]: JMP       123          ; PC := 123
- 95 [-]: SELF      R5 R3 K28    ; R6 := R3; R5 := R3["0x17FC7097"]
- 96 [-]: MOVE      R7 R0        ; R7 := R0
- 97 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 98 [-]: GETGLOBAL R5 K29       ; R5 := _T
- 99 [-]: GETTABLE  R5 R5 K30    ; R5 := R5["InSimulacrum"]
-100 [-]: TEST      R5 1         ; if R5 then PC := 116
-101 [-]: JMP       116          ; PC := 116
-102 [-]: SELF      R5 R3 K31    ; R6 := R3; R5 := R3["0x8DB5D01F"]
-103 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-104 [-]: SELF      R5 R5 K32    ; R6 := R5; R5 := R5["0x2CB16192"]
-105 [-]: CALL      R5 2 1       ; R5(R6)
-106 [-]: SELF      R5 R3 K33    ; R6 := R3; R5 := R3["0xABD9DD93"]
-107 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-108 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
-109 [-]: MOVE      R7 R5        ; R7 := R5
-110 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-111 [-]: TEST      R6 1         ; if R6 then PC := 116
-112 [-]: JMP       116          ; PC := 116
-113 [-]: SELF      R6 R5 K34    ; R7 := R5; R6 := R5["0x198A17E9"]
-114 [-]: MOVE      R8 R0        ; R8 := R0
-115 [-]: CALL      R6 3 1       ; R6(R7,R8)
-116 [-]: GETGLOBAL R6 K29       ; R6 := _T
-117 [-]: GETTABLE  R6 R6 K35    ; R6 := R6["0xA3639E71"]
-118 [-]: GETGLOBAL R7 K36       ; R7 := hackMessageLocTag
-119 [-]: LOADK     R8 K37       ; R8 := 3
-120 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
-121 [-]: MOVE      R11 R0       ; R11 := R0
-122 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-123 [-]: SELF      R6 R3 K38    ; R7 := R3; R6 := R3["0x562EB8DE"]
-124 [-]: GETUPVAL  R8 U1        ; R8 := U1
-125 [-]: SELF      R9 R0 K39    ; R10 := R0; R9 := R0["0x86E626FB"]
-126 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
-127 [-]: CALL      R6 0 1       ; R6(R7,...)
-128 [-]: SELF      R6 R3 K40    ; R7 := R3; R6 := R3["0xB26452A2"]
-129 [-]: GETGLOBAL R8 K41       ; R8 := 0xEC274B1A
-130 [-]: LOADK     R9 K42       ; R9 := "DelayedDeath"
-131 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-132 [-]: MOVE      R9 R0        ; R9 := R0
-133 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
-134 [-]: SELF      R6 R3 K33    ; R7 := R3; R6 := R3["0xABD9DD93"]
-135 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-136 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
-137 [-]: MOVE      R8 R6        ; R8 := R6
-138 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-139 [-]: TEST      R7 1         ; if R7 then PC := 168
-140 [-]: JMP       168          ; PC := 168
-141 [-]: SELF      R7 R6 K43    ; R8 := R6; R7 := R6["0x91ACEF1D"]
-142 [-]: CALL      R7 2 1       ; R7(R8)
-143 [-]: JMP       168          ; PC := 168
-144 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0xAB436EF2"]
-145 [-]: GETGLOBAL R9 K12       ; R9 := hackedFx
-146 [-]: GETGLOBAL R10 K15      ; R10 := EMPTY_SYMBOL
-147 [-]: GETGLOBAL R11 K16      ; R11 := ZERO_VECTOR
-148 [-]: GETGLOBAL R12 K17      ; R12 := ZERO_ROTATION
-149 [-]: MOVE      R13 R0       ; R13 := R0
-150 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
-151 [-]: SELF      R7 R3 K25    ; R8 := R3; R7 := R3["0x6B4CBCD7"]
-152 [-]: MOVE      R9 R0        ; R9 := R0
-153 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-154 [-]: TEST      R7 1         ; if R7 then PC := 168
-155 [-]: JMP       168          ; PC := 168
-156 [-]: SELF      R7 R3 K26    ; R8 := R3; R7 := R3["0x8B598ED4"]
-157 [-]: GETGLOBAL R9 K27       ; R9 := gRiotBipedRobotAvatarType
-158 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-159 [-]: TEST      R7 0         ; if not R7 then PC := 168
-160 [-]: JMP       168          ; PC := 168
-161 [-]: GETGLOBAL R7 K29       ; R7 := _T
-162 [-]: GETTABLE  R7 R7 K35    ; R7 := R7["0xA3639E71"]
-163 [-]: GETGLOBAL R8 K36       ; R8 := hackMessageLocTag
-164 [-]: LOADK     R9 K37       ; R9 := 3
-165 [-]: LOADNIL   R10 R11      ; R10 := R11 := nil
-166 [-]: MOVE      R12 R0       ; R12 := R0
-167 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-168 [-]: RETURN    R0 1         ; return 
+ 87 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 88 [-]: SELF      R5 R3 K26    ; R6 := R3; R5 := R3["0x6B4CBCD7"]
+ 89 [-]: MOVE      R7 R0        ; R7 := R0
+ 90 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 91 [-]: TEST      R5 1         ; if R5 then PC := 137
+ 92 [-]: JMP       137          ; PC := 137
+ 93 [-]: SELF      R5 R3 K27    ; R6 := R3; R5 := R3["0x8B598ED4"]
+ 94 [-]: GETGLOBAL R7 K28       ; R7 := gRiotBipedRobotAvatarType
+ 95 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 96 [-]: TEST      R5 0         ; if not R5 then PC := 126
+ 97 [-]: JMP       126          ; PC := 126
+ 98 [-]: SELF      R5 R3 K29    ; R6 := R3; R5 := R3["0x17FC7097"]
+ 99 [-]: MOVE      R7 R0        ; R7 := R0
+100 [-]: CALL      R5 3 1       ; R5(R6,R7)
+101 [-]: GETGLOBAL R5 K30       ; R5 := _T
+102 [-]: GETTABLE  R5 R5 K31    ; R5 := R5["InSimulacrum"]
+103 [-]: TEST      R5 1         ; if R5 then PC := 119
+104 [-]: JMP       119          ; PC := 119
+105 [-]: SELF      R5 R3 K32    ; R6 := R3; R5 := R3["0x8DB5D01F"]
+106 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+107 [-]: SELF      R5 R5 K33    ; R6 := R5; R5 := R5["0x2CB16192"]
+108 [-]: CALL      R5 2 1       ; R5(R6)
+109 [-]: SELF      R5 R3 K34    ; R6 := R3; R5 := R3["0xABD9DD93"]
+110 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+111 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
+112 [-]: MOVE      R7 R5        ; R7 := R5
+113 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+114 [-]: TEST      R6 1         ; if R6 then PC := 119
+115 [-]: JMP       119          ; PC := 119
+116 [-]: SELF      R6 R5 K35    ; R7 := R5; R6 := R5["0x198A17E9"]
+117 [-]: MOVE      R8 R0        ; R8 := R0
+118 [-]: CALL      R6 3 1       ; R6(R7,R8)
+119 [-]: GETGLOBAL R6 K30       ; R6 := _T
+120 [-]: GETTABLE  R6 R6 K36    ; R6 := R6["0xA3639E71"]
+121 [-]: GETGLOBAL R7 K37       ; R7 := hackMessageLocTag
+122 [-]: LOADK     R8 K38       ; R8 := 3
+123 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
+124 [-]: MOVE      R11 R0       ; R11 := R0
+125 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+126 [-]: SELF      R6 R3 K39    ; R7 := R3; R6 := R3["0x562EB8DE"]
+127 [-]: GETUPVAL  R8 U1        ; R8 := U1
+128 [-]: SELF      R9 R0 K40    ; R10 := R0; R9 := R0["0x86E626FB"]
+129 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+130 [-]: CALL      R6 0 1       ; R6(R7,...)
+131 [-]: SELF      R6 R3 K41    ; R7 := R3; R6 := R3["0xB26452A2"]
+132 [-]: GETGLOBAL R8 K42       ; R8 := 0xEC274B1A
+133 [-]: LOADK     R9 K43       ; R9 := "DelayedDeath"
+134 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+135 [-]: MOVE      R9 R0        ; R9 := R0
+136 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+137 [-]: SELF      R6 R3 K34    ; R7 := R3; R6 := R3["0xABD9DD93"]
+138 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+139 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
+140 [-]: MOVE      R8 R6        ; R8 := R6
+141 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+142 [-]: TEST      R7 1         ; if R7 then PC := 171
+143 [-]: JMP       171          ; PC := 171
+144 [-]: SELF      R7 R6 K44    ; R8 := R6; R7 := R6["0x91ACEF1D"]
+145 [-]: CALL      R7 2 1       ; R7(R8)
+146 [-]: JMP       171          ; PC := 171
+147 [-]: SELF      R7 R3 K15    ; R8 := R3; R7 := R3["0xAB436EF2"]
+148 [-]: GETGLOBAL R9 K13       ; R9 := hackedFx
+149 [-]: GETGLOBAL R10 K16      ; R10 := EMPTY_SYMBOL
+150 [-]: GETGLOBAL R11 K17      ; R11 := ZERO_VECTOR
+151 [-]: GETGLOBAL R12 K18      ; R12 := ZERO_ROTATION
+152 [-]: MOVE      R13 R0       ; R13 := R0
+153 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
+154 [-]: SELF      R7 R3 K26    ; R8 := R3; R7 := R3["0x6B4CBCD7"]
+155 [-]: MOVE      R9 R0        ; R9 := R0
+156 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+157 [-]: TEST      R7 1         ; if R7 then PC := 171
+158 [-]: JMP       171          ; PC := 171
+159 [-]: SELF      R7 R3 K27    ; R8 := R3; R7 := R3["0x8B598ED4"]
+160 [-]: GETGLOBAL R9 K28       ; R9 := gRiotBipedRobotAvatarType
+161 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+162 [-]: TEST      R7 0         ; if not R7 then PC := 171
+163 [-]: JMP       171          ; PC := 171
+164 [-]: GETGLOBAL R7 K30       ; R7 := _T
+165 [-]: GETTABLE  R7 R7 K36    ; R7 := R7["0xA3639E71"]
+166 [-]: GETGLOBAL R8 K37       ; R8 := hackMessageLocTag
+167 [-]: LOADK     R9 K38       ; R9 := 3
+168 [-]: LOADNIL   R10 R11      ; R10 := R11 := nil
+169 [-]: MOVE      R12 R0       ; R12 := R0
+170 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+171 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 230
+; Defined at line: 235
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -735,7 +738,7 @@ code size: 110
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 273
+; Defined at line: 278
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -810,7 +813,7 @@ code size: 110
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 298
+; Defined at line: 303
 ; #Upvalues:       7
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1258,7 +1261,7 @@ code size: 110
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 463
+; Defined at line: 468
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1331,7 +1334,7 @@ code size: 110
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 492
+; Defined at line: 497
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1408,7 +1411,7 @@ code size: 110
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 518
+; Defined at line: 523
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

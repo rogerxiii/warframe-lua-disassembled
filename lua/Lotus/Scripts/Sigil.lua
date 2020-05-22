@@ -3,7 +3,7 @@ code size: 20
 code size: 14
 code size: 19
 code size: 27
-code size: 205
+code size: 193
 code size: 48
 code size: 126
 code size: 116
@@ -237,7 +237,7 @@ code size: 45
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  17
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
@@ -245,211 +245,199 @@ code size: 45
   4 [-]: TEST      R1 0         ; if not R1 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0x907C463B"]
+  7 [-]: SELF      R1 R0 K1     ; R2 := R0; R1 := R0["0x1A3F72E9"]
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  9 [-]: MOVE      R2 R1        ; R2 := R1
- 10 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
- 11 [-]: MOVE      R4 R1        ; R4 := R1
- 12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: TEST      R3 1         ; if R3 then PC := 26
- 14 [-]: JMP       26           ; PC := 26
- 15 [-]: SELF      R3 R1 K2     ; R4 := R1; R3 := R1["0x8B598ED4"]
- 16 [-]: GETGLOBAL R5 K3        ; R5 := gLotusAvatarType
- 17 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 18 [-]: TEST      R3 0         ; if not R3 then PC := 22
- 19 [-]: JMP       22           ; PC := 22
- 20 [-]: MOVE      R2 R1        ; R2 := R1
- 21 [-]: JMP       26           ; PC := 26
- 22 [-]: SELF      R3 R1 K1     ; R4 := R1; R3 := R1["0x907C463B"]
- 23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 24 [-]: MOVE      R1 R3        ; R1 := R3
- 25 [-]: JMP       10           ; PC := 10
- 26 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2["0x8B598ED4"]
- 27 [-]: GETGLOBAL R5 K4        ; R5 := gBaseAvatarType
- 28 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 29 [-]: TEST      R3 1         ; if R3 then PC := 32
- 30 [-]: JMP       32           ; PC := 32
- 31 [-]: RETURN    R0 1         ; return 
- 32 [-]: LOADNIL   R3 R3        ; R3 := nil
- 33 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0x7BAB77F"]
+  9 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 10 [-]: MOVE      R3 R1        ; R3 := R1
+ 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 12 [-]: TEST      R2 1         ; if R2 then PC := 19
+ 13 [-]: JMP       19           ; PC := 19
+ 14 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x8B598ED4"]
+ 15 [-]: GETGLOBAL R4 K3        ; R4 := gLotusAvatarType
+ 16 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 17 [-]: TEST      R2 1         ; if R2 then PC := 20
+ 18 [-]: JMP       20           ; PC := 20
+ 19 [-]: RETURN    R0 1         ; return 
+ 20 [-]: LOADNIL   R2 R2        ; R2 := nil
+ 21 [-]: SELF      R3 R0 K4     ; R4 := R0; R3 := R0["0x7BAB77F"]
+ 22 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 23 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 24 [-]: MOVE      R5 R3        ; R5 := R3
+ 25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 26 [-]: TEST      R4 1         ; if R4 then PC := 37
+ 27 [-]: JMP       37           ; PC := 37
+ 28 [-]: SELF      R4 R3 K2     ; R5 := R3; R4 := R3["0x8B598ED4"]
+ 29 [-]: GETGLOBAL R6 K5        ; R6 := gLotusSuitCustomizationType
+ 30 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 31 [-]: TEST      R4 1         ; if R4 then PC := 37
+ 32 [-]: JMP       37           ; PC := 37
+ 33 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3["0x7BAB77F"]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 35 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
- 36 [-]: MOVE      R6 R4        ; R6 := R4
- 37 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 38 [-]: TEST      R5 1         ; if R5 then PC := 49
- 39 [-]: JMP       49           ; PC := 49
- 40 [-]: SELF      R5 R4 K2     ; R6 := R4; R5 := R4["0x8B598ED4"]
- 41 [-]: GETGLOBAL R7 K6        ; R7 := gLotusSuitCustomizationType
- 42 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 43 [-]: TEST      R5 1         ; if R5 then PC := 49
- 44 [-]: JMP       49           ; PC := 49
- 45 [-]: SELF      R5 R4 K5     ; R6 := R4; R5 := R4["0x7BAB77F"]
- 46 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 47 [-]: MOVE      R4 R5        ; R4 := R5
- 48 [-]: JMP       35           ; PC := 35
- 49 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
- 50 [-]: MOVE      R6 R4        ; R6 := R4
- 51 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 52 [-]: TEST      R5 1         ; if R5 then PC := 57
- 53 [-]: JMP       57           ; PC := 57
- 54 [-]: SELF      R5 R4 K7     ; R6 := R4; R5 := R4["0x57027E49"]
- 55 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 56 [-]: MOVE      R3 R5        ; R3 := R5
- 57 [-]: SELF      R5 R0 K8     ; R6 := R0; R5 := R0["0x25F825E1"]
- 58 [-]: LOADK     R7 K9        ; R7 := 0
- 59 [-]: LOADK     R8 K10       ; R8 := "Texture"
- 60 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 61 [-]: GETGLOBAL R5 K11       ; R5 := applyTintColor
- 62 [-]: TEST      R5 1         ; if R5 then PC := 67
- 63 [-]: JMP       67           ; PC := 67
- 64 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0["0xBF1BDD58"]
- 65 [-]: GETGLOBAL R7 K13       ; R7 := colorParam
- 66 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 67 [-]: GETGLOBAL R5 K14       ; R5 := applyEnergyColor
- 68 [-]: TEST      R5 1         ; if R5 then PC := 73
- 69 [-]: JMP       73           ; PC := 73
- 70 [-]: SELF      R5 R0 K12    ; R6 := R0; R5 := R0["0xBF1BDD58"]
- 71 [-]: GETGLOBAL R7 K15       ; R7 := energyParam
- 72 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 73 [-]: SELF      R5 R2 K16    ; R6 := R2; R5 := R2["0x8DB5D01F"]
- 74 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 75 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5["0x6978AC59"]
- 76 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 77 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
- 78 [-]: MOVE      R7 R5        ; R7 := R5
- 79 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 80 [-]: TEST      R6 0         ; if not R6 then PC := 83
- 81 [-]: JMP       83           ; PC := 83
- 82 [-]: RETURN    R0 1         ; return 
- 83 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0xAFA67B2D"]
- 84 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 85 [-]: SELF      R7 R6 K19    ; R8 := R6; R7 := R6["0xE36D0FC5"]
- 86 [-]: GETGLOBAL R9 K20       ; R9 := Lotus_Game
- 87 [-]: GETTABLE  R9 R9 K21    ; R9 := R9["Sigil"]
- 88 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 89 [-]: GETGLOBAL R8 K20       ; R8 := Lotus_Game
- 90 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["SigilChest"]
- 91 [-]: EQ        0 R3 R8      ; if R3 ~= R8 then PC := 104
- 92 [-]: JMP       104          ; PC := 104
- 93 [-]: GETGLOBAL R8 K11       ; R8 := applyTintColor
- 94 [-]: TEST      R8 0         ; if not R8 then PC := 104
- 95 [-]: JMP       104          ; PC := 104
- 96 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 97 [-]: MOVE      R9 R0        ; R9 := R0
- 98 [-]: MOVE      R10 R7       ; R10 := R7
- 99 [-]: GETGLOBAL R11 K20      ; R11 := Lotus_Game
-100 [-]: GETTABLE  R11 R11 K23  ; R11 := R11["TintColor0"]
-101 [-]: GETGLOBAL R12 K13      ; R12 := colorParam
-102 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-103 [-]: JMP       118          ; PC := 118
-104 [-]: GETGLOBAL R8 K20       ; R8 := Lotus_Game
-105 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["SigilBack"]
-106 [-]: EQ        0 R3 R8      ; if R3 ~= R8 then PC := 118
-107 [-]: JMP       118          ; PC := 118
-108 [-]: GETGLOBAL R8 K11       ; R8 := applyTintColor
-109 [-]: TEST      R8 0         ; if not R8 then PC := 118
-110 [-]: JMP       118          ; PC := 118
-111 [-]: GETUPVAL  R8 U0        ; R8 := U0
-112 [-]: MOVE      R9 R0        ; R9 := R0
-113 [-]: MOVE      R10 R7       ; R10 := R7
-114 [-]: GETGLOBAL R11 K20      ; R11 := Lotus_Game
-115 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["TintColor2"]
-116 [-]: GETGLOBAL R12 K13      ; R12 := colorParam
-117 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-118 [-]: GETGLOBAL R8 K14       ; R8 := applyEnergyColor
-119 [-]: TEST      R8 0         ; if not R8 then PC := 169
-120 [-]: JMP       169          ; PC := 169
-121 [-]: GETGLOBAL R8 K26       ; R8 := _T
-122 [-]: GETTABLE  R8 R8 K27    ; R8 := R8["UseDefaultSigilColors"]
-123 [-]: EQ        1 R8 R3      ; if R8 == R3 then PC := 169
-124 [-]: JMP       169          ; PC := 169
-125 [-]: SELF      R8 R2 K2     ; R9 := R2; R8 := R2["0x8B598ED4"]
-126 [-]: GETUPVAL  R10 U1       ; R10 := U1
-127 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-128 [-]: TEST      R8 1         ; if R8 then PC := 135
-129 [-]: JMP       135          ; PC := 135
-130 [-]: SELF      R8 R2 K2     ; R9 := R2; R8 := R2["0x8B598ED4"]
-131 [-]: GETUPVAL  R10 U2       ; R10 := U2
-132 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-133 [-]: TEST      R8 0         ; if not R8 then PC := 146
-134 [-]: JMP       146          ; PC := 146
-135 [-]: GETUPVAL  R8 U3        ; R8 := U3
-136 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["0xD2F53908"]
-137 [-]: MOVE      R9 R0        ; R9 := R0
-138 [-]: MOVE      R10 R2       ; R10 := R2
-139 [-]: GETGLOBAL R11 K15      ; R11 := energyParam
-140 [-]: GETGLOBAL R12 K20      ; R12 := Lotus_Game
-141 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["Attachments"]
-142 [-]: GETGLOBAL R13 K20      ; R13 := Lotus_Game
-143 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["EnergyColor"]
-144 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
-145 [-]: JMP       169          ; PC := 169
-146 [-]: GETGLOBAL R8 K20       ; R8 := Lotus_Game
-147 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["SigilChest"]
-148 [-]: EQ        0 R3 R8      ; if R3 ~= R8 then PC := 158
-149 [-]: JMP       158          ; PC := 158
-150 [-]: GETUPVAL  R8 U0        ; R8 := U0
-151 [-]: MOVE      R9 R0        ; R9 := R0
-152 [-]: MOVE      R10 R7       ; R10 := R7
-153 [-]: GETGLOBAL R11 K20      ; R11 := Lotus_Game
-154 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["EmissiveColor0"]
-155 [-]: GETGLOBAL R12 K15      ; R12 := energyParam
-156 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-157 [-]: JMP       169          ; PC := 169
-158 [-]: GETGLOBAL R8 K20       ; R8 := Lotus_Game
-159 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["SigilBack"]
-160 [-]: EQ        0 R3 R8      ; if R3 ~= R8 then PC := 169
-161 [-]: JMP       169          ; PC := 169
-162 [-]: GETUPVAL  R8 U0        ; R8 := U0
-163 [-]: MOVE      R9 R0        ; R9 := R0
-164 [-]: MOVE      R10 R7       ; R10 := R7
-165 [-]: GETGLOBAL R11 K20      ; R11 := Lotus_Game
-166 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["EmissiveColor1"]
-167 [-]: GETGLOBAL R12 K15      ; R12 := energyParam
-168 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-169 [-]: GETGLOBAL R8 K33       ; R8 := applyAlpha
-170 [-]: TEST      R8 0         ; if not R8 then PC := 205
-171 [-]: JMP       205          ; PC := 205
-172 [-]: LOADNIL   R8 R8        ; R8 := nil
-173 [-]: SELF      R9 R7 K34    ; R10 := R7; R9 := R7["0x3A5ED62E"]
-174 [-]: GETGLOBAL R11 K20      ; R11 := Lotus_Game
-175 [-]: GETTABLE  R11 R11 K30  ; R11 := R11["EnergyColor"]
-176 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-177 [-]: TEST      R9 0         ; if not R9 then PC := 183
-178 [-]: JMP       183          ; PC := 183
-179 [-]: GETGLOBAL R9 K35       ; R9 := 0xB5A59043
-180 [-]: GETTABLE  R10 R7 K36   ; R10 := R7["mEnergyColor"]
-181 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-182 [-]: MOVE      R8 R9        ; R8 := R9
-183 [-]: EQ        1 R8 K37     ; if R8 == nil then PC := 205
-184 [-]: JMP       205          ; PC := 205
-185 [-]: LOADK     R9 K38       ; R9 := "red"
-186 [-]: GETGLOBAL R10 K20      ; R10 := Lotus_Game
-187 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["SigilBack"]
-188 [-]: EQ        0 R3 R10     ; if R3 ~= R10 then PC := 191
-189 [-]: JMP       191          ; PC := 191
-190 [-]: LOADK     R9 K39       ; R9 := "green"
-191 [-]: GETGLOBAL R10 K40      ; R10 := 0x93034B55
-192 [-]: GETGLOBAL R11 K41      ; R11 := minAlpha
-193 [-]: GETGLOBAL R12 K42      ; R12 := maxAlpha
-194 [-]: GETTABLE  R13 R8 R9    ; R13 := R8[R9]
-195 [-]: DIV       R13 R13 K43  ; R13 := R13 / 255
-196 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
-197 [-]: SELF      R11 R0 K44   ; R12 := R0; R11 := R0["0xD124E361"]
-198 [-]: GETGLOBAL R13 K20      ; R13 := Lotus_Game
-199 [-]: GETTABLE  R13 R13 K45  ; R13 := R13["ALPHA_ATTEN"]
-200 [-]: MOVE      R14 R10      ; R14 := R10
-201 [-]: LOADK     R15 K46      ; R15 := 1
-202 [-]: LOADK     R16 K46      ; R16 := 1
-203 [-]: LOADK     R17 K46      ; R17 := 1
-204 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
-205 [-]: RETURN    R0 1         ; return 
+ 35 [-]: MOVE      R3 R4        ; R3 := R4
+ 36 [-]: JMP       23           ; PC := 23
+ 37 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 38 [-]: MOVE      R5 R3        ; R5 := R3
+ 39 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 40 [-]: TEST      R4 1         ; if R4 then PC := 45
+ 41 [-]: JMP       45           ; PC := 45
+ 42 [-]: SELF      R4 R3 K6     ; R5 := R3; R4 := R3["0x57027E49"]
+ 43 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 44 [-]: MOVE      R2 R4        ; R2 := R4
+ 45 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0["0x25F825E1"]
+ 46 [-]: LOADK     R6 K8        ; R6 := 0
+ 47 [-]: LOADK     R7 K9        ; R7 := "Texture"
+ 48 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 49 [-]: GETGLOBAL R4 K10       ; R4 := applyTintColor
+ 50 [-]: TEST      R4 1         ; if R4 then PC := 55
+ 51 [-]: JMP       55           ; PC := 55
+ 52 [-]: SELF      R4 R0 K11    ; R5 := R0; R4 := R0["0xBF1BDD58"]
+ 53 [-]: GETGLOBAL R6 K12       ; R6 := colorParam
+ 54 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 55 [-]: GETGLOBAL R4 K13       ; R4 := applyEnergyColor
+ 56 [-]: TEST      R4 1         ; if R4 then PC := 61
+ 57 [-]: JMP       61           ; PC := 61
+ 58 [-]: SELF      R4 R0 K11    ; R5 := R0; R4 := R0["0xBF1BDD58"]
+ 59 [-]: GETGLOBAL R6 K14       ; R6 := energyParam
+ 60 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 61 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1["0x8DB5D01F"]
+ 62 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 63 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4["0x6978AC59"]
+ 64 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 65 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+ 66 [-]: MOVE      R6 R4        ; R6 := R4
+ 67 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 68 [-]: TEST      R5 0         ; if not R5 then PC := 71
+ 69 [-]: JMP       71           ; PC := 71
+ 70 [-]: RETURN    R0 1         ; return 
+ 71 [-]: SELF      R5 R4 K17    ; R6 := R4; R5 := R4["0xAFA67B2D"]
+ 72 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 73 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0xE36D0FC5"]
+ 74 [-]: GETGLOBAL R8 K19       ; R8 := Lotus_Game
+ 75 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["Sigil"]
+ 76 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 77 [-]: GETGLOBAL R7 K19       ; R7 := Lotus_Game
+ 78 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["SigilChest"]
+ 79 [-]: EQ        0 R2 R7      ; if R2 ~= R7 then PC := 92
+ 80 [-]: JMP       92           ; PC := 92
+ 81 [-]: GETGLOBAL R7 K10       ; R7 := applyTintColor
+ 82 [-]: TEST      R7 0         ; if not R7 then PC := 92
+ 83 [-]: JMP       92           ; PC := 92
+ 84 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 85 [-]: MOVE      R8 R0        ; R8 := R0
+ 86 [-]: MOVE      R9 R6        ; R9 := R6
+ 87 [-]: GETGLOBAL R10 K19      ; R10 := Lotus_Game
+ 88 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["TintColor0"]
+ 89 [-]: GETGLOBAL R11 K12      ; R11 := colorParam
+ 90 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
+ 91 [-]: JMP       106          ; PC := 106
+ 92 [-]: GETGLOBAL R7 K19       ; R7 := Lotus_Game
+ 93 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["SigilBack"]
+ 94 [-]: EQ        0 R2 R7      ; if R2 ~= R7 then PC := 106
+ 95 [-]: JMP       106          ; PC := 106
+ 96 [-]: GETGLOBAL R7 K10       ; R7 := applyTintColor
+ 97 [-]: TEST      R7 0         ; if not R7 then PC := 106
+ 98 [-]: JMP       106          ; PC := 106
+ 99 [-]: GETUPVAL  R7 U0        ; R7 := U0
+100 [-]: MOVE      R8 R0        ; R8 := R0
+101 [-]: MOVE      R9 R6        ; R9 := R6
+102 [-]: GETGLOBAL R10 K19      ; R10 := Lotus_Game
+103 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["TintColor2"]
+104 [-]: GETGLOBAL R11 K12      ; R11 := colorParam
+105 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
+106 [-]: GETGLOBAL R7 K13       ; R7 := applyEnergyColor
+107 [-]: TEST      R7 0         ; if not R7 then PC := 157
+108 [-]: JMP       157          ; PC := 157
+109 [-]: GETGLOBAL R7 K25       ; R7 := _T
+110 [-]: GETTABLE  R7 R7 K26    ; R7 := R7["UseDefaultSigilColors"]
+111 [-]: EQ        1 R7 R2      ; if R7 == R2 then PC := 157
+112 [-]: JMP       157          ; PC := 157
+113 [-]: SELF      R7 R1 K2     ; R8 := R1; R7 := R1["0x8B598ED4"]
+114 [-]: GETUPVAL  R9 U1        ; R9 := U1
+115 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+116 [-]: TEST      R7 1         ; if R7 then PC := 123
+117 [-]: JMP       123          ; PC := 123
+118 [-]: SELF      R7 R1 K2     ; R8 := R1; R7 := R1["0x8B598ED4"]
+119 [-]: GETUPVAL  R9 U2        ; R9 := U2
+120 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+121 [-]: TEST      R7 0         ; if not R7 then PC := 134
+122 [-]: JMP       134          ; PC := 134
+123 [-]: GETUPVAL  R7 U3        ; R7 := U3
+124 [-]: GETTABLE  R7 R7 K27    ; R7 := R7["0xD2F53908"]
+125 [-]: MOVE      R8 R0        ; R8 := R0
+126 [-]: MOVE      R9 R1        ; R9 := R1
+127 [-]: GETGLOBAL R10 K14      ; R10 := energyParam
+128 [-]: GETGLOBAL R11 K19      ; R11 := Lotus_Game
+129 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["Attachments"]
+130 [-]: GETGLOBAL R12 K19      ; R12 := Lotus_Game
+131 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["EnergyColor"]
+132 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+133 [-]: JMP       157          ; PC := 157
+134 [-]: GETGLOBAL R7 K19       ; R7 := Lotus_Game
+135 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["SigilChest"]
+136 [-]: EQ        0 R2 R7      ; if R2 ~= R7 then PC := 146
+137 [-]: JMP       146          ; PC := 146
+138 [-]: GETUPVAL  R7 U0        ; R7 := U0
+139 [-]: MOVE      R8 R0        ; R8 := R0
+140 [-]: MOVE      R9 R6        ; R9 := R6
+141 [-]: GETGLOBAL R10 K19      ; R10 := Lotus_Game
+142 [-]: GETTABLE  R10 R10 K30  ; R10 := R10["EmissiveColor0"]
+143 [-]: GETGLOBAL R11 K14      ; R11 := energyParam
+144 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
+145 [-]: JMP       157          ; PC := 157
+146 [-]: GETGLOBAL R7 K19       ; R7 := Lotus_Game
+147 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["SigilBack"]
+148 [-]: EQ        0 R2 R7      ; if R2 ~= R7 then PC := 157
+149 [-]: JMP       157          ; PC := 157
+150 [-]: GETUPVAL  R7 U0        ; R7 := U0
+151 [-]: MOVE      R8 R0        ; R8 := R0
+152 [-]: MOVE      R9 R6        ; R9 := R6
+153 [-]: GETGLOBAL R10 K19      ; R10 := Lotus_Game
+154 [-]: GETTABLE  R10 R10 K31  ; R10 := R10["EmissiveColor1"]
+155 [-]: GETGLOBAL R11 K14      ; R11 := energyParam
+156 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
+157 [-]: GETGLOBAL R7 K32       ; R7 := applyAlpha
+158 [-]: TEST      R7 0         ; if not R7 then PC := 193
+159 [-]: JMP       193          ; PC := 193
+160 [-]: LOADNIL   R7 R7        ; R7 := nil
+161 [-]: SELF      R8 R6 K33    ; R9 := R6; R8 := R6["0x3A5ED62E"]
+162 [-]: GETGLOBAL R10 K19      ; R10 := Lotus_Game
+163 [-]: GETTABLE  R10 R10 K29  ; R10 := R10["EnergyColor"]
+164 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+165 [-]: TEST      R8 0         ; if not R8 then PC := 171
+166 [-]: JMP       171          ; PC := 171
+167 [-]: GETGLOBAL R8 K34       ; R8 := 0xB5A59043
+168 [-]: GETTABLE  R9 R6 K35    ; R9 := R6["mEnergyColor"]
+169 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+170 [-]: MOVE      R7 R8        ; R7 := R8
+171 [-]: EQ        1 R7 K36     ; if R7 == nil then PC := 193
+172 [-]: JMP       193          ; PC := 193
+173 [-]: LOADK     R8 K37       ; R8 := "red"
+174 [-]: GETGLOBAL R9 K19       ; R9 := Lotus_Game
+175 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["SigilBack"]
+176 [-]: EQ        0 R2 R9      ; if R2 ~= R9 then PC := 179
+177 [-]: JMP       179          ; PC := 179
+178 [-]: LOADK     R8 K38       ; R8 := "green"
+179 [-]: GETGLOBAL R9 K39       ; R9 := 0x93034B55
+180 [-]: GETGLOBAL R10 K40      ; R10 := minAlpha
+181 [-]: GETGLOBAL R11 K41      ; R11 := maxAlpha
+182 [-]: GETTABLE  R12 R7 R8    ; R12 := R7[R8]
+183 [-]: DIV       R12 R12 K42  ; R12 := R12 / 255
+184 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
+185 [-]: SELF      R10 R0 K43   ; R11 := R0; R10 := R0["0xD124E361"]
+186 [-]: GETGLOBAL R12 K19      ; R12 := Lotus_Game
+187 [-]: GETTABLE  R12 R12 K44  ; R12 := R12["ALPHA_ATTEN"]
+188 [-]: MOVE      R13 R9       ; R13 := R9
+189 [-]: LOADK     R14 K45      ; R14 := 1
+190 [-]: LOADK     R15 K45      ; R15 := 1
+191 [-]: LOADK     R16 K45      ; R16 := 1
+192 [-]: CALL      R10 7 1      ; R10(R11,R12,R13,R14,R15,R16)
+193 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 138
+; Defined at line: 129
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -508,7 +496,7 @@ code size: 45
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 149
+; Defined at line: 140
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -645,7 +633,7 @@ code size: 45
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 204
+; Defined at line: 195
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -772,7 +760,7 @@ code size: 45
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 260
+; Defined at line: 251
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1145,7 +1133,7 @@ code size: 45
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 397
+; Defined at line: 388
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1244,7 +1232,7 @@ code size: 45
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 435
+; Defined at line: 426
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1329,7 +1317,7 @@ code size: 45
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 465
+; Defined at line: 456
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1344,7 +1332,7 @@ code size: 45
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 469
+; Defined at line: 460
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1396,7 +1384,7 @@ code size: 45
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 486
+; Defined at line: 477
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -1,7 +1,7 @@
 code size: 22
 code size: 35
 code size: 4
-code size: 21
+code size: 36
 code size: 20
 code size: 218
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -108,33 +108,48 @@ code size: 218
 ; Is_vararg:       0
 ; Max Stack Size:  5
 
-  1 [-]: GETGLOBAL R1 K0        ; R1 := gGameRules
-  2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xED0EE7FB"]
-  3 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: LE        0 R1 K2      ; if R1 > 1 then PC := 8
-  6 [-]: JMP       8            ; PC := 8
-  7 [-]: RETURN    R0 1         ; return 
-  8 [-]: GETGLOBAL R2 K3        ; R2 := _T
-  9 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["HeatModeFissuresOpen"]
- 10 [-]: EQ        0 R2 K5      ; if R2 ~= nil then PC := 15
- 11 [-]: JMP       15           ; PC := 15
- 12 [-]: GETGLOBAL R2 K3        ; R2 := _T
- 13 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 14 [-]: SETTABLE  R2 K4 R3     ; R2["HeatModeFissuresOpen"] := R3
- 15 [-]: GETGLOBAL R2 K6        ; R2 := table
- 16 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 17 [-]: GETGLOBAL R3 K3        ; R3 := _T
- 18 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["HeatModeFissuresOpen"]
- 19 [-]: MOVE      R4 R0        ; R4 := R0
- 20 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 21 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := gGameRules
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: TEST      R1 0         ; if not R1 then PC := 16
+  5 [-]: JMP       16           ; PC := 16
+  6 [-]: GETGLOBAL R1 K2        ; R1 := 0x12F3CEFA
+  7 [-]: GETGLOBAL R2 K3        ; R2 := gRegion
+  8 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0xA559F558"]
+  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 10 [-]: MOVE      R2 R2        ; R2 := R2
+ 11 [-]: CALL      R1 2 1       ; R1(R2)
+ 12 [-]: GETGLOBAL R1 K5        ; R1 := 0x201191EA
+ 13 [-]: LOADK     R2 K6        ; R2 := 0
+ 14 [-]: CALL      R1 2 1       ; R1(R2)
+ 15 [-]: JMP       1            ; PC := 1
+ 16 [-]: GETGLOBAL R1 K1        ; R1 := gGameRules
+ 17 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1["0xED0EE7FB"]
+ 18 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 19 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 20 [-]: LE        0 R1 K8      ; if R1 > 1 then PC := 23
+ 21 [-]: JMP       23           ; PC := 23
+ 22 [-]: RETURN    R0 1         ; return 
+ 23 [-]: GETGLOBAL R2 K9        ; R2 := _T
+ 24 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["HeatModeFissuresOpen"]
+ 25 [-]: EQ        0 R2 K11     ; if R2 ~= nil then PC := 30
+ 26 [-]: JMP       30           ; PC := 30
+ 27 [-]: GETGLOBAL R2 K9        ; R2 := _T
+ 28 [-]: NEWTABLE  R3 0 0       ; R3 := {}
+ 29 [-]: SETTABLE  R2 K10 R3    ; R2["HeatModeFissuresOpen"] := R3
+ 30 [-]: GETGLOBAL R2 K12       ; R2 := table
+ 31 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["0xE6450C9D"]
+ 32 [-]: GETGLOBAL R3 K9        ; R3 := _T
+ 33 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["HeatModeFissuresOpen"]
+ 34 [-]: MOVE      R4 R0        ; R4 := R0
+ 35 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 36 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 50
+; Defined at line: 56
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -165,7 +180,7 @@ code size: 218
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 57
+; Defined at line: 63
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0

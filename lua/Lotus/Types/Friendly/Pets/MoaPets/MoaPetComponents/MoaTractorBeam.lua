@@ -9,7 +9,7 @@ code size: 33
 code size: 42
 code size: 22
 code size: 189
-code size: 9
+code size: 15
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Friendly\Pets\MoaPets\MoaPetComponents\MoaTractorBeam.luac 
 
@@ -513,14 +513,20 @@ code size: 9
 ; Is_vararg:       0
 ; Max Stack Size:  10
 
-  1 [-]: SELF      R4 R1 K0     ; R5 := R1; R4 := R1["0x1E03178"]
-  2 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  3 [-]: GETUPVAL  R5 U0        ; R5 := U0
-  4 [-]: MOVE      R6 R1        ; R6 := R1
-  5 [-]: MOVE      R7 R4        ; R7 := R4
-  6 [-]: MOVE      R8 R3        ; R8 := R3
-  7 [-]: GETGLOBAL R9 K1        ; R9 := mOwner
-  8 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
-  9 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+  2 [-]: MOVE      R5 R1        ; R5 := R1
+  3 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  4 [-]: TEST      R4 0         ; if not R4 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: RETURN    R0 1         ; return 
+  7 [-]: SELF      R4 R1 K1     ; R5 := R1; R4 := R1["0x1E03178"]
+  8 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+  9 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 10 [-]: MOVE      R6 R1        ; R6 := R1
+ 11 [-]: MOVE      R7 R4        ; R7 := R4
+ 12 [-]: MOVE      R8 R3        ; R8 := R3
+ 13 [-]: GETGLOBAL R9 K2        ; R9 := mOwner
+ 14 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 15 [-]: RETURN    R0 1         ; return 
 
 
