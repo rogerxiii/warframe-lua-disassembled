@@ -11,7 +11,7 @@ code size: 201
 code size: 126
 code size: 50
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\Encounters\DestroyShieldGenerator.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\Encounters\DestroyShieldGenerator.luac 
 
 ; Name:            
 ; Defined at line: 0

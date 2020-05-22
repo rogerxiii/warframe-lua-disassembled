@@ -6,7 +6,7 @@ code size: 99
 code size: 15
 code size: 114
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Upgrades\Mods\Railjack\VoidCloakSpeed.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Upgrades\Mods\Railjack\VoidCloakSpeed.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -75,7 +75,7 @@ code size: 93
 code size: 160
 code size: 42
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Libs\DojoMgrHelper.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Libs\DojoMgrHelper.luac 
 
 ; Name:            
 ; Defined at line: 0

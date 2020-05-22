@@ -3,7 +3,7 @@ code size: 18
 code size: 125
 code size: 81
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\HubOperators.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\HubOperators.luac 
 
 ; Name:            
 ; Defined at line: 0

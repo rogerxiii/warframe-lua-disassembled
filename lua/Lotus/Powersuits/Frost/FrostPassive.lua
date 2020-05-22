@@ -4,7 +4,7 @@ code size: 12
 code size: 51
 code size: 51
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Frost\FrostPassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Frost\FrostPassive.luac 
 
 ; Name:            
 ; Defined at line: 0

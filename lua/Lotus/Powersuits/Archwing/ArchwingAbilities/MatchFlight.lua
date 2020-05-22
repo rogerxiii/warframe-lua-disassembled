@@ -7,7 +7,7 @@ code size: 141
 code size: 9
 code size: 117
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Archwing\ArchwingAbilities\MatchFlight.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Archwing\ArchwingAbilities\MatchFlight.luac 
 
 ; Name:            
 ; Defined at line: 0

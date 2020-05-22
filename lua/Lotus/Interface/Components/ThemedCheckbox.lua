@@ -7,7 +7,7 @@ code size: 51
 code size: 56
 code size: 59
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Components\ThemedCheckbox.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\ThemedCheckbox.luac 
 
 ; Name:            
 ; Defined at line: 0

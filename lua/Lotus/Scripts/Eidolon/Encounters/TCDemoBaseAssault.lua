@@ -5,7 +5,7 @@ code size: 31
 code size: 423
 code size: 21
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\Encounters\TCDemoBaseAssault.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\Encounters\TCDemoBaseAssault.luac 
 
 ; Name:            
 ; Defined at line: 0

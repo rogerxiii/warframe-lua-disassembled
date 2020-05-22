@@ -50,7 +50,7 @@ code size: 52
 code size: 40
 code size: 82
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Intel.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Intel.luac 
 
 ; Name:            
 ; Defined at line: 0

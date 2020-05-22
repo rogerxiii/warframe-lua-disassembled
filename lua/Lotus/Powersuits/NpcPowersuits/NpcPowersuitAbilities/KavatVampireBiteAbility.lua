@@ -5,7 +5,7 @@ code size: 100
 code size: 151
 code size: 15
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\KavatVampireBiteAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\KavatVampireBiteAbility.luac 
 
 ; Name:            
 ; Defined at line: 0

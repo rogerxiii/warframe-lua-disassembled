@@ -2,7 +2,7 @@ code size: 20
 code size: 79
 code size: 60
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Events\AmbulasEventVendorFallback.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Events\AmbulasEventVendorFallback.luac 
 
 ; Name:            
 ; Defined at line: 0

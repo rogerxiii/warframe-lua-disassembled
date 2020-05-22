@@ -19,7 +19,7 @@ code size: 20
 code size: 65
 code size: 22
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\CrewShip\Encounters\AcquireKeycodesEncounter.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\Encounters\AcquireKeycodesEncounter.luac 
 
 ; Name:            
 ; Defined at line: 0

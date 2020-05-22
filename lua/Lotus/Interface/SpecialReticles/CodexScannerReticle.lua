@@ -16,7 +16,7 @@ code size: 509
 code size: 3
 code size: 8
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\SpecialReticles\CodexScannerReticle.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\SpecialReticles\CodexScannerReticle.luac 
 
 ; Name:            
 ; Defined at line: 0

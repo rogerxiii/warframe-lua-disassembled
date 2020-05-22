@@ -2,7 +2,7 @@ code size: 25
 code size: 21
 code size: 212
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Friendly\Pets\LisetPropCleaningDroneSpawner.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Friendly\Pets\LisetPropCleaningDroneSpawner.luac 
 
 ; Name:            
 ; Defined at line: 0

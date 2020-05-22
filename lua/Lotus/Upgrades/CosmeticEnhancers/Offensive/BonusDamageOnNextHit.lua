@@ -5,7 +5,7 @@ code size: 25
 code size: 93
 code size: 17
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Upgrades\CosmeticEnhancers\Offensive\BonusDamageOnNextHit.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Upgrades\CosmeticEnhancers\Offensive\BonusDamageOnNextHit.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -7,7 +7,7 @@ code size: 32
 code size: 49
 code size: 51
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\FlickerOnOff.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\FlickerOnOff.luac 
 
 ; Name:            
 ; Defined at line: 0

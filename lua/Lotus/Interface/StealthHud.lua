@@ -10,7 +10,7 @@ code size: 32
 code size: 24
 code size: 12
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\StealthHud.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\StealthHud.luac 
 
 ; Name:            
 ; Defined at line: 0

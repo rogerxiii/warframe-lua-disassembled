@@ -5,7 +5,7 @@ code size: 70
 code size: 257
 code size: 17
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Mods\ElectroProdZap.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Mods\ElectroProdZap.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -4,7 +4,7 @@ code size: 65
 code size: 82
 code size: 328
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\MummyQuestBosses.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\MummyQuestBosses.luac 
 
 ; Name:            
 ; Defined at line: 0

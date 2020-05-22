@@ -14,7 +14,7 @@ code size: 521
 code size: 61
 code size: 128
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\SwitchTeleportAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\SwitchTeleportAbility.luac 
 
 ; Name:            
 ; Defined at line: 0

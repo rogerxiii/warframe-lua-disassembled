@@ -5,7 +5,7 @@ code size: 5
 code size: 70
 code size: 10
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Libs\LevelToolsLib.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\LevelToolsLib.luac 
 
 ; Name:            
 ; Defined at line: 0

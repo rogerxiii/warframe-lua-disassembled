@@ -19,7 +19,7 @@ code size: 75
 code size: 64
 code size: 114
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\MaterialFade.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\MaterialFade.luac 
 
 ; Name:            
 ; Defined at line: 0

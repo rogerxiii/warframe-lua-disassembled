@@ -51,7 +51,7 @@ code size: 41
 code size: 99
 code size: 124
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\LotusPveGreedGameRules.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\LotusPveGreedGameRules.luac 
 
 ; Name:            
 ; Defined at line: 0

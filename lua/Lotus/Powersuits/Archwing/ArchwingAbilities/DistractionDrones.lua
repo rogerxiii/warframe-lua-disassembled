@@ -9,7 +9,7 @@ code size: 108
 code size: 21
 code size: 73
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Archwing\ArchwingAbilities\DistractionDrones.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Archwing\ArchwingAbilities\DistractionDrones.luac 
 
 ; Name:            
 ; Defined at line: 0

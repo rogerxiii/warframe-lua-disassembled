@@ -6,7 +6,7 @@ code size: 56
 code size: 54
 code size: 114
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Quests\WarWithinRewards.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\WarWithinRewards.luac 
 
 ; Name:            
 ; Defined at line: 0

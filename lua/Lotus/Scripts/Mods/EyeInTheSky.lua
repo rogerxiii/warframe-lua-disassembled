@@ -2,7 +2,7 @@ code size: 26
 code size: 129
 code size: 20
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Mods\EyeInTheSky.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Mods\EyeInTheSky.luac 
 
 ; Name:            
 ; Defined at line: 0

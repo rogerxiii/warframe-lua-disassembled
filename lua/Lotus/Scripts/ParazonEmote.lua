@@ -3,7 +3,7 @@ code size: 42
 code size: 4
 code size: 10
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\ParazonEmote.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\ParazonEmote.luac 
 
 ; Name:            
 ; Defined at line: 0

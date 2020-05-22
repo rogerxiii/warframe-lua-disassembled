@@ -8,7 +8,7 @@ code size: 113
 code size: 31
 code size: 186
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Game\CrewShip\Ships\Abilities\CrewShipStunAbility.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Game\CrewShip\Ships\Abilities\CrewShipStunAbility.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -7,7 +7,7 @@ code size: 200
 code size: 287
 code size: 40
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\MonkeyKing\HairAugmentStomp.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\MonkeyKing\HairAugmentStomp.luac 
 
 ; Name:            
 ; Defined at line: 0

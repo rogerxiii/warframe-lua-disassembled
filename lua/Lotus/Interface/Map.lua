@@ -67,7 +67,7 @@ code size: 78
 code size: 15
 code size: 27
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Map.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Map.luac 
 
 ; Name:            
 ; Defined at line: 0

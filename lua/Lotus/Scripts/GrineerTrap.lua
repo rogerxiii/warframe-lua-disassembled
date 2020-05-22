@@ -12,7 +12,7 @@ code size: 199
 code size: 89
 code size: 76
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\GrineerTrap.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\GrineerTrap.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -12,7 +12,7 @@ code size: 465
 code size: 145
 code size: 49
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\PowersuitAbilities\RunnerPlating.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\RunnerPlating.luac 
 
 ; Name:            
 ; Defined at line: 0

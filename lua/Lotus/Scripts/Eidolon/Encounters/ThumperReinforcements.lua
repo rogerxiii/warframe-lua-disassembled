@@ -1,7 +1,7 @@
 code size: 29
 code size: 160
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Eidolon\Encounters\ThumperReinforcements.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Eidolon\Encounters\ThumperReinforcements.luac 
 
 ; Name:            
 ; Defined at line: 0

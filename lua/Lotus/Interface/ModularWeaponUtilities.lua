@@ -3,7 +3,7 @@ code size: 24
 code size: 118
 code size: 28
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\ModularWeaponUtilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\ModularWeaponUtilities.luac 
 
 ; Name:            
 ; Defined at line: 0

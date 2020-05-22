@@ -6,7 +6,7 @@ code size: 22
 code size: 93
 code size: 123
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Types\Sentinels\SentinelAbilities\SynthFibers.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Sentinels\SentinelAbilities\SynthFibers.luac 
 
 ; Name:            
 ; Defined at line: 0

@@ -2,7 +2,7 @@ code size: 23
 code size: 21
 code size: 253
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Interface\Libs\MissionGeneratorUtil.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Libs\MissionGeneratorUtil.luac 
 
 ; Name:            
 ; Defined at line: 0

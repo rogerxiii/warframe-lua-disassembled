@@ -12,7 +12,7 @@ code size: 5
 code size: 85
 code size: 35
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Archwing\ArchwingAbilities\ExhaustTrail.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Archwing\ArchwingAbilities\ExhaustTrail.luac 
 
 ; Name:            
 ; Defined at line: 0

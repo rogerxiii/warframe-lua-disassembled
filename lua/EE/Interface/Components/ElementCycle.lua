@@ -37,7 +37,7 @@ code size: 5
 code size: 5
 code size: 64
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\EE\Interface\Components\ElementCycle.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\EE\Interface\Components\ElementCycle.luac 
 
 ; Name:            
 ; Defined at line: 0

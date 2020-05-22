@@ -20,7 +20,7 @@ code size: 69
 code size: 72
 code size: 14
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Scripts\Effects\EffectsColorUtilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Effects\EffectsColorUtilities.luac 
 
 ; Name:            
 ; Defined at line: 0

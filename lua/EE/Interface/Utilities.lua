@@ -113,7 +113,7 @@ code size: 22
 code size: 23
 code size: 19
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\EE\Interface\Utilities.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\EE\Interface\Utilities.luac 
 
 ; Name:            
 ; Defined at line: 0

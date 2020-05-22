@@ -3,7 +3,7 @@ code size: 10
 code size: 209
 code size: 115
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
-; Command line was: -dis M:\git repos\warframe-lua-disassembled\B.Font.cache_extracted\Lotus\Powersuits\Paladin\PaladinPassive.luac 
+; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\Paladin\PaladinPassive.luac 
 
 ; Name:            
 ; Defined at line: 0
