@@ -17,7 +17,7 @@ code size: 49
 code size: 17
 code size: 16
 code size: 9
-code size: 46
+code size: 47
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\OmegaCompatibilityPanel.luac 
 
@@ -1120,12 +1120,13 @@ code size: 46
  37 [-]: GETUPVAL  R4 U0        ; R4 := U0
  38 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["mUpdateOmegaCallback"]
  39 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 40 [-]: TEST      R3 1         ; if R3 then PC := 46
- 41 [-]: JMP       46           ; PC := 46
+ 40 [-]: TEST      R3 1         ; if R3 then PC := 47
+ 41 [-]: JMP       47           ; PC := 47
  42 [-]: GETUPVAL  R3 U0        ; R3 := U0
  43 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["0x1388EBC8"]
  44 [-]: GETTABLE  R4 R0 K17    ; R4 := R0["Type"]
- 45 [-]: CALL      R3 2 1       ; R3(R4)
- 46 [-]: RETURN    R0 1         ; return 
+ 45 [-]: GETTABLE  R5 R0 K18    ; R5 := R0["ModularTip"]
+ 46 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 47 [-]: RETURN    R0 1         ; return 
 
 

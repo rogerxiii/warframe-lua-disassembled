@@ -35,8 +35,8 @@ code size: 16
 code size: 45
 code size: 16
 code size: 40
-code size: 33
-code size: 24
+code size: 39
+code size: 45
 code size: 230
 code size: 282
 code size: 12
@@ -2646,82 +2646,109 @@ code size: 3
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: MOVE      R0 R0        ; R0 := R0
   3 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
   4 [-]: GETGLOBAL R1 K1        ; R1 := gGameData
   5 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  6 [-]: TEST      R0 1         ; if R0 then PC := 33
-  7 [-]: JMP       33           ; PC := 33
-  8 [-]: CLOSURE   R0 0         ; R0 := closure(Function #30.1)
-  9 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 10 [-]: GETGLOBAL R1 K1        ; R1 := gGameData
- 11 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x6F2E05FD"]
- 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 13 [-]: MOVE      R2 R0        ; R2 := R0
- 14 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1["0x3329FBFF"]
- 15 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 16 [-]: CALL      R2 0 1       ; R2(R3,...)
- 17 [-]: MOVE      R2 R0        ; R2 := R0
- 18 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1["0x6E1FFCCD"]
- 19 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 20 [-]: CALL      R2 0 1       ; R2(R3,...)
- 21 [-]: MOVE      R2 R0        ; R2 := R0
- 22 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1["0xAB4E6F2A"]
- 23 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 24 [-]: CALL      R2 0 1       ; R2(R3,...)
- 25 [-]: MOVE      R2 R0        ; R2 := R0
- 26 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1["0x85D4CA1C"]
- 27 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 28 [-]: CALL      R2 0 1       ; R2(R3,...)
- 29 [-]: MOVE      R2 R0        ; R2 := R0
- 30 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1["0x640AA7E"]
- 31 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 32 [-]: CALL      R2 0 1       ; R2(R3,...)
- 33 [-]: RETURN    R0 1         ; return 
+  6 [-]: TEST      R0 1         ; if R0 then PC := 39
+  7 [-]: JMP       39           ; PC := 39
+  8 [-]: GETGLOBAL R0 K2        ; R0 := 0x2C00D429
+  9 [-]: LOADK     R1 K3        ; R1 := "/Lotus/Upgrades/Mods/Immortal/ImmortalBaseMod"
+ 10 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 11 [-]: CLOSURE   R1 0         ; R1 := closure(Function #30.1)
+ 12 [-]: MOVE      R0 R0        ; R0 := R0
+ 13 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 14 [-]: GETGLOBAL R2 K1        ; R2 := gGameData
+ 15 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x6F2E05FD"]
+ 16 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 17 [-]: MOVE      R3 R1        ; R3 := R1
+ 18 [-]: SELF      R4 R2 K5     ; R5 := R2; R4 := R2["0x3329FBFF"]
+ 19 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 20 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 21 [-]: MOVE      R3 R1        ; R3 := R1
+ 22 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2["0x6E1FFCCD"]
+ 23 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 24 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 25 [-]: MOVE      R3 R1        ; R3 := R1
+ 26 [-]: SELF      R4 R2 K7     ; R5 := R2; R4 := R2["0xAB4E6F2A"]
+ 27 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 28 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 29 [-]: MOVE      R3 R1        ; R3 := R1
+ 30 [-]: SELF      R4 R2 K8     ; R5 := R2; R4 := R2["0x85D4CA1C"]
+ 31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 32 [-]: MOVE      R5 R1        ; R5 := R1
+ 33 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 34 [-]: MOVE      R3 R1        ; R3 := R1
+ 35 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2["0x640AA7E"]
+ 36 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 37 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 38 [-]: CLOSE     R0           ; SAVE R0,...
+ 39 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #30.1:
 ;
 ; Name:            
-; Defined at line: 709
-; #Upvalues:       1
-; #Parameters:     1
+; Defined at line: 710
+; #Upvalues:       2
+; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  12
 
-  1 [-]: LOADK     R1 K0        ; R1 := 1
-  2 [-]: LEN       R2 R0        ; R2 := # R0
-  3 [-]: LOADK     R3 K0        ; R3 := 1
-  4 [-]: FORPREP   R1 23        ; R1 -= R3; PC := 23
-  5 [-]: GETTABLE  R5 R0 R4     ; R5 := R0[R4]
-  6 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["mItemType"]
-  7 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x1B252E3C"]
-  8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  9 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 10 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 11 [-]: EQ        1 R6 K3      ; if R6 == nil then PC := 19
- 12 [-]: JMP       19           ; PC := 19
- 13 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 14 [-]: GETTABLE  R8 R0 R4     ; R8 := R0[R4]
- 15 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["mItemCount"]
- 16 [-]: ADD       R8 R6 R8     ; R8 := R6 + R8
- 17 [-]: SETTABLE  R7 R5 R8     ; R7[R5] := R8
- 18 [-]: JMP       23           ; PC := 23
- 19 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 20 [-]: GETTABLE  R8 R0 R4     ; R8 := R0[R4]
- 21 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["mItemCount"]
- 22 [-]: SETTABLE  R7 R5 R8     ; R7[R5] := R8
- 23 [-]: FORLOOP   R1 5         ; R1 += R3; if R1 <= R2 then begin PC := 5; R4 := R1 end
- 24 [-]: RETURN    R0 1         ; return 
+  1 [-]: LOADK     R2 K0        ; R2 := 1
+  2 [-]: LEN       R3 R0        ; R3 := # R0
+  3 [-]: LOADK     R4 K0        ; R4 := 1
+  4 [-]: FORPREP   R2 44        ; R2 -= R4; PC := 44
+  5 [-]: MOVE      R6 R0        ; R6 := R0
+  6 [-]: TEST      R1 0         ; if not R1 then PC := 24
+  7 [-]: JMP       24           ; PC := 24
+  8 [-]: GETTABLE  R7 R0 R5     ; R7 := R0[R5]
+  9 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["mItemType"]
+ 10 [-]: SELF      R7 R7 K2     ; R8 := R7; R7 := R7["0x8B598ED4"]
+ 11 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 12 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 13 [-]: TEST      R7 0         ; if not R7 then PC := 24
+ 14 [-]: JMP       24           ; PC := 24
+ 15 [-]: GETGLOBAL R7 K3        ; R7 := cjson
+ 16 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["0x8A2E8315"]
+ 17 [-]: GETTABLE  R8 R0 R5     ; R8 := R0[R5]
+ 18 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["mUpgradeFingerprint"]
+ 19 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 20 [-]: GETTABLE  R8 R7 K6     ; R8 := R7["lvl"]
+ 21 [-]: EQ        0 R8 K7      ; if R8 ~= 3 then PC := 24
+ 22 [-]: JMP       24           ; PC := 24
+ 23 [-]: MOVE      R6 R1        ; R6 := R1
+ 24 [-]: TEST      R6 1         ; if R6 then PC := 44
+ 25 [-]: JMP       44           ; PC := 44
+ 26 [-]: GETTABLE  R8 R0 R5     ; R8 := R0[R5]
+ 27 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["mItemType"]
+ 28 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8["0x1B252E3C"]
+ 29 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 30 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 31 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+ 32 [-]: EQ        1 R9 K9      ; if R9 == nil then PC := 40
+ 33 [-]: JMP       40           ; PC := 40
+ 34 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 35 [-]: GETTABLE  R11 R0 R5    ; R11 := R0[R5]
+ 36 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["mItemCount"]
+ 37 [-]: ADD       R11 R9 R11   ; R11 := R9 + R11
+ 38 [-]: SETTABLE  R10 R8 R11   ; R10[R8] := R11
+ 39 [-]: JMP       44           ; PC := 44
+ 40 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 41 [-]: GETTABLE  R11 R0 R5    ; R11 := R0[R5]
+ 42 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["mItemCount"]
+ 43 [-]: SETTABLE  R10 R8 R11   ; R10[R8] := R11
+ 44 [-]: FORLOOP   R2 5         ; R2 += R4; if R2 <= R3 then begin PC := 5; R5 := R2 end
+ 45 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 730
+; Defined at line: 741
 ; #Upvalues:       14
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2962,7 +2989,7 @@ code size: 3
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 810
+; Defined at line: 821
 ; #Upvalues:       25
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3255,7 +3282,7 @@ code size: 3
 ; Function #32.1:
 ;
 ; Name:            
-; Defined at line: 863
+; Defined at line: 874
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3278,7 +3305,7 @@ code size: 3
 ; Function #32.2:
 ;
 ; Name:            
-; Defined at line: 875
+; Defined at line: 886
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3320,7 +3347,7 @@ code size: 3
 ; Function #32.3:
 ;
 ; Name:            
-; Defined at line: 908
+; Defined at line: 919
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3435,7 +3462,7 @@ code size: 3
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 951
+; Defined at line: 962
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3468,7 +3495,7 @@ code size: 3
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 957
+; Defined at line: 968
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3491,7 +3518,7 @@ code size: 3
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 963
+; Defined at line: 974
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3515,7 +3542,7 @@ code size: 3
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 969
+; Defined at line: 980
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3533,7 +3560,7 @@ code size: 3
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 973
+; Defined at line: 984
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3551,7 +3578,7 @@ code size: 3
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 977
+; Defined at line: 988
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3587,7 +3614,7 @@ code size: 3
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 984
+; Defined at line: 995
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3601,7 +3628,7 @@ code size: 3
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 988
+; Defined at line: 999
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3630,7 +3657,7 @@ code size: 3
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 994
+; Defined at line: 1005
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3647,7 +3674,7 @@ code size: 3
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 1000
+; Defined at line: 1011
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

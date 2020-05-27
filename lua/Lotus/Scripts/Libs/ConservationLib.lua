@@ -1,5 +1,4 @@
-code size: 63
-code size: 8
+code size: 62
 code size: 23
 code size: 2
 code size: 12
@@ -32,96 +31,76 @@ code size: 13
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  9
+; Max Stack Size:  8
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: NEWTABLE  R1 0 10      ; R1 := {}
-  3 [-]: SETTABLE  R1 K0 K1     ; R1["UNINITIALIZED"] := 0
-  4 [-]: SETTABLE  R1 K2 K3     ; R1["INITIALIZED"] := 1
-  5 [-]: SETTABLE  R1 K4 K5     ; R1["PITCH_GAME_INITIATED"] := 2
-  6 [-]: SETTABLE  R1 K6 K7     ; R1["ANIMAL_RESPONSE"] := 3
-  7 [-]: SETTABLE  R1 K8 K9     ; R1["DOING_PITCH_MATCHING"] := 4
-  8 [-]: SETTABLE  R1 K10 K11   ; R1["CALL_MATCHED"] := 5
-  9 [-]: SETTABLE  R1 K12 K13   ; R1["PITCH_GAME_CALLS_COMPLETE"] := 25
- 10 [-]: SETTABLE  R1 K14 K15   ; R1["SPAWNED"] := 26
- 11 [-]: SETTABLE  R1 K16 K17   ; R1["SLEPT"] := 27
- 12 [-]: SETTABLE  R1 K18 K19   ; R1["ESCAPED"] := 28
- 13 [-]: LOADK     R2 K1        ; R2 := 0
- 14 [-]: LOADK     R3 K20       ; R3 := 20
- 15 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
- 16 [-]: MOVE      R0 R1        ; R0 := R1
- 17 [-]: CLOSURE   R5 2         ; R5 := closure(Function #3)
- 18 [-]: NEWTABLE  R6 0 17      ; R6 := {}
- 19 [-]: SETTABLE  R6 K21 R1    ; R6["states"] := R1
- 20 [-]: SETTABLE  R6 K22 R2    ; R6["MIN_PITCH"] := R2
- 21 [-]: SETTABLE  R6 K23 R3    ; R6["MAX_PITCH"] := R3
- 22 [-]: GETGLOBAL R7 K25       ; R7 := 0xEC274B1A
- 23 [-]: LOADK     R8 K26       ; R8 := "AnimalCallPoint"
- 24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 25 [-]: SETTABLE  R6 K24 R7    ; R6["callPointTag"] := R7
- 26 [-]: CLOSURE   R7 3         ; R7 := closure(Function #4)
- 27 [-]: MOVE      R0 R4        ; R0 := R4
- 28 [-]: SETTABLE  R6 K27 R7    ; R6["AddConservationEncounterState"] := R7
- 29 [-]: CLOSURE   R7 4         ; R7 := closure(Function #5)
- 30 [-]: SETTABLE  R6 K28 R7    ; R6["EndEncounter"] := R7
- 31 [-]: SETTABLE  R6 K29 R5    ; R6["GetCurrentConservationEncounter"] := R5
- 32 [-]: CLOSURE   R7 5         ; R7 := closure(Function #6)
- 33 [-]: MOVE      R0 R5        ; R0 := R5
- 34 [-]: SETTABLE  R6 K30 R7    ; R6["GetCurrentConservationEncounterState"] := R7
- 35 [-]: CLOSURE   R7 6         ; R7 := closure(Function #7)
- 36 [-]: SETTABLE  R6 K31 R7    ; R6["SetCurrentConservationEncounterByStartPoint"] := R7
- 37 [-]: CLOSURE   R7 7         ; R7 := closure(Function #8)
- 38 [-]: SETTABLE  R6 K32 R7    ; R6["SetCurrentConservationEncounterByCallPoint"] := R7
- 39 [-]: CLOSURE   R7 8         ; R7 := closure(Function #9)
- 40 [-]: SETTABLE  R6 K33 R7    ; R6["GetConservationEncounterByCallPoint"] := R7
- 41 [-]: CLOSURE   R7 9         ; R7 := closure(Function #10)
- 42 [-]: SETTABLE  R6 K34 R7    ; R6["GetConservationEncounterByHuntingState"] := R7
- 43 [-]: CLOSURE   R7 10        ; R7 := closure(Function #11)
- 44 [-]: SETTABLE  R6 K35 R7    ; R6["GetConservationEncounterForHint"] := R7
- 45 [-]: CLOSURE   R7 11        ; R7 := closure(Function #12)
- 46 [-]: MOVE      R0 R5        ; R0 := R5
- 47 [-]: MOVE      R0 R1        ; R0 := R1
- 48 [-]: SETTABLE  R6 K36 R7    ; R6["InitiatePitchGame"] := R7
- 49 [-]: CLOSURE   R7 12        ; R7 := closure(Function #13)
- 50 [-]: MOVE      R0 R5        ; R0 := R5
- 51 [-]: MOVE      R0 R1        ; R0 := R1
- 52 [-]: SETTABLE  R6 K37 R7    ; R6["PitchGameMatch"] := R7
- 53 [-]: CLOSURE   R7 13        ; R7 := closure(Function #14)
- 54 [-]: MOVE      R0 R5        ; R0 := R5
- 55 [-]: SETTABLE  R6 K38 R7    ; R6["GetPitchAtTime"] := R7
- 56 [-]: CLOSURE   R7 14        ; R7 := closure(Function #15)
- 57 [-]: MOVE      R0 R5        ; R0 := R5
- 58 [-]: SETTABLE  R6 K39 R7    ; R6["GetDisappearTimePercentage"] := R7
- 59 [-]: CLOSURE   R7 15        ; R7 := closure(Function #16)
- 60 [-]: MOVE      R0 R5        ; R0 := R5
- 61 [-]: SETTABLE  R6 K40 R7    ; R6["SetDisappearTime"] := R7
- 62 [-]: RETURN    R6 2         ; return R6
- 63 [-]: RETURN    R0 1         ; return 
+  1 [-]: NEWTABLE  R0 0 10      ; R0 := {}
+  2 [-]: SETTABLE  R0 K0 K1     ; R0["UNINITIALIZED"] := 0
+  3 [-]: SETTABLE  R0 K2 K3     ; R0["INITIALIZED"] := 1
+  4 [-]: SETTABLE  R0 K4 K5     ; R0["PITCH_GAME_INITIATED"] := 2
+  5 [-]: SETTABLE  R0 K6 K7     ; R0["ANIMAL_RESPONSE"] := 3
+  6 [-]: SETTABLE  R0 K8 K9     ; R0["DOING_PITCH_MATCHING"] := 4
+  7 [-]: SETTABLE  R0 K10 K11   ; R0["CALL_MATCHED"] := 5
+  8 [-]: SETTABLE  R0 K12 K13   ; R0["PITCH_GAME_CALLS_COMPLETE"] := 25
+  9 [-]: SETTABLE  R0 K14 K15   ; R0["SPAWNED"] := 26
+ 10 [-]: SETTABLE  R0 K16 K17   ; R0["SLEPT"] := 27
+ 11 [-]: SETTABLE  R0 K18 K19   ; R0["ESCAPED"] := 28
+ 12 [-]: LOADK     R1 K1        ; R1 := 0
+ 13 [-]: LOADK     R2 K20       ; R2 := 20
+ 14 [-]: CLOSURE   R3 0         ; R3 := closure(Function #1)
+ 15 [-]: MOVE      R0 R0        ; R0 := R0
+ 16 [-]: CLOSURE   R4 1         ; R4 := closure(Function #2)
+ 17 [-]: NEWTABLE  R5 0 17      ; R5 := {}
+ 18 [-]: SETTABLE  R5 K21 R0    ; R5["states"] := R0
+ 19 [-]: SETTABLE  R5 K22 R1    ; R5["MIN_PITCH"] := R1
+ 20 [-]: SETTABLE  R5 K23 R2    ; R5["MAX_PITCH"] := R2
+ 21 [-]: GETGLOBAL R6 K25       ; R6 := 0xEC274B1A
+ 22 [-]: LOADK     R7 K26       ; R7 := "AnimalCallPoint"
+ 23 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 24 [-]: SETTABLE  R5 K24 R6    ; R5["callPointTag"] := R6
+ 25 [-]: CLOSURE   R6 2         ; R6 := closure(Function #3)
+ 26 [-]: MOVE      R0 R3        ; R0 := R3
+ 27 [-]: SETTABLE  R5 K27 R6    ; R5["AddConservationEncounterState"] := R6
+ 28 [-]: CLOSURE   R6 3         ; R6 := closure(Function #4)
+ 29 [-]: SETTABLE  R5 K28 R6    ; R5["EndEncounter"] := R6
+ 30 [-]: SETTABLE  R5 K29 R4    ; R5["GetCurrentConservationEncounter"] := R4
+ 31 [-]: CLOSURE   R6 4         ; R6 := closure(Function #5)
+ 32 [-]: MOVE      R0 R4        ; R0 := R4
+ 33 [-]: SETTABLE  R5 K30 R6    ; R5["GetCurrentConservationEncounterState"] := R6
+ 34 [-]: CLOSURE   R6 5         ; R6 := closure(Function #6)
+ 35 [-]: SETTABLE  R5 K31 R6    ; R5["SetCurrentConservationEncounterByStartPoint"] := R6
+ 36 [-]: CLOSURE   R6 6         ; R6 := closure(Function #7)
+ 37 [-]: SETTABLE  R5 K32 R6    ; R5["SetCurrentConservationEncounterByCallPoint"] := R6
+ 38 [-]: CLOSURE   R6 7         ; R6 := closure(Function #8)
+ 39 [-]: SETTABLE  R5 K33 R6    ; R5["GetConservationEncounterByCallPoint"] := R6
+ 40 [-]: CLOSURE   R6 8         ; R6 := closure(Function #9)
+ 41 [-]: SETTABLE  R5 K34 R6    ; R5["GetConservationEncounterByHuntingState"] := R6
+ 42 [-]: CLOSURE   R6 9         ; R6 := closure(Function #10)
+ 43 [-]: SETTABLE  R5 K35 R6    ; R5["GetConservationEncounterForHint"] := R6
+ 44 [-]: CLOSURE   R6 10        ; R6 := closure(Function #11)
+ 45 [-]: MOVE      R0 R4        ; R0 := R4
+ 46 [-]: MOVE      R0 R0        ; R0 := R0
+ 47 [-]: SETTABLE  R5 K36 R6    ; R5["InitiatePitchGame"] := R6
+ 48 [-]: CLOSURE   R6 11        ; R6 := closure(Function #12)
+ 49 [-]: MOVE      R0 R4        ; R0 := R4
+ 50 [-]: MOVE      R0 R0        ; R0 := R0
+ 51 [-]: SETTABLE  R5 K37 R6    ; R5["PitchGameMatch"] := R6
+ 52 [-]: CLOSURE   R6 12        ; R6 := closure(Function #13)
+ 53 [-]: MOVE      R0 R4        ; R0 := R4
+ 54 [-]: SETTABLE  R5 K38 R6    ; R5["GetPitchAtTime"] := R6
+ 55 [-]: CLOSURE   R6 13        ; R6 := closure(Function #14)
+ 56 [-]: MOVE      R0 R4        ; R0 := R4
+ 57 [-]: SETTABLE  R5 K39 R6    ; R5["GetDisappearTimePercentage"] := R6
+ 58 [-]: CLOSURE   R6 14        ; R6 := closure(Function #15)
+ 59 [-]: MOVE      R0 R4        ; R0 := R4
+ 60 [-]: SETTABLE  R5 K40 R6    ; R5["SetDisappearTime"] := R6
+ 61 [-]: RETURN    R5 2         ; return R5
+ 62 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 1
-; #Upvalues:       0
-; #Parameters:     5
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: SUB       R5 R4 R0     ; R5 := R4 - R0
-  2 [-]: SUB       R6 R3 R2     ; R6 := R3 - R2
-  3 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
-  4 [-]: SUB       R6 R1 R0     ; R6 := R1 - R0
-  5 [-]: DIV       R5 R5 R6     ; R5 := R5 / R6
-  6 [-]: ADD       R5 R2 R5     ; R5 := R2 + R5
-  7 [-]: RETURN    R5 2         ; return R5
-  8 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 23
+; Defined at line: 18
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -129,33 +108,33 @@ code size: 13
 
   1 [-]: NEWTABLE  R1 0 10      ; R1 := {}
   2 [-]: SETTABLE  R1 K0 R0     ; R1["huntingState"] := R0
-  3 [-]: CLOSURE   R2 0         ; R2 := closure(Function #2.1)
+  3 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1.1)
   4 [-]: SETTABLE  R1 K1 R2     ; R1["SetHint"] := R2
-  5 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2.2)
+  5 [-]: CLOSURE   R2 1         ; R2 := closure(Function #1.2)
   6 [-]: SETTABLE  R1 K2 R2     ; R1["GetState"] := R2
-  7 [-]: CLOSURE   R2 2         ; R2 := closure(Function #2.3)
+  7 [-]: CLOSURE   R2 2         ; R2 := closure(Function #1.3)
   8 [-]: SETTABLE  R1 K3 R2     ; R1["SetState"] := R2
-  9 [-]: CLOSURE   R2 3         ; R2 := closure(Function #2.4)
+  9 [-]: CLOSURE   R2 3         ; R2 := closure(Function #1.4)
  10 [-]: SETTABLE  R1 K4 R2     ; R1["GetCallPoint"] := R2
- 11 [-]: CLOSURE   R2 4         ; R2 := closure(Function #2.5)
+ 11 [-]: CLOSURE   R2 4         ; R2 := closure(Function #1.5)
  12 [-]: SETTABLE  R1 K5 R2     ; R1["SetCallPoint"] := R2
- 13 [-]: CLOSURE   R2 5         ; R2 := closure(Function #2.6)
+ 13 [-]: CLOSURE   R2 5         ; R2 := closure(Function #1.6)
  14 [-]: SETTABLE  R1 K6 R2     ; R1["SetPitches"] := R2
- 15 [-]: CLOSURE   R2 6         ; R2 := closure(Function #2.7)
+ 15 [-]: CLOSURE   R2 6         ; R2 := closure(Function #1.7)
  16 [-]: SETTABLE  R1 K7 R2     ; R1["GetPitchAtTime"] := R2
- 17 [-]: CLOSURE   R2 7         ; R2 := closure(Function #2.8)
+ 17 [-]: CLOSURE   R2 7         ; R2 := closure(Function #1.8)
  18 [-]: GETUPVAL  R0 U0        ; R0 := U0
  19 [-]: SETTABLE  R1 K8 R2     ; R1["IsEncounterOver"] := R2
- 20 [-]: CLOSURE   R2 8         ; R2 := closure(Function #2.9)
+ 20 [-]: CLOSURE   R2 8         ; R2 := closure(Function #1.9)
  21 [-]: SETTABLE  R1 K9 R2     ; R1["MatchesAnimal"] := R2
  22 [-]: RETURN    R1 2         ; return R1
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.1:
+; Function #1.1:
 ;
 ; Name:            
-; Defined at line: 28
+; Defined at line: 23
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -165,10 +144,10 @@ code size: 13
   2 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.2:
+; Function #1.2:
 ;
 ; Name:            
-; Defined at line: 32
+; Defined at line: 27
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -188,10 +167,10 @@ code size: 13
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.3:
+; Function #1.3:
 ;
 ; Name:            
-; Defined at line: 39
+; Defined at line: 34
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -204,10 +183,10 @@ code size: 13
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.4:
+; Function #1.4:
 ;
 ; Name:            
-; Defined at line: 43
+; Defined at line: 38
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -220,10 +199,10 @@ code size: 13
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.5:
+; Function #1.5:
 ;
 ; Name:            
-; Defined at line: 47
+; Defined at line: 42
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -236,10 +215,10 @@ code size: 13
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.6:
+; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 51
+; Defined at line: 46
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -253,10 +232,10 @@ code size: 13
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.7:
+; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 55
+; Defined at line: 50
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -270,10 +249,10 @@ code size: 13
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.8:
+; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 59
+; Defined at line: 54
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -293,10 +272,10 @@ code size: 13
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #2.9:
+; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 64
+; Defined at line: 59
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -320,10 +299,10 @@ code size: 13
  16 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3:
+; Function #2:
 ;
 ; Name:            
-; Defined at line: 71
+; Defined at line: 66
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -364,10 +343,10 @@ code size: 13
  33 [-]: RETURN    R0 1         ; return 
 
 
-; Function #4:
+; Function #3:
 ;
 ; Name:            
-; Defined at line: 102
+; Defined at line: 97
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -427,10 +406,10 @@ code size: 13
  52 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 125
+; Defined at line: 120
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -470,10 +449,10 @@ code size: 13
  32 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 147
+; Defined at line: 142
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -492,10 +471,10 @@ code size: 13
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 157
+; Defined at line: 152
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -548,10 +527,10 @@ code size: 13
  45 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 180
+; Defined at line: 175
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -591,10 +570,10 @@ code size: 13
  32 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 192
+; Defined at line: 187
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -632,10 +611,10 @@ code size: 13
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 203
+; Defined at line: 198
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -657,10 +636,10 @@ code size: 13
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 212
+; Defined at line: 207
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -682,10 +661,10 @@ code size: 13
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 221
+; Defined at line: 216
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -703,10 +682,10 @@ code size: 13
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 229
+; Defined at line: 224
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -724,10 +703,10 @@ code size: 13
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 237
+; Defined at line: 232
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -746,10 +725,10 @@ code size: 13
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 246
+; Defined at line: 241
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -768,10 +747,10 @@ code size: 13
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #16:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 255
+; Defined at line: 250
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
