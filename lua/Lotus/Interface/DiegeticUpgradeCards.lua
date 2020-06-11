@@ -12057,7 +12057,7 @@ code size: 1
  65 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  66 [-]: SELF      R11 R11 K12  ; R12 := R11; R11 := R11["0x63D63C30"]
  67 [-]: GETGLOBAL R13 K13      ; R13 := Engine
- 68 [-]: GETTABLE  R13 R13 K17  ; R13 := R13["SLOT_1"]
+ 68 [-]: GETTABLE  R13 R13 K14  ; R13 := R13["SLOT_2"]
  69 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  70 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0xE2B32C65"]
  71 [-]: CALL      R11 2 2      ; R11 := R11(R12)
@@ -12067,7 +12067,7 @@ code size: 1
  75 [-]: MOVE      R6 R10       ; R6 := R10
  76 [-]: JMP       112          ; PC := 112
  77 [-]: GETGLOBAL R10 K5       ; R10 := Lotus_Game
- 78 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["PISTOL_SLOT"]
+ 78 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["PISTOL_SLOT"]
  79 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 95
  80 [-]: JMP       95           ; PC := 95
  81 [-]: GETGLOBAL R10 K11      ; R10 := 0x7C282057
@@ -12075,7 +12075,7 @@ code size: 1
  83 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  84 [-]: SELF      R11 R11 K12  ; R12 := R11; R11 := R11["0x63D63C30"]
  85 [-]: GETGLOBAL R13 K13      ; R13 := Engine
- 86 [-]: GETTABLE  R13 R13 K17  ; R13 := R13["SLOT_1"]
+ 86 [-]: GETTABLE  R13 R13 K18  ; R13 := R13["SLOT_1"]
  87 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  88 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0xE2B32C65"]
  89 [-]: CALL      R11 2 2      ; R11 := R11(R12)

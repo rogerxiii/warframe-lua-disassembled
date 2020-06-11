@@ -18,7 +18,7 @@ code size: 573
 code size: 17
 code size: 155
 code size: 30
-code size: 139
+code size: 150
 code size: 103
 code size: 42
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -3595,8 +3595,8 @@ code size: 42
  13 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
  14 [-]: MOVE      R4 R2        ; R4 := R2
  15 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 16 [-]: TEST      R3 1         ; if R3 then PC := 89
- 17 [-]: JMP       89           ; PC := 89
+ 16 [-]: TEST      R3 1         ; if R3 then PC := 90
+ 17 [-]: JMP       90           ; PC := 90
  18 [-]: GETUPVAL  R3 U0        ; R3 := U0
  19 [-]: SELF      R4 R2 K4     ; R5 := R2; R4 := R2["0x1498C3B6"]
  20 [-]: GETUPVAL  R6 U1        ; R6 := U1
@@ -3658,73 +3658,84 @@ code size: 42
  76 [-]: GETGLOBAL R7 K1        ; R7 := 0x400E7765
  77 [-]: MOVE      R8 R6        ; R8 := R6
  78 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 79 [-]: TEST      R7 1         ; if R7 then PC := 89
- 80 [-]: JMP       89           ; PC := 89
+ 79 [-]: TEST      R7 1         ; if R7 then PC := 100
+ 80 [-]: JMP       100          ; PC := 100
  81 [-]: SELF      R7 R6 K19    ; R8 := R6; R7 := R6["0x8B598ED4"]
  82 [-]: GETGLOBAL R9 K20       ; R9 := deluxeSkin
  83 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 84 [-]: TEST      R7 0         ; if not R7 then PC := 89
- 85 [-]: JMP       89           ; PC := 89
+ 84 [-]: TEST      R7 0         ; if not R7 then PC := 100
+ 85 [-]: JMP       100          ; PC := 100
  86 [-]: SELF      R7 R0 K21    ; R8 := R0; R7 := R0["0xB256911C"]
  87 [-]: MOVE      R9 R1        ; R9 := R1
  88 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 89 [-]: GETGLOBAL R7 K22       ; R7 := Engine
- 90 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["0xFA1ED226"]
- 91 [-]: CALL      R7 1 2       ; R7 := R7()
- 92 [-]: SELF      R8 R0 K24    ; R9 := R0; R8 := R0["0x78E930FD"]
- 93 [-]: LOADK     R10 K25      ; R10 := 0
- 94 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 95 [-]: SELF      R9 R8 K26    ; R10 := R8; R9 := R8["0xD7F6F844"]
- 96 [-]: MOVE      R11 R7       ; R11 := R7
- 97 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 98 [-]: SELF      R9 R0 K27    ; R10 := R0; R9 := R0["0xCCDDAF9B"]
- 99 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-100 [-]: TEST      R9 0         ; if not R9 then PC := 121
-101 [-]: JMP       121          ; PC := 121
-102 [-]: SELF      R9 R8 K28    ; R10 := R8; R9 := R8["0xCC060144"]
-103 [-]: GETUPVAL  R11 U5       ; R11 := U5
-104 [-]: SELF      R11 R11 K29  ; R12 := R11; R11 := R11["0xDF99A32E"]
-105 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-106 [-]: GETGLOBAL R12 K22      ; R12 := Engine
-107 [-]: GETTABLE  R12 R12 K30  ; R12 := R12["DT_PHYSICAL"]
-108 [-]: GETTABLE  R13 R7 K31   ; R13 := R7["baseProcChance"]
-109 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-110 [-]: SELF      R9 R1 K2     ; R10 := R1; R9 := R1["0x8DB5D01F"]
-111 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-112 [-]: SELF      R9 R9 K32    ; R10 := R9; R9 := R9["0xF9821444"]
-113 [-]: GETGLOBAL R11 K33      ; R11 := Game
-114 [-]: GETTABLE  R11 R11 K34  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
-115 [-]: GETUPVAL  R12 U5       ; R12 := U5
-116 [-]: SELF      R13 R0 K35   ; R14 := R0; R13 := R0["0xE2B32C65"]
-117 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-118 [-]: MOVE      R14 R0       ; R14 := R0
-119 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
-120 [-]: JMP       139          ; PC := 139
-121 [-]: SELF      R9 R8 K28    ; R10 := R8; R9 := R8["0xCC060144"]
-122 [-]: GETUPVAL  R11 U4       ; R11 := U4
-123 [-]: SELF      R11 R11 K29  ; R12 := R11; R11 := R11["0xDF99A32E"]
-124 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-125 [-]: GETGLOBAL R12 K22      ; R12 := Engine
-126 [-]: GETTABLE  R12 R12 K30  ; R12 := R12["DT_PHYSICAL"]
-127 [-]: GETTABLE  R13 R7 K31   ; R13 := R7["baseProcChance"]
-128 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-129 [-]: SELF      R9 R1 K2     ; R10 := R1; R9 := R1["0x8DB5D01F"]
-130 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-131 [-]: SELF      R9 R9 K32    ; R10 := R9; R9 := R9["0xF9821444"]
-132 [-]: GETGLOBAL R11 K33      ; R11 := Game
-133 [-]: GETTABLE  R11 R11 K36  ; R11 := R11["WEAPON_DAMAGE_AMOUNT"]
-134 [-]: GETUPVAL  R12 U4       ; R12 := U4
-135 [-]: SELF      R13 R0 K35   ; R14 := R0; R13 := R0["0xE2B32C65"]
-136 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-137 [-]: MOVE      R14 R0       ; R14 := R0
-138 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
-139 [-]: RETURN    R0 1         ; return 
+ 89 [-]: JMP       100          ; PC := 100
+ 90 [-]: GETGLOBAL R7 K22       ; R7 := Engine
+ 91 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["0xB6D816A9"]
+ 92 [-]: GETUPVAL  R8 U4        ; R8 := U4
+ 93 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 94 [-]: MOVE      R7 R4        ; R7 := R4
+ 95 [-]: GETGLOBAL R7 K22       ; R7 := Engine
+ 96 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["0xB6D816A9"]
+ 97 [-]: GETUPVAL  R8 U5        ; R8 := U5
+ 98 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 99 [-]: MOVE      R7 R5        ; R7 := R5
+100 [-]: GETGLOBAL R7 K22       ; R7 := Engine
+101 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["0xFA1ED226"]
+102 [-]: CALL      R7 1 2       ; R7 := R7()
+103 [-]: SELF      R8 R0 K25    ; R9 := R0; R8 := R0["0x78E930FD"]
+104 [-]: LOADK     R10 K26      ; R10 := 0
+105 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+106 [-]: SELF      R9 R8 K27    ; R10 := R8; R9 := R8["0xD7F6F844"]
+107 [-]: MOVE      R11 R7       ; R11 := R7
+108 [-]: CALL      R9 3 1       ; R9(R10,R11)
+109 [-]: SELF      R9 R0 K28    ; R10 := R0; R9 := R0["0xCCDDAF9B"]
+110 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+111 [-]: TEST      R9 0         ; if not R9 then PC := 132
+112 [-]: JMP       132          ; PC := 132
+113 [-]: SELF      R9 R8 K29    ; R10 := R8; R9 := R8["0xCC060144"]
+114 [-]: GETUPVAL  R11 U5       ; R11 := U5
+115 [-]: SELF      R11 R11 K30  ; R12 := R11; R11 := R11["0xDF99A32E"]
+116 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+117 [-]: GETGLOBAL R12 K22      ; R12 := Engine
+118 [-]: GETTABLE  R12 R12 K31  ; R12 := R12["DT_PHYSICAL"]
+119 [-]: GETTABLE  R13 R7 K32   ; R13 := R7["baseProcChance"]
+120 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
+121 [-]: SELF      R9 R1 K2     ; R10 := R1; R9 := R1["0x8DB5D01F"]
+122 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+123 [-]: SELF      R9 R9 K33    ; R10 := R9; R9 := R9["0xF9821444"]
+124 [-]: GETGLOBAL R11 K34      ; R11 := Game
+125 [-]: GETTABLE  R11 R11 K35  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
+126 [-]: GETUPVAL  R12 U5       ; R12 := U5
+127 [-]: SELF      R13 R0 K36   ; R14 := R0; R13 := R0["0xE2B32C65"]
+128 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+129 [-]: MOVE      R14 R0       ; R14 := R0
+130 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+131 [-]: JMP       150          ; PC := 150
+132 [-]: SELF      R9 R8 K29    ; R10 := R8; R9 := R8["0xCC060144"]
+133 [-]: GETUPVAL  R11 U4       ; R11 := U4
+134 [-]: SELF      R11 R11 K30  ; R12 := R11; R11 := R11["0xDF99A32E"]
+135 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+136 [-]: GETGLOBAL R12 K22      ; R12 := Engine
+137 [-]: GETTABLE  R12 R12 K31  ; R12 := R12["DT_PHYSICAL"]
+138 [-]: GETTABLE  R13 R7 K32   ; R13 := R7["baseProcChance"]
+139 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
+140 [-]: SELF      R9 R1 K2     ; R10 := R1; R9 := R1["0x8DB5D01F"]
+141 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+142 [-]: SELF      R9 R9 K33    ; R10 := R9; R9 := R9["0xF9821444"]
+143 [-]: GETGLOBAL R11 K34      ; R11 := Game
+144 [-]: GETTABLE  R11 R11 K37  ; R11 := R11["WEAPON_DAMAGE_AMOUNT"]
+145 [-]: GETUPVAL  R12 U4       ; R12 := U4
+146 [-]: SELF      R13 R0 K36   ; R14 := R0; R13 := R0["0xE2B32C65"]
+147 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+148 [-]: MOVE      R14 R0       ; R14 := R0
+149 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+150 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 1279
+; Defined at line: 1282
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3838,7 +3849,7 @@ code size: 42
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 1317
+; Defined at line: 1320
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -513,7 +513,7 @@ code size: 57
  17 [-]: MOVE      R1 R2        ; R1 := R2
  18 [-]: MOVE      R0 R1        ; R0 := R1
  19 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 20 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0["0xEA9F1755"]
+ 20 [-]: SELF      R0 R0 K6     ; R1 := R0; R0 := R0["0xA5E9CEA2"]
  21 [-]: CALL      R0 2 2       ; R0 := R0(R1)
  22 [-]: MOVE      R0 R1        ; R0 := R1
  23 [-]: NEWTABLE  R0 0 0       ; R0 := {}

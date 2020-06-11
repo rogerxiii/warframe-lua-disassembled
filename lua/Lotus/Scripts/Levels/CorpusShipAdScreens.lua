@@ -1,6 +1,6 @@
 code size: 27
 code size: 19
-code size: 107
+code size: 112
 code size: 68
 code size: 107
 code size: 58
@@ -82,113 +82,118 @@ code size: 58
 ; Is_vararg:       0
 ; Max Stack Size:  14
 
-  1 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
-  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xED0EE7FB"]
-  3 [-]: GETGLOBAL R2 K2        ; R2 := 0xEC274B1A
-  4 [-]: LOADK     R3 K3        ; R3 := "ActiveElementalLayerId"
-  5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
-  6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
-  7 [-]: EQ        0 R0 K4      ; if R0 ~= 60 then PC := 10
-  8 [-]: JMP       10           ; PC := 10
-  9 [-]: RETURN    R0 1         ; return 
- 10 [-]: GETGLOBAL R0 K5        ; R0 := adScreenMeshes
- 11 [-]: LEN       R0 R0        ; R0 := # R0
- 12 [-]: LT        0 K6 R0      ; if 0 >= R0 then PC := 36
- 13 [-]: JMP       36           ; PC := 36
- 14 [-]: GETGLOBAL R0 K7        ; R0 := 0x7FD4B57D
- 15 [-]: LOADK     R1 K8        ; R1 := 1
- 16 [-]: GETGLOBAL R2 K5        ; R2 := adScreenMeshes
- 17 [-]: LEN       R2 R2        ; R2 := # R2
- 18 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 19 [-]: GETGLOBAL R1 K9        ; R1 := 0x63B09107
- 20 [-]: GETGLOBAL R2 K10       ; R2 := adScreens
- 21 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
- 22 [-]: JMP       34           ; PC := 34
- 23 [-]: GETGLOBAL R6 K11       ; R6 := 0x400E7765
- 24 [-]: MOVE      R7 R5        ; R7 := R5
- 25 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 26 [-]: TEST      R6 1         ; if R6 then PC := 34
- 27 [-]: JMP       34           ; PC := 34
- 28 [-]: SELF      R6 R5 K12    ; R7 := R5; R6 := R5["0x36CFF5F1"]
- 29 [-]: GETGLOBAL R8 K5        ; R8 := adScreenMeshes
- 30 [-]: GETTABLE  R8 R8 R0     ; R8 := R8[R0]
- 31 [-]: MOVE      R9 R0        ; R9 := R0
- 32 [-]: MOVE      R10 R0       ; R10 := R0
- 33 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 34 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 23; R3 := R4 end
- 35 [-]: JMP       23           ; PC := 23
- 36 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 37 [-]: LOADK     R7 K8        ; R7 := 1
- 38 [-]: CALL      R6 2 1       ; R6(R7)
- 39 [-]: GETGLOBAL R6 K9        ; R6 := 0x63B09107
- 40 [-]: GETGLOBAL R7 K10       ; R7 := adScreens
- 41 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
- 42 [-]: JMP       51           ; PC := 51
- 43 [-]: GETGLOBAL R11 K11      ; R11 := 0x400E7765
- 44 [-]: MOVE      R12 R10      ; R12 := R10
- 45 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 46 [-]: TEST      R11 1        ; if R11 then PC := 51
- 47 [-]: JMP       51           ; PC := 51
- 48 [-]: SELF      R11 R10 K13  ; R12 := R10; R11 := R10["0x7DBDDA0B"]
- 49 [-]: MOVE      R13 R1       ; R13 := R1
- 50 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 51 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 43; R8 := R9 end
- 52 [-]: JMP       43           ; PC := 43
- 53 [-]: GETGLOBAL R11 K11      ; R11 := 0x400E7765
- 54 [-]: GETGLOBAL R12 K14      ; R12 := screenLight
- 55 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 56 [-]: TEST      R11 1        ; if R11 then PC := 61
- 57 [-]: JMP       61           ; PC := 61
- 58 [-]: GETGLOBAL R11 K14      ; R11 := screenLight
- 59 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0xEF5C4E85"]
- 60 [-]: CALL      R11 2 1      ; R11(R12)
- 61 [-]: GETGLOBAL R11 K11      ; R11 := 0x400E7765
- 62 [-]: GETGLOBAL R12 K16      ; R12 := screenActiveFx
- 63 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 64 [-]: TEST      R11 1        ; if R11 then PC := 70
- 65 [-]: JMP       70           ; PC := 70
- 66 [-]: GETGLOBAL R11 K16      ; R11 := screenActiveFx
- 67 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0x8D5886B7"]
- 68 [-]: LOADK     R13 K18      ; R13 := "Enable"
- 69 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 70 [-]: GETGLOBAL R11 K11      ; R11 := 0x400E7765
- 71 [-]: GETGLOBAL R12 K19      ; R12 := screenBurstFx
- 72 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 73 [-]: TEST      R11 1        ; if R11 then PC := 79
- 74 [-]: JMP       79           ; PC := 79
- 75 [-]: GETGLOBAL R11 K19      ; R11 := screenBurstFx
- 76 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0x8D5886B7"]
- 77 [-]: LOADK     R13 K20      ; R13 := "Burst"
- 78 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 79 [-]: GETGLOBAL R11 K11      ; R11 := 0x400E7765
- 80 [-]: GETGLOBAL R12 K21      ; R12 := screenAmbientSound
- 81 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 82 [-]: TEST      R11 1        ; if R11 then PC := 88
- 83 [-]: JMP       88           ; PC := 88
- 84 [-]: GETGLOBAL R11 K21      ; R11 := screenAmbientSound
- 85 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0x8D5886B7"]
- 86 [-]: LOADK     R13 K18      ; R13 := "Enable"
- 87 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 88 [-]: LOADK     R11 K6       ; R11 := 0
- 89 [-]: GETUPVAL  R12 U1       ; R12 := U1
- 90 [-]: LE        0 R11 R12    ; if R11 > R12 then PC := 104
- 91 [-]: JMP       104          ; PC := 104
- 92 [-]: GETUPVAL  R12 U0       ; R12 := U0
- 93 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 94 [-]: DIV       R13 R11 R13  ; R13 := R11 / R13
- 95 [-]: SUB       R13 K8 R13   ; R13 := 1 - R13
- 96 [-]: CALL      R12 2 1      ; R12(R13)
- 97 [-]: GETGLOBAL R12 K22      ; R12 := 0x4CDEF9FF
- 98 [-]: CALL      R12 1 2      ; R12 := R12()
- 99 [-]: ADD       R11 R11 R12  ; R11 := R11 + R12
-100 [-]: GETGLOBAL R12 K23      ; R12 := 0x201191EA
-101 [-]: LOADK     R13 K6       ; R13 := 0
-102 [-]: CALL      R12 2 1      ; R12(R13)
-103 [-]: JMP       89           ; PC := 89
-104 [-]: GETUPVAL  R12 U0       ; R12 := U0
-105 [-]: LOADK     R13 K6       ; R13 := 0
-106 [-]: CALL      R12 2 1      ; R12(R13)
-107 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := gGameRules
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 1         ; if R0 then PC := 14
+  5 [-]: JMP       14           ; PC := 14
+  6 [-]: GETGLOBAL R0 K1        ; R0 := gGameRules
+  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0xED0EE7FB"]
+  8 [-]: GETGLOBAL R2 K3        ; R2 := 0xEC274B1A
+  9 [-]: LOADK     R3 K4        ; R3 := "ActiveElementalLayerId"
+ 10 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
+ 11 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
+ 12 [-]: EQ        0 R0 K5      ; if R0 ~= 60 then PC := 15
+ 13 [-]: JMP       15           ; PC := 15
+ 14 [-]: RETURN    R0 1         ; return 
+ 15 [-]: GETGLOBAL R0 K6        ; R0 := adScreenMeshes
+ 16 [-]: LEN       R0 R0        ; R0 := # R0
+ 17 [-]: LT        0 K7 R0      ; if 0 >= R0 then PC := 41
+ 18 [-]: JMP       41           ; PC := 41
+ 19 [-]: GETGLOBAL R0 K8        ; R0 := 0x7FD4B57D
+ 20 [-]: LOADK     R1 K9        ; R1 := 1
+ 21 [-]: GETGLOBAL R2 K6        ; R2 := adScreenMeshes
+ 22 [-]: LEN       R2 R2        ; R2 := # R2
+ 23 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+ 24 [-]: GETGLOBAL R1 K10       ; R1 := 0x63B09107
+ 25 [-]: GETGLOBAL R2 K11       ; R2 := adScreens
+ 26 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
+ 27 [-]: JMP       39           ; PC := 39
+ 28 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 29 [-]: MOVE      R7 R5        ; R7 := R5
+ 30 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 31 [-]: TEST      R6 1         ; if R6 then PC := 39
+ 32 [-]: JMP       39           ; PC := 39
+ 33 [-]: SELF      R6 R5 K12    ; R7 := R5; R6 := R5["0x36CFF5F1"]
+ 34 [-]: GETGLOBAL R8 K6        ; R8 := adScreenMeshes
+ 35 [-]: GETTABLE  R8 R8 R0     ; R8 := R8[R0]
+ 36 [-]: MOVE      R9 R0        ; R9 := R0
+ 37 [-]: MOVE      R10 R0       ; R10 := R0
+ 38 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+ 39 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 28; R3 := R4 end
+ 40 [-]: JMP       28           ; PC := 28
+ 41 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 42 [-]: LOADK     R7 K9        ; R7 := 1
+ 43 [-]: CALL      R6 2 1       ; R6(R7)
+ 44 [-]: GETGLOBAL R6 K10       ; R6 := 0x63B09107
+ 45 [-]: GETGLOBAL R7 K11       ; R7 := adScreens
+ 46 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
+ 47 [-]: JMP       56           ; PC := 56
+ 48 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
+ 49 [-]: MOVE      R12 R10      ; R12 := R10
+ 50 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 51 [-]: TEST      R11 1        ; if R11 then PC := 56
+ 52 [-]: JMP       56           ; PC := 56
+ 53 [-]: SELF      R11 R10 K13  ; R12 := R10; R11 := R10["0x7DBDDA0B"]
+ 54 [-]: MOVE      R13 R1       ; R13 := R1
+ 55 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 56 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 48; R8 := R9 end
+ 57 [-]: JMP       48           ; PC := 48
+ 58 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
+ 59 [-]: GETGLOBAL R12 K14      ; R12 := screenLight
+ 60 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 61 [-]: TEST      R11 1        ; if R11 then PC := 66
+ 62 [-]: JMP       66           ; PC := 66
+ 63 [-]: GETGLOBAL R11 K14      ; R11 := screenLight
+ 64 [-]: SELF      R11 R11 K15  ; R12 := R11; R11 := R11["0xEF5C4E85"]
+ 65 [-]: CALL      R11 2 1      ; R11(R12)
+ 66 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
+ 67 [-]: GETGLOBAL R12 K16      ; R12 := screenActiveFx
+ 68 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 69 [-]: TEST      R11 1        ; if R11 then PC := 75
+ 70 [-]: JMP       75           ; PC := 75
+ 71 [-]: GETGLOBAL R11 K16      ; R11 := screenActiveFx
+ 72 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0x8D5886B7"]
+ 73 [-]: LOADK     R13 K18      ; R13 := "Enable"
+ 74 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 75 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
+ 76 [-]: GETGLOBAL R12 K19      ; R12 := screenBurstFx
+ 77 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 78 [-]: TEST      R11 1        ; if R11 then PC := 84
+ 79 [-]: JMP       84           ; PC := 84
+ 80 [-]: GETGLOBAL R11 K19      ; R11 := screenBurstFx
+ 81 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0x8D5886B7"]
+ 82 [-]: LOADK     R13 K20      ; R13 := "Burst"
+ 83 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 84 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
+ 85 [-]: GETGLOBAL R12 K21      ; R12 := screenAmbientSound
+ 86 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 87 [-]: TEST      R11 1        ; if R11 then PC := 93
+ 88 [-]: JMP       93           ; PC := 93
+ 89 [-]: GETGLOBAL R11 K21      ; R11 := screenAmbientSound
+ 90 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0x8D5886B7"]
+ 91 [-]: LOADK     R13 K18      ; R13 := "Enable"
+ 92 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 93 [-]: LOADK     R11 K7       ; R11 := 0
+ 94 [-]: GETUPVAL  R12 U1       ; R12 := U1
+ 95 [-]: LE        0 R11 R12    ; if R11 > R12 then PC := 109
+ 96 [-]: JMP       109          ; PC := 109
+ 97 [-]: GETUPVAL  R12 U0       ; R12 := U0
+ 98 [-]: GETUPVAL  R13 U1       ; R13 := U1
+ 99 [-]: DIV       R13 R11 R13  ; R13 := R11 / R13
+100 [-]: SUB       R13 K9 R13   ; R13 := 1 - R13
+101 [-]: CALL      R12 2 1      ; R12(R13)
+102 [-]: GETGLOBAL R12 K22      ; R12 := 0x4CDEF9FF
+103 [-]: CALL      R12 1 2      ; R12 := R12()
+104 [-]: ADD       R11 R11 R12  ; R11 := R11 + R12
+105 [-]: GETGLOBAL R12 K23      ; R12 := 0x201191EA
+106 [-]: LOADK     R13 K7       ; R13 := 0
+107 [-]: CALL      R12 2 1      ; R12(R13)
+108 [-]: JMP       94           ; PC := 94
+109 [-]: GETUPVAL  R12 U0       ; R12 := U0
+110 [-]: LOADK     R13 K7       ; R13 := 0
+111 [-]: CALL      R12 2 1      ; R12(R13)
+112 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:

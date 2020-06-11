@@ -754,7 +754,7 @@ code size: 133
 165 [-]: GETUPVAL  R20 U10      ; R20 := U10
 166 [-]: GETGLOBAL R21 K57      ; R21 := Game
 167 [-]: GETTABLE  R21 R21 K58  ; R21 := R21["GAMEPLAY_FACTION_DAMAGE"]
-168 [-]: GETGLOBAL R22 K57      ; R22 := Game
+168 [-]: GETGLOBAL R22 K14      ; R22 := Engine
 169 [-]: GETTABLE  R22 R22 K59  ; R22 := R22["STACKING_MULTIPLY"]
 170 [-]: GETUPVAL  R23 U2       ; R23 := U2
 171 [-]: CALL      R18 6 1      ; R18(R19,R20,R21,R22,R23)
@@ -762,7 +762,7 @@ code size: 133
 173 [-]: GETUPVAL  R20 U11      ; R20 := U11
 174 [-]: GETGLOBAL R21 K57      ; R21 := Game
 175 [-]: GETTABLE  R21 R21 K58  ; R21 := R21["GAMEPLAY_FACTION_DAMAGE"]
-176 [-]: GETGLOBAL R22 K57      ; R22 := Game
+176 [-]: GETGLOBAL R22 K14      ; R22 := Engine
 177 [-]: GETTABLE  R22 R22 K59  ; R22 := R22["STACKING_MULTIPLY"]
 178 [-]: GETUPVAL  R23 U2       ; R23 := U2
 179 [-]: UNM       R23 R23      ; R23 := - R23
@@ -772,7 +772,7 @@ code size: 133
 183 [-]: GETUPVAL  R20 U13      ; R20 := U13
 184 [-]: GETGLOBAL R21 K57      ; R21 := Game
 185 [-]: GETTABLE  R21 R21 K58  ; R21 := R21["GAMEPLAY_FACTION_DAMAGE"]
-186 [-]: GETGLOBAL R22 K57      ; R22 := Game
+186 [-]: GETGLOBAL R22 K14      ; R22 := Engine
 187 [-]: GETTABLE  R22 R22 K59  ; R22 := R22["STACKING_MULTIPLY"]
 188 [-]: GETUPVAL  R23 U2       ; R23 := U2
 189 [-]: UNM       R23 R23      ; R23 := - R23
@@ -1093,16 +1093,16 @@ code size: 133
  70 [-]: GETUPVAL  R15 U5       ; R15 := U5
  71 [-]: GETGLOBAL R16 K21      ; R16 := Game
  72 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["GAMEPLAY_FACTION_DAMAGE"]
- 73 [-]: GETGLOBAL R17 K21      ; R17 := Game
- 74 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["STACKING_MULTIPLY"]
+ 73 [-]: GETGLOBAL R17 K23      ; R17 := Engine
+ 74 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["STACKING_MULTIPLY"]
  75 [-]: GETUPVAL  R18 U4       ; R18 := U4
  76 [-]: CALL      R13 6 1      ; R13(R14,R15,R16,R17,R18)
  77 [-]: SELF      R13 R12 K20  ; R14 := R12; R13 := R12["0x5A740E25"]
  78 [-]: GETUPVAL  R15 U6       ; R15 := U6
  79 [-]: GETGLOBAL R16 K21      ; R16 := Game
  80 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["GAMEPLAY_FACTION_DAMAGE"]
- 81 [-]: GETGLOBAL R17 K21      ; R17 := Game
- 82 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["STACKING_MULTIPLY"]
+ 81 [-]: GETGLOBAL R17 K23      ; R17 := Engine
+ 82 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["STACKING_MULTIPLY"]
  83 [-]: GETUPVAL  R18 U4       ; R18 := U4
  84 [-]: UNM       R18 R18      ; R18 := - R18
  85 [-]: GETUPVAL  R19 U7       ; R19 := U7
@@ -1111,13 +1111,13 @@ code size: 133
  88 [-]: GETUPVAL  R15 U8       ; R15 := U8
  89 [-]: GETGLOBAL R16 K21      ; R16 := Game
  90 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["GAMEPLAY_FACTION_DAMAGE"]
- 91 [-]: GETGLOBAL R17 K21      ; R17 := Game
- 92 [-]: GETTABLE  R17 R17 K23  ; R17 := R17["STACKING_MULTIPLY"]
+ 91 [-]: GETGLOBAL R17 K23      ; R17 := Engine
+ 92 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["STACKING_MULTIPLY"]
  93 [-]: GETUPVAL  R18 U4       ; R18 := U4
  94 [-]: UNM       R18 R18      ; R18 := - R18
- 95 [-]: GETGLOBAL R19 K24      ; R19 := gCrewShipType
+ 95 [-]: GETGLOBAL R19 K25      ; R19 := gCrewShipType
  96 [-]: CALL      R13 7 1      ; R13(R14,R15,R16,R17,R18,R19)
- 97 [-]: SELF      R13 R11 K25  ; R14 := R11; R13 := R11["0x9F1DC568"]
+ 97 [-]: SELF      R13 R11 K26  ; R14 := R11; R13 := R11["0x9F1DC568"]
  98 [-]: MOVE      R15 R6       ; R15 := R6
  99 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
 100 [-]: GETGLOBAL R14 K2       ; R14 := 0x400E7765
@@ -1125,25 +1125,25 @@ code size: 133
 102 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 103 [-]: TEST      R14 1        ; if R14 then PC := 107
 104 [-]: JMP       107          ; PC := 107
-105 [-]: SELF      R14 R13 K26  ; R15 := R13; R14 := R13["0xD4C2743F"]
+105 [-]: SELF      R14 R13 K27  ; R15 := R13; R14 := R13["0xD4C2743F"]
 106 [-]: CALL      R14 2 1      ; R14(R15)
-107 [-]: GETGLOBAL R14 K27      ; R14 := table
-108 [-]: GETTABLE  R14 R14 K28  ; R14 := R14["0xE6450C9D"]
+107 [-]: GETGLOBAL R14 K28      ; R14 := table
+108 [-]: GETTABLE  R14 R14 K29  ; R14 := R14["0xE6450C9D"]
 109 [-]: MOVE      R15 R5       ; R15 := R5
 110 [-]: MOVE      R16 R11      ; R16 := R11
 111 [-]: CALL      R14 3 1      ; R14(R15,R16)
 112 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 62; R9 := R10 end
 113 [-]: JMP       62           ; PC := 62
-114 [-]: GETGLOBAL R14 K29      ; R14 := Lotus_Game
-115 [-]: GETTABLE  R14 R14 K30  ; R14 := R14["0xFAFD4322"]
+114 [-]: GETGLOBAL R14 K30      ; R14 := Lotus_Game
+115 [-]: GETTABLE  R14 R14 K31  ; R14 := R14["0xFAFD4322"]
 116 [-]: CALL      R14 1 2      ; R14 := R14()
-117 [-]: SETTABLE  R14 K31 R1   ; R14["instigator"] := R1
-118 [-]: SETTABLE  R14 K32 R5   ; R14["affected"] := R5
+117 [-]: SETTABLE  R14 K32 R1   ; R14["instigator"] := R1
+118 [-]: SETTABLE  R14 K33 R5   ; R14["affected"] := R5
 119 [-]: GETGLOBAL R15 K1       ; R15 := mOwner
 120 [-]: SELF      R15 R15 K8   ; R16 := R15; R15 := R15["0xE2B32C65"]
 121 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-122 [-]: SETTABLE  R14 K33 R15  ; R14["abilityType"] := R15
-123 [-]: SELF      R15 R1 K34   ; R16 := R1; R15 := R1["0x584F13D6"]
+122 [-]: SETTABLE  R14 K34 R15  ; R14["abilityType"] := R15
+123 [-]: SELF      R15 R1 K35   ; R16 := R1; R15 := R1["0x584F13D6"]
 124 [-]: MOVE      R17 R14      ; R17 := R14
 125 [-]: MOVE      R18 R0       ; R18 := R0
 126 [-]: MOVE      R19 R1       ; R19 := R1

@@ -1654,29 +1654,29 @@ code size: 43
 593 [-]: MOVE      R65 R49      ; R65 := R49
 594 [-]: GETGLOBAL R66 K74      ; R66 := Game
 595 [-]: GETTABLE  R66 R66 K75  ; R66 := R66["WEAPON_HEADSHOT_MULTIPLIER"]
-596 [-]: GETGLOBAL R67 K74      ; R67 := Game
-597 [-]: GETTABLE  R67 R67 K76  ; R67 := R67["STACKING_MULTIPLY"]
+596 [-]: GETGLOBAL R67 K76      ; R67 := Engine
+597 [-]: GETTABLE  R67 R67 K77  ; R67 := R67["STACKING_MULTIPLY"]
 598 [-]: MOVE      R68 R47      ; R68 := R47
 599 [-]: CALL      R63 6 1      ; R63(R64,R65,R66,R67,R68)
 600 [-]: JMP       622          ; PC := 622
 601 [-]: SELF      R63 R62 K73  ; R64 := R62; R63 := R62["0x4685E6C3"]
 602 [-]: MOVE      R65 R49      ; R65 := R49
 603 [-]: GETGLOBAL R66 K74      ; R66 := Game
-604 [-]: GETTABLE  R66 R66 K77  ; R66 := R66["WEAPON_CRIT_CHANCE"]
-605 [-]: GETGLOBAL R67 K74      ; R67 := Game
-606 [-]: GETTABLE  R67 R67 K78  ; R67 := R67["ADD"]
+604 [-]: GETTABLE  R66 R66 K78  ; R66 := R66["WEAPON_CRIT_CHANCE"]
+605 [-]: GETGLOBAL R67 K76      ; R67 := Engine
+606 [-]: GETTABLE  R67 R67 K79  ; R67 := R67["ADD"]
 607 [-]: MOVE      R68 R47      ; R68 := R47
 608 [-]: CALL      R63 6 1      ; R63(R64,R65,R66,R67,R68)
 609 [-]: SELF      R63 R62 K73  ; R64 := R62; R63 := R62["0x4685E6C3"]
 610 [-]: MOVE      R65 R50      ; R65 := R50
 611 [-]: GETGLOBAL R66 K74      ; R66 := Game
-612 [-]: GETTABLE  R66 R66 K79  ; R66 := R66["WEAPON_CRIT_CHANCE_BODY_PART"]
-613 [-]: GETGLOBAL R67 K74      ; R67 := Game
-614 [-]: GETTABLE  R67 R67 K78  ; R67 := R67["ADD"]
+612 [-]: GETTABLE  R66 R66 K80  ; R66 := R66["WEAPON_CRIT_CHANCE_BODY_PART"]
+613 [-]: GETGLOBAL R67 K76      ; R67 := Engine
+614 [-]: GETTABLE  R67 R67 K79  ; R67 := R67["ADD"]
 615 [-]: GETUPVAL  R68 U8       ; R68 := U8
 616 [-]: MUL       R68 R47 R68  ; R68 := R47 * R68
 617 [-]: LOADNIL   R69 R70      ; R69 := R70 := nil
-618 [-]: GETGLOBAL R71 K80      ; R71 := Engine
+618 [-]: GETGLOBAL R71 K76      ; R71 := Engine
 619 [-]: GETTABLE  R71 R71 K81  ; R71 := R71["DT_ANY"]
 620 [-]: MOVE      R72 R48      ; R72 := R48
 621 [-]: CALL      R63 10 1     ; R63(R64,R65,R66,R67,R68,R69,R70,R71,R72)
@@ -1701,7 +1701,7 @@ code size: 43
 640 [-]: SELF      R63 R59 K39  ; R64 := R59; R63 := R59["0xA3F6069B"]
 641 [-]: CALL      R63 2 2      ; R63 := R63(R64)
 642 [-]: SELF      R63 R63 K83  ; R64 := R63; R63 := R63["0x16EEC1AD"]
-643 [-]: GETGLOBAL R65 K80      ; R65 := Engine
+643 [-]: GETGLOBAL R65 K76      ; R65 := Engine
 644 [-]: GETTABLE  R65 R65 K84  ; R65 := R65["TORSO"]
 645 [-]: CALL      R63 3 2      ; R63 := R63(R64,R65)
 646 [-]: SELF      R64 R59 K85  ; R65 := R59; R64 := R59["0x8B598ED4"]
@@ -1722,7 +1722,7 @@ code size: 43
 661 [-]: SELF      R64 R59 K92  ; R65 := R59; R64 := R59["0x25992394"]
 662 [-]: GETGLOBAL R66 K93      ; R66 := pactBuffStartSound
 663 [-]: MOVE      R67 R0       ; R67 := R0
-664 [-]: GETGLOBAL R68 K80      ; R68 := Engine
+664 [-]: GETGLOBAL R68 K76      ; R68 := Engine
 665 [-]: GETTABLE  R68 R68 K94  ; R68 := R68["SP_VERY_LOW"]
 666 [-]: MOVE      R69 R0       ; R69 := R0
 667 [-]: CALL      R64 6 1      ; R64(R65,R66,R67,R68,R69)
@@ -1800,29 +1800,29 @@ code size: 43
 739 [-]: MOVE      R74 R49      ; R74 := R49
 740 [-]: GETGLOBAL R75 K74      ; R75 := Game
 741 [-]: GETTABLE  R75 R75 K75  ; R75 := R75["WEAPON_HEADSHOT_MULTIPLIER"]
-742 [-]: GETGLOBAL R76 K74      ; R76 := Game
-743 [-]: GETTABLE  R76 R76 K76  ; R76 := R76["STACKING_MULTIPLY"]
+742 [-]: GETGLOBAL R76 K76      ; R76 := Engine
+743 [-]: GETTABLE  R76 R76 K77  ; R76 := R76["STACKING_MULTIPLY"]
 744 [-]: MOVE      R77 R47      ; R77 := R47
 745 [-]: CALL      R72 6 1      ; R72(R73,R74,R75,R76,R77)
 746 [-]: JMP       768          ; PC := 768
 747 [-]: SELF      R72 R71 K95  ; R73 := R71; R72 := R71["0x5A740E25"]
 748 [-]: MOVE      R74 R49      ; R74 := R49
 749 [-]: GETGLOBAL R75 K74      ; R75 := Game
-750 [-]: GETTABLE  R75 R75 K77  ; R75 := R75["WEAPON_CRIT_CHANCE"]
-751 [-]: GETGLOBAL R76 K74      ; R76 := Game
-752 [-]: GETTABLE  R76 R76 K78  ; R76 := R76["ADD"]
+750 [-]: GETTABLE  R75 R75 K78  ; R75 := R75["WEAPON_CRIT_CHANCE"]
+751 [-]: GETGLOBAL R76 K76      ; R76 := Engine
+752 [-]: GETTABLE  R76 R76 K79  ; R76 := R76["ADD"]
 753 [-]: MOVE      R77 R47      ; R77 := R47
 754 [-]: CALL      R72 6 1      ; R72(R73,R74,R75,R76,R77)
 755 [-]: SELF      R72 R71 K95  ; R73 := R71; R72 := R71["0x5A740E25"]
 756 [-]: MOVE      R74 R50      ; R74 := R50
 757 [-]: GETGLOBAL R75 K74      ; R75 := Game
-758 [-]: GETTABLE  R75 R75 K79  ; R75 := R75["WEAPON_CRIT_CHANCE_BODY_PART"]
-759 [-]: GETGLOBAL R76 K74      ; R76 := Game
-760 [-]: GETTABLE  R76 R76 K78  ; R76 := R76["ADD"]
+758 [-]: GETTABLE  R75 R75 K80  ; R75 := R75["WEAPON_CRIT_CHANCE_BODY_PART"]
+759 [-]: GETGLOBAL R76 K76      ; R76 := Engine
+760 [-]: GETTABLE  R76 R76 K79  ; R76 := R76["ADD"]
 761 [-]: GETUPVAL  R77 U8       ; R77 := U8
 762 [-]: MUL       R77 R47 R77  ; R77 := R47 * R77
 763 [-]: LOADNIL   R78 R79      ; R78 := R79 := nil
-764 [-]: GETGLOBAL R80 K80      ; R80 := Engine
+764 [-]: GETGLOBAL R80 K76      ; R80 := Engine
 765 [-]: GETTABLE  R80 R80 K81  ; R80 := R80["DT_ANY"]
 766 [-]: MOVE      R81 R48      ; R81 := R48
 767 [-]: CALL      R72 10 1     ; R72(R73,R74,R75,R76,R77,R78,R79,R80,R81)
@@ -2102,29 +2102,29 @@ code size: 43
 100 [-]: MOVE      R22 R9       ; R22 := R9
 101 [-]: GETGLOBAL R23 K30      ; R23 := Game
 102 [-]: GETTABLE  R23 R23 K31  ; R23 := R23["WEAPON_HEADSHOT_MULTIPLIER"]
-103 [-]: GETGLOBAL R24 K30      ; R24 := Game
-104 [-]: GETTABLE  R24 R24 K32  ; R24 := R24["STACKING_MULTIPLY"]
+103 [-]: GETGLOBAL R24 K32      ; R24 := Engine
+104 [-]: GETTABLE  R24 R24 K33  ; R24 := R24["STACKING_MULTIPLY"]
 105 [-]: MOVE      R25 R8       ; R25 := R8
 106 [-]: CALL      R20 6 1      ; R20(R21,R22,R23,R24,R25)
 107 [-]: JMP       129          ; PC := 129
 108 [-]: SELF      R20 R19 K29  ; R21 := R19; R20 := R19["0x5A740E25"]
 109 [-]: MOVE      R22 R9       ; R22 := R9
 110 [-]: GETGLOBAL R23 K30      ; R23 := Game
-111 [-]: GETTABLE  R23 R23 K33  ; R23 := R23["WEAPON_CRIT_CHANCE"]
-112 [-]: GETGLOBAL R24 K30      ; R24 := Game
-113 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["ADD"]
+111 [-]: GETTABLE  R23 R23 K34  ; R23 := R23["WEAPON_CRIT_CHANCE"]
+112 [-]: GETGLOBAL R24 K32      ; R24 := Engine
+113 [-]: GETTABLE  R24 R24 K35  ; R24 := R24["ADD"]
 114 [-]: MOVE      R25 R8       ; R25 := R8
 115 [-]: CALL      R20 6 1      ; R20(R21,R22,R23,R24,R25)
 116 [-]: SELF      R20 R19 K29  ; R21 := R19; R20 := R19["0x5A740E25"]
 117 [-]: MOVE      R22 R10      ; R22 := R10
 118 [-]: GETGLOBAL R23 K30      ; R23 := Game
-119 [-]: GETTABLE  R23 R23 K35  ; R23 := R23["WEAPON_CRIT_CHANCE_BODY_PART"]
-120 [-]: GETGLOBAL R24 K30      ; R24 := Game
-121 [-]: GETTABLE  R24 R24 K34  ; R24 := R24["ADD"]
+119 [-]: GETTABLE  R23 R23 K36  ; R23 := R23["WEAPON_CRIT_CHANCE_BODY_PART"]
+120 [-]: GETGLOBAL R24 K32      ; R24 := Engine
+121 [-]: GETTABLE  R24 R24 K35  ; R24 := R24["ADD"]
 122 [-]: GETUPVAL  R25 U2       ; R25 := U2
 123 [-]: MUL       R25 R8 R25   ; R25 := R8 * R25
 124 [-]: LOADNIL   R26 R27      ; R26 := R27 := nil
-125 [-]: GETGLOBAL R28 K36      ; R28 := Engine
+125 [-]: GETGLOBAL R28 K32      ; R28 := Engine
 126 [-]: GETTABLE  R28 R28 K37  ; R28 := R28["DT_ANY"]
 127 [-]: MOVE      R29 R7       ; R29 := R7
 128 [-]: CALL      R20 10 1     ; R20(R21,R22,R23,R24,R25,R26,R27,R28,R29)
@@ -2157,7 +2157,7 @@ code size: 43
 155 [-]: SELF      R21 R17 K45  ; R22 := R17; R21 := R17["0x25992394"]
 156 [-]: GETGLOBAL R23 K46      ; R23 := pactBuffEndSound
 157 [-]: MOVE      R24 R0       ; R24 := R0
-158 [-]: GETGLOBAL R25 K36      ; R25 := Engine
+158 [-]: GETGLOBAL R25 K32      ; R25 := Engine
 159 [-]: GETTABLE  R25 R25 K47  ; R25 := R25["SP_VERY_LOW"]
 160 [-]: MOVE      R26 R0       ; R26 := R0
 161 [-]: CALL      R21 6 1      ; R21(R22,R23,R24,R25,R26)

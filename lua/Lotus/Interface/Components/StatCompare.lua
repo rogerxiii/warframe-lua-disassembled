@@ -19,7 +19,7 @@ code size: 221
 code size: 873
 code size: 12
 code size: 11
-code size: 56
+code size: 57
 code size: 51
 code size: 40
 code size: 132
@@ -2734,8 +2734,8 @@ code size: 9
  15 [-]: GETGLOBAL R6 K4        ; R6 := 0x400E7765
  16 [-]: MOVE      R7 R4        ; R7 := R4
  17 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 18 [-]: TEST      R6 1         ; if R6 then PC := 50
- 19 [-]: JMP       50           ; PC := 50
+ 18 [-]: TEST      R6 1         ; if R6 then PC := 51
+ 19 [-]: JMP       51           ; PC := 51
  20 [-]: LOADK     R6 K5        ; R6 := 0
  21 [-]: SELF      R7 R0 K6     ; R8 := R0; R7 := R0["0x8B598ED4"]
  22 [-]: GETGLOBAL R9 K7        ; R9 := 0x2C00D429
@@ -2763,16 +2763,17 @@ code size: 9
  44 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0["0xBE3349A4"]
  45 [-]: MOVE      R9 R4        ; R9 := R4
  46 [-]: MOVE      R10 R6       ; R10 := R6
- 47 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 48 [-]: MOVE      R5 R7        ; R5 := R7
- 49 [-]: JMP       53           ; PC := 53
- 50 [-]: SELF      R7 R0 K13    ; R8 := R0; R7 := R0["0x14DB097E"]
- 51 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 52 [-]: MOVE      R5 R7        ; R5 := R7
- 53 [-]: MOVE      R7 R4        ; R7 := R4
- 54 [-]: MOVE      R8 R5        ; R8 := R5
- 55 [-]: RETURN    R7 3         ; return R7,R8
- 56 [-]: RETURN    R0 1         ; return 
+ 47 [-]: GETTABLE  R11 R1 K13   ; R11 := R1["behaviorIndex"]
+ 48 [-]: CALL      R7 5 2       ; R7 := R7(R8,R9,R10,R11)
+ 49 [-]: MOVE      R5 R7        ; R5 := R7
+ 50 [-]: JMP       54           ; PC := 54
+ 51 [-]: SELF      R7 R0 K14    ; R8 := R0; R7 := R0["0x14DB097E"]
+ 52 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 53 [-]: MOVE      R5 R7        ; R5 := R7
+ 54 [-]: MOVE      R7 R4        ; R7 := R4
+ 55 [-]: MOVE      R8 R5        ; R8 := R5
+ 56 [-]: RETURN    R7 3         ; return R7,R8
+ 57 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:
