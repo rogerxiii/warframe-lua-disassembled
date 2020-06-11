@@ -327,43 +327,43 @@ code size: 257
 114 [-]: GETGLOBAL R15 K37      ; R15 := affinityAddTime
 115 [-]: GETGLOBAL R16 K38      ; R16 := Game
 116 [-]: GETTABLE  R16 R16 K39  ; R16 := R16["AVATAR_SHARE_XP_RADIUS"]
-117 [-]: GETGLOBAL R17 K38      ; R17 := Game
-118 [-]: GETTABLE  R17 R17 K40  ; R17 := R17["ADD"]
-119 [-]: GETGLOBAL R18 K41      ; R18 := affinityRangeAdd
+117 [-]: GETGLOBAL R17 K40      ; R17 := Engine
+118 [-]: GETTABLE  R17 R17 K41  ; R17 := R17["ADD"]
+119 [-]: GETGLOBAL R18 K42      ; R18 := affinityRangeAdd
 120 [-]: CALL      R13 6 1      ; R13(R14,R15,R16,R17,R18)
-121 [-]: GETGLOBAL R13 K42      ; R13 := Lotus_Game
-122 [-]: GETTABLE  R13 R13 K43  ; R13 := R13["0xFAFD4322"]
+121 [-]: GETGLOBAL R13 K43      ; R13 := Lotus_Game
+122 [-]: GETTABLE  R13 R13 K44  ; R13 := R13["0xFAFD4322"]
 123 [-]: CALL      R13 1 2      ; R13 := R13()
 124 [-]: NEWTABLE  R14 1 0      ; R14 := {}
 125 [-]: MOVE      R15 R0       ; R15 := R0
 126 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
-127 [-]: SETTABLE  R13 K44 R14  ; R13["affected"] := R14
-128 [-]: GETGLOBAL R14 K42      ; R14 := Lotus_Game
-129 [-]: GETTABLE  R14 R14 K46  ; R14 := R14["BT_TIMER"]
-130 [-]: SETTABLE  R13 K45 R14  ; R13["buffType"] := R14
+127 [-]: SETTABLE  R13 K45 R14  ; R13["affected"] := R14
+128 [-]: GETGLOBAL R14 K43      ; R14 := Lotus_Game
+129 [-]: GETTABLE  R14 R14 K47  ; R14 := R14["BT_TIMER"]
+130 [-]: SETTABLE  R13 K46 R14  ; R13["buffType"] := R14
 131 [-]: GETGLOBAL R14 K28      ; R14 := addRangeAbilityType
-132 [-]: SETTABLE  R13 K47 R14  ; R13["abilityType"] := R14
+132 [-]: SETTABLE  R13 K48 R14  ; R13["abilityType"] := R14
 133 [-]: GETGLOBAL R14 K37      ; R14 := affinityAddTime
-134 [-]: SETTABLE  R13 K48 R14  ; R13["buffData"] := R14
-135 [-]: SELF      R14 R0 K49   ; R15 := R0; R14 := R0["0x584F13D6"]
+134 [-]: SETTABLE  R13 K49 R14  ; R13["buffData"] := R14
+135 [-]: SELF      R14 R0 K50   ; R15 := R0; R14 := R0["0x584F13D6"]
 136 [-]: MOVE      R16 R13      ; R16 := R13
 137 [-]: MOVE      R17 R1       ; R17 := R1
 138 [-]: MOVE      R18 R1       ; R18 := R1
 139 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-140 [-]: SELF      R14 R0 K50   ; R15 := R0; R14 := R0["0xDBEF0FB6"]
+140 [-]: SELF      R14 R0 K51   ; R15 := R0; R14 := R0["0xDBEF0FB6"]
 141 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 142 [-]: GETGLOBAL R15 K8       ; R15 := 0x400E7765
-143 [-]: GETGLOBAL R16 K51      ; R16 := _T
-144 [-]: GETTABLE  R16 R16 K52  ; R16 := R16["SharedRange"]
+143 [-]: GETGLOBAL R16 K52      ; R16 := _T
+144 [-]: GETTABLE  R16 R16 K53  ; R16 := R16["SharedRange"]
 145 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 146 [-]: TEST      R15 0        ; if not R15 then PC := 151
 147 [-]: JMP       151          ; PC := 151
-148 [-]: GETGLOBAL R15 K51      ; R15 := _T
+148 [-]: GETGLOBAL R15 K52      ; R15 := _T
 149 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-150 [-]: SETTABLE  R15 K52 R16  ; R15["SharedRange"] := R16
+150 [-]: SETTABLE  R15 K53 R16  ; R15["SharedRange"] := R16
 151 [-]: SELF      R15 R0 K35   ; R16 := R0; R15 := R0["0x8DB5D01F"]
 152 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-153 [-]: SELF      R15 R15 K53  ; R16 := R15; R15 := R15["0xEA9EE763"]
+153 [-]: SELF      R15 R15 K54  ; R16 := R15; R15 := R15["0xEA9EE763"]
 154 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 155 [-]: MUL       R15 R15 R15  ; R15 := R15 * R15
 156 [-]: GETGLOBAL R16 K37      ; R16 := affinityAddTime
@@ -372,31 +372,31 @@ code size: 257
 159 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 160 [-]: TEST      R17 1        ; if R17 then PC := 249
 161 [-]: JMP       249          ; PC := 249
-162 [-]: SELF      R17 R0 K54   ; R18 := R0; R17 := R0["0x5A115A02"]
+162 [-]: SELF      R17 R0 K55   ; R18 := R0; R17 := R0["0x5A115A02"]
 163 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 164 [-]: TEST      R17 1        ; if R17 then PC := 249
 165 [-]: JMP       249          ; PC := 249
-166 [-]: LT        0 K55 R16    ; if 0 >= R16 then PC := 249
+166 [-]: LT        0 K56 R16    ; if 0 >= R16 then PC := 249
 167 [-]: JMP       249          ; PC := 249
 168 [-]: GETGLOBAL R17 K8       ; R17 := 0x400E7765
-169 [-]: GETGLOBAL R18 K51      ; R18 := _T
-170 [-]: GETTABLE  R18 R18 K52  ; R18 := R18["SharedRange"]
+169 [-]: GETGLOBAL R18 K52      ; R18 := _T
+170 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["SharedRange"]
 171 [-]: GETTABLE  R18 R18 R14  ; R18 := R18[R14]
 172 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 173 [-]: TEST      R17 0        ; if not R17 then PC := 179
 174 [-]: JMP       179          ; PC := 179
-175 [-]: GETGLOBAL R17 K51      ; R17 := _T
-176 [-]: GETTABLE  R17 R17 K52  ; R17 := R17["SharedRange"]
+175 [-]: GETGLOBAL R17 K52      ; R17 := _T
+176 [-]: GETTABLE  R17 R17 K53  ; R17 := R17["SharedRange"]
 177 [-]: NEWTABLE  R18 0 0      ; R18 := {}
 178 [-]: SETTABLE  R17 R14 R18  ; R17[R14] := R18
 179 [-]: GETGLOBAL R17 K0       ; R17 := gRegion
-180 [-]: SELF      R17 R17 K56  ; R18 := R17; R17 := R17["0x848C9FE0"]
+180 [-]: SELF      R17 R17 K57  ; R18 := R17; R17 := R17["0x848C9FE0"]
 181 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-182 [-]: GETGLOBAL R18 K57      ; R18 := 0xECFDD17
+182 [-]: GETGLOBAL R18 K58      ; R18 := 0xECFDD17
 183 [-]: MOVE      R19 R17      ; R19 := R17
 184 [-]: CALL      R18 2 4      ; R18,R19,R20 := R18(R19)
 185 [-]: JMP       240          ; PC := 240
-186 [-]: SELF      R23 R22 K50  ; R24 := R22; R23 := R22["0xDBEF0FB6"]
+186 [-]: SELF      R23 R22 K51  ; R24 := R22; R23 := R22["0xDBEF0FB6"]
 187 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 188 [-]: GETGLOBAL R24 K8       ; R24 := 0x400E7765
 189 [-]: MOVE      R25 R23      ; R25 := R23
@@ -404,21 +404,21 @@ code size: 257
 191 [-]: TEST      R24 1        ; if R24 then PC := 240
 192 [-]: JMP       240          ; PC := 240
 193 [-]: GETGLOBAL R24 K8       ; R24 := 0x400E7765
-194 [-]: GETGLOBAL R25 K51      ; R25 := _T
-195 [-]: GETTABLE  R25 R25 K52  ; R25 := R25["SharedRange"]
+194 [-]: GETGLOBAL R25 K52      ; R25 := _T
+195 [-]: GETTABLE  R25 R25 K53  ; R25 := R25["SharedRange"]
 196 [-]: GETTABLE  R25 R25 R14  ; R25 := R25[R14]
 197 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 198 [-]: TEST      R24 1        ; if R24 then PC := 240
 199 [-]: JMP       240          ; PC := 240
 200 [-]: GETGLOBAL R24 K8       ; R24 := 0x400E7765
-201 [-]: GETGLOBAL R25 K51      ; R25 := _T
-202 [-]: GETTABLE  R25 R25 K52  ; R25 := R25["SharedRange"]
+201 [-]: GETGLOBAL R25 K52      ; R25 := _T
+202 [-]: GETTABLE  R25 R25 K53  ; R25 := R25["SharedRange"]
 203 [-]: GETTABLE  R25 R25 R14  ; R25 := R25[R14]
 204 [-]: GETTABLE  R25 R25 R23  ; R25 := R25[R23]
 205 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 206 [-]: TEST      R24 0        ; if not R24 then PC := 240
 207 [-]: JMP       240          ; PC := 240
-208 [-]: GETGLOBAL R24 K58      ; R24 := 0x9CE7F413
+208 [-]: GETGLOBAL R24 K59      ; R24 := 0x9CE7F413
 209 [-]: SELF      R25 R22 K2   ; R26 := R22; R25 := R22["0xBBAF192"]
 210 [-]: CALL      R25 2 2      ; R25 := R25(R26)
 211 [-]: SELF      R26 R0 K2    ; R27 := R0; R26 := R0["0xBBAF192"]
@@ -426,45 +426,45 @@ code size: 257
 213 [-]: CALL      R24 0 2      ; R24 := R24(R25,...)
 214 [-]: LE        0 R24 R15    ; if R24 > R15 then PC := 240
 215 [-]: JMP       240          ; PC := 240
-216 [-]: GETGLOBAL R24 K51      ; R24 := _T
-217 [-]: GETTABLE  R24 R24 K52  ; R24 := R24["SharedRange"]
+216 [-]: GETGLOBAL R24 K52      ; R24 := _T
+217 [-]: GETTABLE  R24 R24 K53  ; R24 := R24["SharedRange"]
 218 [-]: GETTABLE  R24 R24 R14  ; R24 := R24[R14]
-219 [-]: SETTABLE  R24 R23 K59  ; R24[R23] := "0x1"
+219 [-]: SETTABLE  R24 R23 K60  ; R24[R23] := "0x1"
 220 [-]: SELF      R24 R22 K35  ; R25 := R22; R24 := R22["0x8DB5D01F"]
 221 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 222 [-]: SELF      R24 R24 K36  ; R25 := R24; R24 := R24["0xB004E537"]
 223 [-]: MOVE      R26 R16      ; R26 := R16
 224 [-]: GETGLOBAL R27 K38      ; R27 := Game
 225 [-]: GETTABLE  R27 R27 K39  ; R27 := R27["AVATAR_SHARE_XP_RADIUS"]
-226 [-]: GETGLOBAL R28 K38      ; R28 := Game
-227 [-]: GETTABLE  R28 R28 K40  ; R28 := R28["ADD"]
-228 [-]: GETGLOBAL R29 K41      ; R29 := affinityRangeAdd
+226 [-]: GETGLOBAL R28 K40      ; R28 := Engine
+227 [-]: GETTABLE  R28 R28 K41  ; R28 := R28["ADD"]
+228 [-]: GETGLOBAL R29 K42      ; R29 := affinityRangeAdd
 229 [-]: CALL      R24 6 1      ; R24(R25,R26,R27,R28,R29)
 230 [-]: NEWTABLE  R24 1 0      ; R24 := {}
 231 [-]: MOVE      R25 R22      ; R25 := R22
 232 [-]: SETLIST   R24 1 1      ; R24[(1-1)*FPF+i] := R(24+i), 1 <= i <= 1
-233 [-]: SETTABLE  R13 K44 R24  ; R13["affected"] := R24
-234 [-]: SETTABLE  R13 K48 R16  ; R13["buffData"] := R16
-235 [-]: SELF      R24 R0 K49   ; R25 := R0; R24 := R0["0x584F13D6"]
+233 [-]: SETTABLE  R13 K45 R24  ; R13["affected"] := R24
+234 [-]: SETTABLE  R13 K49 R16  ; R13["buffData"] := R16
+235 [-]: SELF      R24 R0 K50   ; R25 := R0; R24 := R0["0x584F13D6"]
 236 [-]: MOVE      R26 R13      ; R26 := R13
 237 [-]: MOVE      R27 R1       ; R27 := R1
 238 [-]: MOVE      R28 R1       ; R28 := R1
 239 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
 240 [-]: TFORLOOP  R18 2        ; R21,R22 :=  R18(R19,R20); if R21 ~= nil then begin PC = 186; R20 := R21 end
 241 [-]: JMP       186          ; PC := 186
-242 [-]: GETGLOBAL R24 K60      ; R24 := 0x4CDEF9FF
+242 [-]: GETGLOBAL R24 K61      ; R24 := 0x4CDEF9FF
 243 [-]: CALL      R24 1 2      ; R24 := R24()
 244 [-]: SUB       R16 R16 R24  ; R16 := R16 - R24
-245 [-]: GETGLOBAL R24 K61      ; R24 := 0x201191EA
-246 [-]: LOADK     R25 K55      ; R25 := 0
+245 [-]: GETGLOBAL R24 K62      ; R24 := 0x201191EA
+246 [-]: LOADK     R25 K56      ; R25 := 0
 247 [-]: CALL      R24 2 1      ; R24(R25)
 248 [-]: JMP       157          ; PC := 157
-249 [-]: GETGLOBAL R24 K51      ; R24 := _T
-250 [-]: GETTABLE  R24 R24 K52  ; R24 := R24["SharedRange"]
-251 [-]: SETTABLE  R24 R14 K62  ; R24[R14] := nil
+249 [-]: GETGLOBAL R24 K52      ; R24 := _T
+250 [-]: GETTABLE  R24 R24 K53  ; R24 := R24["SharedRange"]
+251 [-]: SETTABLE  R24 R14 K63  ; R24[R14] := nil
 252 [-]: JMP       257          ; PC := 257
-253 [-]: GETGLOBAL R24 K63      ; R24 := 0x93B1256B
-254 [-]: LOADK     R25 K64      ; R25 := "Reinforcement projectile creation failed"
+253 [-]: GETGLOBAL R24 K64      ; R24 := 0x93B1256B
+254 [-]: LOADK     R25 K65      ; R25 := "Reinforcement projectile creation failed"
 255 [-]: CALL      R24 2 1      ; R24(R25)
 256 [-]: RETURN    R0 1         ; return 
 257 [-]: RETURN    R0 1         ; return 

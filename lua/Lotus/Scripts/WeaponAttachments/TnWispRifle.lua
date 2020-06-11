@@ -177,7 +177,7 @@ code size: 61
  34 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  35 [-]: GETGLOBAL R8 K9        ; R8 := Game
  36 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["WEAPON_MODE_SWITCH_SPEED"]
- 37 [-]: GETGLOBAL R9 K9        ; R9 := Game
+ 37 [-]: GETGLOBAL R9 K5        ; R9 := Engine
  38 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["STACKING_MULTIPLY"]
  39 [-]: GETGLOBAL R10 K12      ; R10 := modeChangeSpeed
  40 [-]: SELF      R11 R1 K13   ; R12 := R1; R11 := R1["0xE2B32C65"]
@@ -232,7 +232,7 @@ code size: 61
  34 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xF21555A7"]
  35 [-]: GETGLOBAL R8 K9        ; R8 := Game
  36 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["WEAPON_MODE_SWITCH_SPEED"]
- 37 [-]: GETGLOBAL R9 K9        ; R9 := Game
+ 37 [-]: GETGLOBAL R9 K5        ; R9 := Engine
  38 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["STACKING_MULTIPLY"]
  39 [-]: GETGLOBAL R10 K12      ; R10 := modeChangeSpeed
  40 [-]: SELF      R11 R1 K13   ; R12 := R1; R11 := R1["0xE2B32C65"]

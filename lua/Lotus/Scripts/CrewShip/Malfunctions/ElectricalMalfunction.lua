@@ -296,44 +296,44 @@ code size: 72
   8 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1["0xF21555A7"]
   9 [-]: GETGLOBAL R4 K2        ; R4 := Game
  10 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["AVATAR_SHIELD_MAX"]
- 11 [-]: GETGLOBAL R5 K2        ; R5 := Game
- 12 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["STACKING_MULTIPLY"]
+ 11 [-]: GETGLOBAL R5 K4        ; R5 := Engine
+ 12 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["STACKING_MULTIPLY"]
  13 [-]: GETUPVAL  R6 U1        ; R6 := U1
  14 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  15 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 16 [-]: GETGLOBAL R3 K5        ; R3 := _T
- 17 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["Malfunctions"]
- 18 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["ElectricalMalfunctionCount"]
+ 16 [-]: GETGLOBAL R3 K6        ; R3 := _T
+ 17 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["Malfunctions"]
+ 18 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["ElectricalMalfunctionCount"]
  19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  20 [-]: TEST      R2 1         ; if R2 then PC := 47
  21 [-]: JMP       47           ; PC := 47
- 22 [-]: GETGLOBAL R2 K8        ; R2 := gGameRules
- 23 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0xFFF74EB1"]
+ 22 [-]: GETGLOBAL R2 K9        ; R2 := gGameRules
+ 23 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2["0xFFF74EB1"]
  24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  25 [-]: TEST      R2 1         ; if R2 then PC := 47
  26 [-]: JMP       47           ; PC := 47
- 27 [-]: GETGLOBAL R2 K5        ; R2 := _T
- 28 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["Malfunctions"]
- 29 [-]: GETGLOBAL R3 K5        ; R3 := _T
- 30 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["Malfunctions"]
- 31 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["ElectricalMalfunctionCount"]
- 32 [-]: SUB       R3 R3 K10    ; R3 := R3 - 1
- 33 [-]: SETTABLE  R2 K7 R3     ; R2["ElectricalMalfunctionCount"] := R3
- 34 [-]: GETGLOBAL R2 K5        ; R2 := _T
- 35 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["Malfunctions"]
- 36 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["ElectricalMalfunctionCount"]
- 37 [-]: EQ        0 R2 K11     ; if R2 ~= 0 then PC := 47
+ 27 [-]: GETGLOBAL R2 K6        ; R2 := _T
+ 28 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["Malfunctions"]
+ 29 [-]: GETGLOBAL R3 K6        ; R3 := _T
+ 30 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["Malfunctions"]
+ 31 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["ElectricalMalfunctionCount"]
+ 32 [-]: SUB       R3 R3 K11    ; R3 := R3 - 1
+ 33 [-]: SETTABLE  R2 K8 R3     ; R2["ElectricalMalfunctionCount"] := R3
+ 34 [-]: GETGLOBAL R2 K6        ; R2 := _T
+ 35 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["Malfunctions"]
+ 36 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["ElectricalMalfunctionCount"]
+ 37 [-]: EQ        0 R2 K12     ; if R2 ~= 0 then PC := 47
  38 [-]: JMP       47           ; PC := 47
  39 [-]: GETUPVAL  R2 U2        ; R2 := U2
  40 [-]: GETUPVAL  R3 U3        ; R3 := U3
  41 [-]: CALL      R3 1 2       ; R3 := R3()
- 42 [-]: GETGLOBAL R4 K12       ; R4 := transmissionSet
- 43 [-]: GETGLOBAL R5 K13       ; R5 := 0xEC274B1A
- 44 [-]: LOADK     R6 K14       ; R6 := "ElectricHazardRepaired"
+ 42 [-]: GETGLOBAL R4 K13       ; R4 := transmissionSet
+ 43 [-]: GETGLOBAL R5 K14       ; R5 := 0xEC274B1A
+ 44 [-]: LOADK     R6 K15       ; R6 := "ElectricHazardRepaired"
  45 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  46 [-]: CALL      R2 0 1       ; R2(R3,...)
- 47 [-]: GETGLOBAL R2 K8        ; R2 := gGameRules
- 48 [-]: SELF      R2 R2 K15    ; R3 := R2; R2 := R2["0x1106FFC3"]
+ 47 [-]: GETGLOBAL R2 K9        ; R2 := gGameRules
+ 48 [-]: SELF      R2 R2 K16    ; R3 := R2; R2 := R2["0x1106FFC3"]
  49 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  50 [-]: LOADNIL   R3 R3        ; R3 := nil
  51 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
@@ -341,14 +341,14 @@ code size: 72
  53 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  54 [-]: TEST      R4 1         ; if R4 then PC := 66
  55 [-]: JMP       66           ; PC := 66
- 56 [-]: SELF      R4 R2 K16    ; R5 := R2; R4 := R2["0x143DE652"]
+ 56 [-]: SELF      R4 R2 K17    ; R5 := R2; R4 := R2["0x143DE652"]
  57 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  58 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
  59 [-]: MOVE      R6 R4        ; R6 := R4
  60 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  61 [-]: TEST      R5 1         ; if R5 then PC := 66
  62 [-]: JMP       66           ; PC := 66
- 63 [-]: SELF      R5 R4 K17    ; R6 := R4; R5 := R4["0xA4499253"]
+ 63 [-]: SELF      R5 R4 K18    ; R6 := R4; R5 := R4["0xA4499253"]
  64 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  65 [-]: MOVE      R3 R5        ; R3 := R5
  66 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
@@ -356,12 +356,12 @@ code size: 72
  68 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  69 [-]: TEST      R5 1         ; if R5 then PC := 80
  70 [-]: JMP       80           ; PC := 80
- 71 [-]: LOADK     R5 K18       ; R5 := 0.15000000596046
- 72 [-]: SELF      R6 R3 K19    ; R7 := R3; R6 := R3["0x385BD2FE"]
+ 71 [-]: LOADK     R5 K19       ; R5 := 0.15000000596046
+ 72 [-]: SELF      R6 R3 K20    ; R7 := R3; R6 := R3["0x385BD2FE"]
  73 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  74 [-]: MUL       R6 R6 R5     ; R6 := R6 * R5
- 75 [-]: SELF      R7 R3 K20    ; R8 := R3; R7 := R3["0x76C229EF"]
- 76 [-]: SELF      R9 R3 K21    ; R10 := R3; R9 := R3["0x2F79FBD3"]
+ 75 [-]: SELF      R7 R3 K21    ; R8 := R3; R7 := R3["0x76C229EF"]
+ 76 [-]: SELF      R9 R3 K22    ; R10 := R3; R9 := R3["0x2F79FBD3"]
  77 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  78 [-]: ADD       R9 R9 R6     ; R9 := R9 + R6
  79 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -435,8 +435,8 @@ code size: 72
  56 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0x3B1B11B9"]
  57 [-]: GETGLOBAL R4 K14       ; R4 := Game
  58 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["AVATAR_SHIELD_MAX"]
- 59 [-]: GETGLOBAL R5 K14       ; R5 := Game
- 60 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["STACKING_MULTIPLY"]
+ 59 [-]: GETGLOBAL R5 K16       ; R5 := Engine
+ 60 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["STACKING_MULTIPLY"]
  61 [-]: GETUPVAL  R6 U2        ; R6 := U2
  62 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  63 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
@@ -444,9 +444,9 @@ code size: 72
  65 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  66 [-]: TEST      R2 1         ; if R2 then PC := 72
  67 [-]: JMP       72           ; PC := 72
- 68 [-]: GETGLOBAL R2 K17       ; R2 := 0x94BCBD40
+ 68 [-]: GETGLOBAL R2 K18       ; R2 := 0x94BCBD40
  69 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 70 [-]: LOADK     R4 K18       ; R4 := "OnDestroyed"
+ 70 [-]: LOADK     R4 K19       ; R4 := "OnDestroyed"
  71 [-]: CALL      R2 3 1       ; R2(R3,R4)
  72 [-]: RETURN    R0 1         ; return 
 

@@ -1,7 +1,7 @@
 code size: 294
 code size: 73
-code size: 48
-code size: 196
+code size: 50
+code size: 200
 code size: 29
 code size: 56
 code size: 238
@@ -11,7 +11,7 @@ code size: 112
 code size: 26
 code size: 51
 code size: 304
-code size: 292
+code size: 293
 code size: 20
 code size: 23
 code size: 87
@@ -179,7 +179,7 @@ code size: 31
 142 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 143 [-]: SETTABLE  R21 K53 R22  ; R21["upgradeTypes"] := R22
 144 [-]: NEWTABLE  R22 1 0      ; R22 := {}
-145 [-]: GETGLOBAL R23 K54      ; R23 := Game
+145 [-]: GETGLOBAL R23 K40      ; R23 := Engine
 146 [-]: GETTABLE  R23 R23 K57  ; R23 := R23["ADD"]
 147 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 148 [-]: SETTABLE  R21 K56 R22  ; R21["operationTypes"] := R22
@@ -197,7 +197,7 @@ code size: 31
 160 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 161 [-]: SETTABLE  R21 K53 R22  ; R21["upgradeTypes"] := R22
 162 [-]: NEWTABLE  R22 1 0      ; R22 := {}
-163 [-]: GETGLOBAL R23 K54      ; R23 := Game
+163 [-]: GETGLOBAL R23 K40      ; R23 := Engine
 164 [-]: GETTABLE  R23 R23 K63  ; R23 := R23["STACKING_MULTIPLY"]
 165 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 166 [-]: SETTABLE  R21 K56 R22  ; R21["operationTypes"] := R22
@@ -218,11 +218,11 @@ code size: 31
 181 [-]: SETLIST   R22 3 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 3
 182 [-]: SETTABLE  R21 K53 R22  ; R21["upgradeTypes"] := R22
 183 [-]: NEWTABLE  R22 3 0      ; R22 := {}
-184 [-]: GETGLOBAL R23 K54      ; R23 := Game
+184 [-]: GETGLOBAL R23 K40      ; R23 := Engine
 185 [-]: GETTABLE  R23 R23 K63  ; R23 := R23["STACKING_MULTIPLY"]
-186 [-]: GETGLOBAL R24 K54      ; R24 := Game
+186 [-]: GETGLOBAL R24 K40      ; R24 := Engine
 187 [-]: GETTABLE  R24 R24 K63  ; R24 := R24["STACKING_MULTIPLY"]
-188 [-]: GETGLOBAL R25 K54      ; R25 := Game
+188 [-]: GETGLOBAL R25 K40      ; R25 := Engine
 189 [-]: GETTABLE  R25 R25 K63  ; R25 := R25["STACKING_MULTIPLY"]
 190 [-]: SETLIST   R22 3 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 3
 191 [-]: SETTABLE  R21 K56 R22  ; R21["operationTypes"] := R22
@@ -241,7 +241,7 @@ code size: 31
 204 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 205 [-]: SETTABLE  R21 K53 R22  ; R21["upgradeTypes"] := R22
 206 [-]: NEWTABLE  R22 1 0      ; R22 := {}
-207 [-]: GETGLOBAL R23 K54      ; R23 := Game
+207 [-]: GETGLOBAL R23 K40      ; R23 := Engine
 208 [-]: GETTABLE  R23 R23 K63  ; R23 := R23["STACKING_MULTIPLY"]
 209 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 210 [-]: SETTABLE  R21 K56 R22  ; R21["operationTypes"] := R22
@@ -258,7 +258,7 @@ code size: 31
 221 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 222 [-]: SETTABLE  R21 K53 R22  ; R21["upgradeTypes"] := R22
 223 [-]: NEWTABLE  R22 1 0      ; R22 := {}
-224 [-]: GETGLOBAL R23 K54      ; R23 := Game
+224 [-]: GETGLOBAL R23 K40      ; R23 := Engine
 225 [-]: GETTABLE  R23 R23 K57  ; R23 := R23["ADD"]
 226 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 227 [-]: SETTABLE  R21 K56 R22  ; R21["operationTypes"] := R22
@@ -276,7 +276,7 @@ code size: 31
 239 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 240 [-]: SETTABLE  R21 K53 R22  ; R21["upgradeTypes"] := R22
 241 [-]: NEWTABLE  R22 1 0      ; R22 := {}
-242 [-]: GETGLOBAL R23 K54      ; R23 := Game
+242 [-]: GETGLOBAL R23 K40      ; R23 := Engine
 243 [-]: GETTABLE  R23 R23 K63  ; R23 := R23["STACKING_MULTIPLY"]
 244 [-]: SETLIST   R22 1 1      ; R22[(1-1)*FPF+i] := R(22+i), 1 <= i <= 1
 245 [-]: SETTABLE  R21 K56 R22  ; R21["operationTypes"] := R22
@@ -424,54 +424,56 @@ code size: 31
 ; Is_vararg:       0
 ; Max Stack Size:  13
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  3 [-]: GETUPVAL  R3 U2        ; R3 := U2
-  4 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
-  5 [-]: MOVE      R5 R0        ; R5 := R0
-  6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-  7 [-]: TEST      R4 1         ; if R4 then PC := 44
-  8 [-]: JMP       44           ; PC := 44
-  9 [-]: SELF      R4 R0 K1     ; R5 := R0; R4 := R0["0x8DB5D01F"]
- 10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 11 [-]: SELF      R5 R4 K2     ; R6 := R4; R5 := R4["0x6978AC59"]
- 12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 13 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
- 14 [-]: MOVE      R7 R5        ; R7 := R5
- 15 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 16 [-]: TEST      R6 1         ; if R6 then PC := 44
- 17 [-]: JMP       44           ; PC := 44
- 18 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5["0xE2B32C65"]
- 19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 20 [-]: SELF      R7 R4 K4     ; R8 := R4; R7 := R4["0xC7EA8CA1"]
- 21 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 22 [-]: GETGLOBAL R10 K5       ; R10 := Game
- 23 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["AVATAR_ABILITY_STRENGTH"]
- 24 [-]: MOVE      R11 R6       ; R11 := R6
- 25 [-]: MOVE      R12 R5       ; R12 := R5
- 26 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
- 27 [-]: MOVE      R1 R7        ; R1 := R7
- 28 [-]: SELF      R7 R4 K4     ; R8 := R4; R7 := R4["0xC7EA8CA1"]
- 29 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 30 [-]: GETGLOBAL R10 K5       ; R10 := Game
- 31 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["AVATAR_ABILITY_RANGE"]
- 32 [-]: MOVE      R11 R6       ; R11 := R6
- 33 [-]: MOVE      R12 R5       ; R12 := R5
- 34 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
- 35 [-]: MOVE      R2 R7        ; R2 := R7
- 36 [-]: SELF      R7 R4 K4     ; R8 := R4; R7 := R4["0xC7EA8CA1"]
- 37 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 38 [-]: GETGLOBAL R10 K5       ; R10 := Game
- 39 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["AVATAR_ABILITY_DURATION"]
- 40 [-]: MOVE      R11 R6       ; R11 := R6
- 41 [-]: MOVE      R12 R5       ; R12 := R5
- 42 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
- 43 [-]: MOVE      R3 R7        ; R3 := R7
- 44 [-]: MOVE      R7 R1        ; R7 := R1
- 45 [-]: MOVE      R8 R2        ; R8 := R2
- 46 [-]: MOVE      R9 R3        ; R9 := R3
- 47 [-]: RETURN    R7 4         ; return R7,R8,R9
- 48 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := Engine
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0xB6D816A9"]
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  5 [-]: GETUPVAL  R2 U1        ; R2 := U1
+  6 [-]: GETUPVAL  R3 U2        ; R3 := U2
+  7 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
+  8 [-]: MOVE      R5 R0        ; R5 := R0
+  9 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 10 [-]: TEST      R4 1         ; if R4 then PC := 46
+ 11 [-]: JMP       46           ; PC := 46
+ 12 [-]: SELF      R4 R0 K3     ; R5 := R0; R4 := R0["0x8DB5D01F"]
+ 13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 14 [-]: SELF      R5 R4 K4     ; R6 := R4; R5 := R4["0x6978AC59"]
+ 15 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 16 [-]: GETGLOBAL R6 K2        ; R6 := 0x400E7765
+ 17 [-]: MOVE      R7 R5        ; R7 := R5
+ 18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 19 [-]: TEST      R6 1         ; if R6 then PC := 46
+ 20 [-]: JMP       46           ; PC := 46
+ 21 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5["0xE2B32C65"]
+ 22 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 23 [-]: SELF      R7 R4 K6     ; R8 := R4; R7 := R4["0x65A9AF93"]
+ 24 [-]: MOVE      R9 R1        ; R9 := R1
+ 25 [-]: GETGLOBAL R10 K7       ; R10 := Game
+ 26 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["AVATAR_ABILITY_STRENGTH"]
+ 27 [-]: MOVE      R11 R6       ; R11 := R6
+ 28 [-]: MOVE      R12 R5       ; R12 := R5
+ 29 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+ 30 [-]: SELF      R7 R4 K9     ; R8 := R4; R7 := R4["0xC7EA8CA1"]
+ 31 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 32 [-]: GETGLOBAL R10 K7       ; R10 := Game
+ 33 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["AVATAR_ABILITY_RANGE"]
+ 34 [-]: MOVE      R11 R6       ; R11 := R6
+ 35 [-]: MOVE      R12 R5       ; R12 := R5
+ 36 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
+ 37 [-]: MOVE      R2 R7        ; R2 := R7
+ 38 [-]: SELF      R7 R4 K9     ; R8 := R4; R7 := R4["0xC7EA8CA1"]
+ 39 [-]: GETUPVAL  R9 U2        ; R9 := U2
+ 40 [-]: GETGLOBAL R10 K7       ; R10 := Game
+ 41 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["AVATAR_ABILITY_DURATION"]
+ 42 [-]: MOVE      R11 R6       ; R11 := R6
+ 43 [-]: MOVE      R12 R5       ; R12 := R5
+ 44 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
+ 45 [-]: MOVE      R3 R7        ; R3 := R7
+ 46 [-]: MOVE      R7 R1        ; R7 := R1
+ 47 [-]: MOVE      R8 R2        ; R8 := R2
+ 48 [-]: MOVE      R9 R3        ; R9 := R3
+ 49 [-]: RETURN    R7 4         ; return R7,R8,R9
+ 50 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
@@ -492,8 +494,8 @@ code size: 31
   7 [-]: GETGLOBAL R1 K0        ; R1 := _T
   8 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["AbilityLevelQueryParms"]
   9 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["Modded"]
- 10 [-]: EQ        0 R1 K4      ; if R1 ~= "0x1" then PC := 20
- 11 [-]: JMP       20           ; PC := 20
+ 10 [-]: EQ        0 R1 K4      ; if R1 ~= "0x1" then PC := 24
+ 11 [-]: JMP       24           ; PC := 24
  12 [-]: GETUPVAL  R1 U4        ; R1 := U4
  13 [-]: GETGLOBAL R2 K0        ; R2 := _T
  14 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["AbilityLevelQueryParms"]
@@ -502,189 +504,193 @@ code size: 31
  17 [-]: MOVE      R3 R3        ; R3 := R3
  18 [-]: MOVE      R2 R2        ; R2 := R2
  19 [-]: MOVE      R1 R1        ; R1 := R1
- 20 [-]: NEWTABLE  R1 0 0       ; R1 := {}
- 21 [-]: GETGLOBAL R2 K6        ; R2 := table
- 22 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 23 [-]: MOVE      R3 R1        ; R3 := R1
- 24 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 25 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Lotus/Language/Game/DAMAGE"
- 26 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 27 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
- 28 [-]: SETTABLE  R4 K11 K12   ; R4["ValueIcon"] := "<DT_IMPACT>"
- 29 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 30 [-]: GETGLOBAL R2 K6        ; R2 := table
- 31 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 32 [-]: MOVE      R3 R1        ; R3 := R1
- 33 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 34 [-]: SETTABLE  R4 K8 K13    ; R4["Label"] := "/Game/WEAPON_RANGE"
- 35 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 36 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
- 37 [-]: SETTABLE  R4 K14 K15   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
- 38 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 39 [-]: GETGLOBAL R2 K6        ; R2 := table
- 40 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 41 [-]: MOVE      R3 R1        ; R3 := R1
- 42 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 43 [-]: SETTABLE  R4 K8 K16    ; R4["Label"] := "/Lotus/Language/Game/DEBUFF_DURATION"
- 44 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 45 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
- 46 [-]: SETTABLE  R4 K14 K17   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
- 47 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 48 [-]: GETGLOBAL R2 K6        ; R2 := table
- 49 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 50 [-]: MOVE      R3 R1        ; R3 := R1
- 51 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 52 [-]: SETTABLE  R4 K8 K18    ; R4["Label"] := "/Lotus/Language/Game/EFFECT_RADIUS"
- 53 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 54 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
- 55 [-]: SETTABLE  R4 K14 K15   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
- 56 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 57 [-]: GETGLOBAL R2 K6        ; R2 := table
- 58 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 59 [-]: MOVE      R3 R1        ; R3 := R1
- 60 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 61 [-]: SETTABLE  R4 K8 K19    ; R4["Label"] := "/Lotus/Language/Game/EFFECT_DURATION"
- 62 [-]: GETUPVAL  R5 U6        ; R5 := U6
- 63 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
- 64 [-]: SETTABLE  R4 K14 K17   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
- 65 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 66 [-]: GETGLOBAL R2 K6        ; R2 := table
- 67 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 68 [-]: MOVE      R3 R1        ; R3 := R1
- 69 [-]: NEWTABLE  R4 0 2       ; R4 := {}
- 70 [-]: SETTABLE  R4 K8 K20    ; R4["Label"] := "/Lotus/Language/Items/AuraThornsAbility"
- 71 [-]: SETTABLE  R4 K21 K4    ; R4["Title"] := "0x1"
- 72 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 73 [-]: GETGLOBAL R2 K6        ; R2 := table
- 74 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 75 [-]: MOVE      R3 R1        ; R3 := R1
- 76 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 77 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Lotus/Language/Game/DAMAGE"
- 78 [-]: GETGLOBAL R5 K22       ; R5 := math
- 79 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["0xF7005A7B"]
- 80 [-]: GETUPVAL  R6 U7        ; R6 := U7
- 81 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["thorns"]
- 82 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["values"]
- 83 [-]: GETTABLE  R6 R6 K26    ; R6 := R6[1]
- 84 [-]: MUL       R6 R6 K27    ; R6 := R6 * 100
- 85 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 86 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
- 87 [-]: SETTABLE  R4 K14 K28   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
- 88 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 89 [-]: GETGLOBAL R2 K6        ; R2 := table
- 90 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 91 [-]: MOVE      R3 R1        ; R3 := R1
- 92 [-]: NEWTABLE  R4 0 2       ; R4 := {}
- 93 [-]: SETTABLE  R4 K8 K29    ; R4["Label"] := "/Lotus/Language/Items/AuraDustAbility"
- 94 [-]: SETTABLE  R4 K21 K4    ; R4["Title"] := "0x1"
- 95 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 96 [-]: GETGLOBAL R2 K6        ; R2 := table
- 97 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
- 98 [-]: MOVE      R3 R1        ; R3 := R1
- 99 [-]: NEWTABLE  R4 0 3       ; R4 := {}
-100 [-]: SETTABLE  R4 K8 K30    ; R4["Label"] := "/Game/AVATAR_NPC_HIT_CHANCE"
-101 [-]: GETGLOBAL R5 K22       ; R5 := math
-102 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["0xF7005A7B"]
-103 [-]: GETUPVAL  R6 U7        ; R6 := U7
-104 [-]: GETTABLE  R6 R6 K31    ; R6 := R6["dust"]
-105 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["values"]
-106 [-]: GETTABLE  R6 R6 K26    ; R6 := R6[1]
-107 [-]: MUL       R6 R6 K27    ; R6 := R6 * 100
-108 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-109 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
-110 [-]: SETTABLE  R4 K14 K28   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
-111 [-]: CALL      R2 3 1       ; R2(R3,R4)
-112 [-]: GETGLOBAL R2 K6        ; R2 := table
-113 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
-114 [-]: MOVE      R3 R1        ; R3 := R1
-115 [-]: NEWTABLE  R4 0 2       ; R4 := {}
-116 [-]: SETTABLE  R4 K8 K32    ; R4["Label"] := "/Lotus/Language/Items/AuraWildAbility"
-117 [-]: SETTABLE  R4 K21 K4    ; R4["Title"] := "0x1"
-118 [-]: CALL      R2 3 1       ; R2(R3,R4)
-119 [-]: GETGLOBAL R2 K6        ; R2 := table
-120 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
-121 [-]: MOVE      R3 R1        ; R3 := R1
-122 [-]: NEWTABLE  R4 0 3       ; R4 := {}
-123 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Lotus/Language/Game/DAMAGE"
-124 [-]: GETGLOBAL R5 K22       ; R5 := math
-125 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["0xF7005A7B"]
-126 [-]: GETUPVAL  R6 U7        ; R6 := U7
-127 [-]: GETTABLE  R6 R6 K33    ; R6 := R6["wild"]
-128 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["values"]
-129 [-]: GETTABLE  R6 R6 K26    ; R6 := R6[1]
-130 [-]: MUL       R6 R6 K27    ; R6 := R6 * 100
-131 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-132 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
-133 [-]: SETTABLE  R4 K14 K28   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
-134 [-]: CALL      R2 3 1       ; R2(R3,R4)
-135 [-]: GETGLOBAL R2 K6        ; R2 := table
-136 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
-137 [-]: MOVE      R3 R1        ; R3 := R1
-138 [-]: NEWTABLE  R4 0 3       ; R4 := {}
-139 [-]: SETTABLE  R4 K8 K34    ; R4["Label"] := "/Lotus/Language/Game/HEALTH"
-140 [-]: GETGLOBAL R5 K22       ; R5 := math
-141 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["0xF7005A7B"]
-142 [-]: GETUPVAL  R6 U7        ; R6 := U7
-143 [-]: GETTABLE  R6 R6 K33    ; R6 := R6["wild"]
-144 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["values"]
-145 [-]: GETTABLE  R6 R6 K35    ; R6 := R6[2]
-146 [-]: MUL       R6 R6 K27    ; R6 := R6 * 100
-147 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-148 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
-149 [-]: SETTABLE  R4 K14 K28   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
-150 [-]: CALL      R2 3 1       ; R2(R3,R4)
-151 [-]: GETGLOBAL R2 K6        ; R2 := table
-152 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
-153 [-]: MOVE      R3 R1        ; R3 := R1
-154 [-]: NEWTABLE  R4 0 3       ; R4 := {}
-155 [-]: SETTABLE  R4 K8 K36    ; R4["Label"] := "/Game/AVATAR_ARMOUR"
-156 [-]: GETGLOBAL R5 K22       ; R5 := math
-157 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["0xF7005A7B"]
-158 [-]: GETUPVAL  R6 U7        ; R6 := U7
-159 [-]: GETTABLE  R6 R6 K33    ; R6 := R6["wild"]
-160 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["values"]
-161 [-]: GETTABLE  R6 R6 K37    ; R6 := R6[3]
-162 [-]: MUL       R6 R6 K27    ; R6 := R6 * 100
-163 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-164 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
-165 [-]: SETTABLE  R4 K14 K28   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
-166 [-]: CALL      R2 3 1       ; R2(R3,R4)
-167 [-]: GETGLOBAL R2 K6        ; R2 := table
-168 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
-169 [-]: MOVE      R3 R1        ; R3 := R1
-170 [-]: NEWTABLE  R4 0 2       ; R4 := {}
-171 [-]: SETTABLE  R4 K8 K38    ; R4["Label"] := "/Lotus/Language/Items/AuraVinesAbility"
-172 [-]: SETTABLE  R4 K21 K4    ; R4["Title"] := "0x1"
-173 [-]: CALL      R2 3 1       ; R2(R3,R4)
-174 [-]: GETGLOBAL R2 K6        ; R2 := table
-175 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
-176 [-]: MOVE      R3 R1        ; R3 := R1
-177 [-]: NEWTABLE  R4 0 3       ; R4 := {}
-178 [-]: SETTABLE  R4 K8 K39    ; R4["Label"] := "/Game/AVATAR_MOVEMENT_SPEED"
-179 [-]: GETGLOBAL R5 K22       ; R5 := math
-180 [-]: GETTABLE  R5 R5 K23    ; R5 := R5["0xF7005A7B"]
-181 [-]: GETUPVAL  R6 U7        ; R6 := U7
-182 [-]: GETTABLE  R6 R6 K40    ; R6 := R6["vines"]
-183 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["values"]
-184 [-]: GETTABLE  R6 R6 K26    ; R6 := R6[1]
-185 [-]: MUL       R6 R6 K27    ; R6 := R6 * 100
-186 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-187 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
-188 [-]: SETTABLE  R4 K14 K28   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
-189 [-]: CALL      R2 3 1       ; R2(R3,R4)
-190 [-]: GETGLOBAL R2 K0        ; R2 := _T
-191 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["AbilityLevelQueryParms"]
-192 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Modded"]
-193 [-]: SETTABLE  R1 K3 R2     ; R1["Modded"] := R2
+ 20 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 21 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0xA5E9CEA2"]
+ 22 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 23 [-]: MOVE      R1 R1        ; R1 := R1
+ 24 [-]: NEWTABLE  R1 0 0       ; R1 := {}
+ 25 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 26 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 27 [-]: MOVE      R3 R1        ; R3 := R1
+ 28 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+ 29 [-]: SETTABLE  R4 K9 K10    ; R4["Label"] := "/Lotus/Language/Game/DAMAGE"
+ 30 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 31 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+ 32 [-]: SETTABLE  R4 K12 K13   ; R4["ValueIcon"] := "<DT_IMPACT>"
+ 33 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 34 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 35 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 36 [-]: MOVE      R3 R1        ; R3 := R1
+ 37 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+ 38 [-]: SETTABLE  R4 K9 K14    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
+ 39 [-]: GETUPVAL  R5 U2        ; R5 := U2
+ 40 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+ 41 [-]: SETTABLE  R4 K15 K16   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
+ 42 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 43 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 44 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 45 [-]: MOVE      R3 R1        ; R3 := R1
+ 46 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+ 47 [-]: SETTABLE  R4 K9 K17    ; R4["Label"] := "/Lotus/Language/Game/DEBUFF_DURATION"
+ 48 [-]: GETUPVAL  R5 U3        ; R5 := U3
+ 49 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+ 50 [-]: SETTABLE  R4 K15 K18   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
+ 51 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 52 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 53 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 54 [-]: MOVE      R3 R1        ; R3 := R1
+ 55 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+ 56 [-]: SETTABLE  R4 K9 K19    ; R4["Label"] := "/Lotus/Language/Game/EFFECT_RADIUS"
+ 57 [-]: GETUPVAL  R5 U5        ; R5 := U5
+ 58 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+ 59 [-]: SETTABLE  R4 K15 K16   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
+ 60 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 61 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 62 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 63 [-]: MOVE      R3 R1        ; R3 := R1
+ 64 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+ 65 [-]: SETTABLE  R4 K9 K20    ; R4["Label"] := "/Lotus/Language/Game/EFFECT_DURATION"
+ 66 [-]: GETUPVAL  R5 U6        ; R5 := U6
+ 67 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+ 68 [-]: SETTABLE  R4 K15 K18   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
+ 69 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 70 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 71 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 72 [-]: MOVE      R3 R1        ; R3 := R1
+ 73 [-]: NEWTABLE  R4 0 2       ; R4 := {}
+ 74 [-]: SETTABLE  R4 K9 K21    ; R4["Label"] := "/Lotus/Language/Items/AuraThornsAbility"
+ 75 [-]: SETTABLE  R4 K22 K4    ; R4["Title"] := "0x1"
+ 76 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 77 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 78 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 79 [-]: MOVE      R3 R1        ; R3 := R1
+ 80 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+ 81 [-]: SETTABLE  R4 K9 K10    ; R4["Label"] := "/Lotus/Language/Game/DAMAGE"
+ 82 [-]: GETGLOBAL R5 K23       ; R5 := math
+ 83 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["0xF7005A7B"]
+ 84 [-]: GETUPVAL  R6 U7        ; R6 := U7
+ 85 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["thorns"]
+ 86 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["values"]
+ 87 [-]: GETTABLE  R6 R6 K27    ; R6 := R6[1]
+ 88 [-]: MUL       R6 R6 K28    ; R6 := R6 * 100
+ 89 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 90 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+ 91 [-]: SETTABLE  R4 K15 K29   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
+ 92 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 93 [-]: GETGLOBAL R2 K7        ; R2 := table
+ 94 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+ 95 [-]: MOVE      R3 R1        ; R3 := R1
+ 96 [-]: NEWTABLE  R4 0 2       ; R4 := {}
+ 97 [-]: SETTABLE  R4 K9 K30    ; R4["Label"] := "/Lotus/Language/Items/AuraDustAbility"
+ 98 [-]: SETTABLE  R4 K22 K4    ; R4["Title"] := "0x1"
+ 99 [-]: CALL      R2 3 1       ; R2(R3,R4)
+100 [-]: GETGLOBAL R2 K7        ; R2 := table
+101 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+102 [-]: MOVE      R3 R1        ; R3 := R1
+103 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+104 [-]: SETTABLE  R4 K9 K31    ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_NPC_HIT_CHANCE"
+105 [-]: GETGLOBAL R5 K23       ; R5 := math
+106 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["0xF7005A7B"]
+107 [-]: GETUPVAL  R6 U7        ; R6 := U7
+108 [-]: GETTABLE  R6 R6 K32    ; R6 := R6["dust"]
+109 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["values"]
+110 [-]: GETTABLE  R6 R6 K27    ; R6 := R6[1]
+111 [-]: MUL       R6 R6 K28    ; R6 := R6 * 100
+112 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+113 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+114 [-]: SETTABLE  R4 K15 K29   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
+115 [-]: CALL      R2 3 1       ; R2(R3,R4)
+116 [-]: GETGLOBAL R2 K7        ; R2 := table
+117 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+118 [-]: MOVE      R3 R1        ; R3 := R1
+119 [-]: NEWTABLE  R4 0 2       ; R4 := {}
+120 [-]: SETTABLE  R4 K9 K33    ; R4["Label"] := "/Lotus/Language/Items/AuraWildAbility"
+121 [-]: SETTABLE  R4 K22 K4    ; R4["Title"] := "0x1"
+122 [-]: CALL      R2 3 1       ; R2(R3,R4)
+123 [-]: GETGLOBAL R2 K7        ; R2 := table
+124 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+125 [-]: MOVE      R3 R1        ; R3 := R1
+126 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+127 [-]: SETTABLE  R4 K9 K10    ; R4["Label"] := "/Lotus/Language/Game/DAMAGE"
+128 [-]: GETGLOBAL R5 K23       ; R5 := math
+129 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["0xF7005A7B"]
+130 [-]: GETUPVAL  R6 U7        ; R6 := U7
+131 [-]: GETTABLE  R6 R6 K34    ; R6 := R6["wild"]
+132 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["values"]
+133 [-]: GETTABLE  R6 R6 K27    ; R6 := R6[1]
+134 [-]: MUL       R6 R6 K28    ; R6 := R6 * 100
+135 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+136 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+137 [-]: SETTABLE  R4 K15 K29   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
+138 [-]: CALL      R2 3 1       ; R2(R3,R4)
+139 [-]: GETGLOBAL R2 K7        ; R2 := table
+140 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+141 [-]: MOVE      R3 R1        ; R3 := R1
+142 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+143 [-]: SETTABLE  R4 K9 K35    ; R4["Label"] := "/Lotus/Language/Game/HEALTH"
+144 [-]: GETGLOBAL R5 K23       ; R5 := math
+145 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["0xF7005A7B"]
+146 [-]: GETUPVAL  R6 U7        ; R6 := U7
+147 [-]: GETTABLE  R6 R6 K34    ; R6 := R6["wild"]
+148 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["values"]
+149 [-]: GETTABLE  R6 R6 K36    ; R6 := R6[2]
+150 [-]: MUL       R6 R6 K28    ; R6 := R6 * 100
+151 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+152 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+153 [-]: SETTABLE  R4 K15 K29   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
+154 [-]: CALL      R2 3 1       ; R2(R3,R4)
+155 [-]: GETGLOBAL R2 K7        ; R2 := table
+156 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+157 [-]: MOVE      R3 R1        ; R3 := R1
+158 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+159 [-]: SETTABLE  R4 K9 K37    ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_ARMOUR"
+160 [-]: GETGLOBAL R5 K23       ; R5 := math
+161 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["0xF7005A7B"]
+162 [-]: GETUPVAL  R6 U7        ; R6 := U7
+163 [-]: GETTABLE  R6 R6 K34    ; R6 := R6["wild"]
+164 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["values"]
+165 [-]: GETTABLE  R6 R6 K38    ; R6 := R6[3]
+166 [-]: MUL       R6 R6 K28    ; R6 := R6 * 100
+167 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+168 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+169 [-]: SETTABLE  R4 K15 K29   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
+170 [-]: CALL      R2 3 1       ; R2(R3,R4)
+171 [-]: GETGLOBAL R2 K7        ; R2 := table
+172 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+173 [-]: MOVE      R3 R1        ; R3 := R1
+174 [-]: NEWTABLE  R4 0 2       ; R4 := {}
+175 [-]: SETTABLE  R4 K9 K39    ; R4["Label"] := "/Lotus/Language/Items/AuraVinesAbility"
+176 [-]: SETTABLE  R4 K22 K4    ; R4["Title"] := "0x1"
+177 [-]: CALL      R2 3 1       ; R2(R3,R4)
+178 [-]: GETGLOBAL R2 K7        ; R2 := table
+179 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
+180 [-]: MOVE      R3 R1        ; R3 := R1
+181 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+182 [-]: SETTABLE  R4 K9 K40    ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_MOVEMENT_SPEED"
+183 [-]: GETGLOBAL R5 K23       ; R5 := math
+184 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["0xF7005A7B"]
+185 [-]: GETUPVAL  R6 U7        ; R6 := U7
+186 [-]: GETTABLE  R6 R6 K41    ; R6 := R6["vines"]
+187 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["values"]
+188 [-]: GETTABLE  R6 R6 K27    ; R6 := R6[1]
+189 [-]: MUL       R6 R6 K28    ; R6 := R6 * 100
+190 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+191 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
+192 [-]: SETTABLE  R4 K15 K29   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
+193 [-]: CALL      R2 3 1       ; R2(R3,R4)
 194 [-]: GETGLOBAL R2 K0        ; R2 := _T
-195 [-]: SETTABLE  R2 K41 R1    ; R2["AbilityUpgradeLevelInfo"] := R1
-196 [-]: RETURN    R0 1         ; return 
+195 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["AbilityLevelQueryParms"]
+196 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Modded"]
+197 [-]: SETTABLE  R1 K3 R2     ; R1["Modded"] := R2
+198 [-]: GETGLOBAL R2 K0        ; R2 := _T
+199 [-]: SETTABLE  R2 K42 R1    ; R2["AbilityUpgradeLevelInfo"] := R1
+200 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 147
+; Defined at line: 148
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -724,7 +730,7 @@ code size: 31
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 155
+; Defined at line: 156
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -791,7 +797,7 @@ code size: 31
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 180
+; Defined at line: 181
 ; #Upvalues:       6
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1040,7 +1046,7 @@ code size: 31
 ; Function #6.1:
 ;
 ; Name:            
-; Defined at line: 223
+; Defined at line: 224
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1071,7 +1077,7 @@ code size: 31
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 275
+; Defined at line: 276
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1119,7 +1125,7 @@ code size: 31
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 296
+; Defined at line: 297
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1161,77 +1167,77 @@ code size: 31
  34 [-]: MOVE      R12 R1       ; R12 := R1
  35 [-]: GETGLOBAL R13 K11      ; R13 := Game
  36 [-]: GETTABLE  R13 R13 K12  ; R13 := R13["WEAPON_DAMAGE_AMOUNT"]
- 37 [-]: GETGLOBAL R14 K11      ; R14 := Game
- 38 [-]: GETTABLE  R14 R14 K13  ; R14 := R14["STACKING_MULTIPLY"]
+ 37 [-]: GETGLOBAL R14 K13      ; R14 := Engine
+ 38 [-]: GETTABLE  R14 R14 K14  ; R14 := R14["STACKING_MULTIPLY"]
  39 [-]: GETUPVAL  R15 U2       ; R15 := U2
  40 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
- 41 [-]: GETGLOBAL R10 K14      ; R10 := Lotus_Game
- 42 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["0xFAFD4322"]
+ 41 [-]: GETGLOBAL R10 K15      ; R10 := Lotus_Game
+ 42 [-]: GETTABLE  R10 R10 K16  ; R10 := R10["0xFAFD4322"]
  43 [-]: CALL      R10 1 2      ; R10 := R10()
- 44 [-]: SELF      R11 R0 K16   ; R12 := R0; R11 := R0["0x896389C9"]
+ 44 [-]: SELF      R11 R0 K17   ; R12 := R0; R11 := R0["0x896389C9"]
  45 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  46 [-]: TEST      R11 0        ; if not R11 then PC := 66
  47 [-]: JMP       66           ; PC := 66
- 48 [-]: SETTABLE  R10 K17 R0   ; R10["instigator"] := R0
+ 48 [-]: SETTABLE  R10 K18 R0   ; R10["instigator"] := R0
  49 [-]: NEWTABLE  R11 1 0      ; R11 := {}
  50 [-]: MOVE      R12 R0       ; R12 := R0
  51 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
- 52 [-]: SETTABLE  R10 K18 R11  ; R10["affected"] := R11
- 53 [-]: GETGLOBAL R11 K14      ; R11 := Lotus_Game
- 54 [-]: GETTABLE  R11 R11 K20  ; R11 := R11["BT_STACK"]
- 55 [-]: SETTABLE  R10 K19 R11  ; R10["buffType"] := R11
+ 52 [-]: SETTABLE  R10 K19 R11  ; R10["affected"] := R11
+ 53 [-]: GETGLOBAL R11 K15      ; R11 := Lotus_Game
+ 54 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["BT_STACK"]
+ 55 [-]: SETTABLE  R10 K20 R11  ; R10["buffType"] := R11
  56 [-]: GETGLOBAL R11 K6       ; R11 := mOwner
- 57 [-]: SETTABLE  R10 K21 R11  ; R10["abilityType"] := R11
- 58 [-]: SETTABLE  R10 K22 K1   ; R10["buffData"] := 1
- 59 [-]: SETTABLE  R10 K23 K24  ; R10["isDebuff"] := "0x1"
- 60 [-]: SETTABLE  R10 K25 K24  ; R10["stackData"] := "0x1"
- 61 [-]: SELF      R11 R0 K26   ; R12 := R0; R11 := R0["0x584F13D6"]
+ 57 [-]: SETTABLE  R10 K22 R11  ; R10["abilityType"] := R11
+ 58 [-]: SETTABLE  R10 K23 K1   ; R10["buffData"] := 1
+ 59 [-]: SETTABLE  R10 K24 K25  ; R10["isDebuff"] := "0x1"
+ 60 [-]: SETTABLE  R10 K26 K25  ; R10["stackData"] := "0x1"
+ 61 [-]: SELF      R11 R0 K27   ; R12 := R0; R11 := R0["0x584F13D6"]
  62 [-]: MOVE      R13 R10      ; R13 := R10
  63 [-]: MOVE      R14 R1       ; R14 := R1
  64 [-]: MOVE      R15 R1       ; R15 := R1
  65 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
- 66 [-]: LT        0 K27 R9     ; if 0 >= R9 then PC := 90
+ 66 [-]: LT        0 K28 R9     ; if 0 >= R9 then PC := 90
  67 [-]: JMP       90           ; PC := 90
- 68 [-]: GETGLOBAL R11 K28      ; R11 := 0x400E7765
+ 68 [-]: GETGLOBAL R11 K29      ; R11 := 0x400E7765
  69 [-]: MOVE      R12 R0       ; R12 := R0
  70 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  71 [-]: TEST      R11 1        ; if R11 then PC := 90
  72 [-]: JMP       90           ; PC := 90
- 73 [-]: SELF      R11 R0 K29   ; R12 := R0; R11 := R0["0x5A115A02"]
+ 73 [-]: SELF      R11 R0 K30   ; R12 := R0; R11 := R0["0x5A115A02"]
  74 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  75 [-]: TEST      R11 1        ; if R11 then PC := 90
  76 [-]: JMP       90           ; PC := 90
- 77 [-]: SELF      R11 R0 K30   ; R12 := R0; R11 := R0["0x495F554F"]
- 78 [-]: GETGLOBAL R13 K14      ; R13 := Lotus_Game
- 79 [-]: GETTABLE  R13 R13 K31  ; R13 := R13["AR_RESIST_ALL"]
+ 77 [-]: SELF      R11 R0 K31   ; R12 := R0; R11 := R0["0x495F554F"]
+ 78 [-]: GETGLOBAL R13 K15      ; R13 := Lotus_Game
+ 79 [-]: GETTABLE  R13 R13 K32  ; R13 := R13["AR_RESIST_ALL"]
  80 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  81 [-]: TEST      R11 1        ; if R11 then PC := 90
  82 [-]: JMP       90           ; PC := 90
- 83 [-]: GETGLOBAL R11 K32      ; R11 := 0x201191EA
- 84 [-]: LOADK     R12 K27      ; R12 := 0
+ 83 [-]: GETGLOBAL R11 K33      ; R11 := 0x201191EA
+ 84 [-]: LOADK     R12 K28      ; R12 := 0
  85 [-]: CALL      R11 2 1      ; R11(R12)
- 86 [-]: GETGLOBAL R11 K33      ; R11 := 0x4CDEF9FF
+ 86 [-]: GETGLOBAL R11 K34      ; R11 := 0x4CDEF9FF
  87 [-]: CALL      R11 1 2      ; R11 := R11()
  88 [-]: SUB       R9 R9 R11    ; R9 := R9 - R11
  89 [-]: JMP       66           ; PC := 66
- 90 [-]: GETGLOBAL R11 K28      ; R11 := 0x400E7765
+ 90 [-]: GETGLOBAL R11 K29      ; R11 := 0x400E7765
  91 [-]: MOVE      R12 R0       ; R12 := R0
  92 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  93 [-]: TEST      R11 1        ; if R11 then PC := 112
  94 [-]: JMP       112          ; PC := 112
- 95 [-]: SELF      R11 R2 K34   ; R12 := R2; R11 := R2["0x5A740E25"]
+ 95 [-]: SELF      R11 R2 K35   ; R12 := R2; R11 := R2["0x5A740E25"]
  96 [-]: MOVE      R13 R1       ; R13 := R1
  97 [-]: GETGLOBAL R14 K11      ; R14 := Game
  98 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["WEAPON_DAMAGE_AMOUNT"]
- 99 [-]: GETGLOBAL R15 K11      ; R15 := Game
-100 [-]: GETTABLE  R15 R15 K13  ; R15 := R15["STACKING_MULTIPLY"]
+ 99 [-]: GETGLOBAL R15 K13      ; R15 := Engine
+100 [-]: GETTABLE  R15 R15 K14  ; R15 := R15["STACKING_MULTIPLY"]
 101 [-]: GETUPVAL  R16 U2       ; R16 := U2
 102 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
-103 [-]: SELF      R11 R0 K16   ; R12 := R0; R11 := R0["0x896389C9"]
+103 [-]: SELF      R11 R0 K17   ; R12 := R0; R11 := R0["0x896389C9"]
 104 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 105 [-]: TEST      R11 0        ; if not R11 then PC := 112
 106 [-]: JMP       112          ; PC := 112
-107 [-]: SELF      R11 R0 K26   ; R12 := R0; R11 := R0["0x584F13D6"]
+107 [-]: SELF      R11 R0 K27   ; R12 := R0; R11 := R0["0x584F13D6"]
 108 [-]: MOVE      R13 R10      ; R13 := R10
 109 [-]: MOVE      R14 R0       ; R14 := R0
 110 [-]: MOVE      R15 R1       ; R15 := R1
@@ -1242,7 +1248,7 @@ code size: 31
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 343
+; Defined at line: 344
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1279,7 +1285,7 @@ code size: 31
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 359
+; Defined at line: 360
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1341,7 +1347,7 @@ code size: 31
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 386
+; Defined at line: 387
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1656,7 +1662,7 @@ code size: 31
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 506
+; Defined at line: 507
 ; #Upvalues:       10
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1759,8 +1765,8 @@ code size: 31
  95 [-]: GETGLOBAL R9 K16       ; R9 := 0x400E7765
  96 [-]: MOVE      R10 R2       ; R10 := R2
  97 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 98 [-]: TEST      R9 1         ; if R9 then PC := 292
- 99 [-]: JMP       292          ; PC := 292
+ 98 [-]: TEST      R9 1         ; if R9 then PC := 293
+ 99 [-]: JMP       293          ; PC := 293
 100 [-]: GETGLOBAL R9 K28       ; R9 := gRegion
 101 [-]: SELF      R9 R9 K29    ; R10 := R9; R9 := R9["0xBDD34CC6"]
 102 [-]: GETGLOBAL R11 K34      ; R11 := targetCastBurst
@@ -1894,13 +1900,13 @@ code size: 31
 230 [-]: GETGLOBAL R13 K28      ; R13 := gRegion
 231 [-]: SELF      R13 R13 K36  ; R14 := R13; R13 := R13["0xA559F558"]
 232 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-233 [-]: TEST      R13 0        ; if not R13 then PC := 292
-234 [-]: JMP       292          ; PC := 292
+233 [-]: TEST      R13 0        ; if not R13 then PC := 293
+234 [-]: JMP       293          ; PC := 293
 235 [-]: GETGLOBAL R13 K16      ; R13 := 0x400E7765
 236 [-]: MOVE      R14 R2       ; R14 := R2
 237 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-238 [-]: TEST      R13 1        ; if R13 then PC := 292
-239 [-]: JMP       292          ; PC := 292
+238 [-]: TEST      R13 1        ; if R13 then PC := 293
+239 [-]: JMP       293          ; PC := 293
 240 [-]: SELF      R13 R2 K44   ; R14 := R2; R13 := R2["0x6DA72501"]
 241 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 242 [-]: SELF      R14 R1 K44   ; R15 := R1; R14 := R1["0x6DA72501"]
@@ -1918,48 +1924,49 @@ code size: 31
 254 [-]: GETGLOBAL R14 K25      ; R14 := Engine
 255 [-]: GETTABLE  R14 R14 K69  ; R14 := R14["0xFA1ED226"]
 256 [-]: CALL      R14 1 2      ; R14 := R14()
-257 [-]: GETUPVAL  R15 U1       ; R15 := U1
-258 [-]: SETTABLE  R14 K70 R15  ; R14["baseAmount"] := R15
-259 [-]: SELF      R15 R14 K71  ; R16 := R14; R15 := R14["0xC4A45AF8"]
-260 [-]: GETGLOBAL R17 K25      ; R17 := Engine
-261 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["DT_IMPACT"]
-262 [-]: LOADK     R18 K7       ; R18 := 1
-263 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
-264 [-]: GETUPVAL  R15 U6       ; R15 := U6
-265 [-]: GETTABLE  R15 R15 K42  ; R15 := R15["0x232D0973"]
-266 [-]: CALL      R15 1 2      ; R15 := R15()
-267 [-]: TEST      R15 0        ; if not R15 then PC := 275
-268 [-]: JMP       275          ; PC := 275
-269 [-]: SELF      R15 R14 K73  ; R16 := R14; R15 := R14["0x535CFE87"]
-270 [-]: GETGLOBAL R17 K74      ; R17 := Game
-271 [-]: GETTABLE  R17 R17 K75  ; R17 := R17["PT_BIG_STAGGER"]
-272 [-]: MOVE      R18 R1       ; R18 := R1
-273 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
-274 [-]: JMP       280          ; PC := 280
-275 [-]: SELF      R15 R14 K73  ; R16 := R14; R15 := R14["0x535CFE87"]
-276 [-]: GETGLOBAL R17 K74      ; R17 := Game
-277 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["PT_RAGDOLL"]
-278 [-]: MOVE      R18 R1       ; R18 := R1
-279 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
-280 [-]: SELF      R15 R14 K77  ; R16 := R14; R15 := R14["0xE6EDB183"]
-281 [-]: MOVE      R17 R1       ; R17 := R1
-282 [-]: CALL      R15 3 1      ; R15(R16,R17)
-283 [-]: SELF      R15 R14 K78  ; R16 := R14; R15 := R14["0x85DAD235"]
-284 [-]: MOVE      R17 R0       ; R17 := R0
-285 [-]: CALL      R15 3 1      ; R15(R16,R17)
-286 [-]: SELF      R15 R14 K79  ; R16 := R14; R15 := R14["0x336239F7"]
-287 [-]: MUL       R17 R13 K80  ; R17 := R13 * 1200
-288 [-]: CALL      R15 3 1      ; R15(R16,R17)
-289 [-]: SELF      R15 R2 K81   ; R16 := R2; R15 := R2["0x4722B671"]
-290 [-]: MOVE      R17 R14      ; R17 := R14
-291 [-]: CALL      R15 3 1      ; R15(R16,R17)
-292 [-]: RETURN    R0 1         ; return 
+257 [-]: SELF      R15 R14 K70  ; R16 := R14; R15 := R14["0xA4DDDB40"]
+258 [-]: GETUPVAL  R17 U1       ; R17 := U1
+259 [-]: CALL      R15 3 1      ; R15(R16,R17)
+260 [-]: SELF      R15 R14 K71  ; R16 := R14; R15 := R14["0xC4A45AF8"]
+261 [-]: GETGLOBAL R17 K25      ; R17 := Engine
+262 [-]: GETTABLE  R17 R17 K72  ; R17 := R17["DT_IMPACT"]
+263 [-]: LOADK     R18 K7       ; R18 := 1
+264 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+265 [-]: GETUPVAL  R15 U6       ; R15 := U6
+266 [-]: GETTABLE  R15 R15 K42  ; R15 := R15["0x232D0973"]
+267 [-]: CALL      R15 1 2      ; R15 := R15()
+268 [-]: TEST      R15 0        ; if not R15 then PC := 276
+269 [-]: JMP       276          ; PC := 276
+270 [-]: SELF      R15 R14 K73  ; R16 := R14; R15 := R14["0x535CFE87"]
+271 [-]: GETGLOBAL R17 K74      ; R17 := Game
+272 [-]: GETTABLE  R17 R17 K75  ; R17 := R17["PT_BIG_STAGGER"]
+273 [-]: MOVE      R18 R1       ; R18 := R1
+274 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+275 [-]: JMP       281          ; PC := 281
+276 [-]: SELF      R15 R14 K73  ; R16 := R14; R15 := R14["0x535CFE87"]
+277 [-]: GETGLOBAL R17 K74      ; R17 := Game
+278 [-]: GETTABLE  R17 R17 K76  ; R17 := R17["PT_RAGDOLL"]
+279 [-]: MOVE      R18 R1       ; R18 := R1
+280 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+281 [-]: SELF      R15 R14 K77  ; R16 := R14; R15 := R14["0xE6EDB183"]
+282 [-]: MOVE      R17 R1       ; R17 := R1
+283 [-]: CALL      R15 3 1      ; R15(R16,R17)
+284 [-]: SELF      R15 R14 K78  ; R16 := R14; R15 := R14["0x85DAD235"]
+285 [-]: MOVE      R17 R0       ; R17 := R0
+286 [-]: CALL      R15 3 1      ; R15(R16,R17)
+287 [-]: SELF      R15 R14 K79  ; R16 := R14; R15 := R14["0x336239F7"]
+288 [-]: MUL       R17 R13 K80  ; R17 := R13 * 1200
+289 [-]: CALL      R15 3 1      ; R15(R16,R17)
+290 [-]: SELF      R15 R2 K81   ; R16 := R2; R15 := R2["0x4722B671"]
+291 [-]: MOVE      R17 R14      ; R17 := R14
+292 [-]: CALL      R15 3 1      ; R15(R16,R17)
+293 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 599
+; Defined at line: 600
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1990,7 +1997,7 @@ code size: 31
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 658
+; Defined at line: 659
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2024,7 +2031,7 @@ code size: 31
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 671
+; Defined at line: 672
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2122,7 +2129,7 @@ code size: 31
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 706
+; Defined at line: 707
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2172,7 +2179,7 @@ code size: 31
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 721
+; Defined at line: 722
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2641,7 +2648,7 @@ code size: 31
 ; Function #17.1:
 ;
 ; Name:            
-; Defined at line: 760
+; Defined at line: 761
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2728,7 +2735,7 @@ code size: 31
 ; Function #17.2:
 ;
 ; Name:            
-; Defined at line: 786
+; Defined at line: 787
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2793,7 +2800,7 @@ code size: 31
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 961
+; Defined at line: 962
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2898,7 +2905,7 @@ code size: 31
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 1005
+; Defined at line: 1006
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2926,7 +2933,7 @@ code size: 31
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 1015
+; Defined at line: 1016
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2985,7 +2992,7 @@ code size: 31
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 1033
+; Defined at line: 1034
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3024,7 +3031,7 @@ code size: 31
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 1044
+; Defined at line: 1045
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -3095,7 +3102,7 @@ code size: 31
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 1065
+; Defined at line: 1066
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0

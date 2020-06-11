@@ -181,14 +181,14 @@ code size: 123
   8 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x3B1B11B9"]
   9 [-]: GETGLOBAL R4 K4        ; R4 := Game
  10 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["AVATAR_SENTINEL_PICKUP_TO_ARMOR"]
- 11 [-]: GETGLOBAL R5 K4        ; R5 := Game
- 12 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["MULTIPLY"]
- 13 [-]: LOADK     R6 K7        ; R6 := 2
+ 11 [-]: GETGLOBAL R5 K6        ; R5 := Engine
+ 12 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["MULTIPLY"]
+ 13 [-]: LOADK     R6 K8        ; R6 := 2
  14 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 15 [-]: GETGLOBAL R2 K8        ; R2 := mOwner
- 16 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0xD4EAD9FA"]
- 17 [-]: GETGLOBAL R4 K10       ; R4 := 0xEC274B1A
- 18 [-]: LOADK     R5 K11       ; R5 := "OwnerPickup"
+ 15 [-]: GETGLOBAL R2 K9        ; R2 := mOwner
+ 16 [-]: SELF      R2 R2 K10    ; R3 := R2; R2 := R2["0xD4EAD9FA"]
+ 17 [-]: GETGLOBAL R4 K11       ; R4 := 0xEC274B1A
+ 18 [-]: LOADK     R5 K12       ; R5 := "OwnerPickup"
  19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  20 [-]: MOVE      R5 R1        ; R5 := R1
  21 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)

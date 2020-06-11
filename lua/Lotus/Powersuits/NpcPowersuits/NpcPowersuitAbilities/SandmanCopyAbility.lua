@@ -570,7 +570,7 @@ code size: 19
 358 [-]: CALL      R25 2 2      ; R25 := R25(R26)
 359 [-]: GETGLOBAL R26 K88      ; R26 := Game
 360 [-]: GETTABLE  R26 R26 K89  ; R26 := R26["WEAPON_DAMAGE_AMOUNT"]
-361 [-]: GETGLOBAL R27 K88      ; R27 := Game
+361 [-]: GETGLOBAL R27 K4       ; R27 := Engine
 362 [-]: GETTABLE  R27 R27 K90  ; R27 := R27["MULTIPLY"]
 363 [-]: GETGLOBAL R28 K91      ; R28 := weaponDamageMult
 364 [-]: CALL      R23 6 1      ; R23(R24,R25,R26,R27,R28)
@@ -582,7 +582,7 @@ code size: 19
 370 [-]: CALL      R25 2 2      ; R25 := R25(R26)
 371 [-]: GETGLOBAL R26 K88      ; R26 := Game
 372 [-]: GETTABLE  R26 R26 K93  ; R26 := R26["AVATAR_HEALTH_MAX"]
-373 [-]: GETGLOBAL R27 K88      ; R27 := Game
+373 [-]: GETGLOBAL R27 K4       ; R27 := Engine
 374 [-]: GETTABLE  R27 R27 K94  ; R27 := R27["SET"]
 375 [-]: MOVE      R28 R22      ; R28 := R22
 376 [-]: CALL      R23 6 1      ; R23(R24,R25,R26,R27,R28)
@@ -607,7 +607,7 @@ code size: 19
 395 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 396 [-]: GETGLOBAL R27 K88      ; R27 := Game
 397 [-]: GETTABLE  R27 R27 K99  ; R27 := R27["AVATAR_SHIELD_MAX"]
-398 [-]: GETGLOBAL R28 K88      ; R28 := Game
+398 [-]: GETGLOBAL R28 K4       ; R28 := Engine
 399 [-]: GETTABLE  R28 R28 K94  ; R28 := R28["SET"]
 400 [-]: MOVE      R29 R23      ; R29 := R23
 401 [-]: CALL      R24 6 1      ; R24(R25,R26,R27,R28,R29)

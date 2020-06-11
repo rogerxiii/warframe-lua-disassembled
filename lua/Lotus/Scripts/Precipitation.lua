@@ -1,7 +1,7 @@
 code size: 38
 code size: 98
 code size: 743
-code size: 59
+code size: 73
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Precipitation.luac 
 
@@ -922,7 +922,7 @@ code size: 59
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  15
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x201191EA
   2 [-]: LOADK     R2 K1        ; R2 := 1
@@ -935,53 +935,67 @@ code size: 59
   9 [-]: CALL      R2 1 2       ; R2 := R2()
  10 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0["0x72E5DB62"]
  11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 12 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0x8B6C5EA2"]
- 13 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 14 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0x6DA72501"]
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: GETGLOBAL R5 K9        ; R5 := useDirectionToZoneAtt
- 17 [-]: TEST      R5 0         ; if not R5 then PC := 29
- 18 [-]: JMP       29           ; PC := 29
- 19 [-]: GETGLOBAL R5 K10       ; R5 := 0x518098BD
- 20 [-]: MOVE      R6 R2        ; R6 := R2
- 21 [-]: SELF      R7 R0 K8     ; R8 := R0; R7 := R0["0x6DA72501"]
- 22 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 23 [-]: MOVE      R8 R4        ; R8 := R4
- 24 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 25 [-]: GETGLOBAL R5 K11       ; R5 := 0x458357BC
- 26 [-]: MOVE      R6 R2        ; R6 := R2
- 27 [-]: CALL      R5 2 1       ; R5(R6)
- 28 [-]: JMP       36           ; PC := 36
- 29 [-]: GETGLOBAL R5 K10       ; R5 := 0x518098BD
- 30 [-]: MOVE      R6 R2        ; R6 := R2
- 31 [-]: GETGLOBAL R7 K5        ; R7 := 0x221C9700
- 32 [-]: CALL      R7 1 2       ; R7 := R7()
- 33 [-]: SELF      R8 R0 K12    ; R9 := R0; R8 := R0["0xEA33AF61"]
- 34 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
- 35 [-]: CALL      R5 0 1       ; R5(R6,...)
- 36 [-]: LOADK     R5 K1        ; R5 := 1
- 37 [-]: LEN       R6 R1        ; R6 := # R1
- 38 [-]: LOADK     R7 K1        ; R7 := 1
- 39 [-]: FORPREP   R5 54        ; R5 -= R7; PC := 54
- 40 [-]: GETGLOBAL R9 K13       ; R9 := 0x400E7765
- 41 [-]: GETTABLE  R10 R1 R8    ; R10 := R1[R8]
- 42 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 43 [-]: TEST      R9 1         ; if R9 then PC := 54
- 44 [-]: JMP       54           ; PC := 54
- 45 [-]: GETTABLE  R9 R1 R8     ; R9 := R1[R8]
- 46 [-]: SELF      R9 R9 K14    ; R10 := R9; R9 := R9["0x555759D9"]
- 47 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 48 [-]: TEST      R9 0         ; if not R9 then PC := 54
- 49 [-]: JMP       54           ; PC := 54
- 50 [-]: GETTABLE  R9 R1 R8     ; R9 := R1[R8]
- 51 [-]: SELF      R9 R9 K15    ; R10 := R9; R9 := R9["0x62C92062"]
- 52 [-]: MOVE      R11 R2       ; R11 := R2
- 53 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 54 [-]: FORLOOP   R5 40        ; R5 += R7; if R5 <= R6 then begin PC := 40; R8 := R5 end
- 55 [-]: GETGLOBAL R9 K0        ; R9 := 0x201191EA
- 56 [-]: LOADK     R10 K16      ; R10 := 0
- 57 [-]: CALL      R9 2 1       ; R9(R10)
- 58 [-]: JMP       16           ; PC := 16
- 59 [-]: RETURN    R0 1         ; return 
+ 12 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3["0x8B6C5EA2"]
+ 13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 14 [-]: SELF      R5 R4 K8     ; R6 := R4; R5 := R4["0x6DA72501"]
+ 15 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 16 [-]: GETGLOBAL R6 K2        ; R6 := gRegion
+ 17 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6["0x3E2F6BF"]
+ 18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 19 [-]: SELF      R7 R6 K6     ; R8 := R6; R7 := R6["0x72E5DB62"]
+ 20 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 21 [-]: GETGLOBAL R8 K10       ; R8 := 0x400E7765
+ 22 [-]: MOVE      R9 R7        ; R9 := R7
+ 23 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 24 [-]: TEST      R8 1         ; if R8 then PC := 69
+ 25 [-]: JMP       69           ; PC := 69
+ 26 [-]: SELF      R8 R7 K11    ; R9 := R7; R8 := R7["0xAAC2330E"]
+ 27 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 28 [-]: EQ        0 R8 R3      ; if R8 ~= R3 then PC := 69
+ 29 [-]: JMP       69           ; PC := 69
+ 30 [-]: GETGLOBAL R8 K12       ; R8 := useDirectionToZoneAtt
+ 31 [-]: TEST      R8 0         ; if not R8 then PC := 43
+ 32 [-]: JMP       43           ; PC := 43
+ 33 [-]: GETGLOBAL R8 K13       ; R8 := 0x518098BD
+ 34 [-]: MOVE      R9 R2        ; R9 := R2
+ 35 [-]: SELF      R10 R0 K8    ; R11 := R0; R10 := R0["0x6DA72501"]
+ 36 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 37 [-]: MOVE      R11 R5       ; R11 := R5
+ 38 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+ 39 [-]: GETGLOBAL R8 K14       ; R8 := 0x458357BC
+ 40 [-]: MOVE      R9 R2        ; R9 := R2
+ 41 [-]: CALL      R8 2 1       ; R8(R9)
+ 42 [-]: JMP       50           ; PC := 50
+ 43 [-]: GETGLOBAL R8 K13       ; R8 := 0x518098BD
+ 44 [-]: MOVE      R9 R2        ; R9 := R2
+ 45 [-]: GETGLOBAL R10 K5       ; R10 := 0x221C9700
+ 46 [-]: CALL      R10 1 2      ; R10 := R10()
+ 47 [-]: SELF      R11 R0 K15   ; R12 := R0; R11 := R0["0xEA33AF61"]
+ 48 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+ 49 [-]: CALL      R8 0 1       ; R8(R9,...)
+ 50 [-]: LOADK     R8 K1        ; R8 := 1
+ 51 [-]: LEN       R9 R1        ; R9 := # R1
+ 52 [-]: LOADK     R10 K1       ; R10 := 1
+ 53 [-]: FORPREP   R8 68        ; R8 -= R10; PC := 68
+ 54 [-]: GETGLOBAL R12 K10      ; R12 := 0x400E7765
+ 55 [-]: GETTABLE  R13 R1 R11   ; R13 := R1[R11]
+ 56 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 57 [-]: TEST      R12 1        ; if R12 then PC := 68
+ 58 [-]: JMP       68           ; PC := 68
+ 59 [-]: GETTABLE  R12 R1 R11   ; R12 := R1[R11]
+ 60 [-]: SELF      R12 R12 K16  ; R13 := R12; R12 := R12["0x555759D9"]
+ 61 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 62 [-]: TEST      R12 0        ; if not R12 then PC := 68
+ 63 [-]: JMP       68           ; PC := 68
+ 64 [-]: GETTABLE  R12 R1 R11   ; R12 := R1[R11]
+ 65 [-]: SELF      R12 R12 K17  ; R13 := R12; R12 := R12["0x62C92062"]
+ 66 [-]: MOVE      R14 R2       ; R14 := R2
+ 67 [-]: CALL      R12 3 1      ; R12(R13,R14)
+ 68 [-]: FORLOOP   R8 54        ; R8 += R10; if R8 <= R9 then begin PC := 54; R11 := R8 end
+ 69 [-]: GETGLOBAL R12 K0       ; R12 := 0x201191EA
+ 70 [-]: LOADK     R13 K18      ; R13 := 0
+ 71 [-]: CALL      R12 2 1      ; R12(R13)
+ 72 [-]: JMP       19           ; PC := 19
+ 73 [-]: RETURN    R0 1         ; return 
 
 

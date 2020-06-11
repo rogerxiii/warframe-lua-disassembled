@@ -11,7 +11,7 @@ code size: 106
 code size: 79
 code size: 42
 code size: 28
-code size: 146
+code size: 34
 code size: 59
 code size: 61
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -76,7 +76,7 @@ code size: 61
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 37
+; Defined at line: 35
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -208,7 +208,7 @@ code size: 61
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 87
+; Defined at line: 85
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -426,7 +426,7 @@ code size: 61
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 151
+; Defined at line: 149
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -534,7 +534,7 @@ code size: 61
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 199
+; Defined at line: 197
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -651,7 +651,7 @@ code size: 61
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 251
+; Defined at line: 249
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -706,7 +706,7 @@ code size: 61
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 270
+; Defined at line: 268
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -850,7 +850,7 @@ code size: 61
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 332
+; Defined at line: 330
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1060,7 +1060,7 @@ code size: 61
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 416
+; Defined at line: 414
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1135,7 +1135,7 @@ code size: 61
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 439
+; Defined at line: 437
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1252,7 +1252,7 @@ code size: 61
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 492
+; Defined at line: 490
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1342,7 +1342,7 @@ code size: 61
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 527
+; Defined at line: 525
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1395,7 +1395,7 @@ code size: 61
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 547
+; Defined at line: 545
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1434,11 +1434,11 @@ code size: 61
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 559
+; Defined at line: 557
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  23
+; Max Stack Size:  15
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xA559F558"]
@@ -1473,125 +1473,13 @@ code size: 61
  31 [-]: MOVE      R13 R0       ; R13 := R0
  32 [-]: MOVE      R14 R0       ; R14 := R0
  33 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
- 34 [-]: SELF      R10 R0 K9    ; R11 := R0; R10 := R0["0xBBAF192"]
- 35 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 36 [-]: GETTABLE  R11 R10 K10  ; R11 := R10["y"]
- 37 [-]: SUB       R11 R11 K11  ; R11 := R11 - 0.050000000745058
- 38 [-]: SETTABLE  R10 K10 R11  ; R10["y"] := R11
- 39 [-]: GETGLOBAL R11 K0       ; R11 := gRegion
- 40 [-]: SELF      R11 R11 K12  ; R12 := R11; R11 := R11["0xBDD34CC6"]
- 41 [-]: GETGLOBAL R13 K13      ; R13 := deathBeam
- 42 [-]: MOVE      R14 R10      ; R14 := R10
- 43 [-]: GETGLOBAL R15 K14      ; R15 := ZERO_ROTATION
- 44 [-]: CALL      R11 5 2      ; R11 := R11(R12,R13,R14,R15)
- 45 [-]: GETGLOBAL R12 K15      ; R12 := 0x400E7765
- 46 [-]: MOVE      R13 R11      ; R13 := R11
- 47 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 48 [-]: TEST      R12 1        ; if R12 then PC := 146
- 49 [-]: JMP       146          ; PC := 146
- 50 [-]: GETGLOBAL R12 K16      ; R12 := 0x221C9700
- 51 [-]: GETTABLE  R13 R10 K17  ; R13 := R10["x"]
- 52 [-]: GETGLOBAL R14 K18      ; R14 := math
- 53 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["0x865961F7"]
- 54 [-]: LOADK     R15 K20      ; R15 := -6
- 55 [-]: LOADK     R16 K21      ; R16 := 6
- 56 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
- 57 [-]: ADD       R13 R13 R14  ; R13 := R13 + R14
- 58 [-]: GETTABLE  R14 R10 K10  ; R14 := R10["y"]
- 59 [-]: SUB       R14 R14 K21  ; R14 := R14 - 6
- 60 [-]: GETTABLE  R15 R10 K22  ; R15 := R10["z"]
- 61 [-]: GETGLOBAL R16 K18      ; R16 := math
- 62 [-]: GETTABLE  R16 R16 K19  ; R16 := R16["0x865961F7"]
- 63 [-]: LOADK     R17 K20      ; R17 := -6
- 64 [-]: LOADK     R18 K21      ; R18 := 6
- 65 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 66 [-]: ADD       R15 R15 R16  ; R15 := R15 + R16
- 67 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
- 68 [-]: GETGLOBAL R13 K16      ; R13 := 0x221C9700
- 69 [-]: CALL      R13 1 2      ; R13 := R13()
- 70 [-]: GETGLOBAL R14 K0       ; R14 := gRegion
- 71 [-]: SELF      R14 R14 K23  ; R15 := R14; R14 := R14["0x908D9C9C"]
- 72 [-]: MOVE      R16 R10      ; R16 := R10
- 73 [-]: MOVE      R17 R12      ; R17 := R12
- 74 [-]: GETGLOBAL R18 K24      ; R18 := raycastIgnoreTypes
- 75 [-]: LOADNIL   R19 R19      ; R19 := nil
- 76 [-]: MOVE      R20 R13      ; R20 := R13
- 77 [-]: CALL      R14 7 2      ; R14 := R14(R15,R16,R17,R18,R19,R20)
- 78 [-]: TEST      R14 0        ; if not R14 then PC := 141
- 79 [-]: JMP       141          ; PC := 141
- 80 [-]: SELF      R14 R11 K25  ; R15 := R11; R14 := R11["0x4E2CBDCF"]
- 81 [-]: MOVE      R16 R13      ; R16 := R13
- 82 [-]: CALL      R14 3 1      ; R14(R15,R16)
- 83 [-]: GETGLOBAL R14 K0       ; R14 := gRegion
- 84 [-]: SELF      R14 R14 K26  ; R15 := R14; R14 := R14["0xFD25BC18"]
- 85 [-]: GETGLOBAL R16 K27      ; R16 := deathBeamSparks
- 86 [-]: MOVE      R17 R13      ; R17 := R13
- 87 [-]: GETGLOBAL R18 K14      ; R18 := ZERO_ROTATION
- 88 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
- 89 [-]: GETGLOBAL R14 K28      ; R14 := 0x201191EA
- 90 [-]: GETGLOBAL R15 K18      ; R15 := math
- 91 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0x865961F7"]
- 92 [-]: LOADK     R16 K29      ; R16 := 2
- 93 [-]: LOADK     R17 K30      ; R17 := 5
- 94 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 95 [-]: DIV       R15 R15 K31  ; R15 := R15 / 20
- 96 [-]: CALL      R14 2 1      ; R14(R15)
- 97 [-]: LOADK     R14 K4       ; R14 := 1
- 98 [-]: LOADK     R15 K32      ; R15 := 10
- 99 [-]: LOADK     R16 K4       ; R16 := 1
-100 [-]: FORPREP   R14 129      ; R14 -= R16; PC := 129
-101 [-]: GETGLOBAL R18 K16      ; R18 := 0x221C9700
-102 [-]: GETGLOBAL R19 K18      ; R19 := math
-103 [-]: GETTABLE  R19 R19 K19  ; R19 := R19["0x865961F7"]
-104 [-]: CALL      R19 1 2      ; R19 := R19()
-105 [-]: MUL       R19 R19 K33  ; R19 := R19 * 1.2000000476837
-106 [-]: SUB       R19 R19 K34  ; R19 := R19 - 0.60000002384186
-107 [-]: GETGLOBAL R20 K18      ; R20 := math
-108 [-]: GETTABLE  R20 R20 K19  ; R20 := R20["0x865961F7"]
-109 [-]: CALL      R20 1 2      ; R20 := R20()
-110 [-]: MUL       R20 R20 K35  ; R20 := R20 * 0.80000001192093
-111 [-]: SUB       R20 R20 K36  ; R20 := R20 - 0.40000000596046
-112 [-]: GETGLOBAL R21 K18      ; R21 := math
-113 [-]: GETTABLE  R21 R21 K19  ; R21 := R21["0x865961F7"]
-114 [-]: CALL      R21 1 2      ; R21 := R21()
-115 [-]: MUL       R21 R21 K33  ; R21 := R21 * 1.2000000476837
-116 [-]: SUB       R21 R21 K34  ; R21 := R21 - 0.60000002384186
-117 [-]: CALL      R18 4 2      ; R18 := R18(R19,R20,R21)
-118 [-]: SELF      R19 R11 K37  ; R20 := R11; R19 := R11["0x57FC7CF6"]
-119 [-]: MOVE      R21 R18      ; R21 := R18
-120 [-]: CALL      R19 3 1      ; R19(R20,R21)
-121 [-]: GETGLOBAL R19 K28      ; R19 := 0x201191EA
-122 [-]: GETGLOBAL R20 K18      ; R20 := math
-123 [-]: GETTABLE  R20 R20 K19  ; R20 := R20["0x865961F7"]
-124 [-]: LOADK     R21 K29      ; R21 := 2
-125 [-]: LOADK     R22 K21      ; R22 := 6
-126 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
-127 [-]: DIV       R20 R20 K38  ; R20 := R20 / 40
-128 [-]: CALL      R19 2 1      ; R19(R20)
-129 [-]: FORLOOP   R14 101      ; R14 += R16; if R14 <= R15 then begin PC := 101; R17 := R14 end
-130 [-]: GETGLOBAL R19 K28      ; R19 := 0x201191EA
-131 [-]: GETGLOBAL R20 K18      ; R20 := math
-132 [-]: GETTABLE  R20 R20 K19  ; R20 := R20["0x865961F7"]
-133 [-]: LOADK     R21 K29      ; R21 := 2
-134 [-]: LOADK     R22 K30      ; R22 := 5
-135 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
-136 [-]: DIV       R20 R20 K31  ; R20 := R20 / 20
-137 [-]: CALL      R19 2 1      ; R19(R20)
-138 [-]: SELF      R19 R11 K5   ; R20 := R11; R19 := R11["0xD4C2743F"]
-139 [-]: CALL      R19 2 1      ; R19(R20)
-140 [-]: JMP       146          ; PC := 146
-141 [-]: GETGLOBAL R19 K28      ; R19 := 0x201191EA
-142 [-]: LOADK     R20 K39      ; R20 := 0
-143 [-]: CALL      R19 2 1      ; R19(R20)
-144 [-]: SELF      R19 R11 K5   ; R20 := R11; R19 := R11["0xD4C2743F"]
-145 [-]: CALL      R19 2 1      ; R19(R20)
-146 [-]: RETURN    R0 1         ; return 
+ 34 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 601
+; Defined at line: 577
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1661,7 +1549,7 @@ code size: 61
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 625
+; Defined at line: 601
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

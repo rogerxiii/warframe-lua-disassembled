@@ -51,7 +51,7 @@ code size: 47
  20 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["0x1B694258"]
  21 [-]: CALL      R6 1 2       ; R6 := R6()
  22 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6["0x15C954A"]
- 23 [-]: GETGLOBAL R9 K8        ; R9 := Game
+ 23 [-]: GETGLOBAL R9 K2        ; R9 := Engine
  24 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["STACKING_MULTIPLY"]
  25 [-]: CALL      R7 3 1       ; R7(R8,R9)
  26 [-]: SELF      R7 R6 K12    ; R8 := R6; R7 := R6["0x46206C58"]
@@ -109,11 +109,11 @@ code size: 47
  17 [-]: TEST      R6 0         ; if not R6 then PC := 47
  18 [-]: JMP       47           ; PC := 47
  19 [-]: SELF      R6 R4 K8     ; R7 := R4; R6 := R4["0x15C954A"]
- 20 [-]: GETGLOBAL R8 K9        ; R8 := Game
- 21 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["STACKING_MULTIPLY"]
+ 20 [-]: GETGLOBAL R8 K2        ; R8 := Engine
+ 21 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
  22 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 23 [-]: SELF      R6 R4 K11    ; R7 := R4; R6 := R4["0x46206C58"]
- 24 [-]: GETGLOBAL R8 K9        ; R8 := Game
+ 23 [-]: SELF      R6 R4 K10    ; R7 := R4; R6 := R4["0x46206C58"]
+ 24 [-]: GETGLOBAL R8 K11       ; R8 := Game
  25 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["WEAPON_RELOAD_SPEED"]
  26 [-]: CALL      R6 3 1       ; R6(R7,R8)
  27 [-]: SELF      R6 R4 K13    ; R7 := R4; R6 := R4["0x6733C272"]

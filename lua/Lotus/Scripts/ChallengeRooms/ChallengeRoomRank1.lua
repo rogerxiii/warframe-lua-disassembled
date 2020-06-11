@@ -5,7 +5,7 @@ code size: 66
 code size: 87
 code size: 66
 code size: 23
-code size: 106
+code size: 112
 code size: 44
 code size: 88
 code size: 12
@@ -536,20 +536,26 @@ code size: 12
  96 [-]: CALL      R3 3 1       ; R3(R4,R5)
  97 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x8DB5D01F"]
  98 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 99 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3["0x290DDD35"]
-100 [-]: GETGLOBAL R5 K4        ; R5 := restrictToSlot
-101 [-]: GETGLOBAL R6 K8        ; R6 := Engine
-102 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["MAIN_HAND"]
-103 [-]: GETGLOBAL R7 K8        ; R7 := Engine
-104 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
-105 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
-106 [-]: RETURN    R0 1         ; return 
+ 99 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3["0xA23F6C57"]
+100 [-]: GETGLOBAL R5 K8        ; R5 := Engine
+101 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["SLOT_11"]
+102 [-]: CALL      R3 3 1       ; R3(R4,R5)
+103 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x8DB5D01F"]
+104 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+105 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3["0x290DDD35"]
+106 [-]: GETGLOBAL R5 K4        ; R5 := restrictToSlot
+107 [-]: GETGLOBAL R6 K8        ; R6 := Engine
+108 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["MAIN_HAND"]
+109 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+110 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
+111 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
+112 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 175
+; Defined at line: 177
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -604,7 +610,7 @@ code size: 12
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 194
+; Defined at line: 196
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -703,7 +709,7 @@ code size: 12
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 222
+; Defined at line: 224
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

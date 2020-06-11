@@ -592,7 +592,7 @@ code size: 88
 114 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["0xE6450C9D"]
 115 [-]: MOVE      R3 R1        ; R3 := R1
 116 [-]: NEWTABLE  R4 0 3       ; R4 := {}
-117 [-]: SETTABLE  R4 K14 K32   ; R4["Label"] := "/Game/WEAPON_FIRE_RATE"
+117 [-]: SETTABLE  R4 K14 K32   ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_FIRE_RATE"
 118 [-]: GETGLOBAL R5 K28       ; R5 := math
 119 [-]: GETTABLE  R5 R5 K29    ; R5 := R5["0xF7005A7B"]
 120 [-]: GETUPVAL  R6 U6        ; R6 := U6
@@ -615,7 +615,7 @@ code size: 88
 137 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["0xE6450C9D"]
 138 [-]: MOVE      R3 R1        ; R3 := R1
 139 [-]: NEWTABLE  R4 0 4       ; R4 := {}
-140 [-]: SETTABLE  R4 K14 K35   ; R4["Label"] := "/Game/WEAPON_PROC_CHANCE"
+140 [-]: SETTABLE  R4 K14 K35   ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_CHANCE"
 141 [-]: SETTABLE  R4 K16 K30   ; R4["Value"] := 100
 142 [-]: SETTABLE  R4 K36 K37   ; R4["ValueIcon"] := "<DT_ELECTRICITY>"
 143 [-]: SETTABLE  R4 K17 K31   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_PERCENT"
@@ -624,7 +624,7 @@ code size: 88
 146 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["0xE6450C9D"]
 147 [-]: MOVE      R3 R1        ; R3 := R1
 148 [-]: NEWTABLE  R4 0 3       ; R4 := {}
-149 [-]: SETTABLE  R4 K14 K38   ; R4["Label"] := "/Game/AVATAR_ABILITY_RANGE"
+149 [-]: SETTABLE  R4 K14 K38   ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY_RANGE"
 150 [-]: GETUPVAL  R5 U8        ; R5 := U8
 151 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["searchRadius"]
 152 [-]: SETTABLE  R4 K16 R5    ; R4["Value"] := R5
@@ -1863,8 +1863,8 @@ code size: 88
  11 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4["0xF21555A7"]
  12 [-]: GETGLOBAL R6 K3        ; R6 := Game
  13 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["AVATAR_HEALTH_MAX"]
- 14 [-]: GETGLOBAL R7 K3        ; R7 := Game
- 15 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["ADD"]
+ 14 [-]: GETGLOBAL R7 K5        ; R7 := Engine
+ 15 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["ADD"]
  16 [-]: GETUPVAL  R8 U2        ; R8 := U2
  17 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  18 [-]: GETUPVAL  R4 U4        ; R4 := U4
@@ -1873,23 +1873,23 @@ code size: 88
  21 [-]: GETUPVAL  R4 U3        ; R4 := U3
  22 [-]: SELF      R4 R4 K2     ; R5 := R4; R4 := R4["0xF21555A7"]
  23 [-]: GETGLOBAL R6 K3        ; R6 := Game
- 24 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["AVATAR_HEAL_RATE_FORCED"]
- 25 [-]: GETGLOBAL R7 K3        ; R7 := Game
- 26 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["ADD"]
+ 24 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["AVATAR_HEAL_RATE_FORCED"]
+ 25 [-]: GETGLOBAL R7 K5        ; R7 := Engine
+ 26 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["ADD"]
  27 [-]: GETUPVAL  R8 U4        ; R8 := U4
  28 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  29 [-]: EQ        0 R0 K1      ; if R0 ~= nil then PC := 32
  30 [-]: JMP       32           ; PC := 32
  31 [-]: RETURN    R0 1         ; return 
  32 [-]: GETUPVAL  R4 U5        ; R4 := U5
- 33 [-]: SELF      R5 R0 K7     ; R6 := R0; R5 := R0["0xDBEF0FB6"]
+ 33 [-]: SELF      R5 R0 K8     ; R6 := R0; R5 := R0["0xDBEF0FB6"]
  34 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  35 [-]: MOVE      R6 R2        ; R6 := R2
  36 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  37 [-]: TEST      R4 0         ; if not R4 then PC := 45
  38 [-]: JMP       45           ; PC := 45
- 39 [-]: GETGLOBAL R5 K8        ; R5 := 0xB5CB7DA2
- 40 [-]: GETTABLE  R6 R4 K9     ; R6 := R4["buffStats"]
+ 39 [-]: GETGLOBAL R5 K9        ; R5 := 0xB5CB7DA2
+ 40 [-]: GETTABLE  R6 R4 K10    ; R6 := R4["buffStats"]
  41 [-]: CALL      R5 2 3       ; R5,R6 := R5(R6)
  42 [-]: MOVE      R6 R4        ; R6 := R4
  43 [-]: MOVE      R5 R2        ; R5 := R2
@@ -1905,41 +1905,41 @@ code size: 88
  53 [-]: EQ        1 R5 K1      ; if R5 == nil then PC := 63
  54 [-]: JMP       63           ; PC := 63
  55 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 56 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5["0x3B1B11B9"]
+ 56 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0x3B1B11B9"]
  57 [-]: GETGLOBAL R7 K3        ; R7 := Game
  58 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["AVATAR_HEALTH_MAX"]
- 59 [-]: GETGLOBAL R8 K3        ; R8 := Game
- 60 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["ADD"]
+ 59 [-]: GETGLOBAL R8 K5        ; R8 := Engine
+ 60 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["ADD"]
  61 [-]: GETUPVAL  R9 U2        ; R9 := U2
  62 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  63 [-]: GETUPVAL  R5 U4        ; R5 := U4
  64 [-]: EQ        1 R5 K1      ; if R5 == nil then PC := 74
  65 [-]: JMP       74           ; PC := 74
  66 [-]: GETUPVAL  R5 U3        ; R5 := U3
- 67 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5["0x3B1B11B9"]
+ 67 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0x3B1B11B9"]
  68 [-]: GETGLOBAL R7 K3        ; R7 := Game
- 69 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["AVATAR_HEAL_RATE_FORCED"]
- 70 [-]: GETGLOBAL R8 K3        ; R8 := Game
- 71 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["ADD"]
+ 69 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["AVATAR_HEAL_RATE_FORCED"]
+ 70 [-]: GETGLOBAL R8 K5        ; R8 := Engine
+ 71 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["ADD"]
  72 [-]: GETUPVAL  R9 U4        ; R9 := U4
  73 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  74 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 75 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0xD53BF424"]
+ 75 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0xD53BF424"]
  76 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 77 [-]: GETGLOBAL R8 K12       ; R8 := math
- 78 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["0x8B011038"]
+ 77 [-]: GETGLOBAL R8 K13       ; R8 := math
+ 78 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["0x8B011038"]
  79 [-]: GETUPVAL  R9 U0        ; R9 := U0
  80 [-]: SELF      R9 R9 K0     ; R10 := R9; R9 := R9["0x385BD2FE"]
  81 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  82 [-]: SUB       R9 R9 R3     ; R9 := R9 - R3
- 83 [-]: LOADK     R10 K14      ; R10 := 0
+ 83 [-]: LOADK     R10 K15      ; R10 := 0
  84 [-]: CALL      R8 3 0       ; R8,... := R8(R9,R10)
  85 [-]: CALL      R5 0 1       ; R5(R6,...)
  86 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 87 [-]: SETTABLE  R1 K15 R5    ; R1["buffDataExtra"] := R5
- 88 [-]: GETGLOBAL R5 K17       ; R5 := Lotus_Game
- 89 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["BT_AMOUNT_TIMER"]
- 90 [-]: SETTABLE  R1 K16 R5    ; R1["buffType"] := R5
+ 87 [-]: SETTABLE  R1 K16 R5    ; R1["buffDataExtra"] := R5
+ 88 [-]: GETGLOBAL R5 K18       ; R5 := Lotus_Game
+ 89 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["BT_AMOUNT_TIMER"]
+ 90 [-]: SETTABLE  R1 K17 R5    ; R1["buffType"] := R5
  91 [-]: RETURN    R0 1         ; return 
 
 
@@ -2004,8 +2004,8 @@ code size: 88
   8 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0xF21555A7"]
   9 [-]: GETGLOBAL R5 K2        ; R5 := Game
  10 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["AVATAR_MOVEMENT_SPEED"]
- 11 [-]: GETGLOBAL R6 K2        ; R6 := Game
- 12 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["STACKING_MULTIPLY"]
+ 11 [-]: GETGLOBAL R6 K4        ; R6 := Engine
+ 12 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["STACKING_MULTIPLY"]
  13 [-]: GETUPVAL  R7 U1        ; R7 := U1
  14 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  15 [-]: GETUPVAL  R3 U3        ; R3 := U3
@@ -2014,23 +2014,23 @@ code size: 88
  18 [-]: GETUPVAL  R3 U2        ; R3 := U2
  19 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0xF21555A7"]
  20 [-]: GETGLOBAL R5 K2        ; R5 := Game
- 21 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["WEAPON_FIRE_RATE"]
- 22 [-]: GETGLOBAL R6 K2        ; R6 := Game
- 23 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["STACKING_MULTIPLY"]
+ 21 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["WEAPON_FIRE_RATE"]
+ 22 [-]: GETGLOBAL R6 K4        ; R6 := Engine
+ 23 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["STACKING_MULTIPLY"]
  24 [-]: GETUPVAL  R7 U3        ; R7 := U3
  25 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  26 [-]: EQ        0 R0 K0      ; if R0 ~= nil then PC := 29
  27 [-]: JMP       29           ; PC := 29
  28 [-]: RETURN    R0 1         ; return 
  29 [-]: GETUPVAL  R3 U4        ; R3 := U4
- 30 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0["0xDBEF0FB6"]
+ 30 [-]: SELF      R4 R0 K7     ; R5 := R0; R4 := R0["0xDBEF0FB6"]
  31 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  32 [-]: MOVE      R5 R2        ; R5 := R2
  33 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  34 [-]: TEST      R3 0         ; if not R3 then PC := 42
  35 [-]: JMP       42           ; PC := 42
- 36 [-]: GETGLOBAL R4 K7        ; R4 := 0xB5CB7DA2
- 37 [-]: GETTABLE  R5 R3 K8     ; R5 := R3["buffStats"]
+ 36 [-]: GETGLOBAL R4 K8        ; R4 := 0xB5CB7DA2
+ 37 [-]: GETTABLE  R5 R3 K9     ; R5 := R3["buffStats"]
  38 [-]: CALL      R4 2 3       ; R4,R5 := R4(R5)
  39 [-]: MOVE      R5 R3        ; R5 := R3
  40 [-]: MOVE      R4 R1        ; R4 := R1
@@ -2046,33 +2046,33 @@ code size: 88
  50 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 60
  51 [-]: JMP       60           ; PC := 60
  52 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 53 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x3B1B11B9"]
+ 53 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0x3B1B11B9"]
  54 [-]: GETGLOBAL R6 K2        ; R6 := Game
  55 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
- 56 [-]: GETGLOBAL R7 K2        ; R7 := Game
- 57 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["STACKING_MULTIPLY"]
+ 56 [-]: GETGLOBAL R7 K4        ; R7 := Engine
+ 57 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["STACKING_MULTIPLY"]
  58 [-]: GETUPVAL  R8 U1        ; R8 := U1
  59 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  60 [-]: GETUPVAL  R4 U3        ; R4 := U3
  61 [-]: EQ        1 R4 K0      ; if R4 == nil then PC := 71
  62 [-]: JMP       71           ; PC := 71
  63 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 64 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x3B1B11B9"]
+ 64 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0x3B1B11B9"]
  65 [-]: GETGLOBAL R6 K2        ; R6 := Game
- 66 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["WEAPON_FIRE_RATE"]
- 67 [-]: GETGLOBAL R7 K2        ; R7 := Game
- 68 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["STACKING_MULTIPLY"]
+ 66 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["WEAPON_FIRE_RATE"]
+ 67 [-]: GETGLOBAL R7 K4        ; R7 := Engine
+ 68 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["STACKING_MULTIPLY"]
  69 [-]: GETUPVAL  R8 U3        ; R8 := U3
  70 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 71 [-]: GETGLOBAL R4 K11       ; R4 := math
- 72 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["0xF7005A7B"]
+ 71 [-]: GETGLOBAL R4 K12       ; R4 := math
+ 72 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["0xF7005A7B"]
  73 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 74 [-]: MUL       R5 R5 K13    ; R5 := R5 * 100
+ 74 [-]: MUL       R5 R5 K14    ; R5 := R5 * 100
  75 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 76 [-]: SETTABLE  R1 K10 R4    ; R1["buffDataExtra"] := R4
- 77 [-]: GETGLOBAL R4 K15       ; R4 := Lotus_Game
- 78 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["BT_PERCENT_TIMER"]
- 79 [-]: SETTABLE  R1 K14 R4    ; R1["buffType"] := R4
+ 76 [-]: SETTABLE  R1 K11 R4    ; R1["buffDataExtra"] := R4
+ 77 [-]: GETGLOBAL R4 K16       ; R4 := Lotus_Game
+ 78 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["BT_PERCENT_TIMER"]
+ 79 [-]: SETTABLE  R1 K15 R4    ; R1["buffType"] := R4
  80 [-]: RETURN    R0 1         ; return 
 
 

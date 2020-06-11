@@ -83,15 +83,15 @@ code size: 28
  38 [-]: SELF      R4 R3 K13    ; R5 := R3; R4 := R3["0x3B1B11B9"]
  39 [-]: GETGLOBAL R6 K14       ; R6 := Game
  40 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
- 41 [-]: GETGLOBAL R7 K14       ; R7 := Game
- 42 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
- 43 [-]: GETGLOBAL R8 K17       ; R8 := spectralSpeedMult
+ 41 [-]: GETGLOBAL R7 K16       ; R7 := Engine
+ 42 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["MULTIPLY"]
+ 43 [-]: GETGLOBAL R8 K18       ; R8 := spectralSpeedMult
  44 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 45 [-]: SELF      R4 R2 K18    ; R5 := R2; R4 := R2["0x92152A74"]
+ 45 [-]: SELF      R4 R2 K19    ; R5 := R2; R4 := R2["0x92152A74"]
  46 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 47 [-]: GETGLOBAL R7 K19       ; R7 := Engine
+ 47 [-]: GETGLOBAL R7 K16       ; R7 := Engine
  48 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["DT_RADIANT"]
- 49 [-]: GETGLOBAL R8 K19       ; R8 := Engine
+ 49 [-]: GETGLOBAL R8 K16       ; R8 := Engine
  50 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["ANY_PART"]
  51 [-]: LOADK     R9 K22       ; R9 := 0
  52 [-]: LOADNIL   R10 R10      ; R10 := nil
@@ -99,36 +99,36 @@ code size: 28
  54 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  55 [-]: SELF      R4 R2 K23    ; R5 := R2; R4 := R2["0x64B88A7A"]
  56 [-]: GETUPVAL  R6 U0        ; R6 := U0
- 57 [-]: GETGLOBAL R7 K19       ; R7 := Engine
+ 57 [-]: GETGLOBAL R7 K16       ; R7 := Engine
  58 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["DT_RADIANT"]
- 59 [-]: GETGLOBAL R8 K19       ; R8 := Engine
+ 59 [-]: GETGLOBAL R8 K16       ; R8 := Engine
  60 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["ANY_PART"]
  61 [-]: LOADK     R9 K22       ; R9 := 0
  62 [-]: LOADNIL   R10 R10      ; R10 := nil
  63 [-]: MOVE      R11 R1       ; R11 := R1
  64 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  65 [-]: SELF      R4 R2 K24    ; R5 := R2; R4 := R2["0x64728A2A"]
- 66 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 66 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  67 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["PAIN"]
  68 [-]: GETUPVAL  R7 U0        ; R7 := U0
  69 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  70 [-]: SELF      R4 R2 K24    ; R5 := R2; R4 := R2["0x64728A2A"]
- 71 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 71 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  72 [-]: GETTABLE  R6 R6 K26    ; R6 := R6["STAGGER"]
  73 [-]: GETUPVAL  R7 U0        ; R7 := U0
  74 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  75 [-]: SELF      R4 R2 K24    ; R5 := R2; R4 := R2["0x64728A2A"]
- 76 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 76 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  77 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["STUN"]
  78 [-]: GETUPVAL  R7 U0        ; R7 := U0
  79 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  80 [-]: SELF      R4 R2 K24    ; R5 := R2; R4 := R2["0x64728A2A"]
- 81 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 81 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  82 [-]: GETTABLE  R6 R6 K28    ; R6 := R6["KNOCKDOWN"]
  83 [-]: GETUPVAL  R7 U0        ; R7 := U0
  84 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  85 [-]: SELF      R4 R2 K24    ; R5 := R2; R4 := R2["0x64728A2A"]
- 86 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 86 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  87 [-]: GETTABLE  R6 R6 K29    ; R6 := R6["RAGDOLL"]
  88 [-]: GETUPVAL  R7 U0        ; R7 := U0
  89 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
@@ -262,9 +262,9 @@ code size: 28
 217 [-]: SELF      R9 R3 K57    ; R10 := R3; R9 := R3["0xF21555A7"]
 218 [-]: GETGLOBAL R11 K14      ; R11 := Game
 219 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["AVATAR_MOVEMENT_SPEED"]
-220 [-]: GETGLOBAL R12 K14      ; R12 := Game
-221 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["MULTIPLY"]
-222 [-]: GETGLOBAL R13 K17      ; R13 := spectralSpeedMult
+220 [-]: GETGLOBAL R12 K16      ; R12 := Engine
+221 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["MULTIPLY"]
+222 [-]: GETGLOBAL R13 K18      ; R13 := spectralSpeedMult
 223 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 224 [-]: SELF      R9 R2 K50    ; R10 := R2; R9 := R2["0xE817E70D"]
 225 [-]: MOVE      R11 R1       ; R11 := R1
@@ -276,27 +276,27 @@ code size: 28
 231 [-]: GETUPVAL  R11 U0       ; R11 := U0
 232 [-]: CALL      R9 3 1       ; R9(R10,R11)
 233 [-]: SELF      R9 R2 K60    ; R10 := R2; R9 := R2["0x80788195"]
-234 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+234 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 235 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["PAIN"]
 236 [-]: GETUPVAL  R12 U0       ; R12 := U0
 237 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 238 [-]: SELF      R9 R2 K60    ; R10 := R2; R9 := R2["0x80788195"]
-239 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+239 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 240 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["STAGGER"]
 241 [-]: GETUPVAL  R12 U0       ; R12 := U0
 242 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 243 [-]: SELF      R9 R2 K60    ; R10 := R2; R9 := R2["0x80788195"]
-244 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+244 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 245 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["STUN"]
 246 [-]: GETUPVAL  R12 U0       ; R12 := U0
 247 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 248 [-]: SELF      R9 R2 K60    ; R10 := R2; R9 := R2["0x80788195"]
-249 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+249 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 250 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["KNOCKDOWN"]
 251 [-]: GETUPVAL  R12 U0       ; R12 := U0
 252 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
 253 [-]: SELF      R9 R2 K60    ; R10 := R2; R9 := R2["0x80788195"]
-254 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+254 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 255 [-]: GETTABLE  R11 R11 K29  ; R11 := R11["RAGDOLL"]
 256 [-]: GETUPVAL  R12 U0       ; R12 := U0
 257 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
@@ -390,12 +390,12 @@ code size: 28
  38 [-]: SELF      R4 R3 K13    ; R5 := R3; R4 := R3["0x3B1B11B9"]
  39 [-]: GETGLOBAL R6 K14       ; R6 := Game
  40 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
- 41 [-]: GETGLOBAL R7 K14       ; R7 := Game
- 42 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
- 43 [-]: GETGLOBAL R8 K17       ; R8 := spectralSpeedMult
+ 41 [-]: GETGLOBAL R7 K16       ; R7 := Engine
+ 42 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["MULTIPLY"]
+ 43 [-]: GETGLOBAL R8 K18       ; R8 := spectralSpeedMult
  44 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 45 [-]: SELF      R4 R2 K18    ; R5 := R2; R4 := R2["0x80788195"]
- 46 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 45 [-]: SELF      R4 R2 K19    ; R5 := R2; R4 := R2["0x80788195"]
+ 46 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  47 [-]: GETTABLE  R6 R6 K20    ; R6 := R6["DT_RADIANT"]
  48 [-]: GETUPVAL  R7 U0        ; R7 := U0
  49 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
@@ -407,9 +407,9 @@ code size: 28
  55 [-]: CALL      R4 3 1       ; R4(R5,R6)
  56 [-]: SELF      R4 R2 K23    ; R5 := R2; R4 := R2["0x92152A74"]
  57 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 58 [-]: GETGLOBAL R7 K19       ; R7 := Engine
+ 58 [-]: GETGLOBAL R7 K16       ; R7 := Engine
  59 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["DT_RADIANT"]
- 60 [-]: GETGLOBAL R8 K19       ; R8 := Engine
+ 60 [-]: GETGLOBAL R8 K16       ; R8 := Engine
  61 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["ANY_PART"]
  62 [-]: LOADK     R9 K25       ; R9 := 0
  63 [-]: LOADNIL   R10 R10      ; R10 := nil
@@ -417,36 +417,36 @@ code size: 28
  65 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  66 [-]: SELF      R4 R2 K26    ; R5 := R2; R4 := R2["0x64B88A7A"]
  67 [-]: GETUPVAL  R6 U1        ; R6 := U1
- 68 [-]: GETGLOBAL R7 K19       ; R7 := Engine
+ 68 [-]: GETGLOBAL R7 K16       ; R7 := Engine
  69 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["DT_RADIANT"]
- 70 [-]: GETGLOBAL R8 K19       ; R8 := Engine
+ 70 [-]: GETGLOBAL R8 K16       ; R8 := Engine
  71 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["ANY_PART"]
  72 [-]: LOADK     R9 K25       ; R9 := 0
  73 [-]: LOADNIL   R10 R10      ; R10 := nil
  74 [-]: MOVE      R11 R1       ; R11 := R1
  75 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  76 [-]: SELF      R4 R2 K27    ; R5 := R2; R4 := R2["0x64728A2A"]
- 77 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 77 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  78 [-]: GETTABLE  R6 R6 K28    ; R6 := R6["PAIN"]
  79 [-]: GETUPVAL  R7 U1        ; R7 := U1
  80 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  81 [-]: SELF      R4 R2 K27    ; R5 := R2; R4 := R2["0x64728A2A"]
- 82 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 82 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  83 [-]: GETTABLE  R6 R6 K29    ; R6 := R6["STAGGER"]
  84 [-]: GETUPVAL  R7 U1        ; R7 := U1
  85 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  86 [-]: SELF      R4 R2 K27    ; R5 := R2; R4 := R2["0x64728A2A"]
- 87 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 87 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  88 [-]: GETTABLE  R6 R6 K30    ; R6 := R6["STUN"]
  89 [-]: GETUPVAL  R7 U1        ; R7 := U1
  90 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  91 [-]: SELF      R4 R2 K27    ; R5 := R2; R4 := R2["0x64728A2A"]
- 92 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 92 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  93 [-]: GETTABLE  R6 R6 K31    ; R6 := R6["KNOCKDOWN"]
  94 [-]: GETUPVAL  R7 U1        ; R7 := U1
  95 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  96 [-]: SELF      R4 R2 K27    ; R5 := R2; R4 := R2["0x64728A2A"]
- 97 [-]: GETGLOBAL R6 K19       ; R6 := Engine
+ 97 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  98 [-]: GETTABLE  R6 R6 K32    ; R6 := R6["RAGDOLL"]
  99 [-]: GETUPVAL  R7 U1        ; R7 := U1
 100 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
@@ -580,9 +580,9 @@ code size: 28
 228 [-]: SELF      R9 R3 K60    ; R10 := R3; R9 := R3["0xF21555A7"]
 229 [-]: GETGLOBAL R11 K14      ; R11 := Game
 230 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["AVATAR_MOVEMENT_SPEED"]
-231 [-]: GETGLOBAL R12 K14      ; R12 := Game
-232 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["MULTIPLY"]
-233 [-]: GETGLOBAL R13 K17      ; R13 := spectralSpeedMult
+231 [-]: GETGLOBAL R12 K16      ; R12 := Engine
+232 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["MULTIPLY"]
+233 [-]: GETGLOBAL R13 K18      ; R13 := spectralSpeedMult
 234 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 235 [-]: SELF      R9 R2 K53    ; R10 := R2; R9 := R2["0xE817E70D"]
 236 [-]: MOVE      R11 R1       ; R11 := R1
@@ -593,28 +593,28 @@ code size: 28
 241 [-]: SELF      R9 R2 K22    ; R10 := R2; R9 := R2["0x8A9BBEE2"]
 242 [-]: GETUPVAL  R11 U1       ; R11 := U1
 243 [-]: CALL      R9 3 1       ; R9(R10,R11)
-244 [-]: SELF      R9 R2 K18    ; R10 := R2; R9 := R2["0x80788195"]
-245 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+244 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0x80788195"]
+245 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 246 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["PAIN"]
 247 [-]: GETUPVAL  R12 U1       ; R12 := U1
 248 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-249 [-]: SELF      R9 R2 K18    ; R10 := R2; R9 := R2["0x80788195"]
-250 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+249 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0x80788195"]
+250 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 251 [-]: GETTABLE  R11 R11 K29  ; R11 := R11["STAGGER"]
 252 [-]: GETUPVAL  R12 U1       ; R12 := U1
 253 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-254 [-]: SELF      R9 R2 K18    ; R10 := R2; R9 := R2["0x80788195"]
-255 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+254 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0x80788195"]
+255 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 256 [-]: GETTABLE  R11 R11 K30  ; R11 := R11["STUN"]
 257 [-]: GETUPVAL  R12 U1       ; R12 := U1
 258 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-259 [-]: SELF      R9 R2 K18    ; R10 := R2; R9 := R2["0x80788195"]
-260 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+259 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0x80788195"]
+260 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 261 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["KNOCKDOWN"]
 262 [-]: GETUPVAL  R12 U1       ; R12 := U1
 263 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-264 [-]: SELF      R9 R2 K18    ; R10 := R2; R9 := R2["0x80788195"]
-265 [-]: GETGLOBAL R11 K19      ; R11 := Engine
+264 [-]: SELF      R9 R2 K19    ; R10 := R2; R9 := R2["0x80788195"]
+265 [-]: GETGLOBAL R11 K16      ; R11 := Engine
 266 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["RAGDOLL"]
 267 [-]: GETUPVAL  R12 U1       ; R12 := U1
 268 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)

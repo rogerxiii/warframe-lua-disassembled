@@ -74,18 +74,18 @@ code size: 24
   5 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0x3B1B11B9"]
   6 [-]: GETGLOBAL R4 K2        ; R4 := Game
   7 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["AVATAR_EVADE_NPC_BULLET"]
-  8 [-]: GETGLOBAL R5 K2        ; R5 := Game
-  9 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["STACKING_MULTIPLY"]
+  8 [-]: GETGLOBAL R5 K4        ; R5 := Engine
+  9 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["STACKING_MULTIPLY"]
  10 [-]: GETUPVAL  R6 U0        ; R6 := U0
  11 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  12 [-]: JMP       22           ; PC := 22
  13 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x8DB5D01F"]
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xF21555A7"]
+ 15 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0xF21555A7"]
  16 [-]: GETGLOBAL R4 K2        ; R4 := Game
  17 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["AVATAR_EVADE_NPC_BULLET"]
- 18 [-]: GETGLOBAL R5 K2        ; R5 := Game
- 19 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["STACKING_MULTIPLY"]
+ 18 [-]: GETGLOBAL R5 K4        ; R5 := Engine
+ 19 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["STACKING_MULTIPLY"]
  20 [-]: GETUPVAL  R6 U0        ; R6 := U0
  21 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  22 [-]: RETURN    R0 1         ; return 

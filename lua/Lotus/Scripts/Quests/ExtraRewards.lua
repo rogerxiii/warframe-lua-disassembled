@@ -5,7 +5,7 @@ code size: 8
 code size: 48
 code size: 57
 code size: 57
-code size: 76
+code size: 77
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Quests\ExtraRewards.luac 
 
@@ -399,7 +399,8 @@ code size: 76
  72 [-]: MOVE      R3 R4        ; R3 := R4
  73 [-]: SELF      R3 R1 K16    ; R4 := R1; R3 := R1["0xF18B0A38"]
  74 [-]: LOADK     R5 K17       ; R5 := "OnInboxSynced"
- 75 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 76 [-]: RETURN    R0 1         ; return 
+ 75 [-]: MOVE      R6 R1        ; R6 := R1
+ 76 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 77 [-]: RETURN    R0 1         ; return 
 
 

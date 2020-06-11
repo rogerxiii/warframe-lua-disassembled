@@ -90,32 +90,32 @@ code size: 39
   9 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5["0x3B1B11B9"]
  10 [-]: GETGLOBAL R8 K4        ; R8 := Game
  11 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["WEAPON_DAMAGE_AMOUNT"]
- 12 [-]: GETGLOBAL R9 K4        ; R9 := Game
- 13 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["MULTIPLY"]
- 14 [-]: GETGLOBAL R10 K7       ; R10 := damageOutputMultiplier
- 15 [-]: GETGLOBAL R11 K8       ; R11 := math
- 16 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0x65F9712A"]
- 17 [-]: GETGLOBAL R12 K7       ; R12 := damageOutputMultiplier
+ 12 [-]: GETGLOBAL R9 K6        ; R9 := Engine
+ 13 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["MULTIPLY"]
+ 14 [-]: GETGLOBAL R10 K8       ; R10 := damageOutputMultiplier
+ 15 [-]: GETGLOBAL R11 K9       ; R11 := math
+ 16 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x65F9712A"]
+ 17 [-]: GETGLOBAL R12 K8       ; R12 := damageOutputMultiplier
  18 [-]: LEN       R12 R12      ; R12 := # R12
  19 [-]: MOVE      R13 R2       ; R13 := R2
  20 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  21 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
- 22 [-]: GETGLOBAL R11 K10      ; R11 := weapType
+ 22 [-]: GETGLOBAL R11 K11      ; R11 := weapType
  23 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  24 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5["0x3B1B11B9"]
  25 [-]: GETGLOBAL R8 K4        ; R8 := Game
- 26 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["WEAPON_DAMAGE_SELF_AMOUNT"]
- 27 [-]: GETGLOBAL R9 K4        ; R9 := Game
- 28 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["MULTIPLY"]
- 29 [-]: GETGLOBAL R10 K12      ; R10 := selfDamageMultiplier
- 30 [-]: GETGLOBAL R11 K8       ; R11 := math
- 31 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0x65F9712A"]
- 32 [-]: GETGLOBAL R12 K12      ; R12 := selfDamageMultiplier
+ 26 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["WEAPON_DAMAGE_SELF_AMOUNT"]
+ 27 [-]: GETGLOBAL R9 K6        ; R9 := Engine
+ 28 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["MULTIPLY"]
+ 29 [-]: GETGLOBAL R10 K13      ; R10 := selfDamageMultiplier
+ 30 [-]: GETGLOBAL R11 K9       ; R11 := math
+ 31 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x65F9712A"]
+ 32 [-]: GETGLOBAL R12 K13      ; R12 := selfDamageMultiplier
  33 [-]: LEN       R12 R12      ; R12 := # R12
  34 [-]: MOVE      R13 R2       ; R13 := R2
  35 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  36 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
- 37 [-]: GETGLOBAL R11 K10      ; R11 := weapType
+ 37 [-]: GETGLOBAL R11 K11      ; R11 := weapType
  38 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  39 [-]: RETURN    R0 1         ; return 
 
@@ -140,32 +140,32 @@ code size: 39
   9 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5["0xF21555A7"]
  10 [-]: GETGLOBAL R8 K4        ; R8 := Game
  11 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["WEAPON_DAMAGE_AMOUNT"]
- 12 [-]: GETGLOBAL R9 K4        ; R9 := Game
- 13 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["MULTIPLY"]
- 14 [-]: GETGLOBAL R10 K7       ; R10 := damageOutputMultiplier
- 15 [-]: GETGLOBAL R11 K8       ; R11 := math
- 16 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0x65F9712A"]
- 17 [-]: GETGLOBAL R12 K7       ; R12 := damageOutputMultiplier
+ 12 [-]: GETGLOBAL R9 K6        ; R9 := Engine
+ 13 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["MULTIPLY"]
+ 14 [-]: GETGLOBAL R10 K8       ; R10 := damageOutputMultiplier
+ 15 [-]: GETGLOBAL R11 K9       ; R11 := math
+ 16 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x65F9712A"]
+ 17 [-]: GETGLOBAL R12 K8       ; R12 := damageOutputMultiplier
  18 [-]: LEN       R12 R12      ; R12 := # R12
  19 [-]: MOVE      R13 R2       ; R13 := R2
  20 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  21 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
- 22 [-]: GETGLOBAL R11 K10      ; R11 := weapType
+ 22 [-]: GETGLOBAL R11 K11      ; R11 := weapType
  23 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  24 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5["0xF21555A7"]
  25 [-]: GETGLOBAL R8 K4        ; R8 := Game
- 26 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["WEAPON_DAMAGE_SELF_AMOUNT"]
- 27 [-]: GETGLOBAL R9 K4        ; R9 := Game
- 28 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["MULTIPLY"]
- 29 [-]: GETGLOBAL R10 K12      ; R10 := selfDamageMultiplier
- 30 [-]: GETGLOBAL R11 K8       ; R11 := math
- 31 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0x65F9712A"]
- 32 [-]: GETGLOBAL R12 K12      ; R12 := selfDamageMultiplier
+ 26 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["WEAPON_DAMAGE_SELF_AMOUNT"]
+ 27 [-]: GETGLOBAL R9 K6        ; R9 := Engine
+ 28 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["MULTIPLY"]
+ 29 [-]: GETGLOBAL R10 K13      ; R10 := selfDamageMultiplier
+ 30 [-]: GETGLOBAL R11 K9       ; R11 := math
+ 31 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x65F9712A"]
+ 32 [-]: GETGLOBAL R12 K13      ; R12 := selfDamageMultiplier
  33 [-]: LEN       R12 R12      ; R12 := # R12
  34 [-]: MOVE      R13 R2       ; R13 := R2
  35 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  36 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
- 37 [-]: GETGLOBAL R11 K10      ; R11 := weapType
+ 37 [-]: GETGLOBAL R11 K11      ; R11 := weapType
  38 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
  39 [-]: RETURN    R0 1         ; return 
 

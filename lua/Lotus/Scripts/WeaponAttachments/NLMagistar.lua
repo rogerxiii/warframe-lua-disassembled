@@ -198,23 +198,23 @@ code size: 76
 118 [-]: GETGLOBAL R18 K33      ; R18 := healResistDuration
 119 [-]: GETGLOBAL R19 K8       ; R19 := Game
 120 [-]: GETTABLE  R19 R19 K34  ; R19 := R19["AVATAR_HEAL_RATE_FORCED"]
-121 [-]: GETGLOBAL R20 K8       ; R20 := Game
-122 [-]: GETTABLE  R20 R20 K35  ; R20 := R20["ADD"]
-123 [-]: GETGLOBAL R21 K36      ; R21 := healResistHealth
+121 [-]: GETGLOBAL R20 K35      ; R20 := Engine
+122 [-]: GETTABLE  R20 R20 K36  ; R20 := R20["ADD"]
+123 [-]: GETGLOBAL R21 K37      ; R21 := healResistHealth
 124 [-]: GETGLOBAL R22 K33      ; R22 := healResistDuration
 125 [-]: DIV       R21 R21 R22  ; R21 := R21 / R22
 126 [-]: CALL      R15 7 1      ; R15(R16,R17,R18,R19,R20,R21)
 127 [-]: JMP       140          ; PC := 140
-128 [-]: SELF      R15 R14 K37  ; R16 := R14; R15 := R14["0x385BD2FE"]
+128 [-]: SELF      R15 R14 K38  ; R16 := R14; R15 := R14["0x385BD2FE"]
 129 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 130 [-]: GETGLOBAL R16 K13      ; R16 := math
-131 [-]: GETTABLE  R16 R16 K38  ; R16 := R16["0x65F9712A"]
+131 [-]: GETTABLE  R16 R16 K39  ; R16 := R16["0x65F9712A"]
 132 [-]: MOVE      R17 R15      ; R17 := R15
-133 [-]: SELF      R18 R14 K39  ; R19 := R14; R18 := R14["0x2F79FBD3"]
+133 [-]: SELF      R18 R14 K40  ; R19 := R14; R18 := R14["0x2F79FBD3"]
 134 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 135 [-]: ADD       R18 R18 R6   ; R18 := R18 + R6
 136 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
-137 [-]: SELF      R17 R14 K40  ; R18 := R14; R17 := R14["0x76C229EF"]
+137 [-]: SELF      R17 R14 K41  ; R18 := R14; R17 := R14["0x76C229EF"]
 138 [-]: MOVE      R19 R16      ; R19 := R16
 139 [-]: CALL      R17 3 1      ; R17(R18,R19)
 140 [-]: FORLOOP   R10 85       ; R10 += R12; if R10 <= R11 then begin PC := 85; R13 := R10 end

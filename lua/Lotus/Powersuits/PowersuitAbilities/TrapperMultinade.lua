@@ -3059,73 +3059,73 @@ code size: 33
 224 [-]: MOVE      R30 R18      ; R30 := R18
 225 [-]: GETGLOBAL R31 K50      ; R31 := Game
 226 [-]: GETTABLE  R31 R31 K51  ; R31 := R31["WEAPON_DAMAGE_AMOUNT"]
-227 [-]: GETGLOBAL R32 K50      ; R32 := Game
-228 [-]: GETTABLE  R32 R32 K52  ; R32 := R32["MULTIPLY"]
+227 [-]: GETGLOBAL R32 K52      ; R32 := Engine
+228 [-]: GETTABLE  R32 R32 K53  ; R32 := R32["MULTIPLY"]
 229 [-]: GETUPVAL  R33 U4       ; R33 := U4
-230 [-]: ADD       R33 K53 R33  ; R33 := 1 + R33
+230 [-]: ADD       R33 K54 R33  ; R33 := 1 + R33
 231 [-]: CALL      R28 6 1      ; R28(R29,R30,R31,R32,R33)
 232 [-]: GETUPVAL  R28 U3       ; R28 := U3
-233 [-]: SETTABLE  R14 K54 R28  ; R14["buffData"] := R28
+233 [-]: SETTABLE  R14 K55 R28  ; R14["buffData"] := R28
 234 [-]: NEWTABLE  R28 1 0      ; R28 := {}
 235 [-]: MOVE      R29 R17      ; R29 := R17
 236 [-]: SETLIST   R28 1 1      ; R28[(1-1)*FPF+i] := R(28+i), 1 <= i <= 1
-237 [-]: SETTABLE  R14 K55 R28  ; R14["affected"] := R28
-238 [-]: SELF      R28 R17 K56  ; R29 := R17; R28 := R17["0x584F13D6"]
+237 [-]: SETTABLE  R14 K56 R28  ; R14["affected"] := R28
+238 [-]: SELF      R28 R17 K57  ; R29 := R17; R28 := R17["0x584F13D6"]
 239 [-]: MOVE      R30 R14      ; R30 := R14
 240 [-]: MOVE      R31 R1       ; R31 := R1
 241 [-]: MOVE      R32 R1       ; R32 := R1
 242 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
-243 [-]: SELF      R28 R17 K57  ; R29 := R17; R28 := R17["0xAB436EF2"]
-244 [-]: GETGLOBAL R30 K58      ; R30 := damageAmpLeap
-245 [-]: GETGLOBAL R31 K59      ; R31 := EMPTY_SYMBOL
+243 [-]: SELF      R28 R17 K58  ; R29 := R17; R28 := R17["0xAB436EF2"]
+244 [-]: GETGLOBAL R30 K59      ; R30 := damageAmpLeap
+245 [-]: GETGLOBAL R31 K60      ; R31 := EMPTY_SYMBOL
 246 [-]: SELF      R32 R17 K38  ; R33 := R17; R32 := R17["0x6DA72501"]
 247 [-]: CALL      R32 2 2      ; R32 := R32(R33)
 248 [-]: SUB       R32 R19 R32  ; R32 := R19 - R32
-249 [-]: GETGLOBAL R33 K60      ; R33 := ZERO_ROTATION
+249 [-]: GETGLOBAL R33 K61      ; R33 := ZERO_ROTATION
 250 [-]: MOVE      R34 R2       ; R34 := R2
 251 [-]: CALL      R28 7 1      ; R28(R29,R30,R31,R32,R33,R34)
-252 [-]: SELF      R28 R17 K61  ; R29 := R17; R28 := R17["0xF94A17B9"]
-253 [-]: GETGLOBAL R30 K62      ; R30 := damageAmpBoostedEffect
+252 [-]: SELF      R28 R17 K62  ; R29 := R17; R28 := R17["0xF94A17B9"]
+253 [-]: GETGLOBAL R30 K63      ; R30 := damageAmpBoostedEffect
 254 [-]: CALL      R28 3 2      ; R28 := R28(R29,R30)
 255 [-]: TEST      R28 1        ; if R28 then PC := 268
 256 [-]: JMP       268          ; PC := 268
-257 [-]: SELF      R28 R17 K57  ; R29 := R17; R28 := R17["0xAB436EF2"]
-258 [-]: GETGLOBAL R30 K62      ; R30 := damageAmpBoostedEffect
+257 [-]: SELF      R28 R17 K58  ; R29 := R17; R28 := R17["0xAB436EF2"]
+258 [-]: GETGLOBAL R30 K63      ; R30 := damageAmpBoostedEffect
 259 [-]: GETUPVAL  R31 U9       ; R31 := U9
-260 [-]: GETGLOBAL R32 K63      ; R32 := 0x221C9700
+260 [-]: GETGLOBAL R32 K64      ; R32 := 0x221C9700
 261 [-]: LOADK     R33 K1       ; R33 := 0
-262 [-]: LOADK     R34 K64      ; R34 := 0.25
+262 [-]: LOADK     R34 K65      ; R34 := 0.25
 263 [-]: LOADK     R35 K1       ; R35 := 0
 264 [-]: CALL      R32 4 2      ; R32 := R32(R33,R34,R35)
-265 [-]: GETGLOBAL R33 K60      ; R33 := ZERO_ROTATION
+265 [-]: GETGLOBAL R33 K61      ; R33 := ZERO_ROTATION
 266 [-]: MOVE      R34 R2       ; R34 := R2
 267 [-]: CALL      R28 7 1      ; R28(R29,R30,R31,R32,R33,R34)
-268 [-]: SELF      R28 R0 K65   ; R29 := R0; R28 := R0["0x44590A2F"]
+268 [-]: SELF      R28 R0 K66   ; R29 := R0; R28 := R0["0x44590A2F"]
 269 [-]: MOVE      R30 R17      ; R30 := R17
 270 [-]: GETUPVAL  R31 U9       ; R31 := U9
 271 [-]: CALL      R28 4 1      ; R28(R29,R30,R31)
-272 [-]: SELF      R28 R0 K66   ; R29 := R0; R28 := R0["0xA78B7FA7"]
-273 [-]: GETGLOBAL R30 K63      ; R30 := 0x221C9700
+272 [-]: SELF      R28 R0 K67   ; R29 := R0; R28 := R0["0xA78B7FA7"]
+273 [-]: GETGLOBAL R30 K64      ; R30 := 0x221C9700
 274 [-]: LOADK     R31 K1       ; R31 := 0
-275 [-]: LOADK     R32 K64      ; R32 := 0.25
+275 [-]: LOADK     R32 K65      ; R32 := 0.25
 276 [-]: LOADK     R33 K1       ; R33 := 0
 277 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
-278 [-]: GETGLOBAL R31 K60      ; R31 := ZERO_ROTATION
+278 [-]: GETGLOBAL R31 K61      ; R31 := ZERO_ROTATION
 279 [-]: CALL      R28 4 1      ; R28(R29,R30,R31)
 280 [-]: GETGLOBAL R28 K3       ; R28 := 0x400E7765
-281 [-]: SELF      R29 R0 K67   ; R30 := R0; R29 := R0["0x907C463B"]
+281 [-]: SELF      R29 R0 K68   ; R30 := R0; R29 := R0["0x907C463B"]
 282 [-]: CALL      R29 2 0      ; R29,... := R29(R30)
 283 [-]: CALL      R28 0 2      ; R28 := R28(R29,...)
 284 [-]: TEST      R28 1        ; if R28 then PC := 290
 285 [-]: JMP       290          ; PC := 290
-286 [-]: SELF      R28 R0 K68   ; R29 := R0; R28 := R0["0xD610586B"]
-287 [-]: LOADK     R30 K69      ; R30 := 0.89999997615814
+286 [-]: SELF      R28 R0 K69   ; R29 := R0; R28 := R0["0xD610586B"]
+287 [-]: LOADK     R30 K70      ; R30 := 0.89999997615814
 288 [-]: CALL      R28 3 1      ; R28(R29,R30)
 289 [-]: JMP       293          ; PC := 293
-290 [-]: SELF      R28 R0 K68   ; R29 := R0; R28 := R0["0xD610586B"]
+290 [-]: SELF      R28 R0 K69   ; R29 := R0; R28 := R0["0xD610586B"]
 291 [-]: LOADK     R30 K1       ; R30 := 0
 292 [-]: CALL      R28 3 1      ; R28(R29,R30)
-293 [-]: LOADK     R15 K70      ; R15 := 0.20000000298023
+293 [-]: LOADK     R15 K71      ; R15 := 0.20000000298023
 294 [-]: TEST      R16 0        ; if not R16 then PC := 339
 295 [-]: JMP       339          ; PC := 339
 296 [-]: GETGLOBAL R28 K3       ; R28 := 0x400E7765
@@ -3144,22 +3144,22 @@ code size: 33
 309 [-]: JMP       339          ; PC := 339
 310 [-]: SELF      R28 R17 K5   ; R29 := R17; R28 := R17["0x8DB5D01F"]
 311 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-312 [-]: SELF      R28 R28 K71  ; R29 := R28; R28 := R28["0x5A740E25"]
+312 [-]: SELF      R28 R28 K72  ; R29 := R28; R28 := R28["0x5A740E25"]
 313 [-]: MOVE      R30 R18      ; R30 := R18
 314 [-]: GETGLOBAL R31 K50      ; R31 := Game
 315 [-]: GETTABLE  R31 R31 K51  ; R31 := R31["WEAPON_DAMAGE_AMOUNT"]
-316 [-]: GETGLOBAL R32 K50      ; R32 := Game
-317 [-]: GETTABLE  R32 R32 K52  ; R32 := R32["MULTIPLY"]
+316 [-]: GETGLOBAL R32 K52      ; R32 := Engine
+317 [-]: GETTABLE  R32 R32 K53  ; R32 := R32["MULTIPLY"]
 318 [-]: GETUPVAL  R33 U4       ; R33 := U4
-319 [-]: ADD       R33 K53 R33  ; R33 := 1 + R33
+319 [-]: ADD       R33 K54 R33  ; R33 := 1 + R33
 320 [-]: CALL      R28 6 1      ; R28(R29,R30,R31,R32,R33)
-321 [-]: SELF      R28 R17 K56  ; R29 := R17; R28 := R17["0x584F13D6"]
+321 [-]: SELF      R28 R17 K57  ; R29 := R17; R28 := R17["0x584F13D6"]
 322 [-]: MOVE      R30 R14      ; R30 := R14
 323 [-]: MOVE      R31 R0       ; R31 := R0
 324 [-]: MOVE      R32 R1       ; R32 := R1
 325 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
-326 [-]: SELF      R28 R17 K72  ; R29 := R17; R28 := R17["0x9F1DC568"]
-327 [-]: GETGLOBAL R30 K62      ; R30 := damageAmpBoostedEffect
+326 [-]: SELF      R28 R17 K73  ; R29 := R17; R28 := R17["0x9F1DC568"]
+327 [-]: GETGLOBAL R30 K63      ; R30 := damageAmpBoostedEffect
 328 [-]: CALL      R28 3 2      ; R28 := R28(R29,R30)
 329 [-]: GETGLOBAL R29 K3       ; R29 := 0x400E7765
 330 [-]: MOVE      R30 R28      ; R30 := R28
@@ -3169,16 +3169,16 @@ code size: 33
 334 [-]: SELF      R29 R28 K4   ; R30 := R28; R29 := R28["0xD4C2743F"]
 335 [-]: CALL      R29 2 1      ; R29(R30)
 336 [-]: LOADNIL   R17 R17      ; R17 := nil
-337 [-]: SELF      R29 R0 K73   ; R30 := R0; R29 := R0["0x895CBBD1"]
+337 [-]: SELF      R29 R0 K74   ; R30 := R0; R29 := R0["0x895CBBD1"]
 338 [-]: CALL      R29 2 1      ; R29(R30)
 339 [-]: GETGLOBAL R29 K0       ; R29 := 0x201191EA
 340 [-]: LOADK     R30 K1       ; R30 := 0
 341 [-]: CALL      R29 2 1      ; R29(R30)
-342 [-]: GETGLOBAL R29 K74      ; R29 := 0x4CDEF9FF
+342 [-]: GETGLOBAL R29 K75      ; R29 := 0x4CDEF9FF
 343 [-]: CALL      R29 1 2      ; R29 := R29()
 344 [-]: SUB       R15 R15 R29  ; R15 := R15 - R29
 345 [-]: GETUPVAL  R29 U3       ; R29 := U3
-346 [-]: GETGLOBAL R30 K74      ; R30 := 0x4CDEF9FF
+346 [-]: GETGLOBAL R30 K75      ; R30 := 0x4CDEF9FF
 347 [-]: CALL      R30 1 2      ; R30 := R30()
 348 [-]: SUB       R29 R29 R30  ; R29 := R29 - R30
 349 [-]: MOVE      R29 R3       ; R29 := R3
@@ -3192,22 +3192,22 @@ code size: 33
 357 [-]: JMP       384          ; PC := 384
 358 [-]: SELF      R29 R17 K5   ; R30 := R17; R29 := R17["0x8DB5D01F"]
 359 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-360 [-]: SELF      R29 R29 K71  ; R30 := R29; R29 := R29["0x5A740E25"]
+360 [-]: SELF      R29 R29 K72  ; R30 := R29; R29 := R29["0x5A740E25"]
 361 [-]: MOVE      R31 R18      ; R31 := R18
 362 [-]: GETGLOBAL R32 K50      ; R32 := Game
 363 [-]: GETTABLE  R32 R32 K51  ; R32 := R32["WEAPON_DAMAGE_AMOUNT"]
-364 [-]: GETGLOBAL R33 K50      ; R33 := Game
-365 [-]: GETTABLE  R33 R33 K52  ; R33 := R33["MULTIPLY"]
+364 [-]: GETGLOBAL R33 K52      ; R33 := Engine
+365 [-]: GETTABLE  R33 R33 K53  ; R33 := R33["MULTIPLY"]
 366 [-]: GETUPVAL  R34 U4       ; R34 := U4
-367 [-]: ADD       R34 K53 R34  ; R34 := 1 + R34
+367 [-]: ADD       R34 K54 R34  ; R34 := 1 + R34
 368 [-]: CALL      R29 6 1      ; R29(R30,R31,R32,R33,R34)
-369 [-]: SELF      R29 R17 K56  ; R30 := R17; R29 := R17["0x584F13D6"]
+369 [-]: SELF      R29 R17 K57  ; R30 := R17; R29 := R17["0x584F13D6"]
 370 [-]: MOVE      R31 R14      ; R31 := R14
 371 [-]: MOVE      R32 R0       ; R32 := R0
 372 [-]: MOVE      R33 R1       ; R33 := R1
 373 [-]: CALL      R29 5 1      ; R29(R30,R31,R32,R33)
-374 [-]: SELF      R29 R17 K72  ; R30 := R17; R29 := R17["0x9F1DC568"]
-375 [-]: GETGLOBAL R31 K62      ; R31 := damageAmpBoostedEffect
+374 [-]: SELF      R29 R17 K73  ; R30 := R17; R29 := R17["0x9F1DC568"]
+375 [-]: GETGLOBAL R31 K63      ; R31 := damageAmpBoostedEffect
 376 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
 377 [-]: GETGLOBAL R30 K3       ; R30 := 0x400E7765
 378 [-]: MOVE      R31 R29      ; R31 := R29

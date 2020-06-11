@@ -1,6 +1,6 @@
 code size: 12
 code size: 26
-code size: 194
+code size: 212
 code size: 80
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Gameplay\SentientGooSpawn.luac 
@@ -166,12 +166,12 @@ code size: 80
  92 [-]: LOADK     R10 K19      ; R10 := 1
  93 [-]: MOVE      R11 R8       ; R11 := R8
  94 [-]: LOADK     R12 K19      ; R12 := 1
- 95 [-]: FORPREP   R10 189      ; R10 -= R12; PC := 189
+ 95 [-]: FORPREP   R10 207      ; R10 -= R12; PC := 207
  96 [-]: SELF      R14 R5 K13   ; R15 := R5; R14 := R5["0x1C2887CE"]
  97 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  98 [-]: LE        0 R14 K14    ; if R14 > 0 then PC := 101
  99 [-]: JMP       101          ; PC := 101
-100 [-]: JMP       190          ; PC := 190
+100 [-]: JMP       208          ; PC := 208
 101 [-]: GETGLOBAL R14 K22      ; R14 := math
 102 [-]: GETTABLE  R14 R14 K23  ; R14 := R14["0x865961F7"]
 103 [-]: CALL      R14 1 2      ; R14 := R14()
@@ -243,12 +243,12 @@ code size: 80
 169 [-]: MOVE      R24 R9       ; R24 := R9
 170 [-]: GETGLOBAL R25 K46      ; R25 := Game
 171 [-]: GETTABLE  R25 R25 K47  ; R25 := R25["AVATAR_MOVEMENT_SPEED"]
-172 [-]: GETGLOBAL R26 K46      ; R26 := Game
-173 [-]: GETTABLE  R26 R26 K48  ; R26 := R26["MULTIPLY"]
-174 [-]: LOADK     R27 K49      ; R27 := 0.64999997615814
+172 [-]: GETGLOBAL R26 K48      ; R26 := Engine
+173 [-]: GETTABLE  R26 R26 K49  ; R26 := R26["MULTIPLY"]
+174 [-]: LOADK     R27 K50      ; R27 := 0.64999997615814
 175 [-]: CALL      R22 6 1      ; R22(R23,R24,R25,R26,R27)
-176 [-]: GETGLOBAL R22 K50      ; R22 := table
-177 [-]: GETTABLE  R22 R22 K51  ; R22 := R22["0xE6450C9D"]
+176 [-]: GETGLOBAL R22 K51      ; R22 := table
+177 [-]: GETTABLE  R22 R22 K52  ; R22 := R22["0xE6450C9D"]
 178 [-]: GETGLOBAL R23 K17      ; R23 := _T
 179 [-]: GETTABLE  R23 R23 K18  ; R23 := R23["GooAvatars"]
 180 [-]: MOVE      R24 R19      ; R24 := R19
@@ -257,21 +257,39 @@ code size: 80
 183 [-]: JMP       189          ; PC := 189
 184 [-]: LT        0 R13 R8     ; if R13 >= R8 then PC := 189
 185 [-]: JMP       189          ; PC := 189
-186 [-]: GETGLOBAL R22 K52      ; R22 := 0x201191EA
-187 [-]: LOADK     R23 K53      ; R23 := 0.5
+186 [-]: GETGLOBAL R22 K53      ; R22 := 0x201191EA
+187 [-]: LOADK     R23 K54      ; R23 := 0.5
 188 [-]: CALL      R22 2 1      ; R22(R23)
-189 [-]: FORLOOP   R10 96       ; R10 += R12; if R10 <= R11 then begin PC := 96; R13 := R10 end
-190 [-]: GETUPVAL  R22 U0       ; R22 := U0
-191 [-]: MOVE      R23 R2       ; R23 := R2
-192 [-]: MOVE      R24 R0       ; R24 := R0
-193 [-]: CALL      R22 3 1      ; R22(R23,R24)
-194 [-]: RETURN    R0 1         ; return 
+189 [-]: SELF      R22 R5 K13   ; R23 := R5; R22 := R5["0x1C2887CE"]
+190 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+191 [-]: LE        1 R22 K14    ; if R22 <= 0 then PC := 208
+192 [-]: JMP       208          ; PC := 208
+193 [-]: TEST      R4 0         ; if not R4 then PC := 207
+194 [-]: JMP       207          ; PC := 207
+195 [-]: GETGLOBAL R22 K3       ; R22 := 0x400E7765
+196 [-]: MOVE      R23 R3       ; R23 := R3
+197 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+198 [-]: TEST      R22 1        ; if R22 then PC := 208
+199 [-]: JMP       208          ; PC := 208
+200 [-]: SELF      R22 R3 K8    ; R23 := R3; R22 := R3["0x744365D5"]
+201 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+202 [-]: GETGLOBAL R23 K9       ; R23 := Npc
+203 [-]: GETTABLE  R23 R23 K10  ; R23 := R23["ES_ACTIVE"]
+204 [-]: EQ        1 R22 R23    ; if R22 == R23 then PC := 207
+205 [-]: JMP       207          ; PC := 207
+206 [-]: JMP       208          ; PC := 208
+207 [-]: FORLOOP   R10 96       ; R10 += R12; if R10 <= R11 then begin PC := 96; R13 := R10 end
+208 [-]: GETUPVAL  R22 U0       ; R22 := U0
+209 [-]: MOVE      R23 R2       ; R23 := R2
+210 [-]: MOVE      R24 R0       ; R24 := R0
+211 [-]: CALL      R22 3 1      ; R22(R23,R24)
+212 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 128
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

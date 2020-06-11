@@ -184,7 +184,7 @@ code size: 189
  30 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0x3B1B11B9"]
  31 [-]: GETGLOBAL R3 K13       ; R3 := Game
  32 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["AVATAR_SHIELD_MAX"]
- 33 [-]: GETGLOBAL R4 K13       ; R4 := Game
+ 33 [-]: GETGLOBAL R4 K6        ; R4 := Engine
  34 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["MULTIPLY"]
  35 [-]: LOADK     R5 K16       ; R5 := 0.5
  36 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)

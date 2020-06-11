@@ -1220,34 +1220,34 @@ code size: 8
 363 [-]: SELF      R30 R7 K71   ; R31 := R7; R30 := R7["0xF21555A7"]
 364 [-]: GETGLOBAL R32 K50      ; R32 := Game
 365 [-]: GETTABLE  R32 R32 K72  ; R32 := R32["AVATAR_SHIELD_RECHARGE_DELAY"]
-366 [-]: GETGLOBAL R33 K50      ; R33 := Game
-367 [-]: GETTABLE  R33 R33 K73  ; R33 := R33["STACKING_MULTIPLY"]
+366 [-]: GETGLOBAL R33 K73      ; R33 := Engine
+367 [-]: GETTABLE  R33 R33 K74  ; R33 := R33["STACKING_MULTIPLY"]
 368 [-]: GETUPVAL  R34 U15      ; R34 := U15
 369 [-]: MUL       R34 R34 R20  ; R34 := R34 * R20
 370 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
 371 [-]: SELF      R30 R7 K71   ; R31 := R7; R30 := R7["0xF21555A7"]
 372 [-]: GETGLOBAL R32 K50      ; R32 := Game
-373 [-]: GETTABLE  R32 R32 K74  ; R32 := R32["AVATAR_SHIELD_RECHARGE_RATE"]
-374 [-]: GETGLOBAL R33 K50      ; R33 := Game
-375 [-]: GETTABLE  R33 R33 K73  ; R33 := R33["STACKING_MULTIPLY"]
+373 [-]: GETTABLE  R32 R32 K75  ; R32 := R32["AVATAR_SHIELD_RECHARGE_RATE"]
+374 [-]: GETGLOBAL R33 K73      ; R33 := Engine
+375 [-]: GETTABLE  R33 R33 K74  ; R33 := R33["STACKING_MULTIPLY"]
 376 [-]: GETUPVAL  R34 U16      ; R34 := U16
 377 [-]: MUL       R34 R34 R20  ; R34 := R34 * R20
 378 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
 379 [-]: LT        0 K4 R19     ; if 0 >= R19 then PC := 397
 380 [-]: JMP       397          ; PC := 397
-381 [-]: SELF      R30 R7 K75   ; R31 := R7; R30 := R7["0x3B1B11B9"]
+381 [-]: SELF      R30 R7 K76   ; R31 := R7; R30 := R7["0x3B1B11B9"]
 382 [-]: GETGLOBAL R32 K50      ; R32 := Game
 383 [-]: GETTABLE  R32 R32 K72  ; R32 := R32["AVATAR_SHIELD_RECHARGE_DELAY"]
-384 [-]: GETGLOBAL R33 K50      ; R33 := Game
-385 [-]: GETTABLE  R33 R33 K73  ; R33 := R33["STACKING_MULTIPLY"]
+384 [-]: GETGLOBAL R33 K73      ; R33 := Engine
+385 [-]: GETTABLE  R33 R33 K74  ; R33 := R33["STACKING_MULTIPLY"]
 386 [-]: GETUPVAL  R34 U15      ; R34 := U15
 387 [-]: MUL       R34 R34 R19  ; R34 := R34 * R19
 388 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
-389 [-]: SELF      R30 R7 K75   ; R31 := R7; R30 := R7["0x3B1B11B9"]
+389 [-]: SELF      R30 R7 K76   ; R31 := R7; R30 := R7["0x3B1B11B9"]
 390 [-]: GETGLOBAL R32 K50      ; R32 := Game
-391 [-]: GETTABLE  R32 R32 K74  ; R32 := R32["AVATAR_SHIELD_RECHARGE_RATE"]
-392 [-]: GETGLOBAL R33 K50      ; R33 := Game
-393 [-]: GETTABLE  R33 R33 K73  ; R33 := R33["STACKING_MULTIPLY"]
+391 [-]: GETTABLE  R32 R32 K75  ; R32 := R32["AVATAR_SHIELD_RECHARGE_RATE"]
+392 [-]: GETGLOBAL R33 K73      ; R33 := Engine
+393 [-]: GETTABLE  R33 R33 K74  ; R33 := R33["STACKING_MULTIPLY"]
 394 [-]: GETUPVAL  R34 U16      ; R34 := U16
 395 [-]: MUL       R34 R34 R19  ; R34 := R34 * R19
 396 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
@@ -1256,12 +1256,12 @@ code size: 8
 399 [-]: JMP       411          ; PC := 411
 400 [-]: TEST      R21 0        ; if not R21 then PC := 407
 401 [-]: JMP       407          ; PC := 407
-402 [-]: SELF      R30 R27 K76  ; R31 := R27; R30 := R27["0x58FA15C8"]
+402 [-]: SELF      R30 R27 K77  ; R31 := R27; R30 := R27["0x58FA15C8"]
 403 [-]: GETUPVAL  R32 U17      ; R32 := U17
 404 [-]: MUL       R32 R28 R32  ; R32 := R28 * R32
 405 [-]: CALL      R30 3 1      ; R30(R31,R32)
 406 [-]: JMP       410          ; PC := 410
-407 [-]: SELF      R30 R27 K76  ; R31 := R27; R30 := R27["0x58FA15C8"]
+407 [-]: SELF      R30 R27 K77  ; R31 := R27; R30 := R27["0x58FA15C8"]
 408 [-]: MOVE      R32 R28      ; R32 := R28
 409 [-]: CALL      R30 3 1      ; R30(R31,R32)
 410 [-]: MOVE      R22 R21      ; R22 := R21
@@ -1325,23 +1325,23 @@ code size: 8
  42 [-]: SELF      R5 R4 K13    ; R6 := R4; R5 := R4["0xF21555A7"]
  43 [-]: GETGLOBAL R7 K14       ; R7 := Game
  44 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["AVATAR_SHIELD_RECHARGE_DELAY"]
- 45 [-]: GETGLOBAL R8 K14       ; R8 := Game
- 46 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["STACKING_MULTIPLY"]
+ 45 [-]: GETGLOBAL R8 K16       ; R8 := Engine
+ 46 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["STACKING_MULTIPLY"]
  47 [-]: GETUPVAL  R9 U2        ; R9 := U2
  48 [-]: MUL       R9 R9 R3     ; R9 := R9 * R3
  49 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  50 [-]: SELF      R5 R4 K13    ; R6 := R4; R5 := R4["0xF21555A7"]
  51 [-]: GETGLOBAL R7 K14       ; R7 := Game
- 52 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["AVATAR_SHIELD_RECHARGE_RATE"]
- 53 [-]: GETGLOBAL R8 K14       ; R8 := Game
- 54 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["STACKING_MULTIPLY"]
+ 52 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["AVATAR_SHIELD_RECHARGE_RATE"]
+ 53 [-]: GETGLOBAL R8 K16       ; R8 := Engine
+ 54 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["STACKING_MULTIPLY"]
  55 [-]: GETUPVAL  R9 U3        ; R9 := U3
  56 [-]: MUL       R9 R9 R3     ; R9 := R9 * R3
  57 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  58 [-]: GETGLOBAL R5 K6        ; R5 := _T
  59 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["runnerPassive"]
  60 [-]: SETTABLE  R5 R2 K8     ; R5[R2] := nil
- 61 [-]: GETGLOBAL R5 K18       ; R5 := 0xAA09E79D
+ 61 [-]: GETGLOBAL R5 K19       ; R5 := 0xAA09E79D
  62 [-]: GETGLOBAL R6 K6        ; R6 := _T
  63 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["runnerPassive"]
  64 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -1350,21 +1350,21 @@ code size: 8
  67 [-]: GETGLOBAL R5 K6        ; R5 := _T
  68 [-]: SETTABLE  R5 K7 K8     ; R5["runnerPassive"] := nil
  69 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 70 [-]: SETTABLE  R5 K19 K8    ; R5["RUNNER_IncreaseGauge"] := nil
+ 70 [-]: SETTABLE  R5 K20 K8    ; R5["RUNNER_IncreaseGauge"] := nil
  71 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 72 [-]: SETTABLE  R5 K20 K8    ; R5["RUNNER_GetGauge"] := nil
+ 72 [-]: SETTABLE  R5 K21 K8    ; R5["RUNNER_GetGauge"] := nil
  73 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 74 [-]: SETTABLE  R5 K21 K8    ; R5["RUNNER_GetRedlinePct"] := nil
+ 74 [-]: SETTABLE  R5 K22 K8    ; R5["RUNNER_GetRedlinePct"] := nil
  75 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 76 [-]: SETTABLE  R5 K22 K8    ; R5["RUNNER_LockGauge"] := nil
+ 76 [-]: SETTABLE  R5 K23 K8    ; R5["RUNNER_LockGauge"] := nil
  77 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 78 [-]: SETTABLE  R5 K23 K8    ; R5["RUNNER_SetCasting"] := nil
+ 78 [-]: SETTABLE  R5 K24 K8    ; R5["RUNNER_SetCasting"] := nil
  79 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 80 [-]: SETTABLE  R5 K24 K8    ; R5["RUNNER_IsAbilityBlocking"] := nil
+ 80 [-]: SETTABLE  R5 K25 K8    ; R5["RUNNER_IsAbilityBlocking"] := nil
  81 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 82 [-]: SETTABLE  R5 K25 K8    ; R5["RUNNER_DecoState"] := nil
+ 82 [-]: SETTABLE  R5 K26 K8    ; R5["RUNNER_DecoState"] := nil
  83 [-]: GETGLOBAL R5 K6        ; R5 := _T
- 84 [-]: SETTABLE  R5 K26 K8    ; R5["RUNNER_SetDecoState"] := nil
+ 84 [-]: SETTABLE  R5 K27 K8    ; R5["RUNNER_SetDecoState"] := nil
  85 [-]: RETURN    R0 1         ; return 
 
 

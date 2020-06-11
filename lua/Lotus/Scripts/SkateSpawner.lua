@@ -401,19 +401,19 @@ code size: 75
  51 [-]: SELF      R4 R3 K18    ; R5 := R3; R4 := R3["0x3B1B11B9"]
  52 [-]: GETGLOBAL R6 K19       ; R6 := Game
  53 [-]: GETTABLE  R6 R6 K20    ; R6 := R6["WEAPON_LIFE_STEAL"]
- 54 [-]: GETGLOBAL R7 K19       ; R7 := Game
- 55 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["ADD"]
- 56 [-]: LOADK     R8 K22       ; R8 := 1
+ 54 [-]: GETGLOBAL R7 K21       ; R7 := Engine
+ 55 [-]: GETTABLE  R7 R7 K22    ; R7 := R7["ADD"]
+ 56 [-]: LOADK     R8 K23       ; R8 := 1
  57 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  58 [-]: SELF      R4 R3 K18    ; R5 := R3; R4 := R3["0x3B1B11B9"]
  59 [-]: GETGLOBAL R6 K19       ; R6 := Game
- 60 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 61 [-]: GETGLOBAL R7 K19       ; R7 := Game
- 62 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["ADD"]
- 63 [-]: LOADK     R8 K24       ; R8 := 0.30000001192093
- 64 [-]: GETGLOBAL R9 K25       ; R9 := gLotusWeaponType
+ 60 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
+ 61 [-]: GETGLOBAL R7 K21       ; R7 := Engine
+ 62 [-]: GETTABLE  R7 R7 K22    ; R7 := R7["ADD"]
+ 63 [-]: LOADK     R8 K25       ; R8 := 0.30000001192093
+ 64 [-]: GETGLOBAL R9 K26       ; R9 := gLotusWeaponType
  65 [-]: LOADNIL   R10 R10      ; R10 := nil
- 66 [-]: GETGLOBAL R11 K26      ; R11 := Engine
+ 66 [-]: GETGLOBAL R11 K21      ; R11 := Engine
  67 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["DT_POISON"]
  68 [-]: CALL      R4 8 1       ; R4(R5,R6,R7,R8,R9,R10,R11)
  69 [-]: SELF      R4 R0 K28    ; R5 := R0; R4 := R0["0x3C291F73"]

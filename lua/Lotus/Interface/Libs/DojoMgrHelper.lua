@@ -1,8 +1,8 @@
-code size: 265
+code size: 270
 code size: 8
 code size: 117
 code size: 7
-code size: 134
+code size: 128
 code size: 18
 code size: 36
 code size: 16
@@ -22,7 +22,7 @@ code size: 273
 code size: 19
 code size: 186
 code size: 22
-code size: 60
+code size: 54
 code size: 32
 code size: 15
 code size: 50
@@ -36,7 +36,7 @@ code size: 215
 code size: 16
 code size: 47
 code size: 37
-code size: 500
+code size: 493
 code size: 31
 code size: 3
 code size: 168
@@ -51,11 +51,11 @@ code size: 10
 code size: 53
 code size: 28
 code size: 31
-code size: 81
+code size: 88
 code size: 67
 code size: 62
 code size: 13
-code size: 421
+code size: 426
 code size: 34
 code size: 227
 code size: 26
@@ -68,12 +68,13 @@ code size: 34
 code size: 71
 code size: 26
 code size: 162
-code size: 295
+code size: 312
 code size: 5
 code size: 10
 code size: 93
 code size: 160
 code size: 42
+code size: 14
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Libs\DojoMgrHelper.luac 
 
@@ -329,26 +330,31 @@ code size: 42
 243 [-]: SETGLOBAL R34 K81      ; MoveDecoration := R34
 244 [-]: SETGLOBAL R34 K82      ; 0xA1B26C5E := R34
 245 [-]: CLOSURE   R7 61        ; R7 := closure(Function #62)
-246 [-]: MOVE      R0 R9        ; R0 := R9
-247 [-]: MOVE      R0 R0        ; R0 := R0
-248 [-]: CLOSURE   R34 62       ; R34 := closure(Function #63)
-249 [-]: MOVE      R0 R7        ; R0 := R7
-250 [-]: SETGLOBAL R34 K83      ; OnFocusedDecoChanged := R34
-251 [-]: SETGLOBAL R34 K84      ; 0x369E26FB := R34
-252 [-]: CLOSURE   R34 63       ; R34 := closure(Function #64)
-253 [-]: MOVE      R0 R24       ; R0 := R24
-254 [-]: SETGLOBAL R34 K85      ; UpdateDecoPlacementInstructions := R34
-255 [-]: SETGLOBAL R34 K86      ; 0xFDCF25B1 := R34
-256 [-]: CLOSURE   R34 64       ; R34 := closure(Function #65)
-257 [-]: MOVE      R0 R9        ; R0 := R9
-258 [-]: SETGLOBAL R34 K87      ; GroupDecoration := R34
-259 [-]: SETGLOBAL R34 K88      ; 0x406E4464 := R34
-260 [-]: CLOSURE   R8 65        ; R8 := closure(Function #66)
-261 [-]: CLOSURE   R34 66       ; R34 := closure(Function #67)
-262 [-]: MOVE      R0 R4        ; R0 := R4
-263 [-]: SETGLOBAL R34 K89      ; OnDecoModeInitiated := R34
-264 [-]: SETGLOBAL R34 K90      ; 0x39BF2BDD := R34
-265 [-]: RETURN    R0 1         ; return 
+246 [-]: MOVE      R0 R1        ; R0 := R1
+247 [-]: MOVE      R0 R9        ; R0 := R9
+248 [-]: MOVE      R0 R0        ; R0 := R0
+249 [-]: CLOSURE   R34 62       ; R34 := closure(Function #63)
+250 [-]: MOVE      R0 R7        ; R0 := R7
+251 [-]: SETGLOBAL R34 K83      ; OnFocusedDecoChanged := R34
+252 [-]: SETGLOBAL R34 K84      ; 0x369E26FB := R34
+253 [-]: CLOSURE   R34 63       ; R34 := closure(Function #64)
+254 [-]: MOVE      R0 R24       ; R0 := R24
+255 [-]: SETGLOBAL R34 K85      ; UpdateDecoPlacementInstructions := R34
+256 [-]: SETGLOBAL R34 K86      ; 0xFDCF25B1 := R34
+257 [-]: CLOSURE   R34 64       ; R34 := closure(Function #65)
+258 [-]: MOVE      R0 R9        ; R0 := R9
+259 [-]: SETGLOBAL R34 K87      ; GroupDecoration := R34
+260 [-]: SETGLOBAL R34 K88      ; 0x406E4464 := R34
+261 [-]: CLOSURE   R8 65        ; R8 := closure(Function #66)
+262 [-]: CLOSURE   R34 66       ; R34 := closure(Function #67)
+263 [-]: MOVE      R0 R4        ; R0 := R4
+264 [-]: SETGLOBAL R34 K89      ; OnDecoModeInitiated := R34
+265 [-]: SETGLOBAL R34 K90      ; 0x39BF2BDD := R34
+266 [-]: CLOSURE   R34 67       ; R34 := closure(Function #68)
+267 [-]: MOVE      R0 R1        ; R0 := R1
+268 [-]: SETGLOBAL R34 K91      ; ResetDecorations := R34
+269 [-]: SETGLOBAL R34 K92      ; 0x44BA38DA := R34
+270 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -528,137 +534,131 @@ code size: 42
   1 [-]: GETGLOBAL R3 K0        ; R3 := gGameRules
   2 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0x7C138DEF"]
   3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  4 [-]: TEST      R3 1         ; if R3 then PC := 12
+  4 [-]: TEST      R3 0         ; if not R3 then PC := 12
   5 [-]: JMP       12           ; PC := 12
   6 [-]: GETGLOBAL R3 K0        ; R3 := gGameRules
   7 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0x8B598ED4"]
-  8 [-]: GETGLOBAL R5 K3        ; R5 := gLotusRailCustomizationGameRulesType
+  8 [-]: GETGLOBAL R5 K3        ; R5 := gLotusDuelGameRulesType
   9 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 10 [-]: TEST      R3 0         ; if not R3 then PC := 18
- 11 [-]: JMP       18           ; PC := 18
- 12 [-]: GETGLOBAL R3 K0        ; R3 := gGameRules
- 13 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0x8B598ED4"]
- 14 [-]: GETGLOBAL R5 K4        ; R5 := gLotusDuelGameRulesType
- 15 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 16 [-]: TEST      R3 0         ; if not R3 then PC := 32
- 17 [-]: JMP       32           ; PC := 32
- 18 [-]: GETGLOBAL R3 K5        ; R3 := gRegion
- 19 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0xA76F0612"]
- 20 [-]: GETGLOBAL R5 K7        ; R5 := 0xEC274B1A
- 21 [-]: LOADK     R6 K8        ; R6 := "DojoComponentPanel"
- 22 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 23 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 24 [-]: LOADK     R4 K9        ; R4 := 1
- 25 [-]: LEN       R5 R3        ; R5 := # R3
- 26 [-]: LOADK     R6 K9        ; R6 := 1
- 27 [-]: FORPREP   R4 31        ; R4 -= R6; PC := 31
- 28 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
- 29 [-]: SELF      R8 R8 K10    ; R9 := R8; R8 := R8["0xD4C2743F"]
- 30 [-]: CALL      R8 2 1       ; R8(R9)
- 31 [-]: FORLOOP   R4 28        ; R4 += R6; if R4 <= R5 then begin PC := 28; R7 := R4 end
- 32 [-]: GETGLOBAL R8 K11       ; R8 := 0x400E7765
- 33 [-]: GETGLOBAL R9 K12       ; R9 := _T
- 34 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["DojoMgr"]
- 35 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 36 [-]: TEST      R8 0         ; if not R8 then PC := 134
- 37 [-]: JMP       134          ; PC := 134
- 38 [-]: GETGLOBAL R8 K14       ; R8 := 0x329BDC44
- 39 [-]: LOADK     R9 K15       ; R9 := "Lotus.Interface.Libs.DojoMgr"
- 40 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 41 [-]: MOVE      R9 R0        ; R9 := R0
- 42 [-]: GETGLOBAL R10 K12      ; R10 := _T
- 43 [-]: GETTABLE  R11 R8 K16   ; R11 := R8["0xDD4AB777"]
- 44 [-]: CALL      R11 1 2      ; R11 := R11()
- 45 [-]: SETTABLE  R10 K13 R11  ; R10["DojoMgr"] := R11
- 46 [-]: GETGLOBAL R10 K12      ; R10 := _T
- 47 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
- 48 [-]: SELF      R10 R10 K17  ; R11 := R10; R10 := R10["0x2F19DBDD"]
- 49 [-]: GETGLOBAL R12 K0       ; R12 := gGameRules
- 50 [-]: MOVE      R13 R2       ; R13 := R2
- 51 [-]: GETGLOBAL R14 K18      ; R14 := countdownSeqType
- 52 [-]: GETGLOBAL R15 K19      ; R15 := buildCompleteSeqType
- 53 [-]: GETGLOBAL R16 K20      ; R16 := dojoGateDialogTriggerType
- 54 [-]: MOVE      R17 R1       ; R17 := R1
- 55 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
- 56 [-]: GETGLOBAL R10 K5       ; R10 := gRegion
- 57 [-]: SELF      R10 R10 K21  ; R11 := R10; R10 := R10["0xA559F558"]
- 58 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 59 [-]: TEST      R10 0        ; if not R10 then PC := 64
- 60 [-]: JMP       64           ; PC := 64
- 61 [-]: GETGLOBAL R10 K22      ; R10 := gPromotedToHost
- 62 [-]: TEST      R10 0        ; if not R10 then PC := 111
- 63 [-]: JMP       111          ; PC := 111
- 64 [-]: GETGLOBAL R10 K0       ; R10 := gGameRules
- 65 [-]: SELF      R10 R10 K2   ; R11 := R10; R10 := R10["0x8B598ED4"]
- 66 [-]: GETGLOBAL R12 K23      ; R12 := gLotusObstacleCourseGameRulesType
- 67 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 68 [-]: TEST      R10 0        ; if not R10 then PC := 82
- 69 [-]: JMP       82           ; PC := 82
- 70 [-]: GETGLOBAL R10 K24      ; R10 := _G
- 71 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["PendingDuelComponentJson"]
- 72 [-]: EQ        1 R10 K26    ; if R10 == nil then PC := 130
- 73 [-]: JMP       130          ; PC := 130
- 74 [-]: GETGLOBAL R10 K12      ; R10 := _T
- 75 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
- 76 [-]: SELF      R10 R10 K27  ; R11 := R10; R10 := R10["0x67E1E984"]
- 77 [-]: MOVE      R12 R1       ; R12 := R1
- 78 [-]: GETGLOBAL R13 K24      ; R13 := _G
- 79 [-]: GETTABLE  R13 R13 K25  ; R13 := R13["PendingDuelComponentJson"]
- 80 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
- 81 [-]: JMP       130          ; PC := 130
- 82 [-]: GETGLOBAL R10 K0       ; R10 := gGameRules
- 83 [-]: SELF      R10 R10 K2   ; R11 := R10; R10 := R10["0x8B598ED4"]
- 84 [-]: GETGLOBAL R12 K4       ; R12 := gLotusDuelGameRulesType
- 85 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 86 [-]: TEST      R10 0        ; if not R10 then PC := 104
- 87 [-]: JMP       104          ; PC := 104
- 88 [-]: GETGLOBAL R10 K24      ; R10 := _G
- 89 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["PendingDuelComponentJson"]
- 90 [-]: EQ        1 R10 K26    ; if R10 == nil then PC := 99
- 91 [-]: JMP       99           ; PC := 99
- 92 [-]: GETGLOBAL R10 K12      ; R10 := _T
- 93 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
- 94 [-]: SELF      R10 R10 K27  ; R11 := R10; R10 := R10["0x67E1E984"]
- 95 [-]: MOVE      R12 R1       ; R12 := R1
- 96 [-]: GETGLOBAL R13 K24      ; R13 := _G
- 97 [-]: GETTABLE  R13 R13 K25  ; R13 := R13["PendingDuelComponentJson"]
- 98 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
- 99 [-]: GETGLOBAL R10 K12      ; R10 := _T
-100 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
-101 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10["0x2704D42C"]
-102 [-]: CALL      R10 2 1      ; R10(R11)
-103 [-]: JMP       130          ; PC := 130
-104 [-]: GETGLOBAL R10 K12      ; R10 := _T
-105 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
-106 [-]: SELF      R10 R10 K29  ; R11 := R10; R10 := R10["0x99C2FEB4"]
-107 [-]: GETUPVAL  R12 U0       ; R12 := U0
-108 [-]: LOADK     R13 K30      ; R13 := 0
-109 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-110 [-]: JMP       130          ; PC := 130
-111 [-]: GETGLOBAL R10 K12      ; R10 := _T
-112 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
-113 [-]: GETTABLE  R10 R10 K31  ; R10 := R10["mDojo"]
-114 [-]: SELF      R10 R10 K32  ; R11 := R10; R10 := R10["0x251C2A58"]
-115 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-116 [-]: EQ        0 R10 K26    ; if R10 ~= nil then PC := 125
-117 [-]: JMP       125          ; PC := 125
-118 [-]: GETGLOBAL R10 K12      ; R10 := _T
-119 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
-120 [-]: SELF      R10 R10 K29  ; R11 := R10; R10 := R10["0x99C2FEB4"]
-121 [-]: GETUPVAL  R12 U0       ; R12 := U0
-122 [-]: LOADK     R13 K30      ; R13 := 0
-123 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-124 [-]: JMP       130          ; PC := 130
-125 [-]: GETGLOBAL R10 K12      ; R10 := _T
-126 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["DojoMgr"]
-127 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10["0x2704D42C"]
-128 [-]: CALL      R10 2 1      ; R10(R11)
-129 [-]: MOVE      R9 R1        ; R9 := R1
-130 [-]: TEST      R9 0         ; if not R9 then PC := 134
-131 [-]: JMP       134          ; PC := 134
-132 [-]: GETUPVAL  R10 U1       ; R10 := U1
-133 [-]: CALL      R10 1 1      ; R10()
-134 [-]: RETURN    R0 1         ; return 
+ 10 [-]: TEST      R3 0         ; if not R3 then PC := 26
+ 11 [-]: JMP       26           ; PC := 26
+ 12 [-]: GETGLOBAL R3 K4        ; R3 := gRegion
+ 13 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0xA76F0612"]
+ 14 [-]: GETGLOBAL R5 K6        ; R5 := 0xEC274B1A
+ 15 [-]: LOADK     R6 K7        ; R6 := "DojoComponentPanel"
+ 16 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 17 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 18 [-]: LOADK     R4 K8        ; R4 := 1
+ 19 [-]: LEN       R5 R3        ; R5 := # R3
+ 20 [-]: LOADK     R6 K8        ; R6 := 1
+ 21 [-]: FORPREP   R4 25        ; R4 -= R6; PC := 25
+ 22 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
+ 23 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8["0xD4C2743F"]
+ 24 [-]: CALL      R8 2 1       ; R8(R9)
+ 25 [-]: FORLOOP   R4 22        ; R4 += R6; if R4 <= R5 then begin PC := 22; R7 := R4 end
+ 26 [-]: GETGLOBAL R8 K10       ; R8 := 0x400E7765
+ 27 [-]: GETGLOBAL R9 K11       ; R9 := _T
+ 28 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["DojoMgr"]
+ 29 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 30 [-]: TEST      R8 0         ; if not R8 then PC := 128
+ 31 [-]: JMP       128          ; PC := 128
+ 32 [-]: GETGLOBAL R8 K13       ; R8 := 0x329BDC44
+ 33 [-]: LOADK     R9 K14       ; R9 := "Lotus.Interface.Libs.DojoMgr"
+ 34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 35 [-]: MOVE      R9 R0        ; R9 := R0
+ 36 [-]: GETGLOBAL R10 K11      ; R10 := _T
+ 37 [-]: GETTABLE  R11 R8 K15   ; R11 := R8["0xDD4AB777"]
+ 38 [-]: CALL      R11 1 2      ; R11 := R11()
+ 39 [-]: SETTABLE  R10 K12 R11  ; R10["DojoMgr"] := R11
+ 40 [-]: GETGLOBAL R10 K11      ; R10 := _T
+ 41 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+ 42 [-]: SELF      R10 R10 K16  ; R11 := R10; R10 := R10["0x2F19DBDD"]
+ 43 [-]: GETGLOBAL R12 K0       ; R12 := gGameRules
+ 44 [-]: MOVE      R13 R2       ; R13 := R2
+ 45 [-]: GETGLOBAL R14 K17      ; R14 := countdownSeqType
+ 46 [-]: GETGLOBAL R15 K18      ; R15 := buildCompleteSeqType
+ 47 [-]: GETGLOBAL R16 K19      ; R16 := dojoGateDialogTriggerType
+ 48 [-]: MOVE      R17 R1       ; R17 := R1
+ 49 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
+ 50 [-]: GETGLOBAL R10 K4       ; R10 := gRegion
+ 51 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10["0xA559F558"]
+ 52 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 53 [-]: TEST      R10 0        ; if not R10 then PC := 58
+ 54 [-]: JMP       58           ; PC := 58
+ 55 [-]: GETGLOBAL R10 K21      ; R10 := gPromotedToHost
+ 56 [-]: TEST      R10 0        ; if not R10 then PC := 105
+ 57 [-]: JMP       105          ; PC := 105
+ 58 [-]: GETGLOBAL R10 K0       ; R10 := gGameRules
+ 59 [-]: SELF      R10 R10 K2   ; R11 := R10; R10 := R10["0x8B598ED4"]
+ 60 [-]: GETGLOBAL R12 K22      ; R12 := gLotusObstacleCourseGameRulesType
+ 61 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+ 62 [-]: TEST      R10 0        ; if not R10 then PC := 76
+ 63 [-]: JMP       76           ; PC := 76
+ 64 [-]: GETGLOBAL R10 K23      ; R10 := _G
+ 65 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["PendingDuelComponentJson"]
+ 66 [-]: EQ        1 R10 K25    ; if R10 == nil then PC := 124
+ 67 [-]: JMP       124          ; PC := 124
+ 68 [-]: GETGLOBAL R10 K11      ; R10 := _T
+ 69 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+ 70 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10["0x67E1E984"]
+ 71 [-]: MOVE      R12 R1       ; R12 := R1
+ 72 [-]: GETGLOBAL R13 K23      ; R13 := _G
+ 73 [-]: GETTABLE  R13 R13 K24  ; R13 := R13["PendingDuelComponentJson"]
+ 74 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+ 75 [-]: JMP       124          ; PC := 124
+ 76 [-]: GETGLOBAL R10 K0       ; R10 := gGameRules
+ 77 [-]: SELF      R10 R10 K2   ; R11 := R10; R10 := R10["0x8B598ED4"]
+ 78 [-]: GETGLOBAL R12 K3       ; R12 := gLotusDuelGameRulesType
+ 79 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+ 80 [-]: TEST      R10 0        ; if not R10 then PC := 98
+ 81 [-]: JMP       98           ; PC := 98
+ 82 [-]: GETGLOBAL R10 K23      ; R10 := _G
+ 83 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["PendingDuelComponentJson"]
+ 84 [-]: EQ        1 R10 K25    ; if R10 == nil then PC := 93
+ 85 [-]: JMP       93           ; PC := 93
+ 86 [-]: GETGLOBAL R10 K11      ; R10 := _T
+ 87 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+ 88 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10["0x67E1E984"]
+ 89 [-]: MOVE      R12 R1       ; R12 := R1
+ 90 [-]: GETGLOBAL R13 K23      ; R13 := _G
+ 91 [-]: GETTABLE  R13 R13 K24  ; R13 := R13["PendingDuelComponentJson"]
+ 92 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+ 93 [-]: GETGLOBAL R10 K11      ; R10 := _T
+ 94 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+ 95 [-]: SELF      R10 R10 K27  ; R11 := R10; R10 := R10["0x2704D42C"]
+ 96 [-]: CALL      R10 2 1      ; R10(R11)
+ 97 [-]: JMP       124          ; PC := 124
+ 98 [-]: GETGLOBAL R10 K11      ; R10 := _T
+ 99 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+100 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10["0x99C2FEB4"]
+101 [-]: GETUPVAL  R12 U0       ; R12 := U0
+102 [-]: LOADK     R13 K29      ; R13 := 0
+103 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+104 [-]: JMP       124          ; PC := 124
+105 [-]: GETGLOBAL R10 K11      ; R10 := _T
+106 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+107 [-]: GETTABLE  R10 R10 K30  ; R10 := R10["mDojo"]
+108 [-]: SELF      R10 R10 K31  ; R11 := R10; R10 := R10["0x251C2A58"]
+109 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+110 [-]: EQ        0 R10 K25    ; if R10 ~= nil then PC := 119
+111 [-]: JMP       119          ; PC := 119
+112 [-]: GETGLOBAL R10 K11      ; R10 := _T
+113 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+114 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10["0x99C2FEB4"]
+115 [-]: GETUPVAL  R12 U0       ; R12 := U0
+116 [-]: LOADK     R13 K29      ; R13 := 0
+117 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+118 [-]: JMP       124          ; PC := 124
+119 [-]: GETGLOBAL R10 K11      ; R10 := _T
+120 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["DojoMgr"]
+121 [-]: SELF      R10 R10 K27  ; R11 := R10; R10 := R10["0x2704D42C"]
+122 [-]: CALL      R10 2 1      ; R10(R11)
+123 [-]: MOVE      R9 R1        ; R9 := R1
+124 [-]: TEST      R9 0         ; if not R9 then PC := 128
+125 [-]: JMP       128          ; PC := 128
+126 [-]: GETUPVAL  R10 U1       ; R10 := U1
+127 [-]: CALL      R10 1 1      ; R10()
+128 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
@@ -1783,60 +1783,54 @@ code size: 42
   4 [-]: GETUPVAL  R0 U0        ; R0 := U0
   5 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["0x8E1620BC"]
   6 [-]: MOVE      R1 R1        ; R1 := R1
-  7 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  8 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["DojoMgr"]
-  9 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["mGameRules"]
- 10 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x8B598ED4"]
- 11 [-]: GETGLOBAL R4 K7        ; R4 := gLotusRailCustomizationGameRulesType
- 12 [-]: CALL      R2 3 0       ; R2,... := R2(R3,R4)
- 13 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 14 [-]: TEST      R0 1         ; if R0 then PC := 29
- 15 [-]: JMP       29           ; PC := 29
- 16 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 17 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["0xB11F032"]
- 18 [-]: LOADK     R2 K9        ; R2 := "/Lotus/Language/Dojo/Generic_INVALID_PERMISSION"
- 19 [-]: CALL      R1 2 1       ; R1(R2)
- 20 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 21 [-]: GETGLOBAL R2 K0        ; R2 := _T
- 22 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["DojoMgr"]
- 23 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["mPendingDecoToPlace"]
- 24 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 25 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["DojoMgr"]
- 26 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["mPendingDecoComponentId"]
- 27 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 28 [-]: RETURN    R0 1         ; return 
- 29 [-]: GETGLOBAL R1 K0        ; R1 := _T
- 30 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["DojoMgr"]
- 31 [-]: GETTABLE  R1 R1 K10    ; R1 := R1["mPendingDecoToPlace"]
- 32 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0xD6CB011D"]
+  7 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  8 [-]: TEST      R0 1         ; if R0 then PC := 23
+  9 [-]: JMP       23           ; PC := 23
+ 10 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 11 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["0xB11F032"]
+ 12 [-]: LOADK     R2 K6        ; R2 := "/Lotus/Language/Dojo/Generic_INVALID_PERMISSION"
+ 13 [-]: CALL      R1 2 1       ; R1(R2)
+ 14 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 15 [-]: GETGLOBAL R2 K0        ; R2 := _T
+ 16 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["DojoMgr"]
+ 17 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["mPendingDecoToPlace"]
+ 18 [-]: GETGLOBAL R3 K0        ; R3 := _T
+ 19 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["DojoMgr"]
+ 20 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["mPendingDecoComponentId"]
+ 21 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 22 [-]: RETURN    R0 1         ; return 
+ 23 [-]: GETGLOBAL R1 K0        ; R1 := _T
+ 24 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["DojoMgr"]
+ 25 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["mPendingDecoToPlace"]
+ 26 [-]: SELF      R1 R1 K9     ; R2 := R1; R1 := R1["0xD6CB011D"]
+ 27 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 28 [-]: TEST      R1 0         ; if not R1 then PC := 50
+ 29 [-]: JMP       50           ; PC := 50
+ 30 [-]: GETGLOBAL R1 K10       ; R1 := 0x400E7765
+ 31 [-]: GETGLOBAL R2 K0        ; R2 := _T
+ 32 [-]: GETTABLE  R2 R2 K11    ; R2 := R2["DecoMoveInfo"]
  33 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 34 [-]: TEST      R1 0         ; if not R1 then PC := 56
- 35 [-]: JMP       56           ; PC := 56
- 36 [-]: GETGLOBAL R1 K13       ; R1 := 0x400E7765
- 37 [-]: GETGLOBAL R2 K0        ; R2 := _T
- 38 [-]: GETTABLE  R2 R2 K14    ; R2 := R2["DecoMoveInfo"]
- 39 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 40 [-]: TEST      R1 0         ; if not R1 then PC := 56
- 41 [-]: JMP       56           ; PC := 56
- 42 [-]: GETGLOBAL R1 K0        ; R1 := _T
- 43 [-]: CLOSURE   R2 0         ; R2 := closure(Function #24.1)
- 44 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 45 [-]: SETTABLE  R1 K15 R2    ; R1["OnDecoNamed"] := R2
- 46 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 47 [-]: GETTABLE  R1 R1 K16    ; R1 := R1["0x3F74D42B"]
- 48 [-]: LOADNIL   R2 R2        ; R2 := nil
- 49 [-]: LOADK     R3 K17       ; R3 := "/Lotus/Language/Dojo/NameDeco"
- 50 [-]: LOADK     R4 K18       ; R4 := ""
- 51 [-]: LOADK     R5 K19       ; R5 := 40
- 52 [-]: LOADK     R6 K15       ; R6 := "OnDecoNamed"
- 53 [-]: LOADK     R7 K20       ; R7 := "OSKOnDecoNamed"
- 54 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
- 55 [-]: JMP       60           ; PC := 60
- 56 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 57 [-]: LOADK     R2 K18       ; R2 := ""
- 58 [-]: MOVE      R3 R0        ; R3 := R0
- 59 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 60 [-]: RETURN    R0 1         ; return 
+ 34 [-]: TEST      R1 0         ; if not R1 then PC := 50
+ 35 [-]: JMP       50           ; PC := 50
+ 36 [-]: GETGLOBAL R1 K0        ; R1 := _T
+ 37 [-]: CLOSURE   R2 0         ; R2 := closure(Function #24.1)
+ 38 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 39 [-]: SETTABLE  R1 K12 R2    ; R1["OnDecoNamed"] := R2
+ 40 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 41 [-]: GETTABLE  R1 R1 K13    ; R1 := R1["0x3F74D42B"]
+ 42 [-]: LOADNIL   R2 R2        ; R2 := nil
+ 43 [-]: LOADK     R3 K14       ; R3 := "/Lotus/Language/Dojo/NameDeco"
+ 44 [-]: LOADK     R4 K15       ; R4 := ""
+ 45 [-]: LOADK     R5 K16       ; R5 := 40
+ 46 [-]: LOADK     R6 K12       ; R6 := "OnDecoNamed"
+ 47 [-]: LOADK     R7 K17       ; R7 := "OSKOnDecoNamed"
+ 48 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
+ 49 [-]: JMP       54           ; PC := 54
+ 50 [-]: GETUPVAL  R1 U3        ; R1 := U3
+ 51 [-]: LOADK     R2 K15       ; R2 := ""
+ 52 [-]: MOVE      R3 R0        ; R3 := R0
+ 53 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 54 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #24.1:
@@ -2799,7 +2793,7 @@ code size: 42
 ; #Upvalues:       2
 ; #Parameters:     7
 ; Is_vararg:       0
-; Max Stack Size:  41
+; Max Stack Size:  40
 
   1 [-]: LOADK     R7 K0        ; R7 := 0
   2 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
@@ -2853,12 +2847,12 @@ code size: 42
  50 [-]: GETGLOBAL R14 K21      ; R14 := 0xECFDD17
  51 [-]: MOVE      R15 R13      ; R15 := R13
  52 [-]: CALL      R14 2 4      ; R14,R15,R16 := R14(R15)
- 53 [-]: JMP       101          ; PC := 101
+ 53 [-]: JMP       94           ; PC := 94
  54 [-]: GETGLOBAL R19 K22      ; R19 := Engine
  55 [-]: GETTABLE  R19 R19 K23  ; R19 := R19["0x9490FE70"]
  56 [-]: CALL      R19 1 2      ; R19 := R19()
- 57 [-]: TEST      R19 0        ; if not R19 then PC := 90
- 58 [-]: JMP       90           ; PC := 90
+ 57 [-]: TEST      R19 0        ; if not R19 then PC := 83
+ 58 [-]: JMP       83           ; PC := 83
  59 [-]: GETGLOBAL R19 K24      ; R19 := gFlashMgr
  60 [-]: SELF      R19 R19 K25  ; R20 := R19; R19 := R19["0xBD3A492E"]
  61 [-]: GETTABLE  R21 R18 K15  ; R21 := R18["InputCode"]
@@ -2867,446 +2861,439 @@ code size: 42
  64 [-]: MOVE      R24 R1       ; R24 := R1
  65 [-]: MOVE      R25 R0       ; R25 := R0
  66 [-]: CALL      R19 7 2      ; R19 := R19(R20,R21,R22,R23,R24,R25)
- 67 [-]: GETGLOBAL R20 K27      ; R20 := 0xD1E7609B
- 68 [-]: LOADK     R21 K28      ; R21 := "|"
- 69 [-]: MOVE      R22 R19      ; R22 := R19
- 70 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
- 71 [-]: LEN       R21 R20      ; R21 := # R20
- 72 [-]: LT        0 K0 R21     ; if 0 >= R21 then PC := 87
- 73 [-]: JMP       87           ; PC := 87
- 74 [-]: GETTABLE  R21 R20 K29  ; R21 := R20[1]
- 75 [-]: EQ        1 R21 K30    ; if R21 == nil then PC := 87
- 76 [-]: JMP       87           ; PC := 87
- 77 [-]: GETTABLE  R21 R20 K29  ; R21 := R20[1]
- 78 [-]: EQ        1 R21 K13    ; if R21 == "" then PC := 87
- 79 [-]: JMP       87           ; PC := 87
- 80 [-]: GETTABLE  R21 R13 R17  ; R21 := R13[R17]
- 81 [-]: LOADK     R22 K32      ; R22 := "<"
- 82 [-]: GETTABLE  R23 R20 K29  ; R23 := R20[1]
- 83 [-]: LOADK     R24 K33      ; R24 := ">"
- 84 [-]: CONCAT    R22 R22 R24  ; R22 := R22 .. R23 .. R24
- 85 [-]: SETTABLE  R21 K31 R22  ; R21["Key"] := R22
- 86 [-]: JMP       101          ; PC := 101
- 87 [-]: GETTABLE  R21 R13 R17  ; R21 := R13[R17]
- 88 [-]: SETTABLE  R21 K31 K34  ; R21["Key"] := "UNBOUND"
- 89 [-]: JMP       101          ; PC := 101
- 90 [-]: GETTABLE  R21 R13 R17  ; R21 := R13[R17]
- 91 [-]: LOADK     R22 K32      ; R22 := "<"
- 92 [-]: GETTABLE  R23 R18 K15  ; R23 := R18["InputCode"]
- 93 [-]: GETUPVAL  R24 U1       ; R24 := U1
- 94 [-]: GETTABLE  R24 R24 K35  ; R24 := R24["0xF81722A2"]
- 95 [-]: GETTABLE  R25 R18 K17  ; R25 := R18["Invert"]
- 96 [-]: LOADK     R26 K36      ; R26 := ":INVERT=1>"
- 97 [-]: LOADK     R27 K33      ; R27 := ">"
- 98 [-]: CALL      R24 4 2      ; R24 := R24(R25,R26,R27)
- 99 [-]: CONCAT    R22 R22 R24  ; R22 := R22 .. R23 .. R24
-100 [-]: SETTABLE  R21 K31 R22  ; R21["Key"] := R22
-101 [-]: TFORLOOP  R14 2        ; R17,R18 :=  R14(R15,R16); if R17 ~= nil then begin PC = 54; R16 := R17 end
-102 [-]: JMP       54           ; PC := 54
-103 [-]: LOADK     R21 K13      ; R21 := ""
-104 [-]: GETGLOBAL R22 K11      ; R22 := Lotus_Game
-105 [-]: GETTABLE  R22 R22 K37  ; R22 := R22["DecoModeAction_DM_TWEAK"]
-106 [-]: EQ        0 R0 R22     ; if R0 ~= R22 then PC := 265
-107 [-]: JMP       265          ; PC := 265
-108 [-]: GETGLOBAL R22 K11      ; R22 := Lotus_Game
-109 [-]: GETTABLE  R22 R22 K38  ; R22 := R22["DecoModeAction_PS_ROTATE"]
-110 [-]: EQ        1 R1 R22     ; if R1 == R22 then PC := 113
-111 [-]: JMP       113          ; PC := 113
-112 [-]: MOVE      R22 R0       ; R22 := R0
-113 [-]: MOVE      R22 R1       ; R22 := R1
-114 [-]: LOADNIL   R23 R23      ; R23 := nil
-115 [-]: TEST      R22 0        ; if not R22 then PC := 145
-116 [-]: JMP       145          ; PC := 145
-117 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 125
-118 [-]: JMP       125          ; PC := 125
-119 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-120 [-]: LOADK     R25 K40      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_YAW"
-121 [-]: LOADNIL   R26 R26      ; R26 := nil
-122 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-123 [-]: MOVE      R23 R24      ; R23 := R24
-124 [-]: JMP       138          ; PC := 138
-125 [-]: EQ        0 R6 K29     ; if R6 ~= 1 then PC := 133
-126 [-]: JMP       133          ; PC := 133
-127 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-128 [-]: LOADK     R25 K41      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_PITCH"
-129 [-]: LOADNIL   R26 R26      ; R26 := nil
-130 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-131 [-]: MOVE      R23 R24      ; R23 := R24
-132 [-]: JMP       138          ; PC := 138
-133 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-134 [-]: LOADK     R25 K42      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_ROLL"
-135 [-]: LOADNIL   R26 R26      ; R26 := nil
-136 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-137 [-]: MOVE      R23 R24      ; R23 := R24
-138 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-139 [-]: LOADK     R25 K43      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_CYCLE_AXIS"
-140 [-]: NEWTABLE  R26 0 1      ; R26 := {}
-141 [-]: SETTABLE  R26 K44 R23  ; R26["VAL"] := R23
-142 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-143 [-]: MOVE      R21 R24      ; R21 := R24
-144 [-]: JMP       210          ; PC := 210
-145 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 153
-146 [-]: JMP       153          ; PC := 153
-147 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-148 [-]: LOADK     R25 K45      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_X"
-149 [-]: LOADNIL   R26 R26      ; R26 := nil
-150 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-151 [-]: MOVE      R23 R24      ; R23 := R24
-152 [-]: JMP       174          ; PC := 174
-153 [-]: EQ        0 R6 K29     ; if R6 ~= 1 then PC := 161
-154 [-]: JMP       161          ; PC := 161
-155 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-156 [-]: LOADK     R25 K46      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Y"
-157 [-]: LOADNIL   R26 R26      ; R26 := nil
-158 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-159 [-]: MOVE      R23 R24      ; R23 := R24
-160 [-]: JMP       174          ; PC := 174
-161 [-]: EQ        0 R6 K47     ; if R6 ~= 2 then PC := 169
-162 [-]: JMP       169          ; PC := 169
-163 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-164 [-]: LOADK     R25 K48      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Z"
-165 [-]: LOADNIL   R26 R26      ; R26 := nil
-166 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-167 [-]: MOVE      R23 R24      ; R23 := R24
-168 [-]: JMP       174          ; PC := 174
-169 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-170 [-]: LOADK     R25 K49      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_HOLD"
-171 [-]: LOADNIL   R26 R26      ; R26 := nil
-172 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-173 [-]: MOVE      R23 R24      ; R23 := R24
-174 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
-175 [-]: GETTABLE  R24 R24 K50  ; R24 := R24["DecoModeAction_PS_WORLD_AXIS_SELECT"]
-176 [-]: EQ        1 R1 R24     ; if R1 == R24 then PC := 182
-177 [-]: JMP       182          ; PC := 182
-178 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
-179 [-]: GETTABLE  R24 R24 K51  ; R24 := R24["DecoModeAction_PS_WORLD_AXIS_MOVE"]
-180 [-]: EQ        0 R1 R24     ; if R1 ~= R24 then PC := 188
-181 [-]: JMP       188          ; PC := 188
-182 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-183 [-]: LOADK     R25 K52      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_WORLD_TRANSLATE"
-184 [-]: LOADNIL   R26 R26      ; R26 := nil
-185 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-186 [-]: MOVE      R21 R24      ; R21 := R24
-187 [-]: JMP       201          ; PC := 201
-188 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
-189 [-]: GETTABLE  R24 R24 K53  ; R24 := R24["DecoModeAction_PS_LOCAL_AXIS_SELECT"]
-190 [-]: EQ        1 R1 R24     ; if R1 == R24 then PC := 196
-191 [-]: JMP       196          ; PC := 196
-192 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
-193 [-]: GETTABLE  R24 R24 K54  ; R24 := R24["DecoModeAction_PS_LOCAL_AXIS_MOVE"]
-194 [-]: EQ        0 R1 R24     ; if R1 ~= R24 then PC := 201
-195 [-]: JMP       201          ; PC := 201
-196 [-]: GETGLOBAL R24 K39      ; R24 := 0xE6DC43B0
-197 [-]: LOADK     R25 K55      ; R25 := "/Lotus/Language/UiElements/PLACEMENT_LOCAL_TRANSLATE"
-198 [-]: LOADNIL   R26 R26      ; R26 := nil
-199 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-200 [-]: MOVE      R21 R24      ; R21 := R24
-201 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
-202 [-]: GETTABLE  R24 R24 K51  ; R24 := R24["DecoModeAction_PS_WORLD_AXIS_MOVE"]
-203 [-]: EQ        1 R1 R24     ; if R1 == R24 then PC := 209
-204 [-]: JMP       209          ; PC := 209
-205 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
-206 [-]: GETTABLE  R24 R24 K54  ; R24 := R24["DecoModeAction_PS_LOCAL_AXIS_MOVE"]
-207 [-]: EQ        0 R1 R24     ; if R1 ~= R24 then PC := 210
-208 [-]: JMP       210          ; PC := 210
-209 [-]: MOVE      R11 R1       ; R11 := R1
-210 [-]: LOADNIL   R24 R24      ; R24 := nil
-211 [-]: LOADK     R25 K13      ; R25 := ""
-212 [-]: EQ        0 R2 K0      ; if R2 ~= 0 then PC := 220
-213 [-]: JMP       220          ; PC := 220
-214 [-]: GETGLOBAL R26 K39      ; R26 := 0xE6DC43B0
-215 [-]: LOADK     R27 K56      ; R27 := "/Lotus/Language/UiElements/PLACEMENT_OFF"
-216 [-]: LOADNIL   R28 R28      ; R28 := nil
-217 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-218 [-]: MOVE      R24 R26      ; R24 := R26
-219 [-]: JMP       241          ; PC := 241
-220 [-]: LOADK     R26 K47      ; R26 := 2
-221 [-]: TEST      R22 0        ; if not R22 then PC := 230
-222 [-]: JMP       230          ; PC := 230
-223 [-]: LOADK     R26 K0       ; R26 := 0
-224 [-]: GETGLOBAL R27 K39      ; R27 := 0xE6DC43B0
-225 [-]: LOADK     R28 K57      ; R28 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
-226 [-]: LOADNIL   R29 R29      ; R29 := nil
-227 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-228 [-]: MOVE      R25 R27      ; R25 := R27
-229 [-]: JMP       235          ; PC := 235
-230 [-]: GETGLOBAL R27 K39      ; R27 := 0xE6DC43B0
-231 [-]: LOADK     R28 K58      ; R28 := "/Lotus/Language/UiElements/PLACEMENT_METERS"
-232 [-]: LOADNIL   R29 R29      ; R29 := nil
-233 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-234 [-]: MOVE      R25 R27      ; R25 := R27
-235 [-]: GETUPVAL  R27 U1       ; R27 := U1
-236 [-]: GETTABLE  R27 R27 K59  ; R27 := R27["0x7E197415"]
-237 [-]: MOVE      R28 R2       ; R28 := R2
-238 [-]: MOVE      R29 R26      ; R29 := R26
-239 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-240 [-]: MOVE      R24 R27      ; R24 := R27
-241 [-]: GETGLOBAL R27 K39      ; R27 := 0xE6DC43B0
-242 [-]: LOADK     R28 K60      ; R28 := "/Lotus/Language/UiElements/DECO_TWEAK_PLACEMENT"
-243 [-]: NEWTABLE  R29 0 6      ; R29 := {}
-244 [-]: GETTABLE  R30 R13 K14  ; R30 := R13["ASCEND"]
-245 [-]: GETTABLE  R30 R30 K31  ; R30 := R30["Key"]
-246 [-]: SETTABLE  R29 K14 R30  ; R29["ASCEND"] := R30
-247 [-]: GETTABLE  R30 R13 K19  ; R30 := R13["DESCEND"]
-248 [-]: GETTABLE  R30 R30 K31  ; R30 := R30["Key"]
-249 [-]: SETTABLE  R29 K19 R30  ; R29["DESCEND"] := R30
-250 [-]: SETTABLE  R29 K61 R21  ; R29["MODE"] := R21
-251 [-]: SETTABLE  R29 K62 R23  ; R29["AXIS"] := R23
-252 [-]: SETTABLE  R29 K63 R24  ; R29["GRID"] := R24
-253 [-]: SETTABLE  R29 K64 R25  ; R29["UNIT"] := R25
-254 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-255 [-]: MOVE      R12 R27      ; R12 := R27
-256 [-]: GETUPVAL  R27 U1       ; R27 := U1
-257 [-]: GETTABLE  R27 R27 K35  ; R27 := R27["0xF81722A2"]
-258 [-]: MOVE      R28 R11      ; R28 := R11
-259 [-]: LOADK     R29 K65      ; R29 := "true,"
-260 [-]: LOADK     R30 K13      ; R30 := ""
-261 [-]: CALL      R27 4 2      ; R27 := R27(R28,R29,R30)
-262 [-]: MOVE      R28 R12      ; R28 := R12
-263 [-]: CONCAT    R12 R27 R28  ; R12 := R27 .. R28
-264 [-]: JMP       490          ; PC := 490
-265 [-]: GETGLOBAL R27 K11      ; R27 := Lotus_Game
-266 [-]: GETTABLE  R27 R27 K66  ; R27 := R27["DecoModeAction_DM_GROUP"]
-267 [-]: EQ        0 R0 R27     ; if R0 ~= R27 then PC := 275
-268 [-]: JMP       275          ; PC := 275
-269 [-]: GETGLOBAL R27 K39      ; R27 := 0xE6DC43B0
-270 [-]: LOADK     R28 K67      ; R28 := "/Lotus/Language/Dojo/DecoAttach"
-271 [-]: LOADNIL   R29 R29      ; R29 := nil
-272 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
-273 [-]: MOVE      R12 R27      ; R12 := R27
-274 [-]: JMP       490          ; PC := 490
-275 [-]: LOADK     R27 K13      ; R27 := ""
-276 [-]: GETGLOBAL R28 K11      ; R28 := Lotus_Game
-277 [-]: GETTABLE  R28 R28 K38  ; R28 := R28["DecoModeAction_PS_ROTATE"]
-278 [-]: EQ        1 R1 R28     ; if R1 == R28 then PC := 281
-279 [-]: JMP       281          ; PC := 281
-280 [-]: MOVE      R28 R0       ; R28 := R0
-281 [-]: MOVE      R28 R1       ; R28 := R1
-282 [-]: TEST      R3 0         ; if not R3 then PC := 290
-283 [-]: JMP       290          ; PC := 290
-284 [-]: GETGLOBAL R29 K39      ; R29 := 0xE6DC43B0
-285 [-]: LOADK     R30 K68      ; R30 := "/Lotus/Language/UiElements/PLACEMENT_SCALING"
-286 [-]: LOADNIL   R31 R31      ; R31 := nil
-287 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-288 [-]: MOVE      R27 R29      ; R27 := R29
-289 [-]: JMP       291          ; PC := 291
-290 [-]: LOADK     R27 K13      ; R27 := ""
-291 [-]: LOADNIL   R29 R29      ; R29 := nil
-292 [-]: TEST      R28 0        ; if not R28 then PC := 323
-293 [-]: JMP       323          ; PC := 323
-294 [-]: LOADNIL   R30 R30      ; R30 := nil
-295 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 303
-296 [-]: JMP       303          ; PC := 303
-297 [-]: GETGLOBAL R31 K39      ; R31 := 0xE6DC43B0
-298 [-]: LOADK     R32 K40      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_YAW"
-299 [-]: LOADNIL   R33 R33      ; R33 := nil
-300 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
-301 [-]: MOVE      R30 R31      ; R30 := R31
-302 [-]: JMP       316          ; PC := 316
-303 [-]: EQ        0 R6 K29     ; if R6 ~= 1 then PC := 311
-304 [-]: JMP       311          ; PC := 311
-305 [-]: GETGLOBAL R31 K39      ; R31 := 0xE6DC43B0
-306 [-]: LOADK     R32 K41      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_PITCH"
-307 [-]: LOADNIL   R33 R33      ; R33 := nil
-308 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
-309 [-]: MOVE      R30 R31      ; R30 := R31
-310 [-]: JMP       316          ; PC := 316
-311 [-]: GETGLOBAL R31 K39      ; R31 := 0xE6DC43B0
-312 [-]: LOADK     R32 K42      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_ROLL"
-313 [-]: LOADNIL   R33 R33      ; R33 := nil
-314 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
-315 [-]: MOVE      R30 R31      ; R30 := R31
-316 [-]: GETGLOBAL R31 K39      ; R31 := 0xE6DC43B0
-317 [-]: LOADK     R32 K43      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_CYCLE_AXIS"
-318 [-]: NEWTABLE  R33 0 1      ; R33 := {}
-319 [-]: SETTABLE  R33 K44 R30  ; R33["VAL"] := R30
-320 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
-321 [-]: MOVE      R21 R31      ; R21 := R31
-322 [-]: JMP       400          ; PC := 400
-323 [-]: GETGLOBAL R31 K11      ; R31 := Lotus_Game
-324 [-]: GETTABLE  R31 R31 K50  ; R31 := R31["DecoModeAction_PS_WORLD_AXIS_SELECT"]
-325 [-]: LE        0 R31 R1     ; if R31 > R1 then PC := 388
-326 [-]: JMP       388          ; PC := 388
-327 [-]: GETGLOBAL R31 K11      ; R31 := Lotus_Game
-328 [-]: GETTABLE  R31 R31 K54  ; R31 := R31["DecoModeAction_PS_LOCAL_AXIS_MOVE"]
-329 [-]: LE        0 R1 R31     ; if R1 > R31 then PC := 388
-330 [-]: JMP       388          ; PC := 388
-331 [-]: GETGLOBAL R31 K39      ; R31 := 0xE6DC43B0
-332 [-]: LOADK     R32 K69      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_MOVE_HOLD"
-333 [-]: LOADNIL   R33 R33      ; R33 := nil
-334 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
-335 [-]: MOVE      R29 R31      ; R29 := R31
-336 [-]: LOADNIL   R31 R31      ; R31 := nil
-337 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 345
-338 [-]: JMP       345          ; PC := 345
-339 [-]: GETGLOBAL R32 K39      ; R32 := 0xE6DC43B0
-340 [-]: LOADK     R33 K45      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_X"
-341 [-]: LOADNIL   R34 R34      ; R34 := nil
-342 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
-343 [-]: MOVE      R31 R32      ; R31 := R32
-344 [-]: JMP       366          ; PC := 366
-345 [-]: EQ        0 R6 K29     ; if R6 ~= 1 then PC := 353
-346 [-]: JMP       353          ; PC := 353
-347 [-]: GETGLOBAL R32 K39      ; R32 := 0xE6DC43B0
-348 [-]: LOADK     R33 K46      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Y"
-349 [-]: LOADNIL   R34 R34      ; R34 := nil
-350 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
-351 [-]: MOVE      R31 R32      ; R31 := R32
-352 [-]: JMP       366          ; PC := 366
-353 [-]: EQ        0 R6 K47     ; if R6 ~= 2 then PC := 361
-354 [-]: JMP       361          ; PC := 361
-355 [-]: GETGLOBAL R32 K39      ; R32 := 0xE6DC43B0
-356 [-]: LOADK     R33 K48      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Z"
-357 [-]: LOADNIL   R34 R34      ; R34 := nil
-358 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
-359 [-]: MOVE      R31 R32      ; R31 := R32
-360 [-]: JMP       366          ; PC := 366
-361 [-]: GETGLOBAL R32 K39      ; R32 := 0xE6DC43B0
-362 [-]: LOADK     R33 K49      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_HOLD"
-363 [-]: LOADNIL   R34 R34      ; R34 := nil
-364 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
-365 [-]: MOVE      R31 R32      ; R31 := R32
-366 [-]: GETGLOBAL R32 K11      ; R32 := Lotus_Game
-367 [-]: GETTABLE  R32 R32 K50  ; R32 := R32["DecoModeAction_PS_WORLD_AXIS_SELECT"]
-368 [-]: EQ        1 R1 R32     ; if R1 == R32 then PC := 374
-369 [-]: JMP       374          ; PC := 374
-370 [-]: GETGLOBAL R32 K11      ; R32 := Lotus_Game
-371 [-]: GETTABLE  R32 R32 K51  ; R32 := R32["DecoModeAction_PS_WORLD_AXIS_MOVE"]
-372 [-]: EQ        0 R1 R32     ; if R1 ~= R32 then PC := 381
-373 [-]: JMP       381          ; PC := 381
-374 [-]: GETGLOBAL R32 K39      ; R32 := 0xE6DC43B0
-375 [-]: LOADK     R33 K52      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_WORLD_TRANSLATE"
-376 [-]: NEWTABLE  R34 0 1      ; R34 := {}
-377 [-]: SETTABLE  R34 K44 R31  ; R34["VAL"] := R31
-378 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
-379 [-]: MOVE      R21 R32      ; R21 := R32
-380 [-]: JMP       400          ; PC := 400
-381 [-]: GETGLOBAL R32 K39      ; R32 := 0xE6DC43B0
-382 [-]: LOADK     R33 K55      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_LOCAL_TRANSLATE"
-383 [-]: NEWTABLE  R34 0 1      ; R34 := {}
-384 [-]: SETTABLE  R34 K44 R31  ; R34["VAL"] := R31
-385 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
-386 [-]: MOVE      R21 R32      ; R21 := R32
-387 [-]: JMP       400          ; PC := 400
-388 [-]: GETUPVAL  R32 U1       ; R32 := U1
-389 [-]: GETTABLE  R32 R32 K35  ; R32 := R32["0xF81722A2"]
-390 [-]: MOVE      R33 R4       ; R33 := R4
-391 [-]: LOADK     R34 K70      ; R34 := "<CHECKMARK>"
-392 [-]: LOADK     R35 K71      ; R35 := "<CHECKMARK_OUTLINE>"
-393 [-]: CALL      R32 4 2      ; R32 := R32(R33,R34,R35)
-394 [-]: GETGLOBAL R33 K39      ; R33 := 0xE6DC43B0
-395 [-]: LOADK     R34 K72      ; R34 := "/Lotus/Language/UiElements/PLACEMENT_TOGGLE_FACING"
-396 [-]: NEWTABLE  R35 0 1      ; R35 := {}
-397 [-]: SETTABLE  R35 K44 R32  ; R35["VAL"] := R32
-398 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-399 [-]: MOVE      R21 R33      ; R21 := R33
-400 [-]: EQ        0 R29 K30    ; if R29 ~= nil then PC := 407
-401 [-]: JMP       407          ; PC := 407
-402 [-]: GETGLOBAL R33 K39      ; R33 := 0xE6DC43B0
-403 [-]: LOADK     R34 K73      ; R34 := "/Lotus/Language/UiElements/PLACEMENT_PUSH_PULL"
-404 [-]: LOADNIL   R35 R35      ; R35 := nil
-405 [-]: CALL      R33 3 2      ; R33 := R33(R34,R35)
-406 [-]: MOVE      R29 R33      ; R29 := R33
-407 [-]: LOADNIL   R33 R33      ; R33 := nil
-408 [-]: LOADK     R34 K13      ; R34 := ""
-409 [-]: EQ        0 R2 K0      ; if R2 ~= 0 then PC := 417
-410 [-]: JMP       417          ; PC := 417
-411 [-]: GETGLOBAL R35 K39      ; R35 := 0xE6DC43B0
-412 [-]: LOADK     R36 K56      ; R36 := "/Lotus/Language/UiElements/PLACEMENT_OFF"
-413 [-]: LOADNIL   R37 R37      ; R37 := nil
-414 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
-415 [-]: MOVE      R33 R35      ; R33 := R35
-416 [-]: JMP       438          ; PC := 438
-417 [-]: LOADK     R35 K47      ; R35 := 2
-418 [-]: TEST      R28 0        ; if not R28 then PC := 427
-419 [-]: JMP       427          ; PC := 427
-420 [-]: LOADK     R35 K0       ; R35 := 0
-421 [-]: GETGLOBAL R36 K39      ; R36 := 0xE6DC43B0
-422 [-]: LOADK     R37 K57      ; R37 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
-423 [-]: LOADNIL   R38 R38      ; R38 := nil
-424 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
-425 [-]: MOVE      R34 R36      ; R34 := R36
-426 [-]: JMP       432          ; PC := 432
-427 [-]: GETGLOBAL R36 K39      ; R36 := 0xE6DC43B0
-428 [-]: LOADK     R37 K58      ; R37 := "/Lotus/Language/UiElements/PLACEMENT_METERS"
-429 [-]: LOADNIL   R38 R38      ; R38 := nil
-430 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
-431 [-]: MOVE      R34 R36      ; R34 := R36
-432 [-]: GETUPVAL  R36 U1       ; R36 := U1
-433 [-]: GETTABLE  R36 R36 K59  ; R36 := R36["0x7E197415"]
-434 [-]: MOVE      R37 R2       ; R37 := R2
-435 [-]: MOVE      R38 R35      ; R38 := R35
-436 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
-437 [-]: MOVE      R33 R36      ; R33 := R36
-438 [-]: LOADNIL   R36 R36      ; R36 := nil
-439 [-]: TEST      R5 0         ; if not R5 then PC := 447
-440 [-]: JMP       447          ; PC := 447
-441 [-]: GETGLOBAL R37 K39      ; R37 := 0xE6DC43B0
-442 [-]: LOADK     R38 K74      ; R38 := "/Lotus/Language/UiElements/PLACEMENT_SURFACE_SNAP"
-443 [-]: LOADNIL   R39 R39      ; R39 := nil
-444 [-]: CALL      R37 3 2      ; R37 := R37(R38,R39)
-445 [-]: MOVE      R36 R37      ; R36 := R37
-446 [-]: JMP       452          ; PC := 452
-447 [-]: GETGLOBAL R37 K39      ; R37 := 0xE6DC43B0
-448 [-]: LOADK     R38 K75      ; R38 := "/Lotus/Language/UiElements/PLACEMENT_FREE_PLACE"
-449 [-]: LOADNIL   R39 R39      ; R39 := nil
-450 [-]: CALL      R37 3 2      ; R37 := R37(R38,R39)
-451 [-]: MOVE      R36 R37      ; R36 := R37
-452 [-]: GETGLOBAL R37 K39      ; R37 := 0xE6DC43B0
-453 [-]: LOADK     R38 K76      ; R38 := "/Lotus/Language/UiElements/DECO_PLACEMENT_MODE"
-454 [-]: NEWTABLE  R39 0 8      ; R39 := {}
-455 [-]: GETTABLE  R40 R13 K14  ; R40 := R13["ASCEND"]
-456 [-]: GETTABLE  R40 R40 K31  ; R40 := R40["Key"]
-457 [-]: SETTABLE  R39 K14 R40  ; R39["ASCEND"] := R40
-458 [-]: GETTABLE  R40 R13 K19  ; R40 := R13["DESCEND"]
-459 [-]: GETTABLE  R40 R40 K31  ; R40 := R40["Key"]
-460 [-]: SETTABLE  R39 K19 R40  ; R39["DESCEND"] := R40
-461 [-]: SETTABLE  R39 K77 R27  ; R39["SCALING"] := R27
-462 [-]: SETTABLE  R39 K61 R21  ; R39["MODE"] := R21
-463 [-]: SETTABLE  R39 K78 R29  ; R39["PUSHMOVE"] := R29
-464 [-]: SETTABLE  R39 K63 R33  ; R39["GRID"] := R33
-465 [-]: SETTABLE  R39 K64 R34  ; R39["UNIT"] := R34
-466 [-]: SETTABLE  R39 K79 R36  ; R39["PLACEMENT"] := R36
-467 [-]: CALL      R37 3 2      ; R37 := R37(R38,R39)
-468 [-]: MOVE      R12 R37      ; R12 := R37
-469 [-]: GETGLOBAL R37 K2       ; R37 := _T
-470 [-]: GETTABLE  R37 R37 K80  ; R37 := R37["ShipDecoItemInfo"]
-471 [-]: EQ        1 R37 K30    ; if R37 == nil then PC := 482
-472 [-]: JMP       482          ; PC := 482
-473 [-]: LE        0 K81 R7     ; if 1000 > R7 then PC := 482
-474 [-]: JMP       482          ; PC := 482
-475 [-]: GETGLOBAL R37 K39      ; R37 := 0xE6DC43B0
-476 [-]: LOADK     R38 K82      ; R38 := "/Lotus/Language/UiElements/DECO_MANY_DECORATIONS"
-477 [-]: LOADNIL   R39 R39      ; R39 := nil
-478 [-]: CALL      R37 3 2      ; R37 := R37(R38,R39)
-479 [-]: LOADK     R38 K83      ; R38 := "\r\n\r\n"
-480 [-]: MOVE      R39 R12      ; R39 := R12
-481 [-]: CONCAT    R12 R37 R39  ; R12 := R37 .. R38 .. R39
-482 [-]: GETUPVAL  R37 U1       ; R37 := U1
-483 [-]: GETTABLE  R37 R37 K35  ; R37 := R37["0xF81722A2"]
-484 [-]: MOVE      R38 R11      ; R38 := R11
-485 [-]: LOADK     R39 K65      ; R39 := "true,"
-486 [-]: LOADK     R40 K13      ; R40 := ""
-487 [-]: CALL      R37 4 2      ; R37 := R37(R38,R39,R40)
-488 [-]: MOVE      R38 R12      ; R38 := R12
-489 [-]: CONCAT    R12 R37 R38  ; R12 := R37 .. R38
-490 [-]: GETGLOBAL R37 K8       ; R37 := gRegion
-491 [-]: SELF      R37 R37 K9   ; R38 := R37; R37 := R37["0x3E2F6BF"]
-492 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-493 [-]: SELF      R38 R37 K84  ; R39 := R37; R38 := R37["0xDE5882DD"]
-494 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-495 [-]: SELF      R38 R38 K85  ; R39 := R38; R38 := R38["0x9A631181"]
-496 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-497 [-]: SELF      R38 R38 K86  ; R39 := R38; R38 := R38["0xF2EF8AA7"]
-498 [-]: MOVE      R40 R12      ; R40 := R12
-499 [-]: CALL      R38 3 1      ; R38(R39,R40)
-500 [-]: RETURN    R0 1         ; return 
+ 67 [-]: LEN       R20 R19      ; R20 := # R19
+ 68 [-]: LT        0 K0 R20     ; if 0 >= R20 then PC := 80
+ 69 [-]: JMP       80           ; PC := 80
+ 70 [-]: GETTABLE  R20 R19 K27  ; R20 := R19[1]
+ 71 [-]: EQ        1 R20 K13    ; if R20 == "" then PC := 80
+ 72 [-]: JMP       80           ; PC := 80
+ 73 [-]: GETTABLE  R20 R13 R17  ; R20 := R13[R17]
+ 74 [-]: LOADK     R21 K29      ; R21 := "<"
+ 75 [-]: GETTABLE  R22 R19 K27  ; R22 := R19[1]
+ 76 [-]: LOADK     R23 K30      ; R23 := ">"
+ 77 [-]: CONCAT    R21 R21 R23  ; R21 := R21 .. R22 .. R23
+ 78 [-]: SETTABLE  R20 K28 R21  ; R20["Key"] := R21
+ 79 [-]: JMP       94           ; PC := 94
+ 80 [-]: GETTABLE  R20 R13 R17  ; R20 := R13[R17]
+ 81 [-]: SETTABLE  R20 K28 K31  ; R20["Key"] := "UNBOUND"
+ 82 [-]: JMP       94           ; PC := 94
+ 83 [-]: GETTABLE  R20 R13 R17  ; R20 := R13[R17]
+ 84 [-]: LOADK     R21 K29      ; R21 := "<"
+ 85 [-]: GETTABLE  R22 R18 K15  ; R22 := R18["InputCode"]
+ 86 [-]: GETUPVAL  R23 U1       ; R23 := U1
+ 87 [-]: GETTABLE  R23 R23 K32  ; R23 := R23["0xF81722A2"]
+ 88 [-]: GETTABLE  R24 R18 K17  ; R24 := R18["Invert"]
+ 89 [-]: LOADK     R25 K33      ; R25 := ":INVERT=1>"
+ 90 [-]: LOADK     R26 K30      ; R26 := ">"
+ 91 [-]: CALL      R23 4 2      ; R23 := R23(R24,R25,R26)
+ 92 [-]: CONCAT    R21 R21 R23  ; R21 := R21 .. R22 .. R23
+ 93 [-]: SETTABLE  R20 K28 R21  ; R20["Key"] := R21
+ 94 [-]: TFORLOOP  R14 2        ; R17,R18 :=  R14(R15,R16); if R17 ~= nil then begin PC = 54; R16 := R17 end
+ 95 [-]: JMP       54           ; PC := 54
+ 96 [-]: LOADK     R20 K13      ; R20 := ""
+ 97 [-]: GETGLOBAL R21 K11      ; R21 := Lotus_Game
+ 98 [-]: GETTABLE  R21 R21 K34  ; R21 := R21["DecoModeAction_DM_TWEAK"]
+ 99 [-]: EQ        0 R0 R21     ; if R0 ~= R21 then PC := 258
+100 [-]: JMP       258          ; PC := 258
+101 [-]: GETGLOBAL R21 K11      ; R21 := Lotus_Game
+102 [-]: GETTABLE  R21 R21 K35  ; R21 := R21["DecoModeAction_PS_ROTATE"]
+103 [-]: EQ        1 R1 R21     ; if R1 == R21 then PC := 106
+104 [-]: JMP       106          ; PC := 106
+105 [-]: MOVE      R21 R0       ; R21 := R0
+106 [-]: MOVE      R21 R1       ; R21 := R1
+107 [-]: LOADNIL   R22 R22      ; R22 := nil
+108 [-]: TEST      R21 0        ; if not R21 then PC := 138
+109 [-]: JMP       138          ; PC := 138
+110 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 118
+111 [-]: JMP       118          ; PC := 118
+112 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+113 [-]: LOADK     R24 K37      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_YAW"
+114 [-]: LOADNIL   R25 R25      ; R25 := nil
+115 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+116 [-]: MOVE      R22 R23      ; R22 := R23
+117 [-]: JMP       131          ; PC := 131
+118 [-]: EQ        0 R6 K27     ; if R6 ~= 1 then PC := 126
+119 [-]: JMP       126          ; PC := 126
+120 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+121 [-]: LOADK     R24 K38      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_PITCH"
+122 [-]: LOADNIL   R25 R25      ; R25 := nil
+123 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+124 [-]: MOVE      R22 R23      ; R22 := R23
+125 [-]: JMP       131          ; PC := 131
+126 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+127 [-]: LOADK     R24 K39      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_ROLL"
+128 [-]: LOADNIL   R25 R25      ; R25 := nil
+129 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+130 [-]: MOVE      R22 R23      ; R22 := R23
+131 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+132 [-]: LOADK     R24 K40      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_CYCLE_AXIS"
+133 [-]: NEWTABLE  R25 0 1      ; R25 := {}
+134 [-]: SETTABLE  R25 K41 R22  ; R25["VAL"] := R22
+135 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+136 [-]: MOVE      R20 R23      ; R20 := R23
+137 [-]: JMP       203          ; PC := 203
+138 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 146
+139 [-]: JMP       146          ; PC := 146
+140 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+141 [-]: LOADK     R24 K42      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_X"
+142 [-]: LOADNIL   R25 R25      ; R25 := nil
+143 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+144 [-]: MOVE      R22 R23      ; R22 := R23
+145 [-]: JMP       167          ; PC := 167
+146 [-]: EQ        0 R6 K27     ; if R6 ~= 1 then PC := 154
+147 [-]: JMP       154          ; PC := 154
+148 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+149 [-]: LOADK     R24 K43      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Y"
+150 [-]: LOADNIL   R25 R25      ; R25 := nil
+151 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+152 [-]: MOVE      R22 R23      ; R22 := R23
+153 [-]: JMP       167          ; PC := 167
+154 [-]: EQ        0 R6 K44     ; if R6 ~= 2 then PC := 162
+155 [-]: JMP       162          ; PC := 162
+156 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+157 [-]: LOADK     R24 K45      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Z"
+158 [-]: LOADNIL   R25 R25      ; R25 := nil
+159 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+160 [-]: MOVE      R22 R23      ; R22 := R23
+161 [-]: JMP       167          ; PC := 167
+162 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+163 [-]: LOADK     R24 K46      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_HOLD"
+164 [-]: LOADNIL   R25 R25      ; R25 := nil
+165 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+166 [-]: MOVE      R22 R23      ; R22 := R23
+167 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
+168 [-]: GETTABLE  R23 R23 K47  ; R23 := R23["DecoModeAction_PS_WORLD_AXIS_SELECT"]
+169 [-]: EQ        1 R1 R23     ; if R1 == R23 then PC := 175
+170 [-]: JMP       175          ; PC := 175
+171 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
+172 [-]: GETTABLE  R23 R23 K48  ; R23 := R23["DecoModeAction_PS_WORLD_AXIS_MOVE"]
+173 [-]: EQ        0 R1 R23     ; if R1 ~= R23 then PC := 181
+174 [-]: JMP       181          ; PC := 181
+175 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+176 [-]: LOADK     R24 K49      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_WORLD_TRANSLATE"
+177 [-]: LOADNIL   R25 R25      ; R25 := nil
+178 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+179 [-]: MOVE      R20 R23      ; R20 := R23
+180 [-]: JMP       194          ; PC := 194
+181 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
+182 [-]: GETTABLE  R23 R23 K50  ; R23 := R23["DecoModeAction_PS_LOCAL_AXIS_SELECT"]
+183 [-]: EQ        1 R1 R23     ; if R1 == R23 then PC := 189
+184 [-]: JMP       189          ; PC := 189
+185 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
+186 [-]: GETTABLE  R23 R23 K51  ; R23 := R23["DecoModeAction_PS_LOCAL_AXIS_MOVE"]
+187 [-]: EQ        0 R1 R23     ; if R1 ~= R23 then PC := 194
+188 [-]: JMP       194          ; PC := 194
+189 [-]: GETGLOBAL R23 K36      ; R23 := 0xE6DC43B0
+190 [-]: LOADK     R24 K52      ; R24 := "/Lotus/Language/UiElements/PLACEMENT_LOCAL_TRANSLATE"
+191 [-]: LOADNIL   R25 R25      ; R25 := nil
+192 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
+193 [-]: MOVE      R20 R23      ; R20 := R23
+194 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
+195 [-]: GETTABLE  R23 R23 K48  ; R23 := R23["DecoModeAction_PS_WORLD_AXIS_MOVE"]
+196 [-]: EQ        1 R1 R23     ; if R1 == R23 then PC := 202
+197 [-]: JMP       202          ; PC := 202
+198 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
+199 [-]: GETTABLE  R23 R23 K51  ; R23 := R23["DecoModeAction_PS_LOCAL_AXIS_MOVE"]
+200 [-]: EQ        0 R1 R23     ; if R1 ~= R23 then PC := 203
+201 [-]: JMP       203          ; PC := 203
+202 [-]: MOVE      R11 R1       ; R11 := R1
+203 [-]: LOADNIL   R23 R23      ; R23 := nil
+204 [-]: LOADK     R24 K13      ; R24 := ""
+205 [-]: EQ        0 R2 K0      ; if R2 ~= 0 then PC := 213
+206 [-]: JMP       213          ; PC := 213
+207 [-]: GETGLOBAL R25 K36      ; R25 := 0xE6DC43B0
+208 [-]: LOADK     R26 K53      ; R26 := "/Lotus/Language/UiElements/PLACEMENT_OFF"
+209 [-]: LOADNIL   R27 R27      ; R27 := nil
+210 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
+211 [-]: MOVE      R23 R25      ; R23 := R25
+212 [-]: JMP       234          ; PC := 234
+213 [-]: LOADK     R25 K44      ; R25 := 2
+214 [-]: TEST      R21 0        ; if not R21 then PC := 223
+215 [-]: JMP       223          ; PC := 223
+216 [-]: LOADK     R25 K0       ; R25 := 0
+217 [-]: GETGLOBAL R26 K36      ; R26 := 0xE6DC43B0
+218 [-]: LOADK     R27 K54      ; R27 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
+219 [-]: LOADNIL   R28 R28      ; R28 := nil
+220 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+221 [-]: MOVE      R24 R26      ; R24 := R26
+222 [-]: JMP       228          ; PC := 228
+223 [-]: GETGLOBAL R26 K36      ; R26 := 0xE6DC43B0
+224 [-]: LOADK     R27 K55      ; R27 := "/Lotus/Language/UiElements/PLACEMENT_METERS"
+225 [-]: LOADNIL   R28 R28      ; R28 := nil
+226 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+227 [-]: MOVE      R24 R26      ; R24 := R26
+228 [-]: GETUPVAL  R26 U1       ; R26 := U1
+229 [-]: GETTABLE  R26 R26 K56  ; R26 := R26["0x7E197415"]
+230 [-]: MOVE      R27 R2       ; R27 := R2
+231 [-]: MOVE      R28 R25      ; R28 := R25
+232 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+233 [-]: MOVE      R23 R26      ; R23 := R26
+234 [-]: GETGLOBAL R26 K36      ; R26 := 0xE6DC43B0
+235 [-]: LOADK     R27 K57      ; R27 := "/Lotus/Language/UiElements/DECO_TWEAK_PLACEMENT"
+236 [-]: NEWTABLE  R28 0 6      ; R28 := {}
+237 [-]: GETTABLE  R29 R13 K14  ; R29 := R13["ASCEND"]
+238 [-]: GETTABLE  R29 R29 K28  ; R29 := R29["Key"]
+239 [-]: SETTABLE  R28 K14 R29  ; R28["ASCEND"] := R29
+240 [-]: GETTABLE  R29 R13 K19  ; R29 := R13["DESCEND"]
+241 [-]: GETTABLE  R29 R29 K28  ; R29 := R29["Key"]
+242 [-]: SETTABLE  R28 K19 R29  ; R28["DESCEND"] := R29
+243 [-]: SETTABLE  R28 K58 R20  ; R28["MODE"] := R20
+244 [-]: SETTABLE  R28 K59 R22  ; R28["AXIS"] := R22
+245 [-]: SETTABLE  R28 K60 R23  ; R28["GRID"] := R23
+246 [-]: SETTABLE  R28 K61 R24  ; R28["UNIT"] := R24
+247 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+248 [-]: MOVE      R12 R26      ; R12 := R26
+249 [-]: GETUPVAL  R26 U1       ; R26 := U1
+250 [-]: GETTABLE  R26 R26 K32  ; R26 := R26["0xF81722A2"]
+251 [-]: MOVE      R27 R11      ; R27 := R11
+252 [-]: LOADK     R28 K62      ; R28 := "true,"
+253 [-]: LOADK     R29 K13      ; R29 := ""
+254 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
+255 [-]: MOVE      R27 R12      ; R27 := R12
+256 [-]: CONCAT    R12 R26 R27  ; R12 := R26 .. R27
+257 [-]: JMP       483          ; PC := 483
+258 [-]: GETGLOBAL R26 K11      ; R26 := Lotus_Game
+259 [-]: GETTABLE  R26 R26 K63  ; R26 := R26["DecoModeAction_DM_GROUP"]
+260 [-]: EQ        0 R0 R26     ; if R0 ~= R26 then PC := 268
+261 [-]: JMP       268          ; PC := 268
+262 [-]: GETGLOBAL R26 K36      ; R26 := 0xE6DC43B0
+263 [-]: LOADK     R27 K64      ; R27 := "/Lotus/Language/Dojo/DecoAttach"
+264 [-]: LOADNIL   R28 R28      ; R28 := nil
+265 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+266 [-]: MOVE      R12 R26      ; R12 := R26
+267 [-]: JMP       483          ; PC := 483
+268 [-]: LOADK     R26 K13      ; R26 := ""
+269 [-]: GETGLOBAL R27 K11      ; R27 := Lotus_Game
+270 [-]: GETTABLE  R27 R27 K35  ; R27 := R27["DecoModeAction_PS_ROTATE"]
+271 [-]: EQ        1 R1 R27     ; if R1 == R27 then PC := 274
+272 [-]: JMP       274          ; PC := 274
+273 [-]: MOVE      R27 R0       ; R27 := R0
+274 [-]: MOVE      R27 R1       ; R27 := R1
+275 [-]: TEST      R3 0         ; if not R3 then PC := 283
+276 [-]: JMP       283          ; PC := 283
+277 [-]: GETGLOBAL R28 K36      ; R28 := 0xE6DC43B0
+278 [-]: LOADK     R29 K65      ; R29 := "/Lotus/Language/UiElements/PLACEMENT_SCALING"
+279 [-]: LOADNIL   R30 R30      ; R30 := nil
+280 [-]: CALL      R28 3 2      ; R28 := R28(R29,R30)
+281 [-]: MOVE      R26 R28      ; R26 := R28
+282 [-]: JMP       284          ; PC := 284
+283 [-]: LOADK     R26 K13      ; R26 := ""
+284 [-]: LOADNIL   R28 R28      ; R28 := nil
+285 [-]: TEST      R27 0        ; if not R27 then PC := 316
+286 [-]: JMP       316          ; PC := 316
+287 [-]: LOADNIL   R29 R29      ; R29 := nil
+288 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 296
+289 [-]: JMP       296          ; PC := 296
+290 [-]: GETGLOBAL R30 K36      ; R30 := 0xE6DC43B0
+291 [-]: LOADK     R31 K37      ; R31 := "/Lotus/Language/UiElements/PLACEMENT_YAW"
+292 [-]: LOADNIL   R32 R32      ; R32 := nil
+293 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
+294 [-]: MOVE      R29 R30      ; R29 := R30
+295 [-]: JMP       309          ; PC := 309
+296 [-]: EQ        0 R6 K27     ; if R6 ~= 1 then PC := 304
+297 [-]: JMP       304          ; PC := 304
+298 [-]: GETGLOBAL R30 K36      ; R30 := 0xE6DC43B0
+299 [-]: LOADK     R31 K38      ; R31 := "/Lotus/Language/UiElements/PLACEMENT_PITCH"
+300 [-]: LOADNIL   R32 R32      ; R32 := nil
+301 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
+302 [-]: MOVE      R29 R30      ; R29 := R30
+303 [-]: JMP       309          ; PC := 309
+304 [-]: GETGLOBAL R30 K36      ; R30 := 0xE6DC43B0
+305 [-]: LOADK     R31 K39      ; R31 := "/Lotus/Language/UiElements/PLACEMENT_ROLL"
+306 [-]: LOADNIL   R32 R32      ; R32 := nil
+307 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
+308 [-]: MOVE      R29 R30      ; R29 := R30
+309 [-]: GETGLOBAL R30 K36      ; R30 := 0xE6DC43B0
+310 [-]: LOADK     R31 K40      ; R31 := "/Lotus/Language/UiElements/PLACEMENT_CYCLE_AXIS"
+311 [-]: NEWTABLE  R32 0 1      ; R32 := {}
+312 [-]: SETTABLE  R32 K41 R29  ; R32["VAL"] := R29
+313 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
+314 [-]: MOVE      R20 R30      ; R20 := R30
+315 [-]: JMP       393          ; PC := 393
+316 [-]: GETGLOBAL R30 K11      ; R30 := Lotus_Game
+317 [-]: GETTABLE  R30 R30 K47  ; R30 := R30["DecoModeAction_PS_WORLD_AXIS_SELECT"]
+318 [-]: LE        0 R30 R1     ; if R30 > R1 then PC := 381
+319 [-]: JMP       381          ; PC := 381
+320 [-]: GETGLOBAL R30 K11      ; R30 := Lotus_Game
+321 [-]: GETTABLE  R30 R30 K51  ; R30 := R30["DecoModeAction_PS_LOCAL_AXIS_MOVE"]
+322 [-]: LE        0 R1 R30     ; if R1 > R30 then PC := 381
+323 [-]: JMP       381          ; PC := 381
+324 [-]: GETGLOBAL R30 K36      ; R30 := 0xE6DC43B0
+325 [-]: LOADK     R31 K66      ; R31 := "/Lotus/Language/UiElements/PLACEMENT_MOVE_HOLD"
+326 [-]: LOADNIL   R32 R32      ; R32 := nil
+327 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
+328 [-]: MOVE      R28 R30      ; R28 := R30
+329 [-]: LOADNIL   R30 R30      ; R30 := nil
+330 [-]: EQ        0 R6 K0      ; if R6 ~= 0 then PC := 338
+331 [-]: JMP       338          ; PC := 338
+332 [-]: GETGLOBAL R31 K36      ; R31 := 0xE6DC43B0
+333 [-]: LOADK     R32 K42      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_X"
+334 [-]: LOADNIL   R33 R33      ; R33 := nil
+335 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+336 [-]: MOVE      R30 R31      ; R30 := R31
+337 [-]: JMP       359          ; PC := 359
+338 [-]: EQ        0 R6 K27     ; if R6 ~= 1 then PC := 346
+339 [-]: JMP       346          ; PC := 346
+340 [-]: GETGLOBAL R31 K36      ; R31 := 0xE6DC43B0
+341 [-]: LOADK     R32 K43      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Y"
+342 [-]: LOADNIL   R33 R33      ; R33 := nil
+343 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+344 [-]: MOVE      R30 R31      ; R30 := R31
+345 [-]: JMP       359          ; PC := 359
+346 [-]: EQ        0 R6 K44     ; if R6 ~= 2 then PC := 354
+347 [-]: JMP       354          ; PC := 354
+348 [-]: GETGLOBAL R31 K36      ; R31 := 0xE6DC43B0
+349 [-]: LOADK     R32 K45      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_Z"
+350 [-]: LOADNIL   R33 R33      ; R33 := nil
+351 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+352 [-]: MOVE      R30 R31      ; R30 := R31
+353 [-]: JMP       359          ; PC := 359
+354 [-]: GETGLOBAL R31 K36      ; R31 := 0xE6DC43B0
+355 [-]: LOADK     R32 K46      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_TRANSLATE_HOLD"
+356 [-]: LOADNIL   R33 R33      ; R33 := nil
+357 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+358 [-]: MOVE      R30 R31      ; R30 := R31
+359 [-]: GETGLOBAL R31 K11      ; R31 := Lotus_Game
+360 [-]: GETTABLE  R31 R31 K47  ; R31 := R31["DecoModeAction_PS_WORLD_AXIS_SELECT"]
+361 [-]: EQ        1 R1 R31     ; if R1 == R31 then PC := 367
+362 [-]: JMP       367          ; PC := 367
+363 [-]: GETGLOBAL R31 K11      ; R31 := Lotus_Game
+364 [-]: GETTABLE  R31 R31 K48  ; R31 := R31["DecoModeAction_PS_WORLD_AXIS_MOVE"]
+365 [-]: EQ        0 R1 R31     ; if R1 ~= R31 then PC := 374
+366 [-]: JMP       374          ; PC := 374
+367 [-]: GETGLOBAL R31 K36      ; R31 := 0xE6DC43B0
+368 [-]: LOADK     R32 K49      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_WORLD_TRANSLATE"
+369 [-]: NEWTABLE  R33 0 1      ; R33 := {}
+370 [-]: SETTABLE  R33 K41 R30  ; R33["VAL"] := R30
+371 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+372 [-]: MOVE      R20 R31      ; R20 := R31
+373 [-]: JMP       393          ; PC := 393
+374 [-]: GETGLOBAL R31 K36      ; R31 := 0xE6DC43B0
+375 [-]: LOADK     R32 K52      ; R32 := "/Lotus/Language/UiElements/PLACEMENT_LOCAL_TRANSLATE"
+376 [-]: NEWTABLE  R33 0 1      ; R33 := {}
+377 [-]: SETTABLE  R33 K41 R30  ; R33["VAL"] := R30
+378 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+379 [-]: MOVE      R20 R31      ; R20 := R31
+380 [-]: JMP       393          ; PC := 393
+381 [-]: GETUPVAL  R31 U1       ; R31 := U1
+382 [-]: GETTABLE  R31 R31 K32  ; R31 := R31["0xF81722A2"]
+383 [-]: MOVE      R32 R4       ; R32 := R4
+384 [-]: LOADK     R33 K67      ; R33 := "<CHECKMARK>"
+385 [-]: LOADK     R34 K68      ; R34 := "<CHECKMARK_OUTLINE>"
+386 [-]: CALL      R31 4 2      ; R31 := R31(R32,R33,R34)
+387 [-]: GETGLOBAL R32 K36      ; R32 := 0xE6DC43B0
+388 [-]: LOADK     R33 K69      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_TOGGLE_FACING"
+389 [-]: NEWTABLE  R34 0 1      ; R34 := {}
+390 [-]: SETTABLE  R34 K41 R31  ; R34["VAL"] := R31
+391 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
+392 [-]: MOVE      R20 R32      ; R20 := R32
+393 [-]: EQ        0 R28 K70    ; if R28 ~= nil then PC := 400
+394 [-]: JMP       400          ; PC := 400
+395 [-]: GETGLOBAL R32 K36      ; R32 := 0xE6DC43B0
+396 [-]: LOADK     R33 K71      ; R33 := "/Lotus/Language/UiElements/PLACEMENT_PUSH_PULL"
+397 [-]: LOADNIL   R34 R34      ; R34 := nil
+398 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
+399 [-]: MOVE      R28 R32      ; R28 := R32
+400 [-]: LOADNIL   R32 R32      ; R32 := nil
+401 [-]: LOADK     R33 K13      ; R33 := ""
+402 [-]: EQ        0 R2 K0      ; if R2 ~= 0 then PC := 410
+403 [-]: JMP       410          ; PC := 410
+404 [-]: GETGLOBAL R34 K36      ; R34 := 0xE6DC43B0
+405 [-]: LOADK     R35 K53      ; R35 := "/Lotus/Language/UiElements/PLACEMENT_OFF"
+406 [-]: LOADNIL   R36 R36      ; R36 := nil
+407 [-]: CALL      R34 3 2      ; R34 := R34(R35,R36)
+408 [-]: MOVE      R32 R34      ; R32 := R34
+409 [-]: JMP       431          ; PC := 431
+410 [-]: LOADK     R34 K44      ; R34 := 2
+411 [-]: TEST      R27 0        ; if not R27 then PC := 420
+412 [-]: JMP       420          ; PC := 420
+413 [-]: LOADK     R34 K0       ; R34 := 0
+414 [-]: GETGLOBAL R35 K36      ; R35 := 0xE6DC43B0
+415 [-]: LOADK     R36 K54      ; R36 := "/Lotus/Language/UiElements/PLACEMENT_DEGREES"
+416 [-]: LOADNIL   R37 R37      ; R37 := nil
+417 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
+418 [-]: MOVE      R33 R35      ; R33 := R35
+419 [-]: JMP       425          ; PC := 425
+420 [-]: GETGLOBAL R35 K36      ; R35 := 0xE6DC43B0
+421 [-]: LOADK     R36 K55      ; R36 := "/Lotus/Language/UiElements/PLACEMENT_METERS"
+422 [-]: LOADNIL   R37 R37      ; R37 := nil
+423 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
+424 [-]: MOVE      R33 R35      ; R33 := R35
+425 [-]: GETUPVAL  R35 U1       ; R35 := U1
+426 [-]: GETTABLE  R35 R35 K56  ; R35 := R35["0x7E197415"]
+427 [-]: MOVE      R36 R2       ; R36 := R2
+428 [-]: MOVE      R37 R34      ; R37 := R34
+429 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
+430 [-]: MOVE      R32 R35      ; R32 := R35
+431 [-]: LOADNIL   R35 R35      ; R35 := nil
+432 [-]: TEST      R5 0         ; if not R5 then PC := 440
+433 [-]: JMP       440          ; PC := 440
+434 [-]: GETGLOBAL R36 K36      ; R36 := 0xE6DC43B0
+435 [-]: LOADK     R37 K72      ; R37 := "/Lotus/Language/UiElements/PLACEMENT_SURFACE_SNAP"
+436 [-]: LOADNIL   R38 R38      ; R38 := nil
+437 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
+438 [-]: MOVE      R35 R36      ; R35 := R36
+439 [-]: JMP       445          ; PC := 445
+440 [-]: GETGLOBAL R36 K36      ; R36 := 0xE6DC43B0
+441 [-]: LOADK     R37 K73      ; R37 := "/Lotus/Language/UiElements/PLACEMENT_FREE_PLACE"
+442 [-]: LOADNIL   R38 R38      ; R38 := nil
+443 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
+444 [-]: MOVE      R35 R36      ; R35 := R36
+445 [-]: GETGLOBAL R36 K36      ; R36 := 0xE6DC43B0
+446 [-]: LOADK     R37 K74      ; R37 := "/Lotus/Language/UiElements/DECO_PLACEMENT_MODE"
+447 [-]: NEWTABLE  R38 0 8      ; R38 := {}
+448 [-]: GETTABLE  R39 R13 K14  ; R39 := R13["ASCEND"]
+449 [-]: GETTABLE  R39 R39 K28  ; R39 := R39["Key"]
+450 [-]: SETTABLE  R38 K14 R39  ; R38["ASCEND"] := R39
+451 [-]: GETTABLE  R39 R13 K19  ; R39 := R13["DESCEND"]
+452 [-]: GETTABLE  R39 R39 K28  ; R39 := R39["Key"]
+453 [-]: SETTABLE  R38 K19 R39  ; R38["DESCEND"] := R39
+454 [-]: SETTABLE  R38 K75 R26  ; R38["SCALING"] := R26
+455 [-]: SETTABLE  R38 K58 R20  ; R38["MODE"] := R20
+456 [-]: SETTABLE  R38 K76 R28  ; R38["PUSHMOVE"] := R28
+457 [-]: SETTABLE  R38 K60 R32  ; R38["GRID"] := R32
+458 [-]: SETTABLE  R38 K61 R33  ; R38["UNIT"] := R33
+459 [-]: SETTABLE  R38 K77 R35  ; R38["PLACEMENT"] := R35
+460 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
+461 [-]: MOVE      R12 R36      ; R12 := R36
+462 [-]: GETGLOBAL R36 K2       ; R36 := _T
+463 [-]: GETTABLE  R36 R36 K78  ; R36 := R36["ShipDecoItemInfo"]
+464 [-]: EQ        1 R36 K70    ; if R36 == nil then PC := 475
+465 [-]: JMP       475          ; PC := 475
+466 [-]: LE        0 K79 R7     ; if 1000 > R7 then PC := 475
+467 [-]: JMP       475          ; PC := 475
+468 [-]: GETGLOBAL R36 K36      ; R36 := 0xE6DC43B0
+469 [-]: LOADK     R37 K80      ; R37 := "/Lotus/Language/UiElements/DECO_MANY_DECORATIONS"
+470 [-]: LOADNIL   R38 R38      ; R38 := nil
+471 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
+472 [-]: LOADK     R37 K81      ; R37 := "\r\n\r\n"
+473 [-]: MOVE      R38 R12      ; R38 := R12
+474 [-]: CONCAT    R12 R36 R38  ; R12 := R36 .. R37 .. R38
+475 [-]: GETUPVAL  R36 U1       ; R36 := U1
+476 [-]: GETTABLE  R36 R36 K32  ; R36 := R36["0xF81722A2"]
+477 [-]: MOVE      R37 R11      ; R37 := R11
+478 [-]: LOADK     R38 K62      ; R38 := "true,"
+479 [-]: LOADK     R39 K13      ; R39 := ""
+480 [-]: CALL      R36 4 2      ; R36 := R36(R37,R38,R39)
+481 [-]: MOVE      R37 R12      ; R37 := R12
+482 [-]: CONCAT    R12 R36 R37  ; R12 := R36 .. R37
+483 [-]: GETGLOBAL R36 K8       ; R36 := gRegion
+484 [-]: SELF      R36 R36 K9   ; R37 := R36; R36 := R36["0x3E2F6BF"]
+485 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+486 [-]: SELF      R37 R36 K82  ; R38 := R36; R37 := R36["0xDE5882DD"]
+487 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+488 [-]: SELF      R37 R37 K83  ; R38 := R37; R37 := R37["0x9A631181"]
+489 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+490 [-]: SELF      R37 R37 K84  ; R38 := R37; R37 := R37["0xF2EF8AA7"]
+491 [-]: MOVE      R39 R12      ; R39 := R12
+492 [-]: CALL      R37 3 1      ; R37(R38,R39)
+493 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 1019
+; Defined at line: 1018
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3348,7 +3335,7 @@ code size: 42
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 1028
+; Defined at line: 1027
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3362,7 +3349,7 @@ code size: 42
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 1032
+; Defined at line: 1031
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3541,7 +3528,7 @@ code size: 42
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 1110
+; Defined at line: 1109
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3721,7 +3708,7 @@ code size: 42
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 1184
+; Defined at line: 1183
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3915,7 +3902,7 @@ code size: 42
 ; Function #42.1:
 ;
 ; Name:            
-; Defined at line: 1238
+; Defined at line: 1237
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3981,7 +3968,7 @@ code size: 42
 ; Function #42.2:
 ;
 ; Name:            
-; Defined at line: 1264
+; Defined at line: 1263
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4000,7 +3987,7 @@ code size: 42
 ; Function #42.3:
 ;
 ; Name:            
-; Defined at line: 1272
+; Defined at line: 1271
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4041,7 +4028,7 @@ code size: 42
 ; Function #42.3.1:
 ;
 ; Name:            
-; Defined at line: 1275
+; Defined at line: 1274
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4073,7 +4060,7 @@ code size: 42
 ; Function #42.4:
 ;
 ; Name:            
-; Defined at line: 1294
+; Defined at line: 1293
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4199,7 +4186,7 @@ code size: 42
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 1310
+; Defined at line: 1309
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4220,7 +4207,7 @@ code size: 42
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 1318
+; Defined at line: 1317
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4284,7 +4271,7 @@ code size: 42
 ; Function #45:
 ;
 ; Name:            
-; Defined at line: 1340
+; Defined at line: 1339
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4323,7 +4310,7 @@ code size: 42
 ; Function #46:
 ;
 ; Name:            
-; Defined at line: 1351
+; Defined at line: 1350
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4365,7 +4352,7 @@ code size: 42
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 1360
+; Defined at line: 1359
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4376,8 +4363,8 @@ code size: 42
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   4 [-]: GETGLOBAL R2 K1        ; R2 := Engine
   5 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["CI_SELECT"]
-  6 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 79
-  7 [-]: JMP       79           ; PC := 79
+  6 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 86
+  7 [-]: JMP       86           ; PC := 86
   8 [-]: GETGLOBAL R1 K3        ; R1 := gGameRules
   9 [-]: GETGLOBAL R2 K4        ; R2 := 0x400E7765
  10 [-]: MOVE      R3 R1        ; R3 := R1
@@ -4393,71 +4380,78 @@ code size: 42
  20 [-]: RETURN    R0 1         ; return 
  21 [-]: GETGLOBAL R2 K4        ; R2 := 0x400E7765
  22 [-]: GETGLOBAL R3 K6        ; R3 := _T
- 23 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["BackgroundMovie"]
+ 23 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["ShipDecoToRemove"]
  24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 25 [-]: TEST      R2 1         ; if R2 then PC := 33
- 26 [-]: JMP       33           ; PC := 33
- 27 [-]: GETGLOBAL R2 K6        ; R2 := _T
- 28 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["BackgroundMovie"]
- 29 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x458F27A9"]
- 30 [-]: LOADK     R4 K9        ; R4 := "ShowBlockingMessage"
- 31 [-]: LOADK     R5 K10       ; R5 := "2"
- 32 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 33 [-]: GETGLOBAL R2 K6        ; R2 := _T
- 34 [-]: GETTABLE  R2 R2 K11    ; R2 := R2["ShipDecoToRemove"]
- 35 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2["0xFA5664A2"]
- 36 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 37 [-]: TEST      R2 0         ; if not R2 then PC := 46
- 38 [-]: JMP       46           ; PC := 46
- 39 [-]: GETGLOBAL R2 K3        ; R2 := gGameRules
- 40 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0x8440EB30"]
- 41 [-]: GETGLOBAL R4 K6        ; R4 := _T
- 42 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["ShipDecoToRemove"]
- 43 [-]: LOADK     R5 K14       ; R5 := "OnShipDecoRemoved"
- 44 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 45 [-]: JMP       81           ; PC := 81
- 46 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0xC17093D6"]
- 47 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 48 [-]: SELF      R3 R2 K15    ; R4 := R2; R3 := R2["0xB68BBE7C"]
- 49 [-]: GETGLOBAL R5 K16       ; R5 := gShipDecoItemType
- 50 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 51 [-]: LOADNIL   R4 R4        ; R4 := nil
- 52 [-]: LOADK     R5 K17       ; R5 := 1
- 53 [-]: LEN       R6 R3        ; R6 := # R3
- 54 [-]: LOADK     R7 K17       ; R7 := 1
- 55 [-]: FORPREP   R5 70        ; R5 -= R7; PC := 70
- 56 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
- 57 [-]: SELF      R9 R9 K18    ; R10 := R9; R9 := R9["0xE5170280"]
- 58 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 59 [-]: GETGLOBAL R10 K6       ; R10 := _T
- 60 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["ShipDecoToRemove"]
- 61 [-]: SELF      R10 R10 K19  ; R11 := R10; R10 := R10["0xE2B32C65"]
- 62 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 63 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 70
- 64 [-]: JMP       70           ; PC := 70
- 65 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
- 66 [-]: SELF      R9 R9 K20    ; R10 := R9; R9 := R9["0x3077BE70"]
- 67 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 68 [-]: MOVE      R4 R9        ; R4 := R9
- 69 [-]: JMP       71           ; PC := 71
- 70 [-]: FORLOOP   R5 56        ; R5 += R7; if R5 <= R6 then begin PC := 56; R8 := R5 end
- 71 [-]: GETGLOBAL R9 K3        ; R9 := gGameRules
- 72 [-]: SELF      R9 R9 K21    ; R10 := R9; R9 := R9["0x71EA5D8C"]
- 73 [-]: GETGLOBAL R11 K6       ; R11 := _T
- 74 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["ShipDecoToRemove"]
- 75 [-]: MOVE      R12 R4       ; R12 := R4
- 76 [-]: LOADK     R13 K14      ; R13 := "OnShipDecoRemoved"
- 77 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 78 [-]: JMP       81           ; PC := 81
- 79 [-]: GETGLOBAL R9 K6        ; R9 := _T
- 80 [-]: SETTABLE  R9 K11 K22   ; R9["ShipDecoToRemove"] := nil
- 81 [-]: RETURN    R0 1         ; return 
+ 25 [-]: TEST      R2 0         ; if not R2 then PC := 28
+ 26 [-]: JMP       28           ; PC := 28
+ 27 [-]: RETURN    R0 1         ; return 
+ 28 [-]: GETGLOBAL R2 K4        ; R2 := 0x400E7765
+ 29 [-]: GETGLOBAL R3 K6        ; R3 := _T
+ 30 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["BackgroundMovie"]
+ 31 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 32 [-]: TEST      R2 1         ; if R2 then PC := 40
+ 33 [-]: JMP       40           ; PC := 40
+ 34 [-]: GETGLOBAL R2 K6        ; R2 := _T
+ 35 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["BackgroundMovie"]
+ 36 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0x458F27A9"]
+ 37 [-]: LOADK     R4 K10       ; R4 := "ShowBlockingMessage"
+ 38 [-]: LOADK     R5 K11       ; R5 := "2"
+ 39 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 40 [-]: GETGLOBAL R2 K6        ; R2 := _T
+ 41 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["ShipDecoToRemove"]
+ 42 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2["0xFA5664A2"]
+ 43 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 44 [-]: TEST      R2 0         ; if not R2 then PC := 53
+ 45 [-]: JMP       53           ; PC := 53
+ 46 [-]: GETGLOBAL R2 K3        ; R2 := gGameRules
+ 47 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0x8440EB30"]
+ 48 [-]: GETGLOBAL R4 K6        ; R4 := _T
+ 49 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["ShipDecoToRemove"]
+ 50 [-]: LOADK     R5 K14       ; R5 := "OnShipDecoRemoved"
+ 51 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 52 [-]: JMP       88           ; PC := 88
+ 53 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0xC17093D6"]
+ 54 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 55 [-]: SELF      R3 R2 K15    ; R4 := R2; R3 := R2["0xB68BBE7C"]
+ 56 [-]: GETGLOBAL R5 K16       ; R5 := gShipDecoItemType
+ 57 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 58 [-]: LOADNIL   R4 R4        ; R4 := nil
+ 59 [-]: LOADK     R5 K17       ; R5 := 1
+ 60 [-]: LEN       R6 R3        ; R6 := # R3
+ 61 [-]: LOADK     R7 K17       ; R7 := 1
+ 62 [-]: FORPREP   R5 77        ; R5 -= R7; PC := 77
+ 63 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
+ 64 [-]: SELF      R9 R9 K18    ; R10 := R9; R9 := R9["0xE5170280"]
+ 65 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 66 [-]: GETGLOBAL R10 K6       ; R10 := _T
+ 67 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["ShipDecoToRemove"]
+ 68 [-]: SELF      R10 R10 K19  ; R11 := R10; R10 := R10["0xE2B32C65"]
+ 69 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 70 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 77
+ 71 [-]: JMP       77           ; PC := 77
+ 72 [-]: GETTABLE  R9 R3 R8     ; R9 := R3[R8]
+ 73 [-]: SELF      R9 R9 K20    ; R10 := R9; R9 := R9["0x3077BE70"]
+ 74 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 75 [-]: MOVE      R4 R9        ; R4 := R9
+ 76 [-]: JMP       78           ; PC := 78
+ 77 [-]: FORLOOP   R5 63        ; R5 += R7; if R5 <= R6 then begin PC := 63; R8 := R5 end
+ 78 [-]: GETGLOBAL R9 K3        ; R9 := gGameRules
+ 79 [-]: SELF      R9 R9 K21    ; R10 := R9; R9 := R9["0x71EA5D8C"]
+ 80 [-]: GETGLOBAL R11 K6       ; R11 := _T
+ 81 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["ShipDecoToRemove"]
+ 82 [-]: MOVE      R12 R4       ; R12 := R4
+ 83 [-]: LOADK     R13 K14      ; R13 := "OnShipDecoRemoved"
+ 84 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
+ 85 [-]: JMP       88           ; PC := 88
+ 86 [-]: GETGLOBAL R9 K6        ; R9 := _T
+ 87 [-]: SETTABLE  R9 K7 K22    ; R9["ShipDecoToRemove"] := nil
+ 88 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 1391
+; Defined at line: 1394
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4535,7 +4529,7 @@ code size: 42
 ; Function #49:
 ;
 ; Name:            
-; Defined at line: 1416
+; Defined at line: 1419
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4608,7 +4602,7 @@ code size: 42
 ; Function #50:
 ;
 ; Name:            
-; Defined at line: 1447
+; Defined at line: 1450
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4632,7 +4626,7 @@ code size: 42
 ; Function #51:
 ;
 ; Name:            
-; Defined at line: 1454
+; Defined at line: 1457
 ; #Upvalues:       5
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4785,16 +4779,16 @@ code size: 42
 145 [-]: CALL      R3 3 3       ; R3,R4 := R3(R4,R5)
 146 [-]: EQ        1 R1 K39     ; if R1 == "" then PC := 158
 147 [-]: JMP       158          ; PC := 158
-148 [-]: EQ        1 R3 K19     ; if R3 == nil then PC := 260
-149 [-]: JMP       260          ; PC := 260
+148 [-]: EQ        1 R3 K19     ; if R3 == nil then PC := 271
+149 [-]: JMP       271          ; PC := 271
 150 [-]: SELF      R5 R3 K40    ; R6 := R3; R5 := R3["0xEA470E3C"]
 151 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-152 [-]: TEST      R5 1         ; if R5 then PC := 260
-153 [-]: JMP       260          ; PC := 260
+152 [-]: TEST      R5 1         ; if R5 then PC := 271
+153 [-]: JMP       271          ; PC := 271
 154 [-]: SELF      R5 R3 K41    ; R6 := R3; R5 := R3["0x89C671D6"]
 155 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-156 [-]: TEST      R5 1         ; if R5 then PC := 260
-157 [-]: JMP       260          ; PC := 260
+156 [-]: TEST      R5 1         ; if R5 then PC := 271
+157 [-]: JMP       271          ; PC := 271
 158 [-]: TEST      R2 0         ; if not R2 then PC := 250
 159 [-]: JMP       250          ; PC := 250
 160 [-]: SELF      R5 R0 K42    ; R6 := R0; R5 := R0["0x8B598ED4"]
@@ -4886,185 +4880,190 @@ code size: 42
 246 [-]: LOADK     R6 K58       ; R6 := "/Lotus/Language/Menu/ShipDecoCantEdit"
 247 [-]: CALL      R5 2 1       ; R5(R6)
 248 [-]: RETURN    R0 1         ; return 
-249 [-]: JMP       260          ; PC := 260
-250 [-]: EQ        0 R1 K39     ; if R1 ~= "" then PC := 260
-251 [-]: JMP       260          ; PC := 260
-252 [-]: GETGLOBAL R5 K1        ; R5 := _T
-253 [-]: SETTABLE  R5 K59 R0    ; R5["ShipDecoToRemove"] := R0
-254 [-]: GETUPVAL  R5 U2        ; R5 := U2
-255 [-]: GETTABLE  R5 R5 K60    ; R5 := R5["0x5AE6E363"]
-256 [-]: LOADK     R6 K61       ; R6 := "/Lotus/Language/Menu/RemoveShipDecoConfirm"
-257 [-]: LOADK     R7 K62       ; R7 := "RemoveDecorationInShipConfirmResult"
-258 [-]: CALL      R5 3 1       ; R5(R6,R7)
-259 [-]: RETURN    R0 1         ; return 
-260 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
-261 [-]: MOVE      R6 R3        ; R6 := R3
-262 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-263 [-]: TEST      R5 1         ; if R5 then PC := 421
-264 [-]: JMP       421          ; PC := 421
-265 [-]: SELF      R5 R3 K63    ; R6 := R3; R5 := R3["0x315E860F"]
-266 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-267 [-]: TEST      R5 0         ; if not R5 then PC := 421
-268 [-]: JMP       421          ; PC := 421
-269 [-]: LOADNIL   R5 R5        ; R5 := nil
-270 [-]: TEST      R2 0         ; if not R2 then PC := 290
-271 [-]: JMP       290          ; PC := 290
-272 [-]: SELF      R6 R3 K40    ; R7 := R3; R6 := R3["0xEA470E3C"]
-273 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-274 [-]: TEST      R6 0         ; if not R6 then PC := 281
-275 [-]: JMP       281          ; PC := 281
-276 [-]: GETGLOBAL R6 K64       ; R6 := 0x7C282057
-277 [-]: GETGLOBAL R7 K65       ; R7 := decoContributingScreen
-278 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-279 [-]: MOVE      R5 R6        ; R5 := R6
-280 [-]: JMP       387          ; PC := 387
-281 [-]: SELF      R6 R3 K41    ; R7 := R3; R6 := R3["0x89C671D6"]
-282 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-283 [-]: TEST      R6 0         ; if not R6 then PC := 387
-284 [-]: JMP       387          ; PC := 387
-285 [-]: GETGLOBAL R6 K64       ; R6 := 0x7C282057
-286 [-]: GETGLOBAL R7 K66       ; R7 := decoRushScreen
-287 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-288 [-]: MOVE      R5 R6        ; R5 := R6
-289 [-]: JMP       387          ; PC := 387
-290 [-]: GETGLOBAL R6 K30       ; R6 := gFlashMgr
-291 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0x7548923C"]
-292 [-]: GETGLOBAL R8 K67       ; R8 := confirmMovie
-293 [-]: CALL      R6 3 1       ; R6(R7,R8)
-294 [-]: GETUPVAL  R6 U3        ; R6 := U3
-295 [-]: GETTABLE  R6 R6 K68    ; R6 := R6["0x8E1620BC"]
-296 [-]: MOVE      R7 R1        ; R7 := R1
-297 [-]: GETGLOBAL R8 K1        ; R8 := _T
-298 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["DojoMgr"]
-299 [-]: GETTABLE  R8 R8 K69    ; R8 := R8["mGameRules"]
-300 [-]: SELF      R8 R8 K42    ; R9 := R8; R8 := R8["0x8B598ED4"]
-301 [-]: GETGLOBAL R10 K70      ; R10 := gLotusRailCustomizationGameRulesType
-302 [-]: CALL      R8 3 0       ; R8,... := R8(R9,R10)
-303 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
-304 [-]: TEST      R6 0         ; if not R6 then PC := 383
-305 [-]: JMP       383          ; PC := 383
-306 [-]: GETGLOBAL R7 K1        ; R7 := _T
-307 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["DojoMgr"]
-308 [-]: SETTABLE  R7 K71 R0    ; R7["mPendingDestroyDeco"] := R0
-309 [-]: GETGLOBAL R7 K1        ; R7 := _T
-310 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["DojoMgr"]
-311 [-]: SETTABLE  R7 K72 R4    ; R7["mPendingDestroyDecoComponentId"] := R4
-312 [-]: SELF      R7 R3 K40    ; R8 := R3; R7 := R3["0xEA470E3C"]
-313 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-314 [-]: TEST      R7 0         ; if not R7 then PC := 322
-315 [-]: JMP       322          ; PC := 322
-316 [-]: GETUPVAL  R7 U2        ; R7 := U2
-317 [-]: GETTABLE  R7 R7 K60    ; R7 := R7["0x5AE6E363"]
-318 [-]: LOADK     R8 K73       ; R8 := "/Lotus/Language/Dojo/CancelDecoConfirmation"
-319 [-]: LOADK     R9 K74       ; R9 := "AbortDecorationConfirmResult"
-320 [-]: CALL      R7 3 1       ; R7(R8,R9)
-321 [-]: JMP       387          ; PC := 387
-322 [-]: GETGLOBAL R7 K64       ; R7 := 0x7C282057
-323 [-]: GETGLOBAL R8 K75       ; R8 := dojoRecipeManifest
-324 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-325 [-]: SELF      R8 R7 K76    ; R9 := R7; R8 := R7["0xB6BCAED4"]
-326 [-]: GETTABLE  R10 R3 K77   ; R10 := R3["decoType"]
-327 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
-328 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
-329 [-]: MOVE      R10 R8       ; R10 := R8
-330 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-331 [-]: TEST      R9 1         ; if R9 then PC := 375
-332 [-]: JMP       375          ; PC := 375
-333 [-]: SELF      R9 R8 K78    ; R10 := R8; R9 := R8["0x4E4E03C0"]
-334 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-335 [-]: EQ        0 R9 K79     ; if R9 ~= 0 then PC := 352
-336 [-]: JMP       352          ; PC := 352
-337 [-]: SELF      R9 R8 K80    ; R10 := R8; R9 := R8["0x1B64412"]
-338 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-339 [-]: EQ        0 R9 K79     ; if R9 ~= 0 then PC := 352
-340 [-]: JMP       352          ; PC := 352
-341 [-]: SELF      R9 R8 K81    ; R10 := R8; R9 := R8["0xB53383D2"]
-342 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-343 [-]: LEN       R9 R9        ; R9 := # R9
-344 [-]: EQ        0 R9 K79     ; if R9 ~= 0 then PC := 352
-345 [-]: JMP       352          ; PC := 352
-346 [-]: GETUPVAL  R9 U2        ; R9 := U2
-347 [-]: GETTABLE  R9 R9 K60    ; R9 := R9["0x5AE6E363"]
-348 [-]: LOADK     R10 K82      ; R10 := "/Lotus/Language/Dojo/DecoDestroyConfirm"
-349 [-]: LOADK     R11 K83      ; R11 := "DestroyDecorationConfirmResult"
-350 [-]: CALL      R9 3 1       ; R9(R10,R11)
-351 [-]: JMP       387          ; PC := 387
-352 [-]: SELF      R9 R8 K84    ; R10 := R8; R9 := R8["0x7786EE96"]
-353 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-354 [-]: EQ        0 R9 K20     ; if R9 ~= 1 then PC := 362
-355 [-]: JMP       362          ; PC := 362
-356 [-]: GETUPVAL  R10 U2       ; R10 := U2
-357 [-]: GETTABLE  R10 R10 K60  ; R10 := R10["0x5AE6E363"]
-358 [-]: LOADK     R11 K85      ; R11 := "/Lotus/Language/Dojo/DecoDestroyConfirmToVaultFullRefund"
-359 [-]: LOADK     R12 K83      ; R12 := "DestroyDecorationConfirmResult"
-360 [-]: CALL      R10 3 1      ; R10(R11,R12)
-361 [-]: JMP       387          ; PC := 387
-362 [-]: NEWTABLE  R10 0 1      ; R10 := {}
-363 [-]: MUL       R11 R9 K87   ; R11 := R9 * 100
-364 [-]: SETTABLE  R10 K86 R11  ; R10["PERCENT"] := R11
-365 [-]: GETGLOBAL R11 K12      ; R11 := 0xE6DC43B0
-366 [-]: LOADK     R12 K88      ; R12 := "/Lotus/Language/Dojo/DecoDestroyConfirmWithRefundPercentage"
-367 [-]: MOVE      R13 R10      ; R13 := R10
-368 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-369 [-]: GETUPVAL  R12 U2       ; R12 := U2
-370 [-]: GETTABLE  R12 R12 K60  ; R12 := R12["0x5AE6E363"]
-371 [-]: MOVE      R13 R11      ; R13 := R11
-372 [-]: LOADK     R14 K83      ; R14 := "DestroyDecorationConfirmResult"
-373 [-]: CALL      R12 3 1      ; R12(R13,R14)
-374 [-]: JMP       387          ; PC := 387
-375 [-]: GETGLOBAL R12 K1       ; R12 := _T
-376 [-]: SETTABLE  R12 K59 R0   ; R12["ShipDecoToRemove"] := R0
-377 [-]: GETUPVAL  R12 U2       ; R12 := U2
-378 [-]: GETTABLE  R12 R12 K60  ; R12 := R12["0x5AE6E363"]
-379 [-]: LOADK     R13 K89      ; R13 := "/Lotus/Language/Dojo/ShipDecoDestroyConfirmToVault"
-380 [-]: LOADK     R14 K83      ; R14 := "DestroyDecorationConfirmResult"
-381 [-]: CALL      R12 3 1      ; R12(R13,R14)
-382 [-]: JMP       387          ; PC := 387
-383 [-]: GETUPVAL  R12 U2       ; R12 := U2
-384 [-]: GETTABLE  R12 R12 K57  ; R12 := R12["0xB11F032"]
-385 [-]: LOADK     R13 K90      ; R13 := "/Lotus/Language/Dojo/DecoDestroyNoPermission"
-386 [-]: CALL      R12 2 1      ; R12(R13)
-387 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
-388 [-]: MOVE      R13 R5       ; R13 := R5
-389 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-390 [-]: TEST      R12 1        ; if R12 then PC := 421
-391 [-]: JMP       421          ; PC := 421
-392 [-]: GETGLOBAL R12 K30      ; R12 := gFlashMgr
-393 [-]: SELF      R12 R12 K31  ; R13 := R12; R12 := R12["0x7548923C"]
-394 [-]: MOVE      R14 R5       ; R14 := R5
-395 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-396 [-]: GETGLOBAL R13 K0       ; R13 := 0x400E7765
-397 [-]: MOVE      R14 R12      ; R14 := R12
-398 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-399 [-]: TEST      R13 1        ; if R13 then PC := 421
-400 [-]: JMP       421          ; PC := 421
-401 [-]: GETGLOBAL R13 K1       ; R13 := _T
-402 [-]: GETGLOBAL R14 K91      ; R14 := Framework
-403 [-]: GETTABLE  R14 R14 K92  ; R14 := R14["0x8FCF756B"]
-404 [-]: CALL      R14 1 2      ; R14 := R14()
-405 [-]: SETTABLE  R13 K4 R14   ; R13["ComponentParams"] := R14
+249 [-]: JMP       271          ; PC := 271
+250 [-]: EQ        0 R1 K39     ; if R1 ~= "" then PC := 271
+251 [-]: JMP       271          ; PC := 271
+252 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+253 [-]: GETGLOBAL R6 K1        ; R6 := _T
+254 [-]: GETTABLE  R6 R6 K59    ; R6 := R6["ShipDecoToRemove"]
+255 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+256 [-]: TEST      R5 0         ; if not R5 then PC := 270
+257 [-]: JMP       270          ; PC := 270
+258 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+259 [-]: MOVE      R6 R0        ; R6 := R0
+260 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+261 [-]: TEST      R5 1         ; if R5 then PC := 270
+262 [-]: JMP       270          ; PC := 270
+263 [-]: GETGLOBAL R5 K1        ; R5 := _T
+264 [-]: SETTABLE  R5 K59 R0    ; R5["ShipDecoToRemove"] := R0
+265 [-]: GETUPVAL  R5 U2        ; R5 := U2
+266 [-]: GETTABLE  R5 R5 K60    ; R5 := R5["0x5AE6E363"]
+267 [-]: LOADK     R6 K61       ; R6 := "/Lotus/Language/Menu/RemoveShipDecoConfirm"
+268 [-]: LOADK     R7 K62       ; R7 := "RemoveDecorationInShipConfirmResult"
+269 [-]: CALL      R5 3 1       ; R5(R6,R7)
+270 [-]: RETURN    R0 1         ; return 
+271 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
+272 [-]: MOVE      R6 R3        ; R6 := R3
+273 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+274 [-]: TEST      R5 1         ; if R5 then PC := 426
+275 [-]: JMP       426          ; PC := 426
+276 [-]: SELF      R5 R3 K63    ; R6 := R3; R5 := R3["0x315E860F"]
+277 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+278 [-]: TEST      R5 0         ; if not R5 then PC := 426
+279 [-]: JMP       426          ; PC := 426
+280 [-]: LOADNIL   R5 R5        ; R5 := nil
+281 [-]: TEST      R2 0         ; if not R2 then PC := 301
+282 [-]: JMP       301          ; PC := 301
+283 [-]: SELF      R6 R3 K40    ; R7 := R3; R6 := R3["0xEA470E3C"]
+284 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+285 [-]: TEST      R6 0         ; if not R6 then PC := 292
+286 [-]: JMP       292          ; PC := 292
+287 [-]: GETGLOBAL R6 K64       ; R6 := 0x7C282057
+288 [-]: GETGLOBAL R7 K65       ; R7 := decoContributingScreen
+289 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+290 [-]: MOVE      R5 R6        ; R5 := R6
+291 [-]: JMP       392          ; PC := 392
+292 [-]: SELF      R6 R3 K41    ; R7 := R3; R6 := R3["0x89C671D6"]
+293 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+294 [-]: TEST      R6 0         ; if not R6 then PC := 392
+295 [-]: JMP       392          ; PC := 392
+296 [-]: GETGLOBAL R6 K64       ; R6 := 0x7C282057
+297 [-]: GETGLOBAL R7 K66       ; R7 := decoRushScreen
+298 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+299 [-]: MOVE      R5 R6        ; R5 := R6
+300 [-]: JMP       392          ; PC := 392
+301 [-]: GETGLOBAL R6 K30       ; R6 := gFlashMgr
+302 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0x7548923C"]
+303 [-]: GETGLOBAL R8 K67       ; R8 := confirmMovie
+304 [-]: CALL      R6 3 1       ; R6(R7,R8)
+305 [-]: GETUPVAL  R6 U3        ; R6 := U3
+306 [-]: GETTABLE  R6 R6 K68    ; R6 := R6["0x8E1620BC"]
+307 [-]: MOVE      R7 R1        ; R7 := R1
+308 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+309 [-]: TEST      R6 0         ; if not R6 then PC := 388
+310 [-]: JMP       388          ; PC := 388
+311 [-]: GETGLOBAL R7 K1        ; R7 := _T
+312 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["DojoMgr"]
+313 [-]: SETTABLE  R7 K69 R0    ; R7["mPendingDestroyDeco"] := R0
+314 [-]: GETGLOBAL R7 K1        ; R7 := _T
+315 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["DojoMgr"]
+316 [-]: SETTABLE  R7 K70 R4    ; R7["mPendingDestroyDecoComponentId"] := R4
+317 [-]: SELF      R7 R3 K40    ; R8 := R3; R7 := R3["0xEA470E3C"]
+318 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+319 [-]: TEST      R7 0         ; if not R7 then PC := 327
+320 [-]: JMP       327          ; PC := 327
+321 [-]: GETUPVAL  R7 U2        ; R7 := U2
+322 [-]: GETTABLE  R7 R7 K60    ; R7 := R7["0x5AE6E363"]
+323 [-]: LOADK     R8 K71       ; R8 := "/Lotus/Language/Dojo/CancelDecoConfirmation"
+324 [-]: LOADK     R9 K72       ; R9 := "AbortDecorationConfirmResult"
+325 [-]: CALL      R7 3 1       ; R7(R8,R9)
+326 [-]: JMP       392          ; PC := 392
+327 [-]: GETGLOBAL R7 K64       ; R7 := 0x7C282057
+328 [-]: GETGLOBAL R8 K73       ; R8 := dojoRecipeManifest
+329 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+330 [-]: SELF      R8 R7 K74    ; R9 := R7; R8 := R7["0xB6BCAED4"]
+331 [-]: GETTABLE  R10 R3 K75   ; R10 := R3["decoType"]
+332 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+333 [-]: GETGLOBAL R9 K0        ; R9 := 0x400E7765
+334 [-]: MOVE      R10 R8       ; R10 := R8
+335 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+336 [-]: TEST      R9 1         ; if R9 then PC := 380
+337 [-]: JMP       380          ; PC := 380
+338 [-]: SELF      R9 R8 K76    ; R10 := R8; R9 := R8["0x4E4E03C0"]
+339 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+340 [-]: EQ        0 R9 K77     ; if R9 ~= 0 then PC := 357
+341 [-]: JMP       357          ; PC := 357
+342 [-]: SELF      R9 R8 K78    ; R10 := R8; R9 := R8["0x1B64412"]
+343 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+344 [-]: EQ        0 R9 K77     ; if R9 ~= 0 then PC := 357
+345 [-]: JMP       357          ; PC := 357
+346 [-]: SELF      R9 R8 K79    ; R10 := R8; R9 := R8["0xB53383D2"]
+347 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+348 [-]: LEN       R9 R9        ; R9 := # R9
+349 [-]: EQ        0 R9 K77     ; if R9 ~= 0 then PC := 357
+350 [-]: JMP       357          ; PC := 357
+351 [-]: GETUPVAL  R9 U2        ; R9 := U2
+352 [-]: GETTABLE  R9 R9 K60    ; R9 := R9["0x5AE6E363"]
+353 [-]: LOADK     R10 K80      ; R10 := "/Lotus/Language/Dojo/DecoDestroyConfirm"
+354 [-]: LOADK     R11 K81      ; R11 := "DestroyDecorationConfirmResult"
+355 [-]: CALL      R9 3 1       ; R9(R10,R11)
+356 [-]: JMP       392          ; PC := 392
+357 [-]: SELF      R9 R8 K82    ; R10 := R8; R9 := R8["0x7786EE96"]
+358 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+359 [-]: EQ        0 R9 K20     ; if R9 ~= 1 then PC := 367
+360 [-]: JMP       367          ; PC := 367
+361 [-]: GETUPVAL  R10 U2       ; R10 := U2
+362 [-]: GETTABLE  R10 R10 K60  ; R10 := R10["0x5AE6E363"]
+363 [-]: LOADK     R11 K83      ; R11 := "/Lotus/Language/Dojo/DecoDestroyConfirmToVaultFullRefund"
+364 [-]: LOADK     R12 K81      ; R12 := "DestroyDecorationConfirmResult"
+365 [-]: CALL      R10 3 1      ; R10(R11,R12)
+366 [-]: JMP       392          ; PC := 392
+367 [-]: NEWTABLE  R10 0 1      ; R10 := {}
+368 [-]: MUL       R11 R9 K85   ; R11 := R9 * 100
+369 [-]: SETTABLE  R10 K84 R11  ; R10["PERCENT"] := R11
+370 [-]: GETGLOBAL R11 K12      ; R11 := 0xE6DC43B0
+371 [-]: LOADK     R12 K86      ; R12 := "/Lotus/Language/Dojo/DecoDestroyConfirmWithRefundPercentage"
+372 [-]: MOVE      R13 R10      ; R13 := R10
+373 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+374 [-]: GETUPVAL  R12 U2       ; R12 := U2
+375 [-]: GETTABLE  R12 R12 K60  ; R12 := R12["0x5AE6E363"]
+376 [-]: MOVE      R13 R11      ; R13 := R11
+377 [-]: LOADK     R14 K81      ; R14 := "DestroyDecorationConfirmResult"
+378 [-]: CALL      R12 3 1      ; R12(R13,R14)
+379 [-]: JMP       392          ; PC := 392
+380 [-]: GETGLOBAL R12 K1       ; R12 := _T
+381 [-]: SETTABLE  R12 K59 R0   ; R12["ShipDecoToRemove"] := R0
+382 [-]: GETUPVAL  R12 U2       ; R12 := U2
+383 [-]: GETTABLE  R12 R12 K60  ; R12 := R12["0x5AE6E363"]
+384 [-]: LOADK     R13 K87      ; R13 := "/Lotus/Language/Dojo/ShipDecoDestroyConfirmToVault"
+385 [-]: LOADK     R14 K81      ; R14 := "DestroyDecorationConfirmResult"
+386 [-]: CALL      R12 3 1      ; R12(R13,R14)
+387 [-]: JMP       392          ; PC := 392
+388 [-]: GETUPVAL  R12 U2       ; R12 := U2
+389 [-]: GETTABLE  R12 R12 K57  ; R12 := R12["0xB11F032"]
+390 [-]: LOADK     R13 K88      ; R13 := "/Lotus/Language/Dojo/DecoDestroyNoPermission"
+391 [-]: CALL      R12 2 1      ; R12(R13)
+392 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
+393 [-]: MOVE      R13 R5       ; R13 := R5
+394 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+395 [-]: TEST      R12 1        ; if R12 then PC := 426
+396 [-]: JMP       426          ; PC := 426
+397 [-]: GETGLOBAL R12 K30      ; R12 := gFlashMgr
+398 [-]: SELF      R12 R12 K31  ; R13 := R12; R12 := R12["0x7548923C"]
+399 [-]: MOVE      R14 R5       ; R14 := R5
+400 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+401 [-]: GETGLOBAL R13 K0       ; R13 := 0x400E7765
+402 [-]: MOVE      R14 R12      ; R14 := R12
+403 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+404 [-]: TEST      R13 1        ; if R13 then PC := 426
+405 [-]: JMP       426          ; PC := 426
 406 [-]: GETGLOBAL R13 K1       ; R13 := _T
-407 [-]: GETTABLE  R13 R13 K4   ; R13 := R13["ComponentParams"]
-408 [-]: SETTABLE  R13 K7 R4    ; R13["id"] := R4
-409 [-]: GETGLOBAL R13 K1       ; R13 := _T
-410 [-]: SELF      R14 R3 K94   ; R15 := R3; R14 := R3["0x4CC9B24B"]
-411 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-412 [-]: SETTABLE  R13 K93 R14  ; R13["DecoId"] := R14
-413 [-]: GETGLOBAL R13 K1       ; R13 := _T
-414 [-]: SETTABLE  R13 K95 K29  ; R13["ShowDecorationContribution"] := "0x1"
-415 [-]: SELF      R13 R12 K46  ; R14 := R12; R13 := R12["0x458F27A9"]
-416 [-]: LOADK     R15 K96      ; R15 := "ReadDojoVars"
-417 [-]: LOADK     R16 K39      ; R16 := ""
-418 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-419 [-]: GETGLOBAL R13 K1       ; R13 := _T
-420 [-]: SETTABLE  R13 K95 K97  ; R13["ShowDecorationContribution"] := "0x0"
-421 [-]: RETURN    R0 1         ; return 
+407 [-]: GETGLOBAL R14 K89      ; R14 := Framework
+408 [-]: GETTABLE  R14 R14 K90  ; R14 := R14["0x8FCF756B"]
+409 [-]: CALL      R14 1 2      ; R14 := R14()
+410 [-]: SETTABLE  R13 K4 R14   ; R13["ComponentParams"] := R14
+411 [-]: GETGLOBAL R13 K1       ; R13 := _T
+412 [-]: GETTABLE  R13 R13 K4   ; R13 := R13["ComponentParams"]
+413 [-]: SETTABLE  R13 K7 R4    ; R13["id"] := R4
+414 [-]: GETGLOBAL R13 K1       ; R13 := _T
+415 [-]: SELF      R14 R3 K92   ; R15 := R3; R14 := R3["0x4CC9B24B"]
+416 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+417 [-]: SETTABLE  R13 K91 R14  ; R13["DecoId"] := R14
+418 [-]: GETGLOBAL R13 K1       ; R13 := _T
+419 [-]: SETTABLE  R13 K93 K29  ; R13["ShowDecorationContribution"] := "0x1"
+420 [-]: SELF      R13 R12 K46  ; R14 := R12; R13 := R12["0x458F27A9"]
+421 [-]: LOADK     R15 K94      ; R15 := "ReadDojoVars"
+422 [-]: LOADK     R16 K39      ; R16 := ""
+423 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+424 [-]: GETGLOBAL R13 K1       ; R13 := _T
+425 [-]: SETTABLE  R13 K93 K95  ; R13["ShowDecorationContribution"] := "0x0"
+426 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #51.1:
 ;
 ; Name:            
-; Defined at line: 1477
+; Defined at line: 1480
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5109,7 +5108,7 @@ code size: 42
 ; Function #52:
 ;
 ; Name:            
-; Defined at line: 1624
+; Defined at line: 1629
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5347,7 +5346,7 @@ code size: 42
 ; Function #52.1:
 ;
 ; Name:            
-; Defined at line: 1720
+; Defined at line: 1725
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5384,7 +5383,7 @@ code size: 42
 ; Function #53:
 ;
 ; Name:            
-; Defined at line: 1750
+; Defined at line: 1755
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5454,7 +5453,7 @@ code size: 42
 ; Function #54:
 ;
 ; Name:            
-; Defined at line: 1773
+; Defined at line: 1778
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5554,7 +5553,7 @@ code size: 42
 ; Function #55:
 ;
 ; Name:            
-; Defined at line: 1805
+; Defined at line: 1810
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5592,7 +5591,7 @@ code size: 42
 ; Function #56:
 ;
 ; Name:            
-; Defined at line: 1814
+; Defined at line: 1819
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5619,7 +5618,7 @@ code size: 42
 ; Function #57:
 ;
 ; Name:            
-; Defined at line: 1820
+; Defined at line: 1825
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5645,7 +5644,7 @@ code size: 42
 ; Function #58:
 ;
 ; Name:            
-; Defined at line: 1832
+; Defined at line: 1837
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5690,7 +5689,7 @@ code size: 42
 ; Function #59:
 ;
 ; Name:            
-; Defined at line: 1844
+; Defined at line: 1849
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5772,7 +5771,7 @@ code size: 42
 ; Function #60:
 ;
 ; Name:            
-; Defined at line: 1864
+; Defined at line: 1869
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5809,7 +5808,7 @@ code size: 42
 ; Function #61:
 ;
 ; Name:            
-; Defined at line: 1876
+; Defined at line: 1881
 ; #Upvalues:       2
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -5982,8 +5981,8 @@ code size: 42
 ; Function #62:
 ;
 ; Name:            
-; Defined at line: 1928
-; #Upvalues:       2
+; Defined at line: 1933
+; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
 ; Max Stack Size:  17
@@ -5994,8 +5993,8 @@ code size: 42
   4 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
   5 [-]: MOVE      R4 R2        ; R4 := R2
   6 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-  7 [-]: TEST      R3 1         ; if R3 then PC := 220
-  8 [-]: JMP       220          ; PC := 220
+  7 [-]: TEST      R3 1         ; if R3 then PC := 237
+  8 [-]: JMP       237          ; PC := 237
   9 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x25D68A52"]
  10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  11 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x75EB3F77"]
@@ -6003,21 +6002,21 @@ code size: 42
  13 [-]: GETGLOBAL R4 K2        ; R4 := 0x400E7765
  14 [-]: MOVE      R5 R3        ; R5 := R3
  15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: TEST      R4 1         ; if R4 then PC := 220
- 17 [-]: JMP       220          ; PC := 220
+ 16 [-]: TEST      R4 1         ; if R4 then PC := 237
+ 17 [-]: JMP       237          ; PC := 237
  18 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3["0x8B598ED4"]
  19 [-]: GETGLOBAL R6 K6        ; R6 := gDecoModeActionType
  20 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 21 [-]: TEST      R4 0         ; if not R4 then PC := 220
- 22 [-]: JMP       220          ; PC := 220
+ 21 [-]: TEST      R4 0         ; if not R4 then PC := 237
+ 22 [-]: JMP       237          ; PC := 237
  23 [-]: SELF      R4 R3 K7     ; R5 := R3; R4 := R3["0xE2D8E7F"]
  24 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  25 [-]: TEST      R4 1         ; if R4 then PC := 31
  26 [-]: JMP       31           ; PC := 31
  27 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0x650C274"]
  28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: TEST      R4 0         ; if not R4 then PC := 220
- 30 [-]: JMP       220          ; PC := 220
+ 29 [-]: TEST      R4 0         ; if not R4 then PC := 237
+ 30 [-]: JMP       237          ; PC := 237
  31 [-]: GETGLOBAL R4 K9        ; R4 := 0xE6DC43B0
  32 [-]: LOADK     R5 K10       ; R5 := "/Lotus/Language/Menu/ShipDecoGeneral"
  33 [-]: MOVE      R6 R1        ; R6 := R1
@@ -6025,270 +6024,287 @@ code size: 42
  35 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
  36 [-]: MOVE      R6 R0        ; R6 := R0
  37 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 38 [-]: TEST      R5 1         ; if R5 then PC := 164
- 39 [-]: JMP       164          ; PC := 164
- 40 [-]: GETGLOBAL R5 K9        ; R5 := 0xE6DC43B0
- 41 [-]: LOADK     R6 K11       ; R6 := "/Lotus/Language/Menu/ShipDecoFocused"
- 42 [-]: MOVE      R7 R1        ; R7 := R1
- 43 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 44 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
- 45 [-]: GETGLOBAL R8 K12       ; R8 := shipFragmentScreenType
- 46 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 47 [-]: TEST      R6 1         ; if R6 then PC := 62
- 48 [-]: JMP       62           ; PC := 62
- 49 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
- 50 [-]: GETGLOBAL R8 K13       ; R8 := shipActionFigureType
- 51 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 52 [-]: TEST      R6 1         ; if R6 then PC := 62
- 53 [-]: JMP       62           ; PC := 62
- 54 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
- 55 [-]: GETGLOBAL R8 K14       ; R8 := shipLightType
- 56 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 57 [-]: TEST      R6 1         ; if R6 then PC := 62
- 58 [-]: JMP       62           ; PC := 62
- 59 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
- 60 [-]: GETGLOBAL R8 K15       ; R8 := shipTextType
- 61 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 62 [-]: LOADK     R7 K16       ; R7 := "/Lotus/Language/Menu/ShipDecoEditContents"
- 63 [-]: GETGLOBAL R8 K17       ; R8 := gGameRules
- 64 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0x7C138DEF"]
- 65 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 66 [-]: TEST      R8 0         ; if not R8 then PC := 95
- 67 [-]: JMP       95           ; PC := 95
- 68 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 69 [-]: MOVE      R9 R0        ; R9 := R0
- 70 [-]: MOVE      R10 R1       ; R10 := R1
- 71 [-]: CALL      R8 3 3       ; R8,R9 := R8(R9,R10)
- 72 [-]: GETGLOBAL R10 K2       ; R10 := 0x400E7765
- 73 [-]: MOVE      R11 R8       ; R11 := R8
- 74 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 75 [-]: TEST      R10 1        ; if R10 then PC := 95
- 76 [-]: JMP       95           ; PC := 95
- 77 [-]: SELF      R10 R8 K19   ; R11 := R8; R10 := R8["0xEA470E3C"]
- 78 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 79 [-]: TEST      R10 1        ; if R10 then PC := 85
- 80 [-]: JMP       85           ; PC := 85
- 81 [-]: SELF      R10 R8 K20   ; R11 := R8; R10 := R8["0x89C671D6"]
- 82 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 83 [-]: TEST      R10 0        ; if not R10 then PC := 95
- 84 [-]: JMP       95           ; PC := 95
- 85 [-]: MOVE      R6 R1        ; R6 := R1
- 86 [-]: LOADK     R10 K21      ; R10 := "/Lotus/Language/Dojo/"
- 87 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 88 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["0xF81722A2"]
- 89 [-]: SELF      R12 R8 K19   ; R13 := R8; R12 := R8["0xEA470E3C"]
- 90 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 91 [-]: LOADK     R13 K23      ; R13 := "DecoEditContribute"
- 92 [-]: LOADK     R14 K24      ; R14 := "DecoEditRush"
- 93 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 94 [-]: CONCAT    R7 R10 R11   ; R7 := R10 .. R11
- 95 [-]: TEST      R6 0         ; if not R6 then PC := 104
- 96 [-]: JMP       104          ; PC := 104
- 97 [-]: MOVE      R10 R5       ; R10 := R5
- 98 [-]: LOADK     R11 K25      ; R11 := "\r\n"
- 99 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
-100 [-]: MOVE      R13 R7       ; R13 := R7
-101 [-]: MOVE      R14 R1       ; R14 := R1
-102 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-103 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
-104 [-]: LOADK     R7 K26       ; R7 := "/Lotus/Language/Dojo/DecoTweakPlacement"
-105 [-]: MOVE      R10 R5       ; R10 := R5
-106 [-]: LOADK     R11 K25      ; R11 := "\r\n"
-107 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
-108 [-]: MOVE      R13 R7       ; R13 := R7
-109 [-]: MOVE      R14 R1       ; R14 := R1
-110 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-111 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
-112 [-]: LOADK     R7 K27       ; R7 := "/Lotus/Language/Dojo/DecoPlaceAnotherFocused"
-113 [-]: MOVE      R10 R5       ; R10 := R5
-114 [-]: LOADK     R11 K25      ; R11 := "\r\n"
-115 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
-116 [-]: MOVE      R13 R7       ; R13 := R7
-117 [-]: MOVE      R14 R1       ; R14 := R1
-118 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-119 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
-120 [-]: GETGLOBAL R10 K28      ; R10 := gFlashMgr
-121 [-]: SELF      R10 R10 K29  ; R11 := R10; R10 := R10["0x1089D053"]
-122 [-]: LOADK     R12 K30      ; R12 := "LotusProfileTypes.DecoGroupingEnabled"
-123 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-124 [-]: TEST      R10 0        ; if not R10 then PC := 159
-125 [-]: JMP       159          ; PC := 159
-126 [-]: SELF      R10 R0 K31   ; R11 := R0; R10 := R0["0x21D03B2D"]
-127 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-128 [-]: TEST      R10 0        ; if not R10 then PC := 139
-129 [-]: JMP       139          ; PC := 139
-130 [-]: LOADK     R7 K32       ; R7 := "/Lotus/Language/Dojo/DecoDetach"
-131 [-]: MOVE      R10 R5       ; R10 := R5
-132 [-]: LOADK     R11 K25      ; R11 := "\r\n"
-133 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
-134 [-]: MOVE      R13 R7       ; R13 := R7
-135 [-]: MOVE      R14 R1       ; R14 := R1
-136 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-137 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
-138 [-]: JMP       147          ; PC := 147
-139 [-]: LOADK     R7 K33       ; R7 := "/Lotus/Language/Dojo/DecoAttach"
-140 [-]: MOVE      R10 R5       ; R10 := R5
-141 [-]: LOADK     R11 K25      ; R11 := "\r\n"
-142 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
-143 [-]: MOVE      R13 R7       ; R13 := R7
-144 [-]: MOVE      R14 R1       ; R14 := R1
-145 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-146 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
-147 [-]: SELF      R10 R0 K34   ; R11 := R0; R10 := R0["0xA7DFA6E9"]
-148 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-149 [-]: TEST      R10 0        ; if not R10 then PC := 159
-150 [-]: JMP       159          ; PC := 159
-151 [-]: LOADK     R7 K35       ; R7 := "/Lotus/Language/Dojo/SaveDecoTemplate"
-152 [-]: MOVE      R10 R5       ; R10 := R5
-153 [-]: LOADK     R11 K25      ; R11 := "\r\n"
-154 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
-155 [-]: MOVE      R13 R7       ; R13 := R7
-156 [-]: MOVE      R14 R1       ; R14 := R1
-157 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-158 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
-159 [-]: MOVE      R10 R5       ; R10 := R5
-160 [-]: LOADK     R11 K25      ; R11 := "\r\n"
-161 [-]: MOVE      R12 R4       ; R12 := R4
-162 [-]: CONCAT    R4 R10 R12   ; R4 := R10 .. R11 .. R12
-163 [-]: JMP       210          ; PC := 210
-164 [-]: GETGLOBAL R10 K2       ; R10 := 0x400E7765
-165 [-]: GETGLOBAL R11 K36      ; R11 := _T
-166 [-]: GETTABLE  R11 R11 K37  ; R11 := R11["PrevPlacedDecoInfo"]
-167 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-168 [-]: TEST      R10 1        ; if R10 then PC := 210
-169 [-]: JMP       210          ; PC := 210
-170 [-]: LOADK     R10 K38      ; R10 := ""
-171 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
-172 [-]: GETGLOBAL R12 K36      ; R12 := _T
-173 [-]: GETTABLE  R12 R12 K37  ; R12 := R12["PrevPlacedDecoInfo"]
-174 [-]: GETTABLE  R12 R12 K39  ; R12 := R12["Recipe"]
-175 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-176 [-]: TEST      R11 1        ; if R11 then PC := 190
-177 [-]: JMP       190          ; PC := 190
-178 [-]: GETGLOBAL R11 K9       ; R11 := 0xE6DC43B0
-179 [-]: GETGLOBAL R12 K36      ; R12 := _T
-180 [-]: GETTABLE  R12 R12 K37  ; R12 := R12["PrevPlacedDecoInfo"]
-181 [-]: GETTABLE  R12 R12 K39  ; R12 := R12["Recipe"]
-182 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12["0x616C74B6"]
-183 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-184 [-]: SELF      R12 R12 K41  ; R13 := R12; R12 := R12["0x5EC7A3D2"]
-185 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-186 [-]: MOVE      R13 R0       ; R13 := R0
-187 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-188 [-]: MOVE      R10 R11      ; R10 := R11
-189 [-]: JMP       201          ; PC := 201
-190 [-]: GETGLOBAL R11 K9       ; R11 := 0xE6DC43B0
-191 [-]: GETGLOBAL R12 K36      ; R12 := _T
-192 [-]: GETTABLE  R12 R12 K37  ; R12 := R12["PrevPlacedDecoInfo"]
-193 [-]: GETTABLE  R12 R12 K42  ; R12 := R12["StoreItem"]
-194 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12["0x616C74B6"]
-195 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-196 [-]: SELF      R12 R12 K41  ; R13 := R12; R12 := R12["0x5EC7A3D2"]
-197 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-198 [-]: MOVE      R13 R0       ; R13 := R0
-199 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-200 [-]: MOVE      R10 R11      ; R10 := R11
-201 [-]: GETGLOBAL R11 K9       ; R11 := 0xE6DC43B0
-202 [-]: LOADK     R12 K43      ; R12 := "/Lotus/Language/Menu/ShipDecoPlacePrevious"
-203 [-]: NEWTABLE  R13 0 1      ; R13 := {}
-204 [-]: SETTABLE  R13 K44 R10  ; R13["DECO"] := R10
-205 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
-206 [-]: MOVE      R12 R11      ; R12 := R11
-207 [-]: LOADK     R13 K25      ; R13 := "\r\n"
-208 [-]: MOVE      R14 R4       ; R14 := R4
-209 [-]: CONCAT    R4 R12 R14   ; R4 := R12 .. R13 .. R14
-210 [-]: GETGLOBAL R12 K0       ; R12 := gRegion
-211 [-]: SELF      R12 R12 K1   ; R13 := R12; R12 := R12["0x3E2F6BF"]
+ 38 [-]: TEST      R5 0         ; if not R5 then PC := 52
+ 39 [-]: JMP       52           ; PC := 52
+ 40 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 41 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["0x5F5B4130"]
+ 42 [-]: CALL      R5 1 2       ; R5 := R5()
+ 43 [-]: TEST      R5 0         ; if not R5 then PC := 52
+ 44 [-]: JMP       52           ; PC := 52
+ 45 [-]: MOVE      R5 R4        ; R5 := R4
+ 46 [-]: LOADK     R6 K12       ; R6 := "\r\n"
+ 47 [-]: GETGLOBAL R7 K9        ; R7 := 0xE6DC43B0
+ 48 [-]: LOADK     R8 K13       ; R8 := "/Lotus/Language/Menu/ResetRoomShipDecos"
+ 49 [-]: MOVE      R9 R1        ; R9 := R1
+ 50 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 51 [-]: CONCAT    R4 R5 R7     ; R4 := R5 .. R6 .. R7
+ 52 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
+ 53 [-]: MOVE      R6 R0        ; R6 := R0
+ 54 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 55 [-]: TEST      R5 1         ; if R5 then PC := 181
+ 56 [-]: JMP       181          ; PC := 181
+ 57 [-]: GETGLOBAL R5 K9        ; R5 := 0xE6DC43B0
+ 58 [-]: LOADK     R6 K14       ; R6 := "/Lotus/Language/Menu/ShipDecoFocused"
+ 59 [-]: MOVE      R7 R1        ; R7 := R1
+ 60 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 61 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
+ 62 [-]: GETGLOBAL R8 K15       ; R8 := shipFragmentScreenType
+ 63 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 64 [-]: TEST      R6 1         ; if R6 then PC := 79
+ 65 [-]: JMP       79           ; PC := 79
+ 66 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
+ 67 [-]: GETGLOBAL R8 K16       ; R8 := shipActionFigureType
+ 68 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 69 [-]: TEST      R6 1         ; if R6 then PC := 79
+ 70 [-]: JMP       79           ; PC := 79
+ 71 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
+ 72 [-]: GETGLOBAL R8 K17       ; R8 := shipLightType
+ 73 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 74 [-]: TEST      R6 1         ; if R6 then PC := 79
+ 75 [-]: JMP       79           ; PC := 79
+ 76 [-]: SELF      R6 R0 K5     ; R7 := R0; R6 := R0["0x8B598ED4"]
+ 77 [-]: GETGLOBAL R8 K18       ; R8 := shipTextType
+ 78 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 79 [-]: LOADK     R7 K19       ; R7 := "/Lotus/Language/Menu/ShipDecoEditContents"
+ 80 [-]: GETGLOBAL R8 K20       ; R8 := gGameRules
+ 81 [-]: SELF      R8 R8 K21    ; R9 := R8; R8 := R8["0x7C138DEF"]
+ 82 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 83 [-]: TEST      R8 0         ; if not R8 then PC := 112
+ 84 [-]: JMP       112          ; PC := 112
+ 85 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 86 [-]: MOVE      R9 R0        ; R9 := R0
+ 87 [-]: MOVE      R10 R1       ; R10 := R1
+ 88 [-]: CALL      R8 3 3       ; R8,R9 := R8(R9,R10)
+ 89 [-]: GETGLOBAL R10 K2       ; R10 := 0x400E7765
+ 90 [-]: MOVE      R11 R8       ; R11 := R8
+ 91 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 92 [-]: TEST      R10 1        ; if R10 then PC := 112
+ 93 [-]: JMP       112          ; PC := 112
+ 94 [-]: SELF      R10 R8 K22   ; R11 := R8; R10 := R8["0xEA470E3C"]
+ 95 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 96 [-]: TEST      R10 1        ; if R10 then PC := 102
+ 97 [-]: JMP       102          ; PC := 102
+ 98 [-]: SELF      R10 R8 K23   ; R11 := R8; R10 := R8["0x89C671D6"]
+ 99 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+100 [-]: TEST      R10 0        ; if not R10 then PC := 112
+101 [-]: JMP       112          ; PC := 112
+102 [-]: MOVE      R6 R1        ; R6 := R1
+103 [-]: LOADK     R10 K24      ; R10 := "/Lotus/Language/Dojo/"
+104 [-]: GETUPVAL  R11 U2       ; R11 := U2
+105 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["0xF81722A2"]
+106 [-]: SELF      R12 R8 K22   ; R13 := R8; R12 := R8["0xEA470E3C"]
+107 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+108 [-]: LOADK     R13 K26      ; R13 := "DecoEditContribute"
+109 [-]: LOADK     R14 K27      ; R14 := "DecoEditRush"
+110 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
+111 [-]: CONCAT    R7 R10 R11   ; R7 := R10 .. R11
+112 [-]: TEST      R6 0         ; if not R6 then PC := 121
+113 [-]: JMP       121          ; PC := 121
+114 [-]: MOVE      R10 R5       ; R10 := R5
+115 [-]: LOADK     R11 K12      ; R11 := "\r\n"
+116 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
+117 [-]: MOVE      R13 R7       ; R13 := R7
+118 [-]: MOVE      R14 R1       ; R14 := R1
+119 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+120 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
+121 [-]: LOADK     R7 K28       ; R7 := "/Lotus/Language/Dojo/DecoTweakPlacement"
+122 [-]: MOVE      R10 R5       ; R10 := R5
+123 [-]: LOADK     R11 K12      ; R11 := "\r\n"
+124 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
+125 [-]: MOVE      R13 R7       ; R13 := R7
+126 [-]: MOVE      R14 R1       ; R14 := R1
+127 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+128 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
+129 [-]: LOADK     R7 K29       ; R7 := "/Lotus/Language/Dojo/DecoPlaceAnotherFocused"
+130 [-]: MOVE      R10 R5       ; R10 := R5
+131 [-]: LOADK     R11 K12      ; R11 := "\r\n"
+132 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
+133 [-]: MOVE      R13 R7       ; R13 := R7
+134 [-]: MOVE      R14 R1       ; R14 := R1
+135 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+136 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
+137 [-]: GETGLOBAL R10 K30      ; R10 := gFlashMgr
+138 [-]: SELF      R10 R10 K31  ; R11 := R10; R10 := R10["0x1089D053"]
+139 [-]: LOADK     R12 K32      ; R12 := "LotusProfileTypes.DecoGroupingEnabled"
+140 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+141 [-]: TEST      R10 0        ; if not R10 then PC := 176
+142 [-]: JMP       176          ; PC := 176
+143 [-]: SELF      R10 R0 K33   ; R11 := R0; R10 := R0["0x21D03B2D"]
+144 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+145 [-]: TEST      R10 0        ; if not R10 then PC := 156
+146 [-]: JMP       156          ; PC := 156
+147 [-]: LOADK     R7 K34       ; R7 := "/Lotus/Language/Dojo/DecoDetach"
+148 [-]: MOVE      R10 R5       ; R10 := R5
+149 [-]: LOADK     R11 K12      ; R11 := "\r\n"
+150 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
+151 [-]: MOVE      R13 R7       ; R13 := R7
+152 [-]: MOVE      R14 R1       ; R14 := R1
+153 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+154 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
+155 [-]: JMP       164          ; PC := 164
+156 [-]: LOADK     R7 K35       ; R7 := "/Lotus/Language/Dojo/DecoAttach"
+157 [-]: MOVE      R10 R5       ; R10 := R5
+158 [-]: LOADK     R11 K12      ; R11 := "\r\n"
+159 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
+160 [-]: MOVE      R13 R7       ; R13 := R7
+161 [-]: MOVE      R14 R1       ; R14 := R1
+162 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+163 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
+164 [-]: SELF      R10 R0 K36   ; R11 := R0; R10 := R0["0xA7DFA6E9"]
+165 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+166 [-]: TEST      R10 0        ; if not R10 then PC := 176
+167 [-]: JMP       176          ; PC := 176
+168 [-]: LOADK     R7 K37       ; R7 := "/Lotus/Language/Dojo/SaveDecoTemplate"
+169 [-]: MOVE      R10 R5       ; R10 := R5
+170 [-]: LOADK     R11 K12      ; R11 := "\r\n"
+171 [-]: GETGLOBAL R12 K9       ; R12 := 0xE6DC43B0
+172 [-]: MOVE      R13 R7       ; R13 := R7
+173 [-]: MOVE      R14 R1       ; R14 := R1
+174 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+175 [-]: CONCAT    R5 R10 R12   ; R5 := R10 .. R11 .. R12
+176 [-]: MOVE      R10 R5       ; R10 := R5
+177 [-]: LOADK     R11 K12      ; R11 := "\r\n"
+178 [-]: MOVE      R12 R4       ; R12 := R4
+179 [-]: CONCAT    R4 R10 R12   ; R4 := R10 .. R11 .. R12
+180 [-]: JMP       227          ; PC := 227
+181 [-]: GETGLOBAL R10 K2       ; R10 := 0x400E7765
+182 [-]: GETGLOBAL R11 K38      ; R11 := _T
+183 [-]: GETTABLE  R11 R11 K39  ; R11 := R11["PrevPlacedDecoInfo"]
+184 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+185 [-]: TEST      R10 1        ; if R10 then PC := 227
+186 [-]: JMP       227          ; PC := 227
+187 [-]: LOADK     R10 K40      ; R10 := ""
+188 [-]: GETGLOBAL R11 K2       ; R11 := 0x400E7765
+189 [-]: GETGLOBAL R12 K38      ; R12 := _T
+190 [-]: GETTABLE  R12 R12 K39  ; R12 := R12["PrevPlacedDecoInfo"]
+191 [-]: GETTABLE  R12 R12 K41  ; R12 := R12["Recipe"]
+192 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+193 [-]: TEST      R11 1        ; if R11 then PC := 207
+194 [-]: JMP       207          ; PC := 207
+195 [-]: GETGLOBAL R11 K9       ; R11 := 0xE6DC43B0
+196 [-]: GETGLOBAL R12 K38      ; R12 := _T
+197 [-]: GETTABLE  R12 R12 K39  ; R12 := R12["PrevPlacedDecoInfo"]
+198 [-]: GETTABLE  R12 R12 K41  ; R12 := R12["Recipe"]
+199 [-]: SELF      R12 R12 K42  ; R13 := R12; R12 := R12["0x616C74B6"]
+200 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+201 [-]: SELF      R12 R12 K43  ; R13 := R12; R12 := R12["0x5EC7A3D2"]
+202 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+203 [-]: MOVE      R13 R0       ; R13 := R0
+204 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+205 [-]: MOVE      R10 R11      ; R10 := R11
+206 [-]: JMP       218          ; PC := 218
+207 [-]: GETGLOBAL R11 K9       ; R11 := 0xE6DC43B0
+208 [-]: GETGLOBAL R12 K38      ; R12 := _T
+209 [-]: GETTABLE  R12 R12 K39  ; R12 := R12["PrevPlacedDecoInfo"]
+210 [-]: GETTABLE  R12 R12 K44  ; R12 := R12["StoreItem"]
+211 [-]: SELF      R12 R12 K42  ; R13 := R12; R12 := R12["0x616C74B6"]
 212 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-213 [-]: SELF      R13 R12 K45  ; R14 := R12; R13 := R12["0xDE5882DD"]
-214 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-215 [-]: SELF      R13 R13 K46  ; R14 := R13; R13 := R13["0x9A631181"]
-216 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-217 [-]: SELF      R13 R13 K47  ; R14 := R13; R13 := R13["0xF2EF8AA7"]
-218 [-]: MOVE      R15 R4       ; R15 := R4
-219 [-]: CALL      R13 3 1      ; R13(R14,R15)
-220 [-]: GETGLOBAL R13 K2       ; R13 := 0x400E7765
-221 [-]: GETGLOBAL R14 K36      ; R14 := _T
-222 [-]: GETTABLE  R14 R14 K48  ; R14 := R14["DojoMgr"]
-223 [-]: CALL      R13 2 2      ; R13 := R13(R14)
-224 [-]: TEST      R13 1        ; if R13 then PC := 295
-225 [-]: JMP       295          ; PC := 295
-226 [-]: GETGLOBAL R13 K36      ; R13 := _T
-227 [-]: GETTABLE  R13 R13 K48  ; R13 := R13["DojoMgr"]
-228 [-]: GETTABLE  R13 R13 K49  ; R13 := R13["mCurrentlyFocusedDeco"]
-229 [-]: GETTABLE  R13 R13 K50  ; R13 := R13["Deco"]
-230 [-]: EQ        0 R0 R13     ; if R0 ~= R13 then PC := 238
-231 [-]: JMP       238          ; PC := 238
-232 [-]: GETGLOBAL R13 K36      ; R13 := _T
-233 [-]: GETTABLE  R13 R13 K48  ; R13 := R13["DojoMgr"]
-234 [-]: GETTABLE  R13 R13 K49  ; R13 := R13["mCurrentlyFocusedDeco"]
-235 [-]: GETTABLE  R13 R13 K51  ; R13 := R13["Id"]
-236 [-]: EQ        1 R13 R1     ; if R13 == R1 then PC := 295
-237 [-]: JMP       295          ; PC := 295
-238 [-]: LOADK     R13 K38      ; R13 := ""
-239 [-]: LOADK     R14 K38      ; R14 := ""
-240 [-]: GETGLOBAL R15 K2       ; R15 := 0x400E7765
-241 [-]: GETGLOBAL R16 K36      ; R16 := _T
-242 [-]: GETTABLE  R16 R16 K48  ; R16 := R16["DojoMgr"]
-243 [-]: GETTABLE  R16 R16 K49  ; R16 := R16["mCurrentlyFocusedDeco"]
-244 [-]: GETTABLE  R16 R16 K50  ; R16 := R16["Deco"]
-245 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-246 [-]: TEST      R15 1        ; if R15 then PC := 255
-247 [-]: JMP       255          ; PC := 255
-248 [-]: GETGLOBAL R15 K36      ; R15 := _T
-249 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["DojoMgr"]
-250 [-]: GETTABLE  R15 R15 K49  ; R15 := R15["mCurrentlyFocusedDeco"]
-251 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["Deco"]
-252 [-]: SELF      R15 R15 K52  ; R16 := R15; R15 := R15["0x4CC9B24B"]
-253 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-254 [-]: MOVE      R13 R15      ; R13 := R15
-255 [-]: GETGLOBAL R15 K2       ; R15 := 0x400E7765
-256 [-]: MOVE      R16 R0       ; R16 := R0
-257 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-258 [-]: TEST      R15 1        ; if R15 then PC := 263
-259 [-]: JMP       263          ; PC := 263
-260 [-]: SELF      R15 R0 K52   ; R16 := R0; R15 := R0["0x4CC9B24B"]
-261 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-262 [-]: MOVE      R14 R15      ; R14 := R15
-263 [-]: GETGLOBAL R15 K36      ; R15 := _T
-264 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["DojoMgr"]
-265 [-]: GETTABLE  R15 R15 K49  ; R15 := R15["mCurrentlyFocusedDeco"]
-266 [-]: SETTABLE  R15 K50 R0   ; R15["Deco"] := R0
-267 [-]: GETGLOBAL R15 K36      ; R15 := _T
-268 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["DojoMgr"]
-269 [-]: GETTABLE  R15 R15 K49  ; R15 := R15["mCurrentlyFocusedDeco"]
-270 [-]: SETTABLE  R15 K51 R1   ; R15["Id"] := R1
-271 [-]: GETGLOBAL R15 K36      ; R15 := _T
-272 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["DojoMgr"]
-273 [-]: GETTABLE  R15 R15 K53  ; R15 := R15["mDecoFocusChangedCallback"]
-274 [-]: GETTABLE  R15 R15 R13  ; R15 := R15[R13]
-275 [-]: TEST      R15 0        ; if not R15 then PC := 283
-276 [-]: JMP       283          ; PC := 283
-277 [-]: GETGLOBAL R15 K36      ; R15 := _T
-278 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["DojoMgr"]
-279 [-]: GETTABLE  R15 R15 K53  ; R15 := R15["mDecoFocusChangedCallback"]
-280 [-]: GETTABLE  R15 R15 R13  ; R15 := R15[R13]
-281 [-]: MOVE      R16 R0       ; R16 := R0
-282 [-]: CALL      R15 2 1      ; R15(R16)
-283 [-]: GETGLOBAL R15 K36      ; R15 := _T
-284 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["DojoMgr"]
-285 [-]: GETTABLE  R15 R15 K53  ; R15 := R15["mDecoFocusChangedCallback"]
-286 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
-287 [-]: TEST      R15 0        ; if not R15 then PC := 295
-288 [-]: JMP       295          ; PC := 295
-289 [-]: GETGLOBAL R15 K36      ; R15 := _T
-290 [-]: GETTABLE  R15 R15 K48  ; R15 := R15["DojoMgr"]
-291 [-]: GETTABLE  R15 R15 K53  ; R15 := R15["mDecoFocusChangedCallback"]
-292 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
-293 [-]: MOVE      R16 R1       ; R16 := R1
-294 [-]: CALL      R15 2 1      ; R15(R16)
-295 [-]: RETURN    R0 1         ; return 
+213 [-]: SELF      R12 R12 K43  ; R13 := R12; R12 := R12["0x5EC7A3D2"]
+214 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+215 [-]: MOVE      R13 R0       ; R13 := R0
+216 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+217 [-]: MOVE      R10 R11      ; R10 := R11
+218 [-]: GETGLOBAL R11 K9       ; R11 := 0xE6DC43B0
+219 [-]: LOADK     R12 K45      ; R12 := "/Lotus/Language/Menu/ShipDecoPlacePrevious"
+220 [-]: NEWTABLE  R13 0 1      ; R13 := {}
+221 [-]: SETTABLE  R13 K46 R10  ; R13["DECO"] := R10
+222 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+223 [-]: MOVE      R12 R11      ; R12 := R11
+224 [-]: LOADK     R13 K12      ; R13 := "\r\n"
+225 [-]: MOVE      R14 R4       ; R14 := R4
+226 [-]: CONCAT    R4 R12 R14   ; R4 := R12 .. R13 .. R14
+227 [-]: GETGLOBAL R12 K0       ; R12 := gRegion
+228 [-]: SELF      R12 R12 K1   ; R13 := R12; R12 := R12["0x3E2F6BF"]
+229 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+230 [-]: SELF      R13 R12 K47  ; R14 := R12; R13 := R12["0xDE5882DD"]
+231 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+232 [-]: SELF      R13 R13 K48  ; R14 := R13; R13 := R13["0x9A631181"]
+233 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+234 [-]: SELF      R13 R13 K49  ; R14 := R13; R13 := R13["0xF2EF8AA7"]
+235 [-]: MOVE      R15 R4       ; R15 := R4
+236 [-]: CALL      R13 3 1      ; R13(R14,R15)
+237 [-]: GETGLOBAL R13 K2       ; R13 := 0x400E7765
+238 [-]: GETGLOBAL R14 K38      ; R14 := _T
+239 [-]: GETTABLE  R14 R14 K50  ; R14 := R14["DojoMgr"]
+240 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+241 [-]: TEST      R13 1        ; if R13 then PC := 312
+242 [-]: JMP       312          ; PC := 312
+243 [-]: GETGLOBAL R13 K38      ; R13 := _T
+244 [-]: GETTABLE  R13 R13 K50  ; R13 := R13["DojoMgr"]
+245 [-]: GETTABLE  R13 R13 K51  ; R13 := R13["mCurrentlyFocusedDeco"]
+246 [-]: GETTABLE  R13 R13 K52  ; R13 := R13["Deco"]
+247 [-]: EQ        0 R0 R13     ; if R0 ~= R13 then PC := 255
+248 [-]: JMP       255          ; PC := 255
+249 [-]: GETGLOBAL R13 K38      ; R13 := _T
+250 [-]: GETTABLE  R13 R13 K50  ; R13 := R13["DojoMgr"]
+251 [-]: GETTABLE  R13 R13 K51  ; R13 := R13["mCurrentlyFocusedDeco"]
+252 [-]: GETTABLE  R13 R13 K53  ; R13 := R13["Id"]
+253 [-]: EQ        1 R13 R1     ; if R13 == R1 then PC := 312
+254 [-]: JMP       312          ; PC := 312
+255 [-]: LOADK     R13 K40      ; R13 := ""
+256 [-]: LOADK     R14 K40      ; R14 := ""
+257 [-]: GETGLOBAL R15 K2       ; R15 := 0x400E7765
+258 [-]: GETGLOBAL R16 K38      ; R16 := _T
+259 [-]: GETTABLE  R16 R16 K50  ; R16 := R16["DojoMgr"]
+260 [-]: GETTABLE  R16 R16 K51  ; R16 := R16["mCurrentlyFocusedDeco"]
+261 [-]: GETTABLE  R16 R16 K52  ; R16 := R16["Deco"]
+262 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+263 [-]: TEST      R15 1        ; if R15 then PC := 272
+264 [-]: JMP       272          ; PC := 272
+265 [-]: GETGLOBAL R15 K38      ; R15 := _T
+266 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["DojoMgr"]
+267 [-]: GETTABLE  R15 R15 K51  ; R15 := R15["mCurrentlyFocusedDeco"]
+268 [-]: GETTABLE  R15 R15 K52  ; R15 := R15["Deco"]
+269 [-]: SELF      R15 R15 K54  ; R16 := R15; R15 := R15["0x4CC9B24B"]
+270 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+271 [-]: MOVE      R13 R15      ; R13 := R15
+272 [-]: GETGLOBAL R15 K2       ; R15 := 0x400E7765
+273 [-]: MOVE      R16 R0       ; R16 := R0
+274 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+275 [-]: TEST      R15 1        ; if R15 then PC := 280
+276 [-]: JMP       280          ; PC := 280
+277 [-]: SELF      R15 R0 K54   ; R16 := R0; R15 := R0["0x4CC9B24B"]
+278 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+279 [-]: MOVE      R14 R15      ; R14 := R15
+280 [-]: GETGLOBAL R15 K38      ; R15 := _T
+281 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["DojoMgr"]
+282 [-]: GETTABLE  R15 R15 K51  ; R15 := R15["mCurrentlyFocusedDeco"]
+283 [-]: SETTABLE  R15 K52 R0   ; R15["Deco"] := R0
+284 [-]: GETGLOBAL R15 K38      ; R15 := _T
+285 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["DojoMgr"]
+286 [-]: GETTABLE  R15 R15 K51  ; R15 := R15["mCurrentlyFocusedDeco"]
+287 [-]: SETTABLE  R15 K53 R1   ; R15["Id"] := R1
+288 [-]: GETGLOBAL R15 K38      ; R15 := _T
+289 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["DojoMgr"]
+290 [-]: GETTABLE  R15 R15 K55  ; R15 := R15["mDecoFocusChangedCallback"]
+291 [-]: GETTABLE  R15 R15 R13  ; R15 := R15[R13]
+292 [-]: TEST      R15 0        ; if not R15 then PC := 300
+293 [-]: JMP       300          ; PC := 300
+294 [-]: GETGLOBAL R15 K38      ; R15 := _T
+295 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["DojoMgr"]
+296 [-]: GETTABLE  R15 R15 K55  ; R15 := R15["mDecoFocusChangedCallback"]
+297 [-]: GETTABLE  R15 R15 R13  ; R15 := R15[R13]
+298 [-]: MOVE      R16 R0       ; R16 := R0
+299 [-]: CALL      R15 2 1      ; R15(R16)
+300 [-]: GETGLOBAL R15 K38      ; R15 := _T
+301 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["DojoMgr"]
+302 [-]: GETTABLE  R15 R15 K55  ; R15 := R15["mDecoFocusChangedCallback"]
+303 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
+304 [-]: TEST      R15 0        ; if not R15 then PC := 312
+305 [-]: JMP       312          ; PC := 312
+306 [-]: GETGLOBAL R15 K38      ; R15 := _T
+307 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["DojoMgr"]
+308 [-]: GETTABLE  R15 R15 K55  ; R15 := R15["mDecoFocusChangedCallback"]
+309 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
+310 [-]: MOVE      R16 R1       ; R16 := R1
+311 [-]: CALL      R15 2 1      ; R15(R16)
+312 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #63:
 ;
 ; Name:            
-; Defined at line: 2011
+; Defined at line: 2021
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6304,7 +6320,7 @@ code size: 42
 ; Function #64:
 ;
 ; Name:            
-; Defined at line: 2015
+; Defined at line: 2025
 ; #Upvalues:       1
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -6325,7 +6341,7 @@ code size: 42
 ; Function #65:
 ;
 ; Name:            
-; Defined at line: 2019
+; Defined at line: 2029
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -6429,7 +6445,7 @@ code size: 42
 ; Function #66:
 ;
 ; Name:            
-; Defined at line: 2055
+; Defined at line: 2065
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6600,7 +6616,7 @@ code size: 42
 ; Function #67:
 ;
 ; Name:            
-; Defined at line: 2103
+; Defined at line: 2113
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6648,5 +6664,30 @@ code size: 42
  40 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  41 [-]: FORLOOP   R1 11        ; R1 += R3; if R1 <= R2 then begin PC := 11; R4 := R1 end
  42 [-]: RETURN    R0 1         ; return 
+
+
+; Function #68:
+;
+; Name:            
+; Defined at line: 2128
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  5
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0x5F5B4130"]
+  3 [-]: CALL      R0 1 2       ; R0 := R0()
+  4 [-]: TEST      R0 0         ; if not R0 then PC := 14
+  5 [-]: JMP       14           ; PC := 14
+  6 [-]: GETGLOBAL R0 K1        ; R0 := gFlashMgr
+  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x616DD092"]
+  8 [-]: GETGLOBAL R2 K3        ; R2 := decoHudMovieType
+  9 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+ 10 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0["0x458F27A9"]
+ 11 [-]: LOADK     R3 K5        ; R3 := "ResetShipDecos"
+ 12 [-]: LOADK     R4 K6        ; R4 := ""
+ 13 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
+ 14 [-]: RETURN    R0 1         ; return 
 
 

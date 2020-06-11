@@ -286,7 +286,7 @@ code size: 15
  50 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["0xE6450C9D"]
  51 [-]: MOVE      R9 R0        ; R9 := R0
  52 [-]: NEWTABLE  R10 0 3      ; R10 := {}
- 53 [-]: SETTABLE  R10 K12 K16  ; R10["Label"] := "/Game/WEAPON_RELOAD"
+ 53 [-]: SETTABLE  R10 K12 K16  ; R10["Label"] := "/Lotus/Language/Labels/WEAPON_RELOAD"
  54 [-]: GETGLOBAL R11 K18      ; R11 := math
  55 [-]: GETTABLE  R11 R11 K19  ; R11 := R11["0xF7005A7B"]
  56 [-]: GETUPVAL  R12 U1       ; R12 := U1
@@ -328,7 +328,7 @@ code size: 15
  19 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  20 [-]: MOVE      R2 R0        ; R2 := R0
  21 [-]: NEWTABLE  R3 0 4       ; R3 := {}
- 22 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Game/AVATAR_ABILITY"
+ 22 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY"
  23 [-]: GETGLOBAL R4 K11       ; R4 := math
  24 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["0xF7005A7B"]
  25 [-]: GETUPVAL  R5 U1        ; R5 := U1

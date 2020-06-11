@@ -530,7 +530,7 @@ code size: 148
 439 [-]: SELF      R47 R24 K55  ; R48 := R24; R47 := R24["0xF21555A7"]
 440 [-]: GETGLOBAL R49 K99      ; R49 := Game
 441 [-]: GETTABLE  R49 R49 K100 ; R49 := R49["WEAPON_DAMAGE_AMOUNT"]
-442 [-]: GETGLOBAL R50 K99      ; R50 := Game
+442 [-]: GETGLOBAL R50 K32      ; R50 := Engine
 443 [-]: GETTABLE  R50 R50 K101 ; R50 := R50["MULTIPLY"]
 444 [-]: GETGLOBAL R51 K97      ; R51 := _T
 445 [-]: GETTABLE  R51 R51 K98  ; R51 := R51["garudaPassive"]
@@ -539,7 +539,7 @@ code size: 148
 448 [-]: SELF      R47 R24 K55  ; R48 := R24; R47 := R24["0xF21555A7"]
 449 [-]: GETGLOBAL R49 K99      ; R49 := Game
 450 [-]: GETTABLE  R49 R49 K102 ; R49 := R49["WEAPON_MELEE_DAMAGE"]
-451 [-]: GETGLOBAL R50 K99      ; R50 := Game
+451 [-]: GETGLOBAL R50 K32      ; R50 := Engine
 452 [-]: GETTABLE  R50 R50 K101 ; R50 := R50["MULTIPLY"]
 453 [-]: GETGLOBAL R51 K97      ; R51 := _T
 454 [-]: GETTABLE  R51 R51 K98  ; R51 := R51["garudaPassive"]
@@ -555,14 +555,14 @@ code size: 148
 464 [-]: SELF      R47 R24 K103 ; R48 := R24; R47 := R24["0x3B1B11B9"]
 465 [-]: GETGLOBAL R49 K99      ; R49 := Game
 466 [-]: GETTABLE  R49 R49 K100 ; R49 := R49["WEAPON_DAMAGE_AMOUNT"]
-467 [-]: GETGLOBAL R50 K99      ; R50 := Game
+467 [-]: GETGLOBAL R50 K32      ; R50 := Engine
 468 [-]: GETTABLE  R50 R50 K101 ; R50 := R50["MULTIPLY"]
 469 [-]: MOVE      R51 R46      ; R51 := R46
 470 [-]: CALL      R47 5 1      ; R47(R48,R49,R50,R51)
 471 [-]: SELF      R47 R24 K103 ; R48 := R24; R47 := R24["0x3B1B11B9"]
 472 [-]: GETGLOBAL R49 K99      ; R49 := Game
 473 [-]: GETTABLE  R49 R49 K102 ; R49 := R49["WEAPON_MELEE_DAMAGE"]
-474 [-]: GETGLOBAL R50 K99      ; R50 := Game
+474 [-]: GETGLOBAL R50 K32      ; R50 := Engine
 475 [-]: GETTABLE  R50 R50 K101 ; R50 := R50["MULTIPLY"]
 476 [-]: MOVE      R51 R46      ; R51 := R46
 477 [-]: CALL      R47 5 1      ; R47(R48,R49,R50,R51)
@@ -744,17 +744,17 @@ code size: 148
  64 [-]: SELF      R5 R4 K22    ; R6 := R4; R5 := R4["0xF21555A7"]
  65 [-]: GETGLOBAL R7 K23       ; R7 := Game
  66 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["WEAPON_DAMAGE_AMOUNT"]
- 67 [-]: GETGLOBAL R8 K23       ; R8 := Game
- 68 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["STACKING_MULTIPLY"]
+ 67 [-]: GETGLOBAL R8 K25       ; R8 := Engine
+ 68 [-]: GETTABLE  R8 R8 K26    ; R8 := R8["STACKING_MULTIPLY"]
  69 [-]: GETGLOBAL R9 K16       ; R9 := _T
  70 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["garudaPassive"]
  71 [-]: GETTABLE  R9 R9 R3     ; R9 := R9[R3]
  72 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  73 [-]: SELF      R5 R4 K22    ; R6 := R4; R5 := R4["0xF21555A7"]
  74 [-]: GETGLOBAL R7 K23       ; R7 := Game
- 75 [-]: GETTABLE  R7 R7 K26    ; R7 := R7["WEAPON_MELEE_DAMAGE"]
- 76 [-]: GETGLOBAL R8 K23       ; R8 := Game
- 77 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["STACKING_MULTIPLY"]
+ 75 [-]: GETTABLE  R7 R7 K27    ; R7 := R7["WEAPON_MELEE_DAMAGE"]
+ 76 [-]: GETGLOBAL R8 K25       ; R8 := Engine
+ 77 [-]: GETTABLE  R8 R8 K26    ; R8 := R8["STACKING_MULTIPLY"]
  78 [-]: GETGLOBAL R9 K16       ; R9 := _T
  79 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["garudaPassive"]
  80 [-]: GETTABLE  R9 R9 R3     ; R9 := R9[R3]
@@ -762,7 +762,7 @@ code size: 148
  82 [-]: GETGLOBAL R5 K16       ; R5 := _T
  83 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["garudaPassive"]
  84 [-]: SETTABLE  R5 R3 K18    ; R5[R3] := nil
- 85 [-]: GETGLOBAL R5 K27       ; R5 := 0xAA09E79D
+ 85 [-]: GETGLOBAL R5 K28       ; R5 := 0xAA09E79D
  86 [-]: GETGLOBAL R6 K16       ; R6 := _T
  87 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["garudaPassive"]
  88 [-]: CALL      R5 2 2       ; R5 := R5(R6)

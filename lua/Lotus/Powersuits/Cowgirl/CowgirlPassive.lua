@@ -414,7 +414,7 @@ code size: 148
 296 [-]: SELF      R25 R3 K59   ; R26 := R3; R25 := R3["0x3B1B11B9"]
 297 [-]: GETGLOBAL R27 K60      ; R27 := Game
 298 [-]: GETTABLE  R27 R27 K61  ; R27 := R27["WEAPON_FIRE_RATE"]
-299 [-]: GETGLOBAL R28 K60      ; R28 := Game
+299 [-]: GETGLOBAL R28 K52      ; R28 := Engine
 300 [-]: GETTABLE  R28 R28 K62  ; R28 := R28["STACKING_MULTIPLY"]
 301 [-]: MOVE      R29 R23      ; R29 := R23
 302 [-]: GETUPVAL  R30 U5       ; R30 := U5
@@ -428,7 +428,7 @@ code size: 148
 310 [-]: SELF      R25 R3 K59   ; R26 := R3; R25 := R3["0x3B1B11B9"]
 311 [-]: GETGLOBAL R27 K60      ; R27 := Game
 312 [-]: GETTABLE  R27 R27 K64  ; R27 := R27["WEAPON_RELOAD_SPEED"]
-313 [-]: GETGLOBAL R28 K60      ; R28 := Game
+313 [-]: GETGLOBAL R28 K52      ; R28 := Engine
 314 [-]: GETTABLE  R28 R28 K62  ; R28 := R28["STACKING_MULTIPLY"]
 315 [-]: MOVE      R29 R22      ; R29 := R22
 316 [-]: GETGLOBAL R30 K63      ; R30 := gLotusPistolType
@@ -443,7 +443,7 @@ code size: 148
 325 [-]: SELF      R26 R3 K59   ; R27 := R3; R26 := R3["0x3B1B11B9"]
 326 [-]: GETGLOBAL R28 K60      ; R28 := Game
 327 [-]: GETTABLE  R28 R28 K66  ; R28 := R28["AVATAR_HEALTH_MAX"]
-328 [-]: GETGLOBAL R29 K60      ; R29 := Game
+328 [-]: GETGLOBAL R29 K52      ; R29 := Engine
 329 [-]: GETTABLE  R29 R29 K67  ; R29 := R29["ADD"]
 330 [-]: MOVE      R30 R24      ; R30 := R24
 331 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
@@ -585,7 +585,7 @@ code size: 148
 104 [-]: SELF      R12 R4 K27   ; R13 := R4; R12 := R4["0xF21555A7"]
 105 [-]: GETGLOBAL R14 K28      ; R14 := Game
 106 [-]: GETTABLE  R14 R14 K29  ; R14 := R14["WEAPON_FIRE_RATE"]
-107 [-]: GETGLOBAL R15 K28      ; R15 := Game
+107 [-]: GETGLOBAL R15 K14      ; R15 := Engine
 108 [-]: GETTABLE  R15 R15 K30  ; R15 := R15["STACKING_MULTIPLY"]
 109 [-]: MOVE      R16 R10      ; R16 := R10
 110 [-]: GETUPVAL  R17 U3       ; R17 := U3
@@ -599,7 +599,7 @@ code size: 148
 118 [-]: SELF      R12 R4 K27   ; R13 := R4; R12 := R4["0xF21555A7"]
 119 [-]: GETGLOBAL R14 K28      ; R14 := Game
 120 [-]: GETTABLE  R14 R14 K32  ; R14 := R14["WEAPON_RELOAD_SPEED"]
-121 [-]: GETGLOBAL R15 K28      ; R15 := Game
+121 [-]: GETGLOBAL R15 K14      ; R15 := Engine
 122 [-]: GETTABLE  R15 R15 K30  ; R15 := R15["STACKING_MULTIPLY"]
 123 [-]: MOVE      R16 R9       ; R16 := R9
 124 [-]: GETGLOBAL R17 K31      ; R17 := gLotusPistolType
@@ -612,7 +612,7 @@ code size: 148
 131 [-]: SELF      R12 R4 K27   ; R13 := R4; R12 := R4["0xF21555A7"]
 132 [-]: GETGLOBAL R14 K28      ; R14 := Game
 133 [-]: GETTABLE  R14 R14 K33  ; R14 := R14["AVATAR_HEALTH_MAX"]
-134 [-]: GETGLOBAL R15 K28      ; R15 := Game
+134 [-]: GETGLOBAL R15 K14      ; R15 := Engine
 135 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["ADD"]
 136 [-]: MOVE      R16 R11      ; R16 := R11
 137 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)

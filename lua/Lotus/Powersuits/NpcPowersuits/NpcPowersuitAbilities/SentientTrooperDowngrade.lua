@@ -40,9 +40,9 @@ code size: 20
  13 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  14 [-]: GETGLOBAL R6 K6        ; R6 := Game
  15 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["WEAPON_DAMAGE_AMOUNT"]
- 16 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 17 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["MULTIPLY"]
- 18 [-]: GETGLOBAL R8 K9        ; R8 := damageReduction
+ 16 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+ 17 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["MULTIPLY"]
+ 18 [-]: GETGLOBAL R8 K10       ; R8 := damageReduction
  19 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  20 [-]: RETURN    R0 1         ; return 
 

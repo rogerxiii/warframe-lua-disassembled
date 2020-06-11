@@ -1,5 +1,6 @@
-code size: 48
+code size: 51
 code size: 23
+code size: 27
 code size: 3
 code size: 72
 code size: 23
@@ -29,49 +30,52 @@ code size: 71
   3 [-]: SETGLOBAL R1 K0        ; AttachWeaponToHand := R1
   4 [-]: SETGLOBAL R1 K1        ; 0xCA9C14A0 := R1
   5 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  6 [-]: SETGLOBAL R1 K2        ; RestoreWeaponToDefaultHand := R1
-  7 [-]: SETGLOBAL R1 K3        ; 0xC71B97F6 := R1
+  6 [-]: SETGLOBAL R1 K2        ; AttachWeaponToHandIfReloading := R1
+  7 [-]: SETGLOBAL R1 K3        ; 0x401D3A64 := R1
   8 [-]: CLOSURE   R1 2         ; R1 := closure(Function #3)
-  9 [-]: SETGLOBAL R1 K4        ; ReloadDropClips := R1
- 10 [-]: SETGLOBAL R1 K5        ; 0xE513784B := R1
+  9 [-]: SETGLOBAL R1 K4        ; RestoreWeaponToDefaultHand := R1
+ 10 [-]: SETGLOBAL R1 K5        ; 0xC71B97F6 := R1
  11 [-]: CLOSURE   R1 3         ; R1 := closure(Function #4)
- 12 [-]: SETGLOBAL R1 K6        ; DestroyClipInHand := R1
- 13 [-]: SETGLOBAL R1 K7        ; 0x60E7903A := R1
+ 12 [-]: SETGLOBAL R1 K6        ; ReloadDropClips := R1
+ 13 [-]: SETGLOBAL R1 K7        ; 0xE513784B := R1
  14 [-]: CLOSURE   R1 4         ; R1 := closure(Function #5)
- 15 [-]: SETGLOBAL R1 K8        ; AttachClipToHand := R1
- 16 [-]: SETGLOBAL R1 K9        ; 0xECB3530D := R1
+ 15 [-]: SETGLOBAL R1 K8        ; DestroyClipInHand := R1
+ 16 [-]: SETGLOBAL R1 K9        ; 0x60E7903A := R1
  17 [-]: CLOSURE   R1 5         ; R1 := closure(Function #6)
- 18 [-]: SETGLOBAL R1 K10       ; AttachClipToWeapon := R1
- 19 [-]: SETGLOBAL R1 K11       ; 0xFF2C2A07 := R1
+ 18 [-]: SETGLOBAL R1 K10       ; AttachClipToHand := R1
+ 19 [-]: SETGLOBAL R1 K11       ; 0xECB3530D := R1
  20 [-]: CLOSURE   R1 6         ; R1 := closure(Function #7)
- 21 [-]: SETGLOBAL R1 K12       ; MakeClipsVisible := R1
- 22 [-]: SETGLOBAL R1 K13       ; 0x9E103B81 := R1
+ 21 [-]: SETGLOBAL R1 K12       ; AttachClipToWeapon := R1
+ 22 [-]: SETGLOBAL R1 K13       ; 0xFF2C2A07 := R1
  23 [-]: CLOSURE   R1 7         ; R1 := closure(Function #8)
- 24 [-]: SETGLOBAL R1 K14       ; HideAnimatedClipAndDropMesh := R1
- 25 [-]: SETGLOBAL R1 K15       ; 0xD8511895 := R1
+ 24 [-]: SETGLOBAL R1 K14       ; MakeClipsVisible := R1
+ 25 [-]: SETGLOBAL R1 K15       ; 0x9E103B81 := R1
  26 [-]: CLOSURE   R1 8         ; R1 := closure(Function #9)
- 27 [-]: SETGLOBAL R1 K16       ; ShowAnimatedClip := R1
- 28 [-]: SETGLOBAL R1 K17       ; 0x7135A4F6 := R1
+ 27 [-]: SETGLOBAL R1 K16       ; HideAnimatedClipAndDropMesh := R1
+ 28 [-]: SETGLOBAL R1 K17       ; 0xD8511895 := R1
  29 [-]: CLOSURE   R1 9         ; R1 := closure(Function #10)
- 30 [-]: MOVE      R0 R0        ; R0 := R0
- 31 [-]: SETGLOBAL R1 K18       ; SpinBasedOnFireRate := R1
- 32 [-]: SETGLOBAL R1 K19       ; 0x854555D7 := R1
- 33 [-]: CLOSURE   R1 10        ; R1 := closure(Function #11)
- 34 [-]: SETGLOBAL R1 K20       ; WeaponFire := R1
- 35 [-]: SETGLOBAL R1 K21       ; 0x4897EAED := R1
+ 30 [-]: SETGLOBAL R1 K18       ; ShowAnimatedClip := R1
+ 31 [-]: SETGLOBAL R1 K19       ; 0x7135A4F6 := R1
+ 32 [-]: CLOSURE   R1 10        ; R1 := closure(Function #11)
+ 33 [-]: MOVE      R0 R0        ; R0 := R0
+ 34 [-]: SETGLOBAL R1 K20       ; SpinBasedOnFireRate := R1
+ 35 [-]: SETGLOBAL R1 K21       ; 0x854555D7 := R1
  36 [-]: CLOSURE   R1 11        ; R1 := closure(Function #12)
- 37 [-]: SETGLOBAL R1 K22       ; UpdateAltFireSpin := R1
- 38 [-]: SETGLOBAL R1 K23       ; 0x832AAAB8 := R1
+ 37 [-]: SETGLOBAL R1 K22       ; WeaponFire := R1
+ 38 [-]: SETGLOBAL R1 K23       ; 0x4897EAED := R1
  39 [-]: CLOSURE   R1 12        ; R1 := closure(Function #13)
- 40 [-]: CLOSURE   R2 13        ; R2 := closure(Function #14)
- 41 [-]: MOVE      R0 R1        ; R0 := R1
- 42 [-]: SETGLOBAL R2 K24       ; DynamicClipApplyCustomization := R2
- 43 [-]: SETGLOBAL R2 K25       ; 0xB8A0AC0A := R2
- 44 [-]: CLOSURE   R2 14        ; R2 := closure(Function #15)
- 45 [-]: MOVE      R0 R1        ; R0 := R1
- 46 [-]: SETGLOBAL R2 K26       ; LoadedClipApplyCustomization := R2
- 47 [-]: SETGLOBAL R2 K27       ; 0x1B5A4E88 := R2
- 48 [-]: RETURN    R0 1         ; return 
+ 40 [-]: SETGLOBAL R1 K24       ; UpdateAltFireSpin := R1
+ 41 [-]: SETGLOBAL R1 K25       ; 0x832AAAB8 := R1
+ 42 [-]: CLOSURE   R1 13        ; R1 := closure(Function #14)
+ 43 [-]: CLOSURE   R2 14        ; R2 := closure(Function #15)
+ 44 [-]: MOVE      R0 R1        ; R0 := R1
+ 45 [-]: SETGLOBAL R2 K26       ; DynamicClipApplyCustomization := R2
+ 46 [-]: SETGLOBAL R2 K27       ; 0xB8A0AC0A := R2
+ 47 [-]: CLOSURE   R2 15        ; R2 := closure(Function #16)
+ 48 [-]: MOVE      R0 R1        ; R0 := R1
+ 49 [-]: SETGLOBAL R2 K28       ; LoadedClipApplyCustomization := R2
+ 50 [-]: SETGLOBAL R2 K29       ; 0x1B5A4E88 := R2
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -115,6 +119,44 @@ code size: 71
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
+; Max Stack Size:  7
+
+  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x19240B28"]
+  2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
+  4 [-]: MOVE      R3 R1        ; R3 := R1
+  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  6 [-]: TEST      R2 1         ; if R2 then PC := 27
+  7 [-]: JMP       27           ; PC := 27
+  8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0xE7F4815D"]
+  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 10 [-]: TEST      R2 0         ; if not R2 then PC := 27
+ 11 [-]: JMP       27           ; PC := 27
+ 12 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0xA4499253"]
+ 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 14 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 15 [-]: MOVE      R4 R2        ; R4 := R2
+ 16 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 17 [-]: TEST      R3 1         ; if R3 then PC := 27
+ 18 [-]: JMP       27           ; PC := 27
+ 19 [-]: SELF      R3 R0 K4     ; R4 := R0; R3 := R0["0xA78B7FA7"]
+ 20 [-]: GETGLOBAL R5 K5        ; R5 := offsetPos
+ 21 [-]: GETGLOBAL R6 K6        ; R6 := defaultRotation
+ 22 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 23 [-]: SELF      R3 R0 K7     ; R4 := R0; R3 := R0["0x3C3C97CD"]
+ 24 [-]: MOVE      R5 R2        ; R5 := R2
+ 25 [-]: GETGLOBAL R6 K8        ; R6 := clipBone
+ 26 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 27 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3:
+;
+; Name:            
+; Defined at line: 53
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
 ; Max Stack Size:  3
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x12ED0E41"]
@@ -122,10 +164,10 @@ code size: 71
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 46
+; Defined at line: 57
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -205,10 +247,10 @@ code size: 71
  72 [-]: RETURN    R0 1         ; return 
 
 
-; Function #4:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 79
+; Defined at line: 90
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -239,10 +281,10 @@ code size: 71
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 90
+; Defined at line: 101
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -294,10 +336,10 @@ code size: 71
  44 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 108
+; Defined at line: 119
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -341,10 +383,10 @@ code size: 71
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 135
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -390,10 +432,10 @@ code size: 71
  38 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 136
+; Defined at line: 147
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -493,10 +535,10 @@ code size: 71
  92 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 177
+; Defined at line: 188
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -578,10 +620,10 @@ code size: 71
  74 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 205
+; Defined at line: 216
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -742,10 +784,10 @@ code size: 71
 153 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 275
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -834,10 +876,10 @@ code size: 71
  81 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 287
+; Defined at line: 298
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1224,10 +1266,10 @@ code size: 71
 379 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 397
+; Defined at line: 408
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1262,10 +1304,10 @@ code size: 71
  27 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 412
+; Defined at line: 423
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1391,10 +1433,10 @@ code size: 71
 118 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #16:
 ;
 ; Name:            
-; Defined at line: 461
+; Defined at line: 472
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

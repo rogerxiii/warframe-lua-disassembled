@@ -200,33 +200,33 @@ code size: 5
  50 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6["0x3B1B11B9"]
  51 [-]: GETGLOBAL R10 K12      ; R10 := Game
  52 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["WEAPON_AMMO_MAX"]
- 53 [-]: GETGLOBAL R11 K12      ; R11 := Game
- 54 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["MULTIPLY"]
+ 53 [-]: GETGLOBAL R11 K14      ; R11 := Engine
+ 54 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["MULTIPLY"]
  55 [-]: GETUPVAL  R12 U0       ; R12 := U0
  56 [-]: MOVE      R13 R2       ; R13 := R2
  57 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  58 [-]: CALL      R8 0 1       ; R8(R9,...)
  59 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6["0x3B1B11B9"]
  60 [-]: GETGLOBAL R10 K12      ; R10 := Game
- 61 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["WEAPON_CONVERT_AMMO"]
- 62 [-]: GETGLOBAL R11 K12      ; R11 := Game
- 63 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["ADD"]
+ 61 [-]: GETTABLE  R10 R10 K16  ; R10 := R10["WEAPON_CONVERT_AMMO"]
+ 62 [-]: GETGLOBAL R11 K14      ; R11 := Engine
+ 63 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["ADD"]
  64 [-]: GETUPVAL  R12 U1       ; R12 := U1
  65 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  66 [-]: SELF      R8 R6 K11    ; R9 := R6; R8 := R6["0x3B1B11B9"]
  67 [-]: GETGLOBAL R10 K12      ; R10 := Game
- 68 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["WEAPON_CONVERT_AMMO_DELAY"]
- 69 [-]: GETGLOBAL R11 K12      ; R11 := Game
- 70 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["SET"]
+ 68 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["WEAPON_CONVERT_AMMO_DELAY"]
+ 69 [-]: GETGLOBAL R11 K14      ; R11 := Engine
+ 70 [-]: GETTABLE  R11 R11 K19  ; R11 := R11["SET"]
  71 [-]: GETUPVAL  R12 U2       ; R12 := U2
  72 [-]: MOVE      R13 R2       ; R13 := R2
  73 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  74 [-]: CALL      R8 0 1       ; R8(R9,...)
- 75 [-]: SELF      R8 R0 K19    ; R9 := R0; R8 := R0["0x4E4DB8B7"]
- 76 [-]: LOADK     R10 K20      ; R10 := "OnDamaged"
+ 75 [-]: SELF      R8 R0 K20    ; R9 := R0; R8 := R0["0x4E4DB8B7"]
+ 76 [-]: LOADK     R10 K21      ; R10 := "OnDamaged"
  77 [-]: CALL      R8 3 1       ; R8(R9,R10)
  78 [-]: GETGLOBAL R8 K4        ; R8 := 0x93B1256B
- 79 [-]: LOADK     R9 K21       ; R9 := "AmmoBuff.lua: ApplyUpgrades - Applied."
+ 79 [-]: LOADK     R9 K22       ; R9 := "AmmoBuff.lua: ApplyUpgrades - Applied."
  80 [-]: CALL      R8 2 1       ; R8(R9)
  81 [-]: RETURN    R0 1         ; return 
 
@@ -271,30 +271,30 @@ code size: 5
  29 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0xF21555A7"]
  30 [-]: GETGLOBAL R6 K9        ; R6 := Game
  31 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["WEAPON_AMMO_MAX"]
- 32 [-]: GETGLOBAL R7 K9        ; R7 := Game
- 33 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["MULTIPLY"]
+ 32 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+ 33 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["MULTIPLY"]
  34 [-]: GETUPVAL  R8 U0        ; R8 := U0
  35 [-]: MOVE      R9 R1        ; R9 := R1
  36 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  37 [-]: CALL      R4 0 1       ; R4(R5,...)
  38 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0xF21555A7"]
  39 [-]: GETGLOBAL R6 K9        ; R6 := Game
- 40 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["WEAPON_CONVERT_AMMO"]
- 41 [-]: GETGLOBAL R7 K9        ; R7 := Game
- 42 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["ADD"]
+ 40 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["WEAPON_CONVERT_AMMO"]
+ 41 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+ 42 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["ADD"]
  43 [-]: GETUPVAL  R8 U1        ; R8 := U1
  44 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  45 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0xF21555A7"]
  46 [-]: GETGLOBAL R6 K9        ; R6 := Game
- 47 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["WEAPON_CONVERT_AMMO_DELAY"]
- 48 [-]: GETGLOBAL R7 K9        ; R7 := Game
- 49 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["SET"]
+ 47 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["WEAPON_CONVERT_AMMO_DELAY"]
+ 48 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+ 49 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["SET"]
  50 [-]: GETUPVAL  R8 U2        ; R8 := U2
  51 [-]: MOVE      R9 R1        ; R9 := R1
  52 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
  53 [-]: CALL      R4 0 1       ; R4(R5,...)
  54 [-]: GETGLOBAL R4 K4        ; R4 := 0x93B1256B
- 55 [-]: LOADK     R5 K16       ; R5 := "AmmoBuff.lua: UnapplyUpgrades - Unapplied."
+ 55 [-]: LOADK     R5 K17       ; R5 := "AmmoBuff.lua: UnapplyUpgrades - Unapplied."
  56 [-]: CALL      R4 2 1       ; R4(R5)
  57 [-]: RETURN    R0 1         ; return 
 

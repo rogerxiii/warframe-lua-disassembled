@@ -1,4 +1,4 @@
-code size: 147
+code size: 253
 code size: 36
 code size: 22
 code size: 12
@@ -13,13 +13,14 @@ code size: 27
 code size: 24
 code size: 6
 code size: 115
-code size: 101
+code size: 106
 code size: 35
 code size: 55
 code size: 16
 code size: 18
 code size: 49
 code size: 123
+code size: 51
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\LoadoutUtilities.luac 
 
@@ -28,7 +29,7 @@ code size: 123
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  16
+; Max Stack Size:  18
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x38E3A30F
   2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
@@ -81,108 +82,214 @@ code size: 123
  49 [-]: LOADK     R6 K20       ; R6 := "/Lotus/Types/Items/MiscItems/FormaStance"
  50 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  51 [-]: SETTABLE  R3 R4 R5     ; R3[R4] := R5
- 52 [-]: GETGLOBAL R4 K9        ; R4 := 0x2C00D429
- 53 [-]: LOADK     R5 K21       ; R5 := "/Lotus/Types/Game/PowerSuits/PlayerPowerSuit"
- 54 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 55 [-]: GETGLOBAL R5 K9        ; R5 := 0x2C00D429
- 56 [-]: LOADK     R6 K22       ; R6 := "/Lotus/Weapons/Tenno/LotusLongGun"
- 57 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 58 [-]: GETGLOBAL R6 K9        ; R6 := 0x2C00D429
- 59 [-]: LOADK     R7 K23       ; R7 := "/Lotus/Weapons/Tenno/Pistol/LotusPistol"
- 60 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 61 [-]: GETGLOBAL R7 K9        ; R7 := 0x2C00D429
- 62 [-]: LOADK     R8 K24       ; R8 := "/Lotus/Types/Game/KubrowPet/KubrowPetPowerSuit"
- 63 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 64 [-]: GETGLOBAL R8 K9        ; R8 := 0x2C00D429
- 65 [-]: LOADK     R9 K25       ; R9 := "/Lotus/Types/Game/CatbrowPet/CatbrowPetPowerSuit"
- 66 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 67 [-]: NEWTABLE  R9 0 5       ; R9 := {}
- 68 [-]: SETTABLE  R9 K27 K28   ; R9["NORMAL"] := 8
- 69 [-]: SETTABLE  R9 K29 K30   ; R9["STANCE_INDEX"] := 9
- 70 [-]: SETTABLE  R9 K31 K30   ; R9["AURA_INDEX"] := 9
- 71 [-]: SETTABLE  R9 K32 K33   ; R9["UTILITY_INDEX"] := 10
- 72 [-]: SETTABLE  R9 K34 K35   ; R9["IMMORTAL_INDEX"] := 4
- 73 [-]: SETGLOBAL R9 K26       ; MOD_SLOTS := R9
- 74 [-]: NEWTABLE  R9 6 0       ; R9 := {}
- 75 [-]: LOADK     R10 K37      ; R10 := "A"
- 76 [-]: LOADK     R11 K38      ; R11 := "B"
- 77 [-]: LOADK     R12 K39      ; R12 := "C"
- 78 [-]: LOADK     R13 K40      ; R13 := "D"
- 79 [-]: LOADK     R14 K41      ; R14 := "E"
- 80 [-]: LOADK     R15 K42      ; R15 := "F"
- 81 [-]: SETLIST   R9 6 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 6
- 82 [-]: SETGLOBAL R9 K36       ; CONFIG_TYPES := R9
- 83 [-]: CLOSURE   R9 0         ; R9 := closure(Function #1)
- 84 [-]: SETGLOBAL R9 K43       ; GetSwapOperation := R9
- 85 [-]: SETGLOBAL R9 K44       ; 0xBE56ACC := R9
- 86 [-]: CLOSURE   R9 1         ; R9 := closure(Function #2)
- 87 [-]: CLOSURE   R10 2        ; R10 := closure(Function #3)
- 88 [-]: MOVE      R0 R3        ; R0 := R3
- 89 [-]: SETGLOBAL R10 K45      ; GetPolarizeOperationType := R10
- 90 [-]: SETGLOBAL R10 K46      ; 0xB29A6E33 := R10
- 91 [-]: CLOSURE   R10 3        ; R10 := closure(Function #4)
- 92 [-]: MOVE      R0 R9        ; R0 := R9
- 93 [-]: SETGLOBAL R10 K47      ; GetFeatureOperation := R10
- 94 [-]: SETGLOBAL R10 K48      ; 0x5F37CE9F := R10
- 95 [-]: CLOSURE   R10 4        ; R10 := closure(Function #5)
- 96 [-]: MOVE      R0 R0        ; R0 := R0
- 97 [-]: SETGLOBAL R10 K49      ; UnlockFeature := R10
- 98 [-]: SETGLOBAL R10 K50      ; 0xAA6DD5AE := R10
- 99 [-]: CLOSURE   R10 5        ; R10 := closure(Function #6)
-100 [-]: SETGLOBAL R10 K51      ; UnlockFeatureUpsell := R10
-101 [-]: SETGLOBAL R10 K52      ; 0x7498D7B := R10
-102 [-]: CLOSURE   R10 6        ; R10 := closure(Function #7)
-103 [-]: MOVE      R0 R3        ; R0 := R3
-104 [-]: SETGLOBAL R10 K53      ; GetPolarizeOperation := R10
-105 [-]: SETGLOBAL R10 K54      ; 0xF76FF1CB := R10
-106 [-]: CLOSURE   R10 7        ; R10 := closure(Function #8)
-107 [-]: SETGLOBAL R10 K55      ; GetPassiveDescription := R10
-108 [-]: SETGLOBAL R10 K56      ; 0x690010ED := R10
-109 [-]: CLOSURE   R10 8        ; R10 := closure(Function #9)
-110 [-]: SETGLOBAL R10 K57      ; GetApertureLocalizedName := R10
-111 [-]: SETGLOBAL R10 K58      ; 0x6D926939 := R10
-112 [-]: CLOSURE   R10 9        ; R10 := closure(Function #10)
-113 [-]: MOVE      R0 R4        ; R0 := R4
-114 [-]: MOVE      R0 R5        ; R0 := R5
-115 [-]: MOVE      R0 R6        ; R0 := R6
-116 [-]: SETGLOBAL R10 K59      ; IsUtilitySlot := R10
-117 [-]: SETGLOBAL R10 K60      ; 0xEC4D1B6F := R10
-118 [-]: CLOSURE   R10 10       ; R10 := closure(Function #11)
-119 [-]: CLOSURE   R11 11       ; R11 := closure(Function #12)
-120 [-]: MOVE      R0 R10       ; R0 := R10
-121 [-]: SETGLOBAL R11 K61      ; IsSpecialMeleeItem := R11
-122 [-]: SETGLOBAL R11 K62      ; 0xF49B500F := R11
-123 [-]: CLOSURE   R11 12       ; R11 := closure(Function #13)
-124 [-]: MOVE      R0 R2        ; R0 := R2
-125 [-]: SETGLOBAL R11 K63      ; GetConfigList := R11
-126 [-]: SETGLOBAL R11 K64      ; 0x46521186 := R11
-127 [-]: CLOSURE   R11 13       ; R11 := closure(Function #14)
-128 [-]: SETGLOBAL R11 K65      ; GetInfosForLinking := R11
-129 [-]: SETGLOBAL R11 K66      ; 0x34D6199 := R11
-130 [-]: CLOSURE   R11 14       ; R11 := closure(Function #15)
-131 [-]: MOVE      R0 R10       ; R0 := R10
-132 [-]: SETGLOBAL R11 K67      ; GetCalculateXForInstallGrid := R11
-133 [-]: SETGLOBAL R11 K68      ; 0x14F2E21D := R11
-134 [-]: CLOSURE   R11 15       ; R11 := closure(Function #16)
-135 [-]: SETGLOBAL R11 K69      ; GetCalculateYForInstallGrid := R11
-136 [-]: SETGLOBAL R11 K70      ; 0xBE2B3302 := R11
-137 [-]: CLOSURE   R11 16       ; R11 := closure(Function #17)
-138 [-]: MOVE      R0 R7        ; R0 := R7
-139 [-]: MOVE      R0 R8        ; R0 := R8
-140 [-]: SETGLOBAL R11 K71      ; GetRowColumnForInstallGrid := R11
-141 [-]: SETGLOBAL R11 K72      ; 0xB19223CD := R11
-142 [-]: CLOSURE   R11 17       ; R11 := closure(Function #18)
-143 [-]: MOVE      R0 R2        ; R0 := R2
-144 [-]: MOVE      R0 R1        ; R0 := R1
-145 [-]: SETGLOBAL R11 K73      ; GetDataKnifeCombination := R11
-146 [-]: SETGLOBAL R11 K74      ; 0xF899B991 := R11
-147 [-]: RETURN    R0 1         ; return 
+ 52 [-]: NEWTABLE  R4 1 0       ; R4 := {}
+ 53 [-]: GETGLOBAL R5 K21       ; R5 := 0x7C282057
+ 54 [-]: LOADK     R6 K22       ; R6 := "/Lotus/Interface/Icons/GeneticLab/GenderFemale.png"
+ 55 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 56 [-]: GETGLOBAL R6 K21       ; R6 := 0x7C282057
+ 57 [-]: LOADK     R7 K23       ; R7 := "/Lotus/Interface/Icons/GeneticLab/GenderMale.png"
+ 58 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
+ 59 [-]: SETLIST   R4 0 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 0
+ 60 [-]: NEWTABLE  R5 9 0       ; R5 := {}
+ 61 [-]: NEWTABLE  R6 0 3       ; R6 := {}
+ 62 [-]: GETGLOBAL R7 K9        ; R7 := 0x2C00D429
+ 63 [-]: LOADK     R8 K25       ; R8 := "/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit"
+ 64 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 65 [-]: SETTABLE  R6 K24 R7    ; R6["Type"] := R7
+ 66 [-]: SETTABLE  R6 K26 K27   ; R6["Name"] := "/Lotus/Language/Items/AdventurerKubrowName"
+ 67 [-]: GETGLOBAL R7 K21       ; R7 := 0x7C282057
+ 68 [-]: LOADK     R8 K29       ; R8 := "/Lotus/Interface/Icons/GeneticLab/TemperamentAdventurer.png"
+ 69 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 70 [-]: SETTABLE  R6 K28 R7    ; R6["Icon"] := R7
+ 71 [-]: NEWTABLE  R7 0 3       ; R7 := {}
+ 72 [-]: GETGLOBAL R8 K9        ; R8 := 0x2C00D429
+ 73 [-]: LOADK     R9 K30       ; R9 := "/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit"
+ 74 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 75 [-]: SETTABLE  R7 K24 R8    ; R7["Type"] := R8
+ 76 [-]: SETTABLE  R7 K26 K31   ; R7["Name"] := "/Lotus/Language/Items/FurtiveKubrowName"
+ 77 [-]: GETGLOBAL R8 K21       ; R8 := 0x7C282057
+ 78 [-]: LOADK     R9 K32       ; R9 := "/Lotus/Interface/Icons/GeneticLab/TemperamentStealth.png"
+ 79 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 80 [-]: SETTABLE  R7 K28 R8    ; R7["Icon"] := R8
+ 81 [-]: NEWTABLE  R8 0 3       ; R8 := {}
+ 82 [-]: GETGLOBAL R9 K9        ; R9 := 0x2C00D429
+ 83 [-]: LOADK     R10 K33      ; R10 := "/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit"
+ 84 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 85 [-]: SETTABLE  R8 K24 R9    ; R8["Type"] := R9
+ 86 [-]: SETTABLE  R8 K26 K34   ; R8["Name"] := "/Lotus/Language/Items/GuardKubrowName"
+ 87 [-]: GETGLOBAL R9 K21       ; R9 := 0x7C282057
+ 88 [-]: LOADK     R10 K35      ; R10 := "/Lotus/Interface/Icons/GeneticLab/TemperamentGuard.png"
+ 89 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 90 [-]: SETTABLE  R8 K28 R9    ; R8["Icon"] := R9
+ 91 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+ 92 [-]: GETGLOBAL R10 K9       ; R10 := 0x2C00D429
+ 93 [-]: LOADK     R11 K36      ; R11 := "/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit"
+ 94 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 95 [-]: SETTABLE  R9 K24 R10   ; R9["Type"] := R10
+ 96 [-]: SETTABLE  R9 K26 K37   ; R9["Name"] := "/Lotus/Language/Items/HunterKubrowName"
+ 97 [-]: GETGLOBAL R10 K21      ; R10 := 0x7C282057
+ 98 [-]: LOADK     R11 K38      ; R11 := "/Lotus/Interface/Icons/GeneticLab/TemperamentHunter.png"
+ 99 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+100 [-]: SETTABLE  R9 K28 R10   ; R9["Icon"] := R10
+101 [-]: NEWTABLE  R10 0 3      ; R10 := {}
+102 [-]: GETGLOBAL R11 K9       ; R11 := 0x2C00D429
+103 [-]: LOADK     R12 K39      ; R12 := "/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit"
+104 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+105 [-]: SETTABLE  R10 K24 R11  ; R10["Type"] := R11
+106 [-]: SETTABLE  R10 K26 K40  ; R10["Name"] := "/Lotus/Language/Items/RetrieverKubrowName"
+107 [-]: GETGLOBAL R11 K21      ; R11 := 0x7C282057
+108 [-]: LOADK     R12 K41      ; R12 := "/Lotus/Interface/Icons/GeneticLab/TemperamentRetriever.png"
+109 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+110 [-]: SETTABLE  R10 K28 R11  ; R10["Icon"] := R11
+111 [-]: NEWTABLE  R11 0 3      ; R11 := {}
+112 [-]: GETGLOBAL R12 K9       ; R12 := 0x2C00D429
+113 [-]: LOADK     R13 K42      ; R13 := "/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit"
+114 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+115 [-]: SETTABLE  R11 K24 R12  ; R11["Type"] := R12
+116 [-]: SETTABLE  R11 K26 K43  ; R11["Name"] := "/Lotus/Language/Items/InfestedKubrowName"
+117 [-]: GETGLOBAL R12 K21      ; R12 := 0x7C282057
+118 [-]: LOADK     R13 K44      ; R13 := "/Lotus/Interface/Icons/InfestedLogo.png"
+119 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+120 [-]: SETTABLE  R11 K28 R12  ; R11["Icon"] := R12
+121 [-]: NEWTABLE  R12 0 3      ; R12 := {}
+122 [-]: GETGLOBAL R13 K9       ; R13 := 0x2C00D429
+123 [-]: LOADK     R14 K45      ; R14 := "/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit"
+124 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+125 [-]: SETTABLE  R12 K24 R13  ; R12["Type"] := R13
+126 [-]: SETTABLE  R12 K26 K46  ; R12["Name"] := "/Lotus/Language/Items/MirrorCatbrowName"
+127 [-]: GETGLOBAL R13 K21      ; R13 := 0x7C282057
+128 [-]: LOADK     R14 K47      ; R14 := "/Lotus/Interface/Icons/GeneticLab/TemperamentMirror.png"
+129 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+130 [-]: SETTABLE  R12 K28 R13  ; R12["Icon"] := R13
+131 [-]: NEWTABLE  R13 0 3      ; R13 := {}
+132 [-]: GETGLOBAL R14 K9       ; R14 := 0x2C00D429
+133 [-]: LOADK     R15 K48      ; R15 := "/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit"
+134 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+135 [-]: SETTABLE  R13 K24 R14  ; R13["Type"] := R14
+136 [-]: SETTABLE  R13 K26 K49  ; R13["Name"] := "/Lotus/Language/Items/CheshireCatbrowName"
+137 [-]: GETGLOBAL R14 K21      ; R14 := 0x7C282057
+138 [-]: LOADK     R15 K50      ; R15 := "/Lotus/Interface/Icons/GeneticLab/TemperamentCheshire.png"
+139 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+140 [-]: SETTABLE  R13 K28 R14  ; R13["Icon"] := R14
+141 [-]: NEWTABLE  R14 0 3      ; R14 := {}
+142 [-]: GETGLOBAL R15 K9       ; R15 := 0x2C00D429
+143 [-]: LOADK     R16 K51      ; R16 := "/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit"
+144 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+145 [-]: SETTABLE  R14 K24 R15  ; R14["Type"] := R15
+146 [-]: SETTABLE  R14 K26 K52  ; R14["Name"] := "/Lotus/Language/Pets/VampireKavatName"
+147 [-]: GETGLOBAL R15 K21      ; R15 := 0x7C282057
+148 [-]: LOADK     R16 K53      ; R16 := "/Lotus/Interface/Icons/GeneticLab/VampireKavatIcon.png"
+149 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+150 [-]: SETTABLE  R14 K28 R15  ; R14["Icon"] := R15
+151 [-]: SETLIST   R5 9 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 9
+152 [-]: GETGLOBAL R6 K9        ; R6 := 0x2C00D429
+153 [-]: LOADK     R7 K54       ; R7 := "/Lotus/Types/Game/PowerSuits/PlayerPowerSuit"
+154 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+155 [-]: GETGLOBAL R7 K9        ; R7 := 0x2C00D429
+156 [-]: LOADK     R8 K55       ; R8 := "/Lotus/Weapons/Tenno/LotusLongGun"
+157 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+158 [-]: GETGLOBAL R8 K9        ; R8 := 0x2C00D429
+159 [-]: LOADK     R9 K56       ; R9 := "/Lotus/Weapons/Tenno/Pistol/LotusPistol"
+160 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+161 [-]: GETGLOBAL R9 K9        ; R9 := 0x2C00D429
+162 [-]: LOADK     R10 K57      ; R10 := "/Lotus/Types/Game/KubrowPet/KubrowPetPowerSuit"
+163 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+164 [-]: GETGLOBAL R10 K9       ; R10 := 0x2C00D429
+165 [-]: LOADK     R11 K58      ; R11 := "/Lotus/Types/Game/CatbrowPet/CatbrowPetPowerSuit"
+166 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+167 [-]: NEWTABLE  R11 0 5      ; R11 := {}
+168 [-]: SETTABLE  R11 K60 K61  ; R11["NORMAL"] := 8
+169 [-]: SETTABLE  R11 K62 K63  ; R11["STANCE_INDEX"] := 9
+170 [-]: SETTABLE  R11 K64 K63  ; R11["AURA_INDEX"] := 9
+171 [-]: SETTABLE  R11 K65 K66  ; R11["UTILITY_INDEX"] := 10
+172 [-]: SETTABLE  R11 K67 K68  ; R11["IMMORTAL_INDEX"] := 4
+173 [-]: SETGLOBAL R11 K59      ; MOD_SLOTS := R11
+174 [-]: NEWTABLE  R11 6 0      ; R11 := {}
+175 [-]: LOADK     R12 K70      ; R12 := "A"
+176 [-]: LOADK     R13 K71      ; R13 := "B"
+177 [-]: LOADK     R14 K72      ; R14 := "C"
+178 [-]: LOADK     R15 K73      ; R15 := "D"
+179 [-]: LOADK     R16 K74      ; R16 := "E"
+180 [-]: LOADK     R17 K75      ; R17 := "F"
+181 [-]: SETLIST   R11 6 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 6
+182 [-]: SETGLOBAL R11 K69      ; CONFIG_TYPES := R11
+183 [-]: CLOSURE   R11 0        ; R11 := closure(Function #1)
+184 [-]: SETGLOBAL R11 K76      ; GetSwapOperation := R11
+185 [-]: SETGLOBAL R11 K77      ; 0xBE56ACC := R11
+186 [-]: CLOSURE   R11 1        ; R11 := closure(Function #2)
+187 [-]: CLOSURE   R12 2        ; R12 := closure(Function #3)
+188 [-]: MOVE      R0 R3        ; R0 := R3
+189 [-]: SETGLOBAL R12 K78      ; GetPolarizeOperationType := R12
+190 [-]: SETGLOBAL R12 K79      ; 0xB29A6E33 := R12
+191 [-]: CLOSURE   R12 3        ; R12 := closure(Function #4)
+192 [-]: MOVE      R0 R11       ; R0 := R11
+193 [-]: SETGLOBAL R12 K80      ; GetFeatureOperation := R12
+194 [-]: SETGLOBAL R12 K81      ; 0x5F37CE9F := R12
+195 [-]: CLOSURE   R12 4        ; R12 := closure(Function #5)
+196 [-]: MOVE      R0 R0        ; R0 := R0
+197 [-]: SETGLOBAL R12 K82      ; UnlockFeature := R12
+198 [-]: SETGLOBAL R12 K83      ; 0xAA6DD5AE := R12
+199 [-]: CLOSURE   R12 5        ; R12 := closure(Function #6)
+200 [-]: SETGLOBAL R12 K84      ; UnlockFeatureUpsell := R12
+201 [-]: SETGLOBAL R12 K85      ; 0x7498D7B := R12
+202 [-]: CLOSURE   R12 6        ; R12 := closure(Function #7)
+203 [-]: MOVE      R0 R3        ; R0 := R3
+204 [-]: SETGLOBAL R12 K86      ; GetPolarizeOperation := R12
+205 [-]: SETGLOBAL R12 K87      ; 0xF76FF1CB := R12
+206 [-]: CLOSURE   R12 7        ; R12 := closure(Function #8)
+207 [-]: SETGLOBAL R12 K88      ; GetPassiveDescription := R12
+208 [-]: SETGLOBAL R12 K89      ; 0x690010ED := R12
+209 [-]: CLOSURE   R12 8        ; R12 := closure(Function #9)
+210 [-]: SETGLOBAL R12 K90      ; GetApertureLocalizedName := R12
+211 [-]: SETGLOBAL R12 K91      ; 0x6D926939 := R12
+212 [-]: CLOSURE   R12 9        ; R12 := closure(Function #10)
+213 [-]: MOVE      R0 R6        ; R0 := R6
+214 [-]: MOVE      R0 R7        ; R0 := R7
+215 [-]: MOVE      R0 R8        ; R0 := R8
+216 [-]: SETGLOBAL R12 K92      ; IsUtilitySlot := R12
+217 [-]: SETGLOBAL R12 K93      ; 0xEC4D1B6F := R12
+218 [-]: CLOSURE   R12 10       ; R12 := closure(Function #11)
+219 [-]: CLOSURE   R13 11       ; R13 := closure(Function #12)
+220 [-]: MOVE      R0 R12       ; R0 := R12
+221 [-]: SETGLOBAL R13 K94      ; IsSpecialMeleeItem := R13
+222 [-]: SETGLOBAL R13 K95      ; 0xF49B500F := R13
+223 [-]: CLOSURE   R13 12       ; R13 := closure(Function #13)
+224 [-]: MOVE      R0 R2        ; R0 := R2
+225 [-]: SETGLOBAL R13 K96      ; GetConfigList := R13
+226 [-]: SETGLOBAL R13 K97      ; 0x46521186 := R13
+227 [-]: CLOSURE   R13 13       ; R13 := closure(Function #14)
+228 [-]: SETGLOBAL R13 K98      ; GetInfosForLinking := R13
+229 [-]: SETGLOBAL R13 K99      ; 0x34D6199 := R13
+230 [-]: CLOSURE   R13 14       ; R13 := closure(Function #15)
+231 [-]: MOVE      R0 R12       ; R0 := R12
+232 [-]: SETGLOBAL R13 K100     ; GetCalculateXForInstallGrid := R13
+233 [-]: SETGLOBAL R13 K101     ; 0x14F2E21D := R13
+234 [-]: CLOSURE   R13 15       ; R13 := closure(Function #16)
+235 [-]: SETGLOBAL R13 K102     ; GetCalculateYForInstallGrid := R13
+236 [-]: SETGLOBAL R13 K103     ; 0xBE2B3302 := R13
+237 [-]: CLOSURE   R13 16       ; R13 := closure(Function #17)
+238 [-]: MOVE      R0 R9        ; R0 := R9
+239 [-]: MOVE      R0 R10       ; R0 := R10
+240 [-]: SETGLOBAL R13 K104     ; GetRowColumnForInstallGrid := R13
+241 [-]: SETGLOBAL R13 K105     ; 0xB19223CD := R13
+242 [-]: CLOSURE   R13 17       ; R13 := closure(Function #18)
+243 [-]: MOVE      R0 R2        ; R0 := R2
+244 [-]: MOVE      R0 R1        ; R0 := R1
+245 [-]: SETGLOBAL R13 K106     ; GetDataKnifeCombination := R13
+246 [-]: SETGLOBAL R13 K107     ; 0xF899B991 := R13
+247 [-]: CLOSURE   R13 18       ; R13 := closure(Function #19)
+248 [-]: MOVE      R0 R0        ; R0 := R0
+249 [-]: MOVE      R0 R4        ; R0 := R4
+250 [-]: MOVE      R0 R5        ; R0 := R5
+251 [-]: SETGLOBAL R13 K108     ; GetPetGenderBreed := R13
+252 [-]: SETGLOBAL R13 K109     ; 0x1BA83372 := R13
+253 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 23
+; Defined at line: 34
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -229,7 +336,7 @@ code size: 123
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 40
+; Defined at line: 51
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -262,7 +369,7 @@ code size: 123
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 53
+; Defined at line: 64
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -285,7 +392,7 @@ code size: 123
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 62
+; Defined at line: 73
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -432,7 +539,7 @@ code size: 123
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 121
+; Defined at line: 132
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -566,7 +673,7 @@ code size: 123
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 168
+; Defined at line: 179
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -641,7 +748,7 @@ code size: 123
 ; Function #6.1:
 ;
 ; Name:            
-; Defined at line: 191
+; Defined at line: 202
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -660,7 +767,7 @@ code size: 123
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 198
+; Defined at line: 209
 ; #Upvalues:       1
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -719,7 +826,7 @@ code size: 123
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 224
+; Defined at line: 235
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -772,7 +879,7 @@ code size: 123
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 239
+; Defined at line: 250
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -798,7 +905,7 @@ code size: 123
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 244
+; Defined at line: 255
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -836,7 +943,7 @@ code size: 123
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 258
+; Defined at line: 269
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -871,7 +978,7 @@ code size: 123
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 262
+; Defined at line: 273
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -888,7 +995,7 @@ code size: 123
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 266
+; Defined at line: 277
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1014,7 +1121,7 @@ code size: 123
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 307
+; Defined at line: 318
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1063,13 +1170,13 @@ code size: 123
  41 [-]: JMP       44           ; PC := 44
  42 [-]: NEWTABLE  R10 0 0      ; R10 := {}
  43 [-]: MOVE      R4 R10       ; R4 := R10
- 44 [-]: TEST      R3 0         ; if not R3 then PC := 100
- 45 [-]: JMP       100          ; PC := 100
+ 44 [-]: TEST      R3 0         ; if not R3 then PC := 105
+ 45 [-]: JMP       105          ; PC := 105
  46 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
  47 [-]: MOVE      R11 R2       ; R11 := R2
  48 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 49 [-]: TEST      R10 1        ; if R10 then PC := 100
- 50 [-]: JMP       100          ; PC := 100
+ 49 [-]: TEST      R10 1        ; if R10 then PC := 105
+ 50 [-]: JMP       105          ; PC := 105
  51 [-]: GETTABLE  R10 R2 K11   ; R10 := R2["mItem"]
  52 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["mItemId"]
  53 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["mId"]
@@ -1092,41 +1199,46 @@ code size: 123
  70 [-]: SELF      R16 R0 K16   ; R17 := R0; R16 := R0["0xD2EADDBF"]
  71 [-]: MOVE      R18 R10      ; R18 := R10
  72 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
- 73 [-]: GETTABLE  R17 R2 K11   ; R17 := R2["mItem"]
- 74 [-]: GETTABLE  R17 R17 K17  ; R17 := R17["mItemType"]
- 75 [-]: SELF      R17 R17 K1   ; R18 := R17; R17 := R17["0x8B598ED4"]
- 76 [-]: GETGLOBAL R19 K2       ; R19 := gPetPowerSuitType
- 77 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
- 78 [-]: TEST      R17 0        ; if not R17 then PC := 94
- 79 [-]: JMP       94           ; PC := 94
- 80 [-]: SELF      R17 R0 K3    ; R18 := R0; R17 := R0["0x3534C3F3"]
- 81 [-]: CALL      R17 2 2      ; R17 := R17(R18)
- 82 [-]: LOADK     R18 K4       ; R18 := 1
- 83 [-]: LEN       R19 R17      ; R19 := # R17
- 84 [-]: LOADK     R20 K4       ; R20 := 1
- 85 [-]: FORPREP   R18 93       ; R18 -= R20; PC := 93
- 86 [-]: GETTABLE  R22 R17 R21  ; R22 := R17[R21]
- 87 [-]: GETTABLE  R22 R22 K12  ; R22 := R22["mItemId"]
- 88 [-]: GETTABLE  R22 R22 K13  ; R22 := R22["mId"]
- 89 [-]: EQ        0 R22 R10    ; if R22 ~= R10 then PC := 93
- 90 [-]: JMP       93           ; PC := 93
- 91 [-]: GETTABLE  R16 R17 R21  ; R16 := R17[R21]
- 92 [-]: JMP       94           ; PC := 94
- 93 [-]: FORLOOP   R18 86       ; R18 += R20; if R18 <= R19 then begin PC := 86; R21 := R18 end
- 94 [-]: GETGLOBAL R22 K8       ; R22 := table
- 95 [-]: GETTABLE  R22 R22 K9   ; R22 := R22["0xE6450C9D"]
- 96 [-]: MOVE      R23 R4       ; R23 := R4
- 97 [-]: LOADK     R24 K4       ; R24 := 1
- 98 [-]: MOVE      R25 R16      ; R25 := R16
- 99 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
-100 [-]: RETURN    R4 2         ; return R4
-101 [-]: RETURN    R0 1         ; return 
+ 73 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+ 74 [-]: GETTABLE  R18 R16 K17  ; R18 := R16["mItemType"]
+ 75 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+ 76 [-]: TEST      R17 1        ; if R17 then PC := 105
+ 77 [-]: JMP       105          ; PC := 105
+ 78 [-]: GETTABLE  R17 R2 K11   ; R17 := R2["mItem"]
+ 79 [-]: GETTABLE  R17 R17 K17  ; R17 := R17["mItemType"]
+ 80 [-]: SELF      R17 R17 K1   ; R18 := R17; R17 := R17["0x8B598ED4"]
+ 81 [-]: GETGLOBAL R19 K2       ; R19 := gPetPowerSuitType
+ 82 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+ 83 [-]: TEST      R17 0        ; if not R17 then PC := 99
+ 84 [-]: JMP       99           ; PC := 99
+ 85 [-]: SELF      R17 R0 K3    ; R18 := R0; R17 := R0["0x3534C3F3"]
+ 86 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+ 87 [-]: LOADK     R18 K4       ; R18 := 1
+ 88 [-]: LEN       R19 R17      ; R19 := # R17
+ 89 [-]: LOADK     R20 K4       ; R20 := 1
+ 90 [-]: FORPREP   R18 98       ; R18 -= R20; PC := 98
+ 91 [-]: GETTABLE  R22 R17 R21  ; R22 := R17[R21]
+ 92 [-]: GETTABLE  R22 R22 K12  ; R22 := R22["mItemId"]
+ 93 [-]: GETTABLE  R22 R22 K13  ; R22 := R22["mId"]
+ 94 [-]: EQ        0 R22 R10    ; if R22 ~= R10 then PC := 98
+ 95 [-]: JMP       98           ; PC := 98
+ 96 [-]: GETTABLE  R16 R17 R21  ; R16 := R17[R21]
+ 97 [-]: JMP       99           ; PC := 99
+ 98 [-]: FORLOOP   R18 91       ; R18 += R20; if R18 <= R19 then begin PC := 91; R21 := R18 end
+ 99 [-]: GETGLOBAL R22 K8       ; R22 := table
+100 [-]: GETTABLE  R22 R22 K9   ; R22 := R22["0xE6450C9D"]
+101 [-]: MOVE      R23 R4       ; R23 := R4
+102 [-]: LOADK     R24 K4       ; R24 := 1
+103 [-]: MOVE      R25 R16      ; R25 := R16
+104 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
+105 [-]: RETURN    R4 2         ; return R4
+106 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 352
+; Defined at line: 365
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1172,7 +1284,7 @@ code size: 123
 ; Function #15.1:
 ;
 ; Name:            
-; Defined at line: 360
+; Defined at line: 373
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1238,7 +1350,7 @@ code size: 123
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 385
+; Defined at line: 398
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1265,7 +1377,7 @@ code size: 123
 ; Function #16.1:
 ;
 ; Name:            
-; Defined at line: 391
+; Defined at line: 404
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1294,7 +1406,7 @@ code size: 123
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 402
+; Defined at line: 415
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1354,7 +1466,7 @@ code size: 123
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 421
+; Defined at line: 434
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1483,5 +1595,67 @@ code size: 123
 121 [-]: FORLOOP   R8 62        ; R8 += R10; if R8 <= R9 then begin PC := 62; R11 := R8 end
 122 [-]: RETURN    R1 2         ; return R1
 123 [-]: RETURN    R0 1         ; return 
+
+
+; Function #19:
+;
+; Name:            
+; Defined at line: 489
+; #Upvalues:       3
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  13
+
+  1 [-]: NEWTABLE  R2 0 4       ; R2 := {}
+  2 [-]: SETTABLE  R2 K0 K1     ; R2["GenderName"] := ""
+  3 [-]: SETTABLE  R2 K2 K3     ; R2["GenderIcon"] := nil
+  4 [-]: SETTABLE  R2 K4 K1     ; R2["BreedName"] := ""
+  5 [-]: SETTABLE  R2 K5 K3     ; R2["BreedIcon"] := nil
+  6 [-]: GETGLOBAL R3 K6        ; R3 := 0x400E7765
+  7 [-]: MOVE      R4 R1        ; R4 := R1
+  8 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  9 [-]: TEST      R3 0         ; if not R3 then PC := 12
+ 10 [-]: JMP       12           ; PC := 12
+ 11 [-]: RETURN    R2 2         ; return R2
+ 12 [-]: GETTABLE  R3 R1 K7     ; R3 := R1["mDetails"]
+ 13 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["mIsMale"]
+ 14 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 15 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xF81722A2"]
+ 16 [-]: MOVE      R5 R3        ; R5 := R3
+ 17 [-]: LOADK     R6 K10       ; R6 := "/Lotus/Language/Menu/KubrowMale"
+ 18 [-]: LOADK     R7 K11       ; R7 := "/Lotus/Language/Menu/KubrowFemale"
+ 19 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+ 20 [-]: SETTABLE  R2 K0 R4     ; R2["GenderName"] := R4
+ 21 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 22 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["0xF81722A2"]
+ 23 [-]: MOVE      R5 R3        ; R5 := R3
+ 24 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 25 [-]: GETTABLE  R6 R6 K12    ; R6 := R6[2]
+ 26 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 27 [-]: GETTABLE  R7 R7 K13    ; R7 := R7[1]
+ 28 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+ 29 [-]: SETTABLE  R2 K2 R4     ; R2["GenderIcon"] := R4
+ 30 [-]: LOADK     R4 K13       ; R4 := 1
+ 31 [-]: GETUPVAL  R5 U2        ; R5 := U2
+ 32 [-]: LEN       R5 R5        ; R5 := # R5
+ 33 [-]: LOADK     R6 K13       ; R6 := 1
+ 34 [-]: FORPREP   R4 49        ; R4 -= R6; PC := 49
+ 35 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 36 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
+ 37 [-]: GETTABLE  R9 R8 K14    ; R9 := R8["Type"]
+ 38 [-]: GETTABLE  R10 R1 K15   ; R10 := R1["mItemType"]
+ 39 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 49
+ 40 [-]: JMP       49           ; PC := 49
+ 41 [-]: SELF      R9 R0 K16    ; R10 := R0; R9 := R0["0x5DB0BD4"]
+ 42 [-]: GETTABLE  R11 R8 K17   ; R11 := R8["Name"]
+ 43 [-]: MOVE      R12 R0       ; R12 := R0
+ 44 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
+ 45 [-]: SETTABLE  R2 K4 R9     ; R2["BreedName"] := R9
+ 46 [-]: GETTABLE  R9 R8 K18    ; R9 := R8["Icon"]
+ 47 [-]: SETTABLE  R2 K5 R9     ; R2["BreedIcon"] := R9
+ 48 [-]: JMP       50           ; PC := 50
+ 49 [-]: FORLOOP   R4 35        ; R4 += R6; if R4 <= R5 then begin PC := 35; R7 := R4 end
+ 50 [-]: RETURN    R2 2         ; return R2
+ 51 [-]: RETURN    R0 1         ; return 
 
 

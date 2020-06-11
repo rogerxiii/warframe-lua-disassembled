@@ -98,7 +98,7 @@ code size: 83
  42 [-]: SELF      R10 R5 K12   ; R11 := R5; R10 := R5["0x3B1B11B9"]
  43 [-]: GETGLOBAL R12 K13      ; R12 := Game
  44 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["WEAPON_RELOAD_SPEED"]
- 45 [-]: GETGLOBAL R13 K13      ; R13 := Game
+ 45 [-]: GETGLOBAL R13 K6       ; R13 := Engine
  46 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["STACKING_MULTIPLY"]
  47 [-]: MOVE      R14 R6       ; R14 := R6
  48 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -122,7 +122,7 @@ code size: 83
  66 [-]: SELF      R10 R5 K18   ; R11 := R5; R10 := R5["0xF21555A7"]
  67 [-]: GETGLOBAL R12 K13      ; R12 := Game
  68 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["WEAPON_RELOAD_SPEED"]
- 69 [-]: GETGLOBAL R13 K13      ; R13 := Game
+ 69 [-]: GETGLOBAL R13 K6       ; R13 := Engine
  70 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["STACKING_MULTIPLY"]
  71 [-]: MOVE      R14 R6       ; R14 := R6
  72 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil

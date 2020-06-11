@@ -422,7 +422,7 @@ code size: 210
  34 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  35 [-]: MOVE      R3 R1        ; R3 := R1
  36 [-]: NEWTABLE  R4 0 4       ; R4 := {}
- 37 [-]: SETTABLE  R4 K8 K13    ; R4["Label"] := "/Game/WEAPON_FIRE_RATE"
+ 37 [-]: SETTABLE  R4 K8 K13    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_FIRE_RATE"
  38 [-]: MOVE      R5 R0        ; R5 := R0
  39 [-]: GETUPVAL  R6 U2        ; R6 := U2
  40 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["minValue"]
@@ -439,7 +439,7 @@ code size: 210
  51 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  52 [-]: MOVE      R3 R1        ; R3 := R1
  53 [-]: NEWTABLE  R4 0 4       ; R4 := {}
- 54 [-]: SETTABLE  R4 K8 K18    ; R4["Label"] := "/Game/WEAPON_MELEE_FIRE_RATE"
+ 54 [-]: SETTABLE  R4 K8 K18    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_MELEE_FIRE_RATE"
  55 [-]: MOVE      R5 R0        ; R5 := R0
  56 [-]: GETUPVAL  R6 U3        ; R6 := U3
  57 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["minValue"]
@@ -456,7 +456,7 @@ code size: 210
  68 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  69 [-]: MOVE      R3 R1        ; R3 := R1
  70 [-]: NEWTABLE  R4 0 4       ; R4 := {}
- 71 [-]: SETTABLE  R4 K8 K19    ; R4["Label"] := "/Game/WEAPON_RELOAD_SPEED"
+ 71 [-]: SETTABLE  R4 K8 K19    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_RELOAD_SPEED"
  72 [-]: MOVE      R5 R0        ; R5 := R0
  73 [-]: GETUPVAL  R6 U4        ; R6 := U4
  74 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["minValue"]
@@ -473,7 +473,7 @@ code size: 210
  85 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  86 [-]: MOVE      R3 R1        ; R3 := R1
  87 [-]: NEWTABLE  R4 0 4       ; R4 := {}
- 88 [-]: SETTABLE  R4 K8 K20    ; R4["Label"] := "/Game/WEAPON_HOLSTER_RATE"
+ 88 [-]: SETTABLE  R4 K8 K20    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_HOLSTER_RATE"
  89 [-]: MOVE      R5 R0        ; R5 := R0
  90 [-]: GETUPVAL  R6 U5        ; R6 := U5
  91 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["minValue"]
@@ -1170,14 +1170,14 @@ code size: 210
 236 [-]: SELF      R22 R9 K54   ; R23 := R9; R22 := R9["0xF21555A7"]
 237 [-]: GETGLOBAL R24 K41      ; R24 := Game
 238 [-]: GETTABLE  R24 R24 K55  ; R24 := R24["WEAPON_FIRE_RATE"]
-239 [-]: GETGLOBAL R25 K41      ; R25 := Game
+239 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 240 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 241 [-]: GETTABLE  R26 R21 K57  ; R26 := R21["fireRate"]
 242 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 243 [-]: SELF      R22 R9 K54   ; R23 := R9; R22 := R9["0xF21555A7"]
 244 [-]: GETGLOBAL R24 K41      ; R24 := Game
 245 [-]: GETTABLE  R24 R24 K55  ; R24 := R24["WEAPON_FIRE_RATE"]
-246 [-]: GETGLOBAL R25 K41      ; R25 := Game
+246 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 247 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 248 [-]: GETTABLE  R26 R21 K58  ; R26 := R21["meleeSpeed"]
 249 [-]: GETGLOBAL R27 K59      ; R27 := gLotusMeleeWeaponType
@@ -1185,21 +1185,21 @@ code size: 210
 251 [-]: SELF      R22 R9 K54   ; R23 := R9; R22 := R9["0xF21555A7"]
 252 [-]: GETGLOBAL R24 K41      ; R24 := Game
 253 [-]: GETTABLE  R24 R24 K60  ; R24 := R24["WEAPON_MELEE_HEAVY_CHARGE_SPEED"]
-254 [-]: GETGLOBAL R25 K41      ; R25 := Game
+254 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 255 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 256 [-]: GETTABLE  R26 R21 K61  ; R26 := R21["chargeSpeed"]
 257 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 258 [-]: SELF      R22 R9 K54   ; R23 := R9; R22 := R9["0xF21555A7"]
 259 [-]: GETGLOBAL R24 K41      ; R24 := Game
 260 [-]: GETTABLE  R24 R24 K62  ; R24 := R24["WEAPON_RELOAD_SPEED"]
-261 [-]: GETGLOBAL R25 K41      ; R25 := Game
+261 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 262 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 263 [-]: GETTABLE  R26 R21 K63  ; R26 := R21["reloadSpeed"]
 264 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 265 [-]: SELF      R22 R9 K54   ; R23 := R9; R22 := R9["0xF21555A7"]
 266 [-]: GETGLOBAL R24 K41      ; R24 := Game
 267 [-]: GETTABLE  R24 R24 K64  ; R24 := R24["WEAPON_HOLSTER_RATE"]
-268 [-]: GETGLOBAL R25 K41      ; R25 := Game
+268 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 269 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 270 [-]: GETTABLE  R26 R21 K65  ; R26 := R21["holsterRate"]
 271 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
@@ -1237,14 +1237,14 @@ code size: 210
 303 [-]: SELF      R22 R9 K67   ; R23 := R9; R22 := R9["0x3B1B11B9"]
 304 [-]: GETGLOBAL R24 K41      ; R24 := Game
 305 [-]: GETTABLE  R24 R24 K55  ; R24 := R24["WEAPON_FIRE_RATE"]
-306 [-]: GETGLOBAL R25 K41      ; R25 := Game
+306 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 307 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 308 [-]: GETTABLE  R26 R21 K57  ; R26 := R21["fireRate"]
 309 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 310 [-]: SELF      R22 R9 K67   ; R23 := R9; R22 := R9["0x3B1B11B9"]
 311 [-]: GETGLOBAL R24 K41      ; R24 := Game
 312 [-]: GETTABLE  R24 R24 K55  ; R24 := R24["WEAPON_FIRE_RATE"]
-313 [-]: GETGLOBAL R25 K41      ; R25 := Game
+313 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 314 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 315 [-]: GETTABLE  R26 R21 K58  ; R26 := R21["meleeSpeed"]
 316 [-]: GETGLOBAL R27 K59      ; R27 := gLotusMeleeWeaponType
@@ -1252,21 +1252,21 @@ code size: 210
 318 [-]: SELF      R22 R9 K67   ; R23 := R9; R22 := R9["0x3B1B11B9"]
 319 [-]: GETGLOBAL R24 K41      ; R24 := Game
 320 [-]: GETTABLE  R24 R24 K60  ; R24 := R24["WEAPON_MELEE_HEAVY_CHARGE_SPEED"]
-321 [-]: GETGLOBAL R25 K41      ; R25 := Game
+321 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 322 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 323 [-]: GETTABLE  R26 R21 K61  ; R26 := R21["chargeSpeed"]
 324 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 325 [-]: SELF      R22 R9 K67   ; R23 := R9; R22 := R9["0x3B1B11B9"]
 326 [-]: GETGLOBAL R24 K41      ; R24 := Game
 327 [-]: GETTABLE  R24 R24 K62  ; R24 := R24["WEAPON_RELOAD_SPEED"]
-328 [-]: GETGLOBAL R25 K41      ; R25 := Game
+328 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 329 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 330 [-]: GETTABLE  R26 R21 K63  ; R26 := R21["reloadSpeed"]
 331 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 332 [-]: SELF      R22 R9 K67   ; R23 := R9; R22 := R9["0x3B1B11B9"]
 333 [-]: GETGLOBAL R24 K41      ; R24 := Game
 334 [-]: GETTABLE  R24 R24 K64  ; R24 := R24["WEAPON_HOLSTER_RATE"]
-335 [-]: GETGLOBAL R25 K41      ; R25 := Game
+335 [-]: GETGLOBAL R25 K15      ; R25 := Engine
 336 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["STACKING_MULTIPLY"]
 337 [-]: GETTABLE  R26 R21 K65  ; R26 := R21["holsterRate"]
 338 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
@@ -1541,103 +1541,103 @@ code size: 210
 107 [-]: SELF      R9 R8 K30    ; R10 := R8; R9 := R8["0xF21555A7"]
 108 [-]: GETGLOBAL R11 K31      ; R11 := Game
 109 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["WEAPON_FIRE_RATE"]
-110 [-]: GETGLOBAL R12 K31      ; R12 := Game
-111 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["STACKING_MULTIPLY"]
+110 [-]: GETGLOBAL R12 K33      ; R12 := Engine
+111 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["STACKING_MULTIPLY"]
 112 [-]: GETTABLE  R13 R7 K28   ; R13 := R7["fireRate"]
 113 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 114 [-]: SELF      R9 R8 K30    ; R10 := R8; R9 := R8["0xF21555A7"]
 115 [-]: GETGLOBAL R11 K31      ; R11 := Game
 116 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["WEAPON_FIRE_RATE"]
-117 [-]: GETGLOBAL R12 K31      ; R12 := Game
-118 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["STACKING_MULTIPLY"]
-119 [-]: GETTABLE  R13 R7 K34   ; R13 := R7["meleeSpeed"]
-120 [-]: GETGLOBAL R14 K35      ; R14 := gLotusMeleeWeaponType
+117 [-]: GETGLOBAL R12 K33      ; R12 := Engine
+118 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["STACKING_MULTIPLY"]
+119 [-]: GETTABLE  R13 R7 K35   ; R13 := R7["meleeSpeed"]
+120 [-]: GETGLOBAL R14 K36      ; R14 := gLotusMeleeWeaponType
 121 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
 122 [-]: SELF      R9 R8 K30    ; R10 := R8; R9 := R8["0xF21555A7"]
 123 [-]: GETGLOBAL R11 K31      ; R11 := Game
-124 [-]: GETTABLE  R11 R11 K36  ; R11 := R11["WEAPON_MELEE_HEAVY_CHARGE_SPEED"]
-125 [-]: GETGLOBAL R12 K31      ; R12 := Game
-126 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["STACKING_MULTIPLY"]
-127 [-]: GETTABLE  R13 R7 K37   ; R13 := R7["chargeSpeed"]
+124 [-]: GETTABLE  R11 R11 K37  ; R11 := R11["WEAPON_MELEE_HEAVY_CHARGE_SPEED"]
+125 [-]: GETGLOBAL R12 K33      ; R12 := Engine
+126 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["STACKING_MULTIPLY"]
+127 [-]: GETTABLE  R13 R7 K38   ; R13 := R7["chargeSpeed"]
 128 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 129 [-]: SELF      R9 R8 K30    ; R10 := R8; R9 := R8["0xF21555A7"]
 130 [-]: GETGLOBAL R11 K31      ; R11 := Game
-131 [-]: GETTABLE  R11 R11 K38  ; R11 := R11["WEAPON_RELOAD_SPEED"]
-132 [-]: GETGLOBAL R12 K31      ; R12 := Game
-133 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["STACKING_MULTIPLY"]
-134 [-]: GETTABLE  R13 R7 K39   ; R13 := R7["reloadSpeed"]
+131 [-]: GETTABLE  R11 R11 K39  ; R11 := R11["WEAPON_RELOAD_SPEED"]
+132 [-]: GETGLOBAL R12 K33      ; R12 := Engine
+133 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["STACKING_MULTIPLY"]
+134 [-]: GETTABLE  R13 R7 K40   ; R13 := R7["reloadSpeed"]
 135 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 136 [-]: SELF      R9 R8 K30    ; R10 := R8; R9 := R8["0xF21555A7"]
 137 [-]: GETGLOBAL R11 K31      ; R11 := Game
-138 [-]: GETTABLE  R11 R11 K40  ; R11 := R11["WEAPON_HOLSTER_RATE"]
-139 [-]: GETGLOBAL R12 K31      ; R12 := Game
-140 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["STACKING_MULTIPLY"]
-141 [-]: GETTABLE  R13 R7 K41   ; R13 := R7["holsterRate"]
+138 [-]: GETTABLE  R11 R11 K41  ; R11 := R11["WEAPON_HOLSTER_RATE"]
+139 [-]: GETGLOBAL R12 K33      ; R12 := Engine
+140 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["STACKING_MULTIPLY"]
+141 [-]: GETTABLE  R13 R7 K42   ; R13 := R7["holsterRate"]
 142 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 143 [-]: GETGLOBAL R9 K1        ; R9 := _T
-144 [-]: GETTABLE  R9 R9 K42    ; R9 := R9["RUNNER_GetGauge"]
+144 [-]: GETTABLE  R9 R9 K43    ; R9 := R9["RUNNER_GetGauge"]
 145 [-]: EQ        1 R9 K8      ; if R9 == nil then PC := 181
 146 [-]: JMP       181          ; PC := 181
-147 [-]: SELF      R9 R1 K43    ; R10 := R1; R9 := R1["0x5A115A02"]
+147 [-]: SELF      R9 R1 K44    ; R10 := R1; R9 := R1["0x5A115A02"]
 148 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 149 [-]: TEST      R9 1         ; if R9 then PC := 181
 150 [-]: JMP       181          ; PC := 181
 151 [-]: GETGLOBAL R9 K3        ; R9 := mOwner
-152 [-]: SELF      R9 R9 K44    ; R10 := R9; R9 := R9["0xE7AE25B5"]
+152 [-]: SELF      R9 R9 K45    ; R10 := R9; R9 := R9["0xE7AE25B5"]
 153 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 154 [-]: TEST      R9 1         ; if R9 then PC := 181
 155 [-]: JMP       181          ; PC := 181
-156 [-]: GETGLOBAL R9 K45       ; R9 := math
-157 [-]: GETTABLE  R9 R9 K46    ; R9 := R9["0x8B011038"]
+156 [-]: GETGLOBAL R9 K46       ; R9 := math
+157 [-]: GETTABLE  R9 R9 K47    ; R9 := R9["0x8B011038"]
 158 [-]: LOADK     R10 K5       ; R10 := 0
-159 [-]: GETTABLE  R11 R7 K47   ; R11 := R7["overloadTime"]
-160 [-]: GETTABLE  R12 R7 K48   ; R12 := R7["overloadDuration"]
+159 [-]: GETTABLE  R11 R7 K48   ; R11 := R7["overloadTime"]
+160 [-]: GETTABLE  R12 R7 K49   ; R12 := R7["overloadDuration"]
 161 [-]: DIV       R11 R11 R12  ; R11 := R11 / R12
 162 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
 163 [-]: TEST      R4 0         ; if not R4 then PC := 177
 164 [-]: JMP       177          ; PC := 177
 165 [-]: GETGLOBAL R10 K1       ; R10 := _T
-166 [-]: GETTABLE  R10 R10 K49  ; R10 := R10["0x2FEE3BDB"]
+166 [-]: GETTABLE  R10 R10 K50  ; R10 := R10["0x2FEE3BDB"]
 167 [-]: MOVE      R11 R0       ; R11 := R0
 168 [-]: MOVE      R12 R1       ; R12 := R1
 169 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
 170 [-]: GETGLOBAL R11 K1       ; R11 := _T
-171 [-]: GETTABLE  R11 R11 K50  ; R11 := R11["0x2561FE8A"]
+171 [-]: GETTABLE  R11 R11 K51  ; R11 := R11["0x2561FE8A"]
 172 [-]: MOVE      R12 R0       ; R12 := R0
 173 [-]: UNM       R13 R10      ; R13 := - R10
 174 [-]: MUL       R13 R13 R9   ; R13 := R13 * R9
 175 [-]: MOVE      R14 R1       ; R14 := R1
 176 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-177 [-]: GETTABLE  R11 R7 K51   ; R11 := R7["projHelper"]
-178 [-]: GETTABLE  R11 R11 K52  ; R11 := R11["0x59A52210"]
-179 [-]: SUB       R12 K53 R9   ; R12 := 1 - R9
+177 [-]: GETTABLE  R11 R7 K52   ; R11 := R7["projHelper"]
+178 [-]: GETTABLE  R11 R11 K53  ; R11 := R11["0x59A52210"]
+179 [-]: SUB       R12 K54 R9   ; R12 := 1 - R9
 180 [-]: CALL      R11 2 1      ; R11(R12)
 181 [-]: GETGLOBAL R11 K0       ; R11 := 0x400E7765
 182 [-]: MOVE      R12 R1       ; R12 := R1
 183 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 184 [-]: TEST      R11 1        ; if R11 then PC := 195
 185 [-]: JMP       195          ; PC := 195
-186 [-]: SELF      R11 R1 K54   ; R12 := R1; R11 := R1["0xB709A931"]
-187 [-]: GETGLOBAL R13 K55      ; R13 := activateAnim
+186 [-]: SELF      R11 R1 K55   ; R12 := R1; R11 := R1["0xB709A931"]
+187 [-]: GETGLOBAL R13 K56      ; R13 := activateAnim
 188 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
 189 [-]: TEST      R11 0        ; if not R11 then PC := 195
 190 [-]: JMP       195          ; PC := 195
-191 [-]: GETGLOBAL R11 K56      ; R11 := 0x201191EA
+191 [-]: GETGLOBAL R11 K57      ; R11 := 0x201191EA
 192 [-]: LOADK     R12 K5       ; R12 := 0
 193 [-]: CALL      R11 2 1      ; R11(R12)
 194 [-]: JMP       181          ; PC := 181
 195 [-]: GETGLOBAL R11 K1       ; R11 := _T
-196 [-]: GETTABLE  R11 R11 K57  ; R11 := R11["RUNNER_SetCasting"]
+196 [-]: GETTABLE  R11 R11 K58  ; R11 := R11["RUNNER_SetCasting"]
 197 [-]: EQ        1 R11 K8     ; if R11 == nil then PC := 210
 198 [-]: JMP       210          ; PC := 210
 199 [-]: GETGLOBAL R11 K1       ; R11 := _T
-200 [-]: GETTABLE  R11 R11 K58  ; R11 := R11["0x5F35FFFB"]
+200 [-]: GETTABLE  R11 R11 K59  ; R11 := R11["0x5F35FFFB"]
 201 [-]: MOVE      R12 R0       ; R12 := R0
 202 [-]: GETGLOBAL R13 K3       ; R13 := mOwner
 203 [-]: MOVE      R14 R0       ; R14 := R0
 204 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
 205 [-]: GETGLOBAL R11 K1       ; R11 := _T
-206 [-]: GETTABLE  R11 R11 K59  ; R11 := R11["0x60CDAD1A"]
+206 [-]: GETTABLE  R11 R11 K60  ; R11 := R11["0x60CDAD1A"]
 207 [-]: MOVE      R12 R1       ; R12 := R1
 208 [-]: MOVE      R13 R0       ; R13 := R0
 209 [-]: CALL      R11 3 1      ; R11(R12,R13)

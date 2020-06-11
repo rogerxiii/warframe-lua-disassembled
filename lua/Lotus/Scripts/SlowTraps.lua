@@ -140,7 +140,7 @@ code size: 43
 103 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10["0x3B1B11B9"]
 104 [-]: GETGLOBAL R12 K21      ; R12 := Game
 105 [-]: GETTABLE  R12 R12 K22  ; R12 := R12["AVATAR_MOVEMENT_SPEED"]
-106 [-]: GETGLOBAL R13 K21      ; R13 := Game
+106 [-]: GETGLOBAL R13 K15      ; R13 := Engine
 107 [-]: GETTABLE  R13 R13 K23  ; R13 := R13["MULTIPLY"]
 108 [-]: GETGLOBAL R14 K24      ; R14 := slow
 109 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
@@ -165,7 +165,7 @@ code size: 43
 128 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10["0xF21555A7"]
 129 [-]: GETGLOBAL R12 K21      ; R12 := Game
 130 [-]: GETTABLE  R12 R12 K22  ; R12 := R12["AVATAR_MOVEMENT_SPEED"]
-131 [-]: GETGLOBAL R13 K21      ; R13 := Game
+131 [-]: GETGLOBAL R13 K15      ; R13 := Engine
 132 [-]: GETTABLE  R13 R13 K23  ; R13 := R13["MULTIPLY"]
 133 [-]: GETGLOBAL R14 K24      ; R14 := slow
 134 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
@@ -200,7 +200,7 @@ code size: 43
 163 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10["0xF21555A7"]
 164 [-]: GETGLOBAL R12 K21      ; R12 := Game
 165 [-]: GETTABLE  R12 R12 K22  ; R12 := R12["AVATAR_MOVEMENT_SPEED"]
-166 [-]: GETGLOBAL R13 K21      ; R13 := Game
+166 [-]: GETGLOBAL R13 K15      ; R13 := Engine
 167 [-]: GETTABLE  R13 R13 K23  ; R13 := R13["MULTIPLY"]
 168 [-]: GETGLOBAL R14 K24      ; R14 := slow
 169 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)

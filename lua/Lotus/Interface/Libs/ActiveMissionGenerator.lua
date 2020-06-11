@@ -231,12 +231,12 @@ code size: 397
  14 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  15 [-]: GETGLOBAL R6 K6        ; R6 := Game
  16 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["GAMEPLAY_PICKUP_AMOUNT"]
- 17 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 18 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["STACKING_MULTIPLY"]
+ 17 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+ 18 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["STACKING_MULTIPLY"]
  19 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 20 [-]: GETGLOBAL R9 K9        ; R9 := gLotusNpcAvatarType
+ 20 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
  21 [-]: LOADNIL   R10 R10      ; R10 := nil
- 22 [-]: GETGLOBAL R11 K10      ; R11 := Engine
+ 22 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  23 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DT_ANY"]
  24 [-]: GETUPVAL  R12 U1       ; R12 := U1
  25 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -256,12 +256,12 @@ code size: 397
  39 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  40 [-]: GETGLOBAL R6 K6        ; R6 := Game
  41 [-]: GETTABLE  R6 R6 K16    ; R6 := R6["GAMEPLAY_MONEY_PICKUP_AMOUNT"]
- 42 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 43 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["STACKING_MULTIPLY"]
+ 42 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+ 43 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["STACKING_MULTIPLY"]
  44 [-]: GETUPVAL  R8 U0        ; R8 := U0
  45 [-]: GETGLOBAL R9 K17       ; R9 := gTennoAvatarType
  46 [-]: LOADNIL   R10 R10      ; R10 := nil
- 47 [-]: GETGLOBAL R11 K10      ; R11 := Engine
+ 47 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  48 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DT_ANY"]
  49 [-]: GETGLOBAL R12 K18      ; R12 := EMPTY_SYMBOL
  50 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -281,12 +281,12 @@ code size: 397
  64 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  65 [-]: GETGLOBAL R6 K6        ; R6 := Game
  66 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["GAMEPLAY_KILL_XP_AMOUNT"]
- 67 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 68 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["STACKING_MULTIPLY"]
+ 67 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+ 68 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["STACKING_MULTIPLY"]
  69 [-]: GETUPVAL  R8 U0        ; R8 := U0
  70 [-]: GETGLOBAL R9 K17       ; R9 := gTennoAvatarType
  71 [-]: LOADNIL   R10 R10      ; R10 := nil
- 72 [-]: GETGLOBAL R11 K10      ; R11 := Engine
+ 72 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  73 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DT_ANY"]
  74 [-]: GETGLOBAL R12 K18      ; R12 := EMPTY_SYMBOL
  75 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)

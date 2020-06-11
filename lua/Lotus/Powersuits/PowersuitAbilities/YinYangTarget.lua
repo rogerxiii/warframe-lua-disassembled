@@ -696,7 +696,7 @@ code size: 82
  29 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["0xE6450C9D"]
  30 [-]: MOVE      R2 R0        ; R2 := R0
  31 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 32 [-]: SETTABLE  R3 K9 K10    ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 32 [-]: SETTABLE  R3 K9 K10    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  33 [-]: GETUPVAL  R4 U1        ; R4 := U1
  34 [-]: SETTABLE  R3 K11 R4    ; R3["Value"] := R4
  35 [-]: SETTABLE  R3 K12 K13   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -2393,7 +2393,7 @@ code size: 82
 772 [-]: GETUPVAL  R40 U14      ; R40 := U14
 773 [-]: GETGLOBAL R41 K37      ; R41 := Game
 774 [-]: GETTABLE  R41 R41 K117 ; R41 := R41["AVATAR_MOVEMENT_SPEED"]
-775 [-]: GETGLOBAL R42 K37      ; R42 := Game
+775 [-]: GETGLOBAL R42 K26      ; R42 := Engine
 776 [-]: GETTABLE  R42 R42 K118 ; R42 := R42["MULTIPLY"]
 777 [-]: MOVE      R43 R9       ; R43 := R9
 778 [-]: CALL      R38 6 1      ; R38(R39,R40,R41,R42,R43)
@@ -2408,7 +2408,7 @@ code size: 82
 787 [-]: GETUPVAL  R40 U14      ; R40 := U14
 788 [-]: GETGLOBAL R41 K37      ; R41 := Game
 789 [-]: GETTABLE  R41 R41 K120 ; R41 := R41["WEAPON_FIRE_RATE"]
-790 [-]: GETGLOBAL R42 K37      ; R42 := Game
+790 [-]: GETGLOBAL R42 K26      ; R42 := Engine
 791 [-]: GETTABLE  R42 R42 K118 ; R42 := R42["MULTIPLY"]
 792 [-]: DIV       R43 K29 R9   ; R43 := 1 / R9
 793 [-]: CALL      R38 6 1      ; R38(R39,R40,R41,R42,R43)
@@ -2538,7 +2538,7 @@ code size: 82
 917 [-]: GETUPVAL  R42 U14      ; R42 := U14
 918 [-]: GETGLOBAL R43 K37      ; R43 := Game
 919 [-]: GETTABLE  R43 R43 K117 ; R43 := R43["AVATAR_MOVEMENT_SPEED"]
-920 [-]: GETGLOBAL R44 K37      ; R44 := Game
+920 [-]: GETGLOBAL R44 K26      ; R44 := Engine
 921 [-]: GETTABLE  R44 R44 K118 ; R44 := R44["MULTIPLY"]
 922 [-]: MOVE      R45 R9       ; R45 := R9
 923 [-]: CALL      R40 6 1      ; R40(R41,R42,R43,R44,R45)
@@ -2552,7 +2552,7 @@ code size: 82
 931 [-]: GETUPVAL  R42 U14      ; R42 := U14
 932 [-]: GETGLOBAL R43 K37      ; R43 := Game
 933 [-]: GETTABLE  R43 R43 K120 ; R43 := R43["WEAPON_FIRE_RATE"]
-934 [-]: GETGLOBAL R44 K37      ; R44 := Game
+934 [-]: GETGLOBAL R44 K26      ; R44 := Engine
 935 [-]: GETTABLE  R44 R44 K118 ; R44 := R44["MULTIPLY"]
 936 [-]: DIV       R45 K29 R9   ; R45 := 1 / R9
 937 [-]: CALL      R40 6 1      ; R40(R41,R42,R43,R44,R45)

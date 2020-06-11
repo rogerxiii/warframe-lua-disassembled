@@ -51,7 +51,7 @@ code size: 50
  20 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["0x1B694258"]
  21 [-]: CALL      R6 1 2       ; R6 := R6()
  22 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6["0x15C954A"]
- 23 [-]: GETGLOBAL R9 K8        ; R9 := Game
+ 23 [-]: GETGLOBAL R9 K2        ; R9 := Engine
  24 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["ADD"]
  25 [-]: CALL      R7 3 1       ; R7(R8,R9)
  26 [-]: SELF      R7 R6 K12    ; R8 := R6; R7 := R6["0x46206C58"]
@@ -112,7 +112,7 @@ code size: 50
  20 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["0x1B694258"]
  21 [-]: CALL      R6 1 2       ; R6 := R6()
  22 [-]: SELF      R7 R6 K10    ; R8 := R6; R7 := R6["0x15C954A"]
- 23 [-]: GETGLOBAL R9 K8        ; R9 := Game
+ 23 [-]: GETGLOBAL R9 K2        ; R9 := Engine
  24 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["ADD"]
  25 [-]: CALL      R7 3 1       ; R7(R8,R9)
  26 [-]: SELF      R7 R6 K12    ; R8 := R6; R7 := R6["0x46206C58"]

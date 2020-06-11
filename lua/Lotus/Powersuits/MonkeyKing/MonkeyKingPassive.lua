@@ -198,11 +198,11 @@ code size: 12
   8 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x3B1B11B9"]
   9 [-]: GETGLOBAL R2 K2        ; R2 := Game
  10 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 11 [-]: GETGLOBAL R3 K2        ; R3 := Game
- 12 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["STACKING_MULTIPLY"]
+ 11 [-]: GETGLOBAL R3 K4        ; R3 := Engine
+ 12 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["STACKING_MULTIPLY"]
  13 [-]: GETUPVAL  R4 U3        ; R4 := U3
  14 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
- 15 [-]: GETGLOBAL R7 K5        ; R7 := Engine
+ 15 [-]: GETGLOBAL R7 K4        ; R7 := Engine
  16 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["DT_BASE_ELEMENTAL"]
  17 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
  18 [-]: RETURN    R0 1         ; return 
@@ -250,11 +250,11 @@ code size: 12
   8 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xF21555A7"]
   9 [-]: GETGLOBAL R2 K2        ; R2 := Game
  10 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 11 [-]: GETGLOBAL R3 K2        ; R3 := Game
- 12 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["STACKING_MULTIPLY"]
+ 11 [-]: GETGLOBAL R3 K4        ; R3 := Engine
+ 12 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["STACKING_MULTIPLY"]
  13 [-]: GETUPVAL  R4 U3        ; R4 := U3
  14 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
- 15 [-]: GETGLOBAL R7 K5        ; R7 := Engine
+ 15 [-]: GETGLOBAL R7 K4        ; R7 := Engine
  16 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["DT_BASE_ELEMENTAL"]
  17 [-]: CALL      R0 8 1       ; R0(R1,R2,R3,R4,R5,R6,R7)
  18 [-]: RETURN    R0 1         ; return 
@@ -707,7 +707,7 @@ code size: 12
   5 [-]: LOADK     R5 K3        ; R5 := "/Lotus/Types/PickUps/EnergyIncreaseBaseItem"
   6 [-]: CALL      R4 2 2       ; R4 := R4(R5)
   7 [-]: GETGLOBAL R5 K2        ; R5 := 0x2C00D429
-  8 [-]: LOADK     R6 K4        ; R6 := "/Lotus/Types/PickUps/HealthIncreaseItem"
+  8 [-]: LOADK     R6 K4        ; R6 := "/Lotus/Types/PickUps/HealthIncreaseBaseItem"
   9 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  10 [-]: SETLIST   R3 0 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 0
  11 [-]: GETUPVAL  R4 U0        ; R4 := U0
@@ -772,8 +772,8 @@ code size: 12
  12 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x3B1B11B9"]
  13 [-]: GETGLOBAL R7 K3        ; R7 := Game
  14 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["GAMEPLAY_PICKUP_AMOUNT"]
- 15 [-]: GETGLOBAL R8 K3        ; R8 := Game
- 16 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["STACKING_MULTIPLY"]
+ 15 [-]: GETGLOBAL R8 K5        ; R8 := Engine
+ 16 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["STACKING_MULTIPLY"]
  17 [-]: GETUPVAL  R9 U4        ; R9 := U4
  18 [-]: MOVE      R10 R4       ; R10 := R4
  19 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
@@ -828,8 +828,8 @@ code size: 12
  12 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0xF21555A7"]
  13 [-]: GETGLOBAL R7 K3        ; R7 := Game
  14 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["GAMEPLAY_PICKUP_AMOUNT"]
- 15 [-]: GETGLOBAL R8 K3        ; R8 := Game
- 16 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["STACKING_MULTIPLY"]
+ 15 [-]: GETGLOBAL R8 K5        ; R8 := Engine
+ 16 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["STACKING_MULTIPLY"]
  17 [-]: GETUPVAL  R9 U4        ; R9 := U4
  18 [-]: MOVE      R10 R4       ; R10 := R4
  19 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)

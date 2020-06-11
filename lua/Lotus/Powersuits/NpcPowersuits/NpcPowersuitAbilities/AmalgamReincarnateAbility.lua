@@ -456,31 +456,31 @@ code size: 40
  41 [-]: GETGLOBAL R12 K12      ; R12 := sparkFx
  42 [-]: GETUPVAL  R13 U0       ; R13 := U0
  43 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
- 44 [-]: SELF      R11 R1 K13   ; R12 := R1; R11 := R1["0x7A97EAF5"]
- 45 [-]: GETGLOBAL R13 K14      ; R13 := startAnim
- 46 [-]: MOVE      R14 R1       ; R14 := R1
- 47 [-]: GETGLOBAL R15 K15      ; R15 := Engine
- 48 [-]: GETTABLE  R15 R15 K16  ; R15 := R15["ATMM_PHYSICS_DRIVEN"]
- 49 [-]: GETGLOBAL R16 K15      ; R16 := Engine
- 50 [-]: GETTABLE  R16 R16 K17  ; R16 := R16["PRT_ONCE"]
- 51 [-]: MOVE      R17 R1       ; R17 := R1
- 52 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
- 53 [-]: SELF      R11 R1 K18   ; R12 := R1; R11 := R1["0xBBAF192"]
- 54 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 55 [-]: SELF      R12 R1 K13   ; R13 := R1; R12 := R1["0x7A97EAF5"]
- 56 [-]: GETGLOBAL R14 K19      ; R14 := loopAnim
- 57 [-]: MOVE      R15 R0       ; R15 := R0
- 58 [-]: GETGLOBAL R16 K15      ; R16 := Engine
- 59 [-]: GETTABLE  R16 R16 K16  ; R16 := R16["ATMM_PHYSICS_DRIVEN"]
- 60 [-]: GETGLOBAL R17 K15      ; R17 := Engine
- 61 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["PRT_LOOP"]
- 62 [-]: MOVE      R18 R1       ; R18 := R1
- 63 [-]: CALL      R12 7 1      ; R12(R13,R14,R15,R16,R17,R18)
- 64 [-]: GETGLOBAL R12 K21      ; R12 := buildUpTime
- 65 [-]: SELF      R13 R10 K22  ; R14 := R10; R13 := R10["0xECB5B892"]
- 66 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 44 [-]: SELF      R11 R10 K13  ; R12 := R10; R11 := R10["0xECB5B892"]
+ 45 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 46 [-]: SELF      R12 R1 K14   ; R13 := R1; R12 := R1["0x7A97EAF5"]
+ 47 [-]: GETGLOBAL R14 K15      ; R14 := startAnim
+ 48 [-]: MOVE      R15 R1       ; R15 := R1
+ 49 [-]: GETGLOBAL R16 K16      ; R16 := Engine
+ 50 [-]: GETTABLE  R16 R16 K17  ; R16 := R16["ATMM_PHYSICS_DRIVEN"]
+ 51 [-]: GETGLOBAL R17 K16      ; R17 := Engine
+ 52 [-]: GETTABLE  R17 R17 K18  ; R17 := R17["PRT_ONCE"]
+ 53 [-]: MOVE      R18 R1       ; R18 := R1
+ 54 [-]: CALL      R12 7 1      ; R12(R13,R14,R15,R16,R17,R18)
+ 55 [-]: SELF      R12 R1 K19   ; R13 := R1; R12 := R1["0xBBAF192"]
+ 56 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 57 [-]: SELF      R13 R1 K14   ; R14 := R1; R13 := R1["0x7A97EAF5"]
+ 58 [-]: GETGLOBAL R15 K20      ; R15 := loopAnim
+ 59 [-]: MOVE      R16 R0       ; R16 := R0
+ 60 [-]: GETGLOBAL R17 K16      ; R17 := Engine
+ 61 [-]: GETTABLE  R17 R17 K17  ; R17 := R17["ATMM_PHYSICS_DRIVEN"]
+ 62 [-]: GETGLOBAL R18 K16      ; R18 := Engine
+ 63 [-]: GETTABLE  R18 R18 K21  ; R18 := R18["PRT_LOOP"]
+ 64 [-]: MOVE      R19 R1       ; R19 := R1
+ 65 [-]: CALL      R13 7 1      ; R13(R14,R15,R16,R17,R18,R19)
+ 66 [-]: GETGLOBAL R13 K22      ; R13 := buildUpTime
  67 [-]: LOADK     R14 K23      ; R14 := 4
- 68 [-]: LT        0 K3 R12     ; if 0 >= R12 then PC := 99
+ 68 [-]: LT        0 K3 R13     ; if 0 >= R13 then PC := 99
  69 [-]: JMP       99           ; PC := 99
  70 [-]: GETGLOBAL R15 K2       ; R15 := 0x400E7765
  71 [-]: MOVE      R16 R1       ; R16 := R1
@@ -499,14 +499,14 @@ code size: 40
  84 [-]: SELF      R15 R10 K25  ; R16 := R10; R15 := R10["0x6A7E5F92"]
  85 [-]: GETGLOBAL R17 K26      ; R17 := 0x93034B55
  86 [-]: MOVE      R18 R14      ; R18 := R14
- 87 [-]: MOVE      R19 R13      ; R19 := R13
- 88 [-]: GETGLOBAL R20 K21      ; R20 := buildUpTime
- 89 [-]: DIV       R20 R12 R20  ; R20 := R12 / R20
+ 87 [-]: MOVE      R19 R11      ; R19 := R11
+ 88 [-]: GETGLOBAL R20 K22      ; R20 := buildUpTime
+ 89 [-]: DIV       R20 R13 R20  ; R20 := R13 / R20
  90 [-]: CALL      R17 4 0      ; R17,... := R17(R18,R19,R20)
  91 [-]: CALL      R15 0 1      ; R15(R16,...)
  92 [-]: GETGLOBAL R15 K27      ; R15 := 0x4CDEF9FF
  93 [-]: CALL      R15 1 2      ; R15 := R15()
- 94 [-]: SUB       R12 R12 R15  ; R12 := R12 - R15
+ 94 [-]: SUB       R13 R13 R15  ; R13 := R13 - R15
  95 [-]: GETGLOBAL R15 K28      ; R15 := 0x201191EA
  96 [-]: LOADK     R16 K3       ; R16 := 0
  97 [-]: CALL      R15 2 1      ; R15(R16)
@@ -633,10 +633,10 @@ code size: 40
 218 [-]: SELF      R27 R1 K52   ; R28 := R1; R27 := R1["0x868E646A"]
 219 [-]: GETGLOBAL R29 K53      ; R29 := endAnim
 220 [-]: MOVE      R30 R0       ; R30 := R0
-221 [-]: GETGLOBAL R31 K15      ; R31 := Engine
-222 [-]: GETTABLE  R31 R31 K16  ; R31 := R31["ATMM_PHYSICS_DRIVEN"]
-223 [-]: GETGLOBAL R32 K15      ; R32 := Engine
-224 [-]: GETTABLE  R32 R32 K17  ; R32 := R32["PRT_ONCE"]
+221 [-]: GETGLOBAL R31 K16      ; R31 := Engine
+222 [-]: GETTABLE  R31 R31 K17  ; R31 := R31["ATMM_PHYSICS_DRIVEN"]
+223 [-]: GETGLOBAL R32 K16      ; R32 := Engine
+224 [-]: GETTABLE  R32 R32 K18  ; R32 := R32["PRT_ONCE"]
 225 [-]: MOVE      R33 R1       ; R33 := R1
 226 [-]: CALL      R27 7 0      ; R27,... := R27(R28,R29,R30,R31,R32,R33)
 227 [-]: CALL      R24 0 1      ; R24(R25,...)
@@ -666,7 +666,7 @@ code size: 40
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 257
+; Defined at line: 258
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -738,7 +738,7 @@ code size: 40
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 279
+; Defined at line: 280
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -832,7 +832,7 @@ code size: 40
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 316
+; Defined at line: 317
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

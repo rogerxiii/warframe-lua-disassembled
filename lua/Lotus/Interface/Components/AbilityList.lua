@@ -1,16 +1,19 @@
 code size: 47
 code size: 91
 code size: 12
-code size: 69
+code size: 79
 code size: 45
-code size: 226
+code size: 279
 code size: 12
 code size: 54
 code size: 22
 code size: 30
 code size: 17
+code size: 17
+code size: 16
 code size: 125
-code size: 331
+code size: 20
+code size: 341
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\AbilityList.luac 
 
@@ -243,42 +246,52 @@ code size: 331
  37 [-]: SETTABLE  R3 K31 R4    ; R3["mInitRankYPos"] := R4
  38 [-]: GETGLOBAL R4 K37       ; R4 := sparklesMaterial
  39 [-]: SETTABLE  R3 K36 R4    ; R3["mSparkleMaterial"] := R4
- 40 [-]: CLOSURE   R4 0         ; R4 := closure(Function #3.1)
- 41 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 42 [-]: SETTABLE  R3 K38 R4    ; R3["UpdateVisRanges"] := R4
- 43 [-]: CLOSURE   R4 1         ; R4 := closure(Function #3.2)
- 44 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 45 [-]: MOVE      R0 R3        ; R0 := R3
- 46 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 47 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 48 [-]: SETTABLE  R3 K39 R4    ; R3["Populate"] := R4
- 49 [-]: GETTABLE  R4 R3 K41    ; R4 := R3["CalculateX"]
- 50 [-]: SETTABLE  R3 K40 R4    ; R3["List_CalculateX"] := R4
- 51 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3.3)
- 52 [-]: SETTABLE  R3 K41 R4    ; R3["CalculateX"] := R4
- 53 [-]: CLOSURE   R4 3         ; R4 := closure(Function #3.4)
- 54 [-]: MOVE      R0 R3        ; R0 := R3
- 55 [-]: SETTABLE  R3 K42 R4    ; R3["mOnFocusedCallback"] := R4
- 56 [-]: CLOSURE   R4 4         ; R4 := closure(Function #3.5)
- 57 [-]: MOVE      R0 R3        ; R0 := R3
- 58 [-]: SETTABLE  R3 K43 R4    ; R3["mOnUnfocusedCallback"] := R4
- 59 [-]: CLOSURE   R4 5         ; R4 := closure(Function #3.6)
- 60 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 61 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 62 [-]: SETTABLE  R3 K44 R4    ; R3["UpdateColors"] := R4
- 63 [-]: CLOSURE   R4 6         ; R4 := closure(Function #3.7)
- 64 [-]: MOVE      R0 R3        ; R0 := R3
- 65 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 66 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 67 [-]: SETTABLE  R3 K45 R4    ; R3["mElementDrawCallback"] := R4
- 68 [-]: RETURN    R3 2         ; return R3
- 69 [-]: RETURN    R0 1         ; return 
+ 40 [-]: NEWTABLE  R4 0 3       ; R4 := {}
+ 41 [-]: SETTABLE  R4 K39 K40   ; R4["Loader"] := nil
+ 42 [-]: SETTABLE  R4 K41 K30   ; R4["IsLoading"] := "0x0"
+ 43 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 44 [-]: SETTABLE  R4 K42 R5    ; R4["StuffToLoad"] := R5
+ 45 [-]: SETTABLE  R3 K38 R4    ; R3["mIconLoader"] := R4
+ 46 [-]: CLOSURE   R4 0         ; R4 := closure(Function #3.1)
+ 47 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 48 [-]: SETTABLE  R3 K43 R4    ; R3["UpdateVisRanges"] := R4
+ 49 [-]: CLOSURE   R4 1         ; R4 := closure(Function #3.2)
+ 50 [-]: MOVE      R0 R3        ; R0 := R3
+ 51 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 52 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 53 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 54 [-]: SETTABLE  R3 K44 R4    ; R3["Populate"] := R4
+ 55 [-]: GETTABLE  R4 R3 K46    ; R4 := R3["CalculateX"]
+ 56 [-]: SETTABLE  R3 K45 R4    ; R3["List_CalculateX"] := R4
+ 57 [-]: CLOSURE   R4 2         ; R4 := closure(Function #3.3)
+ 58 [-]: SETTABLE  R3 K46 R4    ; R3["CalculateX"] := R4
+ 59 [-]: CLOSURE   R4 3         ; R4 := closure(Function #3.4)
+ 60 [-]: MOVE      R0 R3        ; R0 := R3
+ 61 [-]: SETTABLE  R3 K47 R4    ; R3["mOnFocusedCallback"] := R4
+ 62 [-]: CLOSURE   R4 4         ; R4 := closure(Function #3.5)
+ 63 [-]: MOVE      R0 R3        ; R0 := R3
+ 64 [-]: SETTABLE  R3 K48 R4    ; R3["mOnUnfocusedCallback"] := R4
+ 65 [-]: CLOSURE   R4 5         ; R4 := closure(Function #3.6)
+ 66 [-]: SETTABLE  R3 K49 R4    ; R3["Update"] := R4
+ 67 [-]: CLOSURE   R4 6         ; R4 := closure(Function #3.7)
+ 68 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 69 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 70 [-]: SETTABLE  R3 K50 R4    ; R3["UpdateColors"] := R4
+ 71 [-]: CLOSURE   R4 7         ; R4 := closure(Function #3.8)
+ 72 [-]: SETTABLE  R3 K51 R4    ; R3["SetIconForElement"] := R4
+ 73 [-]: CLOSURE   R4 8         ; R4 := closure(Function #3.9)
+ 74 [-]: MOVE      R0 R3        ; R0 := R3
+ 75 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 76 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 77 [-]: SETTABLE  R3 K52 R4    ; R3["mElementDrawCallback"] := R4
+ 78 [-]: RETURN    R3 2         ; return R3
+ 79 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3.1:
 ;
 ; Name:            
-; Defined at line: 83
+; Defined at line: 84
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -334,7 +347,7 @@ code size: 331
 ; Function #3.2:
 ;
 ; Name:            
-; Defined at line: 95
+; Defined at line: 96
 ; #Upvalues:       4
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -404,174 +417,227 @@ code size: 331
  62 [-]: MOVE      R12 R9       ; R12 := R9
  63 [-]: MOVE      R13 R1       ; R13 := R1
  64 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
- 65 [-]: LOADK     R10 K29      ; R10 := 1
- 66 [-]: LOADK     R11 K30      ; R11 := 4
- 67 [-]: LOADK     R12 K29      ; R12 := 1
- 68 [-]: FORPREP   R10 88       ; R10 -= R12; PC := 88
- 69 [-]: GETUPVAL  R14 U0       ; R14 := U0
- 70 [-]: GETTABLE  R15 R0 K20   ; R15 := R0["mMovie"]
- 71 [-]: MOVE      R16 R13      ; R16 := R13
- 72 [-]: MOVE      R17 R2       ; R17 := R2
- 73 [-]: MOVE      R18 R1       ; R18 := R1
- 74 [-]: MOVE      R19 R3       ; R19 := R3
- 75 [-]: MOVE      R20 R4       ; R20 := R4
- 76 [-]: MOVE      R21 R5       ; R21 := R5
- 77 [-]: CALL      R14 8 2      ; R14 := R14(R15,R16,R17,R18,R19,R20,R21)
- 78 [-]: EQ        1 R14 K6     ; if R14 == nil then PC := 88
- 79 [-]: JMP       88           ; PC := 88
- 80 [-]: GETTABLE  R15 R0 K31   ; R15 := R0["mSimplePopup"]
- 81 [-]: TEST      R15 0        ; if not R15 then PC := 84
- 82 [-]: JMP       84           ; PC := 84
- 83 [-]: SETTABLE  R14 K32 K33  ; R14["IsAbility"] := "0x0"
- 84 [-]: SELF      R15 R0 K28   ; R16 := R0; R15 := R0["0xA77DA8EE"]
- 85 [-]: MOVE      R17 R14      ; R17 := R14
- 86 [-]: MOVE      R18 R1       ; R18 := R1
- 87 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
- 88 [-]: FORLOOP   R10 69       ; R10 += R12; if R10 <= R11 then begin PC := 69; R13 := R10 end
- 89 [-]: EQ        1 R6 K6      ; if R6 == nil then PC := 118
- 90 [-]: JMP       118          ; PC := 118
- 91 [-]: LOADK     R15 K29      ; R15 := 1
- 92 [-]: LEN       R16 R6       ; R16 := # R6
- 93 [-]: LOADK     R17 K29      ; R17 := 1
- 94 [-]: FORPREP   R15 117      ; R15 -= R17; PC := 117
- 95 [-]: GETUPVAL  R19 U0       ; R19 := U0
- 96 [-]: GETTABLE  R20 R0 K20   ; R20 := R0["mMovie"]
- 97 [-]: LOADK     R21 K29      ; R21 := 1
- 98 [-]: MOVE      R22 R2       ; R22 := R2
- 99 [-]: MOVE      R23 R1       ; R23 := R1
-100 [-]: MOVE      R24 R3       ; R24 := R3
-101 [-]: MOVE      R25 R4       ; R25 := R4
-102 [-]: MOVE      R26 R5       ; R26 := R5
-103 [-]: GETGLOBAL R27 K2       ; R27 := 0x7C282057
-104 [-]: GETTABLE  R28 R6 R18   ; R28 := R6[R18]
-105 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
-106 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
-107 [-]: EQ        1 R19 K6     ; if R19 == nil then PC := 117
-108 [-]: JMP       117          ; PC := 117
-109 [-]: GETTABLE  R20 R0 K31   ; R20 := R0["mSimplePopup"]
-110 [-]: TEST      R20 0        ; if not R20 then PC := 113
-111 [-]: JMP       113          ; PC := 113
-112 [-]: SETTABLE  R19 K32 K33  ; R19["IsAbility"] := "0x0"
-113 [-]: SELF      R20 R0 K28   ; R21 := R0; R20 := R0["0xA77DA8EE"]
-114 [-]: MOVE      R22 R19      ; R22 := R19
-115 [-]: MOVE      R23 R1       ; R23 := R1
-116 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
-117 [-]: FORLOOP   R15 95       ; R15 += R17; if R15 <= R16 then begin PC := 95; R18 := R15 end
-118 [-]: GETTABLE  R20 R0 K34   ; R20 := R0["mSkipAbilityColorGet"]
-119 [-]: EQ        1 R20 K6     ; if R20 == nil then PC := 124
-120 [-]: JMP       124          ; PC := 124
-121 [-]: GETTABLE  R20 R0 K34   ; R20 := R0["mSkipAbilityColorGet"]
-122 [-]: TEST      R20 1        ; if R20 then PC := 137
-123 [-]: JMP       137          ; PC := 137
-124 [-]: GETGLOBAL R20 K36      ; R20 := 0xB5A59043
-125 [-]: CALL      R20 1 2      ; R20 := R20()
-126 [-]: SETTABLE  R0 K35 R20   ; R0["mAbilityColor1"] := R20
-127 [-]: GETGLOBAL R20 K36      ; R20 := 0xB5A59043
-128 [-]: CALL      R20 1 2      ; R20 := R20()
-129 [-]: SETTABLE  R0 K37 R20   ; R0["mAbilityColor2"] := R20
-130 [-]: SELF      R20 R7 K38   ; R21 := R7; R20 := R7["0xCB7ACBB3"]
-131 [-]: GETTABLE  R22 R0 K35   ; R22 := R0["mAbilityColor1"]
-132 [-]: CALL      R20 3 1      ; R20(R21,R22)
-133 [-]: SELF      R20 R7 K38   ; R21 := R7; R20 := R7["0xCB7ACBB3"]
-134 [-]: GETTABLE  R22 R0 K37   ; R22 := R0["mAbilityColor2"]
-135 [-]: MOVE      R23 R1       ; R23 := R1
-136 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
-137 [-]: GETUPVAL  R20 U1       ; R20 := U1
-138 [-]: GETTABLE  R20 R20 K39  ; R20 := R20["mSparkleMaterial"]
-139 [-]: SELF      R20 R20 K40  ; R21 := R20; R20 := R20["0x94FB2E1A"]
-140 [-]: GETGLOBAL R22 K12      ; R22 := 0xEC274B1A
-141 [-]: LOADK     R23 K41      ; R23 := "TintColor"
-142 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-143 [-]: GETTABLE  R23 R0 K35   ; R23 := R0["mAbilityColor1"]
-144 [-]: GETTABLE  R23 R23 K42  ; R23 := R23["red"]
-145 [-]: DIV       R23 R23 K43  ; R23 := R23 / 255
-146 [-]: GETTABLE  R24 R0 K35   ; R24 := R0["mAbilityColor1"]
-147 [-]: GETTABLE  R24 R24 K44  ; R24 := R24["green"]
-148 [-]: DIV       R24 R24 K43  ; R24 := R24 / 255
-149 [-]: GETTABLE  R25 R0 K35   ; R25 := R0["mAbilityColor1"]
-150 [-]: GETTABLE  R25 R25 K45  ; R25 := R25["blue"]
-151 [-]: DIV       R25 R25 K43  ; R25 := R25 / 255
-152 [-]: LOADK     R26 K29      ; R26 := 1
-153 [-]: CALL      R20 7 1      ; R20(R21,R22,R23,R24,R25,R26)
-154 [-]: GETUPVAL  R20 U1       ; R20 := U1
-155 [-]: GETTABLE  R20 R20 K39  ; R20 := R20["mSparkleMaterial"]
-156 [-]: SELF      R20 R20 K40  ; R21 := R20; R20 := R20["0x94FB2E1A"]
-157 [-]: GETGLOBAL R22 K12      ; R22 := 0xEC274B1A
-158 [-]: LOADK     R23 K46      ; R23 := "GlowColor"
-159 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-160 [-]: GETTABLE  R23 R0 K37   ; R23 := R0["mAbilityColor2"]
-161 [-]: GETTABLE  R23 R23 K42  ; R23 := R23["red"]
-162 [-]: DIV       R23 R23 K47  ; R23 := R23 / 128
-163 [-]: GETTABLE  R24 R0 K37   ; R24 := R0["mAbilityColor2"]
-164 [-]: GETTABLE  R24 R24 K44  ; R24 := R24["green"]
-165 [-]: DIV       R24 R24 K47  ; R24 := R24 / 128
-166 [-]: GETTABLE  R25 R0 K37   ; R25 := R0["mAbilityColor2"]
-167 [-]: GETTABLE  R25 R25 K45  ; R25 := R25["blue"]
-168 [-]: DIV       R25 R25 K47  ; R25 := R25 / 128
-169 [-]: LOADK     R26 K29      ; R26 := 1
-170 [-]: CALL      R20 7 1      ; R20(R21,R22,R23,R24,R25,R26)
-171 [-]: SELF      R20 R0 K48   ; R21 := R0; R20 := R0["0x6470BAF4"]
-172 [-]: CALL      R20 2 1      ; R20(R21)
-173 [-]: GETTABLE  R20 R0 K49   ; R20 := R0["mForcedHorizontalSeparation"]
-174 [-]: SELF      R21 R0 K50   ; R22 := R0; R21 := R0["0xC51A5C9D"]
-175 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-176 [-]: MUL       R20 R20 R21  ; R20 := R20 * R21
-177 [-]: GETTABLE  R21 R0 K51   ; R21 := R0["mUnderlineWidthOffset"]
-178 [-]: ADD       R20 R20 R21  ; R20 := R20 + R21
-179 [-]: GETTABLE  R21 R0 K3    ; R21 := R0["mShowPassive"]
-180 [-]: TEST      R21 0        ; if not R21 then PC := 183
-181 [-]: JMP       183          ; PC := 183
-182 [-]: SUB       R20 R20 K52  ; R20 := R20 - 30
-183 [-]: GETUPVAL  R21 U2       ; R21 := U2
-184 [-]: GETTABLE  R21 R21 K53  ; R21 := R21["0xC9168CC"]
-185 [-]: GETTABLE  R22 R0 K20   ; R22 := R0["mMovie"]
-186 [-]: GETTABLE  R23 R0 K54   ; R23 := R0["mParentClipName"]
-187 [-]: LOADK     R24 K55      ; R24 := ".Underline"
-188 [-]: CONCAT    R23 R23 R24  ; R23 := R23 .. R24
-189 [-]: MOVE      R24 R20      ; R24 := R20
-190 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
-191 [-]: GETTABLE  R21 R0 K20   ; R21 := R0["mMovie"]
-192 [-]: SELF      R21 R21 K56  ; R22 := R21; R21 := R21["0x880196A7"]
-193 [-]: GETTABLE  R23 R0 K54   ; R23 := R0["mParentClipName"]
-194 [-]: LOADK     R24 K57      ; R24 := "Underline"
-195 [-]: LOADK     R25 K58      ; R25 := "_color"
-196 [-]: GETUPVAL  R26 U3       ; R26 := U3
-197 [-]: GETTABLE  R26 R26 K59  ; R26 := R26["0xDDA3917C"]
-198 [-]: GETGLOBAL R27 K60      ; R27 := Lotus_Game
-199 [-]: GETTABLE  R27 R27 K61  ; R27 := R27["UIStyle_FloatingContent"]
-200 [-]: MOVE      R28 R1       ; R28 := R1
-201 [-]: CALL      R26 3 0      ; R26,... := R26(R27,R28)
-202 [-]: CALL      R21 0 1      ; R21(R22,...)
-203 [-]: GETTABLE  R21 R0 K62   ; R21 := R0["VisibleRangeInfo"]
-204 [-]: EQ        1 R21 K6     ; if R21 == nil then PC := 226
-205 [-]: JMP       226          ; PC := 226
-206 [-]: NEWTABLE  R21 3 0      ; R21 := {}
-207 [-]: LOADK     R22 K63      ; R22 := "UnderLine.Fill"
-208 [-]: LOADK     R23 K64      ; R23 := "Underline.CapLeft"
-209 [-]: LOADK     R24 K65      ; R24 := "Underline.CapRight"
-210 [-]: SETLIST   R21 3 1      ; R21[(1-1)*FPF+i] := R(21+i), 1 <= i <= 3
-211 [-]: GETGLOBAL R22 K66      ; R22 := 0xECFDD17
-212 [-]: MOVE      R23 R21      ; R23 := R21
-213 [-]: CALL      R22 2 4      ; R22,R23,R24 := R22(R23)
-214 [-]: JMP       224          ; PC := 224
-215 [-]: GETTABLE  R27 R0 K20   ; R27 := R0["mMovie"]
-216 [-]: SELF      R27 R27 K67  ; R28 := R27; R27 := R27["0x7E1F26D7"]
-217 [-]: GETTABLE  R29 R0 K54   ; R29 := R0["mParentClipName"]
-218 [-]: LOADK     R30 K68      ; R30 := "."
-219 [-]: MOVE      R31 R26      ; R31 := R26
-220 [-]: CONCAT    R29 R29 R31  ; R29 := R29 .. R30 .. R31
-221 [-]: GETTABLE  R30 R0 K62   ; R30 := R0["VisibleRangeInfo"]
-222 [-]: GETTABLE  R30 R30 K69  ; R30 := R30["BaseMaterial"]
-223 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
-224 [-]: TFORLOOP  R22 2        ; R25,R26 :=  R22(R23,R24); if R25 ~= nil then begin PC = 215; R24 := R25 end
-225 [-]: JMP       215          ; PC := 215
-226 [-]: RETURN    R0 1         ; return 
+ 65 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 66 [-]: GETTABLE  R10 R10 K29  ; R10 := R10["mIconLoader"]
+ 67 [-]: SETTABLE  R10 K30 K31  ; R10["IsLoading"] := "0x0"
+ 68 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 69 [-]: GETTABLE  R10 R10 K29  ; R10 := R10["mIconLoader"]
+ 70 [-]: NEWTABLE  R11 0 0      ; R11 := {}
+ 71 [-]: SETTABLE  R10 K32 R11  ; R10["StuffToLoad"] := R11
+ 72 [-]: LOADK     R10 K33      ; R10 := 1
+ 73 [-]: LOADK     R11 K34      ; R11 := 4
+ 74 [-]: LOADK     R12 K33      ; R12 := 1
+ 75 [-]: FORPREP   R10 109      ; R10 -= R12; PC := 109
+ 76 [-]: GETUPVAL  R14 U1       ; R14 := U1
+ 77 [-]: GETTABLE  R15 R0 K20   ; R15 := R0["mMovie"]
+ 78 [-]: MOVE      R16 R13      ; R16 := R13
+ 79 [-]: MOVE      R17 R2       ; R17 := R2
+ 80 [-]: MOVE      R18 R1       ; R18 := R1
+ 81 [-]: MOVE      R19 R3       ; R19 := R3
+ 82 [-]: MOVE      R20 R4       ; R20 := R4
+ 83 [-]: MOVE      R21 R5       ; R21 := R5
+ 84 [-]: CALL      R14 8 2      ; R14 := R14(R15,R16,R17,R18,R19,R20,R21)
+ 85 [-]: EQ        1 R14 K6     ; if R14 == nil then PC := 109
+ 86 [-]: JMP       109          ; PC := 109
+ 87 [-]: GETGLOBAL R15 K9       ; R15 := 0x400E7765
+ 88 [-]: GETTABLE  R16 R14 K26  ; R16 := R14["Icon"]
+ 89 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+ 90 [-]: TEST      R15 1        ; if R15 then PC := 101
+ 91 [-]: JMP       101          ; PC := 101
+ 92 [-]: GETGLOBAL R15 K35      ; R15 := table
+ 93 [-]: GETTABLE  R15 R15 K36  ; R15 := R15["0xE6450C9D"]
+ 94 [-]: GETUPVAL  R16 U0       ; R16 := U0
+ 95 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["mIconLoader"]
+ 96 [-]: GETTABLE  R16 R16 K32  ; R16 := R16["StuffToLoad"]
+ 97 [-]: GETTABLE  R17 R14 K26  ; R17 := R14["Icon"]
+ 98 [-]: SELF      R17 R17 K37  ; R18 := R17; R17 := R17["0x1B252E3C"]
+ 99 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
+100 [-]: CALL      R15 0 1      ; R15(R16,...)
+101 [-]: GETTABLE  R15 R0 K38   ; R15 := R0["mSimplePopup"]
+102 [-]: TEST      R15 0        ; if not R15 then PC := 105
+103 [-]: JMP       105          ; PC := 105
+104 [-]: SETTABLE  R14 K39 K31  ; R14["IsAbility"] := "0x0"
+105 [-]: SELF      R15 R0 K28   ; R16 := R0; R15 := R0["0xA77DA8EE"]
+106 [-]: MOVE      R17 R14      ; R17 := R14
+107 [-]: MOVE      R18 R1       ; R18 := R1
+108 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+109 [-]: FORLOOP   R10 76       ; R10 += R12; if R10 <= R11 then begin PC := 76; R13 := R10 end
+110 [-]: EQ        1 R6 K6      ; if R6 == nil then PC := 153
+111 [-]: JMP       153          ; PC := 153
+112 [-]: LOADK     R15 K33      ; R15 := 1
+113 [-]: LEN       R16 R6       ; R16 := # R6
+114 [-]: LOADK     R17 K33      ; R17 := 1
+115 [-]: FORPREP   R15 152      ; R15 -= R17; PC := 152
+116 [-]: GETUPVAL  R19 U1       ; R19 := U1
+117 [-]: GETTABLE  R20 R0 K20   ; R20 := R0["mMovie"]
+118 [-]: LOADK     R21 K33      ; R21 := 1
+119 [-]: MOVE      R22 R2       ; R22 := R2
+120 [-]: MOVE      R23 R1       ; R23 := R1
+121 [-]: MOVE      R24 R3       ; R24 := R3
+122 [-]: MOVE      R25 R4       ; R25 := R4
+123 [-]: MOVE      R26 R5       ; R26 := R5
+124 [-]: GETGLOBAL R27 K2       ; R27 := 0x7C282057
+125 [-]: GETTABLE  R28 R6 R18   ; R28 := R6[R18]
+126 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
+127 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
+128 [-]: EQ        1 R19 K6     ; if R19 == nil then PC := 152
+129 [-]: JMP       152          ; PC := 152
+130 [-]: GETGLOBAL R20 K9       ; R20 := 0x400E7765
+131 [-]: GETTABLE  R21 R19 K26  ; R21 := R19["Icon"]
+132 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+133 [-]: TEST      R20 1        ; if R20 then PC := 144
+134 [-]: JMP       144          ; PC := 144
+135 [-]: GETGLOBAL R20 K35      ; R20 := table
+136 [-]: GETTABLE  R20 R20 K36  ; R20 := R20["0xE6450C9D"]
+137 [-]: GETUPVAL  R21 U0       ; R21 := U0
+138 [-]: GETTABLE  R21 R21 K29  ; R21 := R21["mIconLoader"]
+139 [-]: GETTABLE  R21 R21 K32  ; R21 := R21["StuffToLoad"]
+140 [-]: GETTABLE  R22 R19 K26  ; R22 := R19["Icon"]
+141 [-]: SELF      R22 R22 K37  ; R23 := R22; R22 := R22["0x1B252E3C"]
+142 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+143 [-]: CALL      R20 0 1      ; R20(R21,...)
+144 [-]: GETTABLE  R20 R0 K38   ; R20 := R0["mSimplePopup"]
+145 [-]: TEST      R20 0        ; if not R20 then PC := 148
+146 [-]: JMP       148          ; PC := 148
+147 [-]: SETTABLE  R19 K39 K31  ; R19["IsAbility"] := "0x0"
+148 [-]: SELF      R20 R0 K28   ; R21 := R0; R20 := R0["0xA77DA8EE"]
+149 [-]: MOVE      R22 R19      ; R22 := R19
+150 [-]: MOVE      R23 R1       ; R23 := R1
+151 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
+152 [-]: FORLOOP   R15 116      ; R15 += R17; if R15 <= R16 then begin PC := 116; R18 := R15 end
+153 [-]: GETUPVAL  R20 U0       ; R20 := U0
+154 [-]: GETTABLE  R20 R20 K29  ; R20 := R20["mIconLoader"]
+155 [-]: GETTABLE  R20 R20 K32  ; R20 := R20["StuffToLoad"]
+156 [-]: LEN       R20 R20      ; R20 := # R20
+157 [-]: LT        0 K40 R20    ; if 0 >= R20 then PC := 171
+158 [-]: JMP       171          ; PC := 171
+159 [-]: GETUPVAL  R20 U0       ; R20 := U0
+160 [-]: GETTABLE  R20 R20 K29  ; R20 := R20["mIconLoader"]
+161 [-]: GETGLOBAL R21 K42      ; R21 := UISys
+162 [-]: GETTABLE  R21 R21 K43  ; R21 := R21["0x449B53E0"]
+163 [-]: GETUPVAL  R22 U0       ; R22 := U0
+164 [-]: GETTABLE  R22 R22 K29  ; R22 := R22["mIconLoader"]
+165 [-]: GETTABLE  R22 R22 K32  ; R22 := R22["StuffToLoad"]
+166 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+167 [-]: SETTABLE  R20 K41 R21  ; R20["Loader"] := R21
+168 [-]: GETUPVAL  R20 U0       ; R20 := U0
+169 [-]: GETTABLE  R20 R20 K29  ; R20 := R20["mIconLoader"]
+170 [-]: SETTABLE  R20 K30 K15  ; R20["IsLoading"] := "0x1"
+171 [-]: GETTABLE  R20 R0 K44   ; R20 := R0["mSkipAbilityColorGet"]
+172 [-]: EQ        1 R20 K6     ; if R20 == nil then PC := 177
+173 [-]: JMP       177          ; PC := 177
+174 [-]: GETTABLE  R20 R0 K44   ; R20 := R0["mSkipAbilityColorGet"]
+175 [-]: TEST      R20 1        ; if R20 then PC := 190
+176 [-]: JMP       190          ; PC := 190
+177 [-]: GETGLOBAL R20 K46      ; R20 := 0xB5A59043
+178 [-]: CALL      R20 1 2      ; R20 := R20()
+179 [-]: SETTABLE  R0 K45 R20   ; R0["mAbilityColor1"] := R20
+180 [-]: GETGLOBAL R20 K46      ; R20 := 0xB5A59043
+181 [-]: CALL      R20 1 2      ; R20 := R20()
+182 [-]: SETTABLE  R0 K47 R20   ; R0["mAbilityColor2"] := R20
+183 [-]: SELF      R20 R7 K48   ; R21 := R7; R20 := R7["0xCB7ACBB3"]
+184 [-]: GETTABLE  R22 R0 K45   ; R22 := R0["mAbilityColor1"]
+185 [-]: CALL      R20 3 1      ; R20(R21,R22)
+186 [-]: SELF      R20 R7 K48   ; R21 := R7; R20 := R7["0xCB7ACBB3"]
+187 [-]: GETTABLE  R22 R0 K47   ; R22 := R0["mAbilityColor2"]
+188 [-]: MOVE      R23 R1       ; R23 := R1
+189 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
+190 [-]: GETUPVAL  R20 U0       ; R20 := U0
+191 [-]: GETTABLE  R20 R20 K49  ; R20 := R20["mSparkleMaterial"]
+192 [-]: SELF      R20 R20 K50  ; R21 := R20; R20 := R20["0x94FB2E1A"]
+193 [-]: GETGLOBAL R22 K12      ; R22 := 0xEC274B1A
+194 [-]: LOADK     R23 K51      ; R23 := "TintColor"
+195 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+196 [-]: GETTABLE  R23 R0 K45   ; R23 := R0["mAbilityColor1"]
+197 [-]: GETTABLE  R23 R23 K52  ; R23 := R23["red"]
+198 [-]: DIV       R23 R23 K53  ; R23 := R23 / 255
+199 [-]: GETTABLE  R24 R0 K45   ; R24 := R0["mAbilityColor1"]
+200 [-]: GETTABLE  R24 R24 K54  ; R24 := R24["green"]
+201 [-]: DIV       R24 R24 K53  ; R24 := R24 / 255
+202 [-]: GETTABLE  R25 R0 K45   ; R25 := R0["mAbilityColor1"]
+203 [-]: GETTABLE  R25 R25 K55  ; R25 := R25["blue"]
+204 [-]: DIV       R25 R25 K53  ; R25 := R25 / 255
+205 [-]: LOADK     R26 K33      ; R26 := 1
+206 [-]: CALL      R20 7 1      ; R20(R21,R22,R23,R24,R25,R26)
+207 [-]: GETUPVAL  R20 U0       ; R20 := U0
+208 [-]: GETTABLE  R20 R20 K49  ; R20 := R20["mSparkleMaterial"]
+209 [-]: SELF      R20 R20 K50  ; R21 := R20; R20 := R20["0x94FB2E1A"]
+210 [-]: GETGLOBAL R22 K12      ; R22 := 0xEC274B1A
+211 [-]: LOADK     R23 K56      ; R23 := "GlowColor"
+212 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+213 [-]: GETTABLE  R23 R0 K47   ; R23 := R0["mAbilityColor2"]
+214 [-]: GETTABLE  R23 R23 K52  ; R23 := R23["red"]
+215 [-]: DIV       R23 R23 K57  ; R23 := R23 / 128
+216 [-]: GETTABLE  R24 R0 K47   ; R24 := R0["mAbilityColor2"]
+217 [-]: GETTABLE  R24 R24 K54  ; R24 := R24["green"]
+218 [-]: DIV       R24 R24 K57  ; R24 := R24 / 128
+219 [-]: GETTABLE  R25 R0 K47   ; R25 := R0["mAbilityColor2"]
+220 [-]: GETTABLE  R25 R25 K55  ; R25 := R25["blue"]
+221 [-]: DIV       R25 R25 K57  ; R25 := R25 / 128
+222 [-]: LOADK     R26 K33      ; R26 := 1
+223 [-]: CALL      R20 7 1      ; R20(R21,R22,R23,R24,R25,R26)
+224 [-]: SELF      R20 R0 K58   ; R21 := R0; R20 := R0["0x6470BAF4"]
+225 [-]: CALL      R20 2 1      ; R20(R21)
+226 [-]: GETTABLE  R20 R0 K59   ; R20 := R0["mForcedHorizontalSeparation"]
+227 [-]: SELF      R21 R0 K60   ; R22 := R0; R21 := R0["0xC51A5C9D"]
+228 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+229 [-]: MUL       R20 R20 R21  ; R20 := R20 * R21
+230 [-]: GETTABLE  R21 R0 K61   ; R21 := R0["mUnderlineWidthOffset"]
+231 [-]: ADD       R20 R20 R21  ; R20 := R20 + R21
+232 [-]: GETTABLE  R21 R0 K3    ; R21 := R0["mShowPassive"]
+233 [-]: TEST      R21 0        ; if not R21 then PC := 236
+234 [-]: JMP       236          ; PC := 236
+235 [-]: SUB       R20 R20 K62  ; R20 := R20 - 30
+236 [-]: GETUPVAL  R21 U2       ; R21 := U2
+237 [-]: GETTABLE  R21 R21 K63  ; R21 := R21["0xC9168CC"]
+238 [-]: GETTABLE  R22 R0 K20   ; R22 := R0["mMovie"]
+239 [-]: GETTABLE  R23 R0 K64   ; R23 := R0["mParentClipName"]
+240 [-]: LOADK     R24 K65      ; R24 := ".Underline"
+241 [-]: CONCAT    R23 R23 R24  ; R23 := R23 .. R24
+242 [-]: MOVE      R24 R20      ; R24 := R20
+243 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
+244 [-]: GETTABLE  R21 R0 K20   ; R21 := R0["mMovie"]
+245 [-]: SELF      R21 R21 K66  ; R22 := R21; R21 := R21["0x880196A7"]
+246 [-]: GETTABLE  R23 R0 K64   ; R23 := R0["mParentClipName"]
+247 [-]: LOADK     R24 K67      ; R24 := "Underline"
+248 [-]: LOADK     R25 K68      ; R25 := "_color"
+249 [-]: GETUPVAL  R26 U3       ; R26 := U3
+250 [-]: GETTABLE  R26 R26 K69  ; R26 := R26["0xDDA3917C"]
+251 [-]: GETGLOBAL R27 K70      ; R27 := Lotus_Game
+252 [-]: GETTABLE  R27 R27 K71  ; R27 := R27["UIStyle_FloatingContent"]
+253 [-]: MOVE      R28 R1       ; R28 := R1
+254 [-]: CALL      R26 3 0      ; R26,... := R26(R27,R28)
+255 [-]: CALL      R21 0 1      ; R21(R22,...)
+256 [-]: GETTABLE  R21 R0 K72   ; R21 := R0["VisibleRangeInfo"]
+257 [-]: EQ        1 R21 K6     ; if R21 == nil then PC := 279
+258 [-]: JMP       279          ; PC := 279
+259 [-]: NEWTABLE  R21 3 0      ; R21 := {}
+260 [-]: LOADK     R22 K73      ; R22 := "UnderLine.Fill"
+261 [-]: LOADK     R23 K74      ; R23 := "Underline.CapLeft"
+262 [-]: LOADK     R24 K75      ; R24 := "Underline.CapRight"
+263 [-]: SETLIST   R21 3 1      ; R21[(1-1)*FPF+i] := R(21+i), 1 <= i <= 3
+264 [-]: GETGLOBAL R22 K76      ; R22 := 0xECFDD17
+265 [-]: MOVE      R23 R21      ; R23 := R21
+266 [-]: CALL      R22 2 4      ; R22,R23,R24 := R22(R23)
+267 [-]: JMP       277          ; PC := 277
+268 [-]: GETTABLE  R27 R0 K20   ; R27 := R0["mMovie"]
+269 [-]: SELF      R27 R27 K77  ; R28 := R27; R27 := R27["0x7E1F26D7"]
+270 [-]: GETTABLE  R29 R0 K64   ; R29 := R0["mParentClipName"]
+271 [-]: LOADK     R30 K78      ; R30 := "."
+272 [-]: MOVE      R31 R26      ; R31 := R26
+273 [-]: CONCAT    R29 R29 R31  ; R29 := R29 .. R30 .. R31
+274 [-]: GETTABLE  R30 R0 K72   ; R30 := R0["VisibleRangeInfo"]
+275 [-]: GETTABLE  R30 R30 K79  ; R30 := R30["BaseMaterial"]
+276 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
+277 [-]: TFORLOOP  R22 2        ; R25,R26 :=  R22(R23,R24); if R25 ~= nil then begin PC = 268; R24 := R25 end
+278 [-]: JMP       268          ; PC := 268
+279 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3.3:
 ;
 ; Name:            
-; Defined at line: 172
+; Defined at line: 187
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -594,7 +660,7 @@ code size: 331
 ; Function #3.4:
 ;
 ; Name:            
-; Defined at line: 181
+; Defined at line: 196
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -659,7 +725,7 @@ code size: 331
 ; Function #3.4.1:
 ;
 ; Name:            
-; Defined at line: 190
+; Defined at line: 205
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -692,7 +758,7 @@ code size: 331
 ; Function #3.5:
 ;
 ; Name:            
-; Defined at line: 200
+; Defined at line: 215
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -733,7 +799,7 @@ code size: 331
 ; Function #3.5.1:
 ;
 ; Name:            
-; Defined at line: 206
+; Defined at line: 221
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -761,7 +827,62 @@ code size: 331
 ; Function #3.6:
 ;
 ; Name:            
-; Defined at line: 213
+; Defined at line: 228
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mIconLoader"]
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["IsLoading"]
+  3 [-]: TEST      R1 0         ; if not R1 then PC := 17
+  4 [-]: JMP       17           ; PC := 17
+  5 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mIconLoader"]
+  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["Loader"]
+  7 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0xAFDDC504"]
+  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  9 [-]: TEST      R1 0         ; if not R1 then PC := 17
+ 10 [-]: JMP       17           ; PC := 17
+ 11 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mIconLoader"]
+ 12 [-]: SETTABLE  R1 K1 K4     ; R1["IsLoading"] := "0x0"
+ 13 [-]: SELF      R1 R0 K5     ; R2 := R0; R1 := R0["0x9D2060CB"]
+ 14 [-]: CLOSURE   R3 0         ; R3 := closure(Function #3.6.1)
+ 15 [-]: MOVE      R0 R0        ; R0 := R0
+ 16 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 17 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3.6.1:
+;
+; Name:            
+; Defined at line: 233
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  7
+
+  1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["IsPassive"]
+  2 [-]: TEST      R1 1         ; if R1 then PC := 16
+  3 [-]: JMP       16           ; PC := 16
+  4 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  5 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["mMovie"]
+  6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x880196A7"]
+  7 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
+  8 [-]: LOADK     R4 K4        ; R4 := "Icon"
+  9 [-]: LOADK     R5 K5        ; R5 := "_visible"
+ 10 [-]: MOVE      R6 R1        ; R6 := R1
+ 11 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
+ 12 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 13 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0xF4C93B84"]
+ 14 [-]: MOVE      R3 R0        ; R3 := R0
+ 15 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 16 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3.7:
+;
+; Name:            
+; Defined at line: 242
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -894,10 +1015,41 @@ code size: 331
 125 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3.7:
+; Function #3.8:
 ;
 ; Name:            
-; Defined at line: 236
+; Defined at line: 265
+; #Upvalues:       0
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  8
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x7C282057
+  2 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["Icon"]
+  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  4 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
+  5 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0x4443A5E7"]
+  6 [-]: GETTABLE  R5 R1 K4     ; R5 := R1["mClipName"]
+  7 [-]: LOADK     R6 K5        ; R6 := ".Icon.Icon"
+  8 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
+  9 [-]: MOVE      R6 R2        ; R6 := R2
+ 10 [-]: GETGLOBAL R7 K6        ; R7 := visRangeMaterial
+ 11 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
+ 12 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
+ 13 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0x4443A5E7"]
+ 14 [-]: GETTABLE  R5 R1 K4     ; R5 := R1["mClipName"]
+ 15 [-]: LOADK     R6 K7        ; R6 := ".Icon.Shadow"
+ 16 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
+ 17 [-]: MOVE      R6 R2        ; R6 := R2
+ 18 [-]: GETGLOBAL R7 K8        ; R7 := shadowMaterial
+ 19 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
+ 20 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3.9:
+;
+; Name:            
+; Defined at line: 271
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1074,165 +1226,175 @@ code size: 331
 169 [-]: CALL      R11 5 0      ; R11,... := R11(R12,R13,R14,R15)
 170 [-]: CALL      R10 0 0      ; R10,... := R10(R11,...)
 171 [-]: CALL      R5 0 1       ; R5(R6,...)
-172 [-]: GETGLOBAL R5 K41       ; R5 := 0x7C282057
-173 [-]: GETTABLE  R6 R0 K42    ; R6 := R0["Icon"]
-174 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-175 [-]: GETUPVAL  R6 U0        ; R6 := U0
-176 [-]: GETTABLE  R6 R6 K43    ; R6 := R6["mIconDim"]
-177 [-]: GETUPVAL  R7 U2        ; R7 := U2
-178 [-]: GETTABLE  R7 R7 K44    ; R7 := R7["0xF81722A2"]
-179 [-]: GETTABLE  R8 R0 K45    ; R8 := R0["IsPassive"]
-180 [-]: LOADK     R9 K46       ; R9 := 20
-181 [-]: LOADK     R10 K47      ; R10 := 0
-182 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
-183 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
-184 [-]: GETUPVAL  R7 U0        ; R7 := U0
-185 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-186 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-187 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-188 [-]: LOADK     R10 K42      ; R10 := "Icon"
-189 [-]: LOADK     R11 K18      ; R11 := "_width"
-190 [-]: MOVE      R12 R6       ; R12 := R6
-191 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-192 [-]: GETUPVAL  R7 U0        ; R7 := U0
-193 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-194 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-195 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-196 [-]: LOADK     R10 K42      ; R10 := "Icon"
-197 [-]: LOADK     R11 K48      ; R11 := "_height"
-198 [-]: MOVE      R12 R6       ; R12 := R6
-199 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-200 [-]: GETUPVAL  R7 U0        ; R7 := U0
-201 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-202 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-203 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-204 [-]: LOADK     R10 K42      ; R10 := "Icon"
-205 [-]: LOADK     R11 K31      ; R11 := "_y"
-206 [-]: GETUPVAL  R12 U0       ; R12 := U0
-207 [-]: GETTABLE  R12 R12 K49  ; R12 := R12["mInitIconYPos"]
-208 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-209 [-]: GETUPVAL  R7 U0        ; R7 := U0
-210 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-211 [-]: SELF      R7 R7 K50    ; R8 := R7; R7 := R7["0x4443A5E7"]
-212 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-213 [-]: LOADK     R10 K51      ; R10 := ".Icon.Icon"
-214 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-215 [-]: MOVE      R10 R5       ; R10 := R5
-216 [-]: GETGLOBAL R11 K52      ; R11 := visRangeMaterial
-217 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-218 [-]: GETUPVAL  R7 U0        ; R7 := U0
-219 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-220 [-]: SELF      R7 R7 K50    ; R8 := R7; R7 := R7["0x4443A5E7"]
-221 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-222 [-]: LOADK     R10 K53      ; R10 := ".Icon.Shadow"
-223 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-224 [-]: MOVE      R10 R5       ; R10 := R5
-225 [-]: GETGLOBAL R11 K54      ; R11 := shadowMaterial
-226 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-227 [-]: GETUPVAL  R7 U0        ; R7 := U0
-228 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-229 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-230 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-231 [-]: LOADK     R10 K55      ; R10 := "Glow"
-232 [-]: LOADK     R11 K15      ; R11 := "_visible"
-233 [-]: GETTABLE  R12 R0 K45   ; R12 := R0["IsPassive"]
-234 [-]: MOVE      R12 R12      ; R12 := R12
-235 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-236 [-]: GETUPVAL  R7 U0        ; R7 := U0
-237 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-238 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-239 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-240 [-]: LOADK     R10 K56      ; R10 := "Sparkles"
-241 [-]: LOADK     R11 K15      ; R11 := "_visible"
-242 [-]: GETTABLE  R12 R0 K45   ; R12 := R0["IsPassive"]
-243 [-]: MOVE      R12 R12      ; R12 := R12
-244 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-245 [-]: GETUPVAL  R7 U0        ; R7 := U0
-246 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-247 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-248 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-249 [-]: LOADK     R10 K57      ; R10 := "Highlight"
-250 [-]: LOADK     R11 K15      ; R11 := "_visible"
-251 [-]: GETTABLE  R12 R0 K45   ; R12 := R0["IsPassive"]
-252 [-]: MOVE      R12 R12      ; R12 := R12
-253 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-254 [-]: GETUPVAL  R7 U0        ; R7 := U0
-255 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-256 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-257 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-258 [-]: LOADK     R10 K58      ; R10 := "Icon.Shadow"
-259 [-]: LOADK     R11 K15      ; R11 := "_visible"
-260 [-]: MOVE      R12 R0       ; R12 := R0
-261 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-262 [-]: GETTABLE  R7 R0 K45    ; R7 := R0["IsPassive"]
-263 [-]: TEST      R7 1         ; if R7 then PC := 299
-264 [-]: JMP       299          ; PC := 299
-265 [-]: GETUPVAL  R7 U0        ; R7 := U0
-266 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-267 [-]: SELF      R7 R7 K59    ; R8 := R7; R7 := R7["0x26581636"]
-268 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-269 [-]: LOADK     R10 K60      ; R10 := ".Glow"
-270 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-271 [-]: GETGLOBAL R10 K61      ; R10 := glowTexture
-272 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
-273 [-]: GETUPVAL  R7 U0        ; R7 := U0
-274 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-275 [-]: SELF      R7 R7 K62    ; R8 := R7; R7 := R7["0x7E1F26D7"]
-276 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-277 [-]: LOADK     R10 K63      ; R10 := ".Sparkles"
-278 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
-279 [-]: GETUPVAL  R10 U0       ; R10 := U0
-280 [-]: GETTABLE  R10 R10 K64  ; R10 := R10["mSparkleMaterial"]
-281 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
-282 [-]: GETUPVAL  R7 U0        ; R7 := U0
-283 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-284 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-285 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-286 [-]: LOADK     R10 K55      ; R10 := "Glow"
-287 [-]: LOADK     R11 K18      ; R11 := "_width"
-288 [-]: GETUPVAL  R12 U0       ; R12 := U0
-289 [-]: GETTABLE  R12 R12 K65  ; R12 := R12["mGlowWidth"]
-290 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-291 [-]: GETUPVAL  R7 U0        ; R7 := U0
-292 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
-293 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
-294 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
-295 [-]: LOADK     R10 K55      ; R10 := "Glow"
-296 [-]: LOADK     R11 K66      ; R11 := "_alpha"
-297 [-]: LOADK     R12 K67      ; R12 := 65
-298 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-299 [-]: GETUPVAL  R7 U0        ; R7 := U0
-300 [-]: GETTABLE  R7 R7 K68    ; R7 := R7["VisibleRangeInfo"]
-301 [-]: EQ        1 R7 K1      ; if R7 == nil then PC := 326
-302 [-]: JMP       326          ; PC := 326
-303 [-]: NEWTABLE  R7 4 0       ; R7 := {}
-304 [-]: LOADK     R8 K69       ; R8 := "Icon.Icon"
-305 [-]: LOADK     R9 K55       ; R9 := "Glow"
-306 [-]: LOADK     R10 K70      ; R10 := "Highlight.StarburstOne.StarburstOne"
-307 [-]: LOADK     R11 K71      ; R11 := "Highlight.StarburstTwo.StarburstTwo"
-308 [-]: SETLIST   R7 4 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 4
-309 [-]: GETGLOBAL R8 K72       ; R8 := 0xECFDD17
-310 [-]: MOVE      R9 R7        ; R9 := R7
-311 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
-312 [-]: JMP       324          ; PC := 324
-313 [-]: GETUPVAL  R13 U0       ; R13 := U0
-314 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mMovie"]
-315 [-]: SELF      R13 R13 K62  ; R14 := R13; R13 := R13["0x7E1F26D7"]
-316 [-]: GETTABLE  R15 R0 K0    ; R15 := R0["mClipName"]
-317 [-]: LOADK     R16 K73      ; R16 := "."
-318 [-]: MOVE      R17 R12      ; R17 := R12
-319 [-]: CONCAT    R15 R15 R17  ; R15 := R15 .. R16 .. R17
-320 [-]: GETUPVAL  R16 U0       ; R16 := U0
-321 [-]: GETTABLE  R16 R16 K68  ; R16 := R16["VisibleRangeInfo"]
-322 [-]: GETTABLE  R16 R16 K74  ; R16 := R16["BaseMaterial"]
-323 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-324 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 313; R10 := R11 end
-325 [-]: JMP       313          ; PC := 313
-326 [-]: GETUPVAL  R13 U0       ; R13 := U0
-327 [-]: SELF      R13 R13 K75  ; R14 := R13; R13 := R13["0x15ED7700"]
-328 [-]: MOVE      R15 R0       ; R15 := R0
-329 [-]: MOVE      R16 R2       ; R16 := R2
-330 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
-331 [-]: RETURN    R0 1         ; return 
+172 [-]: GETTABLE  R5 R0 K41    ; R5 := R0["IsPassive"]
+173 [-]: TEST      R5 1         ; if R5 then PC := 189
+174 [-]: JMP       189          ; PC := 189
+175 [-]: GETGLOBAL R5 K3        ; R5 := 0x400E7765
+176 [-]: GETUPVAL  R6 U0        ; R6 := U0
+177 [-]: GETTABLE  R6 R6 K42    ; R6 := R6["mIconLoader"]
+178 [-]: GETTABLE  R6 R6 K43    ; R6 := R6["Loader"]
+179 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+180 [-]: TEST      R5 1         ; if R5 then PC := 187
+181 [-]: JMP       187          ; PC := 187
+182 [-]: GETUPVAL  R5 U0        ; R5 := U0
+183 [-]: GETTABLE  R5 R5 K42    ; R5 := R5["mIconLoader"]
+184 [-]: GETTABLE  R5 R5 K44    ; R5 := R5["IsLoading"]
+185 [-]: MOVE      R5 R5        ; R5 := R5
+186 [-]: JMP       189          ; PC := 189
+187 [-]: MOVE      R5 R0        ; R5 := R0
+188 [-]: MOVE      R5 R1        ; R5 := R1
+189 [-]: GETUPVAL  R6 U0        ; R6 := U0
+190 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["mMovie"]
+191 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6["0x880196A7"]
+192 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["mClipName"]
+193 [-]: LOADK     R9 K45       ; R9 := "Icon"
+194 [-]: LOADK     R10 K15      ; R10 := "_visible"
+195 [-]: MOVE      R11 R5       ; R11 := R5
+196 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+197 [-]: TEST      R5 0         ; if not R5 then PC := 203
+198 [-]: JMP       203          ; PC := 203
+199 [-]: GETUPVAL  R6 U0        ; R6 := U0
+200 [-]: SELF      R6 R6 K46    ; R7 := R6; R6 := R6["0xF4C93B84"]
+201 [-]: MOVE      R8 R0        ; R8 := R0
+202 [-]: CALL      R6 3 1       ; R6(R7,R8)
+203 [-]: GETUPVAL  R6 U0        ; R6 := U0
+204 [-]: GETTABLE  R6 R6 K47    ; R6 := R6["mIconDim"]
+205 [-]: GETUPVAL  R7 U2        ; R7 := U2
+206 [-]: GETTABLE  R7 R7 K48    ; R7 := R7["0xF81722A2"]
+207 [-]: GETTABLE  R8 R0 K41    ; R8 := R0["IsPassive"]
+208 [-]: LOADK     R9 K49       ; R9 := 20
+209 [-]: LOADK     R10 K50      ; R10 := 0
+210 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
+211 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
+212 [-]: GETUPVAL  R7 U0        ; R7 := U0
+213 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+214 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+215 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+216 [-]: LOADK     R10 K45      ; R10 := "Icon"
+217 [-]: LOADK     R11 K18      ; R11 := "_width"
+218 [-]: MOVE      R12 R6       ; R12 := R6
+219 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+220 [-]: GETUPVAL  R7 U0        ; R7 := U0
+221 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+222 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+223 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+224 [-]: LOADK     R10 K45      ; R10 := "Icon"
+225 [-]: LOADK     R11 K51      ; R11 := "_height"
+226 [-]: MOVE      R12 R6       ; R12 := R6
+227 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+228 [-]: GETUPVAL  R7 U0        ; R7 := U0
+229 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+230 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+231 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+232 [-]: LOADK     R10 K45      ; R10 := "Icon"
+233 [-]: LOADK     R11 K31      ; R11 := "_y"
+234 [-]: GETUPVAL  R12 U0       ; R12 := U0
+235 [-]: GETTABLE  R12 R12 K52  ; R12 := R12["mInitIconYPos"]
+236 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+237 [-]: GETUPVAL  R7 U0        ; R7 := U0
+238 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+239 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+240 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+241 [-]: LOADK     R10 K53      ; R10 := "Glow"
+242 [-]: LOADK     R11 K15      ; R11 := "_visible"
+243 [-]: GETTABLE  R12 R0 K41   ; R12 := R0["IsPassive"]
+244 [-]: MOVE      R12 R12      ; R12 := R12
+245 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+246 [-]: GETUPVAL  R7 U0        ; R7 := U0
+247 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+248 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+249 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+250 [-]: LOADK     R10 K54      ; R10 := "Sparkles"
+251 [-]: LOADK     R11 K15      ; R11 := "_visible"
+252 [-]: GETTABLE  R12 R0 K41   ; R12 := R0["IsPassive"]
+253 [-]: MOVE      R12 R12      ; R12 := R12
+254 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+255 [-]: GETUPVAL  R7 U0        ; R7 := U0
+256 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+257 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+258 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+259 [-]: LOADK     R10 K55      ; R10 := "Highlight"
+260 [-]: LOADK     R11 K15      ; R11 := "_visible"
+261 [-]: GETTABLE  R12 R0 K41   ; R12 := R0["IsPassive"]
+262 [-]: MOVE      R12 R12      ; R12 := R12
+263 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+264 [-]: GETUPVAL  R7 U0        ; R7 := U0
+265 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+266 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+267 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+268 [-]: LOADK     R10 K56      ; R10 := "Icon.Shadow"
+269 [-]: LOADK     R11 K15      ; R11 := "_visible"
+270 [-]: MOVE      R12 R0       ; R12 := R0
+271 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+272 [-]: GETTABLE  R7 R0 K41    ; R7 := R0["IsPassive"]
+273 [-]: TEST      R7 1         ; if R7 then PC := 309
+274 [-]: JMP       309          ; PC := 309
+275 [-]: GETUPVAL  R7 U0        ; R7 := U0
+276 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+277 [-]: SELF      R7 R7 K57    ; R8 := R7; R7 := R7["0x26581636"]
+278 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+279 [-]: LOADK     R10 K58      ; R10 := ".Glow"
+280 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
+281 [-]: GETGLOBAL R10 K59      ; R10 := glowTexture
+282 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+283 [-]: GETUPVAL  R7 U0        ; R7 := U0
+284 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+285 [-]: SELF      R7 R7 K60    ; R8 := R7; R7 := R7["0x7E1F26D7"]
+286 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+287 [-]: LOADK     R10 K61      ; R10 := ".Sparkles"
+288 [-]: CONCAT    R9 R9 R10    ; R9 := R9 .. R10
+289 [-]: GETUPVAL  R10 U0       ; R10 := U0
+290 [-]: GETTABLE  R10 R10 K62  ; R10 := R10["mSparkleMaterial"]
+291 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
+292 [-]: GETUPVAL  R7 U0        ; R7 := U0
+293 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+294 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+295 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+296 [-]: LOADK     R10 K53      ; R10 := "Glow"
+297 [-]: LOADK     R11 K18      ; R11 := "_width"
+298 [-]: GETUPVAL  R12 U0       ; R12 := U0
+299 [-]: GETTABLE  R12 R12 K63  ; R12 := R12["mGlowWidth"]
+300 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+301 [-]: GETUPVAL  R7 U0        ; R7 := U0
+302 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["mMovie"]
+303 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x880196A7"]
+304 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["mClipName"]
+305 [-]: LOADK     R10 K53      ; R10 := "Glow"
+306 [-]: LOADK     R11 K64      ; R11 := "_alpha"
+307 [-]: LOADK     R12 K65      ; R12 := 65
+308 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+309 [-]: GETUPVAL  R7 U0        ; R7 := U0
+310 [-]: GETTABLE  R7 R7 K66    ; R7 := R7["VisibleRangeInfo"]
+311 [-]: EQ        1 R7 K1      ; if R7 == nil then PC := 336
+312 [-]: JMP       336          ; PC := 336
+313 [-]: NEWTABLE  R7 4 0       ; R7 := {}
+314 [-]: LOADK     R8 K67       ; R8 := "Icon.Icon"
+315 [-]: LOADK     R9 K53       ; R9 := "Glow"
+316 [-]: LOADK     R10 K68      ; R10 := "Highlight.StarburstOne.StarburstOne"
+317 [-]: LOADK     R11 K69      ; R11 := "Highlight.StarburstTwo.StarburstTwo"
+318 [-]: SETLIST   R7 4 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 4
+319 [-]: GETGLOBAL R8 K70       ; R8 := 0xECFDD17
+320 [-]: MOVE      R9 R7        ; R9 := R7
+321 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
+322 [-]: JMP       334          ; PC := 334
+323 [-]: GETUPVAL  R13 U0       ; R13 := U0
+324 [-]: GETTABLE  R13 R13 K6   ; R13 := R13["mMovie"]
+325 [-]: SELF      R13 R13 K60  ; R14 := R13; R13 := R13["0x7E1F26D7"]
+326 [-]: GETTABLE  R15 R0 K0    ; R15 := R0["mClipName"]
+327 [-]: LOADK     R16 K71      ; R16 := "."
+328 [-]: MOVE      R17 R12      ; R17 := R12
+329 [-]: CONCAT    R15 R15 R17  ; R15 := R15 .. R16 .. R17
+330 [-]: GETUPVAL  R16 U0       ; R16 := U0
+331 [-]: GETTABLE  R16 R16 K66  ; R16 := R16["VisibleRangeInfo"]
+332 [-]: GETTABLE  R16 R16 K72  ; R16 := R16["BaseMaterial"]
+333 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+334 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 323; R10 := R11 end
+335 [-]: JMP       323          ; PC := 323
+336 [-]: GETUPVAL  R13 U0       ; R13 := U0
+337 [-]: SELF      R13 R13 K73  ; R14 := R13; R13 := R13["0x15ED7700"]
+338 [-]: MOVE      R15 R0       ; R15 := R0
+339 [-]: MOVE      R16 R2       ; R16 := R2
+340 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
+341 [-]: RETURN    R0 1         ; return 
 
 

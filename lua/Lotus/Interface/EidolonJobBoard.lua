@@ -3328,7 +3328,7 @@ code size: 6
  12 [-]: GETTABLE  R2 R2 R3     ; R2 := R2[R3]
  13 [-]: GETGLOBAL R3 K4        ; R3 := mMovie
  14 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0x5DB0BD4"]
- 15 [-]: LOADK     R5 K6        ; R5 := "/Game/"
+ 15 [-]: LOADK     R5 K6        ; R5 := "/Lotus/Language/Labels/"
  16 [-]: MOVE      R6 R2        ; R6 := R2
  17 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
  18 [-]: MOVE      R6 R0        ; R6 := R0

@@ -443,7 +443,7 @@ code size: 939
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/WEAPON_PROC_CHANCE"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_CHANCE"
  69 [-]: GETGLOBAL R10 K23      ; R10 := math
  70 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
  71 [-]: GETUPVAL  R11 U3       ; R11 := U3
@@ -456,7 +456,7 @@ code size: 939
  78 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  79 [-]: MOVE      R8 R0        ; R8 := R0
  80 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 81 [-]: SETTABLE  R9 K17 K28   ; R9["Label"] := "/Game/WEAPON_PROC_TIME"
+ 81 [-]: SETTABLE  R9 K17 K28   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_TIME"
  82 [-]: GETUPVAL  R10 U1       ; R10 := U1
  83 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  84 [-]: SETTABLE  R9 K26 K29   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"

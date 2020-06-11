@@ -1,4 +1,4 @@
-code size: 371
+code size: 372
 code size: 133
 code size: 9
 code size: 33
@@ -57,7 +57,7 @@ code size: 66
 code size: 16
 code size: 25
 code size: 60
-code size: 87
+code size: 95
 code size: 13
 code size: 13
 code size: 13
@@ -401,54 +401,55 @@ code size: 2
 321 [-]: MOVE      R0 R73       ; R0 := R73
 322 [-]: MOVE      R0 R39       ; R0 := R39
 323 [-]: MOVE      R0 R42       ; R0 := R42
-324 [-]: MOVE      R0 R28       ; R0 := R28
-325 [-]: MOVE      R0 R15       ; R0 := R15
-326 [-]: MOVE      R0 R12       ; R0 := R12
-327 [-]: MOVE      R0 R68       ; R0 := R68
-328 [-]: MOVE      R0 R69       ; R0 := R69
-329 [-]: MOVE      R0 R47       ; R0 := R47
-330 [-]: MOVE      R0 R49       ; R0 := R49
-331 [-]: MOVE      R0 R60       ; R0 := R60
-332 [-]: SETGLOBAL R74 K60      ; Update := R74
-333 [-]: SETGLOBAL R74 K61      ; 0x8C7099E9 := R74
-334 [-]: CLOSURE   R74 48       ; R74 := closure(Function #49)
-335 [-]: MOVE      R0 R41       ; R0 := R41
-336 [-]: SETGLOBAL R74 K62      ; AbilityPressed := R74
-337 [-]: SETGLOBAL R74 K63      ; 0xE38A04F9 := R74
-338 [-]: CLOSURE   R74 49       ; R74 := closure(Function #50)
-339 [-]: MOVE      R0 R41       ; R0 := R41
-340 [-]: SETGLOBAL R74 K64      ; AbilityFocused := R74
-341 [-]: SETGLOBAL R74 K65      ; 0x96C0FDA0 := R74
-342 [-]: CLOSURE   R74 50       ; R74 := closure(Function #51)
-343 [-]: MOVE      R0 R41       ; R0 := R41
-344 [-]: SETGLOBAL R74 K66      ; AbilityUnfocused := R74
-345 [-]: SETGLOBAL R74 K67      ; 0x70176F71 := R74
-346 [-]: CLOSURE   R74 51       ; R74 := closure(Function #52)
-347 [-]: MOVE      R0 R29       ; R0 := R29
-348 [-]: SETGLOBAL R74 K68      ; HintIconFocused := R74
-349 [-]: SETGLOBAL R74 K69      ; 0x45195B5 := R74
-350 [-]: CLOSURE   R74 52       ; R74 := closure(Function #53)
-351 [-]: MOVE      R0 R29       ; R0 := R29
-352 [-]: SETGLOBAL R74 K70      ; HintIconUnfocused := R74
-353 [-]: SETGLOBAL R74 K71      ; 0xCD05B1C5 := R74
-354 [-]: CLOSURE   R74 53       ; R74 := closure(Function #54)
-355 [-]: MOVE      R0 R29       ; R0 := R29
-356 [-]: SETGLOBAL R74 K72      ; onKeyDown_MENU_MOUSE_Z := R74
-357 [-]: SETGLOBAL R74 K73      ; 0x56EAD3A9 := R74
-358 [-]: CLOSURE   R74 54       ; R74 := closure(Function #55)
-359 [-]: SETGLOBAL R74 K74      ; SupportsThemes := R74
-360 [-]: SETGLOBAL R74 K75      ; 0xDBE73B9E := R74
-361 [-]: CLOSURE   R74 55       ; R74 := closure(Function #56)
-362 [-]: SETGLOBAL R74 K76      ; ClearHistory := R74
-363 [-]: SETGLOBAL R74 K77      ; 0x3037CE7E := R74
-364 [-]: CLOSURE   R74 56       ; R74 := closure(Function #57)
-365 [-]: SETGLOBAL R74 K78      ; GiveHint := R74
-366 [-]: SETGLOBAL R74 K79      ; 0x8F5774CF := R74
-367 [-]: CLOSURE   R74 57       ; R74 := closure(Function #58)
-368 [-]: MOVE      R0 R10       ; R0 := R10
-369 [-]: SETGLOBAL R74 K80      ; SetCallback := R74
-370 [-]: SETGLOBAL R74 K81      ; 0x69A4A158 := R74
-371 [-]: RETURN    R0 1         ; return 
+324 [-]: MOVE      R0 R41       ; R0 := R41
+325 [-]: MOVE      R0 R28       ; R0 := R28
+326 [-]: MOVE      R0 R15       ; R0 := R15
+327 [-]: MOVE      R0 R12       ; R0 := R12
+328 [-]: MOVE      R0 R68       ; R0 := R68
+329 [-]: MOVE      R0 R69       ; R0 := R69
+330 [-]: MOVE      R0 R47       ; R0 := R47
+331 [-]: MOVE      R0 R49       ; R0 := R49
+332 [-]: MOVE      R0 R60       ; R0 := R60
+333 [-]: SETGLOBAL R74 K60      ; Update := R74
+334 [-]: SETGLOBAL R74 K61      ; 0x8C7099E9 := R74
+335 [-]: CLOSURE   R74 48       ; R74 := closure(Function #49)
+336 [-]: MOVE      R0 R41       ; R0 := R41
+337 [-]: SETGLOBAL R74 K62      ; AbilityPressed := R74
+338 [-]: SETGLOBAL R74 K63      ; 0xE38A04F9 := R74
+339 [-]: CLOSURE   R74 49       ; R74 := closure(Function #50)
+340 [-]: MOVE      R0 R41       ; R0 := R41
+341 [-]: SETGLOBAL R74 K64      ; AbilityFocused := R74
+342 [-]: SETGLOBAL R74 K65      ; 0x96C0FDA0 := R74
+343 [-]: CLOSURE   R74 50       ; R74 := closure(Function #51)
+344 [-]: MOVE      R0 R41       ; R0 := R41
+345 [-]: SETGLOBAL R74 K66      ; AbilityUnfocused := R74
+346 [-]: SETGLOBAL R74 K67      ; 0x70176F71 := R74
+347 [-]: CLOSURE   R74 51       ; R74 := closure(Function #52)
+348 [-]: MOVE      R0 R29       ; R0 := R29
+349 [-]: SETGLOBAL R74 K68      ; HintIconFocused := R74
+350 [-]: SETGLOBAL R74 K69      ; 0x45195B5 := R74
+351 [-]: CLOSURE   R74 52       ; R74 := closure(Function #53)
+352 [-]: MOVE      R0 R29       ; R0 := R29
+353 [-]: SETGLOBAL R74 K70      ; HintIconUnfocused := R74
+354 [-]: SETGLOBAL R74 K71      ; 0xCD05B1C5 := R74
+355 [-]: CLOSURE   R74 53       ; R74 := closure(Function #54)
+356 [-]: MOVE      R0 R29       ; R0 := R29
+357 [-]: SETGLOBAL R74 K72      ; onKeyDown_MENU_MOUSE_Z := R74
+358 [-]: SETGLOBAL R74 K73      ; 0x56EAD3A9 := R74
+359 [-]: CLOSURE   R74 54       ; R74 := closure(Function #55)
+360 [-]: SETGLOBAL R74 K74      ; SupportsThemes := R74
+361 [-]: SETGLOBAL R74 K75      ; 0xDBE73B9E := R74
+362 [-]: CLOSURE   R74 55       ; R74 := closure(Function #56)
+363 [-]: SETGLOBAL R74 K76      ; ClearHistory := R74
+364 [-]: SETGLOBAL R74 K77      ; 0x3037CE7E := R74
+365 [-]: CLOSURE   R74 56       ; R74 := closure(Function #57)
+366 [-]: SETGLOBAL R74 K78      ; GiveHint := R74
+367 [-]: SETGLOBAL R74 K79      ; 0x8F5774CF := R74
+368 [-]: CLOSURE   R74 57       ; R74 := closure(Function #58)
+369 [-]: MOVE      R0 R10       ; R0 := R10
+370 [-]: SETGLOBAL R74 K80      ; SetCallback := R74
+371 [-]: SETGLOBAL R74 K81      ; 0x69A4A158 := R74
+372 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -923,7 +924,7 @@ code size: 2
 125 [-]: GETGLOBAL R11 K38      ; R11 := 0xD26C89A0
 126 [-]: GETGLOBAL R12 K39      ; R12 := mMovie
 127 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12["0x5DB0BD4"]
-128 [-]: LOADK     R14 K41      ; R14 := "/Game/WEAKNESSES"
+128 [-]: LOADK     R14 K41      ; R14 := "/Lotus/Language/Labels/WEAKNESSES"
 129 [-]: MOVE      R15 R0       ; R15 := R0
 130 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
 131 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
@@ -933,7 +934,7 @@ code size: 2
 135 [-]: GETGLOBAL R11 K38      ; R11 := 0xD26C89A0
 136 [-]: GETGLOBAL R12 K39      ; R12 := mMovie
 137 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12["0x5DB0BD4"]
-138 [-]: LOADK     R14 K43      ; R14 := "/Game/RESISTANCES"
+138 [-]: LOADK     R14 K43      ; R14 := "/Lotus/Language/Labels/RESISTANCES"
 139 [-]: MOVE      R15 R0       ; R15 := R0
 140 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
 141 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
@@ -943,7 +944,7 @@ code size: 2
 145 [-]: GETGLOBAL R11 K38      ; R11 := 0xD26C89A0
 146 [-]: GETGLOBAL R12 K39      ; R12 := mMovie
 147 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12["0x5DB0BD4"]
-148 [-]: LOADK     R14 K45      ; R14 := "/Game/IMMUNITIES"
+148 [-]: LOADK     R14 K45      ; R14 := "/Lotus/Language/Labels/IMMUNITIES"
 149 [-]: MOVE      R15 R0       ; R15 := R0
 150 [-]: CALL      R12 4 0      ; R12,... := R12(R13,R14,R15)
 151 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
@@ -4217,7 +4218,7 @@ code size: 2
 ;
 ; Name:            
 ; Defined at line: 1182
-; #Upvalues:       12
+; #Upvalues:       13
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  5
@@ -4256,65 +4257,73 @@ code size: 2
  32 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1["0x8C7099E9"]
  33 [-]: MOVE      R3 R0        ; R3 := R0
  34 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 35 [-]: GETUPVAL  R1 U4        ; R1 := U4
- 36 [-]: EQ        0 R1 K5      ; if R1 ~= "0x1" then PC := 58
- 37 [-]: JMP       58           ; PC := 58
- 38 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
- 39 [-]: GETGLOBAL R2 K6        ; R2 := _T
- 40 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["curTransmission"]
- 41 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 42 [-]: TEST      R1 0         ; if not R1 then PC := 58
- 43 [-]: JMP       58           ; PC := 58
- 44 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
- 45 [-]: GETUPVAL  R2 U5        ; R2 := U5
- 46 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 47 [-]: TEST      R1 1         ; if R1 then PC := 55
- 48 [-]: JMP       55           ; PC := 55
- 49 [-]: GETUPVAL  R1 U5        ; R1 := U5
- 50 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x28609C89"]
- 51 [-]: GETGLOBAL R3 K9        ; R3 := 0xEC274B1A
- 52 [-]: LOADK     R4 K10       ; R4 := "STOP_MENU_TAUNT"
- 53 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 54 [-]: CALL      R1 0 1       ; R1(R2,...)
- 55 [-]: LOADNIL   R1 R1        ; R1 := nil
- 56 [-]: MOVE      R1 R4        ; R1 := R4
- 57 [-]: JMP       70           ; PC := 70
- 58 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
- 59 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 60 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 61 [-]: TEST      R1 1         ; if R1 then PC := 70
- 62 [-]: JMP       70           ; PC := 70
- 63 [-]: GETGLOBAL R1 K6        ; R1 := _T
- 64 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["curTransmission"]
- 65 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 66 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 70
- 67 [-]: JMP       70           ; PC := 70
- 68 [-]: MOVE      R1 R1        ; R1 := R1
- 69 [-]: MOVE      R1 R4        ; R1 := R4
- 70 [-]: GETUPVAL  R1 U6        ; R1 := U6
- 71 [-]: TEST      R1 0         ; if not R1 then PC := 79
- 72 [-]: JMP       79           ; PC := 79
- 73 [-]: GETUPVAL  R1 U7        ; R1 := U7
- 74 [-]: CALL      R1 1 2       ; R1 := R1()
- 75 [-]: TEST      R1 0         ; if not R1 then PC := 79
- 76 [-]: JMP       79           ; PC := 79
- 77 [-]: GETUPVAL  R1 U8        ; R1 := U8
- 78 [-]: CALL      R1 1 1       ; R1()
- 79 [-]: GETUPVAL  R1 U9        ; R1 := U9
- 80 [-]: TEST      R1 0         ; if not R1 then PC := 87
- 81 [-]: JMP       87           ; PC := 87
- 82 [-]: GETUPVAL  R1 U10       ; R1 := U10
+ 35 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+ 36 [-]: GETUPVAL  R2 U4        ; R2 := U4
+ 37 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 38 [-]: TEST      R1 1         ; if R1 then PC := 43
+ 39 [-]: JMP       43           ; PC := 43
+ 40 [-]: GETUPVAL  R1 U4        ; R1 := U4
+ 41 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1["0x8C7099E9"]
+ 42 [-]: CALL      R1 2 1       ; R1(R2)
+ 43 [-]: GETUPVAL  R1 U5        ; R1 := U5
+ 44 [-]: EQ        0 R1 K5      ; if R1 ~= "0x1" then PC := 66
+ 45 [-]: JMP       66           ; PC := 66
+ 46 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+ 47 [-]: GETGLOBAL R2 K6        ; R2 := _T
+ 48 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["curTransmission"]
+ 49 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 50 [-]: TEST      R1 0         ; if not R1 then PC := 66
+ 51 [-]: JMP       66           ; PC := 66
+ 52 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+ 53 [-]: GETUPVAL  R2 U6        ; R2 := U6
+ 54 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 55 [-]: TEST      R1 1         ; if R1 then PC := 63
+ 56 [-]: JMP       63           ; PC := 63
+ 57 [-]: GETUPVAL  R1 U6        ; R1 := U6
+ 58 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x28609C89"]
+ 59 [-]: GETGLOBAL R3 K9        ; R3 := 0xEC274B1A
+ 60 [-]: LOADK     R4 K10       ; R4 := "STOP_MENU_TAUNT"
+ 61 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
+ 62 [-]: CALL      R1 0 1       ; R1(R2,...)
+ 63 [-]: LOADNIL   R1 R1        ; R1 := nil
+ 64 [-]: MOVE      R1 R5        ; R1 := R5
+ 65 [-]: JMP       78           ; PC := 78
+ 66 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+ 67 [-]: GETUPVAL  R2 U5        ; R2 := U5
+ 68 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 69 [-]: TEST      R1 1         ; if R1 then PC := 78
+ 70 [-]: JMP       78           ; PC := 78
+ 71 [-]: GETGLOBAL R1 K6        ; R1 := _T
+ 72 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["curTransmission"]
+ 73 [-]: GETUPVAL  R2 U5        ; R2 := U5
+ 74 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 78
+ 75 [-]: JMP       78           ; PC := 78
+ 76 [-]: MOVE      R1 R1        ; R1 := R1
+ 77 [-]: MOVE      R1 R5        ; R1 := R5
+ 78 [-]: GETUPVAL  R1 U7        ; R1 := U7
+ 79 [-]: TEST      R1 0         ; if not R1 then PC := 87
+ 80 [-]: JMP       87           ; PC := 87
+ 81 [-]: GETUPVAL  R1 U8        ; R1 := U8
+ 82 [-]: CALL      R1 1 2       ; R1 := R1()
  83 [-]: TEST      R1 0         ; if not R1 then PC := 87
  84 [-]: JMP       87           ; PC := 87
- 85 [-]: GETUPVAL  R1 U11       ; R1 := U11
+ 85 [-]: GETUPVAL  R1 U9        ; R1 := U9
  86 [-]: CALL      R1 1 1       ; R1()
- 87 [-]: RETURN    R0 1         ; return 
+ 87 [-]: GETUPVAL  R1 U10       ; R1 := U10
+ 88 [-]: TEST      R1 0         ; if not R1 then PC := 95
+ 89 [-]: JMP       95           ; PC := 95
+ 90 [-]: GETUPVAL  R1 U11       ; R1 := U11
+ 91 [-]: TEST      R1 0         ; if not R1 then PC := 95
+ 92 [-]: JMP       95           ; PC := 95
+ 93 [-]: GETUPVAL  R1 U12       ; R1 := U12
+ 94 [-]: CALL      R1 1 1       ; R1()
+ 95 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #49:
 ;
 ; Name:            
-; Defined at line: 1218
+; Defined at line: 1222
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4338,7 +4347,7 @@ code size: 2
 ; Function #50:
 ;
 ; Name:            
-; Defined at line: 1224
+; Defined at line: 1228
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4362,7 +4371,7 @@ code size: 2
 ; Function #51:
 ;
 ; Name:            
-; Defined at line: 1230
+; Defined at line: 1234
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4386,7 +4395,7 @@ code size: 2
 ; Function #52:
 ;
 ; Name:            
-; Defined at line: 1236
+; Defined at line: 1240
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4407,7 +4416,7 @@ code size: 2
 ; Function #53:
 ;
 ; Name:            
-; Defined at line: 1242
+; Defined at line: 1246
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4429,7 +4438,7 @@ code size: 2
 ; Function #54:
 ;
 ; Name:            
-; Defined at line: 1248
+; Defined at line: 1252
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -4460,7 +4469,7 @@ code size: 2
 ; Function #55:
 ;
 ; Name:            
-; Defined at line: 1254
+; Defined at line: 1258
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4474,7 +4483,7 @@ code size: 2
 ; Function #56:
 ;
 ; Name:            
-; Defined at line: 1258
+; Defined at line: 1262
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4489,7 +4498,7 @@ code size: 2
 ; Function #57:
 ;
 ; Name:            
-; Defined at line: 1262
+; Defined at line: 1266
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4554,7 +4563,7 @@ code size: 2
 ; Function #58:
 ;
 ; Name:            
-; Defined at line: 1283
+; Defined at line: 1287
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

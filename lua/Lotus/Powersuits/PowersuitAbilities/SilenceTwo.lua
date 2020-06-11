@@ -419,7 +419,7 @@ code size: 64
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/WEAPON_MELEE_FINISHER_DAMAGE"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_MELEE_FINISHER_DAMAGE"
  69 [-]: GETGLOBAL R10 K23      ; R10 := math
  70 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
  71 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -472,7 +472,7 @@ code size: 64
  29 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  30 [-]: MOVE      R2 R0        ; R2 := R0
  31 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 32 [-]: SETTABLE  R3 K8 K13    ; R3["Label"] := "/Game/AVATAR_ABILITY_DURATION"
+ 32 [-]: SETTABLE  R3 K8 K13    ; R3["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY_DURATION"
  33 [-]: GETUPVAL  R4 U2        ; R4 := U2
  34 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  35 [-]: SETTABLE  R3 K11 K14   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"

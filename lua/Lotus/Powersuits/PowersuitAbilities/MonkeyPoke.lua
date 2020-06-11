@@ -264,7 +264,7 @@ code size: 135
  20 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  21 [-]: MOVE      R2 R0        ; R2 := R0
  22 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 23 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 23 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  24 [-]: GETUPVAL  R4 U4        ; R4 := U4
  25 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  26 [-]: SETTABLE  R3 K11 K12   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -1117,43 +1117,43 @@ code size: 135
  28 [-]: GETTABLE  R9 R6 K8     ; R9 := R6[1]
  29 [-]: GETGLOBAL R10 K10      ; R10 := Game
  30 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["WEAPON_EXPLOSION_RADIUS"]
- 31 [-]: GETGLOBAL R11 K10      ; R11 := Game
- 32 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["ADD"]
+ 31 [-]: GETGLOBAL R11 K12      ; R11 := Engine
+ 32 [-]: GETTABLE  R11 R11 K13  ; R11 := R11["ADD"]
  33 [-]: MOVE      R12 R2       ; R12 := R2
- 34 [-]: GETGLOBAL R13 K13      ; R13 := gLotusMeleeWeaponType
+ 34 [-]: GETGLOBAL R13 K14      ; R13 := gLotusMeleeWeaponType
  35 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
  36 [-]: SELF      R7 R5 K7     ; R8 := R5; R7 := R5["0x5CA15456"]
- 37 [-]: GETTABLE  R9 R6 K14    ; R9 := R6[2]
+ 37 [-]: GETTABLE  R9 R6 K15    ; R9 := R6[2]
  38 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  39 [-]: TEST      R7 1         ; if R7 then PC := 50
  40 [-]: JMP       50           ; PC := 50
  41 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5["0x4685E6C3"]
- 42 [-]: GETTABLE  R9 R6 K14    ; R9 := R6[2]
+ 42 [-]: GETTABLE  R9 R6 K15    ; R9 := R6[2]
  43 [-]: GETGLOBAL R10 K10      ; R10 := Game
- 44 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["WEAPON_MELEE_SLAM_DAMAGE_BONUS"]
- 45 [-]: GETGLOBAL R11 K10      ; R11 := Game
- 46 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["MULTIPLY"]
+ 44 [-]: GETTABLE  R10 R10 K16  ; R10 := R10["WEAPON_MELEE_SLAM_DAMAGE_BONUS"]
+ 45 [-]: GETGLOBAL R11 K12      ; R11 := Engine
+ 46 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["MULTIPLY"]
  47 [-]: MOVE      R12 R3       ; R12 := R3
- 48 [-]: GETGLOBAL R13 K13      ; R13 := gLotusMeleeWeaponType
+ 48 [-]: GETGLOBAL R13 K14      ; R13 := gLotusMeleeWeaponType
  49 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
  50 [-]: SELF      R7 R5 K7     ; R8 := R5; R7 := R5["0x5CA15456"]
- 51 [-]: GETTABLE  R9 R6 K17    ; R9 := R6[3]
+ 51 [-]: GETTABLE  R9 R6 K18    ; R9 := R6[3]
  52 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  53 [-]: TEST      R7 1         ; if R7 then PC := 64
  54 [-]: JMP       64           ; PC := 64
  55 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5["0x4685E6C3"]
- 56 [-]: GETTABLE  R9 R6 K17    ; R9 := R6[3]
+ 56 [-]: GETTABLE  R9 R6 K18    ; R9 := R6[3]
  57 [-]: GETGLOBAL R10 K10      ; R10 := Game
- 58 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["WEAPON_MELEE_DAMAGE"]
- 59 [-]: GETGLOBAL R11 K10      ; R11 := Game
- 60 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["MULTIPLY"]
+ 58 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["WEAPON_MELEE_DAMAGE"]
+ 59 [-]: GETGLOBAL R11 K12      ; R11 := Engine
+ 60 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["MULTIPLY"]
  61 [-]: MOVE      R12 R3       ; R12 := R3
- 62 [-]: GETGLOBAL R13 K13      ; R13 := gLotusMeleeWeaponType
+ 62 [-]: GETGLOBAL R13 K14      ; R13 := gLotusMeleeWeaponType
  63 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 64 [-]: SELF      R7 R0 K19    ; R8 := R0; R7 := R0["0xEA55C538"]
- 65 [-]: LOADK     R9 K20       ; R9 := 0
+ 64 [-]: SELF      R7 R0 K20    ; R8 := R0; R7 := R0["0xEA55C538"]
+ 65 [-]: LOADK     R9 K21       ; R9 := 0
  66 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 67 [-]: GETGLOBAL R8 K21       ; R8 := 0x201191EA
+ 67 [-]: GETGLOBAL R8 K22       ; R8 := 0x201191EA
  68 [-]: LOADK     R9 K8        ; R9 := 1
  69 [-]: CALL      R8 2 1       ; R8(R9)
  70 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
@@ -1161,20 +1161,20 @@ code size: 135
  72 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  73 [-]: TEST      R8 1         ; if R8 then PC := 91
  74 [-]: JMP       91           ; PC := 91
- 75 [-]: SELF      R8 R4 K22    ; R9 := R4; R8 := R4["0x5A115A02"]
+ 75 [-]: SELF      R8 R4 K23    ; R9 := R4; R8 := R4["0x5A115A02"]
  76 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  77 [-]: TEST      R8 1         ; if R8 then PC := 91
  78 [-]: JMP       91           ; PC := 91
- 79 [-]: SELF      R8 R4 K23    ; R9 := R4; R8 := R4["0x18DE1559"]
+ 79 [-]: SELF      R8 R4 K24    ; R9 := R4; R8 := R4["0x18DE1559"]
  80 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  81 [-]: TEST      R8 0         ; if not R8 then PC := 91
  82 [-]: JMP       91           ; PC := 91
- 83 [-]: SELF      R8 R7 K24    ; R9 := R7; R8 := R7["0xE7AE25B5"]
+ 83 [-]: SELF      R8 R7 K25    ; R9 := R7; R8 := R7["0xE7AE25B5"]
  84 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  85 [-]: TEST      R8 1         ; if R8 then PC := 91
  86 [-]: JMP       91           ; PC := 91
- 87 [-]: GETGLOBAL R8 K21       ; R8 := 0x201191EA
- 88 [-]: LOADK     R9 K20       ; R9 := 0
+ 87 [-]: GETGLOBAL R8 K22       ; R8 := 0x201191EA
+ 88 [-]: LOADK     R9 K21       ; R9 := 0
  89 [-]: CALL      R8 2 1       ; R8(R9)
  90 [-]: JMP       70           ; PC := 70
  91 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
@@ -1182,11 +1182,11 @@ code size: 135
  93 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  94 [-]: TEST      R8 1         ; if R8 then PC := 100
  95 [-]: JMP       100          ; PC := 100
- 96 [-]: SELF      R8 R7 K24    ; R9 := R7; R8 := R7["0xE7AE25B5"]
+ 96 [-]: SELF      R8 R7 K25    ; R9 := R7; R8 := R7["0xE7AE25B5"]
  97 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  98 [-]: TEST      R8 1         ; if R8 then PC := 103
  99 [-]: JMP       103          ; PC := 103
-100 [-]: GETGLOBAL R8 K21       ; R8 := 0x201191EA
+100 [-]: GETGLOBAL R8 K22       ; R8 := 0x201191EA
 101 [-]: LOADK     R9 K8        ; R9 := 1
 102 [-]: CALL      R8 2 1       ; R8(R9)
 103 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
@@ -1194,32 +1194,32 @@ code size: 135
 105 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 106 [-]: TEST      R8 1         ; if R8 then PC := 135
 107 [-]: JMP       135          ; PC := 135
-108 [-]: SELF      R8 R5 K25    ; R9 := R5; R8 := R5["0x5A740E25"]
+108 [-]: SELF      R8 R5 K26    ; R9 := R5; R8 := R5["0x5A740E25"]
 109 [-]: GETTABLE  R10 R6 K8    ; R10 := R6[1]
 110 [-]: GETGLOBAL R11 K10      ; R11 := Game
 111 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["WEAPON_EXPLOSION_RADIUS"]
-112 [-]: GETGLOBAL R12 K10      ; R12 := Game
-113 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["ADD"]
+112 [-]: GETGLOBAL R12 K12      ; R12 := Engine
+113 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["ADD"]
 114 [-]: MOVE      R13 R2       ; R13 := R2
-115 [-]: GETGLOBAL R14 K13      ; R14 := gLotusMeleeWeaponType
+115 [-]: GETGLOBAL R14 K14      ; R14 := gLotusMeleeWeaponType
 116 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
-117 [-]: SELF      R8 R5 K25    ; R9 := R5; R8 := R5["0x5A740E25"]
-118 [-]: GETTABLE  R10 R6 K14   ; R10 := R6[2]
+117 [-]: SELF      R8 R5 K26    ; R9 := R5; R8 := R5["0x5A740E25"]
+118 [-]: GETTABLE  R10 R6 K15   ; R10 := R6[2]
 119 [-]: GETGLOBAL R11 K10      ; R11 := Game
-120 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["WEAPON_MELEE_SLAM_DAMAGE_BONUS"]
-121 [-]: GETGLOBAL R12 K10      ; R12 := Game
-122 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["MULTIPLY"]
+120 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["WEAPON_MELEE_SLAM_DAMAGE_BONUS"]
+121 [-]: GETGLOBAL R12 K12      ; R12 := Engine
+122 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["MULTIPLY"]
 123 [-]: MOVE      R13 R3       ; R13 := R3
-124 [-]: GETGLOBAL R14 K13      ; R14 := gLotusMeleeWeaponType
+124 [-]: GETGLOBAL R14 K14      ; R14 := gLotusMeleeWeaponType
 125 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
-126 [-]: SELF      R8 R5 K25    ; R9 := R5; R8 := R5["0x5A740E25"]
-127 [-]: GETTABLE  R10 R6 K17   ; R10 := R6[3]
+126 [-]: SELF      R8 R5 K26    ; R9 := R5; R8 := R5["0x5A740E25"]
+127 [-]: GETTABLE  R10 R6 K18   ; R10 := R6[3]
 128 [-]: GETGLOBAL R11 K10      ; R11 := Game
-129 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
-130 [-]: GETGLOBAL R12 K10      ; R12 := Game
-131 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["MULTIPLY"]
+129 [-]: GETTABLE  R11 R11 K19  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
+130 [-]: GETGLOBAL R12 K12      ; R12 := Engine
+131 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["MULTIPLY"]
 132 [-]: MOVE      R13 R3       ; R13 := R3
-133 [-]: GETGLOBAL R14 K13      ; R14 := gLotusMeleeWeaponType
+133 [-]: GETGLOBAL R14 K14      ; R14 := gLotusMeleeWeaponType
 134 [-]: CALL      R8 7 1       ; R8(R9,R10,R11,R12,R13,R14)
 135 [-]: RETURN    R0 1         ; return 
 

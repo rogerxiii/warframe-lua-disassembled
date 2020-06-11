@@ -224,9 +224,9 @@ code size: 250
  24 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3["0x3B1B11B9"]
  25 [-]: GETGLOBAL R5 K12       ; R5 := Game
  26 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["AVATAR_DROP_CHANCE_MODIFIER"]
- 27 [-]: GETGLOBAL R6 K12       ; R6 := Game
- 28 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["SET"]
- 29 [-]: LOADK     R7 K15       ; R7 := 0
+ 27 [-]: GETGLOBAL R6 K14       ; R6 := Engine
+ 28 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["SET"]
+ 29 [-]: LOADK     R7 K16       ; R7 := 0
  30 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  31 [-]: RETURN    R0 1         ; return 
 
@@ -485,7 +485,7 @@ code size: 250
 243 [-]: SELF      R18 R18 K62  ; R19 := R18; R18 := R18["0x3B1B11B9"]
 244 [-]: GETGLOBAL R20 K48      ; R20 := Game
 245 [-]: GETTABLE  R20 R20 K63  ; R20 := R20["AVATAR_DROP_CHANCE_MODIFIER"]
-246 [-]: GETGLOBAL R21 K48      ; R21 := Game
+246 [-]: GETGLOBAL R21 K57      ; R21 := Engine
 247 [-]: GETTABLE  R21 R21 K64  ; R21 := R21["SET"]
 248 [-]: LOADK     R22 K47      ; R22 := 0
 249 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)

@@ -527,7 +527,7 @@ code size: 20
  26 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  27 [-]: MOVE      R2 R0        ; R2 := R0
  28 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 29 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 29 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  30 [-]: GETUPVAL  R4 U1        ; R4 := U1
  31 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  32 [-]: SETTABLE  R3 K11 K12   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -554,7 +554,7 @@ code size: 20
  53 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  54 [-]: MOVE      R2 R0        ; R2 := R0
  55 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 56 [-]: SETTABLE  R3 K8 K17    ; R3["Label"] := "/Game/WEAPON_PROC_CHANCE"
+ 56 [-]: SETTABLE  R3 K8 K17    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_CHANCE"
  57 [-]: GETGLOBAL R4 K18       ; R4 := math
  58 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["0xF7005A7B"]
  59 [-]: GETUPVAL  R5 U4        ; R5 := U4
@@ -1205,11 +1205,11 @@ code size: 20
   7 [-]: MOVE      R4 R1        ; R4 := R1
   8 [-]: GETGLOBAL R5 K4        ; R5 := Game
   9 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 10 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 11 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["ADD"]
+ 10 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 11 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["ADD"]
  12 [-]: GETUPVAL  R7 U0        ; R7 := U0
  13 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 14 [-]: GETGLOBAL R10 K7       ; R10 := Engine
+ 14 [-]: GETGLOBAL R10 K6       ; R10 := Engine
  15 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["DT_CORROSIVE"]
  16 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
  17 [-]: SELF      R2 R0 K9     ; R3 := R0; R2 := R0["0xAB436EF2"]
@@ -1294,11 +1294,11 @@ code size: 20
  96 [-]: MOVE      R5 R1        ; R5 := R1
  97 [-]: GETGLOBAL R6 K4        ; R6 := Game
  98 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 99 [-]: GETGLOBAL R7 K4        ; R7 := Game
-100 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["ADD"]
+ 99 [-]: GETGLOBAL R7 K6        ; R7 := Engine
+100 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["ADD"]
 101 [-]: GETUPVAL  R8 U0        ; R8 := U0
 102 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
-103 [-]: GETGLOBAL R11 K7       ; R11 := Engine
+103 [-]: GETGLOBAL R11 K6       ; R11 := Engine
 104 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["DT_CORROSIVE"]
 105 [-]: CALL      R3 9 1       ; R3(R4,R5,R6,R7,R8,R9,R10,R11)
 106 [-]: GETGLOBAL R3 K23       ; R3 := 0x400E7765

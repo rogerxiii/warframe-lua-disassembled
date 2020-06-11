@@ -58,9 +58,9 @@ code size: 22
  15 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  16 [-]: GETGLOBAL R5 K4        ; R5 := Game
  17 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["WEAPON_MELEE_DAMAGE"]
- 18 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 19 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["STACKING_MULTIPLY"]
- 20 [-]: LOADK     R7 K7        ; R7 := 1
+ 18 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 19 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["STACKING_MULTIPLY"]
+ 20 [-]: LOADK     R7 K8        ; R7 := 1
  21 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  22 [-]: RETURN    R0 1         ; return 
 

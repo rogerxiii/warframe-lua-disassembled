@@ -893,14 +893,14 @@ code size: 198
  21 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0x3B1B11B9"]
  22 [-]: GETGLOBAL R5 K5        ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["AVATAR_AURA_STRENGTH"]
- 24 [-]: GETGLOBAL R6 K5        ; R6 := Game
- 25 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["SET"]
- 26 [-]: LOADK     R7 K8        ; R7 := 0
+ 24 [-]: GETGLOBAL R6 K7        ; R6 := Engine
+ 25 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["SET"]
+ 26 [-]: LOADK     R7 K9        ; R7 := 0
  27 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  28 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x8DB5D01F"]
  29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 30 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xC8DD681D"]
- 31 [-]: SELF      R5 R1 K10    ; R6 := R1; R5 := R1["0xDE5882DD"]
+ 30 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3["0xC8DD681D"]
+ 31 [-]: SELF      R5 R1 K11    ; R6 := R1; R5 := R1["0xDE5882DD"]
  32 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  33 [-]: MOVE      R6 R0        ; R6 := R0
  34 [-]: MOVE      R7 R0        ; R7 := R0
@@ -914,31 +914,31 @@ code size: 198
  42 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  43 [-]: TEST      R4 1         ; if R4 then PC := 72
  44 [-]: JMP       72           ; PC := 72
- 45 [-]: SELF      R4 R3 K11    ; R5 := R3; R4 := R3["0x8B598ED4"]
- 46 [-]: GETGLOBAL R6 K12       ; R6 := 0x2C00D429
- 47 [-]: LOADK     R7 K13       ; R7 := "/Lotus/Powersuits/YinYang/YinYang"
+ 45 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3["0x8B598ED4"]
+ 46 [-]: GETGLOBAL R6 K13       ; R6 := 0x2C00D429
+ 47 [-]: LOADK     R7 K14       ; R7 := "/Lotus/Powersuits/YinYang/YinYang"
  48 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  49 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
  50 [-]: TEST      R4 0         ; if not R4 then PC := 72
  51 [-]: JMP       72           ; PC := 72
- 52 [-]: GETGLOBAL R4 K14       ; R4 := 0x329BDC44
- 53 [-]: LOADK     R5 K15       ; R5 := "Lotus.Scripts.Effects.Polarity"
+ 52 [-]: GETGLOBAL R4 K15       ; R4 := 0x329BDC44
+ 53 [-]: LOADK     R5 K16       ; R5 := "Lotus.Scripts.Effects.Polarity"
  54 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 55 [-]: GETTABLE  R5 R4 K16    ; R5 := R4["0x86A7A1E6"]
+ 55 [-]: GETTABLE  R5 R4 K17    ; R5 := R4["0x86A7A1E6"]
  56 [-]: MOVE      R6 R2        ; R6 := R2
  57 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  58 [-]: TEST      R5 0         ; if not R5 then PC := 64
  59 [-]: JMP       64           ; PC := 64
- 60 [-]: GETTABLE  R5 R4 K17    ; R5 := R4["0x12D33773"]
+ 60 [-]: GETTABLE  R5 R4 K18    ; R5 := R4["0x12D33773"]
  61 [-]: MOVE      R6 R3        ; R6 := R3
  62 [-]: CALL      R5 2 1       ; R5(R6)
  63 [-]: JMP       72           ; PC := 72
- 64 [-]: GETTABLE  R5 R4 K18    ; R5 := R4["0xF746C31B"]
+ 64 [-]: GETTABLE  R5 R4 K19    ; R5 := R4["0xF746C31B"]
  65 [-]: MOVE      R6 R2        ; R6 := R2
  66 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  67 [-]: TEST      R5 0         ; if not R5 then PC := 72
  68 [-]: JMP       72           ; PC := 72
- 69 [-]: GETTABLE  R5 R4 K19    ; R5 := R4["0x72673CEE"]
+ 69 [-]: GETTABLE  R5 R4 K20    ; R5 := R4["0x72673CEE"]
  70 [-]: MOVE      R6 R3        ; R6 := R3
  71 [-]: CALL      R5 2 1       ; R5(R6)
  72 [-]: RETURN    R0 1         ; return 

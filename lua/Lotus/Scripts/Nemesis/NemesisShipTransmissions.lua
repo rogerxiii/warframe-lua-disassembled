@@ -215,22 +215,22 @@ code size: 239
 135 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 136 [-]: TEST      R10 1        ; if R10 then PC := 154
 137 [-]: JMP       154          ; PC := 154
-138 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
-139 [-]: GETGLOBAL R11 K1       ; R11 := gGameData
-140 [-]: SELF      R11 R11 K39  ; R12 := R11; R11 := R11["0x17358D95"]
-141 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
-142 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
-143 [-]: TEST      R10 1        ; if R10 then PC := 154
+138 [-]: GETGLOBAL R10 K1       ; R10 := gGameData
+139 [-]: SELF      R10 R10 K39  ; R11 := R10; R10 := R10["0x17358D95"]
+140 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+141 [-]: SELF      R10 R10 K40  ; R11 := R10; R10 := R10["0xB3F0027"]
+142 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+143 [-]: TEST      R10 0        ; if not R10 then PC := 154
 144 [-]: JMP       154          ; PC := 154
 145 [-]: GETUPVAL  R10 U1       ; R10 := U1
 146 [-]: GETTABLE  R10 R10 K36  ; R10 := R10["0x85329A4B"]
-147 [-]: GETGLOBAL R11 K40      ; R11 := 0xEC274B1A
-148 [-]: LOADK     R12 K41      ; R12 := "Reminder"
+147 [-]: GETGLOBAL R11 K41      ; R11 := 0xEC274B1A
+148 [-]: LOADK     R12 K42      ; R12 := "Reminder"
 149 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
 150 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
 151 [-]: MOVE      R9 R10       ; R9 := R10
 152 [-]: GETGLOBAL R10 K6       ; R10 := _G
-153 [-]: SETTABLE  R10 K38 K42  ; R10["NemesisReminderPlayed"] := "0x1"
+153 [-]: SETTABLE  R10 K38 K43  ; R10["NemesisReminderPlayed"] := "0x1"
 154 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
 155 [-]: GETGLOBAL R11 K6       ; R11 := _G
 156 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["NemesisPopup_Info"]
@@ -239,11 +239,11 @@ code size: 239
 159 [-]: JMP       182          ; PC := 182
 160 [-]: GETGLOBAL R10 K6       ; R10 := _G
 161 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["NemesisPopup_Info"]
-162 [-]: GETTABLE  R10 R10 K43  ; R10 := R10["OpenScreen"]
+162 [-]: GETTABLE  R10 R10 K44  ; R10 := R10["OpenScreen"]
 163 [-]: TEST      R10 0        ; if not R10 then PC := 182
 164 [-]: JMP       182          ; PC := 182
 165 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
-166 [-]: GETGLOBAL R11 K44      ; R11 := nemesisPopupMovie
+166 [-]: GETGLOBAL R11 K45      ; R11 := nemesisPopupMovie
 167 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 168 [-]: TEST      R10 1        ; if R10 then PC := 182
 169 [-]: JMP       182          ; PC := 182
@@ -254,10 +254,10 @@ code size: 239
 174 [-]: JMP       182          ; PC := 182
 175 [-]: GETGLOBAL R10 K6       ; R10 := _G
 176 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["NemesisPopup_Info"]
-177 [-]: SETTABLE  R10 K43 K45  ; R10["OpenScreen"] := "0x0"
+177 [-]: SETTABLE  R10 K44 K46  ; R10["OpenScreen"] := "0x0"
 178 [-]: GETGLOBAL R10 K25      ; R10 := gFlashMgr
-179 [-]: SELF      R10 R10 K46  ; R11 := R10; R10 := R10["0x7548923C"]
-180 [-]: GETGLOBAL R12 K44      ; R12 := nemesisPopupMovie
+179 [-]: SELF      R10 R10 K47  ; R11 := R10; R10 := R10["0x7548923C"]
+180 [-]: GETGLOBAL R12 K45      ; R12 := nemesisPopupMovie
 181 [-]: CALL      R10 3 1      ; R10(R11,R12)
 182 [-]: TEST      R0 0         ; if not R0 then PC := 239
 183 [-]: JMP       239          ; PC := 239
@@ -299,7 +299,7 @@ code size: 239
 219 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
 220 [-]: JMP       224          ; PC := 224
 221 [-]: SELF      R15 R14 K20  ; R16 := R14; R15 := R14["0x8D5886B7"]
-222 [-]: LOADK     R17 K47      ; R17 := "Enable"
+222 [-]: LOADK     R17 K48      ; R17 := "Enable"
 223 [-]: CALL      R15 3 1      ; R15(R16,R17)
 224 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 221; R12 := R13 end
 225 [-]: JMP       221          ; PC := 221
@@ -315,7 +315,7 @@ code size: 239
 235 [-]: JMP       239          ; PC := 239
 236 [-]: GETGLOBAL R15 K6       ; R15 := _G
 237 [-]: GETTABLE  R15 R15 K7   ; R15 := R15["NemesisPopup_Info"]
-238 [-]: SETTABLE  R15 K8 K45   ; R15["IsCreationPopup"] := "0x0"
+238 [-]: SETTABLE  R15 K8 K46   ; R15["IsCreationPopup"] := "0x0"
 239 [-]: RETURN    R0 1         ; return 
 
 

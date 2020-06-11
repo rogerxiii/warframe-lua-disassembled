@@ -434,7 +434,7 @@ code size: 25
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/WEAPON_MELEE_FINISHER_DAMAGE"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_MELEE_FINISHER_DAMAGE"
  69 [-]: GETGLOBAL R10 K23      ; R10 := math
  70 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
  71 [-]: GETUPVAL  R11 U1       ; R11 := U1

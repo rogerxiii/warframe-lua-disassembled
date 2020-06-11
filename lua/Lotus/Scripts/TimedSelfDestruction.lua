@@ -1,5 +1,6 @@
-code size: 6
+code size: 9
 code size: 39
+code size: 26
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\TimedSelfDestruction.luac 
 
@@ -15,13 +16,16 @@ code size: 39
   3 [-]: MOVE      R0 R0        ; R0 := R0
   4 [-]: SETGLOBAL R1 K1        ; TimedSelfDestruction := R1
   5 [-]: SETGLOBAL R1 K2        ; 0x9C2EC80D := R1
-  6 [-]: RETURN    R0 1         ; return 
+  6 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
+  7 [-]: SETGLOBAL R1 K3        ; TriggerSelfDestruction := R1
+  8 [-]: SETGLOBAL R1 K4        ; 0x7FB7C4C5 := R1
+  9 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 7
+; Defined at line: 8
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -66,5 +70,42 @@ code size: 39
  37 [-]: MOVE      R5 R0        ; R5 := R0
  38 [-]: CALL      R3 3 1       ; R3(R4,R5)
  39 [-]: RETURN    R0 1         ; return 
+
+
+; Function #2:
+;
+; Name:            
+; Defined at line: 25
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  7
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x201191EA
+  2 [-]: GETGLOBAL R2 K1        ; R2 := delay
+  3 [-]: CALL      R1 2 1       ; R1(R2)
+  4 [-]: GETGLOBAL R1 K2        ; R1 := 0x400E7765
+  5 [-]: MOVE      R2 R0        ; R2 := R0
+  6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  7 [-]: TEST      R1 1         ; if R1 then PC := 26
+  8 [-]: JMP       26           ; PC := 26
+  9 [-]: GETGLOBAL R1 K2        ; R1 := 0x400E7765
+ 10 [-]: GETGLOBAL R2 K3        ; R2 := destructionFx
+ 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 12 [-]: TEST      R1 1         ; if R1 then PC := 22
+ 13 [-]: JMP       22           ; PC := 22
+ 14 [-]: GETGLOBAL R1 K4        ; R1 := gRegion
+ 15 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1["0xBDD34CC6"]
+ 16 [-]: GETGLOBAL R3 K3        ; R3 := destructionFx
+ 17 [-]: SELF      R4 R0 K6     ; R5 := R0; R4 := R0["0x6DA72501"]
+ 18 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 19 [-]: SELF      R5 R0 K7     ; R6 := R0; R5 := R0["0xF23A7849"]
+ 20 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 21 [-]: CALL      R1 0 1       ; R1(R2,...)
+ 22 [-]: GETGLOBAL R1 K4        ; R1 := gRegion
+ 23 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x9B0A3887"]
+ 24 [-]: MOVE      R3 R0        ; R3 := R0
+ 25 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 26 [-]: RETURN    R0 1         ; return 
 
 

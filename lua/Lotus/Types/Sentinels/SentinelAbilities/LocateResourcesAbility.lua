@@ -129,7 +129,7 @@ code size: 89
  39 [-]: MOVE      R13 R6       ; R13 := R6
  40 [-]: GETGLOBAL R14 K13      ; R14 := Game
  41 [-]: GETTABLE  R14 R14 K14  ; R14 := R14["AVATAR_LOOT_RADAR"]
- 42 [-]: GETGLOBAL R15 K13      ; R15 := Game
+ 42 [-]: GETGLOBAL R15 K8       ; R15 := Engine
  43 [-]: GETTABLE  R15 R15 K15  ; R15 := R15["ADD"]
  44 [-]: MOVE      R16 R5       ; R16 := R5
  45 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)

@@ -106,17 +106,17 @@ code size: 41
  39 [-]: SELF      R9 R5 K10    ; R10 := R5; R9 := R5["0xF21555A7"]
  40 [-]: GETGLOBAL R11 K11      ; R11 := Game
  41 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["WEAPON_ZOOM"]
- 42 [-]: GETGLOBAL R12 K11      ; R12 := Game
- 43 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["MULTIPLY"]
+ 42 [-]: GETGLOBAL R12 K13      ; R12 := Engine
+ 43 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["MULTIPLY"]
  44 [-]: MOVE      R13 R7       ; R13 := R7
  45 [-]: MOVE      R14 R6       ; R14 := R6
  46 [-]: MOVE      R15 R2       ; R15 := R2
  47 [-]: CALL      R9 7 1       ; R9(R10,R11,R12,R13,R14,R15)
- 48 [-]: SELF      R9 R5 K14    ; R10 := R5; R9 := R5["0x3B1B11B9"]
+ 48 [-]: SELF      R9 R5 K15    ; R10 := R5; R9 := R5["0x3B1B11B9"]
  49 [-]: GETGLOBAL R11 K11      ; R11 := Game
  50 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["WEAPON_ZOOM"]
- 51 [-]: GETGLOBAL R12 K11      ; R12 := Game
- 52 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["MULTIPLY"]
+ 51 [-]: GETGLOBAL R12 K13      ; R12 := Engine
+ 52 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["MULTIPLY"]
  53 [-]: MOVE      R13 R8       ; R13 := R8
  54 [-]: MOVE      R14 R6       ; R14 := R6
  55 [-]: MOVE      R15 R2       ; R15 := R2
@@ -168,13 +168,13 @@ code size: 41
  32 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0x3B1B11B9"]
  33 [-]: GETGLOBAL R6 K13       ; R6 := Game
  34 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["WEAPON_ZOOM"]
- 35 [-]: GETGLOBAL R7 K13       ; R7 := Game
- 36 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["MULTIPLY"]
+ 35 [-]: GETGLOBAL R7 K15       ; R7 := Engine
+ 36 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
  37 [-]: GETUPVAL  R8 U1        ; R8 := U1
  38 [-]: MOVE      R9 R2        ; R9 := R2
  39 [-]: GETTABLE  R10 R3 K9    ; R10 := R3["mZoomMultipliers"]
  40 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 41 [-]: SELF      R9 R0 K16    ; R10 := R0; R9 := R0["0xE2B32C65"]
+ 41 [-]: SELF      R9 R0 K17    ; R10 := R0; R9 := R0["0xE2B32C65"]
  42 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  43 [-]: MOVE      R10 R0       ; R10 := R0
  44 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
@@ -216,18 +216,18 @@ code size: 41
  24 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0xF21555A7"]
  25 [-]: GETGLOBAL R5 K9        ; R5 := Game
  26 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["WEAPON_ZOOM"]
- 27 [-]: GETGLOBAL R6 K9        ; R6 := Game
- 28 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["MULTIPLY"]
+ 27 [-]: GETGLOBAL R6 K11       ; R6 := Engine
+ 28 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["MULTIPLY"]
  29 [-]: GETUPVAL  R7 U0        ; R7 := U0
  30 [-]: MOVE      R8 R2        ; R8 := R2
- 31 [-]: GETGLOBAL R9 K12       ; R9 := zoomMultipliers
+ 31 [-]: GETGLOBAL R9 K13       ; R9 := zoomMultipliers
  32 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 33 [-]: SELF      R8 R0 K13    ; R9 := R0; R8 := R0["0xE2B32C65"]
+ 33 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0["0xE2B32C65"]
  34 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  35 [-]: MOVE      R9 R0        ; R9 := R0
  36 [-]: CALL      R3 7 1       ; R3(R4,R5,R6,R7,R8,R9)
  37 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 38 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["0xD8151DFC"]
+ 38 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["0xD8151DFC"]
  39 [-]: MOVE      R4 R0        ; R4 := R0
  40 [-]: CALL      R3 2 1       ; R3(R4)
  41 [-]: RETURN    R0 1         ; return 

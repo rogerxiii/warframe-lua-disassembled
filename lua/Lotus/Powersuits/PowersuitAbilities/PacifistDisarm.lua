@@ -6,7 +6,7 @@ code size: 21
 code size: 462
 code size: 69
 code size: 159
-code size: 196
+code size: 200
 code size: 259
 code size: 84
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -1236,16 +1236,16 @@ code size: 84
  62 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  63 [-]: MOVE      R10 R5       ; R10 := R5
  64 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 65 [-]: JMP       196          ; PC := 196
+ 65 [-]: JMP       200          ; PC := 200
  66 [-]: SELF      R6 R1 K17    ; R7 := R1; R6 := R1["0x8B598ED4"]
  67 [-]: GETGLOBAL R8 K18       ; R8 := gLotusNpcAvatarType
  68 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 69 [-]: TEST      R6 0         ; if not R6 then PC := 196
- 70 [-]: JMP       196          ; PC := 196
+ 69 [-]: TEST      R6 0         ; if not R6 then PC := 200
+ 70 [-]: JMP       200          ; PC := 200
  71 [-]: SELF      R6 R1 K19    ; R7 := R1; R6 := R1["0x896389C9"]
  72 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 73 [-]: TEST      R6 1         ; if R6 then PC := 196
- 74 [-]: JMP       196          ; PC := 196
+ 73 [-]: TEST      R6 1         ; if R6 then PC := 200
+ 74 [-]: JMP       200          ; PC := 200
  75 [-]: SELF      R6 R1 K20    ; R7 := R1; R6 := R1["0x495F554F"]
  76 [-]: GETGLOBAL R8 K8        ; R8 := Lotus_Game
  77 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["AR_RESIST_ALL"]
@@ -1272,15 +1272,15 @@ code size: 84
  98 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  99 [-]: GETGLOBAL R7 K8        ; R7 := Lotus_Game
 100 [-]: GETTABLE  R7 R7 K29    ; R7 := R7["LotusNpcAvatar_DA_REMOVE_WEAPONS"]
-101 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 166
-102 [-]: JMP       166          ; PC := 166
+101 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 170
+102 [-]: JMP       170          ; PC := 170
 103 [-]: SELF      R7 R1 K30    ; R8 := R1; R7 := R1["0xABD9DD93"]
 104 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 105 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
 106 [-]: MOVE      R9 R7        ; R9 := R7
 107 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-108 [-]: TEST      R8 1         ; if R8 then PC := 196
-109 [-]: JMP       196          ; PC := 196
+108 [-]: TEST      R8 1         ; if R8 then PC := 200
+109 [-]: JMP       200          ; PC := 200
 110 [-]: SELF      R8 R7 K31    ; R9 := R7; R8 := R7["0xCA60A387"]
 111 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 112 [-]: SELF      R9 R1 K32    ; R10 := R1; R9 := R1["0x67EFEF42"]
@@ -1321,59 +1321,63 @@ code size: 84
 147 [-]: GETTABLE  R16 R16 K44  ; R16 := R16["PRT_ONCE"]
 148 [-]: MOVE      R17 R1       ; R17 := R1
 149 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
-150 [-]: SELF      R11 R1 K45   ; R12 := R1; R11 := R1["0x5D968C09"]
+150 [-]: SELF      R11 R1 K45   ; R12 := R1; R11 := R1["0x8DB5D01F"]
 151 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-152 [-]: EQ        1 R11 K24    ; if R11 == nil then PC := 159
-153 [-]: JMP       159          ; PC := 159
-154 [-]: SELF      R12 R1 K46   ; R13 := R1; R12 := R1["0x58347F07"]
-155 [-]: MOVE      R14 R11      ; R14 := R11
-156 [-]: MOVE      R15 R1       ; R15 := R1
-157 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-158 [-]: JMP       163          ; PC := 163
-159 [-]: SELF      R12 R1 K46   ; R13 := R1; R12 := R1["0x58347F07"]
-160 [-]: GETGLOBAL R14 K47      ; R14 := meleeWeapon
-161 [-]: MOVE      R15 R1       ; R15 := R1
-162 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
-163 [-]: SELF      R12 R10 K48  ; R13 := R10; R12 := R10["0x110EA047"]
-164 [-]: CALL      R12 2 1      ; R12(R13)
-165 [-]: JMP       196          ; PC := 196
-166 [-]: GETGLOBAL R12 K8       ; R12 := Lotus_Game
-167 [-]: GETTABLE  R12 R12 K49  ; R12 := R12["LotusNpcAvatar_DA_REACTION_ANIM_ONLY"]
-168 [-]: EQ        0 R6 R12     ; if R6 ~= R12 then PC := 182
-169 [-]: JMP       182          ; PC := 182
-170 [-]: SELF      R12 R1 K40   ; R13 := R1; R12 := R1["0xBA0051C5"]
-171 [-]: GETGLOBAL R14 K15      ; R14 := 0xEC274B1A
-172 [-]: LOADK     R15 K41      ; R15 := "LOKI_DISARM"
-173 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-174 [-]: MOVE      R15 R0       ; R15 := R0
-175 [-]: GETGLOBAL R16 K42      ; R16 := Engine
-176 [-]: GETTABLE  R16 R16 K43  ; R16 := R16["ATMM_ANIMATION_DRIVEN"]
-177 [-]: GETGLOBAL R17 K42      ; R17 := Engine
-178 [-]: GETTABLE  R17 R17 K44  ; R17 := R17["PRT_ONCE"]
-179 [-]: MOVE      R18 R1       ; R18 := R1
-180 [-]: CALL      R12 7 1      ; R12(R13,R14,R15,R16,R17,R18)
-181 [-]: JMP       196          ; PC := 196
-182 [-]: GETGLOBAL R12 K8       ; R12 := Lotus_Game
-183 [-]: GETTABLE  R12 R12 K50  ; R12 := R12["LotusNpcAvatar_DA_REMOVE_ARMS"]
-184 [-]: EQ        0 R6 R12     ; if R6 ~= R12 then PC := 196
-185 [-]: JMP       196          ; PC := 196
-186 [-]: SELF      R12 R1 K51   ; R13 := R1; R12 := R1["0xA3F6069B"]
-187 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-188 [-]: SELF      R13 R12 K52  ; R14 := R12; R13 := R12["0x332F10CB"]
-189 [-]: GETGLOBAL R15 K8       ; R15 := Lotus_Game
-190 [-]: GETTABLE  R15 R15 K53  ; R15 := R15["ZombieDamageController_LeftArm"]
-191 [-]: CALL      R13 3 1      ; R13(R14,R15)
-192 [-]: SELF      R13 R12 K52  ; R14 := R12; R13 := R12["0x332F10CB"]
+152 [-]: SELF      R11 R11 K46  ; R12 := R11; R11 := R11["0xC3B19E3B"]
+153 [-]: CALL      R11 2 1      ; R11(R12)
+154 [-]: SELF      R11 R1 K47   ; R12 := R1; R11 := R1["0x5D968C09"]
+155 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+156 [-]: EQ        1 R11 K24    ; if R11 == nil then PC := 163
+157 [-]: JMP       163          ; PC := 163
+158 [-]: SELF      R12 R1 K48   ; R13 := R1; R12 := R1["0x58347F07"]
+159 [-]: MOVE      R14 R11      ; R14 := R11
+160 [-]: MOVE      R15 R1       ; R15 := R1
+161 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+162 [-]: JMP       167          ; PC := 167
+163 [-]: SELF      R12 R1 K48   ; R13 := R1; R12 := R1["0x58347F07"]
+164 [-]: GETGLOBAL R14 K49      ; R14 := meleeWeapon
+165 [-]: MOVE      R15 R1       ; R15 := R1
+166 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+167 [-]: SELF      R12 R10 K50  ; R13 := R10; R12 := R10["0x110EA047"]
+168 [-]: CALL      R12 2 1      ; R12(R13)
+169 [-]: JMP       200          ; PC := 200
+170 [-]: GETGLOBAL R12 K8       ; R12 := Lotus_Game
+171 [-]: GETTABLE  R12 R12 K51  ; R12 := R12["LotusNpcAvatar_DA_REACTION_ANIM_ONLY"]
+172 [-]: EQ        0 R6 R12     ; if R6 ~= R12 then PC := 186
+173 [-]: JMP       186          ; PC := 186
+174 [-]: SELF      R12 R1 K40   ; R13 := R1; R12 := R1["0xBA0051C5"]
+175 [-]: GETGLOBAL R14 K15      ; R14 := 0xEC274B1A
+176 [-]: LOADK     R15 K41      ; R15 := "LOKI_DISARM"
+177 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+178 [-]: MOVE      R15 R0       ; R15 := R0
+179 [-]: GETGLOBAL R16 K42      ; R16 := Engine
+180 [-]: GETTABLE  R16 R16 K43  ; R16 := R16["ATMM_ANIMATION_DRIVEN"]
+181 [-]: GETGLOBAL R17 K42      ; R17 := Engine
+182 [-]: GETTABLE  R17 R17 K44  ; R17 := R17["PRT_ONCE"]
+183 [-]: MOVE      R18 R1       ; R18 := R1
+184 [-]: CALL      R12 7 1      ; R12(R13,R14,R15,R16,R17,R18)
+185 [-]: JMP       200          ; PC := 200
+186 [-]: GETGLOBAL R12 K8       ; R12 := Lotus_Game
+187 [-]: GETTABLE  R12 R12 K52  ; R12 := R12["LotusNpcAvatar_DA_REMOVE_ARMS"]
+188 [-]: EQ        0 R6 R12     ; if R6 ~= R12 then PC := 200
+189 [-]: JMP       200          ; PC := 200
+190 [-]: SELF      R12 R1 K53   ; R13 := R1; R12 := R1["0xA3F6069B"]
+191 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+192 [-]: SELF      R13 R12 K54  ; R14 := R12; R13 := R12["0x332F10CB"]
 193 [-]: GETGLOBAL R15 K8       ; R15 := Lotus_Game
-194 [-]: GETTABLE  R15 R15 K54  ; R15 := R15["ZombieDamageController_RightArm"]
+194 [-]: GETTABLE  R15 R15 K55  ; R15 := R15["ZombieDamageController_LeftArm"]
 195 [-]: CALL      R13 3 1      ; R13(R14,R15)
-196 [-]: RETURN    R0 1         ; return 
+196 [-]: SELF      R13 R12 K54  ; R14 := R12; R13 := R12["0x332F10CB"]
+197 [-]: GETGLOBAL R15 K8       ; R15 := Lotus_Game
+198 [-]: GETTABLE  R15 R15 K56  ; R15 := R15["ZombieDamageController_RightArm"]
+199 [-]: CALL      R13 3 1      ; R13(R14,R15)
+200 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 478
+; Defined at line: 480
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1643,7 +1647,7 @@ code size: 84
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 594
+; Defined at line: 596
 ; #Upvalues:       3
 ; #Parameters:     5
 ; Is_vararg:       0

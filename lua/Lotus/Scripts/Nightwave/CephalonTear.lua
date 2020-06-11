@@ -1,4 +1,4 @@
-code size: 268
+code size: 269
 code size: 5
 code size: 11
 code size: 133
@@ -6,12 +6,12 @@ code size: 48
 code size: 142
 code size: 46
 code size: 35
-code size: 78
+code size: 95
 code size: 70
 code size: 75
 code size: 199
 code size: 1
-code size: 113
+code size: 136
 code size: 16
 code size: 363
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -252,46 +252,47 @@ code size: 363
 226 [-]: SETGLOBAL R60 K58      ; OnResourceReady := R60
 227 [-]: SETGLOBAL R60 K59      ; 0x7656FC9E := R60
 228 [-]: CLOSURE   R60 12       ; R60 := closure(Function #13)
-229 [-]: MOVE      R0 R20       ; R0 := R20
-230 [-]: MOVE      R0 R21       ; R0 := R21
-231 [-]: MOVE      R0 R28       ; R0 := R28
-232 [-]: MOVE      R0 R29       ; R0 := R29
-233 [-]: MOVE      R0 R22       ; R0 := R22
-234 [-]: MOVE      R0 R44       ; R0 := R44
-235 [-]: MOVE      R0 R32       ; R0 := R32
-236 [-]: MOVE      R0 R58       ; R0 := R58
-237 [-]: CLOSURE   R61 13       ; R61 := closure(Function #14)
-238 [-]: CLOSURE   R62 14       ; R62 := closure(Function #15)
-239 [-]: MOVE      R0 R60       ; R0 := R60
-240 [-]: MOVE      R0 R12       ; R0 := R12
-241 [-]: MOVE      R0 R26       ; R0 := R26
-242 [-]: MOVE      R0 R0        ; R0 := R0
-243 [-]: MOVE      R0 R58       ; R0 := R58
-244 [-]: MOVE      R0 R23       ; R0 := R23
-245 [-]: MOVE      R0 R55       ; R0 := R55
-246 [-]: MOVE      R0 R61       ; R0 := R61
-247 [-]: MOVE      R0 R34       ; R0 := R34
-248 [-]: MOVE      R0 R32       ; R0 := R32
-249 [-]: MOVE      R0 R30       ; R0 := R30
-250 [-]: MOVE      R0 R46       ; R0 := R46
-251 [-]: MOVE      R0 R20       ; R0 := R20
-252 [-]: MOVE      R0 R29       ; R0 := R29
-253 [-]: MOVE      R0 R25       ; R0 := R25
-254 [-]: MOVE      R0 R31       ; R0 := R31
-255 [-]: MOVE      R0 R52       ; R0 := R52
-256 [-]: MOVE      R0 R54       ; R0 := R54
-257 [-]: MOVE      R0 R49       ; R0 := R49
-258 [-]: MOVE      R0 R59       ; R0 := R59
-259 [-]: MOVE      R0 R27       ; R0 := R27
-260 [-]: MOVE      R0 R28       ; R0 := R28
-261 [-]: MOVE      R0 R4        ; R0 := R4
-262 [-]: MOVE      R0 R5        ; R0 := R5
-263 [-]: MOVE      R0 R1        ; R0 := R1
-264 [-]: MOVE      R0 R35       ; R0 := R35
-265 [-]: MOVE      R0 R21       ; R0 := R21
-266 [-]: SETGLOBAL R62 K60      ; VoidTear := R62
-267 [-]: SETGLOBAL R62 K61      ; 0xBA88A3FC := R62
-268 [-]: RETURN    R0 1         ; return 
+229 [-]: MOVE      R0 R32       ; R0 := R32
+230 [-]: MOVE      R0 R31       ; R0 := R31
+231 [-]: MOVE      R0 R29       ; R0 := R29
+232 [-]: MOVE      R0 R28       ; R0 := R28
+233 [-]: MOVE      R0 R20       ; R0 := R20
+234 [-]: MOVE      R0 R21       ; R0 := R21
+235 [-]: MOVE      R0 R22       ; R0 := R22
+236 [-]: MOVE      R0 R44       ; R0 := R44
+237 [-]: MOVE      R0 R58       ; R0 := R58
+238 [-]: CLOSURE   R61 13       ; R61 := closure(Function #14)
+239 [-]: CLOSURE   R62 14       ; R62 := closure(Function #15)
+240 [-]: MOVE      R0 R60       ; R0 := R60
+241 [-]: MOVE      R0 R12       ; R0 := R12
+242 [-]: MOVE      R0 R26       ; R0 := R26
+243 [-]: MOVE      R0 R0        ; R0 := R0
+244 [-]: MOVE      R0 R58       ; R0 := R58
+245 [-]: MOVE      R0 R23       ; R0 := R23
+246 [-]: MOVE      R0 R55       ; R0 := R55
+247 [-]: MOVE      R0 R61       ; R0 := R61
+248 [-]: MOVE      R0 R34       ; R0 := R34
+249 [-]: MOVE      R0 R32       ; R0 := R32
+250 [-]: MOVE      R0 R30       ; R0 := R30
+251 [-]: MOVE      R0 R46       ; R0 := R46
+252 [-]: MOVE      R0 R20       ; R0 := R20
+253 [-]: MOVE      R0 R29       ; R0 := R29
+254 [-]: MOVE      R0 R25       ; R0 := R25
+255 [-]: MOVE      R0 R31       ; R0 := R31
+256 [-]: MOVE      R0 R52       ; R0 := R52
+257 [-]: MOVE      R0 R54       ; R0 := R54
+258 [-]: MOVE      R0 R49       ; R0 := R49
+259 [-]: MOVE      R0 R59       ; R0 := R59
+260 [-]: MOVE      R0 R27       ; R0 := R27
+261 [-]: MOVE      R0 R28       ; R0 := R28
+262 [-]: MOVE      R0 R4        ; R0 := R4
+263 [-]: MOVE      R0 R5        ; R0 := R5
+264 [-]: MOVE      R0 R1        ; R0 := R1
+265 [-]: MOVE      R0 R35       ; R0 := R35
+266 [-]: MOVE      R0 R21       ; R0 := R21
+267 [-]: SETGLOBAL R62 K60      ; VoidTear := R62
+268 [-]: SETGLOBAL R62 K61      ; 0xBA88A3FC := R62
+269 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -845,45 +846,62 @@ code size: 363
  43 [-]: GETUPVAL  R5 U3        ; R5 := U3
  44 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["0x2D79081C"]
  45 [-]: LOADK     R6 K12       ; R6 := "ctc"
- 46 [-]: LOADK     R7 K0        ; R7 := 0
+ 46 [-]: LOADK     R7 K13       ; R7 := 5
  47 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  48 [-]: GETUPVAL  R6 U3        ; R6 := U3
  49 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["0x2D79081C"]
- 50 [-]: LOADK     R7 K13       ; R7 := "ctcm"
- 51 [-]: LOADK     R8 K0        ; R8 := 0
+ 50 [-]: LOADK     R7 K14       ; R7 := "ctcm"
+ 51 [-]: LOADK     R8 K13       ; R8 := 5
  52 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 53 [-]: LT        0 K0 R5      ; if 0 >= R5 then PC := 76
- 54 [-]: JMP       76           ; PC := 76
- 55 [-]: LT        0 R6 R5      ; if R6 >= R5 then PC := 59
- 56 [-]: JMP       59           ; PC := 59
- 57 [-]: MOVE      R5 R4        ; R5 := R4
- 58 [-]: JMP       76           ; PC := 76
+ 53 [-]: GETGLOBAL R7 K15       ; R7 := gFlashMgr
+ 54 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7["0x1089D053"]
+ 55 [-]: LOADK     R9 K17       ; R9 := "LotusGameRules.CephalonTearSpawnInSimulacrum"
+ 56 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 57 [-]: TEST      R7 0         ; if not R7 then PC := 70
+ 58 [-]: JMP       70           ; PC := 70
  59 [-]: GETGLOBAL R7 K9        ; R7 := gGameRules
- 60 [-]: SELF      R7 R7 K14    ; R8 := R7; R7 := R7["0xB8637349"]
- 61 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 62 [-]: GETGLOBAL R8 K15       ; R8 := math
- 63 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["0xF7005A7B"]
- 64 [-]: GETGLOBAL R9 K15       ; R9 := math
- 65 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["0x65F9712A"]
- 66 [-]: GETTABLE  R10 R7 K18   ; R10 := R7["minEnemyLevel"]
- 67 [-]: GETUPVAL  R11 U5       ; R11 := U5
- 68 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 69 [-]: GETUPVAL  R10 U5       ; R10 := U5
- 70 [-]: DIV       R9 R9 R10    ; R9 := R9 / R10
- 71 [-]: SUB       R10 R6 R5    ; R10 := R6 - R5
- 72 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
- 73 [-]: ADD       R9 R9 R5     ; R9 := R9 + R5
- 74 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 75 [-]: MOVE      R8 R4        ; R8 := R4
- 76 [-]: LOADK     R8 K0        ; R8 := 0
- 77 [-]: MOVE      R8 R6        ; R8 := R6
- 78 [-]: RETURN    R0 1         ; return 
+ 60 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7["0x8B598ED4"]
+ 61 [-]: GETGLOBAL R9 K19       ; R9 := 0x2C00D429
+ 62 [-]: LOADK     R10 K20      ; R10 := "/Lotus/Types/GameRules/LotusDangerRoomGameRules"
+ 63 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 64 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 65 [-]: TEST      R7 0         ; if not R7 then PC := 70
+ 66 [-]: JMP       70           ; PC := 70
+ 67 [-]: LOADK     R7 K21       ; R7 := 10000
+ 68 [-]: MOVE      R7 R4        ; R7 := R4
+ 69 [-]: JMP       93           ; PC := 93
+ 70 [-]: LT        0 K0 R5      ; if 0 >= R5 then PC := 93
+ 71 [-]: JMP       93           ; PC := 93
+ 72 [-]: LT        0 R6 R5      ; if R6 >= R5 then PC := 76
+ 73 [-]: JMP       76           ; PC := 76
+ 74 [-]: MOVE      R5 R4        ; R5 := R4
+ 75 [-]: JMP       93           ; PC := 93
+ 76 [-]: GETGLOBAL R7 K9        ; R7 := gGameRules
+ 77 [-]: SELF      R7 R7 K22    ; R8 := R7; R7 := R7["0xB8637349"]
+ 78 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 79 [-]: GETGLOBAL R8 K23       ; R8 := math
+ 80 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["0xF7005A7B"]
+ 81 [-]: GETGLOBAL R9 K23       ; R9 := math
+ 82 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["0x65F9712A"]
+ 83 [-]: GETTABLE  R10 R7 K26   ; R10 := R7["minEnemyLevel"]
+ 84 [-]: GETUPVAL  R11 U5       ; R11 := U5
+ 85 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+ 86 [-]: GETUPVAL  R10 U5       ; R10 := U5
+ 87 [-]: DIV       R9 R9 R10    ; R9 := R9 / R10
+ 88 [-]: SUB       R10 R6 R5    ; R10 := R6 - R5
+ 89 [-]: MUL       R9 R9 R10    ; R9 := R9 * R10
+ 90 [-]: ADD       R9 R9 R5     ; R9 := R9 + R5
+ 91 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 92 [-]: MOVE      R8 R4        ; R8 := R4
+ 93 [-]: LOADK     R8 K0        ; R8 := 0
+ 94 [-]: MOVE      R8 R6        ; R8 := R6
+ 95 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 268
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -964,7 +982,7 @@ code size: 363
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 300
+; Defined at line: 304
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1050,7 +1068,7 @@ code size: 363
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 327
+; Defined at line: 331
 ; #Upvalues:       20
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1260,7 +1278,7 @@ code size: 363
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 404
+; Defined at line: 408
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1272,8 +1290,8 @@ code size: 363
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 409
-; #Upvalues:       8
+; Defined at line: 413
+; #Upvalues:       9
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  7
@@ -1290,113 +1308,136 @@ code size: 363
  10 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["activeMissionTag"]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  12 [-]: MOVE      R1 R2        ; R1 := R2
- 13 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 14 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 15 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["MT_CAPTURE"]
- 16 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 38
- 17 [-]: JMP       38           ; PC := 38
- 18 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 19 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 20 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["MT_RESCUE"]
- 21 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 38
- 22 [-]: JMP       38           ; PC := 38
- 23 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 24 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 25 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["MT_SABOTAGE"]
- 26 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 38
- 27 [-]: JMP       38           ; PC := 38
- 28 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 29 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 30 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["MT_ASSASSINATION"]
- 31 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 38
- 32 [-]: JMP       38           ; PC := 38
- 33 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 34 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 35 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["MT_INTEL"]
- 36 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 47
- 37 [-]: JMP       47           ; PC := 47
- 38 [-]: LOADK     R2 K2        ; R2 := 1
- 39 [-]: MOVE      R2 R0        ; R2 := R0
- 40 [-]: LOADK     R2 K2        ; R2 := 1
- 41 [-]: MOVE      R2 R1        ; R2 := R1
- 42 [-]: LOADK     R2 K13       ; R2 := 5
- 43 [-]: MOVE      R2 R2        ; R2 := R2
- 44 [-]: LOADK     R2 K14       ; R2 := 8
- 45 [-]: MOVE      R2 R3        ; R2 := R3
- 46 [-]: JMP       89           ; PC := 89
- 47 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 48 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 49 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["MT_EXTERMINATION"]
- 50 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 63
- 51 [-]: JMP       63           ; PC := 63
- 52 [-]: MOVE      R2 R0        ; R2 := R0
- 53 [-]: MOVE      R2 R4        ; R2 := R4
- 54 [-]: LOADK     R2 K2        ; R2 := 1
- 55 [-]: MOVE      R2 R0        ; R2 := R0
- 56 [-]: LOADK     R2 K2        ; R2 := 1
- 57 [-]: MOVE      R2 R1        ; R2 := R1
- 58 [-]: LOADK     R2 K13       ; R2 := 5
- 59 [-]: MOVE      R2 R2        ; R2 := R2
- 60 [-]: LOADK     R2 K13       ; R2 := 5
- 61 [-]: MOVE      R2 R3        ; R2 := R3
- 62 [-]: JMP       89           ; PC := 89
- 63 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 64 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 65 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["MT_LANDSCAPE"]
- 66 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 77
- 67 [-]: JMP       77           ; PC := 77
- 68 [-]: LOADK     R2 K17       ; R2 := 2
- 69 [-]: MOVE      R2 R0        ; R2 := R0
- 70 [-]: LOADK     R2 K17       ; R2 := 2
- 71 [-]: MOVE      R2 R1        ; R2 := R1
- 72 [-]: LOADK     R2 K18       ; R2 := 10
- 73 [-]: MOVE      R2 R2        ; R2 := R2
- 74 [-]: LOADK     R2 K19       ; R2 := 32
- 75 [-]: MOVE      R2 R3        ; R2 := R3
- 76 [-]: JMP       89           ; PC := 89
- 77 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 78 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 79 [-]: GETTABLE  R3 R3 K20    ; R3 := R3["MT_EXCAVATE"]
- 80 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 87
- 81 [-]: JMP       87           ; PC := 87
- 82 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["missionType"]
- 83 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 84 [-]: GETTABLE  R3 R3 K21    ; R3 := R3["MT_TERRITORY"]
- 85 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 89
- 86 [-]: JMP       89           ; PC := 89
- 87 [-]: MOVE      R2 R0        ; R2 := R0
- 88 [-]: MOVE      R2 R4        ; R2 := R4
- 89 [-]: GETGLOBAL R2 K22       ; R2 := gPromotedToHost
- 90 [-]: TEST      R2 0         ; if not R2 then PC := 104
- 91 [-]: JMP       104          ; PC := 104
- 92 [-]: GETGLOBAL R2 K0        ; R2 := gGameRules
- 93 [-]: SELF      R2 R2 K23    ; R3 := R2; R2 := R2["0xED0EE7FB"]
- 94 [-]: GETUPVAL  R4 U5        ; R4 := U5
- 95 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 96 [-]: MOVE      R2 R6        ; R2 := R6
- 97 [-]: GETGLOBAL R3 K24       ; R3 := 0x93B1256B
- 98 [-]: LOADK     R4 K25       ; R4 := "CephalonTear found "
- 99 [-]: MOVE      R5 R2        ; R5 := R2
-100 [-]: LOADK     R6 K26       ; R6 := " number of remaining targets carrying over migration!"
-101 [-]: CONCAT    R4 R4 R6     ; R4 := R4 .. R5 .. R6
-102 [-]: CALL      R3 2 1       ; R3(R4)
-103 [-]: JMP       111          ; PC := 111
-104 [-]: GETGLOBAL R3 K0        ; R3 := gGameRules
-105 [-]: SELF      R3 R3 K27    ; R4 := R3; R3 := R3["0xD015CBDC"]
-106 [-]: GETUPVAL  R5 U5        ; R5 := U5
-107 [-]: LOADK     R6 K28       ; R6 := 0
-108 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
-109 [-]: LOADK     R3 K28       ; R3 := 0
-110 [-]: MOVE      R3 R6        ; R3 := R6
-111 [-]: GETUPVAL  R3 U7        ; R3 := U7
-112 [-]: CALL      R3 1 1       ; R3()
-113 [-]: RETURN    R0 1         ; return 
+ 13 [-]: GETGLOBAL R2 K6        ; R2 := gFlashMgr
+ 14 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0x1089D053"]
+ 15 [-]: LOADK     R4 K8        ; R4 := "LotusGameRules.CephalonTearSpawnInSimulacrum"
+ 16 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 17 [-]: TEST      R2 0         ; if not R2 then PC := 36
+ 18 [-]: JMP       36           ; PC := 36
+ 19 [-]: GETGLOBAL R2 K0        ; R2 := gGameRules
+ 20 [-]: SELF      R2 R2 K9     ; R3 := R2; R2 := R2["0x8B598ED4"]
+ 21 [-]: GETGLOBAL R4 K10       ; R4 := 0x2C00D429
+ 22 [-]: LOADK     R5 K11       ; R5 := "/Lotus/Types/GameRules/LotusDangerRoomGameRules"
+ 23 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 24 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+ 25 [-]: TEST      R2 0         ; if not R2 then PC := 36
+ 26 [-]: JMP       36           ; PC := 36
+ 27 [-]: LOADK     R2 K12       ; R2 := 10000
+ 28 [-]: MOVE      R2 R0        ; R2 := R0
+ 29 [-]: LOADK     R2 K12       ; R2 := 10000
+ 30 [-]: MOVE      R2 R1        ; R2 := R1
+ 31 [-]: LOADK     R2 K2        ; R2 := 1
+ 32 [-]: MOVE      R2 R2        ; R2 := R2
+ 33 [-]: LOADK     R2 K2        ; R2 := 1
+ 34 [-]: MOVE      R2 R3        ; R2 := R3
+ 35 [-]: JMP       112          ; PC := 112
+ 36 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+ 37 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 38 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["MT_CAPTURE"]
+ 39 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 61
+ 40 [-]: JMP       61           ; PC := 61
+ 41 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+ 42 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 43 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["MT_RESCUE"]
+ 44 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 61
+ 45 [-]: JMP       61           ; PC := 61
+ 46 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+ 47 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 48 [-]: GETTABLE  R3 R3 K17    ; R3 := R3["MT_SABOTAGE"]
+ 49 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 61
+ 50 [-]: JMP       61           ; PC := 61
+ 51 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+ 52 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 53 [-]: GETTABLE  R3 R3 K18    ; R3 := R3["MT_ASSASSINATION"]
+ 54 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 61
+ 55 [-]: JMP       61           ; PC := 61
+ 56 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+ 57 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 58 [-]: GETTABLE  R3 R3 K19    ; R3 := R3["MT_INTEL"]
+ 59 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 70
+ 60 [-]: JMP       70           ; PC := 70
+ 61 [-]: LOADK     R2 K2        ; R2 := 1
+ 62 [-]: MOVE      R2 R4        ; R2 := R4
+ 63 [-]: LOADK     R2 K2        ; R2 := 1
+ 64 [-]: MOVE      R2 R5        ; R2 := R5
+ 65 [-]: LOADK     R2 K20       ; R2 := 5
+ 66 [-]: MOVE      R2 R3        ; R2 := R3
+ 67 [-]: LOADK     R2 K21       ; R2 := 8
+ 68 [-]: MOVE      R2 R2        ; R2 := R2
+ 69 [-]: JMP       112          ; PC := 112
+ 70 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+ 71 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 72 [-]: GETTABLE  R3 R3 K22    ; R3 := R3["MT_EXTERMINATION"]
+ 73 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 86
+ 74 [-]: JMP       86           ; PC := 86
+ 75 [-]: MOVE      R2 R0        ; R2 := R0
+ 76 [-]: MOVE      R2 R6        ; R2 := R6
+ 77 [-]: LOADK     R2 K2        ; R2 := 1
+ 78 [-]: MOVE      R2 R4        ; R2 := R4
+ 79 [-]: LOADK     R2 K2        ; R2 := 1
+ 80 [-]: MOVE      R2 R5        ; R2 := R5
+ 81 [-]: LOADK     R2 K20       ; R2 := 5
+ 82 [-]: MOVE      R2 R3        ; R2 := R3
+ 83 [-]: LOADK     R2 K20       ; R2 := 5
+ 84 [-]: MOVE      R2 R2        ; R2 := R2
+ 85 [-]: JMP       112          ; PC := 112
+ 86 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+ 87 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 88 [-]: GETTABLE  R3 R3 K23    ; R3 := R3["MT_LANDSCAPE"]
+ 89 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 100
+ 90 [-]: JMP       100          ; PC := 100
+ 91 [-]: LOADK     R2 K24       ; R2 := 2
+ 92 [-]: MOVE      R2 R4        ; R2 := R4
+ 93 [-]: LOADK     R2 K24       ; R2 := 2
+ 94 [-]: MOVE      R2 R5        ; R2 := R5
+ 95 [-]: LOADK     R2 K25       ; R2 := 10
+ 96 [-]: MOVE      R2 R3        ; R2 := R3
+ 97 [-]: LOADK     R2 K26       ; R2 := 32
+ 98 [-]: MOVE      R2 R2        ; R2 := R2
+ 99 [-]: JMP       112          ; PC := 112
+100 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+101 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+102 [-]: GETTABLE  R3 R3 K27    ; R3 := R3["MT_EXCAVATE"]
+103 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 110
+104 [-]: JMP       110          ; PC := 110
+105 [-]: GETTABLE  R2 R0 K13    ; R2 := R0["missionType"]
+106 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+107 [-]: GETTABLE  R3 R3 K28    ; R3 := R3["MT_TERRITORY"]
+108 [-]: EQ        0 R2 R3      ; if R2 ~= R3 then PC := 112
+109 [-]: JMP       112          ; PC := 112
+110 [-]: MOVE      R2 R0        ; R2 := R0
+111 [-]: MOVE      R2 R6        ; R2 := R6
+112 [-]: GETGLOBAL R2 K29       ; R2 := gPromotedToHost
+113 [-]: TEST      R2 0         ; if not R2 then PC := 127
+114 [-]: JMP       127          ; PC := 127
+115 [-]: GETGLOBAL R2 K0        ; R2 := gGameRules
+116 [-]: SELF      R2 R2 K30    ; R3 := R2; R2 := R2["0xED0EE7FB"]
+117 [-]: GETUPVAL  R4 U7        ; R4 := U7
+118 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+119 [-]: MOVE      R2 R0        ; R2 := R0
+120 [-]: GETGLOBAL R3 K31       ; R3 := 0x93B1256B
+121 [-]: LOADK     R4 K32       ; R4 := "CephalonTear found "
+122 [-]: MOVE      R5 R2        ; R5 := R2
+123 [-]: LOADK     R6 K33       ; R6 := " number of remaining targets carrying over migration!"
+124 [-]: CONCAT    R4 R4 R6     ; R4 := R4 .. R5 .. R6
+125 [-]: CALL      R3 2 1       ; R3(R4)
+126 [-]: JMP       134          ; PC := 134
+127 [-]: GETGLOBAL R3 K0        ; R3 := gGameRules
+128 [-]: SELF      R3 R3 K34    ; R4 := R3; R3 := R3["0xD015CBDC"]
+129 [-]: GETUPVAL  R5 U7        ; R5 := U7
+130 [-]: LOADK     R6 K35       ; R6 := 0
+131 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+132 [-]: LOADK     R3 K35       ; R3 := 0
+133 [-]: MOVE      R3 R0        ; R3 := R0
+134 [-]: GETUPVAL  R3 U8        ; R3 := U8
+135 [-]: CALL      R3 1 1       ; R3()
+136 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 459
+; Defined at line: 470
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1423,7 +1464,7 @@ code size: 363
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 464
+; Defined at line: 475
 ; #Upvalues:       27
 ; #Parameters:     1
 ; Is_vararg:       0

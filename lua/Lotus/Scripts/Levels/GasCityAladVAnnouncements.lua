@@ -1,7 +1,7 @@
 code size: 71
 code size: 62
-code size: 33
-code size: 33
+code size: 45
+code size: 45
 code size: 20
 code size: 36
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -177,37 +177,49 @@ code size: 36
   6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0xA76F0612"]
   7 [-]: GETUPVAL  R3 U1        ; R3 := U1
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  9 [-]: LEN       R2 R0        ; R2 := # R0
- 10 [-]: LT        0 K3 R2      ; if 0 >= R2 then PC := 21
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: LOADK     R2 K4        ; R2 := 1
- 13 [-]: LEN       R3 R0        ; R3 := # R0
- 14 [-]: LOADK     R4 K4        ; R4 := 1
- 15 [-]: FORPREP   R2 20        ; R2 -= R4; PC := 20
- 16 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
- 17 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6["0xBD76C6FB"]
- 18 [-]: MOVE      R8 R1        ; R8 := R1
- 19 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 20 [-]: FORLOOP   R2 16        ; R2 += R4; if R2 <= R3 then begin PC := 16; R5 := R2 end
- 21 [-]: LEN       R6 R1        ; R6 := # R1
- 22 [-]: LT        0 K3 R6      ; if 0 >= R6 then PC := 33
+  9 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 10 [-]: MOVE      R3 R0        ; R3 := R0
+ 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 12 [-]: TEST      R2 0         ; if not R2 then PC := 21
+ 13 [-]: JMP       21           ; PC := 21
+ 14 [-]: GETGLOBAL R2 K0        ; R2 := gRegion
+ 15 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0xA76F0612"]
+ 16 [-]: GETGLOBAL R4 K4        ; R4 := 0xEC274B1A
+ 17 [-]: LOADK     R5 K5        ; R5 := "ScreenDeco"
+ 18 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 19 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+ 20 [-]: MOVE      R0 R2        ; R0 := R2
+ 21 [-]: LEN       R2 R0        ; R2 := # R0
+ 22 [-]: LT        0 K6 R2      ; if 0 >= R2 then PC := 33
  23 [-]: JMP       33           ; PC := 33
- 24 [-]: LOADK     R6 K4        ; R6 := 1
- 25 [-]: LEN       R7 R1        ; R7 := # R1
- 26 [-]: LOADK     R8 K4        ; R8 := 1
- 27 [-]: FORPREP   R6 32        ; R6 -= R8; PC := 32
- 28 [-]: GETTABLE  R10 R1 R9    ; R10 := R1[R9]
- 29 [-]: SELF      R10 R10 K6   ; R11 := R10; R10 := R10["0x65346092"]
- 30 [-]: GETGLOBAL R12 K7       ; R12 := lightTextureTransmissionStarted
- 31 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 32 [-]: FORLOOP   R6 28        ; R6 += R8; if R6 <= R7 then begin PC := 28; R9 := R6 end
- 33 [-]: RETURN    R0 1         ; return 
+ 24 [-]: LOADK     R2 K7        ; R2 := 1
+ 25 [-]: LEN       R3 R0        ; R3 := # R0
+ 26 [-]: LOADK     R4 K7        ; R4 := 1
+ 27 [-]: FORPREP   R2 32        ; R2 -= R4; PC := 32
+ 28 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
+ 29 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xBD76C6FB"]
+ 30 [-]: MOVE      R8 R1        ; R8 := R1
+ 31 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 32 [-]: FORLOOP   R2 28        ; R2 += R4; if R2 <= R3 then begin PC := 28; R5 := R2 end
+ 33 [-]: LEN       R6 R1        ; R6 := # R1
+ 34 [-]: LT        0 K6 R6      ; if 0 >= R6 then PC := 45
+ 35 [-]: JMP       45           ; PC := 45
+ 36 [-]: LOADK     R6 K7        ; R6 := 1
+ 37 [-]: LEN       R7 R1        ; R7 := # R1
+ 38 [-]: LOADK     R8 K7        ; R8 := 1
+ 39 [-]: FORPREP   R6 44        ; R6 -= R8; PC := 44
+ 40 [-]: GETTABLE  R10 R1 R9    ; R10 := R1[R9]
+ 41 [-]: SELF      R10 R10 K9   ; R11 := R10; R10 := R10["0x65346092"]
+ 42 [-]: GETGLOBAL R12 K10      ; R12 := lightTextureTransmissionStarted
+ 43 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 44 [-]: FORLOOP   R6 40        ; R6 += R8; if R6 <= R7 then begin PC := 40; R9 := R6 end
+ 45 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 73
+; Defined at line: 77
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -221,37 +233,49 @@ code size: 36
   6 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0xA76F0612"]
   7 [-]: GETUPVAL  R3 U1        ; R3 := U1
   8 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  9 [-]: LEN       R2 R0        ; R2 := # R0
- 10 [-]: LT        0 K3 R2      ; if 0 >= R2 then PC := 21
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: LOADK     R2 K4        ; R2 := 1
- 13 [-]: LEN       R3 R0        ; R3 := # R0
- 14 [-]: LOADK     R4 K4        ; R4 := 1
- 15 [-]: FORPREP   R2 20        ; R2 -= R4; PC := 20
- 16 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
- 17 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6["0xBD76C6FB"]
- 18 [-]: MOVE      R8 R0        ; R8 := R0
- 19 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 20 [-]: FORLOOP   R2 16        ; R2 += R4; if R2 <= R3 then begin PC := 16; R5 := R2 end
- 21 [-]: LEN       R6 R1        ; R6 := # R1
- 22 [-]: LT        0 K3 R6      ; if 0 >= R6 then PC := 33
+  9 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 10 [-]: MOVE      R3 R0        ; R3 := R0
+ 11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 12 [-]: TEST      R2 0         ; if not R2 then PC := 21
+ 13 [-]: JMP       21           ; PC := 21
+ 14 [-]: GETGLOBAL R2 K0        ; R2 := gRegion
+ 15 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0xA76F0612"]
+ 16 [-]: GETGLOBAL R4 K4        ; R4 := 0xEC274B1A
+ 17 [-]: LOADK     R5 K5        ; R5 := "ScreenDeco"
+ 18 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 19 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+ 20 [-]: MOVE      R0 R2        ; R0 := R2
+ 21 [-]: LEN       R2 R0        ; R2 := # R0
+ 22 [-]: LT        0 K6 R2      ; if 0 >= R2 then PC := 33
  23 [-]: JMP       33           ; PC := 33
- 24 [-]: LOADK     R6 K4        ; R6 := 1
- 25 [-]: LEN       R7 R1        ; R7 := # R1
- 26 [-]: LOADK     R8 K4        ; R8 := 1
- 27 [-]: FORPREP   R6 32        ; R6 -= R8; PC := 32
- 28 [-]: GETTABLE  R10 R1 R9    ; R10 := R1[R9]
- 29 [-]: SELF      R10 R10 K6   ; R11 := R10; R10 := R10["0x65346092"]
- 30 [-]: GETGLOBAL R12 K7       ; R12 := lightTextureTransmissionEnded
- 31 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 32 [-]: FORLOOP   R6 28        ; R6 += R8; if R6 <= R7 then begin PC := 28; R9 := R6 end
- 33 [-]: RETURN    R0 1         ; return 
+ 24 [-]: LOADK     R2 K7        ; R2 := 1
+ 25 [-]: LEN       R3 R0        ; R3 := # R0
+ 26 [-]: LOADK     R4 K7        ; R4 := 1
+ 27 [-]: FORPREP   R2 32        ; R2 -= R4; PC := 32
+ 28 [-]: GETTABLE  R6 R0 R5     ; R6 := R0[R5]
+ 29 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xBD76C6FB"]
+ 30 [-]: MOVE      R8 R0        ; R8 := R0
+ 31 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 32 [-]: FORLOOP   R2 28        ; R2 += R4; if R2 <= R3 then begin PC := 28; R5 := R2 end
+ 33 [-]: LEN       R6 R1        ; R6 := # R1
+ 34 [-]: LT        0 K6 R6      ; if 0 >= R6 then PC := 45
+ 35 [-]: JMP       45           ; PC := 45
+ 36 [-]: LOADK     R6 K7        ; R6 := 1
+ 37 [-]: LEN       R7 R1        ; R7 := # R1
+ 38 [-]: LOADK     R8 K7        ; R8 := 1
+ 39 [-]: FORPREP   R6 44        ; R6 -= R8; PC := 44
+ 40 [-]: GETTABLE  R10 R1 R9    ; R10 := R1[R9]
+ 41 [-]: SELF      R10 R10 K9   ; R11 := R10; R10 := R10["0x65346092"]
+ 42 [-]: GETGLOBAL R12 K10      ; R12 := lightTextureTransmissionEnded
+ 43 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 44 [-]: FORLOOP   R6 40        ; R6 += R8; if R6 <= R7 then begin PC := 40; R9 := R6 end
+ 45 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 89
+; Defined at line: 97
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -282,7 +306,7 @@ code size: 36
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 99
+; Defined at line: 107
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0

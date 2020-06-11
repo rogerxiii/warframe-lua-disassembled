@@ -261,7 +261,7 @@ code size: 25
 148 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 149 [-]: SETTABLE  R2 K55 R16   ; R2["mRarity"] := R16
 150 [-]: SETTABLE  R2 K57 R15   ; R2["mSlot"] := R15
-151 [-]: LOADK     R16 K58      ; R16 := "/Game/"
+151 [-]: LOADK     R16 K58      ; R16 := "/Lotus/Language/Labels/"
 152 [-]: GETUPVAL  R17 U2       ; R17 := U2
 153 [-]: GETTABLE  R18 R2 K55   ; R18 := R2["mRarity"]
 154 [-]: ADD       R18 R18 K24  ; R18 := R18 + 1

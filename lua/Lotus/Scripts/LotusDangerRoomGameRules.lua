@@ -1,5 +1,5 @@
-code size: 114
-code size: 4
+code size: 118
+code size: 25
 code size: 34
 code size: 36
 code size: 31
@@ -25,7 +25,7 @@ code size: 97
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  28
+; Max Stack Size:  29
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.SimulacrumUtilities"
@@ -69,99 +69,124 @@ code size: 97
  40 [-]: MOVE      R13 R0       ; R13 := R0
  41 [-]: LOADNIL   R14 R18      ; R14 := R15 := R16 := R17 := R18 := nil
  42 [-]: LOADK     R19 K18      ; R19 := 0
- 43 [-]: CLOSURE   R20 0        ; R20 := closure(Function #1)
- 44 [-]: MOVE      R0 R2        ; R0 := R2
- 45 [-]: SETGLOBAL R20 K19      ; OnLevelLoaded := R20
- 46 [-]: SETGLOBAL R20 K20      ; 0x58403BFF := R20
- 47 [-]: CLOSURE   R20 1        ; R20 := closure(Function #2)
- 48 [-]: MOVE      R0 R12       ; R0 := R12
- 49 [-]: MOVE      R0 R11       ; R0 := R11
- 50 [-]: CLOSURE   R21 2        ; R21 := closure(Function #3)
- 51 [-]: MOVE      R0 R5        ; R0 := R5
- 52 [-]: CLOSURE   R22 3        ; R22 := closure(Function #4)
- 53 [-]: MOVE      R0 R8        ; R0 := R8
- 54 [-]: CLOSURE   R23 4        ; R23 := closure(Function #5)
- 55 [-]: MOVE      R0 R8        ; R0 := R8
- 56 [-]: CLOSURE   R24 5        ; R24 := closure(Function #6)
+ 43 [-]: GETGLOBAL R20 K19      ; R20 := 0x2C00D429
+ 44 [-]: LOADK     R21 K20      ; R21 := "/Lotus/Types/Game/ScriptTriggers/CephalonTearScriptTrigger"
+ 45 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+ 46 [-]: CLOSURE   R21 0        ; R21 := closure(Function #1)
+ 47 [-]: MOVE      R0 R2        ; R0 := R2
+ 48 [-]: MOVE      R0 R20       ; R0 := R20
+ 49 [-]: SETGLOBAL R21 K21      ; OnLevelLoaded := R21
+ 50 [-]: SETGLOBAL R21 K22      ; 0x58403BFF := R21
+ 51 [-]: CLOSURE   R21 1        ; R21 := closure(Function #2)
+ 52 [-]: MOVE      R0 R12       ; R0 := R12
+ 53 [-]: MOVE      R0 R11       ; R0 := R11
+ 54 [-]: CLOSURE   R22 2        ; R22 := closure(Function #3)
+ 55 [-]: MOVE      R0 R5        ; R0 := R5
+ 56 [-]: CLOSURE   R23 3        ; R23 := closure(Function #4)
  57 [-]: MOVE      R0 R8        ; R0 := R8
- 58 [-]: MOVE      R0 R22       ; R0 := R22
- 59 [-]: MOVE      R0 R23       ; R0 := R23
- 60 [-]: CLOSURE   R25 6        ; R25 := closure(Function #7)
- 61 [-]: MOVE      R0 R19       ; R0 := R19
- 62 [-]: MOVE      R0 R9        ; R0 := R9
- 63 [-]: MOVE      R0 R0        ; R0 := R0
- 64 [-]: CLOSURE   R26 7        ; R26 := closure(Function #8)
- 65 [-]: MOVE      R0 R20       ; R0 := R20
- 66 [-]: MOVE      R0 R21       ; R0 := R21
- 67 [-]: MOVE      R0 R13       ; R0 := R13
- 68 [-]: MOVE      R0 R17       ; R0 := R17
- 69 [-]: MOVE      R0 R18       ; R0 := R18
- 70 [-]: MOVE      R0 R24       ; R0 := R24
- 71 [-]: MOVE      R0 R25       ; R0 := R25
- 72 [-]: MOVE      R0 R10       ; R0 := R10
- 73 [-]: SETGLOBAL R26 K21      ; OnUpdate := R26
- 74 [-]: SETGLOBAL R26 K22      ; 0xA6FE3344 := R26
- 75 [-]: CLOSURE   R26 8        ; R26 := closure(Function #9)
+ 58 [-]: CLOSURE   R24 4        ; R24 := closure(Function #5)
+ 59 [-]: MOVE      R0 R8        ; R0 := R8
+ 60 [-]: CLOSURE   R25 5        ; R25 := closure(Function #6)
+ 61 [-]: MOVE      R0 R8        ; R0 := R8
+ 62 [-]: MOVE      R0 R23       ; R0 := R23
+ 63 [-]: MOVE      R0 R24       ; R0 := R24
+ 64 [-]: CLOSURE   R26 6        ; R26 := closure(Function #7)
+ 65 [-]: MOVE      R0 R19       ; R0 := R19
+ 66 [-]: MOVE      R0 R9        ; R0 := R9
+ 67 [-]: MOVE      R0 R0        ; R0 := R0
+ 68 [-]: CLOSURE   R27 7        ; R27 := closure(Function #8)
+ 69 [-]: MOVE      R0 R21       ; R0 := R21
+ 70 [-]: MOVE      R0 R22       ; R0 := R22
+ 71 [-]: MOVE      R0 R13       ; R0 := R13
+ 72 [-]: MOVE      R0 R17       ; R0 := R17
+ 73 [-]: MOVE      R0 R18       ; R0 := R18
+ 74 [-]: MOVE      R0 R25       ; R0 := R25
+ 75 [-]: MOVE      R0 R26       ; R0 := R26
  76 [-]: MOVE      R0 R10       ; R0 := R10
- 77 [-]: SETGLOBAL R26 K23      ; OnPlayerConnected := R26
- 78 [-]: SETGLOBAL R26 K24      ; 0xC9DDD994 := R26
- 79 [-]: CLOSURE   R26 9        ; R26 := closure(Function #10)
- 80 [-]: CLOSURE   R27 10       ; R27 := closure(Function #11)
- 81 [-]: SETGLOBAL R27 K25      ; NotifyPlayerEnteringSpace := R27
- 82 [-]: SETGLOBAL R27 K26      ; 0x9ED22ADE := R27
- 83 [-]: CLOSURE   R27 11       ; R27 := closure(Function #12)
- 84 [-]: SETGLOBAL R27 K27      ; NotifyPlayerLeavingSpace := R27
- 85 [-]: SETGLOBAL R27 K28      ; 0x6552E221 := R27
- 86 [-]: CLOSURE   R27 12       ; R27 := closure(Function #13)
- 87 [-]: MOVE      R0 R4        ; R0 := R4
- 88 [-]: MOVE      R0 R26       ; R0 := R26
- 89 [-]: SETGLOBAL R27 K29      ; OnPlayerSpawned := R27
- 90 [-]: SETGLOBAL R27 K30      ; 0x81331586 := R27
- 91 [-]: CLOSURE   R27 13       ; R27 := closure(Function #14)
- 92 [-]: MOVE      R0 R13       ; R0 := R13
- 93 [-]: MOVE      R0 R26       ; R0 := R26
- 94 [-]: MOVE      R0 R14       ; R0 := R14
- 95 [-]: MOVE      R0 R16       ; R0 := R16
- 96 [-]: SETGLOBAL R27 K31      ; OnLocalAvatarCreated := R27
- 97 [-]: SETGLOBAL R27 K32      ; 0xE814F6E5 := R27
- 98 [-]: CLOSURE   R27 14       ; R27 := closure(Function #15)
- 99 [-]: MOVE      R0 R1        ; R0 := R1
-100 [-]: SETGLOBAL R27 K33      ; OnDeath := R27
-101 [-]: SETGLOBAL R27 K34      ; 0xC51A1FCE := R27
-102 [-]: CLOSURE   R27 15       ; R27 := closure(Function #16)
-103 [-]: MOVE      R0 R3        ; R0 := R3
-104 [-]: SETGLOBAL R27 K35      ; CheckMissionRequirements := R27
-105 [-]: SETGLOBAL R27 K36      ; 0x3A118551 := R27
-106 [-]: CLOSURE   R27 16       ; R27 := closure(Function #17)
-107 [-]: SETGLOBAL R27 K37      ; ReceivedCustomRaidData := R27
-108 [-]: SETGLOBAL R27 K38      ; 0xE1E0093D := R27
-109 [-]: CLOSURE   R27 17       ; R27 := closure(Function #18)
-110 [-]: MOVE      R0 R6        ; R0 := R6
-111 [-]: MOVE      R0 R7        ; R0 := R7
-112 [-]: SETGLOBAL R27 K39      ; OnAgentCreated := R27
-113 [-]: SETGLOBAL R27 K40      ; 0x41D90AA6 := R27
-114 [-]: RETURN    R0 1         ; return 
+ 77 [-]: SETGLOBAL R27 K23      ; OnUpdate := R27
+ 78 [-]: SETGLOBAL R27 K24      ; 0xA6FE3344 := R27
+ 79 [-]: CLOSURE   R27 8        ; R27 := closure(Function #9)
+ 80 [-]: MOVE      R0 R10       ; R0 := R10
+ 81 [-]: SETGLOBAL R27 K25      ; OnPlayerConnected := R27
+ 82 [-]: SETGLOBAL R27 K26      ; 0xC9DDD994 := R27
+ 83 [-]: CLOSURE   R27 9        ; R27 := closure(Function #10)
+ 84 [-]: CLOSURE   R28 10       ; R28 := closure(Function #11)
+ 85 [-]: SETGLOBAL R28 K27      ; NotifyPlayerEnteringSpace := R28
+ 86 [-]: SETGLOBAL R28 K28      ; 0x9ED22ADE := R28
+ 87 [-]: CLOSURE   R28 11       ; R28 := closure(Function #12)
+ 88 [-]: SETGLOBAL R28 K29      ; NotifyPlayerLeavingSpace := R28
+ 89 [-]: SETGLOBAL R28 K30      ; 0x6552E221 := R28
+ 90 [-]: CLOSURE   R28 12       ; R28 := closure(Function #13)
+ 91 [-]: MOVE      R0 R4        ; R0 := R4
+ 92 [-]: MOVE      R0 R27       ; R0 := R27
+ 93 [-]: SETGLOBAL R28 K31      ; OnPlayerSpawned := R28
+ 94 [-]: SETGLOBAL R28 K32      ; 0x81331586 := R28
+ 95 [-]: CLOSURE   R28 13       ; R28 := closure(Function #14)
+ 96 [-]: MOVE      R0 R13       ; R0 := R13
+ 97 [-]: MOVE      R0 R27       ; R0 := R27
+ 98 [-]: MOVE      R0 R14       ; R0 := R14
+ 99 [-]: MOVE      R0 R16       ; R0 := R16
+100 [-]: SETGLOBAL R28 K33      ; OnLocalAvatarCreated := R28
+101 [-]: SETGLOBAL R28 K34      ; 0xE814F6E5 := R28
+102 [-]: CLOSURE   R28 14       ; R28 := closure(Function #15)
+103 [-]: MOVE      R0 R1        ; R0 := R1
+104 [-]: SETGLOBAL R28 K35      ; OnDeath := R28
+105 [-]: SETGLOBAL R28 K36      ; 0xC51A1FCE := R28
+106 [-]: CLOSURE   R28 15       ; R28 := closure(Function #16)
+107 [-]: MOVE      R0 R3        ; R0 := R3
+108 [-]: SETGLOBAL R28 K37      ; CheckMissionRequirements := R28
+109 [-]: SETGLOBAL R28 K38      ; 0x3A118551 := R28
+110 [-]: CLOSURE   R28 16       ; R28 := closure(Function #17)
+111 [-]: SETGLOBAL R28 K39      ; ReceivedCustomRaidData := R28
+112 [-]: SETGLOBAL R28 K40      ; 0xE1E0093D := R28
+113 [-]: CLOSURE   R28 17       ; R28 := closure(Function #18)
+114 [-]: MOVE      R0 R6        ; R0 := R6
+115 [-]: MOVE      R0 R7        ; R0 := R7
+116 [-]: SETGLOBAL R28 K41      ; OnAgentCreated := R28
+117 [-]: SETGLOBAL R28 K42      ; 0x41D90AA6 := R28
+118 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 43
-; #Upvalues:       1
+; Defined at line: 45
+; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  2
+; Max Stack Size:  6
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x240B3CAB"]
   3 [-]: CALL      R1 1 1       ; R1()
-  4 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETGLOBAL R1 K1        ; R1 := gFlashMgr
+  5 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x1089D053"]
+  6 [-]: LOADK     R3 K3        ; R3 := "LotusGameRules.CephalonTearSpawnInSimulacrum"
+  7 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+  8 [-]: TEST      R1 0         ; if not R1 then PC := 25
+  9 [-]: JMP       25           ; PC := 25
+ 10 [-]: GETGLOBAL R1 K4        ; R1 := gRegion
+ 11 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1["0xBDD34CC6"]
+ 12 [-]: GETGLOBAL R3 K6        ; R3 := 0xCAA43ABB
+ 13 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 14 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x1B252E3C"]
+ 15 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 16 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 17 [-]: GETGLOBAL R4 K8        ; R4 := ZERO_VECTOR
+ 18 [-]: GETGLOBAL R5 K9        ; R5 := ZERO_ROTATION
+ 19 [-]: CALL      R1 5 2       ; R1 := R1(R2,R3,R4,R5)
+ 20 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1["0x8D5886B7"]
+ 21 [-]: LOADK     R4 K11       ; R4 := "Execute"
+ 22 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 23 [-]: GETGLOBAL R2 K12       ; R2 := _T
+ 24 [-]: SETTABLE  R2 K13 K14   ; R2["MissionInitReady"] := "0x1"
+ 25 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 47
+; Defined at line: 55
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -206,7 +231,7 @@ code size: 97
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 58
+; Defined at line: 66
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -253,7 +278,7 @@ code size: 97
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 71
+; Defined at line: 79
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -295,7 +320,7 @@ code size: 97
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 80
+; Defined at line: 88
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -330,7 +355,7 @@ code size: 97
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 89
+; Defined at line: 97
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -450,7 +475,7 @@ code size: 97
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 127
+; Defined at line: 135
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -476,7 +501,7 @@ code size: 97
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 138
+; Defined at line: 146
 ; #Upvalues:       8
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -678,7 +703,7 @@ code size: 97
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 229
+; Defined at line: 237
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -754,7 +779,7 @@ code size: 97
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 251
+; Defined at line: 259
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -852,7 +877,7 @@ code size: 97
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 288
+; Defined at line: 296
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -907,7 +932,7 @@ code size: 97
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 304
+; Defined at line: 312
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -974,7 +999,7 @@ code size: 97
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 328
+; Defined at line: 336
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1022,7 +1047,7 @@ code size: 97
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 346
+; Defined at line: 354
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1105,7 +1130,7 @@ code size: 97
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 377
+; Defined at line: 385
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1161,7 +1186,7 @@ code size: 97
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 403
+; Defined at line: 411
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1201,7 +1226,7 @@ code size: 97
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 415
+; Defined at line: 423
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1228,7 +1253,7 @@ code size: 97
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 423
+; Defined at line: 431
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1280,11 +1305,11 @@ code size: 97
  44 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0xAABFD53"]
  45 [-]: GETGLOBAL R4 K14       ; R4 := Game
  46 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["AVATAR_DAMAGE_RESISTANCE"]
- 47 [-]: GETGLOBAL R5 K14       ; R5 := Game
- 48 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["ADD"]
- 49 [-]: LOADK     R6 K17       ; R6 := 0.89999997615814
+ 47 [-]: GETGLOBAL R5 K16       ; R5 := Engine
+ 48 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["ADD"]
+ 49 [-]: LOADK     R6 K18       ; R6 := 0.89999997615814
  50 [-]: LOADNIL   R7 R8        ; R7 := R8 := nil
- 51 [-]: GETGLOBAL R9 K18       ; R9 := Engine
+ 51 [-]: GETGLOBAL R9 K16       ; R9 := Engine
  52 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["DT_BASE_ELEMENTAL"]
  53 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  54 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1["0x80B14403"]
@@ -1294,11 +1319,11 @@ code size: 97
  58 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0xAABFD53"]
  59 [-]: GETGLOBAL R4 K14       ; R4 := Game
  60 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["AVATAR_DAMAGE_RESISTANCE"]
- 61 [-]: GETGLOBAL R5 K14       ; R5 := Game
- 62 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["ADD"]
- 63 [-]: LOADK     R6 K17       ; R6 := 0.89999997615814
+ 61 [-]: GETGLOBAL R5 K16       ; R5 := Engine
+ 62 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["ADD"]
+ 63 [-]: LOADK     R6 K18       ; R6 := 0.89999997615814
  64 [-]: LOADNIL   R7 R8        ; R7 := R8 := nil
- 65 [-]: GETGLOBAL R9 K18       ; R9 := Engine
+ 65 [-]: GETGLOBAL R9 K16       ; R9 := Engine
  66 [-]: GETTABLE  R9 R9 K20    ; R9 := R9["DT_COMPOUND_ELEMENTAL"]
  67 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
  68 [-]: JMP       88           ; PC := 88

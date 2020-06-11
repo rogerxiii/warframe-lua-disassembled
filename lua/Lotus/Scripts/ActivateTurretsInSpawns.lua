@@ -1,5 +1,6 @@
-code size: 6
-code size: 87
+code size: 9
+code size: 63
+code size: 35
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\ActivateTurretsInSpawns.luac 
 
@@ -13,9 +14,12 @@ code size: 87
   1 [-]: LOADK     R0 K0        ; R0 := 16
   2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
   3 [-]: MOVE      R0 R0        ; R0 := R0
-  4 [-]: SETGLOBAL R1 K1        ; StartTurrets := R1
-  5 [-]: SETGLOBAL R1 K2        ; 0xBCFC2990 := R1
-  6 [-]: RETURN    R0 1         ; return 
+  4 [-]: SETGLOBAL R1 K1        ; TurretActivation := R1
+  5 [-]: SETGLOBAL R1 K2        ; 0xB133BFBB := R1
+  6 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
+  7 [-]: SETGLOBAL R1 K3        ; StartTurrets := R1
+  8 [-]: SETGLOBAL R1 K4        ; 0xBCFC2990 := R1
+  9 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -23,9 +27,83 @@ code size: 87
 ; Name:            
 ; Defined at line: 4
 ; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  16
+
+  1 [-]: LOADK     R1 K0        ; R1 := 1
+  2 [-]: GETGLOBAL R2 K1        ; R2 := turretSpawnPoints
+  3 [-]: LEN       R2 R2        ; R2 := # R2
+  4 [-]: LOADK     R3 K0        ; R3 := 1
+  5 [-]: FORPREP   R1 21        ; R1 -= R3; PC := 21
+  6 [-]: GETGLOBAL R5 K1        ; R5 := turretSpawnPoints
+  7 [-]: GETTABLE  R5 R5 R4     ; R5 := R5[R4]
+  8 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x788FFF36"]
+  9 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 10 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
+ 11 [-]: MOVE      R7 R5        ; R7 := R5
+ 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 13 [-]: TEST      R6 1         ; if R6 then PC := 21
+ 14 [-]: JMP       21           ; PC := 21
+ 15 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5["0xC5772950"]
+ 16 [-]: CALL      R6 2 1       ; R6(R7)
+ 17 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5["0xE96B2E8E"]
+ 18 [-]: GETGLOBAL R8 K6        ; R8 := _T
+ 19 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["TurretSpawnLevel"]
+ 20 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 21 [-]: FORLOOP   R1 6         ; R1 += R3; if R1 <= R2 then begin PC := 6; R4 := R1 end
+ 22 [-]: SELF      R6 R0 K8     ; R7 := R0; R6 := R0["0x8D5886B7"]
+ 23 [-]: LOADK     R8 K9        ; R8 := "Disable"
+ 24 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 25 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 26 [-]: LT        0 K10 R6     ; if 0 >= R6 then PC := 43
+ 27 [-]: JMP       43           ; PC := 43
+ 28 [-]: GETGLOBAL R7 K11       ; R7 := 0x4CDEF9FF
+ 29 [-]: CALL      R7 1 2       ; R7 := R7()
+ 30 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
+ 31 [-]: GETGLOBAL R7 K12       ; R7 := gGameRules
+ 32 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x1DD5B857"]
+ 33 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 34 [-]: GETGLOBAL R8 K14       ; R8 := Lotus_Game
+ 35 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["LotusPveDeathmatchGameRules_GS_ROUND_SETUP"]
+ 36 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 39
+ 37 [-]: JMP       39           ; PC := 39
+ 38 [-]: JMP       43           ; PC := 43
+ 39 [-]: GETGLOBAL R8 K16       ; R8 := 0x201191EA
+ 40 [-]: LOADK     R9 K10       ; R9 := 0
+ 41 [-]: CALL      R8 2 1       ; R8(R9)
+ 42 [-]: JMP       26           ; PC := 26
+ 43 [-]: LOADK     R8 K0        ; R8 := 1
+ 44 [-]: GETGLOBAL R9 K1        ; R9 := turretSpawnPoints
+ 45 [-]: LEN       R9 R9        ; R9 := # R9
+ 46 [-]: LOADK     R10 K0       ; R10 := 1
+ 47 [-]: FORPREP   R8 59        ; R8 -= R10; PC := 59
+ 48 [-]: GETGLOBAL R12 K1       ; R12 := turretSpawnPoints
+ 49 [-]: GETTABLE  R12 R12 R11  ; R12 := R12[R11]
+ 50 [-]: SELF      R12 R12 K2   ; R13 := R12; R12 := R12["0x788FFF36"]
+ 51 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 52 [-]: GETGLOBAL R13 K3       ; R13 := 0x400E7765
+ 53 [-]: MOVE      R14 R12      ; R14 := R12
+ 54 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 55 [-]: TEST      R13 1        ; if R13 then PC := 59
+ 56 [-]: JMP       59           ; PC := 59
+ 57 [-]: SELF      R13 R12 K17  ; R14 := R12; R13 := R12["0x2A20C5D3"]
+ 58 [-]: CALL      R13 2 1      ; R13(R14)
+ 59 [-]: FORLOOP   R8 48        ; R8 += R10; if R8 <= R9 then begin PC := 48; R11 := R8 end
+ 60 [-]: SELF      R13 R0 K8    ; R14 := R0; R13 := R0["0x8D5886B7"]
+ 61 [-]: LOADK     R15 K18      ; R15 := "Enable"
+ 62 [-]: CALL      R13 3 1      ; R13(R14,R15)
+ 63 [-]: RETURN    R0 1         ; return 
+
+
+; Function #2:
+;
+; Name:            
+; Defined at line: 37
+; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  19
+; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R3 K0        ; R3 := turretSpawnPoints
   2 [-]: LEN       R3 R3        ; R3 := # R3
@@ -49,70 +127,18 @@ code size: 87
  20 [-]: EQ        0 R1 K5      ; if R1 ~= nil then PC := 23
  21 [-]: JMP       23           ; PC := 23
  22 [-]: LOADK     R1 K4        ; R1 := 1
- 23 [-]: EQ        0 R1 K4      ; if R1 ~= 1 then PC := 87
- 24 [-]: JMP       87           ; PC := 87
- 25 [-]: LOADK     R4 K4        ; R4 := 1
- 26 [-]: GETGLOBAL R5 K0        ; R5 := turretSpawnPoints
- 27 [-]: LEN       R5 R5        ; R5 := # R5
- 28 [-]: LOADK     R6 K4        ; R6 := 1
- 29 [-]: FORPREP   R4 45        ; R4 -= R6; PC := 45
- 30 [-]: GETGLOBAL R8 K0        ; R8 := turretSpawnPoints
- 31 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
- 32 [-]: SELF      R8 R8 K6     ; R9 := R8; R8 := R8["0x788FFF36"]
- 33 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 34 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
- 35 [-]: MOVE      R10 R8       ; R10 := R8
- 36 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 37 [-]: TEST      R9 1         ; if R9 then PC := 45
- 38 [-]: JMP       45           ; PC := 45
- 39 [-]: SELF      R9 R8 K7     ; R10 := R8; R9 := R8["0xC5772950"]
- 40 [-]: CALL      R9 2 1       ; R9(R10)
- 41 [-]: SELF      R9 R8 K8     ; R10 := R8; R9 := R8["0xE96B2E8E"]
- 42 [-]: SELF      R11 R3 K9    ; R12 := R3; R11 := R3["0x7632A12E"]
- 43 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
- 44 [-]: CALL      R9 0 1       ; R9(R10,...)
- 45 [-]: FORLOOP   R4 30        ; R4 += R6; if R4 <= R5 then begin PC := 30; R7 := R4 end
- 46 [-]: SELF      R9 R2 K10    ; R10 := R2; R9 := R2["0x8D5886B7"]
- 47 [-]: LOADK     R11 K11      ; R11 := "Disable"
- 48 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 49 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 50 [-]: LT        0 K1 R9      ; if 0 >= R9 then PC := 67
- 51 [-]: JMP       67           ; PC := 67
- 52 [-]: GETGLOBAL R10 K12      ; R10 := 0x4CDEF9FF
- 53 [-]: CALL      R10 1 2      ; R10 := R10()
- 54 [-]: SUB       R9 R9 R10    ; R9 := R9 - R10
- 55 [-]: GETGLOBAL R10 K13      ; R10 := gGameRules
- 56 [-]: SELF      R10 R10 K14  ; R11 := R10; R10 := R10["0x1DD5B857"]
- 57 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 58 [-]: GETGLOBAL R11 K15      ; R11 := Lotus_Game
- 59 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["LotusPveDeathmatchGameRules_GS_ROUND_SETUP"]
- 60 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 63
- 61 [-]: JMP       63           ; PC := 63
- 62 [-]: JMP       67           ; PC := 67
- 63 [-]: GETGLOBAL R11 K17      ; R11 := 0x201191EA
- 64 [-]: LOADK     R12 K1       ; R12 := 0
- 65 [-]: CALL      R11 2 1      ; R11(R12)
- 66 [-]: JMP       50           ; PC := 50
- 67 [-]: LOADK     R11 K4       ; R11 := 1
- 68 [-]: GETGLOBAL R12 K0       ; R12 := turretSpawnPoints
- 69 [-]: LEN       R12 R12      ; R12 := # R12
- 70 [-]: LOADK     R13 K4       ; R13 := 1
- 71 [-]: FORPREP   R11 83       ; R11 -= R13; PC := 83
- 72 [-]: GETGLOBAL R15 K0       ; R15 := turretSpawnPoints
- 73 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
- 74 [-]: SELF      R15 R15 K6   ; R16 := R15; R15 := R15["0x788FFF36"]
- 75 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 76 [-]: GETGLOBAL R16 K2       ; R16 := 0x400E7765
- 77 [-]: MOVE      R17 R15      ; R17 := R15
- 78 [-]: CALL      R16 2 2      ; R16 := R16(R17)
- 79 [-]: TEST      R16 1        ; if R16 then PC := 83
- 80 [-]: JMP       83           ; PC := 83
- 81 [-]: SELF      R16 R15 K18  ; R17 := R15; R16 := R15["0x2A20C5D3"]
- 82 [-]: CALL      R16 2 1      ; R16(R17)
- 83 [-]: FORLOOP   R11 72       ; R11 += R13; if R11 <= R12 then begin PC := 72; R14 := R11 end
- 84 [-]: SELF      R16 R2 K10   ; R17 := R2; R16 := R2["0x8D5886B7"]
- 85 [-]: LOADK     R18 K19      ; R18 := "Enable"
- 86 [-]: CALL      R16 3 1      ; R16(R17,R18)
- 87 [-]: RETURN    R0 1         ; return 
+ 23 [-]: EQ        0 R1 K4      ; if R1 ~= 1 then PC := 35
+ 24 [-]: JMP       35           ; PC := 35
+ 25 [-]: GETGLOBAL R4 K6        ; R4 := _T
+ 26 [-]: SELF      R5 R3 K8     ; R6 := R3; R5 := R3["0x7632A12E"]
+ 27 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 28 [-]: SETTABLE  R4 K7 R5     ; R4["TurretSpawnLevel"] := R5
+ 29 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2["0xB26452A2"]
+ 30 [-]: GETGLOBAL R6 K10       ; R6 := 0xEC274B1A
+ 31 [-]: LOADK     R7 K11       ; R7 := "TurretActivation"
+ 32 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 33 [-]: MOVE      R7 R0        ; R7 := R0
+ 34 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 35 [-]: RETURN    R0 1         ; return 
 
 

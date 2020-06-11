@@ -124,49 +124,49 @@ code size: 236
  85 [-]: SELF      R6 R6 K23    ; R7 := R6; R6 := R6["0x3B1B11B9"]
  86 [-]: GETGLOBAL R8 K24       ; R8 := Game
  87 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["AVATAR_POWER_RATE"]
- 88 [-]: GETGLOBAL R9 K24       ; R9 := Game
- 89 [-]: GETTABLE  R9 R9 K26    ; R9 := R9["SET"]
+ 88 [-]: GETGLOBAL R9 K26       ; R9 := Engine
+ 89 [-]: GETTABLE  R9 R9 K27    ; R9 := R9["SET"]
  90 [-]: LOADK     R10 K8       ; R10 := 0
  91 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  92 [-]: SELF      R6 R0 K22    ; R7 := R0; R6 := R0["0x8DB5D01F"]
  93 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  94 [-]: SELF      R6 R6 K23    ; R7 := R6; R6 := R6["0x3B1B11B9"]
  95 [-]: GETGLOBAL R8 K24       ; R8 := Game
- 96 [-]: GETTABLE  R8 R8 K27    ; R8 := R8["AVATAR_SHIELD_MAX"]
- 97 [-]: GETGLOBAL R9 K24       ; R9 := Game
- 98 [-]: GETTABLE  R9 R9 K26    ; R9 := R9["SET"]
+ 96 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["AVATAR_SHIELD_MAX"]
+ 97 [-]: GETGLOBAL R9 K26       ; R9 := Engine
+ 98 [-]: GETTABLE  R9 R9 K27    ; R9 := R9["SET"]
  99 [-]: LOADK     R10 K8       ; R10 := 0
 100 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
-101 [-]: SELF      R6 R0 K28    ; R7 := R0; R6 := R0["0xA3F6069B"]
+101 [-]: SELF      R6 R0 K29    ; R7 := R0; R6 := R0["0xA3F6069B"]
 102 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-103 [-]: SELF      R6 R6 K29    ; R7 := R6; R6 := R6["0x8938B1C9"]
+103 [-]: SELF      R6 R6 K30    ; R7 := R6; R6 := R6["0x8938B1C9"]
 104 [-]: LOADK     R8 K8        ; R8 := 0
 105 [-]: CALL      R6 3 1       ; R6(R7,R8)
 106 [-]: JMP       201          ; PC := 201
 107 [-]: TEST      R4 0         ; if not R4 then PC := 124
 108 [-]: JMP       124          ; PC := 124
 109 [-]: GETGLOBAL R6 K2        ; R6 := gRegion
-110 [-]: SELF      R6 R6 K30    ; R7 := R6; R6 := R6["0xBDD34CC6"]
-111 [-]: GETGLOBAL R8 K31       ; R8 := exitRiftEffect
-112 [-]: SELF      R9 R0 K32    ; R10 := R0; R9 := R0["0xE681382B"]
+110 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0xBDD34CC6"]
+111 [-]: GETGLOBAL R8 K32       ; R8 := exitRiftEffect
+112 [-]: SELF      R9 R0 K33    ; R10 := R0; R9 := R0["0xE681382B"]
 113 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 114 [-]: GETGLOBAL R10 K14      ; R10 := ZERO_ROTATION
 115 [-]: MOVE      R11 R0       ; R11 := R0
 116 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
 117 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0["0x25992394"]
-118 [-]: GETGLOBAL R8 K33       ; R8 := exitRiftLocalSound
+118 [-]: GETGLOBAL R8 K34       ; R8 := exitRiftLocalSound
 119 [-]: MOVE      R9 R0        ; R9 := R0
 120 [-]: LOADK     R10 K8       ; R10 := 0
 121 [-]: MOVE      R11 R0       ; R11 := R0
 122 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
 123 [-]: JMP       140          ; PC := 140
 124 [-]: SELF      R6 R0 K6     ; R7 := R0; R6 := R0["0x25992394"]
-125 [-]: GETGLOBAL R8 K34       ; R8 := exitRiftSound
+125 [-]: GETGLOBAL R8 K35       ; R8 := exitRiftSound
 126 [-]: MOVE      R9 R0        ; R9 := R0
 127 [-]: LOADK     R10 K8       ; R10 := 0
 128 [-]: MOVE      R11 R0       ; R11 := R0
 129 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-130 [-]: SELF      R6 R0 K35    ; R7 := R0; R6 := R0["0x9F1DC568"]
+130 [-]: SELF      R6 R0 K36    ; R7 := R0; R6 := R0["0x9F1DC568"]
 131 [-]: GETGLOBAL R8 K11       ; R8 := inRiftSequencer
 132 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
 133 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
@@ -174,17 +174,17 @@ code size: 236
 135 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 136 [-]: TEST      R7 1         ; if R7 then PC := 140
 137 [-]: JMP       140          ; PC := 140
-138 [-]: SELF      R7 R6 K36    ; R8 := R6; R7 := R6["0xD4C2743F"]
+138 [-]: SELF      R7 R6 K37    ; R8 := R6; R7 := R6["0xD4C2743F"]
 139 [-]: CALL      R7 2 1       ; R7(R8)
 140 [-]: LOADNIL   R7 R7        ; R7 := nil
 141 [-]: TEST      R5 0         ; if not R5 then PC := 148
 142 [-]: JMP       148          ; PC := 148
-143 [-]: SELF      R8 R0 K35    ; R9 := R0; R8 := R0["0x9F1DC568"]
+143 [-]: SELF      R8 R0 K36    ; R9 := R0; R8 := R0["0x9F1DC568"]
 144 [-]: GETGLOBAL R10 K19      ; R10 := friendlyRiftFx
 145 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
 146 [-]: MOVE      R7 R8        ; R7 := R8
 147 [-]: JMP       152          ; PC := 152
-148 [-]: SELF      R8 R0 K35    ; R9 := R0; R8 := R0["0x9F1DC568"]
+148 [-]: SELF      R8 R0 K36    ; R9 := R0; R8 := R0["0x9F1DC568"]
 149 [-]: GETGLOBAL R10 K20      ; R10 := enemyRiftFx
 150 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
 151 [-]: MOVE      R7 R8        ; R7 := R8
@@ -193,7 +193,7 @@ code size: 236
 154 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 155 [-]: TEST      R8 1         ; if R8 then PC := 159
 156 [-]: JMP       159          ; PC := 159
-157 [-]: SELF      R8 R7 K36    ; R9 := R7; R8 := R7["0xD4C2743F"]
+157 [-]: SELF      R8 R7 K37    ; R9 := R7; R8 := R7["0xD4C2743F"]
 158 [-]: CALL      R8 2 1       ; R8(R9)
 159 [-]: GETGLOBAL R8 K2        ; R8 := gRegion
 160 [-]: SELF      R8 R8 K15    ; R9 := R8; R8 := R8["0xA559F558"]
@@ -207,54 +207,54 @@ code size: 236
 168 [-]: JMP       201          ; PC := 201
 169 [-]: SELF      R8 R0 K22    ; R9 := R0; R8 := R0["0x8DB5D01F"]
 170 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-171 [-]: SELF      R8 R8 K37    ; R9 := R8; R8 := R8["0xF21555A7"]
+171 [-]: SELF      R8 R8 K38    ; R9 := R8; R8 := R8["0xF21555A7"]
 172 [-]: GETGLOBAL R10 K24      ; R10 := Game
 173 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["AVATAR_POWER_RATE"]
-174 [-]: GETGLOBAL R11 K24      ; R11 := Game
-175 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["SET"]
+174 [-]: GETGLOBAL R11 K26      ; R11 := Engine
+175 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["SET"]
 176 [-]: LOADK     R12 K8       ; R12 := 0
 177 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 178 [-]: SELF      R8 R0 K22    ; R9 := R0; R8 := R0["0x8DB5D01F"]
 179 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-180 [-]: SELF      R8 R8 K37    ; R9 := R8; R8 := R8["0xF21555A7"]
+180 [-]: SELF      R8 R8 K38    ; R9 := R8; R8 := R8["0xF21555A7"]
 181 [-]: GETGLOBAL R10 K24      ; R10 := Game
-182 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["AVATAR_SHIELD_MAX"]
-183 [-]: GETGLOBAL R11 K24      ; R11 := Game
-184 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["SET"]
+182 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["AVATAR_SHIELD_MAX"]
+183 [-]: GETGLOBAL R11 K26      ; R11 := Engine
+184 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["SET"]
 185 [-]: LOADK     R12 K8       ; R12 := 0
 186 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-187 [-]: SELF      R8 R0 K28    ; R9 := R0; R8 := R0["0xA3F6069B"]
+187 [-]: SELF      R8 R0 K29    ; R9 := R0; R8 := R0["0xA3F6069B"]
 188 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-189 [-]: SELF      R8 R8 K29    ; R9 := R8; R8 := R8["0x8938B1C9"]
-190 [-]: LOADK     R10 K38      ; R10 := 1
+189 [-]: SELF      R8 R8 K30    ; R9 := R8; R8 := R8["0x8938B1C9"]
+190 [-]: LOADK     R10 K39      ; R10 := 1
 191 [-]: CALL      R8 3 1       ; R8(R9,R10)
-192 [-]: SELF      R8 R0 K28    ; R9 := R0; R8 := R0["0xA3F6069B"]
+192 [-]: SELF      R8 R0 K29    ; R9 := R0; R8 := R0["0xA3F6069B"]
 193 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-194 [-]: SELF      R8 R8 K39    ; R9 := R8; R8 := R8["0xA74777DD"]
+194 [-]: SELF      R8 R8 K40    ; R9 := R8; R8 := R8["0xA74777DD"]
 195 [-]: CALL      R8 2 1       ; R8(R9)
-196 [-]: SELF      R8 R0 K28    ; R9 := R0; R8 := R0["0xA3F6069B"]
+196 [-]: SELF      R8 R0 K29    ; R9 := R0; R8 := R0["0xA3F6069B"]
 197 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-198 [-]: SELF      R8 R8 K29    ; R9 := R8; R8 := R8["0x8938B1C9"]
+198 [-]: SELF      R8 R8 K30    ; R9 := R8; R8 := R8["0x8938B1C9"]
 199 [-]: LOADK     R10 K8       ; R10 := 0
 200 [-]: CALL      R8 3 1       ; R8(R9,R10)
 201 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
-202 [-]: GETGLOBAL R9 K40       ; R9 := _T
-203 [-]: GETTABLE  R9 R9 K41    ; R9 := R9["riftChangedCallbacks"]
+202 [-]: GETGLOBAL R9 K41       ; R9 := _T
+203 [-]: GETTABLE  R9 R9 K42    ; R9 := R9["riftChangedCallbacks"]
 204 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 205 [-]: TEST      R8 1         ; if R8 then PC := 222
 206 [-]: JMP       222          ; PC := 222
-207 [-]: SELF      R8 R0 K42    ; R9 := R0; R8 := R0["0xDBEF0FB6"]
+207 [-]: SELF      R8 R0 K43    ; R9 := R0; R8 := R0["0xDBEF0FB6"]
 208 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-209 [-]: GETGLOBAL R9 K43       ; R9 := 0xECFDD17
-210 [-]: GETGLOBAL R10 K40      ; R10 := _T
-211 [-]: GETTABLE  R10 R10 K41  ; R10 := R10["riftChangedCallbacks"]
+209 [-]: GETGLOBAL R9 K44       ; R9 := 0xECFDD17
+210 [-]: GETGLOBAL R10 K41      ; R10 := _T
+211 [-]: GETTABLE  R10 R10 K42  ; R10 := R10["riftChangedCallbacks"]
 212 [-]: GETTABLE  R10 R10 R8   ; R10 := R10[R8]
 213 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
 214 [-]: JMP       220          ; PC := 220
-215 [-]: GETTABLE  R14 R13 K44  ; R14 := R13["0x7D83111F"]
+215 [-]: GETTABLE  R14 R13 K45  ; R14 := R13["0x7D83111F"]
 216 [-]: MOVE      R15 R0       ; R15 := R0
 217 [-]: MOVE      R16 R1       ; R16 := R1
-218 [-]: GETTABLE  R17 R13 K45  ; R17 := R13["args"]
+218 [-]: GETTABLE  R17 R13 K46  ; R17 := R13["args"]
 219 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 220 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 215; R11 := R12 end
 221 [-]: JMP       215          ; PC := 215

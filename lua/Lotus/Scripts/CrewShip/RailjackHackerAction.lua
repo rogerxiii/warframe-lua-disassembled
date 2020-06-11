@@ -160,31 +160,31 @@ code size: 125
  21 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4["0xF21555A7"]
  22 [-]: GETGLOBAL R6 K4        ; R6 := Game
  23 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
- 24 [-]: GETGLOBAL R7 K4        ; R7 := Game
- 25 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["MULTIPLY"]
+ 24 [-]: GETGLOBAL R7 K6        ; R7 := Engine
+ 25 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["MULTIPLY"]
  26 [-]: MOVE      R8 R0        ; R8 := R0
  27 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  28 [-]: JMP       38           ; PC := 38
  29 [-]: SELF      R4 R3 K2     ; R5 := R3; R4 := R3["0x8DB5D01F"]
  30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 31 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x3B1B11B9"]
+ 31 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  32 [-]: GETGLOBAL R6 K4        ; R6 := Game
  33 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
- 34 [-]: GETGLOBAL R7 K4        ; R7 := Game
- 35 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["MULTIPLY"]
+ 34 [-]: GETGLOBAL R7 K6        ; R7 := Engine
+ 35 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["MULTIPLY"]
  36 [-]: MOVE      R8 R0        ; R8 := R0
  37 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 38 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0xAE50AD5A"]
+ 38 [-]: SELF      R4 R3 K9     ; R5 := R3; R4 := R3["0xAE50AD5A"]
  39 [-]: MOVE      R6 R1        ; R6 := R1
  40 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 41 [-]: GETGLOBAL R4 K9        ; R4 := 0x93B1256B
- 42 [-]: LOADK     R5 K10       ; R5 := "RailJackSpeed change by percentage "
+ 41 [-]: GETGLOBAL R4 K10       ; R4 := 0x93B1256B
+ 42 [-]: LOADK     R5 K11       ; R5 := "RailJackSpeed change by percentage "
  43 [-]: MOVE      R6 R0        ; R6 := R0
  44 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
  45 [-]: CALL      R4 2 1       ; R4(R5)
- 46 [-]: GETGLOBAL R4 K9        ; R4 := 0x93B1256B
- 47 [-]: LOADK     R5 K11       ; R5 := "Battle Boost enabled "
- 48 [-]: GETGLOBAL R6 K12       ; R6 := 0x9FAED6BC
+ 46 [-]: GETGLOBAL R4 K10       ; R4 := 0x93B1256B
+ 47 [-]: LOADK     R5 K12       ; R5 := "Battle Boost enabled "
+ 48 [-]: GETGLOBAL R6 K13       ; R6 := 0x9FAED6BC
  49 [-]: MOVE      R7 R1        ; R7 := R1
  50 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  51 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6

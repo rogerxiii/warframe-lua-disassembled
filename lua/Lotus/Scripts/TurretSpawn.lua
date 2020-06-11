@@ -2,8 +2,8 @@ code size: 90
 code size: 21
 code size: 25
 code size: 28
-code size: 475
-code size: 11
+code size: 496
+code size: 21
 code size: 38
 code size: 88
 code size: 53
@@ -226,7 +226,7 @@ code size: 48
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  105
+; Max Stack Size:  107
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0xE20DC519"]
@@ -240,497 +240,528 @@ code size: 48
  10 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 14
  11 [-]: JMP       14           ; PC := 14
  12 [-]: RETURN    R0 1         ; return 
- 13 [-]: JMP       29           ; PC := 29
+ 13 [-]: JMP       50           ; PC := 50
  14 [-]: GETGLOBAL R1 K6        ; R1 := useTileBasedSpawning
- 15 [-]: TEST      R1 1         ; if R1 then PC := 29
- 16 [-]: JMP       29           ; PC := 29
+ 15 [-]: TEST      R1 1         ; if R1 then PC := 30
+ 16 [-]: JMP       30           ; PC := 30
  17 [-]: GETGLOBAL R1 K4        ; R1 := Lotus_Game
  18 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["MT_SURVIVAL"]
- 19 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 29
- 20 [-]: JMP       29           ; PC := 29
+ 19 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 30
+ 20 [-]: JMP       30           ; PC := 30
  21 [-]: GETGLOBAL R1 K2        ; R1 := _T
  22 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["faction"]
  23 [-]: GETGLOBAL R2 K9        ; R2 := 0xEC274B1A
  24 [-]: LOADK     R3 K10       ; R3 := "Corpus"
  25 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 26 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 29
- 27 [-]: JMP       29           ; PC := 29
+ 26 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 30
+ 27 [-]: JMP       30           ; PC := 30
  28 [-]: RETURN    R0 1         ; return 
- 29 [-]: GETGLOBAL R1 K11       ; R1 := gRegion
- 30 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0xD1CEF990"]
- 31 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 32 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0x20092973"]
- 33 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 34 [-]: GETGLOBAL R3 K9        ; R3 := 0xEC274B1A
- 35 [-]: LOADK     R4 K14       ; R4 := "Camera"
- 36 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 37 [-]: GETGLOBAL R4 K15       ; R4 := isAlertCamera
- 38 [-]: TEST      R4 0         ; if not R4 then PC := 44
- 39 [-]: JMP       44           ; PC := 44
- 40 [-]: GETGLOBAL R4 K9        ; R4 := 0xEC274B1A
- 41 [-]: LOADK     R5 K16       ; R5 := "RandomTeam"
- 42 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 43 [-]: MOVE      R3 R4        ; R3 := R4
- 44 [-]: GETGLOBAL R4 K11       ; R4 := gRegion
- 45 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4["0xA76F0612"]
- 46 [-]: GETGLOBAL R6 K9        ; R6 := 0xEC274B1A
- 47 [-]: LOADK     R7 K18       ; R7 := "FixedCameraSpawn"
- 48 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 49 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 50 [-]: LOADK     R5 K19       ; R5 := 1
- 51 [-]: LEN       R6 R4        ; R6 := # R4
- 52 [-]: LOADK     R7 K19       ; R7 := 1
- 53 [-]: FORPREP   R5 64        ; R5 -= R7; PC := 64
- 54 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 55 [-]: GETTABLE  R10 R4 R8    ; R10 := R4[R8]
- 56 [-]: GETGLOBAL R11 K20      ; R11 := useSpawnPointAgentForCameras
- 57 [-]: GETGLOBAL R12 K21      ; R12 := cameraTypes
- 58 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 59 [-]: SELF      R10 R2 K22   ; R11 := R2; R10 := R2["0x7E29F108"]
- 60 [-]: MOVE      R12 R9       ; R12 := R9
- 61 [-]: GETTABLE  R13 R4 R8    ; R13 := R4[R8]
- 62 [-]: MOVE      R14 R3       ; R14 := R3
- 63 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
- 64 [-]: FORLOOP   R5 54        ; R5 += R7; if R5 <= R6 then begin PC := 54; R8 := R5 end
- 65 [-]: GETGLOBAL R10 K11      ; R10 := gRegion
- 66 [-]: SELF      R10 R10 K17  ; R11 := R10; R10 := R10["0xA76F0612"]
- 67 [-]: GETGLOBAL R12 K9       ; R12 := 0xEC274B1A
- 68 [-]: LOADK     R13 K23      ; R13 := "FixedNarrowCameraSpawn"
- 69 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
- 70 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 71 [-]: LOADK     R11 K19      ; R11 := 1
- 72 [-]: LEN       R12 R10      ; R12 := # R10
- 73 [-]: LOADK     R13 K19      ; R13 := 1
- 74 [-]: FORPREP   R11 80       ; R11 -= R13; PC := 80
- 75 [-]: SELF      R15 R2 K22   ; R16 := R2; R15 := R2["0x7E29F108"]
- 76 [-]: GETGLOBAL R17 K24      ; R17 := narrowCameraType
- 77 [-]: GETTABLE  R18 R10 R14  ; R18 := R10[R14]
- 78 [-]: MOVE      R19 R3       ; R19 := R3
- 79 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
- 80 [-]: FORLOOP   R11 75       ; R11 += R13; if R11 <= R12 then begin PC := 75; R14 := R11 end
- 81 [-]: GETGLOBAL R15 K11      ; R15 := gRegion
- 82 [-]: SELF      R15 R15 K17  ; R16 := R15; R15 := R15["0xA76F0612"]
- 83 [-]: GETGLOBAL R17 K9       ; R17 := 0xEC274B1A
- 84 [-]: LOADK     R18 K25      ; R18 := "FixedTurretSpawn"
- 85 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
- 86 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
- 87 [-]: LOADK     R16 K19      ; R16 := 1
- 88 [-]: LEN       R17 R15      ; R17 := # R15
- 89 [-]: LOADK     R18 K19      ; R18 := 1
- 90 [-]: FORPREP   R16 103      ; R16 -= R18; PC := 103
- 91 [-]: GETUPVAL  R20 U0       ; R20 := U0
- 92 [-]: GETTABLE  R21 R15 R19  ; R21 := R15[R19]
- 93 [-]: GETGLOBAL R22 K26      ; R22 := useSpawnPointAgentForTurrets
- 94 [-]: GETGLOBAL R23 K27      ; R23 := turretTypes
- 95 [-]: CALL      R20 4 2      ; R20 := R20(R21,R22,R23)
- 96 [-]: SELF      R21 R2 K22   ; R22 := R2; R21 := R2["0x7E29F108"]
- 97 [-]: MOVE      R23 R20      ; R23 := R20
- 98 [-]: GETTABLE  R24 R15 R19  ; R24 := R15[R19]
- 99 [-]: GETGLOBAL R25 K9       ; R25 := 0xEC274B1A
-100 [-]: LOADK     R26 K28      ; R26 := "Turrets"
-101 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
-102 [-]: CALL      R21 0 1      ; R21(R22,...)
-103 [-]: FORLOOP   R16 91       ; R16 += R18; if R16 <= R17 then begin PC := 91; R19 := R16 end
-104 [-]: GETGLOBAL R21 K11      ; R21 := gRegion
-105 [-]: SELF      R21 R21 K17  ; R22 := R21; R21 := R21["0xA76F0612"]
-106 [-]: GETGLOBAL R23 K9       ; R23 := 0xEC274B1A
-107 [-]: LOADK     R24 K29      ; R24 := "TurretSpawn"
-108 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-109 [-]: CALL      R21 0 2      ; R21 := R21(R22,...)
-110 [-]: GETGLOBAL R22 K11      ; R22 := gRegion
-111 [-]: SELF      R22 R22 K17  ; R23 := R22; R22 := R22["0xA76F0612"]
-112 [-]: GETGLOBAL R24 K9       ; R24 := 0xEC274B1A
-113 [-]: LOADK     R25 K30      ; R25 := "CameraSpawn"
-114 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
-115 [-]: CALL      R22 0 2      ; R22 := R22(R23,...)
-116 [-]: GETUPVAL  R23 U1       ; R23 := U1
-117 [-]: MOVE      R24 R21      ; R24 := R21
-118 [-]: GETGLOBAL R25 K9       ; R25 := 0xEC274B1A
-119 [-]: LOADK     R26 K31      ; R26 := "Spawn"
-120 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
-121 [-]: CALL      R23 0 2      ; R23 := R23(R24,...)
-122 [-]: MOVE      R21 R23      ; R21 := R23
-123 [-]: GETUPVAL  R23 U1       ; R23 := U1
-124 [-]: MOVE      R24 R22      ; R24 := R22
-125 [-]: GETGLOBAL R25 K9       ; R25 := 0xEC274B1A
-126 [-]: LOADK     R26 K31      ; R26 := "Spawn"
-127 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
-128 [-]: CALL      R23 0 2      ; R23 := R23(R24,...)
-129 [-]: MOVE      R22 R23      ; R22 := R23
-130 [-]: GETGLOBAL R23 K32      ; R23 := gPromotedToHost
-131 [-]: TEST      R23 0        ; if not R23 then PC := 232
-132 [-]: JMP       232          ; PC := 232
-133 [-]: LOADK     R23 K19      ; R23 := 1
-134 [-]: LEN       R24 R21      ; R24 := # R21
-135 [-]: LOADK     R25 K19      ; R25 := 1
-136 [-]: FORPREP   R23 154      ; R23 -= R25; PC := 154
-137 [-]: GETTABLE  R27 R21 R26  ; R27 := R21[R26]
-138 [-]: SELF      R27 R27 K33  ; R28 := R27; R27 := R27["0xB1627322"]
-139 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-140 [-]: TEST      R27 0        ; if not R27 then PC := 154
-141 [-]: JMP       154          ; PC := 154
-142 [-]: GETUPVAL  R27 U0       ; R27 := U0
-143 [-]: GETTABLE  R28 R21 R26  ; R28 := R21[R26]
-144 [-]: GETGLOBAL R29 K26      ; R29 := useSpawnPointAgentForTurrets
-145 [-]: GETGLOBAL R30 K27      ; R30 := turretTypes
-146 [-]: CALL      R27 4 2      ; R27 := R27(R28,R29,R30)
-147 [-]: SELF      R28 R2 K22   ; R29 := R2; R28 := R2["0x7E29F108"]
-148 [-]: MOVE      R30 R27      ; R30 := R27
-149 [-]: GETTABLE  R31 R21 R26  ; R31 := R21[R26]
-150 [-]: GETGLOBAL R32 K9       ; R32 := 0xEC274B1A
-151 [-]: LOADK     R33 K28      ; R33 := "Turrets"
-152 [-]: CALL      R32 2 0      ; R32,... := R32(R33)
-153 [-]: CALL      R28 0 1      ; R28(R29,...)
-154 [-]: FORLOOP   R23 137      ; R23 += R25; if R23 <= R24 then begin PC := 137; R26 := R23 end
-155 [-]: LOADK     R28 K19      ; R28 := 1
-156 [-]: LEN       R29 R22      ; R29 := # R22
-157 [-]: LOADK     R30 K19      ; R30 := 1
-158 [-]: FORPREP   R28 176      ; R28 -= R30; PC := 176
-159 [-]: GETTABLE  R32 R22 R31  ; R32 := R22[R31]
-160 [-]: SELF      R32 R32 K33  ; R33 := R32; R32 := R32["0xB1627322"]
-161 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-162 [-]: TEST      R32 0        ; if not R32 then PC := 176
-163 [-]: JMP       176          ; PC := 176
-164 [-]: GETUPVAL  R32 U0       ; R32 := U0
-165 [-]: GETTABLE  R33 R22 R31  ; R33 := R22[R31]
-166 [-]: GETGLOBAL R34 K20      ; R34 := useSpawnPointAgentForCameras
-167 [-]: GETGLOBAL R35 K21      ; R35 := cameraTypes
-168 [-]: CALL      R32 4 2      ; R32 := R32(R33,R34,R35)
-169 [-]: SELF      R33 R2 K22   ; R34 := R2; R33 := R2["0x7E29F108"]
-170 [-]: MOVE      R35 R32      ; R35 := R32
-171 [-]: GETTABLE  R36 R22 R31  ; R36 := R22[R31]
-172 [-]: GETGLOBAL R37 K9       ; R37 := 0xEC274B1A
-173 [-]: LOADK     R38 K34      ; R38 := "Cameras"
-174 [-]: CALL      R37 2 0      ; R37,... := R37(R38)
-175 [-]: CALL      R33 0 1      ; R33(R34,...)
-176 [-]: FORLOOP   R28 159      ; R28 += R30; if R28 <= R29 then begin PC := 159; R31 := R28 end
-177 [-]: GETGLOBAL R33 K11      ; R33 := gRegion
-178 [-]: SELF      R33 R33 K17  ; R34 := R33; R33 := R33["0xA76F0612"]
-179 [-]: GETGLOBAL R35 K9       ; R35 := 0xEC274B1A
-180 [-]: LOADK     R36 K18      ; R36 := "FixedCameraSpawn"
-181 [-]: CALL      R35 2 0      ; R35,... := R35(R36)
-182 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)
-183 [-]: LOADK     R34 K19      ; R34 := 1
-184 [-]: LEN       R35 R33      ; R35 := # R33
-185 [-]: LOADK     R36 K19      ; R36 := 1
-186 [-]: FORPREP   R34 199      ; R34 -= R36; PC := 199
-187 [-]: GETUPVAL  R38 U0       ; R38 := U0
-188 [-]: GETTABLE  R39 R4 R37   ; R39 := R4[R37]
-189 [-]: GETGLOBAL R40 K20      ; R40 := useSpawnPointAgentForCameras
-190 [-]: GETGLOBAL R41 K21      ; R41 := cameraTypes
-191 [-]: CALL      R38 4 2      ; R38 := R38(R39,R40,R41)
-192 [-]: SELF      R39 R2 K22   ; R40 := R2; R39 := R2["0x7E29F108"]
-193 [-]: MOVE      R41 R38      ; R41 := R38
-194 [-]: GETTABLE  R42 R33 R37  ; R42 := R33[R37]
-195 [-]: GETGLOBAL R43 K9       ; R43 := 0xEC274B1A
-196 [-]: LOADK     R44 K34      ; R44 := "Cameras"
-197 [-]: CALL      R43 2 0      ; R43,... := R43(R44)
-198 [-]: CALL      R39 0 1      ; R39(R40,...)
-199 [-]: FORLOOP   R34 187      ; R34 += R36; if R34 <= R35 then begin PC := 187; R37 := R34 end
-200 [-]: GETGLOBAL R39 K11      ; R39 := gRegion
-201 [-]: SELF      R39 R39 K17  ; R40 := R39; R39 := R39["0xA76F0612"]
-202 [-]: GETGLOBAL R41 K9       ; R41 := 0xEC274B1A
-203 [-]: LOADK     R42 K25      ; R42 := "FixedTurretSpawn"
-204 [-]: CALL      R41 2 0      ; R41,... := R41(R42)
-205 [-]: CALL      R39 0 2      ; R39 := R39(R40,...)
-206 [-]: LOADK     R40 K19      ; R40 := 1
-207 [-]: LEN       R41 R39      ; R41 := # R39
-208 [-]: LOADK     R42 K19      ; R42 := 1
-209 [-]: FORPREP   R40 222      ; R40 -= R42; PC := 222
-210 [-]: GETUPVAL  R44 U0       ; R44 := U0
-211 [-]: GETTABLE  R45 R39 R43  ; R45 := R39[R43]
-212 [-]: GETGLOBAL R46 K26      ; R46 := useSpawnPointAgentForTurrets
-213 [-]: GETGLOBAL R47 K27      ; R47 := turretTypes
-214 [-]: CALL      R44 4 2      ; R44 := R44(R45,R46,R47)
-215 [-]: SELF      R45 R2 K22   ; R46 := R2; R45 := R2["0x7E29F108"]
-216 [-]: MOVE      R47 R44      ; R47 := R44
-217 [-]: GETTABLE  R48 R39 R43  ; R48 := R39[R43]
-218 [-]: GETGLOBAL R49 K9       ; R49 := 0xEC274B1A
-219 [-]: LOADK     R50 K28      ; R50 := "Turrets"
-220 [-]: CALL      R49 2 0      ; R49,... := R49(R50)
-221 [-]: CALL      R45 0 1      ; R45(R46,...)
-222 [-]: FORLOOP   R40 210      ; R40 += R42; if R40 <= R41 then begin PC := 210; R43 := R40 end
-223 [-]: GETGLOBAL R45 K11      ; R45 := gRegion
-224 [-]: SELF      R45 R45 K12  ; R46 := R45; R45 := R45["0xD1CEF990"]
-225 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-226 [-]: SELF      R45 R45 K13  ; R46 := R45; R45 := R45["0x20092973"]
-227 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-228 [-]: SELF      R45 R45 K35  ; R46 := R45; R45 := R45["0xF519442B"]
-229 [-]: GETGLOBAL R47 K36      ; R47 := laserDoorHintType
-230 [-]: CALL      R45 3 1      ; R45(R46,R47)
-231 [-]: RETURN    R0 1         ; return 
-232 [-]: LEN       R45 R21      ; R45 := # R21
-233 [-]: LT        0 K37 R45    ; if 0 >= R45 then PC := 280
-234 [-]: JMP       280          ; PC := 280
-235 [-]: GETGLOBAL R45 K38      ; R45 := 0x7FD4B57D
-236 [-]: LEN       R46 R21      ; R46 := # R21
-237 [-]: DIV       R46 R46 K39  ; R46 := R46 / 3
-238 [-]: LEN       R47 R21      ; R47 := # R21
-239 [-]: CALL      R45 3 2      ; R45 := R45(R46,R47)
-240 [-]: LOADK     R46 K19      ; R46 := 1
-241 [-]: MOVE      R47 R45      ; R47 := R45
-242 [-]: LOADK     R48 K19      ; R48 := 1
-243 [-]: FORPREP   R46 266      ; R46 -= R48; PC := 266
-244 [-]: GETGLOBAL R50 K38      ; R50 := 0x7FD4B57D
-245 [-]: LOADK     R51 K19      ; R51 := 1
-246 [-]: LEN       R52 R21      ; R52 := # R21
-247 [-]: CALL      R50 3 2      ; R50 := R50(R51,R52)
-248 [-]: GETTABLE  R51 R21 R50  ; R51 := R21[R50]
-249 [-]: GETGLOBAL R52 K40      ; R52 := table
-250 [-]: GETTABLE  R52 R52 K41  ; R52 := R52["0xCDB1FD5E"]
-251 [-]: MOVE      R53 R21      ; R53 := R21
-252 [-]: MOVE      R54 R50      ; R54 := R50
-253 [-]: CALL      R52 3 1      ; R52(R53,R54)
-254 [-]: GETUPVAL  R52 U0       ; R52 := U0
-255 [-]: MOVE      R53 R51      ; R53 := R51
-256 [-]: GETGLOBAL R54 K26      ; R54 := useSpawnPointAgentForTurrets
-257 [-]: GETGLOBAL R55 K27      ; R55 := turretTypes
-258 [-]: CALL      R52 4 2      ; R52 := R52(R53,R54,R55)
-259 [-]: SELF      R53 R2 K22   ; R54 := R2; R53 := R2["0x7E29F108"]
-260 [-]: MOVE      R55 R52      ; R55 := R52
-261 [-]: MOVE      R56 R51      ; R56 := R51
-262 [-]: GETGLOBAL R57 K9       ; R57 := 0xEC274B1A
-263 [-]: LOADK     R58 K28      ; R58 := "Turrets"
-264 [-]: CALL      R57 2 0      ; R57,... := R57(R58)
-265 [-]: CALL      R53 0 1      ; R53(R54,...)
-266 [-]: FORLOOP   R46 244      ; R46 += R48; if R46 <= R47 then begin PC := 244; R49 := R46 end
-267 [-]: LOADK     R53 K19      ; R53 := 1
-268 [-]: LEN       R54 R21      ; R54 := # R21
-269 [-]: LOADK     R55 K19      ; R55 := 1
-270 [-]: FORPREP   R53 279      ; R53 -= R55; PC := 279
-271 [-]: GETGLOBAL R57 K42      ; R57 := 0x400E7765
-272 [-]: GETTABLE  R58 R21 R56  ; R58 := R21[R56]
-273 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-274 [-]: TEST      R57 1        ; if R57 then PC := 279
-275 [-]: JMP       279          ; PC := 279
-276 [-]: GETTABLE  R57 R21 R56  ; R57 := R21[R56]
-277 [-]: SELF      R57 R57 K43  ; R58 := R57; R57 := R57["0x2DB1272F"]
-278 [-]: CALL      R57 2 1      ; R57(R58)
-279 [-]: FORLOOP   R53 271      ; R53 += R55; if R53 <= R54 then begin PC := 271; R56 := R53 end
-280 [-]: LEN       R57 R22      ; R57 := # R22
-281 [-]: LT        0 K37 R57    ; if 0 >= R57 then PC := 470
-282 [-]: JMP       470          ; PC := 470
-283 [-]: GETGLOBAL R57 K6       ; R57 := useTileBasedSpawning
-284 [-]: TEST      R57 0        ; if not R57 then PC := 421
-285 [-]: JMP       421          ; PC := 421
-286 [-]: GETGLOBAL R57 K0       ; R57 := gGameRules
-287 [-]: SELF      R57 R57 K44  ; R58 := R57; R57 := R57["0xB8637349"]
-288 [-]: CALL      R57 2 2      ; R57 := R57(R58)
-289 [-]: GETTABLE  R57 R57 K45  ; R57 := R57["difficulty"]
-290 [-]: NEWTABLE  R58 0 0      ; R58 := {}
-291 [-]: GETGLOBAL R59 K46      ; R59 := 0x63B09107
-292 [-]: MOVE      R60 R22      ; R60 := R22
-293 [-]: CALL      R59 2 4      ; R59,R60,R61 := R59(R60)
-294 [-]: JMP       363          ; PC := 363
-295 [-]: SELF      R64 R63 K47  ; R65 := R63; R64 := R63["0x72E5DB62"]
-296 [-]: CALL      R64 2 2      ; R64 := R64(R65)
-297 [-]: GETGLOBAL R65 K42      ; R65 := 0x400E7765
-298 [-]: MOVE      R66 R64      ; R66 := R64
-299 [-]: CALL      R65 2 2      ; R65 := R65(R66)
-300 [-]: TEST      R65 1        ; if R65 then PC := 363
-301 [-]: JMP       363          ; PC := 363
-302 [-]: SELF      R65 R63 K33  ; R66 := R63; R65 := R63["0xB1627322"]
-303 [-]: CALL      R65 2 2      ; R65 := R65(R66)
-304 [-]: TEST      R65 0        ; if not R65 then PC := 363
-305 [-]: JMP       363          ; PC := 363
-306 [-]: SELF      R65 R64 K48  ; R66 := R64; R65 := R64["0x828F05DE"]
-307 [-]: CALL      R65 2 2      ; R65 := R65(R66)
-308 [-]: GETGLOBAL R66 K42      ; R66 := 0x400E7765
-309 [-]: GETTABLE  R67 R58 R65  ; R67 := R58[R65]
-310 [-]: CALL      R66 2 2      ; R66 := R66(R67)
-311 [-]: TEST      R66 0        ; if not R66 then PC := 357
-312 [-]: JMP       357          ; PC := 357
-313 [-]: NEWTABLE  R66 0 2      ; R66 := {}
-314 [-]: SETTABLE  R66 K49 K50  ; R66["maxSpawns"] := 2
-315 [-]: NEWTABLE  R67 0 0      ; R67 := {}
-316 [-]: SETTABLE  R66 K51 R67  ; R66["cameraSpawns"] := R67
-317 [-]: SELF      R67 R64 K52  ; R68 := R64; R67 := R64["0xCE832AFF"]
-318 [-]: CALL      R67 2 2      ; R67 := R67(R68)
-319 [-]: GETGLOBAL R68 K46      ; R68 := 0x63B09107
-320 [-]: GETUPVAL  R69 U2       ; R69 := U2
-321 [-]: CALL      R68 2 4      ; R68,R69,R70 := R68(R69)
-322 [-]: JMP       349          ; PC := 349
-323 [-]: GETGLOBAL R73 K53      ; R73 := math
-324 [-]: GETTABLE  R73 R73 K54  ; R73 := R73["0x865961F7"]
-325 [-]: CALL      R73 1 2      ; R73 := R73()
-326 [-]: GETTABLE  R74 R72 K55  ; R74 := R72["chance"]
-327 [-]: LE        0 R73 R74    ; if R73 > R74 then PC := 348
-328 [-]: JMP       348          ; PC := 348
-329 [-]: GETTABLE  R73 R72 K56  ; R73 := R72["tag"]
-330 [-]: EQ        0 R67 R73    ; if R67 ~= R73 then PC := 349
-331 [-]: JMP       349          ; PC := 349
-332 [-]: GETGLOBAL R73 K38      ; R73 := 0x7FD4B57D
-333 [-]: GETTABLE  R74 R72 K57  ; R74 := R72["min"]
-334 [-]: GETTABLE  R75 R72 K58  ; R75 := R72["max"]
-335 [-]: CALL      R73 3 2      ; R73 := R73(R74,R75)
-336 [-]: GETGLOBAL R74 K4       ; R74 := Lotus_Game
-337 [-]: GETTABLE  R74 R74 K7   ; R74 := R74["MT_SURVIVAL"]
-338 [-]: EQ        0 R0 R74     ; if R0 ~= R74 then PC := 341
-339 [-]: JMP       341          ; PC := 341
-340 [-]: MUL       R73 R73 K59  ; R73 := R73 * 0.5
-341 [-]: GETGLOBAL R74 K53      ; R74 := math
-342 [-]: GETTABLE  R74 R74 K60  ; R74 := R74["0xBCF846DF"]
-343 [-]: MUL       R75 R73 R57  ; R75 := R73 * R57
-344 [-]: CALL      R74 2 2      ; R74 := R74(R75)
-345 [-]: MOVE      R73 R74      ; R73 := R74
-346 [-]: SETTABLE  R66 K49 R73  ; R66["maxSpawns"] := R73
-347 [-]: JMP       349          ; PC := 349
-348 [-]: SETTABLE  R72 K49 K37  ; R72["maxSpawns"] := 0
-349 [-]: TFORLOOP  R68 2        ; R71,R72 :=  R68(R69,R70); if R71 ~= nil then begin PC = 323; R70 := R71 end
-350 [-]: JMP       323          ; PC := 323
-351 [-]: GETGLOBAL R74 K40      ; R74 := table
-352 [-]: GETTABLE  R74 R74 K61  ; R74 := R74["0xE6450C9D"]
-353 [-]: MOVE      R75 R58      ; R75 := R58
-354 [-]: MOVE      R76 R65      ; R76 := R65
-355 [-]: MOVE      R77 R66      ; R77 := R66
-356 [-]: CALL      R74 4 1      ; R74(R75,R76,R77)
-357 [-]: GETGLOBAL R74 K40      ; R74 := table
-358 [-]: GETTABLE  R74 R74 K61  ; R74 := R74["0xE6450C9D"]
-359 [-]: GETTABLE  R75 R58 R65  ; R75 := R58[R65]
-360 [-]: GETTABLE  R75 R75 K51  ; R75 := R75["cameraSpawns"]
-361 [-]: MOVE      R76 R63      ; R76 := R63
-362 [-]: CALL      R74 3 1      ; R74(R75,R76)
-363 [-]: TFORLOOP  R59 2        ; R62,R63 :=  R59(R60,R61); if R62 ~= nil then begin PC = 295; R61 := R62 end
-364 [-]: JMP       295          ; PC := 295
-365 [-]: GETGLOBAL R74 K62      ; R74 := 0xECFDD17
-366 [-]: MOVE      R75 R58      ; R75 := R58
-367 [-]: CALL      R74 2 4      ; R74,R75,R76 := R74(R75)
-368 [-]: JMP       418          ; PC := 418
-369 [-]: GETTABLE  R79 R78 K49  ; R79 := R78["maxSpawns"]
-370 [-]: LT        0 K37 R79    ; if 0 >= R79 then PC := 418
-371 [-]: JMP       418          ; PC := 418
-372 [-]: GETGLOBAL R79 K53      ; R79 := math
-373 [-]: GETTABLE  R79 R79 K63  ; R79 := R79["0x65F9712A"]
-374 [-]: GETTABLE  R80 R78 K49  ; R80 := R78["maxSpawns"]
-375 [-]: GETTABLE  R81 R78 K51  ; R81 := R78["cameraSpawns"]
-376 [-]: LEN       R81 R81      ; R81 := # R81
-377 [-]: CALL      R79 3 2      ; R79 := R79(R80,R81)
-378 [-]: SETTABLE  R78 K49 R79  ; R78["maxSpawns"] := R79
-379 [-]: LOADK     R79 K19      ; R79 := 1
-380 [-]: GETTABLE  R80 R78 K49  ; R80 := R78["maxSpawns"]
-381 [-]: LOADK     R81 K19      ; R81 := 1
-382 [-]: FORPREP   R79 407      ; R79 -= R81; PC := 407
-383 [-]: GETGLOBAL R83 K38      ; R83 := 0x7FD4B57D
-384 [-]: LOADK     R84 K19      ; R84 := 1
-385 [-]: GETTABLE  R85 R78 K51  ; R85 := R78["cameraSpawns"]
-386 [-]: LEN       R85 R85      ; R85 := # R85
-387 [-]: CALL      R83 3 2      ; R83 := R83(R84,R85)
-388 [-]: GETTABLE  R84 R78 K51  ; R84 := R78["cameraSpawns"]
-389 [-]: GETTABLE  R84 R84 R83  ; R84 := R84[R83]
-390 [-]: GETUPVAL  R85 U0       ; R85 := U0
-391 [-]: MOVE      R86 R84      ; R86 := R84
-392 [-]: GETGLOBAL R87 K20      ; R87 := useSpawnPointAgentForCameras
-393 [-]: GETGLOBAL R88 K21      ; R88 := cameraTypes
-394 [-]: CALL      R85 4 2      ; R85 := R85(R86,R87,R88)
-395 [-]: SELF      R86 R2 K22   ; R87 := R2; R86 := R2["0x7E29F108"]
-396 [-]: MOVE      R88 R85      ; R88 := R85
-397 [-]: MOVE      R89 R84      ; R89 := R84
-398 [-]: GETGLOBAL R90 K9       ; R90 := 0xEC274B1A
-399 [-]: LOADK     R91 K34      ; R91 := "Cameras"
-400 [-]: CALL      R90 2 0      ; R90,... := R90(R91)
-401 [-]: CALL      R86 0 1      ; R86(R87,...)
-402 [-]: GETGLOBAL R86 K40      ; R86 := table
-403 [-]: GETTABLE  R86 R86 K41  ; R86 := R86["0xCDB1FD5E"]
-404 [-]: GETTABLE  R87 R78 K51  ; R87 := R78["cameraSpawns"]
-405 [-]: MOVE      R88 R83      ; R88 := R83
-406 [-]: CALL      R86 3 1      ; R86(R87,R88)
-407 [-]: FORLOOP   R79 383      ; R79 += R81; if R79 <= R80 then begin PC := 383; R82 := R79 end
-408 [-]: GETTABLE  R86 R78 K51  ; R86 := R78["cameraSpawns"]
-409 [-]: LEN       R86 R86      ; R86 := # R86
-410 [-]: LOADK     R87 K19      ; R87 := 1
-411 [-]: LOADK     R88 K64      ; R88 := -1
-412 [-]: FORPREP   R86 417      ; R86 -= R88; PC := 417
-413 [-]: GETTABLE  R90 R78 K51  ; R90 := R78["cameraSpawns"]
-414 [-]: GETTABLE  R90 R90 R89  ; R90 := R90[R89]
-415 [-]: SELF      R90 R90 K43  ; R91 := R90; R90 := R90["0x2DB1272F"]
-416 [-]: CALL      R90 2 1      ; R90(R91)
-417 [-]: FORLOOP   R86 413      ; R86 += R88; if R86 <= R87 then begin PC := 413; R89 := R86 end
-418 [-]: TFORLOOP  R74 2        ; R77,R78 :=  R74(R75,R76); if R77 ~= nil then begin PC = 369; R76 := R77 end
-419 [-]: JMP       369          ; PC := 369
-420 [-]: JMP       470          ; PC := 470
-421 [-]: GETGLOBAL R90 K53      ; R90 := math
-422 [-]: GETTABLE  R90 R90 K65  ; R90 := R90["0xF7005A7B"]
-423 [-]: GETGLOBAL R91 K38      ; R91 := 0x7FD4B57D
-424 [-]: LEN       R92 R22      ; R92 := # R22
-425 [-]: DIV       R92 R92 K39  ; R92 := R92 / 3
-426 [-]: LEN       R93 R22      ; R93 := # R22
-427 [-]: DIV       R93 R93 K66  ; R93 := R93 / 1.25
-428 [-]: CALL      R91 3 0      ; R91,... := R91(R92,R93)
-429 [-]: CALL      R90 0 2      ; R90 := R90(R91,...)
-430 [-]: LOADK     R91 K19      ; R91 := 1
-431 [-]: MOVE      R92 R90      ; R92 := R90
-432 [-]: LOADK     R93 K19      ; R93 := 1
-433 [-]: FORPREP   R91 456      ; R91 -= R93; PC := 456
-434 [-]: GETGLOBAL R95 K38      ; R95 := 0x7FD4B57D
-435 [-]: LOADK     R96 K19      ; R96 := 1
-436 [-]: LEN       R97 R22      ; R97 := # R22
-437 [-]: CALL      R95 3 2      ; R95 := R95(R96,R97)
-438 [-]: GETTABLE  R96 R22 R95  ; R96 := R22[R95]
-439 [-]: GETGLOBAL R97 K40      ; R97 := table
-440 [-]: GETTABLE  R97 R97 K41  ; R97 := R97["0xCDB1FD5E"]
-441 [-]: MOVE      R98 R22      ; R98 := R22
-442 [-]: MOVE      R99 R95      ; R99 := R95
-443 [-]: CALL      R97 3 1      ; R97(R98,R99)
-444 [-]: GETUPVAL  R97 U0       ; R97 := U0
-445 [-]: MOVE      R98 R96      ; R98 := R96
-446 [-]: GETGLOBAL R99 K20      ; R99 := useSpawnPointAgentForCameras
-447 [-]: GETGLOBAL R100 K21     ; R100 := cameraTypes
-448 [-]: CALL      R97 4 2      ; R97 := R97(R98,R99,R100)
-449 [-]: SELF      R98 R2 K22   ; R99 := R2; R98 := R2["0x7E29F108"]
-450 [-]: MOVE      R100 R97     ; R100 := R97
-451 [-]: MOVE      R101 R96     ; R101 := R96
-452 [-]: GETGLOBAL R102 K9      ; R102 := 0xEC274B1A
-453 [-]: LOADK     R103 K34     ; R103 := "Cameras"
-454 [-]: CALL      R102 2 0     ; R102,... := R102(R103)
-455 [-]: CALL      R98 0 1      ; R98(R99,...)
-456 [-]: FORLOOP   R91 434      ; R91 += R93; if R91 <= R92 then begin PC := 434; R94 := R91 end
-457 [-]: LOADK     R98 K19      ; R98 := 1
-458 [-]: LEN       R99 R22      ; R99 := # R22
-459 [-]: LOADK     R100 K19     ; R100 := 1
-460 [-]: FORPREP   R98 469      ; R98 -= R100; PC := 469
-461 [-]: GETGLOBAL R102 K42     ; R102 := 0x400E7765
-462 [-]: GETTABLE  R103 R22 R101; R103 := R22[R101]
-463 [-]: CALL      R102 2 2     ; R102 := R102(R103)
-464 [-]: TEST      R102 1       ; if R102 then PC := 469
-465 [-]: JMP       469          ; PC := 469
-466 [-]: GETTABLE  R102 R22 R101; R102 := R22[R101]
-467 [-]: SELF      R102 R102 K43; R103 := R102; R102 := R102["0x2DB1272F"]
-468 [-]: CALL      R102 2 1     ; R102(R103)
-469 [-]: FORLOOP   R98 461      ; R98 += R100; if R98 <= R99 then begin PC := 461; R101 := R98 end
-470 [-]: SELF      R102 R1 K13  ; R103 := R1; R102 := R1["0x20092973"]
-471 [-]: CALL      R102 2 2     ; R102 := R102(R103)
-472 [-]: SELF      R102 R102 K35; R103 := R102; R102 := R102["0xF519442B"]
-473 [-]: GETGLOBAL R104 K36     ; R104 := laserDoorHintType
-474 [-]: CALL      R102 3 1     ; R102(R103,R104)
-475 [-]: RETURN    R0 1         ; return 
+ 29 [-]: JMP       50           ; PC := 50
+ 30 [-]: GETGLOBAL R1 K4        ; R1 := Lotus_Game
+ 31 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["MT_GENERIC"]
+ 32 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 50
+ 33 [-]: JMP       50           ; PC := 50
+ 34 [-]: GETGLOBAL R1 K0        ; R1 := gGameRules
+ 35 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0xB8637349"]
+ 36 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 37 [-]: GETTABLE  R2 R1 K13    ; R2 := R1["levelOverride"]
+ 38 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2["0x1B252E3C"]
+ 39 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 40 [-]: GETGLOBAL R3 K15       ; R3 := string
+ 41 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["0xDE44F664"]
+ 42 [-]: GETGLOBAL R4 K17       ; R4 := 0x9FAED6BC
+ 43 [-]: MOVE      R5 R2        ; R5 := R2
+ 44 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 45 [-]: LOADK     R5 K18       ; R5 := "ProteaMobDef"
+ 46 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 47 [-]: TEST      R3 0         ; if not R3 then PC := 50
+ 48 [-]: JMP       50           ; PC := 50
+ 49 [-]: RETURN    R0 1         ; return 
+ 50 [-]: GETGLOBAL R3 K19       ; R3 := gRegion
+ 51 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3["0xD1CEF990"]
+ 52 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 53 [-]: SELF      R4 R3 K21    ; R5 := R3; R4 := R3["0x20092973"]
+ 54 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 55 [-]: GETGLOBAL R5 K9        ; R5 := 0xEC274B1A
+ 56 [-]: LOADK     R6 K22       ; R6 := "Camera"
+ 57 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 58 [-]: GETGLOBAL R6 K23       ; R6 := isAlertCamera
+ 59 [-]: TEST      R6 0         ; if not R6 then PC := 65
+ 60 [-]: JMP       65           ; PC := 65
+ 61 [-]: GETGLOBAL R6 K9        ; R6 := 0xEC274B1A
+ 62 [-]: LOADK     R7 K24       ; R7 := "RandomTeam"
+ 63 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 64 [-]: MOVE      R5 R6        ; R5 := R6
+ 65 [-]: GETGLOBAL R6 K19       ; R6 := gRegion
+ 66 [-]: SELF      R6 R6 K25    ; R7 := R6; R6 := R6["0xA76F0612"]
+ 67 [-]: GETGLOBAL R8 K9        ; R8 := 0xEC274B1A
+ 68 [-]: LOADK     R9 K26       ; R9 := "FixedCameraSpawn"
+ 69 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
+ 70 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+ 71 [-]: LOADK     R7 K27       ; R7 := 1
+ 72 [-]: LEN       R8 R6        ; R8 := # R6
+ 73 [-]: LOADK     R9 K27       ; R9 := 1
+ 74 [-]: FORPREP   R7 85        ; R7 -= R9; PC := 85
+ 75 [-]: GETUPVAL  R11 U0       ; R11 := U0
+ 76 [-]: GETTABLE  R12 R6 R10   ; R12 := R6[R10]
+ 77 [-]: GETGLOBAL R13 K28      ; R13 := useSpawnPointAgentForCameras
+ 78 [-]: GETGLOBAL R14 K29      ; R14 := cameraTypes
+ 79 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
+ 80 [-]: SELF      R12 R4 K30   ; R13 := R4; R12 := R4["0x7E29F108"]
+ 81 [-]: MOVE      R14 R11      ; R14 := R11
+ 82 [-]: GETTABLE  R15 R6 R10   ; R15 := R6[R10]
+ 83 [-]: MOVE      R16 R5       ; R16 := R5
+ 84 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
+ 85 [-]: FORLOOP   R7 75        ; R7 += R9; if R7 <= R8 then begin PC := 75; R10 := R7 end
+ 86 [-]: GETGLOBAL R12 K19      ; R12 := gRegion
+ 87 [-]: SELF      R12 R12 K25  ; R13 := R12; R12 := R12["0xA76F0612"]
+ 88 [-]: GETGLOBAL R14 K9       ; R14 := 0xEC274B1A
+ 89 [-]: LOADK     R15 K31      ; R15 := "FixedNarrowCameraSpawn"
+ 90 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
+ 91 [-]: CALL      R12 0 2      ; R12 := R12(R13,...)
+ 92 [-]: LOADK     R13 K27      ; R13 := 1
+ 93 [-]: LEN       R14 R12      ; R14 := # R12
+ 94 [-]: LOADK     R15 K27      ; R15 := 1
+ 95 [-]: FORPREP   R13 101      ; R13 -= R15; PC := 101
+ 96 [-]: SELF      R17 R4 K30   ; R18 := R4; R17 := R4["0x7E29F108"]
+ 97 [-]: GETGLOBAL R19 K32      ; R19 := narrowCameraType
+ 98 [-]: GETTABLE  R20 R12 R16  ; R20 := R12[R16]
+ 99 [-]: MOVE      R21 R5       ; R21 := R5
+100 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+101 [-]: FORLOOP   R13 96       ; R13 += R15; if R13 <= R14 then begin PC := 96; R16 := R13 end
+102 [-]: GETGLOBAL R17 K19      ; R17 := gRegion
+103 [-]: SELF      R17 R17 K25  ; R18 := R17; R17 := R17["0xA76F0612"]
+104 [-]: GETGLOBAL R19 K9       ; R19 := 0xEC274B1A
+105 [-]: LOADK     R20 K33      ; R20 := "FixedTurretSpawn"
+106 [-]: CALL      R19 2 0      ; R19,... := R19(R20)
+107 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
+108 [-]: LOADK     R18 K27      ; R18 := 1
+109 [-]: LEN       R19 R17      ; R19 := # R17
+110 [-]: LOADK     R20 K27      ; R20 := 1
+111 [-]: FORPREP   R18 124      ; R18 -= R20; PC := 124
+112 [-]: GETUPVAL  R22 U0       ; R22 := U0
+113 [-]: GETTABLE  R23 R17 R21  ; R23 := R17[R21]
+114 [-]: GETGLOBAL R24 K34      ; R24 := useSpawnPointAgentForTurrets
+115 [-]: GETGLOBAL R25 K35      ; R25 := turretTypes
+116 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
+117 [-]: SELF      R23 R4 K30   ; R24 := R4; R23 := R4["0x7E29F108"]
+118 [-]: MOVE      R25 R22      ; R25 := R22
+119 [-]: GETTABLE  R26 R17 R21  ; R26 := R17[R21]
+120 [-]: GETGLOBAL R27 K9       ; R27 := 0xEC274B1A
+121 [-]: LOADK     R28 K36      ; R28 := "Turrets"
+122 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
+123 [-]: CALL      R23 0 1      ; R23(R24,...)
+124 [-]: FORLOOP   R18 112      ; R18 += R20; if R18 <= R19 then begin PC := 112; R21 := R18 end
+125 [-]: GETGLOBAL R23 K19      ; R23 := gRegion
+126 [-]: SELF      R23 R23 K25  ; R24 := R23; R23 := R23["0xA76F0612"]
+127 [-]: GETGLOBAL R25 K9       ; R25 := 0xEC274B1A
+128 [-]: LOADK     R26 K37      ; R26 := "TurretSpawn"
+129 [-]: CALL      R25 2 0      ; R25,... := R25(R26)
+130 [-]: CALL      R23 0 2      ; R23 := R23(R24,...)
+131 [-]: GETGLOBAL R24 K19      ; R24 := gRegion
+132 [-]: SELF      R24 R24 K25  ; R25 := R24; R24 := R24["0xA76F0612"]
+133 [-]: GETGLOBAL R26 K9       ; R26 := 0xEC274B1A
+134 [-]: LOADK     R27 K38      ; R27 := "CameraSpawn"
+135 [-]: CALL      R26 2 0      ; R26,... := R26(R27)
+136 [-]: CALL      R24 0 2      ; R24 := R24(R25,...)
+137 [-]: GETUPVAL  R25 U1       ; R25 := U1
+138 [-]: MOVE      R26 R23      ; R26 := R23
+139 [-]: GETGLOBAL R27 K9       ; R27 := 0xEC274B1A
+140 [-]: LOADK     R28 K39      ; R28 := "Spawn"
+141 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
+142 [-]: CALL      R25 0 2      ; R25 := R25(R26,...)
+143 [-]: MOVE      R23 R25      ; R23 := R25
+144 [-]: GETUPVAL  R25 U1       ; R25 := U1
+145 [-]: MOVE      R26 R24      ; R26 := R24
+146 [-]: GETGLOBAL R27 K9       ; R27 := 0xEC274B1A
+147 [-]: LOADK     R28 K39      ; R28 := "Spawn"
+148 [-]: CALL      R27 2 0      ; R27,... := R27(R28)
+149 [-]: CALL      R25 0 2      ; R25 := R25(R26,...)
+150 [-]: MOVE      R24 R25      ; R24 := R25
+151 [-]: GETGLOBAL R25 K40      ; R25 := gPromotedToHost
+152 [-]: TEST      R25 0        ; if not R25 then PC := 253
+153 [-]: JMP       253          ; PC := 253
+154 [-]: LOADK     R25 K27      ; R25 := 1
+155 [-]: LEN       R26 R23      ; R26 := # R23
+156 [-]: LOADK     R27 K27      ; R27 := 1
+157 [-]: FORPREP   R25 175      ; R25 -= R27; PC := 175
+158 [-]: GETTABLE  R29 R23 R28  ; R29 := R23[R28]
+159 [-]: SELF      R29 R29 K41  ; R30 := R29; R29 := R29["0xB1627322"]
+160 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+161 [-]: TEST      R29 0        ; if not R29 then PC := 175
+162 [-]: JMP       175          ; PC := 175
+163 [-]: GETUPVAL  R29 U0       ; R29 := U0
+164 [-]: GETTABLE  R30 R23 R28  ; R30 := R23[R28]
+165 [-]: GETGLOBAL R31 K34      ; R31 := useSpawnPointAgentForTurrets
+166 [-]: GETGLOBAL R32 K35      ; R32 := turretTypes
+167 [-]: CALL      R29 4 2      ; R29 := R29(R30,R31,R32)
+168 [-]: SELF      R30 R4 K30   ; R31 := R4; R30 := R4["0x7E29F108"]
+169 [-]: MOVE      R32 R29      ; R32 := R29
+170 [-]: GETTABLE  R33 R23 R28  ; R33 := R23[R28]
+171 [-]: GETGLOBAL R34 K9       ; R34 := 0xEC274B1A
+172 [-]: LOADK     R35 K36      ; R35 := "Turrets"
+173 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
+174 [-]: CALL      R30 0 1      ; R30(R31,...)
+175 [-]: FORLOOP   R25 158      ; R25 += R27; if R25 <= R26 then begin PC := 158; R28 := R25 end
+176 [-]: LOADK     R30 K27      ; R30 := 1
+177 [-]: LEN       R31 R24      ; R31 := # R24
+178 [-]: LOADK     R32 K27      ; R32 := 1
+179 [-]: FORPREP   R30 197      ; R30 -= R32; PC := 197
+180 [-]: GETTABLE  R34 R24 R33  ; R34 := R24[R33]
+181 [-]: SELF      R34 R34 K41  ; R35 := R34; R34 := R34["0xB1627322"]
+182 [-]: CALL      R34 2 2      ; R34 := R34(R35)
+183 [-]: TEST      R34 0        ; if not R34 then PC := 197
+184 [-]: JMP       197          ; PC := 197
+185 [-]: GETUPVAL  R34 U0       ; R34 := U0
+186 [-]: GETTABLE  R35 R24 R33  ; R35 := R24[R33]
+187 [-]: GETGLOBAL R36 K28      ; R36 := useSpawnPointAgentForCameras
+188 [-]: GETGLOBAL R37 K29      ; R37 := cameraTypes
+189 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
+190 [-]: SELF      R35 R4 K30   ; R36 := R4; R35 := R4["0x7E29F108"]
+191 [-]: MOVE      R37 R34      ; R37 := R34
+192 [-]: GETTABLE  R38 R24 R33  ; R38 := R24[R33]
+193 [-]: GETGLOBAL R39 K9       ; R39 := 0xEC274B1A
+194 [-]: LOADK     R40 K42      ; R40 := "Cameras"
+195 [-]: CALL      R39 2 0      ; R39,... := R39(R40)
+196 [-]: CALL      R35 0 1      ; R35(R36,...)
+197 [-]: FORLOOP   R30 180      ; R30 += R32; if R30 <= R31 then begin PC := 180; R33 := R30 end
+198 [-]: GETGLOBAL R35 K19      ; R35 := gRegion
+199 [-]: SELF      R35 R35 K25  ; R36 := R35; R35 := R35["0xA76F0612"]
+200 [-]: GETGLOBAL R37 K9       ; R37 := 0xEC274B1A
+201 [-]: LOADK     R38 K26      ; R38 := "FixedCameraSpawn"
+202 [-]: CALL      R37 2 0      ; R37,... := R37(R38)
+203 [-]: CALL      R35 0 2      ; R35 := R35(R36,...)
+204 [-]: LOADK     R36 K27      ; R36 := 1
+205 [-]: LEN       R37 R35      ; R37 := # R35
+206 [-]: LOADK     R38 K27      ; R38 := 1
+207 [-]: FORPREP   R36 220      ; R36 -= R38; PC := 220
+208 [-]: GETUPVAL  R40 U0       ; R40 := U0
+209 [-]: GETTABLE  R41 R6 R39   ; R41 := R6[R39]
+210 [-]: GETGLOBAL R42 K28      ; R42 := useSpawnPointAgentForCameras
+211 [-]: GETGLOBAL R43 K29      ; R43 := cameraTypes
+212 [-]: CALL      R40 4 2      ; R40 := R40(R41,R42,R43)
+213 [-]: SELF      R41 R4 K30   ; R42 := R4; R41 := R4["0x7E29F108"]
+214 [-]: MOVE      R43 R40      ; R43 := R40
+215 [-]: GETTABLE  R44 R35 R39  ; R44 := R35[R39]
+216 [-]: GETGLOBAL R45 K9       ; R45 := 0xEC274B1A
+217 [-]: LOADK     R46 K42      ; R46 := "Cameras"
+218 [-]: CALL      R45 2 0      ; R45,... := R45(R46)
+219 [-]: CALL      R41 0 1      ; R41(R42,...)
+220 [-]: FORLOOP   R36 208      ; R36 += R38; if R36 <= R37 then begin PC := 208; R39 := R36 end
+221 [-]: GETGLOBAL R41 K19      ; R41 := gRegion
+222 [-]: SELF      R41 R41 K25  ; R42 := R41; R41 := R41["0xA76F0612"]
+223 [-]: GETGLOBAL R43 K9       ; R43 := 0xEC274B1A
+224 [-]: LOADK     R44 K33      ; R44 := "FixedTurretSpawn"
+225 [-]: CALL      R43 2 0      ; R43,... := R43(R44)
+226 [-]: CALL      R41 0 2      ; R41 := R41(R42,...)
+227 [-]: LOADK     R42 K27      ; R42 := 1
+228 [-]: LEN       R43 R41      ; R43 := # R41
+229 [-]: LOADK     R44 K27      ; R44 := 1
+230 [-]: FORPREP   R42 243      ; R42 -= R44; PC := 243
+231 [-]: GETUPVAL  R46 U0       ; R46 := U0
+232 [-]: GETTABLE  R47 R41 R45  ; R47 := R41[R45]
+233 [-]: GETGLOBAL R48 K34      ; R48 := useSpawnPointAgentForTurrets
+234 [-]: GETGLOBAL R49 K35      ; R49 := turretTypes
+235 [-]: CALL      R46 4 2      ; R46 := R46(R47,R48,R49)
+236 [-]: SELF      R47 R4 K30   ; R48 := R4; R47 := R4["0x7E29F108"]
+237 [-]: MOVE      R49 R46      ; R49 := R46
+238 [-]: GETTABLE  R50 R41 R45  ; R50 := R41[R45]
+239 [-]: GETGLOBAL R51 K9       ; R51 := 0xEC274B1A
+240 [-]: LOADK     R52 K36      ; R52 := "Turrets"
+241 [-]: CALL      R51 2 0      ; R51,... := R51(R52)
+242 [-]: CALL      R47 0 1      ; R47(R48,...)
+243 [-]: FORLOOP   R42 231      ; R42 += R44; if R42 <= R43 then begin PC := 231; R45 := R42 end
+244 [-]: GETGLOBAL R47 K19      ; R47 := gRegion
+245 [-]: SELF      R47 R47 K20  ; R48 := R47; R47 := R47["0xD1CEF990"]
+246 [-]: CALL      R47 2 2      ; R47 := R47(R48)
+247 [-]: SELF      R47 R47 K21  ; R48 := R47; R47 := R47["0x20092973"]
+248 [-]: CALL      R47 2 2      ; R47 := R47(R48)
+249 [-]: SELF      R47 R47 K43  ; R48 := R47; R47 := R47["0xF519442B"]
+250 [-]: GETGLOBAL R49 K44      ; R49 := laserDoorHintType
+251 [-]: CALL      R47 3 1      ; R47(R48,R49)
+252 [-]: RETURN    R0 1         ; return 
+253 [-]: LEN       R47 R23      ; R47 := # R23
+254 [-]: LT        0 K45 R47    ; if 0 >= R47 then PC := 301
+255 [-]: JMP       301          ; PC := 301
+256 [-]: GETGLOBAL R47 K46      ; R47 := 0x7FD4B57D
+257 [-]: LEN       R48 R23      ; R48 := # R23
+258 [-]: DIV       R48 R48 K47  ; R48 := R48 / 3
+259 [-]: LEN       R49 R23      ; R49 := # R23
+260 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
+261 [-]: LOADK     R48 K27      ; R48 := 1
+262 [-]: MOVE      R49 R47      ; R49 := R47
+263 [-]: LOADK     R50 K27      ; R50 := 1
+264 [-]: FORPREP   R48 287      ; R48 -= R50; PC := 287
+265 [-]: GETGLOBAL R52 K46      ; R52 := 0x7FD4B57D
+266 [-]: LOADK     R53 K27      ; R53 := 1
+267 [-]: LEN       R54 R23      ; R54 := # R23
+268 [-]: CALL      R52 3 2      ; R52 := R52(R53,R54)
+269 [-]: GETTABLE  R53 R23 R52  ; R53 := R23[R52]
+270 [-]: GETGLOBAL R54 K48      ; R54 := table
+271 [-]: GETTABLE  R54 R54 K49  ; R54 := R54["0xCDB1FD5E"]
+272 [-]: MOVE      R55 R23      ; R55 := R23
+273 [-]: MOVE      R56 R52      ; R56 := R52
+274 [-]: CALL      R54 3 1      ; R54(R55,R56)
+275 [-]: GETUPVAL  R54 U0       ; R54 := U0
+276 [-]: MOVE      R55 R53      ; R55 := R53
+277 [-]: GETGLOBAL R56 K34      ; R56 := useSpawnPointAgentForTurrets
+278 [-]: GETGLOBAL R57 K35      ; R57 := turretTypes
+279 [-]: CALL      R54 4 2      ; R54 := R54(R55,R56,R57)
+280 [-]: SELF      R55 R4 K30   ; R56 := R4; R55 := R4["0x7E29F108"]
+281 [-]: MOVE      R57 R54      ; R57 := R54
+282 [-]: MOVE      R58 R53      ; R58 := R53
+283 [-]: GETGLOBAL R59 K9       ; R59 := 0xEC274B1A
+284 [-]: LOADK     R60 K36      ; R60 := "Turrets"
+285 [-]: CALL      R59 2 0      ; R59,... := R59(R60)
+286 [-]: CALL      R55 0 1      ; R55(R56,...)
+287 [-]: FORLOOP   R48 265      ; R48 += R50; if R48 <= R49 then begin PC := 265; R51 := R48 end
+288 [-]: LOADK     R55 K27      ; R55 := 1
+289 [-]: LEN       R56 R23      ; R56 := # R23
+290 [-]: LOADK     R57 K27      ; R57 := 1
+291 [-]: FORPREP   R55 300      ; R55 -= R57; PC := 300
+292 [-]: GETGLOBAL R59 K50      ; R59 := 0x400E7765
+293 [-]: GETTABLE  R60 R23 R58  ; R60 := R23[R58]
+294 [-]: CALL      R59 2 2      ; R59 := R59(R60)
+295 [-]: TEST      R59 1        ; if R59 then PC := 300
+296 [-]: JMP       300          ; PC := 300
+297 [-]: GETTABLE  R59 R23 R58  ; R59 := R23[R58]
+298 [-]: SELF      R59 R59 K51  ; R60 := R59; R59 := R59["0x2DB1272F"]
+299 [-]: CALL      R59 2 1      ; R59(R60)
+300 [-]: FORLOOP   R55 292      ; R55 += R57; if R55 <= R56 then begin PC := 292; R58 := R55 end
+301 [-]: LEN       R59 R24      ; R59 := # R24
+302 [-]: LT        0 K45 R59    ; if 0 >= R59 then PC := 491
+303 [-]: JMP       491          ; PC := 491
+304 [-]: GETGLOBAL R59 K6       ; R59 := useTileBasedSpawning
+305 [-]: TEST      R59 0        ; if not R59 then PC := 442
+306 [-]: JMP       442          ; PC := 442
+307 [-]: GETGLOBAL R59 K0       ; R59 := gGameRules
+308 [-]: SELF      R59 R59 K12  ; R60 := R59; R59 := R59["0xB8637349"]
+309 [-]: CALL      R59 2 2      ; R59 := R59(R60)
+310 [-]: GETTABLE  R59 R59 K52  ; R59 := R59["difficulty"]
+311 [-]: NEWTABLE  R60 0 0      ; R60 := {}
+312 [-]: GETGLOBAL R61 K53      ; R61 := 0x63B09107
+313 [-]: MOVE      R62 R24      ; R62 := R24
+314 [-]: CALL      R61 2 4      ; R61,R62,R63 := R61(R62)
+315 [-]: JMP       384          ; PC := 384
+316 [-]: SELF      R66 R65 K54  ; R67 := R65; R66 := R65["0x72E5DB62"]
+317 [-]: CALL      R66 2 2      ; R66 := R66(R67)
+318 [-]: GETGLOBAL R67 K50      ; R67 := 0x400E7765
+319 [-]: MOVE      R68 R66      ; R68 := R66
+320 [-]: CALL      R67 2 2      ; R67 := R67(R68)
+321 [-]: TEST      R67 1        ; if R67 then PC := 384
+322 [-]: JMP       384          ; PC := 384
+323 [-]: SELF      R67 R65 K41  ; R68 := R65; R67 := R65["0xB1627322"]
+324 [-]: CALL      R67 2 2      ; R67 := R67(R68)
+325 [-]: TEST      R67 0        ; if not R67 then PC := 384
+326 [-]: JMP       384          ; PC := 384
+327 [-]: SELF      R67 R66 K55  ; R68 := R66; R67 := R66["0x828F05DE"]
+328 [-]: CALL      R67 2 2      ; R67 := R67(R68)
+329 [-]: GETGLOBAL R68 K50      ; R68 := 0x400E7765
+330 [-]: GETTABLE  R69 R60 R67  ; R69 := R60[R67]
+331 [-]: CALL      R68 2 2      ; R68 := R68(R69)
+332 [-]: TEST      R68 0        ; if not R68 then PC := 378
+333 [-]: JMP       378          ; PC := 378
+334 [-]: NEWTABLE  R68 0 2      ; R68 := {}
+335 [-]: SETTABLE  R68 K56 K57  ; R68["maxSpawns"] := 2
+336 [-]: NEWTABLE  R69 0 0      ; R69 := {}
+337 [-]: SETTABLE  R68 K58 R69  ; R68["cameraSpawns"] := R69
+338 [-]: SELF      R69 R66 K59  ; R70 := R66; R69 := R66["0xCE832AFF"]
+339 [-]: CALL      R69 2 2      ; R69 := R69(R70)
+340 [-]: GETGLOBAL R70 K53      ; R70 := 0x63B09107
+341 [-]: GETUPVAL  R71 U2       ; R71 := U2
+342 [-]: CALL      R70 2 4      ; R70,R71,R72 := R70(R71)
+343 [-]: JMP       370          ; PC := 370
+344 [-]: GETGLOBAL R75 K60      ; R75 := math
+345 [-]: GETTABLE  R75 R75 K61  ; R75 := R75["0x865961F7"]
+346 [-]: CALL      R75 1 2      ; R75 := R75()
+347 [-]: GETTABLE  R76 R74 K62  ; R76 := R74["chance"]
+348 [-]: LE        0 R75 R76    ; if R75 > R76 then PC := 369
+349 [-]: JMP       369          ; PC := 369
+350 [-]: GETTABLE  R75 R74 K63  ; R75 := R74["tag"]
+351 [-]: EQ        0 R69 R75    ; if R69 ~= R75 then PC := 370
+352 [-]: JMP       370          ; PC := 370
+353 [-]: GETGLOBAL R75 K46      ; R75 := 0x7FD4B57D
+354 [-]: GETTABLE  R76 R74 K64  ; R76 := R74["min"]
+355 [-]: GETTABLE  R77 R74 K65  ; R77 := R74["max"]
+356 [-]: CALL      R75 3 2      ; R75 := R75(R76,R77)
+357 [-]: GETGLOBAL R76 K4       ; R76 := Lotus_Game
+358 [-]: GETTABLE  R76 R76 K7   ; R76 := R76["MT_SURVIVAL"]
+359 [-]: EQ        0 R0 R76     ; if R0 ~= R76 then PC := 362
+360 [-]: JMP       362          ; PC := 362
+361 [-]: MUL       R75 R75 K66  ; R75 := R75 * 0.5
+362 [-]: GETGLOBAL R76 K60      ; R76 := math
+363 [-]: GETTABLE  R76 R76 K67  ; R76 := R76["0xBCF846DF"]
+364 [-]: MUL       R77 R75 R59  ; R77 := R75 * R59
+365 [-]: CALL      R76 2 2      ; R76 := R76(R77)
+366 [-]: MOVE      R75 R76      ; R75 := R76
+367 [-]: SETTABLE  R68 K56 R75  ; R68["maxSpawns"] := R75
+368 [-]: JMP       370          ; PC := 370
+369 [-]: SETTABLE  R74 K56 K45  ; R74["maxSpawns"] := 0
+370 [-]: TFORLOOP  R70 2        ; R73,R74 :=  R70(R71,R72); if R73 ~= nil then begin PC = 344; R72 := R73 end
+371 [-]: JMP       344          ; PC := 344
+372 [-]: GETGLOBAL R76 K48      ; R76 := table
+373 [-]: GETTABLE  R76 R76 K68  ; R76 := R76["0xE6450C9D"]
+374 [-]: MOVE      R77 R60      ; R77 := R60
+375 [-]: MOVE      R78 R67      ; R78 := R67
+376 [-]: MOVE      R79 R68      ; R79 := R68
+377 [-]: CALL      R76 4 1      ; R76(R77,R78,R79)
+378 [-]: GETGLOBAL R76 K48      ; R76 := table
+379 [-]: GETTABLE  R76 R76 K68  ; R76 := R76["0xE6450C9D"]
+380 [-]: GETTABLE  R77 R60 R67  ; R77 := R60[R67]
+381 [-]: GETTABLE  R77 R77 K58  ; R77 := R77["cameraSpawns"]
+382 [-]: MOVE      R78 R65      ; R78 := R65
+383 [-]: CALL      R76 3 1      ; R76(R77,R78)
+384 [-]: TFORLOOP  R61 2        ; R64,R65 :=  R61(R62,R63); if R64 ~= nil then begin PC = 316; R63 := R64 end
+385 [-]: JMP       316          ; PC := 316
+386 [-]: GETGLOBAL R76 K69      ; R76 := 0xECFDD17
+387 [-]: MOVE      R77 R60      ; R77 := R60
+388 [-]: CALL      R76 2 4      ; R76,R77,R78 := R76(R77)
+389 [-]: JMP       439          ; PC := 439
+390 [-]: GETTABLE  R81 R80 K56  ; R81 := R80["maxSpawns"]
+391 [-]: LT        0 K45 R81    ; if 0 >= R81 then PC := 439
+392 [-]: JMP       439          ; PC := 439
+393 [-]: GETGLOBAL R81 K60      ; R81 := math
+394 [-]: GETTABLE  R81 R81 K70  ; R81 := R81["0x65F9712A"]
+395 [-]: GETTABLE  R82 R80 K56  ; R82 := R80["maxSpawns"]
+396 [-]: GETTABLE  R83 R80 K58  ; R83 := R80["cameraSpawns"]
+397 [-]: LEN       R83 R83      ; R83 := # R83
+398 [-]: CALL      R81 3 2      ; R81 := R81(R82,R83)
+399 [-]: SETTABLE  R80 K56 R81  ; R80["maxSpawns"] := R81
+400 [-]: LOADK     R81 K27      ; R81 := 1
+401 [-]: GETTABLE  R82 R80 K56  ; R82 := R80["maxSpawns"]
+402 [-]: LOADK     R83 K27      ; R83 := 1
+403 [-]: FORPREP   R81 428      ; R81 -= R83; PC := 428
+404 [-]: GETGLOBAL R85 K46      ; R85 := 0x7FD4B57D
+405 [-]: LOADK     R86 K27      ; R86 := 1
+406 [-]: GETTABLE  R87 R80 K58  ; R87 := R80["cameraSpawns"]
+407 [-]: LEN       R87 R87      ; R87 := # R87
+408 [-]: CALL      R85 3 2      ; R85 := R85(R86,R87)
+409 [-]: GETTABLE  R86 R80 K58  ; R86 := R80["cameraSpawns"]
+410 [-]: GETTABLE  R86 R86 R85  ; R86 := R86[R85]
+411 [-]: GETUPVAL  R87 U0       ; R87 := U0
+412 [-]: MOVE      R88 R86      ; R88 := R86
+413 [-]: GETGLOBAL R89 K28      ; R89 := useSpawnPointAgentForCameras
+414 [-]: GETGLOBAL R90 K29      ; R90 := cameraTypes
+415 [-]: CALL      R87 4 2      ; R87 := R87(R88,R89,R90)
+416 [-]: SELF      R88 R4 K30   ; R89 := R4; R88 := R4["0x7E29F108"]
+417 [-]: MOVE      R90 R87      ; R90 := R87
+418 [-]: MOVE      R91 R86      ; R91 := R86
+419 [-]: GETGLOBAL R92 K9       ; R92 := 0xEC274B1A
+420 [-]: LOADK     R93 K42      ; R93 := "Cameras"
+421 [-]: CALL      R92 2 0      ; R92,... := R92(R93)
+422 [-]: CALL      R88 0 1      ; R88(R89,...)
+423 [-]: GETGLOBAL R88 K48      ; R88 := table
+424 [-]: GETTABLE  R88 R88 K49  ; R88 := R88["0xCDB1FD5E"]
+425 [-]: GETTABLE  R89 R80 K58  ; R89 := R80["cameraSpawns"]
+426 [-]: MOVE      R90 R85      ; R90 := R85
+427 [-]: CALL      R88 3 1      ; R88(R89,R90)
+428 [-]: FORLOOP   R81 404      ; R81 += R83; if R81 <= R82 then begin PC := 404; R84 := R81 end
+429 [-]: GETTABLE  R88 R80 K58  ; R88 := R80["cameraSpawns"]
+430 [-]: LEN       R88 R88      ; R88 := # R88
+431 [-]: LOADK     R89 K27      ; R89 := 1
+432 [-]: LOADK     R90 K71      ; R90 := -1
+433 [-]: FORPREP   R88 438      ; R88 -= R90; PC := 438
+434 [-]: GETTABLE  R92 R80 K58  ; R92 := R80["cameraSpawns"]
+435 [-]: GETTABLE  R92 R92 R91  ; R92 := R92[R91]
+436 [-]: SELF      R92 R92 K51  ; R93 := R92; R92 := R92["0x2DB1272F"]
+437 [-]: CALL      R92 2 1      ; R92(R93)
+438 [-]: FORLOOP   R88 434      ; R88 += R90; if R88 <= R89 then begin PC := 434; R91 := R88 end
+439 [-]: TFORLOOP  R76 2        ; R79,R80 :=  R76(R77,R78); if R79 ~= nil then begin PC = 390; R78 := R79 end
+440 [-]: JMP       390          ; PC := 390
+441 [-]: JMP       491          ; PC := 491
+442 [-]: GETGLOBAL R92 K60      ; R92 := math
+443 [-]: GETTABLE  R92 R92 K72  ; R92 := R92["0xF7005A7B"]
+444 [-]: GETGLOBAL R93 K46      ; R93 := 0x7FD4B57D
+445 [-]: LEN       R94 R24      ; R94 := # R24
+446 [-]: DIV       R94 R94 K47  ; R94 := R94 / 3
+447 [-]: LEN       R95 R24      ; R95 := # R24
+448 [-]: DIV       R95 R95 K73  ; R95 := R95 / 1.25
+449 [-]: CALL      R93 3 0      ; R93,... := R93(R94,R95)
+450 [-]: CALL      R92 0 2      ; R92 := R92(R93,...)
+451 [-]: LOADK     R93 K27      ; R93 := 1
+452 [-]: MOVE      R94 R92      ; R94 := R92
+453 [-]: LOADK     R95 K27      ; R95 := 1
+454 [-]: FORPREP   R93 477      ; R93 -= R95; PC := 477
+455 [-]: GETGLOBAL R97 K46      ; R97 := 0x7FD4B57D
+456 [-]: LOADK     R98 K27      ; R98 := 1
+457 [-]: LEN       R99 R24      ; R99 := # R24
+458 [-]: CALL      R97 3 2      ; R97 := R97(R98,R99)
+459 [-]: GETTABLE  R98 R24 R97  ; R98 := R24[R97]
+460 [-]: GETGLOBAL R99 K48      ; R99 := table
+461 [-]: GETTABLE  R99 R99 K49  ; R99 := R99["0xCDB1FD5E"]
+462 [-]: MOVE      R100 R24     ; R100 := R24
+463 [-]: MOVE      R101 R97     ; R101 := R97
+464 [-]: CALL      R99 3 1      ; R99(R100,R101)
+465 [-]: GETUPVAL  R99 U0       ; R99 := U0
+466 [-]: MOVE      R100 R98     ; R100 := R98
+467 [-]: GETGLOBAL R101 K28     ; R101 := useSpawnPointAgentForCameras
+468 [-]: GETGLOBAL R102 K29     ; R102 := cameraTypes
+469 [-]: CALL      R99 4 2      ; R99 := R99(R100,R101,R102)
+470 [-]: SELF      R100 R4 K30  ; R101 := R4; R100 := R4["0x7E29F108"]
+471 [-]: MOVE      R102 R99     ; R102 := R99
+472 [-]: MOVE      R103 R98     ; R103 := R98
+473 [-]: GETGLOBAL R104 K9      ; R104 := 0xEC274B1A
+474 [-]: LOADK     R105 K42     ; R105 := "Cameras"
+475 [-]: CALL      R104 2 0     ; R104,... := R104(R105)
+476 [-]: CALL      R100 0 1     ; R100(R101,...)
+477 [-]: FORLOOP   R93 455      ; R93 += R95; if R93 <= R94 then begin PC := 455; R96 := R93 end
+478 [-]: LOADK     R100 K27     ; R100 := 1
+479 [-]: LEN       R101 R24     ; R101 := # R24
+480 [-]: LOADK     R102 K27     ; R102 := 1
+481 [-]: FORPREP   R100 490     ; R100 -= R102; PC := 490
+482 [-]: GETGLOBAL R104 K50     ; R104 := 0x400E7765
+483 [-]: GETTABLE  R105 R24 R103; R105 := R24[R103]
+484 [-]: CALL      R104 2 2     ; R104 := R104(R105)
+485 [-]: TEST      R104 1       ; if R104 then PC := 490
+486 [-]: JMP       490          ; PC := 490
+487 [-]: GETTABLE  R104 R24 R103; R104 := R24[R103]
+488 [-]: SELF      R104 R104 K51; R105 := R104; R104 := R104["0x2DB1272F"]
+489 [-]: CALL      R104 2 1     ; R104(R105)
+490 [-]: FORLOOP   R100 482     ; R100 += R102; if R100 <= R101 then begin PC := 482; R103 := R100 end
+491 [-]: SELF      R104 R3 K21  ; R105 := R3; R104 := R3["0x20092973"]
+492 [-]: CALL      R104 2 2     ; R104 := R104(R105)
+493 [-]: SELF      R104 R104 K43; R105 := R104; R104 := R104["0xF519442B"]
+494 [-]: GETGLOBAL R106 K44     ; R106 := laserDoorHintType
+495 [-]: CALL      R104 3 1     ; R104(R105,R106)
+496 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 240
+; Defined at line: 246
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  5
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x80B14403"]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  3 [-]: GETGLOBAL R2 K1        ; R2 := active
-  4 [-]: TEST      R2 0         ; if not R2 then PC := 9
-  5 [-]: JMP       9            ; PC := 9
-  6 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0xC5772950"]
-  7 [-]: CALL      R2 2 1       ; R2(R3)
-  8 [-]: JMP       11           ; PC := 11
-  9 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x2A20C5D3"]
- 10 [-]: CALL      R2 2 1       ; R2(R3)
- 11 [-]: RETURN    R0 1         ; return 
+  3 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
+  4 [-]: MOVE      R3 R1        ; R3 := R1
+  5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  6 [-]: TEST      R2 1         ; if R2 then PC := 21
+  7 [-]: JMP       21           ; PC := 21
+  8 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x8B598ED4"]
+  9 [-]: GETGLOBAL R4 K3        ; R4 := gAutoTurretAvatarType
+ 10 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 11 [-]: TEST      R2 0         ; if not R2 then PC := 21
+ 12 [-]: JMP       21           ; PC := 21
+ 13 [-]: GETGLOBAL R2 K4        ; R2 := active
+ 14 [-]: TEST      R2 0         ; if not R2 then PC := 19
+ 15 [-]: JMP       19           ; PC := 19
+ 16 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0xC5772950"]
+ 17 [-]: CALL      R2 2 1       ; R2(R3)
+ 18 [-]: JMP       21           ; PC := 21
+ 19 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1["0x2A20C5D3"]
+ 20 [-]: CALL      R2 2 1       ; R2(R3)
+ 21 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 249
+; Defined at line: 257
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -779,7 +810,7 @@ code size: 48
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 267
+; Defined at line: 275
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -878,7 +909,7 @@ code size: 48
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 293
+; Defined at line: 301
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -942,7 +973,7 @@ code size: 48
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 314
+; Defined at line: 322
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1001,7 +1032,7 @@ code size: 48
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 329
+; Defined at line: 337
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1028,7 +1059,7 @@ code size: 48
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 338
+; Defined at line: 346
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

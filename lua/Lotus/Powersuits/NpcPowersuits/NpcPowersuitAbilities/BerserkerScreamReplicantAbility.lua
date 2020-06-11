@@ -565,21 +565,21 @@ code size: 68
  19 [-]: GETUPVAL  R6 U0        ; R6 := U0
  20 [-]: GETGLOBAL R7 K6        ; R7 := Game
  21 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["WEAPON_FIRE_RATE"]
- 22 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 23 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["STACKING_MULTIPLY"]
+ 22 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+ 23 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
  24 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 25 [-]: GETGLOBAL R10 K9       ; R10 := gLotusMeleeWeaponType
+ 25 [-]: GETGLOBAL R10 K10      ; R10 := gLotusMeleeWeaponType
  26 [-]: CALL      R4 7 1       ; R4(R5,R6,R7,R8,R9,R10)
  27 [-]: SELF      R4 R3 K5     ; R5 := R3; R4 := R3["0x5A740E25"]
  28 [-]: GETUPVAL  R6 U2        ; R6 := U2
  29 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 30 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["AVATAR_ARMOUR"]
- 31 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 32 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["STACKING_MULTIPLY"]
+ 30 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["AVATAR_ARMOUR"]
+ 31 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+ 32 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
  33 [-]: GETUPVAL  R9 U3        ; R9 := U3
  34 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
- 35 [-]: GETGLOBAL R4 K11       ; R4 := table
- 36 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["0xE6450C9D"]
+ 35 [-]: GETGLOBAL R4 K12       ; R4 := table
+ 36 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["0xE6450C9D"]
  37 [-]: MOVE      R5 R2        ; R5 := R2
  38 [-]: MOVE      R6 R1        ; R6 := R1
  39 [-]: CALL      R4 3 1       ; R4(R5,R6)
@@ -589,23 +589,23 @@ code size: 68
  43 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  44 [-]: TEST      R4 0         ; if not R4 then PC := 49
  45 [-]: JMP       49           ; PC := 49
- 46 [-]: SELF      R4 R1 K13    ; R5 := R1; R4 := R1["0x39843623"]
+ 46 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1["0x39843623"]
  47 [-]: GETUPVAL  R6 U4        ; R6 := U4
  48 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 49 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1["0x1D746F62"]
- 50 [-]: GETGLOBAL R6 K15       ; R6 := mOwner
- 51 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6["0x13B165DA"]
+ 49 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1["0x1D746F62"]
+ 50 [-]: GETGLOBAL R6 K16       ; R6 := mOwner
+ 51 [-]: SELF      R6 R6 K17    ; R7 := R6; R6 := R6["0x13B165DA"]
  52 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  53 [-]: CALL      R4 0 1       ; R4(R5,...)
- 54 [-]: SELF      R4 R1 K17    ; R5 := R1; R4 := R1["0x9F1DC568"]
- 55 [-]: GETGLOBAL R6 K18       ; R6 := buffEffect
+ 54 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1["0x9F1DC568"]
+ 55 [-]: GETGLOBAL R6 K19       ; R6 := buffEffect
  56 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  57 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
  58 [-]: MOVE      R6 R4        ; R6 := R4
  59 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  60 [-]: TEST      R5 1         ; if R5 then PC := 64
  61 [-]: JMP       64           ; PC := 64
- 62 [-]: SELF      R5 R4 K19    ; R6 := R4; R5 := R4["0xD4C2743F"]
+ 62 [-]: SELF      R5 R4 K20    ; R6 := R4; R5 := R4["0xD4C2743F"]
  63 [-]: CALL      R5 2 1       ; R5(R6)
  64 [-]: RETURN    R0 1         ; return 
 
@@ -803,7 +803,7 @@ code size: 68
 182 [-]: GETUPVAL  R22 U10      ; R22 := U10
 183 [-]: GETGLOBAL R23 K13      ; R23 := Game
 184 [-]: GETTABLE  R23 R23 K57  ; R23 := R23["AVATAR_ARMOUR"]
-185 [-]: GETGLOBAL R24 K13      ; R24 := Game
+185 [-]: GETGLOBAL R24 K26      ; R24 := Engine
 186 [-]: GETTABLE  R24 R24 K58  ; R24 := R24["STACKING_MULTIPLY"]
 187 [-]: GETUPVAL  R25 U5       ; R25 := U5
 188 [-]: CALL      R20 6 1      ; R20(R21,R22,R23,R24,R25)
@@ -811,7 +811,7 @@ code size: 68
 190 [-]: GETUPVAL  R22 U11      ; R22 := U11
 191 [-]: GETGLOBAL R23 K13      ; R23 := Game
 192 [-]: GETTABLE  R23 R23 K59  ; R23 := R23["WEAPON_FIRE_RATE"]
-193 [-]: GETGLOBAL R24 K13      ; R24 := Game
+193 [-]: GETGLOBAL R24 K26      ; R24 := Engine
 194 [-]: GETTABLE  R24 R24 K58  ; R24 := R24["STACKING_MULTIPLY"]
 195 [-]: GETUPVAL  R25 U2       ; R25 := U2
 196 [-]: GETGLOBAL R26 K60      ; R26 := gLotusMeleeWeaponType

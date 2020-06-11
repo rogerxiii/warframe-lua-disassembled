@@ -13,11 +13,11 @@ code size: 20
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := Game
   2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["AVATAR_PARKOUR_BULLET_TIME"]
-  3 [-]: GETGLOBAL R1 K0        ; R1 := Game
-  4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["SET"]
+  3 [-]: GETGLOBAL R1 K2        ; R1 := Engine
+  4 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["SET"]
   5 [-]: LOADNIL   R2 R2        ; R2 := nil
   6 [-]: MOVE      R3 R1        ; R3 := R1
-  7 [-]: LOADK     R4 K3        ; R4 := 0
+  7 [-]: LOADK     R4 K4        ; R4 := 0
   8 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
   9 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
  10 [-]: MOVE      R0 R2        ; R0 := R2
@@ -27,15 +27,15 @@ code size: 20
  14 [-]: MOVE      R0 R4        ; R0 := R4
  15 [-]: MOVE      R0 R6        ; R0 := R6
  16 [-]: MOVE      R0 R5        ; R0 := R5
- 17 [-]: SETGLOBAL R7 K4        ; Update := R7
- 18 [-]: SETGLOBAL R7 K5        ; 0x8C7099E9 := R7
+ 17 [-]: SETGLOBAL R7 K5        ; Update := R7
+ 18 [-]: SETGLOBAL R7 K6        ; 0x8C7099E9 := R7
  19 [-]: CLOSURE   R7 1         ; R7 := closure(Function #2)
  20 [-]: MOVE      R0 R2        ; R0 := R2
  21 [-]: MOVE      R0 R4        ; R0 := R4
  22 [-]: MOVE      R0 R5        ; R0 := R5
  23 [-]: MOVE      R0 R6        ; R0 := R6
- 24 [-]: SETGLOBAL R7 K6        ; OnUpgradeApplied := R7
- 25 [-]: SETGLOBAL R7 K7        ; 0x3AA84107 := R7
+ 24 [-]: SETGLOBAL R7 K7        ; OnUpgradeApplied := R7
+ 25 [-]: SETGLOBAL R7 K8        ; 0x3AA84107 := R7
  26 [-]: RETURN    R0 1         ; return 
 
 

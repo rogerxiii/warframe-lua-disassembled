@@ -85,8 +85,8 @@ code size: 38
  14 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  15 [-]: GETGLOBAL R6 K5        ; R6 := Game
  16 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["WEAPON_HEALTH_ON_KILL"]
- 17 [-]: GETGLOBAL R7 K5        ; R7 := Game
- 18 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["ADD"]
+ 17 [-]: GETGLOBAL R7 K7        ; R7 := Engine
+ 18 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["ADD"]
  19 [-]: MOVE      R8 R3        ; R8 := R3
  20 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  21 [-]: RETURN    R0 1         ; return 
@@ -95,12 +95,12 @@ code size: 38
  24 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  25 [-]: GETGLOBAL R6 K5        ; R6 := Game
  26 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["WEAPON_HEALTH_ON_KILL"]
- 27 [-]: GETGLOBAL R7 K5        ; R7 := Game
- 28 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["ADD"]
- 29 [-]: GETGLOBAL R8 K8        ; R8 := teamAmount
+ 27 [-]: GETGLOBAL R7 K7        ; R7 := Engine
+ 28 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["ADD"]
+ 29 [-]: GETGLOBAL R8 K9        ; R8 := teamAmount
  30 [-]: GETGLOBAL R9 K1        ; R9 := math
  31 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["0x65F9712A"]
- 32 [-]: GETGLOBAL R10 K8       ; R10 := teamAmount
+ 32 [-]: GETGLOBAL R10 K9       ; R10 := teamAmount
  33 [-]: LEN       R10 R10      ; R10 := # R10
  34 [-]: MOVE      R11 R2       ; R11 := R2
  35 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
@@ -134,8 +134,8 @@ code size: 38
  14 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0xF21555A7"]
  15 [-]: GETGLOBAL R6 K5        ; R6 := Game
  16 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["WEAPON_HEALTH_ON_KILL"]
- 17 [-]: GETGLOBAL R7 K5        ; R7 := Game
- 18 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["ADD"]
+ 17 [-]: GETGLOBAL R7 K7        ; R7 := Engine
+ 18 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["ADD"]
  19 [-]: MOVE      R8 R3        ; R8 := R3
  20 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  21 [-]: RETURN    R0 1         ; return 
@@ -144,12 +144,12 @@ code size: 38
  24 [-]: SELF      R4 R4 K4     ; R5 := R4; R4 := R4["0xF21555A7"]
  25 [-]: GETGLOBAL R6 K5        ; R6 := Game
  26 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["WEAPON_HEALTH_ON_KILL"]
- 27 [-]: GETGLOBAL R7 K5        ; R7 := Game
- 28 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["ADD"]
- 29 [-]: GETGLOBAL R8 K8        ; R8 := teamAmount
+ 27 [-]: GETGLOBAL R7 K7        ; R7 := Engine
+ 28 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["ADD"]
+ 29 [-]: GETGLOBAL R8 K9        ; R8 := teamAmount
  30 [-]: GETGLOBAL R9 K1        ; R9 := math
  31 [-]: GETTABLE  R9 R9 K2     ; R9 := R9["0x65F9712A"]
- 32 [-]: GETGLOBAL R10 K8       ; R10 := teamAmount
+ 32 [-]: GETGLOBAL R10 K9       ; R10 := teamAmount
  33 [-]: LEN       R10 R10      ; R10 := # R10
  34 [-]: MOVE      R11 R2       ; R11 := R2
  35 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)

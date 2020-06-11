@@ -31,7 +31,7 @@ code size: 15
 code size: 10
 code size: 10
 code size: 22
-code size: 237
+code size: 231
 code size: 76
 code size: 21
 code size: 7
@@ -581,7 +581,7 @@ code size: 63
  25 [-]: SETTABLE  R0 R8 K1     ; R0[R8] := nil
  26 [-]: ADD       R4 R4 K0     ; R4 := R4 + 1
  27 [-]: JMP       29           ; PC := 29
- 28 [-]: SETTABLE  R9 R8 K1     ; R9[R8] := nil
+ 28 [-]: SETTABLE  R0 R8 K1     ; R0[R8] := nil
  29 [-]: FORLOOP   R5 6         ; R5 += R7; if R5 <= R6 then begin PC := 6; R8 := R5 end
  30 [-]: RETURN    R3 2         ; return R3
  31 [-]: RETURN    R0 1         ; return 
@@ -1063,11 +1063,11 @@ code size: 63
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["state"]
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 12
-  5 [-]: JMP       12           ; PC := 12
+  4 [-]: TEST      R1 1         ; if R1 then PC := 10
+  5 [-]: JMP       10           ; PC := 10
   6 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["state"]
   7 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  8 [-]: EQ        1 R1 R2      ; if R1 == R2 then PC := 11
+  8 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 11
   9 [-]: JMP       11           ; PC := 11
  10 [-]: MOVE      R1 R0        ; R1 := R0
  11 [-]: MOVE      R1 R1        ; R1 := R1
@@ -1104,13 +1104,13 @@ code size: 63
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["state"]
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: TEST      R1 1         ; if R1 then PC := 14
-  5 [-]: JMP       14           ; PC := 14
+  4 [-]: TEST      R1 1         ; if R1 then PC := 12
+  5 [-]: JMP       12           ; PC := 12
   6 [-]: GETTABLE  R1 R0 K1     ; R1 := R0["state"]
   7 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x907C463B"]
   8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   9 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 10 [-]: EQ        1 R1 R2      ; if R1 == R2 then PC := 13
+ 10 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 13
  11 [-]: JMP       13           ; PC := 13
  12 [-]: MOVE      R1 R0        ; R1 := R0
  13 [-]: MOVE      R1 R1        ; R1 := R1
@@ -1386,65 +1386,59 @@ code size: 63
 182 [-]: LOADK     R27 K3       ; R27 := 0
 183 [-]: CALL      R26 2 1      ; R26(R27)
 184 [-]: FORLOOP   R19 153      ; R19 += R21; if R19 <= R20 then begin PC := 153; R22 := R19 end
-185 [-]: SELF      R26 R3 K27   ; R27 := R3; R26 := R3["0x3F7FA12C"]
-186 [-]: GETGLOBAL R28 K28      ; R28 := goalTag
-187 [-]: CALL      R26 3 1      ; R26(R27,R28)
-188 [-]: GETGLOBAL R26 K29      ; R26 := 0x58E5C2DB
-189 [-]: CALL      R26 1 2      ; R26 := R26()
-190 [-]: MOVE      R26 R10      ; R26 := R10
-191 [-]: LT        0 K3 R1      ; if 0 >= R1 then PC := 211
-192 [-]: JMP       211          ; PC := 211
-193 [-]: GETUPVAL  R26 U9       ; R26 := U9
-194 [-]: LEN       R26 R26      ; R26 := # R26
-195 [-]: GETUPVAL  R27 U11      ; R27 := U11
-196 [-]: EQ        0 R26 R27    ; if R26 ~= R27 then PC := 202
-197 [-]: JMP       202          ; PC := 202
-198 [-]: GETUPVAL  R26 U5       ; R26 := U5
-199 [-]: GETTABLE  R26 R26 K18  ; R26 := R26[1]
-200 [-]: EQ        1 R26 K30    ; if R26 == nil then PC := 211
-201 [-]: JMP       211          ; PC := 211
-202 [-]: GETUPVAL  R26 U12      ; R26 := U12
-203 [-]: CALL      R26 1 1      ; R26()
-204 [-]: GETGLOBAL R26 K2       ; R26 := 0x201191EA
-205 [-]: LOADK     R27 K3       ; R27 := 0
-206 [-]: CALL      R26 2 1      ; R26(R27)
-207 [-]: GETGLOBAL R26 K4       ; R26 := 0x6306558E
-208 [-]: CALL      R26 1 2      ; R26 := R26()
-209 [-]: SUB       R1 R1 R26    ; R1 := R1 - R26
-210 [-]: JMP       191          ; PC := 191
-211 [-]: GETUPVAL  R26 U14      ; R26 := U14
-212 [-]: MOVE      R26 R13      ; R26 := R13
-213 [-]: GETUPVAL  R26 U13      ; R26 := U13
-214 [-]: MOVE      R26 R15      ; R26 := R15
-215 [-]: GETUPVAL  R26 U17      ; R26 := U17
-216 [-]: MOVE      R26 R16      ; R26 := R16
-217 [-]: GETUPVAL  R26 U16      ; R26 := U16
-218 [-]: MOVE      R26 R18      ; R26 := R18
-219 [-]: LT        0 K3 R1      ; if 0 >= R1 then PC := 232
-220 [-]: JMP       232          ; PC := 232
-221 [-]: GETUPVAL  R26 U12      ; R26 := U12
-222 [-]: CALL      R26 1 1      ; R26()
-223 [-]: GETGLOBAL R26 K2       ; R26 := 0x201191EA
-224 [-]: GETGLOBAL R27 K31      ; R27 := 0x6374FD98
-225 [-]: SUB       R28 R1 K32   ; R28 := R1 - 3
-226 [-]: LOADK     R29 K3       ; R29 := 0
-227 [-]: LOADK     R30 K32      ; R30 := 3
-228 [-]: CALL      R27 4 0      ; R27,... := R27(R28,R29,R30)
-229 [-]: CALL      R26 0 1      ; R26(R27,...)
-230 [-]: SUB       R1 R1 K32    ; R1 := R1 - 3
-231 [-]: JMP       219          ; PC := 219
-232 [-]: SELF      R26 R3 K33   ; R27 := R3; R26 := R3["0x80A8A5C9"]
-233 [-]: GETGLOBAL R28 K28      ; R28 := goalTag
-234 [-]: CALL      R26 3 1      ; R26(R27,R28)
-235 [-]: GETGLOBAL R26 K5       ; R26 := _T
-236 [-]: SETTABLE  R26 K6 K7    ; R26["ExploiterOrbEvent"] := "0x0"
-237 [-]: RETURN    R0 1         ; return 
+185 [-]: GETGLOBAL R26 K27      ; R26 := 0x58E5C2DB
+186 [-]: CALL      R26 1 2      ; R26 := R26()
+187 [-]: MOVE      R26 R10      ; R26 := R10
+188 [-]: LT        0 K3 R1      ; if 0 >= R1 then PC := 208
+189 [-]: JMP       208          ; PC := 208
+190 [-]: GETUPVAL  R26 U9       ; R26 := U9
+191 [-]: LEN       R26 R26      ; R26 := # R26
+192 [-]: GETUPVAL  R27 U11      ; R27 := U11
+193 [-]: EQ        0 R26 R27    ; if R26 ~= R27 then PC := 199
+194 [-]: JMP       199          ; PC := 199
+195 [-]: GETUPVAL  R26 U5       ; R26 := U5
+196 [-]: GETTABLE  R26 R26 K18  ; R26 := R26[1]
+197 [-]: EQ        1 R26 K28    ; if R26 == nil then PC := 208
+198 [-]: JMP       208          ; PC := 208
+199 [-]: GETUPVAL  R26 U12      ; R26 := U12
+200 [-]: CALL      R26 1 1      ; R26()
+201 [-]: GETGLOBAL R26 K2       ; R26 := 0x201191EA
+202 [-]: LOADK     R27 K3       ; R27 := 0
+203 [-]: CALL      R26 2 1      ; R26(R27)
+204 [-]: GETGLOBAL R26 K4       ; R26 := 0x6306558E
+205 [-]: CALL      R26 1 2      ; R26 := R26()
+206 [-]: SUB       R1 R1 R26    ; R1 := R1 - R26
+207 [-]: JMP       188          ; PC := 188
+208 [-]: GETUPVAL  R26 U14      ; R26 := U14
+209 [-]: MOVE      R26 R13      ; R26 := R13
+210 [-]: GETUPVAL  R26 U13      ; R26 := U13
+211 [-]: MOVE      R26 R15      ; R26 := R15
+212 [-]: GETUPVAL  R26 U17      ; R26 := U17
+213 [-]: MOVE      R26 R16      ; R26 := R16
+214 [-]: GETUPVAL  R26 U16      ; R26 := U16
+215 [-]: MOVE      R26 R18      ; R26 := R18
+216 [-]: LT        0 K3 R1      ; if 0 >= R1 then PC := 229
+217 [-]: JMP       229          ; PC := 229
+218 [-]: GETUPVAL  R26 U12      ; R26 := U12
+219 [-]: CALL      R26 1 1      ; R26()
+220 [-]: GETGLOBAL R26 K2       ; R26 := 0x201191EA
+221 [-]: GETGLOBAL R27 K29      ; R27 := 0x6374FD98
+222 [-]: SUB       R28 R1 K30   ; R28 := R1 - 3
+223 [-]: LOADK     R29 K3       ; R29 := 0
+224 [-]: LOADK     R30 K30      ; R30 := 3
+225 [-]: CALL      R27 4 0      ; R27,... := R27(R28,R29,R30)
+226 [-]: CALL      R26 0 1      ; R26(R27,...)
+227 [-]: SUB       R1 R1 K30    ; R1 := R1 - 3
+228 [-]: JMP       216          ; PC := 216
+229 [-]: GETGLOBAL R26 K5       ; R26 := _T
+230 [-]: SETTABLE  R26 K6 K7    ; R26["ExploiterOrbEvent"] := "0x0"
+231 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 450
+; Defined at line: 447
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1531,7 +1525,7 @@ code size: 63
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 481
+; Defined at line: 478
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1563,7 +1557,7 @@ code size: 63
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 492
+; Defined at line: 489
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1581,7 +1575,7 @@ code size: 63
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 496
+; Defined at line: 493
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

@@ -82,8 +82,8 @@ code size: 28
  21 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x3B1B11B9"]
  22 [-]: GETGLOBAL R4 K7        ; R4 := Game
  23 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["AVATAR_ENEMY_RADAR"]
- 24 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 25 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["ADD"]
+ 24 [-]: GETGLOBAL R5 K9        ; R5 := Engine
+ 25 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["ADD"]
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1
  27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  28 [-]: RETURN    R0 1         ; return 
@@ -121,8 +121,8 @@ code size: 28
  21 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0xF21555A7"]
  22 [-]: GETGLOBAL R4 K7        ; R4 := Game
  23 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["AVATAR_ENEMY_RADAR"]
- 24 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 25 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["ADD"]
+ 24 [-]: GETGLOBAL R5 K9        ; R5 := Engine
+ 25 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["ADD"]
  26 [-]: GETUPVAL  R6 U1        ; R6 := U1
  27 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  28 [-]: RETURN    R0 1         ; return 

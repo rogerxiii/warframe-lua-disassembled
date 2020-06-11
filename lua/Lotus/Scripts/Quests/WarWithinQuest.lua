@@ -1085,22 +1085,22 @@ code size: 4
  44 [-]: SELF      R4 R4 K14    ; R5 := R4; R4 := R4["0x3B1B11B9"]
  45 [-]: GETGLOBAL R6 K15       ; R6 := Game
  46 [-]: GETTABLE  R6 R6 K16    ; R6 := R6["AVATAR_DAMAGE_RESISTANCE"]
- 47 [-]: GETGLOBAL R7 K15       ; R7 := Game
- 48 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["SET"]
- 49 [-]: LOADK     R8 K18       ; R8 := 1
+ 47 [-]: GETGLOBAL R7 K17       ; R7 := Engine
+ 48 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["SET"]
+ 49 [-]: LOADK     R8 K19       ; R8 := 1
  50 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 51 [-]: SELF      R4 R0 K19    ; R5 := R0; R4 := R0["0xA3F6069B"]
+ 51 [-]: SELF      R4 R0 K20    ; R5 := R0; R4 := R0["0xA3F6069B"]
  52 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 53 [-]: SELF      R4 R4 K20    ; R5 := R4; R4 := R4["0xB33D71CD"]
- 54 [-]: LOADK     R6 K21       ; R6 := 0.10000000149012
+ 53 [-]: SELF      R4 R4 K21    ; R5 := R4; R4 := R4["0xB33D71CD"]
+ 54 [-]: LOADK     R6 K22       ; R6 := 0.10000000149012
  55 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 56 [-]: SELF      R4 R0 K22    ; R5 := R0; R4 := R0["0x76C229EF"]
- 57 [-]: SELF      R6 R0 K23    ; R7 := R0; R6 := R0["0x385BD2FE"]
+ 56 [-]: SELF      R4 R0 K23    ; R5 := R0; R4 := R0["0x76C229EF"]
+ 57 [-]: SELF      R6 R0 K24    ; R7 := R0; R6 := R0["0x385BD2FE"]
  58 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  59 [-]: MOVE      R7 R1        ; R7 := R1
  60 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
  61 [-]: GETGLOBAL R4 K10       ; R4 := 0x201191EA
- 62 [-]: LOADK     R5 K24       ; R5 := 4
+ 62 [-]: LOADK     R5 K25       ; R5 := 4
  63 [-]: CALL      R4 2 1       ; R4(R5)
  64 [-]: GETGLOBAL R4 K6        ; R4 := 0x400E7765
  65 [-]: MOVE      R5 R0        ; R5 := R0
@@ -1109,12 +1109,12 @@ code size: 4
  68 [-]: JMP       78           ; PC := 78
  69 [-]: SELF      R4 R0 K13    ; R5 := R0; R4 := R0["0x8DB5D01F"]
  70 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 71 [-]: SELF      R4 R4 K25    ; R5 := R4; R4 := R4["0xF21555A7"]
+ 71 [-]: SELF      R4 R4 K26    ; R5 := R4; R4 := R4["0xF21555A7"]
  72 [-]: GETGLOBAL R6 K15       ; R6 := Game
  73 [-]: GETTABLE  R6 R6 K16    ; R6 := R6["AVATAR_DAMAGE_RESISTANCE"]
- 74 [-]: GETGLOBAL R7 K15       ; R7 := Game
- 75 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["SET"]
- 76 [-]: LOADK     R8 K18       ; R8 := 1
+ 74 [-]: GETGLOBAL R7 K17       ; R7 := Engine
+ 75 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["SET"]
+ 76 [-]: LOADK     R8 K19       ; R8 := 1
  77 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  78 [-]: GETGLOBAL R4 K6        ; R4 := 0x400E7765
  79 [-]: MOVE      R5 R0        ; R5 := R0
@@ -1135,12 +1135,12 @@ code size: 4
  94 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  95 [-]: TEST      R4 1         ; if R4 then PC := 104
  96 [-]: JMP       104          ; PC := 104
- 97 [-]: GETGLOBAL R4 K26       ; R4 := 0xCAA43ABB
- 98 [-]: LOADK     R5 K27       ; R5 := "/Lotus/Types/Enemies/Grineer/Vip/Teshin/TeshinCaptureAction"
+ 97 [-]: GETGLOBAL R4 K27       ; R4 := 0xCAA43ABB
+ 98 [-]: LOADK     R5 K28       ; R5 := "/Lotus/Types/Enemies/Grineer/Vip/Teshin/TeshinCaptureAction"
  99 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-100 [-]: SELF      R5 R0 K28    ; R6 := R0; R5 := R0["0xAB436EF2"]
+100 [-]: SELF      R5 R0 K29    ; R6 := R0; R5 := R0["0xAB436EF2"]
 101 [-]: MOVE      R7 R4        ; R7 := R4
-102 [-]: GETGLOBAL R8 K29       ; R8 := EMPTY_SYMBOL
+102 [-]: GETGLOBAL R8 K30       ; R8 := EMPTY_SYMBOL
 103 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
 104 [-]: GETGLOBAL R5 K6        ; R5 := 0x400E7765
 105 [-]: MOVE      R6 R1        ; R6 := R1
@@ -1152,18 +1152,18 @@ code size: 4
 111 [-]: CALL      R5 2 1       ; R5(R6)
 112 [-]: JMP       104          ; PC := 104
 113 [-]: GETGLOBAL R5 K0        ; R5 := gRegion
-114 [-]: SELF      R5 R5 K30    ; R6 := R5; R5 := R5["0x90391273"]
+114 [-]: SELF      R5 R5 K31    ; R6 := R5; R5 := R5["0x90391273"]
 115 [-]: GETGLOBAL R7 K4        ; R7 := 0xEC274B1A
-116 [-]: LOADK     R8 K31       ; R8 := "ExitMarker"
+116 [-]: LOADK     R8 K32       ; R8 := "ExitMarker"
 117 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
 118 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
-119 [-]: SELF      R6 R5 K32    ; R7 := R5; R6 := R5["0xC5E91BA6"]
+119 [-]: SELF      R6 R5 K33    ; R7 := R5; R6 := R5["0xC5E91BA6"]
 120 [-]: CALL      R6 2 1       ; R6(R7)
-121 [-]: SELF      R6 R3 K33    ; R7 := R3; R6 := R3["0x7A43C231"]
+121 [-]: SELF      R6 R3 K34    ; R7 := R3; R6 := R3["0x7A43C231"]
 122 [-]: MOVE      R8 R1        ; R8 := R1
 123 [-]: CALL      R6 3 1       ; R6(R7,R8)
 124 [-]: GETUPVAL  R6 U0        ; R6 := U0
-125 [-]: GETTABLE  R6 R6 K34    ; R6 := R6["0x8E8DB6AE"]
+125 [-]: GETTABLE  R6 R6 K35    ; R6 := R6["0x8E8DB6AE"]
 126 [-]: CALL      R6 1 1       ; R6()
 127 [-]: RETURN    R0 1         ; return 
 
@@ -3841,71 +3841,71 @@ code size: 4
   8 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x3B1B11B9"]
   9 [-]: GETGLOBAL R4 K5        ; R4 := Game
  10 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["AVATAR_MOVEMENT_SPEED"]
- 11 [-]: GETGLOBAL R5 K5        ; R5 := Game
- 12 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["MULTIPLY"]
- 13 [-]: LOADK     R6 K8        ; R6 := 1.75
+ 11 [-]: GETGLOBAL R5 K7        ; R5 := Engine
+ 12 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["MULTIPLY"]
+ 13 [-]: LOADK     R6 K9        ; R6 := 1.75
  14 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 15 [-]: GETGLOBAL R2 K9        ; R2 := 0x63B09107
- 16 [-]: GETGLOBAL R3 K10       ; R3 := waypoints
+ 15 [-]: GETGLOBAL R2 K10       ; R2 := 0x63B09107
+ 16 [-]: GETGLOBAL R3 K11       ; R3 := waypoints
  17 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
  18 [-]: JMP       66           ; PC := 66
- 19 [-]: GETGLOBAL R7 K11       ; R7 := math
- 20 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["0x32396E6F"]
+ 19 [-]: GETGLOBAL R7 K12       ; R7 := math
+ 20 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["0x32396E6F"]
  21 [-]: MOVE      R8 R5        ; R8 := R5
- 22 [-]: LOADK     R9 K13       ; R9 := 2
+ 22 [-]: LOADK     R9 K14       ; R9 := 2
  23 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 24 [-]: EQ        0 R7 K14     ; if R7 ~= 1 then PC := 46
+ 24 [-]: EQ        0 R7 K15     ; if R7 ~= 1 then PC := 46
  25 [-]: JMP       46           ; PC := 46
- 26 [-]: LT        0 K14 R5     ; if 1 >= R5 then PC := 39
+ 26 [-]: LT        0 K15 R5     ; if 1 >= R5 then PC := 39
  27 [-]: JMP       39           ; PC := 39
- 28 [-]: GETGLOBAL R7 K15       ; R7 := gRegion
- 29 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7["0xBDD34CC6"]
- 30 [-]: GETGLOBAL R9 K17       ; R9 := teshinAppearFx
- 31 [-]: SELF      R10 R0 K18   ; R11 := R0; R10 := R0["0x6DA72501"]
+ 28 [-]: GETGLOBAL R7 K16       ; R7 := gRegion
+ 29 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0xBDD34CC6"]
+ 30 [-]: GETGLOBAL R9 K18       ; R9 := teshinAppearFx
+ 31 [-]: SELF      R10 R0 K19   ; R11 := R0; R10 := R0["0x6DA72501"]
  32 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 33 [-]: GETGLOBAL R11 K19      ; R11 := ZERO_ROTATION
+ 33 [-]: GETGLOBAL R11 K20      ; R11 := ZERO_ROTATION
  34 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 35 [-]: SELF      R7 R0 K20    ; R8 := R0; R7 := R0["0x7DBDDA0B"]
+ 35 [-]: SELF      R7 R0 K21    ; R8 := R0; R7 := R0["0x7DBDDA0B"]
  36 [-]: MOVE      R9 R1        ; R9 := R1
  37 [-]: MOVE      R10 R1       ; R10 := R1
  38 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 39 [-]: SELF      R7 R1 K21    ; R8 := R1; R7 := R1["0x85070827"]
+ 39 [-]: SELF      R7 R1 K22    ; R8 := R1; R7 := R1["0x85070827"]
  40 [-]: MOVE      R9 R6        ; R9 := R6
  41 [-]: MOVE      R10 R1       ; R10 := R1
  42 [-]: MOVE      R11 R0       ; R11 := R0
  43 [-]: MOVE      R12 R1       ; R12 := R1
  44 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
  45 [-]: JMP       66           ; PC := 66
- 46 [-]: GETGLOBAL R7 K15       ; R7 := gRegion
- 47 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7["0xBDD34CC6"]
- 48 [-]: GETGLOBAL R9 K22       ; R9 := teshinDisappearFx
- 49 [-]: SELF      R10 R0 K18   ; R11 := R0; R10 := R0["0x6DA72501"]
+ 46 [-]: GETGLOBAL R7 K16       ; R7 := gRegion
+ 47 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0xBDD34CC6"]
+ 48 [-]: GETGLOBAL R9 K23       ; R9 := teshinDisappearFx
+ 49 [-]: SELF      R10 R0 K19   ; R11 := R0; R10 := R0["0x6DA72501"]
  50 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 51 [-]: GETGLOBAL R11 K19      ; R11 := ZERO_ROTATION
+ 51 [-]: GETGLOBAL R11 K20      ; R11 := ZERO_ROTATION
  52 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 53 [-]: SELF      R7 R0 K20    ; R8 := R0; R7 := R0["0x7DBDDA0B"]
+ 53 [-]: SELF      R7 R0 K21    ; R8 := R0; R7 := R0["0x7DBDDA0B"]
  54 [-]: MOVE      R9 R0        ; R9 := R0
  55 [-]: MOVE      R10 R1       ; R10 := R1
  56 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 57 [-]: SELF      R7 R0 K23    ; R8 := R0; R7 := R0["0x39D7F449"]
- 58 [-]: SELF      R9 R6 K18    ; R10 := R6; R9 := R6["0x6DA72501"]
+ 57 [-]: SELF      R7 R0 K24    ; R8 := R0; R7 := R0["0x39D7F449"]
+ 58 [-]: SELF      R9 R6 K19    ; R10 := R6; R9 := R6["0x6DA72501"]
  59 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 60 [-]: SELF      R10 R6 K24   ; R11 := R6; R10 := R6["0xF23A7849"]
+ 60 [-]: SELF      R10 R6 K25   ; R11 := R6; R10 := R6["0xF23A7849"]
  61 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
  62 [-]: CALL      R7 0 1       ; R7(R8,...)
- 63 [-]: GETGLOBAL R7 K25       ; R7 := 0x201191EA
- 64 [-]: LOADK     R8 K26       ; R8 := 0.25
+ 63 [-]: GETGLOBAL R7 K26       ; R7 := 0x201191EA
+ 64 [-]: LOADK     R8 K27       ; R8 := 0.25
  65 [-]: CALL      R7 2 1       ; R7(R8)
  66 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 19; R4 := R5 end
  67 [-]: JMP       19           ; PC := 19
- 68 [-]: SELF      R7 R0 K27    ; R8 := R0; R7 := R0["0xD4C2743F"]
+ 68 [-]: SELF      R7 R0 K28    ; R8 := R0; R7 := R0["0xD4C2743F"]
  69 [-]: CALL      R7 2 1       ; R7(R8)
- 70 [-]: GETGLOBAL R7 K15       ; R7 := gRegion
- 71 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7["0xBDD34CC6"]
- 72 [-]: GETGLOBAL R9 K22       ; R9 := teshinDisappearFx
- 73 [-]: SELF      R10 R0 K18   ; R11 := R0; R10 := R0["0x6DA72501"]
+ 70 [-]: GETGLOBAL R7 K16       ; R7 := gRegion
+ 71 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0xBDD34CC6"]
+ 72 [-]: GETGLOBAL R9 K23       ; R9 := teshinDisappearFx
+ 73 [-]: SELF      R10 R0 K19   ; R11 := R0; R10 := R0["0x6DA72501"]
  74 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 75 [-]: GETGLOBAL R11 K19      ; R11 := ZERO_ROTATION
+ 75 [-]: GETGLOBAL R11 K20      ; R11 := ZERO_ROTATION
  76 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  77 [-]: RETURN    R0 1         ; return 
 

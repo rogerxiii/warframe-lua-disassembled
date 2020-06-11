@@ -167,8 +167,8 @@ code size: 23
  90 [-]: SELF      R22 R8 K19   ; R23 := R8; R22 := R8["0x3B1B11B9"]
  91 [-]: GETGLOBAL R24 K20      ; R24 := Game
  92 [-]: GETTABLE  R24 R24 K21  ; R24 := R24["AVATAR_MOVEMENT_SPEED"]
- 93 [-]: GETGLOBAL R25 K20      ; R25 := Game
- 94 [-]: GETTABLE  R25 R25 K22  ; R25 := R25["STACKING_MULTIPLY"]
+ 93 [-]: GETGLOBAL R25 K22      ; R25 := Engine
+ 94 [-]: GETTABLE  R25 R25 K23  ; R25 := R25["STACKING_MULTIPLY"]
  95 [-]: MOVE      R26 R7       ; R26 := R7
  96 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
  97 [-]: MOVE      R9 R1        ; R9 := R1
@@ -177,15 +177,15 @@ code size: 23
 100 [-]: JMP       111          ; PC := 111
 101 [-]: TEST      R9 0         ; if not R9 then PC := 111
 102 [-]: JMP       111          ; PC := 111
-103 [-]: SELF      R22 R8 K23   ; R23 := R8; R22 := R8["0xF21555A7"]
+103 [-]: SELF      R22 R8 K24   ; R23 := R8; R22 := R8["0xF21555A7"]
 104 [-]: GETGLOBAL R24 K20      ; R24 := Game
 105 [-]: GETTABLE  R24 R24 K21  ; R24 := R24["AVATAR_MOVEMENT_SPEED"]
-106 [-]: GETGLOBAL R25 K20      ; R25 := Game
-107 [-]: GETTABLE  R25 R25 K22  ; R25 := R25["STACKING_MULTIPLY"]
+106 [-]: GETGLOBAL R25 K22      ; R25 := Engine
+107 [-]: GETTABLE  R25 R25 K23  ; R25 := R25["STACKING_MULTIPLY"]
 108 [-]: MOVE      R26 R7       ; R26 := R7
 109 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 110 [-]: MOVE      R9 R0        ; R9 := R0
-111 [-]: GETGLOBAL R22 K24      ; R22 := 0x201191EA
+111 [-]: GETGLOBAL R22 K25      ; R22 := 0x201191EA
 112 [-]: LOADK     R23 K17      ; R23 := 0
 113 [-]: CALL      R22 2 1      ; R22(R23)
 114 [-]: JMP       31           ; PC := 31
@@ -212,12 +212,12 @@ code size: 23
   9 [-]: SELF      R6 R5 K3     ; R7 := R5; R6 := R5["0xF21555A7"]
  10 [-]: GETGLOBAL R8 K4        ; R8 := Game
  11 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["AVATAR_MOVEMENT_SPEED"]
- 12 [-]: GETGLOBAL R9 K4        ; R9 := Game
- 13 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["STACKING_MULTIPLY"]
- 14 [-]: GETGLOBAL R10 K7       ; R10 := speedPct
- 15 [-]: GETGLOBAL R11 K8       ; R11 := math
- 16 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0x65F9712A"]
- 17 [-]: GETGLOBAL R12 K7       ; R12 := speedPct
+ 12 [-]: GETGLOBAL R9 K6        ; R9 := Engine
+ 13 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["STACKING_MULTIPLY"]
+ 14 [-]: GETGLOBAL R10 K8       ; R10 := speedPct
+ 15 [-]: GETGLOBAL R11 K9       ; R11 := math
+ 16 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x65F9712A"]
+ 17 [-]: GETGLOBAL R12 K8       ; R12 := speedPct
  18 [-]: LEN       R12 R12      ; R12 := # R12
  19 [-]: MOVE      R13 R2       ; R13 := R2
  20 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)

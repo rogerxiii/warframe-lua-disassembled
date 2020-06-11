@@ -418,7 +418,7 @@ code size: 37
  72 [-]: GETGLOBAL R9 K25       ; R9 := openAnim
  73 [-]: MOVE      R10 R0       ; R10 := R0
  74 [-]: MOVE      R11 R0       ; R11 := R0
- 75 [-]: LOADK     R12 K26      ; R12 := 6
+ 75 [-]: LOADK     R12 K26      ; R12 := 14
  76 [-]: GETGLOBAL R13 K27      ; R13 := EMPTY_SYMBOL
  77 [-]: LOADK     R14 K28      ; R14 := 1
  78 [-]: MOVE      R15 R1       ; R15 := R1

@@ -1,8 +1,8 @@
-code size: 57
+code size: 65
 code size: 46
 code size: 23
 code size: 104
-code size: 240
+code size: 346
 code size: 20
 code size: 32
 code size: 24
@@ -33,7 +33,26 @@ code size: 45
 code size: 14
 code size: 4
 code size: 67
-code size: 88
+code size: 33
+code size: 14
+code size: 14
+code size: 14
+code size: 14
+code size: 1
+code size: 25
+code size: 60
+code size: 35
+code size: 50
+code size: 82
+code size: 11
+code size: 42
+code size: 28
+code size: 26
+code size: 84
+code size: 11
+code size: 24
+code size: 11
+code size: 91
 code size: 1
 code size: 1
 code size: 1
@@ -45,6 +64,7 @@ code size: 1
 code size: 1
 code size: 1
 code size: 1
+code size: 9
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\DedicatedServerInit.luac 
 
@@ -53,7 +73,7 @@ code size: 1
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  15
+; Max Stack Size:  16
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
@@ -97,21 +117,29 @@ code size: 1
  40 [-]: MOVE      R0 R11       ; R0 := R11
  41 [-]: MOVE      R0 R12       ; R0 := R12
  42 [-]: MOVE      R0 R0        ; R0 := R0
- 43 [-]: CLOSURE   R14 4        ; R14 := closure(Function #5)
- 44 [-]: MOVE      R0 R13       ; R0 := R13
- 45 [-]: MOVE      R0 R12       ; R0 := R12
+ 43 [-]: MOVE      R0 R3        ; R0 := R3
+ 44 [-]: MOVE      R0 R4        ; R0 := R4
+ 45 [-]: CLOSURE   R14 4        ; R14 := closure(Function #5)
  46 [-]: MOVE      R0 R7        ; R0 := R7
- 47 [-]: MOVE      R0 R1        ; R0 := R1
- 48 [-]: MOVE      R0 R2        ; R0 := R2
- 49 [-]: MOVE      R0 R3        ; R0 := R3
- 50 [-]: MOVE      R0 R5        ; R0 := R5
- 51 [-]: MOVE      R0 R6        ; R0 := R6
- 52 [-]: MOVE      R0 R4        ; R0 := R4
- 53 [-]: MOVE      R0 R9        ; R0 := R9
- 54 [-]: MOVE      R0 R10       ; R0 := R10
- 55 [-]: SETGLOBAL R14 K21      ; DedicatedServerInit := R14
- 56 [-]: SETGLOBAL R14 K22      ; 0xBF682BA := R14
- 57 [-]: RETURN    R0 1         ; return 
+ 47 [-]: CLOSURE   R15 5        ; R15 := closure(Function #6)
+ 48 [-]: MOVE      R0 R13       ; R0 := R13
+ 49 [-]: MOVE      R0 R12       ; R0 := R12
+ 50 [-]: MOVE      R0 R14       ; R0 := R14
+ 51 [-]: MOVE      R0 R7        ; R0 := R7
+ 52 [-]: MOVE      R0 R1        ; R0 := R1
+ 53 [-]: MOVE      R0 R2        ; R0 := R2
+ 54 [-]: MOVE      R0 R3        ; R0 := R3
+ 55 [-]: MOVE      R0 R5        ; R0 := R5
+ 56 [-]: MOVE      R0 R6        ; R0 := R6
+ 57 [-]: MOVE      R0 R4        ; R0 := R4
+ 58 [-]: MOVE      R0 R9        ; R0 := R9
+ 59 [-]: MOVE      R0 R10       ; R0 := R10
+ 60 [-]: SETGLOBAL R15 K21      ; DedicatedServerInit := R15
+ 61 [-]: SETGLOBAL R15 K22      ; 0xBF682BA := R15
+ 62 [-]: CLOSURE   R15 6        ; R15 := closure(Function #7)
+ 63 [-]: SETGLOBAL R15 K23      ; DedicatedServerUpdate := R15
+ 64 [-]: SETGLOBAL R15 K24      ; 0xD7C23FB9 := R15
+ 65 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -324,10 +352,10 @@ code size: 1
 ;
 ; Name:            
 ; Defined at line: 107
-; #Upvalues:       9
+; #Upvalues:       11
 ; #Parameters:     7
 ; Is_vararg:       0
-; Max Stack Size:  20
+; Max Stack Size:  22
 
   1 [-]: GETGLOBAL R7 K0        ; R7 := 0x63B09107
   2 [-]: GETUPVAL  R8 U0        ; R8 := U0
@@ -362,8 +390,8 @@ code size: 1
  31 [-]: GETUPVAL  R12 U0       ; R12 := U0
  32 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["TypeInfo"]
  33 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
- 34 [-]: EQ        1 R12 K3     ; if R12 == nil then PC := 238
- 35 [-]: JMP       238          ; PC := 238
+ 34 [-]: EQ        1 R12 K3     ; if R12 == nil then PC := 344
+ 35 [-]: JMP       344          ; PC := 344
  36 [-]: GETUPVAL  R12 U0       ; R12 := U0
  37 [-]: GETUPVAL  R13 U0       ; R13 := U0
  38 [-]: GETTABLE  R13 R13 K10  ; R13 := R13["CurrentIndex"]
@@ -486,7 +514,7 @@ code size: 1
 155 [-]: CLOSURE   R17 19       ; R17 := closure(Function #4.20)
 156 [-]: MOVE      R0 R15       ; R0 := R15
 157 [-]: SETTABLE  R15 K49 R17  ; R15["ApplyData"] := R17
-158 [-]: JMP       216          ; PC := 216
+158 [-]: JMP       322          ; PC := 322
 159 [-]: GETUPVAL  R17 U3       ; R17 := U3
 160 [-]: EQ        0 R1 R17     ; if R1 ~= R17 then PC := 177
 161 [-]: JMP       177          ; PC := 177
@@ -504,10 +532,10 @@ code size: 1
 173 [-]: MOVE      R0 R15       ; R0 := R15
 174 [-]: MOVE      R0 R16       ; R0 := R16
 175 [-]: SETTABLE  R15 K39 R17  ; R15["SetLabel"] := R17
-176 [-]: JMP       216          ; PC := 216
+176 [-]: JMP       322          ; PC := 322
 177 [-]: GETUPVAL  R17 U4       ; R17 := U4
-178 [-]: EQ        0 R1 R17     ; if R1 ~= R17 then PC := 216
-179 [-]: JMP       216          ; PC := 216
+178 [-]: EQ        0 R1 R17     ; if R1 ~= R17 then PC := 217
+179 [-]: JMP       217          ; PC := 217
 180 [-]: CLOSURE   R17 22       ; R17 := closure(Function #4.23)
 181 [-]: MOVE      R0 R15       ; R0 := R15
 182 [-]: MOVE      R0 R16       ; R0 := R16
@@ -544,31 +572,137 @@ code size: 1
 213 [-]: CLOSURE   R17 29       ; R17 := closure(Function #4.30)
 214 [-]: MOVE      R0 R15       ; R0 := R15
 215 [-]: SETTABLE  R15 K49 R17  ; R15["ApplyData"] := R17
-216 [-]: TEST      R14 0        ; if not R14 then PC := 236
-217 [-]: JMP       236          ; PC := 236
-218 [-]: TEST      R4 0         ; if not R4 then PC := 230
-219 [-]: JMP       230          ; PC := 230
-220 [-]: TEST      R6 0         ; if not R6 then PC := 230
-221 [-]: JMP       230          ; PC := 230
-222 [-]: GETTABLE  R17 R15 K56  ; R17 := R15["UpdateData"]
-223 [-]: EQ        1 R17 K3     ; if R17 == nil then PC := 228
-224 [-]: JMP       228          ; PC := 228
-225 [-]: GETTABLE  R17 R15 K57  ; R17 := R15["0x6DEF39F7"]
-226 [-]: CALL      R17 1 1      ; R17()
-227 [-]: JMP       230          ; PC := 230
-228 [-]: MOVE      R17 R16      ; R17 := R16
-229 [-]: CALL      R17 1 1      ; R17()
-230 [-]: GETGLOBAL R17 K58      ; R17 := table
-231 [-]: GETTABLE  R17 R17 K59  ; R17 := R17["0xE6450C9D"]
-232 [-]: GETUPVAL  R18 U0       ; R18 := U0
-233 [-]: GETTABLE  R18 R18 K1   ; R18 := R18["List"]
-234 [-]: MOVE      R19 R15      ; R19 := R15
-235 [-]: CALL      R17 3 1      ; R17(R18,R19)
-236 [-]: RETURN    R15 2        ; return R15
-237 [-]: CLOSE     R12          ; SAVE R12,...
-238 [-]: LOADNIL   R12 R12      ; R12 := nil
-239 [-]: RETURN    R12 2        ; return R12
-240 [-]: RETURN    R0 1         ; return 
+216 [-]: JMP       322          ; PC := 322
+217 [-]: GETUPVAL  R17 U9       ; R17 := U9
+218 [-]: EQ        0 R1 R17     ; if R1 ~= R17 then PC := 256
+219 [-]: JMP       256          ; PC := 256
+220 [-]: GETTABLE  R17 R15 K20  ; R17 := R15["Data"]
+221 [-]: SETTABLE  R17 K35 K36  ; R17["Padding"] := -7
+222 [-]: CLOSURE   R17 30       ; R17 := closure(Function #4.31)
+223 [-]: MOVE      R0 R15       ; R0 := R15
+224 [-]: GETUPVAL  R0 U0        ; R0 := U0
+225 [-]: MOVE      R0 R13       ; R0 := R13
+226 [-]: GETUPVAL  R0 U7        ; R0 := U7
+227 [-]: MOVE      R0 R4        ; R0 := R4
+228 [-]: MOVE      R0 R16       ; R0 := R16
+229 [-]: SETTABLE  R15 K56 R17  ; R15["SetTarget"] := R17
+230 [-]: CLOSURE   R17 31       ; R17 := closure(Function #4.32)
+231 [-]: MOVE      R0 R15       ; R0 := R15
+232 [-]: MOVE      R0 R16       ; R0 := R16
+233 [-]: SETTABLE  R15 K57 R17  ; R15["SetNameFormat"] := R17
+234 [-]: CLOSURE   R17 32       ; R17 := closure(Function #4.33)
+235 [-]: MOVE      R0 R15       ; R0 := R15
+236 [-]: MOVE      R0 R16       ; R0 := R16
+237 [-]: SETTABLE  R15 K58 R17  ; R15["SetNameOverride"] := R17
+238 [-]: CLOSURE   R17 33       ; R17 := closure(Function #4.34)
+239 [-]: MOVE      R0 R15       ; R0 := R15
+240 [-]: MOVE      R0 R16       ; R0 := R16
+241 [-]: SETTABLE  R15 K59 R17  ; R15["SetRemoveOnNullTarget"] := R17
+242 [-]: CLOSURE   R17 34       ; R17 := closure(Function #4.35)
+243 [-]: MOVE      R0 R15       ; R0 := R15
+244 [-]: MOVE      R0 R16       ; R0 := R16
+245 [-]: SETTABLE  R15 K60 R17  ; R15["SetHealthWarningThreshold"] := R17
+246 [-]: CLOSURE   R17 35       ; R17 := closure(Function #4.36)
+247 [-]: SETTABLE  R15 K61 R17  ; R15["ShowLostHealthMsg"] := R17
+248 [-]: CLOSURE   R17 36       ; R17 := closure(Function #4.37)
+249 [-]: MOVE      R0 R15       ; R0 := R15
+250 [-]: MOVE      R0 R16       ; R0 := R16
+251 [-]: SETTABLE  R15 K62 R17  ; R15["SetIgnorePredeath"] := R17
+252 [-]: CLOSURE   R17 37       ; R17 := closure(Function #4.38)
+253 [-]: MOVE      R0 R15       ; R0 := R15
+254 [-]: SETTABLE  R15 K49 R17  ; R15["ApplyData"] := R17
+255 [-]: JMP       322          ; PC := 322
+256 [-]: GETUPVAL  R17 U10      ; R17 := U10
+257 [-]: EQ        0 R1 R17     ; if R1 ~= R17 then PC := 322
+258 [-]: JMP       322          ; PC := 322
+259 [-]: NEWTABLE  R17 0 3      ; R17 := {}
+260 [-]: SETTABLE  R17 K63 K23  ; R17["mForcedVerticalSeparation"] := 0
+261 [-]: SETTABLE  R17 K64 K65  ; R17["mForcedHorizontalSeparation"] := 22
+262 [-]: CLOSURE   R18 38       ; R18 := closure(Function #4.39)
+263 [-]: MOVE      R0 R15       ; R0 := R15
+264 [-]: SETTABLE  R17 K66 R18  ; R17["Redraw"] := R18
+265 [-]: SETTABLE  R15 K1 R17   ; R15["List"] := R17
+266 [-]: GETTABLE  R17 R15 K20  ; R17 := R15["Data"]
+267 [-]: NEWTABLE  R18 0 0      ; R18 := {}
+268 [-]: SETTABLE  R17 K67 R18  ; R17["ListData"] := R18
+269 [-]: NEWTABLE  R17 0 0      ; R17 := {}
+270 [-]: SETTABLE  R15 K68 R17  ; R15["InitFuncQueue"] := R17
+271 [-]: NEWTABLE  R17 0 1      ; R17 := {}
+272 [-]: SETTABLE  R17 K69 K7   ; R17["Icon"] := "0x1"
+273 [-]: NEWTABLE  R18 0 9      ; R18 := {}
+274 [-]: SETTABLE  R18 K70 K7   ; R18["mPrefix"] := "0x1"
+275 [-]: SETTABLE  R18 K71 K7   ; R18["UTIL"] := "0x1"
+276 [-]: SETTABLE  R18 K72 K7   ; R18["mClips"] := "0x1"
+277 [-]: SETTABLE  R18 K73 K7   ; R18["mClipName"] := "0x1"
+278 [-]: SETTABLE  R18 K74 K7   ; R18["mTopClipIndexUsed"] := "0x1"
+279 [-]: SETTABLE  R18 K75 K7   ; R18["UP"] := "0x1"
+280 [-]: SETTABLE  R18 K76 K7   ; R18["DOWN"] := "0x1"
+281 [-]: SETTABLE  R18 K77 K7   ; R18["LEFT"] := "0x1"
+282 [-]: SETTABLE  R18 K78 K7   ; R18["RIGHT"] := "0x1"
+283 [-]: CLOSURE   R19 39       ; R19 := closure(Function #4.40)
+284 [-]: MOVE      R0 R18       ; R0 := R18
+285 [-]: MOVE      R0 R15       ; R0 := R15
+286 [-]: MOVE      R0 R17       ; R0 := R17
+287 [-]: SETTABLE  R15 K79 R19  ; R15["StripUnserializables"] := R19
+288 [-]: CLOSURE   R19 40       ; R19 := closure(Function #4.41)
+289 [-]: MOVE      R0 R15       ; R0 := R15
+290 [-]: MOVE      R0 R17       ; R0 := R17
+291 [-]: MOVE      R0 R18       ; R0 := R18
+292 [-]: SETTABLE  R15 K80 R19  ; R15["ApplyListData"] := R19
+293 [-]: CLOSURE   R19 41       ; R19 := closure(Function #4.42)
+294 [-]: MOVE      R0 R15       ; R0 := R15
+295 [-]: MOVE      R0 R16       ; R0 := R16
+296 [-]: SETTABLE  R15 K81 R19  ; R15["UpdateData"] := R19
+297 [-]: CLOSURE   R19 42       ; R19 := closure(Function #4.43)
+298 [-]: MOVE      R0 R15       ; R0 := R15
+299 [-]: GETUPVAL  R0 U8        ; R0 := U8
+300 [-]: SETTABLE  R15 K82 R19  ; R15["AddIcon"] := R19
+301 [-]: CLOSURE   R19 43       ; R19 := closure(Function #4.44)
+302 [-]: MOVE      R0 R15       ; R0 := R15
+303 [-]: SETTABLE  R15 K83 R19  ; R15["RemoveIcon"] := R19
+304 [-]: CLOSURE   R19 44       ; R19 := closure(Function #4.45)
+305 [-]: MOVE      R0 R15       ; R0 := R15
+306 [-]: SETTABLE  R15 K84 R19  ; R15["RemoveIcons"] := R19
+307 [-]: CLOSURE   R19 45       ; R19 := closure(Function #4.46)
+308 [-]: MOVE      R0 R15       ; R0 := R15
+309 [-]: SETTABLE  R15 K85 R19  ; R15["AddStackingIcon"] := R19
+310 [-]: CLOSURE   R19 46       ; R19 := closure(Function #4.47)
+311 [-]: MOVE      R0 R15       ; R0 := R15
+312 [-]: SETTABLE  R15 K86 R19  ; R15["SetCustomDrawFunction"] := R19
+313 [-]: CLOSURE   R19 47       ; R19 := closure(Function #4.48)
+314 [-]: MOVE      R0 R15       ; R0 := R15
+315 [-]: SETTABLE  R15 K49 R19  ; R15["ApplyData"] := R19
+316 [-]: GETTABLE  R19 R15 K20  ; R19 := R15["Data"]
+317 [-]: GETTABLE  R20 R15 K87  ; R20 := R15["0xB1494B8A"]
+318 [-]: GETTABLE  R21 R15 K1   ; R21 := R15["List"]
+319 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+320 [-]: SETTABLE  R19 K67 R20  ; R19["ListData"] := R20
+321 [-]: CLOSE     R17          ; SAVE R17,...
+322 [-]: TEST      R14 0        ; if not R14 then PC := 342
+323 [-]: JMP       342          ; PC := 342
+324 [-]: TEST      R4 0         ; if not R4 then PC := 336
+325 [-]: JMP       336          ; PC := 336
+326 [-]: TEST      R6 0         ; if not R6 then PC := 336
+327 [-]: JMP       336          ; PC := 336
+328 [-]: GETTABLE  R17 R15 K81  ; R17 := R15["UpdateData"]
+329 [-]: EQ        1 R17 K3     ; if R17 == nil then PC := 334
+330 [-]: JMP       334          ; PC := 334
+331 [-]: GETTABLE  R17 R15 K88  ; R17 := R15["0x6DEF39F7"]
+332 [-]: CALL      R17 1 1      ; R17()
+333 [-]: JMP       336          ; PC := 336
+334 [-]: MOVE      R17 R16      ; R17 := R16
+335 [-]: CALL      R17 1 1      ; R17()
+336 [-]: GETGLOBAL R17 K89      ; R17 := table
+337 [-]: GETTABLE  R17 R17 K90  ; R17 := R17["0xE6450C9D"]
+338 [-]: GETUPVAL  R18 U0       ; R18 := U0
+339 [-]: GETTABLE  R18 R18 K1   ; R18 := R18["List"]
+340 [-]: MOVE      R19 R15      ; R19 := R15
+341 [-]: CALL      R17 3 1      ; R17(R18,R19)
+342 [-]: RETURN    R15 2        ; return R15
+343 [-]: CLOSE     R12          ; SAVE R12,...
+344 [-]: LOADNIL   R12 R12      ; R12 := nil
+345 [-]: RETURN    R12 2        ; return R12
+346 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4.1:
@@ -1819,47 +1953,835 @@ code size: 1
  67 [-]: RETURN    R0 1         ; return 
 
 
+; Function #4.31:
+;
+; Name:            
+; Defined at line: 547
+; #Upvalues:       6
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  8
+
+  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["EntityInfo"]
+  3 [-]: EQ        0 R0 R1      ; if R0 ~= R1 then PC := 6
+  4 [-]: JMP       6            ; PC := 6
+  5 [-]: RETURN    R0 1         ; return 
+  6 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  7 [-]: SETTABLE  R1 K0 R0     ; R1["EntityInfo"] := R0
+  8 [-]: GETGLOBAL R1 K1        ; R1 := 0xECFDD17
+  9 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 10 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["ActiveHealthTrackers"]
+ 11 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
+ 12 [-]: JMP       29           ; PC := 29
+ 13 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 14 [-]: EQ        1 R4 R6      ; if R4 == R6 then PC := 29
+ 15 [-]: JMP       29           ; PC := 29
+ 16 [-]: GETTABLE  R6 R5 K0     ; R6 := R5["EntityInfo"]
+ 17 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 18 [-]: GETTABLE  R7 R7 K0     ; R7 := R7["EntityInfo"]
+ 19 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 29
+ 20 [-]: JMP       29           ; PC := 29
+ 21 [-]: GETUPVAL  R6 U3        ; R6 := U3
+ 22 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 23 [-]: CALL      R6 2 1       ; R6(R7)
+ 24 [-]: MOVE      R6 R0        ; R6 := R0
+ 25 [-]: MOVE      R6 R4        ; R6 := R4
+ 26 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 27 [-]: SETTABLE  R6 K3 K4     ; R6["Local"] := "0x1"
+ 28 [-]: RETURN    R0 1         ; return 
+ 29 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 13; R3 := R4 end
+ 30 [-]: JMP       13           ; PC := 13
+ 31 [-]: GETUPVAL  R6 U5        ; R6 := U5
+ 32 [-]: CALL      R6 1 1       ; R6()
+ 33 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.32:
+;
+; Name:            
+; Defined at line: 565
+; #Upvalues:       2
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: TEST      R1 1         ; if R1 then PC := 9
+  2 [-]: JMP       9            ; PC := 9
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+  5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["NameFormat"]
+  6 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 9
+  7 [-]: JMP       9            ; PC := 9
+  8 [-]: RETURN    R0 1         ; return 
+  9 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 10 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+ 11 [-]: SETTABLE  R2 K1 R0     ; R2["NameFormat"] := R0
+ 12 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 13 [-]: CALL      R2 1 1       ; R2()
+ 14 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.33:
+;
+; Name:            
+; Defined at line: 576
+; #Upvalues:       2
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: TEST      R1 1         ; if R1 then PC := 9
+  2 [-]: JMP       9            ; PC := 9
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+  5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["NameOverride"]
+  6 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 9
+  7 [-]: JMP       9            ; PC := 9
+  8 [-]: RETURN    R0 1         ; return 
+  9 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 10 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+ 11 [-]: SETTABLE  R2 K1 R0     ; R2["NameOverride"] := R0
+ 12 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 13 [-]: CALL      R2 1 1       ; R2()
+ 14 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.34:
+;
+; Name:            
+; Defined at line: 586
+; #Upvalues:       2
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: TEST      R1 1         ; if R1 then PC := 9
+  2 [-]: JMP       9            ; PC := 9
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+  5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["RemoveOnNullTarget"]
+  6 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 9
+  7 [-]: JMP       9            ; PC := 9
+  8 [-]: RETURN    R0 1         ; return 
+  9 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 10 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+ 11 [-]: SETTABLE  R2 K1 R0     ; R2["RemoveOnNullTarget"] := R0
+ 12 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 13 [-]: CALL      R2 1 1       ; R2()
+ 14 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.35:
+;
+; Name:            
+; Defined at line: 596
+; #Upvalues:       2
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: TEST      R1 1         ; if R1 then PC := 9
+  2 [-]: JMP       9            ; PC := 9
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+  5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["HealthWarningThreshold"]
+  6 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 9
+  7 [-]: JMP       9            ; PC := 9
+  8 [-]: RETURN    R0 1         ; return 
+  9 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 10 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+ 11 [-]: SETTABLE  R2 K1 R0     ; R2["HealthWarningThreshold"] := R0
+ 12 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 13 [-]: CALL      R2 1 1       ; R2()
+ 14 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.36:
+;
+; Name:            
+; Defined at line: 606
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.37:
+;
+; Name:            
+; Defined at line: 610
+; #Upvalues:       2
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  5
+
+  1 [-]: TEST      R1 1         ; if R1 then PC := 9
+  2 [-]: JMP       9            ; PC := 9
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+  5 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["IgnorePredeath"]
+  6 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 9
+  7 [-]: JMP       9            ; PC := 9
+  8 [-]: RETURN    R0 1         ; return 
+  9 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 10 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["Data"]
+ 11 [-]: SETTABLE  R2 K1 R0     ; R2["IgnorePredeath"] := R0
+ 12 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 13 [-]: CALL      R2 1 1       ; R2()
+ 14 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+ 15 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 16 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["Display"]
+ 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 18 [-]: TEST      R2 1         ; if R2 then PC := 25
+ 19 [-]: JMP       25           ; PC := 25
+ 20 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 21 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["Display"]
+ 22 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x84A3ADD4"]
+ 23 [-]: MOVE      R4 R0        ; R4 := R0
+ 24 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 25 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.38:
+;
+; Name:            
+; Defined at line: 624
+; #Upvalues:       1
+; #Parameters:     3
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["0xA3B2879"]
+  3 [-]: MOVE      R4 R1        ; R4 := R1
+  4 [-]: CALL      R3 2 1       ; R3(R4)
+  5 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+  6 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["RemoveOnNullTarget"]
+  7 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  8 [-]: TEST      R3 1         ; if R3 then PC := 15
+  9 [-]: JMP       15           ; PC := 15
+ 10 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["0xEEB6DA74"]
+ 12 [-]: GETTABLE  R4 R0 K2     ; R4 := R0["RemoveOnNullTarget"]
+ 13 [-]: MOVE      R5 R2        ; R5 := R2
+ 14 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 15 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 16 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["HealthWarningThreshold"]
+ 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 18 [-]: TEST      R3 1         ; if R3 then PC := 25
+ 19 [-]: JMP       25           ; PC := 25
+ 20 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 21 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["0xA4AE043E"]
+ 22 [-]: GETTABLE  R4 R0 K4     ; R4 := R0["HealthWarningThreshold"]
+ 23 [-]: MOVE      R5 R2        ; R5 := R2
+ 24 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 25 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 26 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["NameOverride"]
+ 27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 28 [-]: TEST      R3 1         ; if R3 then PC := 35
+ 29 [-]: JMP       35           ; PC := 35
+ 30 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 31 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["0xB42AC053"]
+ 32 [-]: GETTABLE  R4 R0 K6     ; R4 := R0["NameOverride"]
+ 33 [-]: MOVE      R5 R2        ; R5 := R2
+ 34 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 35 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 36 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["NameFormat"]
+ 37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 38 [-]: TEST      R3 1         ; if R3 then PC := 45
+ 39 [-]: JMP       45           ; PC := 45
+ 40 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 41 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0xA7677E04"]
+ 42 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["NameFormat"]
+ 43 [-]: MOVE      R5 R2        ; R5 := R2
+ 44 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 45 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+ 46 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["IgnorePredeath"]
+ 47 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 48 [-]: TEST      R3 1         ; if R3 then PC := 55
+ 49 [-]: JMP       55           ; PC := 55
+ 50 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 51 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["0x7F18147B"]
+ 52 [-]: GETTABLE  R4 R0 K10    ; R4 := R0["IgnorePredeath"]
+ 53 [-]: MOVE      R5 R2        ; R5 := R2
+ 54 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 55 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 56 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["0xC9403736"]
+ 57 [-]: MOVE      R4 R0        ; R4 := R0
+ 58 [-]: MOVE      R5 R2        ; R5 := R2
+ 59 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 60 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.39:
+;
+; Name:            
+; Defined at line: 647
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  2 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["InitRedraw"]
+  3 [-]: TEST      R4 0         ; if not R4 then PC := 22
+  4 [-]: JMP       22           ; PC := 22
+  5 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  6 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["InitRedraw"]
+  7 [-]: TESTSET   R5 R2 1      ; if R2 then PC := 12 else R5 := R2
+  8 [-]: JMP       12           ; PC := 12
+  9 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 10 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["InitRedraw"]
+ 11 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["ForceRedraw"]
+ 12 [-]: SETTABLE  R4 K1 R5     ; R4["ForceRedraw"] := R5
+ 13 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 14 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["InitRedraw"]
+ 15 [-]: TESTSET   R5 R3 1      ; if R3 then PC := 20 else R5 := R3
+ 16 [-]: JMP       20           ; PC := 20
+ 17 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 18 [-]: GETTABLE  R5 R5 K0     ; R5 := R5["InitRedraw"]
+ 19 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["InstantDraw"]
+ 20 [-]: SETTABLE  R4 K2 R5     ; R4["InstantDraw"] := R5
+ 21 [-]: JMP       27           ; PC := 27
+ 22 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 23 [-]: NEWTABLE  R5 0 2       ; R5 := {}
+ 24 [-]: SETTABLE  R5 K1 R2     ; R5["ForceRedraw"] := R2
+ 25 [-]: SETTABLE  R5 K2 R3     ; R5["InstantDraw"] := R3
+ 26 [-]: SETTABLE  R4 K0 R5     ; R4["InitRedraw"] := R5
+ 27 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 28 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["InitRedraw"]
+ 29 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["Callback"]
+ 30 [-]: TEST      R4 1         ; if R4 then PC := 35
+ 31 [-]: JMP       35           ; PC := 35
+ 32 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 33 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["InitRedraw"]
+ 34 [-]: SETTABLE  R4 K3 R1     ; R4["Callback"] := R1
+ 35 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.40:
+;
+; Name:            
+; Defined at line: 668
+; #Upvalues:       3
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: NEWTABLE  R1 0 0       ; R1 := {}
+  2 [-]: GETGLOBAL R2 K0        ; R2 := 0xECFDD17
+  3 [-]: MOVE      R3 R0        ; R3 := R0
+  4 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
+  5 [-]: JMP       47           ; PC := 47
+  6 [-]: GETUPVAL  R7 U0        ; R7 := U0
+  7 [-]: GETTABLE  R7 R7 R5     ; R7 := R7[R5]
+  8 [-]: TEST      R7 1         ; if R7 then PC := 47
+  9 [-]: JMP       47           ; PC := 47
+ 10 [-]: GETGLOBAL R7 K1        ; R7 := 0x6A235628
+ 11 [-]: MOVE      R8 R6        ; R8 := R6
+ 12 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 13 [-]: EQ        0 R7 K2      ; if R7 ~= "table" then PC := 23
+ 14 [-]: JMP       23           ; PC := 23
+ 15 [-]: EQ        1 R6 R0      ; if R6 == R0 then PC := 47
+ 16 [-]: JMP       47           ; PC := 47
+ 17 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 18 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["0xB1494B8A"]
+ 19 [-]: MOVE      R8 R6        ; R8 := R6
+ 20 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 21 [-]: SETTABLE  R1 R5 R7     ; R1[R5] := R7
+ 22 [-]: JMP       47           ; PC := 47
+ 23 [-]: GETGLOBAL R7 K1        ; R7 := 0x6A235628
+ 24 [-]: MOVE      R8 R6        ; R8 := R6
+ 25 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 26 [-]: EQ        0 R7 K4      ; if R7 ~= "userdata" then PC := 36
+ 27 [-]: JMP       36           ; PC := 36
+ 28 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 29 [-]: GETTABLE  R7 R7 R5     ; R7 := R7[R5]
+ 30 [-]: TEST      R7 0         ; if not R7 then PC := 36
+ 31 [-]: JMP       36           ; PC := 36
+ 32 [-]: SELF      R7 R6 K5     ; R8 := R6; R7 := R6["0x1B252E3C"]
+ 33 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 34 [-]: SETTABLE  R1 R5 R7     ; R1[R5] := R7
+ 35 [-]: JMP       47           ; PC := 47
+ 36 [-]: GETGLOBAL R7 K1        ; R7 := 0x6A235628
+ 37 [-]: MOVE      R8 R6        ; R8 := R6
+ 38 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 39 [-]: EQ        1 R7 K6      ; if R7 == "function" then PC := 47
+ 40 [-]: JMP       47           ; PC := 47
+ 41 [-]: GETGLOBAL R7 K1        ; R7 := 0x6A235628
+ 42 [-]: MOVE      R8 R6        ; R8 := R6
+ 43 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 44 [-]: EQ        1 R7 K4      ; if R7 == "userdata" then PC := 47
+ 45 [-]: JMP       47           ; PC := 47
+ 46 [-]: SETTABLE  R1 R5 R6     ; R1[R5] := R6
+ 47 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 6; R4 := R5 end
+ 48 [-]: JMP       6            ; PC := 6
+ 49 [-]: RETURN    R1 2         ; return R1
+ 50 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.41:
+;
+; Name:            
+; Defined at line: 688
+; #Upvalues:       3
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  15
+
+  1 [-]: EQ        0 R0 K0      ; if R0 ~= nil then PC := 5
+  2 [-]: JMP       5            ; PC := 5
+  3 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  4 [-]: GETTABLE  R0 R2 K1     ; R0 := R2["List"]
+  5 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 10
+  6 [-]: JMP       10           ; PC := 10
+  7 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  8 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["Data"]
+  9 [-]: GETTABLE  R1 R2 K3     ; R1 := R2["ListData"]
+ 10 [-]: GETGLOBAL R2 K4        ; R2 := 0xECFDD17
+ 11 [-]: MOVE      R3 R1        ; R3 := R1
+ 12 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
+ 13 [-]: JMP       34           ; PC := 34
+ 14 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 15 [-]: GETTABLE  R7 R7 R5     ; R7 := R7[R5]
+ 16 [-]: TEST      R7 0         ; if not R7 then PC := 23
+ 17 [-]: JMP       23           ; PC := 23
+ 18 [-]: GETGLOBAL R7 K5        ; R7 := 0x7C282057
+ 19 [-]: MOVE      R8 R6        ; R8 := R6
+ 20 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 21 [-]: SETTABLE  R0 R5 R7     ; R0[R5] := R7
+ 22 [-]: JMP       34           ; PC := 34
+ 23 [-]: GETGLOBAL R7 K6        ; R7 := 0x400E7765
+ 24 [-]: GETTABLE  R8 R0 R5     ; R8 := R0[R5]
+ 25 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 26 [-]: TEST      R7 1         ; if R7 then PC := 33
+ 27 [-]: JMP       33           ; PC := 33
+ 28 [-]: GETGLOBAL R7 K7        ; R7 := 0x6A235628
+ 29 [-]: MOVE      R8 R6        ; R8 := R6
+ 30 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 31 [-]: EQ        1 R7 K8      ; if R7 == "table" then PC := 34
+ 32 [-]: JMP       34           ; PC := 34
+ 33 [-]: SETTABLE  R0 R5 R6     ; R0[R5] := R6
+ 34 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 14; R4 := R5 end
+ 35 [-]: JMP       14           ; PC := 14
+ 36 [-]: GETGLOBAL R7 K4        ; R7 := 0xECFDD17
+ 37 [-]: MOVE      R8 R0        ; R8 := R0
+ 38 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
+ 39 [-]: JMP       80           ; PC := 80
+ 40 [-]: GETUPVAL  R12 U2       ; R12 := U2
+ 41 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
+ 42 [-]: TEST      R12 1        ; if R12 then PC := 80
+ 43 [-]: JMP       80           ; PC := 80
+ 44 [-]: GETGLOBAL R12 K7       ; R12 := 0x6A235628
+ 45 [-]: MOVE      R13 R11      ; R13 := R11
+ 46 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 47 [-]: EQ        0 R12 K8     ; if R12 ~= "table" then PC := 57
+ 48 [-]: JMP       57           ; PC := 57
+ 49 [-]: EQ        1 R11 R0     ; if R11 == R0 then PC := 80
+ 50 [-]: JMP       80           ; PC := 80
+ 51 [-]: GETUPVAL  R12 U0       ; R12 := U0
+ 52 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["0xB2D5008D"]
+ 53 [-]: MOVE      R13 R11      ; R13 := R11
+ 54 [-]: GETTABLE  R14 R1 R10   ; R14 := R1[R10]
+ 55 [-]: CALL      R12 3 1      ; R12(R13,R14)
+ 56 [-]: JMP       80           ; PC := 80
+ 57 [-]: GETTABLE  R12 R1 R10   ; R12 := R1[R10]
+ 58 [-]: EQ        0 R12 K0     ; if R12 ~= nil then PC := 80
+ 59 [-]: JMP       80           ; PC := 80
+ 60 [-]: GETGLOBAL R12 K7       ; R12 := 0x6A235628
+ 61 [-]: MOVE      R13 R11      ; R13 := R11
+ 62 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 63 [-]: EQ        0 R12 K10    ; if R12 ~= "userdata" then PC := 69
+ 64 [-]: JMP       69           ; PC := 69
+ 65 [-]: GETUPVAL  R12 U1       ; R12 := U1
+ 66 [-]: GETTABLE  R12 R12 R10  ; R12 := R12[R10]
+ 67 [-]: TEST      R12 1        ; if R12 then PC := 79
+ 68 [-]: JMP       79           ; PC := 79
+ 69 [-]: GETGLOBAL R12 K7       ; R12 := 0x6A235628
+ 70 [-]: MOVE      R13 R11      ; R13 := R11
+ 71 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 72 [-]: EQ        1 R12 K11    ; if R12 == "function" then PC := 80
+ 73 [-]: JMP       80           ; PC := 80
+ 74 [-]: GETGLOBAL R12 K7       ; R12 := 0x6A235628
+ 75 [-]: MOVE      R13 R11      ; R13 := R11
+ 76 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+ 77 [-]: EQ        1 R12 K10    ; if R12 == "userdata" then PC := 80
+ 78 [-]: JMP       80           ; PC := 80
+ 79 [-]: SETTABLE  R0 R10 K0    ; R0[R10] := nil
+ 80 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 40; R9 := R10 end
+ 81 [-]: JMP       40           ; PC := 40
+ 82 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.42:
+;
+; Name:            
+; Defined at line: 720
+; #Upvalues:       2
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["Data"]
+  3 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  4 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["0xB1494B8A"]
+  5 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  6 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["List"]
+  7 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  8 [-]: SETTABLE  R0 K1 R1     ; R0["ListData"] := R1
+  9 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 10 [-]: CALL      R0 1 1       ; R0()
+ 11 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.43:
+;
+; Name:            
+; Defined at line: 726
+; #Upvalues:       2
+; #Parameters:     3
+; Is_vararg:       0
+; Max Stack Size:  10
+
+  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+  2 [-]: MOVE      R4 R1        ; R4 := R1
+  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  4 [-]: TEST      R3 0         ; if not R3 then PC := 8
+  5 [-]: JMP       8            ; PC := 8
+  6 [-]: NEWTABLE  R3 0 0       ; R3 := {}
+  7 [-]: MOVE      R1 R3        ; R1 := R3
+  8 [-]: SETTABLE  R1 K1 R0     ; R1["Icon"] := R0
+  9 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 10 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["NeedsInit"]
+ 11 [-]: TEST      R3 0         ; if not R3 then PC := 26
+ 12 [-]: JMP       26           ; PC := 26
+ 13 [-]: GETGLOBAL R3 K3        ; R3 := table
+ 14 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["0xE6450C9D"]
+ 15 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 16 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["InitFuncQueue"]
+ 17 [-]: NEWTABLE  R5 4 0       ; R5 := {}
+ 18 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 19 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["AddIcon"]
+ 20 [-]: MOVE      R7 R0        ; R7 := R0
+ 21 [-]: MOVE      R8 R1        ; R8 := R1
+ 22 [-]: MOVE      R9 R2        ; R9 := R2
+ 23 [-]: SETLIST   R5 4 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 4
+ 24 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 25 [-]: JMP       42           ; PC := 42
+ 26 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 27 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["List"]
+ 28 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0xA77DA8EE"]
+ 29 [-]: MOVE      R5 R1        ; R5 := R1
+ 30 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 31 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["0xF81722A2"]
+ 32 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 33 [-]: MOVE      R8 R2        ; R8 := R2
+ 34 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 35 [-]: MOVE      R8 R1        ; R8 := R1
+ 36 [-]: MOVE      R9 R2        ; R9 := R2
+ 37 [-]: CALL      R6 4 0       ; R6,... := R6(R7,R8,R9)
+ 38 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 39 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 40 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["0x6DEF39F7"]
+ 41 [-]: CALL      R3 1 1       ; R3()
+ 42 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.44:
+;
+; Name:            
+; Defined at line: 740
+; #Upvalues:       1
+; #Parameters:     3
+; Is_vararg:       0
+; Max Stack Size:  10
+
+  1 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  2 [-]: GETTABLE  R3 R3 K0     ; R3 := R3["NeedsInit"]
+  3 [-]: TEST      R3 0         ; if not R3 then PC := 18
+  4 [-]: JMP       18           ; PC := 18
+  5 [-]: GETGLOBAL R3 K1        ; R3 := table
+  6 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["0xE6450C9D"]
+  7 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  8 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["InitFuncQueue"]
+  9 [-]: NEWTABLE  R5 4 0       ; R5 := {}
+ 10 [-]: GETUPVAL  R6 U0        ; R6 := U0
+ 11 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["RemoveIcon"]
+ 12 [-]: MOVE      R7 R0        ; R7 := R0
+ 13 [-]: MOVE      R8 R1        ; R8 := R1
+ 14 [-]: MOVE      R9 R2        ; R9 := R2
+ 15 [-]: SETLIST   R5 4 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 4
+ 16 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 17 [-]: JMP       28           ; PC := 28
+ 18 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 19 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["List"]
+ 20 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x96ABF26F"]
+ 21 [-]: MOVE      R5 R0        ; R5 := R0
+ 22 [-]: MOVE      R6 R1        ; R6 := R1
+ 23 [-]: MOVE      R7 R2        ; R7 := R2
+ 24 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
+ 25 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 26 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["0x6DEF39F7"]
+ 27 [-]: CALL      R3 1 1       ; R3()
+ 28 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.45:
+;
+; Name:            
+; Defined at line: 750
+; #Upvalues:       1
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  8
+
+  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  2 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["NeedsInit"]
+  3 [-]: TEST      R2 0         ; if not R2 then PC := 17
+  4 [-]: JMP       17           ; PC := 17
+  5 [-]: GETGLOBAL R2 K1        ; R2 := table
+  6 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["0xE6450C9D"]
+  7 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  8 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["InitFuncQueue"]
+  9 [-]: NEWTABLE  R4 3 0       ; R4 := {}
+ 10 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 11 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["RemoveIcons"]
+ 12 [-]: MOVE      R6 R0        ; R6 := R0
+ 13 [-]: MOVE      R7 R1        ; R7 := R1
+ 14 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
+ 15 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 16 [-]: JMP       26           ; PC := 26
+ 17 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 18 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["List"]
+ 19 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x7CF71D03"]
+ 20 [-]: MOVE      R4 R0        ; R4 := R0
+ 21 [-]: MOVE      R5 R1        ; R5 := R1
+ 22 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 23 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 24 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0x6DEF39F7"]
+ 25 [-]: CALL      R2 1 1       ; R2()
+ 26 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.46:
+;
+; Name:            
+; Defined at line: 760
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  15
+
+  1 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 7
+  2 [-]: JMP       7            ; PC := 7
+  3 [-]: GETGLOBAL R4 K1        ; R4 := 0x93B1256B
+  4 [-]: LOADK     R5 K2        ; R5 := "HudTracker: No key for stacking icon!"
+  5 [-]: CALL      R4 2 1       ; R4(R5)
+  6 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  8 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["NeedsInit"]
+  9 [-]: TEST      R4 0         ; if not R4 then PC := 25
+ 10 [-]: JMP       25           ; PC := 25
+ 11 [-]: GETGLOBAL R4 K4        ; R4 := table
+ 12 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["0xE6450C9D"]
+ 13 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 14 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["InitFuncQueue"]
+ 15 [-]: NEWTABLE  R6 5 0       ; R6 := {}
+ 16 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 17 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["AddStackingIcon"]
+ 18 [-]: MOVE      R8 R0        ; R8 := R0
+ 19 [-]: MOVE      R9 R1        ; R9 := R1
+ 20 [-]: MOVE      R10 R2       ; R10 := R2
+ 21 [-]: MOVE      R11 R3       ; R11 := R3
+ 22 [-]: SETLIST   R6 5 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 5
+ 23 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 24 [-]: JMP       84           ; PC := 84
+ 25 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 26 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["List"]
+ 27 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["mElements"]
+ 28 [-]: GETTABLE  R4 R4 R0     ; R4 := R4[R0]
+ 29 [-]: TEST      R4 0         ; if not R4 then PC := 84
+ 30 [-]: JMP       84           ; PC := 84
+ 31 [-]: GETGLOBAL R5 K10       ; R5 := 0x400E7765
+ 32 [-]: GETTABLE  R6 R4 K11    ; R6 := R4["StackedElements"]
+ 33 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 34 [-]: TEST      R5 0         ; if not R5 then PC := 38
+ 35 [-]: JMP       38           ; PC := 38
+ 36 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 37 [-]: SETTABLE  R4 K11 R5    ; R4["StackedElements"] := R5
+ 38 [-]: LOADK     R5 K12       ; R5 := 0
+ 39 [-]: GETGLOBAL R6 K13       ; R6 := 0xECFDD17
+ 40 [-]: GETTABLE  R7 R4 K11    ; R7 := R4["StackedElements"]
+ 41 [-]: CALL      R6 2 4       ; R6,R7,R8 := R6(R7)
+ 42 [-]: JMP       44           ; PC := 44
+ 43 [-]: ADD       R5 R5 K14    ; R5 := R5 + 1
+ 44 [-]: TFORLOOP  R6 2         ; R9,R10 :=  R6(R7,R8); if R9 ~= nil then begin PC = 43; R8 := R9 end
+ 45 [-]: JMP       43           ; PC := 43
+ 46 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
+ 47 [-]: MOVE      R12 R3       ; R12 := R3
+ 48 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 49 [-]: TEST      R11 0        ; if not R11 then PC := 53
+ 50 [-]: JMP       53           ; PC := 53
+ 51 [-]: NEWTABLE  R11 0 0      ; R11 := {}
+ 52 [-]: MOVE      R3 R11       ; R3 := R11
+ 53 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
+ 54 [-]: GETTABLE  R12 R3 K15   ; R12 := R3["Alpha"]
+ 55 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 56 [-]: TEST      R11 0        ; if not R11 then PC := 59
+ 57 [-]: JMP       59           ; PC := 59
+ 58 [-]: SETTABLE  R3 K15 K16   ; R3["Alpha"] := 100
+ 59 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
+ 60 [-]: GETTABLE  R12 R3 K17   ; R12 := R3["Visible"]
+ 61 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 62 [-]: TEST      R11 0        ; if not R11 then PC := 65
+ 63 [-]: JMP       65           ; PC := 65
+ 64 [-]: SETTABLE  R3 K17 K18   ; R3["Visible"] := "0x1"
+ 65 [-]: GETGLOBAL R11 K10      ; R11 := 0x400E7765
+ 66 [-]: GETTABLE  R12 R3 K19   ; R12 := R3["Y"]
+ 67 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 68 [-]: TEST      R11 0        ; if not R11 then PC := 71
+ 69 [-]: JMP       71           ; PC := 71
+ 70 [-]: SETTABLE  R3 K19 K12   ; R3["Y"] := 0
+ 71 [-]: SETTABLE  R3 K20 R2    ; R3["Icon"] := R2
+ 72 [-]: MOVE      R11 R3       ; R11 := R3
+ 73 [-]: MOVE      R12 R1       ; R12 := R1
+ 74 [-]: LOADK     R13 K22      ; R13 := "_"
+ 75 [-]: MOVE      R14 R0       ; R14 := R0
+ 76 [-]: CONCAT    R12 R12 R14  ; R12 := R12 .. R13 .. R14
+ 77 [-]: SETTABLE  R11 K21 R12  ; R11["Name"] := R12
+ 78 [-]: MUL       R12 R0 K24   ; R12 := R0 * 20
+ 79 [-]: ADD       R12 K25 R12  ; R12 := 1500 + R12
+ 80 [-]: ADD       R12 R12 R5   ; R12 := R12 + R5
+ 81 [-]: SETTABLE  R11 K23 R12  ; R11["Depth"] := R12
+ 82 [-]: GETTABLE  R12 R4 K11   ; R12 := R4["StackedElements"]
+ 83 [-]: SETTABLE  R12 R1 R11   ; R12[R1] := R11
+ 84 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.47:
+;
+; Name:            
+; Defined at line: 802
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x6A235628
+  2 [-]: MOVE      R2 R0        ; R2 := R0
+  3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  4 [-]: EQ        0 R1 K1      ; if R1 ~= "function" then PC := 9
+  5 [-]: JMP       9            ; PC := 9
+  6 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  7 [-]: SETTABLE  R1 K2 R0     ; R1["CustomDrawFunction"] := R0
+  8 [-]: JMP       11           ; PC := 11
+  9 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 10 [-]: SETTABLE  R1 K2 K3     ; R1["CustomDrawFunction"] := nil
+ 11 [-]: RETURN    R0 1         ; return 
+
+
+; Function #4.48:
+;
+; Name:            
+; Defined at line: 824
+; #Upvalues:       1
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  2 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["ListData"]
+  3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  4 [-]: TEST      R2 1         ; if R2 then PC := 13
+  5 [-]: JMP       13           ; PC := 13
+  6 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  7 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["Data"]
+  8 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["ListData"]
+  9 [-]: SETTABLE  R2 K1 R3     ; R2["ListData"] := R3
+ 10 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 11 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["0xB2D5008D"]
+ 12 [-]: CALL      R2 1 1       ; R2()
+ 13 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 14 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["0xC9403736"]
+ 15 [-]: MOVE      R3 R0        ; R3 := R0
+ 16 [-]: MOVE      R4 R1        ; R4 := R1
+ 17 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 18 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 19 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["List"]
+ 20 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x6470BAF4"]
+ 21 [-]: LOADNIL   R4 R4        ; R4 := nil
+ 22 [-]: MOVE      R5 R1        ; R5 := R1
+ 23 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 24 [-]: RETURN    R0 1         ; return 
+
+
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 564
-; #Upvalues:       11
+; Defined at line: 856
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  8
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0xECFDD17
+  2 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["ActiveTimers"]
+  4 [-]: CALL      R1 2 4       ; R1,R2,R3 := R1(R2)
+  5 [-]: JMP       9            ; PC := 9
+  6 [-]: GETTABLE  R6 R5 K2     ; R6 := R5["0x8C7099E9"]
+  7 [-]: MOVE      R7 R0        ; R7 := R0
+  8 [-]: CALL      R6 2 1       ; R6(R7)
+  9 [-]: TFORLOOP  R1 2         ; R4,R5 :=  R1(R2,R3); if R4 ~= nil then begin PC = 6; R3 := R4 end
+ 10 [-]: JMP       6            ; PC := 6
+ 11 [-]: RETURN    R0 1         ; return 
+
+
+; Function #6:
+;
+; Name:            
+; Defined at line: 863
+; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #5.1)
+  2 [-]: CLOSURE   R1 0         ; R1 := closure(Function #6.1)
   3 [-]: SETTABLE  R0 K1 R1     ; R0["ShowWeaponPanel"] := R1
   4 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  5 [-]: CLOSURE   R1 1         ; R1 := closure(Function #5.2)
+  5 [-]: CLOSURE   R1 1         ; R1 := closure(Function #6.2)
   6 [-]: SETTABLE  R0 K2 R1     ; R0["HideWeaponPanel"] := R1
   7 [-]: GETGLOBAL R0 K0        ; R0 := _T
-  8 [-]: CLOSURE   R1 2         ; R1 := closure(Function #5.3)
+  8 [-]: CLOSURE   R1 2         ; R1 := closure(Function #6.3)
   9 [-]: SETTABLE  R0 K3 R1     ; R0["ShowAbilityPanel"] := R1
  10 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 11 [-]: CLOSURE   R1 3         ; R1 := closure(Function #5.4)
+ 11 [-]: CLOSURE   R1 3         ; R1 := closure(Function #6.4)
  12 [-]: SETTABLE  R0 K4 R1     ; R0["HideAbilityPanel"] := R1
  13 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 14 [-]: CLOSURE   R1 4         ; R1 := closure(Function #5.5)
+ 14 [-]: CLOSURE   R1 4         ; R1 := closure(Function #6.5)
  15 [-]: SETTABLE  R0 K5 R1     ; R0["SetAbilityTimer"] := R1
  16 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 17 [-]: CLOSURE   R1 5         ; R1 := closure(Function #5.6)
+ 17 [-]: CLOSURE   R1 5         ; R1 := closure(Function #6.6)
  18 [-]: SETTABLE  R0 K6 R1     ; R0["AddAbilityTimer"] := R1
  19 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 20 [-]: CLOSURE   R1 6         ; R1 := closure(Function #5.7)
+ 20 [-]: CLOSURE   R1 6         ; R1 := closure(Function #6.7)
  21 [-]: SETTABLE  R0 K7 R1     ; R0["SetFocusTimer"] := R1
  22 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 23 [-]: CLOSURE   R1 7         ; R1 := closure(Function #5.8)
+ 23 [-]: CLOSURE   R1 7         ; R1 := closure(Function #6.8)
  24 [-]: SETTABLE  R0 K8 R1     ; R0["AddLogMessage"] := R1
  25 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 26 [-]: CLOSURE   R1 8         ; R1 := closure(Function #5.9)
+ 26 [-]: CLOSURE   R1 8         ; R1 := closure(Function #6.9)
  27 [-]: SETTABLE  R0 K9 R1     ; R0["AddPvpKillMessage"] := R1
  28 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 29 [-]: CLOSURE   R1 9         ; R1 := closure(Function #5.10)
+ 29 [-]: CLOSURE   R1 9         ; R1 := closure(Function #6.10)
  30 [-]: SETTABLE  R0 K10 R1    ; R0["ShowImpactMessage"] := R1
  31 [-]: GETGLOBAL R0 K0        ; R0 := _T
- 32 [-]: CLOSURE   R1 10        ; R1 := closure(Function #5.11)
+ 32 [-]: CLOSURE   R1 10        ; R1 := closure(Function #6.11)
  33 [-]: SETTABLE  R0 K11 R1    ; R0["HideImpactMessage"] := R1
  34 [-]: GETGLOBAL R0 K0        ; R0 := _T
  35 [-]: GETUPVAL  R1 U0        ; R1 := U0
@@ -1867,61 +2789,64 @@ code size: 1
  37 [-]: GETGLOBAL R0 K0        ; R0 := _T
  38 [-]: GETUPVAL  R1 U1        ; R1 := U1
  39 [-]: SETTABLE  R0 K13 R1    ; R0["RemoveHudTracker"] := R1
- 40 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 41 [-]: GETTABLE  R0 R0 K14    ; R0 := R0["TypeInfo"]
- 42 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 43 [-]: NEWTABLE  R2 0 1       ; R2 := {}
- 44 [-]: SETTABLE  R2 K15 K16   ; R2["Name"] := "ProgressBar"
- 45 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
- 46 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 47 [-]: GETTABLE  R0 R0 K14    ; R0 := R0["TypeInfo"]
- 48 [-]: GETUPVAL  R1 U4        ; R1 := U4
- 49 [-]: NEWTABLE  R2 0 1       ; R2 := {}
- 50 [-]: SETTABLE  R2 K15 K17   ; R2["Name"] := "Timer"
- 51 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
- 52 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 53 [-]: GETTABLE  R0 R0 K14    ; R0 := R0["TypeInfo"]
- 54 [-]: GETUPVAL  R1 U5        ; R1 := U5
- 55 [-]: NEWTABLE  R2 0 1       ; R2 := {}
- 56 [-]: SETTABLE  R2 K15 K18   ; R2["Name"] := "HealthTracker"
- 57 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
- 58 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 59 [-]: GETTABLE  R0 R0 K14    ; R0 := R0["TypeInfo"]
- 60 [-]: GETUPVAL  R1 U6        ; R1 := U6
- 61 [-]: NEWTABLE  R2 0 1       ; R2 := {}
- 62 [-]: SETTABLE  R2 K15 K19   ; R2["Name"] := "OpponentBar"
- 63 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
- 64 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 65 [-]: GETTABLE  R0 R0 K14    ; R0 := R0["TypeInfo"]
- 66 [-]: GETUPVAL  R1 U7        ; R1 := U7
- 67 [-]: NEWTABLE  R2 0 1       ; R2 := {}
- 68 [-]: SETTABLE  R2 K15 K20   ; R2["Name"] := "Label"
- 69 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
- 70 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 71 [-]: GETTABLE  R0 R0 K14    ; R0 := R0["TypeInfo"]
- 72 [-]: GETUPVAL  R1 U8        ; R1 := U8
- 73 [-]: NEWTABLE  R2 0 1       ; R2 := {}
- 74 [-]: SETTABLE  R2 K15 K21   ; R2["Name"] := "IconBar"
- 75 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
- 76 [-]: GETGLOBAL R0 K22       ; R0 := 0x329BDC44
- 77 [-]: LOADK     R1 K23       ; R1 := "Lotus.Interface.Libs.TimerMgr"
- 78 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 79 [-]: GETTABLE  R1 R0 K24    ; R1 := R0["0xC2A7FAC0"]
- 80 [-]: CALL      R1 1 2       ; R1 := R1()
- 81 [-]: MOVE      R1 R9        ; R1 := R9
- 82 [-]: GETUPVAL  R1 U10       ; R1 := U10
- 83 [-]: GETGLOBAL R2 K0        ; R2 := _T
- 84 [-]: CALL      R1 2 1       ; R1(R2)
- 85 [-]: GETUPVAL  R1 U10       ; R1 := U10
- 86 [-]: GETGLOBAL R2 K25       ; R2 := _G
+ 40 [-]: GETGLOBAL R0 K0        ; R0 := _T
+ 41 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 42 [-]: SETTABLE  R0 K14 R1    ; R0["UpdateTrackers"] := R1
+ 43 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 44 [-]: GETTABLE  R0 R0 K15    ; R0 := R0["TypeInfo"]
+ 45 [-]: GETUPVAL  R1 U4        ; R1 := U4
+ 46 [-]: NEWTABLE  R2 0 1       ; R2 := {}
+ 47 [-]: SETTABLE  R2 K16 K17   ; R2["Name"] := "ProgressBar"
+ 48 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 49 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 50 [-]: GETTABLE  R0 R0 K15    ; R0 := R0["TypeInfo"]
+ 51 [-]: GETUPVAL  R1 U5        ; R1 := U5
+ 52 [-]: NEWTABLE  R2 0 1       ; R2 := {}
+ 53 [-]: SETTABLE  R2 K16 K18   ; R2["Name"] := "Timer"
+ 54 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 55 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 56 [-]: GETTABLE  R0 R0 K15    ; R0 := R0["TypeInfo"]
+ 57 [-]: GETUPVAL  R1 U6        ; R1 := U6
+ 58 [-]: NEWTABLE  R2 0 1       ; R2 := {}
+ 59 [-]: SETTABLE  R2 K16 K19   ; R2["Name"] := "HealthTracker"
+ 60 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 61 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 62 [-]: GETTABLE  R0 R0 K15    ; R0 := R0["TypeInfo"]
+ 63 [-]: GETUPVAL  R1 U7        ; R1 := U7
+ 64 [-]: NEWTABLE  R2 0 1       ; R2 := {}
+ 65 [-]: SETTABLE  R2 K16 K20   ; R2["Name"] := "OpponentBar"
+ 66 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 67 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 68 [-]: GETTABLE  R0 R0 K15    ; R0 := R0["TypeInfo"]
+ 69 [-]: GETUPVAL  R1 U8        ; R1 := U8
+ 70 [-]: NEWTABLE  R2 0 1       ; R2 := {}
+ 71 [-]: SETTABLE  R2 K16 K21   ; R2["Name"] := "Label"
+ 72 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 73 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 74 [-]: GETTABLE  R0 R0 K15    ; R0 := R0["TypeInfo"]
+ 75 [-]: GETUPVAL  R1 U9        ; R1 := U9
+ 76 [-]: NEWTABLE  R2 0 1       ; R2 := {}
+ 77 [-]: SETTABLE  R2 K16 K22   ; R2["Name"] := "IconBar"
+ 78 [-]: SETTABLE  R0 R1 R2     ; R0[R1] := R2
+ 79 [-]: GETGLOBAL R0 K23       ; R0 := 0x329BDC44
+ 80 [-]: LOADK     R1 K24       ; R1 := "Lotus.Interface.Libs.TimerMgr"
+ 81 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 82 [-]: GETTABLE  R1 R0 K25    ; R1 := R0["0xC2A7FAC0"]
+ 83 [-]: CALL      R1 1 2       ; R1 := R1()
+ 84 [-]: MOVE      R1 R10       ; R1 := R10
+ 85 [-]: GETUPVAL  R1 U11       ; R1 := U11
+ 86 [-]: GETGLOBAL R2 K0        ; R2 := _T
  87 [-]: CALL      R1 2 1       ; R1(R2)
- 88 [-]: RETURN    R0 1         ; return 
+ 88 [-]: GETUPVAL  R1 U11       ; R1 := U11
+ 89 [-]: GETGLOBAL R2 K26       ; R2 := _G
+ 90 [-]: CALL      R1 2 1       ; R1(R2)
+ 91 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.1:
+; Function #6.1:
 ;
 ; Name:            
-; Defined at line: 565
+; Defined at line: 864
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -1930,10 +2855,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.2:
+; Function #6.2:
 ;
 ; Name:            
-; Defined at line: 566
+; Defined at line: 865
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -1942,10 +2867,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.3:
+; Function #6.3:
 ;
 ; Name:            
-; Defined at line: 567
+; Defined at line: 866
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -1954,10 +2879,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.4:
+; Function #6.4:
 ;
 ; Name:            
-; Defined at line: 568
+; Defined at line: 867
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -1966,10 +2891,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.5:
+; Function #6.5:
 ;
 ; Name:            
-; Defined at line: 570
+; Defined at line: 869
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -1978,10 +2903,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.6:
+; Function #6.6:
 ;
 ; Name:            
-; Defined at line: 571
+; Defined at line: 870
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -1990,10 +2915,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.7:
+; Function #6.7:
 ;
 ; Name:            
-; Defined at line: 572
+; Defined at line: 871
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -2002,10 +2927,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.8:
+; Function #6.8:
 ;
 ; Name:            
-; Defined at line: 574
+; Defined at line: 873
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -2014,10 +2939,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.9:
+; Function #6.9:
 ;
 ; Name:            
-; Defined at line: 575
+; Defined at line: 874
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -2026,10 +2951,10 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.10:
+; Function #6.10:
 ;
 ; Name:            
-; Defined at line: 577
+; Defined at line: 876
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
@@ -2038,15 +2963,35 @@ code size: 1
   1 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5.11:
+; Function #6.11:
 ;
 ; Name:            
-; Defined at line: 578
+; Defined at line: 877
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       7
 ; Max Stack Size:  2
 
   1 [-]: RETURN    R0 1         ; return 
+
+
+; Function #7:
+;
+; Name:            
+; Defined at line: 897
+; #Upvalues:       0
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := _T
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["UpdateTrackers"]
+  3 [-]: TEST      R2 0         ; if not R2 then PC := 9
+  4 [-]: JMP       9            ; PC := 9
+  5 [-]: GETGLOBAL R2 K0        ; R2 := _T
+  6 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["0x1D8A398F"]
+  7 [-]: MOVE      R3 R1        ; R3 := R1
+  8 [-]: CALL      R2 2 1       ; R2(R3)
+  9 [-]: RETURN    R0 1         ; return 
 
 

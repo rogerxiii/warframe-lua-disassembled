@@ -481,7 +481,7 @@ code size: 1
 192 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 193 [-]: GETGLOBAL R9 K43       ; R9 := Game
 194 [-]: GETTABLE  R9 R9 K44    ; R9 := R9["GAMEPLAY_FACTION_DAMAGE_RESISTANCE"]
-195 [-]: GETGLOBAL R10 K43      ; R10 := Game
+195 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 196 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["MULTIPLY"]
 197 [-]: LOADK     R11 K46      ; R11 := 0.15000000596046
 198 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
@@ -494,7 +494,7 @@ code size: 1
 205 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 206 [-]: GETGLOBAL R9 K43       ; R9 := Game
 207 [-]: GETTABLE  R9 R9 K49    ; R9 := R9["GAMEPLAY_FACTION_DAMAGE"]
-208 [-]: GETGLOBAL R10 K43      ; R10 := Game
+208 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 209 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["MULTIPLY"]
 210 [-]: LOADK     R11 K50      ; R11 := 10
 211 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
@@ -507,7 +507,7 @@ code size: 1
 218 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 219 [-]: GETGLOBAL R9 K43       ; R9 := Game
 220 [-]: GETTABLE  R9 R9 K49    ; R9 := R9["GAMEPLAY_FACTION_DAMAGE"]
-221 [-]: GETGLOBAL R10 K43      ; R10 := Game
+221 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 222 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["MULTIPLY"]
 223 [-]: LOADK     R11 K51      ; R11 := 0.0049999998882413
 224 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
@@ -521,7 +521,7 @@ code size: 1
 232 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 233 [-]: GETGLOBAL R9 K43       ; R9 := Game
 234 [-]: GETTABLE  R9 R9 K53    ; R9 := R9["GAMEPLAY_KILL_XP_AMOUNT"]
-235 [-]: GETGLOBAL R10 K43      ; R10 := Game
+235 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 236 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["MULTIPLY"]
 237 [-]: LOADK     R11 K5       ; R11 := 0
 238 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
@@ -534,21 +534,21 @@ code size: 1
 245 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 246 [-]: GETGLOBAL R9 K43       ; R9 := Game
 247 [-]: GETTABLE  R9 R9 K54    ; R9 := R9["AVATAR_HEALTH_MAX"]
-248 [-]: GETGLOBAL R10 K43      ; R10 := Game
+248 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 249 [-]: GETTABLE  R10 R10 K55  ; R10 := R10["ADD"]
 250 [-]: LOADK     R11 K56      ; R11 := 3000
 251 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
 252 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 253 [-]: GETGLOBAL R9 K43       ; R9 := Game
 254 [-]: GETTABLE  R9 R9 K57    ; R9 := R9["AVATAR_SHIELD_MAX"]
-255 [-]: GETGLOBAL R10 K43      ; R10 := Game
+255 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 256 [-]: GETTABLE  R10 R10 K55  ; R10 := R10["ADD"]
 257 [-]: LOADK     R11 K58      ; R11 := 1500
 258 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
 259 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 260 [-]: GETGLOBAL R9 K43       ; R9 := Game
 261 [-]: GETTABLE  R9 R9 K59    ; R9 := R9["AVATAR_POWER_MAX"]
-262 [-]: GETGLOBAL R10 K43      ; R10 := Game
+262 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 263 [-]: GETTABLE  R10 R10 K55  ; R10 := R10["ADD"]
 264 [-]: LOADK     R11 K60      ; R11 := 1000
 265 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
@@ -561,14 +561,14 @@ code size: 1
 272 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 273 [-]: GETGLOBAL R9 K43       ; R9 := Game
 274 [-]: GETTABLE  R9 R9 K61    ; R9 := R9["AVATAR_ARMOUR"]
-275 [-]: GETGLOBAL R10 K43      ; R10 := Game
+275 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 276 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["MULTIPLY"]
 277 [-]: LOADK     R11 K62      ; R11 := 2
 278 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
 279 [-]: SELF      R7 R5 K42    ; R8 := R5; R7 := R5["0x3B1B11B9"]
 280 [-]: GETGLOBAL R9 K43       ; R9 := Game
 281 [-]: GETTABLE  R9 R9 K63    ; R9 := R9["AVATAR_PARKOUR_BOOST"]
-282 [-]: GETGLOBAL R10 K43      ; R10 := Game
+282 [-]: GETGLOBAL R10 K34      ; R10 := Engine
 283 [-]: GETTABLE  R10 R10 K64  ; R10 := R10["STACKING_MULTIPLY"]
 284 [-]: LOADK     R11 K5       ; R11 := 0
 285 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
@@ -954,7 +954,7 @@ code size: 1
 665 [-]: SELF      R19 R5 K148  ; R20 := R5; R19 := R5["0xF21555A7"]
 666 [-]: GETGLOBAL R21 K43      ; R21 := Game
 667 [-]: GETTABLE  R21 R21 K63  ; R21 := R21["AVATAR_PARKOUR_BOOST"]
-668 [-]: GETGLOBAL R22 K43      ; R22 := Game
+668 [-]: GETGLOBAL R22 K34      ; R22 := Engine
 669 [-]: GETTABLE  R22 R22 K64  ; R22 := R22["STACKING_MULTIPLY"]
 670 [-]: LOADK     R23 K5       ; R23 := 0
 671 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)

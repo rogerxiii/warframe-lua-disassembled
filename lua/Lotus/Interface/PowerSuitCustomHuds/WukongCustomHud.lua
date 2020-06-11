@@ -2252,7 +2252,7 @@ code size: 8
 144 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
 145 [-]: GETGLOBAL R3 K10       ; R3 := mMovie
 146 [-]: SELF      R3 R3 K40    ; R4 := R3; R3 := R3["0x5DB0BD4"]
-147 [-]: LOADK     R5 K41       ; R5 := "/Game/AVATAR_ARMOUR"
+147 [-]: LOADK     R5 K41       ; R5 := "/Lotus/Language/Labels/AVATAR_ARMOUR"
 148 [-]: MOVE      R6 R0        ; R6 := R0
 149 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
 150 [-]: MOVE      R3 R14       ; R3 := R14

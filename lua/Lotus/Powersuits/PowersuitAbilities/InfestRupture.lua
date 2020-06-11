@@ -537,7 +537,7 @@ code size: 42
  66 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  67 [-]: MOVE      R8 R0        ; R8 := R0
  68 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 69 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/WEAPON_CRIT_CHANCE"
+ 69 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_CRIT_CHANCE"
  70 [-]: GETGLOBAL R10 K23      ; R10 := math
  71 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
  72 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -2594,7 +2594,7 @@ code size: 42
  33 [-]: SELF      R8 R5 K13    ; R9 := R5; R8 := R5["0x3B1B11B9"]
  34 [-]: GETGLOBAL R10 K14      ; R10 := Game
  35 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["WEAPON_CRIT_CHANCE"]
- 36 [-]: GETGLOBAL R11 K14      ; R11 := Game
+ 36 [-]: GETGLOBAL R11 K7       ; R11 := Engine
  37 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["STACKING_MULTIPLY"]
  38 [-]: MOVE      R12 R3       ; R12 := R3
  39 [-]: MOVE      R13 R7       ; R13 := R7
@@ -2655,7 +2655,7 @@ code size: 42
  94 [-]: SELF      R9 R5 K37    ; R10 := R5; R9 := R5["0xF21555A7"]
  95 [-]: GETGLOBAL R11 K14      ; R11 := Game
  96 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["WEAPON_CRIT_CHANCE"]
- 97 [-]: GETGLOBAL R12 K14      ; R12 := Game
+ 97 [-]: GETGLOBAL R12 K7       ; R12 := Engine
  98 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["STACKING_MULTIPLY"]
  99 [-]: MOVE      R13 R3       ; R13 := R3
 100 [-]: MOVE      R14 R7       ; R14 := R7
@@ -2666,7 +2666,7 @@ code size: 42
 105 [-]: SELF      R9 R5 K13    ; R10 := R5; R9 := R5["0x3B1B11B9"]
 106 [-]: GETGLOBAL R11 K14      ; R11 := Game
 107 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["WEAPON_CRIT_CHANCE"]
-108 [-]: GETGLOBAL R12 K14      ; R12 := Game
+108 [-]: GETGLOBAL R12 K7       ; R12 := Engine
 109 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["STACKING_MULTIPLY"]
 110 [-]: MOVE      R13 R3       ; R13 := R3
 111 [-]: MOVE      R14 R7       ; R14 := R7
@@ -2693,7 +2693,7 @@ code size: 42
 132 [-]: SELF      R9 R5 K37    ; R10 := R5; R9 := R5["0xF21555A7"]
 133 [-]: GETGLOBAL R11 K14      ; R11 := Game
 134 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["WEAPON_CRIT_CHANCE"]
-135 [-]: GETGLOBAL R12 K14      ; R12 := Game
+135 [-]: GETGLOBAL R12 K7       ; R12 := Engine
 136 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["STACKING_MULTIPLY"]
 137 [-]: MOVE      R13 R3       ; R13 := R3
 138 [-]: MOVE      R14 R7       ; R14 := R7

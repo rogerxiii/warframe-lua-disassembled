@@ -1,4 +1,4 @@
-code size: 161
+code size: 165
 code size: 19
 code size: 46
 code size: 14
@@ -14,6 +14,7 @@ code size: 104
 code size: 20
 code size: 537
 code size: 177
+code size: 20
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Modes\ArchWingMissionScript.luac 
 
@@ -184,7 +185,11 @@ code size: 177
 158 [-]: MOVE      R0 R5        ; R0 := R5
 159 [-]: SETGLOBAL R34 K43      ; ColorEffectsOnHeart := R34
 160 [-]: SETGLOBAL R34 K44      ; 0x9EA66117 := R34
-161 [-]: RETURN    R0 1         ; return 
+161 [-]: CLOSURE   R34 15       ; R34 := closure(Function #16)
+162 [-]: MOVE      R0 R15       ; R0 := R15
+163 [-]: SETGLOBAL R34 K45      ; AWQuestMissionSetup := R34
+164 [-]: SETGLOBAL R34 K46      ; 0x55819347 := R34
+165 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -2327,5 +2332,36 @@ code size: 177
 175 [-]: CALL      R22 2 1      ; R22(R23)
 176 [-]: JMP       140          ; PC := 140
 177 [-]: RETURN    R0 1         ; return 
+
+
+; Function #16:
+;
+; Name:            
+; Defined at line: 834
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  4
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := gRegion
+  2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x90391273"]
+  3 [-]: GETGLOBAL R2 K2        ; R2 := 0xEC274B1A
+  4 [-]: LOADK     R3 K3        ; R3 := "AWTransitionObjectiveMarker"
+  5 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
+  6 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
+  7 [-]: SELF      R1 R0 K4     ; R2 := R0; R1 := R0["0x8D5886B7"]
+  8 [-]: LOADK     R3 K5        ; R3 := "Enable"
+  9 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 10 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
+ 11 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0xD1CEF990"]
+ 12 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 13 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1["0x20092973"]
+ 14 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 15 [-]: MOVE      R1 R0        ; R1 := R0
+ 16 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 17 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0xC9FD3D56"]
+ 18 [-]: MOVE      R3 R0        ; R3 := R0
+ 19 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 20 [-]: RETURN    R0 1         ; return 
 
 

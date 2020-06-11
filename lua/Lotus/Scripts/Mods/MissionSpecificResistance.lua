@@ -109,8 +109,8 @@ code size: 90
  82 [-]: SELF      R18 R18 K24  ; R19 := R18; R18 := R18["0x3B1B11B9"]
  83 [-]: GETGLOBAL R20 K13      ; R20 := Game
  84 [-]: GETTABLE  R20 R20 K14  ; R20 := R20["AVATAR_SHIELD_MAX"]
- 85 [-]: GETGLOBAL R21 K13      ; R21 := Game
- 86 [-]: GETTABLE  R21 R21 K25  ; R21 := R21["MULTIPLY"]
+ 85 [-]: GETGLOBAL R21 K25      ; R21 := Engine
+ 86 [-]: GETTABLE  R21 R21 K26  ; R21 := R21["MULTIPLY"]
  87 [-]: MOVE      R22 R17      ; R22 := R17
  88 [-]: CALL      R18 5 1      ; R18(R19,R20,R21,R22)
  89 [-]: FORLOOP   R10 61       ; R10 += R12; if R10 <= R11 then begin PC := 61; R13 := R10 end

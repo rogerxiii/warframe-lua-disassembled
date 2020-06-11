@@ -578,7 +578,7 @@ code size: 51
 196 [-]: SELF      R17 R10 K49  ; R18 := R10; R17 := R10["0xF21555A7"]
 197 [-]: GETGLOBAL R19 K50      ; R19 := Game
 198 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-199 [-]: GETGLOBAL R20 K50      ; R20 := Game
+199 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 200 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 201 [-]: GETUPVAL  R21 U1       ; R21 := U1
 202 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
@@ -588,7 +588,7 @@ code size: 51
 206 [-]: SELF      R17 R10 K49  ; R18 := R10; R17 := R10["0xF21555A7"]
 207 [-]: GETGLOBAL R19 K50      ; R19 := Game
 208 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-209 [-]: GETGLOBAL R20 K50      ; R20 := Game
+209 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 210 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 211 [-]: LOADK     R21 K53      ; R21 := 180
 212 [-]: GETGLOBAL R22 K54      ; R22 := gLotusMeleeWeaponType
@@ -596,7 +596,7 @@ code size: 51
 214 [-]: SELF      R17 R10 K49  ; R18 := R10; R17 := R10["0xF21555A7"]
 215 [-]: GETGLOBAL R19 K50      ; R19 := Game
 216 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-217 [-]: GETGLOBAL R20 K50      ; R20 := Game
+217 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 218 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 219 [-]: LOADK     R21 K53      ; R21 := 180
 220 [-]: GETUPVAL  R22 U9       ; R22 := U9
@@ -607,7 +607,7 @@ code size: 51
 225 [-]: SELF      R17 R10 K55  ; R18 := R10; R17 := R10["0x511BEDB7"]
 226 [-]: GETGLOBAL R19 K50      ; R19 := Game
 227 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-228 [-]: GETGLOBAL R20 K50      ; R20 := Game
+228 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 229 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 230 [-]: GETUPVAL  R21 U1       ; R21 := U1
 231 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
@@ -617,7 +617,7 @@ code size: 51
 235 [-]: SELF      R17 R10 K55  ; R18 := R10; R17 := R10["0x511BEDB7"]
 236 [-]: GETGLOBAL R19 K50      ; R19 := Game
 237 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-238 [-]: GETGLOBAL R20 K50      ; R20 := Game
+238 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 239 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 240 [-]: LOADK     R21 K53      ; R21 := 180
 241 [-]: GETGLOBAL R22 K54      ; R22 := gLotusMeleeWeaponType
@@ -625,7 +625,7 @@ code size: 51
 243 [-]: SELF      R17 R10 K55  ; R18 := R10; R17 := R10["0x511BEDB7"]
 244 [-]: GETGLOBAL R19 K50      ; R19 := Game
 245 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-246 [-]: GETGLOBAL R20 K50      ; R20 := Game
+246 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 247 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 248 [-]: LOADK     R21 K53      ; R21 := 180
 249 [-]: GETUPVAL  R22 U9       ; R22 := U9
@@ -645,7 +645,7 @@ code size: 51
 263 [-]: SELF      R17 R10 K57  ; R18 := R10; R17 := R10["0x3B1B11B9"]
 264 [-]: GETGLOBAL R19 K50      ; R19 := Game
 265 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-266 [-]: GETGLOBAL R20 K50      ; R20 := Game
+266 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 267 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 268 [-]: GETUPVAL  R21 U1       ; R21 := U1
 269 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
@@ -655,7 +655,7 @@ code size: 51
 273 [-]: SELF      R17 R10 K57  ; R18 := R10; R17 := R10["0x3B1B11B9"]
 274 [-]: GETGLOBAL R19 K50      ; R19 := Game
 275 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-276 [-]: GETGLOBAL R20 K50      ; R20 := Game
+276 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 277 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 278 [-]: LOADK     R21 K53      ; R21 := 180
 279 [-]: GETGLOBAL R22 K54      ; R22 := gLotusMeleeWeaponType
@@ -663,7 +663,7 @@ code size: 51
 281 [-]: SELF      R17 R10 K57  ; R18 := R10; R17 := R10["0x3B1B11B9"]
 282 [-]: GETGLOBAL R19 K50      ; R19 := Game
 283 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-284 [-]: GETGLOBAL R20 K50      ; R20 := Game
+284 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 285 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 286 [-]: LOADK     R21 K53      ; R21 := 180
 287 [-]: GETUPVAL  R22 U9       ; R22 := U9
@@ -674,7 +674,7 @@ code size: 51
 292 [-]: SELF      R17 R10 K58  ; R18 := R10; R17 := R10["0x257BDF58"]
 293 [-]: GETGLOBAL R19 K50      ; R19 := Game
 294 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-295 [-]: GETGLOBAL R20 K50      ; R20 := Game
+295 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 296 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 297 [-]: GETUPVAL  R21 U1       ; R21 := U1
 298 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
@@ -684,7 +684,7 @@ code size: 51
 302 [-]: SELF      R17 R10 K58  ; R18 := R10; R17 := R10["0x257BDF58"]
 303 [-]: GETGLOBAL R19 K50      ; R19 := Game
 304 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-305 [-]: GETGLOBAL R20 K50      ; R20 := Game
+305 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 306 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 307 [-]: LOADK     R21 K53      ; R21 := 180
 308 [-]: GETGLOBAL R22 K54      ; R22 := gLotusMeleeWeaponType
@@ -692,7 +692,7 @@ code size: 51
 310 [-]: SELF      R17 R10 K58  ; R18 := R10; R17 := R10["0x257BDF58"]
 311 [-]: GETGLOBAL R19 K50      ; R19 := Game
 312 [-]: GETTABLE  R19 R19 K51  ; R19 := R19["AVATAR_BULLET_DODGE_ANGLE"]
-313 [-]: GETGLOBAL R20 K50      ; R20 := Game
+313 [-]: GETGLOBAL R20 K15      ; R20 := Engine
 314 [-]: GETTABLE  R20 R20 K52  ; R20 := R20["SET"]
 315 [-]: LOADK     R21 K53      ; R21 := 180
 316 [-]: GETUPVAL  R22 U9       ; R22 := U9
@@ -872,7 +872,7 @@ code size: 51
 113 [-]: SELF      R11 R10 K39  ; R12 := R10; R11 := R10["0xF21555A7"]
 114 [-]: GETGLOBAL R13 K40      ; R13 := Game
 115 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["AVATAR_BULLET_DODGE_ANGLE"]
-116 [-]: GETGLOBAL R14 K40      ; R14 := Game
+116 [-]: GETGLOBAL R14 K9       ; R14 := Engine
 117 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["SET"]
 118 [-]: GETUPVAL  R15 U3       ; R15 := U3
 119 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
@@ -882,7 +882,7 @@ code size: 51
 123 [-]: SELF      R11 R10 K39  ; R12 := R10; R11 := R10["0xF21555A7"]
 124 [-]: GETGLOBAL R13 K40      ; R13 := Game
 125 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["AVATAR_BULLET_DODGE_ANGLE"]
-126 [-]: GETGLOBAL R14 K40      ; R14 := Game
+126 [-]: GETGLOBAL R14 K9       ; R14 := Engine
 127 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["SET"]
 128 [-]: LOADK     R15 K43      ; R15 := 180
 129 [-]: GETGLOBAL R16 K44      ; R16 := gLotusMeleeWeaponType
@@ -890,7 +890,7 @@ code size: 51
 131 [-]: SELF      R11 R10 K39  ; R12 := R10; R11 := R10["0xF21555A7"]
 132 [-]: GETGLOBAL R13 K40      ; R13 := Game
 133 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["AVATAR_BULLET_DODGE_ANGLE"]
-134 [-]: GETGLOBAL R14 K40      ; R14 := Game
+134 [-]: GETGLOBAL R14 K9       ; R14 := Engine
 135 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["SET"]
 136 [-]: LOADK     R15 K43      ; R15 := 180
 137 [-]: GETUPVAL  R16 U4       ; R16 := U4
@@ -903,7 +903,7 @@ code size: 51
 144 [-]: SELF      R11 R10 K45  ; R12 := R10; R11 := R10["0x511BEDB7"]
 145 [-]: GETGLOBAL R13 K40      ; R13 := Game
 146 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["AVATAR_BULLET_DODGE_ANGLE"]
-147 [-]: GETGLOBAL R14 K40      ; R14 := Game
+147 [-]: GETGLOBAL R14 K9       ; R14 := Engine
 148 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["SET"]
 149 [-]: GETUPVAL  R15 U3       ; R15 := U3
 150 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
@@ -913,7 +913,7 @@ code size: 51
 154 [-]: SELF      R11 R10 K45  ; R12 := R10; R11 := R10["0x511BEDB7"]
 155 [-]: GETGLOBAL R13 K40      ; R13 := Game
 156 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["AVATAR_BULLET_DODGE_ANGLE"]
-157 [-]: GETGLOBAL R14 K40      ; R14 := Game
+157 [-]: GETGLOBAL R14 K9       ; R14 := Engine
 158 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["SET"]
 159 [-]: LOADK     R15 K43      ; R15 := 180
 160 [-]: GETGLOBAL R16 K44      ; R16 := gLotusMeleeWeaponType
@@ -921,7 +921,7 @@ code size: 51
 162 [-]: SELF      R11 R10 K45  ; R12 := R10; R11 := R10["0x511BEDB7"]
 163 [-]: GETGLOBAL R13 K40      ; R13 := Game
 164 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["AVATAR_BULLET_DODGE_ANGLE"]
-165 [-]: GETGLOBAL R14 K40      ; R14 := Game
+165 [-]: GETGLOBAL R14 K9       ; R14 := Engine
 166 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["SET"]
 167 [-]: LOADK     R15 K43      ; R15 := 180
 168 [-]: GETUPVAL  R16 U4       ; R16 := U4

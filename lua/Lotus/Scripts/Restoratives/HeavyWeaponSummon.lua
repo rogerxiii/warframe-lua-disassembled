@@ -540,18 +540,18 @@ code size: 31
  28 [-]: SELF      R4 R1 K12    ; R5 := R1; R4 := R1["0x3B1B11B9"]
  29 [-]: GETGLOBAL R6 K13       ; R6 := Game
  30 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["AVATAR_PARKOUR_GLIDE"]
- 31 [-]: GETGLOBAL R7 K13       ; R7 := Game
- 32 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["MULTIPLY"]
- 33 [-]: LOADK     R8 K16       ; R8 := 0.25
+ 31 [-]: GETGLOBAL R7 K15       ; R7 := Engine
+ 32 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
+ 33 [-]: LOADK     R8 K17       ; R8 := 0.25
  34 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  35 [-]: GETGLOBAL R4 K8        ; R4 := 0x400E7765
  36 [-]: MOVE      R5 R2        ; R5 := R2
  37 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  38 [-]: TEST      R4 1         ; if R4 then PC := 42
  39 [-]: JMP       42           ; PC := 42
- 40 [-]: SELF      R4 R2 K17    ; R5 := R2; R4 := R2["0x37BC478C"]
+ 40 [-]: SELF      R4 R2 K18    ; R5 := R2; R4 := R2["0x37BC478C"]
  41 [-]: CALL      R4 2 1       ; R4(R5)
- 42 [-]: SELF      R4 R0 K18    ; R5 := R0; R4 := R0["0xB8613F53"]
+ 42 [-]: SELF      R4 R0 K19    ; R5 := R0; R4 := R0["0xB8613F53"]
  43 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  44 [-]: TEST      R4 0         ; if not R4 then PC := 65
  45 [-]: JMP       65           ; PC := 65
@@ -560,18 +560,18 @@ code size: 31
  48 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  49 [-]: TEST      R4 1         ; if R4 then PC := 53
  50 [-]: JMP       53           ; PC := 53
- 51 [-]: SELF      R4 R2 K17    ; R5 := R2; R4 := R2["0x37BC478C"]
+ 51 [-]: SELF      R4 R2 K18    ; R5 := R2; R4 := R2["0x37BC478C"]
  52 [-]: CALL      R4 2 1       ; R4(R5)
  53 [-]: GETUPVAL  R4 U1        ; R4 := U1
  54 [-]: MOVE      R5 R0        ; R5 := R0
  55 [-]: CALL      R4 2 1       ; R4(R5)
- 56 [-]: SELF      R4 R0 K19    ; R5 := R0; R4 := R0["0xB26452A2"]
+ 56 [-]: SELF      R4 R0 K20    ; R5 := R0; R4 := R0["0xB26452A2"]
  57 [-]: GETGLOBAL R6 K3        ; R6 := 0xEC274B1A
- 58 [-]: LOADK     R7 K20       ; R7 := "ExecuteHeavyEquip"
+ 58 [-]: LOADK     R7 K21       ; R7 := "ExecuteHeavyEquip"
  59 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  60 [-]: MOVE      R7 R0        ; R7 := R0
  61 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 62 [-]: SELF      R4 R1 K21    ; R5 := R1; R4 := R1["0xB0A54053"]
+ 62 [-]: SELF      R4 R1 K22    ; R5 := R1; R4 := R1["0xB0A54053"]
  63 [-]: MOVE      R6 R0        ; R6 := R0
  64 [-]: CALL      R4 3 1       ; R4(R5,R6)
  65 [-]: GETUPVAL  R4 U2        ; R4 := U2
@@ -586,20 +586,20 @@ code size: 31
  74 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  75 [-]: TEST      R5 1         ; if R5 then PC := 82
  76 [-]: JMP       82           ; PC := 82
- 77 [-]: SELF      R5 R1 K22    ; R6 := R1; R5 := R1["0x8B598ED4"]
- 78 [-]: GETGLOBAL R7 K23       ; R7 := gLotusInventoryControllerType
+ 77 [-]: SELF      R5 R1 K23    ; R6 := R1; R5 := R1["0x8B598ED4"]
+ 78 [-]: GETGLOBAL R7 K24       ; R7 := gLotusInventoryControllerType
  79 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  80 [-]: TEST      R5 1         ; if R5 then PC := 89
  81 [-]: JMP       89           ; PC := 89
- 82 [-]: GETGLOBAL R5 K24       ; R5 := 0x12F3CEFA
+ 82 [-]: GETGLOBAL R5 K25       ; R5 := 0x12F3CEFA
  83 [-]: GETGLOBAL R6 K8        ; R6 := 0x400E7765
  84 [-]: MOVE      R7 R0        ; R7 := R0
  85 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  86 [-]: CALL      R5 0 1       ; R5(R6,...)
  87 [-]: RETURN    R0 1         ; return 
  88 [-]: JMP       105          ; PC := 105
- 89 [-]: SELF      R5 R1 K25    ; R6 := R1; R5 := R1["0x469E678A"]
- 90 [-]: GETGLOBAL R7 K26       ; R7 := Engine
+ 89 [-]: SELF      R5 R1 K26    ; R6 := R1; R5 := R1["0x469E678A"]
+ 90 [-]: GETGLOBAL R7 K15       ; R7 := Engine
  91 [-]: GETTABLE  R7 R7 K27    ; R7 := R7["MAIN_HAND"]
  92 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  93 [-]: SELF      R6 R1 K6     ; R7 := R1; R6 := R1["0x63D63C30"]
@@ -618,7 +618,7 @@ code size: 31
 106 [-]: LOADK     R8 K29       ; R8 := 0
 107 [-]: CALL      R7 2 1       ; R7(R8)
 108 [-]: JMP       70           ; PC := 70
-109 [-]: SELF      R7 R0 K19    ; R8 := R0; R7 := R0["0xB26452A2"]
+109 [-]: SELF      R7 R0 K20    ; R8 := R0; R7 := R0["0xB26452A2"]
 110 [-]: GETGLOBAL R9 K3        ; R9 := 0xEC274B1A
 111 [-]: LOADK     R10 K30      ; R10 := "Update"
 112 [-]: CALL      R9 2 2       ; R9 := R9(R10)
@@ -682,9 +682,9 @@ code size: 31
  44 [-]: SELF      R4 R2 K11    ; R5 := R2; R4 := R2["0xF21555A7"]
  45 [-]: GETGLOBAL R6 K12       ; R6 := Game
  46 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["AVATAR_PARKOUR_GLIDE"]
- 47 [-]: GETGLOBAL R7 K12       ; R7 := Game
- 48 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["MULTIPLY"]
- 49 [-]: LOADK     R8 K15       ; R8 := 0.25
+ 47 [-]: GETGLOBAL R7 K14       ; R7 := Engine
+ 48 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["MULTIPLY"]
+ 49 [-]: LOADK     R8 K16       ; R8 := 0.25
  50 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  51 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
  52 [-]: MOVE      R5 R3        ; R5 := R3

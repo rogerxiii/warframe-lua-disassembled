@@ -5,7 +5,7 @@ code size: 40
 code size: 26
 code size: 90
 code size: 51
-code size: 158
+code size: 176
 code size: 50
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Venus\AnimalEncounterManager.luac 
@@ -415,7 +415,7 @@ code size: 50
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  28
+; Max Stack Size:  30
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := numStartGameplayObjectsMax
   2 [-]: GETGLOBAL R1 K1        ; R1 := _T
@@ -452,7 +452,7 @@ code size: 50
  33 [-]: GETGLOBAL R3 K9        ; R3 := speciesStartGameplayObjectTypes
  34 [-]: LEN       R3 R3        ; R3 := # R3
  35 [-]: LOADK     R4 K7        ; R4 := 1
- 36 [-]: FORPREP   R2 157       ; R2 -= R4; PC := 157
+ 36 [-]: FORPREP   R2 175       ; R2 -= R4; PC := 175
  37 [-]: GETGLOBAL R6 K9        ; R6 := speciesStartGameplayObjectTypes
  38 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
  39 [-]: GETUPVAL  R7 U1        ; R7 := U1
@@ -466,20 +466,20 @@ code size: 50
  47 [-]: JMP       50           ; PC := 50
  48 [-]: EQ        1 R8 K7      ; if R8 == 1 then PC := 54
  49 [-]: JMP       54           ; PC := 54
- 50 [-]: EQ        0 R1 K13     ; if R1 ~= "0x0" then PC := 154
- 51 [-]: JMP       154          ; PC := 154
- 52 [-]: EQ        0 R8 K4      ; if R8 ~= 0 then PC := 154
- 53 [-]: JMP       154          ; PC := 154
+ 50 [-]: EQ        0 R1 K13     ; if R1 ~= "0x0" then PC := 172
+ 51 [-]: JMP       172          ; PC := 172
+ 52 [-]: EQ        0 R8 K4      ; if R8 ~= 0 then PC := 172
+ 53 [-]: JMP       172          ; PC := 172
  54 [-]: LOADK     R9 K7        ; R9 := 1
  55 [-]: MOVE      R10 R7       ; R10 := R7
  56 [-]: LOADK     R11 K7       ; R11 := 1
- 57 [-]: FORPREP   R9 153       ; R9 -= R11; PC := 153
+ 57 [-]: FORPREP   R9 171       ; R9 -= R11; PC := 171
  58 [-]: LOADNIL   R13 R13      ; R13 := nil
  59 [-]: GETUPVAL  R14 U2       ; R14 := U2
  60 [-]: MOVE      R15 R5       ; R15 := R5
  61 [-]: CALL      R14 2 3      ; R14,R15 := R14(R15)
- 62 [-]: TEST      R14 0        ; if not R14 then PC := 150
- 63 [-]: JMP       150          ; PC := 150
+ 62 [-]: TEST      R14 0        ; if not R14 then PC := 168
+ 63 [-]: JMP       168          ; PC := 168
  64 [-]: GETUPVAL  R16 U3       ; R16 := U3
  65 [-]: GETTABLE  R16 R16 K14  ; R16 := R16["0x8B699B76"]
  66 [-]: LOADK     R17 K15      ; R17 := 4
@@ -488,8 +488,8 @@ code size: 50
  69 [-]: CALL      R18 2 0      ; R18,... := R18(R19)
  70 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
  71 [-]: LEN       R17 R16      ; R17 := # R16
- 72 [-]: LT        0 K4 R17     ; if 0 >= R17 then PC := 150
- 73 [-]: JMP       150          ; PC := 150
+ 72 [-]: LT        0 K4 R17     ; if 0 >= R17 then PC := 168
+ 73 [-]: JMP       168          ; PC := 168
  74 [-]: GETGLOBAL R18 K16      ; R18 := math
  75 [-]: GETTABLE  R18 R18 K17  ; R18 := R18["0x865961F7"]
  76 [-]: LOADK     R19 K7       ; R19 := 1
@@ -505,8 +505,8 @@ code size: 50
  86 [-]: LOADK     R23 K21      ; R23 := 25
  87 [-]: LOADK     R24 K7       ; R24 := 1
  88 [-]: CALL      R18 7 3      ; R18,R19 := R18(R19,R20,R21,R22,R23,R24)
- 89 [-]: TEST      R18 0        ; if not R18 then PC := 150
- 90 [-]: JMP       150          ; PC := 150
+ 89 [-]: TEST      R18 0        ; if not R18 then PC := 168
+ 90 [-]: JMP       168          ; PC := 168
  91 [-]: GETGLOBAL R20 K22      ; R20 := gRegion
  92 [-]: SELF      R20 R20 K23  ; R21 := R20; R20 := R20["0xBDD34CC6"]
  93 [-]: MOVE      R22 R6       ; R22 := R6
@@ -516,8 +516,8 @@ code size: 50
  97 [-]: GETGLOBAL R21 K5       ; R21 := 0x400E7765
  98 [-]: MOVE      R22 R20      ; R22 := R20
  99 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-100 [-]: TEST      R21 1        ; if R21 then PC := 150
-101 [-]: JMP       150          ; PC := 150
+100 [-]: TEST      R21 1        ; if R21 then PC := 168
+101 [-]: JMP       168          ; PC := 168
 102 [-]: GETGLOBAL R21 K24      ; R21 := 0x94BCBD40
 103 [-]: MOVE      R22 R20      ; R22 := R20
 104 [-]: LOADK     R23 K25      ; R23 := "OnDestroyed"
@@ -528,59 +528,77 @@ code size: 50
 109 [-]: SELF      R21 R20 K27  ; R22 := R20; R21 := R20["0xC61B54A7"]
 110 [-]: MOVE      R23 R15      ; R23 := R15
 111 [-]: CALL      R21 3 1      ; R21(R22,R23)
-112 [-]: GETUPVAL  R21 U6       ; R21 := U6
-113 [-]: SELF      R21 R21 K28  ; R22 := R21; R21 := R21["0x9F0929B6"]
-114 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-115 [-]: GETUPVAL  R22 U7       ; R22 := U7
-116 [-]: SELF      R23 R14 K29  ; R24 := R14; R23 := R14["0xDBEF0FB6"]
-117 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-118 [-]: GETGLOBAL R24 K16      ; R24 := math
-119 [-]: GETTABLE  R24 R24 K17  ; R24 := R24["0x865961F7"]
-120 [-]: GETGLOBAL R25 K30      ; R25 := geoHintCooldownTimeMin
-121 [-]: GETGLOBAL R26 K31      ; R26 := geoHintCooldownTimeMax
-122 [-]: CALL      R24 3 2      ; R24 := R24(R25,R26)
-123 [-]: ADD       R24 R21 R24  ; R24 := R21 + R24
-124 [-]: SETTABLE  R22 R23 R24  ; R22[R23] := R24
-125 [-]: GETGLOBAL R22 K32      ; R22 := table
-126 [-]: GETTABLE  R22 R22 K33  ; R22 := R22["0xE6450C9D"]
-127 [-]: GETUPVAL  R23 U8       ; R23 := U8
-128 [-]: MOVE      R24 R14      ; R24 := R14
-129 [-]: CALL      R22 3 1      ; R22(R23,R24)
-130 [-]: GETGLOBAL R22 K32      ; R22 := table
-131 [-]: GETTABLE  R22 R22 K33  ; R22 := R22["0xE6450C9D"]
-132 [-]: GETUPVAL  R23 U9       ; R23 := U9
-133 [-]: MOVE      R24 R5       ; R24 := R5
-134 [-]: CALL      R22 3 1      ; R22(R23,R24)
-135 [-]: GETUPVAL  R22 U1       ; R22 := U1
-136 [-]: GETUPVAL  R23 U1       ; R23 := U1
-137 [-]: GETTABLE  R23 R23 R5   ; R23 := R23[R5]
-138 [-]: ADD       R23 R23 K7   ; R23 := R23 + 1
-139 [-]: SETTABLE  R22 R5 R23   ; R22[R5] := R23
-140 [-]: GETGLOBAL R22 K34      ; R22 := 0x93B1256B
-141 [-]: LOADK     R23 K35      ; R23 := "Created a new animal start object at "
-142 [-]: GETGLOBAL R24 K36      ; R24 := 0x9FAED6BC
-143 [-]: MOVE      R25 R18      ; R25 := R18
-144 [-]: CALL      R24 2 2      ; R24 := R24(R25)
-145 [-]: LOADK     R25 K37      ; R25 := " for geo hint "
-146 [-]: SELF      R26 R14 K38  ; R27 := R14; R26 := R14["0x34820572"]
-147 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-148 [-]: CONCAT    R23 R23 R26  ; R23 := R23 .. R24 .. R25 .. R26
-149 [-]: CALL      R22 2 1      ; R22(R23)
-150 [-]: GETGLOBAL R22 K39      ; R22 := 0x201191EA
-151 [-]: LOADK     R23 K4       ; R23 := 0
-152 [-]: CALL      R22 2 1      ; R22(R23)
-153 [-]: FORLOOP   R9 58        ; R9 += R11; if R9 <= R10 then begin PC := 58; R12 := R9 end
-154 [-]: GETGLOBAL R22 K39      ; R22 := 0x201191EA
-155 [-]: LOADK     R23 K4       ; R23 := 0
-156 [-]: CALL      R22 2 1      ; R22(R23)
-157 [-]: FORLOOP   R2 37        ; R2 += R4; if R2 <= R3 then begin PC := 37; R5 := R2 end
-158 [-]: RETURN    R0 1         ; return 
+112 [-]: GETGLOBAL R21 K28      ; R21 := string
+113 [-]: GETTABLE  R21 R21 K29  ; R21 := R21["0xAF449107"]
+114 [-]: SELF      R22 R14 K30  ; R23 := R14; R22 := R14["0xCE832AFF"]
+115 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+116 [-]: SELF      R22 R22 K31  ; R23 := R22; R22 := R22["0x5EC7A3D2"]
+117 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+118 [-]: LOADK     R23 K32      ; R23 := "%d+"
+119 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
+120 [-]: TEST      R21 0        ; if not R21 then PC := 130
+121 [-]: JMP       130          ; PC := 130
+122 [-]: GETGLOBAL R22 K33      ; R22 := 0xF595ADDE
+123 [-]: MOVE      R23 R21      ; R23 := R21
+124 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+125 [-]: TEST      R22 0        ; if not R22 then PC := 130
+126 [-]: JMP       130          ; PC := 130
+127 [-]: SELF      R23 R20 K34  ; R24 := R20; R23 := R20["0x4433F121"]
+128 [-]: MOVE      R25 R22      ; R25 := R22
+129 [-]: CALL      R23 3 1      ; R23(R24,R25)
+130 [-]: GETUPVAL  R23 U6       ; R23 := U6
+131 [-]: SELF      R23 R23 K35  ; R24 := R23; R23 := R23["0x9F0929B6"]
+132 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+133 [-]: GETUPVAL  R24 U7       ; R24 := U7
+134 [-]: SELF      R25 R14 K36  ; R26 := R14; R25 := R14["0xDBEF0FB6"]
+135 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+136 [-]: GETGLOBAL R26 K16      ; R26 := math
+137 [-]: GETTABLE  R26 R26 K17  ; R26 := R26["0x865961F7"]
+138 [-]: GETGLOBAL R27 K37      ; R27 := geoHintCooldownTimeMin
+139 [-]: GETGLOBAL R28 K38      ; R28 := geoHintCooldownTimeMax
+140 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+141 [-]: ADD       R26 R23 R26  ; R26 := R23 + R26
+142 [-]: SETTABLE  R24 R25 R26  ; R24[R25] := R26
+143 [-]: GETGLOBAL R24 K39      ; R24 := table
+144 [-]: GETTABLE  R24 R24 K40  ; R24 := R24["0xE6450C9D"]
+145 [-]: GETUPVAL  R25 U8       ; R25 := U8
+146 [-]: MOVE      R26 R14      ; R26 := R14
+147 [-]: CALL      R24 3 1      ; R24(R25,R26)
+148 [-]: GETGLOBAL R24 K39      ; R24 := table
+149 [-]: GETTABLE  R24 R24 K40  ; R24 := R24["0xE6450C9D"]
+150 [-]: GETUPVAL  R25 U9       ; R25 := U9
+151 [-]: MOVE      R26 R5       ; R26 := R5
+152 [-]: CALL      R24 3 1      ; R24(R25,R26)
+153 [-]: GETUPVAL  R24 U1       ; R24 := U1
+154 [-]: GETUPVAL  R25 U1       ; R25 := U1
+155 [-]: GETTABLE  R25 R25 R5   ; R25 := R25[R5]
+156 [-]: ADD       R25 R25 K7   ; R25 := R25 + 1
+157 [-]: SETTABLE  R24 R5 R25   ; R24[R5] := R25
+158 [-]: GETGLOBAL R24 K41      ; R24 := 0x93B1256B
+159 [-]: LOADK     R25 K42      ; R25 := "Created a new animal start object at "
+160 [-]: GETGLOBAL R26 K43      ; R26 := 0x9FAED6BC
+161 [-]: MOVE      R27 R18      ; R27 := R18
+162 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+163 [-]: LOADK     R27 K44      ; R27 := " for geo hint "
+164 [-]: SELF      R28 R14 K45  ; R29 := R14; R28 := R14["0x34820572"]
+165 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+166 [-]: CONCAT    R25 R25 R28  ; R25 := R25 .. R26 .. R27 .. R28
+167 [-]: CALL      R24 2 1      ; R24(R25)
+168 [-]: GETGLOBAL R24 K46      ; R24 := 0x201191EA
+169 [-]: LOADK     R25 K4       ; R25 := 0
+170 [-]: CALL      R24 2 1      ; R24(R25)
+171 [-]: FORLOOP   R9 58        ; R9 += R11; if R9 <= R10 then begin PC := 58; R12 := R9 end
+172 [-]: GETGLOBAL R24 K46      ; R24 := 0x201191EA
+173 [-]: LOADK     R25 K4       ; R25 := 0
+174 [-]: CALL      R24 2 1      ; R24(R25)
+175 [-]: FORLOOP   R2 37        ; R2 += R4; if R2 <= R3 then begin PC := 37; R5 := R2 end
+176 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 226
+; Defined at line: 234
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0

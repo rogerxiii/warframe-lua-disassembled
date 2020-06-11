@@ -6,7 +6,7 @@ code size: 15
 code size: 56
 code size: 44
 code size: 11
-code size: 62
+code size: 68
 code size: 138
 code size: 5
 code size: 4
@@ -505,65 +505,71 @@ code size: 153
   7 [-]: GETGLOBAL R0 K2        ; R0 := _T
   8 [-]: SETTABLE  R0 K3 K4     ; R0["InFishMgmt"] := "0x1"
   9 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 10 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 11 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 12 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 13 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 14 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 15 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["0x171EF3D3"]
- 16 [-]: GETGLOBAL R6 K1        ; R6 := syndicate
- 17 [-]: CALL      R5 2 6       ; R5,R6,R7,R8,R9 := R5(R6)
- 18 [-]: SETTABLE  R4 K9 R9     ; R4["MaxRepInc"] := R9
- 19 [-]: SETTABLE  R3 K8 R8     ; R3["HasRepForSac"] := R8
- 20 [-]: SETTABLE  R2 K7 R7     ; R2["RepReq"] := R7
- 21 [-]: SETTABLE  R1 K6 R6     ; R1["Reputation"] := R6
- 22 [-]: SETTABLE  R0 K5 R5     ; R0["Level"] := R5
- 23 [-]: GETGLOBAL R0 K2        ; R0 := _T
- 24 [-]: NEWTABLE  R1 0 4       ; R1 := {}
- 25 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 26 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["MaxRepInc"]
- 27 [-]: SETTABLE  R1 K12 R2    ; R1["MaxRep"] := R2
- 28 [-]: SETTABLE  R1 K13 K4    ; R1["ShowRep"] := "0x1"
- 29 [-]: SETTABLE  R1 K14 K15   ; R1["FunctName"] := "DonateFish"
- 30 [-]: SETTABLE  R1 K16 K17   ; R1["SellBtnLabel"] := "/Lotus/Language/OstronCrafting/Crafting_Donate"
- 31 [-]: SETTABLE  R0 K11 R1    ; R0["FishInvInfo"] := R1
- 32 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 33 [-]: GETTABLE  R0 R0 K18    ; R0 := R0["0xAA806419"]
- 34 [-]: CALL      R0 1 2       ; R0 := R0()
- 35 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 36 [-]: GETTABLE  R1 R1 R0     ; R1 := R1[R0]
- 37 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 38 [-]: CLOSURE   R3 0         ; R3 := closure(Function #6.1)
- 39 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 40 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 41 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 42 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 43 [-]: GETUPVAL  R0 U7        ; R0 := U7
- 44 [-]: GETUPVAL  R0 U8        ; R0 := U8
- 45 [-]: GETUPVAL  R0 U9        ; R0 := U9
- 46 [-]: GETUPVAL  R0 U10       ; R0 := U10
- 47 [-]: MOVE      R0 R1        ; R0 := R1
- 48 [-]: SETTABLE  R2 K15 R3    ; R2["DonateFish"] := R3
- 49 [-]: GETUPVAL  R2 U11       ; R2 := U11
- 50 [-]: CALL      R2 1 1       ; R2()
- 51 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 52 [-]: GETUPVAL  R3 U5        ; R3 := U5
- 53 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 54 [-]: TEST      R2 1         ; if R2 then PC := 60
- 55 [-]: JMP       60           ; PC := 60
- 56 [-]: GETGLOBAL R2 K19       ; R2 := 0x201191EA
- 57 [-]: LOADK     R3 K20       ; R3 := 0
- 58 [-]: CALL      R2 2 1       ; R2(R3)
- 59 [-]: JMP       51           ; PC := 51
- 60 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 61 [-]: SETTABLE  R2 K3 K21    ; R2["InFishMgmt"] := "0x0"
- 62 [-]: RETURN    R0 1         ; return 
+ 10 [-]: GETGLOBAL R1 K1        ; R1 := syndicate
+ 11 [-]: SETTABLE  R0 K5 R1     ; R0["Syndicate"] := R1
+ 12 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 13 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 14 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 15 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 16 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 17 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 18 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["0x171EF3D3"]
+ 19 [-]: GETGLOBAL R6 K1        ; R6 := syndicate
+ 20 [-]: CALL      R5 2 6       ; R5,R6,R7,R8,R9 := R5(R6)
+ 21 [-]: SETTABLE  R4 K10 R9    ; R4["MaxRepInc"] := R9
+ 22 [-]: SETTABLE  R3 K9 R8     ; R3["HasRepForSac"] := R8
+ 23 [-]: SETTABLE  R2 K8 R7     ; R2["RepReq"] := R7
+ 24 [-]: SETTABLE  R1 K7 R6     ; R1["Reputation"] := R6
+ 25 [-]: SETTABLE  R0 K6 R5     ; R0["Level"] := R5
+ 26 [-]: GETGLOBAL R0 K2        ; R0 := _T
+ 27 [-]: NEWTABLE  R1 0 4       ; R1 := {}
+ 28 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 29 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["MaxRepInc"]
+ 30 [-]: SETTABLE  R1 K13 R2    ; R1["MaxRep"] := R2
+ 31 [-]: SETTABLE  R1 K14 K4    ; R1["ShowRep"] := "0x1"
+ 32 [-]: SETTABLE  R1 K15 K16   ; R1["FunctName"] := "DonateFish"
+ 33 [-]: SETTABLE  R1 K17 K18   ; R1["SellBtnLabel"] := "/Lotus/Language/OstronCrafting/Crafting_Donate"
+ 34 [-]: SETTABLE  R0 K12 R1    ; R0["FishInvInfo"] := R1
+ 35 [-]: GETGLOBAL R0 K2        ; R0 := _T
+ 36 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 37 [-]: SETTABLE  R0 K19 R1    ; R0["SyndicateInvInfo"] := R1
+ 38 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 39 [-]: GETTABLE  R0 R0 K20    ; R0 := R0["0xAA806419"]
+ 40 [-]: CALL      R0 1 2       ; R0 := R0()
+ 41 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 42 [-]: GETTABLE  R1 R1 R0     ; R1 := R1[R0]
+ 43 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 44 [-]: CLOSURE   R3 0         ; R3 := closure(Function #6.1)
+ 45 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 46 [-]: GETUPVAL  R0 U4        ; R0 := U4
+ 47 [-]: GETUPVAL  R0 U5        ; R0 := U5
+ 48 [-]: GETUPVAL  R0 U6        ; R0 := U6
+ 49 [-]: GETUPVAL  R0 U7        ; R0 := U7
+ 50 [-]: GETUPVAL  R0 U8        ; R0 := U8
+ 51 [-]: GETUPVAL  R0 U9        ; R0 := U9
+ 52 [-]: GETUPVAL  R0 U10       ; R0 := U10
+ 53 [-]: MOVE      R0 R1        ; R0 := R1
+ 54 [-]: SETTABLE  R2 K16 R3    ; R2["DonateFish"] := R3
+ 55 [-]: GETUPVAL  R2 U11       ; R2 := U11
+ 56 [-]: CALL      R2 1 1       ; R2()
+ 57 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 58 [-]: GETUPVAL  R3 U5        ; R3 := U5
+ 59 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 60 [-]: TEST      R2 1         ; if R2 then PC := 66
+ 61 [-]: JMP       66           ; PC := 66
+ 62 [-]: GETGLOBAL R2 K21       ; R2 := 0x201191EA
+ 63 [-]: LOADK     R3 K22       ; R3 := 0
+ 64 [-]: CALL      R2 2 1       ; R2(R3)
+ 65 [-]: JMP       57           ; PC := 57
+ 66 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 67 [-]: SETTABLE  R2 K3 K23    ; R2["InFishMgmt"] := "0x0"
+ 68 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6.1:
 ;
 ; Name:            
-; Defined at line: 171
+; Defined at line: 173
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -712,7 +718,7 @@ code size: 153
 ; Function #6.1.1:
 ;
 ; Name:            
-; Defined at line: 184
+; Defined at line: 186
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -728,7 +734,7 @@ code size: 153
 ; Function #6.1.2:
 ;
 ; Name:            
-; Defined at line: 187
+; Defined at line: 189
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -743,7 +749,7 @@ code size: 153
 ; Function #6.1.3:
 ;
 ; Name:            
-; Defined at line: 190
+; Defined at line: 192
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -758,7 +764,7 @@ code size: 153
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 225
+; Defined at line: 227
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -838,7 +844,7 @@ code size: 153
 ; Function #7.1:
 ;
 ; Name:            
-; Defined at line: 240
+; Defined at line: 242
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -914,7 +920,7 @@ code size: 153
 ; Function #7.1.1:
 ;
 ; Name:            
-; Defined at line: 260
+; Defined at line: 262
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -930,7 +936,7 @@ code size: 153
 ; Function #7.2:
 ;
 ; Name:            
-; Defined at line: 268
+; Defined at line: 270
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0

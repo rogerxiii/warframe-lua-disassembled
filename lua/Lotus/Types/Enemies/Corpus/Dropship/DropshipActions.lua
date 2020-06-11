@@ -673,30 +673,30 @@ code size: 20
  19 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1["0x3B1B11B9"]
  20 [-]: GETGLOBAL R3 K8        ; R3 := Game
  21 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["AVATAR_MOVEMENT_SPEED"]
- 22 [-]: GETGLOBAL R4 K8        ; R4 := Game
- 23 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["MULTIPLY"]
- 24 [-]: LOADK     R5 K11       ; R5 := 1.2000000476837
+ 22 [-]: GETGLOBAL R4 K10       ; R4 := Engine
+ 23 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["MULTIPLY"]
+ 24 [-]: LOADK     R5 K12       ; R5 := 1.2000000476837
  25 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  26 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
- 27 [-]: SELF      R2 R0 K12    ; R3 := R0; R2 := R0["0xABD9DD93"]
+ 27 [-]: SELF      R2 R0 K13    ; R3 := R0; R2 := R0["0xABD9DD93"]
  28 [-]: CALL      R2 2 0       ; R2,... := R2(R3)
  29 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
  30 [-]: TEST      R1 1         ; if R1 then PC := 37
  31 [-]: JMP       37           ; PC := 37
- 32 [-]: SELF      R1 R0 K12    ; R2 := R0; R1 := R0["0xABD9DD93"]
+ 32 [-]: SELF      R1 R0 K13    ; R2 := R0; R1 := R0["0xABD9DD93"]
  33 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 34 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1["0xB23DA504"]
+ 34 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1["0xB23DA504"]
  35 [-]: MOVE      R3 R0        ; R3 := R0
  36 [-]: CALL      R1 3 1       ; R1(R2,R3)
  37 [-]: GETGLOBAL R1 K4        ; R1 := gRegion
- 38 [-]: SELF      R1 R1 K14    ; R2 := R1; R1 := R1["0xBDD34CC6"]
- 39 [-]: GETGLOBAL R3 K15       ; R3 := exitEffect
- 40 [-]: SELF      R4 R0 K16    ; R5 := R0; R4 := R0["0xBBAF192"]
+ 38 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1["0xBDD34CC6"]
+ 39 [-]: GETGLOBAL R3 K16       ; R3 := exitEffect
+ 40 [-]: SELF      R4 R0 K17    ; R5 := R0; R4 := R0["0xBBAF192"]
  41 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 42 [-]: SELF      R5 R0 K17    ; R6 := R0; R5 := R0["0x3455E8A"]
+ 42 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0["0x3455E8A"]
  43 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  44 [-]: CALL      R1 0 1       ; R1(R2,...)
- 45 [-]: SELF      R1 R0 K18    ; R2 := R0; R1 := R0["0xD4C2743F"]
+ 45 [-]: SELF      R1 R0 K19    ; R2 := R0; R1 := R0["0xD4C2743F"]
  46 [-]: CALL      R1 2 1       ; R1(R2)
  47 [-]: RETURN    R0 1         ; return 
 

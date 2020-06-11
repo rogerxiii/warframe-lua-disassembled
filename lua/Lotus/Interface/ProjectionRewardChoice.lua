@@ -36,7 +36,7 @@ code size: 45
 code size: 16
 code size: 40
 code size: 39
-code size: 45
+code size: 47
 code size: 230
 code size: 282
 code size: 12
@@ -109,9 +109,9 @@ code size: 3
  45 [-]: SETTABLE  R32 K11 K10  ; R32["x"] := 0
  46 [-]: SETTABLE  R32 K12 K10  ; R32["y"] := 0
  47 [-]: NEWTABLE  R33 3 0      ; R33 := {}
- 48 [-]: LOADK     R34 K13      ; R34 := "/Game/COMMON"
- 49 [-]: LOADK     R35 K14      ; R35 := "/Game/UNCOMMON"
- 50 [-]: LOADK     R36 K15      ; R36 := "/Game/RARE"
+ 48 [-]: LOADK     R34 K13      ; R34 := "/Lotus/Language/Labels/COMMON"
+ 49 [-]: LOADK     R35 K14      ; R35 := "/Lotus/Language/Labels/UNCOMMON"
+ 50 [-]: LOADK     R36 K15      ; R36 := "/Lotus/Language/Labels/RARE"
  51 [-]: SETLIST   R33 3 1      ; R33[(1-1)*FPF+i] := R(33+i), 1 <= i <= 3
  52 [-]: CLOSURE   R34 0        ; R34 := closure(Function #1)
  53 [-]: CLOSURE   R35 1        ; R35 := closure(Function #2)
@@ -2701,48 +2701,50 @@ code size: 3
   1 [-]: LOADK     R2 K0        ; R2 := 1
   2 [-]: LEN       R3 R0        ; R3 := # R0
   3 [-]: LOADK     R4 K0        ; R4 := 1
-  4 [-]: FORPREP   R2 44        ; R2 -= R4; PC := 44
+  4 [-]: FORPREP   R2 46        ; R2 -= R4; PC := 46
   5 [-]: MOVE      R6 R0        ; R6 := R0
-  6 [-]: TEST      R1 0         ; if not R1 then PC := 24
-  7 [-]: JMP       24           ; PC := 24
+  6 [-]: TEST      R1 0         ; if not R1 then PC := 26
+  7 [-]: JMP       26           ; PC := 26
   8 [-]: GETTABLE  R7 R0 R5     ; R7 := R0[R5]
   9 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["mItemType"]
  10 [-]: SELF      R7 R7 K2     ; R8 := R7; R7 := R7["0x8B598ED4"]
  11 [-]: GETUPVAL  R9 U0        ; R9 := U0
  12 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 13 [-]: TEST      R7 0         ; if not R7 then PC := 24
- 14 [-]: JMP       24           ; PC := 24
+ 13 [-]: TEST      R7 0         ; if not R7 then PC := 26
+ 14 [-]: JMP       26           ; PC := 26
  15 [-]: GETGLOBAL R7 K3        ; R7 := cjson
  16 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["0x8A2E8315"]
  17 [-]: GETTABLE  R8 R0 R5     ; R8 := R0[R5]
  18 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["mUpgradeFingerprint"]
  19 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 20 [-]: GETTABLE  R8 R7 K6     ; R8 := R7["lvl"]
- 21 [-]: EQ        0 R8 K7      ; if R8 ~= 3 then PC := 24
- 22 [-]: JMP       24           ; PC := 24
- 23 [-]: MOVE      R6 R1        ; R6 := R1
- 24 [-]: TEST      R6 1         ; if R6 then PC := 44
- 25 [-]: JMP       44           ; PC := 44
- 26 [-]: GETTABLE  R8 R0 R5     ; R8 := R0[R5]
- 27 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["mItemType"]
- 28 [-]: SELF      R8 R8 K8     ; R9 := R8; R8 := R8["0x1B252E3C"]
- 29 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 30 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 31 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
- 32 [-]: EQ        1 R9 K9      ; if R9 == nil then PC := 40
- 33 [-]: JMP       40           ; PC := 40
- 34 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 35 [-]: GETTABLE  R11 R0 R5    ; R11 := R0[R5]
- 36 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["mItemCount"]
- 37 [-]: ADD       R11 R9 R11   ; R11 := R9 + R11
- 38 [-]: SETTABLE  R10 R8 R11   ; R10[R8] := R11
- 39 [-]: JMP       44           ; PC := 44
- 40 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 41 [-]: GETTABLE  R11 R0 R5    ; R11 := R0[R5]
- 42 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["mItemCount"]
- 43 [-]: SETTABLE  R10 R8 R11   ; R10[R8] := R11
- 44 [-]: FORLOOP   R2 5         ; R2 += R4; if R2 <= R3 then begin PC := 5; R5 := R2 end
- 45 [-]: RETURN    R0 1         ; return 
+ 20 [-]: EQ        1 R7 K6      ; if R7 == nil then PC := 26
+ 21 [-]: JMP       26           ; PC := 26
+ 22 [-]: GETTABLE  R8 R7 K7     ; R8 := R7["lvl"]
+ 23 [-]: EQ        0 R8 K8      ; if R8 ~= 3 then PC := 26
+ 24 [-]: JMP       26           ; PC := 26
+ 25 [-]: MOVE      R6 R1        ; R6 := R1
+ 26 [-]: TEST      R6 1         ; if R6 then PC := 46
+ 27 [-]: JMP       46           ; PC := 46
+ 28 [-]: GETTABLE  R8 R0 R5     ; R8 := R0[R5]
+ 29 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["mItemType"]
+ 30 [-]: SELF      R8 R8 K9     ; R9 := R8; R8 := R8["0x1B252E3C"]
+ 31 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 32 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 33 [-]: GETTABLE  R9 R9 R8     ; R9 := R9[R8]
+ 34 [-]: EQ        1 R9 K6      ; if R9 == nil then PC := 42
+ 35 [-]: JMP       42           ; PC := 42
+ 36 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 37 [-]: GETTABLE  R11 R0 R5    ; R11 := R0[R5]
+ 38 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["mItemCount"]
+ 39 [-]: ADD       R11 R9 R11   ; R11 := R9 + R11
+ 40 [-]: SETTABLE  R10 R8 R11   ; R10[R8] := R11
+ 41 [-]: JMP       46           ; PC := 46
+ 42 [-]: GETUPVAL  R10 U1       ; R10 := U1
+ 43 [-]: GETTABLE  R11 R0 R5    ; R11 := R0[R5]
+ 44 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["mItemCount"]
+ 45 [-]: SETTABLE  R10 R8 R11   ; R10[R8] := R11
+ 46 [-]: FORLOOP   R2 5         ; R2 += R4; if R2 <= R3 then begin PC := 5; R5 := R2 end
+ 47 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #31:

@@ -137,25 +137,25 @@ code size: 21
  54 [-]: GETUPVAL  R10 U0       ; R10 := U0
  55 [-]: GETGLOBAL R11 K14      ; R11 := Game
  56 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["AVATAR_SHIELD_MAX"]
- 57 [-]: GETGLOBAL R12 K14      ; R12 := Game
- 58 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["SET"]
- 59 [-]: LOADK     R13 K17      ; R13 := 0
+ 57 [-]: GETGLOBAL R12 K16      ; R12 := Engine
+ 58 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["SET"]
+ 59 [-]: LOADK     R13 K18      ; R13 := 0
  60 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
- 61 [-]: GETGLOBAL R8 K18       ; R8 := 0x201191EA
- 62 [-]: GETGLOBAL R9 K19       ; R9 := shieldRechargeDelay
+ 61 [-]: GETGLOBAL R8 K19       ; R8 := 0x201191EA
+ 62 [-]: GETGLOBAL R9 K20       ; R9 := shieldRechargeDelay
  63 [-]: CALL      R8 2 1       ; R8(R9)
  64 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
  65 [-]: MOVE      R9 R6        ; R9 := R6
  66 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  67 [-]: TEST      R8 1         ; if R8 then PC := 77
  68 [-]: JMP       77           ; PC := 77
- 69 [-]: SELF      R8 R6 K20    ; R9 := R6; R8 := R6["0x5A740E25"]
+ 69 [-]: SELF      R8 R6 K21    ; R9 := R6; R8 := R6["0x5A740E25"]
  70 [-]: GETUPVAL  R10 U0       ; R10 := U0
  71 [-]: GETGLOBAL R11 K14      ; R11 := Game
  72 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["AVATAR_SHIELD_MAX"]
- 73 [-]: GETGLOBAL R12 K14      ; R12 := Game
- 74 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["SET"]
- 75 [-]: LOADK     R13 K17      ; R13 := 0
+ 73 [-]: GETGLOBAL R12 K16      ; R12 := Engine
+ 74 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["SET"]
+ 75 [-]: LOADK     R13 K18      ; R13 := 0
  76 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
  77 [-]: RETURN    R0 1         ; return 
 
@@ -185,9 +185,9 @@ code size: 21
  14 [-]: GETUPVAL  R7 U0        ; R7 := U0
  15 [-]: GETGLOBAL R8 K4        ; R8 := Game
  16 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["AVATAR_SHIELD_MAX"]
- 17 [-]: GETGLOBAL R9 K4        ; R9 := Game
- 18 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["SET"]
- 19 [-]: LOADK     R10 K7       ; R10 := 0
+ 17 [-]: GETGLOBAL R9 K6        ; R9 := Engine
+ 18 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["SET"]
+ 19 [-]: LOADK     R10 K8       ; R10 := 0
  20 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
  21 [-]: RETURN    R0 1         ; return 
 

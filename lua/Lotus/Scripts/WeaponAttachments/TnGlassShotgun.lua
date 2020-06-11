@@ -52,7 +52,7 @@ code size: 30
  21 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  22 [-]: GETGLOBAL R8 K9        ; R8 := Game
  23 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["WEAPON_AMMO_MAX"]
- 24 [-]: GETGLOBAL R9 K9        ; R9 := Game
+ 24 [-]: GETGLOBAL R9 K2        ; R9 := Engine
  25 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["ADD"]
  26 [-]: GETGLOBAL R10 K12      ; R10 := ammoAmount
  27 [-]: SELF      R11 R1 K13   ; R12 := R1; R11 := R1["0xE5CB6F43"]
@@ -93,7 +93,7 @@ code size: 30
  21 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0xF21555A7"]
  22 [-]: GETGLOBAL R8 K9        ; R8 := Game
  23 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["WEAPON_AMMO_MAX"]
- 24 [-]: GETGLOBAL R9 K9        ; R9 := Game
+ 24 [-]: GETGLOBAL R9 K2        ; R9 := Engine
  25 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["ADD"]
  26 [-]: GETGLOBAL R10 K12      ; R10 := ammoAmount
  27 [-]: SELF      R11 R1 K13   ; R12 := R1; R11 := R1["0xE5CB6F43"]

@@ -381,17 +381,17 @@ code size: 132
 112 [-]: SELF      R18 R18 K26  ; R19 := R18; R18 := R18["0x3B1B11B9"]
 113 [-]: GETGLOBAL R20 K27      ; R20 := Game
 114 [-]: GETTABLE  R20 R20 K28  ; R20 := R20["WEAPON_LIFE_STEAL"]
-115 [-]: GETGLOBAL R21 K27      ; R21 := Game
-116 [-]: GETTABLE  R21 R21 K29  ; R21 := R21["ADD"]
-117 [-]: GETGLOBAL R22 K30      ; R22 := nikanaLifesteal
+115 [-]: GETGLOBAL R21 K29      ; R21 := Engine
+116 [-]: GETTABLE  R21 R21 K30  ; R21 := R21["ADD"]
+117 [-]: GETGLOBAL R22 K31      ; R22 := nikanaLifesteal
 118 [-]: GETGLOBAL R23 K12      ; R23 := math
 119 [-]: GETTABLE  R23 R23 K13  ; R23 := R23["0x65F9712A"]
 120 [-]: MOVE      R24 R2       ; R24 := R2
-121 [-]: GETGLOBAL R25 K30      ; R25 := nikanaLifesteal
+121 [-]: GETGLOBAL R25 K31      ; R25 := nikanaLifesteal
 122 [-]: LEN       R25 R25      ; R25 := # R25
 123 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
 124 [-]: GETTABLE  R22 R22 R23  ; R22 := R22[R23]
-125 [-]: SELF      R23 R8 K31   ; R24 := R8; R23 := R8["0xE2B32C65"]
+125 [-]: SELF      R23 R8 K32   ; R24 := R8; R23 := R8["0xE2B32C65"]
 126 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 127 [-]: MOVE      R24 R8       ; R24 := R8
 128 [-]: CALL      R18 7 1      ; R18(R19,R20,R21,R22,R23,R24)

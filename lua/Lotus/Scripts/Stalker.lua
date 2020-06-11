@@ -3040,7 +3040,7 @@ code size: 1
 351 [-]: SELF      R40 R39 K60  ; R41 := R39; R40 := R39["0x3B1B11B9"]
 352 [-]: GETGLOBAL R42 K61      ; R42 := Game
 353 [-]: GETTABLE  R42 R42 K62  ; R42 := R42["AVATAR_HEALTH_MAX"]
-354 [-]: GETGLOBAL R43 K61      ; R43 := Game
+354 [-]: GETGLOBAL R43 K48      ; R43 := Engine
 355 [-]: GETTABLE  R43 R43 K63  ; R43 := R43["STACKING_MULTIPLY"]
 356 [-]: LOADK     R44 K25      ; R44 := 2
 357 [-]: CALL      R40 5 1      ; R40(R41,R42,R43,R44)
@@ -3048,7 +3048,7 @@ code size: 1
 359 [-]: SELF      R40 R39 K60  ; R41 := R39; R40 := R39["0x3B1B11B9"]
 360 [-]: GETGLOBAL R42 K61      ; R42 := Game
 361 [-]: GETTABLE  R42 R42 K62  ; R42 := R42["AVATAR_HEALTH_MAX"]
-362 [-]: GETGLOBAL R43 K61      ; R43 := Game
+362 [-]: GETGLOBAL R43 K48      ; R43 := Engine
 363 [-]: GETTABLE  R43 R43 K63  ; R43 := R43["STACKING_MULTIPLY"]
 364 [-]: LOADK     R44 K64      ; R44 := 6
 365 [-]: CALL      R40 5 1      ; R40(R41,R42,R43,R44)
@@ -3060,7 +3060,7 @@ code size: 1
 371 [-]: JMP       378          ; PC := 378
 372 [-]: SELF      R40 R39 K60  ; R41 := R39; R40 := R39["0x3B1B11B9"]
 373 [-]: MOVE      R42 R7       ; R42 := R7
-374 [-]: GETGLOBAL R43 K61      ; R43 := Game
+374 [-]: GETGLOBAL R43 K48      ; R43 := Engine
 375 [-]: GETTABLE  R43 R43 K63  ; R43 := R43["STACKING_MULTIPLY"]
 376 [-]: MOVE      R44 R8       ; R44 := R8
 377 [-]: CALL      R40 5 1      ; R40(R41,R42,R43,R44)
@@ -3582,7 +3582,7 @@ code size: 1
 184 [-]: SELF      R36 R35 K47  ; R37 := R35; R36 := R35["0x3B1B11B9"]
 185 [-]: GETGLOBAL R38 K48      ; R38 := Game
 186 [-]: GETTABLE  R38 R38 K49  ; R38 := R38["AVATAR_HEALTH_MAX"]
-187 [-]: GETGLOBAL R39 K48      ; R39 := Game
+187 [-]: GETGLOBAL R39 K36      ; R39 := Engine
 188 [-]: GETTABLE  R39 R39 K50  ; R39 := R39["STACKING_MULTIPLY"]
 189 [-]: LOADK     R40 K51      ; R40 := 6
 190 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)
@@ -3594,7 +3594,7 @@ code size: 1
 196 [-]: JMP       203          ; PC := 203
 197 [-]: SELF      R36 R35 K47  ; R37 := R35; R36 := R35["0x3B1B11B9"]
 198 [-]: MOVE      R38 R7       ; R38 := R7
-199 [-]: GETGLOBAL R39 K48      ; R39 := Game
+199 [-]: GETGLOBAL R39 K36      ; R39 := Engine
 200 [-]: GETTABLE  R39 R39 K50  ; R39 := R39["STACKING_MULTIPLY"]
 201 [-]: MOVE      R40 R8       ; R40 := R8
 202 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)

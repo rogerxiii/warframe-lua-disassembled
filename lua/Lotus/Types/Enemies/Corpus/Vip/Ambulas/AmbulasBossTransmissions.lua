@@ -1,6 +1,6 @@
 code size: 14
 code size: 39
-code size: 139
+code size: 137
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Enemies\Corpus\Vip\Ambulas\AmbulasBossTransmissions.luac 
 
@@ -84,7 +84,7 @@ code size: 139
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  22
+; Max Stack Size:  21
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gRegion
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xD1CEF990"]
@@ -160,70 +160,68 @@ code size: 139
  72 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  73 [-]: SELF      R6 R2 K22    ; R7 := R2; R6 := R2["0x3B1604FE"]
  74 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 75 [-]: GETGLOBAL R7 K23       ; R7 := targetNumTransmission
- 76 [-]: DIV       R7 R6 R7     ; R7 := R6 / R7
- 77 [-]: NEWTABLE  R8 0 0       ; R8 := {}
- 78 [-]: LOADK     R9 K13       ; R9 := 1
- 79 [-]: GETGLOBAL R10 K23      ; R10 := targetNumTransmission
- 80 [-]: LOADK     R11 K13      ; R11 := 1
- 81 [-]: FORPREP   R9 96        ; R9 -= R11; PC := 96
- 82 [-]: LE        0 R6 K18     ; if R6 > 0 then PC := 86
- 83 [-]: JMP       86           ; PC := 86
- 84 [-]: SETTABLE  R8 R12 K24   ; R8[R12] := -1
- 85 [-]: JMP       96           ; PC := 96
- 86 [-]: SUB       R13 R12 K13  ; R13 := R12 - 1
- 87 [-]: GETGLOBAL R14 K23      ; R14 := targetNumTransmission
- 88 [-]: SUB       R14 R14 K13  ; R14 := R14 - 1
- 89 [-]: DIV       R13 R13 R14  ; R13 := R13 / R14
- 90 [-]: GETGLOBAL R14 K25      ; R14 := 0x93034B55
- 91 [-]: GETGLOBAL R15 K26      ; R15 := minDistToTarget
- 92 [-]: SUB       R16 R6 K27   ; R16 := R6 - 100
- 93 [-]: MUL       R17 R13 R13  ; R17 := R13 * R13
- 94 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
- 95 [-]: SETTABLE  R8 R12 R14   ; R8[R12] := R14
- 96 [-]: FORLOOP   R9 82        ; R9 += R11; if R9 <= R10 then begin PC := 82; R12 := R9 end
- 97 [-]: GETUPVAL  R14 U1       ; R14 := U1
- 98 [-]: CALL      R14 1 2      ; R14 := R14()
- 99 [-]: TEST      R14 1        ; if R14 then PC := 139
-100 [-]: JMP       139          ; PC := 139
-101 [-]: GETGLOBAL R14 K12      ; R14 := 0x201191EA
-102 [-]: LOADK     R15 K13      ; R15 := 1
-103 [-]: CALL      R14 2 1      ; R14(R15)
-104 [-]: SELF      R14 R2 K22   ; R15 := R2; R14 := R2["0x3B1604FE"]
-105 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-106 [-]: MOVE      R6 R14       ; R6 := R14
-107 [-]: GETUPVAL  R14 U2       ; R14 := U2
-108 [-]: GETTABLE  R14 R14 K28  ; R14 := R14["0x69E8B767"]
-109 [-]: CALL      R14 1 2      ; R14 := R14()
-110 [-]: TEST      R14 1        ; if R14 then PC := 97
-111 [-]: JMP       97           ; PC := 97
-112 [-]: LOADK     R14 K13      ; R14 := 1
-113 [-]: GETGLOBAL R15 K23      ; R15 := targetNumTransmission
-114 [-]: LOADK     R16 K13      ; R16 := 1
-115 [-]: FORPREP   R14 137      ; R14 -= R16; PC := 137
-116 [-]: GETTABLE  R18 R8 R17   ; R18 := R8[R17]
-117 [-]: LT        0 R6 R18     ; if R6 >= R18 then PC := 137
-118 [-]: JMP       137          ; PC := 137
-119 [-]: SETTABLE  R8 R17 K24   ; R8[R17] := -1
-120 [-]: GETGLOBAL R18 K15      ; R18 := 0x400E7765
-121 [-]: GETTABLE  R19 R3 K13   ; R19 := R3[1]
-122 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-123 [-]: TEST      R18 1        ; if R18 then PC := 137
-124 [-]: JMP       137          ; PC := 137
-125 [-]: GETUPVAL  R18 U0       ; R18 := U0
-126 [-]: GETTABLE  R18 R18 K20  ; R18 := R18["0xFB594D4A"]
-127 [-]: GETGLOBAL R19 K3       ; R19 := _T
-128 [-]: GETTABLE  R19 R19 K4   ; R19 := R19["TransmissionSet"]
-129 [-]: GETTABLE  R20 R3 K13   ; R20 := R3[1]
-130 [-]: LOADK     R21 K18      ; R21 := 0
-131 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-132 [-]: GETGLOBAL R18 K6       ; R18 := table
-133 [-]: GETTABLE  R18 R18 K29  ; R18 := R18["0xCDB1FD5E"]
-134 [-]: MOVE      R19 R3       ; R19 := R3
-135 [-]: LOADK     R20 K13      ; R20 := 1
-136 [-]: CALL      R18 3 1      ; R18(R19,R20)
-137 [-]: FORLOOP   R14 116      ; R14 += R16; if R14 <= R15 then begin PC := 116; R17 := R14 end
-138 [-]: JMP       97           ; PC := 97
-139 [-]: RETURN    R0 1         ; return 
+ 75 [-]: NEWTABLE  R7 0 0       ; R7 := {}
+ 76 [-]: LOADK     R8 K13       ; R8 := 1
+ 77 [-]: GETGLOBAL R9 K23       ; R9 := targetNumTransmission
+ 78 [-]: LOADK     R10 K13      ; R10 := 1
+ 79 [-]: FORPREP   R8 94        ; R8 -= R10; PC := 94
+ 80 [-]: LE        0 R6 K18     ; if R6 > 0 then PC := 84
+ 81 [-]: JMP       84           ; PC := 84
+ 82 [-]: SETTABLE  R7 R11 K24   ; R7[R11] := -1
+ 83 [-]: JMP       94           ; PC := 94
+ 84 [-]: SUB       R12 R11 K13  ; R12 := R11 - 1
+ 85 [-]: GETGLOBAL R13 K23      ; R13 := targetNumTransmission
+ 86 [-]: SUB       R13 R13 K13  ; R13 := R13 - 1
+ 87 [-]: DIV       R12 R12 R13  ; R12 := R12 / R13
+ 88 [-]: GETGLOBAL R13 K25      ; R13 := 0x93034B55
+ 89 [-]: GETGLOBAL R14 K26      ; R14 := minDistToTarget
+ 90 [-]: SUB       R15 R6 K27   ; R15 := R6 - 100
+ 91 [-]: MUL       R16 R12 R12  ; R16 := R12 * R12
+ 92 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
+ 93 [-]: SETTABLE  R7 R11 R13   ; R7[R11] := R13
+ 94 [-]: FORLOOP   R8 80        ; R8 += R10; if R8 <= R9 then begin PC := 80; R11 := R8 end
+ 95 [-]: GETUPVAL  R13 U1       ; R13 := U1
+ 96 [-]: CALL      R13 1 2      ; R13 := R13()
+ 97 [-]: TEST      R13 1        ; if R13 then PC := 137
+ 98 [-]: JMP       137          ; PC := 137
+ 99 [-]: GETGLOBAL R13 K12      ; R13 := 0x201191EA
+100 [-]: LOADK     R14 K13      ; R14 := 1
+101 [-]: CALL      R13 2 1      ; R13(R14)
+102 [-]: SELF      R13 R2 K22   ; R14 := R2; R13 := R2["0x3B1604FE"]
+103 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+104 [-]: MOVE      R6 R13       ; R6 := R13
+105 [-]: GETUPVAL  R13 U2       ; R13 := U2
+106 [-]: GETTABLE  R13 R13 K28  ; R13 := R13["0x69E8B767"]
+107 [-]: CALL      R13 1 2      ; R13 := R13()
+108 [-]: TEST      R13 1        ; if R13 then PC := 95
+109 [-]: JMP       95           ; PC := 95
+110 [-]: LOADK     R13 K13      ; R13 := 1
+111 [-]: GETGLOBAL R14 K23      ; R14 := targetNumTransmission
+112 [-]: LOADK     R15 K13      ; R15 := 1
+113 [-]: FORPREP   R13 135      ; R13 -= R15; PC := 135
+114 [-]: GETTABLE  R17 R7 R16   ; R17 := R7[R16]
+115 [-]: LT        0 R6 R17     ; if R6 >= R17 then PC := 135
+116 [-]: JMP       135          ; PC := 135
+117 [-]: SETTABLE  R7 R16 K24   ; R7[R16] := -1
+118 [-]: GETGLOBAL R17 K15      ; R17 := 0x400E7765
+119 [-]: GETTABLE  R18 R3 K13   ; R18 := R3[1]
+120 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+121 [-]: TEST      R17 1        ; if R17 then PC := 135
+122 [-]: JMP       135          ; PC := 135
+123 [-]: GETUPVAL  R17 U0       ; R17 := U0
+124 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["0xFB594D4A"]
+125 [-]: GETGLOBAL R18 K3       ; R18 := _T
+126 [-]: GETTABLE  R18 R18 K4   ; R18 := R18["TransmissionSet"]
+127 [-]: GETTABLE  R19 R3 K13   ; R19 := R3[1]
+128 [-]: LOADK     R20 K18      ; R20 := 0
+129 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
+130 [-]: GETGLOBAL R17 K6       ; R17 := table
+131 [-]: GETTABLE  R17 R17 K29  ; R17 := R17["0xCDB1FD5E"]
+132 [-]: MOVE      R18 R3       ; R18 := R3
+133 [-]: LOADK     R19 K13      ; R19 := 1
+134 [-]: CALL      R17 3 1      ; R17(R18,R19)
+135 [-]: FORLOOP   R13 114      ; R13 += R15; if R13 <= R14 then begin PC := 114; R16 := R13 end
+136 [-]: JMP       95           ; PC := 95
+137 [-]: RETURN    R0 1         ; return 
 
 

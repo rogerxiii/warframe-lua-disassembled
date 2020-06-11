@@ -138,71 +138,71 @@ code size: 37
  23 [-]: SELF      R5 R4 K6     ; R6 := R4; R5 := R4["0x3B1B11B9"]
  24 [-]: GETGLOBAL R7 K7        ; R7 := Game
  25 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["AVATAR_ACROBATIC_SPEED"]
- 26 [-]: GETGLOBAL R8 K7        ; R8 := Game
- 27 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
+ 26 [-]: GETGLOBAL R8 K9        ; R8 := Engine
+ 27 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["STACKING_MULTIPLY"]
  28 [-]: MOVE      R9 R2        ; R9 := R2
  29 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  30 [-]: SELF      R5 R4 K6     ; R6 := R4; R5 := R4["0x3B1B11B9"]
  31 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 32 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["AVATAR_SLIDE_FRICTION"]
- 33 [-]: GETGLOBAL R8 K7        ; R8 := Game
- 34 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
+ 32 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["AVATAR_SLIDE_FRICTION"]
+ 33 [-]: GETGLOBAL R8 K9        ; R8 := Engine
+ 34 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["STACKING_MULTIPLY"]
  35 [-]: MOVE      R9 R3        ; R9 := R3
  36 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 37 [-]: GETGLOBAL R5 K11       ; R5 := 0x201191EA
- 38 [-]: LOADK     R6 K12       ; R6 := 0.5
+ 37 [-]: GETGLOBAL R5 K12       ; R5 := 0x201191EA
+ 38 [-]: LOADK     R6 K13       ; R6 := 0.5
  39 [-]: CALL      R5 2 1       ; R5(R6)
  40 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
  41 [-]: MOVE      R6 R1        ; R6 := R1
  42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  43 [-]: TEST      R5 1         ; if R5 then PC := 93
  44 [-]: JMP       93           ; PC := 93
- 45 [-]: SELF      R5 R1 K13    ; R6 := R1; R5 := R1["0x6A2E414D"]
- 46 [-]: LOADK     R7 K14       ; R7 := 0
+ 45 [-]: SELF      R5 R1 K14    ; R6 := R1; R5 := R1["0x6A2E414D"]
+ 46 [-]: LOADK     R7 K15       ; R7 := 0
  47 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  48 [-]: GETGLOBAL R6 K2        ; R6 := 0x400E7765
  49 [-]: MOVE      R7 R5        ; R7 := R5
  50 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  51 [-]: TEST      R6 1         ; if R6 then PC := 93
  52 [-]: JMP       93           ; PC := 93
- 53 [-]: GETGLOBAL R6 K15       ; R6 := 0x221C9700
+ 53 [-]: GETGLOBAL R6 K16       ; R6 := 0x221C9700
  54 [-]: CALL      R6 1 2       ; R6 := R6()
- 55 [-]: LOADK     R7 K16       ; R7 := 1
+ 55 [-]: LOADK     R7 K17       ; R7 := 1
  56 [-]: GETUPVAL  R8 U2        ; R8 := U2
  57 [-]: LEN       R8 R8        ; R8 := # R8
- 58 [-]: LOADK     R9 K16       ; R9 := 1
+ 58 [-]: LOADK     R9 K17       ; R9 := 1
  59 [-]: FORPREP   R7 92        ; R7 -= R9; PC := 92
- 60 [-]: SELF      R11 R1 K17   ; R12 := R1; R11 := R1["0x5349B34E"]
+ 60 [-]: SELF      R11 R1 K18   ; R12 := R1; R11 := R1["0x5349B34E"]
  61 [-]: GETUPVAL  R13 U2       ; R13 := U2
  62 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
  63 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  64 [-]: TEST      R11 1        ; if R11 then PC := 92
  65 [-]: JMP       92           ; PC := 92
- 66 [-]: SELF      R11 R5 K19   ; R12 := R5; R11 := R5["0x9FB1775E"]
+ 66 [-]: SELF      R11 R5 K20   ; R12 := R5; R11 := R5["0x9FB1775E"]
  67 [-]: GETUPVAL  R13 U2       ; R13 := U2
  68 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 69 [-]: LOADK     R14 K16      ; R14 := 1
+ 69 [-]: LOADK     R14 K17      ; R14 := 1
  70 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 71 [-]: SETTABLE  R6 K18 R11   ; R6["x"] := R11
- 72 [-]: SELF      R11 R5 K19   ; R12 := R5; R11 := R5["0x9FB1775E"]
+ 71 [-]: SETTABLE  R6 K19 R11   ; R6["x"] := R11
+ 72 [-]: SELF      R11 R5 K20   ; R12 := R5; R11 := R5["0x9FB1775E"]
  73 [-]: GETUPVAL  R13 U2       ; R13 := U2
  74 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 75 [-]: LOADK     R14 K21      ; R14 := 2
+ 75 [-]: LOADK     R14 K22      ; R14 := 2
  76 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 77 [-]: SETTABLE  R6 K20 R11   ; R6["y"] := R11
- 78 [-]: SELF      R11 R5 K19   ; R12 := R5; R11 := R5["0x9FB1775E"]
+ 77 [-]: SETTABLE  R6 K21 R11   ; R6["y"] := R11
+ 78 [-]: SELF      R11 R5 K20   ; R12 := R5; R11 := R5["0x9FB1775E"]
  79 [-]: GETUPVAL  R13 U2       ; R13 := U2
  80 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 81 [-]: LOADK     R14 K23      ; R14 := 3
+ 81 [-]: LOADK     R14 K24      ; R14 := 3
  82 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 83 [-]: SETTABLE  R6 K22 R11   ; R6["z"] := R11
- 84 [-]: SELF      R11 R1 K24   ; R12 := R1; R11 := R1["0xD124E361"]
+ 83 [-]: SETTABLE  R6 K23 R11   ; R6["z"] := R11
+ 84 [-]: SELF      R11 R1 K25   ; R12 := R1; R11 := R1["0xD124E361"]
  85 [-]: GETUPVAL  R13 U2       ; R13 := U2
  86 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
- 87 [-]: GETTABLE  R14 R6 K18   ; R14 := R6["x"]
- 88 [-]: GETTABLE  R15 R6 K20   ; R15 := R6["y"]
- 89 [-]: GETTABLE  R16 R6 K22   ; R16 := R6["z"]
- 90 [-]: LOADK     R17 K12      ; R17 := 0.5
+ 87 [-]: GETTABLE  R14 R6 K19   ; R14 := R6["x"]
+ 88 [-]: GETTABLE  R15 R6 K21   ; R15 := R6["y"]
+ 89 [-]: GETTABLE  R16 R6 K23   ; R16 := R6["z"]
+ 90 [-]: LOADK     R17 K13      ; R17 := 0.5
  91 [-]: CALL      R11 7 1      ; R11(R12,R13,R14,R15,R16,R17)
  92 [-]: FORLOOP   R7 60        ; R7 += R9; if R7 <= R8 then begin PC := 60; R10 := R7 end
  93 [-]: RETURN    R0 1         ; return 
@@ -242,15 +242,15 @@ code size: 37
  23 [-]: SELF      R5 R4 K6     ; R6 := R4; R5 := R4["0xF21555A7"]
  24 [-]: GETGLOBAL R7 K7        ; R7 := Game
  25 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["AVATAR_ACROBATIC_SPEED"]
- 26 [-]: GETGLOBAL R8 K7        ; R8 := Game
- 27 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
+ 26 [-]: GETGLOBAL R8 K9        ; R8 := Engine
+ 27 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["STACKING_MULTIPLY"]
  28 [-]: MOVE      R9 R2        ; R9 := R2
  29 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  30 [-]: SELF      R5 R4 K6     ; R6 := R4; R5 := R4["0xF21555A7"]
  31 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 32 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["AVATAR_SLIDE_FRICTION"]
- 33 [-]: GETGLOBAL R8 K7        ; R8 := Game
- 34 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
+ 32 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["AVATAR_SLIDE_FRICTION"]
+ 33 [-]: GETGLOBAL R8 K9        ; R8 := Engine
+ 34 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["STACKING_MULTIPLY"]
  35 [-]: MOVE      R9 R3        ; R9 := R3
  36 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  37 [-]: RETURN    R0 1         ; return 

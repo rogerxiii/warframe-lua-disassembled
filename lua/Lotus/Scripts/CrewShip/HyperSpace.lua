@@ -1,5 +1,5 @@
 code size: 110
-code size: 338
+code size: 345
 code size: 81
 code size: 69
 code size: 32
@@ -9,12 +9,12 @@ code size: 62
 code size: 57
 code size: 66
 code size: 77
-code size: 269
+code size: 275
 code size: 39
 code size: 39
 code size: 17
 code size: 579
-code size: 126
+code size: 143
 code size: 74
 code size: 16
 code size: 36
@@ -149,7 +149,7 @@ code size: 44
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  25
+; Max Stack Size:  26
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gGameRules
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0xAD90C5F9"]
@@ -302,13 +302,13 @@ code size: 44
 149 [-]: GETGLOBAL R12 K4       ; R12 := 0x400E7765
 150 [-]: MOVE      R13 R9       ; R13 := R9
 151 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-152 [-]: TEST      R12 1        ; if R12 then PC := 216
-153 [-]: JMP       216          ; PC := 216
+152 [-]: TEST      R12 1        ; if R12 then PC := 223
+153 [-]: JMP       223          ; PC := 223
 154 [-]: GETGLOBAL R12 K4       ; R12 := 0x400E7765
 155 [-]: MOVE      R13 R10      ; R13 := R10
 156 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-157 [-]: TEST      R12 1        ; if R12 then PC := 216
-158 [-]: JMP       216          ; PC := 216
+157 [-]: TEST      R12 1        ; if R12 then PC := 223
+158 [-]: JMP       223          ; PC := 223
 159 [-]: GETGLOBAL R12 K23      ; R12 := ZERO_VECTOR
 160 [-]: SELF      R13 R9 K37   ; R14 := R9; R13 := R9["0x8B6C5EA2"]
 161 [-]: CALL      R13 2 2      ; R13 := R13(R14)
@@ -330,171 +330,178 @@ code size: 44
 177 [-]: SELF      R15 R2 K42   ; R16 := R2; R15 := R2["0xF2D3608D"]
 178 [-]: CALL      R15 2 1      ; R15(R16)
 179 [-]: GETUPVAL  R15 U1       ; R15 := U1
-180 [-]: LT        0 K6 R15     ; if 0 >= R15 then PC := 219
-181 [-]: JMP       219          ; PC := 219
-182 [-]: GETGLOBAL R16 K5       ; R16 := 0x201191EA
-183 [-]: LOADK     R17 K6       ; R17 := 0
-184 [-]: CALL      R16 2 1      ; R16(R17)
-185 [-]: GETGLOBAL R16 K4       ; R16 := 0x400E7765
-186 [-]: MOVE      R17 R3       ; R17 := R3
-187 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-188 [-]: TEST      R16 0        ; if not R16 then PC := 191
-189 [-]: JMP       191          ; PC := 191
-190 [-]: JMP       219          ; PC := 219
-191 [-]: GETGLOBAL R16 K43      ; R16 := math
-192 [-]: GETTABLE  R16 R16 K44  ; R16 := R16["0x8B011038"]
-193 [-]: LOADK     R17 K6       ; R17 := 0
-194 [-]: GETGLOBAL R18 K45      ; R18 := 0x4CDEF9FF
-195 [-]: CALL      R18 1 2      ; R18 := R18()
-196 [-]: SUB       R18 R15 R18  ; R18 := R15 - R18
-197 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
-198 [-]: MOVE      R15 R16      ; R15 := R16
-199 [-]: GETUPVAL  R16 U2       ; R16 := U2
-200 [-]: GETGLOBAL R17 K46      ; R17 := 0x9E1B8940
-201 [-]: GETUPVAL  R18 U1       ; R18 := U1
-202 [-]: DIV       R18 R15 R18  ; R18 := R15 / R18
-203 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-204 [-]: MUL       R16 R16 R17  ; R16 := R16 * R17
-205 [-]: MUL       R16 R7 R16   ; R16 := R7 * R16
-206 [-]: SELF      R17 R3 K21   ; R18 := R3; R17 := R3["0x6DA72501"]
-207 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-208 [-]: ADD       R17 R16 R17  ; R17 := R16 + R17
-209 [-]: SUB       R16 R17 R12  ; R16 := R17 - R12
-210 [-]: SELF      R17 R8 K47   ; R18 := R8; R17 := R8["0x39D7F449"]
-211 [-]: SUB       R19 R4 R16   ; R19 := R4 - R16
-212 [-]: MOVE      R20 R5       ; R20 := R5
-213 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
-214 [-]: JMP       180          ; PC := 180
-215 [-]: JMP       219          ; PC := 219
-216 [-]: GETGLOBAL R17 K48      ; R17 := 0x93B1256B
-217 [-]: LOADK     R18 K49      ; R18 := "ERROR: Warp point wasn't in any zone"
-218 [-]: CALL      R17 2 1      ; R17(R18)
-219 [-]: GETGLOBAL R17 K2       ; R17 := 0xEC274B1A
-220 [-]: LOADK     R18 K50      ; R18 := "CREWSHIP_WARP_IN"
-221 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-222 [-]: GETGLOBAL R18 K0       ; R18 := gGameRules
-223 [-]: SELF      R18 R18 K1   ; R19 := R18; R18 := R18["0xAD90C5F9"]
-224 [-]: MOVE      R20 R17      ; R20 := R17
-225 [-]: GETUPVAL  R21 U0       ; R21 := U0
-226 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-227 [-]: GETGLOBAL R18 K14      ; R18 := gRegion
-228 [-]: SELF      R18 R18 K15  ; R19 := R18; R18 := R18["0xA559F558"]
-229 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-230 [-]: TEST      R18 0        ; if not R18 then PC := 265
-231 [-]: JMP       265          ; PC := 265
-232 [-]: GETGLOBAL R18 K14      ; R18 := gRegion
-233 [-]: SELF      R18 R18 K20  ; R19 := R18; R18 := R18["0x90391273"]
-234 [-]: GETGLOBAL R20 K2       ; R20 := 0xEC274B1A
-235 [-]: LOADK     R21 K51      ; R21 := "ProceduralLevelTrigger"
-236 [-]: CALL      R20 2 0      ; R20,... := R20(R21)
-237 [-]: CALL      R18 0 2      ; R18 := R18(R19,...)
-238 [-]: GETGLOBAL R19 K4       ; R19 := 0x400E7765
-239 [-]: MOVE      R20 R18      ; R20 := R18
-240 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-241 [-]: TEST      R19 1        ; if R19 then PC := 245
-242 [-]: JMP       245          ; PC := 245
-243 [-]: SELF      R19 R18 K52  ; R20 := R18; R19 := R18["0xDA085F65"]
-244 [-]: CALL      R19 2 1      ; R19(R20)
-245 [-]: GETGLOBAL R19 K0       ; R19 := gGameRules
-246 [-]: SELF      R19 R19 K53  ; R20 := R19; R19 := R19["0xB36DAC85"]
-247 [-]: MOVE      R21 R17      ; R21 := R17
-248 [-]: CALL      R19 3 1      ; R19(R20,R21)
-249 [-]: GETGLOBAL R19 K4       ; R19 := 0x400E7765
-250 [-]: MOVE      R20 R3       ; R20 := R3
-251 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-252 [-]: TEST      R19 1        ; if R19 then PC := 265
-253 [-]: JMP       265          ; PC := 265
-254 [-]: GETGLOBAL R19 K54      ; R19 := 0xAEFCD98F
-255 [-]: SELF      R20 R8 K22   ; R21 := R8; R20 := R8["0xF23A7849"]
-256 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-257 [-]: SELF      R21 R3 K22   ; R22 := R3; R21 := R3["0xF23A7849"]
-258 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
-259 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
-260 [-]: SELF      R20 R3 K47   ; R21 := R3; R20 := R3["0x39D7F449"]
-261 [-]: SELF      R22 R8 K21   ; R23 := R8; R22 := R8["0x6DA72501"]
-262 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-263 [-]: MOVE      R23 R19      ; R23 := R19
-264 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
-265 [-]: GETGLOBAL R20 K4       ; R20 := 0x400E7765
-266 [-]: MOVE      R21 R3       ; R21 := R3
-267 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-268 [-]: TEST      R20 1        ; if R20 then PC := 285
-269 [-]: JMP       285          ; PC := 285
-270 [-]: GETGLOBAL R20 K4       ; R20 := 0x400E7765
-271 [-]: MOVE      R21 R10      ; R21 := R10
-272 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-273 [-]: TEST      R20 1        ; if R20 then PC := 285
-274 [-]: JMP       285          ; PC := 285
-275 [-]: SELF      R20 R3 K33   ; R21 := R3; R20 := R3["0x72E5DB62"]
-276 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-277 [-]: SELF      R21 R10 K33  ; R22 := R10; R21 := R10["0x72E5DB62"]
-278 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-279 [-]: EQ        0 R20 R21    ; if R20 ~= R21 then PC := 285
-280 [-]: JMP       285          ; PC := 285
-281 [-]: GETGLOBAL R20 K5       ; R20 := 0x201191EA
-282 [-]: LOADK     R21 K6       ; R21 := 0
-283 [-]: CALL      R20 2 1      ; R20(R21)
-284 [-]: JMP       265          ; PC := 265
-285 [-]: GETGLOBAL R20 K2       ; R20 := 0xEC274B1A
-286 [-]: LOADK     R21 K55      ; R21 := "CREWSHIP_TELEPORT"
-287 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-288 [-]: GETGLOBAL R21 K0       ; R21 := gGameRules
-289 [-]: SELF      R21 R21 K1   ; R22 := R21; R21 := R21["0xAD90C5F9"]
-290 [-]: MOVE      R23 R20      ; R23 := R20
-291 [-]: GETUPVAL  R24 U0       ; R24 := U0
-292 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
-293 [-]: GETGLOBAL R21 K14      ; R21 := gRegion
-294 [-]: SELF      R21 R21 K15  ; R22 := R21; R21 := R21["0xA559F558"]
-295 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-296 [-]: TEST      R21 0        ; if not R21 then PC := 320
-297 [-]: JMP       320          ; PC := 320
-298 [-]: GETGLOBAL R21 K0       ; R21 := gGameRules
-299 [-]: SELF      R21 R21 K53  ; R22 := R21; R21 := R21["0xB36DAC85"]
-300 [-]: MOVE      R23 R20      ; R23 := R20
-301 [-]: CALL      R21 3 1      ; R21(R22,R23)
-302 [-]: SELF      R21 R1 K56   ; R22 := R1; R21 := R1["0x68056787"]
-303 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
-304 [-]: GETTABLE  R23 R23 K57  ; R23 := R23["CrewShipMgr_MISSION_ACTIVE"]
-305 [-]: CALL      R21 3 1      ; R21(R22,R23)
-306 [-]: GETGLOBAL R21 K4       ; R21 := 0x400E7765
-307 [-]: MOVE      R22 R3       ; R22 := R3
-308 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-309 [-]: TEST      R21 1        ; if R21 then PC := 320
-310 [-]: JMP       320          ; PC := 320
-311 [-]: SELF      R21 R3 K16   ; R22 := R3; R21 := R3["0x1AEB7D88"]
-312 [-]: GETGLOBAL R23 K11      ; R23 := Lotus_Game
-313 [-]: GETTABLE  R23 R23 K58  ; R23 := R23["CrewShipAvatar_HDS_COOLING_DOWN"]
-314 [-]: CALL      R21 3 1      ; R21(R22,R23)
-315 [-]: SELF      R21 R3 K59   ; R22 := R3; R21 := R3["0x28609C89"]
-316 [-]: GETGLOBAL R23 K2       ; R23 := 0xEC274B1A
-317 [-]: LOADK     R24 K60      ; R24 := "Undock"
-318 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
-319 [-]: CALL      R21 0 1      ; R21(R22,...)
-320 [-]: GETGLOBAL R21 K0       ; R21 := gGameRules
-321 [-]: SELF      R21 R21 K7   ; R22 := R21; R21 := R21["0xBD8E0E5C"]
-322 [-]: MOVE      R23 R1       ; R23 := R1
-323 [-]: CALL      R21 3 1      ; R21(R22,R23)
-324 [-]: GETGLOBAL R21 K0       ; R21 := gGameRules
-325 [-]: SELF      R21 R21 K61  ; R22 := R21; R21 := R21["0xA8C9DBF8"]
-326 [-]: GETUPVAL  R23 U0       ; R23 := U0
-327 [-]: CALL      R21 3 1      ; R21(R22,R23)
-328 [-]: GETGLOBAL R21 K4       ; R21 := 0x400E7765
-329 [-]: GETGLOBAL R22 K62      ; R22 := gFlashMgr
-330 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-331 [-]: TEST      R21 1        ; if R21 then PC := 338
-332 [-]: JMP       338          ; PC := 338
-333 [-]: GETGLOBAL R21 K4       ; R21 := 0x400E7765
-334 [-]: GETGLOBAL R22 K63      ; R22 := exitHyperSpaceMovie
-335 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-336 [-]: TEST      R21 1        ; if R21 then PC := 338
-337 [-]: JMP       338          ; PC := 338
-338 [-]: RETURN    R0 1         ; return 
+180 [-]: GETGLOBAL R16 K43      ; R16 := gFlashMgr
+181 [-]: SELF      R16 R16 K44  ; R17 := R16; R16 := R16["0x1089D053"]
+182 [-]: LOADK     R18 K45      ; R18 := "CrewShip.FastCrewShip"
+183 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+184 [-]: TEST      R16 0        ; if not R16 then PC := 187
+185 [-]: JMP       187          ; PC := 187
+186 [-]: LOADK     R15 K46      ; R15 := 0.5
+187 [-]: MOVE      R16 R15      ; R16 := R15
+188 [-]: LT        0 K6 R16     ; if 0 >= R16 then PC := 226
+189 [-]: JMP       226          ; PC := 226
+190 [-]: GETGLOBAL R17 K5       ; R17 := 0x201191EA
+191 [-]: LOADK     R18 K6       ; R18 := 0
+192 [-]: CALL      R17 2 1      ; R17(R18)
+193 [-]: GETGLOBAL R17 K4       ; R17 := 0x400E7765
+194 [-]: MOVE      R18 R3       ; R18 := R3
+195 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+196 [-]: TEST      R17 0        ; if not R17 then PC := 199
+197 [-]: JMP       199          ; PC := 199
+198 [-]: JMP       226          ; PC := 226
+199 [-]: GETGLOBAL R17 K47      ; R17 := math
+200 [-]: GETTABLE  R17 R17 K48  ; R17 := R17["0x8B011038"]
+201 [-]: LOADK     R18 K6       ; R18 := 0
+202 [-]: GETGLOBAL R19 K49      ; R19 := 0x4CDEF9FF
+203 [-]: CALL      R19 1 2      ; R19 := R19()
+204 [-]: SUB       R19 R16 R19  ; R19 := R16 - R19
+205 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+206 [-]: MOVE      R16 R17      ; R16 := R17
+207 [-]: GETUPVAL  R17 U2       ; R17 := U2
+208 [-]: GETGLOBAL R18 K50      ; R18 := 0x9E1B8940
+209 [-]: DIV       R19 R16 R15  ; R19 := R16 / R15
+210 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+211 [-]: MUL       R17 R17 R18  ; R17 := R17 * R18
+212 [-]: MUL       R17 R7 R17   ; R17 := R7 * R17
+213 [-]: SELF      R18 R3 K21   ; R19 := R3; R18 := R3["0x6DA72501"]
+214 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+215 [-]: ADD       R18 R17 R18  ; R18 := R17 + R18
+216 [-]: SUB       R17 R18 R12  ; R17 := R18 - R12
+217 [-]: SELF      R18 R8 K51   ; R19 := R8; R18 := R8["0x39D7F449"]
+218 [-]: SUB       R20 R4 R17   ; R20 := R4 - R17
+219 [-]: MOVE      R21 R5       ; R21 := R5
+220 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
+221 [-]: JMP       188          ; PC := 188
+222 [-]: JMP       226          ; PC := 226
+223 [-]: GETGLOBAL R18 K52      ; R18 := 0x93B1256B
+224 [-]: LOADK     R19 K53      ; R19 := "ERROR: Warp point wasn't in any zone"
+225 [-]: CALL      R18 2 1      ; R18(R19)
+226 [-]: GETGLOBAL R18 K2       ; R18 := 0xEC274B1A
+227 [-]: LOADK     R19 K54      ; R19 := "CREWSHIP_WARP_IN"
+228 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+229 [-]: GETGLOBAL R19 K0       ; R19 := gGameRules
+230 [-]: SELF      R19 R19 K1   ; R20 := R19; R19 := R19["0xAD90C5F9"]
+231 [-]: MOVE      R21 R18      ; R21 := R18
+232 [-]: GETUPVAL  R22 U0       ; R22 := U0
+233 [-]: CALL      R19 4 1      ; R19(R20,R21,R22)
+234 [-]: GETGLOBAL R19 K14      ; R19 := gRegion
+235 [-]: SELF      R19 R19 K15  ; R20 := R19; R19 := R19["0xA559F558"]
+236 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+237 [-]: TEST      R19 0        ; if not R19 then PC := 272
+238 [-]: JMP       272          ; PC := 272
+239 [-]: GETGLOBAL R19 K14      ; R19 := gRegion
+240 [-]: SELF      R19 R19 K20  ; R20 := R19; R19 := R19["0x90391273"]
+241 [-]: GETGLOBAL R21 K2       ; R21 := 0xEC274B1A
+242 [-]: LOADK     R22 K55      ; R22 := "ProceduralLevelTrigger"
+243 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
+244 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
+245 [-]: GETGLOBAL R20 K4       ; R20 := 0x400E7765
+246 [-]: MOVE      R21 R19      ; R21 := R19
+247 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+248 [-]: TEST      R20 1        ; if R20 then PC := 252
+249 [-]: JMP       252          ; PC := 252
+250 [-]: SELF      R20 R19 K56  ; R21 := R19; R20 := R19["0xDA085F65"]
+251 [-]: CALL      R20 2 1      ; R20(R21)
+252 [-]: GETGLOBAL R20 K0       ; R20 := gGameRules
+253 [-]: SELF      R20 R20 K57  ; R21 := R20; R20 := R20["0xB36DAC85"]
+254 [-]: MOVE      R22 R18      ; R22 := R18
+255 [-]: CALL      R20 3 1      ; R20(R21,R22)
+256 [-]: GETGLOBAL R20 K4       ; R20 := 0x400E7765
+257 [-]: MOVE      R21 R3       ; R21 := R3
+258 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+259 [-]: TEST      R20 1        ; if R20 then PC := 272
+260 [-]: JMP       272          ; PC := 272
+261 [-]: GETGLOBAL R20 K58      ; R20 := 0xAEFCD98F
+262 [-]: SELF      R21 R8 K22   ; R22 := R8; R21 := R8["0xF23A7849"]
+263 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+264 [-]: SELF      R22 R3 K22   ; R23 := R3; R22 := R3["0xF23A7849"]
+265 [-]: CALL      R22 2 0      ; R22,... := R22(R23)
+266 [-]: CALL      R20 0 2      ; R20 := R20(R21,...)
+267 [-]: SELF      R21 R3 K51   ; R22 := R3; R21 := R3["0x39D7F449"]
+268 [-]: SELF      R23 R8 K21   ; R24 := R8; R23 := R8["0x6DA72501"]
+269 [-]: CALL      R23 2 2      ; R23 := R23(R24)
+270 [-]: MOVE      R24 R20      ; R24 := R20
+271 [-]: CALL      R21 4 1      ; R21(R22,R23,R24)
+272 [-]: GETGLOBAL R21 K4       ; R21 := 0x400E7765
+273 [-]: MOVE      R22 R3       ; R22 := R3
+274 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+275 [-]: TEST      R21 1        ; if R21 then PC := 292
+276 [-]: JMP       292          ; PC := 292
+277 [-]: GETGLOBAL R21 K4       ; R21 := 0x400E7765
+278 [-]: MOVE      R22 R10      ; R22 := R10
+279 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+280 [-]: TEST      R21 1        ; if R21 then PC := 292
+281 [-]: JMP       292          ; PC := 292
+282 [-]: SELF      R21 R3 K33   ; R22 := R3; R21 := R3["0x72E5DB62"]
+283 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+284 [-]: SELF      R22 R10 K33  ; R23 := R10; R22 := R10["0x72E5DB62"]
+285 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+286 [-]: EQ        0 R21 R22    ; if R21 ~= R22 then PC := 292
+287 [-]: JMP       292          ; PC := 292
+288 [-]: GETGLOBAL R21 K5       ; R21 := 0x201191EA
+289 [-]: LOADK     R22 K6       ; R22 := 0
+290 [-]: CALL      R21 2 1      ; R21(R22)
+291 [-]: JMP       272          ; PC := 272
+292 [-]: GETGLOBAL R21 K2       ; R21 := 0xEC274B1A
+293 [-]: LOADK     R22 K59      ; R22 := "CREWSHIP_TELEPORT"
+294 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+295 [-]: GETGLOBAL R22 K0       ; R22 := gGameRules
+296 [-]: SELF      R22 R22 K1   ; R23 := R22; R22 := R22["0xAD90C5F9"]
+297 [-]: MOVE      R24 R21      ; R24 := R21
+298 [-]: GETUPVAL  R25 U0       ; R25 := U0
+299 [-]: CALL      R22 4 1      ; R22(R23,R24,R25)
+300 [-]: GETGLOBAL R22 K14      ; R22 := gRegion
+301 [-]: SELF      R22 R22 K15  ; R23 := R22; R22 := R22["0xA559F558"]
+302 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+303 [-]: TEST      R22 0        ; if not R22 then PC := 327
+304 [-]: JMP       327          ; PC := 327
+305 [-]: GETGLOBAL R22 K0       ; R22 := gGameRules
+306 [-]: SELF      R22 R22 K57  ; R23 := R22; R22 := R22["0xB36DAC85"]
+307 [-]: MOVE      R24 R21      ; R24 := R21
+308 [-]: CALL      R22 3 1      ; R22(R23,R24)
+309 [-]: SELF      R22 R1 K60   ; R23 := R1; R22 := R1["0x68056787"]
+310 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
+311 [-]: GETTABLE  R24 R24 K61  ; R24 := R24["CrewShipMgr_MISSION_ACTIVE"]
+312 [-]: CALL      R22 3 1      ; R22(R23,R24)
+313 [-]: GETGLOBAL R22 K4       ; R22 := 0x400E7765
+314 [-]: MOVE      R23 R3       ; R23 := R3
+315 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+316 [-]: TEST      R22 1        ; if R22 then PC := 327
+317 [-]: JMP       327          ; PC := 327
+318 [-]: SELF      R22 R3 K16   ; R23 := R3; R22 := R3["0x1AEB7D88"]
+319 [-]: GETGLOBAL R24 K11      ; R24 := Lotus_Game
+320 [-]: GETTABLE  R24 R24 K62  ; R24 := R24["CrewShipAvatar_HDS_COOLING_DOWN"]
+321 [-]: CALL      R22 3 1      ; R22(R23,R24)
+322 [-]: SELF      R22 R3 K63   ; R23 := R3; R22 := R3["0x28609C89"]
+323 [-]: GETGLOBAL R24 K2       ; R24 := 0xEC274B1A
+324 [-]: LOADK     R25 K64      ; R25 := "Undock"
+325 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
+326 [-]: CALL      R22 0 1      ; R22(R23,...)
+327 [-]: GETGLOBAL R22 K0       ; R22 := gGameRules
+328 [-]: SELF      R22 R22 K7   ; R23 := R22; R22 := R22["0xBD8E0E5C"]
+329 [-]: MOVE      R24 R1       ; R24 := R1
+330 [-]: CALL      R22 3 1      ; R22(R23,R24)
+331 [-]: GETGLOBAL R22 K0       ; R22 := gGameRules
+332 [-]: SELF      R22 R22 K65  ; R23 := R22; R22 := R22["0xA8C9DBF8"]
+333 [-]: GETUPVAL  R24 U0       ; R24 := U0
+334 [-]: CALL      R22 3 1      ; R22(R23,R24)
+335 [-]: GETGLOBAL R22 K4       ; R22 := 0x400E7765
+336 [-]: GETGLOBAL R23 K43      ; R23 := gFlashMgr
+337 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+338 [-]: TEST      R22 1        ; if R22 then PC := 345
+339 [-]: JMP       345          ; PC := 345
+340 [-]: GETGLOBAL R22 K4       ; R22 := 0x400E7765
+341 [-]: GETGLOBAL R23 K66      ; R23 := exitHyperSpaceMovie
+342 [-]: CALL      R22 2 2      ; R22 := R22(R23)
+343 [-]: TEST      R22 1        ; if R22 then PC := 345
+344 [-]: JMP       345          ; PC := 345
+345 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 171
+; Defined at line: 177
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -586,7 +593,7 @@ code size: 44
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 213
+; Defined at line: 219
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -666,7 +673,7 @@ code size: 44
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 246
+; Defined at line: 252
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -709,7 +716,7 @@ code size: 44
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 269
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -901,7 +908,7 @@ code size: 44
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 351
+; Defined at line: 357
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -985,7 +992,7 @@ code size: 44
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 383
+; Defined at line: 389
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1058,7 +1065,7 @@ code size: 44
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 411
+; Defined at line: 417
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1126,7 +1133,7 @@ code size: 44
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 437
+; Defined at line: 443
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1203,7 +1210,7 @@ code size: 44
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 467
+; Defined at line: 473
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1291,11 +1298,11 @@ code size: 44
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 504
+; Defined at line: 510
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  20
+; Max Stack Size:  21
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: GETGLOBAL R2 K1        ; R2 := gGameRules
@@ -1473,105 +1480,111 @@ code size: 44
 174 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 175 [-]: LOADK     R14 K3       ; R14 := 0
 176 [-]: GETUPVAL  R15 U0       ; R15 := U0
-177 [-]: LT        0 R14 R15    ; if R14 >= R15 then PC := 226
-178 [-]: JMP       226          ; PC := 226
-179 [-]: GETGLOBAL R15 K2       ; R15 := 0x201191EA
-180 [-]: LOADK     R16 K3       ; R16 := 0
-181 [-]: CALL      R15 2 1      ; R15(R16)
-182 [-]: GETGLOBAL R15 K40      ; R15 := math
-183 [-]: GETTABLE  R15 R15 K41  ; R15 := R15["0x65F9712A"]
-184 [-]: GETUPVAL  R16 U0       ; R16 := U0
-185 [-]: GETGLOBAL R17 K42      ; R17 := 0x4CDEF9FF
-186 [-]: CALL      R17 1 2      ; R17 := R17()
-187 [-]: ADD       R17 R14 R17  ; R17 := R14 + R17
-188 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-189 [-]: MOVE      R14 R15      ; R14 := R15
-190 [-]: GETUPVAL  R15 U1       ; R15 := U1
-191 [-]: GETGLOBAL R16 K43      ; R16 := 0x9E1B8940
-192 [-]: GETUPVAL  R17 U0       ; R17 := U0
-193 [-]: DIV       R17 R14 R17  ; R17 := R14 / R17
-194 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-195 [-]: MUL       R15 R15 R16  ; R15 := R15 * R16
-196 [-]: MUL       R15 R13 R15  ; R15 := R13 * R15
-197 [-]: GETGLOBAL R16 K0       ; R16 := 0x400E7765
-198 [-]: MOVE      R17 R3       ; R17 := R3
-199 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-200 [-]: TEST      R16 0        ; if not R16 then PC := 206
-201 [-]: JMP       206          ; PC := 206
-202 [-]: GETGLOBAL R16 K31      ; R16 := 0x93B1256B
-203 [-]: LOADK     R17 K44      ; R17 := "HyperSpace.lua::EnterHyperSpace - crewShipAvatar went null while warping out!"
-204 [-]: CALL      R16 2 1      ; R16(R17)
-205 [-]: JMP       226          ; PC := 226
-206 [-]: GETGLOBAL R16 K0       ; R16 := 0x400E7765
-207 [-]: MOVE      R17 R4       ; R17 := R4
-208 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-209 [-]: TEST      R16 0        ; if not R16 then PC := 215
-210 [-]: JMP       215          ; PC := 215
-211 [-]: GETGLOBAL R16 K31      ; R16 := 0x93B1256B
-212 [-]: LOADK     R17 K45      ; R17 := "HyperSpace.lua::EnterHyperSpace = greenRoom went null while warping out!"
-213 [-]: CALL      R16 2 1      ; R16(R17)
-214 [-]: JMP       226          ; PC := 226
-215 [-]: SELF      R16 R3 K16   ; R17 := R3; R16 := R3["0x6DA72501"]
-216 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-217 [-]: ADD       R16 R15 R16  ; R16 := R15 + R16
-218 [-]: SELF      R17 R4 K16   ; R18 := R4; R17 := R4["0x6DA72501"]
-219 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-220 [-]: SUB       R15 R16 R17  ; R15 := R16 - R17
-221 [-]: SELF      R16 R10 K37  ; R17 := R10; R16 := R10["0x39D7F449"]
-222 [-]: ADD       R18 R6 R15   ; R18 := R6 + R15
-223 [-]: MOVE      R19 R7       ; R19 := R7
-224 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
-225 [-]: JMP       176          ; PC := 176
-226 [-]: GETGLOBAL R16 K0       ; R16 := 0x400E7765
-227 [-]: MOVE      R17 R4       ; R17 := R4
-228 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-229 [-]: TEST      R16 1        ; if R16 then PC := 238
-230 [-]: JMP       238          ; PC := 238
-231 [-]: SELF      R16 R4 K27   ; R17 := R4; R16 := R4["0xD385997"]
-232 [-]: GETGLOBAL R18 K10      ; R18 := 0xEC274B1A
-233 [-]: CALL      R18 1 0      ; R18,... := R18()
-234 [-]: CALL      R16 0 1      ; R16(R17,...)
-235 [-]: SELF      R16 R5 K29   ; R17 := R5; R16 := R5["0x381C1C06"]
-236 [-]: LOADNIL   R18 R18      ; R18 := nil
-237 [-]: CALL      R16 3 1      ; R16(R17,R18)
-238 [-]: GETGLOBAL R16 K21      ; R16 := gRegion
-239 [-]: SELF      R16 R16 K46  ; R17 := R16; R16 := R16["0x9B0A3887"]
-240 [-]: MOVE      R18 R10      ; R18 := R10
-241 [-]: CALL      R16 3 1      ; R16(R17,R18)
-242 [-]: GETGLOBAL R16 K10      ; R16 := 0xEC274B1A
-243 [-]: LOADK     R17 K47      ; R17 := "CREWSHIP_WARP_OUT"
-244 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-245 [-]: GETGLOBAL R17 K48      ; R17 := _T
-246 [-]: GETTABLE  R17 R17 K49  ; R17 := R17["Railjack_FromDojo"]
-247 [-]: TEST      R17 1        ; if R17 then PC := 253
-248 [-]: JMP       253          ; PC := 253
-249 [-]: GETGLOBAL R17 K1       ; R17 := gGameRules
-250 [-]: SELF      R17 R17 K50  ; R18 := R17; R17 := R17["0xAD90C5F9"]
-251 [-]: MOVE      R19 R16      ; R19 := R16
-252 [-]: CALL      R17 3 1      ; R17(R18,R19)
-253 [-]: GETGLOBAL R17 K21      ; R17 := gRegion
-254 [-]: SELF      R17 R17 K30  ; R18 := R17; R17 := R17["0xA559F558"]
-255 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-256 [-]: TEST      R17 0        ; if not R17 then PC := 266
-257 [-]: JMP       266          ; PC := 266
-258 [-]: GETGLOBAL R17 K48      ; R17 := _T
-259 [-]: GETTABLE  R17 R17 K49  ; R17 := R17["Railjack_FromDojo"]
-260 [-]: TEST      R17 1        ; if R17 then PC := 266
-261 [-]: JMP       266          ; PC := 266
-262 [-]: GETGLOBAL R17 K1       ; R17 := gGameRules
-263 [-]: SELF      R17 R17 K51  ; R18 := R17; R17 := R17["0xB36DAC85"]
-264 [-]: MOVE      R19 R16      ; R19 := R16
-265 [-]: CALL      R17 3 1      ; R17(R18,R19)
-266 [-]: GETGLOBAL R17 K31      ; R17 := 0x93B1256B
-267 [-]: LOADK     R18 K52      ; R18 := "EnterHyperSpace done"
-268 [-]: CALL      R17 2 1      ; R17(R18)
-269 [-]: RETURN    R0 1         ; return 
+177 [-]: GETGLOBAL R16 K40      ; R16 := gFlashMgr
+178 [-]: SELF      R16 R16 K41  ; R17 := R16; R16 := R16["0x1089D053"]
+179 [-]: LOADK     R18 K42      ; R18 := "CrewShip.FastCrewShip"
+180 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+181 [-]: TEST      R16 0        ; if not R16 then PC := 184
+182 [-]: JMP       184          ; PC := 184
+183 [-]: LOADK     R15 K43      ; R15 := 0.5
+184 [-]: LT        0 R14 R15    ; if R14 >= R15 then PC := 232
+185 [-]: JMP       232          ; PC := 232
+186 [-]: GETGLOBAL R16 K2       ; R16 := 0x201191EA
+187 [-]: LOADK     R17 K3       ; R17 := 0
+188 [-]: CALL      R16 2 1      ; R16(R17)
+189 [-]: GETGLOBAL R16 K44      ; R16 := math
+190 [-]: GETTABLE  R16 R16 K45  ; R16 := R16["0x65F9712A"]
+191 [-]: MOVE      R17 R15      ; R17 := R15
+192 [-]: GETGLOBAL R18 K46      ; R18 := 0x4CDEF9FF
+193 [-]: CALL      R18 1 2      ; R18 := R18()
+194 [-]: ADD       R18 R14 R18  ; R18 := R14 + R18
+195 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+196 [-]: MOVE      R14 R16      ; R14 := R16
+197 [-]: GETUPVAL  R16 U1       ; R16 := U1
+198 [-]: GETGLOBAL R17 K47      ; R17 := 0x9E1B8940
+199 [-]: DIV       R18 R14 R15  ; R18 := R14 / R15
+200 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+201 [-]: MUL       R16 R16 R17  ; R16 := R16 * R17
+202 [-]: MUL       R16 R13 R16  ; R16 := R13 * R16
+203 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+204 [-]: MOVE      R18 R3       ; R18 := R3
+205 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+206 [-]: TEST      R17 0        ; if not R17 then PC := 212
+207 [-]: JMP       212          ; PC := 212
+208 [-]: GETGLOBAL R17 K31      ; R17 := 0x93B1256B
+209 [-]: LOADK     R18 K48      ; R18 := "HyperSpace.lua::EnterHyperSpace - crewShipAvatar went null while warping out!"
+210 [-]: CALL      R17 2 1      ; R17(R18)
+211 [-]: JMP       232          ; PC := 232
+212 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+213 [-]: MOVE      R18 R4       ; R18 := R4
+214 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+215 [-]: TEST      R17 0        ; if not R17 then PC := 221
+216 [-]: JMP       221          ; PC := 221
+217 [-]: GETGLOBAL R17 K31      ; R17 := 0x93B1256B
+218 [-]: LOADK     R18 K49      ; R18 := "HyperSpace.lua::EnterHyperSpace = greenRoom went null while warping out!"
+219 [-]: CALL      R17 2 1      ; R17(R18)
+220 [-]: JMP       232          ; PC := 232
+221 [-]: SELF      R17 R3 K16   ; R18 := R3; R17 := R3["0x6DA72501"]
+222 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+223 [-]: ADD       R17 R16 R17  ; R17 := R16 + R17
+224 [-]: SELF      R18 R4 K16   ; R19 := R4; R18 := R4["0x6DA72501"]
+225 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+226 [-]: SUB       R16 R17 R18  ; R16 := R17 - R18
+227 [-]: SELF      R17 R10 K37  ; R18 := R10; R17 := R10["0x39D7F449"]
+228 [-]: ADD       R19 R6 R16   ; R19 := R6 + R16
+229 [-]: MOVE      R20 R7       ; R20 := R7
+230 [-]: CALL      R17 4 1      ; R17(R18,R19,R20)
+231 [-]: JMP       184          ; PC := 184
+232 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+233 [-]: MOVE      R18 R4       ; R18 := R4
+234 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+235 [-]: TEST      R17 1        ; if R17 then PC := 244
+236 [-]: JMP       244          ; PC := 244
+237 [-]: SELF      R17 R4 K27   ; R18 := R4; R17 := R4["0xD385997"]
+238 [-]: GETGLOBAL R19 K10      ; R19 := 0xEC274B1A
+239 [-]: CALL      R19 1 0      ; R19,... := R19()
+240 [-]: CALL      R17 0 1      ; R17(R18,...)
+241 [-]: SELF      R17 R5 K29   ; R18 := R5; R17 := R5["0x381C1C06"]
+242 [-]: LOADNIL   R19 R19      ; R19 := nil
+243 [-]: CALL      R17 3 1      ; R17(R18,R19)
+244 [-]: GETGLOBAL R17 K21      ; R17 := gRegion
+245 [-]: SELF      R17 R17 K50  ; R18 := R17; R17 := R17["0x9B0A3887"]
+246 [-]: MOVE      R19 R10      ; R19 := R10
+247 [-]: CALL      R17 3 1      ; R17(R18,R19)
+248 [-]: GETGLOBAL R17 K10      ; R17 := 0xEC274B1A
+249 [-]: LOADK     R18 K51      ; R18 := "CREWSHIP_WARP_OUT"
+250 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+251 [-]: GETGLOBAL R18 K52      ; R18 := _T
+252 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["Railjack_FromDojo"]
+253 [-]: TEST      R18 1        ; if R18 then PC := 259
+254 [-]: JMP       259          ; PC := 259
+255 [-]: GETGLOBAL R18 K1       ; R18 := gGameRules
+256 [-]: SELF      R18 R18 K54  ; R19 := R18; R18 := R18["0xAD90C5F9"]
+257 [-]: MOVE      R20 R17      ; R20 := R17
+258 [-]: CALL      R18 3 1      ; R18(R19,R20)
+259 [-]: GETGLOBAL R18 K21      ; R18 := gRegion
+260 [-]: SELF      R18 R18 K30  ; R19 := R18; R18 := R18["0xA559F558"]
+261 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+262 [-]: TEST      R18 0        ; if not R18 then PC := 272
+263 [-]: JMP       272          ; PC := 272
+264 [-]: GETGLOBAL R18 K52      ; R18 := _T
+265 [-]: GETTABLE  R18 R18 K53  ; R18 := R18["Railjack_FromDojo"]
+266 [-]: TEST      R18 1        ; if R18 then PC := 272
+267 [-]: JMP       272          ; PC := 272
+268 [-]: GETGLOBAL R18 K1       ; R18 := gGameRules
+269 [-]: SELF      R18 R18 K55  ; R19 := R18; R18 := R18["0xB36DAC85"]
+270 [-]: MOVE      R20 R17      ; R20 := R17
+271 [-]: CALL      R18 3 1      ; R18(R19,R20)
+272 [-]: GETGLOBAL R18 K31      ; R18 := 0x93B1256B
+273 [-]: LOADK     R19 K56      ; R19 := "EnterHyperSpace done"
+274 [-]: CALL      R18 2 1      ; R18(R19)
+275 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 614
+; Defined at line: 625
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1621,7 +1634,7 @@ code size: 44
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 635
+; Defined at line: 646
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1671,7 +1684,7 @@ code size: 44
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 656
+; Defined at line: 667
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1699,7 +1712,7 @@ code size: 44
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 666
+; Defined at line: 677
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2289,7 +2302,7 @@ code size: 44
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 905
+; Defined at line: 916
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2309,11 +2322,11 @@ code size: 44
  12 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["0x8A2E8315"]
  13 [-]: MOVE      R3 R1        ; R3 := R1
  14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 15 [-]: TEST      R2 0         ; if not R2 then PC := 123
- 16 [-]: JMP       123          ; PC := 123
+ 15 [-]: TEST      R2 0         ; if not R2 then PC := 140
+ 16 [-]: JMP       140          ; PC := 140
  17 [-]: GETTABLE  R3 R2 K7     ; R3 := R2["name"]
- 18 [-]: TEST      R3 0         ; if not R3 then PC := 123
- 19 [-]: JMP       123          ; PC := 123
+ 18 [-]: TEST      R3 0         ; if not R3 then PC := 140
+ 19 [-]: JMP       140          ; PC := 140
  20 [-]: GETGLOBAL R3 K8        ; R3 := string
  21 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0xDE44F664"]
  22 [-]: GETTABLE  R4 R2 K7     ; R4 := R2["name"]
@@ -2342,91 +2355,108 @@ code size: 44
  45 [-]: LOADK     R4 K15       ; R4 := "Dojo mission callback: ineligible for selected mission"
  46 [-]: CALL      R3 2 1       ; R3(R4)
  47 [-]: RETURN    R0 1         ; return 
- 48 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 49 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["0xBB3AACF2"]
- 50 [-]: CALL      R3 1 2       ; R3 := R3()
- 51 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 52 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["0xA104474E"]
- 53 [-]: GETTABLE  R5 R2 K7     ; R5 := R2["name"]
- 54 [-]: MOVE      R6 R3        ; R6 := R3
- 55 [-]: LOADNIL   R7 R7        ; R7 := nil
- 56 [-]: CALL      R4 4 4       ; R4,R5,R6 := R4(R5,R6,R7)
- 57 [-]: GETGLOBAL R7 K18       ; R7 := 0x400E7765
- 58 [-]: MOVE      R8 R4        ; R8 := R4
- 59 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 60 [-]: TEST      R7 1         ; if R7 then PC := 95
- 61 [-]: JMP       95           ; PC := 95
- 62 [-]: GETTABLE  R7 R4 K19    ; R7 := R4["mission"]
- 63 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["missionType"]
- 64 [-]: GETGLOBAL R8 K21       ; R8 := Lotus_Game
- 65 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["MT_RAILJACK"]
- 66 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 95
- 67 [-]: JMP       95           ; PC := 95
- 68 [-]: GETGLOBAL R7 K8        ; R7 := string
- 69 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["0xDE44F664"]
- 70 [-]: GETTABLE  R8 R2 K7     ; R8 := R2["name"]
- 71 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 72 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["KEY_TAG"]
- 73 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 74 [-]: TEST      R7 0         ; if not R7 then PC := 83
- 75 [-]: JMP       83           ; PC := 83
- 76 [-]: GETGLOBAL R7 K8        ; R7 := string
- 77 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["0xDE44F664"]
- 78 [-]: GETTABLE  R8 R2 K7     ; R8 := R2["name"]
- 79 [-]: LOADK     R9 K24       ; R9 := "CrewBattle"
- 80 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 81 [-]: TEST      R7 1         ; if R7 then PC := 90
- 82 [-]: JMP       90           ; PC := 90
- 83 [-]: GETGLOBAL R7 K3        ; R7 := 0x93B1256B
- 84 [-]: LOADK     R8 K25       ; R8 := "Dojo mission callback - ignoring non-railjack mission "
- 85 [-]: GETTABLE  R9 R2 K7     ; R9 := R2["name"]
- 86 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 87 [-]: CALL      R7 2 1       ; R7(R8)
- 88 [-]: RETURN    R0 1         ; return 
- 89 [-]: JMP       95           ; PC := 95
- 90 [-]: GETGLOBAL R7 K3        ; R7 := 0x93B1256B
- 91 [-]: LOADK     R8 K26       ; R8 := "Suspicious mission type, but classified as railjack mission: "
- 92 [-]: GETTABLE  R9 R2 K7     ; R9 := R2["name"]
- 93 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
- 94 [-]: CALL      R7 2 1       ; R7(R8)
- 95 [-]: GETGLOBAL R7 K0        ; R7 := gGameRules
- 96 [-]: SELF      R7 R7 K27    ; R8 := R7; R7 := R7["0x1106FFC3"]
- 97 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 98 [-]: GETGLOBAL R8 K28       ; R8 := 0xEC274B1A
- 99 [-]: GETTABLE  R9 R2 K7     ; R9 := R2["name"]
-100 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-101 [-]: GETGLOBAL R9 K12       ; R9 := _T
-102 [-]: SETTABLE  R9 K29 R8    ; R9["RailJackNextMissionNode"] := R8
-103 [-]: GETGLOBAL R9 K12       ; R9 := _T
-104 [-]: GETGLOBAL R10 K0       ; R10 := gGameRules
-105 [-]: SELF      R10 R10 K1   ; R11 := R10; R10 := R10["0x8B598ED4"]
-106 [-]: GETGLOBAL R12 K31      ; R12 := gLotusAttractModeGameRulesType
-107 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-108 [-]: SETTABLE  R9 K30 R10   ; R9["SeamlessRailJackTransition"] := R10
-109 [-]: SELF      R9 R3 K32    ; R10 := R3; R9 := R3["0xDF213CE1"]
-110 [-]: GETGLOBAL R11 K28      ; R11 := 0xEC274B1A
-111 [-]: LOADK     R12 K33      ; R12 := "CrewShipGenericTunnel"
-112 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
-113 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
-114 [-]: SELF      R10 R7 K34   ; R11 := R7; R10 := R7["0xD93C7568"]
-115 [-]: GETTABLE  R12 R9 K19   ; R12 := R9["mission"]
-116 [-]: CALL      R10 3 1      ; R10(R11,R12)
-117 [-]: GETGLOBAL R10 K3       ; R10 := 0x93B1256B
-118 [-]: LOADK     R11 K35      ; R11 := "Dojo mission callback - handled"
-119 [-]: CALL      R10 2 1      ; R10(R11)
-120 [-]: MOVE      R10 R1       ; R10 := R1
-121 [-]: RETURN    R10 2        ; return R10
-122 [-]: JMP       126          ; PC := 126
-123 [-]: GETGLOBAL R10 K3       ; R10 := 0x93B1256B
-124 [-]: LOADK     R11 K36      ; R11 := "Dojo mission callback - ignored (no mission)"
-125 [-]: CALL      R10 2 1      ; R10(R11)
-126 [-]: RETURN    R0 1         ; return 
+ 48 [-]: GETGLOBAL R3 K12       ; R3 := _T
+ 49 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["InRailJackMode"]
+ 50 [-]: TEST      R3 0         ; if not R3 then PC := 65
+ 51 [-]: JMP       65           ; PC := 65
+ 52 [-]: GETGLOBAL R3 K12       ; R3 := _T
+ 53 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["InRailJackMode"]
+ 54 [-]: EQ        0 R3 K17     ; if R3 ~= 2 then PC := 65
+ 55 [-]: JMP       65           ; PC := 65
+ 56 [-]: GETGLOBAL R3 K18       ; R3 := gMatchingService
+ 57 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3["0x1FEAD306"]
+ 58 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 59 [-]: TEST      R3 0         ; if not R3 then PC := 65
+ 60 [-]: JMP       65           ; PC := 65
+ 61 [-]: GETGLOBAL R3 K3        ; R3 := 0x93B1256B
+ 62 [-]: LOADK     R4 K20       ; R4 := "We are not allowed to host railjack missions (not on board), ignoring"
+ 63 [-]: CALL      R3 2 1       ; R3(R4)
+ 64 [-]: RETURN    R0 1         ; return 
+ 65 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 66 [-]: GETTABLE  R3 R3 K21    ; R3 := R3["0xBB3AACF2"]
+ 67 [-]: CALL      R3 1 2       ; R3 := R3()
+ 68 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 69 [-]: GETTABLE  R4 R4 K22    ; R4 := R4["0xA104474E"]
+ 70 [-]: GETTABLE  R5 R2 K7     ; R5 := R2["name"]
+ 71 [-]: MOVE      R6 R3        ; R6 := R3
+ 72 [-]: LOADNIL   R7 R7        ; R7 := nil
+ 73 [-]: CALL      R4 4 4       ; R4,R5,R6 := R4(R5,R6,R7)
+ 74 [-]: GETGLOBAL R7 K23       ; R7 := 0x400E7765
+ 75 [-]: MOVE      R8 R4        ; R8 := R4
+ 76 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 77 [-]: TEST      R7 1         ; if R7 then PC := 112
+ 78 [-]: JMP       112          ; PC := 112
+ 79 [-]: GETTABLE  R7 R4 K24    ; R7 := R4["mission"]
+ 80 [-]: GETTABLE  R7 R7 K25    ; R7 := R7["missionType"]
+ 81 [-]: GETGLOBAL R8 K26       ; R8 := Lotus_Game
+ 82 [-]: GETTABLE  R8 R8 K27    ; R8 := R8["MT_RAILJACK"]
+ 83 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 112
+ 84 [-]: JMP       112          ; PC := 112
+ 85 [-]: GETGLOBAL R7 K8        ; R7 := string
+ 86 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["0xDE44F664"]
+ 87 [-]: GETTABLE  R8 R2 K7     ; R8 := R2["name"]
+ 88 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 89 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["KEY_TAG"]
+ 90 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 91 [-]: TEST      R7 0         ; if not R7 then PC := 100
+ 92 [-]: JMP       100          ; PC := 100
+ 93 [-]: GETGLOBAL R7 K8        ; R7 := string
+ 94 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["0xDE44F664"]
+ 95 [-]: GETTABLE  R8 R2 K7     ; R8 := R2["name"]
+ 96 [-]: LOADK     R9 K29       ; R9 := "CrewBattle"
+ 97 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+ 98 [-]: TEST      R7 1         ; if R7 then PC := 107
+ 99 [-]: JMP       107          ; PC := 107
+100 [-]: GETGLOBAL R7 K3        ; R7 := 0x93B1256B
+101 [-]: LOADK     R8 K30       ; R8 := "Dojo mission callback - ignoring non-railjack mission "
+102 [-]: GETTABLE  R9 R2 K7     ; R9 := R2["name"]
+103 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+104 [-]: CALL      R7 2 1       ; R7(R8)
+105 [-]: RETURN    R0 1         ; return 
+106 [-]: JMP       112          ; PC := 112
+107 [-]: GETGLOBAL R7 K3        ; R7 := 0x93B1256B
+108 [-]: LOADK     R8 K31       ; R8 := "Suspicious mission type, but classified as railjack mission: "
+109 [-]: GETTABLE  R9 R2 K7     ; R9 := R2["name"]
+110 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+111 [-]: CALL      R7 2 1       ; R7(R8)
+112 [-]: GETGLOBAL R7 K0        ; R7 := gGameRules
+113 [-]: SELF      R7 R7 K32    ; R8 := R7; R7 := R7["0x1106FFC3"]
+114 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+115 [-]: GETGLOBAL R8 K33       ; R8 := 0xEC274B1A
+116 [-]: GETTABLE  R9 R2 K7     ; R9 := R2["name"]
+117 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+118 [-]: GETGLOBAL R9 K12       ; R9 := _T
+119 [-]: SETTABLE  R9 K34 R8    ; R9["RailJackNextMissionNode"] := R8
+120 [-]: GETGLOBAL R9 K12       ; R9 := _T
+121 [-]: GETGLOBAL R10 K0       ; R10 := gGameRules
+122 [-]: SELF      R10 R10 K1   ; R11 := R10; R10 := R10["0x8B598ED4"]
+123 [-]: GETGLOBAL R12 K36      ; R12 := gLotusAttractModeGameRulesType
+124 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+125 [-]: SETTABLE  R9 K35 R10   ; R9["SeamlessRailJackTransition"] := R10
+126 [-]: SELF      R9 R3 K37    ; R10 := R3; R9 := R3["0xDF213CE1"]
+127 [-]: GETGLOBAL R11 K33      ; R11 := 0xEC274B1A
+128 [-]: LOADK     R12 K38      ; R12 := "CrewShipGenericTunnel"
+129 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+130 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
+131 [-]: SELF      R10 R7 K39   ; R11 := R7; R10 := R7["0xD93C7568"]
+132 [-]: GETTABLE  R12 R9 K24   ; R12 := R9["mission"]
+133 [-]: CALL      R10 3 1      ; R10(R11,R12)
+134 [-]: GETGLOBAL R10 K3       ; R10 := 0x93B1256B
+135 [-]: LOADK     R11 K40      ; R11 := "Dojo mission callback - handled"
+136 [-]: CALL      R10 2 1      ; R10(R11)
+137 [-]: MOVE      R10 R1       ; R10 := R1
+138 [-]: RETURN    R10 2        ; return R10
+139 [-]: JMP       143          ; PC := 143
+140 [-]: GETGLOBAL R10 K3       ; R10 := 0x93B1256B
+141 [-]: LOADK     R11 K41      ; R11 := "Dojo mission callback - ignored (no mission)"
+142 [-]: CALL      R10 2 1      ; R10(R11)
+143 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 954
+; Defined at line: 971
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2511,7 +2541,7 @@ code size: 44
 ; Function #17.1:
 ;
 ; Name:            
-; Defined at line: 971
+; Defined at line: 988
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2538,7 +2568,7 @@ code size: 44
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 1002
+; Defined at line: 1019
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2585,7 +2615,7 @@ code size: 44
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 1015
+; Defined at line: 1032
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2640,7 +2670,7 @@ code size: 44
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 1038
+; Defined at line: 1055
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -233,20 +233,20 @@ code size: 31
  11 [-]: SELF      R6 R4 K3     ; R7 := R4; R6 := R4["0x3B1B11B9"]
  12 [-]: GETGLOBAL R8 K4        ; R8 := Game
  13 [-]: GETTABLE  R8 R8 K5     ; R8 := R8["WEAPON_HOLSTERED_AUTO_RELOAD_RATE"]
- 14 [-]: GETGLOBAL R9 K4        ; R9 := Game
- 15 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["ADD"]
- 16 [-]: GETGLOBAL R10 K7       ; R10 := holsterReloadRate
- 17 [-]: GETGLOBAL R11 K8       ; R11 := math
- 18 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0x65F9712A"]
- 19 [-]: GETGLOBAL R12 K7       ; R12 := holsterReloadRate
+ 14 [-]: GETGLOBAL R9 K6        ; R9 := Engine
+ 15 [-]: GETTABLE  R9 R9 K7     ; R9 := R9["ADD"]
+ 16 [-]: GETGLOBAL R10 K8       ; R10 := holsterReloadRate
+ 17 [-]: GETGLOBAL R11 K9       ; R11 := math
+ 18 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x65F9712A"]
+ 19 [-]: GETGLOBAL R12 K8       ; R12 := holsterReloadRate
  20 [-]: LEN       R12 R12      ; R12 := # R12
  21 [-]: MOVE      R13 R2       ; R13 := R2
  22 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
  23 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
  24 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 25 [-]: SELF      R6 R0 K10    ; R7 := R0; R6 := R0["0xB26452A2"]
- 26 [-]: GETGLOBAL R8 K11       ; R8 := 0xEC274B1A
- 27 [-]: LOADK     R9 K12       ; R9 := "UpdateHudBuffs"
+ 25 [-]: SELF      R6 R0 K11    ; R7 := R0; R6 := R0["0xB26452A2"]
+ 26 [-]: GETGLOBAL R8 K12       ; R8 := 0xEC274B1A
+ 27 [-]: LOADK     R9 K13       ; R9 := "UpdateHudBuffs"
  28 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  29 [-]: MOVE      R9 R0        ; R9 := R0
  30 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)

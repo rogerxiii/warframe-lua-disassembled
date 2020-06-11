@@ -376,7 +376,7 @@ code size: 21
  23 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  24 [-]: MOVE      R3 R1        ; R3 := R1
  25 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 26 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Game/WEAPON_RANGE"
+ 26 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  27 [-]: GETUPVAL  R5 U1        ; R5 := U1
  28 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
  29 [-]: SETTABLE  R4 K11 K12   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -1409,7 +1409,7 @@ code size: 21
 203 [-]: SELF      R24 R24 K58  ; R25 := R24; R24 := R24["0x3B1B11B9"]
 204 [-]: GETGLOBAL R26 K59      ; R26 := Game
 205 [-]: GETTABLE  R26 R26 K60  ; R26 := R26["AVATAR_PARKOUR_BOOST"]
-206 [-]: GETGLOBAL R27 K59      ; R27 := Game
+206 [-]: GETGLOBAL R27 K21      ; R27 := Engine
 207 [-]: GETTABLE  R27 R27 K61  ; R27 := R27["SET"]
 208 [-]: LOADK     R28 K62      ; R28 := 0.5
 209 [-]: LOADNIL   R29 R30      ; R29 := R30 := nil
@@ -1494,7 +1494,7 @@ code size: 21
 288 [-]: SELF      R25 R14 K58  ; R26 := R14; R25 := R14["0x3B1B11B9"]
 289 [-]: GETGLOBAL R27 K59      ; R27 := Game
 290 [-]: GETTABLE  R27 R27 K77  ; R27 := R27["AVATAR_DAMAGE_RESISTANCE"]
-291 [-]: GETGLOBAL R28 K59      ; R28 := Game
+291 [-]: GETGLOBAL R28 K21      ; R28 := Engine
 292 [-]: GETTABLE  R28 R28 K78  ; R28 := R28["ADD"]
 293 [-]: GETUPVAL  R29 U4       ; R29 := U4
 294 [-]: GETUPVAL  R30 U5       ; R30 := U5
@@ -1502,7 +1502,7 @@ code size: 21
 296 [-]: SELF      R25 R14 K58  ; R26 := R14; R25 := R14["0x3B1B11B9"]
 297 [-]: GETGLOBAL R27 K59      ; R27 := Game
 298 [-]: GETTABLE  R27 R27 K77  ; R27 := R27["AVATAR_DAMAGE_RESISTANCE"]
-299 [-]: GETGLOBAL R28 K59      ; R28 := Game
+299 [-]: GETGLOBAL R28 K21      ; R28 := Engine
 300 [-]: GETTABLE  R28 R28 K78  ; R28 := R28["ADD"]
 301 [-]: GETUPVAL  R29 U4       ; R29 := U4
 302 [-]: GETUPVAL  R30 U6       ; R30 := U6
@@ -1832,7 +1832,7 @@ code size: 21
 626 [-]: SELF      R42 R42 K112 ; R43 := R42; R42 := R42["0xF21555A7"]
 627 [-]: GETGLOBAL R44 K59      ; R44 := Game
 628 [-]: GETTABLE  R44 R44 K60  ; R44 := R44["AVATAR_PARKOUR_BOOST"]
-629 [-]: GETGLOBAL R45 K59      ; R45 := Game
+629 [-]: GETGLOBAL R45 K21      ; R45 := Engine
 630 [-]: GETTABLE  R45 R45 K61  ; R45 := R45["SET"]
 631 [-]: LOADK     R46 K62      ; R46 := 0.5
 632 [-]: LOADNIL   R47 R48      ; R47 := R48 := nil
@@ -1851,7 +1851,7 @@ code size: 21
 645 [-]: SELF      R42 R14 K112 ; R43 := R14; R42 := R14["0xF21555A7"]
 646 [-]: GETGLOBAL R44 K59      ; R44 := Game
 647 [-]: GETTABLE  R44 R44 K77  ; R44 := R44["AVATAR_DAMAGE_RESISTANCE"]
-648 [-]: GETGLOBAL R45 K59      ; R45 := Game
+648 [-]: GETGLOBAL R45 K21      ; R45 := Engine
 649 [-]: GETTABLE  R45 R45 K78  ; R45 := R45["ADD"]
 650 [-]: GETUPVAL  R46 U4       ; R46 := U4
 651 [-]: GETUPVAL  R47 U5       ; R47 := U5
@@ -1859,7 +1859,7 @@ code size: 21
 653 [-]: SELF      R42 R14 K112 ; R43 := R14; R42 := R14["0xF21555A7"]
 654 [-]: GETGLOBAL R44 K59      ; R44 := Game
 655 [-]: GETTABLE  R44 R44 K77  ; R44 := R44["AVATAR_DAMAGE_RESISTANCE"]
-656 [-]: GETGLOBAL R45 K59      ; R45 := Game
+656 [-]: GETGLOBAL R45 K21      ; R45 := Engine
 657 [-]: GETTABLE  R45 R45 K78  ; R45 := R45["ADD"]
 658 [-]: GETUPVAL  R46 U4       ; R46 := U4
 659 [-]: GETUPVAL  R47 U6       ; R47 := U6

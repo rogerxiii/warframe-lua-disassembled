@@ -345,15 +345,15 @@ code size: 170
 108 [-]: CALL      R7 6 2       ; R7 := R7(R8,R9,R10,R11,R12)
 109 [-]: MOVE      R4 R7        ; R4 := R7
 110 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0["0x5DB0BD4"]
-111 [-]: LOADK     R9 K29       ; R9 := "/Game/AVATAR_HEALTH_MAX"
+111 [-]: LOADK     R9 K29       ; R9 := "/Lotus/Language/Labels/AVATAR_HEALTH_MAX"
 112 [-]: MOVE      R10 R0       ; R10 := R0
 113 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
 114 [-]: SELF      R8 R0 K5     ; R9 := R0; R8 := R0["0x5DB0BD4"]
-115 [-]: LOADK     R10 K30      ; R10 := "/Game/AVATAR_SHIELD"
+115 [-]: LOADK     R10 K30      ; R10 := "/Lotus/Language/Labels/AVATAR_SHIELD"
 116 [-]: MOVE      R11 R0       ; R11 := R0
 117 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
 118 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0["0x5DB0BD4"]
-119 [-]: LOADK     R11 K31      ; R11 := "/Game/AVATAR_ARMOUR"
+119 [-]: LOADK     R11 K31      ; R11 := "/Lotus/Language/Labels/AVATAR_ARMOUR"
 120 [-]: MOVE      R12 R0       ; R12 := R0
 121 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
 122 [-]: GETTABLE  R10 R1 K32   ; R10 := R1["maxHealth"]

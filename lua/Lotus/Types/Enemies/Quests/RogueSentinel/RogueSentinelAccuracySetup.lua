@@ -70,7 +70,7 @@ code size: 78
  35 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x3B1B11B9"]
  36 [-]: GETGLOBAL R3 K9        ; R3 := Game
  37 [-]: GETTABLE  R3 R3 K10    ; R3 := R3["AVATAR_NPC_HIT_CHANCE"]
- 38 [-]: GETGLOBAL R4 K9        ; R4 := Game
+ 38 [-]: GETGLOBAL R4 K5        ; R4 := Engine
  39 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["MULTIPLY"]
  40 [-]: GETUPVAL  R5 U0        ; R5 := U0
  41 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
@@ -79,7 +79,7 @@ code size: 78
  44 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x3B1B11B9"]
  45 [-]: GETGLOBAL R3 K9        ; R3 := Game
  46 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["WEAPON_DAMAGE_AMOUNT"]
- 47 [-]: GETGLOBAL R4 K9        ; R4 := Game
+ 47 [-]: GETGLOBAL R4 K5        ; R4 := Engine
  48 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["MULTIPLY"]
  49 [-]: GETUPVAL  R5 U1        ; R5 := U1
  50 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
@@ -88,7 +88,7 @@ code size: 78
  53 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x3B1B11B9"]
  54 [-]: GETGLOBAL R3 K9        ; R3 := Game
  55 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["WEAPON_MELEE_DAMAGE"]
- 56 [-]: GETGLOBAL R4 K9        ; R4 := Game
+ 56 [-]: GETGLOBAL R4 K5        ; R4 := Engine
  57 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["MULTIPLY"]
  58 [-]: GETUPVAL  R5 U1        ; R5 := U1
  59 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
@@ -97,7 +97,7 @@ code size: 78
  62 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x3B1B11B9"]
  63 [-]: GETGLOBAL R3 K9        ; R3 := Game
  64 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["WEAPON_PROC_CHANCE"]
- 65 [-]: GETGLOBAL R4 K9        ; R4 := Game
+ 65 [-]: GETGLOBAL R4 K5        ; R4 := Engine
  66 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["MULTIPLY"]
  67 [-]: GETUPVAL  R5 U2        ; R5 := U2
  68 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
@@ -106,7 +106,7 @@ code size: 78
  71 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x3B1B11B9"]
  72 [-]: GETGLOBAL R3 K9        ; R3 := Game
  73 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["WEAPON_FIRE_RATE"]
- 74 [-]: GETGLOBAL R4 K9        ; R4 := Game
+ 74 [-]: GETGLOBAL R4 K5        ; R4 := Engine
  75 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["MULTIPLY"]
  76 [-]: GETUPVAL  R5 U3        ; R5 := U3
  77 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)

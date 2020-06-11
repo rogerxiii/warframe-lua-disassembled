@@ -59,7 +59,7 @@ code size: 76
 code size: 94
 code size: 738
 code size: 25
-code size: 30
+code size: 14
 code size: 19
 code size: 19
 code size: 70
@@ -4327,40 +4327,24 @@ code size: 43
 
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mGameRules"]
   2 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x8B598ED4"]
-  3 [-]: GETGLOBAL R3 K2        ; R3 := gLotusRailCustomizationGameRulesType
+  3 [-]: GETGLOBAL R3 K2        ; R3 := gLotusDojoGameRulesType
   4 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
-  5 [-]: TEST      R1 0         ; if not R1 then PC := 17
-  6 [-]: JMP       17           ; PC := 17
-  7 [-]: GETGLOBAL R1 K3        ; R1 := _T
-  8 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["DojoMgr"]
-  9 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["mGameRules"]
- 10 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1["0xCB608811"]
- 11 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 12 [-]: TEST      R1 0         ; if not R1 then PC := 17
- 13 [-]: JMP       17           ; PC := 17
- 14 [-]: MOVE      R1 R1        ; R1 := R1
- 15 [-]: RETURN    R1 2         ; return R1
- 16 [-]: JMP       28           ; PC := 28
- 17 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mGameRules"]
- 18 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x8B598ED4"]
- 19 [-]: GETGLOBAL R3 K6        ; R3 := gLotusDojoGameRulesType
- 20 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 21 [-]: TEST      R1 0         ; if not R1 then PC := 28
- 22 [-]: JMP       28           ; PC := 28
- 23 [-]: GETTABLE  R1 R0 K7     ; R1 := R0["mDojo"]
- 24 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0x522FB157"]
- 25 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 26 [-]: MOVE      R1 R1        ; R1 := R1
- 27 [-]: RETURN    R1 2         ; return R1
- 28 [-]: MOVE      R1 R1        ; R1 := R1
- 29 [-]: RETURN    R1 2         ; return R1
- 30 [-]: RETURN    R0 1         ; return 
+  5 [-]: TEST      R1 0         ; if not R1 then PC := 12
+  6 [-]: JMP       12           ; PC := 12
+  7 [-]: GETTABLE  R1 R0 K3     ; R1 := R0["mDojo"]
+  8 [-]: SELF      R1 R1 K4     ; R2 := R1; R1 := R1["0x522FB157"]
+  9 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 10 [-]: MOVE      R1 R1        ; R1 := R1
+ 11 [-]: RETURN    R1 2         ; return R1
+ 12 [-]: MOVE      R1 R1        ; R1 := R1
+ 13 [-]: RETURN    R1 2         ; return R1
+ 14 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9.53:
 ;
 ; Name:            
-; Defined at line: 1495
+; Defined at line: 1493
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -4390,7 +4374,7 @@ code size: 43
 ; Function #9.54:
 ;
 ; Name:            
-; Defined at line: 1504
+; Defined at line: 1502
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -4420,7 +4404,7 @@ code size: 43
 ; Function #9.55:
 ;
 ; Name:            
-; Defined at line: 1513
+; Defined at line: 1511
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4501,7 +4485,7 @@ code size: 43
 ; Function #9.56:
 ;
 ; Name:            
-; Defined at line: 1535
+; Defined at line: 1533
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -4552,7 +4536,7 @@ code size: 43
 ; Function #9.57:
 ;
 ; Name:            
-; Defined at line: 1546
+; Defined at line: 1544
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -4595,7 +4579,7 @@ code size: 43
 ; Function #9.58:
 ;
 ; Name:            
-; Defined at line: 1553
+; Defined at line: 1551
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -4915,7 +4899,7 @@ code size: 43
 ; Function #9.59:
 ;
 ; Name:            
-; Defined at line: 1656
+; Defined at line: 1654
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4944,7 +4928,7 @@ code size: 43
 ; Function #9.60:
 ;
 ; Name:            
-; Defined at line: 1667
+; Defined at line: 1665
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -4988,7 +4972,7 @@ code size: 43
 ; Function #9.61:
 ;
 ; Name:            
-; Defined at line: 1687
+; Defined at line: 1685
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5036,7 +5020,7 @@ code size: 43
 ; Function #9.62:
 ;
 ; Name:            
-; Defined at line: 1704
+; Defined at line: 1702
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -5104,7 +5088,7 @@ code size: 43
 ; Function #9.63:
 ;
 ; Name:            
-; Defined at line: 1722
+; Defined at line: 1720
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -5206,7 +5190,7 @@ code size: 43
 ; Function #9.64:
 ;
 ; Name:            
-; Defined at line: 1753
+; Defined at line: 1751
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5220,7 +5204,7 @@ code size: 43
 ; Function #9.65:
 ;
 ; Name:            
-; Defined at line: 1757
+; Defined at line: 1755
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5234,7 +5218,7 @@ code size: 43
 ; Function #9.66:
 ;
 ; Name:            
-; Defined at line: 1761
+; Defined at line: 1759
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5248,7 +5232,7 @@ code size: 43
 ; Function #9.67:
 ;
 ; Name:            
-; Defined at line: 1765
+; Defined at line: 1763
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

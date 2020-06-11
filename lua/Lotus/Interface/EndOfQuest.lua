@@ -18,7 +18,7 @@ code size: 27
 code size: 22
 code size: 14
 code size: 244
-code size: 355
+code size: 363
 code size: 142
 code size: 3
 code size: 35
@@ -1241,232 +1241,240 @@ code size: 13
 127 [-]: CALL      R15 4 0      ; R15,... := R15(R16,R17,R18)
 128 [-]: CALL      R12 0 1      ; R12(R13,...)
 129 [-]: GETGLOBAL R12 K16      ; R12 := mMovie
-130 [-]: SELF      R12 R12 K17  ; R13 := R12; R12 := R12["0x17028E8F"]
-131 [-]: LOADK     R14 K21      ; R14 := "QuestDesc.Title.text"
-132 [-]: GETUPVAL  R15 U6       ; R15 := U6
-133 [-]: SELF      R15 R15 K22  ; R16 := R15; R15 := R15["0x616C74B6"]
-134 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-135 [-]: SELF      R15 R15 K23  ; R16 := R15; R15 := R15["0x5EC7A3D2"]
-136 [-]: CALL      R15 2 0      ; R15,... := R15(R16)
-137 [-]: CALL      R12 0 1      ; R12(R13,...)
-138 [-]: GETGLOBAL R12 K24      ; R12 := 0xF595ADDE
-139 [-]: GETGLOBAL R13 K16      ; R13 := mMovie
-140 [-]: SELF      R13 R13 K25  ; R14 := R13; R13 := R13["0x6B7B470B"]
-141 [-]: LOADK     R15 K26      ; R15 := "QuestDesc.Title"
-142 [-]: LOADK     R16 K27      ; R16 := "textWidth"
-143 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
-144 [-]: CALL      R12 0 2      ; R12 := R12(R13,...)
-145 [-]: TEST      R11 0        ; if not R11 then PC := 162
-146 [-]: JMP       162          ; PC := 162
-147 [-]: GETGLOBAL R13 K24      ; R13 := 0xF595ADDE
-148 [-]: GETGLOBAL R14 K16      ; R14 := mMovie
-149 [-]: SELF      R14 R14 K25  ; R15 := R14; R14 := R14["0x6B7B470B"]
-150 [-]: LOADK     R16 K26      ; R16 := "QuestDesc.Title"
-151 [-]: LOADK     R17 K28      ; R17 := "_width"
-152 [-]: CALL      R14 4 0      ; R14,... := R14(R15,R16,R17)
-153 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
-154 [-]: LT        0 R13 R12    ; if R13 >= R12 then PC := 162
-155 [-]: JMP       162          ; PC := 162
-156 [-]: GETGLOBAL R13 K16      ; R13 := mMovie
-157 [-]: SELF      R13 R13 K29  ; R14 := R13; R13 := R13["0x1C19D966"]
-158 [-]: LOADK     R15 K26      ; R15 := "QuestDesc.Title"
-159 [-]: LOADK     R16 K30      ; R16 := "letterSpacing"
-160 [-]: LOADK     R17 K31      ; R17 := 0
-161 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-162 [-]: GETGLOBAL R13 K16      ; R13 := mMovie
-163 [-]: SELF      R13 R13 K29  ; R14 := R13; R13 := R13["0x1C19D966"]
-164 [-]: LOADK     R15 K32      ; R15 := "QuestDesc.Desc"
-165 [-]: LOADK     R16 K33      ; R16 := "verticalAlignment"
-166 [-]: LOADK     R17 K34      ; R17 := "bottom"
-167 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-168 [-]: LOADK     R13 K35      ; R13 := ""
-169 [-]: GETUPVAL  R14 U3       ; R14 := U3
-170 [-]: GETUPVAL  R15 U5       ; R15 := U5
-171 [-]: GETTABLE  R15 R15 K7   ; R15 := R15["COMPLETING"]
-172 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 180
-173 [-]: JMP       180          ; PC := 180
-174 [-]: GETUPVAL  R14 U6       ; R14 := U6
-175 [-]: SELF      R14 R14 K36  ; R15 := R14; R14 := R14["0xA29ADB3"]
-176 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-177 [-]: SELF      R14 R14 K23  ; R15 := R14; R14 := R14["0x5EC7A3D2"]
-178 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-179 [-]: MOVE      R13 R14      ; R13 := R14
-180 [-]: EQ        0 R13 K35    ; if R13 ~= "" then PC := 188
+130 [-]: SELF      R12 R12 K21  ; R13 := R12; R12 := R12["0x1C19D966"]
+131 [-]: LOADK     R14 K22      ; R14 := "QuestDesc.Title"
+132 [-]: LOADK     R15 K23      ; R15 := "text"
+133 [-]: GETGLOBAL R16 K24      ; R16 := string
+134 [-]: GETTABLE  R16 R16 K25  ; R16 := R16["0x639C642A"]
+135 [-]: GETGLOBAL R17 K16      ; R17 := mMovie
+136 [-]: SELF      R17 R17 K26  ; R18 := R17; R17 := R17["0x5DB0BD4"]
+137 [-]: GETUPVAL  R19 U6       ; R19 := U6
+138 [-]: SELF      R19 R19 K27  ; R20 := R19; R19 := R19["0x616C74B6"]
+139 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+140 [-]: SELF      R19 R19 K28  ; R20 := R19; R19 := R19["0x5EC7A3D2"]
+141 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+142 [-]: MOVE      R20 R1       ; R20 := R1
+143 [-]: CALL      R17 4 0      ; R17,... := R17(R18,R19,R20)
+144 [-]: CALL      R16 0 0      ; R16,... := R16(R17,...)
+145 [-]: CALL      R12 0 1      ; R12(R13,...)
+146 [-]: GETGLOBAL R12 K29      ; R12 := 0xF595ADDE
+147 [-]: GETGLOBAL R13 K16      ; R13 := mMovie
+148 [-]: SELF      R13 R13 K30  ; R14 := R13; R13 := R13["0x6B7B470B"]
+149 [-]: LOADK     R15 K22      ; R15 := "QuestDesc.Title"
+150 [-]: LOADK     R16 K31      ; R16 := "textWidth"
+151 [-]: CALL      R13 4 0      ; R13,... := R13(R14,R15,R16)
+152 [-]: CALL      R12 0 2      ; R12 := R12(R13,...)
+153 [-]: TEST      R11 0        ; if not R11 then PC := 170
+154 [-]: JMP       170          ; PC := 170
+155 [-]: GETGLOBAL R13 K29      ; R13 := 0xF595ADDE
+156 [-]: GETGLOBAL R14 K16      ; R14 := mMovie
+157 [-]: SELF      R14 R14 K30  ; R15 := R14; R14 := R14["0x6B7B470B"]
+158 [-]: LOADK     R16 K22      ; R16 := "QuestDesc.Title"
+159 [-]: LOADK     R17 K32      ; R17 := "_width"
+160 [-]: CALL      R14 4 0      ; R14,... := R14(R15,R16,R17)
+161 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
+162 [-]: LT        0 R13 R12    ; if R13 >= R12 then PC := 170
+163 [-]: JMP       170          ; PC := 170
+164 [-]: GETGLOBAL R13 K16      ; R13 := mMovie
+165 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13["0x1C19D966"]
+166 [-]: LOADK     R15 K22      ; R15 := "QuestDesc.Title"
+167 [-]: LOADK     R16 K33      ; R16 := "letterSpacing"
+168 [-]: LOADK     R17 K34      ; R17 := 0
+169 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+170 [-]: GETGLOBAL R13 K16      ; R13 := mMovie
+171 [-]: SELF      R13 R13 K21  ; R14 := R13; R13 := R13["0x1C19D966"]
+172 [-]: LOADK     R15 K35      ; R15 := "QuestDesc.Desc"
+173 [-]: LOADK     R16 K36      ; R16 := "verticalAlignment"
+174 [-]: LOADK     R17 K37      ; R17 := "bottom"
+175 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
+176 [-]: LOADK     R13 K38      ; R13 := ""
+177 [-]: GETUPVAL  R14 U3       ; R14 := U3
+178 [-]: GETUPVAL  R15 U5       ; R15 := U5
+179 [-]: GETTABLE  R15 R15 K7   ; R15 := R15["COMPLETING"]
+180 [-]: EQ        0 R14 R15    ; if R14 ~= R15 then PC := 188
 181 [-]: JMP       188          ; PC := 188
 182 [-]: GETUPVAL  R14 U6       ; R14 := U6
-183 [-]: SELF      R14 R14 K37  ; R15 := R14; R14 := R14["0x42300EB5"]
+183 [-]: SELF      R14 R14 K39  ; R15 := R14; R14 := R14["0xA29ADB3"]
 184 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-185 [-]: SELF      R14 R14 K23  ; R15 := R14; R14 := R14["0x5EC7A3D2"]
+185 [-]: SELF      R14 R14 K28  ; R15 := R14; R14 := R14["0x5EC7A3D2"]
 186 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 187 [-]: MOVE      R13 R14      ; R13 := R14
-188 [-]: GETGLOBAL R14 K16      ; R14 := mMovie
-189 [-]: SELF      R14 R14 K17  ; R15 := R14; R14 := R14["0x17028E8F"]
-190 [-]: LOADK     R16 K38      ; R16 := "QuestDesc.Desc.text"
-191 [-]: MOVE      R17 R13      ; R17 := R13
-192 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
-193 [-]: LOADK     R14 K31      ; R14 := 0
-194 [-]: EQ        1 R13 K35    ; if R13 == "" then PC := 205
-195 [-]: JMP       205          ; PC := 205
-196 [-]: GETGLOBAL R15 K24      ; R15 := 0xF595ADDE
-197 [-]: GETGLOBAL R16 K16      ; R16 := mMovie
-198 [-]: SELF      R16 R16 K25  ; R17 := R16; R16 := R16["0x6B7B470B"]
-199 [-]: LOADK     R18 K32      ; R18 := "QuestDesc.Desc"
-200 [-]: LOADK     R19 K39      ; R19 := "textHeight"
-201 [-]: CALL      R16 4 0      ; R16,... := R16(R17,R18,R19)
-202 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
-203 [-]: ADD       R14 R15 K40  ; R14 := R15 + 40
-204 [-]: JMP       211          ; PC := 211
-205 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-206 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-207 [-]: LOADK     R17 K41      ; R17 := "QuestDesc.Separator"
-208 [-]: LOADK     R18 K42      ; R18 := "_visible"
-209 [-]: MOVE      R19 R0       ; R19 := R0
-210 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-211 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-212 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-213 [-]: LOADK     R17 K43      ; R17 := "QuestDesc.BgFill"
-214 [-]: LOADK     R18 K44      ; R18 := "_height"
-215 [-]: ADD       R19 R14 K45  ; R19 := R14 + 70
-216 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-217 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-218 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-219 [-]: LOADK     R17 K41      ; R17 := "QuestDesc.Separator"
-220 [-]: LOADK     R18 K46      ; R18 := "_y"
-221 [-]: UNM       R19 R14      ; R19 := - R14
-222 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-223 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-224 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-225 [-]: LOADK     R17 K26      ; R17 := "QuestDesc.Title"
-226 [-]: LOADK     R18 K46      ; R18 := "_y"
-227 [-]: ADD       R19 R14 K47  ; R19 := R14 + 60
-228 [-]: UNM       R19 R19      ; R19 := - R19
-229 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-230 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-231 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-232 [-]: LOADK     R17 K48      ; R17 := "QuestDesc.BgUpperLine"
-233 [-]: LOADK     R18 K46      ; R18 := "_y"
-234 [-]: ADD       R19 R14 K45  ; R19 := R14 + 70
-235 [-]: UNM       R19 R19      ; R19 := - R19
-236 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-237 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-238 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-239 [-]: LOADK     R17 K49      ; R17 := "QuestDesc.CompletionTitle"
-240 [-]: LOADK     R18 K46      ; R18 := "_y"
-241 [-]: ADD       R19 R14 K50  ; R19 := R14 + 100
-242 [-]: UNM       R19 R19      ; R19 := - R19
-243 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-244 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-245 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-246 [-]: LOADK     R17 K51      ; R17 := "RewardPanel.TitleBg"
-247 [-]: LOADK     R18 K52      ; R18 := "_color"
-248 [-]: GETGLOBAL R19 K53      ; R19 := _G
-249 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["UIColor_DarkBlue"]
-250 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-251 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-252 [-]: SELF      R15 R15 K29  ; R16 := R15; R15 := R15["0x1C19D966"]
-253 [-]: LOADK     R17 K55      ; R17 := "RewardPanel.Reward.Bg"
-254 [-]: LOADK     R18 K52      ; R18 := "_color"
-255 [-]: GETGLOBAL R19 K53      ; R19 := _G
-256 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["UIColor_DarkBlue"]
-257 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-258 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
-259 [-]: SELF      R15 R15 K17  ; R16 := R15; R15 := R15["0x17028E8F"]
-260 [-]: LOADK     R17 K56      ; R17 := "RewardPanel.Title.text"
-261 [-]: LOADK     R18 K57      ; R18 := "/Lotus/Language/Menu/Codex_QuestRewardTitle"
-262 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
-263 [-]: GETTABLE  R15 R10 K4   ; R15 := R10["mItemType"]
-264 [-]: GETTABLE  R16 R10 K15  ; R16 := R10["mStoreItemType"]
-265 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
-266 [-]: MOVE      R18 R15      ; R18 := R15
-267 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-268 [-]: TEST      R17 1        ; if R17 then PC := 280
-269 [-]: JMP       280          ; PC := 280
-270 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
-271 [-]: GETUPVAL  R18 U10      ; R18 := U10
-272 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-273 [-]: TEST      R17 1        ; if R17 then PC := 280
-274 [-]: JMP       280          ; PC := 280
-275 [-]: GETUPVAL  R17 U10      ; R17 := U10
-276 [-]: SELF      R17 R17 K58  ; R18 := R17; R17 := R17["0x62FBC1B8"]
-277 [-]: MOVE      R19 R15      ; R19 := R15
-278 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-279 [-]: MOVE      R16 R17      ; R16 := R17
-280 [-]: GETGLOBAL R17 K16      ; R17 := mMovie
-281 [-]: SELF      R17 R17 K29  ; R18 := R17; R17 := R17["0x1C19D966"]
-282 [-]: LOADK     R19 K59      ; R19 := "RewardPanel"
-283 [-]: LOADK     R20 K42      ; R20 := "_visible"
-284 [-]: MOVE      R21 R0       ; R21 := R0
-285 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
-286 [-]: TEST      R11 0        ; if not R11 then PC := 314
-287 [-]: JMP       314          ; PC := 314
-288 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
-289 [-]: MOVE      R18 R16      ; R18 := R16
-290 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-291 [-]: TEST      R17 1        ; if R17 then PC := 297
-292 [-]: JMP       297          ; PC := 297
-293 [-]: MOVE      R16 R11      ; R16 := R11
-294 [-]: GETUPVAL  R17 U12      ; R17 := U12
-295 [-]: CALL      R17 1 1      ; R17()
-296 [-]: JMP       314          ; PC := 314
-297 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
-298 [-]: MOVE      R18 R15      ; R18 := R15
-299 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-300 [-]: TEST      R17 1        ; if R17 then PC := 314
-301 [-]: JMP       314          ; PC := 314
-302 [-]: MOVE      R15 R13      ; R15 := R13
-303 [-]: MOVE      R17 R1       ; R17 := R1
-304 [-]: MOVE      R17 R14      ; R17 := R14
-305 [-]: GETGLOBAL R17 K60      ; R17 := UISys
-306 [-]: GETTABLE  R17 R17 K61  ; R17 := R17["0x449B53E0"]
-307 [-]: NEWTABLE  R18 0 0      ; R18 := {}
-308 [-]: GETUPVAL  R19 U13      ; R19 := U13
-309 [-]: SELF      R19 R19 K5   ; R20 := R19; R19 := R19["0x1B252E3C"]
-310 [-]: CALL      R19 2 0      ; R19,... := R19(R20)
-311 [-]: SETLIST   R18 0 1      ; R18[(1-1)*FPF+i] := R(18+i), 1 <= i <= 0
-312 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-313 [-]: MOVE      R17 R15      ; R17 := R15
-314 [-]: GETGLOBAL R17 K16      ; R17 := mMovie
-315 [-]: SELF      R17 R17 K29  ; R18 := R17; R17 := R17["0x1C19D966"]
-316 [-]: LOADK     R19 K62      ; R19 := "AcquireQuestBtn"
-317 [-]: LOADK     R20 K42      ; R20 := "_visible"
-318 [-]: GETUPVAL  R21 U3       ; R21 := U3
-319 [-]: GETUPVAL  R22 U5       ; R22 := U5
-320 [-]: GETTABLE  R22 R22 K8   ; R22 := R22["ACQUIRING"]
-321 [-]: EQ        1 R21 R22    ; if R21 == R22 then PC := 324
-322 [-]: JMP       324          ; PC := 324
-323 [-]: MOVE      R21 R0       ; R21 := R0
-324 [-]: MOVE      R21 R1       ; R21 := R1
-325 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
-326 [-]: GETUPVAL  R17 U3       ; R17 := U3
-327 [-]: GETUPVAL  R18 U5       ; R18 := U5
-328 [-]: GETTABLE  R18 R18 K8   ; R18 := R18["ACQUIRING"]
-329 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 353
-330 [-]: JMP       353          ; PC := 353
-331 [-]: GETGLOBAL R17 K63      ; R17 := 0x329BDC44
-332 [-]: LOADK     R18 K64      ; R18 := "Lotus.Interface.Components.Button"
-333 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-334 [-]: GETTABLE  R18 R17 K65  ; R18 := R17["0xF232C660"]
-335 [-]: GETGLOBAL R19 K16      ; R19 := mMovie
-336 [-]: LOADK     R20 K62      ; R20 := "AcquireQuestBtn"
-337 [-]: LOADK     R21 K66      ; R21 := "/Lotus/Language/Menu/Quests_AcquireBtn"
-338 [-]: LOADK     R22 K67      ; R22 := "AcquireQuest"
-339 [-]: LOADK     R23 K68      ; R23 := "<MENU_SELECT>"
-340 [-]: LOADNIL   R24 R25      ; R24 := R25 := nil
-341 [-]: MOVE      R26 R1       ; R26 := R1
-342 [-]: CALL      R18 9 2      ; R18 := R18(R19,R20,R21,R22,R23,R24,R25,R26)
-343 [-]: MOVE      R18 R16      ; R18 := R16
-344 [-]: GETUPVAL  R18 U16      ; R18 := U16
-345 [-]: SETTABLE  R18 K69 K70  ; R18["mWidth"] := 300
-346 [-]: GETUPVAL  R18 U16      ; R18 := U16
-347 [-]: SETTABLE  R18 K71 K72  ; R18["mAlignment"] := "center"
-348 [-]: GETUPVAL  R18 U16      ; R18 := U16
-349 [-]: SETTABLE  R18 K73 K74  ; R18["mApplyMaterials"] := "0x0"
-350 [-]: GETUPVAL  R18 U16      ; R18 := U16
-351 [-]: SELF      R18 R18 K75  ; R19 := R18; R18 := R18["0x6470BAF4"]
-352 [-]: CALL      R18 2 1      ; R18(R19)
-353 [-]: GETUPVAL  R18 U17      ; R18 := U17
-354 [-]: CALL      R18 1 1      ; R18()
-355 [-]: RETURN    R0 1         ; return 
+188 [-]: EQ        0 R13 K38    ; if R13 ~= "" then PC := 196
+189 [-]: JMP       196          ; PC := 196
+190 [-]: GETUPVAL  R14 U6       ; R14 := U6
+191 [-]: SELF      R14 R14 K40  ; R15 := R14; R14 := R14["0x42300EB5"]
+192 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+193 [-]: SELF      R14 R14 K28  ; R15 := R14; R14 := R14["0x5EC7A3D2"]
+194 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+195 [-]: MOVE      R13 R14      ; R13 := R14
+196 [-]: GETGLOBAL R14 K16      ; R14 := mMovie
+197 [-]: SELF      R14 R14 K17  ; R15 := R14; R14 := R14["0x17028E8F"]
+198 [-]: LOADK     R16 K41      ; R16 := "QuestDesc.Desc.text"
+199 [-]: MOVE      R17 R13      ; R17 := R13
+200 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
+201 [-]: LOADK     R14 K34      ; R14 := 0
+202 [-]: EQ        1 R13 K38    ; if R13 == "" then PC := 213
+203 [-]: JMP       213          ; PC := 213
+204 [-]: GETGLOBAL R15 K29      ; R15 := 0xF595ADDE
+205 [-]: GETGLOBAL R16 K16      ; R16 := mMovie
+206 [-]: SELF      R16 R16 K30  ; R17 := R16; R16 := R16["0x6B7B470B"]
+207 [-]: LOADK     R18 K35      ; R18 := "QuestDesc.Desc"
+208 [-]: LOADK     R19 K42      ; R19 := "textHeight"
+209 [-]: CALL      R16 4 0      ; R16,... := R16(R17,R18,R19)
+210 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
+211 [-]: ADD       R14 R15 K43  ; R14 := R15 + 40
+212 [-]: JMP       219          ; PC := 219
+213 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+214 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+215 [-]: LOADK     R17 K44      ; R17 := "QuestDesc.Separator"
+216 [-]: LOADK     R18 K45      ; R18 := "_visible"
+217 [-]: MOVE      R19 R0       ; R19 := R0
+218 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+219 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+220 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+221 [-]: LOADK     R17 K46      ; R17 := "QuestDesc.BgFill"
+222 [-]: LOADK     R18 K47      ; R18 := "_height"
+223 [-]: ADD       R19 R14 K48  ; R19 := R14 + 70
+224 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+225 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+226 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+227 [-]: LOADK     R17 K44      ; R17 := "QuestDesc.Separator"
+228 [-]: LOADK     R18 K49      ; R18 := "_y"
+229 [-]: UNM       R19 R14      ; R19 := - R14
+230 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+231 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+232 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+233 [-]: LOADK     R17 K22      ; R17 := "QuestDesc.Title"
+234 [-]: LOADK     R18 K49      ; R18 := "_y"
+235 [-]: ADD       R19 R14 K50  ; R19 := R14 + 60
+236 [-]: UNM       R19 R19      ; R19 := - R19
+237 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+238 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+239 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+240 [-]: LOADK     R17 K51      ; R17 := "QuestDesc.BgUpperLine"
+241 [-]: LOADK     R18 K49      ; R18 := "_y"
+242 [-]: ADD       R19 R14 K48  ; R19 := R14 + 70
+243 [-]: UNM       R19 R19      ; R19 := - R19
+244 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+245 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+246 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+247 [-]: LOADK     R17 K52      ; R17 := "QuestDesc.CompletionTitle"
+248 [-]: LOADK     R18 K49      ; R18 := "_y"
+249 [-]: ADD       R19 R14 K53  ; R19 := R14 + 100
+250 [-]: UNM       R19 R19      ; R19 := - R19
+251 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+252 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+253 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+254 [-]: LOADK     R17 K54      ; R17 := "RewardPanel.TitleBg"
+255 [-]: LOADK     R18 K55      ; R18 := "_color"
+256 [-]: GETGLOBAL R19 K56      ; R19 := _G
+257 [-]: GETTABLE  R19 R19 K57  ; R19 := R19["UIColor_DarkBlue"]
+258 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+259 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+260 [-]: SELF      R15 R15 K21  ; R16 := R15; R15 := R15["0x1C19D966"]
+261 [-]: LOADK     R17 K58      ; R17 := "RewardPanel.Reward.Bg"
+262 [-]: LOADK     R18 K55      ; R18 := "_color"
+263 [-]: GETGLOBAL R19 K56      ; R19 := _G
+264 [-]: GETTABLE  R19 R19 K57  ; R19 := R19["UIColor_DarkBlue"]
+265 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+266 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+267 [-]: SELF      R15 R15 K17  ; R16 := R15; R15 := R15["0x17028E8F"]
+268 [-]: LOADK     R17 K59      ; R17 := "RewardPanel.Title.text"
+269 [-]: LOADK     R18 K60      ; R18 := "/Lotus/Language/Menu/Codex_QuestRewardTitle"
+270 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+271 [-]: GETTABLE  R15 R10 K4   ; R15 := R10["mItemType"]
+272 [-]: GETTABLE  R16 R10 K15  ; R16 := R10["mStoreItemType"]
+273 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+274 [-]: MOVE      R18 R15      ; R18 := R15
+275 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+276 [-]: TEST      R17 1        ; if R17 then PC := 288
+277 [-]: JMP       288          ; PC := 288
+278 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+279 [-]: GETUPVAL  R18 U10      ; R18 := U10
+280 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+281 [-]: TEST      R17 1        ; if R17 then PC := 288
+282 [-]: JMP       288          ; PC := 288
+283 [-]: GETUPVAL  R17 U10      ; R17 := U10
+284 [-]: SELF      R17 R17 K61  ; R18 := R17; R17 := R17["0x62FBC1B8"]
+285 [-]: MOVE      R19 R15      ; R19 := R15
+286 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+287 [-]: MOVE      R16 R17      ; R16 := R17
+288 [-]: GETGLOBAL R17 K16      ; R17 := mMovie
+289 [-]: SELF      R17 R17 K21  ; R18 := R17; R17 := R17["0x1C19D966"]
+290 [-]: LOADK     R19 K62      ; R19 := "RewardPanel"
+291 [-]: LOADK     R20 K45      ; R20 := "_visible"
+292 [-]: MOVE      R21 R0       ; R21 := R0
+293 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+294 [-]: TEST      R11 0        ; if not R11 then PC := 322
+295 [-]: JMP       322          ; PC := 322
+296 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+297 [-]: MOVE      R18 R16      ; R18 := R16
+298 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+299 [-]: TEST      R17 1        ; if R17 then PC := 305
+300 [-]: JMP       305          ; PC := 305
+301 [-]: MOVE      R16 R11      ; R16 := R11
+302 [-]: GETUPVAL  R17 U12      ; R17 := U12
+303 [-]: CALL      R17 1 1      ; R17()
+304 [-]: JMP       322          ; PC := 322
+305 [-]: GETGLOBAL R17 K0       ; R17 := 0x400E7765
+306 [-]: MOVE      R18 R15      ; R18 := R15
+307 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+308 [-]: TEST      R17 1        ; if R17 then PC := 322
+309 [-]: JMP       322          ; PC := 322
+310 [-]: MOVE      R15 R13      ; R15 := R13
+311 [-]: MOVE      R17 R1       ; R17 := R1
+312 [-]: MOVE      R17 R14      ; R17 := R14
+313 [-]: GETGLOBAL R17 K63      ; R17 := UISys
+314 [-]: GETTABLE  R17 R17 K64  ; R17 := R17["0x449B53E0"]
+315 [-]: NEWTABLE  R18 0 0      ; R18 := {}
+316 [-]: GETUPVAL  R19 U13      ; R19 := U13
+317 [-]: SELF      R19 R19 K5   ; R20 := R19; R19 := R19["0x1B252E3C"]
+318 [-]: CALL      R19 2 0      ; R19,... := R19(R20)
+319 [-]: SETLIST   R18 0 1      ; R18[(1-1)*FPF+i] := R(18+i), 1 <= i <= 0
+320 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+321 [-]: MOVE      R17 R15      ; R17 := R15
+322 [-]: GETGLOBAL R17 K16      ; R17 := mMovie
+323 [-]: SELF      R17 R17 K21  ; R18 := R17; R17 := R17["0x1C19D966"]
+324 [-]: LOADK     R19 K65      ; R19 := "AcquireQuestBtn"
+325 [-]: LOADK     R20 K45      ; R20 := "_visible"
+326 [-]: GETUPVAL  R21 U3       ; R21 := U3
+327 [-]: GETUPVAL  R22 U5       ; R22 := U5
+328 [-]: GETTABLE  R22 R22 K8   ; R22 := R22["ACQUIRING"]
+329 [-]: EQ        1 R21 R22    ; if R21 == R22 then PC := 332
+330 [-]: JMP       332          ; PC := 332
+331 [-]: MOVE      R21 R0       ; R21 := R0
+332 [-]: MOVE      R21 R1       ; R21 := R1
+333 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
+334 [-]: GETUPVAL  R17 U3       ; R17 := U3
+335 [-]: GETUPVAL  R18 U5       ; R18 := U5
+336 [-]: GETTABLE  R18 R18 K8   ; R18 := R18["ACQUIRING"]
+337 [-]: EQ        0 R17 R18    ; if R17 ~= R18 then PC := 361
+338 [-]: JMP       361          ; PC := 361
+339 [-]: GETGLOBAL R17 K66      ; R17 := 0x329BDC44
+340 [-]: LOADK     R18 K67      ; R18 := "Lotus.Interface.Components.Button"
+341 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+342 [-]: GETTABLE  R18 R17 K68  ; R18 := R17["0xF232C660"]
+343 [-]: GETGLOBAL R19 K16      ; R19 := mMovie
+344 [-]: LOADK     R20 K65      ; R20 := "AcquireQuestBtn"
+345 [-]: LOADK     R21 K69      ; R21 := "/Lotus/Language/Menu/Quests_AcquireBtn"
+346 [-]: LOADK     R22 K70      ; R22 := "AcquireQuest"
+347 [-]: LOADK     R23 K71      ; R23 := "<MENU_SELECT>"
+348 [-]: LOADNIL   R24 R25      ; R24 := R25 := nil
+349 [-]: MOVE      R26 R1       ; R26 := R1
+350 [-]: CALL      R18 9 2      ; R18 := R18(R19,R20,R21,R22,R23,R24,R25,R26)
+351 [-]: MOVE      R18 R16      ; R18 := R16
+352 [-]: GETUPVAL  R18 U16      ; R18 := U16
+353 [-]: SETTABLE  R18 K72 K73  ; R18["mWidth"] := 300
+354 [-]: GETUPVAL  R18 U16      ; R18 := U16
+355 [-]: SETTABLE  R18 K74 K75  ; R18["mAlignment"] := "center"
+356 [-]: GETUPVAL  R18 U16      ; R18 := U16
+357 [-]: SETTABLE  R18 K76 K77  ; R18["mApplyMaterials"] := "0x0"
+358 [-]: GETUPVAL  R18 U16      ; R18 := U16
+359 [-]: SELF      R18 R18 K78  ; R19 := R18; R18 := R18["0x6470BAF4"]
+360 [-]: CALL      R18 2 1      ; R18(R19)
+361 [-]: GETUPVAL  R18 U17      ; R18 := U17
+362 [-]: CALL      R18 1 1      ; R18()
+363 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #19:

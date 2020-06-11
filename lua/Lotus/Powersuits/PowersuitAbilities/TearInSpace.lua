@@ -510,7 +510,7 @@ code size: 717
  39 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  40 [-]: MOVE      R2 R0        ; R2 := R0
  41 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 42 [-]: SETTABLE  R3 K8 K15    ; R3["Label"] := "/Game/AVATAR_EXPLOSION_DAMAGE"
+ 42 [-]: SETTABLE  R3 K8 K15    ; R3["Label"] := "/Lotus/Language/Labels/AVATAR_EXPLOSION_DAMAGE"
  43 [-]: GETUPVAL  R4 U3        ; R4 := U3
  44 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  45 [-]: SETTABLE  R3 K16 K17   ; R3["ValueIcon"] := "<DT_EXPLOSION>"
@@ -530,7 +530,7 @@ code size: 717
  59 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  60 [-]: MOVE      R3 R0        ; R3 := R0
  61 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 62 [-]: SETTABLE  R4 K8 K22    ; R4["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 62 [-]: SETTABLE  R4 K8 K22    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  63 [-]: SETTABLE  R4 K10 R1    ; R4["Value"] := R1
  64 [-]: SETTABLE  R4 K16 K23   ; R4["ValueIcon"] := "<DT_SLASH>"
  65 [-]: CALL      R2 3 1       ; R2(R3,R4)

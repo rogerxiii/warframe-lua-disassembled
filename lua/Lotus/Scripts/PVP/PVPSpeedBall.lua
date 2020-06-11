@@ -1302,56 +1302,56 @@ code size: 1
  73 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
  74 [-]: GETGLOBAL R12 K28      ; R12 := Game
  75 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["AVATAR_POWER_MAX"]
- 76 [-]: GETGLOBAL R13 K28      ; R13 := Game
+ 76 [-]: GETGLOBAL R13 K12      ; R13 := Engine
  77 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["SET"]
  78 [-]: LOADK     R14 K31      ; R14 := 0
  79 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  80 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
  81 [-]: GETGLOBAL R12 K28      ; R12 := Game
  82 [-]: GETTABLE  R12 R12 K32  ; R12 := R12["AVATAR_HEALTH_MAX"]
- 83 [-]: GETGLOBAL R13 K28      ; R13 := Game
+ 83 [-]: GETGLOBAL R13 K12      ; R13 := Engine
  84 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["SET"]
  85 [-]: LOADK     R14 K33      ; R14 := 100
  86 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  87 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
  88 [-]: GETGLOBAL R12 K28      ; R12 := Game
  89 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["AVATAR_SHIELD_MAX"]
- 90 [-]: GETGLOBAL R13 K28      ; R13 := Game
+ 90 [-]: GETGLOBAL R13 K12      ; R13 := Engine
  91 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["SET"]
  92 [-]: LOADK     R14 K31      ; R14 := 0
  93 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  94 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
  95 [-]: GETGLOBAL R12 K28      ; R12 := Game
  96 [-]: GETTABLE  R12 R12 K35  ; R12 := R12["AVATAR_HEAL_RATE"]
- 97 [-]: GETGLOBAL R13 K28      ; R13 := Game
+ 97 [-]: GETGLOBAL R13 K12      ; R13 := Engine
  98 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["ADD"]
  99 [-]: LOADK     R14 K37      ; R14 := 5
 100 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 101 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
 102 [-]: GETGLOBAL R12 K28      ; R12 := Game
 103 [-]: GETTABLE  R12 R12 K38  ; R12 := R12["AVATAR_ARMOUR"]
-104 [-]: GETGLOBAL R13 K28      ; R13 := Game
+104 [-]: GETGLOBAL R13 K12      ; R13 := Engine
 105 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["SET"]
 106 [-]: LOADK     R14 K39      ; R14 := 65
 107 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 108 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
 109 [-]: GETGLOBAL R12 K28      ; R12 := Game
 110 [-]: GETTABLE  R12 R12 K40  ; R12 := R12["AVATAR_MOVEMENT_SPEED"]
-111 [-]: GETGLOBAL R13 K28      ; R13 := Game
+111 [-]: GETGLOBAL R13 K12      ; R13 := Engine
 112 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["ADD"]
 113 [-]: LOADK     R14 K41      ; R14 := 0.10000000149012
 114 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 115 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
 116 [-]: GETGLOBAL R12 K28      ; R12 := Game
 117 [-]: GETTABLE  R12 R12 K42  ; R12 := R12["AVATAR_PARKOUR_GLIDE"]
-118 [-]: GETGLOBAL R13 K28      ; R13 := Game
+118 [-]: GETGLOBAL R13 K12      ; R13 := Engine
 119 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["SET"]
 120 [-]: LOADK     R14 K43      ; R14 := 0.80000001192093
 121 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 122 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
 123 [-]: GETGLOBAL R12 K28      ; R12 := Game
 124 [-]: GETTABLE  R12 R12 K44  ; R12 := R12["AVATAR_PROC_IMMUNITY_DURATION"]
-125 [-]: GETGLOBAL R13 K28      ; R13 := Game
+125 [-]: GETGLOBAL R13 K12      ; R13 := Engine
 126 [-]: GETTABLE  R13 R13 K36  ; R13 := R13["ADD"]
 127 [-]: LOADK     R14 K37      ; R14 := 5
 128 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -1364,7 +1364,7 @@ code size: 1
 135 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
 136 [-]: GETGLOBAL R12 K28      ; R12 := Game
 137 [-]: GETTABLE  R12 R12 K47  ; R12 := R12["AVATAR_INJURY_ANIM_RATE"]
-138 [-]: GETGLOBAL R13 K28      ; R13 := Game
+138 [-]: GETGLOBAL R13 K12      ; R13 := Engine
 139 [-]: GETTABLE  R13 R13 K48  ; R13 := R13["STACKING_MULTIPLY"]
 140 [-]: LOADK     R14 K49      ; R14 := 0.69999998807907
 141 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -1377,7 +1377,7 @@ code size: 1
 148 [-]: SELF      R10 R5 K27   ; R11 := R5; R10 := R5["0x3B1B11B9"]
 149 [-]: GETGLOBAL R12 K28      ; R12 := Game
 150 [-]: GETTABLE  R12 R12 K47  ; R12 := R12["AVATAR_INJURY_ANIM_RATE"]
-151 [-]: GETGLOBAL R13 K28      ; R13 := Game
+151 [-]: GETGLOBAL R13 K12      ; R13 := Engine
 152 [-]: GETTABLE  R13 R13 K48  ; R13 := R13["STACKING_MULTIPLY"]
 153 [-]: LOADK     R14 K49      ; R14 := 0.69999998807907
 154 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -2486,7 +2486,7 @@ code size: 1
  59 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0xF21555A7"]
  60 [-]: GETGLOBAL R16 K17      ; R16 := Game
  61 [-]: GETTABLE  R16 R16 K18  ; R16 := R16["AVATAR_MOVEMENT_SPEED"]
- 62 [-]: GETGLOBAL R17 K17      ; R17 := Game
+ 62 [-]: GETGLOBAL R17 K10      ; R17 := Engine
  63 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
  64 [-]: MOVE      R18 R1       ; R18 := R1
  65 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
@@ -2496,7 +2496,7 @@ code size: 1
  69 [-]: SELF      R14 R14 K20  ; R15 := R14; R14 := R14["0x3B1B11B9"]
  70 [-]: GETGLOBAL R16 K17      ; R16 := Game
  71 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["AVATAR_HEAL_RATE"]
- 72 [-]: GETGLOBAL R17 K17      ; R17 := Game
+ 72 [-]: GETGLOBAL R17 K10      ; R17 := Engine
  73 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["SET"]
  74 [-]: MOVE      R18 R3       ; R18 := R3
  75 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
@@ -2506,7 +2506,7 @@ code size: 1
  79 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0xF21555A7"]
  80 [-]: GETGLOBAL R16 K17      ; R16 := Game
  81 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["AVATAR_SHIELD_MAX"]
- 82 [-]: GETGLOBAL R17 K17      ; R17 := Game
+ 82 [-]: GETGLOBAL R17 K10      ; R17 := Engine
  83 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["SET"]
  84 [-]: MOVE      R18 R2       ; R18 := R2
  85 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
@@ -2524,7 +2524,7 @@ code size: 1
  97 [-]: SELF      R14 R14 K20  ; R15 := R14; R14 := R14["0x3B1B11B9"]
  98 [-]: GETGLOBAL R16 K17      ; R16 := Game
  99 [-]: GETTABLE  R16 R16 K18  ; R16 := R16["AVATAR_MOVEMENT_SPEED"]
-100 [-]: GETGLOBAL R17 K17      ; R17 := Game
+100 [-]: GETGLOBAL R17 K10      ; R17 := Engine
 101 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
 102 [-]: MOVE      R18 R1       ; R18 := R1
 103 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
@@ -2536,7 +2536,7 @@ code size: 1
 109 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0xF21555A7"]
 110 [-]: GETGLOBAL R16 K17      ; R16 := Game
 111 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["AVATAR_HEAL_RATE"]
-112 [-]: GETGLOBAL R17 K17      ; R17 := Game
+112 [-]: GETGLOBAL R17 K10      ; R17 := Engine
 113 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["SET"]
 114 [-]: MOVE      R18 R3       ; R18 := R3
 115 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
@@ -2545,7 +2545,7 @@ code size: 1
 118 [-]: SELF      R14 R14 K20  ; R15 := R14; R14 := R14["0x3B1B11B9"]
 119 [-]: GETGLOBAL R16 K17      ; R16 := Game
 120 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["AVATAR_SHIELD_MAX"]
-121 [-]: GETGLOBAL R17 K17      ; R17 := Game
+121 [-]: GETGLOBAL R17 K10      ; R17 := Engine
 122 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["SET"]
 123 [-]: MOVE      R18 R2       ; R18 := R2
 124 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)

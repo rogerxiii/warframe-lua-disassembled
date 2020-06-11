@@ -3631,36 +3631,36 @@ code size: 3
  12 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  13 [-]: GETGLOBAL R6 K6        ; R6 := Game
  14 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["AVATAR_ARMOUR"]
- 15 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 16 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["ADD"]
- 17 [-]: LOADK     R8 K9        ; R8 := 100
- 18 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
+ 15 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+ 16 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 17 [-]: LOADK     R8 K10       ; R8 := 100
+ 18 [-]: GETGLOBAL R9 K11       ; R9 := gLotusNpcAvatarType
  19 [-]: LOADNIL   R10 R10      ; R10 := nil
- 20 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 20 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  21 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
  22 [-]: GETUPVAL  R12 U0       ; R12 := U0
  23 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  24 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  25 [-]: GETGLOBAL R6 K6        ; R6 := Game
  26 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["AVATAR_ARMOUR"]
- 27 [-]: GETGLOBAL R7 K6        ; R7 := Game
+ 27 [-]: GETGLOBAL R7 K8        ; R7 := Engine
  28 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["STACKING_MULTIPLY"]
  29 [-]: LOADK     R8 K14       ; R8 := 3
- 30 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
+ 30 [-]: GETGLOBAL R9 K11       ; R9 := gLotusNpcAvatarType
  31 [-]: LOADNIL   R10 R10      ; R10 := nil
- 32 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 32 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  33 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
  34 [-]: GETUPVAL  R12 U0       ; R12 := U0
  35 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  36 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  37 [-]: GETGLOBAL R6 K6        ; R6 := Game
  38 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["WEAPON_PROC_CHANCE"]
- 39 [-]: GETGLOBAL R7 K6        ; R7 := Game
+ 39 [-]: GETGLOBAL R7 K8        ; R7 := Engine
  40 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
  41 [-]: LOADK     R8 K17       ; R8 := 0.25
  42 [-]: GETGLOBAL R9 K18       ; R9 := gTennoAvatarType
  43 [-]: LOADNIL   R10 R10      ; R10 := nil
- 44 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 44 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  45 [-]: GETTABLE  R11 R11 K19  ; R11 := R11["DT_CORROSIVE"]
  46 [-]: GETGLOBAL R12 K20      ; R12 := EMPTY_SYMBOL
  47 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -3682,24 +3682,24 @@ code size: 3
  63 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  64 [-]: GETGLOBAL R6 K6        ; R6 := Game
  65 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["AVATAR_SHIELD_MAX"]
- 66 [-]: GETGLOBAL R7 K6        ; R7 := Game
+ 66 [-]: GETGLOBAL R7 K8        ; R7 := Engine
  67 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["STACKING_MULTIPLY"]
  68 [-]: LOADK     R8 K14       ; R8 := 3
- 69 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
+ 69 [-]: GETGLOBAL R9 K11       ; R9 := gLotusNpcAvatarType
  70 [-]: LOADNIL   R10 R10      ; R10 := nil
- 71 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 71 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  72 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
  73 [-]: GETUPVAL  R12 U0       ; R12 := U0
  74 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  75 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
  76 [-]: GETGLOBAL R6 K6        ; R6 := Game
  77 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["WEAPON_PROC_CHANCE"]
- 78 [-]: GETGLOBAL R7 K6        ; R7 := Game
+ 78 [-]: GETGLOBAL R7 K8        ; R7 := Engine
  79 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
  80 [-]: LOADK     R8 K17       ; R8 := 0.25
  81 [-]: GETGLOBAL R9 K18       ; R9 := gTennoAvatarType
  82 [-]: LOADNIL   R10 R10      ; R10 := nil
- 83 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 83 [-]: GETGLOBAL R11 K8       ; R11 := Engine
  84 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["DT_MAGNETIC"]
  85 [-]: GETGLOBAL R12 K20      ; R12 := EMPTY_SYMBOL
  86 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -3740,24 +3740,24 @@ code size: 3
 121 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 122 [-]: GETGLOBAL R6 K6        ; R6 := Game
 123 [-]: GETTABLE  R6 R6 K34    ; R6 := R6["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
-124 [-]: GETGLOBAL R7 K6        ; R7 := Game
-125 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["ADD"]
+124 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+125 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
 126 [-]: LOADK     R8 K17       ; R8 := 0.25
-127 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
+127 [-]: GETGLOBAL R9 K11       ; R9 := gLotusNpcAvatarType
 128 [-]: LOADNIL   R10 R10      ; R10 := nil
-129 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+129 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 130 [-]: GETTABLE  R11 R11 K35  ; R11 := R11["DT_FREEZE"]
 131 [-]: GETUPVAL  R12 U0       ; R12 := U0
 132 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 133 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 134 [-]: GETGLOBAL R6 K6        ; R6 := Game
 135 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["WEAPON_PROC_CHANCE"]
-136 [-]: GETGLOBAL R7 K6        ; R7 := Game
+136 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 137 [-]: GETTABLE  R7 R7 K36    ; R7 := R7["SET"]
 138 [-]: GETUPVAL  R8 U3        ; R8 := U3
-139 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
+139 [-]: GETGLOBAL R9 K11       ; R9 := gLotusNpcAvatarType
 140 [-]: LOADNIL   R10 R10      ; R10 := nil
-141 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+141 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 142 [-]: GETTABLE  R11 R11 K35  ; R11 := R11["DT_FREEZE"]
 143 [-]: GETUPVAL  R12 U0       ; R12 := U0
 144 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -3781,72 +3781,72 @@ code size: 3
 162 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 163 [-]: GETGLOBAL R6 K6        ; R6 := Game
 164 [-]: GETTABLE  R6 R6 K34    ; R6 := R6["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
-165 [-]: GETGLOBAL R7 K6        ; R7 := Game
-166 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["ADD"]
+165 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+166 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
 167 [-]: LOADK     R8 K17       ; R8 := 0.25
-168 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
+168 [-]: GETGLOBAL R9 K11       ; R9 := gLotusNpcAvatarType
 169 [-]: LOADNIL   R10 R10      ; R10 := nil
-170 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+170 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 171 [-]: GETTABLE  R11 R11 K40  ; R11 := R11["DT_FIRE"]
 172 [-]: GETUPVAL  R12 U0       ; R12 := U0
 173 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 174 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 175 [-]: GETGLOBAL R6 K6        ; R6 := Game
 176 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["WEAPON_PROC_CHANCE"]
-177 [-]: GETGLOBAL R7 K6        ; R7 := Game
+177 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 178 [-]: GETTABLE  R7 R7 K36    ; R7 := R7["SET"]
 179 [-]: GETUPVAL  R8 U3        ; R8 := U3
-180 [-]: GETGLOBAL R9 K10       ; R9 := gLotusNpcAvatarType
+180 [-]: GETGLOBAL R9 K11       ; R9 := gLotusNpcAvatarType
 181 [-]: LOADNIL   R10 R10      ; R10 := nil
-182 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+182 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 183 [-]: GETTABLE  R11 R11 K40  ; R11 := R11["DT_FIRE"]
 184 [-]: GETUPVAL  R12 U0       ; R12 := U0
 185 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 186 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 187 [-]: GETGLOBAL R6 K6        ; R6 := Game
 188 [-]: GETTABLE  R6 R6 K41    ; R6 := R6["AVATAR_HEALTH_MAX"]
-189 [-]: GETGLOBAL R7 K6        ; R7 := Game
+189 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 190 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
 191 [-]: LOADK     R8 K42       ; R8 := 0.5
 192 [-]: GETGLOBAL R9 K18       ; R9 := gTennoAvatarType
 193 [-]: LOADNIL   R10 R10      ; R10 := nil
-194 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+194 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 195 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
 196 [-]: GETGLOBAL R12 K20      ; R12 := EMPTY_SYMBOL
 197 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 198 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 199 [-]: GETGLOBAL R6 K6        ; R6 := Game
 200 [-]: GETTABLE  R6 R6 K43    ; R6 := R6["AVATAR_HEAL_RATE"]
-201 [-]: GETGLOBAL R7 K6        ; R7 := Game
+201 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 202 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
 203 [-]: LOADK     R8 K42       ; R8 := 0.5
 204 [-]: GETGLOBAL R9 K18       ; R9 := gTennoAvatarType
 205 [-]: LOADNIL   R10 R10      ; R10 := nil
-206 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+206 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 207 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
 208 [-]: GETGLOBAL R12 K20      ; R12 := EMPTY_SYMBOL
 209 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 210 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 211 [-]: GETGLOBAL R6 K6        ; R6 := Game
 212 [-]: GETTABLE  R6 R6 K44    ; R6 := R6["AVATAR_STUN_TIME"]
-213 [-]: GETGLOBAL R7 K6        ; R7 := Game
+213 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 214 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
 215 [-]: LOADK     R8 K45       ; R8 := 2
 216 [-]: GETGLOBAL R9 K18       ; R9 := gTennoAvatarType
 217 [-]: LOADNIL   R10 R10      ; R10 := nil
-218 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+218 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 219 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
 220 [-]: GETGLOBAL R12 K20      ; R12 := EMPTY_SYMBOL
 221 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 222 [-]: SELF      R4 R0 K5     ; R5 := R0; R4 := R0["0xA470B2A3"]
 223 [-]: GETGLOBAL R6 K6        ; R6 := Game
 224 [-]: GETTABLE  R6 R6 K46    ; R6 := R6["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
-225 [-]: GETGLOBAL R7 K6        ; R7 := Game
+225 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 226 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["MULTIPLY"]
 227 [-]: LOADK     R8 K42       ; R8 := 0.5
 228 [-]: GETGLOBAL R9 K18       ; R9 := gTennoAvatarType
 229 [-]: LOADNIL   R10 R10      ; R10 := nil
-230 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+230 [-]: GETGLOBAL R11 K8       ; R11 := Engine
 231 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
 232 [-]: GETGLOBAL R12 K20      ; R12 := EMPTY_SYMBOL
 233 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -3896,84 +3896,84 @@ code size: 3
 277 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 278 [-]: GETGLOBAL R7 K6        ; R7 := Game
 279 [-]: GETTABLE  R7 R7 K56    ; R7 := R7["AVATAR_SPRINT_SPEED"]
-280 [-]: GETGLOBAL R8 K6        ; R8 := Game
+280 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 281 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 282 [-]: MOVE      R9 R4        ; R9 := R4
 283 [-]: GETGLOBAL R10 K18      ; R10 := gTennoAvatarType
 284 [-]: LOADNIL   R11 R11      ; R11 := nil
-285 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+285 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 286 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 287 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
 288 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 289 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 290 [-]: GETGLOBAL R7 K6        ; R7 := Game
 291 [-]: GETTABLE  R7 R7 K57    ; R7 := R7["AVATAR_JOG_SPEED"]
-292 [-]: GETGLOBAL R8 K6        ; R8 := Game
+292 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 293 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 294 [-]: MOVE      R9 R4        ; R9 := R4
 295 [-]: GETGLOBAL R10 K18      ; R10 := gTennoAvatarType
 296 [-]: LOADNIL   R11 R11      ; R11 := nil
-297 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+297 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 298 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 299 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
 300 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 301 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 302 [-]: GETGLOBAL R7 K6        ; R7 := Game
 303 [-]: GETTABLE  R7 R7 K58    ; R7 := R7["AVATAR_MOVEMENT_SPEED"]
-304 [-]: GETGLOBAL R8 K6        ; R8 := Game
+304 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 305 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 306 [-]: MOVE      R9 R4        ; R9 := R4
 307 [-]: GETGLOBAL R10 K18      ; R10 := gTennoAvatarType
 308 [-]: LOADNIL   R11 R11      ; R11 := nil
-309 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+309 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 310 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 311 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
 312 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 313 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 314 [-]: GETGLOBAL R7 K6        ; R7 := Game
 315 [-]: GETTABLE  R7 R7 K59    ; R7 := R7["AVATAR_CASTING_SPEED"]
-316 [-]: GETGLOBAL R8 K6        ; R8 := Game
+316 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 317 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 318 [-]: MOVE      R9 R4        ; R9 := R4
 319 [-]: GETGLOBAL R10 K18      ; R10 := gTennoAvatarType
 320 [-]: LOADNIL   R11 R11      ; R11 := nil
-321 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+321 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 322 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 323 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
 324 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 325 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 326 [-]: GETGLOBAL R7 K6        ; R7 := Game
 327 [-]: GETTABLE  R7 R7 K60    ; R7 := R7["WEAPON_RELOAD_SPEED"]
-328 [-]: GETGLOBAL R8 K6        ; R8 := Game
+328 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 329 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 330 [-]: MOVE      R9 R4        ; R9 := R4
 331 [-]: GETGLOBAL R10 K18      ; R10 := gTennoAvatarType
 332 [-]: LOADNIL   R11 R11      ; R11 := nil
-333 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+333 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 334 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 335 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
 336 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 337 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 338 [-]: GETGLOBAL R7 K6        ; R7 := Game
 339 [-]: GETTABLE  R7 R7 K61    ; R7 := R7["AVATAR_PARKOUR_BOOST"]
-340 [-]: GETGLOBAL R8 K6        ; R8 := Game
+340 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 341 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 342 [-]: MOVE      R9 R4        ; R9 := R4
 343 [-]: GETGLOBAL R10 K18      ; R10 := gTennoAvatarType
 344 [-]: LOADNIL   R11 R11      ; R11 := nil
-345 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+345 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 346 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 347 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
 348 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 349 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 350 [-]: GETGLOBAL R7 K6        ; R7 := Game
 351 [-]: GETTABLE  R7 R7 K62    ; R7 := R7["AVATAR_ACROBATIC_SPEED"]
-352 [-]: GETGLOBAL R8 K6        ; R8 := Game
+352 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 353 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 354 [-]: MOVE      R9 R4        ; R9 := R4
 355 [-]: GETGLOBAL R10 K18      ; R10 := gTennoAvatarType
 356 [-]: LOADNIL   R11 R11      ; R11 := nil
-357 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+357 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 358 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 359 [-]: GETGLOBAL R13 K20      ; R13 := EMPTY_SYMBOL
 360 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
@@ -3987,36 +3987,36 @@ code size: 3
 368 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 369 [-]: GETGLOBAL R7 K6        ; R7 := Game
 370 [-]: GETTABLE  R7 R7 K34    ; R7 := R7["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
-371 [-]: GETGLOBAL R8 K6        ; R8 := Game
-372 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["ADD"]
+371 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+372 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["ADD"]
 373 [-]: LOADK     R9 K64       ; R9 := 1
-374 [-]: GETGLOBAL R10 K10      ; R10 := gLotusNpcAvatarType
+374 [-]: GETGLOBAL R10 K11      ; R10 := gLotusNpcAvatarType
 375 [-]: LOADNIL   R11 R11      ; R11 := nil
-376 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+376 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 377 [-]: GETTABLE  R12 R12 K65  ; R12 := R12["DT_RADIATION"]
 378 [-]: GETUPVAL  R13 U0       ; R13 := U0
 379 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 380 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 381 [-]: GETGLOBAL R7 K6        ; R7 := Game
 382 [-]: GETTABLE  R7 R7 K34    ; R7 := R7["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
-383 [-]: GETGLOBAL R8 K6        ; R8 := Game
+383 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 384 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["MULTIPLY"]
 385 [-]: LOADK     R9 K17       ; R9 := 0.25
-386 [-]: GETGLOBAL R10 K10      ; R10 := gLotusNpcAvatarType
+386 [-]: GETGLOBAL R10 K11      ; R10 := gLotusNpcAvatarType
 387 [-]: LOADNIL   R11 R11      ; R11 := nil
-388 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+388 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 389 [-]: GETTABLE  R12 R12 K66  ; R12 := R12["DT_PHYSICAL"]
 390 [-]: GETUPVAL  R13 U0       ; R13 := U0
 391 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 392 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 393 [-]: GETGLOBAL R7 K6        ; R7 := Game
 394 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["WEAPON_PROC_CHANCE"]
-395 [-]: GETGLOBAL R8 K6        ; R8 := Game
+395 [-]: GETGLOBAL R8 K8        ; R8 := Engine
 396 [-]: GETTABLE  R8 R8 K36    ; R8 := R8["SET"]
 397 [-]: GETUPVAL  R9 U3        ; R9 := U3
-398 [-]: GETGLOBAL R10 K10      ; R10 := gLotusNpcAvatarType
+398 [-]: GETGLOBAL R10 K11      ; R10 := gLotusNpcAvatarType
 399 [-]: LOADNIL   R11 R11      ; R11 := nil
-400 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+400 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 401 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["DT_ANY"]
 402 [-]: GETUPVAL  R13 U0       ; R13 := U0
 403 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
@@ -4042,24 +4042,24 @@ code size: 3
 423 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 424 [-]: GETGLOBAL R7 K6        ; R7 := Game
 425 [-]: GETTABLE  R7 R7 K71    ; R7 := R7["AVATAR_DAMAGE_RESISTANCE"]
-426 [-]: GETGLOBAL R8 K6        ; R8 := Game
-427 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["ADD"]
+426 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+427 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["ADD"]
 428 [-]: LOADK     R9 K72       ; R9 := 0.85000002384186
-429 [-]: GETGLOBAL R10 K10      ; R10 := gLotusNpcAvatarType
+429 [-]: GETGLOBAL R10 K11      ; R10 := gLotusNpcAvatarType
 430 [-]: LOADNIL   R11 R11      ; R11 := nil
-431 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+431 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 432 [-]: GETTABLE  R12 R12 K73  ; R12 := R12["DT_BASE_ELEMENTAL"]
 433 [-]: GETUPVAL  R13 U0       ; R13 := U0
 434 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
 435 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xA470B2A3"]
 436 [-]: GETGLOBAL R7 K6        ; R7 := Game
 437 [-]: GETTABLE  R7 R7 K71    ; R7 := R7["AVATAR_DAMAGE_RESISTANCE"]
-438 [-]: GETGLOBAL R8 K6        ; R8 := Game
-439 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["ADD"]
+438 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+439 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["ADD"]
 440 [-]: LOADK     R9 K72       ; R9 := 0.85000002384186
-441 [-]: GETGLOBAL R10 K10      ; R10 := gLotusNpcAvatarType
+441 [-]: GETGLOBAL R10 K11      ; R10 := gLotusNpcAvatarType
 442 [-]: LOADNIL   R11 R11      ; R11 := nil
-443 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+443 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 444 [-]: GETTABLE  R12 R12 K74  ; R12 := R12["DT_COMPOUND_ELEMENTAL"]
 445 [-]: GETUPVAL  R13 U0       ; R13 := U0
 446 [-]: CALL      R5 9 1       ; R5(R6,R7,R8,R9,R10,R11,R12,R13)
@@ -4073,14 +4073,14 @@ code size: 3
 454 [-]: LOADNIL   R7 R7        ; R7 := nil
 455 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
 456 [-]: MOVE      R3 R5        ; R3 := R5
-457 [-]: GETGLOBAL R5 K11       ; R5 := Engine
+457 [-]: GETGLOBAL R5 K8        ; R5 := Engine
 458 [-]: GETTABLE  R5 R5 K35    ; R5 := R5["DT_FREEZE"]
 459 [-]: LOADK     R6 K77       ; R6 := "/Lotus/Language/Game/DT_FREEZE"
 460 [-]: GETGLOBAL R7 K1        ; R7 := Lotus_Game
 461 [-]: GETTABLE  R7 R7 K69    ; R7 := R7["SORTIE_MODIFIER_FREEZE"]
 462 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 468
 463 [-]: JMP       468          ; PC := 468
-464 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+464 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 465 [-]: GETTABLE  R5 R7 K35    ; R5 := R7["DT_FREEZE"]
 466 [-]: LOADK     R6 K77       ; R6 := "/Lotus/Language/Game/DT_FREEZE"
 467 [-]: JMP       531          ; PC := 531
@@ -4088,7 +4088,7 @@ code size: 3
 469 [-]: GETTABLE  R7 R7 K78    ; R7 := R7["SORTIE_MODIFIER_FIRE"]
 470 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 476
 471 [-]: JMP       476          ; PC := 476
-472 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+472 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 473 [-]: GETTABLE  R5 R7 K40    ; R5 := R7["DT_FIRE"]
 474 [-]: LOADK     R6 K79       ; R6 := "/Lotus/Language/Game/DT_FIRE"
 475 [-]: JMP       531          ; PC := 531
@@ -4096,7 +4096,7 @@ code size: 3
 477 [-]: GETTABLE  R7 R7 K80    ; R7 := R7["SORTIE_MODIFIER_ELECTRICITY"]
 478 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 484
 479 [-]: JMP       484          ; PC := 484
-480 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+480 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 481 [-]: GETTABLE  R5 R7 K81    ; R5 := R7["DT_ELECTRICITY"]
 482 [-]: LOADK     R6 K82       ; R6 := "/Lotus/Language/Game/DT_ELECTRICITY"
 483 [-]: JMP       531          ; PC := 531
@@ -4104,7 +4104,7 @@ code size: 3
 485 [-]: GETTABLE  R7 R7 K83    ; R7 := R7["SORTIE_MODIFIER_POISON"]
 486 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 492
 487 [-]: JMP       492          ; PC := 492
-488 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+488 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 489 [-]: GETTABLE  R5 R7 K84    ; R5 := R7["DT_POISON"]
 490 [-]: LOADK     R6 K85       ; R6 := "/Lotus/Language/Game/DT_POISON"
 491 [-]: JMP       531          ; PC := 531
@@ -4112,7 +4112,7 @@ code size: 3
 493 [-]: GETTABLE  R7 R7 K86    ; R7 := R7["SORTIE_MODIFIER_RADIATION"]
 494 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 500
 495 [-]: JMP       500          ; PC := 500
-496 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+496 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 497 [-]: GETTABLE  R5 R7 K65    ; R5 := R7["DT_RADIATION"]
 498 [-]: LOADK     R6 K87       ; R6 := "/Lotus/Language/Game/DT_RADIATION"
 499 [-]: JMP       531          ; PC := 531
@@ -4120,7 +4120,7 @@ code size: 3
 501 [-]: GETTABLE  R7 R7 K88    ; R7 := R7["SORTIE_MODIFIER_MAGNETIC"]
 502 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 508
 503 [-]: JMP       508          ; PC := 508
-504 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+504 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 505 [-]: GETTABLE  R5 R7 K26    ; R5 := R7["DT_MAGNETIC"]
 506 [-]: LOADK     R6 K89       ; R6 := "/Lotus/Language/Game/DT_MAGNETIC"
 507 [-]: JMP       531          ; PC := 531
@@ -4128,7 +4128,7 @@ code size: 3
 509 [-]: GETTABLE  R7 R7 K90    ; R7 := R7["SORTIE_MODIFIER_VIRAL"]
 510 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 516
 511 [-]: JMP       516          ; PC := 516
-512 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+512 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 513 [-]: GETTABLE  R5 R7 K91    ; R5 := R7["DT_VIRAL"]
 514 [-]: LOADK     R6 K92       ; R6 := "/Lotus/Language/Game/DT_VIRAL"
 515 [-]: JMP       531          ; PC := 531
@@ -4136,7 +4136,7 @@ code size: 3
 517 [-]: GETTABLE  R7 R7 K93    ; R7 := R7["SORTIE_MODIFIER_CORROSIVE"]
 518 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 524
 519 [-]: JMP       524          ; PC := 524
-520 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+520 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 521 [-]: GETTABLE  R5 R7 K19    ; R5 := R7["DT_CORROSIVE"]
 522 [-]: LOADK     R6 K94       ; R6 := "/Lotus/Language/Game/DT_CORROSIVE"
 523 [-]: JMP       531          ; PC := 531
@@ -4144,16 +4144,16 @@ code size: 3
 525 [-]: GETTABLE  R7 R7 K70    ; R7 := R7["SORTIE_MODIFIER_EXPLOSION"]
 526 [-]: EQ        0 R1 R7      ; if R1 ~= R7 then PC := 531
 527 [-]: JMP       531          ; PC := 531
-528 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+528 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 529 [-]: GETTABLE  R5 R7 K95    ; R5 := R7["DT_EXPLOSION"]
 530 [-]: LOADK     R6 K96       ; R6 := "/Lotus/Language/Game/DT_EXPLOSION"
 531 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0["0xA470B2A3"]
 532 [-]: GETGLOBAL R9 K6        ; R9 := Game
 533 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
-534 [-]: GETGLOBAL R10 K6       ; R10 := Game
-535 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["ADD"]
+534 [-]: GETGLOBAL R10 K8       ; R10 := Engine
+535 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["ADD"]
 536 [-]: LOADK     R11 K64      ; R11 := 1
-537 [-]: GETGLOBAL R12 K10      ; R12 := gLotusNpcAvatarType
+537 [-]: GETGLOBAL R12 K11      ; R12 := gLotusNpcAvatarType
 538 [-]: LOADNIL   R13 R13      ; R13 := nil
 539 [-]: MOVE      R14 R5       ; R14 := R5
 540 [-]: GETUPVAL  R15 U0       ; R15 := U0
@@ -4161,12 +4161,12 @@ code size: 3
 542 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0["0xA470B2A3"]
 543 [-]: GETGLOBAL R9 K6        ; R9 := Game
 544 [-]: GETTABLE  R9 R9 K15    ; R9 := R9["WEAPON_PROC_CHANCE"]
-545 [-]: GETGLOBAL R10 K6       ; R10 := Game
+545 [-]: GETGLOBAL R10 K8       ; R10 := Engine
 546 [-]: GETTABLE  R10 R10 K36  ; R10 := R10["SET"]
 547 [-]: GETUPVAL  R11 U3       ; R11 := U3
-548 [-]: GETGLOBAL R12 K10      ; R12 := gLotusNpcAvatarType
+548 [-]: GETGLOBAL R12 K11      ; R12 := gLotusNpcAvatarType
 549 [-]: LOADNIL   R13 R13      ; R13 := nil
-550 [-]: GETGLOBAL R14 K11      ; R14 := Engine
+550 [-]: GETGLOBAL R14 K8       ; R14 := Engine
 551 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["DT_ANY"]
 552 [-]: GETUPVAL  R15 U0       ; R15 := U0
 553 [-]: CALL      R7 9 1       ; R7(R8,R9,R10,R11,R12,R13,R14,R15)
@@ -4198,23 +4198,23 @@ code size: 3
 579 [-]: SELF      R7 R0 K5     ; R8 := R0; R7 := R0["0xA470B2A3"]
 580 [-]: GETGLOBAL R9 K6        ; R9 := Game
 581 [-]: GETTABLE  R9 R9 K71    ; R9 := R9["AVATAR_DAMAGE_RESISTANCE"]
-582 [-]: GETGLOBAL R10 K6       ; R10 := Game
-583 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["ADD"]
+582 [-]: GETGLOBAL R10 K8       ; R10 := Engine
+583 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["ADD"]
 584 [-]: LOADK     R11 K72      ; R11 := 0.85000002384186
-585 [-]: GETGLOBAL R12 K10      ; R12 := gLotusNpcAvatarType
+585 [-]: GETGLOBAL R12 K11      ; R12 := gLotusNpcAvatarType
 586 [-]: LOADNIL   R13 R13      ; R13 := nil
-587 [-]: GETGLOBAL R14 K11      ; R14 := Engine
+587 [-]: GETGLOBAL R14 K8       ; R14 := Engine
 588 [-]: GETTABLE  R14 R14 K66  ; R14 := R14["DT_PHYSICAL"]
 589 [-]: GETUPVAL  R15 U0       ; R15 := U0
 590 [-]: CALL      R7 9 1       ; R7(R8,R9,R10,R11,R12,R13,R14,R15)
-591 [-]: GETGLOBAL R7 K11       ; R7 := Engine
+591 [-]: GETGLOBAL R7 K8        ; R7 := Engine
 592 [-]: GETTABLE  R7 R7 K100   ; R7 := R7["DT_IMPACT"]
 593 [-]: LOADK     R8 K101      ; R8 := "/Lotus/Language/Game/DT_IMPACT"
 594 [-]: GETGLOBAL R9 K1        ; R9 := Lotus_Game
 595 [-]: GETTABLE  R9 R9 K98    ; R9 := R9["SORTIE_MODIFIER_IMPACT"]
 596 [-]: EQ        0 R1 R9      ; if R1 ~= R9 then PC := 602
 597 [-]: JMP       602          ; PC := 602
-598 [-]: GETGLOBAL R9 K11       ; R9 := Engine
+598 [-]: GETGLOBAL R9 K8        ; R9 := Engine
 599 [-]: GETTABLE  R7 R9 K100   ; R7 := R9["DT_IMPACT"]
 600 [-]: LOADK     R8 K101      ; R8 := "/Lotus/Language/Game/DT_IMPACT"
 601 [-]: JMP       617          ; PC := 617
@@ -4222,7 +4222,7 @@ code size: 3
 603 [-]: GETTABLE  R9 R9 K102   ; R9 := R9["SORTIE_MODIFIER_PUNCTURE"]
 604 [-]: EQ        0 R1 R9      ; if R1 ~= R9 then PC := 610
 605 [-]: JMP       610          ; PC := 610
-606 [-]: GETGLOBAL R9 K11       ; R9 := Engine
+606 [-]: GETGLOBAL R9 K8        ; R9 := Engine
 607 [-]: GETTABLE  R7 R9 K103   ; R7 := R9["DT_PUNCTURE"]
 608 [-]: LOADK     R8 K104      ; R8 := "/Lotus/Language/Game/DT_PUNCTURE"
 609 [-]: JMP       617          ; PC := 617
@@ -4230,16 +4230,16 @@ code size: 3
 611 [-]: GETTABLE  R9 R9 K99    ; R9 := R9["SORTIE_MODIFIER_SLASH"]
 612 [-]: EQ        0 R1 R9      ; if R1 ~= R9 then PC := 617
 613 [-]: JMP       617          ; PC := 617
-614 [-]: GETGLOBAL R9 K11       ; R9 := Engine
+614 [-]: GETGLOBAL R9 K8        ; R9 := Engine
 615 [-]: GETTABLE  R7 R9 K105   ; R7 := R9["DT_SLASH"]
 616 [-]: LOADK     R8 K106      ; R8 := "/Lotus/Language/Game/DT_SLASH"
 617 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0["0xA470B2A3"]
 618 [-]: GETGLOBAL R11 K6       ; R11 := Game
 619 [-]: GETTABLE  R11 R11 K34  ; R11 := R11["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
-620 [-]: GETGLOBAL R12 K6       ; R12 := Game
-621 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["ADD"]
+620 [-]: GETGLOBAL R12 K8       ; R12 := Engine
+621 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["ADD"]
 622 [-]: LOADK     R13 K64      ; R13 := 1
-623 [-]: GETGLOBAL R14 K10      ; R14 := gLotusNpcAvatarType
+623 [-]: GETGLOBAL R14 K11      ; R14 := gLotusNpcAvatarType
 624 [-]: LOADNIL   R15 R15      ; R15 := nil
 625 [-]: MOVE      R16 R7       ; R16 := R7
 626 [-]: GETUPVAL  R17 U0       ; R17 := U0
@@ -4247,12 +4247,12 @@ code size: 3
 628 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0["0xA470B2A3"]
 629 [-]: GETGLOBAL R11 K6       ; R11 := Game
 630 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["WEAPON_PROC_CHANCE"]
-631 [-]: GETGLOBAL R12 K6       ; R12 := Game
+631 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 632 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["SET"]
 633 [-]: GETUPVAL  R13 U3       ; R13 := U3
-634 [-]: GETGLOBAL R14 K10      ; R14 := gLotusNpcAvatarType
+634 [-]: GETGLOBAL R14 K11      ; R14 := gLotusNpcAvatarType
 635 [-]: LOADNIL   R15 R15      ; R15 := nil
-636 [-]: GETGLOBAL R16 K11      ; R16 := Engine
+636 [-]: GETGLOBAL R16 K8       ; R16 := Engine
 637 [-]: GETTABLE  R16 R16 K12  ; R16 := R16["DT_ANY"]
 638 [-]: GETUPVAL  R17 U0       ; R17 := U0
 639 [-]: CALL      R9 9 1       ; R9(R10,R11,R12,R13,R14,R15,R16,R17)
@@ -4280,12 +4280,12 @@ code size: 3
 661 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0["0xA470B2A3"]
 662 [-]: GETGLOBAL R11 K6       ; R11 := Game
 663 [-]: GETTABLE  R11 R11 K110 ; R11 := R11["AVATAR_POWER_MAX"]
-664 [-]: GETGLOBAL R12 K6       ; R12 := Game
+664 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 665 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["MULTIPLY"]
 666 [-]: LOADK     R13 K17      ; R13 := 0.25
 667 [-]: GETGLOBAL R14 K18      ; R14 := gTennoAvatarType
 668 [-]: LOADNIL   R15 R15      ; R15 := nil
-669 [-]: GETGLOBAL R16 K11      ; R16 := Engine
+669 [-]: GETGLOBAL R16 K8       ; R16 := Engine
 670 [-]: GETTABLE  R16 R16 K12  ; R16 := R16["DT_ANY"]
 671 [-]: GETGLOBAL R17 K20      ; R17 := EMPTY_SYMBOL
 672 [-]: GETGLOBAL R18 K111     ; R18 := gLotusOperatorAvatarType
@@ -4293,12 +4293,12 @@ code size: 3
 674 [-]: SELF      R9 R0 K5     ; R10 := R0; R9 := R0["0xA470B2A3"]
 675 [-]: GETGLOBAL R11 K6       ; R11 := Game
 676 [-]: GETTABLE  R11 R11 K112 ; R11 := R11["AVATAR_POWER_RATE"]
-677 [-]: GETGLOBAL R12 K6       ; R12 := Game
+677 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 678 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["MULTIPLY"]
 679 [-]: LOADK     R13 K113     ; R13 := 0.15000000596046
 680 [-]: GETGLOBAL R14 K18      ; R14 := gTennoAvatarType
 681 [-]: LOADNIL   R15 R15      ; R15 := nil
-682 [-]: GETGLOBAL R16 K11      ; R16 := Engine
+682 [-]: GETGLOBAL R16 K8       ; R16 := Engine
 683 [-]: GETTABLE  R16 R16 K12  ; R16 := R16["DT_ANY"]
 684 [-]: GETGLOBAL R17 K20      ; R17 := EMPTY_SYMBOL
 685 [-]: GETGLOBAL R18 K111     ; R18 := gLotusOperatorAvatarType

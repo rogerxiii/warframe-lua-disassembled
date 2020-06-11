@@ -135,41 +135,41 @@ code size: 43
  64 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0x3B1B11B9"]
  65 [-]: GETGLOBAL R10 K19      ; R10 := Game
  66 [-]: GETTABLE  R10 R10 K20  ; R10 := R10["WEAPON_DAMAGE_AMOUNT"]
- 67 [-]: GETGLOBAL R11 K19      ; R11 := Game
- 68 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["SET"]
- 69 [-]: LOADK     R12 K22      ; R12 := 0
+ 67 [-]: GETGLOBAL R11 K21      ; R11 := Engine
+ 68 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["SET"]
+ 69 [-]: LOADK     R12 K23      ; R12 := 0
  70 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  71 [-]: SELF      R8 R4 K17    ; R9 := R4; R8 := R4["0x8DB5D01F"]
  72 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  73 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0x3B1B11B9"]
  74 [-]: GETGLOBAL R10 K19      ; R10 := Game
- 75 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["WEAPON_PROC_CHANCE"]
- 76 [-]: GETGLOBAL R11 K19      ; R11 := Game
- 77 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["SET"]
- 78 [-]: LOADK     R12 K22      ; R12 := 0
+ 75 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["WEAPON_PROC_CHANCE"]
+ 76 [-]: GETGLOBAL R11 K21      ; R11 := Engine
+ 77 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["SET"]
+ 78 [-]: LOADK     R12 K23      ; R12 := 0
  79 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  80 [-]: SELF      R8 R4 K17    ; R9 := R4; R8 := R4["0x8DB5D01F"]
  81 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  82 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0x3B1B11B9"]
  83 [-]: GETGLOBAL R10 K19      ; R10 := Game
- 84 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["WEAPON_MELEE_DAMAGE"]
- 85 [-]: GETGLOBAL R11 K19      ; R11 := Game
- 86 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["SET"]
- 87 [-]: LOADK     R12 K22      ; R12 := 0
+ 84 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["WEAPON_MELEE_DAMAGE"]
+ 85 [-]: GETGLOBAL R11 K21      ; R11 := Engine
+ 86 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["SET"]
+ 87 [-]: LOADK     R12 K23      ; R12 := 0
  88 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
- 89 [-]: SELF      R8 R4 K25    ; R9 := R4; R8 := R4["0xB26452A2"]
+ 89 [-]: SELF      R8 R4 K26    ; R9 := R4; R8 := R4["0xB26452A2"]
  90 [-]: GETGLOBAL R10 K9       ; R10 := 0xEC274B1A
- 91 [-]: LOADK     R11 K26      ; R11 := "MonitorDecoy"
+ 91 [-]: LOADK     R11 K27      ; R11 := "MonitorDecoy"
  92 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  93 [-]: MOVE      R11 R0       ; R11 := R0
  94 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
  95 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
- 96 [-]: GETGLOBAL R9 K27       ; R9 := decoyWeaponType
+ 96 [-]: GETGLOBAL R9 K28       ; R9 := decoyWeaponType
  97 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  98 [-]: TEST      R8 1         ; if R8 then PC := 104
  99 [-]: JMP       104          ; PC := 104
-100 [-]: SELF      R8 R4 K28    ; R9 := R4; R8 := R4["0x58347F07"]
-101 [-]: GETGLOBAL R10 K27      ; R10 := decoyWeaponType
+100 [-]: SELF      R8 R4 K29    ; R9 := R4; R8 := R4["0x58347F07"]
+101 [-]: GETGLOBAL R10 K28      ; R10 := decoyWeaponType
 102 [-]: MOVE      R11 R1       ; R11 := R1
 103 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
 104 [-]: RETURN    R4 2         ; return R4
@@ -427,7 +427,7 @@ code size: 43
 240 [-]: SELF      R49 R49 K61  ; R50 := R49; R49 := R49["0x3B1B11B9"]
 241 [-]: GETGLOBAL R51 K62      ; R51 := Game
 242 [-]: GETTABLE  R51 R51 K63  ; R51 := R51["AVATAR_THORNS_PERCENT"]
-243 [-]: GETGLOBAL R52 K62      ; R52 := Game
+243 [-]: GETGLOBAL R52 K7       ; R52 := Engine
 244 [-]: GETTABLE  R52 R52 K64  ; R52 := R52["ADD"]
 245 [-]: LOADK     R53 K65      ; R53 := 0.30000001192093
 246 [-]: CALL      R49 5 1      ; R49(R50,R51,R52,R53)
@@ -436,7 +436,7 @@ code size: 43
 249 [-]: SELF      R49 R49 K61  ; R50 := R49; R49 := R49["0x3B1B11B9"]
 250 [-]: GETGLOBAL R51 K62      ; R51 := Game
 251 [-]: GETTABLE  R51 R51 K66  ; R51 := R51["AVATAR_DAMAGE_RESISTANCE"]
-252 [-]: GETGLOBAL R52 K62      ; R52 := Game
+252 [-]: GETGLOBAL R52 K7       ; R52 := Engine
 253 [-]: GETTABLE  R52 R52 K64  ; R52 := R52["ADD"]
 254 [-]: LOADK     R53 K67      ; R53 := 0.89999997615814
 255 [-]: CALL      R49 5 1      ; R49(R50,R51,R52,R53)
@@ -578,28 +578,28 @@ code size: 43
  17 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xF21555A7"]
  18 [-]: GETGLOBAL R4 K8        ; R4 := Game
  19 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["AVATAR_THORNS_PERCENT"]
- 20 [-]: GETGLOBAL R5 K8        ; R5 := Game
- 21 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["ADD"]
- 22 [-]: LOADK     R6 K11       ; R6 := 0.30000001192093
+ 20 [-]: GETGLOBAL R5 K10       ; R5 := Engine
+ 21 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["ADD"]
+ 22 [-]: LOADK     R6 K12       ; R6 := 0.30000001192093
  23 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  24 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1["0x8DB5D01F"]
  25 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  26 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xF21555A7"]
  27 [-]: GETGLOBAL R4 K8        ; R4 := Game
- 28 [-]: GETTABLE  R4 R4 K12    ; R4 := R4["AVATAR_DAMAGE_RESISTANCE"]
- 29 [-]: GETGLOBAL R5 K8        ; R5 := Game
- 30 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["ADD"]
- 31 [-]: LOADK     R6 K13       ; R6 := 0.89999997615814
+ 28 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["AVATAR_DAMAGE_RESISTANCE"]
+ 29 [-]: GETGLOBAL R5 K10       ; R5 := Engine
+ 30 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["ADD"]
+ 31 [-]: LOADK     R6 K14       ; R6 := 0.89999997615814
  32 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 33 [-]: SELF      R2 R1 K14    ; R3 := R1; R2 := R1["0x9F1DC568"]
- 34 [-]: GETGLOBAL R4 K15       ; R4 := thornsFx
+ 33 [-]: SELF      R2 R1 K15    ; R3 := R1; R2 := R1["0x9F1DC568"]
+ 34 [-]: GETGLOBAL R4 K16       ; R4 := thornsFx
  35 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 36 [-]: GETGLOBAL R3 K16       ; R3 := 0x400E7765
+ 36 [-]: GETGLOBAL R3 K17       ; R3 := 0x400E7765
  37 [-]: MOVE      R4 R2        ; R4 := R2
  38 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  39 [-]: TEST      R3 1         ; if R3 then PC := 43
  40 [-]: JMP       43           ; PC := 43
- 41 [-]: SELF      R3 R2 K17    ; R4 := R2; R3 := R2["0xD4C2743F"]
+ 41 [-]: SELF      R3 R2 K18    ; R4 := R2; R3 := R2["0xD4C2743F"]
  42 [-]: CALL      R3 2 1       ; R3(R4)
  43 [-]: RETURN    R0 1         ; return 
 

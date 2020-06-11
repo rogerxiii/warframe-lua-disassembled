@@ -9,7 +9,7 @@ code size: 50
 code size: 95
 code size: 57
 code size: 61
-code size: 912
+code size: 915
 code size: 17
 code size: 12
 code size: 28
@@ -845,8 +845,8 @@ code size: 9
 220 [-]: MOVE      R0 R2        ; R0 := R2
 221 [-]: GETGLOBAL R7 K1        ; R7 := _T
 222 [-]: GETTABLE  R7 R7 K53    ; R7 := R7["testingMissionEnd"]
-223 [-]: TEST      R7 0         ; if not R7 then PC := 912
-224 [-]: JMP       912          ; PC := 912
+223 [-]: TEST      R7 0         ; if not R7 then PC := 915
+224 [-]: JMP       915          ; PC := 915
 225 [-]: MOVE      R7 R0        ; R7 := R0
 226 [-]: GETGLOBAL R8 K1        ; R8 := _T
 227 [-]: GETTABLE  R8 R8 K53    ; R8 := R8["testingMissionEnd"]
@@ -1187,24 +1187,24 @@ code size: 9
 562 [-]: GETGLOBAL R47 K19      ; R47 := 0x201191EA
 563 [-]: LOADK     R48 K18      ; R48 := 0
 564 [-]: CALL      R47 2 1      ; R47(R48)
-565 [-]: TEST      R30 0        ; if not R30 then PC := 901
-566 [-]: JMP       901          ; PC := 901
+565 [-]: TEST      R30 0        ; if not R30 then PC := 904
+566 [-]: JMP       904          ; PC := 904
 567 [-]: GETGLOBAL R47 K1       ; R47 := _T
 568 [-]: GETTABLE  R47 R47 K53  ; R47 := R47["testingMissionEnd"]
-569 [-]: TEST      R47 0        ; if not R47 then PC := 901
-570 [-]: JMP       901          ; PC := 901
+569 [-]: TEST      R47 0        ; if not R47 then PC := 904
+570 [-]: JMP       904          ; PC := 904
 571 [-]: MOVE      R47 R6       ; R47 := R6
 572 [-]: MOVE      R48 R3       ; R48 := R3
 573 [-]: MOVE      R49 R0       ; R49 := R0
 574 [-]: MOVE      R50 R5       ; R50 := R5
 575 [-]: CALL      R47 4 2      ; R47 := R47(R48,R49,R50)
-576 [-]: TEST      R47 0        ; if not R47 then PC := 901
-577 [-]: JMP       901          ; PC := 901
+576 [-]: TEST      R47 0        ; if not R47 then PC := 904
+577 [-]: JMP       904          ; PC := 904
 578 [-]: GETGLOBAL R47 K3       ; R47 := gRegion
 579 [-]: SELF      R47 R47 K69  ; R48 := R47; R47 := R47["0xA559F558"]
 580 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-581 [-]: TEST      R47 0        ; if not R47 then PC := 897
-582 [-]: JMP       897          ; PC := 897
+581 [-]: TEST      R47 0        ; if not R47 then PC := 900
+582 [-]: JMP       900          ; PC := 900
 583 [-]: GETGLOBAL R47 K15      ; R47 := gGameRules
 584 [-]: SELF      R47 R47 K95  ; R48 := R47; R47 := R47["0xA2CB3BC5"]
 585 [-]: CALL      R47 2 2      ; R47 := R47(R48)
@@ -1212,13 +1212,13 @@ code size: 9
 587 [-]: JMP       592          ; PC := 592
 588 [-]: GETGLOBAL R47 K1       ; R47 := _T
 589 [-]: SETTABLE  R47 K53 K52  ; R47["testingMissionEnd"] := "0x0"
-590 [-]: JMP       901          ; PC := 901
-591 [-]: JMP       897          ; PC := 897
+590 [-]: JMP       904          ; PC := 904
+591 [-]: JMP       900          ; PC := 900
 592 [-]: GETGLOBAL R47 K15      ; R47 := gGameRules
 593 [-]: SELF      R47 R47 K96  ; R48 := R47; R47 := R47["0xF63BCEF9"]
 594 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-595 [-]: TEST      R47 0        ; if not R47 then PC := 897
-596 [-]: JMP       897          ; PC := 897
+595 [-]: TEST      R47 0        ; if not R47 then PC := 900
+596 [-]: JMP       900          ; PC := 900
 597 [-]: TEST      R4 1         ; if R4 then PC := 603
 598 [-]: JMP       603          ; PC := 603
 599 [-]: SELF      R47 R0 K75   ; R48 := R0; R47 := R0["0xD44D2F06"]
@@ -1238,8 +1238,8 @@ code size: 9
 613 [-]: GETUPVAL  R47 U8       ; R47 := U8
 614 [-]: GETTABLE  R47 R47 K97  ; R47 := R47["0x582AA035"]
 615 [-]: CALL      R47 1 2      ; R47 := R47()
-616 [-]: LT        0 R47 K18    ; if R47 >= 0 then PC := 897
-617 [-]: JMP       897          ; PC := 897
+616 [-]: LT        0 R47 K18    ; if R47 >= 0 then PC := 900
+617 [-]: JMP       900          ; PC := 900
 618 [-]: GETGLOBAL R47 K15      ; R47 := gGameRules
 619 [-]: SELF      R47 R47 K98  ; R48 := R47; R47 := R47["0xCF5DF9F6"]
 620 [-]: CALL      R47 2 2      ; R47 := R47(R48)
@@ -1434,107 +1434,110 @@ code size: 9
 809 [-]: GETGLOBAL R71 K15      ; R71 := gGameRules
 810 [-]: SELF      R71 R71 K125 ; R72 := R71; R71 := R71["0xA492D81C"]
 811 [-]: CALL      R71 2 1      ; R71(R72)
-812 [-]: TEST      R67 0        ; if not R67 then PC := 860
-813 [-]: JMP       860          ; PC := 860
-814 [-]: GETGLOBAL R71 K0       ; R71 := 0x400E7765
-815 [-]: GETGLOBAL R72 K126     ; R72 := endOfMissionInstance
-816 [-]: CALL      R71 2 2      ; R71 := R71(R72)
-817 [-]: TEST      R71 1        ; if R71 then PC := 823
-818 [-]: JMP       823          ; PC := 823
-819 [-]: GETGLOBAL R71 K126     ; R71 := endOfMissionInstance
-820 [-]: SELF      R71 R71 K11  ; R72 := R71; R71 := R71["0x8D5886B7"]
-821 [-]: GETGLOBAL R73 K127     ; R73 := endOfMissionPort
-822 [-]: CALL      R71 3 1      ; R71(R72,R73)
-823 [-]: GETGLOBAL R71 K0       ; R71 := 0x400E7765
-824 [-]: GETGLOBAL R72 K128     ; R72 := decorationsToDestroyViaPort
-825 [-]: CALL      R71 2 2      ; R71 := R71(R72)
-826 [-]: TEST      R71 1        ; if R71 then PC := 845
-827 [-]: JMP       845          ; PC := 845
-828 [-]: LOADK     R71 K7       ; R71 := 1
-829 [-]: GETGLOBAL R72 K128     ; R72 := decorationsToDestroyViaPort
-830 [-]: LEN       R72 R72      ; R72 := # R72
-831 [-]: LOADK     R73 K7       ; R73 := 1
-832 [-]: FORPREP   R71 844      ; R71 -= R73; PC := 844
-833 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
-834 [-]: GETGLOBAL R76 K128     ; R76 := decorationsToDestroyViaPort
-835 [-]: GETTABLE  R76 R76 R74  ; R76 := R76[R74]
-836 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-837 [-]: TEST      R75 1        ; if R75 then PC := 844
-838 [-]: JMP       844          ; PC := 844
-839 [-]: GETGLOBAL R75 K128     ; R75 := decorationsToDestroyViaPort
-840 [-]: GETTABLE  R75 R75 R74  ; R75 := R75[R74]
-841 [-]: SELF      R75 R75 K11  ; R76 := R75; R75 := R75["0x8D5886B7"]
-842 [-]: LOADK     R77 K129     ; R77 := "Destroy"
-843 [-]: CALL      R75 3 1      ; R75(R76,R77)
-844 [-]: FORLOOP   R71 833      ; R71 += R73; if R71 <= R72 then begin PC := 833; R74 := R71 end
-845 [-]: LOADK     R75 K7       ; R75 := 1
-846 [-]: GETGLOBAL R76 K1       ; R76 := _T
-847 [-]: GETTABLE  R76 R76 K130 ; R76 := R76["AllPlayersExtractingCallbacks"]
-848 [-]: LEN       R76 R76      ; R76 := # R76
-849 [-]: LOADK     R77 K7       ; R77 := 1
-850 [-]: FORPREP   R75 858      ; R75 -= R77; PC := 858
-851 [-]: GETGLOBAL R79 K1       ; R79 := _T
-852 [-]: GETTABLE  R79 R79 K130 ; R79 := R79["AllPlayersExtractingCallbacks"]
-853 [-]: GETTABLE  R79 R79 R78  ; R79 := R79[R78]
-854 [-]: TEST      R79 0        ; if not R79 then PC := 858
-855 [-]: JMP       858          ; PC := 858
-856 [-]: MOVE      R80 R79      ; R80 := R79
-857 [-]: CALL      R80 1 1      ; R80()
-858 [-]: FORLOOP   R75 851      ; R75 += R77; if R75 <= R76 then begin PC := 851; R78 := R75 end
-859 [-]: JMP       901          ; PC := 901
-860 [-]: LEN       R80 R56      ; R80 := # R56
-861 [-]: LT        0 K18 R80    ; if 0 >= R80 then PC := 901
-862 [-]: JMP       901          ; PC := 901
-863 [-]: NEWTABLE  R80 0 0      ; R80 := {}
-864 [-]: GETGLOBAL R81 K60      ; R81 := 0x63B09107
-865 [-]: MOVE      R82 R56      ; R82 := R56
-866 [-]: CALL      R81 2 4      ; R81,R82,R83 := R81(R82)
-867 [-]: JMP       890          ; PC := 890
-868 [-]: GETGLOBAL R86 K61      ; R86 := table
-869 [-]: GETTABLE  R86 R86 K62  ; R86 := R86["0xE6450C9D"]
-870 [-]: MOVE      R87 R80      ; R87 := R80
-871 [-]: SELF      R88 R85 K131 ; R89 := R85; R88 := R85["0x6BD241AC"]
-872 [-]: CALL      R88 2 0      ; R88,... := R88(R89)
-873 [-]: CALL      R86 0 1      ; R86(R87,...)
-874 [-]: GETGLOBAL R86 K0       ; R86 := 0x400E7765
-875 [-]: GETGLOBAL R87 K132     ; R87 := partialSquadExtractionCinematic
-876 [-]: CALL      R86 2 2      ; R86 := R86(R87)
-877 [-]: TEST      R86 1        ; if R86 then PC := 890
-878 [-]: JMP       890          ; PC := 890
-879 [-]: GETGLOBAL R86 K132     ; R86 := partialSquadExtractionCinematic
-880 [-]: SELF      R86 R86 K77  ; R87 := R86; R86 := R86["0x8B598ED4"]
-881 [-]: GETGLOBAL R88 K133     ; R88 := gCinematicType
-882 [-]: CALL      R86 3 2      ; R86 := R86(R87,R88)
-883 [-]: TEST      R86 0        ; if not R86 then PC := 890
-884 [-]: JMP       890          ; PC := 890
-885 [-]: GETGLOBAL R86 K132     ; R86 := partialSquadExtractionCinematic
-886 [-]: SELF      R86 R86 K74  ; R87 := R86; R86 := R86["0x28A0CFF1"]
-887 [-]: SELF      R88 R85 K82  ; R89 := R85; R88 := R85["0x80B14403"]
-888 [-]: CALL      R88 2 0      ; R88,... := R88(R89)
-889 [-]: CALL      R86 0 1      ; R86(R87,...)
-890 [-]: TFORLOOP  R81 2        ; R84,R85 :=  R81(R82,R83); if R84 ~= nil then begin PC = 868; R83 := R84 end
-891 [-]: JMP       868          ; PC := 868
-892 [-]: GETGLOBAL R86 K15      ; R86 := gGameRules
-893 [-]: SELF      R86 R86 K134 ; R87 := R86; R86 := R86["0x7F65E4B5"]
-894 [-]: MOVE      R88 R80      ; R88 := R80
-895 [-]: CALL      R86 3 1      ; R86(R87,R88)
-896 [-]: JMP       901          ; PC := 901
-897 [-]: GETGLOBAL R86 K19      ; R86 := 0x201191EA
-898 [-]: LOADK     R87 K18      ; R87 := 0
-899 [-]: CALL      R86 2 1      ; R86(R87)
-900 [-]: JMP       567          ; PC := 567
-901 [-]: GETGLOBAL R86 K1       ; R86 := _T
-902 [-]: GETTABLE  R86 R86 K53  ; R86 := R86["testingMissionEnd"]
-903 [-]: TEST      R86 0        ; if not R86 then PC := 221
-904 [-]: JMP       221          ; PC := 221
-905 [-]: GETGLOBAL R86 K1       ; R86 := _T
-906 [-]: GETTABLE  R86 R86 K84  ; R86 := R86["gSkipExtractionTimer"]
-907 [-]: TEST      R86 1        ; if R86 then PC := 221
-908 [-]: JMP       221          ; PC := 221
-909 [-]: GETUPVAL  R86 U10      ; R86 := U10
-910 [-]: CALL      R86 1 1      ; R86()
+812 [-]: TEST      R67 0        ; if not R67 then PC := 863
+813 [-]: JMP       863          ; PC := 863
+814 [-]: GETGLOBAL R71 K126     ; R71 := 0x93B1256B
+815 [-]: LOADK     R72 K127     ; R72 := "EOM: All players extracting"
+816 [-]: CALL      R71 2 1      ; R71(R72)
+817 [-]: GETGLOBAL R71 K0       ; R71 := 0x400E7765
+818 [-]: GETGLOBAL R72 K128     ; R72 := endOfMissionInstance
+819 [-]: CALL      R71 2 2      ; R71 := R71(R72)
+820 [-]: TEST      R71 1        ; if R71 then PC := 826
+821 [-]: JMP       826          ; PC := 826
+822 [-]: GETGLOBAL R71 K128     ; R71 := endOfMissionInstance
+823 [-]: SELF      R71 R71 K11  ; R72 := R71; R71 := R71["0x8D5886B7"]
+824 [-]: GETGLOBAL R73 K129     ; R73 := endOfMissionPort
+825 [-]: CALL      R71 3 1      ; R71(R72,R73)
+826 [-]: GETGLOBAL R71 K0       ; R71 := 0x400E7765
+827 [-]: GETGLOBAL R72 K130     ; R72 := decorationsToDestroyViaPort
+828 [-]: CALL      R71 2 2      ; R71 := R71(R72)
+829 [-]: TEST      R71 1        ; if R71 then PC := 848
+830 [-]: JMP       848          ; PC := 848
+831 [-]: LOADK     R71 K7       ; R71 := 1
+832 [-]: GETGLOBAL R72 K130     ; R72 := decorationsToDestroyViaPort
+833 [-]: LEN       R72 R72      ; R72 := # R72
+834 [-]: LOADK     R73 K7       ; R73 := 1
+835 [-]: FORPREP   R71 847      ; R71 -= R73; PC := 847
+836 [-]: GETGLOBAL R75 K0       ; R75 := 0x400E7765
+837 [-]: GETGLOBAL R76 K130     ; R76 := decorationsToDestroyViaPort
+838 [-]: GETTABLE  R76 R76 R74  ; R76 := R76[R74]
+839 [-]: CALL      R75 2 2      ; R75 := R75(R76)
+840 [-]: TEST      R75 1        ; if R75 then PC := 847
+841 [-]: JMP       847          ; PC := 847
+842 [-]: GETGLOBAL R75 K130     ; R75 := decorationsToDestroyViaPort
+843 [-]: GETTABLE  R75 R75 R74  ; R75 := R75[R74]
+844 [-]: SELF      R75 R75 K11  ; R76 := R75; R75 := R75["0x8D5886B7"]
+845 [-]: LOADK     R77 K131     ; R77 := "Destroy"
+846 [-]: CALL      R75 3 1      ; R75(R76,R77)
+847 [-]: FORLOOP   R71 836      ; R71 += R73; if R71 <= R72 then begin PC := 836; R74 := R71 end
+848 [-]: LOADK     R75 K7       ; R75 := 1
+849 [-]: GETGLOBAL R76 K1       ; R76 := _T
+850 [-]: GETTABLE  R76 R76 K132 ; R76 := R76["AllPlayersExtractingCallbacks"]
+851 [-]: LEN       R76 R76      ; R76 := # R76
+852 [-]: LOADK     R77 K7       ; R77 := 1
+853 [-]: FORPREP   R75 861      ; R75 -= R77; PC := 861
+854 [-]: GETGLOBAL R79 K1       ; R79 := _T
+855 [-]: GETTABLE  R79 R79 K132 ; R79 := R79["AllPlayersExtractingCallbacks"]
+856 [-]: GETTABLE  R79 R79 R78  ; R79 := R79[R78]
+857 [-]: TEST      R79 0        ; if not R79 then PC := 861
+858 [-]: JMP       861          ; PC := 861
+859 [-]: MOVE      R80 R79      ; R80 := R79
+860 [-]: CALL      R80 1 1      ; R80()
+861 [-]: FORLOOP   R75 854      ; R75 += R77; if R75 <= R76 then begin PC := 854; R78 := R75 end
+862 [-]: JMP       904          ; PC := 904
+863 [-]: LEN       R80 R56      ; R80 := # R56
+864 [-]: LT        0 K18 R80    ; if 0 >= R80 then PC := 904
+865 [-]: JMP       904          ; PC := 904
+866 [-]: NEWTABLE  R80 0 0      ; R80 := {}
+867 [-]: GETGLOBAL R81 K60      ; R81 := 0x63B09107
+868 [-]: MOVE      R82 R56      ; R82 := R56
+869 [-]: CALL      R81 2 4      ; R81,R82,R83 := R81(R82)
+870 [-]: JMP       893          ; PC := 893
+871 [-]: GETGLOBAL R86 K61      ; R86 := table
+872 [-]: GETTABLE  R86 R86 K62  ; R86 := R86["0xE6450C9D"]
+873 [-]: MOVE      R87 R80      ; R87 := R80
+874 [-]: SELF      R88 R85 K133 ; R89 := R85; R88 := R85["0x6BD241AC"]
+875 [-]: CALL      R88 2 0      ; R88,... := R88(R89)
+876 [-]: CALL      R86 0 1      ; R86(R87,...)
+877 [-]: GETGLOBAL R86 K0       ; R86 := 0x400E7765
+878 [-]: GETGLOBAL R87 K134     ; R87 := partialSquadExtractionCinematic
+879 [-]: CALL      R86 2 2      ; R86 := R86(R87)
+880 [-]: TEST      R86 1        ; if R86 then PC := 893
+881 [-]: JMP       893          ; PC := 893
+882 [-]: GETGLOBAL R86 K134     ; R86 := partialSquadExtractionCinematic
+883 [-]: SELF      R86 R86 K77  ; R87 := R86; R86 := R86["0x8B598ED4"]
+884 [-]: GETGLOBAL R88 K135     ; R88 := gCinematicType
+885 [-]: CALL      R86 3 2      ; R86 := R86(R87,R88)
+886 [-]: TEST      R86 0        ; if not R86 then PC := 893
+887 [-]: JMP       893          ; PC := 893
+888 [-]: GETGLOBAL R86 K134     ; R86 := partialSquadExtractionCinematic
+889 [-]: SELF      R86 R86 K74  ; R87 := R86; R86 := R86["0x28A0CFF1"]
+890 [-]: SELF      R88 R85 K82  ; R89 := R85; R88 := R85["0x80B14403"]
+891 [-]: CALL      R88 2 0      ; R88,... := R88(R89)
+892 [-]: CALL      R86 0 1      ; R86(R87,...)
+893 [-]: TFORLOOP  R81 2        ; R84,R85 :=  R81(R82,R83); if R84 ~= nil then begin PC = 871; R83 := R84 end
+894 [-]: JMP       871          ; PC := 871
+895 [-]: GETGLOBAL R86 K15      ; R86 := gGameRules
+896 [-]: SELF      R86 R86 K136 ; R87 := R86; R86 := R86["0x7F65E4B5"]
+897 [-]: MOVE      R88 R80      ; R88 := R80
+898 [-]: CALL      R86 3 1      ; R86(R87,R88)
+899 [-]: JMP       904          ; PC := 904
+900 [-]: GETGLOBAL R86 K19      ; R86 := 0x201191EA
+901 [-]: LOADK     R87 K18      ; R87 := 0
+902 [-]: CALL      R86 2 1      ; R86(R87)
+903 [-]: JMP       567          ; PC := 567
+904 [-]: GETGLOBAL R86 K1       ; R86 := _T
+905 [-]: GETTABLE  R86 R86 K53  ; R86 := R86["testingMissionEnd"]
+906 [-]: TEST      R86 0        ; if not R86 then PC := 221
+907 [-]: JMP       221          ; PC := 221
+908 [-]: GETGLOBAL R86 K1       ; R86 := _T
+909 [-]: GETTABLE  R86 R86 K84  ; R86 := R86["gSkipExtractionTimer"]
+910 [-]: TEST      R86 1        ; if R86 then PC := 221
 911 [-]: JMP       221          ; PC := 221
-912 [-]: RETURN    R0 1         ; return 
+912 [-]: GETUPVAL  R86 U10      ; R86 := U10
+913 [-]: CALL      R86 1 1      ; R86()
+914 [-]: JMP       221          ; PC := 221
+915 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11.1:
@@ -1591,7 +1594,7 @@ code size: 9
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 598
+; Defined at line: 600
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1630,7 +1633,7 @@ code size: 9
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 610
+; Defined at line: 612
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1665,7 +1668,7 @@ code size: 9
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 621
+; Defined at line: 623
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1689,7 +1692,7 @@ code size: 9
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 627
+; Defined at line: 629
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1707,7 +1710,7 @@ code size: 9
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 633
+; Defined at line: 635
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1727,7 +1730,7 @@ code size: 9
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 641
+; Defined at line: 643
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0

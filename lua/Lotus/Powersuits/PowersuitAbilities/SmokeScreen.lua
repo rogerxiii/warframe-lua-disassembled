@@ -16,8 +16,8 @@ code size: 15
 code size: 9
 code size: 63
 code size: 279
-code size: 75
-code size: 75
+code size: 86
+code size: 82
 code size: 30
 code size: 33
 code size: 71
@@ -1352,39 +1352,50 @@ code size: 36
  46 [-]: SELF      R5 R4 K16    ; R6 := R4; R5 := R4["0x3B1B11B9"]
  47 [-]: GETGLOBAL R7 K17       ; R7 := Game
  48 [-]: GETTABLE  R7 R7 K18    ; R7 := R7["AVATAR_PARKOUR_BOOST"]
- 49 [-]: GETGLOBAL R8 K17       ; R8 := Game
+ 49 [-]: GETGLOBAL R8 K4        ; R8 := Engine
  50 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["STACKING_MULTIPLY"]
  51 [-]: LOADK     R9 K20       ; R9 := 0.40000000596046
  52 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  53 [-]: SELF      R5 R4 K16    ; R6 := R4; R5 := R4["0x3B1B11B9"]
  54 [-]: GETGLOBAL R7 K17       ; R7 := Game
  55 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["AVATAR_SLIDE_BOOST"]
- 56 [-]: GETGLOBAL R8 K17       ; R8 := Game
+ 56 [-]: GETGLOBAL R8 K4        ; R8 := Engine
  57 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["STACKING_MULTIPLY"]
  58 [-]: LOADK     R9 K22       ; R9 := 0.20000000298023
  59 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  60 [-]: SELF      R5 R4 K16    ; R6 := R4; R5 := R4["0x3B1B11B9"]
  61 [-]: GETGLOBAL R7 K17       ; R7 := Game
  62 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["AVATAR_SLIDE_FRICTION"]
- 63 [-]: GETGLOBAL R8 K17       ; R8 := Game
+ 63 [-]: GETGLOBAL R8 K4        ; R8 := Engine
  64 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["STACKING_MULTIPLY"]
  65 [-]: LOADK     R9 K24       ; R9 := -0.20000000298023
  66 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 67 [-]: GETUPVAL  R5 U5        ; R5 := U5
- 68 [-]: MOVE      R6 R0        ; R6 := R0
- 69 [-]: MOVE      R7 R1        ; R7 := R1
- 70 [-]: MOVE      R8 R0        ; R8 := R0
- 71 [-]: MOVE      R9 R1        ; R9 := R1
- 72 [-]: SELF      R10 R1 K25   ; R11 := R1; R10 := R1["0x6DA72501"]
- 73 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 74 [-]: CALL      R5 0 1       ; R5(R6,...)
- 75 [-]: RETURN    R0 1         ; return 
+ 67 [-]: SELF      R5 R1 K25    ; R6 := R1; R5 := R1["0xAB436EF2"]
+ 68 [-]: SELF      R7 R0 K7     ; R8 := R0; R7 := R0["0xDD9E6F2D"]
+ 69 [-]: GETGLOBAL R9 K8        ; R9 := 0xEC274B1A
+ 70 [-]: LOADK     R10 K26      ; R10 := "SmokeScreenAttach"
+ 71 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+ 72 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+ 73 [-]: GETGLOBAL R8 K27       ; R8 := EMPTY_SYMBOL
+ 74 [-]: GETGLOBAL R9 K28       ; R9 := ZERO_VECTOR
+ 75 [-]: GETGLOBAL R10 K29      ; R10 := ZERO_ROTATION
+ 76 [-]: MOVE      R11 R0       ; R11 := R0
+ 77 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
+ 78 [-]: GETUPVAL  R5 U5        ; R5 := U5
+ 79 [-]: MOVE      R6 R0        ; R6 := R0
+ 80 [-]: MOVE      R7 R1        ; R7 := R1
+ 81 [-]: MOVE      R8 R0        ; R8 := R0
+ 82 [-]: MOVE      R9 R1        ; R9 := R1
+ 83 [-]: SELF      R10 R1 K30   ; R11 := R1; R10 := R1["0x6DA72501"]
+ 84 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+ 85 [-]: CALL      R5 0 1       ; R5(R6,...)
+ 86 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 447
+; Defined at line: 448
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1414,63 +1425,70 @@ code size: 36
  22 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0xF21555A7"]
  23 [-]: GETGLOBAL R5 K10       ; R5 := Game
  24 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_PARKOUR_BOOST"]
- 25 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 26 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["STACKING_MULTIPLY"]
- 27 [-]: LOADK     R7 K13       ; R7 := 0.40000000596046
+ 25 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 26 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["STACKING_MULTIPLY"]
+ 27 [-]: LOADK     R7 K14       ; R7 := 0.40000000596046
  28 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  29 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0xF21555A7"]
  30 [-]: GETGLOBAL R5 K10       ; R5 := Game
- 31 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["AVATAR_SLIDE_BOOST"]
- 32 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 33 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["STACKING_MULTIPLY"]
- 34 [-]: LOADK     R7 K15       ; R7 := 0.20000000298023
+ 31 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["AVATAR_SLIDE_BOOST"]
+ 32 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 33 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["STACKING_MULTIPLY"]
+ 34 [-]: LOADK     R7 K16       ; R7 := 0.20000000298023
  35 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  36 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0xF21555A7"]
  37 [-]: GETGLOBAL R5 K10       ; R5 := Game
- 38 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["AVATAR_SLIDE_FRICTION"]
- 39 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 40 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["STACKING_MULTIPLY"]
- 41 [-]: LOADK     R7 K17       ; R7 := -0.20000000298023
+ 38 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["AVATAR_SLIDE_FRICTION"]
+ 39 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 40 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["STACKING_MULTIPLY"]
+ 41 [-]: LOADK     R7 K18       ; R7 := -0.20000000298023
  42 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 43 [-]: SELF      R3 R0 K18    ; R4 := R0; R3 := R0["0xBCD271D5"]
+ 43 [-]: SELF      R3 R0 K19    ; R4 := R0; R3 := R0["0xBCD271D5"]
  44 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  45 [-]: TEST      R3 0         ; if not R3 then PC := 55
  46 [-]: JMP       55           ; PC := 55
  47 [-]: GETGLOBAL R3 K6        ; R3 := gRegion
- 48 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3["0xBDD34CC6"]
- 49 [-]: GETGLOBAL R5 K20       ; R5 := endEffectPrime
- 50 [-]: SELF      R6 R1 K21    ; R7 := R1; R6 := R1["0xE681382B"]
+ 48 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3["0xBDD34CC6"]
+ 49 [-]: GETGLOBAL R5 K21       ; R5 := endEffectPrime
+ 50 [-]: SELF      R6 R1 K22    ; R7 := R1; R6 := R1["0xE681382B"]
  51 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 52 [-]: GETGLOBAL R7 K22       ; R7 := ZERO_ROTATION
+ 52 [-]: GETGLOBAL R7 K23       ; R7 := ZERO_ROTATION
  53 [-]: MOVE      R8 R1        ; R8 := R1
  54 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  55 [-]: GETGLOBAL R3 K6        ; R3 := gRegion
- 56 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3["0xBDD34CC6"]
- 57 [-]: SELF      R5 R0 K23    ; R6 := R0; R5 := R0["0xDD9E6F2D"]
- 58 [-]: GETGLOBAL R7 K24       ; R7 := 0xEC274B1A
- 59 [-]: LOADK     R8 K25       ; R8 := "SmokeEnd"
+ 56 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3["0xBDD34CC6"]
+ 57 [-]: SELF      R5 R0 K24    ; R6 := R0; R5 := R0["0xDD9E6F2D"]
+ 58 [-]: GETGLOBAL R7 K25       ; R7 := 0xEC274B1A
+ 59 [-]: LOADK     R8 K26       ; R8 := "SmokeEnd"
  60 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  61 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
- 62 [-]: SELF      R6 R1 K21    ; R7 := R1; R6 := R1["0xE681382B"]
+ 62 [-]: SELF      R6 R1 K22    ; R7 := R1; R6 := R1["0xE681382B"]
  63 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 64 [-]: GETGLOBAL R7 K22       ; R7 := ZERO_ROTATION
+ 64 [-]: GETGLOBAL R7 K23       ; R7 := ZERO_ROTATION
  65 [-]: MOVE      R8 R1        ; R8 := R1
  66 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
- 67 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 68 [-]: MOVE      R4 R1        ; R4 := R1
- 69 [-]: SELF      R5 R0 K23    ; R6 := R0; R5 := R0["0xDD9E6F2D"]
- 70 [-]: GETGLOBAL R7 K24       ; R7 := 0xEC274B1A
- 71 [-]: LOADK     R8 K26       ; R8 := "SmokeCloak"
- 72 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
- 73 [-]: CALL      R5 0 0       ; R5,... := R5(R6,...)
- 74 [-]: CALL      R3 0 1       ; R3(R4,...)
- 75 [-]: RETURN    R0 1         ; return 
+ 67 [-]: SELF      R3 R1 K27    ; R4 := R1; R3 := R1["0x95F277A6"]
+ 68 [-]: SELF      R5 R0 K24    ; R6 := R0; R5 := R0["0xDD9E6F2D"]
+ 69 [-]: GETGLOBAL R7 K25       ; R7 := 0xEC274B1A
+ 70 [-]: LOADK     R8 K28       ; R8 := "SmokeScreenAttach"
+ 71 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 72 [-]: CALL      R5 0 0       ; R5,... := R5(R6,...)
+ 73 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 74 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 75 [-]: MOVE      R4 R1        ; R4 := R1
+ 76 [-]: SELF      R5 R0 K24    ; R6 := R0; R5 := R0["0xDD9E6F2D"]
+ 77 [-]: GETGLOBAL R7 K25       ; R7 := 0xEC274B1A
+ 78 [-]: LOADK     R8 K29       ; R8 := "SmokeCloak"
+ 79 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 80 [-]: CALL      R5 0 0       ; R5,... := R5(R6,...)
+ 81 [-]: CALL      R3 0 1       ; R3(R4,...)
+ 82 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 465
+; Defined at line: 467
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1511,7 +1529,7 @@ code size: 36
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 475
+; Defined at line: 477
 ; #Upvalues:       4
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -1555,7 +1573,7 @@ code size: 36
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 492
+; Defined at line: 494
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1637,7 +1655,7 @@ code size: 36
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 525
+; Defined at line: 527
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1697,7 +1715,7 @@ code size: 36
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 542
+; Defined at line: 544
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

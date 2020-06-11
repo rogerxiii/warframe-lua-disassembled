@@ -3070,7 +3070,7 @@ code size: 11
  76 [-]: SELF      R14 R14 K26  ; R15 := R14; R14 := R14["0x3B1B11B9"]
  77 [-]: GETGLOBAL R16 K27      ; R16 := Game
  78 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["WEAPON_DAMAGE_AMOUNT"]
- 79 [-]: GETGLOBAL R17 K27      ; R17 := Game
+ 79 [-]: GETGLOBAL R17 K9       ; R17 := Engine
  80 [-]: GETTABLE  R17 R17 K29  ; R17 := R17["MULTIPLY"]
  81 [-]: MOVE      R18 R13      ; R18 := R13
  82 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
@@ -3411,13 +3411,13 @@ code size: 11
  45 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  46 [-]: TEST      R7 1         ; if R7 then PC := 56
  47 [-]: JMP       56           ; PC := 56
- 48 [-]: TEST      R1 0         ; if not R1 then PC := 52
- 49 [-]: JMP       52           ; PC := 52
- 50 [-]: SELF      R7 R6 K8     ; R8 := R6; R7 := R6["0x71D685D0"]
- 51 [-]: CALL      R7 2 1       ; R7(R8)
- 52 [-]: SELF      R7 R6 K9     ; R8 := R6; R7 := R6["0xCE9C675D"]
- 53 [-]: MOVE      R9 R2        ; R9 := R2
- 54 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 48 [-]: SELF      R7 R6 K8     ; R8 := R6; R7 := R6["0xCE9C675D"]
+ 49 [-]: MOVE      R9 R2        ; R9 := R2
+ 50 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 51 [-]: TEST      R1 0         ; if not R1 then PC := 55
+ 52 [-]: JMP       55           ; PC := 55
+ 53 [-]: SELF      R7 R6 K9     ; R8 := R6; R7 := R6["0x71D685D0"]
+ 54 [-]: CALL      R7 2 1       ; R7(R8)
  55 [-]: MOVE      R4 R1        ; R4 := R1
  56 [-]: TEST      R4 1         ; if R4 then PC := 61
  57 [-]: JMP       61           ; PC := 61

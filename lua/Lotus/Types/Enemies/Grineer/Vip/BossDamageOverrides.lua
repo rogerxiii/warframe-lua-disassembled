@@ -199,115 +199,115 @@ code size: 145
  30 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0x3B1B11B9"]
  31 [-]: GETGLOBAL R6 K12       ; R6 := Game
  32 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["WEAPON_DAMAGE_AMOUNT"]
- 33 [-]: GETGLOBAL R7 K12       ; R7 := Game
- 34 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["MULTIPLY"]
- 35 [-]: LOADK     R8 K15       ; R8 := 0.10000000149012
+ 33 [-]: GETGLOBAL R7 K14       ; R7 := Engine
+ 34 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["MULTIPLY"]
+ 35 [-]: LOADK     R8 K16       ; R8 := 0.10000000149012
  36 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  37 [-]: LEN       R4 R1        ; R4 := # R1
- 38 [-]: LT        0 K16 R4     ; if 2 >= R4 then PC := 59
+ 38 [-]: LT        0 K17 R4     ; if 2 >= R4 then PC := 59
  39 [-]: JMP       59           ; PC := 59
  40 [-]: GETUPVAL  R4 U0        ; R4 := U0
  41 [-]: GETGLOBAL R5 K3        ; R5 := _T
  42 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["weaponConclave"]
- 43 [-]: GETGLOBAL R6 K17       ; R6 := minHealthRank
- 44 [-]: GETGLOBAL R7 K18       ; R7 := maxCoopHealthRank
- 45 [-]: GETGLOBAL R8 K19       ; R8 := minHealthDmgMod
- 46 [-]: GETGLOBAL R9 K20       ; R9 := maxCoopHealthDmgMod
+ 43 [-]: GETGLOBAL R6 K18       ; R6 := minHealthRank
+ 44 [-]: GETGLOBAL R7 K19       ; R7 := maxCoopHealthRank
+ 45 [-]: GETGLOBAL R8 K20       ; R8 := minHealthDmgMod
+ 46 [-]: GETGLOBAL R9 K21       ; R9 := maxCoopHealthDmgMod
  47 [-]: CALL      R4 6 2       ; R4 := R4(R5,R6,R7,R8,R9)
  48 [-]: MOVE      R2 R4        ; R2 := R4
  49 [-]: GETUPVAL  R4 U0        ; R4 := U0
  50 [-]: GETGLOBAL R5 K3        ; R5 := _T
  51 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["weaponConclave"]
- 52 [-]: GETGLOBAL R6 K21       ; R6 := minShieldRank
- 53 [-]: GETGLOBAL R7 K22       ; R7 := maxCoopShieldRank
- 54 [-]: GETGLOBAL R8 K23       ; R8 := minShieldDmgMod
- 55 [-]: GETGLOBAL R9 K24       ; R9 := maxCoopShieldDmgMod
+ 52 [-]: GETGLOBAL R6 K22       ; R6 := minShieldRank
+ 53 [-]: GETGLOBAL R7 K23       ; R7 := maxCoopShieldRank
+ 54 [-]: GETGLOBAL R8 K24       ; R8 := minShieldDmgMod
+ 55 [-]: GETGLOBAL R9 K25       ; R9 := maxCoopShieldDmgMod
  56 [-]: CALL      R4 6 2       ; R4 := R4(R5,R6,R7,R8,R9)
  57 [-]: MOVE      R3 R4        ; R3 := R4
  58 [-]: JMP       77           ; PC := 77
  59 [-]: GETUPVAL  R4 U0        ; R4 := U0
  60 [-]: GETGLOBAL R5 K3        ; R5 := _T
  61 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["weaponConclave"]
- 62 [-]: GETGLOBAL R6 K17       ; R6 := minHealthRank
- 63 [-]: GETGLOBAL R7 K25       ; R7 := maxHealthRank
- 64 [-]: GETGLOBAL R8 K19       ; R8 := minHealthDmgMod
- 65 [-]: GETGLOBAL R9 K26       ; R9 := maxHealthDmgMod
+ 62 [-]: GETGLOBAL R6 K18       ; R6 := minHealthRank
+ 63 [-]: GETGLOBAL R7 K26       ; R7 := maxHealthRank
+ 64 [-]: GETGLOBAL R8 K20       ; R8 := minHealthDmgMod
+ 65 [-]: GETGLOBAL R9 K27       ; R9 := maxHealthDmgMod
  66 [-]: CALL      R4 6 2       ; R4 := R4(R5,R6,R7,R8,R9)
  67 [-]: MOVE      R2 R4        ; R2 := R4
  68 [-]: GETUPVAL  R4 U0        ; R4 := U0
  69 [-]: GETGLOBAL R5 K3        ; R5 := _T
  70 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["weaponConclave"]
- 71 [-]: GETGLOBAL R6 K21       ; R6 := minShieldRank
- 72 [-]: GETGLOBAL R7 K27       ; R7 := maxShieldRank
- 73 [-]: GETGLOBAL R8 K23       ; R8 := minShieldDmgMod
- 74 [-]: GETGLOBAL R9 K28       ; R9 := maxShieldDmgMod
+ 71 [-]: GETGLOBAL R6 K22       ; R6 := minShieldRank
+ 72 [-]: GETGLOBAL R7 K28       ; R7 := maxShieldRank
+ 73 [-]: GETGLOBAL R8 K24       ; R8 := minShieldDmgMod
+ 74 [-]: GETGLOBAL R9 K29       ; R9 := maxShieldDmgMod
  75 [-]: CALL      R4 6 2       ; R4 := R4(R5,R6,R7,R8,R9)
  76 [-]: MOVE      R3 R4        ; R3 := R4
  77 [-]: EQ        0 R2 R2      ; if R2 ~= R2 then PC := 86
  78 [-]: JMP       86           ; PC := 86
- 79 [-]: GETGLOBAL R4 K29       ; R4 := FLT_MAX
+ 79 [-]: GETGLOBAL R4 K30       ; R4 := FLT_MAX
  80 [-]: LT        1 R4 R2      ; if R4 < R2 then PC := 86
  81 [-]: JMP       86           ; PC := 86
- 82 [-]: GETGLOBAL R4 K29       ; R4 := FLT_MAX
+ 82 [-]: GETGLOBAL R4 K30       ; R4 := FLT_MAX
  83 [-]: UNM       R4 R4        ; R4 := - R4
  84 [-]: LT        0 R2 R4      ; if R2 >= R4 then PC := 117
  85 [-]: JMP       117          ; PC := 117
- 86 [-]: GETGLOBAL R4 K30       ; R4 := 0x93B1256B
- 87 [-]: LOADK     R5 K31       ; R5 := "NaN health dmg mod. "
- 88 [-]: GETGLOBAL R6 K32       ; R6 := 0x9FAED6BC
+ 86 [-]: GETGLOBAL R4 K31       ; R4 := 0x93B1256B
+ 87 [-]: LOADK     R5 K32       ; R5 := "NaN health dmg mod. "
+ 88 [-]: GETGLOBAL R6 K33       ; R6 := 0x9FAED6BC
  89 [-]: MOVE      R7 R2        ; R7 := R2
  90 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 91 [-]: LOADK     R7 K33       ; R7 := " - Conclave="
- 92 [-]: GETGLOBAL R8 K32       ; R8 := 0x9FAED6BC
+ 91 [-]: LOADK     R7 K34       ; R7 := " - Conclave="
+ 92 [-]: GETGLOBAL R8 K33       ; R8 := 0x9FAED6BC
  93 [-]: GETGLOBAL R9 K3        ; R9 := _T
  94 [-]: GETTABLE  R9 R9 K4     ; R9 := R9["weaponConclave"]
  95 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 96 [-]: LOADK     R9 K34       ; R9 := ", min rank="
- 97 [-]: GETGLOBAL R10 K32      ; R10 := 0x9FAED6BC
- 98 [-]: GETGLOBAL R11 K17      ; R11 := minHealthRank
+ 96 [-]: LOADK     R9 K35       ; R9 := ", min rank="
+ 97 [-]: GETGLOBAL R10 K33      ; R10 := 0x9FAED6BC
+ 98 [-]: GETGLOBAL R11 K18      ; R11 := minHealthRank
  99 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-100 [-]: LOADK     R11 K35      ; R11 := ", max rank="
-101 [-]: GETGLOBAL R12 K32      ; R12 := 0x9FAED6BC
-102 [-]: GETGLOBAL R13 K25      ; R13 := maxHealthRank
+100 [-]: LOADK     R11 K36      ; R11 := ", max rank="
+101 [-]: GETGLOBAL R12 K33      ; R12 := 0x9FAED6BC
+102 [-]: GETGLOBAL R13 K26      ; R13 := maxHealthRank
 103 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 104 [-]: CONCAT    R5 R5 R12    ; R5 := R5 .. R6 .. R7 .. R8 .. R9 .. R10 .. R11 .. R12
 105 [-]: CALL      R4 2 1       ; R4(R5)
-106 [-]: GETGLOBAL R4 K30       ; R4 := 0x93B1256B
-107 [-]: LOADK     R5 K36       ; R5 := "Min mod="
-108 [-]: GETGLOBAL R6 K32       ; R6 := 0x9FAED6BC
-109 [-]: GETGLOBAL R7 K19       ; R7 := minHealthDmgMod
+106 [-]: GETGLOBAL R4 K31       ; R4 := 0x93B1256B
+107 [-]: LOADK     R5 K37       ; R5 := "Min mod="
+108 [-]: GETGLOBAL R6 K33       ; R6 := 0x9FAED6BC
+109 [-]: GETGLOBAL R7 K20       ; R7 := minHealthDmgMod
 110 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-111 [-]: LOADK     R7 K37       ; R7 := ", max mod="
-112 [-]: GETGLOBAL R8 K32       ; R8 := 0x9FAED6BC
-113 [-]: GETGLOBAL R9 K26       ; R9 := maxHealthDmgMod
+111 [-]: LOADK     R7 K38       ; R7 := ", max mod="
+112 [-]: GETGLOBAL R8 K33       ; R8 := 0x9FAED6BC
+113 [-]: GETGLOBAL R9 K27       ; R9 := maxHealthDmgMod
 114 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 115 [-]: CONCAT    R5 R5 R8     ; R5 := R5 .. R6 .. R7 .. R8
 116 [-]: CALL      R4 2 1       ; R4(R5)
 117 [-]: LT        0 K6 R2      ; if 0 >= R2 then PC := 131
 118 [-]: JMP       131          ; PC := 131
-119 [-]: SELF      R4 R0 K38    ; R5 := R0; R4 := R0["0xA3F6069B"]
+119 [-]: SELF      R4 R0 K39    ; R5 := R0; R4 := R0["0xA3F6069B"]
 120 [-]: CALL      R4 2 2       ; R4 := R4(R5)
-121 [-]: SELF      R4 R4 K39    ; R5 := R4; R4 := R4["0x92152A74"]
-122 [-]: GETGLOBAL R6 K40       ; R6 := 0xEC274B1A
-123 [-]: LOADK     R7 K41       ; R7 := "BossHealthDmgMod"
+121 [-]: SELF      R4 R4 K40    ; R5 := R4; R4 := R4["0x92152A74"]
+122 [-]: GETGLOBAL R6 K41       ; R6 := 0xEC274B1A
+123 [-]: LOADK     R7 K42       ; R7 := "BossHealthDmgMod"
 124 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-125 [-]: GETGLOBAL R7 K42       ; R7 := Engine
+125 [-]: GETGLOBAL R7 K14       ; R7 := Engine
 126 [-]: GETTABLE  R7 R7 K43    ; R7 := R7["DT_ANY"]
-127 [-]: GETGLOBAL R8 K42       ; R8 := Engine
+127 [-]: GETGLOBAL R8 K14       ; R8 := Engine
 128 [-]: GETTABLE  R8 R8 K44    ; R8 := R8["ANY_PART"]
 129 [-]: MOVE      R9 R2        ; R9 := R2
 130 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
 131 [-]: LT        0 K6 R3      ; if 0 >= R3 then PC := 145
 132 [-]: JMP       145          ; PC := 145
-133 [-]: SELF      R4 R0 K38    ; R5 := R0; R4 := R0["0xA3F6069B"]
+133 [-]: SELF      R4 R0 K39    ; R5 := R0; R4 := R0["0xA3F6069B"]
 134 [-]: CALL      R4 2 2       ; R4 := R4(R5)
 135 [-]: SELF      R4 R4 K45    ; R5 := R4; R4 := R4["0x64B88A7A"]
-136 [-]: GETGLOBAL R6 K40       ; R6 := 0xEC274B1A
+136 [-]: GETGLOBAL R6 K41       ; R6 := 0xEC274B1A
 137 [-]: LOADK     R7 K46       ; R7 := "BossShieldDmgMod"
 138 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-139 [-]: GETGLOBAL R7 K42       ; R7 := Engine
+139 [-]: GETGLOBAL R7 K14       ; R7 := Engine
 140 [-]: GETTABLE  R7 R7 K43    ; R7 := R7["DT_ANY"]
-141 [-]: GETGLOBAL R8 K42       ; R8 := Engine
+141 [-]: GETGLOBAL R8 K14       ; R8 := Engine
 142 [-]: GETTABLE  R8 R8 K44    ; R8 := R8["ANY_PART"]
 143 [-]: MOVE      R9 R3        ; R9 := R3
 144 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)

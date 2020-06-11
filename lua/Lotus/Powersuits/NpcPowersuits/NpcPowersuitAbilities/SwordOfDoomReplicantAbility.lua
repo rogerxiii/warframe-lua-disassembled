@@ -654,19 +654,19 @@ code size: 88
   3 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0x3B1B11B9"]
   4 [-]: GETGLOBAL R5 K2        ; R5 := Game
   5 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["AVATAR_AUTO_PARRY_CHANCE"]
-  6 [-]: GETGLOBAL R6 K2        ; R6 := Game
-  7 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["SET"]
-  8 [-]: LOADK     R7 K5        ; R7 := 1
+  6 [-]: GETGLOBAL R6 K4        ; R6 := Engine
+  7 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["SET"]
+  8 [-]: LOADK     R7 K6        ; R7 := 1
   9 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 10 [-]: GETGLOBAL R3 K6        ; R3 := 0x400E7765
+ 10 [-]: GETGLOBAL R3 K7        ; R3 := 0x400E7765
  11 [-]: MOVE      R4 R2        ; R4 := R2
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: TEST      R3 1         ; if R3 then PC := 24
  14 [-]: JMP       24           ; PC := 24
- 15 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2["0xE3698D0B"]
- 16 [-]: GETGLOBAL R5 K8        ; R5 := Engine
+ 15 [-]: SELF      R3 R2 K8     ; R4 := R2; R3 := R2["0xE3698D0B"]
+ 16 [-]: GETGLOBAL R5 K4        ; R5 := Engine
  17 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["THIRD_PERSON"]
- 18 [-]: GETGLOBAL R6 K8        ; R6 := Engine
+ 18 [-]: GETGLOBAL R6 K4        ; R6 := Engine
  19 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["MAIN_HAND"]
  20 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  21 [-]: SELF      R4 R3 K11    ; R5 := R3; R4 := R3["0x501F4DD1"]
@@ -689,19 +689,19 @@ code size: 88
   3 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0xF21555A7"]
   4 [-]: GETGLOBAL R5 K2        ; R5 := Game
   5 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["AVATAR_AUTO_PARRY_CHANCE"]
-  6 [-]: GETGLOBAL R6 K2        ; R6 := Game
-  7 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["SET"]
-  8 [-]: LOADK     R7 K5        ; R7 := 1
+  6 [-]: GETGLOBAL R6 K4        ; R6 := Engine
+  7 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["SET"]
+  8 [-]: LOADK     R7 K6        ; R7 := 1
   9 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 10 [-]: GETGLOBAL R3 K6        ; R3 := 0x400E7765
+ 10 [-]: GETGLOBAL R3 K7        ; R3 := 0x400E7765
  11 [-]: MOVE      R4 R2        ; R4 := R2
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: TEST      R3 1         ; if R3 then PC := 24
  14 [-]: JMP       24           ; PC := 24
- 15 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2["0xE3698D0B"]
- 16 [-]: GETGLOBAL R5 K8        ; R5 := Engine
+ 15 [-]: SELF      R3 R2 K8     ; R4 := R2; R3 := R2["0xE3698D0B"]
+ 16 [-]: GETGLOBAL R5 K4        ; R5 := Engine
  17 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["THIRD_PERSON"]
- 18 [-]: GETGLOBAL R6 K8        ; R6 := Engine
+ 18 [-]: GETGLOBAL R6 K4        ; R6 := Engine
  19 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["MAIN_HAND"]
  20 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  21 [-]: SELF      R4 R3 K11    ; R5 := R3; R4 := R3["0x501F4DD1"]
@@ -873,7 +873,7 @@ code size: 88
 152 [-]: SELF      R17 R17 K51  ; R18 := R17; R17 := R17["0x3B1B11B9"]
 153 [-]: GETGLOBAL R19 K11      ; R19 := Game
 154 [-]: GETTABLE  R19 R19 K52  ; R19 := R19["AVATAR_ENERGY_GAIN_MULTIPLIER"]
-155 [-]: GETGLOBAL R20 K11      ; R20 := Game
+155 [-]: GETGLOBAL R20 K25      ; R20 := Engine
 156 [-]: GETTABLE  R20 R20 K53  ; R20 := R20["MULTIPLY"]
 157 [-]: LOADK     R21 K7       ; R21 := 0
 158 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
@@ -1051,9 +1051,9 @@ code size: 88
  13 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0xF21555A7"]
  14 [-]: GETGLOBAL R4 K5        ; R4 := Game
  15 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["AVATAR_ENERGY_GAIN_MULTIPLIER"]
- 16 [-]: GETGLOBAL R5 K5        ; R5 := Game
- 17 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["MULTIPLY"]
- 18 [-]: LOADK     R6 K8        ; R6 := 0
+ 16 [-]: GETGLOBAL R5 K7        ; R5 := Engine
+ 17 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["MULTIPLY"]
+ 18 [-]: LOADK     R6 K9        ; R6 := 0
  19 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  20 [-]: RETURN    R0 1         ; return 
 

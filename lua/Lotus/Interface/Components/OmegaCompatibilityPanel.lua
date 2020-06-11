@@ -12,7 +12,7 @@ code size: 11
 code size: 68
 code size: 2
 code size: 36
-code size: 294
+code size: 307
 code size: 49
 code size: 17
 code size: 16
@@ -639,7 +639,7 @@ code size: 47
 ; #Upvalues:       8
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  51
+; Max Stack Size:  57
 
   1 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
   2 [-]: MOVE      R5 R1        ; R5 := R1
@@ -698,249 +698,262 @@ code size: 47
  55 [-]: SELF      R7 R1 K8     ; R8 := R1; R7 := R1["0x8B598ED4"]
  56 [-]: GETUPVAL  R9 U0        ; R9 := U0
  57 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 58 [-]: TEST      R7 0         ; if not R7 then PC := 64
- 59 [-]: JMP       64           ; PC := 64
+ 58 [-]: TEST      R7 0         ; if not R7 then PC := 77
+ 59 [-]: JMP       77           ; PC := 77
  60 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5["0xB5D66AE"]
  61 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  62 [-]: MOVE      R6 R7        ; R6 := R7
- 63 [-]: JMP       72           ; PC := 72
- 64 [-]: SELF      R7 R1 K8     ; R8 := R1; R7 := R1["0x8B598ED4"]
- 65 [-]: GETUPVAL  R9 U1        ; R9 := U1
- 66 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
- 67 [-]: TEST      R7 0         ; if not R7 then PC := 72
- 68 [-]: JMP       72           ; PC := 72
- 69 [-]: SELF      R7 R5 K10    ; R8 := R5; R7 := R5["0xA82A3D30"]
- 70 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 71 [-]: MOVE      R6 R7        ; R6 := R7
- 72 [-]: LEN       R7 R6        ; R7 := # R6
- 73 [-]: LT        0 K11 R7     ; if 0 >= R7 then PC := 159
- 74 [-]: JMP       159          ; PC := 159
- 75 [-]: GETGLOBAL R7 K12       ; R7 := 0x63B09107
- 76 [-]: MOVE      R8 R6        ; R8 := R6
- 77 [-]: CALL      R7 2 4       ; R7,R8,R9 := R7(R8)
- 78 [-]: JMP       126          ; PC := 126
- 79 [-]: GETGLOBAL R12 K0       ; R12 := 0x400E7765
- 80 [-]: GETTABLE  R13 R11 K13  ; R13 := R11["mModularParts"]
- 81 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 82 [-]: MOVE      R12 R12      ; R12 := R12
- 83 [-]: TEST      R12 0        ; if not R12 then PC := 126
- 84 [-]: JMP       126          ; PC := 126
- 85 [-]: GETTABLE  R13 R11 K13  ; R13 := R11["mModularParts"]
- 86 [-]: GETGLOBAL R14 K12      ; R14 := 0x63B09107
- 87 [-]: MOVE      R15 R13      ; R15 := R13
- 88 [-]: CALL      R14 2 4      ; R14,R15,R16 := R14(R15)
- 89 [-]: JMP       124          ; PC := 124
- 90 [-]: SELF      R19 R18 K8   ; R20 := R18; R19 := R18["0x8B598ED4"]
- 91 [-]: MOVE      R21 R4       ; R21 := R4
- 92 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
- 93 [-]: TEST      R19 0        ; if not R19 then PC := 124
- 94 [-]: JMP       124          ; PC := 124
- 95 [-]: SELF      R19 R3 K14   ; R20 := R3; R19 := R3["0x62FBC1B8"]
- 96 [-]: GETTABLE  R21 R11 K15  ; R21 := R11["mItemType"]
- 97 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
- 98 [-]: GETGLOBAL R20 K0       ; R20 := 0x400E7765
- 99 [-]: MOVE      R21 R19      ; R21 := R19
-100 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-101 [-]: TEST      R20 1        ; if R20 then PC := 124
-102 [-]: JMP       124          ; PC := 124
-103 [-]: GETUPVAL  R20 U2       ; R20 := U2
-104 [-]: GETTABLE  R20 R20 K16  ; R20 := R20["0x1B75557F"]
-105 [-]: GETTABLE  R21 R0 K17   ; R21 := R0["mMovie"]
-106 [-]: MOVE      R22 R19      ; R22 := R19
-107 [-]: NEWTABLE  R23 0 2      ; R23 := {}
-108 [-]: SETTABLE  R23 K18 R11  ; R23["ItemInfo"] := R11
-109 [-]: GETGLOBAL R24 K1       ; R24 := gGameData
-110 [-]: SETTABLE  R23 K19 R24  ; R23["GameData"] := R24
-111 [-]: MOVE      R24 R3       ; R24 := R3
-112 [-]: MOVE      R25 R5       ; R25 := R5
-113 [-]: MOVE      R26 R1       ; R26 := R1
-114 [-]: CALL      R20 7 2      ; R20 := R20(R21,R22,R23,R24,R25,R26)
-115 [-]: SETTABLE  R20 K20 K21  ; R20["DefaultItemInfoTab"] := 2
-116 [-]: SETTABLE  R20 K22 K23  ; R20["ShowDisposition"] := "0x1"
-117 [-]: SETTABLE  R20 K24 R4   ; R20["ModularTip"] := R4
-118 [-]: GETGLOBAL R21 K25      ; R21 := table
-119 [-]: GETTABLE  R21 R21 K26  ; R21 := R21["0xE6450C9D"]
-120 [-]: GETTABLE  R22 R0 K5    ; R22 := R0["mCompatibleItems"]
-121 [-]: MOVE      R23 R20      ; R23 := R20
-122 [-]: CALL      R21 3 1      ; R21(R22,R23)
-123 [-]: JMP       126          ; PC := 126
-124 [-]: TFORLOOP  R14 2        ; R17,R18 :=  R14(R15,R16); if R17 ~= nil then begin PC = 90; R16 := R17 end
-125 [-]: JMP       90           ; PC := 90
-126 [-]: TFORLOOP  R7 2         ; R10,R11 :=  R7(R8,R9); if R10 ~= nil then begin PC = 79; R9 := R10 end
-127 [-]: JMP       79           ; PC := 79
-128 [-]: GETTABLE  R21 R0 K5    ; R21 := R0["mCompatibleItems"]
-129 [-]: LEN       R21 R21      ; R21 := # R21
-130 [-]: EQ        0 R21 K11    ; if R21 ~= 0 then PC := 292
-131 [-]: JMP       292          ; PC := 292
-132 [-]: SELF      R21 R3 K14   ; R22 := R3; R21 := R3["0x62FBC1B8"]
-133 [-]: MOVE      R23 R4       ; R23 := R4
-134 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-135 [-]: GETGLOBAL R22 K0       ; R22 := 0x400E7765
-136 [-]: MOVE      R23 R21      ; R23 := R21
-137 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-138 [-]: TEST      R22 1        ; if R22 then PC := 292
-139 [-]: JMP       292          ; PC := 292
-140 [-]: GETUPVAL  R22 U2       ; R22 := U2
-141 [-]: GETTABLE  R22 R22 K16  ; R22 := R22["0x1B75557F"]
-142 [-]: GETTABLE  R23 R0 K17   ; R23 := R0["mMovie"]
-143 [-]: MOVE      R24 R21      ; R24 := R21
-144 [-]: NEWTABLE  R25 0 1      ; R25 := {}
-145 [-]: GETGLOBAL R26 K1       ; R26 := gGameData
-146 [-]: SETTABLE  R25 K19 R26  ; R25["GameData"] := R26
-147 [-]: MOVE      R26 R3       ; R26 := R3
-148 [-]: MOVE      R27 R5       ; R27 := R5
-149 [-]: MOVE      R28 R1       ; R28 := R1
-150 [-]: CALL      R22 7 2      ; R22 := R22(R23,R24,R25,R26,R27,R28)
-151 [-]: SETTABLE  R22 K20 K21  ; R22["DefaultItemInfoTab"] := 2
-152 [-]: SETTABLE  R22 K22 K23  ; R22["ShowDisposition"] := "0x1"
-153 [-]: GETGLOBAL R23 K25      ; R23 := table
-154 [-]: GETTABLE  R23 R23 K26  ; R23 := R23["0xE6450C9D"]
-155 [-]: GETTABLE  R24 R0 K5    ; R24 := R0["mCompatibleItems"]
-156 [-]: MOVE      R25 R22      ; R25 := R22
-157 [-]: CALL      R23 3 1      ; R23(R24,R25)
-158 [-]: JMP       292          ; PC := 292
-159 [-]: SELF      R23 R1 K8    ; R24 := R1; R23 := R1["0x8B598ED4"]
-160 [-]: GETUPVAL  R25 U3       ; R25 := U3
-161 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
-162 [-]: TEST      R23 1        ; if R23 then PC := 169
-163 [-]: JMP       169          ; PC := 169
-164 [-]: SELF      R23 R1 K8    ; R24 := R1; R23 := R1["0x8B598ED4"]
-165 [-]: GETUPVAL  R25 U4       ; R25 := U4
-166 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
-167 [-]: TEST      R23 0        ; if not R23 then PC := 184
-168 [-]: JMP       184          ; PC := 184
-169 [-]: SELF      R23 R5 K27   ; R24 := R5; R23 := R5["0x1D216770"]
-170 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-171 [-]: MOVE      R6 R23       ; R6 := R23
-172 [-]: SELF      R23 R5 K28   ; R24 := R5; R23 := R5["0x2485CEF6"]
-173 [-]: CALL      R23 2 2      ; R23 := R23(R24)
-174 [-]: GETGLOBAL R24 K12      ; R24 := 0x63B09107
-175 [-]: MOVE      R25 R23      ; R25 := R23
-176 [-]: CALL      R24 2 4      ; R24,R25,R26 := R24(R25)
-177 [-]: JMP       181          ; PC := 181
-178 [-]: LEN       R29 R6       ; R29 := # R6
-179 [-]: ADD       R29 R29 K29  ; R29 := R29 + 1
-180 [-]: SETTABLE  R6 R29 R28   ; R6[R29] := R28
-181 [-]: TFORLOOP  R24 2        ; R27,R28 :=  R24(R25,R26); if R27 ~= nil then begin PC = 178; R26 := R27 end
-182 [-]: JMP       178          ; PC := 178
-183 [-]: JMP       221          ; PC := 221
-184 [-]: SELF      R29 R1 K8    ; R30 := R1; R29 := R1["0x8B598ED4"]
-185 [-]: GETUPVAL  R31 U5       ; R31 := U5
-186 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-187 [-]: TEST      R29 0        ; if not R29 then PC := 193
-188 [-]: JMP       193          ; PC := 193
-189 [-]: SELF      R29 R5 K9    ; R30 := R5; R29 := R5["0xB5D66AE"]
-190 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-191 [-]: MOVE      R6 R29       ; R6 := R29
-192 [-]: JMP       221          ; PC := 221
-193 [-]: SELF      R29 R1 K8    ; R30 := R1; R29 := R1["0x8B598ED4"]
-194 [-]: GETUPVAL  R31 U6       ; R31 := U6
-195 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-196 [-]: TEST      R29 0        ; if not R29 then PC := 213
-197 [-]: JMP       213          ; PC := 213
-198 [-]: SELF      R29 R5 K10   ; R30 := R5; R29 := R5["0xA82A3D30"]
-199 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-200 [-]: MOVE      R6 R29       ; R6 := R29
-201 [-]: SELF      R29 R5 K28   ; R30 := R5; R29 := R5["0x2485CEF6"]
-202 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-203 [-]: GETGLOBAL R30 K12      ; R30 := 0x63B09107
-204 [-]: MOVE      R31 R29      ; R31 := R29
-205 [-]: CALL      R30 2 4      ; R30,R31,R32 := R30(R31)
-206 [-]: JMP       210          ; PC := 210
-207 [-]: LEN       R35 R6       ; R35 := # R6
-208 [-]: ADD       R35 R35 K29  ; R35 := R35 + 1
-209 [-]: SETTABLE  R6 R35 R34   ; R6[R35] := R34
-210 [-]: TFORLOOP  R30 2        ; R33,R34 :=  R30(R31,R32); if R33 ~= nil then begin PC = 207; R32 := R33 end
-211 [-]: JMP       207          ; PC := 207
-212 [-]: JMP       221          ; PC := 221
-213 [-]: SELF      R35 R1 K8    ; R36 := R1; R35 := R1["0x8B598ED4"]
-214 [-]: GETUPVAL  R37 U7       ; R37 := U7
-215 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
-216 [-]: TEST      R35 0        ; if not R35 then PC := 221
-217 [-]: JMP       221          ; PC := 221
-218 [-]: SELF      R35 R5 K30   ; R36 := R5; R35 := R5["0x213E1D36"]
-219 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-220 [-]: MOVE      R6 R35       ; R6 := R35
-221 [-]: LEN       R35 R6       ; R35 := # R6
-222 [-]: LT        0 K11 R35    ; if 0 >= R35 then PC := 262
-223 [-]: JMP       262          ; PC := 262
-224 [-]: GETGLOBAL R35 K12      ; R35 := 0x63B09107
-225 [-]: MOVE      R36 R6       ; R36 := R6
-226 [-]: CALL      R35 2 4      ; R35,R36,R37 := R35(R36)
-227 [-]: JMP       260          ; PC := 260
-228 [-]: GETTABLE  R40 R39 K15  ; R40 := R39["mItemType"]
-229 [-]: SELF      R41 R40 K8   ; R42 := R40; R41 := R40["0x8B598ED4"]
-230 [-]: MOVE      R43 R4       ; R43 := R4
-231 [-]: CALL      R41 3 2      ; R41 := R41(R42,R43)
-232 [-]: TEST      R41 0        ; if not R41 then PC := 260
-233 [-]: JMP       260          ; PC := 260
-234 [-]: SELF      R41 R3 K14   ; R42 := R3; R41 := R3["0x62FBC1B8"]
-235 [-]: MOVE      R43 R40      ; R43 := R40
-236 [-]: CALL      R41 3 2      ; R41 := R41(R42,R43)
-237 [-]: GETGLOBAL R42 K0       ; R42 := 0x400E7765
-238 [-]: MOVE      R43 R41      ; R43 := R41
-239 [-]: CALL      R42 2 2      ; R42 := R42(R43)
-240 [-]: TEST      R42 1        ; if R42 then PC := 260
-241 [-]: JMP       260          ; PC := 260
-242 [-]: GETUPVAL  R42 U2       ; R42 := U2
-243 [-]: GETTABLE  R42 R42 K16  ; R42 := R42["0x1B75557F"]
-244 [-]: GETTABLE  R43 R0 K17   ; R43 := R0["mMovie"]
-245 [-]: MOVE      R44 R41      ; R44 := R41
-246 [-]: NEWTABLE  R45 0 1      ; R45 := {}
-247 [-]: GETGLOBAL R46 K1       ; R46 := gGameData
-248 [-]: SETTABLE  R45 K19 R46  ; R45["GameData"] := R46
-249 [-]: MOVE      R46 R3       ; R46 := R3
-250 [-]: MOVE      R47 R5       ; R47 := R5
-251 [-]: MOVE      R48 R1       ; R48 := R1
-252 [-]: CALL      R42 7 2      ; R42 := R42(R43,R44,R45,R46,R47,R48)
-253 [-]: SETTABLE  R42 K20 K21  ; R42["DefaultItemInfoTab"] := 2
-254 [-]: SETTABLE  R42 K22 K23  ; R42["ShowDisposition"] := "0x1"
-255 [-]: GETGLOBAL R43 K25      ; R43 := table
-256 [-]: GETTABLE  R43 R43 K26  ; R43 := R43["0xE6450C9D"]
-257 [-]: GETTABLE  R44 R0 K5    ; R44 := R0["mCompatibleItems"]
-258 [-]: MOVE      R45 R42      ; R45 := R42
-259 [-]: CALL      R43 3 1      ; R43(R44,R45)
-260 [-]: TFORLOOP  R35 2        ; R38,R39 :=  R35(R36,R37); if R38 ~= nil then begin PC = 228; R37 := R38 end
-261 [-]: JMP       228          ; PC := 228
-262 [-]: GETTABLE  R43 R0 K5    ; R43 := R0["mCompatibleItems"]
-263 [-]: LEN       R43 R43      ; R43 := # R43
-264 [-]: EQ        0 R43 K11    ; if R43 ~= 0 then PC := 292
-265 [-]: JMP       292          ; PC := 292
-266 [-]: SELF      R43 R3 K14   ; R44 := R3; R43 := R3["0x62FBC1B8"]
-267 [-]: MOVE      R45 R4       ; R45 := R4
-268 [-]: CALL      R43 3 2      ; R43 := R43(R44,R45)
-269 [-]: GETGLOBAL R44 K0       ; R44 := 0x400E7765
-270 [-]: MOVE      R45 R43      ; R45 := R43
-271 [-]: CALL      R44 2 2      ; R44 := R44(R45)
-272 [-]: TEST      R44 1        ; if R44 then PC := 292
-273 [-]: JMP       292          ; PC := 292
-274 [-]: GETUPVAL  R44 U2       ; R44 := U2
-275 [-]: GETTABLE  R44 R44 K16  ; R44 := R44["0x1B75557F"]
-276 [-]: GETTABLE  R45 R0 K17   ; R45 := R0["mMovie"]
-277 [-]: MOVE      R46 R43      ; R46 := R43
-278 [-]: NEWTABLE  R47 0 1      ; R47 := {}
-279 [-]: GETGLOBAL R48 K1       ; R48 := gGameData
-280 [-]: SETTABLE  R47 K19 R48  ; R47["GameData"] := R48
-281 [-]: MOVE      R48 R3       ; R48 := R3
-282 [-]: MOVE      R49 R5       ; R49 := R5
-283 [-]: MOVE      R50 R1       ; R50 := R1
-284 [-]: CALL      R44 7 2      ; R44 := R44(R45,R46,R47,R48,R49,R50)
-285 [-]: SETTABLE  R44 K20 K21  ; R44["DefaultItemInfoTab"] := 2
-286 [-]: SETTABLE  R44 K22 K23  ; R44["ShowDisposition"] := "0x1"
-287 [-]: GETGLOBAL R45 K25      ; R45 := table
-288 [-]: GETTABLE  R45 R45 K26  ; R45 := R45["0xE6450C9D"]
-289 [-]: GETTABLE  R46 R0 K5    ; R46 := R0["mCompatibleItems"]
-290 [-]: MOVE      R47 R44      ; R47 := R44
-291 [-]: CALL      R45 3 1      ; R45(R46,R47)
-292 [-]: MOVE      R45 R1       ; R45 := R1
-293 [-]: RETURN    R45 2        ; return R45
-294 [-]: RETURN    R0 1         ; return 
+ 63 [-]: SELF      R7 R5 K10    ; R8 := R5; R7 := R5["0x1D216770"]
+ 64 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 65 [-]: GETGLOBAL R8 K11       ; R8 := 0x63B09107
+ 66 [-]: MOVE      R9 R7        ; R9 := R7
+ 67 [-]: CALL      R8 2 4       ; R8,R9,R10 := R8(R9)
+ 68 [-]: JMP       74           ; PC := 74
+ 69 [-]: GETGLOBAL R13 K12      ; R13 := table
+ 70 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["0xE6450C9D"]
+ 71 [-]: MOVE      R14 R6       ; R14 := R6
+ 72 [-]: MOVE      R15 R12      ; R15 := R12
+ 73 [-]: CALL      R13 3 1      ; R13(R14,R15)
+ 74 [-]: TFORLOOP  R8 2         ; R11,R12 :=  R8(R9,R10); if R11 ~= nil then begin PC = 69; R10 := R11 end
+ 75 [-]: JMP       69           ; PC := 69
+ 76 [-]: JMP       85           ; PC := 85
+ 77 [-]: SELF      R13 R1 K8    ; R14 := R1; R13 := R1["0x8B598ED4"]
+ 78 [-]: GETUPVAL  R15 U1       ; R15 := U1
+ 79 [-]: CALL      R13 3 2      ; R13 := R13(R14,R15)
+ 80 [-]: TEST      R13 0        ; if not R13 then PC := 85
+ 81 [-]: JMP       85           ; PC := 85
+ 82 [-]: SELF      R13 R5 K14   ; R14 := R5; R13 := R5["0xA82A3D30"]
+ 83 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 84 [-]: MOVE      R6 R13       ; R6 := R13
+ 85 [-]: LEN       R13 R6       ; R13 := # R6
+ 86 [-]: LT        0 K15 R13    ; if 0 >= R13 then PC := 172
+ 87 [-]: JMP       172          ; PC := 172
+ 88 [-]: GETGLOBAL R13 K11      ; R13 := 0x63B09107
+ 89 [-]: MOVE      R14 R6       ; R14 := R6
+ 90 [-]: CALL      R13 2 4      ; R13,R14,R15 := R13(R14)
+ 91 [-]: JMP       139          ; PC := 139
+ 92 [-]: GETGLOBAL R18 K0       ; R18 := 0x400E7765
+ 93 [-]: GETTABLE  R19 R17 K16  ; R19 := R17["mModularParts"]
+ 94 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 95 [-]: MOVE      R18 R18      ; R18 := R18
+ 96 [-]: TEST      R18 0        ; if not R18 then PC := 139
+ 97 [-]: JMP       139          ; PC := 139
+ 98 [-]: GETTABLE  R19 R17 K16  ; R19 := R17["mModularParts"]
+ 99 [-]: GETGLOBAL R20 K11      ; R20 := 0x63B09107
+100 [-]: MOVE      R21 R19      ; R21 := R19
+101 [-]: CALL      R20 2 4      ; R20,R21,R22 := R20(R21)
+102 [-]: JMP       137          ; PC := 137
+103 [-]: SELF      R25 R24 K8   ; R26 := R24; R25 := R24["0x8B598ED4"]
+104 [-]: MOVE      R27 R4       ; R27 := R4
+105 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
+106 [-]: TEST      R25 0        ; if not R25 then PC := 137
+107 [-]: JMP       137          ; PC := 137
+108 [-]: SELF      R25 R3 K17   ; R26 := R3; R25 := R3["0x62FBC1B8"]
+109 [-]: GETTABLE  R27 R17 K18  ; R27 := R17["mItemType"]
+110 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
+111 [-]: GETGLOBAL R26 K0       ; R26 := 0x400E7765
+112 [-]: MOVE      R27 R25      ; R27 := R25
+113 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+114 [-]: TEST      R26 1        ; if R26 then PC := 137
+115 [-]: JMP       137          ; PC := 137
+116 [-]: GETUPVAL  R26 U2       ; R26 := U2
+117 [-]: GETTABLE  R26 R26 K19  ; R26 := R26["0x1B75557F"]
+118 [-]: GETTABLE  R27 R0 K20   ; R27 := R0["mMovie"]
+119 [-]: MOVE      R28 R25      ; R28 := R25
+120 [-]: NEWTABLE  R29 0 2      ; R29 := {}
+121 [-]: SETTABLE  R29 K21 R17  ; R29["ItemInfo"] := R17
+122 [-]: GETGLOBAL R30 K1       ; R30 := gGameData
+123 [-]: SETTABLE  R29 K22 R30  ; R29["GameData"] := R30
+124 [-]: MOVE      R30 R3       ; R30 := R3
+125 [-]: MOVE      R31 R5       ; R31 := R5
+126 [-]: MOVE      R32 R1       ; R32 := R1
+127 [-]: CALL      R26 7 2      ; R26 := R26(R27,R28,R29,R30,R31,R32)
+128 [-]: SETTABLE  R26 K23 K24  ; R26["DefaultItemInfoTab"] := 2
+129 [-]: SETTABLE  R26 K25 K26  ; R26["ShowDisposition"] := "0x1"
+130 [-]: SETTABLE  R26 K27 R4   ; R26["ModularTip"] := R4
+131 [-]: GETGLOBAL R27 K12      ; R27 := table
+132 [-]: GETTABLE  R27 R27 K13  ; R27 := R27["0xE6450C9D"]
+133 [-]: GETTABLE  R28 R0 K5    ; R28 := R0["mCompatibleItems"]
+134 [-]: MOVE      R29 R26      ; R29 := R26
+135 [-]: CALL      R27 3 1      ; R27(R28,R29)
+136 [-]: JMP       139          ; PC := 139
+137 [-]: TFORLOOP  R20 2        ; R23,R24 :=  R20(R21,R22); if R23 ~= nil then begin PC = 103; R22 := R23 end
+138 [-]: JMP       103          ; PC := 103
+139 [-]: TFORLOOP  R13 2        ; R16,R17 :=  R13(R14,R15); if R16 ~= nil then begin PC = 92; R15 := R16 end
+140 [-]: JMP       92           ; PC := 92
+141 [-]: GETTABLE  R27 R0 K5    ; R27 := R0["mCompatibleItems"]
+142 [-]: LEN       R27 R27      ; R27 := # R27
+143 [-]: EQ        0 R27 K15    ; if R27 ~= 0 then PC := 305
+144 [-]: JMP       305          ; PC := 305
+145 [-]: SELF      R27 R3 K17   ; R28 := R3; R27 := R3["0x62FBC1B8"]
+146 [-]: MOVE      R29 R4       ; R29 := R4
+147 [-]: CALL      R27 3 2      ; R27 := R27(R28,R29)
+148 [-]: GETGLOBAL R28 K0       ; R28 := 0x400E7765
+149 [-]: MOVE      R29 R27      ; R29 := R27
+150 [-]: CALL      R28 2 2      ; R28 := R28(R29)
+151 [-]: TEST      R28 1        ; if R28 then PC := 305
+152 [-]: JMP       305          ; PC := 305
+153 [-]: GETUPVAL  R28 U2       ; R28 := U2
+154 [-]: GETTABLE  R28 R28 K19  ; R28 := R28["0x1B75557F"]
+155 [-]: GETTABLE  R29 R0 K20   ; R29 := R0["mMovie"]
+156 [-]: MOVE      R30 R27      ; R30 := R27
+157 [-]: NEWTABLE  R31 0 1      ; R31 := {}
+158 [-]: GETGLOBAL R32 K1       ; R32 := gGameData
+159 [-]: SETTABLE  R31 K22 R32  ; R31["GameData"] := R32
+160 [-]: MOVE      R32 R3       ; R32 := R3
+161 [-]: MOVE      R33 R5       ; R33 := R5
+162 [-]: MOVE      R34 R1       ; R34 := R1
+163 [-]: CALL      R28 7 2      ; R28 := R28(R29,R30,R31,R32,R33,R34)
+164 [-]: SETTABLE  R28 K23 K24  ; R28["DefaultItemInfoTab"] := 2
+165 [-]: SETTABLE  R28 K25 K26  ; R28["ShowDisposition"] := "0x1"
+166 [-]: GETGLOBAL R29 K12      ; R29 := table
+167 [-]: GETTABLE  R29 R29 K13  ; R29 := R29["0xE6450C9D"]
+168 [-]: GETTABLE  R30 R0 K5    ; R30 := R0["mCompatibleItems"]
+169 [-]: MOVE      R31 R28      ; R31 := R28
+170 [-]: CALL      R29 3 1      ; R29(R30,R31)
+171 [-]: JMP       305          ; PC := 305
+172 [-]: SELF      R29 R1 K8    ; R30 := R1; R29 := R1["0x8B598ED4"]
+173 [-]: GETUPVAL  R31 U3       ; R31 := U3
+174 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
+175 [-]: TEST      R29 1        ; if R29 then PC := 182
+176 [-]: JMP       182          ; PC := 182
+177 [-]: SELF      R29 R1 K8    ; R30 := R1; R29 := R1["0x8B598ED4"]
+178 [-]: GETUPVAL  R31 U4       ; R31 := U4
+179 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
+180 [-]: TEST      R29 0        ; if not R29 then PC := 197
+181 [-]: JMP       197          ; PC := 197
+182 [-]: SELF      R29 R5 K10   ; R30 := R5; R29 := R5["0x1D216770"]
+183 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+184 [-]: MOVE      R6 R29       ; R6 := R29
+185 [-]: SELF      R29 R5 K28   ; R30 := R5; R29 := R5["0x2485CEF6"]
+186 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+187 [-]: GETGLOBAL R30 K11      ; R30 := 0x63B09107
+188 [-]: MOVE      R31 R29      ; R31 := R29
+189 [-]: CALL      R30 2 4      ; R30,R31,R32 := R30(R31)
+190 [-]: JMP       194          ; PC := 194
+191 [-]: LEN       R35 R6       ; R35 := # R6
+192 [-]: ADD       R35 R35 K29  ; R35 := R35 + 1
+193 [-]: SETTABLE  R6 R35 R34   ; R6[R35] := R34
+194 [-]: TFORLOOP  R30 2        ; R33,R34 :=  R30(R31,R32); if R33 ~= nil then begin PC = 191; R32 := R33 end
+195 [-]: JMP       191          ; PC := 191
+196 [-]: JMP       234          ; PC := 234
+197 [-]: SELF      R35 R1 K8    ; R36 := R1; R35 := R1["0x8B598ED4"]
+198 [-]: GETUPVAL  R37 U5       ; R37 := U5
+199 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
+200 [-]: TEST      R35 0        ; if not R35 then PC := 206
+201 [-]: JMP       206          ; PC := 206
+202 [-]: SELF      R35 R5 K9    ; R36 := R5; R35 := R5["0xB5D66AE"]
+203 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+204 [-]: MOVE      R6 R35       ; R6 := R35
+205 [-]: JMP       234          ; PC := 234
+206 [-]: SELF      R35 R1 K8    ; R36 := R1; R35 := R1["0x8B598ED4"]
+207 [-]: GETUPVAL  R37 U6       ; R37 := U6
+208 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
+209 [-]: TEST      R35 0        ; if not R35 then PC := 226
+210 [-]: JMP       226          ; PC := 226
+211 [-]: SELF      R35 R5 K14   ; R36 := R5; R35 := R5["0xA82A3D30"]
+212 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+213 [-]: MOVE      R6 R35       ; R6 := R35
+214 [-]: SELF      R35 R5 K28   ; R36 := R5; R35 := R5["0x2485CEF6"]
+215 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+216 [-]: GETGLOBAL R36 K11      ; R36 := 0x63B09107
+217 [-]: MOVE      R37 R35      ; R37 := R35
+218 [-]: CALL      R36 2 4      ; R36,R37,R38 := R36(R37)
+219 [-]: JMP       223          ; PC := 223
+220 [-]: LEN       R41 R6       ; R41 := # R6
+221 [-]: ADD       R41 R41 K29  ; R41 := R41 + 1
+222 [-]: SETTABLE  R6 R41 R40   ; R6[R41] := R40
+223 [-]: TFORLOOP  R36 2        ; R39,R40 :=  R36(R37,R38); if R39 ~= nil then begin PC = 220; R38 := R39 end
+224 [-]: JMP       220          ; PC := 220
+225 [-]: JMP       234          ; PC := 234
+226 [-]: SELF      R41 R1 K8    ; R42 := R1; R41 := R1["0x8B598ED4"]
+227 [-]: GETUPVAL  R43 U7       ; R43 := U7
+228 [-]: CALL      R41 3 2      ; R41 := R41(R42,R43)
+229 [-]: TEST      R41 0        ; if not R41 then PC := 234
+230 [-]: JMP       234          ; PC := 234
+231 [-]: SELF      R41 R5 K30   ; R42 := R5; R41 := R5["0x213E1D36"]
+232 [-]: CALL      R41 2 2      ; R41 := R41(R42)
+233 [-]: MOVE      R6 R41       ; R6 := R41
+234 [-]: LEN       R41 R6       ; R41 := # R6
+235 [-]: LT        0 K15 R41    ; if 0 >= R41 then PC := 275
+236 [-]: JMP       275          ; PC := 275
+237 [-]: GETGLOBAL R41 K11      ; R41 := 0x63B09107
+238 [-]: MOVE      R42 R6       ; R42 := R6
+239 [-]: CALL      R41 2 4      ; R41,R42,R43 := R41(R42)
+240 [-]: JMP       273          ; PC := 273
+241 [-]: GETTABLE  R46 R45 K18  ; R46 := R45["mItemType"]
+242 [-]: SELF      R47 R46 K8   ; R48 := R46; R47 := R46["0x8B598ED4"]
+243 [-]: MOVE      R49 R4       ; R49 := R4
+244 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
+245 [-]: TEST      R47 0        ; if not R47 then PC := 273
+246 [-]: JMP       273          ; PC := 273
+247 [-]: SELF      R47 R3 K17   ; R48 := R3; R47 := R3["0x62FBC1B8"]
+248 [-]: MOVE      R49 R46      ; R49 := R46
+249 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
+250 [-]: GETGLOBAL R48 K0       ; R48 := 0x400E7765
+251 [-]: MOVE      R49 R47      ; R49 := R47
+252 [-]: CALL      R48 2 2      ; R48 := R48(R49)
+253 [-]: TEST      R48 1        ; if R48 then PC := 273
+254 [-]: JMP       273          ; PC := 273
+255 [-]: GETUPVAL  R48 U2       ; R48 := U2
+256 [-]: GETTABLE  R48 R48 K19  ; R48 := R48["0x1B75557F"]
+257 [-]: GETTABLE  R49 R0 K20   ; R49 := R0["mMovie"]
+258 [-]: MOVE      R50 R47      ; R50 := R47
+259 [-]: NEWTABLE  R51 0 1      ; R51 := {}
+260 [-]: GETGLOBAL R52 K1       ; R52 := gGameData
+261 [-]: SETTABLE  R51 K22 R52  ; R51["GameData"] := R52
+262 [-]: MOVE      R52 R3       ; R52 := R3
+263 [-]: MOVE      R53 R5       ; R53 := R5
+264 [-]: MOVE      R54 R1       ; R54 := R1
+265 [-]: CALL      R48 7 2      ; R48 := R48(R49,R50,R51,R52,R53,R54)
+266 [-]: SETTABLE  R48 K23 K24  ; R48["DefaultItemInfoTab"] := 2
+267 [-]: SETTABLE  R48 K25 K26  ; R48["ShowDisposition"] := "0x1"
+268 [-]: GETGLOBAL R49 K12      ; R49 := table
+269 [-]: GETTABLE  R49 R49 K13  ; R49 := R49["0xE6450C9D"]
+270 [-]: GETTABLE  R50 R0 K5    ; R50 := R0["mCompatibleItems"]
+271 [-]: MOVE      R51 R48      ; R51 := R48
+272 [-]: CALL      R49 3 1      ; R49(R50,R51)
+273 [-]: TFORLOOP  R41 2        ; R44,R45 :=  R41(R42,R43); if R44 ~= nil then begin PC = 241; R43 := R44 end
+274 [-]: JMP       241          ; PC := 241
+275 [-]: GETTABLE  R49 R0 K5    ; R49 := R0["mCompatibleItems"]
+276 [-]: LEN       R49 R49      ; R49 := # R49
+277 [-]: EQ        0 R49 K15    ; if R49 ~= 0 then PC := 305
+278 [-]: JMP       305          ; PC := 305
+279 [-]: SELF      R49 R3 K17   ; R50 := R3; R49 := R3["0x62FBC1B8"]
+280 [-]: MOVE      R51 R4       ; R51 := R4
+281 [-]: CALL      R49 3 2      ; R49 := R49(R50,R51)
+282 [-]: GETGLOBAL R50 K0       ; R50 := 0x400E7765
+283 [-]: MOVE      R51 R49      ; R51 := R49
+284 [-]: CALL      R50 2 2      ; R50 := R50(R51)
+285 [-]: TEST      R50 1        ; if R50 then PC := 305
+286 [-]: JMP       305          ; PC := 305
+287 [-]: GETUPVAL  R50 U2       ; R50 := U2
+288 [-]: GETTABLE  R50 R50 K19  ; R50 := R50["0x1B75557F"]
+289 [-]: GETTABLE  R51 R0 K20   ; R51 := R0["mMovie"]
+290 [-]: MOVE      R52 R49      ; R52 := R49
+291 [-]: NEWTABLE  R53 0 1      ; R53 := {}
+292 [-]: GETGLOBAL R54 K1       ; R54 := gGameData
+293 [-]: SETTABLE  R53 K22 R54  ; R53["GameData"] := R54
+294 [-]: MOVE      R54 R3       ; R54 := R3
+295 [-]: MOVE      R55 R5       ; R55 := R5
+296 [-]: MOVE      R56 R1       ; R56 := R1
+297 [-]: CALL      R50 7 2      ; R50 := R50(R51,R52,R53,R54,R55,R56)
+298 [-]: SETTABLE  R50 K23 K24  ; R50["DefaultItemInfoTab"] := 2
+299 [-]: SETTABLE  R50 K25 K26  ; R50["ShowDisposition"] := "0x1"
+300 [-]: GETGLOBAL R51 K12      ; R51 := table
+301 [-]: GETTABLE  R51 R51 K13  ; R51 := R51["0xE6450C9D"]
+302 [-]: GETTABLE  R52 R0 K5    ; R52 := R0["mCompatibleItems"]
+303 [-]: MOVE      R53 R50      ; R53 := R50
+304 [-]: CALL      R51 3 1      ; R51(R52,R53)
+305 [-]: MOVE      R51 R1       ; R51 := R1
+306 [-]: RETURN    R51 2        ; return R51
+307 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.6:
 ;
 ; Name:            
-; Defined at line: 224
+; Defined at line: 228
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1000,7 +1013,7 @@ code size: 47
 ; Function #1.7:
 ;
 ; Name:            
-; Defined at line: 246
+; Defined at line: 250
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1028,7 +1041,7 @@ code size: 47
 ; Function #1.8:
 ;
 ; Name:            
-; Defined at line: 253
+; Defined at line: 257
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1055,7 +1068,7 @@ code size: 47
 ; Function #1.9:
 ;
 ; Name:            
-; Defined at line: 260
+; Defined at line: 264
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1075,7 +1088,7 @@ code size: 47
 ; Function #1.10:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 268
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

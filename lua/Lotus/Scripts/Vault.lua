@@ -377,117 +377,117 @@ code size: 5
  85 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0x3B1B11B9"]
  86 [-]: GETGLOBAL R16 K17      ; R16 := Game
  87 [-]: GETTABLE  R16 R16 K18  ; R16 := R16["AVATAR_SHIELD_MAX"]
- 88 [-]: GETGLOBAL R17 K17      ; R17 := Game
- 89 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
- 90 [-]: LOADK     R18 K20      ; R18 := 0.25
+ 88 [-]: GETGLOBAL R17 K19      ; R17 := Engine
+ 89 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["MULTIPLY"]
+ 90 [-]: LOADK     R18 K21      ; R18 := 0.25
  91 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
  92 [-]: JMP       148          ; PC := 148
  93 [-]: GETGLOBAL R14 K1       ; R14 := _G
  94 [-]: GETTABLE  R14 R14 K3   ; R14 := R14["VaultDebuff"]
- 95 [-]: EQ        0 R14 K21    ; if R14 ~= 2 then PC := 107
+ 95 [-]: EQ        0 R14 K22    ; if R14 ~= 2 then PC := 107
  96 [-]: JMP       107          ; PC := 107
  97 [-]: SELF      R14 R1 K15   ; R15 := R1; R14 := R1["0x8DB5D01F"]
  98 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  99 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0x3B1B11B9"]
 100 [-]: GETGLOBAL R16 K17      ; R16 := Game
-101 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["AVATAR_HEALTH_MAX"]
-102 [-]: GETGLOBAL R17 K17      ; R17 := Game
-103 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
-104 [-]: LOADK     R18 K20      ; R18 := 0.25
+101 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["AVATAR_HEALTH_MAX"]
+102 [-]: GETGLOBAL R17 K19      ; R17 := Engine
+103 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["MULTIPLY"]
+104 [-]: LOADK     R18 K21      ; R18 := 0.25
 105 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 106 [-]: JMP       148          ; PC := 148
 107 [-]: GETGLOBAL R14 K1       ; R14 := _G
 108 [-]: GETTABLE  R14 R14 K3   ; R14 := R14["VaultDebuff"]
-109 [-]: EQ        0 R14 K23    ; if R14 ~= 3 then PC := 121
+109 [-]: EQ        0 R14 K24    ; if R14 ~= 3 then PC := 121
 110 [-]: JMP       121          ; PC := 121
 111 [-]: SELF      R14 R1 K15   ; R15 := R1; R14 := R1["0x8DB5D01F"]
 112 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 113 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0x3B1B11B9"]
 114 [-]: GETGLOBAL R16 K17      ; R16 := Game
-115 [-]: GETTABLE  R16 R16 K24  ; R16 := R16["AVATAR_MOVEMENT_SPEED"]
-116 [-]: GETGLOBAL R17 K17      ; R17 := Game
-117 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
-118 [-]: LOADK     R18 K25      ; R18 := 0.5
+115 [-]: GETTABLE  R16 R16 K25  ; R16 := R16["AVATAR_MOVEMENT_SPEED"]
+116 [-]: GETGLOBAL R17 K19      ; R17 := Engine
+117 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["MULTIPLY"]
+118 [-]: LOADK     R18 K26      ; R18 := 0.5
 119 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 120 [-]: JMP       148          ; PC := 148
 121 [-]: SELF      R14 R1 K15   ; R15 := R1; R14 := R1["0x8DB5D01F"]
 122 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 123 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0x3B1B11B9"]
 124 [-]: GETGLOBAL R16 K17      ; R16 := Game
-125 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["WEAPON_DAMAGE_AMOUNT"]
-126 [-]: GETGLOBAL R17 K17      ; R17 := Game
-127 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
-128 [-]: LOADK     R18 K20      ; R18 := 0.25
+125 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["WEAPON_DAMAGE_AMOUNT"]
+126 [-]: GETGLOBAL R17 K19      ; R17 := Engine
+127 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["MULTIPLY"]
+128 [-]: LOADK     R18 K21      ; R18 := 0.25
 129 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 130 [-]: SELF      R14 R1 K15   ; R15 := R1; R14 := R1["0x8DB5D01F"]
 131 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 132 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0x3B1B11B9"]
 133 [-]: GETGLOBAL R16 K17      ; R16 := Game
-134 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["WEAPON_MELEE_DAMAGE"]
-135 [-]: GETGLOBAL R17 K17      ; R17 := Game
-136 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
-137 [-]: LOADK     R18 K20      ; R18 := 0.25
+134 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["WEAPON_MELEE_DAMAGE"]
+135 [-]: GETGLOBAL R17 K19      ; R17 := Engine
+136 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["MULTIPLY"]
+137 [-]: LOADK     R18 K21      ; R18 := 0.25
 138 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 139 [-]: SELF      R14 R1 K15   ; R15 := R1; R14 := R1["0x8DB5D01F"]
 140 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 141 [-]: SELF      R14 R14 K16  ; R15 := R14; R14 := R14["0x3B1B11B9"]
 142 [-]: GETGLOBAL R16 K17      ; R16 := Game
-143 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["WEAPON_MELEE_FINISHER_DAMAGE"]
-144 [-]: GETGLOBAL R17 K17      ; R17 := Game
-145 [-]: GETTABLE  R17 R17 K19  ; R17 := R17["MULTIPLY"]
-146 [-]: LOADK     R18 K20      ; R18 := 0.25
+143 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["WEAPON_MELEE_FINISHER_DAMAGE"]
+144 [-]: GETGLOBAL R17 K19      ; R17 := Engine
+145 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["MULTIPLY"]
+146 [-]: LOADK     R18 K21      ; R18 := 0.25
 147 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 148 [-]: GETGLOBAL R14 K1       ; R14 := _G
 149 [-]: GETTABLE  R14 R14 K3   ; R14 := R14["VaultDebuff"]
 150 [-]: EQ        0 R14 K13    ; if R14 ~= 1 then PC := 157
 151 [-]: JMP       157          ; PC := 157
-152 [-]: SELF      R14 R1 K29   ; R15 := R1; R14 := R1["0xAB436EF2"]
-153 [-]: GETGLOBAL R16 K30      ; R16 := EffectShield
-154 [-]: GETGLOBAL R17 K31      ; R17 := EMPTY_SYMBOL
+152 [-]: SELF      R14 R1 K30   ; R15 := R1; R14 := R1["0xAB436EF2"]
+153 [-]: GETGLOBAL R16 K31      ; R16 := EffectShield
+154 [-]: GETGLOBAL R17 K32      ; R17 := EMPTY_SYMBOL
 155 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 156 [-]: JMP       179          ; PC := 179
 157 [-]: GETGLOBAL R14 K1       ; R14 := _G
 158 [-]: GETTABLE  R14 R14 K3   ; R14 := R14["VaultDebuff"]
-159 [-]: EQ        0 R14 K21    ; if R14 ~= 2 then PC := 166
+159 [-]: EQ        0 R14 K22    ; if R14 ~= 2 then PC := 166
 160 [-]: JMP       166          ; PC := 166
-161 [-]: SELF      R14 R1 K29   ; R15 := R1; R14 := R1["0xAB436EF2"]
-162 [-]: GETGLOBAL R16 K32      ; R16 := EffectHealth
-163 [-]: GETGLOBAL R17 K31      ; R17 := EMPTY_SYMBOL
+161 [-]: SELF      R14 R1 K30   ; R15 := R1; R14 := R1["0xAB436EF2"]
+162 [-]: GETGLOBAL R16 K33      ; R16 := EffectHealth
+163 [-]: GETGLOBAL R17 K32      ; R17 := EMPTY_SYMBOL
 164 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 165 [-]: JMP       179          ; PC := 179
 166 [-]: GETGLOBAL R14 K1       ; R14 := _G
 167 [-]: GETTABLE  R14 R14 K3   ; R14 := R14["VaultDebuff"]
-168 [-]: EQ        0 R14 K23    ; if R14 ~= 3 then PC := 175
+168 [-]: EQ        0 R14 K24    ; if R14 ~= 3 then PC := 175
 169 [-]: JMP       175          ; PC := 175
-170 [-]: SELF      R14 R1 K29   ; R15 := R1; R14 := R1["0xAB436EF2"]
-171 [-]: GETGLOBAL R16 K33      ; R16 := EffectSpeed
-172 [-]: GETGLOBAL R17 K31      ; R17 := EMPTY_SYMBOL
+170 [-]: SELF      R14 R1 K30   ; R15 := R1; R14 := R1["0xAB436EF2"]
+171 [-]: GETGLOBAL R16 K34      ; R16 := EffectSpeed
+172 [-]: GETGLOBAL R17 K32      ; R17 := EMPTY_SYMBOL
 173 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
 174 [-]: JMP       179          ; PC := 179
-175 [-]: SELF      R14 R1 K29   ; R15 := R1; R14 := R1["0xAB436EF2"]
-176 [-]: GETGLOBAL R16 K34      ; R16 := EffectDamage
-177 [-]: GETGLOBAL R17 K31      ; R17 := EMPTY_SYMBOL
+175 [-]: SELF      R14 R1 K30   ; R15 := R1; R14 := R1["0xAB436EF2"]
+176 [-]: GETGLOBAL R16 K35      ; R16 := EffectDamage
+177 [-]: GETGLOBAL R17 K32      ; R17 := EMPTY_SYMBOL
 178 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
-179 [-]: GETGLOBAL R14 K35      ; R14 := table
-180 [-]: GETTABLE  R14 R14 K36  ; R14 := R14["0xE6450C9D"]
+179 [-]: GETGLOBAL R14 K36      ; R14 := table
+180 [-]: GETTABLE  R14 R14 K37  ; R14 := R14["0xE6450C9D"]
 181 [-]: MOVE      R15 R2       ; R15 := R2
 182 [-]: MOVE      R16 R1       ; R16 := R1
 183 [-]: CALL      R14 3 1      ; R14(R15,R16)
-184 [-]: SELF      R14 R1 K37   ; R15 := R1; R14 := R1["0xB8613F53"]
+184 [-]: SELF      R14 R1 K38   ; R15 := R1; R14 := R1["0xB8613F53"]
 185 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 186 [-]: TEST      R14 0        ; if not R14 then PC := 203
 187 [-]: JMP       203          ; PC := 203
 188 [-]: GETGLOBAL R14 K4       ; R14 := gGameRules
-189 [-]: SELF      R14 R14 K38  ; R15 := R14; R14 := R14["0x8709CE86"]
+189 [-]: SELF      R14 R14 K39  ; R15 := R14; R14 := R14["0x8709CE86"]
 190 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 191 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
 192 [-]: MOVE      R16 R14      ; R16 := R14
 193 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 194 [-]: TEST      R15 1        ; if R15 then PC := 203
 195 [-]: JMP       203          ; PC := 203
-196 [-]: SELF      R15 R14 K39  ; R16 := R14; R15 := R14["0x458F27A9"]
-197 [-]: LOADK     R17 K40      ; R17 := "StatusEffectChanged"
-198 [-]: GETGLOBAL R18 K41      ; R18 := 0x9FAED6BC
+196 [-]: SELF      R15 R14 K40  ; R16 := R14; R15 := R14["0x458F27A9"]
+197 [-]: LOADK     R17 K41      ; R17 := "StatusEffectChanged"
+198 [-]: GETGLOBAL R18 K42      ; R18 := 0x9FAED6BC
 199 [-]: GETGLOBAL R19 K1       ; R19 := _G
 200 [-]: GETTABLE  R19 R19 K3   ; R19 := R19["VaultDebuff"]
 201 [-]: CALL      R18 2 0      ; R18,... := R18(R19)

@@ -778,7 +778,7 @@ code size: 36
  39 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["0xE6450C9D"]
  40 [-]: MOVE      R2 R0        ; R2 := R0
  41 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 42 [-]: SETTABLE  R3 K12 K17   ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 42 [-]: SETTABLE  R3 K12 K17   ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  43 [-]: GETUPVAL  R4 U2        ; R4 := U2
  44 [-]: SETTABLE  R3 K14 R4    ; R3["Value"] := R4
  45 [-]: SETTABLE  R3 K18 K19   ; R3["ValueIcon"] := "<DT_IMPACT><DT_RADIATION>"
@@ -801,7 +801,7 @@ code size: 36
  62 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["0xE6450C9D"]
  63 [-]: MOVE      R2 R0        ; R2 := R0
  64 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 65 [-]: SETTABLE  R3 K12 K21   ; R3["Label"] := "/Game/WEAPON_MELEE_ARMOR_REDUCTION"
+ 65 [-]: SETTABLE  R3 K12 K21   ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_MELEE_ARMOR_REDUCTION"
  66 [-]: GETGLOBAL R4 K6        ; R4 := math
  67 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["0xF7005A7B"]
  68 [-]: GETUPVAL  R5 U3        ; R5 := U3
@@ -2875,8 +2875,8 @@ code size: 36
 150 [-]: MOVE      R24 R10      ; R24 := R10
 151 [-]: GETGLOBAL R25 K48      ; R25 := Game
 152 [-]: GETTABLE  R25 R25 K49  ; R25 := R25["AVATAR_ARMOUR"]
-153 [-]: GETGLOBAL R26 K48      ; R26 := Game
-154 [-]: GETTABLE  R26 R26 K50  ; R26 := R26["ADD"]
+153 [-]: GETGLOBAL R26 K50      ; R26 := Engine
+154 [-]: GETTABLE  R26 R26 K51  ; R26 := R26["ADD"]
 155 [-]: MOVE      R27 R5       ; R27 := R5
 156 [-]: CALL      R22 6 1      ; R22(R23,R24,R25,R26,R27)
 157 [-]: SETTABLE  R13 R21 R20  ; R13[R21] := R20
@@ -2886,16 +2886,16 @@ code size: 36
 161 [-]: LEN       R22 R14      ; R22 := # R14
 162 [-]: LT        0 K14 R22    ; if 0 >= R22 then PC := 172
 163 [-]: JMP       172          ; PC := 172
-164 [-]: SETTABLE  R8 K51 R14   ; R8["affected"] := R14
-165 [-]: SETTABLE  R8 K52 R6    ; R8["buffData"] := R6
-166 [-]: GETTABLE  R22 R14 K53  ; R22 := R14[1]
-167 [-]: SELF      R22 R22 K54  ; R23 := R22; R22 := R22["0x584F13D6"]
+164 [-]: SETTABLE  R8 K52 R14   ; R8["affected"] := R14
+165 [-]: SETTABLE  R8 K53 R6    ; R8["buffData"] := R6
+166 [-]: GETTABLE  R22 R14 K54  ; R22 := R14[1]
+167 [-]: SELF      R22 R22 K55  ; R23 := R22; R22 := R22["0x584F13D6"]
 168 [-]: MOVE      R24 R8       ; R24 := R8
 169 [-]: MOVE      R25 R1       ; R25 := R1
 170 [-]: MOVE      R26 R1       ; R26 := R1
 171 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
 172 [-]: NEWTABLE  R22 0 0      ; R22 := {}
-173 [-]: GETGLOBAL R23 K55      ; R23 := 0xECFDD17
+173 [-]: GETGLOBAL R23 K56      ; R23 := 0xECFDD17
 174 [-]: MOVE      R24 R12      ; R24 := R12
 175 [-]: CALL      R23 2 4      ; R23,R24,R25 := R23(R24)
 176 [-]: JMP       210          ; PC := 210
@@ -2910,12 +2910,12 @@ code size: 36
 185 [-]: JMP       210          ; PC := 210
 186 [-]: SELF      R28 R27 K1   ; R29 := R27; R28 := R27["0x8DB5D01F"]
 187 [-]: CALL      R28 2 2      ; R28 := R28(R29)
-188 [-]: SELF      R29 R28 K56  ; R30 := R28; R29 := R28["0x5A740E25"]
+188 [-]: SELF      R29 R28 K57  ; R30 := R28; R29 := R28["0x5A740E25"]
 189 [-]: MOVE      R31 R10      ; R31 := R10
 190 [-]: GETGLOBAL R32 K48      ; R32 := Game
 191 [-]: GETTABLE  R32 R32 K49  ; R32 := R32["AVATAR_ARMOUR"]
-192 [-]: GETGLOBAL R33 K48      ; R33 := Game
-193 [-]: GETTABLE  R33 R33 K50  ; R33 := R33["ADD"]
+192 [-]: GETGLOBAL R33 K50      ; R33 := Engine
+193 [-]: GETTABLE  R33 R33 K51  ; R33 := R33["ADD"]
 194 [-]: MOVE      R34 R5       ; R34 := R5
 195 [-]: CALL      R29 6 1      ; R29(R30,R31,R32,R33,R34)
 196 [-]: SELF      R29 R27 K43  ; R30 := R27; R29 := R27["0x896389C9"]
@@ -2937,26 +2937,26 @@ code size: 36
 212 [-]: LEN       R29 R22      ; R29 := # R22
 213 [-]: LT        0 K14 R29    ; if 0 >= R29 then PC := 222
 214 [-]: JMP       222          ; PC := 222
-215 [-]: SETTABLE  R8 K51 R22   ; R8["affected"] := R22
-216 [-]: GETTABLE  R29 R22 K53  ; R29 := R22[1]
-217 [-]: SELF      R29 R29 K54  ; R30 := R29; R29 := R29["0x584F13D6"]
+215 [-]: SETTABLE  R8 K52 R22   ; R8["affected"] := R22
+216 [-]: GETTABLE  R29 R22 K54  ; R29 := R22[1]
+217 [-]: SELF      R29 R29 K55  ; R30 := R29; R29 := R29["0x584F13D6"]
 218 [-]: MOVE      R31 R8       ; R31 := R8
 219 [-]: MOVE      R32 R0       ; R32 := R0
 220 [-]: MOVE      R33 R1       ; R33 := R1
 221 [-]: CALL      R29 5 1      ; R29(R30,R31,R32,R33)
 222 [-]: MOVE      R12 R13      ; R12 := R13
-223 [-]: GETGLOBAL R29 K57      ; R29 := 0x201191EA
+223 [-]: GETGLOBAL R29 K58      ; R29 := 0x201191EA
 224 [-]: LOADK     R30 K14      ; R30 := 0
 225 [-]: CALL      R29 2 1      ; R29(R30)
-226 [-]: GETGLOBAL R29 K58      ; R29 := 0x4CDEF9FF
+226 [-]: GETGLOBAL R29 K59      ; R29 := 0x4CDEF9FF
 227 [-]: CALL      R29 1 2      ; R29 := R29()
 228 [-]: SUB       R6 R6 R29    ; R6 := R6 - R29
-229 [-]: GETGLOBAL R29 K58      ; R29 := 0x4CDEF9FF
+229 [-]: GETGLOBAL R29 K59      ; R29 := 0x4CDEF9FF
 230 [-]: CALL      R29 1 2      ; R29 := R29()
 231 [-]: SUB       R9 R9 R29    ; R9 := R9 - R29
 232 [-]: JMP       78           ; PC := 78
 233 [-]: NEWTABLE  R29 0 0      ; R29 := {}
-234 [-]: GETGLOBAL R30 K55      ; R30 := 0xECFDD17
+234 [-]: GETGLOBAL R30 K56      ; R30 := 0xECFDD17
 235 [-]: MOVE      R31 R12      ; R31 := R12
 236 [-]: CALL      R30 2 4      ; R30,R31,R32 := R30(R31)
 237 [-]: JMP       271          ; PC := 271
@@ -2971,12 +2971,12 @@ code size: 36
 246 [-]: JMP       271          ; PC := 271
 247 [-]: SELF      R35 R34 K1   ; R36 := R34; R35 := R34["0x8DB5D01F"]
 248 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-249 [-]: SELF      R36 R35 K56  ; R37 := R35; R36 := R35["0x5A740E25"]
+249 [-]: SELF      R36 R35 K57  ; R37 := R35; R36 := R35["0x5A740E25"]
 250 [-]: MOVE      R38 R10      ; R38 := R10
 251 [-]: GETGLOBAL R39 K48      ; R39 := Game
 252 [-]: GETTABLE  R39 R39 K49  ; R39 := R39["AVATAR_ARMOUR"]
-253 [-]: GETGLOBAL R40 K48      ; R40 := Game
-254 [-]: GETTABLE  R40 R40 K50  ; R40 := R40["ADD"]
+253 [-]: GETGLOBAL R40 K50      ; R40 := Engine
+254 [-]: GETTABLE  R40 R40 K51  ; R40 := R40["ADD"]
 255 [-]: MOVE      R41 R5       ; R41 := R5
 256 [-]: CALL      R36 6 1      ; R36(R37,R38,R39,R40,R41)
 257 [-]: SELF      R36 R34 K43  ; R37 := R34; R36 := R34["0x896389C9"]
@@ -2998,9 +2998,9 @@ code size: 36
 273 [-]: LEN       R36 R29      ; R36 := # R29
 274 [-]: LT        0 K14 R36    ; if 0 >= R36 then PC := 283
 275 [-]: JMP       283          ; PC := 283
-276 [-]: SETTABLE  R8 K51 R29   ; R8["affected"] := R29
-277 [-]: GETTABLE  R36 R29 K53  ; R36 := R29[1]
-278 [-]: SELF      R36 R36 K54  ; R37 := R36; R36 := R36["0x584F13D6"]
+276 [-]: SETTABLE  R8 K52 R29   ; R8["affected"] := R29
+277 [-]: GETTABLE  R36 R29 K54  ; R36 := R29[1]
+278 [-]: SELF      R36 R36 K55  ; R37 := R36; R36 := R36["0x584F13D6"]
 279 [-]: MOVE      R38 R8       ; R38 := R8
 280 [-]: MOVE      R39 R0       ; R39 := R0
 281 [-]: MOVE      R40 R1       ; R40 := R1
@@ -3129,8 +3129,8 @@ code size: 36
  27 [-]: SELF      R9 R9 K9     ; R10 := R9; R9 := R9["0x3B1B11B9"]
  28 [-]: GETGLOBAL R11 K10      ; R11 := Game
  29 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["AVATAR_ARMOUR"]
- 30 [-]: GETGLOBAL R12 K10      ; R12 := Game
- 31 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["STACKING_MULTIPLY"]
+ 30 [-]: GETGLOBAL R12 K12      ; R12 := Engine
+ 31 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["STACKING_MULTIPLY"]
  32 [-]: MOVE      R13 R3       ; R13 := R3
  33 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  34 [-]: TFORLOOP  R4 2         ; R7,R8 :=  R4(R5,R6); if R7 ~= nil then begin PC = 16; R6 := R7 end

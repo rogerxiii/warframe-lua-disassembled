@@ -1,4 +1,4 @@
-code size: 337
+code size: 349
 code size: 8
 code size: 9
 code size: 9
@@ -18,15 +18,18 @@ code size: 14
 code size: 14
 code size: 78
 code size: 17
+code size: 13
 code size: 110
 code size: 44
 code size: 34
-code size: 112
+code size: 13
+code size: 113
 code size: 45
 code size: 34
 code size: 33
 code size: 14
 code size: 6
+code size: 13
 code size: 55
 code size: 8
 code size: 113
@@ -35,6 +38,7 @@ code size: 17
 code size: 6
 code size: 15
 code size: 14
+code size: 13
 code size: 89
 code size: 106
 code size: 15
@@ -197,210 +201,222 @@ code size: 11
 131 [-]: SETGLOBAL R32 K70      ; ClearPrimaryObjText := R32
 132 [-]: SETGLOBAL R32 K71      ; 0xE3C15456 := R32
 133 [-]: CLOSURE   R32 19       ; R32 := closure(Function #20)
-134 [-]: MOVE      R0 R22       ; R0 := R22
-135 [-]: MOVE      R0 R16       ; R0 := R16
-136 [-]: MOVE      R0 R14       ; R0 := R14
-137 [-]: MOVE      R0 R9        ; R0 := R9
-138 [-]: MOVE      R0 R11       ; R0 := R11
-139 [-]: MOVE      R0 R27       ; R0 := R27
-140 [-]: SETGLOBAL R32 K72      ; SetSecondaryObjText := R32
-141 [-]: SETGLOBAL R32 K73      ; 0xB879AD91 := R32
-142 [-]: CLOSURE   R32 20       ; R32 := closure(Function #21)
-143 [-]: MOVE      R0 R28       ; R0 := R28
-144 [-]: MOVE      R0 R14       ; R0 := R14
-145 [-]: SETGLOBAL R32 K74      ; ClearSecondaryObjText := R32
-146 [-]: SETGLOBAL R32 K75      ; 0x2FA153C4 := R32
-147 [-]: CLOSURE   R32 21       ; R32 := closure(Function #22)
-148 [-]: MOVE      R0 R28       ; R0 := R28
-149 [-]: SETGLOBAL R32 K76      ; GetSecondaryObjTracker := R32
-150 [-]: SETGLOBAL R32 K77      ; 0xD2401C33 := R32
-151 [-]: CLOSURE   R32 22       ; R32 := closure(Function #23)
-152 [-]: MOVE      R0 R22       ; R0 := R22
-153 [-]: MOVE      R0 R16       ; R0 := R16
-154 [-]: MOVE      R0 R14       ; R0 := R14
-155 [-]: MOVE      R0 R9        ; R0 := R9
-156 [-]: MOVE      R0 R10       ; R0 := R10
-157 [-]: MOVE      R0 R1        ; R0 := R1
-158 [-]: MOVE      R0 R2        ; R0 := R2
-159 [-]: MOVE      R0 R8        ; R0 := R8
-160 [-]: SETGLOBAL R32 K78      ; SetObjProgressBar := R32
-161 [-]: SETGLOBAL R32 K79      ; 0xBFAE4F52 := R32
-162 [-]: CLOSURE   R32 23       ; R32 := closure(Function #24)
-163 [-]: MOVE      R0 R29       ; R0 := R29
-164 [-]: MOVE      R0 R1        ; R0 := R1
-165 [-]: SETGLOBAL R32 K80      ; UpdateObjProgressBar := R32
-166 [-]: SETGLOBAL R32 K81      ; 0x64C5648D := R32
-167 [-]: CLOSURE   R32 24       ; R32 := closure(Function #25)
-168 [-]: MOVE      R0 R29       ; R0 := R29
-169 [-]: MOVE      R0 R2        ; R0 := R2
-170 [-]: SETGLOBAL R32 K82      ; UpdateObjProgressBarPct := R32
-171 [-]: SETGLOBAL R32 K83      ; 0x52222621 := R32
-172 [-]: CLOSURE   R32 25       ; R32 := closure(Function #26)
-173 [-]: MOVE      R0 R29       ; R0 := R29
-174 [-]: SETGLOBAL R32 K84      ; SetObjProgressBarColor := R32
-175 [-]: SETGLOBAL R32 K85      ; 0x376DA916 := R32
-176 [-]: CLOSURE   R32 26       ; R32 := closure(Function #27)
-177 [-]: MOVE      R0 R14       ; R0 := R14
-178 [-]: SETGLOBAL R32 K86      ; RemoveObjProgressBar := R32
-179 [-]: SETGLOBAL R32 K87      ; 0x1E1088F9 := R32
-180 [-]: CLOSURE   R32 27       ; R32 := closure(Function #28)
-181 [-]: MOVE      R0 R29       ; R0 := R29
-182 [-]: SETGLOBAL R32 K88      ; GetObjProgressBarTracker := R32
-183 [-]: SETGLOBAL R32 K89      ; 0xC3635380 := R32
-184 [-]: CLOSURE   R32 28       ; R32 := closure(Function #29)
-185 [-]: MOVE      R0 R22       ; R0 := R22
-186 [-]: MOVE      R0 R16       ; R0 := R16
-187 [-]: MOVE      R0 R14       ; R0 := R14
-188 [-]: MOVE      R0 R9        ; R0 := R9
-189 [-]: MOVE      R0 R10       ; R0 := R10
-190 [-]: SETGLOBAL R32 K90      ; SetNpcHealthTracker := R32
-191 [-]: SETGLOBAL R32 K91      ; 0x666F2C0E := R32
-192 [-]: CLOSURE   R32 29       ; R32 := closure(Function #30)
-193 [-]: MOVE      R0 R14       ; R0 := R14
-194 [-]: SETGLOBAL R32 K92      ; ClearNpcHealthTracker := R32
-195 [-]: SETGLOBAL R32 K93      ; 0x55F65422 := R32
-196 [-]: LOADK     R32 K24      ; R32 := 0
-197 [-]: SETGLOBAL R32 K94      ; BLANK_STRING := R32
-198 [-]: LOADK     R32 K26      ; R32 := 1
-199 [-]: SETGLOBAL R32 K95      ; TIMELEFT_STRING := R32
-200 [-]: LOADK     R32 K28      ; R32 := 2
-201 [-]: SETGLOBAL R32 K96      ; TIMELIMIT_STRING := R32
-202 [-]: LOADK     R32 K30      ; R32 := 3
-203 [-]: SETGLOBAL R32 K97      ; NEXTWAVE_STRING := R32
-204 [-]: CLOSURE   R32 30       ; R32 := closure(Function #31)
-205 [-]: MOVE      R0 R22       ; R0 := R22
-206 [-]: MOVE      R0 R16       ; R0 := R16
-207 [-]: MOVE      R0 R14       ; R0 := R14
-208 [-]: MOVE      R0 R9        ; R0 := R9
-209 [-]: MOVE      R0 R10       ; R0 := R10
-210 [-]: MOVE      R0 R7        ; R0 := R7
-211 [-]: SETGLOBAL R32 K98      ; SetObjTimer := R32
-212 [-]: SETGLOBAL R32 K99      ; 0xE837253 := R32
-213 [-]: CLOSURE   R32 31       ; R32 := closure(Function #32)
-214 [-]: MOVE      R0 R30       ; R0 := R30
-215 [-]: SETGLOBAL R32 K100     ; GetObjTime := R32
-216 [-]: SETGLOBAL R32 K101     ; 0xB3378D02 := R32
-217 [-]: CLOSURE   R32 32       ; R32 := closure(Function #33)
-218 [-]: MOVE      R0 R30       ; R0 := R30
-219 [-]: SETGLOBAL R32 K102     ; GetObjTimeTracker := R32
-220 [-]: SETGLOBAL R32 K103     ; 0xEE8C20B4 := R32
-221 [-]: CLOSURE   R32 33       ; R32 := closure(Function #34)
-222 [-]: MOVE      R0 R30       ; R0 := R30
-223 [-]: SETGLOBAL R32 K104     ; PauseObjTimer := R32
-224 [-]: SETGLOBAL R32 K105     ; 0x5B4E6CEC := R32
-225 [-]: CLOSURE   R32 34       ; R32 := closure(Function #35)
-226 [-]: MOVE      R0 R14       ; R0 := R14
-227 [-]: SETGLOBAL R32 K106     ; RemoveObjTimer := R32
-228 [-]: SETGLOBAL R32 K107     ; 0x85C41746 := R32
-229 [-]: CLOSURE   R32 35       ; R32 := closure(Function #36)
-230 [-]: MOVE      R0 R22       ; R0 := R22
-231 [-]: MOVE      R0 R16       ; R0 := R16
-232 [-]: MOVE      R0 R14       ; R0 := R14
-233 [-]: MOVE      R0 R12       ; R0 := R12
-234 [-]: MOVE      R0 R27       ; R0 := R27
-235 [-]: SETGLOBAL R32 K108     ; SetCachesObjectiveText := R32
-236 [-]: SETGLOBAL R32 K109     ; 0x250DA1D0 := R32
-237 [-]: CLOSURE   R32 36       ; R32 := closure(Function #37)
-238 [-]: MOVE      R0 R22       ; R0 := R22
-239 [-]: MOVE      R0 R16       ; R0 := R16
-240 [-]: MOVE      R0 R14       ; R0 := R14
-241 [-]: MOVE      R0 R27       ; R0 := R27
-242 [-]: MOVE      R0 R13       ; R0 := R13
-243 [-]: MOVE      R0 R7        ; R0 := R7
-244 [-]: MOVE      R0 R9        ; R0 := R9
-245 [-]: SETGLOBAL R32 K110     ; SetTimedChallengeObj := R32
-246 [-]: SETGLOBAL R32 K111     ; 0x615F64B5 := R32
-247 [-]: CLOSURE   R32 37       ; R32 := closure(Function #38)
-248 [-]: MOVE      R0 R14       ; R0 := R14
-249 [-]: SETGLOBAL R32 K112     ; RemoveTimedChallengeObj := R32
-250 [-]: SETGLOBAL R32 K113     ; 0x9BD4281F := R32
-251 [-]: CLOSURE   R32 38       ; R32 := closure(Function #39)
-252 [-]: MOVE      R0 R22       ; R0 := R22
-253 [-]: MOVE      R0 R16       ; R0 := R16
-254 [-]: MOVE      R0 R14       ; R0 := R14
-255 [-]: MOVE      R0 R3        ; R0 := R3
-256 [-]: MOVE      R0 R27       ; R0 := R27
-257 [-]: SETGLOBAL R32 K114     ; SetExtractObjText := R32
-258 [-]: SETGLOBAL R32 K115     ; 0x8E8DB6AE := R32
-259 [-]: CLOSURE   R32 39       ; R32 := closure(Function #40)
-260 [-]: MOVE      R0 R22       ; R0 := R22
-261 [-]: MOVE      R0 R16       ; R0 := R16
-262 [-]: MOVE      R0 R14       ; R0 := R14
-263 [-]: MOVE      R0 R9        ; R0 := R9
-264 [-]: MOVE      R0 R10       ; R0 := R10
-265 [-]: MOVE      R0 R0        ; R0 := R0
-266 [-]: SETGLOBAL R32 K116     ; SetExtractionTimer := R32
-267 [-]: SETGLOBAL R32 K117     ; 0x9F1339BF := R32
-268 [-]: CLOSURE   R32 40       ; R32 := closure(Function #41)
-269 [-]: MOVE      R0 R31       ; R0 := R31
-270 [-]: SETGLOBAL R32 K118     ; GetExtractionTime := R32
-271 [-]: SETGLOBAL R32 K119     ; 0x582AA035 := R32
-272 [-]: CLOSURE   R32 41       ; R32 := closure(Function #42)
-273 [-]: MOVE      R0 R14       ; R0 := R14
-274 [-]: SETGLOBAL R32 K120     ; RemoveExtractionTimer := R32
-275 [-]: SETGLOBAL R32 K121     ; 0x8AC5498 := R32
-276 [-]: CLOSURE   R32 42       ; R32 := closure(Function #43)
-277 [-]: MOVE      R0 R14       ; R0 := R14
-278 [-]: SETGLOBAL R32 K122     ; ClearExtractObjText := R32
-279 [-]: SETGLOBAL R32 K123     ; 0xBF6FB3A1 := R32
-280 [-]: GETGLOBAL R32 K124     ; R32 := 0x2C00D429
-281 [-]: LOADK     R33 K125     ; R33 := "/Lotus/Types/Keys/SolarisQuest/SolarisQuestKeyChain"
-282 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-283 [-]: CLOSURE   R33 43       ; R33 := closure(Function #44)
-284 [-]: MOVE      R0 R32       ; R0 := R32
-285 [-]: LOADK     R34 K126     ; R34 := "/Lotus/Language/Objectives/BonusObjective"
-286 [-]: CLOSURE   R35 44       ; R35 := closure(Function #45)
-287 [-]: MOVE      R0 R33       ; R0 := R33
-288 [-]: MOVE      R0 R22       ; R0 := R22
-289 [-]: MOVE      R0 R16       ; R0 := R16
-290 [-]: MOVE      R0 R34       ; R0 := R34
-291 [-]: MOVE      R0 R11       ; R0 := R11
-292 [-]: SETGLOBAL R35 K127     ; AddBountyBonus := R35
-293 [-]: SETGLOBAL R35 K128     ; 0x136DD6D2 := R35
-294 [-]: CLOSURE   R35 45       ; R35 := closure(Function #46)
-295 [-]: MOVE      R0 R33       ; R0 := R33
-296 [-]: MOVE      R0 R34       ; R0 := R34
-297 [-]: SETGLOBAL R35 K129     ; SetBountyBonusAchieved := R35
-298 [-]: SETGLOBAL R35 K130     ; 0xA3171FD4 := R35
-299 [-]: CLOSURE   R35 46       ; R35 := closure(Function #47)
-300 [-]: MOVE      R0 R33       ; R0 := R33
-301 [-]: MOVE      R0 R34       ; R0 := R34
-302 [-]: SETGLOBAL R35 K131     ; SetBountyBonusFailed := R35
-303 [-]: SETGLOBAL R35 K132     ; 0x79B260AB := R35
-304 [-]: CLOSURE   R35 47       ; R35 := closure(Function #48)
-305 [-]: MOVE      R0 R33       ; R0 := R33
-306 [-]: SETGLOBAL R35 K133     ; RemoveBountyBonus := R35
-307 [-]: SETGLOBAL R35 K134     ; 0x7D945D3A := R35
-308 [-]: CLOSURE   R35 48       ; R35 := closure(Function #49)
-309 [-]: MOVE      R0 R22       ; R0 := R22
-310 [-]: MOVE      R0 R16       ; R0 := R16
-311 [-]: MOVE      R0 R14       ; R0 := R14
-312 [-]: MOVE      R0 R27       ; R0 := R27
-313 [-]: SETGLOBAL R35 K135     ; SetDebugText := R35
-314 [-]: SETGLOBAL R35 K136     ; 0x20EAE64 := R35
-315 [-]: CLOSURE   R35 49       ; R35 := closure(Function #50)
-316 [-]: MOVE      R0 R14       ; R0 := R14
-317 [-]: SETGLOBAL R35 K137     ; ClearDebugText := R35
-318 [-]: SETGLOBAL R35 K138     ; 0xB45F8606 := R35
-319 [-]: CLOSURE   R35 50       ; R35 := closure(Function #51)
-320 [-]: MOVE      R0 R9        ; R0 := R9
-321 [-]: MOVE      R0 R10       ; R0 := R10
-322 [-]: SETGLOBAL R35 K139     ; UpdateAlignments := R35
-323 [-]: SETGLOBAL R35 K140     ; 0x7080B79 := R35
-324 [-]: CLOSURE   R35 51       ; R35 := closure(Function #52)
-325 [-]: MOVE      R0 R22       ; R0 := R22
-326 [-]: SETGLOBAL R35 K141     ; GetPriorityOffset := R35
-327 [-]: SETGLOBAL R35 K142     ; 0x1B868A8 := R35
-328 [-]: CLOSURE   R35 52       ; R35 := closure(Function #53)
-329 [-]: MOVE      R0 R9        ; R0 := R9
-330 [-]: MOVE      R0 R10       ; R0 := R10
-331 [-]: SETGLOBAL R35 K143     ; GetSubObjIndents := R35
-332 [-]: SETGLOBAL R35 K144     ; 0xFA4ECB0E := R35
-333 [-]: CLOSURE   R35 53       ; R35 := closure(Function #54)
-334 [-]: MOVE      R0 R27       ; R0 := R27
-335 [-]: SETGLOBAL R35 K145     ; SetObjectiveTextUI := R35
-336 [-]: SETGLOBAL R35 K146     ; 0x8C416E61 := R35
-337 [-]: RETURN    R0 1         ; return 
+134 [-]: SETGLOBAL R32 K72      ; SetPrimaryObjVisible := R32
+135 [-]: SETGLOBAL R32 K73      ; 0xFC09E19 := R32
+136 [-]: CLOSURE   R32 20       ; R32 := closure(Function #21)
+137 [-]: MOVE      R0 R22       ; R0 := R22
+138 [-]: MOVE      R0 R16       ; R0 := R16
+139 [-]: MOVE      R0 R14       ; R0 := R14
+140 [-]: MOVE      R0 R9        ; R0 := R9
+141 [-]: MOVE      R0 R11       ; R0 := R11
+142 [-]: MOVE      R0 R27       ; R0 := R27
+143 [-]: SETGLOBAL R32 K74      ; SetSecondaryObjText := R32
+144 [-]: SETGLOBAL R32 K75      ; 0xB879AD91 := R32
+145 [-]: CLOSURE   R32 21       ; R32 := closure(Function #22)
+146 [-]: MOVE      R0 R28       ; R0 := R28
+147 [-]: MOVE      R0 R14       ; R0 := R14
+148 [-]: SETGLOBAL R32 K76      ; ClearSecondaryObjText := R32
+149 [-]: SETGLOBAL R32 K77      ; 0x2FA153C4 := R32
+150 [-]: CLOSURE   R32 22       ; R32 := closure(Function #23)
+151 [-]: MOVE      R0 R28       ; R0 := R28
+152 [-]: SETGLOBAL R32 K78      ; GetSecondaryObjTracker := R32
+153 [-]: SETGLOBAL R32 K79      ; 0xD2401C33 := R32
+154 [-]: CLOSURE   R32 23       ; R32 := closure(Function #24)
+155 [-]: SETGLOBAL R32 K80      ; SetSecondaryObjVisible := R32
+156 [-]: SETGLOBAL R32 K81      ; 0x64394AD0 := R32
+157 [-]: CLOSURE   R32 24       ; R32 := closure(Function #25)
+158 [-]: MOVE      R0 R22       ; R0 := R22
+159 [-]: MOVE      R0 R16       ; R0 := R16
+160 [-]: MOVE      R0 R14       ; R0 := R14
+161 [-]: MOVE      R0 R9        ; R0 := R9
+162 [-]: MOVE      R0 R10       ; R0 := R10
+163 [-]: MOVE      R0 R1        ; R0 := R1
+164 [-]: MOVE      R0 R2        ; R0 := R2
+165 [-]: MOVE      R0 R8        ; R0 := R8
+166 [-]: SETGLOBAL R32 K82      ; SetObjProgressBar := R32
+167 [-]: SETGLOBAL R32 K83      ; 0xBFAE4F52 := R32
+168 [-]: CLOSURE   R32 25       ; R32 := closure(Function #26)
+169 [-]: MOVE      R0 R29       ; R0 := R29
+170 [-]: MOVE      R0 R1        ; R0 := R1
+171 [-]: SETGLOBAL R32 K84      ; UpdateObjProgressBar := R32
+172 [-]: SETGLOBAL R32 K85      ; 0x64C5648D := R32
+173 [-]: CLOSURE   R32 26       ; R32 := closure(Function #27)
+174 [-]: MOVE      R0 R29       ; R0 := R29
+175 [-]: MOVE      R0 R2        ; R0 := R2
+176 [-]: SETGLOBAL R32 K86      ; UpdateObjProgressBarPct := R32
+177 [-]: SETGLOBAL R32 K87      ; 0x52222621 := R32
+178 [-]: CLOSURE   R32 27       ; R32 := closure(Function #28)
+179 [-]: MOVE      R0 R29       ; R0 := R29
+180 [-]: SETGLOBAL R32 K88      ; SetObjProgressBarColor := R32
+181 [-]: SETGLOBAL R32 K89      ; 0x376DA916 := R32
+182 [-]: CLOSURE   R32 28       ; R32 := closure(Function #29)
+183 [-]: MOVE      R0 R14       ; R0 := R14
+184 [-]: SETGLOBAL R32 K90      ; RemoveObjProgressBar := R32
+185 [-]: SETGLOBAL R32 K91      ; 0x1E1088F9 := R32
+186 [-]: CLOSURE   R32 29       ; R32 := closure(Function #30)
+187 [-]: MOVE      R0 R29       ; R0 := R29
+188 [-]: SETGLOBAL R32 K92      ; GetObjProgressBarTracker := R32
+189 [-]: SETGLOBAL R32 K93      ; 0xC3635380 := R32
+190 [-]: CLOSURE   R32 30       ; R32 := closure(Function #31)
+191 [-]: SETGLOBAL R32 K94      ; SetObjProgressBarVisible := R32
+192 [-]: SETGLOBAL R32 K95      ; 0xA60F9875 := R32
+193 [-]: CLOSURE   R32 31       ; R32 := closure(Function #32)
+194 [-]: MOVE      R0 R22       ; R0 := R22
+195 [-]: MOVE      R0 R16       ; R0 := R16
+196 [-]: MOVE      R0 R14       ; R0 := R14
+197 [-]: MOVE      R0 R9        ; R0 := R9
+198 [-]: MOVE      R0 R10       ; R0 := R10
+199 [-]: SETGLOBAL R32 K96      ; SetNpcHealthTracker := R32
+200 [-]: SETGLOBAL R32 K97      ; 0x666F2C0E := R32
+201 [-]: CLOSURE   R32 32       ; R32 := closure(Function #33)
+202 [-]: MOVE      R0 R14       ; R0 := R14
+203 [-]: SETGLOBAL R32 K98      ; ClearNpcHealthTracker := R32
+204 [-]: SETGLOBAL R32 K99      ; 0x55F65422 := R32
+205 [-]: LOADK     R32 K24      ; R32 := 0
+206 [-]: SETGLOBAL R32 K100     ; BLANK_STRING := R32
+207 [-]: LOADK     R32 K26      ; R32 := 1
+208 [-]: SETGLOBAL R32 K101     ; TIMELEFT_STRING := R32
+209 [-]: LOADK     R32 K28      ; R32 := 2
+210 [-]: SETGLOBAL R32 K102     ; TIMELIMIT_STRING := R32
+211 [-]: LOADK     R32 K30      ; R32 := 3
+212 [-]: SETGLOBAL R32 K103     ; NEXTWAVE_STRING := R32
+213 [-]: CLOSURE   R32 33       ; R32 := closure(Function #34)
+214 [-]: MOVE      R0 R22       ; R0 := R22
+215 [-]: MOVE      R0 R16       ; R0 := R16
+216 [-]: MOVE      R0 R14       ; R0 := R14
+217 [-]: MOVE      R0 R9        ; R0 := R9
+218 [-]: MOVE      R0 R10       ; R0 := R10
+219 [-]: MOVE      R0 R7        ; R0 := R7
+220 [-]: SETGLOBAL R32 K104     ; SetObjTimer := R32
+221 [-]: SETGLOBAL R32 K105     ; 0xE837253 := R32
+222 [-]: CLOSURE   R32 34       ; R32 := closure(Function #35)
+223 [-]: MOVE      R0 R30       ; R0 := R30
+224 [-]: SETGLOBAL R32 K106     ; GetObjTime := R32
+225 [-]: SETGLOBAL R32 K107     ; 0xB3378D02 := R32
+226 [-]: CLOSURE   R32 35       ; R32 := closure(Function #36)
+227 [-]: MOVE      R0 R30       ; R0 := R30
+228 [-]: SETGLOBAL R32 K108     ; GetObjTimeTracker := R32
+229 [-]: SETGLOBAL R32 K109     ; 0xEE8C20B4 := R32
+230 [-]: CLOSURE   R32 36       ; R32 := closure(Function #37)
+231 [-]: MOVE      R0 R30       ; R0 := R30
+232 [-]: SETGLOBAL R32 K110     ; PauseObjTimer := R32
+233 [-]: SETGLOBAL R32 K111     ; 0x5B4E6CEC := R32
+234 [-]: CLOSURE   R32 37       ; R32 := closure(Function #38)
+235 [-]: MOVE      R0 R14       ; R0 := R14
+236 [-]: SETGLOBAL R32 K112     ; RemoveObjTimer := R32
+237 [-]: SETGLOBAL R32 K113     ; 0x85C41746 := R32
+238 [-]: CLOSURE   R32 38       ; R32 := closure(Function #39)
+239 [-]: SETGLOBAL R32 K114     ; SetObjTimerVisible := R32
+240 [-]: SETGLOBAL R32 K115     ; 0xE68E1E0B := R32
+241 [-]: CLOSURE   R32 39       ; R32 := closure(Function #40)
+242 [-]: MOVE      R0 R22       ; R0 := R22
+243 [-]: MOVE      R0 R16       ; R0 := R16
+244 [-]: MOVE      R0 R14       ; R0 := R14
+245 [-]: MOVE      R0 R12       ; R0 := R12
+246 [-]: MOVE      R0 R27       ; R0 := R27
+247 [-]: SETGLOBAL R32 K116     ; SetCachesObjectiveText := R32
+248 [-]: SETGLOBAL R32 K117     ; 0x250DA1D0 := R32
+249 [-]: CLOSURE   R32 40       ; R32 := closure(Function #41)
+250 [-]: MOVE      R0 R22       ; R0 := R22
+251 [-]: MOVE      R0 R16       ; R0 := R16
+252 [-]: MOVE      R0 R14       ; R0 := R14
+253 [-]: MOVE      R0 R27       ; R0 := R27
+254 [-]: MOVE      R0 R13       ; R0 := R13
+255 [-]: MOVE      R0 R7        ; R0 := R7
+256 [-]: MOVE      R0 R9        ; R0 := R9
+257 [-]: SETGLOBAL R32 K118     ; SetTimedChallengeObj := R32
+258 [-]: SETGLOBAL R32 K119     ; 0x615F64B5 := R32
+259 [-]: CLOSURE   R32 41       ; R32 := closure(Function #42)
+260 [-]: MOVE      R0 R14       ; R0 := R14
+261 [-]: SETGLOBAL R32 K120     ; RemoveTimedChallengeObj := R32
+262 [-]: SETGLOBAL R32 K121     ; 0x9BD4281F := R32
+263 [-]: CLOSURE   R32 42       ; R32 := closure(Function #43)
+264 [-]: MOVE      R0 R22       ; R0 := R22
+265 [-]: MOVE      R0 R16       ; R0 := R16
+266 [-]: MOVE      R0 R14       ; R0 := R14
+267 [-]: MOVE      R0 R3        ; R0 := R3
+268 [-]: MOVE      R0 R27       ; R0 := R27
+269 [-]: SETGLOBAL R32 K122     ; SetExtractObjText := R32
+270 [-]: SETGLOBAL R32 K123     ; 0x8E8DB6AE := R32
+271 [-]: CLOSURE   R32 43       ; R32 := closure(Function #44)
+272 [-]: MOVE      R0 R22       ; R0 := R22
+273 [-]: MOVE      R0 R16       ; R0 := R16
+274 [-]: MOVE      R0 R14       ; R0 := R14
+275 [-]: MOVE      R0 R9        ; R0 := R9
+276 [-]: MOVE      R0 R10       ; R0 := R10
+277 [-]: MOVE      R0 R0        ; R0 := R0
+278 [-]: SETGLOBAL R32 K124     ; SetExtractionTimer := R32
+279 [-]: SETGLOBAL R32 K125     ; 0x9F1339BF := R32
+280 [-]: CLOSURE   R32 44       ; R32 := closure(Function #45)
+281 [-]: MOVE      R0 R31       ; R0 := R31
+282 [-]: SETGLOBAL R32 K126     ; GetExtractionTime := R32
+283 [-]: SETGLOBAL R32 K127     ; 0x582AA035 := R32
+284 [-]: CLOSURE   R32 45       ; R32 := closure(Function #46)
+285 [-]: MOVE      R0 R14       ; R0 := R14
+286 [-]: SETGLOBAL R32 K128     ; RemoveExtractionTimer := R32
+287 [-]: SETGLOBAL R32 K129     ; 0x8AC5498 := R32
+288 [-]: CLOSURE   R32 46       ; R32 := closure(Function #47)
+289 [-]: MOVE      R0 R14       ; R0 := R14
+290 [-]: SETGLOBAL R32 K130     ; ClearExtractObjText := R32
+291 [-]: SETGLOBAL R32 K131     ; 0xBF6FB3A1 := R32
+292 [-]: GETGLOBAL R32 K132     ; R32 := 0x2C00D429
+293 [-]: LOADK     R33 K133     ; R33 := "/Lotus/Types/Keys/SolarisQuest/SolarisQuestKeyChain"
+294 [-]: CALL      R32 2 2      ; R32 := R32(R33)
+295 [-]: CLOSURE   R33 47       ; R33 := closure(Function #48)
+296 [-]: MOVE      R0 R32       ; R0 := R32
+297 [-]: LOADK     R34 K134     ; R34 := "/Lotus/Language/Objectives/BonusObjective"
+298 [-]: CLOSURE   R35 48       ; R35 := closure(Function #49)
+299 [-]: MOVE      R0 R33       ; R0 := R33
+300 [-]: MOVE      R0 R22       ; R0 := R22
+301 [-]: MOVE      R0 R16       ; R0 := R16
+302 [-]: MOVE      R0 R34       ; R0 := R34
+303 [-]: MOVE      R0 R11       ; R0 := R11
+304 [-]: SETGLOBAL R35 K135     ; AddBountyBonus := R35
+305 [-]: SETGLOBAL R35 K136     ; 0x136DD6D2 := R35
+306 [-]: CLOSURE   R35 49       ; R35 := closure(Function #50)
+307 [-]: MOVE      R0 R33       ; R0 := R33
+308 [-]: MOVE      R0 R34       ; R0 := R34
+309 [-]: SETGLOBAL R35 K137     ; SetBountyBonusAchieved := R35
+310 [-]: SETGLOBAL R35 K138     ; 0xA3171FD4 := R35
+311 [-]: CLOSURE   R35 50       ; R35 := closure(Function #51)
+312 [-]: MOVE      R0 R33       ; R0 := R33
+313 [-]: MOVE      R0 R34       ; R0 := R34
+314 [-]: SETGLOBAL R35 K139     ; SetBountyBonusFailed := R35
+315 [-]: SETGLOBAL R35 K140     ; 0x79B260AB := R35
+316 [-]: CLOSURE   R35 51       ; R35 := closure(Function #52)
+317 [-]: MOVE      R0 R33       ; R0 := R33
+318 [-]: SETGLOBAL R35 K141     ; RemoveBountyBonus := R35
+319 [-]: SETGLOBAL R35 K142     ; 0x7D945D3A := R35
+320 [-]: CLOSURE   R35 52       ; R35 := closure(Function #53)
+321 [-]: MOVE      R0 R22       ; R0 := R22
+322 [-]: MOVE      R0 R16       ; R0 := R16
+323 [-]: MOVE      R0 R14       ; R0 := R14
+324 [-]: MOVE      R0 R27       ; R0 := R27
+325 [-]: SETGLOBAL R35 K143     ; SetDebugText := R35
+326 [-]: SETGLOBAL R35 K144     ; 0x20EAE64 := R35
+327 [-]: CLOSURE   R35 53       ; R35 := closure(Function #54)
+328 [-]: MOVE      R0 R14       ; R0 := R14
+329 [-]: SETGLOBAL R35 K145     ; ClearDebugText := R35
+330 [-]: SETGLOBAL R35 K146     ; 0xB45F8606 := R35
+331 [-]: CLOSURE   R35 54       ; R35 := closure(Function #55)
+332 [-]: MOVE      R0 R9        ; R0 := R9
+333 [-]: MOVE      R0 R10       ; R0 := R10
+334 [-]: SETGLOBAL R35 K147     ; UpdateAlignments := R35
+335 [-]: SETGLOBAL R35 K148     ; 0x7080B79 := R35
+336 [-]: CLOSURE   R35 55       ; R35 := closure(Function #56)
+337 [-]: MOVE      R0 R22       ; R0 := R22
+338 [-]: SETGLOBAL R35 K149     ; GetPriorityOffset := R35
+339 [-]: SETGLOBAL R35 K150     ; 0x1B868A8 := R35
+340 [-]: CLOSURE   R35 56       ; R35 := closure(Function #57)
+341 [-]: MOVE      R0 R9        ; R0 := R9
+342 [-]: MOVE      R0 R10       ; R0 := R10
+343 [-]: SETGLOBAL R35 K151     ; GetSubObjIndents := R35
+344 [-]: SETGLOBAL R35 K152     ; 0xFA4ECB0E := R35
+345 [-]: CLOSURE   R35 57       ; R35 := closure(Function #58)
+346 [-]: MOVE      R0 R27       ; R0 := R27
+347 [-]: SETGLOBAL R35 K153     ; SetObjectiveTextUI := R35
+348 [-]: SETGLOBAL R35 K154     ; 0x8C416E61 := R35
+349 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -1252,7 +1268,31 @@ code size: 11
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 309
+; Defined at line: 307
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["ObjectiveHudTracker"]
+  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  5 [-]: TEST      R1 0         ; if not R1 then PC := 8
+  6 [-]: JMP       8            ; PC := 8
+  7 [-]: RETURN    R0 1         ; return 
+  8 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  9 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ObjectiveHudTracker"]
+ 10 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["0x625791A8"]
+ 11 [-]: MOVE      R2 R0        ; R2 := R0
+ 12 [-]: CALL      R1 2 1       ; R1(R2)
+ 13 [-]: RETURN    R0 1         ; return 
+
+
+; Function #21:
+;
+; Name:            
+; Defined at line: 316
 ; #Upvalues:       6
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1370,10 +1410,10 @@ code size: 11
 110 [-]: RETURN    R0 1         ; return 
 
 
-; Function #21:
+; Function #22:
 ;
 ; Name:            
-; Defined at line: 344
+; Defined at line: 351
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1425,10 +1465,10 @@ code size: 11
  44 [-]: RETURN    R0 1         ; return 
 
 
-; Function #22:
+; Function #23:
 ;
 ; Name:            
-; Defined at line: 362
+; Defined at line: 369
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1470,10 +1510,34 @@ code size: 11
  34 [-]: RETURN    R0 1         ; return 
 
 
-; Function #23:
+; Function #24:
 ;
 ; Name:            
-; Defined at line: 379
+; Defined at line: 384
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["SecObjectiveHudTracker"]
+  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  5 [-]: TEST      R1 0         ; if not R1 then PC := 8
+  6 [-]: JMP       8            ; PC := 8
+  7 [-]: RETURN    R0 1         ; return 
+  8 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  9 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["SecObjectiveHudTracker"]
+ 10 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["0x625791A8"]
+ 11 [-]: MOVE      R2 R0        ; R2 := R0
+ 12 [-]: CALL      R1 2 1       ; R1(R2)
+ 13 [-]: RETURN    R0 1         ; return 
+
+
+; Function #25:
+;
+; Name:            
+; Defined at line: 393
 ; #Upvalues:       8
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -1490,8 +1554,8 @@ code size: 11
   9 [-]: GETGLOBAL R11 K2       ; R11 := _T
  10 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
  11 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 12 [-]: TEST      R10 0        ; if not R10 then PC := 32
- 13 [-]: JMP       32           ; PC := 32
+ 12 [-]: TEST      R10 0        ; if not R10 then PC := 33
+ 13 [-]: JMP       33           ; PC := 33
  14 [-]: GETGLOBAL R10 K2       ; R10 := _T
  15 [-]: GETGLOBAL R11 K2       ; R11 := _T
  16 [-]: GETTABLE  R11 R11 K4   ; R11 := R11["0x39F152B7"]
@@ -1508,95 +1572,96 @@ code size: 11
  27 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["0xDA4AD912"]
  28 [-]: GETUPVAL  R11 U3       ; R11 := U3
  29 [-]: GETUPVAL  R12 U4       ; R12 := U4
- 30 [-]: MOVE      R13 R1       ; R13 := R1
- 31 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
- 32 [-]: GETUPVAL  R10 U5       ; R10 := U5
- 33 [-]: TEST      R4 0         ; if not R4 then PC := 36
- 34 [-]: JMP       36           ; PC := 36
- 35 [-]: GETUPVAL  R10 U6       ; R10 := U6
- 36 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
- 37 [-]: MOVE      R12 R5       ; R12 := R5
- 38 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 39 [-]: TEST      R11 1        ; if R11 then PC := 42
- 40 [-]: JMP       42           ; PC := 42
- 41 [-]: MOVE      R10 R5       ; R10 := R5
- 42 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
- 43 [-]: MOVE      R12 R3       ; R12 := R3
- 44 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 45 [-]: TEST      R11 0        ; if not R11 then PC := 48
- 46 [-]: JMP       48           ; PC := 48
- 47 [-]: GETUPVAL  R3 U7        ; R3 := U7
- 48 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
- 49 [-]: MOVE      R12 R1       ; R12 := R1
- 50 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 51 [-]: TEST      R11 0        ; if not R11 then PC := 54
- 52 [-]: JMP       54           ; PC := 54
- 53 [-]: LOADK     R1 K7        ; R1 := 0
- 54 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
- 55 [-]: MOVE      R12 R2       ; R12 := R2
- 56 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 57 [-]: TEST      R11 1        ; if R11 then PC := 61
- 58 [-]: JMP       61           ; PC := 61
- 59 [-]: EQ        0 R2 K7      ; if R2 ~= 0 then PC := 62
- 60 [-]: JMP       62           ; PC := 62
- 61 [-]: LOADK     R2 K8        ; R2 := 100
- 62 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
- 63 [-]: MOVE      R12 R7       ; R12 := R7
- 64 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 65 [-]: TEST      R11 1        ; if R11 then PC := 72
- 66 [-]: JMP       72           ; PC := 72
- 67 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 68 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
- 69 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["0x5D6DDEDF"]
- 70 [-]: MOVE      R12 R7       ; R12 := R7
- 71 [-]: CALL      R11 2 1      ; R11(R12)
- 72 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 73 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
- 74 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x6C027D23"]
- 75 [-]: MOVE      R12 R8       ; R12 := R8
- 76 [-]: MOVE      R13 R0       ; R13 := R0
- 77 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 78 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 79 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
- 80 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["0xE5C60225"]
- 81 [-]: GETGLOBAL R12 K12      ; R12 := _G
- 82 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["UIColor_DarkBlue"]
- 83 [-]: CALL      R11 2 1      ; R11(R12)
- 84 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 85 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
- 86 [-]: GETTABLE  R11 R11 K14  ; R11 := R11["0xACE7582B"]
- 87 [-]: MOVE      R12 R3       ; R12 := R3
- 88 [-]: CALL      R11 2 1      ; R11(R12)
- 89 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 90 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
- 91 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["0x37B51F78"]
- 92 [-]: MOVE      R12 R0       ; R12 := R0
- 93 [-]: LOADK     R13 K16      ; R13 := 1
- 94 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 95 [-]: GETGLOBAL R11 K2       ; R11 := _T
- 96 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
- 97 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["0xA93A5B2D"]
- 98 [-]: GETGLOBAL R12 K2       ; R12 := _T
- 99 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["ObjProgressBar"]
-100 [-]: GETTABLE  R12 R12 K18  ; R12 := R12["0xE6DC43B0"]
-101 [-]: MOVE      R13 R10      ; R13 := R10
-102 [-]: NEWTABLE  R14 0 2      ; R14 := {}
-103 [-]: SETTABLE  R14 K19 R1   ; R14["CURRENT"] := R1
-104 [-]: SETTABLE  R14 K20 R2   ; R14["TOTAL"] := R2
-105 [-]: CALL      R12 3 0      ; R12,... := R12(R13,R14)
-106 [-]: CALL      R11 0 1      ; R11(R12,...)
-107 [-]: GETGLOBAL R11 K2       ; R11 := _T
-108 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
-109 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["0x6733C272"]
-110 [-]: DIV       R12 R1 R2    ; R12 := R1 / R2
-111 [-]: CALL      R11 2 1      ; R11(R12)
-112 [-]: RETURN    R0 1         ; return 
+ 30 [-]: ADD       R12 R12 K7   ; R12 := R12 + 3
+ 31 [-]: MOVE      R13 R1       ; R13 := R1
+ 32 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+ 33 [-]: GETUPVAL  R10 U5       ; R10 := U5
+ 34 [-]: TEST      R4 0         ; if not R4 then PC := 37
+ 35 [-]: JMP       37           ; PC := 37
+ 36 [-]: GETUPVAL  R10 U6       ; R10 := U6
+ 37 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 38 [-]: MOVE      R12 R5       ; R12 := R5
+ 39 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 40 [-]: TEST      R11 1        ; if R11 then PC := 43
+ 41 [-]: JMP       43           ; PC := 43
+ 42 [-]: MOVE      R10 R5       ; R10 := R5
+ 43 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 44 [-]: MOVE      R12 R3       ; R12 := R3
+ 45 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 46 [-]: TEST      R11 0        ; if not R11 then PC := 49
+ 47 [-]: JMP       49           ; PC := 49
+ 48 [-]: GETUPVAL  R3 U7        ; R3 := U7
+ 49 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 50 [-]: MOVE      R12 R1       ; R12 := R1
+ 51 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 52 [-]: TEST      R11 0        ; if not R11 then PC := 55
+ 53 [-]: JMP       55           ; PC := 55
+ 54 [-]: LOADK     R1 K8        ; R1 := 0
+ 55 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 56 [-]: MOVE      R12 R2       ; R12 := R2
+ 57 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 58 [-]: TEST      R11 1        ; if R11 then PC := 62
+ 59 [-]: JMP       62           ; PC := 62
+ 60 [-]: EQ        0 R2 K8      ; if R2 ~= 0 then PC := 63
+ 61 [-]: JMP       63           ; PC := 63
+ 62 [-]: LOADK     R2 K9        ; R2 := 100
+ 63 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
+ 64 [-]: MOVE      R12 R7       ; R12 := R7
+ 65 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+ 66 [-]: TEST      R11 1        ; if R11 then PC := 73
+ 67 [-]: JMP       73           ; PC := 73
+ 68 [-]: GETGLOBAL R11 K2       ; R11 := _T
+ 69 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
+ 70 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["0x5D6DDEDF"]
+ 71 [-]: MOVE      R12 R7       ; R12 := R7
+ 72 [-]: CALL      R11 2 1      ; R11(R12)
+ 73 [-]: GETGLOBAL R11 K2       ; R11 := _T
+ 74 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
+ 75 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["0x6C027D23"]
+ 76 [-]: MOVE      R12 R8       ; R12 := R8
+ 77 [-]: MOVE      R13 R0       ; R13 := R0
+ 78 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 79 [-]: GETGLOBAL R11 K2       ; R11 := _T
+ 80 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
+ 81 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["0xE5C60225"]
+ 82 [-]: GETGLOBAL R12 K13      ; R12 := _G
+ 83 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["UIColor_DarkBlue"]
+ 84 [-]: CALL      R11 2 1      ; R11(R12)
+ 85 [-]: GETGLOBAL R11 K2       ; R11 := _T
+ 86 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
+ 87 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["0xACE7582B"]
+ 88 [-]: MOVE      R12 R3       ; R12 := R3
+ 89 [-]: CALL      R11 2 1      ; R11(R12)
+ 90 [-]: GETGLOBAL R11 K2       ; R11 := _T
+ 91 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
+ 92 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["0x37B51F78"]
+ 93 [-]: MOVE      R12 R0       ; R12 := R0
+ 94 [-]: LOADK     R13 K17      ; R13 := 1
+ 95 [-]: CALL      R11 3 1      ; R11(R12,R13)
+ 96 [-]: GETGLOBAL R11 K2       ; R11 := _T
+ 97 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
+ 98 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["0xA93A5B2D"]
+ 99 [-]: GETGLOBAL R12 K2       ; R12 := _T
+100 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["ObjProgressBar"]
+101 [-]: GETTABLE  R12 R12 K19  ; R12 := R12["0xE6DC43B0"]
+102 [-]: MOVE      R13 R10      ; R13 := R10
+103 [-]: NEWTABLE  R14 0 2      ; R14 := {}
+104 [-]: SETTABLE  R14 K20 R1   ; R14["CURRENT"] := R1
+105 [-]: SETTABLE  R14 K21 R2   ; R14["TOTAL"] := R2
+106 [-]: CALL      R12 3 0      ; R12,... := R12(R13,R14)
+107 [-]: CALL      R11 0 1      ; R11(R12,...)
+108 [-]: GETGLOBAL R11 K2       ; R11 := _T
+109 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["ObjProgressBar"]
+110 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["0x6733C272"]
+111 [-]: DIV       R12 R1 R2    ; R12 := R1 / R2
+112 [-]: CALL      R11 2 1      ; R11(R12)
+113 [-]: RETURN    R0 1         ; return 
 
 
-; Function #24:
+; Function #26:
 ;
 ; Name:            
-; Defined at line: 419
+; Defined at line: 433
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1649,10 +1714,10 @@ code size: 11
  45 [-]: RETURN    R0 1         ; return 
 
 
-; Function #25:
+; Function #27:
 ;
 ; Name:            
-; Defined at line: 434
+; Defined at line: 448
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1694,10 +1759,10 @@ code size: 11
  34 [-]: RETURN    R0 1         ; return 
 
 
-; Function #26:
+; Function #28:
 ;
 ; Name:            
-; Defined at line: 445
+; Defined at line: 459
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1738,10 +1803,10 @@ code size: 11
  33 [-]: RETURN    R0 1         ; return 
 
 
-; Function #27:
+; Function #29:
 ;
 ; Name:            
-; Defined at line: 456
+; Defined at line: 470
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1763,10 +1828,10 @@ code size: 11
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #28:
+; Function #30:
 ;
 ; Name:            
-; Defined at line: 463
+; Defined at line: 477
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1780,10 +1845,34 @@ code size: 11
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #29:
+; Function #31:
 ;
 ; Name:            
-; Defined at line: 470
+; Defined at line: 482
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["ObjProgressBar"]
+  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  5 [-]: TEST      R1 0         ; if not R1 then PC := 8
+  6 [-]: JMP       8            ; PC := 8
+  7 [-]: RETURN    R0 1         ; return 
+  8 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  9 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ObjProgressBar"]
+ 10 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["0x625791A8"]
+ 11 [-]: MOVE      R2 R0        ; R2 := R0
+ 12 [-]: CALL      R1 2 1       ; R1(R2)
+ 13 [-]: RETURN    R0 1         ; return 
+
+
+; Function #32:
+;
+; Name:            
+; Defined at line: 491
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1846,10 +1935,10 @@ code size: 11
  55 [-]: RETURN    R0 1         ; return 
 
 
-; Function #30:
+; Function #33:
 ;
 ; Name:            
-; Defined at line: 488
+; Defined at line: 509
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1865,10 +1954,10 @@ code size: 11
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #31:
+; Function #34:
 ;
 ; Name:            
-; Defined at line: 501
+; Defined at line: 522
 ; #Upvalues:       6
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -1977,7 +2066,7 @@ code size: 11
 101 [-]: MOVE      R13 R1       ; R13 := R1
 102 [-]: MOVE      R14 R2       ; R14 := R2
 103 [-]: MOVE      R15 R3       ; R15 := R3
-104 [-]: CLOSURE   R16 0        ; R16 := closure(Function #31.1)
+104 [-]: CLOSURE   R16 0        ; R16 := closure(Function #34.1)
 105 [-]: MOVE      R0 R2        ; R0 := R2
 106 [-]: CALL      R11 6 1      ; R11(R12,R13,R14,R15,R16)
 107 [-]: GETGLOBAL R11 K2       ; R11 := _T
@@ -1989,10 +2078,10 @@ code size: 11
 113 [-]: RETURN    R0 1         ; return 
 
 
-; Function #31.1:
+; Function #34.1:
 ;
 ; Name:            
-; Defined at line: 534
+; Defined at line: 555
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2006,10 +2095,10 @@ code size: 11
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #32:
+; Function #35:
 ;
 ; Name:            
-; Defined at line: 542
+; Defined at line: 563
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2034,10 +2123,10 @@ code size: 11
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #33:
+; Function #36:
 ;
 ; Name:            
-; Defined at line: 551
+; Defined at line: 572
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2051,10 +2140,10 @@ code size: 11
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #34:
+; Function #37:
 ;
 ; Name:            
-; Defined at line: 556
+; Defined at line: 577
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2077,10 +2166,10 @@ code size: 11
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #35:
+; Function #38:
 ;
 ; Name:            
-; Defined at line: 563
+; Defined at line: 584
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2102,10 +2191,34 @@ code size: 11
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #36:
+; Function #39:
 ;
 ; Name:            
-; Defined at line: 572
+; Defined at line: 591
+; #Upvalues:       0
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["ObjectiveTimer"]
+  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  5 [-]: TEST      R1 0         ; if not R1 then PC := 8
+  6 [-]: JMP       8            ; PC := 8
+  7 [-]: RETURN    R0 1         ; return 
+  8 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  9 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["ObjectiveTimer"]
+ 10 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["0x625791A8"]
+ 11 [-]: MOVE      R2 R0        ; R2 := R0
+ 12 [-]: CALL      R1 2 1       ; R1(R2)
+ 13 [-]: RETURN    R0 1         ; return 
+
+
+; Function #40:
+;
+; Name:            
+; Defined at line: 600
 ; #Upvalues:       5
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2202,10 +2315,10 @@ code size: 11
  89 [-]: RETURN    R0 1         ; return 
 
 
-; Function #37:
+; Function #41:
 ;
 ; Name:            
-; Defined at line: 597
+; Defined at line: 625
 ; #Upvalues:       7
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2319,10 +2432,10 @@ code size: 11
 106 [-]: RETURN    R0 1         ; return 
 
 
-; Function #38:
+; Function #42:
 ;
 ; Name:            
-; Defined at line: 628
+; Defined at line: 656
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2345,10 +2458,10 @@ code size: 11
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #39:
+; Function #43:
 ;
 ; Name:            
-; Defined at line: 638
+; Defined at line: 666
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2393,10 +2506,10 @@ code size: 11
  37 [-]: RETURN    R0 1         ; return 
 
 
-; Function #40:
+; Function #44:
 ;
 ; Name:            
-; Defined at line: 651
+; Defined at line: 679
 ; #Upvalues:       6
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2464,10 +2577,10 @@ code size: 11
  60 [-]: RETURN    R0 1         ; return 
 
 
-; Function #41:
+; Function #45:
 ;
 ; Name:            
-; Defined at line: 667
+; Defined at line: 695
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2492,10 +2605,10 @@ code size: 11
  17 [-]: RETURN    R0 1         ; return 
 
 
-; Function #42:
+; Function #46:
 ;
 ; Name:            
-; Defined at line: 676
+; Defined at line: 704
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2511,10 +2624,10 @@ code size: 11
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #43:
+; Function #47:
 ;
 ; Name:            
-; Defined at line: 681
+; Defined at line: 709
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2530,10 +2643,10 @@ code size: 11
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #44:
+; Function #48:
 ;
 ; Name:            
-; Defined at line: 688
+; Defined at line: 716
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2562,10 +2675,10 @@ code size: 11
  21 [-]: RETURN    R0 1         ; return 
 
 
-; Function #45:
+; Function #49:
 ;
 ; Name:            
-; Defined at line: 698
+; Defined at line: 726
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2628,10 +2741,10 @@ code size: 11
  55 [-]: RETURN    R0 1         ; return 
 
 
-; Function #46:
+; Function #50:
 ;
 ; Name:            
-; Defined at line: 712
+; Defined at line: 740
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2694,10 +2807,10 @@ code size: 11
  55 [-]: RETURN    R0 1         ; return 
 
 
-; Function #47:
+; Function #51:
 ;
 ; Name:            
-; Defined at line: 731
+; Defined at line: 759
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2760,10 +2873,10 @@ code size: 11
  55 [-]: RETURN    R0 1         ; return 
 
 
-; Function #48:
+; Function #52:
 ;
 ; Name:            
-; Defined at line: 750
+; Defined at line: 778
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2802,10 +2915,10 @@ code size: 11
  31 [-]: RETURN    R0 1         ; return 
 
 
-; Function #49:
+; Function #53:
 ;
 ; Name:            
-; Defined at line: 769
+; Defined at line: 797
 ; #Upvalues:       4
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2866,10 +2979,10 @@ code size: 11
  53 [-]: RETURN    R0 1         ; return 
 
 
-; Function #50:
+; Function #54:
 ;
 ; Name:            
-; Defined at line: 786
+; Defined at line: 814
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2885,10 +2998,10 @@ code size: 11
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #51:
+; Function #55:
 ;
 ; Name:            
-; Defined at line: 793
+; Defined at line: 821
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2908,10 +3021,10 @@ code size: 11
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #52:
+; Function #56:
 ;
 ; Name:            
-; Defined at line: 799
+; Defined at line: 827
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2923,10 +3036,10 @@ code size: 11
   4 [-]: RETURN    R0 1         ; return 
 
 
-; Function #53:
+; Function #57:
 ;
 ; Name:            
-; Defined at line: 803
+; Defined at line: 831
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2948,10 +3061,10 @@ code size: 11
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #54:
+; Function #58:
 ;
 ; Name:            
-; Defined at line: 813
+; Defined at line: 841
 ; #Upvalues:       1
 ; #Parameters:     7
 ; Is_vararg:       0

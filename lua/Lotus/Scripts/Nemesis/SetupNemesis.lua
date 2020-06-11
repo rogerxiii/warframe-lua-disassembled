@@ -545,23 +545,23 @@ code size: 20
   9 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x3B1B11B9"]
  10 [-]: GETGLOBAL R3 K3        ; R3 := Game
  11 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["WEAPON_DAMAGE_AMOUNT"]
- 12 [-]: GETGLOBAL R4 K3        ; R4 := Game
- 13 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["STACKING_MULTIPLY"]
- 14 [-]: LOADK     R5 K6        ; R5 := 3
+ 12 [-]: GETGLOBAL R4 K5        ; R4 := Engine
+ 13 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["STACKING_MULTIPLY"]
+ 14 [-]: LOADK     R5 K7        ; R5 := 3
  15 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
- 16 [-]: SELF      R1 R0 K7     ; R2 := R0; R1 := R0["0xD610586B"]
- 17 [-]: LOADK     R3 K8        ; R3 := 1
+ 16 [-]: SELF      R1 R0 K8     ; R2 := R0; R1 := R0["0xD610586B"]
+ 17 [-]: LOADK     R3 K9        ; R3 := 1
  18 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 19 [-]: SELF      R1 R0 K9     ; R2 := R0; R1 := R0["0xAB436EF2"]
+ 19 [-]: SELF      R1 R0 K10    ; R2 := R0; R1 := R0["0xAB436EF2"]
  20 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 21 [-]: GETGLOBAL R4 K10       ; R4 := EMPTY_SYMBOL
+ 21 [-]: GETGLOBAL R4 K11       ; R4 := EMPTY_SYMBOL
  22 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 23 [-]: SELF      R1 R0 K11    ; R2 := R0; R1 := R0["0x7A97EAF5"]
+ 23 [-]: SELF      R1 R0 K12    ; R2 := R0; R1 := R0["0x7A97EAF5"]
  24 [-]: GETUPVAL  R3 U1        ; R3 := U1
  25 [-]: MOVE      R4 R0        ; R4 := R0
- 26 [-]: GETGLOBAL R5 K12       ; R5 := Engine
+ 26 [-]: GETGLOBAL R5 K5        ; R5 := Engine
  27 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["ATMM_ANIMATION_DRIVEN"]
- 28 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 28 [-]: GETGLOBAL R6 K5        ; R6 := Engine
  29 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["PRT_ONCE"]
  30 [-]: MOVE      R7 R1        ; R7 := R1
  31 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
@@ -572,7 +572,7 @@ code size: 20
  36 [-]: GETGLOBAL R1 K17       ; R1 := 0x201191EA
  37 [-]: LOADK     R2 K16       ; R2 := 0
  38 [-]: CALL      R1 2 1       ; R1(R2)
- 39 [-]: SELF      R1 R0 K7     ; R2 := R0; R1 := R0["0xD610586B"]
+ 39 [-]: SELF      R1 R0 K8     ; R2 := R0; R1 := R0["0xD610586B"]
  40 [-]: SELF      R3 R0 K15    ; R4 := R0; R3 := R0["0xBDF6AF22"]
  41 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  42 [-]: GETGLOBAL R4 K18       ; R4 := 0x6306558E
@@ -1378,7 +1378,7 @@ code size: 20
 615 [-]: SELF      R50 R18 K106 ; R51 := R18; R50 := R18["0x3B1B11B9"]
 616 [-]: GETGLOBAL R52 K118     ; R52 := Game
 617 [-]: GETTABLE  R52 R52 K119 ; R52 := R52["AVATAR_DAMAGE_RESISTANCE"]
-618 [-]: GETGLOBAL R53 K118     ; R53 := Game
+618 [-]: GETGLOBAL R53 K114     ; R53 := Engine
 619 [-]: GETTABLE  R53 R53 K120 ; R53 := R53["ADD"]
 620 [-]: LOADK     R54 K121     ; R54 := -0.20000000298023
 621 [-]: LOADNIL   R55 R56      ; R55 := R56 := nil
@@ -1394,7 +1394,7 @@ code size: 20
 631 [-]: SELF      R56 R18 K106 ; R57 := R18; R56 := R18["0x3B1B11B9"]
 632 [-]: GETGLOBAL R58 K118     ; R58 := Game
 633 [-]: GETTABLE  R58 R58 K119 ; R58 := R58["AVATAR_DAMAGE_RESISTANCE"]
-634 [-]: GETGLOBAL R59 K118     ; R59 := Game
+634 [-]: GETGLOBAL R59 K114     ; R59 := Engine
 635 [-]: GETTABLE  R59 R59 K120 ; R59 := R59["ADD"]
 636 [-]: LOADK     R60 K123     ; R60 := 0.5
 637 [-]: LOADNIL   R61 R62      ; R61 := R62 := nil
@@ -1410,7 +1410,7 @@ code size: 20
 647 [-]: SELF      R62 R18 K106 ; R63 := R18; R62 := R18["0x3B1B11B9"]
 648 [-]: GETGLOBAL R64 K118     ; R64 := Game
 649 [-]: GETTABLE  R64 R64 K119 ; R64 := R64["AVATAR_DAMAGE_RESISTANCE"]
-650 [-]: GETGLOBAL R65 K118     ; R65 := Game
+650 [-]: GETGLOBAL R65 K114     ; R65 := Engine
 651 [-]: GETTABLE  R65 R65 K120 ; R65 := R65["ADD"]
 652 [-]: LOADK     R66 K11      ; R66 := 1
 653 [-]: LOADNIL   R67 R68      ; R67 := R68 := nil

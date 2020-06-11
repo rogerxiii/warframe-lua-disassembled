@@ -2402,14 +2402,14 @@ code size: 19
 145 [-]: SELF      R15 R2 K43   ; R16 := R2; R15 := R2["0x3B1B11B9"]
 146 [-]: GETGLOBAL R17 K44      ; R17 := Game
 147 [-]: GETTABLE  R17 R17 K45  ; R17 := R17["AVATAR_MOVEMENT_SPEED"]
-148 [-]: GETGLOBAL R18 K44      ; R18 := Game
+148 [-]: GETGLOBAL R18 K41      ; R18 := Engine
 149 [-]: GETTABLE  R18 R18 K46  ; R18 := R18["MULTIPLY"]
 150 [-]: GETUPVAL  R19 U5       ; R19 := U5
 151 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 152 [-]: SELF      R15 R2 K43   ; R16 := R2; R15 := R2["0x3B1B11B9"]
 153 [-]: GETGLOBAL R17 K44      ; R17 := Game
 154 [-]: GETTABLE  R17 R17 K47  ; R17 := R17["AVATAR_PARKOUR_BOOST"]
-155 [-]: GETGLOBAL R18 K44      ; R18 := Game
+155 [-]: GETGLOBAL R18 K41      ; R18 := Engine
 156 [-]: GETTABLE  R18 R18 K46  ; R18 := R18["MULTIPLY"]
 157 [-]: GETUPVAL  R19 U5       ; R19 := U5
 158 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
@@ -2418,7 +2418,7 @@ code size: 19
 161 [-]: SELF      R15 R2 K43   ; R16 := R2; R15 := R2["0x3B1B11B9"]
 162 [-]: GETGLOBAL R17 K44      ; R17 := Game
 163 [-]: GETTABLE  R17 R17 K48  ; R17 := R17["AVATAR_POWER_RATE"]
-164 [-]: GETGLOBAL R18 K44      ; R18 := Game
+164 [-]: GETGLOBAL R18 K41      ; R18 := Engine
 165 [-]: GETTABLE  R18 R18 K49  ; R18 := R18["ADD"]
 166 [-]: UNM       R19 R13      ; R19 := - R13
 167 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
@@ -2650,14 +2650,14 @@ code size: 19
 393 [-]: SELF      R29 R2 K94   ; R30 := R2; R29 := R2["0xF21555A7"]
 394 [-]: GETGLOBAL R31 K44      ; R31 := Game
 395 [-]: GETTABLE  R31 R31 K45  ; R31 := R31["AVATAR_MOVEMENT_SPEED"]
-396 [-]: GETGLOBAL R32 K44      ; R32 := Game
+396 [-]: GETGLOBAL R32 K41      ; R32 := Engine
 397 [-]: GETTABLE  R32 R32 K46  ; R32 := R32["MULTIPLY"]
 398 [-]: GETUPVAL  R33 U5       ; R33 := U5
 399 [-]: CALL      R29 5 1      ; R29(R30,R31,R32,R33)
 400 [-]: SELF      R29 R2 K94   ; R30 := R2; R29 := R2["0xF21555A7"]
 401 [-]: GETGLOBAL R31 K44      ; R31 := Game
 402 [-]: GETTABLE  R31 R31 K47  ; R31 := R31["AVATAR_PARKOUR_BOOST"]
-403 [-]: GETGLOBAL R32 K44      ; R32 := Game
+403 [-]: GETGLOBAL R32 K41      ; R32 := Engine
 404 [-]: GETTABLE  R32 R32 K46  ; R32 := R32["MULTIPLY"]
 405 [-]: GETUPVAL  R33 U5       ; R33 := U5
 406 [-]: CALL      R29 5 1      ; R29(R30,R31,R32,R33)
@@ -2666,7 +2666,7 @@ code size: 19
 409 [-]: SELF      R29 R2 K94   ; R30 := R2; R29 := R2["0xF21555A7"]
 410 [-]: GETGLOBAL R31 K44      ; R31 := Game
 411 [-]: GETTABLE  R31 R31 K48  ; R31 := R31["AVATAR_POWER_RATE"]
-412 [-]: GETGLOBAL R32 K44      ; R32 := Game
+412 [-]: GETGLOBAL R32 K41      ; R32 := Engine
 413 [-]: GETTABLE  R32 R32 K49  ; R32 := R32["ADD"]
 414 [-]: UNM       R33 R13      ; R33 := - R13
 415 [-]: CALL      R29 5 1      ; R29(R30,R31,R32,R33)

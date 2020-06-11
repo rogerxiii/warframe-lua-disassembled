@@ -460,7 +460,7 @@ code size: 13
 390 [-]: SELF      R27 R27 K84  ; R28 := R27; R27 := R27["0x3B1B11B9"]
 391 [-]: GETGLOBAL R29 K85      ; R29 := Game
 392 [-]: GETTABLE  R29 R29 K86  ; R29 := R29["GAMEPLAY_POWER_COOLDOWN"]
-393 [-]: GETGLOBAL R30 K85      ; R30 := Game
+393 [-]: GETGLOBAL R30 K6       ; R30 := Engine
 394 [-]: GETTABLE  R30 R30 K87  ; R30 := R30["MULTIPLY"]
 395 [-]: LOADK     R31 K88      ; R31 := 0.5
 396 [-]: CALL      R27 5 1      ; R27(R28,R29,R30,R31)
@@ -629,7 +629,7 @@ code size: 13
 559 [-]: SELF      R31 R31 K97  ; R32 := R31; R31 := R31["0xF21555A7"]
 560 [-]: GETGLOBAL R33 K85      ; R33 := Game
 561 [-]: GETTABLE  R33 R33 K86  ; R33 := R33["GAMEPLAY_POWER_COOLDOWN"]
-562 [-]: GETGLOBAL R34 K85      ; R34 := Game
+562 [-]: GETGLOBAL R34 K6       ; R34 := Engine
 563 [-]: GETTABLE  R34 R34 K87  ; R34 := R34["MULTIPLY"]
 564 [-]: LOADK     R35 K88      ; R35 := 0.5
 565 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)

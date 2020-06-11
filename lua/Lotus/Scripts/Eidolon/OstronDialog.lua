@@ -1,5 +1,6 @@
-code size: 210
-code size: 38
+code size: 215
+code size: 62
+code size: 9
 code size: 90
 code size: 53
 code size: 56
@@ -222,130 +223,179 @@ code size: 131
 139 [-]: CALL      R48 2 2      ; R48 := R48(R49)
 140 [-]: LOADK     R49 K51      ; R49 := -3600
 141 [-]: CLOSURE   R50 0        ; R50 := closure(Function #1)
-142 [-]: CLOSURE   R51 1        ; R51 := closure(Function #2)
-143 [-]: MOVE      R0 R2        ; R0 := R2
-144 [-]: MOVE      R0 R0        ; R0 := R0
-145 [-]: CLOSURE   R52 2        ; R52 := closure(Function #3)
-146 [-]: CLOSURE   R53 3        ; R53 := closure(Function #4)
-147 [-]: MOVE      R0 R49       ; R0 := R49
-148 [-]: MOVE      R0 R0        ; R0 := R0
-149 [-]: CLOSURE   R54 4        ; R54 := closure(Function #5)
-150 [-]: CLOSURE   R55 5        ; R55 := closure(Function #6)
-151 [-]: MOVE      R0 R1        ; R0 := R1
-152 [-]: MOVE      R0 R51       ; R0 := R51
-153 [-]: MOVE      R0 R3        ; R0 := R3
-154 [-]: MOVE      R0 R4        ; R0 := R4
-155 [-]: MOVE      R0 R10       ; R0 := R10
-156 [-]: MOVE      R0 R52       ; R0 := R52
-157 [-]: MOVE      R0 R37       ; R0 := R37
-158 [-]: MOVE      R0 R5        ; R0 := R5
-159 [-]: MOVE      R0 R16       ; R0 := R16
-160 [-]: MOVE      R0 R7        ; R0 := R7
-161 [-]: MOVE      R0 R38       ; R0 := R38
-162 [-]: MOVE      R0 R54       ; R0 := R54
-163 [-]: MOVE      R0 R47       ; R0 := R47
-164 [-]: MOVE      R0 R48       ; R0 := R48
-165 [-]: MOVE      R0 R27       ; R0 := R27
-166 [-]: MOVE      R0 R39       ; R0 := R39
-167 [-]: MOVE      R0 R8        ; R0 := R8
-168 [-]: MOVE      R0 R50       ; R0 := R50
-169 [-]: MOVE      R0 R6        ; R0 := R6
-170 [-]: MOVE      R0 R43       ; R0 := R43
-171 [-]: MOVE      R0 R53       ; R0 := R53
-172 [-]: MOVE      R0 R42       ; R0 := R42
-173 [-]: MOVE      R0 R41       ; R0 := R41
-174 [-]: MOVE      R0 R35       ; R0 := R35
-175 [-]: MOVE      R0 R34       ; R0 := R34
-176 [-]: MOVE      R0 R32       ; R0 := R32
-177 [-]: MOVE      R0 R33       ; R0 := R33
-178 [-]: MOVE      R0 R36       ; R0 := R36
-179 [-]: MOVE      R0 R9        ; R0 := R9
-180 [-]: MOVE      R0 R11       ; R0 := R11
-181 [-]: MOVE      R0 R12       ; R0 := R12
-182 [-]: MOVE      R0 R13       ; R0 := R13
-183 [-]: MOVE      R0 R19       ; R0 := R19
-184 [-]: MOVE      R0 R14       ; R0 := R14
-185 [-]: MOVE      R0 R18       ; R0 := R18
-186 [-]: MOVE      R0 R20       ; R0 := R20
-187 [-]: MOVE      R0 R40       ; R0 := R40
-188 [-]: MOVE      R0 R21       ; R0 := R21
-189 [-]: MOVE      R0 R22       ; R0 := R22
-190 [-]: MOVE      R0 R15       ; R0 := R15
-191 [-]: MOVE      R0 R17       ; R0 := R17
-192 [-]: MOVE      R0 R23       ; R0 := R23
-193 [-]: MOVE      R0 R24       ; R0 := R24
-194 [-]: MOVE      R0 R25       ; R0 := R25
-195 [-]: MOVE      R0 R26       ; R0 := R26
-196 [-]: MOVE      R0 R29       ; R0 := R29
-197 [-]: MOVE      R0 R31       ; R0 := R31
-198 [-]: MOVE      R0 R44       ; R0 := R44
-199 [-]: MOVE      R0 R49       ; R0 := R49
-200 [-]: MOVE      R0 R45       ; R0 := R45
-201 [-]: MOVE      R0 R46       ; R0 := R46
-202 [-]: SETGLOBAL R55 K52      ; InitializeDialogOptions := R55
-203 [-]: SETGLOBAL R55 K53      ; 0x437FAE9 := R55
-204 [-]: CLOSURE   R55 6        ; R55 := closure(Function #7)
-205 [-]: SETGLOBAL R55 K54      ; OnOperatorUpgraded := R55
-206 [-]: SETGLOBAL R55 K55      ; 0xACCB6F82 := R55
-207 [-]: CLOSURE   R55 7        ; R55 := closure(Function #8)
-208 [-]: SETGLOBAL R55 K56      ; UpgradeOperatorCinematic := R55
-209 [-]: SETGLOBAL R55 K57      ; 0xD546FBD7 := R55
-210 [-]: RETURN    R0 1         ; return 
+142 [-]: MOVE      R0 R1        ; R0 := R1
+143 [-]: CLOSURE   R51 1        ; R51 := closure(Function #2)
+144 [-]: MOVE      R0 R50       ; R0 := R50
+145 [-]: SETGLOBAL R51 K52      ; OpenDogTagScreenDirect := R51
+146 [-]: SETGLOBAL R51 K53      ; 0x9ADFCD3A := R51
+147 [-]: CLOSURE   R51 2        ; R51 := closure(Function #3)
+148 [-]: MOVE      R0 R2        ; R0 := R2
+149 [-]: MOVE      R0 R0        ; R0 := R0
+150 [-]: CLOSURE   R52 3        ; R52 := closure(Function #4)
+151 [-]: CLOSURE   R53 4        ; R53 := closure(Function #5)
+152 [-]: MOVE      R0 R49       ; R0 := R49
+153 [-]: MOVE      R0 R0        ; R0 := R0
+154 [-]: CLOSURE   R54 5        ; R54 := closure(Function #6)
+155 [-]: CLOSURE   R55 6        ; R55 := closure(Function #7)
+156 [-]: MOVE      R0 R1        ; R0 := R1
+157 [-]: MOVE      R0 R51       ; R0 := R51
+158 [-]: MOVE      R0 R3        ; R0 := R3
+159 [-]: MOVE      R0 R4        ; R0 := R4
+160 [-]: MOVE      R0 R10       ; R0 := R10
+161 [-]: MOVE      R0 R52       ; R0 := R52
+162 [-]: MOVE      R0 R37       ; R0 := R37
+163 [-]: MOVE      R0 R5        ; R0 := R5
+164 [-]: MOVE      R0 R16       ; R0 := R16
+165 [-]: MOVE      R0 R7        ; R0 := R7
+166 [-]: MOVE      R0 R38       ; R0 := R38
+167 [-]: MOVE      R0 R54       ; R0 := R54
+168 [-]: MOVE      R0 R47       ; R0 := R47
+169 [-]: MOVE      R0 R48       ; R0 := R48
+170 [-]: MOVE      R0 R27       ; R0 := R27
+171 [-]: MOVE      R0 R39       ; R0 := R39
+172 [-]: MOVE      R0 R8        ; R0 := R8
+173 [-]: MOVE      R0 R50       ; R0 := R50
+174 [-]: MOVE      R0 R6        ; R0 := R6
+175 [-]: MOVE      R0 R43       ; R0 := R43
+176 [-]: MOVE      R0 R53       ; R0 := R53
+177 [-]: MOVE      R0 R42       ; R0 := R42
+178 [-]: MOVE      R0 R41       ; R0 := R41
+179 [-]: MOVE      R0 R35       ; R0 := R35
+180 [-]: MOVE      R0 R34       ; R0 := R34
+181 [-]: MOVE      R0 R32       ; R0 := R32
+182 [-]: MOVE      R0 R33       ; R0 := R33
+183 [-]: MOVE      R0 R36       ; R0 := R36
+184 [-]: MOVE      R0 R9        ; R0 := R9
+185 [-]: MOVE      R0 R11       ; R0 := R11
+186 [-]: MOVE      R0 R12       ; R0 := R12
+187 [-]: MOVE      R0 R13       ; R0 := R13
+188 [-]: MOVE      R0 R19       ; R0 := R19
+189 [-]: MOVE      R0 R14       ; R0 := R14
+190 [-]: MOVE      R0 R18       ; R0 := R18
+191 [-]: MOVE      R0 R20       ; R0 := R20
+192 [-]: MOVE      R0 R40       ; R0 := R40
+193 [-]: MOVE      R0 R21       ; R0 := R21
+194 [-]: MOVE      R0 R22       ; R0 := R22
+195 [-]: MOVE      R0 R15       ; R0 := R15
+196 [-]: MOVE      R0 R17       ; R0 := R17
+197 [-]: MOVE      R0 R23       ; R0 := R23
+198 [-]: MOVE      R0 R24       ; R0 := R24
+199 [-]: MOVE      R0 R25       ; R0 := R25
+200 [-]: MOVE      R0 R26       ; R0 := R26
+201 [-]: MOVE      R0 R29       ; R0 := R29
+202 [-]: MOVE      R0 R31       ; R0 := R31
+203 [-]: MOVE      R0 R44       ; R0 := R44
+204 [-]: MOVE      R0 R49       ; R0 := R49
+205 [-]: MOVE      R0 R45       ; R0 := R45
+206 [-]: MOVE      R0 R46       ; R0 := R46
+207 [-]: SETGLOBAL R55 K54      ; InitializeDialogOptions := R55
+208 [-]: SETGLOBAL R55 K55      ; 0x437FAE9 := R55
+209 [-]: CLOSURE   R55 7        ; R55 := closure(Function #8)
+210 [-]: SETGLOBAL R55 K56      ; OnOperatorUpgraded := R55
+211 [-]: SETGLOBAL R55 K57      ; 0xACCB6F82 := R55
+212 [-]: CLOSURE   R55 8        ; R55 := closure(Function #9)
+213 [-]: SETGLOBAL R55 K58      ; UpgradeOperatorCinematic := R55
+214 [-]: SETGLOBAL R55 K59      ; 0xD546FBD7 := R55
+215 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 70
-; #Upvalues:       0
+; Defined at line: 71
+; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  10
 
-  1 [-]: GETGLOBAL R3 K0        ; R3 := gFlashMgr
-  2 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0x24FF386"]
-  3 [-]: GETGLOBAL R5 K2        ; R5 := dogTagMovie
-  4 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-  5 [-]: GETGLOBAL R4 K3        ; R4 := _T
-  6 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["0x54402072"]
-  7 [-]: MOVE      R5 R0        ; R5 := R0
-  8 [-]: LOADNIL   R6 R7        ; R6 := R7 := nil
-  9 [-]: MOVE      R8 R2        ; R8 := R2
- 10 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 11 [-]: GETTABLE  R4 R1 K5     ; R4 := R1["mTransmissionSet"]
- 12 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0xD168273F"]
- 13 [-]: GETGLOBAL R6 K7        ; R6 := 0xEC274B1A
- 14 [-]: LOADK     R7 K8        ; R7 := "TradeInEnter"
- 15 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 16 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 17 [-]: GETGLOBAL R5 K9        ; R5 := 0x400E7765
- 18 [-]: MOVE      R6 R4        ; R6 := R4
- 19 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 20 [-]: TEST      R5 1         ; if R5 then PC := 28
- 21 [-]: JMP       28           ; PC := 28
- 22 [-]: SELF      R5 R1 K10    ; R6 := R1; R5 := R1["0xA59699C7"]
- 23 [-]: MOVE      R7 R4        ; R7 := R4
- 24 [-]: LOADNIL   R8 R8        ; R8 := nil
- 25 [-]: MOVE      R9 R0        ; R9 := R0
- 26 [-]: MOVE      R10 R1       ; R10 := R1
- 27 [-]: CALL      R5 6 1       ; R5(R6,R7,R8,R9,R10)
- 28 [-]: GETGLOBAL R5 K9        ; R5 := 0x400E7765
- 29 [-]: MOVE      R6 R3        ; R6 := R3
- 30 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 31 [-]: TEST      R5 1         ; if R5 then PC := 37
- 32 [-]: JMP       37           ; PC := 37
- 33 [-]: GETGLOBAL R5 K11       ; R5 := 0x201191EA
- 34 [-]: LOADK     R6 K12       ; R6 := 0
- 35 [-]: CALL      R5 2 1       ; R5(R6)
- 36 [-]: JMP       28           ; PC := 28
- 37 [-]: SETTABLE  R1 K13 K14   ; R1["mReset"] := "0x1"
- 38 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
+  2 [-]: MOVE      R4 R1        ; R4 := R1
+  3 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  4 [-]: TEST      R3 1         ; if R3 then PC := 23
+  5 [-]: JMP       23           ; PC := 23
+  6 [-]: GETTABLE  R3 R1 K1     ; R3 := R1["mTransmissionSet"]
+  7 [-]: SELF      R3 R3 K2     ; R4 := R3; R3 := R3["0xD168273F"]
+  8 [-]: GETGLOBAL R5 K3        ; R5 := 0xEC274B1A
+  9 [-]: LOADK     R6 K4        ; R6 := "TradeInEnter"
+ 10 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
+ 11 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 12 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
+ 13 [-]: MOVE      R5 R3        ; R5 := R3
+ 14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 15 [-]: TEST      R4 1         ; if R4 then PC := 23
+ 16 [-]: JMP       23           ; PC := 23
+ 17 [-]: SELF      R4 R1 K5     ; R5 := R1; R4 := R1["0xA59699C7"]
+ 18 [-]: MOVE      R6 R3        ; R6 := R3
+ 19 [-]: LOADNIL   R7 R7        ; R7 := nil
+ 20 [-]: MOVE      R8 R0        ; R8 := R0
+ 21 [-]: MOVE      R9 R1        ; R9 := R1
+ 22 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+ 23 [-]: NEWTABLE  R4 0 2       ; R4 := {}
+ 24 [-]: SETTABLE  R4 K6 R0     ; R4["Syndicate"] := R0
+ 25 [-]: SETTABLE  R4 K7 R2     ; R4["VendorTag"] := R2
+ 26 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 27 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["0x171EF3D3"]
+ 28 [-]: MOVE      R6 R0        ; R6 := R0
+ 29 [-]: CALL      R5 2 6       ; R5,R6,R7,R8,R9 := R5(R6)
+ 30 [-]: SETTABLE  R4 K12 R9    ; R4["MaxRepInc"] := R9
+ 31 [-]: SETTABLE  R4 K11 R8    ; R4["HasRepForSac"] := R8
+ 32 [-]: SETTABLE  R4 K10 R7    ; R4["RepReq"] := R7
+ 33 [-]: SETTABLE  R4 K9 R6     ; R4["Reputation"] := R6
+ 34 [-]: SETTABLE  R4 K8 R5     ; R4["Level"] := R5
+ 35 [-]: GETGLOBAL R5 K14       ; R5 := _T
+ 36 [-]: SETTABLE  R5 K15 R4    ; R5["SyndicateInvInfo"] := R4
+ 37 [-]: GETGLOBAL R5 K14       ; R5 := _T
+ 38 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["0x4AFC37AA"]
+ 39 [-]: LOADK     R6 K17       ; R6 := "Inventory"
+ 40 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 41 [-]: GETGLOBAL R6 K18       ; R6 := gFlashMgr
+ 42 [-]: SELF      R6 R6 K19    ; R7 := R6; R6 := R6["0x7548923C"]
+ 43 [-]: MOVE      R8 R5        ; R8 := R5
+ 44 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 45 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 46 [-]: MOVE      R8 R6        ; R8 := R6
+ 47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 48 [-]: TEST      R7 1         ; if R7 then PC := 54
+ 49 [-]: JMP       54           ; PC := 54
+ 50 [-]: GETGLOBAL R7 K20       ; R7 := 0x201191EA
+ 51 [-]: LOADK     R8 K21       ; R8 := 0
+ 52 [-]: CALL      R7 2 1       ; R7(R8)
+ 53 [-]: JMP       45           ; PC := 45
+ 54 [-]: GETGLOBAL R7 K14       ; R7 := _T
+ 55 [-]: SETTABLE  R7 K15 K22   ; R7["SyndicateInvInfo"] := nil
+ 56 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
+ 57 [-]: MOVE      R8 R1        ; R8 := R1
+ 58 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 59 [-]: TEST      R7 1         ; if R7 then PC := 62
+ 60 [-]: JMP       62           ; PC := 62
+ 61 [-]: SETTABLE  R1 K23 K24   ; R1["mReset"] := "0x1"
+ 62 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 86
+; Defined at line: 95
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := dogTagSyndicate
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: TEST      R0 1         ; if R0 then PC := 9
+  5 [-]: JMP       9            ; PC := 9
+  6 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  7 [-]: GETGLOBAL R1 K1        ; R1 := dogTagSyndicate
+  8 [-]: CALL      R0 2 1       ; R0(R1)
+  9 [-]: RETURN    R0 1         ; return 
+
+
+; Function #3:
+;
+; Name:            
+; Defined at line: 101
 ; #Upvalues:       2
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -443,10 +493,10 @@ code size: 131
  90 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 129
+; Defined at line: 144
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -507,10 +557,10 @@ code size: 131
  53 [-]: RETURN    R0 1         ; return 
 
 
-; Function #4:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 159
+; Defined at line: 174
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -574,10 +624,10 @@ code size: 131
  56 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 184
+; Defined at line: 199
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -681,10 +731,10 @@ code size: 131
  96 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 227
+; Defined at line: 242
 ; #Upvalues:       51
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -704,7 +754,7 @@ code size: 131
  12 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  13 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  14 [-]: SETTABLE  R2 K5 K6     ; R2["mName"] := "/Lotus/Language/OstronCrafting/Crafting_CraftDialogTag"
- 15 [-]: CLOSURE   R3 0         ; R3 := closure(Function #6.1)
+ 15 [-]: CLOSURE   R3 0         ; R3 := closure(Function #7.1)
  16 [-]: GETUPVAL  R0 U1        ; R0 := U1
  17 [-]: MOVE      R0 R0        ; R0 := R0
  18 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -714,7 +764,7 @@ code size: 131
  22 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  23 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  24 [-]: SETTABLE  R2 K5 K9     ; R2["mName"] := "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
- 25 [-]: CLOSURE   R3 1         ; R3 := closure(Function #6.2)
+ 25 [-]: CLOSURE   R3 1         ; R3 := closure(Function #7.2)
  26 [-]: GETUPVAL  R0 U1        ; R0 := U1
  27 [-]: MOVE      R0 R0        ; R0 := R0
  28 [-]: GETUPVAL  R0 U3        ; R0 := U3
@@ -725,7 +775,7 @@ code size: 131
  33 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  34 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  35 [-]: SETTABLE  R2 K5 K11    ; R2["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
- 36 [-]: CLOSURE   R3 2         ; R3 := closure(Function #6.3)
+ 36 [-]: CLOSURE   R3 2         ; R3 := closure(Function #7.3)
  37 [-]: GETUPVAL  R0 U5        ; R0 := U5
  38 [-]: MOVE      R0 R0        ; R0 := R0
  39 [-]: GETUPVAL  R0 U6        ; R0 := U6
@@ -735,7 +785,7 @@ code size: 131
  43 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  44 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  45 [-]: SETTABLE  R2 K5 K13    ; R2["mName"] := "/Lotus/Language/OstronCrafting/Crafting_ActionsDialogTag"
- 46 [-]: CLOSURE   R3 3         ; R3 := closure(Function #6.4)
+ 46 [-]: CLOSURE   R3 3         ; R3 := closure(Function #7.4)
  47 [-]: GETUPVAL  R0 U1        ; R0 := U1
  48 [-]: MOVE      R0 R0        ; R0 := R0
  49 [-]: GETUPVAL  R0 U7        ; R0 := U7
@@ -745,7 +795,7 @@ code size: 131
  53 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  54 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  55 [-]: SETTABLE  R2 K5 K15    ; R2["mName"] := "/Lotus/Language/SolarisVenus/WeaponsmithCraftWeapon"
- 56 [-]: CLOSURE   R3 4         ; R3 := closure(Function #6.5)
+ 56 [-]: CLOSURE   R3 4         ; R3 := closure(Function #7.5)
  57 [-]: GETUPVAL  R0 U1        ; R0 := U1
  58 [-]: MOVE      R0 R0        ; R0 := R0
  59 [-]: GETUPVAL  R0 U2        ; R0 := U2
@@ -755,7 +805,7 @@ code size: 131
  63 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  64 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  65 [-]: SETTABLE  R2 K5 K9     ; R2["mName"] := "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
- 66 [-]: CLOSURE   R3 5         ; R3 := closure(Function #6.6)
+ 66 [-]: CLOSURE   R3 5         ; R3 := closure(Function #7.6)
  67 [-]: GETUPVAL  R0 U1        ; R0 := U1
  68 [-]: MOVE      R0 R0        ; R0 := R0
  69 [-]: GETUPVAL  R0 U3        ; R0 := U3
@@ -766,7 +816,7 @@ code size: 131
  74 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  75 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  76 [-]: SETTABLE  R2 K5 K18    ; R2["mName"] := "/Lotus/Language/SolarisVenus/WeaponsmithBrowseWares"
- 77 [-]: CLOSURE   R3 6         ; R3 := closure(Function #6.7)
+ 77 [-]: CLOSURE   R3 6         ; R3 := closure(Function #7.7)
  78 [-]: GETUPVAL  R0 U5        ; R0 := U5
  79 [-]: MOVE      R0 R0        ; R0 := R0
  80 [-]: GETUPVAL  R0 U6        ; R0 := U6
@@ -776,7 +826,7 @@ code size: 131
  84 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  85 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  86 [-]: SETTABLE  R2 K5 K20    ; R2["mName"] := "/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"
- 87 [-]: CLOSURE   R3 7         ; R3 := closure(Function #6.8)
+ 87 [-]: CLOSURE   R3 7         ; R3 := closure(Function #7.8)
  88 [-]: GETUPVAL  R0 U1        ; R0 := U1
  89 [-]: MOVE      R0 R0        ; R0 := R0
  90 [-]: GETUPVAL  R0 U7        ; R0 := U7
@@ -786,7 +836,7 @@ code size: 131
  94 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
  95 [-]: NEWTABLE  R2 0 2       ; R2 := {}
  96 [-]: SETTABLE  R2 K5 K9     ; R2["mName"] := "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
- 97 [-]: CLOSURE   R3 8         ; R3 := closure(Function #6.9)
+ 97 [-]: CLOSURE   R3 8         ; R3 := closure(Function #7.9)
  98 [-]: GETUPVAL  R0 U5        ; R0 := U5
  99 [-]: MOVE      R0 R0        ; R0 := R0
 100 [-]: GETUPVAL  R0 U9        ; R0 := U9
@@ -796,7 +846,7 @@ code size: 131
 104 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
 105 [-]: NEWTABLE  R2 0 2       ; R2 := {}
 106 [-]: SETTABLE  R2 K5 K11    ; R2["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
-107 [-]: CLOSURE   R3 9         ; R3 := closure(Function #6.10)
+107 [-]: CLOSURE   R3 9         ; R3 := closure(Function #7.10)
 108 [-]: GETUPVAL  R0 U5        ; R0 := U5
 109 [-]: MOVE      R0 R0        ; R0 := R0
 110 [-]: GETUPVAL  R0 U10       ; R0 := U10
@@ -806,7 +856,7 @@ code size: 131
 114 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
 115 [-]: NEWTABLE  R2 0 2       ; R2 := {}
 116 [-]: SETTABLE  R2 K5 K24    ; R2["mName"] := "/Lotus/Language/OstronCrafting/Fishmonger_DonateOption"
-117 [-]: CLOSURE   R3 10        ; R3 := closure(Function #6.11)
+117 [-]: CLOSURE   R3 10        ; R3 := closure(Function #7.11)
 118 [-]: GETUPVAL  R0 U11       ; R0 := U11
 119 [-]: MOVE      R0 R0        ; R0 := R0
 120 [-]: GETUPVAL  R0 U12       ; R0 := U12
@@ -816,19 +866,19 @@ code size: 131
 124 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["TaggedDialog"]
 125 [-]: NEWTABLE  R2 0 2       ; R2 := {}
 126 [-]: SETTABLE  R2 K5 K26    ; R2["mName"] := "/Lotus/Language/OstronCrafting/Fishmonger_DissectOption"
-127 [-]: CLOSURE   R3 11        ; R3 := closure(Function #6.12)
+127 [-]: CLOSURE   R3 11        ; R3 := closure(Function #7.12)
 128 [-]: GETUPVAL  R0 U11       ; R0 := U11
 129 [-]: MOVE      R0 R0        ; R0 := R0
 130 [-]: GETUPVAL  R0 U13       ; R0 := U13
 131 [-]: SETTABLE  R2 K7 R3     ; R2["mCallback"] := R3
 132 [-]: SETTABLE  R1 K25 R2    ; R1["Fishmonger_CutBait"] := R2
-133 [-]: CLOSURE   R1 12        ; R1 := closure(Function #6.13)
+133 [-]: CLOSURE   R1 12        ; R1 := closure(Function #7.13)
 134 [-]: GETGLOBAL R2 K0        ; R2 := _T
 135 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 136 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 137 [-]: SETTABLE  R3 K5 K28    ; R3["mName"] := "/Lotus/Language/SolarisVenus/DailySpecial"
 138 [-]: SETTABLE  R3 K29 R1    ; R3["mCondition"] := R1
-139 [-]: CLOSURE   R4 13        ; R4 := closure(Function #6.14)
+139 [-]: CLOSURE   R4 13        ; R4 := closure(Function #7.14)
 140 [-]: GETUPVAL  R0 U5        ; R0 := U5
 141 [-]: MOVE      R0 R0        ; R0 := R0
 142 [-]: GETUPVAL  R0 U9        ; R0 := U9
@@ -839,7 +889,7 @@ code size: 131
 147 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 148 [-]: SETTABLE  R3 K5 K31    ; R3["mName"] := "/Lotus/Language/SolarisVenus/BrowseWares"
 149 [-]: SETTABLE  R3 K29 R1    ; R3["mCondition"] := R1
-150 [-]: CLOSURE   R4 14        ; R4 := closure(Function #6.15)
+150 [-]: CLOSURE   R4 14        ; R4 := closure(Function #7.15)
 151 [-]: GETUPVAL  R0 U5        ; R0 := U5
 152 [-]: MOVE      R0 R0        ; R0 := R0
 153 [-]: GETUPVAL  R0 U10       ; R0 := U10
@@ -850,7 +900,7 @@ code size: 131
 158 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 159 [-]: SETTABLE  R3 K5 K33    ; R3["mName"] := "/Lotus/Language/SolarisVenus/Fishmonger_DonateOptionSV"
 160 [-]: SETTABLE  R3 K29 R1    ; R3["mCondition"] := R1
-161 [-]: CLOSURE   R4 15        ; R4 := closure(Function #6.16)
+161 [-]: CLOSURE   R4 15        ; R4 := closure(Function #7.16)
 162 [-]: GETUPVAL  R0 U11       ; R0 := U11
 163 [-]: MOVE      R0 R0        ; R0 := R0
 164 [-]: GETUPVAL  R0 U12       ; R0 := U12
@@ -861,7 +911,7 @@ code size: 131
 169 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 170 [-]: SETTABLE  R3 K5 K35    ; R3["mName"] := "/Lotus/Language/SolarisVenus/Fishmonger_DissectOptionSV"
 171 [-]: SETTABLE  R3 K29 R1    ; R3["mCondition"] := R1
-172 [-]: CLOSURE   R4 16        ; R4 := closure(Function #6.17)
+172 [-]: CLOSURE   R4 16        ; R4 := closure(Function #7.17)
 173 [-]: GETUPVAL  R0 U11       ; R0 := U11
 174 [-]: MOVE      R0 R0        ; R0 := R0
 175 [-]: GETUPVAL  R0 U13       ; R0 := U13
@@ -872,7 +922,7 @@ code size: 131
 180 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 181 [-]: SETTABLE  R3 K5 K37    ; R3["mName"] := "/Lotus/Language/SolarisVenus/SolarisFishMongerVendorItems"
 182 [-]: SETTABLE  R3 K29 R1    ; R3["mCondition"] := R1
-183 [-]: CLOSURE   R4 17        ; R4 := closure(Function #6.18)
+183 [-]: CLOSURE   R4 17        ; R4 := closure(Function #7.18)
 184 [-]: GETUPVAL  R0 U5        ; R0 := U5
 185 [-]: MOVE      R0 R0        ; R0 := R0
 186 [-]: GETUPVAL  R0 U14       ; R0 := U14
@@ -882,7 +932,7 @@ code size: 131
 190 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 191 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 192 [-]: SETTABLE  R3 K5 K11    ; R3["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
-193 [-]: CLOSURE   R4 18        ; R4 := closure(Function #6.19)
+193 [-]: CLOSURE   R4 18        ; R4 := closure(Function #7.19)
 194 [-]: GETUPVAL  R0 U5        ; R0 := U5
 195 [-]: MOVE      R0 R0        ; R0 := R0
 196 [-]: GETUPVAL  R0 U15       ; R0 := U15
@@ -892,7 +942,7 @@ code size: 131
 200 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 201 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 202 [-]: SETTABLE  R3 K5 K9     ; R3["mName"] := "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
-203 [-]: CLOSURE   R4 19        ; R4 := closure(Function #6.20)
+203 [-]: CLOSURE   R4 19        ; R4 := closure(Function #7.20)
 204 [-]: GETUPVAL  R0 U5        ; R0 := U5
 205 [-]: MOVE      R0 R0        ; R0 := R0
 206 [-]: GETUPVAL  R0 U16       ; R0 := U16
@@ -902,7 +952,7 @@ code size: 131
 210 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 211 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 212 [-]: SETTABLE  R3 K5 K41    ; R3["mName"] := "/Lotus/Language/OstronCrafting/ProspectorStandingBonuses"
-213 [-]: CLOSURE   R4 20        ; R4 := closure(Function #6.21)
+213 [-]: CLOSURE   R4 20        ; R4 := closure(Function #7.21)
 214 [-]: GETUPVAL  R0 U17       ; R0 := U17
 215 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
 216 [-]: SETTABLE  R2 K40 R3    ; R2["Prospector_SyndicateStandingBonuses"] := R3
@@ -910,7 +960,7 @@ code size: 131
 218 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 219 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 220 [-]: SETTABLE  R3 K5 K43    ; R3["mName"] := "/Lotus/Language/SolarisVenus/ProspectorBrowseWares"
-221 [-]: CLOSURE   R4 21        ; R4 := closure(Function #6.22)
+221 [-]: CLOSURE   R4 21        ; R4 := closure(Function #7.22)
 222 [-]: GETUPVAL  R0 U5        ; R0 := U5
 223 [-]: MOVE      R0 R0        ; R0 := R0
 224 [-]: GETUPVAL  R0 U15       ; R0 := U15
@@ -920,7 +970,7 @@ code size: 131
 228 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 229 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 230 [-]: SETTABLE  R3 K5 K45    ; R3["mName"] := "/Lotus/Language/SolarisVenus/ProspectorDailySpecial"
-231 [-]: CLOSURE   R4 22        ; R4 := closure(Function #6.23)
+231 [-]: CLOSURE   R4 22        ; R4 := closure(Function #7.23)
 232 [-]: GETUPVAL  R0 U5        ; R0 := U5
 233 [-]: MOVE      R0 R0        ; R0 := R0
 234 [-]: GETUPVAL  R0 U16       ; R0 := U16
@@ -931,7 +981,7 @@ code size: 131
 239 [-]: NEWTABLE  R3 0 3       ; R3 := {}
 240 [-]: SETTABLE  R3 K5 K47    ; R3["mName"] := "/Lotus/Language/SolarisVenus/ProspectorStandingBonusesSV"
 241 [-]: SETTABLE  R3 K48 K49   ; R3["mAlwaysShow"] := "0x1"
-242 [-]: CLOSURE   R4 23        ; R4 := closure(Function #6.24)
+242 [-]: CLOSURE   R4 23        ; R4 := closure(Function #7.24)
 243 [-]: GETUPVAL  R0 U17       ; R0 := U17
 244 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
 245 [-]: SETTABLE  R2 K46 R3    ; R2["SolarisProspector_SyndicateStandingBonuses"] := R3
@@ -939,7 +989,7 @@ code size: 131
 247 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 248 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 249 [-]: SETTABLE  R3 K5 K51    ; R3["mName"] := "/Lotus/Language/OstronCrafting/AmpMod_DialogTag"
-250 [-]: CLOSURE   R4 24        ; R4 := closure(Function #6.25)
+250 [-]: CLOSURE   R4 24        ; R4 := closure(Function #7.25)
 251 [-]: GETUPVAL  R0 U1        ; R0 := U1
 252 [-]: MOVE      R0 R0        ; R0 := R0
 253 [-]: GETUPVAL  R0 U18       ; R0 := U18
@@ -949,7 +999,7 @@ code size: 131
 257 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 258 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 259 [-]: SETTABLE  R3 K5 K13    ; R3["mName"] := "/Lotus/Language/OstronCrafting/Crafting_ActionsDialogTag"
-260 [-]: CLOSURE   R4 25        ; R4 := closure(Function #6.26)
+260 [-]: CLOSURE   R4 25        ; R4 := closure(Function #7.26)
 261 [-]: GETUPVAL  R0 U1        ; R0 := U1
 262 [-]: MOVE      R0 R0        ; R0 := R0
 263 [-]: GETUPVAL  R0 U19       ; R0 := U19
@@ -959,7 +1009,7 @@ code size: 131
 267 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 268 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 269 [-]: SETTABLE  R3 K5 K54    ; R3["mName"] := "/Lotus/Language/OstronCrafting/QuillsViewStanding"
-270 [-]: CLOSURE   R4 26        ; R4 := closure(Function #6.27)
+270 [-]: CLOSURE   R4 26        ; R4 := closure(Function #7.27)
 271 [-]: GETUPVAL  R0 U20       ; R0 := U20
 272 [-]: MOVE      R0 R0        ; R0 := R0
 273 [-]: GETUPVAL  R0 U21       ; R0 := U21
@@ -969,7 +1019,7 @@ code size: 131
 277 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 278 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 279 [-]: SETTABLE  R3 K5 K31    ; R3["mName"] := "/Lotus/Language/SolarisVenus/BrowseWares"
-280 [-]: CLOSURE   R4 27        ; R4 := closure(Function #6.28)
+280 [-]: CLOSURE   R4 27        ; R4 := closure(Function #7.28)
 281 [-]: GETUPVAL  R0 U5        ; R0 := U5
 282 [-]: MOVE      R0 R0        ; R0 := R0
 283 [-]: GETUPVAL  R0 U22       ; R0 := U22
@@ -979,7 +1029,7 @@ code size: 131
 287 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 288 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 289 [-]: SETTABLE  R3 K5 K57    ; R3["mName"] := "/Lotus/Language/OstronCrafting/QuillsStandingBonuses"
-290 [-]: CLOSURE   R4 28        ; R4 := closure(Function #6.29)
+290 [-]: CLOSURE   R4 28        ; R4 := closure(Function #7.29)
 291 [-]: GETUPVAL  R0 U17       ; R0 := U17
 292 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
 293 [-]: SETTABLE  R2 K56 R3    ; R2["Quills_SyndicateStandingBonuses"] := R3
@@ -987,7 +1037,7 @@ code size: 131
 295 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["TaggedDialog"]
 296 [-]: NEWTABLE  R3 0 2       ; R3 := {}
 297 [-]: SETTABLE  R3 K5 K59    ; R3["mName"] := "/Lotus/Language/OstronCrafting/QuillsSaya"
-298 [-]: CLOSURE   R4 29        ; R4 := closure(Function #6.30)
+298 [-]: CLOSURE   R4 29        ; R4 := closure(Function #7.30)
 299 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
 300 [-]: SETTABLE  R2 K58 R3    ; R2["Quills_Saya"] := R3
 301 [-]: GETGLOBAL R2 K60       ; R2 := Lotus_Game
@@ -1001,8 +1051,8 @@ code size: 131
 309 [-]: SELF      R3 R3 K64    ; R4 := R3; R3 := R3["0x968DA9B9"]
 310 [-]: CALL      R3 2 2       ; R3 := R3(R4)
 311 [-]: MOVE      R2 R3        ; R2 := R3
-312 [-]: CLOSURE   R3 30        ; R3 := closure(Function #6.31)
-313 [-]: CLOSURE   R4 31        ; R4 := closure(Function #6.32)
+312 [-]: CLOSURE   R3 30        ; R3 := closure(Function #7.31)
+313 [-]: CLOSURE   R4 31        ; R4 := closure(Function #7.32)
 314 [-]: GETGLOBAL R5 K0        ; R5 := _T
 315 [-]: GETGLOBAL R6 K0        ; R6 := _T
 316 [-]: GETTABLE  R6 R6 K65    ; R6 := R6["SkipVendorDialog"]
@@ -1018,7 +1068,7 @@ code size: 131
 326 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 327 [-]: SETTABLE  R6 K5 K68    ; R6["mName"] := ""
 328 [-]: SETTABLE  R6 K29 R4    ; R6["mCondition"] := R4
-329 [-]: CLOSURE   R7 32        ; R7 := closure(Function #6.33)
+329 [-]: CLOSURE   R7 32        ; R7 := closure(Function #7.33)
 330 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
 331 [-]: SETTABLE  R5 K67 R6    ; R5["LittleDuck_Warframe"] := R6
 332 [-]: GETGLOBAL R5 K60       ; R5 := Lotus_Game
@@ -1030,7 +1080,7 @@ code size: 131
 338 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 339 [-]: SETTABLE  R6 K5 K51    ; R6["mName"] := "/Lotus/Language/OstronCrafting/AmpMod_DialogTag"
 340 [-]: SETTABLE  R6 K29 R3    ; R6["mCondition"] := R3
-341 [-]: CLOSURE   R7 33        ; R7 := closure(Function #6.34)
+341 [-]: CLOSURE   R7 33        ; R7 := closure(Function #7.34)
 342 [-]: GETUPVAL  R0 U1        ; R0 := U1
 343 [-]: MOVE      R0 R0        ; R0 := R0
 344 [-]: GETUPVAL  R0 U23       ; R0 := U23
@@ -1041,7 +1091,7 @@ code size: 131
 349 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 350 [-]: SETTABLE  R6 K5 K13    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_ActionsDialogTag"
 351 [-]: SETTABLE  R6 K29 R3    ; R6["mCondition"] := R3
-352 [-]: CLOSURE   R7 34        ; R7 := closure(Function #6.35)
+352 [-]: CLOSURE   R7 34        ; R7 := closure(Function #7.35)
 353 [-]: GETUPVAL  R0 U1        ; R0 := U1
 354 [-]: MOVE      R0 R0        ; R0 := R0
 355 [-]: GETUPVAL  R0 U24       ; R0 := U24
@@ -1052,7 +1102,7 @@ code size: 131
 360 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 361 [-]: SETTABLE  R6 K5 K73    ; R6["mName"] := "/Lotus/Language/SolarisVenus/SolarisUnitedViewStanding"
 362 [-]: SETTABLE  R6 K29 R3    ; R6["mCondition"] := R3
-363 [-]: CLOSURE   R7 35        ; R7 := closure(Function #6.36)
+363 [-]: CLOSURE   R7 35        ; R7 := closure(Function #7.36)
 364 [-]: GETUPVAL  R0 U20       ; R0 := U20
 365 [-]: MOVE      R0 R0        ; R0 := R0
 366 [-]: GETUPVAL  R0 U25       ; R0 := U25
@@ -1063,7 +1113,7 @@ code size: 131
 371 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 372 [-]: SETTABLE  R6 K5 K31    ; R6["mName"] := "/Lotus/Language/SolarisVenus/BrowseWares"
 373 [-]: SETTABLE  R6 K29 R3    ; R6["mCondition"] := R3
-374 [-]: CLOSURE   R7 36        ; R7 := closure(Function #6.37)
+374 [-]: CLOSURE   R7 36        ; R7 := closure(Function #7.37)
 375 [-]: GETUPVAL  R0 U5        ; R0 := U5
 376 [-]: MOVE      R0 R0        ; R0 := R0
 377 [-]: GETUPVAL  R0 U26       ; R0 := U26
@@ -1074,7 +1124,7 @@ code size: 131
 382 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 383 [-]: SETTABLE  R6 K5 K76    ; R6["mName"] := "/Lotus/Language/SolarisVenus/SolarisUnitedStandingBonuses"
 384 [-]: SETTABLE  R6 K29 R3    ; R6["mCondition"] := R3
-385 [-]: CLOSURE   R7 37        ; R7 := closure(Function #6.38)
+385 [-]: CLOSURE   R7 37        ; R7 := closure(Function #7.38)
 386 [-]: GETUPVAL  R0 U17       ; R0 := U17
 387 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
 388 [-]: SETTABLE  R5 K75 R6    ; R5["SolarisUnited_SyndicateStandingBonuses"] := R6
@@ -1083,7 +1133,7 @@ code size: 131
 391 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 392 [-]: SETTABLE  R6 K5 K78    ; R6["mName"] := "/Lotus/Language/SolarisVenus/SolarisUnitedSentientInvasionStore"
 393 [-]: SETTABLE  R6 K29 R3    ; R6["mCondition"] := R3
-394 [-]: CLOSURE   R7 38        ; R7 := closure(Function #6.39)
+394 [-]: CLOSURE   R7 38        ; R7 := closure(Function #7.39)
 395 [-]: GETUPVAL  R0 U5        ; R0 := U5
 396 [-]: MOVE      R0 R0        ; R0 := R0
 397 [-]: GETUPVAL  R0 U27       ; R0 := U27
@@ -1109,26 +1159,26 @@ code size: 131
 417 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 418 [-]: SETTABLE  R6 K5 K68    ; R6["mName"] := ""
 419 [-]: SETTABLE  R6 K29 R3    ; R6["mCondition"] := R3
-420 [-]: CLOSURE   R7 39        ; R7 := closure(Function #6.40)
+420 [-]: CLOSURE   R7 39        ; R7 := closure(Function #7.40)
 421 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
 422 [-]: SETTABLE  R5 K80 R6    ; R5["LittleDuck_Intro"] := R6
 423 [-]: GETGLOBAL R5 K0        ; R5 := _T
 424 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 425 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 426 [-]: SETTABLE  R6 K5 K11    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
-427 [-]: CLOSURE   R7 40        ; R7 := closure(Function #6.41)
+427 [-]: CLOSURE   R7 40        ; R7 := closure(Function #7.41)
 428 [-]: GETUPVAL  R0 U5        ; R0 := U5
 429 [-]: MOVE      R0 R0        ; R0 := R0
 430 [-]: GETUPVAL  R0 U28       ; R0 := U28
 431 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
-432 [-]: CLOSURE   R7 41        ; R7 := closure(Function #6.42)
+432 [-]: CLOSURE   R7 41        ; R7 := closure(Function #7.42)
 433 [-]: SETTABLE  R6 K29 R7    ; R6["mCondition"] := R7
 434 [-]: SETTABLE  R5 K81 R6    ; R5["MaskSeller_VendorItems"] := R6
 435 [-]: GETGLOBAL R5 K0        ; R5 := _T
 436 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 437 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 438 [-]: SETTABLE  R6 K5 K11    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
-439 [-]: CLOSURE   R7 42        ; R7 := closure(Function #6.43)
+439 [-]: CLOSURE   R7 42        ; R7 := closure(Function #7.43)
 440 [-]: GETUPVAL  R0 U5        ; R0 := U5
 441 [-]: MOVE      R0 R0        ; R0 := R0
 442 [-]: GETUPVAL  R0 U29       ; R0 := U29
@@ -1138,7 +1188,7 @@ code size: 131
 446 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 447 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 448 [-]: SETTABLE  R6 K5 K37    ; R6["mName"] := "/Lotus/Language/SolarisVenus/SolarisFishMongerVendorItems"
-449 [-]: CLOSURE   R7 43        ; R7 := closure(Function #6.44)
+449 [-]: CLOSURE   R7 43        ; R7 := closure(Function #7.44)
 450 [-]: GETUPVAL  R0 U5        ; R0 := U5
 451 [-]: MOVE      R0 R0        ; R0 := R0
 452 [-]: GETUPVAL  R0 U30       ; R0 := U30
@@ -1148,7 +1198,7 @@ code size: 131
 456 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 457 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 458 [-]: SETTABLE  R6 K5 K85    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_FavorsBarter"
-459 [-]: CLOSURE   R7 44        ; R7 := closure(Function #6.45)
+459 [-]: CLOSURE   R7 44        ; R7 := closure(Function #7.45)
 460 [-]: GETUPVAL  R0 U5        ; R0 := U5
 461 [-]: MOVE      R0 R0        ; R0 := R0
 462 [-]: GETUPVAL  R0 U31       ; R0 := U31
@@ -1159,7 +1209,7 @@ code size: 131
 467 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 468 [-]: SETTABLE  R6 K5 K87    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_CraftMoaPetDialogTag"
 469 [-]: SETTABLE  R6 K48 K49   ; R6["mAlwaysShow"] := "0x1"
-470 [-]: CLOSURE   R7 45        ; R7 := closure(Function #6.46)
+470 [-]: CLOSURE   R7 45        ; R7 := closure(Function #7.46)
 471 [-]: GETUPVAL  R0 U1        ; R0 := U1
 472 [-]: MOVE      R0 R0        ; R0 := R0
 473 [-]: GETUPVAL  R0 U32       ; R0 := U32
@@ -1169,7 +1219,7 @@ code size: 131
 477 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 478 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 479 [-]: SETTABLE  R6 K5 K9     ; R6["mName"] := "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
-480 [-]: CLOSURE   R7 46        ; R7 := closure(Function #6.47)
+480 [-]: CLOSURE   R7 46        ; R7 := closure(Function #7.47)
 481 [-]: GETUPVAL  R0 U1        ; R0 := U1
 482 [-]: MOVE      R0 R0        ; R0 := R0
 483 [-]: GETUPVAL  R0 U33       ; R0 := U33
@@ -1180,7 +1230,7 @@ code size: 131
 488 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 489 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 490 [-]: SETTABLE  R6 K5 K20    ; R6["mName"] := "/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"
-491 [-]: CLOSURE   R7 47        ; R7 := closure(Function #6.48)
+491 [-]: CLOSURE   R7 47        ; R7 := closure(Function #7.48)
 492 [-]: GETUPVAL  R0 U1        ; R0 := U1
 493 [-]: MOVE      R0 R0        ; R0 := R0
 494 [-]: GETUPVAL  R0 U35       ; R0 := U35
@@ -1190,7 +1240,7 @@ code size: 131
 498 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 499 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 500 [-]: SETTABLE  R6 K5 K11    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
-501 [-]: CLOSURE   R7 48        ; R7 := closure(Function #6.49)
+501 [-]: CLOSURE   R7 48        ; R7 := closure(Function #7.49)
 502 [-]: GETUPVAL  R0 U5        ; R0 := U5
 503 [-]: MOVE      R0 R0        ; R0 := R0
 504 [-]: GETUPVAL  R0 U36       ; R0 := U36
@@ -1200,7 +1250,7 @@ code size: 131
 508 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 509 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 510 [-]: SETTABLE  R6 K5 K92    ; R6["mName"] := "/Lotus/Language/SolarisVenus/VentkidsViewStanding"
-511 [-]: CLOSURE   R7 49        ; R7 := closure(Function #6.50)
+511 [-]: CLOSURE   R7 49        ; R7 := closure(Function #7.50)
 512 [-]: GETUPVAL  R0 U20       ; R0 := U20
 513 [-]: MOVE      R0 R0        ; R0 := R0
 514 [-]: GETUPVAL  R0 U37       ; R0 := U37
@@ -1211,7 +1261,7 @@ code size: 131
 519 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 520 [-]: SETTABLE  R6 K5 K94    ; R6["mName"] := "/Lotus/Language/Hoverboards/Crafting_CraftHBDialogTag"
 521 [-]: SETTABLE  R6 K48 K49   ; R6["mAlwaysShow"] := "0x1"
-522 [-]: CLOSURE   R7 50        ; R7 := closure(Function #6.51)
+522 [-]: CLOSURE   R7 50        ; R7 := closure(Function #7.51)
 523 [-]: GETUPVAL  R0 U1        ; R0 := U1
 524 [-]: MOVE      R0 R0        ; R0 := R0
 525 [-]: GETUPVAL  R0 U38       ; R0 := U38
@@ -1221,7 +1271,7 @@ code size: 131
 529 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 530 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 531 [-]: SETTABLE  R6 K5 K9     ; R6["mName"] := "/Lotus/Language/OstronCrafting/WeaponOfTheDay_DialogTag"
-532 [-]: CLOSURE   R7 51        ; R7 := closure(Function #6.52)
+532 [-]: CLOSURE   R7 51        ; R7 := closure(Function #7.52)
 533 [-]: GETUPVAL  R0 U1        ; R0 := U1
 534 [-]: MOVE      R0 R0        ; R0 := R0
 535 [-]: GETUPVAL  R0 U39       ; R0 := U39
@@ -1233,7 +1283,7 @@ code size: 131
 541 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 542 [-]: SETTABLE  R6 K5 K11    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
 543 [-]: SETTABLE  R6 K48 K49   ; R6["mAlwaysShow"] := "0x1"
-544 [-]: CLOSURE   R7 52        ; R7 := closure(Function #6.53)
+544 [-]: CLOSURE   R7 52        ; R7 := closure(Function #7.53)
 545 [-]: GETUPVAL  R0 U5        ; R0 := U5
 546 [-]: MOVE      R0 R0        ; R0 := R0
 547 [-]: GETUPVAL  R0 U41       ; R0 := U41
@@ -1243,7 +1293,7 @@ code size: 131
 551 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 552 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 553 [-]: SETTABLE  R6 K5 K20    ; R6["mName"] := "/Lotus/Language/SolarisVenus/WeaponsmithOtherServices"
-554 [-]: CLOSURE   R7 53        ; R7 := closure(Function #6.54)
+554 [-]: CLOSURE   R7 53        ; R7 := closure(Function #7.54)
 555 [-]: GETUPVAL  R0 U1        ; R0 := U1
 556 [-]: MOVE      R0 R0        ; R0 := R0
 557 [-]: GETUPVAL  R0 U42       ; R0 := U42
@@ -1253,7 +1303,7 @@ code size: 131
 561 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 562 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 563 [-]: SETTABLE  R6 K5 K99    ; R6["mName"] := "/Lotus/Language/SolarisVenus/VentkidsStandingBonuses"
-564 [-]: CLOSURE   R7 54        ; R7 := closure(Function #6.55)
+564 [-]: CLOSURE   R7 54        ; R7 := closure(Function #7.55)
 565 [-]: GETUPVAL  R0 U17       ; R0 := U17
 566 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
 567 [-]: SETTABLE  R5 K98 R6    ; R5["HBVendor_SyndicateStandingBonuses"] := R6
@@ -1261,7 +1311,7 @@ code size: 131
 569 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 570 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 571 [-]: SETTABLE  R6 K5 K101   ; R6["mName"] := "/Lotus/Language/SolarisVenus/DebtTokenVendorFreeDebtBonds"
-572 [-]: CLOSURE   R7 55        ; R7 := closure(Function #6.56)
+572 [-]: CLOSURE   R7 55        ; R7 := closure(Function #7.56)
 573 [-]: GETUPVAL  R0 U5        ; R0 := U5
 574 [-]: MOVE      R0 R0        ; R0 := R0
 575 [-]: GETUPVAL  R0 U43       ; R0 := U43
@@ -1271,7 +1321,7 @@ code size: 131
 579 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["TaggedDialog"]
 580 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 581 [-]: SETTABLE  R6 K5 K103   ; R6["mName"] := "/Lotus/Language/SolarisVenus/DebtTokenVendorItems"
-582 [-]: CLOSURE   R7 56        ; R7 := closure(Function #6.57)
+582 [-]: CLOSURE   R7 56        ; R7 := closure(Function #7.57)
 583 [-]: GETUPVAL  R0 U5        ; R0 := U5
 584 [-]: MOVE      R0 R0        ; R0 := R0
 585 [-]: GETUPVAL  R0 U44       ; R0 := U44
@@ -1282,7 +1332,7 @@ code size: 131
 590 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 591 [-]: SETTABLE  R6 K5 K105   ; R6["mName"] := "/Lotus/Language/SolarisVenus/DebtTokenVendorStandingBonuses"
 592 [-]: SETTABLE  R6 K48 K49   ; R6["mAlwaysShow"] := "0x1"
-593 [-]: CLOSURE   R7 57        ; R7 := closure(Function #6.58)
+593 [-]: CLOSURE   R7 57        ; R7 := closure(Function #7.58)
 594 [-]: GETUPVAL  R0 U17       ; R0 := U17
 595 [-]: SETTABLE  R6 K7 R7     ; R6["mCallback"] := R7
 596 [-]: SETTABLE  R5 K104 R6   ; R5["DebtTokenVendor_SyndicateStandingBonuses"] := R6
@@ -1291,7 +1341,7 @@ code size: 131
 599 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 600 [-]: SETTABLE  R6 K5 K107   ; R6["mName"] := "/Lotus/Language/Railjack/ModularAWCrafting_CraftTag"
 601 [-]: SETTABLE  R6 K48 K49   ; R6["mAlwaysShow"] := "0x1"
-602 [-]: CLOSURE   R7 58        ; R7 := closure(Function #6.59)
+602 [-]: CLOSURE   R7 58        ; R7 := closure(Function #7.59)
 603 [-]: GETUPVAL  R0 U1        ; R0 := U1
 604 [-]: MOVE      R0 R0        ; R0 := R0
 605 [-]: GETUPVAL  R0 U45       ; R0 := U45
@@ -1302,7 +1352,7 @@ code size: 131
 610 [-]: NEWTABLE  R6 0 3       ; R6 := {}
 611 [-]: SETTABLE  R6 K5 K11    ; R6["mName"] := "/Lotus/Language/OstronCrafting/Crafting_Favors"
 612 [-]: SETTABLE  R6 K48 K49   ; R6["mAlwaysShow"] := "0x1"
-613 [-]: CLOSURE   R7 59        ; R7 := closure(Function #6.60)
+613 [-]: CLOSURE   R7 59        ; R7 := closure(Function #7.60)
 614 [-]: GETUPVAL  R0 U5        ; R0 := U5
 615 [-]: MOVE      R0 R0        ; R0 := R0
 616 [-]: GETUPVAL  R0 U46       ; R0 := U46
@@ -1367,13 +1417,13 @@ code size: 131
 675 [-]: GETTABLE  R15 R15 K1   ; R15 := R15["TaggedDialog"]
 676 [-]: NEWTABLE  R16 0 3      ; R16 := {}
 677 [-]: SETTABLE  R16 K5 K124  ; R16["mName"] := "/Lotus/Language/Menu/EventSyndicate"
-678 [-]: CLOSURE   R17 60       ; R17 := closure(Function #6.61)
+678 [-]: CLOSURE   R17 60       ; R17 := closure(Function #7.61)
 679 [-]: GETUPVAL  R0 U20       ; R0 := U20
 680 [-]: MOVE      R0 R0        ; R0 := R0
 681 [-]: GETUPVAL  R0 U49       ; R0 := U49
 682 [-]: MOVE      R0 R13       ; R0 := R13
 683 [-]: SETTABLE  R16 K7 R17   ; R16["mCallback"] := R17
-684 [-]: CLOSURE   R17 61       ; R17 := closure(Function #6.62)
+684 [-]: CLOSURE   R17 61       ; R17 := closure(Function #7.62)
 685 [-]: MOVE      R0 R13       ; R0 := R13
 686 [-]: GETUPVAL  R0 U48       ; R0 := U48
 687 [-]: SETTABLE  R16 K29 R17  ; R16["mCondition"] := R17
@@ -1417,12 +1467,12 @@ code size: 131
 725 [-]: GETTABLE  R15 R15 K1   ; R15 := R15["TaggedDialog"]
 726 [-]: NEWTABLE  R16 0 3      ; R16 := {}
 727 [-]: SETTABLE  R16 K5 K129  ; R16["mName"] := "/Lotus/Language/Menu/WaterFightWares"
-728 [-]: CLOSURE   R17 62       ; R17 := closure(Function #6.63)
+728 [-]: CLOSURE   R17 62       ; R17 := closure(Function #7.63)
 729 [-]: GETUPVAL  R0 U5        ; R0 := U5
 730 [-]: MOVE      R0 R0        ; R0 := R0
 731 [-]: GETUPVAL  R0 U50       ; R0 := U50
 732 [-]: SETTABLE  R16 K7 R17   ; R16["mCallback"] := R17
-733 [-]: CLOSURE   R17 63       ; R17 := closure(Function #6.64)
+733 [-]: CLOSURE   R17 63       ; R17 := closure(Function #7.64)
 734 [-]: MOVE      R0 R13       ; R0 := R13
 735 [-]: GETUPVAL  R0 U48       ; R0 := U48
 736 [-]: SETTABLE  R16 K29 R17  ; R16["mCondition"] := R17
@@ -1434,10 +1484,10 @@ code size: 131
 742 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.1:
+; Function #7.1:
 ;
 ; Name:            
-; Defined at line: 239
+; Defined at line: 254
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1453,10 +1503,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.2:
+; Function #7.2:
 ;
 ; Name:            
-; Defined at line: 248
+; Defined at line: 263
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1473,10 +1523,10 @@ code size: 131
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.3:
+; Function #7.3:
 ;
 ; Name:            
-; Defined at line: 257
+; Defined at line: 272
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1490,10 +1540,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.4:
+; Function #7.4:
 ;
 ; Name:            
-; Defined at line: 266
+; Defined at line: 281
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1509,10 +1559,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.5:
+; Function #7.5:
 ;
 ; Name:            
-; Defined at line: 275
+; Defined at line: 290
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1528,10 +1578,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.6:
+; Function #7.6:
 ;
 ; Name:            
-; Defined at line: 284
+; Defined at line: 299
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1548,10 +1598,10 @@ code size: 131
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.7:
+; Function #7.7:
 ;
 ; Name:            
-; Defined at line: 293
+; Defined at line: 308
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1565,10 +1615,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.8:
+; Function #7.8:
 ;
 ; Name:            
-; Defined at line: 302
+; Defined at line: 317
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1584,10 +1634,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.9:
+; Function #7.9:
 ;
 ; Name:            
-; Defined at line: 312
+; Defined at line: 327
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1602,10 +1652,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.10:
+; Function #7.10:
 ;
 ; Name:            
-; Defined at line: 321
+; Defined at line: 336
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1619,10 +1669,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.11:
+; Function #7.11:
 ;
 ; Name:            
-; Defined at line: 330
+; Defined at line: 345
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1637,10 +1687,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.12:
+; Function #7.12:
 ;
 ; Name:            
-; Defined at line: 339
+; Defined at line: 354
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1655,10 +1705,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.13:
+; Function #7.13:
 ;
 ; Name:            
-; Defined at line: 344
+; Defined at line: 359
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1680,10 +1730,10 @@ code size: 131
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.14:
+; Function #7.14:
 ;
 ; Name:            
-; Defined at line: 353
+; Defined at line: 368
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1698,10 +1748,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.15:
+; Function #7.15:
 ;
 ; Name:            
-; Defined at line: 363
+; Defined at line: 378
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1715,10 +1765,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.16:
+; Function #7.16:
 ;
 ; Name:            
-; Defined at line: 373
+; Defined at line: 388
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1733,10 +1783,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.17:
+; Function #7.17:
 ;
 ; Name:            
-; Defined at line: 383
+; Defined at line: 398
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1751,10 +1801,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.18:
+; Function #7.18:
 ;
 ; Name:            
-; Defined at line: 393
+; Defined at line: 408
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1768,10 +1818,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.19:
+; Function #7.19:
 ;
 ; Name:            
-; Defined at line: 403
+; Defined at line: 418
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1785,10 +1835,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.20:
+; Function #7.20:
 ;
 ; Name:            
-; Defined at line: 412
+; Defined at line: 427
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1803,10 +1853,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.21:
+; Function #7.21:
 ;
 ; Name:            
-; Defined at line: 421
+; Defined at line: 436
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1824,10 +1874,10 @@ code size: 131
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.22:
+; Function #7.22:
 ;
 ; Name:            
-; Defined at line: 432
+; Defined at line: 447
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1841,10 +1891,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.23:
+; Function #7.23:
 ;
 ; Name:            
-; Defined at line: 441
+; Defined at line: 456
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1859,10 +1909,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.24:
+; Function #7.24:
 ;
 ; Name:            
-; Defined at line: 451
+; Defined at line: 466
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1883,10 +1933,10 @@ code size: 131
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.25:
+; Function #7.25:
 ;
 ; Name:            
-; Defined at line: 463
+; Defined at line: 478
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1902,10 +1952,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.26:
+; Function #7.26:
 ;
 ; Name:            
-; Defined at line: 472
+; Defined at line: 487
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1921,10 +1971,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.27:
+; Function #7.27:
 ;
 ; Name:            
-; Defined at line: 481
+; Defined at line: 496
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1938,10 +1988,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.28:
+; Function #7.28:
 ;
 ; Name:            
-; Defined at line: 490
+; Defined at line: 505
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1955,10 +2005,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.29:
+; Function #7.29:
 ;
 ; Name:            
-; Defined at line: 499
+; Defined at line: 514
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1971,10 +2021,10 @@ code size: 131
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.30:
+; Function #7.30:
 ;
 ; Name:            
-; Defined at line: 508
+; Defined at line: 523
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2001,10 +2051,10 @@ code size: 131
  19 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.31:
+; Function #7.31:
 ;
 ; Name:            
-; Defined at line: 525
+; Defined at line: 540
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2026,10 +2076,10 @@ code size: 131
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.32:
+; Function #7.32:
 ;
 ; Name:            
-; Defined at line: 529
+; Defined at line: 544
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2049,10 +2099,10 @@ code size: 131
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.33:
+; Function #7.33:
 ;
 ; Name:            
-; Defined at line: 540
+; Defined at line: 555
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2072,10 +2122,10 @@ code size: 131
  12 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.34:
+; Function #7.34:
 ;
 ; Name:            
-; Defined at line: 551
+; Defined at line: 566
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2091,10 +2141,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.35:
+; Function #7.35:
 ;
 ; Name:            
-; Defined at line: 561
+; Defined at line: 576
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2110,10 +2160,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.36:
+; Function #7.36:
 ;
 ; Name:            
-; Defined at line: 571
+; Defined at line: 586
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2127,10 +2177,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.37:
+; Function #7.37:
 ;
 ; Name:            
-; Defined at line: 581
+; Defined at line: 596
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2144,10 +2194,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.38:
+; Function #7.38:
 ;
 ; Name:            
-; Defined at line: 591
+; Defined at line: 606
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2160,10 +2210,10 @@ code size: 131
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.39:
+; Function #7.39:
 ;
 ; Name:            
-; Defined at line: 600
+; Defined at line: 615
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2177,10 +2227,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.40:
+; Function #7.40:
 ;
 ; Name:            
-; Defined at line: 613
+; Defined at line: 628
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2202,10 +2252,10 @@ code size: 131
  14 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.41:
+; Function #7.41:
 ;
 ; Name:            
-; Defined at line: 626
+; Defined at line: 641
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2263,10 +2313,10 @@ code size: 131
  50 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.42:
+; Function #7.42:
 ;
 ; Name:            
-; Defined at line: 641
+; Defined at line: 656
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2283,10 +2333,10 @@ code size: 131
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.43:
+; Function #7.43:
 ;
 ; Name:            
-; Defined at line: 652
+; Defined at line: 667
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2300,10 +2350,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.44:
+; Function #7.44:
 ;
 ; Name:            
-; Defined at line: 661
+; Defined at line: 676
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2317,10 +2367,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.45:
+; Function #7.45:
 ;
 ; Name:            
-; Defined at line: 670
+; Defined at line: 685
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2335,10 +2385,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.46:
+; Function #7.46:
 ;
 ; Name:            
-; Defined at line: 681
+; Defined at line: 696
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2354,10 +2404,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.47:
+; Function #7.47:
 ;
 ; Name:            
-; Defined at line: 690
+; Defined at line: 705
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2374,10 +2424,10 @@ code size: 131
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.48:
+; Function #7.48:
 ;
 ; Name:            
-; Defined at line: 699
+; Defined at line: 714
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2393,10 +2443,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.49:
+; Function #7.49:
 ;
 ; Name:            
-; Defined at line: 708
+; Defined at line: 723
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2410,10 +2460,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.50:
+; Function #7.50:
 ;
 ; Name:            
-; Defined at line: 718
+; Defined at line: 733
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2427,10 +2477,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.51:
+; Function #7.51:
 ;
 ; Name:            
-; Defined at line: 728
+; Defined at line: 743
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2446,10 +2496,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.52:
+; Function #7.52:
 ;
 ; Name:            
-; Defined at line: 737
+; Defined at line: 752
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2466,10 +2516,10 @@ code size: 131
   9 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.53:
+; Function #7.53:
 ;
 ; Name:            
-; Defined at line: 747
+; Defined at line: 762
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2483,10 +2533,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.54:
+; Function #7.54:
 ;
 ; Name:            
-; Defined at line: 756
+; Defined at line: 771
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2502,10 +2552,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.55:
+; Function #7.55:
 ;
 ; Name:            
-; Defined at line: 765
+; Defined at line: 780
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2523,10 +2573,10 @@ code size: 131
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.56:
+; Function #7.56:
 ;
 ; Name:            
-; Defined at line: 777
+; Defined at line: 792
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2542,10 +2592,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.57:
+; Function #7.57:
 ;
 ; Name:            
-; Defined at line: 786
+; Defined at line: 801
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2560,10 +2610,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.58:
+; Function #7.58:
 ;
 ; Name:            
-; Defined at line: 796
+; Defined at line: 811
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2589,10 +2639,10 @@ code size: 131
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.59:
+; Function #7.59:
 ;
 ; Name:            
-; Defined at line: 812
+; Defined at line: 827
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2608,10 +2658,10 @@ code size: 131
   8 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.60:
+; Function #7.60:
 ;
 ; Name:            
-; Defined at line: 822
+; Defined at line: 837
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2625,10 +2675,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.61:
+; Function #7.61:
 ;
 ; Name:            
-; Defined at line: 851
+; Defined at line: 866
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2643,10 +2693,10 @@ code size: 131
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.62:
+; Function #7.62:
 ;
 ; Name:            
-; Defined at line: 855
+; Defined at line: 870
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2672,10 +2722,10 @@ code size: 131
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.63:
+; Function #7.63:
 ;
 ; Name:            
-; Defined at line: 877
+; Defined at line: 892
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2689,10 +2739,10 @@ code size: 131
   6 [-]: RETURN    R0 1         ; return 
 
 
-; Function #6.64:
+; Function #7.64:
 ;
 ; Name:            
-; Defined at line: 881
+; Defined at line: 896
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2718,10 +2768,10 @@ code size: 131
  18 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 898
+; Defined at line: 913
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2739,10 +2789,10 @@ code size: 131
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 906
+; Defined at line: 921
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

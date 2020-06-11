@@ -1,5 +1,5 @@
 code size: 29
-code size: 71
+code size: 76
 code size: 6
 code size: 26
 code size: 6
@@ -54,83 +54,88 @@ code size: 240
 ; Is_vararg:       0
 ; Max Stack Size:  12
 
-  1 [-]: EQ        0 R1 K0      ; if R1 ~= nil then PC := 4
-  2 [-]: JMP       4            ; PC := 4
-  3 [-]: MOVE      R1 R1        ; R1 := R1
-  4 [-]: GETGLOBAL R2 K1        ; R2 := _T
-  5 [-]: GETGLOBAL R3 K1        ; R3 := _T
-  6 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["CheckQuestCompletionCache"]
-  7 [-]: TEST      R3 1         ; if R3 then PC := 10
-  8 [-]: JMP       10           ; PC := 10
-  9 [-]: NEWTABLE  R3 0 0       ; R3 := {}
- 10 [-]: SETTABLE  R2 K2 R3     ; R2["CheckQuestCompletionCache"] := R3
- 11 [-]: SELF      R2 R0 K3     ; R3 := R0; R2 := R0["0x1B252E3C"]
- 12 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 13 [-]: GETGLOBAL R3 K1        ; R3 := _T
- 14 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["CheckQuestCompletionCache"]
- 15 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
- 16 [-]: EQ        0 R3 K0      ; if R3 ~= nil then PC := 20
- 17 [-]: JMP       20           ; PC := 20
- 18 [-]: MOVE      R3 R0        ; R3 := R0
- 19 [-]: JMP       21           ; PC := 21
- 20 [-]: RETURN    R3 2         ; return R3
- 21 [-]: GETGLOBAL R4 K4        ; R4 := 0x400E7765
- 22 [-]: GETGLOBAL R5 K5        ; R5 := gGameData
- 23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 24 [-]: TEST      R4 0         ; if not R4 then PC := 34
- 25 [-]: JMP       34           ; PC := 34
- 26 [-]: TEST      R1 1         ; if R1 then PC := 30
- 27 [-]: JMP       30           ; PC := 30
- 28 [-]: MOVE      R4 R0        ; R4 := R0
- 29 [-]: RETURN    R4 2         ; return R4
- 30 [-]: GETGLOBAL R4 K6        ; R4 := 0x201191EA
- 31 [-]: LOADK     R5 K7        ; R5 := 0
- 32 [-]: CALL      R4 2 1       ; R4(R5)
- 33 [-]: JMP       21           ; PC := 21
- 34 [-]: GETGLOBAL R4 K5        ; R4 := gGameData
- 35 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x6F2E05FD"]
- 36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 37 [-]: GETGLOBAL R5 K4        ; R5 := 0x400E7765
- 38 [-]: MOVE      R6 R4        ; R6 := R4
- 39 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 40 [-]: TEST      R5 0         ; if not R5 then PC := 54
- 41 [-]: JMP       54           ; PC := 54
- 42 [-]: TEST      R1 1         ; if R1 then PC := 46
- 43 [-]: JMP       46           ; PC := 46
- 44 [-]: MOVE      R5 R0        ; R5 := R0
- 45 [-]: RETURN    R5 2         ; return R5
- 46 [-]: GETGLOBAL R5 K6        ; R5 := 0x201191EA
- 47 [-]: LOADK     R6 K7        ; R6 := 0
- 48 [-]: CALL      R5 2 1       ; R5(R6)
- 49 [-]: GETGLOBAL R5 K5        ; R5 := gGameData
- 50 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x6F2E05FD"]
- 51 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 52 [-]: MOVE      R4 R5        ; R4 := R5
- 53 [-]: JMP       37           ; PC := 37
- 54 [-]: SELF      R5 R4 K9     ; R6 := R4; R5 := R4["0x70666039"]
- 55 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 56 [-]: LOADK     R6 K10       ; R6 := 1
- 57 [-]: LEN       R7 R5        ; R7 := # R5
- 58 [-]: LOADK     R8 K10       ; R8 := 1
- 59 [-]: FORPREP   R6 66        ; R6 -= R8; PC := 66
- 60 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
- 61 [-]: GETTABLE  R11 R10 K11  ; R11 := R10["mItemType"]
- 62 [-]: EQ        0 R11 R0     ; if R11 ~= R0 then PC := 66
- 63 [-]: JMP       66           ; PC := 66
- 64 [-]: GETTABLE  R3 R10 K12   ; R3 := R10["mCompleted"]
- 65 [-]: JMP       67           ; PC := 67
- 66 [-]: FORLOOP   R6 60        ; R6 += R8; if R6 <= R7 then begin PC := 60; R9 := R6 end
- 67 [-]: GETGLOBAL R11 K1       ; R11 := _T
- 68 [-]: GETTABLE  R11 R11 K2   ; R11 := R11["CheckQuestCompletionCache"]
- 69 [-]: SETTABLE  R11 R2 R3    ; R11[R2] := R3
- 70 [-]: RETURN    R3 2         ; return R3
- 71 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R2 K0        ; R2 := gClient
+  2 [-]: TEST      R2 1         ; if R2 then PC := 6
+  3 [-]: JMP       6            ; PC := 6
+  4 [-]: MOVE      R2 R1        ; R2 := R1
+  5 [-]: RETURN    R2 2         ; return R2
+  6 [-]: EQ        0 R1 K1      ; if R1 ~= nil then PC := 9
+  7 [-]: JMP       9            ; PC := 9
+  8 [-]: MOVE      R1 R1        ; R1 := R1
+  9 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 10 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 11 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["CheckQuestCompletionCache"]
+ 12 [-]: TEST      R3 1         ; if R3 then PC := 15
+ 13 [-]: JMP       15           ; PC := 15
+ 14 [-]: NEWTABLE  R3 0 0       ; R3 := {}
+ 15 [-]: SETTABLE  R2 K3 R3     ; R2["CheckQuestCompletionCache"] := R3
+ 16 [-]: SELF      R2 R0 K4     ; R3 := R0; R2 := R0["0x1B252E3C"]
+ 17 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 18 [-]: GETGLOBAL R3 K2        ; R3 := _T
+ 19 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["CheckQuestCompletionCache"]
+ 20 [-]: GETTABLE  R3 R3 R2     ; R3 := R3[R2]
+ 21 [-]: EQ        0 R3 K1      ; if R3 ~= nil then PC := 25
+ 22 [-]: JMP       25           ; PC := 25
+ 23 [-]: MOVE      R3 R0        ; R3 := R0
+ 24 [-]: JMP       26           ; PC := 26
+ 25 [-]: RETURN    R3 2         ; return R3
+ 26 [-]: GETGLOBAL R4 K5        ; R4 := 0x400E7765
+ 27 [-]: GETGLOBAL R5 K6        ; R5 := gGameData
+ 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 29 [-]: TEST      R4 0         ; if not R4 then PC := 39
+ 30 [-]: JMP       39           ; PC := 39
+ 31 [-]: TEST      R1 1         ; if R1 then PC := 35
+ 32 [-]: JMP       35           ; PC := 35
+ 33 [-]: MOVE      R4 R0        ; R4 := R0
+ 34 [-]: RETURN    R4 2         ; return R4
+ 35 [-]: GETGLOBAL R4 K7        ; R4 := 0x201191EA
+ 36 [-]: LOADK     R5 K8        ; R5 := 0
+ 37 [-]: CALL      R4 2 1       ; R4(R5)
+ 38 [-]: JMP       26           ; PC := 26
+ 39 [-]: GETGLOBAL R4 K6        ; R4 := gGameData
+ 40 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0x6F2E05FD"]
+ 41 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 42 [-]: GETGLOBAL R5 K5        ; R5 := 0x400E7765
+ 43 [-]: MOVE      R6 R4        ; R6 := R4
+ 44 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 45 [-]: TEST      R5 0         ; if not R5 then PC := 59
+ 46 [-]: JMP       59           ; PC := 59
+ 47 [-]: TEST      R1 1         ; if R1 then PC := 51
+ 48 [-]: JMP       51           ; PC := 51
+ 49 [-]: MOVE      R5 R0        ; R5 := R0
+ 50 [-]: RETURN    R5 2         ; return R5
+ 51 [-]: GETGLOBAL R5 K7        ; R5 := 0x201191EA
+ 52 [-]: LOADK     R6 K8        ; R6 := 0
+ 53 [-]: CALL      R5 2 1       ; R5(R6)
+ 54 [-]: GETGLOBAL R5 K6        ; R5 := gGameData
+ 55 [-]: SELF      R5 R5 K9     ; R6 := R5; R5 := R5["0x6F2E05FD"]
+ 56 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 57 [-]: MOVE      R4 R5        ; R4 := R5
+ 58 [-]: JMP       42           ; PC := 42
+ 59 [-]: SELF      R5 R4 K10    ; R6 := R4; R5 := R4["0x70666039"]
+ 60 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 61 [-]: LOADK     R6 K11       ; R6 := 1
+ 62 [-]: LEN       R7 R5        ; R7 := # R5
+ 63 [-]: LOADK     R8 K11       ; R8 := 1
+ 64 [-]: FORPREP   R6 71        ; R6 -= R8; PC := 71
+ 65 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
+ 66 [-]: GETTABLE  R11 R10 K12  ; R11 := R10["mItemType"]
+ 67 [-]: EQ        0 R11 R0     ; if R11 ~= R0 then PC := 71
+ 68 [-]: JMP       71           ; PC := 71
+ 69 [-]: GETTABLE  R3 R10 K13   ; R3 := R10["mCompleted"]
+ 70 [-]: JMP       72           ; PC := 72
+ 71 [-]: FORLOOP   R6 65        ; R6 += R8; if R6 <= R7 then begin PC := 65; R9 := R6 end
+ 72 [-]: GETGLOBAL R11 K2       ; R11 := _T
+ 73 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["CheckQuestCompletionCache"]
+ 74 [-]: SETTABLE  R11 R2 R3    ; R11[R2] := R3
+ 75 [-]: RETURN    R3 2         ; return R3
+ 76 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 50
+; Defined at line: 56
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -147,7 +152,7 @@ code size: 240
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 54
+; Defined at line: 60
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -184,7 +189,7 @@ code size: 240
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 68
+; Defined at line: 74
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -201,7 +206,7 @@ code size: 240
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 72
+; Defined at line: 78
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0

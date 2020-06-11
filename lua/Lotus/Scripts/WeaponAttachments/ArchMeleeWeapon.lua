@@ -59,26 +59,26 @@ code size: 32
  28 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["0x1B694258"]
  29 [-]: CALL      R3 1 2       ; R3 := R3()
  30 [-]: SELF      R4 R3 K8     ; R5 := R3; R4 := R3["0x15C954A"]
- 31 [-]: GETGLOBAL R6 K6        ; R6 := Game
- 32 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["ADD"]
+ 31 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 32 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["ADD"]
  33 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 34 [-]: SELF      R4 R3 K10    ; R5 := R3; R4 := R3["0x46206C58"]
+ 34 [-]: SELF      R4 R3 K11    ; R5 := R3; R4 := R3["0x46206C58"]
  35 [-]: GETGLOBAL R6 K6        ; R6 := Game
- 36 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["WEAPON_RANGE"]
+ 36 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["WEAPON_RANGE"]
  37 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 38 [-]: SELF      R4 R3 K12    ; R5 := R3; R4 := R3["0x6733C272"]
- 39 [-]: GETGLOBAL R6 K13       ; R6 := extraWeaponRangeForSpace
+ 38 [-]: SELF      R4 R3 K13    ; R5 := R3; R4 := R3["0x6733C272"]
+ 39 [-]: GETGLOBAL R6 K14       ; R6 := extraWeaponRangeForSpace
  40 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 41 [-]: SELF      R4 R3 K14    ; R5 := R3; R4 := R3["0x4BC4C516"]
- 42 [-]: SELF      R6 R0 K15    ; R7 := R0; R6 := R0["0xE2B32C65"]
+ 41 [-]: SELF      R4 R3 K15    ; R5 := R3; R4 := R3["0x4BC4C516"]
+ 42 [-]: SELF      R6 R0 K16    ; R7 := R0; R6 := R0["0xE2B32C65"]
  43 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
  44 [-]: CALL      R4 0 1       ; R4(R5,...)
- 45 [-]: SELF      R4 R3 K16    ; R5 := R3; R4 := R3["0x83670805"]
+ 45 [-]: SELF      R4 R3 K17    ; R5 := R3; R4 := R3["0x83670805"]
  46 [-]: MOVE      R6 R0        ; R6 := R0
  47 [-]: CALL      R4 3 1       ; R4(R5,R6)
  48 [-]: SELF      R4 R1 K4     ; R5 := R1; R4 := R1["0x8DB5D01F"]
  49 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 50 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4["0x3B1B11B9"]
+ 50 [-]: SELF      R4 R4 K18    ; R5 := R4; R4 := R4["0x3B1B11B9"]
  51 [-]: MOVE      R6 R3        ; R6 := R3
  52 [-]: CALL      R4 3 1       ; R4(R5,R6)
  53 [-]: RETURN    R0 1         ; return 
@@ -117,10 +117,10 @@ code size: 32
  22 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xF21555A7"]
  23 [-]: GETGLOBAL R4 K6        ; R4 := Game
  24 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["WEAPON_RANGE"]
- 25 [-]: GETGLOBAL R5 K6        ; R5 := Game
- 26 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["ADD"]
- 27 [-]: GETGLOBAL R6 K9        ; R6 := extraWeaponRangeForSpace
- 28 [-]: SELF      R7 R0 K10    ; R8 := R0; R7 := R0["0xE2B32C65"]
+ 25 [-]: GETGLOBAL R5 K8        ; R5 := Engine
+ 26 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["ADD"]
+ 27 [-]: GETGLOBAL R6 K10       ; R6 := extraWeaponRangeForSpace
+ 28 [-]: SELF      R7 R0 K11    ; R8 := R0; R7 := R0["0xE2B32C65"]
  29 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  30 [-]: MOVE      R8 R0        ; R8 := R0
  31 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)

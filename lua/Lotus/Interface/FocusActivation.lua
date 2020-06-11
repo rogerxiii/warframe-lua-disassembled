@@ -1,7 +1,7 @@
 code size: 195
 code size: 35
 code size: 16
-code size: 119
+code size: 124
 code size: 23
 code size: 17
 code size: 7
@@ -389,7 +389,7 @@ code size: 14
  59 [-]: GETUPVAL  R0 U6        ; R0 := U6
  60 [-]: MOVE      R0 R1        ; R0 := R1
  61 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
- 62 [-]: JMP       119          ; PC := 119
+ 62 [-]: JMP       124          ; PC := 124
  63 [-]: GETUPVAL  R2 U5        ; R2 := U5
  64 [-]: GETTABLE  R2 R2 K13    ; R2 := R2["0x25992394"]
  65 [-]: GETGLOBAL R3 K22       ; R3 := cancelSound
@@ -414,11 +414,11 @@ code size: 14
  84 [-]: MOVE      R2 R1        ; R2 := R1
  85 [-]: CALL      R2 1 1       ; R2()
  86 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 87 [-]: EQ        0 R2 K26     ; if R2 ~= "0x0" then PC := 119
- 88 [-]: JMP       119          ; PC := 119
+ 87 [-]: EQ        0 R2 K26     ; if R2 ~= "0x0" then PC := 124
+ 88 [-]: JMP       124          ; PC := 124
  89 [-]: GETGLOBAL R2 K27       ; R2 := failureDamagePct
- 90 [-]: LT        0 K11 R2     ; if 0 >= R2 then PC := 119
- 91 [-]: JMP       119          ; PC := 119
+ 90 [-]: LT        0 K11 R2     ; if 0 >= R2 then PC := 124
+ 91 [-]: JMP       124          ; PC := 124
  92 [-]: GETGLOBAL R2 K28       ; R2 := gRegion
  93 [-]: SELF      R2 R2 K29    ; R3 := R2; R2 := R2["0x3E2F6BF"]
  94 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -429,24 +429,29 @@ code size: 14
  99 [-]: GETGLOBAL R4 K31       ; R4 := Engine
 100 [-]: GETTABLE  R4 R4 K32    ; R4 := R4["0xFA1ED226"]
 101 [-]: CALL      R4 1 2       ; R4 := R4()
-102 [-]: SETTABLE  R4 K33 R3    ; R4["baseAmount"] := R3
-103 [-]: SELF      R5 R4 K34    ; R6 := R4; R5 := R4["0xC4A45AF8"]
-104 [-]: GETGLOBAL R7 K31       ; R7 := Engine
-105 [-]: GETTABLE  R7 R7 K35    ; R7 := R7["DT_HEALTH_DRAIN"]
-106 [-]: LOADK     R8 K16       ; R8 := 1
-107 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-108 [-]: SELF      R5 R4 K36    ; R6 := R4; R5 := R4["0x535CFE87"]
-109 [-]: GETGLOBAL R7 K37       ; R7 := failureDamageProc
-110 [-]: MOVE      R8 R1        ; R8 := R1
-111 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-112 [-]: SELF      R5 R4 K38    ; R6 := R4; R5 := R4["0xD0B0E6FB"]
-113 [-]: GETGLOBAL R7 K31       ; R7 := Engine
-114 [-]: GETTABLE  R7 R7 K39    ; R7 := R7["TORSO"]
-115 [-]: CALL      R5 3 1       ; R5(R6,R7)
-116 [-]: SELF      R5 R2 K40    ; R6 := R2; R5 := R2["0x4722B671"]
-117 [-]: MOVE      R7 R4        ; R7 := R4
-118 [-]: CALL      R5 3 1       ; R5(R6,R7)
-119 [-]: RETURN    R0 1         ; return 
+102 [-]: SELF      R5 R4 K33    ; R6 := R4; R5 := R4["0xA4DDDB40"]
+103 [-]: GETGLOBAL R7 K31       ; R7 := Engine
+104 [-]: GETTABLE  R7 R7 K34    ; R7 := R7["0xB6D816A9"]
+105 [-]: MOVE      R8 R3        ; R8 := R3
+106 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+107 [-]: CALL      R5 0 1       ; R5(R6,...)
+108 [-]: SELF      R5 R4 K35    ; R6 := R4; R5 := R4["0xC4A45AF8"]
+109 [-]: GETGLOBAL R7 K31       ; R7 := Engine
+110 [-]: GETTABLE  R7 R7 K36    ; R7 := R7["DT_HEALTH_DRAIN"]
+111 [-]: LOADK     R8 K16       ; R8 := 1
+112 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+113 [-]: SELF      R5 R4 K37    ; R6 := R4; R5 := R4["0x535CFE87"]
+114 [-]: GETGLOBAL R7 K38       ; R7 := failureDamageProc
+115 [-]: MOVE      R8 R1        ; R8 := R1
+116 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+117 [-]: SELF      R5 R4 K39    ; R6 := R4; R5 := R4["0xD0B0E6FB"]
+118 [-]: GETGLOBAL R7 K31       ; R7 := Engine
+119 [-]: GETTABLE  R7 R7 K40    ; R7 := R7["TORSO"]
+120 [-]: CALL      R5 3 1       ; R5(R6,R7)
+121 [-]: SELF      R5 R2 K41    ; R6 := R2; R5 := R2["0x4722B671"]
+122 [-]: MOVE      R7 R4        ; R7 := R4
+123 [-]: CALL      R5 3 1       ; R5(R6,R7)
+124 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3.1:

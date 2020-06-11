@@ -588,7 +588,7 @@ code size: 89
 341 [-]: MOVE      R53 R48      ; R53 := R48
 342 [-]: GETGLOBAL R54 K21      ; R54 := Game
 343 [-]: GETTABLE  R54 R54 K77  ; R54 := R54["AVATAR_ARMOUR"]
-344 [-]: GETGLOBAL R55 K21      ; R55 := Game
+344 [-]: GETGLOBAL R55 K13      ; R55 := Engine
 345 [-]: GETTABLE  R55 R55 K78  ; R55 := R55["STACKING_MULTIPLY"]
 346 [-]: MOVE      R56 R49      ; R56 := R49
 347 [-]: CALL      R51 6 1      ; R51(R52,R53,R54,R55,R56)

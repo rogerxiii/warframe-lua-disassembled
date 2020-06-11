@@ -4,7 +4,7 @@ code size: 44
 code size: 11
 code size: 176
 code size: 90
-code size: 203
+code size: 207
 code size: 15
 code size: 202
 code size: 16
@@ -556,14 +556,14 @@ code size: 37
  21 [-]: GETGLOBAL R4 K2        ; R4 := _T
  22 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["gNemesis"]
  23 [-]: GETTABLE  R3 R4 K4     ; R3 := R4["generatedProfile"]
- 24 [-]: JMP       108          ; PC := 108
+ 24 [-]: JMP       112          ; PC := 112
  25 [-]: GETUPVAL  R4 U0        ; R4 := U0
  26 [-]: GETGLOBAL R5 K5        ; R5 := gGameData
  27 [-]: SELF      R5 R5 K6     ; R6 := R5; R5 := R5["0x17358D95"]
  28 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
  29 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
  30 [-]: MOVE      R3 R4        ; R3 := R4
- 31 [-]: JMP       108          ; PC := 108
+ 31 [-]: JMP       112          ; PC := 112
  32 [-]: TEST      R2 1         ; if R2 then PC := 47
  33 [-]: JMP       47           ; PC := 47
  34 [-]: GETGLOBAL R4 K2        ; R4 := _T
@@ -578,7 +578,7 @@ code size: 37
  43 [-]: GETGLOBAL R4 K2        ; R4 := _T
  44 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["gNemesis"]
  45 [-]: GETTABLE  R3 R4 K4     ; R3 := R4["generatedProfile"]
- 46 [-]: JMP       108          ; PC := 108
+ 46 [-]: JMP       112          ; PC := 112
  47 [-]: LOADNIL   R4 R4        ; R4 := nil
  48 [-]: GETUPVAL  R5 U1        ; R5 := U1
  49 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["0x87D2274C"]
@@ -632,110 +632,114 @@ code size: 37
  97 [-]: GETGLOBAL R5 K10       ; R5 := 0x400E7765
  98 [-]: MOVE      R6 R4        ; R6 := R4
  99 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-100 [-]: TEST      R5 0         ; if not R5 then PC := 104
-101 [-]: JMP       104          ; PC := 104
-102 [-]: MOVE      R5 R0        ; R5 := R0
-103 [-]: RETURN    R5 2         ; return R5
-104 [-]: GETUPVAL  R5 U0        ; R5 := U0
-105 [-]: MOVE      R6 R4        ; R6 := R4
-106 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-107 [-]: MOVE      R3 R5        ; R3 := R5
-108 [-]: GETGLOBAL R5 K10       ; R5 := 0x400E7765
-109 [-]: MOVE      R6 R3        ; R6 := R3
+100 [-]: TEST      R5 1         ; if R5 then PC := 106
+101 [-]: JMP       106          ; PC := 106
+102 [-]: SELF      R5 R4 K13    ; R6 := R4; R5 := R4["0xB3F0027"]
+103 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+104 [-]: TEST      R5 1         ; if R5 then PC := 108
+105 [-]: JMP       108          ; PC := 108
+106 [-]: MOVE      R5 R0        ; R5 := R0
+107 [-]: RETURN    R5 2         ; return R5
+108 [-]: GETUPVAL  R5 U0        ; R5 := U0
+109 [-]: MOVE      R6 R4        ; R6 := R4
 110 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-111 [-]: TEST      R5 0         ; if not R5 then PC := 115
-112 [-]: JMP       115          ; PC := 115
-113 [-]: MOVE      R5 R0        ; R5 := R0
-114 [-]: RETURN    R5 2         ; return R5
-115 [-]: GETGLOBAL R5 K13       ; R5 := 0x7C282057
-116 [-]: GETTABLE  R6 R3 K14    ; R6 := R3["mTransmissionSet"]
-117 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-118 [-]: GETGLOBAL R6 K10       ; R6 := 0x400E7765
-119 [-]: MOVE      R7 R5        ; R7 := R5
-120 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-121 [-]: TEST      R6 1         ; if R6 then PC := 203
-122 [-]: JMP       203          ; PC := 203
-123 [-]: GETGLOBAL R6 K15       ; R6 := string
-124 [-]: GETTABLE  R6 R6 K16    ; R6 := R6["0xDE44F664"]
-125 [-]: GETGLOBAL R7 K17       ; R7 := 0x9FAED6BC
-126 [-]: MOVE      R8 R0        ; R8 := R0
-127 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-128 [-]: LOADK     R8 K18       ; R8 := "Created"
-129 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
-130 [-]: TEST      R6 0         ; if not R6 then PC := 143
-131 [-]: JMP       143          ; PC := 143
-132 [-]: GETGLOBAL R6 K10       ; R6 := 0x400E7765
-133 [-]: SELF      R7 R5 K19    ; R8 := R5; R7 := R5["0xD168273F"]
-134 [-]: MOVE      R9 R0        ; R9 := R0
-135 [-]: CALL      R7 3 0       ; R7,... := R7(R8,R9)
-136 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
-137 [-]: TEST      R6 0         ; if not R6 then PC := 143
-138 [-]: JMP       143          ; PC := 143
-139 [-]: GETGLOBAL R6 K20       ; R6 := 0xEC274B1A
-140 [-]: LOADK     R7 K18       ; R7 := "Created"
-141 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-142 [-]: MOVE      R0 R6        ; R0 := R6
-143 [-]: SELF      R6 R5 K19    ; R7 := R5; R6 := R5["0xD168273F"]
-144 [-]: MOVE      R8 R0        ; R8 := R0
-145 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
-146 [-]: GETGLOBAL R7 K10       ; R7 := 0x400E7765
-147 [-]: MOVE      R8 R6        ; R8 := R6
-148 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-149 [-]: TEST      R7 0         ; if not R7 then PC := 153
-150 [-]: JMP       153          ; PC := 153
-151 [-]: MOVE      R7 R0        ; R7 := R0
-152 [-]: RETURN    R7 2         ; return R7
-153 [-]: GETTABLE  R7 R3 K21    ; R7 := R3["mDspEffect"]
-154 [-]: GETGLOBAL R8 K10       ; R8 := 0x400E7765
-155 [-]: MOVE      R9 R7        ; R9 := R7
-156 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-157 [-]: TEST      R8 1         ; if R8 then PC := 174
-158 [-]: JMP       174          ; PC := 174
-159 [-]: GETGLOBAL R8 K2        ; R8 := _T
-160 [-]: GETGLOBAL R9 K2        ; R9 := _T
-161 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["TransmissionDspOverrides"]
-162 [-]: TEST      R9 1         ; if R9 then PC := 165
-163 [-]: JMP       165          ; PC := 165
-164 [-]: NEWTABLE  R9 0 0       ; R9 := {}
-165 [-]: SETTABLE  R8 K22 R9    ; R8["TransmissionDspOverrides"] := R9
-166 [-]: GETGLOBAL R8 K2        ; R8 := _T
-167 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["TransmissionDspOverrides"]
-168 [-]: SELF      R9 R6 K23    ; R10 := R6; R9 := R6["0x1B252E3C"]
-169 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-170 [-]: GETGLOBAL R10 K13      ; R10 := 0x7C282057
-171 [-]: MOVE      R11 R7       ; R11 := R7
-172 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-173 [-]: SETTABLE  R8 R9 R10    ; R8[R9] := R10
-174 [-]: GETGLOBAL R8 K2        ; R8 := _T
-175 [-]: GETGLOBAL R9 K25       ; R9 := UISys
-176 [-]: GETTABLE  R9 R9 K26    ; R9 := R9["0x449B53E0"]
-177 [-]: GETUPVAL  R10 U2       ; R10 := U2
-178 [-]: MOVE      R11 R3       ; R11 := R3
-179 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
-180 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
-181 [-]: SETTABLE  R8 K24 R9    ; R8["NemesisResLoader"] := R9
-182 [-]: GETGLOBAL R8 K2        ; R8 := _T
-183 [-]: SETTABLE  R8 K27 R1    ; R8["NemesisTransmissionPortraitUseLocal"] := R1
-184 [-]: TEST      R1 0         ; if not R1 then PC := 196
-185 [-]: JMP       196          ; PC := 196
-186 [-]: GETUPVAL  R8 U3        ; R8 := U3
-187 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["0x449D27BE"]
-188 [-]: MOVE      R9 R5        ; R9 := R5
-189 [-]: MOVE      R10 R0       ; R10 := R0
-190 [-]: LOADNIL   R11 R11      ; R11 := nil
-191 [-]: GETGLOBAL R12 K0       ; R12 := gRegion
-192 [-]: SELF      R12 R12 K29  ; R13 := R12; R12 := R12["0x3E2F6BF"]
-193 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
-194 [-]: CALL      R8 0 1       ; R8(R9,...)
-195 [-]: JMP       201          ; PC := 201
-196 [-]: GETUPVAL  R8 U3        ; R8 := U3
-197 [-]: GETTABLE  R8 R8 K30    ; R8 := R8["0xFB594D4A"]
-198 [-]: MOVE      R9 R5        ; R9 := R5
-199 [-]: MOVE      R10 R0       ; R10 := R0
-200 [-]: CALL      R8 3 1       ; R8(R9,R10)
-201 [-]: MOVE      R8 R1        ; R8 := R1
-202 [-]: RETURN    R8 2         ; return R8
-203 [-]: RETURN    R0 1         ; return 
+111 [-]: MOVE      R3 R5        ; R3 := R5
+112 [-]: GETGLOBAL R5 K10       ; R5 := 0x400E7765
+113 [-]: MOVE      R6 R3        ; R6 := R3
+114 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+115 [-]: TEST      R5 0         ; if not R5 then PC := 119
+116 [-]: JMP       119          ; PC := 119
+117 [-]: MOVE      R5 R0        ; R5 := R0
+118 [-]: RETURN    R5 2         ; return R5
+119 [-]: GETGLOBAL R5 K14       ; R5 := 0x7C282057
+120 [-]: GETTABLE  R6 R3 K15    ; R6 := R3["mTransmissionSet"]
+121 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+122 [-]: GETGLOBAL R6 K10       ; R6 := 0x400E7765
+123 [-]: MOVE      R7 R5        ; R7 := R5
+124 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+125 [-]: TEST      R6 1         ; if R6 then PC := 207
+126 [-]: JMP       207          ; PC := 207
+127 [-]: GETGLOBAL R6 K16       ; R6 := string
+128 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["0xDE44F664"]
+129 [-]: GETGLOBAL R7 K18       ; R7 := 0x9FAED6BC
+130 [-]: MOVE      R8 R0        ; R8 := R0
+131 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+132 [-]: LOADK     R8 K19       ; R8 := "Created"
+133 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+134 [-]: TEST      R6 0         ; if not R6 then PC := 147
+135 [-]: JMP       147          ; PC := 147
+136 [-]: GETGLOBAL R6 K10       ; R6 := 0x400E7765
+137 [-]: SELF      R7 R5 K20    ; R8 := R5; R7 := R5["0xD168273F"]
+138 [-]: MOVE      R9 R0        ; R9 := R0
+139 [-]: CALL      R7 3 0       ; R7,... := R7(R8,R9)
+140 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+141 [-]: TEST      R6 0         ; if not R6 then PC := 147
+142 [-]: JMP       147          ; PC := 147
+143 [-]: GETGLOBAL R6 K21       ; R6 := 0xEC274B1A
+144 [-]: LOADK     R7 K19       ; R7 := "Created"
+145 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+146 [-]: MOVE      R0 R6        ; R0 := R6
+147 [-]: SELF      R6 R5 K20    ; R7 := R5; R6 := R5["0xD168273F"]
+148 [-]: MOVE      R8 R0        ; R8 := R0
+149 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+150 [-]: GETGLOBAL R7 K10       ; R7 := 0x400E7765
+151 [-]: MOVE      R8 R6        ; R8 := R6
+152 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+153 [-]: TEST      R7 0         ; if not R7 then PC := 157
+154 [-]: JMP       157          ; PC := 157
+155 [-]: MOVE      R7 R0        ; R7 := R0
+156 [-]: RETURN    R7 2         ; return R7
+157 [-]: GETTABLE  R7 R3 K22    ; R7 := R3["mDspEffect"]
+158 [-]: GETGLOBAL R8 K10       ; R8 := 0x400E7765
+159 [-]: MOVE      R9 R7        ; R9 := R7
+160 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+161 [-]: TEST      R8 1         ; if R8 then PC := 178
+162 [-]: JMP       178          ; PC := 178
+163 [-]: GETGLOBAL R8 K2        ; R8 := _T
+164 [-]: GETGLOBAL R9 K2        ; R9 := _T
+165 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["TransmissionDspOverrides"]
+166 [-]: TEST      R9 1         ; if R9 then PC := 169
+167 [-]: JMP       169          ; PC := 169
+168 [-]: NEWTABLE  R9 0 0       ; R9 := {}
+169 [-]: SETTABLE  R8 K23 R9    ; R8["TransmissionDspOverrides"] := R9
+170 [-]: GETGLOBAL R8 K2        ; R8 := _T
+171 [-]: GETTABLE  R8 R8 K23    ; R8 := R8["TransmissionDspOverrides"]
+172 [-]: SELF      R9 R6 K24    ; R10 := R6; R9 := R6["0x1B252E3C"]
+173 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+174 [-]: GETGLOBAL R10 K14      ; R10 := 0x7C282057
+175 [-]: MOVE      R11 R7       ; R11 := R7
+176 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+177 [-]: SETTABLE  R8 R9 R10    ; R8[R9] := R10
+178 [-]: GETGLOBAL R8 K2        ; R8 := _T
+179 [-]: GETGLOBAL R9 K26       ; R9 := UISys
+180 [-]: GETTABLE  R9 R9 K27    ; R9 := R9["0x449B53E0"]
+181 [-]: GETUPVAL  R10 U2       ; R10 := U2
+182 [-]: MOVE      R11 R3       ; R11 := R3
+183 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+184 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
+185 [-]: SETTABLE  R8 K25 R9    ; R8["NemesisResLoader"] := R9
+186 [-]: GETGLOBAL R8 K2        ; R8 := _T
+187 [-]: SETTABLE  R8 K28 R1    ; R8["NemesisTransmissionPortraitUseLocal"] := R1
+188 [-]: TEST      R1 0         ; if not R1 then PC := 200
+189 [-]: JMP       200          ; PC := 200
+190 [-]: GETUPVAL  R8 U3        ; R8 := U3
+191 [-]: GETTABLE  R8 R8 K29    ; R8 := R8["0x449D27BE"]
+192 [-]: MOVE      R9 R5        ; R9 := R5
+193 [-]: MOVE      R10 R0       ; R10 := R0
+194 [-]: LOADNIL   R11 R11      ; R11 := nil
+195 [-]: GETGLOBAL R12 K0       ; R12 := gRegion
+196 [-]: SELF      R12 R12 K30  ; R13 := R12; R12 := R12["0x3E2F6BF"]
+197 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
+198 [-]: CALL      R8 0 1       ; R8(R9,...)
+199 [-]: JMP       205          ; PC := 205
+200 [-]: GETUPVAL  R8 U3        ; R8 := U3
+201 [-]: GETTABLE  R8 R8 K31    ; R8 := R8["0xFB594D4A"]
+202 [-]: MOVE      R9 R5        ; R9 := R5
+203 [-]: MOVE      R10 R0       ; R10 := R0
+204 [-]: CALL      R8 3 1       ; R8(R9,R10)
+205 [-]: MOVE      R8 R1        ; R8 := R1
+206 [-]: RETURN    R8 2         ; return R8
+207 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:

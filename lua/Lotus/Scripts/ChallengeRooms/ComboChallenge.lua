@@ -340,19 +340,19 @@ code size: 29
   6 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x3B1B11B9"]
   7 [-]: GETGLOBAL R4 K3        ; R4 := Game
   8 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["AVATAR_HEALTH_MAX"]
-  9 [-]: GETGLOBAL R5 K3        ; R5 := Game
- 10 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["MULTIPLY"]
- 11 [-]: LOADK     R6 K6        ; R6 := 1.5
+  9 [-]: GETGLOBAL R5 K5        ; R5 := Engine
+ 10 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["MULTIPLY"]
+ 11 [-]: LOADK     R6 K7        ; R6 := 1.5
  12 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  13 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 14 [-]: LE        0 K7 R2      ; if 70 > R2 then PC := 23
+ 14 [-]: LE        0 K8 R2      ; if 70 > R2 then PC := 23
  15 [-]: JMP       23           ; PC := 23
  16 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x3B1B11B9"]
  17 [-]: GETGLOBAL R4 K3        ; R4 := Game
- 18 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["AVATAR_ARMOUR"]
- 19 [-]: GETGLOBAL R5 K3        ; R5 := Game
- 20 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["MULTIPLY"]
- 21 [-]: LOADK     R6 K6        ; R6 := 1.5
+ 18 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["AVATAR_ARMOUR"]
+ 19 [-]: GETGLOBAL R5 K5        ; R5 := Engine
+ 20 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["MULTIPLY"]
+ 21 [-]: LOADK     R6 K7        ; R6 := 1.5
  22 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  23 [-]: RETURN    R0 1         ; return 
 

@@ -10,7 +10,7 @@ code size: 8
 code size: 5
 code size: 103
 code size: 70
-code size: 74
+code size: 67
 code size: 51
 code size: 6
 code size: 6
@@ -983,79 +983,72 @@ code size: 3
 ; Max Stack Size:  7
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: TEST      R0 1         ; if R0 then PC := 74
-  3 [-]: JMP       74           ; PC := 74
+  2 [-]: TEST      R0 1         ; if R0 then PC := 67
+  3 [-]: JMP       67           ; PC := 67
   4 [-]: GETUPVAL  R0 U1        ; R0 := U1
   5 [-]: GETUPVAL  R1 U2        ; R1 := U2
   6 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["VAULT_RECIPES"]
-  7 [-]: EQ        1 R0 R1      ; if R0 == R1 then PC := 17
-  8 [-]: JMP       17           ; PC := 17
-  9 [-]: GETGLOBAL R0 K1        ; R0 := _T
- 10 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["DojoMgr"]
- 11 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["mGameRules"]
- 12 [-]: SELF      R0 R0 K4     ; R1 := R0; R0 := R0["0x8B598ED4"]
- 13 [-]: GETGLOBAL R2 K5        ; R2 := gLotusRailCustomizationGameRulesType
- 14 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 15 [-]: JMP       18           ; PC := 18
- 16 [-]: MOVE      R0 R0        ; R0 := R0
- 17 [-]: MOVE      R0 R1        ; R0 := R1
- 18 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 19 [-]: GETTABLE  R1 R1 K6     ; R1 := R1["0x8E1620BC"]
- 20 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 21 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 22 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["DECOS"]
- 23 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 26
- 24 [-]: JMP       26           ; PC := 26
- 25 [-]: MOVE      R2 R0        ; R2 := R0
- 26 [-]: MOVE      R2 R1        ; R2 := R1
- 27 [-]: MOVE      R3 R0        ; R3 := R0
- 28 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 29 [-]: TEST      R1 1         ; if R1 then PC := 36
- 30 [-]: JMP       36           ; PC := 36
- 31 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 32 [-]: GETGLOBAL R3 K8        ; R3 := Lotus_Game
- 33 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["JsonProcLevelHelper_INVALID_PERMISSION"]
- 34 [-]: CALL      R2 2 1       ; R2(R3)
- 35 [-]: RETURN    R0 1         ; return 
- 36 [-]: GETUPVAL  R2 U5        ; R2 := U5
- 37 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["0x25992394"]
- 38 [-]: GETGLOBAL R3 K11       ; R3 := cancelBuildSound
- 39 [-]: CALL      R2 2 1       ; R2(R3)
- 40 [-]: LOADK     R2 K12       ; R2 := ""
+  7 [-]: EQ        1 R0 R1      ; if R0 == R1 then PC := 10
+  8 [-]: JMP       10           ; PC := 10
+  9 [-]: MOVE      R0 R0        ; R0 := R0
+ 10 [-]: MOVE      R0 R1        ; R0 := R1
+ 11 [-]: GETUPVAL  R1 U3        ; R1 := U3
+ 12 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0x8E1620BC"]
+ 13 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 14 [-]: GETUPVAL  R3 U2        ; R3 := U2
+ 15 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["DECOS"]
+ 16 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 19
+ 17 [-]: JMP       19           ; PC := 19
+ 18 [-]: MOVE      R2 R0        ; R2 := R0
+ 19 [-]: MOVE      R2 R1        ; R2 := R1
+ 20 [-]: MOVE      R3 R0        ; R3 := R0
+ 21 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
+ 22 [-]: TEST      R1 1         ; if R1 then PC := 29
+ 23 [-]: JMP       29           ; PC := 29
+ 24 [-]: GETUPVAL  R2 U4        ; R2 := U4
+ 25 [-]: GETGLOBAL R3 K3        ; R3 := Lotus_Game
+ 26 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["JsonProcLevelHelper_INVALID_PERMISSION"]
+ 27 [-]: CALL      R2 2 1       ; R2(R3)
+ 28 [-]: RETURN    R0 1         ; return 
+ 29 [-]: GETUPVAL  R2 U5        ; R2 := U5
+ 30 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["0x25992394"]
+ 31 [-]: GETGLOBAL R3 K6        ; R3 := cancelBuildSound
+ 32 [-]: CALL      R2 2 1       ; R2(R3)
+ 33 [-]: LOADK     R2 K7        ; R2 := ""
+ 34 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 35 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 36 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["DECOS"]
+ 37 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 41
+ 38 [-]: JMP       41           ; PC := 41
+ 39 [-]: LOADK     R2 K8        ; R2 := "/Lotus/Language/Dojo/CancelDecoConfirmation"
+ 40 [-]: JMP       54           ; PC := 54
  41 [-]: GETUPVAL  R3 U1        ; R3 := U1
  42 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 43 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["DECOS"]
+ 43 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["ROOMS"]
  44 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 48
  45 [-]: JMP       48           ; PC := 48
- 46 [-]: LOADK     R2 K13       ; R2 := "/Lotus/Language/Dojo/CancelDecoConfirmation"
- 47 [-]: JMP       61           ; PC := 61
+ 46 [-]: LOADK     R2 K10       ; R2 := "/Lotus/Language/Dojo/CancelConfirmation"
+ 47 [-]: JMP       54           ; PC := 54
  48 [-]: GETUPVAL  R3 U1        ; R3 := U1
  49 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 50 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["ROOMS"]
- 51 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 55
- 52 [-]: JMP       55           ; PC := 55
- 53 [-]: LOADK     R2 K15       ; R2 := "/Lotus/Language/Dojo/CancelConfirmation"
- 54 [-]: JMP       61           ; PC := 61
- 55 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 56 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 57 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["VAULT_RECIPES"]
- 58 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 61
- 59 [-]: JMP       61           ; PC := 61
- 60 [-]: LOADK     R2 K16       ; R2 := "/Lotus/Language/Dojo/CancelRecipeConfirmation"
- 61 [-]: GETGLOBAL R3 K17       ; R3 := string
- 62 [-]: GETTABLE  R3 R3 K18    ; R3 := R3["0xC6772A8A"]
- 63 [-]: MOVE      R4 R2        ; R4 := R2
- 64 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 65 [-]: LT        0 K19 R3     ; if 0 >= R3 then PC := 74
- 66 [-]: JMP       74           ; PC := 74
- 67 [-]: GETUPVAL  R3 U5        ; R3 := U5
- 68 [-]: GETTABLE  R3 R3 K20    ; R3 := R3["0xB11F032"]
- 69 [-]: MOVE      R4 R2        ; R4 := R2
- 70 [-]: LOADK     R5 K21       ; R5 := "ConfirmCancel"
- 71 [-]: GETGLOBAL R6 K22       ; R6 := Engine
- 72 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["OkCancel"]
- 73 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 74 [-]: RETURN    R0 1         ; return 
+ 50 [-]: GETTABLE  R4 R4 K0     ; R4 := R4["VAULT_RECIPES"]
+ 51 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 54
+ 52 [-]: JMP       54           ; PC := 54
+ 53 [-]: LOADK     R2 K11       ; R2 := "/Lotus/Language/Dojo/CancelRecipeConfirmation"
+ 54 [-]: GETGLOBAL R3 K12       ; R3 := string
+ 55 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["0xC6772A8A"]
+ 56 [-]: MOVE      R4 R2        ; R4 := R2
+ 57 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 58 [-]: LT        0 K14 R3     ; if 0 >= R3 then PC := 67
+ 59 [-]: JMP       67           ; PC := 67
+ 60 [-]: GETUPVAL  R3 U5        ; R3 := U5
+ 61 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["0xB11F032"]
+ 62 [-]: MOVE      R4 R2        ; R4 := R2
+ 63 [-]: LOADK     R5 K16       ; R5 := "ConfirmCancel"
+ 64 [-]: GETGLOBAL R6 K17       ; R6 := Engine
+ 65 [-]: GETTABLE  R6 R6 K18    ; R6 := R6["OkCancel"]
+ 66 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 67 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #10:

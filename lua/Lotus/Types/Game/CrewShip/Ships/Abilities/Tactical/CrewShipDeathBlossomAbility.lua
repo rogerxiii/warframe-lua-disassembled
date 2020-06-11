@@ -197,10 +197,10 @@ code size: 54
  30 [-]: SELF      R9 R6 K10    ; R10 := R6; R9 := R6["0x3B1B11B9"]
  31 [-]: GETGLOBAL R11 K11      ; R11 := Game
  32 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["WEAPON_AMMO_CONSUME_RATE"]
- 33 [-]: GETGLOBAL R12 K11      ; R12 := Game
- 34 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["MULTIPLY"]
+ 33 [-]: GETGLOBAL R12 K13      ; R12 := Engine
+ 34 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["MULTIPLY"]
  35 [-]: GETUPVAL  R13 U3       ; R13 := U3
- 36 [-]: SELF      R14 R7 K14   ; R15 := R7; R14 := R7["0xE2B32C65"]
+ 36 [-]: SELF      R14 R7 K15   ; R15 := R7; R14 := R7["0xE2B32C65"]
  37 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
  38 [-]: CALL      R9 0 1       ; R9(R10,...)
  39 [-]: GETGLOBAL R9 K9        ; R9 := 0x400E7765
@@ -213,8 +213,8 @@ code size: 54
  46 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  47 [-]: TEST      R9 1         ; if R9 then PC := 55
  48 [-]: JMP       55           ; PC := 55
- 49 [-]: SELF      R9 R8 K15    ; R10 := R8; R9 := R8["0x8B598ED4"]
- 50 [-]: SELF      R11 R7 K14   ; R12 := R7; R11 := R7["0xE2B32C65"]
+ 49 [-]: SELF      R9 R8 K16    ; R10 := R8; R9 := R8["0x8B598ED4"]
+ 50 [-]: SELF      R11 R7 K15   ; R12 := R7; R11 := R7["0xE2B32C65"]
  51 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
  52 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
  53 [-]: TEST      R9 1         ; if R9 then PC := 64
@@ -222,13 +222,13 @@ code size: 54
  55 [-]: SELF      R9 R6 K10    ; R10 := R6; R9 := R6["0x3B1B11B9"]
  56 [-]: GETGLOBAL R11 K11      ; R11 := Game
  57 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["WEAPON_AMMO_CONSUME_RATE"]
- 58 [-]: GETGLOBAL R12 K11      ; R12 := Game
- 59 [-]: GETTABLE  R12 R12 K13  ; R12 := R12["MULTIPLY"]
+ 58 [-]: GETGLOBAL R12 K13      ; R12 := Engine
+ 59 [-]: GETTABLE  R12 R12 K14  ; R12 := R12["MULTIPLY"]
  60 [-]: GETUPVAL  R13 U3       ; R13 := U3
- 61 [-]: SELF      R14 R8 K14   ; R15 := R8; R14 := R8["0xE2B32C65"]
+ 61 [-]: SELF      R14 R8 K15   ; R15 := R8; R14 := R8["0xE2B32C65"]
  62 [-]: CALL      R14 2 0      ; R14,... := R14(R15)
  63 [-]: CALL      R9 0 1       ; R9(R10,...)
- 64 [-]: GETGLOBAL R9 K16       ; R9 := 0x201191EA
+ 64 [-]: GETGLOBAL R9 K17       ; R9 := 0x201191EA
  65 [-]: GETUPVAL  R10 U4       ; R10 := U4
  66 [-]: CALL      R9 2 1       ; R9(R10)
  67 [-]: RETURN    R0 1         ; return 
@@ -265,10 +265,10 @@ code size: 54
  20 [-]: SELF      R7 R4 K6     ; R8 := R4; R7 := R4["0xF21555A7"]
  21 [-]: GETGLOBAL R9 K7        ; R9 := Game
  22 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["WEAPON_AMMO_CONSUME_RATE"]
- 23 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 24 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["MULTIPLY"]
+ 23 [-]: GETGLOBAL R10 K9       ; R10 := Engine
+ 24 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["MULTIPLY"]
  25 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 26 [-]: SELF      R12 R5 K10   ; R13 := R5; R12 := R5["0xE2B32C65"]
+ 26 [-]: SELF      R12 R5 K11   ; R13 := R5; R12 := R5["0xE2B32C65"]
  27 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  28 [-]: CALL      R7 0 1       ; R7(R8,...)
  29 [-]: GETGLOBAL R7 K5        ; R7 := 0x400E7765
@@ -281,8 +281,8 @@ code size: 54
  36 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  37 [-]: TEST      R7 1         ; if R7 then PC := 45
  38 [-]: JMP       45           ; PC := 45
- 39 [-]: SELF      R7 R6 K11    ; R8 := R6; R7 := R6["0x8B598ED4"]
- 40 [-]: SELF      R9 R5 K10    ; R10 := R5; R9 := R5["0xE2B32C65"]
+ 39 [-]: SELF      R7 R6 K12    ; R8 := R6; R7 := R6["0x8B598ED4"]
+ 40 [-]: SELF      R9 R5 K11    ; R10 := R5; R9 := R5["0xE2B32C65"]
  41 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
  42 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
  43 [-]: TEST      R7 1         ; if R7 then PC := 54
@@ -290,10 +290,10 @@ code size: 54
  45 [-]: SELF      R7 R4 K6     ; R8 := R4; R7 := R4["0xF21555A7"]
  46 [-]: GETGLOBAL R9 K7        ; R9 := Game
  47 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["WEAPON_AMMO_CONSUME_RATE"]
- 48 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 49 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["MULTIPLY"]
+ 48 [-]: GETGLOBAL R10 K9       ; R10 := Engine
+ 49 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["MULTIPLY"]
  50 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 51 [-]: SELF      R12 R6 K10   ; R13 := R6; R12 := R6["0xE2B32C65"]
+ 51 [-]: SELF      R12 R6 K11   ; R13 := R6; R12 := R6["0xE2B32C65"]
  52 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  53 [-]: CALL      R7 0 1       ; R7(R8,...)
  54 [-]: RETURN    R0 1         ; return 

@@ -453,7 +453,7 @@ code size: 582
  50 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  51 [-]: MOVE      R2 R0        ; R2 := R0
  52 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 53 [-]: SETTABLE  R3 K8 K16    ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 53 [-]: SETTABLE  R3 K8 K16    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  54 [-]: GETUPVAL  R4 U4        ; R4 := U4
  55 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  56 [-]: SETTABLE  R3 K17 K18   ; R3["ValueIcon"] := "<DT_POISON>"
@@ -905,8 +905,8 @@ code size: 582
 220 [-]: SELF      R24 R8 K68   ; R25 := R8; R24 := R8["0x3B1B11B9"]
 221 [-]: GETGLOBAL R26 K13      ; R26 := Game
 222 [-]: GETTABLE  R26 R26 K69  ; R26 := R26["AVATAR_MOVEMENT_SPEED"]
-223 [-]: GETGLOBAL R27 K13      ; R27 := Game
-224 [-]: GETTABLE  R27 R27 K70  ; R27 := R27["STACKING_MULTIPLY"]
+223 [-]: GETGLOBAL R27 K70      ; R27 := Engine
+224 [-]: GETTABLE  R27 R27 K71  ; R27 := R27["STACKING_MULTIPLY"]
 225 [-]: GETUPVAL  R28 U5       ; R28 := U5
 226 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
 227 [-]: GETUPVAL  R24 U6       ; R24 := U6
@@ -918,15 +918,15 @@ code size: 582
 233 [-]: TEST      R24 1        ; if R24 then PC := 249
 234 [-]: JMP       249          ; PC := 249
 235 [-]: GETGLOBAL R24 K17      ; R24 := mOwner
-236 [-]: SELF      R24 R24 K71  ; R25 := R24; R24 := R24["0xE7AE25B5"]
+236 [-]: SELF      R24 R24 K72  ; R25 := R24; R24 := R24["0xE7AE25B5"]
 237 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 238 [-]: TEST      R24 1        ; if R24 then PC := 249
 239 [-]: JMP       249          ; PC := 249
-240 [-]: GETGLOBAL R24 K72      ; R24 := 0x201191EA
+240 [-]: GETGLOBAL R24 K73      ; R24 := 0x201191EA
 241 [-]: LOADK     R25 K7       ; R25 := 0
 242 [-]: CALL      R24 2 1      ; R24(R25)
 243 [-]: GETUPVAL  R24 U6       ; R24 := U6
-244 [-]: GETGLOBAL R25 K73      ; R25 := 0x4CDEF9FF
+244 [-]: GETGLOBAL R25 K74      ; R25 := 0x4CDEF9FF
 245 [-]: CALL      R25 1 2      ; R25 := R25()
 246 [-]: SUB       R24 R24 R25  ; R24 := R24 - R25
 247 [-]: MOVE      R24 R6       ; R24 := R6
@@ -1097,9 +1097,9 @@ code size: 582
  18 [-]: SELF      R5 R5 K6     ; R6 := R5; R5 := R5["0xF21555A7"]
  19 [-]: GETGLOBAL R7 K7        ; R7 := Game
  20 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["AVATAR_MOVEMENT_SPEED"]
- 21 [-]: GETGLOBAL R8 K7        ; R8 := Game
- 22 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["STACKING_MULTIPLY"]
- 23 [-]: GETTABLE  R9 R4 K10    ; R9 := R4["speedBuff"]
+ 21 [-]: GETGLOBAL R8 K9        ; R8 := Engine
+ 22 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["STACKING_MULTIPLY"]
+ 23 [-]: GETTABLE  R9 R4 K11    ; R9 := R4["speedBuff"]
  24 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  25 [-]: RETURN    R0 1         ; return 
 

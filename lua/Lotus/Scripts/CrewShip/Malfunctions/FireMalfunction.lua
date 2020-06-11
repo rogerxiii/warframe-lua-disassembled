@@ -5,7 +5,7 @@ code size: 53
 code size: 12
 code size: 67
 code size: 6
-code size: 80
+code size: 100
 code size: 104
 code size: 66
 code size: 103
@@ -338,22 +338,22 @@ code size: 103
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  12
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
   2 [-]: GETUPVAL  R1 U0        ; R1 := U0
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: TEST      R0 1         ; if R0 then PC := 80
-  5 [-]: JMP       80           ; PC := 80
+  4 [-]: TEST      R0 1         ; if R0 then PC := 100
+  5 [-]: JMP       100          ; PC := 100
   6 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
   7 [-]: GETUPVAL  R1 U1        ; R1 := U1
   8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  9 [-]: TEST      R0 1         ; if R0 then PC := 59
- 10 [-]: JMP       59           ; PC := 59
+  9 [-]: TEST      R0 1         ; if R0 then PC := 79
+ 10 [-]: JMP       79           ; PC := 79
  11 [-]: GETUPVAL  R0 U2        ; R0 := U2
  12 [-]: GETUPVAL  R1 U3        ; R1 := U3
- 13 [-]: LT        0 R1 R0      ; if R1 >= R0 then PC := 59
- 14 [-]: JMP       59           ; PC := 59
+ 13 [-]: LT        0 R1 R0      ; if R1 >= R0 then PC := 79
+ 14 [-]: JMP       79           ; PC := 79
  15 [-]: LOADK     R0 K1        ; R0 := 1
  16 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
  17 [-]: GETUPVAL  R2 U4        ; R2 := U4
@@ -383,8 +383,8 @@ code size: 103
  41 [-]: ADD       R3 R3 R4     ; R3 := R3 + R4
  42 [-]: MOVE      R3 R6        ; R3 := R6
  43 [-]: GETUPVAL  R3 U6        ; R3 := U6
- 44 [-]: LT        0 R2 R3      ; if R2 >= R3 then PC := 59
- 45 [-]: JMP       59           ; PC := 59
+ 44 [-]: LT        0 R2 R3      ; if R2 >= R3 then PC := 79
+ 45 [-]: JMP       79           ; PC := 79
  46 [-]: GETGLOBAL R3 K3        ; R3 := math
  47 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["0xF7005A7B"]
  48 [-]: GETUPVAL  R4 U6        ; R4 := U6
@@ -393,39 +393,59 @@ code size: 103
  51 [-]: SUB       R4 R4 R3     ; R4 := R4 - R3
  52 [-]: MOVE      R4 R6        ; R4 := R6
  53 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 54 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0xC29BD898"]
- 55 [-]: MOVE      R6 R3        ; R6 := R3
- 56 [-]: GETGLOBAL R7 K9        ; R7 := Engine
- 57 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["DT_FIRE"]
- 58 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 59 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 60 [-]: GETGLOBAL R5 K11       ; R5 := _T
- 61 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["RandomFireExtiguishSubroutine"]
- 62 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 63 [-]: TEST      R4 1         ; if R4 then PC := 75
- 64 [-]: JMP       75           ; PC := 75
- 65 [-]: GETUPVAL  R4 U7        ; R4 := U7
- 66 [-]: TEST      R4 1         ; if R4 then PC := 75
- 67 [-]: JMP       75           ; PC := 75
- 68 [-]: GETGLOBAL R4 K11       ; R4 := _T
- 69 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["0x561C10B3"]
- 70 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 71 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 72 [-]: GETUPVAL  R7 U7        ; R7 := U7
- 73 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 74 [-]: MOVE      R4 R7        ; R4 := R7
- 75 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 76 [-]: GETGLOBAL R5 K6        ; R5 := 0x4CDEF9FF
- 77 [-]: CALL      R5 1 2       ; R5 := R5()
- 78 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 79 [-]: MOVE      R4 R2        ; R4 := R2
- 80 [-]: RETURN    R0 1         ; return 
+ 54 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x8DB5D01F"]
+ 55 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 56 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0xC7EA8CA1"]
+ 57 [-]: LOADK     R6 K10       ; R6 := 0
+ 58 [-]: GETGLOBAL R7 K11       ; R7 := Game
+ 59 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["AVATAR_DAMAGE_RESISTANCE"]
+ 60 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
+ 61 [-]: GETGLOBAL R10 K13      ; R10 := Engine
+ 62 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["DT_FIRE"]
+ 63 [-]: GETGLOBAL R11 K15      ; R11 := 0xEC274B1A
+ 64 [-]: CALL      R11 1 0      ; R11,... := R11()
+ 65 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+ 66 [-]: GETGLOBAL R5 K16       ; R5 := 0x6374FD98
+ 67 [-]: SUB       R6 K1 R4     ; R6 := 1 - R4
+ 68 [-]: LOADK     R7 K17       ; R7 := 0.10000000149012
+ 69 [-]: LOADK     R8 K1        ; R8 := 1
+ 70 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
+ 71 [-]: MOVE      R4 R5        ; R4 := R5
+ 72 [-]: MUL       R5 R3 R4     ; R5 := R3 * R4
+ 73 [-]: GETUPVAL  R6 U1        ; R6 := U1
+ 74 [-]: SELF      R6 R6 K18    ; R7 := R6; R6 := R6["0xC29BD898"]
+ 75 [-]: MOVE      R8 R5        ; R8 := R5
+ 76 [-]: GETGLOBAL R9 K13       ; R9 := Engine
+ 77 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["DT_HEALTH_DRAIN"]
+ 78 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 79 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 80 [-]: GETGLOBAL R7 K20       ; R7 := _T
+ 81 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["RandomFireExtiguishSubroutine"]
+ 82 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 83 [-]: TEST      R6 1         ; if R6 then PC := 95
+ 84 [-]: JMP       95           ; PC := 95
+ 85 [-]: GETUPVAL  R6 U7        ; R6 := U7
+ 86 [-]: TEST      R6 1         ; if R6 then PC := 95
+ 87 [-]: JMP       95           ; PC := 95
+ 88 [-]: GETGLOBAL R6 K20       ; R6 := _T
+ 89 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["0x561C10B3"]
+ 90 [-]: GETUPVAL  R7 U0        ; R7 := U0
+ 91 [-]: GETUPVAL  R8 U2        ; R8 := U2
+ 92 [-]: GETUPVAL  R9 U7        ; R9 := U7
+ 93 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
+ 94 [-]: MOVE      R6 R7        ; R6 := R7
+ 95 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 96 [-]: GETGLOBAL R7 K6        ; R7 := 0x4CDEF9FF
+ 97 [-]: CALL      R7 1 2       ; R7 := R7()
+ 98 [-]: ADD       R6 R6 R7     ; R6 := R6 + R7
+ 99 [-]: MOVE      R6 R2        ; R6 := R2
+100 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 119
+; Defined at line: 124
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -540,7 +560,7 @@ code size: 103
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 146
+; Defined at line: 151
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -617,7 +637,7 @@ code size: 103
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 170
+; Defined at line: 175
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0

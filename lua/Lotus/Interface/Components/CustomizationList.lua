@@ -105,7 +105,7 @@ code size: 4
 code size: 52
 code size: 47
 code size: 195
-code size: 609
+code size: 610
 code size: 18
 code size: 66
 code size: 8
@@ -7679,30 +7679,30 @@ code size: 9
 439 [-]: SETTABLE  R24 K93 R25  ; R24["HOW_MANY"] := R25
 440 [-]: CALL      R20 5 2      ; R20 := R20(R21,R22,R23,R24)
 441 [-]: MOVE      R19 R20      ; R19 := R20
-442 [-]: JMP       528          ; PC := 528
+442 [-]: JMP       529          ; PC := 529
 443 [-]: LOADK     R19 K95      ; R19 := "/Lotus/Language/Menu/Store_Owned"
-444 [-]: JMP       528          ; PC := 528
+444 [-]: JMP       529          ; PC := 529
 445 [-]: GETTABLE  R20 R0 K86   ; R20 := R0["CanPreview"]
 446 [-]: TEST      R20 0        ; if not R20 then PC := 450
 447 [-]: JMP       450          ; PC := 450
 448 [-]: LOADK     R19 K96      ; R19 := "/Lotus/Language/OstronCrafting/Crafting_Preview"
-449 [-]: JMP       528          ; PC := 528
+449 [-]: JMP       529          ; PC := 529
 450 [-]: GETGLOBAL R20 K42      ; R20 := 0x400E7765
 451 [-]: GETTABLE  R21 R0 K43   ; R21 := R0["StoreItem"]
 452 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-453 [-]: TEST      R20 1        ; if R20 then PC := 528
-454 [-]: JMP       528          ; PC := 528
+453 [-]: TEST      R20 1        ; if R20 then PC := 529
+454 [-]: JMP       529          ; PC := 529
 455 [-]: GETTABLE  R20 R0 K43   ; R20 := R0["StoreItem"]
 456 [-]: SELF      R20 R20 K97  ; R21 := R20; R20 := R20["0x1170584F"]
 457 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-458 [-]: EQ        1 R20 K40    ; if R20 == "" then PC := 496
-459 [-]: JMP       496          ; PC := 496
+458 [-]: EQ        1 R20 K40    ; if R20 == "" then PC := 497
+459 [-]: JMP       497          ; PC := 497
 460 [-]: GETUPVAL  R20 U5       ; R20 := U5
 461 [-]: GETTABLE  R20 R20 K98  ; R20 := R20["0x9611A506"]
 462 [-]: GETTABLE  R21 R0 K43   ; R21 := R0["StoreItem"]
 463 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-464 [-]: EQ        0 R20 K99    ; if R20 ~= "EXTERNAL" then PC := 496
-465 [-]: JMP       496          ; PC := 496
+464 [-]: EQ        0 R20 K99    ; if R20 ~= "EXTERNAL" then PC := 497
+465 [-]: JMP       497          ; PC := 497
 466 [-]: GETGLOBAL R20 K100     ; R20 := 0x8C64AFA9
 467 [-]: MOVE      R21 R2       ; R21 := R2
 468 [-]: MOVE      R22 R1       ; R22 := R1
@@ -7717,136 +7717,137 @@ code size: 9
 477 [-]: GETGLOBAL R21 K42      ; R21 := 0x400E7765
 478 [-]: MOVE      R22 R20      ; R22 := R20
 479 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-480 [-]: TEST      R21 1        ; if R21 then PC := 528
-481 [-]: JMP       528          ; PC := 528
+480 [-]: TEST      R21 1        ; if R21 then PC := 529
+481 [-]: JMP       529          ; PC := 529
 482 [-]: SELF      R21 R20 K105 ; R22 := R20; R21 := R20["0x654F1092"]
 483 [-]: CALL      R21 2 2      ; R21 := R21(R22)
 484 [-]: GETGLOBAL R22 K42      ; R22 := 0x400E7765
 485 [-]: MOVE      R23 R21      ; R23 := R21
 486 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-487 [-]: TEST      R22 1        ; if R22 then PC := 528
-488 [-]: JMP       528          ; PC := 528
+487 [-]: TEST      R22 1        ; if R22 then PC := 529
+488 [-]: JMP       529          ; PC := 529
 489 [-]: SELF      R22 R21 K106 ; R23 := R21; R22 := R21["0x61D6D605"]
-490 [-]: GETTABLE  R24 R0 K43   ; R24 := R0["StoreItem"]
-491 [-]: SELF      R24 R24 K97  ; R25 := R24; R24 := R24["0x1170584F"]
-492 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
-493 [-]: CALL      R22 0 2      ; R22 := R22(R23,...)
-494 [-]: MOVE      R19 R22      ; R19 := R22
-495 [-]: JMP       528          ; PC := 528
-496 [-]: GETUPVAL  R22 U5       ; R22 := U5
-497 [-]: GETTABLE  R22 R22 K107 ; R22 := R22["0xC5BE56F"]
-498 [-]: GETTABLE  R23 R0 K43   ; R23 := R0["StoreItem"]
-499 [-]: CALL      R22 2 3      ; R22,R23 := R22(R23)
-500 [-]: GETGLOBAL R24 K100     ; R24 := 0x8C64AFA9
-501 [-]: MOVE      R25 R2       ; R25 := R2
-502 [-]: MOVE      R26 R1       ; R26 := R1
-503 [-]: LOADK     R27 K101     ; R27 := ".PriceIcon.gotoAndStop"
-504 [-]: CONCAT    R26 R26 R27  ; R26 := R26 .. R27
-505 [-]: GETUPVAL  R27 U2       ; R27 := U2
-506 [-]: GETTABLE  R27 R27 K19  ; R27 := R27["0xF81722A2"]
-507 [-]: LT        1 K26 R23    ; if 0 < R23 then PC := 510
-508 [-]: JMP       510          ; PC := 510
-509 [-]: MOVE      R28 R0       ; R28 := R0
-510 [-]: MOVE      R28 R1       ; R28 := R1
-511 [-]: LOADK     R29 K108     ; R29 := "Platinum"
-512 [-]: LOADK     R30 K65      ; R30 := "Credits"
-513 [-]: CALL      R27 4 0      ; R27,... := R27(R28,R29,R30)
-514 [-]: CALL      R24 0 1      ; R24(R25,...)
-515 [-]: GETUPVAL  R24 U2       ; R24 := U2
-516 [-]: GETTABLE  R24 R24 K94  ; R24 := R24["0x7E197415"]
-517 [-]: GETUPVAL  R25 U2       ; R25 := U2
-518 [-]: GETTABLE  R25 R25 K19  ; R25 := R25["0xF81722A2"]
-519 [-]: LT        1 K26 R23    ; if 0 < R23 then PC := 522
-520 [-]: JMP       522          ; PC := 522
-521 [-]: MOVE      R26 R0       ; R26 := R0
-522 [-]: MOVE      R26 R1       ; R26 := R1
-523 [-]: MOVE      R27 R23      ; R27 := R23
-524 [-]: MOVE      R28 R22      ; R28 := R22
-525 [-]: CALL      R25 4 0      ; R25,... := R25(R26,R27,R28)
-526 [-]: CALL      R24 0 2      ; R24 := R24(R25,...)
-527 [-]: MOVE      R19 R24      ; R19 := R24
-528 [-]: SELF      R24 R2 K109  ; R25 := R2; R24 := R2["0x17028E8F"]
-529 [-]: MOVE      R26 R1       ; R26 := R1
-530 [-]: LOADK     R27 K110     ; R27 := ".Credits.text"
-531 [-]: CONCAT    R26 R26 R27  ; R26 := R26 .. R27
-532 [-]: MOVE      R27 R19      ; R27 := R19
-533 [-]: CALL      R24 4 1      ; R24(R25,R26,R27)
-534 [-]: SELF      R24 R2 K36   ; R25 := R2; R24 := R2["0x880196A7"]
-535 [-]: MOVE      R26 R1       ; R26 := R1
-536 [-]: LOADK     R27 K65      ; R27 := "Credits"
-537 [-]: LOADK     R28 K111     ; R28 := "_x"
-538 [-]: GETUPVAL  R29 U0       ; R29 := U0
-539 [-]: GETTABLE  R29 R29 K2   ; R29 := R29["ItemSelectionGrid"]
-540 [-]: GETTABLE  R29 R29 K112 ; R29 := R29["mInitCreditsX"]
-541 [-]: GETUPVAL  R30 U2       ; R30 := U2
-542 [-]: GETTABLE  R30 R30 K19  ; R30 := R30["0xF81722A2"]
-543 [-]: GETTABLE  R31 R0 K84   ; R31 := R0["Owned"]
-544 [-]: TEST      R31 1        ; if R31 then PC := 548
-545 [-]: JMP       548          ; PC := 548
-546 [-]: GETTABLE  R31 R0 K86   ; R31 := R0["CanPreview"]
-547 [-]: JMP       550          ; PC := 550
-548 [-]: MOVE      R31 R0       ; R31 := R0
-549 [-]: MOVE      R31 R1       ; R31 := R1
-550 [-]: LOADK     R32 K113     ; R32 := -28
-551 [-]: LOADK     R33 K26      ; R33 := 0
-552 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
-553 [-]: ADD       R29 R29 R30  ; R29 := R29 + R30
-554 [-]: CALL      R24 6 1      ; R24(R25,R26,R27,R28,R29)
-555 [-]: GETGLOBAL R24 K57      ; R24 := 0xF595ADDE
-556 [-]: SELF      R25 R2 K58   ; R26 := R2; R25 := R2["0x6B7B470B"]
-557 [-]: MOVE      R27 R1       ; R27 := R1
-558 [-]: LOADK     R28 K114     ; R28 := ".Credits"
-559 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
-560 [-]: LOADK     R28 K115     ; R28 := "textWidth"
-561 [-]: CALL      R25 4 0      ; R25,... := R25(R26,R27,R28)
-562 [-]: CALL      R24 0 2      ; R24 := R24(R25,...)
-563 [-]: SELF      R25 R2 K36   ; R26 := R2; R25 := R2["0x880196A7"]
-564 [-]: MOVE      R27 R1       ; R27 := R1
-565 [-]: LOADK     R28 K89      ; R28 := "CreditsBg"
-566 [-]: LOADK     R29 K82      ; R29 := "_width"
-567 [-]: GETUPVAL  R30 U2       ; R30 := U2
-568 [-]: GETTABLE  R30 R30 K19  ; R30 := R30["0xF81722A2"]
-569 [-]: GETTABLE  R31 R0 K84   ; R31 := R0["Owned"]
-570 [-]: TEST      R31 1        ; if R31 then PC := 574
-571 [-]: JMP       574          ; PC := 574
-572 [-]: GETTABLE  R31 R0 K86   ; R31 := R0["CanPreview"]
-573 [-]: JMP       576          ; PC := 576
-574 [-]: MOVE      R31 R0       ; R31 := R0
-575 [-]: MOVE      R31 R1       ; R31 := R1
-576 [-]: LOADK     R32 K116     ; R32 := -8
-577 [-]: LOADK     R33 K117     ; R33 := 20
-578 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
-579 [-]: ADD       R30 R24 R30  ; R30 := R24 + R30
-580 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
-581 [-]: SELF      R25 R2 K36   ; R26 := R2; R25 := R2["0x880196A7"]
-582 [-]: MOVE      R27 R1       ; R27 := R1
-583 [-]: LOADK     R28 K89      ; R28 := "CreditsBg"
-584 [-]: LOADK     R29 K118     ; R29 := "_color"
-585 [-]: MOVE      R30 R18      ; R30 := R18
-586 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
-587 [-]: SELF      R25 R2 K36   ; R26 := R2; R25 := R2["0x880196A7"]
-588 [-]: MOVE      R27 R1       ; R27 := R1
-589 [-]: LOADK     R28 K73      ; R28 := "UGCTag"
-590 [-]: LOADK     R29 K38      ; R29 := "_visible"
-591 [-]: GETGLOBAL R30 K42      ; R30 := 0x400E7765
-592 [-]: GETTABLE  R31 R0 K43   ; R31 := R0["StoreItem"]
-593 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-594 [-]: TEST      R30 1        ; if R30 then PC := 600
-595 [-]: JMP       600          ; PC := 600
-596 [-]: GETTABLE  R30 R0 K43   ; R30 := R0["StoreItem"]
-597 [-]: SELF      R30 R30 K119 ; R31 := R30; R30 := R30["0x609B204"]
-598 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-599 [-]: JMP       602          ; PC := 602
-600 [-]: MOVE      R30 R0       ; R30 := R0
-601 [-]: MOVE      R30 R1       ; R30 := R1
-602 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
-603 [-]: SELF      R25 R2 K109  ; R26 := R2; R25 := R2["0x17028E8F"]
-604 [-]: MOVE      R27 R1       ; R27 := R1
-605 [-]: LOADK     R28 K120     ; R28 := ".UGCTag.text"
-606 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
-607 [-]: LOADK     R28 K121     ; R28 := "<UGC>"
-608 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
-609 [-]: RETURN    R0 1         ; return 
+490 [-]: GETUPVAL  R24 U5       ; R24 := U5
+491 [-]: GETTABLE  R24 R24 K107 ; R24 := R24["0xC0822C0B"]
+492 [-]: GETTABLE  R25 R0 K43   ; R25 := R0["StoreItem"]
+493 [-]: CALL      R24 2 0      ; R24,... := R24(R25)
+494 [-]: CALL      R22 0 2      ; R22 := R22(R23,...)
+495 [-]: MOVE      R19 R22      ; R19 := R22
+496 [-]: JMP       529          ; PC := 529
+497 [-]: GETUPVAL  R22 U5       ; R22 := U5
+498 [-]: GETTABLE  R22 R22 K108 ; R22 := R22["0xC5BE56F"]
+499 [-]: GETTABLE  R23 R0 K43   ; R23 := R0["StoreItem"]
+500 [-]: CALL      R22 2 3      ; R22,R23 := R22(R23)
+501 [-]: GETGLOBAL R24 K100     ; R24 := 0x8C64AFA9
+502 [-]: MOVE      R25 R2       ; R25 := R2
+503 [-]: MOVE      R26 R1       ; R26 := R1
+504 [-]: LOADK     R27 K101     ; R27 := ".PriceIcon.gotoAndStop"
+505 [-]: CONCAT    R26 R26 R27  ; R26 := R26 .. R27
+506 [-]: GETUPVAL  R27 U2       ; R27 := U2
+507 [-]: GETTABLE  R27 R27 K19  ; R27 := R27["0xF81722A2"]
+508 [-]: LT        1 K26 R23    ; if 0 < R23 then PC := 511
+509 [-]: JMP       511          ; PC := 511
+510 [-]: MOVE      R28 R0       ; R28 := R0
+511 [-]: MOVE      R28 R1       ; R28 := R1
+512 [-]: LOADK     R29 K109     ; R29 := "Platinum"
+513 [-]: LOADK     R30 K65      ; R30 := "Credits"
+514 [-]: CALL      R27 4 0      ; R27,... := R27(R28,R29,R30)
+515 [-]: CALL      R24 0 1      ; R24(R25,...)
+516 [-]: GETUPVAL  R24 U2       ; R24 := U2
+517 [-]: GETTABLE  R24 R24 K94  ; R24 := R24["0x7E197415"]
+518 [-]: GETUPVAL  R25 U2       ; R25 := U2
+519 [-]: GETTABLE  R25 R25 K19  ; R25 := R25["0xF81722A2"]
+520 [-]: LT        1 K26 R23    ; if 0 < R23 then PC := 523
+521 [-]: JMP       523          ; PC := 523
+522 [-]: MOVE      R26 R0       ; R26 := R0
+523 [-]: MOVE      R26 R1       ; R26 := R1
+524 [-]: MOVE      R27 R23      ; R27 := R23
+525 [-]: MOVE      R28 R22      ; R28 := R22
+526 [-]: CALL      R25 4 0      ; R25,... := R25(R26,R27,R28)
+527 [-]: CALL      R24 0 2      ; R24 := R24(R25,...)
+528 [-]: MOVE      R19 R24      ; R19 := R24
+529 [-]: SELF      R24 R2 K110  ; R25 := R2; R24 := R2["0x17028E8F"]
+530 [-]: MOVE      R26 R1       ; R26 := R1
+531 [-]: LOADK     R27 K111     ; R27 := ".Credits.text"
+532 [-]: CONCAT    R26 R26 R27  ; R26 := R26 .. R27
+533 [-]: MOVE      R27 R19      ; R27 := R19
+534 [-]: CALL      R24 4 1      ; R24(R25,R26,R27)
+535 [-]: SELF      R24 R2 K36   ; R25 := R2; R24 := R2["0x880196A7"]
+536 [-]: MOVE      R26 R1       ; R26 := R1
+537 [-]: LOADK     R27 K65      ; R27 := "Credits"
+538 [-]: LOADK     R28 K112     ; R28 := "_x"
+539 [-]: GETUPVAL  R29 U0       ; R29 := U0
+540 [-]: GETTABLE  R29 R29 K2   ; R29 := R29["ItemSelectionGrid"]
+541 [-]: GETTABLE  R29 R29 K113 ; R29 := R29["mInitCreditsX"]
+542 [-]: GETUPVAL  R30 U2       ; R30 := U2
+543 [-]: GETTABLE  R30 R30 K19  ; R30 := R30["0xF81722A2"]
+544 [-]: GETTABLE  R31 R0 K84   ; R31 := R0["Owned"]
+545 [-]: TEST      R31 1        ; if R31 then PC := 549
+546 [-]: JMP       549          ; PC := 549
+547 [-]: GETTABLE  R31 R0 K86   ; R31 := R0["CanPreview"]
+548 [-]: JMP       551          ; PC := 551
+549 [-]: MOVE      R31 R0       ; R31 := R0
+550 [-]: MOVE      R31 R1       ; R31 := R1
+551 [-]: LOADK     R32 K114     ; R32 := -28
+552 [-]: LOADK     R33 K26      ; R33 := 0
+553 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
+554 [-]: ADD       R29 R29 R30  ; R29 := R29 + R30
+555 [-]: CALL      R24 6 1      ; R24(R25,R26,R27,R28,R29)
+556 [-]: GETGLOBAL R24 K57      ; R24 := 0xF595ADDE
+557 [-]: SELF      R25 R2 K58   ; R26 := R2; R25 := R2["0x6B7B470B"]
+558 [-]: MOVE      R27 R1       ; R27 := R1
+559 [-]: LOADK     R28 K115     ; R28 := ".Credits"
+560 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
+561 [-]: LOADK     R28 K116     ; R28 := "textWidth"
+562 [-]: CALL      R25 4 0      ; R25,... := R25(R26,R27,R28)
+563 [-]: CALL      R24 0 2      ; R24 := R24(R25,...)
+564 [-]: SELF      R25 R2 K36   ; R26 := R2; R25 := R2["0x880196A7"]
+565 [-]: MOVE      R27 R1       ; R27 := R1
+566 [-]: LOADK     R28 K89      ; R28 := "CreditsBg"
+567 [-]: LOADK     R29 K82      ; R29 := "_width"
+568 [-]: GETUPVAL  R30 U2       ; R30 := U2
+569 [-]: GETTABLE  R30 R30 K19  ; R30 := R30["0xF81722A2"]
+570 [-]: GETTABLE  R31 R0 K84   ; R31 := R0["Owned"]
+571 [-]: TEST      R31 1        ; if R31 then PC := 575
+572 [-]: JMP       575          ; PC := 575
+573 [-]: GETTABLE  R31 R0 K86   ; R31 := R0["CanPreview"]
+574 [-]: JMP       577          ; PC := 577
+575 [-]: MOVE      R31 R0       ; R31 := R0
+576 [-]: MOVE      R31 R1       ; R31 := R1
+577 [-]: LOADK     R32 K117     ; R32 := -8
+578 [-]: LOADK     R33 K118     ; R33 := 20
+579 [-]: CALL      R30 4 2      ; R30 := R30(R31,R32,R33)
+580 [-]: ADD       R30 R24 R30  ; R30 := R24 + R30
+581 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
+582 [-]: SELF      R25 R2 K36   ; R26 := R2; R25 := R2["0x880196A7"]
+583 [-]: MOVE      R27 R1       ; R27 := R1
+584 [-]: LOADK     R28 K89      ; R28 := "CreditsBg"
+585 [-]: LOADK     R29 K119     ; R29 := "_color"
+586 [-]: MOVE      R30 R18      ; R30 := R18
+587 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
+588 [-]: SELF      R25 R2 K36   ; R26 := R2; R25 := R2["0x880196A7"]
+589 [-]: MOVE      R27 R1       ; R27 := R1
+590 [-]: LOADK     R28 K73      ; R28 := "UGCTag"
+591 [-]: LOADK     R29 K38      ; R29 := "_visible"
+592 [-]: GETGLOBAL R30 K42      ; R30 := 0x400E7765
+593 [-]: GETTABLE  R31 R0 K43   ; R31 := R0["StoreItem"]
+594 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+595 [-]: TEST      R30 1        ; if R30 then PC := 601
+596 [-]: JMP       601          ; PC := 601
+597 [-]: GETTABLE  R30 R0 K43   ; R30 := R0["StoreItem"]
+598 [-]: SELF      R30 R30 K120 ; R31 := R30; R30 := R30["0x609B204"]
+599 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+600 [-]: JMP       603          ; PC := 603
+601 [-]: MOVE      R30 R0       ; R30 := R0
+602 [-]: MOVE      R30 R1       ; R30 := R1
+603 [-]: CALL      R25 6 1      ; R25(R26,R27,R28,R29,R30)
+604 [-]: SELF      R25 R2 K110  ; R26 := R2; R25 := R2["0x17028E8F"]
+605 [-]: MOVE      R27 R1       ; R27 := R1
+606 [-]: LOADK     R28 K121     ; R28 := ".UGCTag.text"
+607 [-]: CONCAT    R27 R27 R28  ; R27 := R27 .. R28
+608 [-]: LOADK     R28 K122     ; R28 := "<UGC>"
+609 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
+610 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3.59:

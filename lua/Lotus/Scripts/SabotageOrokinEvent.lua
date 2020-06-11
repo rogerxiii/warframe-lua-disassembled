@@ -175,7 +175,7 @@ code size: 50
   2 [-]: CALL      R3 2 2       ; R3 := R3(R4)
   3 [-]: SELF      R3 R3 K1     ; R4 := R3; R3 := R3["0x3B1B11B9"]
   4 [-]: MOVE      R5 R1        ; R5 := R1
-  5 [-]: GETGLOBAL R6 K2        ; R6 := Game
+  5 [-]: GETGLOBAL R6 K2        ; R6 := Engine
   6 [-]: GETTABLE  R6 R6 K3     ; R6 := R6["MULTIPLY"]
   7 [-]: MOVE      R7 R2        ; R7 := R2
   8 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
@@ -192,7 +192,7 @@ code size: 50
  19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  20 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  21 [-]: MOVE      R6 R1        ; R6 := R1
- 22 [-]: GETGLOBAL R7 K2        ; R7 := Game
+ 22 [-]: GETGLOBAL R7 K2        ; R7 := Engine
  23 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["MULTIPLY"]
  24 [-]: MOVE      R8 R2        ; R8 := R2
  25 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)

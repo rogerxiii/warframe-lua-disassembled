@@ -299,7 +299,7 @@ code size: 174
  39 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  40 [-]: MOVE      R2 R0        ; R2 := R0
  41 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 42 [-]: SETTABLE  R3 K8 K14    ; R3["Label"] := "/Game/AVATAR_ABILITY_DURATION"
+ 42 [-]: SETTABLE  R3 K8 K14    ; R3["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY_DURATION"
  43 [-]: GETUPVAL  R4 U3        ; R4 := U3
  44 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  45 [-]: SETTABLE  R3 K15 K16   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"

@@ -1497,15 +1497,15 @@ code size: 125
 112 [-]: SELF      R3 R2 K19    ; R4 := R2; R3 := R2["0xF21555A7"]
 113 [-]: GETGLOBAL R5 K20       ; R5 := Game
 114 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["AVATAR_ARMOUR"]
-115 [-]: GETGLOBAL R6 K20       ; R6 := Game
-116 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["MULTIPLY"]
+115 [-]: GETGLOBAL R6 K22       ; R6 := Engine
+116 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["MULTIPLY"]
 117 [-]: GETUPVAL  R7 U9        ; R7 := U9
 118 [-]: GETUPVAL  R8 U8        ; R8 := U8
 119 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
 120 [-]: SUB       R7 K3 R7     ; R7 := 100 - R7
 121 [-]: DIV       R7 R7 K3     ; R7 := R7 / 100
 122 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
-123 [-]: GETGLOBAL R10 K23      ; R10 := Engine
+123 [-]: GETGLOBAL R10 K22      ; R10 := Engine
 124 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["DT_ANY"]
 125 [-]: GETGLOBAL R11 K25      ; R11 := 0xEC274B1A
 126 [-]: CALL      R11 1 2      ; R11 := R11()
@@ -1520,14 +1520,14 @@ code size: 125
 135 [-]: SELF      R3 R2 K28    ; R4 := R2; R3 := R2["0x3B1B11B9"]
 136 [-]: GETGLOBAL R5 K20       ; R5 := Game
 137 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["AVATAR_ARMOUR"]
-138 [-]: GETGLOBAL R6 K20       ; R6 := Game
-139 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["MULTIPLY"]
+138 [-]: GETGLOBAL R6 K22       ; R6 := Engine
+139 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["MULTIPLY"]
 140 [-]: GETUPVAL  R7 U8        ; R7 := U8
 141 [-]: MUL       R7 R1 R7     ; R7 := R1 * R7
 142 [-]: SUB       R7 K3 R7     ; R7 := 100 - R7
 143 [-]: DIV       R7 R7 K3     ; R7 := R7 / 100
 144 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
-145 [-]: GETGLOBAL R10 K23      ; R10 := Engine
+145 [-]: GETGLOBAL R10 K22      ; R10 := Engine
 146 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["DT_ANY"]
 147 [-]: GETGLOBAL R11 K25      ; R11 := 0xEC274B1A
 148 [-]: CALL      R11 1 2      ; R11 := R11()

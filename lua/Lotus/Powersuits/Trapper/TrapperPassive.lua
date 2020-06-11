@@ -87,8 +87,8 @@ code size: 29
  22 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0x3B1B11B9"]
  23 [-]: GETGLOBAL R4 K7        ; R4 := Game
  24 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["AVATAR_CROWD_CONTROL_DAMAGE"]
- 25 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 26 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["STACKING_MULTIPLY"]
+ 25 [-]: GETGLOBAL R5 K9        ; R5 := Engine
+ 26 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["STACKING_MULTIPLY"]
  27 [-]: GETUPVAL  R6 U1        ; R6 := U1
  28 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  29 [-]: RETURN    R0 1         ; return 
@@ -127,8 +127,8 @@ code size: 29
  22 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0xF21555A7"]
  23 [-]: GETGLOBAL R4 K7        ; R4 := Game
  24 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["AVATAR_CROWD_CONTROL_DAMAGE"]
- 25 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 26 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["STACKING_MULTIPLY"]
+ 25 [-]: GETGLOBAL R5 K9        ; R5 := Engine
+ 26 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["STACKING_MULTIPLY"]
  27 [-]: GETUPVAL  R6 U1        ; R6 := U1
  28 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  29 [-]: RETURN    R0 1         ; return 

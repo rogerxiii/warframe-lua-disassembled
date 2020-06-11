@@ -543,7 +543,7 @@ code size: 129
  22 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  23 [-]: MOVE      R2 R0        ; R2 := R0
  24 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 25 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 25 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  26 [-]: GETUPVAL  R4 U3        ; R4 := U3
  27 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  28 [-]: SETTABLE  R3 K11 K12   ; R3["ValueIcon"] := "<DT_ELECTRICITY>"
@@ -561,7 +561,7 @@ code size: 129
  40 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  41 [-]: MOVE      R2 R0        ; R2 := R0
  42 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 43 [-]: SETTABLE  R3 K8 K14    ; R3["Label"] := "/Game/WEAPON_PROC_CHANCE"
+ 43 [-]: SETTABLE  R3 K8 K14    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_CHANCE"
  44 [-]: GETGLOBAL R4 K15       ; R4 := math
  45 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["0xF7005A7B"]
  46 [-]: GETUPVAL  R5 U6        ; R5 := U6
@@ -1008,7 +1008,7 @@ code size: 129
  77 [-]: SELF      R14 R14 K32  ; R15 := R14; R14 := R14["0x3B1B11B9"]
  78 [-]: GETGLOBAL R16 K33      ; R16 := Game
  79 [-]: GETTABLE  R16 R16 K34  ; R16 := R16["AVATAR_ABILITY_STRENGTH"]
- 80 [-]: GETGLOBAL R17 K33      ; R17 := Game
+ 80 [-]: GETGLOBAL R17 K27      ; R17 := Engine
  81 [-]: GETTABLE  R17 R17 K35  ; R17 := R17["STACKING_MULTIPLY"]
  82 [-]: MOVE      R18 R7       ; R18 := R7
  83 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)

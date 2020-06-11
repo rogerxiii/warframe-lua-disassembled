@@ -148,38 +148,38 @@ code size: 73
  39 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["0x1B694258"]
  40 [-]: CALL      R5 1 2       ; R5 := R5()
  41 [-]: SELF      R6 R5 K14    ; R7 := R5; R6 := R5["0x15C954A"]
- 42 [-]: GETGLOBAL R8 K12       ; R8 := Game
- 43 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["STACKING_MULTIPLY"]
+ 42 [-]: GETGLOBAL R8 K15       ; R8 := Engine
+ 43 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["STACKING_MULTIPLY"]
  44 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 45 [-]: SELF      R6 R5 K16    ; R7 := R5; R6 := R5["0x46206C58"]
+ 45 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x46206C58"]
  46 [-]: GETGLOBAL R8 K12       ; R8 := Game
- 47 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["AVATAR_SLIDE_FRICTION"]
+ 47 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["AVATAR_SLIDE_FRICTION"]
  48 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 49 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0x6733C272"]
+ 49 [-]: SELF      R6 R5 K19    ; R7 := R5; R6 := R5["0x6733C272"]
  50 [-]: MOVE      R8 R4        ; R8 := R4
  51 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 52 [-]: SELF      R6 R2 K19    ; R7 := R2; R6 := R2["0x3B1B11B9"]
+ 52 [-]: SELF      R6 R2 K20    ; R7 := R2; R6 := R2["0x3B1B11B9"]
  53 [-]: MOVE      R8 R5        ; R8 := R5
  54 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 55 [-]: SELF      R6 R5 K16    ; R7 := R5; R6 := R5["0x46206C58"]
+ 55 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x46206C58"]
  56 [-]: GETGLOBAL R8 K12       ; R8 := Game
- 57 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["AVATAR_SLIDE_BOOST"]
+ 57 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["AVATAR_SLIDE_BOOST"]
  58 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 59 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0x6733C272"]
+ 59 [-]: SELF      R6 R5 K19    ; R7 := R5; R6 := R5["0x6733C272"]
  60 [-]: MOVE      R8 R3        ; R8 := R3
  61 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 62 [-]: SELF      R6 R2 K19    ; R7 := R2; R6 := R2["0x3B1B11B9"]
+ 62 [-]: SELF      R6 R2 K20    ; R7 := R2; R6 := R2["0x3B1B11B9"]
  63 [-]: MOVE      R8 R5        ; R8 := R5
  64 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 65 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0x6733C272"]
+ 65 [-]: SELF      R6 R5 K19    ; R7 := R5; R6 := R5["0x6733C272"]
  66 [-]: UNM       R8 R3        ; R8 := - R3
  67 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 68 [-]: SELF      R6 R5 K21    ; R7 := R5; R6 := R5["0xD6538985"]
- 69 [-]: GETGLOBAL R8 K22       ; R8 := Engine
+ 68 [-]: SELF      R6 R5 K22    ; R7 := R5; R6 := R5["0xD6538985"]
+ 69 [-]: GETGLOBAL R8 K15       ; R8 := Engine
  70 [-]: GETTABLE  R8 R8 K23    ; R8 := R8["PM_IN_AIR"]
  71 [-]: MOVE      R9 R1        ; R9 := R1
  72 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 73 [-]: SELF      R6 R2 K19    ; R7 := R2; R6 := R2["0x3B1B11B9"]
+ 73 [-]: SELF      R6 R2 K20    ; R7 := R2; R6 := R2["0x3B1B11B9"]
  74 [-]: MOVE      R8 R5        ; R8 := R5
  75 [-]: CALL      R6 3 1       ; R6(R7,R8)
  76 [-]: RETURN    R0 1         ; return 
@@ -232,38 +232,38 @@ code size: 73
  36 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["0x1B694258"]
  37 [-]: CALL      R5 1 2       ; R5 := R5()
  38 [-]: SELF      R6 R5 K13    ; R7 := R5; R6 := R5["0x15C954A"]
- 39 [-]: GETGLOBAL R8 K11       ; R8 := Game
- 40 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["STACKING_MULTIPLY"]
+ 39 [-]: GETGLOBAL R8 K14       ; R8 := Engine
+ 40 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["STACKING_MULTIPLY"]
  41 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 42 [-]: SELF      R6 R5 K15    ; R7 := R5; R6 := R5["0x46206C58"]
+ 42 [-]: SELF      R6 R5 K16    ; R7 := R5; R6 := R5["0x46206C58"]
  43 [-]: GETGLOBAL R8 K11       ; R8 := Game
- 44 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["AVATAR_SLIDE_FRICTION"]
+ 44 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["AVATAR_SLIDE_FRICTION"]
  45 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 46 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x6733C272"]
+ 46 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0x6733C272"]
  47 [-]: MOVE      R8 R4        ; R8 := R4
  48 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 49 [-]: SELF      R6 R2 K18    ; R7 := R2; R6 := R2["0xF21555A7"]
+ 49 [-]: SELF      R6 R2 K19    ; R7 := R2; R6 := R2["0xF21555A7"]
  50 [-]: MOVE      R8 R5        ; R8 := R5
  51 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 52 [-]: SELF      R6 R5 K15    ; R7 := R5; R6 := R5["0x46206C58"]
+ 52 [-]: SELF      R6 R5 K16    ; R7 := R5; R6 := R5["0x46206C58"]
  53 [-]: GETGLOBAL R8 K11       ; R8 := Game
- 54 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["AVATAR_SLIDE_BOOST"]
+ 54 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["AVATAR_SLIDE_BOOST"]
  55 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 56 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x6733C272"]
+ 56 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0x6733C272"]
  57 [-]: MOVE      R8 R3        ; R8 := R3
  58 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 59 [-]: SELF      R6 R2 K18    ; R7 := R2; R6 := R2["0xF21555A7"]
+ 59 [-]: SELF      R6 R2 K19    ; R7 := R2; R6 := R2["0xF21555A7"]
  60 [-]: MOVE      R8 R5        ; R8 := R5
  61 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 62 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x6733C272"]
+ 62 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0x6733C272"]
  63 [-]: UNM       R8 R3        ; R8 := - R3
  64 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 65 [-]: SELF      R6 R5 K20    ; R7 := R5; R6 := R5["0xD6538985"]
- 66 [-]: GETGLOBAL R8 K21       ; R8 := Engine
+ 65 [-]: SELF      R6 R5 K21    ; R7 := R5; R6 := R5["0xD6538985"]
+ 66 [-]: GETGLOBAL R8 K14       ; R8 := Engine
  67 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["PM_IN_AIR"]
  68 [-]: MOVE      R9 R1        ; R9 := R1
  69 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 70 [-]: SELF      R6 R2 K18    ; R7 := R2; R6 := R2["0xF21555A7"]
+ 70 [-]: SELF      R6 R2 K19    ; R7 := R2; R6 := R2["0xF21555A7"]
  71 [-]: MOVE      R8 R5        ; R8 := R5
  72 [-]: CALL      R6 3 1       ; R6(R7,R8)
  73 [-]: RETURN    R0 1         ; return 

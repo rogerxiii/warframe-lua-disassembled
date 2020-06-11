@@ -1,9 +1,9 @@
-code size: 21
+code size: 26
 code size: 5
-code size: 4
+code size: 15
 code size: 13
 code size: 49
-code size: 41
+code size: 61
 code size: 61
 code size: 106
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -14,35 +14,40 @@ code size: 106
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  4
+; Max Stack Size:  5
 
-  1 [-]: CLOSURE   R0 0         ; R0 := closure(Function #1)
-  2 [-]: CLOSURE   R1 1         ; R1 := closure(Function #2)
-  3 [-]: CLOSURE   R2 2         ; R2 := closure(Function #3)
-  4 [-]: CLOSURE   R3 3         ; R3 := closure(Function #4)
-  5 [-]: SETGLOBAL R3 K0        ; NpcEvaluateAbility := R3
-  6 [-]: SETGLOBAL R3 K1        ; 0xECF1EA57 := R3
-  7 [-]: CLOSURE   R3 4         ; R3 := closure(Function #5)
-  8 [-]: MOVE      R0 R2        ; R0 := R2
-  9 [-]: SETGLOBAL R3 K2        ; Shimmer := R3
- 10 [-]: SETGLOBAL R3 K3        ; 0xA58BE53A := R3
- 11 [-]: CLOSURE   R3 5         ; R3 := closure(Function #6)
- 12 [-]: MOVE      R0 R2        ; R0 := R2
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
+  2 [-]: LOADK     R1 K1        ; R1 := "UnlitAtten"
+  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  4 [-]: CLOSURE   R1 0         ; R1 := closure(Function #1)
+  5 [-]: CLOSURE   R2 1         ; R2 := closure(Function #2)
+  6 [-]: MOVE      R0 R0        ; R0 := R0
+  7 [-]: CLOSURE   R3 2         ; R3 := closure(Function #3)
+  8 [-]: CLOSURE   R4 3         ; R4 := closure(Function #4)
+  9 [-]: SETGLOBAL R4 K2        ; NpcEvaluateAbility := R4
+ 10 [-]: SETGLOBAL R4 K3        ; 0xECF1EA57 := R4
+ 11 [-]: CLOSURE   R4 4         ; R4 := closure(Function #5)
+ 12 [-]: MOVE      R0 R3        ; R0 := R3
  13 [-]: MOVE      R0 R0        ; R0 := R0
- 14 [-]: SETGLOBAL R3 K4        ; ActivateAbility := R3
- 15 [-]: SETGLOBAL R3 K5        ; 0xCC0B19E0 := R3
- 16 [-]: CLOSURE   R3 6         ; R3 := closure(Function #7)
- 17 [-]: MOVE      R0 R2        ; R0 := R2
+ 14 [-]: SETGLOBAL R4 K4        ; Shimmer := R4
+ 15 [-]: SETGLOBAL R4 K5        ; 0xA58BE53A := R4
+ 16 [-]: CLOSURE   R4 5         ; R4 := closure(Function #6)
+ 17 [-]: MOVE      R0 R3        ; R0 := R3
  18 [-]: MOVE      R0 R1        ; R0 := R1
- 19 [-]: SETGLOBAL R3 K6        ; DeactivateAbility := R3
- 20 [-]: SETGLOBAL R3 K7        ; 0x1FDB8A0 := R3
- 21 [-]: RETURN    R0 1         ; return 
+ 19 [-]: SETGLOBAL R4 K6        ; ActivateAbility := R4
+ 20 [-]: SETGLOBAL R4 K7        ; 0xCC0B19E0 := R4
+ 21 [-]: CLOSURE   R4 6         ; R4 := closure(Function #7)
+ 22 [-]: MOVE      R0 R3        ; R0 := R3
+ 23 [-]: MOVE      R0 R2        ; R0 := R2
+ 24 [-]: SETGLOBAL R4 K8        ; DeactivateAbility := R4
+ 25 [-]: SETGLOBAL R4 K9        ; 0x1FDB8A0 := R4
+ 26 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 15
+; Defined at line: 17
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -58,22 +63,33 @@ code size: 106
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 19
-; #Upvalues:       0
+; Defined at line: 21
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  4
+; Max Stack Size:  9
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x68B7FFA6"]
   2 [-]: MOVE      R3 R1        ; R3 := R1
   3 [-]: CALL      R1 3 1       ; R1(R2,R3)
-  4 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETGLOBAL R1 K1        ; R1 := attenuateShimmer
+  5 [-]: TEST      R1 0         ; if not R1 then PC := 15
+  6 [-]: JMP       15           ; PC := 15
+  7 [-]: SELF      R1 R0 K2     ; R2 := R0; R1 := R0["0xD124E361"]
+  8 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  9 [-]: LOADK     R4 K3        ; R4 := 1
+ 10 [-]: LOADK     R5 K4        ; R5 := 0
+ 11 [-]: LOADK     R6 K4        ; R6 := 0
+ 12 [-]: LOADK     R7 K4        ; R7 := 0
+ 13 [-]: MOVE      R8 R1        ; R8 := R1
+ 14 [-]: CALL      R1 8 1       ; R1(R2,R3,R4,R5,R6,R7,R8)
+ 15 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 23
+; Defined at line: 28
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -97,7 +113,7 @@ code size: 106
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 31
+; Defined at line: 36
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -157,11 +173,11 @@ code size: 106
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 56
-; #Upvalues:       1
+; Defined at line: 61
+; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  11
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
@@ -182,34 +198,54 @@ code size: 106
  17 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
  18 [-]: MOVE      R4 R0        ; R4 := R0
  19 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 20 [-]: TEST      R3 1         ; if R3 then PC := 41
- 21 [-]: JMP       41           ; PC := 41
+ 20 [-]: TEST      R3 1         ; if R3 then PC := 61
+ 21 [-]: JMP       61           ; PC := 61
  22 [-]: GETGLOBAL R3 K1        ; R3 := _T
  23 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["gCloakShimmerData"]
  24 [-]: GETTABLE  R3 R3 R1     ; R3 := R3[R1]
- 25 [-]: TEST      R3 0         ; if not R3 then PC := 41
- 26 [-]: JMP       41           ; PC := 41
+ 25 [-]: TEST      R3 0         ; if not R3 then PC := 61
+ 26 [-]: JMP       61           ; PC := 61
  27 [-]: GETGLOBAL R3 K4        ; R3 := 0x4CDEF9FF
  28 [-]: CALL      R3 1 2       ; R3 := R3()
  29 [-]: SUB       R2 R2 R3     ; R2 := R2 - R3
- 30 [-]: LE        0 R2 K5      ; if R2 > 0 then PC := 37
- 31 [-]: JMP       37           ; PC := 37
- 32 [-]: GETGLOBAL R2 K3        ; R2 := shimmerPeriod
- 33 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0["0xAB436EF2"]
- 34 [-]: GETGLOBAL R5 K7        ; R5 := hiddenShimmer
- 35 [-]: GETGLOBAL R6 K8        ; R6 := EMPTY_SYMBOL
- 36 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 37 [-]: GETGLOBAL R3 K9        ; R3 := 0x201191EA
- 38 [-]: LOADK     R4 K5        ; R4 := 0
- 39 [-]: CALL      R3 2 1       ; R3(R4)
- 40 [-]: JMP       17           ; PC := 17
- 41 [-]: RETURN    R0 1         ; return 
+ 30 [-]: GETGLOBAL R3 K5        ; R3 := attenuateShimmer
+ 31 [-]: TEST      R3 0         ; if not R3 then PC := 46
+ 32 [-]: JMP       46           ; PC := 46
+ 33 [-]: SELF      R3 R0 K6     ; R4 := R0; R3 := R0["0xD124E361"]
+ 34 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 35 [-]: GETGLOBAL R6 K7        ; R6 := math
+ 36 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["0x8B011038"]
+ 37 [-]: LOADK     R7 K9        ; R7 := 0
+ 38 [-]: GETGLOBAL R8 K3        ; R8 := shimmerPeriod
+ 39 [-]: DIV       R8 R2 R8     ; R8 := R2 / R8
+ 40 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 41 [-]: LOADK     R7 K9        ; R7 := 0
+ 42 [-]: LOADK     R8 K9        ; R8 := 0
+ 43 [-]: LOADK     R9 K9        ; R9 := 0
+ 44 [-]: MOVE      R10 R1       ; R10 := R1
+ 45 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
+ 46 [-]: LE        0 R2 K9      ; if R2 > 0 then PC := 57
+ 47 [-]: JMP       57           ; PC := 57
+ 48 [-]: GETGLOBAL R2 K3        ; R2 := shimmerPeriod
+ 49 [-]: SELF      R3 R0 K10    ; R4 := R0; R3 := R0["0xAB436EF2"]
+ 50 [-]: GETGLOBAL R5 K11       ; R5 := hiddenShimmer
+ 51 [-]: GETGLOBAL R6 K12       ; R6 := EMPTY_SYMBOL
+ 52 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
+ 53 [-]: GETGLOBAL R3 K13       ; R3 := singleShimmer
+ 54 [-]: TEST      R3 0         ; if not R3 then PC := 57
+ 55 [-]: JMP       57           ; PC := 57
+ 56 [-]: JMP       61           ; PC := 61
+ 57 [-]: GETGLOBAL R3 K14       ; R3 := 0x201191EA
+ 58 [-]: LOADK     R4 K9        ; R4 := 0
+ 59 [-]: CALL      R3 2 1       ; R3(R4)
+ 60 [-]: JMP       17           ; PC := 17
+ 61 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 73
+; Defined at line: 84
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -281,7 +317,7 @@ code size: 106
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 103
+; Defined at line: 114
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0

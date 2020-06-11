@@ -529,7 +529,7 @@ code size: 116
  76 [-]: GETGLOBAL R6 K0        ; R6 := mMovie
  77 [-]: SELF      R6 R6 K18    ; R7 := R6; R6 := R6["0x17028E8F"]
  78 [-]: LOADK     R8 K19       ; R8 := "Scope.Reticle.ZoomBuffDescription.text"
- 79 [-]: LOADK     R9 K20       ; R9 := "/Game/WEAPON_CRIT_DAMAGE"
+ 79 [-]: LOADK     R9 K20       ; R9 := "/Lotus/Language/Labels/WEAPON_CRIT_DAMAGE"
  80 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  81 [-]: GETGLOBAL R6 K0        ; R6 := mMovie
  82 [-]: SELF      R6 R6 K1     ; R7 := R6; R6 := R6["0x1C19D966"]

@@ -487,7 +487,7 @@ code size: 38
  55 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["0xE6450C9D"]
  56 [-]: MOVE      R8 R0        ; R8 := R0
  57 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 58 [-]: SETTABLE  R9 K16 K20   ; R9["Label"] := "/Game/AVATAR_ABILITY"
+ 58 [-]: SETTABLE  R9 K16 K20   ; R9["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY"
  59 [-]: GETGLOBAL R10 K22      ; R10 := math
  60 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["0xF7005A7B"]
  61 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -535,7 +535,7 @@ code size: 38
  25 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  26 [-]: MOVE      R3 R1        ; R3 := R1
  27 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 28 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Game/AVATAR_ABILITY_RANGE"
+ 28 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY_RANGE"
  29 [-]: GETUPVAL  R5 U1        ; R5 := U1
  30 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
  31 [-]: SETTABLE  R4 K11 K12   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -1574,7 +1574,7 @@ code size: 38
 138 [-]: CALL      R24 2 2      ; R24 := R24(R25)
 139 [-]: GETGLOBAL R25 K46      ; R25 := Game
 140 [-]: GETTABLE  R25 R25 K47  ; R25 := R25["AVATAR_MOVEMENT_SPEED"]
-141 [-]: GETGLOBAL R26 K46      ; R26 := Game
+141 [-]: GETGLOBAL R26 K28      ; R26 := Engine
 142 [-]: GETTABLE  R26 R26 K48  ; R26 := R26["MULTIPLY"]
 143 [-]: GETUPVAL  R27 U3       ; R27 := U3
 144 [-]: SUB       R27 K49 R27  ; R27 := 1 - R27
@@ -1863,7 +1863,7 @@ code size: 38
 427 [-]: CALL      R47 2 2      ; R47 := R47(R48)
 428 [-]: GETGLOBAL R48 K46      ; R48 := Game
 429 [-]: GETTABLE  R48 R48 K47  ; R48 := R48["AVATAR_MOVEMENT_SPEED"]
-430 [-]: GETGLOBAL R49 K46      ; R49 := Game
+430 [-]: GETGLOBAL R49 K28      ; R49 := Engine
 431 [-]: GETTABLE  R49 R49 K48  ; R49 := R49["MULTIPLY"]
 432 [-]: GETUPVAL  R50 U3       ; R50 := U3
 433 [-]: SUB       R50 K49 R50  ; R50 := 1 - R50

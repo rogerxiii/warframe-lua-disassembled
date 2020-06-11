@@ -419,7 +419,7 @@ code size: 72
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/AVATAR_ABILITY"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY"
  69 [-]: GETUPVAL  R10 U1       ; R10 := U1
  70 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  71 [-]: SETTABLE  R9 K23 K24   ; R9["ValueIcon"] := "<ENERGY>"
@@ -460,7 +460,7 @@ code size: 72
  22 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  23 [-]: MOVE      R3 R1        ; R3 := R1
  24 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 25 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Game/WEAPON_RANGE"
+ 25 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  26 [-]: GETUPVAL  R5 U1        ; R5 := U1
  27 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
  28 [-]: SETTABLE  R4 K11 K12   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"

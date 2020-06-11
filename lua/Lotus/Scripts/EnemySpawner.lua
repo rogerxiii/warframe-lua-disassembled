@@ -3,7 +3,7 @@ code size: 50
 code size: 4
 code size: 3
 code size: 41
-code size: 51
+code size: 58
 code size: 22
 code size: 274
 code size: 16
@@ -256,57 +256,64 @@ code size: 295
   4 [-]: TEST      R2 0         ; if not R2 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: LOADK     R2 K1        ; R2 := ""
-  8 [-]: GETGLOBAL R3 K2        ; R3 := gRegion
-  9 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0xB1B9A25F"]
- 10 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 11 [-]: EQ        0 R3 K4      ; if R3 ~= 1 then PC := 25
- 12 [-]: JMP       25           ; PC := 25
- 13 [-]: LOADK     R3 K5        ; R3 := "/Lotus/Language/Game/"
- 14 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 15 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["0xF81722A2"]
- 16 [-]: EQ        1 R1 K4      ; if R1 == 1 then PC := 19
- 17 [-]: JMP       19           ; PC := 19
- 18 [-]: MOVE      R5 R0        ; R5 := R0
- 19 [-]: MOVE      R5 R1        ; R5 := R1
- 20 [-]: LOADK     R6 K7        ; R6 := "SoloPlayerSpawnedEnemy"
- 21 [-]: LOADK     R7 K8        ; R7 := "SoloPlayerSpawnedEnemies"
- 22 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 23 [-]: CONCAT    R2 R3 R4     ; R2 := R3 .. R4
- 24 [-]: JMP       36           ; PC := 36
- 25 [-]: LOADK     R3 K5        ; R3 := "/Lotus/Language/Game/"
- 26 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 27 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["0xF81722A2"]
- 28 [-]: EQ        1 R1 K4      ; if R1 == 1 then PC := 31
- 29 [-]: JMP       31           ; PC := 31
- 30 [-]: MOVE      R5 R0        ; R5 := R0
- 31 [-]: MOVE      R5 R1        ; R5 := R1
- 32 [-]: LOADK     R6 K9        ; R6 := "PlayerSpawnedEnemy"
- 33 [-]: LOADK     R7 K10       ; R7 := "PlayerSpawnedEnemies"
- 34 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 35 [-]: CONCAT    R2 R3 R4     ; R2 := R3 .. R4
- 36 [-]: GETGLOBAL R3 K11       ; R3 := _T
- 37 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["0xA3639E71"]
- 38 [-]: GETGLOBAL R4 K13       ; R4 := 0xE6DC43B0
- 39 [-]: MOVE      R5 R2        ; R5 := R2
- 40 [-]: NEWTABLE  R6 0 2       ; R6 := {}
- 41 [-]: SELF      R7 R0 K15    ; R8 := R0; R7 := R0["0x144A28F9"]
- 42 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 43 [-]: SETTABLE  R6 K14 R7    ; R6["PLAYERNAME"] := R7
- 44 [-]: SETTABLE  R6 K16 R1    ; R6["NUMENEMIES"] := R1
- 45 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 46 [-]: LOADK     R5 K17       ; R5 := 5
- 47 [-]: MOVE      R6 R1        ; R6 := R1
- 48 [-]: LOADNIL   R7 R7        ; R7 := nil
- 49 [-]: MOVE      R8 R0        ; R8 := R0
- 50 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
- 51 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+  8 [-]: GETGLOBAL R3 K1        ; R3 := _T
+  9 [-]: GETTABLE  R3 R3 K2     ; R3 := R3["ShowImpactMessage"]
+ 10 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 11 [-]: TEST      R2 0         ; if not R2 then PC := 14
+ 12 [-]: JMP       14           ; PC := 14
+ 13 [-]: RETURN    R0 1         ; return 
+ 14 [-]: LOADK     R2 K3        ; R2 := ""
+ 15 [-]: GETGLOBAL R3 K4        ; R3 := gRegion
+ 16 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0xB1B9A25F"]
+ 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 18 [-]: EQ        0 R3 K6      ; if R3 ~= 1 then PC := 32
+ 19 [-]: JMP       32           ; PC := 32
+ 20 [-]: LOADK     R3 K7        ; R3 := "/Lotus/Language/Game/"
+ 21 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 22 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0xF81722A2"]
+ 23 [-]: EQ        1 R1 K6      ; if R1 == 1 then PC := 26
+ 24 [-]: JMP       26           ; PC := 26
+ 25 [-]: MOVE      R5 R0        ; R5 := R0
+ 26 [-]: MOVE      R5 R1        ; R5 := R1
+ 27 [-]: LOADK     R6 K9        ; R6 := "SoloPlayerSpawnedEnemy"
+ 28 [-]: LOADK     R7 K10       ; R7 := "SoloPlayerSpawnedEnemies"
+ 29 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+ 30 [-]: CONCAT    R2 R3 R4     ; R2 := R3 .. R4
+ 31 [-]: JMP       43           ; PC := 43
+ 32 [-]: LOADK     R3 K7        ; R3 := "/Lotus/Language/Game/"
+ 33 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 34 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["0xF81722A2"]
+ 35 [-]: EQ        1 R1 K6      ; if R1 == 1 then PC := 38
+ 36 [-]: JMP       38           ; PC := 38
+ 37 [-]: MOVE      R5 R0        ; R5 := R0
+ 38 [-]: MOVE      R5 R1        ; R5 := R1
+ 39 [-]: LOADK     R6 K11       ; R6 := "PlayerSpawnedEnemy"
+ 40 [-]: LOADK     R7 K12       ; R7 := "PlayerSpawnedEnemies"
+ 41 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+ 42 [-]: CONCAT    R2 R3 R4     ; R2 := R3 .. R4
+ 43 [-]: GETGLOBAL R3 K1        ; R3 := _T
+ 44 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["0xA3639E71"]
+ 45 [-]: GETGLOBAL R4 K14       ; R4 := 0xE6DC43B0
+ 46 [-]: MOVE      R5 R2        ; R5 := R2
+ 47 [-]: NEWTABLE  R6 0 2       ; R6 := {}
+ 48 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0["0x144A28F9"]
+ 49 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 50 [-]: SETTABLE  R6 K15 R7    ; R6["PLAYERNAME"] := R7
+ 51 [-]: SETTABLE  R6 K17 R1    ; R6["NUMENEMIES"] := R1
+ 52 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 53 [-]: LOADK     R5 K18       ; R5 := 5
+ 54 [-]: MOVE      R6 R1        ; R6 := R1
+ 55 [-]: LOADNIL   R7 R7        ; R7 := nil
+ 56 [-]: MOVE      R8 R0        ; R8 := R0
+ 57 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
+ 58 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 84
+; Defined at line: 90
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -339,7 +346,7 @@ code size: 295
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 91
+; Defined at line: 97
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -624,7 +631,7 @@ code size: 295
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 177
+; Defined at line: 183
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -651,7 +658,7 @@ code size: 295
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 183
+; Defined at line: 189
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -676,7 +683,7 @@ code size: 295
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 191
+; Defined at line: 197
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -720,7 +727,7 @@ code size: 295
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 203
+; Defined at line: 209
 ; #Upvalues:       11
 ; #Parameters:     0
 ; Is_vararg:       0

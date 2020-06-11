@@ -137,11 +137,11 @@ code size: 138
  53 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0xF21555A7"]
  54 [-]: GETGLOBAL R9 K14       ; R9 := Game
  55 [-]: GETTABLE  R9 R9 K15    ; R9 := R9["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 56 [-]: GETGLOBAL R10 K14      ; R10 := Game
- 57 [-]: GETTABLE  R10 R10 K16  ; R10 := R10["ADD"]
+ 56 [-]: GETGLOBAL R10 K16      ; R10 := Engine
+ 57 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["ADD"]
  58 [-]: MOVE      R11 R2       ; R11 := R2
  59 [-]: LOADNIL   R12 R13      ; R12 := R13 := nil
- 60 [-]: GETGLOBAL R14 K17      ; R14 := Engine
+ 60 [-]: GETGLOBAL R14 K16      ; R14 := Engine
  61 [-]: GETTABLE  R14 R14 K18  ; R14 := R14["DT_FIRE"]
  62 [-]: CALL      R7 8 1       ; R7(R8,R9,R10,R11,R12,R13,R14)
  63 [-]: FORLOOP   R3 51        ; R3 += R5; if R3 <= R4 then begin PC := 51; R6 := R3 end
@@ -290,11 +290,11 @@ code size: 138
 128 [-]: SELF      R10 R10 K27  ; R11 := R10; R10 := R10["0x3B1B11B9"]
 129 [-]: GETGLOBAL R12 K28      ; R12 := Game
 130 [-]: GETTABLE  R12 R12 K29  ; R12 := R12["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
-131 [-]: GETGLOBAL R13 K28      ; R13 := Game
-132 [-]: GETTABLE  R13 R13 K30  ; R13 := R13["ADD"]
+131 [-]: GETGLOBAL R13 K30      ; R13 := Engine
+132 [-]: GETTABLE  R13 R13 K31  ; R13 := R13["ADD"]
 133 [-]: MOVE      R14 R5       ; R14 := R5
 134 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
-135 [-]: GETGLOBAL R17 K31      ; R17 := Engine
+135 [-]: GETGLOBAL R17 K30      ; R17 := Engine
 136 [-]: GETTABLE  R17 R17 K32  ; R17 := R17["DT_FIRE"]
 137 [-]: CALL      R10 8 1      ; R10(R11,R12,R13,R14,R15,R16,R17)
 138 [-]: RETURN    R0 1         ; return 

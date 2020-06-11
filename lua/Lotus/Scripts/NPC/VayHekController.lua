@@ -1365,7 +1365,7 @@ code size: 323
 366 [-]: SELF      R35 R35 K77  ; R36 := R35; R35 := R35["0x3B1B11B9"]
 367 [-]: GETGLOBAL R37 K78      ; R37 := Game
 368 [-]: GETTABLE  R37 R37 K79  ; R37 := R37["AVATAR_MOVEMENT_SPEED"]
-369 [-]: GETGLOBAL R38 K78      ; R38 := Game
+369 [-]: GETGLOBAL R38 K22      ; R38 := Engine
 370 [-]: GETTABLE  R38 R38 K80  ; R38 := R38["MULTIPLY"]
 371 [-]: LOADK     R39 K81      ; R39 := 2.5
 372 [-]: CALL      R35 5 1      ; R35(R36,R37,R38,R39)
@@ -1417,7 +1417,7 @@ code size: 323
 418 [-]: SELF      R40 R40 K77  ; R41 := R40; R40 := R40["0x3B1B11B9"]
 419 [-]: GETGLOBAL R42 K78      ; R42 := Game
 420 [-]: GETTABLE  R42 R42 K79  ; R42 := R42["AVATAR_MOVEMENT_SPEED"]
-421 [-]: GETGLOBAL R43 K78      ; R43 := Game
+421 [-]: GETGLOBAL R43 K22      ; R43 := Engine
 422 [-]: GETTABLE  R43 R43 K80  ; R43 := R43["MULTIPLY"]
 423 [-]: LOADK     R44 K82      ; R44 := 0.60000002384186
 424 [-]: CALL      R40 5 1      ; R40(R41,R42,R43,R44)
@@ -1648,7 +1648,7 @@ code size: 323
  48 [-]: SELF      R5 R5 K22    ; R6 := R5; R5 := R5["0x3B1B11B9"]
  49 [-]: GETGLOBAL R7 K23       ; R7 := Game
  50 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["AVATAR_MOVEMENT_SPEED"]
- 51 [-]: GETGLOBAL R8 K23       ; R8 := Game
+ 51 [-]: GETGLOBAL R8 K18       ; R8 := Engine
  52 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["MULTIPLY"]
  53 [-]: LOADK     R9 K26       ; R9 := 2.5
  54 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)

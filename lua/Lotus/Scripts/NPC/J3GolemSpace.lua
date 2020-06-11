@@ -353,31 +353,31 @@ code size: 123
   8 [-]: SELF      R1 R1 K5     ; R2 := R1; R1 := R1["0x3B1B11B9"]
   9 [-]: GETGLOBAL R3 K6        ; R3 := Game
  10 [-]: GETTABLE  R3 R3 K7     ; R3 := R3["AVATAR_DAMAGE_RESISTANCE"]
- 11 [-]: GETGLOBAL R4 K6        ; R4 := Game
- 12 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["SET"]
- 13 [-]: LOADK     R5 K9        ; R5 := 2
+ 11 [-]: GETGLOBAL R4 K8        ; R4 := Engine
+ 12 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["SET"]
+ 13 [-]: LOADK     R5 K10       ; R5 := 2
  14 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
- 15 [-]: SELF      R1 R0 K10    ; R2 := R0; R1 := R0["0x15D4DAEE"]
- 16 [-]: GETGLOBAL R3 K11       ; R3 := devourerSpawnPointType
+ 15 [-]: SELF      R1 R0 K11    ; R2 := R0; R1 := R0["0x15D4DAEE"]
+ 16 [-]: GETGLOBAL R3 K12       ; R3 := devourerSpawnPointType
  17 [-]: CALL      R1 3 2       ; R1 := R1(R2,R3)
- 18 [-]: GETGLOBAL R2 K12       ; R2 := 0x400E7765
+ 18 [-]: GETGLOBAL R2 K13       ; R2 := 0x400E7765
  19 [-]: MOVE      R3 R1        ; R3 := R1
  20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  21 [-]: TEST      R2 0         ; if not R2 then PC := 24
  22 [-]: JMP       24           ; PC := 24
  23 [-]: RETURN    R0 1         ; return 
  24 [-]: NEWTABLE  R2 3 0       ; R2 := {}
- 25 [-]: LOADK     R3 K13       ; R3 := 1
- 26 [-]: LOADK     R4 K9        ; R4 := 2
- 27 [-]: LOADK     R5 K14       ; R5 := 3
+ 25 [-]: LOADK     R3 K14       ; R3 := 1
+ 26 [-]: LOADK     R4 K10       ; R4 := 2
+ 27 [-]: LOADK     R5 K15       ; R5 := 3
  28 [-]: SETLIST   R2 3 1       ; R2[(1-1)*FPF+i] := R(2+i), 1 <= i <= 3
  29 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 30 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["SpaceGolemStage"]
- 31 [-]: LT        0 R3 K16     ; if R3 >= 4 then PC := 69
+ 30 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["SpaceGolemStage"]
+ 31 [-]: LT        0 R3 K17     ; if R3 >= 4 then PC := 69
  32 [-]: JMP       69           ; PC := 69
  33 [-]: GETGLOBAL R3 K0        ; R3 := _T
  34 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 35 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["SpaceGolemStage"]
+ 35 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["SpaceGolemStage"]
  36 [-]: GETTABLE  R4 R2 R4     ; R4 := R2[R4]
  37 [-]: SETTABLE  R3 K1 R4     ; R3["j3GolemSpaceNumDevourersSpawned"] := R4
  38 [-]: GETUPVAL  R3 U0        ; R3 := U0
@@ -386,15 +386,15 @@ code size: 123
  41 [-]: CALL      R3 3 1       ; R3(R4,R5)
  42 [-]: LOADK     R3 K2        ; R3 := 0
  43 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 44 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["PlayersInside"]
+ 44 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["PlayersInside"]
  45 [-]: LEN       R4 R4        ; R4 := # R4
  46 [-]: LE        0 R4 K2      ; if R4 > 0 then PC := 56
  47 [-]: JMP       56           ; PC := 56
  48 [-]: GETGLOBAL R4 K3        ; R4 := 0x201191EA
- 49 [-]: LOADK     R5 K13       ; R5 := 1
+ 49 [-]: LOADK     R5 K14       ; R5 := 1
  50 [-]: CALL      R4 2 1       ; R4(R5)
- 51 [-]: ADD       R3 R3 K13    ; R3 := R3 + 1
- 52 [-]: LT        0 K18 R3     ; if 20 >= R3 then PC := 43
+ 51 [-]: ADD       R3 R3 K14    ; R3 := R3 + 1
+ 52 [-]: LT        0 K19 R3     ; if 20 >= R3 then PC := 43
  53 [-]: JMP       43           ; PC := 43
  54 [-]: JMP       56           ; PC := 56
  55 [-]: JMP       43           ; PC := 43
@@ -402,27 +402,27 @@ code size: 123
  57 [-]: MOVE      R5 R0        ; R5 := R0
  58 [-]: CALL      R4 2 1       ; R4(R5)
  59 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 60 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["PlayersInside"]
+ 60 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["PlayersInside"]
  61 [-]: LEN       R4 R4        ; R4 := # R4
  62 [-]: LT        0 K2 R4      ; if 0 >= R4 then PC := 29
  63 [-]: JMP       29           ; PC := 29
  64 [-]: GETGLOBAL R4 K3        ; R4 := 0x201191EA
- 65 [-]: LOADK     R5 K19       ; R5 := 0.10000000149012
+ 65 [-]: LOADK     R5 K20       ; R5 := 0.10000000149012
  66 [-]: CALL      R4 2 1       ; R4(R5)
  67 [-]: JMP       59           ; PC := 59
  68 [-]: JMP       29           ; PC := 29
  69 [-]: GETGLOBAL R4 K3        ; R4 := 0x201191EA
- 70 [-]: LOADK     R5 K20       ; R5 := 4.5
+ 70 [-]: LOADK     R5 K21       ; R5 := 4.5
  71 [-]: CALL      R4 2 1       ; R4(R5)
  72 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 73 [-]: GETTABLE  R4 R4 K21    ; R4 := R4["0xA3639E71"]
- 74 [-]: LOADK     R5 K22       ; R5 := "You're Winner!"
- 75 [-]: LOADK     R6 K23       ; R6 := 5
+ 73 [-]: GETTABLE  R4 R4 K22    ; R4 := R4["0xA3639E71"]
+ 74 [-]: LOADK     R5 K23       ; R5 := "You're Winner!"
+ 75 [-]: LOADK     R6 K24       ; R6 := 5
  76 [-]: MOVE      R7 R1        ; R7 := R1
  77 [-]: LOADNIL   R8 R8        ; R8 := nil
  78 [-]: MOVE      R9 R0        ; R9 := R0
  79 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
- 80 [-]: SELF      R4 R0 K24    ; R5 := R0; R4 := R0["0xA5110D8A"]
+ 80 [-]: SELF      R4 R0 K25    ; R5 := R0; R4 := R0["0xA5110D8A"]
  81 [-]: CALL      R4 2 1       ; R4(R5)
  82 [-]: RETURN    R0 1         ; return 
 

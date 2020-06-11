@@ -130,22 +130,22 @@ code size: 41
  20 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  21 [-]: GETGLOBAL R6 K8        ; R6 := Game
  22 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
- 23 [-]: GETGLOBAL R7 K8        ; R7 := Game
- 24 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["MULTIPLY"]
- 25 [-]: LOADK     R8 K11       ; R8 := 0.5
+ 23 [-]: GETGLOBAL R7 K10       ; R7 := Engine
+ 24 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["MULTIPLY"]
+ 25 [-]: LOADK     R8 K12       ; R8 := 0.5
  26 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  27 [-]: SELF      R4 R1 K6     ; R5 := R1; R4 := R1["0x8DB5D01F"]
  28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  29 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  30 [-]: GETGLOBAL R6 K8        ; R6 := Game
- 31 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["AVATAR_AFTERBURNER_MULTIPLIER"]
- 32 [-]: GETGLOBAL R7 K8        ; R7 := Game
- 33 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["MULTIPLY"]
- 34 [-]: LOADK     R8 K13       ; R8 := 0
+ 31 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["AVATAR_AFTERBURNER_MULTIPLIER"]
+ 32 [-]: GETGLOBAL R7 K10       ; R7 := Engine
+ 33 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["MULTIPLY"]
+ 34 [-]: LOADK     R8 K14       ; R8 := 0
  35 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 36 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1["0xB26452A2"]
+ 36 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1["0xB26452A2"]
  37 [-]: GETGLOBAL R6 K2        ; R6 := 0xEC274B1A
- 38 [-]: LOADK     R7 K15       ; R7 := "MonitorMine"
+ 38 [-]: LOADK     R7 K16       ; R7 := "MonitorMine"
  39 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  40 [-]: MOVE      R7 R0        ; R7 := R0
  41 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
@@ -182,18 +182,18 @@ code size: 41
  19 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0xF21555A7"]
  20 [-]: GETGLOBAL R5 K5        ; R5 := Game
  21 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["AVATAR_MOVEMENT_SPEED"]
- 22 [-]: GETGLOBAL R6 K5        ; R6 := Game
- 23 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["MULTIPLY"]
- 24 [-]: LOADK     R7 K8        ; R7 := 0.5
+ 22 [-]: GETGLOBAL R6 K7        ; R6 := Engine
+ 23 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["MULTIPLY"]
+ 24 [-]: LOADK     R7 K9        ; R7 := 0.5
  25 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  26 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1["0x8DB5D01F"]
  27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  28 [-]: SELF      R3 R3 K4     ; R4 := R3; R3 := R3["0xF21555A7"]
  29 [-]: GETGLOBAL R5 K5        ; R5 := Game
- 30 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["AVATAR_AFTERBURNER_MULTIPLIER"]
- 31 [-]: GETGLOBAL R6 K5        ; R6 := Game
- 32 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["MULTIPLY"]
- 33 [-]: LOADK     R7 K10       ; R7 := 0
+ 30 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_AFTERBURNER_MULTIPLIER"]
+ 31 [-]: GETGLOBAL R6 K7        ; R6 := Engine
+ 32 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["MULTIPLY"]
+ 33 [-]: LOADK     R7 K11       ; R7 := 0
  34 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  35 [-]: RETURN    R0 1         ; return 
 

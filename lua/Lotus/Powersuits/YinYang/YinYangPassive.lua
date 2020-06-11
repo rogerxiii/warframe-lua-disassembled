@@ -110,8 +110,8 @@ code size: 12
  25 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0x3B1B11B9"]
  26 [-]: GETGLOBAL R4 K8        ; R4 := Game
  27 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["AVATAR_PICKUP_BONUS_AMOUNT"]
- 28 [-]: GETGLOBAL R5 K8        ; R5 := Game
- 29 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["ADD"]
+ 28 [-]: GETGLOBAL R5 K10       ; R5 := Engine
+ 29 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["ADD"]
  30 [-]: GETUPVAL  R6 U2        ; R6 := U2
  31 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  32 [-]: RETURN    R0 1         ; return 
@@ -153,8 +153,8 @@ code size: 12
  25 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0xF21555A7"]
  26 [-]: GETGLOBAL R4 K8        ; R4 := Game
  27 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["AVATAR_PICKUP_BONUS_AMOUNT"]
- 28 [-]: GETGLOBAL R5 K8        ; R5 := Game
- 29 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["ADD"]
+ 28 [-]: GETGLOBAL R5 K10       ; R5 := Engine
+ 29 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["ADD"]
  30 [-]: GETUPVAL  R6 U2        ; R6 := U2
  31 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  32 [-]: RETURN    R0 1         ; return 

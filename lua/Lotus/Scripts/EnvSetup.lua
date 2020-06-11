@@ -11,7 +11,7 @@ code size: 388
 code size: 69
 code size: 46
 code size: 39
-code size: 115
+code size: 118
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\EnvSetup.luac 
 
@@ -1332,7 +1332,7 @@ code size: 115
  49 [-]: GETGLOBAL R5 K17       ; R5 := 0xECFDD17
  50 [-]: GETTABLE  R6 R0 K5     ; R6 := R0["buddyAgents"]
  51 [-]: CALL      R5 2 4       ; R5,R6,R7 := R5(R6)
- 52 [-]: JMP       113          ; PC := 113
+ 52 [-]: JMP       116          ; PC := 116
  53 [-]: GETGLOBAL R10 K18      ; R10 := 0x6374FD98
  54 [-]: GETTABLE  R11 R0 K19   ; R11 := R0["minEnemyLevel"]
  55 [-]: GETGLOBAL R12 K20      ; R12 := 0x7FD4B57D
@@ -1356,8 +1356,8 @@ code size: 115
  73 [-]: GETGLOBAL R12 K4       ; R12 := 0x400E7765
  74 [-]: MOVE      R13 R11      ; R13 := R11
  75 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 76 [-]: TEST      R12 1        ; if R12 then PC := 113
- 77 [-]: JMP       113          ; PC := 113
+ 76 [-]: TEST      R12 1        ; if R12 then PC := 116
+ 77 [-]: JMP       116          ; PC := 116
  78 [-]: SELF      R12 R11 K28  ; R13 := R11; R12 := R11["0x80B14403"]
  79 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  80 [-]: SELF      R13 R12 K29  ; R14 := R12; R13 := R12["0xB03674DF"]
@@ -1393,8 +1393,11 @@ code size: 115
 110 [-]: SELF      R14 R14 K35  ; R15 := R14; R14 := R14["0xE5D1A9FC"]
 111 [-]: MOVE      R16 R4       ; R16 := R4
 112 [-]: CALL      R14 3 1      ; R14(R15,R16)
-113 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 53; R7 := R8 end
-114 [-]: JMP       53           ; PC := 53
-115 [-]: RETURN    R0 1         ; return 
+113 [-]: GETGLOBAL R14 K36      ; R14 := 0x201191EA
+114 [-]: LOADK     R15 K6       ; R15 := 0
+115 [-]: CALL      R14 2 1      ; R14(R15)
+116 [-]: TFORLOOP  R5 2         ; R8,R9 :=  R5(R6,R7); if R8 ~= nil then begin PC = 53; R7 := R8 end
+117 [-]: JMP       53           ; PC := 53
+118 [-]: RETURN    R0 1         ; return 
 
 

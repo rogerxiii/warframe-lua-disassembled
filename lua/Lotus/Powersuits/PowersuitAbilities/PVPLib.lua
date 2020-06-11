@@ -382,52 +382,52 @@ code size: 12
  25 [-]: MOVE      R9 R4        ; R9 := R4
  26 [-]: GETGLOBAL R10 K7       ; R10 := Game
  27 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["AVATAR_MOVEMENT_SPEED"]
- 28 [-]: GETGLOBAL R11 K7       ; R11 := Game
- 29 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["MULTIPLY"]
+ 28 [-]: GETGLOBAL R11 K9       ; R11 := Engine
+ 29 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["MULTIPLY"]
  30 [-]: MOVE      R12 R1       ; R12 := R1
  31 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
  32 [-]: SELF      R7 R3 K6     ; R8 := R3; R7 := R3["0x4685E6C3"]
  33 [-]: MOVE      R9 R5        ; R9 := R5
  34 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 35 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["AVATAR_PARKOUR_BOOST"]
- 36 [-]: GETGLOBAL R11 K7       ; R11 := Game
- 37 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["MULTIPLY"]
+ 35 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["AVATAR_PARKOUR_BOOST"]
+ 36 [-]: GETGLOBAL R11 K9       ; R11 := Engine
+ 37 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["MULTIPLY"]
  38 [-]: MOVE      R12 R1       ; R12 := R1
  39 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
  40 [-]: SELF      R7 R3 K6     ; R8 := R3; R7 := R3["0x4685E6C3"]
  41 [-]: MOVE      R9 R6        ; R9 := R6
  42 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 43 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["WEAPON_FIRE_RATE"]
- 44 [-]: GETGLOBAL R11 K7       ; R11 := Game
- 45 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["MULTIPLY"]
+ 43 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["WEAPON_FIRE_RATE"]
+ 44 [-]: GETGLOBAL R11 K9       ; R11 := Engine
+ 45 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["MULTIPLY"]
  46 [-]: MOVE      R12 R1       ; R12 := R1
- 47 [-]: GETGLOBAL R13 K12      ; R13 := gLotusMeleeWeaponType
+ 47 [-]: GETGLOBAL R13 K13      ; R13 := gLotusMeleeWeaponType
  48 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
  49 [-]: JMP       75           ; PC := 75
- 50 [-]: SELF      R7 R3 K13    ; R8 := R3; R7 := R3["0x5A740E25"]
+ 50 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0x5A740E25"]
  51 [-]: MOVE      R9 R4        ; R9 := R4
  52 [-]: GETGLOBAL R10 K7       ; R10 := Game
  53 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["AVATAR_MOVEMENT_SPEED"]
- 54 [-]: GETGLOBAL R11 K7       ; R11 := Game
- 55 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["MULTIPLY"]
+ 54 [-]: GETGLOBAL R11 K9       ; R11 := Engine
+ 55 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["MULTIPLY"]
  56 [-]: MOVE      R12 R1       ; R12 := R1
  57 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 58 [-]: SELF      R7 R3 K13    ; R8 := R3; R7 := R3["0x5A740E25"]
+ 58 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0x5A740E25"]
  59 [-]: MOVE      R9 R5        ; R9 := R5
  60 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 61 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["AVATAR_PARKOUR_BOOST"]
- 62 [-]: GETGLOBAL R11 K7       ; R11 := Game
- 63 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["MULTIPLY"]
+ 61 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["AVATAR_PARKOUR_BOOST"]
+ 62 [-]: GETGLOBAL R11 K9       ; R11 := Engine
+ 63 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["MULTIPLY"]
  64 [-]: MOVE      R12 R1       ; R12 := R1
  65 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
- 66 [-]: SELF      R7 R3 K13    ; R8 := R3; R7 := R3["0x5A740E25"]
+ 66 [-]: SELF      R7 R3 K14    ; R8 := R3; R7 := R3["0x5A740E25"]
  67 [-]: MOVE      R9 R6        ; R9 := R6
  68 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 69 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["WEAPON_FIRE_RATE"]
- 70 [-]: GETGLOBAL R11 K7       ; R11 := Game
- 71 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["MULTIPLY"]
+ 69 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["WEAPON_FIRE_RATE"]
+ 70 [-]: GETGLOBAL R11 K9       ; R11 := Engine
+ 71 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["MULTIPLY"]
  72 [-]: MOVE      R12 R1       ; R12 := R1
- 73 [-]: GETGLOBAL R13 K12      ; R13 := gLotusMeleeWeaponType
+ 73 [-]: GETGLOBAL R13 K13      ; R13 := gLotusMeleeWeaponType
  74 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
  75 [-]: RETURN    R0 1         ; return 
 

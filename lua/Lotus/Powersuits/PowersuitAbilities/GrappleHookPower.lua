@@ -460,7 +460,7 @@ code size: 56
  23 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
  24 [-]: MOVE      R3 R1        ; R3 := R1
  25 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 26 [-]: SETTABLE  R4 K9 K10    ; R4["Label"] := "/Game/WEAPON_RANGE"
+ 26 [-]: SETTABLE  R4 K9 K10    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  27 [-]: GETUPVAL  R5 U2        ; R5 := U2
  28 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
  29 [-]: SETTABLE  R4 K12 K13   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -469,7 +469,7 @@ code size: 56
  32 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
  33 [-]: MOVE      R3 R1        ; R3 := R1
  34 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 35 [-]: SETTABLE  R4 K9 K14    ; R4["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 35 [-]: SETTABLE  R4 K9 K14    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  36 [-]: GETUPVAL  R5 U3        ; R5 := U3
  37 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
  38 [-]: SETTABLE  R4 K15 K16   ; R4["ValueIcon"] := "<DT_SLASH>"

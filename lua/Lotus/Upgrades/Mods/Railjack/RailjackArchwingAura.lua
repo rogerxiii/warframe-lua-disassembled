@@ -105,14 +105,14 @@ code size: 31
  25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  26 [-]: SELF      R4 R4 K7     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  27 [-]: MOVE      R6 R3        ; R6 := R3
- 28 [-]: GETGLOBAL R7 K8        ; R7 := Game
+ 28 [-]: GETGLOBAL R7 K8        ; R7 := Engine
  29 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["STACKING_MULTIPLY"]
  30 [-]: GETGLOBAL R8 K10       ; R8 := upgradeValue
  31 [-]: MUL       R8 R8 R2     ; R8 := R8 * R2
  32 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
- 33 [-]: GETGLOBAL R11 K11      ; R11 := Engine
- 34 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
- 35 [-]: GETGLOBAL R12 K13      ; R12 := symFilter
+ 33 [-]: GETGLOBAL R11 K8       ; R11 := Engine
+ 34 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DT_ANY"]
+ 35 [-]: GETGLOBAL R12 K12      ; R12 := symFilter
  36 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  37 [-]: RETURN    R0 1         ; return 
 
@@ -147,14 +147,14 @@ code size: 31
  19 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  20 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0xF21555A7"]
  21 [-]: MOVE      R6 R3        ; R6 := R3
- 22 [-]: GETGLOBAL R7 K7        ; R7 := Game
+ 22 [-]: GETGLOBAL R7 K7        ; R7 := Engine
  23 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["STACKING_MULTIPLY"]
  24 [-]: GETGLOBAL R8 K9        ; R8 := upgradeValue
  25 [-]: MUL       R8 R8 R2     ; R8 := R8 * R2
  26 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
- 27 [-]: GETGLOBAL R11 K10      ; R11 := Engine
- 28 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["DT_ANY"]
- 29 [-]: GETGLOBAL R12 K12      ; R12 := symFilter
+ 27 [-]: GETGLOBAL R11 K7       ; R11 := Engine
+ 28 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["DT_ANY"]
+ 29 [-]: GETGLOBAL R12 K11      ; R12 := symFilter
  30 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
  31 [-]: RETURN    R0 1         ; return 
 

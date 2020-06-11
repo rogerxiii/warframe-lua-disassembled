@@ -725,21 +725,21 @@ code size: 52
 197 [-]: SELF      R21 R20 K54  ; R22 := R20; R21 := R20["0x3B1B11B9"]
 198 [-]: GETGLOBAL R23 K8       ; R23 := Game
 199 [-]: GETTABLE  R23 R23 K55  ; R23 := R23["WEAPON_DAMAGE_AMOUNT"]
-200 [-]: GETGLOBAL R24 K8       ; R24 := Game
+200 [-]: GETGLOBAL R24 K25      ; R24 := Engine
 201 [-]: GETTABLE  R24 R24 K56  ; R24 := R24["SET"]
 202 [-]: LOADK     R25 K4       ; R25 := 0
 203 [-]: CALL      R21 5 1      ; R21(R22,R23,R24,R25)
 204 [-]: SELF      R21 R20 K54  ; R22 := R20; R21 := R20["0x3B1B11B9"]
 205 [-]: GETGLOBAL R23 K8       ; R23 := Game
 206 [-]: GETTABLE  R23 R23 K57  ; R23 := R23["WEAPON_PROC_CHANCE"]
-207 [-]: GETGLOBAL R24 K8       ; R24 := Game
+207 [-]: GETGLOBAL R24 K25      ; R24 := Engine
 208 [-]: GETTABLE  R24 R24 K56  ; R24 := R24["SET"]
 209 [-]: LOADK     R25 K4       ; R25 := 0
 210 [-]: CALL      R21 5 1      ; R21(R22,R23,R24,R25)
 211 [-]: SELF      R21 R20 K54  ; R22 := R20; R21 := R20["0x3B1B11B9"]
 212 [-]: GETGLOBAL R23 K8       ; R23 := Game
 213 [-]: GETTABLE  R23 R23 K58  ; R23 := R23["WEAPON_MELEE_DAMAGE"]
-214 [-]: GETGLOBAL R24 K8       ; R24 := Game
+214 [-]: GETGLOBAL R24 K25      ; R24 := Engine
 215 [-]: GETTABLE  R24 R24 K56  ; R24 := R24["SET"]
 216 [-]: LOADK     R25 K4       ; R25 := 0
 217 [-]: CALL      R21 5 1      ; R21(R22,R23,R24,R25)

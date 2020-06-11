@@ -70,31 +70,31 @@ code size: 44
  15 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  16 [-]: GETGLOBAL R5 K4        ; R5 := Game
  17 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["WEAPON_MELEE_DAMAGE"]
- 18 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 19 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["STACKING_MULTIPLY"]
- 20 [-]: LOADK     R7 K7        ; R7 := 1
+ 18 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 19 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["STACKING_MULTIPLY"]
+ 20 [-]: LOADK     R7 K8        ; R7 := 1
  21 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  22 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  23 [-]: GETGLOBAL R5 K4        ; R5 := Game
- 24 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["WEAPON_DAMAGE_AMOUNT"]
- 25 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 26 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["STACKING_MULTIPLY"]
- 27 [-]: LOADK     R7 K7        ; R7 := 1
- 28 [-]: GETGLOBAL R8 K9        ; R8 := gLotusPistolType
+ 24 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["WEAPON_DAMAGE_AMOUNT"]
+ 25 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 26 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["STACKING_MULTIPLY"]
+ 27 [-]: LOADK     R7 K8        ; R7 := 1
+ 28 [-]: GETGLOBAL R8 K10       ; R8 := gLotusPistolType
  29 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
  30 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  31 [-]: GETGLOBAL R5 K4        ; R5 := Game
- 32 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_ABILITY_STRENGTH"]
- 33 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 34 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["STACKING_MULTIPLY"]
- 35 [-]: LOADK     R7 K7        ; R7 := 1
+ 32 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_ABILITY_STRENGTH"]
+ 33 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 34 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["STACKING_MULTIPLY"]
+ 35 [-]: LOADK     R7 K8        ; R7 := 1
  36 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  37 [-]: SELF      R3 R2 K3     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  38 [-]: GETGLOBAL R5 K4        ; R5 := Game
- 39 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_POWER_RATE"]
- 40 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 41 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["ADD"]
- 42 [-]: LOADK     R7 K13       ; R7 := 0.75
+ 39 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["AVATAR_POWER_RATE"]
+ 40 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 41 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["ADD"]
+ 42 [-]: LOADK     R7 K14       ; R7 := 0.75
  43 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  44 [-]: RETURN    R0 1         ; return 
 

@@ -7,7 +7,7 @@ code size: 25
 code size: 202
 code size: 41
 code size: 74
-code size: 417
+code size: 411
 code size: 130
 code size: 12
 code size: 13
@@ -990,18 +990,18 @@ code size: 3
  22 [-]: GETUPVAL  R3 U0        ; R3 := U0
  23 [-]: SELF      R3 R3 K5     ; R4 := R3; R3 := R3["0x315E860F"]
  24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 25 [-]: TEST      R3 0         ; if not R3 then PC := 415
- 26 [-]: JMP       415          ; PC := 415
+ 25 [-]: TEST      R3 0         ; if not R3 then PC := 409
+ 26 [-]: JMP       409          ; PC := 409
  27 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
  28 [-]: MOVE      R4 R1        ; R4 := R1
  29 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 30 [-]: TEST      R3 1         ; if R3 then PC := 415
- 31 [-]: JMP       415          ; PC := 415
+ 30 [-]: TEST      R3 1         ; if R3 then PC := 409
+ 31 [-]: JMP       409          ; PC := 409
  32 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
  33 [-]: GETGLOBAL R4 K6        ; R4 := dojoRecipeManifest
  34 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 35 [-]: TEST      R3 1         ; if R3 then PC := 415
- 36 [-]: JMP       415          ; PC := 415
+ 35 [-]: TEST      R3 1         ; if R3 then PC := 409
+ 36 [-]: JMP       409          ; PC := 409
  37 [-]: GETGLOBAL R3 K6        ; R3 := dojoRecipeManifest
  38 [-]: SELF      R3 R3 K7     ; R4 := R3; R3 := R3["0x14DDAECA"]
  39 [-]: GETUPVAL  R5 U0        ; R5 := U0
@@ -1068,321 +1068,315 @@ code size: 3
 100 [-]: GETUPVAL  R6 U8        ; R6 := U8
 101 [-]: GETTABLE  R6 R6 K27    ; R6 := R6["0x8E1620BC"]
 102 [-]: MOVE      R7 R0        ; R7 := R0
-103 [-]: GETGLOBAL R8 K9        ; R8 := _T
-104 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["DojoMgr"]
-105 [-]: GETTABLE  R8 R8 K29    ; R8 := R8["mGameRules"]
-106 [-]: SELF      R8 R8 K30    ; R9 := R8; R8 := R8["0x8B598ED4"]
-107 [-]: GETGLOBAL R10 K31      ; R10 := gLotusRailCustomizationGameRulesType
-108 [-]: CALL      R8 3 0       ; R8,... := R8(R9,R10)
-109 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
-110 [-]: MOVE      R6 R7        ; R6 := R7
-111 [-]: GETGLOBAL R6 K11       ; R6 := mMovie
-112 [-]: SELF      R6 R6 K32    ; R7 := R6; R6 := R6["0x1C19D966"]
-113 [-]: LOADK     R8 K33       ; R8 := "Options.Hint"
-114 [-]: LOADK     R9 K34       ; R9 := "_visible"
-115 [-]: GETUPVAL  R10 U7       ; R10 := U7
-116 [-]: MOVE      R10 R10      ; R10 := R10
-117 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
-118 [-]: GETUPVAL  R6 U7        ; R6 := U7
-119 [-]: TEST      R6 0         ; if not R6 then PC := 407
-120 [-]: JMP       407          ; PC := 407
-121 [-]: GETUPVAL  R6 U9        ; R6 := U9
-122 [-]: SETTABLE  R6 K35 R5    ; R6["InitialMessage"] := R5
-123 [-]: GETGLOBAL R6 K11       ; R6 := mMovie
-124 [-]: SELF      R6 R6 K36    ; R7 := R6; R6 := R6["0xD6A79FE9"]
-125 [-]: LOADK     R8 K37       ; R8 := "Options.EditMessage.Message"
-126 [-]: LOADK     R9 K38       ; R9 := "text"
-127 [-]: MOVE      R10 R5       ; R10 := R5
-128 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
-129 [-]: GETGLOBAL R6 K39       ; R6 := Engine
-130 [-]: GETTABLE  R6 R6 K40    ; R6 := R6["0x695D4229"]
-131 [-]: CALL      R6 1 2       ; R6 := R6()
-132 [-]: TEST      R6 0         ; if not R6 then PC := 140
-133 [-]: JMP       140          ; PC := 140
-134 [-]: GETUPVAL  R6 U10       ; R6 := U10
-135 [-]: GETTABLE  R6 R6 K41    ; R6 := R6["0x36BA5F48"]
-136 [-]: CALL      R6 1 2       ; R6 := R6()
-137 [-]: MOVE      R6 R6        ; R6 := R6
-138 [-]: JMP       141          ; PC := 141
-139 [-]: MOVE      R6 R0        ; R6 := R0
-140 [-]: MOVE      R6 R1        ; R6 := R1
-141 [-]: GETGLOBAL R7 K11       ; R7 := mMovie
-142 [-]: SELF      R7 R7 K32    ; R8 := R7; R7 := R7["0x1C19D966"]
-143 [-]: LOADK     R9 K42       ; R9 := "Options.EditMessage"
-144 [-]: LOADK     R10 K34      ; R10 := "_visible"
-145 [-]: MOVE      R11 R6       ; R11 := R6
-146 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-147 [-]: GETGLOBAL R7 K43       ; R7 := crossIcon
-148 [-]: LOADK     R8 K44       ; R8 := ""
-149 [-]: LOADNIL   R9 R9        ; R9 := nil
-150 [-]: MOVE      R9 R11       ; R9 := R11
-151 [-]: LOADK     R9 K44       ; R9 := ""
-152 [-]: MOVE      R9 R12       ; R9 := R12
-153 [-]: GETUPVAL  R9 U13       ; R9 := U13
-154 [-]: SETTABLE  R9 K45 K46   ; R9["Visible"] := "0x0"
-155 [-]: GETGLOBAL R9 K9        ; R9 := _T
-156 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["DojoMgr"]
-157 [-]: GETTABLE  R9 R9 K47    ; R9 := R9["mDojo"]
-158 [-]: SELF      R9 R9 K48    ; R10 := R9; R9 := R9["0x400256B3"]
-159 [-]: GETUPVAL  R11 U14      ; R11 := U14
-160 [-]: GETTABLE  R11 R11 K49  ; R11 := R11["id"]
-161 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-162 [-]: TEST      R9 0         ; if not R9 then PC := 171
-163 [-]: JMP       171          ; PC := 171
-164 [-]: LOADK     R9 K50       ; R9 := "ChangeRoom"
-165 [-]: MOVE      R9 R11       ; R9 := R11
-166 [-]: LOADK     R8 K51       ; R8 := "/Lotus/Language/Dojo/ConvertRoom"
-167 [-]: GETGLOBAL R7 K52       ; R7 := convertIcon
-168 [-]: LOADK     R9 K53       ; R9 := "/Lotus/Language/Dojo/ConvertRoomDesc"
-169 [-]: MOVE      R9 R12       ; R9 := R12
-170 [-]: JMP       207          ; PC := 207
-171 [-]: GETUPVAL  R9 U15       ; R9 := U15
-172 [-]: TEST      R9 1         ; if R9 then PC := 183
-173 [-]: JMP       183          ; PC := 183
-174 [-]: GETUPVAL  R9 U0        ; R9 := U0
-175 [-]: SELF      R9 R9 K54    ; R10 := R9; R9 := R9["0x4546B13"]
-176 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-177 [-]: TEST      R9 1         ; if R9 then PC := 183
-178 [-]: JMP       183          ; PC := 183
-179 [-]: LOADK     R9 K55       ; R9 := "DestroyRoom"
-180 [-]: MOVE      R9 R11       ; R9 := R11
-181 [-]: LOADK     R8 K56       ; R8 := "/Lotus/Language/Dojo/DestroyRoom"
-182 [-]: JMP       207          ; PC := 207
-183 [-]: GETUPVAL  R9 U16       ; R9 := U16
-184 [-]: TEST      R9 1         ; if R9 then PC := 207
-185 [-]: JMP       207          ; PC := 207
-186 [-]: GETUPVAL  R9 U15       ; R9 := U15
-187 [-]: TEST      R9 1         ; if R9 then PC := 207
-188 [-]: JMP       207          ; PC := 207
-189 [-]: GETUPVAL  R9 U0        ; R9 := U0
-190 [-]: SELF      R9 R9 K54    ; R10 := R9; R9 := R9["0x4546B13"]
-191 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-192 [-]: TEST      R9 0         ; if not R9 then PC := 207
-193 [-]: JMP       207          ; PC := 207
-194 [-]: LOADK     R9 K57       ; R9 := "CancelDestruction"
-195 [-]: MOVE      R9 R11       ; R9 := R11
-196 [-]: LOADK     R8 K58       ; R8 := "/Lotus/Language/Dojo/CancelDestruction"
+103 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+104 [-]: MOVE      R6 R7        ; R6 := R7
+105 [-]: GETGLOBAL R6 K11       ; R6 := mMovie
+106 [-]: SELF      R6 R6 K28    ; R7 := R6; R6 := R6["0x1C19D966"]
+107 [-]: LOADK     R8 K29       ; R8 := "Options.Hint"
+108 [-]: LOADK     R9 K30       ; R9 := "_visible"
+109 [-]: GETUPVAL  R10 U7       ; R10 := U7
+110 [-]: MOVE      R10 R10      ; R10 := R10
+111 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+112 [-]: GETUPVAL  R6 U7        ; R6 := U7
+113 [-]: TEST      R6 0         ; if not R6 then PC := 401
+114 [-]: JMP       401          ; PC := 401
+115 [-]: GETUPVAL  R6 U9        ; R6 := U9
+116 [-]: SETTABLE  R6 K31 R5    ; R6["InitialMessage"] := R5
+117 [-]: GETGLOBAL R6 K11       ; R6 := mMovie
+118 [-]: SELF      R6 R6 K32    ; R7 := R6; R6 := R6["0xD6A79FE9"]
+119 [-]: LOADK     R8 K33       ; R8 := "Options.EditMessage.Message"
+120 [-]: LOADK     R9 K34       ; R9 := "text"
+121 [-]: MOVE      R10 R5       ; R10 := R5
+122 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+123 [-]: GETGLOBAL R6 K35       ; R6 := Engine
+124 [-]: GETTABLE  R6 R6 K36    ; R6 := R6["0x695D4229"]
+125 [-]: CALL      R6 1 2       ; R6 := R6()
+126 [-]: TEST      R6 0         ; if not R6 then PC := 134
+127 [-]: JMP       134          ; PC := 134
+128 [-]: GETUPVAL  R6 U10       ; R6 := U10
+129 [-]: GETTABLE  R6 R6 K37    ; R6 := R6["0x36BA5F48"]
+130 [-]: CALL      R6 1 2       ; R6 := R6()
+131 [-]: MOVE      R6 R6        ; R6 := R6
+132 [-]: JMP       135          ; PC := 135
+133 [-]: MOVE      R6 R0        ; R6 := R0
+134 [-]: MOVE      R6 R1        ; R6 := R1
+135 [-]: GETGLOBAL R7 K11       ; R7 := mMovie
+136 [-]: SELF      R7 R7 K28    ; R8 := R7; R7 := R7["0x1C19D966"]
+137 [-]: LOADK     R9 K38       ; R9 := "Options.EditMessage"
+138 [-]: LOADK     R10 K30      ; R10 := "_visible"
+139 [-]: MOVE      R11 R6       ; R11 := R6
+140 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
+141 [-]: GETGLOBAL R7 K39       ; R7 := crossIcon
+142 [-]: LOADK     R8 K40       ; R8 := ""
+143 [-]: LOADNIL   R9 R9        ; R9 := nil
+144 [-]: MOVE      R9 R11       ; R9 := R11
+145 [-]: LOADK     R9 K40       ; R9 := ""
+146 [-]: MOVE      R9 R12       ; R9 := R12
+147 [-]: GETUPVAL  R9 U13       ; R9 := U13
+148 [-]: SETTABLE  R9 K41 K42   ; R9["Visible"] := "0x0"
+149 [-]: GETGLOBAL R9 K9        ; R9 := _T
+150 [-]: GETTABLE  R9 R9 K43    ; R9 := R9["DojoMgr"]
+151 [-]: GETTABLE  R9 R9 K44    ; R9 := R9["mDojo"]
+152 [-]: SELF      R9 R9 K45    ; R10 := R9; R9 := R9["0x400256B3"]
+153 [-]: GETUPVAL  R11 U14      ; R11 := U14
+154 [-]: GETTABLE  R11 R11 K46  ; R11 := R11["id"]
+155 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+156 [-]: TEST      R9 0         ; if not R9 then PC := 165
+157 [-]: JMP       165          ; PC := 165
+158 [-]: LOADK     R9 K47       ; R9 := "ChangeRoom"
+159 [-]: MOVE      R9 R11       ; R9 := R11
+160 [-]: LOADK     R8 K48       ; R8 := "/Lotus/Language/Dojo/ConvertRoom"
+161 [-]: GETGLOBAL R7 K49       ; R7 := convertIcon
+162 [-]: LOADK     R9 K50       ; R9 := "/Lotus/Language/Dojo/ConvertRoomDesc"
+163 [-]: MOVE      R9 R12       ; R9 := R12
+164 [-]: JMP       201          ; PC := 201
+165 [-]: GETUPVAL  R9 U15       ; R9 := U15
+166 [-]: TEST      R9 1         ; if R9 then PC := 177
+167 [-]: JMP       177          ; PC := 177
+168 [-]: GETUPVAL  R9 U0        ; R9 := U0
+169 [-]: SELF      R9 R9 K51    ; R10 := R9; R9 := R9["0x4546B13"]
+170 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+171 [-]: TEST      R9 1         ; if R9 then PC := 177
+172 [-]: JMP       177          ; PC := 177
+173 [-]: LOADK     R9 K52       ; R9 := "DestroyRoom"
+174 [-]: MOVE      R9 R11       ; R9 := R11
+175 [-]: LOADK     R8 K53       ; R8 := "/Lotus/Language/Dojo/DestroyRoom"
+176 [-]: JMP       201          ; PC := 201
+177 [-]: GETUPVAL  R9 U16       ; R9 := U16
+178 [-]: TEST      R9 1         ; if R9 then PC := 201
+179 [-]: JMP       201          ; PC := 201
+180 [-]: GETUPVAL  R9 U15       ; R9 := U15
+181 [-]: TEST      R9 1         ; if R9 then PC := 201
+182 [-]: JMP       201          ; PC := 201
+183 [-]: GETUPVAL  R9 U0        ; R9 := U0
+184 [-]: SELF      R9 R9 K51    ; R10 := R9; R9 := R9["0x4546B13"]
+185 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+186 [-]: TEST      R9 0         ; if not R9 then PC := 201
+187 [-]: JMP       201          ; PC := 201
+188 [-]: LOADK     R9 K54       ; R9 := "CancelDestruction"
+189 [-]: MOVE      R9 R11       ; R9 := R11
+190 [-]: LOADK     R8 K55       ; R8 := "/Lotus/Language/Dojo/CancelDestruction"
+191 [-]: GETUPVAL  R9 U13       ; R9 := U13
+192 [-]: SETTABLE  R9 K41 K56   ; R9["Visible"] := "0x1"
+193 [-]: GETUPVAL  R9 U13       ; R9 := U13
+194 [-]: SELF      R10 R3 K58   ; R11 := R3; R10 := R3["0x58C27BB9"]
+195 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+196 [-]: SETTABLE  R9 K57 R10   ; R9["TotalTime"] := R10
 197 [-]: GETUPVAL  R9 U13       ; R9 := U13
-198 [-]: SETTABLE  R9 K45 K59   ; R9["Visible"] := "0x1"
-199 [-]: GETUPVAL  R9 U13       ; R9 := U13
-200 [-]: SELF      R10 R3 K61   ; R11 := R3; R10 := R3["0x58C27BB9"]
-201 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-202 [-]: SETTABLE  R9 K60 R10   ; R9["TotalTime"] := R10
-203 [-]: GETUPVAL  R9 U13       ; R9 := U13
-204 [-]: GETUPVAL  R10 U0       ; R10 := U0
-205 [-]: GETTABLE  R10 R10 K63  ; R10 := R10["timeRemainingTillDestruction"]
-206 [-]: SETTABLE  R9 K62 R10   ; R9["TimeLeft"] := R10
-207 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
-208 [-]: SELF      R9 R9 K64    ; R10 := R9; R9 := R9["0x26581636"]
-209 [-]: LOADK     R11 K65      ; R11 := "Options.Destroy.Icon"
-210 [-]: MOVE      R12 R7       ; R12 := R7
-211 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-212 [-]: GETGLOBAL R9 K66       ; R9 := 0xD26C89A0
-213 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
-214 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0x5DB0BD4"]
-215 [-]: MOVE      R12 R8       ; R12 := R8
-216 [-]: MOVE      R13 R0       ; R13 := R0
-217 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
-218 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
-219 [-]: MOVE      R8 R9        ; R8 := R9
+198 [-]: GETUPVAL  R10 U0       ; R10 := U0
+199 [-]: GETTABLE  R10 R10 K60  ; R10 := R10["timeRemainingTillDestruction"]
+200 [-]: SETTABLE  R9 K59 R10   ; R9["TimeLeft"] := R10
+201 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
+202 [-]: SELF      R9 R9 K61    ; R10 := R9; R9 := R9["0x26581636"]
+203 [-]: LOADK     R11 K62      ; R11 := "Options.Destroy.Icon"
+204 [-]: MOVE      R12 R7       ; R12 := R7
+205 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
+206 [-]: GETGLOBAL R9 K63       ; R9 := 0xD26C89A0
+207 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
+208 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0x5DB0BD4"]
+209 [-]: MOVE      R12 R8       ; R12 := R8
+210 [-]: MOVE      R13 R0       ; R13 := R0
+211 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+212 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
+213 [-]: MOVE      R8 R9        ; R8 := R9
+214 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
+215 [-]: SELF      R9 R9 K28    ; R10 := R9; R9 := R9["0x1C19D966"]
+216 [-]: LOADK     R11 K64      ; R11 := "Options.Destroy.Label"
+217 [-]: LOADK     R12 K34      ; R12 := "text"
+218 [-]: MOVE      R13 R8       ; R13 := R8
+219 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 220 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
-221 [-]: SELF      R9 R9 K32    ; R10 := R9; R9 := R9["0x1C19D966"]
-222 [-]: LOADK     R11 K67      ; R11 := "Options.Destroy.Label"
-223 [-]: LOADK     R12 K38      ; R12 := "text"
-224 [-]: MOVE      R13 R8       ; R13 := R8
-225 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-226 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
-227 [-]: SELF      R9 R9 K32    ; R10 := R9; R9 := R9["0x1C19D966"]
-228 [-]: LOADK     R11 K68      ; R11 := "Options.Destroy"
-229 [-]: LOADK     R12 K34      ; R12 := "_visible"
-230 [-]: GETUPVAL  R13 U11      ; R13 := U11
-231 [-]: EQ        0 R13 K69    ; if R13 ~= nil then PC := 234
-232 [-]: JMP       234          ; PC := 234
-233 [-]: MOVE      R13 R0       ; R13 := R0
-234 [-]: MOVE      R13 R1       ; R13 := R1
-235 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-236 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
-237 [-]: SELF      R9 R9 K32    ; R10 := R9; R9 := R9["0x1C19D966"]
-238 [-]: LOADK     R11 K70      ; R11 := "Options.DestroyTimer"
-239 [-]: LOADK     R12 K34      ; R12 := "_visible"
-240 [-]: GETUPVAL  R13 U13      ; R13 := U13
-241 [-]: GETTABLE  R13 R13 K45  ; R13 := R13["Visible"]
-242 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-243 [-]: GETGLOBAL R9 K66       ; R9 := 0xD26C89A0
+221 [-]: SELF      R9 R9 K28    ; R10 := R9; R9 := R9["0x1C19D966"]
+222 [-]: LOADK     R11 K65      ; R11 := "Options.Destroy"
+223 [-]: LOADK     R12 K30      ; R12 := "_visible"
+224 [-]: GETUPVAL  R13 U11      ; R13 := U11
+225 [-]: EQ        0 R13 K66    ; if R13 ~= nil then PC := 228
+226 [-]: JMP       228          ; PC := 228
+227 [-]: MOVE      R13 R0       ; R13 := R0
+228 [-]: MOVE      R13 R1       ; R13 := R1
+229 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
+230 [-]: GETGLOBAL R9 K11       ; R9 := mMovie
+231 [-]: SELF      R9 R9 K28    ; R10 := R9; R9 := R9["0x1C19D966"]
+232 [-]: LOADK     R11 K67      ; R11 := "Options.DestroyTimer"
+233 [-]: LOADK     R12 K30      ; R12 := "_visible"
+234 [-]: GETUPVAL  R13 U13      ; R13 := U13
+235 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["Visible"]
+236 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
+237 [-]: GETGLOBAL R9 K63       ; R9 := 0xD26C89A0
+238 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
+239 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0x5DB0BD4"]
+240 [-]: LOADK     R12 K68      ; R12 := "/Lotus/Language/Dojo/PortalStatusBeingDestroyed"
+241 [-]: MOVE      R13 R0       ; R13 := R0
+242 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
+243 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
 244 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
-245 [-]: SELF      R10 R10 K12  ; R11 := R10; R10 := R10["0x5DB0BD4"]
-246 [-]: LOADK     R12 K71      ; R12 := "/Lotus/Language/Dojo/PortalStatusBeingDestroyed"
-247 [-]: MOVE      R13 R0       ; R13 := R0
-248 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
-249 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
-250 [-]: GETGLOBAL R10 K11      ; R10 := mMovie
-251 [-]: SELF      R10 R10 K32  ; R11 := R10; R10 := R10["0x1C19D966"]
-252 [-]: LOADK     R12 K72      ; R12 := "Options.DestroyTimer.Label"
-253 [-]: LOADK     R13 K38      ; R13 := "text"
-254 [-]: MOVE      R14 R9       ; R14 := R9
-255 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
-256 [-]: GETGLOBAL R10 K9       ; R10 := _T
-257 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["DojoMgr"]
-258 [-]: GETTABLE  R10 R10 K47  ; R10 := R10["mDojo"]
-259 [-]: SELF      R10 R10 K73  ; R11 := R10; R10 := R10["0x5F61A27F"]
-260 [-]: GETUPVAL  R12 U14      ; R12 := U14
-261 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-262 [-]: GETGLOBAL R11 K9       ; R11 := _T
-263 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["DojoMgr"]
-264 [-]: GETTABLE  R11 R11 K74  ; R11 := R11["mJsonProcLevelHelper"]
-265 [-]: SELF      R11 R11 K75  ; R12 := R11; R11 := R11["0x8864A360"]
-266 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-267 [-]: SELF      R11 R11 K76  ; R12 := R11; R11 := R11["0xE2B32C65"]
-268 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-269 [-]: GETGLOBAL R12 K6       ; R12 := dojoRecipeManifest
-270 [-]: SELF      R12 R12 K77  ; R13 := R12; R12 := R12["0xE710C963"]
-271 [-]: MOVE      R14 R11      ; R14 := R11
-272 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
-273 [-]: MOVE      R13 R0       ; R13 := R0
-274 [-]: LOADK     R14 K78      ; R14 := 1
-275 [-]: LEN       R15 R12      ; R15 := # R12
-276 [-]: LOADK     R16 K78      ; R16 := 1
-277 [-]: FORPREP   R14 296      ; R14 -= R16; PC := 296
-278 [-]: GETGLOBAL R18 K3       ; R18 := 0x400E7765
-279 [-]: GETTABLE  R19 R12 R17  ; R19 := R12[R17]
-280 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-281 [-]: TEST      R18 1        ; if R18 then PC := 296
-282 [-]: JMP       296          ; PC := 296
-283 [-]: GETTABLE  R18 R12 R17  ; R18 := R12[R17]
-284 [-]: SELF      R18 R18 K79  ; R19 := R18; R18 := R18["0xD9DBA8E1"]
-285 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-286 [-]: TEST      R18 0        ; if not R18 then PC := 296
-287 [-]: JMP       296          ; PC := 296
-288 [-]: GETTABLE  R18 R12 R17  ; R18 := R12[R17]
-289 [-]: SELF      R18 R18 K80  ; R19 := R18; R18 := R18["0x50E3DA4B"]
-290 [-]: GETTABLE  R20 R10 K8   ; R20 := R10["prefab"]
-291 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-292 [-]: TEST      R18 0        ; if not R18 then PC := 296
-293 [-]: JMP       296          ; PC := 296
-294 [-]: MOVE      R13 R1       ; R13 := R1
-295 [-]: JMP       297          ; PC := 297
-296 [-]: FORLOOP   R14 278      ; R14 += R16; if R14 <= R15 then begin PC := 278; R17 := R14 end
-297 [-]: TEST      R13 1        ; if R13 then PC := 350
-298 [-]: JMP       350          ; PC := 350
-299 [-]: GETGLOBAL R18 K0       ; R18 := gPlayerProfileMgr
-300 [-]: SELF      R18 R18 K1   ; R19 := R18; R18 := R18["0x21EF7B1A"]
-301 [-]: LOADK     R20 K2       ; R20 := 0
-302 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
-303 [-]: GETGLOBAL R19 K3       ; R19 := 0x400E7765
-304 [-]: MOVE      R20 R18      ; R20 := R18
-305 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-306 [-]: TEST      R19 1        ; if R19 then PC := 350
-307 [-]: JMP       350          ; PC := 350
-308 [-]: SELF      R19 R18 K4   ; R20 := R18; R19 := R18["0x654F1092"]
-309 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-310 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
-311 [-]: MOVE      R21 R19      ; R21 := R19
-312 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-313 [-]: TEST      R20 1        ; if R20 then PC := 350
-314 [-]: JMP       350          ; PC := 350
-315 [-]: SELF      R20 R19 K81  ; R21 := R19; R20 := R19["0xC2341A51"]
-316 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-317 [-]: LOADK     R21 K78      ; R21 := 1
-318 [-]: GETTABLE  R22 R20 K82  ; R22 := R20["mDecoRecipes"]
-319 [-]: LEN       R22 R22      ; R22 := # R22
-320 [-]: LOADK     R23 K78      ; R23 := 1
-321 [-]: FORPREP   R21 349      ; R21 -= R23; PC := 349
-322 [-]: GETGLOBAL R25 K83      ; R25 := 0x7C282057
-323 [-]: GETTABLE  R26 R20 K82  ; R26 := R20["mDecoRecipes"]
-324 [-]: GETTABLE  R26 R26 R24  ; R26 := R26[R24]
-325 [-]: GETTABLE  R26 R26 K84  ; R26 := R26["mItemType"]
-326 [-]: CALL      R25 2 2      ; R25 := R25(R26)
-327 [-]: GETGLOBAL R26 K3       ; R26 := 0x400E7765
-328 [-]: MOVE      R27 R25      ; R27 := R25
-329 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-330 [-]: TEST      R26 1        ; if R26 then PC := 349
-331 [-]: JMP       349          ; PC := 349
-332 [-]: GETTABLE  R26 R20 K82  ; R26 := R20["mDecoRecipes"]
-333 [-]: GETTABLE  R26 R26 R24  ; R26 := R26[R24]
-334 [-]: GETTABLE  R26 R26 K85  ; R26 := R26["mItemCount"]
-335 [-]: LT        0 K2 R26     ; if 0 >= R26 then PC := 349
-336 [-]: JMP       349          ; PC := 349
-337 [-]: SELF      R26 R25 K80  ; R27 := R25; R26 := R25["0x50E3DA4B"]
-338 [-]: GETTABLE  R28 R10 K8   ; R28 := R10["prefab"]
-339 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-340 [-]: TEST      R26 0        ; if not R26 then PC := 349
-341 [-]: JMP       349          ; PC := 349
-342 [-]: SELF      R26 R25 K86  ; R27 := R25; R26 := R25["0xFF9E9907"]
-343 [-]: MOVE      R28 R11      ; R28 := R11
-344 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-345 [-]: TEST      R26 0        ; if not R26 then PC := 349
-346 [-]: JMP       349          ; PC := 349
-347 [-]: MOVE      R13 R1       ; R13 := R1
-348 [-]: JMP       350          ; PC := 350
-349 [-]: FORLOOP   R21 322      ; R21 += R23; if R21 <= R22 then begin PC := 322; R24 := R21 end
-350 [-]: GETTABLE  R26 R10 K8   ; R26 := R10["prefab"]
-351 [-]: GETGLOBAL R27 K87      ; R27 := customObstacleRoom
-352 [-]: EQ        1 R26 R27    ; if R26 == R27 then PC := 369
-353 [-]: JMP       369          ; PC := 369
-354 [-]: GETGLOBAL R26 K9       ; R26 := _T
-355 [-]: GETTABLE  R26 R26 K28  ; R26 := R26["DojoMgr"]
-356 [-]: GETTABLE  R26 R26 K47  ; R26 := R26["mDojo"]
-357 [-]: SELF      R26 R26 K88  ; R27 := R26; R26 := R26["0x559590E3"]
-358 [-]: MOVE      R28 R10      ; R28 := R10
-359 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-360 [-]: TEST      R26 0        ; if not R26 then PC := 369
-361 [-]: JMP       369          ; PC := 369
-362 [-]: GETUPVAL  R26 U6       ; R26 := U6
-363 [-]: SELF      R26 R26 K22  ; R27 := R26; R26 := R26["0xA77DA8EE"]
-364 [-]: NEWTABLE  R28 0 2      ; R28 := {}
-365 [-]: SETTABLE  R28 K23 K89  ; R28["Label"] := "/Lotus/Language/Dojo/MakeSpawnRoom"
-366 [-]: SETTABLE  R28 K25 K90  ; R28["Callback"] := "MakeSpawnRoom"
-367 [-]: MOVE      R29 R1       ; R29 := R1
-368 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
-369 [-]: GETGLOBAL R26 K3       ; R26 := 0x400E7765
-370 [-]: GETUPVAL  R27 U14      ; R27 := U14
-371 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-372 [-]: TEST      R26 1        ; if R26 then PC := 407
-373 [-]: JMP       407          ; PC := 407
-374 [-]: GETGLOBAL R26 K9       ; R26 := _T
-375 [-]: GETTABLE  R26 R26 K28  ; R26 := R26["DojoMgr"]
-376 [-]: GETTABLE  R26 R26 K47  ; R26 := R26["mDojo"]
-377 [-]: SELF      R26 R26 K73  ; R27 := R26; R26 := R26["0x5F61A27F"]
-378 [-]: GETUPVAL  R28 U14      ; R28 := U14
-379 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-380 [-]: GETTABLE  R27 R26 K8   ; R27 := R26["prefab"]
-381 [-]: GETGLOBAL R28 K87      ; R28 := customObstacleRoom
-382 [-]: EQ        0 R27 R28    ; if R27 ~= R28 then PC := 407
-383 [-]: JMP       407          ; PC := 407
-384 [-]: GETUPVAL  R27 U6       ; R27 := U6
-385 [-]: SELF      R27 R27 K22  ; R28 := R27; R27 := R27["0xA77DA8EE"]
-386 [-]: NEWTABLE  R29 0 2      ; R29 := {}
-387 [-]: SETTABLE  R29 K23 K91  ; R29["Label"] := "/Lotus/Language/Dojo/CustomObstacleCourseResetLeaderboard"
-388 [-]: SETTABLE  R29 K25 K92  ; R29["Callback"] := "ResetLeaderboard"
-389 [-]: MOVE      R30 R1       ; R30 := R1
-390 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
-391 [-]: GETUPVAL  R27 U6       ; R27 := U6
-392 [-]: SELF      R27 R27 K22  ; R28 := R27; R27 := R27["0xA77DA8EE"]
-393 [-]: NEWTABLE  R29 0 2      ; R29 := {}
-394 [-]: SETTABLE  R29 K23 K93  ; R29["Label"] := "/Lotus/Language/Dojo/CustomObstacleCourseResetRoom"
-395 [-]: SETTABLE  R29 K25 K94  ; R29["Callback"] := "ResetObstacleCourse"
-396 [-]: MOVE      R30 R1       ; R30 := R1
-397 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
-398 [-]: GETUPVAL  R27 U6       ; R27 := U6
-399 [-]: SELF      R27 R27 K22  ; R28 := R27; R27 := R27["0xA77DA8EE"]
-400 [-]: NEWTABLE  R29 0 2      ; R29 := {}
-401 [-]: GETUPVAL  R30 U17      ; R30 := U17
-402 [-]: CALL      R30 1 2      ; R30 := R30()
-403 [-]: SETTABLE  R29 K23 R30  ; R29["Label"] := R30
-404 [-]: SETTABLE  R29 K25 K95  ; R29["Callback"] := "ToggleAllowOperatorMode"
-405 [-]: MOVE      R30 R1       ; R30 := R1
-406 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
-407 [-]: GETUPVAL  R27 U6       ; R27 := U6
-408 [-]: SELF      R27 R27 K96  ; R28 := R27; R27 := R27["0x6470BAF4"]
-409 [-]: LOADNIL   R29 R30      ; R29 := R30 := nil
-410 [-]: MOVE      R31 R1       ; R31 := R1
-411 [-]: CALL      R27 5 1      ; R27(R28,R29,R30,R31)
-412 [-]: GETUPVAL  R27 U18      ; R27 := U18
-413 [-]: CALL      R27 1 1      ; R27()
-414 [-]: JMP       417          ; PC := 417
-415 [-]: GETUPVAL  R27 U3       ; R27 := U3
-416 [-]: CALL      R27 1 1      ; R27()
-417 [-]: RETURN    R0 1         ; return 
+245 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10["0x1C19D966"]
+246 [-]: LOADK     R12 K69      ; R12 := "Options.DestroyTimer.Label"
+247 [-]: LOADK     R13 K34      ; R13 := "text"
+248 [-]: MOVE      R14 R9       ; R14 := R9
+249 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+250 [-]: GETGLOBAL R10 K9       ; R10 := _T
+251 [-]: GETTABLE  R10 R10 K43  ; R10 := R10["DojoMgr"]
+252 [-]: GETTABLE  R10 R10 K44  ; R10 := R10["mDojo"]
+253 [-]: SELF      R10 R10 K70  ; R11 := R10; R10 := R10["0x5F61A27F"]
+254 [-]: GETUPVAL  R12 U14      ; R12 := U14
+255 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+256 [-]: GETGLOBAL R11 K9       ; R11 := _T
+257 [-]: GETTABLE  R11 R11 K43  ; R11 := R11["DojoMgr"]
+258 [-]: GETTABLE  R11 R11 K71  ; R11 := R11["mJsonProcLevelHelper"]
+259 [-]: SELF      R11 R11 K72  ; R12 := R11; R11 := R11["0x8864A360"]
+260 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+261 [-]: SELF      R11 R11 K73  ; R12 := R11; R11 := R11["0xE2B32C65"]
+262 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+263 [-]: GETGLOBAL R12 K6       ; R12 := dojoRecipeManifest
+264 [-]: SELF      R12 R12 K74  ; R13 := R12; R12 := R12["0xE710C963"]
+265 [-]: MOVE      R14 R11      ; R14 := R11
+266 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+267 [-]: MOVE      R13 R0       ; R13 := R0
+268 [-]: LOADK     R14 K75      ; R14 := 1
+269 [-]: LEN       R15 R12      ; R15 := # R12
+270 [-]: LOADK     R16 K75      ; R16 := 1
+271 [-]: FORPREP   R14 290      ; R14 -= R16; PC := 290
+272 [-]: GETGLOBAL R18 K3       ; R18 := 0x400E7765
+273 [-]: GETTABLE  R19 R12 R17  ; R19 := R12[R17]
+274 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+275 [-]: TEST      R18 1        ; if R18 then PC := 290
+276 [-]: JMP       290          ; PC := 290
+277 [-]: GETTABLE  R18 R12 R17  ; R18 := R12[R17]
+278 [-]: SELF      R18 R18 K76  ; R19 := R18; R18 := R18["0xD9DBA8E1"]
+279 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+280 [-]: TEST      R18 0        ; if not R18 then PC := 290
+281 [-]: JMP       290          ; PC := 290
+282 [-]: GETTABLE  R18 R12 R17  ; R18 := R12[R17]
+283 [-]: SELF      R18 R18 K77  ; R19 := R18; R18 := R18["0x50E3DA4B"]
+284 [-]: GETTABLE  R20 R10 K8   ; R20 := R10["prefab"]
+285 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
+286 [-]: TEST      R18 0        ; if not R18 then PC := 290
+287 [-]: JMP       290          ; PC := 290
+288 [-]: MOVE      R13 R1       ; R13 := R1
+289 [-]: JMP       291          ; PC := 291
+290 [-]: FORLOOP   R14 272      ; R14 += R16; if R14 <= R15 then begin PC := 272; R17 := R14 end
+291 [-]: TEST      R13 1        ; if R13 then PC := 344
+292 [-]: JMP       344          ; PC := 344
+293 [-]: GETGLOBAL R18 K0       ; R18 := gPlayerProfileMgr
+294 [-]: SELF      R18 R18 K1   ; R19 := R18; R18 := R18["0x21EF7B1A"]
+295 [-]: LOADK     R20 K2       ; R20 := 0
+296 [-]: CALL      R18 3 2      ; R18 := R18(R19,R20)
+297 [-]: GETGLOBAL R19 K3       ; R19 := 0x400E7765
+298 [-]: MOVE      R20 R18      ; R20 := R18
+299 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+300 [-]: TEST      R19 1        ; if R19 then PC := 344
+301 [-]: JMP       344          ; PC := 344
+302 [-]: SELF      R19 R18 K4   ; R20 := R18; R19 := R18["0x654F1092"]
+303 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+304 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
+305 [-]: MOVE      R21 R19      ; R21 := R19
+306 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+307 [-]: TEST      R20 1        ; if R20 then PC := 344
+308 [-]: JMP       344          ; PC := 344
+309 [-]: SELF      R20 R19 K78  ; R21 := R19; R20 := R19["0xC2341A51"]
+310 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+311 [-]: LOADK     R21 K75      ; R21 := 1
+312 [-]: GETTABLE  R22 R20 K79  ; R22 := R20["mDecoRecipes"]
+313 [-]: LEN       R22 R22      ; R22 := # R22
+314 [-]: LOADK     R23 K75      ; R23 := 1
+315 [-]: FORPREP   R21 343      ; R21 -= R23; PC := 343
+316 [-]: GETGLOBAL R25 K80      ; R25 := 0x7C282057
+317 [-]: GETTABLE  R26 R20 K79  ; R26 := R20["mDecoRecipes"]
+318 [-]: GETTABLE  R26 R26 R24  ; R26 := R26[R24]
+319 [-]: GETTABLE  R26 R26 K81  ; R26 := R26["mItemType"]
+320 [-]: CALL      R25 2 2      ; R25 := R25(R26)
+321 [-]: GETGLOBAL R26 K3       ; R26 := 0x400E7765
+322 [-]: MOVE      R27 R25      ; R27 := R25
+323 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+324 [-]: TEST      R26 1        ; if R26 then PC := 343
+325 [-]: JMP       343          ; PC := 343
+326 [-]: GETTABLE  R26 R20 K79  ; R26 := R20["mDecoRecipes"]
+327 [-]: GETTABLE  R26 R26 R24  ; R26 := R26[R24]
+328 [-]: GETTABLE  R26 R26 K82  ; R26 := R26["mItemCount"]
+329 [-]: LT        0 K2 R26     ; if 0 >= R26 then PC := 343
+330 [-]: JMP       343          ; PC := 343
+331 [-]: SELF      R26 R25 K77  ; R27 := R25; R26 := R25["0x50E3DA4B"]
+332 [-]: GETTABLE  R28 R10 K8   ; R28 := R10["prefab"]
+333 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+334 [-]: TEST      R26 0        ; if not R26 then PC := 343
+335 [-]: JMP       343          ; PC := 343
+336 [-]: SELF      R26 R25 K83  ; R27 := R25; R26 := R25["0xFF9E9907"]
+337 [-]: MOVE      R28 R11      ; R28 := R11
+338 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+339 [-]: TEST      R26 0        ; if not R26 then PC := 343
+340 [-]: JMP       343          ; PC := 343
+341 [-]: MOVE      R13 R1       ; R13 := R1
+342 [-]: JMP       344          ; PC := 344
+343 [-]: FORLOOP   R21 316      ; R21 += R23; if R21 <= R22 then begin PC := 316; R24 := R21 end
+344 [-]: GETTABLE  R26 R10 K8   ; R26 := R10["prefab"]
+345 [-]: GETGLOBAL R27 K84      ; R27 := customObstacleRoom
+346 [-]: EQ        1 R26 R27    ; if R26 == R27 then PC := 363
+347 [-]: JMP       363          ; PC := 363
+348 [-]: GETGLOBAL R26 K9       ; R26 := _T
+349 [-]: GETTABLE  R26 R26 K43  ; R26 := R26["DojoMgr"]
+350 [-]: GETTABLE  R26 R26 K44  ; R26 := R26["mDojo"]
+351 [-]: SELF      R26 R26 K85  ; R27 := R26; R26 := R26["0x559590E3"]
+352 [-]: MOVE      R28 R10      ; R28 := R10
+353 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+354 [-]: TEST      R26 0        ; if not R26 then PC := 363
+355 [-]: JMP       363          ; PC := 363
+356 [-]: GETUPVAL  R26 U6       ; R26 := U6
+357 [-]: SELF      R26 R26 K22  ; R27 := R26; R26 := R26["0xA77DA8EE"]
+358 [-]: NEWTABLE  R28 0 2      ; R28 := {}
+359 [-]: SETTABLE  R28 K23 K86  ; R28["Label"] := "/Lotus/Language/Dojo/MakeSpawnRoom"
+360 [-]: SETTABLE  R28 K25 K87  ; R28["Callback"] := "MakeSpawnRoom"
+361 [-]: MOVE      R29 R1       ; R29 := R1
+362 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
+363 [-]: GETGLOBAL R26 K3       ; R26 := 0x400E7765
+364 [-]: GETUPVAL  R27 U14      ; R27 := U14
+365 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+366 [-]: TEST      R26 1        ; if R26 then PC := 401
+367 [-]: JMP       401          ; PC := 401
+368 [-]: GETGLOBAL R26 K9       ; R26 := _T
+369 [-]: GETTABLE  R26 R26 K43  ; R26 := R26["DojoMgr"]
+370 [-]: GETTABLE  R26 R26 K44  ; R26 := R26["mDojo"]
+371 [-]: SELF      R26 R26 K70  ; R27 := R26; R26 := R26["0x5F61A27F"]
+372 [-]: GETUPVAL  R28 U14      ; R28 := U14
+373 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
+374 [-]: GETTABLE  R27 R26 K8   ; R27 := R26["prefab"]
+375 [-]: GETGLOBAL R28 K84      ; R28 := customObstacleRoom
+376 [-]: EQ        0 R27 R28    ; if R27 ~= R28 then PC := 401
+377 [-]: JMP       401          ; PC := 401
+378 [-]: GETUPVAL  R27 U6       ; R27 := U6
+379 [-]: SELF      R27 R27 K22  ; R28 := R27; R27 := R27["0xA77DA8EE"]
+380 [-]: NEWTABLE  R29 0 2      ; R29 := {}
+381 [-]: SETTABLE  R29 K23 K88  ; R29["Label"] := "/Lotus/Language/Dojo/CustomObstacleCourseResetLeaderboard"
+382 [-]: SETTABLE  R29 K25 K89  ; R29["Callback"] := "ResetLeaderboard"
+383 [-]: MOVE      R30 R1       ; R30 := R1
+384 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
+385 [-]: GETUPVAL  R27 U6       ; R27 := U6
+386 [-]: SELF      R27 R27 K22  ; R28 := R27; R27 := R27["0xA77DA8EE"]
+387 [-]: NEWTABLE  R29 0 2      ; R29 := {}
+388 [-]: SETTABLE  R29 K23 K90  ; R29["Label"] := "/Lotus/Language/Dojo/CustomObstacleCourseResetRoom"
+389 [-]: SETTABLE  R29 K25 K91  ; R29["Callback"] := "ResetObstacleCourse"
+390 [-]: MOVE      R30 R1       ; R30 := R1
+391 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
+392 [-]: GETUPVAL  R27 U6       ; R27 := U6
+393 [-]: SELF      R27 R27 K22  ; R28 := R27; R27 := R27["0xA77DA8EE"]
+394 [-]: NEWTABLE  R29 0 2      ; R29 := {}
+395 [-]: GETUPVAL  R30 U17      ; R30 := U17
+396 [-]: CALL      R30 1 2      ; R30 := R30()
+397 [-]: SETTABLE  R29 K23 R30  ; R29["Label"] := R30
+398 [-]: SETTABLE  R29 K25 K92  ; R29["Callback"] := "ToggleAllowOperatorMode"
+399 [-]: MOVE      R30 R1       ; R30 := R1
+400 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
+401 [-]: GETUPVAL  R27 U6       ; R27 := U6
+402 [-]: SELF      R27 R27 K93  ; R28 := R27; R27 := R27["0x6470BAF4"]
+403 [-]: LOADNIL   R29 R30      ; R29 := R30 := nil
+404 [-]: MOVE      R31 R1       ; R31 := R1
+405 [-]: CALL      R27 5 1      ; R27(R28,R29,R30,R31)
+406 [-]: GETUPVAL  R27 U18      ; R27 := U18
+407 [-]: CALL      R27 1 1      ; R27()
+408 [-]: JMP       411          ; PC := 411
+409 [-]: GETUPVAL  R27 U3       ; R27 := U3
+410 [-]: CALL      R27 1 1      ; R27()
+411 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:

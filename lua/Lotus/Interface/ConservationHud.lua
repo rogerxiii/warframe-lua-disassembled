@@ -1,7 +1,7 @@
 code size: 103
 code size: 88
 code size: 4
-code size: 107
+code size: 96
 code size: 28
 code size: 21
 code size: 159
@@ -259,8 +259,8 @@ code size: 3
   5 [-]: JMP       7            ; PC := 7
   6 [-]: MOVE      R0 R0        ; R0 := R0
   7 [-]: MOVE      R0 R1        ; R0 := R1
-  8 [-]: TEST      R0 0         ; if not R0 then PC := 101
-  9 [-]: JMP       101          ; PC := 101
+  8 [-]: TEST      R0 0         ; if not R0 then PC := 90
+  9 [-]: JMP       90           ; PC := 90
  10 [-]: GETUPVAL  R1 U2        ; R1 := U2
  11 [-]: GETUPVAL  R2 U0        ; R2 := U0
  12 [-]: GETTABLE  R1 R1 R2     ; R1 := R1[R2]
@@ -273,98 +273,87 @@ code size: 3
  19 [-]: GETUPVAL  R3 U0        ; R3 := U0
  20 [-]: GETUPVAL  R4 U1        ; R4 := U1
  21 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["REPLY"]
- 22 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 87
- 23 [-]: JMP       87           ; PC := 87
+ 22 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 76
+ 23 [-]: JMP       76           ; PC := 76
  24 [-]: LOADK     R3 K3        ; R3 := "<PRE_ATTACK>"
  25 [-]: GETUPVAL  R4 U0        ; R4 := U0
  26 [-]: GETUPVAL  R5 U1        ; R5 := U1
  27 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["REPLY"]
- 28 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 76
- 29 [-]: JMP       76           ; PC := 76
+ 28 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 65
+ 29 [-]: JMP       65           ; PC := 65
  30 [-]: LOADK     R4 K4        ; R4 := "<MOUSE_Y>"
  31 [-]: GETGLOBAL R5 K5        ; R5 := Engine
  32 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["0x9490FE70"]
  33 [-]: CALL      R5 1 2       ; R5 := R5()
- 34 [-]: TEST      R5 0         ; if not R5 then PC := 73
- 35 [-]: JMP       73           ; PC := 73
+ 34 [-]: TEST      R5 0         ; if not R5 then PC := 62
+ 35 [-]: JMP       62           ; PC := 62
  36 [-]: GETGLOBAL R5 K7        ; R5 := gFlashMgr
- 37 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x675C7F8B"]
+ 37 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0xBD3A492E"]
  38 [-]: LOADK     R7 K9        ; R7 := "LOOK_Y"
  39 [-]: MOVE      R8 R0        ; R8 := R0
- 40 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 41 [-]: EQ        0 R5 K10     ; if R5 ~= "<CURRENTLY FILTERED OUT>" then PC := 46
- 42 [-]: JMP       46           ; PC := 46
- 43 [-]: LOADNIL   R6 R6        ; R6 := nil
- 44 [-]: MOVE      R6 R3        ; R6 := R3
- 45 [-]: RETURN    R0 1         ; return 
- 46 [-]: GETGLOBAL R6 K11       ; R6 := 0x93B1256B
- 47 [-]: LOADK     R7 K12       ; R7 := "ConservationHud.lua"
- 48 [-]: CALL      R6 2 1       ; R6(R7)
- 49 [-]: GETGLOBAL R6 K11       ; R6 := 0x93B1256B
- 50 [-]: LOADK     R7 K13       ; R7 := "--->"
- 51 [-]: MOVE      R8 R5        ; R8 := R5
- 52 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 53 [-]: CALL      R6 2 1       ; R6(R7)
- 54 [-]: GETGLOBAL R6 K14       ; R6 := 0xD1E7609B
- 55 [-]: LOADK     R7 K15       ; R7 := " "
- 56 [-]: MOVE      R8 R5        ; R8 := R5
- 57 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 58 [-]: MOVE      R5 R6        ; R5 := R6
- 59 [-]: LEN       R6 R5        ; R6 := # R5
- 60 [-]: LT        0 K16 R6     ; if 0 >= R6 then PC := 73
- 61 [-]: JMP       73           ; PC := 73
- 62 [-]: LOADK     R4 K17       ; R4 := "<GAMEPAD_LY_TILT_UD>"
- 63 [-]: LOADK     R6 K18       ; R6 := 1
- 64 [-]: LEN       R7 R5        ; R7 := # R5
- 65 [-]: LOADK     R8 K18       ; R8 := 1
- 66 [-]: FORPREP   R6 72        ; R6 -= R8; PC := 72
- 67 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
- 68 [-]: EQ        0 R10 K19    ; if R10 ~= "GAMEPAD_RY" then PC := 72
- 69 [-]: JMP       72           ; PC := 72
- 70 [-]: LOADK     R4 K20       ; R4 := "<GAMEPAD_RY_TILT_UD>"
- 71 [-]: JMP       73           ; PC := 73
- 72 [-]: FORLOOP   R6 67        ; R6 += R8; if R6 <= R7 then begin PC := 67; R9 := R6 end
- 73 [-]: MOVE      R10 R3       ; R10 := R3
- 74 [-]: MOVE      R11 R4       ; R11 := R4
- 75 [-]: CONCAT    R3 R10 R11   ; R3 := R10 .. R11
- 76 [-]: NEWTABLE  R10 0 1      ; R10 := {}
- 77 [-]: GETGLOBAL R11 K22      ; R11 := mMovie
- 78 [-]: SELF      R11 R11 K23  ; R12 := R11; R11 := R11["0x5DB0BD4"]
- 79 [-]: LOADK     R13 K24      ; R13 := "<font size=\"22\">"
- 80 [-]: MOVE      R14 R3       ; R14 := R3
- 81 [-]: LOADK     R15 K25      ; R15 := "</font>"
- 82 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
- 83 [-]: MOVE      R14 R1       ; R14 := R1
- 84 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 85 [-]: SETTABLE  R10 K21 R11  ; R10["HINT"] := R11
- 86 [-]: MOVE      R2 R10       ; R2 := R10
- 87 [-]: GETGLOBAL R10 K22      ; R10 := mMovie
- 88 [-]: SELF      R10 R10 K26  ; R11 := R10; R10 := R10["0xD6A79FE9"]
- 89 [-]: LOADK     R12 K27      ; R12 := "TopContent.Hint"
- 90 [-]: LOADK     R13 K28      ; R13 := "text"
- 91 [-]: LOADK     R14 K29      ; R14 := "<p><font size=\"19\">"
- 92 [-]: GETGLOBAL R15 K22      ; R15 := mMovie
- 93 [-]: SELF      R15 R15 K23  ; R16 := R15; R15 := R15["0x5DB0BD4"]
- 94 [-]: MOVE      R17 R1       ; R17 := R1
- 95 [-]: MOVE      R18 R1       ; R18 := R1
- 96 [-]: MOVE      R19 R2       ; R19 := R2
- 97 [-]: CALL      R15 5 2      ; R15 := R15(R16,R17,R18,R19)
- 98 [-]: LOADK     R16 K30      ; R16 := "</font></p>"
- 99 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
-100 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
-101 [-]: GETGLOBAL R10 K22      ; R10 := mMovie
-102 [-]: SELF      R10 R10 K31  ; R11 := R10; R10 := R10["0x1C19D966"]
-103 [-]: LOADK     R12 K27      ; R12 := "TopContent.Hint"
-104 [-]: LOADK     R13 K32      ; R13 := "_visible"
-105 [-]: MOVE      R14 R0       ; R14 := R0
-106 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
-107 [-]: RETURN    R0 1         ; return 
+ 40 [-]: LOADNIL   R9 R9        ; R9 := nil
+ 41 [-]: MOVE      R10 R1       ; R10 := R1
+ 42 [-]: MOVE      R11 R0       ; R11 := R0
+ 43 [-]: CALL      R5 7 2       ; R5 := R5(R6,R7,R8,R9,R10,R11)
+ 44 [-]: LEN       R6 R5        ; R6 := # R5
+ 45 [-]: LT        0 K10 R6     ; if 0 >= R6 then PC := 59
+ 46 [-]: JMP       59           ; PC := 59
+ 47 [-]: LOADK     R4 K11       ; R4 := "<GAMEPAD_LY_TILT_UD>"
+ 48 [-]: LOADK     R6 K12       ; R6 := 1
+ 49 [-]: LEN       R7 R5        ; R7 := # R5
+ 50 [-]: LOADK     R8 K12       ; R8 := 1
+ 51 [-]: FORPREP   R6 57        ; R6 -= R8; PC := 57
+ 52 [-]: GETTABLE  R10 R5 R9    ; R10 := R5[R9]
+ 53 [-]: EQ        0 R10 K13    ; if R10 ~= "GAMEPAD_RY" then PC := 57
+ 54 [-]: JMP       57           ; PC := 57
+ 55 [-]: LOADK     R4 K14       ; R4 := "<GAMEPAD_RY_TILT_UD>"
+ 56 [-]: JMP       62           ; PC := 62
+ 57 [-]: FORLOOP   R6 52        ; R6 += R8; if R6 <= R7 then begin PC := 52; R9 := R6 end
+ 58 [-]: JMP       62           ; PC := 62
+ 59 [-]: LOADNIL   R10 R10      ; R10 := nil
+ 60 [-]: MOVE      R10 R3       ; R10 := R3
+ 61 [-]: RETURN    R0 1         ; return 
+ 62 [-]: MOVE      R10 R3       ; R10 := R3
+ 63 [-]: MOVE      R11 R4       ; R11 := R4
+ 64 [-]: CONCAT    R3 R10 R11   ; R3 := R10 .. R11
+ 65 [-]: NEWTABLE  R10 0 1      ; R10 := {}
+ 66 [-]: GETGLOBAL R11 K16      ; R11 := mMovie
+ 67 [-]: SELF      R11 R11 K17  ; R12 := R11; R11 := R11["0x5DB0BD4"]
+ 68 [-]: LOADK     R13 K18      ; R13 := "<font size=\"22\">"
+ 69 [-]: MOVE      R14 R3       ; R14 := R3
+ 70 [-]: LOADK     R15 K19      ; R15 := "</font>"
+ 71 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
+ 72 [-]: MOVE      R14 R1       ; R14 := R1
+ 73 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
+ 74 [-]: SETTABLE  R10 K15 R11  ; R10["HINT"] := R11
+ 75 [-]: MOVE      R2 R10       ; R2 := R10
+ 76 [-]: GETGLOBAL R10 K16      ; R10 := mMovie
+ 77 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10["0xD6A79FE9"]
+ 78 [-]: LOADK     R12 K21      ; R12 := "TopContent.Hint"
+ 79 [-]: LOADK     R13 K22      ; R13 := "text"
+ 80 [-]: LOADK     R14 K23      ; R14 := "<p><font size=\"19\">"
+ 81 [-]: GETGLOBAL R15 K16      ; R15 := mMovie
+ 82 [-]: SELF      R15 R15 K17  ; R16 := R15; R15 := R15["0x5DB0BD4"]
+ 83 [-]: MOVE      R17 R1       ; R17 := R1
+ 84 [-]: MOVE      R18 R1       ; R18 := R1
+ 85 [-]: MOVE      R19 R2       ; R19 := R2
+ 86 [-]: CALL      R15 5 2      ; R15 := R15(R16,R17,R18,R19)
+ 87 [-]: LOADK     R16 K24      ; R16 := "</font></p>"
+ 88 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
+ 89 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+ 90 [-]: GETGLOBAL R10 K16      ; R10 := mMovie
+ 91 [-]: SELF      R10 R10 K25  ; R11 := R10; R10 := R10["0x1C19D966"]
+ 92 [-]: LOADK     R12 K21      ; R12 := "TopContent.Hint"
+ 93 [-]: LOADK     R13 K26      ; R13 := "_visible"
+ 94 [-]: MOVE      R14 R0       ; R14 := R0
+ 95 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+ 96 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 111
+; Defined at line: 108
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -403,7 +392,7 @@ code size: 3
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 119
+; Defined at line: 116
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -435,7 +424,7 @@ code size: 3
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 123
+; Defined at line: 120
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -605,7 +594,7 @@ code size: 3
 ; Function #6.1:
 ;
 ; Name:            
-; Defined at line: 133
+; Defined at line: 130
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -669,7 +658,7 @@ code size: 3
 ; Function #6.2:
 ;
 ; Name:            
-; Defined at line: 156
+; Defined at line: 153
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -683,7 +672,7 @@ code size: 3
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 178
+; Defined at line: 175
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -834,7 +823,7 @@ code size: 3
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 221
+; Defined at line: 218
 ; #Upvalues:       11
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1039,7 +1028,7 @@ code size: 3
 ; Function #8.1:
 ;
 ; Name:            
-; Defined at line: 261
+; Defined at line: 258
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1058,7 +1047,7 @@ code size: 3
 ; Function #8.2:
 ;
 ; Name:            
-; Defined at line: 263
+; Defined at line: 260
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1074,7 +1063,7 @@ code size: 3
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 282
+; Defined at line: 279
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1112,7 +1101,7 @@ code size: 3
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 295
+; Defined at line: 292
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1131,7 +1120,7 @@ code size: 3
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 299
+; Defined at line: 296
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

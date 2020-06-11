@@ -196,7 +196,7 @@ code size: 6
  31 [-]: NEWTABLE  R31 4 0      ; R31 := {}
  32 [-]: LOADK     R32 K7       ; R32 := "/Lotus/Language/Menu/ItemInventory_SlotsSuit"
  33 [-]: LOADK     R33 K8       ; R33 := "/Lotus/Language/Menu/ItemInventory_SlotsWeapon"
- 34 [-]: LOADK     R34 K9       ; R34 := "/Lotus/Language/Menu/ItemInventory_SlotsSentinel"
+ 34 [-]: LOADK     R34 K9       ; R34 := "/Lotus/Language/Menu/ItemInventory_SlotsCompanion"
  35 [-]: LOADK     R35 K10      ; R35 := "/Lotus/Language/Menu/ItemInventory_SlotsMisc"
  36 [-]: SETLIST   R31 4 1      ; R31[(1-1)*FPF+i] := R(31+i), 1 <= i <= 4
  37 [-]: LOADNIL   R32 R35      ; R32 := R33 := R34 := R35 := nil

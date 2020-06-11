@@ -396,9 +396,9 @@ code size: 52
 181 [-]: SELF      R12 R12 K33  ; R13 := R12; R12 := R12["0x3B1B11B9"]
 182 [-]: GETGLOBAL R14 K34      ; R14 := Game
 183 [-]: GETTABLE  R14 R14 K35  ; R14 := R14["AVATAR_MOVEMENT_SPEED"]
-184 [-]: GETGLOBAL R15 K34      ; R15 := Game
-185 [-]: GETTABLE  R15 R15 K36  ; R15 := R15["SET"]
-186 [-]: LOADK     R16 K37      ; R16 := 6
+184 [-]: GETGLOBAL R15 K36      ; R15 := Engine
+185 [-]: GETTABLE  R15 R15 K37  ; R15 := R15["SET"]
+186 [-]: LOADK     R16 K38      ; R16 := 6
 187 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
 188 [-]: GETGLOBAL R12 K5       ; R12 := 0x400E7765
 189 [-]: MOVE      R13 R0       ; R13 := R0
@@ -423,9 +423,9 @@ code size: 52
 208 [-]: LOADK     R13 K3       ; R13 := 0
 209 [-]: CALL      R12 2 1      ; R12(R13)
 210 [-]: SELF      R12 R8 K24   ; R13 := R8; R12 := R8["0xB33D71CD"]
-211 [-]: LOADK     R14 K38      ; R14 := -1
+211 [-]: LOADK     R14 K39      ; R14 := -1
 212 [-]: CALL      R12 3 1      ; R12(R13,R14)
-213 [-]: SELF      R12 R8 K39   ; R13 := R8; R12 := R8["0xE817E70D"]
+213 [-]: SELF      R12 R8 K40   ; R13 := R8; R12 := R8["0xE817E70D"]
 214 [-]: MOVE      R14 R0       ; R14 := R0
 215 [-]: CALL      R12 3 1      ; R12(R13,R14)
 216 [-]: SELF      R12 R0 K22   ; R13 := R0; R12 := R0["0x8E8D708B"]
@@ -435,7 +435,7 @@ code size: 52
 220 [-]: LE        0 R12 R13    ; if R12 > R13 then PC := 243
 221 [-]: JMP       243          ; PC := 243
 222 [-]: GETGLOBAL R12 K28      ; R12 := 0x93B1256B
-223 [-]: LOADK     R13 K40      ; R13 := "3 Thumper weakpoints destroyed"
+223 [-]: LOADK     R13 K41      ; R13 := "3 Thumper weakpoints destroyed"
 224 [-]: CALL      R12 2 1      ; R12(R13)
 225 [-]: LEN       R12 R11      ; R12 := # R11
 226 [-]: LT        0 R12 K30    ; if R12 >= 3 then PC := 243
@@ -451,7 +451,7 @@ code size: 52
 236 [-]: GETGLOBAL R12 K2       ; R12 := 0x201191EA
 237 [-]: LOADK     R13 K3       ; R13 := 0
 238 [-]: CALL      R12 2 1      ; R12(R13)
-239 [-]: GETGLOBAL R12 K41      ; R12 := 0xE40A882D
+239 [-]: GETGLOBAL R12 K42      ; R12 := 0xE40A882D
 240 [-]: LEN       R13 R11      ; R13 := # R11
 241 [-]: CALL      R12 2 1      ; R12(R13)
 242 [-]: JMP       225          ; PC := 225

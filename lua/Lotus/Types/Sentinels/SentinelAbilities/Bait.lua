@@ -405,13 +405,13 @@ code size: 4
  18 [-]: MOVE      R8 R2        ; R8 := R2
  19 [-]: GETGLOBAL R9 K5        ; R9 := Game
  20 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 21 [-]: GETGLOBAL R10 K5       ; R10 := Game
- 22 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["ADD"]
+ 21 [-]: GETGLOBAL R10 K7       ; R10 := Engine
+ 22 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["ADD"]
  23 [-]: MOVE      R11 R3       ; R11 := R3
- 24 [-]: SELF      R12 R5 K8    ; R13 := R5; R12 := R5["0xE2B32C65"]
+ 24 [-]: SELF      R12 R5 K9    ; R13 := R5; R12 := R5["0xE2B32C65"]
  25 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  26 [-]: MOVE      R13 R5       ; R13 := R5
- 27 [-]: GETGLOBAL R14 K9       ; R14 := Engine
+ 27 [-]: GETGLOBAL R14 K7       ; R14 := Engine
  28 [-]: GETTABLE  R14 R14 K10  ; R14 := R14["DT_CORROSIVE"]
  29 [-]: CALL      R6 9 1       ; R6(R7,R8,R9,R10,R11,R12,R13,R14)
  30 [-]: GETGLOBAL R6 K11       ; R6 := Lotus_Game

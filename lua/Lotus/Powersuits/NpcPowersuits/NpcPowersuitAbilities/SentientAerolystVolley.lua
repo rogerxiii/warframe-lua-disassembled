@@ -603,37 +603,37 @@ code size: 99
   7 [-]: SELF      R2 R2 K3     ; R3 := R2; R2 := R2["0x3B1B11B9"]
   8 [-]: GETGLOBAL R4 K4        ; R4 := Game
   9 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["AVATAR_HEAL_RATE"]
- 10 [-]: GETGLOBAL R5 K4        ; R5 := Game
- 11 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["ADD"]
+ 10 [-]: GETGLOBAL R5 K6        ; R5 := Engine
+ 11 [-]: GETTABLE  R5 R5 K7     ; R5 := R5["ADD"]
  12 [-]: MOVE      R6 R1        ; R6 := R1
  13 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 14 [-]: SELF      R2 R0 K7     ; R3 := R0; R2 := R0["0xAB436EF2"]
- 15 [-]: GETGLOBAL R4 K8        ; R4 := healingEffectAttach
- 16 [-]: GETGLOBAL R5 K9        ; R5 := EMPTY_SYMBOL
+ 14 [-]: SELF      R2 R0 K8     ; R3 := R0; R2 := R0["0xAB436EF2"]
+ 15 [-]: GETGLOBAL R4 K9        ; R4 := healingEffectAttach
+ 16 [-]: GETGLOBAL R5 K10       ; R5 := EMPTY_SYMBOL
  17 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 18 [-]: GETGLOBAL R3 K10       ; R3 := 0x201191EA
- 19 [-]: GETGLOBAL R4 K11       ; R4 := healDuration
+ 18 [-]: GETGLOBAL R3 K11       ; R3 := 0x201191EA
+ 19 [-]: GETGLOBAL R4 K12       ; R4 := healDuration
  20 [-]: CALL      R3 2 1       ; R3(R4)
- 21 [-]: GETGLOBAL R3 K12       ; R3 := 0x400E7765
+ 21 [-]: GETGLOBAL R3 K13       ; R3 := 0x400E7765
  22 [-]: MOVE      R4 R0        ; R4 := R0
  23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  24 [-]: TEST      R3 1         ; if R3 then PC := 42
  25 [-]: JMP       42           ; PC := 42
  26 [-]: SELF      R3 R0 K2     ; R4 := R0; R3 := R0["0x8DB5D01F"]
  27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 28 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3["0xF21555A7"]
+ 28 [-]: SELF      R3 R3 K14    ; R4 := R3; R3 := R3["0xF21555A7"]
  29 [-]: GETGLOBAL R5 K4        ; R5 := Game
  30 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["AVATAR_HEAL_RATE"]
- 31 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 32 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["ADD"]
+ 31 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 32 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["ADD"]
  33 [-]: MOVE      R7 R1        ; R7 := R1
  34 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 35 [-]: GETGLOBAL R3 K12       ; R3 := 0x400E7765
+ 35 [-]: GETGLOBAL R3 K13       ; R3 := 0x400E7765
  36 [-]: MOVE      R4 R2        ; R4 := R2
  37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  38 [-]: TEST      R3 1         ; if R3 then PC := 42
  39 [-]: JMP       42           ; PC := 42
- 40 [-]: SELF      R3 R2 K14    ; R4 := R2; R3 := R2["0xD4C2743F"]
+ 40 [-]: SELF      R3 R2 K15    ; R4 := R2; R3 := R2["0xD4C2743F"]
  41 [-]: CALL      R3 2 1       ; R3(R4)
  42 [-]: RETURN    R0 1         ; return 
 

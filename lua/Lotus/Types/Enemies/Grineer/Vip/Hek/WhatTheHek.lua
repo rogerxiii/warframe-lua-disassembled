@@ -110,7 +110,7 @@ code size: 213
  83 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0x3B1B11B9"]
  84 [-]: GETGLOBAL R8 K32       ; R8 := Game
  85 [-]: GETTABLE  R8 R8 K33    ; R8 := R8["WEAPON_FIRE_RATE"]
- 86 [-]: GETGLOBAL R9 K32       ; R9 := Game
+ 86 [-]: GETGLOBAL R9 K17       ; R9 := Engine
  87 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["MULTIPLY"]
  88 [-]: LOADK     R10 K35      ; R10 := 1.5
  89 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
@@ -119,7 +119,7 @@ code size: 213
  92 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0x3B1B11B9"]
  93 [-]: GETGLOBAL R8 K32       ; R8 := Game
  94 [-]: GETTABLE  R8 R8 K36    ; R8 := R8["AVATAR_MOVEMENT_SPEED"]
- 95 [-]: GETGLOBAL R9 K32       ; R9 := Game
+ 95 [-]: GETGLOBAL R9 K17       ; R9 := Engine
  96 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["MULTIPLY"]
  97 [-]: LOADK     R10 K37      ; R10 := 0.60000002384186
  98 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
@@ -128,7 +128,7 @@ code size: 213
 101 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0x3B1B11B9"]
 102 [-]: GETGLOBAL R8 K32       ; R8 := Game
 103 [-]: GETTABLE  R8 R8 K38    ; R8 := R8["WEAPON_DAMAGE_AMOUNT"]
-104 [-]: GETGLOBAL R9 K32       ; R9 := Game
+104 [-]: GETGLOBAL R9 K17       ; R9 := Engine
 105 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["MULTIPLY"]
 106 [-]: LOADK     R10 K39      ; R10 := 2
 107 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
@@ -137,7 +137,7 @@ code size: 213
 110 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0x3B1B11B9"]
 111 [-]: GETGLOBAL R8 K32       ; R8 := Game
 112 [-]: GETTABLE  R8 R8 K40    ; R8 := R8["AVATAR_DAMAGE_RESISTANCE"]
-113 [-]: GETGLOBAL R9 K32       ; R9 := Game
+113 [-]: GETGLOBAL R9 K17       ; R9 := Engine
 114 [-]: GETTABLE  R9 R9 K41    ; R9 := R9["SET"]
 115 [-]: LOADK     R10 K42      ; R10 := 0.80000001192093
 116 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
@@ -189,7 +189,7 @@ code size: 213
 162 [-]: SELF      R12 R12 K56  ; R13 := R12; R12 := R12["0xF21555A7"]
 163 [-]: GETGLOBAL R14 K32      ; R14 := Game
 164 [-]: GETTABLE  R14 R14 K33  ; R14 := R14["WEAPON_FIRE_RATE"]
-165 [-]: GETGLOBAL R15 K32      ; R15 := Game
+165 [-]: GETGLOBAL R15 K17      ; R15 := Engine
 166 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["MULTIPLY"]
 167 [-]: LOADK     R16 K35      ; R16 := 1.5
 168 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
@@ -198,7 +198,7 @@ code size: 213
 171 [-]: SELF      R12 R12 K56  ; R13 := R12; R12 := R12["0xF21555A7"]
 172 [-]: GETGLOBAL R14 K32      ; R14 := Game
 173 [-]: GETTABLE  R14 R14 K36  ; R14 := R14["AVATAR_MOVEMENT_SPEED"]
-174 [-]: GETGLOBAL R15 K32      ; R15 := Game
+174 [-]: GETGLOBAL R15 K17      ; R15 := Engine
 175 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["MULTIPLY"]
 176 [-]: LOADK     R16 K37      ; R16 := 0.60000002384186
 177 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
@@ -207,7 +207,7 @@ code size: 213
 180 [-]: SELF      R12 R12 K56  ; R13 := R12; R12 := R12["0xF21555A7"]
 181 [-]: GETGLOBAL R14 K32      ; R14 := Game
 182 [-]: GETTABLE  R14 R14 K38  ; R14 := R14["WEAPON_DAMAGE_AMOUNT"]
-183 [-]: GETGLOBAL R15 K32      ; R15 := Game
+183 [-]: GETGLOBAL R15 K17      ; R15 := Engine
 184 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["MULTIPLY"]
 185 [-]: LOADK     R16 K39      ; R16 := 2
 186 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
@@ -216,7 +216,7 @@ code size: 213
 189 [-]: SELF      R12 R12 K56  ; R13 := R12; R12 := R12["0xF21555A7"]
 190 [-]: GETGLOBAL R14 K32      ; R14 := Game
 191 [-]: GETTABLE  R14 R14 K40  ; R14 := R14["AVATAR_DAMAGE_RESISTANCE"]
-192 [-]: GETGLOBAL R15 K32      ; R15 := Game
+192 [-]: GETGLOBAL R15 K17      ; R15 := Engine
 193 [-]: GETTABLE  R15 R15 K41  ; R15 := R15["SET"]
 194 [-]: LOADK     R16 K42      ; R16 := 0.80000001192093
 195 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)

@@ -1,10 +1,11 @@
-code size: 18
+code size: 21
 code size: 23
 code size: 26
-code size: 23
-code size: 56
+code size: 77
+code size: 51
 code size: 19
 code size: 21
+code size: 39
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Gameplay\FishingWaterDetection.luac 
 
@@ -32,7 +33,10 @@ code size: 21
  15 [-]: MOVE      R0 R0        ; R0 := R0
  16 [-]: SETGLOBAL R3 K4        ; BaitPenetrateWater := R3
  17 [-]: SETGLOBAL R3 K5        ; 0x59C557C4 := R3
- 18 [-]: RETURN    R0 1         ; return 
+ 18 [-]: CLOSURE   R3 6         ; R3 := closure(Function #7)
+ 19 [-]: SETGLOBAL R3 K6        ; EntityLeaveWater := R3
+ 20 [-]: SETGLOBAL R3 K7        ; 0x229A937 := R3
+ 21 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -113,12 +117,12 @@ code size: 21
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  12
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := _T
   2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
-  3 [-]: TEST      R2 0         ; if not R2 then PC := 23
-  4 [-]: JMP       23           ; PC := 23
+  3 [-]: TEST      R2 0         ; if not R2 then PC := 77
+  4 [-]: JMP       77           ; PC := 77
   5 [-]: GETGLOBAL R2 K0        ; R2 := _T
   6 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
   7 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["perceptions"]
@@ -137,17 +141,71 @@ code size: 21
  20 [-]: SETTABLE  R4 K5 K6     ; R4["pType"] := 5
  21 [-]: SETTABLE  R4 K7 R1     ; R4["pos"] := R1
  22 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 23 [-]: RETURN    R0 1         ; return 
+ 23 [-]: SELF      R2 R0 K8     ; R3 := R0; R2 := R0["0xB8613F53"]
+ 24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 25 [-]: TEST      R2 0         ; if not R2 then PC := 77
+ 26 [-]: JMP       77           ; PC := 77
+ 27 [-]: GETGLOBAL R2 K0        ; R2 := _T
+ 28 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
+ 29 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["avatarsInWater"]
+ 30 [-]: TEST      R2 1         ; if R2 then PC := 36
+ 31 [-]: JMP       36           ; PC := 36
+ 32 [-]: GETGLOBAL R2 K0        ; R2 := _T
+ 33 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
+ 34 [-]: NEWTABLE  R3 0 0       ; R3 := {}
+ 35 [-]: SETTABLE  R2 K9 R3     ; R2["avatarsInWater"] := R3
+ 36 [-]: MOVE      R2 R0        ; R2 := R0
+ 37 [-]: LOADK     R3 K10       ; R3 := 1
+ 38 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 39 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["gFishing"]
+ 40 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["avatarsInWater"]
+ 41 [-]: LEN       R4 R4        ; R4 := # R4
+ 42 [-]: LOADK     R5 K10       ; R5 := 1
+ 43 [-]: FORPREP   R3 58        ; R3 -= R5; PC := 58
+ 44 [-]: GETGLOBAL R7 K0        ; R7 := _T
+ 45 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["gFishing"]
+ 46 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["avatarsInWater"]
+ 47 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
+ 48 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["avtatar"]
+ 49 [-]: EQ        0 R7 R0      ; if R7 ~= R0 then PC := 58
+ 50 [-]: JMP       58           ; PC := 58
+ 51 [-]: GETGLOBAL R7 K0        ; R7 := _T
+ 52 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["gFishing"]
+ 53 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["avatarsInWater"]
+ 54 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
+ 55 [-]: SETTABLE  R7 K12 R1    ; R7["lastPos"] := R1
+ 56 [-]: MOVE      R2 R1        ; R2 := R1
+ 57 [-]: JMP       59           ; PC := 59
+ 58 [-]: FORLOOP   R3 44        ; R3 += R5; if R3 <= R4 then begin PC := 44; R6 := R3 end
+ 59 [-]: TEST      R2 1         ; if R2 then PC := 77
+ 60 [-]: JMP       77           ; PC := 77
+ 61 [-]: GETGLOBAL R7 K3        ; R7 := table
+ 62 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["0xE6450C9D"]
+ 63 [-]: GETGLOBAL R8 K0        ; R8 := _T
+ 64 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["gFishing"]
+ 65 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["avatarsInWater"]
+ 66 [-]: NEWTABLE  R9 0 5       ; R9 := {}
+ 67 [-]: SETTABLE  R9 K13 R0    ; R9["avatar"] := R0
+ 68 [-]: SETTABLE  R9 K12 R1    ; R9["lastPos"] := R1
+ 69 [-]: SETTABLE  R9 K14 K15   ; R9["checkTimer"] := 0
+ 70 [-]: SELF      R10 R0 K17   ; R11 := R0; R10 := R0["0xFD0BE5BF"]
+ 71 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 72 [-]: SETTABLE  R9 K16 R10   ; R9["lastPosture"] := R10
+ 73 [-]: SELF      R10 R0 K19   ; R11 := R0; R10 := R0["0xC964AF87"]
+ 74 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 75 [-]: SETTABLE  R9 K18 R10   ; R9["lastPostureModifiers"] := R10
+ 76 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 77 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 31
+; Defined at line: 52
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  9
+; Max Stack Size:  8
 
   1 [-]: GETGLOBAL R2 K0        ; R2 := _T
   2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
@@ -165,52 +223,47 @@ code size: 21
  14 [-]: MOVE      R4 R1        ; R4 := R1
  15 [-]: MOVE      R5 R2        ; R5 := R2
  16 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 17 [-]: JMP       56           ; PC := 56
+ 17 [-]: JMP       51           ; PC := 51
  18 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1["0x8B598ED4"]
  19 [-]: GETGLOBAL R5 K5        ; R5 := baitProjectileType
  20 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 21 [-]: TEST      R3 0         ; if not R3 then PC := 47
- 22 [-]: JMP       47           ; PC := 47
+ 21 [-]: TEST      R3 0         ; if not R3 then PC := 42
+ 22 [-]: JMP       42           ; PC := 42
  23 [-]: GETTABLE  R3 R2 K6     ; R3 := R2["y"]
  24 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0["0x6DA72501"]
  25 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  26 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["y"]
- 27 [-]: SELF      R5 R0 K7     ; R6 := R0; R5 := R0["0x11FF52EA"]
- 28 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 29 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["y"]
- 30 [-]: MUL       R5 R5 K8     ; R5 := R5 * 0.5
- 31 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
- 32 [-]: SETTABLE  R2 K6 R4     ; R2["y"] := R4
- 33 [-]: GETGLOBAL R5 K9        ; R5 := gRegion
- 34 [-]: SELF      R5 R5 K10    ; R6 := R5; R5 := R5["0x4723059B"]
- 35 [-]: MOVE      R7 R2        ; R7 := R2
- 36 [-]: MOVE      R8 R0        ; R8 := R0
- 37 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 38 [-]: TEST      R5 0         ; if not R5 then PC := 56
- 39 [-]: JMP       56           ; PC := 56
- 40 [-]: SETTABLE  R2 K6 R3     ; R2["y"] := R3
- 41 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 42 [-]: MOVE      R6 R1        ; R6 := R1
- 43 [-]: MOVE      R7 R2        ; R7 := R2
- 44 [-]: MOVE      R8 R0        ; R8 := R0
- 45 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 46 [-]: JMP       56           ; PC := 56
- 47 [-]: SELF      R5 R1 K3     ; R6 := R1; R5 := R1["0x8B598ED4"]
- 48 [-]: GETGLOBAL R7 K11       ; R7 := gBaseAvatarType
- 49 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 50 [-]: TEST      R5 0         ; if not R5 then PC := 56
- 51 [-]: JMP       56           ; PC := 56
- 52 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 53 [-]: MOVE      R6 R1        ; R6 := R1
- 54 [-]: MOVE      R7 R2        ; R7 := R2
- 55 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 56 [-]: RETURN    R0 1         ; return 
+ 27 [-]: SETTABLE  R2 K6 R4     ; R2["y"] := R4
+ 28 [-]: GETGLOBAL R4 K7        ; R4 := gRegion
+ 29 [-]: SELF      R4 R4 K8     ; R5 := R4; R4 := R4["0x4723059B"]
+ 30 [-]: MOVE      R6 R2        ; R6 := R2
+ 31 [-]: MOVE      R7 R0        ; R7 := R0
+ 32 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
+ 33 [-]: TEST      R4 0         ; if not R4 then PC := 51
+ 34 [-]: JMP       51           ; PC := 51
+ 35 [-]: SETTABLE  R2 K6 R3     ; R2["y"] := R3
+ 36 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 37 [-]: MOVE      R5 R1        ; R5 := R1
+ 38 [-]: MOVE      R6 R2        ; R6 := R2
+ 39 [-]: MOVE      R7 R0        ; R7 := R0
+ 40 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
+ 41 [-]: JMP       51           ; PC := 51
+ 42 [-]: SELF      R4 R1 K3     ; R5 := R1; R4 := R1["0x8B598ED4"]
+ 43 [-]: GETGLOBAL R6 K9        ; R6 := gBaseAvatarType
+ 44 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 45 [-]: TEST      R4 0         ; if not R4 then PC := 51
+ 46 [-]: JMP       51           ; PC := 51
+ 47 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 48 [-]: MOVE      R5 R1        ; R5 := R1
+ 49 [-]: MOVE      R6 R2        ; R6 := R2
+ 50 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 57
+; Defined at line: 77
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -240,7 +293,7 @@ code size: 21
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 66
+; Defined at line: 86
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -267,5 +320,55 @@ code size: 21
  19 [-]: MOVE      R8 R2        ; R8 := R2
  20 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  21 [-]: RETURN    R0 1         ; return 
+
+
+; Function #7:
+;
+; Name:            
+; Defined at line: 95
+; #Upvalues:       0
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  9
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := _T
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
+  3 [-]: TEST      R2 1         ; if R2 then PC := 6
+  4 [-]: JMP       6            ; PC := 6
+  5 [-]: RETURN    R0 1         ; return 
+  6 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0x8B598ED4"]
+  7 [-]: GETGLOBAL R4 K3        ; R4 := gBaseAvatarType
+  8 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+  9 [-]: TEST      R2 0         ; if not R2 then PC := 39
+ 10 [-]: JMP       39           ; PC := 39
+ 11 [-]: GETGLOBAL R2 K0        ; R2 := _T
+ 12 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["gFishing"]
+ 13 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["avatarsInWater"]
+ 14 [-]: TEST      R2 0         ; if not R2 then PC := 39
+ 15 [-]: JMP       39           ; PC := 39
+ 16 [-]: LOADK     R2 K5        ; R2 := 1
+ 17 [-]: GETGLOBAL R3 K0        ; R3 := _T
+ 18 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["gFishing"]
+ 19 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["avatarsInWater"]
+ 20 [-]: LEN       R3 R3        ; R3 := # R3
+ 21 [-]: LOADK     R4 K5        ; R4 := 1
+ 22 [-]: FORPREP   R2 38        ; R2 -= R4; PC := 38
+ 23 [-]: GETGLOBAL R6 K0        ; R6 := _T
+ 24 [-]: GETTABLE  R6 R6 K1     ; R6 := R6["gFishing"]
+ 25 [-]: GETTABLE  R6 R6 K4     ; R6 := R6["avatarsInWater"]
+ 26 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
+ 27 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["avatar"]
+ 28 [-]: EQ        0 R6 R1      ; if R6 ~= R1 then PC := 38
+ 29 [-]: JMP       38           ; PC := 38
+ 30 [-]: GETGLOBAL R6 K7        ; R6 := table
+ 31 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["0xCDB1FD5E"]
+ 32 [-]: GETGLOBAL R7 K0        ; R7 := _T
+ 33 [-]: GETTABLE  R7 R7 K1     ; R7 := R7["gFishing"]
+ 34 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["avatarsInWater"]
+ 35 [-]: MOVE      R8 R5        ; R8 := R5
+ 36 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 37 [-]: JMP       39           ; PC := 39
+ 38 [-]: FORLOOP   R2 23        ; R2 += R4; if R2 <= R3 then begin PC := 23; R5 := R2 end
+ 39 [-]: RETURN    R0 1         ; return 
 
 

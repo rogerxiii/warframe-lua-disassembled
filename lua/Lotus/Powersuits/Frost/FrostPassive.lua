@@ -132,13 +132,13 @@ code size: 51
  23 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  24 [-]: GETGLOBAL R6 K7        ; R6 := Game
  25 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["AVATAR_FREEZE_ON_MELEE_HIT_CHANCE"]
- 26 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 27 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 26 [-]: GETGLOBAL R7 K9        ; R7 := Engine
+ 27 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["ADD"]
  28 [-]: MOVE      R8 R2        ; R8 := R2
- 29 [-]: SELF      R9 R0 K10    ; R10 := R0; R9 := R0["0xE2B32C65"]
+ 29 [-]: SELF      R9 R0 K11    ; R10 := R0; R9 := R0["0xE2B32C65"]
  30 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  31 [-]: MOVE      R10 R0       ; R10 := R0
- 32 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 32 [-]: GETGLOBAL R11 K9       ; R11 := Engine
  33 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
  34 [-]: GETUPVAL  R12 U2       ; R12 := U2
  35 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -147,13 +147,13 @@ code size: 51
  38 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0x3B1B11B9"]
  39 [-]: GETGLOBAL R6 K7        ; R6 := Game
  40 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["AVATAR_FREEZE_ON_MELEE_HIT_DURATION"]
- 41 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 42 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 41 [-]: GETGLOBAL R7 K9        ; R7 := Engine
+ 42 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["ADD"]
  43 [-]: MOVE      R8 R3        ; R8 := R3
- 44 [-]: SELF      R9 R0 K10    ; R10 := R0; R9 := R0["0xE2B32C65"]
+ 44 [-]: SELF      R9 R0 K11    ; R10 := R0; R9 := R0["0xE2B32C65"]
  45 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  46 [-]: MOVE      R10 R0       ; R10 := R0
- 47 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 47 [-]: GETGLOBAL R11 K9       ; R11 := Engine
  48 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
  49 [-]: GETUPVAL  R12 U2       ; R12 := U2
  50 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -194,13 +194,13 @@ code size: 51
  23 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0xF21555A7"]
  24 [-]: GETGLOBAL R6 K7        ; R6 := Game
  25 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["AVATAR_FREEZE_ON_MELEE_HIT_CHANCE"]
- 26 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 27 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 26 [-]: GETGLOBAL R7 K9        ; R7 := Engine
+ 27 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["ADD"]
  28 [-]: MOVE      R8 R2        ; R8 := R2
- 29 [-]: SELF      R9 R0 K10    ; R10 := R0; R9 := R0["0xE2B32C65"]
+ 29 [-]: SELF      R9 R0 K11    ; R10 := R0; R9 := R0["0xE2B32C65"]
  30 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  31 [-]: MOVE      R10 R0       ; R10 := R0
- 32 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 32 [-]: GETGLOBAL R11 K9       ; R11 := Engine
  33 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
  34 [-]: GETUPVAL  R12 U2       ; R12 := U2
  35 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
@@ -209,13 +209,13 @@ code size: 51
  38 [-]: SELF      R4 R4 K6     ; R5 := R4; R4 := R4["0xF21555A7"]
  39 [-]: GETGLOBAL R6 K7        ; R6 := Game
  40 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["AVATAR_FREEZE_ON_MELEE_HIT_DURATION"]
- 41 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 42 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 41 [-]: GETGLOBAL R7 K9        ; R7 := Engine
+ 42 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["ADD"]
  43 [-]: MOVE      R8 R3        ; R8 := R3
- 44 [-]: SELF      R9 R0 K10    ; R10 := R0; R9 := R0["0xE2B32C65"]
+ 44 [-]: SELF      R9 R0 K11    ; R10 := R0; R9 := R0["0xE2B32C65"]
  45 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  46 [-]: MOVE      R10 R0       ; R10 := R0
- 47 [-]: GETGLOBAL R11 K11      ; R11 := Engine
+ 47 [-]: GETGLOBAL R11 K9       ; R11 := Engine
  48 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["DT_ANY"]
  49 [-]: GETUPVAL  R12 U2       ; R12 := U2
  50 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)

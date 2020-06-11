@@ -747,7 +747,7 @@ code size: 197
  37 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  38 [-]: MOVE      R2 R0        ; R2 := R0
  39 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 40 [-]: SETTABLE  R3 K8 K14    ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 40 [-]: SETTABLE  R3 K8 K14    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  41 [-]: GETUPVAL  R4 U1        ; R4 := U1
  42 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  43 [-]: SETTABLE  R3 K15 K16   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"

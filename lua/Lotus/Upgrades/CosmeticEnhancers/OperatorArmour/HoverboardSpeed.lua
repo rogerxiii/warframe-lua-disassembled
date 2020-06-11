@@ -152,8 +152,8 @@ code size: 105
  77 [-]: SELF      R7 R5 K23    ; R8 := R5; R7 := R5["0xF21555A7"]
  78 [-]: GETGLOBAL R9 K24       ; R9 := Game
  79 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["VEHICLE_SPEED"]
- 80 [-]: GETGLOBAL R10 K24      ; R10 := Game
- 81 [-]: GETTABLE  R10 R10 K26  ; R10 := R10["STACKING_MULTIPLY"]
+ 80 [-]: GETGLOBAL R10 K26      ; R10 := Engine
+ 81 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["STACKING_MULTIPLY"]
  82 [-]: GETGLOBAL R11 K2       ; R11 := _T
  83 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["hoverboardSpeed"]
  84 [-]: GETTABLE  R11 R11 R1   ; R11 := R11[R1]
@@ -161,16 +161,16 @@ code size: 105
  86 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  87 [-]: SELF      R7 R5 K23    ; R8 := R5; R7 := R5["0xF21555A7"]
  88 [-]: GETGLOBAL R9 K24       ; R9 := Game
- 89 [-]: GETTABLE  R9 R9 K27    ; R9 := R9["VEHICLE_SPRINT_SPEED"]
- 90 [-]: GETGLOBAL R10 K24      ; R10 := Game
- 91 [-]: GETTABLE  R10 R10 K26  ; R10 := R10["STACKING_MULTIPLY"]
+ 89 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["VEHICLE_SPRINT_SPEED"]
+ 90 [-]: GETGLOBAL R10 K26      ; R10 := Engine
+ 91 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["STACKING_MULTIPLY"]
  92 [-]: GETGLOBAL R11 K2       ; R11 := _T
  93 [-]: GETTABLE  R11 R11 K3   ; R11 := R11["hoverboardSpeed"]
  94 [-]: GETTABLE  R11 R11 R1   ; R11 := R11[R1]
  95 [-]: GETTABLE  R11 R11 K12  ; R11 := R11["speed"]
  96 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  97 [-]: MOVE      R4 R6        ; R4 := R6
- 98 [-]: SELF      R7 R4 K28    ; R8 := R4; R7 := R4["0x8DB5D01F"]
+ 98 [-]: SELF      R7 R4 K29    ; R8 := R4; R7 := R4["0x8DB5D01F"]
  99 [-]: CALL      R7 2 2       ; R7 := R7(R8)
 100 [-]: MOVE      R5 R7        ; R5 := R7
 101 [-]: SELF      R7 R5 K20    ; R8 := R5; R7 := R5["0x6978AC59"]
@@ -185,21 +185,21 @@ code size: 105
 110 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
 111 [-]: TEST      R8 0         ; if not R8 then PC := 34
 112 [-]: JMP       34           ; PC := 34
-113 [-]: SELF      R8 R5 K29    ; R9 := R5; R8 := R5["0x3B1B11B9"]
+113 [-]: SELF      R8 R5 K30    ; R9 := R5; R8 := R5["0x3B1B11B9"]
 114 [-]: GETGLOBAL R10 K24      ; R10 := Game
 115 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["VEHICLE_SPEED"]
-116 [-]: GETGLOBAL R11 K24      ; R11 := Game
-117 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["STACKING_MULTIPLY"]
+116 [-]: GETGLOBAL R11 K26      ; R11 := Engine
+117 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["STACKING_MULTIPLY"]
 118 [-]: GETGLOBAL R12 K2       ; R12 := _T
 119 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
 120 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
 121 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["speed"]
 122 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-123 [-]: SELF      R8 R5 K29    ; R9 := R5; R8 := R5["0x3B1B11B9"]
+123 [-]: SELF      R8 R5 K30    ; R9 := R5; R8 := R5["0x3B1B11B9"]
 124 [-]: GETGLOBAL R10 K24      ; R10 := Game
-125 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["VEHICLE_SPRINT_SPEED"]
-126 [-]: GETGLOBAL R11 K24      ; R11 := Game
-127 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["STACKING_MULTIPLY"]
+125 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["VEHICLE_SPRINT_SPEED"]
+126 [-]: GETGLOBAL R11 K26      ; R11 := Engine
+127 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["STACKING_MULTIPLY"]
 128 [-]: GETGLOBAL R12 K2       ; R12 := _T
 129 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
 130 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
@@ -208,13 +208,13 @@ code size: 105
 133 [-]: NEWTABLE  R8 1 0       ; R8 := {}
 134 [-]: MOVE      R9 R4        ; R9 := R4
 135 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-136 [-]: SETTABLE  R2 K30 R8    ; R2["affected"] := R8
+136 [-]: SETTABLE  R2 K31 R8    ; R2["affected"] := R8
 137 [-]: GETGLOBAL R8 K2        ; R8 := _T
 138 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["hoverboardSpeed"]
 139 [-]: GETTABLE  R8 R8 R1     ; R8 := R8[R1]
 140 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["timer"]
-141 [-]: SETTABLE  R2 K31 R8    ; R2["buffData"] := R8
-142 [-]: SELF      R8 R4 K32    ; R9 := R4; R8 := R4["0x584F13D6"]
+141 [-]: SETTABLE  R2 K32 R8    ; R2["buffData"] := R8
+142 [-]: SELF      R8 R4 K33    ; R9 := R4; R8 := R4["0x584F13D6"]
 143 [-]: MOVE      R10 R2       ; R10 := R2
 144 [-]: MOVE      R11 R1       ; R11 := R1
 145 [-]: MOVE      R12 R1       ; R12 := R1
@@ -241,8 +241,8 @@ code size: 105
 166 [-]: SELF      R8 R5 K23    ; R9 := R5; R8 := R5["0xF21555A7"]
 167 [-]: GETGLOBAL R10 K24      ; R10 := Game
 168 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["VEHICLE_SPEED"]
-169 [-]: GETGLOBAL R11 K24      ; R11 := Game
-170 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["STACKING_MULTIPLY"]
+169 [-]: GETGLOBAL R11 K26      ; R11 := Engine
+170 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["STACKING_MULTIPLY"]
 171 [-]: GETGLOBAL R12 K2       ; R12 := _T
 172 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
 173 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
@@ -250,9 +250,9 @@ code size: 105
 175 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 176 [-]: SELF      R8 R5 K23    ; R9 := R5; R8 := R5["0xF21555A7"]
 177 [-]: GETGLOBAL R10 K24      ; R10 := Game
-178 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["VEHICLE_SPRINT_SPEED"]
-179 [-]: GETGLOBAL R11 K24      ; R11 := Game
-180 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["STACKING_MULTIPLY"]
+178 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["VEHICLE_SPRINT_SPEED"]
+179 [-]: GETGLOBAL R11 K26      ; R11 := Engine
+180 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["STACKING_MULTIPLY"]
 181 [-]: GETGLOBAL R12 K2       ; R12 := _T
 182 [-]: GETTABLE  R12 R12 K3   ; R12 := R12["hoverboardSpeed"]
 183 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
@@ -260,7 +260,7 @@ code size: 105
 185 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
 186 [-]: GETGLOBAL R8 K2        ; R8 := _T
 187 [-]: GETTABLE  R8 R8 K3     ; R8 := R8["hoverboardSpeed"]
-188 [-]: SETTABLE  R8 R1 K33    ; R8[R1] := nil
+188 [-]: SETTABLE  R8 R1 K34    ; R8[R1] := nil
 189 [-]: RETURN    R0 1         ; return 
 
 

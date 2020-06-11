@@ -498,7 +498,7 @@ code size: 120
  75 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  76 [-]: MOVE      R8 R0        ; R8 := R0
  77 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 78 [-]: SETTABLE  R9 K17 K25   ; R9["Label"] := "/Game/AVATAR_SHIELD"
+ 78 [-]: SETTABLE  R9 K17 K25   ; R9["Label"] := "/Lotus/Language/Labels/AVATAR_SHIELD"
  79 [-]: GETUPVAL  R10 U2       ; R10 := U2
  80 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  81 [-]: SETTABLE  R9 K23 K26   ; R9["ValueIcon"] := "<SHIELD>"
@@ -998,7 +998,7 @@ code size: 120
 239 [-]: SELF      R28 R28 K57  ; R29 := R28; R28 := R28["0x3B1B11B9"]
 240 [-]: GETGLOBAL R30 K58      ; R30 := Game
 241 [-]: GETTABLE  R30 R30 K59  ; R30 := R30["AVATAR_ARMOUR"]
-242 [-]: GETGLOBAL R31 K58      ; R31 := Game
+242 [-]: GETGLOBAL R31 K4       ; R31 := Engine
 243 [-]: GETTABLE  R31 R31 K60  ; R31 := R31["MULTIPLY"]
 244 [-]: GETGLOBAL R32 K61      ; R32 := math
 245 [-]: GETTABLE  R32 R32 K62  ; R32 := R32["0x8B011038"]

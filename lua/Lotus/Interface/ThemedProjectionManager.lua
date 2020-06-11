@@ -215,9 +215,9 @@ code size: 6
  79 [-]: LOADNIL   R61 R61      ; R61 := nil
  80 [-]: NEWTABLE  R62 0 0      ; R62 := {}
  81 [-]: NEWTABLE  R63 3 0      ; R63 := {}
- 82 [-]: LOADK     R64 K21      ; R64 := "/Game/COMMON"
- 83 [-]: LOADK     R65 K22      ; R65 := "/Game/UNCOMMON"
- 84 [-]: LOADK     R66 K23      ; R66 := "/Game/RARE"
+ 82 [-]: LOADK     R64 K21      ; R64 := "/Lotus/Language/Labels/COMMON"
+ 83 [-]: LOADK     R65 K22      ; R65 := "/Lotus/Language/Labels/UNCOMMON"
+ 84 [-]: LOADK     R66 K23      ; R66 := "/Lotus/Language/Labels/RARE"
  85 [-]: SETLIST   R63 3 1      ; R63[(1-1)*FPF+i] := R(63+i), 1 <= i <= 3
  86 [-]: NEWTABLE  R64 0 7      ; R64 := {}
  87 [-]: SETTABLE  R64 K24 K25  ; R64["MaxMovement"] := 2

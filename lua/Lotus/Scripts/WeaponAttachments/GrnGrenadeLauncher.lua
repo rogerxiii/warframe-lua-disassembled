@@ -169,12 +169,12 @@ code size: 87
  25 [-]: SELF      R3 R3 K10    ; R4 := R3; R3 := R3["0xF21555A7"]
  26 [-]: GETGLOBAL R5 K11       ; R5 := Game
  27 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["WEAPON_RELOAD_SPEED"]
- 28 [-]: GETGLOBAL R6 K11       ; R6 := Game
- 29 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["STACKING_MULTIPLY"]
+ 28 [-]: GETGLOBAL R6 K13       ; R6 := Engine
+ 29 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["STACKING_MULTIPLY"]
  30 [-]: GETGLOBAL R7 K2        ; R7 := _T
  31 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["tonkorNightwaveUpgrade"]
  32 [-]: GETTABLE  R7 R7 R1     ; R7 := R7[R1]
- 33 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["upgVal"]
+ 33 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["upgVal"]
  34 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  35 [-]: RETURN    R0 1         ; return 
 
@@ -241,36 +241,36 @@ code size: 87
  51 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7["0x3B1B11B9"]
  52 [-]: GETGLOBAL R9 K16       ; R9 := Game
  53 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["WEAPON_RELOAD_SPEED"]
- 54 [-]: GETGLOBAL R10 K16      ; R10 := Game
- 55 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["STACKING_MULTIPLY"]
+ 54 [-]: GETGLOBAL R10 K18      ; R10 := Engine
+ 55 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["STACKING_MULTIPLY"]
  56 [-]: MOVE      R11 R6       ; R11 := R6
  57 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
- 58 [-]: GETGLOBAL R7 K19       ; R7 := Lotus_Game
- 59 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["0xFAFD4322"]
+ 58 [-]: GETGLOBAL R7 K20       ; R7 := Lotus_Game
+ 59 [-]: GETTABLE  R7 R7 K21    ; R7 := R7["0xFAFD4322"]
  60 [-]: CALL      R7 1 2       ; R7 := R7()
- 61 [-]: SETTABLE  R7 K21 R0    ; R7["instigator"] := R0
+ 61 [-]: SETTABLE  R7 K22 R0    ; R7["instigator"] := R0
  62 [-]: NEWTABLE  R8 1 0       ; R8 := {}
  63 [-]: MOVE      R9 R0        ; R9 := R0
  64 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
- 65 [-]: SETTABLE  R7 K22 R8    ; R7["affected"] := R8
- 66 [-]: GETGLOBAL R8 K19       ; R8 := Lotus_Game
- 67 [-]: GETTABLE  R8 R8 K24    ; R8 := R8["BT_PERCENT_TIMER"]
- 68 [-]: SETTABLE  R7 K23 R8    ; R7["buffType"] := R8
- 69 [-]: SELF      R8 R4 K26    ; R9 := R4; R8 := R4["0xE2B32C65"]
+ 65 [-]: SETTABLE  R7 K23 R8    ; R7["affected"] := R8
+ 66 [-]: GETGLOBAL R8 K20       ; R8 := Lotus_Game
+ 67 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["BT_PERCENT_TIMER"]
+ 68 [-]: SETTABLE  R7 K24 R8    ; R7["buffType"] := R8
+ 69 [-]: SELF      R8 R4 K27    ; R9 := R4; R8 := R4["0xE2B32C65"]
  70 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 71 [-]: SETTABLE  R7 K25 R8    ; R7["abilityType"] := R8
- 72 [-]: GETGLOBAL R8 K28       ; R8 := nightwaveDuration
- 73 [-]: SETTABLE  R7 K27 R8    ; R7["buffData"] := R8
- 74 [-]: MUL       R8 R6 K30    ; R8 := R6 * 100
- 75 [-]: SETTABLE  R7 K29 R8    ; R7["buffDataExtra"] := R8
- 76 [-]: SELF      R8 R0 K31    ; R9 := R0; R8 := R0["0x584F13D6"]
+ 71 [-]: SETTABLE  R7 K26 R8    ; R7["abilityType"] := R8
+ 72 [-]: GETGLOBAL R8 K29       ; R8 := nightwaveDuration
+ 73 [-]: SETTABLE  R7 K28 R8    ; R7["buffData"] := R8
+ 74 [-]: MUL       R8 R6 K31    ; R8 := R6 * 100
+ 75 [-]: SETTABLE  R7 K30 R8    ; R7["buffDataExtra"] := R8
+ 76 [-]: SELF      R8 R0 K32    ; R9 := R0; R8 := R0["0x584F13D6"]
  77 [-]: MOVE      R10 R7       ; R10 := R7
  78 [-]: MOVE      R11 R1       ; R11 := R1
  79 [-]: MOVE      R12 R1       ; R12 := R1
  80 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
- 81 [-]: SELF      R8 R0 K32    ; R9 := R0; R8 := R0["0xB26452A2"]
- 82 [-]: GETGLOBAL R10 K33      ; R10 := 0xEC274B1A
- 83 [-]: LOADK     R11 K34      ; R11 := "NightwaveUpgrade"
+ 81 [-]: SELF      R8 R0 K33    ; R9 := R0; R8 := R0["0xB26452A2"]
+ 82 [-]: GETGLOBAL R10 K34      ; R10 := 0xEC274B1A
+ 83 [-]: LOADK     R11 K35      ; R11 := "NightwaveUpgrade"
  84 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  85 [-]: MOVE      R11 R0       ; R11 := R0
  86 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)

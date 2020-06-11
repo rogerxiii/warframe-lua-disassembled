@@ -598,7 +598,7 @@ code size: 21
  10 [-]: SELF      R11 R8 K4    ; R12 := R8; R11 := R8["0xADD560BB"]
  11 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
  12 [-]: CALL      R10 0 2      ; R10 := R10(R11,...)
- 13 [-]: GETGLOBAL R11 K5       ; R11 := Game
+ 13 [-]: GETGLOBAL R11 K5       ; R11 := Engine
  14 [-]: GETTABLE  R11 R11 K6   ; R11 := R11["STACKING_MULTIPLY"]
  15 [-]: EQ        0 R9 R11     ; if R9 ~= R11 then PC := 24
  16 [-]: JMP       24           ; PC := 24
@@ -609,7 +609,7 @@ code size: 21
  21 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  22 [-]: MOVE      R10 R11      ; R10 := R11
  23 [-]: JMP       35           ; PC := 35
- 24 [-]: GETGLOBAL R11 K5       ; R11 := Game
+ 24 [-]: GETGLOBAL R11 K5       ; R11 := Engine
  25 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["MULTIPLY"]
  26 [-]: EQ        0 R9 R11     ; if R9 ~= R11 then PC := 35
  27 [-]: JMP       35           ; PC := 35
@@ -631,14 +631,14 @@ code size: 21
  43 [-]: LOADK     R13 K16      ; R13 := "/Lotus/Language/Archive/"
  44 [-]: GETUPVAL  R14 U0       ; R14 := U0
  45 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["0xF81722A2"]
- 46 [-]: GETGLOBAL R15 K18      ; R15 := Engine
- 47 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0x9490FE70"]
+ 46 [-]: GETGLOBAL R15 K5       ; R15 := Engine
+ 47 [-]: GETTABLE  R15 R15 K18  ; R15 := R15["0x9490FE70"]
  48 [-]: CALL      R15 1 2      ; R15 := R15()
- 49 [-]: LOADK     R16 K20      ; R16 := "SprintControlsConsole"
- 50 [-]: LOADK     R17 K21      ; R17 := "SprintControlsPC"
+ 49 [-]: LOADK     R16 K19      ; R16 := "SprintControlsConsole"
+ 50 [-]: LOADK     R17 K20      ; R17 := "SprintControlsPC"
  51 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
  52 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 53 [-]: GETGLOBAL R14 K22      ; R14 := descInputFilter
+ 53 [-]: GETGLOBAL R14 K21      ; R14 := descInputFilter
  54 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
  55 [-]: SETTABLE  R3 K13 R11   ; R3["SPRINT"] := R11
  56 [-]: GETGLOBAL R11 K14      ; R11 := mMovie
@@ -646,20 +646,20 @@ code size: 21
  58 [-]: LOADK     R13 K16      ; R13 := "/Lotus/Language/Archive/"
  59 [-]: GETUPVAL  R14 U0       ; R14 := U0
  60 [-]: GETTABLE  R14 R14 K17  ; R14 := R14["0xF81722A2"]
- 61 [-]: GETGLOBAL R15 K18      ; R15 := Engine
- 62 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0x9490FE70"]
+ 61 [-]: GETGLOBAL R15 K5       ; R15 := Engine
+ 62 [-]: GETTABLE  R15 R15 K18  ; R15 := R15["0x9490FE70"]
  63 [-]: CALL      R15 1 2      ; R15 := R15()
- 64 [-]: LOADK     R16 K24      ; R16 := "DodgeControlsRailjackConsole"
- 65 [-]: LOADK     R17 K25      ; R17 := "DodgeControlsPC"
+ 64 [-]: LOADK     R16 K23      ; R16 := "DodgeControlsRailjackConsole"
+ 65 [-]: LOADK     R17 K24      ; R17 := "DodgeControlsPC"
  66 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
  67 [-]: CONCAT    R13 R13 R14  ; R13 := R13 .. R14
- 68 [-]: GETGLOBAL R14 K22      ; R14 := descInputFilter
+ 68 [-]: GETGLOBAL R14 K21      ; R14 := descInputFilter
  69 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
- 70 [-]: SETTABLE  R3 K23 R11   ; R3["ACTION"] := R11
+ 70 [-]: SETTABLE  R3 K22 R11   ; R3["ACTION"] := R11
  71 [-]: GETGLOBAL R11 K14      ; R11 := mMovie
- 72 [-]: SELF      R11 R11 K26  ; R12 := R11; R11 := R11["0x5DB0BD4"]
+ 72 [-]: SELF      R11 R11 K25  ; R12 := R11; R11 := R11["0x5DB0BD4"]
  73 [-]: MOVE      R13 R0       ; R13 := R0
- 74 [-]: LOADK     R14 K27      ; R14 := "Desc_"
+ 74 [-]: LOADK     R14 K26      ; R14 := "Desc_"
  75 [-]: MOVE      R15 R1       ; R15 := R1
  76 [-]: CONCAT    R13 R13 R15  ; R13 := R13 .. R14 .. R15
  77 [-]: MOVE      R14 R1       ; R14 := R1

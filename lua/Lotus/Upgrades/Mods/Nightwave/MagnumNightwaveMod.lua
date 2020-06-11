@@ -88,7 +88,7 @@ code size: 179
  24 [-]: SELF      R7 R5 K9     ; R8 := R5; R7 := R5["0x3B1B11B9"]
  25 [-]: GETGLOBAL R9 K10       ; R9 := Game
  26 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["WEAPON_CRIT_CHANCE_BODY_PART"]
- 27 [-]: GETGLOBAL R10 K10      ; R10 := Game
+ 27 [-]: GETGLOBAL R10 K4       ; R10 := Engine
  28 [-]: GETTABLE  R10 R10 K12  ; R10 := R10["STACKING_MULTIPLY"]
  29 [-]: MOVE      R11 R6       ; R11 := R6
  30 [-]: SELF      R12 R1 K13   ; R13 := R1; R12 := R1["0xE2B32C65"]
@@ -216,7 +216,7 @@ code size: 179
 152 [-]: SELF      R13 R13 K38  ; R14 := R13; R13 := R13["0xF21555A7"]
 153 [-]: GETGLOBAL R15 K10      ; R15 := Game
 154 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["WEAPON_CRIT_CHANCE_BODY_PART"]
-155 [-]: GETGLOBAL R16 K10      ; R16 := Game
+155 [-]: GETGLOBAL R16 K4       ; R16 := Engine
 156 [-]: GETTABLE  R16 R16 K12  ; R16 := R16["STACKING_MULTIPLY"]
 157 [-]: GETGLOBAL R17 K6       ; R17 := critChance
 158 [-]: GETGLOBAL R18 K7       ; R18 := math

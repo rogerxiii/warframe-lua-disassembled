@@ -40,12 +40,12 @@ code size: 144
  13 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1["0x3B1B11B9"]
  14 [-]: GETGLOBAL R5 K7        ; R5 := Game
  15 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["AVATAR_OVERSHIELD_MAX"]
- 16 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 17 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["SET"]
+ 16 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 17 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["SET"]
  18 [-]: MOVE      R7 R2        ; R7 := R2
  19 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 20 [-]: SELF      R3 R1 K10    ; R4 := R1; R3 := R1["0x6EA0928F"]
- 21 [-]: GETGLOBAL R5 K11       ; R5 := Engine
+ 20 [-]: SELF      R3 R1 K11    ; R4 := R1; R3 := R1["0x6EA0928F"]
+ 21 [-]: GETGLOBAL R5 K9        ; R5 := Engine
  22 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["MAIN_HAND"]
  23 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  24 [-]: SELF      R4 R0 K13    ; R5 := R0; R4 := R0["0x9F1DC568"]
@@ -85,8 +85,8 @@ code size: 144
  58 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  59 [-]: TEST      R10 1        ; if R10 then PC := 144
  60 [-]: JMP       144          ; PC := 144
- 61 [-]: SELF      R10 R1 K10   ; R11 := R1; R10 := R1["0x6EA0928F"]
- 62 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+ 61 [-]: SELF      R10 R1 K11   ; R11 := R1; R10 := R1["0x6EA0928F"]
+ 62 [-]: GETGLOBAL R12 K9       ; R12 := Engine
  63 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["MAIN_HAND"]
  64 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
  65 [-]: MOVE      R3 R10       ; R3 := R10

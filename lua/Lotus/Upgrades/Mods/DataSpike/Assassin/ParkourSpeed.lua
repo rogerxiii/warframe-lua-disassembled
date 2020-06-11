@@ -102,27 +102,27 @@ code size: 64
  38 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7["0x3B1B11B9"]
  39 [-]: GETGLOBAL R9 K19       ; R9 := Game
  40 [-]: GETTABLE  R9 R9 K20    ; R9 := R9["AVATAR_PARKOUR_BOOST"]
- 41 [-]: GETGLOBAL R10 K19      ; R10 := Game
- 42 [-]: GETTABLE  R10 R10 K21  ; R10 := R10["STACKING_MULTIPLY"]
+ 41 [-]: GETGLOBAL R10 K21      ; R10 := Engine
+ 42 [-]: GETTABLE  R10 R10 K22  ; R10 := R10["STACKING_MULTIPLY"]
  43 [-]: GETGLOBAL R11 K14      ; R11 := upgradeVal
  44 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  45 [-]: MOVE      R7 R5        ; R7 := R5
- 46 [-]: LT        0 K22 R7     ; if 0 >= R7 then PC := 55
+ 46 [-]: LT        0 K23 R7     ; if 0 >= R7 then PC := 55
  47 [-]: JMP       55           ; PC := 55
- 48 [-]: GETGLOBAL R8 K23       ; R8 := 0x201191EA
- 49 [-]: LOADK     R9 K22       ; R9 := 0
+ 48 [-]: GETGLOBAL R8 K24       ; R8 := 0x201191EA
+ 49 [-]: LOADK     R9 K23       ; R9 := 0
  50 [-]: CALL      R8 2 1       ; R8(R9)
- 51 [-]: GETGLOBAL R8 K24       ; R8 := 0x4CDEF9FF
+ 51 [-]: GETGLOBAL R8 K25       ; R8 := 0x4CDEF9FF
  52 [-]: CALL      R8 1 2       ; R8 := R8()
  53 [-]: SUB       R7 R7 R8     ; R7 := R7 - R8
  54 [-]: JMP       46           ; PC := 46
  55 [-]: SELF      R8 R0 K17    ; R9 := R0; R8 := R0["0x8DB5D01F"]
  56 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 57 [-]: SELF      R8 R8 K25    ; R9 := R8; R8 := R8["0xF21555A7"]
+ 57 [-]: SELF      R8 R8 K26    ; R9 := R8; R8 := R8["0xF21555A7"]
  58 [-]: GETGLOBAL R10 K19      ; R10 := Game
  59 [-]: GETTABLE  R10 R10 K20  ; R10 := R10["AVATAR_PARKOUR_BOOST"]
- 60 [-]: GETGLOBAL R11 K19      ; R11 := Game
- 61 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["STACKING_MULTIPLY"]
+ 60 [-]: GETGLOBAL R11 K21      ; R11 := Engine
+ 61 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["STACKING_MULTIPLY"]
  62 [-]: GETGLOBAL R12 K14      ; R12 := upgradeVal
  63 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  64 [-]: RETURN    R0 1         ; return 

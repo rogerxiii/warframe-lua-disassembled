@@ -603,7 +603,7 @@ code size: 100
  46 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  47 [-]: MOVE      R2 R0        ; R2 := R0
  48 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 49 [-]: SETTABLE  R3 K8 K17    ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 49 [-]: SETTABLE  R3 K8 K17    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  50 [-]: GETUPVAL  R4 U3        ; R4 := U3
  51 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  52 [-]: SETTABLE  R3 K18 K19   ; R3["ValueIcon"] := "<DT_MAGNETIC>"
@@ -1863,7 +1863,7 @@ code size: 100
 474 [-]: SELF      R24 R19 K91  ; R25 := R19; R24 := R19["0x3B1B11B9"]
 475 [-]: GETGLOBAL R26 K45      ; R26 := Game
 476 [-]: GETTABLE  R26 R26 K92  ; R26 := R26["AVATAR_ENERGY_GAIN_MULTIPLIER"]
-477 [-]: GETGLOBAL R27 K45      ; R27 := Game
+477 [-]: GETGLOBAL R27 K50      ; R27 := Engine
 478 [-]: GETTABLE  R27 R27 K93  ; R27 := R27["MULTIPLY"]
 479 [-]: LOADK     R28 K18      ; R28 := 0
 480 [-]: CALL      R24 5 1      ; R24(R25,R26,R27,R28)
@@ -2384,7 +2384,7 @@ code size: 100
 144 [-]: SELF      R13 R5 K37   ; R14 := R5; R13 := R5["0xF21555A7"]
 145 [-]: GETGLOBAL R15 K38      ; R15 := Game
 146 [-]: GETTABLE  R15 R15 K39  ; R15 := R15["AVATAR_ENERGY_GAIN_MULTIPLIER"]
-147 [-]: GETGLOBAL R16 K38      ; R16 := Game
+147 [-]: GETGLOBAL R16 K18      ; R16 := Engine
 148 [-]: GETTABLE  R16 R16 K40  ; R16 := R16["MULTIPLY"]
 149 [-]: LOADK     R17 K4       ; R17 := 0
 150 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)

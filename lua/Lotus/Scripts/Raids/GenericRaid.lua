@@ -974,8 +974,8 @@ code size: 5
  14 [-]: SELF      R4 R2 K6     ; R5 := R2; R4 := R2["0xF21555A7"]
  15 [-]: GETGLOBAL R6 K7        ; R6 := Game
  16 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["AVATAR_BLEEDOUT_MODIFIER"]
- 17 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 18 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 17 [-]: GETGLOBAL R7 K9        ; R7 := Engine
+ 18 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["ADD"]
  19 [-]: GETUPVAL  R8 U1        ; R8 := U1
  20 [-]: SUB       R9 R1 K5     ; R9 := R1 - 2
  21 [-]: MOVE      R10 R3       ; R10 := R3
@@ -983,11 +983,11 @@ code size: 5
  23 [-]: CALL      R4 0 1       ; R4(R5,...)
  24 [-]: LT        0 K2 R1      ; if 1 >= R1 then PC := 36
  25 [-]: JMP       36           ; PC := 36
- 26 [-]: SELF      R4 R2 K10    ; R5 := R2; R4 := R2["0x3B1B11B9"]
+ 26 [-]: SELF      R4 R2 K11    ; R5 := R2; R4 := R2["0x3B1B11B9"]
  27 [-]: GETGLOBAL R6 K7        ; R6 := Game
  28 [-]: GETTABLE  R6 R6 K8     ; R6 := R6["AVATAR_BLEEDOUT_MODIFIER"]
- 29 [-]: GETGLOBAL R7 K7        ; R7 := Game
- 30 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["ADD"]
+ 29 [-]: GETGLOBAL R7 K9        ; R7 := Engine
+ 30 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["ADD"]
  31 [-]: GETUPVAL  R8 U1        ; R8 := U1
  32 [-]: SUB       R9 R1 K2     ; R9 := R1 - 1
  33 [-]: MOVE      R10 R3       ; R10 := R3

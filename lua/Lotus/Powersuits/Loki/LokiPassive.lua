@@ -81,28 +81,28 @@ code size: 53
  20 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["0x1B694258"]
  21 [-]: CALL      R2 1 2       ; R2 := R2()
  22 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2["0x15C954A"]
- 23 [-]: GETGLOBAL R5 K5        ; R5 := Game
- 24 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["MULTIPLY"]
+ 23 [-]: GETGLOBAL R5 K8        ; R5 := Engine
+ 24 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["MULTIPLY"]
  25 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 26 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x46206C58"]
+ 26 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2["0x46206C58"]
  27 [-]: GETGLOBAL R5 K5        ; R5 := Game
- 28 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_PARKOUR_GLIDE"]
+ 28 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_PARKOUR_GLIDE"]
  29 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 30 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2["0x6733C272"]
+ 30 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x6733C272"]
  31 [-]: GETUPVAL  R5 U1        ; R5 := U1
  32 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 33 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x8D014B2F"]
- 34 [-]: GETGLOBAL R5 K13       ; R5 := Engine
+ 33 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2["0x8D014B2F"]
+ 34 [-]: GETGLOBAL R5 K8        ; R5 := Engine
  35 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["WALLRUNNING_LEFT"]
  36 [-]: MOVE      R6 R1        ; R6 := R1
  37 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 38 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x8D014B2F"]
- 39 [-]: GETGLOBAL R5 K13       ; R5 := Engine
+ 38 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2["0x8D014B2F"]
+ 39 [-]: GETGLOBAL R5 K8        ; R5 := Engine
  40 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["WALLRUNNING_RIGHT"]
  41 [-]: MOVE      R6 R1        ; R6 := R1
  42 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 43 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x8D014B2F"]
- 44 [-]: GETGLOBAL R5 K13       ; R5 := Engine
+ 43 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2["0x8D014B2F"]
+ 44 [-]: GETGLOBAL R5 K8        ; R5 := Engine
  45 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["WALLRUNNING_UP"]
  46 [-]: MOVE      R6 R1        ; R6 := R1
  47 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
@@ -145,28 +145,28 @@ code size: 53
  20 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["0x1B694258"]
  21 [-]: CALL      R2 1 2       ; R2 := R2()
  22 [-]: SELF      R3 R2 K7     ; R4 := R2; R3 := R2["0x15C954A"]
- 23 [-]: GETGLOBAL R5 K5        ; R5 := Game
- 24 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["MULTIPLY"]
+ 23 [-]: GETGLOBAL R5 K8        ; R5 := Engine
+ 24 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["MULTIPLY"]
  25 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 26 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x46206C58"]
+ 26 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2["0x46206C58"]
  27 [-]: GETGLOBAL R5 K5        ; R5 := Game
- 28 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_PARKOUR_GLIDE"]
+ 28 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_PARKOUR_GLIDE"]
  29 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 30 [-]: SELF      R3 R2 K11    ; R4 := R2; R3 := R2["0x6733C272"]
+ 30 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x6733C272"]
  31 [-]: GETUPVAL  R5 U1        ; R5 := U1
  32 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 33 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x8D014B2F"]
- 34 [-]: GETGLOBAL R5 K13       ; R5 := Engine
+ 33 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2["0x8D014B2F"]
+ 34 [-]: GETGLOBAL R5 K8        ; R5 := Engine
  35 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["WALLRUNNING_LEFT"]
  36 [-]: MOVE      R6 R1        ; R6 := R1
  37 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 38 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x8D014B2F"]
- 39 [-]: GETGLOBAL R5 K13       ; R5 := Engine
+ 38 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2["0x8D014B2F"]
+ 39 [-]: GETGLOBAL R5 K8        ; R5 := Engine
  40 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["WALLRUNNING_RIGHT"]
  41 [-]: MOVE      R6 R1        ; R6 := R1
  42 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 43 [-]: SELF      R3 R2 K12    ; R4 := R2; R3 := R2["0x8D014B2F"]
- 44 [-]: GETGLOBAL R5 K13       ; R5 := Engine
+ 43 [-]: SELF      R3 R2 K13    ; R4 := R2; R3 := R2["0x8D014B2F"]
+ 44 [-]: GETGLOBAL R5 K8        ; R5 := Engine
  45 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["WALLRUNNING_UP"]
  46 [-]: MOVE      R6 R1        ; R6 := R1
  47 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)

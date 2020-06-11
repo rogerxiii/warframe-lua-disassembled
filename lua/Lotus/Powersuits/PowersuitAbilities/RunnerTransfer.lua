@@ -425,7 +425,7 @@ code size: 524
  41 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  42 [-]: MOVE      R2 R0        ; R2 := R0
  43 [-]: NEWTABLE  R3 0 4       ; R3 := {}
- 44 [-]: SETTABLE  R3 K8 K15    ; R3["Label"] := "/Game/WEAPON_PROC_TIME"
+ 44 [-]: SETTABLE  R3 K8 K15    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_TIME"
  45 [-]: GETUPVAL  R4 U3        ; R4 := U3
  46 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["minValue"]
  47 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
@@ -438,7 +438,7 @@ code size: 524
  54 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  55 [-]: MOVE      R2 R0        ; R2 := R0
  56 [-]: NEWTABLE  R3 0 4       ; R3 := {}
- 57 [-]: SETTABLE  R3 K8 K19    ; R3["Label"] := "/Game/WEAPON_FREEZE_DAMAGE"
+ 57 [-]: SETTABLE  R3 K8 K19    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_FREEZE_DAMAGE"
  58 [-]: GETUPVAL  R4 U4        ; R4 := U4
  59 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["minValue"]
  60 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
@@ -451,7 +451,7 @@ code size: 524
  67 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  68 [-]: MOVE      R2 R0        ; R2 := R0
  69 [-]: NEWTABLE  R3 0 4       ; R3 := {}
- 70 [-]: SETTABLE  R3 K8 K22    ; R3["Label"] := "/Game/WEAPON_FIRE_DAMAGE"
+ 70 [-]: SETTABLE  R3 K8 K22    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_FIRE_DAMAGE"
  71 [-]: GETUPVAL  R4 U5        ; R4 := U5
  72 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["minValue"]
  73 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
@@ -1073,7 +1073,7 @@ code size: 524
 395 [-]: SELF      R45 R45 K81  ; R46 := R45; R45 := R45["0x3B1B11B9"]
 396 [-]: GETGLOBAL R47 K51      ; R47 := Game
 397 [-]: GETTABLE  R47 R47 K82  ; R47 := R47["AVATAR_ARMOUR"]
-398 [-]: GETGLOBAL R48 K51      ; R48 := Game
+398 [-]: GETGLOBAL R48 K38      ; R48 := Engine
 399 [-]: GETTABLE  R48 R48 K83  ; R48 := R48["MULTIPLY"]
 400 [-]: GETUPVAL  R49 U8       ; R49 := U8
 401 [-]: MUL       R49 R49 R11  ; R49 := R49 * R11

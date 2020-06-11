@@ -393,11 +393,11 @@ code size: 114
  52 [-]: MOVE      R14 R7       ; R14 := R7
  53 [-]: GETGLOBAL R15 K19      ; R15 := Game
  54 [-]: GETTABLE  R15 R15 K20  ; R15 := R15["AVATAR_MOVEMENT_SPEED"]
- 55 [-]: GETGLOBAL R16 K19      ; R16 := Game
- 56 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["MULTIPLY"]
+ 55 [-]: GETGLOBAL R16 K21      ; R16 := Engine
+ 56 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["MULTIPLY"]
  57 [-]: MOVE      R17 R6       ; R17 := R6
  58 [-]: LOADNIL   R18 R19      ; R18 := R19 := nil
- 59 [-]: GETGLOBAL R20 K22      ; R20 := Engine
+ 59 [-]: GETGLOBAL R20 K21      ; R20 := Engine
  60 [-]: GETTABLE  R20 R20 K23  ; R20 := R20["DT_ANY"]
  61 [-]: GETUPVAL  R21 U5       ; R21 := U5
  62 [-]: CALL      R12 10 1     ; R12(R13,R14,R15,R16,R17,R18,R19,R20,R21)

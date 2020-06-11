@@ -453,9 +453,9 @@ code size: 82
 113 [-]: SELF      R15 R15 K23  ; R16 := R15; R15 := R15["0xF21555A7"]
 114 [-]: GETGLOBAL R17 K24      ; R17 := Game
 115 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["AVATAR_HEAL_RATE"]
-116 [-]: GETGLOBAL R18 K24      ; R18 := Game
-117 [-]: GETTABLE  R18 R18 K26  ; R18 := R18["ADD"]
-118 [-]: GETGLOBAL R19 K27      ; R19 := regenAmount
+116 [-]: GETGLOBAL R18 K26      ; R18 := Engine
+117 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["ADD"]
+118 [-]: GETGLOBAL R19 K28      ; R19 := regenAmount
 119 [-]: MUL       R19 R19 R8   ; R19 := R19 * R8
 120 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 121 [-]: GETGLOBAL R15 K8       ; R15 := _T
@@ -465,7 +465,7 @@ code size: 82
 125 [-]: GETTABLE  R16 R16 K9   ; R16 := R16["Healbot"]
 126 [-]: GETTABLE  R16 R16 R6   ; R16 := R16[R6]
 127 [-]: GETTABLE  R16 R16 K11  ; R16 := R16["stacks"]
-128 [-]: SUB       R16 R16 K28  ; R16 := R16 - 1
+128 [-]: SUB       R16 R16 K29  ; R16 := R16 - 1
 129 [-]: SETTABLE  R15 K11 R16  ; R15["stacks"] := R16
 130 [-]: MOVE      R10 R8       ; R10 := R8
 131 [-]: GETGLOBAL R15 K8       ; R15 := _T
@@ -483,17 +483,17 @@ code size: 82
 143 [-]: GETTABLE  R15 R15 K9   ; R15 := R15["Healbot"]
 144 [-]: GETTABLE  R15 R15 R6   ; R15 := R15[R6]
 145 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["stacks"]
-146 [-]: GETGLOBAL R16 K29      ; R16 := maxStacks
+146 [-]: GETGLOBAL R16 K30      ; R16 := maxStacks
 147 [-]: LT        0 R15 R16    ; if R15 >= R16 then PC := 169
 148 [-]: JMP       169          ; PC := 169
 149 [-]: SELF      R15 R5 K22   ; R16 := R5; R15 := R5["0x8DB5D01F"]
 150 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-151 [-]: SELF      R15 R15 K30  ; R16 := R15; R15 := R15["0x3B1B11B9"]
+151 [-]: SELF      R15 R15 K31  ; R16 := R15; R15 := R15["0x3B1B11B9"]
 152 [-]: GETGLOBAL R17 K24      ; R17 := Game
 153 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["AVATAR_HEAL_RATE"]
-154 [-]: GETGLOBAL R18 K24      ; R18 := Game
-155 [-]: GETTABLE  R18 R18 K26  ; R18 := R18["ADD"]
-156 [-]: GETGLOBAL R19 K27      ; R19 := regenAmount
+154 [-]: GETGLOBAL R18 K26      ; R18 := Engine
+155 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["ADD"]
+156 [-]: GETGLOBAL R19 K28      ; R19 := regenAmount
 157 [-]: MUL       R19 R19 R8   ; R19 := R19 * R8
 158 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 159 [-]: GETGLOBAL R15 K8       ; R15 := _T
@@ -503,7 +503,7 @@ code size: 82
 163 [-]: GETTABLE  R16 R16 K9   ; R16 := R16["Healbot"]
 164 [-]: GETTABLE  R16 R16 R6   ; R16 := R16[R6]
 165 [-]: GETTABLE  R16 R16 K11  ; R16 := R16["stacks"]
-166 [-]: ADD       R16 R16 K28  ; R16 := R16 + 1
+166 [-]: ADD       R16 R16 K29  ; R16 := R16 + 1
 167 [-]: SETTABLE  R15 K11 R16  ; R15["stacks"] := R16
 168 [-]: JMP       170          ; PC := 170
 169 [-]: LOADK     R11 K5       ; R11 := 0
@@ -519,7 +519,7 @@ code size: 82
 179 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["stacks"]
 180 [-]: EQ        0 R15 K5     ; if R15 ~= 0 then PC := 194
 181 [-]: JMP       194          ; PC := 194
-182 [-]: SELF      R15 R5 K31   ; R16 := R5; R15 := R5["0x584F13D6"]
+182 [-]: SELF      R15 R5 K32   ; R16 := R5; R15 := R5["0x584F13D6"]
 183 [-]: MOVE      R17 R12      ; R17 := R12
 184 [-]: MOVE      R18 R0       ; R18 := R0
 185 [-]: MOVE      R19 R1       ; R19 := R1
@@ -527,16 +527,16 @@ code size: 82
 187 [-]: GETUPVAL  R15 U3       ; R15 := U3
 188 [-]: MOVE      R16 R5       ; R16 := R5
 189 [-]: MOVE      R17 R1       ; R17 := R1
-190 [-]: GETGLOBAL R18 K32      ; R18 := healBeamFx
-191 [-]: GETGLOBAL R19 K33      ; R19 := healProj
+190 [-]: GETGLOBAL R18 K33      ; R18 := healBeamFx
+191 [-]: GETGLOBAL R19 K34      ; R19 := healProj
 192 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 193 [-]: JMP       210          ; PC := 210
 194 [-]: GETGLOBAL R15 K8       ; R15 := _T
 195 [-]: GETTABLE  R15 R15 K9   ; R15 := R15["Healbot"]
 196 [-]: GETTABLE  R15 R15 R6   ; R15 := R15[R6]
 197 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["stacks"]
-198 [-]: SETTABLE  R12 K34 R15  ; R12["buffDataExtra"] := R15
-199 [-]: SELF      R15 R5 K31   ; R16 := R5; R15 := R5["0x584F13D6"]
+198 [-]: SETTABLE  R12 K35 R15  ; R12["buffDataExtra"] := R15
+199 [-]: SELF      R15 R5 K32   ; R16 := R5; R15 := R5["0x584F13D6"]
 200 [-]: MOVE      R17 R12      ; R17 := R12
 201 [-]: MOVE      R18 R1       ; R18 := R1
 202 [-]: MOVE      R19 R1       ; R19 := R1
@@ -544,15 +544,15 @@ code size: 82
 204 [-]: GETUPVAL  R15 U4       ; R15 := U4
 205 [-]: MOVE      R16 R5       ; R16 := R5
 206 [-]: MOVE      R17 R1       ; R17 := R1
-207 [-]: GETGLOBAL R18 K32      ; R18 := healBeamFx
-208 [-]: GETGLOBAL R19 K33      ; R19 := healProj
+207 [-]: GETGLOBAL R18 K33      ; R18 := healBeamFx
+208 [-]: GETGLOBAL R19 K34      ; R19 := healProj
 209 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 210 [-]: GETGLOBAL R15 K8       ; R15 := _T
 211 [-]: GETTABLE  R15 R15 K9   ; R15 := R15["Healbot"]
 212 [-]: GETTABLE  R15 R15 R6   ; R15 := R15[R6]
 213 [-]: GETTABLE  R11 R15 K11  ; R11 := R15["stacks"]
 214 [-]: MOVE      R9 R13       ; R9 := R13
-215 [-]: GETGLOBAL R15 K35      ; R15 := 0x201191EA
+215 [-]: GETGLOBAL R15 K36      ; R15 := 0x201191EA
 216 [-]: LOADK     R16 K5       ; R16 := 0
 217 [-]: CALL      R15 2 1      ; R15(R16)
 218 [-]: JMP       75           ; PC := 75
@@ -620,27 +620,27 @@ code size: 82
  50 [-]: SELF      R13 R13 K10  ; R14 := R13; R13 := R13["0xF21555A7"]
  51 [-]: GETGLOBAL R15 K11      ; R15 := Game
  52 [-]: GETTABLE  R15 R15 K12  ; R15 := R15["AVATAR_HEAL_RATE"]
- 53 [-]: GETGLOBAL R16 K11      ; R16 := Game
- 54 [-]: GETTABLE  R16 R16 K13  ; R16 := R16["ADD"]
- 55 [-]: GETGLOBAL R17 K14      ; R17 := regenAmount
+ 53 [-]: GETGLOBAL R16 K13      ; R16 := Engine
+ 54 [-]: GETTABLE  R16 R16 K14  ; R16 := R16["ADD"]
+ 55 [-]: GETGLOBAL R17 K15      ; R17 := regenAmount
  56 [-]: MUL       R17 R17 R7   ; R17 := R17 * R7
  57 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
  58 [-]: FORLOOP   R9 48        ; R9 += R11; if R9 <= R10 then begin PC := 48; R12 := R9 end
- 59 [-]: GETGLOBAL R13 K15      ; R13 := Lotus_Game
- 60 [-]: GETTABLE  R13 R13 K16  ; R13 := R13["0xFAFD4322"]
+ 59 [-]: GETGLOBAL R13 K16      ; R13 := Lotus_Game
+ 60 [-]: GETTABLE  R13 R13 K17  ; R13 := R13["0xFAFD4322"]
  61 [-]: CALL      R13 1 2      ; R13 := R13()
  62 [-]: NEWTABLE  R14 1 0      ; R14 := {}
  63 [-]: MOVE      R15 R4       ; R15 := R4
  64 [-]: SETLIST   R14 1 1      ; R14[(1-1)*FPF+i] := R(14+i), 1 <= i <= 1
- 65 [-]: SETTABLE  R13 K17 R14  ; R13["affected"] := R14
- 66 [-]: GETGLOBAL R14 K15      ; R14 := Lotus_Game
- 67 [-]: GETTABLE  R14 R14 K19  ; R14 := R14["BT_STACK_TIMER_DECAY"]
- 68 [-]: SETTABLE  R13 K18 R14  ; R13["buffType"] := R14
- 69 [-]: SETTABLE  R13 K20 R7   ; R13["buffData"] := R7
- 70 [-]: SETTABLE  R13 K21 R8   ; R13["buffDataExtra"] := R8
- 71 [-]: GETGLOBAL R14 K23      ; R14 := healBuffType
- 72 [-]: SETTABLE  R13 K22 R14  ; R13["abilityType"] := R14
- 73 [-]: SELF      R14 R4 K24   ; R15 := R4; R14 := R4["0x584F13D6"]
+ 65 [-]: SETTABLE  R13 K18 R14  ; R13["affected"] := R14
+ 66 [-]: GETGLOBAL R14 K16      ; R14 := Lotus_Game
+ 67 [-]: GETTABLE  R14 R14 K20  ; R14 := R14["BT_STACK_TIMER_DECAY"]
+ 68 [-]: SETTABLE  R13 K19 R14  ; R13["buffType"] := R14
+ 69 [-]: SETTABLE  R13 K21 R7   ; R13["buffData"] := R7
+ 70 [-]: SETTABLE  R13 K22 R8   ; R13["buffDataExtra"] := R8
+ 71 [-]: GETGLOBAL R14 K24      ; R14 := healBuffType
+ 72 [-]: SETTABLE  R13 K23 R14  ; R13["abilityType"] := R14
+ 73 [-]: SELF      R14 R4 K25   ; R15 := R4; R14 := R4["0x584F13D6"]
  74 [-]: MOVE      R16 R13      ; R16 := R13
  75 [-]: MOVE      R17 R0       ; R17 := R0
  76 [-]: MOVE      R18 R1       ; R18 := R1
@@ -648,7 +648,7 @@ code size: 82
  78 [-]: GETGLOBAL R14 K5       ; R14 := _T
  79 [-]: GETTABLE  R14 R14 K6   ; R14 := R14["Healbot"]
  80 [-]: GETTABLE  R14 R14 R5   ; R14 := R14[R5]
- 81 [-]: SETTABLE  R14 K7 K25   ; R14["stacks"] := 0
+ 81 [-]: SETTABLE  R14 K7 K26   ; R14["stacks"] := 0
  82 [-]: RETURN    R0 1         ; return 
 
 

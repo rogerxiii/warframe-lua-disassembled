@@ -773,7 +773,7 @@ code size: 31
  19 [-]: NEWTABLE  R4 3 0       ; R4 := {}
  20 [-]: GETGLOBAL R5 K8        ; R5 := Game
  21 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["AVATAR_ARMOUR"]
- 22 [-]: GETGLOBAL R6 K8        ; R6 := Game
+ 22 [-]: GETGLOBAL R6 K5        ; R6 := Engine
  23 [-]: GETTABLE  R6 R6 K16    ; R6 := R6["STACKING_MULTIPLY"]
  24 [-]: LOADK     R7 K17       ; R7 := 0.15000000596046
  25 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
@@ -821,7 +821,7 @@ code size: 31
  21 [-]: NEWTABLE  R4 3 0       ; R4 := {}
  22 [-]: GETGLOBAL R5 K13       ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["AVATAR_MOVEMENT_SPEED"]
- 24 [-]: GETGLOBAL R6 K13       ; R6 := Game
+ 24 [-]: GETGLOBAL R6 K5        ; R6 := Engine
  25 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["STACKING_MULTIPLY"]
  26 [-]: LOADK     R7 K16       ; R7 := 0.10000000149012
  27 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
@@ -869,7 +869,7 @@ code size: 31
  21 [-]: NEWTABLE  R4 3 0       ; R4 := {}
  22 [-]: GETGLOBAL R5 K13       ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["AVATAR_SHIELD_MAX"]
- 24 [-]: GETGLOBAL R6 K13       ; R6 := Game
+ 24 [-]: GETGLOBAL R6 K5        ; R6 := Engine
  25 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["STACKING_MULTIPLY"]
  26 [-]: LOADK     R7 K11       ; R7 := 0.5
  27 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
@@ -917,7 +917,7 @@ code size: 31
  21 [-]: NEWTABLE  R4 3 0       ; R4 := {}
  22 [-]: GETGLOBAL R5 K13       ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["AVATAR_HEALTH_MAX"]
- 24 [-]: GETGLOBAL R6 K13       ; R6 := Game
+ 24 [-]: GETGLOBAL R6 K5        ; R6 := Engine
  25 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["STACKING_MULTIPLY"]
  26 [-]: LOADK     R7 K11       ; R7 := 0.25
  27 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
@@ -965,7 +965,7 @@ code size: 31
  21 [-]: NEWTABLE  R4 3 0       ; R4 := {}
  22 [-]: GETGLOBAL R5 K13       ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["AVATAR_POWER_MAX"]
- 24 [-]: GETGLOBAL R6 K13       ; R6 := Game
+ 24 [-]: GETGLOBAL R6 K5        ; R6 := Engine
  25 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["STACKING_MULTIPLY"]
  26 [-]: LOADK     R7 K11       ; R7 := 0.25
  27 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
@@ -1013,7 +1013,7 @@ code size: 31
  21 [-]: NEWTABLE  R4 3 0       ; R4 := {}
  22 [-]: GETGLOBAL R5 K13       ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["AVATAR_PARKOUR_BOOST"]
- 24 [-]: GETGLOBAL R6 K13       ; R6 := Game
+ 24 [-]: GETGLOBAL R6 K5        ; R6 := Engine
  25 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["STACKING_MULTIPLY"]
  26 [-]: LOADK     R7 K11       ; R7 := 0.25
  27 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3

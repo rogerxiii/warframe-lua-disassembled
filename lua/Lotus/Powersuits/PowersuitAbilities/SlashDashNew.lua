@@ -491,7 +491,7 @@ code size: 33
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 2       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/WEAPON_MELEE_COMBO_HIT_BONUS"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_MELEE_COMBO_HIT_BONUS"
  69 [-]: GETUPVAL  R10 U1       ; R10 := U1
  70 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  71 [-]: CALL      R7 3 1       ; R7(R8,R9)
@@ -573,7 +573,7 @@ code size: 33
  20 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  21 [-]: MOVE      R2 R0        ; R2 := R0
  22 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 23 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 23 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  24 [-]: GETUPVAL  R4 U1        ; R4 := U1
  25 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  26 [-]: SETTABLE  R3 K11 K12   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"

@@ -431,7 +431,7 @@ code size: 219
  66 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  67 [-]: MOVE      R8 R0        ; R8 := R0
  68 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 69 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/WEAPON_MELEE_ARMOR_REDUCTION"
+ 69 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_MELEE_ARMOR_REDUCTION"
  70 [-]: GETGLOBAL R10 K23      ; R10 := math
  71 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
  72 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -484,7 +484,7 @@ code size: 219
  21 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  22 [-]: MOVE      R2 R0        ; R2 := R0
  23 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 24 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 24 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  25 [-]: GETUPVAL  R4 U1        ; R4 := U1
  26 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  27 [-]: SETTABLE  R3 K11 K12   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -493,7 +493,7 @@ code size: 219
  30 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  31 [-]: MOVE      R2 R0        ; R2 := R0
  32 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 33 [-]: SETTABLE  R3 K8 K13    ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 33 [-]: SETTABLE  R3 K8 K13    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  34 [-]: GETUPVAL  R4 U2        ; R4 := U2
  35 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  36 [-]: SETTABLE  R3 K14 K15   ; R3["ValueIcon"] := "<DT_IMPACT>"
@@ -502,7 +502,7 @@ code size: 219
  39 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  40 [-]: MOVE      R2 R0        ; R2 := R0
  41 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 42 [-]: SETTABLE  R3 K8 K16    ; R3["Label"] := "/Game/AVATAR_ABILITY_STRENGTH"
+ 42 [-]: SETTABLE  R3 K8 K16    ; R3["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY_STRENGTH"
  43 [-]: GETUPVAL  R4 U3        ; R4 := U3
  44 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  45 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -715,11 +715,11 @@ code size: 219
  34 [-]: SELF      R5 R1 K8     ; R6 := R1; R5 := R1["0x3B1B11B9"]
  35 [-]: GETGLOBAL R7 K9        ; R7 := Game
  36 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["AVATAR_ARMOUR"]
- 37 [-]: GETGLOBAL R8 K9        ; R8 := Game
- 38 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["MULTIPLY"]
+ 37 [-]: GETGLOBAL R8 K11       ; R8 := Engine
+ 38 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["MULTIPLY"]
  39 [-]: MOVE      R9 R2        ; R9 := R2
  40 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 41 [-]: GETGLOBAL R5 K12       ; R5 := 0x201191EA
+ 41 [-]: GETGLOBAL R5 K13       ; R5 := 0x201191EA
  42 [-]: GETUPVAL  R6 U1        ; R6 := U1
  43 [-]: CALL      R5 2 1       ; R5(R6)
  44 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
@@ -732,11 +732,11 @@ code size: 219
  51 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  52 [-]: TEST      R5 0         ; if not R5 then PC := 61
  53 [-]: JMP       61           ; PC := 61
- 54 [-]: SELF      R5 R1 K13    ; R6 := R1; R5 := R1["0xF21555A7"]
+ 54 [-]: SELF      R5 R1 K14    ; R6 := R1; R5 := R1["0xF21555A7"]
  55 [-]: GETGLOBAL R7 K9        ; R7 := Game
  56 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["AVATAR_ARMOUR"]
- 57 [-]: GETGLOBAL R8 K9        ; R8 := Game
- 58 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["MULTIPLY"]
+ 57 [-]: GETGLOBAL R8 K11       ; R8 := Engine
+ 58 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["MULTIPLY"]
  59 [-]: MOVE      R9 R2        ; R9 := R2
  60 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  61 [-]: GETGLOBAL R5 K0        ; R5 := 0x400E7765
@@ -744,7 +744,7 @@ code size: 219
  63 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  64 [-]: TEST      R5 1         ; if R5 then PC := 68
  65 [-]: JMP       68           ; PC := 68
- 66 [-]: SELF      R5 R3 K14    ; R6 := R3; R5 := R3["0xD4C2743F"]
+ 66 [-]: SELF      R5 R3 K15    ; R6 := R3; R5 := R3["0xD4C2743F"]
  67 [-]: CALL      R5 2 1       ; R5(R6)
  68 [-]: RETURN    R0 1         ; return 
 

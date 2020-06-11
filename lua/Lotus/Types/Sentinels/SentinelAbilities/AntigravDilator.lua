@@ -110,35 +110,35 @@ code size: 47
  15 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  16 [-]: GETGLOBAL R8 K6        ; R8 := Game
  17 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["AVATAR_JUMP_HEIGHT"]
- 18 [-]: GETGLOBAL R9 K6        ; R9 := Game
- 19 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["STACKING_MULTIPLY"]
- 20 [-]: GETGLOBAL R10 K9       ; R10 := jumpMultipliers
+ 18 [-]: GETGLOBAL R9 K8        ; R9 := Engine
+ 19 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["STACKING_MULTIPLY"]
+ 20 [-]: GETGLOBAL R10 K10      ; R10 := jumpMultipliers
  21 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
  22 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  23 [-]: SELF      R6 R5 K4     ; R7 := R5; R6 := R5["0x8DB5D01F"]
  24 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  25 [-]: SELF      R6 R6 K5     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  26 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 27 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["AVATAR_AIR_JUMP_HEIGHT"]
- 28 [-]: GETGLOBAL R9 K6        ; R9 := Game
- 29 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["STACKING_MULTIPLY"]
- 30 [-]: GETGLOBAL R10 K9       ; R10 := jumpMultipliers
+ 27 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["AVATAR_AIR_JUMP_HEIGHT"]
+ 28 [-]: GETGLOBAL R9 K8        ; R9 := Engine
+ 29 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["STACKING_MULTIPLY"]
+ 30 [-]: GETGLOBAL R10 K10      ; R10 := jumpMultipliers
  31 [-]: GETTABLE  R10 R10 R3   ; R10 := R10[R3]
  32 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  33 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
- 34 [-]: GETGLOBAL R7 K11       ; R7 := _T
- 35 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["Antigrav"]
+ 34 [-]: GETGLOBAL R7 K12       ; R7 := _T
+ 35 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["Antigrav"]
  36 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  37 [-]: TEST      R6 0         ; if not R6 then PC := 42
  38 [-]: JMP       42           ; PC := 42
- 39 [-]: GETGLOBAL R6 K11       ; R6 := _T
+ 39 [-]: GETGLOBAL R6 K12       ; R6 := _T
  40 [-]: NEWTABLE  R7 0 0       ; R7 := {}
- 41 [-]: SETTABLE  R6 K12 R7    ; R6["Antigrav"] := R7
- 42 [-]: GETGLOBAL R6 K11       ; R6 := _T
- 43 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["Antigrav"]
- 44 [-]: SELF      R7 R5 K13    ; R8 := R5; R7 := R5["0xDBEF0FB6"]
+ 41 [-]: SETTABLE  R6 K13 R7    ; R6["Antigrav"] := R7
+ 42 [-]: GETGLOBAL R6 K12       ; R6 := _T
+ 43 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["Antigrav"]
+ 44 [-]: SELF      R7 R5 K14    ; R8 := R5; R7 := R5["0xDBEF0FB6"]
  45 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 46 [-]: SETTABLE  R6 R7 K14    ; R6[R7] := "0x1"
+ 46 [-]: SETTABLE  R6 R7 K15    ; R6[R7] := "0x1"
  47 [-]: RETURN    R0 1         ; return 
 
 

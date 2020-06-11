@@ -432,7 +432,7 @@ code size: 176
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/WEAPON_PROC_CHANCE"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_CHANCE"
  69 [-]: GETGLOBAL R10 K23      ; R10 := math
  70 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
  71 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -847,7 +847,7 @@ code size: 176
  65 [-]: SELF      R3 R3 K22    ; R4 := R3; R3 := R3["0x3B1B11B9"]
  66 [-]: GETGLOBAL R5 K23       ; R5 := Game
  67 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["AVATAR_MOVEMENT_SPEED"]
- 68 [-]: GETGLOBAL R6 K23       ; R6 := Game
+ 68 [-]: GETGLOBAL R6 K16       ; R6 := Engine
  69 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["MULTIPLY"]
  70 [-]: GETUPVAL  R7 U1        ; R7 := U1
  71 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
@@ -941,7 +941,7 @@ code size: 176
 159 [-]: SELF      R5 R5 K36    ; R6 := R5; R5 := R5["0xF21555A7"]
 160 [-]: GETGLOBAL R7 K23       ; R7 := Game
 161 [-]: GETTABLE  R7 R7 K24    ; R7 := R7["AVATAR_MOVEMENT_SPEED"]
-162 [-]: GETGLOBAL R8 K23       ; R8 := Game
+162 [-]: GETGLOBAL R8 K16       ; R8 := Engine
 163 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["MULTIPLY"]
 164 [-]: GETUPVAL  R9 U1        ; R9 := U1
 165 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
@@ -1120,7 +1120,7 @@ code size: 176
 141 [-]: SELF      R10 R10 K41  ; R11 := R10; R10 := R10["0x3B1B11B9"]
 142 [-]: GETGLOBAL R12 K42      ; R12 := Game
 143 [-]: GETTABLE  R12 R12 K43  ; R12 := R12["AVATAR_ENERGY_GAIN_MULTIPLIER"]
-144 [-]: GETGLOBAL R13 K42      ; R13 := Game
+144 [-]: GETGLOBAL R13 K17      ; R13 := Engine
 145 [-]: GETTABLE  R13 R13 K44  ; R13 := R13["MULTIPLY"]
 146 [-]: LOADK     R14 K2       ; R14 := 0
 147 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
@@ -1682,7 +1682,7 @@ code size: 176
  84 [-]: SELF      R7 R7 K23    ; R8 := R7; R7 := R7["0xF21555A7"]
  85 [-]: GETGLOBAL R9 K24       ; R9 := Game
  86 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["AVATAR_ENERGY_GAIN_MULTIPLIER"]
- 87 [-]: GETGLOBAL R10 K24      ; R10 := Game
+ 87 [-]: GETGLOBAL R10 K9       ; R10 := Engine
  88 [-]: GETTABLE  R10 R10 K26  ; R10 := R10["MULTIPLY"]
  89 [-]: LOADK     R11 K1       ; R11 := 0
  90 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)

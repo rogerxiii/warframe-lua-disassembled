@@ -1194,32 +1194,32 @@ code size: 398
  10 [-]: SELF      R8 R7 K4     ; R9 := R7; R8 := R7["0x3B1B11B9"]
  11 [-]: GETGLOBAL R10 K5       ; R10 := Game
  12 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["AVATAR_SHIELD_MAX"]
- 13 [-]: GETGLOBAL R11 K5       ; R11 := Game
- 14 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["MULTIPLY"]
- 15 [-]: LOADK     R12 K8       ; R12 := 0.5
+ 13 [-]: GETGLOBAL R11 K7       ; R11 := Engine
+ 14 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["MULTIPLY"]
+ 15 [-]: LOADK     R12 K9       ; R12 := 0.5
  16 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  17 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 8; R4 := R5 end
  18 [-]: JMP       8            ; PC := 8
- 19 [-]: GETGLOBAL R8 K9        ; R8 := 0x400E7765
+ 19 [-]: GETGLOBAL R8 K10       ; R8 := 0x400E7765
  20 [-]: GETUPVAL  R9 U0        ; R9 := U0
  21 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  22 [-]: TEST      R8 1         ; if R8 then PC := 32
  23 [-]: JMP       32           ; PC := 32
  24 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 25 [-]: SELF      R8 R8 K10    ; R9 := R8; R8 := R8["0x7E67905A"]
+ 25 [-]: SELF      R8 R8 K11    ; R9 := R8; R8 := R8["0x7E67905A"]
  26 [-]: GETGLOBAL R10 K5       ; R10 := Game
  27 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["AVATAR_SHIELD_MAX"]
- 28 [-]: GETGLOBAL R11 K5       ; R11 := Game
- 29 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["MULTIPLY"]
- 30 [-]: LOADK     R12 K8       ; R12 := 0.5
+ 28 [-]: GETGLOBAL R11 K7       ; R11 := Engine
+ 29 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["MULTIPLY"]
+ 30 [-]: LOADK     R12 K9       ; R12 := 0.5
  31 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  32 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 33 [-]: GETGLOBAL R9 K11       ; R9 := 0xEC274B1A
- 34 [-]: LOADK     R10 K12      ; R10 := "Freeze"
+ 33 [-]: GETGLOBAL R9 K12       ; R9 := 0xEC274B1A
+ 34 [-]: LOADK     R10 K13      ; R10 := "Freeze"
  35 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
  36 [-]: CALL      R8 0 1       ; R8(R9,...)
  37 [-]: GETUPVAL  R8 U2        ; R8 := U2
- 38 [-]: LOADK     R9 K13       ; R9 := "Cold"
+ 38 [-]: LOADK     R9 K14       ; R9 := "Cold"
  39 [-]: CALL      R8 2 1       ; R8(R9)
  40 [-]: GETUPVAL  R8 U3        ; R8 := U3
  41 [-]: MOVE      R9 R0        ; R9 := R0

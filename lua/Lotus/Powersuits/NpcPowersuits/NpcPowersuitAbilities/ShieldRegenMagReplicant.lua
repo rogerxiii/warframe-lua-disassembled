@@ -623,105 +623,105 @@ code size: 165
  40 [-]: MOVE      R10 R6       ; R10 := R6
  41 [-]: GETGLOBAL R11 K9       ; R11 := Game
  42 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["AVATAR_SHIELD_RECHARGE_DELAY"]
- 43 [-]: GETGLOBAL R12 K9       ; R12 := Game
- 44 [-]: GETTABLE  R12 R12 K11  ; R12 := R12["ADD"]
+ 43 [-]: GETGLOBAL R12 K11      ; R12 := Engine
+ 44 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["ADD"]
  45 [-]: MOVE      R13 R7       ; R13 := R7
  46 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
- 47 [-]: GETGLOBAL R8 K12       ; R8 := Lotus_Game
- 48 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["0xFAFD4322"]
+ 47 [-]: GETGLOBAL R8 K13       ; R8 := Lotus_Game
+ 48 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["0xFAFD4322"]
  49 [-]: CALL      R8 1 2       ; R8 := R8()
- 50 [-]: SETTABLE  R8 K14 R1    ; R8["instigator"] := R1
+ 50 [-]: SETTABLE  R8 K15 R1    ; R8["instigator"] := R1
  51 [-]: NEWTABLE  R9 1 0       ; R9 := {}
  52 [-]: MOVE      R10 R0       ; R10 := R0
  53 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
- 54 [-]: SETTABLE  R8 K15 R9    ; R8["affected"] := R9
- 55 [-]: GETGLOBAL R9 K12       ; R9 := Lotus_Game
- 56 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["BT_STATIC"]
- 57 [-]: SETTABLE  R8 K16 R9    ; R8["buffType"] := R9
- 58 [-]: SETTABLE  R8 K18 K19   ; R8["isDebuff"] := "0x1"
- 59 [-]: SELF      R9 R3 K21    ; R10 := R3; R9 := R3["0x1009A31B"]
+ 54 [-]: SETTABLE  R8 K16 R9    ; R8["affected"] := R9
+ 55 [-]: GETGLOBAL R9 K13       ; R9 := Lotus_Game
+ 56 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["BT_STATIC"]
+ 57 [-]: SETTABLE  R8 K17 R9    ; R8["buffType"] := R9
+ 58 [-]: SETTABLE  R8 K19 K20   ; R8["isDebuff"] := "0x1"
+ 59 [-]: SELF      R9 R3 K22    ; R10 := R3; R9 := R3["0x1009A31B"]
  60 [-]: GETUPVAL  R11 U2       ; R11 := U2
  61 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
- 62 [-]: SETTABLE  R8 K20 R9    ; R8["abilityType"] := R9
- 63 [-]: GETGLOBAL R9 K12       ; R9 := Lotus_Game
- 64 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["PowerSuit_AUGMENT_PVP_ONE"]
- 65 [-]: SETTABLE  R8 K22 R9    ; R8["augmentType"] := R9
- 66 [-]: SELF      R9 R0 K24    ; R10 := R0; R9 := R0["0x584F13D6"]
+ 62 [-]: SETTABLE  R8 K21 R9    ; R8["abilityType"] := R9
+ 63 [-]: GETGLOBAL R9 K13       ; R9 := Lotus_Game
+ 64 [-]: GETTABLE  R9 R9 K24    ; R9 := R9["PowerSuit_AUGMENT_PVP_ONE"]
+ 65 [-]: SETTABLE  R8 K23 R9    ; R8["augmentType"] := R9
+ 66 [-]: SELF      R9 R0 K25    ; R10 := R0; R9 := R0["0x584F13D6"]
  67 [-]: MOVE      R11 R8       ; R11 := R8
  68 [-]: MOVE      R12 R1       ; R12 := R1
  69 [-]: MOVE      R13 R1       ; R13 := R1
  70 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 71 [-]: SELF      R9 R0 K25    ; R10 := R0; R9 := R0["0xDBEF0FB6"]
+ 71 [-]: SELF      R9 R0 K26    ; R10 := R0; R9 := R0["0xDBEF0FB6"]
  72 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  73 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
- 74 [-]: GETGLOBAL R11 K26      ; R11 := _T
- 75 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["removeableDebuffs"]
+ 74 [-]: GETGLOBAL R11 K27      ; R11 := _T
+ 75 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["removeableDebuffs"]
  76 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  77 [-]: TEST      R10 0        ; if not R10 then PC := 82
  78 [-]: JMP       82           ; PC := 82
- 79 [-]: GETGLOBAL R10 K26      ; R10 := _T
+ 79 [-]: GETGLOBAL R10 K27      ; R10 := _T
  80 [-]: NEWTABLE  R11 0 0      ; R11 := {}
- 81 [-]: SETTABLE  R10 K27 R11  ; R10["removeableDebuffs"] := R11
+ 81 [-]: SETTABLE  R10 K28 R11  ; R10["removeableDebuffs"] := R11
  82 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
- 83 [-]: GETGLOBAL R11 K26      ; R11 := _T
- 84 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["removeableDebuffs"]
+ 83 [-]: GETGLOBAL R11 K27      ; R11 := _T
+ 84 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["removeableDebuffs"]
  85 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]
  86 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  87 [-]: TEST      R10 0        ; if not R10 then PC := 93
  88 [-]: JMP       93           ; PC := 93
- 89 [-]: GETGLOBAL R10 K26      ; R10 := _T
- 90 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["removeableDebuffs"]
+ 89 [-]: GETGLOBAL R10 K27      ; R10 := _T
+ 90 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["removeableDebuffs"]
  91 [-]: NEWTABLE  R11 0 0      ; R11 := {}
  92 [-]: SETTABLE  R10 R9 R11   ; R10[R9] := R11
- 93 [-]: GETGLOBAL R10 K26      ; R10 := _T
- 94 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["removeableDebuffs"]
+ 93 [-]: GETGLOBAL R10 K27      ; R10 := _T
+ 94 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["removeableDebuffs"]
  95 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
- 96 [-]: SETTABLE  R10 K28 K29  ; R10["shieldRegenAugmentPvPOne"] := "0x0"
+ 96 [-]: SETTABLE  R10 K29 K30  ; R10["shieldRegenAugmentPvPOne"] := "0x0"
  97 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
  98 [-]: MOVE      R11 R0       ; R11 := R0
  99 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 100 [-]: TEST      R10 1        ; if R10 then PC := 127
 101 [-]: JMP       127          ; PC := 127
-102 [-]: SELF      R10 R0 K30   ; R11 := R0; R10 := R0["0x5A115A02"]
+102 [-]: SELF      R10 R0 K31   ; R11 := R0; R10 := R0["0x5A115A02"]
 103 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 104 [-]: TEST      R10 1        ; if R10 then PC := 127
 105 [-]: JMP       127          ; PC := 127
-106 [-]: SELF      R10 R5 K31   ; R11 := R5; R10 := R5["0x6F7CB7BC"]
+106 [-]: SELF      R10 R5 K32   ; R11 := R5; R10 := R5["0x6F7CB7BC"]
 107 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 108 [-]: TEST      R10 1        ; if R10 then PC := 127
 109 [-]: JMP       127          ; PC := 127
-110 [-]: SELF      R10 R5 K32   ; R11 := R5; R10 := R5["0xA1A15ED3"]
+110 [-]: SELF      R10 R5 K33   ; R11 := R5; R10 := R5["0xA1A15ED3"]
 111 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-112 [-]: SELF      R11 R5 K33   ; R12 := R5; R11 := R5["0xF27096B7"]
+112 [-]: SELF      R11 R5 K34   ; R12 := R5; R11 := R5["0xF27096B7"]
 113 [-]: CALL      R11 2 2      ; R11 := R11(R12)
 114 [-]: LE        1 R11 R10    ; if R11 <= R10 then PC := 127
 115 [-]: JMP       127          ; PC := 127
-116 [-]: GETGLOBAL R10 K26      ; R10 := _T
-117 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["removeableDebuffs"]
+116 [-]: GETGLOBAL R10 K27      ; R10 := _T
+117 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["removeableDebuffs"]
 118 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
-119 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["shieldRegenAugmentPvPOne"]
+119 [-]: GETTABLE  R10 R10 K29  ; R10 := R10["shieldRegenAugmentPvPOne"]
 120 [-]: TEST      R10 0        ; if not R10 then PC := 123
 121 [-]: JMP       123          ; PC := 123
 122 [-]: JMP       127          ; PC := 127
-123 [-]: GETGLOBAL R10 K34      ; R10 := 0x201191EA
-124 [-]: LOADK     R11 K35      ; R11 := 0
+123 [-]: GETGLOBAL R10 K35      ; R10 := 0x201191EA
+124 [-]: LOADK     R11 K36      ; R11 := 0
 125 [-]: CALL      R10 2 1      ; R10(R11)
 126 [-]: JMP       97           ; PC := 97
-127 [-]: GETGLOBAL R10 K26      ; R10 := _T
-128 [-]: GETTABLE  R10 R10 K27  ; R10 := R10["removeableDebuffs"]
+127 [-]: GETGLOBAL R10 K27      ; R10 := _T
+128 [-]: GETTABLE  R10 R10 K28  ; R10 := R10["removeableDebuffs"]
 129 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
-130 [-]: SETTABLE  R10 K28 K36  ; R10["shieldRegenAugmentPvPOne"] := nil
+130 [-]: SETTABLE  R10 K29 K37  ; R10["shieldRegenAugmentPvPOne"] := nil
 131 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
 132 [-]: MOVE      R11 R0       ; R11 := R0
 133 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 134 [-]: TEST      R10 1        ; if R10 then PC := 157
 135 [-]: JMP       157          ; PC := 157
-136 [-]: SELF      R10 R4 K37   ; R11 := R4; R10 := R4["0x5A740E25"]
+136 [-]: SELF      R10 R4 K38   ; R11 := R4; R10 := R4["0x5A740E25"]
 137 [-]: MOVE      R12 R6       ; R12 := R6
 138 [-]: GETGLOBAL R13 K9       ; R13 := Game
 139 [-]: GETTABLE  R13 R13 K10  ; R13 := R13["AVATAR_SHIELD_RECHARGE_DELAY"]
-140 [-]: GETGLOBAL R14 K9       ; R14 := Game
-141 [-]: GETTABLE  R14 R14 K11  ; R14 := R14["ADD"]
+140 [-]: GETGLOBAL R14 K11      ; R14 := Engine
+141 [-]: GETTABLE  R14 R14 K12  ; R14 := R14["ADD"]
 142 [-]: MOVE      R15 R7       ; R15 := R7
 143 [-]: CALL      R10 6 1      ; R10(R11,R12,R13,R14,R15)
 144 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
@@ -729,10 +729,10 @@ code size: 165
 146 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 147 [-]: TEST      R10 1        ; if R10 then PC := 152
 148 [-]: JMP       152          ; PC := 152
-149 [-]: SELF      R10 R2 K38   ; R11 := R2; R10 := R2["0x80B14403"]
+149 [-]: SELF      R10 R2 K39   ; R11 := R2; R10 := R2["0x80B14403"]
 150 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-151 [-]: SETTABLE  R8 K14 R10   ; R8["instigator"] := R10
-152 [-]: SELF      R10 R0 K24   ; R11 := R0; R10 := R0["0x584F13D6"]
+151 [-]: SETTABLE  R8 K15 R10   ; R8["instigator"] := R10
+152 [-]: SELF      R10 R0 K25   ; R11 := R0; R10 := R0["0x584F13D6"]
 153 [-]: MOVE      R12 R8       ; R12 := R8
 154 [-]: MOVE      R13 R1       ; R13 := R1
 155 [-]: MOVE      R14 R1       ; R14 := R1
@@ -1154,7 +1154,7 @@ code size: 165
 403 [-]: SELF      R34 R34 K82  ; R35 := R34; R34 := R34["0x3B1B11B9"]
 404 [-]: GETGLOBAL R36 K7       ; R36 := Game
 405 [-]: GETTABLE  R36 R36 K83  ; R36 := R36["AVATAR_ARMOUR"]
-406 [-]: GETGLOBAL R37 K7       ; R37 := Game
+406 [-]: GETGLOBAL R37 K27      ; R37 := Engine
 407 [-]: GETTABLE  R37 R37 K84  ; R37 := R37["MULTIPLY"]
 408 [-]: GETGLOBAL R38 K65      ; R38 := math
 409 [-]: GETTABLE  R38 R38 K85  ; R38 := R38["0x8B011038"]

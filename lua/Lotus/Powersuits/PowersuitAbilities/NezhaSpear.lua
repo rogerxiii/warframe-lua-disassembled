@@ -11,7 +11,7 @@ code size: 13
 code size: 154
 code size: 263
 code size: 105
-code size: 141
+code size: 150
 code size: 15
 code size: 29
 code size: 51
@@ -1268,13 +1268,13 @@ code size: 23
  24 [-]: SETTABLE  R5 K2 K3     ; R5["nezhaSpearExpired"] := nil
  25 [-]: GETGLOBAL R5 K1        ; R5 := _T
  26 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["nezhaSpear"]
- 27 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 136
- 28 [-]: JMP       136          ; PC := 136
+ 27 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 145
+ 28 [-]: JMP       145          ; PC := 145
  29 [-]: GETGLOBAL R5 K1        ; R5 := _T
  30 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["nezhaSpear"]
  31 [-]: GETTABLE  R5 R5 R3     ; R5 := R5[R3]
- 32 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 136
- 33 [-]: JMP       136          ; PC := 136
+ 32 [-]: EQ        1 R5 K3      ; if R5 == nil then PC := 145
+ 33 [-]: JMP       145          ; PC := 145
  34 [-]: TEST      R4 0         ; if not R4 then PC := 107
  35 [-]: JMP       107          ; PC := 107
  36 [-]: GETGLOBAL R5 K1        ; R5 := _T
@@ -1353,42 +1353,51 @@ code size: 23
 109 [-]: GETTABLE  R16 R16 K5   ; R16 := R16["nezhaSpear"]
 110 [-]: GETTABLE  R16 R16 R3   ; R16 := R16[R3]
 111 [-]: CALL      R15 2 4      ; R15,R16,R17 := R15(R16)
-112 [-]: JMP       123          ; PC := 123
+112 [-]: JMP       132          ; PC := 132
 113 [-]: GETGLOBAL R20 K24      ; R20 := 0x400E7765
 114 [-]: GETTABLE  R21 R19 K31  ; R21 := R19["enemy"]
 115 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-116 [-]: TEST      R20 1        ; if R20 then PC := 123
-117 [-]: JMP       123          ; PC := 123
+116 [-]: TEST      R20 1        ; if R20 then PC := 124
+117 [-]: JMP       124          ; PC := 124
 118 [-]: GETUPVAL  R20 U2       ; R20 := U2
 119 [-]: MOVE      R21 R19      ; R21 := R19
 120 [-]: MOVE      R22 R0       ; R22 := R0
 121 [-]: MOVE      R23 R4       ; R23 := R4
 122 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
-123 [-]: TFORLOOP  R15 2        ; R18,R19 :=  R15(R16,R17); if R18 ~= nil then begin PC = 113; R17 := R18 end
-124 [-]: JMP       113          ; PC := 113
-125 [-]: GETGLOBAL R20 K1       ; R20 := _T
-126 [-]: GETTABLE  R20 R20 K5   ; R20 := R20["nezhaSpear"]
-127 [-]: SETTABLE  R20 R3 K3    ; R20[R3] := nil
-128 [-]: GETGLOBAL R20 K4       ; R20 := 0xAA09E79D
-129 [-]: GETGLOBAL R21 K1       ; R21 := _T
-130 [-]: GETTABLE  R21 R21 K5   ; R21 := R21["nezhaSpear"]
-131 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-132 [-]: EQ        0 R20 K3     ; if R20 ~= nil then PC := 136
-133 [-]: JMP       136          ; PC := 136
+123 [-]: JMP       132          ; PC := 132
+124 [-]: GETGLOBAL R20 K24      ; R20 := 0x400E7765
+125 [-]: GETTABLE  R21 R19 K32  ; R21 := R19["spear"]
+126 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+127 [-]: TEST      R20 1        ; if R20 then PC := 132
+128 [-]: JMP       132          ; PC := 132
+129 [-]: GETTABLE  R20 R19 K32  ; R20 := R19["spear"]
+130 [-]: SELF      R20 R20 K33  ; R21 := R20; R20 := R20["0x5AB2AAEF"]
+131 [-]: CALL      R20 2 1      ; R20(R21)
+132 [-]: TFORLOOP  R15 2        ; R18,R19 :=  R15(R16,R17); if R18 ~= nil then begin PC = 113; R17 := R18 end
+133 [-]: JMP       113          ; PC := 113
 134 [-]: GETGLOBAL R20 K1       ; R20 := _T
-135 [-]: SETTABLE  R20 K5 K3    ; R20["nezhaSpear"] := nil
-136 [-]: GETUPVAL  R20 U1       ; R20 := U1
-137 [-]: GETTABLE  R20 R20 K32  ; R20 := R20["0xC16DC3C2"]
-138 [-]: MOVE      R21 R0       ; R21 := R0
-139 [-]: GETGLOBAL R22 K33      ; R22 := mOwner
-140 [-]: CALL      R20 3 1      ; R20(R21,R22)
-141 [-]: RETURN    R0 1         ; return 
+135 [-]: GETTABLE  R20 R20 K5   ; R20 := R20["nezhaSpear"]
+136 [-]: SETTABLE  R20 R3 K3    ; R20[R3] := nil
+137 [-]: GETGLOBAL R20 K4       ; R20 := 0xAA09E79D
+138 [-]: GETGLOBAL R21 K1       ; R21 := _T
+139 [-]: GETTABLE  R21 R21 K5   ; R21 := R21["nezhaSpear"]
+140 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+141 [-]: EQ        0 R20 K3     ; if R20 ~= nil then PC := 145
+142 [-]: JMP       145          ; PC := 145
+143 [-]: GETGLOBAL R20 K1       ; R20 := _T
+144 [-]: SETTABLE  R20 K5 K3    ; R20["nezhaSpear"] := nil
+145 [-]: GETUPVAL  R20 U1       ; R20 := U1
+146 [-]: GETTABLE  R20 R20 K34  ; R20 := R20["0xC16DC3C2"]
+147 [-]: MOVE      R21 R0       ; R21 := R0
+148 [-]: GETGLOBAL R22 K35      ; R22 := mOwner
+149 [-]: CALL      R20 3 1      ; R20(R21,R22)
+150 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 443
+; Defined at line: 445
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1414,7 +1423,7 @@ code size: 23
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 448
+; Defined at line: 450
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1454,7 +1463,7 @@ code size: 23
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 458
+; Defined at line: 460
 ; #Upvalues:       9
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -1516,7 +1525,7 @@ code size: 23
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 476
+; Defined at line: 478
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1562,7 +1571,7 @@ code size: 23
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 487
+; Defined at line: 489
 ; #Upvalues:       7
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1964,7 +1973,7 @@ code size: 23
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 624
+; Defined at line: 626
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

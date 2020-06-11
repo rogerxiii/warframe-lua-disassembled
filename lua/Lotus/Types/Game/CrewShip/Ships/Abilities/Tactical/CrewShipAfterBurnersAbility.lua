@@ -216,11 +216,11 @@ code size: 18
  21 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  22 [-]: GETGLOBAL R8 K8        ; R8 := Game
  23 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["AVATAR_MOVEMENT_SPEED"]
- 24 [-]: GETGLOBAL R9 K8        ; R9 := Game
- 25 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["STACKING_MULTIPLY"]
+ 24 [-]: GETGLOBAL R9 K10       ; R9 := Engine
+ 25 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["STACKING_MULTIPLY"]
  26 [-]: GETUPVAL  R10 U3       ; R10 := U3
  27 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 28 [-]: GETGLOBAL R6 K11       ; R6 := 0x201191EA
+ 28 [-]: GETGLOBAL R6 K12       ; R6 := 0x201191EA
  29 [-]: GETUPVAL  R7 U4        ; R7 := U4
  30 [-]: CALL      R6 2 1       ; R6(R7)
  31 [-]: RETURN    R0 1         ; return 
@@ -248,8 +248,8 @@ code size: 18
  11 [-]: SELF      R4 R4 K3     ; R5 := R4; R4 := R4["0xF21555A7"]
  12 [-]: GETGLOBAL R6 K4        ; R6 := Game
  13 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
- 14 [-]: GETGLOBAL R7 K4        ; R7 := Game
- 15 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["STACKING_MULTIPLY"]
+ 14 [-]: GETGLOBAL R7 K6        ; R7 := Engine
+ 15 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["STACKING_MULTIPLY"]
  16 [-]: GETUPVAL  R8 U1        ; R8 := U1
  17 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  18 [-]: RETURN    R0 1         ; return 

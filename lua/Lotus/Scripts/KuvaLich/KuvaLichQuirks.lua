@@ -548,15 +548,15 @@ code size: 1
  61 [-]: SELF      R15 R5 K20   ; R16 := R5; R15 := R5["0x3B1B11B9"]
  62 [-]: GETGLOBAL R17 K21      ; R17 := Game
  63 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["AVATAR_MOVEMENT_SPEED"]
- 64 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 65 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 64 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 65 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  66 [-]: MOVE      R19 R7       ; R19 := R7
  67 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
  68 [-]: SELF      R15 R5 K20   ; R16 := R5; R15 := R5["0x3B1B11B9"]
  69 [-]: GETGLOBAL R17 K21      ; R17 := Game
- 70 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["WEAPON_FIRE_RATE"]
- 71 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 72 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 70 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["WEAPON_FIRE_RATE"]
+ 71 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 72 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  73 [-]: MOVE      R19 R7       ; R19 := R7
  74 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
  75 [-]: MOVE      R8 R1        ; R8 := R1
@@ -565,18 +565,18 @@ code size: 1
  78 [-]: JMP       96           ; PC := 96
  79 [-]: TEST      R8 0         ; if not R8 then PC := 96
  80 [-]: JMP       96           ; PC := 96
- 81 [-]: SELF      R15 R5 K25   ; R16 := R5; R15 := R5["0xF21555A7"]
+ 81 [-]: SELF      R15 R5 K26   ; R16 := R5; R15 := R5["0xF21555A7"]
  82 [-]: GETGLOBAL R17 K21      ; R17 := Game
  83 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["AVATAR_MOVEMENT_SPEED"]
- 84 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 85 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 84 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 85 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  86 [-]: MOVE      R19 R7       ; R19 := R7
  87 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
- 88 [-]: SELF      R15 R5 K25   ; R16 := R5; R15 := R5["0xF21555A7"]
+ 88 [-]: SELF      R15 R5 K26   ; R16 := R5; R15 := R5["0xF21555A7"]
  89 [-]: GETGLOBAL R17 K21      ; R17 := Game
- 90 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["WEAPON_FIRE_RATE"]
- 91 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 92 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 90 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["WEAPON_FIRE_RATE"]
+ 91 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 92 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  93 [-]: MOVE      R19 R7       ; R19 := R7
  94 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
  95 [-]: MOVE      R8 R0        ; R8 := R0
@@ -780,15 +780,15 @@ code size: 1
  61 [-]: SELF      R15 R5 K20   ; R16 := R5; R15 := R5["0x3B1B11B9"]
  62 [-]: GETGLOBAL R17 K21      ; R17 := Game
  63 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["AVATAR_MOVEMENT_SPEED"]
- 64 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 65 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 64 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 65 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  66 [-]: MOVE      R19 R7       ; R19 := R7
  67 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
  68 [-]: SELF      R15 R5 K20   ; R16 := R5; R15 := R5["0x3B1B11B9"]
  69 [-]: GETGLOBAL R17 K21      ; R17 := Game
- 70 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["WEAPON_FIRE_RATE"]
- 71 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 72 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 70 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["WEAPON_FIRE_RATE"]
+ 71 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 72 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  73 [-]: MOVE      R19 R7       ; R19 := R7
  74 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
  75 [-]: MOVE      R8 R1        ; R8 := R1
@@ -797,18 +797,18 @@ code size: 1
  78 [-]: JMP       96           ; PC := 96
  79 [-]: TEST      R8 0         ; if not R8 then PC := 96
  80 [-]: JMP       96           ; PC := 96
- 81 [-]: SELF      R15 R5 K25   ; R16 := R5; R15 := R5["0xF21555A7"]
+ 81 [-]: SELF      R15 R5 K26   ; R16 := R5; R15 := R5["0xF21555A7"]
  82 [-]: GETGLOBAL R17 K21      ; R17 := Game
  83 [-]: GETTABLE  R17 R17 K22  ; R17 := R17["AVATAR_MOVEMENT_SPEED"]
- 84 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 85 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 84 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 85 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  86 [-]: MOVE      R19 R7       ; R19 := R7
  87 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
- 88 [-]: SELF      R15 R5 K25   ; R16 := R5; R15 := R5["0xF21555A7"]
+ 88 [-]: SELF      R15 R5 K26   ; R16 := R5; R15 := R5["0xF21555A7"]
  89 [-]: GETGLOBAL R17 K21      ; R17 := Game
- 90 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["WEAPON_FIRE_RATE"]
- 91 [-]: GETGLOBAL R18 K21      ; R18 := Game
- 92 [-]: GETTABLE  R18 R18 K23  ; R18 := R18["MULTIPLY"]
+ 90 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["WEAPON_FIRE_RATE"]
+ 91 [-]: GETGLOBAL R18 K23      ; R18 := Engine
+ 92 [-]: GETTABLE  R18 R18 K24  ; R18 := R18["MULTIPLY"]
  93 [-]: MOVE      R19 R7       ; R19 := R7
  94 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
  95 [-]: MOVE      R8 R0        ; R8 := R0
@@ -1192,32 +1192,32 @@ code size: 1
  33 [-]: SELF      R11 R11 K11  ; R12 := R11; R11 := R11["0x3B1B11B9"]
  34 [-]: GETGLOBAL R13 K12      ; R13 := Game
  35 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["AVATAR_MOVEMENT_SPEED"]
- 36 [-]: GETGLOBAL R14 K12      ; R14 := Game
- 37 [-]: GETTABLE  R14 R14 K14  ; R14 := R14["MULTIPLY"]
+ 36 [-]: GETGLOBAL R14 K14      ; R14 := Engine
+ 37 [-]: GETTABLE  R14 R14 K15  ; R14 := R14["MULTIPLY"]
  38 [-]: MOVE      R15 R5       ; R15 := R5
  39 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  40 [-]: SELF      R11 R0 K4    ; R12 := R0; R11 := R0["0x8DB5D01F"]
  41 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  42 [-]: SELF      R11 R11 K11  ; R12 := R11; R11 := R11["0x3B1B11B9"]
  43 [-]: GETGLOBAL R13 K12      ; R13 := Game
- 44 [-]: GETTABLE  R13 R13 K15  ; R13 := R13["WEAPON_FIRE_RATE"]
- 45 [-]: GETGLOBAL R14 K12      ; R14 := Game
- 46 [-]: GETTABLE  R14 R14 K14  ; R14 := R14["MULTIPLY"]
+ 44 [-]: GETTABLE  R13 R13 K16  ; R13 := R13["WEAPON_FIRE_RATE"]
+ 45 [-]: GETGLOBAL R14 K14      ; R14 := Engine
+ 46 [-]: GETTABLE  R14 R14 K15  ; R14 := R14["MULTIPLY"]
  47 [-]: MOVE      R15 R5       ; R15 := R5
  48 [-]: CALL      R11 5 1      ; R11(R12,R13,R14,R15)
  49 [-]: GETUPVAL  R11 U1       ; R11 := U1
- 50 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["0x85329A4B"]
+ 50 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["0x85329A4B"]
  51 [-]: GETGLOBAL R12 K8       ; R12 := 0xEC274B1A
- 52 [-]: LOADK     R13 K17      ; R13 := "LichQuirkPyro"
+ 52 [-]: LOADK     R13 K18      ; R13 := "LichQuirkPyro"
  53 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  54 [-]: MOVE      R13 R0       ; R13 := R0
  55 [-]: CALL      R11 3 1      ; R11(R12,R13)
- 56 [-]: SUB       R6 R6 K18    ; R6 := R6 - 1
- 57 [-]: LE        0 R6 K19     ; if R6 > 0 then PC := 60
+ 56 [-]: SUB       R6 R6 K19    ; R6 := R6 - 1
+ 57 [-]: LE        0 R6 K20     ; if R6 > 0 then PC := 60
  58 [-]: JMP       60           ; PC := 60
  59 [-]: JMP       64           ; PC := 64
  60 [-]: GETGLOBAL R11 K0       ; R11 := 0x201191EA
- 61 [-]: LOADK     R12 K20      ; R12 := 10
+ 61 [-]: LOADK     R12 K21      ; R12 := 10
  62 [-]: CALL      R11 2 1      ; R11(R12)
  63 [-]: JMP       6            ; PC := 6
  64 [-]: RETURN    R0 1         ; return 
@@ -1368,17 +1368,17 @@ code size: 1
  23 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  24 [-]: GETGLOBAL R8 K10       ; R8 := Game
  25 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["AVATAR_MOVEMENT_SPEED"]
- 26 [-]: GETGLOBAL R9 K10       ; R9 := Game
- 27 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["MULTIPLY"]
+ 26 [-]: GETGLOBAL R9 K12       ; R9 := Engine
+ 27 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["MULTIPLY"]
  28 [-]: MOVE      R10 R5       ; R10 := R5
  29 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  30 [-]: SELF      R6 R0 K8     ; R7 := R0; R6 := R0["0x8DB5D01F"]
  31 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  32 [-]: SELF      R6 R6 K9     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  33 [-]: GETGLOBAL R8 K10       ; R8 := Game
- 34 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["WEAPON_FIRE_RATE"]
- 35 [-]: GETGLOBAL R9 K10       ; R9 := Game
- 36 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["MULTIPLY"]
+ 34 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["WEAPON_FIRE_RATE"]
+ 35 [-]: GETGLOBAL R9 K12       ; R9 := Engine
+ 36 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["MULTIPLY"]
  37 [-]: MOVE      R10 R5       ; R10 := R5
  38 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  39 [-]: GETUPVAL  R6 U1        ; R6 := U1
@@ -1390,7 +1390,7 @@ code size: 1
  45 [-]: CALL      R6 3 1       ; R6(R7,R8)
  46 [-]: JMP       51           ; PC := 51
  47 [-]: GETGLOBAL R6 K0        ; R6 := 0x201191EA
- 48 [-]: LOADK     R7 K14       ; R7 := 5
+ 48 [-]: LOADK     R7 K15       ; R7 := 5
  49 [-]: CALL      R6 2 1       ; R6(R7)
  50 [-]: JMP       12           ; PC := 12
  51 [-]: RETURN    R0 1         ; return 

@@ -194,19 +194,19 @@ code size: 34
  44 [-]: SELF      R5 R3 K18    ; R6 := R3; R5 := R3["0x3B1B11B9"]
  45 [-]: GETGLOBAL R7 K19       ; R7 := Game
  46 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["AVATAR_SHIELD_MAX"]
- 47 [-]: GETGLOBAL R8 K19       ; R8 := Game
- 48 [-]: GETTABLE  R8 R8 K21    ; R8 := R8["SET"]
+ 47 [-]: GETGLOBAL R8 K21       ; R8 := Engine
+ 48 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["SET"]
  49 [-]: LOADK     R9 K12       ; R9 := 0
  50 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 51 [-]: SELF      R5 R2 K22    ; R6 := R2; R5 := R2["0x8938B1C9"]
+ 51 [-]: SELF      R5 R2 K23    ; R6 := R2; R5 := R2["0x8938B1C9"]
  52 [-]: LOADK     R7 K12       ; R7 := 0
  53 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 54 [-]: SELF      R5 R2 K23    ; R6 := R2; R5 := R2["0x81287EF1"]
+ 54 [-]: SELF      R5 R2 K24    ; R6 := R2; R5 := R2["0x81287EF1"]
  55 [-]: MOVE      R7 R0        ; R7 := R0
  56 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 57 [-]: SELF      R5 R1 K24    ; R6 := R1; R5 := R1["0xF67CC80F"]
- 58 [-]: GETGLOBAL R7 K25       ; R7 := predeathExitSubTree
- 59 [-]: GETGLOBAL R8 K26       ; R8 := Engine
+ 57 [-]: SELF      R5 R1 K25    ; R6 := R1; R5 := R1["0xF67CC80F"]
+ 58 [-]: GETGLOBAL R7 K26       ; R7 := predeathExitSubTree
+ 59 [-]: GETGLOBAL R8 K21       ; R8 := Engine
  60 [-]: GETTABLE  R8 R8 K27    ; R8 := R8["PRN_INJURY_OVERRIDE"]
  61 [-]: MOVE      R9 R0        ; R9 := R0
  62 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
@@ -418,19 +418,19 @@ code size: 34
  16 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xF21555A7"]
  17 [-]: GETGLOBAL R4 K6        ; R4 := Game
  18 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["AVATAR_SHIELD_MAX"]
- 19 [-]: GETGLOBAL R5 K6        ; R5 := Game
- 20 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["SET"]
- 21 [-]: LOADK     R6 K9        ; R6 := 0
+ 19 [-]: GETGLOBAL R5 K8        ; R5 := Engine
+ 20 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["SET"]
+ 21 [-]: LOADK     R6 K10       ; R6 := 0
  22 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 23 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1["0xA3F6069B"]
+ 23 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1["0xA3F6069B"]
  24 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 25 [-]: SELF      R2 R2 K11    ; R3 := R2; R2 := R2["0x81287EF1"]
+ 25 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2["0x81287EF1"]
  26 [-]: MOVE      R4 R1        ; R4 := R1
  27 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 28 [-]: SELF      R2 R1 K12    ; R3 := R1; R2 := R1["0x2F0B32D0"]
+ 28 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0x2F0B32D0"]
  29 [-]: LOADNIL   R4 R4        ; R4 := nil
  30 [-]: CALL      R2 3 1       ; R2(R3,R4)
- 31 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0xBD621756"]
+ 31 [-]: SELF      R2 R1 K14    ; R3 := R1; R2 := R1["0xBD621756"]
  32 [-]: LOADNIL   R4 R4        ; R4 := nil
  33 [-]: CALL      R2 3 1       ; R2(R3,R4)
  34 [-]: RETURN    R0 1         ; return 

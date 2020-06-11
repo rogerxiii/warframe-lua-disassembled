@@ -326,7 +326,7 @@ code size: 356
  45 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  46 [-]: MOVE      R2 R0        ; R2 := R0
  47 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 48 [-]: SETTABLE  R3 K8 K15    ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 48 [-]: SETTABLE  R3 K8 K15    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  49 [-]: GETUPVAL  R4 U1        ; R4 := U1
  50 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  51 [-]: SETTABLE  R3 K13 K16   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -1251,104 +1251,104 @@ code size: 356
   7 [-]: MOVE      R4 R1        ; R4 := R1
   8 [-]: GETGLOBAL R5 K4        ; R5 := Game
   9 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["AVATAR_MOVEMENT_SPEED"]
- 10 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 11 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["STACKING_MULTIPLY"]
+ 10 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 11 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["STACKING_MULTIPLY"]
  12 [-]: GETUPVAL  R7 U0        ; R7 := U0
  13 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
- 14 [-]: SELF      R2 R0 K7     ; R3 := R0; R2 := R0["0xAB436EF2"]
- 15 [-]: GETGLOBAL R4 K8        ; R4 := augmentOneAttach
- 16 [-]: GETGLOBAL R5 K9        ; R5 := EMPTY_SYMBOL
+ 14 [-]: SELF      R2 R0 K8     ; R3 := R0; R2 := R0["0xAB436EF2"]
+ 15 [-]: GETGLOBAL R4 K9        ; R4 := augmentOneAttach
+ 16 [-]: GETGLOBAL R5 K10       ; R5 := EMPTY_SYMBOL
  17 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 18 [-]: GETGLOBAL R3 K10       ; R3 := Lotus_Game
- 19 [-]: GETTABLE  R3 R3 K11    ; R3 := R3["0xFAFD4322"]
+ 18 [-]: GETGLOBAL R3 K11       ; R3 := Lotus_Game
+ 19 [-]: GETTABLE  R3 R3 K12    ; R3 := R3["0xFAFD4322"]
  20 [-]: CALL      R3 1 2       ; R3 := R3()
  21 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 22 [-]: GETTABLE  R4 R4 K13    ; R4 := R4["instigatorAvatar"]
- 23 [-]: SETTABLE  R3 K12 R4    ; R3["instigator"] := R4
+ 22 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["instigatorAvatar"]
+ 23 [-]: SETTABLE  R3 K13 R4    ; R3["instigator"] := R4
  24 [-]: NEWTABLE  R4 1 0       ; R4 := {}
  25 [-]: MOVE      R5 R0        ; R5 := R0
  26 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 27 [-]: SETTABLE  R3 K14 R4    ; R3["affected"] := R4
- 28 [-]: GETGLOBAL R4 K10       ; R4 := Lotus_Game
- 29 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["BT_TIMER"]
- 30 [-]: SETTABLE  R3 K15 R4    ; R3["buffType"] := R4
+ 27 [-]: SETTABLE  R3 K15 R4    ; R3["affected"] := R4
+ 28 [-]: GETGLOBAL R4 K11       ; R4 := Lotus_Game
+ 29 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["BT_TIMER"]
+ 30 [-]: SETTABLE  R3 K16 R4    ; R3["buffType"] := R4
  31 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 32 [-]: GETTABLE  R4 R4 K18    ; R4 := R4["instigatorSuit"]
- 33 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4["0x1009A31B"]
+ 32 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["instigatorSuit"]
+ 33 [-]: SELF      R4 R4 K20    ; R5 := R4; R4 := R4["0x1009A31B"]
  34 [-]: GETUPVAL  R6 U2        ; R6 := U2
  35 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 36 [-]: SETTABLE  R3 K17 R4    ; R3["abilityType"] := R4
- 37 [-]: GETGLOBAL R4 K10       ; R4 := Lotus_Game
- 38 [-]: GETTABLE  R4 R4 K21    ; R4 := R4["PowerSuit_AUGMENT_ONE"]
- 39 [-]: SETTABLE  R3 K20 R4    ; R3["augmentType"] := R4
+ 36 [-]: SETTABLE  R3 K18 R4    ; R3["abilityType"] := R4
+ 37 [-]: GETGLOBAL R4 K11       ; R4 := Lotus_Game
+ 38 [-]: GETTABLE  R4 R4 K22    ; R4 := R4["PowerSuit_AUGMENT_ONE"]
+ 39 [-]: SETTABLE  R3 K21 R4    ; R3["augmentType"] := R4
  40 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 41 [-]: SETTABLE  R3 K22 R4    ; R3["buffData"] := R4
- 42 [-]: SELF      R4 R0 K23    ; R5 := R0; R4 := R0["0x584F13D6"]
+ 41 [-]: SETTABLE  R3 K23 R4    ; R3["buffData"] := R4
+ 42 [-]: SELF      R4 R0 K24    ; R5 := R0; R4 := R0["0x584F13D6"]
  43 [-]: MOVE      R6 R3        ; R6 := R3
  44 [-]: MOVE      R7 R1        ; R7 := R1
  45 [-]: MOVE      R8 R1        ; R8 := R1
  46 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  47 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0["0x8DB5D01F"]
  48 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 49 [-]: SELF      R4 R4 K24    ; R5 := R4; R4 := R4["0x6978AC59"]
+ 49 [-]: SELF      R4 R4 K25    ; R5 := R4; R4 := R4["0x6978AC59"]
  50 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  51 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 52 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["instigatorSuit"]
- 53 [-]: SELF      R5 R5 K25    ; R6 := R5; R5 := R5["0xEA55C538"]
+ 52 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["instigatorSuit"]
+ 53 [-]: SELF      R5 R5 K26    ; R6 := R5; R5 := R5["0xEA55C538"]
  54 [-]: GETUPVAL  R7 U2        ; R7 := U2
  55 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
  56 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 57 [-]: LT        0 K26 R6     ; if 0 >= R6 then PC := 79
+ 57 [-]: LT        0 K27 R6     ; if 0 >= R6 then PC := 79
  58 [-]: JMP       79           ; PC := 79
- 59 [-]: GETGLOBAL R6 K27       ; R6 := 0x400E7765
+ 59 [-]: GETGLOBAL R6 K28       ; R6 := 0x400E7765
  60 [-]: MOVE      R7 R5        ; R7 := R5
  61 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  62 [-]: TEST      R6 1         ; if R6 then PC := 70
  63 [-]: JMP       70           ; PC := 70
- 64 [-]: SELF      R6 R5 K28    ; R7 := R5; R6 := R5["0x6E7BD8DC"]
+ 64 [-]: SELF      R6 R5 K29    ; R7 := R5; R6 := R5["0x6E7BD8DC"]
  65 [-]: MOVE      R8 R4        ; R8 := R4
  66 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  67 [-]: TEST      R6 0         ; if not R6 then PC := 70
  68 [-]: JMP       70           ; PC := 70
  69 [-]: JMP       79           ; PC := 79
- 70 [-]: GETGLOBAL R6 K29       ; R6 := 0x201191EA
- 71 [-]: LOADK     R7 K26       ; R7 := 0
+ 70 [-]: GETGLOBAL R6 K30       ; R6 := 0x201191EA
+ 71 [-]: LOADK     R7 K27       ; R7 := 0
  72 [-]: CALL      R6 2 1       ; R6(R7)
  73 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 74 [-]: GETGLOBAL R7 K30       ; R7 := 0x4CDEF9FF
+ 74 [-]: GETGLOBAL R7 K31       ; R7 := 0x4CDEF9FF
  75 [-]: CALL      R7 1 2       ; R7 := R7()
  76 [-]: SUB       R6 R6 R7     ; R6 := R6 - R7
  77 [-]: MOVE      R6 R3        ; R6 := R3
  78 [-]: JMP       56           ; PC := 56
- 79 [-]: GETGLOBAL R6 K27       ; R6 := 0x400E7765
+ 79 [-]: GETGLOBAL R6 K28       ; R6 := 0x400E7765
  80 [-]: MOVE      R7 R0        ; R7 := R0
  81 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  82 [-]: TEST      R6 1         ; if R6 then PC := 109
  83 [-]: JMP       109          ; PC := 109
  84 [-]: GETUPVAL  R6 U3        ; R6 := U3
- 85 [-]: LT        0 K26 R6     ; if 0 >= R6 then PC := 92
+ 85 [-]: LT        0 K27 R6     ; if 0 >= R6 then PC := 92
  86 [-]: JMP       92           ; PC := 92
- 87 [-]: SELF      R6 R0 K23    ; R7 := R0; R6 := R0["0x584F13D6"]
+ 87 [-]: SELF      R6 R0 K24    ; R7 := R0; R6 := R0["0x584F13D6"]
  88 [-]: MOVE      R8 R3        ; R8 := R3
  89 [-]: MOVE      R9 R0        ; R9 := R0
  90 [-]: MOVE      R10 R1       ; R10 := R1
  91 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  92 [-]: SELF      R6 R0 K2     ; R7 := R0; R6 := R0["0x8DB5D01F"]
  93 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 94 [-]: SELF      R6 R6 K31    ; R7 := R6; R6 := R6["0x5A740E25"]
+ 94 [-]: SELF      R6 R6 K32    ; R7 := R6; R6 := R6["0x5A740E25"]
  95 [-]: MOVE      R8 R1        ; R8 := R1
  96 [-]: GETGLOBAL R9 K4        ; R9 := Game
  97 [-]: GETTABLE  R9 R9 K5     ; R9 := R9["AVATAR_MOVEMENT_SPEED"]
- 98 [-]: GETGLOBAL R10 K4       ; R10 := Game
- 99 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["STACKING_MULTIPLY"]
+ 98 [-]: GETGLOBAL R10 K6       ; R10 := Engine
+ 99 [-]: GETTABLE  R10 R10 K7   ; R10 := R10["STACKING_MULTIPLY"]
 100 [-]: GETUPVAL  R11 U0       ; R11 := U0
 101 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-102 [-]: GETGLOBAL R6 K27       ; R6 := 0x400E7765
+102 [-]: GETGLOBAL R6 K28       ; R6 := 0x400E7765
 103 [-]: MOVE      R7 R2        ; R7 := R2
 104 [-]: CALL      R6 2 2       ; R6 := R6(R7)
 105 [-]: TEST      R6 1         ; if R6 then PC := 109
 106 [-]: JMP       109          ; PC := 109
-107 [-]: SELF      R6 R2 K32    ; R7 := R2; R6 := R2["0xD4C2743F"]
+107 [-]: SELF      R6 R2 K33    ; R7 := R2; R6 := R2["0xD4C2743F"]
 108 [-]: CALL      R6 2 1       ; R6(R7)
 109 [-]: RETURN    R0 1         ; return 
 

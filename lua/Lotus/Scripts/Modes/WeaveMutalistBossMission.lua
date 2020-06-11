@@ -634,7 +634,7 @@ code size: 94
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 227
+; Defined at line: 226
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -676,7 +676,7 @@ code size: 94
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 237
+; Defined at line: 236
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -695,7 +695,7 @@ code size: 94
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 245
+; Defined at line: 244
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -770,7 +770,7 @@ code size: 94
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 266
+; Defined at line: 265
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -796,7 +796,7 @@ code size: 94
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 275
+; Defined at line: 274
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -872,7 +872,7 @@ code size: 94
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 296
+; Defined at line: 295
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -899,7 +899,7 @@ code size: 94
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 306
+; Defined at line: 305
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -945,7 +945,7 @@ code size: 94
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 315
+; Defined at line: 314
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -994,7 +994,7 @@ code size: 94
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 324
+; Defined at line: 323
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1043,7 +1043,7 @@ code size: 94
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 338
+; Defined at line: 337
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1125,7 +1125,7 @@ code size: 94
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 360
+; Defined at line: 359
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1173,7 +1173,7 @@ code size: 94
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 371
+; Defined at line: 370
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1219,7 +1219,7 @@ code size: 94
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 380
+; Defined at line: 379
 ; #Upvalues:       10
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1301,7 +1301,7 @@ code size: 94
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 410
+; Defined at line: 409
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1411,7 +1411,7 @@ code size: 94
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 443
+; Defined at line: 442
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1443,7 +1443,7 @@ code size: 94
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 450
+; Defined at line: 449
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1470,7 +1470,7 @@ code size: 94
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 460
+; Defined at line: 459
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1492,7 +1492,7 @@ code size: 94
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 467
+; Defined at line: 466
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1525,7 +1525,7 @@ code size: 94
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 476
+; Defined at line: 475
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1557,7 +1557,7 @@ code size: 94
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 483
+; Defined at line: 482
 ; #Upvalues:       13
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1683,7 +1683,7 @@ code size: 94
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 528
+; Defined at line: 527
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1833,7 +1833,7 @@ code size: 94
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 584
+; Defined at line: 583
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1870,7 +1870,7 @@ code size: 94
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 593
+; Defined at line: 592
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1899,7 +1899,7 @@ code size: 94
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 604
+; Defined at line: 603
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1927,7 +1927,7 @@ code size: 94
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 612
+; Defined at line: 611
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2003,7 +2003,7 @@ code size: 94
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 631
+; Defined at line: 630
 ; #Upvalues:       32
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2919,7 +2919,7 @@ code size: 94
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 896
+; Defined at line: 895
 ; #Upvalues:       9
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2987,7 +2987,7 @@ code size: 94
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 917
+; Defined at line: 916
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3022,7 +3022,7 @@ code size: 94
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 929
+; Defined at line: 928
 ; #Upvalues:       15
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3312,7 +3312,7 @@ code size: 94
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 1003
+; Defined at line: 1002
 ; #Upvalues:       11
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3409,11 +3409,11 @@ code size: 94
  89 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3["0x3B1B11B9"]
  90 [-]: GETGLOBAL R5 K20       ; R5 := Game
  91 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["AVATAR_DAMAGE_RESISTANCE"]
- 92 [-]: GETGLOBAL R6 K20       ; R6 := Game
- 93 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["SET"]
+ 92 [-]: GETGLOBAL R6 K22       ; R6 := Engine
+ 93 [-]: GETTABLE  R6 R6 K23    ; R6 := R6["SET"]
  94 [-]: LOADK     R7 K15       ; R7 := 1
  95 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 96 [-]: GETGLOBAL R10 K23      ; R10 := Engine
+ 96 [-]: GETGLOBAL R10 K22      ; R10 := Engine
  97 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["DT_ANY"]
  98 [-]: CALL      R3 8 1       ; R3(R4,R5,R6,R7,R8,R9,R10)
  99 [-]: JMP       114          ; PC := 114
@@ -3444,7 +3444,7 @@ code size: 94
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 1039
+; Defined at line: 1038
 ; #Upvalues:       18
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3640,7 +3640,7 @@ code size: 94
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 1109
+; Defined at line: 1108
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3707,7 +3707,7 @@ code size: 94
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 1135
+; Defined at line: 1134
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3740,7 +3740,7 @@ code size: 94
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 1149
+; Defined at line: 1148
 ; #Upvalues:       16
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3867,7 +3867,7 @@ code size: 94
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 1191
+; Defined at line: 1190
 ; #Upvalues:       12
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3959,7 +3959,7 @@ code size: 94
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 1221
+; Defined at line: 1220
 ; #Upvalues:       50
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5015,7 +5015,7 @@ code size: 94
 1048 [-]: SELF      R52 R52 K139 ; R53 := R52; R52 := R52["0xF21555A7"]
 1049 [-]: GETGLOBAL R54 K112     ; R54 := Game
 1050 [-]: GETTABLE  R54 R54 K140 ; R54 := R54["AVATAR_DAMAGE_RESISTANCE"]
-1051 [-]: GETGLOBAL R55 K112     ; R55 := Game
+1051 [-]: GETGLOBAL R55 K81      ; R55 := Engine
 1052 [-]: GETTABLE  R55 R55 K141 ; R55 := R55["SET"]
 1053 [-]: LOADK     R56 K4       ; R56 := 1
 1054 [-]: LOADNIL   R57 R58      ; R57 := R58 := nil
@@ -5249,7 +5249,7 @@ code size: 94
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 1620
+; Defined at line: 1619
 ; #Upvalues:       8
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5347,7 +5347,7 @@ code size: 94
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 1649
+; Defined at line: 1648
 ; #Upvalues:       22
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5502,11 +5502,11 @@ code size: 94
 147 [-]: SELF      R2 R2 K34    ; R3 := R2; R2 := R2["0x3B1B11B9"]
 148 [-]: GETGLOBAL R4 K35       ; R4 := Game
 149 [-]: GETTABLE  R4 R4 K36    ; R4 := R4["AVATAR_DAMAGE_RESISTANCE"]
-150 [-]: GETGLOBAL R5 K35       ; R5 := Game
-151 [-]: GETTABLE  R5 R5 K37    ; R5 := R5["SET"]
-152 [-]: LOADK     R6 K38       ; R6 := 1
+150 [-]: GETGLOBAL R5 K37       ; R5 := Engine
+151 [-]: GETTABLE  R5 R5 K38    ; R5 := R5["SET"]
+152 [-]: LOADK     R6 K39       ; R6 := 1
 153 [-]: LOADNIL   R7 R8        ; R7 := R8 := nil
-154 [-]: GETGLOBAL R9 K39       ; R9 := Engine
+154 [-]: GETGLOBAL R9 K37       ; R9 := Engine
 155 [-]: GETTABLE  R9 R9 K40    ; R9 := R9["DT_ANY"]
 156 [-]: CALL      R2 8 1       ; R2(R3,R4,R5,R6,R7,R8,R9)
 157 [-]: GETUPVAL  R2 U10       ; R2 := U10
@@ -5517,7 +5517,7 @@ code size: 94
 162 [-]: GETUPVAL  R2 U12       ; R2 := U12
 163 [-]: GETUPVAL  R3 U8        ; R3 := U8
 164 [-]: GETUPVAL  R4 U10       ; R4 := U10
-165 [-]: ADD       R4 R4 K38    ; R4 := R4 + 1
+165 [-]: ADD       R4 R4 K39    ; R4 := R4 + 1
 166 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
 167 [-]: GETTABLE  R3 R3 K41    ; R3 := R3["healthMult"]
 168 [-]: CALL      R2 2 1       ; R2(R3)
@@ -5576,9 +5576,9 @@ code size: 94
 221 [-]: SELF      R2 R2 K50    ; R3 := R2; R2 := R2["0x7A97EAF5"]
 222 [-]: GETGLOBAL R4 K51       ; R4 := absorbStartAnim
 223 [-]: MOVE      R5 R1        ; R5 := R1
-224 [-]: GETGLOBAL R6 K39       ; R6 := Engine
+224 [-]: GETGLOBAL R6 K37       ; R6 := Engine
 225 [-]: GETTABLE  R6 R6 K52    ; R6 := R6["ATMM_PHYSICS_DRIVEN"]
-226 [-]: GETGLOBAL R7 K39       ; R7 := Engine
+226 [-]: GETGLOBAL R7 K37       ; R7 := Engine
 227 [-]: GETTABLE  R7 R7 K53    ; R7 := R7["PRT_ONCE"]
 228 [-]: MOVE      R8 R1        ; R8 := R1
 229 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
@@ -5611,9 +5611,9 @@ code size: 94
 256 [-]: SELF      R2 R2 K50    ; R3 := R2; R2 := R2["0x7A97EAF5"]
 257 [-]: GETGLOBAL R4 K58       ; R4 := lampDestroyEndAnim
 258 [-]: MOVE      R5 R0        ; R5 := R0
-259 [-]: GETGLOBAL R6 K39       ; R6 := Engine
+259 [-]: GETGLOBAL R6 K37       ; R6 := Engine
 260 [-]: GETTABLE  R6 R6 K52    ; R6 := R6["ATMM_PHYSICS_DRIVEN"]
-261 [-]: GETGLOBAL R7 K39       ; R7 := Engine
+261 [-]: GETGLOBAL R7 K37       ; R7 := Engine
 262 [-]: GETTABLE  R7 R7 K53    ; R7 := R7["PRT_ONCE"]
 263 [-]: MOVE      R8 R1        ; R8 := R1
 264 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
@@ -5692,7 +5692,7 @@ code size: 94
 337 [-]: GETTABLE  R2 R2 K45    ; R2 := R2["ABSORB"]
 338 [-]: EQ        0 R0 R2      ; if R0 ~= R2 then PC := 349
 339 [-]: JMP       349          ; PC := 349
-340 [-]: GETGLOBAL R2 K39       ; R2 := Engine
+340 [-]: GETGLOBAL R2 K37       ; R2 := Engine
 341 [-]: GETTABLE  R2 R2 K70    ; R2 := R2["0x1398DAFB"]
 342 [-]: CALL      R2 1 2       ; R2 := R2()
 343 [-]: TEST      R2 0         ; if not R2 then PC := 349
@@ -5761,7 +5761,7 @@ code size: 94
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 1773
+; Defined at line: 1772
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5863,7 +5863,7 @@ code size: 94
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 1815
+; Defined at line: 1814
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5878,7 +5878,7 @@ code size: 94
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 1819
+; Defined at line: 1818
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

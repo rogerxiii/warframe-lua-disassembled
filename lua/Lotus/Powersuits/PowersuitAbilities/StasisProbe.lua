@@ -634,7 +634,7 @@ code size: 59
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/AVATAR_SUCCESS_CHANCE"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/AVATAR_SUCCESS_CHANCE"
  69 [-]: GETGLOBAL R10 K23      ; R10 := math
  70 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF7005A7B"]
  71 [-]: GETUPVAL  R11 U3       ; R11 := U3
@@ -1256,19 +1256,19 @@ code size: 59
  79 [-]: SELF      R9 R3 K29    ; R10 := R3; R9 := R3["0xF21555A7"]
  80 [-]: GETGLOBAL R11 K30      ; R11 := Game
  81 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["AVATAR_ARMOUR"]
- 82 [-]: GETGLOBAL R12 K30      ; R12 := Game
- 83 [-]: GETTABLE  R12 R12 K32  ; R12 := R12["ADD"]
+ 82 [-]: GETGLOBAL R12 K32      ; R12 := Engine
+ 83 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["ADD"]
  84 [-]: MOVE      R13 R7       ; R13 := R7
  85 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  86 [-]: GETGLOBAL R9 K16       ; R9 := _T
  87 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["stasisProbeArmour"]
  88 [-]: GETTABLE  R9 R9 R1     ; R9 := R9[R1]
  89 [-]: GETTABLE  R7 R9 K28    ; R7 := R9["buffAmount"]
- 90 [-]: SELF      R9 R3 K33    ; R10 := R3; R9 := R3["0x3B1B11B9"]
+ 90 [-]: SELF      R9 R3 K34    ; R10 := R3; R9 := R3["0x3B1B11B9"]
  91 [-]: GETGLOBAL R11 K30      ; R11 := Game
  92 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["AVATAR_ARMOUR"]
- 93 [-]: GETGLOBAL R12 K30      ; R12 := Game
- 94 [-]: GETTABLE  R12 R12 K32  ; R12 := R12["ADD"]
+ 93 [-]: GETGLOBAL R12 K32      ; R12 := Engine
+ 94 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["ADD"]
  95 [-]: MOVE      R13 R7       ; R13 := R7
  96 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  97 [-]: SETTABLE  R8 K24 K25   ; R8["buffData"] := -1
@@ -1286,7 +1286,7 @@ code size: 59
 109 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 110 [-]: TEST      R9 1         ; if R9 then PC := 114
 111 [-]: JMP       114          ; PC := 114
-112 [-]: SELF      R9 R5 K34    ; R10 := R5; R9 := R5["0xD4C2743F"]
+112 [-]: SELF      R9 R5 K35    ; R10 := R5; R9 := R5["0xD4C2743F"]
 113 [-]: CALL      R9 2 1       ; R9(R10)
 114 [-]: GETUPVAL  R9 U1        ; R9 := U1
 115 [-]: EQ        0 R6 R9      ; if R6 ~= R9 then PC := 128
@@ -1302,12 +1302,12 @@ code size: 59
 125 [-]: MOVE      R12 R1       ; R12 := R1
 126 [-]: MOVE      R13 R1       ; R13 := R1
 127 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-128 [-]: GETGLOBAL R9 K35       ; R9 := 0x4CDEF9FF
+128 [-]: GETGLOBAL R9 K36       ; R9 := 0x4CDEF9FF
 129 [-]: CALL      R9 1 2       ; R9 := R9()
 130 [-]: SUB       R6 R6 R9     ; R6 := R6 - R9
 131 [-]: JMP       133          ; PC := 133
 132 [-]: JMP       137          ; PC := 137
-133 [-]: GETGLOBAL R9 K36       ; R9 := 0x201191EA
+133 [-]: GETGLOBAL R9 K37       ; R9 := 0x201191EA
 134 [-]: LOADK     R10 K5       ; R10 := 0
 135 [-]: CALL      R9 2 1       ; R9(R10)
 136 [-]: JMP       26           ; PC := 26
@@ -1316,28 +1316,28 @@ code size: 59
 139 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 140 [-]: TEST      R9 1         ; if R9 then PC := 144
 141 [-]: JMP       144          ; PC := 144
-142 [-]: SELF      R9 R5 K34    ; R10 := R5; R9 := R5["0xD4C2743F"]
+142 [-]: SELF      R9 R5 K35    ; R10 := R5; R9 := R5["0xD4C2743F"]
 143 [-]: CALL      R9 2 1       ; R9(R10)
 144 [-]: LT        0 K5 R7      ; if 0 >= R7 then PC := 153
 145 [-]: JMP       153          ; PC := 153
 146 [-]: SELF      R9 R3 K29    ; R10 := R3; R9 := R3["0xF21555A7"]
 147 [-]: GETGLOBAL R11 K30      ; R11 := Game
 148 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["AVATAR_ARMOUR"]
-149 [-]: GETGLOBAL R12 K30      ; R12 := Game
-150 [-]: GETTABLE  R12 R12 K32  ; R12 := R12["ADD"]
+149 [-]: GETGLOBAL R12 K32      ; R12 := Engine
+150 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["ADD"]
 151 [-]: MOVE      R13 R7       ; R13 := R7
 152 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 153 [-]: GETGLOBAL R9 K16       ; R9 := _T
 154 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["stasisProbeArmour"]
-155 [-]: SETTABLE  R9 R1 K37    ; R9[R1] := nil
-156 [-]: GETGLOBAL R9 K38       ; R9 := 0xAA09E79D
+155 [-]: SETTABLE  R9 R1 K38    ; R9[R1] := nil
+156 [-]: GETGLOBAL R9 K39       ; R9 := 0xAA09E79D
 157 [-]: GETGLOBAL R10 K16      ; R10 := _T
 158 [-]: GETTABLE  R10 R10 K17  ; R10 := R10["stasisProbeArmour"]
 159 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-160 [-]: EQ        0 R9 K37     ; if R9 ~= nil then PC := 164
+160 [-]: EQ        0 R9 K38     ; if R9 ~= nil then PC := 164
 161 [-]: JMP       164          ; PC := 164
 162 [-]: GETGLOBAL R9 K16       ; R9 := _T
-163 [-]: SETTABLE  R9 K17 K37   ; R9["stasisProbeArmour"] := nil
+163 [-]: SETTABLE  R9 K17 K38   ; R9["stasisProbeArmour"] := nil
 164 [-]: RETURN    R0 1         ; return 
 
 
@@ -1789,7 +1789,7 @@ code size: 59
 352 [-]: SELF      R41 R40 K78  ; R42 := R40; R41 := R40["0xF21555A7"]
 353 [-]: GETGLOBAL R43 K50      ; R43 := Game
 354 [-]: GETTABLE  R43 R43 K79  ; R43 := R43["AVATAR_ARMOUR"]
-355 [-]: GETGLOBAL R44 K50      ; R44 := Game
+355 [-]: GETGLOBAL R44 K43      ; R44 := Engine
 356 [-]: GETTABLE  R44 R44 K80  ; R44 := R44["MULTIPLY"]
 357 [-]: GETTABLE  R45 R38 K75  ; R45 := R38["armourStrip"]
 358 [-]: SUB       R45 K48 R45  ; R45 := 1 - R45
@@ -1805,7 +1805,7 @@ code size: 59
 368 [-]: SELF      R41 R40 K83  ; R42 := R40; R41 := R40["0x3B1B11B9"]
 369 [-]: GETGLOBAL R43 K50      ; R43 := Game
 370 [-]: GETTABLE  R43 R43 K79  ; R43 := R43["AVATAR_ARMOUR"]
-371 [-]: GETGLOBAL R44 K50      ; R44 := Game
+371 [-]: GETGLOBAL R44 K43      ; R44 := Engine
 372 [-]: GETTABLE  R44 R44 K80  ; R44 := R44["MULTIPLY"]
 373 [-]: GETTABLE  R45 R38 K75  ; R45 := R38["armourStrip"]
 374 [-]: SUB       R45 K48 R45  ; R45 := 1 - R45

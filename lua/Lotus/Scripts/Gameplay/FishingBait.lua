@@ -1,5 +1,4 @@
-code size: 28
-code size: 16
+code size: 23
 code size: 431
 code size: 18
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -10,7 +9,7 @@ code size: 18
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  11
+; Max Stack Size:  9
 
   1 [-]: LOADK     R0 K0        ; R0 := 5
   2 [-]: LOADK     R1 K1        ; R1 := -5
@@ -20,59 +19,27 @@ code size: 18
   6 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["max"]
   7 [-]: GETGLOBAL R6 K3        ; R6 := math
   8 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["min"]
-  9 [-]: GETGLOBAL R7 K6        ; R7 := 0x7C282057
- 10 [-]: LOADK     R8 K7        ; R8 := "/Lotus/Sounds/Weapons/EidolonFishingSpears/FishingSpearBaitWaterImpact"
- 11 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 12 [-]: CLOSURE   R8 0         ; R8 := closure(Function #1)
- 13 [-]: MOVE      R0 R7        ; R0 := R7
- 14 [-]: CLOSURE   R9 1         ; R9 := closure(Function #2)
- 15 [-]: MOVE      R0 R3        ; R0 := R3
- 16 [-]: MOVE      R0 R5        ; R0 := R5
- 17 [-]: MOVE      R0 R2        ; R0 := R2
- 18 [-]: MOVE      R0 R1        ; R0 := R1
- 19 [-]: MOVE      R0 R0        ; R0 := R0
- 20 [-]: MOVE      R0 R6        ; R0 := R6
- 21 [-]: MOVE      R0 R4        ; R0 := R4
- 22 [-]: CLOSURE   R10 2        ; R10 := closure(Function #3)
- 23 [-]: MOVE      R0 R4        ; R0 := R4
- 24 [-]: MOVE      R0 R3        ; R0 := R3
- 25 [-]: MOVE      R0 R9        ; R0 := R9
- 26 [-]: SETGLOBAL R10 K8       ; ManageBait := R10
- 27 [-]: SETGLOBAL R10 K9       ; 0x88C8410C := R10
- 28 [-]: RETURN    R0 1         ; return 
+  9 [-]: CLOSURE   R7 0         ; R7 := closure(Function #1)
+ 10 [-]: MOVE      R0 R3        ; R0 := R3
+ 11 [-]: MOVE      R0 R5        ; R0 := R5
+ 12 [-]: MOVE      R0 R2        ; R0 := R2
+ 13 [-]: MOVE      R0 R1        ; R0 := R1
+ 14 [-]: MOVE      R0 R0        ; R0 := R0
+ 15 [-]: MOVE      R0 R6        ; R0 := R6
+ 16 [-]: MOVE      R0 R4        ; R0 := R4
+ 17 [-]: CLOSURE   R8 1         ; R8 := closure(Function #2)
+ 18 [-]: MOVE      R0 R4        ; R0 := R4
+ 19 [-]: MOVE      R0 R3        ; R0 := R3
+ 20 [-]: MOVE      R0 R7        ; R0 := R7
+ 21 [-]: SETGLOBAL R8 K6        ; ManageBait := R8
+ 22 [-]: SETGLOBAL R8 K7        ; 0x88C8410C := R8
+ 23 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 15
-; #Upvalues:       1
-; #Parameters:     1
-; Is_vararg:       0
-; Max Stack Size:  6
-
-  1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x25992394"]
-  2 [-]: GETUPVAL  R3 U0        ; R3 := U0
-  3 [-]: MOVE      R4 R0        ; R4 := R0
-  4 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
-  5 [-]: GETGLOBAL R1 K1        ; R1 := table
-  6 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["0xE6450C9D"]
-  7 [-]: GETGLOBAL R2 K3        ; R2 := _T
-  8 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["gFishing"]
-  9 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["perceptions"]
- 10 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 11 [-]: SETTABLE  R3 K6 K7     ; R3["pType"] := 3
- 12 [-]: SELF      R4 R0 K9     ; R5 := R0; R4 := R0["0x6DA72501"]
- 13 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 14 [-]: SETTABLE  R3 K8 R4     ; R3["pos"] := R4
- 15 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 16 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 22
+; Defined at line: 13
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -414,7 +381,7 @@ code size: 18
 334 [-]: SELF      R48 R32 K13  ; R49 := R32; R48 := R32["0x6DA72501"]
 335 [-]: CALL      R48 2 2      ; R48 := R48(R49)
 336 [-]: GETTABLE  R48 R48 K28  ; R48 := R48["y"]
-337 [-]: ADD       R48 R48 K57  ; R48 := R48 + 0.40000000596046
+337 [-]: SUB       R48 R48 K57  ; R48 := R48 - 0.10000000149012
 338 [-]: SETTABLE  R47 K2 R48   ; R47["surface"] := R48
 339 [-]: JMP       395          ; PC := 395
 340 [-]: GETGLOBAL R48 K4       ; R48 := 0x400E7765
@@ -511,10 +478,10 @@ code size: 18
 431 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3:
+; Function #2:
 ;
 ; Name:            
-; Defined at line: 193
+; Defined at line: 181
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0

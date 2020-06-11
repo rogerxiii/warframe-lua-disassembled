@@ -163,8 +163,8 @@ code size: 295
  76 [-]: SELF      R13 R13 K15  ; R14 := R13; R13 := R13["0xF21555A7"]
  77 [-]: GETGLOBAL R15 K16      ; R15 := Game
  78 [-]: GETTABLE  R15 R15 K17  ; R15 := R15["AVATAR_DAMAGE_RESISTANCE"]
- 79 [-]: GETGLOBAL R16 K16      ; R16 := Game
- 80 [-]: GETTABLE  R16 R16 K18  ; R16 := R16["ADD"]
+ 79 [-]: GETGLOBAL R16 K18      ; R16 := Engine
+ 80 [-]: GETTABLE  R16 R16 K19  ; R16 := R16["ADD"]
  81 [-]: GETGLOBAL R17 K3       ; R17 := _T
  82 [-]: GETTABLE  R17 R17 K4   ; R17 := R17["resistanceOnDamage"]
  83 [-]: GETTABLE  R17 R17 R2   ; R17 := R17[R2]
@@ -175,8 +175,8 @@ code size: 295
  88 [-]: MOVE      R20 R4       ; R20 := R4
  89 [-]: CALL      R13 8 1      ; R13(R14,R15,R16,R17,R18,R19,R20)
  90 [-]: FORLOOP   R9 74        ; R9 += R11; if R9 <= R10 then begin PC := 74; R12 := R9 end
- 91 [-]: GETGLOBAL R13 K19      ; R13 := table
- 92 [-]: GETTABLE  R13 R13 K20  ; R13 := R13["0xCDB1FD5E"]
+ 91 [-]: GETGLOBAL R13 K20      ; R13 := table
+ 92 [-]: GETTABLE  R13 R13 K21  ; R13 := R13["0xCDB1FD5E"]
  93 [-]: GETGLOBAL R14 K3       ; R14 := _T
  94 [-]: GETTABLE  R14 R14 K4   ; R14 := R14["resistanceOnDamage"]
  95 [-]: GETTABLE  R14 R14 R2   ; R14 := R14[R2]
@@ -484,7 +484,7 @@ code size: 295
 286 [-]: SELF      R38 R38 K53  ; R39 := R38; R38 := R38["0x3B1B11B9"]
 287 [-]: GETGLOBAL R40 K54      ; R40 := Game
 288 [-]: GETTABLE  R40 R40 K55  ; R40 := R40["AVATAR_DAMAGE_RESISTANCE"]
-289 [-]: GETGLOBAL R41 K54      ; R41 := Game
+289 [-]: GETGLOBAL R41 K7       ; R41 := Engine
 290 [-]: GETTABLE  R41 R41 K56  ; R41 := R41["ADD"]
 291 [-]: MOVE      R42 R24      ; R42 := R24
 292 [-]: LOADNIL   R43 R44      ; R43 := R44 := nil

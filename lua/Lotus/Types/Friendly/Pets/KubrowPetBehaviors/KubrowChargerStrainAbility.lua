@@ -968,39 +968,39 @@ code size: 29
 361 [-]: SELF      R42 R42 K62  ; R43 := R42; R42 := R42["0x3B1B11B9"]
 362 [-]: GETGLOBAL R44 K63      ; R44 := Game
 363 [-]: GETTABLE  R44 R44 K64  ; R44 := R44["WEAPON_CRIT_DAMAGE"]
-364 [-]: GETGLOBAL R45 K63      ; R45 := Game
-365 [-]: GETTABLE  R45 R45 K65  ; R45 := R45["STACKING_MULTIPLY"]
-366 [-]: GETGLOBAL R46 K66      ; R46 := infectionDamage
+364 [-]: GETGLOBAL R45 K65      ; R45 := Engine
+365 [-]: GETTABLE  R45 R45 K66  ; R45 := R45["STACKING_MULTIPLY"]
+366 [-]: GETGLOBAL R46 K67      ; R46 := infectionDamage
 367 [-]: GETGLOBAL R47 K20      ; R47 := math
 368 [-]: GETTABLE  R47 R47 K21  ; R47 := R47["0x65F9712A"]
 369 [-]: MOVE      R48 R10      ; R48 := R10
-370 [-]: GETGLOBAL R49 K66      ; R49 := infectionDamage
+370 [-]: GETGLOBAL R49 K67      ; R49 := infectionDamage
 371 [-]: LEN       R49 R49      ; R49 := # R49
 372 [-]: CALL      R47 3 2      ; R47 := R47(R48,R49)
 373 [-]: GETTABLE  R46 R46 R47  ; R46 := R46[R47]
-374 [-]: SELF      R47 R24 K67  ; R48 := R24; R47 := R24["0xE2B32C65"]
+374 [-]: SELF      R47 R24 K68  ; R48 := R24; R47 := R24["0xE2B32C65"]
 375 [-]: CALL      R47 2 0      ; R47,... := R47(R48)
 376 [-]: CALL      R42 0 1      ; R42(R43,...)
 377 [-]: GETGLOBAL R42 K20      ; R42 := math
-378 [-]: GETTABLE  R42 R42 K69  ; R42 := R42["0xF7005A7B"]
-379 [-]: GETGLOBAL R43 K66      ; R43 := infectionDamage
+378 [-]: GETTABLE  R42 R42 K70  ; R42 := R42["0xF7005A7B"]
+379 [-]: GETGLOBAL R43 K67      ; R43 := infectionDamage
 380 [-]: GETGLOBAL R44 K20      ; R44 := math
 381 [-]: GETTABLE  R44 R44 K21  ; R44 := R44["0x65F9712A"]
 382 [-]: MOVE      R45 R10      ; R45 := R10
-383 [-]: GETGLOBAL R46 K66      ; R46 := infectionDamage
+383 [-]: GETGLOBAL R46 K67      ; R46 := infectionDamage
 384 [-]: LEN       R46 R46      ; R46 := # R46
 385 [-]: CALL      R44 3 2      ; R44 := R44(R45,R46)
 386 [-]: GETTABLE  R43 R43 R44  ; R43 := R43[R44]
 387 [-]: MUL       R43 R43 R3   ; R43 := R43 * R3
-388 [-]: MUL       R43 R43 K70  ; R43 := R43 * 100
+388 [-]: MUL       R43 R43 K71  ; R43 := R43 * 100
 389 [-]: CALL      R42 2 2      ; R42 := R42(R43)
-390 [-]: SETTABLE  R38 K68 R42  ; R38["buffData"] := R42
-391 [-]: SELF      R42 R1 K71   ; R43 := R1; R42 := R1["0x584F13D6"]
+390 [-]: SETTABLE  R38 K69 R42  ; R38["buffData"] := R42
+391 [-]: SELF      R42 R1 K72   ; R43 := R1; R42 := R1["0x584F13D6"]
 392 [-]: MOVE      R44 R38      ; R44 := R38
 393 [-]: MOVE      R45 R1       ; R45 := R1
 394 [-]: MOVE      R46 R1       ; R46 := R1
 395 [-]: CALL      R42 5 1      ; R42(R43,R44,R45,R46)
-396 [-]: GETGLOBAL R42 K72      ; R42 := 0xECFDD17
+396 [-]: GETGLOBAL R42 K73      ; R42 := 0xECFDD17
 397 [-]: MOVE      R43 R35      ; R43 := R35
 398 [-]: CALL      R42 2 4      ; R42,R43,R44 := R42(R43)
 399 [-]: JMP       406          ; PC := 406
@@ -1022,7 +1022,7 @@ code size: 29
 415 [-]: LE        0 R47 R37    ; if R47 > R37 then PC := 499
 416 [-]: JMP       499          ; PC := 499
 417 [-]: LOADK     R37 K2       ; R37 := 0
-418 [-]: GETGLOBAL R47 K72      ; R47 := 0xECFDD17
+418 [-]: GETGLOBAL R47 K73      ; R47 := 0xECFDD17
 419 [-]: MOVE      R48 R34      ; R48 := R34
 420 [-]: CALL      R47 2 4      ; R47,R48,R49 := R47(R48)
 421 [-]: JMP       481          ; PC := 481
@@ -1034,63 +1034,63 @@ code size: 29
 427 [-]: SETTABLE  R34 R50 K52  ; R34[R50] := nil
 428 [-]: JMP       481          ; PC := 481
 429 [-]: GETTABLE  R52 R51 K60  ; R52 := R51["cyst"]
-430 [-]: SELF      R52 R52 K73  ; R53 := R52; R52 := R52["0x6DA72501"]
+430 [-]: SELF      R52 R52 K74  ; R53 := R52; R52 := R52["0x6DA72501"]
 431 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-432 [-]: SELF      R53 R31 K74  ; R54 := R31; R53 := R31["0x1A0125F1"]
-433 [-]: GETGLOBAL R55 K75      ; R55 := maggotType
+432 [-]: SELF      R53 R31 K75  ; R54 := R31; R53 := R31["0x1A0125F1"]
+433 [-]: GETGLOBAL R55 K76      ; R55 := maggotType
 434 [-]: MOVE      R56 R52      ; R56 := R52
-435 [-]: GETGLOBAL R57 K76      ; R57 := ZERO_ROTATION
+435 [-]: GETGLOBAL R57 K77      ; R57 := ZERO_ROTATION
 436 [-]: GETUPVAL  R58 U1       ; R58 := U1
 437 [-]: LOADK     R59 K9       ; R59 := 1
 438 [-]: CALL      R53 7 2      ; R53 := R53(R54,R55,R56,R57,R58,R59)
 439 [-]: GETGLOBAL R54 K31      ; R54 := gRegion
-440 [-]: SELF      R54 R54 K77  ; R55 := R54; R54 := R54["0x9B0A3887"]
+440 [-]: SELF      R54 R54 K78  ; R55 := R54; R54 := R54["0x9B0A3887"]
 441 [-]: GETTABLE  R56 R51 K60  ; R56 := R51["cyst"]
 442 [-]: CALL      R54 3 1      ; R54(R55,R56)
 443 [-]: GETGLOBAL R54 K11      ; R54 := 0x400E7765
-444 [-]: GETGLOBAL R55 K78      ; R55 := cystSpawnMaggotFx
+444 [-]: GETGLOBAL R55 K79      ; R55 := cystSpawnMaggotFx
 445 [-]: CALL      R54 2 2      ; R54 := R54(R55)
 446 [-]: TEST      R54 1        ; if R54 then PC := 454
 447 [-]: JMP       454          ; PC := 454
 448 [-]: GETGLOBAL R54 K31      ; R54 := gRegion
-449 [-]: SELF      R54 R54 K79  ; R55 := R54; R54 := R54["0xBDD34CC6"]
-450 [-]: GETGLOBAL R56 K78      ; R56 := cystSpawnMaggotFx
+449 [-]: SELF      R54 R54 K80  ; R55 := R54; R54 := R54["0xBDD34CC6"]
+450 [-]: GETGLOBAL R56 K79      ; R56 := cystSpawnMaggotFx
 451 [-]: MOVE      R57 R52      ; R57 := R52
-452 [-]: GETGLOBAL R58 K76      ; R58 := ZERO_ROTATION
+452 [-]: GETGLOBAL R58 K77      ; R58 := ZERO_ROTATION
 453 [-]: CALL      R54 5 1      ; R54(R55,R56,R57,R58)
 454 [-]: GETGLOBAL R54 K11      ; R54 := 0x400E7765
 455 [-]: MOVE      R55 R53      ; R55 := R53
 456 [-]: CALL      R54 2 2      ; R54 := R54(R55)
 457 [-]: TEST      R54 1        ; if R54 then PC := 478
 458 [-]: JMP       478          ; PC := 478
-459 [-]: SELF      R54 R53 K80  ; R55 := R53; R54 := R53["0x80B14403"]
+459 [-]: SELF      R54 R53 K81  ; R55 := R53; R54 := R53["0x80B14403"]
 460 [-]: CALL      R54 2 2      ; R54 := R54(R55)
 461 [-]: GETGLOBAL R55 K11      ; R55 := 0x400E7765
 462 [-]: MOVE      R56 R54      ; R56 := R54
 463 [-]: CALL      R55 2 2      ; R55 := R55(R56)
 464 [-]: TEST      R55 1        ; if R55 then PC := 481
 465 [-]: JMP       481          ; PC := 481
-466 [-]: GETGLOBAL R55 K81      ; R55 := table
-467 [-]: GETTABLE  R55 R55 K82  ; R55 := R55["0xE6450C9D"]
+466 [-]: GETGLOBAL R55 K82      ; R55 := table
+467 [-]: GETTABLE  R55 R55 K83  ; R55 := R55["0xE6450C9D"]
 468 [-]: GETGLOBAL R56 K3       ; R56 := _T
 469 [-]: GETTABLE  R56 R56 K4   ; R56 := R56["chargerStrain"]
 470 [-]: GETTABLE  R56 R56 R2   ; R56 := R56[R2]
-471 [-]: GETTABLE  R56 R56 K83  ; R56 := R56["maggots"]
+471 [-]: GETTABLE  R56 R56 K84  ; R56 := R56["maggots"]
 472 [-]: MOVE      R57 R54      ; R57 := R54
 473 [-]: CALL      R55 3 1      ; R55(R56,R57)
-474 [-]: SELF      R55 R54 K84  ; R56 := R54; R55 := R54["0xED2FFD98"]
+474 [-]: SELF      R55 R54 K85  ; R56 := R54; R55 := R54["0xED2FFD98"]
 475 [-]: MOVE      R57 R0       ; R57 := R0
 476 [-]: CALL      R55 3 1      ; R55(R56,R57)
 477 [-]: JMP       481          ; PC := 481
-478 [-]: GETGLOBAL R55 K85      ; R55 := 0x93B1256B
-479 [-]: LOADK     R56 K86      ; R56 := "Failed to spawn maggot"
+478 [-]: GETGLOBAL R55 K86      ; R55 := 0x93B1256B
+479 [-]: LOADK     R56 K87      ; R56 := "Failed to spawn maggot"
 480 [-]: CALL      R55 2 1      ; R55(R56)
 481 [-]: TFORLOOP  R47 2        ; R50,R51 :=  R47(R48,R49); if R50 ~= nil then begin PC = 422; R49 := R50 end
 482 [-]: JMP       422          ; PC := 422
 483 [-]: GETGLOBAL R55 K3       ; R55 := _T
 484 [-]: GETTABLE  R55 R55 K4   ; R55 := R55["chargerStrain"]
 485 [-]: GETTABLE  R55 R55 R2   ; R55 := R55[R2]
-486 [-]: GETTABLE  R55 R55 K83  ; R55 := R55["maggots"]
+486 [-]: GETTABLE  R55 R55 K84  ; R55 := R55["maggots"]
 487 [-]: LEN       R55 R55      ; R55 := # R55
 488 [-]: LT        0 K2 R55     ; if 0 >= R55 then PC := 499
 489 [-]: JMP       499          ; PC := 499
@@ -1099,7 +1099,7 @@ code size: 29
 492 [-]: JMP       499          ; PC := 499
 493 [-]: SELF      R55 R0 K28   ; R56 := R0; R55 := R0["0xB26452A2"]
 494 [-]: GETGLOBAL R57 K29      ; R57 := 0xEC274B1A
-495 [-]: LOADK     R58 K87      ; R58 := "MaggotSuicide"
+495 [-]: LOADK     R58 K88      ; R58 := "MaggotSuicide"
 496 [-]: CALL      R57 2 2      ; R57 := R57(R58)
 497 [-]: MOVE      R58 R0       ; R58 := R0
 498 [-]: CALL      R55 4 1      ; R55(R56,R57,R58)
@@ -1108,7 +1108,7 @@ code size: 29
 501 [-]: GETGLOBAL R55 K53      ; R55 := 0x4CDEF9FF
 502 [-]: CALL      R55 1 2      ; R55 := R55()
 503 [-]: ADD       R5 R5 R55    ; R5 := R5 + R55
-504 [-]: GETGLOBAL R55 K88      ; R55 := evolveInterval
+504 [-]: GETGLOBAL R55 K89      ; R55 := evolveInterval
 505 [-]: LE        0 R55 R5     ; if R55 > R5 then PC := 617
 506 [-]: JMP       617          ; PC := 617
 507 [-]: LOADK     R5 K2        ; R5 := 0
@@ -1122,12 +1122,12 @@ code size: 29
 515 [-]: JMP       519          ; PC := 519
 516 [-]: GETGLOBAL R55 K3       ; R55 := _T
 517 [-]: GETTABLE  R55 R55 K37  ; R55 := R55["chargerFever"]
-518 [-]: SETTABLE  R55 R2 K89   ; R55[R2] := "0x1"
-519 [-]: GETGLOBAL R55 K66      ; R55 := infectionDamage
+518 [-]: SETTABLE  R55 R2 K90   ; R55[R2] := "0x1"
+519 [-]: GETGLOBAL R55 K67      ; R55 := infectionDamage
 520 [-]: GETGLOBAL R56 K20      ; R56 := math
 521 [-]: GETTABLE  R56 R56 K21  ; R56 := R56["0x65F9712A"]
 522 [-]: MOVE      R57 R10      ; R57 := R10
-523 [-]: GETGLOBAL R58 K66      ; R58 := infectionDamage
+523 [-]: GETGLOBAL R58 K67      ; R58 := infectionDamage
 524 [-]: LEN       R58 R58      ; R58 := # R58
 525 [-]: CALL      R56 3 2      ; R56 := R56(R57,R58)
 526 [-]: GETTABLE  R55 R55 R56  ; R55 := R55[R56]
@@ -1137,14 +1137,14 @@ code size: 29
 530 [-]: CALL      R57 2 2      ; R57 := R57(R58)
 531 [-]: TEST      R57 1        ; if R57 then PC := 536
 532 [-]: JMP       536          ; PC := 536
-533 [-]: SELF      R57 R24 K67  ; R58 := R24; R57 := R24["0xE2B32C65"]
+533 [-]: SELF      R57 R24 K68  ; R58 := R24; R57 := R24["0xE2B32C65"]
 534 [-]: CALL      R57 2 2      ; R57 := R57(R58)
 535 [-]: MOVE      R56 R57      ; R56 := R57
 536 [-]: GETGLOBAL R57 K3       ; R57 := _T
 537 [-]: GETTABLE  R57 R57 K4   ; R57 := R57["chargerStrain"]
 538 [-]: GETTABLE  R57 R57 R2   ; R57 := R57[R2]
 539 [-]: NEWTABLE  R58 0 0      ; R58 := {}
-540 [-]: SETTABLE  R57 K83 R58  ; R57["maggots"] := R58
+540 [-]: SETTABLE  R57 K84 R58  ; R57["maggots"] := R58
 541 [-]: LOADK     R57 K9       ; R57 := 1
 542 [-]: MOVE      R58 R3       ; R58 := R3
 543 [-]: LOADK     R59 K9       ; R59 := 1
@@ -1153,62 +1153,62 @@ code size: 29
 546 [-]: JMP       562          ; PC := 562
 547 [-]: SELF      R61 R1 K6    ; R62 := R1; R61 := R1["0x8DB5D01F"]
 548 [-]: CALL      R61 2 2      ; R61 := R61(R62)
-549 [-]: SELF      R61 R61 K90  ; R62 := R61; R61 := R61["0xF21555A7"]
+549 [-]: SELF      R61 R61 K91  ; R62 := R61; R61 := R61["0xF21555A7"]
 550 [-]: GETGLOBAL R63 K63      ; R63 := Game
 551 [-]: GETTABLE  R63 R63 K64  ; R63 := R63["WEAPON_CRIT_DAMAGE"]
-552 [-]: GETGLOBAL R64 K63      ; R64 := Game
-553 [-]: GETTABLE  R64 R64 K65  ; R64 := R64["STACKING_MULTIPLY"]
+552 [-]: GETGLOBAL R64 K65      ; R64 := Engine
+553 [-]: GETTABLE  R64 R64 K66  ; R64 := R64["STACKING_MULTIPLY"]
 554 [-]: MOVE      R65 R55      ; R65 := R55
 555 [-]: MOVE      R66 R56      ; R66 := R56
 556 [-]: CALL      R61 6 1      ; R61(R62,R63,R64,R65,R66)
-557 [-]: SELF      R61 R1 K71   ; R62 := R1; R61 := R1["0x584F13D6"]
+557 [-]: SELF      R61 R1 K72   ; R62 := R1; R61 := R1["0x584F13D6"]
 558 [-]: MOVE      R63 R38      ; R63 := R38
 559 [-]: MOVE      R64 R0       ; R64 := R0
 560 [-]: MOVE      R65 R1       ; R65 := R1
 561 [-]: CALL      R61 5 1      ; R61(R62,R63,R64,R65)
 562 [-]: FORLOOP   R57 545      ; R57 += R59; if R57 <= R58 then begin PC := 545; R60 := R57 end
-563 [-]: GETGLOBAL R61 K72      ; R61 := 0xECFDD17
+563 [-]: GETGLOBAL R61 K73      ; R61 := 0xECFDD17
 564 [-]: MOVE      R62 R35      ; R62 := R35
 565 [-]: CALL      R61 2 4      ; R61,R62,R63 := R61(R62)
 566 [-]: JMP       613          ; PC := 613
 567 [-]: GETGLOBAL R66 K31      ; R66 := gRegion
-568 [-]: SELF      R66 R66 K79  ; R67 := R66; R66 := R66["0xBDD34CC6"]
-569 [-]: GETGLOBAL R68 K91      ; R68 := cystDecoPopped
+568 [-]: SELF      R66 R66 K80  ; R67 := R66; R66 := R66["0xBDD34CC6"]
+569 [-]: GETGLOBAL R68 K92      ; R68 := cystDecoPopped
 570 [-]: GETTABLE  R69 R65 K60  ; R69 := R65["cyst"]
-571 [-]: SELF      R69 R69 K92  ; R70 := R69; R69 := R69["0xBBAF192"]
+571 [-]: SELF      R69 R69 K93  ; R70 := R69; R69 := R69["0xBBAF192"]
 572 [-]: CALL      R69 2 2      ; R69 := R69(R70)
-573 [-]: GETGLOBAL R70 K76      ; R70 := ZERO_ROTATION
+573 [-]: GETGLOBAL R70 K77      ; R70 := ZERO_ROTATION
 574 [-]: MOVE      R71 R0       ; R71 := R0
 575 [-]: CALL      R66 6 2      ; R66 := R66(R67,R68,R69,R70,R71)
 576 [-]: GETGLOBAL R67 K31      ; R67 := gRegion
-577 [-]: SELF      R67 R67 K77  ; R68 := R67; R67 := R67["0x9B0A3887"]
+577 [-]: SELF      R67 R67 K78  ; R68 := R67; R67 := R67["0x9B0A3887"]
 578 [-]: GETTABLE  R69 R65 K60  ; R69 := R65["cyst"]
 579 [-]: CALL      R67 3 1      ; R67(R68,R69)
 580 [-]: SETTABLE  R65 K60 R66  ; R65["cyst"] := R66
-581 [-]: GETGLOBAL R67 K93      ; R67 := 0x221C9700
+581 [-]: GETGLOBAL R67 K94      ; R67 := 0x221C9700
 582 [-]: GETGLOBAL R68 K20      ; R68 := math
-583 [-]: GETTABLE  R68 R68 K94  ; R68 := R68["0x865961F7"]
-584 [-]: LOADK     R69 K95      ; R69 := -1
+583 [-]: GETTABLE  R68 R68 K95  ; R68 := R68["0x865961F7"]
+584 [-]: LOADK     R69 K96      ; R69 := -1
 585 [-]: LOADK     R70 K9       ; R70 := 1
 586 [-]: CALL      R68 3 2      ; R68 := R68(R69,R70)
 587 [-]: GETGLOBAL R69 K20      ; R69 := math
-588 [-]: GETTABLE  R69 R69 K94  ; R69 := R69["0x865961F7"]
-589 [-]: LOADK     R70 K95      ; R70 := -1
+588 [-]: GETTABLE  R69 R69 K95  ; R69 := R69["0x865961F7"]
+589 [-]: LOADK     R70 K96      ; R70 := -1
 590 [-]: LOADK     R71 K9       ; R71 := 1
 591 [-]: CALL      R69 3 2      ; R69 := R69(R70,R71)
 592 [-]: GETGLOBAL R70 K20      ; R70 := math
-593 [-]: GETTABLE  R70 R70 K94  ; R70 := R70["0x865961F7"]
-594 [-]: LOADK     R71 K95      ; R71 := -1
+593 [-]: GETTABLE  R70 R70 K95  ; R70 := R70["0x865961F7"]
+594 [-]: LOADK     R71 K96      ; R71 := -1
 595 [-]: LOADK     R72 K9       ; R72 := 1
 596 [-]: CALL      R70 3 0      ; R70,... := R70(R71,R72)
 597 [-]: CALL      R67 0 2      ; R67 := R67(R68,...)
-598 [-]: GETGLOBAL R68 K96      ; R68 := 0x458357BC
+598 [-]: GETGLOBAL R68 K97      ; R68 := 0x458357BC
 599 [-]: MOVE      R69 R67      ; R69 := R67
 600 [-]: CALL      R68 2 1      ; R68(R69)
 601 [-]: GETTABLE  R68 R65 K60  ; R68 := R65["cyst"]
-602 [-]: SELF      R68 R68 K97  ; R69 := R68; R68 := R68["0xEAF367B1"]
-603 [-]: MUL       R70 R67 K98  ; R70 := R67 * 5
-604 [-]: GETGLOBAL R71 K99      ; R71 := Engine
+602 [-]: SELF      R68 R68 K98  ; R69 := R68; R68 := R68["0xEAF367B1"]
+603 [-]: MUL       R70 R67 K99  ; R70 := R67 * 5
+604 [-]: GETGLOBAL R71 K65      ; R71 := Engine
 605 [-]: GETTABLE  R71 R71 K100 ; R71 := R71["FT_VELOCITY_CHANGE"]
 606 [-]: CALL      R68 4 1      ; R68(R69,R70,R71)
 607 [-]: NEWTABLE  R68 0 0      ; R68 := {}

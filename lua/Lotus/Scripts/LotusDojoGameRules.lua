@@ -7,7 +7,7 @@ code size: 11
 code size: 29
 code size: 131
 code size: 1
-code size: 39
+code size: 20
 code size: 125
 code size: 152
 code size: 1
@@ -537,7 +537,7 @@ code size: 20
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  11
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := gGameRules
   2 [-]: GETGLOBAL R2 K1        ; R2 := gRegion
@@ -555,35 +555,16 @@ code size: 20
  14 [-]: CALL      R8 3 1       ; R8(R9,R10)
  15 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 12; R5 := R6 end
  16 [-]: JMP       12           ; PC := 12
- 17 [-]: SELF      R8 R1 K8     ; R9 := R1; R8 := R1["0x8B598ED4"]
- 18 [-]: GETGLOBAL R10 K9       ; R10 := gLotusRailCustomizationGameRulesType
- 19 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 20 [-]: TEST      R8 0         ; if not R8 then PC := 36
- 21 [-]: JMP       36           ; PC := 36
- 22 [-]: GETGLOBAL R8 K1        ; R8 := gRegion
- 23 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0xA76F0612"]
- 24 [-]: GETGLOBAL R10 K3       ; R10 := 0xEC274B1A
- 25 [-]: LOADK     R11 K10      ; R11 := "BarrierBlockingVolume"
- 26 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
- 27 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
- 28 [-]: GETGLOBAL R9 K5        ; R9 := 0x63B09107
- 29 [-]: MOVE      R10 R8       ; R10 := R8
- 30 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
- 31 [-]: JMP       34           ; PC := 34
- 32 [-]: SELF      R14 R13 K11  ; R15 := R13; R14 := R13["0xD4C2743F"]
- 33 [-]: CALL      R14 2 1      ; R14(R15)
- 34 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 32; R11 := R12 end
- 35 [-]: JMP       32           ; PC := 32
- 36 [-]: GETUPVAL  R14 U0       ; R14 := U0
- 37 [-]: MOVE      R15 R1       ; R15 := R1
- 38 [-]: CALL      R14 2 1      ; R14(R15)
- 39 [-]: RETURN    R0 1         ; return 
+ 17 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 18 [-]: MOVE      R9 R1        ; R9 := R1
+ 19 [-]: CALL      R8 2 1       ; R8(R9)
+ 20 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 191
+; Defined at line: 184
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -719,7 +700,7 @@ code size: 20
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 232
+; Defined at line: 225
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -882,7 +863,7 @@ code size: 20
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 280
+; Defined at line: 273
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -894,7 +875,7 @@ code size: 20
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 283
+; Defined at line: 276
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1058,7 +1039,7 @@ code size: 20
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 350
+; Defined at line: 343
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1157,7 +1138,7 @@ code size: 20
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 387
+; Defined at line: 380
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1169,7 +1150,7 @@ code size: 20
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 392
+; Defined at line: 385
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1386,7 +1367,7 @@ code size: 20
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 487
+; Defined at line: 480
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1398,7 +1379,7 @@ code size: 20
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 494
+; Defined at line: 487
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1410,7 +1391,7 @@ code size: 20
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 501
+; Defined at line: 494
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1422,7 +1403,7 @@ code size: 20
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 505
+; Defined at line: 498
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0

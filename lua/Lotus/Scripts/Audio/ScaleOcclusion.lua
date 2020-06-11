@@ -158,44 +158,44 @@ code size: 97
  44 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0x3B1B11B9"]
  45 [-]: GETGLOBAL R6 K11       ; R6 := Game
  46 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["AVATAR_SHIELD_RECHARGE_RATE"]
- 47 [-]: GETGLOBAL R7 K11       ; R7 := Game
- 48 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["SET"]
+ 47 [-]: GETGLOBAL R7 K13       ; R7 := Engine
+ 48 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["SET"]
  49 [-]: LOADK     R8 K2        ; R8 := 0
  50 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  51 [-]: MOVE      R3 R1        ; R3 := R1
- 52 [-]: GETGLOBAL R4 K14       ; R4 := 0x4CDEF9FF
+ 52 [-]: GETGLOBAL R4 K15       ; R4 := 0x4CDEF9FF
  53 [-]: CALL      R4 1 2       ; R4 := R4()
  54 [-]: ADD       R2 R2 R4     ; R2 := R2 + R4
- 55 [-]: LT        0 K15 R2     ; if 1 >= R2 then PC := 6
+ 55 [-]: LT        0 K16 R2     ; if 1 >= R2 then PC := 6
  56 [-]: JMP       6            ; PC := 6
- 57 [-]: GETGLOBAL R4 K16       ; R4 := maxDamage
+ 57 [-]: GETGLOBAL R4 K17       ; R4 := maxDamage
  58 [-]: GETGLOBAL R5 K7        ; R5 := counter
  59 [-]: SELF      R5 R5 K8     ; R6 := R5; R5 := R5["0x499EDBEF"]
  60 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  61 [-]: MUL       R4 R4 R5     ; R4 := R4 * R5
  62 [-]: GETGLOBAL R5 K7        ; R5 := counter
- 63 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5["0xC94496A4"]
+ 63 [-]: SELF      R5 R5 K18    ; R6 := R5; R5 := R5["0xC94496A4"]
  64 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  65 [-]: DIV       R4 R4 R5     ; R4 := R4 / R5
- 66 [-]: SELF      R5 R1 K18    ; R6 := R1; R5 := R1["0x2F79FBD3"]
+ 66 [-]: SELF      R5 R1 K19    ; R6 := R1; R5 := R1["0x2F79FBD3"]
  67 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  68 [-]: SUB       R5 R5 R4     ; R5 := R5 - R4
- 69 [-]: GETGLOBAL R6 K19       ; R6 := minHealth
+ 69 [-]: GETGLOBAL R6 K20       ; R6 := minHealth
  70 [-]: LT        0 R5 R6      ; if R5 >= R6 then PC := 78
  71 [-]: JMP       78           ; PC := 78
- 72 [-]: SELF      R5 R1 K18    ; R6 := R1; R5 := R1["0x2F79FBD3"]
+ 72 [-]: SELF      R5 R1 K19    ; R6 := R1; R5 := R1["0x2F79FBD3"]
  73 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  74 [-]: SUB       R5 R5 R4     ; R5 := R5 - R4
- 75 [-]: GETGLOBAL R6 K19       ; R6 := minHealth
+ 75 [-]: GETGLOBAL R6 K20       ; R6 := minHealth
  76 [-]: SUB       R5 R5 R6     ; R5 := R5 - R6
  77 [-]: ADD       R4 R4 R5     ; R4 := R4 + R5
  78 [-]: LT        0 K2 R4      ; if 0 >= R4 then PC := 90
  79 [-]: JMP       90           ; PC := 90
- 80 [-]: SELF      R5 R1 K20    ; R6 := R1; R5 := R1["0x50ADA9B5"]
+ 80 [-]: SELF      R5 R1 K21    ; R6 := R1; R5 := R1["0x50ADA9B5"]
  81 [-]: MOVE      R7 R4        ; R7 := R4
- 82 [-]: GETGLOBAL R8 K21       ; R8 := Engine
+ 82 [-]: GETGLOBAL R8 K13       ; R8 := Engine
  83 [-]: GETTABLE  R8 R8 K22    ; R8 := R8["DT_CINEMATIC"]
- 84 [-]: GETGLOBAL R9 K21       ; R9 := Engine
+ 84 [-]: GETGLOBAL R9 K13       ; R9 := Engine
  85 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["TORSO"]
  86 [-]: LOADK     R10 K24      ; R10 := 500
  87 [-]: MOVE      R11 R0       ; R11 := R0
@@ -215,8 +215,8 @@ code size: 97
 101 [-]: SELF      R5 R5 K25    ; R6 := R5; R5 := R5["0xF21555A7"]
 102 [-]: GETGLOBAL R7 K11       ; R7 := Game
 103 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["AVATAR_SHIELD_RECHARGE_RATE"]
-104 [-]: GETGLOBAL R8 K11       ; R8 := Game
-105 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["SET"]
+104 [-]: GETGLOBAL R8 K13       ; R8 := Engine
+105 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["SET"]
 106 [-]: LOADK     R9 K2        ; R9 := 0
 107 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
 108 [-]: MOVE      R3 R0        ; R3 := R0

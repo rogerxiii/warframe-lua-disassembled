@@ -483,17 +483,17 @@ code size: 95
 132 [-]: SELF      R15 R14 K38  ; R16 := R14; R15 := R14["0x3B1B11B9"]
 133 [-]: GETGLOBAL R17 K39      ; R17 := Game
 134 [-]: GETTABLE  R17 R17 K40  ; R17 := R17["WEAPON_DAMAGE_AMOUNT"]
-135 [-]: GETGLOBAL R18 K39      ; R18 := Game
-136 [-]: GETTABLE  R18 R18 K41  ; R18 := R18["MULTIPLY"]
-137 [-]: GETGLOBAL R19 K42      ; R19 := vampireEffectDmgReduction
+135 [-]: GETGLOBAL R18 K41      ; R18 := Engine
+136 [-]: GETTABLE  R18 R18 K42  ; R18 := R18["MULTIPLY"]
+137 [-]: GETGLOBAL R19 K43      ; R19 := vampireEffectDmgReduction
 138 [-]: MUL       R19 R13 R19  ; R19 := R13 * R19
 139 [-]: SUB       R19 K37 R19  ; R19 := 1 - R19
 140 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-141 [-]: SELF      R15 R0 K43   ; R16 := R0; R15 := R0["0xAB436EF2"]
-142 [-]: GETGLOBAL R17 K44      ; R17 := infectionFx
-143 [-]: GETGLOBAL R18 K45      ; R18 := EMPTY_SYMBOL
-144 [-]: GETGLOBAL R19 K46      ; R19 := ZERO_VECTOR
-145 [-]: GETGLOBAL R20 K47      ; R20 := ZERO_ROTATION
+141 [-]: SELF      R15 R0 K44   ; R16 := R0; R15 := R0["0xAB436EF2"]
+142 [-]: GETGLOBAL R17 K45      ; R17 := infectionFx
+143 [-]: GETGLOBAL R18 K46      ; R18 := EMPTY_SYMBOL
+144 [-]: GETGLOBAL R19 K47      ; R19 := ZERO_VECTOR
+145 [-]: GETGLOBAL R20 K48      ; R20 := ZERO_ROTATION
 146 [-]: SELF      R21 R14 K5   ; R22 := R14; R21 := R14["0x6978AC59"]
 147 [-]: CALL      R21 2 0      ; R21,... := R21(R22)
 148 [-]: CALL      R15 0 1      ; R15(R16,...)

@@ -500,60 +500,60 @@ code size: 214
 109 [-]: SELF      R15 R15 K25  ; R16 := R15; R15 := R15["0x3B1B11B9"]
 110 [-]: GETGLOBAL R17 K26      ; R17 := Game
 111 [-]: GETTABLE  R17 R17 K27  ; R17 := R17["WEAPON_CRIT_DAMAGE"]
-112 [-]: GETGLOBAL R18 K26      ; R18 := Game
-113 [-]: GETTABLE  R18 R18 K28  ; R18 := R18["STACKING_MULTIPLY"]
+112 [-]: GETGLOBAL R18 K28      ; R18 := Engine
+113 [-]: GETTABLE  R18 R18 K29  ; R18 := R18["STACKING_MULTIPLY"]
 114 [-]: MOVE      R19 R14      ; R19 := R14
 115 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 116 [-]: GETGLOBAL R15 K3       ; R15 := 0x400E7765
 117 [-]: GETGLOBAL R16 K17      ; R16 := _T
-118 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["tekAbility"]
+118 [-]: GETTABLE  R16 R16 K30  ; R16 := R16["tekAbility"]
 119 [-]: GETTABLE  R16 R16 R3   ; R16 := R16[R3]
-120 [-]: GETTABLE  R16 R16 K30  ; R16 := R16["tennoFx"]
+120 [-]: GETTABLE  R16 R16 K31  ; R16 := R16["tennoFx"]
 121 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 122 [-]: TEST      R15 0        ; if not R15 then PC := 129
 123 [-]: JMP       129          ; PC := 129
 124 [-]: GETGLOBAL R15 K17      ; R15 := _T
-125 [-]: GETTABLE  R15 R15 K29  ; R15 := R15["tekAbility"]
+125 [-]: GETTABLE  R15 R15 K30  ; R15 := R15["tekAbility"]
 126 [-]: GETTABLE  R15 R15 R3   ; R15 := R15[R3]
 127 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-128 [-]: SETTABLE  R15 K30 R16  ; R15["tennoFx"] := R16
+128 [-]: SETTABLE  R15 K31 R16  ; R15["tennoFx"] := R16
 129 [-]: GETGLOBAL R15 K17      ; R15 := _T
-130 [-]: GETTABLE  R15 R15 K29  ; R15 := R15["tekAbility"]
+130 [-]: GETTABLE  R15 R15 K30  ; R15 := R15["tekAbility"]
 131 [-]: GETTABLE  R15 R15 R3   ; R15 := R15[R3]
-132 [-]: GETTABLE  R15 R15 K30  ; R15 := R15["tennoFx"]
+132 [-]: GETTABLE  R15 R15 K31  ; R15 := R15["tennoFx"]
 133 [-]: SELF      R16 R1 K4    ; R17 := R1; R16 := R1["0xDBEF0FB6"]
 134 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-135 [-]: SELF      R17 R1 K31   ; R18 := R1; R17 := R1["0xAB436EF2"]
-136 [-]: GETGLOBAL R19 K32      ; R19 := collateralFx
-137 [-]: GETGLOBAL R20 K33      ; R20 := EMPTY_SYMBOL
+135 [-]: SELF      R17 R1 K32   ; R18 := R1; R17 := R1["0xAB436EF2"]
+136 [-]: GETGLOBAL R19 K33      ; R19 := collateralFx
+137 [-]: GETGLOBAL R20 K34      ; R20 := EMPTY_SYMBOL
 138 [-]: CALL      R17 4 2      ; R17 := R17(R18,R19,R20)
 139 [-]: SETTABLE  R15 R16 R17  ; R15[R16] := R17
-140 [-]: GETGLOBAL R15 K34      ; R15 := Lotus_Game
-141 [-]: GETTABLE  R15 R15 K35  ; R15 := R15["0xFAFD4322"]
+140 [-]: GETGLOBAL R15 K35      ; R15 := Lotus_Game
+141 [-]: GETTABLE  R15 R15 K36  ; R15 := R15["0xFAFD4322"]
 142 [-]: CALL      R15 1 2      ; R15 := R15()
-143 [-]: SETTABLE  R15 K36 R1   ; R15["instigator"] := R1
+143 [-]: SETTABLE  R15 K37 R1   ; R15["instigator"] := R1
 144 [-]: NEWTABLE  R16 1 0      ; R16 := {}
 145 [-]: MOVE      R17 R1       ; R17 := R1
 146 [-]: SETLIST   R16 1 1      ; R16[(1-1)*FPF+i] := R(16+i), 1 <= i <= 1
-147 [-]: SETTABLE  R15 K37 R16  ; R15["affected"] := R16
-148 [-]: GETGLOBAL R16 K34      ; R16 := Lotus_Game
-149 [-]: GETTABLE  R16 R16 K39  ; R16 := R16["BT_PERCENT"]
-150 [-]: SETTABLE  R15 K38 R16  ; R15["buffType"] := R16
+147 [-]: SETTABLE  R15 K38 R16  ; R15["affected"] := R16
+148 [-]: GETGLOBAL R16 K35      ; R16 := Lotus_Game
+149 [-]: GETTABLE  R16 R16 K40  ; R16 := R16["BT_PERCENT"]
+150 [-]: SETTABLE  R15 K39 R16  ; R15["buffType"] := R16
 151 [-]: GETGLOBAL R16 K13      ; R16 := collateralModWRes
-152 [-]: SETTABLE  R15 K40 R16  ; R15["abilityType"] := R16
+152 [-]: SETTABLE  R15 K41 R16  ; R15["abilityType"] := R16
 153 [-]: GETGLOBAL R16 K23      ; R16 := math
-154 [-]: GETTABLE  R16 R16 K42  ; R16 := R16["0xF7005A7B"]
-155 [-]: MUL       R17 R14 K43  ; R17 := R14 * 100
+154 [-]: GETTABLE  R16 R16 K43  ; R16 := R16["0xF7005A7B"]
+155 [-]: MUL       R17 R14 K44  ; R17 := R14 * 100
 156 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-157 [-]: SETTABLE  R15 K41 R16  ; R15["buffData"] := R16
-158 [-]: SELF      R16 R1 K44   ; R17 := R1; R16 := R1["0x584F13D6"]
+157 [-]: SETTABLE  R15 K42 R16  ; R15["buffData"] := R16
+158 [-]: SELF      R16 R1 K45   ; R17 := R1; R16 := R1["0x584F13D6"]
 159 [-]: MOVE      R18 R15      ; R18 := R15
 160 [-]: MOVE      R19 R1       ; R19 := R1
 161 [-]: MOVE      R20 R1       ; R20 := R1
 162 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
 163 [-]: JMP       231          ; PC := 231
 164 [-]: SELF      R16 R1 K5    ; R17 := R1; R16 := R1["0x8B598ED4"]
-165 [-]: GETGLOBAL R18 K45      ; R18 := gLotusNpcAvatarType
+165 [-]: GETGLOBAL R18 K46      ; R18 := gLotusNpcAvatarType
 166 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
 167 [-]: TEST      R16 0        ; if not R16 then PC := 231
 168 [-]: JMP       231          ; PC := 231
@@ -564,15 +564,15 @@ code size: 214
 173 [-]: TEST      R16 0        ; if not R16 then PC := 231
 174 [-]: JMP       231          ; PC := 231
 175 [-]: GETGLOBAL R16 K17      ; R16 := _T
-176 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["tekAbility"]
+176 [-]: GETTABLE  R16 R16 K30  ; R16 := R16["tekAbility"]
 177 [-]: GETTABLE  R16 R16 R3   ; R16 := R16[R3]
-178 [-]: GETTABLE  R16 R16 K46  ; R16 := R16["dps"]
-179 [-]: GETGLOBAL R17 K47      ; R17 := Engine
+178 [-]: GETTABLE  R16 R16 K47  ; R16 := R16["dps"]
+179 [-]: GETGLOBAL R17 K28      ; R17 := Engine
 180 [-]: GETTABLE  R17 R17 K48  ; R17 := R17["0xFA1ED226"]
 181 [-]: CALL      R17 1 2      ; R17 := R17()
 182 [-]: SETTABLE  R17 K49 R16  ; R17["baseAmount"] := R16
 183 [-]: SELF      R18 R17 K50  ; R19 := R17; R18 := R17["0xC4A45AF8"]
-184 [-]: GETGLOBAL R20 K47      ; R20 := Engine
+184 [-]: GETGLOBAL R20 K28      ; R20 := Engine
 185 [-]: GETTABLE  R20 R20 K51  ; R20 := R20["DT_SLASH"]
 186 [-]: LOADK     R21 K11      ; R21 := 1
 187 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
@@ -587,19 +587,19 @@ code size: 214
 196 [-]: CALL      R18 0 1      ; R18(R19,...)
 197 [-]: GETGLOBAL R18 K3       ; R18 := 0x400E7765
 198 [-]: GETGLOBAL R19 K17      ; R19 := _T
-199 [-]: GETTABLE  R19 R19 K29  ; R19 := R19["tekAbility"]
+199 [-]: GETTABLE  R19 R19 K30  ; R19 := R19["tekAbility"]
 200 [-]: GETTABLE  R19 R19 R3   ; R19 := R19[R3]
 201 [-]: GETTABLE  R19 R19 K54  ; R19 := R19["enemies"]
 202 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 203 [-]: TEST      R18 0        ; if not R18 then PC := 210
 204 [-]: JMP       210          ; PC := 210
 205 [-]: GETGLOBAL R18 K17      ; R18 := _T
-206 [-]: GETTABLE  R18 R18 K29  ; R18 := R18["tekAbility"]
+206 [-]: GETTABLE  R18 R18 K30  ; R18 := R18["tekAbility"]
 207 [-]: GETTABLE  R18 R18 R3   ; R18 := R18[R3]
 208 [-]: NEWTABLE  R19 0 0      ; R19 := {}
 209 [-]: SETTABLE  R18 K54 R19  ; R18["enemies"] := R19
 210 [-]: GETGLOBAL R18 K17      ; R18 := _T
-211 [-]: GETTABLE  R18 R18 K29  ; R18 := R18["tekAbility"]
+211 [-]: GETTABLE  R18 R18 K30  ; R18 := R18["tekAbility"]
 212 [-]: GETTABLE  R18 R18 R3   ; R18 := R18[R3]
 213 [-]: GETTABLE  R18 R18 K54  ; R18 := R18["enemies"]
 214 [-]: SELF      R19 R1 K4    ; R20 := R1; R19 := R1["0xDBEF0FB6"]
@@ -613,9 +613,9 @@ code size: 214
 222 [-]: LOADK     R25 K11      ; R25 := 1
 223 [-]: CALL      R21 5 2      ; R21 := R21(R22,R23,R24,R25)
 224 [-]: SETTABLE  R20 K55 R21  ; R20["dot"] := R21
-225 [-]: SELF      R21 R1 K31   ; R22 := R1; R21 := R1["0xAB436EF2"]
+225 [-]: SELF      R21 R1 K32   ; R22 := R1; R21 := R1["0xAB436EF2"]
 226 [-]: GETGLOBAL R23 K60      ; R23 := damageFx
-227 [-]: GETGLOBAL R24 K33      ; R24 := EMPTY_SYMBOL
+227 [-]: GETGLOBAL R24 K34      ; R24 := EMPTY_SYMBOL
 228 [-]: CALL      R21 4 2      ; R21 := R21(R22,R23,R24)
 229 [-]: SETTABLE  R20 K59 R21  ; R20["fx"] := R21
 230 [-]: SETTABLE  R18 R19 R20  ; R18[R19] := R20
@@ -734,15 +734,15 @@ code size: 214
 101 [-]: SELF      R14 R14 K22  ; R15 := R14; R14 := R14["0xF21555A7"]
 102 [-]: GETGLOBAL R16 K23      ; R16 := Game
 103 [-]: GETTABLE  R16 R16 K24  ; R16 := R16["WEAPON_CRIT_DAMAGE"]
-104 [-]: GETGLOBAL R17 K23      ; R17 := Game
-105 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["STACKING_MULTIPLY"]
+104 [-]: GETGLOBAL R17 K25      ; R17 := Engine
+105 [-]: GETTABLE  R17 R17 K26  ; R17 := R17["STACKING_MULTIPLY"]
 106 [-]: MOVE      R18 R13      ; R18 := R13
 107 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
 108 [-]: GETGLOBAL R14 K3       ; R14 := 0x400E7765
 109 [-]: GETGLOBAL R15 K14      ; R15 := _T
-110 [-]: GETTABLE  R15 R15 K26  ; R15 := R15["tekAbility"]
+110 [-]: GETTABLE  R15 R15 K27  ; R15 := R15["tekAbility"]
 111 [-]: GETTABLE  R15 R15 R3   ; R15 := R15[R3]
-112 [-]: GETTABLE  R15 R15 K27  ; R15 := R15["tennoFx"]
+112 [-]: GETTABLE  R15 R15 K28  ; R15 := R15["tennoFx"]
 113 [-]: SELF      R16 R1 K4    ; R17 := R1; R16 := R1["0xDBEF0FB6"]
 114 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 115 [-]: GETTABLE  R15 R15 R16  ; R15 := R15[R16]
@@ -750,41 +750,41 @@ code size: 214
 117 [-]: TEST      R14 1        ; if R14 then PC := 129
 118 [-]: JMP       129          ; PC := 129
 119 [-]: GETGLOBAL R14 K0       ; R14 := gRegion
-120 [-]: SELF      R14 R14 K28  ; R15 := R14; R14 := R14["0x9B0A3887"]
+120 [-]: SELF      R14 R14 K29  ; R15 := R14; R14 := R14["0x9B0A3887"]
 121 [-]: GETGLOBAL R16 K14      ; R16 := _T
-122 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["tekAbility"]
+122 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["tekAbility"]
 123 [-]: GETTABLE  R16 R16 R3   ; R16 := R16[R3]
-124 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["tennoFx"]
+124 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["tennoFx"]
 125 [-]: SELF      R17 R1 K4    ; R18 := R1; R17 := R1["0xDBEF0FB6"]
 126 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 127 [-]: GETTABLE  R16 R16 R17  ; R16 := R16[R17]
 128 [-]: CALL      R14 3 1      ; R14(R15,R16)
-129 [-]: GETGLOBAL R14 K29      ; R14 := Lotus_Game
-130 [-]: GETTABLE  R14 R14 K30  ; R14 := R14["0xFAFD4322"]
+129 [-]: GETGLOBAL R14 K30      ; R14 := Lotus_Game
+130 [-]: GETTABLE  R14 R14 K31  ; R14 := R14["0xFAFD4322"]
 131 [-]: CALL      R14 1 2      ; R14 := R14()
-132 [-]: SETTABLE  R14 K31 R1   ; R14["instigator"] := R1
+132 [-]: SETTABLE  R14 K32 R1   ; R14["instigator"] := R1
 133 [-]: NEWTABLE  R15 1 0      ; R15 := {}
 134 [-]: MOVE      R16 R1       ; R16 := R1
 135 [-]: SETLIST   R15 1 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 1
-136 [-]: SETTABLE  R14 K32 R15  ; R14["affected"] := R15
-137 [-]: GETGLOBAL R15 K29      ; R15 := Lotus_Game
-138 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["BT_PERCENT"]
-139 [-]: SETTABLE  R14 K33 R15  ; R14["buffType"] := R15
+136 [-]: SETTABLE  R14 K33 R15  ; R14["affected"] := R15
+137 [-]: GETGLOBAL R15 K30      ; R15 := Lotus_Game
+138 [-]: GETTABLE  R15 R15 K35  ; R15 := R15["BT_PERCENT"]
+139 [-]: SETTABLE  R14 K34 R15  ; R14["buffType"] := R15
 140 [-]: GETGLOBAL R15 K13      ; R15 := collateralModWRes
-141 [-]: SETTABLE  R14 K35 R15  ; R14["abilityType"] := R15
+141 [-]: SETTABLE  R14 K36 R15  ; R14["abilityType"] := R15
 142 [-]: GETGLOBAL R15 K20      ; R15 := math
-143 [-]: GETTABLE  R15 R15 K37  ; R15 := R15["0xF7005A7B"]
-144 [-]: MUL       R16 R13 K38  ; R16 := R13 * 100
+143 [-]: GETTABLE  R15 R15 K38  ; R15 := R15["0xF7005A7B"]
+144 [-]: MUL       R16 R13 K39  ; R16 := R13 * 100
 145 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-146 [-]: SETTABLE  R14 K36 R15  ; R14["buffData"] := R15
-147 [-]: SELF      R15 R1 K39   ; R16 := R1; R15 := R1["0x584F13D6"]
+146 [-]: SETTABLE  R14 K37 R15  ; R14["buffData"] := R15
+147 [-]: SELF      R15 R1 K40   ; R16 := R1; R15 := R1["0x584F13D6"]
 148 [-]: MOVE      R17 R14      ; R17 := R14
 149 [-]: MOVE      R18 R0       ; R18 := R0
 150 [-]: MOVE      R19 R1       ; R19 := R1
 151 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
 152 [-]: JMP       214          ; PC := 214
 153 [-]: SELF      R15 R1 K5    ; R16 := R1; R15 := R1["0x8B598ED4"]
-154 [-]: GETGLOBAL R17 K40      ; R17 := gLotusNpcAvatarType
+154 [-]: GETGLOBAL R17 K41      ; R17 := gLotusNpcAvatarType
 155 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
 156 [-]: TEST      R15 0        ; if not R15 then PC := 214
 157 [-]: JMP       214          ; PC := 214
@@ -796,16 +796,16 @@ code size: 214
 163 [-]: JMP       214          ; PC := 214
 164 [-]: GETGLOBAL R15 K3       ; R15 := 0x400E7765
 165 [-]: GETGLOBAL R16 K14      ; R16 := _T
-166 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["tekAbility"]
+166 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["tekAbility"]
 167 [-]: GETTABLE  R16 R16 R3   ; R16 := R16[R3]
 168 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 169 [-]: TEST      R15 1        ; if R15 then PC := 214
 170 [-]: JMP       214          ; PC := 214
 171 [-]: GETGLOBAL R15 K3       ; R15 := 0x400E7765
 172 [-]: GETGLOBAL R16 K14      ; R16 := _T
-173 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["tekAbility"]
+173 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["tekAbility"]
 174 [-]: GETTABLE  R16 R16 R3   ; R16 := R16[R3]
-175 [-]: GETTABLE  R16 R16 K41  ; R16 := R16["enemies"]
+175 [-]: GETTABLE  R16 R16 K42  ; R16 := R16["enemies"]
 176 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 177 [-]: TEST      R15 1        ; if R15 then PC := 214
 178 [-]: JMP       214          ; PC := 214
@@ -813,36 +813,36 @@ code size: 214
 180 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 181 [-]: GETGLOBAL R16 K3       ; R16 := 0x400E7765
 182 [-]: GETGLOBAL R17 K14      ; R17 := _T
-183 [-]: GETTABLE  R17 R17 K26  ; R17 := R17["tekAbility"]
+183 [-]: GETTABLE  R17 R17 K27  ; R17 := R17["tekAbility"]
 184 [-]: GETTABLE  R17 R17 R3   ; R17 := R17[R3]
-185 [-]: GETTABLE  R17 R17 K41  ; R17 := R17["enemies"]
+185 [-]: GETTABLE  R17 R17 K42  ; R17 := R17["enemies"]
 186 [-]: GETTABLE  R17 R17 R15  ; R17 := R17[R15]
 187 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 188 [-]: TEST      R16 1        ; if R16 then PC := 209
 189 [-]: JMP       209          ; PC := 209
-190 [-]: SELF      R16 R1 K42   ; R17 := R1; R16 := R1["0xA3F6069B"]
+190 [-]: SELF      R16 R1 K43   ; R17 := R1; R16 := R1["0xA3F6069B"]
 191 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-192 [-]: SELF      R16 R16 K43  ; R17 := R16; R16 := R16["0x2DC5621D"]
+192 [-]: SELF      R16 R16 K44  ; R17 := R16; R16 := R16["0x2DC5621D"]
 193 [-]: GETGLOBAL R18 K14      ; R18 := _T
-194 [-]: GETTABLE  R18 R18 K26  ; R18 := R18["tekAbility"]
+194 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["tekAbility"]
 195 [-]: GETTABLE  R18 R18 R3   ; R18 := R18[R3]
-196 [-]: GETTABLE  R18 R18 K41  ; R18 := R18["enemies"]
+196 [-]: GETTABLE  R18 R18 K42  ; R18 := R18["enemies"]
 197 [-]: GETTABLE  R18 R18 R15  ; R18 := R18[R15]
-198 [-]: GETTABLE  R18 R18 K44  ; R18 := R18["dot"]
+198 [-]: GETTABLE  R18 R18 K45  ; R18 := R18["dot"]
 199 [-]: CALL      R16 3 1      ; R16(R17,R18)
 200 [-]: GETGLOBAL R16 K0       ; R16 := gRegion
-201 [-]: SELF      R16 R16 K28  ; R17 := R16; R16 := R16["0x9B0A3887"]
+201 [-]: SELF      R16 R16 K29  ; R17 := R16; R16 := R16["0x9B0A3887"]
 202 [-]: GETGLOBAL R18 K14      ; R18 := _T
-203 [-]: GETTABLE  R18 R18 K26  ; R18 := R18["tekAbility"]
+203 [-]: GETTABLE  R18 R18 K27  ; R18 := R18["tekAbility"]
 204 [-]: GETTABLE  R18 R18 R3   ; R18 := R18[R3]
-205 [-]: GETTABLE  R18 R18 K41  ; R18 := R18["enemies"]
+205 [-]: GETTABLE  R18 R18 K42  ; R18 := R18["enemies"]
 206 [-]: GETTABLE  R18 R18 R15  ; R18 := R18[R15]
-207 [-]: GETTABLE  R18 R18 K45  ; R18 := R18["fx"]
+207 [-]: GETTABLE  R18 R18 K46  ; R18 := R18["fx"]
 208 [-]: CALL      R16 3 1      ; R16(R17,R18)
 209 [-]: GETGLOBAL R16 K14      ; R16 := _T
-210 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["tekAbility"]
+210 [-]: GETTABLE  R16 R16 K27  ; R16 := R16["tekAbility"]
 211 [-]: GETTABLE  R16 R16 R3   ; R16 := R16[R3]
-212 [-]: GETTABLE  R16 R16 K41  ; R16 := R16["enemies"]
+212 [-]: GETTABLE  R16 R16 K42  ; R16 := R16["enemies"]
 213 [-]: SETTABLE  R16 R15 K16  ; R16[R15] := nil
 214 [-]: RETURN    R0 1         ; return 
 

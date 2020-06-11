@@ -553,7 +553,7 @@ code size: 173
 246 [-]: SELF      R22 R22 K64  ; R23 := R22; R22 := R22["0x3B1B11B9"]
 247 [-]: GETGLOBAL R24 K65      ; R24 := Game
 248 [-]: GETTABLE  R24 R24 K66  ; R24 := R24["AVATAR_HEAL_RATE"]
-249 [-]: GETGLOBAL R25 K65      ; R25 := Game
+249 [-]: GETGLOBAL R25 K28      ; R25 := Engine
 250 [-]: GETTABLE  R25 R25 K67  ; R25 := R25["ADD"]
 251 [-]: GETUPVAL  R26 U1       ; R26 := U1
 252 [-]: CALL      R22 5 1      ; R22(R23,R24,R25,R26)
@@ -609,7 +609,7 @@ code size: 173
 302 [-]: SELF      R27 R27 K75  ; R28 := R27; R27 := R27["0xF21555A7"]
 303 [-]: GETGLOBAL R29 K65      ; R29 := Game
 304 [-]: GETTABLE  R29 R29 K66  ; R29 := R29["AVATAR_HEAL_RATE"]
-305 [-]: GETGLOBAL R30 K65      ; R30 := Game
+305 [-]: GETGLOBAL R30 K28      ; R30 := Engine
 306 [-]: GETTABLE  R30 R30 K67  ; R30 := R30["ADD"]
 307 [-]: GETUPVAL  R31 U1       ; R31 := U1
 308 [-]: CALL      R27 5 1      ; R27(R28,R29,R30,R31)
@@ -737,24 +737,24 @@ code size: 173
  61 [-]: SELF      R14 R14 K24  ; R15 := R14; R14 := R14["0xF21555A7"]
  62 [-]: GETGLOBAL R16 K25      ; R16 := Game
  63 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["AVATAR_HEAL_RATE"]
- 64 [-]: GETGLOBAL R17 K25      ; R17 := Game
- 65 [-]: GETTABLE  R17 R17 K27  ; R17 := R17["ADD"]
+ 64 [-]: GETGLOBAL R17 K27      ; R17 := Engine
+ 65 [-]: GETTABLE  R17 R17 K28  ; R17 := R17["ADD"]
  66 [-]: GETUPVAL  R18 U1       ; R18 := U1
  67 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
- 68 [-]: SELF      R14 R1 K28   ; R15 := R1; R14 := R1["0x5A115A02"]
+ 68 [-]: SELF      R14 R1 K29   ; R15 := R1; R14 := R1["0x5A115A02"]
  69 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  70 [-]: TEST      R14 0        ; if not R14 then PC := 80
  71 [-]: JMP       80           ; PC := 80
- 72 [-]: SELF      R14 R13 K28  ; R15 := R13; R14 := R13["0x5A115A02"]
+ 72 [-]: SELF      R14 R13 K29  ; R15 := R13; R14 := R13["0x5A115A02"]
  73 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  74 [-]: TEST      R14 1        ; if R14 then PC := 80
  75 [-]: JMP       80           ; PC := 80
- 76 [-]: SELF      R14 R1 K29   ; R15 := R1; R14 := R1["0xD53BF424"]
+ 76 [-]: SELF      R14 R1 K30   ; R15 := R1; R14 := R1["0xD53BF424"]
  77 [-]: MOVE      R16 R13      ; R16 := R13
  78 [-]: GETUPVAL  R17 U2       ; R17 := U2
  79 [-]: CALL      R14 4 1      ; R14(R15,R16,R17)
  80 [-]: SELF      R14 R13 K0   ; R15 := R13; R14 := R13["0x9F1DC568"]
- 81 [-]: GETGLOBAL R16 K30      ; R16 := healingEffect
+ 81 [-]: GETGLOBAL R16 K31      ; R16 := healingEffect
  82 [-]: CALL      R14 3 2      ; R14 := R14(R15,R16)
  83 [-]: GETGLOBAL R15 K2       ; R15 := 0x400E7765
  84 [-]: MOVE      R16 R14      ; R16 := R14
@@ -763,18 +763,18 @@ code size: 173
  87 [-]: JMP       90           ; PC := 90
  88 [-]: SELF      R15 R14 K3   ; R16 := R14; R15 := R14["0xD4C2743F"]
  89 [-]: CALL      R15 2 1      ; R15(R16)
- 90 [-]: GETGLOBAL R15 K31      ; R15 := table
- 91 [-]: GETTABLE  R15 R15 K32  ; R15 := R15["0xE6450C9D"]
+ 90 [-]: GETGLOBAL R15 K32      ; R15 := table
+ 91 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["0xE6450C9D"]
  92 [-]: MOVE      R16 R7       ; R16 := R7
  93 [-]: MOVE      R17 R13      ; R17 := R13
  94 [-]: CALL      R15 3 1      ; R15(R16,R17)
  95 [-]: TFORLOOP  R9 2         ; R12,R13 :=  R9(R10,R11); if R12 ~= nil then begin PC = 49; R11 := R12 end
  96 [-]: JMP       49           ; PC := 49
  97 [-]: LEN       R15 R7       ; R15 := # R7
- 98 [-]: LT        0 K33 R15    ; if 0 >= R15 then PC := 106
+ 98 [-]: LT        0 K34 R15    ; if 0 >= R15 then PC := 106
  99 [-]: JMP       106          ; PC := 106
-100 [-]: SETTABLE  R6 K34 R7    ; R6["affected"] := R7
-101 [-]: SELF      R15 R1 K35   ; R16 := R1; R15 := R1["0x584F13D6"]
+100 [-]: SETTABLE  R6 K35 R7    ; R6["affected"] := R7
+101 [-]: SELF      R15 R1 K36   ; R16 := R1; R15 := R1["0x584F13D6"]
 102 [-]: MOVE      R17 R6       ; R17 := R6
 103 [-]: MOVE      R18 R0       ; R18 := R0
 104 [-]: MOVE      R19 R0       ; R19 := R0
@@ -782,7 +782,7 @@ code size: 173
 106 [-]: GETGLOBAL R15 K9       ; R15 := _T
 107 [-]: GETTABLE  R15 R15 K10  ; R15 := R15["khorvatAura"]
 108 [-]: SETTABLE  R15 R8 K6    ; R15[R8] := nil
-109 [-]: GETGLOBAL R15 K36      ; R15 := 0xAA09E79D
+109 [-]: GETGLOBAL R15 K37      ; R15 := 0xAA09E79D
 110 [-]: GETGLOBAL R16 K9       ; R16 := _T
 111 [-]: GETTABLE  R16 R16 K10  ; R16 := R16["khorvatAura"]
 112 [-]: CALL      R15 2 2      ; R15 := R15(R16)
@@ -791,10 +791,10 @@ code size: 173
 115 [-]: GETGLOBAL R15 K9       ; R15 := _T
 116 [-]: SETTABLE  R15 K10 K6   ; R15["khorvatAura"] := nil
 117 [-]: GETGLOBAL R15 K9       ; R15 := _T
-118 [-]: GETTABLE  R15 R15 K37  ; R15 := R15["khoraKavat"]
+118 [-]: GETTABLE  R15 R15 K38  ; R15 := R15["khoraKavat"]
 119 [-]: EQ        1 R15 K6     ; if R15 == nil then PC := 159
 120 [-]: JMP       159          ; PC := 159
-121 [-]: SELF      R15 R1 K38   ; R16 := R1; R15 := R1["0xC000CE2E"]
+121 [-]: SELF      R15 R1 K39   ; R16 := R1; R15 := R1["0xC000CE2E"]
 122 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 123 [-]: GETGLOBAL R16 K2       ; R16 := 0x400E7765
 124 [-]: MOVE      R17 R15      ; R17 := R15
@@ -804,32 +804,32 @@ code size: 173
 128 [-]: SELF      R16 R15 K19  ; R17 := R15; R16 := R15["0xDBEF0FB6"]
 129 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 130 [-]: GETGLOBAL R17 K9       ; R17 := _T
-131 [-]: GETTABLE  R17 R17 K37  ; R17 := R17["khoraKavat"]
+131 [-]: GETTABLE  R17 R17 K38  ; R17 := R17["khoraKavat"]
 132 [-]: GETTABLE  R17 R17 R16  ; R17 := R17[R16]
 133 [-]: EQ        1 R17 K6     ; if R17 == nil then PC := 159
 134 [-]: JMP       159          ; PC := 159
 135 [-]: GETGLOBAL R17 K9       ; R17 := _T
-136 [-]: GETTABLE  R17 R17 K37  ; R17 := R17["khoraKavat"]
+136 [-]: GETTABLE  R17 R17 K38  ; R17 := R17["khoraKavat"]
 137 [-]: GETTABLE  R17 R17 R16  ; R17 := R17[R16]
-138 [-]: GETTABLE  R17 R17 K39  ; R17 := R17["target"]
+138 [-]: GETTABLE  R17 R17 K40  ; R17 := R17["target"]
 139 [-]: EQ        0 R17 R2     ; if R17 ~= R2 then PC := 159
 140 [-]: JMP       159          ; PC := 159
 141 [-]: GETGLOBAL R17 K9       ; R17 := _T
-142 [-]: GETTABLE  R17 R17 K37  ; R17 := R17["khoraKavat"]
+142 [-]: GETTABLE  R17 R17 K38  ; R17 := R17["khoraKavat"]
 143 [-]: GETTABLE  R17 R17 R16  ; R17 := R17[R16]
-144 [-]: SETTABLE  R17 K39 K6   ; R17["target"] := nil
+144 [-]: SETTABLE  R17 K40 K6   ; R17["target"] := nil
 145 [-]: GETGLOBAL R17 K2       ; R17 := 0x400E7765
 146 [-]: GETGLOBAL R18 K9       ; R18 := _T
-147 [-]: GETTABLE  R18 R18 K37  ; R18 := R18["khoraKavat"]
+147 [-]: GETTABLE  R18 R18 K38  ; R18 := R18["khoraKavat"]
 148 [-]: GETTABLE  R18 R18 R16  ; R18 := R18[R16]
-149 [-]: GETTABLE  R18 R18 K40  ; R18 := R18["effect"]
+149 [-]: GETTABLE  R18 R18 K41  ; R18 := R18["effect"]
 150 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 151 [-]: TEST      R17 1        ; if R17 then PC := 159
 152 [-]: JMP       159          ; PC := 159
 153 [-]: GETGLOBAL R17 K9       ; R17 := _T
-154 [-]: GETTABLE  R17 R17 K37  ; R17 := R17["khoraKavat"]
+154 [-]: GETTABLE  R17 R17 K38  ; R17 := R17["khoraKavat"]
 155 [-]: GETTABLE  R17 R17 R16  ; R17 := R17[R16]
-156 [-]: GETTABLE  R17 R17 K40  ; R17 := R17["effect"]
+156 [-]: GETTABLE  R17 R17 K41  ; R17 := R17["effect"]
 157 [-]: SELF      R17 R17 K3   ; R18 := R17; R17 := R17["0xD4C2743F"]
 158 [-]: CALL      R17 2 1      ; R17(R18)
 159 [-]: GETGLOBAL R17 K21      ; R17 := gRegion
@@ -837,14 +837,14 @@ code size: 173
 161 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 162 [-]: TEST      R17 0        ; if not R17 then PC := 173
 163 [-]: JMP       173          ; PC := 173
-164 [-]: SELF      R17 R1 K41   ; R18 := R1; R17 := R1["0xABD9DD93"]
+164 [-]: SELF      R17 R1 K42   ; R18 := R1; R17 := R1["0xABD9DD93"]
 165 [-]: CALL      R17 2 2      ; R17 := R17(R18)
 166 [-]: GETGLOBAL R18 K2       ; R18 := 0x400E7765
 167 [-]: MOVE      R19 R17      ; R19 := R17
 168 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 169 [-]: TEST      R18 1        ; if R18 then PC := 173
 170 [-]: JMP       173          ; PC := 173
-171 [-]: SELF      R18 R17 K42  ; R19 := R17; R18 := R17["0x750771BC"]
+171 [-]: SELF      R18 R17 K43  ; R19 := R17; R18 := R17["0x750771BC"]
 172 [-]: CALL      R18 2 1      ; R18(R19)
 173 [-]: RETURN    R0 1         ; return 
 

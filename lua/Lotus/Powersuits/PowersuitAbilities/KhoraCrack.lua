@@ -446,7 +446,7 @@ code size: 178
  25 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xE6450C9D"]
  26 [-]: MOVE      R3 R1        ; R3 := R1
  27 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 28 [-]: SETTABLE  R4 K9 K10    ; R4["Label"] := "/Game/WEAPON_RANGE"
+ 28 [-]: SETTABLE  R4 K9 K10    ; R4["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  29 [-]: GETUPVAL  R5 U1        ; R5 := U1
  30 [-]: SETTABLE  R4 K11 R5    ; R4["Value"] := R5
  31 [-]: SETTABLE  R4 K12 K13   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -1430,12 +1430,12 @@ code size: 178
 142 [-]: SELF      R22 R3 K36   ; R23 := R3; R22 := R3["0xF21555A7"]
 143 [-]: GETGLOBAL R24 K37      ; R24 := Game
 144 [-]: GETTABLE  R24 R24 K38  ; R24 := R24["AVATAR_ABILITY_STRENGTH"]
-145 [-]: GETGLOBAL R25 K37      ; R25 := Game
-146 [-]: GETTABLE  R25 R25 K39  ; R25 := R25["STACKING_MULTIPLY"]
+145 [-]: GETGLOBAL R25 K39      ; R25 := Engine
+146 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["STACKING_MULTIPLY"]
 147 [-]: MOVE      R26 R17      ; R26 := R17
 148 [-]: MOVE      R27 R20      ; R27 := R20
 149 [-]: MOVE      R28 R0       ; R28 := R0
-150 [-]: GETGLOBAL R29 K40      ; R29 := Engine
+150 [-]: GETGLOBAL R29 K39      ; R29 := Engine
 151 [-]: GETTABLE  R29 R29 K41  ; R29 := R29["DT_ANY"]
 152 [-]: MOVE      R30 R21      ; R30 := R21
 153 [-]: CALL      R22 9 1      ; R22(R23,R24,R25,R26,R27,R28,R29,R30)
@@ -1452,15 +1452,15 @@ code size: 178
 164 [-]: SELF      R22 R3 K43   ; R23 := R3; R22 := R3["0x3B1B11B9"]
 165 [-]: GETGLOBAL R24 K37      ; R24 := Game
 166 [-]: GETTABLE  R24 R24 K38  ; R24 := R24["AVATAR_ABILITY_STRENGTH"]
-167 [-]: GETGLOBAL R25 K37      ; R25 := Game
-168 [-]: GETTABLE  R25 R25 K39  ; R25 := R25["STACKING_MULTIPLY"]
+167 [-]: GETGLOBAL R25 K39      ; R25 := Engine
+168 [-]: GETTABLE  R25 R25 K40  ; R25 := R25["STACKING_MULTIPLY"]
 169 [-]: GETGLOBAL R26 K17      ; R26 := _T
 170 [-]: GETTABLE  R26 R26 K29  ; R26 := R26["khoraCrackAugment"]
 171 [-]: GETTABLE  R26 R26 R18  ; R26 := R26[R18]
 172 [-]: GETTABLE  R26 R26 K32  ; R26 := R26["buffPct"]
 173 [-]: MOVE      R27 R20      ; R27 := R20
 174 [-]: MOVE      R28 R0       ; R28 := R0
-175 [-]: GETGLOBAL R29 K40      ; R29 := Engine
+175 [-]: GETGLOBAL R29 K39      ; R29 := Engine
 176 [-]: GETTABLE  R29 R29 K41  ; R29 := R29["DT_ANY"]
 177 [-]: MOVE      R30 R21      ; R30 := R21
 178 [-]: CALL      R22 9 1      ; R22(R23,R24,R25,R26,R27,R28,R29,R30)
@@ -1687,15 +1687,15 @@ code size: 178
  94 [-]: SELF      R8 R2 K28    ; R9 := R2; R8 := R2["0xF21555A7"]
  95 [-]: GETGLOBAL R10 K29      ; R10 := Game
  96 [-]: GETTABLE  R10 R10 K30  ; R10 := R10["AVATAR_ABILITY_STRENGTH"]
- 97 [-]: GETGLOBAL R11 K29      ; R11 := Game
- 98 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["STACKING_MULTIPLY"]
+ 97 [-]: GETGLOBAL R11 K31      ; R11 := Engine
+ 98 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["STACKING_MULTIPLY"]
  99 [-]: GETGLOBAL R12 K20      ; R12 := _T
 100 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["khoraCrackAugment"]
 101 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
 102 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["buffPct"]
 103 [-]: MOVE      R13 R3       ; R13 := R3
 104 [-]: MOVE      R14 R3       ; R14 := R3
-105 [-]: GETGLOBAL R15 K32      ; R15 := Engine
+105 [-]: GETGLOBAL R15 K31      ; R15 := Engine
 106 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["DT_ANY"]
 107 [-]: MOVE      R16 R4       ; R16 := R4
 108 [-]: CALL      R8 9 1       ; R8(R9,R10,R11,R12,R13,R14,R15,R16)
@@ -1718,15 +1718,15 @@ code size: 178
 125 [-]: SELF      R8 R2 K34    ; R9 := R2; R8 := R2["0x3B1B11B9"]
 126 [-]: GETGLOBAL R10 K29      ; R10 := Game
 127 [-]: GETTABLE  R10 R10 K30  ; R10 := R10["AVATAR_ABILITY_STRENGTH"]
-128 [-]: GETGLOBAL R11 K29      ; R11 := Game
-129 [-]: GETTABLE  R11 R11 K31  ; R11 := R11["STACKING_MULTIPLY"]
+128 [-]: GETGLOBAL R11 K31      ; R11 := Engine
+129 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["STACKING_MULTIPLY"]
 130 [-]: GETGLOBAL R12 K20      ; R12 := _T
 131 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["khoraCrackAugment"]
 132 [-]: GETTABLE  R12 R12 R1   ; R12 := R12[R1]
 133 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["buffPct"]
 134 [-]: MOVE      R13 R3       ; R13 := R3
 135 [-]: MOVE      R14 R3       ; R14 := R3
-136 [-]: GETGLOBAL R15 K32      ; R15 := Engine
+136 [-]: GETGLOBAL R15 K31      ; R15 := Engine
 137 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["DT_ANY"]
 138 [-]: MOVE      R16 R4       ; R16 := R4
 139 [-]: CALL      R8 9 1       ; R8(R9,R10,R11,R12,R13,R14,R15,R16)

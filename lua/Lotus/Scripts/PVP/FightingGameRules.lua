@@ -999,76 +999,76 @@ code size: 136
  29 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  30 [-]: GETGLOBAL R5 K10       ; R5 := Game
  31 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
- 32 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 33 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["SET"]
- 34 [-]: LOADK     R7 K13       ; R7 := 1
+ 32 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 33 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["SET"]
+ 34 [-]: LOADK     R7 K14       ; R7 := 1
  35 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  36 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  37 [-]: GETGLOBAL R5 K10       ; R5 := Game
- 38 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["AVATAR_THORNS_PERCENT"]
- 39 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 40 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["SET"]
- 41 [-]: LOADK     R7 K15       ; R7 := 0
+ 38 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["AVATAR_THORNS_PERCENT"]
+ 39 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 40 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["SET"]
+ 41 [-]: LOADK     R7 K16       ; R7 := 0
  42 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  43 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  44 [-]: GETGLOBAL R5 K10       ; R5 := Game
- 45 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["AVATAR_HEAL_RATE"]
- 46 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 47 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["SET"]
- 48 [-]: LOADK     R7 K15       ; R7 := 0
+ 45 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["AVATAR_HEAL_RATE"]
+ 46 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 47 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["SET"]
+ 48 [-]: LOADK     R7 K16       ; R7 := 0
  49 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  50 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  51 [-]: GETGLOBAL R5 K10       ; R5 := Game
- 52 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["AVATAR_HEALTH_MAX"]
- 53 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 54 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["SET"]
- 55 [-]: GETGLOBAL R7 K18       ; R7 := playerHealth
+ 52 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["AVATAR_HEALTH_MAX"]
+ 53 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 54 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["SET"]
+ 55 [-]: GETGLOBAL R7 K19       ; R7 := playerHealth
  56 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  57 [-]: SELF      R3 R2 K9     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  58 [-]: GETGLOBAL R5 K10       ; R5 := Game
- 59 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["AVATAR_SHIELD_MAX"]
- 60 [-]: GETGLOBAL R6 K10       ; R6 := Game
- 61 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["SET"]
- 62 [-]: LOADK     R7 K15       ; R7 := 0
+ 59 [-]: GETTABLE  R5 R5 K20    ; R5 := R5["AVATAR_SHIELD_MAX"]
+ 60 [-]: GETGLOBAL R6 K12       ; R6 := Engine
+ 61 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["SET"]
+ 62 [-]: LOADK     R7 K16       ; R7 := 0
  63 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 64 [-]: SELF      R3 R0 K20    ; R4 := R0; R3 := R0["0x76C229EF"]
- 65 [-]: GETGLOBAL R5 K18       ; R5 := playerHealth
+ 64 [-]: SELF      R3 R0 K21    ; R4 := R0; R3 := R0["0x76C229EF"]
+ 65 [-]: GETGLOBAL R5 K19       ; R5 := playerHealth
  66 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 67 [-]: SELF      R3 R0 K21    ; R4 := R0; R3 := R0["0xA3F6069B"]
+ 67 [-]: SELF      R3 R0 K22    ; R4 := R0; R3 := R0["0xA3F6069B"]
  68 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 69 [-]: SELF      R3 R3 K22    ; R4 := R3; R3 := R3["0x8938B1C9"]
- 70 [-]: LOADK     R5 K15       ; R5 := 0
+ 69 [-]: SELF      R3 R3 K23    ; R4 := R3; R3 := R3["0x8938B1C9"]
+ 70 [-]: LOADK     R5 K16       ; R5 := 0
  71 [-]: CALL      R3 3 1       ; R3(R4,R5)
  72 [-]: GETUPVAL  R3 U0        ; R3 := U0
  73 [-]: MOVE      R4 R0        ; R4 := R0
  74 [-]: CALL      R3 2 1       ; R3(R4)
- 75 [-]: SELF      R3 R2 K23    ; R4 := R2; R3 := R2["0x6978AC59"]
+ 75 [-]: SELF      R3 R2 K24    ; R4 := R2; R3 := R2["0x6978AC59"]
  76 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  77 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
  78 [-]: MOVE      R5 R3        ; R5 := R3
  79 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  80 [-]: TEST      R4 1         ; if R4 then PC := 86
  81 [-]: JMP       86           ; PC := 86
- 82 [-]: SELF      R4 R3 K24    ; R5 := R3; R4 := R3["0x35F68839"]
+ 82 [-]: SELF      R4 R3 K25    ; R5 := R3; R4 := R3["0x35F68839"]
  83 [-]: MOVE      R6 R0        ; R6 := R0
  84 [-]: CALL      R4 3 1       ; R4(R5,R6)
  85 [-]: JMP       94           ; PC := 94
  86 [-]: GETGLOBAL R4 K2        ; R4 := 0x93B1256B
- 87 [-]: LOADK     R5 K25       ; R5 := "NULL POWERSUIT TRYING TO SETUP AVATAR "
+ 87 [-]: LOADK     R5 K26       ; R5 := "NULL POWERSUIT TRYING TO SETUP AVATAR "
  88 [-]: GETGLOBAL R6 K4        ; R6 := 0x9FAED6BC
- 89 [-]: SELF      R7 R0 K26    ; R8 := R0; R7 := R0["0x1B252E3C"]
+ 89 [-]: SELF      R7 R0 K27    ; R8 := R0; R7 := R0["0x1B252E3C"]
  90 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  91 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
  92 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
  93 [-]: CALL      R4 2 1       ; R4(R5)
  94 [-]: GETGLOBAL R4 K0        ; R4 := 0x400E7765
- 95 [-]: GETGLOBAL R5 K27       ; R5 := idleOverride
+ 95 [-]: GETGLOBAL R5 K28       ; R5 := idleOverride
  96 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  97 [-]: TEST      R4 1         ; if R4 then PC := 105
  98 [-]: JMP       105          ; PC := 105
- 99 [-]: SELF      R4 R0 K28    ; R5 := R0; R4 := R0["0xF67CC80F"]
-100 [-]: GETGLOBAL R6 K27       ; R6 := idleOverride
-101 [-]: GETGLOBAL R7 K29       ; R7 := Engine
+ 99 [-]: SELF      R4 R0 K29    ; R5 := R0; R4 := R0["0xF67CC80F"]
+100 [-]: GETGLOBAL R6 K28       ; R6 := idleOverride
+101 [-]: GETGLOBAL R7 K12       ; R7 := Engine
 102 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["PRN_IDLE_OVERRIDE"]
 103 [-]: MOVE      R8 R1        ; R8 := R1
 104 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
@@ -1138,112 +1138,112 @@ code size: 136
  13 [-]: SELF      R4 R1 K5     ; R5 := R1; R4 := R1["0x3B1B11B9"]
  14 [-]: GETGLOBAL R6 K6        ; R6 := Game
  15 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["AVATAR_POWER_MAX"]
- 16 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 17 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["SET"]
+ 16 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+ 17 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["SET"]
  18 [-]: MOVE      R8 R3        ; R8 := R3
  19 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  20 [-]: SELF      R4 R1 K5     ; R5 := R1; R4 := R1["0x3B1B11B9"]
  21 [-]: GETGLOBAL R6 K6        ; R6 := Game
- 22 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["AVATAR_POWER_RATE"]
- 23 [-]: GETGLOBAL R7 K6        ; R7 := Game
- 24 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["SET"]
- 25 [-]: LOADK     R8 K10       ; R8 := 0
+ 22 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["AVATAR_POWER_RATE"]
+ 23 [-]: GETGLOBAL R7 K8        ; R7 := Engine
+ 24 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["SET"]
+ 25 [-]: LOADK     R8 K11       ; R8 := 0
  26 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  27 [-]: SELF      R4 R1 K1     ; R5 := R1; R4 := R1["0x6978AC59"]
  28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: SELF      R4 R4 K11    ; R5 := R4; R4 := R4["0xE90D067F"]
+ 29 [-]: SELF      R4 R4 K12    ; R5 := R4; R4 := R4["0xE90D067F"]
  30 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 31 [-]: SUB       R4 R4 K12    ; R4 := R4 - 1
- 32 [-]: GETGLOBAL R5 K13       ; R5 := perSuitSpeedMultiplier
+ 31 [-]: SUB       R4 R4 K13    ; R4 := R4 - 1
+ 32 [-]: GETGLOBAL R5 K14       ; R5 := perSuitSpeedMultiplier
  33 [-]: MUL       R5 R4 R5     ; R5 := R4 * R5
- 34 [-]: ADD       R5 K12 R5    ; R5 := 1 + R5
+ 34 [-]: ADD       R5 K13 R5    ; R5 := 1 + R5
  35 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1["0x3B1B11B9"]
  36 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 37 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["AVATAR_MOVEMENT_SPEED"]
- 38 [-]: GETGLOBAL R9 K6        ; R9 := Game
- 39 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["SET"]
+ 37 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["AVATAR_MOVEMENT_SPEED"]
+ 38 [-]: GETGLOBAL R9 K8        ; R9 := Engine
+ 39 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["SET"]
  40 [-]: MOVE      R10 R5       ; R10 := R5
  41 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  42 [-]: SELF      R6 R1 K5     ; R7 := R1; R6 := R1["0x3B1B11B9"]
  43 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 44 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["AVATAR_JOG_SPEED"]
- 45 [-]: GETGLOBAL R9 K6        ; R9 := Game
- 46 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["SET"]
+ 44 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["AVATAR_JOG_SPEED"]
+ 45 [-]: GETGLOBAL R9 K8        ; R9 := Engine
+ 46 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["SET"]
  47 [-]: MOVE      R10 R5       ; R10 := R5
  48 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 49 [-]: GETGLOBAL R6 K16       ; R6 := perSuitFireRateMultilpier
+ 49 [-]: GETGLOBAL R6 K17       ; R6 := perSuitFireRateMultilpier
  50 [-]: MUL       R6 R5 R6     ; R6 := R5 * R6
  51 [-]: SELF      R7 R1 K5     ; R8 := R1; R7 := R1["0x3B1B11B9"]
  52 [-]: GETGLOBAL R9 K6        ; R9 := Game
- 53 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["WEAPON_FIRE_RATE"]
- 54 [-]: GETGLOBAL R10 K6       ; R10 := Game
- 55 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["SET"]
+ 53 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["WEAPON_FIRE_RATE"]
+ 54 [-]: GETGLOBAL R10 K8       ; R10 := Engine
+ 55 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["SET"]
  56 [-]: MOVE      R11 R6       ; R11 := R6
  57 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  58 [-]: UNM       R7 R4        ; R7 := - R4
- 59 [-]: ADD       R8 K12 R7    ; R8 := 1 + R7
- 60 [-]: GETGLOBAL R9 K18       ; R9 := perSuitDamageMultiplier
+ 59 [-]: ADD       R8 K13 R7    ; R8 := 1 + R7
+ 60 [-]: GETGLOBAL R9 K19       ; R9 := perSuitDamageMultiplier
  61 [-]: MUL       R8 R8 R9     ; R8 := R8 * R9
- 62 [-]: SELF      R9 R1 K19    ; R10 := R1; R9 := R1["0xF21555A7"]
+ 62 [-]: SELF      R9 R1 K20    ; R10 := R1; R9 := R1["0xF21555A7"]
  63 [-]: GETGLOBAL R11 K6       ; R11 := Game
- 64 [-]: GETTABLE  R11 R11 K20  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
- 65 [-]: GETGLOBAL R12 K6       ; R12 := Game
- 66 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["MULTIPLY"]
+ 64 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
+ 65 [-]: GETGLOBAL R12 K8       ; R12 := Engine
+ 66 [-]: GETTABLE  R12 R12 K22  ; R12 := R12["MULTIPLY"]
  67 [-]: MOVE      R13 R8       ; R13 := R8
  68 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  69 [-]: SELF      R9 R1 K5     ; R10 := R1; R9 := R1["0x3B1B11B9"]
  70 [-]: GETGLOBAL R11 K6       ; R11 := Game
- 71 [-]: GETTABLE  R11 R11 K20  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
- 72 [-]: GETGLOBAL R12 K6       ; R12 := Game
- 73 [-]: GETTABLE  R12 R12 K21  ; R12 := R12["MULTIPLY"]
+ 71 [-]: GETTABLE  R11 R11 K21  ; R11 := R11["WEAPON_MELEE_DAMAGE"]
+ 72 [-]: GETGLOBAL R12 K8       ; R12 := Engine
+ 73 [-]: GETTABLE  R12 R12 K22  ; R12 := R12["MULTIPLY"]
  74 [-]: MOVE      R13 R8       ; R13 := R8
  75 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 76 [-]: SELF      R9 R2 K22    ; R10 := R2; R9 := R2["0x38276E0B"]
+ 76 [-]: SELF      R9 R2 K23    ; R10 := R2; R9 := R2["0x38276E0B"]
  77 [-]: MOVE      R11 R3       ; R11 := R3
  78 [-]: CALL      R9 3 1       ; R9(R10,R11)
  79 [-]: SELF      R9 R0 K0     ; R10 := R0; R9 := R0["0x8DB5D01F"]
  80 [-]: CALL      R9 2 2       ; R9 := R9(R10)
  81 [-]: SELF      R9 R9 K1     ; R10 := R9; R9 := R9["0x6978AC59"]
  82 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 83 [-]: SELF      R9 R9 K23    ; R10 := R9; R9 := R9["0x35F68839"]
+ 83 [-]: SELF      R9 R9 K24    ; R10 := R9; R9 := R9["0x35F68839"]
  84 [-]: MOVE      R11 R0       ; R11 := R0
  85 [-]: CALL      R9 3 1       ; R9(R10,R11)
  86 [-]: JMP       96           ; PC := 96
- 87 [-]: GETGLOBAL R9 K24       ; R9 := 0x93B1256B
- 88 [-]: LOADK     R10 K25      ; R10 := "NULL SUIT FOR AVATAR "
- 89 [-]: GETGLOBAL R11 K26      ; R11 := 0x9FAED6BC
- 90 [-]: SELF      R12 R0 K27   ; R13 := R0; R12 := R0["0x1B252E3C"]
+ 87 [-]: GETGLOBAL R9 K25       ; R9 := 0x93B1256B
+ 88 [-]: LOADK     R10 K26      ; R10 := "NULL SUIT FOR AVATAR "
+ 89 [-]: GETGLOBAL R11 K27      ; R11 := 0x9FAED6BC
+ 90 [-]: SELF      R12 R0 K28   ; R13 := R0; R12 := R0["0x1B252E3C"]
  91 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  92 [-]: CALL      R11 0 2      ; R11 := R11(R12,...)
- 93 [-]: LOADK     R12 K28      ; R12 := "!!!!"
+ 93 [-]: LOADK     R12 K29      ; R12 := "!!!!"
  94 [-]: CONCAT    R10 R10 R12  ; R10 := R10 .. R11 .. R12
  95 [-]: CALL      R9 2 1       ; R9(R10)
  96 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 97 [-]: LT        0 K12 R9     ; if 1 >= R9 then PC := 107
+ 97 [-]: LT        0 K13 R9     ; if 1 >= R9 then PC := 107
  98 [-]: JMP       107          ; PC := 107
- 99 [-]: GETGLOBAL R9 K29       ; R9 := gRegion
-100 [-]: SELF      R9 R9 K30    ; R10 := R9; R9 := R9["0xA559F558"]
+ 99 [-]: GETGLOBAL R9 K30       ; R9 := gRegion
+100 [-]: SELF      R9 R9 K31    ; R10 := R9; R9 := R9["0xA559F558"]
 101 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 102 [-]: TEST      R9 0         ; if not R9 then PC := 107
 103 [-]: JMP       107          ; PC := 107
 104 [-]: GETUPVAL  R9 U1        ; R9 := U1
 105 [-]: MOVE      R10 R0       ; R10 := R0
 106 [-]: CALL      R9 2 1       ; R9(R10)
-107 [-]: SELF      R9 R0 K31    ; R10 := R0; R9 := R0["0x76C229EF"]
-108 [-]: GETGLOBAL R11 K32      ; R11 := playerHealth
+107 [-]: SELF      R9 R0 K32    ; R10 := R0; R9 := R0["0x76C229EF"]
+108 [-]: GETGLOBAL R11 K33      ; R11 := playerHealth
 109 [-]: CALL      R9 3 1       ; R9(R10,R11)
 110 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
-111 [-]: GETGLOBAL R10 K33      ; R10 := idleOverride
+111 [-]: GETGLOBAL R10 K34      ; R10 := idleOverride
 112 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 113 [-]: TEST      R9 1         ; if R9 then PC := 124
 114 [-]: JMP       124          ; PC := 124
-115 [-]: SELF      R9 R0 K34    ; R10 := R0; R9 := R0["0xF67CC80F"]
-116 [-]: GETGLOBAL R11 K33      ; R11 := idleOverride
-117 [-]: GETGLOBAL R12 K35      ; R12 := Engine
+115 [-]: SELF      R9 R0 K35    ; R10 := R0; R9 := R0["0xF67CC80F"]
+116 [-]: GETGLOBAL R11 K34      ; R11 := idleOverride
+117 [-]: GETGLOBAL R12 K8       ; R12 := Engine
 118 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["PRN_IDLE_OVERRIDE"]
 119 [-]: MOVE      R13 R1       ; R13 := R1
 120 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
-121 [-]: GETGLOBAL R9 K24       ; R9 := 0x93B1256B
+121 [-]: GETGLOBAL R9 K25       ; R9 := 0x93B1256B
 122 [-]: LOADK     R10 K37      ; R10 := "Setting idle override"
 123 [-]: CALL      R9 2 1       ; R9(R10)
 124 [-]: RETURN    R0 1         ; return 

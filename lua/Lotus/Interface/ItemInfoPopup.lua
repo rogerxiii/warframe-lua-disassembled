@@ -391,8 +391,8 @@ code size: 14
 328 [-]: MOVE      R0 R61       ; R0 := R61
 329 [-]: CLOSURE   R84 34       ; R84 := closure(Function #35)
 330 [-]: MOVE      R0 R83       ; R0 := R83
-331 [-]: SETGLOBAL R84 K49      ; onKeyDown_MENU_GENERIC1 := R84
-332 [-]: SETGLOBAL R84 K50      ; 0xAAAD7C40 := R84
+331 [-]: SETGLOBAL R84 K49      ; onKeyDown_MENU_RTHUMB := R84
+332 [-]: SETGLOBAL R84 K50      ; 0x53C99C27 := R84
 333 [-]: CLOSURE   R84 35       ; R84 := closure(Function #36)
 334 [-]: MOVE      R0 R83       ; R0 := R83
 335 [-]: SETGLOBAL R84 K51      ; onKeyDown_MENU_RIGHT_CLICK := R84
@@ -1575,7 +1575,7 @@ code size: 14
  13 [-]: GETGLOBAL R4 K1        ; R4 := Engine
  14 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["0x9490FE70"]
  15 [-]: CALL      R4 1 2       ; R4 := R4()
- 16 [-]: LOADK     R5 K8        ; R5 := "<MENU_GENERIC1>"
+ 16 [-]: LOADK     R5 K8        ; R5 := "<MENU_RTHUMB>"
  17 [-]: LOADK     R6 K9        ; R6 := "<MENU_RIGHT_CLICK>"
  18 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
  19 [-]: MOVE      R4 R1        ; R4 := R1

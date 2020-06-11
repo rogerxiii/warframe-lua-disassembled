@@ -1,9 +1,7 @@
-code size: 82
-code size: 8
+code size: 76
 code size: 36
 code size: 11
 code size: 86
-code size: 22
 code size: 33
 code size: 60
 code size: 608
@@ -17,7 +15,7 @@ code size: 33
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  27
+; Max Stack Size:  24
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "Lotus.Scripts.Libs.TransmissionSet"
@@ -26,106 +24,81 @@ code size: 33
   5 [-]: LOADK     R2 K2        ; R2 := "Lotus.Interface.LotusUtilities"
   6 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   7 [-]: GETGLOBAL R2 K0        ; R2 := 0x329BDC44
-  8 [-]: LOADK     R3 K3        ; R3 := "EE.Interface.Utilities"
+  8 [-]: LOADK     R3 K3        ; R3 := "Lotus.Scripts.Libs.ConservationLib"
   9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  10 [-]: GETGLOBAL R3 K0        ; R3 := 0x329BDC44
- 11 [-]: LOADK     R4 K4        ; R4 := "Lotus.Scripts.Libs.ConservationLib"
+ 11 [-]: LOADK     R4 K4        ; R4 := "Lotus.Scripts.Libs.GearLib"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 13 [-]: GETGLOBAL R4 K0        ; R4 := 0x329BDC44
- 14 [-]: LOADK     R5 K5        ; R5 := "Lotus.Scripts.Libs.GearLib"
- 15 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 16 [-]: LOADNIL   R5 R6        ; R5 := R6 := nil
- 17 [-]: MOVE      R7 R0        ; R7 := R0
- 18 [-]: LOADK     R8 K6        ; R8 := 0
- 19 [-]: LOADK     R9 K6        ; R9 := 0
- 20 [-]: GETGLOBAL R10 K7       ; R10 := 0x70D42C02
- 21 [-]: LOADK     R11 K6       ; R11 := 0
- 22 [-]: LOADK     R12 K8       ; R12 := 0.15000000596046
- 23 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 24 [-]: LOADNIL   R11 R11      ; R11 := nil
- 25 [-]: MOVE      R12 R0       ; R12 := R0
- 26 [-]: LOADNIL   R13 R13      ; R13 := nil
- 27 [-]: GETGLOBAL R14 K9       ; R14 := 0xEC274B1A
- 28 [-]: LOADK     R15 K10      ; R15 := "__ALL_ANIMALS__"
- 29 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 30 [-]: MOVE      R15 R0       ; R15 := R0
- 31 [-]: MOVE      R16 R0       ; R16 := R0
- 32 [-]: LOADK     R17 K6       ; R17 := 0
- 33 [-]: LOADK     R18 K6       ; R18 := 0
- 34 [-]: CLOSURE   R19 0        ; R19 := closure(Function #1)
- 35 [-]: CLOSURE   R20 1        ; R20 := closure(Function #2)
- 36 [-]: CLOSURE   R21 2        ; R21 := closure(Function #3)
- 37 [-]: MOVE      R0 R4        ; R0 := R4
- 38 [-]: CLOSURE   R22 3        ; R22 := closure(Function #4)
- 39 [-]: MOVE      R0 R4        ; R0 := R4
- 40 [-]: MOVE      R0 R21       ; R0 := R21
- 41 [-]: MOVE      R0 R20       ; R0 := R20
- 42 [-]: CLOSURE   R23 4        ; R23 := closure(Function #5)
- 43 [-]: MOVE      R0 R6        ; R0 := R6
- 44 [-]: CLOSURE   R24 5        ; R24 := closure(Function #6)
- 45 [-]: MOVE      R0 R14       ; R0 := R14
- 46 [-]: CLOSURE   R25 6        ; R25 := closure(Function #7)
- 47 [-]: MOVE      R0 R16       ; R0 := R16
- 48 [-]: CLOSURE   R26 7        ; R26 := closure(Function #8)
- 49 [-]: MOVE      R0 R13       ; R0 := R13
+ 13 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
+ 14 [-]: MOVE      R6 R0        ; R6 := R0
+ 15 [-]: LOADK     R7 K5        ; R7 := 0
+ 16 [-]: LOADK     R8 K5        ; R8 := 0
+ 17 [-]: GETGLOBAL R9 K6        ; R9 := 0x70D42C02
+ 18 [-]: LOADK     R10 K5       ; R10 := 0
+ 19 [-]: LOADK     R11 K7       ; R11 := 0.15000000596046
+ 20 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+ 21 [-]: LOADNIL   R10 R10      ; R10 := nil
+ 22 [-]: MOVE      R11 R0       ; R11 := R0
+ 23 [-]: LOADNIL   R12 R12      ; R12 := nil
+ 24 [-]: GETGLOBAL R13 K8       ; R13 := 0xEC274B1A
+ 25 [-]: LOADK     R14 K9       ; R14 := "__ALL_ANIMALS__"
+ 26 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+ 27 [-]: MOVE      R14 R0       ; R14 := R0
+ 28 [-]: MOVE      R15 R0       ; R15 := R0
+ 29 [-]: LOADK     R16 K5       ; R16 := 0
+ 30 [-]: LOADK     R17 K5       ; R17 := 0
+ 31 [-]: CLOSURE   R18 0        ; R18 := closure(Function #1)
+ 32 [-]: CLOSURE   R19 1        ; R19 := closure(Function #2)
+ 33 [-]: MOVE      R0 R3        ; R0 := R3
+ 34 [-]: CLOSURE   R20 2        ; R20 := closure(Function #3)
+ 35 [-]: MOVE      R0 R3        ; R0 := R3
+ 36 [-]: MOVE      R0 R19       ; R0 := R19
+ 37 [-]: MOVE      R0 R18       ; R0 := R18
+ 38 [-]: CLOSURE   R21 3        ; R21 := closure(Function #4)
+ 39 [-]: MOVE      R0 R13       ; R0 := R13
+ 40 [-]: CLOSURE   R22 4        ; R22 := closure(Function #5)
+ 41 [-]: MOVE      R0 R15       ; R0 := R15
+ 42 [-]: CLOSURE   R23 5        ; R23 := closure(Function #6)
+ 43 [-]: MOVE      R0 R12       ; R0 := R12
+ 44 [-]: MOVE      R0 R20       ; R0 := R20
+ 45 [-]: MOVE      R0 R18       ; R0 := R18
+ 46 [-]: MOVE      R0 R4        ; R0 := R4
+ 47 [-]: MOVE      R0 R5        ; R0 := R5
+ 48 [-]: MOVE      R0 R3        ; R0 := R3
+ 49 [-]: MOVE      R0 R21       ; R0 := R21
  50 [-]: MOVE      R0 R22       ; R0 := R22
- 51 [-]: MOVE      R0 R20       ; R0 := R20
- 52 [-]: MOVE      R0 R5        ; R0 := R5
- 53 [-]: MOVE      R0 R6        ; R0 := R6
- 54 [-]: MOVE      R0 R4        ; R0 := R4
- 55 [-]: MOVE      R0 R24       ; R0 := R24
- 56 [-]: MOVE      R0 R25       ; R0 := R25
- 57 [-]: MOVE      R0 R7        ; R0 := R7
+ 51 [-]: MOVE      R0 R6        ; R0 := R6
+ 52 [-]: MOVE      R0 R8        ; R0 := R8
+ 53 [-]: MOVE      R0 R7        ; R0 := R7
+ 54 [-]: MOVE      R0 R2        ; R0 := R2
+ 55 [-]: MOVE      R0 R15       ; R0 := R15
+ 56 [-]: MOVE      R0 R14       ; R0 := R14
+ 57 [-]: MOVE      R0 R10       ; R0 := R10
  58 [-]: MOVE      R0 R9        ; R0 := R9
- 59 [-]: MOVE      R0 R8        ; R0 := R8
- 60 [-]: MOVE      R0 R3        ; R0 := R3
- 61 [-]: MOVE      R0 R16       ; R0 := R16
- 62 [-]: MOVE      R0 R15       ; R0 := R15
- 63 [-]: MOVE      R0 R11       ; R0 := R11
- 64 [-]: MOVE      R0 R10       ; R0 := R10
- 65 [-]: MOVE      R0 R17       ; R0 := R17
- 66 [-]: MOVE      R0 R12       ; R0 := R12
- 67 [-]: MOVE      R0 R18       ; R0 := R18
- 68 [-]: MOVE      R0 R14       ; R0 := R14
- 69 [-]: MOVE      R0 R0        ; R0 := R0
- 70 [-]: MOVE      R0 R21       ; R0 := R21
- 71 [-]: SETGLOBAL R26 K11      ; AnimalLure := R26
- 72 [-]: SETGLOBAL R26 K12      ; 0x39DBEF1C := R26
- 73 [-]: CLOSURE   R26 8        ; R26 := closure(Function #9)
- 74 [-]: MOVE      R0 R1        ; R0 := R1
- 75 [-]: SETGLOBAL R26 K13      ; CanLure := R26
- 76 [-]: SETGLOBAL R26 K14      ; 0xA42391D4 := R26
- 77 [-]: CLOSURE   R26 9        ; R26 := closure(Function #10)
- 78 [-]: MOVE      R0 R21       ; R0 := R21
- 79 [-]: MOVE      R0 R20       ; R0 := R20
- 80 [-]: SETGLOBAL R26 K15      ; Deactivate := R26
- 81 [-]: SETGLOBAL R26 K16      ; 0xE15B9E90 := R26
- 82 [-]: RETURN    R0 1         ; return 
+ 59 [-]: MOVE      R0 R16       ; R0 := R16
+ 60 [-]: MOVE      R0 R11       ; R0 := R11
+ 61 [-]: MOVE      R0 R17       ; R0 := R17
+ 62 [-]: MOVE      R0 R13       ; R0 := R13
+ 63 [-]: MOVE      R0 R0        ; R0 := R0
+ 64 [-]: MOVE      R0 R19       ; R0 := R19
+ 65 [-]: SETGLOBAL R23 K10      ; AnimalLure := R23
+ 66 [-]: SETGLOBAL R23 K11      ; 0x39DBEF1C := R23
+ 67 [-]: CLOSURE   R23 6        ; R23 := closure(Function #7)
+ 68 [-]: MOVE      R0 R1        ; R0 := R1
+ 69 [-]: SETGLOBAL R23 K12      ; CanLure := R23
+ 70 [-]: SETGLOBAL R23 K13      ; 0xA42391D4 := R23
+ 71 [-]: CLOSURE   R23 7        ; R23 := closure(Function #8)
+ 72 [-]: MOVE      R0 R19       ; R0 := R19
+ 73 [-]: MOVE      R0 R18       ; R0 := R18
+ 74 [-]: SETGLOBAL R23 K14      ; Deactivate := R23
+ 75 [-]: SETGLOBAL R23 K15      ; 0xE15B9E90 := R23
+ 76 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 45
-; #Upvalues:       0
-; #Parameters:     5
-; Is_vararg:       0
-; Max Stack Size:  7
-
-  1 [-]: SUB       R5 R4 R0     ; R5 := R4 - R0
-  2 [-]: SUB       R6 R3 R2     ; R6 := R3 - R2
-  3 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
-  4 [-]: SUB       R6 R1 R0     ; R6 := R1 - R0
-  5 [-]: DIV       R5 R5 R6     ; R5 := R5 / R6
-  6 [-]: ADD       R5 R2 R5     ; R5 := R2 + R5
-  7 [-]: RETURN    R5 2         ; return R5
-  8 [-]: RETURN    R0 1         ; return 
-
-
-; Function #2:
-;
-; Name:            
-; Defined at line: 49
+; Defined at line: 44
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -169,10 +142,10 @@ code size: 33
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #3:
+; Function #2:
 ;
 ; Name:            
-; Defined at line: 63
+; Defined at line: 58
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -191,10 +164,10 @@ code size: 33
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #4:
+; Function #3:
 ;
 ; Name:            
-; Defined at line: 68
+; Defined at line: 63
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -288,43 +261,10 @@ code size: 33
  86 [-]: RETURN    R0 1         ; return 
 
 
-; Function #5:
+; Function #4:
 ;
 ; Name:            
-; Defined at line: 104
-; #Upvalues:       1
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
-  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: TEST      R0 1         ; if R0 then PC := 20
-  5 [-]: JMP       20           ; PC := 20
-  6 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
-  7 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  8 [-]: SELF      R1 R1 K1     ; R2 := R1; R1 := R1["0x80B14403"]
-  9 [-]: CALL      R1 2 0       ; R1,... := R1(R2)
- 10 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 11 [-]: TEST      R0 1         ; if R0 then PC := 20
- 12 [-]: JMP       20           ; PC := 20
- 13 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 14 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x80B14403"]
- 15 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 16 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x8B598ED4"]
- 17 [-]: GETGLOBAL R2 K3        ; R2 := gLotusVehicleAvatarType
- 18 [-]: TAILCALL  R0 3 0       ; R0,... := R0(R1,R2)
- 19 [-]: RETURN    R0 0         ; return R0,...
- 20 [-]: MOVE      R0 R0        ; R0 := R0
- 21 [-]: RETURN    R0 2         ; return R0
- 22 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 111
+; Defined at line: 99
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -365,10 +305,10 @@ code size: 33
  33 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #5:
 ;
 ; Name:            
-; Defined at line: 124
+; Defined at line: 112
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -436,10 +376,10 @@ code size: 33
  60 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 145
+; Defined at line: 133
 ; #Upvalues:       22
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1055,10 +995,10 @@ code size: 33
 608 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 417
+; Defined at line: 405
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1154,10 +1094,10 @@ code size: 33
  88 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 450
+; Defined at line: 438
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0

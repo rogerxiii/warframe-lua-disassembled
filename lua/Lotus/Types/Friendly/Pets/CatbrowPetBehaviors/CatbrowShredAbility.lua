@@ -404,7 +404,7 @@ code size: 17
 158 [-]: SELF      R14 R14 K37  ; R15 := R14; R14 := R14["0x3B1B11B9"]
 159 [-]: GETGLOBAL R16 K38      ; R16 := Game
 160 [-]: GETTABLE  R16 R16 K39  ; R16 := R16["AVATAR_ARMOUR"]
-161 [-]: GETGLOBAL R17 K38      ; R17 := Game
+161 [-]: GETGLOBAL R17 K16      ; R17 := Engine
 162 [-]: GETTABLE  R17 R17 K40  ; R17 := R17["STACKING_MULTIPLY"]
 163 [-]: GETUPVAL  R18 U2       ; R18 := U2
 164 [-]: MOVE      R19 R3       ; R19 := R3

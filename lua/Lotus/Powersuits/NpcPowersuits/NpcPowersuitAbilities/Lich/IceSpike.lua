@@ -276,7 +276,7 @@ code size: 29
  31 [-]: GETTABLE  R1 R1 K13    ; R1 := R1["0xE6450C9D"]
  32 [-]: MOVE      R2 R0        ; R2 := R0
  33 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 34 [-]: SETTABLE  R3 K14 K15   ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 34 [-]: SETTABLE  R3 K14 K15   ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  35 [-]: GETGLOBAL R4 K5        ; R4 := pathDamage
  36 [-]: SETTABLE  R3 K16 R4    ; R3["Value"] := R4
  37 [-]: CALL      R1 3 1       ; R1(R2,R3)

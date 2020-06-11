@@ -443,32 +443,32 @@ code size: 82
  49 [-]: MOVE      R17 R6       ; R17 := R6
  50 [-]: GETGLOBAL R18 K12      ; R18 := Game
  51 [-]: GETTABLE  R18 R18 K13  ; R18 := R18["AVATAR_POWER_RATE"]
- 52 [-]: GETGLOBAL R19 K12      ; R19 := Game
- 53 [-]: GETTABLE  R19 R19 K14  ; R19 := R19["ADD"]
+ 52 [-]: GETGLOBAL R19 K14      ; R19 := Engine
+ 53 [-]: GETTABLE  R19 R19 K15  ; R19 := R19["ADD"]
  54 [-]: MOVE      R20 R5       ; R20 := R5
  55 [-]: CALL      R15 6 1      ; R15(R16,R17,R18,R19,R20)
- 56 [-]: GETGLOBAL R15 K15      ; R15 := table
- 57 [-]: GETTABLE  R15 R15 K16  ; R15 := R15["0xE6450C9D"]
+ 56 [-]: GETGLOBAL R15 K16      ; R15 := table
+ 57 [-]: GETTABLE  R15 R15 K17  ; R15 := R15["0xE6450C9D"]
  58 [-]: MOVE      R16 R8       ; R16 := R8
  59 [-]: MOVE      R17 R14      ; R17 := R14
  60 [-]: CALL      R15 3 1      ; R15(R16,R17)
  61 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 32; R12 := R13 end
  62 [-]: JMP       32           ; PC := 32
  63 [-]: LEN       R15 R8       ; R15 := # R8
- 64 [-]: LT        0 K17 R15    ; if 0 >= R15 then PC := 82
+ 64 [-]: LT        0 K18 R15    ; if 0 >= R15 then PC := 82
  65 [-]: JMP       82           ; PC := 82
- 66 [-]: GETGLOBAL R15 K18      ; R15 := Lotus_Game
- 67 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0xFAFD4322"]
+ 66 [-]: GETGLOBAL R15 K19      ; R15 := Lotus_Game
+ 67 [-]: GETTABLE  R15 R15 K20  ; R15 := R15["0xFAFD4322"]
  68 [-]: CALL      R15 1 2      ; R15 := R15()
- 69 [-]: SETTABLE  R15 K20 R8   ; R15["affected"] := R8
- 70 [-]: GETGLOBAL R16 K18      ; R16 := Lotus_Game
- 71 [-]: GETTABLE  R16 R16 K22  ; R16 := R16["BT_TIMER"]
- 72 [-]: SETTABLE  R15 K21 R16  ; R15["buffType"] := R16
- 73 [-]: SETTABLE  R15 K23 R6   ; R15["buffData"] := R6
+ 69 [-]: SETTABLE  R15 K21 R8   ; R15["affected"] := R8
+ 70 [-]: GETGLOBAL R16 K19      ; R16 := Lotus_Game
+ 71 [-]: GETTABLE  R16 R16 K23  ; R16 := R16["BT_TIMER"]
+ 72 [-]: SETTABLE  R15 K22 R16  ; R15["buffType"] := R16
+ 73 [-]: SETTABLE  R15 K24 R6   ; R15["buffData"] := R6
  74 [-]: GETUPVAL  R16 U1       ; R16 := U1
- 75 [-]: SETTABLE  R15 K24 R16  ; R15["abilityType"] := R16
- 76 [-]: GETTABLE  R16 R8 K25   ; R16 := R8[1]
- 77 [-]: SELF      R16 R16 K26  ; R17 := R16; R16 := R16["0x584F13D6"]
+ 75 [-]: SETTABLE  R15 K25 R16  ; R15["abilityType"] := R16
+ 76 [-]: GETTABLE  R16 R8 K26   ; R16 := R8[1]
+ 77 [-]: SELF      R16 R16 K27  ; R17 := R16; R16 := R16["0x584F13D6"]
  78 [-]: MOVE      R18 R15      ; R18 := R15
  79 [-]: MOVE      R19 R1       ; R19 := R1
  80 [-]: MOVE      R20 R1       ; R20 := R1

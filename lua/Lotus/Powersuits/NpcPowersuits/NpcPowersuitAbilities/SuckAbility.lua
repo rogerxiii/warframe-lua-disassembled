@@ -340,47 +340,47 @@ code size: 109
 157 [-]: SELF      R20 R20 K36  ; R21 := R20; R20 := R20["0x3B1B11B9"]
 158 [-]: GETGLOBAL R22 K37      ; R22 := Game
 159 [-]: GETTABLE  R22 R22 K38  ; R22 := R22["AVATAR_ARMOUR"]
-160 [-]: GETGLOBAL R23 K37      ; R23 := Game
-161 [-]: GETTABLE  R23 R23 K39  ; R23 := R23["STACKING_MULTIPLY"]
-162 [-]: LOADK     R24 K40      ; R24 := 0.10000000149012
+160 [-]: GETGLOBAL R23 K39      ; R23 := Engine
+161 [-]: GETTABLE  R23 R23 K40  ; R23 := R23["STACKING_MULTIPLY"]
+162 [-]: LOADK     R24 K41      ; R24 := 0.10000000149012
 163 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
 164 [-]: JMP       228          ; PC := 228
 165 [-]: SELF      R20 R19 K29  ; R21 := R19; R20 := R19["0x8B598ED4"]
-166 [-]: GETGLOBAL R22 K41      ; R22 := healthOrbType
+166 [-]: GETGLOBAL R22 K42      ; R22 := healthOrbType
 167 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 168 [-]: TEST      R20 0        ; if not R20 then PC := 181
 169 [-]: JMP       181          ; PC := 181
-170 [-]: SELF      R20 R1 K42   ; R21 := R1; R20 := R1["0x5A115A02"]
+170 [-]: SELF      R20 R1 K43   ; R21 := R1; R20 := R1["0x5A115A02"]
 171 [-]: CALL      R20 2 2      ; R20 := R20(R21)
 172 [-]: TEST      R20 1        ; if R20 then PC := 228
 173 [-]: JMP       228          ; PC := 228
-174 [-]: SELF      R20 R1 K43   ; R21 := R1; R20 := R1["0x76C229EF"]
-175 [-]: SELF      R22 R1 K44   ; R23 := R1; R22 := R1["0x2F79FBD3"]
+174 [-]: SELF      R20 R1 K44   ; R21 := R1; R20 := R1["0x76C229EF"]
+175 [-]: SELF      R22 R1 K45   ; R23 := R1; R22 := R1["0x2F79FBD3"]
 176 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-177 [-]: ADD       R22 R22 K45  ; R22 := R22 + 100
+177 [-]: ADD       R22 R22 K46  ; R22 := R22 + 100
 178 [-]: MOVE      R23 R1       ; R23 := R1
 179 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
 180 [-]: JMP       228          ; PC := 228
 181 [-]: SELF      R20 R19 K29  ; R21 := R19; R20 := R19["0x8B598ED4"]
-182 [-]: GETGLOBAL R22 K46      ; R22 := energyOrbType
+182 [-]: GETGLOBAL R22 K47      ; R22 := energyOrbType
 183 [-]: CALL      R20 3 2      ; R20 := R20(R21,R22)
 184 [-]: TEST      R20 0        ; if not R20 then PC := 199
 185 [-]: JMP       199          ; PC := 199
-186 [-]: SELF      R20 R1 K47   ; R21 := R1; R20 := R1["0xA3F6069B"]
+186 [-]: SELF      R20 R1 K48   ; R21 := R1; R20 := R1["0xA3F6069B"]
 187 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-188 [-]: SELF      R21 R20 K48  ; R22 := R20; R21 := R20["0xF27096B7"]
+188 [-]: SELF      R21 R20 K49  ; R22 := R20; R21 := R20["0xF27096B7"]
 189 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-190 [-]: SELF      R22 R20 K49  ; R23 := R20; R22 := R20["0xA1A15ED3"]
+190 [-]: SELF      R22 R20 K50  ; R23 := R20; R22 := R20["0xA1A15ED3"]
 191 [-]: CALL      R22 2 2      ; R22 := R22(R23)
-192 [-]: SELF      R23 R20 K50  ; R24 := R20; R23 := R20["0x93DF5D85"]
-193 [-]: ADD       R25 R21 K45  ; R25 := R21 + 100
+192 [-]: SELF      R23 R20 K51  ; R24 := R20; R23 := R20["0x93DF5D85"]
+193 [-]: ADD       R25 R21 K46  ; R25 := R21 + 100
 194 [-]: CALL      R23 3 1      ; R23(R24,R25)
-195 [-]: SELF      R23 R20 K51  ; R24 := R20; R23 := R20["0x8938B1C9"]
-196 [-]: ADD       R25 R22 K45  ; R25 := R22 + 100
+195 [-]: SELF      R23 R20 K52  ; R24 := R20; R23 := R20["0x8938B1C9"]
+196 [-]: ADD       R25 R22 K46  ; R25 := R22 + 100
 197 [-]: CALL      R23 3 1      ; R23(R24,R25)
 198 [-]: JMP       228          ; PC := 228
 199 [-]: SELF      R23 R19 K29  ; R24 := R19; R23 := R19["0x8B598ED4"]
-200 [-]: GETGLOBAL R25 K52      ; R25 := xpOrbType
+200 [-]: GETGLOBAL R25 K53      ; R25 := xpOrbType
 201 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
 202 [-]: TEST      R23 0        ; if not R23 then PC := 214
 203 [-]: JMP       214          ; PC := 214
@@ -388,14 +388,14 @@ code size: 109
 205 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 206 [-]: SELF      R23 R23 K36  ; R24 := R23; R23 := R23["0x3B1B11B9"]
 207 [-]: GETGLOBAL R25 K37      ; R25 := Game
-208 [-]: GETTABLE  R25 R25 K53  ; R25 := R25["GAMEPLAY_FACTION_DAMAGE"]
-209 [-]: GETGLOBAL R26 K37      ; R26 := Game
-210 [-]: GETTABLE  R26 R26 K39  ; R26 := R26["STACKING_MULTIPLY"]
-211 [-]: LOADK     R27 K40      ; R27 := 0.10000000149012
+208 [-]: GETTABLE  R25 R25 K54  ; R25 := R25["GAMEPLAY_FACTION_DAMAGE"]
+209 [-]: GETGLOBAL R26 K39      ; R26 := Engine
+210 [-]: GETTABLE  R26 R26 K40  ; R26 := R26["STACKING_MULTIPLY"]
+211 [-]: LOADK     R27 K41      ; R27 := 0.10000000149012
 212 [-]: CALL      R23 5 1      ; R23(R24,R25,R26,R27)
 213 [-]: JMP       228          ; PC := 228
 214 [-]: SELF      R23 R19 K29  ; R24 := R19; R23 := R19["0x8B598ED4"]
-215 [-]: GETGLOBAL R25 K54      ; R25 := ammoType
+215 [-]: GETGLOBAL R25 K55      ; R25 := ammoType
 216 [-]: CALL      R23 3 2      ; R23 := R23(R24,R25)
 217 [-]: TEST      R23 0        ; if not R23 then PC := 228
 218 [-]: JMP       228          ; PC := 228
@@ -403,28 +403,28 @@ code size: 109
 220 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 221 [-]: SELF      R23 R23 K36  ; R24 := R23; R23 := R23["0x3B1B11B9"]
 222 [-]: GETGLOBAL R25 K37      ; R25 := Game
-223 [-]: GETTABLE  R25 R25 K55  ; R25 := R25["WEAPON_FIRE_RATE"]
-224 [-]: GETGLOBAL R26 K37      ; R26 := Game
-225 [-]: GETTABLE  R26 R26 K39  ; R26 := R26["STACKING_MULTIPLY"]
-226 [-]: LOADK     R27 K56      ; R27 := 0.050000000745058
+223 [-]: GETTABLE  R25 R25 K56  ; R25 := R25["WEAPON_FIRE_RATE"]
+224 [-]: GETGLOBAL R26 K39      ; R26 := Engine
+225 [-]: GETTABLE  R26 R26 K40  ; R26 := R26["STACKING_MULTIPLY"]
+226 [-]: LOADK     R27 K57      ; R27 := 0.050000000745058
 227 [-]: CALL      R23 5 1      ; R23(R24,R25,R26,R27)
-228 [-]: SELF      R23 R15 K57  ; R24 := R15; R23 := R15["0xD4C2743F"]
+228 [-]: SELF      R23 R15 K58  ; R24 := R15; R23 := R15["0xD4C2743F"]
 229 [-]: CALL      R23 2 1      ; R23(R24)
 230 [-]: MOVE      R8 R1        ; R8 := R1
 231 [-]: JMP       251          ; PC := 251
 232 [-]: GETGLOBAL R23 K31      ; R23 := gRegion
-233 [-]: SELF      R23 R23 K58  ; R24 := R23; R23 := R23["0xA559F558"]
+233 [-]: SELF      R23 R23 K59  ; R24 := R23; R23 := R23["0xA559F558"]
 234 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 235 [-]: TEST      R23 1        ; if R23 then PC := 241
 236 [-]: JMP       241          ; PC := 241
-237 [-]: SELF      R23 R15 K59  ; R24 := R15; R23 := R15["0x89D6C9D3"]
+237 [-]: SELF      R23 R15 K60  ; R24 := R15; R23 := R15["0x89D6C9D3"]
 238 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 239 [-]: TEST      R23 0        ; if not R23 then PC := 244
 240 [-]: JMP       244          ; PC := 244
-241 [-]: SELF      R23 R15 K60  ; R24 := R15; R23 := R15["0xF3C5C9C3"]
+241 [-]: SELF      R23 R15 K61  ; R24 := R15; R23 := R15["0xF3C5C9C3"]
 242 [-]: CALL      R23 2 1      ; R23(R24)
 243 [-]: JMP       251          ; PC := 251
-244 [-]: SELF      R23 R15 K59  ; R24 := R15; R23 := R15["0x89D6C9D3"]
+244 [-]: SELF      R23 R15 K60  ; R24 := R15; R23 := R15["0x89D6C9D3"]
 245 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 246 [-]: TEST      R23 1        ; if R23 then PC := 251
 247 [-]: JMP       251          ; PC := 251
@@ -437,14 +437,14 @@ code size: 109
 254 [-]: TEST      R9 1         ; if R9 then PC := 261
 255 [-]: JMP       261          ; PC := 261
 256 [-]: GETGLOBAL R23 K31      ; R23 := gRegion
-257 [-]: SELF      R23 R23 K58  ; R24 := R23; R23 := R23["0xA559F558"]
+257 [-]: SELF      R23 R23 K59  ; R24 := R23; R23 := R23["0xA559F558"]
 258 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 259 [-]: TEST      R23 0        ; if not R23 then PC := 261
 260 [-]: JMP       261          ; PC := 261
 261 [-]: GETGLOBAL R23 K26      ; R23 := 0x4CDEF9FF
 262 [-]: CALL      R23 1 2      ; R23 := R23()
 263 [-]: ADD       R7 R7 R23    ; R7 := R7 + R23
-264 [-]: LT        0 K61 R7     ; if 5 >= R7 then PC := 267
+264 [-]: LT        0 K62 R7     ; if 5 >= R7 then PC := 267
 265 [-]: JMP       267          ; PC := 267
 266 [-]: JMP       297          ; PC := 297
 267 [-]: GETGLOBAL R23 K12      ; R23 := 0x201191EA
@@ -453,7 +453,7 @@ code size: 109
 270 [-]: JMP       57           ; PC := 57
 271 [-]: JMP       297          ; PC := 297
 272 [-]: GETGLOBAL R23 K31      ; R23 := gRegion
-273 [-]: SELF      R23 R23 K58  ; R24 := R23; R23 := R23["0xA559F558"]
+273 [-]: SELF      R23 R23 K59  ; R24 := R23; R23 := R23["0xA559F558"]
 274 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 275 [-]: TEST      R23 0        ; if not R23 then PC := 296
 276 [-]: JMP       296          ; PC := 296
@@ -469,11 +469,11 @@ code size: 109
 286 [-]: LOADK     R24 K15      ; R24 := 1
 287 [-]: CALL      R23 2 1      ; R23(R24)
 288 [-]: JMP       277          ; PC := 277
-289 [-]: SELF      R23 R0 K58   ; R24 := R0; R23 := R0["0xA559F558"]
+289 [-]: SELF      R23 R0 K59   ; R24 := R0; R23 := R0["0xA559F558"]
 290 [-]: CALL      R23 2 2      ; R23 := R23(R24)
 291 [-]: TEST      R23 0        ; if not R23 then PC := 297
 292 [-]: JMP       297          ; PC := 297
-293 [-]: SELF      R23 R0 K62   ; R24 := R0; R23 := R0["0x8A94B221"]
+293 [-]: SELF      R23 R0 K63   ; R24 := R0; R23 := R0["0x8A94B221"]
 294 [-]: CALL      R23 2 1      ; R23(R24)
 295 [-]: JMP       297          ; PC := 297
 296 [-]: RETURN    R0 1         ; return 
@@ -630,47 +630,47 @@ code size: 109
  38 [-]: SELF      R3 R3 K8     ; R4 := R3; R3 := R3["0x3B1B11B9"]
  39 [-]: GETGLOBAL R5 K9        ; R5 := Game
  40 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_ARMOUR"]
- 41 [-]: GETGLOBAL R6 K9        ; R6 := Game
- 42 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["STACKING_MULTIPLY"]
- 43 [-]: LOADK     R7 K12       ; R7 := 0.10000000149012
+ 41 [-]: GETGLOBAL R6 K11       ; R6 := Engine
+ 42 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["STACKING_MULTIPLY"]
+ 43 [-]: LOADK     R7 K13       ; R7 := 0.10000000149012
  44 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  45 [-]: JMP       109          ; PC := 109
  46 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1["0x8B598ED4"]
- 47 [-]: GETGLOBAL R5 K13       ; R5 := healthOrbType
+ 47 [-]: GETGLOBAL R5 K14       ; R5 := healthOrbType
  48 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  49 [-]: TEST      R3 0         ; if not R3 then PC := 62
  50 [-]: JMP       62           ; PC := 62
- 51 [-]: SELF      R3 R2 K14    ; R4 := R2; R3 := R2["0x5A115A02"]
+ 51 [-]: SELF      R3 R2 K15    ; R4 := R2; R3 := R2["0x5A115A02"]
  52 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  53 [-]: TEST      R3 1         ; if R3 then PC := 109
  54 [-]: JMP       109          ; PC := 109
- 55 [-]: SELF      R3 R2 K15    ; R4 := R2; R3 := R2["0x76C229EF"]
- 56 [-]: SELF      R5 R2 K16    ; R6 := R2; R5 := R2["0x2F79FBD3"]
+ 55 [-]: SELF      R3 R2 K16    ; R4 := R2; R3 := R2["0x76C229EF"]
+ 56 [-]: SELF      R5 R2 K17    ; R6 := R2; R5 := R2["0x2F79FBD3"]
  57 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 58 [-]: ADD       R5 R5 K17    ; R5 := R5 + 100
+ 58 [-]: ADD       R5 R5 K18    ; R5 := R5 + 100
  59 [-]: MOVE      R6 R1        ; R6 := R1
  60 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
  61 [-]: JMP       109          ; PC := 109
  62 [-]: SELF      R3 R1 K4     ; R4 := R1; R3 := R1["0x8B598ED4"]
- 63 [-]: GETGLOBAL R5 K18       ; R5 := energyOrbType
+ 63 [-]: GETGLOBAL R5 K19       ; R5 := energyOrbType
  64 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  65 [-]: TEST      R3 0         ; if not R3 then PC := 80
  66 [-]: JMP       80           ; PC := 80
- 67 [-]: SELF      R3 R2 K19    ; R4 := R2; R3 := R2["0xA3F6069B"]
+ 67 [-]: SELF      R3 R2 K20    ; R4 := R2; R3 := R2["0xA3F6069B"]
  68 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 69 [-]: SELF      R4 R3 K20    ; R5 := R3; R4 := R3["0xF27096B7"]
+ 69 [-]: SELF      R4 R3 K21    ; R5 := R3; R4 := R3["0xF27096B7"]
  70 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 71 [-]: SELF      R5 R3 K21    ; R6 := R3; R5 := R3["0xA1A15ED3"]
+ 71 [-]: SELF      R5 R3 K22    ; R6 := R3; R5 := R3["0xA1A15ED3"]
  72 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 73 [-]: SELF      R6 R3 K22    ; R7 := R3; R6 := R3["0x93DF5D85"]
- 74 [-]: ADD       R8 R4 K17    ; R8 := R4 + 100
+ 73 [-]: SELF      R6 R3 K23    ; R7 := R3; R6 := R3["0x93DF5D85"]
+ 74 [-]: ADD       R8 R4 K18    ; R8 := R4 + 100
  75 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 76 [-]: SELF      R6 R3 K23    ; R7 := R3; R6 := R3["0x8938B1C9"]
- 77 [-]: ADD       R8 R5 K17    ; R8 := R5 + 100
+ 76 [-]: SELF      R6 R3 K24    ; R7 := R3; R6 := R3["0x8938B1C9"]
+ 77 [-]: ADD       R8 R5 K18    ; R8 := R5 + 100
  78 [-]: CALL      R6 3 1       ; R6(R7,R8)
  79 [-]: JMP       109          ; PC := 109
  80 [-]: SELF      R6 R1 K4     ; R7 := R1; R6 := R1["0x8B598ED4"]
- 81 [-]: GETGLOBAL R8 K24       ; R8 := xpOrbType
+ 81 [-]: GETGLOBAL R8 K25       ; R8 := xpOrbType
  82 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  83 [-]: TEST      R6 0         ; if not R6 then PC := 95
  84 [-]: JMP       95           ; PC := 95
@@ -678,14 +678,14 @@ code size: 109
  86 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  87 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  88 [-]: GETGLOBAL R8 K9        ; R8 := Game
- 89 [-]: GETTABLE  R8 R8 K25    ; R8 := R8["GAMEPLAY_FACTION_DAMAGE"]
- 90 [-]: GETGLOBAL R9 K9        ; R9 := Game
- 91 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["STACKING_MULTIPLY"]
- 92 [-]: LOADK     R10 K12      ; R10 := 0.10000000149012
+ 89 [-]: GETTABLE  R8 R8 K26    ; R8 := R8["GAMEPLAY_FACTION_DAMAGE"]
+ 90 [-]: GETGLOBAL R9 K11       ; R9 := Engine
+ 91 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["STACKING_MULTIPLY"]
+ 92 [-]: LOADK     R10 K13      ; R10 := 0.10000000149012
  93 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  94 [-]: JMP       109          ; PC := 109
  95 [-]: SELF      R6 R1 K4     ; R7 := R1; R6 := R1["0x8B598ED4"]
- 96 [-]: GETGLOBAL R8 K26       ; R8 := ammoType
+ 96 [-]: GETGLOBAL R8 K27       ; R8 := ammoType
  97 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  98 [-]: TEST      R6 0         ; if not R6 then PC := 109
  99 [-]: JMP       109          ; PC := 109
@@ -693,10 +693,10 @@ code size: 109
 101 [-]: CALL      R6 2 2       ; R6 := R6(R7)
 102 [-]: SELF      R6 R6 K8     ; R7 := R6; R6 := R6["0x3B1B11B9"]
 103 [-]: GETGLOBAL R8 K9        ; R8 := Game
-104 [-]: GETTABLE  R8 R8 K27    ; R8 := R8["WEAPON_FIRE_RATE"]
-105 [-]: GETGLOBAL R9 K9        ; R9 := Game
-106 [-]: GETTABLE  R9 R9 K11    ; R9 := R9["STACKING_MULTIPLY"]
-107 [-]: LOADK     R10 K28      ; R10 := 0.050000000745058
+104 [-]: GETTABLE  R8 R8 K28    ; R8 := R8["WEAPON_FIRE_RATE"]
+105 [-]: GETGLOBAL R9 K11       ; R9 := Engine
+106 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["STACKING_MULTIPLY"]
+107 [-]: LOADK     R10 K29      ; R10 := 0.050000000745058
 108 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
 109 [-]: RETURN    R0 1         ; return 
 

@@ -1,15 +1,13 @@
-code size: 69
+code size: 63
 code size: 171
 code size: 50
 code size: 15
 code size: 16
 code size: 4
 code size: 259
-code size: 8
-code size: 5
 code size: 16
 code size: 3
-code size: 51
+code size: 43
 code size: 26
 code size: 3
 code size: 3
@@ -21,7 +19,7 @@ code size: 3
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  17
+; Max Stack Size:  16
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
@@ -36,68 +34,62 @@ code size: 3
  11 [-]: LOADK     R4 K4        ; R4 := "Lotus.Interface.UIStyleUtilities"
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: MOVE      R4 R0        ; R4 := R0
- 14 [-]: LOADNIL   R5 R8        ; R5 := R6 := R7 := R8 := nil
- 15 [-]: MOVE      R9 R0        ; R9 := R0
- 16 [-]: LOADNIL   R10 R10      ; R10 := nil
- 17 [-]: CLOSURE   R11 0        ; R11 := closure(Function #1)
+ 14 [-]: LOADNIL   R5 R7        ; R5 := R6 := R7 := nil
+ 15 [-]: MOVE      R8 R0        ; R8 := R0
+ 16 [-]: LOADNIL   R9 R9        ; R9 := nil
+ 17 [-]: CLOSURE   R10 0        ; R10 := closure(Function #1)
  18 [-]: MOVE      R0 R3        ; R0 := R3
  19 [-]: MOVE      R0 R0        ; R0 := R0
- 20 [-]: MOVE      R0 R10       ; R0 := R10
- 21 [-]: CLOSURE   R12 1        ; R12 := closure(Function #2)
+ 20 [-]: MOVE      R0 R9        ; R0 := R9
+ 21 [-]: CLOSURE   R11 1        ; R11 := closure(Function #2)
  22 [-]: MOVE      R0 R1        ; R0 := R1
- 23 [-]: CLOSURE   R13 2        ; R13 := closure(Function #3)
- 24 [-]: CLOSURE   R14 3        ; R14 := closure(Function #4)
- 25 [-]: SETGLOBAL R14 K5       ; TransitionOut := R14
- 26 [-]: SETGLOBAL R14 K6       ; 0x7097B1B4 := R14
- 27 [-]: CLOSURE   R14 4        ; R14 := closure(Function #5)
- 28 [-]: MOVE      R0 R7        ; R0 := R7
+ 23 [-]: CLOSURE   R12 2        ; R12 := closure(Function #3)
+ 24 [-]: CLOSURE   R13 3        ; R13 := closure(Function #4)
+ 25 [-]: SETGLOBAL R13 K5       ; TransitionOut := R13
+ 26 [-]: SETGLOBAL R13 K6       ; 0x7097B1B4 := R13
+ 27 [-]: CLOSURE   R13 4        ; R13 := closure(Function #5)
+ 28 [-]: MOVE      R0 R6        ; R0 := R6
  29 [-]: MOVE      R0 R1        ; R0 := R1
  30 [-]: MOVE      R0 R0        ; R0 := R0
- 31 [-]: MOVE      R0 R9        ; R0 := R9
- 32 [-]: MOVE      R0 R10       ; R0 := R10
- 33 [-]: MOVE      R0 R11       ; R0 := R11
- 34 [-]: MOVE      R0 R13       ; R0 := R13
+ 31 [-]: MOVE      R0 R8        ; R0 := R8
+ 32 [-]: MOVE      R0 R9        ; R0 := R9
+ 33 [-]: MOVE      R0 R10       ; R0 := R10
+ 34 [-]: MOVE      R0 R12       ; R0 := R12
  35 [-]: MOVE      R0 R4        ; R0 := R4
- 36 [-]: CLOSURE   R15 5        ; R15 := closure(Function #6)
- 37 [-]: MOVE      R0 R6        ; R0 := R6
- 38 [-]: MOVE      R0 R5        ; R0 := R5
- 39 [-]: SETGLOBAL R15 K7       ; OnResourceLoaded := R15
- 40 [-]: SETGLOBAL R15 K8       ; 0x58E1359B := R15
- 41 [-]: CLOSURE   R15 6        ; R15 := closure(Function #7)
- 42 [-]: CLOSURE   R16 7        ; R16 := closure(Function #8)
- 43 [-]: MOVE      R0 R15       ; R0 := R15
- 44 [-]: SETGLOBAL R16 K9       ; onViewportSizeChanged := R16
- 45 [-]: SETGLOBAL R16 K10      ; 0x3A900427 := R16
- 46 [-]: CLOSURE   R16 8        ; R16 := closure(Function #9)
- 47 [-]: MOVE      R0 R6        ; R0 := R6
- 48 [-]: MOVE      R0 R5        ; R0 := R5
- 49 [-]: MOVE      R0 R15       ; R0 := R15
- 50 [-]: MOVE      R0 R12       ; R0 := R12
- 51 [-]: MOVE      R0 R7        ; R0 := R7
- 52 [-]: MOVE      R0 R9        ; R0 := R9
- 53 [-]: MOVE      R0 R14       ; R0 := R14
- 54 [-]: SETGLOBAL R16 K11      ; Initialize := R16
- 55 [-]: SETGLOBAL R16 K12      ; 0x62648036 := R16
- 56 [-]: CLOSURE   R16 9        ; R16 := closure(Function #10)
- 57 [-]: MOVE      R0 R6        ; R0 := R6
- 58 [-]: MOVE      R0 R8        ; R0 := R8
- 59 [-]: MOVE      R0 R2        ; R0 := R2
- 60 [-]: SETGLOBAL R16 K13      ; Update := R16
- 61 [-]: SETGLOBAL R16 K14      ; 0x8C7099E9 := R16
- 62 [-]: CLOSURE   R16 10       ; R16 := closure(Function #11)
- 63 [-]: SETGLOBAL R16 K15      ; SupportsThemes := R16
- 64 [-]: SETGLOBAL R16 K16      ; 0xDBE73B9E := R16
- 65 [-]: CLOSURE   R16 11       ; R16 := closure(Function #12)
- 66 [-]: MOVE      R0 R11       ; R0 := R11
- 67 [-]: SETGLOBAL R16 K17      ; OnStyleChangedCallback := R16
- 68 [-]: SETGLOBAL R16 K18      ; 0x9A764566 := R16
- 69 [-]: RETURN    R0 1         ; return 
+ 36 [-]: CLOSURE   R14 5        ; R14 := closure(Function #6)
+ 37 [-]: CLOSURE   R15 6        ; R15 := closure(Function #7)
+ 38 [-]: MOVE      R0 R14       ; R0 := R14
+ 39 [-]: SETGLOBAL R15 K7       ; onViewportSizeChanged := R15
+ 40 [-]: SETGLOBAL R15 K8       ; 0x3A900427 := R15
+ 41 [-]: CLOSURE   R15 7        ; R15 := closure(Function #8)
+ 42 [-]: MOVE      R0 R5        ; R0 := R5
+ 43 [-]: MOVE      R0 R14       ; R0 := R14
+ 44 [-]: MOVE      R0 R11       ; R0 := R11
+ 45 [-]: MOVE      R0 R6        ; R0 := R6
+ 46 [-]: MOVE      R0 R8        ; R0 := R8
+ 47 [-]: MOVE      R0 R13       ; R0 := R13
+ 48 [-]: SETGLOBAL R15 K9       ; Initialize := R15
+ 49 [-]: SETGLOBAL R15 K10      ; 0x62648036 := R15
+ 50 [-]: CLOSURE   R15 8        ; R15 := closure(Function #9)
+ 51 [-]: MOVE      R0 R5        ; R0 := R5
+ 52 [-]: MOVE      R0 R7        ; R0 := R7
+ 53 [-]: MOVE      R0 R2        ; R0 := R2
+ 54 [-]: SETGLOBAL R15 K11      ; Update := R15
+ 55 [-]: SETGLOBAL R15 K12      ; 0x8C7099E9 := R15
+ 56 [-]: CLOSURE   R15 9        ; R15 := closure(Function #10)
+ 57 [-]: SETGLOBAL R15 K13      ; SupportsThemes := R15
+ 58 [-]: SETGLOBAL R15 K14      ; 0xDBE73B9E := R15
+ 59 [-]: CLOSURE   R15 10       ; R15 := closure(Function #11)
+ 60 [-]: MOVE      R0 R10       ; R0 := R10
+ 61 [-]: SETGLOBAL R15 K15      ; OnStyleChangedCallback := R15
+ 62 [-]: SETGLOBAL R15 K16      ; 0x9A764566 := R15
+ 63 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 19
+; Defined at line: 18
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -279,7 +271,7 @@ code size: 3
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 56
+; Defined at line: 55
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -340,7 +332,7 @@ code size: 3
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 71
+; Defined at line: 70
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -366,7 +358,7 @@ code size: 3
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 75
+; Defined at line: 74
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -393,7 +385,7 @@ code size: 3
 ; Function #4.1:
 ;
 ; Name:            
-; Defined at line: 76
+; Defined at line: 75
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -408,7 +400,7 @@ code size: 3
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 79
+; Defined at line: 78
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -678,42 +670,7 @@ code size: 3
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 157
-; #Upvalues:       2
-; #Parameters:     2
-; Is_vararg:       0
-; Max Stack Size:  6
-
-  1 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  2 [-]: SELF      R2 R2 K0     ; R3 := R2; R2 := R2["0x61494587"]
-  3 [-]: LOADK     R4 K1        ; R4 := 0.0099999997764826
-  4 [-]: CLOSURE   R5 0         ; R5 := closure(Function #6.1)
-  5 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  6 [-]: MOVE      R0 R1        ; R0 := R1
-  7 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
-  8 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6.1:
-;
-; Name:            
-; Defined at line: 158
-; #Upvalues:       2
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: SELF      R0 R0 K0     ; R1 := R0; R0 := R0["0xACF66F1E"]
-  3 [-]: GETUPVAL  R2 U1        ; R2 := U1
-  4 [-]: CALL      R0 3 1       ; R0(R1,R2)
-  5 [-]: RETURN    R0 1         ; return 
-
-
-; Function #7:
-;
-; Name:            
-; Defined at line: 161
+; Defined at line: 156
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -737,10 +694,10 @@ code size: 3
  16 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 165
+; Defined at line: 160
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -751,11 +708,11 @@ code size: 3
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 169
-; #Upvalues:       7
+; Defined at line: 164
+; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
 ; Max Stack Size:  5
@@ -781,42 +738,34 @@ code size: 3
  19 [-]: GETTABLE  R1 R0 K10    ; R1 := R0["0xC2A7FAC0"]
  20 [-]: CALL      R1 1 2       ; R1 := R1()
  21 [-]: MOVE      R1 R0        ; R1 := R0
- 22 [-]: GETGLOBAL R1 K8        ; R1 := 0x329BDC44
- 23 [-]: LOADK     R2 K11       ; R2 := "Lotus.Interface.Components.ResourceLoaderQueue"
- 24 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 25 [-]: GETTABLE  R2 R1 K12    ; R2 := R1["0x49E366F9"]
- 26 [-]: GETGLOBAL R3 K0        ; R3 := mMovie
- 27 [-]: LOADK     R4 K13       ; R4 := "OnResourceLoaded"
- 28 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 29 [-]: MOVE      R2 R1        ; R2 := R1
- 30 [-]: GETUPVAL  R2 U2        ; R2 := U2
- 31 [-]: CALL      R2 1 1       ; R2()
- 32 [-]: GETUPVAL  R2 U3        ; R2 := U3
- 33 [-]: CALL      R2 1 1       ; R2()
- 34 [-]: GETGLOBAL R2 K6        ; R2 := gGameData
- 35 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2["0xBF7B1F2D"]
- 36 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 37 [-]: MOVE      R2 R4        ; R2 := R4
- 38 [-]: GETUPVAL  R2 U4        ; R2 := U4
- 39 [-]: SELF      R2 R2 K15    ; R3 := R2; R2 := R2["0x315E860F"]
- 40 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 41 [-]: MOVE      R2 R5        ; R2 := R5
- 42 [-]: GETUPVAL  R2 U5        ; R2 := U5
- 43 [-]: TEST      R2 1         ; if R2 then PC := 49
- 44 [-]: JMP       49           ; PC := 49
- 45 [-]: GETGLOBAL R2 K6        ; R2 := gGameData
- 46 [-]: SELF      R2 R2 K16    ; R3 := R2; R2 := R2["0xDB5EB4F6"]
- 47 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 48 [-]: MOVE      R2 R4        ; R2 := R4
- 49 [-]: GETUPVAL  R2 U6        ; R2 := U6
- 50 [-]: CALL      R2 1 1       ; R2()
- 51 [-]: RETURN    R0 1         ; return 
+ 22 [-]: GETUPVAL  R1 U1        ; R1 := U1
+ 23 [-]: CALL      R1 1 1       ; R1()
+ 24 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 25 [-]: CALL      R1 1 1       ; R1()
+ 26 [-]: GETGLOBAL R1 K6        ; R1 := gGameData
+ 27 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1["0xBF7B1F2D"]
+ 28 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 29 [-]: MOVE      R1 R3        ; R1 := R3
+ 30 [-]: GETUPVAL  R1 U3        ; R1 := U3
+ 31 [-]: SELF      R1 R1 K12    ; R2 := R1; R1 := R1["0x315E860F"]
+ 32 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 33 [-]: MOVE      R1 R4        ; R1 := R4
+ 34 [-]: GETUPVAL  R1 U4        ; R1 := U4
+ 35 [-]: TEST      R1 1         ; if R1 then PC := 41
+ 36 [-]: JMP       41           ; PC := 41
+ 37 [-]: GETGLOBAL R1 K6        ; R1 := gGameData
+ 38 [-]: SELF      R1 R1 K13    ; R2 := R1; R1 := R1["0xDB5EB4F6"]
+ 39 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 40 [-]: MOVE      R1 R3        ; R1 := R3
+ 41 [-]: GETUPVAL  R1 U5        ; R1 := U5
+ 42 [-]: CALL      R1 1 1       ; R1()
+ 43 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 196
+; Defined at line: 188
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -850,10 +799,10 @@ code size: 3
  26 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 210
+; Defined at line: 202
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -864,10 +813,10 @@ code size: 3
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 214
+; Defined at line: 206
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0

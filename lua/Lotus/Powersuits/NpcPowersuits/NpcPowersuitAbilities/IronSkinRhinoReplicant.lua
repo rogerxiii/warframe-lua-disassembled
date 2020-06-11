@@ -687,7 +687,7 @@ code size: 44
 197 [-]: SELF      R19 R19 K62  ; R20 := R19; R19 := R19["0x3B1B11B9"]
 198 [-]: GETGLOBAL R21 K7       ; R21 := Game
 199 [-]: GETTABLE  R21 R21 K63  ; R21 := R21["AVATAR_ENERGY_GAIN_MULTIPLIER"]
-200 [-]: GETGLOBAL R22 K7       ; R22 := Game
+200 [-]: GETGLOBAL R22 K16      ; R22 := Engine
 201 [-]: GETTABLE  R22 R22 K64  ; R22 := R22["MULTIPLY"]
 202 [-]: LOADK     R23 K1       ; R23 := 0
 203 [-]: CALL      R19 5 1      ; R19(R20,R21,R22,R23)
@@ -1133,7 +1133,7 @@ code size: 44
 211 [-]: SELF      R12 R12 K60  ; R13 := R12; R12 := R12["0xF21555A7"]
 212 [-]: GETGLOBAL R14 K26      ; R14 := Game
 213 [-]: GETTABLE  R14 R14 K61  ; R14 := R14["AVATAR_ENERGY_GAIN_MULTIPLIER"]
-214 [-]: GETGLOBAL R15 K26      ; R15 := Game
+214 [-]: GETGLOBAL R15 K24      ; R15 := Engine
 215 [-]: GETTABLE  R15 R15 K62  ; R15 := R15["MULTIPLY"]
 216 [-]: LOADK     R16 K2       ; R16 := 0
 217 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)

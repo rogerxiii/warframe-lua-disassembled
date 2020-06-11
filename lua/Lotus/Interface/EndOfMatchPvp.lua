@@ -1,7 +1,6 @@
-code size: 142
+code size: 139
 code size: 41
 code size: 38
-code size: 14
 code size: 14
 code size: 14
 code size: 15
@@ -14,7 +13,7 @@ code size: 30
 code size: 58
 code size: 5
 code size: 23
-code size: 68
+code size: 50
 code size: 30
 code size: 43
 code size: 114
@@ -35,7 +34,7 @@ code size: 37
 code size: 39
 code size: 255
 code size: 61
-code size: 834
+code size: 822
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\EndOfMatchPvp.luac 
 
@@ -44,7 +43,7 @@ code size: 834
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  28
+; Max Stack Size:  27
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x329BDC44
   2 [-]: LOADK     R1 K1        ; R1 := "EE.Interface.Utilities"
@@ -76,118 +75,115 @@ code size: 834
  28 [-]: CLOSURE   R14 2        ; R14 := closure(Function #3)
  29 [-]: CLOSURE   R15 3        ; R15 := closure(Function #4)
  30 [-]: CLOSURE   R16 4        ; R16 := closure(Function #5)
- 31 [-]: CLOSURE   R17 5        ; R17 := closure(Function #6)
- 32 [-]: MOVE      R0 R16       ; R0 := R16
- 33 [-]: CLOSURE   R18 6        ; R18 := closure(Function #7)
- 34 [-]: MOVE      R0 R12       ; R0 := R12
- 35 [-]: CLOSURE   R19 7        ; R19 := closure(Function #8)
- 36 [-]: MOVE      R0 R13       ; R0 := R13
- 37 [-]: CLOSURE   R20 8        ; R20 := closure(Function #9)
- 38 [-]: SETGLOBAL R20 K13      ; SetFirstWinOfDay := R20
- 39 [-]: SETGLOBAL R20 K14      ; 0x127519F2 := R20
- 40 [-]: CLOSURE   R20 9        ; R20 := closure(Function #10)
- 41 [-]: MOVE      R0 R6        ; R0 := R6
- 42 [-]: MOVE      R0 R0        ; R0 := R0
- 43 [-]: CLOSURE   R21 10       ; R21 := closure(Function #11)
+ 31 [-]: MOVE      R0 R15       ; R0 := R15
+ 32 [-]: CLOSURE   R17 5        ; R17 := closure(Function #6)
+ 33 [-]: MOVE      R0 R12       ; R0 := R12
+ 34 [-]: CLOSURE   R18 6        ; R18 := closure(Function #7)
+ 35 [-]: MOVE      R0 R13       ; R0 := R13
+ 36 [-]: CLOSURE   R19 7        ; R19 := closure(Function #8)
+ 37 [-]: SETGLOBAL R19 K13      ; SetFirstWinOfDay := R19
+ 38 [-]: SETGLOBAL R19 K14      ; 0x127519F2 := R19
+ 39 [-]: CLOSURE   R19 8        ; R19 := closure(Function #9)
+ 40 [-]: MOVE      R0 R6        ; R0 := R6
+ 41 [-]: MOVE      R0 R0        ; R0 := R0
+ 42 [-]: CLOSURE   R20 9        ; R20 := closure(Function #10)
+ 43 [-]: MOVE      R0 R14       ; R0 := R14
  44 [-]: MOVE      R0 R15       ; R0 := R15
- 45 [-]: MOVE      R0 R16       ; R0 := R16
- 46 [-]: CLOSURE   R22 11       ; R22 := closure(Function #12)
- 47 [-]: MOVE      R0 R1        ; R0 := R1
- 48 [-]: MOVE      R0 R21       ; R0 := R21
- 49 [-]: MOVE      R0 R20       ; R0 := R20
- 50 [-]: MOVE      R0 R3        ; R0 := R3
- 51 [-]: MOVE      R0 R0        ; R0 := R0
- 52 [-]: MOVE      R0 R9        ; R0 := R9
- 53 [-]: SETGLOBAL R22 K15      ; EaseInComplete := R22
- 54 [-]: SETGLOBAL R22 K16      ; 0x7074295A := R22
- 55 [-]: CLOSURE   R22 12       ; R22 := closure(Function #13)
- 56 [-]: MOVE      R0 R4        ; R0 := R4
- 57 [-]: MOVE      R0 R12       ; R0 := R12
- 58 [-]: SETGLOBAL R22 K17      ; InitializeFanfare := R22
- 59 [-]: SETGLOBAL R22 K18      ; 0x254A50A7 := R22
- 60 [-]: CLOSURE   R22 13       ; R22 := closure(Function #14)
- 61 [-]: MOVE      R0 R1        ; R0 := R1
- 62 [-]: MOVE      R0 R10       ; R0 := R10
- 63 [-]: SETGLOBAL R22 K19      ; CreateTitleParticles := R22
- 64 [-]: SETGLOBAL R22 K20      ; 0xF58C77C2 := R22
+ 45 [-]: CLOSURE   R21 10       ; R21 := closure(Function #11)
+ 46 [-]: MOVE      R0 R1        ; R0 := R1
+ 47 [-]: MOVE      R0 R20       ; R0 := R20
+ 48 [-]: MOVE      R0 R19       ; R0 := R19
+ 49 [-]: MOVE      R0 R3        ; R0 := R3
+ 50 [-]: MOVE      R0 R0        ; R0 := R0
+ 51 [-]: MOVE      R0 R9        ; R0 := R9
+ 52 [-]: SETGLOBAL R21 K15      ; EaseInComplete := R21
+ 53 [-]: SETGLOBAL R21 K16      ; 0x7074295A := R21
+ 54 [-]: CLOSURE   R21 11       ; R21 := closure(Function #12)
+ 55 [-]: MOVE      R0 R4        ; R0 := R4
+ 56 [-]: SETGLOBAL R21 K17      ; InitializeFanfare := R21
+ 57 [-]: SETGLOBAL R21 K18      ; 0x254A50A7 := R21
+ 58 [-]: CLOSURE   R21 12       ; R21 := closure(Function #13)
+ 59 [-]: MOVE      R0 R1        ; R0 := R1
+ 60 [-]: MOVE      R0 R10       ; R0 := R10
+ 61 [-]: SETGLOBAL R21 K19      ; CreateTitleParticles := R21
+ 62 [-]: SETGLOBAL R21 K20      ; 0xF58C77C2 := R21
+ 63 [-]: CLOSURE   R21 13       ; R21 := closure(Function #14)
+ 64 [-]: MOVE      R0 R7        ; R0 := R7
  65 [-]: CLOSURE   R22 14       ; R22 := closure(Function #15)
- 66 [-]: MOVE      R0 R7        ; R0 := R7
- 67 [-]: CLOSURE   R23 15       ; R23 := closure(Function #16)
- 68 [-]: MOVE      R0 R22       ; R0 := R22
- 69 [-]: SETGLOBAL R23 K21      ; PopulateMapVote := R23
- 70 [-]: SETGLOBAL R23 K22      ; 0x2CBA637D := R23
- 71 [-]: CLOSURE   R23 16       ; R23 := closure(Function #17)
- 72 [-]: MOVE      R0 R3        ; R0 := R3
- 73 [-]: MOVE      R0 R10       ; R0 := R10
- 74 [-]: MOVE      R0 R12       ; R0 := R12
- 75 [-]: MOVE      R0 R5        ; R0 := R5
- 76 [-]: MOVE      R0 R6        ; R0 := R6
- 77 [-]: SETGLOBAL R23 K23      ; Initialize := R23
- 78 [-]: SETGLOBAL R23 K24      ; 0x62648036 := R23
- 79 [-]: CLOSURE   R23 17       ; R23 := closure(Function #18)
- 80 [-]: MOVE      R0 R3        ; R0 := R3
- 81 [-]: MOVE      R0 R22       ; R0 := R22
- 82 [-]: SETGLOBAL R23 K25      ; Update := R23
- 83 [-]: SETGLOBAL R23 K26      ; 0x8C7099E9 := R23
- 84 [-]: CLOSURE   R23 18       ; R23 := closure(Function #19)
- 85 [-]: MOVE      R0 R0        ; R0 := R0
- 86 [-]: SETGLOBAL R23 K27      ; UpdateMapVote := R23
- 87 [-]: SETGLOBAL R23 K28      ; 0x2DB0D275 := R23
- 88 [-]: CLOSURE   R23 19       ; R23 := closure(Function #20)
- 89 [-]: MOVE      R0 R7        ; R0 := R7
- 90 [-]: MOVE      R0 R0        ; R0 := R0
- 91 [-]: SETGLOBAL R23 K29      ; OnMapVotingFinished := R23
- 92 [-]: SETGLOBAL R23 K30      ; 0x32312C0 := R23
- 93 [-]: CLOSURE   R23 20       ; R23 := closure(Function #21)
- 94 [-]: MOVE      R0 R0        ; R0 := R0
- 95 [-]: SETGLOBAL R23 K31      ; MapVoteFocused := R23
- 96 [-]: SETGLOBAL R23 K32      ; 0x97E04779 := R23
- 97 [-]: CLOSURE   R23 21       ; R23 := closure(Function #22)
- 98 [-]: SETGLOBAL R23 K33      ; MapVoteUnfocused := R23
- 99 [-]: SETGLOBAL R23 K34      ; 0xDF4AAAC9 := R23
-100 [-]: CLOSURE   R23 22       ; R23 := closure(Function #23)
-101 [-]: MOVE      R0 R8        ; R0 := R8
-102 [-]: MOVE      R0 R0        ; R0 := R0
-103 [-]: SETGLOBAL R23 K35      ; MapVotePressed := R23
-104 [-]: SETGLOBAL R23 K36      ; 0xCCDAFC09 := R23
-105 [-]: CLOSURE   R23 23       ; R23 := closure(Function #24)
-106 [-]: MOVE      R0 R6        ; R0 := R6
-107 [-]: MOVE      R0 R0        ; R0 := R0
-108 [-]: MOVE      R0 R4        ; R0 := R4
+ 66 [-]: MOVE      R0 R21       ; R0 := R21
+ 67 [-]: SETGLOBAL R22 K21      ; PopulateMapVote := R22
+ 68 [-]: SETGLOBAL R22 K22      ; 0x2CBA637D := R22
+ 69 [-]: CLOSURE   R22 15       ; R22 := closure(Function #16)
+ 70 [-]: MOVE      R0 R3        ; R0 := R3
+ 71 [-]: MOVE      R0 R10       ; R0 := R10
+ 72 [-]: MOVE      R0 R12       ; R0 := R12
+ 73 [-]: MOVE      R0 R5        ; R0 := R5
+ 74 [-]: MOVE      R0 R6        ; R0 := R6
+ 75 [-]: SETGLOBAL R22 K23      ; Initialize := R22
+ 76 [-]: SETGLOBAL R22 K24      ; 0x62648036 := R22
+ 77 [-]: CLOSURE   R22 16       ; R22 := closure(Function #17)
+ 78 [-]: MOVE      R0 R3        ; R0 := R3
+ 79 [-]: MOVE      R0 R21       ; R0 := R21
+ 80 [-]: SETGLOBAL R22 K25      ; Update := R22
+ 81 [-]: SETGLOBAL R22 K26      ; 0x8C7099E9 := R22
+ 82 [-]: CLOSURE   R22 17       ; R22 := closure(Function #18)
+ 83 [-]: MOVE      R0 R0        ; R0 := R0
+ 84 [-]: SETGLOBAL R22 K27      ; UpdateMapVote := R22
+ 85 [-]: SETGLOBAL R22 K28      ; 0x2DB0D275 := R22
+ 86 [-]: CLOSURE   R22 18       ; R22 := closure(Function #19)
+ 87 [-]: MOVE      R0 R7        ; R0 := R7
+ 88 [-]: MOVE      R0 R0        ; R0 := R0
+ 89 [-]: SETGLOBAL R22 K29      ; OnMapVotingFinished := R22
+ 90 [-]: SETGLOBAL R22 K30      ; 0x32312C0 := R22
+ 91 [-]: CLOSURE   R22 19       ; R22 := closure(Function #20)
+ 92 [-]: MOVE      R0 R0        ; R0 := R0
+ 93 [-]: SETGLOBAL R22 K31      ; MapVoteFocused := R22
+ 94 [-]: SETGLOBAL R22 K32      ; 0x97E04779 := R22
+ 95 [-]: CLOSURE   R22 20       ; R22 := closure(Function #21)
+ 96 [-]: SETGLOBAL R22 K33      ; MapVoteUnfocused := R22
+ 97 [-]: SETGLOBAL R22 K34      ; 0xDF4AAAC9 := R22
+ 98 [-]: CLOSURE   R22 21       ; R22 := closure(Function #22)
+ 99 [-]: MOVE      R0 R8        ; R0 := R8
+100 [-]: MOVE      R0 R0        ; R0 := R0
+101 [-]: SETGLOBAL R22 K35      ; MapVotePressed := R22
+102 [-]: SETGLOBAL R22 K36      ; 0xCCDAFC09 := R22
+103 [-]: CLOSURE   R22 22       ; R22 := closure(Function #23)
+104 [-]: MOVE      R0 R6        ; R0 := R6
+105 [-]: MOVE      R0 R0        ; R0 := R0
+106 [-]: MOVE      R0 R4        ; R0 := R4
+107 [-]: MOVE      R0 R15       ; R0 := R15
+108 [-]: MOVE      R0 R5        ; R0 := R5
 109 [-]: MOVE      R0 R16       ; R0 := R16
-110 [-]: MOVE      R0 R5        ; R0 := R5
-111 [-]: MOVE      R0 R17       ; R0 := R17
-112 [-]: MOVE      R0 R2        ; R0 := R2
-113 [-]: MOVE      R0 R1        ; R0 := R1
-114 [-]: CLOSURE   R24 24       ; R24 := closure(Function #25)
-115 [-]: CLOSURE   R25 25       ; R25 := closure(Function #26)
-116 [-]: MOVE      R0 R0        ; R0 := R0
-117 [-]: MOVE      R0 R4        ; R0 := R4
-118 [-]: MOVE      R0 R18       ; R0 := R18
+110 [-]: MOVE      R0 R2        ; R0 := R2
+111 [-]: MOVE      R0 R1        ; R0 := R1
+112 [-]: CLOSURE   R23 23       ; R23 := closure(Function #24)
+113 [-]: CLOSURE   R24 24       ; R24 := closure(Function #25)
+114 [-]: MOVE      R0 R0        ; R0 := R0
+115 [-]: MOVE      R0 R4        ; R0 := R4
+116 [-]: MOVE      R0 R17       ; R0 := R17
+117 [-]: MOVE      R0 R1        ; R0 := R1
+118 [-]: CLOSURE   R25 25       ; R25 := closure(Function #26)
 119 [-]: MOVE      R0 R1        ; R0 := R1
-120 [-]: CLOSURE   R26 26       ; R26 := closure(Function #27)
-121 [-]: MOVE      R0 R1        ; R0 := R1
-122 [-]: MOVE      R0 R4        ; R0 := R4
-123 [-]: CLOSURE   R27 27       ; R27 := closure(Function #28)
-124 [-]: MOVE      R0 R14       ; R0 := R14
-125 [-]: MOVE      R0 R15       ; R0 := R15
-126 [-]: MOVE      R0 R16       ; R0 := R16
-127 [-]: MOVE      R0 R6        ; R0 := R6
-128 [-]: MOVE      R0 R17       ; R0 := R17
-129 [-]: MOVE      R0 R4        ; R0 := R4
-130 [-]: MOVE      R0 R13       ; R0 := R13
-131 [-]: MOVE      R0 R0        ; R0 := R0
-132 [-]: MOVE      R0 R1        ; R0 := R1
+120 [-]: MOVE      R0 R4        ; R0 := R4
+121 [-]: CLOSURE   R26 26       ; R26 := closure(Function #27)
+122 [-]: MOVE      R0 R14       ; R0 := R14
+123 [-]: MOVE      R0 R15       ; R0 := R15
+124 [-]: MOVE      R0 R6        ; R0 := R6
+125 [-]: MOVE      R0 R16       ; R0 := R16
+126 [-]: MOVE      R0 R4        ; R0 := R4
+127 [-]: MOVE      R0 R13       ; R0 := R13
+128 [-]: MOVE      R0 R0        ; R0 := R0
+129 [-]: MOVE      R0 R1        ; R0 := R1
+130 [-]: MOVE      R0 R23       ; R0 := R23
+131 [-]: MOVE      R0 R22       ; R0 := R22
+132 [-]: MOVE      R0 R25       ; R0 := R25
 133 [-]: MOVE      R0 R24       ; R0 := R24
-134 [-]: MOVE      R0 R23       ; R0 := R23
-135 [-]: MOVE      R0 R26       ; R0 := R26
-136 [-]: MOVE      R0 R25       ; R0 := R25
-137 [-]: MOVE      R0 R19       ; R0 := R19
-138 [-]: MOVE      R0 R22       ; R0 := R22
-139 [-]: MOVE      R0 R12       ; R0 := R12
-140 [-]: SETGLOBAL R27 K37      ; PopulateScoreboard := R27
-141 [-]: SETGLOBAL R27 K38      ; 0x12BA04FA := R27
-142 [-]: RETURN    R0 1         ; return 
+134 [-]: MOVE      R0 R18       ; R0 := R18
+135 [-]: MOVE      R0 R21       ; R0 := R21
+136 [-]: MOVE      R0 R12       ; R0 := R12
+137 [-]: SETGLOBAL R26 K37      ; PopulateScoreboard := R26
+138 [-]: SETGLOBAL R26 K38      ; 0x12BA04FA := R26
+139 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -307,7 +303,7 @@ code size: 834
   5 [-]: JMP       11           ; PC := 11
   6 [-]: GETGLOBAL R0 K1        ; R0 := gGameRules
   7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x8B598ED4"]
-  8 [-]: GETGLOBAL R2 K3        ; R2 := gLotusSectorGameRulesType
+  8 [-]: GETGLOBAL R2 K3        ; R2 := gLotusPvpGameRulesType
   9 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  10 [-]: JMP       13           ; PC := 13
  11 [-]: MOVE      R0 R0        ; R0 := R0
@@ -332,7 +328,7 @@ code size: 834
   5 [-]: JMP       11           ; PC := 11
   6 [-]: GETGLOBAL R0 K1        ; R0 := gGameRules
   7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x8B598ED4"]
-  8 [-]: GETGLOBAL R2 K3        ; R2 := gLotusPvpGameRulesType
+  8 [-]: GETGLOBAL R2 K3        ; R2 := gLotusPveDeathmatchGameRulesType
   9 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
  10 [-]: JMP       13           ; PC := 13
  11 [-]: MOVE      R0 R0        ; R0 := R0
@@ -345,31 +341,6 @@ code size: 834
 ;
 ; Name:            
 ; Defined at line: 79
-; #Upvalues:       0
-; #Parameters:     0
-; Is_vararg:       0
-; Max Stack Size:  3
-
-  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
-  2 [-]: GETGLOBAL R1 K1        ; R1 := gGameRules
-  3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: TEST      R0 1         ; if R0 then PC := 11
-  5 [-]: JMP       11           ; PC := 11
-  6 [-]: GETGLOBAL R0 K1        ; R0 := gGameRules
-  7 [-]: SELF      R0 R0 K2     ; R1 := R0; R0 := R0["0x8B598ED4"]
-  8 [-]: GETGLOBAL R2 K3        ; R2 := gLotusPveDeathmatchGameRulesType
-  9 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 10 [-]: JMP       13           ; PC := 13
- 11 [-]: MOVE      R0 R0        ; R0 := R0
- 12 [-]: MOVE      R0 R1        ; R0 := R1
- 13 [-]: RETURN    R0 2         ; return R0
- 14 [-]: RETURN    R0 1         ; return 
-
-
-; Function #6:
-;
-; Name:            
-; Defined at line: 83
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -392,10 +363,10 @@ code size: 834
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #7:
+; Function #6:
 ;
 ; Name:            
-; Defined at line: 87
+; Defined at line: 83
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -414,10 +385,10 @@ code size: 834
  11 [-]: RETURN    R0 1         ; return 
 
 
-; Function #8:
+; Function #7:
 ;
 ; Name:            
-; Defined at line: 91
+; Defined at line: 87
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -467,10 +438,10 @@ code size: 834
  42 [-]: RETURN    R0 1         ; return 
 
 
-; Function #9:
+; Function #8:
 ;
 ; Name:            
-; Defined at line: 104
+; Defined at line: 100
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -507,10 +478,10 @@ code size: 834
  29 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10:
+; Function #9:
 ;
 ; Name:            
-; Defined at line: 115
+; Defined at line: 111
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -613,7 +584,7 @@ code size: 834
  95 [-]: SETLIST   R11 1 1      ; R11[(1-1)*FPF+i] := R(11+i), 1 <= i <= 1
  96 [-]: LOADK     R12 K15      ; R12 := 0.5
  97 [-]: MOVE      R13 R0       ; R13 := R0
- 98 [-]: CLOSURE   R14 0        ; R14 := closure(Function #10.1)
+ 98 [-]: CLOSURE   R14 0        ; R14 := closure(Function #9.1)
  99 [-]: CALL      R6 9 1       ; R6(R7,R8,R9,R10,R11,R12,R13,R14)
 100 [-]: JMP       115          ; PC := 115
 101 [-]: GETGLOBAL R6 K9        ; R6 := 0x52E17A90
@@ -633,10 +604,10 @@ code size: 834
 115 [-]: RETURN    R0 1         ; return 
 
 
-; Function #10.1:
+; Function #9.1:
 ;
 ; Name:            
-; Defined at line: 127
+; Defined at line: 123
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -687,10 +658,10 @@ code size: 834
  43 [-]: RETURN    R0 1         ; return 
 
 
-; Function #11:
+; Function #10:
 ;
 ; Name:            
-; Defined at line: 138
+; Defined at line: 134
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -728,10 +699,10 @@ code size: 834
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12:
+; Function #11:
 ;
 ; Name:            
-; Defined at line: 156
+; Defined at line: 152
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -773,7 +744,7 @@ code size: 834
  34 [-]: SETLIST   R10 1 1      ; R10[(1-1)*FPF+i] := R(10+i), 1 <= i <= 1
  35 [-]: MOVE      R11 R1       ; R11 := R1
  36 [-]: LOADK     R12 K5       ; R12 := 0
- 37 [-]: CLOSURE   R13 0        ; R13 := closure(Function #12.1)
+ 37 [-]: CLOSURE   R13 0        ; R13 := closure(Function #11.1)
  38 [-]: GETUPVAL  R0 U2        ; R0 := U2
  39 [-]: MOVE      R0 R2        ; R0 := R2
  40 [-]: MOVE      R0 R4        ; R0 := R4
@@ -786,7 +757,7 @@ code size: 834
  47 [-]: LOADK     R9 K16       ; R9 := 0.25
  48 [-]: LOADK     R10 K17      ; R10 := 0.10000000149012
  49 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 50 [-]: CLOSURE   R8 1         ; R8 := closure(Function #12.2)
+ 50 [-]: CLOSURE   R8 1         ; R8 := closure(Function #11.2)
  51 [-]: GETUPVAL  R0 U0        ; R0 := U0
  52 [-]: GETUPVAL  R0 U4        ; R0 := U4
  53 [-]: MOVE      R0 R0        ; R0 := R0
@@ -797,10 +768,10 @@ code size: 834
  58 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12.1:
+; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 164
+; Defined at line: 160
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -813,10 +784,10 @@ code size: 834
   5 [-]: RETURN    R0 1         ; return 
 
 
-; Function #12.2:
+; Function #11.2:
 ;
 ; Name:            
-; Defined at line: 169
+; Defined at line: 165
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -847,14 +818,14 @@ code size: 834
  23 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13:
+; Function #12:
 ;
 ; Name:            
-; Defined at line: 179
-; #Upvalues:       2
+; Defined at line: 175
+; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
@@ -868,68 +839,50 @@ code size: 834
  10 [-]: JMP       12           ; PC := 12
  11 [-]: MOVE      R1 R0        ; R1 := R0
  12 [-]: MOVE      R1 R1        ; R1 := R1
- 13 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 14 [-]: CALL      R2 1 2       ; R2 := R2()
- 15 [-]: GETGLOBAL R3 K4        ; R3 := 0x400E7765
- 16 [-]: MOVE      R4 R2        ; R4 := R2
- 17 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 18 [-]: TEST      R3 1         ; if R3 then PC := 31
- 19 [-]: JMP       31           ; PC := 31
- 20 [-]: GETTABLE  R3 R2 K5     ; R3 := R2["missionType"]
- 21 [-]: GETGLOBAL R4 K6        ; R4 := Lotus_Game
- 22 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["MT_SECTOR"]
- 23 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 31
- 24 [-]: JMP       31           ; PC := 31
- 25 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 26 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x17028E8F"]
- 27 [-]: LOADK     R5 K10       ; R5 := "FanFare.Title.Title.text"
- 28 [-]: LOADK     R6 K11       ; R6 := ""
- 29 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 30 [-]: JMP       68           ; PC := 68
- 31 [-]: TEST      R1 0         ; if not R1 then PC := 68
- 32 [-]: JMP       68           ; PC := 68
- 33 [-]: TEST      R0 1         ; if R0 then PC := 58
- 34 [-]: JMP       58           ; PC := 58
- 35 [-]: GETGLOBAL R3 K12       ; R3 := 0x8C64AFA9
- 36 [-]: GETGLOBAL R4 K8        ; R4 := mMovie
- 37 [-]: LOADK     R5 K13       ; R5 := "FanFare.Title.gotoAndStop"
- 38 [-]: LOADK     R6 K14       ; R6 := 2
- 39 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 40 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 41 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x17028E8F"]
- 42 [-]: LOADK     R5 K10       ; R5 := "FanFare.Title.Title.text"
- 43 [-]: LOADK     R6 K15       ; R6 := "/Lotus/Language/Menu/HUD_MissionFailed"
- 44 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 45 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 46 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x17028E8F"]
- 47 [-]: LOADK     R5 K16       ; R5 := "FanFare.Title.TitleShadow.text"
- 48 [-]: LOADK     R6 K15       ; R6 := "/Lotus/Language/Menu/HUD_MissionFailed"
- 49 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 50 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 51 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x17028E8F"]
- 52 [-]: LOADK     R5 K17       ; R5 := "FanFare.Title.Title"
- 53 [-]: LOADK     R6 K18       ; R6 := "_color"
- 54 [-]: GETGLOBAL R7 K19       ; R7 := _G
- 55 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["UIColor_NegativeReputation"]
- 56 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 57 [-]: JMP       68           ; PC := 68
- 58 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 59 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x17028E8F"]
- 60 [-]: LOADK     R5 K10       ; R5 := "FanFare.Title.Title.text"
- 61 [-]: LOADK     R6 K21       ; R6 := "/Lotus/Language/Menu/MissionComplete"
- 62 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 63 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 64 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0x17028E8F"]
- 65 [-]: LOADK     R5 K16       ; R5 := "FanFare.Title.TitleShadow.text"
- 66 [-]: LOADK     R6 K21       ; R6 := "/Lotus/Language/Menu/MissionComplete"
- 67 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 68 [-]: RETURN    R0 1         ; return 
+ 13 [-]: TEST      R1 0         ; if not R1 then PC := 50
+ 14 [-]: JMP       50           ; PC := 50
+ 15 [-]: TEST      R0 1         ; if R0 then PC := 40
+ 16 [-]: JMP       40           ; PC := 40
+ 17 [-]: GETGLOBAL R2 K4        ; R2 := 0x8C64AFA9
+ 18 [-]: GETGLOBAL R3 K5        ; R3 := mMovie
+ 19 [-]: LOADK     R4 K6        ; R4 := "FanFare.Title.gotoAndStop"
+ 20 [-]: LOADK     R5 K7        ; R5 := 2
+ 21 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 22 [-]: GETGLOBAL R2 K5        ; R2 := mMovie
+ 23 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x17028E8F"]
+ 24 [-]: LOADK     R4 K9        ; R4 := "FanFare.Title.Title.text"
+ 25 [-]: LOADK     R5 K10       ; R5 := "/Lotus/Language/Menu/HUD_MissionFailed"
+ 26 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 27 [-]: GETGLOBAL R2 K5        ; R2 := mMovie
+ 28 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x17028E8F"]
+ 29 [-]: LOADK     R4 K11       ; R4 := "FanFare.Title.TitleShadow.text"
+ 30 [-]: LOADK     R5 K10       ; R5 := "/Lotus/Language/Menu/HUD_MissionFailed"
+ 31 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 32 [-]: GETGLOBAL R2 K5        ; R2 := mMovie
+ 33 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x17028E8F"]
+ 34 [-]: LOADK     R4 K12       ; R4 := "FanFare.Title.Title"
+ 35 [-]: LOADK     R5 K13       ; R5 := "_color"
+ 36 [-]: GETGLOBAL R6 K14       ; R6 := _G
+ 37 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["UIColor_NegativeReputation"]
+ 38 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
+ 39 [-]: JMP       50           ; PC := 50
+ 40 [-]: GETGLOBAL R2 K5        ; R2 := mMovie
+ 41 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x17028E8F"]
+ 42 [-]: LOADK     R4 K9        ; R4 := "FanFare.Title.Title.text"
+ 43 [-]: LOADK     R5 K16       ; R5 := "/Lotus/Language/Menu/MissionComplete"
+ 44 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 45 [-]: GETGLOBAL R2 K5        ; R2 := mMovie
+ 46 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x17028E8F"]
+ 47 [-]: LOADK     R4 K11       ; R4 := "FanFare.Title.TitleShadow.text"
+ 48 [-]: LOADK     R5 K16       ; R5 := "/Lotus/Language/Menu/MissionComplete"
+ 49 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 50 [-]: RETURN    R0 1         ; return 
 
 
-; Function #14:
+; Function #13:
 ;
 ; Name:            
-; Defined at line: 201
+; Defined at line: 193
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -967,10 +920,10 @@ code size: 834
  30 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15:
+; Function #14:
 ;
 ; Name:            
-; Defined at line: 213
+; Defined at line: 205
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -986,7 +939,7 @@ code size: 834
   8 [-]: CONCAT    R3 R3 R4     ; R3 := R3 .. R4
   9 [-]: LOADK     R4 K4        ; R4 := "/Lotus/Language/Menu/PvpMapVoteHint"
  10 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 11 [-]: CLOSURE   R1 0         ; R1 := closure(Function #15.1)
+ 11 [-]: CLOSURE   R1 0         ; R1 := closure(Function #14.1)
  12 [-]: GETGLOBAL R2 K1        ; R2 := mMovie
  13 [-]: SELF      R2 R2 K2     ; R3 := R2; R2 := R2["0x17028E8F"]
  14 [-]: MOVE      R4 R0        ; R4 := R0
@@ -1021,10 +974,10 @@ code size: 834
  43 [-]: RETURN    R0 1         ; return 
 
 
-; Function #15.1:
+; Function #14.1:
 ;
 ; Name:            
-; Defined at line: 221
+; Defined at line: 213
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1146,10 +1099,10 @@ code size: 834
 114 [-]: RETURN    R0 1         ; return 
 
 
-; Function #16:
+; Function #15:
 ;
 ; Name:            
-; Defined at line: 248
+; Defined at line: 240
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1160,10 +1113,10 @@ code size: 834
   3 [-]: RETURN    R0 1         ; return 
 
 
-; Function #17:
+; Function #16:
 ;
 ; Name:            
-; Defined at line: 252
+; Defined at line: 244
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1203,10 +1156,10 @@ code size: 834
  32 [-]: RETURN    R0 1         ; return 
 
 
-; Function #18:
+; Function #17:
 ;
 ; Name:            
-; Defined at line: 266
+; Defined at line: 258
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1251,10 +1204,10 @@ code size: 834
  37 [-]: RETURN    R0 1         ; return 
 
 
-; Function #19:
+; Function #18:
 ;
 ; Name:            
-; Defined at line: 279
+; Defined at line: 271
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1276,7 +1229,7 @@ code size: 834
  14 [-]: JMP       16           ; PC := 16
  15 [-]: RETURN    R0 1         ; return 
  16 [-]: LOADK     R0 K4        ; R0 := "Fanfare.ConclaveScore.MapVote"
- 17 [-]: CLOSURE   R1 0         ; R1 := closure(Function #19.1)
+ 17 [-]: CLOSURE   R1 0         ; R1 := closure(Function #18.1)
  18 [-]: GETGLOBAL R2 K3        ; R2 := gGameRules
  19 [-]: SELF      R2 R2 K5     ; R3 := R2; R2 := R2["0xF2E4C0C5"]
  20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -1295,10 +1248,10 @@ code size: 834
  33 [-]: RETURN    R0 1         ; return 
 
 
-; Function #19.1:
+; Function #18.1:
 ;
 ; Name:            
-; Defined at line: 291
+; Defined at line: 283
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1316,10 +1269,10 @@ code size: 834
  10 [-]: RETURN    R0 1         ; return 
 
 
-; Function #20:
+; Function #19:
 ;
 ; Name:            
-; Defined at line: 300
+; Defined at line: 292
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1457,10 +1410,10 @@ code size: 834
 130 [-]: RETURN    R0 1         ; return 
 
 
-; Function #21:
+; Function #20:
 ;
 ; Name:            
-; Defined at line: 324
+; Defined at line: 316
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1492,10 +1445,10 @@ code size: 834
  24 [-]: RETURN    R0 1         ; return 
 
 
-; Function #22:
+; Function #21:
 ;
 ; Name:            
-; Defined at line: 330
+; Defined at line: 322
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1516,10 +1469,10 @@ code size: 834
  13 [-]: RETURN    R0 1         ; return 
 
 
-; Function #23:
+; Function #22:
 ;
 ; Name:            
-; Defined at line: 334
+; Defined at line: 326
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1559,7 +1512,7 @@ code size: 834
  32 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  33 [-]: SUB       R4 R0 K9     ; R4 := R0 - 1
  34 [-]: CALL      R1 4 1       ; R1(R2,R3,R4)
- 35 [-]: CLOSURE   R1 0         ; R1 := closure(Function #23.1)
+ 35 [-]: CLOSURE   R1 0         ; R1 := closure(Function #22.1)
  36 [-]: GETUPVAL  R0 U1        ; R0 := U1
  37 [-]: MOVE      R2 R1        ; R2 := R1
  38 [-]: LOADK     R3 K9        ; R3 := 1
@@ -1580,10 +1533,10 @@ code size: 834
  53 [-]: RETURN    R0 1         ; return 
 
 
-; Function #23.1:
+; Function #22.1:
 ;
 ; Name:            
-; Defined at line: 344
+; Defined at line: 336
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1652,10 +1605,10 @@ code size: 834
  61 [-]: RETURN    R0 1         ; return 
 
 
-; Function #24:
+; Function #23:
 ;
 ; Name:            
-; Defined at line: 363
+; Defined at line: 355
 ; #Upvalues:       8
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -1915,7 +1868,7 @@ code size: 834
 252 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
 253 [-]: SETTABLE  R19 K61 K28  ; R19["mForcedHorizontalSeparation"] := 0
 254 [-]: SETTABLE  R19 K62 K63  ; R19["mForcedVerticalSeparation"] := 33
-255 [-]: CLOSURE   R20 0        ; R20 := closure(Function #24.1)
+255 [-]: CLOSURE   R20 0        ; R20 := closure(Function #23.1)
 256 [-]: GETUPVAL  R0 U7        ; R0 := U7
 257 [-]: GETUPVAL  R0 U1        ; R0 := U1
 258 [-]: MOVE      R0 R8        ; R0 := R8
@@ -2070,7 +2023,7 @@ code size: 834
 407 [-]: GETGLOBAL R38 K80      ; R38 := table
 408 [-]: GETTABLE  R38 R38 K93  ; R38 := R38["0xA5C58010"]
 409 [-]: MOVE      R39 R23      ; R39 := R23
-410 [-]: CLOSURE   R40 1        ; R40 := closure(Function #24.2)
+410 [-]: CLOSURE   R40 1        ; R40 := closure(Function #23.2)
 411 [-]: CALL      R38 3 1      ; R38(R39,R40)
 412 [-]: LOADK     R38 K71      ; R38 := 1
 413 [-]: LEN       R39 R23      ; R39 := # R23
@@ -2091,7 +2044,7 @@ code size: 834
 428 [-]: TEST      R8 1         ; if R8 then PC := 436
 429 [-]: JMP       436          ; PC := 436
 430 [-]: SELF      R42 R19 K96  ; R43 := R19; R42 := R19["0x9D2060CB"]
-431 [-]: CLOSURE   R44 2        ; R44 := closure(Function #24.3)
+431 [-]: CLOSURE   R44 2        ; R44 := closure(Function #23.3)
 432 [-]: MOVE      R0 R20       ; R0 := R20
 433 [-]: MOVE      R0 R21       ; R0 := R21
 434 [-]: MOVE      R0 R22       ; R0 := R22
@@ -2102,10 +2055,10 @@ code size: 834
 439 [-]: RETURN    R0 1         ; return 
 
 
-; Function #24.1:
+; Function #23.1:
 ;
 ; Name:            
-; Defined at line: 435
+; Defined at line: 427
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2333,10 +2286,10 @@ code size: 834
 220 [-]: RETURN    R0 1         ; return 
 
 
-; Function #24.2:
+; Function #23.2:
 ;
 ; Name:            
-; Defined at line: 547
+; Defined at line: 539
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2380,10 +2333,10 @@ code size: 834
  36 [-]: RETURN    R0 1         ; return 
 
 
-; Function #24.3:
+; Function #23.3:
 ;
 ; Name:            
-; Defined at line: 564
+; Defined at line: 556
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2428,10 +2381,10 @@ code size: 834
  37 [-]: RETURN    R0 1         ; return 
 
 
-; Function #25:
+; Function #24:
 ;
 ; Name:            
-; Defined at line: 589
+; Defined at line: 581
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2478,10 +2431,10 @@ code size: 834
  39 [-]: RETURN    R0 1         ; return 
 
 
-; Function #26:
+; Function #25:
 ;
 ; Name:            
-; Defined at line: 600
+; Defined at line: 592
 ; #Upvalues:       4
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2744,10 +2697,10 @@ code size: 834
 255 [-]: RETURN    R0 1         ; return 
 
 
-; Function #27:
+; Function #26:
 ;
 ; Name:            
-; Defined at line: 659
+; Defined at line: 651
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2816,14 +2769,14 @@ code size: 834
  61 [-]: RETURN    R0 1         ; return 
 
 
-; Function #28:
+; Function #27:
 ;
 ; Name:            
-; Defined at line: 682
-; #Upvalues:       16
+; Defined at line: 674
+; #Upvalues:       15
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  89
+; Max Stack Size:  88
 
   1 [-]: EQ        1 R0 K0      ; if R0 == "true" then PC := 4
   2 [-]: JMP       4            ; PC := 4
@@ -2834,830 +2787,818 @@ code size: 834
   7 [-]: GETUPVAL  R2 U1        ; R2 := U1
   8 [-]: CALL      R2 1 2       ; R2 := R2()
   9 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 10 [-]: CALL      R3 1 2       ; R3 := R3()
- 11 [-]: GETUPVAL  R4 U3        ; R4 := U3
- 12 [-]: GETGLOBAL R5 K1        ; R5 := Lotus_Game
- 13 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["PVPMODE_SPEEDBALL"]
- 14 [-]: EQ        1 R4 R5      ; if R4 == R5 then PC := 17
- 15 [-]: JMP       17           ; PC := 17
- 16 [-]: MOVE      R4 R0        ; R4 := R0
- 17 [-]: MOVE      R4 R1        ; R4 := R1
- 18 [-]: GETUPVAL  R5 U4        ; R5 := U4
- 19 [-]: CALL      R5 1 2       ; R5 := R5()
- 20 [-]: GETGLOBAL R6 K3        ; R6 := mMovie
- 21 [-]: SELF      R6 R6 K4     ; R7 := R6; R6 := R6["0x17028E8F"]
- 22 [-]: LOADK     R8 K5        ; R8 := "FanFare.Label.text"
- 23 [-]: LOADK     R9 K6        ; R9 := " "
- 24 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 25 [-]: GETGLOBAL R6 K3        ; R6 := mMovie
- 26 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6["0x1C19D966"]
- 27 [-]: LOADK     R8 K8        ; R8 := "FanFare.ConclaveScore"
- 28 [-]: LOADK     R9 K9        ; R9 := "_visible"
- 29 [-]: TESTSET   R10 R2 1     ; if R2 then PC := 32 else R10 := R2
- 30 [-]: JMP       32           ; PC := 32
- 31 [-]: MOVE      R10 R3       ; R10 := R3
- 32 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 33 [-]: GETGLOBAL R6 K3        ; R6 := mMovie
- 34 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6["0x1C19D966"]
- 35 [-]: LOADK     R8 K10       ; R8 := "FanFare.Title.Conclave"
- 36 [-]: LOADK     R9 K9        ; R9 := "_visible"
- 37 [-]: TESTSET   R10 R2 1     ; if R2 then PC := 40 else R10 := R2
- 38 [-]: JMP       40           ; PC := 40
- 39 [-]: MOVE      R10 R3       ; R10 := R3
- 40 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 41 [-]: GETGLOBAL R6 K11       ; R6 := _T
- 42 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["eomScreenMode"]
- 43 [-]: GETUPVAL  R7 U5        ; R7 := U5
- 44 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["ACTUAL_EOM"]
- 45 [-]: EQ        1 R6 R7      ; if R6 == R7 then PC := 48
- 46 [-]: JMP       48           ; PC := 48
- 47 [-]: MOVE      R6 R0        ; R6 := R0
- 48 [-]: MOVE      R6 R1        ; R6 := R1
- 49 [-]: LOADK     R7 K14       ; R7 := ""
- 50 [-]: GETGLOBAL R8 K15       ; R8 := 0x400E7765
- 51 [-]: GETGLOBAL R9 K16       ; R9 := gGameRules
- 52 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 53 [-]: TEST      R8 1         ; if R8 then PC := 59
- 54 [-]: JMP       59           ; PC := 59
- 55 [-]: GETGLOBAL R8 K16       ; R8 := gGameRules
- 56 [-]: SELF      R8 R8 K17    ; R9 := R8; R8 := R8["0x84D07DF8"]
- 57 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 58 [-]: MOVE      R7 R8        ; R7 := R8
- 59 [-]: GETUPVAL  R8 U3        ; R8 := U3
- 60 [-]: GETGLOBAL R9 K1        ; R9 := Lotus_Game
- 61 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["PVPMODE_DEATHMATCH"]
- 62 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 65
- 63 [-]: JMP       65           ; PC := 65
- 64 [-]: MOVE      R8 R0        ; R8 := R0
- 65 [-]: MOVE      R8 R1        ; R8 := R1
- 66 [-]: GETGLOBAL R9 K3        ; R9 := mMovie
- 67 [-]: SELF      R9 R9 K7     ; R10 := R9; R9 := R9["0x1C19D966"]
- 68 [-]: LOADK     R11 K19      ; R11 := "FanFare.Title.Subtitle"
- 69 [-]: LOADK     R12 K9       ; R12 := "_visible"
- 70 [-]: TEST      R1 1         ; if R1 then PC := 74
+ 10 [-]: GETGLOBAL R4 K1        ; R4 := Lotus_Game
+ 11 [-]: GETTABLE  R4 R4 K2     ; R4 := R4["PVPMODE_SPEEDBALL"]
+ 12 [-]: EQ        1 R3 R4      ; if R3 == R4 then PC := 15
+ 13 [-]: JMP       15           ; PC := 15
+ 14 [-]: MOVE      R3 R0        ; R3 := R0
+ 15 [-]: MOVE      R3 R1        ; R3 := R1
+ 16 [-]: GETUPVAL  R4 U3        ; R4 := U3
+ 17 [-]: CALL      R4 1 2       ; R4 := R4()
+ 18 [-]: GETGLOBAL R5 K3        ; R5 := mMovie
+ 19 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5["0x17028E8F"]
+ 20 [-]: LOADK     R7 K5        ; R7 := "FanFare.Label.text"
+ 21 [-]: LOADK     R8 K6        ; R8 := " "
+ 22 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+ 23 [-]: GETGLOBAL R5 K3        ; R5 := mMovie
+ 24 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 25 [-]: LOADK     R7 K8        ; R7 := "FanFare.ConclaveScore"
+ 26 [-]: LOADK     R8 K9        ; R8 := "_visible"
+ 27 [-]: TESTSET   R9 R1 1      ; if R1 then PC := 30 else R9 := R1
+ 28 [-]: JMP       30           ; PC := 30
+ 29 [-]: MOVE      R9 R2        ; R9 := R2
+ 30 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 31 [-]: GETGLOBAL R5 K3        ; R5 := mMovie
+ 32 [-]: SELF      R5 R5 K7     ; R6 := R5; R5 := R5["0x1C19D966"]
+ 33 [-]: LOADK     R7 K10       ; R7 := "FanFare.Title.Conclave"
+ 34 [-]: LOADK     R8 K9        ; R8 := "_visible"
+ 35 [-]: TESTSET   R9 R1 1      ; if R1 then PC := 38 else R9 := R1
+ 36 [-]: JMP       38           ; PC := 38
+ 37 [-]: MOVE      R9 R2        ; R9 := R2
+ 38 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
+ 39 [-]: GETGLOBAL R5 K11       ; R5 := _T
+ 40 [-]: GETTABLE  R5 R5 K12    ; R5 := R5["eomScreenMode"]
+ 41 [-]: GETUPVAL  R6 U4        ; R6 := U4
+ 42 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["ACTUAL_EOM"]
+ 43 [-]: EQ        1 R5 R6      ; if R5 == R6 then PC := 46
+ 44 [-]: JMP       46           ; PC := 46
+ 45 [-]: MOVE      R5 R0        ; R5 := R0
+ 46 [-]: MOVE      R5 R1        ; R5 := R1
+ 47 [-]: LOADK     R6 K14       ; R6 := ""
+ 48 [-]: GETGLOBAL R7 K15       ; R7 := 0x400E7765
+ 49 [-]: GETGLOBAL R8 K16       ; R8 := gGameRules
+ 50 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 51 [-]: TEST      R7 1         ; if R7 then PC := 57
+ 52 [-]: JMP       57           ; PC := 57
+ 53 [-]: GETGLOBAL R7 K16       ; R7 := gGameRules
+ 54 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0x84D07DF8"]
+ 55 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 56 [-]: MOVE      R6 R7        ; R6 := R7
+ 57 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 58 [-]: GETGLOBAL R8 K1        ; R8 := Lotus_Game
+ 59 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["PVPMODE_DEATHMATCH"]
+ 60 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 63
+ 61 [-]: JMP       63           ; PC := 63
+ 62 [-]: MOVE      R7 R0        ; R7 := R0
+ 63 [-]: MOVE      R7 R1        ; R7 := R1
+ 64 [-]: GETGLOBAL R8 K3        ; R8 := mMovie
+ 65 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8["0x1C19D966"]
+ 66 [-]: LOADK     R10 K19      ; R10 := "FanFare.Title.Subtitle"
+ 67 [-]: LOADK     R11 K9       ; R11 := "_visible"
+ 68 [-]: TEST      R7 1         ; if R7 then PC := 72
+ 69 [-]: JMP       72           ; PC := 72
+ 70 [-]: EQ        1 R6 K14     ; if R6 == "" then PC := 74
  71 [-]: JMP       74           ; PC := 74
- 72 [-]: TEST      R8 1         ; if R8 then PC := 76
+ 72 [-]: MOVE      R12 R5       ; R12 := R5
  73 [-]: JMP       76           ; PC := 76
- 74 [-]: EQ        1 R7 K14     ; if R7 == "" then PC := 78
- 75 [-]: JMP       78           ; PC := 78
- 76 [-]: MOVE      R13 R6       ; R13 := R6
- 77 [-]: JMP       80           ; PC := 80
- 78 [-]: MOVE      R13 R0       ; R13 := R0
- 79 [-]: MOVE      R13 R1       ; R13 := R1
- 80 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 81 [-]: GETGLOBAL R9 K3        ; R9 := mMovie
- 82 [-]: SELF      R9 R9 K7     ; R10 := R9; R9 := R9["0x1C19D966"]
- 83 [-]: LOADK     R11 K20      ; R11 := "Fanfare.ConclaveScore.MapVote"
- 84 [-]: LOADK     R12 K9       ; R12 := "_visible"
- 85 [-]: TESTSET   R13 R6 0     ; if not R6 then PC := 88 else R13 := R6
- 86 [-]: JMP       88           ; PC := 88
- 87 [-]: MOVE      R13 R2       ; R13 := R2
- 88 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 89 [-]: TEST      R1 0         ; if not R1 then PC := 97
- 90 [-]: JMP       97           ; PC := 97
- 91 [-]: GETGLOBAL R9 K3        ; R9 := mMovie
- 92 [-]: SELF      R9 R9 K4     ; R10 := R9; R9 := R9["0x17028E8F"]
- 93 [-]: LOADK     R11 K21      ; R11 := "FanFare.Title.Title.text"
- 94 [-]: LOADK     R12 K14      ; R12 := ""
- 95 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
- 96 [-]: JMP       828          ; PC := 828
- 97 [-]: TEST      R2 0         ; if not R2 then PC := 468
- 98 [-]: JMP       468          ; PC := 468
- 99 [-]: GETUPVAL  R9 U6        ; R9 := U6
-100 [-]: CALL      R9 1 2       ; R9 := R9()
-101 [-]: GETGLOBAL R10 K15      ; R10 := 0x400E7765
-102 [-]: MOVE      R11 R9       ; R11 := R9
-103 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-104 [-]: TEST      R10 1        ; if R10 then PC := 113
-105 [-]: JMP       113          ; PC := 113
-106 [-]: SELF      R10 R9 K22   ; R11 := R9; R10 := R9["0xBF8DC153"]
-107 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-108 [-]: GETGLOBAL R11 K23      ; R11 := 0xEC274B1A
-109 [-]: LOADK     R12 K24      ; R12 := "Team1"
-110 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-111 [-]: EQ        1 R10 R11    ; if R10 == R11 then PC := 114
-112 [-]: JMP       114          ; PC := 114
-113 [-]: MOVE      R10 R0       ; R10 := R0
-114 [-]: MOVE      R10 R1       ; R10 := R1
-115 [-]: GETUPVAL  R11 U7       ; R11 := U7
-116 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["0xF81722A2"]
-117 [-]: MOVE      R12 R10      ; R12 := R10
-118 [-]: LOADK     R13 K26      ; R13 := "FanFare.ConclaveScore.LeftTeam"
-119 [-]: LOADK     R14 K27      ; R14 := "FanFare.ConclaveScore.RightTeam"
-120 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
-121 [-]: GETUPVAL  R12 U7       ; R12 := U7
-122 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["0xF81722A2"]
-123 [-]: MOVE      R13 R10      ; R13 := R10
-124 [-]: LOADK     R14 K26      ; R14 := "FanFare.ConclaveScore.LeftTeam"
-125 [-]: LOADK     R15 K27      ; R15 := "FanFare.ConclaveScore.RightTeam"
-126 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
-127 [-]: TEST      R8 0         ; if not R8 then PC := 131
-128 [-]: JMP       131          ; PC := 131
-129 [-]: LOADK     R11 K26      ; R11 := "FanFare.ConclaveScore.LeftTeam"
-130 [-]: LOADK     R12 K27      ; R12 := "FanFare.ConclaveScore.RightTeam"
-131 [-]: GETGLOBAL R13 K3       ; R13 := mMovie
-132 [-]: SELF      R13 R13 K7   ; R14 := R13; R13 := R13["0x1C19D966"]
-133 [-]: LOADK     R15 K28      ; R15 := "FanFare.ConclaveScore.VersusTag"
-134 [-]: LOADK     R16 K9       ; R16 := "_visible"
-135 [-]: MOVE      R17 R8       ; R17 := R8
-136 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-137 [-]: GETUPVAL  R13 U8       ; R13 := U8
-138 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["0x9929BD85"]
-139 [-]: CALL      R13 1 1      ; R13()
-140 [-]: NEWTABLE  R13 0 0      ; R13 := {}
-141 [-]: GETUPVAL  R14 U7       ; R14 := U7
-142 [-]: GETTABLE  R14 R14 K25  ; R14 := R14["0xF81722A2"]
-143 [-]: MOVE      R15 R8       ; R15 := R8
-144 [-]: GETGLOBAL R16 K30      ; R16 := gRegion
-145 [-]: SELF      R16 R16 K31  ; R17 := R16; R16 := R16["0x48FBE19F"]
-146 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-147 [-]: GETGLOBAL R17 K16      ; R17 := gGameRules
-148 [-]: SELF      R17 R17 K32  ; R18 := R17; R17 := R17["0x67641166"]
-149 [-]: LOADK     R19 K33      ; R19 := 0
-150 [-]: CALL      R17 3 0      ; R17,... := R17(R18,R19)
-151 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
-152 [-]: GETUPVAL  R15 U9       ; R15 := U9
-153 [-]: MOVE      R16 R13      ; R16 := R13
-154 [-]: MOVE      R17 R14      ; R17 := R14
-155 [-]: CALL      R15 3 1      ; R15(R16,R17)
-156 [-]: GETUPVAL  R15 U10      ; R15 := U10
-157 [-]: LOADK     R16 K24      ; R16 := "Team1"
-158 [-]: MOVE      R17 R11      ; R17 := R11
-159 [-]: LOADK     R18 K34      ; R18 := "/Lotus/Language/Menu/PvpTeam1"
-160 [-]: GETGLOBAL R19 K35      ; R19 := teamOneIcon
-161 [-]: GETGLOBAL R20 K36      ; R20 := _G
-162 [-]: GETTABLE  R20 R20 K37  ; R20 := R20["UIColor_PvpTeamOne"]
-163 [-]: MOVE      R21 R13      ; R21 := R13
-164 [-]: CALL      R15 7 2      ; R15 := R15(R16,R17,R18,R19,R20,R21)
-165 [-]: GETGLOBAL R16 K3       ; R16 := mMovie
-166 [-]: SELF      R16 R16 K7   ; R17 := R16; R16 := R16["0x1C19D966"]
-167 [-]: MOVE      R18 R12      ; R18 := R12
-168 [-]: LOADK     R19 K9       ; R19 := "_visible"
-169 [-]: MOVE      R20 R8       ; R20 := R8
-170 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
-171 [-]: TEST      R8 1         ; if R8 then PC := 191
-172 [-]: JMP       191          ; PC := 191
-173 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-174 [-]: GETGLOBAL R17 K16      ; R17 := gGameRules
-175 [-]: SELF      R17 R17 K32  ; R18 := R17; R17 := R17["0x67641166"]
-176 [-]: LOADK     R19 K38      ; R19 := 1
-177 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-178 [-]: GETUPVAL  R18 U9       ; R18 := U9
-179 [-]: MOVE      R19 R16      ; R19 := R16
-180 [-]: MOVE      R20 R17      ; R20 := R17
-181 [-]: CALL      R18 3 1      ; R18(R19,R20)
-182 [-]: GETUPVAL  R18 U10      ; R18 := U10
-183 [-]: LOADK     R19 K39      ; R19 := "Team2"
-184 [-]: MOVE      R20 R12      ; R20 := R12
-185 [-]: LOADK     R21 K40      ; R21 := "/Lotus/Language/Menu/PvpTeam2"
-186 [-]: GETGLOBAL R22 K41      ; R22 := teamTwoIcon
-187 [-]: GETGLOBAL R23 K36      ; R23 := _G
-188 [-]: GETTABLE  R23 R23 K42  ; R23 := R23["UIColor_PvpTeamTwo"]
-189 [-]: MOVE      R24 R16      ; R24 := R16
-190 [-]: CALL      R18 7 1      ; R18(R19,R20,R21,R22,R23,R24)
-191 [-]: LOADK     R18 K43      ; R18 := "FanFare.ConclaveScore.Reputation"
-192 [-]: MOVE      R19 R0       ; R19 := R0
-193 [-]: GETUPVAL  R20 U11      ; R20 := U11
-194 [-]: CALL      R20 1 2      ; R20 := R20()
-195 [-]: GETGLOBAL R21 K15      ; R21 := 0x400E7765
-196 [-]: MOVE      R22 R20      ; R22 := R20
-197 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-198 [-]: TEST      R21 1        ; if R21 then PC := 232
-199 [-]: JMP       232          ; PC := 232
-200 [-]: GETTABLE  R21 R20 K44  ; R21 := R20["affMods"]
-201 [-]: LEN       R21 R21      ; R21 := # R21
-202 [-]: LT        0 K33 R21    ; if 0 >= R21 then PC := 232
-203 [-]: JMP       232          ; PC := 232
-204 [-]: LOADK     R21 K38      ; R21 := 1
-205 [-]: GETTABLE  R22 R20 K44  ; R22 := R20["affMods"]
-206 [-]: LEN       R22 R22      ; R22 := # R22
-207 [-]: LOADK     R23 K38      ; R23 := 1
-208 [-]: FORPREP   R21 231      ; R21 -= R23; PC := 231
-209 [-]: GETTABLE  R25 R20 K44  ; R25 := R20["affMods"]
-210 [-]: GETTABLE  R25 R25 R24  ; R25 := R25[R24]
-211 [-]: GETGLOBAL R26 K45      ; R26 := gGameConfig
-212 [-]: SELF      R26 R26 K46  ; R27 := R26; R26 := R26["0xAAB5C920"]
-213 [-]: GETTABLE  R28 R25 K47  ; R28 := R25["mTag"]
-214 [-]: CALL      R26 3 2      ; R26 := R26(R27,R28)
-215 [-]: GETGLOBAL R27 K15      ; R27 := 0x400E7765
-216 [-]: MOVE      R28 R26      ; R28 := R26
-217 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-218 [-]: TEST      R27 1        ; if R27 then PC := 231
-219 [-]: JMP       231          ; PC := 231
-220 [-]: SELF      R27 R26 K48  ; R28 := R26; R27 := R26["0xC8167E83"]
-221 [-]: CALL      R27 2 2      ; R27 := R27(R28)
-222 [-]: TEST      R27 0        ; if not R27 then PC := 231
-223 [-]: JMP       231          ; PC := 231
-224 [-]: GETUPVAL  R27 U12      ; R27 := U12
-225 [-]: MOVE      R28 R18      ; R28 := R18
-226 [-]: MOVE      R29 R26      ; R29 := R26
-227 [-]: GETTABLE  R30 R25 K49  ; R30 := R25["mStanding"]
-228 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
-229 [-]: MOVE      R19 R1       ; R19 := R1
-230 [-]: JMP       232          ; PC := 232
-231 [-]: FORLOOP   R21 209      ; R21 += R23; if R21 <= R22 then begin PC := 209; R24 := R21 end
-232 [-]: GETGLOBAL R27 K3       ; R27 := mMovie
-233 [-]: SELF      R27 R27 K7   ; R28 := R27; R27 := R27["0x1C19D966"]
-234 [-]: MOVE      R29 R18      ; R29 := R18
-235 [-]: LOADK     R30 K9       ; R30 := "_visible"
-236 [-]: MOVE      R31 R19      ; R31 := R19
-237 [-]: CALL      R27 5 1      ; R27(R28,R29,R30,R31)
-238 [-]: TEST      R4 0         ; if not R4 then PC := 246
-239 [-]: JMP       246          ; PC := 246
-240 [-]: GETGLOBAL R27 K3       ; R27 := mMovie
-241 [-]: SELF      R27 R27 K50  ; R28 := R27; R27 := R27["0x26581636"]
-242 [-]: LOADK     R29 K10      ; R29 := "FanFare.Title.Conclave"
-243 [-]: GETGLOBAL R30 K51      ; R30 := lunaroIcon
-244 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
-245 [-]: JMP       251          ; PC := 251
-246 [-]: GETGLOBAL R27 K3       ; R27 := mMovie
-247 [-]: SELF      R27 R27 K50  ; R28 := R27; R27 := R27["0x26581636"]
-248 [-]: LOADK     R29 K10      ; R29 := "FanFare.Title.Conclave"
-249 [-]: GETGLOBAL R30 K52      ; R30 := conclaveIcon
-250 [-]: CALL      R27 4 1      ; R27(R28,R29,R30)
-251 [-]: GETGLOBAL R27 K3       ; R27 := mMovie
-252 [-]: SELF      R27 R27 K7   ; R28 := R27; R27 := R27["0x1C19D966"]
-253 [-]: LOADK     R29 K53      ; R29 := "FanFare.Title.Lotus"
-254 [-]: LOADK     R30 K9       ; R30 := "_visible"
-255 [-]: MOVE      R31 R0       ; R31 := R0
-256 [-]: CALL      R27 5 1      ; R27(R28,R29,R30,R31)
-257 [-]: GETGLOBAL R27 K3       ; R27 := mMovie
-258 [-]: SELF      R27 R27 K7   ; R28 := R27; R27 := R27["0x1C19D966"]
-259 [-]: LOADK     R29 K54      ; R29 := "FanFare.Title.Title"
-260 [-]: LOADK     R30 K9       ; R30 := "_visible"
-261 [-]: MOVE      R31 R6       ; R31 := R6
-262 [-]: CALL      R27 5 1      ; R27(R28,R29,R30,R31)
-263 [-]: GETGLOBAL R27 K55      ; R27 := 0xF595ADDE
-264 [-]: GETGLOBAL R28 K3       ; R28 := mMovie
-265 [-]: SELF      R28 R28 K56  ; R29 := R28; R28 := R28["0x6B7B470B"]
-266 [-]: LOADK     R30 K54      ; R30 := "FanFare.Title.Title"
-267 [-]: LOADK     R31 K57      ; R31 := "_y"
-268 [-]: CALL      R28 4 0      ; R28,... := R28(R29,R30,R31)
-269 [-]: CALL      R27 0 2      ; R27 := R27(R28,...)
-270 [-]: GETGLOBAL R28 K55      ; R28 := 0xF595ADDE
-271 [-]: GETGLOBAL R29 K3       ; R29 := mMovie
-272 [-]: SELF      R29 R29 K56  ; R30 := R29; R29 := R29["0x6B7B470B"]
-273 [-]: LOADK     R31 K19      ; R31 := "FanFare.Title.Subtitle"
-274 [-]: LOADK     R32 K57      ; R32 := "_y"
-275 [-]: CALL      R29 4 0      ; R29,... := R29(R30,R31,R32)
-276 [-]: CALL      R28 0 2      ; R28 := R28(R29,...)
-277 [-]: GETGLOBAL R29 K55      ; R29 := 0xF595ADDE
-278 [-]: GETGLOBAL R30 K3       ; R30 := mMovie
-279 [-]: SELF      R30 R30 K56  ; R31 := R30; R30 := R30["0x6B7B470B"]
-280 [-]: LOADK     R32 K58      ; R32 := "FanFare.Label"
-281 [-]: LOADK     R33 K57      ; R33 := "_y"
-282 [-]: CALL      R30 4 0      ; R30,... := R30(R31,R32,R33)
-283 [-]: CALL      R29 0 2      ; R29 := R29(R30,...)
-284 [-]: GETGLOBAL R30 K55      ; R30 := 0xF595ADDE
-285 [-]: GETGLOBAL R31 K3       ; R31 := mMovie
-286 [-]: SELF      R31 R31 K56  ; R32 := R31; R31 := R31["0x6B7B470B"]
-287 [-]: LOADK     R33 K10      ; R33 := "FanFare.Title.Conclave"
-288 [-]: LOADK     R34 K57      ; R34 := "_y"
-289 [-]: CALL      R31 4 0      ; R31,... := R31(R32,R33,R34)
-290 [-]: CALL      R30 0 2      ; R30 := R30(R31,...)
-291 [-]: GETGLOBAL R31 K3       ; R31 := mMovie
-292 [-]: SELF      R31 R31 K7   ; R32 := R31; R31 := R31["0x1C19D966"]
-293 [-]: LOADK     R33 K54      ; R33 := "FanFare.Title.Title"
-294 [-]: LOADK     R34 K57      ; R34 := "_y"
-295 [-]: GETUPVAL  R35 U7       ; R35 := U7
-296 [-]: GETTABLE  R35 R35 K25  ; R35 := R35["0xF81722A2"]
-297 [-]: MOVE      R36 R6       ; R36 := R6
-298 [-]: LOADK     R37 K59      ; R37 := -250
-299 [-]: LOADK     R38 K33      ; R38 := 0
-300 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-301 [-]: ADD       R35 R27 R35  ; R35 := R27 + R35
-302 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-303 [-]: GETGLOBAL R31 K3       ; R31 := mMovie
-304 [-]: SELF      R31 R31 K7   ; R32 := R31; R31 := R31["0x1C19D966"]
-305 [-]: LOADK     R33 K19      ; R33 := "FanFare.Title.Subtitle"
-306 [-]: LOADK     R34 K57      ; R34 := "_y"
-307 [-]: GETUPVAL  R35 U7       ; R35 := U7
-308 [-]: GETTABLE  R35 R35 K25  ; R35 := R35["0xF81722A2"]
-309 [-]: MOVE      R36 R6       ; R36 := R6
-310 [-]: LOADK     R37 K59      ; R37 := -250
-311 [-]: LOADK     R38 K33      ; R38 := 0
-312 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-313 [-]: ADD       R35 R28 R35  ; R35 := R28 + R35
-314 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-315 [-]: GETGLOBAL R31 K3       ; R31 := mMovie
-316 [-]: SELF      R31 R31 K7   ; R32 := R31; R31 := R31["0x1C19D966"]
-317 [-]: LOADK     R33 K58      ; R33 := "FanFare.Label"
-318 [-]: LOADK     R34 K57      ; R34 := "_y"
-319 [-]: GETUPVAL  R35 U7       ; R35 := U7
-320 [-]: GETTABLE  R35 R35 K25  ; R35 := R35["0xF81722A2"]
-321 [-]: MOVE      R36 R6       ; R36 := R6
-322 [-]: LOADK     R37 K59      ; R37 := -250
-323 [-]: LOADK     R38 K33      ; R38 := 0
-324 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-325 [-]: ADD       R35 R29 R35  ; R35 := R29 + R35
-326 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-327 [-]: GETGLOBAL R31 K3       ; R31 := mMovie
-328 [-]: SELF      R31 R31 K7   ; R32 := R31; R31 := R31["0x1C19D966"]
-329 [-]: LOADK     R33 K10      ; R33 := "FanFare.Title.Conclave"
-330 [-]: LOADK     R34 K57      ; R34 := "_y"
-331 [-]: GETUPVAL  R35 U7       ; R35 := U7
-332 [-]: GETTABLE  R35 R35 K25  ; R35 := R35["0xF81722A2"]
-333 [-]: MOVE      R36 R6       ; R36 := R6
-334 [-]: LOADK     R37 K60      ; R37 := 75
-335 [-]: LOADK     R38 K33      ; R38 := 0
-336 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-337 [-]: ADD       R35 R30 R35  ; R35 := R30 + R35
-338 [-]: CALL      R31 5 1      ; R31(R32,R33,R34,R35)
-339 [-]: TEST      R6 0         ; if not R6 then PC := 828
-340 [-]: JMP       828          ; PC := 828
-341 [-]: LOADK     R31 K61      ; R31 := "/Lotus/Language/Menu/PvpMatchDefeat"
-342 [-]: GETGLOBAL R32 K36      ; R32 := _G
-343 [-]: GETTABLE  R32 R32 K62  ; R32 := R32["UIColor_Red"]
-344 [-]: TEST      R8 1         ; if R8 then PC := 391
-345 [-]: JMP       391          ; PC := 391
-346 [-]: GETGLOBAL R33 K16      ; R33 := gGameRules
-347 [-]: SELF      R33 R33 K63  ; R34 := R33; R33 := R33["0xED0EE7FB"]
-348 [-]: GETGLOBAL R35 K23      ; R35 := 0xEC274B1A
-349 [-]: LOADK     R36 K64      ; R36 := "Team1Score"
-350 [-]: CALL      R35 2 0      ; R35,... := R35(R36)
-351 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)
-352 [-]: GETGLOBAL R34 K16      ; R34 := gGameRules
-353 [-]: SELF      R34 R34 K63  ; R35 := R34; R34 := R34["0xED0EE7FB"]
-354 [-]: GETGLOBAL R36 K23      ; R36 := 0xEC274B1A
-355 [-]: LOADK     R37 K65      ; R37 := "Team2Score"
-356 [-]: CALL      R36 2 0      ; R36,... := R36(R37)
-357 [-]: CALL      R34 0 2      ; R34 := R34(R35,...)
-358 [-]: GETUPVAL  R35 U13      ; R35 := U13
-359 [-]: CALL      R35 1 2      ; R35 := R35()
-360 [-]: EQ        1 R33 R34    ; if R33 == R34 then PC := 363
-361 [-]: JMP       363          ; PC := 363
-362 [-]: MOVE      R36 R0       ; R36 := R0
-363 [-]: MOVE      R36 R1       ; R36 := R1
-364 [-]: MOVE      R0 R35       ; R0 := R35
-365 [-]: TEST      R35 0        ; if not R35 then PC := 385
-366 [-]: JMP       385          ; PC := 385
-367 [-]: MOVE      R37 R0       ; R37 := R0
-368 [-]: GETGLOBAL R38 K15      ; R38 := 0x400E7765
-369 [-]: GETGLOBAL R39 K11      ; R39 := _T
-370 [-]: GETTABLE  R39 R39 K66  ; R39 := R39["PVPObject"]
-371 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-372 [-]: TEST      R38 1        ; if R38 then PC := 377
-373 [-]: JMP       377          ; PC := 377
-374 [-]: GETGLOBAL R38 K11      ; R38 := _T
-375 [-]: GETTABLE  R38 R38 K66  ; R38 := R38["PVPObject"]
-376 [-]: GETTABLE  R37 R38 K67  ; R37 := R38["wasForfeit"]
-377 [-]: TEST      R37 0        ; if not R37 then PC := 381
-378 [-]: JMP       381          ; PC := 381
-379 [-]: LOADK     R31 K68      ; R31 := "/Lotus/Language/Menu/PvpMatchForfeit"
-380 [-]: JMP       382          ; PC := 382
-381 [-]: LOADK     R31 K69      ; R31 := "/Lotus/Language/Menu/PvpMatchVictory"
-382 [-]: GETGLOBAL R38 K36      ; R38 := _G
-383 [-]: GETTABLE  R32 R38 K70  ; R32 := R38["UIColor_White"]
-384 [-]: JMP       454          ; PC := 454
-385 [-]: TEST      R36 0        ; if not R36 then PC := 454
-386 [-]: JMP       454          ; PC := 454
-387 [-]: LOADK     R31 K71      ; R31 := "/Lotus/Language/Menu/PvpMatchDraw"
-388 [-]: GETGLOBAL R38 K36      ; R38 := _G
-389 [-]: GETTABLE  R32 R38 K70  ; R32 := R38["UIColor_White"]
-390 [-]: JMP       454          ; PC := 454
-391 [-]: EQ        1 R15 K72    ; if R15 == nil then PC := 454
-392 [-]: JMP       454          ; PC := 454
-393 [-]: LOADK     R38 K38      ; R38 := 1
-394 [-]: LOADK     R39 K33      ; R39 := 0
-395 [-]: GETGLOBAL R40 K30      ; R40 := gRegion
-396 [-]: SELF      R40 R40 K73  ; R41 := R40; R40 := R40["0x372CB914"]
-397 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-398 [-]: GETGLOBAL R41 K15      ; R41 := 0x400E7765
-399 [-]: MOVE      R42 R40      ; R42 := R40
-400 [-]: CALL      R41 2 2      ; R41 := R41(R42)
-401 [-]: TEST      R41 1        ; if R41 then PC := 420
-402 [-]: JMP       420          ; PC := 420
-403 [-]: LOADK     R41 K38      ; R41 := 1
-404 [-]: LEN       R42 R15      ; R42 := # R15
-405 [-]: LOADK     R43 K38      ; R43 := 1
-406 [-]: FORPREP   R41 419      ; R41 -= R43; PC := 419
-407 [-]: GETTABLE  R45 R15 R44  ; R45 := R15[R44]
-408 [-]: GETTABLE  R45 R45 K74  ; R45 := R45["Player"]
-409 [-]: SELF      R45 R45 K75  ; R46 := R45; R45 := R45["0x144A28F9"]
-410 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-411 [-]: SELF      R46 R40 K75  ; R47 := R40; R46 := R40["0x144A28F9"]
-412 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-413 [-]: EQ        0 R45 R46    ; if R45 ~= R46 then PC := 419
-414 [-]: JMP       419          ; PC := 419
-415 [-]: MOVE      R38 R44      ; R38 := R44
-416 [-]: GETTABLE  R45 R15 R44  ; R45 := R15[R44]
-417 [-]: GETTABLE  R39 R45 K76  ; R39 := R45["Mechanics"]
-418 [-]: JMP       420          ; PC := 420
-419 [-]: FORLOOP   R41 407      ; R41 += R43; if R41 <= R42 then begin PC := 407; R44 := R41 end
-420 [-]: LE        0 R38 K77    ; if R38 > 3 then PC := 436
-421 [-]: JMP       436          ; PC := 436
-422 [-]: LOADK     R45 K78      ; R45 := "/Lotus/Language/Menu/PvpDMWinnerTitle_"
-423 [-]: MOVE      R46 R38      ; R46 := R38
-424 [-]: CONCAT    R31 R45 R46  ; R31 := R45 .. R46
-425 [-]: GETGLOBAL R45 K3       ; R45 := mMovie
-426 [-]: SELF      R45 R45 K79  ; R46 := R45; R45 := R45["0x5DB0BD4"]
-427 [-]: LOADK     R47 K80      ; R47 := "/Lotus/Language/Menu/PvpDMWinnerSubTitle_"
-428 [-]: MOVE      R48 R38      ; R48 := R38
-429 [-]: CONCAT    R47 R47 R48  ; R47 := R47 .. R48
-430 [-]: MOVE      R48 R0       ; R48 := R0
-431 [-]: NEWTABLE  R49 0 1      ; R49 := {}
-432 [-]: SETTABLE  R49 K81 R39  ; R49["NUM"] := R39
-433 [-]: CALL      R45 5 2      ; R45 := R45(R46,R47,R48,R49)
-434 [-]: MOVE      R7 R45       ; R7 := R45
-435 [-]: JMP       452          ; PC := 452
-436 [-]: GETGLOBAL R45 K3       ; R45 := mMovie
-437 [-]: SELF      R45 R45 K79  ; R46 := R45; R45 := R45["0x5DB0BD4"]
-438 [-]: LOADK     R47 K82      ; R47 := "/Lotus/Language/Menu/PvpDMLoserTitle"
-439 [-]: MOVE      R48 R0       ; R48 := R0
-440 [-]: NEWTABLE  R49 0 1      ; R49 := {}
-441 [-]: SETTABLE  R49 K81 R39  ; R49["NUM"] := R39
-442 [-]: CALL      R45 5 2      ; R45 := R45(R46,R47,R48,R49)
-443 [-]: MOVE      R31 R45      ; R31 := R45
-444 [-]: GETGLOBAL R45 K3       ; R45 := mMovie
-445 [-]: SELF      R45 R45 K79  ; R46 := R45; R45 := R45["0x5DB0BD4"]
-446 [-]: LOADK     R47 K83      ; R47 := "/Lotus/Language/Menu/PvpDMLoserSubTitle"
-447 [-]: MOVE      R48 R0       ; R48 := R0
-448 [-]: NEWTABLE  R49 0 1      ; R49 := {}
-449 [-]: SETTABLE  R49 K84 R38  ; R49["POSITION"] := R38
-450 [-]: CALL      R45 5 2      ; R45 := R45(R46,R47,R48,R49)
-451 [-]: MOVE      R7 R45       ; R7 := R45
-452 [-]: GETGLOBAL R45 K36      ; R45 := _G
-453 [-]: GETTABLE  R32 R45 K70  ; R32 := R45["UIColor_White"]
-454 [-]: GETGLOBAL R45 K3       ; R45 := mMovie
-455 [-]: SELF      R45 R45 K4   ; R46 := R45; R45 := R45["0x17028E8F"]
-456 [-]: LOADK     R47 K21      ; R47 := "FanFare.Title.Title.text"
-457 [-]: MOVE      R48 R31      ; R48 := R31
-458 [-]: CALL      R45 4 1      ; R45(R46,R47,R48)
-459 [-]: GETGLOBAL R45 K3       ; R45 := mMovie
-460 [-]: SELF      R45 R45 K7   ; R46 := R45; R45 := R45["0x1C19D966"]
-461 [-]: LOADK     R47 K85      ; R47 := "FanFare.Title"
-462 [-]: LOADK     R48 K86      ; R48 := "_color"
-463 [-]: MOVE      R49 R32      ; R49 := R32
-464 [-]: CALL      R45 5 1      ; R45(R46,R47,R48,R49)
-465 [-]: GETUPVAL  R45 U14      ; R45 := U14
-466 [-]: CALL      R45 1 1      ; R45()
-467 [-]: JMP       828          ; PC := 828
-468 [-]: TEST      R3 1         ; if R3 then PC := 472
-469 [-]: JMP       472          ; PC := 472
-470 [-]: TEST      R5 0         ; if not R5 then PC := 790
-471 [-]: JMP       790          ; PC := 790
-472 [-]: LOADK     R45 K26      ; R45 := "FanFare.ConclaveScore.LeftTeam"
-473 [-]: LOADK     R46 K27      ; R46 := "FanFare.ConclaveScore.RightTeam"
-474 [-]: GETGLOBAL R47 K3       ; R47 := mMovie
-475 [-]: SELF      R47 R47 K7   ; R48 := R47; R47 := R47["0x1C19D966"]
-476 [-]: LOADK     R49 K28      ; R49 := "FanFare.ConclaveScore.VersusTag"
-477 [-]: LOADK     R50 K9       ; R50 := "_visible"
-478 [-]: MOVE      R51 R1       ; R51 := R1
-479 [-]: CALL      R47 5 1      ; R47(R48,R49,R50,R51)
-480 [-]: GETUPVAL  R47 U8       ; R47 := U8
-481 [-]: GETTABLE  R47 R47 K29  ; R47 := R47["0x9929BD85"]
-482 [-]: CALL      R47 1 1      ; R47()
-483 [-]: GETGLOBAL R47 K16      ; R47 := gGameRules
-484 [-]: SELF      R47 R47 K87  ; R48 := R47; R47 := R47["0xEB438FC2"]
-485 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-486 [-]: NEWTABLE  R48 0 0      ; R48 := {}
-487 [-]: NEWTABLE  R49 0 0      ; R49 := {}
-488 [-]: GETGLOBAL R50 K30      ; R50 := gRegion
-489 [-]: SELF      R50 R50 K31  ; R51 := R50; R50 := R50["0x48FBE19F"]
-490 [-]: CALL      R50 2 2      ; R50 := R50(R51)
-491 [-]: LEN       R51 R50      ; R51 := # R50
-492 [-]: NEWTABLE  R52 0 0      ; R52 := {}
-493 [-]: LOADK     R53 K38      ; R53 := 1
-494 [-]: LEN       R54 R47      ; R54 := # R47
-495 [-]: LOADK     R55 K38      ; R55 := 1
-496 [-]: FORPREP   R53 566      ; R53 -= R55; PC := 566
-497 [-]: GETTABLE  R57 R47 R56  ; R57 := R47[R56]
-498 [-]: GETTABLE  R58 R57 K88  ; R58 := R57["id"]
-499 [-]: SELF      R58 R58 K89  ; R59 := R58; R58 := R58["0x5EC7A3D2"]
-500 [-]: CALL      R58 2 2      ; R58 := R58(R59)
-501 [-]: NEWTABLE  R59 0 4      ; R59 := {}
-502 [-]: GETTABLE  R60 R57 K90  ; R60 := R57["kills"]
-503 [-]: SETTABLE  R59 K90 R60  ; R59["kills"] := R60
-504 [-]: GETTABLE  R60 R57 K91  ; R60 := R57["deaths"]
-505 [-]: SETTABLE  R59 K91 R60  ; R59["deaths"] := R60
-506 [-]: GETTABLE  R60 R57 K93  ; R60 := R57["score"]
-507 [-]: SETTABLE  R59 K92 R60  ; R59["mechanics"] := R60
-508 [-]: SETTABLE  R59 K94 R58  ; R59["name"] := R58
-509 [-]: GETGLOBAL R60 K16      ; R60 := gGameRules
-510 [-]: SELF      R60 R60 K95  ; R61 := R60; R60 := R60["0xB979C9EC"]
-511 [-]: CALL      R60 2 2      ; R60 := R60(R61)
-512 [-]: GETGLOBAL R61 K1       ; R61 := Lotus_Game
-513 [-]: GETTABLE  R61 R61 K96  ; R61 := R61["LotusPveDeathmatchGameRules_GV_NORMAL"]
-514 [-]: EQ        0 R60 R61    ; if R60 ~= R61 then PC := 517
-515 [-]: JMP       517          ; PC := 517
-516 [-]: SETTABLE  R59 K92 K72  ; R59["mechanics"] := nil
-517 [-]: NEWTABLE  R60 0 1      ; R60 := {}
-518 [-]: SETTABLE  R60 K97 R59  ; R60["Stats"] := R59
-519 [-]: GETTABLE  R61 R57 K98  ; R61 := R57["isPlayer"]
-520 [-]: TEST      R61 0        ; if not R61 then PC := 547
-521 [-]: JMP       547          ; PC := 547
-522 [-]: LOADK     R61 K38      ; R61 := 1
-523 [-]: MOVE      R62 R51      ; R62 := R51
-524 [-]: LOADK     R63 K38      ; R63 := 1
-525 [-]: FORPREP   R61 540      ; R61 -= R63; PC := 540
-526 [-]: GETTABLE  R65 R57 K99  ; R65 := R57["isConnected"]
-527 [-]: TEST      R65 0        ; if not R65 then PC := 540
-528 [-]: JMP       540          ; PC := 540
-529 [-]: GETTABLE  R65 R50 R64  ; R65 := R50[R64]
-530 [-]: GETTABLE  R66 R52 R64  ; R66 := R52[R64]
-531 [-]: TEST      R66 1        ; if R66 then PC := 536
-532 [-]: JMP       536          ; PC := 536
-533 [-]: SELF      R66 R65 K75  ; R67 := R65; R66 := R65["0x144A28F9"]
-534 [-]: CALL      R66 2 2      ; R66 := R66(R67)
-535 [-]: SETTABLE  R52 R64 R66  ; R52[R64] := R66
-536 [-]: GETTABLE  R66 R52 R64  ; R66 := R52[R64]
-537 [-]: EQ        0 R66 R58    ; if R66 ~= R58 then PC := 540
-538 [-]: JMP       540          ; PC := 540
-539 [-]: SETTABLE  R60 K74 R65  ; R60["Player"] := R65
-540 [-]: FORLOOP   R61 526      ; R61 += R63; if R61 <= R62 then begin PC := 526; R64 := R61 end
-541 [-]: GETGLOBAL R66 K100     ; R66 := table
-542 [-]: GETTABLE  R66 R66 K101 ; R66 := R66["0xE6450C9D"]
-543 [-]: MOVE      R67 R48      ; R67 := R48
-544 [-]: MOVE      R68 R60      ; R68 := R60
-545 [-]: CALL      R66 3 1      ; R66(R67,R68)
-546 [-]: JMP       566          ; PC := 566
-547 [-]: GETTABLE  R66 R57 K102 ; R66 := R57["icon"]
-548 [-]: SETTABLE  R60 K102 R66 ; R60["icon"] := R66
-549 [-]: GETTABLE  R66 R57 K103 ; R66 := R57["isNpcAlly"]
-550 [-]: TEST      R66 0        ; if not R66 then PC := 561
-551 [-]: JMP       561          ; PC := 561
-552 [-]: GETTABLE  R66 R57 K99  ; R66 := R57["isConnected"]
-553 [-]: TEST      R66 0        ; if not R66 then PC := 566
-554 [-]: JMP       566          ; PC := 566
-555 [-]: GETGLOBAL R66 K100     ; R66 := table
-556 [-]: GETTABLE  R66 R66 K101 ; R66 := R66["0xE6450C9D"]
-557 [-]: MOVE      R67 R48      ; R67 := R48
-558 [-]: MOVE      R68 R60      ; R68 := R60
-559 [-]: CALL      R66 3 1      ; R66(R67,R68)
-560 [-]: JMP       566          ; PC := 566
-561 [-]: GETGLOBAL R66 K100     ; R66 := table
-562 [-]: GETTABLE  R66 R66 K101 ; R66 := R66["0xE6450C9D"]
-563 [-]: MOVE      R67 R49      ; R67 := R49
-564 [-]: MOVE      R68 R60      ; R68 := R60
-565 [-]: CALL      R66 3 1      ; R66(R67,R68)
-566 [-]: FORLOOP   R53 497      ; R53 += R55; if R53 <= R54 then begin PC := 497; R56 := R53 end
-567 [-]: GETUPVAL  R66 U7       ; R66 := U7
-568 [-]: GETTABLE  R66 R66 K25  ; R66 := R66["0xF81722A2"]
-569 [-]: MOVE      R67 R5       ; R67 := R5
-570 [-]: LOADK     R68 K104     ; R68 := "/Lotus/Language/Game/PveGreedPlayerTeamName"
-571 [-]: LOADK     R69 K105     ; R69 := "/Lotus/Language/Game/PveDeathMatchPlayerTeamName"
-572 [-]: CALL      R66 4 2      ; R66 := R66(R67,R68,R69)
-573 [-]: GETUPVAL  R67 U10      ; R67 := U10
-574 [-]: LOADK     R68 K24      ; R68 := "Team1"
-575 [-]: MOVE      R69 R45      ; R69 := R45
-576 [-]: MOVE      R70 R66      ; R70 := R66
-577 [-]: GETGLOBAL R71 K106     ; R71 := pveDmPlayersIcon
-578 [-]: GETGLOBAL R72 K36      ; R72 := _G
-579 [-]: GETTABLE  R72 R72 K37  ; R72 := R72["UIColor_PvpTeamOne"]
-580 [-]: MOVE      R73 R48      ; R73 := R48
-581 [-]: CALL      R67 7 1      ; R67(R68,R69,R70,R71,R72,R73)
-582 [-]: GETGLOBAL R67 K3       ; R67 := mMovie
-583 [-]: SELF      R67 R67 K7   ; R68 := R67; R67 := R67["0x1C19D966"]
-584 [-]: MOVE      R69 R46      ; R69 := R46
-585 [-]: LOADK     R70 K9       ; R70 := "_visible"
-586 [-]: MOVE      R71 R1       ; R71 := R1
-587 [-]: CALL      R67 5 1      ; R67(R68,R69,R70,R71)
-588 [-]: GETUPVAL  R67 U7       ; R67 := U7
-589 [-]: GETTABLE  R67 R67 K25  ; R67 := R67["0xF81722A2"]
-590 [-]: MOVE      R68 R5       ; R68 := R5
-591 [-]: LOADK     R69 K107     ; R69 := "/Lotus/Language/Game/PveGreedEnemyTeamName"
-592 [-]: LOADK     R70 K108     ; R70 := "/Lotus/Language/Game/PveDeathMatchEnemyTeamName"
-593 [-]: CALL      R67 4 2      ; R67 := R67(R68,R69,R70)
-594 [-]: GETUPVAL  R68 U7       ; R68 := U7
-595 [-]: GETTABLE  R68 R68 K25  ; R68 := R68["0xF81722A2"]
-596 [-]: MOVE      R69 R5       ; R69 := R5
-597 [-]: GETGLOBAL R70 K109     ; R70 := pveGreedEnemiesIcon
-598 [-]: GETGLOBAL R71 K110     ; R71 := pveDmEnemiesIcon
-599 [-]: CALL      R68 4 2      ; R68 := R68(R69,R70,R71)
-600 [-]: GETUPVAL  R69 U10      ; R69 := U10
-601 [-]: LOADK     R70 K39      ; R70 := "Team2"
-602 [-]: MOVE      R71 R46      ; R71 := R46
-603 [-]: MOVE      R72 R67      ; R72 := R67
-604 [-]: MOVE      R73 R68      ; R73 := R68
-605 [-]: GETGLOBAL R74 K36      ; R74 := _G
-606 [-]: GETTABLE  R74 R74 K42  ; R74 := R74["UIColor_PvpTeamTwo"]
-607 [-]: MOVE      R75 R49      ; R75 := R49
-608 [-]: CALL      R69 7 1      ; R69(R70,R71,R72,R73,R74,R75)
-609 [-]: TEST      R4 0         ; if not R4 then PC := 617
-610 [-]: JMP       617          ; PC := 617
-611 [-]: GETGLOBAL R69 K3       ; R69 := mMovie
-612 [-]: SELF      R69 R69 K50  ; R70 := R69; R69 := R69["0x26581636"]
-613 [-]: LOADK     R71 K10      ; R71 := "FanFare.Title.Conclave"
-614 [-]: GETGLOBAL R72 K51      ; R72 := lunaroIcon
-615 [-]: CALL      R69 4 1      ; R69(R70,R71,R72)
-616 [-]: JMP       622          ; PC := 622
+ 74 [-]: MOVE      R12 R0       ; R12 := R0
+ 75 [-]: MOVE      R12 R1       ; R12 := R1
+ 76 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+ 77 [-]: GETGLOBAL R8 K3        ; R8 := mMovie
+ 78 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8["0x1C19D966"]
+ 79 [-]: LOADK     R10 K20      ; R10 := "Fanfare.ConclaveScore.MapVote"
+ 80 [-]: LOADK     R11 K9       ; R11 := "_visible"
+ 81 [-]: TESTSET   R12 R5 0     ; if not R5 then PC := 84 else R12 := R5
+ 82 [-]: JMP       84           ; PC := 84
+ 83 [-]: MOVE      R12 R1       ; R12 := R1
+ 84 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+ 85 [-]: TEST      R1 0         ; if not R1 then PC := 456
+ 86 [-]: JMP       456          ; PC := 456
+ 87 [-]: GETUPVAL  R8 U5        ; R8 := U5
+ 88 [-]: CALL      R8 1 2       ; R8 := R8()
+ 89 [-]: GETGLOBAL R9 K15       ; R9 := 0x400E7765
+ 90 [-]: MOVE      R10 R8       ; R10 := R8
+ 91 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 92 [-]: TEST      R9 1         ; if R9 then PC := 101
+ 93 [-]: JMP       101          ; PC := 101
+ 94 [-]: SELF      R9 R8 K21    ; R10 := R8; R9 := R8["0xBF8DC153"]
+ 95 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 96 [-]: GETGLOBAL R10 K22      ; R10 := 0xEC274B1A
+ 97 [-]: LOADK     R11 K23      ; R11 := "Team1"
+ 98 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 99 [-]: EQ        1 R9 R10     ; if R9 == R10 then PC := 102
+100 [-]: JMP       102          ; PC := 102
+101 [-]: MOVE      R9 R0        ; R9 := R0
+102 [-]: MOVE      R9 R1        ; R9 := R1
+103 [-]: GETUPVAL  R10 U6       ; R10 := U6
+104 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xF81722A2"]
+105 [-]: MOVE      R11 R9       ; R11 := R9
+106 [-]: LOADK     R12 K25      ; R12 := "FanFare.ConclaveScore.LeftTeam"
+107 [-]: LOADK     R13 K26      ; R13 := "FanFare.ConclaveScore.RightTeam"
+108 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
+109 [-]: GETUPVAL  R11 U6       ; R11 := U6
+110 [-]: GETTABLE  R11 R11 K24  ; R11 := R11["0xF81722A2"]
+111 [-]: MOVE      R12 R9       ; R12 := R9
+112 [-]: LOADK     R13 K25      ; R13 := "FanFare.ConclaveScore.LeftTeam"
+113 [-]: LOADK     R14 K26      ; R14 := "FanFare.ConclaveScore.RightTeam"
+114 [-]: CALL      R11 4 2      ; R11 := R11(R12,R13,R14)
+115 [-]: TEST      R7 0         ; if not R7 then PC := 119
+116 [-]: JMP       119          ; PC := 119
+117 [-]: LOADK     R10 K25      ; R10 := "FanFare.ConclaveScore.LeftTeam"
+118 [-]: LOADK     R11 K26      ; R11 := "FanFare.ConclaveScore.RightTeam"
+119 [-]: GETGLOBAL R12 K3       ; R12 := mMovie
+120 [-]: SELF      R12 R12 K7   ; R13 := R12; R12 := R12["0x1C19D966"]
+121 [-]: LOADK     R14 K27      ; R14 := "FanFare.ConclaveScore.VersusTag"
+122 [-]: LOADK     R15 K9       ; R15 := "_visible"
+123 [-]: MOVE      R16 R7       ; R16 := R7
+124 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
+125 [-]: GETUPVAL  R12 U7       ; R12 := U7
+126 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["0x9929BD85"]
+127 [-]: CALL      R12 1 1      ; R12()
+128 [-]: NEWTABLE  R12 0 0      ; R12 := {}
+129 [-]: GETUPVAL  R13 U6       ; R13 := U6
+130 [-]: GETTABLE  R13 R13 K24  ; R13 := R13["0xF81722A2"]
+131 [-]: MOVE      R14 R7       ; R14 := R7
+132 [-]: GETGLOBAL R15 K29      ; R15 := gRegion
+133 [-]: SELF      R15 R15 K30  ; R16 := R15; R15 := R15["0x48FBE19F"]
+134 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+135 [-]: GETGLOBAL R16 K16      ; R16 := gGameRules
+136 [-]: SELF      R16 R16 K31  ; R17 := R16; R16 := R16["0x67641166"]
+137 [-]: LOADK     R18 K32      ; R18 := 0
+138 [-]: CALL      R16 3 0      ; R16,... := R16(R17,R18)
+139 [-]: CALL      R13 0 2      ; R13 := R13(R14,...)
+140 [-]: GETUPVAL  R14 U8       ; R14 := U8
+141 [-]: MOVE      R15 R12      ; R15 := R12
+142 [-]: MOVE      R16 R13      ; R16 := R13
+143 [-]: CALL      R14 3 1      ; R14(R15,R16)
+144 [-]: GETUPVAL  R14 U9       ; R14 := U9
+145 [-]: LOADK     R15 K23      ; R15 := "Team1"
+146 [-]: MOVE      R16 R10      ; R16 := R10
+147 [-]: LOADK     R17 K33      ; R17 := "/Lotus/Language/Menu/PvpTeam1"
+148 [-]: GETGLOBAL R18 K34      ; R18 := teamOneIcon
+149 [-]: GETGLOBAL R19 K35      ; R19 := _G
+150 [-]: GETTABLE  R19 R19 K36  ; R19 := R19["UIColor_PvpTeamOne"]
+151 [-]: MOVE      R20 R12      ; R20 := R12
+152 [-]: CALL      R14 7 2      ; R14 := R14(R15,R16,R17,R18,R19,R20)
+153 [-]: GETGLOBAL R15 K3       ; R15 := mMovie
+154 [-]: SELF      R15 R15 K7   ; R16 := R15; R15 := R15["0x1C19D966"]
+155 [-]: MOVE      R17 R11      ; R17 := R11
+156 [-]: LOADK     R18 K9       ; R18 := "_visible"
+157 [-]: MOVE      R19 R7       ; R19 := R7
+158 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+159 [-]: TEST      R7 1         ; if R7 then PC := 179
+160 [-]: JMP       179          ; PC := 179
+161 [-]: NEWTABLE  R15 0 0      ; R15 := {}
+162 [-]: GETGLOBAL R16 K16      ; R16 := gGameRules
+163 [-]: SELF      R16 R16 K31  ; R17 := R16; R16 := R16["0x67641166"]
+164 [-]: LOADK     R18 K37      ; R18 := 1
+165 [-]: CALL      R16 3 2      ; R16 := R16(R17,R18)
+166 [-]: GETUPVAL  R17 U8       ; R17 := U8
+167 [-]: MOVE      R18 R15      ; R18 := R15
+168 [-]: MOVE      R19 R16      ; R19 := R16
+169 [-]: CALL      R17 3 1      ; R17(R18,R19)
+170 [-]: GETUPVAL  R17 U9       ; R17 := U9
+171 [-]: LOADK     R18 K38      ; R18 := "Team2"
+172 [-]: MOVE      R19 R11      ; R19 := R11
+173 [-]: LOADK     R20 K39      ; R20 := "/Lotus/Language/Menu/PvpTeam2"
+174 [-]: GETGLOBAL R21 K40      ; R21 := teamTwoIcon
+175 [-]: GETGLOBAL R22 K35      ; R22 := _G
+176 [-]: GETTABLE  R22 R22 K41  ; R22 := R22["UIColor_PvpTeamTwo"]
+177 [-]: MOVE      R23 R15      ; R23 := R15
+178 [-]: CALL      R17 7 1      ; R17(R18,R19,R20,R21,R22,R23)
+179 [-]: LOADK     R17 K42      ; R17 := "FanFare.ConclaveScore.Reputation"
+180 [-]: MOVE      R18 R0       ; R18 := R0
+181 [-]: GETUPVAL  R19 U10      ; R19 := U10
+182 [-]: CALL      R19 1 2      ; R19 := R19()
+183 [-]: GETGLOBAL R20 K15      ; R20 := 0x400E7765
+184 [-]: MOVE      R21 R19      ; R21 := R19
+185 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+186 [-]: TEST      R20 1        ; if R20 then PC := 220
+187 [-]: JMP       220          ; PC := 220
+188 [-]: GETTABLE  R20 R19 K43  ; R20 := R19["affMods"]
+189 [-]: LEN       R20 R20      ; R20 := # R20
+190 [-]: LT        0 K32 R20    ; if 0 >= R20 then PC := 220
+191 [-]: JMP       220          ; PC := 220
+192 [-]: LOADK     R20 K37      ; R20 := 1
+193 [-]: GETTABLE  R21 R19 K43  ; R21 := R19["affMods"]
+194 [-]: LEN       R21 R21      ; R21 := # R21
+195 [-]: LOADK     R22 K37      ; R22 := 1
+196 [-]: FORPREP   R20 219      ; R20 -= R22; PC := 219
+197 [-]: GETTABLE  R24 R19 K43  ; R24 := R19["affMods"]
+198 [-]: GETTABLE  R24 R24 R23  ; R24 := R24[R23]
+199 [-]: GETGLOBAL R25 K44      ; R25 := gGameConfig
+200 [-]: SELF      R25 R25 K45  ; R26 := R25; R25 := R25["0xAAB5C920"]
+201 [-]: GETTABLE  R27 R24 K46  ; R27 := R24["mTag"]
+202 [-]: CALL      R25 3 2      ; R25 := R25(R26,R27)
+203 [-]: GETGLOBAL R26 K15      ; R26 := 0x400E7765
+204 [-]: MOVE      R27 R25      ; R27 := R25
+205 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+206 [-]: TEST      R26 1        ; if R26 then PC := 219
+207 [-]: JMP       219          ; PC := 219
+208 [-]: SELF      R26 R25 K47  ; R27 := R25; R26 := R25["0xC8167E83"]
+209 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+210 [-]: TEST      R26 0        ; if not R26 then PC := 219
+211 [-]: JMP       219          ; PC := 219
+212 [-]: GETUPVAL  R26 U11      ; R26 := U11
+213 [-]: MOVE      R27 R17      ; R27 := R17
+214 [-]: MOVE      R28 R25      ; R28 := R25
+215 [-]: GETTABLE  R29 R24 K48  ; R29 := R24["mStanding"]
+216 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
+217 [-]: MOVE      R18 R1       ; R18 := R1
+218 [-]: JMP       220          ; PC := 220
+219 [-]: FORLOOP   R20 197      ; R20 += R22; if R20 <= R21 then begin PC := 197; R23 := R20 end
+220 [-]: GETGLOBAL R26 K3       ; R26 := mMovie
+221 [-]: SELF      R26 R26 K7   ; R27 := R26; R26 := R26["0x1C19D966"]
+222 [-]: MOVE      R28 R17      ; R28 := R17
+223 [-]: LOADK     R29 K9       ; R29 := "_visible"
+224 [-]: MOVE      R30 R18      ; R30 := R18
+225 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
+226 [-]: TEST      R3 0         ; if not R3 then PC := 234
+227 [-]: JMP       234          ; PC := 234
+228 [-]: GETGLOBAL R26 K3       ; R26 := mMovie
+229 [-]: SELF      R26 R26 K49  ; R27 := R26; R26 := R26["0x26581636"]
+230 [-]: LOADK     R28 K10      ; R28 := "FanFare.Title.Conclave"
+231 [-]: GETGLOBAL R29 K50      ; R29 := lunaroIcon
+232 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
+233 [-]: JMP       239          ; PC := 239
+234 [-]: GETGLOBAL R26 K3       ; R26 := mMovie
+235 [-]: SELF      R26 R26 K49  ; R27 := R26; R26 := R26["0x26581636"]
+236 [-]: LOADK     R28 K10      ; R28 := "FanFare.Title.Conclave"
+237 [-]: GETGLOBAL R29 K51      ; R29 := conclaveIcon
+238 [-]: CALL      R26 4 1      ; R26(R27,R28,R29)
+239 [-]: GETGLOBAL R26 K3       ; R26 := mMovie
+240 [-]: SELF      R26 R26 K7   ; R27 := R26; R26 := R26["0x1C19D966"]
+241 [-]: LOADK     R28 K52      ; R28 := "FanFare.Title.Lotus"
+242 [-]: LOADK     R29 K9       ; R29 := "_visible"
+243 [-]: MOVE      R30 R0       ; R30 := R0
+244 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
+245 [-]: GETGLOBAL R26 K3       ; R26 := mMovie
+246 [-]: SELF      R26 R26 K7   ; R27 := R26; R26 := R26["0x1C19D966"]
+247 [-]: LOADK     R28 K53      ; R28 := "FanFare.Title.Title"
+248 [-]: LOADK     R29 K9       ; R29 := "_visible"
+249 [-]: MOVE      R30 R5       ; R30 := R5
+250 [-]: CALL      R26 5 1      ; R26(R27,R28,R29,R30)
+251 [-]: GETGLOBAL R26 K54      ; R26 := 0xF595ADDE
+252 [-]: GETGLOBAL R27 K3       ; R27 := mMovie
+253 [-]: SELF      R27 R27 K55  ; R28 := R27; R27 := R27["0x6B7B470B"]
+254 [-]: LOADK     R29 K53      ; R29 := "FanFare.Title.Title"
+255 [-]: LOADK     R30 K56      ; R30 := "_y"
+256 [-]: CALL      R27 4 0      ; R27,... := R27(R28,R29,R30)
+257 [-]: CALL      R26 0 2      ; R26 := R26(R27,...)
+258 [-]: GETGLOBAL R27 K54      ; R27 := 0xF595ADDE
+259 [-]: GETGLOBAL R28 K3       ; R28 := mMovie
+260 [-]: SELF      R28 R28 K55  ; R29 := R28; R28 := R28["0x6B7B470B"]
+261 [-]: LOADK     R30 K19      ; R30 := "FanFare.Title.Subtitle"
+262 [-]: LOADK     R31 K56      ; R31 := "_y"
+263 [-]: CALL      R28 4 0      ; R28,... := R28(R29,R30,R31)
+264 [-]: CALL      R27 0 2      ; R27 := R27(R28,...)
+265 [-]: GETGLOBAL R28 K54      ; R28 := 0xF595ADDE
+266 [-]: GETGLOBAL R29 K3       ; R29 := mMovie
+267 [-]: SELF      R29 R29 K55  ; R30 := R29; R29 := R29["0x6B7B470B"]
+268 [-]: LOADK     R31 K57      ; R31 := "FanFare.Label"
+269 [-]: LOADK     R32 K56      ; R32 := "_y"
+270 [-]: CALL      R29 4 0      ; R29,... := R29(R30,R31,R32)
+271 [-]: CALL      R28 0 2      ; R28 := R28(R29,...)
+272 [-]: GETGLOBAL R29 K54      ; R29 := 0xF595ADDE
+273 [-]: GETGLOBAL R30 K3       ; R30 := mMovie
+274 [-]: SELF      R30 R30 K55  ; R31 := R30; R30 := R30["0x6B7B470B"]
+275 [-]: LOADK     R32 K10      ; R32 := "FanFare.Title.Conclave"
+276 [-]: LOADK     R33 K56      ; R33 := "_y"
+277 [-]: CALL      R30 4 0      ; R30,... := R30(R31,R32,R33)
+278 [-]: CALL      R29 0 2      ; R29 := R29(R30,...)
+279 [-]: GETGLOBAL R30 K3       ; R30 := mMovie
+280 [-]: SELF      R30 R30 K7   ; R31 := R30; R30 := R30["0x1C19D966"]
+281 [-]: LOADK     R32 K53      ; R32 := "FanFare.Title.Title"
+282 [-]: LOADK     R33 K56      ; R33 := "_y"
+283 [-]: GETUPVAL  R34 U6       ; R34 := U6
+284 [-]: GETTABLE  R34 R34 K24  ; R34 := R34["0xF81722A2"]
+285 [-]: MOVE      R35 R5       ; R35 := R5
+286 [-]: LOADK     R36 K58      ; R36 := -250
+287 [-]: LOADK     R37 K32      ; R37 := 0
+288 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
+289 [-]: ADD       R34 R26 R34  ; R34 := R26 + R34
+290 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
+291 [-]: GETGLOBAL R30 K3       ; R30 := mMovie
+292 [-]: SELF      R30 R30 K7   ; R31 := R30; R30 := R30["0x1C19D966"]
+293 [-]: LOADK     R32 K19      ; R32 := "FanFare.Title.Subtitle"
+294 [-]: LOADK     R33 K56      ; R33 := "_y"
+295 [-]: GETUPVAL  R34 U6       ; R34 := U6
+296 [-]: GETTABLE  R34 R34 K24  ; R34 := R34["0xF81722A2"]
+297 [-]: MOVE      R35 R5       ; R35 := R5
+298 [-]: LOADK     R36 K58      ; R36 := -250
+299 [-]: LOADK     R37 K32      ; R37 := 0
+300 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
+301 [-]: ADD       R34 R27 R34  ; R34 := R27 + R34
+302 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
+303 [-]: GETGLOBAL R30 K3       ; R30 := mMovie
+304 [-]: SELF      R30 R30 K7   ; R31 := R30; R30 := R30["0x1C19D966"]
+305 [-]: LOADK     R32 K57      ; R32 := "FanFare.Label"
+306 [-]: LOADK     R33 K56      ; R33 := "_y"
+307 [-]: GETUPVAL  R34 U6       ; R34 := U6
+308 [-]: GETTABLE  R34 R34 K24  ; R34 := R34["0xF81722A2"]
+309 [-]: MOVE      R35 R5       ; R35 := R5
+310 [-]: LOADK     R36 K58      ; R36 := -250
+311 [-]: LOADK     R37 K32      ; R37 := 0
+312 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
+313 [-]: ADD       R34 R28 R34  ; R34 := R28 + R34
+314 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
+315 [-]: GETGLOBAL R30 K3       ; R30 := mMovie
+316 [-]: SELF      R30 R30 K7   ; R31 := R30; R30 := R30["0x1C19D966"]
+317 [-]: LOADK     R32 K10      ; R32 := "FanFare.Title.Conclave"
+318 [-]: LOADK     R33 K56      ; R33 := "_y"
+319 [-]: GETUPVAL  R34 U6       ; R34 := U6
+320 [-]: GETTABLE  R34 R34 K24  ; R34 := R34["0xF81722A2"]
+321 [-]: MOVE      R35 R5       ; R35 := R5
+322 [-]: LOADK     R36 K59      ; R36 := 75
+323 [-]: LOADK     R37 K32      ; R37 := 0
+324 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
+325 [-]: ADD       R34 R29 R34  ; R34 := R29 + R34
+326 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
+327 [-]: TEST      R5 0         ; if not R5 then PC := 816
+328 [-]: JMP       816          ; PC := 816
+329 [-]: LOADK     R30 K60      ; R30 := "/Lotus/Language/Menu/PvpMatchDefeat"
+330 [-]: GETGLOBAL R31 K35      ; R31 := _G
+331 [-]: GETTABLE  R31 R31 K61  ; R31 := R31["UIColor_Red"]
+332 [-]: TEST      R7 1         ; if R7 then PC := 379
+333 [-]: JMP       379          ; PC := 379
+334 [-]: GETGLOBAL R32 K16      ; R32 := gGameRules
+335 [-]: SELF      R32 R32 K62  ; R33 := R32; R32 := R32["0xED0EE7FB"]
+336 [-]: GETGLOBAL R34 K22      ; R34 := 0xEC274B1A
+337 [-]: LOADK     R35 K63      ; R35 := "Team1Score"
+338 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
+339 [-]: CALL      R32 0 2      ; R32 := R32(R33,...)
+340 [-]: GETGLOBAL R33 K16      ; R33 := gGameRules
+341 [-]: SELF      R33 R33 K62  ; R34 := R33; R33 := R33["0xED0EE7FB"]
+342 [-]: GETGLOBAL R35 K22      ; R35 := 0xEC274B1A
+343 [-]: LOADK     R36 K64      ; R36 := "Team2Score"
+344 [-]: CALL      R35 2 0      ; R35,... := R35(R36)
+345 [-]: CALL      R33 0 2      ; R33 := R33(R34,...)
+346 [-]: GETUPVAL  R34 U12      ; R34 := U12
+347 [-]: CALL      R34 1 2      ; R34 := R34()
+348 [-]: EQ        1 R32 R33    ; if R32 == R33 then PC := 351
+349 [-]: JMP       351          ; PC := 351
+350 [-]: MOVE      R35 R0       ; R35 := R0
+351 [-]: MOVE      R35 R1       ; R35 := R1
+352 [-]: MOVE      R0 R34       ; R0 := R34
+353 [-]: TEST      R34 0        ; if not R34 then PC := 373
+354 [-]: JMP       373          ; PC := 373
+355 [-]: MOVE      R36 R0       ; R36 := R0
+356 [-]: GETGLOBAL R37 K15      ; R37 := 0x400E7765
+357 [-]: GETGLOBAL R38 K11      ; R38 := _T
+358 [-]: GETTABLE  R38 R38 K65  ; R38 := R38["PVPObject"]
+359 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+360 [-]: TEST      R37 1        ; if R37 then PC := 365
+361 [-]: JMP       365          ; PC := 365
+362 [-]: GETGLOBAL R37 K11      ; R37 := _T
+363 [-]: GETTABLE  R37 R37 K65  ; R37 := R37["PVPObject"]
+364 [-]: GETTABLE  R36 R37 K66  ; R36 := R37["wasForfeit"]
+365 [-]: TEST      R36 0        ; if not R36 then PC := 369
+366 [-]: JMP       369          ; PC := 369
+367 [-]: LOADK     R30 K67      ; R30 := "/Lotus/Language/Menu/PvpMatchForfeit"
+368 [-]: JMP       370          ; PC := 370
+369 [-]: LOADK     R30 K68      ; R30 := "/Lotus/Language/Menu/PvpMatchVictory"
+370 [-]: GETGLOBAL R37 K35      ; R37 := _G
+371 [-]: GETTABLE  R31 R37 K69  ; R31 := R37["UIColor_White"]
+372 [-]: JMP       442          ; PC := 442
+373 [-]: TEST      R35 0        ; if not R35 then PC := 442
+374 [-]: JMP       442          ; PC := 442
+375 [-]: LOADK     R30 K70      ; R30 := "/Lotus/Language/Menu/PvpMatchDraw"
+376 [-]: GETGLOBAL R37 K35      ; R37 := _G
+377 [-]: GETTABLE  R31 R37 K69  ; R31 := R37["UIColor_White"]
+378 [-]: JMP       442          ; PC := 442
+379 [-]: EQ        1 R14 K71    ; if R14 == nil then PC := 442
+380 [-]: JMP       442          ; PC := 442
+381 [-]: LOADK     R37 K37      ; R37 := 1
+382 [-]: LOADK     R38 K32      ; R38 := 0
+383 [-]: GETGLOBAL R39 K29      ; R39 := gRegion
+384 [-]: SELF      R39 R39 K72  ; R40 := R39; R39 := R39["0x372CB914"]
+385 [-]: CALL      R39 2 2      ; R39 := R39(R40)
+386 [-]: GETGLOBAL R40 K15      ; R40 := 0x400E7765
+387 [-]: MOVE      R41 R39      ; R41 := R39
+388 [-]: CALL      R40 2 2      ; R40 := R40(R41)
+389 [-]: TEST      R40 1        ; if R40 then PC := 408
+390 [-]: JMP       408          ; PC := 408
+391 [-]: LOADK     R40 K37      ; R40 := 1
+392 [-]: LEN       R41 R14      ; R41 := # R14
+393 [-]: LOADK     R42 K37      ; R42 := 1
+394 [-]: FORPREP   R40 407      ; R40 -= R42; PC := 407
+395 [-]: GETTABLE  R44 R14 R43  ; R44 := R14[R43]
+396 [-]: GETTABLE  R44 R44 K73  ; R44 := R44["Player"]
+397 [-]: SELF      R44 R44 K74  ; R45 := R44; R44 := R44["0x144A28F9"]
+398 [-]: CALL      R44 2 2      ; R44 := R44(R45)
+399 [-]: SELF      R45 R39 K74  ; R46 := R39; R45 := R39["0x144A28F9"]
+400 [-]: CALL      R45 2 2      ; R45 := R45(R46)
+401 [-]: EQ        0 R44 R45    ; if R44 ~= R45 then PC := 407
+402 [-]: JMP       407          ; PC := 407
+403 [-]: MOVE      R37 R43      ; R37 := R43
+404 [-]: GETTABLE  R44 R14 R43  ; R44 := R14[R43]
+405 [-]: GETTABLE  R38 R44 K75  ; R38 := R44["Mechanics"]
+406 [-]: JMP       408          ; PC := 408
+407 [-]: FORLOOP   R40 395      ; R40 += R42; if R40 <= R41 then begin PC := 395; R43 := R40 end
+408 [-]: LE        0 R37 K76    ; if R37 > 3 then PC := 424
+409 [-]: JMP       424          ; PC := 424
+410 [-]: LOADK     R44 K77      ; R44 := "/Lotus/Language/Menu/PvpDMWinnerTitle_"
+411 [-]: MOVE      R45 R37      ; R45 := R37
+412 [-]: CONCAT    R30 R44 R45  ; R30 := R44 .. R45
+413 [-]: GETGLOBAL R44 K3       ; R44 := mMovie
+414 [-]: SELF      R44 R44 K78  ; R45 := R44; R44 := R44["0x5DB0BD4"]
+415 [-]: LOADK     R46 K79      ; R46 := "/Lotus/Language/Menu/PvpDMWinnerSubTitle_"
+416 [-]: MOVE      R47 R37      ; R47 := R37
+417 [-]: CONCAT    R46 R46 R47  ; R46 := R46 .. R47
+418 [-]: MOVE      R47 R0       ; R47 := R0
+419 [-]: NEWTABLE  R48 0 1      ; R48 := {}
+420 [-]: SETTABLE  R48 K80 R38  ; R48["NUM"] := R38
+421 [-]: CALL      R44 5 2      ; R44 := R44(R45,R46,R47,R48)
+422 [-]: MOVE      R6 R44       ; R6 := R44
+423 [-]: JMP       440          ; PC := 440
+424 [-]: GETGLOBAL R44 K3       ; R44 := mMovie
+425 [-]: SELF      R44 R44 K78  ; R45 := R44; R44 := R44["0x5DB0BD4"]
+426 [-]: LOADK     R46 K81      ; R46 := "/Lotus/Language/Menu/PvpDMLoserTitle"
+427 [-]: MOVE      R47 R0       ; R47 := R0
+428 [-]: NEWTABLE  R48 0 1      ; R48 := {}
+429 [-]: SETTABLE  R48 K80 R38  ; R48["NUM"] := R38
+430 [-]: CALL      R44 5 2      ; R44 := R44(R45,R46,R47,R48)
+431 [-]: MOVE      R30 R44      ; R30 := R44
+432 [-]: GETGLOBAL R44 K3       ; R44 := mMovie
+433 [-]: SELF      R44 R44 K78  ; R45 := R44; R44 := R44["0x5DB0BD4"]
+434 [-]: LOADK     R46 K82      ; R46 := "/Lotus/Language/Menu/PvpDMLoserSubTitle"
+435 [-]: MOVE      R47 R0       ; R47 := R0
+436 [-]: NEWTABLE  R48 0 1      ; R48 := {}
+437 [-]: SETTABLE  R48 K83 R37  ; R48["POSITION"] := R37
+438 [-]: CALL      R44 5 2      ; R44 := R44(R45,R46,R47,R48)
+439 [-]: MOVE      R6 R44       ; R6 := R44
+440 [-]: GETGLOBAL R44 K35      ; R44 := _G
+441 [-]: GETTABLE  R31 R44 K69  ; R31 := R44["UIColor_White"]
+442 [-]: GETGLOBAL R44 K3       ; R44 := mMovie
+443 [-]: SELF      R44 R44 K4   ; R45 := R44; R44 := R44["0x17028E8F"]
+444 [-]: LOADK     R46 K84      ; R46 := "FanFare.Title.Title.text"
+445 [-]: MOVE      R47 R30      ; R47 := R30
+446 [-]: CALL      R44 4 1      ; R44(R45,R46,R47)
+447 [-]: GETGLOBAL R44 K3       ; R44 := mMovie
+448 [-]: SELF      R44 R44 K7   ; R45 := R44; R44 := R44["0x1C19D966"]
+449 [-]: LOADK     R46 K85      ; R46 := "FanFare.Title"
+450 [-]: LOADK     R47 K86      ; R47 := "_color"
+451 [-]: MOVE      R48 R31      ; R48 := R31
+452 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
+453 [-]: GETUPVAL  R44 U13      ; R44 := U13
+454 [-]: CALL      R44 1 1      ; R44()
+455 [-]: JMP       816          ; PC := 816
+456 [-]: TEST      R2 1         ; if R2 then PC := 460
+457 [-]: JMP       460          ; PC := 460
+458 [-]: TEST      R4 0         ; if not R4 then PC := 778
+459 [-]: JMP       778          ; PC := 778
+460 [-]: LOADK     R44 K25      ; R44 := "FanFare.ConclaveScore.LeftTeam"
+461 [-]: LOADK     R45 K26      ; R45 := "FanFare.ConclaveScore.RightTeam"
+462 [-]: GETGLOBAL R46 K3       ; R46 := mMovie
+463 [-]: SELF      R46 R46 K7   ; R47 := R46; R46 := R46["0x1C19D966"]
+464 [-]: LOADK     R48 K27      ; R48 := "FanFare.ConclaveScore.VersusTag"
+465 [-]: LOADK     R49 K9       ; R49 := "_visible"
+466 [-]: MOVE      R50 R1       ; R50 := R1
+467 [-]: CALL      R46 5 1      ; R46(R47,R48,R49,R50)
+468 [-]: GETUPVAL  R46 U7       ; R46 := U7
+469 [-]: GETTABLE  R46 R46 K28  ; R46 := R46["0x9929BD85"]
+470 [-]: CALL      R46 1 1      ; R46()
+471 [-]: GETGLOBAL R46 K16      ; R46 := gGameRules
+472 [-]: SELF      R46 R46 K87  ; R47 := R46; R46 := R46["0xEB438FC2"]
+473 [-]: CALL      R46 2 2      ; R46 := R46(R47)
+474 [-]: NEWTABLE  R47 0 0      ; R47 := {}
+475 [-]: NEWTABLE  R48 0 0      ; R48 := {}
+476 [-]: GETGLOBAL R49 K29      ; R49 := gRegion
+477 [-]: SELF      R49 R49 K30  ; R50 := R49; R49 := R49["0x48FBE19F"]
+478 [-]: CALL      R49 2 2      ; R49 := R49(R50)
+479 [-]: LEN       R50 R49      ; R50 := # R49
+480 [-]: NEWTABLE  R51 0 0      ; R51 := {}
+481 [-]: LOADK     R52 K37      ; R52 := 1
+482 [-]: LEN       R53 R46      ; R53 := # R46
+483 [-]: LOADK     R54 K37      ; R54 := 1
+484 [-]: FORPREP   R52 554      ; R52 -= R54; PC := 554
+485 [-]: GETTABLE  R56 R46 R55  ; R56 := R46[R55]
+486 [-]: GETTABLE  R57 R56 K88  ; R57 := R56["id"]
+487 [-]: SELF      R57 R57 K89  ; R58 := R57; R57 := R57["0x5EC7A3D2"]
+488 [-]: CALL      R57 2 2      ; R57 := R57(R58)
+489 [-]: NEWTABLE  R58 0 4      ; R58 := {}
+490 [-]: GETTABLE  R59 R56 K90  ; R59 := R56["kills"]
+491 [-]: SETTABLE  R58 K90 R59  ; R58["kills"] := R59
+492 [-]: GETTABLE  R59 R56 K91  ; R59 := R56["deaths"]
+493 [-]: SETTABLE  R58 K91 R59  ; R58["deaths"] := R59
+494 [-]: GETTABLE  R59 R56 K93  ; R59 := R56["score"]
+495 [-]: SETTABLE  R58 K92 R59  ; R58["mechanics"] := R59
+496 [-]: SETTABLE  R58 K94 R57  ; R58["name"] := R57
+497 [-]: GETGLOBAL R59 K16      ; R59 := gGameRules
+498 [-]: SELF      R59 R59 K95  ; R60 := R59; R59 := R59["0xB979C9EC"]
+499 [-]: CALL      R59 2 2      ; R59 := R59(R60)
+500 [-]: GETGLOBAL R60 K1       ; R60 := Lotus_Game
+501 [-]: GETTABLE  R60 R60 K96  ; R60 := R60["LotusPveDeathmatchGameRules_GV_NORMAL"]
+502 [-]: EQ        0 R59 R60    ; if R59 ~= R60 then PC := 505
+503 [-]: JMP       505          ; PC := 505
+504 [-]: SETTABLE  R58 K92 K71  ; R58["mechanics"] := nil
+505 [-]: NEWTABLE  R59 0 1      ; R59 := {}
+506 [-]: SETTABLE  R59 K97 R58  ; R59["Stats"] := R58
+507 [-]: GETTABLE  R60 R56 K98  ; R60 := R56["isPlayer"]
+508 [-]: TEST      R60 0        ; if not R60 then PC := 535
+509 [-]: JMP       535          ; PC := 535
+510 [-]: LOADK     R60 K37      ; R60 := 1
+511 [-]: MOVE      R61 R50      ; R61 := R50
+512 [-]: LOADK     R62 K37      ; R62 := 1
+513 [-]: FORPREP   R60 528      ; R60 -= R62; PC := 528
+514 [-]: GETTABLE  R64 R56 K99  ; R64 := R56["isConnected"]
+515 [-]: TEST      R64 0        ; if not R64 then PC := 528
+516 [-]: JMP       528          ; PC := 528
+517 [-]: GETTABLE  R64 R49 R63  ; R64 := R49[R63]
+518 [-]: GETTABLE  R65 R51 R63  ; R65 := R51[R63]
+519 [-]: TEST      R65 1        ; if R65 then PC := 524
+520 [-]: JMP       524          ; PC := 524
+521 [-]: SELF      R65 R64 K74  ; R66 := R64; R65 := R64["0x144A28F9"]
+522 [-]: CALL      R65 2 2      ; R65 := R65(R66)
+523 [-]: SETTABLE  R51 R63 R65  ; R51[R63] := R65
+524 [-]: GETTABLE  R65 R51 R63  ; R65 := R51[R63]
+525 [-]: EQ        0 R65 R57    ; if R65 ~= R57 then PC := 528
+526 [-]: JMP       528          ; PC := 528
+527 [-]: SETTABLE  R59 K73 R64  ; R59["Player"] := R64
+528 [-]: FORLOOP   R60 514      ; R60 += R62; if R60 <= R61 then begin PC := 514; R63 := R60 end
+529 [-]: GETGLOBAL R65 K100     ; R65 := table
+530 [-]: GETTABLE  R65 R65 K101 ; R65 := R65["0xE6450C9D"]
+531 [-]: MOVE      R66 R47      ; R66 := R47
+532 [-]: MOVE      R67 R59      ; R67 := R59
+533 [-]: CALL      R65 3 1      ; R65(R66,R67)
+534 [-]: JMP       554          ; PC := 554
+535 [-]: GETTABLE  R65 R56 K102 ; R65 := R56["icon"]
+536 [-]: SETTABLE  R59 K102 R65 ; R59["icon"] := R65
+537 [-]: GETTABLE  R65 R56 K103 ; R65 := R56["isNpcAlly"]
+538 [-]: TEST      R65 0        ; if not R65 then PC := 549
+539 [-]: JMP       549          ; PC := 549
+540 [-]: GETTABLE  R65 R56 K99  ; R65 := R56["isConnected"]
+541 [-]: TEST      R65 0        ; if not R65 then PC := 554
+542 [-]: JMP       554          ; PC := 554
+543 [-]: GETGLOBAL R65 K100     ; R65 := table
+544 [-]: GETTABLE  R65 R65 K101 ; R65 := R65["0xE6450C9D"]
+545 [-]: MOVE      R66 R47      ; R66 := R47
+546 [-]: MOVE      R67 R59      ; R67 := R59
+547 [-]: CALL      R65 3 1      ; R65(R66,R67)
+548 [-]: JMP       554          ; PC := 554
+549 [-]: GETGLOBAL R65 K100     ; R65 := table
+550 [-]: GETTABLE  R65 R65 K101 ; R65 := R65["0xE6450C9D"]
+551 [-]: MOVE      R66 R48      ; R66 := R48
+552 [-]: MOVE      R67 R59      ; R67 := R59
+553 [-]: CALL      R65 3 1      ; R65(R66,R67)
+554 [-]: FORLOOP   R52 485      ; R52 += R54; if R52 <= R53 then begin PC := 485; R55 := R52 end
+555 [-]: GETUPVAL  R65 U6       ; R65 := U6
+556 [-]: GETTABLE  R65 R65 K24  ; R65 := R65["0xF81722A2"]
+557 [-]: MOVE      R66 R4       ; R66 := R4
+558 [-]: LOADK     R67 K104     ; R67 := "/Lotus/Language/Game/PveGreedPlayerTeamName"
+559 [-]: LOADK     R68 K105     ; R68 := "/Lotus/Language/Game/PveDeathMatchPlayerTeamName"
+560 [-]: CALL      R65 4 2      ; R65 := R65(R66,R67,R68)
+561 [-]: GETUPVAL  R66 U9       ; R66 := U9
+562 [-]: LOADK     R67 K23      ; R67 := "Team1"
+563 [-]: MOVE      R68 R44      ; R68 := R44
+564 [-]: MOVE      R69 R65      ; R69 := R65
+565 [-]: GETGLOBAL R70 K106     ; R70 := pveDmPlayersIcon
+566 [-]: GETGLOBAL R71 K35      ; R71 := _G
+567 [-]: GETTABLE  R71 R71 K36  ; R71 := R71["UIColor_PvpTeamOne"]
+568 [-]: MOVE      R72 R47      ; R72 := R47
+569 [-]: CALL      R66 7 1      ; R66(R67,R68,R69,R70,R71,R72)
+570 [-]: GETGLOBAL R66 K3       ; R66 := mMovie
+571 [-]: SELF      R66 R66 K7   ; R67 := R66; R66 := R66["0x1C19D966"]
+572 [-]: MOVE      R68 R45      ; R68 := R45
+573 [-]: LOADK     R69 K9       ; R69 := "_visible"
+574 [-]: MOVE      R70 R1       ; R70 := R1
+575 [-]: CALL      R66 5 1      ; R66(R67,R68,R69,R70)
+576 [-]: GETUPVAL  R66 U6       ; R66 := U6
+577 [-]: GETTABLE  R66 R66 K24  ; R66 := R66["0xF81722A2"]
+578 [-]: MOVE      R67 R4       ; R67 := R4
+579 [-]: LOADK     R68 K107     ; R68 := "/Lotus/Language/Game/PveGreedEnemyTeamName"
+580 [-]: LOADK     R69 K108     ; R69 := "/Lotus/Language/Game/PveDeathMatchEnemyTeamName"
+581 [-]: CALL      R66 4 2      ; R66 := R66(R67,R68,R69)
+582 [-]: GETUPVAL  R67 U6       ; R67 := U6
+583 [-]: GETTABLE  R67 R67 K24  ; R67 := R67["0xF81722A2"]
+584 [-]: MOVE      R68 R4       ; R68 := R4
+585 [-]: GETGLOBAL R69 K109     ; R69 := pveGreedEnemiesIcon
+586 [-]: GETGLOBAL R70 K110     ; R70 := pveDmEnemiesIcon
+587 [-]: CALL      R67 4 2      ; R67 := R67(R68,R69,R70)
+588 [-]: GETUPVAL  R68 U9       ; R68 := U9
+589 [-]: LOADK     R69 K38      ; R69 := "Team2"
+590 [-]: MOVE      R70 R45      ; R70 := R45
+591 [-]: MOVE      R71 R66      ; R71 := R66
+592 [-]: MOVE      R72 R67      ; R72 := R67
+593 [-]: GETGLOBAL R73 K35      ; R73 := _G
+594 [-]: GETTABLE  R73 R73 K41  ; R73 := R73["UIColor_PvpTeamTwo"]
+595 [-]: MOVE      R74 R48      ; R74 := R48
+596 [-]: CALL      R68 7 1      ; R68(R69,R70,R71,R72,R73,R74)
+597 [-]: TEST      R3 0         ; if not R3 then PC := 605
+598 [-]: JMP       605          ; PC := 605
+599 [-]: GETGLOBAL R68 K3       ; R68 := mMovie
+600 [-]: SELF      R68 R68 K49  ; R69 := R68; R68 := R68["0x26581636"]
+601 [-]: LOADK     R70 K10      ; R70 := "FanFare.Title.Conclave"
+602 [-]: GETGLOBAL R71 K50      ; R71 := lunaroIcon
+603 [-]: CALL      R68 4 1      ; R68(R69,R70,R71)
+604 [-]: JMP       610          ; PC := 610
+605 [-]: GETGLOBAL R68 K3       ; R68 := mMovie
+606 [-]: SELF      R68 R68 K49  ; R69 := R68; R68 := R68["0x26581636"]
+607 [-]: LOADK     R70 K10      ; R70 := "FanFare.Title.Conclave"
+608 [-]: GETGLOBAL R71 K51      ; R71 := conclaveIcon
+609 [-]: CALL      R68 4 1      ; R68(R69,R70,R71)
+610 [-]: GETGLOBAL R68 K3       ; R68 := mMovie
+611 [-]: SELF      R68 R68 K7   ; R69 := R68; R68 := R68["0x1C19D966"]
+612 [-]: LOADK     R70 K52      ; R70 := "FanFare.Title.Lotus"
+613 [-]: LOADK     R71 K9       ; R71 := "_visible"
+614 [-]: MOVE      R72 R0       ; R72 := R0
+615 [-]: CALL      R68 5 1      ; R68(R69,R70,R71,R72)
+616 [-]: LOADK     R68 K42      ; R68 := "FanFare.ConclaveScore.Reputation"
 617 [-]: GETGLOBAL R69 K3       ; R69 := mMovie
-618 [-]: SELF      R69 R69 K50  ; R70 := R69; R69 := R69["0x26581636"]
-619 [-]: LOADK     R71 K10      ; R71 := "FanFare.Title.Conclave"
-620 [-]: GETGLOBAL R72 K52      ; R72 := conclaveIcon
-621 [-]: CALL      R69 4 1      ; R69(R70,R71,R72)
-622 [-]: GETGLOBAL R69 K3       ; R69 := mMovie
-623 [-]: SELF      R69 R69 K7   ; R70 := R69; R69 := R69["0x1C19D966"]
-624 [-]: LOADK     R71 K53      ; R71 := "FanFare.Title.Lotus"
-625 [-]: LOADK     R72 K9       ; R72 := "_visible"
-626 [-]: MOVE      R73 R0       ; R73 := R0
-627 [-]: CALL      R69 5 1      ; R69(R70,R71,R72,R73)
-628 [-]: LOADK     R69 K43      ; R69 := "FanFare.ConclaveScore.Reputation"
-629 [-]: GETGLOBAL R70 K3       ; R70 := mMovie
-630 [-]: SELF      R70 R70 K7   ; R71 := R70; R70 := R70["0x1C19D966"]
-631 [-]: MOVE      R72 R69      ; R72 := R69
-632 [-]: LOADK     R73 K9       ; R73 := "_visible"
-633 [-]: MOVE      R74 R0       ; R74 := R0
-634 [-]: CALL      R70 5 1      ; R70(R71,R72,R73,R74)
-635 [-]: GETGLOBAL R70 K3       ; R70 := mMovie
-636 [-]: SELF      R70 R70 K7   ; R71 := R70; R70 := R70["0x1C19D966"]
-637 [-]: LOADK     R72 K54      ; R72 := "FanFare.Title.Title"
-638 [-]: LOADK     R73 K9       ; R73 := "_visible"
-639 [-]: MOVE      R74 R6       ; R74 := R6
-640 [-]: CALL      R70 5 1      ; R70(R71,R72,R73,R74)
-641 [-]: GETGLOBAL R70 K55      ; R70 := 0xF595ADDE
-642 [-]: GETGLOBAL R71 K3       ; R71 := mMovie
-643 [-]: SELF      R71 R71 K56  ; R72 := R71; R71 := R71["0x6B7B470B"]
-644 [-]: LOADK     R73 K54      ; R73 := "FanFare.Title.Title"
-645 [-]: LOADK     R74 K57      ; R74 := "_y"
-646 [-]: CALL      R71 4 0      ; R71,... := R71(R72,R73,R74)
-647 [-]: CALL      R70 0 2      ; R70 := R70(R71,...)
-648 [-]: GETGLOBAL R71 K55      ; R71 := 0xF595ADDE
-649 [-]: GETGLOBAL R72 K3       ; R72 := mMovie
-650 [-]: SELF      R72 R72 K56  ; R73 := R72; R72 := R72["0x6B7B470B"]
-651 [-]: LOADK     R74 K19      ; R74 := "FanFare.Title.Subtitle"
-652 [-]: LOADK     R75 K57      ; R75 := "_y"
-653 [-]: CALL      R72 4 0      ; R72,... := R72(R73,R74,R75)
-654 [-]: CALL      R71 0 2      ; R71 := R71(R72,...)
-655 [-]: GETGLOBAL R72 K55      ; R72 := 0xF595ADDE
-656 [-]: GETGLOBAL R73 K3       ; R73 := mMovie
-657 [-]: SELF      R73 R73 K56  ; R74 := R73; R73 := R73["0x6B7B470B"]
-658 [-]: LOADK     R75 K58      ; R75 := "FanFare.Label"
-659 [-]: LOADK     R76 K57      ; R76 := "_y"
-660 [-]: CALL      R73 4 0      ; R73,... := R73(R74,R75,R76)
-661 [-]: CALL      R72 0 2      ; R72 := R72(R73,...)
-662 [-]: GETGLOBAL R73 K55      ; R73 := 0xF595ADDE
-663 [-]: GETGLOBAL R74 K3       ; R74 := mMovie
-664 [-]: SELF      R74 R74 K56  ; R75 := R74; R74 := R74["0x6B7B470B"]
-665 [-]: LOADK     R76 K10      ; R76 := "FanFare.Title.Conclave"
-666 [-]: LOADK     R77 K57      ; R77 := "_y"
-667 [-]: CALL      R74 4 0      ; R74,... := R74(R75,R76,R77)
-668 [-]: CALL      R73 0 2      ; R73 := R73(R74,...)
-669 [-]: GETGLOBAL R74 K3       ; R74 := mMovie
-670 [-]: SELF      R74 R74 K7   ; R75 := R74; R74 := R74["0x1C19D966"]
-671 [-]: LOADK     R76 K54      ; R76 := "FanFare.Title.Title"
-672 [-]: LOADK     R77 K57      ; R77 := "_y"
-673 [-]: GETUPVAL  R78 U7       ; R78 := U7
-674 [-]: GETTABLE  R78 R78 K25  ; R78 := R78["0xF81722A2"]
-675 [-]: MOVE      R79 R6       ; R79 := R6
-676 [-]: LOADK     R80 K59      ; R80 := -250
-677 [-]: LOADK     R81 K33      ; R81 := 0
-678 [-]: CALL      R78 4 2      ; R78 := R78(R79,R80,R81)
-679 [-]: ADD       R78 R70 R78  ; R78 := R70 + R78
-680 [-]: CALL      R74 5 1      ; R74(R75,R76,R77,R78)
-681 [-]: GETGLOBAL R74 K3       ; R74 := mMovie
-682 [-]: SELF      R74 R74 K7   ; R75 := R74; R74 := R74["0x1C19D966"]
-683 [-]: LOADK     R76 K19      ; R76 := "FanFare.Title.Subtitle"
-684 [-]: LOADK     R77 K57      ; R77 := "_y"
-685 [-]: GETUPVAL  R78 U7       ; R78 := U7
-686 [-]: GETTABLE  R78 R78 K25  ; R78 := R78["0xF81722A2"]
-687 [-]: MOVE      R79 R6       ; R79 := R6
-688 [-]: LOADK     R80 K59      ; R80 := -250
-689 [-]: LOADK     R81 K33      ; R81 := 0
-690 [-]: CALL      R78 4 2      ; R78 := R78(R79,R80,R81)
-691 [-]: ADD       R78 R71 R78  ; R78 := R71 + R78
-692 [-]: CALL      R74 5 1      ; R74(R75,R76,R77,R78)
-693 [-]: GETGLOBAL R74 K3       ; R74 := mMovie
-694 [-]: SELF      R74 R74 K7   ; R75 := R74; R74 := R74["0x1C19D966"]
-695 [-]: LOADK     R76 K58      ; R76 := "FanFare.Label"
-696 [-]: LOADK     R77 K57      ; R77 := "_y"
-697 [-]: GETUPVAL  R78 U7       ; R78 := U7
-698 [-]: GETTABLE  R78 R78 K25  ; R78 := R78["0xF81722A2"]
-699 [-]: MOVE      R79 R6       ; R79 := R6
-700 [-]: LOADK     R80 K59      ; R80 := -250
-701 [-]: LOADK     R81 K33      ; R81 := 0
-702 [-]: CALL      R78 4 2      ; R78 := R78(R79,R80,R81)
-703 [-]: ADD       R78 R72 R78  ; R78 := R72 + R78
-704 [-]: CALL      R74 5 1      ; R74(R75,R76,R77,R78)
-705 [-]: GETGLOBAL R74 K3       ; R74 := mMovie
-706 [-]: SELF      R74 R74 K7   ; R75 := R74; R74 := R74["0x1C19D966"]
-707 [-]: LOADK     R76 K10      ; R76 := "FanFare.Title.Conclave"
-708 [-]: LOADK     R77 K57      ; R77 := "_y"
-709 [-]: GETUPVAL  R78 U7       ; R78 := U7
-710 [-]: GETTABLE  R78 R78 K25  ; R78 := R78["0xF81722A2"]
-711 [-]: MOVE      R79 R6       ; R79 := R6
-712 [-]: LOADK     R80 K60      ; R80 := 75
-713 [-]: LOADK     R81 K33      ; R81 := 0
-714 [-]: CALL      R78 4 2      ; R78 := R78(R79,R80,R81)
-715 [-]: ADD       R78 R73 R78  ; R78 := R73 + R78
-716 [-]: CALL      R74 5 1      ; R74(R75,R76,R77,R78)
-717 [-]: TEST      R6 0         ; if not R6 then PC := 828
-718 [-]: JMP       828          ; PC := 828
-719 [-]: LOADK     R74 K61      ; R74 := "/Lotus/Language/Menu/PvpMatchDefeat"
-720 [-]: GETGLOBAL R75 K36      ; R75 := _G
-721 [-]: GETTABLE  R75 R75 K62  ; R75 := R75["UIColor_Red"]
-722 [-]: GETGLOBAL R76 K16      ; R76 := gGameRules
-723 [-]: SELF      R76 R76 K63  ; R77 := R76; R76 := R76["0xED0EE7FB"]
-724 [-]: GETGLOBAL R78 K23      ; R78 := 0xEC274B1A
-725 [-]: LOADK     R79 K64      ; R79 := "Team1Score"
-726 [-]: CALL      R78 2 0      ; R78,... := R78(R79)
-727 [-]: CALL      R76 0 2      ; R76 := R76(R77,...)
-728 [-]: GETGLOBAL R77 K16      ; R77 := gGameRules
-729 [-]: SELF      R77 R77 K63  ; R78 := R77; R77 := R77["0xED0EE7FB"]
-730 [-]: GETGLOBAL R79 K23      ; R79 := 0xEC274B1A
-731 [-]: LOADK     R80 K65      ; R80 := "Team2Score"
-732 [-]: CALL      R79 2 0      ; R79,... := R79(R80)
-733 [-]: CALL      R77 0 2      ; R77 := R77(R78,...)
-734 [-]: SUB       R78 R76 R77  ; R78 := R76 - R77
-735 [-]: GETUPVAL  R79 U15      ; R79 := U15
-736 [-]: CALL      R79 1 2      ; R79 := R79()
-737 [-]: GETTABLE  R80 R79 K111 ; R80 := R79["missionType"]
-738 [-]: GETGLOBAL R81 K1       ; R81 := Lotus_Game
-739 [-]: GETTABLE  R81 R81 K112 ; R81 := R81["MT_ARENA"]
-740 [-]: EQ        0 R80 R81    ; if R80 ~= R81 then PC := 759
-741 [-]: JMP       759          ; PC := 759
-742 [-]: GETTABLE  R80 R79 K113 ; R80 := R79["faction"]
-743 [-]: GETGLOBAL R81 K1       ; R81 := Lotus_Game
-744 [-]: GETTABLE  R81 R81 K114 ; R81 := R81["FC_CORPUS"]
-745 [-]: EQ        0 R80 R81    ; if R80 ~= R81 then PC := 759
-746 [-]: JMP       759          ; PC := 759
-747 [-]: EQ        1 R78 K33    ; if R78 == 0 then PC := 757
-748 [-]: JMP       757          ; PC := 757
-749 [-]: GETGLOBAL R80 K11      ; R80 := _T
-750 [-]: GETTABLE  R80 R80 K115 ; R80 := R80["IndexQuestScoreMargin"]
-751 [-]: TEST      R80 0        ; if not R80 then PC := 759
-752 [-]: JMP       759          ; PC := 759
-753 [-]: GETGLOBAL R80 K11      ; R80 := _T
-754 [-]: GETTABLE  R80 R80 K115 ; R80 := R80["IndexQuestScoreMargin"]
-755 [-]: LT        0 R80 R78    ; if R80 >= R78 then PC := 759
-756 [-]: JMP       759          ; PC := 759
-757 [-]: LOADK     R74 K116     ; R74 := "/Lotus/Language/Menu/HUD_MissionFailed"
-758 [-]: JMP       778          ; PC := 778
-759 [-]: LT        1 K33 R78    ; if 0 < R78 then PC := 771
-760 [-]: JMP       771          ; PC := 771
-761 [-]: EQ        0 R78 K33    ; if R78 ~= 0 then PC := 773
-762 [-]: JMP       773          ; PC := 773
-763 [-]: LT        0 K33 R76    ; if 0 >= R76 then PC := 773
-764 [-]: JMP       773          ; PC := 773
-765 [-]: GETTABLE  R80 R79 K117 ; R80 := R79["goalTag"]
-766 [-]: GETGLOBAL R81 K23      ; R81 := 0xEC274B1A
-767 [-]: LOADK     R82 K118     ; R82 := "WaterFight"
-768 [-]: CALL      R81 2 2      ; R81 := R81(R82)
-769 [-]: EQ        0 R80 R81    ; if R80 ~= R81 then PC := 773
-770 [-]: JMP       773          ; PC := 773
-771 [-]: LOADK     R74 K69      ; R74 := "/Lotus/Language/Menu/PvpMatchVictory"
-772 [-]: JMP       776          ; PC := 776
-773 [-]: EQ        0 R78 K33    ; if R78 ~= 0 then PC := 776
-774 [-]: JMP       776          ; PC := 776
-775 [-]: LOADK     R74 K71      ; R74 := "/Lotus/Language/Menu/PvpMatchDraw"
-776 [-]: GETGLOBAL R80 K36      ; R80 := _G
-777 [-]: GETTABLE  R75 R80 K70  ; R75 := R80["UIColor_White"]
-778 [-]: GETGLOBAL R80 K3       ; R80 := mMovie
-779 [-]: SELF      R80 R80 K4   ; R81 := R80; R80 := R80["0x17028E8F"]
-780 [-]: LOADK     R82 K21      ; R82 := "FanFare.Title.Title.text"
-781 [-]: MOVE      R83 R74      ; R83 := R74
-782 [-]: CALL      R80 4 1      ; R80(R81,R82,R83)
-783 [-]: GETGLOBAL R80 K3       ; R80 := mMovie
-784 [-]: SELF      R80 R80 K7   ; R81 := R80; R80 := R80["0x1C19D966"]
-785 [-]: LOADK     R82 K85      ; R82 := "FanFare.Title"
-786 [-]: LOADK     R83 K86      ; R83 := "_color"
-787 [-]: MOVE      R84 R75      ; R84 := R75
-788 [-]: CALL      R80 5 1      ; R80(R81,R82,R83,R84)
-789 [-]: JMP       828          ; PC := 828
-790 [-]: TEST      R6 0         ; if not R6 then PC := 828
-791 [-]: JMP       828          ; PC := 828
-792 [-]: MOVE      R80 R0       ; R80 := R0
-793 [-]: GETUPVAL  R81 U7       ; R81 := U7
-794 [-]: GETTABLE  R81 R81 K25  ; R81 := R81["0xF81722A2"]
-795 [-]: MOVE      R82 R80      ; R82 := R80
-796 [-]: LOADK     R83 K116     ; R83 := "/Lotus/Language/Menu/HUD_MissionFailed"
-797 [-]: LOADK     R84 K119     ; R84 := "/Lotus/Language/Menu/MissionComplete"
-798 [-]: CALL      R81 4 2      ; R81 := R81(R82,R83,R84)
-799 [-]: GETGLOBAL R82 K120     ; R82 := 0x8C64AFA9
-800 [-]: GETGLOBAL R83 K3       ; R83 := mMovie
-801 [-]: LOADK     R84 K121     ; R84 := "FanFare.Title.gotoAndStop"
-802 [-]: GETUPVAL  R85 U7       ; R85 := U7
-803 [-]: GETTABLE  R85 R85 K25  ; R85 := R85["0xF81722A2"]
-804 [-]: MOVE      R86 R80      ; R86 := R80
-805 [-]: LOADK     R87 K122     ; R87 := 2
-806 [-]: LOADK     R88 K38      ; R88 := 1
-807 [-]: CALL      R85 4 0      ; R85,... := R85(R86,R87,R88)
-808 [-]: CALL      R82 0 1      ; R82(R83,...)
-809 [-]: GETGLOBAL R82 K3       ; R82 := mMovie
-810 [-]: SELF      R82 R82 K4   ; R83 := R82; R82 := R82["0x17028E8F"]
-811 [-]: LOADK     R84 K21      ; R84 := "FanFare.Title.Title.text"
-812 [-]: MOVE      R85 R81      ; R85 := R81
-813 [-]: CALL      R82 4 1      ; R82(R83,R84,R85)
-814 [-]: GETGLOBAL R82 K3       ; R82 := mMovie
-815 [-]: SELF      R82 R82 K4   ; R83 := R82; R82 := R82["0x17028E8F"]
-816 [-]: LOADK     R84 K123     ; R84 := "FanFare.Title.TitleShadow.text"
-817 [-]: MOVE      R85 R81      ; R85 := R81
-818 [-]: CALL      R82 4 1      ; R82(R83,R84,R85)
-819 [-]: TEST      R80 0        ; if not R80 then PC := 828
-820 [-]: JMP       828          ; PC := 828
-821 [-]: GETGLOBAL R82 K3       ; R82 := mMovie
-822 [-]: SELF      R82 R82 K4   ; R83 := R82; R82 := R82["0x17028E8F"]
-823 [-]: LOADK     R84 K54      ; R84 := "FanFare.Title.Title"
-824 [-]: LOADK     R85 K86      ; R85 := "_color"
-825 [-]: GETGLOBAL R86 K36      ; R86 := _G
-826 [-]: GETTABLE  R86 R86 K124 ; R86 := R86["UIColor_NegativeReputation"]
-827 [-]: CALL      R82 5 1      ; R82(R83,R84,R85,R86)
-828 [-]: GETGLOBAL R82 K3       ; R82 := mMovie
-829 [-]: SELF      R82 R82 K7   ; R83 := R82; R82 := R82["0x1C19D966"]
-830 [-]: LOADK     R84 K19      ; R84 := "FanFare.Title.Subtitle"
-831 [-]: LOADK     R85 K125     ; R85 := "text"
-832 [-]: MOVE      R86 R7       ; R86 := R7
-833 [-]: CALL      R82 5 1      ; R82(R83,R84,R85,R86)
-834 [-]: RETURN    R0 1         ; return 
+618 [-]: SELF      R69 R69 K7   ; R70 := R69; R69 := R69["0x1C19D966"]
+619 [-]: MOVE      R71 R68      ; R71 := R68
+620 [-]: LOADK     R72 K9       ; R72 := "_visible"
+621 [-]: MOVE      R73 R0       ; R73 := R0
+622 [-]: CALL      R69 5 1      ; R69(R70,R71,R72,R73)
+623 [-]: GETGLOBAL R69 K3       ; R69 := mMovie
+624 [-]: SELF      R69 R69 K7   ; R70 := R69; R69 := R69["0x1C19D966"]
+625 [-]: LOADK     R71 K53      ; R71 := "FanFare.Title.Title"
+626 [-]: LOADK     R72 K9       ; R72 := "_visible"
+627 [-]: MOVE      R73 R5       ; R73 := R5
+628 [-]: CALL      R69 5 1      ; R69(R70,R71,R72,R73)
+629 [-]: GETGLOBAL R69 K54      ; R69 := 0xF595ADDE
+630 [-]: GETGLOBAL R70 K3       ; R70 := mMovie
+631 [-]: SELF      R70 R70 K55  ; R71 := R70; R70 := R70["0x6B7B470B"]
+632 [-]: LOADK     R72 K53      ; R72 := "FanFare.Title.Title"
+633 [-]: LOADK     R73 K56      ; R73 := "_y"
+634 [-]: CALL      R70 4 0      ; R70,... := R70(R71,R72,R73)
+635 [-]: CALL      R69 0 2      ; R69 := R69(R70,...)
+636 [-]: GETGLOBAL R70 K54      ; R70 := 0xF595ADDE
+637 [-]: GETGLOBAL R71 K3       ; R71 := mMovie
+638 [-]: SELF      R71 R71 K55  ; R72 := R71; R71 := R71["0x6B7B470B"]
+639 [-]: LOADK     R73 K19      ; R73 := "FanFare.Title.Subtitle"
+640 [-]: LOADK     R74 K56      ; R74 := "_y"
+641 [-]: CALL      R71 4 0      ; R71,... := R71(R72,R73,R74)
+642 [-]: CALL      R70 0 2      ; R70 := R70(R71,...)
+643 [-]: GETGLOBAL R71 K54      ; R71 := 0xF595ADDE
+644 [-]: GETGLOBAL R72 K3       ; R72 := mMovie
+645 [-]: SELF      R72 R72 K55  ; R73 := R72; R72 := R72["0x6B7B470B"]
+646 [-]: LOADK     R74 K57      ; R74 := "FanFare.Label"
+647 [-]: LOADK     R75 K56      ; R75 := "_y"
+648 [-]: CALL      R72 4 0      ; R72,... := R72(R73,R74,R75)
+649 [-]: CALL      R71 0 2      ; R71 := R71(R72,...)
+650 [-]: GETGLOBAL R72 K54      ; R72 := 0xF595ADDE
+651 [-]: GETGLOBAL R73 K3       ; R73 := mMovie
+652 [-]: SELF      R73 R73 K55  ; R74 := R73; R73 := R73["0x6B7B470B"]
+653 [-]: LOADK     R75 K10      ; R75 := "FanFare.Title.Conclave"
+654 [-]: LOADK     R76 K56      ; R76 := "_y"
+655 [-]: CALL      R73 4 0      ; R73,... := R73(R74,R75,R76)
+656 [-]: CALL      R72 0 2      ; R72 := R72(R73,...)
+657 [-]: GETGLOBAL R73 K3       ; R73 := mMovie
+658 [-]: SELF      R73 R73 K7   ; R74 := R73; R73 := R73["0x1C19D966"]
+659 [-]: LOADK     R75 K53      ; R75 := "FanFare.Title.Title"
+660 [-]: LOADK     R76 K56      ; R76 := "_y"
+661 [-]: GETUPVAL  R77 U6       ; R77 := U6
+662 [-]: GETTABLE  R77 R77 K24  ; R77 := R77["0xF81722A2"]
+663 [-]: MOVE      R78 R5       ; R78 := R5
+664 [-]: LOADK     R79 K58      ; R79 := -250
+665 [-]: LOADK     R80 K32      ; R80 := 0
+666 [-]: CALL      R77 4 2      ; R77 := R77(R78,R79,R80)
+667 [-]: ADD       R77 R69 R77  ; R77 := R69 + R77
+668 [-]: CALL      R73 5 1      ; R73(R74,R75,R76,R77)
+669 [-]: GETGLOBAL R73 K3       ; R73 := mMovie
+670 [-]: SELF      R73 R73 K7   ; R74 := R73; R73 := R73["0x1C19D966"]
+671 [-]: LOADK     R75 K19      ; R75 := "FanFare.Title.Subtitle"
+672 [-]: LOADK     R76 K56      ; R76 := "_y"
+673 [-]: GETUPVAL  R77 U6       ; R77 := U6
+674 [-]: GETTABLE  R77 R77 K24  ; R77 := R77["0xF81722A2"]
+675 [-]: MOVE      R78 R5       ; R78 := R5
+676 [-]: LOADK     R79 K58      ; R79 := -250
+677 [-]: LOADK     R80 K32      ; R80 := 0
+678 [-]: CALL      R77 4 2      ; R77 := R77(R78,R79,R80)
+679 [-]: ADD       R77 R70 R77  ; R77 := R70 + R77
+680 [-]: CALL      R73 5 1      ; R73(R74,R75,R76,R77)
+681 [-]: GETGLOBAL R73 K3       ; R73 := mMovie
+682 [-]: SELF      R73 R73 K7   ; R74 := R73; R73 := R73["0x1C19D966"]
+683 [-]: LOADK     R75 K57      ; R75 := "FanFare.Label"
+684 [-]: LOADK     R76 K56      ; R76 := "_y"
+685 [-]: GETUPVAL  R77 U6       ; R77 := U6
+686 [-]: GETTABLE  R77 R77 K24  ; R77 := R77["0xF81722A2"]
+687 [-]: MOVE      R78 R5       ; R78 := R5
+688 [-]: LOADK     R79 K58      ; R79 := -250
+689 [-]: LOADK     R80 K32      ; R80 := 0
+690 [-]: CALL      R77 4 2      ; R77 := R77(R78,R79,R80)
+691 [-]: ADD       R77 R71 R77  ; R77 := R71 + R77
+692 [-]: CALL      R73 5 1      ; R73(R74,R75,R76,R77)
+693 [-]: GETGLOBAL R73 K3       ; R73 := mMovie
+694 [-]: SELF      R73 R73 K7   ; R74 := R73; R73 := R73["0x1C19D966"]
+695 [-]: LOADK     R75 K10      ; R75 := "FanFare.Title.Conclave"
+696 [-]: LOADK     R76 K56      ; R76 := "_y"
+697 [-]: GETUPVAL  R77 U6       ; R77 := U6
+698 [-]: GETTABLE  R77 R77 K24  ; R77 := R77["0xF81722A2"]
+699 [-]: MOVE      R78 R5       ; R78 := R5
+700 [-]: LOADK     R79 K59      ; R79 := 75
+701 [-]: LOADK     R80 K32      ; R80 := 0
+702 [-]: CALL      R77 4 2      ; R77 := R77(R78,R79,R80)
+703 [-]: ADD       R77 R72 R77  ; R77 := R72 + R77
+704 [-]: CALL      R73 5 1      ; R73(R74,R75,R76,R77)
+705 [-]: TEST      R5 0         ; if not R5 then PC := 816
+706 [-]: JMP       816          ; PC := 816
+707 [-]: LOADK     R73 K60      ; R73 := "/Lotus/Language/Menu/PvpMatchDefeat"
+708 [-]: GETGLOBAL R74 K35      ; R74 := _G
+709 [-]: GETTABLE  R74 R74 K61  ; R74 := R74["UIColor_Red"]
+710 [-]: GETGLOBAL R75 K16      ; R75 := gGameRules
+711 [-]: SELF      R75 R75 K62  ; R76 := R75; R75 := R75["0xED0EE7FB"]
+712 [-]: GETGLOBAL R77 K22      ; R77 := 0xEC274B1A
+713 [-]: LOADK     R78 K63      ; R78 := "Team1Score"
+714 [-]: CALL      R77 2 0      ; R77,... := R77(R78)
+715 [-]: CALL      R75 0 2      ; R75 := R75(R76,...)
+716 [-]: GETGLOBAL R76 K16      ; R76 := gGameRules
+717 [-]: SELF      R76 R76 K62  ; R77 := R76; R76 := R76["0xED0EE7FB"]
+718 [-]: GETGLOBAL R78 K22      ; R78 := 0xEC274B1A
+719 [-]: LOADK     R79 K64      ; R79 := "Team2Score"
+720 [-]: CALL      R78 2 0      ; R78,... := R78(R79)
+721 [-]: CALL      R76 0 2      ; R76 := R76(R77,...)
+722 [-]: SUB       R77 R75 R76  ; R77 := R75 - R76
+723 [-]: GETUPVAL  R78 U14      ; R78 := U14
+724 [-]: CALL      R78 1 2      ; R78 := R78()
+725 [-]: GETTABLE  R79 R78 K111 ; R79 := R78["missionType"]
+726 [-]: GETGLOBAL R80 K1       ; R80 := Lotus_Game
+727 [-]: GETTABLE  R80 R80 K112 ; R80 := R80["MT_ARENA"]
+728 [-]: EQ        0 R79 R80    ; if R79 ~= R80 then PC := 747
+729 [-]: JMP       747          ; PC := 747
+730 [-]: GETTABLE  R79 R78 K113 ; R79 := R78["faction"]
+731 [-]: GETGLOBAL R80 K1       ; R80 := Lotus_Game
+732 [-]: GETTABLE  R80 R80 K114 ; R80 := R80["FC_CORPUS"]
+733 [-]: EQ        0 R79 R80    ; if R79 ~= R80 then PC := 747
+734 [-]: JMP       747          ; PC := 747
+735 [-]: EQ        1 R77 K32    ; if R77 == 0 then PC := 745
+736 [-]: JMP       745          ; PC := 745
+737 [-]: GETGLOBAL R79 K11      ; R79 := _T
+738 [-]: GETTABLE  R79 R79 K115 ; R79 := R79["IndexQuestScoreMargin"]
+739 [-]: TEST      R79 0        ; if not R79 then PC := 747
+740 [-]: JMP       747          ; PC := 747
+741 [-]: GETGLOBAL R79 K11      ; R79 := _T
+742 [-]: GETTABLE  R79 R79 K115 ; R79 := R79["IndexQuestScoreMargin"]
+743 [-]: LT        0 R79 R77    ; if R79 >= R77 then PC := 747
+744 [-]: JMP       747          ; PC := 747
+745 [-]: LOADK     R73 K116     ; R73 := "/Lotus/Language/Menu/HUD_MissionFailed"
+746 [-]: JMP       766          ; PC := 766
+747 [-]: LT        1 K32 R77    ; if 0 < R77 then PC := 759
+748 [-]: JMP       759          ; PC := 759
+749 [-]: EQ        0 R77 K32    ; if R77 ~= 0 then PC := 761
+750 [-]: JMP       761          ; PC := 761
+751 [-]: LT        0 K32 R75    ; if 0 >= R75 then PC := 761
+752 [-]: JMP       761          ; PC := 761
+753 [-]: GETTABLE  R79 R78 K117 ; R79 := R78["goalTag"]
+754 [-]: GETGLOBAL R80 K22      ; R80 := 0xEC274B1A
+755 [-]: LOADK     R81 K118     ; R81 := "WaterFight"
+756 [-]: CALL      R80 2 2      ; R80 := R80(R81)
+757 [-]: EQ        0 R79 R80    ; if R79 ~= R80 then PC := 761
+758 [-]: JMP       761          ; PC := 761
+759 [-]: LOADK     R73 K68      ; R73 := "/Lotus/Language/Menu/PvpMatchVictory"
+760 [-]: JMP       764          ; PC := 764
+761 [-]: EQ        0 R77 K32    ; if R77 ~= 0 then PC := 764
+762 [-]: JMP       764          ; PC := 764
+763 [-]: LOADK     R73 K70      ; R73 := "/Lotus/Language/Menu/PvpMatchDraw"
+764 [-]: GETGLOBAL R79 K35      ; R79 := _G
+765 [-]: GETTABLE  R74 R79 K69  ; R74 := R79["UIColor_White"]
+766 [-]: GETGLOBAL R79 K3       ; R79 := mMovie
+767 [-]: SELF      R79 R79 K4   ; R80 := R79; R79 := R79["0x17028E8F"]
+768 [-]: LOADK     R81 K84      ; R81 := "FanFare.Title.Title.text"
+769 [-]: MOVE      R82 R73      ; R82 := R73
+770 [-]: CALL      R79 4 1      ; R79(R80,R81,R82)
+771 [-]: GETGLOBAL R79 K3       ; R79 := mMovie
+772 [-]: SELF      R79 R79 K7   ; R80 := R79; R79 := R79["0x1C19D966"]
+773 [-]: LOADK     R81 K85      ; R81 := "FanFare.Title"
+774 [-]: LOADK     R82 K86      ; R82 := "_color"
+775 [-]: MOVE      R83 R74      ; R83 := R74
+776 [-]: CALL      R79 5 1      ; R79(R80,R81,R82,R83)
+777 [-]: JMP       816          ; PC := 816
+778 [-]: TEST      R5 0         ; if not R5 then PC := 816
+779 [-]: JMP       816          ; PC := 816
+780 [-]: MOVE      R79 R0       ; R79 := R0
+781 [-]: GETUPVAL  R80 U6       ; R80 := U6
+782 [-]: GETTABLE  R80 R80 K24  ; R80 := R80["0xF81722A2"]
+783 [-]: MOVE      R81 R79      ; R81 := R79
+784 [-]: LOADK     R82 K116     ; R82 := "/Lotus/Language/Menu/HUD_MissionFailed"
+785 [-]: LOADK     R83 K119     ; R83 := "/Lotus/Language/Menu/MissionComplete"
+786 [-]: CALL      R80 4 2      ; R80 := R80(R81,R82,R83)
+787 [-]: GETGLOBAL R81 K120     ; R81 := 0x8C64AFA9
+788 [-]: GETGLOBAL R82 K3       ; R82 := mMovie
+789 [-]: LOADK     R83 K121     ; R83 := "FanFare.Title.gotoAndStop"
+790 [-]: GETUPVAL  R84 U6       ; R84 := U6
+791 [-]: GETTABLE  R84 R84 K24  ; R84 := R84["0xF81722A2"]
+792 [-]: MOVE      R85 R79      ; R85 := R79
+793 [-]: LOADK     R86 K122     ; R86 := 2
+794 [-]: LOADK     R87 K37      ; R87 := 1
+795 [-]: CALL      R84 4 0      ; R84,... := R84(R85,R86,R87)
+796 [-]: CALL      R81 0 1      ; R81(R82,...)
+797 [-]: GETGLOBAL R81 K3       ; R81 := mMovie
+798 [-]: SELF      R81 R81 K4   ; R82 := R81; R81 := R81["0x17028E8F"]
+799 [-]: LOADK     R83 K84      ; R83 := "FanFare.Title.Title.text"
+800 [-]: MOVE      R84 R80      ; R84 := R80
+801 [-]: CALL      R81 4 1      ; R81(R82,R83,R84)
+802 [-]: GETGLOBAL R81 K3       ; R81 := mMovie
+803 [-]: SELF      R81 R81 K4   ; R82 := R81; R81 := R81["0x17028E8F"]
+804 [-]: LOADK     R83 K123     ; R83 := "FanFare.Title.TitleShadow.text"
+805 [-]: MOVE      R84 R80      ; R84 := R80
+806 [-]: CALL      R81 4 1      ; R81(R82,R83,R84)
+807 [-]: TEST      R79 0        ; if not R79 then PC := 816
+808 [-]: JMP       816          ; PC := 816
+809 [-]: GETGLOBAL R81 K3       ; R81 := mMovie
+810 [-]: SELF      R81 R81 K4   ; R82 := R81; R81 := R81["0x17028E8F"]
+811 [-]: LOADK     R83 K53      ; R83 := "FanFare.Title.Title"
+812 [-]: LOADK     R84 K86      ; R84 := "_color"
+813 [-]: GETGLOBAL R85 K35      ; R85 := _G
+814 [-]: GETTABLE  R85 R85 K124 ; R85 := R85["UIColor_NegativeReputation"]
+815 [-]: CALL      R81 5 1      ; R81(R82,R83,R84,R85)
+816 [-]: GETGLOBAL R81 K3       ; R81 := mMovie
+817 [-]: SELF      R81 R81 K7   ; R82 := R81; R81 := R81["0x1C19D966"]
+818 [-]: LOADK     R83 K19      ; R83 := "FanFare.Title.Subtitle"
+819 [-]: LOADK     R84 K125     ; R84 := "text"
+820 [-]: MOVE      R85 R6       ; R85 := R6
+821 [-]: CALL      R81 5 1      ; R81(R82,R83,R84,R85)
+822 [-]: RETURN    R0 1         ; return 
 
 

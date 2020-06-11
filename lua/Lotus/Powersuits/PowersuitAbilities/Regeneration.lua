@@ -743,7 +743,7 @@ code size: 33
 107 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["0xE6450C9D"]
 108 [-]: MOVE      R3 R1        ; R3 := R1
 109 [-]: NEWTABLE  R4 0 2       ; R4 := {}
-110 [-]: SETTABLE  R4 K11 K29   ; R4["Label"] := "/Game/AVATAR_ARMOUR"
+110 [-]: SETTABLE  R4 K11 K29   ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_ARMOUR"
 111 [-]: GETUPVAL  R5 U7        ; R5 := U7
 112 [-]: SETTABLE  R4 K13 R5    ; R4["Value"] := R5
 113 [-]: CALL      R2 3 1       ; R2(R3,R4)
@@ -898,8 +898,8 @@ code size: 33
  25 [-]: MOVE      R11 R2       ; R11 := R2
  26 [-]: GETGLOBAL R12 K8       ; R12 := Game
  27 [-]: GETTABLE  R12 R12 K9   ; R12 := R12["AVATAR_BLEEDOUT_MODIFIER"]
- 28 [-]: GETGLOBAL R13 K8       ; R13 := Game
- 29 [-]: GETTABLE  R13 R13 K10  ; R13 := R13["STACKING_MULTIPLY"]
+ 28 [-]: GETGLOBAL R13 K10      ; R13 := Engine
+ 29 [-]: GETTABLE  R13 R13 K11  ; R13 := R13["STACKING_MULTIPLY"]
  30 [-]: GETUPVAL  R14 U0       ; R14 := U0
  31 [-]: UNM       R14 R14      ; R14 := - R14
  32 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
@@ -924,165 +924,165 @@ code size: 33
   7 [-]: MOVE      R5 R1        ; R5 := R1
   8 [-]: GETGLOBAL R6 K4        ; R6 := Game
   9 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["AVATAR_ARMOUR"]
- 10 [-]: GETGLOBAL R7 K4        ; R7 := Game
- 11 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["ADD"]
+ 10 [-]: GETGLOBAL R7 K6        ; R7 := Engine
+ 11 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["ADD"]
  12 [-]: GETUPVAL  R8 U0        ; R8 := U0
  13 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
- 14 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
- 15 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["0xFAFD4322"]
+ 14 [-]: GETGLOBAL R3 K8        ; R3 := Lotus_Game
+ 15 [-]: GETTABLE  R3 R3 K9     ; R3 := R3["0xFAFD4322"]
  16 [-]: CALL      R3 1 2       ; R3 := R3()
  17 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 18 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["instigatorAvatar"]
- 19 [-]: SETTABLE  R3 K9 R4     ; R3["instigator"] := R4
+ 18 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["instigatorAvatar"]
+ 19 [-]: SETTABLE  R3 K10 R4    ; R3["instigator"] := R4
  20 [-]: NEWTABLE  R4 1 0       ; R4 := {}
  21 [-]: MOVE      R5 R0        ; R5 := R0
  22 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 23 [-]: SETTABLE  R3 K11 R4    ; R3["affected"] := R4
- 24 [-]: GETGLOBAL R4 K13       ; R4 := armourBuffTimerType
- 25 [-]: SETTABLE  R3 K12 R4    ; R3["abilityType"] := R4
- 26 [-]: SELF      R4 R0 K14    ; R5 := R0; R4 := R0["0x584F13D6"]
+ 23 [-]: SETTABLE  R3 K12 R4    ; R3["affected"] := R4
+ 24 [-]: GETGLOBAL R4 K14       ; R4 := armourBuffTimerType
+ 25 [-]: SETTABLE  R3 K13 R4    ; R3["abilityType"] := R4
+ 26 [-]: SELF      R4 R0 K15    ; R5 := R0; R4 := R0["0x584F13D6"]
  27 [-]: MOVE      R6 R3        ; R6 := R3
  28 [-]: MOVE      R7 R0        ; R7 := R0
  29 [-]: MOVE      R8 R1        ; R8 := R1
  30 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 31 [-]: GETGLOBAL R4 K7        ; R4 := Lotus_Game
- 32 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["BT_AMOUNT"]
- 33 [-]: SETTABLE  R3 K15 R4    ; R3["buffType"] := R4
- 34 [-]: GETGLOBAL R4 K17       ; R4 := armourBuffType
- 35 [-]: SETTABLE  R3 K12 R4    ; R3["abilityType"] := R4
+ 31 [-]: GETGLOBAL R4 K8        ; R4 := Lotus_Game
+ 32 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["BT_AMOUNT"]
+ 33 [-]: SETTABLE  R3 K16 R4    ; R3["buffType"] := R4
+ 34 [-]: GETGLOBAL R4 K18       ; R4 := armourBuffType
+ 35 [-]: SETTABLE  R3 K13 R4    ; R3["abilityType"] := R4
  36 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 37 [-]: SETTABLE  R3 K18 R4    ; R3["buffData"] := R4
- 38 [-]: SELF      R4 R0 K14    ; R5 := R0; R4 := R0["0x584F13D6"]
+ 37 [-]: SETTABLE  R3 K19 R4    ; R3["buffData"] := R4
+ 38 [-]: SELF      R4 R0 K15    ; R5 := R0; R4 := R0["0x584F13D6"]
  39 [-]: MOVE      R6 R3        ; R6 := R3
  40 [-]: MOVE      R7 R1        ; R7 := R1
  41 [-]: MOVE      R8 R1        ; R8 := R1
  42 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
  43 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 44 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["instigatorAvatar"]
- 45 [-]: SELF      R4 R4 K19    ; R5 := R4; R4 := R4["0xDBEF0FB6"]
+ 44 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["instigatorAvatar"]
+ 45 [-]: SELF      R4 R4 K20    ; R5 := R4; R4 := R4["0xDBEF0FB6"]
  46 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 47 [-]: SELF      R5 R0 K19    ; R6 := R0; R5 := R0["0xDBEF0FB6"]
+ 47 [-]: SELF      R5 R0 K20    ; R6 := R0; R5 := R0["0xDBEF0FB6"]
  48 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 49 [-]: GETGLOBAL R6 K20       ; R6 := 0x400E7765
+ 49 [-]: GETGLOBAL R6 K21       ; R6 := 0x400E7765
  50 [-]: MOVE      R7 R0        ; R7 := R0
  51 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  52 [-]: TEST      R6 1         ; if R6 then PC := 84
  53 [-]: JMP       84           ; PC := 84
- 54 [-]: GETGLOBAL R6 K20       ; R6 := 0x400E7765
- 55 [-]: GETGLOBAL R7 K21       ; R7 := mOwner
+ 54 [-]: GETGLOBAL R6 K21       ; R6 := 0x400E7765
+ 55 [-]: GETGLOBAL R7 K22       ; R7 := mOwner
  56 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  57 [-]: TEST      R6 1         ; if R6 then PC := 84
  58 [-]: JMP       84           ; PC := 84
- 59 [-]: GETGLOBAL R6 K21       ; R6 := mOwner
- 60 [-]: SELF      R6 R6 K22    ; R7 := R6; R6 := R6["0xB3F0027"]
+ 59 [-]: GETGLOBAL R6 K22       ; R6 := mOwner
+ 60 [-]: SELF      R6 R6 K23    ; R7 := R6; R6 := R6["0xB3F0027"]
  61 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  62 [-]: TEST      R6 0         ; if not R6 then PC := 84
  63 [-]: JMP       84           ; PC := 84
- 64 [-]: GETGLOBAL R6 K23       ; R6 := _T
- 65 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["renewalHealingTargets"]
- 66 [-]: EQ        1 R6 K25     ; if R6 == nil then PC := 84
+ 64 [-]: GETGLOBAL R6 K24       ; R6 := _T
+ 65 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["renewalHealingTargets"]
+ 66 [-]: EQ        1 R6 K26     ; if R6 == nil then PC := 84
  67 [-]: JMP       84           ; PC := 84
- 68 [-]: GETGLOBAL R6 K23       ; R6 := _T
- 69 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["renewalHealingTargets"]
+ 68 [-]: GETGLOBAL R6 K24       ; R6 := _T
+ 69 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["renewalHealingTargets"]
  70 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
- 71 [-]: EQ        1 R6 K25     ; if R6 == nil then PC := 84
+ 71 [-]: EQ        1 R6 K26     ; if R6 == nil then PC := 84
  72 [-]: JMP       84           ; PC := 84
- 73 [-]: GETGLOBAL R6 K23       ; R6 := _T
- 74 [-]: GETTABLE  R6 R6 K24    ; R6 := R6["renewalHealingTargets"]
+ 73 [-]: GETGLOBAL R6 K24       ; R6 := _T
+ 74 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["renewalHealingTargets"]
  75 [-]: GETTABLE  R6 R6 R4     ; R6 := R6[R4]
  76 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
- 77 [-]: EQ        0 R6 K25     ; if R6 ~= nil then PC := 80
+ 77 [-]: EQ        0 R6 K26     ; if R6 ~= nil then PC := 80
  78 [-]: JMP       80           ; PC := 80
  79 [-]: JMP       84           ; PC := 84
- 80 [-]: GETGLOBAL R6 K26       ; R6 := 0x201191EA
- 81 [-]: LOADK     R7 K27       ; R7 := 0
+ 80 [-]: GETGLOBAL R6 K27       ; R6 := 0x201191EA
+ 81 [-]: LOADK     R7 K28       ; R7 := 0
  82 [-]: CALL      R6 2 1       ; R6(R7)
  83 [-]: JMP       49           ; PC := 49
- 84 [-]: GETGLOBAL R6 K20       ; R6 := 0x400E7765
+ 84 [-]: GETGLOBAL R6 K21       ; R6 := 0x400E7765
  85 [-]: MOVE      R7 R0        ; R7 := R0
  86 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  87 [-]: TEST      R6 1         ; if R6 then PC := 93
  88 [-]: JMP       93           ; PC := 93
- 89 [-]: SELF      R6 R0 K28    ; R7 := R0; R6 := R0["0x5A115A02"]
+ 89 [-]: SELF      R6 R0 K29    ; R7 := R0; R6 := R0["0x5A115A02"]
  90 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  91 [-]: TEST      R6 0         ; if not R6 then PC := 94
  92 [-]: JMP       94           ; PC := 94
  93 [-]: RETURN    R0 1         ; return 
- 94 [-]: SELF      R6 R0 K14    ; R7 := R0; R6 := R0["0x584F13D6"]
+ 94 [-]: SELF      R6 R0 K15    ; R7 := R0; R6 := R0["0x584F13D6"]
  95 [-]: MOVE      R8 R3        ; R8 := R3
  96 [-]: MOVE      R9 R0        ; R9 := R0
  97 [-]: MOVE      R10 R1       ; R10 := R1
  98 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  99 [-]: GETUPVAL  R6 U2        ; R6 := U2
-100 [-]: GETGLOBAL R7 K13       ; R7 := armourBuffTimerType
-101 [-]: SETTABLE  R3 K12 R7    ; R3["abilityType"] := R7
-102 [-]: GETGLOBAL R7 K7        ; R7 := Lotus_Game
-103 [-]: GETTABLE  R7 R7 K29    ; R7 := R7["BT_AMOUNT_TIMER"]
-104 [-]: SETTABLE  R3 K15 R7    ; R3["buffType"] := R7
-105 [-]: SETTABLE  R3 K18 R6    ; R3["buffData"] := R6
-106 [-]: GETGLOBAL R7 K31       ; R7 := math
-107 [-]: GETTABLE  R7 R7 K32    ; R7 := R7["0xF7005A7B"]
+100 [-]: GETGLOBAL R7 K14       ; R7 := armourBuffTimerType
+101 [-]: SETTABLE  R3 K13 R7    ; R3["abilityType"] := R7
+102 [-]: GETGLOBAL R7 K8        ; R7 := Lotus_Game
+103 [-]: GETTABLE  R7 R7 K30    ; R7 := R7["BT_AMOUNT_TIMER"]
+104 [-]: SETTABLE  R3 K16 R7    ; R3["buffType"] := R7
+105 [-]: SETTABLE  R3 K19 R6    ; R3["buffData"] := R6
+106 [-]: GETGLOBAL R7 K32       ; R7 := math
+107 [-]: GETTABLE  R7 R7 K33    ; R7 := R7["0xF7005A7B"]
 108 [-]: GETUPVAL  R8 U0        ; R8 := U0
-109 [-]: ADD       R8 R8 K33    ; R8 := R8 + 0.5
+109 [-]: ADD       R8 R8 K34    ; R8 := R8 + 0.5
 110 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-111 [-]: SETTABLE  R3 K30 R7    ; R3["buffDataExtra"] := R7
-112 [-]: SELF      R7 R0 K14    ; R8 := R0; R7 := R0["0x584F13D6"]
+111 [-]: SETTABLE  R3 K31 R7    ; R3["buffDataExtra"] := R7
+112 [-]: SELF      R7 R0 K15    ; R8 := R0; R7 := R0["0x584F13D6"]
 113 [-]: MOVE      R9 R3        ; R9 := R3
 114 [-]: MOVE      R10 R1       ; R10 := R1
 115 [-]: MOVE      R11 R1       ; R11 := R1
 116 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
-117 [-]: SELF      R7 R2 K34    ; R8 := R2; R7 := R2["0x6978AC59"]
+117 [-]: SELF      R7 R2 K35    ; R8 := R2; R7 := R2["0x6978AC59"]
 118 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-119 [-]: LT        0 K27 R6     ; if 0 >= R6 then PC := 153
+119 [-]: LT        0 K28 R6     ; if 0 >= R6 then PC := 153
 120 [-]: JMP       153          ; PC := 153
-121 [-]: GETGLOBAL R8 K20       ; R8 := 0x400E7765
+121 [-]: GETGLOBAL R8 K21       ; R8 := 0x400E7765
 122 [-]: MOVE      R9 R0        ; R9 := R0
 123 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 124 [-]: TEST      R8 1         ; if R8 then PC := 153
 125 [-]: JMP       153          ; PC := 153
-126 [-]: SELF      R8 R0 K28    ; R9 := R0; R8 := R0["0x5A115A02"]
+126 [-]: SELF      R8 R0 K29    ; R9 := R0; R8 := R0["0x5A115A02"]
 127 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 128 [-]: TEST      R8 1         ; if R8 then PC := 153
 129 [-]: JMP       153          ; PC := 153
-130 [-]: GETGLOBAL R8 K20       ; R8 := 0x400E7765
+130 [-]: GETGLOBAL R8 K21       ; R8 := 0x400E7765
 131 [-]: MOVE      R9 R7        ; R9 := R7
 132 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 133 [-]: TEST      R8 1         ; if R8 then PC := 153
 134 [-]: JMP       153          ; PC := 153
-135 [-]: GETGLOBAL R8 K20       ; R8 := 0x400E7765
-136 [-]: GETGLOBAL R9 K21       ; R9 := mOwner
+135 [-]: GETGLOBAL R8 K21       ; R8 := 0x400E7765
+136 [-]: GETGLOBAL R9 K22       ; R9 := mOwner
 137 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 138 [-]: TEST      R8 1         ; if R8 then PC := 153
 139 [-]: JMP       153          ; PC := 153
-140 [-]: GETGLOBAL R8 K21       ; R8 := mOwner
-141 [-]: SELF      R8 R8 K35    ; R9 := R8; R8 := R8["0x6E7BD8DC"]
+140 [-]: GETGLOBAL R8 K22       ; R8 := mOwner
+141 [-]: SELF      R8 R8 K36    ; R9 := R8; R8 := R8["0x6E7BD8DC"]
 142 [-]: MOVE      R10 R7       ; R10 := R7
 143 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
 144 [-]: TEST      R8 1         ; if R8 then PC := 153
 145 [-]: JMP       153          ; PC := 153
-146 [-]: GETGLOBAL R8 K26       ; R8 := 0x201191EA
-147 [-]: LOADK     R9 K27       ; R9 := 0
+146 [-]: GETGLOBAL R8 K27       ; R8 := 0x201191EA
+147 [-]: LOADK     R9 K28       ; R9 := 0
 148 [-]: CALL      R8 2 1       ; R8(R9)
-149 [-]: GETGLOBAL R8 K36       ; R8 := 0x4CDEF9FF
+149 [-]: GETGLOBAL R8 K37       ; R8 := 0x4CDEF9FF
 150 [-]: CALL      R8 1 2       ; R8 := R8()
 151 [-]: SUB       R6 R6 R8     ; R6 := R6 - R8
 152 [-]: JMP       119          ; PC := 119
-153 [-]: GETGLOBAL R8 K20       ; R8 := 0x400E7765
+153 [-]: GETGLOBAL R8 K21       ; R8 := 0x400E7765
 154 [-]: MOVE      R9 R0        ; R9 := R0
 155 [-]: CALL      R8 2 2       ; R8 := R8(R9)
 156 [-]: TEST      R8 1         ; if R8 then PC := 173
 157 [-]: JMP       173          ; PC := 173
-158 [-]: SELF      R8 R2 K37    ; R9 := R2; R8 := R2["0x5A740E25"]
+158 [-]: SELF      R8 R2 K38    ; R9 := R2; R8 := R2["0x5A740E25"]
 159 [-]: MOVE      R10 R1       ; R10 := R1
 160 [-]: GETGLOBAL R11 K4       ; R11 := Game
 161 [-]: GETTABLE  R11 R11 K5   ; R11 := R11["AVATAR_ARMOUR"]
-162 [-]: GETGLOBAL R12 K4       ; R12 := Game
-163 [-]: GETTABLE  R12 R12 K6   ; R12 := R12["ADD"]
+162 [-]: GETGLOBAL R12 K6       ; R12 := Engine
+163 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["ADD"]
 164 [-]: GETUPVAL  R13 U0       ; R13 := U0
 165 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
-166 [-]: LT        0 K27 R6     ; if 0 >= R6 then PC := 173
+166 [-]: LT        0 K28 R6     ; if 0 >= R6 then PC := 173
 167 [-]: JMP       173          ; PC := 173
-168 [-]: SELF      R8 R0 K14    ; R9 := R0; R8 := R0["0x584F13D6"]
+168 [-]: SELF      R8 R0 K15    ; R9 := R0; R8 := R0["0x584F13D6"]
 169 [-]: MOVE      R10 R3       ; R10 := R3
 170 [-]: MOVE      R11 R0       ; R11 := R0
 171 [-]: MOVE      R12 R1       ; R12 := R1
@@ -1187,7 +1187,7 @@ code size: 33
  86 [-]: SELF      R9 R4 K23    ; R10 := R4; R9 := R4["0x3B1B11B9"]
  87 [-]: GETGLOBAL R11 K24      ; R11 := Game
  88 [-]: GETTABLE  R11 R11 K25  ; R11 := R11["AVATAR_ENERGY_GAIN_MULTIPLIER"]
- 89 [-]: GETGLOBAL R12 K24      ; R12 := Game
+ 89 [-]: GETGLOBAL R12 K16      ; R12 := Engine
  90 [-]: GETTABLE  R12 R12 K26  ; R12 := R12["MULTIPLY"]
  91 [-]: LOADK     R13 K6       ; R13 := 0
  92 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
@@ -1412,7 +1412,7 @@ code size: 33
 311 [-]: MOVE      R38 R14      ; R38 := R14
 312 [-]: GETGLOBAL R39 K24      ; R39 := Game
 313 [-]: GETTABLE  R39 R39 K81  ; R39 := R39["AVATAR_BLEEDOUT_MODIFIER"]
-314 [-]: GETGLOBAL R40 K24      ; R40 := Game
+314 [-]: GETGLOBAL R40 K16      ; R40 := Engine
 315 [-]: GETTABLE  R40 R40 K82  ; R40 := R40["STACKING_MULTIPLY"]
 316 [-]: GETUPVAL  R41 U6       ; R41 := U6
 317 [-]: UNM       R41 R41      ; R41 := - R41
@@ -1763,26 +1763,26 @@ code size: 33
  26 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0xF21555A7"]
  27 [-]: GETGLOBAL R6 K11       ; R6 := Game
  28 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["AVATAR_ENERGY_GAIN_MULTIPLIER"]
- 29 [-]: GETGLOBAL R7 K11       ; R7 := Game
- 30 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["MULTIPLY"]
+ 29 [-]: GETGLOBAL R7 K13       ; R7 := Engine
+ 30 [-]: GETTABLE  R7 R7 K14    ; R7 := R7["MULTIPLY"]
  31 [-]: LOADK     R8 K4        ; R8 := 0
  32 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 33 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1["0xD536546E"]
+ 33 [-]: SELF      R4 R1 K15    ; R5 := R1; R4 := R1["0xD536546E"]
  34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
  35 [-]: TEST      R4 0         ; if not R4 then PC := 42
  36 [-]: JMP       42           ; PC := 42
  37 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 38 [-]: GETTABLE  R4 R4 K15    ; R4 := R4["0xC86606A6"]
+ 38 [-]: GETTABLE  R4 R4 K16    ; R4 := R4["0xC86606A6"]
  39 [-]: GETUPVAL  R5 U2        ; R5 := U2
  40 [-]: MOVE      R6 R0        ; R6 := R0
  41 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 42 [-]: SELF      R4 R0 K16    ; R5 := R0; R4 := R0["0xBADE9738"]
- 43 [-]: GETGLOBAL R6 K17       ; R6 := 0x7C282057
+ 42 [-]: SELF      R4 R0 K17    ; R5 := R0; R4 := R0["0xBADE9738"]
+ 43 [-]: GETGLOBAL R6 K18       ; R6 := 0x7C282057
  44 [-]: GETGLOBAL R7 K2        ; R7 := mOwner
  45 [-]: SELF      R7 R7 K3     ; R8 := R7; R7 := R7["0xE2B32C65"]
  46 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
  47 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 48 [-]: SELF      R6 R6 K18    ; R7 := R6; R6 := R6["0x73BD8B3C"]
+ 48 [-]: SELF      R6 R6 K19    ; R7 := R6; R6 := R6["0x73BD8B3C"]
  49 [-]: MOVE      R8 R0        ; R8 := R0
  50 [-]: CALL      R6 3 0       ; R6,... := R6(R7,R8)
  51 [-]: CALL      R4 0 1       ; R4(R5,...)
@@ -1790,56 +1790,56 @@ code size: 33
  53 [-]: MOVE      R5 R3        ; R5 := R3
  54 [-]: CALL      R4 2 1       ; R4(R5)
  55 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 56 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["0x86C5E5B2"]
+ 56 [-]: GETTABLE  R4 R4 K20    ; R4 := R4["0x86C5E5B2"]
  57 [-]: MOVE      R5 R0        ; R5 := R0
  58 [-]: GETGLOBAL R6 K2        ; R6 := mOwner
  59 [-]: MOVE      R7 R1        ; R7 := R1
  60 [-]: CALL      R4 4 2       ; R4 := R4(R5,R6,R7)
- 61 [-]: GETGLOBAL R5 K20       ; R5 := 0x400E7765
+ 61 [-]: GETGLOBAL R5 K21       ; R5 := 0x400E7765
  62 [-]: MOVE      R6 R4        ; R6 := R4
  63 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  64 [-]: TEST      R5 1         ; if R5 then PC := 76
  65 [-]: JMP       76           ; PC := 76
- 66 [-]: GETTABLE  R5 R4 K21    ; R5 := R4["bleedoutModifier"]
+ 66 [-]: GETTABLE  R5 R4 K22    ; R5 := R4["bleedoutModifier"]
  67 [-]: MOVE      R5 R4        ; R5 := R4
- 68 [-]: GETGLOBAL R5 K20       ; R5 := 0x400E7765
- 69 [-]: GETTABLE  R6 R4 K22    ; R6 := R4["deco"]
+ 68 [-]: GETGLOBAL R5 K21       ; R5 := 0x400E7765
+ 69 [-]: GETTABLE  R6 R4 K23    ; R6 := R4["deco"]
  70 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  71 [-]: TEST      R5 1         ; if R5 then PC := 76
  72 [-]: JMP       76           ; PC := 76
- 73 [-]: GETTABLE  R5 R4 K22    ; R5 := R4["deco"]
- 74 [-]: SELF      R5 R5 K23    ; R6 := R5; R5 := R5["0xD4C2743F"]
+ 73 [-]: GETTABLE  R5 R4 K23    ; R5 := R4["deco"]
+ 74 [-]: SELF      R5 R5 K24    ; R6 := R5; R5 := R5["0xD4C2743F"]
  75 [-]: CALL      R5 2 1       ; R5(R6)
  76 [-]: GETGLOBAL R5 K0        ; R5 := _T
- 77 [-]: GETTABLE  R5 R5 K24    ; R5 := R5["renewalHealingTargets"]
- 78 [-]: EQ        1 R5 K25     ; if R5 == nil then PC := 163
+ 77 [-]: GETTABLE  R5 R5 K25    ; R5 := R5["renewalHealingTargets"]
+ 78 [-]: EQ        1 R5 K26     ; if R5 == nil then PC := 163
  79 [-]: JMP       163          ; PC := 163
- 80 [-]: GETGLOBAL R5 K26       ; R5 := 0xEC274B1A
- 81 [-]: LOADK     R6 K27       ; R6 := "RenewalAbility"
+ 80 [-]: GETGLOBAL R5 K27       ; R5 := 0xEC274B1A
+ 81 [-]: LOADK     R6 K28       ; R6 := "RenewalAbility"
  82 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  83 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 84 [-]: SELF      R7 R1 K28    ; R8 := R1; R7 := R1["0xDBEF0FB6"]
+ 84 [-]: SELF      R7 R1 K29    ; R8 := R1; R7 := R1["0xDBEF0FB6"]
  85 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 86 [-]: SELF      R8 R0 K29    ; R9 := R0; R8 := R0["0xFD910504"]
+ 86 [-]: SELF      R8 R0 K30    ; R9 := R0; R8 := R0["0xFD910504"]
  87 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  88 [-]: LT        0 K4 R8      ; if 0 >= R8 then PC := 96
  89 [-]: JMP       96           ; PC := 96
- 90 [-]: SELF      R8 R0 K30    ; R9 := R0; R8 := R0["0x46849197"]
+ 90 [-]: SELF      R8 R0 K31    ; R9 := R0; R8 := R0["0x46849197"]
  91 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 92 [-]: GETGLOBAL R9 K31       ; R9 := Lotus_Game
- 93 [-]: GETTABLE  R9 R9 K32    ; R9 := R9["PowerSuit_AUGMENT_ONE"]
+ 92 [-]: GETGLOBAL R9 K32       ; R9 := Lotus_Game
+ 93 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["PowerSuit_AUGMENT_ONE"]
  94 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 97
  95 [-]: JMP       97           ; PC := 97
  96 [-]: MOVE      R8 R0        ; R8 := R0
  97 [-]: MOVE      R8 R1        ; R8 := R1
- 98 [-]: GETGLOBAL R9 K33       ; R9 := 0xECFDD17
+ 98 [-]: GETGLOBAL R9 K34       ; R9 := 0xECFDD17
  99 [-]: GETGLOBAL R10 K0       ; R10 := _T
-100 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["renewalHealingTargets"]
+100 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["renewalHealingTargets"]
 101 [-]: GETTABLE  R10 R10 R7   ; R10 := R10[R7]
 102 [-]: CALL      R9 2 4       ; R9,R10,R11 := R9(R10)
 103 [-]: JMP       133          ; PC := 133
-104 [-]: GETTABLE  R14 R13 K34  ; R14 := R13["avatar"]
-105 [-]: GETGLOBAL R15 K20      ; R15 := 0x400E7765
+104 [-]: GETTABLE  R14 R13 K35  ; R14 := R13["avatar"]
+105 [-]: GETGLOBAL R15 K21      ; R15 := 0x400E7765
 106 [-]: MOVE      R16 R14      ; R16 := R14
 107 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 108 [-]: TEST      R15 1        ; if R15 then PC := 133
@@ -1851,19 +1851,19 @@ code size: 33
 114 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
 115 [-]: TEST      R8 0         ; if not R8 then PC := 128
 116 [-]: JMP       128          ; PC := 128
-117 [-]: GETGLOBAL R15 K20      ; R15 := 0x400E7765
-118 [-]: SELF      R16 R14 K35  ; R17 := R14; R16 := R14["0x96D4FC9C"]
+117 [-]: GETGLOBAL R15 K21      ; R15 := 0x400E7765
+118 [-]: SELF      R16 R14 K36  ; R17 := R14; R16 := R14["0x96D4FC9C"]
 119 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
 120 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
 121 [-]: TEST      R15 1        ; if R15 then PC := 128
 122 [-]: JMP       128          ; PC := 128
-123 [-]: SELF      R15 R14 K36  ; R16 := R14; R15 := R14["0xA3F6069B"]
+123 [-]: SELF      R15 R14 K37  ; R16 := R14; R15 := R14["0xA3F6069B"]
 124 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-125 [-]: SELF      R15 R15 K37  ; R16 := R15; R15 := R15["0x220515A9"]
+125 [-]: SELF      R15 R15 K38  ; R16 := R15; R15 := R15["0x220515A9"]
 126 [-]: MOVE      R17 R0       ; R17 := R0
 127 [-]: CALL      R15 3 1      ; R15(R16,R17)
-128 [-]: GETGLOBAL R15 K38      ; R15 := table
-129 [-]: GETTABLE  R15 R15 K39  ; R15 := R15["0xE6450C9D"]
+128 [-]: GETGLOBAL R15 K39      ; R15 := table
+129 [-]: GETTABLE  R15 R15 K40  ; R15 := R15["0xE6450C9D"]
 130 [-]: MOVE      R16 R6       ; R16 := R6
 131 [-]: MOVE      R17 R14      ; R17 := R14
 132 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -1872,31 +1872,31 @@ code size: 33
 135 [-]: LEN       R15 R6       ; R15 := # R6
 136 [-]: LT        0 K4 R15     ; if 0 >= R15 then PC := 152
 137 [-]: JMP       152          ; PC := 152
-138 [-]: GETGLOBAL R15 K31      ; R15 := Lotus_Game
-139 [-]: GETTABLE  R15 R15 K40  ; R15 := R15["0xFAFD4322"]
+138 [-]: GETGLOBAL R15 K32      ; R15 := Lotus_Game
+139 [-]: GETTABLE  R15 R15 K41  ; R15 := R15["0xFAFD4322"]
 140 [-]: CALL      R15 1 2      ; R15 := R15()
-141 [-]: SETTABLE  R15 K41 R1   ; R15["instigator"] := R1
-142 [-]: SETTABLE  R15 K42 R6   ; R15["affected"] := R6
+141 [-]: SETTABLE  R15 K42 R1   ; R15["instigator"] := R1
+142 [-]: SETTABLE  R15 K43 R6   ; R15["affected"] := R6
 143 [-]: GETGLOBAL R16 K2       ; R16 := mOwner
 144 [-]: SELF      R16 R16 K3   ; R17 := R16; R16 := R16["0xE2B32C65"]
 145 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-146 [-]: SETTABLE  R15 K43 R16  ; R15["abilityType"] := R16
-147 [-]: SELF      R16 R1 K44   ; R17 := R1; R16 := R1["0x584F13D6"]
+146 [-]: SETTABLE  R15 K44 R16  ; R15["abilityType"] := R16
+147 [-]: SELF      R16 R1 K45   ; R17 := R1; R16 := R1["0x584F13D6"]
 148 [-]: MOVE      R18 R15      ; R18 := R15
 149 [-]: MOVE      R19 R0       ; R19 := R0
 150 [-]: MOVE      R20 R1       ; R20 := R1
 151 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
 152 [-]: GETGLOBAL R16 K0       ; R16 := _T
-153 [-]: GETTABLE  R16 R16 K24  ; R16 := R16["renewalHealingTargets"]
-154 [-]: SETTABLE  R16 R7 K25   ; R16[R7] := nil
-155 [-]: GETGLOBAL R16 K45      ; R16 := 0xAA09E79D
+153 [-]: GETTABLE  R16 R16 K25  ; R16 := R16["renewalHealingTargets"]
+154 [-]: SETTABLE  R16 R7 K26   ; R16[R7] := nil
+155 [-]: GETGLOBAL R16 K46      ; R16 := 0xAA09E79D
 156 [-]: GETGLOBAL R17 K0       ; R17 := _T
-157 [-]: GETTABLE  R17 R17 K24  ; R17 := R17["renewalHealingTargets"]
+157 [-]: GETTABLE  R17 R17 K25  ; R17 := R17["renewalHealingTargets"]
 158 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-159 [-]: EQ        0 R16 K25    ; if R16 ~= nil then PC := 163
+159 [-]: EQ        0 R16 K26    ; if R16 ~= nil then PC := 163
 160 [-]: JMP       163          ; PC := 163
 161 [-]: GETGLOBAL R16 K0       ; R16 := _T
-162 [-]: SETTABLE  R16 K24 K25  ; R16["renewalHealingTargets"] := nil
+162 [-]: SETTABLE  R16 K25 K26  ; R16["renewalHealingTargets"] := nil
 163 [-]: RETURN    R0 1         ; return 
 
 

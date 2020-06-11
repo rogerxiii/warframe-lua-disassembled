@@ -605,17 +605,17 @@ code size: 83
  63 [-]: SELF      R24 R24 K12  ; R25 := R24; R24 := R24["0x3B1B11B9"]
  64 [-]: GETGLOBAL R26 K13      ; R26 := Game
  65 [-]: GETTABLE  R26 R26 K14  ; R26 := R26["WEAPON_MELEE_ARMOR_REDUCTION"]
- 66 [-]: GETGLOBAL R27 K13      ; R27 := Game
- 67 [-]: GETTABLE  R27 R27 K15  ; R27 := R27["ADD"]
- 68 [-]: GETGLOBAL R28 K16      ; R28 := meleeArmorReduction
- 69 [-]: GETGLOBAL R29 K17      ; R29 := math
- 70 [-]: GETTABLE  R29 R29 K18  ; R29 := R29["0x65F9712A"]
+ 66 [-]: GETGLOBAL R27 K15      ; R27 := Engine
+ 67 [-]: GETTABLE  R27 R27 K16  ; R27 := R27["ADD"]
+ 68 [-]: GETGLOBAL R28 K17      ; R28 := meleeArmorReduction
+ 69 [-]: GETGLOBAL R29 K18      ; R29 := math
+ 70 [-]: GETTABLE  R29 R29 K19  ; R29 := R29["0x65F9712A"]
  71 [-]: MOVE      R30 R2       ; R30 := R2
- 72 [-]: GETGLOBAL R31 K16      ; R31 := meleeArmorReduction
+ 72 [-]: GETGLOBAL R31 K17      ; R31 := meleeArmorReduction
  73 [-]: LEN       R31 R31      ; R31 := # R31
  74 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
  75 [-]: GETTABLE  R28 R28 R29  ; R28 := R28[R29]
- 76 [-]: SELF      R29 R5 K19   ; R30 := R5; R29 := R5["0xE2B32C65"]
+ 76 [-]: SELF      R29 R5 K20   ; R30 := R5; R29 := R5["0xE2B32C65"]
  77 [-]: CALL      R29 2 2      ; R29 := R29(R30)
  78 [-]: MOVE      R30 R5       ; R30 := R5
  79 [-]: CALL      R24 7 1      ; R24(R25,R26,R27,R28,R29,R30)

@@ -92,12 +92,12 @@ code size: 26
  14 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5["0x3B1B11B9"]
  15 [-]: GETGLOBAL R7 K5        ; R7 := Game
  16 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["WEAPON_DISTANCE_TO_DAMAGE_BONUS"]
- 17 [-]: GETGLOBAL R8 K5        ; R8 := Game
- 18 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["SET"]
+ 17 [-]: GETGLOBAL R8 K7        ; R8 := Engine
+ 18 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["SET"]
  19 [-]: GETUPVAL  R9 U0        ; R9 := U0
  20 [-]: MOVE      R10 R2       ; R10 := R2
  21 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 22 [-]: SELF      R10 R1 K8    ; R11 := R1; R10 := R1["0xCA60A387"]
+ 22 [-]: SELF      R10 R1 K9    ; R11 := R1; R10 := R1["0xCA60A387"]
  23 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  24 [-]: MOVE      R11 R1       ; R11 := R1
  25 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
@@ -129,12 +129,12 @@ code size: 26
  14 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5["0xF21555A7"]
  15 [-]: GETGLOBAL R7 K5        ; R7 := Game
  16 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["WEAPON_DISTANCE_TO_DAMAGE_BONUS"]
- 17 [-]: GETGLOBAL R8 K5        ; R8 := Game
- 18 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["SET"]
+ 17 [-]: GETGLOBAL R8 K7        ; R8 := Engine
+ 18 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["SET"]
  19 [-]: GETUPVAL  R9 U0        ; R9 := U0
  20 [-]: MOVE      R10 R2       ; R10 := R2
  21 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 22 [-]: SELF      R10 R1 K8    ; R11 := R1; R10 := R1["0xCA60A387"]
+ 22 [-]: SELF      R10 R1 K9    ; R11 := R1; R10 := R1["0xCA60A387"]
  23 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  24 [-]: MOVE      R11 R1       ; R11 := R1
  25 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)

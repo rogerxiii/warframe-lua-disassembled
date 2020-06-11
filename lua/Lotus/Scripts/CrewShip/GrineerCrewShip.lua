@@ -6,7 +6,7 @@ code size: 270
 code size: 32
 code size: 6
 code size: 5
-code size: 81
+code size: 86
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CrewShip\GrineerCrewShip.luac 
 
@@ -883,8 +883,8 @@ code size: 81
  25 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
  26 [-]: MOVE      R4 R2        ; R4 := R2
  27 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 28 [-]: TEST      R3 1         ; if R3 then PC := 81
- 29 [-]: JMP       81           ; PC := 81
+ 28 [-]: TEST      R3 1         ; if R3 then PC := 86
+ 29 [-]: JMP       86           ; PC := 86
  30 [-]: MOVE      R3 R0        ; R3 := R0
  31 [-]: LOADK     R4 K0        ; R4 := 0
  32 [-]: LE        0 R4 K6      ; if R4 > 1 then PC := 64
@@ -922,20 +922,25 @@ code size: 81
  64 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
  65 [-]: MOVE      R6 R2        ; R6 := R2
  66 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 67 [-]: TEST      R5 1         ; if R5 then PC := 81
- 68 [-]: JMP       81           ; PC := 81
+ 67 [-]: TEST      R5 1         ; if R5 then PC := 86
+ 68 [-]: JMP       86           ; PC := 86
  69 [-]: GETGLOBAL R5 K16       ; R5 := gRegion
  70 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5["0xA559F558"]
  71 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 72 [-]: TEST      R5 0         ; if not R5 then PC := 76
- 73 [-]: JMP       76           ; PC := 76
- 74 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 75 [-]: CALL      R5 1 1       ; R5()
- 76 [-]: GETGLOBAL R5 K4        ; R5 := 0x201191EA
- 77 [-]: LOADK     R6 K11       ; R6 := 0.10000000149012
- 78 [-]: CALL      R5 2 1       ; R5(R6)
- 79 [-]: SELF      R5 R2 K18    ; R6 := R2; R5 := R2["0xD4C2743F"]
- 80 [-]: CALL      R5 2 1       ; R5(R6)
- 81 [-]: RETURN    R0 1         ; return 
+ 72 [-]: TEST      R5 0         ; if not R5 then PC := 81
+ 73 [-]: JMP       81           ; PC := 81
+ 74 [-]: SELF      R5 R2 K18    ; R6 := R2; R5 := R2["0x8B598ED4"]
+ 75 [-]: GETGLOBAL R7 K19       ; R7 := gCrewShipAvatarType
+ 76 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 77 [-]: TEST      R5 0         ; if not R5 then PC := 81
+ 78 [-]: JMP       81           ; PC := 81
+ 79 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 80 [-]: CALL      R5 1 1       ; R5()
+ 81 [-]: GETGLOBAL R5 K4        ; R5 := 0x201191EA
+ 82 [-]: LOADK     R6 K11       ; R6 := 0.10000000149012
+ 83 [-]: CALL      R5 2 1       ; R5(R6)
+ 84 [-]: SELF      R5 R2 K20    ; R6 := R2; R5 := R2["0xD4C2743F"]
+ 85 [-]: CALL      R5 2 1       ; R5(R6)
+ 86 [-]: RETURN    R0 1         ; return 
 
 

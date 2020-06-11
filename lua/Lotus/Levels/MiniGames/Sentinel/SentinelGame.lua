@@ -16,8 +16,8 @@ code size: 9
 code size: 25
 code size: 41
 code size: 30
-code size: 179
-code size: 54
+code size: 180
+code size: 55
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Levels\MiniGames\Sentinel\SentinelGame.luac 
 
@@ -1428,24 +1428,24 @@ code size: 54
   5 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2["0x3B1B11B9"]
   6 [-]: GETGLOBAL R5 K3        ; R5 := Game
   7 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["WEAPON_DAMAGE_AMOUNT"]
-  8 [-]: GETGLOBAL R6 K3        ; R6 := Game
-  9 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["MULTIPLY"]
- 10 [-]: GETGLOBAL R7 K6        ; R7 := _T
- 11 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["BulletHellMiniGameWave"]
- 12 [-]: SUB       R7 R7 K8     ; R7 := R7 - 1
- 13 [-]: DIV       R7 R7 K9     ; R7 := R7 / 2
- 14 [-]: ADD       R7 K8 R7     ; R7 := 1 + R7
+  8 [-]: GETGLOBAL R6 K5        ; R6 := Engine
+  9 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["MULTIPLY"]
+ 10 [-]: GETGLOBAL R7 K7        ; R7 := _T
+ 11 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["BulletHellMiniGameWave"]
+ 12 [-]: SUB       R7 R7 K9     ; R7 := R7 - 1
+ 13 [-]: DIV       R7 R7 K10    ; R7 := R7 / 2
+ 14 [-]: ADD       R7 K9 R7     ; R7 := 1 + R7
  15 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  16 [-]: SELF      R3 R2 K2     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  17 [-]: GETGLOBAL R5 K3        ; R5 := Game
- 18 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_HEALTH_MAX"]
- 19 [-]: GETGLOBAL R6 K3        ; R6 := Game
- 20 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["MULTIPLY"]
- 21 [-]: GETGLOBAL R7 K6        ; R7 := _T
- 22 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["BulletHellMiniGameWave"]
+ 18 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_HEALTH_MAX"]
+ 19 [-]: GETGLOBAL R6 K5        ; R6 := Engine
+ 20 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["MULTIPLY"]
+ 21 [-]: GETGLOBAL R7 K7        ; R7 := _T
+ 22 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["BulletHellMiniGameWave"]
  23 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 24 [-]: SELF      R3 R1 K11    ; R4 := R1; R3 := R1["0x76C229EF"]
- 25 [-]: SELF      R5 R1 K12    ; R6 := R1; R5 := R1["0x385BD2FE"]
+ 24 [-]: SELF      R3 R1 K12    ; R4 := R1; R3 := R1["0x76C229EF"]
+ 25 [-]: SELF      R5 R1 K13    ; R6 := R1; R5 := R1["0x385BD2FE"]
  26 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  27 [-]: MOVE      R6 R1        ; R6 := R1
  28 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
@@ -2007,15 +2007,15 @@ code size: 54
  98 [-]: LOADK     R4 K21       ; R4 := 1
  99 [-]: LEN       R5 R3        ; R5 := # R3
 100 [-]: LOADK     R6 K21       ; R6 := 1
-101 [-]: FORPREP   R4 132       ; R4 -= R6; PC := 132
+101 [-]: FORPREP   R4 133       ; R4 -= R6; PC := 133
 102 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
-103 [-]: EQ        1 R8 R2      ; if R8 == R2 then PC := 132
-104 [-]: JMP       132          ; PC := 132
+103 [-]: EQ        1 R8 R2      ; if R8 == R2 then PC := 133
+104 [-]: JMP       133          ; PC := 133
 105 [-]: GETTABLE  R8 R3 R7     ; R8 := R3[R7]
 106 [-]: SELF      R8 R8 K42    ; R9 := R8; R8 := R8["0x5A115A02"]
 107 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-108 [-]: TEST      R8 1         ; if R8 then PC := 132
-109 [-]: JMP       132          ; PC := 132
+108 [-]: TEST      R8 1         ; if R8 then PC := 133
+109 [-]: JMP       133          ; PC := 133
 110 [-]: GETGLOBAL R8 K8        ; R8 := _T
 111 [-]: GETGLOBAL R9 K8        ; R9 := _T
 112 [-]: GETTABLE  R9 R9 K43    ; R9 := R9["SecretMiniGameScore"]
@@ -2029,69 +2029,70 @@ code size: 54
 120 [-]: GETTABLE  R11 R11 K48  ; R11 := R11["DT_CINEMATIC"]
 121 [-]: LOADK     R12 K21      ; R12 := 1
 122 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-123 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]
-124 [-]: SELF      R9 R9 K50    ; R10 := R9; R9 := R9["0x2F79FBD3"]
-125 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-126 [-]: MUL       R9 R9 K51    ; R9 := R9 * 10
-127 [-]: SETTABLE  R8 K49 R9    ; R8["baseAmount"] := R9
-128 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]
-129 [-]: SELF      R9 R9 K52    ; R10 := R9; R9 := R9["0x4722B671"]
-130 [-]: MOVE      R11 R8       ; R11 := R8
-131 [-]: CALL      R9 3 1       ; R9(R10,R11)
-132 [-]: FORLOOP   R4 102       ; R4 += R6; if R4 <= R5 then begin PC := 102; R7 := R4 end
-133 [-]: GETGLOBAL R9 K8        ; R9 := _T
-134 [-]: GETGLOBAL R10 K8       ; R10 := _T
-135 [-]: GETTABLE  R10 R10 K43  ; R10 := R10["SecretMiniGameScore"]
-136 [-]: GETGLOBAL R11 K8       ; R11 := _T
-137 [-]: GETTABLE  R11 R11 K53  ; R11 := R11["SecretMiniGameScorePenalty"]
-138 [-]: SUB       R10 R10 R11  ; R10 := R10 - R11
-139 [-]: SETTABLE  R9 K43 R10   ; R9["SecretMiniGameScore"] := R10
-140 [-]: GETGLOBAL R9 K8        ; R9 := _T
-141 [-]: SETTABLE  R9 K53 K34   ; R9["SecretMiniGameScorePenalty"] := 0
-142 [-]: GETGLOBAL R9 K0        ; R9 := 0x201191EA
-143 [-]: LOADK     R10 K34      ; R10 := 0
-144 [-]: CALL      R9 2 1       ; R9(R10)
-145 [-]: GETGLOBAL R9 K28       ; R9 := gRegion
-146 [-]: SELF      R9 R9 K40    ; R10 := R9; R9 := R9["0x9139A00"]
-147 [-]: GETGLOBAL R11 K54      ; R11 := 0x2C00D429
-148 [-]: LOADK     R12 K55      ; R12 := "/Lotus/Levels/MiniGames/Sentinel/Pickups/2DPickupTrigger"
-149 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
-150 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
-151 [-]: LOADK     R10 K21      ; R10 := 1
-152 [-]: LEN       R11 R9       ; R11 := # R9
-153 [-]: LOADK     R12 K21      ; R12 := 1
-154 [-]: FORPREP   R10 159      ; R10 -= R12; PC := 159
-155 [-]: GETGLOBAL R14 K28      ; R14 := gRegion
-156 [-]: SELF      R14 R14 K56  ; R15 := R14; R14 := R14["0x9B0A3887"]
-157 [-]: GETTABLE  R16 R9 R13   ; R16 := R9[R13]
-158 [-]: CALL      R14 3 1      ; R14(R15,R16)
-159 [-]: FORLOOP   R10 155      ; R10 += R12; if R10 <= R11 then begin PC := 155; R13 := R10 end
-160 [-]: GETGLOBAL R14 K0       ; R14 := 0x201191EA
-161 [-]: LOADK     R15 K34      ; R15 := 0
-162 [-]: CALL      R14 2 1      ; R14(R15)
-163 [-]: GETGLOBAL R14 K28      ; R14 := gRegion
-164 [-]: SELF      R14 R14 K40  ; R15 := R14; R14 := R14["0x9139A00"]
-165 [-]: GETGLOBAL R16 K54      ; R16 := 0x2C00D429
-166 [-]: LOADK     R17 K57      ; R17 := "/Lotus/Levels/MiniGames/Sentinel/Pickups/2DMultiWeaponPickupTrigger"
-167 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
-168 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
-169 [-]: MOVE      R9 R14       ; R9 := R14
-170 [-]: LOADK     R14 K21      ; R14 := 1
-171 [-]: LEN       R15 R9       ; R15 := # R9
-172 [-]: LOADK     R16 K21      ; R16 := 1
-173 [-]: FORPREP   R14 178      ; R14 -= R16; PC := 178
-174 [-]: GETGLOBAL R18 K28      ; R18 := gRegion
-175 [-]: SELF      R18 R18 K56  ; R19 := R18; R18 := R18["0x9B0A3887"]
-176 [-]: GETTABLE  R20 R9 R17   ; R20 := R9[R17]
-177 [-]: CALL      R18 3 1      ; R18(R19,R20)
-178 [-]: FORLOOP   R14 174      ; R14 += R16; if R14 <= R15 then begin PC := 174; R17 := R14 end
-179 [-]: RETURN    R0 1         ; return 
+123 [-]: SETTABLE  R8 K49 K27   ; R8["instantKill"] := "0x1"
+124 [-]: GETTABLE  R9 R3 R7     ; R9 := R3[R7]
+125 [-]: SELF      R9 R9 K50    ; R10 := R9; R9 := R9["0x4722B671"]
+126 [-]: MOVE      R11 R8       ; R11 := R8
+127 [-]: CALL      R9 3 1       ; R9(R10,R11)
+128 [-]: GETGLOBAL R9 K51       ; R9 := 0x12F3CEFA
+129 [-]: GETTABLE  R10 R3 R7    ; R10 := R3[R7]
+130 [-]: SELF      R10 R10 K42  ; R11 := R10; R10 := R10["0x5A115A02"]
+131 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+132 [-]: CALL      R9 0 1       ; R9(R10,...)
+133 [-]: FORLOOP   R4 102       ; R4 += R6; if R4 <= R5 then begin PC := 102; R7 := R4 end
+134 [-]: GETGLOBAL R9 K8        ; R9 := _T
+135 [-]: GETGLOBAL R10 K8       ; R10 := _T
+136 [-]: GETTABLE  R10 R10 K43  ; R10 := R10["SecretMiniGameScore"]
+137 [-]: GETGLOBAL R11 K8       ; R11 := _T
+138 [-]: GETTABLE  R11 R11 K52  ; R11 := R11["SecretMiniGameScorePenalty"]
+139 [-]: SUB       R10 R10 R11  ; R10 := R10 - R11
+140 [-]: SETTABLE  R9 K43 R10   ; R9["SecretMiniGameScore"] := R10
+141 [-]: GETGLOBAL R9 K8        ; R9 := _T
+142 [-]: SETTABLE  R9 K52 K34   ; R9["SecretMiniGameScorePenalty"] := 0
+143 [-]: GETGLOBAL R9 K0        ; R9 := 0x201191EA
+144 [-]: LOADK     R10 K34      ; R10 := 0
+145 [-]: CALL      R9 2 1       ; R9(R10)
+146 [-]: GETGLOBAL R9 K28       ; R9 := gRegion
+147 [-]: SELF      R9 R9 K40    ; R10 := R9; R9 := R9["0x9139A00"]
+148 [-]: GETGLOBAL R11 K53      ; R11 := 0x2C00D429
+149 [-]: LOADK     R12 K54      ; R12 := "/Lotus/Levels/MiniGames/Sentinel/Pickups/2DPickupTrigger"
+150 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+151 [-]: CALL      R9 0 2       ; R9 := R9(R10,...)
+152 [-]: LOADK     R10 K21      ; R10 := 1
+153 [-]: LEN       R11 R9       ; R11 := # R9
+154 [-]: LOADK     R12 K21      ; R12 := 1
+155 [-]: FORPREP   R10 160      ; R10 -= R12; PC := 160
+156 [-]: GETGLOBAL R14 K28      ; R14 := gRegion
+157 [-]: SELF      R14 R14 K55  ; R15 := R14; R14 := R14["0x9B0A3887"]
+158 [-]: GETTABLE  R16 R9 R13   ; R16 := R9[R13]
+159 [-]: CALL      R14 3 1      ; R14(R15,R16)
+160 [-]: FORLOOP   R10 156      ; R10 += R12; if R10 <= R11 then begin PC := 156; R13 := R10 end
+161 [-]: GETGLOBAL R14 K0       ; R14 := 0x201191EA
+162 [-]: LOADK     R15 K34      ; R15 := 0
+163 [-]: CALL      R14 2 1      ; R14(R15)
+164 [-]: GETGLOBAL R14 K28      ; R14 := gRegion
+165 [-]: SELF      R14 R14 K40  ; R15 := R14; R14 := R14["0x9139A00"]
+166 [-]: GETGLOBAL R16 K53      ; R16 := 0x2C00D429
+167 [-]: LOADK     R17 K56      ; R17 := "/Lotus/Levels/MiniGames/Sentinel/Pickups/2DMultiWeaponPickupTrigger"
+168 [-]: CALL      R16 2 0      ; R16,... := R16(R17)
+169 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
+170 [-]: MOVE      R9 R14       ; R9 := R14
+171 [-]: LOADK     R14 K21      ; R14 := 1
+172 [-]: LEN       R15 R9       ; R15 := # R9
+173 [-]: LOADK     R16 K21      ; R16 := 1
+174 [-]: FORPREP   R14 179      ; R14 -= R16; PC := 179
+175 [-]: GETGLOBAL R18 K28      ; R18 := gRegion
+176 [-]: SELF      R18 R18 K55  ; R19 := R18; R18 := R18["0x9B0A3887"]
+177 [-]: GETTABLE  R20 R9 R17   ; R20 := R9[R17]
+178 [-]: CALL      R18 3 1      ; R18(R19,R20)
+179 [-]: FORLOOP   R14 175      ; R14 += R16; if R14 <= R15 then begin PC := 175; R17 := R14 end
+180 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 718
+; Defined at line: 719
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2106,17 +2107,17 @@ code size: 54
   7 [-]: LOADK     R2 K5        ; R2 := 1
   8 [-]: LEN       R3 R1        ; R3 := # R1
   9 [-]: LOADK     R4 K5        ; R4 := 1
- 10 [-]: FORPREP   R2 43        ; R2 -= R4; PC := 43
+ 10 [-]: FORPREP   R2 44        ; R2 -= R4; PC := 44
  11 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  12 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0x896389C9"]
  13 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 14 [-]: TEST      R6 1         ; if R6 then PC := 43
- 15 [-]: JMP       43           ; PC := 43
+ 14 [-]: TEST      R6 1         ; if R6 then PC := 44
+ 15 [-]: JMP       44           ; PC := 44
  16 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
  17 [-]: SELF      R6 R6 K7     ; R7 := R6; R6 := R6["0x5A115A02"]
  18 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 19 [-]: TEST      R6 1         ; if R6 then PC := 43
- 20 [-]: JMP       43           ; PC := 43
+ 19 [-]: TEST      R6 1         ; if R6 then PC := 44
+ 20 [-]: JMP       44           ; PC := 44
  21 [-]: GETGLOBAL R6 K0        ; R6 := _T
  22 [-]: GETGLOBAL R7 K0        ; R7 := _T
  23 [-]: GETTABLE  R7 R7 K8     ; R7 := R7["SecretMiniGameScorePenalty"]
@@ -2130,26 +2131,27 @@ code size: 54
  31 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["DT_CINEMATIC"]
  32 [-]: LOADK     R10 K5       ; R10 := 1
  33 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
- 34 [-]: GETTABLE  R7 R1 R5     ; R7 := R1[R5]
- 35 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7["0x2F79FBD3"]
- 36 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 37 [-]: MUL       R7 R7 K16    ; R7 := R7 * 10
- 38 [-]: SETTABLE  R6 K14 R7    ; R6["baseAmount"] := R7
- 39 [-]: GETTABLE  R7 R1 R5     ; R7 := R1[R5]
- 40 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0x4722B671"]
- 41 [-]: MOVE      R9 R6        ; R9 := R6
- 42 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 43 [-]: FORLOOP   R2 11        ; R2 += R4; if R2 <= R3 then begin PC := 11; R5 := R2 end
- 44 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 45 [-]: GETGLOBAL R8 K0        ; R8 := _T
- 46 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["SecretMiniGameScorePenalty"]
- 47 [-]: GETGLOBAL R9 K0        ; R9 := _T
- 48 [-]: GETTABLE  R9 R9 K1     ; R9 := R9["SecretMiniGameScore"]
- 49 [-]: SUB       R9 R9 R0     ; R9 := R9 - R0
- 50 [-]: SUB       R8 R8 R9     ; R8 := R8 - R9
- 51 [-]: SETTABLE  R7 K8 R8     ; R7["SecretMiniGameScorePenalty"] := R8
- 52 [-]: GETGLOBAL R7 K0        ; R7 := _T
- 53 [-]: SETTABLE  R7 K1 R0     ; R7["SecretMiniGameScore"] := R0
- 54 [-]: RETURN    R0 1         ; return 
+ 34 [-]: SETTABLE  R6 K14 K15   ; R6["instantKill"] := "0x1"
+ 35 [-]: GETTABLE  R7 R1 R5     ; R7 := R1[R5]
+ 36 [-]: SELF      R7 R7 K16    ; R8 := R7; R7 := R7["0x4722B671"]
+ 37 [-]: MOVE      R9 R6        ; R9 := R6
+ 38 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 39 [-]: GETGLOBAL R7 K17       ; R7 := 0x12F3CEFA
+ 40 [-]: GETTABLE  R8 R1 R5     ; R8 := R1[R5]
+ 41 [-]: SELF      R8 R8 K7     ; R9 := R8; R8 := R8["0x5A115A02"]
+ 42 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
+ 43 [-]: CALL      R7 0 1       ; R7(R8,...)
+ 44 [-]: FORLOOP   R2 11        ; R2 += R4; if R2 <= R3 then begin PC := 11; R5 := R2 end
+ 45 [-]: GETGLOBAL R7 K0        ; R7 := _T
+ 46 [-]: GETGLOBAL R8 K0        ; R8 := _T
+ 47 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["SecretMiniGameScorePenalty"]
+ 48 [-]: GETGLOBAL R9 K0        ; R9 := _T
+ 49 [-]: GETTABLE  R9 R9 K1     ; R9 := R9["SecretMiniGameScore"]
+ 50 [-]: SUB       R9 R9 R0     ; R9 := R9 - R0
+ 51 [-]: SUB       R8 R8 R9     ; R8 := R8 - R9
+ 52 [-]: SETTABLE  R7 K8 R8     ; R7["SecretMiniGameScorePenalty"] := R8
+ 53 [-]: GETGLOBAL R7 K0        ; R7 := _T
+ 54 [-]: SETTABLE  R7 K1 R0     ; R7["SecretMiniGameScore"] := R0
+ 55 [-]: RETURN    R0 1         ; return 
 
 

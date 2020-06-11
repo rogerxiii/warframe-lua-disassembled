@@ -12,7 +12,7 @@ code size: 360
 code size: 5
 code size: 30
 code size: 43
-code size: 26
+code size: 31
 code size: 13
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Venus\Heists\CamperHeistFishing.luac 
@@ -1466,40 +1466,45 @@ code size: 13
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  8
 
-  1 [-]: GETGLOBAL R2 K0        ; R2 := gGameRules
-  2 [-]: SELF      R2 R2 K1     ; R3 := R2; R2 := R2["0xED0EE7FB"]
-  3 [-]: GETGLOBAL R4 K2        ; R4 := 0xEC274B1A
-  4 [-]: SELF      R5 R1 K3     ; R6 := R1; R5 := R1["0xDE5882DD"]
-  5 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  6 [-]: SELF      R5 R5 K4     ; R6 := R5; R5 := R5["0x144A28F9"]
-  7 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  8 [-]: LOADK     R6 K5        ; R6 := "ReceivedFreeSpear"
-  9 [-]: CONCAT    R5 R5 R6     ; R5 := R5 .. R6
- 10 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 11 [-]: LOADK     R5 K6        ; R5 := 0
- 12 [-]: CALL      R2 4 2       ; R2 := R2(R3,R4,R5)
- 13 [-]: EQ        0 R2 K7      ; if R2 ~= 1 then PC := 17
- 14 [-]: JMP       17           ; PC := 17
- 15 [-]: MOVE      R2 R0        ; R2 := R0
- 16 [-]: RETURN    R2 2         ; return R2
- 17 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 18 [-]: MOVE      R3 R1        ; R3 := R1
- 19 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 20 [-]: TEST      R2 0         ; if not R2 then PC := 24
- 21 [-]: JMP       24           ; PC := 24
- 22 [-]: MOVE      R2 R0        ; R2 := R0
- 23 [-]: RETURN    R2 2         ; return R2
- 24 [-]: MOVE      R2 R1        ; R2 := R1
- 25 [-]: RETURN    R2 2         ; return R2
- 26 [-]: RETURN    R0 1         ; return 
+  1 [-]: SELF      R2 R1 K0     ; R3 := R1; R2 := R1["0x96D4FC9C"]
+  2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+  3 [-]: GETGLOBAL R3 K1        ; R3 := 0x400E7765
+  4 [-]: MOVE      R4 R2        ; R4 := R2
+  5 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+  6 [-]: TEST      R3 1         ; if R3 then PC := 20
+  7 [-]: JMP       20           ; PC := 20
+  8 [-]: GETGLOBAL R3 K2        ; R3 := gGameRules
+  9 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0xED0EE7FB"]
+ 10 [-]: GETGLOBAL R5 K4        ; R5 := 0xEC274B1A
+ 11 [-]: SELF      R6 R2 K5     ; R7 := R2; R6 := R2["0x144A28F9"]
+ 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 13 [-]: LOADK     R7 K6        ; R7 := "ReceivedFreeSpear"
+ 14 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+ 15 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 16 [-]: LOADK     R6 K7        ; R6 := 0
+ 17 [-]: CALL      R3 4 2       ; R3 := R3(R4,R5,R6)
+ 18 [-]: EQ        0 R3 K8      ; if R3 ~= 1 then PC := 22
+ 19 [-]: JMP       22           ; PC := 22
+ 20 [-]: MOVE      R3 R0        ; R3 := R0
+ 21 [-]: RETURN    R3 2         ; return R3
+ 22 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 23 [-]: MOVE      R4 R1        ; R4 := R1
+ 24 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 25 [-]: TEST      R3 0         ; if not R3 then PC := 29
+ 26 [-]: JMP       29           ; PC := 29
+ 27 [-]: MOVE      R3 R0        ; R3 := R0
+ 28 [-]: RETURN    R3 2         ; return R3
+ 29 [-]: MOVE      R3 R1        ; R3 := R1
+ 30 [-]: RETURN    R3 2         ; return R3
+ 31 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 453
+; Defined at line: 454
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -88,15 +88,15 @@ code size: 35
  21 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  22 [-]: GETGLOBAL R5 K7        ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["AVATAR_FALL_IMPACT_AMOUNT"]
- 24 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 25 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["ADD"]
+ 24 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 25 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["ADD"]
  26 [-]: GETUPVAL  R7 U1        ; R7 := U1
  27 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  28 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  29 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 30 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_FALL_IMPACT_RADIUS"]
- 31 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 32 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["ADD"]
+ 30 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_FALL_IMPACT_RADIUS"]
+ 31 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 32 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["ADD"]
  33 [-]: GETUPVAL  R7 U2        ; R7 := U2
  34 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  35 [-]: RETURN    R0 1         ; return 
@@ -134,15 +134,15 @@ code size: 35
  21 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0xF21555A7"]
  22 [-]: GETGLOBAL R5 K7        ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["AVATAR_FALL_IMPACT_AMOUNT"]
- 24 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 25 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["ADD"]
+ 24 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 25 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["ADD"]
  26 [-]: GETUPVAL  R7 U1        ; R7 := U1
  27 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  28 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0xF21555A7"]
  29 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 30 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_FALL_IMPACT_RADIUS"]
- 31 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 32 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["ADD"]
+ 30 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_FALL_IMPACT_RADIUS"]
+ 31 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 32 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["ADD"]
  33 [-]: GETUPVAL  R7 U2        ; R7 := U2
  34 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  35 [-]: RETURN    R0 1         ; return 

@@ -78,28 +78,28 @@ code size: 109
  51 [-]: EQ        0 R5 K7      ; if R5 ~= 0 then PC := 58
  52 [-]: JMP       58           ; PC := 58
  53 [-]: GETGLOBAL R8 K11       ; R8 := 0xEC274B1A
- 54 [-]: LOADK     R9 K12       ; R9 := "GAME_L1_URBARREL"
+ 54 [-]: LOADK     R9 K12       ; R9 := "GAME_L1_URBARREL_MASKROOT"
  55 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  56 [-]: MOVE      R7 R8        ; R7 := R8
  57 [-]: JMP       78           ; PC := 78
  58 [-]: EQ        0 R5 K8      ; if R5 ~= 1 then PC := 65
  59 [-]: JMP       65           ; PC := 65
  60 [-]: GETGLOBAL R8 K11       ; R8 := 0xEC274B1A
- 61 [-]: LOADK     R9 K13       ; R9 := "GAME_R1_URBARREL"
+ 61 [-]: LOADK     R9 K13       ; R9 := "GAME_R1_URBARREL_MASKROOT"
  62 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  63 [-]: MOVE      R7 R8        ; R7 := R8
  64 [-]: JMP       78           ; PC := 78
  65 [-]: EQ        0 R5 K14     ; if R5 ~= 2 then PC := 72
  66 [-]: JMP       72           ; PC := 72
  67 [-]: GETGLOBAL R8 K11       ; R8 := 0xEC274B1A
- 68 [-]: LOADK     R9 K15       ; R9 := "GAME_L1_LRBARREL"
+ 68 [-]: LOADK     R9 K15       ; R9 := "GAME_L1_LRBARREL_MASKROOT"
  69 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  70 [-]: MOVE      R7 R8        ; R7 := R8
  71 [-]: JMP       78           ; PC := 78
  72 [-]: EQ        0 R5 K16     ; if R5 ~= 3 then PC := 78
  73 [-]: JMP       78           ; PC := 78
  74 [-]: GETGLOBAL R8 K11       ; R8 := 0xEC274B1A
- 75 [-]: LOADK     R9 K17       ; R9 := "GAME_R1_LRBARREL"
+ 75 [-]: LOADK     R9 K17       ; R9 := "GAME_R1_LRBARREL_MASKROOT"
  76 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  77 [-]: MOVE      R7 R8        ; R7 := R8
  78 [-]: SELF      R8 R4 K18    ; R9 := R4; R8 := R4["0x59701FD0"]

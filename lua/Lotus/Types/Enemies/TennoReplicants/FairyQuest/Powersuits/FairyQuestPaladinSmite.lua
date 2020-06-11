@@ -787,11 +787,11 @@ code size: 137
   7 [-]: MOVE      R4 R1        ; R4 := R1
   8 [-]: GETGLOBAL R5 K4        ; R5 := Game
   9 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 10 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 11 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["ADD"]
+ 10 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 11 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["ADD"]
  12 [-]: GETUPVAL  R7 U0        ; R7 := U0
  13 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 14 [-]: GETGLOBAL R10 K7       ; R10 := Engine
+ 14 [-]: GETGLOBAL R10 K6       ; R10 := Engine
  15 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["DT_FIRE"]
  16 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
  17 [-]: SELF      R2 R0 K9     ; R3 := R0; R2 := R0["0xAB436EF2"]
@@ -875,11 +875,11 @@ code size: 137
  95 [-]: MOVE      R6 R1        ; R6 := R1
  96 [-]: GETGLOBAL R7 K4        ; R7 := Game
  97 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 98 [-]: GETGLOBAL R8 K4        ; R8 := Game
- 99 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["ADD"]
+ 98 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 99 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["ADD"]
 100 [-]: GETUPVAL  R9 U0        ; R9 := U0
 101 [-]: LOADNIL   R10 R11      ; R10 := R11 := nil
-102 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+102 [-]: GETGLOBAL R12 K6       ; R12 := Engine
 103 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["DT_FIRE"]
 104 [-]: CALL      R4 9 1       ; R4(R5,R6,R7,R8,R9,R10,R11,R12)
 105 [-]: GETGLOBAL R4 K24       ; R4 := 0x400E7765

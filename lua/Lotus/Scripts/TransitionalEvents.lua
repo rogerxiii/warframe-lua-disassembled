@@ -5,7 +5,7 @@ code size: 24
 code size: 26
 code size: 91
 code size: 109
-code size: 175
+code size: 182
 code size: 84
 code size: 39
 code size: 270
@@ -73,7 +73,7 @@ code size: 270
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 46
+; Defined at line: 48
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -109,7 +109,7 @@ code size: 270
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 61
+; Defined at line: 63
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -138,7 +138,7 @@ code size: 270
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 72
+; Defined at line: 74
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -173,7 +173,7 @@ code size: 270
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 112
+; Defined at line: 114
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -210,7 +210,7 @@ code size: 270
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 125
+; Defined at line: 127
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -312,7 +312,7 @@ code size: 270
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 163
+; Defined at line: 165
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -432,11 +432,11 @@ code size: 270
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 202
+; Defined at line: 204
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  15
+; Max Stack Size:  16
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
   2 [-]: GETGLOBAL R1 K1        ; R1 := 0x400E7765
@@ -483,142 +483,149 @@ code size: 270
  43 [-]: GETUPVAL  R6 U0        ; R6 := U0
  44 [-]: LOADK     R7 K3        ; R7 := 0
  45 [-]: CALL      R4 4 1       ; R4(R5,R6,R7)
- 46 [-]: GETGLOBAL R4 K1        ; R4 := 0x400E7765
- 47 [-]: MOVE      R5 R0        ; R5 := R0
- 48 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 49 [-]: TEST      R4 0         ; if not R4 then PC := 52
- 50 [-]: JMP       52           ; PC := 52
- 51 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
- 52 [-]: GETGLOBAL R4 K11       ; R4 := gRegion
- 53 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4["0xA559F558"]
- 54 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 55 [-]: TEST      R4 0         ; if not R4 then PC := 78
- 56 [-]: JMP       78           ; PC := 78
- 57 [-]: GETGLOBAL R4 K1        ; R4 := 0x400E7765
- 58 [-]: MOVE      R5 R0        ; R5 := R0
- 59 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 60 [-]: TEST      R4 1         ; if R4 then PC := 92
- 61 [-]: JMP       92           ; PC := 92
- 62 [-]: GETGLOBAL R4 K18       ; R4 := 0x7FD4B57D
- 63 [-]: GETGLOBAL R5 K19       ; R5 := minTime
- 64 [-]: GETGLOBAL R6 K20       ; R6 := maxTime
- 65 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
- 66 [-]: SELF      R5 R0 K17    ; R6 := R0; R5 := R0["0xD015CBDC"]
- 67 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 68 [-]: LOADK     R8 K3        ; R8 := 0
- 69 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 70 [-]: GETGLOBAL R5 K2        ; R5 := 0x201191EA
- 71 [-]: MOVE      R6 R4        ; R6 := R4
- 72 [-]: CALL      R5 2 1       ; R5(R6)
- 73 [-]: SELF      R5 R0 K17    ; R6 := R0; R5 := R0["0xD015CBDC"]
- 74 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 75 [-]: LOADK     R8 K21       ; R8 := 1
- 76 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 77 [-]: JMP       92           ; PC := 92
- 78 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
- 79 [-]: MOVE      R6 R0        ; R6 := R0
- 80 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 81 [-]: TEST      R5 1         ; if R5 then PC := 92
- 82 [-]: JMP       92           ; PC := 92
- 83 [-]: SELF      R5 R0 K22    ; R6 := R0; R5 := R0["0xED0EE7FB"]
- 84 [-]: GETUPVAL  R7 U0        ; R7 := U0
- 85 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 86 [-]: EQ        0 R5 K3      ; if R5 ~= 0 then PC := 92
- 87 [-]: JMP       92           ; PC := 92
- 88 [-]: GETGLOBAL R5 K2        ; R5 := 0x201191EA
- 89 [-]: LOADK     R6 K21       ; R6 := 1
- 90 [-]: CALL      R5 2 1       ; R5(R6)
- 91 [-]: JMP       78           ; PC := 78
- 92 [-]: GETGLOBAL R5 K23       ; R5 := 0x8C4A6742
- 93 [-]: LOADK     R6 K3        ; R6 := 0
- 94 [-]: LOADK     R7 K21       ; R7 := 1
- 95 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 96 [-]: GETGLOBAL R6 K24       ; R6 := alarmChance
- 97 [-]: LE        0 R5 R6      ; if R5 > R6 then PC := 150
- 98 [-]: JMP       150          ; PC := 150
- 99 [-]: GETGLOBAL R6 K9        ; R6 := _T
-100 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["TransitionLevel"]
-101 [-]: TEST      R6 0         ; if not R6 then PC := 141
-102 [-]: JMP       141          ; PC := 141
-103 [-]: GETGLOBAL R6 K11       ; R6 := gRegion
-104 [-]: SELF      R6 R6 K25    ; R7 := R6; R6 := R6["0xFE97A23B"]
-105 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-106 [-]: GETTABLE  R6 R6 K21    ; R6 := R6[1]
-107 [-]: SELF      R7 R6 K26    ; R8 := R6; R7 := R6["0x72E5DB62"]
-108 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-109 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
-110 [-]: MOVE      R9 R7        ; R9 := R7
-111 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-112 [-]: TEST      R8 1         ; if R8 then PC := 150
-113 [-]: JMP       150          ; PC := 150
-114 [-]: SELF      R8 R7 K27    ; R9 := R7; R8 := R7["0x61FDC81"]
-115 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-116 [-]: SELF      R9 R8 K28    ; R10 := R8; R9 := R8["0x8B598ED4"]
-117 [-]: GETGLOBAL R11 K29      ; R11 := zoneAttribsA
-118 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-119 [-]: TEST      R9 0         ; if not R9 then PC := 131
-120 [-]: JMP       131          ; PC := 131
-121 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
-122 [-]: GETGLOBAL R10 K30      ; R10 := alarmSoundA
-123 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-124 [-]: TEST      R9 1         ; if R9 then PC := 150
-125 [-]: JMP       150          ; PC := 150
-126 [-]: GETGLOBAL R9 K30       ; R9 := alarmSoundA
-127 [-]: SELF      R9 R9 K31    ; R10 := R9; R9 := R9["0x8D5886B7"]
-128 [-]: LOADK     R11 K32      ; R11 := "Enable"
-129 [-]: CALL      R9 3 1       ; R9(R10,R11)
-130 [-]: JMP       150          ; PC := 150
-131 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
-132 [-]: GETGLOBAL R10 K33      ; R10 := alarmSoundB
-133 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-134 [-]: TEST      R9 1         ; if R9 then PC := 150
-135 [-]: JMP       150          ; PC := 150
-136 [-]: GETGLOBAL R9 K33       ; R9 := alarmSoundB
-137 [-]: SELF      R9 R9 K31    ; R10 := R9; R9 := R9["0x8D5886B7"]
-138 [-]: LOADK     R11 K32      ; R11 := "Enable"
-139 [-]: CALL      R9 3 1       ; R9(R10,R11)
-140 [-]: JMP       150          ; PC := 150
-141 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
-142 [-]: GETGLOBAL R10 K30      ; R10 := alarmSoundA
-143 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-144 [-]: TEST      R9 1         ; if R9 then PC := 150
-145 [-]: JMP       150          ; PC := 150
-146 [-]: GETGLOBAL R9 K30       ; R9 := alarmSoundA
-147 [-]: SELF      R9 R9 K31    ; R10 := R9; R9 := R9["0x8D5886B7"]
-148 [-]: LOADK     R11 K32      ; R11 := "Enable"
-149 [-]: CALL      R9 3 1       ; R9(R10,R11)
-150 [-]: GETGLOBAL R9 K18       ; R9 := 0x7FD4B57D
-151 [-]: LOADK     R10 K21      ; R10 := 1
-152 [-]: GETGLOBAL R11 K34      ; R11 := shakeSounds
-153 [-]: LEN       R11 R11      ; R11 := # R11
-154 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-155 [-]: GETGLOBAL R10 K18      ; R10 := 0x7FD4B57D
-156 [-]: GETGLOBAL R11 K35      ; R11 := minAmp
-157 [-]: GETGLOBAL R12 K36      ; R12 := maxAmp
-158 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-159 [-]: GETGLOBAL R11 K1       ; R11 := 0x400E7765
-160 [-]: GETGLOBAL R12 K34      ; R12 := shakeSounds
-161 [-]: GETTABLE  R12 R12 R9   ; R12 := R12[R9]
-162 [-]: CALL      R11 2 2      ; R11 := R11(R12)
-163 [-]: TEST      R11 1        ; if R11 then PC := 171
-164 [-]: JMP       171          ; PC := 171
-165 [-]: GETUPVAL  R11 U1       ; R11 := U1
-166 [-]: GETGLOBAL R12 K34      ; R12 := shakeSounds
-167 [-]: GETTABLE  R12 R12 R9   ; R12 := R12[R9]
-168 [-]: MOVE      R13 R1       ; R13 := R1
-169 [-]: MOVE      R14 R10      ; R14 := R10
-170 [-]: CALL      R11 4 1      ; R11(R12,R13,R14)
-171 [-]: GETGLOBAL R11 K2       ; R11 := 0x201191EA
-172 [-]: LOADK     R12 K3       ; R12 := 0
-173 [-]: CALL      R11 2 1      ; R11(R12)
-174 [-]: JMP       46           ; PC := 46
-175 [-]: RETURN    R0 1         ; return 
+ 46 [-]: LOADK     R4 K3        ; R4 := 0
+ 47 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+ 48 [-]: MOVE      R6 R0        ; R6 := R0
+ 49 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 50 [-]: TEST      R5 0         ; if not R5 then PC := 53
+ 51 [-]: JMP       53           ; PC := 53
+ 52 [-]: GETGLOBAL R0 K0        ; R0 := gGameRules
+ 53 [-]: GETGLOBAL R5 K11       ; R5 := gRegion
+ 54 [-]: SELF      R5 R5 K16    ; R6 := R5; R5 := R5["0xA559F558"]
+ 55 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 56 [-]: TEST      R5 0         ; if not R5 then PC := 84
+ 57 [-]: JMP       84           ; PC := 84
+ 58 [-]: EQ        0 R4 K3      ; if R4 ~= 0 then PC := 63
+ 59 [-]: JMP       63           ; PC := 63
+ 60 [-]: GETGLOBAL R5 K18       ; R5 := instantRumble
+ 61 [-]: TEST      R5 1         ; if R5 then PC := 98
+ 62 [-]: JMP       98           ; PC := 98
+ 63 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+ 64 [-]: MOVE      R6 R0        ; R6 := R0
+ 65 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 66 [-]: TEST      R5 1         ; if R5 then PC := 98
+ 67 [-]: JMP       98           ; PC := 98
+ 68 [-]: GETGLOBAL R5 K19       ; R5 := 0x7FD4B57D
+ 69 [-]: GETGLOBAL R6 K20       ; R6 := minTime
+ 70 [-]: GETGLOBAL R7 K21       ; R7 := maxTime
+ 71 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 72 [-]: SELF      R6 R0 K17    ; R7 := R0; R6 := R0["0xD015CBDC"]
+ 73 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 74 [-]: LOADK     R9 K3        ; R9 := 0
+ 75 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 76 [-]: GETGLOBAL R6 K2        ; R6 := 0x201191EA
+ 77 [-]: MOVE      R7 R5        ; R7 := R5
+ 78 [-]: CALL      R6 2 1       ; R6(R7)
+ 79 [-]: SELF      R6 R0 K17    ; R7 := R0; R6 := R0["0xD015CBDC"]
+ 80 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 81 [-]: LOADK     R9 K22       ; R9 := 1
+ 82 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 83 [-]: JMP       98           ; PC := 98
+ 84 [-]: GETGLOBAL R6 K1        ; R6 := 0x400E7765
+ 85 [-]: MOVE      R7 R0        ; R7 := R0
+ 86 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 87 [-]: TEST      R6 1         ; if R6 then PC := 98
+ 88 [-]: JMP       98           ; PC := 98
+ 89 [-]: SELF      R6 R0 K23    ; R7 := R0; R6 := R0["0xED0EE7FB"]
+ 90 [-]: GETUPVAL  R8 U0        ; R8 := U0
+ 91 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+ 92 [-]: EQ        0 R6 K3      ; if R6 ~= 0 then PC := 98
+ 93 [-]: JMP       98           ; PC := 98
+ 94 [-]: GETGLOBAL R6 K2        ; R6 := 0x201191EA
+ 95 [-]: LOADK     R7 K22       ; R7 := 1
+ 96 [-]: CALL      R6 2 1       ; R6(R7)
+ 97 [-]: JMP       84           ; PC := 84
+ 98 [-]: GETGLOBAL R6 K24       ; R6 := 0x8C4A6742
+ 99 [-]: LOADK     R7 K3        ; R7 := 0
+100 [-]: LOADK     R8 K22       ; R8 := 1
+101 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
+102 [-]: GETGLOBAL R7 K25       ; R7 := alarmChance
+103 [-]: LE        0 R6 R7      ; if R6 > R7 then PC := 156
+104 [-]: JMP       156          ; PC := 156
+105 [-]: GETGLOBAL R7 K9        ; R7 := _T
+106 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["TransitionLevel"]
+107 [-]: TEST      R7 0         ; if not R7 then PC := 147
+108 [-]: JMP       147          ; PC := 147
+109 [-]: GETGLOBAL R7 K11       ; R7 := gRegion
+110 [-]: SELF      R7 R7 K26    ; R8 := R7; R7 := R7["0xFE97A23B"]
+111 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+112 [-]: GETTABLE  R7 R7 K22    ; R7 := R7[1]
+113 [-]: SELF      R8 R7 K27    ; R9 := R7; R8 := R7["0x72E5DB62"]
+114 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+115 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
+116 [-]: MOVE      R10 R8       ; R10 := R8
+117 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+118 [-]: TEST      R9 1         ; if R9 then PC := 156
+119 [-]: JMP       156          ; PC := 156
+120 [-]: SELF      R9 R8 K28    ; R10 := R8; R9 := R8["0x61FDC81"]
+121 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+122 [-]: SELF      R10 R9 K29   ; R11 := R9; R10 := R9["0x8B598ED4"]
+123 [-]: GETGLOBAL R12 K30      ; R12 := zoneAttribsA
+124 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+125 [-]: TEST      R10 0        ; if not R10 then PC := 137
+126 [-]: JMP       137          ; PC := 137
+127 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+128 [-]: GETGLOBAL R11 K31      ; R11 := alarmSoundA
+129 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+130 [-]: TEST      R10 1        ; if R10 then PC := 156
+131 [-]: JMP       156          ; PC := 156
+132 [-]: GETGLOBAL R10 K31      ; R10 := alarmSoundA
+133 [-]: SELF      R10 R10 K32  ; R11 := R10; R10 := R10["0x8D5886B7"]
+134 [-]: LOADK     R12 K33      ; R12 := "Enable"
+135 [-]: CALL      R10 3 1      ; R10(R11,R12)
+136 [-]: JMP       156          ; PC := 156
+137 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+138 [-]: GETGLOBAL R11 K34      ; R11 := alarmSoundB
+139 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+140 [-]: TEST      R10 1        ; if R10 then PC := 156
+141 [-]: JMP       156          ; PC := 156
+142 [-]: GETGLOBAL R10 K34      ; R10 := alarmSoundB
+143 [-]: SELF      R10 R10 K32  ; R11 := R10; R10 := R10["0x8D5886B7"]
+144 [-]: LOADK     R12 K33      ; R12 := "Enable"
+145 [-]: CALL      R10 3 1      ; R10(R11,R12)
+146 [-]: JMP       156          ; PC := 156
+147 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+148 [-]: GETGLOBAL R11 K31      ; R11 := alarmSoundA
+149 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+150 [-]: TEST      R10 1        ; if R10 then PC := 156
+151 [-]: JMP       156          ; PC := 156
+152 [-]: GETGLOBAL R10 K31      ; R10 := alarmSoundA
+153 [-]: SELF      R10 R10 K32  ; R11 := R10; R10 := R10["0x8D5886B7"]
+154 [-]: LOADK     R12 K33      ; R12 := "Enable"
+155 [-]: CALL      R10 3 1      ; R10(R11,R12)
+156 [-]: GETGLOBAL R10 K19      ; R10 := 0x7FD4B57D
+157 [-]: LOADK     R11 K22      ; R11 := 1
+158 [-]: GETGLOBAL R12 K35      ; R12 := shakeSounds
+159 [-]: LEN       R12 R12      ; R12 := # R12
+160 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+161 [-]: GETGLOBAL R11 K19      ; R11 := 0x7FD4B57D
+162 [-]: GETGLOBAL R12 K36      ; R12 := minAmp
+163 [-]: GETGLOBAL R13 K37      ; R13 := maxAmp
+164 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+165 [-]: GETGLOBAL R12 K1       ; R12 := 0x400E7765
+166 [-]: GETGLOBAL R13 K35      ; R13 := shakeSounds
+167 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
+168 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+169 [-]: TEST      R12 1        ; if R12 then PC := 177
+170 [-]: JMP       177          ; PC := 177
+171 [-]: GETUPVAL  R12 U1       ; R12 := U1
+172 [-]: GETGLOBAL R13 K35      ; R13 := shakeSounds
+173 [-]: GETTABLE  R13 R13 R10  ; R13 := R13[R10]
+174 [-]: MOVE      R14 R1       ; R14 := R1
+175 [-]: MOVE      R15 R11      ; R15 := R11
+176 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
+177 [-]: ADD       R4 R4 K22    ; R4 := R4 + 1
+178 [-]: GETGLOBAL R12 K2       ; R12 := 0x201191EA
+179 [-]: LOADK     R13 K3       ; R13 := 0
+180 [-]: CALL      R12 2 1      ; R12(R13)
+181 [-]: JMP       47           ; PC := 47
+182 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 278
+; Defined at line: 286
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -713,7 +720,7 @@ code size: 270
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 330
+; Defined at line: 338
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -763,7 +770,7 @@ code size: 270
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 351
+; Defined at line: 359
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0

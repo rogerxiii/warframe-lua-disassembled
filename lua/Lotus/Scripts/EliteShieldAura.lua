@@ -171,61 +171,61 @@ code size: 6
  34 [-]: SELF      R6 R4 K9     ; R7 := R4; R6 := R4["0x3B1B11B9"]
  35 [-]: GETGLOBAL R8 K10       ; R8 := Game
  36 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["AVATAR_INJURY_BLOCK_CHANCE"]
- 37 [-]: GETGLOBAL R9 K10       ; R9 := Game
- 38 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["SET"]
- 39 [-]: LOADK     R10 K13      ; R10 := 1
+ 37 [-]: GETGLOBAL R9 K12       ; R9 := Engine
+ 38 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["SET"]
+ 39 [-]: LOADK     R10 K14      ; R10 := 1
  40 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
  41 [-]: SELF      R6 R4 K9     ; R7 := R4; R6 := R4["0x3B1B11B9"]
  42 [-]: GETGLOBAL R8 K10       ; R8 := Game
- 43 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["GAMEPLAY_FACTION_DAMAGE_RESISTANCE"]
- 44 [-]: GETGLOBAL R9 K10       ; R9 := Game
- 45 [-]: GETTABLE  R9 R9 K15    ; R9 := R9["MULTIPLY"]
- 46 [-]: LOADK     R10 K16      ; R10 := 0
+ 43 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["GAMEPLAY_FACTION_DAMAGE_RESISTANCE"]
+ 44 [-]: GETGLOBAL R9 K12       ; R9 := Engine
+ 45 [-]: GETTABLE  R9 R9 K16    ; R9 := R9["MULTIPLY"]
+ 46 [-]: LOADK     R10 K17      ; R10 := 0
  47 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 48 [-]: SELF      R6 R1 K17    ; R7 := R1; R6 := R1["0xAB436EF2"]
- 49 [-]: GETGLOBAL R8 K18       ; R8 := boostProjector
- 50 [-]: GETGLOBAL R9 K19       ; R9 := EMPTY_SYMBOL
- 51 [-]: SELF      R10 R1 K20   ; R11 := R1; R10 := R1["0x6DA72501"]
+ 48 [-]: SELF      R6 R1 K18    ; R7 := R1; R6 := R1["0xAB436EF2"]
+ 49 [-]: GETGLOBAL R8 K19       ; R8 := boostProjector
+ 50 [-]: GETGLOBAL R9 K20       ; R9 := EMPTY_SYMBOL
+ 51 [-]: SELF      R10 R1 K21   ; R11 := R1; R10 := R1["0x6DA72501"]
  52 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 53 [-]: SELF      R11 R1 K21   ; R12 := R1; R11 := R1["0xF23A7849"]
+ 53 [-]: SELF      R11 R1 K22   ; R12 := R1; R11 := R1["0xF23A7849"]
  54 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
  55 [-]: CALL      R6 0 1       ; R6(R7,...)
  56 [-]: JMP       93           ; PC := 93
- 57 [-]: SELF      R6 R1 K22    ; R7 := R1; R6 := R1["0x6E097D13"]
+ 57 [-]: SELF      R6 R1 K23    ; R7 := R1; R6 := R1["0x6E097D13"]
  58 [-]: GETGLOBAL R8 K5        ; R8 := Lotus_Game
  59 [-]: GETTABLE  R8 R8 K6     ; R8 := R8["AR_IMMUNE_ALL"]
  60 [-]: MOVE      R9 R3        ; R9 := R3
  61 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
  62 [-]: SELF      R6 R1 K7     ; R7 := R1; R6 := R1["0xA3F6069B"]
  63 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 64 [-]: SELF      R6 R6 K23    ; R7 := R6; R6 := R6["0x447517F9"]
+ 64 [-]: SELF      R6 R6 K24    ; R7 := R6; R6 := R6["0x447517F9"]
  65 [-]: MOVE      R8 R3        ; R8 := R3
  66 [-]: CALL      R6 3 1       ; R6(R7,R8)
  67 [-]: TEST      R5 0         ; if not R5 then PC := 93
  68 [-]: JMP       93           ; PC := 93
- 69 [-]: SELF      R6 R4 K24    ; R7 := R4; R6 := R4["0xF21555A7"]
+ 69 [-]: SELF      R6 R4 K25    ; R7 := R4; R6 := R4["0xF21555A7"]
  70 [-]: GETGLOBAL R8 K10       ; R8 := Game
  71 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["AVATAR_INJURY_BLOCK_CHANCE"]
- 72 [-]: GETGLOBAL R9 K10       ; R9 := Game
- 73 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["SET"]
- 74 [-]: LOADK     R10 K13      ; R10 := 1
+ 72 [-]: GETGLOBAL R9 K12       ; R9 := Engine
+ 73 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["SET"]
+ 74 [-]: LOADK     R10 K14      ; R10 := 1
  75 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 76 [-]: SELF      R6 R4 K24    ; R7 := R4; R6 := R4["0xF21555A7"]
+ 76 [-]: SELF      R6 R4 K25    ; R7 := R4; R6 := R4["0xF21555A7"]
  77 [-]: GETGLOBAL R8 K10       ; R8 := Game
- 78 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["GAMEPLAY_FACTION_DAMAGE_RESISTANCE"]
- 79 [-]: GETGLOBAL R9 K10       ; R9 := Game
- 80 [-]: GETTABLE  R9 R9 K15    ; R9 := R9["MULTIPLY"]
- 81 [-]: LOADK     R10 K16      ; R10 := 0
+ 78 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["GAMEPLAY_FACTION_DAMAGE_RESISTANCE"]
+ 79 [-]: GETGLOBAL R9 K12       ; R9 := Engine
+ 80 [-]: GETTABLE  R9 R9 K16    ; R9 := R9["MULTIPLY"]
+ 81 [-]: LOADK     R10 K17      ; R10 := 0
  82 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 83 [-]: SELF      R6 R1 K25    ; R7 := R1; R6 := R1["0x9F1DC568"]
- 84 [-]: GETGLOBAL R8 K18       ; R8 := boostProjector
+ 83 [-]: SELF      R6 R1 K26    ; R7 := R1; R6 := R1["0x9F1DC568"]
+ 84 [-]: GETGLOBAL R8 K19       ; R8 := boostProjector
  85 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  86 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
  87 [-]: MOVE      R8 R6        ; R8 := R6
  88 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  89 [-]: TEST      R7 1         ; if R7 then PC := 93
  90 [-]: JMP       93           ; PC := 93
- 91 [-]: SELF      R7 R6 K26    ; R8 := R6; R7 := R6["0xD4C2743F"]
+ 91 [-]: SELF      R7 R6 K27    ; R8 := R6; R7 := R6["0xD4C2743F"]
  92 [-]: CALL      R7 2 1       ; R7(R8)
  93 [-]: RETURN    R0 1         ; return 
 

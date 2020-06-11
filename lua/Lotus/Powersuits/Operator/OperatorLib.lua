@@ -188,8 +188,8 @@ code size: 181
 150 [-]: GETGLOBAL R13 K38      ; R13 := Game
 151 [-]: GETTABLE  R13 R13 K60  ; R13 := R13["GAMEPLAY_KILL_XP_AMOUNT"]
 152 [-]: SETTABLE  R12 K37 R13  ; R12["upgradeType"] := R13
-153 [-]: GETGLOBAL R13 K38      ; R13 := Game
-154 [-]: GETTABLE  R13 R13 K62  ; R13 := R13["STACKING_MULTIPLY"]
+153 [-]: GETGLOBAL R13 K62      ; R13 := Engine
+154 [-]: GETTABLE  R13 R13 K63  ; R13 := R13["STACKING_MULTIPLY"]
 155 [-]: SETTABLE  R12 K61 R13  ; R12["upgradeOperation"] := R13
 156 [-]: SETTABLE  R12 K40 K53  ; R12["max"] := 6
 157 [-]: CLOSURE   R13 13       ; R13 := closure(Function #14)
@@ -197,89 +197,89 @@ code size: 181
 159 [-]: SETTABLE  R11 K58 R12  ; R11["meleeXp"] := R12
 160 [-]: NEWTABLE  R12 0 5      ; R12 := {}
 161 [-]: GETGLOBAL R13 K16      ; R13 := 0xEC274B1A
-162 [-]: LOADK     R14 K64      ; R14 := "MeleeCombo"
+162 [-]: LOADK     R14 K65      ; R14 := "MeleeCombo"
 163 [-]: CALL      R13 2 2      ; R13 := R13(R14)
 164 [-]: SETTABLE  R12 K35 R13  ; R12["tag"] := R13
 165 [-]: GETGLOBAL R13 K38      ; R13 := Game
-166 [-]: GETTABLE  R13 R13 K65  ; R13 := R13["WEAPON_MELEE_COMBO_DECAY_AMOUNT"]
+166 [-]: GETTABLE  R13 R13 K66  ; R13 := R13["WEAPON_MELEE_COMBO_DECAY_AMOUNT"]
 167 [-]: SETTABLE  R12 K37 R13  ; R12["upgradeType"] := R13
-168 [-]: GETGLOBAL R13 K38      ; R13 := Game
-169 [-]: GETTABLE  R13 R13 K66  ; R13 := R13["SET"]
+168 [-]: GETGLOBAL R13 K62      ; R13 := Engine
+169 [-]: GETTABLE  R13 R13 K67  ; R13 := R13["SET"]
 170 [-]: SETTABLE  R12 K61 R13  ; R12["upgradeOperation"] := R13
 171 [-]: SETTABLE  R12 K40 K10  ; R12["max"] := 4
 172 [-]: CLOSURE   R13 14       ; R13 := closure(Function #15)
 173 [-]: SETTABLE  R12 K41 R13  ; R12["GetUpgrade"] := R13
-174 [-]: SETTABLE  R11 K63 R12  ; R11["meleeCombo"] := R12
+174 [-]: SETTABLE  R11 K64 R12  ; R11["meleeCombo"] := R12
 175 [-]: NEWTABLE  R12 0 2      ; R12 := {}
 176 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 177 [-]: GETGLOBAL R14 K16      ; R14 := 0xEC274B1A
-178 [-]: LOADK     R15 K68      ; R15 := "ReflectDamage"
+178 [-]: LOADK     R15 K69      ; R15 := "ReflectDamage"
 179 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 180 [-]: SETTABLE  R13 K35 R14  ; R13["tag"] := R14
 181 [-]: GETGLOBAL R14 K38      ; R14 := Game
-182 [-]: GETTABLE  R14 R14 K69  ; R14 := R14["AVATAR_THORNS_PERCENT"]
+182 [-]: GETTABLE  R14 R14 K70  ; R14 := R14["AVATAR_THORNS_PERCENT"]
 183 [-]: SETTABLE  R13 K37 R14  ; R13["upgradeType"] := R14
 184 [-]: SETTABLE  R13 K40 K53  ; R13["max"] := 6
 185 [-]: CLOSURE   R14 15       ; R14 := closure(Function #16)
 186 [-]: SETTABLE  R13 K41 R14  ; R13["GetUpgrade"] := R14
-187 [-]: SETTABLE  R12 K67 R13  ; R12["reflectDamage"] := R13
+187 [-]: SETTABLE  R12 K68 R13  ; R12["reflectDamage"] := R13
 188 [-]: NEWTABLE  R13 0 4      ; R13 := {}
 189 [-]: GETGLOBAL R14 K16      ; R14 := 0xEC274B1A
-190 [-]: LOADK     R15 K71      ; R15 := "ArmourBuff"
+190 [-]: LOADK     R15 K72      ; R15 := "ArmourBuff"
 191 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 192 [-]: SETTABLE  R13 K35 R14  ; R13["tag"] := R14
 193 [-]: GETGLOBAL R14 K38      ; R14 := Game
-194 [-]: GETTABLE  R14 R14 K72  ; R14 := R14["AVATAR_ARMOUR"]
+194 [-]: GETTABLE  R14 R14 K73  ; R14 := R14["AVATAR_ARMOUR"]
 195 [-]: SETTABLE  R13 K37 R14  ; R13["upgradeType"] := R14
 196 [-]: SETTABLE  R13 K40 K10  ; R13["max"] := 4
 197 [-]: CLOSURE   R14 16       ; R14 := closure(Function #17)
 198 [-]: SETTABLE  R13 K41 R14  ; R13["GetUpgrade"] := R14
-199 [-]: SETTABLE  R12 K70 R13  ; R12["armourBuff"] := R13
+199 [-]: SETTABLE  R12 K71 R13  ; R12["armourBuff"] := R13
 200 [-]: CLOSURE   R13 17       ; R13 := closure(Function #18)
 201 [-]: MOVE      R0 R8        ; R0 := R8
 202 [-]: MOVE      R0 R9        ; R0 := R9
 203 [-]: MOVE      R0 R10       ; R0 := R10
 204 [-]: MOVE      R0 R11       ; R0 := R11
 205 [-]: MOVE      R0 R12       ; R0 := R12
-206 [-]: SETGLOBAL R13 K73      ; ApplyResiduals := R13
-207 [-]: SETGLOBAL R13 K74      ; 0xA14B7721 := R13
+206 [-]: SETGLOBAL R13 K74      ; ApplyResiduals := R13
+207 [-]: SETGLOBAL R13 K75      ; 0xA14B7721 := R13
 208 [-]: CLOSURE   R13 18       ; R13 := closure(Function #19)
 209 [-]: MOVE      R0 R8        ; R0 := R8
 210 [-]: MOVE      R0 R9        ; R0 := R9
 211 [-]: MOVE      R0 R10       ; R0 := R10
 212 [-]: MOVE      R0 R11       ; R0 := R11
 213 [-]: MOVE      R0 R12       ; R0 := R12
-214 [-]: SETGLOBAL R13 K75      ; GetDescriptionInfo := R13
-215 [-]: SETGLOBAL R13 K76      ; 0x1E10E44B := R13
+214 [-]: SETGLOBAL R13 K76      ; GetDescriptionInfo := R13
+215 [-]: SETGLOBAL R13 K77      ; 0x1E10E44B := R13
 216 [-]: CLOSURE   R13 19       ; R13 := closure(Function #20)
 217 [-]: MOVE      R0 R10       ; R0 := R10
-218 [-]: SETGLOBAL R13 K77      ; ApplyPowerEnergyOverTime := R13
-219 [-]: SETGLOBAL R13 K78      ; 0x6C9519F3 := R13
+218 [-]: SETGLOBAL R13 K78      ; ApplyPowerEnergyOverTime := R13
+219 [-]: SETGLOBAL R13 K79      ; 0x6C9519F3 := R13
 220 [-]: CLOSURE   R13 20       ; R13 := closure(Function #21)
 221 [-]: MOVE      R0 R4        ; R0 := R4
 222 [-]: CLOSURE   R14 21       ; R14 := closure(Function #22)
 223 [-]: MOVE      R0 R13       ; R0 := R13
-224 [-]: SETGLOBAL R14 K79      ; IsInWarWithinMission := R14
-225 [-]: SETGLOBAL R14 K80      ; 0x8400483 := R14
+224 [-]: SETGLOBAL R14 K80      ; IsInWarWithinMission := R14
+225 [-]: SETGLOBAL R14 K81      ; 0x8400483 := R14
 226 [-]: CLOSURE   R14 22       ; R14 := closure(Function #23)
 227 [-]: CLOSURE   R15 23       ; R15 := closure(Function #24)
 228 [-]: CLOSURE   R16 24       ; R16 := closure(Function #25)
 229 [-]: MOVE      R0 R15       ; R0 := R15
-230 [-]: SETGLOBAL R16 K81      ; GetOperatorType := R16
-231 [-]: SETGLOBAL R16 K82      ; 0x968DA9B9 := R16
+230 [-]: SETGLOBAL R16 K82      ; GetOperatorType := R16
+231 [-]: SETGLOBAL R16 K83      ; 0x968DA9B9 := R16
 232 [-]: CLOSURE   R16 25       ; R16 := closure(Function #26)
 233 [-]: MOVE      R0 R15       ; R0 := R15
 234 [-]: MOVE      R0 R14       ; R0 := R14
 235 [-]: MOVE      R0 R2        ; R0 := R2
 236 [-]: MOVE      R0 R6        ; R0 := R6
 237 [-]: MOVE      R0 R3        ; R0 := R3
-238 [-]: SETGLOBAL R16 K83      ; EvaluateAbility := R16
-239 [-]: SETGLOBAL R16 K84      ; 0x87647B87 := R16
+238 [-]: SETGLOBAL R16 K84      ; EvaluateAbility := R16
+239 [-]: SETGLOBAL R16 K85      ; 0x87647B87 := R16
 240 [-]: CLOSURE   R16 26       ; R16 := closure(Function #27)
 241 [-]: MOVE      R0 R5        ; R0 := R5
 242 [-]: MOVE      R0 R7        ; R0 := R7
-243 [-]: SETGLOBAL R16 K85      ; SpawnMysteriousTwin := R16
-244 [-]: SETGLOBAL R16 K86      ; 0xC552EFF0 := R16
+243 [-]: SETGLOBAL R16 K86      ; SpawnMysteriousTwin := R16
+244 [-]: SETGLOBAL R16 K87      ; 0xC552EFF0 := R16
 245 [-]: RETURN    R0 1         ; return 
 
 
@@ -361,7 +361,7 @@ code size: 181
  67 [-]: SELF      R10 R6 K25   ; R11 := R6; R10 := R6["0x3B1B11B9"]
  68 [-]: GETGLOBAL R12 K26      ; R12 := Game
  69 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["AVATAR_MOVEMENT_SPEED"]
- 70 [-]: GETGLOBAL R13 K26      ; R13 := Game
+ 70 [-]: GETGLOBAL R13 K15      ; R13 := Engine
  71 [-]: GETTABLE  R13 R13 K28  ; R13 := R13["SET"]
  72 [-]: LOADK     R14 K29      ; R14 := 1
  73 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -466,7 +466,7 @@ code size: 181
 172 [-]: SELF      R10 R6 K48   ; R11 := R6; R10 := R6["0xF21555A7"]
 173 [-]: GETGLOBAL R12 K26      ; R12 := Game
 174 [-]: GETTABLE  R12 R12 K27  ; R12 := R12["AVATAR_MOVEMENT_SPEED"]
-175 [-]: GETGLOBAL R13 K26      ; R13 := Game
+175 [-]: GETGLOBAL R13 K15      ; R13 := Engine
 176 [-]: GETTABLE  R13 R13 K28  ; R13 := R13["SET"]
 177 [-]: LOADK     R14 K29      ; R14 := 1
 178 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -1250,13 +1250,13 @@ code size: 181
 106 [-]: SELF      R22 R3 K26   ; R23 := R3; R22 := R3["0x4685E6C3"]
 107 [-]: GETTABLE  R24 R19 K22  ; R24 := R19["tag"]
 108 [-]: GETTABLE  R25 R19 K27  ; R25 := R19["upgradeType"]
-109 [-]: GETGLOBAL R26 K28      ; R26 := Game
+109 [-]: GETGLOBAL R26 K28      ; R26 := Engine
 110 [-]: GETTABLE  R26 R26 K29  ; R26 := R26["ADD"]
 111 [-]: MOVE      R27 R21      ; R27 := R21
 112 [-]: CALL      R22 6 1      ; R22(R23,R24,R25,R26,R27)
 113 [-]: SELF      R22 R3 K30   ; R23 := R3; R22 := R3["0x3B1B11B9"]
 114 [-]: GETTABLE  R24 R19 K27  ; R24 := R19["upgradeType"]
-115 [-]: GETGLOBAL R25 K28      ; R25 := Game
+115 [-]: GETGLOBAL R25 K28      ; R25 := Engine
 116 [-]: GETTABLE  R25 R25 K29  ; R25 := R25["ADD"]
 117 [-]: UNM       R26 R21      ; R26 := - R21
 118 [-]: GETGLOBAL R27 K31      ; R27 := gPowerSuitType
@@ -1282,7 +1282,7 @@ code size: 181
 138 [-]: SELF      R24 R3 K26   ; R25 := R3; R24 := R3["0x4685E6C3"]
 139 [-]: GETTABLE  R26 R22 K22  ; R26 := R22["tag"]
 140 [-]: GETTABLE  R27 R22 K27  ; R27 := R22["upgradeType"]
-141 [-]: GETGLOBAL R28 K28      ; R28 := Game
+141 [-]: GETGLOBAL R28 K28      ; R28 := Engine
 142 [-]: GETTABLE  R28 R28 K29  ; R28 := R28["ADD"]
 143 [-]: SELF      R29 R22 K25  ; R30 := R22; R29 := R22["0x38F325B8"]
 144 [-]: MOVE      R31 R23      ; R31 := R23
@@ -1538,7 +1538,7 @@ code size: 181
 394 [-]: SELF      R46 R3 K26   ; R47 := R3; R46 := R3["0x4685E6C3"]
 395 [-]: GETTABLE  R48 R43 K22  ; R48 := R43["tag"]
 396 [-]: GETTABLE  R49 R43 K27  ; R49 := R43["upgradeType"]
-397 [-]: GETGLOBAL R50 K28      ; R50 := Game
+397 [-]: GETGLOBAL R50 K28      ; R50 := Engine
 398 [-]: GETTABLE  R50 R50 K29  ; R50 := R50["ADD"]
 399 [-]: SELF      R51 R43 K25  ; R52 := R43; R51 := R43["0x38F325B8"]
 400 [-]: MOVE      R53 R45      ; R53 := R45
@@ -1594,7 +1594,7 @@ code size: 181
 450 [-]: SELF      R58 R3 K26   ; R59 := R3; R58 := R3["0x4685E6C3"]
 451 [-]: GETTABLE  R60 R56 K22  ; R60 := R56["tag"]
 452 [-]: GETTABLE  R61 R56 K27  ; R61 := R56["upgradeType"]
-453 [-]: GETGLOBAL R62 K28      ; R62 := Game
+453 [-]: GETGLOBAL R62 K28      ; R62 := Engine
 454 [-]: GETTABLE  R62 R62 K29  ; R62 := R62["ADD"]
 455 [-]: SELF      R63 R56 K25  ; R64 := R56; R63 := R56["0x38F325B8"]
 456 [-]: MOVE      R65 R57      ; R65 := R57
@@ -1837,7 +1837,7 @@ code size: 181
  33 [-]: SELF      R8 R2 K12    ; R9 := R2; R8 := R2["0xB004E537"]
  34 [-]: MOVE      R10 R7       ; R10 := R7
  35 [-]: GETTABLE  R11 R4 K13   ; R11 := R4["upgradeType"]
- 36 [-]: GETGLOBAL R12 K14      ; R12 := Game
+ 36 [-]: GETGLOBAL R12 K14      ; R12 := Engine
  37 [-]: GETTABLE  R12 R12 K15  ; R12 := R12["ADD"]
  38 [-]: DIV       R13 R6 R7    ; R13 := R6 / R7
  39 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)

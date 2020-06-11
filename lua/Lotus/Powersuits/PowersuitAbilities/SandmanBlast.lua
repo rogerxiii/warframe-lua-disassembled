@@ -406,7 +406,7 @@ code size: 109
  55 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["0xE6450C9D"]
  56 [-]: MOVE      R8 R0        ; R8 := R0
  57 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 58 [-]: SETTABLE  R9 K16 K20   ; R9["Label"] := "/Game/AVATAR_SUCCESS_CHANCE"
+ 58 [-]: SETTABLE  R9 K16 K20   ; R9["Label"] := "/Lotus/Language/Labels/AVATAR_SUCCESS_CHANCE"
  59 [-]: GETGLOBAL R10 K22      ; R10 := math
  60 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["0xF7005A7B"]
  61 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -460,7 +460,7 @@ code size: 109
  31 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  32 [-]: MOVE      R2 R0        ; R2 := R0
  33 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 34 [-]: SETTABLE  R3 K8 K13    ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 34 [-]: SETTABLE  R3 K8 K13    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  35 [-]: GETUPVAL  R4 U2        ; R4 := U2
  36 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  37 [-]: SETTABLE  R3 K14 K15   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -487,7 +487,7 @@ code size: 109
  58 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  59 [-]: MOVE      R2 R0        ; R2 := R0
  60 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 61 [-]: SETTABLE  R3 K8 K19    ; R3["Label"] := "/Game/WEAPON_LIFE_STEAL"
+ 61 [-]: SETTABLE  R3 K8 K19    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_LIFE_STEAL"
  62 [-]: GETGLOBAL R4 K20       ; R4 := math
  63 [-]: GETTABLE  R4 R4 K21    ; R4 := R4["0xF7005A7B"]
  64 [-]: GETUPVAL  R5 U6        ; R5 := U6

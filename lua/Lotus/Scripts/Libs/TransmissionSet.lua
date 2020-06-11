@@ -1,4 +1,4 @@
-code size: 64
+code size: 81
 code size: 84
 code size: 54
 code size: 16
@@ -14,6 +14,12 @@ code size: 7
 code size: 14
 code size: 105
 code size: 66
+code size: 14
+code size: 69
+code size: 22
+code size: 4
+code size: 15
+code size: 7
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\TransmissionSet.luac 
 
@@ -22,7 +28,7 @@ code size: 66
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  4
+; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0x38E3A30F
   2 [-]: VARARG    R1 R2        ; R1 := R2 := ...
@@ -87,7 +93,24 @@ code size: 66
  61 [-]: CLOSURE   R3 14        ; R3 := closure(Function #15)
  62 [-]: SETGLOBAL R3 K25       ; WaitForTransmissionsToComplete := R3
  63 [-]: SETGLOBAL R3 K26       ; 0xE12A8682 := R3
- 64 [-]: RETURN    R0 1         ; return 
+ 64 [-]: CLOSURE   R3 15        ; R3 := closure(Function #16)
+ 65 [-]: CLOSURE   R4 16        ; R4 := closure(Function #17)
+ 66 [-]: MOVE      R0 R3        ; R0 := R3
+ 67 [-]: SETGLOBAL R4 K27       ; PlayScreenTransmission := R4
+ 68 [-]: SETGLOBAL R4 K28       ; 0xE84230DC := R4
+ 69 [-]: CLOSURE   R4 17        ; R4 := closure(Function #18)
+ 70 [-]: CLOSURE   R5 18        ; R5 := closure(Function #19)
+ 71 [-]: MOVE      R0 R4        ; R0 := R4
+ 72 [-]: SETGLOBAL R5 K29       ; InWorldTransmissionQueuedOrPlaying := R5
+ 73 [-]: SETGLOBAL R5 K30       ; 0x9AADE681 := R5
+ 74 [-]: CLOSURE   R5 19        ; R5 := closure(Function #20)
+ 75 [-]: MOVE      R0 R4        ; R0 := R4
+ 76 [-]: SETGLOBAL R5 K31       ; WaitForInWorldTransmissionComplete := R5
+ 77 [-]: SETGLOBAL R5 K32       ; 0x234CBF3B := R5
+ 78 [-]: CLOSURE   R5 20        ; R5 := closure(Function #21)
+ 79 [-]: SETGLOBAL R5 K33       ; TransmissionQueuedOrPlaying := R5
+ 80 [-]: SETGLOBAL R5 K34       ; 0x9E461119 := R5
+ 81 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -862,5 +885,202 @@ code size: 66
  64 [-]: CALL      R6 3 1       ; R6(R7,R8)
  65 [-]: RETURN    R3 2         ; return R3
  66 [-]: RETURN    R0 1         ; return 
+
+
+; Function #16:
+;
+; Name:            
+; Defined at line: 277
+; #Upvalues:       0
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  6
+
+  1 [-]: GETGLOBAL R2 K0        ; R2 := _T
+  2 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["InWorldTransmissionsLoading"]
+  3 [-]: SETTABLE  R2 R1 K2     ; R2[R1] := nil
+  4 [-]: TEST      R0 0         ; if not R0 then PC := 14
+  5 [-]: JMP       14           ; PC := 14
+  6 [-]: GETGLOBAL R2 K3        ; R2 := table
+  7 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["0xE6450C9D"]
+  8 [-]: GETGLOBAL R3 K0        ; R3 := _T
+  9 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["InWorldTransmissionQueue"]
+ 10 [-]: GETGLOBAL R4 K6        ; R4 := 0x7C282057
+ 11 [-]: MOVE      R5 R1        ; R5 := R1
+ 12 [-]: CALL      R4 2 0       ; R4,... := R4(R5)
+ 13 [-]: CALL      R2 0 1       ; R2(R3,...)
+ 14 [-]: RETURN    R0 1         ; return 
+
+
+; Function #17:
+;
+; Name:            
+; Defined at line: 284
+; #Upvalues:       1
+; #Parameters:     4
+; Is_vararg:       0
+; Max Stack Size:  10
+
+  1 [-]: GETGLOBAL R4 K0        ; R4 := _T
+  2 [-]: GETGLOBAL R5 K0        ; R5 := _T
+  3 [-]: GETTABLE  R5 R5 K1     ; R5 := R5["InWorldTransmissionsLoading"]
+  4 [-]: TEST      R5 1         ; if R5 then PC := 7
+  5 [-]: JMP       7            ; PC := 7
+  6 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+  7 [-]: SETTABLE  R4 K1 R5     ; R4["InWorldTransmissionsLoading"] := R5
+  8 [-]: GETGLOBAL R4 K0        ; R4 := _T
+  9 [-]: GETGLOBAL R5 K0        ; R5 := _T
+ 10 [-]: GETTABLE  R5 R5 K2     ; R5 := R5["InWorldTransmissionQueue"]
+ 11 [-]: TEST      R5 1         ; if R5 then PC := 14
+ 12 [-]: JMP       14           ; PC := 14
+ 13 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 14 [-]: SETTABLE  R4 K2 R5     ; R4["InWorldTransmissionQueue"] := R5
+ 15 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
+ 16 [-]: MOVE      R5 R2        ; R5 := R2
+ 17 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 18 [-]: TEST      R4 1         ; if R4 then PC := 32
+ 19 [-]: JMP       32           ; PC := 32
+ 20 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
+ 21 [-]: GETGLOBAL R5 K0        ; R5 := _T
+ 22 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["InWorldTransmissionIntro"]
+ 23 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 24 [-]: TEST      R4 0         ; if not R4 then PC := 29
+ 25 [-]: JMP       29           ; PC := 29
+ 26 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 27 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 28 [-]: SETTABLE  R4 K4 R5     ; R4["InWorldTransmissionIntro"] := R5
+ 29 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 30 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["InWorldTransmissionIntro"]
+ 31 [-]: SETTABLE  R4 K5 R2     ; R4["openSound"] := R2
+ 32 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
+ 33 [-]: MOVE      R5 R3        ; R5 := R3
+ 34 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 35 [-]: TEST      R4 1         ; if R4 then PC := 51
+ 36 [-]: JMP       51           ; PC := 51
+ 37 [-]: LT        0 K6 R3      ; if 0 >= R3 then PC := 51
+ 38 [-]: JMP       51           ; PC := 51
+ 39 [-]: GETGLOBAL R4 K3        ; R4 := 0x400E7765
+ 40 [-]: GETGLOBAL R5 K0        ; R5 := _T
+ 41 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["InWorldTransmissionIntro"]
+ 42 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 43 [-]: TEST      R4 0         ; if not R4 then PC := 48
+ 44 [-]: JMP       48           ; PC := 48
+ 45 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 46 [-]: NEWTABLE  R5 0 0       ; R5 := {}
+ 47 [-]: SETTABLE  R4 K4 R5     ; R4["InWorldTransmissionIntro"] := R5
+ 48 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 49 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["InWorldTransmissionIntro"]
+ 50 [-]: SETTABLE  R4 K7 R3     ; R4["openDelay"] := R3
+ 51 [-]: SELF      R4 R0 K8     ; R5 := R0; R4 := R0["0xD168273F"]
+ 52 [-]: MOVE      R6 R1        ; R6 := R1
+ 53 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 54 [-]: GETGLOBAL R5 K3        ; R5 := 0x400E7765
+ 55 [-]: MOVE      R6 R4        ; R6 := R4
+ 56 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 57 [-]: TEST      R5 1         ; if R5 then PC := 69
+ 58 [-]: JMP       69           ; PC := 69
+ 59 [-]: SELF      R5 R4 K9     ; R6 := R4; R5 := R4["0x1B252E3C"]
+ 60 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 61 [-]: GETGLOBAL R6 K0        ; R6 := _T
+ 62 [-]: GETTABLE  R6 R6 K1     ; R6 := R6["InWorldTransmissionsLoading"]
+ 63 [-]: SETTABLE  R6 R5 K10    ; R6[R5] := "0x1"
+ 64 [-]: GETGLOBAL R6 K11       ; R6 := gGameRules
+ 65 [-]: SELF      R6 R6 K12    ; R7 := R6; R6 := R6["0x4A57F63D"]
+ 66 [-]: MOVE      R8 R5        ; R8 := R5
+ 67 [-]: GETUPVAL  R9 U0        ; R9 := U0
+ 68 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 69 [-]: RETURN    R0 1         ; return 
+
+
+; Function #18:
+;
+; Name:            
+; Defined at line: 308
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["InWorldTransmissionsLoading"]
+  3 [-]: TEST      R0 0         ; if not R0 then PC := 11
+  4 [-]: JMP       11           ; PC := 11
+  5 [-]: GETGLOBAL R0 K2        ; R0 := 0xAA09E79D
+  6 [-]: GETGLOBAL R1 K0        ; R1 := _T
+  7 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["InWorldTransmissionsLoading"]
+  8 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  9 [-]: TEST      R0 1         ; if R0 then PC := 21
+ 10 [-]: JMP       21           ; PC := 21
+ 11 [-]: GETGLOBAL R0 K0        ; R0 := _T
+ 12 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["InWorldTransmissionQueue"]
+ 13 [-]: LEN       R0 R0        ; R0 := # R0
+ 14 [-]: LT        1 K4 R0      ; if 0 < R0 then PC := 20
+ 15 [-]: JMP       20           ; PC := 20
+ 16 [-]: GETGLOBAL R0 K0        ; R0 := _T
+ 17 [-]: GETTABLE  R0 R0 K5     ; R0 := R0["InWorldTransmissionPlaying"]
+ 18 [-]: JMP       21           ; PC := 21
+ 19 [-]: MOVE      R0 R0        ; R0 := R0
+ 20 [-]: MOVE      R0 R1        ; R0 := R1
+ 21 [-]: RETURN    R0 2         ; return R0
+ 22 [-]: RETURN    R0 1         ; return 
+
+
+; Function #19:
+;
+; Name:            
+; Defined at line: 312
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETUPVAL  R0 U0        ; R0 := U0
+  2 [-]: TAILCALL  R0 1 0       ; R0,... := R0()
+  3 [-]: RETURN    R0 0         ; return R0,...
+  4 [-]: RETURN    R0 1         ; return 
+
+
+; Function #20:
+;
+; Name:            
+; Defined at line: 316
+; #Upvalues:       1
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  3
+
+  1 [-]: LOADK     R0 K0        ; R0 := 0
+  2 [-]: GETUPVAL  R1 U0        ; R1 := U0
+  3 [-]: CALL      R1 1 2       ; R1 := R1()
+  4 [-]: TEST      R1 0         ; if not R1 then PC := 15
+  5 [-]: JMP       15           ; PC := 15
+  6 [-]: LE        0 R0 K1      ; if R0 > 30 then PC := 15
+  7 [-]: JMP       15           ; PC := 15
+  8 [-]: GETGLOBAL R1 K2        ; R1 := 0x201191EA
+  9 [-]: LOADK     R2 K0        ; R2 := 0
+ 10 [-]: CALL      R1 2 1       ; R1(R2)
+ 11 [-]: GETGLOBAL R1 K3        ; R1 := 0x4CDEF9FF
+ 12 [-]: CALL      R1 1 2       ; R1 := R1()
+ 13 [-]: ADD       R0 R0 R1     ; R0 := R0 + R1
+ 14 [-]: JMP       2            ; PC := 2
+ 15 [-]: RETURN    R0 1         ; return 
+
+
+; Function #21:
+;
+; Name:            
+; Defined at line: 324
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := 0x400E7765
+  2 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["curTransmission"]
+  4 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+  5 [-]: MOVE      R0 R0        ; R0 := R0
+  6 [-]: RETURN    R0 2         ; return R0
+  7 [-]: RETURN    R0 1         ; return 
 
 

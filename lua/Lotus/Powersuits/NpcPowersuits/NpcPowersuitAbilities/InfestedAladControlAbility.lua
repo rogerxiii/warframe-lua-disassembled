@@ -1409,14 +1409,14 @@ code size: 17
 400 [-]: SELF      R25 R24 K77  ; R26 := R24; R25 := R24["0x3B1B11B9"]
 401 [-]: GETGLOBAL R27 K78      ; R27 := Game
 402 [-]: GETTABLE  R27 R27 K79  ; R27 := R27["AVATAR_DAMAGE_RESISTANCE"]
-403 [-]: GETGLOBAL R28 K78      ; R28 := Game
+403 [-]: GETGLOBAL R28 K19      ; R28 := Engine
 404 [-]: GETTABLE  R28 R28 K80  ; R28 := R28["SET"]
 405 [-]: LOADK     R29 K2       ; R29 := 2
 406 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)
 407 [-]: SELF      R25 R24 K77  ; R26 := R24; R25 := R24["0x3B1B11B9"]
 408 [-]: GETGLOBAL R27 K78      ; R27 := Game
 409 [-]: GETTABLE  R27 R27 K81  ; R27 := R27["WEAPON_DAMAGE_AMOUNT"]
-410 [-]: GETGLOBAL R28 K78      ; R28 := Game
+410 [-]: GETGLOBAL R28 K19      ; R28 := Engine
 411 [-]: GETTABLE  R28 R28 K82  ; R28 := R28["MULTIPLY"]
 412 [-]: GETGLOBAL R29 K83      ; R29 := controlDamageFraction
 413 [-]: CALL      R25 5 1      ; R25(R26,R27,R28,R29)

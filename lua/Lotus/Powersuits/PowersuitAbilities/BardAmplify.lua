@@ -1402,36 +1402,36 @@ code size: 29
 425 [-]: MOVE      R43 R10      ; R43 := R10
 426 [-]: GETGLOBAL R44 K74      ; R44 := Game
 427 [-]: GETTABLE  R44 R44 K75  ; R44 := R44["WEAPON_DAMAGE_AMOUNT"]
-428 [-]: GETGLOBAL R45 K74      ; R45 := Game
-429 [-]: GETTABLE  R45 R45 K76  ; R45 := R45["STACKING_MULTIPLY"]
+428 [-]: GETGLOBAL R45 K76      ; R45 := Engine
+429 [-]: GETTABLE  R45 R45 K77  ; R45 := R45["STACKING_MULTIPLY"]
 430 [-]: MOVE      R46 R20      ; R46 := R20
 431 [-]: CALL      R41 6 1      ; R41(R42,R43,R44,R45,R46)
 432 [-]: SELF      R41 R40 K73  ; R42 := R40; R41 := R40["0x5A740E25"]
 433 [-]: MOVE      R43 R11      ; R43 := R11
 434 [-]: GETGLOBAL R44 K74      ; R44 := Game
-435 [-]: GETTABLE  R44 R44 K77  ; R44 := R44["WEAPON_MELEE_DAMAGE"]
-436 [-]: GETGLOBAL R45 K74      ; R45 := Game
-437 [-]: GETTABLE  R45 R45 K76  ; R45 := R45["STACKING_MULTIPLY"]
+435 [-]: GETTABLE  R44 R44 K78  ; R44 := R44["WEAPON_MELEE_DAMAGE"]
+436 [-]: GETGLOBAL R45 K76      ; R45 := Engine
+437 [-]: GETTABLE  R45 R45 K77  ; R45 := R45["STACKING_MULTIPLY"]
 438 [-]: MOVE      R46 R20      ; R46 := R20
 439 [-]: CALL      R41 6 1      ; R41(R42,R43,R44,R45,R46)
-440 [-]: SELF      R41 R40 K78  ; R42 := R40; R41 := R40["0x4685E6C3"]
+440 [-]: SELF      R41 R40 K79  ; R42 := R40; R41 := R40["0x4685E6C3"]
 441 [-]: MOVE      R43 R10      ; R43 := R10
 442 [-]: GETGLOBAL R44 K74      ; R44 := Game
 443 [-]: GETTABLE  R44 R44 K75  ; R44 := R44["WEAPON_DAMAGE_AMOUNT"]
-444 [-]: GETGLOBAL R45 K74      ; R45 := Game
-445 [-]: GETTABLE  R45 R45 K76  ; R45 := R45["STACKING_MULTIPLY"]
+444 [-]: GETGLOBAL R45 K76      ; R45 := Engine
+445 [-]: GETTABLE  R45 R45 K77  ; R45 := R45["STACKING_MULTIPLY"]
 446 [-]: MOVE      R46 R31      ; R46 := R31
 447 [-]: CALL      R41 6 1      ; R41(R42,R43,R44,R45,R46)
-448 [-]: SELF      R41 R40 K78  ; R42 := R40; R41 := R40["0x4685E6C3"]
+448 [-]: SELF      R41 R40 K79  ; R42 := R40; R41 := R40["0x4685E6C3"]
 449 [-]: MOVE      R43 R11      ; R43 := R11
 450 [-]: GETGLOBAL R44 K74      ; R44 := Game
-451 [-]: GETTABLE  R44 R44 K77  ; R44 := R44["WEAPON_MELEE_DAMAGE"]
-452 [-]: GETGLOBAL R45 K74      ; R45 := Game
-453 [-]: GETTABLE  R45 R45 K76  ; R45 := R45["STACKING_MULTIPLY"]
+451 [-]: GETTABLE  R44 R44 K78  ; R44 := R44["WEAPON_MELEE_DAMAGE"]
+452 [-]: GETGLOBAL R45 K76      ; R45 := Engine
+453 [-]: GETTABLE  R45 R45 K77  ; R45 := R45["STACKING_MULTIPLY"]
 454 [-]: MOVE      R46 R31      ; R46 := R31
 455 [-]: CALL      R41 6 1      ; R41(R42,R43,R44,R45,R46)
-456 [-]: GETGLOBAL R41 K79      ; R41 := table
-457 [-]: GETTABLE  R41 R41 K80  ; R41 := R41["0xE6450C9D"]
+456 [-]: GETGLOBAL R41 K80      ; R41 := table
+457 [-]: GETTABLE  R41 R41 K81  ; R41 := R41["0xE6450C9D"]
 458 [-]: MOVE      R42 R29      ; R42 := R29
 459 [-]: MOVE      R43 R38      ; R43 := R38
 460 [-]: CALL      R41 3 1      ; R41(R42,R43)
@@ -1439,7 +1439,7 @@ code size: 29
 462 [-]: SETTABLE  R28 R39 R38  ; R28[R39] := R38
 463 [-]: TFORLOOP  R33 2        ; R36,R37 :=  R33(R34,R35); if R36 ~= nil then begin PC = 375; R35 := R36 end
 464 [-]: JMP       375          ; PC := 375
-465 [-]: GETGLOBAL R41 K81      ; R41 := 0xECFDD17
+465 [-]: GETGLOBAL R41 K82      ; R41 := 0xECFDD17
 466 [-]: MOVE      R42 R9       ; R42 := R9
 467 [-]: CALL      R41 2 4      ; R41,R42,R43 := R41(R42)
 468 [-]: JMP       501          ; PC := 501
@@ -1458,20 +1458,20 @@ code size: 29
 481 [-]: MOVE      R49 R10      ; R49 := R10
 482 [-]: GETGLOBAL R50 K74      ; R50 := Game
 483 [-]: GETTABLE  R50 R50 K75  ; R50 := R50["WEAPON_DAMAGE_AMOUNT"]
-484 [-]: GETGLOBAL R51 K74      ; R51 := Game
-485 [-]: GETTABLE  R51 R51 K76  ; R51 := R51["STACKING_MULTIPLY"]
+484 [-]: GETGLOBAL R51 K76      ; R51 := Engine
+485 [-]: GETTABLE  R51 R51 K77  ; R51 := R51["STACKING_MULTIPLY"]
 486 [-]: MOVE      R52 R20      ; R52 := R20
 487 [-]: CALL      R47 6 1      ; R47(R48,R49,R50,R51,R52)
 488 [-]: SELF      R47 R46 K73  ; R48 := R46; R47 := R46["0x5A740E25"]
 489 [-]: MOVE      R49 R11      ; R49 := R11
 490 [-]: GETGLOBAL R50 K74      ; R50 := Game
-491 [-]: GETTABLE  R50 R50 K77  ; R50 := R50["WEAPON_MELEE_DAMAGE"]
-492 [-]: GETGLOBAL R51 K74      ; R51 := Game
-493 [-]: GETTABLE  R51 R51 K76  ; R51 := R51["STACKING_MULTIPLY"]
+491 [-]: GETTABLE  R50 R50 K78  ; R50 := R50["WEAPON_MELEE_DAMAGE"]
+492 [-]: GETGLOBAL R51 K76      ; R51 := Engine
+493 [-]: GETTABLE  R51 R51 K77  ; R51 := R51["STACKING_MULTIPLY"]
 494 [-]: MOVE      R52 R20      ; R52 := R20
 495 [-]: CALL      R47 6 1      ; R47(R48,R49,R50,R51,R52)
-496 [-]: GETGLOBAL R47 K79      ; R47 := table
-497 [-]: GETTABLE  R47 R47 K80  ; R47 := R47["0xE6450C9D"]
+496 [-]: GETGLOBAL R47 K80      ; R47 := table
+497 [-]: GETTABLE  R47 R47 K81  ; R47 := R47["0xE6450C9D"]
 498 [-]: MOVE      R48 R30      ; R48 := R30
 499 [-]: MOVE      R49 R45      ; R49 := R45
 500 [-]: CALL      R47 3 1      ; R47(R48,R49)
@@ -1480,13 +1480,13 @@ code size: 29
 503 [-]: LEN       R47 R29      ; R47 := # R29
 504 [-]: LT        0 K9 R47     ; if 0 >= R47 then PC := 517
 505 [-]: JMP       517          ; PC := 517
-506 [-]: SETTABLE  R6 K82 R29   ; R6["affected"] := R29
+506 [-]: SETTABLE  R6 K83 R29   ; R6["affected"] := R29
 507 [-]: GETGLOBAL R47 K64      ; R47 := math
 508 [-]: GETTABLE  R47 R47 K65  ; R47 := R47["0xF7005A7B"]
-509 [-]: MUL       R48 R31 K84  ; R48 := R31 * 100
+509 [-]: MUL       R48 R31 K85  ; R48 := R31 * 100
 510 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-511 [-]: SETTABLE  R6 K83 R47   ; R6["buffData"] := R47
-512 [-]: SELF      R47 R2 K85   ; R48 := R2; R47 := R2["0x584F13D6"]
+511 [-]: SETTABLE  R6 K84 R47   ; R6["buffData"] := R47
+512 [-]: SELF      R47 R2 K86   ; R48 := R2; R47 := R2["0x584F13D6"]
 513 [-]: MOVE      R49 R6       ; R49 := R6
 514 [-]: MOVE      R50 R1       ; R50 := R1
 515 [-]: MOVE      R51 R1       ; R51 := R1
@@ -1494,8 +1494,8 @@ code size: 29
 517 [-]: LEN       R47 R30      ; R47 := # R30
 518 [-]: LT        0 K9 R47     ; if 0 >= R47 then PC := 526
 519 [-]: JMP       526          ; PC := 526
-520 [-]: SETTABLE  R6 K82 R30   ; R6["affected"] := R30
-521 [-]: SELF      R47 R2 K85   ; R48 := R2; R47 := R2["0x584F13D6"]
+520 [-]: SETTABLE  R6 K83 R30   ; R6["affected"] := R30
+521 [-]: SELF      R47 R2 K86   ; R48 := R2; R47 := R2["0x584F13D6"]
 522 [-]: MOVE      R49 R6       ; R49 := R6
 523 [-]: MOVE      R50 R0       ; R50 := R0
 524 [-]: MOVE      R51 R1       ; R51 := R1
@@ -1508,7 +1508,7 @@ code size: 29
 531 [-]: GETTABLE  R47 R47 K57  ; R47 := R47["0x4DCAC4D9"]
 532 [-]: MOVE      R48 R1       ; R48 := R1
 533 [-]: CALL      R47 2 2      ; R47 := R47(R48)
-534 [-]: SELF      R48 R47 K86  ; R49 := R47; R48 := R47["0x9A5D9AA7"]
+534 [-]: SELF      R48 R47 K87  ; R49 := R47; R48 := R47["0x9A5D9AA7"]
 535 [-]: MOVE      R50 R12      ; R50 := R12
 536 [-]: CALL      R48 3 1      ; R48(R49,R50)
 537 [-]: SELF      R48 R1 K59   ; R49 := R1; R48 := R1["0xD4FCD42F"]
@@ -1521,7 +1521,7 @@ code size: 29
 544 [-]: CALL      R48 2 2      ; R48 := R48(R49)
 545 [-]: TEST      R48 1        ; if R48 then PC := 547
 546 [-]: JMP       547          ; PC := 547
-547 [-]: LOADK     R8 K87       ; R8 := 0.25
+547 [-]: LOADK     R8 K88       ; R8 := 0.25
 548 [-]: GETGLOBAL R48 K5       ; R48 := 0x400E7765
 549 [-]: MOVE      R49 R22      ; R49 := R22
 550 [-]: CALL      R48 2 2      ; R48 := R48(R49)
@@ -1534,74 +1534,74 @@ code size: 29
 557 [-]: GETUPVAL  R49 U2       ; R49 := U2
 558 [-]: GETTABLE  R49 R49 K29  ; R49 := R49["minValue"]
 559 [-]: SUB       R48 R48 R49  ; R48 := R48 - R49
-560 [-]: MUL       R48 K88 R48  ; R48 := 0.5 * R48
+560 [-]: MUL       R48 K89 R48  ; R48 := 0.5 * R48
 561 [-]: DIV       R48 R48 R18  ; R48 := R48 / R18
-562 [-]: DIV       R48 R48 K89  ; R48 := R48 / 20
+562 [-]: DIV       R48 R48 K90  ; R48 := R48 / 20
 563 [-]: GETGLOBAL R49 K5       ; R49 := 0x400E7765
 564 [-]: GETGLOBAL R50 K18      ; R50 := _T
-565 [-]: GETTABLE  R50 R50 K90  ; R50 := R50["bardVisualizer"]
+565 [-]: GETTABLE  R50 R50 K91  ; R50 := R50["bardVisualizer"]
 566 [-]: CALL      R49 2 2      ; R49 := R49(R50)
 567 [-]: TEST      R49 1        ; if R49 then PC := 611
 568 [-]: JMP       611          ; PC := 611
 569 [-]: GETGLOBAL R49 K5       ; R49 := 0x400E7765
 570 [-]: GETGLOBAL R50 K18      ; R50 := _T
-571 [-]: GETTABLE  R50 R50 K90  ; R50 := R50["bardVisualizer"]
+571 [-]: GETTABLE  R50 R50 K91  ; R50 := R50["bardVisualizer"]
 572 [-]: GETTABLE  R50 R50 R7   ; R50 := R50[R7]
 573 [-]: CALL      R49 2 2      ; R49 := R49(R50)
 574 [-]: TEST      R49 1        ; if R49 then PC := 611
 575 [-]: JMP       611          ; PC := 611
-576 [-]: SELF      R49 R22 K91  ; R50 := R22; R49 := R22["0xD124E361"]
+576 [-]: SELF      R49 R22 K92  ; R50 := R22; R49 := R22["0xD124E361"]
 577 [-]: GETUPVAL  R51 U7       ; R51 := U7
 578 [-]: GETGLOBAL R52 K18      ; R52 := _T
-579 [-]: GETTABLE  R52 R52 K90  ; R52 := R52["bardVisualizer"]
+579 [-]: GETTABLE  R52 R52 K91  ; R52 := R52["bardVisualizer"]
 580 [-]: GETTABLE  R52 R52 R7   ; R52 := R52[R7]
-581 [-]: GETTABLE  R52 R52 K92  ; R52 := R52["music"]
-582 [-]: SELF      R52 R52 K93  ; R53 := R52; R52 := R52["0xC4E503B0"]
+581 [-]: GETTABLE  R52 R52 K93  ; R52 := R52["music"]
+582 [-]: SELF      R52 R52 K94  ; R53 := R52; R52 := R52["0xC4E503B0"]
 583 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-584 [-]: MUL       R52 R52 K94  ; R52 := R52 * 0.60000002384186
+584 [-]: MUL       R52 R52 K95  ; R52 := R52 * 0.60000002384186
 585 [-]: ADD       R52 R48 R52  ; R52 := R48 + R52
 586 [-]: GETGLOBAL R53 K18      ; R53 := _T
-587 [-]: GETTABLE  R53 R53 K90  ; R53 := R53["bardVisualizer"]
+587 [-]: GETTABLE  R53 R53 K91  ; R53 := R53["bardVisualizer"]
 588 [-]: GETTABLE  R53 R53 R7   ; R53 := R53[R7]
-589 [-]: GETTABLE  R53 R53 K95  ; R53 := R53["piper"]
-590 [-]: SELF      R53 R53 K93  ; R54 := R53; R53 := R53["0xC4E503B0"]
+589 [-]: GETTABLE  R53 R53 K96  ; R53 := R53["piper"]
+590 [-]: SELF      R53 R53 K94  ; R54 := R53; R53 := R53["0xC4E503B0"]
 591 [-]: CALL      R53 2 2      ; R53 := R53(R54)
-592 [-]: MUL       R53 R53 K88  ; R53 := R53 * 0.5
+592 [-]: MUL       R53 R53 K89  ; R53 := R53 * 0.5
 593 [-]: ADD       R53 R48 R53  ; R53 := R48 + R53
 594 [-]: GETGLOBAL R54 K18      ; R54 := _T
-595 [-]: GETTABLE  R54 R54 K90  ; R54 := R54["bardVisualizer"]
+595 [-]: GETTABLE  R54 R54 K91  ; R54 := R54["bardVisualizer"]
 596 [-]: GETTABLE  R54 R54 R7   ; R54 := R54[R7]
-597 [-]: GETTABLE  R54 R54 K95  ; R54 := R54["piper"]
-598 [-]: SELF      R54 R54 K93  ; R55 := R54; R54 := R54["0xC4E503B0"]
+597 [-]: GETTABLE  R54 R54 K96  ; R54 := R54["piper"]
+598 [-]: SELF      R54 R54 K94  ; R55 := R54; R54 := R54["0xC4E503B0"]
 599 [-]: CALL      R54 2 2      ; R54 := R54(R55)
-600 [-]: MUL       R54 R54 K94  ; R54 := R54 * 0.60000002384186
+600 [-]: MUL       R54 R54 K95  ; R54 := R54 * 0.60000002384186
 601 [-]: ADD       R54 R48 R54  ; R54 := R48 + R54
 602 [-]: GETGLOBAL R55 K18      ; R55 := _T
-603 [-]: GETTABLE  R55 R55 K90  ; R55 := R55["bardVisualizer"]
+603 [-]: GETTABLE  R55 R55 K91  ; R55 := R55["bardVisualizer"]
 604 [-]: GETTABLE  R55 R55 R7   ; R55 := R55[R7]
-605 [-]: GETTABLE  R55 R55 K96  ; R55 := R55["jam"]
-606 [-]: SELF      R55 R55 K93  ; R56 := R55; R55 := R55["0xC4E503B0"]
+605 [-]: GETTABLE  R55 R55 K97  ; R55 := R55["jam"]
+606 [-]: SELF      R55 R55 K94  ; R56 := R55; R55 := R55["0xC4E503B0"]
 607 [-]: CALL      R55 2 2      ; R55 := R55(R56)
-608 [-]: MUL       R55 R55 K97  ; R55 := R55 * 2.5
+608 [-]: MUL       R55 R55 K98  ; R55 := R55 * 2.5
 609 [-]: ADD       R55 R48 R55  ; R55 := R48 + R55
 610 [-]: CALL      R49 7 1      ; R49(R50,R51,R52,R53,R54,R55)
 611 [-]: GETGLOBAL R49 K8       ; R49 := 0x201191EA
 612 [-]: LOADK     R50 K9       ; R50 := 0
 613 [-]: CALL      R49 2 1      ; R49(R50)
 614 [-]: GETUPVAL  R49 U5       ; R49 := U5
-615 [-]: GETGLOBAL R50 K98      ; R50 := 0x4CDEF9FF
+615 [-]: GETGLOBAL R50 K99      ; R50 := 0x4CDEF9FF
 616 [-]: CALL      R50 1 2      ; R50 := R50()
 617 [-]: SUB       R49 R49 R50  ; R49 := R49 - R50
 618 [-]: MOVE      R49 R5       ; R49 := R5
-619 [-]: GETGLOBAL R49 K98      ; R49 := 0x4CDEF9FF
+619 [-]: GETGLOBAL R49 K99      ; R49 := 0x4CDEF9FF
 620 [-]: CALL      R49 1 2      ; R49 := R49()
 621 [-]: SUB       R8 R8 R49    ; R8 := R8 - R49
-622 [-]: GETGLOBAL R49 K98      ; R49 := 0x4CDEF9FF
+622 [-]: GETGLOBAL R49 K99      ; R49 := 0x4CDEF9FF
 623 [-]: CALL      R49 1 2      ; R49 := R49()
 624 [-]: SUB       R16 R16 R49  ; R16 := R16 - R49
 625 [-]: JMP       200          ; PC := 200
 626 [-]: GETGLOBAL R49 K18      ; R49 := _T
-627 [-]: GETTABLE  R49 R49 K99  ; R49 := R49["AddAbilityTimer"]
+627 [-]: GETTABLE  R49 R49 K100 ; R49 := R49["AddAbilityTimer"]
 628 [-]: EQ        1 R49 K51    ; if R49 == nil then PC := 637
 629 [-]: JMP       637          ; PC := 637
 630 [-]: GETGLOBAL R49 K18      ; R49 := _T
@@ -1617,7 +1617,7 @@ code size: 29
 640 [-]: TEST      R49 0        ; if not R49 then PC := 691
 641 [-]: JMP       691          ; PC := 691
 642 [-]: NEWTABLE  R49 0 0      ; R49 := {}
-643 [-]: GETGLOBAL R50 K81      ; R50 := 0xECFDD17
+643 [-]: GETGLOBAL R50 K82      ; R50 := 0xECFDD17
 644 [-]: MOVE      R51 R9       ; R51 := R9
 645 [-]: CALL      R50 2 4      ; R50,R51,R52 := R50(R51)
 646 [-]: JMP       679          ; PC := 679
@@ -1636,20 +1636,20 @@ code size: 29
 659 [-]: MOVE      R58 R10      ; R58 := R10
 660 [-]: GETGLOBAL R59 K74      ; R59 := Game
 661 [-]: GETTABLE  R59 R59 K75  ; R59 := R59["WEAPON_DAMAGE_AMOUNT"]
-662 [-]: GETGLOBAL R60 K74      ; R60 := Game
-663 [-]: GETTABLE  R60 R60 K76  ; R60 := R60["STACKING_MULTIPLY"]
+662 [-]: GETGLOBAL R60 K76      ; R60 := Engine
+663 [-]: GETTABLE  R60 R60 K77  ; R60 := R60["STACKING_MULTIPLY"]
 664 [-]: MOVE      R61 R20      ; R61 := R20
 665 [-]: CALL      R56 6 1      ; R56(R57,R58,R59,R60,R61)
 666 [-]: SELF      R56 R55 K73  ; R57 := R55; R56 := R55["0x5A740E25"]
 667 [-]: MOVE      R58 R11      ; R58 := R11
 668 [-]: GETGLOBAL R59 K74      ; R59 := Game
-669 [-]: GETTABLE  R59 R59 K77  ; R59 := R59["WEAPON_MELEE_DAMAGE"]
-670 [-]: GETGLOBAL R60 K74      ; R60 := Game
-671 [-]: GETTABLE  R60 R60 K76  ; R60 := R60["STACKING_MULTIPLY"]
+669 [-]: GETTABLE  R59 R59 K78  ; R59 := R59["WEAPON_MELEE_DAMAGE"]
+670 [-]: GETGLOBAL R60 K76      ; R60 := Engine
+671 [-]: GETTABLE  R60 R60 K77  ; R60 := R60["STACKING_MULTIPLY"]
 672 [-]: MOVE      R61 R20      ; R61 := R20
 673 [-]: CALL      R56 6 1      ; R56(R57,R58,R59,R60,R61)
-674 [-]: GETGLOBAL R56 K79      ; R56 := table
-675 [-]: GETTABLE  R56 R56 K80  ; R56 := R56["0xE6450C9D"]
+674 [-]: GETGLOBAL R56 K80      ; R56 := table
+675 [-]: GETTABLE  R56 R56 K81  ; R56 := R56["0xE6450C9D"]
 676 [-]: MOVE      R57 R49      ; R57 := R49
 677 [-]: MOVE      R58 R54      ; R58 := R54
 678 [-]: CALL      R56 3 1      ; R56(R57,R58)
@@ -1658,9 +1658,9 @@ code size: 29
 681 [-]: LEN       R56 R49      ; R56 := # R49
 682 [-]: LT        0 K9 R56     ; if 0 >= R56 then PC := 691
 683 [-]: JMP       691          ; PC := 691
-684 [-]: SETTABLE  R6 K82 R49   ; R6["affected"] := R49
-685 [-]: GETTABLE  R56 R49 K100 ; R56 := R49[1]
-686 [-]: SELF      R56 R56 K85  ; R57 := R56; R56 := R56["0x584F13D6"]
+684 [-]: SETTABLE  R6 K83 R49   ; R6["affected"] := R49
+685 [-]: GETTABLE  R56 R49 K101 ; R56 := R49[1]
+686 [-]: SELF      R56 R56 K86  ; R57 := R56; R56 := R56["0x584F13D6"]
 687 [-]: MOVE      R58 R6       ; R58 := R6
 688 [-]: MOVE      R59 R0       ; R59 := R0
 689 [-]: MOVE      R60 R1       ; R60 := R1
@@ -1681,7 +1681,7 @@ code size: 29
 704 [-]: GETGLOBAL R56 K18      ; R56 := _T
 705 [-]: GETTABLE  R56 R56 K19  ; R56 := R56["bardAmplify"]
 706 [-]: SETTABLE  R56 R7 K51   ; R56[R7] := nil
-707 [-]: GETGLOBAL R56 K101     ; R56 := 0xAA09E79D
+707 [-]: GETGLOBAL R56 K102     ; R56 := 0xAA09E79D
 708 [-]: GETGLOBAL R57 K18      ; R57 := _T
 709 [-]: GETTABLE  R57 R57 K19  ; R57 := R57["bardAmplify"]
 710 [-]: CALL      R56 2 2      ; R56 := R56(R57)
@@ -1694,9 +1694,9 @@ code size: 29
 717 [-]: CALL      R56 2 2      ; R56 := R56(R57)
 718 [-]: TEST      R56 1        ; if R56 then PC := 722
 719 [-]: JMP       722          ; PC := 722
-720 [-]: SELF      R56 R22 K102 ; R57 := R22; R56 := R22["0xD4C2743F"]
+720 [-]: SELF      R56 R22 K103 ; R57 := R22; R56 := R22["0xD4C2743F"]
 721 [-]: CALL      R56 2 1      ; R56(R57)
-722 [-]: SELF      R56 R0 K102  ; R57 := R0; R56 := R0["0xD4C2743F"]
+722 [-]: SELF      R56 R0 K103  ; R57 := R0; R56 := R0["0xD4C2743F"]
 723 [-]: CALL      R56 2 1      ; R56(R57)
 724 [-]: RETURN    R0 1         ; return 
 

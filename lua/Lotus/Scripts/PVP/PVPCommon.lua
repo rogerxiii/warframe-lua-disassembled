@@ -235,12 +235,12 @@ code size: 1
 141 [-]: CALL      R26 2 2      ; R26 := R26(R27)
 142 [-]: GETGLOBAL R27 K58      ; R27 := Game
 143 [-]: GETTABLE  R27 R27 K59  ; R27 := R27["WEAPON_FIRE_RATE"]
-144 [-]: GETGLOBAL R28 K58      ; R28 := Game
-145 [-]: GETTABLE  R28 R28 K60  ; R28 := R28["STACKING_MULTIPLY"]
-146 [-]: LOADK     R29 K61      ; R29 := 0.25
+144 [-]: GETGLOBAL R28 K60      ; R28 := Engine
+145 [-]: GETTABLE  R28 R28 K61  ; R28 := R28["STACKING_MULTIPLY"]
+146 [-]: LOADK     R29 K62      ; R29 := 0.25
 147 [-]: LOADK     R30 K20      ; R30 := 0
 148 [-]: GETGLOBAL R31 K31      ; R31 := 0x7C282057
-149 [-]: LOADK     R32 K62      ; R32 := "/Lotus/Fx/Weather/SnowAttachNoRaycasting"
+149 [-]: LOADK     R32 K63      ; R32 := "/Lotus/Fx/Weather/SnowAttachNoRaycasting"
 150 [-]: CALL      R31 2 2      ; R31 := R31(R32)
 151 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 152 [-]: CLOSURE   R33 0        ; R33 := closure(Function #1)
@@ -251,29 +251,29 @@ code size: 1
 157 [-]: MOVE      R0 R22       ; R0 := R22
 158 [-]: MOVE      R0 R21       ; R0 := R21
 159 [-]: MOVE      R0 R4        ; R0 := R4
-160 [-]: SETTABLE  R32 K63 R33  ; R32["0x23E50EC8"] := R33
+160 [-]: SETTABLE  R32 K64 R33  ; R32["0x23E50EC8"] := R33
 161 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 162 [-]: CLOSURE   R33 1        ; R33 := closure(Function #2)
-163 [-]: SETTABLE  R32 K64 R33  ; R32["0x73EEE8FA"] := R33
+163 [-]: SETTABLE  R32 K65 R33  ; R32["0x73EEE8FA"] := R33
 164 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 165 [-]: CLOSURE   R33 2        ; R33 := closure(Function #3)
-166 [-]: SETTABLE  R32 K65 R33  ; R32["0xDBF9F9EC"] := R33
+166 [-]: SETTABLE  R32 K66 R33  ; R32["0xDBF9F9EC"] := R33
 167 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 168 [-]: CLOSURE   R33 3        ; R33 := closure(Function #4)
-169 [-]: SETTABLE  R32 K66 R33  ; R32["0x81DF07C8"] := R33
+169 [-]: SETTABLE  R32 K67 R33  ; R32["0x81DF07C8"] := R33
 170 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 171 [-]: CLOSURE   R33 4        ; R33 := closure(Function #5)
-172 [-]: SETTABLE  R32 K67 R33  ; R32["0xCB6E4886"] := R33
+172 [-]: SETTABLE  R32 K68 R33  ; R32["0xCB6E4886"] := R33
 173 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 174 [-]: CLOSURE   R33 5        ; R33 := closure(Function #6)
-175 [-]: SETTABLE  R32 K68 R33  ; R32["0x3DD20E4F"] := R33
+175 [-]: SETTABLE  R32 K69 R33  ; R32["0x3DD20E4F"] := R33
 176 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 177 [-]: CLOSURE   R33 6        ; R33 := closure(Function #7)
 178 [-]: MOVE      R0 R30       ; R0 := R30
 179 [-]: MOVE      R0 R27       ; R0 := R27
 180 [-]: MOVE      R0 R28       ; R0 := R28
 181 [-]: MOVE      R0 R29       ; R0 := R29
-182 [-]: SETTABLE  R32 K69 R33  ; R32["0xF836B4C"] := R33
+182 [-]: SETTABLE  R32 K70 R33  ; R32["0xF836B4C"] := R33
 183 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 184 [-]: CLOSURE   R33 7        ; R33 := closure(Function #8)
 185 [-]: MOVE      R0 R15       ; R0 := R15
@@ -281,100 +281,100 @@ code size: 1
 187 [-]: MOVE      R0 R10       ; R0 := R10
 188 [-]: MOVE      R0 R2        ; R0 := R2
 189 [-]: MOVE      R0 R0        ; R0 := R0
-190 [-]: SETTABLE  R32 K70 R33  ; R32["0xD61EE318"] := R33
+190 [-]: SETTABLE  R32 K71 R33  ; R32["0xD61EE318"] := R33
 191 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 192 [-]: CLOSURE   R33 8        ; R33 := closure(Function #9)
 193 [-]: MOVE      R0 R0        ; R0 := R0
-194 [-]: SETTABLE  R32 K71 R33  ; R32["0x492DD9DF"] := R33
+194 [-]: SETTABLE  R32 K72 R33  ; R32["0x492DD9DF"] := R33
 195 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 196 [-]: CLOSURE   R33 9        ; R33 := closure(Function #10)
 197 [-]: MOVE      R0 R17       ; R0 := R17
-198 [-]: SETTABLE  R32 K72 R33  ; R32["0x149E8E2E"] := R33
+198 [-]: SETTABLE  R32 K73 R33  ; R32["0x149E8E2E"] := R33
 199 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 200 [-]: CLOSURE   R33 10       ; R33 := closure(Function #11)
-201 [-]: SETTABLE  R32 K73 R33  ; R32["0x5EF0016"] := R33
+201 [-]: SETTABLE  R32 K74 R33  ; R32["0x5EF0016"] := R33
 202 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 203 [-]: CLOSURE   R33 11       ; R33 := closure(Function #12)
-204 [-]: SETTABLE  R32 K74 R33  ; R32["0x449D27BE"] := R33
+204 [-]: SETTABLE  R32 K75 R33  ; R32["0x449D27BE"] := R33
 205 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 206 [-]: CLOSURE   R33 12       ; R33 := closure(Function #13)
 207 [-]: MOVE      R0 R1        ; R0 := R1
-208 [-]: SETTABLE  R32 K75 R33  ; R32["0x7CD0185F"] := R33
+208 [-]: SETTABLE  R32 K76 R33  ; R32["0x7CD0185F"] := R33
 209 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 210 [-]: CLOSURE   R33 13       ; R33 := closure(Function #14)
 211 [-]: MOVE      R0 R30       ; R0 := R30
-212 [-]: SETTABLE  R32 K76 R33  ; R32["0x2607E42E"] := R33
+212 [-]: SETTABLE  R32 K77 R33  ; R32["0x2607E42E"] := R33
 213 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 214 [-]: CLOSURE   R33 14       ; R33 := closure(Function #15)
-215 [-]: SETTABLE  R32 K77 R33  ; R32["0x4D1AA807"] := R33
+215 [-]: SETTABLE  R32 K78 R33  ; R32["0x4D1AA807"] := R33
 216 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 217 [-]: CLOSURE   R33 15       ; R33 := closure(Function #16)
-218 [-]: SETTABLE  R32 K78 R33  ; R32["0xC1E240D5"] := R33
+218 [-]: SETTABLE  R32 K79 R33  ; R32["0xC1E240D5"] := R33
 219 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 220 [-]: CLOSURE   R33 16       ; R33 := closure(Function #17)
-221 [-]: SETTABLE  R32 K79 R33  ; R32["0x24C2B34A"] := R33
+221 [-]: SETTABLE  R32 K80 R33  ; R32["0x24C2B34A"] := R33
 222 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 223 [-]: CLOSURE   R33 17       ; R33 := closure(Function #18)
-224 [-]: SETTABLE  R32 K80 R33  ; R32["0x3B2B03A7"] := R33
+224 [-]: SETTABLE  R32 K81 R33  ; R32["0x3B2B03A7"] := R33
 225 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 226 [-]: CLOSURE   R33 18       ; R33 := closure(Function #19)
-227 [-]: SETTABLE  R32 K81 R33  ; R32["0xE49A1B17"] := R33
+227 [-]: SETTABLE  R32 K82 R33  ; R32["0xE49A1B17"] := R33
 228 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 229 [-]: CLOSURE   R33 19       ; R33 := closure(Function #20)
-230 [-]: SETTABLE  R32 K82 R33  ; R32["0x8D4439CD"] := R33
+230 [-]: SETTABLE  R32 K83 R33  ; R32["0x8D4439CD"] := R33
 231 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 232 [-]: CLOSURE   R33 20       ; R33 := closure(Function #21)
 233 [-]: MOVE      R0 R14       ; R0 := R14
 234 [-]: MOVE      R0 R5        ; R0 := R5
 235 [-]: MOVE      R0 R23       ; R0 := R23
 236 [-]: MOVE      R0 R24       ; R0 := R24
-237 [-]: SETTABLE  R32 K83 R33  ; R32["0x875A25AE"] := R33
+237 [-]: SETTABLE  R32 K84 R33  ; R32["0x875A25AE"] := R33
 238 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 239 [-]: CLOSURE   R33 21       ; R33 := closure(Function #22)
-240 [-]: SETTABLE  R32 K84 R33  ; R32["0x6A9D4596"] := R33
+240 [-]: SETTABLE  R32 K85 R33  ; R32["0x6A9D4596"] := R33
 241 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 242 [-]: CLOSURE   R33 22       ; R33 := closure(Function #23)
 243 [-]: MOVE      R0 R30       ; R0 := R30
 244 [-]: MOVE      R0 R27       ; R0 := R27
 245 [-]: MOVE      R0 R28       ; R0 := R28
 246 [-]: MOVE      R0 R29       ; R0 := R29
-247 [-]: SETTABLE  R32 K85 R33  ; R32["0x837B930D"] := R33
+247 [-]: SETTABLE  R32 K86 R33  ; R32["0x837B930D"] := R33
 248 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 249 [-]: CLOSURE   R33 23       ; R33 := closure(Function #24)
-250 [-]: SETTABLE  R32 K86 R33  ; R32["0xCB73AF7"] := R33
+250 [-]: SETTABLE  R32 K87 R33  ; R32["0xCB73AF7"] := R33
 251 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 252 [-]: CLOSURE   R33 24       ; R33 := closure(Function #25)
-253 [-]: SETTABLE  R32 K87 R33  ; R32["0x3F84F6CE"] := R33
+253 [-]: SETTABLE  R32 K88 R33  ; R32["0x3F84F6CE"] := R33
 254 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 255 [-]: CLOSURE   R33 25       ; R33 := closure(Function #26)
-256 [-]: SETTABLE  R32 K88 R33  ; R32["0xCD0500BA"] := R33
+256 [-]: SETTABLE  R32 K89 R33  ; R32["0xCD0500BA"] := R33
 257 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 258 [-]: CLOSURE   R33 26       ; R33 := closure(Function #27)
-259 [-]: SETTABLE  R32 K89 R33  ; R32["0x85B38F88"] := R33
+259 [-]: SETTABLE  R32 K90 R33  ; R32["0x85B38F88"] := R33
 260 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 261 [-]: CLOSURE   R33 27       ; R33 := closure(Function #28)
-262 [-]: SETTABLE  R32 K90 R33  ; R32["0xCAA0623A"] := R33
+262 [-]: SETTABLE  R32 K91 R33  ; R32["0xCAA0623A"] := R33
 263 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 264 [-]: CLOSURE   R33 28       ; R33 := closure(Function #29)
-265 [-]: SETTABLE  R32 K91 R33  ; R32["0x2679315F"] := R33
+265 [-]: SETTABLE  R32 K92 R33  ; R32["0x2679315F"] := R33
 266 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 267 [-]: CLOSURE   R33 29       ; R33 := closure(Function #30)
-268 [-]: SETTABLE  R32 K92 R33  ; R32["0x3BBF15D8"] := R33
+268 [-]: SETTABLE  R32 K93 R33  ; R32["0x3BBF15D8"] := R33
 269 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 270 [-]: CLOSURE   R33 30       ; R33 := closure(Function #31)
-271 [-]: SETTABLE  R32 K93 R33  ; R32["0xFFFDE759"] := R33
+271 [-]: SETTABLE  R32 K94 R33  ; R32["0xFFFDE759"] := R33
 272 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 273 [-]: CLOSURE   R33 31       ; R33 := closure(Function #32)
-274 [-]: SETTABLE  R32 K94 R33  ; R32["0x4D63243C"] := R33
+274 [-]: SETTABLE  R32 K95 R33  ; R32["0x4D63243C"] := R33
 275 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 276 [-]: CLOSURE   R33 32       ; R33 := closure(Function #33)
-277 [-]: SETTABLE  R32 K95 R33  ; R32["0x52C8BEBF"] := R33
+277 [-]: SETTABLE  R32 K96 R33  ; R32["0x52C8BEBF"] := R33
 278 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 279 [-]: CLOSURE   R33 33       ; R33 := closure(Function #34)
-280 [-]: SETTABLE  R32 K96 R33  ; R32["0xA803D583"] := R33
+280 [-]: SETTABLE  R32 K97 R33  ; R32["0xA803D583"] := R33
 281 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 282 [-]: CLOSURE   R33 34       ; R33 := closure(Function #35)
-283 [-]: SETTABLE  R32 K97 R33  ; R32["0x84C8A1CF"] := R33
+283 [-]: SETTABLE  R32 K98 R33  ; R32["0x84C8A1CF"] := R33
 284 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 285 [-]: CLOSURE   R33 35       ; R33 := closure(Function #36)
 286 [-]: MOVE      R0 R11       ; R0 := R11
@@ -389,154 +389,154 @@ code size: 1
 295 [-]: MOVE      R0 R9        ; R0 := R9
 296 [-]: MOVE      R0 R25       ; R0 := R25
 297 [-]: MOVE      R0 R3        ; R0 := R3
-298 [-]: SETTABLE  R32 K98 R33  ; R32["0xC51A1FCE"] := R33
+298 [-]: SETTABLE  R32 K99 R33  ; R32["0xC51A1FCE"] := R33
 299 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 300 [-]: CLOSURE   R33 36       ; R33 := closure(Function #37)
 301 [-]: MOVE      R0 R11       ; R0 := R11
 302 [-]: MOVE      R0 R12       ; R0 := R12
 303 [-]: MOVE      R0 R3        ; R0 := R3
 304 [-]: MOVE      R0 R5        ; R0 := R5
-305 [-]: SETTABLE  R32 K99 R33  ; R32["0x90328026"] := R33
+305 [-]: SETTABLE  R32 K100 R33 ; R32["0x90328026"] := R33
 306 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 307 [-]: CLOSURE   R33 37       ; R33 := closure(Function #38)
-308 [-]: SETTABLE  R32 K100 R33 ; R32["0xCB3F44D4"] := R33
+308 [-]: SETTABLE  R32 K101 R33 ; R32["0xCB3F44D4"] := R33
 309 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 310 [-]: CLOSURE   R33 38       ; R33 := closure(Function #39)
-311 [-]: SETTABLE  R32 K101 R33 ; R32["0xEFDC9F31"] := R33
+311 [-]: SETTABLE  R32 K102 R33 ; R32["0xEFDC9F31"] := R33
 312 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 313 [-]: CLOSURE   R33 39       ; R33 := closure(Function #40)
 314 [-]: MOVE      R0 R31       ; R0 := R31
-315 [-]: SETTABLE  R32 K102 R33 ; R32["0xC88E9F32"] := R33
+315 [-]: SETTABLE  R32 K103 R33 ; R32["0xC88E9F32"] := R33
 316 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 317 [-]: CLOSURE   R33 40       ; R33 := closure(Function #41)
-318 [-]: SETTABLE  R32 K103 R33 ; R32["0xD6CCEE85"] := R33
+318 [-]: SETTABLE  R32 K104 R33 ; R32["0xD6CCEE85"] := R33
 319 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 320 [-]: CLOSURE   R33 41       ; R33 := closure(Function #42)
-321 [-]: SETTABLE  R32 K104 R33 ; R32["0x25257046"] := R33
+321 [-]: SETTABLE  R32 K105 R33 ; R32["0x25257046"] := R33
 322 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 323 [-]: CLOSURE   R33 42       ; R33 := closure(Function #43)
-324 [-]: SETTABLE  R32 K105 R33 ; R32["0x2E82E829"] := R33
+324 [-]: SETTABLE  R32 K106 R33 ; R32["0x2E82E829"] := R33
 325 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 326 [-]: CLOSURE   R33 43       ; R33 := closure(Function #44)
-327 [-]: SETTABLE  R32 K106 R33 ; R32["0x90517478"] := R33
+327 [-]: SETTABLE  R32 K107 R33 ; R32["0x90517478"] := R33
 328 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 329 [-]: CLOSURE   R33 44       ; R33 := closure(Function #45)
 330 [-]: MOVE      R0 R30       ; R0 := R30
-331 [-]: SETTABLE  R32 K107 R33 ; R32["0x14E3A4F8"] := R33
+331 [-]: SETTABLE  R32 K108 R33 ; R32["0x14E3A4F8"] := R33
 332 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 333 [-]: CLOSURE   R33 45       ; R33 := closure(Function #46)
 334 [-]: MOVE      R0 R30       ; R0 := R30
 335 [-]: MOVE      R0 R27       ; R0 := R27
 336 [-]: MOVE      R0 R28       ; R0 := R28
 337 [-]: MOVE      R0 R29       ; R0 := R29
-338 [-]: SETTABLE  R32 K108 R33 ; R32["0x4932330C"] := R33
+338 [-]: SETTABLE  R32 K109 R33 ; R32["0x4932330C"] := R33
 339 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 340 [-]: CLOSURE   R33 46       ; R33 := closure(Function #47)
-341 [-]: SETTABLE  R32 K109 R33 ; R32["0x81331586"] := R33
+341 [-]: SETTABLE  R32 K110 R33 ; R32["0x81331586"] := R33
 342 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 343 [-]: CLOSURE   R33 47       ; R33 := closure(Function #48)
-344 [-]: SETTABLE  R32 K110 R33 ; R32["0x131DE07"] := R33
+344 [-]: SETTABLE  R32 K111 R33 ; R32["0x131DE07"] := R33
 345 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 346 [-]: CLOSURE   R33 48       ; R33 := closure(Function #49)
 347 [-]: MOVE      R0 R11       ; R0 := R11
-348 [-]: SETTABLE  R32 K111 R33 ; R32["0xB7B34593"] := R33
+348 [-]: SETTABLE  R32 K112 R33 ; R32["0xB7B34593"] := R33
 349 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 350 [-]: CLOSURE   R33 49       ; R33 := closure(Function #50)
-351 [-]: SETTABLE  R32 K112 R33 ; R32["0xCA7EBFAC"] := R33
+351 [-]: SETTABLE  R32 K113 R33 ; R32["0xCA7EBFAC"] := R33
 352 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 353 [-]: CLOSURE   R33 50       ; R33 := closure(Function #51)
 354 [-]: MOVE      R0 R3        ; R0 := R3
-355 [-]: SETTABLE  R32 K113 R33 ; R32["0x74B594A1"] := R33
+355 [-]: SETTABLE  R32 K114 R33 ; R32["0x74B594A1"] := R33
 356 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 357 [-]: CLOSURE   R33 51       ; R33 := closure(Function #52)
-358 [-]: SETTABLE  R32 K114 R33 ; R32["0xC9DDD994"] := R33
+358 [-]: SETTABLE  R32 K115 R33 ; R32["0xC9DDD994"] := R33
 359 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 360 [-]: CLOSURE   R33 52       ; R33 := closure(Function #53)
-361 [-]: SETTABLE  R32 K115 R33 ; R32["0xDC194E1E"] := R33
+361 [-]: SETTABLE  R32 K116 R33 ; R32["0xDC194E1E"] := R33
 362 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 363 [-]: CLOSURE   R33 53       ; R33 := closure(Function #54)
-364 [-]: SETTABLE  R32 K116 R33 ; R32["0x1E85AA8D"] := R33
+364 [-]: SETTABLE  R32 K117 R33 ; R32["0x1E85AA8D"] := R33
 365 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 366 [-]: CLOSURE   R33 54       ; R33 := closure(Function #55)
-367 [-]: SETTABLE  R32 K117 R33 ; R32["0xB66E846E"] := R33
+367 [-]: SETTABLE  R32 K118 R33 ; R32["0xB66E846E"] := R33
 368 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 369 [-]: CLOSURE   R33 55       ; R33 := closure(Function #56)
-370 [-]: SETTABLE  R32 K118 R33 ; R32["0x9E3B011D"] := R33
+370 [-]: SETTABLE  R32 K119 R33 ; R32["0x9E3B011D"] := R33
 371 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 372 [-]: CLOSURE   R33 56       ; R33 := closure(Function #57)
-373 [-]: SETTABLE  R32 K119 R33 ; R32["0x1D20130B"] := R33
+373 [-]: SETTABLE  R32 K120 R33 ; R32["0x1D20130B"] := R33
 374 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 375 [-]: CLOSURE   R33 57       ; R33 := closure(Function #58)
-376 [-]: SETTABLE  R32 K120 R33 ; R32["0xC6700B6F"] := R33
+376 [-]: SETTABLE  R32 K121 R33 ; R32["0xC6700B6F"] := R33
 377 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 378 [-]: CLOSURE   R33 58       ; R33 := closure(Function #59)
-379 [-]: SETTABLE  R32 K121 R33 ; R32["0x62648036"] := R33
+379 [-]: SETTABLE  R32 K122 R33 ; R32["0x62648036"] := R33
 380 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 381 [-]: CLOSURE   R33 59       ; R33 := closure(Function #60)
-382 [-]: SETTABLE  R32 K122 R33 ; R32["0x4503D699"] := R33
+382 [-]: SETTABLE  R32 K123 R33 ; R32["0x4503D699"] := R33
 383 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 384 [-]: CLOSURE   R33 60       ; R33 := closure(Function #61)
-385 [-]: SETTABLE  R32 K123 R33 ; R32["0xF7602FC6"] := R33
+385 [-]: SETTABLE  R32 K124 R33 ; R32["0xF7602FC6"] := R33
 386 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 387 [-]: CLOSURE   R33 61       ; R33 := closure(Function #62)
-388 [-]: SETTABLE  R32 K124 R33 ; R32["0xE1B4A285"] := R33
+388 [-]: SETTABLE  R32 K125 R33 ; R32["0xE1B4A285"] := R33
 389 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 390 [-]: CLOSURE   R33 62       ; R33 := closure(Function #63)
-391 [-]: SETTABLE  R32 K125 R33 ; R32["0x31140938"] := R33
+391 [-]: SETTABLE  R32 K126 R33 ; R32["0x31140938"] := R33
 392 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 393 [-]: CLOSURE   R33 63       ; R33 := closure(Function #64)
-394 [-]: SETTABLE  R32 K126 R33 ; R32["0x6E420607"] := R33
+394 [-]: SETTABLE  R32 K127 R33 ; R32["0x6E420607"] := R33
 395 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 396 [-]: CLOSURE   R33 64       ; R33 := closure(Function #65)
-397 [-]: SETTABLE  R32 K127 R33 ; R32["0x75D2F255"] := R33
+397 [-]: SETTABLE  R32 K128 R33 ; R32["0x75D2F255"] := R33
 398 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 399 [-]: CLOSURE   R33 65       ; R33 := closure(Function #66)
-400 [-]: SETTABLE  R32 K128 R33 ; R32["0xDD536265"] := R33
+400 [-]: SETTABLE  R32 K129 R33 ; R32["0xDD536265"] := R33
 401 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 402 [-]: CLOSURE   R33 66       ; R33 := closure(Function #67)
-403 [-]: SETTABLE  R32 K129 R33 ; R32["0x3159F1A5"] := R33
+403 [-]: SETTABLE  R32 K130 R33 ; R32["0x3159F1A5"] := R33
 404 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 405 [-]: CLOSURE   R33 67       ; R33 := closure(Function #68)
-406 [-]: SETTABLE  R32 K130 R33 ; R32["0x81D85A4F"] := R33
+406 [-]: SETTABLE  R32 K131 R33 ; R32["0x81D85A4F"] := R33
 407 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 408 [-]: CLOSURE   R33 68       ; R33 := closure(Function #69)
-409 [-]: SETTABLE  R32 K131 R33 ; R32["0x35601ECD"] := R33
+409 [-]: SETTABLE  R32 K132 R33 ; R32["0x35601ECD"] := R33
 410 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 411 [-]: CLOSURE   R33 69       ; R33 := closure(Function #70)
 412 [-]: MOVE      R0 R2        ; R0 := R2
-413 [-]: SETTABLE  R32 K132 R33 ; R32["0x831A1FF9"] := R33
+413 [-]: SETTABLE  R32 K133 R33 ; R32["0x831A1FF9"] := R33
 414 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 415 [-]: CLOSURE   R33 70       ; R33 := closure(Function #71)
-416 [-]: SETTABLE  R32 K133 R33 ; R32["0xF79A2DF9"] := R33
+416 [-]: SETTABLE  R32 K134 R33 ; R32["0xF79A2DF9"] := R33
 417 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 418 [-]: CLOSURE   R33 71       ; R33 := closure(Function #72)
 419 [-]: MOVE      R0 R16       ; R0 := R16
-420 [-]: SETTABLE  R32 K134 R33 ; R32["0xE0A058E3"] := R33
+420 [-]: SETTABLE  R32 K135 R33 ; R32["0xE0A058E3"] := R33
 421 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 422 [-]: CLOSURE   R33 72       ; R33 := closure(Function #73)
-423 [-]: SETTABLE  R32 K135 R33 ; R32["0xA9B500D4"] := R33
+423 [-]: SETTABLE  R32 K136 R33 ; R32["0xA9B500D4"] := R33
 424 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 425 [-]: CLOSURE   R33 73       ; R33 := closure(Function #74)
-426 [-]: SETTABLE  R32 K136 R33 ; R32["0x916D84BE"] := R33
+426 [-]: SETTABLE  R32 K137 R33 ; R32["0x916D84BE"] := R33
 427 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 428 [-]: CLOSURE   R33 74       ; R33 := closure(Function #75)
-429 [-]: SETTABLE  R32 K137 R33 ; R32["0xA04BD54E"] := R33
+429 [-]: SETTABLE  R32 K138 R33 ; R32["0xA04BD54E"] := R33
 430 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 431 [-]: CLOSURE   R33 75       ; R33 := closure(Function #76)
-432 [-]: SETTABLE  R32 K138 R33 ; R32["0xC4C5731C"] := R33
+432 [-]: SETTABLE  R32 K139 R33 ; R32["0xC4C5731C"] := R33
 433 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 434 [-]: CLOSURE   R33 76       ; R33 := closure(Function #77)
 435 [-]: MOVE      R0 R13       ; R0 := R13
 436 [-]: MOVE      R0 R7        ; R0 := R7
 437 [-]: MOVE      R0 R8        ; R0 := R8
 438 [-]: MOVE      R0 R9        ; R0 := R9
-439 [-]: SETTABLE  R32 K139 R33 ; R32["0xB24DD13C"] := R33
+439 [-]: SETTABLE  R32 K140 R33 ; R32["0xB24DD13C"] := R33
 440 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 441 [-]: CLOSURE   R33 77       ; R33 := closure(Function #78)
-442 [-]: SETTABLE  R32 K140 R33 ; R32["0x7AFA43E2"] := R33
+442 [-]: SETTABLE  R32 K141 R33 ; R32["0x7AFA43E2"] := R33
 443 [-]: GETGLOBAL R32 K41      ; R32 := PVPCommonClass
 444 [-]: CLOSURE   R33 78       ; R33 := closure(Function #79)
-445 [-]: SETTABLE  R32 K141 R33 ; R32["0x235C92D3"] := R33
+445 [-]: SETTABLE  R32 K142 R33 ; R32["0x235C92D3"] := R33
 446 [-]: RETURN    R0 1         ; return 
 
 
@@ -1103,67 +1103,67 @@ code size: 1
  69 [-]: SELF      R13 R9 K17   ; R14 := R9; R13 := R9["0xF21555A7"]
  70 [-]: GETGLOBAL R15 K18      ; R15 := Game
  71 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["AVATAR_POWER_RATE"]
- 72 [-]: GETGLOBAL R16 K18      ; R16 := Game
- 73 [-]: GETTABLE  R16 R16 K20  ; R16 := R16["ADD"]
+ 72 [-]: GETGLOBAL R16 K20      ; R16 := Engine
+ 73 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["ADD"]
  74 [-]: GETTABLE  R17 R7 K16   ; R17 := R7["lastEnergyUpgrade"]
  75 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
- 76 [-]: SELF      R13 R9 K21   ; R14 := R9; R13 := R9["0x3B1B11B9"]
+ 76 [-]: SELF      R13 R9 K22   ; R14 := R9; R13 := R9["0x3B1B11B9"]
  77 [-]: GETGLOBAL R15 K18      ; R15 := Game
  78 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["AVATAR_POWER_RATE"]
- 79 [-]: GETGLOBAL R16 K18      ; R16 := Game
- 80 [-]: GETTABLE  R16 R16 K20  ; R16 := R16["ADD"]
+ 79 [-]: GETGLOBAL R16 K20      ; R16 := Engine
+ 80 [-]: GETTABLE  R16 R16 K21  ; R16 := R16["ADD"]
  81 [-]: MOVE      R17 R12      ; R17 := R12
  82 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
  83 [-]: SETTABLE  R7 K16 R12   ; R7["lastEnergyUpgrade"] := R12
- 84 [-]: SELF      R13 R0 K22   ; R14 := R0; R13 := R0["0x6A9D4596"]
+ 84 [-]: SELF      R13 R0 K23   ; R14 := R0; R13 := R0["0x6A9D4596"]
  85 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  86 [-]: TEST      R13 0        ; if not R13 then PC := 133
  87 [-]: JMP       133          ; PC := 133
- 88 [-]: GETGLOBAL R13 K23      ; R13 := gGameRules
- 89 [-]: SELF      R13 R13 K24  ; R14 := R13; R13 := R13["0x3740FA61"]
+ 88 [-]: GETGLOBAL R13 K24      ; R13 := gGameRules
+ 89 [-]: SELF      R13 R13 K25  ; R14 := R13; R13 := R13["0x3740FA61"]
  90 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  91 [-]: TEST      R13 0        ; if not R13 then PC := 106
  92 [-]: JMP       106          ; PC := 106
  93 [-]: GETUPVAL  R13 U0       ; R13 := U0
- 94 [-]: LT        0 K25 R13    ; if 0 >= R13 then PC := 106
+ 94 [-]: LT        0 K26 R13    ; if 0 >= R13 then PC := 106
  95 [-]: JMP       106          ; PC := 106
- 96 [-]: GETTABLE  R13 R7 K26   ; R13 := R7["addedVariantSurgeUpgrade"]
+ 96 [-]: GETTABLE  R13 R7 K27   ; R13 := R7["addedVariantSurgeUpgrade"]
  97 [-]: TEST      R13 1        ; if R13 then PC := 133
  98 [-]: JMP       133          ; PC := 133
- 99 [-]: SELF      R13 R9 K21   ; R14 := R9; R13 := R9["0x3B1B11B9"]
+ 99 [-]: SELF      R13 R9 K22   ; R14 := R9; R13 := R9["0x3B1B11B9"]
 100 [-]: GETUPVAL  R15 U1       ; R15 := U1
 101 [-]: GETUPVAL  R16 U2       ; R16 := U2
 102 [-]: GETUPVAL  R17 U3       ; R17 := U3
 103 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-104 [-]: SETTABLE  R7 K26 K27   ; R7["addedVariantSurgeUpgrade"] := "0x1"
+104 [-]: SETTABLE  R7 K27 K28   ; R7["addedVariantSurgeUpgrade"] := "0x1"
 105 [-]: JMP       133          ; PC := 133
 106 [-]: SELF      R13 R0 K15   ; R14 := R0; R13 := R0["0x831A1FF9"]
 107 [-]: MOVE      R15 R11      ; R15 := R11
 108 [-]: MOVE      R16 R1       ; R16 := R1
 109 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-110 [-]: GETTABLE  R14 R7 K28   ; R14 := R7["lastEnergyEscalationUpgrade"]
+110 [-]: GETTABLE  R14 R7 K29   ; R14 := R7["lastEnergyEscalationUpgrade"]
 111 [-]: EQ        1 R14 R13    ; if R14 == R13 then PC := 133
 112 [-]: JMP       133          ; PC := 133
 113 [-]: GETGLOBAL R14 K6       ; R14 := 0x400E7765
-114 [-]: GETTABLE  R15 R7 K28   ; R15 := R7["lastEnergyEscalationUpgrade"]
+114 [-]: GETTABLE  R15 R7 K29   ; R15 := R7["lastEnergyEscalationUpgrade"]
 115 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 116 [-]: TEST      R14 1        ; if R14 then PC := 125
 117 [-]: JMP       125          ; PC := 125
 118 [-]: SELF      R14 R9 K17   ; R15 := R9; R14 := R9["0xF21555A7"]
 119 [-]: GETGLOBAL R16 K18      ; R16 := Game
 120 [-]: GETTABLE  R16 R16 K19  ; R16 := R16["AVATAR_POWER_RATE"]
-121 [-]: GETGLOBAL R17 K18      ; R17 := Game
-122 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["ADD"]
-123 [-]: GETTABLE  R18 R7 K28   ; R18 := R7["lastEnergyEscalationUpgrade"]
+121 [-]: GETGLOBAL R17 K20      ; R17 := Engine
+122 [-]: GETTABLE  R17 R17 K21  ; R17 := R17["ADD"]
+123 [-]: GETTABLE  R18 R7 K29   ; R18 := R7["lastEnergyEscalationUpgrade"]
 124 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-125 [-]: SELF      R14 R9 K21   ; R15 := R9; R14 := R9["0x3B1B11B9"]
+125 [-]: SELF      R14 R9 K22   ; R15 := R9; R14 := R9["0x3B1B11B9"]
 126 [-]: GETGLOBAL R16 K18      ; R16 := Game
 127 [-]: GETTABLE  R16 R16 K19  ; R16 := R16["AVATAR_POWER_RATE"]
-128 [-]: GETGLOBAL R17 K18      ; R17 := Game
-129 [-]: GETTABLE  R17 R17 K20  ; R17 := R17["ADD"]
+128 [-]: GETGLOBAL R17 K20      ; R17 := Engine
+129 [-]: GETTABLE  R17 R17 K21  ; R17 := R17["ADD"]
 130 [-]: MOVE      R18 R13      ; R18 := R13
 131 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
-132 [-]: SETTABLE  R7 K28 R13   ; R7["lastEnergyEscalationUpgrade"] := R13
+132 [-]: SETTABLE  R7 K29 R13   ; R7["lastEnergyEscalationUpgrade"] := R13
 133 [-]: SETTABLE  R7 K14 R11   ; R7["lastKnownEnergy"] := R11
 134 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 15; R4 := R5 end
 135 [-]: JMP       15           ; PC := 15
@@ -2405,20 +2405,20 @@ code size: 1
  79 [-]: SELF      R13 R9 K20   ; R14 := R9; R13 := R9["0x3B1B11B9"]
  80 [-]: GETGLOBAL R15 K26      ; R15 := Game
  81 [-]: GETTABLE  R15 R15 K27  ; R15 := R15["AVATAR_POWER_RATE"]
- 82 [-]: GETGLOBAL R16 K26      ; R16 := Game
- 83 [-]: GETTABLE  R16 R16 K28  ; R16 := R16["ADD"]
+ 82 [-]: GETGLOBAL R16 K28      ; R16 := Engine
+ 83 [-]: GETTABLE  R16 R16 K29  ; R16 := R16["ADD"]
  84 [-]: MOVE      R17 R12      ; R17 := R12
  85 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
- 86 [-]: SETTABLE  R10 K29 R12  ; R10["lastEnergyEscalationUpgrade"] := R12
+ 86 [-]: SETTABLE  R10 K30 R12  ; R10["lastEnergyEscalationUpgrade"] := R12
  87 [-]: TFORLOOP  R3 2         ; R6,R7 :=  R3(R4,R5); if R6 ~= nil then begin PC = 24; R5 := R6 end
  88 [-]: JMP       24           ; PC := 24
- 89 [-]: GETGLOBAL R13 K30      ; R13 := 0x93B1256B
- 90 [-]: LOADK     R14 K31      ; R14 := "Energy Escalated!"
+ 89 [-]: GETGLOBAL R13 K31      ; R13 := 0x93B1256B
+ 90 [-]: LOADK     R14 K32      ; R14 := "Energy Escalated!"
  91 [-]: CALL      R13 2 1      ; R13(R14)
  92 [-]: GETTABLE  R13 R0 K1    ; R13 := R0["gameRules"]
- 93 [-]: SELF      R13 R13 K32  ; R14 := R13; R13 := R13["0xD015CBDC"]
+ 93 [-]: SELF      R13 R13 K33  ; R14 := R13; R13 := R13["0xD015CBDC"]
  94 [-]: GETTABLE  R15 R0 K3    ; R15 := R0["NV_ESCALATION_STATE"]
- 95 [-]: LOADK     R16 K33      ; R16 := 1
+ 95 [-]: LOADK     R16 K34      ; R16 := 1
  96 [-]: CALL      R13 4 1      ; R13(R14,R15,R16)
  97 [-]: RETURN    R0 1         ; return 
 
@@ -3655,14 +3655,14 @@ code size: 1
  70 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
  71 [-]: GETGLOBAL R12 K24      ; R12 := Game
  72 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
- 73 [-]: GETGLOBAL R13 K24      ; R13 := Game
+ 73 [-]: GETGLOBAL R13 K2       ; R13 := Engine
  74 [-]: GETTABLE  R13 R13 K26  ; R13 := R13["STACKING_MULTIPLY"]
  75 [-]: LOADK     R14 K27      ; R14 := 0.89999997615814
  76 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  77 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
  78 [-]: GETGLOBAL R12 K24      ; R12 := Game
  79 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["AVATAR_INJURY_ANIM_RATE"]
- 80 [-]: GETGLOBAL R13 K24      ; R13 := Game
+ 80 [-]: GETGLOBAL R13 K2       ; R13 := Engine
  81 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["ADD"]
  82 [-]: LOADK     R14 K30      ; R14 := 5
  83 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -3675,7 +3675,7 @@ code size: 1
  90 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
  91 [-]: GETGLOBAL R12 K24      ; R12 := Game
  92 [-]: GETTABLE  R12 R12 K28  ; R12 := R12["AVATAR_INJURY_ANIM_RATE"]
- 93 [-]: GETGLOBAL R13 K24      ; R13 := Game
+ 93 [-]: GETGLOBAL R13 K2       ; R13 := Engine
  94 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["ADD"]
  95 [-]: LOADK     R14 K30      ; R14 := 5
  96 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -3688,7 +3688,7 @@ code size: 1
 103 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
 104 [-]: GETGLOBAL R12 K24      ; R12 := Game
 105 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["AVATAR_PROC_IMMUNITY_DURATION"]
-106 [-]: GETGLOBAL R13 K24      ; R13 := Game
+106 [-]: GETGLOBAL R13 K2       ; R13 := Engine
 107 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["ADD"]
 108 [-]: LOADK     R14 K35      ; R14 := 4
 109 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -3701,7 +3701,7 @@ code size: 1
 116 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
 117 [-]: GETGLOBAL R12 K24      ; R12 := Game
 118 [-]: GETTABLE  R12 R12 K34  ; R12 := R12["AVATAR_PROC_IMMUNITY_DURATION"]
-119 [-]: GETGLOBAL R13 K24      ; R13 := Game
+119 [-]: GETGLOBAL R13 K2       ; R13 := Engine
 120 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["ADD"]
 121 [-]: LOADK     R14 K35      ; R14 := 4
 122 [-]: LOADNIL   R15 R16      ; R15 := R16 := nil
@@ -3714,35 +3714,35 @@ code size: 1
 129 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
 130 [-]: GETGLOBAL R12 K24      ; R12 := Game
 131 [-]: GETTABLE  R12 R12 K37  ; R12 := R12["WEAPON_MELEE_AUTOTARGET_MAXIMUM_ANGLE"]
-132 [-]: GETGLOBAL R13 K24      ; R13 := Game
+132 [-]: GETGLOBAL R13 K2       ; R13 := Engine
 133 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["ADD"]
 134 [-]: LOADK     R14 K38      ; R14 := -90
 135 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 136 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
 137 [-]: GETGLOBAL R12 K24      ; R12 := Game
 138 [-]: GETTABLE  R12 R12 K39  ; R12 := R12["WEAPON_PARRY_ANGLE"]
-139 [-]: GETGLOBAL R13 K24      ; R13 := Game
+139 [-]: GETGLOBAL R13 K2       ; R13 := Engine
 140 [-]: GETTABLE  R13 R13 K40  ; R13 := R13["SET"]
 141 [-]: LOADK     R14 K41      ; R14 := 20
 142 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 143 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
 144 [-]: GETGLOBAL R12 K24      ; R12 := Game
 145 [-]: GETTABLE  R12 R12 K42  ; R12 := R12["WEAPON_PROC_CHANCE"]
-146 [-]: GETGLOBAL R13 K24      ; R13 := Game
+146 [-]: GETGLOBAL R13 K2       ; R13 := Engine
 147 [-]: GETTABLE  R13 R13 K29  ; R13 := R13["ADD"]
 148 [-]: LOADK     R14 K43      ; R14 := 1
 149 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 150 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
 151 [-]: GETGLOBAL R12 K24      ; R12 := Game
 152 [-]: GETTABLE  R12 R12 K44  ; R12 := R12["WEAPON_SNIPER_COMBO_DURATION_BONUS"]
-153 [-]: GETGLOBAL R13 K24      ; R13 := Game
+153 [-]: GETGLOBAL R13 K2       ; R13 := Engine
 154 [-]: GETTABLE  R13 R13 K40  ; R13 := R13["SET"]
 155 [-]: LOADK     R14 K45      ; R14 := 0
 156 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
 157 [-]: SELF      R10 R1 K23   ; R11 := R1; R10 := R1["0x3B1B11B9"]
 158 [-]: GETGLOBAL R12 K24      ; R12 := Game
 159 [-]: GETTABLE  R12 R12 K46  ; R12 := R12["WEAPON_MELEE_COMBO_DURATION_BONUS"]
-160 [-]: GETGLOBAL R13 K24      ; R13 := Game
+160 [-]: GETGLOBAL R13 K2       ; R13 := Engine
 161 [-]: GETTABLE  R13 R13 K40  ; R13 := R13["SET"]
 162 [-]: LOADK     R14 K45      ; R14 := 0
 163 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
@@ -3772,33 +3772,33 @@ code size: 1
  12 [-]: SELF      R5 R1 K4     ; R6 := R1; R5 := R1["0x3B1B11B9"]
  13 [-]: GETGLOBAL R7 K5        ; R7 := Game
  14 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["AVATAR_POWER_MAX"]
- 15 [-]: GETGLOBAL R8 K5        ; R8 := Game
- 16 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["SET"]
+ 15 [-]: GETGLOBAL R8 K7        ; R8 := Engine
+ 16 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["SET"]
  17 [-]: LOADK     R9 K1        ; R9 := 0
  18 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
- 19 [-]: SELF      R5 R1 K8     ; R6 := R1; R5 := R1["0x63D63C30"]
- 20 [-]: GETGLOBAL R7 K9        ; R7 := Engine
+ 19 [-]: SELF      R5 R1 K9     ; R6 := R1; R5 := R1["0x63D63C30"]
+ 20 [-]: GETGLOBAL R7 K7        ; R7 := Engine
  21 [-]: GETTABLE  R7 R7 K10    ; R7 := R7["SLOT_2"]
  22 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 23 [-]: SELF      R6 R1 K8     ; R7 := R1; R6 := R1["0x63D63C30"]
- 24 [-]: GETGLOBAL R8 K9        ; R8 := Engine
+ 23 [-]: SELF      R6 R1 K9     ; R7 := R1; R6 := R1["0x63D63C30"]
+ 24 [-]: GETGLOBAL R8 K7        ; R8 := Engine
  25 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["SLOT_1"]
  26 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 27 [-]: SELF      R7 R1 K8     ; R8 := R1; R7 := R1["0x63D63C30"]
- 28 [-]: GETGLOBAL R9 K9        ; R9 := Engine
+ 27 [-]: SELF      R7 R1 K9     ; R8 := R1; R7 := R1["0x63D63C30"]
+ 28 [-]: GETGLOBAL R9 K7        ; R9 := Engine
  29 [-]: GETTABLE  R9 R9 K12    ; R9 := R9["SLOT_6"]
  30 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  31 [-]: SELF      R8 R1 K4     ; R9 := R1; R8 := R1["0x3B1B11B9"]
  32 [-]: GETGLOBAL R10 K5       ; R10 := Game
  33 [-]: GETTABLE  R10 R10 K13  ; R10 := R10["AVATAR_ARMOUR"]
- 34 [-]: GETGLOBAL R11 K5       ; R11 := Game
- 35 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["SET"]
+ 34 [-]: GETGLOBAL R11 K7       ; R11 := Engine
+ 35 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["SET"]
  36 [-]: LOADK     R12 K14      ; R12 := 65
  37 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  38 [-]: SELF      R8 R1 K4     ; R9 := R1; R8 := R1["0x3B1B11B9"]
  39 [-]: GETGLOBAL R10 K5       ; R10 := Game
  40 [-]: GETTABLE  R10 R10 K15  ; R10 := R10["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
- 41 [-]: GETGLOBAL R11 K5       ; R11 := Game
+ 41 [-]: GETGLOBAL R11 K7       ; R11 := Engine
  42 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["STACKING_MULTIPLY"]
  43 [-]: LOADK     R12 K17      ; R12 := 0.60000002384186
  44 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
@@ -3808,8 +3808,8 @@ code size: 1
  48 [-]: SELF      R8 R1 K4     ; R9 := R1; R8 := R1["0x3B1B11B9"]
  49 [-]: GETGLOBAL R10 K5       ; R10 := Game
  50 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["AVATAR_POWER_MAX"]
- 51 [-]: GETGLOBAL R11 K5       ; R11 := Game
- 52 [-]: GETTABLE  R11 R11 K7   ; R11 := R11["SET"]
+ 51 [-]: GETGLOBAL R11 K7       ; R11 := Engine
+ 52 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["SET"]
  53 [-]: GETUPVAL  R12 U0       ; R12 := U0
  54 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  55 [-]: GETGLOBAL R8 K18       ; R8 := _T
@@ -3821,18 +3821,18 @@ code size: 1
  61 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
  62 [-]: GETGLOBAL R11 K5       ; R11 := Game
  63 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
- 64 [-]: GETGLOBAL R12 K5       ; R12 := Game
+ 64 [-]: GETGLOBAL R12 K7       ; R12 := Engine
  65 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["STACKING_MULTIPLY"]
  66 [-]: LOADK     R13 K17      ; R13 := 0.60000002384186
  67 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  68 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
  69 [-]: GETGLOBAL R11 K5       ; R11 := Game
  70 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["AVATAR_PROC_IMMUNITY_DURATION"]
- 71 [-]: GETGLOBAL R12 K5       ; R12 := Game
+ 71 [-]: GETGLOBAL R12 K7       ; R12 := Engine
  72 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["ADD"]
  73 [-]: LOADK     R13 K24      ; R13 := 4
  74 [-]: LOADNIL   R14 R15      ; R14 := R15 := nil
- 75 [-]: GETGLOBAL R16 K9       ; R16 := Engine
+ 75 [-]: GETGLOBAL R16 K7       ; R16 := Engine
  76 [-]: GETTABLE  R16 R16 K25  ; R16 := R16["DT_ANY"]
  77 [-]: GETGLOBAL R17 K26      ; R17 := 0xEC274B1A
  78 [-]: LOADK     R18 K27      ; R18 := "PT_RAGDOLL"
@@ -3841,22 +3841,22 @@ code size: 1
  81 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
  82 [-]: GETGLOBAL R11 K5       ; R11 := Game
  83 [-]: GETTABLE  R11 R11 K28  ; R11 := R11["WEAPON_MELEE_AUTOTARGET_MAXIMUM_ANGLE"]
- 84 [-]: GETGLOBAL R12 K5       ; R12 := Game
+ 84 [-]: GETGLOBAL R12 K7       ; R12 := Engine
  85 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["ADD"]
  86 [-]: LOADK     R13 K29      ; R13 := -90
  87 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  88 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
  89 [-]: GETGLOBAL R11 K5       ; R11 := Game
  90 [-]: GETTABLE  R11 R11 K30  ; R11 := R11["AVATAR_HEALTH_MAX"]
- 91 [-]: GETGLOBAL R12 K5       ; R12 := Game
- 92 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["SET"]
+ 91 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+ 92 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SET"]
  93 [-]: LOADK     R13 K31      ; R13 := 100
  94 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
  95 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
  96 [-]: GETGLOBAL R11 K5       ; R11 := Game
  97 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["AVATAR_SHIELD_MAX"]
- 98 [-]: GETGLOBAL R12 K5       ; R12 := Game
- 99 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["SET"]
+ 98 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+ 99 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SET"]
 100 [-]: LOADK     R13 K1       ; R13 := 0
 101 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 102 [-]: SELF      R9 R3 K33    ; R10 := R3; R9 := R3["0x76C229EF"]
@@ -3873,32 +3873,32 @@ code size: 1
 113 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 114 [-]: GETGLOBAL R11 K5       ; R11 := Game
 115 [-]: GETTABLE  R11 R11 K36  ; R11 := R11["AVATAR_HEAL_RATE"]
-116 [-]: GETGLOBAL R12 K5       ; R12 := Game
-117 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["SET"]
+116 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+117 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SET"]
 118 [-]: LOADK     R13 K1       ; R13 := 0
 119 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 120 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 121 [-]: GETGLOBAL R11 K5       ; R11 := Game
 122 [-]: GETTABLE  R11 R11 K15  ; R11 := R11["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
-123 [-]: GETGLOBAL R12 K5       ; R12 := Game
+123 [-]: GETGLOBAL R12 K7       ; R12 := Engine
 124 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["STACKING_MULTIPLY"]
 125 [-]: LOADK     R13 K37      ; R13 := -0.30000001192093
 126 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 127 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 128 [-]: GETGLOBAL R11 K5       ; R11 := Game
 129 [-]: GETTABLE  R11 R11 K13  ; R11 := R11["AVATAR_ARMOUR"]
-130 [-]: GETGLOBAL R12 K5       ; R12 := Game
-131 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["SET"]
+130 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+131 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SET"]
 132 [-]: LOADK     R13 K1       ; R13 := 0
 133 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 134 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 135 [-]: GETGLOBAL R11 K5       ; R11 := Game
 136 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["AVATAR_PROC_IMMUNITY_DURATION"]
-137 [-]: GETGLOBAL R12 K5       ; R12 := Game
+137 [-]: GETGLOBAL R12 K7       ; R12 := Engine
 138 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["ADD"]
 139 [-]: LOADK     R13 K24      ; R13 := 4
 140 [-]: LOADNIL   R14 R15      ; R14 := R15 := nil
-141 [-]: GETGLOBAL R16 K9       ; R16 := Engine
+141 [-]: GETGLOBAL R16 K7       ; R16 := Engine
 142 [-]: GETTABLE  R16 R16 K25  ; R16 := R16["DT_ANY"]
 143 [-]: GETGLOBAL R17 K26      ; R17 := 0xEC274B1A
 144 [-]: LOADK     R18 K27      ; R18 := "PT_RAGDOLL"
@@ -3907,29 +3907,29 @@ code size: 1
 147 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 148 [-]: GETGLOBAL R11 K5       ; R11 := Game
 149 [-]: GETTABLE  R11 R11 K30  ; R11 := R11["AVATAR_HEALTH_MAX"]
-150 [-]: GETGLOBAL R12 K5       ; R12 := Game
-151 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["SET"]
+150 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+151 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SET"]
 152 [-]: LOADK     R13 K31      ; R13 := 100
 153 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 154 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 155 [-]: GETGLOBAL R11 K5       ; R11 := Game
 156 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["AVATAR_SHIELD_MAX"]
-157 [-]: GETGLOBAL R12 K5       ; R12 := Game
-158 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["SET"]
+157 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+158 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SET"]
 159 [-]: LOADK     R13 K31      ; R13 := 100
 160 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 161 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 162 [-]: GETGLOBAL R11 K5       ; R11 := Game
 163 [-]: GETTABLE  R11 R11 K38  ; R11 := R11["WEAPON_PARRY_DAMAGE_BLOCKED"]
-164 [-]: GETGLOBAL R12 K5       ; R12 := Game
+164 [-]: GETGLOBAL R12 K7       ; R12 := Engine
 165 [-]: GETTABLE  R12 R12 K16  ; R12 := R12["STACKING_MULTIPLY"]
 166 [-]: LOADK     R13 K39      ; R13 := 1
 167 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 168 [-]: SELF      R9 R1 K4     ; R10 := R1; R9 := R1["0x3B1B11B9"]
 169 [-]: GETGLOBAL R11 K5       ; R11 := Game
 170 [-]: GETTABLE  R11 R11 K40  ; R11 := R11["WEAPON_PARRY_ANGLE"]
-171 [-]: GETGLOBAL R12 K5       ; R12 := Game
-172 [-]: GETTABLE  R12 R12 K7   ; R12 := R12["SET"]
+171 [-]: GETGLOBAL R12 K7       ; R12 := Engine
+172 [-]: GETTABLE  R12 R12 K8   ; R12 := R12["SET"]
 173 [-]: LOADK     R13 K41      ; R13 := 45
 174 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 175 [-]: SELF      R9 R3 K33    ; R10 := R3; R9 := R3["0x76C229EF"]
@@ -4170,12 +4170,12 @@ code size: 1
 140 [-]: SELF      R12 R3 K37   ; R13 := R3; R12 := R3["0x3B1B11B9"]
 141 [-]: GETGLOBAL R14 K23      ; R14 := Game
 142 [-]: GETTABLE  R14 R14 K38  ; R14 := R14["AVATAR_POWER_RATE"]
-143 [-]: GETGLOBAL R15 K23      ; R15 := Game
-144 [-]: GETTABLE  R15 R15 K39  ; R15 := R15["ADD"]
+143 [-]: GETGLOBAL R15 K39      ; R15 := Engine
+144 [-]: GETTABLE  R15 R15 K40  ; R15 := R15["ADD"]
 145 [-]: MOVE      R16 R11      ; R16 := R11
 146 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
-147 [-]: SETTABLE  R7 K40 R11   ; R7["lastEnergyUpgrade"] := R11
-148 [-]: SELF      R12 R0 K41   ; R13 := R0; R12 := R0["0x6A9D4596"]
+147 [-]: SETTABLE  R7 K41 R11   ; R7["lastEnergyUpgrade"] := R11
+148 [-]: SELF      R12 R0 K42   ; R13 := R0; R12 := R0["0x6A9D4596"]
 149 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 150 [-]: TEST      R12 0        ; if not R12 then PC := 178
 151 [-]: JMP       178          ; PC := 178
@@ -4191,7 +4191,7 @@ code size: 1
 161 [-]: GETUPVAL  R15 U2       ; R15 := U2
 162 [-]: GETUPVAL  R16 U3       ; R16 := U3
 163 [-]: CALL      R12 5 1      ; R12(R13,R14,R15,R16)
-164 [-]: SETTABLE  R7 K42 K43   ; R7["addedVariantSurgeUpgrade"] := "0x1"
+164 [-]: SETTABLE  R7 K43 K44   ; R7["addedVariantSurgeUpgrade"] := "0x1"
 165 [-]: JMP       178          ; PC := 178
 166 [-]: SELF      R12 R0 K36   ; R13 := R0; R12 := R0["0x831A1FF9"]
 167 [-]: MOVE      R14 R8       ; R14 := R8
@@ -4200,13 +4200,13 @@ code size: 1
 170 [-]: SELF      R13 R3 K37   ; R14 := R3; R13 := R3["0x3B1B11B9"]
 171 [-]: GETGLOBAL R15 K23      ; R15 := Game
 172 [-]: GETTABLE  R15 R15 K38  ; R15 := R15["AVATAR_POWER_RATE"]
-173 [-]: GETGLOBAL R16 K23      ; R16 := Game
-174 [-]: GETTABLE  R16 R16 K39  ; R16 := R16["ADD"]
+173 [-]: GETGLOBAL R16 K39      ; R16 := Engine
+174 [-]: GETTABLE  R16 R16 K40  ; R16 := R16["ADD"]
 175 [-]: MOVE      R17 R12      ; R17 := R12
 176 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
-177 [-]: SETTABLE  R7 K44 R12   ; R7["lastEnergyEscalationUpgrade"] := R12
-178 [-]: GETGLOBAL R13 K45      ; R13 := gChallengeMgr
-179 [-]: SELF      R13 R13 K46  ; R14 := R13; R13 := R13["0xCE3A1B8C"]
+177 [-]: SETTABLE  R7 K45 R12   ; R7["lastEnergyEscalationUpgrade"] := R12
+178 [-]: GETGLOBAL R13 K46      ; R13 := gChallengeMgr
+179 [-]: SELF      R13 R13 K47  ; R14 := R13; R13 := R13["0xCE3A1B8C"]
 180 [-]: MOVE      R15 R5       ; R15 := R5
 181 [-]: CALL      R13 3 1      ; R13(R14,R15)
 182 [-]: RETURN    R0 1         ; return 

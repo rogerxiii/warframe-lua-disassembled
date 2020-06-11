@@ -277,7 +277,7 @@ code size: 12
  51 [-]: GETTABLE  R2 R2 K12    ; R2 := R2["0xE6450C9D"]
  52 [-]: MOVE      R3 R1        ; R3 := R1
  53 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 54 [-]: SETTABLE  R4 K13 K21   ; R4["Label"] := "/Game/AVATAR_ABILITY_RANGE"
+ 54 [-]: SETTABLE  R4 K13 K21   ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY_RANGE"
  55 [-]: GETUPVAL  R5 U2        ; R5 := U2
  56 [-]: SETTABLE  R4 K15 R5    ; R4["Value"] := R5
  57 [-]: SETTABLE  R4 K22 K23   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -501,7 +501,7 @@ code size: 12
 159 [-]: SELF      R17 R6 K57   ; R18 := R6; R17 := R6["0x3B1B11B9"]
 160 [-]: GETGLOBAL R19 K58      ; R19 := Game
 161 [-]: GETTABLE  R19 R19 K59  ; R19 := R19["AVATAR_MOVEMENT_SPEED"]
-162 [-]: GETGLOBAL R20 K58      ; R20 := Game
+162 [-]: GETGLOBAL R20 K10      ; R20 := Engine
 163 [-]: GETTABLE  R20 R20 K60  ; R20 := R20["STACKING_MULTIPLY"]
 164 [-]: GETUPVAL  R21 U6       ; R21 := U6
 165 [-]: CALL      R17 5 1      ; R17(R18,R19,R20,R21)
@@ -911,7 +911,7 @@ code size: 12
 569 [-]: SELF      R68 R6 K57   ; R69 := R6; R68 := R6["0x3B1B11B9"]
 570 [-]: GETGLOBAL R70 K58      ; R70 := Game
 571 [-]: GETTABLE  R70 R70 K59  ; R70 := R70["AVATAR_MOVEMENT_SPEED"]
-572 [-]: GETGLOBAL R71 K58      ; R71 := Game
+572 [-]: GETGLOBAL R71 K10      ; R71 := Engine
 573 [-]: GETTABLE  R71 R71 K147 ; R71 := R71["MULTIPLY"]
 574 [-]: GETUPVAL  R72 U11      ; R72 := U11
 575 [-]: CALL      R68 5 1      ; R68(R69,R70,R71,R72)
@@ -953,7 +953,7 @@ code size: 12
 611 [-]: SELF      R68 R6 K150  ; R69 := R6; R68 := R6["0xF21555A7"]
 612 [-]: GETGLOBAL R70 K58      ; R70 := Game
 613 [-]: GETTABLE  R70 R70 K59  ; R70 := R70["AVATAR_MOVEMENT_SPEED"]
-614 [-]: GETGLOBAL R71 K58      ; R71 := Game
+614 [-]: GETGLOBAL R71 K10      ; R71 := Engine
 615 [-]: GETTABLE  R71 R71 K147 ; R71 := R71["MULTIPLY"]
 616 [-]: GETUPVAL  R72 U11      ; R72 := U11
 617 [-]: CALL      R68 5 1      ; R68(R69,R70,R71,R72)
@@ -1831,14 +1831,14 @@ code size: 12
 241 [-]: SELF      R28 R27 K76  ; R29 := R27; R28 := R27["0xF21555A7"]
 242 [-]: GETGLOBAL R30 K77      ; R30 := Game
 243 [-]: GETTABLE  R30 R30 K78  ; R30 := R30["AVATAR_MOVEMENT_SPEED"]
-244 [-]: GETGLOBAL R31 K77      ; R31 := Game
+244 [-]: GETGLOBAL R31 K33      ; R31 := Engine
 245 [-]: GETTABLE  R31 R31 K79  ; R31 := R31["STACKING_MULTIPLY"]
 246 [-]: GETUPVAL  R32 U2       ; R32 := U2
 247 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)
 248 [-]: SELF      R28 R27 K76  ; R29 := R27; R28 := R27["0xF21555A7"]
 249 [-]: GETGLOBAL R30 K77      ; R30 := Game
 250 [-]: GETTABLE  R30 R30 K78  ; R30 := R30["AVATAR_MOVEMENT_SPEED"]
-251 [-]: GETGLOBAL R31 K77      ; R31 := Game
+251 [-]: GETGLOBAL R31 K33      ; R31 := Engine
 252 [-]: GETTABLE  R31 R31 K80  ; R31 := R31["MULTIPLY"]
 253 [-]: GETUPVAL  R32 U3       ; R32 := U3
 254 [-]: CALL      R28 5 1      ; R28(R29,R30,R31,R32)

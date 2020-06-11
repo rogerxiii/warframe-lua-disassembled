@@ -429,7 +429,7 @@ code size: 43
  65 [-]: GETTABLE  R7 R7 K16    ; R7 := R7["0xE6450C9D"]
  66 [-]: MOVE      R8 R0        ; R8 := R0
  67 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Game/AVATAR_PROC_IMMUNITY_DURATION"
+ 68 [-]: SETTABLE  R9 K17 K21   ; R9["Label"] := "/Lotus/Language/Labels/AVATAR_PROC_IMMUNITY_DURATION"
  69 [-]: GETUPVAL  R10 U1       ; R10 := U1
  70 [-]: SETTABLE  R9 K22 R10   ; R9["Value"] := R10
  71 [-]: SETTABLE  R9 K23 K24   ; R9["ValueUnit"] := "/Lotus/Language/Game/UNIT_SECOND"
@@ -470,7 +470,7 @@ code size: 43
  22 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["0xE6450C9D"]
  23 [-]: MOVE      R2 R0        ; R2 := R0
  24 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 25 [-]: SETTABLE  R3 K12 K13   ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 25 [-]: SETTABLE  R3 K12 K13   ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  26 [-]: GETGLOBAL R4 K7        ; R4 := pathDamageRange
  27 [-]: SETTABLE  R3 K14 R4    ; R3["Value"] := R4
  28 [-]: SETTABLE  R3 K15 K16   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -479,7 +479,7 @@ code size: 43
  31 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["0xE6450C9D"]
  32 [-]: MOVE      R2 R0        ; R2 := R0
  33 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 34 [-]: SETTABLE  R3 K12 K17   ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 34 [-]: SETTABLE  R3 K12 K17   ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  35 [-]: GETGLOBAL R4 K8        ; R4 := pathDamage
  36 [-]: SETTABLE  R3 K14 R4    ; R3["Value"] := R4
  37 [-]: SETTABLE  R3 K18 K19   ; R3["ValueIcon"] := "<DT_IMPACT>"
@@ -488,7 +488,7 @@ code size: 43
  40 [-]: GETTABLE  R1 R1 K11    ; R1 := R1["0xE6450C9D"]
  41 [-]: MOVE      R2 R0        ; R2 := R0
  42 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 43 [-]: SETTABLE  R3 K12 K20   ; R3["Label"] := "/Game/AVATAR_MOVEMENT_SPEED"
+ 43 [-]: SETTABLE  R3 K12 K20   ; R3["Label"] := "/Lotus/Language/Labels/AVATAR_MOVEMENT_SPEED"
  44 [-]: GETGLOBAL R4 K5        ; R4 := speed
  45 [-]: SETTABLE  R3 K14 R4    ; R3["Value"] := R4
  46 [-]: SETTABLE  R3 K15 K21   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER_PER_SECOND"

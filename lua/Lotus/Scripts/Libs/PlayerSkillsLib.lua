@@ -164,45 +164,45 @@ code size: 66
 151 [-]: GETTABLE  R5 R5 K63    ; R5 := R5["SKILL_ABILITY_TACTICAL_EFFICIENCY"]
 152 [-]: SETTABLE  R4 K54 R5    ; R4["upgradeType"] := R5
 153 [-]: SETTABLE  R4 K64 K65   ; R4["value"] := 0.25
-154 [-]: GETGLOBAL R5 K55       ; R5 := Game
-155 [-]: GETTABLE  R5 R5 K67    ; R5 := R5["STACKING_MULTIPLY"]
+154 [-]: GETGLOBAL R5 K67       ; R5 := Engine
+155 [-]: GETTABLE  R5 R5 K68    ; R5 := R5["STACKING_MULTIPLY"]
 156 [-]: SETTABLE  R4 K66 R5    ; R4["operationType"] := R5
 157 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
 158 [-]: SETTABLE  R2 K62 R3    ; R2[6] := R3
 159 [-]: NEWTABLE  R3 1 0       ; R3 := {}
 160 [-]: NEWTABLE  R4 0 3       ; R4 := {}
 161 [-]: GETGLOBAL R5 K55       ; R5 := Game
-162 [-]: GETTABLE  R5 R5 K69    ; R5 := R5["SKILL_ABILITY_TACTICAL_COOLDOWN"]
+162 [-]: GETTABLE  R5 R5 K70    ; R5 := R5["SKILL_ABILITY_TACTICAL_COOLDOWN"]
 163 [-]: SETTABLE  R4 K54 R5    ; R4["upgradeType"] := R5
-164 [-]: SETTABLE  R4 K64 K70   ; R4["value"] := 0.80000001192093
-165 [-]: GETGLOBAL R5 K55       ; R5 := Game
-166 [-]: GETTABLE  R5 R5 K71    ; R5 := R5["MULTIPLY"]
+164 [-]: SETTABLE  R4 K64 K71   ; R4["value"] := 0.80000001192093
+165 [-]: GETGLOBAL R5 K67       ; R5 := Engine
+166 [-]: GETTABLE  R5 R5 K72    ; R5 := R5["MULTIPLY"]
 167 [-]: SETTABLE  R4 K66 R5    ; R4["operationType"] := R5
 168 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
-169 [-]: SETTABLE  R2 K68 R3    ; R2[7] := R3
+169 [-]: SETTABLE  R2 K69 R3    ; R2[7] := R3
 170 [-]: NEWTABLE  R3 1 0       ; R3 := {}
 171 [-]: NEWTABLE  R4 0 4       ; R4 := {}
 172 [-]: GETGLOBAL R5 K55       ; R5 := Game
-173 [-]: GETTABLE  R5 R5 K73    ; R5 := R5["AVATAR_DODGE_COOLDOWN"]
+173 [-]: GETTABLE  R5 R5 K74    ; R5 := R5["AVATAR_DODGE_COOLDOWN"]
 174 [-]: SETTABLE  R4 K54 R5    ; R4["upgradeType"] := R5
-175 [-]: SETTABLE  R4 K64 K74   ; R4["value"] := 0.75
-176 [-]: GETGLOBAL R5 K55       ; R5 := Game
-177 [-]: GETTABLE  R5 R5 K71    ; R5 := R5["MULTIPLY"]
+175 [-]: SETTABLE  R4 K64 K75   ; R4["value"] := 0.75
+176 [-]: GETGLOBAL R5 K67       ; R5 := Engine
+177 [-]: GETTABLE  R5 R5 K72    ; R5 := R5["MULTIPLY"]
 178 [-]: SETTABLE  R4 K66 R5    ; R4["operationType"] := R5
-179 [-]: SETTABLE  R4 K75 K76   ; R4["archwingOnly"] := "0x1"
+179 [-]: SETTABLE  R4 K76 K77   ; R4["archwingOnly"] := "0x1"
 180 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
-181 [-]: SETTABLE  R2 K72 R3    ; R2[8] := R3
+181 [-]: SETTABLE  R2 K73 R3    ; R2[8] := R3
 182 [-]: NEWTABLE  R3 1 0       ; R3 := {}
 183 [-]: NEWTABLE  R4 0 3       ; R4 := {}
 184 [-]: GETGLOBAL R5 K55       ; R5 := Game
-185 [-]: GETTABLE  R5 R5 K69    ; R5 := R5["SKILL_ABILITY_TACTICAL_COOLDOWN"]
+185 [-]: GETTABLE  R5 R5 K70    ; R5 := R5["SKILL_ABILITY_TACTICAL_COOLDOWN"]
 186 [-]: SETTABLE  R4 K54 R5    ; R4["upgradeType"] := R5
-187 [-]: SETTABLE  R4 K64 K70   ; R4["value"] := 0.80000001192093
-188 [-]: GETGLOBAL R5 K55       ; R5 := Game
-189 [-]: GETTABLE  R5 R5 K71    ; R5 := R5["MULTIPLY"]
+187 [-]: SETTABLE  R4 K64 K71   ; R4["value"] := 0.80000001192093
+188 [-]: GETGLOBAL R5 K67       ; R5 := Engine
+189 [-]: GETTABLE  R5 R5 K72    ; R5 := R5["MULTIPLY"]
 190 [-]: SETTABLE  R4 K66 R5    ; R4["operationType"] := R5
 191 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
-192 [-]: SETTABLE  R2 K77 R3    ; R2[9] := R3
+192 [-]: SETTABLE  R2 K78 R3    ; R2[9] := R3
 193 [-]: NEWTABLE  R3 1 0       ; R3 := {}
 194 [-]: NEWTABLE  R4 0 2       ; R4 := {}
 195 [-]: GETGLOBAL R5 K55       ; R5 := Game
@@ -243,11 +243,11 @@ code size: 66
 230 [-]: NEWTABLE  R4 1 0       ; R4 := {}
 231 [-]: NEWTABLE  R5 0 3       ; R5 := {}
 232 [-]: GETGLOBAL R6 K55       ; R6 := Game
-233 [-]: GETTABLE  R6 R6 K78    ; R6 := R6["SKILL_RJ_COLLISION_DMG_REDUCTION"]
+233 [-]: GETTABLE  R6 R6 K79    ; R6 := R6["SKILL_RJ_COLLISION_DMG_REDUCTION"]
 234 [-]: SETTABLE  R5 K54 R6    ; R5["upgradeType"] := R6
-235 [-]: SETTABLE  R5 K64 K79   ; R5["value"] := -0.5
-236 [-]: GETGLOBAL R6 K55       ; R6 := Game
-237 [-]: GETTABLE  R6 R6 K67    ; R6 := R6["STACKING_MULTIPLY"]
+235 [-]: SETTABLE  R5 K64 K80   ; R5["value"] := -0.5
+236 [-]: GETGLOBAL R6 K67       ; R6 := Engine
+237 [-]: GETTABLE  R6 R6 K68    ; R6 := R6["STACKING_MULTIPLY"]
 238 [-]: SETTABLE  R5 K66 R6    ; R5["operationType"] := R6
 239 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
 240 [-]: SETTABLE  R3 K60 R4    ; R3[4] := R4
@@ -263,96 +263,96 @@ code size: 66
 250 [-]: NEWTABLE  R4 1 0       ; R4 := {}
 251 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 252 [-]: GETGLOBAL R6 K55       ; R6 := Game
-253 [-]: GETTABLE  R6 R6 K80    ; R6 := R6["AVATAR_STAMINA_MAX"]
+253 [-]: GETTABLE  R6 R6 K81    ; R6 := R6["AVATAR_STAMINA_MAX"]
 254 [-]: SETTABLE  R5 K54 R6    ; R5["upgradeType"] := R6
 255 [-]: SETTABLE  R5 K64 K65   ; R5["value"] := 0.25
-256 [-]: GETGLOBAL R6 K55       ; R6 := Game
-257 [-]: GETTABLE  R6 R6 K67    ; R6 := R6["STACKING_MULTIPLY"]
+256 [-]: GETGLOBAL R6 K67       ; R6 := Engine
+257 [-]: GETTABLE  R6 R6 K68    ; R6 := R6["STACKING_MULTIPLY"]
 258 [-]: SETTABLE  R5 K66 R6    ; R5["operationType"] := R6
-259 [-]: SETTABLE  R5 K81 R1    ; R5["validType"] := R1
+259 [-]: SETTABLE  R5 K82 R1    ; R5["validType"] := R1
 260 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
 261 [-]: SETTABLE  R3 K62 R4    ; R3[6] := R4
 262 [-]: NEWTABLE  R4 3 0       ; R4 := {}
 263 [-]: NEWTABLE  R5 0 5       ; R5 := {}
 264 [-]: GETGLOBAL R6 K55       ; R6 := Game
-265 [-]: GETTABLE  R6 R6 K82    ; R6 := R6["AVATAR_STAMINA_COST_MULTIPLIER"]
+265 [-]: GETTABLE  R6 R6 K83    ; R6 := R6["AVATAR_STAMINA_COST_MULTIPLIER"]
 266 [-]: SETTABLE  R5 K54 R6    ; R5["upgradeType"] := R6
-267 [-]: SETTABLE  R5 K64 K74   ; R5["value"] := 0.75
+267 [-]: SETTABLE  R5 K64 K75   ; R5["value"] := 0.75
 268 [-]: NEWTABLE  R6 1 0       ; R6 := {}
-269 [-]: GETGLOBAL R7 K84       ; R7 := Engine
+269 [-]: GETGLOBAL R7 K67       ; R7 := Engine
 270 [-]: GETTABLE  R7 R7 K85    ; R7 := R7["PM_DODGE"]
 271 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
-272 [-]: SETTABLE  R5 K83 R6    ; R5["validModifiers"] := R6
-273 [-]: GETGLOBAL R6 K55       ; R6 := Game
-274 [-]: GETTABLE  R6 R6 K71    ; R6 := R6["MULTIPLY"]
+272 [-]: SETTABLE  R5 K84 R6    ; R5["validModifiers"] := R6
+273 [-]: GETGLOBAL R6 K67       ; R6 := Engine
+274 [-]: GETTABLE  R6 R6 K72    ; R6 := R6["MULTIPLY"]
 275 [-]: SETTABLE  R5 K66 R6    ; R5["operationType"] := R6
-276 [-]: SETTABLE  R5 K81 R1    ; R5["validType"] := R1
+276 [-]: SETTABLE  R5 K82 R1    ; R5["validType"] := R1
 277 [-]: NEWTABLE  R6 0 5       ; R6 := {}
 278 [-]: GETGLOBAL R7 K55       ; R7 := Game
-279 [-]: GETTABLE  R7 R7 K82    ; R7 := R7["AVATAR_STAMINA_COST_MULTIPLIER"]
+279 [-]: GETTABLE  R7 R7 K83    ; R7 := R7["AVATAR_STAMINA_COST_MULTIPLIER"]
 280 [-]: SETTABLE  R6 K54 R7    ; R6["upgradeType"] := R7
-281 [-]: SETTABLE  R6 K64 K74   ; R6["value"] := 0.75
+281 [-]: SETTABLE  R6 K64 K75   ; R6["value"] := 0.75
 282 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-283 [-]: GETGLOBAL R8 K84       ; R8 := Engine
+283 [-]: GETGLOBAL R8 K67       ; R8 := Engine
 284 [-]: GETTABLE  R8 R8 K86    ; R8 := R8["PM_AIRBORNE"]
 285 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-286 [-]: SETTABLE  R6 K83 R7    ; R6["validModifiers"] := R7
-287 [-]: GETGLOBAL R7 K55       ; R7 := Game
-288 [-]: GETTABLE  R7 R7 K71    ; R7 := R7["MULTIPLY"]
+286 [-]: SETTABLE  R6 K84 R7    ; R6["validModifiers"] := R7
+287 [-]: GETGLOBAL R7 K67       ; R7 := Engine
+288 [-]: GETTABLE  R7 R7 K72    ; R7 := R7["MULTIPLY"]
 289 [-]: SETTABLE  R6 K66 R7    ; R6["operationType"] := R7
-290 [-]: SETTABLE  R6 K81 R1    ; R6["validType"] := R1
+290 [-]: SETTABLE  R6 K82 R1    ; R6["validType"] := R1
 291 [-]: NEWTABLE  R7 0 5       ; R7 := {}
 292 [-]: GETGLOBAL R8 K55       ; R8 := Game
-293 [-]: GETTABLE  R8 R8 K82    ; R8 := R8["AVATAR_STAMINA_COST_MULTIPLIER"]
+293 [-]: GETTABLE  R8 R8 K83    ; R8 := R8["AVATAR_STAMINA_COST_MULTIPLIER"]
 294 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 295 [-]: SETTABLE  R7 K64 K87   ; R7["value"] := 1.3333333730698
 296 [-]: NEWTABLE  R8 2 0       ; R8 := {}
-297 [-]: GETGLOBAL R9 K84       ; R9 := Engine
+297 [-]: GETGLOBAL R9 K67       ; R9 := Engine
 298 [-]: GETTABLE  R9 R9 K85    ; R9 := R9["PM_DODGE"]
-299 [-]: GETGLOBAL R10 K84      ; R10 := Engine
+299 [-]: GETGLOBAL R10 K67      ; R10 := Engine
 300 [-]: GETTABLE  R10 R10 K86  ; R10 := R10["PM_AIRBORNE"]
 301 [-]: SETLIST   R8 2 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 2
-302 [-]: SETTABLE  R7 K83 R8    ; R7["validModifiers"] := R8
-303 [-]: GETGLOBAL R8 K55       ; R8 := Game
-304 [-]: GETTABLE  R8 R8 K71    ; R8 := R8["MULTIPLY"]
+302 [-]: SETTABLE  R7 K84 R8    ; R7["validModifiers"] := R8
+303 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+304 [-]: GETTABLE  R8 R8 K72    ; R8 := R8["MULTIPLY"]
 305 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
-306 [-]: SETTABLE  R7 K81 R1    ; R7["validType"] := R1
+306 [-]: SETTABLE  R7 K82 R1    ; R7["validType"] := R1
 307 [-]: SETLIST   R4 3 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 3
-308 [-]: SETTABLE  R3 K68 R4    ; R3[7] := R4
+308 [-]: SETTABLE  R3 K69 R4    ; R3[7] := R4
 309 [-]: NEWTABLE  R4 1 0       ; R4 := {}
 310 [-]: NEWTABLE  R5 0 4       ; R5 := {}
 311 [-]: GETGLOBAL R6 K55       ; R6 := Game
 312 [-]: GETTABLE  R6 R6 K88    ; R6 := R6["AVATAR_MOVEMENT_SPEED"]
 313 [-]: SETTABLE  R5 K54 R6    ; R5["upgradeType"] := R6
 314 [-]: SETTABLE  R5 K64 K89   ; R5["value"] := 0.20000000298023
-315 [-]: GETGLOBAL R6 K55       ; R6 := Game
-316 [-]: GETTABLE  R6 R6 K67    ; R6 := R6["STACKING_MULTIPLY"]
+315 [-]: GETGLOBAL R6 K67       ; R6 := Engine
+316 [-]: GETTABLE  R6 R6 K68    ; R6 := R6["STACKING_MULTIPLY"]
 317 [-]: SETTABLE  R5 K66 R6    ; R5["operationType"] := R6
-318 [-]: SETTABLE  R5 K75 K76   ; R5["archwingOnly"] := "0x1"
+318 [-]: SETTABLE  R5 K76 K77   ; R5["archwingOnly"] := "0x1"
 319 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
-320 [-]: SETTABLE  R3 K72 R4    ; R3[8] := R4
+320 [-]: SETTABLE  R3 K73 R4    ; R3[8] := R4
 321 [-]: NEWTABLE  R4 1 0       ; R4 := {}
 322 [-]: NEWTABLE  R5 0 5       ; R5 := {}
 323 [-]: GETGLOBAL R6 K55       ; R6 := Game
 324 [-]: GETTABLE  R6 R6 K90    ; R6 := R6["SKILL_RJ_ENEMY_DMG_REDUCTION"]
 325 [-]: SETTABLE  R5 K54 R6    ; R5["upgradeType"] := R6
 326 [-]: SETTABLE  R5 K64 K91   ; R5["value"] := 0.89999997615814
-327 [-]: GETGLOBAL R6 K84       ; R6 := Engine
+327 [-]: GETGLOBAL R6 K67       ; R6 := Engine
 328 [-]: GETTABLE  R6 R6 K93    ; R6 := R6["RUN"]
 329 [-]: SETTABLE  R5 K92 R6    ; R5["validPosture"] := R6
-330 [-]: GETGLOBAL R6 K55       ; R6 := Game
-331 [-]: GETTABLE  R6 R6 K71    ; R6 := R6["MULTIPLY"]
+330 [-]: GETGLOBAL R6 K67       ; R6 := Engine
+331 [-]: GETTABLE  R6 R6 K72    ; R6 := R6["MULTIPLY"]
 332 [-]: SETTABLE  R5 K66 R6    ; R5["operationType"] := R6
-333 [-]: SETTABLE  R5 K81 R1    ; R5["validType"] := R1
+333 [-]: SETTABLE  R5 K82 R1    ; R5["validType"] := R1
 334 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
-335 [-]: SETTABLE  R3 K77 R4    ; R3[9] := R4
+335 [-]: SETTABLE  R3 K78 R4    ; R3[9] := R4
 336 [-]: NEWTABLE  R4 1 0       ; R4 := {}
 337 [-]: NEWTABLE  R5 0 3       ; R5 := {}
 338 [-]: GETGLOBAL R6 K55       ; R6 := Game
 339 [-]: GETTABLE  R6 R6 K94    ; R6 := R6["SKILL_RJ_BOOST_RAM_DAMAGE"]
 340 [-]: SETTABLE  R5 K54 R6    ; R5["upgradeType"] := R6
 341 [-]: SETTABLE  R5 K64 K95   ; R5["value"] := 2000
-342 [-]: GETGLOBAL R6 K55       ; R6 := Game
+342 [-]: GETGLOBAL R6 K67       ; R6 := Engine
 343 [-]: GETTABLE  R6 R6 K96    ; R6 := R6["ADD"]
 344 [-]: SETTABLE  R5 K66 R6    ; R5["operationType"] := R6
 345 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
@@ -414,11 +414,11 @@ code size: 66
 401 [-]: GETGLOBAL R7 K55       ; R7 := Game
 402 [-]: GETTABLE  R7 R7 K97    ; R7 := R7["WEAPON_AMMO_CONSUME_RATE"]
 403 [-]: SETTABLE  R6 K54 R7    ; R6["upgradeType"] := R7
-404 [-]: SETTABLE  R6 K64 K70   ; R6["value"] := 0.80000001192093
-405 [-]: GETGLOBAL R7 K55       ; R7 := Game
-406 [-]: GETTABLE  R7 R7 K71    ; R7 := R7["MULTIPLY"]
+404 [-]: SETTABLE  R6 K64 K71   ; R6["value"] := 0.80000001192093
+405 [-]: GETGLOBAL R7 K67       ; R7 := Engine
+406 [-]: GETTABLE  R7 R7 K72    ; R7 := R7["MULTIPLY"]
 407 [-]: SETTABLE  R6 K66 R7    ; R6["operationType"] := R7
-408 [-]: SETTABLE  R6 K81 R1    ; R6["validType"] := R1
+408 [-]: SETTABLE  R6 K82 R1    ; R6["validType"] := R1
 409 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
 410 [-]: SETTABLE  R4 K62 R5    ; R4[6] := R5
 411 [-]: NEWTABLE  R5 2 0       ; R5 := {}
@@ -427,91 +427,91 @@ code size: 66
 414 [-]: GETTABLE  R7 R7 K98    ; R7 := R7["WEAPON_RELOAD_EMPTY_BATTERY"]
 415 [-]: SETTABLE  R6 K54 R7    ; R6["upgradeType"] := R7
 416 [-]: SETTABLE  R6 K64 K99   ; R6["value"] := 0.5
-417 [-]: GETGLOBAL R7 K55       ; R7 := Game
-418 [-]: GETTABLE  R7 R7 K71    ; R7 := R7["MULTIPLY"]
+417 [-]: GETGLOBAL R7 K67       ; R7 := Engine
+418 [-]: GETTABLE  R7 R7 K72    ; R7 := R7["MULTIPLY"]
 419 [-]: SETTABLE  R6 K66 R7    ; R6["operationType"] := R7
-420 [-]: SETTABLE  R6 K81 R1    ; R6["validType"] := R1
+420 [-]: SETTABLE  R6 K82 R1    ; R6["validType"] := R1
 421 [-]: NEWTABLE  R7 0 4       ; R7 := {}
 422 [-]: GETGLOBAL R8 K55       ; R8 := Game
 423 [-]: GETTABLE  R8 R8 K100   ; R8 := R8["AVATAR_ABILITY_RANGE"]
 424 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 425 [-]: SETTABLE  R7 K64 K99   ; R7["value"] := 0.5
-426 [-]: GETGLOBAL R8 K55       ; R8 := Game
-427 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+426 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+427 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 428 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
-429 [-]: SETTABLE  R7 K81 R0    ; R7["validType"] := R0
+429 [-]: SETTABLE  R7 K82 R0    ; R7["validType"] := R0
 430 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
-431 [-]: SETTABLE  R4 K68 R5    ; R4[7] := R5
+431 [-]: SETTABLE  R4 K69 R5    ; R4[7] := R5
 432 [-]: NEWTABLE  R5 4 0       ; R5 := {}
 433 [-]: NEWTABLE  R6 0 4       ; R6 := {}
 434 [-]: GETGLOBAL R7 K55       ; R7 := Game
 435 [-]: GETTABLE  R7 R7 K101   ; R7 := R7["WEAPON_DAMAGE_AMOUNT"]
 436 [-]: SETTABLE  R6 K54 R7    ; R6["upgradeType"] := R7
 437 [-]: SETTABLE  R6 K64 K65   ; R6["value"] := 0.25
-438 [-]: GETGLOBAL R7 K55       ; R7 := Game
-439 [-]: GETTABLE  R7 R7 K67    ; R7 := R7["STACKING_MULTIPLY"]
+438 [-]: GETGLOBAL R7 K67       ; R7 := Engine
+439 [-]: GETTABLE  R7 R7 K68    ; R7 := R7["STACKING_MULTIPLY"]
 440 [-]: SETTABLE  R6 K66 R7    ; R6["operationType"] := R7
-441 [-]: SETTABLE  R6 K75 K76   ; R6["archwingOnly"] := "0x1"
+441 [-]: SETTABLE  R6 K76 K77   ; R6["archwingOnly"] := "0x1"
 442 [-]: NEWTABLE  R7 0 4       ; R7 := {}
 443 [-]: GETGLOBAL R8 K55       ; R8 := Game
 444 [-]: GETTABLE  R8 R8 K102   ; R8 := R8["AVATAR_ABILITY_STRENGTH"]
 445 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 446 [-]: SETTABLE  R7 K64 K89   ; R7["value"] := 0.20000000298023
-447 [-]: GETGLOBAL R8 K55       ; R8 := Game
-448 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+447 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+448 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 449 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
-450 [-]: SETTABLE  R7 K75 K76   ; R7["archwingOnly"] := "0x1"
+450 [-]: SETTABLE  R7 K76 K77   ; R7["archwingOnly"] := "0x1"
 451 [-]: NEWTABLE  R8 0 4       ; R8 := {}
 452 [-]: GETGLOBAL R9 K55       ; R9 := Game
 453 [-]: GETTABLE  R9 R9 K100   ; R9 := R9["AVATAR_ABILITY_RANGE"]
 454 [-]: SETTABLE  R8 K54 R9    ; R8["upgradeType"] := R9
 455 [-]: SETTABLE  R8 K64 K89   ; R8["value"] := 0.20000000298023
-456 [-]: GETGLOBAL R9 K55       ; R9 := Game
-457 [-]: GETTABLE  R9 R9 K67    ; R9 := R9["STACKING_MULTIPLY"]
+456 [-]: GETGLOBAL R9 K67       ; R9 := Engine
+457 [-]: GETTABLE  R9 R9 K68    ; R9 := R9["STACKING_MULTIPLY"]
 458 [-]: SETTABLE  R8 K66 R9    ; R8["operationType"] := R9
-459 [-]: SETTABLE  R8 K75 K76   ; R8["archwingOnly"] := "0x1"
+459 [-]: SETTABLE  R8 K76 K77   ; R8["archwingOnly"] := "0x1"
 460 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 461 [-]: GETGLOBAL R10 K55      ; R10 := Game
 462 [-]: GETTABLE  R10 R10 K103 ; R10 := R10["AVATAR_ABILITY_EFFICIENCY"]
 463 [-]: SETTABLE  R9 K54 R10   ; R9["upgradeType"] := R10
 464 [-]: SETTABLE  R9 K64 K89   ; R9["value"] := 0.20000000298023
-465 [-]: GETGLOBAL R10 K55      ; R10 := Game
-466 [-]: GETTABLE  R10 R10 K67  ; R10 := R10["STACKING_MULTIPLY"]
+465 [-]: GETGLOBAL R10 K67      ; R10 := Engine
+466 [-]: GETTABLE  R10 R10 K68  ; R10 := R10["STACKING_MULTIPLY"]
 467 [-]: SETTABLE  R9 K66 R10   ; R9["operationType"] := R10
-468 [-]: SETTABLE  R9 K75 K76   ; R9["archwingOnly"] := "0x1"
+468 [-]: SETTABLE  R9 K76 K77   ; R9["archwingOnly"] := "0x1"
 469 [-]: SETLIST   R5 4 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 4
-470 [-]: SETTABLE  R4 K72 R5    ; R4[8] := R5
+470 [-]: SETTABLE  R4 K73 R5    ; R4[8] := R5
 471 [-]: NEWTABLE  R5 2 0       ; R5 := {}
 472 [-]: NEWTABLE  R6 0 5       ; R6 := {}
 473 [-]: GETGLOBAL R7 K55       ; R7 := Game
 474 [-]: GETTABLE  R7 R7 K97    ; R7 := R7["WEAPON_AMMO_CONSUME_RATE"]
 475 [-]: SETTABLE  R6 K54 R7    ; R6["upgradeType"] := R7
 476 [-]: SETTABLE  R6 K64 K99   ; R6["value"] := 0.5
-477 [-]: GETGLOBAL R7 K55       ; R7 := Game
-478 [-]: GETTABLE  R7 R7 K71    ; R7 := R7["MULTIPLY"]
+477 [-]: GETGLOBAL R7 K67       ; R7 := Engine
+478 [-]: GETTABLE  R7 R7 K72    ; R7 := R7["MULTIPLY"]
 479 [-]: SETTABLE  R6 K66 R7    ; R6["operationType"] := R7
 480 [-]: NEWTABLE  R7 1 0       ; R7 := {}
-481 [-]: GETGLOBAL R8 K84       ; R8 := Engine
+481 [-]: GETGLOBAL R8 K67       ; R8 := Engine
 482 [-]: GETTABLE  R8 R8 K86    ; R8 := R8["PM_AIRBORNE"]
 483 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
-484 [-]: SETTABLE  R6 K83 R7    ; R6["validModifiers"] := R7
-485 [-]: SETTABLE  R6 K81 R1    ; R6["validType"] := R1
+484 [-]: SETTABLE  R6 K84 R7    ; R6["validModifiers"] := R7
+485 [-]: SETTABLE  R6 K82 R1    ; R6["validType"] := R1
 486 [-]: NEWTABLE  R7 0 5       ; R7 := {}
 487 [-]: GETGLOBAL R8 K55       ; R8 := Game
 488 [-]: GETTABLE  R8 R8 K101   ; R8 := R8["WEAPON_DAMAGE_AMOUNT"]
 489 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 490 [-]: SETTABLE  R7 K64 K99   ; R7["value"] := 0.5
-491 [-]: GETGLOBAL R8 K55       ; R8 := Game
-492 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+491 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+492 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 493 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
 494 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-495 [-]: GETGLOBAL R9 K84       ; R9 := Engine
+495 [-]: GETGLOBAL R9 K67       ; R9 := Engine
 496 [-]: GETTABLE  R9 R9 K86    ; R9 := R9["PM_AIRBORNE"]
 497 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-498 [-]: SETTABLE  R7 K83 R8    ; R7["validModifiers"] := R8
-499 [-]: SETTABLE  R7 K81 R1    ; R7["validType"] := R1
+498 [-]: SETTABLE  R7 K84 R8    ; R7["validModifiers"] := R8
+499 [-]: SETTABLE  R7 K82 R1    ; R7["validType"] := R1
 500 [-]: SETLIST   R5 2 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 2
-501 [-]: SETTABLE  R4 K77 R5    ; R4[9] := R5
+501 [-]: SETTABLE  R4 K78 R5    ; R4[9] := R5
 502 [-]: NEWTABLE  R5 1 0       ; R5 := {}
 503 [-]: NEWTABLE  R6 0 2       ; R6 := {}
 504 [-]: GETGLOBAL R7 K55       ; R7 := Game
@@ -555,8 +555,8 @@ code size: 66
 542 [-]: GETTABLE  R8 R8 K104   ; R8 := R8["SKILL_RJ_BC_AMMO_YIELD"]
 543 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 544 [-]: SETTABLE  R7 K64 K65   ; R7["value"] := 0.25
-545 [-]: GETGLOBAL R8 K55       ; R8 := Game
-546 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+545 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+546 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 547 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
 548 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
 549 [-]: SETTABLE  R5 K60 R6    ; R5[4] := R6
@@ -575,8 +575,8 @@ code size: 66
 562 [-]: GETTABLE  R8 R8 K105   ; R8 := R8["SKILL_RJ_BC_COOLDOWN"]
 563 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 564 [-]: SETTABLE  R7 K64 K106  ; R7["value"] := -0.25
-565 [-]: GETGLOBAL R8 K55       ; R8 := Game
-566 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+565 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+566 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 567 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
 568 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
 569 [-]: SETTABLE  R5 K62 R6    ; R5[6] := R6
@@ -586,52 +586,52 @@ code size: 66
 573 [-]: GETTABLE  R8 R8 K104   ; R8 := R8["SKILL_RJ_BC_AMMO_YIELD"]
 574 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 575 [-]: SETTABLE  R7 K64 K65   ; R7["value"] := 0.25
-576 [-]: GETGLOBAL R8 K55       ; R8 := Game
-577 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+576 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+577 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 578 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
 579 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
-580 [-]: SETTABLE  R5 K68 R6    ; R5[7] := R6
+580 [-]: SETTABLE  R5 K69 R6    ; R5[7] := R6
 581 [-]: NEWTABLE  R6 3 0       ; R6 := {}
 582 [-]: NEWTABLE  R7 0 4       ; R7 := {}
 583 [-]: GETGLOBAL R8 K55       ; R8 := Game
 584 [-]: GETTABLE  R8 R8 K107   ; R8 := R8["AVATAR_HEALTH_MAX"]
 585 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 586 [-]: SETTABLE  R7 K64 K108  ; R7["value"] := 0.30000001192093
-587 [-]: GETGLOBAL R8 K55       ; R8 := Game
-588 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+587 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+588 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 589 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
-590 [-]: SETTABLE  R7 K75 K76   ; R7["archwingOnly"] := "0x1"
+590 [-]: SETTABLE  R7 K76 K77   ; R7["archwingOnly"] := "0x1"
 591 [-]: NEWTABLE  R8 0 4       ; R8 := {}
 592 [-]: GETGLOBAL R9 K55       ; R9 := Game
 593 [-]: GETTABLE  R9 R9 K109   ; R9 := R9["AVATAR_SHIELD_MAX"]
 594 [-]: SETTABLE  R8 K54 R9    ; R8["upgradeType"] := R9
 595 [-]: SETTABLE  R8 K64 K108  ; R8["value"] := 0.30000001192093
-596 [-]: GETGLOBAL R9 K55       ; R9 := Game
-597 [-]: GETTABLE  R9 R9 K67    ; R9 := R9["STACKING_MULTIPLY"]
+596 [-]: GETGLOBAL R9 K67       ; R9 := Engine
+597 [-]: GETTABLE  R9 R9 K68    ; R9 := R9["STACKING_MULTIPLY"]
 598 [-]: SETTABLE  R8 K66 R9    ; R8["operationType"] := R9
-599 [-]: SETTABLE  R8 K75 K76   ; R8["archwingOnly"] := "0x1"
+599 [-]: SETTABLE  R8 K76 K77   ; R8["archwingOnly"] := "0x1"
 600 [-]: NEWTABLE  R9 0 4       ; R9 := {}
 601 [-]: GETGLOBAL R10 K55      ; R10 := Game
 602 [-]: GETTABLE  R10 R10 K110 ; R10 := R10["AVATAR_ARMOUR"]
 603 [-]: SETTABLE  R9 K54 R10   ; R9["upgradeType"] := R10
 604 [-]: SETTABLE  R9 K64 K108  ; R9["value"] := 0.30000001192093
-605 [-]: GETGLOBAL R10 K55      ; R10 := Game
-606 [-]: GETTABLE  R10 R10 K67  ; R10 := R10["STACKING_MULTIPLY"]
+605 [-]: GETGLOBAL R10 K67      ; R10 := Engine
+606 [-]: GETTABLE  R10 R10 K68  ; R10 := R10["STACKING_MULTIPLY"]
 607 [-]: SETTABLE  R9 K66 R10   ; R9["operationType"] := R10
-608 [-]: SETTABLE  R9 K75 K76   ; R9["archwingOnly"] := "0x1"
+608 [-]: SETTABLE  R9 K76 K77   ; R9["archwingOnly"] := "0x1"
 609 [-]: SETLIST   R6 3 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 3
-610 [-]: SETTABLE  R5 K72 R6    ; R5[8] := R6
+610 [-]: SETTABLE  R5 K73 R6    ; R5[8] := R6
 611 [-]: NEWTABLE  R6 1 0       ; R6 := {}
 612 [-]: NEWTABLE  R7 0 3       ; R7 := {}
 613 [-]: GETGLOBAL R8 K55       ; R8 := Game
 614 [-]: GETTABLE  R8 R8 K111   ; R8 := R8["SKILL_RJ_BC_COMPACTION_YIELD"]
 615 [-]: SETTABLE  R7 K54 R8    ; R7["upgradeType"] := R8
 616 [-]: SETTABLE  R7 K64 K112  ; R7["value"] := 0.10000000149012
-617 [-]: GETGLOBAL R8 K55       ; R8 := Game
-618 [-]: GETTABLE  R8 R8 K67    ; R8 := R8["STACKING_MULTIPLY"]
+617 [-]: GETGLOBAL R8 K67       ; R8 := Engine
+618 [-]: GETTABLE  R8 R8 K68    ; R8 := R8["STACKING_MULTIPLY"]
 619 [-]: SETTABLE  R7 K66 R8    ; R7["operationType"] := R8
 620 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
-621 [-]: SETTABLE  R5 K77 R6    ; R5[9] := R6
+621 [-]: SETTABLE  R5 K78 R6    ; R5[9] := R6
 622 [-]: NEWTABLE  R6 1 0       ; R6 := {}
 623 [-]: NEWTABLE  R7 0 2       ; R7 := {}
 624 [-]: GETGLOBAL R8 K55       ; R8 := Game
@@ -696,59 +696,59 @@ code size: 66
  22 [-]: TEST      R2 0         ; if not R2 then PC := 29
  23 [-]: JMP       29           ; PC := 29
  24 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1["0x15C954A"]
- 25 [-]: GETGLOBAL R4 K2        ; R4 := Game
- 26 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["SET"]
+ 25 [-]: GETGLOBAL R4 K7        ; R4 := Engine
+ 26 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["SET"]
  27 [-]: CALL      R2 3 1       ; R2(R3,R4)
  28 [-]: JMP       32           ; PC := 32
  29 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1["0x15C954A"]
  30 [-]: GETTABLE  R4 R0 K5     ; R4 := R0["operationType"]
  31 [-]: CALL      R2 3 1       ; R2(R3,R4)
  32 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 33 [-]: GETTABLE  R3 R0 K8     ; R3 := R0["value"]
+ 33 [-]: GETTABLE  R3 R0 K9     ; R3 := R0["value"]
  34 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  35 [-]: TEST      R2 0         ; if not R2 then PC := 41
  36 [-]: JMP       41           ; PC := 41
- 37 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1["0x6733C272"]
- 38 [-]: LOADK     R4 K10       ; R4 := 1
+ 37 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1["0x6733C272"]
+ 38 [-]: LOADK     R4 K11       ; R4 := 1
  39 [-]: CALL      R2 3 1       ; R2(R3,R4)
  40 [-]: JMP       44           ; PC := 44
- 41 [-]: SELF      R2 R1 K9     ; R3 := R1; R2 := R1["0x6733C272"]
- 42 [-]: GETTABLE  R4 R0 K8     ; R4 := R0["value"]
+ 41 [-]: SELF      R2 R1 K10    ; R3 := R1; R2 := R1["0x6733C272"]
+ 42 [-]: GETTABLE  R4 R0 K9     ; R4 := R0["value"]
  43 [-]: CALL      R2 3 1       ; R2(R3,R4)
  44 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 45 [-]: GETTABLE  R3 R0 K11    ; R3 := R0["validType"]
+ 45 [-]: GETTABLE  R3 R0 K12    ; R3 := R0["validType"]
  46 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  47 [-]: TEST      R2 1         ; if R2 then PC := 52
  48 [-]: JMP       52           ; PC := 52
- 49 [-]: SELF      R2 R1 K12    ; R3 := R1; R2 := R1["0x4BC4C516"]
- 50 [-]: GETTABLE  R4 R0 K11    ; R4 := R0["validType"]
+ 49 [-]: SELF      R2 R1 K13    ; R3 := R1; R2 := R1["0x4BC4C516"]
+ 50 [-]: GETTABLE  R4 R0 K12    ; R4 := R0["validType"]
  51 [-]: CALL      R2 3 1       ; R2(R3,R4)
  52 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 53 [-]: GETTABLE  R3 R0 K13    ; R3 := R0["validPosture"]
+ 53 [-]: GETTABLE  R3 R0 K14    ; R3 := R0["validPosture"]
  54 [-]: CALL      R2 2 2       ; R2 := R2(R3)
  55 [-]: TEST      R2 1         ; if R2 then PC := 61
  56 [-]: JMP       61           ; PC := 61
- 57 [-]: SELF      R2 R1 K14    ; R3 := R1; R2 := R1["0x8D014B2F"]
- 58 [-]: GETTABLE  R4 R0 K13    ; R4 := R0["validPosture"]
+ 57 [-]: SELF      R2 R1 K15    ; R3 := R1; R2 := R1["0x8D014B2F"]
+ 58 [-]: GETTABLE  R4 R0 K14    ; R4 := R0["validPosture"]
  59 [-]: MOVE      R5 R1        ; R5 := R1
  60 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
- 61 [-]: GETGLOBAL R2 K15       ; R2 := 0x63B09107
- 62 [-]: GETTABLE  R3 R0 K16    ; R3 := R0["validModifiers"]
+ 61 [-]: GETGLOBAL R2 K16       ; R2 := 0x63B09107
+ 62 [-]: GETTABLE  R3 R0 K17    ; R3 := R0["validModifiers"]
  63 [-]: CALL      R2 2 4       ; R2,R3,R4 := R2(R3)
  64 [-]: JMP       69           ; PC := 69
- 65 [-]: SELF      R7 R1 K17    ; R8 := R1; R7 := R1["0xD6538985"]
+ 65 [-]: SELF      R7 R1 K18    ; R8 := R1; R7 := R1["0xD6538985"]
  66 [-]: MOVE      R9 R6        ; R9 := R6
  67 [-]: MOVE      R10 R1       ; R10 := R1
  68 [-]: CALL      R7 4 1       ; R7(R8,R9,R10)
  69 [-]: TFORLOOP  R2 2         ; R5,R6 :=  R2(R3,R4); if R5 ~= nil then begin PC = 65; R4 := R5 end
  70 [-]: JMP       65           ; PC := 65
  71 [-]: GETGLOBAL R7 K0        ; R7 := 0x400E7765
- 72 [-]: GETTABLE  R8 R0 K18    ; R8 := R0["filter"]
+ 72 [-]: GETTABLE  R8 R0 K19    ; R8 := R0["filter"]
  73 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  74 [-]: TEST      R7 1         ; if R7 then PC := 79
  75 [-]: JMP       79           ; PC := 79
- 76 [-]: SELF      R7 R1 K19    ; R8 := R1; R7 := R1["0xEB8C952"]
- 77 [-]: GETTABLE  R9 R0 K18    ; R9 := R0["filter"]
+ 76 [-]: SELF      R7 R1 K20    ; R8 := R1; R7 := R1["0xEB8C952"]
+ 77 [-]: GETTABLE  R9 R0 K19    ; R9 := R0["filter"]
  78 [-]: CALL      R7 3 1       ; R7(R8,R9)
  79 [-]: RETURN    R1 2         ; return R1
  80 [-]: RETURN    R0 1         ; return 

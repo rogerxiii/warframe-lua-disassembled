@@ -121,20 +121,20 @@ code size: 39
  21 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  22 [-]: GETGLOBAL R5 K7        ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
- 24 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 25 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["STACKING_MULTIPLY"]
+ 24 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 25 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["STACKING_MULTIPLY"]
  26 [-]: GETUPVAL  R7 U1        ; R7 := U1
  27 [-]: CALL      R7 1 0       ; R7,... := R7()
  28 [-]: CALL      R3 0 1       ; R3(R4,...)
  29 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0x3B1B11B9"]
  30 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 31 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_HEAVY_LAND_SPEED"]
- 32 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 33 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["SET"]
+ 31 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_HEAVY_LAND_SPEED"]
+ 32 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 33 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["SET"]
  34 [-]: GETUPVAL  R7 U2        ; R7 := U2
  35 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 36 [-]: SELF      R3 R1 K12    ; R4 := R1; R3 := R1["0x9E987489"]
- 37 [-]: GETGLOBAL R5 K13       ; R5 := climbController
+ 36 [-]: SELF      R3 R1 K13    ; R4 := R1; R3 := R1["0x9E987489"]
+ 37 [-]: GETGLOBAL R5 K14       ; R5 := climbController
  38 [-]: CALL      R3 3 1       ; R3(R4,R5)
  39 [-]: RETURN    R0 1         ; return 
 
@@ -171,19 +171,19 @@ code size: 39
  21 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0xF21555A7"]
  22 [-]: GETGLOBAL R5 K7        ; R5 := Game
  23 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["AVATAR_KNOCKDOWN_RECOVERY_SPEED"]
- 24 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 25 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["STACKING_MULTIPLY"]
+ 24 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 25 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["STACKING_MULTIPLY"]
  26 [-]: GETUPVAL  R7 U1        ; R7 := U1
  27 [-]: CALL      R7 1 0       ; R7,... := R7()
  28 [-]: CALL      R3 0 1       ; R3(R4,...)
  29 [-]: SELF      R3 R2 K6     ; R4 := R2; R3 := R2["0xF21555A7"]
  30 [-]: GETGLOBAL R5 K7        ; R5 := Game
- 31 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["AVATAR_HEAVY_LAND_SPEED"]
- 32 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 33 [-]: GETTABLE  R6 R6 K11    ; R6 := R6["SET"]
+ 31 [-]: GETTABLE  R5 R5 K11    ; R5 := R5["AVATAR_HEAVY_LAND_SPEED"]
+ 32 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 33 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["SET"]
  34 [-]: GETUPVAL  R7 U2        ; R7 := U2
  35 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 36 [-]: SELF      R3 R1 K12    ; R4 := R1; R3 := R1["0x9E987489"]
+ 36 [-]: SELF      R3 R1 K13    ; R4 := R1; R3 := R1["0x9E987489"]
  37 [-]: LOADNIL   R5 R5        ; R5 := nil
  38 [-]: CALL      R3 3 1       ; R3(R4,R5)
  39 [-]: RETURN    R0 1         ; return 

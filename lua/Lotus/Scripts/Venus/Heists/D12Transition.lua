@@ -9,7 +9,7 @@ code size: 31
 code size: 37
 code size: 139
 code size: 26
-code size: 272
+code size: 289
 code size: 29
 code size: 6
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -657,226 +657,243 @@ code size: 6
  56 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  57 [-]: MOVE      R4 R5        ; R4 := R5
  58 [-]: JMP       49           ; PC := 49
- 59 [-]: GETGLOBAL R5 K5        ; R5 := gRegion
- 60 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5["0x3E2F6BF"]
- 61 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 62 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
- 63 [-]: MOVE      R7 R5        ; R7 := R5
- 64 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 65 [-]: TEST      R6 0         ; if not R6 then PC := 75
- 66 [-]: JMP       75           ; PC := 75
- 67 [-]: GETGLOBAL R6 K5        ; R6 := gRegion
- 68 [-]: SELF      R6 R6 K15    ; R7 := R6; R6 := R6["0x3E2F6BF"]
- 69 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 70 [-]: MOVE      R5 R6        ; R5 := R6
- 71 [-]: GETGLOBAL R6 K14       ; R6 := 0x201191EA
- 72 [-]: LOADK     R7 K13       ; R7 := 0
- 73 [-]: CALL      R6 2 1       ; R6(R7)
- 74 [-]: JMP       62           ; PC := 62
- 75 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
- 76 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0["0x72E5DB62"]
- 77 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
- 78 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 79 [-]: TEST      R6 0         ; if not R6 then PC := 85
- 80 [-]: JMP       85           ; PC := 85
- 81 [-]: GETGLOBAL R6 K14       ; R6 := 0x201191EA
- 82 [-]: LOADK     R7 K13       ; R7 := 0
- 83 [-]: CALL      R6 2 1       ; R6(R7)
- 84 [-]: JMP       75           ; PC := 75
- 85 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
- 86 [-]: MOVE      R7 R5        ; R7 := R5
- 87 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 88 [-]: MOVE      R6 R6        ; R6 := R6
- 89 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0["0x72E5DB62"]
- 90 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 91 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0xE0C25A13"]
- 92 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 93 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 94 [-]: MOVE      R9 R7        ; R9 := R7
- 95 [-]: CALL      R8 2 1       ; R8(R9)
- 96 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
- 97 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0xAD90C5F9"]
- 98 [-]: GETUPVAL  R10 U1       ; R10 := U1
- 99 [-]: GETUPVAL  R11 U2       ; R11 := U2
-100 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
-101 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
-102 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0xA559F558"]
-103 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-104 [-]: TEST      R8 0         ; if not R8 then PC := 110
-105 [-]: JMP       110          ; PC := 110
-106 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
-107 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0xB36DAC85"]
-108 [-]: GETUPVAL  R10 U1       ; R10 := U1
-109 [-]: CALL      R8 3 1       ; R8(R9,R10)
-110 [-]: GETGLOBAL R8 K20       ; R8 := _T
-111 [-]: SETTABLE  R8 K21 K22   ; R8["isStreamingLevel"] := "0x1"
-112 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
-113 [-]: SELF      R8 R8 K23    ; R9 := R8; R8 := R8["0xDA2EFC58"]
-114 [-]: GETGLOBAL R10 K24      ; R10 := connectorLayerName
-115 [-]: GETGLOBAL R11 K25      ; R11 := oldLayerIndex
-116 [-]: MOVE      R12 R2       ; R12 := R2
-117 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-118 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
-119 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0xA559F558"]
-120 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-121 [-]: TEST      R8 0         ; if not R8 then PC := 126
-122 [-]: JMP       126          ; PC := 126
-123 [-]: GETGLOBAL R8 K14       ; R8 := 0x201191EA
-124 [-]: LOADK     R9 K26       ; R9 := 0.20000000298023
-125 [-]: CALL      R8 2 1       ; R8(R9)
-126 [-]: GETUPVAL  R8 U3        ; R8 := U3
-127 [-]: GETGLOBAL R9 K25       ; R9 := oldLayerIndex
-128 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-129 [-]: TEST      R8 1         ; if R8 then PC := 145
-130 [-]: JMP       145          ; PC := 145
-131 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
-132 [-]: SELF      R8 R8 K23    ; R9 := R8; R8 := R8["0xDA2EFC58"]
-133 [-]: GETGLOBAL R10 K24      ; R10 := connectorLayerName
-134 [-]: LOADK     R11 K13      ; R11 := 0
-135 [-]: MOVE      R12 R2       ; R12 := R2
-136 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-137 [-]: GETUPVAL  R8 U3        ; R8 := U3
-138 [-]: LOADK     R9 K13       ; R9 := 0
-139 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-140 [-]: TEST      R8 1         ; if R8 then PC := 145
-141 [-]: JMP       145          ; PC := 145
-142 [-]: GETGLOBAL R8 K20       ; R8 := _T
-143 [-]: SETTABLE  R8 K21 K27   ; R8["isStreamingLevel"] := "0x0"
-144 [-]: RETURN    R0 1         ; return 
-145 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
-146 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0xAD90C5F9"]
-147 [-]: GETUPVAL  R10 U4       ; R10 := U4
-148 [-]: GETUPVAL  R11 U2       ; R11 := U2
-149 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
-150 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
-151 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0xA559F558"]
-152 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-153 [-]: TEST      R8 0         ; if not R8 then PC := 215
-154 [-]: JMP       215          ; PC := 215
-155 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
-156 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0xB36DAC85"]
-157 [-]: GETUPVAL  R10 U4       ; R10 := U4
-158 [-]: CALL      R8 3 1       ; R8(R9,R10)
-159 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
-160 [-]: SELF      R8 R8 K28    ; R9 := R8; R8 := R8["0xD2075696"]
-161 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-162 [-]: SETTABLE  R8 K29 R1    ; R8["level"] := R1
-163 [-]: SETTABLE  R8 K30 R2    ; R8["streamingLayer"] := R2
-164 [-]: GETGLOBAL R9 K32       ; R9 := GraphicsRes
-165 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["StreamRegion_Connect"]
-166 [-]: SETTABLE  R8 K31 R9    ; R8["streamingMode"] := R9
-167 [-]: SELF      R9 R8 K34    ; R10 := R8; R9 := R8["0xE5C6371B"]
-168 [-]: GETGLOBAL R11 K35      ; R11 := ZERO_VECTOR
-169 [-]: GETGLOBAL R12 K36      ; R12 := 0x1E4F6281
-170 [-]: CALL      R12 1 0      ; R12,... := R12()
-171 [-]: CALL      R9 0 1       ; R9(R10,...)
-172 [-]: SELF      R9 R8 K37    ; R10 := R8; R9 := R8["0xB13400CA"]
-173 [-]: LOADK     R11 K38      ; R11 := "StreamingCallback"
-174 [-]: CALL      R9 3 1       ; R9(R10,R11)
-175 [-]: SETTABLE  R8 K39 K27   ; R8["isAutonomous"] := "0x0"
-176 [-]: GETGLOBAL R9 K40       ; R9 := streamLowPriority
-177 [-]: TEST      R9 0         ; if not R9 then PC := 183
-178 [-]: JMP       183          ; PC := 183
-179 [-]: GETGLOBAL R9 K42       ; R9 := Engine
-180 [-]: GETTABLE  R9 R9 K43    ; R9 := R9["LEVEL_STREAMING_LOW_PRIORITY"]
-181 [-]: SETTABLE  R8 K41 R9    ; R8["streamingPriority"] := R9
-182 [-]: JMP       186          ; PC := 186
-183 [-]: GETGLOBAL R9 K42       ; R9 := Engine
-184 [-]: GETTABLE  R9 R9 K44    ; R9 := R9["LEVEL_STREAMING_HIGH_PRIORITY"]
-185 [-]: SETTABLE  R8 K41 R9    ; R8["streamingPriority"] := R9
-186 [-]: GETGLOBAL R9 K42       ; R9 := Engine
-187 [-]: GETTABLE  R9 R9 K45    ; R9 := R9["0x6F85BCB0"]
-188 [-]: MOVE      R10 R8       ; R10 := R8
-189 [-]: CALL      R9 2 1       ; R9(R10)
-190 [-]: GETGLOBAL R9 K5        ; R9 := gRegion
-191 [-]: SELF      R9 R9 K2     ; R10 := R9; R9 := R9["0xA559F558"]
-192 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-193 [-]: TEST      R9 0         ; if not R9 then PC := 203
-194 [-]: JMP       203          ; PC := 203
-195 [-]: MOVE      R9 R1        ; R9 := R1
-196 [-]: SELF      R10 R8 K46   ; R11 := R8; R10 := R8["0xA2DD42BA"]
-197 [-]: MOVE      R12 R9       ; R12 := R9
-198 [-]: CALL      R10 3 1      ; R10(R11,R12)
-199 [-]: GETGLOBAL R10 K42      ; R10 := Engine
-200 [-]: GETTABLE  R10 R10 K45  ; R10 := R10["0x6F85BCB0"]
-201 [-]: MOVE      R11 R8       ; R11 := R8
-202 [-]: CALL      R10 2 1      ; R10(R11)
-203 [-]: GETUPVAL  R10 U5       ; R10 := U5
-204 [-]: CALL      R10 1 1      ; R10()
-205 [-]: LOADNIL   R10 R10      ; R10 := nil
-206 [-]: MOVE      R10 R6       ; R10 := R6
-207 [-]: GETUPVAL  R10 U6       ; R10 := U6
-208 [-]: EQ        0 R10 K47    ; if R10 ~= nil then PC := 235
-209 [-]: JMP       235          ; PC := 235
-210 [-]: GETGLOBAL R10 K14      ; R10 := 0x201191EA
-211 [-]: LOADK     R11 K13      ; R11 := 0
-212 [-]: CALL      R10 2 1      ; R10(R11)
-213 [-]: JMP       207          ; PC := 207
-214 [-]: JMP       235          ; PC := 235
-215 [-]: GETGLOBAL R10 K48      ; R10 := gClient
-216 [-]: SELF      R10 R10 K49  ; R11 := R10; R10 := R10["0x8020D170"]
-217 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-218 [-]: TEST      R10 1        ; if R10 then PC := 224
-219 [-]: JMP       224          ; PC := 224
-220 [-]: GETGLOBAL R10 K14      ; R10 := 0x201191EA
-221 [-]: LOADK     R11 K13      ; R11 := 0
-222 [-]: CALL      R10 2 1      ; R10(R11)
-223 [-]: JMP       215          ; PC := 215
-224 [-]: GETUPVAL  R10 U5       ; R10 := U5
-225 [-]: CALL      R10 1 1      ; R10()
-226 [-]: GETGLOBAL R10 K48      ; R10 := gClient
-227 [-]: SELF      R10 R10 K49  ; R11 := R10; R10 := R10["0x8020D170"]
-228 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-229 [-]: TEST      R10 0        ; if not R10 then PC := 235
-230 [-]: JMP       235          ; PC := 235
-231 [-]: GETGLOBAL R10 K14      ; R10 := 0x201191EA
-232 [-]: LOADK     R11 K50      ; R11 := 0.10000000149012
-233 [-]: CALL      R10 2 1      ; R10(R11)
-234 [-]: JMP       226          ; PC := 226
-235 [-]: GETGLOBAL R10 K1       ; R10 := gGameRules
-236 [-]: SELF      R10 R10 K18  ; R11 := R10; R10 := R10["0xAD90C5F9"]
-237 [-]: GETUPVAL  R12 U7       ; R12 := U7
-238 [-]: GETUPVAL  R13 U2       ; R13 := U2
-239 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
-240 [-]: GETGLOBAL R10 K5       ; R10 := gRegion
-241 [-]: SELF      R10 R10 K2   ; R11 := R10; R10 := R10["0xA559F558"]
-242 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-243 [-]: TEST      R10 0        ; if not R10 then PC := 249
-244 [-]: JMP       249          ; PC := 249
-245 [-]: GETGLOBAL R10 K1       ; R10 := gGameRules
-246 [-]: SELF      R10 R10 K19  ; R11 := R10; R10 := R10["0xB36DAC85"]
-247 [-]: GETUPVAL  R12 U7       ; R12 := U7
-248 [-]: CALL      R10 3 1      ; R10(R11,R12)
-249 [-]: GETUPVAL  R10 U8       ; R10 := U8
-250 [-]: CALL      R10 1 1      ; R10()
-251 [-]: GETUPVAL  R10 U9       ; R10 := U9
-252 [-]: CALL      R10 1 1      ; R10()
-253 [-]: GETGLOBAL R10 K51      ; R10 := destroyLevelInfo
-254 [-]: TEST      R10 0        ; if not R10 then PC := 263
-255 [-]: JMP       263          ; PC := 263
-256 [-]: GETGLOBAL R10 K5       ; R10 := gRegion
-257 [-]: SELF      R10 R10 K52  ; R11 := R10; R10 := R10["0xA933C036"]
-258 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-259 [-]: GETGLOBAL R11 K5       ; R11 := gRegion
-260 [-]: SELF      R11 R11 K53  ; R12 := R11; R11 := R11["0x9B0A3887"]
-261 [-]: MOVE      R13 R10      ; R13 := R10
-262 [-]: CALL      R11 3 1      ; R11(R12,R13)
-263 [-]: GETGLOBAL R11 K20      ; R11 := _T
-264 [-]: SETTABLE  R11 K21 K47  ; R11["isStreamingLevel"] := nil
-265 [-]: GETGLOBAL R11 K1       ; R11 := gGameRules
-266 [-]: SELF      R11 R11 K54  ; R12 := R11; R11 := R11["0xA8C9DBF8"]
-267 [-]: GETUPVAL  R13 U2       ; R13 := U2
-268 [-]: CALL      R11 3 1      ; R11(R12,R13)
-269 [-]: GETGLOBAL R11 K55      ; R11 := 0x93B1256B
-270 [-]: LOADK     R12 K56      ; R12 := "D12TRANSITION: Streaming done"
-271 [-]: CALL      R11 2 1      ; R11(R12)
-272 [-]: RETURN    R0 1         ; return 
+ 59 [-]: LOADNIL   R5 R5        ; R5 := nil
+ 60 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 61 [-]: GETGLOBAL R7 K15       ; R7 := gClient
+ 62 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 63 [-]: TEST      R6 1         ; if R6 then PC := 82
+ 64 [-]: JMP       82           ; PC := 82
+ 65 [-]: GETGLOBAL R6 K5        ; R6 := gRegion
+ 66 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6["0x3E2F6BF"]
+ 67 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 68 [-]: MOVE      R5 R6        ; R5 := R6
+ 69 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 70 [-]: MOVE      R7 R5        ; R7 := R5
+ 71 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 72 [-]: TEST      R6 0         ; if not R6 then PC := 82
+ 73 [-]: JMP       82           ; PC := 82
+ 74 [-]: GETGLOBAL R6 K5        ; R6 := gRegion
+ 75 [-]: SELF      R6 R6 K16    ; R7 := R6; R6 := R6["0x3E2F6BF"]
+ 76 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 77 [-]: MOVE      R5 R6        ; R5 := R6
+ 78 [-]: GETGLOBAL R6 K14       ; R6 := 0x201191EA
+ 79 [-]: LOADK     R7 K13       ; R7 := 0
+ 80 [-]: CALL      R6 2 1       ; R6(R7)
+ 81 [-]: JMP       69           ; PC := 69
+ 82 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 83 [-]: SELF      R7 R0 K17    ; R8 := R0; R7 := R0["0x72E5DB62"]
+ 84 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+ 85 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+ 86 [-]: TEST      R6 0         ; if not R6 then PC := 92
+ 87 [-]: JMP       92           ; PC := 92
+ 88 [-]: GETGLOBAL R6 K14       ; R6 := 0x201191EA
+ 89 [-]: LOADK     R7 K13       ; R7 := 0
+ 90 [-]: CALL      R6 2 1       ; R6(R7)
+ 91 [-]: JMP       82           ; PC := 82
+ 92 [-]: GETGLOBAL R6 K0        ; R6 := 0x400E7765
+ 93 [-]: MOVE      R7 R5        ; R7 := R5
+ 94 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 95 [-]: MOVE      R6 R6        ; R6 := R6
+ 96 [-]: SELF      R7 R0 K17    ; R8 := R0; R7 := R0["0x72E5DB62"]
+ 97 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 98 [-]: SELF      R7 R7 K18    ; R8 := R7; R7 := R7["0xE0C25A13"]
+ 99 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+100 [-]: GETGLOBAL R8 K0        ; R8 := 0x400E7765
+101 [-]: MOVE      R9 R5        ; R9 := R5
+102 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+103 [-]: TEST      R8 1         ; if R8 then PC := 108
+104 [-]: JMP       108          ; PC := 108
+105 [-]: GETUPVAL  R8 U0        ; R8 := U0
+106 [-]: MOVE      R9 R7        ; R9 := R7
+107 [-]: CALL      R8 2 1       ; R8(R9)
+108 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
+109 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0xAD90C5F9"]
+110 [-]: GETUPVAL  R10 U1       ; R10 := U1
+111 [-]: GETUPVAL  R11 U2       ; R11 := U2
+112 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+113 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
+114 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0xA559F558"]
+115 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+116 [-]: TEST      R8 0         ; if not R8 then PC := 122
+117 [-]: JMP       122          ; PC := 122
+118 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
+119 [-]: SELF      R8 R8 K20    ; R9 := R8; R8 := R8["0xB36DAC85"]
+120 [-]: GETUPVAL  R10 U1       ; R10 := U1
+121 [-]: CALL      R8 3 1       ; R8(R9,R10)
+122 [-]: GETGLOBAL R8 K21       ; R8 := _T
+123 [-]: SETTABLE  R8 K22 K23   ; R8["isStreamingLevel"] := "0x1"
+124 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
+125 [-]: SELF      R8 R8 K24    ; R9 := R8; R8 := R8["0xDA2EFC58"]
+126 [-]: GETGLOBAL R10 K25      ; R10 := connectorLayerName
+127 [-]: GETGLOBAL R11 K26      ; R11 := oldLayerIndex
+128 [-]: MOVE      R12 R2       ; R12 := R2
+129 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+130 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
+131 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0xA559F558"]
+132 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+133 [-]: TEST      R8 0         ; if not R8 then PC := 138
+134 [-]: JMP       138          ; PC := 138
+135 [-]: GETGLOBAL R8 K14       ; R8 := 0x201191EA
+136 [-]: LOADK     R9 K27       ; R9 := 0.20000000298023
+137 [-]: CALL      R8 2 1       ; R8(R9)
+138 [-]: GETUPVAL  R8 U3        ; R8 := U3
+139 [-]: GETGLOBAL R9 K26       ; R9 := oldLayerIndex
+140 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+141 [-]: TEST      R8 1         ; if R8 then PC := 157
+142 [-]: JMP       157          ; PC := 157
+143 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
+144 [-]: SELF      R8 R8 K24    ; R9 := R8; R8 := R8["0xDA2EFC58"]
+145 [-]: GETGLOBAL R10 K25      ; R10 := connectorLayerName
+146 [-]: LOADK     R11 K13      ; R11 := 0
+147 [-]: MOVE      R12 R2       ; R12 := R2
+148 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+149 [-]: GETUPVAL  R8 U3        ; R8 := U3
+150 [-]: LOADK     R9 K13       ; R9 := 0
+151 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+152 [-]: TEST      R8 1         ; if R8 then PC := 157
+153 [-]: JMP       157          ; PC := 157
+154 [-]: GETGLOBAL R8 K21       ; R8 := _T
+155 [-]: SETTABLE  R8 K22 K28   ; R8["isStreamingLevel"] := "0x0"
+156 [-]: RETURN    R0 1         ; return 
+157 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
+158 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0xAD90C5F9"]
+159 [-]: GETUPVAL  R10 U4       ; R10 := U4
+160 [-]: GETUPVAL  R11 U2       ; R11 := U2
+161 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+162 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
+163 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0xA559F558"]
+164 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+165 [-]: TEST      R8 0         ; if not R8 then PC := 227
+166 [-]: JMP       227          ; PC := 227
+167 [-]: GETGLOBAL R8 K1        ; R8 := gGameRules
+168 [-]: SELF      R8 R8 K20    ; R9 := R8; R8 := R8["0xB36DAC85"]
+169 [-]: GETUPVAL  R10 U4       ; R10 := U4
+170 [-]: CALL      R8 3 1       ; R8(R9,R10)
+171 [-]: GETGLOBAL R8 K5        ; R8 := gRegion
+172 [-]: SELF      R8 R8 K29    ; R9 := R8; R8 := R8["0xD2075696"]
+173 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+174 [-]: SETTABLE  R8 K30 R1    ; R8["level"] := R1
+175 [-]: SETTABLE  R8 K31 R2    ; R8["streamingLayer"] := R2
+176 [-]: GETGLOBAL R9 K33       ; R9 := GraphicsRes
+177 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["StreamRegion_Connect"]
+178 [-]: SETTABLE  R8 K32 R9    ; R8["streamingMode"] := R9
+179 [-]: SELF      R9 R8 K35    ; R10 := R8; R9 := R8["0xE5C6371B"]
+180 [-]: GETGLOBAL R11 K36      ; R11 := ZERO_VECTOR
+181 [-]: GETGLOBAL R12 K37      ; R12 := 0x1E4F6281
+182 [-]: CALL      R12 1 0      ; R12,... := R12()
+183 [-]: CALL      R9 0 1       ; R9(R10,...)
+184 [-]: SELF      R9 R8 K38    ; R10 := R8; R9 := R8["0xB13400CA"]
+185 [-]: LOADK     R11 K39      ; R11 := "StreamingCallback"
+186 [-]: CALL      R9 3 1       ; R9(R10,R11)
+187 [-]: SETTABLE  R8 K40 K28   ; R8["isAutonomous"] := "0x0"
+188 [-]: GETGLOBAL R9 K41       ; R9 := streamLowPriority
+189 [-]: TEST      R9 0         ; if not R9 then PC := 195
+190 [-]: JMP       195          ; PC := 195
+191 [-]: GETGLOBAL R9 K43       ; R9 := Engine
+192 [-]: GETTABLE  R9 R9 K44    ; R9 := R9["LEVEL_STREAMING_LOW_PRIORITY"]
+193 [-]: SETTABLE  R8 K42 R9    ; R8["streamingPriority"] := R9
+194 [-]: JMP       198          ; PC := 198
+195 [-]: GETGLOBAL R9 K43       ; R9 := Engine
+196 [-]: GETTABLE  R9 R9 K45    ; R9 := R9["LEVEL_STREAMING_HIGH_PRIORITY"]
+197 [-]: SETTABLE  R8 K42 R9    ; R8["streamingPriority"] := R9
+198 [-]: GETGLOBAL R9 K43       ; R9 := Engine
+199 [-]: GETTABLE  R9 R9 K46    ; R9 := R9["0x6F85BCB0"]
+200 [-]: MOVE      R10 R8       ; R10 := R8
+201 [-]: CALL      R9 2 1       ; R9(R10)
+202 [-]: GETGLOBAL R9 K5        ; R9 := gRegion
+203 [-]: SELF      R9 R9 K2     ; R10 := R9; R9 := R9["0xA559F558"]
+204 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+205 [-]: TEST      R9 0         ; if not R9 then PC := 215
+206 [-]: JMP       215          ; PC := 215
+207 [-]: MOVE      R9 R1        ; R9 := R1
+208 [-]: SELF      R10 R8 K47   ; R11 := R8; R10 := R8["0xA2DD42BA"]
+209 [-]: MOVE      R12 R9       ; R12 := R9
+210 [-]: CALL      R10 3 1      ; R10(R11,R12)
+211 [-]: GETGLOBAL R10 K43      ; R10 := Engine
+212 [-]: GETTABLE  R10 R10 K46  ; R10 := R10["0x6F85BCB0"]
+213 [-]: MOVE      R11 R8       ; R11 := R8
+214 [-]: CALL      R10 2 1      ; R10(R11)
+215 [-]: GETUPVAL  R10 U5       ; R10 := U5
+216 [-]: CALL      R10 1 1      ; R10()
+217 [-]: LOADNIL   R10 R10      ; R10 := nil
+218 [-]: MOVE      R10 R6       ; R10 := R6
+219 [-]: GETUPVAL  R10 U6       ; R10 := U6
+220 [-]: EQ        0 R10 K48    ; if R10 ~= nil then PC := 247
+221 [-]: JMP       247          ; PC := 247
+222 [-]: GETGLOBAL R10 K14      ; R10 := 0x201191EA
+223 [-]: LOADK     R11 K13      ; R11 := 0
+224 [-]: CALL      R10 2 1      ; R10(R11)
+225 [-]: JMP       219          ; PC := 219
+226 [-]: JMP       247          ; PC := 247
+227 [-]: GETGLOBAL R10 K15      ; R10 := gClient
+228 [-]: SELF      R10 R10 K49  ; R11 := R10; R10 := R10["0x8020D170"]
+229 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+230 [-]: TEST      R10 1        ; if R10 then PC := 236
+231 [-]: JMP       236          ; PC := 236
+232 [-]: GETGLOBAL R10 K14      ; R10 := 0x201191EA
+233 [-]: LOADK     R11 K13      ; R11 := 0
+234 [-]: CALL      R10 2 1      ; R10(R11)
+235 [-]: JMP       227          ; PC := 227
+236 [-]: GETUPVAL  R10 U5       ; R10 := U5
+237 [-]: CALL      R10 1 1      ; R10()
+238 [-]: GETGLOBAL R10 K15      ; R10 := gClient
+239 [-]: SELF      R10 R10 K49  ; R11 := R10; R10 := R10["0x8020D170"]
+240 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+241 [-]: TEST      R10 0        ; if not R10 then PC := 247
+242 [-]: JMP       247          ; PC := 247
+243 [-]: GETGLOBAL R10 K14      ; R10 := 0x201191EA
+244 [-]: LOADK     R11 K50      ; R11 := 0.10000000149012
+245 [-]: CALL      R10 2 1      ; R10(R11)
+246 [-]: JMP       238          ; PC := 238
+247 [-]: GETGLOBAL R10 K1       ; R10 := gGameRules
+248 [-]: SELF      R10 R10 K19  ; R11 := R10; R10 := R10["0xAD90C5F9"]
+249 [-]: GETUPVAL  R12 U7       ; R12 := U7
+250 [-]: GETUPVAL  R13 U2       ; R13 := U2
+251 [-]: CALL      R10 4 1      ; R10(R11,R12,R13)
+252 [-]: GETGLOBAL R10 K5       ; R10 := gRegion
+253 [-]: SELF      R10 R10 K2   ; R11 := R10; R10 := R10["0xA559F558"]
+254 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+255 [-]: TEST      R10 0        ; if not R10 then PC := 261
+256 [-]: JMP       261          ; PC := 261
+257 [-]: GETGLOBAL R10 K1       ; R10 := gGameRules
+258 [-]: SELF      R10 R10 K20  ; R11 := R10; R10 := R10["0xB36DAC85"]
+259 [-]: GETUPVAL  R12 U7       ; R12 := U7
+260 [-]: CALL      R10 3 1      ; R10(R11,R12)
+261 [-]: GETUPVAL  R10 U8       ; R10 := U8
+262 [-]: CALL      R10 1 1      ; R10()
+263 [-]: GETGLOBAL R10 K0       ; R10 := 0x400E7765
+264 [-]: GETGLOBAL R11 K15      ; R11 := gClient
+265 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+266 [-]: TEST      R10 1        ; if R10 then PC := 270
+267 [-]: JMP       270          ; PC := 270
+268 [-]: GETUPVAL  R10 U9       ; R10 := U9
+269 [-]: CALL      R10 1 1      ; R10()
+270 [-]: GETGLOBAL R10 K51      ; R10 := destroyLevelInfo
+271 [-]: TEST      R10 0        ; if not R10 then PC := 280
+272 [-]: JMP       280          ; PC := 280
+273 [-]: GETGLOBAL R10 K5       ; R10 := gRegion
+274 [-]: SELF      R10 R10 K52  ; R11 := R10; R10 := R10["0xA933C036"]
+275 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+276 [-]: GETGLOBAL R11 K5       ; R11 := gRegion
+277 [-]: SELF      R11 R11 K53  ; R12 := R11; R11 := R11["0x9B0A3887"]
+278 [-]: MOVE      R13 R10      ; R13 := R10
+279 [-]: CALL      R11 3 1      ; R11(R12,R13)
+280 [-]: GETGLOBAL R11 K21      ; R11 := _T
+281 [-]: SETTABLE  R11 K22 K48  ; R11["isStreamingLevel"] := nil
+282 [-]: GETGLOBAL R11 K1       ; R11 := gGameRules
+283 [-]: SELF      R11 R11 K54  ; R12 := R11; R11 := R11["0xA8C9DBF8"]
+284 [-]: GETUPVAL  R13 U2       ; R13 := U2
+285 [-]: CALL      R11 3 1      ; R11(R12,R13)
+286 [-]: GETGLOBAL R11 K55      ; R11 := 0x93B1256B
+287 [-]: LOADK     R12 K56      ; R12 := "D12TRANSITION: Streaming done"
+288 [-]: CALL      R11 2 1      ; R11(R12)
+289 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 345
+; Defined at line: 352
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -916,7 +933,7 @@ code size: 6
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 356
+; Defined at line: 363
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0

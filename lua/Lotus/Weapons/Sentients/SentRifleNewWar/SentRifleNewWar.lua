@@ -95,14 +95,14 @@ code size: 103
  22 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5["0x3B1B11B9"]
  23 [-]: GETGLOBAL R7 K6        ; R7 := Game
  24 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["WEAPON_LIFE_STEAL"]
- 25 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 26 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["ADD"]
+ 25 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+ 26 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["ADD"]
  27 [-]: MOVE      R9 R2        ; R9 := R2
- 28 [-]: SELF      R10 R1 K9    ; R11 := R1; R10 := R1["0xE2B32C65"]
+ 28 [-]: SELF      R10 R1 K10   ; R11 := R1; R10 := R1["0xE2B32C65"]
  29 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  30 [-]: MOVE      R11 R1       ; R11 := R1
  31 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 32 [-]: SETTABLE  R3 R4 K10    ; R3[R4] := 1
+ 32 [-]: SETTABLE  R3 R4 K11    ; R3[R4] := 1
  33 [-]: RETURN    R0 1         ; return 
 
 
@@ -139,14 +139,14 @@ code size: 103
  22 [-]: SELF      R5 R5 K5     ; R6 := R5; R5 := R5["0xF21555A7"]
  23 [-]: GETGLOBAL R7 K6        ; R7 := Game
  24 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["WEAPON_LIFE_STEAL"]
- 25 [-]: GETGLOBAL R8 K6        ; R8 := Game
- 26 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["ADD"]
+ 25 [-]: GETGLOBAL R8 K8        ; R8 := Engine
+ 26 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["ADD"]
  27 [-]: MOVE      R9 R2        ; R9 := R2
- 28 [-]: SELF      R10 R1 K9    ; R11 := R1; R10 := R1["0xE2B32C65"]
+ 28 [-]: SELF      R10 R1 K10   ; R11 := R1; R10 := R1["0xE2B32C65"]
  29 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  30 [-]: MOVE      R11 R1       ; R11 := R1
  31 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 32 [-]: SETTABLE  R3 R4 K10    ; R3[R4] := nil
+ 32 [-]: SETTABLE  R3 R4 K11    ; R3[R4] := nil
  33 [-]: RETURN    R0 1         ; return 
 
 

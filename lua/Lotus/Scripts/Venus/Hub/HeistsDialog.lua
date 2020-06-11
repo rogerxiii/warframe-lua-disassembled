@@ -1,4 +1,4 @@
-code size: 116
+code size: 120
 code size: 71
 code size: 30
 code size: 127
@@ -13,7 +13,10 @@ code size: 363
 code size: 15
 code size: 76
 code size: 19
-code size: 101
+code size: 94
+code size: 14
+code size: 19
+code size: 6
 code size: 88
 code size: 7
 code size: 15
@@ -27,7 +30,7 @@ code size: 162
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       2
-; Max Stack Size:  25
+; Max Stack Size:  26
 
   1 [-]: MOVE      R8 R1        ; R8 := R1
   2 [-]: MOVE      R9 R1        ; R9 := R1
@@ -42,115 +45,119 @@ code size: 162
  11 [-]: CALL      R12 2 2      ; R12 := R12(R13)
  12 [-]: MOVE      R13 R0       ; R13 := R0
  13 [-]: GETGLOBAL R14 K6       ; R14 := 0x329BDC44
- 14 [-]: LOADK     R15 K7       ; R15 := "Lotus.Scripts.Libs.PostProcessLib"
+ 14 [-]: LOADK     R15 K7       ; R15 := "Lotus.Scripts.Libs.TransmissionSet"
  15 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  16 [-]: GETGLOBAL R15 K6       ; R15 := 0x329BDC44
- 17 [-]: LOADK     R16 K8       ; R16 := "Lotus.Scripts.Libs.JobLib"
+ 17 [-]: LOADK     R16 K8       ; R16 := "Lotus.Scripts.Libs.PostProcessLib"
  18 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 19 [-]: GETTABLE  R16 R15 K9   ; R16 := R15["0xEC1A136"]
- 20 [-]: GETGLOBAL R17 K4       ; R17 := 0xEC274B1A
- 21 [-]: LOADK     R18 K10      ; R18 := "SolarisSyndicate"
- 22 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+ 19 [-]: GETGLOBAL R16 K6       ; R16 := 0x329BDC44
+ 20 [-]: LOADK     R17 K9       ; R17 := "Lotus.Scripts.Libs.JobLib"
+ 21 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+ 22 [-]: GETTABLE  R17 R16 K10  ; R17 := R16["0xEC1A136"]
  23 [-]: GETGLOBAL R18 K4       ; R18 := 0xEC274B1A
- 24 [-]: LOADK     R19 K11      ; R19 := "EudicoHeists"
- 25 [-]: CALL      R18 2 0      ; R18,... := R18(R19)
- 26 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
- 27 [-]: CLOSURE   R17 0        ; R17 := closure(Function #1)
- 28 [-]: MOVE      R0 R0        ; R0 := R0
- 29 [-]: MOVE      R0 R1        ; R0 := R1
- 30 [-]: MOVE      R0 R2        ; R0 := R2
- 31 [-]: MOVE      R0 R3        ; R0 := R3
- 32 [-]: MOVE      R0 R4        ; R0 := R4
- 33 [-]: MOVE      R0 R5        ; R0 := R5
- 34 [-]: MOVE      R0 R6        ; R0 := R6
- 35 [-]: MOVE      R0 R7        ; R0 := R7
- 36 [-]: MOVE      R0 R8        ; R0 := R8
- 37 [-]: MOVE      R0 R9        ; R0 := R9
- 38 [-]: CLOSURE   R18 1        ; R18 := closure(Function #2)
+ 24 [-]: LOADK     R19 K11      ; R19 := "SolarisSyndicate"
+ 25 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+ 26 [-]: GETGLOBAL R19 K4       ; R19 := 0xEC274B1A
+ 27 [-]: LOADK     R20 K12      ; R20 := "EudicoHeists"
+ 28 [-]: CALL      R19 2 0      ; R19,... := R19(R20)
+ 29 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
+ 30 [-]: CLOSURE   R18 0        ; R18 := closure(Function #1)
+ 31 [-]: MOVE      R0 R0        ; R0 := R0
+ 32 [-]: MOVE      R0 R1        ; R0 := R1
+ 33 [-]: MOVE      R0 R2        ; R0 := R2
+ 34 [-]: MOVE      R0 R3        ; R0 := R3
+ 35 [-]: MOVE      R0 R4        ; R0 := R4
+ 36 [-]: MOVE      R0 R5        ; R0 := R5
+ 37 [-]: MOVE      R0 R6        ; R0 := R6
+ 38 [-]: MOVE      R0 R7        ; R0 := R7
  39 [-]: MOVE      R0 R8        ; R0 := R8
- 40 [-]: MOVE      R0 R4        ; R0 := R4
- 41 [-]: MOVE      R0 R9        ; R0 := R9
- 42 [-]: MOVE      R0 R7        ; R0 := R7
- 43 [-]: NEWTABLE  R19 0 4      ; R19 := {}
- 44 [-]: CLOSURE   R20 2        ; R20 := closure(Function #3)
+ 40 [-]: MOVE      R0 R9        ; R0 := R9
+ 41 [-]: CLOSURE   R19 1        ; R19 := closure(Function #2)
+ 42 [-]: MOVE      R0 R8        ; R0 := R8
+ 43 [-]: MOVE      R0 R4        ; R0 := R4
+ 44 [-]: MOVE      R0 R9        ; R0 := R9
  45 [-]: MOVE      R0 R7        ; R0 := R7
- 46 [-]: MOVE      R0 R12       ; R0 := R12
- 47 [-]: MOVE      R0 R6        ; R0 := R6
- 48 [-]: MOVE      R0 R2        ; R0 := R2
- 49 [-]: MOVE      R0 R1        ; R0 := R1
- 50 [-]: MOVE      R0 R5        ; R0 := R5
- 51 [-]: MOVE      R0 R3        ; R0 := R3
- 52 [-]: SETTABLE  R19 K12 R20  ; R19["HeistProfitTakerBountyOne"] := R20
- 53 [-]: CLOSURE   R20 3        ; R20 := closure(Function #4)
- 54 [-]: MOVE      R0 R6        ; R0 := R6
- 55 [-]: SETTABLE  R19 K13 R20  ; R19["HeistProfitTakerBountyTwo"] := R20
- 56 [-]: CLOSURE   R20 4        ; R20 := closure(Function #5)
- 57 [-]: MOVE      R0 R7        ; R0 := R7
- 58 [-]: MOVE      R0 R12       ; R0 := R12
- 59 [-]: MOVE      R0 R6        ; R0 := R6
- 60 [-]: MOVE      R0 R5        ; R0 := R5
- 61 [-]: MOVE      R0 R3        ; R0 := R3
- 62 [-]: MOVE      R0 R2        ; R0 := R2
- 63 [-]: MOVE      R0 R1        ; R0 := R1
- 64 [-]: SETTABLE  R19 K14 R20  ; R19["HeistProfitTakerBountyThree"] := R20
- 65 [-]: CLOSURE   R20 5        ; R20 := closure(Function #6)
- 66 [-]: MOVE      R0 R7        ; R0 := R7
- 67 [-]: MOVE      R0 R12       ; R0 := R12
- 68 [-]: MOVE      R0 R6        ; R0 := R6
- 69 [-]: MOVE      R0 R5        ; R0 := R5
- 70 [-]: MOVE      R0 R3        ; R0 := R3
- 71 [-]: MOVE      R0 R2        ; R0 := R2
- 72 [-]: MOVE      R0 R1        ; R0 := R1
- 73 [-]: SETTABLE  R19 K15 R20  ; R19["HeistProfitTakerBountyFour"] := R20
- 74 [-]: CLOSURE   R20 6        ; R20 := closure(Function #7)
- 75 [-]: MOVE      R0 R17       ; R0 := R17
- 76 [-]: MOVE      R0 R2        ; R0 := R2
- 77 [-]: MOVE      R0 R12       ; R0 := R12
- 78 [-]: MOVE      R0 R1        ; R0 := R1
- 79 [-]: MOVE      R0 R18       ; R0 := R18
- 80 [-]: CLOSURE   R21 7        ; R21 := closure(Function #8)
- 81 [-]: MOVE      R0 R10       ; R0 := R10
- 82 [-]: MOVE      R0 R14       ; R0 := R14
- 83 [-]: MOVE      R0 R13       ; R0 := R13
- 84 [-]: MOVE      R0 R11       ; R0 := R11
- 85 [-]: CLOSURE   R22 8        ; R22 := closure(Function #9)
- 86 [-]: MOVE      R0 R14       ; R0 := R14
+ 46 [-]: NEWTABLE  R20 0 4      ; R20 := {}
+ 47 [-]: CLOSURE   R21 2        ; R21 := closure(Function #3)
+ 48 [-]: MOVE      R0 R7        ; R0 := R7
+ 49 [-]: MOVE      R0 R12       ; R0 := R12
+ 50 [-]: MOVE      R0 R6        ; R0 := R6
+ 51 [-]: MOVE      R0 R2        ; R0 := R2
+ 52 [-]: MOVE      R0 R1        ; R0 := R1
+ 53 [-]: MOVE      R0 R5        ; R0 := R5
+ 54 [-]: MOVE      R0 R3        ; R0 := R3
+ 55 [-]: SETTABLE  R20 K13 R21  ; R20["HeistProfitTakerBountyOne"] := R21
+ 56 [-]: CLOSURE   R21 3        ; R21 := closure(Function #4)
+ 57 [-]: MOVE      R0 R6        ; R0 := R6
+ 58 [-]: SETTABLE  R20 K14 R21  ; R20["HeistProfitTakerBountyTwo"] := R21
+ 59 [-]: CLOSURE   R21 4        ; R21 := closure(Function #5)
+ 60 [-]: MOVE      R0 R7        ; R0 := R7
+ 61 [-]: MOVE      R0 R12       ; R0 := R12
+ 62 [-]: MOVE      R0 R6        ; R0 := R6
+ 63 [-]: MOVE      R0 R5        ; R0 := R5
+ 64 [-]: MOVE      R0 R3        ; R0 := R3
+ 65 [-]: MOVE      R0 R2        ; R0 := R2
+ 66 [-]: MOVE      R0 R1        ; R0 := R1
+ 67 [-]: SETTABLE  R20 K15 R21  ; R20["HeistProfitTakerBountyThree"] := R21
+ 68 [-]: CLOSURE   R21 5        ; R21 := closure(Function #6)
+ 69 [-]: MOVE      R0 R7        ; R0 := R7
+ 70 [-]: MOVE      R0 R12       ; R0 := R12
+ 71 [-]: MOVE      R0 R6        ; R0 := R6
+ 72 [-]: MOVE      R0 R5        ; R0 := R5
+ 73 [-]: MOVE      R0 R3        ; R0 := R3
+ 74 [-]: MOVE      R0 R2        ; R0 := R2
+ 75 [-]: MOVE      R0 R1        ; R0 := R1
+ 76 [-]: SETTABLE  R20 K16 R21  ; R20["HeistProfitTakerBountyFour"] := R21
+ 77 [-]: CLOSURE   R21 6        ; R21 := closure(Function #7)
+ 78 [-]: MOVE      R0 R18       ; R0 := R18
+ 79 [-]: MOVE      R0 R2        ; R0 := R2
+ 80 [-]: MOVE      R0 R12       ; R0 := R12
+ 81 [-]: MOVE      R0 R1        ; R0 := R1
+ 82 [-]: MOVE      R0 R19       ; R0 := R19
+ 83 [-]: CLOSURE   R22 7        ; R22 := closure(Function #8)
+ 84 [-]: MOVE      R0 R10       ; R0 := R10
+ 85 [-]: MOVE      R0 R15       ; R0 := R15
+ 86 [-]: MOVE      R0 R13       ; R0 := R13
  87 [-]: MOVE      R0 R11       ; R0 := R11
- 88 [-]: CLOSURE   R23 9        ; R23 := closure(Function #10)
- 89 [-]: MOVE      R0 R13       ; R0 := R13
- 90 [-]: SETGLOBAL R23 K16      ; OnLeaveSquad := R23
- 91 [-]: SETGLOBAL R23 K17      ; 0x70979EB1 := R23
- 92 [-]: CLOSURE   R23 10       ; R23 := closure(Function #11)
- 93 [-]: MOVE      R0 R13       ; R0 := R13
- 94 [-]: MOVE      R0 R22       ; R0 := R22
- 95 [-]: MOVE      R0 R14       ; R0 := R14
- 96 [-]: MOVE      R0 R21       ; R0 := R21
- 97 [-]: CLOSURE   R24 11       ; R24 := closure(Function #12)
- 98 [-]: SETGLOBAL R24 K18      ; DelayedStopHeistTableMusic := R24
- 99 [-]: SETGLOBAL R24 K19      ; 0x77F440F4 := R24
-100 [-]: CLOSURE   R24 12       ; R24 := closure(Function #13)
-101 [-]: MOVE      R0 R20       ; R0 := R20
-102 [-]: MOVE      R0 R17       ; R0 := R17
-103 [-]: MOVE      R0 R4        ; R0 := R4
-104 [-]: MOVE      R0 R5        ; R0 := R5
-105 [-]: MOVE      R0 R0        ; R0 := R0
-106 [-]: MOVE      R0 R19       ; R0 := R19
-107 [-]: MOVE      R0 R14       ; R0 := R14
-108 [-]: MOVE      R0 R18       ; R0 := R18
-109 [-]: MOVE      R0 R23       ; R0 := R23
-110 [-]: SETGLOBAL R24 K20      ; HeistsTalkAction := R24
-111 [-]: SETGLOBAL R24 K21      ; 0xAB436E41 := R24
-112 [-]: CLOSURE   R24 13       ; R24 := closure(Function #14)
-113 [-]: MOVE      R0 R16       ; R0 := R16
-114 [-]: SETGLOBAL R24 K22      ; ShowHologramOnEntry := R24
-115 [-]: SETGLOBAL R24 K23      ; 0x7C7D5D1F := R24
-116 [-]: RETURN    R0 1         ; return 
+ 88 [-]: CLOSURE   R23 8        ; R23 := closure(Function #9)
+ 89 [-]: MOVE      R0 R15       ; R0 := R15
+ 90 [-]: MOVE      R0 R11       ; R0 := R11
+ 91 [-]: CLOSURE   R24 9        ; R24 := closure(Function #10)
+ 92 [-]: MOVE      R0 R13       ; R0 := R13
+ 93 [-]: SETGLOBAL R24 K17      ; OnLeaveSquad := R24
+ 94 [-]: SETGLOBAL R24 K18      ; 0x70979EB1 := R24
+ 95 [-]: CLOSURE   R24 10       ; R24 := closure(Function #11)
+ 96 [-]: MOVE      R0 R13       ; R0 := R13
+ 97 [-]: MOVE      R0 R23       ; R0 := R23
+ 98 [-]: MOVE      R0 R15       ; R0 := R15
+ 99 [-]: MOVE      R0 R22       ; R0 := R22
+100 [-]: CLOSURE   R25 11       ; R25 := closure(Function #12)
+101 [-]: SETGLOBAL R25 K19      ; DelayedStopHeistTableMusic := R25
+102 [-]: SETGLOBAL R25 K20      ; 0x77F440F4 := R25
+103 [-]: CLOSURE   R25 12       ; R25 := closure(Function #13)
+104 [-]: MOVE      R0 R14       ; R0 := R14
+105 [-]: MOVE      R0 R21       ; R0 := R21
+106 [-]: MOVE      R0 R18       ; R0 := R18
+107 [-]: MOVE      R0 R4        ; R0 := R4
+108 [-]: MOVE      R0 R5        ; R0 := R5
+109 [-]: MOVE      R0 R0        ; R0 := R0
+110 [-]: MOVE      R0 R20       ; R0 := R20
+111 [-]: MOVE      R0 R15       ; R0 := R15
+112 [-]: MOVE      R0 R19       ; R0 := R19
+113 [-]: MOVE      R0 R24       ; R0 := R24
+114 [-]: SETGLOBAL R25 K21      ; HeistsTalkAction := R25
+115 [-]: SETGLOBAL R25 K22      ; 0xAB436E41 := R25
+116 [-]: CLOSURE   R25 13       ; R25 := closure(Function #14)
+117 [-]: MOVE      R0 R17       ; R0 := R17
+118 [-]: SETGLOBAL R25 K23      ; ShowHologramOnEntry := R25
+119 [-]: SETGLOBAL R25 K24      ; 0x7C7D5D1F := R25
+120 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 32
+; Defined at line: 33
 ; #Upvalues:       10
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -232,7 +239,7 @@ code size: 162
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 49
+; Defined at line: 50
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -273,7 +280,7 @@ code size: 162
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 64
+; Defined at line: 65
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -411,7 +418,7 @@ code size: 162
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 95
+; Defined at line: 96
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -439,7 +446,7 @@ code size: 162
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 100
+; Defined at line: 101
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -661,7 +668,7 @@ code size: 162
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 150
+; Defined at line: 151
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -862,7 +869,7 @@ code size: 162
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 198
+; Defined at line: 199
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -920,7 +927,7 @@ code size: 162
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 211
+; Defined at line: 212
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1034,7 +1041,7 @@ code size: 162
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 244
+; Defined at line: 245
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1127,7 +1134,7 @@ code size: 162
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 276
+; Defined at line: 277
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1141,7 +1148,7 @@ code size: 162
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 280
+; Defined at line: 281
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1515,7 +1522,7 @@ code size: 162
 ; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 291
+; Defined at line: 292
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1541,7 +1548,7 @@ code size: 162
 ; Function #11.2:
 ;
 ; Name:            
-; Defined at line: 301
+; Defined at line: 302
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1628,7 +1635,7 @@ code size: 162
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 468
+; Defined at line: 469
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1658,11 +1665,11 @@ code size: 162
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 475
-; #Upvalues:       9
+; Defined at line: 476
+; #Upvalues:       10
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  7
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0xEC274B1A
   2 [-]: LOADK     R2 K1        ; R2 := "EudicoHeists"
@@ -1676,101 +1683,166 @@ code size: 162
  10 [-]: SETTABLE  R2 K3 R3     ; R2["TaggedDialog"] := R3
  11 [-]: GETGLOBAL R2 K2        ; R2 := _T
  12 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["TaggedDialog"]
- 13 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 13 [-]: NEWTABLE  R3 0 3       ; R3 := {}
  14 [-]: SETTABLE  R3 K5 K6     ; R3["mName"] := ""
  15 [-]: CLOSURE   R4 0         ; R4 := closure(Function #13.1)
- 16 [-]: MOVE      R0 R1        ; R0 := R1
- 17 [-]: GETUPVAL  R0 U0        ; R0 := U0
- 18 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
- 19 [-]: SETTABLE  R2 K4 R3     ; R2["Recruiter_Heists"] := R3
- 20 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 21 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["TaggedDialog"]
- 22 [-]: NEWTABLE  R3 0 2       ; R3 := {}
- 23 [-]: SETTABLE  R3 K5 K6     ; R3["mName"] := ""
- 24 [-]: CLOSURE   R4 1         ; R4 := closure(Function #13.2)
- 25 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 26 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 27 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 28 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 29 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 30 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 31 [-]: GETUPVAL  R0 U7        ; R0 := U7
- 32 [-]: SETTABLE  R3 K7 R4     ; R3["mCallback"] := R4
- 33 [-]: SETTABLE  R2 K8 R3     ; R2["HeistIntro"] := R3
- 34 [-]: GETGLOBAL R2 K0        ; R2 := 0xEC274B1A
- 35 [-]: LOADK     R3 K9        ; R3 := "SolarisSyndicate"
- 36 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 37 [-]: GETGLOBAL R3 K10       ; R3 := 0x400E7765
- 38 [-]: MOVE      R4 R0        ; R4 := R0
- 39 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 40 [-]: TEST      R3 1         ; if R3 then PC := 101
- 41 [-]: JMP       101          ; PC := 101
- 42 [-]: GETGLOBAL R3 K10       ; R3 := 0x400E7765
- 43 [-]: GETGLOBAL R4 K11       ; R4 := gGameData
- 44 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 45 [-]: TEST      R3 1         ; if R3 then PC := 57
- 46 [-]: JMP       57           ; PC := 57
- 47 [-]: GETGLOBAL R3 K10       ; R3 := 0x400E7765
- 48 [-]: GETGLOBAL R4 K12       ; R4 := gRegion
- 49 [-]: SELF      R4 R4 K13    ; R5 := R4; R4 := R4["0x90391273"]
- 50 [-]: GETGLOBAL R6 K0        ; R6 := 0xEC274B1A
- 51 [-]: LOADK     R7 K14       ; R7 := "EudicoNoHeistsAction"
- 52 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 53 [-]: CALL      R4 0 0       ; R4,... := R4(R5,...)
- 54 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 55 [-]: TEST      R3 0         ; if not R3 then PC := 61
- 56 [-]: JMP       61           ; PC := 61
- 57 [-]: GETGLOBAL R3 K15       ; R3 := 0x201191EA
- 58 [-]: LOADK     R4 K16       ; R4 := 0
- 59 [-]: CALL      R3 2 1       ; R3(R4)
- 60 [-]: JMP       42           ; PC := 42
- 61 [-]: GETGLOBAL R3 K11       ; R3 := gGameData
- 62 [-]: SELF      R3 R3 K17    ; R4 := R3; R3 := R3["0xDB2548DF"]
- 63 [-]: MOVE      R5 R2        ; R5 := R2
- 64 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 65 [-]: GETTABLE  R3 R3 K18    ; R3 := R3["mTitle"]
- 66 [-]: GETGLOBAL R4 K19       ; R4 := requiredSyndicateRank
- 67 [-]: LE        0 R4 R3      ; if R4 > R3 then PC := 87
- 68 [-]: JMP       87           ; PC := 87
- 69 [-]: GETGLOBAL R3 K15       ; R3 := 0x201191EA
- 70 [-]: LOADK     R4 K20       ; R4 := 0.5
- 71 [-]: CALL      R3 2 1       ; R3(R4)
- 72 [-]: SELF      R3 R0 K21    ; R4 := R0; R3 := R0["0xC5E91BA6"]
- 73 [-]: CALL      R3 2 1       ; R3(R4)
- 74 [-]: GETGLOBAL R3 K12       ; R3 := gRegion
- 75 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3["0x90391273"]
- 76 [-]: GETGLOBAL R5 K0        ; R5 := 0xEC274B1A
- 77 [-]: LOADK     R6 K14       ; R6 := "EudicoNoHeistsAction"
- 78 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 79 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 80 [-]: SELF      R3 R3 K22    ; R4 := R3; R3 := R3["0x2DB1272F"]
- 81 [-]: CALL      R3 2 1       ; R3(R4)
- 82 [-]: GETUPVAL  R3 U8        ; R3 := U8
- 83 [-]: MOVE      R4 R0        ; R4 := R0
- 84 [-]: TAILCALL  R3 2 0       ; R3,... := R3(R4)
- 85 [-]: RETURN    R3 0         ; return R3,...
- 86 [-]: JMP       97           ; PC := 97
- 87 [-]: GETGLOBAL R3 K12       ; R3 := gRegion
- 88 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3["0x90391273"]
- 89 [-]: GETGLOBAL R5 K0        ; R5 := 0xEC274B1A
- 90 [-]: LOADK     R6 K14       ; R6 := "EudicoNoHeistsAction"
- 91 [-]: CALL      R5 2 0       ; R5,... := R5(R6)
- 92 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 93 [-]: SELF      R3 R3 K21    ; R4 := R3; R3 := R3["0xC5E91BA6"]
- 94 [-]: CALL      R3 2 1       ; R3(R4)
- 95 [-]: SELF      R3 R0 K22    ; R4 := R0; R3 := R0["0x2DB1272F"]
- 96 [-]: CALL      R3 2 1       ; R3(R4)
- 97 [-]: GETGLOBAL R3 K15       ; R3 := 0x201191EA
- 98 [-]: LOADK     R4 K23       ; R4 := 1
- 99 [-]: CALL      R3 2 1       ; R3(R4)
-100 [-]: JMP       37           ; PC := 37
-101 [-]: RETURN    R0 1         ; return 
+ 16 [-]: SETTABLE  R3 K7 R4     ; R3["mCondition"] := R4
+ 17 [-]: CLOSURE   R4 1         ; R4 := closure(Function #13.2)
+ 18 [-]: GETUPVAL  R0 U0        ; R0 := U0
+ 19 [-]: SETTABLE  R3 K8 R4     ; R3["mCallback"] := R4
+ 20 [-]: SETTABLE  R2 K4 R3     ; R2["Recruiter_NoHeists"] := R3
+ 21 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 22 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["TaggedDialog"]
+ 23 [-]: NEWTABLE  R3 0 3       ; R3 := {}
+ 24 [-]: SETTABLE  R3 K5 K6     ; R3["mName"] := ""
+ 25 [-]: CLOSURE   R4 2         ; R4 := closure(Function #13.3)
+ 26 [-]: SETTABLE  R3 K7 R4     ; R3["mCondition"] := R4
+ 27 [-]: CLOSURE   R4 3         ; R4 := closure(Function #13.4)
+ 28 [-]: MOVE      R0 R1        ; R0 := R1
+ 29 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 30 [-]: SETTABLE  R3 K8 R4     ; R3["mCallback"] := R4
+ 31 [-]: SETTABLE  R2 K9 R3     ; R2["Recruiter_Heists"] := R3
+ 32 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 33 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["TaggedDialog"]
+ 34 [-]: NEWTABLE  R3 0 2       ; R3 := {}
+ 35 [-]: SETTABLE  R3 K5 K6     ; R3["mName"] := ""
+ 36 [-]: CLOSURE   R4 4         ; R4 := closure(Function #13.5)
+ 37 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 38 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 39 [-]: GETUPVAL  R0 U4        ; R0 := U4
+ 40 [-]: GETUPVAL  R0 U5        ; R0 := U5
+ 41 [-]: GETUPVAL  R0 U6        ; R0 := U6
+ 42 [-]: GETUPVAL  R0 U7        ; R0 := U7
+ 43 [-]: GETUPVAL  R0 U8        ; R0 := U8
+ 44 [-]: SETTABLE  R3 K8 R4     ; R3["mCallback"] := R4
+ 45 [-]: SETTABLE  R2 K10 R3    ; R2["HeistIntro"] := R3
+ 46 [-]: GETGLOBAL R2 K0        ; R2 := 0xEC274B1A
+ 47 [-]: LOADK     R3 K11       ; R3 := "SolarisSyndicate"
+ 48 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 49 [-]: GETGLOBAL R3 K12       ; R3 := 0x400E7765
+ 50 [-]: MOVE      R4 R0        ; R4 := R0
+ 51 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 52 [-]: TEST      R3 1         ; if R3 then PC := 94
+ 53 [-]: JMP       94           ; PC := 94
+ 54 [-]: GETGLOBAL R3 K12       ; R3 := 0x400E7765
+ 55 [-]: GETGLOBAL R4 K13       ; R4 := gGameData
+ 56 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 57 [-]: TEST      R3 0         ; if not R3 then PC := 63
+ 58 [-]: JMP       63           ; PC := 63
+ 59 [-]: GETGLOBAL R3 K14       ; R3 := 0x201191EA
+ 60 [-]: LOADK     R4 K15       ; R4 := 0
+ 61 [-]: CALL      R3 2 1       ; R3(R4)
+ 62 [-]: JMP       54           ; PC := 54
+ 63 [-]: MOVE      R3 R0        ; R3 := R0
+ 64 [-]: GETGLOBAL R4 K13       ; R4 := gGameData
+ 65 [-]: SELF      R4 R4 K16    ; R5 := R4; R4 := R4["0xDB2548DF"]
+ 66 [-]: MOVE      R6 R2        ; R6 := R2
+ 67 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
+ 68 [-]: GETTABLE  R4 R4 K17    ; R4 := R4["mTitle"]
+ 69 [-]: TEST      R3 1         ; if R3 then PC := 74
+ 70 [-]: JMP       74           ; PC := 74
+ 71 [-]: GETGLOBAL R5 K18       ; R5 := requiredSyndicateRank
+ 72 [-]: LE        0 R5 R4      ; if R5 > R4 then PC := 86
+ 73 [-]: JMP       86           ; PC := 86
+ 74 [-]: GETGLOBAL R5 K14       ; R5 := 0x201191EA
+ 75 [-]: LOADK     R6 K19       ; R6 := 0.5
+ 76 [-]: CALL      R5 2 1       ; R5(R6)
+ 77 [-]: GETGLOBAL R5 K2        ; R5 := _T
+ 78 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["TaggedDialog"]
+ 79 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["Recruiter_Heists"]
+ 80 [-]: SETTABLE  R5 K20 K21   ; R5["mDisabled"] := "0x0"
+ 81 [-]: GETUPVAL  R5 U9        ; R5 := U9
+ 82 [-]: MOVE      R6 R0        ; R6 := R0
+ 83 [-]: TAILCALL  R5 2 0       ; R5,... := R5(R6)
+ 84 [-]: RETURN    R5 0         ; return R5,...
+ 85 [-]: JMP       90           ; PC := 90
+ 86 [-]: GETGLOBAL R5 K2        ; R5 := _T
+ 87 [-]: GETTABLE  R5 R5 K3     ; R5 := R5["TaggedDialog"]
+ 88 [-]: GETTABLE  R5 R5 K9     ; R5 := R5["Recruiter_Heists"]
+ 89 [-]: SETTABLE  R5 K20 K22   ; R5["mDisabled"] := "0x1"
+ 90 [-]: GETGLOBAL R5 K14       ; R5 := 0x201191EA
+ 91 [-]: LOADK     R6 K23       ; R6 := 1
+ 92 [-]: CALL      R5 2 1       ; R5(R6)
+ 93 [-]: JMP       49           ; PC := 49
+ 94 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #13.1:
 ;
 ; Name:            
-; Defined at line: 481
+; Defined at line: 482
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["TaggedDialog"]
+  3 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["Recruiter_ProteaQuest"]
+  4 [-]: TEST      R0 1         ; if R0 then PC := 11
+  5 [-]: JMP       11           ; PC := 11
+  6 [-]: GETGLOBAL R0 K0        ; R0 := _T
+  7 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["TaggedDialog"]
+  8 [-]: GETTABLE  R0 R0 K3     ; R0 := R0["Recruiter_Heists"]
+  9 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["mDisabled"]
+ 10 [-]: JMP       13           ; PC := 13
+ 11 [-]: MOVE      R0 R0        ; R0 := R0
+ 12 [-]: MOVE      R0 R1        ; R0 := R1
+ 13 [-]: RETURN    R0 2         ; return R0
+ 14 [-]: RETURN    R0 1         ; return 
+
+
+; Function #13.2:
+;
+; Name:            
+; Defined at line: 483
+; #Upvalues:       1
+; #Parameters:     1
+; Is_vararg:       0
+; Max Stack Size:  5
+
+  1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
+  2 [-]: GETGLOBAL R2 K1        ; R2 := _T
+  3 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["curTransmission"]
+  4 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  5 [-]: TEST      R1 0         ; if not R1 then PC := 19
+  6 [-]: JMP       19           ; PC := 19
+  7 [-]: GETGLOBAL R1 K1        ; R1 := _T
+  8 [-]: GETTABLE  R1 R1 K3     ; R1 := R1["QueuedTransmissions"]
+  9 [-]: LEN       R1 R1        ; R1 := # R1
+ 10 [-]: EQ        0 R1 K4      ; if R1 ~= 0 then PC := 19
+ 11 [-]: JMP       19           ; PC := 19
+ 12 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 13 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["0xFB594D4A"]
+ 14 [-]: GETGLOBAL R2 K6        ; R2 := transmissionSet
+ 15 [-]: GETGLOBAL R3 K7        ; R3 := 0xEC274B1A
+ 16 [-]: LOADK     R4 K8        ; R4 := "HeistNotReady"
+ 17 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
+ 18 [-]: CALL      R1 0 1       ; R1(R2,...)
+ 19 [-]: RETURN    R0 1         ; return 
+
+
+; Function #13.3:
+;
+; Name:            
+; Defined at line: 492
+; #Upvalues:       0
+; #Parameters:     0
+; Is_vararg:       0
+; Max Stack Size:  2
+
+  1 [-]: GETGLOBAL R0 K0        ; R0 := _T
+  2 [-]: GETTABLE  R0 R0 K1     ; R0 := R0["TaggedDialog"]
+  3 [-]: GETTABLE  R0 R0 K2     ; R0 := R0["Recruiter_ProteaQuest"]
+  4 [-]: MOVE      R0 R0        ; R0 := R0
+  5 [-]: RETURN    R0 2         ; return R0
+  6 [-]: RETURN    R0 1         ; return 
+
+
+; Function #13.4:
+;
+; Name:            
+; Defined at line: 493
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1821,11 +1893,11 @@ code size: 162
  43 [-]: NEWTABLE  R3 2 0       ; R3 := {}
  44 [-]: NEWTABLE  R4 0 2       ; R4 := {}
  45 [-]: SETTABLE  R4 K19 K20   ; R4["mName"] := "/Lotus/Language/SolarisHeists/ProfitTakerHeistName"
- 46 [-]: CLOSURE   R5 0         ; R5 := closure(Function #13.1.1)
+ 46 [-]: CLOSURE   R5 0         ; R5 := closure(Function #13.4.1)
  47 [-]: SETTABLE  R4 K21 R5    ; R4["mCallback"] := R5
  48 [-]: NEWTABLE  R5 0 2       ; R5 := {}
  49 [-]: SETTABLE  R5 K19 K22   ; R5["mName"] := "/Lotus/Language/SolarisHeists/ExploiterConversationOption"
- 50 [-]: CLOSURE   R6 1         ; R6 := closure(Function #13.1.2)
+ 50 [-]: CLOSURE   R6 1         ; R6 := closure(Function #13.4.2)
  51 [-]: SETTABLE  R5 K21 R6    ; R5["mCallback"] := R6
  52 [-]: SETLIST   R3 2 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 2
  53 [-]: CALL      R1 3 1       ; R1(R2,R3)
@@ -1866,10 +1938,10 @@ code size: 162
  88 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13.1.1:
+; Function #13.4.1:
 ;
 ; Name:            
-; Defined at line: 494
+; Defined at line: 506
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1884,10 +1956,10 @@ code size: 162
   7 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13.1.2:
+; Function #13.4.2:
 ;
 ; Name:            
-; Defined at line: 501
+; Defined at line: 513
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1910,10 +1982,10 @@ code size: 162
  15 [-]: RETURN    R0 1         ; return 
 
 
-; Function #13.2:
+; Function #13.5:
 ;
 ; Name:            
-; Defined at line: 525
+; Defined at line: 537
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2010,7 +2082,7 @@ code size: 162
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 583
+; Defined at line: 596
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

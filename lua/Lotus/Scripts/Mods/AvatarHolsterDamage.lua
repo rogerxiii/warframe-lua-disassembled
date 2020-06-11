@@ -156,7 +156,7 @@ code size: 198
  38 [-]: SELF      R7 R5 K11    ; R8 := R5; R7 := R5["0x3B1B11B9"]
  39 [-]: GETGLOBAL R9 K12       ; R9 := Game
  40 [-]: GETTABLE  R9 R9 K13    ; R9 := R9["WEAPON_HOLSTER_RATE"]
- 41 [-]: GETGLOBAL R10 K12      ; R10 := Game
+ 41 [-]: GETGLOBAL R10 K7       ; R10 := Engine
  42 [-]: GETTABLE  R10 R10 K14  ; R10 := R10["STACKING_MULTIPLY"]
  43 [-]: GETUPVAL  R11 U1       ; R11 := U1
  44 [-]: GETGLOBAL R12 K9       ; R12 := math
@@ -251,7 +251,7 @@ code size: 198
 133 [-]: SELF      R13 R5 K30   ; R14 := R5; R13 := R5["0xF21555A7"]
 134 [-]: GETGLOBAL R15 K12      ; R15 := Game
 135 [-]: GETTABLE  R15 R15 K31  ; R15 := R15["WEAPON_DAMAGE_AMOUNT"]
-136 [-]: GETGLOBAL R16 K12      ; R16 := Game
+136 [-]: GETGLOBAL R16 K7       ; R16 := Engine
 137 [-]: GETTABLE  R16 R16 K14  ; R16 := R16["STACKING_MULTIPLY"]
 138 [-]: MOVE      R17 R6       ; R17 := R6
 139 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
@@ -296,7 +296,7 @@ code size: 198
 178 [-]: SELF      R13 R5 K30   ; R14 := R5; R13 := R5["0xF21555A7"]
 179 [-]: GETGLOBAL R15 K12      ; R15 := Game
 180 [-]: GETTABLE  R15 R15 K31  ; R15 := R15["WEAPON_DAMAGE_AMOUNT"]
-181 [-]: GETGLOBAL R16 K12      ; R16 := Game
+181 [-]: GETGLOBAL R16 K7       ; R16 := Engine
 182 [-]: GETTABLE  R16 R16 K14  ; R16 := R16["STACKING_MULTIPLY"]
 183 [-]: MOVE      R17 R6       ; R17 := R6
 184 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
@@ -304,7 +304,7 @@ code size: 198
 186 [-]: SELF      R13 R5 K11   ; R14 := R5; R13 := R5["0x3B1B11B9"]
 187 [-]: GETGLOBAL R15 K12      ; R15 := Game
 188 [-]: GETTABLE  R15 R15 K31  ; R15 := R15["WEAPON_DAMAGE_AMOUNT"]
-189 [-]: GETGLOBAL R16 K12      ; R16 := Game
+189 [-]: GETGLOBAL R16 K7       ; R16 := Engine
 190 [-]: GETTABLE  R16 R16 K14  ; R16 := R16["STACKING_MULTIPLY"]
 191 [-]: MOVE      R17 R6       ; R17 := R6
 192 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)

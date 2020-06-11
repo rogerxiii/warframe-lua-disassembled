@@ -1008,19 +1008,19 @@ code size: 42
  68 [-]: LOADK     R16 K14      ; R16 := 2
  69 [-]: GETGLOBAL R17 K15      ; R17 := Game
  70 [-]: GETTABLE  R17 R17 K16  ; R17 := R17["AVATAR_HEAL_RATE"]
- 71 [-]: GETGLOBAL R18 K15      ; R18 := Game
- 72 [-]: GETTABLE  R18 R18 K17  ; R18 := R18["ADD"]
+ 71 [-]: GETGLOBAL R18 K17      ; R18 := Engine
+ 72 [-]: GETTABLE  R18 R18 K18  ; R18 := R18["ADD"]
  73 [-]: MOVE      R19 R12      ; R19 := R12
  74 [-]: CALL      R14 6 1      ; R14(R15,R16,R17,R18,R19)
- 75 [-]: SELF      R14 R7 K18   ; R15 := R7; R14 := R7["0xAB436EF2"]
- 76 [-]: GETGLOBAL R16 K19      ; R16 := buffType
- 77 [-]: GETGLOBAL R17 K20      ; R17 := EMPTY_SYMBOL
- 78 [-]: GETGLOBAL R18 K21      ; R18 := ZERO_VECTOR
- 79 [-]: GETGLOBAL R19 K22      ; R19 := ZERO_ROTATION
+ 75 [-]: SELF      R14 R7 K19   ; R15 := R7; R14 := R7["0xAB436EF2"]
+ 76 [-]: GETGLOBAL R16 K20      ; R16 := buffType
+ 77 [-]: GETGLOBAL R17 K21      ; R17 := EMPTY_SYMBOL
+ 78 [-]: GETGLOBAL R18 K22      ; R18 := ZERO_VECTOR
+ 79 [-]: GETGLOBAL R19 K23      ; R19 := ZERO_ROTATION
  80 [-]: GETUPVAL  R20 U0       ; R20 := U0
  81 [-]: CALL      R14 7 2      ; R14 := R14(R15,R16,R17,R18,R19,R20)
  82 [-]: GETUPVAL  R15 U2       ; R15 := U2
- 83 [-]: SELF      R16 R7 K23   ; R17 := R7; R16 := R7["0xDBEF0FB6"]
+ 83 [-]: SELF      R16 R7 K24   ; R17 := R7; R16 := R7["0xDBEF0FB6"]
  84 [-]: CALL      R16 2 2      ; R16 := R16(R17)
  85 [-]: SETTABLE  R15 R16 R14  ; R15[R16] := R14
  86 [-]: FORLOOP   R2 18        ; R2 += R4; if R2 <= R3 then begin PC := 18; R5 := R2 end
@@ -1100,12 +1100,12 @@ code size: 42
  62 [-]: SELF      R14 R13 K11  ; R15 := R13; R14 := R13["0xF21555A7"]
  63 [-]: GETGLOBAL R16 K12      ; R16 := Game
  64 [-]: GETTABLE  R16 R16 K13  ; R16 := R16["AVATAR_HEAL_RATE"]
- 65 [-]: GETGLOBAL R17 K12      ; R17 := Game
- 66 [-]: GETTABLE  R17 R17 K14  ; R17 := R17["ADD"]
+ 65 [-]: GETGLOBAL R17 K14      ; R17 := Engine
+ 66 [-]: GETTABLE  R17 R17 K15  ; R17 := R17["ADD"]
  67 [-]: MOVE      R18 R12      ; R18 := R12
  68 [-]: CALL      R14 5 1      ; R14(R15,R16,R17,R18)
  69 [-]: GETUPVAL  R14 U2       ; R14 := U2
- 70 [-]: SELF      R15 R7 K15   ; R16 := R7; R15 := R7["0xDBEF0FB6"]
+ 70 [-]: SELF      R15 R7 K16   ; R16 := R7; R15 := R7["0xDBEF0FB6"]
  71 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  72 [-]: GETTABLE  R14 R14 R15  ; R14 := R14[R15]
  73 [-]: GETGLOBAL R15 K0       ; R15 := 0x400E7765
@@ -1113,10 +1113,10 @@ code size: 42
  75 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  76 [-]: TEST      R15 1        ; if R15 then PC := 80
  77 [-]: JMP       80           ; PC := 80
- 78 [-]: SELF      R15 R14 K16  ; R16 := R14; R15 := R14["0xD4C2743F"]
+ 78 [-]: SELF      R15 R14 K17  ; R16 := R14; R15 := R14["0xD4C2743F"]
  79 [-]: CALL      R15 2 1      ; R15(R16)
- 80 [-]: GETGLOBAL R15 K17      ; R15 := table
- 81 [-]: GETTABLE  R15 R15 K18  ; R15 := R15["0xCDB1FD5E"]
+ 80 [-]: GETGLOBAL R15 K18      ; R15 := table
+ 81 [-]: GETTABLE  R15 R15 K19  ; R15 := R15["0xCDB1FD5E"]
  82 [-]: GETUPVAL  R16 U1       ; R16 := U1
  83 [-]: MOVE      R17 R5       ; R17 := R5
  84 [-]: CALL      R15 3 1      ; R15(R16,R17)
@@ -1182,8 +1182,8 @@ code size: 42
  47 [-]: SELF      R13 R12 K9   ; R14 := R12; R13 := R12["0xF21555A7"]
  48 [-]: GETGLOBAL R15 K10      ; R15 := Game
  49 [-]: GETTABLE  R15 R15 K11  ; R15 := R15["AVATAR_HEAL_RATE"]
- 50 [-]: GETGLOBAL R16 K10      ; R16 := Game
- 51 [-]: GETTABLE  R16 R16 K12  ; R16 := R16["ADD"]
+ 50 [-]: GETGLOBAL R16 K12      ; R16 := Engine
+ 51 [-]: GETTABLE  R16 R16 K13  ; R16 := R16["ADD"]
  52 [-]: MOVE      R17 R11      ; R17 := R11
  53 [-]: CALL      R13 5 1      ; R13(R14,R15,R16,R17)
  54 [-]: FORLOOP   R6 24        ; R6 += R8; if R6 <= R7 then begin PC := 24; R9 := R6 end

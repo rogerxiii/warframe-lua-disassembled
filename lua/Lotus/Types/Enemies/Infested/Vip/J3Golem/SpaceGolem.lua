@@ -1060,9 +1060,9 @@ code size: 9
  55 [-]: SELF      R7 R7 K15    ; R8 := R7; R7 := R7["0xF21555A7"]
  56 [-]: GETGLOBAL R9 K16       ; R9 := Game
  57 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["AVATAR_SPRINT_SPEED"]
- 58 [-]: GETGLOBAL R10 K16      ; R10 := Game
- 59 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["MULTIPLY"]
- 60 [-]: LOADK     R11 K19      ; R11 := 0.75
+ 58 [-]: GETGLOBAL R10 K18      ; R10 := Engine
+ 59 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["MULTIPLY"]
+ 60 [-]: LOADK     R11 K20      ; R11 := 0.75
  61 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  62 [-]: FORLOOP   R3 42        ; R3 += R5; if R3 <= R4 then begin PC := 42; R6 := R3 end
  63 [-]: RETURN    R0 1         ; return 
@@ -1108,9 +1108,9 @@ code size: 9
  29 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0xF21555A7"]
  30 [-]: GETGLOBAL R7 K12       ; R7 := Game
  31 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["AVATAR_SPRINT_SPEED"]
- 32 [-]: GETGLOBAL R8 K12       ; R8 := Game
- 33 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["MULTIPLY"]
- 34 [-]: LOADK     R9 K15       ; R9 := 0.75
+ 32 [-]: GETGLOBAL R8 K14       ; R8 := Engine
+ 33 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["MULTIPLY"]
+ 34 [-]: LOADK     R9 K16       ; R9 := 0.75
  35 [-]: CALL      R5 5 1       ; R5(R6,R7,R8,R9)
  36 [-]: FORLOOP   R1 16        ; R1 += R3; if R1 <= R2 then begin PC := 16; R4 := R1 end
  37 [-]: RETURN    R0 1         ; return 
@@ -1510,19 +1510,19 @@ code size: 9
  27 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0x3B1B11B9"]
  28 [-]: GETGLOBAL R8 K7        ; R8 := Game
  29 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["AVATAR_SPRINT_SPEED"]
- 30 [-]: GETGLOBAL R9 K7        ; R9 := Game
- 31 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["MULTIPLY"]
- 32 [-]: LOADK     R10 K10      ; R10 := 0.75
+ 30 [-]: GETGLOBAL R9 K9        ; R9 := Engine
+ 31 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["MULTIPLY"]
+ 32 [-]: LOADK     R10 K11      ; R10 := 0.75
  33 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
- 34 [-]: GETGLOBAL R6 K11       ; R6 := table
- 35 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["0xE6450C9D"]
+ 34 [-]: GETGLOBAL R6 K12       ; R6 := table
+ 35 [-]: GETTABLE  R6 R6 K13    ; R6 := R6["0xE6450C9D"]
  36 [-]: GETGLOBAL R7 K2        ; R7 := _T
  37 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["PlayersInGauntlet"]
  38 [-]: MOVE      R8 R1        ; R8 := R1
  39 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 40 [-]: SELF      R6 R1 K13    ; R7 := R1; R6 := R1["0xB26452A2"]
- 41 [-]: GETGLOBAL R8 K14       ; R8 := 0xEC274B1A
- 42 [-]: LOADK     R9 K15       ; R9 := "InsideTimer"
+ 40 [-]: SELF      R6 R1 K14    ; R7 := R1; R6 := R1["0xB26452A2"]
+ 41 [-]: GETGLOBAL R8 K15       ; R8 := 0xEC274B1A
+ 42 [-]: LOADK     R9 K16       ; R9 := "InsideTimer"
  43 [-]: CALL      R8 2 2       ; R8 := R8(R9)
  44 [-]: MOVE      R9 R0        ; R9 := R0
  45 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)

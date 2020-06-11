@@ -1444,11 +1444,11 @@ code size: 238
   7 [-]: MOVE      R4 R1        ; R4 := R1
   8 [-]: GETGLOBAL R5 K4        ; R5 := Game
   9 [-]: GETTABLE  R5 R5 K5     ; R5 := R5["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 10 [-]: GETGLOBAL R6 K4        ; R6 := Game
- 11 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["ADD"]
+ 10 [-]: GETGLOBAL R6 K6        ; R6 := Engine
+ 11 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["ADD"]
  12 [-]: GETUPVAL  R7 U0        ; R7 := U0
  13 [-]: LOADNIL   R8 R9        ; R8 := R9 := nil
- 14 [-]: GETGLOBAL R10 K7       ; R10 := Engine
+ 14 [-]: GETGLOBAL R10 K6       ; R10 := Engine
  15 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["DT_ELECTRICITY"]
  16 [-]: CALL      R2 9 1       ; R2(R3,R4,R5,R6,R7,R8,R9,R10)
  17 [-]: GETUPVAL  R2 U1        ; R2 := U1
@@ -1526,11 +1526,11 @@ code size: 238
  89 [-]: MOVE      R5 R1        ; R5 := R1
  90 [-]: GETGLOBAL R6 K4        ; R6 := Game
  91 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["WEAPON_PERCENT_BASE_DAMAGE_ADDED"]
- 92 [-]: GETGLOBAL R7 K4        ; R7 := Game
- 93 [-]: GETTABLE  R7 R7 K6     ; R7 := R7["ADD"]
+ 92 [-]: GETGLOBAL R7 K6        ; R7 := Engine
+ 93 [-]: GETTABLE  R7 R7 K7     ; R7 := R7["ADD"]
  94 [-]: GETUPVAL  R8 U0        ; R8 := U0
  95 [-]: LOADNIL   R9 R10       ; R9 := R10 := nil
- 96 [-]: GETGLOBAL R11 K7       ; R11 := Engine
+ 96 [-]: GETGLOBAL R11 K6       ; R11 := Engine
  97 [-]: GETTABLE  R11 R11 K8   ; R11 := R11["DT_ELECTRICITY"]
  98 [-]: CALL      R3 9 1       ; R3(R4,R5,R6,R7,R8,R9,R10,R11)
  99 [-]: RETURN    R0 1         ; return 

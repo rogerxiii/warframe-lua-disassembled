@@ -207,11 +207,11 @@ code size: 33
 127 [-]: LOADK     R15 K13      ; R15 := 0
 128 [-]: GETGLOBAL R16 K29      ; R16 := Game
 129 [-]: GETTABLE  R16 R16 K30  ; R16 := R16["AVATAR_HEAL_RATE"]
-130 [-]: GETGLOBAL R17 K29      ; R17 := Game
-131 [-]: GETTABLE  R17 R17 K32  ; R17 := R17["ADD"]
+130 [-]: GETGLOBAL R17 K32      ; R17 := Engine
+131 [-]: GETTABLE  R17 R17 K33  ; R17 := R17["ADD"]
 132 [-]: GETUPVAL  R18 U4       ; R18 := U4
 133 [-]: CALL      R13 6 1      ; R13(R14,R15,R16,R17,R18)
-134 [-]: SELF      R13 R1 K33   ; R14 := R1; R13 := R1["0x584F13D6"]
+134 [-]: SELF      R13 R1 K34   ; R14 := R1; R13 := R1["0x584F13D6"]
 135 [-]: MOVE      R15 R9       ; R15 := R9
 136 [-]: MOVE      R16 R0       ; R16 := R0
 137 [-]: MOVE      R17 R1       ; R17 := R1
@@ -269,26 +269,26 @@ code size: 33
  34 [-]: LOADK     R5 K11       ; R5 := 0
  35 [-]: GETGLOBAL R6 K8        ; R6 := Game
  36 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["AVATAR_HEAL_RATE"]
- 37 [-]: GETGLOBAL R7 K8        ; R7 := Game
- 38 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["ADD"]
+ 37 [-]: GETGLOBAL R7 K12       ; R7 := Engine
+ 38 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["ADD"]
  39 [-]: GETUPVAL  R8 U2        ; R8 := U2
  40 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
- 41 [-]: GETGLOBAL R3 K13       ; R3 := Lotus_Game
- 42 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["0xFAFD4322"]
+ 41 [-]: GETGLOBAL R3 K14       ; R3 := Lotus_Game
+ 42 [-]: GETTABLE  R3 R3 K15    ; R3 := R3["0xFAFD4322"]
  43 [-]: CALL      R3 1 2       ; R3 := R3()
- 44 [-]: SETTABLE  R3 K15 R1    ; R3["instigator"] := R1
+ 44 [-]: SETTABLE  R3 K16 R1    ; R3["instigator"] := R1
  45 [-]: NEWTABLE  R4 1 0       ; R4 := {}
  46 [-]: MOVE      R5 R1        ; R5 := R1
  47 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 48 [-]: SETTABLE  R3 K16 R4    ; R3["affected"] := R4
- 49 [-]: GETGLOBAL R4 K18       ; R4 := abilityBuff
- 50 [-]: SETTABLE  R3 K17 R4    ; R3["abilityType"] := R4
- 51 [-]: SELF      R4 R1 K19    ; R5 := R1; R4 := R1["0x584F13D6"]
+ 48 [-]: SETTABLE  R3 K17 R4    ; R3["affected"] := R4
+ 49 [-]: GETGLOBAL R4 K19       ; R4 := abilityBuff
+ 50 [-]: SETTABLE  R3 K18 R4    ; R3["abilityType"] := R4
+ 51 [-]: SELF      R4 R1 K20    ; R5 := R1; R4 := R1["0x584F13D6"]
  52 [-]: MOVE      R6 R3        ; R6 := R3
  53 [-]: MOVE      R7 R0        ; R7 := R0
  54 [-]: MOVE      R8 R1        ; R8 := R1
  55 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 56 [-]: SELF      R4 R0 K20    ; R5 := R0; R4 := R0["0xEA55C538"]
+ 56 [-]: SELF      R4 R0 K21    ; R5 := R0; R4 := R0["0xEA55C538"]
  57 [-]: LOADK     R6 K11       ; R6 := 0
  58 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  59 [-]: GETGLOBAL R5 K5        ; R5 := 0x400E7765
@@ -296,9 +296,9 @@ code size: 33
  61 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  62 [-]: TEST      R5 1         ; if R5 then PC := 70
  63 [-]: JMP       70           ; PC := 70
- 64 [-]: SELF      R5 R4 K21    ; R6 := R4; R5 := R4["0xD4EAD9FA"]
- 65 [-]: GETGLOBAL R7 K22       ; R7 := 0xEC274B1A
- 66 [-]: LOADK     R8 K23       ; R8 := "OnKillPvP"
+ 64 [-]: SELF      R5 R4 K22    ; R6 := R4; R5 := R4["0xD4EAD9FA"]
+ 65 [-]: GETGLOBAL R7 K23       ; R7 := 0xEC274B1A
+ 66 [-]: LOADK     R8 K24       ; R8 := "OnKillPvP"
  67 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  68 [-]: MOVE      R8 R0        ; R8 := R0
  69 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
@@ -322,26 +322,26 @@ code size: 33
   6 [-]: GETUPVAL  R4 U0        ; R4 := U0
   7 [-]: GETGLOBAL R5 K3        ; R5 := Game
   8 [-]: GETTABLE  R5 R5 K4     ; R5 := R5["AVATAR_HEAL_RATE"]
-  9 [-]: GETGLOBAL R6 K3        ; R6 := Game
- 10 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["ADD"]
+  9 [-]: GETGLOBAL R6 K5        ; R6 := Engine
+ 10 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["ADD"]
  11 [-]: GETUPVAL  R7 U1        ; R7 := U1
  12 [-]: CALL      R2 6 1       ; R2(R3,R4,R5,R6,R7)
- 13 [-]: GETGLOBAL R2 K6        ; R2 := Lotus_Game
- 14 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xFAFD4322"]
+ 13 [-]: GETGLOBAL R2 K7        ; R2 := Lotus_Game
+ 14 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0xFAFD4322"]
  15 [-]: CALL      R2 1 2       ; R2 := R2()
- 16 [-]: SETTABLE  R2 K8 R1     ; R2["instigator"] := R1
+ 16 [-]: SETTABLE  R2 K9 R1     ; R2["instigator"] := R1
  17 [-]: NEWTABLE  R3 1 0       ; R3 := {}
  18 [-]: MOVE      R4 R1        ; R4 := R1
  19 [-]: SETLIST   R3 1 1       ; R3[(1-1)*FPF+i] := R(3+i), 1 <= i <= 1
- 20 [-]: SETTABLE  R2 K9 R3     ; R2["affected"] := R3
- 21 [-]: GETGLOBAL R3 K11       ; R3 := abilityBuff
- 22 [-]: SETTABLE  R2 K10 R3    ; R2["abilityType"] := R3
- 23 [-]: GETGLOBAL R3 K6        ; R3 := Lotus_Game
- 24 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["BT_TIMER"]
- 25 [-]: SETTABLE  R2 K12 R3    ; R2["buffType"] := R3
+ 20 [-]: SETTABLE  R2 K10 R3    ; R2["affected"] := R3
+ 21 [-]: GETGLOBAL R3 K12       ; R3 := abilityBuff
+ 22 [-]: SETTABLE  R2 K11 R3    ; R2["abilityType"] := R3
+ 23 [-]: GETGLOBAL R3 K7        ; R3 := Lotus_Game
+ 24 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["BT_TIMER"]
+ 25 [-]: SETTABLE  R2 K13 R3    ; R2["buffType"] := R3
  26 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 27 [-]: SETTABLE  R2 K14 R3    ; R2["buffData"] := R3
- 28 [-]: SELF      R3 R1 K15    ; R4 := R1; R3 := R1["0x584F13D6"]
+ 27 [-]: SETTABLE  R2 K15 R3    ; R2["buffData"] := R3
+ 28 [-]: SELF      R3 R1 K16    ; R4 := R1; R3 := R1["0x584F13D6"]
  29 [-]: MOVE      R5 R2        ; R5 := R2
  30 [-]: MOVE      R6 R1        ; R6 := R1
  31 [-]: MOVE      R7 R1        ; R7 := R1

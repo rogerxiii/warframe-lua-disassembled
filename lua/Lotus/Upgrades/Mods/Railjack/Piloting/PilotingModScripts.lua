@@ -255,8 +255,8 @@ code size: 3
  59 [-]: SELF      R10 R6 K10   ; R11 := R6; R10 := R6["0x3B1B11B9"]
  60 [-]: GETGLOBAL R12 K11      ; R12 := Game
  61 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["AVATAR_SHIELD_RECHARGE_RATE"]
- 62 [-]: GETGLOBAL R13 K11      ; R13 := Game
- 63 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["STACKING_MULTIPLY"]
+ 62 [-]: GETGLOBAL R13 K13      ; R13 := Engine
+ 63 [-]: GETTABLE  R13 R13 K14  ; R13 := R13["STACKING_MULTIPLY"]
  64 [-]: MOVE      R14 R8       ; R14 := R8
  65 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  66 [-]: MOVE      R7 R1        ; R7 := R1
@@ -265,11 +265,11 @@ code size: 3
  69 [-]: JMP       80           ; PC := 80
  70 [-]: TEST      R7 0         ; if not R7 then PC := 80
  71 [-]: JMP       80           ; PC := 80
- 72 [-]: SELF      R10 R6 K14   ; R11 := R6; R10 := R6["0xF21555A7"]
+ 72 [-]: SELF      R10 R6 K15   ; R11 := R6; R10 := R6["0xF21555A7"]
  73 [-]: GETGLOBAL R12 K11      ; R12 := Game
  74 [-]: GETTABLE  R12 R12 K12  ; R12 := R12["AVATAR_SHIELD_RECHARGE_RATE"]
- 75 [-]: GETGLOBAL R13 K11      ; R13 := Game
- 76 [-]: GETTABLE  R13 R13 K13  ; R13 := R13["STACKING_MULTIPLY"]
+ 75 [-]: GETGLOBAL R13 K13      ; R13 := Engine
+ 76 [-]: GETTABLE  R13 R13 K14  ; R13 := R13["STACKING_MULTIPLY"]
  77 [-]: MOVE      R14 R8       ; R14 := R8
  78 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
  79 [-]: MOVE      R7 R0        ; R7 := R0

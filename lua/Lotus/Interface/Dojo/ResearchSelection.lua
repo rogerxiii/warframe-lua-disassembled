@@ -24,7 +24,7 @@ code size: 52
 code size: 348
 code size: 23
 code size: 18
-code size: 152
+code size: 148
 code size: 51
 code size: 15
 code size: 14
@@ -2472,7 +2472,7 @@ code size: 3
   8 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["SECONDARY"]
   9 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
  10 [-]: SETTABLE  R0 K3 R1     ; R0["Categories"] := R1
- 11 [-]: JMP       152          ; PC := 152
+ 11 [-]: JMP       148          ; PC := 148
  12 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Category"]
  13 [-]: GETGLOBAL R2 K1        ; R2 := Engine
  14 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["Item_LongGuns"]
@@ -2483,7 +2483,7 @@ code size: 3
  19 [-]: GETTABLE  R2 R2 K6     ; R2 := R2["PRIMARY"]
  20 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
  21 [-]: SETTABLE  R0 K3 R1     ; R0["Categories"] := R1
- 22 [-]: JMP       152          ; PC := 152
+ 22 [-]: JMP       148          ; PC := 148
  23 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Category"]
  24 [-]: GETGLOBAL R2 K1        ; R2 := Engine
  25 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["Item_Suits"]
@@ -2494,7 +2494,7 @@ code size: 3
  30 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["WARFRAME"]
  31 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
  32 [-]: SETTABLE  R0 K3 R1     ; R0["Categories"] := R1
- 33 [-]: JMP       152          ; PC := 152
+ 33 [-]: JMP       148          ; PC := 148
  34 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Category"]
  35 [-]: GETGLOBAL R2 K1        ; R2 := Engine
  36 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["Item_Melee"]
@@ -2505,7 +2505,7 @@ code size: 3
  41 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["MELEE"]
  42 [-]: SETLIST   R1 1 1       ; R1[(1-1)*FPF+i] := R(1+i), 1 <= i <= 1
  43 [-]: SETTABLE  R0 K3 R1     ; R0["Categories"] := R1
- 44 [-]: JMP       152          ; PC := 152
+ 44 [-]: JMP       148          ; PC := 148
  45 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["Category"]
  46 [-]: GETGLOBAL R2 K1        ; R2 := Engine
  47 [-]: GETTABLE  R2 R2 K11    ; R2 := R2["Item_CrewShipWeapons"]
@@ -2519,8 +2519,8 @@ code size: 3
  55 [-]: GETGLOBAL R1 K13       ; R1 := 0x400E7765
  56 [-]: GETTABLE  R2 R0 K14    ; R2 := R0["StoreItem"]
  57 [-]: CALL      R1 2 2       ; R1 := R1(R2)
- 58 [-]: TEST      R1 1         ; if R1 then PC := 152
- 59 [-]: JMP       152          ; PC := 152
+ 58 [-]: TEST      R1 1         ; if R1 then PC := 148
+ 59 [-]: JMP       148          ; PC := 148
  60 [-]: GETTABLE  R1 R0 K14    ; R1 := R0["StoreItem"]
  61 [-]: SELF      R1 R1 K15    ; R2 := R1; R1 := R1["0xE8B70CB0"]
  62 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -2559,10 +2559,10 @@ code size: 3
  95 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
  96 [-]: SETTABLE  R0 K3 R7     ; R0["Categories"] := R7
  97 [-]: FORLOOP   R2 67        ; R2 += R4; if R2 <= R3 then begin PC := 67; R5 := R2 end
- 98 [-]: JMP       152          ; PC := 152
+ 98 [-]: JMP       148          ; PC := 148
  99 [-]: GETTABLE  R7 R0 K0     ; R7 := R0["Category"]
-100 [-]: EQ        1 R7 K23     ; if R7 == nil then PC := 150
-101 [-]: JMP       150          ; PC := 150
+100 [-]: EQ        1 R7 K23     ; if R7 == nil then PC := 146
+101 [-]: JMP       146          ; PC := 146
 102 [-]: GETGLOBAL R7 K24       ; R7 := gGameConfig
 103 [-]: SELF      R7 R7 K25    ; R8 := R7; R7 := R7["0xD463EC86"]
 104 [-]: GETTABLE  R9 R0 K0     ; R9 := R0["Category"]
@@ -2580,40 +2580,36 @@ code size: 3
 116 [-]: GETTABLE  R9 R9 K29    ; R9 := R9["ARCHWING"]
 117 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
 118 [-]: SETTABLE  R0 K3 R8     ; R0["Categories"] := R8
-119 [-]: JMP       152          ; PC := 152
+119 [-]: JMP       148          ; PC := 148
 120 [-]: GETGLOBAL R8 K26       ; R8 := Lotus_Game
 121 [-]: GETTABLE  R8 R8 K30    ; R8 := R8["SentinelBin"]
-122 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 128
-123 [-]: JMP       128          ; PC := 128
-124 [-]: GETGLOBAL R8 K26       ; R8 := Lotus_Game
-125 [-]: GETTABLE  R8 R8 K31    ; R8 := R8["PetBin"]
-126 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 134
-127 [-]: JMP       134          ; PC := 134
-128 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-129 [-]: GETUPVAL  R9 U0        ; R9 := U0
-130 [-]: GETTABLE  R9 R9 K32    ; R9 := R9["COMPANION"]
-131 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-132 [-]: SETTABLE  R0 K3 R8     ; R0["Categories"] := R8
-133 [-]: JMP       152          ; PC := 152
-134 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["Category"]
-135 [-]: GETGLOBAL R9 K1        ; R9 := Engine
-136 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["Item_Consumables"]
-137 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 144
-138 [-]: JMP       144          ; PC := 144
-139 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["Category"]
-140 [-]: GETGLOBAL R9 K1        ; R9 := Engine
-141 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["Item_MiscItems"]
-142 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 152
-143 [-]: JMP       152          ; PC := 152
-144 [-]: NEWTABLE  R8 1 0       ; R8 := {}
-145 [-]: GETUPVAL  R9 U0        ; R9 := U0
-146 [-]: GETTABLE  R9 R9 K35    ; R9 := R9["MISC"]
-147 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
-148 [-]: SETTABLE  R0 K3 R8     ; R0["Categories"] := R8
-149 [-]: JMP       152          ; PC := 152
-150 [-]: NEWTABLE  R8 0 0       ; R8 := {}
-151 [-]: SETTABLE  R0 K3 R8     ; R0["Categories"] := R8
-152 [-]: RETURN    R0 1         ; return 
+122 [-]: EQ        0 R7 R8      ; if R7 ~= R8 then PC := 130
+123 [-]: JMP       130          ; PC := 130
+124 [-]: NEWTABLE  R8 1 0       ; R8 := {}
+125 [-]: GETUPVAL  R9 U0        ; R9 := U0
+126 [-]: GETTABLE  R9 R9 K31    ; R9 := R9["COMPANION"]
+127 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
+128 [-]: SETTABLE  R0 K3 R8     ; R0["Categories"] := R8
+129 [-]: JMP       148          ; PC := 148
+130 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["Category"]
+131 [-]: GETGLOBAL R9 K1        ; R9 := Engine
+132 [-]: GETTABLE  R9 R9 K32    ; R9 := R9["Item_Consumables"]
+133 [-]: EQ        1 R8 R9      ; if R8 == R9 then PC := 140
+134 [-]: JMP       140          ; PC := 140
+135 [-]: GETTABLE  R8 R0 K0     ; R8 := R0["Category"]
+136 [-]: GETGLOBAL R9 K1        ; R9 := Engine
+137 [-]: GETTABLE  R9 R9 K33    ; R9 := R9["Item_MiscItems"]
+138 [-]: EQ        0 R8 R9      ; if R8 ~= R9 then PC := 148
+139 [-]: JMP       148          ; PC := 148
+140 [-]: NEWTABLE  R8 1 0       ; R8 := {}
+141 [-]: GETUPVAL  R9 U0        ; R9 := U0
+142 [-]: GETTABLE  R9 R9 K34    ; R9 := R9["MISC"]
+143 [-]: SETLIST   R8 1 1       ; R8[(1-1)*FPF+i] := R(8+i), 1 <= i <= 1
+144 [-]: SETTABLE  R0 K3 R8     ; R0["Categories"] := R8
+145 [-]: JMP       148          ; PC := 148
+146 [-]: NEWTABLE  R8 0 0       ; R8 := {}
+147 [-]: SETTABLE  R0 K3 R8     ; R0["Categories"] := R8
+148 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #22:

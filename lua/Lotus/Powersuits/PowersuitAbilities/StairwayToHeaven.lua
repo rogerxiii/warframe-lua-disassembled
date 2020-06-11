@@ -555,7 +555,7 @@ code size: 398
  50 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  51 [-]: MOVE      R2 R0        ; R2 := R0
  52 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 53 [-]: SETTABLE  R3 K8 K17    ; R3["Label"] := "/Game/WEAPON_DAMAGE_AMOUNT"
+ 53 [-]: SETTABLE  R3 K8 K17    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT"
  54 [-]: GETUPVAL  R4 U4        ; R4 := U4
  55 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  56 [-]: SETTABLE  R3 K18 K19   ; R3["ValueIcon"] := "<DT_RADIATION>"
@@ -564,7 +564,7 @@ code size: 398
  59 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  60 [-]: MOVE      R2 R0        ; R2 := R0
  61 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 62 [-]: SETTABLE  R3 K8 K20    ; R3["Label"] := "/Game/WEAPON_PROC_CHANCE"
+ 62 [-]: SETTABLE  R3 K8 K20    ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_PROC_CHANCE"
  63 [-]: GETGLOBAL R4 K21       ; R4 := math
  64 [-]: GETTABLE  R4 R4 K22    ; R4 := R4["0xF7005A7B"]
  65 [-]: GETUPVAL  R5 U5        ; R5 := U5

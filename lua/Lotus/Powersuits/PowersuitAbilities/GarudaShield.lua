@@ -550,7 +550,7 @@ code size: 35
  24 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0xE6450C9D"]
  25 [-]: MOVE      R3 R1        ; R3 := R1
  26 [-]: NEWTABLE  R4 0 3       ; R4 := {}
- 27 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Game/AVATAR_ABILITY_RANGE"
+ 27 [-]: SETTABLE  R4 K8 K9     ; R4["Label"] := "/Lotus/Language/Labels/AVATAR_ABILITY_RANGE"
  28 [-]: GETUPVAL  R5 U2        ; R5 := U2
  29 [-]: SETTABLE  R4 K10 R5    ; R4["Value"] := R5
  30 [-]: SETTABLE  R4 K11 K12   ; R4["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"

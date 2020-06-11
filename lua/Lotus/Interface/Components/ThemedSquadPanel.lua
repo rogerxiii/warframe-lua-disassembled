@@ -46,7 +46,7 @@ code size: 14
 code size: 14
 code size: 768
 code size: 18
-code size: 456
+code size: 467
 code size: 86
 code size: 5
 code size: 14
@@ -4516,7 +4516,7 @@ code size: 20
 ; #Upvalues:       12
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  44
+; Max Stack Size:  45
 
   1 [-]: LOADK     R0 K0        ; R0 := ""
   2 [-]: NEWTABLE  R1 0 0       ; R1 := {}
@@ -4870,116 +4870,127 @@ code size: 20
 350 [-]: CALL      R24 4 1      ; R24(R25,R26,R27)
 351 [-]: MOVE      R24 R0       ; R24 := R0
 352 [-]: LEN       R25 R1       ; R25 := # R1
-353 [-]: LOADK     R26 K2       ; R26 := 1
-354 [-]: MOVE      R27 R25      ; R27 := R25
-355 [-]: LOADK     R28 K2       ; R28 := 1
-356 [-]: FORPREP   R26 373      ; R26 -= R28; PC := 373
-357 [-]: GETUPVAL  R30 U3       ; R30 := U3
-358 [-]: GETTABLE  R30 R30 K46  ; R30 := R30["mPlayerInfo"]
-359 [-]: GETUPVAL  R31 U9       ; R31 := U9
-360 [-]: GETTABLE  R30 R30 R31  ; R30 := R30[R31]
-361 [-]: GETTABLE  R30 R30 K47  ; R30 := R30["mLoadoutList"]
-362 [-]: SELF      R30 R30 K48  ; R31 := R30; R30 := R30["0xD75E681A"]
-363 [-]: MOVE      R32 R29      ; R32 := R29
-364 [-]: CALL      R30 3 2      ; R30 := R30(R31,R32)
-365 [-]: EQ        1 R30 K10    ; if R30 == nil then PC := 371
-366 [-]: JMP       371          ; PC := 371
-367 [-]: GETTABLE  R31 R30 K49  ; R31 := R30["Label"]
-368 [-]: GETTABLE  R32 R1 R29   ; R32 := R1[R29]
-369 [-]: EQ        1 R31 R32    ; if R31 == R32 then PC := 373
-370 [-]: JMP       373          ; PC := 373
-371 [-]: MOVE      R24 R1       ; R24 := R1
-372 [-]: JMP       374          ; PC := 374
-373 [-]: FORLOOP   R26 357      ; R26 += R28; if R26 <= R27 then begin PC := 357; R29 := R26 end
-374 [-]: TEST      R24 0        ; if not R24 then PC := 440
-375 [-]: JMP       440          ; PC := 440
-376 [-]: GETUPVAL  R31 U3       ; R31 := U3
-377 [-]: GETTABLE  R31 R31 K46  ; R31 := R31["mPlayerInfo"]
-378 [-]: GETUPVAL  R32 U9       ; R32 := U9
-379 [-]: GETTABLE  R31 R31 R32  ; R31 := R31[R32]
-380 [-]: GETTABLE  R31 R31 K47  ; R31 := R31["mLoadoutList"]
-381 [-]: SELF      R31 R31 K50  ; R32 := R31; R31 := R31["0x7CF71D03"]
-382 [-]: MOVE      R33 R1       ; R33 := R1
-383 [-]: MOVE      R34 R1       ; R34 := R1
-384 [-]: CALL      R31 4 1      ; R31(R32,R33,R34)
-385 [-]: LOADK     R31 K2       ; R31 := 1
-386 [-]: LEN       R32 R1       ; R32 := # R1
-387 [-]: LOADK     R33 K2       ; R33 := 1
-388 [-]: FORPREP   R31 403      ; R31 -= R33; PC := 403
-389 [-]: GETTABLE  R35 R1 R34   ; R35 := R1[R34]
-390 [-]: EQ        1 R35 K0     ; if R35 == "" then PC := 403
-391 [-]: JMP       403          ; PC := 403
-392 [-]: GETUPVAL  R35 U3       ; R35 := U3
-393 [-]: GETTABLE  R35 R35 K46  ; R35 := R35["mPlayerInfo"]
-394 [-]: GETUPVAL  R36 U9       ; R36 := U9
-395 [-]: GETTABLE  R35 R35 R36  ; R35 := R35[R36]
-396 [-]: GETTABLE  R35 R35 K47  ; R35 := R35["mLoadoutList"]
-397 [-]: SELF      R35 R35 K51  ; R36 := R35; R35 := R35["0xA77DA8EE"]
-398 [-]: NEWTABLE  R37 0 1      ; R37 := {}
-399 [-]: GETTABLE  R38 R1 R34   ; R38 := R1[R34]
-400 [-]: SETTABLE  R37 K49 R38  ; R37["Label"] := R38
-401 [-]: MOVE      R38 R1       ; R38 := R1
-402 [-]: CALL      R35 4 1      ; R35(R36,R37,R38)
-403 [-]: FORLOOP   R31 389      ; R31 += R33; if R31 <= R32 then begin PC := 389; R34 := R31 end
-404 [-]: GETUPVAL  R35 U3       ; R35 := U3
-405 [-]: GETTABLE  R35 R35 K46  ; R35 := R35["mPlayerInfo"]
-406 [-]: GETUPVAL  R36 U9       ; R36 := U9
-407 [-]: GETTABLE  R35 R35 R36  ; R35 := R35[R36]
-408 [-]: GETTABLE  R35 R35 K47  ; R35 := R35["mLoadoutList"]
-409 [-]: SELF      R35 R35 K52  ; R36 := R35; R35 := R35["0x6470BAF4"]
-410 [-]: LOADNIL   R37 R38      ; R37 := R38 := nil
-411 [-]: MOVE      R39 R1       ; R39 := R1
-412 [-]: CALL      R35 5 1      ; R35(R36,R37,R38,R39)
-413 [-]: GETUPVAL  R35 U3       ; R35 := U3
-414 [-]: GETTABLE  R35 R35 K53  ; R35 := R35["mFocusedPlayerInfo"]
-415 [-]: EQ        1 R35 K10    ; if R35 == nil then PC := 423
-416 [-]: JMP       423          ; PC := 423
-417 [-]: GETUPVAL  R35 U3       ; R35 := U3
-418 [-]: GETTABLE  R35 R35 K53  ; R35 := R35["mFocusedPlayerInfo"]
-419 [-]: GETTABLE  R35 R35 K54  ; R35 := R35["Id"]
-420 [-]: GETUPVAL  R36 U9       ; R36 := U9
-421 [-]: EQ        1 R35 R36    ; if R35 == R36 then PC := 424
-422 [-]: JMP       424          ; PC := 424
-423 [-]: MOVE      R35 R0       ; R35 := R0
-424 [-]: MOVE      R35 R1       ; R35 := R1
-425 [-]: GETUPVAL  R36 U3       ; R36 := U3
-426 [-]: SELF      R36 R36 K55  ; R37 := R36; R36 := R36["0xD946F37D"]
-427 [-]: GETUPVAL  R38 U9       ; R38 := U9
-428 [-]: GETUPVAL  R39 U3       ; R39 := U3
-429 [-]: SELF      R39 R39 K56  ; R40 := R39; R39 := R39["0x69589BB"]
-430 [-]: GETUPVAL  R41 U9       ; R41 := U9
-431 [-]: CALL      R39 3 2      ; R39 := R39(R40,R41)
-432 [-]: GETUPVAL  R40 U3       ; R40 := U3
-433 [-]: SELF      R40 R40 K57  ; R41 := R40; R40 := R40["0xA16477A2"]
-434 [-]: GETUPVAL  R42 U9       ; R42 := U9
-435 [-]: MOVE      R43 R35      ; R43 := R35
-436 [-]: CALL      R40 4 2      ; R40 := R40(R41,R42,R43)
-437 [-]: MOVE      R41 R35      ; R41 := R35
-438 [-]: GETUPVAL  R42 U10      ; R42 := U10
-439 [-]: CALL      R36 7 1      ; R36(R37,R38,R39,R40,R41,R42)
-440 [-]: GETGLOBAL R36 K1       ; R36 := 0x400E7765
-441 [-]: GETUPVAL  R37 U3       ; R37 := U3
-442 [-]: GETTABLE  R37 R37 K58  ; R37 := R37["mTimerMgr"]
-443 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-444 [-]: TEST      R36 1        ; if R36 then PC := 456
-445 [-]: JMP       456          ; PC := 456
-446 [-]: GETUPVAL  R36 U3       ; R36 := U3
-447 [-]: GETUPVAL  R37 U3       ; R37 := U3
-448 [-]: GETTABLE  R37 R37 K58  ; R37 := R37["mTimerMgr"]
-449 [-]: SELF      R37 R37 K60  ; R38 := R37; R37 := R37["0x61494587"]
-450 [-]: LOADK     R39 K2       ; R39 := 1
-451 [-]: GETUPVAL  R40 U11      ; R40 := U11
-452 [-]: CALL      R37 4 2      ; R37 := R37(R38,R39,R40)
-453 [-]: SETTABLE  R36 K59 R37  ; R36["mRedrawTimerId"] := R37
-454 [-]: MOVE      R36 R1       ; R36 := R1
-455 [-]: MOVE      R36 R10      ; R36 := R10
-456 [-]: RETURN    R0 1         ; return 
+353 [-]: GETUPVAL  R26 U3       ; R26 := U3
+354 [-]: GETTABLE  R26 R26 K46  ; R26 := R26["mPlayerInfo"]
+355 [-]: GETUPVAL  R27 U9       ; R27 := U9
+356 [-]: GETTABLE  R26 R26 R27  ; R26 := R26[R27]
+357 [-]: GETTABLE  R26 R26 K47  ; R26 := R26["mLoadoutList"]
+358 [-]: SELF      R26 R26 K48  ; R27 := R26; R26 := R26["0xC51A5C9D"]
+359 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+360 [-]: LT        0 R25 R26    ; if R25 >= R26 then PC := 364
+361 [-]: JMP       364          ; PC := 364
+362 [-]: MOVE      R24 R1       ; R24 := R1
+363 [-]: JMP       385          ; PC := 385
+364 [-]: LOADK     R27 K2       ; R27 := 1
+365 [-]: MOVE      R28 R25      ; R28 := R25
+366 [-]: LOADK     R29 K2       ; R29 := 1
+367 [-]: FORPREP   R27 384      ; R27 -= R29; PC := 384
+368 [-]: GETUPVAL  R31 U3       ; R31 := U3
+369 [-]: GETTABLE  R31 R31 K46  ; R31 := R31["mPlayerInfo"]
+370 [-]: GETUPVAL  R32 U9       ; R32 := U9
+371 [-]: GETTABLE  R31 R31 R32  ; R31 := R31[R32]
+372 [-]: GETTABLE  R31 R31 K47  ; R31 := R31["mLoadoutList"]
+373 [-]: SELF      R31 R31 K49  ; R32 := R31; R31 := R31["0xD75E681A"]
+374 [-]: MOVE      R33 R30      ; R33 := R30
+375 [-]: CALL      R31 3 2      ; R31 := R31(R32,R33)
+376 [-]: EQ        1 R31 K10    ; if R31 == nil then PC := 382
+377 [-]: JMP       382          ; PC := 382
+378 [-]: GETTABLE  R32 R31 K50  ; R32 := R31["Label"]
+379 [-]: GETTABLE  R33 R1 R30   ; R33 := R1[R30]
+380 [-]: EQ        1 R32 R33    ; if R32 == R33 then PC := 384
+381 [-]: JMP       384          ; PC := 384
+382 [-]: MOVE      R24 R1       ; R24 := R1
+383 [-]: JMP       385          ; PC := 385
+384 [-]: FORLOOP   R27 368      ; R27 += R29; if R27 <= R28 then begin PC := 368; R30 := R27 end
+385 [-]: TEST      R24 0        ; if not R24 then PC := 451
+386 [-]: JMP       451          ; PC := 451
+387 [-]: GETUPVAL  R32 U3       ; R32 := U3
+388 [-]: GETTABLE  R32 R32 K46  ; R32 := R32["mPlayerInfo"]
+389 [-]: GETUPVAL  R33 U9       ; R33 := U9
+390 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
+391 [-]: GETTABLE  R32 R32 K47  ; R32 := R32["mLoadoutList"]
+392 [-]: SELF      R32 R32 K51  ; R33 := R32; R32 := R32["0x7CF71D03"]
+393 [-]: MOVE      R34 R1       ; R34 := R1
+394 [-]: MOVE      R35 R1       ; R35 := R1
+395 [-]: CALL      R32 4 1      ; R32(R33,R34,R35)
+396 [-]: LOADK     R32 K2       ; R32 := 1
+397 [-]: LEN       R33 R1       ; R33 := # R1
+398 [-]: LOADK     R34 K2       ; R34 := 1
+399 [-]: FORPREP   R32 414      ; R32 -= R34; PC := 414
+400 [-]: GETTABLE  R36 R1 R35   ; R36 := R1[R35]
+401 [-]: EQ        1 R36 K0     ; if R36 == "" then PC := 414
+402 [-]: JMP       414          ; PC := 414
+403 [-]: GETUPVAL  R36 U3       ; R36 := U3
+404 [-]: GETTABLE  R36 R36 K46  ; R36 := R36["mPlayerInfo"]
+405 [-]: GETUPVAL  R37 U9       ; R37 := U9
+406 [-]: GETTABLE  R36 R36 R37  ; R36 := R36[R37]
+407 [-]: GETTABLE  R36 R36 K47  ; R36 := R36["mLoadoutList"]
+408 [-]: SELF      R36 R36 K52  ; R37 := R36; R36 := R36["0xA77DA8EE"]
+409 [-]: NEWTABLE  R38 0 1      ; R38 := {}
+410 [-]: GETTABLE  R39 R1 R35   ; R39 := R1[R35]
+411 [-]: SETTABLE  R38 K50 R39  ; R38["Label"] := R39
+412 [-]: MOVE      R39 R1       ; R39 := R1
+413 [-]: CALL      R36 4 1      ; R36(R37,R38,R39)
+414 [-]: FORLOOP   R32 400      ; R32 += R34; if R32 <= R33 then begin PC := 400; R35 := R32 end
+415 [-]: GETUPVAL  R36 U3       ; R36 := U3
+416 [-]: GETTABLE  R36 R36 K46  ; R36 := R36["mPlayerInfo"]
+417 [-]: GETUPVAL  R37 U9       ; R37 := U9
+418 [-]: GETTABLE  R36 R36 R37  ; R36 := R36[R37]
+419 [-]: GETTABLE  R36 R36 K47  ; R36 := R36["mLoadoutList"]
+420 [-]: SELF      R36 R36 K53  ; R37 := R36; R36 := R36["0x6470BAF4"]
+421 [-]: LOADNIL   R38 R39      ; R38 := R39 := nil
+422 [-]: MOVE      R40 R1       ; R40 := R1
+423 [-]: CALL      R36 5 1      ; R36(R37,R38,R39,R40)
+424 [-]: GETUPVAL  R36 U3       ; R36 := U3
+425 [-]: GETTABLE  R36 R36 K54  ; R36 := R36["mFocusedPlayerInfo"]
+426 [-]: EQ        1 R36 K10    ; if R36 == nil then PC := 434
+427 [-]: JMP       434          ; PC := 434
+428 [-]: GETUPVAL  R36 U3       ; R36 := U3
+429 [-]: GETTABLE  R36 R36 K54  ; R36 := R36["mFocusedPlayerInfo"]
+430 [-]: GETTABLE  R36 R36 K55  ; R36 := R36["Id"]
+431 [-]: GETUPVAL  R37 U9       ; R37 := U9
+432 [-]: EQ        1 R36 R37    ; if R36 == R37 then PC := 435
+433 [-]: JMP       435          ; PC := 435
+434 [-]: MOVE      R36 R0       ; R36 := R0
+435 [-]: MOVE      R36 R1       ; R36 := R1
+436 [-]: GETUPVAL  R37 U3       ; R37 := U3
+437 [-]: SELF      R37 R37 K56  ; R38 := R37; R37 := R37["0xD946F37D"]
+438 [-]: GETUPVAL  R39 U9       ; R39 := U9
+439 [-]: GETUPVAL  R40 U3       ; R40 := U3
+440 [-]: SELF      R40 R40 K57  ; R41 := R40; R40 := R40["0x69589BB"]
+441 [-]: GETUPVAL  R42 U9       ; R42 := U9
+442 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
+443 [-]: GETUPVAL  R41 U3       ; R41 := U3
+444 [-]: SELF      R41 R41 K58  ; R42 := R41; R41 := R41["0xA16477A2"]
+445 [-]: GETUPVAL  R43 U9       ; R43 := U9
+446 [-]: MOVE      R44 R36      ; R44 := R36
+447 [-]: CALL      R41 4 2      ; R41 := R41(R42,R43,R44)
+448 [-]: MOVE      R42 R36      ; R42 := R36
+449 [-]: GETUPVAL  R43 U10      ; R43 := U10
+450 [-]: CALL      R37 7 1      ; R37(R38,R39,R40,R41,R42,R43)
+451 [-]: GETGLOBAL R37 K1       ; R37 := 0x400E7765
+452 [-]: GETUPVAL  R38 U3       ; R38 := U3
+453 [-]: GETTABLE  R38 R38 K59  ; R38 := R38["mTimerMgr"]
+454 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+455 [-]: TEST      R37 1        ; if R37 then PC := 467
+456 [-]: JMP       467          ; PC := 467
+457 [-]: GETUPVAL  R37 U3       ; R37 := U3
+458 [-]: GETUPVAL  R38 U3       ; R38 := U3
+459 [-]: GETTABLE  R38 R38 K59  ; R38 := R38["mTimerMgr"]
+460 [-]: SELF      R38 R38 K61  ; R39 := R38; R38 := R38["0x61494587"]
+461 [-]: LOADK     R40 K2       ; R40 := 1
+462 [-]: GETUPVAL  R41 U11      ; R41 := U11
+463 [-]: CALL      R38 4 2      ; R38 := R38(R39,R40,R41)
+464 [-]: SETTABLE  R37 K60 R38  ; R37["mRedrawTimerId"] := R38
+465 [-]: MOVE      R37 R1       ; R37 := R1
+466 [-]: MOVE      R37 R10      ; R37 := R10
+467 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1.31:
 ;
 ; Name:            
-; Defined at line: 1219
+; Defined at line: 1224
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5076,7 +5087,7 @@ code size: 20
 ; Function #1.32:
 ;
 ; Name:            
-; Defined at line: 1263
+; Defined at line: 1268
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5092,7 +5103,7 @@ code size: 20
 ; Function #1.33:
 ;
 ; Name:            
-; Defined at line: 1270
+; Defined at line: 1275
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5117,7 +5128,7 @@ code size: 20
 ; Function #1.34:
 ;
 ; Name:            
-; Defined at line: 1275
+; Defined at line: 1280
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5267,7 +5278,7 @@ code size: 20
 ; Function #1.35:
 ;
 ; Name:            
-; Defined at line: 1310
+; Defined at line: 1315
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5341,7 +5352,7 @@ code size: 20
 ; Function #1.36:
 ;
 ; Name:            
-; Defined at line: 1339
+; Defined at line: 1344
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5769,7 +5780,7 @@ code size: 20
 ; Function #1.37:
 ;
 ; Name:            
-; Defined at line: 1495
+; Defined at line: 1500
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5861,7 +5872,7 @@ code size: 20
 ; Function #1.38:
 ;
 ; Name:            
-; Defined at line: 1515
+; Defined at line: 1520
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5894,7 +5905,7 @@ code size: 20
 ; Function #1.39:
 ;
 ; Name:            
-; Defined at line: 1526
+; Defined at line: 1531
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5964,7 +5975,7 @@ code size: 20
 ; Function #1.40:
 ;
 ; Name:            
-; Defined at line: 1541
+; Defined at line: 1546
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6089,7 +6100,7 @@ code size: 20
 ; Function #1.41:
 ;
 ; Name:            
-; Defined at line: 1562
+; Defined at line: 1567
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6123,7 +6134,7 @@ code size: 20
 ; Function #1.42:
 ;
 ; Name:            
-; Defined at line: 1584
+; Defined at line: 1589
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -6137,7 +6148,7 @@ code size: 20
 ; Function #1.43:
 ;
 ; Name:            
-; Defined at line: 1588
+; Defined at line: 1593
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

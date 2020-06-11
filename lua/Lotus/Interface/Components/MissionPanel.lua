@@ -6,7 +6,7 @@ code size: 4
 code size: 4
 code size: 16
 code size: 32
-code size: 443
+code size: 423
 code size: 189
 code size: 15
 code size: 15
@@ -563,130 +563,110 @@ code size: 15
 323 [-]: GETGLOBAL R35 K0       ; R35 := gGameRules
 324 [-]: SELF      R35 R35 K76  ; R36 := R35; R35 := R35["0x49E62557"]
 325 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-326 [-]: TEST      R35 0        ; if not R35 then PC := 357
-327 [-]: JMP       357          ; PC := 357
-328 [-]: GETUPVAL  R35 U0       ; R35 := U0
-329 [-]: GETTABLE  R35 R35 K77  ; R35 := R35["0x5F62D399"]
-330 [-]: SELF      R36 R1 K78   ; R37 := R1; R36 := R1["0x443BE143"]
-331 [-]: CALL      R36 2 0      ; R36,... := R36(R37)
-332 [-]: CALL      R35 0 2      ; R35 := R35(R36,...)
-333 [-]: TEST      R35 0        ; if not R35 then PC := 348
-334 [-]: JMP       348          ; PC := 348
-335 [-]: GETTABLE  R35 R0 K8    ; R35 := R0["mMovie"]
-336 [-]: SELF      R35 R35 K60  ; R36 := R35; R35 := R35["0x5DB0BD4"]
-337 [-]: LOADK     R37 K79      ; R37 := "/Lotus/Language/Game/MissionName_BadlandsConflict"
-338 [-]: MOVE      R38 R0       ; R38 := R0
-339 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-340 [-]: SETTABLE  R0 K24 R35   ; R0["mName"] := R35
-341 [-]: GETTABLE  R35 R0 K8    ; R35 := R0["mMovie"]
-342 [-]: SELF      R35 R35 K60  ; R36 := R35; R35 := R35["0x5DB0BD4"]
-343 [-]: LOADK     R37 K80      ; R37 := "/Lotus/Language/Menu/Codex_Tenno"
-344 [-]: MOVE      R38 R0       ; R38 := R0
-345 [-]: CALL      R35 4 2      ; R35 := R35(R36,R37,R38)
-346 [-]: SETTABLE  R0 K73 R35   ; R0["mShip"] := R35
-347 [-]: JMP       357          ; PC := 357
-348 [-]: GETTABLE  R35 R0 K8    ; R35 := R0["mMovie"]
-349 [-]: SELF      R35 R35 K60  ; R36 := R35; R35 := R35["0x5DB0BD4"]
-350 [-]: LOADK     R37 K81      ; R37 := "/Lotus/Language/Game/MissionName_Badlands"
-351 [-]: MOVE      R38 R0       ; R38 := R0
-352 [-]: NEWTABLE  R39 0 1      ; R39 := {}
-353 [-]: GETTABLE  R40 R0 K24   ; R40 := R0["mName"]
-354 [-]: SETTABLE  R39 K82 R40  ; R39["MISSION_NAME"] := R40
-355 [-]: CALL      R35 5 2      ; R35 := R35(R36,R37,R38,R39)
-356 [-]: SETTABLE  R0 K24 R35   ; R0["mName"] := R35
-357 [-]: GETGLOBAL R35 K0       ; R35 := gGameRules
-358 [-]: SELF      R35 R35 K83  ; R36 := R35; R35 := R35["0x8B598ED4"]
-359 [-]: GETGLOBAL R37 K84      ; R37 := gLotusHubGameRulesType
-360 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
-361 [-]: TEST      R35 0        ; if not R35 then PC := 398
-362 [-]: JMP       398          ; PC := 398
-363 [-]: LOADNIL   R35 R35      ; R35 := nil
-364 [-]: GETGLOBAL R36 K23      ; R36 := 0x9FAED6BC
-365 [-]: MOVE      R37 R11      ; R37 := R11
-366 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-367 [-]: EQ        0 R36 K85    ; if R36 ~= "IronwakeHUB3" then PC := 371
-368 [-]: JMP       371          ; PC := 371
-369 [-]: LOADK     R35 K86      ; R35 := "/Lotus/Language/Factions/SteelMeridianName"
-370 [-]: JMP       372          ; PC := 372
-371 [-]: LOADK     R35 K80      ; R35 := "/Lotus/Language/Menu/Codex_Tenno"
-372 [-]: GETGLOBAL R36 K31      ; R36 := string
-373 [-]: GETTABLE  R36 R36 K55  ; R36 := R36["0x639C642A"]
-374 [-]: GETTABLE  R37 R0 K8    ; R37 := R0["mMovie"]
-375 [-]: SELF      R37 R37 K60  ; R38 := R37; R37 := R37["0x5DB0BD4"]
-376 [-]: MOVE      R39 R35      ; R39 := R35
-377 [-]: MOVE      R40 R0       ; R40 := R0
-378 [-]: CALL      R37 4 0      ; R37,... := R37(R38,R39,R40)
-379 [-]: CALL      R36 0 2      ; R36 := R36(R37,...)
-380 [-]: SETTABLE  R0 K73 R36   ; R0["mShip"] := R36
-381 [-]: GETGLOBAL R36 K87      ; R36 := gMatchingService
-382 [-]: SELF      R36 R36 K88  ; R37 := R36; R36 := R36["0xA99F3BEF"]
-383 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-384 [-]: TEST      R36 0        ; if not R36 then PC := 396
-385 [-]: JMP       396          ; PC := 396
-386 [-]: GETGLOBAL R36 K31      ; R36 := string
-387 [-]: GETTABLE  R36 R36 K55  ; R36 := R36["0x639C642A"]
-388 [-]: GETTABLE  R37 R0 K8    ; R37 := R0["mMovie"]
-389 [-]: SELF      R37 R37 K60  ; R38 := R37; R37 := R37["0x5DB0BD4"]
-390 [-]: LOADK     R39 K89      ; R39 := "/Lotus/Language/SquadLink/LocationFlotilla"
-391 [-]: MOVE      R40 R0       ; R40 := R0
-392 [-]: CALL      R37 4 0      ; R37,... := R37(R38,R39,R40)
-393 [-]: CALL      R36 0 2      ; R36 := R36(R37,...)
-394 [-]: SETTABLE  R0 K63 R36   ; R0["mAssignment"] := R36
-395 [-]: JMP       427          ; PC := 427
-396 [-]: SETTABLE  R0 K63 K12   ; R0["mAssignment"] := ""
-397 [-]: JMP       427          ; PC := 427
-398 [-]: GETGLOBAL R36 K87      ; R36 := gMatchingService
-399 [-]: SELF      R36 R36 K88  ; R37 := R36; R36 := R36["0xA99F3BEF"]
-400 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-401 [-]: TEST      R36 0        ; if not R36 then PC := 427
-402 [-]: JMP       427          ; PC := 427
-403 [-]: GETTABLE  R36 R0 K8    ; R36 := R0["mMovie"]
-404 [-]: SELF      R36 R36 K60  ; R37 := R36; R36 := R36["0x5DB0BD4"]
-405 [-]: LOADK     R38 K90      ; R38 := "/Lotus/Language/G1Quests/FlotillaOperation"
-406 [-]: MOVE      R39 R0       ; R39 := R0
-407 [-]: CALL      R36 4 2      ; R36 := R36(R37,R38,R39)
-408 [-]: SETTABLE  R0 K24 R36   ; R0["mName"] := R36
-409 [-]: GETGLOBAL R36 K57      ; R36 := 0x7C282057
-410 [-]: GETTABLE  R37 R0 K2    ; R37 := R0["mMissionInfo"]
-411 [-]: GETTABLE  R37 R37 K58  ; R37 := R37["levelKeyName"]
-412 [-]: CALL      R36 2 2      ; R36 := R36(R37)
-413 [-]: GETGLOBAL R37 K1       ; R37 := 0x400E7765
-414 [-]: MOVE      R38 R36      ; R38 := R36
-415 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-416 [-]: TEST      R37 1        ; if R37 then PC := 427
-417 [-]: JMP       427          ; PC := 427
-418 [-]: SELF      R37 R36 K59  ; R38 := R36; R37 := R36["0x616C74B6"]
-419 [-]: CALL      R37 2 2      ; R37 := R37(R38)
-420 [-]: GETTABLE  R38 R0 K8    ; R38 := R0["mMovie"]
-421 [-]: SELF      R38 R38 K60  ; R39 := R38; R38 := R38["0x5DB0BD4"]
-422 [-]: SELF      R40 R37 K28  ; R41 := R37; R40 := R37["0x5EC7A3D2"]
-423 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-424 [-]: MOVE      R41 R0       ; R41 := R0
-425 [-]: CALL      R38 4 2      ; R38 := R38(R39,R40,R41)
-426 [-]: SETTABLE  R0 K63 R38   ; R0["mAssignment"] := R38
-427 [-]: GETGLOBAL R38 K1       ; R38 := 0x400E7765
-428 [-]: GETTABLE  R39 R0 K2    ; R39 := R0["mMissionInfo"]
-429 [-]: GETTABLE  R39 R39 K91  ; R39 := R39["enemySpec"]
-430 [-]: CALL      R38 2 2      ; R38 := R38(R39)
-431 [-]: TEST      R38 1        ; if R38 then PC := 442
-432 [-]: JMP       442          ; PC := 442
-433 [-]: GETGLOBAL R38 K23      ; R38 := 0x9FAED6BC
-434 [-]: GETTABLE  R39 R0 K2    ; R39 := R0["mMissionInfo"]
-435 [-]: GETTABLE  R39 R39 K91  ; R39 := R39["enemySpec"]
-436 [-]: SELF      R39 R39 K30  ; R40 := R39; R39 := R39["0x1B252E3C"]
-437 [-]: CALL      R39 2 0      ; R39,... := R39(R40)
-438 [-]: CALL      R38 0 2      ; R38 := R38(R39,...)
-439 [-]: EQ        0 R38 K92    ; if R38 ~= "/Lotus/Types/Game/EnemySpecs/GrineerEventSquadM" then PC := 442
-440 [-]: JMP       442          ; PC := 442
-441 [-]: SETTABLE  R0 K73 K12   ; R0["mShip"] := ""
-442 [-]: SETTABLE  R0 K93 K94   ; R0["mInitialized"] := "0x1"
-443 [-]: RETURN    R0 1         ; return 
+326 [-]: TEST      R35 0        ; if not R35 then PC := 337
+327 [-]: JMP       337          ; PC := 337
+328 [-]: GETTABLE  R35 R0 K8    ; R35 := R0["mMovie"]
+329 [-]: SELF      R35 R35 K60  ; R36 := R35; R35 := R35["0x5DB0BD4"]
+330 [-]: LOADK     R37 K77      ; R37 := "/Lotus/Language/Game/MissionName_Badlands"
+331 [-]: MOVE      R38 R0       ; R38 := R0
+332 [-]: NEWTABLE  R39 0 1      ; R39 := {}
+333 [-]: GETTABLE  R40 R0 K24   ; R40 := R0["mName"]
+334 [-]: SETTABLE  R39 K78 R40  ; R39["MISSION_NAME"] := R40
+335 [-]: CALL      R35 5 2      ; R35 := R35(R36,R37,R38,R39)
+336 [-]: SETTABLE  R0 K24 R35   ; R0["mName"] := R35
+337 [-]: GETGLOBAL R35 K0       ; R35 := gGameRules
+338 [-]: SELF      R35 R35 K79  ; R36 := R35; R35 := R35["0x8B598ED4"]
+339 [-]: GETGLOBAL R37 K80      ; R37 := gLotusHubGameRulesType
+340 [-]: CALL      R35 3 2      ; R35 := R35(R36,R37)
+341 [-]: TEST      R35 0        ; if not R35 then PC := 378
+342 [-]: JMP       378          ; PC := 378
+343 [-]: LOADNIL   R35 R35      ; R35 := nil
+344 [-]: GETGLOBAL R36 K23      ; R36 := 0x9FAED6BC
+345 [-]: MOVE      R37 R11      ; R37 := R11
+346 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+347 [-]: EQ        0 R36 K81    ; if R36 ~= "IronwakeHUB3" then PC := 351
+348 [-]: JMP       351          ; PC := 351
+349 [-]: LOADK     R35 K82      ; R35 := "/Lotus/Language/Factions/SteelMeridianName"
+350 [-]: JMP       352          ; PC := 352
+351 [-]: LOADK     R35 K83      ; R35 := "/Lotus/Language/Menu/Codex_Tenno"
+352 [-]: GETGLOBAL R36 K31      ; R36 := string
+353 [-]: GETTABLE  R36 R36 K55  ; R36 := R36["0x639C642A"]
+354 [-]: GETTABLE  R37 R0 K8    ; R37 := R0["mMovie"]
+355 [-]: SELF      R37 R37 K60  ; R38 := R37; R37 := R37["0x5DB0BD4"]
+356 [-]: MOVE      R39 R35      ; R39 := R35
+357 [-]: MOVE      R40 R0       ; R40 := R0
+358 [-]: CALL      R37 4 0      ; R37,... := R37(R38,R39,R40)
+359 [-]: CALL      R36 0 2      ; R36 := R36(R37,...)
+360 [-]: SETTABLE  R0 K73 R36   ; R0["mShip"] := R36
+361 [-]: GETGLOBAL R36 K84      ; R36 := gMatchingService
+362 [-]: SELF      R36 R36 K85  ; R37 := R36; R36 := R36["0xA99F3BEF"]
+363 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+364 [-]: TEST      R36 0        ; if not R36 then PC := 376
+365 [-]: JMP       376          ; PC := 376
+366 [-]: GETGLOBAL R36 K31      ; R36 := string
+367 [-]: GETTABLE  R36 R36 K55  ; R36 := R36["0x639C642A"]
+368 [-]: GETTABLE  R37 R0 K8    ; R37 := R0["mMovie"]
+369 [-]: SELF      R37 R37 K60  ; R38 := R37; R37 := R37["0x5DB0BD4"]
+370 [-]: LOADK     R39 K86      ; R39 := "/Lotus/Language/SquadLink/LocationFlotilla"
+371 [-]: MOVE      R40 R0       ; R40 := R0
+372 [-]: CALL      R37 4 0      ; R37,... := R37(R38,R39,R40)
+373 [-]: CALL      R36 0 2      ; R36 := R36(R37,...)
+374 [-]: SETTABLE  R0 K63 R36   ; R0["mAssignment"] := R36
+375 [-]: JMP       407          ; PC := 407
+376 [-]: SETTABLE  R0 K63 K12   ; R0["mAssignment"] := ""
+377 [-]: JMP       407          ; PC := 407
+378 [-]: GETGLOBAL R36 K84      ; R36 := gMatchingService
+379 [-]: SELF      R36 R36 K85  ; R37 := R36; R36 := R36["0xA99F3BEF"]
+380 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+381 [-]: TEST      R36 0        ; if not R36 then PC := 407
+382 [-]: JMP       407          ; PC := 407
+383 [-]: GETTABLE  R36 R0 K8    ; R36 := R0["mMovie"]
+384 [-]: SELF      R36 R36 K60  ; R37 := R36; R36 := R36["0x5DB0BD4"]
+385 [-]: LOADK     R38 K87      ; R38 := "/Lotus/Language/G1Quests/FlotillaOperation"
+386 [-]: MOVE      R39 R0       ; R39 := R0
+387 [-]: CALL      R36 4 2      ; R36 := R36(R37,R38,R39)
+388 [-]: SETTABLE  R0 K24 R36   ; R0["mName"] := R36
+389 [-]: GETGLOBAL R36 K57      ; R36 := 0x7C282057
+390 [-]: GETTABLE  R37 R0 K2    ; R37 := R0["mMissionInfo"]
+391 [-]: GETTABLE  R37 R37 K58  ; R37 := R37["levelKeyName"]
+392 [-]: CALL      R36 2 2      ; R36 := R36(R37)
+393 [-]: GETGLOBAL R37 K1       ; R37 := 0x400E7765
+394 [-]: MOVE      R38 R36      ; R38 := R36
+395 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+396 [-]: TEST      R37 1        ; if R37 then PC := 407
+397 [-]: JMP       407          ; PC := 407
+398 [-]: SELF      R37 R36 K59  ; R38 := R36; R37 := R36["0x616C74B6"]
+399 [-]: CALL      R37 2 2      ; R37 := R37(R38)
+400 [-]: GETTABLE  R38 R0 K8    ; R38 := R0["mMovie"]
+401 [-]: SELF      R38 R38 K60  ; R39 := R38; R38 := R38["0x5DB0BD4"]
+402 [-]: SELF      R40 R37 K28  ; R41 := R37; R40 := R37["0x5EC7A3D2"]
+403 [-]: CALL      R40 2 2      ; R40 := R40(R41)
+404 [-]: MOVE      R41 R0       ; R41 := R0
+405 [-]: CALL      R38 4 2      ; R38 := R38(R39,R40,R41)
+406 [-]: SETTABLE  R0 K63 R38   ; R0["mAssignment"] := R38
+407 [-]: GETGLOBAL R38 K1       ; R38 := 0x400E7765
+408 [-]: GETTABLE  R39 R0 K2    ; R39 := R0["mMissionInfo"]
+409 [-]: GETTABLE  R39 R39 K88  ; R39 := R39["enemySpec"]
+410 [-]: CALL      R38 2 2      ; R38 := R38(R39)
+411 [-]: TEST      R38 1        ; if R38 then PC := 422
+412 [-]: JMP       422          ; PC := 422
+413 [-]: GETGLOBAL R38 K23      ; R38 := 0x9FAED6BC
+414 [-]: GETTABLE  R39 R0 K2    ; R39 := R0["mMissionInfo"]
+415 [-]: GETTABLE  R39 R39 K88  ; R39 := R39["enemySpec"]
+416 [-]: SELF      R39 R39 K30  ; R40 := R39; R39 := R39["0x1B252E3C"]
+417 [-]: CALL      R39 2 0      ; R39,... := R39(R40)
+418 [-]: CALL      R38 0 2      ; R38 := R38(R39,...)
+419 [-]: EQ        0 R38 K89    ; if R38 ~= "/Lotus/Types/Game/EnemySpecs/GrineerEventSquadM" then PC := 422
+420 [-]: JMP       422          ; PC := 422
+421 [-]: SETTABLE  R0 K73 K12   ; R0["mShip"] := ""
+422 [-]: SETTABLE  R0 K90 K91   ; R0["mInitialized"] := "0x1"
+423 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7.2:
 ;
 ; Name:            
-; Defined at line: 244
+; Defined at line: 239
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -886,7 +866,7 @@ code size: 15
 ; Function #7.2.1:
 ;
 ; Name:            
-; Defined at line: 297
+; Defined at line: 292
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -912,7 +892,7 @@ code size: 15
 ; Function #7.3:
 ;
 ; Name:            
-; Defined at line: 322
+; Defined at line: 317
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0

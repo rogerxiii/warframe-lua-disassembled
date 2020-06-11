@@ -140,13 +140,13 @@ code size: 103
  67 [-]: SELF      R9 R4 K20    ; R10 := R4; R9 := R4["0x3B1B11B9"]
  68 [-]: GETGLOBAL R11 K21      ; R11 := Game
  69 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["WEAPON_PROC_ACTIVE_BONUS_DAMAGE"]
- 70 [-]: GETGLOBAL R12 K21      ; R12 := Game
- 71 [-]: GETTABLE  R12 R12 K23  ; R12 := R12["STACKING_MULTIPLY"]
+ 70 [-]: GETGLOBAL R12 K23      ; R12 := Engine
+ 71 [-]: GETTABLE  R12 R12 K24  ; R12 := R12["STACKING_MULTIPLY"]
  72 [-]: GETUPVAL  R13 U1       ; R13 := U1
- 73 [-]: SELF      R14 R8 K24   ; R15 := R8; R14 := R8["0xE2B32C65"]
+ 73 [-]: SELF      R14 R8 K25   ; R15 := R8; R14 := R8["0xE2B32C65"]
  74 [-]: CALL      R14 2 2      ; R14 := R14(R15)
  75 [-]: LOADNIL   R15 R15      ; R15 := nil
- 76 [-]: GETGLOBAL R16 K25      ; R16 := Engine
+ 76 [-]: GETGLOBAL R16 K23      ; R16 := Engine
  77 [-]: GETTABLE  R16 R16 K26  ; R16 := R16["DT_ANY"]
  78 [-]: GETGLOBAL R17 K27      ; R17 := EMPTY_SYMBOL
  79 [-]: MOVE      R18 R0       ; R18 := R0
@@ -208,8 +208,8 @@ code size: 103
 135 [-]: SELF      R16 R4 K38   ; R17 := R4; R16 := R4["0xF21555A7"]
 136 [-]: GETGLOBAL R18 K21      ; R18 := Game
 137 [-]: GETTABLE  R18 R18 K39  ; R18 := R18["AVATAR_ABILITY_STRENGTH"]
-138 [-]: GETGLOBAL R19 K21      ; R19 := Game
-139 [-]: GETTABLE  R19 R19 K23  ; R19 := R19["STACKING_MULTIPLY"]
+138 [-]: GETGLOBAL R19 K23      ; R19 := Engine
+139 [-]: GETTABLE  R19 R19 K24  ; R19 := R19["STACKING_MULTIPLY"]
 140 [-]: GETUPVAL  R20 U3       ; R20 := U3
 141 [-]: GETGLOBAL R21 K3       ; R21 := _T
 142 [-]: GETTABLE  R21 R21 K4   ; R21 := R21["emberPassive"]
@@ -224,8 +224,8 @@ code size: 103
 151 [-]: SELF      R16 R4 K20   ; R17 := R4; R16 := R4["0x3B1B11B9"]
 152 [-]: GETGLOBAL R18 K21      ; R18 := Game
 153 [-]: GETTABLE  R18 R18 K39  ; R18 := R18["AVATAR_ABILITY_STRENGTH"]
-154 [-]: GETGLOBAL R19 K21      ; R19 := Game
-155 [-]: GETTABLE  R19 R19 K23  ; R19 := R19["STACKING_MULTIPLY"]
+154 [-]: GETGLOBAL R19 K23      ; R19 := Engine
+155 [-]: GETTABLE  R19 R19 K24  ; R19 := R19["STACKING_MULTIPLY"]
 156 [-]: GETUPVAL  R20 U3       ; R20 := U3
 157 [-]: MUL       R20 R20 R9   ; R20 := R20 * R9
 158 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
@@ -310,30 +310,30 @@ code size: 103
  40 [-]: SELF      R3 R3 K11    ; R4 := R3; R3 := R3["0xF21555A7"]
  41 [-]: GETGLOBAL R5 K12       ; R5 := Game
  42 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["AVATAR_ABILITY_STRENGTH"]
- 43 [-]: GETGLOBAL R6 K12       ; R6 := Game
- 44 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["STACKING_MULTIPLY"]
+ 43 [-]: GETGLOBAL R6 K14       ; R6 := Engine
+ 44 [-]: GETTABLE  R6 R6 K15    ; R6 := R6["STACKING_MULTIPLY"]
  45 [-]: GETUPVAL  R7 U1        ; R7 := U1
  46 [-]: GETGLOBAL R8 K3        ; R8 := _T
  47 [-]: GETTABLE  R8 R8 K4     ; R8 := R8["emberPassive"]
  48 [-]: GETTABLE  R8 R8 R2     ; R8 := R8[R2]
  49 [-]: MUL       R7 R7 R8     ; R7 := R7 * R8
  50 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 51 [-]: GETGLOBAL R3 K15       ; R3 := Lotus_Game
- 52 [-]: GETTABLE  R3 R3 K16    ; R3 := R3["0xFAFD4322"]
+ 51 [-]: GETGLOBAL R3 K16       ; R3 := Lotus_Game
+ 52 [-]: GETTABLE  R3 R3 K17    ; R3 := R3["0xFAFD4322"]
  53 [-]: CALL      R3 1 2       ; R3 := R3()
- 54 [-]: SETTABLE  R3 K17 R1    ; R3["instigator"] := R1
+ 54 [-]: SETTABLE  R3 K18 R1    ; R3["instigator"] := R1
  55 [-]: NEWTABLE  R4 1 0       ; R4 := {}
  56 [-]: MOVE      R5 R1        ; R5 := R1
  57 [-]: SETLIST   R4 1 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 1
- 58 [-]: SETTABLE  R3 K18 R4    ; R3["affected"] := R4
- 59 [-]: GETGLOBAL R4 K19       ; R4 := abilityType
- 60 [-]: SETTABLE  R3 K19 R4    ; R3["abilityType"] := R4
- 61 [-]: SELF      R4 R1 K20    ; R5 := R1; R4 := R1["0x584F13D6"]
+ 58 [-]: SETTABLE  R3 K19 R4    ; R3["affected"] := R4
+ 59 [-]: GETGLOBAL R4 K20       ; R4 := abilityType
+ 60 [-]: SETTABLE  R3 K20 R4    ; R3["abilityType"] := R4
+ 61 [-]: SELF      R4 R1 K21    ; R5 := R1; R4 := R1["0x584F13D6"]
  62 [-]: MOVE      R6 R3        ; R6 := R3
  63 [-]: MOVE      R7 R0        ; R7 := R0
  64 [-]: MOVE      R8 R1        ; R8 := R1
  65 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 66 [-]: SELF      R4 R0 K21    ; R5 := R0; R4 := R0["0xEA55C538"]
+ 66 [-]: SELF      R4 R0 K22    ; R5 := R0; R4 := R0["0xEA55C538"]
  67 [-]: LOADK     R6 K9        ; R6 := 0
  68 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  69 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
@@ -345,14 +345,14 @@ code size: 103
  75 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  76 [-]: SELF      R5 R5 K11    ; R6 := R5; R5 := R5["0xF21555A7"]
  77 [-]: GETGLOBAL R7 K12       ; R7 := Game
- 78 [-]: GETTABLE  R7 R7 K22    ; R7 := R7["WEAPON_PROC_ACTIVE_BONUS_DAMAGE"]
- 79 [-]: GETGLOBAL R8 K12       ; R8 := Game
- 80 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["STACKING_MULTIPLY"]
+ 78 [-]: GETTABLE  R7 R7 K23    ; R7 := R7["WEAPON_PROC_ACTIVE_BONUS_DAMAGE"]
+ 79 [-]: GETGLOBAL R8 K14       ; R8 := Engine
+ 80 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["STACKING_MULTIPLY"]
  81 [-]: GETUPVAL  R9 U2        ; R9 := U2
- 82 [-]: SELF      R10 R4 K23   ; R11 := R4; R10 := R4["0xE2B32C65"]
+ 82 [-]: SELF      R10 R4 K24   ; R11 := R4; R10 := R4["0xE2B32C65"]
  83 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  84 [-]: LOADNIL   R11 R11      ; R11 := nil
- 85 [-]: GETGLOBAL R12 K24      ; R12 := Engine
+ 85 [-]: GETGLOBAL R12 K14      ; R12 := Engine
  86 [-]: GETTABLE  R12 R12 K25  ; R12 := R12["DT_ANY"]
  87 [-]: GETGLOBAL R13 K26      ; R13 := EMPTY_SYMBOL
  88 [-]: MOVE      R14 R0       ; R14 := R0

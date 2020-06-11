@@ -79,10 +79,10 @@ code size: 28
  19 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7["0x3B1B11B9"]
  20 [-]: GETGLOBAL R9 K7        ; R9 := Game
  21 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["WEAPON_AMMO_MAX"]
- 22 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 23 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["STACKING_MULTIPLY"]
+ 22 [-]: GETGLOBAL R10 K9       ; R10 := Engine
+ 23 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["STACKING_MULTIPLY"]
  24 [-]: MOVE      R11 R5       ; R11 := R5
- 25 [-]: SELF      R12 R6 K10   ; R13 := R6; R12 := R6["0xE5CB6F43"]
+ 25 [-]: SELF      R12 R6 K11   ; R13 := R6; R12 := R6["0xE5CB6F43"]
  26 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  27 [-]: CALL      R7 0 1       ; R7(R8,...)
  28 [-]: RETURN    R0 1         ; return 
@@ -118,10 +118,10 @@ code size: 28
  19 [-]: SELF      R7 R7 K6     ; R8 := R7; R7 := R7["0xF21555A7"]
  20 [-]: GETGLOBAL R9 K7        ; R9 := Game
  21 [-]: GETTABLE  R9 R9 K8     ; R9 := R9["WEAPON_AMMO_MAX"]
- 22 [-]: GETGLOBAL R10 K7       ; R10 := Game
- 23 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["STACKING_MULTIPLY"]
+ 22 [-]: GETGLOBAL R10 K9       ; R10 := Engine
+ 23 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["STACKING_MULTIPLY"]
  24 [-]: MOVE      R11 R5       ; R11 := R5
- 25 [-]: SELF      R12 R6 K10   ; R13 := R6; R12 := R6["0xE5CB6F43"]
+ 25 [-]: SELF      R12 R6 K11   ; R13 := R6; R12 := R6["0xE5CB6F43"]
  26 [-]: CALL      R12 2 0      ; R12,... := R12(R13)
  27 [-]: CALL      R7 0 1       ; R7(R8,...)
  28 [-]: RETURN    R0 1         ; return 

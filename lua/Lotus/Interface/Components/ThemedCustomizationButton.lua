@@ -1,10 +1,10 @@
 code size: 76
 code size: 3
-code size: 164
+code size: 176
 code size: 12
 code size: 12
 code size: 21
-code size: 15
+code size: 21
 code size: 31
 code size: 24
 code size: 38
@@ -13,12 +13,12 @@ code size: 34
 code size: 175
 code size: 30
 code size: 83
-code size: 192
+code size: 228
 code size: 118
 code size: 30
 code size: 17
 code size: 44
-code size: 20
+code size: 30
 code size: 34
 code size: 45
 code size: 18
@@ -45,16 +45,16 @@ code size: 10
 code size: 124
 code size: 9
 code size: 11
-code size: 215
-code size: 12
+code size: 217
+code size: 19
 code size: 13
-code size: 69
+code size: 73
 code size: 9
 code size: 50
 code size: 17
-code size: 469
-code size: 40
-code size: 6
+code size: 486
+code size: 54
+code size: 13
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\Components\ThemedCustomizationButton.luac 
 
@@ -184,152 +184,164 @@ code size: 6
  16 [-]: MOVE      R0 R3        ; R0 := R3
  17 [-]: CLOSURE   R10 3        ; R10 := closure(Function #2.4)
  18 [-]: MOVE      R0 R9        ; R0 := R9
- 19 [-]: MOVE      R0 R3        ; R0 := R3
- 20 [-]: GETUPVAL  R0 U1        ; R0 := U1
- 21 [-]: SETTABLE  R6 K1 K2     ; R6["mDesc"] := ""
- 22 [-]: SETTABLE  R6 K3 K4     ; R6["mMinSize"] := 448
- 23 [-]: SETTABLE  R6 K5 K4     ; R6["mMaxSize"] := 448
- 24 [-]: SETTABLE  R6 K6 K7     ; R6["mIconPadding"] := 4
- 25 [-]: SETTABLE  R6 K8 K9     ; R6["mTextPadding"] := 12
- 26 [-]: SETTABLE  R6 K10 K11   ; R6["mIconWidthMultiplier"] := 1
- 27 [-]: SETTABLE  R6 K12 K11   ; R6["mIconHeightMultiplier"] := 1
- 28 [-]: SETTABLE  R6 K13 K14   ; R6["mBigButtonTextPadding"] := 20
- 29 [-]: SETTABLE  R6 K15 K16   ; R6["mMultiline"] := "0x0"
- 30 [-]: GETTABLE  R11 R6 K18   ; R11 := R6["SetActive"]
- 31 [-]: SETTABLE  R6 K17 R11   ; R6["ComponentSetActive"] := R11
- 32 [-]: CLOSURE   R11 4        ; R11 := closure(Function #2.5)
- 33 [-]: SETTABLE  R6 K18 R11   ; R6["SetActive"] := R11
- 34 [-]: CLOSURE   R11 5        ; R11 := closure(Function #2.6)
- 35 [-]: SETTABLE  R6 K19 R11   ; R6["OnGamepadTransition"] := R11
- 36 [-]: GETTABLE  R11 R6 K21   ; R11 := R6["Interpolate"]
- 37 [-]: SETTABLE  R6 K20 R11   ; R6["ComponentInterpolate"] := R11
- 38 [-]: CLOSURE   R11 6        ; R11 := closure(Function #2.7)
- 39 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 40 [-]: SETTABLE  R6 K21 R11   ; R6["Interpolate"] := R11
- 41 [-]: CLOSURE   R11 7        ; R11 := closure(Function #2.8)
- 42 [-]: SETTABLE  R6 K22 R11   ; R6["TrySetDrag"] := R11
- 43 [-]: GETTABLE  R11 R6 K24   ; R11 := R6["TrySetFocus"]
- 44 [-]: SETTABLE  R6 K23 R11   ; R6["ComponentTrySetFocus"] := R11
- 45 [-]: CLOSURE   R11 8        ; R11 := closure(Function #2.9)
- 46 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 47 [-]: SETTABLE  R6 K24 R11   ; R6["TrySetFocus"] := R11
- 48 [-]: GETTABLE  R11 R6 K26   ; R11 := R6["SetFocus"]
- 49 [-]: SETTABLE  R6 K25 R11   ; R6["ComponentSetFocus"] := R11
- 50 [-]: CLOSURE   R11 9        ; R11 := closure(Function #2.10)
- 51 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 52 [-]: GETUPVAL  R0 U4        ; R0 := U4
- 53 [-]: MOVE      R0 R5        ; R0 := R5
- 54 [-]: MOVE      R0 R3        ; R0 := R3
- 55 [-]: GETUPVAL  R0 U5        ; R0 := U5
- 56 [-]: SETTABLE  R6 K26 R11   ; R6["SetFocus"] := R11
- 57 [-]: GETTABLE  R11 R6 K28   ; R11 := R6["TryPressed"]
- 58 [-]: SETTABLE  R6 K27 R11   ; R6["ComponentTryPressed"] := R11
- 59 [-]: CLOSURE   R11 10       ; R11 := closure(Function #2.11)
- 60 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 61 [-]: SETTABLE  R6 K28 R11   ; R6["TryPressed"] := R11
- 62 [-]: GETTABLE  R11 R6 K30   ; R11 := R6["Pressed"]
- 63 [-]: SETTABLE  R6 K29 R11   ; R6["ComponentPressed"] := R11
- 64 [-]: CLOSURE   R11 11       ; R11 := closure(Function #2.12)
- 65 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 66 [-]: MOVE      R0 R4        ; R0 := R4
- 67 [-]: MOVE      R0 R5        ; R0 := R5
- 68 [-]: SETTABLE  R6 K30 R11   ; R6["Pressed"] := R11
- 69 [-]: GETTABLE  R11 R6 K32   ; R11 := R6["Resize"]
- 70 [-]: SETTABLE  R6 K31 R11   ; R6["ComponentResize"] := R11
- 71 [-]: CLOSURE   R11 12       ; R11 := closure(Function #2.13)
- 72 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 73 [-]: SETTABLE  R6 K32 R11   ; R6["Resize"] := R11
- 74 [-]: GETTABLE  R11 R6 K34   ; R11 := R6["UpdateColors"]
- 75 [-]: SETTABLE  R6 K33 R11   ; R6["ComponentUpdateColors"] := R11
- 76 [-]: CLOSURE   R11 13       ; R11 := closure(Function #2.14)
- 77 [-]: GETUPVAL  R0 U6        ; R0 := U6
- 78 [-]: SETTABLE  R6 K34 R11   ; R6["UpdateColors"] := R11
- 79 [-]: CLOSURE   R11 14       ; R11 := closure(Function #2.15)
- 80 [-]: MOVE      R0 R3        ; R0 := R3
- 81 [-]: SETTABLE  R6 K35 R11   ; R6["ApplyColor"] := R11
- 82 [-]: CLOSURE   R11 15       ; R11 := closure(Function #2.16)
- 83 [-]: SETTABLE  R6 K36 R11   ; R6["ResetColor"] := R11
- 84 [-]: CLOSURE   R11 16       ; R11 := closure(Function #2.17)
- 85 [-]: MOVE      R0 R3        ; R0 := R3
- 86 [-]: GETUPVAL  R0 U7        ; R0 := U7
- 87 [-]: SETTABLE  R6 K37 R11   ; R6["RandomizeColor"] := R11
- 88 [-]: CLOSURE   R11 17       ; R11 := closure(Function #2.18)
- 89 [-]: GETUPVAL  R0 U7        ; R0 := U7
- 90 [-]: MOVE      R0 R3        ; R0 := R3
- 91 [-]: SETTABLE  R6 K38 R11   ; R6["PickColor"] := R11
- 92 [-]: CLOSURE   R11 18       ; R11 := closure(Function #2.19)
- 93 [-]: MOVE      R0 R3        ; R0 := R3
- 94 [-]: MOVE      R0 R5        ; R0 := R5
- 95 [-]: SETTABLE  R6 K39 R11   ; R6["ApplyItemSelection"] := R11
- 96 [-]: CLOSURE   R11 19       ; R11 := closure(Function #2.20)
- 97 [-]: MOVE      R0 R5        ; R0 := R5
- 98 [-]: SETTABLE  R6 K40 R11   ; R6["DefaultItemSelection"] := R11
- 99 [-]: CLOSURE   R11 20       ; R11 := closure(Function #2.21)
-100 [-]: MOVE      R0 R5        ; R0 := R5
-101 [-]: SETTABLE  R6 K41 R11   ; R6["RandomizeItemSelection"] := R11
-102 [-]: CLOSURE   R11 21       ; R11 := closure(Function #2.22)
-103 [-]: GETUPVAL  R0 U3        ; R0 := U3
-104 [-]: SETTABLE  R6 K42 R11   ; R6["SetDefault"] := R11
-105 [-]: CLOSURE   R11 22       ; R11 := closure(Function #2.23)
-106 [-]: GETUPVAL  R0 U3        ; R0 := U3
-107 [-]: SETTABLE  R6 K43 R11   ; R6["Randomize"] := R11
-108 [-]: CLOSURE   R11 23       ; R11 := closure(Function #2.24)
-109 [-]: SETTABLE  R6 K44 R11   ; R6["GetContentHeight"] := R11
-110 [-]: CLOSURE   R11 24       ; R11 := closure(Function #2.25)
-111 [-]: GETUPVAL  R0 U3        ; R0 := U3
-112 [-]: MOVE      R0 R3        ; R0 := R3
-113 [-]: GETUPVAL  R0 U8        ; R0 := U8
-114 [-]: SETTABLE  R6 K45 R11   ; R6["RedrawDropDown"] := R11
-115 [-]: CLOSURE   R11 25       ; R11 := closure(Function #2.26)
-116 [-]: GETUPVAL  R0 U3        ; R0 := U3
-117 [-]: MOVE      R0 R3        ; R0 := R3
-118 [-]: GETUPVAL  R0 U9        ; R0 := U9
-119 [-]: GETUPVAL  R0 U1        ; R0 := U1
-120 [-]: SETTABLE  R6 K46 R11   ; R6["RedrawToggle"] := R11
-121 [-]: CLOSURE   R11 26       ; R11 := closure(Function #2.27)
-122 [-]: GETUPVAL  R0 U3        ; R0 := U3
-123 [-]: MOVE      R0 R3        ; R0 := R3
-124 [-]: GETUPVAL  R0 U10       ; R0 := U10
-125 [-]: GETUPVAL  R0 U1        ; R0 := U1
-126 [-]: SETTABLE  R6 K47 R11   ; R6["RedrawSlider"] := R11
-127 [-]: CLOSURE   R11 27       ; R11 := closure(Function #2.28)
-128 [-]: GETUPVAL  R0 U3        ; R0 := U3
-129 [-]: GETUPVAL  R0 U11       ; R0 := U11
-130 [-]: MOVE      R0 R3        ; R0 := R3
-131 [-]: GETUPVAL  R0 U1        ; R0 := U1
-132 [-]: SETTABLE  R6 K48 R11   ; R6["RedrawCheckbox"] := R11
-133 [-]: CLOSURE   R11 28       ; R11 := closure(Function #2.29)
-134 [-]: GETUPVAL  R0 U3        ; R0 := U3
-135 [-]: MOVE      R0 R7        ; R0 := R7
-136 [-]: MOVE      R0 R8        ; R0 := R8
-137 [-]: MOVE      R0 R10       ; R0 := R10
-138 [-]: GETUPVAL  R0 U0        ; R0 := U0
-139 [-]: MOVE      R0 R3        ; R0 := R3
-140 [-]: SETTABLE  R6 K49 R11   ; R6["RedrawColorButtons"] := R11
-141 [-]: CLOSURE   R11 29       ; R11 := closure(Function #2.30)
-142 [-]: SETTABLE  R6 K50 R11   ; R6["Update"] := R11
-143 [-]: GETTABLE  R11 R6 K52   ; R11 := R6["Redraw"]
-144 [-]: SETTABLE  R6 K51 R11   ; R6["ComponentRedraw"] := R11
-145 [-]: CLOSURE   R11 30       ; R11 := closure(Function #2.31)
-146 [-]: GETUPVAL  R0 U2        ; R0 := U2
-147 [-]: GETUPVAL  R0 U3        ; R0 := U3
-148 [-]: SETTABLE  R6 K52 R11   ; R6["Redraw"] := R11
-149 [-]: GETTABLE  R11 R6 K54   ; R11 := R6["SetText"]
-150 [-]: SETTABLE  R6 K53 R11   ; R6["ComponentSetText"] := R11
-151 [-]: CLOSURE   R11 31       ; R11 := closure(Function #2.32)
-152 [-]: GETUPVAL  R0 U2        ; R0 := U2
-153 [-]: SETTABLE  R6 K54 R11   ; R6["SetText"] := R11
-154 [-]: CLOSURE   R11 32       ; R11 := closure(Function #2.33)
-155 [-]: SETTABLE  R6 K55 R11   ; R6["SetMultiline"] := R11
-156 [-]: SELF      R11 R6 K56   ; R12 := R6; R11 := R6["0x755CB587"]
-157 [-]: LOADK     R13 K57      ; R13 := "left"
-158 [-]: CALL      R11 3 1      ; R11(R12,R13)
-159 [-]: SELF      R11 R6 K58   ; R12 := R6; R11 := R6["0x6470BAF4"]
-160 [-]: CALL      R11 2 1      ; R11(R12)
-161 [-]: SELF      R11 R6 K59   ; R12 := R6; R11 := R6["0xA0107BF2"]
-162 [-]: CALL      R11 2 1      ; R11(R12)
-163 [-]: RETURN    R6 2         ; return R6
-164 [-]: RETURN    R0 1         ; return 
+ 19 [-]: MOVE      R0 R5        ; R0 := R5
+ 20 [-]: MOVE      R0 R3        ; R0 := R3
+ 21 [-]: GETUPVAL  R0 U1        ; R0 := U1
+ 22 [-]: SETTABLE  R6 K1 K2     ; R6["mDesc"] := ""
+ 23 [-]: SETTABLE  R6 K3 K4     ; R6["mMinSize"] := 448
+ 24 [-]: SETTABLE  R6 K5 K4     ; R6["mMaxSize"] := 448
+ 25 [-]: SETTABLE  R6 K6 K7     ; R6["mIconPadding"] := 4
+ 26 [-]: SETTABLE  R6 K8 K9     ; R6["mTextPadding"] := 12
+ 27 [-]: SETTABLE  R6 K10 K11   ; R6["mIconWidthMultiplier"] := 1
+ 28 [-]: SETTABLE  R6 K12 K11   ; R6["mIconHeightMultiplier"] := 1
+ 29 [-]: SETTABLE  R6 K13 K14   ; R6["mBigButtonTextPadding"] := 20
+ 30 [-]: SETTABLE  R6 K15 K16   ; R6["mMultiline"] := "0x0"
+ 31 [-]: GETTABLE  R11 R6 K18   ; R11 := R6["SetActive"]
+ 32 [-]: SETTABLE  R6 K17 R11   ; R6["ComponentSetActive"] := R11
+ 33 [-]: CLOSURE   R11 4        ; R11 := closure(Function #2.5)
+ 34 [-]: SETTABLE  R6 K18 R11   ; R6["SetActive"] := R11
+ 35 [-]: CLOSURE   R11 5        ; R11 := closure(Function #2.6)
+ 36 [-]: SETTABLE  R6 K19 R11   ; R6["OnGamepadTransition"] := R11
+ 37 [-]: GETTABLE  R11 R6 K21   ; R11 := R6["Interpolate"]
+ 38 [-]: SETTABLE  R6 K20 R11   ; R6["ComponentInterpolate"] := R11
+ 39 [-]: CLOSURE   R11 6        ; R11 := closure(Function #2.7)
+ 40 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 41 [-]: SETTABLE  R6 K21 R11   ; R6["Interpolate"] := R11
+ 42 [-]: CLOSURE   R11 7        ; R11 := closure(Function #2.8)
+ 43 [-]: SETTABLE  R6 K22 R11   ; R6["TrySetDrag"] := R11
+ 44 [-]: GETTABLE  R11 R6 K24   ; R11 := R6["TrySetFocus"]
+ 45 [-]: SETTABLE  R6 K23 R11   ; R6["ComponentTrySetFocus"] := R11
+ 46 [-]: CLOSURE   R11 8        ; R11 := closure(Function #2.9)
+ 47 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 48 [-]: SETTABLE  R6 K24 R11   ; R6["TrySetFocus"] := R11
+ 49 [-]: GETTABLE  R11 R6 K26   ; R11 := R6["SetFocus"]
+ 50 [-]: SETTABLE  R6 K25 R11   ; R6["ComponentSetFocus"] := R11
+ 51 [-]: CLOSURE   R11 9        ; R11 := closure(Function #2.10)
+ 52 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 53 [-]: GETUPVAL  R0 U4        ; R0 := U4
+ 54 [-]: MOVE      R0 R5        ; R0 := R5
+ 55 [-]: MOVE      R0 R3        ; R0 := R3
+ 56 [-]: GETUPVAL  R0 U5        ; R0 := U5
+ 57 [-]: SETTABLE  R6 K26 R11   ; R6["SetFocus"] := R11
+ 58 [-]: GETTABLE  R11 R6 K28   ; R11 := R6["TryPressed"]
+ 59 [-]: SETTABLE  R6 K27 R11   ; R6["ComponentTryPressed"] := R11
+ 60 [-]: CLOSURE   R11 10       ; R11 := closure(Function #2.11)
+ 61 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 62 [-]: SETTABLE  R6 K28 R11   ; R6["TryPressed"] := R11
+ 63 [-]: GETTABLE  R11 R6 K30   ; R11 := R6["Pressed"]
+ 64 [-]: SETTABLE  R6 K29 R11   ; R6["ComponentPressed"] := R11
+ 65 [-]: CLOSURE   R11 11       ; R11 := closure(Function #2.12)
+ 66 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 67 [-]: MOVE      R0 R4        ; R0 := R4
+ 68 [-]: MOVE      R0 R5        ; R0 := R5
+ 69 [-]: SETTABLE  R6 K30 R11   ; R6["Pressed"] := R11
+ 70 [-]: GETTABLE  R11 R6 K32   ; R11 := R6["Resize"]
+ 71 [-]: SETTABLE  R6 K31 R11   ; R6["ComponentResize"] := R11
+ 72 [-]: CLOSURE   R11 12       ; R11 := closure(Function #2.13)
+ 73 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 74 [-]: SETTABLE  R6 K32 R11   ; R6["Resize"] := R11
+ 75 [-]: GETTABLE  R11 R6 K34   ; R11 := R6["UpdateColors"]
+ 76 [-]: SETTABLE  R6 K33 R11   ; R6["ComponentUpdateColors"] := R11
+ 77 [-]: CLOSURE   R11 13       ; R11 := closure(Function #2.14)
+ 78 [-]: GETUPVAL  R0 U6        ; R0 := U6
+ 79 [-]: SETTABLE  R6 K34 R11   ; R6["UpdateColors"] := R11
+ 80 [-]: CLOSURE   R11 14       ; R11 := closure(Function #2.15)
+ 81 [-]: MOVE      R0 R3        ; R0 := R3
+ 82 [-]: SETTABLE  R6 K35 R11   ; R6["ApplyColor"] := R11
+ 83 [-]: CLOSURE   R11 15       ; R11 := closure(Function #2.16)
+ 84 [-]: SETTABLE  R6 K36 R11   ; R6["ResetColor"] := R11
+ 85 [-]: CLOSURE   R11 16       ; R11 := closure(Function #2.17)
+ 86 [-]: MOVE      R0 R3        ; R0 := R3
+ 87 [-]: GETUPVAL  R0 U7        ; R0 := U7
+ 88 [-]: SETTABLE  R6 K37 R11   ; R6["RandomizeColor"] := R11
+ 89 [-]: CLOSURE   R11 17       ; R11 := closure(Function #2.18)
+ 90 [-]: GETUPVAL  R0 U7        ; R0 := U7
+ 91 [-]: MOVE      R0 R3        ; R0 := R3
+ 92 [-]: SETTABLE  R6 K38 R11   ; R6["PickColor"] := R11
+ 93 [-]: CLOSURE   R11 18       ; R11 := closure(Function #2.19)
+ 94 [-]: MOVE      R0 R3        ; R0 := R3
+ 95 [-]: MOVE      R0 R5        ; R0 := R5
+ 96 [-]: SETTABLE  R6 K39 R11   ; R6["ApplyItemSelection"] := R11
+ 97 [-]: CLOSURE   R11 19       ; R11 := closure(Function #2.20)
+ 98 [-]: MOVE      R0 R5        ; R0 := R5
+ 99 [-]: SETTABLE  R6 K40 R11   ; R6["DefaultItemSelection"] := R11
+100 [-]: CLOSURE   R11 20       ; R11 := closure(Function #2.21)
+101 [-]: MOVE      R0 R5        ; R0 := R5
+102 [-]: SETTABLE  R6 K41 R11   ; R6["RandomizeItemSelection"] := R11
+103 [-]: CLOSURE   R11 21       ; R11 := closure(Function #2.22)
+104 [-]: GETUPVAL  R0 U3        ; R0 := U3
+105 [-]: SETTABLE  R6 K42 R11   ; R6["SetDefault"] := R11
+106 [-]: CLOSURE   R11 22       ; R11 := closure(Function #2.23)
+107 [-]: GETUPVAL  R0 U3        ; R0 := U3
+108 [-]: SETTABLE  R6 K43 R11   ; R6["Randomize"] := R11
+109 [-]: CLOSURE   R11 23       ; R11 := closure(Function #2.24)
+110 [-]: SETTABLE  R6 K44 R11   ; R6["GetContentHeight"] := R11
+111 [-]: CLOSURE   R11 24       ; R11 := closure(Function #2.25)
+112 [-]: GETUPVAL  R0 U3        ; R0 := U3
+113 [-]: MOVE      R0 R3        ; R0 := R3
+114 [-]: GETUPVAL  R0 U8        ; R0 := U8
+115 [-]: SETTABLE  R6 K45 R11   ; R6["RedrawDropDown"] := R11
+116 [-]: CLOSURE   R11 25       ; R11 := closure(Function #2.26)
+117 [-]: GETUPVAL  R0 U3        ; R0 := U3
+118 [-]: MOVE      R0 R3        ; R0 := R3
+119 [-]: GETUPVAL  R0 U9        ; R0 := U9
+120 [-]: GETUPVAL  R0 U1        ; R0 := U1
+121 [-]: SETTABLE  R6 K46 R11   ; R6["RedrawToggle"] := R11
+122 [-]: CLOSURE   R11 26       ; R11 := closure(Function #2.27)
+123 [-]: GETUPVAL  R0 U3        ; R0 := U3
+124 [-]: MOVE      R0 R3        ; R0 := R3
+125 [-]: GETUPVAL  R0 U10       ; R0 := U10
+126 [-]: GETUPVAL  R0 U1        ; R0 := U1
+127 [-]: SETTABLE  R6 K47 R11   ; R6["RedrawSlider"] := R11
+128 [-]: CLOSURE   R11 27       ; R11 := closure(Function #2.28)
+129 [-]: GETUPVAL  R0 U3        ; R0 := U3
+130 [-]: GETUPVAL  R0 U11       ; R0 := U11
+131 [-]: MOVE      R0 R3        ; R0 := R3
+132 [-]: GETUPVAL  R0 U1        ; R0 := U1
+133 [-]: SETTABLE  R6 K48 R11   ; R6["RedrawCheckbox"] := R11
+134 [-]: CLOSURE   R11 28       ; R11 := closure(Function #2.29)
+135 [-]: GETUPVAL  R0 U3        ; R0 := U3
+136 [-]: MOVE      R0 R7        ; R0 := R7
+137 [-]: MOVE      R0 R8        ; R0 := R8
+138 [-]: MOVE      R0 R10       ; R0 := R10
+139 [-]: GETUPVAL  R0 U0        ; R0 := U0
+140 [-]: MOVE      R0 R3        ; R0 := R3
+141 [-]: SETTABLE  R6 K49 R11   ; R6["RedrawColorButtons"] := R11
+142 [-]: CLOSURE   R11 29       ; R11 := closure(Function #2.30)
+143 [-]: SETTABLE  R6 K50 R11   ; R6["Update"] := R11
+144 [-]: GETTABLE  R11 R6 K52   ; R11 := R6["Redraw"]
+145 [-]: SETTABLE  R6 K51 R11   ; R6["ComponentRedraw"] := R11
+146 [-]: CLOSURE   R11 30       ; R11 := closure(Function #2.31)
+147 [-]: GETUPVAL  R0 U2        ; R0 := U2
+148 [-]: GETUPVAL  R0 U3        ; R0 := U3
+149 [-]: SETTABLE  R6 K52 R11   ; R6["Redraw"] := R11
+150 [-]: GETTABLE  R11 R6 K54   ; R11 := R6["SetText"]
+151 [-]: SETTABLE  R6 K53 R11   ; R6["ComponentSetText"] := R11
+152 [-]: CLOSURE   R11 31       ; R11 := closure(Function #2.32)
+153 [-]: GETUPVAL  R0 U2        ; R0 := U2
+154 [-]: SETTABLE  R6 K54 R11   ; R6["SetText"] := R11
+155 [-]: CLOSURE   R11 32       ; R11 := closure(Function #2.33)
+156 [-]: SETTABLE  R6 K55 R11   ; R6["SetMultiline"] := R11
+157 [-]: GETGLOBAL R11 K56      ; R11 := 0x400E7765
+158 [-]: MOVE      R12 R5       ; R12 := R5
+159 [-]: CALL      R11 2 2      ; R11 := R11(R12)
+160 [-]: TEST      R11 1        ; if R11 then PC := 168
+161 [-]: JMP       168          ; PC := 168
+162 [-]: GETTABLE  R11 R5 K57   ; R11 := R5["Multiline"]
+163 [-]: EQ        1 R11 K58    ; if R11 == nil then PC := 168
+164 [-]: JMP       168          ; PC := 168
+165 [-]: SELF      R11 R6 K59   ; R12 := R6; R11 := R6["0x5C270216"]
+166 [-]: GETTABLE  R13 R5 K57   ; R13 := R5["Multiline"]
+167 [-]: CALL      R11 3 1      ; R11(R12,R13)
+168 [-]: SELF      R11 R6 K60   ; R12 := R6; R11 := R6["0x755CB587"]
+169 [-]: LOADK     R13 K61      ; R13 := "left"
+170 [-]: CALL      R11 3 1      ; R11(R12,R13)
+171 [-]: SELF      R11 R6 K62   ; R12 := R6; R11 := R6["0x6470BAF4"]
+172 [-]: CALL      R11 2 1      ; R11(R12)
+173 [-]: SELF      R11 R6 K63   ; R12 := R6; R11 := R6["0xA0107BF2"]
+174 [-]: CALL      R11 2 1      ; R11(R12)
+175 [-]: RETURN    R6 2         ; return R6
+176 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.1:
@@ -414,7 +426,7 @@ code size: 6
 ;
 ; Name:            
 ; Defined at line: 44
-; #Upvalues:       3
+; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
 ; Max Stack Size:  5
@@ -422,24 +434,30 @@ code size: 6
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: MOVE      R2 R0        ; R2 := R0
   3 [-]: CALL      R1 2 2       ; R1 := R1(R2)
-  4 [-]: NEWTABLE  R2 0 4       ; R2 := {}
-  5 [-]: SETTABLE  R2 K0 R1     ; R2["mPreviousColor"] := R1
-  6 [-]: SETTABLE  R2 K1 R1     ; R2["mInnerColor"] := R1
-  7 [-]: SETTABLE  R2 K2 R0     ; R2["mColorRegion"] := R0
-  8 [-]: GETUPVAL  R3 U1        ; R3 := U1
-  9 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["mButtonIcons"]
- 10 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 11 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["DEFAULT_COLOR"]
- 12 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
- 13 [-]: SETTABLE  R2 K3 R3     ; R2["mIcon"] := R3
- 14 [-]: RETURN    R2 2         ; return R2
- 15 [-]: RETURN    R0 1         ; return 
+  4 [-]: GETUPVAL  R2 U1        ; R2 := U1
+  5 [-]: GETTABLE  R2 R2 K0     ; R2 := R2["InitialColor"]
+  6 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 10
+  7 [-]: JMP       10           ; PC := 10
+  8 [-]: GETUPVAL  R2 U1        ; R2 := U1
+  9 [-]: GETTABLE  R1 R2 K0     ; R1 := R2["InitialColor"]
+ 10 [-]: NEWTABLE  R2 0 4       ; R2 := {}
+ 11 [-]: SETTABLE  R2 K2 R1     ; R2["mPreviousColor"] := R1
+ 12 [-]: SETTABLE  R2 K3 R1     ; R2["mInnerColor"] := R1
+ 13 [-]: SETTABLE  R2 K4 R0     ; R2["mColorRegion"] := R0
+ 14 [-]: GETUPVAL  R3 U2        ; R3 := U2
+ 15 [-]: GETTABLE  R3 R3 K6     ; R3 := R3["mButtonIcons"]
+ 16 [-]: GETUPVAL  R4 U3        ; R4 := U3
+ 17 [-]: GETTABLE  R4 R4 K7     ; R4 := R4["DEFAULT_COLOR"]
+ 18 [-]: GETTABLE  R3 R3 R4     ; R3 := R3[R4]
+ 19 [-]: SETTABLE  R2 K5 R3     ; R2["mIcon"] := R3
+ 20 [-]: RETURN    R2 2         ; return R2
+ 21 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.5:
 ;
 ; Name:            
-; Defined at line: 64
+; Defined at line: 67
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -481,7 +499,7 @@ code size: 6
 ; Function #2.6:
 ;
 ; Name:            
-; Defined at line: 79
+; Defined at line: 82
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -516,7 +534,7 @@ code size: 6
 ; Function #2.7:
 ;
 ; Name:            
-; Defined at line: 88
+; Defined at line: 91
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -565,7 +583,7 @@ code size: 6
 ; Function #2.8:
 ;
 ; Name:            
-; Defined at line: 99
+; Defined at line: 102
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -592,7 +610,7 @@ code size: 6
 ; Function #2.9:
 ;
 ; Name:            
-; Defined at line: 112
+; Defined at line: 115
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -637,7 +655,7 @@ code size: 6
 ; Function #2.10:
 ;
 ; Name:            
-; Defined at line: 130
+; Defined at line: 133
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -823,7 +841,7 @@ code size: 6
 ; Function #2.11:
 ;
 ; Name:            
-; Defined at line: 201
+; Defined at line: 204
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -864,7 +882,7 @@ code size: 6
 ; Function #2.12:
 ;
 ; Name:            
-; Defined at line: 218
+; Defined at line: 221
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -958,11 +976,11 @@ code size: 6
 ; Function #2.13:
 ;
 ; Name:            
-; Defined at line: 255
+; Defined at line: 258
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  23
+; Max Stack Size:  25
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x216266FA"]
   2 [-]: CALL      R1 2 1       ; R1(R2)
@@ -1005,163 +1023,199 @@ code size: 6
  39 [-]: SUB       R15 R5 R13   ; R15 := R5 - R13
  40 [-]: DIV       R15 R15 K9   ; R15 := R15 / 2
  41 [-]: CALL      R14 2 2      ; R14 := R14(R15)
- 42 [-]: ADD       R15 R14 K18  ; R15 := R14 + 19
- 43 [-]: TEST      R3 0         ; if not R3 then PC := 49
- 44 [-]: JMP       49           ; PC := 49
- 45 [-]: ADD       R16 R11 R8   ; R16 := R11 + R8
- 46 [-]: ADD       R16 R16 R7   ; R16 := R16 + R7
- 47 [-]: TEST      R16 1        ; if R16 then PC := 50
- 48 [-]: JMP       50           ; PC := 50
- 49 [-]: MOVE      R16 R7       ; R16 := R7
- 50 [-]: SUB       R17 R12 R8   ; R17 := R12 - R8
- 51 [-]: SUB       R12 R17 R7   ; R12 := R17 - R7
- 52 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 53 [-]: MOVE      R19 R2       ; R19 := R2
- 54 [-]: LOADK     R20 K20      ; R20 := "Label"
- 55 [-]: LOADK     R21 K21      ; R21 := "_y"
- 56 [-]: MOVE      R22 R14      ; R22 := R14
- 57 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
- 58 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 59 [-]: MOVE      R19 R2       ; R19 := R2
- 60 [-]: LOADK     R20 K22      ; R20 := "Desc"
- 61 [-]: LOADK     R21 K21      ; R21 := "_y"
- 62 [-]: MOVE      R22 R15      ; R22 := R15
- 63 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
- 64 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 65 [-]: MOVE      R19 R2       ; R19 := R2
- 66 [-]: LOADK     R20 K20      ; R20 := "Label"
- 67 [-]: LOADK     R21 K23      ; R21 := "_x"
- 68 [-]: MOVE      R22 R16      ; R22 := R16
- 69 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
- 70 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 71 [-]: MOVE      R19 R2       ; R19 := R2
- 72 [-]: LOADK     R20 K22      ; R20 := "Desc"
- 73 [-]: LOADK     R21 K23      ; R21 := "_x"
- 74 [-]: MOVE      R22 R16      ; R22 := R16
- 75 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
- 76 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 77 [-]: MOVE      R19 R2       ; R19 := R2
- 78 [-]: LOADK     R20 K20      ; R20 := "Label"
- 79 [-]: LOADK     R21 K24      ; R21 := "_width"
- 80 [-]: MOVE      R22 R12      ; R22 := R12
- 81 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
- 82 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 83 [-]: MOVE      R19 R2       ; R19 := R2
- 84 [-]: LOADK     R20 K22      ; R20 := "Desc"
- 85 [-]: LOADK     R21 K24      ; R21 := "_width"
- 86 [-]: MOVE      R22 R12      ; R22 := R12
- 87 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
- 88 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 89 [-]: MOVE      R19 R2       ; R19 := R2
- 90 [-]: LOADK     R20 K25      ; R20 := "Icon"
- 91 [-]: LOADK     R21 K23      ; R21 := "_x"
- 92 [-]: SUB       R22 R8 R9    ; R22 := R8 - R9
- 93 [-]: DIV       R22 R22 K9   ; R22 := R22 / 2
- 94 [-]: ADD       R22 R11 R22  ; R22 := R11 + R22
- 95 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
- 96 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
- 97 [-]: MOVE      R19 R2       ; R19 := R2
- 98 [-]: LOADK     R20 K25      ; R20 := "Icon"
- 99 [-]: LOADK     R21 K21      ; R21 := "_y"
-100 [-]: SUB       R22 R8 R10   ; R22 := R8 - R10
-101 [-]: DIV       R22 R22 K9   ; R22 := R22 / 2
-102 [-]: ADD       R22 R6 R22   ; R22 := R6 + R22
-103 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-104 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-105 [-]: MOVE      R19 R2       ; R19 := R2
-106 [-]: LOADK     R20 K25      ; R20 := "Icon"
-107 [-]: LOADK     R21 K24      ; R21 := "_width"
-108 [-]: MOVE      R22 R9       ; R22 := R9
-109 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-110 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-111 [-]: MOVE      R19 R2       ; R19 := R2
-112 [-]: LOADK     R20 K25      ; R20 := "Icon"
-113 [-]: LOADK     R21 K26      ; R21 := "_height"
-114 [-]: MOVE      R22 R10      ; R22 := R10
-115 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-116 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-117 [-]: MOVE      R19 R2       ; R19 := R2
-118 [-]: LOADK     R20 K27      ; R20 := "IconMask"
-119 [-]: LOADK     R21 K23      ; R21 := "_x"
-120 [-]: MOVE      R22 R11      ; R22 := R11
-121 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-122 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-123 [-]: MOVE      R19 R2       ; R19 := R2
-124 [-]: LOADK     R20 K27      ; R20 := "IconMask"
-125 [-]: LOADK     R21 K21      ; R21 := "_y"
-126 [-]: MOVE      R22 R6       ; R22 := R6
-127 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-128 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-129 [-]: MOVE      R19 R2       ; R19 := R2
-130 [-]: LOADK     R20 K27      ; R20 := "IconMask"
-131 [-]: LOADK     R21 K24      ; R21 := "_width"
-132 [-]: MOVE      R22 R8       ; R22 := R8
-133 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-134 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-135 [-]: MOVE      R19 R2       ; R19 := R2
-136 [-]: LOADK     R20 K27      ; R20 := "IconMask"
-137 [-]: LOADK     R21 K26      ; R21 := "_height"
-138 [-]: MOVE      R22 R8       ; R22 := R8
-139 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-140 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-141 [-]: MOVE      R19 R2       ; R19 := R2
-142 [-]: LOADK     R20 K28      ; R20 := "Divider"
-143 [-]: LOADK     R21 K23      ; R21 := "_x"
-144 [-]: ADD       R22 R11 R8   ; R22 := R11 + R8
-145 [-]: SUB       R22 R22 K29  ; R22 := R22 - 1
-146 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-147 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-148 [-]: MOVE      R19 R2       ; R19 := R2
-149 [-]: LOADK     R20 K28      ; R20 := "Divider"
-150 [-]: LOADK     R21 K26      ; R21 := "_height"
-151 [-]: SUB       R22 R5 K30   ; R22 := R5 - 10
-152 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-153 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-154 [-]: MOVE      R19 R2       ; R19 := R2
-155 [-]: LOADK     R20 K31      ; R20 := "HighlightMask"
-156 [-]: LOADK     R21 K23      ; R21 := "_x"
-157 [-]: SUB       R22 R11 R6   ; R22 := R11 - R6
-158 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-159 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-160 [-]: MOVE      R19 R2       ; R19 := R2
-161 [-]: LOADK     R20 K31      ; R20 := "HighlightMask"
-162 [-]: LOADK     R21 K24      ; R21 := "_width"
-163 [-]: ADD       R22 R8 R6    ; R22 := R8 + R6
-164 [-]: SUB       R22 R22 K29  ; R22 := R22 - 1
-165 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-166 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-167 [-]: MOVE      R19 R2       ; R19 := R2
-168 [-]: LOADK     R20 K32      ; R20 := "Highlight"
-169 [-]: LOADK     R21 K21      ; R21 := "_y"
-170 [-]: MUL       R22 R6 K9    ; R22 := R6 * 2
-171 [-]: ADD       R22 R8 R22   ; R22 := R8 + R22
-172 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-173 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-174 [-]: MOVE      R19 R2       ; R19 := R2
-175 [-]: LOADK     R20 K32      ; R20 := "Highlight"
-176 [-]: LOADK     R21 K23      ; R21 := "_x"
-177 [-]: DIV       R22 R8 K9    ; R22 := R8 / 2
-178 [-]: ADD       R22 R11 R22  ; R22 := R11 + R22
-179 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-180 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-181 [-]: MOVE      R19 R2       ; R19 := R2
-182 [-]: LOADK     R20 K32      ; R20 := "Highlight"
-183 [-]: LOADK     R21 K24      ; R21 := "_width"
-184 [-]: LOADK     R22 K33      ; R22 := 250
-185 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-186 [-]: SELF      R17 R1 K19   ; R18 := R1; R17 := R1["0x880196A7"]
-187 [-]: MOVE      R19 R2       ; R19 := R2
-188 [-]: LOADK     R20 K34      ; R20 := "ColorButtons"
-189 [-]: LOADK     R21 K23      ; R21 := "_x"
-190 [-]: MOVE      R22 R4       ; R22 := R4
-191 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
-192 [-]: RETURN    R0 1         ; return 
+ 42 [-]: GETTABLE  R15 R0 K18   ; R15 := R0["mTextYOffset"]
+ 43 [-]: EQ        1 R15 K19    ; if R15 == nil then PC := 47
+ 44 [-]: JMP       47           ; PC := 47
+ 45 [-]: GETTABLE  R15 R0 K18   ; R15 := R0["mTextYOffset"]
+ 46 [-]: ADD       R14 R14 R15  ; R14 := R14 + R15
+ 47 [-]: GETTABLE  R15 R0 K20   ; R15 := R0["mShowDesc"]
+ 48 [-]: EQ        1 R15 K19    ; if R15 == nil then PC := 51
+ 49 [-]: JMP       51           ; PC := 51
+ 50 [-]: SUB       R14 R14 K21  ; R14 := R14 - 11
+ 51 [-]: ADD       R15 R14 K22  ; R15 := R14 + 19
+ 52 [-]: TEST      R3 0         ; if not R3 then PC := 58
+ 53 [-]: JMP       58           ; PC := 58
+ 54 [-]: ADD       R16 R11 R8   ; R16 := R11 + R8
+ 55 [-]: ADD       R16 R16 R7   ; R16 := R16 + R7
+ 56 [-]: TEST      R16 1        ; if R16 then PC := 59
+ 57 [-]: JMP       59           ; PC := 59
+ 58 [-]: MOVE      R16 R7       ; R16 := R7
+ 59 [-]: SUB       R17 R12 R8   ; R17 := R12 - R8
+ 60 [-]: SUB       R12 R17 R7   ; R12 := R17 - R7
+ 61 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+ 62 [-]: MOVE      R19 R2       ; R19 := R2
+ 63 [-]: LOADK     R20 K24      ; R20 := "Label"
+ 64 [-]: LOADK     R21 K25      ; R21 := "_y"
+ 65 [-]: MOVE      R22 R14      ; R22 := R14
+ 66 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+ 67 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+ 68 [-]: MOVE      R19 R2       ; R19 := R2
+ 69 [-]: LOADK     R20 K26      ; R20 := "Desc"
+ 70 [-]: LOADK     R21 K25      ; R21 := "_y"
+ 71 [-]: MOVE      R22 R15      ; R22 := R15
+ 72 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+ 73 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+ 74 [-]: MOVE      R19 R2       ; R19 := R2
+ 75 [-]: LOADK     R20 K24      ; R20 := "Label"
+ 76 [-]: LOADK     R21 K27      ; R21 := "_x"
+ 77 [-]: MOVE      R22 R16      ; R22 := R16
+ 78 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+ 79 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+ 80 [-]: MOVE      R19 R2       ; R19 := R2
+ 81 [-]: LOADK     R20 K26      ; R20 := "Desc"
+ 82 [-]: LOADK     R21 K27      ; R21 := "_x"
+ 83 [-]: MOVE      R22 R16      ; R22 := R16
+ 84 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+ 85 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+ 86 [-]: MOVE      R19 R2       ; R19 := R2
+ 87 [-]: LOADK     R20 K24      ; R20 := "Label"
+ 88 [-]: LOADK     R21 K28      ; R21 := "_width"
+ 89 [-]: MOVE      R22 R12      ; R22 := R12
+ 90 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+ 91 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+ 92 [-]: MOVE      R19 R2       ; R19 := R2
+ 93 [-]: LOADK     R20 K26      ; R20 := "Desc"
+ 94 [-]: LOADK     R21 K28      ; R21 := "_width"
+ 95 [-]: MOVE      R22 R12      ; R22 := R12
+ 96 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+ 97 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+ 98 [-]: MOVE      R19 R2       ; R19 := R2
+ 99 [-]: LOADK     R20 K29      ; R20 := "Icon"
+100 [-]: LOADK     R21 K27      ; R21 := "_x"
+101 [-]: SUB       R22 R8 R9    ; R22 := R8 - R9
+102 [-]: DIV       R22 R22 K9   ; R22 := R22 / 2
+103 [-]: ADD       R22 R11 R22  ; R22 := R11 + R22
+104 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+105 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+106 [-]: MOVE      R19 R2       ; R19 := R2
+107 [-]: LOADK     R20 K29      ; R20 := "Icon"
+108 [-]: LOADK     R21 K25      ; R21 := "_y"
+109 [-]: SUB       R22 R8 R10   ; R22 := R8 - R10
+110 [-]: DIV       R22 R22 K9   ; R22 := R22 / 2
+111 [-]: ADD       R22 R6 R22   ; R22 := R6 + R22
+112 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+113 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+114 [-]: MOVE      R19 R2       ; R19 := R2
+115 [-]: LOADK     R20 K29      ; R20 := "Icon"
+116 [-]: LOADK     R21 K28      ; R21 := "_width"
+117 [-]: MOVE      R22 R9       ; R22 := R9
+118 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+119 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+120 [-]: MOVE      R19 R2       ; R19 := R2
+121 [-]: LOADK     R20 K29      ; R20 := "Icon"
+122 [-]: LOADK     R21 K30      ; R21 := "_height"
+123 [-]: MOVE      R22 R10      ; R22 := R10
+124 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+125 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+126 [-]: MOVE      R19 R2       ; R19 := R2
+127 [-]: LOADK     R20 K31      ; R20 := "IconMask"
+128 [-]: LOADK     R21 K27      ; R21 := "_x"
+129 [-]: MOVE      R22 R11      ; R22 := R11
+130 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+131 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+132 [-]: MOVE      R19 R2       ; R19 := R2
+133 [-]: LOADK     R20 K31      ; R20 := "IconMask"
+134 [-]: LOADK     R21 K25      ; R21 := "_y"
+135 [-]: MOVE      R22 R6       ; R22 := R6
+136 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+137 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+138 [-]: MOVE      R19 R2       ; R19 := R2
+139 [-]: LOADK     R20 K31      ; R20 := "IconMask"
+140 [-]: LOADK     R21 K28      ; R21 := "_width"
+141 [-]: MOVE      R22 R8       ; R22 := R8
+142 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+143 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+144 [-]: MOVE      R19 R2       ; R19 := R2
+145 [-]: LOADK     R20 K31      ; R20 := "IconMask"
+146 [-]: LOADK     R21 K30      ; R21 := "_height"
+147 [-]: MOVE      R22 R8       ; R22 := R8
+148 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+149 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+150 [-]: MOVE      R19 R2       ; R19 := R2
+151 [-]: LOADK     R20 K32      ; R20 := "Divider"
+152 [-]: LOADK     R21 K27      ; R21 := "_x"
+153 [-]: ADD       R22 R11 R8   ; R22 := R11 + R8
+154 [-]: SUB       R22 R22 K33  ; R22 := R22 - 1
+155 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+156 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+157 [-]: MOVE      R19 R2       ; R19 := R2
+158 [-]: LOADK     R20 K32      ; R20 := "Divider"
+159 [-]: LOADK     R21 K30      ; R21 := "_height"
+160 [-]: SUB       R22 R5 K34   ; R22 := R5 - 10
+161 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+162 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+163 [-]: MOVE      R19 R2       ; R19 := R2
+164 [-]: LOADK     R20 K35      ; R20 := "HighlightMask"
+165 [-]: LOADK     R21 K27      ; R21 := "_x"
+166 [-]: SUB       R22 R11 R6   ; R22 := R11 - R6
+167 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+168 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+169 [-]: MOVE      R19 R2       ; R19 := R2
+170 [-]: LOADK     R20 K35      ; R20 := "HighlightMask"
+171 [-]: LOADK     R21 K28      ; R21 := "_width"
+172 [-]: ADD       R22 R8 R6    ; R22 := R8 + R6
+173 [-]: SUB       R22 R22 K33  ; R22 := R22 - 1
+174 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+175 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+176 [-]: MOVE      R19 R2       ; R19 := R2
+177 [-]: LOADK     R20 K36      ; R20 := "Highlight"
+178 [-]: LOADK     R21 K25      ; R21 := "_y"
+179 [-]: MUL       R22 R6 K9    ; R22 := R6 * 2
+180 [-]: ADD       R22 R8 R22   ; R22 := R8 + R22
+181 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+182 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+183 [-]: MOVE      R19 R2       ; R19 := R2
+184 [-]: LOADK     R20 K36      ; R20 := "Highlight"
+185 [-]: LOADK     R21 K27      ; R21 := "_x"
+186 [-]: DIV       R22 R8 K9    ; R22 := R8 / 2
+187 [-]: ADD       R22 R11 R22  ; R22 := R11 + R22
+188 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+189 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+190 [-]: MOVE      R19 R2       ; R19 := R2
+191 [-]: LOADK     R20 K36      ; R20 := "Highlight"
+192 [-]: LOADK     R21 K28      ; R21 := "_width"
+193 [-]: LOADK     R22 K37      ; R22 := 250
+194 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+195 [-]: SELF      R17 R1 K23   ; R18 := R1; R17 := R1["0x880196A7"]
+196 [-]: MOVE      R19 R2       ; R19 := R2
+197 [-]: LOADK     R20 K38      ; R20 := "ColorButtons"
+198 [-]: LOADK     R21 K27      ; R21 := "_x"
+199 [-]: MOVE      R22 R4       ; R22 := R4
+200 [-]: CALL      R17 6 1      ; R17(R18,R19,R20,R21,R22)
+201 [-]: GETGLOBAL R17 K39      ; R17 := 0xF595ADDE
+202 [-]: SELF      R18 R1 K40   ; R19 := R1; R18 := R1["0x6B7B470B"]
+203 [-]: MOVE      R20 R2       ; R20 := R2
+204 [-]: LOADK     R21 K41      ; R21 := ".LabelRight"
+205 [-]: CONCAT    R20 R20 R21  ; R20 := R20 .. R21
+206 [-]: LOADK     R21 K28      ; R21 := "_width"
+207 [-]: CALL      R18 4 0      ; R18,... := R18(R19,R20,R21)
+208 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
+209 [-]: EQ        1 R17 K19    ; if R17 == nil then PC := 228
+210 [-]: JMP       228          ; PC := 228
+211 [-]: SELF      R18 R1 K23   ; R19 := R1; R18 := R1["0x880196A7"]
+212 [-]: MOVE      R20 R2       ; R20 := R2
+213 [-]: LOADK     R21 K42      ; R21 := "LabelRight"
+214 [-]: LOADK     R22 K27      ; R22 := "_x"
+215 [-]: ADD       R23 R17 K34  ; R23 := R17 + 10
+216 [-]: SUB       R23 R4 R23   ; R23 := R4 - R23
+217 [-]: CALL      R18 6 1      ; R18(R19,R20,R21,R22,R23)
+218 [-]: SELF      R18 R1 K23   ; R19 := R1; R18 := R1["0x880196A7"]
+219 [-]: MOVE      R20 R2       ; R20 := R2
+220 [-]: LOADK     R21 K42      ; R21 := "LabelRight"
+221 [-]: LOADK     R22 K25      ; R22 := "_y"
+222 [-]: GETUPVAL  R23 U0       ; R23 := U0
+223 [-]: GETTABLE  R23 R23 K17  ; R23 := R23["0xB57E56DF"]
+224 [-]: SUB       R24 R5 K43   ; R24 := R5 - 18
+225 [-]: DIV       R24 R24 K9   ; R24 := R24 / 2
+226 [-]: CALL      R23 2 0      ; R23,... := R23(R24)
+227 [-]: CALL      R18 0 1      ; R18(R19,...)
+228 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.14:
 ;
 ; Name:            
-; Defined at line: 308
+; Defined at line: 323
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1290,7 +1344,7 @@ code size: 6
 ; Function #2.15:
 ;
 ; Name:            
-; Defined at line: 347
+; Defined at line: 362
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1331,7 +1385,7 @@ code size: 6
 ; Function #2.16:
 ;
 ; Name:            
-; Defined at line: 357
+; Defined at line: 372
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1359,7 +1413,7 @@ code size: 6
 ; Function #2.17:
 ;
 ; Name:            
-; Defined at line: 369
+; Defined at line: 384
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1414,7 +1468,7 @@ code size: 6
 ; Function #2.18:
 ;
 ; Name:            
-; Defined at line: 387
+; Defined at line: 402
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1439,13 +1493,23 @@ code size: 6
  17 [-]: GETTABLE  R7 R0 K5     ; R7 := R0["mCustomColorInfo"]
  18 [-]: CALL      R2 6 2       ; R2 := R2(R3,R4,R5,R6,R7)
  19 [-]: SETTABLE  R0 K1 R2     ; R0["mChildMovie"] := R2
- 20 [-]: RETURN    R0 1         ; return 
+ 20 [-]: GETGLOBAL R2 K6        ; R2 := 0x400E7765
+ 21 [-]: GETTABLE  R3 R0 K1     ; R3 := R0["mChildMovie"]
+ 22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 23 [-]: TEST      R2 1         ; if R2 then PC := 30
+ 24 [-]: JMP       30           ; PC := 30
+ 25 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mChildMovie"]
+ 26 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0x458F27A9"]
+ 27 [-]: LOADK     R4 K8        ; R4 := "SetIgnoreTopMenu"
+ 28 [-]: LOADK     R5 K9        ; R5 := "true"
+ 29 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 30 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.18.1:
 ;
 ; Name:            
-; Defined at line: 393
+; Defined at line: 408
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1490,7 +1554,7 @@ code size: 6
 ; Function #2.18.2:
 ;
 ; Name:            
-; Defined at line: 406
+; Defined at line: 421
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1546,7 +1610,7 @@ code size: 6
 ; Function #2.19:
 ;
 ; Name:            
-; Defined at line: 429
+; Defined at line: 447
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1575,7 +1639,7 @@ code size: 6
 ; Function #2.20:
 ;
 ; Name:            
-; Defined at line: 437
+; Defined at line: 455
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1609,7 +1673,7 @@ code size: 6
 ; Function #2.21:
 ;
 ; Name:            
-; Defined at line: 448
+; Defined at line: 466
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1652,7 +1716,7 @@ code size: 6
 ; Function #2.22:
 ;
 ; Name:            
-; Defined at line: 468
+; Defined at line: 486
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1710,7 +1774,7 @@ code size: 6
 ; Function #2.23:
 ;
 ; Name:            
-; Defined at line: 486
+; Defined at line: 504
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1811,7 +1875,7 @@ code size: 6
 ; Function #2.24:
 ;
 ; Name:            
-; Defined at line: 515
+; Defined at line: 533
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1832,7 +1896,7 @@ code size: 6
 ; Function #2.25:
 ;
 ; Name:            
-; Defined at line: 520
+; Defined at line: 538
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1971,7 +2035,7 @@ code size: 6
 ; Function #2.25.1:
 ;
 ; Name:            
-; Defined at line: 546
+; Defined at line: 564
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2029,7 +2093,7 @@ code size: 6
 ; Function #2.25.1.1:
 ;
 ; Name:            
-; Defined at line: 560
+; Defined at line: 578
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2049,7 +2113,7 @@ code size: 6
 ; Function #2.25.1.2:
 ;
 ; Name:            
-; Defined at line: 566
+; Defined at line: 584
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2070,7 +2134,7 @@ code size: 6
 ; Function #2.25.2:
 ;
 ; Name:            
-; Defined at line: 587
+; Defined at line: 605
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2090,7 +2154,7 @@ code size: 6
 ; Function #2.25.3:
 ;
 ; Name:            
-; Defined at line: 593
+; Defined at line: 611
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2111,7 +2175,7 @@ code size: 6
 ; Function #2.26:
 ;
 ; Name:            
-; Defined at line: 613
+; Defined at line: 631
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2248,7 +2312,7 @@ code size: 6
 ; Function #2.26.1:
 ;
 ; Name:            
-; Defined at line: 642
+; Defined at line: 660
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2268,7 +2332,7 @@ code size: 6
 ; Function #2.26.2:
 ;
 ; Name:            
-; Defined at line: 648
+; Defined at line: 666
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2289,7 +2353,7 @@ code size: 6
 ; Function #2.26.3:
 ;
 ; Name:            
-; Defined at line: 654
+; Defined at line: 672
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2310,7 +2374,7 @@ code size: 6
 ; Function #2.27:
 ;
 ; Name:            
-; Defined at line: 681
+; Defined at line: 699
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2450,7 +2514,7 @@ code size: 6
 ; Function #2.27.1:
 ;
 ; Name:            
-; Defined at line: 707
+; Defined at line: 725
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2470,7 +2534,7 @@ code size: 6
 ; Function #2.27.2:
 ;
 ; Name:            
-; Defined at line: 713
+; Defined at line: 731
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2492,7 +2556,7 @@ code size: 6
 ; Function #2.27.3:
 ;
 ; Name:            
-; Defined at line: 719
+; Defined at line: 737
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2512,7 +2576,7 @@ code size: 6
 ; Function #2.27.4:
 ;
 ; Name:            
-; Defined at line: 725
+; Defined at line: 743
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2533,7 +2597,7 @@ code size: 6
 ; Function #2.28:
 ;
 ; Name:            
-; Defined at line: 751
+; Defined at line: 769
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2668,7 +2732,7 @@ code size: 6
 ; Function #2.28.1:
 ;
 ; Name:            
-; Defined at line: 779
+; Defined at line: 797
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2688,7 +2752,7 @@ code size: 6
 ; Function #2.28.2:
 ;
 ; Name:            
-; Defined at line: 785
+; Defined at line: 803
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2710,7 +2774,7 @@ code size: 6
 ; Function #2.29:
 ;
 ; Name:            
-; Defined at line: 811
+; Defined at line: 829
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2719,8 +2783,8 @@ code size: 6
   1 [-]: GETTABLE  R1 R0 K0     ; R1 := R0["mType"]
   2 [-]: GETUPVAL  R2 U0        ; R2 := U0
   3 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["COLOR"]
-  4 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 208
-  5 [-]: JMP       208          ; PC := 208
+  4 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 210
+  5 [-]: JMP       210          ; PC := 210
   6 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mMovie"]
   7 [-]: GETTABLE  R2 R0 K3     ; R2 := R0["mClipName"]
   8 [-]: GETTABLE  R3 R0 K4     ; R3 := R0["mButtons"]
@@ -2760,12 +2824,12 @@ code size: 6
  42 [-]: GETTABLE  R10 R0 K4    ; R10 := R0["mButtons"]
  43 [-]: LEN       R10 R10      ; R10 := # R10
  44 [-]: LOADK     R11 K6       ; R11 := 1
- 45 [-]: FORPREP   R9 184       ; R9 -= R11; PC := 184
+ 45 [-]: FORPREP   R9 186       ; R9 -= R11; PC := 186
  46 [-]: GETTABLE  R13 R0 K4    ; R13 := R0["mButtons"]
  47 [-]: GETTABLE  R13 R13 R12  ; R13 := R13[R12]
  48 [-]: GETTABLE  R14 R13 K15  ; R14 := R13["mInitialized"]
- 49 [-]: TEST      R14 1        ; if R14 then PC := 168
- 50 [-]: JMP       168          ; PC := 168
+ 49 [-]: TEST      R14 1        ; if R14 then PC := 170
+ 50 [-]: JMP       170          ; PC := 170
  51 [-]: MOVE      R14 R2       ; R14 := R2
  52 [-]: LOADK     R15 K16      ; R15 := ".ColorButtons.ColorButton"
  53 [-]: MOVE      R16 R12      ; R16 := R12
@@ -2842,124 +2906,133 @@ code size: 6
 124 [-]: GETTABLE  R15 R13 K50  ; R15 := R13["SetDrag"]
 125 [-]: SETTABLE  R13 K49 R15  ; R13["ComponentSetDrag"] := R15
 126 [-]: CLOSURE   R15 0        ; R15 := closure(Function #2.29.1)
-127 [-]: GETUPVAL  R0 U5        ; R0 := U5
-128 [-]: SETTABLE  R13 K50 R15  ; R13["SetDrag"] := R15
-129 [-]: GETTABLE  R15 R13 K52  ; R15 := R13["StopDrag"]
-130 [-]: SETTABLE  R13 K51 R15  ; R13["ComponentStopDrag"] := R15
-131 [-]: CLOSURE   R15 1        ; R15 := closure(Function #2.29.2)
-132 [-]: GETUPVAL  R0 U5        ; R0 := U5
-133 [-]: SETTABLE  R13 K52 R15  ; R13["StopDrag"] := R15
-134 [-]: GETTABLE  R15 R13 K54  ; R15 := R13["Pressed"]
-135 [-]: SETTABLE  R13 K53 R15  ; R13["ComponentPressed"] := R15
-136 [-]: CLOSURE   R15 2        ; R15 := closure(Function #2.29.3)
-137 [-]: GETUPVAL  R0 U5        ; R0 := U5
-138 [-]: MOVE      R0 R13       ; R0 := R13
-139 [-]: MOVE      R0 R0        ; R0 := R0
-140 [-]: SETTABLE  R13 K54 R15  ; R13["Pressed"] := R15
-141 [-]: GETTABLE  R15 R13 K56  ; R15 := R13["TrySetFocus"]
-142 [-]: SETTABLE  R13 K55 R15  ; R13["ComponentTrySetFocus"] := R15
-143 [-]: CLOSURE   R15 3        ; R15 := closure(Function #2.29.4)
-144 [-]: MOVE      R0 R13       ; R0 := R13
-145 [-]: MOVE      R0 R0        ; R0 := R0
-146 [-]: SETTABLE  R13 K56 R15  ; R13["TrySetFocus"] := R15
-147 [-]: GETTABLE  R15 R13 K58  ; R15 := R13["Resize"]
-148 [-]: SETTABLE  R13 K57 R15  ; R13["ComponentResize"] := R15
-149 [-]: CLOSURE   R15 4        ; R15 := closure(Function #2.29.5)
-150 [-]: MOVE      R0 R13       ; R0 := R13
-151 [-]: MOVE      R0 R1        ; R0 := R1
-152 [-]: MOVE      R0 R14       ; R0 := R14
-153 [-]: MOVE      R0 R8        ; R0 := R8
-154 [-]: SETTABLE  R13 K58 R15  ; R13["Resize"] := R15
-155 [-]: SETTABLE  R13 K15 K59  ; R13["mInitialized"] := "0x1"
-156 [-]: GETTABLE  R15 R0 K4    ; R15 := R0["mButtons"]
-157 [-]: SETTABLE  R15 R12 R13  ; R15[R12] := R13
-158 [-]: GETTABLE  R15 R13 K41  ; R15 := R13["mColorRegion"]
-159 [-]: EQ        1 R15 K5     ; if R15 == nil then PC := 167
-160 [-]: JMP       167          ; PC := 167
-161 [-]: GETGLOBAL R15 K8       ; R15 := table
-162 [-]: GETTABLE  R15 R15 K9   ; R15 := R15["0xE6450C9D"]
-163 [-]: GETUPVAL  R16 U5       ; R16 := U5
-164 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["mAllColors"]
-165 [-]: MOVE      R17 R13      ; R17 := R13
-166 [-]: CALL      R15 3 1      ; R15(R16,R17)
-167 [-]: CLOSE     R14          ; SAVE R14,...
-168 [-]: SELF      R14 R13 K61  ; R15 := R13; R14 := R13["0x303032DF"]
-169 [-]: GETTABLE  R16 R13 K38  ; R16 := R13["mIcon"]
-170 [-]: EQ        1 R16 K5     ; if R16 == nil then PC := 178
-171 [-]: JMP       178          ; PC := 178
-172 [-]: GETTABLE  R16 R13 K41  ; R16 := R13["mColorRegion"]
-173 [-]: EQ        1 R16 K5     ; if R16 == nil then PC := 179
-174 [-]: JMP       179          ; PC := 179
-175 [-]: GETTABLE  R16 R13 K62  ; R16 := R13["mInnerColor"]
-176 [-]: EQ        1 R16 K5     ; if R16 == nil then PC := 179
-177 [-]: JMP       179          ; PC := 179
-178 [-]: MOVE      R16 R0       ; R16 := R0
-179 [-]: MOVE      R16 R1       ; R16 := R1
-180 [-]: CALL      R14 3 1      ; R14(R15,R16)
-181 [-]: SELF      R14 R13 K63  ; R15 := R13; R14 := R13["0x6470BAF4"]
-182 [-]: CALL      R14 2 1      ; R14(R15)
-183 [-]: CLOSE     R13          ; SAVE R13,...
-184 [-]: FORLOOP   R9 46        ; R9 += R11; if R9 <= R10 then begin PC := 46; R12 := R9 end
-185 [-]: GETTABLE  R13 R0 K4    ; R13 := R0["mButtons"]
-186 [-]: LEN       R13 R13      ; R13 := # R13
-187 [-]: ADD       R13 R13 K6   ; R13 := R13 + 1
-188 [-]: MOVE      R14 R2       ; R14 := R2
-189 [-]: LOADK     R15 K16      ; R15 := ".ColorButtons.ColorButton"
-190 [-]: MOVE      R16 R13      ; R16 := R13
-191 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
-192 [-]: SELF      R15 R1 K17   ; R16 := R1; R15 := R1["0x6B7B470B"]
-193 [-]: MOVE      R17 R14      ; R17 := R14
-194 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
-195 [-]: EQ        0 R15 K18    ; if R15 ~= "undefined" then PC := 199
-196 [-]: JMP       199          ; PC := 199
-197 [-]: JMP       206          ; PC := 206
-198 [-]: JMP       187          ; PC := 187
-199 [-]: GETGLOBAL R15 K19      ; R15 := 0x8C64AFA9
-200 [-]: MOVE      R16 R1       ; R16 := R1
-201 [-]: MOVE      R17 R14      ; R17 := R14
-202 [-]: LOADK     R18 K64      ; R18 := ".removeMovieClip"
-203 [-]: CONCAT    R17 R17 R18  ; R17 := R17 .. R18
-204 [-]: CALL      R15 3 1      ; R15(R16,R17)
-205 [-]: JMP       187          ; PC := 187
-206 [-]: CLOSE     R1           ; SAVE R1,...
-207 [-]: JMP       215          ; PC := 215
-208 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mMovie"]
-209 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1["0x880196A7"]
-210 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
-211 [-]: LOADK     R4 K11       ; R4 := "ColorButtons"
-212 [-]: LOADK     R5 K12       ; R5 := "_visible"
-213 [-]: MOVE      R6 R0        ; R6 := R0
-214 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
-215 [-]: RETURN    R0 1         ; return 
+127 [-]: MOVE      R0 R1        ; R0 := R1
+128 [-]: MOVE      R0 R2        ; R0 := R2
+129 [-]: GETUPVAL  R0 U5        ; R0 := U5
+130 [-]: SETTABLE  R13 K50 R15  ; R13["SetDrag"] := R15
+131 [-]: GETTABLE  R15 R13 K52  ; R15 := R13["StopDrag"]
+132 [-]: SETTABLE  R13 K51 R15  ; R13["ComponentStopDrag"] := R15
+133 [-]: CLOSURE   R15 1        ; R15 := closure(Function #2.29.2)
+134 [-]: GETUPVAL  R0 U5        ; R0 := U5
+135 [-]: SETTABLE  R13 K52 R15  ; R13["StopDrag"] := R15
+136 [-]: GETTABLE  R15 R13 K54  ; R15 := R13["Pressed"]
+137 [-]: SETTABLE  R13 K53 R15  ; R13["ComponentPressed"] := R15
+138 [-]: CLOSURE   R15 2        ; R15 := closure(Function #2.29.3)
+139 [-]: GETUPVAL  R0 U5        ; R0 := U5
+140 [-]: MOVE      R0 R13       ; R0 := R13
+141 [-]: MOVE      R0 R0        ; R0 := R0
+142 [-]: SETTABLE  R13 K54 R15  ; R13["Pressed"] := R15
+143 [-]: GETTABLE  R15 R13 K56  ; R15 := R13["TrySetFocus"]
+144 [-]: SETTABLE  R13 K55 R15  ; R13["ComponentTrySetFocus"] := R15
+145 [-]: CLOSURE   R15 3        ; R15 := closure(Function #2.29.4)
+146 [-]: MOVE      R0 R13       ; R0 := R13
+147 [-]: MOVE      R0 R0        ; R0 := R0
+148 [-]: SETTABLE  R13 K56 R15  ; R13["TrySetFocus"] := R15
+149 [-]: GETTABLE  R15 R13 K58  ; R15 := R13["Resize"]
+150 [-]: SETTABLE  R13 K57 R15  ; R13["ComponentResize"] := R15
+151 [-]: CLOSURE   R15 4        ; R15 := closure(Function #2.29.5)
+152 [-]: MOVE      R0 R13       ; R0 := R13
+153 [-]: MOVE      R0 R1        ; R0 := R1
+154 [-]: MOVE      R0 R14       ; R0 := R14
+155 [-]: MOVE      R0 R8        ; R0 := R8
+156 [-]: SETTABLE  R13 K58 R15  ; R13["Resize"] := R15
+157 [-]: SETTABLE  R13 K15 K59  ; R13["mInitialized"] := "0x1"
+158 [-]: GETTABLE  R15 R0 K4    ; R15 := R0["mButtons"]
+159 [-]: SETTABLE  R15 R12 R13  ; R15[R12] := R13
+160 [-]: GETTABLE  R15 R13 K41  ; R15 := R13["mColorRegion"]
+161 [-]: EQ        1 R15 K5     ; if R15 == nil then PC := 169
+162 [-]: JMP       169          ; PC := 169
+163 [-]: GETGLOBAL R15 K8       ; R15 := table
+164 [-]: GETTABLE  R15 R15 K9   ; R15 := R15["0xE6450C9D"]
+165 [-]: GETUPVAL  R16 U5       ; R16 := U5
+166 [-]: GETTABLE  R16 R16 K60  ; R16 := R16["mAllColors"]
+167 [-]: MOVE      R17 R13      ; R17 := R13
+168 [-]: CALL      R15 3 1      ; R15(R16,R17)
+169 [-]: CLOSE     R14          ; SAVE R14,...
+170 [-]: SELF      R14 R13 K61  ; R15 := R13; R14 := R13["0x303032DF"]
+171 [-]: GETTABLE  R16 R13 K38  ; R16 := R13["mIcon"]
+172 [-]: EQ        1 R16 K5     ; if R16 == nil then PC := 180
+173 [-]: JMP       180          ; PC := 180
+174 [-]: GETTABLE  R16 R13 K41  ; R16 := R13["mColorRegion"]
+175 [-]: EQ        1 R16 K5     ; if R16 == nil then PC := 181
+176 [-]: JMP       181          ; PC := 181
+177 [-]: GETTABLE  R16 R13 K62  ; R16 := R13["mInnerColor"]
+178 [-]: EQ        1 R16 K5     ; if R16 == nil then PC := 181
+179 [-]: JMP       181          ; PC := 181
+180 [-]: MOVE      R16 R0       ; R16 := R0
+181 [-]: MOVE      R16 R1       ; R16 := R1
+182 [-]: CALL      R14 3 1      ; R14(R15,R16)
+183 [-]: SELF      R14 R13 K63  ; R15 := R13; R14 := R13["0x6470BAF4"]
+184 [-]: CALL      R14 2 1      ; R14(R15)
+185 [-]: CLOSE     R13          ; SAVE R13,...
+186 [-]: FORLOOP   R9 46        ; R9 += R11; if R9 <= R10 then begin PC := 46; R12 := R9 end
+187 [-]: GETTABLE  R13 R0 K4    ; R13 := R0["mButtons"]
+188 [-]: LEN       R13 R13      ; R13 := # R13
+189 [-]: ADD       R13 R13 K6   ; R13 := R13 + 1
+190 [-]: MOVE      R14 R2       ; R14 := R2
+191 [-]: LOADK     R15 K16      ; R15 := ".ColorButtons.ColorButton"
+192 [-]: MOVE      R16 R13      ; R16 := R13
+193 [-]: CONCAT    R14 R14 R16  ; R14 := R14 .. R15 .. R16
+194 [-]: SELF      R15 R1 K17   ; R16 := R1; R15 := R1["0x6B7B470B"]
+195 [-]: MOVE      R17 R14      ; R17 := R14
+196 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+197 [-]: EQ        0 R15 K18    ; if R15 ~= "undefined" then PC := 201
+198 [-]: JMP       201          ; PC := 201
+199 [-]: JMP       208          ; PC := 208
+200 [-]: JMP       189          ; PC := 189
+201 [-]: GETGLOBAL R15 K19      ; R15 := 0x8C64AFA9
+202 [-]: MOVE      R16 R1       ; R16 := R1
+203 [-]: MOVE      R17 R14      ; R17 := R14
+204 [-]: LOADK     R18 K64      ; R18 := ".removeMovieClip"
+205 [-]: CONCAT    R17 R17 R18  ; R17 := R17 .. R18
+206 [-]: CALL      R15 3 1      ; R15(R16,R17)
+207 [-]: JMP       189          ; PC := 189
+208 [-]: CLOSE     R1           ; SAVE R1,...
+209 [-]: JMP       217          ; PC := 217
+210 [-]: GETTABLE  R1 R0 K2     ; R1 := R0["mMovie"]
+211 [-]: SELF      R1 R1 K10    ; R2 := R1; R1 := R1["0x880196A7"]
+212 [-]: GETTABLE  R3 R0 K3     ; R3 := R0["mClipName"]
+213 [-]: LOADK     R4 K11       ; R4 := "ColorButtons"
+214 [-]: LOADK     R5 K12       ; R5 := "_visible"
+215 [-]: MOVE      R6 R0        ; R6 := R0
+216 [-]: CALL      R1 6 1       ; R1(R2,R3,R4,R5,R6)
+217 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.29.1:
 ;
 ; Name:            
-; Defined at line: 861
-; #Upvalues:       1
+; Defined at line: 879
+; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  5
+; Max Stack Size:  6
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0xB67CC0CA"]
   2 [-]: MOVE      R4 R1        ; R4 := R1
   3 [-]: CALL      R2 3 1       ; R2(R3,R4)
   4 [-]: GETTABLE  R2 R0 K1     ; R2 := R0["mDragging"]
-  5 [-]: TEST      R2 0         ; if not R2 then PC := 10
-  6 [-]: JMP       10           ; PC := 10
-  7 [-]: GETUPVAL  R2 U0        ; R2 := U0
-  8 [-]: SETTABLE  R2 K2 R0     ; R2["mDragSource"] := R0
-  9 [-]: JMP       12           ; PC := 12
- 10 [-]: GETUPVAL  R2 U0        ; R2 := U0
- 11 [-]: SETTABLE  R2 K3 R0     ; R2["mDragTarget"] := R0
- 12 [-]: RETURN    R0 1         ; return 
+  5 [-]: TEST      R2 0         ; if not R2 then PC := 17
+  6 [-]: JMP       17           ; PC := 17
+  7 [-]: GETGLOBAL R2 K2        ; R2 := 0x8C64AFA9
+  8 [-]: GETUPVAL  R3 U0        ; R3 := U0
+  9 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 10 [-]: LOADK     R5 K3        ; R5 := ".swapDepths"
+ 11 [-]: CONCAT    R4 R4 R5     ; R4 := R4 .. R5
+ 12 [-]: LOADK     R5 K4        ; R5 := 10000
+ 13 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 14 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 15 [-]: SETTABLE  R2 K5 R0     ; R2["mDragSource"] := R0
+ 16 [-]: JMP       19           ; PC := 19
+ 17 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 18 [-]: SETTABLE  R2 K6 R0     ; R2["mDragTarget"] := R0
+ 19 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.29.2:
 ;
 ; Name:            
-; Defined at line: 871
+; Defined at line: 890
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2983,7 +3056,7 @@ code size: 6
 ; Function #2.29.3:
 ;
 ; Name:            
-; Defined at line: 881
+; Defined at line: 900
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3023,47 +3096,51 @@ code size: 6
  32 [-]: SELF      R4 R3 K4     ; R5 := R3; R4 := R3["0xCF12E155"]
  33 [-]: MOVE      R6 R1        ; R6 := R1
  34 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 35 [-]: JMP       69           ; PC := 69
- 36 [-]: TEST      R1 1         ; if R1 then PC := 69
- 37 [-]: JMP       69           ; PC := 69
+ 35 [-]: JMP       73           ; PC := 73
+ 36 [-]: TEST      R1 1         ; if R1 then PC := 73
+ 37 [-]: JMP       73           ; PC := 73
  38 [-]: GETUPVAL  R4 U1        ; R4 := U1
  39 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["mColorRegion"]
- 40 [-]: EQ        1 R4 K3      ; if R4 == nil then PC := 45
- 41 [-]: JMP       45           ; PC := 45
+ 40 [-]: EQ        1 R4 K3      ; if R4 == nil then PC := 49
+ 41 [-]: JMP       49           ; PC := 49
  42 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 43 [-]: SELF      R4 R4 K9     ; R5 := R4; R4 := R4["0xD43EB079"]
- 44 [-]: CALL      R4 2 1       ; R4(R5)
- 45 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 46 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["mColorFunction"]
- 47 [-]: TEST      R4 0         ; if not R4 then PC := 63
- 48 [-]: JMP       63           ; PC := 63
+ 43 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["mOnReleasedCallback"]
+ 44 [-]: EQ        1 R4 K3      ; if R4 == nil then PC := 49
+ 45 [-]: JMP       49           ; PC := 49
+ 46 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 47 [-]: SELF      R4 R4 K10    ; R5 := R4; R4 := R4["0xD43EB079"]
+ 48 [-]: CALL      R4 2 1       ; R4(R5)
  49 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 50 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["mColorFunction"]
- 51 [-]: TEST      R4 0         ; if not R4 then PC := 69
- 52 [-]: JMP       69           ; PC := 69
- 53 [-]: MOVE      R5 R4        ; R5 := R4
- 54 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 55 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 56 [-]: GETTABLE  R7 R7 K11    ; R7 := R7["mAllColors"]
- 57 [-]: TEST      R7 1         ; if R7 then PC := 61
- 58 [-]: JMP       61           ; PC := 61
+ 50 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["mColorFunction"]
+ 51 [-]: TEST      R4 0         ; if not R4 then PC := 67
+ 52 [-]: JMP       67           ; PC := 67
+ 53 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 54 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["mColorFunction"]
+ 55 [-]: TEST      R4 0         ; if not R4 then PC := 73
+ 56 [-]: JMP       73           ; PC := 73
+ 57 [-]: MOVE      R5 R4        ; R5 := R4
+ 58 [-]: GETUPVAL  R6 U2        ; R6 := U2
  59 [-]: GETUPVAL  R7 U2        ; R7 := U2
- 60 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["mButtons"]
- 61 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 62 [-]: JMP       69           ; PC := 69
- 63 [-]: GETUPVAL  R5 U2        ; R5 := U2
- 64 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0x5B4F41B6"]
- 65 [-]: NEWTABLE  R7 1 0       ; R7 := {}
- 66 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 67 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
- 68 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 69 [-]: RETURN    R0 1         ; return 
+ 60 [-]: GETTABLE  R7 R7 K12    ; R7 := R7["mAllColors"]
+ 61 [-]: TEST      R7 1         ; if R7 then PC := 65
+ 62 [-]: JMP       65           ; PC := 65
+ 63 [-]: GETUPVAL  R7 U2        ; R7 := U2
+ 64 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["mButtons"]
+ 65 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 66 [-]: JMP       73           ; PC := 73
+ 67 [-]: GETUPVAL  R5 U2        ; R5 := U2
+ 68 [-]: SELF      R5 R5 K14    ; R6 := R5; R5 := R5["0x5B4F41B6"]
+ 69 [-]: NEWTABLE  R7 1 0       ; R7 := {}
+ 70 [-]: GETUPVAL  R8 U1        ; R8 := U1
+ 71 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
+ 72 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 73 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.29.4:
 ;
 ; Name:            
-; Defined at line: 909
+; Defined at line: 928
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3083,7 +3160,7 @@ code size: 6
 ; Function #2.29.5:
 ;
 ; Name:            
-; Defined at line: 915
+; Defined at line: 934
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3144,7 +3221,7 @@ code size: 6
 ; Function #2.30:
 ;
 ; Name:            
-; Defined at line: 952
+; Defined at line: 971
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3172,7 +3249,7 @@ code size: 6
 ; Function #2.31:
 ;
 ; Name:            
-; Defined at line: 963
+; Defined at line: 982
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3413,250 +3490,267 @@ code size: 6
 233 [-]: MOVE      R6 R2        ; R6 := R2
 234 [-]: LOADK     R7 K60       ; R7 := "Desc"
 235 [-]: LOADK     R8 K36       ; R8 := "_visible"
-236 [-]: MOVE      R9 R3        ; R9 := R3
-237 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
-238 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
-239 [-]: MOVE      R6 R2        ; R6 := R2
-240 [-]: LOADK     R7 K61       ; R7 := "Divider"
-241 [-]: LOADK     R8 K36       ; R8 := "_visible"
-242 [-]: MOVE      R9 R3        ; R9 := R3
-243 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
-244 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
-245 [-]: MOVE      R6 R2        ; R6 := R2
-246 [-]: LOADK     R7 K62       ; R7 := "Highlight"
-247 [-]: LOADK     R8 K36       ; R8 := "_visible"
-248 [-]: MOVE      R9 R3        ; R9 := R3
-249 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
-250 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
-251 [-]: MOVE      R6 R2        ; R6 := R2
-252 [-]: LOADK     R7 K63       ; R7 := "HighlightMask"
-253 [-]: LOADK     R8 K36       ; R8 := "_visible"
-254 [-]: MOVE      R9 R3        ; R9 := R3
-255 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
-256 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
-257 [-]: MOVE      R6 R2        ; R6 := R2
-258 [-]: LOADK     R7 K64       ; R7 := "Icon"
-259 [-]: LOADK     R8 K36       ; R8 := "_visible"
-260 [-]: GETGLOBAL R9 K57       ; R9 := 0x400E7765
-261 [-]: GETTABLE  R10 R0 K22   ; R10 := R0["mIcon"]
-262 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-263 [-]: MOVE      R9 R9        ; R9 := R9
-264 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
-265 [-]: SELF      R4 R0 K65    ; R5 := R0; R4 := R0["0xEEA53F4D"]
-266 [-]: CALL      R4 2 1       ; R4(R5)
-267 [-]: SELF      R4 R0 K66    ; R5 := R0; R4 := R0["0xFD3AD557"]
-268 [-]: CALL      R4 2 1       ; R4(R5)
-269 [-]: SELF      R4 R0 K67    ; R5 := R0; R4 := R0["0x8D3ECF7E"]
-270 [-]: CALL      R4 2 1       ; R4(R5)
-271 [-]: SELF      R4 R0 K68    ; R5 := R0; R4 := R0["0xB8DCC0CD"]
-272 [-]: CALL      R4 2 1       ; R4(R5)
-273 [-]: SELF      R4 R0 K69    ; R5 := R0; R4 := R0["0xCBA1817E"]
-274 [-]: CALL      R4 2 1       ; R4(R5)
-275 [-]: MOVE      R4 R0        ; R4 := R0
-276 [-]: LOADK     R5 K70       ; R5 := 0
-277 [-]: GETTABLE  R6 R0 K17    ; R6 := R0["mType"]
-278 [-]: GETUPVAL  R7 U1        ; R7 := U1
-279 [-]: GETTABLE  R7 R7 K71    ; R7 := R7["COLOR"]
-280 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 337
-281 [-]: JMP       337          ; PC := 337
-282 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
-283 [-]: MOVE      R8 R2        ; R8 := R2
-284 [-]: LOADK     R9 K43       ; R9 := "DefaultColors"
-285 [-]: LOADK     R10 K36      ; R10 := "_visible"
-286 [-]: MOVE      R11 R0       ; R11 := R0
-287 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-288 [-]: GETGLOBAL R6 K72       ; R6 := Engine
-289 [-]: GETTABLE  R6 R6 K73    ; R6 := R6["0x9490FE70"]
-290 [-]: CALL      R6 1 2       ; R6 := R6()
-291 [-]: TEST      R6 1         ; if R6 then PC := 308
-292 [-]: JMP       308          ; PC := 308
-293 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
-294 [-]: MOVE      R8 R2        ; R8 := R2
-295 [-]: LOADK     R9 K43       ; R9 := "DefaultColors"
-296 [-]: LOADK     R10 K74      ; R10 := "_alpha"
-297 [-]: GETUPVAL  R11 U0       ; R11 := U0
-298 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["0xF81722A2"]
-299 [-]: GETTABLE  R12 R0 K75   ; R12 := R0["CurrColor"]
-300 [-]: EQ        1 R12 K26    ; if R12 == nil then PC := 303
-301 [-]: JMP       303          ; PC := 303
-302 [-]: MOVE      R12 R0       ; R12 := R0
-303 [-]: MOVE      R12 R1       ; R12 := R1
-304 [-]: LOADK     R13 K76      ; R13 := 25
-305 [-]: LOADK     R14 K77      ; R14 := 100
-306 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
-307 [-]: CALL      R6 0 1       ; R6(R7,...)
-308 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
-309 [-]: MOVE      R8 R2        ; R8 := R2
-310 [-]: LOADK     R9 K78       ; R9 := "Color.Default"
-311 [-]: LOADK     R10 K36      ; R10 := "_visible"
-312 [-]: GETTABLE  R11 R0 K75   ; R11 := R0["CurrColor"]
-313 [-]: EQ        1 R11 K26    ; if R11 == nil then PC := 316
-314 [-]: JMP       316          ; PC := 316
-315 [-]: MOVE      R11 R0       ; R11 := R0
-316 [-]: MOVE      R11 R1       ; R11 := R1
-317 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-318 [-]: GETTABLE  R6 R0 K75    ; R6 := R0["CurrColor"]
-319 [-]: EQ        0 R6 K26     ; if R6 ~= nil then PC := 329
-320 [-]: JMP       329          ; PC := 329
-321 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
-322 [-]: MOVE      R8 R2        ; R8 := R2
-323 [-]: LOADK     R9 K79       ; R9 := "Color.Fill"
-324 [-]: LOADK     R10 K80      ; R10 := "_color"
-325 [-]: GETGLOBAL R11 K81      ; R11 := _G
-326 [-]: GETTABLE  R11 R11 K82  ; R11 := R11["UIColor_White"]
-327 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-328 [-]: JMP       337          ; PC := 337
-329 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
-330 [-]: MOVE      R8 R2        ; R8 := R2
-331 [-]: LOADK     R9 K79       ; R9 := "Color.Fill"
-332 [-]: LOADK     R10 K80      ; R10 := "_color"
-333 [-]: GETTABLE  R11 R0 K75   ; R11 := R0["CurrColor"]
-334 [-]: SELF      R11 R11 K83  ; R12 := R11; R11 := R11["0x479E62B4"]
-335 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
-336 [-]: CALL      R6 0 1       ; R6(R7,...)
-337 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
-338 [-]: MOVE      R8 R2        ; R8 := R2
-339 [-]: LOADK     R9 K84       ; R9 := "UndoBtn"
-340 [-]: LOADK     R10 K36      ; R10 := "_visible"
-341 [-]: MOVE      R11 R4       ; R11 := R4
-342 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
-343 [-]: TEST      R4 0         ; if not R4 then PC := 469
-344 [-]: JMP       469          ; PC := 469
-345 [-]: SELF      R6 R1 K85    ; R7 := R1; R6 := R1["0x6B7B470B"]
-346 [-]: MOVE      R8 R2        ; R8 := R2
-347 [-]: LOADK     R9 K86       ; R9 := ".Color"
-348 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
-349 [-]: LOADK     R9 K87       ; R9 := "_x"
-350 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
-351 [-]: SELF      R7 R1 K10    ; R8 := R1; R7 := R1["0x880196A7"]
-352 [-]: MOVE      R9 R2        ; R9 := R2
-353 [-]: LOADK     R10 K84      ; R10 := "UndoBtn"
-354 [-]: LOADK     R11 K87      ; R11 := "_x"
-355 [-]: SUB       R12 R6 K88   ; R12 := R6 - 50
-356 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-357 [-]: SELF      R7 R1 K10    ; R8 := R1; R7 := R1["0x880196A7"]
-358 [-]: MOVE      R9 R2        ; R9 := R2
-359 [-]: LOADK     R10 K84      ; R10 := "UndoBtn"
-360 [-]: LOADK     R11 K89      ; R11 := "tintIcons"
-361 [-]: MOVE      R12 R1       ; R12 := R1
-362 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-363 [-]: GETUPVAL  R7 U0        ; R7 := U0
-364 [-]: GETTABLE  R7 R7 K90    ; R7 := R7["0x97B78441"]
-365 [-]: GETGLOBAL R8 K81       ; R8 := _G
-366 [-]: GETTABLE  R8 R8 K91    ; R8 := R8["UIColor_Red"]
-367 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-368 [-]: SELF      R8 R1 K27    ; R9 := R1; R8 := R1["0x7E1F26D7"]
-369 [-]: MOVE      R10 R2       ; R10 := R2
-370 [-]: LOADK     R11 K92      ; R11 := ".UndoBtn.Bg"
-371 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-372 [-]: GETGLOBAL R11 K81      ; R11 := _G
-373 [-]: GETTABLE  R11 R11 K93  ; R11 := R11["UIMaterial_RectangleNoDepth"]
-374 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
-375 [-]: SELF      R8 R1 K94    ; R9 := R1; R8 := R1["0x302AAB2F"]
-376 [-]: MOVE      R10 R2       ; R10 := R2
-377 [-]: LOADK     R11 K92      ; R11 := ".UndoBtn.Bg"
-378 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-379 [-]: LOADK     R11 K95      ; R11 := "RectEdgeColor"
-380 [-]: GETGLOBAL R12 K81      ; R12 := _G
-381 [-]: GETTABLE  R12 R12 K96  ; R12 := R12["UIColorObject_White"]
-382 [-]: GETTABLE  R12 R12 K97  ; R12 := R12["r"]
-383 [-]: GETGLOBAL R13 K81      ; R13 := _G
-384 [-]: GETTABLE  R13 R13 K96  ; R13 := R13["UIColorObject_White"]
-385 [-]: GETTABLE  R13 R13 K98  ; R13 := R13["g"]
-386 [-]: GETGLOBAL R14 K81      ; R14 := _G
-387 [-]: GETTABLE  R14 R14 K96  ; R14 := R14["UIColorObject_White"]
-388 [-]: GETTABLE  R14 R14 K99  ; R14 := R14["b"]
-389 [-]: LOADK     R15 K100     ; R15 := 1
-390 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
-391 [-]: SELF      R8 R1 K94    ; R9 := R1; R8 := R1["0x302AAB2F"]
-392 [-]: MOVE      R10 R2       ; R10 := R2
-393 [-]: LOADK     R11 K92      ; R11 := ".UndoBtn.Bg"
-394 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-395 [-]: LOADK     R11 K101     ; R11 := "RectInnerColor"
-396 [-]: GETTABLE  R12 R7 K97   ; R12 := R7["r"]
-397 [-]: GETTABLE  R13 R7 K98   ; R13 := R7["g"]
-398 [-]: GETTABLE  R14 R7 K99   ; R14 := R7["b"]
-399 [-]: LOADK     R15 K100     ; R15 := 1
-400 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
-401 [-]: SELF      R8 R1 K10    ; R9 := R1; R8 := R1["0x880196A7"]
-402 [-]: MOVE      R10 R2       ; R10 := R2
-403 [-]: LOADK     R11 K102     ; R11 := "UndoBtn.Cost"
-404 [-]: LOADK     R12 K80      ; R12 := "_color"
-405 [-]: GETGLOBAL R13 K81      ; R13 := _G
-406 [-]: GETTABLE  R13 R13 K103 ; R13 := R13["UIColor_DarkGrey"]
-407 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
-408 [-]: SELF      R8 R1 K32    ; R9 := R1; R8 := R1["0x17028E8F"]
+236 [-]: TESTSET   R9 R3 1      ; if R3 then PC := 239 else R9 := R3
+237 [-]: JMP       239          ; PC := 239
+238 [-]: GETTABLE  R9 R0 K61    ; R9 := R0["mShowDesc"]
+239 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+240 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
+241 [-]: MOVE      R6 R2        ; R6 := R2
+242 [-]: LOADK     R7 K58       ; R7 := "LabelRight"
+243 [-]: LOADK     R8 K62       ; R8 := "text"
+244 [-]: GETUPVAL  R9 U0        ; R9 := U0
+245 [-]: GETTABLE  R9 R9 K16    ; R9 := R9["0xF81722A2"]
+246 [-]: GETTABLE  R10 R0 K59   ; R10 := R0["NameTagRight"]
+247 [-]: EQ        0 R10 K26    ; if R10 ~= nil then PC := 250
+248 [-]: JMP       250          ; PC := 250
+249 [-]: MOVE      R10 R0       ; R10 := R0
+250 [-]: MOVE      R10 R1       ; R10 := R1
+251 [-]: GETTABLE  R11 R0 K59   ; R11 := R0["NameTagRight"]
+252 [-]: LOADK     R12 K63      ; R12 := ""
+253 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+254 [-]: CALL      R4 0 1       ; R4(R5,...)
+255 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
+256 [-]: MOVE      R6 R2        ; R6 := R2
+257 [-]: LOADK     R7 K64       ; R7 := "Divider"
+258 [-]: LOADK     R8 K36       ; R8 := "_visible"
+259 [-]: MOVE      R9 R3        ; R9 := R3
+260 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+261 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
+262 [-]: MOVE      R6 R2        ; R6 := R2
+263 [-]: LOADK     R7 K65       ; R7 := "Highlight"
+264 [-]: LOADK     R8 K36       ; R8 := "_visible"
+265 [-]: MOVE      R9 R3        ; R9 := R3
+266 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+267 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
+268 [-]: MOVE      R6 R2        ; R6 := R2
+269 [-]: LOADK     R7 K66       ; R7 := "HighlightMask"
+270 [-]: LOADK     R8 K36       ; R8 := "_visible"
+271 [-]: MOVE      R9 R3        ; R9 := R3
+272 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+273 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x880196A7"]
+274 [-]: MOVE      R6 R2        ; R6 := R2
+275 [-]: LOADK     R7 K67       ; R7 := "Icon"
+276 [-]: LOADK     R8 K36       ; R8 := "_visible"
+277 [-]: GETGLOBAL R9 K57       ; R9 := 0x400E7765
+278 [-]: GETTABLE  R10 R0 K22   ; R10 := R0["mIcon"]
+279 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+280 [-]: MOVE      R9 R9        ; R9 := R9
+281 [-]: CALL      R4 6 1       ; R4(R5,R6,R7,R8,R9)
+282 [-]: SELF      R4 R0 K68    ; R5 := R0; R4 := R0["0xEEA53F4D"]
+283 [-]: CALL      R4 2 1       ; R4(R5)
+284 [-]: SELF      R4 R0 K69    ; R5 := R0; R4 := R0["0xFD3AD557"]
+285 [-]: CALL      R4 2 1       ; R4(R5)
+286 [-]: SELF      R4 R0 K70    ; R5 := R0; R4 := R0["0x8D3ECF7E"]
+287 [-]: CALL      R4 2 1       ; R4(R5)
+288 [-]: SELF      R4 R0 K71    ; R5 := R0; R4 := R0["0xB8DCC0CD"]
+289 [-]: CALL      R4 2 1       ; R4(R5)
+290 [-]: SELF      R4 R0 K72    ; R5 := R0; R4 := R0["0xCBA1817E"]
+291 [-]: CALL      R4 2 1       ; R4(R5)
+292 [-]: MOVE      R4 R0        ; R4 := R0
+293 [-]: LOADK     R5 K73       ; R5 := 0
+294 [-]: GETTABLE  R6 R0 K17    ; R6 := R0["mType"]
+295 [-]: GETUPVAL  R7 U1        ; R7 := U1
+296 [-]: GETTABLE  R7 R7 K74    ; R7 := R7["COLOR"]
+297 [-]: EQ        0 R6 R7      ; if R6 ~= R7 then PC := 354
+298 [-]: JMP       354          ; PC := 354
+299 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
+300 [-]: MOVE      R8 R2        ; R8 := R2
+301 [-]: LOADK     R9 K43       ; R9 := "DefaultColors"
+302 [-]: LOADK     R10 K36      ; R10 := "_visible"
+303 [-]: MOVE      R11 R0       ; R11 := R0
+304 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+305 [-]: GETGLOBAL R6 K75       ; R6 := Engine
+306 [-]: GETTABLE  R6 R6 K76    ; R6 := R6["0x9490FE70"]
+307 [-]: CALL      R6 1 2       ; R6 := R6()
+308 [-]: TEST      R6 1         ; if R6 then PC := 325
+309 [-]: JMP       325          ; PC := 325
+310 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
+311 [-]: MOVE      R8 R2        ; R8 := R2
+312 [-]: LOADK     R9 K43       ; R9 := "DefaultColors"
+313 [-]: LOADK     R10 K77      ; R10 := "_alpha"
+314 [-]: GETUPVAL  R11 U0       ; R11 := U0
+315 [-]: GETTABLE  R11 R11 K16  ; R11 := R11["0xF81722A2"]
+316 [-]: GETTABLE  R12 R0 K78   ; R12 := R0["CurrColor"]
+317 [-]: EQ        1 R12 K26    ; if R12 == nil then PC := 320
+318 [-]: JMP       320          ; PC := 320
+319 [-]: MOVE      R12 R0       ; R12 := R0
+320 [-]: MOVE      R12 R1       ; R12 := R1
+321 [-]: LOADK     R13 K79      ; R13 := 25
+322 [-]: LOADK     R14 K80      ; R14 := 100
+323 [-]: CALL      R11 4 0      ; R11,... := R11(R12,R13,R14)
+324 [-]: CALL      R6 0 1       ; R6(R7,...)
+325 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
+326 [-]: MOVE      R8 R2        ; R8 := R2
+327 [-]: LOADK     R9 K81       ; R9 := "Color.Default"
+328 [-]: LOADK     R10 K36      ; R10 := "_visible"
+329 [-]: GETTABLE  R11 R0 K78   ; R11 := R0["CurrColor"]
+330 [-]: EQ        1 R11 K26    ; if R11 == nil then PC := 333
+331 [-]: JMP       333          ; PC := 333
+332 [-]: MOVE      R11 R0       ; R11 := R0
+333 [-]: MOVE      R11 R1       ; R11 := R1
+334 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+335 [-]: GETTABLE  R6 R0 K78    ; R6 := R0["CurrColor"]
+336 [-]: EQ        0 R6 K26     ; if R6 ~= nil then PC := 346
+337 [-]: JMP       346          ; PC := 346
+338 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
+339 [-]: MOVE      R8 R2        ; R8 := R2
+340 [-]: LOADK     R9 K82       ; R9 := "Color.Fill"
+341 [-]: LOADK     R10 K83      ; R10 := "_color"
+342 [-]: GETGLOBAL R11 K84      ; R11 := _G
+343 [-]: GETTABLE  R11 R11 K85  ; R11 := R11["UIColor_White"]
+344 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+345 [-]: JMP       354          ; PC := 354
+346 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
+347 [-]: MOVE      R8 R2        ; R8 := R2
+348 [-]: LOADK     R9 K82       ; R9 := "Color.Fill"
+349 [-]: LOADK     R10 K83      ; R10 := "_color"
+350 [-]: GETTABLE  R11 R0 K78   ; R11 := R0["CurrColor"]
+351 [-]: SELF      R11 R11 K86  ; R12 := R11; R11 := R11["0x479E62B4"]
+352 [-]: CALL      R11 2 0      ; R11,... := R11(R12)
+353 [-]: CALL      R6 0 1       ; R6(R7,...)
+354 [-]: SELF      R6 R1 K10    ; R7 := R1; R6 := R1["0x880196A7"]
+355 [-]: MOVE      R8 R2        ; R8 := R2
+356 [-]: LOADK     R9 K87       ; R9 := "UndoBtn"
+357 [-]: LOADK     R10 K36      ; R10 := "_visible"
+358 [-]: MOVE      R11 R4       ; R11 := R4
+359 [-]: CALL      R6 6 1       ; R6(R7,R8,R9,R10,R11)
+360 [-]: TEST      R4 0         ; if not R4 then PC := 486
+361 [-]: JMP       486          ; PC := 486
+362 [-]: SELF      R6 R1 K88    ; R7 := R1; R6 := R1["0x6B7B470B"]
+363 [-]: MOVE      R8 R2        ; R8 := R2
+364 [-]: LOADK     R9 K89       ; R9 := ".Color"
+365 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+366 [-]: LOADK     R9 K90       ; R9 := "_x"
+367 [-]: CALL      R6 4 2       ; R6 := R6(R7,R8,R9)
+368 [-]: SELF      R7 R1 K10    ; R8 := R1; R7 := R1["0x880196A7"]
+369 [-]: MOVE      R9 R2        ; R9 := R2
+370 [-]: LOADK     R10 K87      ; R10 := "UndoBtn"
+371 [-]: LOADK     R11 K90      ; R11 := "_x"
+372 [-]: SUB       R12 R6 K91   ; R12 := R6 - 50
+373 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+374 [-]: SELF      R7 R1 K10    ; R8 := R1; R7 := R1["0x880196A7"]
+375 [-]: MOVE      R9 R2        ; R9 := R2
+376 [-]: LOADK     R10 K87      ; R10 := "UndoBtn"
+377 [-]: LOADK     R11 K92      ; R11 := "tintIcons"
+378 [-]: MOVE      R12 R1       ; R12 := R1
+379 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+380 [-]: GETUPVAL  R7 U0        ; R7 := U0
+381 [-]: GETTABLE  R7 R7 K93    ; R7 := R7["0x97B78441"]
+382 [-]: GETGLOBAL R8 K84       ; R8 := _G
+383 [-]: GETTABLE  R8 R8 K94    ; R8 := R8["UIColor_Red"]
+384 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+385 [-]: SELF      R8 R1 K27    ; R9 := R1; R8 := R1["0x7E1F26D7"]
+386 [-]: MOVE      R10 R2       ; R10 := R2
+387 [-]: LOADK     R11 K95      ; R11 := ".UndoBtn.Bg"
+388 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+389 [-]: GETGLOBAL R11 K84      ; R11 := _G
+390 [-]: GETTABLE  R11 R11 K96  ; R11 := R11["UIMaterial_RectangleNoDepth"]
+391 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+392 [-]: SELF      R8 R1 K97    ; R9 := R1; R8 := R1["0x302AAB2F"]
+393 [-]: MOVE      R10 R2       ; R10 := R2
+394 [-]: LOADK     R11 K95      ; R11 := ".UndoBtn.Bg"
+395 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+396 [-]: LOADK     R11 K98      ; R11 := "RectEdgeColor"
+397 [-]: GETGLOBAL R12 K84      ; R12 := _G
+398 [-]: GETTABLE  R12 R12 K99  ; R12 := R12["UIColorObject_White"]
+399 [-]: GETTABLE  R12 R12 K100 ; R12 := R12["r"]
+400 [-]: GETGLOBAL R13 K84      ; R13 := _G
+401 [-]: GETTABLE  R13 R13 K99  ; R13 := R13["UIColorObject_White"]
+402 [-]: GETTABLE  R13 R13 K101 ; R13 := R13["g"]
+403 [-]: GETGLOBAL R14 K84      ; R14 := _G
+404 [-]: GETTABLE  R14 R14 K99  ; R14 := R14["UIColorObject_White"]
+405 [-]: GETTABLE  R14 R14 K102 ; R14 := R14["b"]
+406 [-]: LOADK     R15 K103     ; R15 := 1
+407 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
+408 [-]: SELF      R8 R1 K97    ; R9 := R1; R8 := R1["0x302AAB2F"]
 409 [-]: MOVE      R10 R2       ; R10 := R2
-410 [-]: LOADK     R11 K104     ; R11 := ".UndoBtn.Cost.text"
+410 [-]: LOADK     R11 K95      ; R11 := ".UndoBtn.Bg"
 411 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-412 [-]: LOADK     R11 K105     ; R11 := "/Lotus/Language/Menu/Arsenal_ColorCost"
-413 [-]: NEWTABLE  R12 0 1      ; R12 := {}
-414 [-]: SETTABLE  R12 K106 R5  ; R12["COST"] := R5
-415 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
-416 [-]: SELF      R8 R1 K27    ; R9 := R1; R8 := R1["0x7E1F26D7"]
-417 [-]: MOVE      R10 R2       ; R10 := R2
-418 [-]: LOADK     R11 K107     ; R11 := ".UndoBtn.CostBg"
-419 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-420 [-]: GETGLOBAL R11 K81      ; R11 := _G
-421 [-]: GETTABLE  R11 R11 K93  ; R11 := R11["UIMaterial_RectangleNoDepth"]
-422 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
-423 [-]: SELF      R8 R1 K94    ; R9 := R1; R8 := R1["0x302AAB2F"]
-424 [-]: MOVE      R10 R2       ; R10 := R2
-425 [-]: LOADK     R11 K107     ; R11 := ".UndoBtn.CostBg"
-426 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-427 [-]: LOADK     R11 K95      ; R11 := "RectEdgeColor"
-428 [-]: GETGLOBAL R12 K81      ; R12 := _G
-429 [-]: GETTABLE  R12 R12 K96  ; R12 := R12["UIColorObject_White"]
-430 [-]: GETTABLE  R12 R12 K97  ; R12 := R12["r"]
-431 [-]: GETGLOBAL R13 K81      ; R13 := _G
-432 [-]: GETTABLE  R13 R13 K96  ; R13 := R13["UIColorObject_White"]
-433 [-]: GETTABLE  R13 R13 K98  ; R13 := R13["g"]
-434 [-]: GETGLOBAL R14 K81      ; R14 := _G
-435 [-]: GETTABLE  R14 R14 K96  ; R14 := R14["UIColorObject_White"]
-436 [-]: GETTABLE  R14 R14 K99  ; R14 := R14["b"]
-437 [-]: LOADK     R15 K100     ; R15 := 1
-438 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
-439 [-]: SELF      R8 R1 K94    ; R9 := R1; R8 := R1["0x302AAB2F"]
-440 [-]: MOVE      R10 R2       ; R10 := R2
-441 [-]: LOADK     R11 K107     ; R11 := ".UndoBtn.CostBg"
-442 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
-443 [-]: LOADK     R11 K101     ; R11 := "RectInnerColor"
-444 [-]: GETGLOBAL R12 K81      ; R12 := _G
-445 [-]: GETTABLE  R12 R12 K108 ; R12 := R12["UIColorObject_Black"]
-446 [-]: GETTABLE  R12 R12 K97  ; R12 := R12["r"]
-447 [-]: GETGLOBAL R13 K81      ; R13 := _G
-448 [-]: GETTABLE  R13 R13 K108 ; R13 := R13["UIColorObject_Black"]
-449 [-]: GETTABLE  R13 R13 K98  ; R13 := R13["g"]
-450 [-]: GETGLOBAL R14 K81      ; R14 := _G
-451 [-]: GETTABLE  R14 R14 K108 ; R14 := R14["UIColorObject_Black"]
-452 [-]: GETTABLE  R14 R14 K99  ; R14 := R14["b"]
-453 [-]: LOADK     R15 K109     ; R15 := 0.10000000149012
-454 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
-455 [-]: GETGLOBAL R8 K110      ; R8 := 0xF595ADDE
-456 [-]: SELF      R9 R1 K85    ; R10 := R1; R9 := R1["0x6B7B470B"]
-457 [-]: MOVE      R11 R2       ; R11 := R2
-458 [-]: LOADK     R12 K111     ; R12 := ".UndoBtn.Cost"
-459 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
-460 [-]: LOADK     R12 K112     ; R12 := "textWidth"
-461 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
-462 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
-463 [-]: SELF      R9 R1 K10    ; R10 := R1; R9 := R1["0x880196A7"]
-464 [-]: MOVE      R11 R2       ; R11 := R2
-465 [-]: LOADK     R12 K113     ; R12 := "UndoBtn.CostBg"
-466 [-]: LOADK     R13 K114     ; R13 := "_width"
-467 [-]: ADD       R14 R8 K115  ; R14 := R8 + 5
-468 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
-469 [-]: RETURN    R0 1         ; return 
+412 [-]: LOADK     R11 K104     ; R11 := "RectInnerColor"
+413 [-]: GETTABLE  R12 R7 K100  ; R12 := R7["r"]
+414 [-]: GETTABLE  R13 R7 K101  ; R13 := R7["g"]
+415 [-]: GETTABLE  R14 R7 K102  ; R14 := R7["b"]
+416 [-]: LOADK     R15 K103     ; R15 := 1
+417 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
+418 [-]: SELF      R8 R1 K10    ; R9 := R1; R8 := R1["0x880196A7"]
+419 [-]: MOVE      R10 R2       ; R10 := R2
+420 [-]: LOADK     R11 K105     ; R11 := "UndoBtn.Cost"
+421 [-]: LOADK     R12 K83      ; R12 := "_color"
+422 [-]: GETGLOBAL R13 K84      ; R13 := _G
+423 [-]: GETTABLE  R13 R13 K106 ; R13 := R13["UIColor_DarkGrey"]
+424 [-]: CALL      R8 6 1       ; R8(R9,R10,R11,R12,R13)
+425 [-]: SELF      R8 R1 K32    ; R9 := R1; R8 := R1["0x17028E8F"]
+426 [-]: MOVE      R10 R2       ; R10 := R2
+427 [-]: LOADK     R11 K107     ; R11 := ".UndoBtn.Cost.text"
+428 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+429 [-]: LOADK     R11 K108     ; R11 := "/Lotus/Language/Menu/Arsenal_ColorCost"
+430 [-]: NEWTABLE  R12 0 1      ; R12 := {}
+431 [-]: SETTABLE  R12 K109 R5  ; R12["COST"] := R5
+432 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
+433 [-]: SELF      R8 R1 K27    ; R9 := R1; R8 := R1["0x7E1F26D7"]
+434 [-]: MOVE      R10 R2       ; R10 := R2
+435 [-]: LOADK     R11 K110     ; R11 := ".UndoBtn.CostBg"
+436 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+437 [-]: GETGLOBAL R11 K84      ; R11 := _G
+438 [-]: GETTABLE  R11 R11 K96  ; R11 := R11["UIMaterial_RectangleNoDepth"]
+439 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
+440 [-]: SELF      R8 R1 K97    ; R9 := R1; R8 := R1["0x302AAB2F"]
+441 [-]: MOVE      R10 R2       ; R10 := R2
+442 [-]: LOADK     R11 K110     ; R11 := ".UndoBtn.CostBg"
+443 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+444 [-]: LOADK     R11 K98      ; R11 := "RectEdgeColor"
+445 [-]: GETGLOBAL R12 K84      ; R12 := _G
+446 [-]: GETTABLE  R12 R12 K99  ; R12 := R12["UIColorObject_White"]
+447 [-]: GETTABLE  R12 R12 K100 ; R12 := R12["r"]
+448 [-]: GETGLOBAL R13 K84      ; R13 := _G
+449 [-]: GETTABLE  R13 R13 K99  ; R13 := R13["UIColorObject_White"]
+450 [-]: GETTABLE  R13 R13 K101 ; R13 := R13["g"]
+451 [-]: GETGLOBAL R14 K84      ; R14 := _G
+452 [-]: GETTABLE  R14 R14 K99  ; R14 := R14["UIColorObject_White"]
+453 [-]: GETTABLE  R14 R14 K102 ; R14 := R14["b"]
+454 [-]: LOADK     R15 K103     ; R15 := 1
+455 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
+456 [-]: SELF      R8 R1 K97    ; R9 := R1; R8 := R1["0x302AAB2F"]
+457 [-]: MOVE      R10 R2       ; R10 := R2
+458 [-]: LOADK     R11 K110     ; R11 := ".UndoBtn.CostBg"
+459 [-]: CONCAT    R10 R10 R11  ; R10 := R10 .. R11
+460 [-]: LOADK     R11 K104     ; R11 := "RectInnerColor"
+461 [-]: GETGLOBAL R12 K84      ; R12 := _G
+462 [-]: GETTABLE  R12 R12 K111 ; R12 := R12["UIColorObject_Black"]
+463 [-]: GETTABLE  R12 R12 K100 ; R12 := R12["r"]
+464 [-]: GETGLOBAL R13 K84      ; R13 := _G
+465 [-]: GETTABLE  R13 R13 K111 ; R13 := R13["UIColorObject_Black"]
+466 [-]: GETTABLE  R13 R13 K101 ; R13 := R13["g"]
+467 [-]: GETGLOBAL R14 K84      ; R14 := _G
+468 [-]: GETTABLE  R14 R14 K111 ; R14 := R14["UIColorObject_Black"]
+469 [-]: GETTABLE  R14 R14 K102 ; R14 := R14["b"]
+470 [-]: LOADK     R15 K112     ; R15 := 0.10000000149012
+471 [-]: CALL      R8 8 1       ; R8(R9,R10,R11,R12,R13,R14,R15)
+472 [-]: GETGLOBAL R8 K113      ; R8 := 0xF595ADDE
+473 [-]: SELF      R9 R1 K88    ; R10 := R1; R9 := R1["0x6B7B470B"]
+474 [-]: MOVE      R11 R2       ; R11 := R2
+475 [-]: LOADK     R12 K114     ; R12 := ".UndoBtn.Cost"
+476 [-]: CONCAT    R11 R11 R12  ; R11 := R11 .. R12
+477 [-]: LOADK     R12 K115     ; R12 := "textWidth"
+478 [-]: CALL      R9 4 0       ; R9,... := R9(R10,R11,R12)
+479 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+480 [-]: SELF      R9 R1 K10    ; R10 := R1; R9 := R1["0x880196A7"]
+481 [-]: MOVE      R11 R2       ; R11 := R2
+482 [-]: LOADK     R12 K116     ; R12 := "UndoBtn.CostBg"
+483 [-]: LOADK     R13 K117     ; R13 := "_width"
+484 [-]: ADD       R14 R8 K118  ; R14 := R8 + 5
+485 [-]: CALL      R9 6 1       ; R9(R10,R11,R12,R13,R14)
+486 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.32:
 ;
 ; Name:            
-; Defined at line: 1066
+; Defined at line: 1086
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  12
 
   1 [-]: SELF      R3 R0 K0     ; R4 := R0; R3 := R0["0xD43991E8"]
   2 [-]: MOVE      R5 R1        ; R5 := R1
@@ -3682,38 +3776,59 @@ code size: 6
  22 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
  23 [-]: LOADK     R8 K12       ; R8 := "..."
  24 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
- 25 [-]: SELF      R5 R3 K13    ; R6 := R3; R5 := R3["0xD6A79FE9"]
- 26 [-]: MOVE      R7 R4        ; R7 := R4
- 27 [-]: LOADK     R8 K11       ; R8 := ".Desc"
- 28 [-]: CONCAT    R7 R7 R8     ; R7 := R7 .. R8
- 29 [-]: LOADK     R8 K14       ; R8 := "text"
- 30 [-]: GETGLOBAL R9 K15       ; R9 := string
- 31 [-]: GETTABLE  R9 R9 K16    ; R9 := R9["0x639C642A"]
- 32 [-]: SELF      R10 R3 K17   ; R11 := R3; R10 := R3["0x5DB0BD4"]
- 33 [-]: MOVE      R12 R2       ; R12 := R2
- 34 [-]: MOVE      R13 R0       ; R13 := R0
- 35 [-]: CALL      R10 4 0      ; R10,... := R10(R11,R12,R13)
- 36 [-]: CALL      R9 0 0       ; R9,... := R9(R10,...)
- 37 [-]: CALL      R5 0 1       ; R5(R6,...)
- 38 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0["0xA0107BF2"]
- 39 [-]: CALL      R5 2 1       ; R5(R6)
- 40 [-]: RETURN    R0 1         ; return 
+ 25 [-]: SELF      R5 R3 K13    ; R6 := R3; R5 := R3["0x5DB0BD4"]
+ 26 [-]: MOVE      R7 R2        ; R7 := R2
+ 27 [-]: MOVE      R8 R0        ; R8 := R0
+ 28 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
+ 29 [-]: GETTABLE  R6 R0 K14    ; R6 := R0["mTitleCase"]
+ 30 [-]: TEST      R6 0         ; if not R6 then PC := 42
+ 31 [-]: JMP       42           ; PC := 42
+ 32 [-]: SELF      R6 R3 K15    ; R7 := R3; R6 := R3["0xD6A79FE9"]
+ 33 [-]: MOVE      R8 R4        ; R8 := R4
+ 34 [-]: LOADK     R9 K11       ; R9 := ".Desc"
+ 35 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+ 36 [-]: LOADK     R9 K16       ; R9 := "text"
+ 37 [-]: GETGLOBAL R10 K17      ; R10 := 0xD26C89A0
+ 38 [-]: MOVE      R11 R5       ; R11 := R5
+ 39 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+ 40 [-]: CALL      R6 0 1       ; R6(R7,...)
+ 41 [-]: JMP       52           ; PC := 52
+ 42 [-]: SELF      R6 R3 K15    ; R7 := R3; R6 := R3["0xD6A79FE9"]
+ 43 [-]: MOVE      R8 R4        ; R8 := R4
+ 44 [-]: LOADK     R9 K11       ; R9 := ".Desc"
+ 45 [-]: CONCAT    R8 R8 R9     ; R8 := R8 .. R9
+ 46 [-]: LOADK     R9 K16       ; R9 := "text"
+ 47 [-]: GETGLOBAL R10 K18      ; R10 := string
+ 48 [-]: GETTABLE  R10 R10 K19  ; R10 := R10["0x639C642A"]
+ 49 [-]: MOVE      R11 R5       ; R11 := R5
+ 50 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+ 51 [-]: CALL      R6 0 1       ; R6(R7,...)
+ 52 [-]: SELF      R6 R0 K20    ; R7 := R0; R6 := R0["0xA0107BF2"]
+ 53 [-]: CALL      R6 2 1       ; R6(R7)
+ 54 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #2.33:
 ;
 ; Name:            
-; Defined at line: 1085
+; Defined at line: 1111
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  3
+; Max Stack Size:  9
 
   1 [-]: EQ        0 R1 K0      ; if R1 ~= "0x0" then PC := 4
   2 [-]: JMP       4            ; PC := 4
   3 [-]: MOVE      R1 R0        ; R1 := R0
   4 [-]: MOVE      R1 R1        ; R1 := R1
   5 [-]: SETTABLE  R0 K1 R1     ; R0["mMultiline"] := R1
-  6 [-]: RETURN    R0 1         ; return 
+  6 [-]: GETTABLE  R3 R0 K2     ; R3 := R0["mMovie"]
+  7 [-]: SELF      R3 R3 K3     ; R4 := R3; R3 := R3["0x880196A7"]
+  8 [-]: GETTABLE  R5 R0 K4     ; R5 := R0["mClipName"]
+  9 [-]: LOADK     R6 K5        ; R6 := "Label"
+ 10 [-]: LOADK     R7 K6        ; R7 := "multiline"
+ 11 [-]: GETTABLE  R8 R0 K1     ; R8 := R0["mMultiline"]
+ 12 [-]: CALL      R3 6 1       ; R3(R4,R5,R6,R7,R8)
+ 13 [-]: RETURN    R0 1         ; return 
 
 

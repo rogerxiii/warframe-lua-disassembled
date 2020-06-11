@@ -357,9 +357,9 @@ code size: 11
  57 [-]: SELF      R7 R7 K20    ; R8 := R7; R7 := R7["0x3B1B11B9"]
  58 [-]: GETGLOBAL R9 K21       ; R9 := Game
  59 [-]: GETTABLE  R9 R9 K22    ; R9 := R9["AVATAR_MOVEMENT_SPEED"]
- 60 [-]: GETGLOBAL R10 K21      ; R10 := Game
- 61 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["MULTIPLY"]
- 62 [-]: LOADK     R11 K24      ; R11 := 1.2000000476837
+ 60 [-]: GETGLOBAL R10 K23      ; R10 := Engine
+ 61 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["MULTIPLY"]
+ 62 [-]: LOADK     R11 K25      ; R11 := 1.2000000476837
  63 [-]: CALL      R7 5 1       ; R7(R8,R9,R10,R11)
  64 [-]: RETURN    R0 1         ; return 
 
@@ -566,20 +566,20 @@ code size: 11
 117 [-]: SELF      R16 R16 K29  ; R17 := R16; R16 := R16["0x3B1B11B9"]
 118 [-]: GETGLOBAL R18 K30      ; R18 := Game
 119 [-]: GETTABLE  R18 R18 K31  ; R18 := R18["AVATAR_MOVEMENT_SPEED"]
-120 [-]: GETGLOBAL R19 K30      ; R19 := Game
-121 [-]: GETTABLE  R19 R19 K32  ; R19 := R19["MULTIPLY"]
-122 [-]: LOADK     R20 K33      ; R20 := 1.2000000476837
+120 [-]: GETGLOBAL R19 K32      ; R19 := Engine
+121 [-]: GETTABLE  R19 R19 K33  ; R19 := R19["MULTIPLY"]
+122 [-]: LOADK     R20 K34      ; R20 := 1.2000000476837
 123 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
-124 [-]: SELF      R16 R0 K34   ; R17 := R0; R16 := R0["0xB26452A2"]
+124 [-]: SELF      R16 R0 K35   ; R17 := R0; R16 := R0["0xB26452A2"]
 125 [-]: GETGLOBAL R18 K3       ; R18 := 0xEC274B1A
-126 [-]: LOADK     R19 K35      ; R19 := "DropShipScaleExit"
+126 [-]: LOADK     R19 K36      ; R19 := "DropShipScaleExit"
 127 [-]: CALL      R18 2 2      ; R18 := R18(R19)
 128 [-]: MOVE      R19 R0       ; R19 := R0
 129 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
 130 [-]: RETURN    R0 1         ; return 
 131 [-]: JMP       152          ; PC := 152
 132 [-]: GETGLOBAL R16 K3       ; R16 := 0xEC274B1A
-133 [-]: LOADK     R17 K36      ; R17 := "DropshipSlowDown"
+133 [-]: LOADK     R17 K37      ; R17 := "DropshipSlowDown"
 134 [-]: CALL      R16 2 2      ; R16 := R16(R17)
 135 [-]: EQ        0 R2 R16     ; if R2 ~= R16 then PC := 152
 136 [-]: JMP       152          ; PC := 152
@@ -590,12 +590,12 @@ code size: 11
 141 [-]: JMP       151          ; PC := 151
 142 [-]: SELF      R16 R0 K28   ; R17 := R0; R16 := R0["0x8DB5D01F"]
 143 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-144 [-]: SELF      R16 R16 K37  ; R17 := R16; R16 := R16["0xF21555A7"]
+144 [-]: SELF      R16 R16 K38  ; R17 := R16; R16 := R16["0xF21555A7"]
 145 [-]: GETGLOBAL R18 K30      ; R18 := Game
 146 [-]: GETTABLE  R18 R18 K31  ; R18 := R18["AVATAR_MOVEMENT_SPEED"]
-147 [-]: GETGLOBAL R19 K30      ; R19 := Game
-148 [-]: GETTABLE  R19 R19 K32  ; R19 := R19["MULTIPLY"]
-149 [-]: LOADK     R20 K33      ; R20 := 1.2000000476837
+147 [-]: GETGLOBAL R19 K32      ; R19 := Engine
+148 [-]: GETTABLE  R19 R19 K33  ; R19 := R19["MULTIPLY"]
+149 [-]: LOADK     R20 K34      ; R20 := 1.2000000476837
 150 [-]: CALL      R16 5 1      ; R16(R17,R18,R19,R20)
 151 [-]: RETURN    R0 1         ; return 
 152 [-]: RETURN    R0 1         ; return 

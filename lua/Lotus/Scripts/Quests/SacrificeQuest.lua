@@ -527,32 +527,32 @@ code size: 57
   8 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0x3B1B11B9"]
   9 [-]: GETGLOBAL R3 K7        ; R3 := Game
  10 [-]: GETTABLE  R3 R3 K8     ; R3 := R3["WEAPON_PARRY_EFFECTIVENESS"]
- 11 [-]: GETGLOBAL R4 K7        ; R4 := Game
- 12 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["SET"]
+ 11 [-]: GETGLOBAL R4 K9        ; R4 := Engine
+ 12 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["SET"]
  13 [-]: LOADK     R5 K4        ; R5 := 0
  14 [-]: CALL      R1 5 1       ; R1(R2,R3,R4,R5)
  15 [-]: LOADNIL   R1 R2        ; R1 := R2 := nil
- 16 [-]: GETGLOBAL R3 K10       ; R3 := 0x400E7765
+ 16 [-]: GETGLOBAL R3 K11       ; R3 := 0x400E7765
  17 [-]: MOVE      R4 R0        ; R4 := R0
  18 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  19 [-]: TEST      R3 1         ; if R3 then PC := 112
  20 [-]: JMP       112          ; PC := 112
- 21 [-]: GETGLOBAL R3 K11       ; R3 := gRegion
- 22 [-]: SELF      R3 R3 K12    ; R4 := R3; R3 := R3["0x3E2F6BF"]
+ 21 [-]: GETGLOBAL R3 K12       ; R3 := gRegion
+ 22 [-]: SELF      R3 R3 K13    ; R4 := R3; R3 := R3["0x3E2F6BF"]
  23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  24 [-]: MOVE      R1 R3        ; R1 := R3
- 25 [-]: SELF      R3 R0 K13    ; R4 := R0; R3 := R0["0xA36131E2"]
+ 25 [-]: SELF      R3 R0 K14    ; R4 := R0; R3 := R0["0xA36131E2"]
  26 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  27 [-]: MOVE      R2 R3        ; R2 := R3
- 28 [-]: GETGLOBAL R3 K10       ; R3 := 0x400E7765
+ 28 [-]: GETGLOBAL R3 K11       ; R3 := 0x400E7765
  29 [-]: MOVE      R4 R1        ; R4 := R1
  30 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  31 [-]: TEST      R3 1         ; if R3 then PC := 83
  32 [-]: JMP       83           ; PC := 83
- 33 [-]: EQ        1 R2 K14     ; if R2 == 2 then PC := 83
+ 33 [-]: EQ        1 R2 K15     ; if R2 == 2 then PC := 83
  34 [-]: JMP       83           ; PC := 83
- 35 [-]: SELF      R3 R0 K15    ; R4 := R0; R3 := R0["0xF3340665"]
- 36 [-]: GETGLOBAL R5 K16       ; R5 := Engine
+ 35 [-]: SELF      R3 R0 K16    ; R4 := R0; R3 := R0["0xF3340665"]
+ 36 [-]: GETGLOBAL R5 K9        ; R5 := Engine
  37 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["PM_STUN"]
  38 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
  39 [-]: TEST      R3 1         ; if R3 then PC := 83
@@ -575,8 +575,8 @@ code size: 57
  56 [-]: SELF      R3 R3 K6     ; R4 := R3; R3 := R3["0x3B1B11B9"]
  57 [-]: GETGLOBAL R5 K7        ; R5 := Game
  58 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["WEAPON_PARRY_EFFECTIVENESS"]
- 59 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 60 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["SET"]
+ 59 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 60 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["SET"]
  61 [-]: LOADK     R7 K4        ; R7 := 0
  62 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  63 [-]: JMP       83           ; PC := 83
@@ -595,14 +595,14 @@ code size: 57
  76 [-]: SELF      R3 R3 K22    ; R4 := R3; R3 := R3["0xF21555A7"]
  77 [-]: GETGLOBAL R5 K7        ; R5 := Game
  78 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["WEAPON_PARRY_EFFECTIVENESS"]
- 79 [-]: GETGLOBAL R6 K7        ; R6 := Game
- 80 [-]: GETTABLE  R6 R6 K9     ; R6 := R6["SET"]
+ 79 [-]: GETGLOBAL R6 K9        ; R6 := Engine
+ 80 [-]: GETTABLE  R6 R6 K10    ; R6 := R6["SET"]
  81 [-]: LOADK     R7 K4        ; R7 := 0
  82 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
  83 [-]: SELF      R3 R0 K23    ; R4 := R0; R3 := R0["0xA3F6069B"]
  84 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  85 [-]: SELF      R4 R3 K24    ; R5 := R3; R4 := R3["0xAF4CC141"]
- 86 [-]: GETGLOBAL R6 K16       ; R6 := Engine
+ 86 [-]: GETGLOBAL R6 K9        ; R6 := Engine
  87 [-]: GETTABLE  R6 R6 K25    ; R6 := R6["STUN"]
  88 [-]: CALL      R4 3 2       ; R4 := R4(R5,R6)
  89 [-]: SELF      R5 R3 K26    ; R6 := R3; R5 := R3["0xA1A15ED3"]
@@ -612,7 +612,7 @@ code size: 57
  93 [-]: TEST      R4 0         ; if not R4 then PC := 108
  94 [-]: JMP       108          ; PC := 108
  95 [-]: SELF      R5 R3 K27    ; R6 := R3; R5 := R3["0x80788195"]
- 96 [-]: GETGLOBAL R7 K16       ; R7 := Engine
+ 96 [-]: GETGLOBAL R7 K9        ; R7 := Engine
  97 [-]: GETTABLE  R7 R7 K25    ; R7 := R7["STUN"]
  98 [-]: GETUPVAL  R8 U1        ; R8 := U1
  99 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
@@ -620,7 +620,7 @@ code size: 57
 101 [-]: TEST      R4 1         ; if R4 then PC := 108
 102 [-]: JMP       108          ; PC := 108
 103 [-]: SELF      R5 R3 K28    ; R6 := R3; R5 := R3["0x64728A2A"]
-104 [-]: GETGLOBAL R7 K16       ; R7 := Engine
+104 [-]: GETGLOBAL R7 K9        ; R7 := Engine
 105 [-]: GETTABLE  R7 R7 K25    ; R7 := R7["STUN"]
 106 [-]: GETUPVAL  R8 U1        ; R8 := U1
 107 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
