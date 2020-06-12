@@ -5,7 +5,7 @@ code size: 36
 code size: 12
 code size: 59
 code size: 58
-code size: 331
+code size: 334
 code size: 34
 code size: 62
 code size: 54
@@ -413,8 +413,8 @@ code size: 110
  17 [-]: GETUPVAL  R3 U1        ; R3 := U1
  18 [-]: MOVE      R4 R1        ; R4 := R1
  19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 20 [-]: LT        0 K6 R2      ; if 90 >= R2 then PC := 331
- 21 [-]: JMP       331          ; PC := 331
+ 20 [-]: LT        0 K6 R2      ; if 90 >= R2 then PC := 334
+ 21 [-]: JMP       334          ; PC := 334
  22 [-]: MOVE      R1 R1        ; R1 := R1
  23 [-]: GETUPVAL  R2 U2        ; R2 := U2
  24 [-]: TEST      R2 0         ; if not R2 then PC := 30
@@ -448,17 +448,17 @@ code size: 110
  52 [-]: LOADK     R5 K18       ; R5 := 1
  53 [-]: LEN       R6 R4        ; R6 := # R4
  54 [-]: LOADK     R7 K18       ; R7 := 1
- 55 [-]: FORPREP   R5 296       ; R5 -= R7; PC := 296
+ 55 [-]: FORPREP   R5 299       ; R5 -= R7; PC := 299
  56 [-]: GETTABLE  R9 R4 R8     ; R9 := R4[R8]
  57 [-]: GETGLOBAL R10 K19      ; R10 := 0xECFDD17
  58 [-]: GETGLOBAL R11 K20      ; R11 := waterTags
  59 [-]: CALL      R10 2 4      ; R10,R11,R12 := R10(R11)
- 60 [-]: JMP       294          ; PC := 294
+ 60 [-]: JMP       297          ; PC := 297
  61 [-]: SELF      R15 R9 K21   ; R16 := R9; R15 := R9["0x3D6BC661"]
  62 [-]: MOVE      R17 R14      ; R17 := R14
  63 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
- 64 [-]: TEST      R15 0        ; if not R15 then PC := 294
- 65 [-]: JMP       294          ; PC := 294
+ 64 [-]: TEST      R15 0        ; if not R15 then PC := 297
+ 65 [-]: JMP       297          ; PC := 297
  66 [-]: GETGLOBAL R15 K1       ; R15 := _T
  67 [-]: GETTABLE  R15 R15 K2   ; R15 := R15["gFishing"]
  68 [-]: GETTABLE  R15 R15 K14  ; R15 := R15["waterInfo"]
@@ -498,8 +498,8 @@ code size: 110
 102 [-]: TFORLOOP  R18 2        ; R21,R22 :=  R18(R19,R20); if R21 ~= nil then begin PC = 79; R20 := R21 end
 103 [-]: JMP       79           ; PC := 79
 104 [-]: GETTABLE  R24 R3 K30   ; R24 := R3["deco"]
-105 [-]: EQ        1 R9 R24     ; if R9 == R24 then PC := 266
-106 [-]: JMP       266          ; PC := 266
+105 [-]: EQ        1 R9 R24     ; if R9 == R24 then PC := 269
+106 [-]: JMP       269          ; PC := 269
 107 [-]: SETTABLE  R3 K30 R9    ; R3["deco"] := R9
 108 [-]: LOADNIL   R24 R24      ; R24 := nil
 109 [-]: TEST      R15 0        ; if not R15 then PC := 115
@@ -587,150 +587,153 @@ code size: 110
 191 [-]: SELF      R27 R27 K36  ; R28 := R27; R27 := R27["0xD4C2743F"]
 192 [-]: CALL      R27 2 1      ; R27(R28)
 193 [-]: MOVE      R27 R24      ; R27 := R24
-194 [-]: MOVE      R28 R0       ; R28 := R0
-195 [-]: SELF      R29 R9 K41   ; R30 := R9; R29 := R9["0xEFE96608"]
-196 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-197 [-]: SELF      R30 R9 K42   ; R31 := R9; R30 := R9["0x3D6ED718"]
-198 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-199 [-]: SUB       R31 R30 R29  ; R31 := R30 - R29
-200 [-]: SETTABLE  R31 K39 K43  ; R31["y"] := 0.30000001192093
-201 [-]: GETTABLE  R32 R31 K44  ; R32 := R31["x"]
-202 [-]: GETUPVAL  R33 U6       ; R33 := U6
-203 [-]: LT        0 R33 R32    ; if R33 >= R32 then PC := 210
-204 [-]: JMP       210          ; PC := 210
-205 [-]: MOVE      R28 R1       ; R28 := R1
-206 [-]: GETUPVAL  R32 U6       ; R32 := U6
-207 [-]: SETTABLE  R31 K44 R32  ; R31["x"] := R32
-208 [-]: GETTABLE  R32 R1 K44   ; R32 := R1["x"]
-209 [-]: SETTABLE  R27 K44 R32  ; R27["x"] := R32
-210 [-]: GETTABLE  R32 R31 K45  ; R32 := R31["z"]
-211 [-]: GETUPVAL  R33 U6       ; R33 := U6
-212 [-]: LT        0 R33 R32    ; if R33 >= R32 then PC := 219
-213 [-]: JMP       219          ; PC := 219
-214 [-]: MOVE      R28 R1       ; R28 := R1
-215 [-]: GETUPVAL  R32 U6       ; R32 := U6
-216 [-]: SETTABLE  R31 K45 R32  ; R31["z"] := R32
-217 [-]: GETTABLE  R32 R1 K45   ; R32 := R1["z"]
-218 [-]: SETTABLE  R27 K45 R32  ; R27["z"] := R32
-219 [-]: TEST      R28 0        ; if not R28 then PC := 228
-220 [-]: JMP       228          ; PC := 228
-221 [-]: GETGLOBAL R32 K0       ; R32 := 0x400E7765
-222 [-]: MOVE      R33 R25      ; R33 := R25
-223 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-224 [-]: TEST      R32 0        ; if not R32 then PC := 228
-225 [-]: JMP       228          ; PC := 228
-226 [-]: SETTABLE  R3 K46 R27   ; R3["reducedTriggerPos"] := R27
-227 [-]: JMP       229          ; PC := 229
-228 [-]: SETTABLE  R3 K46 K23   ; R3["reducedTriggerPos"] := nil
-229 [-]: GETGLOBAL R32 K0       ; R32 := 0x400E7765
-230 [-]: MOVE      R33 R25      ; R33 := R25
-231 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-232 [-]: TEST      R32 0        ; if not R32 then PC := 258
-233 [-]: JMP       258          ; PC := 258
-234 [-]: GETGLOBAL R32 K1       ; R32 := _T
-235 [-]: GETTABLE  R32 R32 K2   ; R32 := R32["gFishing"]
-236 [-]: GETTABLE  R32 R32 K14  ; R32 := R32["waterInfo"]
-237 [-]: GETTABLE  R32 R32 K15  ; R32 := R32["surfaceDetection"]
-238 [-]: GETUPVAL  R33 U5       ; R33 := U5
-239 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
-240 [-]: GETGLOBAL R33 K9       ; R33 := gRegion
-241 [-]: SELF      R33 R33 K47  ; R34 := R33; R33 := R33["0xBDD34CC6"]
-242 [-]: GETGLOBAL R35 K48      ; R35 := fishingWaterTriggerType
-243 [-]: MOVE      R36 R27      ; R36 := R27
-244 [-]: GETGLOBAL R37 K49      ; R37 := ZERO_ROTATION
-245 [-]: CALL      R33 5 2      ; R33 := R33(R34,R35,R36,R37)
-246 [-]: SETTABLE  R32 K40 R33  ; R32["trigger"] := R33
-247 [-]: GETGLOBAL R32 K1       ; R32 := _T
-248 [-]: GETTABLE  R32 R32 K2   ; R32 := R32["gFishing"]
-249 [-]: GETTABLE  R32 R32 K14  ; R32 := R32["waterInfo"]
-250 [-]: GETTABLE  R32 R32 K15  ; R32 := R32["surfaceDetection"]
-251 [-]: GETUPVAL  R33 U5       ; R33 := U5
-252 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
-253 [-]: GETTABLE  R32 R32 K40  ; R32 := R32["trigger"]
-254 [-]: SELF      R32 R32 K50  ; R33 := R32; R32 := R32["0xAFFF6D6"]
-255 [-]: MOVE      R34 R31      ; R34 := R31
-256 [-]: CALL      R32 3 1      ; R32(R33,R34)
-257 [-]: JMP       293          ; PC := 293
-258 [-]: GETGLOBAL R32 K1       ; R32 := _T
-259 [-]: GETTABLE  R32 R32 K2   ; R32 := R32["gFishing"]
-260 [-]: GETTABLE  R32 R32 K14  ; R32 := R32["waterInfo"]
-261 [-]: GETTABLE  R32 R32 K15  ; R32 := R32["surfaceDetection"]
-262 [-]: GETUPVAL  R33 U5       ; R33 := U5
-263 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
-264 [-]: SETTABLE  R32 K51 R25  ; R32["spline"] := R25
-265 [-]: JMP       293          ; PC := 293
-266 [-]: GETGLOBAL R32 K0       ; R32 := 0x400E7765
-267 [-]: GETTABLE  R33 R3 K40   ; R33 := R3["trigger"]
-268 [-]: CALL      R32 2 2      ; R32 := R32(R33)
-269 [-]: TEST      R32 1        ; if R32 then PC := 293
-270 [-]: JMP       293          ; PC := 293
-271 [-]: GETTABLE  R32 R3 K46   ; R32 := R3["reducedTriggerPos"]
-272 [-]: EQ        1 R32 K23    ; if R32 == nil then PC := 293
-273 [-]: JMP       293          ; PC := 293
-274 [-]: GETGLOBAL R32 K5       ; R32 := 0x9CE7F413
-275 [-]: GETTABLE  R33 R3 K46   ; R33 := R3["reducedTriggerPos"]
-276 [-]: MOVE      R34 R1       ; R34 := R1
-277 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
-278 [-]: GETUPVAL  R33 U6       ; R33 := U6
-279 [-]: GETUPVAL  R34 U6       ; R34 := U6
-280 [-]: MUL       R33 R33 R34  ; R33 := R33 * R34
-281 [-]: MUL       R33 R33 K52  ; R33 := R33 * 0.15999999642372
-282 [-]: LT        0 R33 R32    ; if R33 >= R32 then PC := 293
-283 [-]: JMP       293          ; PC := 293
-284 [-]: GETTABLE  R32 R3 K46   ; R32 := R3["reducedTriggerPos"]
-285 [-]: GETTABLE  R33 R1 K44   ; R33 := R1["x"]
-286 [-]: SETTABLE  R32 K44 R33  ; R32["x"] := R33
-287 [-]: GETTABLE  R33 R1 K45   ; R33 := R1["z"]
-288 [-]: SETTABLE  R32 K45 R33  ; R32["z"] := R33
-289 [-]: GETTABLE  R33 R3 K40   ; R33 := R3["trigger"]
-290 [-]: SELF      R33 R33 K53  ; R34 := R33; R33 := R33["0xEC183DDC"]
-291 [-]: MOVE      R35 R32      ; R35 := R32
-292 [-]: CALL      R33 3 1      ; R33(R34,R35)
-293 [-]: RETURN    R0 1         ; return 
-294 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 61; R12 := R13 end
-295 [-]: JMP       61           ; PC := 61
-296 [-]: FORLOOP   R5 56        ; R5 += R7; if R5 <= R6 then begin PC := 56; R8 := R5 end
-297 [-]: GETGLOBAL R33 K1       ; R33 := _T
-298 [-]: GETTABLE  R33 R33 K2   ; R33 := R33["gFishing"]
-299 [-]: GETTABLE  R33 R33 K14  ; R33 := R33["waterInfo"]
-300 [-]: GETTABLE  R33 R33 K15  ; R33 := R33["surfaceDetection"]
-301 [-]: GETUPVAL  R34 U5       ; R34 := U5
-302 [-]: GETTABLE  R33 R33 R34  ; R33 := R33[R34]
-303 [-]: SETTABLE  R33 K30 K23  ; R33["deco"] := nil
-304 [-]: GETUPVAL  R33 U2       ; R33 := U2
-305 [-]: TEST      R33 0        ; if not R33 then PC := 311
-306 [-]: JMP       311          ; PC := 311
-307 [-]: GETGLOBAL R33 K1       ; R33 := _T
-308 [-]: GETTABLE  R33 R33 K2   ; R33 := R33["gFishing"]
-309 [-]: GETTABLE  R33 R33 K14  ; R33 := R33["waterInfo"]
-310 [-]: SETTABLE  R33 K22 K23  ; R33["spawnHintPos"] := nil
-311 [-]: GETGLOBAL R33 K0       ; R33 := 0x400E7765
-312 [-]: GETGLOBAL R34 K1       ; R34 := _T
-313 [-]: GETTABLE  R34 R34 K2   ; R34 := R34["gFishing"]
-314 [-]: GETTABLE  R34 R34 K14  ; R34 := R34["waterInfo"]
-315 [-]: GETTABLE  R34 R34 K15  ; R34 := R34["surfaceDetection"]
-316 [-]: GETUPVAL  R35 U5       ; R35 := U5
-317 [-]: GETTABLE  R34 R34 R35  ; R34 := R34[R35]
-318 [-]: GETTABLE  R34 R34 K40  ; R34 := R34["trigger"]
-319 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-320 [-]: TEST      R33 1        ; if R33 then PC := 331
-321 [-]: JMP       331          ; PC := 331
-322 [-]: GETGLOBAL R33 K1       ; R33 := _T
-323 [-]: GETTABLE  R33 R33 K2   ; R33 := R33["gFishing"]
-324 [-]: GETTABLE  R33 R33 K14  ; R33 := R33["waterInfo"]
-325 [-]: GETTABLE  R33 R33 K15  ; R33 := R33["surfaceDetection"]
-326 [-]: GETUPVAL  R34 U5       ; R34 := U5
-327 [-]: GETTABLE  R33 R33 R34  ; R33 := R33[R34]
-328 [-]: GETTABLE  R33 R33 K40  ; R33 := R33["trigger"]
-329 [-]: SELF      R33 R33 K36  ; R34 := R33; R33 := R33["0xD4C2743F"]
-330 [-]: CALL      R33 2 1      ; R33(R34)
-331 [-]: RETURN    R0 1         ; return 
+194 [-]: GETTABLE  R28 R27 K39  ; R28 := R27["y"]
+195 [-]: SUB       R28 R28 K41  ; R28 := R28 - 0.10000000149012
+196 [-]: SETTABLE  R27 K39 R28  ; R27["y"] := R28
+197 [-]: MOVE      R28 R0       ; R28 := R0
+198 [-]: SELF      R29 R9 K42   ; R30 := R9; R29 := R9["0xEFE96608"]
+199 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+200 [-]: SELF      R30 R9 K43   ; R31 := R9; R30 := R9["0x3D6ED718"]
+201 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+202 [-]: SUB       R31 R30 R29  ; R31 := R30 - R29
+203 [-]: SETTABLE  R31 K39 K44  ; R31["y"] := 0.40000000596046
+204 [-]: GETTABLE  R32 R31 K45  ; R32 := R31["x"]
+205 [-]: GETUPVAL  R33 U6       ; R33 := U6
+206 [-]: LT        0 R33 R32    ; if R33 >= R32 then PC := 213
+207 [-]: JMP       213          ; PC := 213
+208 [-]: MOVE      R28 R1       ; R28 := R1
+209 [-]: GETUPVAL  R32 U6       ; R32 := U6
+210 [-]: SETTABLE  R31 K45 R32  ; R31["x"] := R32
+211 [-]: GETTABLE  R32 R1 K45   ; R32 := R1["x"]
+212 [-]: SETTABLE  R27 K45 R32  ; R27["x"] := R32
+213 [-]: GETTABLE  R32 R31 K46  ; R32 := R31["z"]
+214 [-]: GETUPVAL  R33 U6       ; R33 := U6
+215 [-]: LT        0 R33 R32    ; if R33 >= R32 then PC := 222
+216 [-]: JMP       222          ; PC := 222
+217 [-]: MOVE      R28 R1       ; R28 := R1
+218 [-]: GETUPVAL  R32 U6       ; R32 := U6
+219 [-]: SETTABLE  R31 K46 R32  ; R31["z"] := R32
+220 [-]: GETTABLE  R32 R1 K46   ; R32 := R1["z"]
+221 [-]: SETTABLE  R27 K46 R32  ; R27["z"] := R32
+222 [-]: TEST      R28 0        ; if not R28 then PC := 231
+223 [-]: JMP       231          ; PC := 231
+224 [-]: GETGLOBAL R32 K0       ; R32 := 0x400E7765
+225 [-]: MOVE      R33 R25      ; R33 := R25
+226 [-]: CALL      R32 2 2      ; R32 := R32(R33)
+227 [-]: TEST      R32 0        ; if not R32 then PC := 231
+228 [-]: JMP       231          ; PC := 231
+229 [-]: SETTABLE  R3 K47 R27   ; R3["reducedTriggerPos"] := R27
+230 [-]: JMP       232          ; PC := 232
+231 [-]: SETTABLE  R3 K47 K23   ; R3["reducedTriggerPos"] := nil
+232 [-]: GETGLOBAL R32 K0       ; R32 := 0x400E7765
+233 [-]: MOVE      R33 R25      ; R33 := R25
+234 [-]: CALL      R32 2 2      ; R32 := R32(R33)
+235 [-]: TEST      R32 0        ; if not R32 then PC := 261
+236 [-]: JMP       261          ; PC := 261
+237 [-]: GETGLOBAL R32 K1       ; R32 := _T
+238 [-]: GETTABLE  R32 R32 K2   ; R32 := R32["gFishing"]
+239 [-]: GETTABLE  R32 R32 K14  ; R32 := R32["waterInfo"]
+240 [-]: GETTABLE  R32 R32 K15  ; R32 := R32["surfaceDetection"]
+241 [-]: GETUPVAL  R33 U5       ; R33 := U5
+242 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
+243 [-]: GETGLOBAL R33 K9       ; R33 := gRegion
+244 [-]: SELF      R33 R33 K48  ; R34 := R33; R33 := R33["0xBDD34CC6"]
+245 [-]: GETGLOBAL R35 K49      ; R35 := fishingWaterTriggerType
+246 [-]: MOVE      R36 R27      ; R36 := R27
+247 [-]: GETGLOBAL R37 K50      ; R37 := ZERO_ROTATION
+248 [-]: CALL      R33 5 2      ; R33 := R33(R34,R35,R36,R37)
+249 [-]: SETTABLE  R32 K40 R33  ; R32["trigger"] := R33
+250 [-]: GETGLOBAL R32 K1       ; R32 := _T
+251 [-]: GETTABLE  R32 R32 K2   ; R32 := R32["gFishing"]
+252 [-]: GETTABLE  R32 R32 K14  ; R32 := R32["waterInfo"]
+253 [-]: GETTABLE  R32 R32 K15  ; R32 := R32["surfaceDetection"]
+254 [-]: GETUPVAL  R33 U5       ; R33 := U5
+255 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
+256 [-]: GETTABLE  R32 R32 K40  ; R32 := R32["trigger"]
+257 [-]: SELF      R32 R32 K51  ; R33 := R32; R32 := R32["0xAFFF6D6"]
+258 [-]: MOVE      R34 R31      ; R34 := R31
+259 [-]: CALL      R32 3 1      ; R32(R33,R34)
+260 [-]: JMP       296          ; PC := 296
+261 [-]: GETGLOBAL R32 K1       ; R32 := _T
+262 [-]: GETTABLE  R32 R32 K2   ; R32 := R32["gFishing"]
+263 [-]: GETTABLE  R32 R32 K14  ; R32 := R32["waterInfo"]
+264 [-]: GETTABLE  R32 R32 K15  ; R32 := R32["surfaceDetection"]
+265 [-]: GETUPVAL  R33 U5       ; R33 := U5
+266 [-]: GETTABLE  R32 R32 R33  ; R32 := R32[R33]
+267 [-]: SETTABLE  R32 K52 R25  ; R32["spline"] := R25
+268 [-]: JMP       296          ; PC := 296
+269 [-]: GETGLOBAL R32 K0       ; R32 := 0x400E7765
+270 [-]: GETTABLE  R33 R3 K40   ; R33 := R3["trigger"]
+271 [-]: CALL      R32 2 2      ; R32 := R32(R33)
+272 [-]: TEST      R32 1        ; if R32 then PC := 296
+273 [-]: JMP       296          ; PC := 296
+274 [-]: GETTABLE  R32 R3 K47   ; R32 := R3["reducedTriggerPos"]
+275 [-]: EQ        1 R32 K23    ; if R32 == nil then PC := 296
+276 [-]: JMP       296          ; PC := 296
+277 [-]: GETGLOBAL R32 K5       ; R32 := 0x9CE7F413
+278 [-]: GETTABLE  R33 R3 K47   ; R33 := R3["reducedTriggerPos"]
+279 [-]: MOVE      R34 R1       ; R34 := R1
+280 [-]: CALL      R32 3 2      ; R32 := R32(R33,R34)
+281 [-]: GETUPVAL  R33 U6       ; R33 := U6
+282 [-]: GETUPVAL  R34 U6       ; R34 := U6
+283 [-]: MUL       R33 R33 R34  ; R33 := R33 * R34
+284 [-]: MUL       R33 R33 K53  ; R33 := R33 * 0.15999999642372
+285 [-]: LT        0 R33 R32    ; if R33 >= R32 then PC := 296
+286 [-]: JMP       296          ; PC := 296
+287 [-]: GETTABLE  R32 R3 K47   ; R32 := R3["reducedTriggerPos"]
+288 [-]: GETTABLE  R33 R1 K45   ; R33 := R1["x"]
+289 [-]: SETTABLE  R32 K45 R33  ; R32["x"] := R33
+290 [-]: GETTABLE  R33 R1 K46   ; R33 := R1["z"]
+291 [-]: SETTABLE  R32 K46 R33  ; R32["z"] := R33
+292 [-]: GETTABLE  R33 R3 K40   ; R33 := R3["trigger"]
+293 [-]: SELF      R33 R33 K54  ; R34 := R33; R33 := R33["0xEC183DDC"]
+294 [-]: MOVE      R35 R32      ; R35 := R32
+295 [-]: CALL      R33 3 1      ; R33(R34,R35)
+296 [-]: RETURN    R0 1         ; return 
+297 [-]: TFORLOOP  R10 2        ; R13,R14 :=  R10(R11,R12); if R13 ~= nil then begin PC = 61; R12 := R13 end
+298 [-]: JMP       61           ; PC := 61
+299 [-]: FORLOOP   R5 56        ; R5 += R7; if R5 <= R6 then begin PC := 56; R8 := R5 end
+300 [-]: GETGLOBAL R33 K1       ; R33 := _T
+301 [-]: GETTABLE  R33 R33 K2   ; R33 := R33["gFishing"]
+302 [-]: GETTABLE  R33 R33 K14  ; R33 := R33["waterInfo"]
+303 [-]: GETTABLE  R33 R33 K15  ; R33 := R33["surfaceDetection"]
+304 [-]: GETUPVAL  R34 U5       ; R34 := U5
+305 [-]: GETTABLE  R33 R33 R34  ; R33 := R33[R34]
+306 [-]: SETTABLE  R33 K30 K23  ; R33["deco"] := nil
+307 [-]: GETUPVAL  R33 U2       ; R33 := U2
+308 [-]: TEST      R33 0        ; if not R33 then PC := 314
+309 [-]: JMP       314          ; PC := 314
+310 [-]: GETGLOBAL R33 K1       ; R33 := _T
+311 [-]: GETTABLE  R33 R33 K2   ; R33 := R33["gFishing"]
+312 [-]: GETTABLE  R33 R33 K14  ; R33 := R33["waterInfo"]
+313 [-]: SETTABLE  R33 K22 K23  ; R33["spawnHintPos"] := nil
+314 [-]: GETGLOBAL R33 K0       ; R33 := 0x400E7765
+315 [-]: GETGLOBAL R34 K1       ; R34 := _T
+316 [-]: GETTABLE  R34 R34 K2   ; R34 := R34["gFishing"]
+317 [-]: GETTABLE  R34 R34 K14  ; R34 := R34["waterInfo"]
+318 [-]: GETTABLE  R34 R34 K15  ; R34 := R34["surfaceDetection"]
+319 [-]: GETUPVAL  R35 U5       ; R35 := U5
+320 [-]: GETTABLE  R34 R34 R35  ; R34 := R34[R35]
+321 [-]: GETTABLE  R34 R34 K40  ; R34 := R34["trigger"]
+322 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+323 [-]: TEST      R33 1        ; if R33 then PC := 334
+324 [-]: JMP       334          ; PC := 334
+325 [-]: GETGLOBAL R33 K1       ; R33 := _T
+326 [-]: GETTABLE  R33 R33 K2   ; R33 := R33["gFishing"]
+327 [-]: GETTABLE  R33 R33 K14  ; R33 := R33["waterInfo"]
+328 [-]: GETTABLE  R33 R33 K15  ; R33 := R33["surfaceDetection"]
+329 [-]: GETUPVAL  R34 U5       ; R34 := U5
+330 [-]: GETTABLE  R33 R33 R34  ; R33 := R33[R34]
+331 [-]: GETTABLE  R33 R33 K40  ; R33 := R33["trigger"]
+332 [-]: SELF      R33 R33 K36  ; R34 := R33; R33 := R33["0xD4C2743F"]
+333 [-]: CALL      R33 2 1      ; R33(R34)
+334 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 290
+; Defined at line: 291
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -775,7 +778,7 @@ code size: 110
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 302
+; Defined at line: 303
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -848,7 +851,7 @@ code size: 110
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 329
+; Defined at line: 330
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -913,7 +916,7 @@ code size: 110
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 341
+; Defined at line: 342
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -941,7 +944,7 @@ code size: 110
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 352
+; Defined at line: 353
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -976,7 +979,7 @@ code size: 110
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 364
+; Defined at line: 365
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1004,7 +1007,7 @@ code size: 110
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 369
+; Defined at line: 370
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1047,7 +1050,7 @@ code size: 110
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 383
+; Defined at line: 384
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1084,7 +1087,7 @@ code size: 110
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 392
+; Defined at line: 393
 ; #Upvalues:       23
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1734,7 +1737,7 @@ code size: 110
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 662
+; Defined at line: 663
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1825,7 +1828,7 @@ code size: 110
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 697
+; Defined at line: 698
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

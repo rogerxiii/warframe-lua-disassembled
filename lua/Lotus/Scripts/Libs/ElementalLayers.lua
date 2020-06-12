@@ -2090,7 +2090,7 @@ code size: 354
 103 [-]: CALL      R18 0 2      ; R18 := R18(R19,...)
 104 [-]: GETUPVAL  R19 U1       ; R19 := U1
 105 [-]: GETGLOBAL R20 K8       ; R20 := 0xEC274B1A
-106 [-]: LOADK     R21 K27      ; R21 := "ScreenDeco"
+106 [-]: LOADK     R21 K27      ; R21 := "CorpusHoloSign"
 107 [-]: CALL      R20 2 0      ; R20,... := R20(R21)
 108 [-]: CALL      R19 0 2      ; R19 := R19(R20,...)
 109 [-]: GETGLOBAL R20 K0       ; R20 := gRegion
@@ -2805,7 +2805,7 @@ code size: 354
  98 [-]: CALL      R17 0 2      ; R17 := R17(R18,...)
  99 [-]: GETUPVAL  R18 U1       ; R18 := U1
 100 [-]: GETGLOBAL R19 K8       ; R19 := 0xEC274B1A
-101 [-]: LOADK     R20 K26      ; R20 := "ScreenDeco"
+101 [-]: LOADK     R20 K26      ; R20 := "CorpusHoloSign"
 102 [-]: CALL      R19 2 0      ; R19,... := R19(R20)
 103 [-]: CALL      R18 0 2      ; R18 := R18(R19,...)
 104 [-]: GETGLOBAL R19 K2       ; R19 := 0x400E7765

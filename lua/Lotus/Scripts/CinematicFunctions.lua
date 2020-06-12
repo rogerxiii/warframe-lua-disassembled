@@ -37,7 +37,7 @@ code size: 38
 code size: 30
 code size: 106
 code size: 14
-code size: 92
+code size: 117
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\CinematicFunctions.luac 
 
@@ -2080,51 +2080,76 @@ code size: 92
  44 [-]: LOADK     R5 K12       ; R5 := 0
  45 [-]: CALL      R4 2 1       ; R4(R5)
  46 [-]: JMP       39           ; PC := 39
- 47 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
- 48 [-]: SELF      R5 R1 K16    ; R6 := R1; R5 := R1["0x63D63C30"]
- 49 [-]: GETGLOBAL R7 K4        ; R7 := Engine
- 50 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["SLOT_2"]
- 51 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
- 52 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 53 [-]: TEST      R4 1         ; if R4 then PC := 64
- 54 [-]: JMP       64           ; PC := 64
- 55 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1["0x290DDD35"]
- 56 [-]: GETGLOBAL R6 K4        ; R6 := Engine
- 57 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["SLOT_2"]
- 58 [-]: GETGLOBAL R7 K4        ; R7 := Engine
- 59 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["MAIN_HAND"]
- 60 [-]: GETGLOBAL R8 K4        ; R8 := Engine
- 61 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
- 62 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 63 [-]: JMP       89           ; PC := 89
+ 47 [-]: GETGLOBAL R4 K0        ; R4 := gRegion
+ 48 [-]: SELF      R4 R4 K1     ; R5 := R4; R4 := R4["0x3E2F6BF"]
+ 49 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 50 [-]: MOVE      R0 R4        ; R0 := R4
+ 51 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
+ 52 [-]: MOVE      R5 R0        ; R5 := R0
+ 53 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 54 [-]: TEST      R4 1         ; if R4 then PC := 59
+ 55 [-]: JMP       59           ; PC := 59
+ 56 [-]: SELF      R4 R0 K2     ; R5 := R0; R4 := R0["0x8DB5D01F"]
+ 57 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 58 [-]: MOVE      R1 R4        ; R1 := R4
+ 59 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
+ 60 [-]: MOVE      R5 R1        ; R5 := R1
+ 61 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 62 [-]: TEST      R4 1         ; if R4 then PC := 117
+ 63 [-]: JMP       117          ; PC := 117
  64 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
  65 [-]: SELF      R5 R1 K16    ; R6 := R1; R5 := R1["0x63D63C30"]
  66 [-]: GETGLOBAL R7 K4        ; R7 := Engine
- 67 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["SLOT_1"]
+ 67 [-]: GETTABLE  R7 R7 K17    ; R7 := R7["SLOT_2"]
  68 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
  69 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
  70 [-]: TEST      R4 1         ; if R4 then PC := 81
  71 [-]: JMP       81           ; PC := 81
  72 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1["0x290DDD35"]
  73 [-]: GETGLOBAL R6 K4        ; R6 := Engine
- 74 [-]: GETTABLE  R6 R6 K20    ; R6 := R6["SLOT_1"]
+ 74 [-]: GETTABLE  R6 R6 K17    ; R6 := R6["SLOT_2"]
  75 [-]: GETGLOBAL R7 K4        ; R7 := Engine
  76 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["MAIN_HAND"]
  77 [-]: GETGLOBAL R8 K4        ; R8 := Engine
  78 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
  79 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 80 [-]: JMP       89           ; PC := 89
- 81 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1["0x290DDD35"]
- 82 [-]: GETGLOBAL R6 K4        ; R6 := Engine
- 83 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["SLOT_6"]
- 84 [-]: GETGLOBAL R7 K4        ; R7 := Engine
- 85 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["MAIN_HAND"]
- 86 [-]: GETGLOBAL R8 K4        ; R8 := Engine
- 87 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
- 88 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
- 89 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2["0xCE9C675D"]
- 90 [-]: MOVE      R6 R0        ; R6 := R0
- 91 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 92 [-]: RETURN    R0 1         ; return 
+ 80 [-]: JMP       106          ; PC := 106
+ 81 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
+ 82 [-]: SELF      R5 R1 K16    ; R6 := R1; R5 := R1["0x63D63C30"]
+ 83 [-]: GETGLOBAL R7 K4        ; R7 := Engine
+ 84 [-]: GETTABLE  R7 R7 K20    ; R7 := R7["SLOT_1"]
+ 85 [-]: CALL      R5 3 0       ; R5,... := R5(R6,R7)
+ 86 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+ 87 [-]: TEST      R4 1         ; if R4 then PC := 98
+ 88 [-]: JMP       98           ; PC := 98
+ 89 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1["0x290DDD35"]
+ 90 [-]: GETGLOBAL R6 K4        ; R6 := Engine
+ 91 [-]: GETTABLE  R6 R6 K20    ; R6 := R6["SLOT_1"]
+ 92 [-]: GETGLOBAL R7 K4        ; R7 := Engine
+ 93 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["MAIN_HAND"]
+ 94 [-]: GETGLOBAL R8 K4        ; R8 := Engine
+ 95 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
+ 96 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+ 97 [-]: JMP       106          ; PC := 106
+ 98 [-]: SELF      R4 R1 K18    ; R5 := R1; R4 := R1["0x290DDD35"]
+ 99 [-]: GETGLOBAL R6 K4        ; R6 := Engine
+100 [-]: GETTABLE  R6 R6 K21    ; R6 := R6["SLOT_6"]
+101 [-]: GETGLOBAL R7 K4        ; R7 := Engine
+102 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["MAIN_HAND"]
+103 [-]: GETGLOBAL R8 K4        ; R8 := Engine
+104 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["InventoryControllerBase_ES_PLAY_EQUIP_ANIM"]
+105 [-]: CALL      R4 5 1       ; R4(R5,R6,R7,R8)
+106 [-]: SELF      R4 R1 K8     ; R5 := R1; R4 := R1["0x6978AC59"]
+107 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+108 [-]: MOVE      R2 R4        ; R2 := R4
+109 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
+110 [-]: MOVE      R5 R2        ; R5 := R2
+111 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+112 [-]: TEST      R4 1         ; if R4 then PC := 117
+113 [-]: JMP       117          ; PC := 117
+114 [-]: SELF      R4 R2 K9     ; R5 := R2; R4 := R2["0xCE9C675D"]
+115 [-]: MOVE      R6 R0        ; R6 := R0
+116 [-]: CALL      R4 3 1       ; R4(R5,R6)
+117 [-]: RETURN    R0 1         ; return 
 
 

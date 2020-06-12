@@ -786,8 +786,8 @@ code size: 530
 310 [-]: GETGLOBAL R29 K3       ; R29 := 0x400E7765
 311 [-]: MOVE      R30 R15      ; R30 := R15
 312 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-313 [-]: TEST      R29 1        ; if R29 then PC := 331
-314 [-]: JMP       331          ; PC := 331
+313 [-]: TEST      R29 1        ; if R29 then PC := 339
+314 [-]: JMP       339          ; PC := 339
 315 [-]: SELF      R29 R15 K68  ; R30 := R15; R29 := R15["0xEC183DDC"]
 316 [-]: MOVE      R31 R20      ; R31 := R20
 317 [-]: CALL      R29 3 1      ; R29(R30,R31)
@@ -850,7 +850,7 @@ code size: 530
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 250
+; Defined at line: 249
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -893,7 +893,7 @@ code size: 530
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 273
+; Defined at line: 272
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -945,7 +945,7 @@ code size: 530
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 287
+; Defined at line: 286
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1027,7 +1027,7 @@ code size: 530
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 309
+; Defined at line: 308
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1577,7 +1577,7 @@ code size: 530
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 481
+; Defined at line: 480
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1613,7 +1613,7 @@ code size: 530
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 492
+; Defined at line: 491
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1786,7 +1786,7 @@ code size: 530
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 558
+; Defined at line: 557
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1861,7 +1861,7 @@ code size: 530
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 579
+; Defined at line: 578
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1954,7 +1954,7 @@ code size: 530
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 600
+; Defined at line: 599
 ; #Upvalues:       16
 ; #Parameters:     1
 ; Is_vararg:       0

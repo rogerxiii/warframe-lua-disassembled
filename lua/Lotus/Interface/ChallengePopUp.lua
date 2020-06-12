@@ -20,7 +20,7 @@ code size: 6
 code size: 161
 code size: 33
 code size: 27
-code size: 43
+code size: 51
 code size: 3
 code size: 11
 code size: 3
@@ -1529,11 +1529,11 @@ code size: 1
 ; Max Stack Size:  7
 
   1 [-]: GETUPVAL  R0 U0        ; R0 := U0
-  2 [-]: TEST      R0 0         ; if not R0 then PC := 43
-  3 [-]: JMP       43           ; PC := 43
+  2 [-]: TEST      R0 0         ; if not R0 then PC := 51
+  3 [-]: JMP       51           ; PC := 51
   4 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  5 [-]: TEST      R0 0         ; if not R0 then PC := 43
-  6 [-]: JMP       43           ; PC := 43
+  5 [-]: TEST      R0 0         ; if not R0 then PC := 51
+  6 [-]: JMP       51           ; PC := 51
   7 [-]: GETUPVAL  R0 U2        ; R0 := U2
   8 [-]: GETTABLE  R0 R0 K0     ; R0 := R0["0x69B983D"]
   9 [-]: GETGLOBAL R1 K1        ; R1 := mMovie
@@ -1564,13 +1564,21 @@ code size: 1
  34 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
  35 [-]: GETUPVAL  R5 U6        ; R5 := U6
  36 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 37 [-]: TEST      R4 1         ; if R4 then PC := 43
- 38 [-]: JMP       43           ; PC := 43
- 39 [-]: GETUPVAL  R4 U2        ; R4 := U2
- 40 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["0x36414212"]
- 41 [-]: GETUPVAL  R5 U6        ; R5 := U6
- 42 [-]: CALL      R4 2 1       ; R4(R5)
- 43 [-]: RETURN    R0 1         ; return 
+ 37 [-]: TEST      R4 1         ; if R4 then PC := 51
+ 38 [-]: JMP       51           ; PC := 51
+ 39 [-]: GETGLOBAL R4 K10       ; R4 := 0x400E7765
+ 40 [-]: GETGLOBAL R5 K11       ; R5 := gGameRules
+ 41 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0xB8637349"]
+ 42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 43 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["keyChainName"]
+ 44 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 45 [-]: TEST      R4 0         ; if not R4 then PC := 51
+ 46 [-]: JMP       51           ; PC := 51
+ 47 [-]: GETUPVAL  R4 U2        ; R4 := U2
+ 48 [-]: GETTABLE  R4 R4 K14    ; R4 := R4["0x36414212"]
+ 49 [-]: GETUPVAL  R5 U6        ; R5 := U6
+ 50 [-]: CALL      R4 2 1       ; R4(R5)
+ 51 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #18:

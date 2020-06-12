@@ -27,7 +27,7 @@ code size: 61
   1 [-]: GETGLOBAL R0 K0        ; R0 := 0xEC274B1A
   2 [-]: LOADK     R1 K1        ; R1 := "SecurityLevel"
   3 [-]: CALL      R0 2 2       ; R0 := R0(R1)
-  4 [-]: LOADK     R1 K2        ; R1 := 25
+  4 [-]: LOADK     R1 K2        ; R1 := 35
   5 [-]: CLOSURE   R2 0         ; R2 := closure(Function #1)
   6 [-]: SETGLOBAL R2 K3        ; OnLaserDoorPathingEnabled := R2
   7 [-]: SETGLOBAL R2 K4        ; 0xBB6E71F5 := R2

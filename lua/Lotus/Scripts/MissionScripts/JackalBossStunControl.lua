@@ -2,7 +2,7 @@ code size: 68
 code size: 137
 code size: 8
 code size: 286
-code size: 67
+code size: 71
 code size: 54
 code size: 58
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
@@ -593,8 +593,8 @@ code size: 58
  33 [-]: JMP       36           ; PC := 36
  34 [-]: MOVE      R4 R0        ; R4 := R0
  35 [-]: MOVE      R4 R1        ; R4 := R1
- 36 [-]: TEST      R4 0         ; if not R4 then PC := 44
- 37 [-]: JMP       44           ; PC := 44
+ 36 [-]: TEST      R4 0         ; if not R4 then PC := 71
+ 37 [-]: JMP       71           ; PC := 71
  38 [-]: SELF      R5 R1 K10    ; R6 := R1; R5 := R1["0x4E08D599"]
  39 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  40 [-]: TEST      R5 0         ; if not R5 then PC := 44
@@ -620,17 +620,21 @@ code size: 58
  60 [-]: CALL      R6 1 2       ; R6 := R6()
  61 [-]: SUB       R5 R5 R6     ; R5 := R5 - R6
  62 [-]: JMP       45           ; PC := 45
- 63 [-]: SELF      R6 R2 K14    ; R7 := R2; R6 := R2["0xE06F70BA"]
- 64 [-]: GETGLOBAL R8 K5        ; R8 := Engine
- 65 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["CROUCH"]
- 66 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 67 [-]: RETURN    R0 1         ; return 
+ 63 [-]: SELF      R6 R1 K9     ; R7 := R1; R6 := R1["0xF8FD58BD"]
+ 64 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 65 [-]: TEST      R6 0         ; if not R6 then PC := 71
+ 66 [-]: JMP       71           ; PC := 71
+ 67 [-]: SELF      R6 R2 K14    ; R7 := R2; R6 := R2["0xE06F70BA"]
+ 68 [-]: GETGLOBAL R8 K5        ; R8 := Engine
+ 69 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["CROUCH"]
+ 70 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 71 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 247
+; Defined at line: 250
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -695,7 +699,7 @@ code size: 58
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 272
+; Defined at line: 275
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

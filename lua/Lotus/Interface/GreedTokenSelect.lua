@@ -7,11 +7,11 @@ code size: 126
 code size: 25
 code size: 24
 code size: 23
-code size: 99
+code size: 113
 code size: 95
 code size: 141
 code size: 124
-code size: 21
+code size: 38
 code size: 4
 code size: 18
 code size: 12
@@ -83,8 +83,8 @@ code size: 3
  53 [-]: SETGLOBAL R16 K11      ; Initialize := R16
  54 [-]: SETGLOBAL R16 K12      ; 0x62648036 := R16
  55 [-]: CLOSURE   R16 6        ; R16 := closure(Function #7)
- 56 [-]: MOVE      R0 R9        ; R0 := R9
- 57 [-]: MOVE      R0 R11       ; R0 := R11
+ 56 [-]: MOVE      R0 R11       ; R0 := R11
+ 57 [-]: MOVE      R0 R9        ; R0 := R9
  58 [-]: SETGLOBAL R16 K13      ; Update := R16
  59 [-]: SETGLOBAL R16 K14      ; 0x8C7099E9 := R16
  60 [-]: CLOSURE   R11 7        ; R11 := closure(Function #8)
@@ -582,106 +582,120 @@ code size: 3
   3 [-]: JMP       5            ; PC := 5
   4 [-]: RETURN    R0 1         ; return 
   5 [-]: LOADNIL   R1 R1        ; R1 := nil
-  6 [-]: GETGLOBAL R2 K2        ; R2 := _T
-  7 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["GreedInfo"]
-  8 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["TokenConsumeActions"]
-  9 [-]: LEN       R2 R2        ; R2 := # R2
- 10 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["Id"]
- 11 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 18
- 12 [-]: JMP       18           ; PC := 18
- 13 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 14 [-]: GETTABLE  R2 R2 K3     ; R2 := R2["GreedInfo"]
- 15 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["TokenConsumeActions"]
- 16 [-]: GETTABLE  R3 R0 K5     ; R3 := R0["Id"]
- 17 [-]: GETTABLE  R1 R2 R3     ; R1 := R2[R3]
- 18 [-]: GETGLOBAL R2 K6        ; R2 := gRegion
- 19 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0x3E2F6BF"]
- 20 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 21 [-]: GETGLOBAL R3 K8        ; R3 := 0x400E7765
- 22 [-]: MOVE      R4 R1        ; R4 := R1
- 23 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 24 [-]: TEST      R3 1         ; if R3 then PC := 31
- 25 [-]: JMP       31           ; PC := 31
- 26 [-]: GETTABLE  R3 R0 K9     ; R3 := R0["Count"]
- 27 [-]: SELF      R4 R1 K10    ; R5 := R1; R4 := R1["0x5F879D5C"]
- 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 29 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 37
- 30 [-]: JMP       37           ; PC := 37
- 31 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 32 [-]: LOADK     R4 K11       ; R4 := "/Lotus/Language/SystemMessages/GreedTokenInsufficientFunds"
- 33 [-]: LOADK     R5 K12       ; R5 := 3
- 34 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 35 [-]: RETURN    R0 1         ; return 
- 36 [-]: JMP       47           ; PC := 47
- 37 [-]: SELF      R3 R1 K13    ; R4 := R1; R3 := R1["0xD3111D2D"]
- 38 [-]: MOVE      R5 R2        ; R5 := R2
- 39 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 40 [-]: TEST      R3 1         ; if R3 then PC := 47
- 41 [-]: JMP       47           ; PC := 47
- 42 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 43 [-]: LOADK     R4 K14       ; R4 := "/Lotus/Language/SystemMessages/GreedTokenSpentByOther"
- 44 [-]: LOADK     R5 K15       ; R5 := 5
- 45 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 46 [-]: RETURN    R0 1         ; return 
- 47 [-]: GETGLOBAL R3 K8        ; R3 := 0x400E7765
- 48 [-]: MOVE      R4 R2        ; R4 := R2
- 49 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 50 [-]: TEST      R3 1         ; if R3 then PC := 99
- 51 [-]: JMP       99           ; PC := 99
- 52 [-]: SELF      R3 R1 K16    ; R4 := R1; R3 := R1["0xB1627322"]
- 53 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 54 [-]: TEST      R3 0         ; if not R3 then PC := 66
- 55 [-]: JMP       66           ; PC := 66
- 56 [-]: GETGLOBAL R3 K2        ; R3 := _T
- 57 [-]: SETTABLE  R3 K17 R1    ; R3["GreedTokenPendingConsumeAction"] := R1
- 58 [-]: SELF      R3 R2 K18    ; R4 := R2; R3 := R2["0x25D68A52"]
- 59 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 60 [-]: SELF      R3 R3 K19    ; R4 := R3; R3 := R3["0xD0AC44CA"]
- 61 [-]: MOVE      R5 R1        ; R5 := R1
- 62 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 63 [-]: GETUPVAL  R3 U1        ; R3 := U1
- 64 [-]: CALL      R3 1 1       ; R3()
- 65 [-]: JMP       99           ; PC := 99
- 66 [-]: LOADK     R3 K20       ; R3 := 1
- 67 [-]: GETGLOBAL R4 K2        ; R4 := _T
- 68 [-]: GETTABLE  R4 R4 K3     ; R4 := R4["GreedInfo"]
- 69 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["TokenConsumeActions"]
- 70 [-]: LEN       R4 R4        ; R4 := # R4
- 71 [-]: LOADK     R5 K20       ; R5 := 1
- 72 [-]: FORPREP   R3 94        ; R3 -= R5; PC := 94
- 73 [-]: GETGLOBAL R7 K2        ; R7 := _T
- 74 [-]: GETTABLE  R7 R7 K3     ; R7 := R7["GreedInfo"]
- 75 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["TokenConsumeActions"]
- 76 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
- 77 [-]: GETGLOBAL R8 K8        ; R8 := 0x400E7765
- 78 [-]: MOVE      R9 R7        ; R9 := R7
- 79 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 80 [-]: TEST      R8 1         ; if R8 then PC := 94
- 81 [-]: JMP       94           ; PC := 94
- 82 [-]: SELF      R8 R7 K21    ; R9 := R7; R8 := R7["0xD43308CE"]
- 83 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 84 [-]: GETGLOBAL R9 K8        ; R9 := 0x400E7765
- 85 [-]: MOVE      R10 R8       ; R10 := R8
- 86 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 87 [-]: TEST      R9 1         ; if R9 then PC := 94
- 88 [-]: JMP       94           ; PC := 94
- 89 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 90 [-]: LOADK     R10 K14      ; R10 := "/Lotus/Language/SystemMessages/GreedTokenSpentByOther"
- 91 [-]: LOADK     R11 K15      ; R11 := 5
- 92 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 93 [-]: RETURN    R0 1         ; return 
- 94 [-]: FORLOOP   R3 73        ; R3 += R5; if R3 <= R4 then begin PC := 73; R6 := R3 end
- 95 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 96 [-]: LOADK     R10 K22      ; R10 := "/Lotus/Language/SystemMessages/GreedTokenPendingConsume"
- 97 [-]: LOADK     R11 K15      ; R11 := 5
- 98 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 99 [-]: RETURN    R0 1         ; return 
+  6 [-]: GETGLOBAL R2 K2        ; R2 := 0x400E7765
+  7 [-]: GETGLOBAL R3 K3        ; R3 := _T
+  8 [-]: GETTABLE  R3 R3 K4     ; R3 := R3["GreedInfo"]
+  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 10 [-]: TEST      R2 0         ; if not R2 then PC := 20
+ 11 [-]: JMP       20           ; PC := 20
+ 12 [-]: GETGLOBAL R2 K5        ; R2 := 0x93B1256B
+ 13 [-]: LOADK     R3 K6        ; R3 := "GreedTokenSelect: No data available on selection"
+ 14 [-]: CALL      R2 2 1       ; R2(R3)
+ 15 [-]: GETGLOBAL R2 K7        ; R2 := mMovie
+ 16 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0xA58BB96C"]
+ 17 [-]: CALL      R2 2 1       ; R2(R3)
+ 18 [-]: RETURN    R0 1         ; return 
+ 19 [-]: JMP       32           ; PC := 32
+ 20 [-]: GETGLOBAL R2 K3        ; R2 := _T
+ 21 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["GreedInfo"]
+ 22 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["TokenConsumeActions"]
+ 23 [-]: LEN       R2 R2        ; R2 := # R2
+ 24 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["Id"]
+ 25 [-]: LE        0 R3 R2      ; if R3 > R2 then PC := 32
+ 26 [-]: JMP       32           ; PC := 32
+ 27 [-]: GETGLOBAL R2 K3        ; R2 := _T
+ 28 [-]: GETTABLE  R2 R2 K4     ; R2 := R2["GreedInfo"]
+ 29 [-]: GETTABLE  R2 R2 K9     ; R2 := R2["TokenConsumeActions"]
+ 30 [-]: GETTABLE  R3 R0 K10    ; R3 := R0["Id"]
+ 31 [-]: GETTABLE  R1 R2 R3     ; R1 := R2[R3]
+ 32 [-]: GETGLOBAL R2 K11       ; R2 := gRegion
+ 33 [-]: SELF      R2 R2 K12    ; R3 := R2; R2 := R2["0x3E2F6BF"]
+ 34 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 35 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+ 36 [-]: MOVE      R4 R1        ; R4 := R1
+ 37 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 38 [-]: TEST      R3 1         ; if R3 then PC := 45
+ 39 [-]: JMP       45           ; PC := 45
+ 40 [-]: GETTABLE  R3 R0 K13    ; R3 := R0["Count"]
+ 41 [-]: SELF      R4 R1 K14    ; R5 := R1; R4 := R1["0x5F879D5C"]
+ 42 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 43 [-]: LT        0 R3 R4      ; if R3 >= R4 then PC := 51
+ 44 [-]: JMP       51           ; PC := 51
+ 45 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 46 [-]: LOADK     R4 K15       ; R4 := "/Lotus/Language/SystemMessages/GreedTokenInsufficientFunds"
+ 47 [-]: LOADK     R5 K16       ; R5 := 3
+ 48 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 49 [-]: RETURN    R0 1         ; return 
+ 50 [-]: JMP       61           ; PC := 61
+ 51 [-]: SELF      R3 R1 K17    ; R4 := R1; R3 := R1["0xD3111D2D"]
+ 52 [-]: MOVE      R5 R2        ; R5 := R2
+ 53 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 54 [-]: TEST      R3 1         ; if R3 then PC := 61
+ 55 [-]: JMP       61           ; PC := 61
+ 56 [-]: GETUPVAL  R3 U0        ; R3 := U0
+ 57 [-]: LOADK     R4 K18       ; R4 := "/Lotus/Language/SystemMessages/GreedTokenSpentByOther"
+ 58 [-]: LOADK     R5 K19       ; R5 := 5
+ 59 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 60 [-]: RETURN    R0 1         ; return 
+ 61 [-]: GETGLOBAL R3 K2        ; R3 := 0x400E7765
+ 62 [-]: MOVE      R4 R2        ; R4 := R2
+ 63 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 64 [-]: TEST      R3 1         ; if R3 then PC := 113
+ 65 [-]: JMP       113          ; PC := 113
+ 66 [-]: SELF      R3 R1 K20    ; R4 := R1; R3 := R1["0xB1627322"]
+ 67 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 68 [-]: TEST      R3 0         ; if not R3 then PC := 80
+ 69 [-]: JMP       80           ; PC := 80
+ 70 [-]: GETGLOBAL R3 K3        ; R3 := _T
+ 71 [-]: SETTABLE  R3 K21 R1    ; R3["GreedTokenPendingConsumeAction"] := R1
+ 72 [-]: SELF      R3 R2 K22    ; R4 := R2; R3 := R2["0x25D68A52"]
+ 73 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 74 [-]: SELF      R3 R3 K23    ; R4 := R3; R3 := R3["0xD0AC44CA"]
+ 75 [-]: MOVE      R5 R1        ; R5 := R1
+ 76 [-]: CALL      R3 3 1       ; R3(R4,R5)
+ 77 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 78 [-]: CALL      R3 1 1       ; R3()
+ 79 [-]: JMP       113          ; PC := 113
+ 80 [-]: LOADK     R3 K24       ; R3 := 1
+ 81 [-]: GETGLOBAL R4 K3        ; R4 := _T
+ 82 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["GreedInfo"]
+ 83 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["TokenConsumeActions"]
+ 84 [-]: LEN       R4 R4        ; R4 := # R4
+ 85 [-]: LOADK     R5 K24       ; R5 := 1
+ 86 [-]: FORPREP   R3 108       ; R3 -= R5; PC := 108
+ 87 [-]: GETGLOBAL R7 K3        ; R7 := _T
+ 88 [-]: GETTABLE  R7 R7 K4     ; R7 := R7["GreedInfo"]
+ 89 [-]: GETTABLE  R7 R7 K9     ; R7 := R7["TokenConsumeActions"]
+ 90 [-]: GETTABLE  R7 R7 R6     ; R7 := R7[R6]
+ 91 [-]: GETGLOBAL R8 K2        ; R8 := 0x400E7765
+ 92 [-]: MOVE      R9 R7        ; R9 := R7
+ 93 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 94 [-]: TEST      R8 1         ; if R8 then PC := 108
+ 95 [-]: JMP       108          ; PC := 108
+ 96 [-]: SELF      R8 R7 K25    ; R9 := R7; R8 := R7["0xD43308CE"]
+ 97 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 98 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
+ 99 [-]: MOVE      R10 R8       ; R10 := R8
+100 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+101 [-]: TEST      R9 1         ; if R9 then PC := 108
+102 [-]: JMP       108          ; PC := 108
+103 [-]: GETUPVAL  R9 U0        ; R9 := U0
+104 [-]: LOADK     R10 K18      ; R10 := "/Lotus/Language/SystemMessages/GreedTokenSpentByOther"
+105 [-]: LOADK     R11 K19      ; R11 := 5
+106 [-]: CALL      R9 3 1       ; R9(R10,R11)
+107 [-]: RETURN    R0 1         ; return 
+108 [-]: FORLOOP   R3 87        ; R3 += R5; if R3 <= R4 then begin PC := 87; R6 := R3 end
+109 [-]: GETUPVAL  R9 U0        ; R9 := U0
+110 [-]: LOADK     R10 K26      ; R10 := "/Lotus/Language/SystemMessages/GreedTokenPendingConsume"
+111 [-]: LOADK     R11 K19      ; R11 := 5
+112 [-]: CALL      R9 3 1       ; R9(R10,R11)
+113 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4.5:
 ;
 ; Name:            
-; Defined at line: 147
+; Defined at line: 151
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -787,7 +801,7 @@ code size: 3
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 186
+; Defined at line: 190
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -939,7 +953,7 @@ code size: 3
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 231
+; Defined at line: 235
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1074,7 +1088,7 @@ code size: 3
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 264
+; Defined at line: 268
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1086,27 +1100,44 @@ code size: 3
   4 [-]: SELF      R1 R1 K2     ; R2 := R1; R1 := R1["0x80D6B1A"]
   5 [-]: MOVE      R3 R0        ; R3 := R0
   6 [-]: CALL      R1 3 1       ; R1(R2,R3)
-  7 [-]: GETGLOBAL R1 K3        ; R1 := _T
-  8 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["GreedInfo"]
-  9 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["UseRankDesc"]
- 10 [-]: LT        0 K6 R1      ; if 0 >= R1 then PC := 21
- 11 [-]: JMP       21           ; PC := 21
- 12 [-]: GETGLOBAL R1 K7        ; R1 := gGameRules
- 13 [-]: SELF      R1 R1 K8     ; R2 := R1; R1 := R1["0xED0EE7FB"]
- 14 [-]: GETUPVAL  R3 U0        ; R3 := U0
- 15 [-]: LOADK     R4 K6        ; R4 := 0
- 16 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
- 17 [-]: LT        0 K6 R1      ; if 0 >= R1 then PC := 21
- 18 [-]: JMP       21           ; PC := 21
- 19 [-]: GETUPVAL  R1 U1        ; R1 := U1
- 20 [-]: CALL      R1 1 1       ; R1()
- 21 [-]: RETURN    R0 1         ; return 
+  7 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+  8 [-]: GETGLOBAL R2 K4        ; R2 := _T
+  9 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["GreedInfo"]
+ 10 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 11 [-]: TEST      R1 0         ; if not R1 then PC := 18
+ 12 [-]: JMP       18           ; PC := 18
+ 13 [-]: GETGLOBAL R1 K6        ; R1 := 0x93B1256B
+ 14 [-]: LOADK     R2 K7        ; R2 := "GreedTokenSelect: Closing due to no data"
+ 15 [-]: CALL      R1 2 1       ; R1(R2)
+ 16 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 17 [-]: CALL      R1 1 1       ; R1()
+ 18 [-]: GETGLOBAL R1 K3        ; R1 := 0x400E7765
+ 19 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 20 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["GreedInfo"]
+ 21 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 22 [-]: TEST      R1 1         ; if R1 then PC := 38
+ 23 [-]: JMP       38           ; PC := 38
+ 24 [-]: GETGLOBAL R1 K4        ; R1 := _T
+ 25 [-]: GETTABLE  R1 R1 K5     ; R1 := R1["GreedInfo"]
+ 26 [-]: GETTABLE  R1 R1 K8     ; R1 := R1["UseRankDesc"]
+ 27 [-]: LT        0 K9 R1      ; if 0 >= R1 then PC := 38
+ 28 [-]: JMP       38           ; PC := 38
+ 29 [-]: GETGLOBAL R1 K10       ; R1 := gGameRules
+ 30 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1["0xED0EE7FB"]
+ 31 [-]: GETUPVAL  R3 U1        ; R3 := U1
+ 32 [-]: LOADK     R4 K9        ; R4 := 0
+ 33 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
+ 34 [-]: LT        0 K9 R1      ; if 0 >= R1 then PC := 38
+ 35 [-]: JMP       38           ; PC := 38
+ 36 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 37 [-]: CALL      R1 1 1       ; R1()
+ 38 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 275
+; Defined at line: 283
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1121,7 +1152,7 @@ code size: 3
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 279
+; Defined at line: 287
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1150,7 +1181,7 @@ code size: 3
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 288
+; Defined at line: 296
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1173,7 +1204,7 @@ code size: 3
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 294
+; Defined at line: 302
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1196,7 +1227,7 @@ code size: 3
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 300
+; Defined at line: 308
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1220,7 +1251,7 @@ code size: 3
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 306
+; Defined at line: 314
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
