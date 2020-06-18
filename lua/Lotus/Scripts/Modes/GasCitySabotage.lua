@@ -4,7 +4,7 @@ code size: 30
 code size: 57
 code size: 118
 code size: 221
-code size: 405
+code size: 410
 code size: 121
 code size: 38
 code size: 40
@@ -1099,8 +1099,8 @@ code size: 78
 145 [-]: GETUPVAL  R7 U16       ; R7 := U16
 146 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
 147 [-]: GETUPVAL  R6 U17       ; R6 := U17
-148 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 221
-149 [-]: JMP       221          ; PC := 221
+148 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 226
+149 [-]: JMP       226          ; PC := 226
 150 [-]: GETUPVAL  R5 U18       ; R5 := U18
 151 [-]: GETTABLE  R5 R5 K31    ; R5 := R5["0xD69A3D49"]
 152 [-]: GETUPVAL  R6 U19       ; R6 := U19
@@ -1149,220 +1149,225 @@ code size: 78
 195 [-]: GETUPVAL  R6 U23       ; R6 := U23
 196 [-]: GETTABLE  R6 R6 K14    ; R6 := R6[1]
 197 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-198 [-]: TEST      R5 1         ; if R5 then PC := 209
-199 [-]: JMP       209          ; PC := 209
+198 [-]: TEST      R5 1         ; if R5 then PC := 214
+199 [-]: JMP       214          ; PC := 214
 200 [-]: GETUPVAL  R5 U23       ; R5 := U23
 201 [-]: GETTABLE  R5 R5 K14    ; R5 := R5[1]
 202 [-]: SELF      R5 R5 K40    ; R6 := R5; R5 := R5["0xC5E91BA6"]
 203 [-]: CALL      R5 2 1       ; R5(R6)
-204 [-]: GETUPVAL  R5 U24       ; R5 := U24
-205 [-]: SELF      R5 R5 K41    ; R6 := R5; R5 := R5["0xC9FD3D56"]
-206 [-]: GETUPVAL  R7 U23       ; R7 := U23
-207 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[1]
-208 [-]: CALL      R5 3 1       ; R5(R6,R7)
-209 [-]: GETGLOBAL R5 K1        ; R5 := gRegion
-210 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x90391273"]
-211 [-]: GETGLOBAL R7 K3        ; R7 := 0xEC274B1A
-212 [-]: LOADK     R8 K42       ; R8 := "SabotageRoomTrigger"
-213 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
-214 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
-215 [-]: MOVE      R5 R25       ; R5 := R25
-216 [-]: GETGLOBAL R5 K43       ; R5 := 0x94BCBD40
-217 [-]: GETUPVAL  R6 U25       ; R6 := U25
-218 [-]: LOADK     R7 K44       ; R7 := "OnTouched"
-219 [-]: CALL      R5 3 1       ; R5(R6,R7)
-220 [-]: JMP       392          ; PC := 392
-221 [-]: GETUPVAL  R5 U0        ; R5 := U0
-222 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
-223 [-]: GETUPVAL  R7 U16       ; R7 := U16
-224 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-225 [-]: GETUPVAL  R6 U26       ; R6 := U26
-226 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 253
-227 [-]: JMP       253          ; PC := 253
-228 [-]: GETUPVAL  R5 U18       ; R5 := U18
-229 [-]: GETTABLE  R5 R5 K31    ; R5 := R5["0xD69A3D49"]
-230 [-]: GETUPVAL  R6 U27       ; R6 := U27
-231 [-]: LOADK     R7 K14       ; R7 := 1
-232 [-]: LOADK     R8 K45       ; R8 := ": 0/2"
-233 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-234 [-]: GETUPVAL  R5 U0        ; R5 := U0
-235 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
-236 [-]: GETUPVAL  R7 U20       ; R7 := U20
-237 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-238 [-]: EQ        0 R5 K32     ; if R5 ~= 0 then PC := 243
-239 [-]: JMP       243          ; PC := 243
-240 [-]: SELF      R5 R3 K33    ; R6 := R3; R5 := R3["0x8D5886B7"]
-241 [-]: LOADK     R7 K34       ; R7 := "TriggerPort"
-242 [-]: CALL      R5 3 1       ; R5(R6,R7)
-243 [-]: GETUPVAL  R5 U0        ; R5 := U0
-244 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
-245 [-]: GETUPVAL  R7 U21       ; R7 := U21
-246 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-247 [-]: EQ        0 R5 K32     ; if R5 ~= 0 then PC := 392
-248 [-]: JMP       392          ; PC := 392
-249 [-]: SELF      R5 R4 K33    ; R6 := R4; R5 := R4["0x8D5886B7"]
-250 [-]: LOADK     R7 K34       ; R7 := "TriggerPort"
-251 [-]: CALL      R5 3 1       ; R5(R6,R7)
-252 [-]: JMP       392          ; PC := 392
-253 [-]: GETUPVAL  R5 U0        ; R5 := U0
-254 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
-255 [-]: GETUPVAL  R7 U16       ; R7 := U16
-256 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-257 [-]: GETUPVAL  R6 U28       ; R6 := U28
-258 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 367
-259 [-]: JMP       367          ; PC := 367
-260 [-]: GETUPVAL  R5 U18       ; R5 := U18
-261 [-]: GETTABLE  R5 R5 K31    ; R5 := R5["0xD69A3D49"]
-262 [-]: GETUPVAL  R6 U27       ; R6 := U27
-263 [-]: LOADK     R7 K14       ; R7 := 1
-264 [-]: LOADK     R8 K46       ; R8 := ": 1/2"
-265 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
-266 [-]: GETUPVAL  R5 U0        ; R5 := U0
-267 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
-268 [-]: GETUPVAL  R7 U20       ; R7 := U20
-269 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
-270 [-]: EQ        0 R5 K28     ; if R5 ~= 2 then PC := 307
-271 [-]: JMP       307          ; PC := 307
-272 [-]: GETUPVAL  R5 U11       ; R5 := U11
-273 [-]: EQ        0 R5 K14     ; if R5 ~= 1 then PC := 290
-274 [-]: JMP       290          ; PC := 290
-275 [-]: GETUPVAL  R5 U1        ; R5 := U1
-276 [-]: SELF      R5 R5 K47    ; R6 := R5; R5 := R5["0x499EDBEF"]
-277 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-278 [-]: LT        0 R5 K14     ; if R5 >= 1 then PC := 290
-279 [-]: JMP       290          ; PC := 290
-280 [-]: GETGLOBAL R5 K1        ; R5 := gRegion
-281 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x90391273"]
-282 [-]: GETGLOBAL R7 K3        ; R7 := 0xEC274B1A
-283 [-]: LOADK     R8 K48       ; R8 := "LeftSideActivation"
-284 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
-285 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
-286 [-]: SELF      R6 R5 K33    ; R7 := R5; R6 := R5["0x8D5886B7"]
-287 [-]: LOADK     R8 K34       ; R8 := "TriggerPort"
-288 [-]: CALL      R6 3 1       ; R6(R7,R8)
-289 [-]: JMP       307          ; PC := 307
-290 [-]: GETUPVAL  R6 U13       ; R6 := U13
-291 [-]: EQ        0 R6 K14     ; if R6 ~= 1 then PC := 307
-292 [-]: JMP       307          ; PC := 307
-293 [-]: GETUPVAL  R6 U2        ; R6 := U2
-294 [-]: SELF      R6 R6 K47    ; R7 := R6; R6 := R6["0x499EDBEF"]
-295 [-]: CALL      R6 2 2       ; R6 := R6(R7)
-296 [-]: LT        0 R6 K14     ; if R6 >= 1 then PC := 307
-297 [-]: JMP       307          ; PC := 307
-298 [-]: GETGLOBAL R6 K1        ; R6 := gRegion
-299 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6["0x90391273"]
-300 [-]: GETGLOBAL R8 K3        ; R8 := 0xEC274B1A
-301 [-]: LOADK     R9 K49       ; R9 := "RightSideActivation"
-302 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
-303 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
-304 [-]: SELF      R7 R6 K33    ; R8 := R6; R7 := R6["0x8D5886B7"]
-305 [-]: LOADK     R9 K34       ; R9 := "TriggerPort"
-306 [-]: CALL      R7 3 1       ; R7(R8,R9)
-307 [-]: GETUPVAL  R7 U0        ; R7 := U0
-308 [-]: SELF      R7 R7 K27    ; R8 := R7; R7 := R7["0xED0EE7FB"]
-309 [-]: GETUPVAL  R9 U21       ; R9 := U21
-310 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-311 [-]: EQ        0 R7 K50     ; if R7 ~= 3 then PC := 348
-312 [-]: JMP       348          ; PC := 348
-313 [-]: GETUPVAL  R7 U11       ; R7 := U11
-314 [-]: EQ        0 R7 K28     ; if R7 ~= 2 then PC := 331
-315 [-]: JMP       331          ; PC := 331
-316 [-]: GETUPVAL  R7 U1        ; R7 := U1
-317 [-]: SELF      R7 R7 K47    ; R8 := R7; R7 := R7["0x499EDBEF"]
-318 [-]: CALL      R7 2 2       ; R7 := R7(R8)
-319 [-]: LT        0 R7 K14     ; if R7 >= 1 then PC := 331
-320 [-]: JMP       331          ; PC := 331
-321 [-]: GETGLOBAL R7 K1        ; R7 := gRegion
-322 [-]: SELF      R7 R7 K2     ; R8 := R7; R7 := R7["0x90391273"]
-323 [-]: GETGLOBAL R9 K3        ; R9 := 0xEC274B1A
-324 [-]: LOADK     R10 K48      ; R10 := "LeftSideActivation"
-325 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
-326 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
-327 [-]: SELF      R8 R7 K33    ; R9 := R7; R8 := R7["0x8D5886B7"]
-328 [-]: LOADK     R10 K34      ; R10 := "TriggerPort"
-329 [-]: CALL      R8 3 1       ; R8(R9,R10)
-330 [-]: JMP       348          ; PC := 348
-331 [-]: GETUPVAL  R8 U13       ; R8 := U13
-332 [-]: EQ        0 R8 K28     ; if R8 ~= 2 then PC := 348
-333 [-]: JMP       348          ; PC := 348
-334 [-]: GETUPVAL  R8 U2        ; R8 := U2
-335 [-]: SELF      R8 R8 K47    ; R9 := R8; R8 := R8["0x499EDBEF"]
-336 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-337 [-]: LT        0 R8 K14     ; if R8 >= 1 then PC := 348
-338 [-]: JMP       348          ; PC := 348
-339 [-]: GETGLOBAL R8 K1        ; R8 := gRegion
-340 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0x90391273"]
-341 [-]: GETGLOBAL R10 K3       ; R10 := 0xEC274B1A
-342 [-]: LOADK     R11 K49      ; R11 := "RightSideActivation"
-343 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
-344 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
-345 [-]: SELF      R9 R8 K33    ; R10 := R8; R9 := R8["0x8D5886B7"]
-346 [-]: LOADK     R11 K34      ; R11 := "TriggerPort"
-347 [-]: CALL      R9 3 1       ; R9(R10,R11)
-348 [-]: GETUPVAL  R9 U0        ; R9 := U0
-349 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
-350 [-]: GETUPVAL  R11 U20      ; R11 := U20
-351 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-352 [-]: EQ        0 R9 K32     ; if R9 ~= 0 then PC := 357
-353 [-]: JMP       357          ; PC := 357
-354 [-]: SELF      R9 R3 K33    ; R10 := R3; R9 := R3["0x8D5886B7"]
-355 [-]: LOADK     R11 K34      ; R11 := "TriggerPort"
-356 [-]: CALL      R9 3 1       ; R9(R10,R11)
-357 [-]: GETUPVAL  R9 U0        ; R9 := U0
-358 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
-359 [-]: GETUPVAL  R11 U21      ; R11 := U21
-360 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-361 [-]: EQ        0 R9 K32     ; if R9 ~= 0 then PC := 392
-362 [-]: JMP       392          ; PC := 392
-363 [-]: SELF      R9 R4 K33    ; R10 := R4; R9 := R4["0x8D5886B7"]
-364 [-]: LOADK     R11 K34      ; R11 := "TriggerPort"
-365 [-]: CALL      R9 3 1       ; R9(R10,R11)
-366 [-]: JMP       392          ; PC := 392
-367 [-]: GETUPVAL  R9 U0        ; R9 := U0
-368 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
-369 [-]: GETUPVAL  R11 U16      ; R11 := U16
-370 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-371 [-]: GETUPVAL  R10 U29      ; R10 := U29
-372 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 380
-373 [-]: JMP       380          ; PC := 380
-374 [-]: GETUPVAL  R9 U18       ; R9 := U18
-375 [-]: GETTABLE  R9 R9 K31    ; R9 := R9["0xD69A3D49"]
-376 [-]: GETUPVAL  R10 U30      ; R10 := U30
-377 [-]: LOADK     R11 K51      ; R11 := 5
-378 [-]: CALL      R9 3 1       ; R9(R10,R11)
-379 [-]: JMP       392          ; PC := 392
-380 [-]: GETUPVAL  R9 U0        ; R9 := U0
-381 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
-382 [-]: GETUPVAL  R11 U16      ; R11 := U16
-383 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-384 [-]: GETUPVAL  R10 U31      ; R10 := U31
-385 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 392
-386 [-]: JMP       392          ; PC := 392
-387 [-]: GETUPVAL  R9 U18       ; R9 := U18
-388 [-]: GETTABLE  R9 R9 K31    ; R9 := R9["0xD69A3D49"]
-389 [-]: GETUPVAL  R10 U32      ; R10 := U32
-390 [-]: LOADK     R11 K51      ; R11 := 5
-391 [-]: CALL      R9 3 1       ; R9(R10,R11)
-392 [-]: GETUPVAL  R9 U22       ; R9 := U22
-393 [-]: GETTABLE  R9 R9 K52    ; R9 := R9["0x5255CB17"]
-394 [-]: GETGLOBAL R10 K53      ; R10 := transmissionSet
-395 [-]: CALL      R9 2 1       ; R9(R10)
-396 [-]: GETUPVAL  R9 U33       ; R9 := U33
-397 [-]: GETUPVAL  R10 U31      ; R10 := U31
-398 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 405
-399 [-]: JMP       405          ; PC := 405
-400 [-]: GETGLOBAL R9 K29       ; R9 := gPromotedToHost
-401 [-]: TEST      R9 0         ; if not R9 then PC := 405
-402 [-]: JMP       405          ; PC := 405
-403 [-]: GETUPVAL  R9 U34       ; R9 := U34
-404 [-]: CALL      R9 1 1       ; R9()
-405 [-]: RETURN    R0 1         ; return 
+204 [-]: GETGLOBAL R5 K21       ; R5 := 0x400E7765
+205 [-]: GETUPVAL  R6 U24       ; R6 := U24
+206 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+207 [-]: TEST      R5 1         ; if R5 then PC := 214
+208 [-]: JMP       214          ; PC := 214
+209 [-]: GETUPVAL  R5 U24       ; R5 := U24
+210 [-]: SELF      R5 R5 K41    ; R6 := R5; R5 := R5["0xC9FD3D56"]
+211 [-]: GETUPVAL  R7 U23       ; R7 := U23
+212 [-]: GETTABLE  R7 R7 K14    ; R7 := R7[1]
+213 [-]: CALL      R5 3 1       ; R5(R6,R7)
+214 [-]: GETGLOBAL R5 K1        ; R5 := gRegion
+215 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x90391273"]
+216 [-]: GETGLOBAL R7 K3        ; R7 := 0xEC274B1A
+217 [-]: LOADK     R8 K42       ; R8 := "SabotageRoomTrigger"
+218 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+219 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+220 [-]: MOVE      R5 R25       ; R5 := R25
+221 [-]: GETGLOBAL R5 K43       ; R5 := 0x94BCBD40
+222 [-]: GETUPVAL  R6 U25       ; R6 := U25
+223 [-]: LOADK     R7 K44       ; R7 := "OnTouched"
+224 [-]: CALL      R5 3 1       ; R5(R6,R7)
+225 [-]: JMP       397          ; PC := 397
+226 [-]: GETUPVAL  R5 U0        ; R5 := U0
+227 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
+228 [-]: GETUPVAL  R7 U16       ; R7 := U16
+229 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+230 [-]: GETUPVAL  R6 U26       ; R6 := U26
+231 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 258
+232 [-]: JMP       258          ; PC := 258
+233 [-]: GETUPVAL  R5 U18       ; R5 := U18
+234 [-]: GETTABLE  R5 R5 K31    ; R5 := R5["0xD69A3D49"]
+235 [-]: GETUPVAL  R6 U27       ; R6 := U27
+236 [-]: LOADK     R7 K14       ; R7 := 1
+237 [-]: LOADK     R8 K45       ; R8 := ": 0/2"
+238 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+239 [-]: GETUPVAL  R5 U0        ; R5 := U0
+240 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
+241 [-]: GETUPVAL  R7 U20       ; R7 := U20
+242 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+243 [-]: EQ        0 R5 K32     ; if R5 ~= 0 then PC := 248
+244 [-]: JMP       248          ; PC := 248
+245 [-]: SELF      R5 R3 K33    ; R6 := R3; R5 := R3["0x8D5886B7"]
+246 [-]: LOADK     R7 K34       ; R7 := "TriggerPort"
+247 [-]: CALL      R5 3 1       ; R5(R6,R7)
+248 [-]: GETUPVAL  R5 U0        ; R5 := U0
+249 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
+250 [-]: GETUPVAL  R7 U21       ; R7 := U21
+251 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+252 [-]: EQ        0 R5 K32     ; if R5 ~= 0 then PC := 397
+253 [-]: JMP       397          ; PC := 397
+254 [-]: SELF      R5 R4 K33    ; R6 := R4; R5 := R4["0x8D5886B7"]
+255 [-]: LOADK     R7 K34       ; R7 := "TriggerPort"
+256 [-]: CALL      R5 3 1       ; R5(R6,R7)
+257 [-]: JMP       397          ; PC := 397
+258 [-]: GETUPVAL  R5 U0        ; R5 := U0
+259 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
+260 [-]: GETUPVAL  R7 U16       ; R7 := U16
+261 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+262 [-]: GETUPVAL  R6 U28       ; R6 := U28
+263 [-]: EQ        0 R5 R6      ; if R5 ~= R6 then PC := 372
+264 [-]: JMP       372          ; PC := 372
+265 [-]: GETUPVAL  R5 U18       ; R5 := U18
+266 [-]: GETTABLE  R5 R5 K31    ; R5 := R5["0xD69A3D49"]
+267 [-]: GETUPVAL  R6 U27       ; R6 := U27
+268 [-]: LOADK     R7 K14       ; R7 := 1
+269 [-]: LOADK     R8 K46       ; R8 := ": 1/2"
+270 [-]: CALL      R5 4 1       ; R5(R6,R7,R8)
+271 [-]: GETUPVAL  R5 U0        ; R5 := U0
+272 [-]: SELF      R5 R5 K27    ; R6 := R5; R5 := R5["0xED0EE7FB"]
+273 [-]: GETUPVAL  R7 U20       ; R7 := U20
+274 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+275 [-]: EQ        0 R5 K28     ; if R5 ~= 2 then PC := 312
+276 [-]: JMP       312          ; PC := 312
+277 [-]: GETUPVAL  R5 U11       ; R5 := U11
+278 [-]: EQ        0 R5 K14     ; if R5 ~= 1 then PC := 295
+279 [-]: JMP       295          ; PC := 295
+280 [-]: GETUPVAL  R5 U1        ; R5 := U1
+281 [-]: SELF      R5 R5 K47    ; R6 := R5; R5 := R5["0x499EDBEF"]
+282 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+283 [-]: LT        0 R5 K14     ; if R5 >= 1 then PC := 295
+284 [-]: JMP       295          ; PC := 295
+285 [-]: GETGLOBAL R5 K1        ; R5 := gRegion
+286 [-]: SELF      R5 R5 K2     ; R6 := R5; R5 := R5["0x90391273"]
+287 [-]: GETGLOBAL R7 K3        ; R7 := 0xEC274B1A
+288 [-]: LOADK     R8 K48       ; R8 := "LeftSideActivation"
+289 [-]: CALL      R7 2 0       ; R7,... := R7(R8)
+290 [-]: CALL      R5 0 2       ; R5 := R5(R6,...)
+291 [-]: SELF      R6 R5 K33    ; R7 := R5; R6 := R5["0x8D5886B7"]
+292 [-]: LOADK     R8 K34       ; R8 := "TriggerPort"
+293 [-]: CALL      R6 3 1       ; R6(R7,R8)
+294 [-]: JMP       312          ; PC := 312
+295 [-]: GETUPVAL  R6 U13       ; R6 := U13
+296 [-]: EQ        0 R6 K14     ; if R6 ~= 1 then PC := 312
+297 [-]: JMP       312          ; PC := 312
+298 [-]: GETUPVAL  R6 U2        ; R6 := U2
+299 [-]: SELF      R6 R6 K47    ; R7 := R6; R6 := R6["0x499EDBEF"]
+300 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+301 [-]: LT        0 R6 K14     ; if R6 >= 1 then PC := 312
+302 [-]: JMP       312          ; PC := 312
+303 [-]: GETGLOBAL R6 K1        ; R6 := gRegion
+304 [-]: SELF      R6 R6 K2     ; R7 := R6; R6 := R6["0x90391273"]
+305 [-]: GETGLOBAL R8 K3        ; R8 := 0xEC274B1A
+306 [-]: LOADK     R9 K49       ; R9 := "RightSideActivation"
+307 [-]: CALL      R8 2 0       ; R8,... := R8(R9)
+308 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+309 [-]: SELF      R7 R6 K33    ; R8 := R6; R7 := R6["0x8D5886B7"]
+310 [-]: LOADK     R9 K34       ; R9 := "TriggerPort"
+311 [-]: CALL      R7 3 1       ; R7(R8,R9)
+312 [-]: GETUPVAL  R7 U0        ; R7 := U0
+313 [-]: SELF      R7 R7 K27    ; R8 := R7; R7 := R7["0xED0EE7FB"]
+314 [-]: GETUPVAL  R9 U21       ; R9 := U21
+315 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+316 [-]: EQ        0 R7 K50     ; if R7 ~= 3 then PC := 353
+317 [-]: JMP       353          ; PC := 353
+318 [-]: GETUPVAL  R7 U11       ; R7 := U11
+319 [-]: EQ        0 R7 K28     ; if R7 ~= 2 then PC := 336
+320 [-]: JMP       336          ; PC := 336
+321 [-]: GETUPVAL  R7 U1        ; R7 := U1
+322 [-]: SELF      R7 R7 K47    ; R8 := R7; R7 := R7["0x499EDBEF"]
+323 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+324 [-]: LT        0 R7 K14     ; if R7 >= 1 then PC := 336
+325 [-]: JMP       336          ; PC := 336
+326 [-]: GETGLOBAL R7 K1        ; R7 := gRegion
+327 [-]: SELF      R7 R7 K2     ; R8 := R7; R7 := R7["0x90391273"]
+328 [-]: GETGLOBAL R9 K3        ; R9 := 0xEC274B1A
+329 [-]: LOADK     R10 K48      ; R10 := "LeftSideActivation"
+330 [-]: CALL      R9 2 0       ; R9,... := R9(R10)
+331 [-]: CALL      R7 0 2       ; R7 := R7(R8,...)
+332 [-]: SELF      R8 R7 K33    ; R9 := R7; R8 := R7["0x8D5886B7"]
+333 [-]: LOADK     R10 K34      ; R10 := "TriggerPort"
+334 [-]: CALL      R8 3 1       ; R8(R9,R10)
+335 [-]: JMP       353          ; PC := 353
+336 [-]: GETUPVAL  R8 U13       ; R8 := U13
+337 [-]: EQ        0 R8 K28     ; if R8 ~= 2 then PC := 353
+338 [-]: JMP       353          ; PC := 353
+339 [-]: GETUPVAL  R8 U2        ; R8 := U2
+340 [-]: SELF      R8 R8 K47    ; R9 := R8; R8 := R8["0x499EDBEF"]
+341 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+342 [-]: LT        0 R8 K14     ; if R8 >= 1 then PC := 353
+343 [-]: JMP       353          ; PC := 353
+344 [-]: GETGLOBAL R8 K1        ; R8 := gRegion
+345 [-]: SELF      R8 R8 K2     ; R9 := R8; R8 := R8["0x90391273"]
+346 [-]: GETGLOBAL R10 K3       ; R10 := 0xEC274B1A
+347 [-]: LOADK     R11 K49      ; R11 := "RightSideActivation"
+348 [-]: CALL      R10 2 0      ; R10,... := R10(R11)
+349 [-]: CALL      R8 0 2       ; R8 := R8(R9,...)
+350 [-]: SELF      R9 R8 K33    ; R10 := R8; R9 := R8["0x8D5886B7"]
+351 [-]: LOADK     R11 K34      ; R11 := "TriggerPort"
+352 [-]: CALL      R9 3 1       ; R9(R10,R11)
+353 [-]: GETUPVAL  R9 U0        ; R9 := U0
+354 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
+355 [-]: GETUPVAL  R11 U20      ; R11 := U20
+356 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+357 [-]: EQ        0 R9 K32     ; if R9 ~= 0 then PC := 362
+358 [-]: JMP       362          ; PC := 362
+359 [-]: SELF      R9 R3 K33    ; R10 := R3; R9 := R3["0x8D5886B7"]
+360 [-]: LOADK     R11 K34      ; R11 := "TriggerPort"
+361 [-]: CALL      R9 3 1       ; R9(R10,R11)
+362 [-]: GETUPVAL  R9 U0        ; R9 := U0
+363 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
+364 [-]: GETUPVAL  R11 U21      ; R11 := U21
+365 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+366 [-]: EQ        0 R9 K32     ; if R9 ~= 0 then PC := 397
+367 [-]: JMP       397          ; PC := 397
+368 [-]: SELF      R9 R4 K33    ; R10 := R4; R9 := R4["0x8D5886B7"]
+369 [-]: LOADK     R11 K34      ; R11 := "TriggerPort"
+370 [-]: CALL      R9 3 1       ; R9(R10,R11)
+371 [-]: JMP       397          ; PC := 397
+372 [-]: GETUPVAL  R9 U0        ; R9 := U0
+373 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
+374 [-]: GETUPVAL  R11 U16      ; R11 := U16
+375 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+376 [-]: GETUPVAL  R10 U29      ; R10 := U29
+377 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 385
+378 [-]: JMP       385          ; PC := 385
+379 [-]: GETUPVAL  R9 U18       ; R9 := U18
+380 [-]: GETTABLE  R9 R9 K31    ; R9 := R9["0xD69A3D49"]
+381 [-]: GETUPVAL  R10 U30      ; R10 := U30
+382 [-]: LOADK     R11 K51      ; R11 := 5
+383 [-]: CALL      R9 3 1       ; R9(R10,R11)
+384 [-]: JMP       397          ; PC := 397
+385 [-]: GETUPVAL  R9 U0        ; R9 := U0
+386 [-]: SELF      R9 R9 K27    ; R10 := R9; R9 := R9["0xED0EE7FB"]
+387 [-]: GETUPVAL  R11 U16      ; R11 := U16
+388 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+389 [-]: GETUPVAL  R10 U31      ; R10 := U31
+390 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 397
+391 [-]: JMP       397          ; PC := 397
+392 [-]: GETUPVAL  R9 U18       ; R9 := U18
+393 [-]: GETTABLE  R9 R9 K31    ; R9 := R9["0xD69A3D49"]
+394 [-]: GETUPVAL  R10 U32      ; R10 := U32
+395 [-]: LOADK     R11 K51      ; R11 := 5
+396 [-]: CALL      R9 3 1       ; R9(R10,R11)
+397 [-]: GETUPVAL  R9 U22       ; R9 := U22
+398 [-]: GETTABLE  R9 R9 K52    ; R9 := R9["0x5255CB17"]
+399 [-]: GETGLOBAL R10 K53      ; R10 := transmissionSet
+400 [-]: CALL      R9 2 1       ; R9(R10)
+401 [-]: GETUPVAL  R9 U33       ; R9 := U33
+402 [-]: GETUPVAL  R10 U31      ; R10 := U31
+403 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 410
+404 [-]: JMP       410          ; PC := 410
+405 [-]: GETGLOBAL R9 K29       ; R9 := gPromotedToHost
+406 [-]: TEST      R9 0         ; if not R9 then PC := 410
+407 [-]: JMP       410          ; PC := 410
+408 [-]: GETUPVAL  R9 U34       ; R9 := U34
+409 [-]: CALL      R9 1 1       ; R9()
+410 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 454
+; Defined at line: 456
 ; #Upvalues:       22
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1494,7 +1499,7 @@ code size: 78
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 493
+; Defined at line: 495
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1543,7 +1548,7 @@ code size: 78
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 514
+; Defined at line: 516
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1594,7 +1599,7 @@ code size: 78
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 532
+; Defined at line: 534
 ; #Upvalues:       10
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1692,7 +1697,7 @@ code size: 78
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 567
+; Defined at line: 569
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1725,7 +1730,7 @@ code size: 78
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 580
+; Defined at line: 582
 ; #Upvalues:       22
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1884,7 +1889,7 @@ code size: 78
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 650
+; Defined at line: 652
 ; #Upvalues:       36
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2230,7 +2235,7 @@ code size: 78
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 793
+; Defined at line: 795
 ; #Upvalues:       28
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2784,7 +2789,7 @@ code size: 78
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 974
+; Defined at line: 976
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2827,7 +2832,7 @@ code size: 78
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 989
+; Defined at line: 991
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2841,7 +2846,7 @@ code size: 78
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 994
+; Defined at line: 996
 ; #Upvalues:       10
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2934,7 +2939,7 @@ code size: 78
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 1037
+; Defined at line: 1039
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -2948,7 +2953,7 @@ code size: 78
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 1043
+; Defined at line: 1045
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3094,7 +3099,7 @@ code size: 78
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 1099
+; Defined at line: 1101
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3147,7 +3152,7 @@ code size: 78
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 1119
+; Defined at line: 1121
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3241,7 +3246,7 @@ code size: 78
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 1158
+; Defined at line: 1160
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3627,7 +3632,7 @@ code size: 78
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 1359
+; Defined at line: 1361
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3795,7 +3800,7 @@ code size: 78
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 1428
+; Defined at line: 1430
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

@@ -1,4 +1,4 @@
-code size: 198
+code size: 199
 code size: 18
 code size: 4
 code size: 4
@@ -24,7 +24,7 @@ code size: 79
 code size: 512
 code size: 275
 code size: 86
-code size: 373
+code size: 405
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Minigames\Investigation.luac 
 
@@ -226,13 +226,14 @@ code size: 373
 189 [-]: MOVE      R0 R36       ; R0 := R36
 190 [-]: MOVE      R0 R37       ; R0 := R37
 191 [-]: MOVE      R0 R3        ; R0 := R3
-192 [-]: MOVE      R0 R5        ; R0 := R5
-193 [-]: MOVE      R0 R45       ; R0 := R45
-194 [-]: MOVE      R0 R44       ; R0 := R44
-195 [-]: MOVE      R0 R46       ; R0 := R46
-196 [-]: SETGLOBAL R47 K37      ; EnableInvestigationMode := R47
-197 [-]: SETGLOBAL R47 K38      ; 0xEB2398CC := R47
-198 [-]: RETURN    R0 1         ; return 
+192 [-]: MOVE      R0 R27       ; R0 := R27
+193 [-]: MOVE      R0 R5        ; R0 := R5
+194 [-]: MOVE      R0 R45       ; R0 := R45
+195 [-]: MOVE      R0 R44       ; R0 := R44
+196 [-]: MOVE      R0 R46       ; R0 := R46
+197 [-]: SETGLOBAL R47 K37      ; EnableInvestigationMode := R47
+198 [-]: SETGLOBAL R47 K38      ; 0xEB2398CC := R47
+199 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -2295,10 +2296,10 @@ code size: 373
 ;
 ; Name:            
 ; Defined at line: 684
-; #Upvalues:       16
+; #Upvalues:       17
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  18
+; Max Stack Size:  20
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["IsShipQuestLayerLoaded"]
@@ -2587,91 +2588,123 @@ code size: 373
 285 [-]: GETGLOBAL R15 K83      ; R15 := nightwaveFlashLightType
 286 [-]: GETGLOBAL R16 K84      ; R16 := EMPTY_SYMBOL
 287 [-]: CALL      R13 4 2      ; R13 := R13(R14,R15,R16)
-288 [-]: GETGLOBAL R14 K0       ; R14 := _T
-289 [-]: GETTABLE  R14 R14 K35  ; R14 := R14["InvestigationMinigame"]
-290 [-]: GETTABLE  R14 R14 K36  ; R14 := R14["Enabled"]
-291 [-]: TEST      R14 0        ; if not R14 then PC := 352
-292 [-]: JMP       352          ; PC := 352
-293 [-]: GETGLOBAL R14 K0       ; R14 := _T
-294 [-]: SETTABLE  R14 K85 K7   ; R14["BlockAmbientTransmissions"] := "0x1"
-295 [-]: GETGLOBAL R14 K4       ; R14 := 0x201191EA
-296 [-]: LOADK     R15 K5       ; R15 := 0
-297 [-]: CALL      R14 2 1      ; R14(R15)
-298 [-]: GETGLOBAL R14 K63      ; R14 := 0x400E7765
-299 [-]: MOVE      R15 R6       ; R15 := R6
-300 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-301 [-]: TEST      R14 0        ; if not R14 then PC := 304
-302 [-]: JMP       304          ; PC := 304
-303 [-]: JMP       352          ; PC := 352
-304 [-]: GETGLOBAL R14 K63      ; R14 := 0x400E7765
-305 [-]: MOVE      R15 R7       ; R15 := R7
-306 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-307 [-]: TEST      R14 0        ; if not R14 then PC := 330
-308 [-]: JMP       330          ; PC := 330
-309 [-]: GETGLOBAL R14 K63      ; R14 := 0x400E7765
-310 [-]: SELF      R15 R8 K86   ; R16 := R8; R15 := R8["0xD425D6BD"]
-311 [-]: CALL      R15 2 0      ; R15,... := R15(R16)
-312 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
-313 [-]: TEST      R14 0        ; if not R14 then PC := 330
-314 [-]: JMP       330          ; PC := 330
-315 [-]: GETGLOBAL R14 K87      ; R14 := 0x4CDEF9FF
-316 [-]: CALL      R14 1 2      ; R14 := R14()
-317 [-]: SUB       R9 R9 R14    ; R9 := R9 - R14
-318 [-]: GETTABLE  R14 R10 K88  ; R14 := R10["postProcess"]
-319 [-]: MUL       R15 R9 K90   ; R15 := R9 * 2
-320 [-]: SETTABLE  R14 K89 R15  ; R14["fade"] := R15
-321 [-]: LT        0 R9 K5      ; if R9 >= 0 then PC := 330
-322 [-]: JMP       330          ; PC := 330
-323 [-]: SELF      R14 R1 K82   ; R15 := R1; R14 := R1["0xAB436EF2"]
-324 [-]: GETUPVAL  R16 U12      ; R16 := U12
-325 [-]: GETGLOBAL R17 K84      ; R17 := EMPTY_SYMBOL
-326 [-]: CALL      R14 4 2      ; R14 := R14(R15,R16,R17)
-327 [-]: MOVE      R7 R14       ; R7 := R14
-328 [-]: GETTABLE  R14 R10 K88  ; R14 := R10["postProcess"]
-329 [-]: SETTABLE  R14 K89 K5   ; R14["fade"] := 0
-330 [-]: GETGLOBAL R14 K0       ; R14 := _T
-331 [-]: GETTABLE  R14 R14 K35  ; R14 := R14["InvestigationMinigame"]
-332 [-]: GETTABLE  R14 R14 K91  ; R14 := R14["ShouldQuit"]
-333 [-]: TEST      R14 0        ; if not R14 then PC := 338
-334 [-]: JMP       338          ; PC := 338
-335 [-]: GETUPVAL  R14 U13      ; R14 := U13
-336 [-]: CALL      R14 1 1      ; R14()
-337 [-]: JMP       352          ; PC := 352
-338 [-]: GETGLOBAL R14 K63      ; R14 := 0x400E7765
-339 [-]: MOVE      R15 R11      ; R15 := R11
-340 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-341 [-]: TEST      R14 1        ; if R14 then PC := 347
-342 [-]: JMP       347          ; PC := 347
-343 [-]: SELF      R14 R11 K92  ; R15 := R11; R14 := R11["0x55C40852"]
-344 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-345 [-]: TEST      R14 1        ; if R14 then PC := 349
-346 [-]: JMP       349          ; PC := 349
-347 [-]: GETUPVAL  R14 U14      ; R14 := U14
-348 [-]: CALL      R14 1 1      ; R14()
-349 [-]: GETUPVAL  R14 U15      ; R14 := U15
-350 [-]: CALL      R14 1 1      ; R14()
-351 [-]: JMP       288          ; PC := 288
-352 [-]: GETGLOBAL R14 K63      ; R14 := 0x400E7765
-353 [-]: MOVE      R15 R7       ; R15 := R7
-354 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-355 [-]: TEST      R14 1        ; if R14 then PC := 359
-356 [-]: JMP       359          ; PC := 359
-357 [-]: SELF      R14 R7 K93   ; R15 := R7; R14 := R7["0xD4C2743F"]
-358 [-]: CALL      R14 2 1      ; R14(R15)
-359 [-]: GETGLOBAL R14 K63      ; R14 := 0x400E7765
-360 [-]: MOVE      R15 R13      ; R15 := R13
-361 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-362 [-]: TEST      R14 1        ; if R14 then PC := 366
-363 [-]: JMP       366          ; PC := 366
-364 [-]: SELF      R14 R13 K93  ; R15 := R13; R14 := R13["0xD4C2743F"]
-365 [-]: CALL      R14 2 1      ; R14(R15)
-366 [-]: GETGLOBAL R14 K0       ; R14 := _T
-367 [-]: SETTABLE  R14 K35 K94  ; R14["InvestigationMinigame"] := nil
-368 [-]: GETGLOBAL R14 K0       ; R14 := _T
-369 [-]: GETGLOBAL R15 K0       ; R15 := _T
-370 [-]: GETTABLE  R15 R15 K8   ; R15 := R15["HideNotifications"]
-371 [-]: SUB       R15 R15 K9   ; R15 := R15 - 1
-372 [-]: SETTABLE  R14 K8 R15   ; R14["HideNotifications"] := R15
-373 [-]: RETURN    R0 1         ; return 
+288 [-]: GETGLOBAL R14 K51      ; R14 := gFlashMgr
+289 [-]: SELF      R14 R14 K85  ; R15 := R14; R14 := R14["0x616DD092"]
+290 [-]: GETUPVAL  R16 U12      ; R16 := U12
+291 [-]: GETTABLE  R16 R16 K86  ; R16 := R16["0xBCEEAD81"]
+292 [-]: CALL      R16 1 0      ; R16,... := R16()
+293 [-]: CALL      R14 0 2      ; R14 := R14(R15,...)
+294 [-]: GETGLOBAL R15 K63      ; R15 := 0x400E7765
+295 [-]: MOVE      R16 R14      ; R16 := R14
+296 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+297 [-]: TEST      R15 1        ; if R15 then PC := 302
+298 [-]: JMP       302          ; PC := 302
+299 [-]: SELF      R15 R14 K87  ; R16 := R14; R15 := R14["0x8C1ACCEF"]
+300 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+301 [-]: JMP       304          ; PC := 304
+302 [-]: MOVE      R15 R0       ; R15 := R0
+303 [-]: MOVE      R15 R1       ; R15 := R1
+304 [-]: GETGLOBAL R16 K0       ; R16 := _T
+305 [-]: GETTABLE  R16 R16 K35  ; R16 := R16["InvestigationMinigame"]
+306 [-]: GETTABLE  R16 R16 K36  ; R16 := R16["Enabled"]
+307 [-]: TEST      R16 0        ; if not R16 then PC := 376
+308 [-]: JMP       376          ; PC := 376
+309 [-]: GETGLOBAL R16 K0       ; R16 := _T
+310 [-]: SETTABLE  R16 K88 K7   ; R16["BlockAmbientTransmissions"] := "0x1"
+311 [-]: GETGLOBAL R16 K4       ; R16 := 0x201191EA
+312 [-]: LOADK     R17 K5       ; R17 := 0
+313 [-]: CALL      R16 2 1      ; R16(R17)
+314 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+315 [-]: MOVE      R17 R6       ; R17 := R6
+316 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+317 [-]: TEST      R16 0        ; if not R16 then PC := 320
+318 [-]: JMP       320          ; PC := 320
+319 [-]: JMP       376          ; PC := 376
+320 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+321 [-]: MOVE      R17 R14      ; R17 := R14
+322 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+323 [-]: TEST      R16 1        ; if R16 then PC := 328
+324 [-]: JMP       328          ; PC := 328
+325 [-]: SELF      R16 R14 K89  ; R17 := R14; R16 := R14["0x625791A8"]
+326 [-]: MOVE      R18 R0       ; R18 := R0
+327 [-]: CALL      R16 3 1      ; R16(R17,R18)
+328 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+329 [-]: MOVE      R17 R7       ; R17 := R7
+330 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+331 [-]: TEST      R16 0        ; if not R16 then PC := 354
+332 [-]: JMP       354          ; PC := 354
+333 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+334 [-]: SELF      R17 R8 K90   ; R18 := R8; R17 := R8["0xD425D6BD"]
+335 [-]: CALL      R17 2 0      ; R17,... := R17(R18)
+336 [-]: CALL      R16 0 2      ; R16 := R16(R17,...)
+337 [-]: TEST      R16 0        ; if not R16 then PC := 354
+338 [-]: JMP       354          ; PC := 354
+339 [-]: GETGLOBAL R16 K91      ; R16 := 0x4CDEF9FF
+340 [-]: CALL      R16 1 2      ; R16 := R16()
+341 [-]: SUB       R9 R9 R16    ; R9 := R9 - R16
+342 [-]: GETTABLE  R16 R10 K92  ; R16 := R10["postProcess"]
+343 [-]: MUL       R17 R9 K94   ; R17 := R9 * 2
+344 [-]: SETTABLE  R16 K93 R17  ; R16["fade"] := R17
+345 [-]: LT        0 R9 K5      ; if R9 >= 0 then PC := 354
+346 [-]: JMP       354          ; PC := 354
+347 [-]: SELF      R16 R1 K82   ; R17 := R1; R16 := R1["0xAB436EF2"]
+348 [-]: GETUPVAL  R18 U13      ; R18 := U13
+349 [-]: GETGLOBAL R19 K84      ; R19 := EMPTY_SYMBOL
+350 [-]: CALL      R16 4 2      ; R16 := R16(R17,R18,R19)
+351 [-]: MOVE      R7 R16       ; R7 := R16
+352 [-]: GETTABLE  R16 R10 K92  ; R16 := R10["postProcess"]
+353 [-]: SETTABLE  R16 K93 K5   ; R16["fade"] := 0
+354 [-]: GETGLOBAL R16 K0       ; R16 := _T
+355 [-]: GETTABLE  R16 R16 K35  ; R16 := R16["InvestigationMinigame"]
+356 [-]: GETTABLE  R16 R16 K95  ; R16 := R16["ShouldQuit"]
+357 [-]: TEST      R16 0        ; if not R16 then PC := 362
+358 [-]: JMP       362          ; PC := 362
+359 [-]: GETUPVAL  R16 U14      ; R16 := U14
+360 [-]: CALL      R16 1 1      ; R16()
+361 [-]: JMP       376          ; PC := 376
+362 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+363 [-]: MOVE      R17 R11      ; R17 := R11
+364 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+365 [-]: TEST      R16 1        ; if R16 then PC := 371
+366 [-]: JMP       371          ; PC := 371
+367 [-]: SELF      R16 R11 K96  ; R17 := R11; R16 := R11["0x55C40852"]
+368 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+369 [-]: TEST      R16 1        ; if R16 then PC := 373
+370 [-]: JMP       373          ; PC := 373
+371 [-]: GETUPVAL  R16 U15      ; R16 := U15
+372 [-]: CALL      R16 1 1      ; R16()
+373 [-]: GETUPVAL  R16 U16      ; R16 := U16
+374 [-]: CALL      R16 1 1      ; R16()
+375 [-]: JMP       304          ; PC := 304
+376 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+377 [-]: MOVE      R17 R7       ; R17 := R7
+378 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+379 [-]: TEST      R16 1        ; if R16 then PC := 383
+380 [-]: JMP       383          ; PC := 383
+381 [-]: SELF      R16 R7 K97   ; R17 := R7; R16 := R7["0xD4C2743F"]
+382 [-]: CALL      R16 2 1      ; R16(R17)
+383 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+384 [-]: MOVE      R17 R13      ; R17 := R13
+385 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+386 [-]: TEST      R16 1        ; if R16 then PC := 390
+387 [-]: JMP       390          ; PC := 390
+388 [-]: SELF      R16 R13 K97  ; R17 := R13; R16 := R13["0xD4C2743F"]
+389 [-]: CALL      R16 2 1      ; R16(R17)
+390 [-]: GETGLOBAL R16 K63      ; R16 := 0x400E7765
+391 [-]: MOVE      R17 R14      ; R17 := R14
+392 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+393 [-]: TEST      R16 1        ; if R16 then PC := 398
+394 [-]: JMP       398          ; PC := 398
+395 [-]: SELF      R16 R14 K89  ; R17 := R14; R16 := R14["0x625791A8"]
+396 [-]: MOVE      R18 R15      ; R18 := R15
+397 [-]: CALL      R16 3 1      ; R16(R17,R18)
+398 [-]: GETGLOBAL R16 K0       ; R16 := _T
+399 [-]: SETTABLE  R16 K35 K98  ; R16["InvestigationMinigame"] := nil
+400 [-]: GETGLOBAL R16 K0       ; R16 := _T
+401 [-]: GETGLOBAL R17 K0       ; R17 := _T
+402 [-]: GETTABLE  R17 R17 K8   ; R17 := R17["HideNotifications"]
+403 [-]: SUB       R17 R17 K9   ; R17 := R17 - 1
+404 [-]: SETTABLE  R16 K8 R17   ; R16["HideNotifications"] := R17
+405 [-]: RETURN    R0 1         ; return 
 
 

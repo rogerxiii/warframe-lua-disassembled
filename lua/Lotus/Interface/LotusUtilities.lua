@@ -84,7 +84,7 @@ code size: 5
 code size: 24
 code size: 337
 code size: 7
-code size: 92
+code size: 94
 code size: 7
 code size: 3
 code size: 7
@@ -275,7 +275,7 @@ code size: 5
 code size: 31
 code size: 301
 code size: 49
-code size: 107
+code size: 111
 code size: 28
 code size: 26
 code size: 40
@@ -6927,13 +6927,15 @@ code size: 75
  83 [-]: RETURN    R16 2        ; return R16
  84 [-]: GETGLOBAL R16 K16      ; R16 := _T
  85 [-]: GETTABLE  R16 R16 K17  ; R16 := R16["gSelectedRegionId"]
- 86 [-]: LE        0 R16 K8     ; if R16 > 0 then PC := 89
- 87 [-]: JMP       89           ; PC := 89
- 88 [-]: LOADK     R16 K5       ; R16 := 1
- 89 [-]: GETUPVAL  R17 U3       ; R17 := U3
- 90 [-]: MUL       R17 R16 R17  ; R17 := R16 * R17
- 91 [-]: RETURN    R17 2        ; return R17
- 92 [-]: RETURN    R0 1         ; return 
+ 86 [-]: EQ        1 R16 K3     ; if R16 == nil then PC := 90
+ 87 [-]: JMP       90           ; PC := 90
+ 88 [-]: LE        0 R16 K8     ; if R16 > 0 then PC := 91
+ 89 [-]: JMP       91           ; PC := 91
+ 90 [-]: LOADK     R16 K5       ; R16 := 1
+ 91 [-]: GETUPVAL  R17 U3       ; R17 := U3
+ 92 [-]: MUL       R17 R16 R17  ; R17 := R16 * R17
+ 93 [-]: RETURN    R17 2        ; return R17
+ 94 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #72:
@@ -17303,7 +17305,7 @@ code size: 75
  17 [-]: SELF      R5 R0 K5     ; R6 := R0; R5 := R0["0xD3A6CE65"]
  18 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  19 [-]: LEN       R4 R5        ; R4 := # R5
- 20 [-]: JMP       102          ; PC := 102
+ 20 [-]: JMP       106          ; PC := 106
  21 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
  22 [-]: GETTABLE  R5 R5 K6     ; R5 := R5["WeaponBin"]
  23 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 37
@@ -17319,11 +17321,11 @@ code size: 75
  33 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  34 [-]: LEN       R6 R6        ; R6 := # R6
  35 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
- 36 [-]: JMP       102          ; PC := 102
+ 36 [-]: JMP       106          ; PC := 106
  37 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
  38 [-]: GETTABLE  R5 R5 K10    ; R5 := R5["SentinelBin"]
- 39 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 53
- 40 [-]: JMP       53           ; PC := 53
+ 39 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 57
+ 40 [-]: JMP       57           ; PC := 57
  41 [-]: SELF      R5 R0 K11    ; R6 := R0; R5 := R0["0xC119AB7B"]
  42 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  43 [-]: LEN       R5 R5        ; R5 := # R5
@@ -17334,63 +17336,67 @@ code size: 75
  48 [-]: SELF      R6 R0 K13    ; R7 := R0; R6 := R0["0xC4F6B9B9"]
  49 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  50 [-]: LEN       R6 R6        ; R6 := # R6
- 51 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
- 52 [-]: JMP       102          ; PC := 102
- 53 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
- 54 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["SpaceSuitBin"]
- 55 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 61
- 56 [-]: JMP       61           ; PC := 61
- 57 [-]: SELF      R5 R0 K15    ; R6 := R0; R5 := R0["0x4ADC73C2"]
- 58 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 59 [-]: LEN       R4 R5        ; R4 := # R5
- 60 [-]: JMP       102          ; PC := 102
- 61 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
- 62 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["SpaceWeaponBin"]
- 63 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 73
- 64 [-]: JMP       73           ; PC := 73
- 65 [-]: SELF      R5 R0 K17    ; R6 := R0; R5 := R0["0x213E1D36"]
- 66 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 67 [-]: LEN       R5 R5        ; R5 := # R5
- 68 [-]: SELF      R6 R0 K18    ; R7 := R0; R6 := R0["0xA5FC09FD"]
- 69 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 70 [-]: LEN       R6 R6        ; R6 := # R6
- 71 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
- 72 [-]: JMP       102          ; PC := 102
- 73 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
- 74 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["OperatorAmpBin"]
- 75 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 81
- 76 [-]: JMP       81           ; PC := 81
- 77 [-]: SELF      R5 R0 K20    ; R6 := R0; R5 := R0["0x67D14622"]
- 78 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 79 [-]: LEN       R4 R5        ; R4 := # R5
- 80 [-]: JMP       102          ; PC := 102
- 81 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
- 82 [-]: GETTABLE  R5 R5 K21    ; R5 := R5["CrewShipSalvageBin"]
- 83 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 93
- 84 [-]: JMP       93           ; PC := 93
- 85 [-]: SELF      R5 R0 K22    ; R6 := R0; R5 := R0["0xC6486483"]
- 86 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 87 [-]: LEN       R5 R5        ; R5 := # R5
- 88 [-]: SELF      R6 R0 K23    ; R7 := R0; R6 := R0["0x60AB1682"]
- 89 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 90 [-]: LEN       R6 R6        ; R6 := # R6
- 91 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
- 92 [-]: JMP       102          ; PC := 102
- 93 [-]: GETGLOBAL R5 K24       ; R5 := 0x93B1256B
- 94 [-]: LOADK     R6 K25       ; R6 := "Unsupported bin type!"
- 95 [-]: GETGLOBAL R7 K26       ; R7 := 0x9FAED6BC
- 96 [-]: MOVE      R8 R1        ; R8 := R1
- 97 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 98 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
- 99 [-]: CALL      R5 2 1       ; R5(R6)
-100 [-]: MOVE      R5 R0        ; R5 := R0
-101 [-]: RETURN    R5 2         ; return R5
-102 [-]: SUB       R5 R3 R4     ; R5 := R3 - R4
-103 [-]: LT        0 R5 K2      ; if R5 >= 0 then PC := 106
-104 [-]: JMP       106          ; PC := 106
-105 [-]: MOVE      R2 R0        ; R2 := R0
-106 [-]: RETURN    R2 2         ; return R2
-107 [-]: RETURN    R0 1         ; return 
+ 51 [-]: ADD       R5 R5 R6     ; R5 := R5 + R6
+ 52 [-]: SELF      R6 R0 K14    ; R7 := R0; R6 := R0["0x3534C3F3"]
+ 53 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 54 [-]: LEN       R6 R6        ; R6 := # R6
+ 55 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
+ 56 [-]: JMP       106          ; PC := 106
+ 57 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
+ 58 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["SpaceSuitBin"]
+ 59 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 65
+ 60 [-]: JMP       65           ; PC := 65
+ 61 [-]: SELF      R5 R0 K16    ; R6 := R0; R5 := R0["0x4ADC73C2"]
+ 62 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 63 [-]: LEN       R4 R5        ; R4 := # R5
+ 64 [-]: JMP       106          ; PC := 106
+ 65 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
+ 66 [-]: GETTABLE  R5 R5 K17    ; R5 := R5["SpaceWeaponBin"]
+ 67 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 77
+ 68 [-]: JMP       77           ; PC := 77
+ 69 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0["0x213E1D36"]
+ 70 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 71 [-]: LEN       R5 R5        ; R5 := # R5
+ 72 [-]: SELF      R6 R0 K19    ; R7 := R0; R6 := R0["0xA5FC09FD"]
+ 73 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 74 [-]: LEN       R6 R6        ; R6 := # R6
+ 75 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
+ 76 [-]: JMP       106          ; PC := 106
+ 77 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
+ 78 [-]: GETTABLE  R5 R5 K20    ; R5 := R5["OperatorAmpBin"]
+ 79 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 85
+ 80 [-]: JMP       85           ; PC := 85
+ 81 [-]: SELF      R5 R0 K21    ; R6 := R0; R5 := R0["0x67D14622"]
+ 82 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 83 [-]: LEN       R4 R5        ; R4 := # R5
+ 84 [-]: JMP       106          ; PC := 106
+ 85 [-]: GETGLOBAL R5 K3        ; R5 := Lotus_Game
+ 86 [-]: GETTABLE  R5 R5 K22    ; R5 := R5["CrewShipSalvageBin"]
+ 87 [-]: EQ        0 R1 R5      ; if R1 ~= R5 then PC := 97
+ 88 [-]: JMP       97           ; PC := 97
+ 89 [-]: SELF      R5 R0 K23    ; R6 := R0; R5 := R0["0xC6486483"]
+ 90 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 91 [-]: LEN       R5 R5        ; R5 := # R5
+ 92 [-]: SELF      R6 R0 K24    ; R7 := R0; R6 := R0["0x60AB1682"]
+ 93 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 94 [-]: LEN       R6 R6        ; R6 := # R6
+ 95 [-]: ADD       R4 R5 R6     ; R4 := R5 + R6
+ 96 [-]: JMP       106          ; PC := 106
+ 97 [-]: GETGLOBAL R5 K25       ; R5 := 0x93B1256B
+ 98 [-]: LOADK     R6 K26       ; R6 := "Unsupported bin type!"
+ 99 [-]: GETGLOBAL R7 K27       ; R7 := 0x9FAED6BC
+100 [-]: MOVE      R8 R1        ; R8 := R1
+101 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+102 [-]: CONCAT    R6 R6 R7     ; R6 := R6 .. R7
+103 [-]: CALL      R5 2 1       ; R5(R6)
+104 [-]: MOVE      R5 R0        ; R5 := R0
+105 [-]: RETURN    R5 2         ; return R5
+106 [-]: SUB       R5 R3 R4     ; R5 := R3 - R4
+107 [-]: LT        0 R5 K2      ; if R5 >= 0 then PC := 110
+108 [-]: JMP       110          ; PC := 110
+109 [-]: MOVE      R2 R0        ; R2 := R0
+110 [-]: RETURN    R2 2         ; return R2
+111 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #259:

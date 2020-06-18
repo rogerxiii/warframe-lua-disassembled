@@ -2,8 +2,8 @@ code size: 23
 code size: 43
 code size: 25
 code size: 106
-code size: 110
-code size: 173
+code size: 170
+code size: 201
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\GreedToken.luac 
 
@@ -42,7 +42,7 @@ code size: 173
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 24
+; Defined at line: 25
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -96,7 +96,7 @@ code size: 173
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 39
+; Defined at line: 40
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -132,7 +132,7 @@ code size: 173
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 52
+; Defined at line: 53
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -249,19 +249,19 @@ code size: 173
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 93
+; Defined at line: 94
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  21
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x80B14403"]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
   3 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
   4 [-]: MOVE      R3 R1        ; R3 := R1
   5 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  6 [-]: TEST      R2 1         ; if R2 then PC := 110
-  7 [-]: JMP       110          ; PC := 110
+  6 [-]: TEST      R2 1         ; if R2 then PC := 170
+  7 [-]: JMP       170          ; PC := 170
   8 [-]: GETGLOBAL R2 K2        ; R2 := _T
   9 [-]: SETTABLE  R2 K3 R0     ; R2["PlayerWhoHasSpentToken"] := R0
  10 [-]: LOADK     R2 K4        ; R2 := 0
@@ -348,33 +348,93 @@ code size: 173
  91 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
  92 [-]: MOVE      R10 R8       ; R10 := R8
  93 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 94 [-]: TEST      R9 1         ; if R9 then PC := 110
- 95 [-]: JMP       110          ; PC := 110
+ 94 [-]: TEST      R9 1         ; if R9 then PC := 170
+ 95 [-]: JMP       170          ; PC := 170
  96 [-]: SELF      R9 R0 K32    ; R10 := R0; R9 := R0["0xE39929A1"]
  97 [-]: MOVE      R11 R8       ; R11 := R8
  98 [-]: LOADK     R12 K14      ; R12 := 1
  99 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-100 [-]: JMP       110          ; PC := 110
-101 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
-102 [-]: GETGLOBAL R10 K33      ; R10 := creditBundleReward
-103 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-104 [-]: TEST      R9 1         ; if R9 then PC := 110
-105 [-]: JMP       110          ; PC := 110
-106 [-]: SELF      R9 R0 K32    ; R10 := R0; R9 := R0["0xE39929A1"]
-107 [-]: GETGLOBAL R11 K33      ; R11 := creditBundleReward
-108 [-]: LOADK     R12 K14      ; R12 := 1
-109 [-]: CALL      R9 4 1       ; R9(R10,R11,R12)
-110 [-]: RETURN    R0 1         ; return 
+100 [-]: JMP       170          ; PC := 170
+101 [-]: GETGLOBAL R9 K33       ; R9 := creditBundleReward
+102 [-]: GETGLOBAL R10 K34      ; R10 := 0x7C282057
+103 [-]: LOADK     R11 K35      ; R11 := "/Lotus/StoreItems/Types/PickUps/Credits/1000Credits"
+104 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+105 [-]: GETGLOBAL R11 K36      ; R11 := gFlashMgr
+106 [-]: SELF      R11 R11 K37  ; R12 := R11; R11 := R11["0x24FF386"]
+107 [-]: GETGLOBAL R13 K38      ; R13 := rewardsMovie
+108 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+109 [-]: SELF      R12 R11 K39  ; R13 := R11; R12 := R11["0x5DB0BD4"]
+110 [-]: LOADK     R14 K40      ; R14 := "/Lotus/Language/Menu/Credits_MixedCase"
+111 [-]: MOVE      R15 R0       ; R15 := R0
+112 [-]: CALL      R12 4 2      ; R12 := R12(R13,R14,R15)
+113 [-]: GETGLOBAL R13 K1       ; R13 := 0x400E7765
+114 [-]: MOVE      R14 R11      ; R14 := R11
+115 [-]: CALL      R13 2 2      ; R13 := R13(R14)
+116 [-]: TEST      R13 1        ; if R13 then PC := 129
+117 [-]: JMP       129          ; PC := 129
+118 [-]: GETGLOBAL R13 K2       ; R13 := _T
+119 [-]: GETTABLE  R13 R13 K41  ; R13 := R13["0x8EB121C5"]
+120 [-]: MOVE      R14 R10      ; R14 := R10
+121 [-]: NEWTABLE  R15 0 4      ; R15 := {}
+122 [-]: SETTABLE  R15 K42 R12  ; R15["Name"] := R12
+123 [-]: SETTABLE  R15 K43 K14  ; R15["itemCount"] := 1
+124 [-]: SETTABLE  R15 K44 R9   ; R15["OverrideCount"] := R9
+125 [-]: GETGLOBAL R16 K46      ; R16 := Engine
+126 [-]: GETTABLE  R16 R16 K47  ; R16 := R16["Item_MiscItems"]
+127 [-]: SETTABLE  R15 K45 R16  ; R15["OverrideCatergory"] := R16
+128 [-]: CALL      R13 3 1      ; R13(R14,R15)
+129 [-]: GETGLOBAL R13 K13      ; R13 := corpusReliefLoreDecos
+130 [-]: GETGLOBAL R14 K13      ; R14 := corpusReliefLoreDecos
+131 [-]: LEN       R14 R14      ; R14 := # R14
+132 [-]: GETTABLE  R13 R13 R14  ; R13 := R13[R14]
+133 [-]: SELF      R14 R3 K15   ; R15 := R3; R14 := R3["0x6DA72501"]
+134 [-]: CALL      R14 2 2      ; R14 := R14(R15)
+135 [-]: GETTABLE  R15 R14 K16  ; R15 := R14["y"]
+136 [-]: ADD       R15 R15 K17  ; R15 := R15 + 9
+137 [-]: SETTABLE  R14 K16 R15  ; R14["y"] := R15
+138 [-]: GETGLOBAL R15 K5       ; R15 := gRegion
+139 [-]: SELF      R15 R15 K18  ; R16 := R15; R15 := R15["0xBDD34CC6"]
+140 [-]: GETGLOBAL R17 K19      ; R17 := 0xCAA43ABB
+141 [-]: MOVE      R18 R13      ; R18 := R13
+142 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+143 [-]: MOVE      R18 R14      ; R18 := R14
+144 [-]: SELF      R19 R3 K20   ; R20 := R3; R19 := R3["0xF23A7849"]
+145 [-]: CALL      R19 2 0      ; R19,... := R19(R20)
+146 [-]: CALL      R15 0 2      ; R15 := R15(R16,...)
+147 [-]: GETGLOBAL R16 K1       ; R16 := 0x400E7765
+148 [-]: MOVE      R17 R15      ; R17 := R15
+149 [-]: CALL      R16 2 2      ; R16 := R16(R17)
+150 [-]: TEST      R16 1        ; if R16 then PC := 160
+151 [-]: JMP       160          ; PC := 160
+152 [-]: GETGLOBAL R16 K2       ; R16 := _T
+153 [-]: SETTABLE  R16 K26 R15  ; R16["CorpusReliefDeco"] := R15
+154 [-]: GETGLOBAL R16 K2       ; R16 := _T
+155 [-]: GETGLOBAL R17 K28      ; R17 := tenetFragments
+156 [-]: GETGLOBAL R18 K13      ; R18 := corpusReliefLoreDecos
+157 [-]: LEN       R18 R18      ; R18 := # R18
+158 [-]: GETTABLE  R17 R17 R18  ; R17 := R17[R18]
+159 [-]: SETTABLE  R16 K27 R17  ; R16["CorpusLeaderLoreTransmission"] := R17
+160 [-]: SELF      R16 R0 K48   ; R17 := R0; R16 := R0["0xA8AD5826"]
+161 [-]: MOVE      R18 R9       ; R18 := R9
+162 [-]: CALL      R16 3 1      ; R16(R17,R18)
+163 [-]: SELF      R16 R3 K29   ; R17 := R3; R16 := R3["0x670C945E"]
+164 [-]: LOADK     R18 K14      ; R18 := 1
+165 [-]: GETGLOBAL R19 K30      ; R19 := reliefMaterials
+166 [-]: GETGLOBAL R20 K13      ; R20 := corpusReliefLoreDecos
+167 [-]: LEN       R20 R20      ; R20 := # R20
+168 [-]: GETTABLE  R19 R19 R20  ; R19 := R19[R20]
+169 [-]: CALL      R16 4 1      ; R16(R17,R18,R19)
+170 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 133
+; Defined at line: 152
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
-; Max Stack Size:  22
+; Max Stack Size:  24
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0x5284F26C"]
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
@@ -442,8 +502,8 @@ code size: 173
  64 [-]: GETGLOBAL R15 K3       ; R15 := gRegion
  65 [-]: SELF      R15 R15 K17  ; R16 := R15; R15 := R15["0xA559F558"]
  66 [-]: CALL      R15 2 2      ; R15 := R15(R16)
- 67 [-]: TEST      R15 0        ; if not R15 then PC := 173
- 68 [-]: JMP       173          ; PC := 173
+ 67 [-]: TEST      R15 0        ; if not R15 then PC := 201
+ 68 [-]: JMP       201          ; PC := 201
  69 [-]: SELF      R15 R0 K18   ; R16 := R0; R15 := R0["0xDBB8216E"]
  70 [-]: CALL      R15 2 2      ; R15 := R15(R16)
  71 [-]: TEST      R15 0        ; if not R15 then PC := 99
@@ -518,7 +578,7 @@ code size: 173
 140 [-]: GETGLOBAL R20 K35      ; R20 := standingGainMovie
 141 [-]: CALL      R18 3 1      ; R18(R19,R20)
 142 [-]: GETGLOBAL R18 K36      ; R18 := useLoreContext
-143 [-]: TEST      R18 0        ; if not R18 then PC := 158
+143 [-]: LT        0 K16 R18    ; if 0 >= R18 then PC := 158
 144 [-]: JMP       158          ; PC := 158
 145 [-]: GETGLOBAL R18 K8       ; R18 := 0x400E7765
 146 [-]: MOVE      R19 R5       ; R19 := R5
@@ -533,12 +593,12 @@ code size: 173
 155 [-]: GETTABLE  R18 R18 K37  ; R18 := R18["0xB11F032"]
 156 [-]: LOADK     R19 K38      ; R19 := "/Lotus/Language/SystemMessages/GreedTokenSpendFailed"
 157 [-]: CALL      R18 2 1      ; R18(R19)
-158 [-]: GETGLOBAL R18 K3       ; R18 := gRegion
-159 [-]: SELF      R18 R18 K17  ; R19 := R18; R18 := R18["0xA559F558"]
-160 [-]: CALL      R18 2 2      ; R18 := R18(R19)
-161 [-]: TEST      R18 0        ; if not R18 then PC := 173
-162 [-]: JMP       173          ; PC := 173
-163 [-]: TEST      R15 0        ; if not R15 then PC := 173
+158 [-]: TEST      R15 0        ; if not R15 then PC := 201
+159 [-]: JMP       201          ; PC := 201
+160 [-]: GETGLOBAL R18 K3       ; R18 := gRegion
+161 [-]: SELF      R18 R18 K17  ; R19 := R18; R18 := R18["0xA559F558"]
+162 [-]: CALL      R18 2 2      ; R18 := R18(R19)
+163 [-]: TEST      R18 0        ; if not R18 then PC := 173
 164 [-]: JMP       173          ; PC := 173
 165 [-]: GETGLOBAL R18 K39      ; R18 := successPortForwarder
 166 [-]: SELF      R18 R18 K40  ; R19 := R18; R18 := R18["0x8D5886B7"]
@@ -548,6 +608,34 @@ code size: 173
 170 [-]: GETTABLE  R18 R18 K42  ; R18 := R18["0x25992394"]
 171 [-]: GETGLOBAL R19 K43      ; R19 := tokenConsumeSound
 172 [-]: CALL      R18 2 1      ; R18(R19)
-173 [-]: RETURN    R0 1         ; return 
+173 [-]: GETGLOBAL R18 K3       ; R18 := gRegion
+174 [-]: SELF      R18 R18 K44  ; R19 := R18; R18 := R18["0x6E5ED53D"]
+175 [-]: GETGLOBAL R20 K45      ; R20 := 0xEC274B1A
+176 [-]: LOADK     R21 K46      ; R21 := "PurgatoryTeleport"
+177 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+178 [-]: SELF      R21 R0 K47   ; R22 := R0; R21 := R0["0x6DA72501"]
+179 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+180 [-]: LOADK     R22 K16      ; R22 := 0
+181 [-]: LOADK     R23 K14      ; R23 := 10
+182 [-]: CALL      R18 6 2      ; R18 := R18(R19,R20,R21,R22,R23)
+183 [-]: GETGLOBAL R19 K8       ; R19 := 0x400E7765
+184 [-]: MOVE      R20 R18      ; R20 := R18
+185 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+186 [-]: TEST      R19 1        ; if R19 then PC := 201
+187 [-]: JMP       201          ; PC := 201
+188 [-]: GETGLOBAL R19 K6       ; R19 := _T
+189 [-]: SETTABLE  R19 K48 R1   ; R19["PurgatoryInstigator"] := R1
+190 [-]: SELF      R19 R18 K49  ; R20 := R18; R19 := R18["0xB1627322"]
+191 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+192 [-]: TEST      R19 1        ; if R19 then PC := 198
+193 [-]: JMP       198          ; PC := 198
+194 [-]: GETGLOBAL R19 K19      ; R19 := 0x201191EA
+195 [-]: LOADK     R20 K16      ; R20 := 0
+196 [-]: CALL      R19 2 1      ; R19(R20)
+197 [-]: JMP       190          ; PC := 190
+198 [-]: SELF      R19 R18 K40  ; R20 := R18; R19 := R18["0x8D5886B7"]
+199 [-]: LOADK     R21 K50      ; R21 := "Execute"
+200 [-]: CALL      R19 3 1      ; R19(R20,R21)
+201 [-]: RETURN    R0 1         ; return 
 
 

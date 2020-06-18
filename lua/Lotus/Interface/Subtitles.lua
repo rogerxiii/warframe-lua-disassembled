@@ -1,9 +1,9 @@
-code size: 38
+code size: 36
 code size: 129
 code size: 102
 code size: 11
 code size: 38
-code size: 38
+code size: 6
 code size: 6
 code size: 7
 code size: 7
@@ -36,25 +36,23 @@ code size: 7
  17 [-]: SETGLOBAL R7 K4        ; Initialize := R7
  18 [-]: SETGLOBAL R7 K5        ; 0x62648036 := R7
  19 [-]: CLOSURE   R7 3         ; R7 := closure(Function #4)
- 20 [-]: MOVE      R0 R4        ; R0 := R4
- 21 [-]: MOVE      R0 R0        ; R0 := R0
- 22 [-]: SETGLOBAL R7 K6        ; Update := R7
- 23 [-]: SETGLOBAL R7 K7        ; 0x8C7099E9 := R7
- 24 [-]: CLOSURE   R7 4         ; R7 := closure(Function #5)
- 25 [-]: MOVE      R0 R6        ; R0 := R6
- 26 [-]: SETGLOBAL R7 K8        ; DisplaySubTitle := R7
- 27 [-]: SETGLOBAL R7 K9        ; 0xFAC01D84 := R7
- 28 [-]: CLOSURE   R7 5         ; R7 := closure(Function #6)
- 29 [-]: MOVE      R0 R2        ; R0 := R2
- 30 [-]: MOVE      R0 R6        ; R0 := R6
- 31 [-]: SETGLOBAL R7 K10       ; DisplaySubTitleIfEmpty := R7
- 32 [-]: SETGLOBAL R7 K11       ; 0x865FA3FB := R7
- 33 [-]: CLOSURE   R7 6         ; R7 := closure(Function #7)
- 34 [-]: MOVE      R0 R2        ; R0 := R2
- 35 [-]: MOVE      R0 R6        ; R0 := R6
- 36 [-]: SETGLOBAL R7 K12       ; ClearSpecificSubTitle := R7
- 37 [-]: SETGLOBAL R7 K13       ; 0x3D9B8BBF := R7
- 38 [-]: RETURN    R0 1         ; return 
+ 20 [-]: SETGLOBAL R7 K6        ; Update := R7
+ 21 [-]: SETGLOBAL R7 K7        ; 0x8C7099E9 := R7
+ 22 [-]: CLOSURE   R7 4         ; R7 := closure(Function #5)
+ 23 [-]: MOVE      R0 R6        ; R0 := R6
+ 24 [-]: SETGLOBAL R7 K8        ; DisplaySubTitle := R7
+ 25 [-]: SETGLOBAL R7 K9        ; 0xFAC01D84 := R7
+ 26 [-]: CLOSURE   R7 5         ; R7 := closure(Function #6)
+ 27 [-]: MOVE      R0 R2        ; R0 := R2
+ 28 [-]: MOVE      R0 R6        ; R0 := R6
+ 29 [-]: SETGLOBAL R7 K10       ; DisplaySubTitleIfEmpty := R7
+ 30 [-]: SETGLOBAL R7 K11       ; 0x865FA3FB := R7
+ 31 [-]: CLOSURE   R7 6         ; R7 := closure(Function #7)
+ 32 [-]: MOVE      R0 R2        ; R0 := R2
+ 33 [-]: MOVE      R0 R6        ; R0 := R6
+ 34 [-]: SETGLOBAL R7 K12       ; ClearSpecificSubTitle := R7
+ 35 [-]: SETGLOBAL R7 K13       ; 0x3D9B8BBF := R7
+ 36 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -250,34 +248,34 @@ code size: 7
  42 [-]: SELF      R2 R2 K8     ; R3 := R2; R2 := R2["0x1C19D966"]
  43 [-]: LOADK     R4 K12       ; R4 := "Background"
  44 [-]: LOADK     R5 K10       ; R5 := "_alpha"
- 45 [-]: LOADK     R6 K11       ; R6 := 0
+ 45 [-]: LOADK     R6 K13       ; R6 := 50
  46 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  47 [-]: GETGLOBAL R2 K2        ; R2 := mMovie
- 48 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0xD6A79FE9"]
- 49 [-]: LOADK     R4 K14       ; R4 := "Subtitle"
- 50 [-]: LOADK     R5 K15       ; R5 := "text"
+ 48 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2["0xD6A79FE9"]
+ 49 [-]: LOADK     R4 K15       ; R4 := "Subtitle"
+ 50 [-]: LOADK     R5 K16       ; R5 := "text"
  51 [-]: MOVE      R6 R1        ; R6 := R1
  52 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
- 53 [-]: GETGLOBAL R2 K16       ; R2 := 0x52E17A90
+ 53 [-]: GETGLOBAL R2 K17       ; R2 := 0x52E17A90
  54 [-]: GETGLOBAL R3 K2        ; R3 := mMovie
  55 [-]: LOADK     R4 K9        ; R4 := "_root"
- 56 [-]: GETGLOBAL R5 K17       ; R5 := UISys
- 57 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["FlashInstance_SMOOTH_STEP"]
+ 56 [-]: GETGLOBAL R5 K18       ; R5 := UISys
+ 57 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["FlashInstance_SMOOTH_STEP"]
  58 [-]: NEWTABLE  R6 1 0       ; R6 := {}
  59 [-]: LOADK     R7 K10       ; R7 := "_alpha"
  60 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  61 [-]: NEWTABLE  R7 1 0       ; R7 := {}
- 62 [-]: LOADK     R8 K19       ; R8 := 100
+ 62 [-]: LOADK     R8 K20       ; R8 := 100
  63 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
- 64 [-]: LOADK     R8 K20       ; R8 := 1
+ 64 [-]: LOADK     R8 K21       ; R8 := 1
  65 [-]: CALL      R2 7 1       ; R2(R3,R4,R5,R6,R7,R8)
- 66 [-]: GETGLOBAL R2 K21       ; R2 := _T
- 67 [-]: SETTABLE  R2 K22 K23   ; R2["SubtitleVisible"] := "0x1"
+ 66 [-]: GETGLOBAL R2 K22       ; R2 := _T
+ 67 [-]: SETTABLE  R2 K23 K24   ; R2["SubtitleVisible"] := "0x1"
  68 [-]: JMP       75           ; PC := 75
  69 [-]: GETGLOBAL R2 K2        ; R2 := mMovie
- 70 [-]: SELF      R2 R2 K13    ; R3 := R2; R2 := R2["0xD6A79FE9"]
- 71 [-]: LOADK     R4 K14       ; R4 := "Subtitle"
- 72 [-]: LOADK     R5 K15       ; R5 := "text"
+ 70 [-]: SELF      R2 R2 K14    ; R3 := R2; R2 := R2["0xD6A79FE9"]
+ 71 [-]: LOADK     R4 K15       ; R4 := "Subtitle"
+ 72 [-]: LOADK     R5 K16       ; R5 := "text"
  73 [-]: MOVE      R6 R1        ; R6 := R1
  74 [-]: CALL      R2 5 1       ; R2(R3,R4,R5,R6)
  75 [-]: GETUPVAL  R2 U1        ; R2 := U1
@@ -286,18 +284,18 @@ code size: 7
  78 [-]: GETUPVAL  R2 U0        ; R2 := U0
  79 [-]: EQ        1 R2 K1      ; if R2 == "" then PC := 98
  80 [-]: JMP       98           ; PC := 98
- 81 [-]: GETGLOBAL R2 K16       ; R2 := 0x52E17A90
+ 81 [-]: GETGLOBAL R2 K17       ; R2 := 0x52E17A90
  82 [-]: GETGLOBAL R3 K2        ; R3 := mMovie
  83 [-]: LOADK     R4 K9        ; R4 := "_root"
- 84 [-]: GETGLOBAL R5 K17       ; R5 := UISys
- 85 [-]: GETTABLE  R5 R5 K18    ; R5 := R5["FlashInstance_SMOOTH_STEP"]
+ 84 [-]: GETGLOBAL R5 K18       ; R5 := UISys
+ 85 [-]: GETTABLE  R5 R5 K19    ; R5 := R5["FlashInstance_SMOOTH_STEP"]
  86 [-]: NEWTABLE  R6 1 0       ; R6 := {}
  87 [-]: LOADK     R7 K10       ; R7 := "_alpha"
  88 [-]: SETLIST   R6 1 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 1
  89 [-]: NEWTABLE  R7 1 0       ; R7 := {}
  90 [-]: LOADK     R8 K11       ; R8 := 0
  91 [-]: SETLIST   R7 1 1       ; R7[(1-1)*FPF+i] := R(7+i), 1 <= i <= 1
- 92 [-]: LOADK     R8 K24       ; R8 := 2
+ 92 [-]: LOADK     R8 K25       ; R8 := 2
  93 [-]: LOADK     R9 K11       ; R9 := 0
  94 [-]: CLOSURE   R10 0        ; R10 := closure(Function #2.1)
  95 [-]: MOVE      R0 R1        ; R0 := R1
@@ -385,55 +383,23 @@ code size: 7
 ;
 ; Name:            
 ; Defined at line: 95
-; #Upvalues:       2
+; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  11
+; Max Stack Size:  3
 
   1 [-]: GETGLOBAL R0 K0        ; R0 := mMovie
   2 [-]: SELF      R0 R0 K1     ; R1 := R0; R0 := R0["0x80D6B1A"]
   3 [-]: GETGLOBAL R2 K2        ; R2 := 0x6306558E
   4 [-]: CALL      R2 1 0       ; R2,... := R2()
   5 [-]: CALL      R0 0 1       ; R0(R1,...)
-  6 [-]: GETGLOBAL R0 K3        ; R0 := _T
-  7 [-]: GETTABLE  R0 R0 K4     ; R0 := R0["SubtitleVisible"]
-  8 [-]: TEST      R0 0         ; if not R0 then PC := 38
-  9 [-]: JMP       38           ; PC := 38
- 10 [-]: GETGLOBAL R0 K5        ; R0 := 0x400E7765
- 11 [-]: GETGLOBAL R1 K6        ; R1 := gFlashMgr
- 12 [-]: SELF      R1 R1 K7     ; R2 := R1; R1 := R1["0x35FF770F"]
- 13 [-]: CALL      R1 2 0       ; R1,... := R1(R2)
- 14 [-]: CALL      R0 0 2       ; R0 := R0(R1,...)
- 15 [-]: MOVE      R0 R0        ; R0 := R0
- 16 [-]: GETUPVAL  R1 U0        ; R1 := U0
- 17 [-]: EQ        1 R1 R0      ; if R1 == R0 then PC := 38
- 18 [-]: JMP       38           ; PC := 38
- 19 [-]: MOVE      R0 R0        ; R0 := R0
- 20 [-]: GETGLOBAL R1 K8        ; R1 := 0x52E17A90
- 21 [-]: GETGLOBAL R2 K0        ; R2 := mMovie
- 22 [-]: LOADK     R3 K9        ; R3 := "Background"
- 23 [-]: GETGLOBAL R4 K10       ; R4 := UISys
- 24 [-]: GETTABLE  R4 R4 K11    ; R4 := R4["FlashInstance_SMOOTH_STEP"]
- 25 [-]: NEWTABLE  R5 1 0       ; R5 := {}
- 26 [-]: LOADK     R6 K12       ; R6 := "_alpha"
- 27 [-]: SETLIST   R5 1 1       ; R5[(1-1)*FPF+i] := R(5+i), 1 <= i <= 1
- 28 [-]: NEWTABLE  R6 0 0       ; R6 := {}
- 29 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 30 [-]: GETTABLE  R7 R7 K13    ; R7 := R7["0xF81722A2"]
- 31 [-]: GETUPVAL  R8 U0        ; R8 := U0
- 32 [-]: LOADK     R9 K14       ; R9 := 55
- 33 [-]: LOADK     R10 K15      ; R10 := 0
- 34 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
- 35 [-]: SETLIST   R6 0 1       ; R6[(1-1)*FPF+i] := R(6+i), 1 <= i <= 0
- 36 [-]: LOADK     R7 K16       ; R7 := 0.5
- 37 [-]: CALL      R1 7 1       ; R1(R2,R3,R4,R5,R6,R7)
- 38 [-]: RETURN    R0 1         ; return 
+  6 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 106
+; Defined at line: 99
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -450,7 +416,7 @@ code size: 7
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 111
+; Defined at line: 104
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -468,7 +434,7 @@ code size: 7
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 117
+; Defined at line: 110
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0

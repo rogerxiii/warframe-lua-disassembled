@@ -10,7 +10,7 @@ code size: 17
 code size: 13
 code size: 152
 code size: 80
-code size: 115
+code size: 116
 code size: 217
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\WeaponPoison.luac 
@@ -848,7 +848,7 @@ code size: 217
 ; #Upvalues:       6
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  16
+; Max Stack Size:  17
 
   1 [-]: SELF      R1 R0 K0     ; R2 := R0; R1 := R0["0x7BAB77F"]
   2 [-]: CALL      R1 2 2       ; R1 := R1(R2)
@@ -904,8 +904,8 @@ code size: 217
  52 [-]: LOADNIL   R7 R7        ; R7 := nil
  53 [-]: SELF      R8 R1 K16    ; R9 := R1; R8 := R1["0xB8613F53"]
  54 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 55 [-]: TEST      R8 0         ; if not R8 then PC := 91
- 56 [-]: JMP       91           ; PC := 91
+ 55 [-]: TEST      R8 0         ; if not R8 then PC := 92
+ 56 [-]: JMP       92           ; PC := 92
  57 [-]: GETUPVAL  R8 U4        ; R8 := U4
  58 [-]: GETUPVAL  R9 U5        ; R9 := U5
  59 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
@@ -923,48 +923,49 @@ code size: 217
  71 [-]: CALL      R13 2 2      ; R13 := R13(R14)
  72 [-]: GETGLOBAL R14 K9       ; R14 := ZERO_ROTATION
  73 [-]: MOVE      R15 R1       ; R15 := R1
- 74 [-]: CALL      R10 6 2      ; R10 := R10(R11,R12,R13,R14,R15)
- 75 [-]: MOVE      R7 R10       ; R7 := R10
- 76 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
- 77 [-]: MOVE      R11 R7       ; R11 := R7
- 78 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 79 [-]: TEST      R10 1        ; if R10 then PC := 91
- 80 [-]: JMP       91           ; PC := 91
- 81 [-]: SELF      R10 R7 K23   ; R11 := R7; R10 := R7["0xE321B4BD"]
- 82 [-]: MOVE      R12 R1       ; R12 := R1
- 83 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 84 [-]: SELF      R10 R7 K24   ; R11 := R7; R10 := R7["0xE767ECA4"]
- 85 [-]: MOVE      R12 R8       ; R12 := R8
- 86 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 87 [-]: SELF      R10 R7 K25   ; R11 := R7; R10 := R7["0x3141E771"]
- 88 [-]: GETGLOBAL R12 K26      ; R12 := augmentDamageMult
- 89 [-]: MUL       R12 R9 R12   ; R12 := R9 * R12
- 90 [-]: CALL      R10 3 1      ; R10(R11,R12)
- 91 [-]: GETGLOBAL R10 K27      ; R10 := 0x201191EA
- 92 [-]: MOVE      R11 R6       ; R11 := R6
- 93 [-]: CALL      R10 2 1      ; R10(R11)
- 94 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
- 95 [-]: MOVE      R11 R7       ; R11 := R7
- 96 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 97 [-]: TEST      R10 1        ; if R10 then PC := 101
- 98 [-]: JMP       101          ; PC := 101
- 99 [-]: SELF      R10 R7 K2    ; R11 := R7; R10 := R7["0xD4C2743F"]
-100 [-]: CALL      R10 2 1      ; R10(R11)
-101 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
-102 [-]: MOVE      R11 R3       ; R11 := R3
-103 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-104 [-]: TEST      R10 1        ; if R10 then PC := 108
-105 [-]: JMP       108          ; PC := 108
-106 [-]: SELF      R10 R3 K28   ; R11 := R3; R10 := R3["0x5AB2AAEF"]
-107 [-]: CALL      R10 2 1      ; R10(R11)
-108 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
-109 [-]: MOVE      R11 R0       ; R11 := R0
-110 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-111 [-]: TEST      R10 1        ; if R10 then PC := 115
-112 [-]: JMP       115          ; PC := 115
-113 [-]: SELF      R10 R0 K29   ; R11 := R0; R10 := R0["0x2DB1272F"]
-114 [-]: CALL      R10 2 1      ; R10(R11)
-115 [-]: RETURN    R0 1         ; return 
+ 74 [-]: MOVE      R16 R0       ; R16 := R0
+ 75 [-]: CALL      R10 7 2      ; R10 := R10(R11,R12,R13,R14,R15,R16)
+ 76 [-]: MOVE      R7 R10       ; R7 := R10
+ 77 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+ 78 [-]: MOVE      R11 R7       ; R11 := R7
+ 79 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 80 [-]: TEST      R10 1        ; if R10 then PC := 92
+ 81 [-]: JMP       92           ; PC := 92
+ 82 [-]: SELF      R10 R7 K23   ; R11 := R7; R10 := R7["0xE321B4BD"]
+ 83 [-]: MOVE      R12 R1       ; R12 := R1
+ 84 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 85 [-]: SELF      R10 R7 K24   ; R11 := R7; R10 := R7["0xE767ECA4"]
+ 86 [-]: MOVE      R12 R8       ; R12 := R8
+ 87 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 88 [-]: SELF      R10 R7 K25   ; R11 := R7; R10 := R7["0x3141E771"]
+ 89 [-]: GETGLOBAL R12 K26      ; R12 := augmentDamageMult
+ 90 [-]: MUL       R12 R9 R12   ; R12 := R9 * R12
+ 91 [-]: CALL      R10 3 1      ; R10(R11,R12)
+ 92 [-]: GETGLOBAL R10 K27      ; R10 := 0x201191EA
+ 93 [-]: MOVE      R11 R6       ; R11 := R6
+ 94 [-]: CALL      R10 2 1      ; R10(R11)
+ 95 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+ 96 [-]: MOVE      R11 R7       ; R11 := R7
+ 97 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 98 [-]: TEST      R10 1        ; if R10 then PC := 102
+ 99 [-]: JMP       102          ; PC := 102
+100 [-]: SELF      R10 R7 K2    ; R11 := R7; R10 := R7["0xD4C2743F"]
+101 [-]: CALL      R10 2 1      ; R10(R11)
+102 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+103 [-]: MOVE      R11 R3       ; R11 := R3
+104 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+105 [-]: TEST      R10 1        ; if R10 then PC := 109
+106 [-]: JMP       109          ; PC := 109
+107 [-]: SELF      R10 R3 K28   ; R11 := R3; R10 := R3["0x5AB2AAEF"]
+108 [-]: CALL      R10 2 1      ; R10(R11)
+109 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+110 [-]: MOVE      R11 R0       ; R11 := R0
+111 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+112 [-]: TEST      R10 1        ; if R10 then PC := 116
+113 [-]: JMP       116          ; PC := 116
+114 [-]: SELF      R10 R0 K29   ; R11 := R0; R10 := R0["0x2DB1272F"]
+115 [-]: CALL      R10 2 1      ; R10(R11)
+116 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #13:

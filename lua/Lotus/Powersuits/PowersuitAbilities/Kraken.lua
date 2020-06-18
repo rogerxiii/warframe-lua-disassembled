@@ -15,7 +15,7 @@ code size: 15
 code size: 49
 code size: 840
 code size: 151
-code size: 57
+code size: 63
 code size: 178
 code size: 342
 code size: 8
@@ -2402,61 +2402,67 @@ code size: 100
 
   1 [-]: SELF      R2 R0 K0     ; R3 := R0; R2 := R0["0xB6293ABC"]
   2 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  3 [-]: TEST      R2 1         ; if R2 then PC := 10
-  4 [-]: JMP       10           ; PC := 10
+  3 [-]: TEST      R2 1         ; if R2 then PC := 16
+  4 [-]: JMP       16           ; PC := 16
   5 [-]: GETGLOBAL R2 K1        ; R2 := 0x400E7765
   6 [-]: MOVE      R3 R1        ; R3 := R1
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: TEST      R2 0         ; if not R2 then PC := 11
-  9 [-]: JMP       11           ; PC := 11
- 10 [-]: RETURN    R0 1         ; return 
- 11 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0xFD910504"]
- 12 [-]: GETUPVAL  R4 U0        ; R4 := U0
+  8 [-]: TEST      R2 1         ; if R2 then PC := 16
+  9 [-]: JMP       16           ; PC := 16
+ 10 [-]: SELF      R2 R0 K2     ; R3 := R0; R2 := R0["0x495F554F"]
+ 11 [-]: GETGLOBAL R4 K3        ; R4 := Lotus_Game
+ 12 [-]: GETTABLE  R4 R4 K4     ; R4 := R4["AR_IMMUNE_LOOTING"]
  13 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 14 [-]: SELF      R3 R1 K3     ; R4 := R1; R3 := R1["0x46849197"]
- 15 [-]: GETUPVAL  R5 U0        ; R5 := U0
- 16 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
- 17 [-]: LT        0 K4 R2      ; if 0 >= R2 then PC := 57
- 18 [-]: JMP       57           ; PC := 57
- 19 [-]: GETGLOBAL R4 K5        ; R4 := Lotus_Game
- 20 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["PowerSuit_AUGMENT_ONE"]
- 21 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 57
- 22 [-]: JMP       57           ; PC := 57
- 23 [-]: GETUPVAL  R4 U1        ; R4 := U1
- 24 [-]: MOVE      R5 R2        ; R5 := R2
- 25 [-]: MOVE      R6 R3        ; R6 := R3
- 26 [-]: CALL      R4 3 1       ; R4(R5,R6)
- 27 [-]: GETGLOBAL R4 K7        ; R4 := 0xEC274B1A
- 28 [-]: LOADK     R5 K8        ; R5 := "LootingOnDeath"
- 29 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 30 [-]: SELF      R5 R0 K9     ; R6 := R0; R5 := R0["0x3D6BC661"]
- 31 [-]: MOVE      R7 R4        ; R7 := R4
- 32 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 33 [-]: TEST      R5 1         ; if R5 then PC := 57
- 34 [-]: JMP       57           ; PC := 57
- 35 [-]: GETGLOBAL R5 K10       ; R5 := 0x58C463C2
- 36 [-]: CALL      R5 1 2       ; R5 := R5()
- 37 [-]: GETUPVAL  R6 U2        ; R6 := U2
- 38 [-]: LE        0 R5 R6      ; if R5 > R6 then PC := 57
- 39 [-]: JMP       57           ; PC := 57
- 40 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
- 41 [-]: GETGLOBAL R6 K11       ; R6 := _T
- 42 [-]: GETTABLE  R6 R6 K12    ; R6 := R6["RaidRetryDrop"]
- 43 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 44 [-]: TEST      R5 1         ; if R5 then PC := 50
- 45 [-]: JMP       50           ; PC := 50
- 46 [-]: GETGLOBAL R5 K11       ; R5 := _T
- 47 [-]: GETTABLE  R5 R5 K13    ; R5 := R5["0x9409D86E"]
- 48 [-]: MOVE      R6 R0        ; R6 := R0
- 49 [-]: CALL      R5 2 1       ; R5(R6)
- 50 [-]: SELF      R5 R0 K14    ; R6 := R0; R5 := R0["0x8DB5D01F"]
- 51 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 52 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5["0xEDB86382"]
- 53 [-]: CALL      R5 2 1       ; R5(R6)
- 54 [-]: SELF      R5 R0 K16    ; R6 := R0; R5 := R0["0x4223704F"]
- 55 [-]: MOVE      R7 R4        ; R7 := R4
- 56 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 57 [-]: RETURN    R0 1         ; return 
+ 14 [-]: TEST      R2 0         ; if not R2 then PC := 17
+ 15 [-]: JMP       17           ; PC := 17
+ 16 [-]: RETURN    R0 1         ; return 
+ 17 [-]: SELF      R2 R1 K5     ; R3 := R1; R2 := R1["0xFD910504"]
+ 18 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 19 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 20 [-]: SELF      R3 R1 K6     ; R4 := R1; R3 := R1["0x46849197"]
+ 21 [-]: GETUPVAL  R5 U0        ; R5 := U0
+ 22 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
+ 23 [-]: LT        0 K7 R2      ; if 0 >= R2 then PC := 63
+ 24 [-]: JMP       63           ; PC := 63
+ 25 [-]: GETGLOBAL R4 K3        ; R4 := Lotus_Game
+ 26 [-]: GETTABLE  R4 R4 K8     ; R4 := R4["PowerSuit_AUGMENT_ONE"]
+ 27 [-]: EQ        0 R3 R4      ; if R3 ~= R4 then PC := 63
+ 28 [-]: JMP       63           ; PC := 63
+ 29 [-]: GETUPVAL  R4 U1        ; R4 := U1
+ 30 [-]: MOVE      R5 R2        ; R5 := R2
+ 31 [-]: MOVE      R6 R3        ; R6 := R3
+ 32 [-]: CALL      R4 3 1       ; R4(R5,R6)
+ 33 [-]: GETGLOBAL R4 K9        ; R4 := 0xEC274B1A
+ 34 [-]: LOADK     R5 K10       ; R5 := "LootingOnDeath"
+ 35 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 36 [-]: SELF      R5 R0 K11    ; R6 := R0; R5 := R0["0x3D6BC661"]
+ 37 [-]: MOVE      R7 R4        ; R7 := R4
+ 38 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
+ 39 [-]: TEST      R5 1         ; if R5 then PC := 63
+ 40 [-]: JMP       63           ; PC := 63
+ 41 [-]: GETGLOBAL R5 K12       ; R5 := 0x58C463C2
+ 42 [-]: CALL      R5 1 2       ; R5 := R5()
+ 43 [-]: GETUPVAL  R6 U2        ; R6 := U2
+ 44 [-]: LE        0 R5 R6      ; if R5 > R6 then PC := 63
+ 45 [-]: JMP       63           ; PC := 63
+ 46 [-]: GETGLOBAL R5 K1        ; R5 := 0x400E7765
+ 47 [-]: GETGLOBAL R6 K13       ; R6 := _T
+ 48 [-]: GETTABLE  R6 R6 K14    ; R6 := R6["RaidRetryDrop"]
+ 49 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 50 [-]: TEST      R5 1         ; if R5 then PC := 56
+ 51 [-]: JMP       56           ; PC := 56
+ 52 [-]: GETGLOBAL R5 K13       ; R5 := _T
+ 53 [-]: GETTABLE  R5 R5 K15    ; R5 := R5["0x9409D86E"]
+ 54 [-]: MOVE      R6 R0        ; R6 := R0
+ 55 [-]: CALL      R5 2 1       ; R5(R6)
+ 56 [-]: SELF      R5 R0 K16    ; R6 := R0; R5 := R0["0x8DB5D01F"]
+ 57 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 58 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5["0xEDB86382"]
+ 59 [-]: CALL      R5 2 1       ; R5(R6)
+ 60 [-]: SELF      R5 R0 K18    ; R6 := R0; R5 := R0["0x4223704F"]
+ 61 [-]: MOVE      R7 R4        ; R7 := R4
+ 62 [-]: CALL      R5 3 1       ; R5(R6,R7)
+ 63 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #18:

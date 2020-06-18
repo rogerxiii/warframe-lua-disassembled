@@ -1,5 +1,5 @@
 code size: 4
-code size: 196
+code size: 171
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\RiftStatusFromCreator.luac 
 
@@ -23,7 +23,7 @@ code size: 196
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  8
+; Max Stack Size:  6
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := 0x400E7765
   2 [-]: MOVE      R2 R0        ; R2 := R0
@@ -178,48 +178,23 @@ code size: 196
 151 [-]: MOVE      R2 R1        ; R2 := R1
 152 [-]: JMP       154          ; PC := 154
 153 [-]: JMP       72           ; PC := 72
-154 [-]: GETGLOBAL R3 K0        ; R3 := 0x400E7765
-155 [-]: MOVE      R4 R2        ; R4 := R2
-156 [-]: CALL      R3 2 2       ; R3 := R3(R4)
-157 [-]: TEST      R3 1         ; if R3 then PC := 179
-158 [-]: JMP       179          ; PC := 179
-159 [-]: SELF      R3 R2 K1     ; R4 := R2; R3 := R2["0x8B598ED4"]
-160 [-]: GETGLOBAL R5 K5        ; R5 := gBaseAvatarType
-161 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-162 [-]: TEST      R3 0         ; if not R3 then PC := 179
-163 [-]: JMP       179          ; PC := 179
-164 [-]: SELF      R3 R0 K1     ; R4 := R0; R3 := R0["0x8B598ED4"]
-165 [-]: GETGLOBAL R5 K18       ; R5 := gDamageTriggerType
-166 [-]: CALL      R3 3 2       ; R3 := R3(R4,R5)
-167 [-]: TEST      R3 0         ; if not R3 then PC := 179
-168 [-]: JMP       179          ; PC := 179
-169 [-]: GETGLOBAL R3 K19       ; R3 := gGameRules
-170 [-]: SELF      R3 R3 K20    ; R4 := R3; R3 := R3["0x1EBB7703"]
-171 [-]: LOADK     R5 K21       ; R5 := 1
-172 [-]: GETGLOBAL R6 K8        ; R6 := Engine
-173 [-]: GETTABLE  R6 R6 K22    ; R6 := R6["DAMAGE"]
-174 [-]: MOVE      R7 R2        ; R7 := R2
-175 [-]: CALL      R3 5 2       ; R3 := R3(R4,R5,R6,R7)
-176 [-]: SELF      R4 R0 K23    ; R5 := R0; R4 := R0["0x155B2C47"]
-177 [-]: MOVE      R6 R3        ; R6 := R3
-178 [-]: CALL      R4 3 1       ; R4(R5,R6)
-179 [-]: GETGLOBAL R4 K24       ; R4 := maxLife
-180 [-]: LT        0 K25 R4     ; if 0 >= R4 then PC := 191
-181 [-]: JMP       191          ; PC := 191
-182 [-]: GETGLOBAL R4 K26       ; R4 := 0x201191EA
-183 [-]: LOADK     R5 K25       ; R5 := 0
-184 [-]: CALL      R4 2 1       ; R4(R5)
-185 [-]: GETGLOBAL R4 K24       ; R4 := maxLife
-186 [-]: GETGLOBAL R5 K27       ; R5 := 0x4CDEF9FF
-187 [-]: CALL      R5 1 2       ; R5 := R5()
-188 [-]: SUB       R4 R4 R5     ; R4 := R4 - R5
-189 [-]: SETGLOBAL R4 K24       ; maxLife := R4
-190 [-]: JMP       179          ; PC := 179
-191 [-]: GETGLOBAL R4 K28       ; R4 := destroyTrigger
-192 [-]: TEST      R4 0         ; if not R4 then PC := 196
-193 [-]: JMP       196          ; PC := 196
-194 [-]: SELF      R4 R0 K29    ; R5 := R0; R4 := R0["0xD4C2743F"]
-195 [-]: CALL      R4 2 1       ; R4(R5)
-196 [-]: RETURN    R0 1         ; return 
+154 [-]: GETGLOBAL R3 K18       ; R3 := maxLife
+155 [-]: LT        0 K19 R3     ; if 0 >= R3 then PC := 166
+156 [-]: JMP       166          ; PC := 166
+157 [-]: GETGLOBAL R3 K20       ; R3 := 0x201191EA
+158 [-]: LOADK     R4 K19       ; R4 := 0
+159 [-]: CALL      R3 2 1       ; R3(R4)
+160 [-]: GETGLOBAL R3 K18       ; R3 := maxLife
+161 [-]: GETGLOBAL R4 K21       ; R4 := 0x4CDEF9FF
+162 [-]: CALL      R4 1 2       ; R4 := R4()
+163 [-]: SUB       R3 R3 R4     ; R3 := R3 - R4
+164 [-]: SETGLOBAL R3 K18       ; maxLife := R3
+165 [-]: JMP       154          ; PC := 154
+166 [-]: GETGLOBAL R3 K22       ; R3 := destroyTrigger
+167 [-]: TEST      R3 0         ; if not R3 then PC := 171
+168 [-]: JMP       171          ; PC := 171
+169 [-]: SELF      R3 R0 K23    ; R4 := R0; R3 := R0["0xD4C2743F"]
+170 [-]: CALL      R3 2 1       ; R3(R4)
+171 [-]: RETURN    R0 1         ; return 
 
 

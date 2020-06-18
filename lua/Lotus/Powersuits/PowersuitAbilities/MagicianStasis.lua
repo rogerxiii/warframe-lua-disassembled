@@ -5,7 +5,7 @@ code size: 33
 code size: 3
 code size: 13
 code size: 244
-code size: 64
+code size: 70
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\PowersuitAbilities\MagicianStasis.luac 
 
@@ -521,42 +521,48 @@ code size: 64
  25 [-]: GETGLOBAL R7 K2        ; R7 := mOwner
  26 [-]: MOVE      R8 R1        ; R8 := R1
  27 [-]: CALL      R5 4 2       ; R5 := R5(R6,R7,R8)
- 28 [-]: EQ        0 R5 K10     ; if R5 ~= "0x1" then PC := 64
- 29 [-]: JMP       64           ; PC := 64
+ 28 [-]: EQ        0 R5 K10     ; if R5 ~= "0x1" then PC := 70
+ 29 [-]: JMP       70           ; PC := 70
  30 [-]: GETGLOBAL R5 K7        ; R5 := 0x400E7765
  31 [-]: GETGLOBAL R6 K11       ; R6 := gGameRules
  32 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 33 [-]: TEST      R5 1         ; if R5 then PC := 64
- 34 [-]: JMP       64           ; PC := 64
+ 33 [-]: TEST      R5 1         ; if R5 then PC := 70
+ 34 [-]: JMP       70           ; PC := 70
  35 [-]: GETGLOBAL R5 K11       ; R5 := gGameRules
  36 [-]: SELF      R5 R5 K12    ; R6 := R5; R5 := R5["0x3B3B606D"]
  37 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 38 [-]: TEST      R5 0         ; if not R5 then PC := 64
- 39 [-]: JMP       64           ; PC := 64
+ 38 [-]: TEST      R5 0         ; if not R5 then PC := 70
+ 39 [-]: JMP       70           ; PC := 70
  40 [-]: GETGLOBAL R5 K11       ; R5 := gGameRules
  41 [-]: SELF      R5 R5 K13    ; R6 := R5; R5 := R5["0xC241F261"]
  42 [-]: MOVE      R7 R0        ; R7 := R0
  43 [-]: CALL      R5 3 1       ; R5(R6,R7)
- 44 [-]: GETUPVAL  R5 U1        ; R5 := U1
- 45 [-]: GETTABLE  R5 R5 K14    ; R5 := R5["0x71FF0D95"]
- 46 [-]: MOVE      R6 R0        ; R6 := R0
- 47 [-]: GETGLOBAL R7 K15       ; R7 := deactivateAnim
- 48 [-]: MOVE      R8 R0        ; R8 := R0
- 49 [-]: GETGLOBAL R9 K16       ; R9 := Engine
- 50 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["ATMM_PHYSICS_DRIVEN"]
- 51 [-]: GETGLOBAL R10 K16      ; R10 := Engine
- 52 [-]: GETTABLE  R10 R10 K18  ; R10 := R10["PRT_ONCE"]
- 53 [-]: MOVE      R11 R0       ; R11 := R0
- 54 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 55 [-]: SELF      R5 R1 K19    ; R6 := R1; R5 := R1["0xAB436EF2"]
- 56 [-]: GETGLOBAL R7 K20       ; R7 := endBurstEffect
- 57 [-]: GETGLOBAL R8 K21       ; R8 := 0xEC274B1A
- 58 [-]: LOADK     R9 K22       ; R9 := "GAME_R1_WEAPON1"
- 59 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 60 [-]: GETGLOBAL R9 K23       ; R9 := ZERO_VECTOR
- 61 [-]: GETGLOBAL R10 K24      ; R10 := ZERO_ROTATION
- 62 [-]: MOVE      R11 R0       ; R11 := R0
- 63 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
- 64 [-]: RETURN    R0 1         ; return 
+ 44 [-]: SELF      R5 R1 K14    ; R6 := R1; R5 := R1["0x25D68A52"]
+ 45 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 46 [-]: SELF      R5 R5 K15    ; R6 := R5; R5 := R5["0xBFA7987F"]
+ 47 [-]: CALL      R5 2 2       ; R5 := R5(R6)
+ 48 [-]: TEST      R5 1         ; if R5 then PC := 61
+ 49 [-]: JMP       61           ; PC := 61
+ 50 [-]: GETUPVAL  R5 U1        ; R5 := U1
+ 51 [-]: GETTABLE  R5 R5 K16    ; R5 := R5["0x71FF0D95"]
+ 52 [-]: MOVE      R6 R0        ; R6 := R0
+ 53 [-]: GETGLOBAL R7 K17       ; R7 := deactivateAnim
+ 54 [-]: MOVE      R8 R0        ; R8 := R0
+ 55 [-]: GETGLOBAL R9 K18       ; R9 := Engine
+ 56 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["ATMM_PHYSICS_DRIVEN"]
+ 57 [-]: GETGLOBAL R10 K18      ; R10 := Engine
+ 58 [-]: GETTABLE  R10 R10 K20  ; R10 := R10["PRT_ONCE"]
+ 59 [-]: MOVE      R11 R0       ; R11 := R0
+ 60 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
+ 61 [-]: SELF      R5 R1 K21    ; R6 := R1; R5 := R1["0xAB436EF2"]
+ 62 [-]: GETGLOBAL R7 K22       ; R7 := endBurstEffect
+ 63 [-]: GETGLOBAL R8 K23       ; R8 := 0xEC274B1A
+ 64 [-]: LOADK     R9 K24       ; R9 := "GAME_R1_WEAPON1"
+ 65 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 66 [-]: GETGLOBAL R9 K25       ; R9 := ZERO_VECTOR
+ 67 [-]: GETGLOBAL R10 K26      ; R10 := ZERO_ROTATION
+ 68 [-]: MOVE      R11 R0       ; R11 := R0
+ 69 [-]: CALL      R5 7 1       ; R5(R6,R7,R8,R9,R10,R11)
+ 70 [-]: RETURN    R0 1         ; return 
 
 

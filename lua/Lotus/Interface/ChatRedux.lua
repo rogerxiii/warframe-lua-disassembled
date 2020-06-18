@@ -188,7 +188,7 @@ code size: 244
 code size: 42
 code size: 151
 code size: 133
-code size: 1385
+code size: 1388
 code size: 8
 code size: 545
 code size: 18
@@ -18431,7 +18431,7 @@ code size: 44
 742 [-]: LOADK     R55 K10      ; R55 := 1
 743 [-]: MOVE      R56 R44      ; R56 := R44
 744 [-]: LOADK     R57 K10      ; R57 := 1
-745 [-]: FORPREP   R55 1383     ; R55 -= R57; PC := 1383
+745 [-]: FORPREP   R55 1386     ; R55 -= R57; PC := 1386
 746 [-]: GETTABLE  R59 R43 R58  ; R59 := R43[R58]
 747 [-]: GETTABLE  R59 R59 K102 ; R59 := R59["text"]
 748 [-]: GETGLOBAL R60 K0       ; R60 := string
@@ -18453,8 +18453,8 @@ code size: 44
 764 [-]: MOVE      R61 R1       ; R61 := R1
 765 [-]: LOADK     R62 K118     ; R62 := "@"
 766 [-]: CALL      R60 3 2      ; R60 := R60(R61,R62)
-767 [-]: EQ        1 R60 K13    ; if R60 == nil then PC := 1381
-768 [-]: JMP       1381         ; PC := 1381
+767 [-]: EQ        1 R60 K13    ; if R60 == nil then PC := 1384
+768 [-]: JMP       1384         ; PC := 1384
 769 [-]: LOADNIL   R60 R60      ; R60 := nil
 770 [-]: NEWTABLE  R61 0 0      ; R61 := {}
 771 [-]: LOADK     R62 K25      ; R62 := 0
@@ -18463,8 +18463,8 @@ code size: 44
 774 [-]: GETTABLE  R65 R43 R58  ; R65 := R43[R58]
 775 [-]: GETTABLE  R65 R65 K102 ; R65 := R65["text"]
 776 [-]: LEN       R65 R65      ; R65 := # R65
-777 [-]: LE        0 R64 R65    ; if R64 > R65 then PC := 1125
-778 [-]: JMP       1125         ; PC := 1125
+777 [-]: LE        0 R64 R65    ; if R64 > R65 then PC := 1128
+778 [-]: JMP       1128         ; PC := 1128
 779 [-]: EQ        1 R63 K119   ; if R63 == "username" then PC := 796
 780 [-]: JMP       796          ; PC := 796
 781 [-]: GETGLOBAL R65 K0       ; R65 := string
@@ -18480,7 +18480,7 @@ code size: 44
 791 [-]: CALL      R65 2 2      ; R65 := R65(R66)
 792 [-]: TEST      R65 0        ; if not R65 then PC := 797
 793 [-]: JMP       797          ; PC := 797
-794 [-]: JMP       1125         ; PC := 1125
+794 [-]: JMP       1128         ; PC := 1128
 795 [-]: JMP       797          ; PC := 797
 796 [-]: ADD       R64 R64 K10  ; R64 := R64 + 1
 797 [-]: GETGLOBAL R65 K0       ; R65 := string
@@ -18676,402 +18676,405 @@ code size: 44
 987 [-]: GETTABLE  R72 R4 R67   ; R72 := R4[R67]
 988 [-]: GETTABLE  R73 R5 R67   ; R73 := R5[R67]
 989 [-]: GETTABLE  R70 R72 R73  ; R70 := R72[R73]
-990 [-]: EQ        1 R70 K13    ; if R70 == nil then PC := 1069
-991 [-]: JMP       1069         ; PC := 1069
+990 [-]: EQ        1 R70 K13    ; if R70 == nil then PC := 1072
+991 [-]: JMP       1072         ; PC := 1072
 992 [-]: GETTABLE  R72 R70 K49  ; R72 := R70["Name"]
-993 [-]: EQ        0 R6 R72     ; if R6 ~= R72 then PC := 1036
-994 [-]: JMP       1036         ; PC := 1036
-995 [-]: GETTABLE  R72 R70 K50  ; R72 := R70["LinkStart"]
-996 [-]: MOVE      R73 R68      ; R73 := R68
-997 [-]: GETTABLE  R74 R70 K49  ; R74 := R70["Name"]
-998 [-]: MOVE      R75 R69      ; R75 := R69
-999 [-]: LOADK     R76 K125     ; R76 := "</a>"
-1000 [-]: CONCAT    R72 R72 R76  ; R72 := R72 .. R73 .. R74 .. R75 .. R76
-1001 [-]: GETGLOBAL R73 K0       ; R73 := string
-1002 [-]: GETTABLE  R73 R73 K28  ; R73 := R73["0x7B782033"]
-1003 [-]: MOVE      R74 R59      ; R74 := R59
-1004 [-]: LOADK     R75 K25      ; R75 := 0
-1005 [-]: ADD       R76 R60 R62  ; R76 := R60 + R62
-1006 [-]: SUB       R76 R76 K10  ; R76 := R76 - 1
-1007 [-]: CALL      R73 4 2      ; R73 := R73(R74,R75,R76)
-1008 [-]: MOVE      R74 R72      ; R74 := R72
-1009 [-]: GETGLOBAL R75 K0       ; R75 := string
-1010 [-]: GETTABLE  R75 R75 K28  ; R75 := R75["0x7B782033"]
-1011 [-]: MOVE      R76 R59      ; R76 := R59
-1012 [-]: ADD       R77 R64 R62  ; R77 := R64 + R62
-1013 [-]: ADD       R77 R77 K10  ; R77 := R77 + 1
-1014 [-]: CALL      R75 3 2      ; R75 := R75(R76,R77)
-1015 [-]: CONCAT    R59 R73 R75  ; R59 := R73 .. R74 .. R75
-1016 [-]: LEN       R73 R72      ; R73 := # R72
-1017 [-]: LEN       R74 R6       ; R74 := # R6
-1018 [-]: SUB       R73 R73 R74  ; R73 := R73 - R74
-1019 [-]: SUB       R73 R73 K123 ; R73 := R73 - 2
-1020 [-]: ADD       R62 R62 R73  ; R62 := R62 + R73
-1021 [-]: GETTABLE  R73 R5 R67   ; R73 := R5[R67]
-1022 [-]: ADD       R73 R73 K10  ; R73 := R73 + 1
-1023 [-]: SETTABLE  R5 R67 R73   ; R5[R67] := R73
-1024 [-]: GETGLOBAL R73 K47      ; R73 := table
-1025 [-]: GETTABLE  R73 R73 K48  ; R73 := R73["0xE6450C9D"]
-1026 [-]: GETTABLE  R74 R43 R58  ; R74 := R43[R58]
-1027 [-]: GETTABLE  R74 R74 K112 ; R74 := R74["hyperLinks"]
-1028 [-]: NEWTABLE  R75 0 3      ; R75 := {}
-1029 [-]: GETTABLE  R76 R70 K49  ; R76 := R70["Name"]
-1030 [-]: SETTABLE  R75 K49 R76  ; R75["Name"] := R76
-1031 [-]: GETTABLE  R76 R70 K51  ; R76 := R70["LinkString"]
-1032 [-]: SETTABLE  R75 K8 R76   ; R75["Item"] := R76
-1033 [-]: SETTABLE  R75 K127 R67 ; R75["LinkType"] := R67
-1034 [-]: CALL      R73 3 1      ; R73(R74,R75)
-1035 [-]: JMP       1118         ; PC := 1118
-1036 [-]: EQ        0 R67 K8     ; if R67 ~= "Item" then PC := 1048
-1037 [-]: JMP       1048         ; PC := 1048
-1038 [-]: GETGLOBAL R73 K0       ; R73 := string
-1039 [-]: GETTABLE  R73 R73 K11  ; R73 := R73["0xDE44F664"]
-1040 [-]: GETTABLE  R74 R70 K49  ; R74 := R70["Name"]
-1041 [-]: LOADK     R75 K78      ; R75 := "%["
-1042 [-]: MOVE      R76 R6       ; R76 := R6
-1043 [-]: LOADK     R77 K128     ; R77 := "%]"
-1044 [-]: CONCAT    R75 R75 R77  ; R75 := R75 .. R76 .. R77
-1045 [-]: CALL      R73 3 2      ; R73 := R73(R74,R75)
-1046 [-]: TEST      R73 1        ; if R73 then PC := 1060
-1047 [-]: JMP       1060         ; PC := 1060
-1048 [-]: EQ        0 R67 K9     ; if R67 ~= "Guild" then PC := 1118
-1049 [-]: JMP       1118         ; PC := 1118
-1050 [-]: GETGLOBAL R73 K0       ; R73 := string
-1051 [-]: GETTABLE  R73 R73 K11  ; R73 := R73["0xDE44F664"]
-1052 [-]: GETTABLE  R74 R70 K49  ; R74 := R70["Name"]
-1053 [-]: LOADK     R75 K31      ; R75 := "{"
-1054 [-]: MOVE      R76 R6       ; R76 := R6
-1055 [-]: LOADK     R77 K34      ; R77 := "}"
-1056 [-]: CONCAT    R75 R75 R77  ; R75 := R75 .. R76 .. R77
-1057 [-]: CALL      R73 3 2      ; R73 := R73(R74,R75)
-1058 [-]: TEST      R73 0        ; if not R73 then PC := 1118
-1059 [-]: JMP       1118         ; PC := 1118
-1060 [-]: MOVE      R71 R0       ; R71 := R0
-1061 [-]: LEN       R73 R61      ; R73 := # R61
-1062 [-]: SETTABLE  R61 R73 K13  ; R61[R73] := nil
-1063 [-]: LEN       R73 R61      ; R73 := # R61
-1064 [-]: LT        0 K25 R73    ; if 0 >= R73 then PC := 1118
-1065 [-]: JMP       1118         ; PC := 1118
+993 [-]: EQ        1 R6 R72     ; if R6 == R72 then PC := 1019
+994 [-]: JMP       1019         ; PC := 1019
+995 [-]: EQ        0 R67 K8     ; if R67 ~= "Item" then PC := 1007
+996 [-]: JMP       1007         ; PC := 1007
+997 [-]: GETGLOBAL R72 K0       ; R72 := string
+998 [-]: GETTABLE  R72 R72 K11  ; R72 := R72["0xDE44F664"]
+999 [-]: GETTABLE  R73 R70 K49  ; R73 := R70["Name"]
+1000 [-]: LOADK     R74 K78      ; R74 := "%["
+1001 [-]: MOVE      R75 R6       ; R75 := R6
+1002 [-]: LOADK     R76 K127     ; R76 := "%]"
+1003 [-]: CONCAT    R74 R74 R76  ; R74 := R74 .. R75 .. R76
+1004 [-]: CALL      R72 3 2      ; R72 := R72(R73,R74)
+1005 [-]: TEST      R72 1        ; if R72 then PC := 1019
+1006 [-]: JMP       1019         ; PC := 1019
+1007 [-]: EQ        0 R67 K9     ; if R67 ~= "Guild" then PC := 1072
+1008 [-]: JMP       1072         ; PC := 1072
+1009 [-]: GETGLOBAL R72 K0       ; R72 := string
+1010 [-]: GETTABLE  R72 R72 K11  ; R72 := R72["0xDE44F664"]
+1011 [-]: GETTABLE  R73 R70 K49  ; R73 := R70["Name"]
+1012 [-]: LOADK     R74 K31      ; R74 := "{"
+1013 [-]: MOVE      R75 R6       ; R75 := R6
+1014 [-]: LOADK     R76 K34      ; R76 := "}"
+1015 [-]: CONCAT    R74 R74 R76  ; R74 := R74 .. R75 .. R76
+1016 [-]: CALL      R72 3 2      ; R72 := R72(R73,R74)
+1017 [-]: TEST      R72 0        ; if not R72 then PC := 1072
+1018 [-]: JMP       1072         ; PC := 1072
+1019 [-]: GETTABLE  R72 R70 K49  ; R72 := R70["Name"]
+1020 [-]: EQ        0 R6 R72     ; if R6 ~= R72 then PC := 1063
+1021 [-]: JMP       1063         ; PC := 1063
+1022 [-]: GETTABLE  R72 R70 K50  ; R72 := R70["LinkStart"]
+1023 [-]: MOVE      R73 R68      ; R73 := R68
+1024 [-]: GETTABLE  R74 R70 K49  ; R74 := R70["Name"]
+1025 [-]: MOVE      R75 R69      ; R75 := R69
+1026 [-]: LOADK     R76 K125     ; R76 := "</a>"
+1027 [-]: CONCAT    R72 R72 R76  ; R72 := R72 .. R73 .. R74 .. R75 .. R76
+1028 [-]: GETGLOBAL R73 K0       ; R73 := string
+1029 [-]: GETTABLE  R73 R73 K28  ; R73 := R73["0x7B782033"]
+1030 [-]: MOVE      R74 R59      ; R74 := R59
+1031 [-]: LOADK     R75 K25      ; R75 := 0
+1032 [-]: ADD       R76 R60 R62  ; R76 := R60 + R62
+1033 [-]: SUB       R76 R76 K10  ; R76 := R76 - 1
+1034 [-]: CALL      R73 4 2      ; R73 := R73(R74,R75,R76)
+1035 [-]: MOVE      R74 R72      ; R74 := R72
+1036 [-]: GETGLOBAL R75 K0       ; R75 := string
+1037 [-]: GETTABLE  R75 R75 K28  ; R75 := R75["0x7B782033"]
+1038 [-]: MOVE      R76 R59      ; R76 := R59
+1039 [-]: ADD       R77 R64 R62  ; R77 := R64 + R62
+1040 [-]: ADD       R77 R77 K10  ; R77 := R77 + 1
+1041 [-]: CALL      R75 3 2      ; R75 := R75(R76,R77)
+1042 [-]: CONCAT    R59 R73 R75  ; R59 := R73 .. R74 .. R75
+1043 [-]: LEN       R73 R72      ; R73 := # R72
+1044 [-]: LEN       R74 R6       ; R74 := # R6
+1045 [-]: SUB       R73 R73 R74  ; R73 := R73 - R74
+1046 [-]: SUB       R73 R73 K123 ; R73 := R73 - 2
+1047 [-]: ADD       R62 R62 R73  ; R62 := R62 + R73
+1048 [-]: GETTABLE  R73 R5 R67   ; R73 := R5[R67]
+1049 [-]: ADD       R73 R73 K10  ; R73 := R73 + 1
+1050 [-]: SETTABLE  R5 R67 R73   ; R5[R67] := R73
+1051 [-]: GETGLOBAL R73 K47      ; R73 := table
+1052 [-]: GETTABLE  R73 R73 K48  ; R73 := R73["0xE6450C9D"]
+1053 [-]: GETTABLE  R74 R43 R58  ; R74 := R43[R58]
+1054 [-]: GETTABLE  R74 R74 K112 ; R74 := R74["hyperLinks"]
+1055 [-]: NEWTABLE  R75 0 3      ; R75 := {}
+1056 [-]: GETTABLE  R76 R70 K49  ; R76 := R70["Name"]
+1057 [-]: SETTABLE  R75 K49 R76  ; R75["Name"] := R76
+1058 [-]: GETTABLE  R76 R70 K51  ; R76 := R70["LinkString"]
+1059 [-]: SETTABLE  R75 K8 R76   ; R75["Item"] := R76
+1060 [-]: SETTABLE  R75 K128 R67 ; R75["LinkType"] := R67
+1061 [-]: CALL      R73 3 1      ; R73(R74,R75)
+1062 [-]: JMP       1121         ; PC := 1121
+1063 [-]: MOVE      R71 R0       ; R71 := R0
+1064 [-]: LEN       R73 R61      ; R73 := # R61
+1065 [-]: SETTABLE  R61 R73 K13  ; R61[R73] := nil
 1066 [-]: LEN       R73 R61      ; R73 := # R61
-1067 [-]: GETTABLE  R60 R61 R73  ; R60 := R61[R73]
-1068 [-]: JMP       1118         ; PC := 1118
-1069 [-]: EQ        0 R67 K8     ; if R67 ~= "Item" then PC := 1118
-1070 [-]: JMP       1118         ; PC := 1118
-1071 [-]: GETUPVAL  R73 U5       ; R73 := U5
-1072 [-]: GETUPVAL  R74 U6       ; R74 := U6
-1073 [-]: GETTABLE  R74 R74 K129 ; R74 := R74["0xCECDECDE"]
-1074 [-]: MOVE      R75 R6       ; R75 := R6
-1075 [-]: CALL      R74 2 2      ; R74 := R74(R75)
-1076 [-]: GETTABLE  R73 R73 R74  ; R73 := R73[R74]
-1077 [-]: EQ        1 R73 K13    ; if R73 == nil then PC := 1118
-1078 [-]: JMP       1118         ; PC := 1118
-1079 [-]: LOADK     R74 K44      ; R74 := "<a color=\"#33ccff\" hovercolor=\""
-1080 [-]: GETUPVAL  R75 U1       ; R75 := U1
-1081 [-]: LOADK     R76 K45      ; R76 := "\" href=\"#onHyperlinkPressed:"
-1082 [-]: MOVE      R77 R73      ; R77 := R73
-1083 [-]: LOADK     R78 K46      ; R78 := "\">"
-1084 [-]: MOVE      R79 R68      ; R79 := R68
-1085 [-]: MOVE      R80 R6       ; R80 := R6
-1086 [-]: MOVE      R81 R69      ; R81 := R69
-1087 [-]: LOADK     R82 K125     ; R82 := "</a>"
-1088 [-]: CONCAT    R74 R74 R82  ; R74 := R74 .. R75 .. R76 .. R77 .. R78 .. R79 .. R80 .. R81 .. R82
-1089 [-]: GETGLOBAL R75 K0       ; R75 := string
-1090 [-]: GETTABLE  R75 R75 K28  ; R75 := R75["0x7B782033"]
-1091 [-]: MOVE      R76 R59      ; R76 := R59
-1092 [-]: LOADK     R77 K25      ; R77 := 0
-1093 [-]: ADD       R78 R60 R62  ; R78 := R60 + R62
-1094 [-]: SUB       R78 R78 K10  ; R78 := R78 - 1
-1095 [-]: CALL      R75 4 2      ; R75 := R75(R76,R77,R78)
-1096 [-]: MOVE      R76 R74      ; R76 := R74
-1097 [-]: GETGLOBAL R77 K0       ; R77 := string
-1098 [-]: GETTABLE  R77 R77 K28  ; R77 := R77["0x7B782033"]
-1099 [-]: MOVE      R78 R59      ; R78 := R59
-1100 [-]: ADD       R79 R64 R62  ; R79 := R64 + R62
-1101 [-]: ADD       R79 R79 K10  ; R79 := R79 + 1
-1102 [-]: CALL      R77 3 2      ; R77 := R77(R78,R79)
-1103 [-]: CONCAT    R59 R75 R77  ; R59 := R75 .. R76 .. R77
-1104 [-]: LEN       R75 R74      ; R75 := # R74
-1105 [-]: LEN       R76 R6       ; R76 := # R6
-1106 [-]: SUB       R75 R75 R76  ; R75 := R75 - R76
-1107 [-]: SUB       R75 R75 K123 ; R75 := R75 - 2
-1108 [-]: ADD       R62 R62 R75  ; R62 := R62 + R75
-1109 [-]: GETGLOBAL R75 K47      ; R75 := table
-1110 [-]: GETTABLE  R75 R75 K48  ; R75 := R75["0xE6450C9D"]
-1111 [-]: GETTABLE  R76 R43 R58  ; R76 := R43[R58]
-1112 [-]: GETTABLE  R76 R76 K112 ; R76 := R76["hyperLinks"]
-1113 [-]: NEWTABLE  R77 0 3      ; R77 := {}
-1114 [-]: SETTABLE  R77 K49 R6   ; R77["Name"] := R6
-1115 [-]: SETTABLE  R77 K8 R73   ; R77["Item"] := R73
-1116 [-]: SETTABLE  R77 K127 R67 ; R77["LinkType"] := R67
-1117 [-]: CALL      R75 3 1      ; R75(R76,R77)
-1118 [-]: TEST      R71 0        ; if not R71 then PC := 774
-1119 [-]: JMP       774          ; PC := 774
-1120 [-]: LOADK     R63 K24      ; R63 := ""
-1121 [-]: LOADNIL   R60 R60      ; R60 := nil
-1122 [-]: NEWTABLE  R75 0 0      ; R75 := {}
-1123 [-]: MOVE      R61 R75      ; R61 := R75
-1124 [-]: JMP       774          ; PC := 774
-1125 [-]: EQ        1 R63 K30    ; if R63 == "item" then PC := 1129
-1126 [-]: JMP       1129         ; PC := 1129
-1127 [-]: EQ        0 R63 K32    ; if R63 ~= "clan" then PC := 1381
-1128 [-]: JMP       1381         ; PC := 1381
-1129 [-]: GETGLOBAL R75 K103     ; R75 := 0xF595ADDE
-1130 [-]: MOVE      R76 R44      ; R76 := R44
-1131 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1132 [-]: EQ        1 R58 R75    ; if R58 == R75 then PC := 1381
-1133 [-]: JMP       1381         ; PC := 1381
-1134 [-]: GETGLOBAL R75 K27      ; R75 := 0x400E7765
-1135 [-]: MOVE      R76 R60      ; R76 := R60
-1136 [-]: CALL      R75 2 2      ; R75 := R75(R76)
-1137 [-]: TEST      R75 1        ; if R75 then PC := 1381
-1138 [-]: JMP       1381         ; PC := 1381
-1139 [-]: LOADK     R75 K25      ; R75 := 0
-1140 [-]: ADD       R76 R58 K10  ; R76 := R58 + 1
-1141 [-]: GETTABLE  R76 R43 R76  ; R76 := R43[R76]
-1142 [-]: GETTABLE  R76 R76 K102 ; R76 := R76["text"]
-1143 [-]: LEN       R76 R76      ; R76 := # R76
-1144 [-]: LE        0 R75 R76    ; if R75 > R76 then PC := 1381
-1145 [-]: JMP       1381         ; PC := 1381
-1146 [-]: GETGLOBAL R76 K0       ; R76 := string
-1147 [-]: GETTABLE  R76 R76 K11  ; R76 := R76["0xDE44F664"]
-1148 [-]: ADD       R77 R58 K10  ; R77 := R58 + 1
-1149 [-]: GETTABLE  R77 R43 R77  ; R77 := R43[R77]
-1150 [-]: GETTABLE  R77 R77 K102 ; R77 := R77["text"]
-1151 [-]: LOADK     R78 K26      ; R78 := "[%[{%]}]"
-1152 [-]: ADD       R79 R75 K10  ; R79 := R75 + 1
-1153 [-]: CALL      R76 4 2      ; R76 := R76(R77,R78,R79)
-1154 [-]: MOVE      R75 R76      ; R75 := R76
-1155 [-]: GETGLOBAL R76 K27      ; R76 := 0x400E7765
-1156 [-]: MOVE      R77 R75      ; R77 := R75
-1157 [-]: CALL      R76 2 2      ; R76 := R76(R77)
-1158 [-]: TEST      R76 0        ; if not R76 then PC := 1161
-1159 [-]: JMP       1161         ; PC := 1161
-1160 [-]: JMP       1381         ; PC := 1381
-1161 [-]: GETGLOBAL R76 K0       ; R76 := string
-1162 [-]: GETTABLE  R76 R76 K28  ; R76 := R76["0x7B782033"]
-1163 [-]: ADD       R77 R58 K10  ; R77 := R58 + 1
-1164 [-]: GETTABLE  R77 R43 R77  ; R77 := R43[R77]
-1165 [-]: GETTABLE  R77 R77 K102 ; R77 := R77["text"]
-1166 [-]: MOVE      R78 R75      ; R78 := R75
-1167 [-]: MOVE      R79 R75      ; R79 := R75
-1168 [-]: CALL      R76 4 2      ; R76 := R76(R77,R78,R79)
-1169 [-]: EQ        1 R76 K29    ; if R76 == "[" then PC := 1381
-1170 [-]: JMP       1381         ; PC := 1381
-1171 [-]: EQ        0 R76 K31    ; if R76 ~= "{" then PC := 1175
-1172 [-]: JMP       1175         ; PC := 1175
-1173 [-]: JMP       1381         ; PC := 1381
-1174 [-]: JMP       1140         ; PC := 1140
-1175 [-]: EQ        1 R76 K33    ; if R76 == "]" then PC := 1179
-1176 [-]: JMP       1179         ; PC := 1179
-1177 [-]: EQ        0 R76 K34    ; if R76 ~= "}" then PC := 1140
-1178 [-]: JMP       1140         ; PC := 1140
-1179 [-]: GETUPVAL  R77 U4       ; R77 := U4
-1180 [-]: GETTABLE  R77 R77 K126 ; R77 := R77["0xF81722A2"]
-1181 [-]: EQ        1 R76 K33    ; if R76 == "]" then PC := 1184
-1182 [-]: JMP       1184         ; PC := 1184
-1183 [-]: MOVE      R78 R0       ; R78 := R0
-1184 [-]: MOVE      R78 R1       ; R78 := R1
-1185 [-]: LOADK     R79 K8       ; R79 := "Item"
-1186 [-]: LOADK     R80 K9       ; R80 := "Guild"
-1187 [-]: CALL      R77 4 2      ; R77 := R77(R78,R79,R80)
-1188 [-]: GETUPVAL  R78 U4       ; R78 := U4
-1189 [-]: GETTABLE  R78 R78 K126 ; R78 := R78["0xF81722A2"]
-1190 [-]: EQ        1 R77 K8     ; if R77 == "Item" then PC := 1193
-1191 [-]: JMP       1193         ; PC := 1193
-1192 [-]: MOVE      R79 R0       ; R79 := R0
-1193 [-]: MOVE      R79 R1       ; R79 := R1
-1194 [-]: LOADK     R80 K29      ; R80 := "["
-1195 [-]: LOADK     R81 K31      ; R81 := "{"
-1196 [-]: CALL      R78 4 2      ; R78 := R78(R79,R80,R81)
-1197 [-]: GETUPVAL  R79 U4       ; R79 := U4
-1198 [-]: GETTABLE  R79 R79 K126 ; R79 := R79["0xF81722A2"]
-1199 [-]: EQ        1 R77 K8     ; if R77 == "Item" then PC := 1202
-1200 [-]: JMP       1202         ; PC := 1202
-1201 [-]: MOVE      R80 R0       ; R80 := R0
-1202 [-]: MOVE      R80 R1       ; R80 := R1
-1203 [-]: LOADK     R81 K33      ; R81 := "]"
-1204 [-]: LOADK     R82 K34      ; R82 := "}"
-1205 [-]: CALL      R79 4 2      ; R79 := R79(R80,R81,R82)
-1206 [-]: GETGLOBAL R80 K0       ; R80 := string
-1207 [-]: GETTABLE  R80 R80 K28  ; R80 := R80["0x7B782033"]
-1208 [-]: GETTABLE  R81 R43 R58  ; R81 := R43[R58]
-1209 [-]: GETTABLE  R81 R81 K102 ; R81 := R81["text"]
-1210 [-]: ADD       R82 R60 K10  ; R82 := R60 + 1
-1211 [-]: CALL      R80 3 2      ; R80 := R80(R81,R82)
-1212 [-]: GETGLOBAL R81 K0       ; R81 := string
-1213 [-]: GETTABLE  R81 R81 K28  ; R81 := R81["0x7B782033"]
-1214 [-]: ADD       R82 R58 K10  ; R82 := R58 + 1
-1215 [-]: GETTABLE  R82 R43 R82  ; R82 := R43[R82]
-1216 [-]: GETTABLE  R82 R82 K102 ; R82 := R82["text"]
-1217 [-]: LOADK     R83 K25      ; R83 := 0
-1218 [-]: SUB       R84 R75 K10  ; R84 := R75 - 1
-1219 [-]: CALL      R81 4 2      ; R81 := R81(R82,R83,R84)
-1220 [-]: GETTABLE  R82 R43 R58  ; R82 := R43[R58]
-1221 [-]: GETTABLE  R82 R82 K113 ; R82 := R82["endSpace"]
-1222 [-]: TEST      R82 0        ; if not R82 then PC := 1229
-1223 [-]: JMP       1229         ; PC := 1229
-1224 [-]: MOVE      R82 R80      ; R82 := R80
-1225 [-]: LOADK     R83 K109     ; R83 := " "
-1226 [-]: MOVE      R84 R81      ; R84 := R81
-1227 [-]: CONCAT    R6 R82 R84   ; R6 := R82 .. R83 .. R84
-1228 [-]: JMP       1232         ; PC := 1232
-1229 [-]: MOVE      R82 R80      ; R82 := R80
-1230 [-]: MOVE      R83 R81      ; R83 := R81
-1231 [-]: CONCAT    R6 R82 R83   ; R6 := R82 .. R83
-1232 [-]: LOADNIL   R82 R82      ; R82 := nil
-1233 [-]: GETTABLE  R83 R4 R77   ; R83 := R4[R77]
-1234 [-]: LEN       R83 R83      ; R83 := # R83
-1235 [-]: GETTABLE  R84 R5 R77   ; R84 := R5[R77]
-1236 [-]: LE        0 R84 R83    ; if R84 > R83 then PC := 1241
-1237 [-]: JMP       1241         ; PC := 1241
-1238 [-]: GETTABLE  R83 R4 R77   ; R83 := R4[R77]
-1239 [-]: GETTABLE  R84 R5 R77   ; R84 := R5[R77]
-1240 [-]: GETTABLE  R82 R83 R84  ; R82 := R83[R84]
-1241 [-]: EQ        0 R77 K8     ; if R77 ~= "Item" then PC := 1312
-1242 [-]: JMP       1312         ; PC := 1312
-1243 [-]: GETUPVAL  R83 U5       ; R83 := U5
-1244 [-]: GETUPVAL  R84 U6       ; R84 := U6
-1245 [-]: GETTABLE  R84 R84 K129 ; R84 := R84["0xCECDECDE"]
-1246 [-]: MOVE      R85 R6       ; R85 := R6
-1247 [-]: CALL      R84 2 2      ; R84 := R84(R85)
-1248 [-]: GETTABLE  R83 R83 R84  ; R83 := R83[R84]
-1249 [-]: EQ        1 R83 K13    ; if R83 == nil then PC := 1312
-1250 [-]: JMP       1312         ; PC := 1312
-1251 [-]: GETGLOBAL R84 K0       ; R84 := string
-1252 [-]: GETTABLE  R84 R84 K35  ; R84 := R84["0xBDD0D625"]
-1253 [-]: MOVE      R85 R6       ; R85 := R6
-1254 [-]: CALL      R84 2 2      ; R84 := R84(R85)
-1255 [-]: SELF      R84 R84 K1   ; R85 := R84; R84 := R84["0x633C4246"]
-1256 [-]: LOADK     R86 K130     ; R86 := "(%l)([^%s^%-]*)"
-1257 [-]: CLOSURE   R87 0        ; R87 := closure(Function #97.13.1)
-1258 [-]: CALL      R84 4 2      ; R84 := R84(R85,R86,R87)
-1259 [-]: MOVE      R6 R84       ; R6 := R84
-1260 [-]: LOADK     R84 K44      ; R84 := "<a color=\"#33ccff\" hovercolor=\""
-1261 [-]: GETUPVAL  R85 U1       ; R85 := U1
-1262 [-]: LOADK     R86 K45      ; R86 := "\" href=\"#onHyperlinkPressed:"
-1263 [-]: MOVE      R87 R83      ; R87 := R83
-1264 [-]: LOADK     R88 K46      ; R88 := "\">"
-1265 [-]: CONCAT    R84 R84 R88  ; R84 := R84 .. R85 .. R86 .. R87 .. R88
-1266 [-]: GETGLOBAL R85 K0       ; R85 := string
-1267 [-]: GETTABLE  R85 R85 K28  ; R85 := R85["0x7B782033"]
-1268 [-]: MOVE      R86 R59      ; R86 := R59
-1269 [-]: LOADK     R87 K25      ; R87 := 0
-1270 [-]: ADD       R88 R60 R62  ; R88 := R60 + R62
-1271 [-]: SUB       R88 R88 K10  ; R88 := R88 - 1
-1272 [-]: CALL      R85 4 2      ; R85 := R85(R86,R87,R88)
-1273 [-]: MOVE      R86 R84      ; R86 := R84
-1274 [-]: LOADK     R87 K29      ; R87 := "["
-1275 [-]: GETGLOBAL R88 K0       ; R88 := string
-1276 [-]: GETTABLE  R88 R88 K28  ; R88 := R88["0x7B782033"]
-1277 [-]: MOVE      R89 R59      ; R89 := R59
-1278 [-]: ADD       R90 R60 K10  ; R90 := R60 + 1
-1279 [-]: ADD       R90 R90 R62  ; R90 := R90 + R62
-1280 [-]: CALL      R88 3 2      ; R88 := R88(R89,R90)
-1281 [-]: CONCAT    R59 R85 R88  ; R59 := R85 .. R86 .. R87 .. R88
-1282 [-]: ADD       R85 R58 K10  ; R85 := R58 + 1
-1283 [-]: GETTABLE  R85 R43 R85  ; R85 := R43[R85]
-1284 [-]: GETGLOBAL R86 K0       ; R86 := string
-1285 [-]: GETTABLE  R86 R86 K28  ; R86 := R86["0x7B782033"]
-1286 [-]: ADD       R87 R58 K10  ; R87 := R58 + 1
-1287 [-]: GETTABLE  R87 R43 R87  ; R87 := R43[R87]
-1288 [-]: GETTABLE  R87 R87 K102 ; R87 := R87["text"]
-1289 [-]: LOADK     R88 K25      ; R88 := 0
-1290 [-]: SUB       R89 R75 K10  ; R89 := R75 - 1
-1291 [-]: CALL      R86 4 2      ; R86 := R86(R87,R88,R89)
-1292 [-]: LOADK     R87 K131     ; R87 := "]</a>"
-1293 [-]: GETGLOBAL R88 K0       ; R88 := string
-1294 [-]: GETTABLE  R88 R88 K28  ; R88 := R88["0x7B782033"]
-1295 [-]: ADD       R89 R58 K10  ; R89 := R58 + 1
-1296 [-]: GETTABLE  R89 R43 R89  ; R89 := R43[R89]
-1297 [-]: GETTABLE  R89 R89 K102 ; R89 := R89["text"]
-1298 [-]: ADD       R90 R75 K10  ; R90 := R75 + 1
-1299 [-]: CALL      R88 3 2      ; R88 := R88(R89,R90)
-1300 [-]: CONCAT    R86 R86 R88  ; R86 := R86 .. R87 .. R88
-1301 [-]: SETTABLE  R85 K102 R86 ; R85["text"] := R86
-1302 [-]: GETGLOBAL R85 K47      ; R85 := table
-1303 [-]: GETTABLE  R85 R85 K48  ; R85 := R85["0xE6450C9D"]
-1304 [-]: GETTABLE  R86 R43 R58  ; R86 := R43[R58]
-1305 [-]: GETTABLE  R86 R86 K112 ; R86 := R86["hyperLinks"]
-1306 [-]: NEWTABLE  R87 0 3      ; R87 := {}
-1307 [-]: SETTABLE  R87 K49 R6   ; R87["Name"] := R6
-1308 [-]: SETTABLE  R87 K8 R83   ; R87["Item"] := R83
-1309 [-]: SETTABLE  R87 K127 R77 ; R87["LinkType"] := R77
-1310 [-]: CALL      R85 3 1      ; R85(R86,R87)
-1311 [-]: JMP       1381         ; PC := 1381
-1312 [-]: EQ        1 R82 K13    ; if R82 == nil then PC := 1140
-1313 [-]: JMP       1140         ; PC := 1140
-1314 [-]: GETTABLE  R85 R82 K49  ; R85 := R82["Name"]
-1315 [-]: EQ        0 R6 R85     ; if R6 ~= R85 then PC := 1140
-1316 [-]: JMP       1140         ; PC := 1140
-1317 [-]: GETTABLE  R85 R82 K50  ; R85 := R82["LinkStart"]
-1318 [-]: MOVE      R86 R78      ; R86 := R78
-1319 [-]: GETTABLE  R87 R82 K49  ; R87 := R82["Name"]
-1320 [-]: MOVE      R88 R79      ; R88 := R79
-1321 [-]: LOADK     R89 K125     ; R89 := "</a>"
-1322 [-]: CONCAT    R85 R85 R89  ; R85 := R85 .. R86 .. R87 .. R88 .. R89
-1323 [-]: GETGLOBAL R86 K0       ; R86 := string
-1324 [-]: GETTABLE  R86 R86 K28  ; R86 := R86["0x7B782033"]
-1325 [-]: MOVE      R87 R59      ; R87 := R59
-1326 [-]: LOADK     R88 K25      ; R88 := 0
-1327 [-]: ADD       R89 R60 R62  ; R89 := R60 + R62
-1328 [-]: SUB       R89 R89 K10  ; R89 := R89 - 1
-1329 [-]: CALL      R86 4 2      ; R86 := R86(R87,R88,R89)
-1330 [-]: GETTABLE  R87 R82 K50  ; R87 := R82["LinkStart"]
-1331 [-]: MOVE      R88 R78      ; R88 := R78
-1332 [-]: GETGLOBAL R89 K0       ; R89 := string
-1333 [-]: GETTABLE  R89 R89 K28  ; R89 := R89["0x7B782033"]
-1334 [-]: MOVE      R90 R59      ; R90 := R59
-1335 [-]: ADD       R91 R60 R62  ; R91 := R60 + R62
-1336 [-]: ADD       R91 R91 K10  ; R91 := R91 + 1
-1337 [-]: CALL      R89 3 2      ; R89 := R89(R90,R91)
-1338 [-]: CONCAT    R59 R86 R89  ; R59 := R86 .. R87 .. R88 .. R89
-1339 [-]: LEN       R86 R85      ; R86 := # R85
-1340 [-]: LEN       R87 R6       ; R87 := # R6
-1341 [-]: SUB       R86 R86 R87  ; R86 := R86 - R87
-1342 [-]: SUB       R86 R86 K123 ; R86 := R86 - 2
-1343 [-]: ADD       R62 R62 R86  ; R62 := R62 + R86
-1344 [-]: GETTABLE  R86 R5 R77   ; R86 := R5[R77]
-1345 [-]: ADD       R86 R86 K10  ; R86 := R86 + 1
-1346 [-]: SETTABLE  R5 R77 R86   ; R5[R77] := R86
-1347 [-]: ADD       R86 R58 K10  ; R86 := R58 + 1
-1348 [-]: GETTABLE  R86 R43 R86  ; R86 := R43[R86]
-1349 [-]: GETGLOBAL R87 K0       ; R87 := string
-1350 [-]: GETTABLE  R87 R87 K28  ; R87 := R87["0x7B782033"]
-1351 [-]: ADD       R88 R58 K10  ; R88 := R58 + 1
-1352 [-]: GETTABLE  R88 R43 R88  ; R88 := R43[R88]
-1353 [-]: GETTABLE  R88 R88 K102 ; R88 := R88["text"]
-1354 [-]: LOADK     R89 K25      ; R89 := 0
-1355 [-]: SUB       R90 R75 K10  ; R90 := R75 - 1
-1356 [-]: CALL      R87 4 2      ; R87 := R87(R88,R89,R90)
-1357 [-]: MOVE      R88 R79      ; R88 := R79
-1358 [-]: LOADK     R89 K125     ; R89 := "</a>"
-1359 [-]: GETGLOBAL R90 K0       ; R90 := string
-1360 [-]: GETTABLE  R90 R90 K28  ; R90 := R90["0x7B782033"]
-1361 [-]: ADD       R91 R58 K10  ; R91 := R58 + 1
-1362 [-]: GETTABLE  R91 R43 R91  ; R91 := R43[R91]
-1363 [-]: GETTABLE  R91 R91 K102 ; R91 := R91["text"]
-1364 [-]: ADD       R92 R75 K10  ; R92 := R75 + 1
-1365 [-]: CALL      R90 3 2      ; R90 := R90(R91,R92)
-1366 [-]: CONCAT    R87 R87 R90  ; R87 := R87 .. R88 .. R89 .. R90
-1367 [-]: SETTABLE  R86 K102 R87 ; R86["text"] := R87
-1368 [-]: GETGLOBAL R86 K47      ; R86 := table
-1369 [-]: GETTABLE  R86 R86 K48  ; R86 := R86["0xE6450C9D"]
-1370 [-]: GETTABLE  R87 R43 R58  ; R87 := R43[R58]
-1371 [-]: GETTABLE  R87 R87 K112 ; R87 := R87["hyperLinks"]
-1372 [-]: NEWTABLE  R88 0 3      ; R88 := {}
-1373 [-]: GETTABLE  R89 R82 K49  ; R89 := R82["Name"]
-1374 [-]: SETTABLE  R88 K49 R89  ; R88["Name"] := R89
-1375 [-]: GETTABLE  R89 R82 K51  ; R89 := R82["LinkString"]
-1376 [-]: SETTABLE  R88 K8 R89   ; R88["Item"] := R89
-1377 [-]: SETTABLE  R88 K127 R77 ; R88["LinkType"] := R77
-1378 [-]: CALL      R86 3 1      ; R86(R87,R88)
-1379 [-]: JMP       1381         ; PC := 1381
-1380 [-]: JMP       1140         ; PC := 1140
-1381 [-]: GETTABLE  R86 R43 R58  ; R86 := R43[R58]
-1382 [-]: SETTABLE  R86 K102 R59 ; R86["text"] := R59
-1383 [-]: FORLOOP   R55 746      ; R55 += R57; if R55 <= R56 then begin PC := 746; R58 := R55 end
-1384 [-]: RETURN    R43 2        ; return R43
-1385 [-]: RETURN    R0 1         ; return 
+1067 [-]: LT        0 K25 R73    ; if 0 >= R73 then PC := 1121
+1068 [-]: JMP       1121         ; PC := 1121
+1069 [-]: LEN       R73 R61      ; R73 := # R61
+1070 [-]: GETTABLE  R60 R61 R73  ; R60 := R61[R73]
+1071 [-]: JMP       1121         ; PC := 1121
+1072 [-]: EQ        0 R67 K8     ; if R67 ~= "Item" then PC := 1121
+1073 [-]: JMP       1121         ; PC := 1121
+1074 [-]: GETUPVAL  R73 U5       ; R73 := U5
+1075 [-]: GETUPVAL  R74 U6       ; R74 := U6
+1076 [-]: GETTABLE  R74 R74 K129 ; R74 := R74["0xCECDECDE"]
+1077 [-]: MOVE      R75 R6       ; R75 := R6
+1078 [-]: CALL      R74 2 2      ; R74 := R74(R75)
+1079 [-]: GETTABLE  R73 R73 R74  ; R73 := R73[R74]
+1080 [-]: EQ        1 R73 K13    ; if R73 == nil then PC := 1121
+1081 [-]: JMP       1121         ; PC := 1121
+1082 [-]: LOADK     R74 K44      ; R74 := "<a color=\"#33ccff\" hovercolor=\""
+1083 [-]: GETUPVAL  R75 U1       ; R75 := U1
+1084 [-]: LOADK     R76 K45      ; R76 := "\" href=\"#onHyperlinkPressed:"
+1085 [-]: MOVE      R77 R73      ; R77 := R73
+1086 [-]: LOADK     R78 K46      ; R78 := "\">"
+1087 [-]: MOVE      R79 R68      ; R79 := R68
+1088 [-]: MOVE      R80 R6       ; R80 := R6
+1089 [-]: MOVE      R81 R69      ; R81 := R69
+1090 [-]: LOADK     R82 K125     ; R82 := "</a>"
+1091 [-]: CONCAT    R74 R74 R82  ; R74 := R74 .. R75 .. R76 .. R77 .. R78 .. R79 .. R80 .. R81 .. R82
+1092 [-]: GETGLOBAL R75 K0       ; R75 := string
+1093 [-]: GETTABLE  R75 R75 K28  ; R75 := R75["0x7B782033"]
+1094 [-]: MOVE      R76 R59      ; R76 := R59
+1095 [-]: LOADK     R77 K25      ; R77 := 0
+1096 [-]: ADD       R78 R60 R62  ; R78 := R60 + R62
+1097 [-]: SUB       R78 R78 K10  ; R78 := R78 - 1
+1098 [-]: CALL      R75 4 2      ; R75 := R75(R76,R77,R78)
+1099 [-]: MOVE      R76 R74      ; R76 := R74
+1100 [-]: GETGLOBAL R77 K0       ; R77 := string
+1101 [-]: GETTABLE  R77 R77 K28  ; R77 := R77["0x7B782033"]
+1102 [-]: MOVE      R78 R59      ; R78 := R59
+1103 [-]: ADD       R79 R64 R62  ; R79 := R64 + R62
+1104 [-]: ADD       R79 R79 K10  ; R79 := R79 + 1
+1105 [-]: CALL      R77 3 2      ; R77 := R77(R78,R79)
+1106 [-]: CONCAT    R59 R75 R77  ; R59 := R75 .. R76 .. R77
+1107 [-]: LEN       R75 R74      ; R75 := # R74
+1108 [-]: LEN       R76 R6       ; R76 := # R6
+1109 [-]: SUB       R75 R75 R76  ; R75 := R75 - R76
+1110 [-]: SUB       R75 R75 K123 ; R75 := R75 - 2
+1111 [-]: ADD       R62 R62 R75  ; R62 := R62 + R75
+1112 [-]: GETGLOBAL R75 K47      ; R75 := table
+1113 [-]: GETTABLE  R75 R75 K48  ; R75 := R75["0xE6450C9D"]
+1114 [-]: GETTABLE  R76 R43 R58  ; R76 := R43[R58]
+1115 [-]: GETTABLE  R76 R76 K112 ; R76 := R76["hyperLinks"]
+1116 [-]: NEWTABLE  R77 0 3      ; R77 := {}
+1117 [-]: SETTABLE  R77 K49 R6   ; R77["Name"] := R6
+1118 [-]: SETTABLE  R77 K8 R73   ; R77["Item"] := R73
+1119 [-]: SETTABLE  R77 K128 R67 ; R77["LinkType"] := R67
+1120 [-]: CALL      R75 3 1      ; R75(R76,R77)
+1121 [-]: TEST      R71 0        ; if not R71 then PC := 774
+1122 [-]: JMP       774          ; PC := 774
+1123 [-]: LOADK     R63 K24      ; R63 := ""
+1124 [-]: LOADNIL   R60 R60      ; R60 := nil
+1125 [-]: NEWTABLE  R75 0 0      ; R75 := {}
+1126 [-]: MOVE      R61 R75      ; R61 := R75
+1127 [-]: JMP       774          ; PC := 774
+1128 [-]: EQ        1 R63 K30    ; if R63 == "item" then PC := 1132
+1129 [-]: JMP       1132         ; PC := 1132
+1130 [-]: EQ        0 R63 K32    ; if R63 ~= "clan" then PC := 1384
+1131 [-]: JMP       1384         ; PC := 1384
+1132 [-]: GETGLOBAL R75 K103     ; R75 := 0xF595ADDE
+1133 [-]: MOVE      R76 R44      ; R76 := R44
+1134 [-]: CALL      R75 2 2      ; R75 := R75(R76)
+1135 [-]: EQ        1 R58 R75    ; if R58 == R75 then PC := 1384
+1136 [-]: JMP       1384         ; PC := 1384
+1137 [-]: GETGLOBAL R75 K27      ; R75 := 0x400E7765
+1138 [-]: MOVE      R76 R60      ; R76 := R60
+1139 [-]: CALL      R75 2 2      ; R75 := R75(R76)
+1140 [-]: TEST      R75 1        ; if R75 then PC := 1384
+1141 [-]: JMP       1384         ; PC := 1384
+1142 [-]: LOADK     R75 K25      ; R75 := 0
+1143 [-]: ADD       R76 R58 K10  ; R76 := R58 + 1
+1144 [-]: GETTABLE  R76 R43 R76  ; R76 := R43[R76]
+1145 [-]: GETTABLE  R76 R76 K102 ; R76 := R76["text"]
+1146 [-]: LEN       R76 R76      ; R76 := # R76
+1147 [-]: LE        0 R75 R76    ; if R75 > R76 then PC := 1384
+1148 [-]: JMP       1384         ; PC := 1384
+1149 [-]: GETGLOBAL R76 K0       ; R76 := string
+1150 [-]: GETTABLE  R76 R76 K11  ; R76 := R76["0xDE44F664"]
+1151 [-]: ADD       R77 R58 K10  ; R77 := R58 + 1
+1152 [-]: GETTABLE  R77 R43 R77  ; R77 := R43[R77]
+1153 [-]: GETTABLE  R77 R77 K102 ; R77 := R77["text"]
+1154 [-]: LOADK     R78 K26      ; R78 := "[%[{%]}]"
+1155 [-]: ADD       R79 R75 K10  ; R79 := R75 + 1
+1156 [-]: CALL      R76 4 2      ; R76 := R76(R77,R78,R79)
+1157 [-]: MOVE      R75 R76      ; R75 := R76
+1158 [-]: GETGLOBAL R76 K27      ; R76 := 0x400E7765
+1159 [-]: MOVE      R77 R75      ; R77 := R75
+1160 [-]: CALL      R76 2 2      ; R76 := R76(R77)
+1161 [-]: TEST      R76 0        ; if not R76 then PC := 1164
+1162 [-]: JMP       1164         ; PC := 1164
+1163 [-]: JMP       1384         ; PC := 1384
+1164 [-]: GETGLOBAL R76 K0       ; R76 := string
+1165 [-]: GETTABLE  R76 R76 K28  ; R76 := R76["0x7B782033"]
+1166 [-]: ADD       R77 R58 K10  ; R77 := R58 + 1
+1167 [-]: GETTABLE  R77 R43 R77  ; R77 := R43[R77]
+1168 [-]: GETTABLE  R77 R77 K102 ; R77 := R77["text"]
+1169 [-]: MOVE      R78 R75      ; R78 := R75
+1170 [-]: MOVE      R79 R75      ; R79 := R75
+1171 [-]: CALL      R76 4 2      ; R76 := R76(R77,R78,R79)
+1172 [-]: EQ        1 R76 K29    ; if R76 == "[" then PC := 1384
+1173 [-]: JMP       1384         ; PC := 1384
+1174 [-]: EQ        0 R76 K31    ; if R76 ~= "{" then PC := 1178
+1175 [-]: JMP       1178         ; PC := 1178
+1176 [-]: JMP       1384         ; PC := 1384
+1177 [-]: JMP       1143         ; PC := 1143
+1178 [-]: EQ        1 R76 K33    ; if R76 == "]" then PC := 1182
+1179 [-]: JMP       1182         ; PC := 1182
+1180 [-]: EQ        0 R76 K34    ; if R76 ~= "}" then PC := 1143
+1181 [-]: JMP       1143         ; PC := 1143
+1182 [-]: GETUPVAL  R77 U4       ; R77 := U4
+1183 [-]: GETTABLE  R77 R77 K126 ; R77 := R77["0xF81722A2"]
+1184 [-]: EQ        1 R76 K33    ; if R76 == "]" then PC := 1187
+1185 [-]: JMP       1187         ; PC := 1187
+1186 [-]: MOVE      R78 R0       ; R78 := R0
+1187 [-]: MOVE      R78 R1       ; R78 := R1
+1188 [-]: LOADK     R79 K8       ; R79 := "Item"
+1189 [-]: LOADK     R80 K9       ; R80 := "Guild"
+1190 [-]: CALL      R77 4 2      ; R77 := R77(R78,R79,R80)
+1191 [-]: GETUPVAL  R78 U4       ; R78 := U4
+1192 [-]: GETTABLE  R78 R78 K126 ; R78 := R78["0xF81722A2"]
+1193 [-]: EQ        1 R77 K8     ; if R77 == "Item" then PC := 1196
+1194 [-]: JMP       1196         ; PC := 1196
+1195 [-]: MOVE      R79 R0       ; R79 := R0
+1196 [-]: MOVE      R79 R1       ; R79 := R1
+1197 [-]: LOADK     R80 K29      ; R80 := "["
+1198 [-]: LOADK     R81 K31      ; R81 := "{"
+1199 [-]: CALL      R78 4 2      ; R78 := R78(R79,R80,R81)
+1200 [-]: GETUPVAL  R79 U4       ; R79 := U4
+1201 [-]: GETTABLE  R79 R79 K126 ; R79 := R79["0xF81722A2"]
+1202 [-]: EQ        1 R77 K8     ; if R77 == "Item" then PC := 1205
+1203 [-]: JMP       1205         ; PC := 1205
+1204 [-]: MOVE      R80 R0       ; R80 := R0
+1205 [-]: MOVE      R80 R1       ; R80 := R1
+1206 [-]: LOADK     R81 K33      ; R81 := "]"
+1207 [-]: LOADK     R82 K34      ; R82 := "}"
+1208 [-]: CALL      R79 4 2      ; R79 := R79(R80,R81,R82)
+1209 [-]: GETGLOBAL R80 K0       ; R80 := string
+1210 [-]: GETTABLE  R80 R80 K28  ; R80 := R80["0x7B782033"]
+1211 [-]: GETTABLE  R81 R43 R58  ; R81 := R43[R58]
+1212 [-]: GETTABLE  R81 R81 K102 ; R81 := R81["text"]
+1213 [-]: ADD       R82 R60 K10  ; R82 := R60 + 1
+1214 [-]: CALL      R80 3 2      ; R80 := R80(R81,R82)
+1215 [-]: GETGLOBAL R81 K0       ; R81 := string
+1216 [-]: GETTABLE  R81 R81 K28  ; R81 := R81["0x7B782033"]
+1217 [-]: ADD       R82 R58 K10  ; R82 := R58 + 1
+1218 [-]: GETTABLE  R82 R43 R82  ; R82 := R43[R82]
+1219 [-]: GETTABLE  R82 R82 K102 ; R82 := R82["text"]
+1220 [-]: LOADK     R83 K25      ; R83 := 0
+1221 [-]: SUB       R84 R75 K10  ; R84 := R75 - 1
+1222 [-]: CALL      R81 4 2      ; R81 := R81(R82,R83,R84)
+1223 [-]: GETTABLE  R82 R43 R58  ; R82 := R43[R58]
+1224 [-]: GETTABLE  R82 R82 K113 ; R82 := R82["endSpace"]
+1225 [-]: TEST      R82 0        ; if not R82 then PC := 1232
+1226 [-]: JMP       1232         ; PC := 1232
+1227 [-]: MOVE      R82 R80      ; R82 := R80
+1228 [-]: LOADK     R83 K109     ; R83 := " "
+1229 [-]: MOVE      R84 R81      ; R84 := R81
+1230 [-]: CONCAT    R6 R82 R84   ; R6 := R82 .. R83 .. R84
+1231 [-]: JMP       1235         ; PC := 1235
+1232 [-]: MOVE      R82 R80      ; R82 := R80
+1233 [-]: MOVE      R83 R81      ; R83 := R81
+1234 [-]: CONCAT    R6 R82 R83   ; R6 := R82 .. R83
+1235 [-]: LOADNIL   R82 R82      ; R82 := nil
+1236 [-]: GETTABLE  R83 R4 R77   ; R83 := R4[R77]
+1237 [-]: LEN       R83 R83      ; R83 := # R83
+1238 [-]: GETTABLE  R84 R5 R77   ; R84 := R5[R77]
+1239 [-]: LE        0 R84 R83    ; if R84 > R83 then PC := 1244
+1240 [-]: JMP       1244         ; PC := 1244
+1241 [-]: GETTABLE  R83 R4 R77   ; R83 := R4[R77]
+1242 [-]: GETTABLE  R84 R5 R77   ; R84 := R5[R77]
+1243 [-]: GETTABLE  R82 R83 R84  ; R82 := R83[R84]
+1244 [-]: EQ        0 R77 K8     ; if R77 ~= "Item" then PC := 1315
+1245 [-]: JMP       1315         ; PC := 1315
+1246 [-]: GETUPVAL  R83 U5       ; R83 := U5
+1247 [-]: GETUPVAL  R84 U6       ; R84 := U6
+1248 [-]: GETTABLE  R84 R84 K129 ; R84 := R84["0xCECDECDE"]
+1249 [-]: MOVE      R85 R6       ; R85 := R6
+1250 [-]: CALL      R84 2 2      ; R84 := R84(R85)
+1251 [-]: GETTABLE  R83 R83 R84  ; R83 := R83[R84]
+1252 [-]: EQ        1 R83 K13    ; if R83 == nil then PC := 1315
+1253 [-]: JMP       1315         ; PC := 1315
+1254 [-]: GETGLOBAL R84 K0       ; R84 := string
+1255 [-]: GETTABLE  R84 R84 K35  ; R84 := R84["0xBDD0D625"]
+1256 [-]: MOVE      R85 R6       ; R85 := R6
+1257 [-]: CALL      R84 2 2      ; R84 := R84(R85)
+1258 [-]: SELF      R84 R84 K1   ; R85 := R84; R84 := R84["0x633C4246"]
+1259 [-]: LOADK     R86 K130     ; R86 := "(%l)([^%s^%-]*)"
+1260 [-]: CLOSURE   R87 0        ; R87 := closure(Function #97.13.1)
+1261 [-]: CALL      R84 4 2      ; R84 := R84(R85,R86,R87)
+1262 [-]: MOVE      R6 R84       ; R6 := R84
+1263 [-]: LOADK     R84 K44      ; R84 := "<a color=\"#33ccff\" hovercolor=\""
+1264 [-]: GETUPVAL  R85 U1       ; R85 := U1
+1265 [-]: LOADK     R86 K45      ; R86 := "\" href=\"#onHyperlinkPressed:"
+1266 [-]: MOVE      R87 R83      ; R87 := R83
+1267 [-]: LOADK     R88 K46      ; R88 := "\">"
+1268 [-]: CONCAT    R84 R84 R88  ; R84 := R84 .. R85 .. R86 .. R87 .. R88
+1269 [-]: GETGLOBAL R85 K0       ; R85 := string
+1270 [-]: GETTABLE  R85 R85 K28  ; R85 := R85["0x7B782033"]
+1271 [-]: MOVE      R86 R59      ; R86 := R59
+1272 [-]: LOADK     R87 K25      ; R87 := 0
+1273 [-]: ADD       R88 R60 R62  ; R88 := R60 + R62
+1274 [-]: SUB       R88 R88 K10  ; R88 := R88 - 1
+1275 [-]: CALL      R85 4 2      ; R85 := R85(R86,R87,R88)
+1276 [-]: MOVE      R86 R84      ; R86 := R84
+1277 [-]: LOADK     R87 K29      ; R87 := "["
+1278 [-]: GETGLOBAL R88 K0       ; R88 := string
+1279 [-]: GETTABLE  R88 R88 K28  ; R88 := R88["0x7B782033"]
+1280 [-]: MOVE      R89 R59      ; R89 := R59
+1281 [-]: ADD       R90 R60 K10  ; R90 := R60 + 1
+1282 [-]: ADD       R90 R90 R62  ; R90 := R90 + R62
+1283 [-]: CALL      R88 3 2      ; R88 := R88(R89,R90)
+1284 [-]: CONCAT    R59 R85 R88  ; R59 := R85 .. R86 .. R87 .. R88
+1285 [-]: ADD       R85 R58 K10  ; R85 := R58 + 1
+1286 [-]: GETTABLE  R85 R43 R85  ; R85 := R43[R85]
+1287 [-]: GETGLOBAL R86 K0       ; R86 := string
+1288 [-]: GETTABLE  R86 R86 K28  ; R86 := R86["0x7B782033"]
+1289 [-]: ADD       R87 R58 K10  ; R87 := R58 + 1
+1290 [-]: GETTABLE  R87 R43 R87  ; R87 := R43[R87]
+1291 [-]: GETTABLE  R87 R87 K102 ; R87 := R87["text"]
+1292 [-]: LOADK     R88 K25      ; R88 := 0
+1293 [-]: SUB       R89 R75 K10  ; R89 := R75 - 1
+1294 [-]: CALL      R86 4 2      ; R86 := R86(R87,R88,R89)
+1295 [-]: LOADK     R87 K131     ; R87 := "]</a>"
+1296 [-]: GETGLOBAL R88 K0       ; R88 := string
+1297 [-]: GETTABLE  R88 R88 K28  ; R88 := R88["0x7B782033"]
+1298 [-]: ADD       R89 R58 K10  ; R89 := R58 + 1
+1299 [-]: GETTABLE  R89 R43 R89  ; R89 := R43[R89]
+1300 [-]: GETTABLE  R89 R89 K102 ; R89 := R89["text"]
+1301 [-]: ADD       R90 R75 K10  ; R90 := R75 + 1
+1302 [-]: CALL      R88 3 2      ; R88 := R88(R89,R90)
+1303 [-]: CONCAT    R86 R86 R88  ; R86 := R86 .. R87 .. R88
+1304 [-]: SETTABLE  R85 K102 R86 ; R85["text"] := R86
+1305 [-]: GETGLOBAL R85 K47      ; R85 := table
+1306 [-]: GETTABLE  R85 R85 K48  ; R85 := R85["0xE6450C9D"]
+1307 [-]: GETTABLE  R86 R43 R58  ; R86 := R43[R58]
+1308 [-]: GETTABLE  R86 R86 K112 ; R86 := R86["hyperLinks"]
+1309 [-]: NEWTABLE  R87 0 3      ; R87 := {}
+1310 [-]: SETTABLE  R87 K49 R6   ; R87["Name"] := R6
+1311 [-]: SETTABLE  R87 K8 R83   ; R87["Item"] := R83
+1312 [-]: SETTABLE  R87 K128 R77 ; R87["LinkType"] := R77
+1313 [-]: CALL      R85 3 1      ; R85(R86,R87)
+1314 [-]: JMP       1384         ; PC := 1384
+1315 [-]: EQ        1 R82 K13    ; if R82 == nil then PC := 1143
+1316 [-]: JMP       1143         ; PC := 1143
+1317 [-]: GETTABLE  R85 R82 K49  ; R85 := R82["Name"]
+1318 [-]: EQ        0 R6 R85     ; if R6 ~= R85 then PC := 1143
+1319 [-]: JMP       1143         ; PC := 1143
+1320 [-]: GETTABLE  R85 R82 K50  ; R85 := R82["LinkStart"]
+1321 [-]: MOVE      R86 R78      ; R86 := R78
+1322 [-]: GETTABLE  R87 R82 K49  ; R87 := R82["Name"]
+1323 [-]: MOVE      R88 R79      ; R88 := R79
+1324 [-]: LOADK     R89 K125     ; R89 := "</a>"
+1325 [-]: CONCAT    R85 R85 R89  ; R85 := R85 .. R86 .. R87 .. R88 .. R89
+1326 [-]: GETGLOBAL R86 K0       ; R86 := string
+1327 [-]: GETTABLE  R86 R86 K28  ; R86 := R86["0x7B782033"]
+1328 [-]: MOVE      R87 R59      ; R87 := R59
+1329 [-]: LOADK     R88 K25      ; R88 := 0
+1330 [-]: ADD       R89 R60 R62  ; R89 := R60 + R62
+1331 [-]: SUB       R89 R89 K10  ; R89 := R89 - 1
+1332 [-]: CALL      R86 4 2      ; R86 := R86(R87,R88,R89)
+1333 [-]: GETTABLE  R87 R82 K50  ; R87 := R82["LinkStart"]
+1334 [-]: MOVE      R88 R78      ; R88 := R78
+1335 [-]: GETGLOBAL R89 K0       ; R89 := string
+1336 [-]: GETTABLE  R89 R89 K28  ; R89 := R89["0x7B782033"]
+1337 [-]: MOVE      R90 R59      ; R90 := R59
+1338 [-]: ADD       R91 R60 R62  ; R91 := R60 + R62
+1339 [-]: ADD       R91 R91 K10  ; R91 := R91 + 1
+1340 [-]: CALL      R89 3 2      ; R89 := R89(R90,R91)
+1341 [-]: CONCAT    R59 R86 R89  ; R59 := R86 .. R87 .. R88 .. R89
+1342 [-]: LEN       R86 R85      ; R86 := # R85
+1343 [-]: LEN       R87 R6       ; R87 := # R6
+1344 [-]: SUB       R86 R86 R87  ; R86 := R86 - R87
+1345 [-]: SUB       R86 R86 K123 ; R86 := R86 - 2
+1346 [-]: ADD       R62 R62 R86  ; R62 := R62 + R86
+1347 [-]: GETTABLE  R86 R5 R77   ; R86 := R5[R77]
+1348 [-]: ADD       R86 R86 K10  ; R86 := R86 + 1
+1349 [-]: SETTABLE  R5 R77 R86   ; R5[R77] := R86
+1350 [-]: ADD       R86 R58 K10  ; R86 := R58 + 1
+1351 [-]: GETTABLE  R86 R43 R86  ; R86 := R43[R86]
+1352 [-]: GETGLOBAL R87 K0       ; R87 := string
+1353 [-]: GETTABLE  R87 R87 K28  ; R87 := R87["0x7B782033"]
+1354 [-]: ADD       R88 R58 K10  ; R88 := R58 + 1
+1355 [-]: GETTABLE  R88 R43 R88  ; R88 := R43[R88]
+1356 [-]: GETTABLE  R88 R88 K102 ; R88 := R88["text"]
+1357 [-]: LOADK     R89 K25      ; R89 := 0
+1358 [-]: SUB       R90 R75 K10  ; R90 := R75 - 1
+1359 [-]: CALL      R87 4 2      ; R87 := R87(R88,R89,R90)
+1360 [-]: MOVE      R88 R79      ; R88 := R79
+1361 [-]: LOADK     R89 K125     ; R89 := "</a>"
+1362 [-]: GETGLOBAL R90 K0       ; R90 := string
+1363 [-]: GETTABLE  R90 R90 K28  ; R90 := R90["0x7B782033"]
+1364 [-]: ADD       R91 R58 K10  ; R91 := R58 + 1
+1365 [-]: GETTABLE  R91 R43 R91  ; R91 := R43[R91]
+1366 [-]: GETTABLE  R91 R91 K102 ; R91 := R91["text"]
+1367 [-]: ADD       R92 R75 K10  ; R92 := R75 + 1
+1368 [-]: CALL      R90 3 2      ; R90 := R90(R91,R92)
+1369 [-]: CONCAT    R87 R87 R90  ; R87 := R87 .. R88 .. R89 .. R90
+1370 [-]: SETTABLE  R86 K102 R87 ; R86["text"] := R87
+1371 [-]: GETGLOBAL R86 K47      ; R86 := table
+1372 [-]: GETTABLE  R86 R86 K48  ; R86 := R86["0xE6450C9D"]
+1373 [-]: GETTABLE  R87 R43 R58  ; R87 := R43[R58]
+1374 [-]: GETTABLE  R87 R87 K112 ; R87 := R87["hyperLinks"]
+1375 [-]: NEWTABLE  R88 0 3      ; R88 := {}
+1376 [-]: GETTABLE  R89 R82 K49  ; R89 := R82["Name"]
+1377 [-]: SETTABLE  R88 K49 R89  ; R88["Name"] := R89
+1378 [-]: GETTABLE  R89 R82 K51  ; R89 := R82["LinkString"]
+1379 [-]: SETTABLE  R88 K8 R89   ; R88["Item"] := R89
+1380 [-]: SETTABLE  R88 K128 R77 ; R88["LinkType"] := R77
+1381 [-]: CALL      R86 3 1      ; R86(R87,R88)
+1382 [-]: JMP       1384         ; PC := 1384
+1383 [-]: JMP       1143         ; PC := 1143
+1384 [-]: GETTABLE  R86 R43 R58  ; R86 := R43[R58]
+1385 [-]: SETTABLE  R86 K102 R59 ; R86["text"] := R59
+1386 [-]: FORLOOP   R55 746      ; R55 += R57; if R55 <= R56 then begin PC := 746; R58 := R55 end
+1387 [-]: RETURN    R43 2        ; return R43
+1388 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #97.13.1:

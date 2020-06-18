@@ -1,4 +1,4 @@
-code size: 149
+code size: 148
 code size: 17
 code size: 18
 code size: 10
@@ -6,7 +6,7 @@ code size: 41
 code size: 28
 code size: 91
 code size: 6
-code size: 371
+code size: 373
 code size: 32
 code size: 41
 code size: 71
@@ -14,7 +14,7 @@ code size: 539
 code size: 25
 code size: 162
 code size: 64
-code size: 82
+code size: 43
 code size: 530
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Events\CephalonMaze.luac 
@@ -150,31 +150,30 @@ code size: 530
 122 [-]: SETGLOBAL R26 K40      ; 0x22B46294 := R26
 123 [-]: CLOSURE   R26 14       ; R26 := closure(Function #15)
 124 [-]: MOVE      R0 R19       ; R0 := R19
-125 [-]: MOVE      R0 R16       ; R0 := R16
-126 [-]: MOVE      R0 R15       ; R0 := R15
-127 [-]: MOVE      R0 R25       ; R0 := R25
-128 [-]: SETGLOBAL R26 K41      ; FailVolume := R26
-129 [-]: SETGLOBAL R26 K42      ; 0x5D193F47 := R26
-130 [-]: CLOSURE   R26 15       ; R26 := closure(Function #16)
-131 [-]: MOVE      R0 R19       ; R0 := R19
-132 [-]: MOVE      R0 R16       ; R0 := R16
-133 [-]: MOVE      R0 R18       ; R0 := R18
-134 [-]: MOVE      R0 R10       ; R0 := R10
-135 [-]: MOVE      R0 R12       ; R0 := R12
-136 [-]: MOVE      R0 R17       ; R0 := R17
-137 [-]: MOVE      R0 R7        ; R0 := R7
-138 [-]: MOVE      R0 R8        ; R0 := R8
-139 [-]: MOVE      R0 R6        ; R0 := R6
-140 [-]: MOVE      R0 R23       ; R0 := R23
-141 [-]: MOVE      R0 R0        ; R0 := R0
-142 [-]: MOVE      R0 R15       ; R0 := R15
-143 [-]: MOVE      R0 R14       ; R0 := R14
-144 [-]: MOVE      R0 R25       ; R0 := R25
-145 [-]: MOVE      R0 R11       ; R0 := R11
-146 [-]: MOVE      R0 R21       ; R0 := R21
-147 [-]: SETGLOBAL R26 K43      ; Init := R26
-148 [-]: SETGLOBAL R26 K44      ; 0x23E50EC8 := R26
-149 [-]: RETURN    R0 1         ; return 
+125 [-]: MOVE      R0 R15       ; R0 := R15
+126 [-]: MOVE      R0 R25       ; R0 := R25
+127 [-]: SETGLOBAL R26 K41      ; FailVolume := R26
+128 [-]: SETGLOBAL R26 K42      ; 0x5D193F47 := R26
+129 [-]: CLOSURE   R26 15       ; R26 := closure(Function #16)
+130 [-]: MOVE      R0 R19       ; R0 := R19
+131 [-]: MOVE      R0 R16       ; R0 := R16
+132 [-]: MOVE      R0 R18       ; R0 := R18
+133 [-]: MOVE      R0 R10       ; R0 := R10
+134 [-]: MOVE      R0 R12       ; R0 := R12
+135 [-]: MOVE      R0 R17       ; R0 := R17
+136 [-]: MOVE      R0 R7        ; R0 := R7
+137 [-]: MOVE      R0 R8        ; R0 := R8
+138 [-]: MOVE      R0 R6        ; R0 := R6
+139 [-]: MOVE      R0 R23       ; R0 := R23
+140 [-]: MOVE      R0 R0        ; R0 := R0
+141 [-]: MOVE      R0 R15       ; R0 := R15
+142 [-]: MOVE      R0 R14       ; R0 := R14
+143 [-]: MOVE      R0 R25       ; R0 := R25
+144 [-]: MOVE      R0 R11       ; R0 := R11
+145 [-]: MOVE      R0 R21       ; R0 := R21
+146 [-]: SETGLOBAL R26 K43      ; Init := R26
+147 [-]: SETGLOBAL R26 K44      ; 0x23E50EC8 := R26
+148 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -520,337 +519,339 @@ code size: 530
  44 [-]: EQ        1 R2 R3      ; if R2 == R3 then PC := 47
  45 [-]: JMP       47           ; PC := 47
  46 [-]: RETURN    R0 1         ; return 
- 47 [-]: SELF      R3 R0 K8     ; R4 := R0; R3 := R0["0x907C463B"]
- 48 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 49 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 50 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["CephalonMaze"]
- 51 [-]: GETTABLE  R4 R4 K9     ; R4 := R4["Bridges"]
- 52 [-]: LEN       R4 R4        ; R4 := # R4
- 53 [-]: LOADK     R5 K10       ; R5 := 1
- 54 [-]: LOADK     R6 K11       ; R6 := -1
- 55 [-]: FORPREP   R4 81        ; R4 -= R6; PC := 81
- 56 [-]: GETGLOBAL R8 K0        ; R8 := _T
- 57 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["CephalonMaze"]
- 58 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["Bridges"]
- 59 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
- 60 [-]: GETGLOBAL R9 K3        ; R9 := 0x400E7765
- 61 [-]: GETTABLE  R10 R8 K12   ; R10 := R8["Movie"]
- 62 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 63 [-]: TEST      R9 1         ; if R9 then PC := 68
- 64 [-]: JMP       68           ; PC := 68
- 65 [-]: GETTABLE  R9 R8 K12    ; R9 := R8["Movie"]
- 66 [-]: SELF      R9 R9 K13    ; R10 := R9; R9 := R9["0xA58BB96C"]
- 67 [-]: CALL      R9 2 1       ; R9(R10)
- 68 [-]: GETTABLE  R9 R8 K14    ; R9 := R8["Deco"]
- 69 [-]: EQ        1 R9 R3      ; if R9 == R3 then PC := 81
- 70 [-]: JMP       81           ; PC := 81
- 71 [-]: GETTABLE  R9 R8 K14    ; R9 := R8["Deco"]
- 72 [-]: SELF      R9 R9 K15    ; R10 := R9; R9 := R9["0xD4C2743F"]
- 73 [-]: CALL      R9 2 1       ; R9(R10)
- 74 [-]: GETGLOBAL R9 K16       ; R9 := table
- 75 [-]: GETTABLE  R9 R9 K17    ; R9 := R9["0xCDB1FD5E"]
- 76 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 77 [-]: GETTABLE  R10 R10 K1   ; R10 := R10["CephalonMaze"]
- 78 [-]: GETTABLE  R10 R10 K9   ; R10 := R10["Bridges"]
- 79 [-]: MOVE      R11 R7       ; R11 := R7
- 80 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 81 [-]: FORLOOP   R4 56        ; R4 += R6; if R4 <= R5 then begin PC := 56; R7 := R4 end
- 82 [-]: GETGLOBAL R9 K0        ; R9 := _T
- 83 [-]: GETTABLE  R9 R9 K1     ; R9 := R9["CephalonMaze"]
- 84 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["PreviousPlatform"]
- 85 [-]: GETGLOBAL R10 K3       ; R10 := 0x400E7765
- 86 [-]: MOVE      R11 R9       ; R11 := R9
- 87 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 88 [-]: TEST      R10 1        ; if R10 then PC := 93
- 89 [-]: JMP       93           ; PC := 93
- 90 [-]: GETUPVAL  R10 U0       ; R10 := U0
- 91 [-]: MOVE      R11 R9       ; R11 := R9
- 92 [-]: CALL      R10 2 1      ; R10(R11)
- 93 [-]: SELF      R10 R0 K19   ; R11 := R0; R10 := R0["0xD01F29AC"]
- 94 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 95 [-]: EQ        0 R10 K6     ; if R10 ~= 0 then PC := 153
- 96 [-]: JMP       153          ; PC := 153
- 97 [-]: GETGLOBAL R10 K0       ; R10 := _T
- 98 [-]: GETTABLE  R10 R10 K1   ; R10 := R10["CephalonMaze"]
- 99 [-]: SETTABLE  R10 K20 K21  ; R10["Failed"] := "0x1"
-100 [-]: GETUPVAL  R10 U0       ; R10 := U0
-101 [-]: GETGLOBAL R11 K0       ; R11 := _T
-102 [-]: GETTABLE  R11 R11 K1   ; R11 := R11["CephalonMaze"]
-103 [-]: GETTABLE  R11 R11 K18  ; R11 := R11["PreviousPlatform"]
-104 [-]: CALL      R10 2 1      ; R10(R11)
-105 [-]: GETUPVAL  R10 U0       ; R10 := U0
-106 [-]: GETGLOBAL R11 K0       ; R11 := _T
-107 [-]: GETTABLE  R11 R11 K1   ; R11 := R11["CephalonMaze"]
-108 [-]: GETTABLE  R11 R11 K22  ; R11 := R11["NextPlatform"]
-109 [-]: CALL      R10 2 1      ; R10(R11)
-110 [-]: GETUPVAL  R10 U1       ; R10 := U1
-111 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["0x25992394"]
-112 [-]: GETGLOBAL R11 K24      ; R11 := soundWrong
-113 [-]: CALL      R10 2 1      ; R10(R11)
-114 [-]: GETUPVAL  R10 U2       ; R10 := U2
-115 [-]: GETTABLE  R10 R10 K25  ; R10 := R10["0x7BD10FF7"]
-116 [-]: MOVE      R11 R1       ; R11 := R1
-117 [-]: CALL      R10 2 1      ; R10(R11)
-118 [-]: GETUPVAL  R10 U3       ; R10 := U3
-119 [-]: GETUPVAL  R11 U4       ; R11 := U4
-120 [-]: CALL      R10 2 1      ; R10(R11)
-121 [-]: SELF      R10 R3 K26   ; R11 := R3; R10 := R3["0x15D4DAEE"]
-122 [-]: GETGLOBAL R12 K27      ; R12 := gScriptTriggerType
-123 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-124 [-]: LOADK     R11 K10      ; R11 := 1
-125 [-]: LEN       R12 R10      ; R12 := # R10
-126 [-]: LOADK     R13 K10      ; R13 := 1
-127 [-]: FORPREP   R11 131      ; R11 -= R13; PC := 131
-128 [-]: GETTABLE  R15 R10 R14  ; R15 := R10[R14]
-129 [-]: SELF      R15 R15 K28  ; R16 := R15; R15 := R15["0x2DB1272F"]
-130 [-]: CALL      R15 2 1      ; R15(R16)
-131 [-]: FORLOOP   R11 128      ; R11 += R13; if R11 <= R12 then begin PC := 128; R14 := R11 end
-132 [-]: SELF      R15 R3 K29   ; R16 := R3; R15 := R3["0x7A97EAF5"]
-133 [-]: GETGLOBAL R17 K30      ; R17 := bridgeShatterAnim
-134 [-]: MOVE      R18 R0       ; R18 := R0
-135 [-]: MOVE      R19 R0       ; R19 := R0
-136 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
-137 [-]: SELF      R15 R0 K23   ; R16 := R0; R15 := R0["0x25992394"]
-138 [-]: GETGLOBAL R17 K31      ; R17 := bridgeShatterSound
-139 [-]: MOVE      R18 R0       ; R18 := R0
-140 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
-141 [-]: GETGLOBAL R15 K5       ; R15 := 0x201191EA
-142 [-]: GETGLOBAL R16 K32      ; R16 := failBridgeDestructionDelay
-143 [-]: CALL      R15 2 1      ; R15(R16)
-144 [-]: GETGLOBAL R15 K3       ; R15 := 0x400E7765
-145 [-]: MOVE      R16 R3       ; R16 := R3
-146 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-147 [-]: TEST      R15 1        ; if R15 then PC := 371
-148 [-]: JMP       371          ; PC := 371
-149 [-]: SELF      R15 R3 K33   ; R16 := R3; R15 := R3["0xA6C0AE40"]
-150 [-]: MOVE      R17 R0       ; R17 := R0
-151 [-]: CALL      R15 3 1      ; R15(R16,R17)
-152 [-]: JMP       371          ; PC := 371
-153 [-]: GETGLOBAL R15 K0       ; R15 := _T
-154 [-]: GETTABLE  R15 R15 K1   ; R15 := R15["CephalonMaze"]
-155 [-]: GETTABLE  R15 R15 K22  ; R15 := R15["NextPlatform"]
-156 [-]: GETGLOBAL R16 K0       ; R16 := _T
-157 [-]: GETTABLE  R16 R16 K1   ; R16 := R16["CephalonMaze"]
-158 [-]: SETTABLE  R16 K18 R15  ; R16["PreviousPlatform"] := R15
-159 [-]: GETGLOBAL R16 K0       ; R16 := _T
-160 [-]: GETTABLE  R16 R16 K1   ; R16 := R16["CephalonMaze"]
-161 [-]: GETGLOBAL R17 K0       ; R17 := _T
-162 [-]: GETTABLE  R17 R17 K1   ; R17 := R17["CephalonMaze"]
-163 [-]: GETTABLE  R17 R17 K34  ; R17 := R17["CorrectChoices"]
-164 [-]: ADD       R17 R17 K10  ; R17 := R17 + 1
-165 [-]: SETTABLE  R16 K34 R17  ; R16["CorrectChoices"] := R17
-166 [-]: LOADNIL   R16 R16      ; R16 := nil
-167 [-]: GETGLOBAL R17 K0       ; R17 := _T
-168 [-]: GETTABLE  R17 R17 K1   ; R17 := R17["CephalonMaze"]
-169 [-]: GETTABLE  R17 R17 K34  ; R17 := R17["CorrectChoices"]
-170 [-]: GETGLOBAL R18 K0       ; R18 := _T
-171 [-]: GETTABLE  R18 R18 K1   ; R18 := R18["CephalonMaze"]
-172 [-]: GETTABLE  R18 R18 K35  ; R18 := R18["NumClues"]
-173 [-]: LE        0 R18 R17    ; if R18 > R17 then PC := 215
-174 [-]: JMP       215          ; PC := 215
-175 [-]: SELF      R17 R15 K36  ; R18 := R15; R17 := R15["0xAB436EF2"]
-176 [-]: GETGLOBAL R19 K37      ; R19 := crystalDecoType
-177 [-]: GETGLOBAL R20 K38      ; R20 := EMPTY_SYMBOL
-178 [-]: GETGLOBAL R21 K39      ; R21 := crystalDecoOffset
-179 [-]: GETGLOBAL R22 K40      ; R22 := ZERO_ROTATION
-180 [-]: CALL      R17 6 2      ; R17 := R17(R18,R19,R20,R21,R22)
-181 [-]: MOVE      R16 R17      ; R16 := R17
-182 [-]: GETGLOBAL R17 K3       ; R17 := 0x400E7765
-183 [-]: MOVE      R18 R16      ; R18 := R16
-184 [-]: CALL      R17 2 2      ; R17 := R17(R18)
-185 [-]: TEST      R17 1        ; if R17 then PC := 215
-186 [-]: JMP       215          ; PC := 215
-187 [-]: SELF      R17 R16 K41  ; R18 := R16; R17 := R16["0x9F1DC568"]
-188 [-]: GETGLOBAL R19 K42      ; R19 := crystalQuadDecoType
-189 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
-190 [-]: GETGLOBAL R18 K0       ; R18 := _T
-191 [-]: GETTABLE  R18 R18 K43  ; R18 := R18["CephalonMazePhase"]
-192 [-]: TEST      R18 1        ; if R18 then PC := 195
-193 [-]: JMP       195          ; PC := 195
-194 [-]: LOADK     R18 K10      ; R18 := 1
-195 [-]: GETGLOBAL R19 K3       ; R19 := 0x400E7765
-196 [-]: MOVE      R20 R17      ; R20 := R17
-197 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-198 [-]: TEST      R19 1        ; if R19 then PC := 215
-199 [-]: JMP       215          ; PC := 215
-200 [-]: GETGLOBAL R19 K3       ; R19 := 0x400E7765
-201 [-]: GETGLOBAL R20 K44      ; R20 := crystalClueImages
-202 [-]: GETTABLE  R20 R20 R18  ; R20 := R20[R18]
-203 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-204 [-]: TEST      R19 1        ; if R19 then PC := 215
-205 [-]: JMP       215          ; PC := 215
-206 [-]: GETGLOBAL R19 K45      ; R19 := 0x7C282057
-207 [-]: GETGLOBAL R20 K44      ; R20 := crystalClueImages
-208 [-]: GETTABLE  R20 R20 R18  ; R20 := R20[R18]
-209 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-210 [-]: SELF      R20 R17 K46  ; R21 := R17; R20 := R17["0x314A3217"]
-211 [-]: LOADK     R22 K6       ; R22 := 0
-212 [-]: LOADK     R23 K47      ; R23 := "ProjectionMap"
-213 [-]: MOVE      R24 R19      ; R24 := R19
-214 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
-215 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
-216 [-]: MOVE      R21 R15      ; R21 := R15
-217 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-218 [-]: TEST      R20 1        ; if R20 then PC := 339
-219 [-]: JMP       339          ; PC := 339
-220 [-]: SELF      R20 R15 K23  ; R21 := R15; R20 := R15["0x25992394"]
-221 [-]: GETGLOBAL R22 K48      ; R22 := platformCreateSound
-222 [-]: MOVE      R23 R0       ; R23 := R0
-223 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
-224 [-]: SELF      R20 R15 K49  ; R21 := R15; R20 := R15["0x6DA72501"]
-225 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-226 [-]: SELF      R21 R15 K50  ; R22 := R15; R21 := R15["0xF23A7849"]
-227 [-]: CALL      R21 2 2      ; R21 := R21(R22)
-228 [-]: GETGLOBAL R22 K51      ; R22 := 0x221C9700
-229 [-]: LOADK     R23 K6       ; R23 := 0
-230 [-]: LOADK     R24 K52      ; R24 := -30
-231 [-]: LOADK     R25 K6       ; R25 := 0
-232 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
-233 [-]: GETGLOBAL R23 K53      ; R23 := math
-234 [-]: GETTABLE  R23 R23 K54  ; R23 := R23["0x865961F7"]
-235 [-]: CALL      R23 1 2      ; R23 := R23()
-236 [-]: LT        0 R23 K55    ; if R23 >= 0.5 then PC := 241
-237 [-]: JMP       241          ; PC := 241
-238 [-]: GETTABLE  R23 R22 K56  ; R23 := R22["y"]
-239 [-]: UNM       R23 R23      ; R23 := - R23
-240 [-]: SETTABLE  R22 K56 R23  ; R22["y"] := R23
-241 [-]: ADD       R23 R20 R22  ; R23 := R20 + R22
-242 [-]: GETGLOBAL R24 K57      ; R24 := 0x1E4F6281
-243 [-]: GETTABLE  R25 R21 K58  ; R25 := R21["heading"]
-244 [-]: GETTABLE  R26 R21 K59  ; R26 := R21["pitch"]
-245 [-]: GETTABLE  R27 R21 K60  ; R27 := R21["bank"]
-246 [-]: CALL      R24 4 2      ; R24 := R24(R25,R26,R27)
-247 [-]: GETGLOBAL R25 K53      ; R25 := math
-248 [-]: GETTABLE  R25 R25 K54  ; R25 := R25["0x865961F7"]
-249 [-]: CALL      R25 1 2      ; R25 := R25()
-250 [-]: LT        0 R25 K55    ; if R25 >= 0.5 then PC := 256
-251 [-]: JMP       256          ; PC := 256
-252 [-]: GETTABLE  R25 R24 K58  ; R25 := R24["heading"]
-253 [-]: ADD       R25 R25 K61  ; R25 := R25 + 90
-254 [-]: SETTABLE  R24 K58 R25  ; R24["heading"] := R25
-255 [-]: JMP       259          ; PC := 259
-256 [-]: GETTABLE  R25 R24 K58  ; R25 := R24["heading"]
-257 [-]: SUB       R25 R25 K61  ; R25 := R25 - 90
-258 [-]: SETTABLE  R24 K58 R25  ; R24["heading"] := R25
-259 [-]: SELF      R25 R15 K62  ; R26 := R15; R25 := R15["0x7DBDDA0B"]
-260 [-]: MOVE      R27 R1       ; R27 := R1
-261 [-]: MOVE      R28 R1       ; R28 := R1
-262 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
-263 [-]: LOADK     R25 K10      ; R25 := 1
-264 [-]: LT        0 K6 R25     ; if 0 >= R25 then PC := 310
-265 [-]: JMP       310          ; PC := 310
-266 [-]: GETGLOBAL R26 K3       ; R26 := 0x400E7765
-267 [-]: MOVE      R27 R15      ; R27 := R15
-268 [-]: CALL      R26 2 2      ; R26 := R26(R27)
-269 [-]: TEST      R26 1        ; if R26 then PC := 310
-270 [-]: JMP       310          ; PC := 310
-271 [-]: GETGLOBAL R26 K63      ; R26 := 0x6374FD98
-272 [-]: GETGLOBAL R27 K64      ; R27 := 0x4CDEF9FF
-273 [-]: CALL      R27 1 2      ; R27 := R27()
-274 [-]: MUL       R27 R27 K10  ; R27 := R27 * 1
-275 [-]: SUB       R27 R25 R27  ; R27 := R25 - R27
-276 [-]: LOADK     R28 K6       ; R28 := 0
-277 [-]: LOADK     R29 K10      ; R29 := 1
-278 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
-279 [-]: MOVE      R25 R26      ; R25 := R26
-280 [-]: GETUPVAL  R26 U5       ; R26 := U5
-281 [-]: SUB       R27 K10 R25  ; R27 := 1 - R25
-282 [-]: LOADK     R28 K6       ; R28 := 0
-283 [-]: LOADK     R29 K10      ; R29 := 1
-284 [-]: LOADK     R30 K10      ; R30 := 1
-285 [-]: CALL      R26 5 2      ; R26 := R26(R27,R28,R29,R30)
-286 [-]: GETGLOBAL R27 K65      ; R27 := 0xE0C881B4
-287 [-]: MOVE      R28 R23      ; R28 := R23
-288 [-]: MOVE      R29 R20      ; R29 := R20
-289 [-]: MOVE      R30 R26      ; R30 := R26
-290 [-]: CALL      R27 4 2      ; R27 := R27(R28,R29,R30)
-291 [-]: GETGLOBAL R28 K66      ; R28 := 0xDB3504BA
-292 [-]: MOVE      R29 R24      ; R29 := R24
-293 [-]: MOVE      R30 R21      ; R30 := R21
-294 [-]: GETGLOBAL R31 K53      ; R31 := math
-295 [-]: GETTABLE  R31 R31 K67  ; R31 := R31["0xD6F2D811"]
-296 [-]: SUB       R32 K10 R25  ; R32 := 1 - R25
-297 [-]: LOADK     R33 K55      ; R33 := 0.5
-298 [-]: CALL      R31 3 0      ; R31,... := R31(R32,R33)
-299 [-]: CALL      R28 0 2      ; R28 := R28(R29,...)
-300 [-]: SELF      R29 R15 K68  ; R30 := R15; R29 := R15["0xEC183DDC"]
-301 [-]: MOVE      R31 R27      ; R31 := R27
-302 [-]: CALL      R29 3 1      ; R29(R30,R31)
-303 [-]: SELF      R29 R15 K69  ; R30 := R15; R29 := R15["0x5097FD8C"]
-304 [-]: MOVE      R31 R28      ; R31 := R28
-305 [-]: CALL      R29 3 1      ; R29(R30,R31)
-306 [-]: GETGLOBAL R29 K5       ; R29 := 0x201191EA
-307 [-]: LOADK     R30 K6       ; R30 := 0
-308 [-]: CALL      R29 2 1      ; R29(R30)
-309 [-]: JMP       264          ; PC := 264
-310 [-]: GETGLOBAL R29 K3       ; R29 := 0x400E7765
-311 [-]: MOVE      R30 R15      ; R30 := R15
-312 [-]: CALL      R29 2 2      ; R29 := R29(R30)
-313 [-]: TEST      R29 1        ; if R29 then PC := 339
-314 [-]: JMP       339          ; PC := 339
-315 [-]: SELF      R29 R15 K68  ; R30 := R15; R29 := R15["0xEC183DDC"]
-316 [-]: MOVE      R31 R20      ; R31 := R20
-317 [-]: CALL      R29 3 1      ; R29(R30,R31)
-318 [-]: SELF      R29 R15 K69  ; R30 := R15; R29 := R15["0x5097FD8C"]
-319 [-]: MOVE      R31 R21      ; R31 := R21
-320 [-]: CALL      R29 3 1      ; R29(R30,R31)
-321 [-]: SELF      R29 R15 K41  ; R30 := R15; R29 := R15["0x9F1DC568"]
-322 [-]: GETGLOBAL R31 K27      ; R31 := gScriptTriggerType
-323 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
-324 [-]: GETGLOBAL R30 K3       ; R30 := 0x400E7765
-325 [-]: MOVE      R31 R29      ; R31 := R29
-326 [-]: CALL      R30 2 2      ; R30 := R30(R31)
-327 [-]: TEST      R30 1        ; if R30 then PC := 331
-328 [-]: JMP       331          ; PC := 331
-329 [-]: SELF      R30 R29 K70  ; R31 := R29; R30 := R29["0xC5E91BA6"]
-330 [-]: CALL      R30 2 1      ; R30(R31)
-331 [-]: GETGLOBAL R30 K71      ; R30 := gRegion
-332 [-]: SELF      R30 R30 K72  ; R31 := R30; R30 := R30["0xBDD34CC6"]
-333 [-]: GETGLOBAL R32 K73      ; R32 := platformRevealEffect
-334 [-]: SELF      R33 R15 K49  ; R34 := R15; R33 := R15["0x6DA72501"]
-335 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-336 [-]: SELF      R34 R15 K50  ; R35 := R15; R34 := R15["0xF23A7849"]
-337 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
-338 [-]: CALL      R30 0 1      ; R30(R31,...)
-339 [-]: GETGLOBAL R30 K0       ; R30 := _T
-340 [-]: GETTABLE  R30 R30 K1   ; R30 := R30["CephalonMaze"]
-341 [-]: GETTABLE  R30 R30 K34  ; R30 := R30["CorrectChoices"]
-342 [-]: GETGLOBAL R31 K0       ; R31 := _T
-343 [-]: GETTABLE  R31 R31 K1   ; R31 := R31["CephalonMaze"]
-344 [-]: GETTABLE  R31 R31 K35  ; R31 := R31["NumClues"]
-345 [-]: LE        0 R31 R30    ; if R31 > R30 then PC := 360
-346 [-]: JMP       360          ; PC := 360
-347 [-]: GETGLOBAL R30 K71      ; R30 := gRegion
-348 [-]: SELF      R30 R30 K72  ; R31 := R30; R30 := R30["0xBDD34CC6"]
-349 [-]: GETGLOBAL R32 K74      ; R32 := crystalActionType
-350 [-]: SELF      R33 R16 K49  ; R34 := R16; R33 := R16["0x6DA72501"]
-351 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-352 [-]: GETGLOBAL R34 K51      ; R34 := 0x221C9700
-353 [-]: LOADK     R35 K6       ; R35 := 0
-354 [-]: LOADK     R36 K10      ; R36 := 1
-355 [-]: LOADK     R37 K6       ; R37 := 0
-356 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
-357 [-]: ADD       R33 R33 R34  ; R33 := R33 + R34
-358 [-]: GETGLOBAL R34 K40      ; R34 := ZERO_ROTATION
-359 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
-360 [-]: GETUPVAL  R30 U3       ; R30 := U3
-361 [-]: GETUPVAL  R31 U6       ; R31 := U6
-362 [-]: GETGLOBAL R32 K0       ; R32 := _T
-363 [-]: GETTABLE  R32 R32 K1   ; R32 := R32["CephalonMaze"]
-364 [-]: GETTABLE  R32 R32 K34  ; R32 := R32["CorrectChoices"]
-365 [-]: GETTABLE  R31 R31 R32  ; R31 := R31[R32]
-366 [-]: CALL      R30 2 1      ; R30(R31)
-367 [-]: GETUPVAL  R30 U1       ; R30 := U1
-368 [-]: GETTABLE  R30 R30 K23  ; R30 := R30["0x25992394"]
-369 [-]: GETGLOBAL R31 K75      ; R31 := soundCorrect
-370 [-]: CALL      R30 2 1      ; R30(R31)
-371 [-]: RETURN    R0 1         ; return 
+ 47 [-]: SELF      R3 R0 K8     ; R4 := R0; R3 := R0["0x2DB1272F"]
+ 48 [-]: CALL      R3 2 1       ; R3(R4)
+ 49 [-]: SELF      R3 R0 K9     ; R4 := R0; R3 := R0["0x907C463B"]
+ 50 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 51 [-]: GETGLOBAL R4 K0        ; R4 := _T
+ 52 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["CephalonMaze"]
+ 53 [-]: GETTABLE  R4 R4 K10    ; R4 := R4["Bridges"]
+ 54 [-]: LEN       R4 R4        ; R4 := # R4
+ 55 [-]: LOADK     R5 K11       ; R5 := 1
+ 56 [-]: LOADK     R6 K12       ; R6 := -1
+ 57 [-]: FORPREP   R4 83        ; R4 -= R6; PC := 83
+ 58 [-]: GETGLOBAL R8 K0        ; R8 := _T
+ 59 [-]: GETTABLE  R8 R8 K1     ; R8 := R8["CephalonMaze"]
+ 60 [-]: GETTABLE  R8 R8 K10    ; R8 := R8["Bridges"]
+ 61 [-]: GETTABLE  R8 R8 R7     ; R8 := R8[R7]
+ 62 [-]: GETGLOBAL R9 K3        ; R9 := 0x400E7765
+ 63 [-]: GETTABLE  R10 R8 K13   ; R10 := R8["Movie"]
+ 64 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 65 [-]: TEST      R9 1         ; if R9 then PC := 70
+ 66 [-]: JMP       70           ; PC := 70
+ 67 [-]: GETTABLE  R9 R8 K13    ; R9 := R8["Movie"]
+ 68 [-]: SELF      R9 R9 K14    ; R10 := R9; R9 := R9["0xA58BB96C"]
+ 69 [-]: CALL      R9 2 1       ; R9(R10)
+ 70 [-]: GETTABLE  R9 R8 K15    ; R9 := R8["Deco"]
+ 71 [-]: EQ        1 R9 R3      ; if R9 == R3 then PC := 83
+ 72 [-]: JMP       83           ; PC := 83
+ 73 [-]: GETTABLE  R9 R8 K15    ; R9 := R8["Deco"]
+ 74 [-]: SELF      R9 R9 K16    ; R10 := R9; R9 := R9["0xD4C2743F"]
+ 75 [-]: CALL      R9 2 1       ; R9(R10)
+ 76 [-]: GETGLOBAL R9 K17       ; R9 := table
+ 77 [-]: GETTABLE  R9 R9 K18    ; R9 := R9["0xCDB1FD5E"]
+ 78 [-]: GETGLOBAL R10 K0       ; R10 := _T
+ 79 [-]: GETTABLE  R10 R10 K1   ; R10 := R10["CephalonMaze"]
+ 80 [-]: GETTABLE  R10 R10 K10  ; R10 := R10["Bridges"]
+ 81 [-]: MOVE      R11 R7       ; R11 := R7
+ 82 [-]: CALL      R9 3 1       ; R9(R10,R11)
+ 83 [-]: FORLOOP   R4 58        ; R4 += R6; if R4 <= R5 then begin PC := 58; R7 := R4 end
+ 84 [-]: GETGLOBAL R9 K0        ; R9 := _T
+ 85 [-]: GETTABLE  R9 R9 K1     ; R9 := R9["CephalonMaze"]
+ 86 [-]: GETTABLE  R9 R9 K19    ; R9 := R9["PreviousPlatform"]
+ 87 [-]: GETGLOBAL R10 K3       ; R10 := 0x400E7765
+ 88 [-]: MOVE      R11 R9       ; R11 := R9
+ 89 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 90 [-]: TEST      R10 1        ; if R10 then PC := 95
+ 91 [-]: JMP       95           ; PC := 95
+ 92 [-]: GETUPVAL  R10 U0       ; R10 := U0
+ 93 [-]: MOVE      R11 R9       ; R11 := R9
+ 94 [-]: CALL      R10 2 1      ; R10(R11)
+ 95 [-]: SELF      R10 R0 K20   ; R11 := R0; R10 := R0["0xD01F29AC"]
+ 96 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 97 [-]: EQ        0 R10 K6     ; if R10 ~= 0 then PC := 155
+ 98 [-]: JMP       155          ; PC := 155
+ 99 [-]: GETGLOBAL R10 K0       ; R10 := _T
+100 [-]: GETTABLE  R10 R10 K1   ; R10 := R10["CephalonMaze"]
+101 [-]: SETTABLE  R10 K21 K22  ; R10["Failed"] := "0x1"
+102 [-]: GETUPVAL  R10 U0       ; R10 := U0
+103 [-]: GETGLOBAL R11 K0       ; R11 := _T
+104 [-]: GETTABLE  R11 R11 K1   ; R11 := R11["CephalonMaze"]
+105 [-]: GETTABLE  R11 R11 K19  ; R11 := R11["PreviousPlatform"]
+106 [-]: CALL      R10 2 1      ; R10(R11)
+107 [-]: GETUPVAL  R10 U0       ; R10 := U0
+108 [-]: GETGLOBAL R11 K0       ; R11 := _T
+109 [-]: GETTABLE  R11 R11 K1   ; R11 := R11["CephalonMaze"]
+110 [-]: GETTABLE  R11 R11 K23  ; R11 := R11["NextPlatform"]
+111 [-]: CALL      R10 2 1      ; R10(R11)
+112 [-]: GETUPVAL  R10 U1       ; R10 := U1
+113 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0x25992394"]
+114 [-]: GETGLOBAL R11 K25      ; R11 := soundWrong
+115 [-]: CALL      R10 2 1      ; R10(R11)
+116 [-]: GETUPVAL  R10 U2       ; R10 := U2
+117 [-]: GETTABLE  R10 R10 K26  ; R10 := R10["0x7BD10FF7"]
+118 [-]: MOVE      R11 R1       ; R11 := R1
+119 [-]: CALL      R10 2 1      ; R10(R11)
+120 [-]: GETUPVAL  R10 U3       ; R10 := U3
+121 [-]: GETUPVAL  R11 U4       ; R11 := U4
+122 [-]: CALL      R10 2 1      ; R10(R11)
+123 [-]: SELF      R10 R3 K27   ; R11 := R3; R10 := R3["0x15D4DAEE"]
+124 [-]: GETGLOBAL R12 K28      ; R12 := gScriptTriggerType
+125 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+126 [-]: LOADK     R11 K11      ; R11 := 1
+127 [-]: LEN       R12 R10      ; R12 := # R10
+128 [-]: LOADK     R13 K11      ; R13 := 1
+129 [-]: FORPREP   R11 133      ; R11 -= R13; PC := 133
+130 [-]: GETTABLE  R15 R10 R14  ; R15 := R10[R14]
+131 [-]: SELF      R15 R15 K8   ; R16 := R15; R15 := R15["0x2DB1272F"]
+132 [-]: CALL      R15 2 1      ; R15(R16)
+133 [-]: FORLOOP   R11 130      ; R11 += R13; if R11 <= R12 then begin PC := 130; R14 := R11 end
+134 [-]: SELF      R15 R3 K29   ; R16 := R3; R15 := R3["0x7A97EAF5"]
+135 [-]: GETGLOBAL R17 K30      ; R17 := bridgeShatterAnim
+136 [-]: MOVE      R18 R0       ; R18 := R0
+137 [-]: MOVE      R19 R0       ; R19 := R0
+138 [-]: CALL      R15 5 1      ; R15(R16,R17,R18,R19)
+139 [-]: SELF      R15 R0 K24   ; R16 := R0; R15 := R0["0x25992394"]
+140 [-]: GETGLOBAL R17 K31      ; R17 := bridgeShatterSound
+141 [-]: MOVE      R18 R0       ; R18 := R0
+142 [-]: CALL      R15 4 1      ; R15(R16,R17,R18)
+143 [-]: GETGLOBAL R15 K5       ; R15 := 0x201191EA
+144 [-]: GETGLOBAL R16 K32      ; R16 := failBridgeDestructionDelay
+145 [-]: CALL      R15 2 1      ; R15(R16)
+146 [-]: GETGLOBAL R15 K3       ; R15 := 0x400E7765
+147 [-]: MOVE      R16 R3       ; R16 := R3
+148 [-]: CALL      R15 2 2      ; R15 := R15(R16)
+149 [-]: TEST      R15 1        ; if R15 then PC := 373
+150 [-]: JMP       373          ; PC := 373
+151 [-]: SELF      R15 R3 K33   ; R16 := R3; R15 := R3["0xA6C0AE40"]
+152 [-]: MOVE      R17 R0       ; R17 := R0
+153 [-]: CALL      R15 3 1      ; R15(R16,R17)
+154 [-]: JMP       373          ; PC := 373
+155 [-]: GETGLOBAL R15 K0       ; R15 := _T
+156 [-]: GETTABLE  R15 R15 K1   ; R15 := R15["CephalonMaze"]
+157 [-]: GETTABLE  R15 R15 K23  ; R15 := R15["NextPlatform"]
+158 [-]: GETGLOBAL R16 K0       ; R16 := _T
+159 [-]: GETTABLE  R16 R16 K1   ; R16 := R16["CephalonMaze"]
+160 [-]: SETTABLE  R16 K19 R15  ; R16["PreviousPlatform"] := R15
+161 [-]: GETGLOBAL R16 K0       ; R16 := _T
+162 [-]: GETTABLE  R16 R16 K1   ; R16 := R16["CephalonMaze"]
+163 [-]: GETGLOBAL R17 K0       ; R17 := _T
+164 [-]: GETTABLE  R17 R17 K1   ; R17 := R17["CephalonMaze"]
+165 [-]: GETTABLE  R17 R17 K34  ; R17 := R17["CorrectChoices"]
+166 [-]: ADD       R17 R17 K11  ; R17 := R17 + 1
+167 [-]: SETTABLE  R16 K34 R17  ; R16["CorrectChoices"] := R17
+168 [-]: LOADNIL   R16 R16      ; R16 := nil
+169 [-]: GETGLOBAL R17 K0       ; R17 := _T
+170 [-]: GETTABLE  R17 R17 K1   ; R17 := R17["CephalonMaze"]
+171 [-]: GETTABLE  R17 R17 K34  ; R17 := R17["CorrectChoices"]
+172 [-]: GETGLOBAL R18 K0       ; R18 := _T
+173 [-]: GETTABLE  R18 R18 K1   ; R18 := R18["CephalonMaze"]
+174 [-]: GETTABLE  R18 R18 K35  ; R18 := R18["NumClues"]
+175 [-]: LE        0 R18 R17    ; if R18 > R17 then PC := 217
+176 [-]: JMP       217          ; PC := 217
+177 [-]: SELF      R17 R15 K36  ; R18 := R15; R17 := R15["0xAB436EF2"]
+178 [-]: GETGLOBAL R19 K37      ; R19 := crystalDecoType
+179 [-]: GETGLOBAL R20 K38      ; R20 := EMPTY_SYMBOL
+180 [-]: GETGLOBAL R21 K39      ; R21 := crystalDecoOffset
+181 [-]: GETGLOBAL R22 K40      ; R22 := ZERO_ROTATION
+182 [-]: CALL      R17 6 2      ; R17 := R17(R18,R19,R20,R21,R22)
+183 [-]: MOVE      R16 R17      ; R16 := R17
+184 [-]: GETGLOBAL R17 K3       ; R17 := 0x400E7765
+185 [-]: MOVE      R18 R16      ; R18 := R16
+186 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+187 [-]: TEST      R17 1        ; if R17 then PC := 217
+188 [-]: JMP       217          ; PC := 217
+189 [-]: SELF      R17 R16 K41  ; R18 := R16; R17 := R16["0x9F1DC568"]
+190 [-]: GETGLOBAL R19 K42      ; R19 := crystalQuadDecoType
+191 [-]: CALL      R17 3 2      ; R17 := R17(R18,R19)
+192 [-]: GETGLOBAL R18 K0       ; R18 := _T
+193 [-]: GETTABLE  R18 R18 K43  ; R18 := R18["CephalonMazePhase"]
+194 [-]: TEST      R18 1        ; if R18 then PC := 197
+195 [-]: JMP       197          ; PC := 197
+196 [-]: LOADK     R18 K11      ; R18 := 1
+197 [-]: GETGLOBAL R19 K3       ; R19 := 0x400E7765
+198 [-]: MOVE      R20 R17      ; R20 := R17
+199 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+200 [-]: TEST      R19 1        ; if R19 then PC := 217
+201 [-]: JMP       217          ; PC := 217
+202 [-]: GETGLOBAL R19 K3       ; R19 := 0x400E7765
+203 [-]: GETGLOBAL R20 K44      ; R20 := crystalClueImages
+204 [-]: GETTABLE  R20 R20 R18  ; R20 := R20[R18]
+205 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+206 [-]: TEST      R19 1        ; if R19 then PC := 217
+207 [-]: JMP       217          ; PC := 217
+208 [-]: GETGLOBAL R19 K45      ; R19 := 0x7C282057
+209 [-]: GETGLOBAL R20 K44      ; R20 := crystalClueImages
+210 [-]: GETTABLE  R20 R20 R18  ; R20 := R20[R18]
+211 [-]: CALL      R19 2 2      ; R19 := R19(R20)
+212 [-]: SELF      R20 R17 K46  ; R21 := R17; R20 := R17["0x314A3217"]
+213 [-]: LOADK     R22 K6       ; R22 := 0
+214 [-]: LOADK     R23 K47      ; R23 := "ProjectionMap"
+215 [-]: MOVE      R24 R19      ; R24 := R19
+216 [-]: CALL      R20 5 1      ; R20(R21,R22,R23,R24)
+217 [-]: GETGLOBAL R20 K3       ; R20 := 0x400E7765
+218 [-]: MOVE      R21 R15      ; R21 := R15
+219 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+220 [-]: TEST      R20 1        ; if R20 then PC := 341
+221 [-]: JMP       341          ; PC := 341
+222 [-]: SELF      R20 R15 K24  ; R21 := R15; R20 := R15["0x25992394"]
+223 [-]: GETGLOBAL R22 K48      ; R22 := platformCreateSound
+224 [-]: MOVE      R23 R0       ; R23 := R0
+225 [-]: CALL      R20 4 1      ; R20(R21,R22,R23)
+226 [-]: SELF      R20 R15 K49  ; R21 := R15; R20 := R15["0x6DA72501"]
+227 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+228 [-]: SELF      R21 R15 K50  ; R22 := R15; R21 := R15["0xF23A7849"]
+229 [-]: CALL      R21 2 2      ; R21 := R21(R22)
+230 [-]: GETGLOBAL R22 K51      ; R22 := 0x221C9700
+231 [-]: LOADK     R23 K6       ; R23 := 0
+232 [-]: LOADK     R24 K52      ; R24 := -30
+233 [-]: LOADK     R25 K6       ; R25 := 0
+234 [-]: CALL      R22 4 2      ; R22 := R22(R23,R24,R25)
+235 [-]: GETGLOBAL R23 K53      ; R23 := math
+236 [-]: GETTABLE  R23 R23 K54  ; R23 := R23["0x865961F7"]
+237 [-]: CALL      R23 1 2      ; R23 := R23()
+238 [-]: LT        0 R23 K55    ; if R23 >= 0.5 then PC := 243
+239 [-]: JMP       243          ; PC := 243
+240 [-]: GETTABLE  R23 R22 K56  ; R23 := R22["y"]
+241 [-]: UNM       R23 R23      ; R23 := - R23
+242 [-]: SETTABLE  R22 K56 R23  ; R22["y"] := R23
+243 [-]: ADD       R23 R20 R22  ; R23 := R20 + R22
+244 [-]: GETGLOBAL R24 K57      ; R24 := 0x1E4F6281
+245 [-]: GETTABLE  R25 R21 K58  ; R25 := R21["heading"]
+246 [-]: GETTABLE  R26 R21 K59  ; R26 := R21["pitch"]
+247 [-]: GETTABLE  R27 R21 K60  ; R27 := R21["bank"]
+248 [-]: CALL      R24 4 2      ; R24 := R24(R25,R26,R27)
+249 [-]: GETGLOBAL R25 K53      ; R25 := math
+250 [-]: GETTABLE  R25 R25 K54  ; R25 := R25["0x865961F7"]
+251 [-]: CALL      R25 1 2      ; R25 := R25()
+252 [-]: LT        0 R25 K55    ; if R25 >= 0.5 then PC := 258
+253 [-]: JMP       258          ; PC := 258
+254 [-]: GETTABLE  R25 R24 K58  ; R25 := R24["heading"]
+255 [-]: ADD       R25 R25 K61  ; R25 := R25 + 90
+256 [-]: SETTABLE  R24 K58 R25  ; R24["heading"] := R25
+257 [-]: JMP       261          ; PC := 261
+258 [-]: GETTABLE  R25 R24 K58  ; R25 := R24["heading"]
+259 [-]: SUB       R25 R25 K61  ; R25 := R25 - 90
+260 [-]: SETTABLE  R24 K58 R25  ; R24["heading"] := R25
+261 [-]: SELF      R25 R15 K62  ; R26 := R15; R25 := R15["0x7DBDDA0B"]
+262 [-]: MOVE      R27 R1       ; R27 := R1
+263 [-]: MOVE      R28 R1       ; R28 := R1
+264 [-]: CALL      R25 4 1      ; R25(R26,R27,R28)
+265 [-]: LOADK     R25 K11      ; R25 := 1
+266 [-]: LT        0 K6 R25     ; if 0 >= R25 then PC := 312
+267 [-]: JMP       312          ; PC := 312
+268 [-]: GETGLOBAL R26 K3       ; R26 := 0x400E7765
+269 [-]: MOVE      R27 R15      ; R27 := R15
+270 [-]: CALL      R26 2 2      ; R26 := R26(R27)
+271 [-]: TEST      R26 1        ; if R26 then PC := 312
+272 [-]: JMP       312          ; PC := 312
+273 [-]: GETGLOBAL R26 K63      ; R26 := 0x6374FD98
+274 [-]: GETGLOBAL R27 K64      ; R27 := 0x4CDEF9FF
+275 [-]: CALL      R27 1 2      ; R27 := R27()
+276 [-]: MUL       R27 R27 K11  ; R27 := R27 * 1
+277 [-]: SUB       R27 R25 R27  ; R27 := R25 - R27
+278 [-]: LOADK     R28 K6       ; R28 := 0
+279 [-]: LOADK     R29 K11      ; R29 := 1
+280 [-]: CALL      R26 4 2      ; R26 := R26(R27,R28,R29)
+281 [-]: MOVE      R25 R26      ; R25 := R26
+282 [-]: GETUPVAL  R26 U5       ; R26 := U5
+283 [-]: SUB       R27 K11 R25  ; R27 := 1 - R25
+284 [-]: LOADK     R28 K6       ; R28 := 0
+285 [-]: LOADK     R29 K11      ; R29 := 1
+286 [-]: LOADK     R30 K11      ; R30 := 1
+287 [-]: CALL      R26 5 2      ; R26 := R26(R27,R28,R29,R30)
+288 [-]: GETGLOBAL R27 K65      ; R27 := 0xE0C881B4
+289 [-]: MOVE      R28 R23      ; R28 := R23
+290 [-]: MOVE      R29 R20      ; R29 := R20
+291 [-]: MOVE      R30 R26      ; R30 := R26
+292 [-]: CALL      R27 4 2      ; R27 := R27(R28,R29,R30)
+293 [-]: GETGLOBAL R28 K66      ; R28 := 0xDB3504BA
+294 [-]: MOVE      R29 R24      ; R29 := R24
+295 [-]: MOVE      R30 R21      ; R30 := R21
+296 [-]: GETGLOBAL R31 K53      ; R31 := math
+297 [-]: GETTABLE  R31 R31 K67  ; R31 := R31["0xD6F2D811"]
+298 [-]: SUB       R32 K11 R25  ; R32 := 1 - R25
+299 [-]: LOADK     R33 K55      ; R33 := 0.5
+300 [-]: CALL      R31 3 0      ; R31,... := R31(R32,R33)
+301 [-]: CALL      R28 0 2      ; R28 := R28(R29,...)
+302 [-]: SELF      R29 R15 K68  ; R30 := R15; R29 := R15["0xEC183DDC"]
+303 [-]: MOVE      R31 R27      ; R31 := R27
+304 [-]: CALL      R29 3 1      ; R29(R30,R31)
+305 [-]: SELF      R29 R15 K69  ; R30 := R15; R29 := R15["0x5097FD8C"]
+306 [-]: MOVE      R31 R28      ; R31 := R28
+307 [-]: CALL      R29 3 1      ; R29(R30,R31)
+308 [-]: GETGLOBAL R29 K5       ; R29 := 0x201191EA
+309 [-]: LOADK     R30 K6       ; R30 := 0
+310 [-]: CALL      R29 2 1      ; R29(R30)
+311 [-]: JMP       266          ; PC := 266
+312 [-]: GETGLOBAL R29 K3       ; R29 := 0x400E7765
+313 [-]: MOVE      R30 R15      ; R30 := R15
+314 [-]: CALL      R29 2 2      ; R29 := R29(R30)
+315 [-]: TEST      R29 1        ; if R29 then PC := 341
+316 [-]: JMP       341          ; PC := 341
+317 [-]: SELF      R29 R15 K68  ; R30 := R15; R29 := R15["0xEC183DDC"]
+318 [-]: MOVE      R31 R20      ; R31 := R20
+319 [-]: CALL      R29 3 1      ; R29(R30,R31)
+320 [-]: SELF      R29 R15 K69  ; R30 := R15; R29 := R15["0x5097FD8C"]
+321 [-]: MOVE      R31 R21      ; R31 := R21
+322 [-]: CALL      R29 3 1      ; R29(R30,R31)
+323 [-]: SELF      R29 R15 K41  ; R30 := R15; R29 := R15["0x9F1DC568"]
+324 [-]: GETGLOBAL R31 K28      ; R31 := gScriptTriggerType
+325 [-]: CALL      R29 3 2      ; R29 := R29(R30,R31)
+326 [-]: GETGLOBAL R30 K3       ; R30 := 0x400E7765
+327 [-]: MOVE      R31 R29      ; R31 := R29
+328 [-]: CALL      R30 2 2      ; R30 := R30(R31)
+329 [-]: TEST      R30 1        ; if R30 then PC := 333
+330 [-]: JMP       333          ; PC := 333
+331 [-]: SELF      R30 R29 K70  ; R31 := R29; R30 := R29["0xC5E91BA6"]
+332 [-]: CALL      R30 2 1      ; R30(R31)
+333 [-]: GETGLOBAL R30 K71      ; R30 := gRegion
+334 [-]: SELF      R30 R30 K72  ; R31 := R30; R30 := R30["0xBDD34CC6"]
+335 [-]: GETGLOBAL R32 K73      ; R32 := platformRevealEffect
+336 [-]: SELF      R33 R15 K49  ; R34 := R15; R33 := R15["0x6DA72501"]
+337 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+338 [-]: SELF      R34 R15 K50  ; R35 := R15; R34 := R15["0xF23A7849"]
+339 [-]: CALL      R34 2 0      ; R34,... := R34(R35)
+340 [-]: CALL      R30 0 1      ; R30(R31,...)
+341 [-]: GETGLOBAL R30 K0       ; R30 := _T
+342 [-]: GETTABLE  R30 R30 K1   ; R30 := R30["CephalonMaze"]
+343 [-]: GETTABLE  R30 R30 K34  ; R30 := R30["CorrectChoices"]
+344 [-]: GETGLOBAL R31 K0       ; R31 := _T
+345 [-]: GETTABLE  R31 R31 K1   ; R31 := R31["CephalonMaze"]
+346 [-]: GETTABLE  R31 R31 K35  ; R31 := R31["NumClues"]
+347 [-]: LE        0 R31 R30    ; if R31 > R30 then PC := 362
+348 [-]: JMP       362          ; PC := 362
+349 [-]: GETGLOBAL R30 K71      ; R30 := gRegion
+350 [-]: SELF      R30 R30 K72  ; R31 := R30; R30 := R30["0xBDD34CC6"]
+351 [-]: GETGLOBAL R32 K74      ; R32 := crystalActionType
+352 [-]: SELF      R33 R16 K49  ; R34 := R16; R33 := R16["0x6DA72501"]
+353 [-]: CALL      R33 2 2      ; R33 := R33(R34)
+354 [-]: GETGLOBAL R34 K51      ; R34 := 0x221C9700
+355 [-]: LOADK     R35 K6       ; R35 := 0
+356 [-]: LOADK     R36 K11      ; R36 := 1
+357 [-]: LOADK     R37 K6       ; R37 := 0
+358 [-]: CALL      R34 4 2      ; R34 := R34(R35,R36,R37)
+359 [-]: ADD       R33 R33 R34  ; R33 := R33 + R34
+360 [-]: GETGLOBAL R34 K40      ; R34 := ZERO_ROTATION
+361 [-]: CALL      R30 5 1      ; R30(R31,R32,R33,R34)
+362 [-]: GETUPVAL  R30 U3       ; R30 := U3
+363 [-]: GETUPVAL  R31 U6       ; R31 := U6
+364 [-]: GETGLOBAL R32 K0       ; R32 := _T
+365 [-]: GETTABLE  R32 R32 K1   ; R32 := R32["CephalonMaze"]
+366 [-]: GETTABLE  R32 R32 K34  ; R32 := R32["CorrectChoices"]
+367 [-]: GETTABLE  R31 R31 R32  ; R31 := R31[R32]
+368 [-]: CALL      R30 2 1      ; R30(R31)
+369 [-]: GETUPVAL  R30 U1       ; R30 := U1
+370 [-]: GETTABLE  R30 R30 K24  ; R30 := R30["0x25992394"]
+371 [-]: GETGLOBAL R31 K75      ; R31 := soundCorrect
+372 [-]: CALL      R30 2 1      ; R30(R31)
+373 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 249
+; Defined at line: 251
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -893,7 +894,7 @@ code size: 530
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 272
+; Defined at line: 274
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -945,7 +946,7 @@ code size: 530
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 286
+; Defined at line: 288
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1027,7 +1028,7 @@ code size: 530
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 308
+; Defined at line: 310
 ; #Upvalues:       9
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1577,7 +1578,7 @@ code size: 530
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 480
+; Defined at line: 482
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1613,7 +1614,7 @@ code size: 530
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 491
+; Defined at line: 493
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1786,7 +1787,7 @@ code size: 530
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 557
+; Defined at line: 559
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1861,100 +1862,61 @@ code size: 530
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 578
-; #Upvalues:       4
+; Defined at line: 580
+; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  7
+; Max Stack Size:  6
 
-  1 [-]: GETUPVAL  R1 U0        ; R1 := U0
-  2 [-]: CALL      R1 1 2       ; R1 := R1()
-  3 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  4 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["CephalonMaze"]
-  5 [-]: GETTABLE  R2 R2 K2     ; R2 := R2["Success"]
-  6 [-]: TEST      R2 0         ; if not R2 then PC := 42
-  7 [-]: JMP       42           ; PC := 42
-  8 [-]: GETGLOBAL R2 K0        ; R2 := _T
-  9 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["CephalonMaze"]
- 10 [-]: SETTABLE  R2 K3 K4     ; R2["Failed"] := "0x1"
- 11 [-]: GETGLOBAL R2 K5        ; R2 := gRegion
- 12 [-]: SELF      R2 R2 K6     ; R3 := R2; R2 := R2["0xA933C036"]
- 13 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 14 [-]: SELF      R2 R2 K7     ; R3 := R2; R2 := R2["0x432F17A4"]
- 15 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 16 [-]: SETTABLE  R2 K8 K9     ; R2["fade"] := 1
- 17 [-]: GETUPVAL  R2 U1        ; R2 := U1
- 18 [-]: GETTABLE  R2 R2 K10    ; R2 := R2["0x7BD10FF7"]
- 19 [-]: MOVE      R3 R1        ; R3 := R1
- 20 [-]: CALL      R2 2 1       ; R2(R3)
- 21 [-]: SELF      R2 R1 K11    ; R3 := R1; R2 := R1["0x6DA72501"]
- 22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 23 [-]: GETGLOBAL R3 K12       ; R3 := 0x400E7765
- 24 [-]: MOVE      R4 R1        ; R4 := R1
- 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 26 [-]: TEST      R3 1         ; if R3 then PC := 82
- 27 [-]: JMP       82           ; PC := 82
- 28 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 29 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["CephalonMaze"]
- 30 [-]: GETTABLE  R3 R3 K13    ; R3 := R3["Returning"]
- 31 [-]: TEST      R3 1         ; if R3 then PC := 82
- 32 [-]: JMP       82           ; PC := 82
- 33 [-]: SELF      R3 R1 K14    ; R4 := R1; R3 := R1["0x39D7F449"]
- 34 [-]: MOVE      R5 R2        ; R5 := R2
- 35 [-]: GETGLOBAL R6 K15       ; R6 := ZERO_ROTATION
- 36 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 37 [-]: GETGLOBAL R3 K16       ; R3 := 0x201191EA
- 38 [-]: LOADK     R4 K17       ; R4 := 0
- 39 [-]: CALL      R3 2 1       ; R3(R4)
- 40 [-]: JMP       23           ; PC := 23
- 41 [-]: JMP       82           ; PC := 82
- 42 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 43 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["CephalonMaze"]
- 44 [-]: GETTABLE  R3 R3 K18    ; R3 := R3["TimeLeft"]
- 45 [-]: TEST      R3 0         ; if not R3 then PC := 57
- 46 [-]: JMP       57           ; PC := 57
- 47 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 48 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["CephalonMaze"]
- 49 [-]: GETTABLE  R3 R3 K18    ; R3 := R3["TimeLeft"]
- 50 [-]: LT        0 K17 R3     ; if 0 >= R3 then PC := 71
- 51 [-]: JMP       71           ; PC := 71
- 52 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 53 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["CephalonMaze"]
- 54 [-]: GETTABLE  R3 R3 K3     ; R3 := R3["Failed"]
- 55 [-]: TEST      R3 1         ; if R3 then PC := 71
- 56 [-]: JMP       71           ; PC := 71
- 57 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 58 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["CephalonMaze"]
- 59 [-]: GETGLOBAL R4 K0        ; R4 := _T
- 60 [-]: GETTABLE  R4 R4 K1     ; R4 := R4["CephalonMaze"]
- 61 [-]: GETTABLE  R4 R4 K19    ; R4 := R4["Teleported"]
- 62 [-]: ADD       R4 R4 K9     ; R4 := R4 + 1
- 63 [-]: SETTABLE  R3 K19 R4    ; R3["Teleported"] := R4
- 64 [-]: SELF      R3 R1 K20    ; R4 := R1; R3 := R1["0xB26452A2"]
- 65 [-]: GETGLOBAL R5 K21       ; R5 := 0xEC274B1A
- 66 [-]: LOADK     R6 K22       ; R6 := "TeleportToStart"
- 67 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 68 [-]: MOVE      R6 R0        ; R6 := R0
- 69 [-]: CALL      R3 4 1       ; R3(R4,R5,R6)
- 70 [-]: JMP       82           ; PC := 82
- 71 [-]: GETGLOBAL R3 K0        ; R3 := _T
- 72 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["CephalonMaze"]
- 73 [-]: SETTABLE  R3 K3 K4     ; R3["Failed"] := "0x1"
- 74 [-]: GETUPVAL  R3 U2        ; R3 := U2
- 75 [-]: GETTABLE  R3 R3 K23    ; R3 := R3["0x25992394"]
- 76 [-]: GETGLOBAL R4 K24       ; R4 := failVolumeSound
- 77 [-]: CALL      R3 2 1       ; R3(R4)
- 78 [-]: GETUPVAL  R3 U3        ; R3 := U3
- 79 [-]: MOVE      R4 R0        ; R4 := R0
- 80 [-]: MOVE      R5 R1        ; R5 := R1
- 81 [-]: CALL      R3 3 1       ; R3(R4,R5)
- 82 [-]: RETURN    R0 1         ; return 
+  1 [-]: GETGLOBAL R1 K0        ; R1 := _T
+  2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["CephalonMaze"]
+  3 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["TimeLeft"]
+  4 [-]: TEST      R1 0         ; if not R1 then PC := 16
+  5 [-]: JMP       16           ; PC := 16
+  6 [-]: GETGLOBAL R1 K0        ; R1 := _T
+  7 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["CephalonMaze"]
+  8 [-]: GETTABLE  R1 R1 K2     ; R1 := R1["TimeLeft"]
+  9 [-]: LT        0 K3 R1      ; if 0 >= R1 then PC := 32
+ 10 [-]: JMP       32           ; PC := 32
+ 11 [-]: GETGLOBAL R1 K0        ; R1 := _T
+ 12 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["CephalonMaze"]
+ 13 [-]: GETTABLE  R1 R1 K4     ; R1 := R1["Failed"]
+ 14 [-]: TEST      R1 1         ; if R1 then PC := 32
+ 15 [-]: JMP       32           ; PC := 32
+ 16 [-]: GETUPVAL  R1 U0        ; R1 := U0
+ 17 [-]: CALL      R1 1 2       ; R1 := R1()
+ 18 [-]: GETGLOBAL R2 K0        ; R2 := _T
+ 19 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["CephalonMaze"]
+ 20 [-]: GETGLOBAL R3 K0        ; R3 := _T
+ 21 [-]: GETTABLE  R3 R3 K1     ; R3 := R3["CephalonMaze"]
+ 22 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["Teleported"]
+ 23 [-]: ADD       R3 R3 K6     ; R3 := R3 + 1
+ 24 [-]: SETTABLE  R2 K5 R3     ; R2["Teleported"] := R3
+ 25 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1["0xB26452A2"]
+ 26 [-]: GETGLOBAL R4 K8        ; R4 := 0xEC274B1A
+ 27 [-]: LOADK     R5 K9        ; R5 := "TeleportToStart"
+ 28 [-]: CALL      R4 2 2       ; R4 := R4(R5)
+ 29 [-]: MOVE      R5 R0        ; R5 := R0
+ 30 [-]: CALL      R2 4 1       ; R2(R3,R4,R5)
+ 31 [-]: JMP       43           ; PC := 43
+ 32 [-]: GETGLOBAL R2 K0        ; R2 := _T
+ 33 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["CephalonMaze"]
+ 34 [-]: SETTABLE  R2 K4 K10    ; R2["Failed"] := "0x1"
+ 35 [-]: GETUPVAL  R2 U1        ; R2 := U1
+ 36 [-]: GETTABLE  R2 R2 K11    ; R2 := R2["0x25992394"]
+ 37 [-]: GETGLOBAL R3 K12       ; R3 := failVolumeSound
+ 38 [-]: CALL      R2 2 1       ; R2(R3)
+ 39 [-]: GETUPVAL  R2 U2        ; R2 := U2
+ 40 [-]: MOVE      R3 R0        ; R3 := R0
+ 41 [-]: MOVE      R4 R1        ; R4 := R1
+ 42 [-]: CALL      R2 3 1       ; R2(R3,R4)
+ 43 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 599
+; Defined at line: 592
 ; #Upvalues:       16
 ; #Parameters:     1
 ; Is_vararg:       0

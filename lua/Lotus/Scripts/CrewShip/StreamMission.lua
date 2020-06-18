@@ -56,7 +56,7 @@ code size: 17
  12 [-]: CALL      R3 2 2       ; R3 := R3(R4)
  13 [-]: LOADNIL   R4 R5        ; R4 := R5 := nil
  14 [-]: LOADK     R6 K5        ; R6 := 0
- 15 [-]: LOADK     R7 K6        ; R7 := 366
+ 15 [-]: LOADK     R7 K6        ; R7 := 367
  16 [-]: GETGLOBAL R8 K7        ; R8 := 0xEC274B1A
  17 [-]: LOADK     R9 K8        ; R9 := "CrewshipStream"
  18 [-]: CALL      R8 2 2       ; R8 := R8(R9)

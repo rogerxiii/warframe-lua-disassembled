@@ -3,7 +3,7 @@ code size: 14
 code size: 11
 code size: 74
 code size: 41
-code size: 197
+code size: 205
 code size: 17
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Types\Friendly\Pets\KubrowPetBehaviors\KubrowDisarmAbility.luac 
@@ -239,22 +239,22 @@ code size: 17
   1 [-]: GETGLOBAL R5 K0        ; R5 := gRegion
   2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5["0xA559F558"]
   3 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  4 [-]: TEST      R5 0         ; if not R5 then PC := 197
-  5 [-]: JMP       197          ; PC := 197
+  4 [-]: TEST      R5 0         ; if not R5 then PC := 205
+  5 [-]: JMP       205          ; PC := 205
   6 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
   7 [-]: MOVE      R6 R2        ; R6 := R2
   8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  9 [-]: TEST      R5 1         ; if R5 then PC := 197
- 10 [-]: JMP       197          ; PC := 197
+  9 [-]: TEST      R5 1         ; if R5 then PC := 205
+ 10 [-]: JMP       205          ; PC := 205
  11 [-]: SELF      R5 R2 K3     ; R6 := R2; R5 := R2["0x5A115A02"]
  12 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 13 [-]: TEST      R5 1         ; if R5 then PC := 197
- 14 [-]: JMP       197          ; PC := 197
+ 13 [-]: TEST      R5 1         ; if R5 then PC := 205
+ 14 [-]: JMP       205          ; PC := 205
  15 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
  16 [-]: GETGLOBAL R6 K4        ; R6 := runBehaviour
  17 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 18 [-]: TEST      R5 1         ; if R5 then PC := 197
- 19 [-]: JMP       197          ; PC := 197
+ 18 [-]: TEST      R5 1         ; if R5 then PC := 205
+ 19 [-]: JMP       205          ; PC := 205
  20 [-]: SELF      R5 R1 K5     ; R6 := R1; R5 := R1["0xABD9DD93"]
  21 [-]: CALL      R5 2 2       ; R5 := R5(R6)
  22 [-]: SELF      R6 R5 K6     ; R7 := R5; R6 := R5["0xCCC71042"]
@@ -292,14 +292,14 @@ code size: 17
  54 [-]: CALL      R8 1 2       ; R8 := R8()
  55 [-]: SUB       R6 R6 R8     ; R6 := R6 - R8
  56 [-]: JMP       30           ; PC := 30
- 57 [-]: LT        0 K9 R6      ; if 0 >= R6 then PC := 197
- 58 [-]: JMP       197          ; PC := 197
+ 57 [-]: LT        0 K9 R6      ; if 0 >= R6 then PC := 205
+ 58 [-]: JMP       205          ; PC := 205
  59 [-]: GETUPVAL  R8 U0        ; R8 := U0
  60 [-]: MOVE      R9 R2        ; R9 := R2
  61 [-]: MOVE      R10 R1       ; R10 := R1
  62 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
- 63 [-]: TEST      R8 0         ; if not R8 then PC := 197
- 64 [-]: JMP       197          ; PC := 197
+ 63 [-]: TEST      R8 0         ; if not R8 then PC := 205
+ 64 [-]: JMP       205          ; PC := 205
  65 [-]: SELF      R8 R1 K15    ; R9 := R1; R8 := R1["0x7A97EAF5"]
  66 [-]: GETGLOBAL R10 K16      ; R10 := disarmAnimation
  67 [-]: MOVE      R11 R0       ; R11 := R0
@@ -317,8 +317,8 @@ code size: 17
  79 [-]: GETGLOBAL R10 K2       ; R10 := 0x400E7765
  80 [-]: MOVE      R11 R9       ; R11 := R9
  81 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 82 [-]: TEST      R10 1        ; if R10 then PC := 156
- 83 [-]: JMP       156          ; PC := 156
+ 82 [-]: TEST      R10 1        ; if R10 then PC := 164
+ 83 [-]: JMP       164          ; PC := 164
  84 [-]: SELF      R10 R9 K22   ; R11 := R9; R10 := R9["0xCA60A387"]
  85 [-]: CALL      R10 2 2      ; R10 := R10(R11)
  86 [-]: SELF      R11 R2 K23   ; R12 := R2; R11 := R2["0x67EFEF42"]
@@ -374,71 +374,79 @@ code size: 17
 136 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 137 [-]: SELF      R14 R14 K40  ; R15 := R14; R14 := R14["0x110EA047"]
 138 [-]: CALL      R14 2 1      ; R14(R15)
-139 [-]: JMP       156          ; PC := 156
+139 [-]: JMP       164          ; PC := 164
 140 [-]: GETGLOBAL R14 K20      ; R14 := Lotus_Game
 141 [-]: GETTABLE  R14 R14 K41  ; R14 := R14["LotusNpcAvatar_DA_REMOVE_ARMS"]
-142 [-]: EQ        0 R8 R14     ; if R8 ~= R14 then PC := 156
-143 [-]: JMP       156          ; PC := 156
+142 [-]: EQ        0 R8 R14     ; if R8 ~= R14 then PC := 164
+143 [-]: JMP       164          ; PC := 164
 144 [-]: SELF      R14 R2 K42   ; R15 := R2; R14 := R2["0xA3F6069B"]
 145 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-146 [-]: SELF      R14 R14 K43  ; R15 := R14; R14 := R14["0x332F10CB"]
-147 [-]: GETGLOBAL R16 K20      ; R16 := Lotus_Game
-148 [-]: GETTABLE  R16 R16 K44  ; R16 := R16["ZombieDamageController_LeftArm"]
-149 [-]: CALL      R14 3 1      ; R14(R15,R16)
-150 [-]: SELF      R14 R2 K42   ; R15 := R2; R14 := R2["0xA3F6069B"]
-151 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-152 [-]: SELF      R14 R14 K43  ; R15 := R14; R14 := R14["0x332F10CB"]
-153 [-]: GETGLOBAL R16 K20      ; R16 := Lotus_Game
-154 [-]: GETTABLE  R16 R16 K45  ; R16 := R16["ZombieDamageController_RightArm"]
-155 [-]: CALL      R14 3 1      ; R14(R15,R16)
-156 [-]: GETGLOBAL R14 K46      ; R14 := _T
-157 [-]: GETTABLE  R14 R14 K47  ; R14 := R14["kubrowDisarmedAvatars"]
-158 [-]: TEST      R14 0        ; if not R14 then PC := 188
-159 [-]: JMP       188          ; PC := 188
-160 [-]: LOADK     R14 K48      ; R14 := 1
-161 [-]: GETGLOBAL R15 K46      ; R15 := _T
-162 [-]: GETTABLE  R15 R15 K47  ; R15 := R15["kubrowDisarmedAvatars"]
-163 [-]: LEN       R15 R15      ; R15 := # R15
-164 [-]: LE        0 R14 R15    ; if R14 > R15 then PC := 191
-165 [-]: JMP       191          ; PC := 191
-166 [-]: GETGLOBAL R15 K46      ; R15 := _T
-167 [-]: GETTABLE  R15 R15 K47  ; R15 := R15["kubrowDisarmedAvatars"]
-168 [-]: GETTABLE  R15 R15 R14  ; R15 := R15[R14]
-169 [-]: GETGLOBAL R16 K2       ; R16 := 0x400E7765
-170 [-]: MOVE      R17 R15      ; R17 := R15
-171 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-172 [-]: TEST      R16 1        ; if R16 then PC := 178
-173 [-]: JMP       178          ; PC := 178
-174 [-]: SELF      R16 R15 K3   ; R17 := R15; R16 := R15["0x5A115A02"]
-175 [-]: CALL      R16 2 2      ; R16 := R16(R17)
-176 [-]: TEST      R16 0        ; if not R16 then PC := 185
-177 [-]: JMP       185          ; PC := 185
-178 [-]: GETGLOBAL R16 K49      ; R16 := table
-179 [-]: GETTABLE  R16 R16 K50  ; R16 := R16["0xCDB1FD5E"]
-180 [-]: GETGLOBAL R17 K46      ; R17 := _T
-181 [-]: GETTABLE  R17 R17 K47  ; R17 := R17["kubrowDisarmedAvatars"]
-182 [-]: MOVE      R18 R14      ; R18 := R14
-183 [-]: CALL      R16 3 1      ; R16(R17,R18)
-184 [-]: JMP       161          ; PC := 161
-185 [-]: ADD       R14 R14 K48  ; R14 := R14 + 1
-186 [-]: JMP       161          ; PC := 161
-187 [-]: JMP       191          ; PC := 191
-188 [-]: GETGLOBAL R16 K46      ; R16 := _T
-189 [-]: NEWTABLE  R17 0 0      ; R17 := {}
-190 [-]: SETTABLE  R16 K47 R17  ; R16["kubrowDisarmedAvatars"] := R17
-191 [-]: GETGLOBAL R16 K49      ; R16 := table
-192 [-]: GETTABLE  R16 R16 K51  ; R16 := R16["0xE6450C9D"]
-193 [-]: GETGLOBAL R17 K46      ; R17 := _T
-194 [-]: GETTABLE  R17 R17 K47  ; R17 := R17["kubrowDisarmedAvatars"]
-195 [-]: MOVE      R18 R2       ; R18 := R2
-196 [-]: CALL      R16 3 1      ; R16(R17,R18)
-197 [-]: RETURN    R0 1         ; return 
+146 [-]: SELF      R15 R14 K43  ; R16 := R14; R15 := R14["0x8B598ED4"]
+147 [-]: GETGLOBAL R17 K44      ; R17 := gSentientDamageControllerType
+148 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+149 [-]: TEST      R15 1        ; if R15 then PC := 156
+150 [-]: JMP       156          ; PC := 156
+151 [-]: SELF      R15 R14 K43  ; R16 := R14; R15 := R14["0x8B598ED4"]
+152 [-]: GETGLOBAL R17 K45      ; R17 := gZombieDamageControllerType
+153 [-]: CALL      R15 3 2      ; R15 := R15(R16,R17)
+154 [-]: TEST      R15 0        ; if not R15 then PC := 164
+155 [-]: JMP       164          ; PC := 164
+156 [-]: SELF      R15 R14 K46  ; R16 := R14; R15 := R14["0x332F10CB"]
+157 [-]: GETGLOBAL R17 K20      ; R17 := Lotus_Game
+158 [-]: GETTABLE  R17 R17 K47  ; R17 := R17["ZombieDamageController_LeftArm"]
+159 [-]: CALL      R15 3 1      ; R15(R16,R17)
+160 [-]: SELF      R15 R14 K46  ; R16 := R14; R15 := R14["0x332F10CB"]
+161 [-]: GETGLOBAL R17 K20      ; R17 := Lotus_Game
+162 [-]: GETTABLE  R17 R17 K48  ; R17 := R17["ZombieDamageController_RightArm"]
+163 [-]: CALL      R15 3 1      ; R15(R16,R17)
+164 [-]: GETGLOBAL R15 K49      ; R15 := _T
+165 [-]: GETTABLE  R15 R15 K50  ; R15 := R15["kubrowDisarmedAvatars"]
+166 [-]: TEST      R15 0        ; if not R15 then PC := 196
+167 [-]: JMP       196          ; PC := 196
+168 [-]: LOADK     R15 K51      ; R15 := 1
+169 [-]: GETGLOBAL R16 K49      ; R16 := _T
+170 [-]: GETTABLE  R16 R16 K50  ; R16 := R16["kubrowDisarmedAvatars"]
+171 [-]: LEN       R16 R16      ; R16 := # R16
+172 [-]: LE        0 R15 R16    ; if R15 > R16 then PC := 199
+173 [-]: JMP       199          ; PC := 199
+174 [-]: GETGLOBAL R16 K49      ; R16 := _T
+175 [-]: GETTABLE  R16 R16 K50  ; R16 := R16["kubrowDisarmedAvatars"]
+176 [-]: GETTABLE  R16 R16 R15  ; R16 := R16[R15]
+177 [-]: GETGLOBAL R17 K2       ; R17 := 0x400E7765
+178 [-]: MOVE      R18 R16      ; R18 := R16
+179 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+180 [-]: TEST      R17 1        ; if R17 then PC := 186
+181 [-]: JMP       186          ; PC := 186
+182 [-]: SELF      R17 R16 K3   ; R18 := R16; R17 := R16["0x5A115A02"]
+183 [-]: CALL      R17 2 2      ; R17 := R17(R18)
+184 [-]: TEST      R17 0        ; if not R17 then PC := 193
+185 [-]: JMP       193          ; PC := 193
+186 [-]: GETGLOBAL R17 K52      ; R17 := table
+187 [-]: GETTABLE  R17 R17 K53  ; R17 := R17["0xCDB1FD5E"]
+188 [-]: GETGLOBAL R18 K49      ; R18 := _T
+189 [-]: GETTABLE  R18 R18 K50  ; R18 := R18["kubrowDisarmedAvatars"]
+190 [-]: MOVE      R19 R15      ; R19 := R15
+191 [-]: CALL      R17 3 1      ; R17(R18,R19)
+192 [-]: JMP       169          ; PC := 169
+193 [-]: ADD       R15 R15 K51  ; R15 := R15 + 1
+194 [-]: JMP       169          ; PC := 169
+195 [-]: JMP       199          ; PC := 199
+196 [-]: GETGLOBAL R17 K49      ; R17 := _T
+197 [-]: NEWTABLE  R18 0 0      ; R18 := {}
+198 [-]: SETTABLE  R17 K50 R18  ; R17["kubrowDisarmedAvatars"] := R18
+199 [-]: GETGLOBAL R17 K52      ; R17 := table
+200 [-]: GETTABLE  R17 R17 K54  ; R17 := R17["0xE6450C9D"]
+201 [-]: GETGLOBAL R18 K49      ; R18 := _T
+202 [-]: GETTABLE  R18 R18 K50  ; R18 := R18["kubrowDisarmedAvatars"]
+203 [-]: MOVE      R19 R2       ; R19 := R2
+204 [-]: CALL      R17 3 1      ; R17(R18,R19)
+205 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 141
+; Defined at line: 144
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0

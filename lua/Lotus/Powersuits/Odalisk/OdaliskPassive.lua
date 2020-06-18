@@ -1,7 +1,7 @@
 code size: 33
 code size: 12
 code size: 17
-code size: 120
+code size: 115
 code size: 57
 code size: 40
 code size: 28
@@ -109,7 +109,7 @@ code size: 23
 ; #Upvalues:       4
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  14
+; Max Stack Size:  15
 
   1 [-]: GETUPVAL  R1 U0        ; R1 := U0
   2 [-]: GETTABLE  R1 R1 K0     ; R1 := R1["0x3B80F556"]
@@ -150,87 +150,82 @@ code size: 23
  37 [-]: SELF      R6 R1 K13    ; R7 := R1; R6 := R1["0x8DB5D01F"]
  38 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  39 [-]: LOADK     R7 K4        ; R7 := 0
- 40 [-]: GETGLOBAL R8 K2        ; R8 := 0x400E7765
- 41 [-]: MOVE      R9 R1        ; R9 := R1
- 42 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 43 [-]: TEST      R8 1         ; if R8 then PC := 120
- 44 [-]: JMP       120          ; PC := 120
- 45 [-]: SELF      R8 R1 K14    ; R9 := R1; R8 := R1["0x5A115A02"]
- 46 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 47 [-]: TEST      R8 1         ; if R8 then PC := 120
- 48 [-]: JMP       120          ; PC := 120
- 49 [-]: GETUPVAL  R8 U1        ; R8 := U1
- 50 [-]: MOVE      R9 R5        ; R9 := R5
- 51 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 52 [-]: EQ        1 R8 R7      ; if R8 == R7 then PC := 100
- 53 [-]: JMP       100          ; PC := 100
- 54 [-]: TEST      R3 0         ; if not R3 then PC := 88
- 55 [-]: JMP       88           ; PC := 88
- 56 [-]: GETGLOBAL R9 K5        ; R9 := _T
- 57 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["odaliskPassive"]
- 58 [-]: GETTABLE  R9 R9 R2     ; R9 := R9[R2]
- 59 [-]: TEST      R9 0         ; if not R9 then PC := 72
- 60 [-]: JMP       72           ; PC := 72
- 61 [-]: SELF      R9 R6 K15    ; R10 := R6; R9 := R6["0xF21555A7"]
- 62 [-]: GETGLOBAL R11 K16      ; R11 := Game
- 63 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["AVATAR_ABILITY_STRENGTH"]
- 64 [-]: GETGLOBAL R12 K18      ; R12 := Engine
- 65 [-]: GETTABLE  R12 R12 K19  ; R12 := R12["STACKING_MULTIPLY"]
- 66 [-]: GETUPVAL  R13 U2       ; R13 := U2
- 67 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 68 [-]: GETGLOBAL R9 K5        ; R9 := _T
- 69 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["odaliskPassive"]
- 70 [-]: SETTABLE  R9 R2 K8     ; R9[R2] := "0x0"
- 71 [-]: JMP       88           ; PC := 88
- 72 [-]: GETUPVAL  R9 U3        ; R9 := U3
- 73 [-]: MOD       R9 R8 R9     ; R9 := R8 % R9
- 74 [-]: GETUPVAL  R10 U3       ; R10 := U3
- 75 [-]: SUB       R10 R10 K20  ; R10 := R10 - 1
- 76 [-]: EQ        0 R9 R10     ; if R9 ~= R10 then PC := 88
- 77 [-]: JMP       88           ; PC := 88
- 78 [-]: SELF      R9 R6 K21    ; R10 := R6; R9 := R6["0x3B1B11B9"]
- 79 [-]: GETGLOBAL R11 K16      ; R11 := Game
- 80 [-]: GETTABLE  R11 R11 K17  ; R11 := R11["AVATAR_ABILITY_STRENGTH"]
- 81 [-]: GETGLOBAL R12 K18      ; R12 := Engine
- 82 [-]: GETTABLE  R12 R12 K19  ; R12 := R12["STACKING_MULTIPLY"]
- 83 [-]: GETUPVAL  R13 U2       ; R13 := U2
- 84 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
- 85 [-]: GETGLOBAL R9 K5        ; R9 := _T
- 86 [-]: GETTABLE  R9 R9 K6     ; R9 := R9["odaliskPassive"]
- 87 [-]: SETTABLE  R9 R2 K22    ; R9[R2] := "0x1"
- 88 [-]: TEST      R4 0         ; if not R4 then PC := 99
- 89 [-]: JMP       99           ; PC := 99
- 90 [-]: GETGLOBAL R9 K5        ; R9 := _T
- 91 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["ODALISK_SetPassiveStacks"]
- 92 [-]: EQ        1 R9 K24     ; if R9 == nil then PC := 99
- 93 [-]: JMP       99           ; PC := 99
- 94 [-]: GETGLOBAL R9 K5        ; R9 := _T
- 95 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["0xB6E5959"]
- 96 [-]: GETUPVAL  R10 U3       ; R10 := U3
- 97 [-]: MOD       R10 R8 R10   ; R10 := R8 % R10
- 98 [-]: CALL      R9 2 1       ; R9(R10)
- 99 [-]: MOVE      R7 R8        ; R7 := R8
-100 [-]: SELF      R9 R1 K11    ; R10 := R1; R9 := R1["0xB8613F53"]
-101 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-102 [-]: EQ        1 R4 R9      ; if R4 == R9 then PC := 116
-103 [-]: JMP       116          ; PC := 116
-104 [-]: MOVE      R4 R4        ; R4 := R4
-105 [-]: TEST      R4 0         ; if not R4 then PC := 116
-106 [-]: JMP       116          ; PC := 116
-107 [-]: GETGLOBAL R9 K5        ; R9 := _T
-108 [-]: GETTABLE  R9 R9 K23    ; R9 := R9["ODALISK_SetPassiveStacks"]
-109 [-]: EQ        1 R9 K24     ; if R9 == nil then PC := 116
-110 [-]: JMP       116          ; PC := 116
-111 [-]: GETGLOBAL R9 K5        ; R9 := _T
-112 [-]: GETTABLE  R9 R9 K25    ; R9 := R9["0xB6E5959"]
-113 [-]: GETUPVAL  R10 U3       ; R10 := U3
-114 [-]: MOD       R10 R8 R10   ; R10 := R8 % R10
-115 [-]: CALL      R9 2 1       ; R9(R10)
-116 [-]: GETGLOBAL R9 K3        ; R9 := 0x201191EA
-117 [-]: LOADK     R10 K4       ; R10 := 0
-118 [-]: CALL      R9 2 1       ; R9(R10)
-119 [-]: JMP       40           ; PC := 40
-120 [-]: RETURN    R0 1         ; return 
+ 40 [-]: MOVE      R8 R0        ; R8 := R0
+ 41 [-]: GETGLOBAL R9 K2        ; R9 := 0x400E7765
+ 42 [-]: MOVE      R10 R1       ; R10 := R1
+ 43 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 44 [-]: TEST      R9 1         ; if R9 then PC := 115
+ 45 [-]: JMP       115          ; PC := 115
+ 46 [-]: SELF      R9 R1 K14    ; R10 := R1; R9 := R1["0x5A115A02"]
+ 47 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 48 [-]: TEST      R9 1         ; if R9 then PC := 115
+ 49 [-]: JMP       115          ; PC := 115
+ 50 [-]: GETUPVAL  R9 U1        ; R9 := U1
+ 51 [-]: MOVE      R10 R5       ; R10 := R5
+ 52 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 53 [-]: EQ        1 R9 R7      ; if R9 == R7 then PC := 91
+ 54 [-]: JMP       91           ; PC := 91
+ 55 [-]: TEST      R3 0         ; if not R3 then PC := 89
+ 56 [-]: JMP       89           ; PC := 89
+ 57 [-]: GETGLOBAL R10 K5       ; R10 := _T
+ 58 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["odaliskPassive"]
+ 59 [-]: GETTABLE  R10 R10 R2   ; R10 := R10[R2]
+ 60 [-]: TEST      R10 0        ; if not R10 then PC := 73
+ 61 [-]: JMP       73           ; PC := 73
+ 62 [-]: SELF      R10 R6 K15   ; R11 := R6; R10 := R6["0xF21555A7"]
+ 63 [-]: GETGLOBAL R12 K16      ; R12 := Game
+ 64 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["AVATAR_ABILITY_STRENGTH"]
+ 65 [-]: GETGLOBAL R13 K18      ; R13 := Engine
+ 66 [-]: GETTABLE  R13 R13 K19  ; R13 := R13["STACKING_MULTIPLY"]
+ 67 [-]: GETUPVAL  R14 U2       ; R14 := U2
+ 68 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+ 69 [-]: GETGLOBAL R10 K5       ; R10 := _T
+ 70 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["odaliskPassive"]
+ 71 [-]: SETTABLE  R10 R2 K8    ; R10[R2] := "0x0"
+ 72 [-]: JMP       89           ; PC := 89
+ 73 [-]: GETUPVAL  R10 U3       ; R10 := U3
+ 74 [-]: MOD       R10 R9 R10   ; R10 := R9 % R10
+ 75 [-]: GETUPVAL  R11 U3       ; R11 := U3
+ 76 [-]: SUB       R11 R11 K20  ; R11 := R11 - 1
+ 77 [-]: EQ        0 R10 R11    ; if R10 ~= R11 then PC := 89
+ 78 [-]: JMP       89           ; PC := 89
+ 79 [-]: SELF      R10 R6 K21   ; R11 := R6; R10 := R6["0x3B1B11B9"]
+ 80 [-]: GETGLOBAL R12 K16      ; R12 := Game
+ 81 [-]: GETTABLE  R12 R12 K17  ; R12 := R12["AVATAR_ABILITY_STRENGTH"]
+ 82 [-]: GETGLOBAL R13 K18      ; R13 := Engine
+ 83 [-]: GETTABLE  R13 R13 K19  ; R13 := R13["STACKING_MULTIPLY"]
+ 84 [-]: GETUPVAL  R14 U2       ; R14 := U2
+ 85 [-]: CALL      R10 5 1      ; R10(R11,R12,R13,R14)
+ 86 [-]: GETGLOBAL R10 K5       ; R10 := _T
+ 87 [-]: GETTABLE  R10 R10 K6   ; R10 := R10["odaliskPassive"]
+ 88 [-]: SETTABLE  R10 R2 K22   ; R10[R2] := "0x1"
+ 89 [-]: MOVE      R8 R4        ; R8 := R4
+ 90 [-]: MOVE      R7 R9        ; R7 := R9
+ 91 [-]: SELF      R10 R1 K11   ; R11 := R1; R10 := R1["0xB8613F53"]
+ 92 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 93 [-]: EQ        1 R4 R10     ; if R4 == R10 then PC := 97
+ 94 [-]: JMP       97           ; PC := 97
+ 95 [-]: MOVE      R4 R4        ; R4 := R4
+ 96 [-]: MOVE      R8 R4        ; R8 := R4
+ 97 [-]: TEST      R4 0         ; if not R4 then PC := 111
+ 98 [-]: JMP       111          ; PC := 111
+ 99 [-]: TEST      R8 0         ; if not R8 then PC := 111
+100 [-]: JMP       111          ; PC := 111
+101 [-]: GETGLOBAL R10 K5       ; R10 := _T
+102 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["ODALISK_SetPassiveStacks"]
+103 [-]: TEST      R10 0        ; if not R10 then PC := 111
+104 [-]: JMP       111          ; PC := 111
+105 [-]: GETGLOBAL R10 K5       ; R10 := _T
+106 [-]: GETTABLE  R10 R10 K24  ; R10 := R10["0xB6E5959"]
+107 [-]: GETUPVAL  R11 U3       ; R11 := U3
+108 [-]: MOD       R11 R9 R11   ; R11 := R9 % R11
+109 [-]: CALL      R10 2 1      ; R10(R11)
+110 [-]: MOVE      R8 R0        ; R8 := R0
+111 [-]: GETGLOBAL R10 K3       ; R10 := 0x201191EA
+112 [-]: LOADK     R11 K4       ; R11 := 0
+113 [-]: CALL      R10 2 1      ; R10(R11)
+114 [-]: JMP       41           ; PC := 41
+115 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #4:

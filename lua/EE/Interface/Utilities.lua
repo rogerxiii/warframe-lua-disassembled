@@ -106,7 +106,7 @@ code size: 5
 code size: 43
 code size: 5
 code size: 29
-code size: 87
+code size: 123
 code size: 18
 code size: 64
 code size: 22
@@ -5049,7 +5049,7 @@ code size: 19
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  9
 
   1 [-]: LOADK     R3 K0        ; R3 := 1
   2 [-]: SELF      R4 R0 K1     ; R5 := R0; R4 := R0["0x8BF7ABD3"]
@@ -5073,77 +5073,113 @@ code size: 19
  20 [-]: GETUPVAL  R6 U1        ; R6 := U1
  21 [-]: MOVE      R7 R0        ; R7 := R0
  22 [-]: CALL      R6 2 3       ; R6,R7 := R6(R7)
- 23 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 24 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["VAP_LEFT"]
- 25 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 35
- 26 [-]: JMP       35           ; PC := 35
- 27 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 28 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["VAP_CENTER"]
- 29 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 35
- 30 [-]: JMP       35           ; PC := 35
- 31 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 32 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["VAP_RIGHT"]
- 33 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 45
- 34 [-]: JMP       45           ; PC := 45
- 35 [-]: SUB       R8 R1 K10    ; R8 := R1 - 0.5
- 36 [-]: MUL       R8 R8 R3     ; R8 := R8 * R3
- 37 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 38 [-]: MOVE      R10 R2       ; R10 := R2
- 39 [-]: MOVE      R11 R6       ; R11 := R6
- 40 [-]: MOVE      R12 R7       ; R12 := R7
- 41 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 42 [-]: MUL       R8 R8 R9     ; R8 := R8 * R9
- 43 [-]: ADD       R4 K10 R8    ; R4 := 0.5 + R8
- 44 [-]: JMP       86           ; PC := 86
- 45 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 46 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["VAP_TOP_LEFT"]
- 47 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 57
- 48 [-]: JMP       57           ; PC := 57
- 49 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 50 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["VAP_TOP"]
- 51 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 57
- 52 [-]: JMP       57           ; PC := 57
- 53 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 54 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["VAP_TOP_RIGHT"]
- 55 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 65
- 56 [-]: JMP       65           ; PC := 65
- 57 [-]: MUL       R8 R1 R3     ; R8 := R1 * R3
- 58 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 59 [-]: MOVE      R10 R2       ; R10 := R2
- 60 [-]: MOVE      R11 R6       ; R11 := R6
- 61 [-]: MOVE      R12 R7       ; R12 := R7
- 62 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 63 [-]: MUL       R4 R8 R9     ; R4 := R8 * R9
- 64 [-]: JMP       86           ; PC := 86
+ 23 [-]: TEST      R2 0         ; if not R2 then PC := 74
+ 24 [-]: JMP       74           ; PC := 74
+ 25 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 26 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["VAP_CENTER"]
+ 27 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 37
+ 28 [-]: JMP       37           ; PC := 37
+ 29 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 30 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["VAP_TOP"]
+ 31 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 37
+ 32 [-]: JMP       37           ; PC := 37
+ 33 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 34 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["VAP_BOTTOM"]
+ 35 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 42
+ 36 [-]: JMP       42           ; PC := 42
+ 37 [-]: SUB       R8 R1 K10    ; R8 := R1 - 0.5
+ 38 [-]: MUL       R8 R8 R3     ; R8 := R8 * R3
+ 39 [-]: MUL       R8 R8 R6     ; R8 := R8 * R6
+ 40 [-]: ADD       R4 K10 R8    ; R4 := 0.5 + R8
+ 41 [-]: JMP       122          ; PC := 122
+ 42 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 43 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["VAP_LEFT"]
+ 44 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 54
+ 45 [-]: JMP       54           ; PC := 54
+ 46 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 47 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["VAP_TOP_LEFT"]
+ 48 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 54
+ 49 [-]: JMP       54           ; PC := 54
+ 50 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 51 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["VAP_BOTTOM_LEFT"]
+ 52 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 57
+ 53 [-]: JMP       57           ; PC := 57
+ 54 [-]: MUL       R8 R1 R3     ; R8 := R1 * R3
+ 55 [-]: MUL       R4 R8 R6     ; R4 := R8 * R6
+ 56 [-]: JMP       122          ; PC := 122
+ 57 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 58 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["VAP_RIGHT"]
+ 59 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 69
+ 60 [-]: JMP       69           ; PC := 69
+ 61 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 62 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["VAP_TOP_RIGHT"]
+ 63 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 69
+ 64 [-]: JMP       69           ; PC := 69
  65 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 66 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["VAP_BOTTOM_LEFT"]
- 67 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 77
- 68 [-]: JMP       77           ; PC := 77
- 69 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 70 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["VAP_BOTTOM"]
- 71 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 77
- 72 [-]: JMP       77           ; PC := 77
- 73 [-]: GETGLOBAL R8 K6        ; R8 := Engine
- 74 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["VAP_BOTTOM_RIGHT"]
- 75 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 86
- 76 [-]: JMP       86           ; PC := 86
- 77 [-]: SUB       R8 R1 K0     ; R8 := R1 - 1
- 78 [-]: MUL       R8 R8 R3     ; R8 := R8 * R3
- 79 [-]: GETUPVAL  R9 U0        ; R9 := U0
- 80 [-]: MOVE      R10 R2       ; R10 := R2
- 81 [-]: MOVE      R11 R6       ; R11 := R6
- 82 [-]: MOVE      R12 R7       ; R12 := R7
- 83 [-]: CALL      R9 4 2       ; R9 := R9(R10,R11,R12)
- 84 [-]: MUL       R8 R8 R9     ; R8 := R8 * R9
- 85 [-]: ADD       R4 K0 R8     ; R4 := 1 + R8
- 86 [-]: RETURN    R4 2         ; return R4
- 87 [-]: RETURN    R0 1         ; return 
+ 66 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["VAP_BOTTOM_RIGHT"]
+ 67 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 122
+ 68 [-]: JMP       122          ; PC := 122
+ 69 [-]: SUB       R8 R1 K0     ; R8 := R1 - 1
+ 70 [-]: MUL       R8 R8 R3     ; R8 := R8 * R3
+ 71 [-]: MUL       R8 R8 R6     ; R8 := R8 * R6
+ 72 [-]: ADD       R4 K0 R8     ; R4 := 1 + R8
+ 73 [-]: JMP       122          ; PC := 122
+ 74 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 75 [-]: GETTABLE  R8 R8 K11    ; R8 := R8["VAP_LEFT"]
+ 76 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 86
+ 77 [-]: JMP       86           ; PC := 86
+ 78 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 79 [-]: GETTABLE  R8 R8 K7     ; R8 := R8["VAP_CENTER"]
+ 80 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 86
+ 81 [-]: JMP       86           ; PC := 86
+ 82 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 83 [-]: GETTABLE  R8 R8 K14    ; R8 := R8["VAP_RIGHT"]
+ 84 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 91
+ 85 [-]: JMP       91           ; PC := 91
+ 86 [-]: SUB       R8 R1 K10    ; R8 := R1 - 0.5
+ 87 [-]: MUL       R8 R8 R3     ; R8 := R8 * R3
+ 88 [-]: MUL       R8 R8 R7     ; R8 := R8 * R7
+ 89 [-]: ADD       R4 K10 R8    ; R4 := 0.5 + R8
+ 90 [-]: JMP       122          ; PC := 122
+ 91 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 92 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["VAP_TOP_LEFT"]
+ 93 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 103
+ 94 [-]: JMP       103          ; PC := 103
+ 95 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+ 96 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["VAP_TOP"]
+ 97 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 103
+ 98 [-]: JMP       103          ; PC := 103
+ 99 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+100 [-]: GETTABLE  R8 R8 K15    ; R8 := R8["VAP_TOP_RIGHT"]
+101 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 106
+102 [-]: JMP       106          ; PC := 106
+103 [-]: MUL       R8 R1 R3     ; R8 := R1 * R3
+104 [-]: MUL       R4 R8 R7     ; R4 := R8 * R7
+105 [-]: JMP       122          ; PC := 122
+106 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+107 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["VAP_BOTTOM_LEFT"]
+108 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 118
+109 [-]: JMP       118          ; PC := 118
+110 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+111 [-]: GETTABLE  R8 R8 K9     ; R8 := R8["VAP_BOTTOM"]
+112 [-]: EQ        1 R5 R8      ; if R5 == R8 then PC := 118
+113 [-]: JMP       118          ; PC := 118
+114 [-]: GETGLOBAL R8 K6        ; R8 := Engine
+115 [-]: GETTABLE  R8 R8 K16    ; R8 := R8["VAP_BOTTOM_RIGHT"]
+116 [-]: EQ        0 R5 R8      ; if R5 ~= R8 then PC := 122
+117 [-]: JMP       122          ; PC := 122
+118 [-]: SUB       R8 R1 K0     ; R8 := R1 - 1
+119 [-]: MUL       R8 R8 R3     ; R8 := R8 * R3
+120 [-]: MUL       R8 R8 R7     ; R8 := R8 * R7
+121 [-]: ADD       R4 K0 R8     ; R4 := 1 + R8
+122 [-]: RETURN    R4 2         ; return R4
+123 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #99:
 ;
 ; Name:            
-; Defined at line: 1523
+; Defined at line: 1533
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5172,7 +5208,7 @@ code size: 19
 ; Function #100:
 ;
 ; Name:            
-; Defined at line: 1535
+; Defined at line: 1545
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5247,7 +5283,7 @@ code size: 19
 ; Function #101:
 ;
 ; Name:            
-; Defined at line: 1567
+; Defined at line: 1577
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5280,7 +5316,7 @@ code size: 19
 ; Function #102:
 ;
 ; Name:            
-; Defined at line: 1578
+; Defined at line: 1588
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -5314,7 +5350,7 @@ code size: 19
 ; Function #102.1:
 ;
 ; Name:            
-; Defined at line: 1586
+; Defined at line: 1596
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0

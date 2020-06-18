@@ -41,7 +41,7 @@ code size: 3
  20 [-]: LOADK     R7 K8        ; R7 := "PurgatoryKills"
  21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
  22 [-]: GETGLOBAL R7 K6        ; R7 := 0xEC274B1A
- 23 [-]: LOADK     R8 K9        ; R8 := "PurgatoryKillTier"
+ 23 [-]: LOADK     R8 K9        ; R8 := "PurgatoryRewardTier"
  24 [-]: CALL      R7 2 2       ; R7 := R7(R8)
  25 [-]: GETGLOBAL R8 K6        ; R8 := 0xEC274B1A
  26 [-]: LOADK     R9 K10       ; R9 := "PurgatoryDuration"

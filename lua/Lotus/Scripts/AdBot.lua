@@ -39,7 +39,7 @@ code size: 13
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 35
+; Defined at line: 34
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -68,7 +68,7 @@ code size: 13
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 45
+; Defined at line: 44
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -158,7 +158,7 @@ code size: 13
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 74
+; Defined at line: 73
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -243,7 +243,7 @@ code size: 13
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 104
+; Defined at line: 103
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -363,7 +363,7 @@ code size: 13
 112 [-]: JMP       114          ; PC := 114
 113 [-]: RETURN    R0 1         ; return 
 114 [-]: SELF      R12 R1 K22   ; R13 := R1; R12 := R1["0x15D4DAEE"]
-115 [-]: GETGLOBAL R14 K23      ; R14 := decoTypes
+115 [-]: GETGLOBAL R14 K23      ; R14 := gDecorationType
 116 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
 117 [-]: GETGLOBAL R13 K24      ; R13 := 0x63B09107
 118 [-]: MOVE      R14 R12      ; R14 := R12
@@ -398,8 +398,8 @@ code size: 13
 147 [-]: GETGLOBAL R19 K0       ; R19 := 0x400E7765
 148 [-]: MOVE      R20 R4       ; R20 := R4
 149 [-]: CALL      R19 2 2      ; R19 := R19(R20)
-150 [-]: TEST      R19 0        ; if not R19 then PC := 157
-151 [-]: JMP       157          ; PC := 157
+150 [-]: TEST      R19 1        ; if R19 then PC := 192
+151 [-]: JMP       192          ; PC := 192
 152 [-]: SELF      R19 R2 K28   ; R20 := R2; R19 := R2["0x7C331593"]
 153 [-]: MOVE      R21 R4       ; R21 := R4
 154 [-]: CALL      R19 3 2      ; R19 := R19(R20,R21)
@@ -524,7 +524,7 @@ code size: 13
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 215
+; Defined at line: 214
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -629,7 +629,7 @@ code size: 13
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 260
+; Defined at line: 259
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

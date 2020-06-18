@@ -19,7 +19,7 @@ code size: 137
 code size: 32
 code size: 38
 code size: 117
-code size: 768
+code size: 772
 code size: 75
 code size: 45
 code size: 11
@@ -1878,10 +1878,10 @@ code size: 15
 270 [-]: MOVE      R11 R7       ; R11 := R7
 271 [-]: CALL      R8 4 1       ; R8(R9,R10,R11)
 272 [-]: GETUPVAL  R8 U0        ; R8 := U0
-273 [-]: TEST      R8 0         ; if not R8 then PC := 619
-274 [-]: JMP       619          ; PC := 619
-275 [-]: EQ        1 R2 K55     ; if R2 == "" then PC := 619
-276 [-]: JMP       619          ; PC := 619
+273 [-]: TEST      R8 0         ; if not R8 then PC := 623
+274 [-]: JMP       623          ; PC := 623
+275 [-]: EQ        1 R2 K55     ; if R2 == "" then PC := 623
+276 [-]: JMP       623          ; PC := 623
 277 [-]: GETGLOBAL R8 K56       ; R8 := cjson
 278 [-]: GETTABLE  R8 R8 K57    ; R8 := R8["0x8A2E8315"]
 279 [-]: MOVE      R9 R2        ; R9 := R2
@@ -2040,13 +2040,13 @@ code size: 15
 432 [-]: CONCAT    R27 R27 R30  ; R27 := R27 .. R28 .. R29 .. R30
 433 [-]: CALL      R26 2 1      ; R26(R27)
 434 [-]: GETTABLE  R26 R8 K94   ; R26 := R8["AffiliationMods"]
-435 [-]: EQ        1 R26 K59    ; if R26 == nil then PC := 510
-436 [-]: JMP       510          ; PC := 510
+435 [-]: EQ        1 R26 K59    ; if R26 == nil then PC := 514
+436 [-]: JMP       514          ; PC := 514
 437 [-]: LOADK     R26 K15      ; R26 := 1
 438 [-]: GETTABLE  R27 R8 K94   ; R27 := R8["AffiliationMods"]
 439 [-]: LEN       R27 R27      ; R27 := # R27
 440 [-]: LOADK     R28 K15      ; R28 := 1
-441 [-]: FORPREP   R26 508      ; R26 -= R28; PC := 508
+441 [-]: FORPREP   R26 512      ; R26 -= R28; PC := 512
 442 [-]: GETTABLE  R30 R8 K94   ; R30 := R8["AffiliationMods"]
 443 [-]: GETTABLE  R30 R30 R29  ; R30 := R30[R29]
 444 [-]: GETTABLE  R30 R30 K95  ; R30 := R30["Tag"]
@@ -2054,326 +2054,330 @@ code size: 15
 446 [-]: JMP       451          ; PC := 451
 447 [-]: EQ        1 R30 K97    ; if R30 == "EventSyndicate" then PC := 451
 448 [-]: JMP       451          ; PC := 451
-449 [-]: EQ        0 R30 K98    ; if R30 ~= "SolarisSyndicate" then PC := 508
-450 [-]: JMP       508          ; PC := 508
-451 [-]: GETTABLE  R31 R8 K94   ; R31 := R8["AffiliationMods"]
-452 [-]: GETTABLE  R31 R31 R29  ; R31 := R31[R29]
-453 [-]: GETTABLE  R31 R31 K99  ; R31 := R31["Standing"]
-454 [-]: LT        0 K60 R31    ; if 0 >= R31 then PC := 619
-455 [-]: JMP       619          ; PC := 619
-456 [-]: GETGLOBAL R32 K0       ; R32 := mMovie
-457 [-]: SELF      R32 R32 K1   ; R33 := R32; R32 := R32["0x1C19D966"]
-458 [-]: LOADK     R34 K100     ; R34 := "Panel.Contd"
-459 [-]: LOADK     R35 K12      ; R35 := "_visible"
-460 [-]: MOVE      R36 R1       ; R36 := R1
-461 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
-462 [-]: LOADK     R32 K55      ; R32 := ""
-463 [-]: GETUPVAL  R33 U1       ; R33 := U1
-464 [-]: TEST      R33 0        ; if not R33 then PC := 489
-465 [-]: JMP       489          ; PC := 489
-466 [-]: GETUPVAL  R33 U11      ; R33 := U11
-467 [-]: GETUPVAL  R34 U12      ; R34 := U12
-468 [-]: GETTABLE  R33 R33 R34  ; R33 := R33[R34]
-469 [-]: TEST      R33 0        ; if not R33 then PC := 489
-470 [-]: JMP       489          ; PC := 489
-471 [-]: GETUPVAL  R33 U13      ; R33 := U13
-472 [-]: GETTABLE  R33 R33 K101 ; R33 := R33["0x7E197415"]
-473 [-]: DIV       R34 R31 K102 ; R34 := R31 / 2.25
-474 [-]: CALL      R33 2 2      ; R33 := R33(R34)
-475 [-]: GETUPVAL  R34 U13      ; R34 := U13
-476 [-]: GETTABLE  R34 R34 K101 ; R34 := R34["0x7E197415"]
-477 [-]: SUB       R35 R31 R33  ; R35 := R31 - R33
-478 [-]: CALL      R34 2 2      ; R34 := R34(R35)
-479 [-]: GETGLOBAL R35 K0       ; R35 := mMovie
-480 [-]: SELF      R35 R35 K103 ; R36 := R35; R35 := R35["0x5DB0BD4"]
-481 [-]: LOADK     R37 K104     ; R37 := "/Lotus/Language/EidolonPlains/MissionEnd_StandingPlusBonus"
-482 [-]: MOVE      R38 R1       ; R38 := R1
-483 [-]: NEWTABLE  R39 0 2      ; R39 := {}
-484 [-]: SETTABLE  R39 K105 R33 ; R39["BASE"] := R33
-485 [-]: SETTABLE  R39 K106 R34 ; R39["BONUS"] := R34
-486 [-]: CALL      R35 5 2      ; R35 := R35(R36,R37,R38,R39)
-487 [-]: MOVE      R32 R35      ; R32 := R35
-488 [-]: JMP       501          ; PC := 501
-489 [-]: GETGLOBAL R35 K0       ; R35 := mMovie
-490 [-]: SELF      R35 R35 K103 ; R36 := R35; R35 := R35["0x5DB0BD4"]
-491 [-]: LOADK     R37 K107     ; R37 := "/Lotus/Language/EidolonPlains/MissionEnd_Standing"
-492 [-]: MOVE      R38 R1       ; R38 := R1
-493 [-]: NEWTABLE  R39 0 1      ; R39 := {}
-494 [-]: GETUPVAL  R40 U13      ; R40 := U13
-495 [-]: GETTABLE  R40 R40 K101 ; R40 := R40["0x7E197415"]
-496 [-]: MOVE      R41 R31      ; R41 := R31
-497 [-]: CALL      R40 2 2      ; R40 := R40(R41)
-498 [-]: SETTABLE  R39 K108 R40 ; R39["STANDING"] := R40
-499 [-]: CALL      R35 5 2      ; R35 := R35(R36,R37,R38,R39)
-500 [-]: MOVE      R32 R35      ; R32 := R35
-501 [-]: GETGLOBAL R35 K0       ; R35 := mMovie
-502 [-]: SELF      R35 R35 K1   ; R36 := R35; R35 := R35["0x1C19D966"]
-503 [-]: LOADK     R37 K100     ; R37 := "Panel.Contd"
-504 [-]: LOADK     R38 K109     ; R38 := "text"
-505 [-]: MOVE      R39 R32      ; R39 := R32
-506 [-]: CALL      R35 5 1      ; R35(R36,R37,R38,R39)
-507 [-]: JMP       619          ; PC := 619
-508 [-]: FORLOOP   R26 442      ; R26 += R28; if R26 <= R27 then begin PC := 442; R29 := R26 end
-509 [-]: JMP       619          ; PC := 619
-510 [-]: GETTABLE  R35 R8 K58   ; R35 := R8["MissionRewards"]
-511 [-]: EQ        1 R35 K59    ; if R35 == nil then PC := 619
-512 [-]: JMP       619          ; PC := 619
-513 [-]: GETTABLE  R35 R8 K58   ; R35 := R8["MissionRewards"]
-514 [-]: LEN       R35 R35      ; R35 := # R35
-515 [-]: LT        0 K60 R35    ; if 0 >= R35 then PC := 619
-516 [-]: JMP       619          ; PC := 619
-517 [-]: GETGLOBAL R35 K65      ; R35 := _T
-518 [-]: GETTABLE  R35 R35 K110 ; R35 := R35["ActiveJob"]
-519 [-]: EQ        1 R35 K59    ; if R35 == nil then PC := 619
-520 [-]: JMP       619          ; PC := 619
+449 [-]: EQ        0 R30 K98    ; if R30 ~= "SolarisSyndicate" then PC := 512
+450 [-]: JMP       512          ; PC := 512
+451 [-]: GETGLOBAL R31 K99      ; R31 := 0xF595ADDE
+452 [-]: GETTABLE  R32 R8 K94   ; R32 := R8["AffiliationMods"]
+453 [-]: GETTABLE  R32 R32 R29  ; R32 := R32[R29]
+454 [-]: GETTABLE  R32 R32 K100 ; R32 := R32["Standing"]
+455 [-]: CALL      R31 2 2      ; R31 := R31(R32)
+456 [-]: LT        0 K60 R31    ; if 0 >= R31 then PC := 623
+457 [-]: JMP       623          ; PC := 623
+458 [-]: GETGLOBAL R32 K0       ; R32 := mMovie
+459 [-]: SELF      R32 R32 K1   ; R33 := R32; R32 := R32["0x1C19D966"]
+460 [-]: LOADK     R34 K101     ; R34 := "Panel.Contd"
+461 [-]: LOADK     R35 K12      ; R35 := "_visible"
+462 [-]: MOVE      R36 R1       ; R36 := R1
+463 [-]: CALL      R32 5 1      ; R32(R33,R34,R35,R36)
+464 [-]: LOADK     R32 K55      ; R32 := ""
+465 [-]: GETUPVAL  R33 U1       ; R33 := U1
+466 [-]: TEST      R33 0        ; if not R33 then PC := 493
+467 [-]: JMP       493          ; PC := 493
+468 [-]: GETUPVAL  R33 U11      ; R33 := U11
+469 [-]: GETUPVAL  R34 U12      ; R34 := U12
+470 [-]: GETTABLE  R33 R33 R34  ; R33 := R33[R34]
+471 [-]: TEST      R33 0        ; if not R33 then PC := 493
+472 [-]: JMP       493          ; PC := 493
+473 [-]: DIV       R33 R31 K102 ; R33 := R31 / 1.25
+474 [-]: SUB       R34 R31 R33  ; R34 := R31 - R33
+475 [-]: GETGLOBAL R35 K0       ; R35 := mMovie
+476 [-]: SELF      R35 R35 K103 ; R36 := R35; R35 := R35["0x5DB0BD4"]
+477 [-]: LOADK     R37 K104     ; R37 := "/Lotus/Language/EidolonPlains/MissionEnd_StandingPlusBonus"
+478 [-]: MOVE      R38 R1       ; R38 := R1
+479 [-]: NEWTABLE  R39 0 2      ; R39 := {}
+480 [-]: GETUPVAL  R40 U13      ; R40 := U13
+481 [-]: GETTABLE  R40 R40 K106 ; R40 := R40["0x7E197415"]
+482 [-]: MOVE      R41 R33      ; R41 := R33
+483 [-]: CALL      R40 2 2      ; R40 := R40(R41)
+484 [-]: SETTABLE  R39 K105 R40 ; R39["BASE"] := R40
+485 [-]: GETUPVAL  R40 U13      ; R40 := U13
+486 [-]: GETTABLE  R40 R40 K106 ; R40 := R40["0x7E197415"]
+487 [-]: MOVE      R41 R34      ; R41 := R34
+488 [-]: CALL      R40 2 2      ; R40 := R40(R41)
+489 [-]: SETTABLE  R39 K107 R40 ; R39["BONUS"] := R40
+490 [-]: CALL      R35 5 2      ; R35 := R35(R36,R37,R38,R39)
+491 [-]: MOVE      R32 R35      ; R32 := R35
+492 [-]: JMP       505          ; PC := 505
+493 [-]: GETGLOBAL R35 K0       ; R35 := mMovie
+494 [-]: SELF      R35 R35 K103 ; R36 := R35; R35 := R35["0x5DB0BD4"]
+495 [-]: LOADK     R37 K108     ; R37 := "/Lotus/Language/EidolonPlains/MissionEnd_Standing"
+496 [-]: MOVE      R38 R1       ; R38 := R1
+497 [-]: NEWTABLE  R39 0 1      ; R39 := {}
+498 [-]: GETUPVAL  R40 U13      ; R40 := U13
+499 [-]: GETTABLE  R40 R40 K106 ; R40 := R40["0x7E197415"]
+500 [-]: MOVE      R41 R31      ; R41 := R31
+501 [-]: CALL      R40 2 2      ; R40 := R40(R41)
+502 [-]: SETTABLE  R39 K109 R40 ; R39["STANDING"] := R40
+503 [-]: CALL      R35 5 2      ; R35 := R35(R36,R37,R38,R39)
+504 [-]: MOVE      R32 R35      ; R32 := R35
+505 [-]: GETGLOBAL R35 K0       ; R35 := mMovie
+506 [-]: SELF      R35 R35 K1   ; R36 := R35; R35 := R35["0x1C19D966"]
+507 [-]: LOADK     R37 K101     ; R37 := "Panel.Contd"
+508 [-]: LOADK     R38 K110     ; R38 := "text"
+509 [-]: MOVE      R39 R32      ; R39 := R32
+510 [-]: CALL      R35 5 1      ; R35(R36,R37,R38,R39)
+511 [-]: JMP       623          ; PC := 623
+512 [-]: FORLOOP   R26 442      ; R26 += R28; if R26 <= R27 then begin PC := 442; R29 := R26 end
+513 [-]: JMP       623          ; PC := 623
+514 [-]: GETTABLE  R35 R8 K58   ; R35 := R8["MissionRewards"]
+515 [-]: EQ        1 R35 K59    ; if R35 == nil then PC := 623
+516 [-]: JMP       623          ; PC := 623
+517 [-]: GETTABLE  R35 R8 K58   ; R35 := R8["MissionRewards"]
+518 [-]: LEN       R35 R35      ; R35 := # R35
+519 [-]: LT        0 K60 R35    ; if 0 >= R35 then PC := 623
+520 [-]: JMP       623          ; PC := 623
 521 [-]: GETGLOBAL R35 K65      ; R35 := _T
-522 [-]: GETTABLE  R35 R35 K111 ; R35 := R35["AvailableJobs"]
-523 [-]: EQ        1 R35 K59    ; if R35 == nil then PC := 619
-524 [-]: JMP       619          ; PC := 619
-525 [-]: GETGLOBAL R35 K20      ; R35 := 0x400E7765
-526 [-]: GETGLOBAL R36 K72      ; R36 := gGameData
-527 [-]: CALL      R35 2 2      ; R35 := R35(R36)
-528 [-]: TEST      R35 1        ; if R35 then PC := 619
-529 [-]: JMP       619          ; PC := 619
-530 [-]: GETGLOBAL R35 K112     ; R35 := EMPTY_SYMBOL
-531 [-]: LOADK     R36 K15      ; R36 := 1
-532 [-]: GETGLOBAL R37 K65      ; R37 := _T
-533 [-]: GETTABLE  R37 R37 K111 ; R37 := R37["AvailableJobs"]
-534 [-]: LEN       R37 R37      ; R37 := # R37
-535 [-]: LOADK     R38 K15      ; R38 := 1
-536 [-]: FORPREP   R36 551      ; R36 -= R38; PC := 551
-537 [-]: GETGLOBAL R40 K65      ; R40 := _T
-538 [-]: GETTABLE  R40 R40 K111 ; R40 := R40["AvailableJobs"]
-539 [-]: GETTABLE  R40 R40 R39  ; R40 := R40[R39]
-540 [-]: GETTABLE  R40 R40 K113 ; R40 := R40["jobId"]
-541 [-]: GETGLOBAL R41 K65      ; R41 := _T
-542 [-]: GETTABLE  R41 R41 K110 ; R41 := R41["ActiveJob"]
-543 [-]: GETTABLE  R41 R41 K113 ; R41 := R41["jobId"]
-544 [-]: EQ        0 R40 R41    ; if R40 ~= R41 then PC := 551
-545 [-]: JMP       551          ; PC := 551
-546 [-]: GETGLOBAL R40 K65      ; R40 := _T
-547 [-]: GETTABLE  R40 R40 K111 ; R40 := R40["AvailableJobs"]
-548 [-]: GETTABLE  R40 R40 R39  ; R40 := R40[R39]
-549 [-]: GETTABLE  R35 R40 K114 ; R35 := R40["syndicateTag"]
-550 [-]: JMP       552          ; PC := 552
-551 [-]: FORLOOP   R36 537      ; R36 += R38; if R36 <= R37 then begin PC := 537; R39 := R36 end
-552 [-]: GETGLOBAL R40 K72      ; R40 := gGameData
-553 [-]: SELF      R40 R40 K115 ; R41 := R40; R40 := R40["0xDB2548DF"]
-554 [-]: MOVE      R42 R35      ; R42 := R35
-555 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
-556 [-]: GETTABLE  R41 R40 K116 ; R41 := R40["mTag"]
-557 [-]: GETGLOBAL R42 K112     ; R42 := EMPTY_SYMBOL
-558 [-]: EQ        1 R41 R42    ; if R41 == R42 then PC := 619
-559 [-]: JMP       619          ; PC := 619
-560 [-]: GETGLOBAL R41 K117     ; R41 := gGameConfig
-561 [-]: SELF      R41 R41 K118 ; R42 := R41; R41 := R41["0xFA65888C"]
-562 [-]: GETTABLE  R43 R40 K116 ; R43 := R40["mTag"]
-563 [-]: GETTABLE  R44 R40 K119 ; R44 := R40["mTitle"]
-564 [-]: CALL      R41 4 2      ; R41 := R41(R42,R43,R44)
-565 [-]: GETTABLE  R42 R40 K120 ; R42 := R40["mStanding"]
-566 [-]: LE        0 R41 R42    ; if R41 > R42 then PC := 586
-567 [-]: JMP       586          ; PC := 586
-568 [-]: GETGLOBAL R42 K0       ; R42 := mMovie
-569 [-]: SELF      R42 R42 K1   ; R43 := R42; R42 := R42["0x1C19D966"]
-570 [-]: LOADK     R44 K100     ; R44 := "Panel.Contd"
-571 [-]: LOADK     R45 K12      ; R45 := "_visible"
-572 [-]: MOVE      R46 R1       ; R46 := R1
-573 [-]: CALL      R42 5 1      ; R42(R43,R44,R45,R46)
-574 [-]: GETGLOBAL R42 K0       ; R42 := mMovie
-575 [-]: SELF      R42 R42 K1   ; R43 := R42; R42 := R42["0x1C19D966"]
-576 [-]: LOADK     R44 K100     ; R44 := "Panel.Contd"
-577 [-]: LOADK     R45 K109     ; R45 := "text"
-578 [-]: GETGLOBAL R46 K0       ; R46 := mMovie
-579 [-]: SELF      R46 R46 K103 ; R47 := R46; R46 := R46["0x5DB0BD4"]
-580 [-]: LOADK     R48 K121     ; R48 := "/Lotus/Language/EidolonPlains/MissionEnd_NoStandingTitleMax"
-581 [-]: MOVE      R49 R1       ; R49 := R1
-582 [-]: NEWTABLE  R50 0 0      ; R50 := {}
-583 [-]: CALL      R46 5 0      ; R46,... := R46(R47,R48,R49,R50)
-584 [-]: CALL      R42 0 1      ; R42(R43,...)
-585 [-]: JMP       619          ; PC := 619
-586 [-]: GETGLOBAL R42 K117     ; R42 := gGameConfig
-587 [-]: SELF      R42 R42 K122 ; R43 := R42; R42 := R42["0xAAB5C920"]
-588 [-]: GETTABLE  R44 R40 K116 ; R44 := R40["mTag"]
-589 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
-590 [-]: GETGLOBAL R43 K20      ; R43 := 0x400E7765
-591 [-]: MOVE      R44 R42      ; R44 := R42
-592 [-]: CALL      R43 2 2      ; R43 := R43(R44)
-593 [-]: TEST      R43 1        ; if R43 then PC := 619
-594 [-]: JMP       619          ; PC := 619
-595 [-]: GETGLOBAL R43 K72      ; R43 := gGameData
-596 [-]: SELF      R43 R43 K123 ; R44 := R43; R43 := R43["0x79B173F7"]
-597 [-]: SELF      R45 R42 K124 ; R46 := R42; R45 := R42["0xFFA83251"]
-598 [-]: CALL      R45 2 0      ; R45,... := R45(R46)
-599 [-]: CALL      R43 0 2      ; R43 := R43(R44,...)
-600 [-]: LE        0 R43 K60    ; if R43 > 0 then PC := 619
-601 [-]: JMP       619          ; PC := 619
-602 [-]: GETGLOBAL R44 K0       ; R44 := mMovie
-603 [-]: SELF      R44 R44 K1   ; R45 := R44; R44 := R44["0x1C19D966"]
-604 [-]: LOADK     R46 K100     ; R46 := "Panel.Contd"
-605 [-]: LOADK     R47 K12      ; R47 := "_visible"
-606 [-]: MOVE      R48 R1       ; R48 := R1
-607 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
-608 [-]: GETGLOBAL R44 K0       ; R44 := mMovie
-609 [-]: SELF      R44 R44 K1   ; R45 := R44; R44 := R44["0x1C19D966"]
-610 [-]: LOADK     R46 K100     ; R46 := "Panel.Contd"
-611 [-]: LOADK     R47 K109     ; R47 := "text"
-612 [-]: GETGLOBAL R48 K0       ; R48 := mMovie
-613 [-]: SELF      R48 R48 K103 ; R49 := R48; R48 := R48["0x5DB0BD4"]
-614 [-]: LOADK     R50 K125     ; R50 := "/Lotus/Language/EidolonPlains/MissionEnd_NoStandingDailyLimit"
-615 [-]: MOVE      R51 R1       ; R51 := R1
-616 [-]: NEWTABLE  R52 0 0      ; R52 := {}
-617 [-]: CALL      R48 5 0      ; R48,... := R48(R49,R50,R51,R52)
-618 [-]: CALL      R44 0 1      ; R44(R45,...)
-619 [-]: GETUPVAL  R44 U0       ; R44 := U0
-620 [-]: TEST      R44 0        ; if not R44 then PC := 632
-621 [-]: JMP       632          ; PC := 632
-622 [-]: GETUPVAL  R44 U1       ; R44 := U1
-623 [-]: TEST      R44 0        ; if not R44 then PC := 632
-624 [-]: JMP       632          ; PC := 632
-625 [-]: GETUPVAL  R44 U11      ; R44 := U11
-626 [-]: LEN       R44 R44      ; R44 := # R44
-627 [-]: GETUPVAL  R45 U12      ; R45 := U12
-628 [-]: EQ        1 R44 R45    ; if R44 == R45 then PC := 631
-629 [-]: JMP       631          ; PC := 631
-630 [-]: MOVE      R44 R0       ; R44 := R0
-631 [-]: MOVE      R44 R1       ; R44 := R1
-632 [-]: TEST      R44 0        ; if not R44 then PC := 671
-633 [-]: JMP       671          ; PC := 671
-634 [-]: GETGLOBAL R45 K42      ; R45 := gRegion
-635 [-]: SELF      R45 R45 K43  ; R46 := R45; R45 := R45["0x372CB914"]
-636 [-]: CALL      R45 2 2      ; R45 := R45(R46)
-637 [-]: GETGLOBAL R46 K20      ; R46 := 0x400E7765
-638 [-]: MOVE      R47 R45      ; R47 := R45
-639 [-]: CALL      R46 2 2      ; R46 := R46(R47)
-640 [-]: TEST      R46 1        ; if R46 then PC := 671
-641 [-]: JMP       671          ; PC := 671
-642 [-]: GETGLOBAL R46 K65      ; R46 := _T
-643 [-]: GETTABLE  R46 R46 K110 ; R46 := R46["ActiveJob"]
-644 [-]: EQ        1 R46 K59    ; if R46 == nil then PC := 671
-645 [-]: JMP       671          ; PC := 671
-646 [-]: GETGLOBAL R46 K40      ; R46 := gChallengeMgr
-647 [-]: SELF      R46 R46 K41  ; R47 := R46; R46 := R46["0x83829B2"]
-648 [-]: MOVE      R48 R45      ; R48 := R45
-649 [-]: GETUPVAL  R49 U13      ; R49 := U13
-650 [-]: GETTABLE  R49 R49 K47  ; R49 := R49["0xF81722A2"]
-651 [-]: GETUPVAL  R50 U4       ; R50 := U4
-652 [-]: GETUPVAL  R51 U6       ; R51 := U6
-653 [-]: EQ        1 R50 R51    ; if R50 == R51 then PC := 656
-654 [-]: JMP       656          ; PC := 656
-655 [-]: MOVE      R50 R0       ; R50 := R0
-656 [-]: MOVE      R50 R1       ; R50 := R1
-657 [-]: GETGLOBAL R51 K44      ; R51 := 0xEC274B1A
-658 [-]: LOADK     R52 K126     ; R52 := "EIDOLON_QUEST_COMPLETE"
-659 [-]: CALL      R51 2 2      ; R51 := R51(R52)
-660 [-]: GETGLOBAL R52 K44      ; R52 := 0xEC274B1A
-661 [-]: LOADK     R53 K127     ; R53 := "ORB_VALLIS_BOUNTY_COMPLETE"
-662 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
-663 [-]: CALL      R49 0 2      ; R49 := R49(R50,...)
-664 [-]: LOADNIL   R50 R51      ; R50 := R51 := nil
-665 [-]: GETGLOBAL R52 K44      ; R52 := 0xEC274B1A
-666 [-]: GETGLOBAL R53 K65      ; R53 := _T
-667 [-]: GETTABLE  R53 R53 K110 ; R53 := R53["ActiveJob"]
-668 [-]: GETTABLE  R53 R53 K113 ; R53 := R53["jobId"]
-669 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
-670 [-]: CALL      R46 0 1      ; R46(R47,...)
-671 [-]: GETGLOBAL R46 K65      ; R46 := _T
-672 [-]: GETTABLE  R46 R46 K128 ; R46 := R46["AllowContinuousJobs"]
-673 [-]: TEST      R46 0        ; if not R46 then PC := 763
-674 [-]: JMP       763          ; PC := 763
-675 [-]: MOVE      R46 R0       ; R46 := R0
-676 [-]: TEST      R44 0        ; if not R44 then PC := 742
-677 [-]: JMP       742          ; PC := 742
-678 [-]: MOVE      R46 R1       ; R46 := R1
-679 [-]: GETGLOBAL R47 K65      ; R47 := _T
-680 [-]: GETTABLE  R47 R47 K111 ; R47 := R47["AvailableJobs"]
-681 [-]: EQ        1 R47 K59    ; if R47 == nil then PC := 749
-682 [-]: JMP       749          ; PC := 749
+522 [-]: GETTABLE  R35 R35 K111 ; R35 := R35["ActiveJob"]
+523 [-]: EQ        1 R35 K59    ; if R35 == nil then PC := 623
+524 [-]: JMP       623          ; PC := 623
+525 [-]: GETGLOBAL R35 K65      ; R35 := _T
+526 [-]: GETTABLE  R35 R35 K112 ; R35 := R35["AvailableJobs"]
+527 [-]: EQ        1 R35 K59    ; if R35 == nil then PC := 623
+528 [-]: JMP       623          ; PC := 623
+529 [-]: GETGLOBAL R35 K20      ; R35 := 0x400E7765
+530 [-]: GETGLOBAL R36 K72      ; R36 := gGameData
+531 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+532 [-]: TEST      R35 1        ; if R35 then PC := 623
+533 [-]: JMP       623          ; PC := 623
+534 [-]: GETGLOBAL R35 K113     ; R35 := EMPTY_SYMBOL
+535 [-]: LOADK     R36 K15      ; R36 := 1
+536 [-]: GETGLOBAL R37 K65      ; R37 := _T
+537 [-]: GETTABLE  R37 R37 K112 ; R37 := R37["AvailableJobs"]
+538 [-]: LEN       R37 R37      ; R37 := # R37
+539 [-]: LOADK     R38 K15      ; R38 := 1
+540 [-]: FORPREP   R36 555      ; R36 -= R38; PC := 555
+541 [-]: GETGLOBAL R40 K65      ; R40 := _T
+542 [-]: GETTABLE  R40 R40 K112 ; R40 := R40["AvailableJobs"]
+543 [-]: GETTABLE  R40 R40 R39  ; R40 := R40[R39]
+544 [-]: GETTABLE  R40 R40 K114 ; R40 := R40["jobId"]
+545 [-]: GETGLOBAL R41 K65      ; R41 := _T
+546 [-]: GETTABLE  R41 R41 K111 ; R41 := R41["ActiveJob"]
+547 [-]: GETTABLE  R41 R41 K114 ; R41 := R41["jobId"]
+548 [-]: EQ        0 R40 R41    ; if R40 ~= R41 then PC := 555
+549 [-]: JMP       555          ; PC := 555
+550 [-]: GETGLOBAL R40 K65      ; R40 := _T
+551 [-]: GETTABLE  R40 R40 K112 ; R40 := R40["AvailableJobs"]
+552 [-]: GETTABLE  R40 R40 R39  ; R40 := R40[R39]
+553 [-]: GETTABLE  R35 R40 K115 ; R35 := R40["syndicateTag"]
+554 [-]: JMP       556          ; PC := 556
+555 [-]: FORLOOP   R36 541      ; R36 += R38; if R36 <= R37 then begin PC := 541; R39 := R36 end
+556 [-]: GETGLOBAL R40 K72      ; R40 := gGameData
+557 [-]: SELF      R40 R40 K116 ; R41 := R40; R40 := R40["0xDB2548DF"]
+558 [-]: MOVE      R42 R35      ; R42 := R35
+559 [-]: CALL      R40 3 2      ; R40 := R40(R41,R42)
+560 [-]: GETTABLE  R41 R40 K117 ; R41 := R40["mTag"]
+561 [-]: GETGLOBAL R42 K113     ; R42 := EMPTY_SYMBOL
+562 [-]: EQ        1 R41 R42    ; if R41 == R42 then PC := 623
+563 [-]: JMP       623          ; PC := 623
+564 [-]: GETGLOBAL R41 K118     ; R41 := gGameConfig
+565 [-]: SELF      R41 R41 K119 ; R42 := R41; R41 := R41["0xFA65888C"]
+566 [-]: GETTABLE  R43 R40 K117 ; R43 := R40["mTag"]
+567 [-]: GETTABLE  R44 R40 K120 ; R44 := R40["mTitle"]
+568 [-]: CALL      R41 4 2      ; R41 := R41(R42,R43,R44)
+569 [-]: GETTABLE  R42 R40 K121 ; R42 := R40["mStanding"]
+570 [-]: LE        0 R41 R42    ; if R41 > R42 then PC := 590
+571 [-]: JMP       590          ; PC := 590
+572 [-]: GETGLOBAL R42 K0       ; R42 := mMovie
+573 [-]: SELF      R42 R42 K1   ; R43 := R42; R42 := R42["0x1C19D966"]
+574 [-]: LOADK     R44 K101     ; R44 := "Panel.Contd"
+575 [-]: LOADK     R45 K12      ; R45 := "_visible"
+576 [-]: MOVE      R46 R1       ; R46 := R1
+577 [-]: CALL      R42 5 1      ; R42(R43,R44,R45,R46)
+578 [-]: GETGLOBAL R42 K0       ; R42 := mMovie
+579 [-]: SELF      R42 R42 K1   ; R43 := R42; R42 := R42["0x1C19D966"]
+580 [-]: LOADK     R44 K101     ; R44 := "Panel.Contd"
+581 [-]: LOADK     R45 K110     ; R45 := "text"
+582 [-]: GETGLOBAL R46 K0       ; R46 := mMovie
+583 [-]: SELF      R46 R46 K103 ; R47 := R46; R46 := R46["0x5DB0BD4"]
+584 [-]: LOADK     R48 K122     ; R48 := "/Lotus/Language/EidolonPlains/MissionEnd_NoStandingTitleMax"
+585 [-]: MOVE      R49 R1       ; R49 := R1
+586 [-]: NEWTABLE  R50 0 0      ; R50 := {}
+587 [-]: CALL      R46 5 0      ; R46,... := R46(R47,R48,R49,R50)
+588 [-]: CALL      R42 0 1      ; R42(R43,...)
+589 [-]: JMP       623          ; PC := 623
+590 [-]: GETGLOBAL R42 K118     ; R42 := gGameConfig
+591 [-]: SELF      R42 R42 K123 ; R43 := R42; R42 := R42["0xAAB5C920"]
+592 [-]: GETTABLE  R44 R40 K117 ; R44 := R40["mTag"]
+593 [-]: CALL      R42 3 2      ; R42 := R42(R43,R44)
+594 [-]: GETGLOBAL R43 K20      ; R43 := 0x400E7765
+595 [-]: MOVE      R44 R42      ; R44 := R42
+596 [-]: CALL      R43 2 2      ; R43 := R43(R44)
+597 [-]: TEST      R43 1        ; if R43 then PC := 623
+598 [-]: JMP       623          ; PC := 623
+599 [-]: GETGLOBAL R43 K72      ; R43 := gGameData
+600 [-]: SELF      R43 R43 K124 ; R44 := R43; R43 := R43["0x79B173F7"]
+601 [-]: SELF      R45 R42 K125 ; R46 := R42; R45 := R42["0xFFA83251"]
+602 [-]: CALL      R45 2 0      ; R45,... := R45(R46)
+603 [-]: CALL      R43 0 2      ; R43 := R43(R44,...)
+604 [-]: LE        0 R43 K60    ; if R43 > 0 then PC := 623
+605 [-]: JMP       623          ; PC := 623
+606 [-]: GETGLOBAL R44 K0       ; R44 := mMovie
+607 [-]: SELF      R44 R44 K1   ; R45 := R44; R44 := R44["0x1C19D966"]
+608 [-]: LOADK     R46 K101     ; R46 := "Panel.Contd"
+609 [-]: LOADK     R47 K12      ; R47 := "_visible"
+610 [-]: MOVE      R48 R1       ; R48 := R1
+611 [-]: CALL      R44 5 1      ; R44(R45,R46,R47,R48)
+612 [-]: GETGLOBAL R44 K0       ; R44 := mMovie
+613 [-]: SELF      R44 R44 K1   ; R45 := R44; R44 := R44["0x1C19D966"]
+614 [-]: LOADK     R46 K101     ; R46 := "Panel.Contd"
+615 [-]: LOADK     R47 K110     ; R47 := "text"
+616 [-]: GETGLOBAL R48 K0       ; R48 := mMovie
+617 [-]: SELF      R48 R48 K103 ; R49 := R48; R48 := R48["0x5DB0BD4"]
+618 [-]: LOADK     R50 K126     ; R50 := "/Lotus/Language/EidolonPlains/MissionEnd_NoStandingDailyLimit"
+619 [-]: MOVE      R51 R1       ; R51 := R1
+620 [-]: NEWTABLE  R52 0 0      ; R52 := {}
+621 [-]: CALL      R48 5 0      ; R48,... := R48(R49,R50,R51,R52)
+622 [-]: CALL      R44 0 1      ; R44(R45,...)
+623 [-]: GETUPVAL  R44 U0       ; R44 := U0
+624 [-]: TEST      R44 0        ; if not R44 then PC := 636
+625 [-]: JMP       636          ; PC := 636
+626 [-]: GETUPVAL  R44 U1       ; R44 := U1
+627 [-]: TEST      R44 0        ; if not R44 then PC := 636
+628 [-]: JMP       636          ; PC := 636
+629 [-]: GETUPVAL  R44 U11      ; R44 := U11
+630 [-]: LEN       R44 R44      ; R44 := # R44
+631 [-]: GETUPVAL  R45 U12      ; R45 := U12
+632 [-]: EQ        1 R44 R45    ; if R44 == R45 then PC := 635
+633 [-]: JMP       635          ; PC := 635
+634 [-]: MOVE      R44 R0       ; R44 := R0
+635 [-]: MOVE      R44 R1       ; R44 := R1
+636 [-]: TEST      R44 0        ; if not R44 then PC := 675
+637 [-]: JMP       675          ; PC := 675
+638 [-]: GETGLOBAL R45 K42      ; R45 := gRegion
+639 [-]: SELF      R45 R45 K43  ; R46 := R45; R45 := R45["0x372CB914"]
+640 [-]: CALL      R45 2 2      ; R45 := R45(R46)
+641 [-]: GETGLOBAL R46 K20      ; R46 := 0x400E7765
+642 [-]: MOVE      R47 R45      ; R47 := R45
+643 [-]: CALL      R46 2 2      ; R46 := R46(R47)
+644 [-]: TEST      R46 1        ; if R46 then PC := 675
+645 [-]: JMP       675          ; PC := 675
+646 [-]: GETGLOBAL R46 K65      ; R46 := _T
+647 [-]: GETTABLE  R46 R46 K111 ; R46 := R46["ActiveJob"]
+648 [-]: EQ        1 R46 K59    ; if R46 == nil then PC := 675
+649 [-]: JMP       675          ; PC := 675
+650 [-]: GETGLOBAL R46 K40      ; R46 := gChallengeMgr
+651 [-]: SELF      R46 R46 K41  ; R47 := R46; R46 := R46["0x83829B2"]
+652 [-]: MOVE      R48 R45      ; R48 := R45
+653 [-]: GETUPVAL  R49 U13      ; R49 := U13
+654 [-]: GETTABLE  R49 R49 K47  ; R49 := R49["0xF81722A2"]
+655 [-]: GETUPVAL  R50 U4       ; R50 := U4
+656 [-]: GETUPVAL  R51 U6       ; R51 := U6
+657 [-]: EQ        1 R50 R51    ; if R50 == R51 then PC := 660
+658 [-]: JMP       660          ; PC := 660
+659 [-]: MOVE      R50 R0       ; R50 := R0
+660 [-]: MOVE      R50 R1       ; R50 := R1
+661 [-]: GETGLOBAL R51 K44      ; R51 := 0xEC274B1A
+662 [-]: LOADK     R52 K127     ; R52 := "EIDOLON_QUEST_COMPLETE"
+663 [-]: CALL      R51 2 2      ; R51 := R51(R52)
+664 [-]: GETGLOBAL R52 K44      ; R52 := 0xEC274B1A
+665 [-]: LOADK     R53 K128     ; R53 := "ORB_VALLIS_BOUNTY_COMPLETE"
+666 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
+667 [-]: CALL      R49 0 2      ; R49 := R49(R50,...)
+668 [-]: LOADNIL   R50 R51      ; R50 := R51 := nil
+669 [-]: GETGLOBAL R52 K44      ; R52 := 0xEC274B1A
+670 [-]: GETGLOBAL R53 K65      ; R53 := _T
+671 [-]: GETTABLE  R53 R53 K111 ; R53 := R53["ActiveJob"]
+672 [-]: GETTABLE  R53 R53 K114 ; R53 := R53["jobId"]
+673 [-]: CALL      R52 2 0      ; R52,... := R52(R53)
+674 [-]: CALL      R46 0 1      ; R46(R47,...)
+675 [-]: GETGLOBAL R46 K65      ; R46 := _T
+676 [-]: GETTABLE  R46 R46 K129 ; R46 := R46["AllowContinuousJobs"]
+677 [-]: TEST      R46 0        ; if not R46 then PC := 767
+678 [-]: JMP       767          ; PC := 767
+679 [-]: MOVE      R46 R0       ; R46 := R0
+680 [-]: TEST      R44 0        ; if not R44 then PC := 746
+681 [-]: JMP       746          ; PC := 746
+682 [-]: MOVE      R46 R1       ; R46 := R1
 683 [-]: GETGLOBAL R47 K65      ; R47 := _T
-684 [-]: GETTABLE  R47 R47 K110 ; R47 := R47["ActiveJob"]
-685 [-]: EQ        1 R47 K59    ; if R47 == nil then PC := 749
-686 [-]: JMP       749          ; PC := 749
-687 [-]: LOADNIL   R47 R47      ; R47 := nil
-688 [-]: LOADK     R48 K15      ; R48 := 1
-689 [-]: GETGLOBAL R49 K65      ; R49 := _T
-690 [-]: GETTABLE  R49 R49 K111 ; R49 := R49["AvailableJobs"]
-691 [-]: LEN       R49 R49      ; R49 := # R49
-692 [-]: LOADK     R50 K15      ; R50 := 1
-693 [-]: FORPREP   R48 740      ; R48 -= R50; PC := 740
-694 [-]: GETGLOBAL R52 K65      ; R52 := _T
-695 [-]: GETTABLE  R52 R52 K111 ; R52 := R52["AvailableJobs"]
-696 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
-697 [-]: GETTABLE  R52 R52 K113 ; R52 := R52["jobId"]
-698 [-]: GETGLOBAL R53 K65      ; R53 := _T
-699 [-]: GETTABLE  R53 R53 K110 ; R53 := R53["ActiveJob"]
-700 [-]: GETTABLE  R53 R53 K113 ; R53 := R53["jobId"]
-701 [-]: EQ        0 R52 R53    ; if R52 ~= R53 then PC := 729
-702 [-]: JMP       729          ; PC := 729
-703 [-]: GETGLOBAL R52 K65      ; R52 := _T
-704 [-]: GETTABLE  R52 R52 K111 ; R52 := R52["AvailableJobs"]
-705 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
-706 [-]: SETTABLE  R52 K129 K84 ; R52["hasCompleted"] := "0x1"
+684 [-]: GETTABLE  R47 R47 K112 ; R47 := R47["AvailableJobs"]
+685 [-]: EQ        1 R47 K59    ; if R47 == nil then PC := 753
+686 [-]: JMP       753          ; PC := 753
+687 [-]: GETGLOBAL R47 K65      ; R47 := _T
+688 [-]: GETTABLE  R47 R47 K111 ; R47 := R47["ActiveJob"]
+689 [-]: EQ        1 R47 K59    ; if R47 == nil then PC := 753
+690 [-]: JMP       753          ; PC := 753
+691 [-]: LOADNIL   R47 R47      ; R47 := nil
+692 [-]: LOADK     R48 K15      ; R48 := 1
+693 [-]: GETGLOBAL R49 K65      ; R49 := _T
+694 [-]: GETTABLE  R49 R49 K112 ; R49 := R49["AvailableJobs"]
+695 [-]: LEN       R49 R49      ; R49 := # R49
+696 [-]: LOADK     R50 K15      ; R50 := 1
+697 [-]: FORPREP   R48 744      ; R48 -= R50; PC := 744
+698 [-]: GETGLOBAL R52 K65      ; R52 := _T
+699 [-]: GETTABLE  R52 R52 K112 ; R52 := R52["AvailableJobs"]
+700 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
+701 [-]: GETTABLE  R52 R52 K114 ; R52 := R52["jobId"]
+702 [-]: GETGLOBAL R53 K65      ; R53 := _T
+703 [-]: GETTABLE  R53 R53 K111 ; R53 := R53["ActiveJob"]
+704 [-]: GETTABLE  R53 R53 K114 ; R53 := R53["jobId"]
+705 [-]: EQ        0 R52 R53    ; if R52 ~= R53 then PC := 733
+706 [-]: JMP       733          ; PC := 733
 707 [-]: GETGLOBAL R52 K65      ; R52 := _T
-708 [-]: GETTABLE  R52 R52 K111 ; R52 := R52["AvailableJobs"]
+708 [-]: GETTABLE  R52 R52 K112 ; R52 := R52["AvailableJobs"]
 709 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
-710 [-]: GETTABLE  R52 R52 K130 ; R52 := R52["tier"]
-711 [-]: GETGLOBAL R53 K30      ; R53 := Lotus_Game
-712 [-]: GETTABLE  R53 R53 K131 ; R53 := R53["JobDifficultyTier_PERMANENT_JOB"]
-713 [-]: EQ        0 R52 R53    ; if R52 ~= R53 then PC := 722
-714 [-]: JMP       722          ; PC := 722
-715 [-]: GETUPVAL  R52 U23      ; R52 := U23
-716 [-]: GETTABLE  R52 R52 K132 ; R52 := R52["0xB066FFCA"]
-717 [-]: GETGLOBAL R53 K65      ; R53 := _T
-718 [-]: GETTABLE  R53 R53 K111 ; R53 := R53["AvailableJobs"]
-719 [-]: GETTABLE  R53 R53 R51  ; R53 := R53[R51]
-720 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-721 [-]: MOVE      R47 R52      ; R47 := R52
-722 [-]: GETGLOBAL R52 K20      ; R52 := 0x400E7765
-723 [-]: MOVE      R53 R47      ; R53 := R47
+710 [-]: SETTABLE  R52 K130 K84 ; R52["hasCompleted"] := "0x1"
+711 [-]: GETGLOBAL R52 K65      ; R52 := _T
+712 [-]: GETTABLE  R52 R52 K112 ; R52 := R52["AvailableJobs"]
+713 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
+714 [-]: GETTABLE  R52 R52 K131 ; R52 := R52["tier"]
+715 [-]: GETGLOBAL R53 K30      ; R53 := Lotus_Game
+716 [-]: GETTABLE  R53 R53 K132 ; R53 := R53["JobDifficultyTier_PERMANENT_JOB"]
+717 [-]: EQ        0 R52 R53    ; if R52 ~= R53 then PC := 726
+718 [-]: JMP       726          ; PC := 726
+719 [-]: GETUPVAL  R52 U23      ; R52 := U23
+720 [-]: GETTABLE  R52 R52 K133 ; R52 := R52["0xB066FFCA"]
+721 [-]: GETGLOBAL R53 K65      ; R53 := _T
+722 [-]: GETTABLE  R53 R53 K112 ; R53 := R53["AvailableJobs"]
+723 [-]: GETTABLE  R53 R53 R51  ; R53 := R53[R51]
 724 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-725 [-]: TEST      R52 0        ; if not R52 then PC := 740
-726 [-]: JMP       740          ; PC := 740
-727 [-]: JMP       749          ; PC := 749
-728 [-]: JMP       740          ; PC := 740
-729 [-]: GETGLOBAL R52 K65      ; R52 := _T
-730 [-]: GETTABLE  R52 R52 K111 ; R52 := R52["AvailableJobs"]
-731 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
-732 [-]: GETTABLE  R52 R52 K133 ; R52 := R52["jobType"]
-733 [-]: EQ        0 R52 R47    ; if R52 ~= R47 then PC := 740
-734 [-]: JMP       740          ; PC := 740
-735 [-]: GETGLOBAL R52 K65      ; R52 := _T
-736 [-]: GETTABLE  R52 R52 K111 ; R52 := R52["AvailableJobs"]
-737 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
-738 [-]: SETTABLE  R52 K134 K135; R52["chainProgressionLocked"] := "0x0"
-739 [-]: JMP       749          ; PC := 749
-740 [-]: FORLOOP   R48 694      ; R48 += R50; if R48 <= R49 then begin PC := 694; R51 := R48 end
-741 [-]: JMP       749          ; PC := 749
-742 [-]: GETUPVAL  R52 U1       ; R52 := U1
-743 [-]: TEST      R52 0        ; if not R52 then PC := 749
-744 [-]: JMP       749          ; PC := 749
-745 [-]: GETUPVAL  R52 U0       ; R52 := U0
-746 [-]: TEST      R52 1        ; if R52 then PC := 749
-747 [-]: JMP       749          ; PC := 749
-748 [-]: MOVE      R46 R1       ; R46 := R1
-749 [-]: TEST      R46 0        ; if not R46 then PC := 763
-750 [-]: JMP       763          ; PC := 763
-751 [-]: GETGLOBAL R52 K20      ; R52 := 0x400E7765
-752 [-]: GETGLOBAL R53 K65      ; R53 := _T
-753 [-]: GETTABLE  R53 R53 K136 ; R53 := R53["SquadOverlay"]
-754 [-]: CALL      R52 2 2      ; R52 := R52(R53)
-755 [-]: TEST      R52 1        ; if R52 then PC := 763
-756 [-]: JMP       763          ; PC := 763
-757 [-]: GETGLOBAL R52 K65      ; R52 := _T
-758 [-]: GETTABLE  R52 R52 K136 ; R52 := R52["SquadOverlay"]
-759 [-]: SELF      R52 R52 K137 ; R53 := R52; R52 := R52["0x458F27A9"]
-760 [-]: LOADK     R54 K138     ; R54 := "ClearVotesPostJob"
-761 [-]: LOADK     R55 K55      ; R55 := ""
-762 [-]: CALL      R52 4 1      ; R52(R53,R54,R55)
-763 [-]: GETUPVAL  R52 U20      ; R52 := U20
-764 [-]: TEST      R52 1        ; if R52 then PC := 768
-765 [-]: JMP       768          ; PC := 768
-766 [-]: GETUPVAL  R52 U24      ; R52 := U24
-767 [-]: CALL      R52 1 1      ; R52()
-768 [-]: RETURN    R0 1         ; return 
+725 [-]: MOVE      R47 R52      ; R47 := R52
+726 [-]: GETGLOBAL R52 K20      ; R52 := 0x400E7765
+727 [-]: MOVE      R53 R47      ; R53 := R47
+728 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+729 [-]: TEST      R52 0        ; if not R52 then PC := 744
+730 [-]: JMP       744          ; PC := 744
+731 [-]: JMP       753          ; PC := 753
+732 [-]: JMP       744          ; PC := 744
+733 [-]: GETGLOBAL R52 K65      ; R52 := _T
+734 [-]: GETTABLE  R52 R52 K112 ; R52 := R52["AvailableJobs"]
+735 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
+736 [-]: GETTABLE  R52 R52 K134 ; R52 := R52["jobType"]
+737 [-]: EQ        0 R52 R47    ; if R52 ~= R47 then PC := 744
+738 [-]: JMP       744          ; PC := 744
+739 [-]: GETGLOBAL R52 K65      ; R52 := _T
+740 [-]: GETTABLE  R52 R52 K112 ; R52 := R52["AvailableJobs"]
+741 [-]: GETTABLE  R52 R52 R51  ; R52 := R52[R51]
+742 [-]: SETTABLE  R52 K135 K136; R52["chainProgressionLocked"] := "0x0"
+743 [-]: JMP       753          ; PC := 753
+744 [-]: FORLOOP   R48 698      ; R48 += R50; if R48 <= R49 then begin PC := 698; R51 := R48 end
+745 [-]: JMP       753          ; PC := 753
+746 [-]: GETUPVAL  R52 U1       ; R52 := U1
+747 [-]: TEST      R52 0        ; if not R52 then PC := 753
+748 [-]: JMP       753          ; PC := 753
+749 [-]: GETUPVAL  R52 U0       ; R52 := U0
+750 [-]: TEST      R52 1        ; if R52 then PC := 753
+751 [-]: JMP       753          ; PC := 753
+752 [-]: MOVE      R46 R1       ; R46 := R1
+753 [-]: TEST      R46 0        ; if not R46 then PC := 767
+754 [-]: JMP       767          ; PC := 767
+755 [-]: GETGLOBAL R52 K20      ; R52 := 0x400E7765
+756 [-]: GETGLOBAL R53 K65      ; R53 := _T
+757 [-]: GETTABLE  R53 R53 K137 ; R53 := R53["SquadOverlay"]
+758 [-]: CALL      R52 2 2      ; R52 := R52(R53)
+759 [-]: TEST      R52 1        ; if R52 then PC := 767
+760 [-]: JMP       767          ; PC := 767
+761 [-]: GETGLOBAL R52 K65      ; R52 := _T
+762 [-]: GETTABLE  R52 R52 K137 ; R52 := R52["SquadOverlay"]
+763 [-]: SELF      R52 R52 K138 ; R53 := R52; R52 := R52["0x458F27A9"]
+764 [-]: LOADK     R54 K139     ; R54 := "ClearVotesPostJob"
+765 [-]: LOADK     R55 K55      ; R55 := ""
+766 [-]: CALL      R52 4 1      ; R52(R53,R54,R55)
+767 [-]: GETUPVAL  R52 U20      ; R52 := U20
+768 [-]: TEST      R52 1        ; if R52 then PC := 772
+769 [-]: JMP       772          ; PC := 772
+770 [-]: GETUPVAL  R52 U24      ; R52 := U24
+771 [-]: CALL      R52 1 1      ; R52()
+772 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #11:

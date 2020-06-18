@@ -6,7 +6,7 @@ code size: 17
 code size: 78
 code size: 95
 code size: 23
-code size: 35
+code size: 41
 code size: 66
 code size: 31
 code size: 165
@@ -698,44 +698,50 @@ code size: 56
   1 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
   2 [-]: MOVE      R3 R1        ; R3 := R1
   3 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  4 [-]: TEST      R2 1         ; if R2 then PC := 31
-  5 [-]: JMP       31           ; PC := 31
+  4 [-]: TEST      R2 1         ; if R2 then PC := 37
+  5 [-]: JMP       37           ; PC := 37
   6 [-]: SELF      R2 R1 K1     ; R3 := R1; R2 := R1["0x5A115A02"]
   7 [-]: CALL      R2 2 2       ; R2 := R2(R3)
-  8 [-]: TEST      R2 1         ; if R2 then PC := 31
-  9 [-]: JMP       31           ; PC := 31
+  8 [-]: TEST      R2 1         ; if R2 then PC := 37
+  9 [-]: JMP       37           ; PC := 37
  10 [-]: SELF      R2 R1 K2     ; R3 := R1; R2 := R1["0xB6293ABC"]
  11 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 12 [-]: TEST      R2 1         ; if R2 then PC := 31
- 13 [-]: JMP       31           ; PC := 31
+ 12 [-]: TEST      R2 1         ; if R2 then PC := 37
+ 13 [-]: JMP       37           ; PC := 37
  14 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x495F554F"]
  15 [-]: GETGLOBAL R4 K4        ; R4 := Lotus_Game
  16 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["AR_RESIST_ALL"]
  17 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 18 [-]: TEST      R2 1         ; if R2 then PC := 31
- 19 [-]: JMP       31           ; PC := 31
- 20 [-]: SELF      R2 R1 K6     ; R3 := R1; R2 := R1["0xD13CABAB"]
- 21 [-]: MOVE      R4 R0        ; R4 := R0
- 22 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
- 23 [-]: TEST      R2 1         ; if R2 then PC := 31
- 24 [-]: JMP       31           ; PC := 31
- 25 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
- 26 [-]: SELF      R3 R1 K7     ; R4 := R1; R3 := R1["0x67EFEF42"]
- 27 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
- 28 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
- 29 [-]: TEST      R2 0         ; if not R2 then PC := 33
- 30 [-]: JMP       33           ; PC := 33
- 31 [-]: MOVE      R2 R0        ; R2 := R0
- 32 [-]: RETURN    R2 2         ; return R2
- 33 [-]: MOVE      R2 R1        ; R2 := R1
- 34 [-]: RETURN    R2 2         ; return R2
- 35 [-]: RETURN    R0 1         ; return 
+ 18 [-]: TEST      R2 1         ; if R2 then PC := 37
+ 19 [-]: JMP       37           ; PC := 37
+ 20 [-]: SELF      R2 R1 K3     ; R3 := R1; R2 := R1["0x495F554F"]
+ 21 [-]: GETGLOBAL R4 K4        ; R4 := Lotus_Game
+ 22 [-]: GETTABLE  R4 R4 K6     ; R4 := R4["AR_IMMUNE_LOOTING"]
+ 23 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 24 [-]: TEST      R2 1         ; if R2 then PC := 37
+ 25 [-]: JMP       37           ; PC := 37
+ 26 [-]: SELF      R2 R1 K7     ; R3 := R1; R2 := R1["0xD13CABAB"]
+ 27 [-]: MOVE      R4 R0        ; R4 := R0
+ 28 [-]: CALL      R2 3 2       ; R2 := R2(R3,R4)
+ 29 [-]: TEST      R2 1         ; if R2 then PC := 37
+ 30 [-]: JMP       37           ; PC := 37
+ 31 [-]: GETGLOBAL R2 K0        ; R2 := 0x400E7765
+ 32 [-]: SELF      R3 R1 K8     ; R4 := R1; R3 := R1["0x67EFEF42"]
+ 33 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
+ 34 [-]: CALL      R2 0 2       ; R2 := R2(R3,...)
+ 35 [-]: TEST      R2 0         ; if not R2 then PC := 39
+ 36 [-]: JMP       39           ; PC := 39
+ 37 [-]: MOVE      R2 R0        ; R2 := R0
+ 38 [-]: RETURN    R2 2         ; return R2
+ 39 [-]: MOVE      R2 R1        ; R2 := R1
+ 40 [-]: RETURN    R2 2         ; return R2
+ 41 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 233
+; Defined at line: 234
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -812,7 +818,7 @@ code size: 56
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 248
+; Defined at line: 249
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -854,7 +860,7 @@ code size: 56
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 261
+; Defined at line: 262
 ; #Upvalues:       4
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1030,7 +1036,7 @@ code size: 56
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 329
+; Defined at line: 330
 ; #Upvalues:       14
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1789,7 +1795,7 @@ code size: 56
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 629
+; Defined at line: 630
 ; #Upvalues:       7
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -1959,7 +1965,7 @@ code size: 56
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 682
+; Defined at line: 683
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2008,7 +2014,7 @@ code size: 56
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 699
+; Defined at line: 700
 ; #Upvalues:       1
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -2030,7 +2036,7 @@ code size: 56
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 705
+; Defined at line: 706
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2080,7 +2086,7 @@ code size: 56
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 719
+; Defined at line: 720
 ; #Upvalues:       5
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2206,7 +2212,7 @@ code size: 56
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 752
+; Defined at line: 753
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2243,7 +2249,7 @@ code size: 56
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 764
+; Defined at line: 765
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -2306,7 +2312,7 @@ code size: 56
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 780
+; Defined at line: 781
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2351,7 +2357,7 @@ code size: 56
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 792
+; Defined at line: 793
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2408,7 +2414,7 @@ code size: 56
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 809
+; Defined at line: 810
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2450,7 +2456,7 @@ code size: 56
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 822
+; Defined at line: 823
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0

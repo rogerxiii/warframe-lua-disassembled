@@ -58,7 +58,7 @@ code size: 44
 code size: 227
 code size: 3
 code size: 2
-code size: 84
+code size: 87
 code size: 59
 code size: 4
 code size: 118
@@ -572,10 +572,10 @@ code size: 105
 353 [-]: MOVE      R0 R29       ; R0 := R29
 354 [-]: MOVE      R0 R6        ; R0 := R6
 355 [-]: MOVE      R0 R10       ; R0 := R10
-356 [-]: MOVE      R0 R5        ; R0 := R5
-357 [-]: MOVE      R0 R12       ; R0 := R12
-358 [-]: MOVE      R0 R54       ; R0 := R54
-359 [-]: MOVE      R0 R55       ; R0 := R55
+356 [-]: MOVE      R0 R55       ; R0 := R55
+357 [-]: MOVE      R0 R5        ; R0 := R5
+358 [-]: MOVE      R0 R12       ; R0 := R12
+359 [-]: MOVE      R0 R54       ; R0 := R54
 360 [-]: MOVE      R0 R125      ; R0 := R125
 361 [-]: MOVE      R0 R32       ; R0 := R32
 362 [-]: MOVE      R0 R87       ; R0 := R87
@@ -6637,8 +6637,8 @@ code size: 105
  16 [-]: LOADNIL   R4 R4        ; R4 := nil
  17 [-]: CALL      R1 4 2       ; R1 := R1(R2,R3,R4)
  18 [-]: GETTABLE  R2 R0 K6     ; R2 := R0["Card"]
- 19 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 84
- 20 [-]: JMP       84           ; PC := 84
+ 19 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 87
+ 20 [-]: JMP       87           ; PC := 87
  21 [-]: GETUPVAL  R2 U0        ; R2 := U0
  22 [-]: GETTABLE  R2 R2 K7     ; R2 := R2["0x25992394"]
  23 [-]: GETGLOBAL R3 K8        ; R3 := _G
@@ -6686,23 +6686,26 @@ code size: 105
  65 [-]: CONCAT    R2 R2 R3     ; R2 := R2 .. R3
  66 [-]: MOVE      R2 R5        ; R2 := R5
  67 [-]: GETTABLE  R2 R0 K23    ; R2 := R0["CodexEntry"]
- 68 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 84
- 69 [-]: JMP       84           ; PC := 84
- 70 [-]: GETGLOBAL R2 K2        ; R2 := _T
- 71 [-]: LOADK     R3 K24       ; R3 := "<p><font >"
- 72 [-]: GETUPVAL  R4 U6        ; R4 := U6
- 73 [-]: GETTABLE  R4 R4 K25    ; R4 := R4["0x325CED7F"]
- 74 [-]: GETGLOBAL R5 K15       ; R5 := mMovie
- 75 [-]: GETUPVAL  R6 U7        ; R6 := U7
- 76 [-]: GETTABLE  R7 R0 K23    ; R7 := R0["CodexEntry"]
- 77 [-]: LOADK     R8 K20       ; R8 := 1
- 78 [-]: GETUPVAL  R9 U8        ; R9 := U8
- 79 [-]: GETUPVAL  R10 U9       ; R10 := U9
- 80 [-]: CALL      R4 7 2       ; R4 := R4(R5,R6,R7,R8,R9,R10)
- 81 [-]: LOADK     R5 K26       ; R5 := "</font></p>"
- 82 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
- 83 [-]: SETTABLE  R2 K3 R3     ; R2["gToolTip"] := R3
- 84 [-]: RETURN    R0 1         ; return 
+ 68 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 87
+ 69 [-]: JMP       87           ; PC := 87
+ 70 [-]: GETUPVAL  R2 U6        ; R2 := U6
+ 71 [-]: EQ        1 R2 K1      ; if R2 == nil then PC := 87
+ 72 [-]: JMP       87           ; PC := 87
+ 73 [-]: GETGLOBAL R2 K2        ; R2 := _T
+ 74 [-]: LOADK     R3 K24       ; R3 := "<p><font >"
+ 75 [-]: GETUPVAL  R4 U7        ; R4 := U7
+ 76 [-]: GETTABLE  R4 R4 K25    ; R4 := R4["0x325CED7F"]
+ 77 [-]: GETGLOBAL R5 K15       ; R5 := mMovie
+ 78 [-]: GETUPVAL  R6 U8        ; R6 := U8
+ 79 [-]: GETTABLE  R7 R0 K23    ; R7 := R0["CodexEntry"]
+ 80 [-]: LOADK     R8 K20       ; R8 := 1
+ 81 [-]: GETUPVAL  R9 U9        ; R9 := U9
+ 82 [-]: GETUPVAL  R10 U6       ; R10 := U6
+ 83 [-]: CALL      R4 7 2       ; R4 := R4(R5,R6,R7,R8,R9,R10)
+ 84 [-]: LOADK     R5 K26       ; R5 := "</font></p>"
+ 85 [-]: CONCAT    R3 R3 R5     ; R3 := R3 .. R4 .. R5
+ 86 [-]: SETTABLE  R2 K3 R3     ; R2["gToolTip"] := R3
+ 87 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #44.1.4:
