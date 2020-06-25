@@ -1,4 +1,4 @@
-code size: 515
+code size: 518
 code size: 95
 code size: 68
 code size: 63
@@ -235,384 +235,387 @@ code size: 59
 141 [-]: LOADK     R35 K50      ; R35 := "/Lotus/Interface/RailjackSystems.swf"
 142 [-]: CALL      R34 2 2      ; R34 := R34(R35)
 143 [-]: GETGLOBAL R35 K26      ; R35 := 0x2C00D429
-144 [-]: LOADK     R36 K51      ; R36 := "/Lotus/Interface/Intrinsics.swf"
-145 [-]: CALL      R35 2 0      ; R35,... := R35(R36)
-146 [-]: SETLIST   R15 0 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 0
-147 [-]: NEWTABLE  R16 0 2      ; R16 := {}
-148 [-]: SETTABLE  R16 K52 K53  ; R16["InitLabelWidth"] := 25
-149 [-]: NEWTABLE  R17 0 2      ; R17 := {}
-150 [-]: SETTABLE  R17 K55 K56  ; R17["Width"] := 232
-151 [-]: SETTABLE  R17 K57 K58  ; R17["Height"] := 162
-152 [-]: SETTABLE  R16 K54 R17  ; R16["ItemDimensions"] := R17
-153 [-]: LOADK     R17 K60      ; R17 := 1
-154 [-]: SETGLOBAL R17 K59      ; LABEL_TYPE_CREDITS := R17
-155 [-]: LOADK     R17 K62      ; R17 := 2
-156 [-]: SETGLOBAL R17 K61      ; LABEL_TYPE_PLATINUM := R17
-157 [-]: LOADK     R17 K64      ; R17 := 3
-158 [-]: SETGLOBAL R17 K63      ; LABEL_TYPE_CHECKMARK := R17
-159 [-]: LOADK     R17 K66      ; R17 := 4
-160 [-]: SETGLOBAL R17 K65      ; LABEL_TYPE_STEAM := R17
-161 [-]: LOADK     R17 K68      ; R17 := 5
-162 [-]: SETGLOBAL R17 K67      ; LABEL_TYPE_PREVIEW := R17
-163 [-]: LOADK     R17 K70      ; R17 := 6
-164 [-]: SETGLOBAL R17 K69      ; LABEL_TYPE_REPUTATION := R17
-165 [-]: LOADK     R17 K72      ; R17 := 7
-166 [-]: SETGLOBAL R17 K71      ; LABEL_TYPE_DUCATS := R17
-167 [-]: LOADK     R17 K74      ; R17 := 8
-168 [-]: SETGLOBAL R17 K73      ; LABEL_TYPE_TIMER := R17
-169 [-]: LOADK     R17 K76      ; R17 := 9
-170 [-]: SETGLOBAL R17 K75      ; LABEL_TYPE_OSTRON_ITEM := R17
-171 [-]: LOADK     R17 K78      ; R17 := 10
-172 [-]: SETGLOBAL R17 K77      ; LABEL_TYPE_MISC_ITEM := R17
-173 [-]: LOADK     R17 K80      ; R17 := 11
-174 [-]: SETGLOBAL R17 K79      ; LABEL_TYPE_FOCUS := R17
-175 [-]: LOADK     R17 K82      ; R17 := 12
-176 [-]: SETGLOBAL R17 K81      ; LABEL_TYPE_ENDO := R17
-177 [-]: LOADK     R17 K84      ; R17 := 13
-178 [-]: SETGLOBAL R17 K83      ; LABEL_TYPE_RESEARCHED := R17
-179 [-]: LOADK     R17 K86      ; R17 := 14
-180 [-]: SETGLOBAL R17 K85      ; LABEL_TYPE_CLAN_XP := R17
-181 [-]: LOADK     R17 K88      ; R17 := 15
-182 [-]: SETGLOBAL R17 K87      ; LABEL_TYPE_CRAFTED := R17
-183 [-]: LOADK     R17 K90      ; R17 := 16
-184 [-]: SETGLOBAL R17 K89      ; LABEL_TYPE_RECIPES := R17
-185 [-]: LOADK     R17 K92      ; R17 := 17
-186 [-]: SETGLOBAL R17 K91      ; LABEL_TYPE_UNIQUE_TEXT := R17
-187 [-]: LOADK     R17 K94      ; R17 := 18
-188 [-]: SETGLOBAL R17 K93      ; LABEL_TYPE_NEW := R17
-189 [-]: LOADK     R17 K96      ; R17 := 19
-190 [-]: SETGLOBAL R17 K95      ; LABEL_TYPE_LIMITED := R17
-191 [-]: LOADK     R17 K98      ; R17 := 20
-192 [-]: SETGLOBAL R17 K97      ; LABEL_TYPE_PAUSED := R17
-193 [-]: LOADK     R17 K100     ; R17 := 21
-194 [-]: SETGLOBAL R17 K99      ; LABEL_TYPE_MASTERY := R17
-195 [-]: LOADK     R17 K102     ; R17 := 22
-196 [-]: SETGLOBAL R17 K101     ; LABEL_TYPE_POLARIZED := R17
-197 [-]: LOADK     R17 K104     ; R17 := 23
-198 [-]: SETGLOBAL R17 K103     ; LABEL_TYPE_TRADEABLE := R17
-199 [-]: LOADK     R17 K106     ; R17 := 24
-200 [-]: SETGLOBAL R17 K105     ; LABEL_TYPE_CATALYST := R17
-201 [-]: LOADK     R17 K53      ; R17 := 25
-202 [-]: SETGLOBAL R17 K107     ; LABEL_TYPE_REACTOR := R17
-203 [-]: LOADK     R17 K109     ; R17 := 26
-204 [-]: SETGLOBAL R17 K108     ; LABEL_TYPE_WEAPON_EXILUS := R17
-205 [-]: LOADK     R17 K111     ; R17 := 27
-206 [-]: SETGLOBAL R17 K110     ; LABEL_TYPE_POWERSUIT_EXILUS := R17
-207 [-]: LOADK     R17 K113     ; R17 := 28
-208 [-]: SETGLOBAL R17 K112     ; LABEL_TYPE_FOCUS_LENS := R17
-209 [-]: LOADK     R17 K115     ; R17 := 29
-210 [-]: SETGLOBAL R17 K114     ; LABEL_TYPE_REQUIRED_MASTERY := R17
-211 [-]: LOADK     R17 K117     ; R17 := 30
-212 [-]: SETGLOBAL R17 K116     ; LABEL_TYPE_REUSABLE_BLUEPRINT := R17
-213 [-]: LOADK     R17 K119     ; R17 := 31
-214 [-]: SETGLOBAL R17 K118     ; LABEL_TYPE_RIGHT_TEXT := R17
-215 [-]: LOADK     R17 K121     ; R17 := 32
-216 [-]: SETGLOBAL R17 K120     ; LABEL_TYPE_LOCK := R17
-217 [-]: LOADK     R17 K123     ; R17 := 33
-218 [-]: SETGLOBAL R17 K122     ; LABEL_TYPE_DISCORD := R17
-219 [-]: LOADK     R17 K125     ; R17 := 34
-220 [-]: SETGLOBAL R17 K124     ; LABEL_TYPE_FAVORITE := R17
-221 [-]: LOADK     R17 K127     ; R17 := 35
-222 [-]: SETGLOBAL R17 K126     ; LABEL_TYPE_CAMERA := R17
-223 [-]: LOADK     R17 K129     ; R17 := 36
-224 [-]: SETGLOBAL R17 K128     ; LABEL_TYPE_CREW_SHIP_FUSION_POINTS := R17
-225 [-]: LOADK     R17 K131     ; R17 := 37
-226 [-]: SETGLOBAL R17 K130     ; LABEL_TYPE_ARCANE_REPROC := R17
-227 [-]: GETGLOBAL R17 K97      ; R17 := LABEL_TYPE_PAUSED
-228 [-]: SETGLOBAL R17 K132     ; FULL_LABEL_THRESHOLD := R17
-229 [-]: LOADK     R17 K134     ; R17 := 300
-230 [-]: SETGLOBAL R17 K133     ; PQ_FIRST_LAYER := R17
-231 [-]: LOADK     R17 K136     ; R17 := 315
-232 [-]: SETGLOBAL R17 K135     ; PQ_LAST_LAYER := R17
-233 [-]: LOADK     R17 K117     ; R17 := 30
-234 [-]: NEWTABLE  R18 0 14     ; R18 := {}
-235 [-]: GETGLOBAL R19 K59      ; R19 := LABEL_TYPE_CREDITS
-236 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-237 [-]: GETGLOBAL R19 K61      ; R19 := LABEL_TYPE_PLATINUM
-238 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-239 [-]: GETGLOBAL R19 K71      ; R19 := LABEL_TYPE_DUCATS
-240 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-241 [-]: GETGLOBAL R19 K63      ; R19 := LABEL_TYPE_CHECKMARK
-242 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-243 [-]: GETGLOBAL R19 K67      ; R19 := LABEL_TYPE_PREVIEW
-244 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-245 [-]: GETGLOBAL R19 K81      ; R19 := LABEL_TYPE_ENDO
-246 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-247 [-]: GETGLOBAL R19 K83      ; R19 := LABEL_TYPE_RESEARCHED
-248 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-249 [-]: GETGLOBAL R19 K73      ; R19 := LABEL_TYPE_TIMER
-250 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-251 [-]: GETGLOBAL R19 K97      ; R19 := LABEL_TYPE_PAUSED
-252 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-253 [-]: GETGLOBAL R19 K120     ; R19 := LABEL_TYPE_LOCK
-254 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-255 [-]: GETGLOBAL R19 K124     ; R19 := LABEL_TYPE_FAVORITE
-256 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-257 [-]: GETGLOBAL R19 K126     ; R19 := LABEL_TYPE_CAMERA
-258 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-259 [-]: GETGLOBAL R19 K93      ; R19 := LABEL_TYPE_NEW
-260 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-261 [-]: GETGLOBAL R19 K95      ; R19 := LABEL_TYPE_LIMITED
-262 [-]: SETTABLE  R18 R19 K137 ; R18[R19] := "0x1"
-263 [-]: CLOSURE   R19 0        ; R19 := closure(Function #1)
-264 [-]: SETGLOBAL R19 K138     ; HandleHudScale := R19
-265 [-]: SETGLOBAL R19 K139     ; 0x7262C22B := R19
-266 [-]: CLOSURE   R19 1        ; R19 := closure(Function #2)
-267 [-]: MOVE      R0 R0        ; R0 := R0
-268 [-]: SETGLOBAL R19 K140     ; GetCraftingPostErrorMessage := R19
-269 [-]: SETGLOBAL R19 K141     ; 0x49ECD643 := R19
-270 [-]: CLOSURE   R19 2        ; R19 := closure(Function #3)
-271 [-]: MOVE      R0 R2        ; R0 := R2
-272 [-]: SETGLOBAL R19 K142     ; PlayTransmission := R19
-273 [-]: SETGLOBAL R19 K143     ; 0x5EF0016 := R19
-274 [-]: CLOSURE   R19 3        ; R19 := closure(Function #4)
-275 [-]: CLOSURE   R20 4        ; R20 := closure(Function #5)
-276 [-]: MOVE      R0 R19       ; R0 := R19
-277 [-]: CLOSURE   R21 5        ; R21 := closure(Function #6)
-278 [-]: MOVE      R0 R20       ; R0 := R20
-279 [-]: MOVE      R0 R7        ; R0 := R7
-280 [-]: MOVE      R0 R6        ; R0 := R6
-281 [-]: SETGLOBAL R21 K144     ; UpdateMaskingMaterial := R21
-282 [-]: SETGLOBAL R21 K145     ; 0xDCCCB2ED := R21
-283 [-]: CLOSURE   R21 6        ; R21 := closure(Function #7)
-284 [-]: SETGLOBAL R21 K146     ; StreamVignette := R21
-285 [-]: SETGLOBAL R21 K147     ; 0x4FD7CAE4 := R21
-286 [-]: CLOSURE   R21 7        ; R21 := closure(Function #8)
-287 [-]: SETGLOBAL R21 K148     ; GetFishDeco := R21
-288 [-]: SETGLOBAL R21 K149     ; 0x2AA39D4A := R21
-289 [-]: CLOSURE   R21 8        ; R21 := closure(Function #9)
-290 [-]: MOVE      R0 R0        ; R0 := R0
-291 [-]: SETGLOBAL R21 K150     ; SetFishScale := R21
-292 [-]: SETGLOBAL R21 K151     ; 0x1EDEE469 := R21
-293 [-]: CLOSURE   R21 9        ; R21 := closure(Function #10)
-294 [-]: SETGLOBAL R21 K152     ; SetQuartersWallpaper := R21
-295 [-]: SETGLOBAL R21 K153     ; 0xB88F8ECA := R21
-296 [-]: CLOSURE   R21 10       ; R21 := closure(Function #11)
-297 [-]: CLOSURE   R22 11       ; R22 := closure(Function #12)
-298 [-]: MOVE      R0 R21       ; R0 := R21
-299 [-]: SETGLOBAL R22 K154     ; RestoreGridModMaterials := R22
-300 [-]: SETGLOBAL R22 K155     ; 0xDC605606 := R22
-301 [-]: CLOSURE   R22 12       ; R22 := closure(Function #13)
-302 [-]: MOVE      R0 R21       ; R0 := R21
-303 [-]: SETGLOBAL R22 K156     ; ClearGridModMaterials := R22
-304 [-]: SETGLOBAL R22 K157     ; 0x884C2835 := R22
-305 [-]: CLOSURE   R22 13       ; R22 := closure(Function #14)
-306 [-]: MOVE      R0 R0        ; R0 := R0
-307 [-]: SETGLOBAL R22 K158     ; GetPopupCoords := R22
-308 [-]: SETGLOBAL R22 K159     ; 0x30905ECB := R22
-309 [-]: CLOSURE   R22 14       ; R22 := closure(Function #15)
-310 [-]: MOVE      R0 R3        ; R0 := R3
-311 [-]: CLOSURE   R23 15       ; R23 := closure(Function #16)
-312 [-]: MOVE      R0 R22       ; R0 := R22
-313 [-]: SETGLOBAL R23 K160     ; GetInfoForLabel := R23
-314 [-]: SETGLOBAL R23 K161     ; 0xB102F9B3 := R23
-315 [-]: CLOSURE   R23 16       ; R23 := closure(Function #17)
-316 [-]: MOVE      R0 R0        ; R0 := R0
-317 [-]: CLOSURE   R24 17       ; R24 := closure(Function #18)
-318 [-]: MOVE      R0 R23       ; R0 := R23
-319 [-]: SETGLOBAL R24 K162     ; DrawPriceLabel := R24
-320 [-]: SETGLOBAL R24 K163     ; 0x5A91A0A9 := R24
-321 [-]: CLOSURE   R24 18       ; R24 := closure(Function #19)
-322 [-]: CLOSURE   R25 19       ; R25 := closure(Function #20)
-323 [-]: MOVE      R0 R24       ; R0 := R24
-324 [-]: SETGLOBAL R25 K164     ; GetPriceLabelClip := R25
-325 [-]: SETGLOBAL R25 K165     ; 0x971CF346 := R25
-326 [-]: CLOSURE   R25 20       ; R25 := closure(Function #21)
-327 [-]: MOVE      R0 R0        ; R0 := R0
-328 [-]: CLOSURE   R26 21       ; R26 := closure(Function #22)
-329 [-]: MOVE      R0 R25       ; R0 := R25
-330 [-]: SETGLOBAL R26 K166     ; SetItemInfoPopupRect := R26
-331 [-]: SETGLOBAL R26 K167     ; 0x4C8FC6DC := R26
-332 [-]: CLOSURE   R26 22       ; R26 := closure(Function #23)
-333 [-]: MOVE      R0 R0        ; R0 := R0
-334 [-]: MOVE      R0 R1        ; R0 := R1
-335 [-]: MOVE      R0 R25       ; R0 := R25
-336 [-]: MOVE      R0 R18       ; R0 := R18
-337 [-]: CLOSURE   R27 23       ; R27 := closure(Function #24)
-338 [-]: MOVE      R0 R26       ; R0 := R26
-339 [-]: SETGLOBAL R27 K168     ; OnGridItemFocusChanged := R27
-340 [-]: SETGLOBAL R27 K169     ; 0x4D8419E := R27
-341 [-]: CLOSURE   R27 24       ; R27 := closure(Function #25)
-342 [-]: MOVE      R0 R0        ; R0 := R0
-343 [-]: CLOSURE   R28 25       ; R28 := closure(Function #26)
-344 [-]: MOVE      R0 R27       ; R0 := R27
-345 [-]: SETGLOBAL R28 K170     ; FitGridToWidth := R28
-346 [-]: SETGLOBAL R28 K171     ; 0x69D4488D := R28
-347 [-]: CLOSURE   R28 26       ; R28 := closure(Function #27)
-348 [-]: MOVE      R0 R0        ; R0 := R0
-349 [-]: CLOSURE   R29 27       ; R29 := closure(Function #28)
-350 [-]: MOVE      R0 R27       ; R0 := R27
-351 [-]: MOVE      R0 R28       ; R0 := R28
-352 [-]: SETGLOBAL R29 K172     ; ResizeGrid := R29
-353 [-]: SETGLOBAL R29 K173     ; 0x4A1CEFB6 := R29
-354 [-]: CLOSURE   R29 28       ; R29 := closure(Function #29)
-355 [-]: MOVE      R0 R0        ; R0 := R0
-356 [-]: SETGLOBAL R29 K174     ; InitializeGridItem := R29
-357 [-]: SETGLOBAL R29 K175     ; 0xC4543918 := R29
-358 [-]: CLOSURE   R29 29       ; R29 := closure(Function #30)
-359 [-]: MOVE      R0 R16       ; R0 := R16
-360 [-]: MOVE      R0 R0        ; R0 := R0
-361 [-]: SETGLOBAL R29 K176     ; OnGridItemCreated := R29
-362 [-]: SETGLOBAL R29 K177     ; 0x3B9C2B24 := R29
-363 [-]: CLOSURE   R29 30       ; R29 := closure(Function #31)
-364 [-]: CLOSURE   R30 31       ; R30 := closure(Function #32)
-365 [-]: MOVE      R0 R29       ; R0 := R29
-366 [-]: SETGLOBAL R30 K178     ; GetArcaneRankString := R30
-367 [-]: SETGLOBAL R30 K179     ; 0x77A1FEE9 := R30
-368 [-]: CLOSURE   R30 32       ; R30 := closure(Function #33)
-369 [-]: MOVE      R0 R2        ; R0 := R2
-370 [-]: MOVE      R0 R12       ; R0 := R12
-371 [-]: MOVE      R0 R13       ; R0 := R13
-372 [-]: MOVE      R0 R29       ; R0 := R29
-373 [-]: MOVE      R0 R0        ; R0 := R0
-374 [-]: CLOSURE   R31 33       ; R31 := closure(Function #34)
-375 [-]: MOVE      R0 R30       ; R0 := R30
-376 [-]: SETGLOBAL R31 K180     ; GetGridItemName := R31
-377 [-]: SETGLOBAL R31 K181     ; 0x35D16A6E := R31
-378 [-]: CLOSURE   R31 34       ; R31 := closure(Function #35)
-379 [-]: MOVE      R0 R11       ; R0 := R11
-380 [-]: MOVE      R0 R5        ; R0 := R5
-381 [-]: MOVE      R0 R2        ; R0 := R2
-382 [-]: MOVE      R0 R22       ; R0 := R22
-383 [-]: MOVE      R0 R0        ; R0 := R0
-384 [-]: MOVE      R0 R14       ; R0 := R14
-385 [-]: MOVE      R0 R8        ; R0 := R8
-386 [-]: MOVE      R0 R9        ; R0 := R9
-387 [-]: CLOSURE   R32 35       ; R32 := closure(Function #36)
-388 [-]: MOVE      R0 R31       ; R0 := R31
-389 [-]: SETGLOBAL R32 K182     ; GetGridItemTags := R32
-390 [-]: SETGLOBAL R32 K183     ; 0x14D94FB2 := R32
-391 [-]: CLOSURE   R32 36       ; R32 := closure(Function #37)
-392 [-]: MOVE      R0 R18       ; R0 := R18
-393 [-]: SETGLOBAL R32 K184     ; IsGridLabelType := R32
-394 [-]: SETGLOBAL R32 K185     ; 0x42F4C3D9 := R32
-395 [-]: CLOSURE   R32 37       ; R32 := closure(Function #38)
-396 [-]: MOVE      R0 R30       ; R0 := R30
-397 [-]: MOVE      R0 R31       ; R0 := R31
-398 [-]: MOVE      R0 R24       ; R0 := R24
-399 [-]: MOVE      R0 R23       ; R0 := R23
-400 [-]: MOVE      R0 R18       ; R0 := R18
-401 [-]: MOVE      R0 R0        ; R0 := R0
-402 [-]: MOVE      R0 R10       ; R0 := R10
-403 [-]: MOVE      R0 R1        ; R0 := R1
-404 [-]: MOVE      R0 R26       ; R0 := R26
-405 [-]: SETGLOBAL R32 K186     ; DrawGridItem := R32
-406 [-]: SETGLOBAL R32 K187     ; 0x59A3B972 := R32
-407 [-]: CLOSURE   R32 38       ; R32 := closure(Function #39)
-408 [-]: MOVE      R0 R3        ; R0 := R3
-409 [-]: SETGLOBAL R32 K188     ; SetupLoginLighting := R32
-410 [-]: SETGLOBAL R32 K189     ; 0xE0345D7 := R32
-411 [-]: CLOSURE   R32 39       ; R32 := closure(Function #40)
-412 [-]: CLOSURE   R33 40       ; R33 := closure(Function #41)
-413 [-]: MOVE      R0 R32       ; R0 := R32
-414 [-]: SETGLOBAL R33 K190     ; DrawSeparator := R33
-415 [-]: SETGLOBAL R33 K191     ; 0xC9168CC := R33
-416 [-]: CLOSURE   R33 41       ; R33 := closure(Function #42)
-417 [-]: MOVE      R0 R33       ; R0 := R33
-418 [-]: CLOSURE   R34 42       ; R34 := closure(Function #43)
-419 [-]: MOVE      R0 R33       ; R0 := R33
-420 [-]: SETGLOBAL R34 K192     ; PulseColor := R34
-421 [-]: SETGLOBAL R34 K193     ; 0xFA804B1E := R34
-422 [-]: CLOSURE   R34 43       ; R34 := closure(Function #44)
-423 [-]: MOVE      R0 R0        ; R0 := R0
-424 [-]: MOVE      R0 R3        ; R0 := R3
-425 [-]: MOVE      R0 R5        ; R0 := R5
-426 [-]: MOVE      R0 R4        ; R0 := R4
-427 [-]: SETGLOBAL R34 K194     ; GetItemInfoDesc := R34
-428 [-]: SETGLOBAL R34 K195     ; 0x23DB6824 := R34
-429 [-]: NEWTABLE  R34 3 0      ; R34 := {}
-430 [-]: NEWTABLE  R35 2 0      ; R35 := {}
-431 [-]: LOADK     R36 K196     ; R36 := 2047
-432 [-]: LOADK     R37 K197     ; R37 := 192
-433 [-]: SETLIST   R35 2 1      ; R35[(1-1)*FPF+i] := R(35+i), 1 <= i <= 2
-434 [-]: NEWTABLE  R36 2 0      ; R36 := {}
-435 [-]: LOADK     R37 K198     ; R37 := 65535
-436 [-]: LOADK     R38 K199     ; R38 := 224
-437 [-]: SETLIST   R36 2 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 2
-438 [-]: NEWTABLE  R37 2 0      ; R37 := {}
-439 [-]: LOADK     R38 K200     ; R38 := 2097151
-440 [-]: LOADK     R39 K201     ; R39 := 240
-441 [-]: SETLIST   R37 2 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 2
-442 [-]: SETLIST   R34 3 1      ; R34[(1-1)*FPF+i] := R(34+i), 1 <= i <= 3
-443 [-]: CLOSURE   R35 44       ; R35 := closure(Function #45)
-444 [-]: MOVE      R0 R34       ; R0 := R34
-445 [-]: CLOSURE   R36 45       ; R36 := closure(Function #46)
-446 [-]: MOVE      R0 R35       ; R0 := R35
-447 [-]: SETGLOBAL R36 K202     ; UTF8 := R36
-448 [-]: SETGLOBAL R36 K203     ; 0x472044CC := R36
-449 [-]: LOADNIL   R36 R36      ; R36 := nil
-450 [-]: CLOSURE   R37 46       ; R37 := closure(Function #47)
-451 [-]: MOVE      R0 R36       ; R0 := R36
-452 [-]: SETGLOBAL R37 K204     ; EnToLower := R37
-453 [-]: SETGLOBAL R37 K205     ; 0xCECDECDE := R37
-454 [-]: CLOSURE   R37 47       ; R37 := closure(Function #48)
-455 [-]: SETGLOBAL R37 K206     ; OnHyperlinkPressed := R37
-456 [-]: SETGLOBAL R37 K207     ; 0xA28B5FDC := R37
-457 [-]: CLOSURE   R37 48       ; R37 := closure(Function #49)
-458 [-]: SETGLOBAL R37 K208     ; ScaleTextToFit := R37
-459 [-]: SETGLOBAL R37 K209     ; 0x51B3C238 := R37
-460 [-]: CLOSURE   R37 49       ; R37 := closure(Function #50)
-461 [-]: CLOSURE   R38 50       ; R38 := closure(Function #51)
-462 [-]: SETGLOBAL R38 K210     ; UpdateRarityBar := R38
-463 [-]: SETGLOBAL R38 K211     ; 0xF01080E5 := R38
-464 [-]: CLOSURE   R38 51       ; R38 := closure(Function #52)
-465 [-]: MOVE      R0 R37       ; R0 := R37
-466 [-]: SETGLOBAL R38 K212     ; DrawRarityBar := R38
-467 [-]: SETGLOBAL R38 K213     ; 0x8AB5D821 := R38
-468 [-]: CLOSURE   R38 52       ; R38 := closure(Function #53)
-469 [-]: MOVE      R0 R15       ; R0 := R15
-470 [-]: SETGLOBAL R38 K214     ; ToggleScreensToHide := R38
-471 [-]: SETGLOBAL R38 K215     ; 0x787571E1 := R38
-472 [-]: CLOSURE   R38 53       ; R38 := closure(Function #54)
-473 [-]: SETGLOBAL R38 K216     ; SliceLichIcon := R38
-474 [-]: SETGLOBAL R38 K217     ; 0x8D868BE8 := R38
-475 [-]: CLOSURE   R38 54       ; R38 := closure(Function #55)
-476 [-]: CLOSURE   R39 55       ; R39 := closure(Function #56)
-477 [-]: MOVE      R0 R17       ; R0 := R17
-478 [-]: MOVE      R40 R1       ; R40 := R1
-479 [-]: CLOSURE   R41 56       ; R41 := closure(Function #57)
-480 [-]: MOVE      R0 R40       ; R0 := R40
-481 [-]: MOVE      R0 R17       ; R0 := R17
-482 [-]: MOVE      R0 R38       ; R0 := R38
-483 [-]: MOVE      R0 R39       ; R0 := R39
-484 [-]: MOVE      R0 R0        ; R0 := R0
-485 [-]: CLOSURE   R42 57       ; R42 := closure(Function #58)
-486 [-]: MOVE      R0 R17       ; R0 := R17
-487 [-]: MOVE      R0 R41       ; R0 := R41
-488 [-]: SETGLOBAL R42 K218     ; WreckageLimitCheck := R42
-489 [-]: SETGLOBAL R42 K219     ; 0x36B73741 := R42
-490 [-]: CLOSURE   R42 58       ; R42 := closure(Function #59)
-491 [-]: MOVE      R0 R32       ; R0 := R32
-492 [-]: MOVE      R0 R0        ; R0 := R0
-493 [-]: MOVE      R0 R25       ; R0 := R25
-494 [-]: SETGLOBAL R42 K220     ; InitializeNemesisAttemptInfo := R42
-495 [-]: SETGLOBAL R42 K221     ; 0x86CBA754 := R42
-496 [-]: CLOSURE   R42 59       ; R42 := closure(Function #60)
-497 [-]: MOVE      R0 R2        ; R0 := R2
-498 [-]: MOVE      R0 R0        ; R0 := R0
-499 [-]: SETGLOBAL R42 K222     ; GetInnateDamageName := R42
-500 [-]: SETGLOBAL R42 K223     ; 0xDECC96BE := R42
-501 [-]: CLOSURE   R42 60       ; R42 := closure(Function #61)
-502 [-]: SETGLOBAL R42 K224     ; OnMuseumStreamed := R42
-503 [-]: SETGLOBAL R42 K225     ; 0x39454BDB := R42
-504 [-]: CLOSURE   R42 61       ; R42 := closure(Function #62)
-505 [-]: SETGLOBAL R42 K226     ; StreamMuseum := R42
-506 [-]: SETGLOBAL R42 K227     ; 0x69DC794F := R42
-507 [-]: CLOSURE   R42 62       ; R42 := closure(Function #63)
-508 [-]: CLOSURE   R43 63       ; R43 := closure(Function #64)
-509 [-]: MOVE      R0 R42       ; R0 := R42
-510 [-]: SETGLOBAL R43 K228     ; GetTips := R43
-511 [-]: SETGLOBAL R43 K229     ; 0x8618A508 := R43
-512 [-]: CLOSURE   R43 64       ; R43 := closure(Function #65)
-513 [-]: SETGLOBAL R43 K230     ; ResetModVisibleRangeMaterials := R43
-514 [-]: SETGLOBAL R43 K231     ; 0x19158BD6 := R43
-515 [-]: RETURN    R0 1         ; return 
+144 [-]: LOADK     R36 K51      ; R36 := "/Lotus/Interface/RailjackResources.swf"
+145 [-]: CALL      R35 2 2      ; R35 := R35(R36)
+146 [-]: GETGLOBAL R36 K26      ; R36 := 0x2C00D429
+147 [-]: LOADK     R37 K52      ; R37 := "/Lotus/Interface/Intrinsics.swf"
+148 [-]: CALL      R36 2 0      ; R36,... := R36(R37)
+149 [-]: SETLIST   R15 0 1      ; R15[(1-1)*FPF+i] := R(15+i), 1 <= i <= 0
+150 [-]: NEWTABLE  R16 0 2      ; R16 := {}
+151 [-]: SETTABLE  R16 K53 K54  ; R16["InitLabelWidth"] := 25
+152 [-]: NEWTABLE  R17 0 2      ; R17 := {}
+153 [-]: SETTABLE  R17 K56 K57  ; R17["Width"] := 232
+154 [-]: SETTABLE  R17 K58 K59  ; R17["Height"] := 162
+155 [-]: SETTABLE  R16 K55 R17  ; R16["ItemDimensions"] := R17
+156 [-]: LOADK     R17 K61      ; R17 := 1
+157 [-]: SETGLOBAL R17 K60      ; LABEL_TYPE_CREDITS := R17
+158 [-]: LOADK     R17 K63      ; R17 := 2
+159 [-]: SETGLOBAL R17 K62      ; LABEL_TYPE_PLATINUM := R17
+160 [-]: LOADK     R17 K65      ; R17 := 3
+161 [-]: SETGLOBAL R17 K64      ; LABEL_TYPE_CHECKMARK := R17
+162 [-]: LOADK     R17 K67      ; R17 := 4
+163 [-]: SETGLOBAL R17 K66      ; LABEL_TYPE_STEAM := R17
+164 [-]: LOADK     R17 K69      ; R17 := 5
+165 [-]: SETGLOBAL R17 K68      ; LABEL_TYPE_PREVIEW := R17
+166 [-]: LOADK     R17 K71      ; R17 := 6
+167 [-]: SETGLOBAL R17 K70      ; LABEL_TYPE_REPUTATION := R17
+168 [-]: LOADK     R17 K73      ; R17 := 7
+169 [-]: SETGLOBAL R17 K72      ; LABEL_TYPE_DUCATS := R17
+170 [-]: LOADK     R17 K75      ; R17 := 8
+171 [-]: SETGLOBAL R17 K74      ; LABEL_TYPE_TIMER := R17
+172 [-]: LOADK     R17 K77      ; R17 := 9
+173 [-]: SETGLOBAL R17 K76      ; LABEL_TYPE_OSTRON_ITEM := R17
+174 [-]: LOADK     R17 K79      ; R17 := 10
+175 [-]: SETGLOBAL R17 K78      ; LABEL_TYPE_MISC_ITEM := R17
+176 [-]: LOADK     R17 K81      ; R17 := 11
+177 [-]: SETGLOBAL R17 K80      ; LABEL_TYPE_FOCUS := R17
+178 [-]: LOADK     R17 K83      ; R17 := 12
+179 [-]: SETGLOBAL R17 K82      ; LABEL_TYPE_ENDO := R17
+180 [-]: LOADK     R17 K85      ; R17 := 13
+181 [-]: SETGLOBAL R17 K84      ; LABEL_TYPE_RESEARCHED := R17
+182 [-]: LOADK     R17 K87      ; R17 := 14
+183 [-]: SETGLOBAL R17 K86      ; LABEL_TYPE_CLAN_XP := R17
+184 [-]: LOADK     R17 K89      ; R17 := 15
+185 [-]: SETGLOBAL R17 K88      ; LABEL_TYPE_CRAFTED := R17
+186 [-]: LOADK     R17 K91      ; R17 := 16
+187 [-]: SETGLOBAL R17 K90      ; LABEL_TYPE_RECIPES := R17
+188 [-]: LOADK     R17 K93      ; R17 := 17
+189 [-]: SETGLOBAL R17 K92      ; LABEL_TYPE_UNIQUE_TEXT := R17
+190 [-]: LOADK     R17 K95      ; R17 := 18
+191 [-]: SETGLOBAL R17 K94      ; LABEL_TYPE_NEW := R17
+192 [-]: LOADK     R17 K97      ; R17 := 19
+193 [-]: SETGLOBAL R17 K96      ; LABEL_TYPE_LIMITED := R17
+194 [-]: LOADK     R17 K99      ; R17 := 20
+195 [-]: SETGLOBAL R17 K98      ; LABEL_TYPE_PAUSED := R17
+196 [-]: LOADK     R17 K101     ; R17 := 21
+197 [-]: SETGLOBAL R17 K100     ; LABEL_TYPE_MASTERY := R17
+198 [-]: LOADK     R17 K103     ; R17 := 22
+199 [-]: SETGLOBAL R17 K102     ; LABEL_TYPE_POLARIZED := R17
+200 [-]: LOADK     R17 K105     ; R17 := 23
+201 [-]: SETGLOBAL R17 K104     ; LABEL_TYPE_TRADEABLE := R17
+202 [-]: LOADK     R17 K107     ; R17 := 24
+203 [-]: SETGLOBAL R17 K106     ; LABEL_TYPE_CATALYST := R17
+204 [-]: LOADK     R17 K54      ; R17 := 25
+205 [-]: SETGLOBAL R17 K108     ; LABEL_TYPE_REACTOR := R17
+206 [-]: LOADK     R17 K110     ; R17 := 26
+207 [-]: SETGLOBAL R17 K109     ; LABEL_TYPE_WEAPON_EXILUS := R17
+208 [-]: LOADK     R17 K112     ; R17 := 27
+209 [-]: SETGLOBAL R17 K111     ; LABEL_TYPE_POWERSUIT_EXILUS := R17
+210 [-]: LOADK     R17 K114     ; R17 := 28
+211 [-]: SETGLOBAL R17 K113     ; LABEL_TYPE_FOCUS_LENS := R17
+212 [-]: LOADK     R17 K116     ; R17 := 29
+213 [-]: SETGLOBAL R17 K115     ; LABEL_TYPE_REQUIRED_MASTERY := R17
+214 [-]: LOADK     R17 K118     ; R17 := 30
+215 [-]: SETGLOBAL R17 K117     ; LABEL_TYPE_REUSABLE_BLUEPRINT := R17
+216 [-]: LOADK     R17 K120     ; R17 := 31
+217 [-]: SETGLOBAL R17 K119     ; LABEL_TYPE_RIGHT_TEXT := R17
+218 [-]: LOADK     R17 K122     ; R17 := 32
+219 [-]: SETGLOBAL R17 K121     ; LABEL_TYPE_LOCK := R17
+220 [-]: LOADK     R17 K124     ; R17 := 33
+221 [-]: SETGLOBAL R17 K123     ; LABEL_TYPE_DISCORD := R17
+222 [-]: LOADK     R17 K126     ; R17 := 34
+223 [-]: SETGLOBAL R17 K125     ; LABEL_TYPE_FAVORITE := R17
+224 [-]: LOADK     R17 K128     ; R17 := 35
+225 [-]: SETGLOBAL R17 K127     ; LABEL_TYPE_CAMERA := R17
+226 [-]: LOADK     R17 K130     ; R17 := 36
+227 [-]: SETGLOBAL R17 K129     ; LABEL_TYPE_CREW_SHIP_FUSION_POINTS := R17
+228 [-]: LOADK     R17 K132     ; R17 := 37
+229 [-]: SETGLOBAL R17 K131     ; LABEL_TYPE_ARCANE_REPROC := R17
+230 [-]: GETGLOBAL R17 K98      ; R17 := LABEL_TYPE_PAUSED
+231 [-]: SETGLOBAL R17 K133     ; FULL_LABEL_THRESHOLD := R17
+232 [-]: LOADK     R17 K135     ; R17 := 300
+233 [-]: SETGLOBAL R17 K134     ; PQ_FIRST_LAYER := R17
+234 [-]: LOADK     R17 K137     ; R17 := 315
+235 [-]: SETGLOBAL R17 K136     ; PQ_LAST_LAYER := R17
+236 [-]: LOADK     R17 K118     ; R17 := 30
+237 [-]: NEWTABLE  R18 0 14     ; R18 := {}
+238 [-]: GETGLOBAL R19 K60      ; R19 := LABEL_TYPE_CREDITS
+239 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+240 [-]: GETGLOBAL R19 K62      ; R19 := LABEL_TYPE_PLATINUM
+241 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+242 [-]: GETGLOBAL R19 K72      ; R19 := LABEL_TYPE_DUCATS
+243 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+244 [-]: GETGLOBAL R19 K64      ; R19 := LABEL_TYPE_CHECKMARK
+245 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+246 [-]: GETGLOBAL R19 K68      ; R19 := LABEL_TYPE_PREVIEW
+247 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+248 [-]: GETGLOBAL R19 K82      ; R19 := LABEL_TYPE_ENDO
+249 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+250 [-]: GETGLOBAL R19 K84      ; R19 := LABEL_TYPE_RESEARCHED
+251 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+252 [-]: GETGLOBAL R19 K74      ; R19 := LABEL_TYPE_TIMER
+253 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+254 [-]: GETGLOBAL R19 K98      ; R19 := LABEL_TYPE_PAUSED
+255 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+256 [-]: GETGLOBAL R19 K121     ; R19 := LABEL_TYPE_LOCK
+257 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+258 [-]: GETGLOBAL R19 K125     ; R19 := LABEL_TYPE_FAVORITE
+259 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+260 [-]: GETGLOBAL R19 K127     ; R19 := LABEL_TYPE_CAMERA
+261 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+262 [-]: GETGLOBAL R19 K94      ; R19 := LABEL_TYPE_NEW
+263 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+264 [-]: GETGLOBAL R19 K96      ; R19 := LABEL_TYPE_LIMITED
+265 [-]: SETTABLE  R18 R19 K138 ; R18[R19] := "0x1"
+266 [-]: CLOSURE   R19 0        ; R19 := closure(Function #1)
+267 [-]: SETGLOBAL R19 K139     ; HandleHudScale := R19
+268 [-]: SETGLOBAL R19 K140     ; 0x7262C22B := R19
+269 [-]: CLOSURE   R19 1        ; R19 := closure(Function #2)
+270 [-]: MOVE      R0 R0        ; R0 := R0
+271 [-]: SETGLOBAL R19 K141     ; GetCraftingPostErrorMessage := R19
+272 [-]: SETGLOBAL R19 K142     ; 0x49ECD643 := R19
+273 [-]: CLOSURE   R19 2        ; R19 := closure(Function #3)
+274 [-]: MOVE      R0 R2        ; R0 := R2
+275 [-]: SETGLOBAL R19 K143     ; PlayTransmission := R19
+276 [-]: SETGLOBAL R19 K144     ; 0x5EF0016 := R19
+277 [-]: CLOSURE   R19 3        ; R19 := closure(Function #4)
+278 [-]: CLOSURE   R20 4        ; R20 := closure(Function #5)
+279 [-]: MOVE      R0 R19       ; R0 := R19
+280 [-]: CLOSURE   R21 5        ; R21 := closure(Function #6)
+281 [-]: MOVE      R0 R20       ; R0 := R20
+282 [-]: MOVE      R0 R7        ; R0 := R7
+283 [-]: MOVE      R0 R6        ; R0 := R6
+284 [-]: SETGLOBAL R21 K145     ; UpdateMaskingMaterial := R21
+285 [-]: SETGLOBAL R21 K146     ; 0xDCCCB2ED := R21
+286 [-]: CLOSURE   R21 6        ; R21 := closure(Function #7)
+287 [-]: SETGLOBAL R21 K147     ; StreamVignette := R21
+288 [-]: SETGLOBAL R21 K148     ; 0x4FD7CAE4 := R21
+289 [-]: CLOSURE   R21 7        ; R21 := closure(Function #8)
+290 [-]: SETGLOBAL R21 K149     ; GetFishDeco := R21
+291 [-]: SETGLOBAL R21 K150     ; 0x2AA39D4A := R21
+292 [-]: CLOSURE   R21 8        ; R21 := closure(Function #9)
+293 [-]: MOVE      R0 R0        ; R0 := R0
+294 [-]: SETGLOBAL R21 K151     ; SetFishScale := R21
+295 [-]: SETGLOBAL R21 K152     ; 0x1EDEE469 := R21
+296 [-]: CLOSURE   R21 9        ; R21 := closure(Function #10)
+297 [-]: SETGLOBAL R21 K153     ; SetQuartersWallpaper := R21
+298 [-]: SETGLOBAL R21 K154     ; 0xB88F8ECA := R21
+299 [-]: CLOSURE   R21 10       ; R21 := closure(Function #11)
+300 [-]: CLOSURE   R22 11       ; R22 := closure(Function #12)
+301 [-]: MOVE      R0 R21       ; R0 := R21
+302 [-]: SETGLOBAL R22 K155     ; RestoreGridModMaterials := R22
+303 [-]: SETGLOBAL R22 K156     ; 0xDC605606 := R22
+304 [-]: CLOSURE   R22 12       ; R22 := closure(Function #13)
+305 [-]: MOVE      R0 R21       ; R0 := R21
+306 [-]: SETGLOBAL R22 K157     ; ClearGridModMaterials := R22
+307 [-]: SETGLOBAL R22 K158     ; 0x884C2835 := R22
+308 [-]: CLOSURE   R22 13       ; R22 := closure(Function #14)
+309 [-]: MOVE      R0 R0        ; R0 := R0
+310 [-]: SETGLOBAL R22 K159     ; GetPopupCoords := R22
+311 [-]: SETGLOBAL R22 K160     ; 0x30905ECB := R22
+312 [-]: CLOSURE   R22 14       ; R22 := closure(Function #15)
+313 [-]: MOVE      R0 R3        ; R0 := R3
+314 [-]: CLOSURE   R23 15       ; R23 := closure(Function #16)
+315 [-]: MOVE      R0 R22       ; R0 := R22
+316 [-]: SETGLOBAL R23 K161     ; GetInfoForLabel := R23
+317 [-]: SETGLOBAL R23 K162     ; 0xB102F9B3 := R23
+318 [-]: CLOSURE   R23 16       ; R23 := closure(Function #17)
+319 [-]: MOVE      R0 R0        ; R0 := R0
+320 [-]: CLOSURE   R24 17       ; R24 := closure(Function #18)
+321 [-]: MOVE      R0 R23       ; R0 := R23
+322 [-]: SETGLOBAL R24 K163     ; DrawPriceLabel := R24
+323 [-]: SETGLOBAL R24 K164     ; 0x5A91A0A9 := R24
+324 [-]: CLOSURE   R24 18       ; R24 := closure(Function #19)
+325 [-]: CLOSURE   R25 19       ; R25 := closure(Function #20)
+326 [-]: MOVE      R0 R24       ; R0 := R24
+327 [-]: SETGLOBAL R25 K165     ; GetPriceLabelClip := R25
+328 [-]: SETGLOBAL R25 K166     ; 0x971CF346 := R25
+329 [-]: CLOSURE   R25 20       ; R25 := closure(Function #21)
+330 [-]: MOVE      R0 R0        ; R0 := R0
+331 [-]: CLOSURE   R26 21       ; R26 := closure(Function #22)
+332 [-]: MOVE      R0 R25       ; R0 := R25
+333 [-]: SETGLOBAL R26 K167     ; SetItemInfoPopupRect := R26
+334 [-]: SETGLOBAL R26 K168     ; 0x4C8FC6DC := R26
+335 [-]: CLOSURE   R26 22       ; R26 := closure(Function #23)
+336 [-]: MOVE      R0 R0        ; R0 := R0
+337 [-]: MOVE      R0 R1        ; R0 := R1
+338 [-]: MOVE      R0 R25       ; R0 := R25
+339 [-]: MOVE      R0 R18       ; R0 := R18
+340 [-]: CLOSURE   R27 23       ; R27 := closure(Function #24)
+341 [-]: MOVE      R0 R26       ; R0 := R26
+342 [-]: SETGLOBAL R27 K169     ; OnGridItemFocusChanged := R27
+343 [-]: SETGLOBAL R27 K170     ; 0x4D8419E := R27
+344 [-]: CLOSURE   R27 24       ; R27 := closure(Function #25)
+345 [-]: MOVE      R0 R0        ; R0 := R0
+346 [-]: CLOSURE   R28 25       ; R28 := closure(Function #26)
+347 [-]: MOVE      R0 R27       ; R0 := R27
+348 [-]: SETGLOBAL R28 K171     ; FitGridToWidth := R28
+349 [-]: SETGLOBAL R28 K172     ; 0x69D4488D := R28
+350 [-]: CLOSURE   R28 26       ; R28 := closure(Function #27)
+351 [-]: MOVE      R0 R0        ; R0 := R0
+352 [-]: CLOSURE   R29 27       ; R29 := closure(Function #28)
+353 [-]: MOVE      R0 R27       ; R0 := R27
+354 [-]: MOVE      R0 R28       ; R0 := R28
+355 [-]: SETGLOBAL R29 K173     ; ResizeGrid := R29
+356 [-]: SETGLOBAL R29 K174     ; 0x4A1CEFB6 := R29
+357 [-]: CLOSURE   R29 28       ; R29 := closure(Function #29)
+358 [-]: MOVE      R0 R0        ; R0 := R0
+359 [-]: SETGLOBAL R29 K175     ; InitializeGridItem := R29
+360 [-]: SETGLOBAL R29 K176     ; 0xC4543918 := R29
+361 [-]: CLOSURE   R29 29       ; R29 := closure(Function #30)
+362 [-]: MOVE      R0 R16       ; R0 := R16
+363 [-]: MOVE      R0 R0        ; R0 := R0
+364 [-]: SETGLOBAL R29 K177     ; OnGridItemCreated := R29
+365 [-]: SETGLOBAL R29 K178     ; 0x3B9C2B24 := R29
+366 [-]: CLOSURE   R29 30       ; R29 := closure(Function #31)
+367 [-]: CLOSURE   R30 31       ; R30 := closure(Function #32)
+368 [-]: MOVE      R0 R29       ; R0 := R29
+369 [-]: SETGLOBAL R30 K179     ; GetArcaneRankString := R30
+370 [-]: SETGLOBAL R30 K180     ; 0x77A1FEE9 := R30
+371 [-]: CLOSURE   R30 32       ; R30 := closure(Function #33)
+372 [-]: MOVE      R0 R2        ; R0 := R2
+373 [-]: MOVE      R0 R12       ; R0 := R12
+374 [-]: MOVE      R0 R13       ; R0 := R13
+375 [-]: MOVE      R0 R29       ; R0 := R29
+376 [-]: MOVE      R0 R0        ; R0 := R0
+377 [-]: CLOSURE   R31 33       ; R31 := closure(Function #34)
+378 [-]: MOVE      R0 R30       ; R0 := R30
+379 [-]: SETGLOBAL R31 K181     ; GetGridItemName := R31
+380 [-]: SETGLOBAL R31 K182     ; 0x35D16A6E := R31
+381 [-]: CLOSURE   R31 34       ; R31 := closure(Function #35)
+382 [-]: MOVE      R0 R11       ; R0 := R11
+383 [-]: MOVE      R0 R5        ; R0 := R5
+384 [-]: MOVE      R0 R2        ; R0 := R2
+385 [-]: MOVE      R0 R22       ; R0 := R22
+386 [-]: MOVE      R0 R0        ; R0 := R0
+387 [-]: MOVE      R0 R14       ; R0 := R14
+388 [-]: MOVE      R0 R8        ; R0 := R8
+389 [-]: MOVE      R0 R9        ; R0 := R9
+390 [-]: CLOSURE   R32 35       ; R32 := closure(Function #36)
+391 [-]: MOVE      R0 R31       ; R0 := R31
+392 [-]: SETGLOBAL R32 K183     ; GetGridItemTags := R32
+393 [-]: SETGLOBAL R32 K184     ; 0x14D94FB2 := R32
+394 [-]: CLOSURE   R32 36       ; R32 := closure(Function #37)
+395 [-]: MOVE      R0 R18       ; R0 := R18
+396 [-]: SETGLOBAL R32 K185     ; IsGridLabelType := R32
+397 [-]: SETGLOBAL R32 K186     ; 0x42F4C3D9 := R32
+398 [-]: CLOSURE   R32 37       ; R32 := closure(Function #38)
+399 [-]: MOVE      R0 R30       ; R0 := R30
+400 [-]: MOVE      R0 R31       ; R0 := R31
+401 [-]: MOVE      R0 R24       ; R0 := R24
+402 [-]: MOVE      R0 R23       ; R0 := R23
+403 [-]: MOVE      R0 R18       ; R0 := R18
+404 [-]: MOVE      R0 R0        ; R0 := R0
+405 [-]: MOVE      R0 R10       ; R0 := R10
+406 [-]: MOVE      R0 R1        ; R0 := R1
+407 [-]: MOVE      R0 R26       ; R0 := R26
+408 [-]: SETGLOBAL R32 K187     ; DrawGridItem := R32
+409 [-]: SETGLOBAL R32 K188     ; 0x59A3B972 := R32
+410 [-]: CLOSURE   R32 38       ; R32 := closure(Function #39)
+411 [-]: MOVE      R0 R3        ; R0 := R3
+412 [-]: SETGLOBAL R32 K189     ; SetupLoginLighting := R32
+413 [-]: SETGLOBAL R32 K190     ; 0xE0345D7 := R32
+414 [-]: CLOSURE   R32 39       ; R32 := closure(Function #40)
+415 [-]: CLOSURE   R33 40       ; R33 := closure(Function #41)
+416 [-]: MOVE      R0 R32       ; R0 := R32
+417 [-]: SETGLOBAL R33 K191     ; DrawSeparator := R33
+418 [-]: SETGLOBAL R33 K192     ; 0xC9168CC := R33
+419 [-]: CLOSURE   R33 41       ; R33 := closure(Function #42)
+420 [-]: MOVE      R0 R33       ; R0 := R33
+421 [-]: CLOSURE   R34 42       ; R34 := closure(Function #43)
+422 [-]: MOVE      R0 R33       ; R0 := R33
+423 [-]: SETGLOBAL R34 K193     ; PulseColor := R34
+424 [-]: SETGLOBAL R34 K194     ; 0xFA804B1E := R34
+425 [-]: CLOSURE   R34 43       ; R34 := closure(Function #44)
+426 [-]: MOVE      R0 R0        ; R0 := R0
+427 [-]: MOVE      R0 R3        ; R0 := R3
+428 [-]: MOVE      R0 R5        ; R0 := R5
+429 [-]: MOVE      R0 R4        ; R0 := R4
+430 [-]: SETGLOBAL R34 K195     ; GetItemInfoDesc := R34
+431 [-]: SETGLOBAL R34 K196     ; 0x23DB6824 := R34
+432 [-]: NEWTABLE  R34 3 0      ; R34 := {}
+433 [-]: NEWTABLE  R35 2 0      ; R35 := {}
+434 [-]: LOADK     R36 K197     ; R36 := 2047
+435 [-]: LOADK     R37 K198     ; R37 := 192
+436 [-]: SETLIST   R35 2 1      ; R35[(1-1)*FPF+i] := R(35+i), 1 <= i <= 2
+437 [-]: NEWTABLE  R36 2 0      ; R36 := {}
+438 [-]: LOADK     R37 K199     ; R37 := 65535
+439 [-]: LOADK     R38 K200     ; R38 := 224
+440 [-]: SETLIST   R36 2 1      ; R36[(1-1)*FPF+i] := R(36+i), 1 <= i <= 2
+441 [-]: NEWTABLE  R37 2 0      ; R37 := {}
+442 [-]: LOADK     R38 K201     ; R38 := 2097151
+443 [-]: LOADK     R39 K202     ; R39 := 240
+444 [-]: SETLIST   R37 2 1      ; R37[(1-1)*FPF+i] := R(37+i), 1 <= i <= 2
+445 [-]: SETLIST   R34 3 1      ; R34[(1-1)*FPF+i] := R(34+i), 1 <= i <= 3
+446 [-]: CLOSURE   R35 44       ; R35 := closure(Function #45)
+447 [-]: MOVE      R0 R34       ; R0 := R34
+448 [-]: CLOSURE   R36 45       ; R36 := closure(Function #46)
+449 [-]: MOVE      R0 R35       ; R0 := R35
+450 [-]: SETGLOBAL R36 K203     ; UTF8 := R36
+451 [-]: SETGLOBAL R36 K204     ; 0x472044CC := R36
+452 [-]: LOADNIL   R36 R36      ; R36 := nil
+453 [-]: CLOSURE   R37 46       ; R37 := closure(Function #47)
+454 [-]: MOVE      R0 R36       ; R0 := R36
+455 [-]: SETGLOBAL R37 K205     ; EnToLower := R37
+456 [-]: SETGLOBAL R37 K206     ; 0xCECDECDE := R37
+457 [-]: CLOSURE   R37 47       ; R37 := closure(Function #48)
+458 [-]: SETGLOBAL R37 K207     ; OnHyperlinkPressed := R37
+459 [-]: SETGLOBAL R37 K208     ; 0xA28B5FDC := R37
+460 [-]: CLOSURE   R37 48       ; R37 := closure(Function #49)
+461 [-]: SETGLOBAL R37 K209     ; ScaleTextToFit := R37
+462 [-]: SETGLOBAL R37 K210     ; 0x51B3C238 := R37
+463 [-]: CLOSURE   R37 49       ; R37 := closure(Function #50)
+464 [-]: CLOSURE   R38 50       ; R38 := closure(Function #51)
+465 [-]: SETGLOBAL R38 K211     ; UpdateRarityBar := R38
+466 [-]: SETGLOBAL R38 K212     ; 0xF01080E5 := R38
+467 [-]: CLOSURE   R38 51       ; R38 := closure(Function #52)
+468 [-]: MOVE      R0 R37       ; R0 := R37
+469 [-]: SETGLOBAL R38 K213     ; DrawRarityBar := R38
+470 [-]: SETGLOBAL R38 K214     ; 0x8AB5D821 := R38
+471 [-]: CLOSURE   R38 52       ; R38 := closure(Function #53)
+472 [-]: MOVE      R0 R15       ; R0 := R15
+473 [-]: SETGLOBAL R38 K215     ; ToggleScreensToHide := R38
+474 [-]: SETGLOBAL R38 K216     ; 0x787571E1 := R38
+475 [-]: CLOSURE   R38 53       ; R38 := closure(Function #54)
+476 [-]: SETGLOBAL R38 K217     ; SliceLichIcon := R38
+477 [-]: SETGLOBAL R38 K218     ; 0x8D868BE8 := R38
+478 [-]: CLOSURE   R38 54       ; R38 := closure(Function #55)
+479 [-]: CLOSURE   R39 55       ; R39 := closure(Function #56)
+480 [-]: MOVE      R0 R17       ; R0 := R17
+481 [-]: MOVE      R40 R1       ; R40 := R1
+482 [-]: CLOSURE   R41 56       ; R41 := closure(Function #57)
+483 [-]: MOVE      R0 R40       ; R0 := R40
+484 [-]: MOVE      R0 R17       ; R0 := R17
+485 [-]: MOVE      R0 R38       ; R0 := R38
+486 [-]: MOVE      R0 R39       ; R0 := R39
+487 [-]: MOVE      R0 R0        ; R0 := R0
+488 [-]: CLOSURE   R42 57       ; R42 := closure(Function #58)
+489 [-]: MOVE      R0 R17       ; R0 := R17
+490 [-]: MOVE      R0 R41       ; R0 := R41
+491 [-]: SETGLOBAL R42 K219     ; WreckageLimitCheck := R42
+492 [-]: SETGLOBAL R42 K220     ; 0x36B73741 := R42
+493 [-]: CLOSURE   R42 58       ; R42 := closure(Function #59)
+494 [-]: MOVE      R0 R32       ; R0 := R32
+495 [-]: MOVE      R0 R0        ; R0 := R0
+496 [-]: MOVE      R0 R25       ; R0 := R25
+497 [-]: SETGLOBAL R42 K221     ; InitializeNemesisAttemptInfo := R42
+498 [-]: SETGLOBAL R42 K222     ; 0x86CBA754 := R42
+499 [-]: CLOSURE   R42 59       ; R42 := closure(Function #60)
+500 [-]: MOVE      R0 R2        ; R0 := R2
+501 [-]: MOVE      R0 R0        ; R0 := R0
+502 [-]: SETGLOBAL R42 K223     ; GetInnateDamageName := R42
+503 [-]: SETGLOBAL R42 K224     ; 0xDECC96BE := R42
+504 [-]: CLOSURE   R42 60       ; R42 := closure(Function #61)
+505 [-]: SETGLOBAL R42 K225     ; OnMuseumStreamed := R42
+506 [-]: SETGLOBAL R42 K226     ; 0x39454BDB := R42
+507 [-]: CLOSURE   R42 61       ; R42 := closure(Function #62)
+508 [-]: SETGLOBAL R42 K227     ; StreamMuseum := R42
+509 [-]: SETGLOBAL R42 K228     ; 0x69DC794F := R42
+510 [-]: CLOSURE   R42 62       ; R42 := closure(Function #63)
+511 [-]: CLOSURE   R43 63       ; R43 := closure(Function #64)
+512 [-]: MOVE      R0 R42       ; R0 := R42
+513 [-]: SETGLOBAL R43 K229     ; GetTips := R43
+514 [-]: SETGLOBAL R43 K230     ; 0x8618A508 := R43
+515 [-]: CLOSURE   R43 64       ; R43 := closure(Function #65)
+516 [-]: SETGLOBAL R43 K231     ; ResetModVisibleRangeMaterials := R43
+517 [-]: SETGLOBAL R43 K232     ; 0x19158BD6 := R43
+518 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 128
+; Defined at line: 129
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -718,7 +721,7 @@ code size: 59
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 162
+; Defined at line: 163
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -797,7 +800,7 @@ code size: 59
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 186
+; Defined at line: 187
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -871,7 +874,7 @@ code size: 59
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 211
+; Defined at line: 212
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -901,7 +904,7 @@ code size: 59
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 226
+; Defined at line: 227
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -933,7 +936,7 @@ code size: 59
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 233
+; Defined at line: 234
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -969,7 +972,7 @@ code size: 59
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 241
+; Defined at line: 242
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1145,7 +1148,7 @@ code size: 59
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 311
+; Defined at line: 312
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1196,7 +1199,7 @@ code size: 59
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 337
+; Defined at line: 338
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -1249,7 +1252,7 @@ code size: 59
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 356
+; Defined at line: 357
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1277,7 +1280,7 @@ code size: 59
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 365
+; Defined at line: 366
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -1352,7 +1355,7 @@ code size: 59
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 386
+; Defined at line: 387
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -1380,7 +1383,7 @@ code size: 59
 ; Function #13:
 ;
 ; Name:            
-; Defined at line: 394
+; Defined at line: 395
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1440,7 +1443,7 @@ code size: 59
 ; Function #14:
 ;
 ; Name:            
-; Defined at line: 416
+; Defined at line: 417
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -1593,7 +1596,7 @@ code size: 59
 ; Function #14.1:
 ;
 ; Name:            
-; Defined at line: 473
+; Defined at line: 474
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -1639,7 +1642,7 @@ code size: 59
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 488
+; Defined at line: 489
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2074,7 +2077,7 @@ code size: 59
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 703
+; Defined at line: 704
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -2091,7 +2094,7 @@ code size: 59
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 707
+; Defined at line: 708
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2525,7 +2528,7 @@ code size: 59
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 791
+; Defined at line: 792
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -2543,7 +2546,7 @@ code size: 59
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 795
+; Defined at line: 796
 ; #Upvalues:       0
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2595,7 +2598,7 @@ code size: 59
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 808
+; Defined at line: 809
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -2613,7 +2616,7 @@ code size: 59
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 812
+; Defined at line: 813
 ; #Upvalues:       1
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -2642,7 +2645,7 @@ code size: 59
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 831
+; Defined at line: 832
 ; #Upvalues:       1
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -2664,7 +2667,7 @@ code size: 59
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 835
+; Defined at line: 836
 ; #Upvalues:       4
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3138,7 +3141,7 @@ code size: 59
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 954
+; Defined at line: 955
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -3156,7 +3159,7 @@ code size: 59
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 958
+; Defined at line: 959
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3206,7 +3209,7 @@ code size: 59
 ; Function #26:
 ;
 ; Name:            
-; Defined at line: 979
+; Defined at line: 980
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3221,7 +3224,7 @@ code size: 59
 ; Function #27:
 ;
 ; Name:            
-; Defined at line: 983
+; Defined at line: 984
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -3271,7 +3274,7 @@ code size: 59
 ; Function #28:
 ;
 ; Name:            
-; Defined at line: 1004
+; Defined at line: 1005
 ; #Upvalues:       2
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -3333,7 +3336,7 @@ code size: 59
 ; Function #29:
 ;
 ; Name:            
-; Defined at line: 1029
+; Defined at line: 1030
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3416,7 +3419,7 @@ code size: 59
 ; Function #30:
 ;
 ; Name:            
-; Defined at line: 1051
+; Defined at line: 1052
 ; #Upvalues:       2
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -3754,7 +3757,7 @@ code size: 59
 ; Function #31:
 ;
 ; Name:            
-; Defined at line: 1137
+; Defined at line: 1138
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -3822,7 +3825,7 @@ code size: 59
 ; Function #32:
 ;
 ; Name:            
-; Defined at line: 1161
+; Defined at line: 1162
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -3842,7 +3845,7 @@ code size: 59
 ; Function #33:
 ;
 ; Name:            
-; Defined at line: 1166
+; Defined at line: 1167
 ; #Upvalues:       5
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -4099,7 +4102,7 @@ code size: 59
 ; Function #34:
 ;
 ; Name:            
-; Defined at line: 1236
+; Defined at line: 1237
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -4118,7 +4121,7 @@ code size: 59
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 1241
+; Defined at line: 1242
 ; #Upvalues:       8
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -5714,7 +5717,7 @@ code size: 59
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 1711
+; Defined at line: 1712
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -5734,7 +5737,7 @@ code size: 59
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 1715
+; Defined at line: 1716
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5749,7 +5752,7 @@ code size: 59
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 1719
+; Defined at line: 1720
 ; #Upvalues:       9
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -6705,7 +6708,7 @@ code size: 59
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 1980
+; Defined at line: 1981
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -6848,7 +6851,7 @@ code size: 59
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 2026
+; Defined at line: 2027
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -6921,7 +6924,7 @@ code size: 59
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 2045
+; Defined at line: 2046
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -6939,7 +6942,7 @@ code size: 59
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 2049
+; Defined at line: 2050
 ; #Upvalues:       1
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -7004,7 +7007,7 @@ code size: 59
 ; Function #42.1:
 ;
 ; Name:            
-; Defined at line: 2056
+; Defined at line: 2057
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7039,7 +7042,7 @@ code size: 59
 ; Function #42.2:
 ;
 ; Name:            
-; Defined at line: 2068
+; Defined at line: 2069
 ; #Upvalues:       8
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7074,7 +7077,7 @@ code size: 59
 ; Function #42.2.1:
 ;
 ; Name:            
-; Defined at line: 2071
+; Defined at line: 2072
 ; #Upvalues:       6
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -7097,7 +7100,7 @@ code size: 59
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 2079
+; Defined at line: 2080
 ; #Upvalues:       1
 ; #Parameters:     6
 ; Is_vararg:       0
@@ -7117,7 +7120,7 @@ code size: 59
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 2083
+; Defined at line: 2084
 ; #Upvalues:       4
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -7358,7 +7361,7 @@ code size: 59
 ; Function #45:
 ;
 ; Name:            
-; Defined at line: 2141
+; Defined at line: 2142
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7412,7 +7415,7 @@ code size: 59
 ; Function #46:
 ;
 ; Name:            
-; Defined at line: 2161
+; Defined at line: 2162
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7428,7 +7431,7 @@ code size: 59
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 2167
+; Defined at line: 2168
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7462,7 +7465,7 @@ code size: 59
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 2174
+; Defined at line: 2175
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7486,7 +7489,7 @@ code size: 59
 ; Function #49:
 ;
 ; Name:            
-; Defined at line: 2183
+; Defined at line: 2184
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -7558,7 +7561,7 @@ code size: 59
 ; Function #50:
 ;
 ; Name:            
-; Defined at line: 2210
+; Defined at line: 2211
 ; #Upvalues:       0
 ; #Parameters:     10
 ; Is_vararg:       0
@@ -7670,7 +7673,7 @@ code size: 59
 ; Function #51:
 ;
 ; Name:            
-; Defined at line: 2230
+; Defined at line: 2231
 ; #Upvalues:       0
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -7793,7 +7796,7 @@ code size: 59
 ; Function #52:
 ;
 ; Name:            
-; Defined at line: 2253
+; Defined at line: 2254
 ; #Upvalues:       1
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -8178,7 +8181,7 @@ code size: 59
 ; Function #53:
 ;
 ; Name:            
-; Defined at line: 2365
+; Defined at line: 2366
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -8231,7 +8234,7 @@ code size: 59
 ; Function #54:
 ;
 ; Name:            
-; Defined at line: 2387
+; Defined at line: 2388
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -8318,7 +8321,7 @@ code size: 59
 ; Function #54.1:
 ;
 ; Name:            
-; Defined at line: 2393
+; Defined at line: 2394
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -8352,7 +8355,7 @@ code size: 59
 ; Function #54.2:
 ;
 ; Name:            
-; Defined at line: 2398
+; Defined at line: 2399
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -8386,7 +8389,7 @@ code size: 59
 ; Function #55:
 ;
 ; Name:            
-; Defined at line: 2404
+; Defined at line: 2405
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -8412,7 +8415,7 @@ code size: 59
 ; Function #56:
 ;
 ; Name:            
-; Defined at line: 2414
+; Defined at line: 2415
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -8487,7 +8490,7 @@ code size: 59
 ; Function #56.1:
 ;
 ; Name:            
-; Defined at line: 2447
+; Defined at line: 2448
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -8503,7 +8506,7 @@ code size: 59
 ; Function #57:
 ;
 ; Name:            
-; Defined at line: 2455
+; Defined at line: 2456
 ; #Upvalues:       5
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -8567,7 +8570,7 @@ code size: 59
 ; Function #57.1:
 ;
 ; Name:            
-; Defined at line: 2467
+; Defined at line: 2468
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -8604,7 +8607,7 @@ code size: 59
 ; Function #57.1.1:
 ;
 ; Name:            
-; Defined at line: 2474
+; Defined at line: 2475
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -8618,7 +8621,7 @@ code size: 59
 ; Function #58:
 ;
 ; Name:            
-; Defined at line: 2492
+; Defined at line: 2493
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -8663,7 +8666,7 @@ code size: 59
 ; Function #59:
 ;
 ; Name:            
-; Defined at line: 2512
+; Defined at line: 2513
 ; #Upvalues:       3
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -8880,7 +8883,7 @@ code size: 59
 ; Function #59.1:
 ;
 ; Name:            
-; Defined at line: 2543
+; Defined at line: 2544
 ; #Upvalues:       5
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -9091,7 +9094,7 @@ code size: 59
 ; Function #59.2:
 ;
 ; Name:            
-; Defined at line: 2594
+; Defined at line: 2595
 ; #Upvalues:       3
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -9171,7 +9174,7 @@ code size: 59
 ; Function #59.3:
 ;
 ; Name:            
-; Defined at line: 2617
+; Defined at line: 2618
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -9278,7 +9281,7 @@ code size: 59
 ; Function #59.4:
 ;
 ; Name:            
-; Defined at line: 2659
+; Defined at line: 2660
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -9372,7 +9375,7 @@ code size: 59
 ; Function #59.4.1:
 ;
 ; Name:            
-; Defined at line: 2666
+; Defined at line: 2667
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -9388,7 +9391,7 @@ code size: 59
 ; Function #59.4.2:
 ;
 ; Name:            
-; Defined at line: 2684
+; Defined at line: 2685
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -9404,7 +9407,7 @@ code size: 59
 ; Function #59.5:
 ;
 ; Name:            
-; Defined at line: 2688
+; Defined at line: 2689
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -9549,7 +9552,7 @@ code size: 59
 ; Function #59.6:
 ;
 ; Name:            
-; Defined at line: 2736
+; Defined at line: 2737
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -9630,7 +9633,7 @@ code size: 59
 ; Function #59.7:
 ;
 ; Name:            
-; Defined at line: 2758
+; Defined at line: 2759
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -9646,7 +9649,7 @@ code size: 59
 ; Function #60:
 ;
 ; Name:            
-; Defined at line: 2768
+; Defined at line: 2769
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -9720,7 +9723,7 @@ code size: 59
 ; Function #61:
 ;
 ; Name:            
-; Defined at line: 2797
+; Defined at line: 2798
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -9779,7 +9782,7 @@ code size: 59
 ; Function #62:
 ;
 ; Name:            
-; Defined at line: 2812
+; Defined at line: 2813
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -9830,7 +9833,7 @@ code size: 59
 ; Function #63:
 ;
 ; Name:            
-; Defined at line: 2825
+; Defined at line: 2826
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -9856,7 +9859,7 @@ code size: 59
 ; Function #64:
 ;
 ; Name:            
-; Defined at line: 2832
+; Defined at line: 2833
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       7
@@ -9908,7 +9911,7 @@ code size: 59
 ; Function #65:
 ;
 ; Name:            
-; Defined at line: 2859
+; Defined at line: 2860
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0

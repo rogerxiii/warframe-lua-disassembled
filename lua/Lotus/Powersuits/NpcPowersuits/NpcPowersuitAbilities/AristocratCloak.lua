@@ -4,7 +4,7 @@ code size: 15
 code size: 13
 code size: 40
 code size: 61
-code size: 63
+code size: 68
 code size: 71
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Powersuits\NpcPowersuits\NpcPowersuitAbilities\AristocratCloak.luac 
@@ -285,32 +285,37 @@ code size: 71
  41 [-]: SELF      R5 R1 K15    ; R6 := R1; R5 := R1["0x9F1DC568"]
  42 [-]: GETGLOBAL R7 K16       ; R7 := gBaseMarkerInfoType
  43 [-]: CALL      R5 3 2       ; R5 := R5(R6,R7)
- 44 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x2DB1272F"]
- 45 [-]: CALL      R6 2 1       ; R6(R7)
- 46 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0xAD99505D"]
- 47 [-]: MOVE      R8 R0        ; R8 := R0
- 48 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 49 [-]: GETGLOBAL R6 K6        ; R6 := _T
- 50 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["gCloakShimmerData"]
- 51 [-]: SETTABLE  R6 R4 K8     ; R6[R4] := "0x1"
- 52 [-]: GETGLOBAL R6 K5        ; R6 := 0x400E7765
- 53 [-]: GETGLOBAL R7 K19       ; R7 := hiddenShimmer
- 54 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 55 [-]: TEST      R6 1         ; if R6 then PC := 63
- 56 [-]: JMP       63           ; PC := 63
- 57 [-]: SELF      R6 R1 K20    ; R7 := R1; R6 := R1["0xB26452A2"]
- 58 [-]: GETGLOBAL R8 K21       ; R8 := 0xEC274B1A
- 59 [-]: LOADK     R9 K22       ; R9 := "Shimmer"
- 60 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 61 [-]: MOVE      R9 R0        ; R9 := R0
- 62 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
- 63 [-]: RETURN    R0 1         ; return 
+ 44 [-]: GETGLOBAL R6 K5        ; R6 := 0x400E7765
+ 45 [-]: MOVE      R7 R5        ; R7 := R5
+ 46 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 47 [-]: TEST      R6 1         ; if R6 then PC := 54
+ 48 [-]: JMP       54           ; PC := 54
+ 49 [-]: SELF      R6 R5 K17    ; R7 := R5; R6 := R5["0x2DB1272F"]
+ 50 [-]: CALL      R6 2 1       ; R6(R7)
+ 51 [-]: SELF      R6 R5 K18    ; R7 := R5; R6 := R5["0xAD99505D"]
+ 52 [-]: MOVE      R8 R0        ; R8 := R0
+ 53 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 54 [-]: GETGLOBAL R6 K6        ; R6 := _T
+ 55 [-]: GETTABLE  R6 R6 K7     ; R6 := R6["gCloakShimmerData"]
+ 56 [-]: SETTABLE  R6 R4 K8     ; R6[R4] := "0x1"
+ 57 [-]: GETGLOBAL R6 K5        ; R6 := 0x400E7765
+ 58 [-]: GETGLOBAL R7 K19       ; R7 := hiddenShimmer
+ 59 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 60 [-]: TEST      R6 1         ; if R6 then PC := 68
+ 61 [-]: JMP       68           ; PC := 68
+ 62 [-]: SELF      R6 R1 K20    ; R7 := R1; R6 := R1["0xB26452A2"]
+ 63 [-]: GETGLOBAL R8 K21       ; R8 := 0xEC274B1A
+ 64 [-]: LOADK     R9 K22       ; R9 := "Shimmer"
+ 65 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 66 [-]: MOVE      R9 R0        ; R9 := R0
+ 67 [-]: CALL      R6 4 1       ; R6(R7,R8,R9)
+ 68 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 107
+; Defined at line: 109
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0

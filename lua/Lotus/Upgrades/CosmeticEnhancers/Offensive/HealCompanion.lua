@@ -1,6 +1,6 @@
 code size: 7
 code size: 16
-code size: 38
+code size: 75
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Upgrades\CosmeticEnhancers\Offensive\HealCompanion.luac 
 
@@ -54,7 +54,7 @@ code size: 38
 ; #Upvalues:       0
 ; #Parameters:     5
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  15
 
   1 [-]: GETGLOBAL R5 K0        ; R5 := gRegion
   2 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5["0xA559F558"]
@@ -62,37 +62,74 @@ code size: 38
   4 [-]: TEST      R5 1         ; if R5 then PC := 7
   5 [-]: JMP       7            ; PC := 7
   6 [-]: RETURN    R0 1         ; return 
-  7 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0["0x8DB5D01F"]
+  7 [-]: SELF      R5 R0 K2     ; R6 := R0; R5 := R0["0xDBEF0FB6"]
   8 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  9 [-]: SELF      R5 R5 K3     ; R6 := R5; R5 := R5["0x30DABA98"]
- 10 [-]: CALL      R5 2 2       ; R5 := R5(R6)
- 11 [-]: GETGLOBAL R6 K4        ; R6 := 0x400E7765
- 12 [-]: MOVE      R7 R5        ; R7 := R5
- 13 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 14 [-]: TEST      R6 1         ; if R6 then PC := 24
- 15 [-]: JMP       24           ; PC := 24
- 16 [-]: SELF      R6 R5 K5     ; R7 := R5; R6 := R5["0x5A115A02"]
- 17 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 18 [-]: TEST      R6 1         ; if R6 then PC := 24
- 19 [-]: JMP       24           ; PC := 24
- 20 [-]: SELF      R6 R5 K6     ; R7 := R5; R6 := R5["0xA56CD0BB"]
- 21 [-]: CALL      R6 2 2       ; R6 := R6(R7)
- 22 [-]: TEST      R6 0         ; if not R6 then PC := 25
- 23 [-]: JMP       25           ; PC := 25
- 24 [-]: RETURN    R0 1         ; return 
- 25 [-]: SELF      R6 R5 K7     ; R7 := R5; R6 := R5["0x76C229EF"]
- 26 [-]: SELF      R8 R5 K8     ; R9 := R5; R8 := R5["0x2F79FBD3"]
- 27 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 28 [-]: GETGLOBAL R9 K9        ; R9 := healAmount
- 29 [-]: GETGLOBAL R10 K10      ; R10 := math
- 30 [-]: GETTABLE  R10 R10 K11  ; R10 := R10["0x65F9712A"]
- 31 [-]: MOVE      R11 R2       ; R11 := R2
- 32 [-]: GETGLOBAL R12 K9       ; R12 := healAmount
- 33 [-]: LEN       R12 R12      ; R12 := # R12
- 34 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
- 35 [-]: GETTABLE  R9 R9 R10    ; R9 := R9[R10]
- 36 [-]: ADD       R8 R8 R9     ; R8 := R8 + R9
- 37 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 38 [-]: RETURN    R0 1         ; return 
+  9 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
+ 10 [-]: GETGLOBAL R7 K4        ; R7 := _T
+ 11 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["khoraKavat"]
+ 12 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 13 [-]: TEST      R6 1         ; if R6 then PC := 44
+ 14 [-]: JMP       44           ; PC := 44
+ 15 [-]: GETGLOBAL R6 K3        ; R6 := 0x400E7765
+ 16 [-]: GETGLOBAL R7 K4        ; R7 := _T
+ 17 [-]: GETTABLE  R7 R7 K5     ; R7 := R7["khoraKavat"]
+ 18 [-]: GETTABLE  R7 R7 R5     ; R7 := R7[R5]
+ 19 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 20 [-]: TEST      R6 1         ; if R6 then PC := 44
+ 21 [-]: JMP       44           ; PC := 44
+ 22 [-]: GETGLOBAL R6 K4        ; R6 := _T
+ 23 [-]: GETTABLE  R6 R6 K5     ; R6 := R6["khoraKavat"]
+ 24 [-]: GETTABLE  R6 R6 R5     ; R6 := R6[R5]
+ 25 [-]: GETTABLE  R6 R6 K6     ; R6 := R6["avatar"]
+ 26 [-]: GETGLOBAL R7 K3        ; R7 := 0x400E7765
+ 27 [-]: MOVE      R8 R6        ; R8 := R6
+ 28 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 29 [-]: TEST      R7 1         ; if R7 then PC := 44
+ 30 [-]: JMP       44           ; PC := 44
+ 31 [-]: SELF      R7 R6 K7     ; R8 := R6; R7 := R6["0x76C229EF"]
+ 32 [-]: SELF      R9 R6 K8     ; R10 := R6; R9 := R6["0x2F79FBD3"]
+ 33 [-]: CALL      R9 2 2       ; R9 := R9(R10)
+ 34 [-]: GETGLOBAL R10 K9       ; R10 := healAmount
+ 35 [-]: GETGLOBAL R11 K10      ; R11 := math
+ 36 [-]: GETTABLE  R11 R11 K11  ; R11 := R11["0x65F9712A"]
+ 37 [-]: MOVE      R12 R2       ; R12 := R2
+ 38 [-]: GETGLOBAL R13 K9       ; R13 := healAmount
+ 39 [-]: LEN       R13 R13      ; R13 := # R13
+ 40 [-]: CALL      R11 3 2      ; R11 := R11(R12,R13)
+ 41 [-]: GETTABLE  R10 R10 R11  ; R10 := R10[R11]
+ 42 [-]: ADD       R9 R9 R10    ; R9 := R9 + R10
+ 43 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 44 [-]: SELF      R7 R0 K12    ; R8 := R0; R7 := R0["0x8DB5D01F"]
+ 45 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 46 [-]: SELF      R7 R7 K13    ; R8 := R7; R7 := R7["0x30DABA98"]
+ 47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 48 [-]: GETGLOBAL R8 K3        ; R8 := 0x400E7765
+ 49 [-]: MOVE      R9 R7        ; R9 := R7
+ 50 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 51 [-]: TEST      R8 1         ; if R8 then PC := 61
+ 52 [-]: JMP       61           ; PC := 61
+ 53 [-]: SELF      R8 R7 K14    ; R9 := R7; R8 := R7["0x5A115A02"]
+ 54 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 55 [-]: TEST      R8 1         ; if R8 then PC := 61
+ 56 [-]: JMP       61           ; PC := 61
+ 57 [-]: SELF      R8 R7 K15    ; R9 := R7; R8 := R7["0xA56CD0BB"]
+ 58 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+ 59 [-]: TEST      R8 0         ; if not R8 then PC := 62
+ 60 [-]: JMP       62           ; PC := 62
+ 61 [-]: RETURN    R0 1         ; return 
+ 62 [-]: SELF      R8 R7 K7     ; R9 := R7; R8 := R7["0x76C229EF"]
+ 63 [-]: SELF      R10 R7 K8    ; R11 := R7; R10 := R7["0x2F79FBD3"]
+ 64 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 65 [-]: GETGLOBAL R11 K9       ; R11 := healAmount
+ 66 [-]: GETGLOBAL R12 K10      ; R12 := math
+ 67 [-]: GETTABLE  R12 R12 K11  ; R12 := R12["0x65F9712A"]
+ 68 [-]: MOVE      R13 R2       ; R13 := R2
+ 69 [-]: GETGLOBAL R14 K9       ; R14 := healAmount
+ 70 [-]: LEN       R14 R14      ; R14 := # R14
+ 71 [-]: CALL      R12 3 2      ; R12 := R12(R13,R14)
+ 72 [-]: GETTABLE  R11 R11 R12  ; R11 := R11[R12]
+ 73 [-]: ADD       R10 R10 R11  ; R10 := R10 + R11
+ 74 [-]: CALL      R8 3 1       ; R8(R9,R10)
+ 75 [-]: RETURN    R0 1         ; return 
 
 

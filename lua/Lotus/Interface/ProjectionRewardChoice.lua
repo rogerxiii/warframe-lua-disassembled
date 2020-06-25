@@ -32,7 +32,7 @@ code size: 219
 code size: 22
 code size: 3
 code size: 16
-code size: 45
+code size: 50
 code size: 16
 code size: 40
 code size: 39
@@ -2520,8 +2520,8 @@ code size: 3
   4 [-]: GETUPVAL  R0 U0        ; R0 := U0
   5 [-]: CALL      R0 1 1       ; R0()
   6 [-]: GETUPVAL  R0 U1        ; R0 := U1
-  7 [-]: TEST      R0 1         ; if R0 then PC := 45
-  8 [-]: JMP       45           ; PC := 45
+  7 [-]: TEST      R0 1         ; if R0 then PC := 50
+  8 [-]: JMP       50           ; PC := 50
   9 [-]: GETGLOBAL R0 K2        ; R0 := _T
  10 [-]: SETTABLE  R0 K3 K4     ; R0["SmoothProjectionTransitions"] := "0x1"
  11 [-]: GETGLOBAL R0 K5        ; R0 := mMovie
@@ -2530,35 +2530,40 @@ code size: 3
  14 [-]: CALL      R0 3 1       ; R0(R1,R2)
  15 [-]: LOADNIL   R0 R0        ; R0 := nil
  16 [-]: MOVE      R0 R2        ; R0 := R2
- 17 [-]: GETGLOBAL R0 K7        ; R0 := gRegion
- 18 [-]: SELF      R0 R0 K8     ; R1 := R0; R0 := R0["0xA559F558"]
+ 17 [-]: GETGLOBAL R0 K7        ; R0 := 0x400E7765
+ 18 [-]: GETGLOBAL R1 K8        ; R1 := gRegion
  19 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 20 [-]: TEST      R0 1         ; if R0 then PC := 45
- 21 [-]: JMP       45           ; PC := 45
- 22 [-]: GETUPVAL  R0 U3        ; R0 := U3
- 23 [-]: TEST      R0 1         ; if R0 then PC := 45
- 24 [-]: JMP       45           ; PC := 45
- 25 [-]: GETGLOBAL R0 K5        ; R0 := mMovie
- 26 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0["0x5FF274BB"]
- 27 [-]: GETGLOBAL R2 K10       ; R2 := countdownMovieRes
- 28 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
- 29 [-]: MOVE      R0 R2        ; R0 := R2
- 30 [-]: GETGLOBAL R0 K11       ; R0 := 0x400E7765
- 31 [-]: GETUPVAL  R1 U2        ; R1 := U2
- 32 [-]: CALL      R0 2 2       ; R0 := R0(R1)
- 33 [-]: TEST      R0 1         ; if R0 then PC := 45
- 34 [-]: JMP       45           ; PC := 45
- 35 [-]: GETUPVAL  R0 U2        ; R0 := U2
- 36 [-]: SELF      R0 R0 K12    ; R1 := R0; R0 := R0["0x458F27A9"]
- 37 [-]: LOADK     R2 K13       ; R2 := "EnableAutoCountdown"
- 38 [-]: LOADK     R3 K14       ; R3 := "false"
- 39 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
+ 20 [-]: TEST      R0 1         ; if R0 then PC := 50
+ 21 [-]: JMP       50           ; PC := 50
+ 22 [-]: GETGLOBAL R0 K8        ; R0 := gRegion
+ 23 [-]: SELF      R0 R0 K9     ; R1 := R0; R0 := R0["0xA559F558"]
+ 24 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 25 [-]: TEST      R0 1         ; if R0 then PC := 50
+ 26 [-]: JMP       50           ; PC := 50
+ 27 [-]: GETUPVAL  R0 U3        ; R0 := U3
+ 28 [-]: TEST      R0 1         ; if R0 then PC := 50
+ 29 [-]: JMP       50           ; PC := 50
+ 30 [-]: GETGLOBAL R0 K5        ; R0 := mMovie
+ 31 [-]: SELF      R0 R0 K10    ; R1 := R0; R0 := R0["0x5FF274BB"]
+ 32 [-]: GETGLOBAL R2 K11       ; R2 := countdownMovieRes
+ 33 [-]: CALL      R0 3 2       ; R0 := R0(R1,R2)
+ 34 [-]: MOVE      R0 R2        ; R0 := R2
+ 35 [-]: GETGLOBAL R0 K7        ; R0 := 0x400E7765
+ 36 [-]: GETUPVAL  R1 U2        ; R1 := U2
+ 37 [-]: CALL      R0 2 2       ; R0 := R0(R1)
+ 38 [-]: TEST      R0 1         ; if R0 then PC := 50
+ 39 [-]: JMP       50           ; PC := 50
  40 [-]: GETUPVAL  R0 U2        ; R0 := U2
  41 [-]: SELF      R0 R0 K12    ; R1 := R0; R0 := R0["0x458F27A9"]
- 42 [-]: LOADK     R2 K15       ; R2 := "SetHint"
- 43 [-]: LOADK     R3 K16       ; R3 := "/Lotus/Language/Menu/VoidRewardSelect_RetrievingRewards,false"
+ 42 [-]: LOADK     R2 K13       ; R2 := "EnableAutoCountdown"
+ 43 [-]: LOADK     R3 K14       ; R3 := "false"
  44 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
- 45 [-]: RETURN    R0 1         ; return 
+ 45 [-]: GETUPVAL  R0 U2        ; R0 := U2
+ 46 [-]: SELF      R0 R0 K12    ; R1 := R0; R0 := R0["0x458F27A9"]
+ 47 [-]: LOADK     R2 K15       ; R2 := "SetHint"
+ 48 [-]: LOADK     R3 K16       ; R3 := "/Lotus/Language/Menu/VoidRewardSelect_RetrievingRewards,false"
+ 49 [-]: CALL      R0 4 1       ; R0(R1,R2,R3)
+ 50 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #28:

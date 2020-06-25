@@ -514,7 +514,7 @@ code size: 27
  55 [-]: GETTABLE  R7 R7 K15    ; R7 := R7["0xE6450C9D"]
  56 [-]: MOVE      R8 R0        ; R8 := R0
  57 [-]: NEWTABLE  R9 0 3       ; R9 := {}
- 58 [-]: SETTABLE  R9 K16 K20   ; R9["Label"] := "/Game/WEAPON_MELEE_ARMOR_REDUCTION"
+ 58 [-]: SETTABLE  R9 K16 K20   ; R9["Label"] := "/Lotus/Language/Labels/WEAPON_MELEE_ARMOR_REDUCTION"
  59 [-]: GETGLOBAL R10 K22      ; R10 := math
  60 [-]: GETTABLE  R10 R10 K23  ; R10 := R10["0xF7005A7B"]
  61 [-]: GETUPVAL  R11 U1       ; R11 := U1
@@ -559,7 +559,7 @@ code size: 27
  22 [-]: GETTABLE  R1 R1 K7     ; R1 := R1["0xE6450C9D"]
  23 [-]: MOVE      R2 R0        ; R2 := R0
  24 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 25 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Game/WEAPON_RANGE"
+ 25 [-]: SETTABLE  R3 K8 K9     ; R3["Label"] := "/Lotus/Language/Labels/WEAPON_RANGE"
  26 [-]: GETUPVAL  R4 U1        ; R4 := U1
  27 [-]: SETTABLE  R3 K10 R4    ; R3["Value"] := R4
  28 [-]: SETTABLE  R3 K11 K12   ; R3["ValueUnit"] := "/Lotus/Language/Game/UNIT_METER"
@@ -767,17 +767,17 @@ code size: 27
  25 [-]: SELF      R6 R6 K6     ; R7 := R6; R6 := R6["0xF21555A7"]
  26 [-]: GETGLOBAL R8 K7        ; R8 := Game
  27 [-]: GETTABLE  R8 R8 K8     ; R8 := R8["AVATAR_ARMOUR"]
- 28 [-]: GETGLOBAL R9 K7        ; R9 := Game
- 29 [-]: GETTABLE  R9 R9 K9     ; R9 := R9["STACKING_MULTIPLY"]
+ 28 [-]: GETGLOBAL R9 K9        ; R9 := Engine
+ 29 [-]: GETTABLE  R9 R9 K10    ; R9 := R9["STACKING_MULTIPLY"]
  30 [-]: GETUPVAL  R10 U2       ; R10 := U2
  31 [-]: MOVE      R11 R0       ; R11 := R0
  32 [-]: MOVE      R12 R5       ; R12 := R5
  33 [-]: CALL      R10 3 0      ; R10,... := R10(R11,R12)
  34 [-]: CALL      R6 0 1       ; R6(R7,...)
- 35 [-]: SELF      R6 R0 K10    ; R7 := R0; R6 := R0["0xF1603098"]
- 36 [-]: GETGLOBAL R8 K11       ; R8 := math
- 37 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["0x8B011038"]
- 38 [-]: LOADK     R9 K13       ; R9 := 0
+ 35 [-]: SELF      R6 R0 K11    ; R7 := R0; R6 := R0["0xF1603098"]
+ 36 [-]: GETGLOBAL R8 K12       ; R8 := math
+ 37 [-]: GETTABLE  R8 R8 K13    ; R8 := R8["0x8B011038"]
+ 38 [-]: LOADK     R9 K14       ; R9 := 0
  39 [-]: MOVE      R10 R1       ; R10 := R1
  40 [-]: CALL      R8 3 0       ; R8,... := R8(R9,R10)
  41 [-]: CALL      R6 0 1       ; R6(R7,...)
@@ -785,23 +785,23 @@ code size: 27
  43 [-]: MOVE      R7 R0        ; R7 := R0
  44 [-]: MOVE      R8 R5        ; R8 := R5
  45 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
- 46 [-]: SELF      R7 R0 K14    ; R8 := R0; R7 := R0["0xFD910504"]
+ 46 [-]: SELF      R7 R0 K15    ; R8 := R0; R7 := R0["0xFD910504"]
  47 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 48 [-]: LT        0 K13 R7     ; if 0 >= R7 then PC := 56
+ 48 [-]: LT        0 K14 R7     ; if 0 >= R7 then PC := 56
  49 [-]: JMP       56           ; PC := 56
- 50 [-]: SELF      R7 R0 K15    ; R8 := R0; R7 := R0["0x46849197"]
+ 50 [-]: SELF      R7 R0 K16    ; R8 := R0; R7 := R0["0x46849197"]
  51 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 52 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
- 53 [-]: GETTABLE  R8 R8 K17    ; R8 := R8["PowerSuit_AUGMENT_ONE"]
+ 52 [-]: GETGLOBAL R8 K17       ; R8 := Lotus_Game
+ 53 [-]: GETTABLE  R8 R8 K18    ; R8 := R8["PowerSuit_AUGMENT_ONE"]
  54 [-]: EQ        1 R7 R8      ; if R7 == R8 then PC := 57
  55 [-]: JMP       57           ; PC := 57
  56 [-]: MOVE      R7 R0        ; R7 := R0
  57 [-]: MOVE      R7 R1        ; R7 := R1
- 58 [-]: LE        0 R1 K13     ; if R1 > 0 then PC := 69
+ 58 [-]: LE        0 R1 K14     ; if R1 > 0 then PC := 69
  59 [-]: JMP       69           ; PC := 69
  60 [-]: TEST      R7 0         ; if not R7 then PC := 91
  61 [-]: JMP       91           ; PC := 91
- 62 [-]: LT        0 K13 R4     ; if 0 >= R4 then PC := 91
+ 62 [-]: LT        0 K14 R4     ; if 0 >= R4 then PC := 91
  63 [-]: JMP       91           ; PC := 91
  64 [-]: GETUPVAL  R8 U3        ; R8 := U3
  65 [-]: MOVE      R9 R3        ; R9 := R3
@@ -815,16 +815,16 @@ code size: 27
  73 [-]: JMP       83           ; PC := 83
  74 [-]: SELF      R8 R3 K5     ; R9 := R3; R8 := R3["0x8DB5D01F"]
  75 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 76 [-]: SELF      R8 R8 K18    ; R9 := R8; R8 := R8["0x3B1B11B9"]
+ 76 [-]: SELF      R8 R8 K19    ; R9 := R8; R8 := R8["0x3B1B11B9"]
  77 [-]: GETGLOBAL R10 K7       ; R10 := Game
  78 [-]: GETTABLE  R10 R10 K8   ; R10 := R10["AVATAR_ARMOUR"]
- 79 [-]: GETGLOBAL R11 K7       ; R11 := Game
- 80 [-]: GETTABLE  R11 R11 K9   ; R11 := R11["STACKING_MULTIPLY"]
+ 79 [-]: GETGLOBAL R11 K9       ; R11 := Engine
+ 80 [-]: GETTABLE  R11 R11 K10  ; R11 := R11["STACKING_MULTIPLY"]
  81 [-]: MOVE      R12 R6       ; R12 := R6
  82 [-]: CALL      R8 5 1       ; R8(R9,R10,R11,R12)
  83 [-]: TEST      R7 0         ; if not R7 then PC := 91
  84 [-]: JMP       91           ; PC := 91
- 85 [-]: EQ        0 R4 K13     ; if R4 ~= 0 then PC := 91
+ 85 [-]: EQ        0 R4 K14     ; if R4 ~= 0 then PC := 91
  86 [-]: JMP       91           ; PC := 91
  87 [-]: GETUPVAL  R8 U3        ; R8 := U3
  88 [-]: MOVE      R9 R3        ; R9 := R3
@@ -832,34 +832,34 @@ code size: 27
  90 [-]: CALL      R8 3 1       ; R8(R9,R10)
  91 [-]: TEST      R2 1         ; if R2 then PC := 125
  92 [-]: JMP       125          ; PC := 125
- 93 [-]: GETGLOBAL R8 K16       ; R8 := Lotus_Game
- 94 [-]: GETTABLE  R8 R8 K19    ; R8 := R8["0xFAFD4322"]
+ 93 [-]: GETGLOBAL R8 K17       ; R8 := Lotus_Game
+ 94 [-]: GETTABLE  R8 R8 K20    ; R8 := R8["0xFAFD4322"]
  95 [-]: CALL      R8 1 2       ; R8 := R8()
- 96 [-]: SETTABLE  R8 K20 R3    ; R8["instigator"] := R3
+ 96 [-]: SETTABLE  R8 K21 R3    ; R8["instigator"] := R3
  97 [-]: NEWTABLE  R9 1 0       ; R9 := {}
  98 [-]: MOVE      R10 R3       ; R10 := R3
  99 [-]: SETLIST   R9 1 1       ; R9[(1-1)*FPF+i] := R(9+i), 1 <= i <= 1
-100 [-]: SETTABLE  R8 K21 R9    ; R8["affected"] := R9
-101 [-]: GETGLOBAL R9 K23       ; R9 := hudBuffType
-102 [-]: SETTABLE  R8 K22 R9    ; R8["abilityType"] := R9
-103 [-]: EQ        0 R6 K13     ; if R6 ~= 0 then PC := 111
+100 [-]: SETTABLE  R8 K22 R9    ; R8["affected"] := R9
+101 [-]: GETGLOBAL R9 K24       ; R9 := hudBuffType
+102 [-]: SETTABLE  R8 K23 R9    ; R8["abilityType"] := R9
+103 [-]: EQ        0 R6 K14     ; if R6 ~= 0 then PC := 111
 104 [-]: JMP       111          ; PC := 111
-105 [-]: SELF      R9 R3 K24    ; R10 := R3; R9 := R3["0x584F13D6"]
+105 [-]: SELF      R9 R3 K25    ; R10 := R3; R9 := R3["0x584F13D6"]
 106 [-]: MOVE      R11 R8       ; R11 := R8
 107 [-]: MOVE      R12 R0       ; R12 := R0
 108 [-]: MOVE      R13 R0       ; R13 := R0
 109 [-]: CALL      R9 5 1       ; R9(R10,R11,R12,R13)
 110 [-]: JMP       125          ; PC := 125
-111 [-]: GETGLOBAL R9 K16       ; R9 := Lotus_Game
-112 [-]: GETTABLE  R9 R9 K26    ; R9 := R9["BT_PERCENT"]
-113 [-]: SETTABLE  R8 K25 R9    ; R8["buffType"] := R9
-114 [-]: GETGLOBAL R9 K11       ; R9 := math
-115 [-]: GETTABLE  R9 R9 K28    ; R9 := R9["0xF7005A7B"]
-116 [-]: MUL       R10 R6 K29   ; R10 := R6 * 1000
+111 [-]: GETGLOBAL R9 K17       ; R9 := Lotus_Game
+112 [-]: GETTABLE  R9 R9 K27    ; R9 := R9["BT_PERCENT"]
+113 [-]: SETTABLE  R8 K26 R9    ; R8["buffType"] := R9
+114 [-]: GETGLOBAL R9 K12       ; R9 := math
+115 [-]: GETTABLE  R9 R9 K29    ; R9 := R9["0xF7005A7B"]
+116 [-]: MUL       R10 R6 K30   ; R10 := R6 * 1000
 117 [-]: CALL      R9 2 2       ; R9 := R9(R10)
-118 [-]: DIV       R9 R9 K30    ; R9 := R9 / 10
-119 [-]: SETTABLE  R8 K27 R9    ; R8["buffData"] := R9
-120 [-]: SELF      R9 R3 K24    ; R10 := R3; R9 := R3["0x584F13D6"]
+118 [-]: DIV       R9 R9 K31    ; R9 := R9 / 10
+119 [-]: SETTABLE  R8 K28 R9    ; R8["buffData"] := R9
+120 [-]: SELF      R9 R3 K25    ; R10 := R3; R9 := R3["0x584F13D6"]
 121 [-]: MOVE      R11 R8       ; R11 := R8
 122 [-]: MOVE      R12 R1       ; R12 := R1
 123 [-]: MOVE      R13 R0       ; R13 := R0
@@ -871,109 +871,109 @@ code size: 27
 129 [-]: JMP       131          ; PC := 131
 130 [-]: RETURN    R0 1         ; return 
 131 [-]: GETGLOBAL R9 K1        ; R9 := 0x400E7765
-132 [-]: GETGLOBAL R10 K31      ; R10 := _T
-133 [-]: GETTABLE  R10 R10 K32  ; R10 := R10["sandmanSwarm"]
+132 [-]: GETGLOBAL R10 K32      ; R10 := _T
+133 [-]: GETTABLE  R10 R10 K33  ; R10 := R10["sandmanSwarm"]
 134 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 135 [-]: TEST      R9 0         ; if not R9 then PC := 140
 136 [-]: JMP       140          ; PC := 140
-137 [-]: GETGLOBAL R9 K31       ; R9 := _T
+137 [-]: GETGLOBAL R9 K32       ; R9 := _T
 138 [-]: NEWTABLE  R10 0 0      ; R10 := {}
-139 [-]: SETTABLE  R9 K32 R10   ; R9["sandmanSwarm"] := R10
-140 [-]: SELF      R9 R3 K33    ; R10 := R3; R9 := R3["0xDBEF0FB6"]
+139 [-]: SETTABLE  R9 K33 R10   ; R9["sandmanSwarm"] := R10
+140 [-]: SELF      R9 R3 K34    ; R10 := R3; R9 := R3["0xDBEF0FB6"]
 141 [-]: CALL      R9 2 2       ; R9 := R9(R10)
 142 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
-143 [-]: GETGLOBAL R11 K31      ; R11 := _T
-144 [-]: GETTABLE  R11 R11 K32  ; R11 := R11["sandmanSwarm"]
+143 [-]: GETGLOBAL R11 K32      ; R11 := _T
+144 [-]: GETTABLE  R11 R11 K33  ; R11 := R11["sandmanSwarm"]
 145 [-]: GETTABLE  R11 R11 R9   ; R11 := R11[R9]
 146 [-]: CALL      R10 2 2      ; R10 := R10(R11)
 147 [-]: TEST      R10 0        ; if not R10 then PC := 153
 148 [-]: JMP       153          ; PC := 153
-149 [-]: GETGLOBAL R10 K31      ; R10 := _T
-150 [-]: GETTABLE  R10 R10 K32  ; R10 := R10["sandmanSwarm"]
+149 [-]: GETGLOBAL R10 K32      ; R10 := _T
+150 [-]: GETTABLE  R10 R10 K33  ; R10 := R10["sandmanSwarm"]
 151 [-]: NEWTABLE  R11 0 0      ; R11 := {}
 152 [-]: SETTABLE  R10 R9 R11   ; R10[R9] := R11
-153 [-]: GETGLOBAL R10 K31      ; R10 := _T
-154 [-]: GETTABLE  R10 R10 K32  ; R10 := R10["sandmanSwarm"]
+153 [-]: GETGLOBAL R10 K32      ; R10 := _T
+154 [-]: GETTABLE  R10 R10 K33  ; R10 := R10["sandmanSwarm"]
 155 [-]: GETTABLE  R10 R10 R9   ; R10 := R10[R9]
-156 [-]: GETTABLE  R10 R10 K34  ; R10 := R10["orbitDecos"]
+156 [-]: GETTABLE  R10 R10 K35  ; R10 := R10["orbitDecos"]
 157 [-]: LEN       R10 R10      ; R10 := # R10
-158 [-]: LOADK     R11 K35      ; R11 := 1
-159 [-]: LOADK     R12 K36      ; R12 := -1
+158 [-]: LOADK     R11 K36      ; R11 := 1
+159 [-]: LOADK     R12 K37      ; R12 := -1
 160 [-]: FORPREP   R10 178      ; R10 -= R12; PC := 178
 161 [-]: GETGLOBAL R14 K1       ; R14 := 0x400E7765
-162 [-]: GETGLOBAL R15 K31      ; R15 := _T
-163 [-]: GETTABLE  R15 R15 K32  ; R15 := R15["sandmanSwarm"]
+162 [-]: GETGLOBAL R15 K32      ; R15 := _T
+163 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["sandmanSwarm"]
 164 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-165 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["orbitDecos"]
+165 [-]: GETTABLE  R15 R15 K35  ; R15 := R15["orbitDecos"]
 166 [-]: GETTABLE  R15 R15 R13  ; R15 := R15[R13]
 167 [-]: CALL      R14 2 2      ; R14 := R14(R15)
 168 [-]: TEST      R14 0        ; if not R14 then PC := 178
 169 [-]: JMP       178          ; PC := 178
-170 [-]: GETGLOBAL R14 K37      ; R14 := table
-171 [-]: GETTABLE  R14 R14 K38  ; R14 := R14["0xCDB1FD5E"]
-172 [-]: GETGLOBAL R15 K31      ; R15 := _T
-173 [-]: GETTABLE  R15 R15 K32  ; R15 := R15["sandmanSwarm"]
+170 [-]: GETGLOBAL R14 K38      ; R14 := table
+171 [-]: GETTABLE  R14 R14 K39  ; R14 := R14["0xCDB1FD5E"]
+172 [-]: GETGLOBAL R15 K32      ; R15 := _T
+173 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["sandmanSwarm"]
 174 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-175 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["orbitDecos"]
+175 [-]: GETTABLE  R15 R15 K35  ; R15 := R15["orbitDecos"]
 176 [-]: MOVE      R16 R13      ; R16 := R13
 177 [-]: CALL      R14 3 1      ; R14(R15,R16)
 178 [-]: FORLOOP   R10 161      ; R10 += R12; if R10 <= R11 then begin PC := 161; R13 := R10 end
-179 [-]: GETGLOBAL R14 K11      ; R14 := math
-180 [-]: GETTABLE  R14 R14 K28  ; R14 := R14["0xF7005A7B"]
+179 [-]: GETGLOBAL R14 K12      ; R14 := math
+180 [-]: GETTABLE  R14 R14 K29  ; R14 := R14["0xF7005A7B"]
 181 [-]: GETUPVAL  R15 U4       ; R15 := U4
 182 [-]: MUL       R15 R15 R6   ; R15 := R15 * R6
 183 [-]: CALL      R14 2 2      ; R14 := R14(R15)
-184 [-]: GETGLOBAL R15 K31      ; R15 := _T
-185 [-]: GETTABLE  R15 R15 K32  ; R15 := R15["sandmanSwarm"]
+184 [-]: GETGLOBAL R15 K32      ; R15 := _T
+185 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["sandmanSwarm"]
 186 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
-187 [-]: GETTABLE  R15 R15 K34  ; R15 := R15["orbitDecos"]
+187 [-]: GETTABLE  R15 R15 K35  ; R15 := R15["orbitDecos"]
 188 [-]: LEN       R15 R15      ; R15 := # R15
 189 [-]: LT        0 R15 R14    ; if R15 >= R14 then PC := 254
 190 [-]: JMP       254          ; PC := 254
 191 [-]: GETGLOBAL R15 K1       ; R15 := 0x400E7765
-192 [-]: GETGLOBAL R16 K31      ; R16 := _T
-193 [-]: GETTABLE  R16 R16 K32  ; R16 := R16["sandmanSwarm"]
+192 [-]: GETGLOBAL R16 K32      ; R16 := _T
+193 [-]: GETTABLE  R16 R16 K33  ; R16 := R16["sandmanSwarm"]
 194 [-]: GETTABLE  R16 R16 R9   ; R16 := R16[R9]
-195 [-]: GETTABLE  R16 R16 K34  ; R16 := R16["orbitDecos"]
+195 [-]: GETTABLE  R16 R16 K35  ; R16 := R16["orbitDecos"]
 196 [-]: CALL      R15 2 2      ; R15 := R15(R16)
 197 [-]: TEST      R15 0        ; if not R15 then PC := 204
 198 [-]: JMP       204          ; PC := 204
-199 [-]: GETGLOBAL R15 K31      ; R15 := _T
-200 [-]: GETTABLE  R15 R15 K32  ; R15 := R15["sandmanSwarm"]
+199 [-]: GETGLOBAL R15 K32      ; R15 := _T
+200 [-]: GETTABLE  R15 R15 K33  ; R15 := R15["sandmanSwarm"]
 201 [-]: GETTABLE  R15 R15 R9   ; R15 := R15[R9]
 202 [-]: NEWTABLE  R16 0 0      ; R16 := {}
-203 [-]: SETTABLE  R15 K34 R16  ; R15["orbitDecos"] := R16
-204 [-]: SELF      R15 R3 K39   ; R16 := R3; R15 := R3["0xE681382B"]
+203 [-]: SETTABLE  R15 K35 R16  ; R15["orbitDecos"] := R16
+204 [-]: SELF      R15 R3 K40   ; R16 := R3; R15 := R3["0xE681382B"]
 205 [-]: CALL      R15 2 2      ; R15 := R15(R16)
-206 [-]: GETGLOBAL R16 K40      ; R16 := 0x1E4F6281
+206 [-]: GETGLOBAL R16 K41      ; R16 := 0x1E4F6281
 207 [-]: CALL      R16 1 2      ; R16 := R16()
-208 [-]: LOADK     R17 K35      ; R17 := 1
-209 [-]: GETGLOBAL R18 K31      ; R18 := _T
-210 [-]: GETTABLE  R18 R18 K32  ; R18 := R18["sandmanSwarm"]
+208 [-]: LOADK     R17 K36      ; R17 := 1
+209 [-]: GETGLOBAL R18 K32      ; R18 := _T
+210 [-]: GETTABLE  R18 R18 K33  ; R18 := R18["sandmanSwarm"]
 211 [-]: GETTABLE  R18 R18 R9   ; R18 := R18[R9]
-212 [-]: GETTABLE  R18 R18 K34  ; R18 := R18["orbitDecos"]
+212 [-]: GETTABLE  R18 R18 K35  ; R18 := R18["orbitDecos"]
 213 [-]: LEN       R18 R18      ; R18 := # R18
 214 [-]: SUB       R18 R14 R18  ; R18 := R14 - R18
-215 [-]: LOADK     R19 K35      ; R19 := 1
+215 [-]: LOADK     R19 K36      ; R19 := 1
 216 [-]: FORPREP   R17 252      ; R17 -= R19; PC := 252
-217 [-]: GETGLOBAL R21 K42      ; R21 := 0x8C4A6742
-218 [-]: LOADK     R22 K43      ; R22 := -180
-219 [-]: LOADK     R23 K44      ; R23 := 180
+217 [-]: GETGLOBAL R21 K43      ; R21 := 0x8C4A6742
+218 [-]: LOADK     R22 K44      ; R22 := -180
+219 [-]: LOADK     R23 K45      ; R23 := 180
 220 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-221 [-]: SETTABLE  R16 K41 R21  ; R16["heading"] := R21
-222 [-]: GETGLOBAL R21 K42      ; R21 := 0x8C4A6742
-223 [-]: LOADK     R22 K43      ; R22 := -180
-224 [-]: LOADK     R23 K44      ; R23 := 180
+221 [-]: SETTABLE  R16 K42 R21  ; R16["heading"] := R21
+222 [-]: GETGLOBAL R21 K43      ; R21 := 0x8C4A6742
+223 [-]: LOADK     R22 K44      ; R22 := -180
+224 [-]: LOADK     R23 K45      ; R23 := 180
 225 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-226 [-]: SETTABLE  R16 K45 R21  ; R16["pitch"] := R21
-227 [-]: GETGLOBAL R21 K42      ; R21 := 0x8C4A6742
-228 [-]: LOADK     R22 K43      ; R22 := -180
-229 [-]: LOADK     R23 K44      ; R23 := 180
+226 [-]: SETTABLE  R16 K46 R21  ; R16["pitch"] := R21
+227 [-]: GETGLOBAL R21 K43      ; R21 := 0x8C4A6742
+228 [-]: LOADK     R22 K44      ; R22 := -180
+229 [-]: LOADK     R23 K45      ; R23 := 180
 230 [-]: CALL      R21 3 2      ; R21 := R21(R22,R23)
-231 [-]: SETTABLE  R16 K46 R21  ; R16["bank"] := R21
+231 [-]: SETTABLE  R16 K47 R21  ; R16["bank"] := R21
 232 [-]: GETGLOBAL R21 K3       ; R21 := gRegion
-233 [-]: SELF      R21 R21 K47  ; R22 := R21; R21 := R21["0xBDD34CC6"]
-234 [-]: GETGLOBAL R23 K48      ; R23 := orbitType
+233 [-]: SELF      R21 R21 K48  ; R22 := R21; R21 := R21["0xBDD34CC6"]
+234 [-]: GETGLOBAL R23 K49      ; R23 := orbitType
 235 [-]: MOVE      R24 R15      ; R24 := R15
 236 [-]: MOVE      R25 R16      ; R25 := R16
 237 [-]: MOVE      R26 R0       ; R26 := R0
@@ -983,42 +983,42 @@ code size: 27
 241 [-]: CALL      R22 2 2      ; R22 := R22(R23)
 242 [-]: TEST      R22 1        ; if R22 then PC := 252
 243 [-]: JMP       252          ; PC := 252
-244 [-]: GETGLOBAL R22 K37      ; R22 := table
-245 [-]: GETTABLE  R22 R22 K49  ; R22 := R22["0xE6450C9D"]
-246 [-]: GETGLOBAL R23 K31      ; R23 := _T
-247 [-]: GETTABLE  R23 R23 K32  ; R23 := R23["sandmanSwarm"]
+244 [-]: GETGLOBAL R22 K38      ; R22 := table
+245 [-]: GETTABLE  R22 R22 K50  ; R22 := R22["0xE6450C9D"]
+246 [-]: GETGLOBAL R23 K32      ; R23 := _T
+247 [-]: GETTABLE  R23 R23 K33  ; R23 := R23["sandmanSwarm"]
 248 [-]: GETTABLE  R23 R23 R9   ; R23 := R23[R9]
-249 [-]: GETTABLE  R23 R23 K34  ; R23 := R23["orbitDecos"]
+249 [-]: GETTABLE  R23 R23 K35  ; R23 := R23["orbitDecos"]
 250 [-]: MOVE      R24 R21      ; R24 := R21
 251 [-]: CALL      R22 3 1      ; R22(R23,R24)
 252 [-]: FORLOOP   R17 217      ; R17 += R19; if R17 <= R18 then begin PC := 217; R20 := R17 end
 253 [-]: JMP       283          ; PC := 283
-254 [-]: GETGLOBAL R22 K31      ; R22 := _T
-255 [-]: GETTABLE  R22 R22 K32  ; R22 := R22["sandmanSwarm"]
+254 [-]: GETGLOBAL R22 K32      ; R22 := _T
+255 [-]: GETTABLE  R22 R22 K33  ; R22 := R22["sandmanSwarm"]
 256 [-]: GETTABLE  R22 R22 R9   ; R22 := R22[R9]
-257 [-]: GETTABLE  R22 R22 K34  ; R22 := R22["orbitDecos"]
+257 [-]: GETTABLE  R22 R22 K35  ; R22 := R22["orbitDecos"]
 258 [-]: LEN       R22 R22      ; R22 := # R22
-259 [-]: ADD       R23 R14 K35  ; R23 := R14 + 1
-260 [-]: LOADK     R24 K36      ; R24 := -1
+259 [-]: ADD       R23 R14 K36  ; R23 := R14 + 1
+260 [-]: LOADK     R24 K37      ; R24 := -1
 261 [-]: FORPREP   R22 282      ; R22 -= R24; PC := 282
-262 [-]: GETGLOBAL R26 K31      ; R26 := _T
-263 [-]: GETTABLE  R26 R26 K32  ; R26 := R26["sandmanSwarm"]
+262 [-]: GETGLOBAL R26 K32      ; R26 := _T
+263 [-]: GETTABLE  R26 R26 K33  ; R26 := R26["sandmanSwarm"]
 264 [-]: GETTABLE  R26 R26 R9   ; R26 := R26[R9]
-265 [-]: GETTABLE  R26 R26 K34  ; R26 := R26["orbitDecos"]
+265 [-]: GETTABLE  R26 R26 K35  ; R26 := R26["orbitDecos"]
 266 [-]: GETTABLE  R26 R26 R25  ; R26 := R26[R25]
 267 [-]: GETGLOBAL R27 K1       ; R27 := 0x400E7765
 268 [-]: MOVE      R28 R26      ; R28 := R26
 269 [-]: CALL      R27 2 2      ; R27 := R27(R28)
 270 [-]: TEST      R27 1        ; if R27 then PC := 274
 271 [-]: JMP       274          ; PC := 274
-272 [-]: SELF      R27 R26 K50  ; R28 := R26; R27 := R26["0xD4C2743F"]
+272 [-]: SELF      R27 R26 K51  ; R28 := R26; R27 := R26["0xD4C2743F"]
 273 [-]: CALL      R27 2 1      ; R27(R28)
-274 [-]: GETGLOBAL R27 K37      ; R27 := table
-275 [-]: GETTABLE  R27 R27 K38  ; R27 := R27["0xCDB1FD5E"]
-276 [-]: GETGLOBAL R28 K31      ; R28 := _T
-277 [-]: GETTABLE  R28 R28 K32  ; R28 := R28["sandmanSwarm"]
+274 [-]: GETGLOBAL R27 K38      ; R27 := table
+275 [-]: GETTABLE  R27 R27 K39  ; R27 := R27["0xCDB1FD5E"]
+276 [-]: GETGLOBAL R28 K32      ; R28 := _T
+277 [-]: GETTABLE  R28 R28 K33  ; R28 := R28["sandmanSwarm"]
 278 [-]: GETTABLE  R28 R28 R9   ; R28 := R28[R9]
-279 [-]: GETTABLE  R28 R28 K34  ; R28 := R28["orbitDecos"]
+279 [-]: GETTABLE  R28 R28 K35  ; R28 := R28["orbitDecos"]
 280 [-]: MOVE      R29 R25      ; R29 := R25
 281 [-]: CALL      R27 3 1      ; R27(R28,R29)
 282 [-]: FORLOOP   R22 262      ; R22 += R24; if R22 <= R23 then begin PC := 262; R25 := R22 end

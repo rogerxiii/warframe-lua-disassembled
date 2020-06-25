@@ -1,6 +1,6 @@
 code size: 7
 code size: 18
-code size: 46
+code size: 41
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\NPC\MiniJackalSpawn.luac 
 
@@ -56,7 +56,7 @@ code size: 46
 ; #Upvalues:       0
 ; #Parameters:     1
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  10
 
   1 [-]: GETGLOBAL R1 K0        ; R1 := _T
   2 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["InSimulacrum"]
@@ -64,45 +64,40 @@ code size: 46
   4 [-]: JMP       6            ; PC := 6
   5 [-]: RETURN    R0 1         ; return 
   6 [-]: GETGLOBAL R1 K2        ; R1 := gGameRules
-  7 [-]: GETGLOBAL R2 K3        ; R2 := gRegion
-  8 [-]: SELF      R2 R2 K4     ; R3 := R2; R2 := R2["0x48FBE19F"]
-  9 [-]: CALL      R2 2 2       ; R2 := R2(R3)
- 10 [-]: SELF      R3 R1 K5     ; R4 := R1; R3 := R1["0xE20DC519"]
- 11 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 12 [-]: GETGLOBAL R4 K6        ; R4 := 0x400E7765
- 13 [-]: MOVE      R5 R1        ; R5 := R1
- 14 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 15 [-]: TEST      R4 1         ; if R4 then PC := 30
- 16 [-]: JMP       30           ; PC := 30
- 17 [-]: MOVE      R4 R3        ; R4 := R3
- 18 [-]: GETGLOBAL R5 K7        ; R5 := Lotus_Game
- 19 [-]: GETTABLE  R5 R5 K8     ; R5 := R5["MT_SABOTAGE"]
- 20 [-]: EQ        0 R4 R5      ; if R4 ~= R5 then PC := 30
- 21 [-]: JMP       30           ; PC := 30
- 22 [-]: SELF      R4 R1 K9     ; R5 := R1; R4 := R1["0xED0EE7FB"]
- 23 [-]: GETGLOBAL R6 K10       ; R6 := 0xEC274B1A
- 24 [-]: LOADK     R7 K11       ; R7 := "StopNormalTransmissions"
- 25 [-]: CALL      R6 2 0       ; R6,... := R6(R7)
- 26 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 27 [-]: EQ        1 R4 K12     ; if R4 == 0 then PC := 30
- 28 [-]: JMP       30           ; PC := 30
- 29 [-]: RETURN    R0 1         ; return 
- 30 [-]: LOADK     R4 K13       ; R4 := 1
- 31 [-]: LEN       R5 R2        ; R5 := # R2
- 32 [-]: LOADK     R6 K13       ; R6 := 1
- 33 [-]: FORPREP   R4 45        ; R4 -= R6; PC := 45
- 34 [-]: GETTABLE  R8 R2 R7     ; R8 := R2[R7]
- 35 [-]: SELF      R8 R8 K14    ; R9 := R8; R8 := R8["0x80B14403"]
- 36 [-]: CALL      R8 2 2       ; R8 := R8(R9)
- 37 [-]: GETGLOBAL R9 K6        ; R9 := 0x400E7765
- 38 [-]: MOVE      R10 R8       ; R10 := R8
- 39 [-]: CALL      R9 2 2       ; R9 := R9(R10)
- 40 [-]: TEST      R9 1         ; if R9 then PC := 45
- 41 [-]: JMP       45           ; PC := 45
- 42 [-]: SELF      R9 R8 K15    ; R10 := R8; R9 := R8["0x8AD099B"]
- 43 [-]: GETGLOBAL R11 K16      ; R11 := transmission
- 44 [-]: CALL      R9 3 1       ; R9(R10,R11)
- 45 [-]: FORLOOP   R4 34        ; R4 += R6; if R4 <= R5 then begin PC := 34; R7 := R4 end
- 46 [-]: RETURN    R0 1         ; return 
+  7 [-]: SELF      R1 R1 K3     ; R2 := R1; R1 := R1["0xE20DC519"]
+  8 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+  9 [-]: GETGLOBAL R2 K4        ; R2 := Lotus_Game
+ 10 [-]: GETTABLE  R2 R2 K5     ; R2 := R2["MT_SABOTAGE"]
+ 11 [-]: EQ        0 R1 R2      ; if R1 ~= R2 then PC := 21
+ 12 [-]: JMP       21           ; PC := 21
+ 13 [-]: GETGLOBAL R1 K2        ; R1 := gGameRules
+ 14 [-]: SELF      R1 R1 K6     ; R2 := R1; R1 := R1["0xED0EE7FB"]
+ 15 [-]: GETGLOBAL R3 K7        ; R3 := 0xEC274B1A
+ 16 [-]: LOADK     R4 K8        ; R4 := "StopNormalTransmissions"
+ 17 [-]: CALL      R3 2 0       ; R3,... := R3(R4)
+ 18 [-]: CALL      R1 0 2       ; R1 := R1(R2,...)
+ 19 [-]: EQ        1 R1 K9      ; if R1 == 0 then PC := 22
+ 20 [-]: JMP       22           ; PC := 22
+ 21 [-]: RETURN    R0 1         ; return 
+ 22 [-]: GETGLOBAL R1 K10       ; R1 := gRegion
+ 23 [-]: SELF      R1 R1 K11    ; R2 := R1; R1 := R1["0x48FBE19F"]
+ 24 [-]: CALL      R1 2 2       ; R1 := R1(R2)
+ 25 [-]: LOADK     R2 K12       ; R2 := 1
+ 26 [-]: LEN       R3 R1        ; R3 := # R1
+ 27 [-]: LOADK     R4 K12       ; R4 := 1
+ 28 [-]: FORPREP   R2 40        ; R2 -= R4; PC := 40
+ 29 [-]: GETTABLE  R6 R1 R5     ; R6 := R1[R5]
+ 30 [-]: SELF      R6 R6 K13    ; R7 := R6; R6 := R6["0x80B14403"]
+ 31 [-]: CALL      R6 2 2       ; R6 := R6(R7)
+ 32 [-]: GETGLOBAL R7 K14       ; R7 := 0x400E7765
+ 33 [-]: MOVE      R8 R6        ; R8 := R6
+ 34 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 35 [-]: TEST      R7 1         ; if R7 then PC := 40
+ 36 [-]: JMP       40           ; PC := 40
+ 37 [-]: SELF      R7 R6 K15    ; R8 := R6; R7 := R6["0x8AD099B"]
+ 38 [-]: GETGLOBAL R9 K16       ; R9 := transmission
+ 39 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 40 [-]: FORLOOP   R2 29        ; R2 += R4; if R2 <= R3 then begin PC := 29; R5 := R2 end
+ 41 [-]: RETURN    R0 1         ; return 
 
 

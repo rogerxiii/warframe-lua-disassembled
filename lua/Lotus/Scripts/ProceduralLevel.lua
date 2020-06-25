@@ -32,7 +32,7 @@ code size: 21
 code size: 178
 code size: 19
 code size: 19
-code size: 187
+code size: 181
 code size: 17
 code size: 70
 code size: 239
@@ -3205,133 +3205,127 @@ code size: 1003
  64 [-]: GETGLOBAL R11 K22      ; R11 := 0x400E7765
  65 [-]: GETGLOBAL R12 K23      ; R12 := gGameData
  66 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 67 [-]: TEST      R11 1        ; if R11 then PC := 177
- 68 [-]: JMP       177          ; PC := 177
+ 67 [-]: TEST      R11 1        ; if R11 then PC := 171
+ 68 [-]: JMP       171          ; PC := 171
  69 [-]: GETGLOBAL R11 K23      ; R11 := gGameData
  70 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x2D0B8A86"]
  71 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  72 [-]: SELF      R11 R11 K25  ; R12 := R11; R11 := R11["0x5B8EB241"]
  73 [-]: CALL      R11 2 2      ; R11 := R11(R12)
- 74 [-]: TEST      R11 0        ; if not R11 then PC := 177
- 75 [-]: JMP       177          ; PC := 177
+ 74 [-]: TEST      R11 0        ; if not R11 then PC := 171
+ 75 [-]: JMP       171          ; PC := 171
  76 [-]: GETGLOBAL R11 K23      ; R11 := gGameData
  77 [-]: SELF      R11 R11 K24  ; R12 := R11; R11 := R11["0x2D0B8A86"]
  78 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  79 [-]: GETTABLE  R11 R11 K26  ; R11 := R11["mSeasonInfo"]
  80 [-]: GETTABLE  R11 R11 K27  ; R11 := R11["mSeason"]
- 81 [-]: EQ        0 R11 K28    ; if R11 ~= 4 then PC := 177
- 82 [-]: JMP       177          ; PC := 177
+ 81 [-]: EQ        0 R11 K28    ; if R11 ~= 4 then PC := 171
+ 82 [-]: JMP       171          ; PC := 171
  83 [-]: GETGLOBAL R11 K3       ; R11 := gGameRules
  84 [-]: SELF      R11 R11 K4   ; R12 := R11; R11 := R11["0xB8637349"]
  85 [-]: CALL      R11 2 2      ; R11 := R11(R12)
  86 [-]: GETTABLE  R12 R11 K29  ; R12 := R11["goalTag"]
  87 [-]: GETGLOBAL R13 K30      ; R13 := EMPTY_SYMBOL
- 88 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 177
- 89 [-]: JMP       177          ; PC := 177
+ 88 [-]: EQ        0 R12 R13    ; if R12 ~= R13 then PC := 171
+ 89 [-]: JMP       171          ; PC := 171
  90 [-]: GETGLOBAL R12 K31      ; R12 := isArchwingMission
- 91 [-]: TEST      R12 1        ; if R12 then PC := 177
- 92 [-]: JMP       177          ; PC := 177
- 93 [-]: GETGLOBAL R12 K22      ; R12 := 0x400E7765
- 94 [-]: GETTABLE  R13 R11 K32  ; R13 := R11["questReq"]
- 95 [-]: CALL      R12 2 2      ; R12 := R12(R13)
- 96 [-]: TEST      R12 0        ; if not R12 then PC := 177
- 97 [-]: JMP       177          ; PC := 177
- 98 [-]: GETGLOBAL R12 K22      ; R12 := 0x400E7765
- 99 [-]: GETTABLE  R13 R11 K33  ; R13 := R11["levelKeyName"]
-100 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-101 [-]: TEST      R12 0        ; if not R12 then PC := 177
-102 [-]: JMP       177          ; PC := 177
-103 [-]: GETGLOBAL R12 K22      ; R12 := 0x400E7765
-104 [-]: GETTABLE  R13 R11 K34  ; R13 := R11["keyChainName"]
-105 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-106 [-]: TEST      R12 0        ; if not R12 then PC := 177
-107 [-]: JMP       177          ; PC := 177
-108 [-]: GETGLOBAL R12 K35      ; R12 := _T
-109 [-]: GETTABLE  R12 R12 K36  ; R12 := R12["SecretMiniGameActive"]
-110 [-]: TEST      R12 1        ; if R12 then PC := 177
-111 [-]: JMP       177          ; PC := 177
-112 [-]: GETGLOBAL R12 K22      ; R12 := 0x400E7765
-113 [-]: GETTABLE  R13 R11 K37  ; R13 := R11["requiredItems"]
-114 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-115 [-]: TEST      R12 1        ; if R12 then PC := 121
-116 [-]: JMP       121          ; PC := 121
-117 [-]: GETTABLE  R12 R11 K37  ; R12 := R11["requiredItems"]
-118 [-]: LEN       R12 R12      ; R12 := # R12
-119 [-]: EQ        0 R12 K21    ; if R12 ~= 0 then PC := 177
-120 [-]: JMP       177          ; PC := 177
-121 [-]: SELF      R12 R11 K38  ; R13 := R11; R12 := R11["0xEFC448EC"]
-122 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-123 [-]: GETGLOBAL R13 K30      ; R13 := EMPTY_SYMBOL
-124 [-]: EQ        1 R12 R13    ; if R12 == R13 then PC := 132
-125 [-]: JMP       132          ; PC := 132
-126 [-]: SELF      R12 R11 K38  ; R13 := R11; R12 := R11["0xEFC448EC"]
-127 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-128 [-]: GETGLOBAL R13 K39      ; R13 := Lotus_Game
-129 [-]: GETTABLE  R13 R13 K40  ; R13 := R13["FC_SENTIENT"]
-130 [-]: EQ        1 R12 R13    ; if R12 == R13 then PC := 177
-131 [-]: JMP       177          ; PC := 177
-132 [-]: GETGLOBAL R12 K3       ; R12 := gGameRules
-133 [-]: SELF      R12 R12 K41  ; R13 := R12; R12 := R12["0xE20DC519"]
-134 [-]: CALL      R12 2 2      ; R12 := R12(R13)
-135 [-]: NEWTABLE  R13 15 0     ; R13 := {}
-136 [-]: GETGLOBAL R14 K39      ; R14 := Lotus_Game
-137 [-]: GETTABLE  R14 R14 K42  ; R14 := R14["MT_EXTERMINATION"]
-138 [-]: GETGLOBAL R15 K39      ; R15 := Lotus_Game
-139 [-]: GETTABLE  R15 R15 K43  ; R15 := R15["MT_LANDSCAPE"]
-140 [-]: GETGLOBAL R16 K39      ; R16 := Lotus_Game
-141 [-]: GETTABLE  R16 R16 K44  ; R16 := R16["MT_SURVIVAL"]
-142 [-]: GETGLOBAL R17 K39      ; R17 := Lotus_Game
-143 [-]: GETTABLE  R17 R17 K45  ; R17 := R17["MT_RESCUE"]
-144 [-]: GETGLOBAL R18 K39      ; R18 := Lotus_Game
-145 [-]: GETTABLE  R18 R18 K46  ; R18 := R18["MT_SABOTAGE"]
-146 [-]: GETGLOBAL R19 K39      ; R19 := Lotus_Game
-147 [-]: GETTABLE  R19 R19 K47  ; R19 := R19["MT_CAPTURE"]
-148 [-]: GETGLOBAL R20 K39      ; R20 := Lotus_Game
-149 [-]: GETTABLE  R20 R20 K48  ; R20 := R20["MT_INTEL"]
-150 [-]: GETGLOBAL R21 K39      ; R21 := Lotus_Game
-151 [-]: GETTABLE  R21 R21 K49  ; R21 := R21["MT_DEFENSE"]
-152 [-]: GETGLOBAL R22 K39      ; R22 := Lotus_Game
-153 [-]: GETTABLE  R22 R22 K50  ; R22 := R22["MT_MOBILE_DEFENSE"]
-154 [-]: GETGLOBAL R23 K39      ; R23 := Lotus_Game
-155 [-]: GETTABLE  R23 R23 K51  ; R23 := R23["MT_TERRITORY"]
-156 [-]: GETGLOBAL R24 K39      ; R24 := Lotus_Game
-157 [-]: GETTABLE  R24 R24 K52  ; R24 := R24["MT_RETRIEVAL"]
-158 [-]: GETGLOBAL R25 K39      ; R25 := Lotus_Game
-159 [-]: GETTABLE  R25 R25 K53  ; R25 := R25["MT_HIVE"]
-160 [-]: GETGLOBAL R26 K39      ; R26 := Lotus_Game
-161 [-]: GETTABLE  R26 R26 K54  ; R26 := R26["MT_EXCAVATE"]
-162 [-]: GETGLOBAL R27 K39      ; R27 := Lotus_Game
-163 [-]: GETTABLE  R27 R27 K55  ; R27 := R27["MT_ARTIFACT"]
-164 [-]: GETGLOBAL R28 K39      ; R28 := Lotus_Game
-165 [-]: GETTABLE  R28 R28 K56  ; R28 := R28["MT_RAILJACK"]
-166 [-]: SETLIST   R13 15 1     ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 15
-167 [-]: LOADK     R14 K13      ; R14 := 1
-168 [-]: LEN       R15 R13      ; R15 := # R13
-169 [-]: LOADK     R16 K13      ; R16 := 1
-170 [-]: FORPREP   R14 176      ; R14 -= R16; PC := 176
-171 [-]: GETTABLE  R18 R13 R17  ; R18 := R13[R17]
-172 [-]: EQ        0 R12 R18    ; if R12 ~= R18 then PC := 176
-173 [-]: JMP       176          ; PC := 176
-174 [-]: MOVE      R10 R1       ; R10 := R1
-175 [-]: JMP       177          ; PC := 177
-176 [-]: FORLOOP   R14 171      ; R14 += R16; if R14 <= R15 then begin PC := 171; R17 := R14 end
-177 [-]: TEST      R10 0        ; if not R10 then PC := 187
-178 [-]: JMP       187          ; PC := 187
-179 [-]: GETGLOBAL R18 K3       ; R18 := gGameRules
-180 [-]: SELF      R18 R18 K16  ; R19 := R18; R18 := R18["0x4A57F63D"]
-181 [-]: GETUPVAL  R20 U1       ; R20 := U1
-182 [-]: SELF      R20 R20 K17  ; R21 := R20; R20 := R20["0x1B252E3C"]
-183 [-]: CALL      R20 2 2      ; R20 := R20(R21)
-184 [-]: LOADK     R21 K57      ; R21 := "OnCephalonTearReady"
-185 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
-186 [-]: RETURN    R0 1         ; return 
-187 [-]: RETURN    R0 1         ; return 
+ 91 [-]: TEST      R12 1        ; if R12 then PC := 171
+ 92 [-]: JMP       171          ; PC := 171
+ 93 [-]: GETGLOBAL R12 K32      ; R12 := _T
+ 94 [-]: GETTABLE  R12 R12 K33  ; R12 := R12["gQuestMission"]
+ 95 [-]: TEST      R12 1        ; if R12 then PC := 171
+ 96 [-]: JMP       171          ; PC := 171
+ 97 [-]: GETGLOBAL R12 K22      ; R12 := 0x400E7765
+ 98 [-]: GETTABLE  R13 R11 K34  ; R13 := R11["keyChainName"]
+ 99 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+100 [-]: TEST      R12 0        ; if not R12 then PC := 171
+101 [-]: JMP       171          ; PC := 171
+102 [-]: GETGLOBAL R12 K32      ; R12 := _T
+103 [-]: GETTABLE  R12 R12 K35  ; R12 := R12["SecretMiniGameActive"]
+104 [-]: TEST      R12 1        ; if R12 then PC := 171
+105 [-]: JMP       171          ; PC := 171
+106 [-]: GETGLOBAL R12 K22      ; R12 := 0x400E7765
+107 [-]: GETTABLE  R13 R11 K36  ; R13 := R11["requiredItems"]
+108 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+109 [-]: TEST      R12 1        ; if R12 then PC := 115
+110 [-]: JMP       115          ; PC := 115
+111 [-]: GETTABLE  R12 R11 K36  ; R12 := R11["requiredItems"]
+112 [-]: LEN       R12 R12      ; R12 := # R12
+113 [-]: EQ        0 R12 K21    ; if R12 ~= 0 then PC := 171
+114 [-]: JMP       171          ; PC := 171
+115 [-]: SELF      R12 R11 K37  ; R13 := R11; R12 := R11["0xEFC448EC"]
+116 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+117 [-]: GETGLOBAL R13 K30      ; R13 := EMPTY_SYMBOL
+118 [-]: EQ        1 R12 R13    ; if R12 == R13 then PC := 126
+119 [-]: JMP       126          ; PC := 126
+120 [-]: SELF      R12 R11 K37  ; R13 := R11; R12 := R11["0xEFC448EC"]
+121 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+122 [-]: GETGLOBAL R13 K38      ; R13 := Lotus_Game
+123 [-]: GETTABLE  R13 R13 K39  ; R13 := R13["FC_SENTIENT"]
+124 [-]: EQ        1 R12 R13    ; if R12 == R13 then PC := 171
+125 [-]: JMP       171          ; PC := 171
+126 [-]: GETGLOBAL R12 K3       ; R12 := gGameRules
+127 [-]: SELF      R12 R12 K40  ; R13 := R12; R12 := R12["0xE20DC519"]
+128 [-]: CALL      R12 2 2      ; R12 := R12(R13)
+129 [-]: NEWTABLE  R13 15 0     ; R13 := {}
+130 [-]: GETGLOBAL R14 K38      ; R14 := Lotus_Game
+131 [-]: GETTABLE  R14 R14 K41  ; R14 := R14["MT_EXTERMINATION"]
+132 [-]: GETGLOBAL R15 K38      ; R15 := Lotus_Game
+133 [-]: GETTABLE  R15 R15 K42  ; R15 := R15["MT_LANDSCAPE"]
+134 [-]: GETGLOBAL R16 K38      ; R16 := Lotus_Game
+135 [-]: GETTABLE  R16 R16 K43  ; R16 := R16["MT_SURVIVAL"]
+136 [-]: GETGLOBAL R17 K38      ; R17 := Lotus_Game
+137 [-]: GETTABLE  R17 R17 K44  ; R17 := R17["MT_RESCUE"]
+138 [-]: GETGLOBAL R18 K38      ; R18 := Lotus_Game
+139 [-]: GETTABLE  R18 R18 K45  ; R18 := R18["MT_SABOTAGE"]
+140 [-]: GETGLOBAL R19 K38      ; R19 := Lotus_Game
+141 [-]: GETTABLE  R19 R19 K46  ; R19 := R19["MT_CAPTURE"]
+142 [-]: GETGLOBAL R20 K38      ; R20 := Lotus_Game
+143 [-]: GETTABLE  R20 R20 K47  ; R20 := R20["MT_INTEL"]
+144 [-]: GETGLOBAL R21 K38      ; R21 := Lotus_Game
+145 [-]: GETTABLE  R21 R21 K48  ; R21 := R21["MT_DEFENSE"]
+146 [-]: GETGLOBAL R22 K38      ; R22 := Lotus_Game
+147 [-]: GETTABLE  R22 R22 K49  ; R22 := R22["MT_MOBILE_DEFENSE"]
+148 [-]: GETGLOBAL R23 K38      ; R23 := Lotus_Game
+149 [-]: GETTABLE  R23 R23 K50  ; R23 := R23["MT_TERRITORY"]
+150 [-]: GETGLOBAL R24 K38      ; R24 := Lotus_Game
+151 [-]: GETTABLE  R24 R24 K51  ; R24 := R24["MT_RETRIEVAL"]
+152 [-]: GETGLOBAL R25 K38      ; R25 := Lotus_Game
+153 [-]: GETTABLE  R25 R25 K52  ; R25 := R25["MT_HIVE"]
+154 [-]: GETGLOBAL R26 K38      ; R26 := Lotus_Game
+155 [-]: GETTABLE  R26 R26 K53  ; R26 := R26["MT_EXCAVATE"]
+156 [-]: GETGLOBAL R27 K38      ; R27 := Lotus_Game
+157 [-]: GETTABLE  R27 R27 K54  ; R27 := R27["MT_ARTIFACT"]
+158 [-]: GETGLOBAL R28 K38      ; R28 := Lotus_Game
+159 [-]: GETTABLE  R28 R28 K55  ; R28 := R28["MT_RAILJACK"]
+160 [-]: SETLIST   R13 15 1     ; R13[(1-1)*FPF+i] := R(13+i), 1 <= i <= 15
+161 [-]: LOADK     R14 K13      ; R14 := 1
+162 [-]: LEN       R15 R13      ; R15 := # R13
+163 [-]: LOADK     R16 K13      ; R16 := 1
+164 [-]: FORPREP   R14 170      ; R14 -= R16; PC := 170
+165 [-]: GETTABLE  R18 R13 R17  ; R18 := R13[R17]
+166 [-]: EQ        0 R12 R18    ; if R12 ~= R18 then PC := 170
+167 [-]: JMP       170          ; PC := 170
+168 [-]: MOVE      R10 R1       ; R10 := R1
+169 [-]: JMP       171          ; PC := 171
+170 [-]: FORLOOP   R14 165      ; R14 += R16; if R14 <= R15 then begin PC := 165; R17 := R14 end
+171 [-]: TEST      R10 0        ; if not R10 then PC := 181
+172 [-]: JMP       181          ; PC := 181
+173 [-]: GETGLOBAL R18 K3       ; R18 := gGameRules
+174 [-]: SELF      R18 R18 K16  ; R19 := R18; R18 := R18["0x4A57F63D"]
+175 [-]: GETUPVAL  R20 U1       ; R20 := U1
+176 [-]: SELF      R20 R20 K17  ; R21 := R20; R20 := R20["0x1B252E3C"]
+177 [-]: CALL      R20 2 2      ; R20 := R20(R21)
+178 [-]: LOADK     R21 K56      ; R21 := "OnCephalonTearReady"
+179 [-]: CALL      R18 4 1      ; R18(R19,R20,R21)
+180 [-]: RETURN    R0 1         ; return 
+181 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #35:
 ;
 ; Name:            
-; Defined at line: 1267
+; Defined at line: 1266
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -3359,7 +3353,7 @@ code size: 1003
 ; Function #36:
 ;
 ; Name:            
-; Defined at line: 1275
+; Defined at line: 1274
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3440,7 +3434,7 @@ code size: 1003
 ; Function #37:
 ;
 ; Name:            
-; Defined at line: 1307
+; Defined at line: 1306
 ; #Upvalues:       7
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3690,7 +3684,7 @@ code size: 1003
 ; Function #38:
 ;
 ; Name:            
-; Defined at line: 1386
+; Defined at line: 1385
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3827,7 +3821,7 @@ code size: 1003
 ; Function #39:
 ;
 ; Name:            
-; Defined at line: 1433
+; Defined at line: 1432
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -3924,7 +3918,7 @@ code size: 1003
 ; Function #40:
 ;
 ; Name:            
-; Defined at line: 1464
+; Defined at line: 1463
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4013,7 +4007,7 @@ code size: 1003
 ; Function #41:
 ;
 ; Name:            
-; Defined at line: 1499
+; Defined at line: 1498
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4077,7 +4071,7 @@ code size: 1003
 ; Function #42:
 ;
 ; Name:            
-; Defined at line: 1517
+; Defined at line: 1516
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4109,7 +4103,7 @@ code size: 1003
 ; Function #43:
 ;
 ; Name:            
-; Defined at line: 1528
+; Defined at line: 1527
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4148,7 +4142,7 @@ code size: 1003
 ; Function #44:
 ;
 ; Name:            
-; Defined at line: 1539
+; Defined at line: 1538
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4188,7 +4182,7 @@ code size: 1003
 ; Function #45:
 ;
 ; Name:            
-; Defined at line: 1548
+; Defined at line: 1547
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4214,7 +4208,7 @@ code size: 1003
 ; Function #46:
 ;
 ; Name:            
-; Defined at line: 1553
+; Defined at line: 1552
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4564,7 +4558,7 @@ code size: 1003
 ; Function #47:
 ;
 ; Name:            
-; Defined at line: 1691
+; Defined at line: 1690
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4791,7 +4785,7 @@ code size: 1003
 ; Function #48:
 ;
 ; Name:            
-; Defined at line: 1786
+; Defined at line: 1785
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -4877,7 +4871,7 @@ code size: 1003
 ; Function #49:
 ;
 ; Name:            
-; Defined at line: 1821
+; Defined at line: 1820
 ; #Upvalues:       31
 ; #Parameters:     1
 ; Is_vararg:       0

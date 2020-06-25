@@ -1183,10 +1183,10 @@ code size: 84
 937 [-]: MOVE      R0 R101      ; R0 := R101
 938 [-]: MOVE      R0 R31       ; R0 := R31
 939 [-]: MOVE      R0 R102      ; R0 := R102
-940 [-]: MOVE      R0 R84       ; R0 := R84
-941 [-]: MOVE      R0 R32       ; R0 := R32
-942 [-]: MOVE      R0 R71       ; R0 := R71
-943 [-]: MOVE      R0 R214      ; R0 := R214
+940 [-]: MOVE      R0 R71       ; R0 := R71
+941 [-]: MOVE      R0 R214      ; R0 := R214
+942 [-]: MOVE      R0 R84       ; R0 := R84
+943 [-]: MOVE      R0 R32       ; R0 := R32
 944 [-]: MOVE      R0 R162      ; R0 := R162
 945 [-]: MOVE      R0 R121      ; R0 := R121
 946 [-]: MOVE      R0 R55       ; R0 := R55
@@ -11746,97 +11746,97 @@ code size: 84
 404 [-]: MOVE      R7 R4        ; R7 := R4
 405 [-]: LOADK     R8 K52       ; R8 := "HudTracker"
 406 [-]: CALL      R6 3 1       ; R6(R7,R8)
-407 [-]: GETUPVAL  R6 U23       ; R6 := U23
-408 [-]: TEST      R6 1         ; if R6 then PC := 411
-409 [-]: JMP       411          ; PC := 411
-410 [-]: RETURN    R0 1         ; return 
-411 [-]: GETUPVAL  R6 U38       ; R6 := U38
-412 [-]: LT        0 K16 R6     ; if 0 >= R6 then PC := 422
-413 [-]: JMP       422          ; PC := 422
-414 [-]: GETUPVAL  R6 U38       ; R6 := U38
-415 [-]: SUB       R6 R6 R0     ; R6 := R6 - R0
-416 [-]: MOVE      R6 R38       ; R6 := R38
-417 [-]: GETUPVAL  R6 U38       ; R6 := U38
-418 [-]: LE        0 R6 K16     ; if R6 > 0 then PC := 422
-419 [-]: JMP       422          ; PC := 422
-420 [-]: LOADK     R6 K16       ; R6 := 0
-421 [-]: MOVE      R6 R38       ; R6 := R38
-422 [-]: GETGLOBAL R6 K11       ; R6 := _T
-423 [-]: GETTABLE  R6 R6 K70    ; R6 := R6["TopMenuOpen"]
-424 [-]: TEST      R6 1         ; if R6 then PC := 430
-425 [-]: JMP       430          ; PC := 430
-426 [-]: GETGLOBAL R6 K11       ; R6 := _T
-427 [-]: GETTABLE  R6 R6 K71    ; R6 := R6["ForceSquadOverlayMax"]
-428 [-]: TEST      R6 0         ; if not R6 then PC := 432
-429 [-]: JMP       432          ; PC := 432
-430 [-]: GETUPVAL  R6 U39       ; R6 := U39
-431 [-]: MOVE      R6 R6        ; R6 := R6
-432 [-]: TEST      R6 0         ; if not R6 then PC := 463
-433 [-]: JMP       463          ; PC := 463
-434 [-]: GETGLOBAL R7 K53       ; R7 := gFlashMgr
-435 [-]: SELF      R7 R7 K72    ; R8 := R7; R7 := R7["0x616DD092"]
-436 [-]: GETGLOBAL R9 K73       ; R9 := topMenuMovie
-437 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
-438 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
-439 [-]: MOVE      R9 R7        ; R9 := R7
-440 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-441 [-]: TEST      R8 1         ; if R8 then PC := 463
-442 [-]: JMP       463          ; PC := 463
-443 [-]: SELF      R8 R7 K74    ; R9 := R7; R8 := R7["0x458F27A9"]
-444 [-]: LOADK     R10 K75      ; R10 := "HasChildMovie"
-445 [-]: LOADK     R11 K76      ; R11 := ""
-446 [-]: CALL      R8 4 2       ; R8 := R8(R9,R10,R11)
-447 [-]: TEST      R8 1         ; if R8 then PC := 461
-448 [-]: JMP       461          ; PC := 461
-449 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
-450 [-]: GETGLOBAL R9 K11       ; R9 := _T
-451 [-]: GETTABLE  R9 R9 K77    ; R9 := R9["IsScreenOpen"]
-452 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-453 [-]: TEST      R8 1         ; if R8 then PC := 461
-454 [-]: JMP       461          ; PC := 461
-455 [-]: GETGLOBAL R8 K11       ; R8 := _T
-456 [-]: GETTABLE  R8 R8 K78    ; R8 := R8["0x186E731B"]
-457 [-]: LOADK     R9 K79       ; R9 := "Profile"
-458 [-]: CALL      R8 2 2       ; R8 := R8(R9)
-459 [-]: MOVE      R6 R8        ; R6 := R8
-460 [-]: JMP       463          ; PC := 463
-461 [-]: MOVE      R6 R0        ; R6 := R0
-462 [-]: MOVE      R6 R1        ; R6 := R1
-463 [-]: GETUPVAL  R8 U40       ; R8 := U40
+407 [-]: GETUPVAL  R6 U38       ; R6 := U38
+408 [-]: GETGLOBAL R7 K53       ; R7 := gFlashMgr
+409 [-]: SELF      R7 R7 K70    ; R8 := R7; R7 := R7["0x616DD092"]
+410 [-]: GETGLOBAL R9 K71       ; R9 := _G
+411 [-]: GETTABLE  R9 R9 K72    ; R9 := R9["UIMovie_SolarMap"]
+412 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
+413 [-]: GETGLOBAL R8 K1        ; R8 := 0x400E7765
+414 [-]: MOVE      R9 R7        ; R9 := R7
+415 [-]: CALL      R8 2 2       ; R8 := R8(R9)
+416 [-]: TEST      R8 0         ; if not R8 then PC := 430
+417 [-]: JMP       430          ; PC := 430
+418 [-]: GETGLOBAL R8 K53       ; R8 := gFlashMgr
+419 [-]: SELF      R8 R8 K73    ; R9 := R8; R8 := R8["0xCC01AE7A"]
+420 [-]: GETGLOBAL R10 K74      ; R10 := conclaveModeSelectionMovie
+421 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+422 [-]: TEST      R8 1         ; if R8 then PC := 431
+423 [-]: JMP       431          ; PC := 431
+424 [-]: GETGLOBAL R8 K53       ; R8 := gFlashMgr
+425 [-]: SELF      R8 R8 K73    ; R9 := R8; R8 := R8["0xCC01AE7A"]
+426 [-]: GETGLOBAL R10 K75      ; R10 := arcadeModeSelectionMovie
+427 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
+428 [-]: JMP       431          ; PC := 431
+429 [-]: MOVE      R8 R0        ; R8 := R0
+430 [-]: MOVE      R8 R1        ; R8 := R1
+431 [-]: MOVE      R8 R38       ; R8 := R38
+432 [-]: GETUPVAL  R8 U38       ; R8 := U38
+433 [-]: EQ        1 R6 R8      ; if R6 == R8 then PC := 437
+434 [-]: JMP       437          ; PC := 437
+435 [-]: GETUPVAL  R8 U39       ; R8 := U39
+436 [-]: CALL      R8 1 1       ; R8()
+437 [-]: GETUPVAL  R8 U23       ; R8 := U23
+438 [-]: TEST      R8 1         ; if R8 then PC := 441
+439 [-]: JMP       441          ; PC := 441
+440 [-]: RETURN    R0 1         ; return 
+441 [-]: GETUPVAL  R8 U40       ; R8 := U40
+442 [-]: LT        0 K16 R8     ; if 0 >= R8 then PC := 452
+443 [-]: JMP       452          ; PC := 452
+444 [-]: GETUPVAL  R8 U40       ; R8 := U40
+445 [-]: SUB       R8 R8 R0     ; R8 := R8 - R0
+446 [-]: MOVE      R8 R40       ; R8 := R40
+447 [-]: GETUPVAL  R8 U40       ; R8 := U40
+448 [-]: LE        0 R8 K16     ; if R8 > 0 then PC := 452
+449 [-]: JMP       452          ; PC := 452
+450 [-]: LOADK     R8 K16       ; R8 := 0
+451 [-]: MOVE      R8 R40       ; R8 := R40
+452 [-]: GETGLOBAL R8 K11       ; R8 := _T
+453 [-]: GETTABLE  R8 R8 K76    ; R8 := R8["TopMenuOpen"]
+454 [-]: TEST      R8 1         ; if R8 then PC := 460
+455 [-]: JMP       460          ; PC := 460
+456 [-]: GETGLOBAL R8 K11       ; R8 := _T
+457 [-]: GETTABLE  R8 R8 K77    ; R8 := R8["ForceSquadOverlayMax"]
+458 [-]: TEST      R8 0         ; if not R8 then PC := 462
+459 [-]: JMP       462          ; PC := 462
+460 [-]: GETUPVAL  R8 U41       ; R8 := U41
+461 [-]: MOVE      R8 R8        ; R8 := R8
+462 [-]: TEST      R8 0         ; if not R8 then PC := 493
+463 [-]: JMP       493          ; PC := 493
 464 [-]: GETGLOBAL R9 K53       ; R9 := gFlashMgr
-465 [-]: SELF      R9 R9 K72    ; R10 := R9; R9 := R9["0x616DD092"]
-466 [-]: GETGLOBAL R11 K80      ; R11 := _G
-467 [-]: GETTABLE  R11 R11 K81  ; R11 := R11["UIMovie_SolarMap"]
-468 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
-469 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
-470 [-]: MOVE      R11 R9       ; R11 := R9
-471 [-]: CALL      R10 2 2      ; R10 := R10(R11)
-472 [-]: TEST      R10 0        ; if not R10 then PC := 486
-473 [-]: JMP       486          ; PC := 486
-474 [-]: GETGLOBAL R10 K53      ; R10 := gFlashMgr
-475 [-]: SELF      R10 R10 K82  ; R11 := R10; R10 := R10["0xCC01AE7A"]
-476 [-]: GETGLOBAL R12 K83      ; R12 := conclaveModeSelectionMovie
-477 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-478 [-]: TEST      R10 1        ; if R10 then PC := 487
-479 [-]: JMP       487          ; PC := 487
-480 [-]: GETGLOBAL R10 K53      ; R10 := gFlashMgr
-481 [-]: SELF      R10 R10 K82  ; R11 := R10; R10 := R10["0xCC01AE7A"]
-482 [-]: GETGLOBAL R12 K84      ; R12 := arcadeModeSelectionMovie
-483 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
-484 [-]: JMP       487          ; PC := 487
-485 [-]: MOVE      R10 R0       ; R10 := R0
-486 [-]: MOVE      R10 R1       ; R10 := R1
-487 [-]: MOVE      R10 R40      ; R10 := R40
-488 [-]: GETUPVAL  R10 U40      ; R10 := U40
-489 [-]: EQ        1 R8 R10     ; if R8 == R10 then PC := 493
+465 [-]: SELF      R9 R9 K70    ; R10 := R9; R9 := R9["0x616DD092"]
+466 [-]: GETGLOBAL R11 K78      ; R11 := topMenuMovie
+467 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
+468 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+469 [-]: MOVE      R11 R9       ; R11 := R9
+470 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+471 [-]: TEST      R10 1        ; if R10 then PC := 493
+472 [-]: JMP       493          ; PC := 493
+473 [-]: SELF      R10 R9 K79   ; R11 := R9; R10 := R9["0x458F27A9"]
+474 [-]: LOADK     R12 K80      ; R12 := "HasChildMovie"
+475 [-]: LOADK     R13 K81      ; R13 := ""
+476 [-]: CALL      R10 4 2      ; R10 := R10(R11,R12,R13)
+477 [-]: TEST      R10 1        ; if R10 then PC := 491
+478 [-]: JMP       491          ; PC := 491
+479 [-]: GETGLOBAL R10 K1       ; R10 := 0x400E7765
+480 [-]: GETGLOBAL R11 K11      ; R11 := _T
+481 [-]: GETTABLE  R11 R11 K82  ; R11 := R11["IsScreenOpen"]
+482 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+483 [-]: TEST      R10 1        ; if R10 then PC := 491
+484 [-]: JMP       491          ; PC := 491
+485 [-]: GETGLOBAL R10 K11      ; R10 := _T
+486 [-]: GETTABLE  R10 R10 K83  ; R10 := R10["0x186E731B"]
+487 [-]: LOADK     R11 K84      ; R11 := "Profile"
+488 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+489 [-]: MOVE      R8 R10       ; R8 := R10
 490 [-]: JMP       493          ; PC := 493
-491 [-]: GETUPVAL  R10 U41      ; R10 := U41
-492 [-]: CALL      R10 1 1      ; R10()
+491 [-]: MOVE      R8 R0        ; R8 := R0
+492 [-]: MOVE      R8 R1        ; R8 := R1
 493 [-]: GETUPVAL  R10 U36      ; R10 := U36
-494 [-]: EQ        1 R10 R6     ; if R10 == R6 then PC := 499
+494 [-]: EQ        1 R10 R8     ; if R10 == R8 then PC := 499
 495 [-]: JMP       499          ; PC := 499
 496 [-]: GETUPVAL  R10 U42      ; R10 := U42
-497 [-]: MOVE      R11 R6       ; R11 := R6
+497 [-]: MOVE      R11 R8       ; R11 := R8
 498 [-]: CALL      R10 2 1      ; R10(R11)
 499 [-]: GETUPVAL  R10 U43      ; R10 := U43
 500 [-]: CALL      R10 1 1      ; R10()
@@ -11888,7 +11888,7 @@ code size: 84
 546 [-]: GETUPVAL  R11 U46      ; R11 := U46
 547 [-]: GETGLOBAL R12 K11      ; R12 := _T
 548 [-]: GETTABLE  R12 R12 K90  ; R12 := R12["BackgroundMovie"]
-549 [-]: SELF      R12 R12 K74  ; R13 := R12; R12 := R12["0x458F27A9"]
+549 [-]: SELF      R12 R12 K79  ; R13 := R12; R12 := R12["0x458F27A9"]
 550 [-]: LOADK     R14 K91      ; R14 := "ShowBlockingMessage"
 551 [-]: LOADK     R15 K92      ; R15 := "1"
 552 [-]: CALL      R12 4 1      ; R12(R13,R14,R15)
@@ -11938,7 +11938,7 @@ code size: 84
 596 [-]: LOADK     R12 K16      ; R12 := 0
 597 [-]: MOVE      R12 R47      ; R12 := R47
 598 [-]: GETGLOBAL R12 K11      ; R12 := _T
-599 [-]: GETTABLE  R12 R12 K70  ; R12 := R12["TopMenuOpen"]
+599 [-]: GETTABLE  R12 R12 K76  ; R12 := R12["TopMenuOpen"]
 600 [-]: TEST      R12 0        ; if not R12 then PC := 612
 601 [-]: JMP       612          ; PC := 612
 602 [-]: GETUPVAL  R12 U49      ; R12 := U49
@@ -11973,10 +11973,10 @@ code size: 84
 631 [-]: CALL      R12 2 2      ; R12 := R12(R13)
 632 [-]: TEST      R12 1        ; if R12 then PC := 671
 633 [-]: JMP       671          ; PC := 671
-634 [-]: GETUPVAL  R12 U40      ; R12 := U40
+634 [-]: GETUPVAL  R12 U38      ; R12 := U38
 635 [-]: TEST      R12 1        ; if R12 then PC := 671
 636 [-]: JMP       671          ; PC := 671
-637 [-]: GETGLOBAL R12 K80      ; R12 := _G
+637 [-]: GETGLOBAL R12 K71      ; R12 := _G
 638 [-]: GETTABLE  R12 R12 K111 ; R12 := R12["StalkerMode"]
 639 [-]: TEST      R12 1        ; if R12 then PC := 671
 640 [-]: JMP       671          ; PC := 671
@@ -11997,7 +11997,7 @@ code size: 84
 655 [-]: GETUPVAL  R12 U51      ; R12 := U51
 656 [-]: TEST      R12 1        ; if R12 then PC := 662
 657 [-]: JMP       662          ; PC := 662
-658 [-]: GETGLOBAL R12 K80      ; R12 := _G
+658 [-]: GETGLOBAL R12 K71      ; R12 := _G
 659 [-]: GETTABLE  R12 R12 K113 ; R12 := R12["mDoNotDisturb"]
 660 [-]: TEST      R12 1        ; if R12 then PC := 715
 661 [-]: JMP       715          ; PC := 715

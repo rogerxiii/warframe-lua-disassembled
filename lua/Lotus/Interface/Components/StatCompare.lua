@@ -23,7 +23,7 @@ code size: 57
 code size: 51
 code size: 40
 code size: 132
-code size: 2402
+code size: 2400
 code size: 25
 code size: 15
 code size: 1055
@@ -3193,7 +3193,7 @@ code size: 9
 150 [-]: GETGLOBAL R31 K22      ; R31 := 0x63B09107
 151 [-]: MOVE      R32 R13      ; R32 := R13
 152 [-]: CALL      R31 2 4      ; R31,R32,R33 := R31(R32)
-153 [-]: JMP       2344         ; PC := 2344
+153 [-]: JMP       2342         ; PC := 2342
 154 [-]: GETTABLE  R36 R35 K21  ; R36 := R35["behaviorIndex"]
 155 [-]: LE        0 R14 R36    ; if R14 > R36 then PC := 168
 156 [-]: JMP       168          ; PC := 168
@@ -3207,7 +3207,7 @@ code size: 9
 164 [-]: CALL      R40 2 2      ; R40 := R40(R41)
 165 [-]: CONCAT    R37 R37 R40  ; R37 := R37 .. R38 .. R39 .. R40
 166 [-]: CALL      R36 2 1      ; R36(R37)
-167 [-]: JMP       2346         ; PC := 2346
+167 [-]: JMP       2344         ; PC := 2344
 168 [-]: SELF      R36 R1 K39   ; R37 := R1; R36 := R1["0x57E64D38"]
 169 [-]: GETTABLE  R38 R35 K21  ; R38 := R35["behaviorIndex"]
 170 [-]: CALL      R36 3 2      ; R36 := R36(R37,R38)
@@ -4648,7 +4648,7 @@ code size: 9
 1605 [-]: LOADNIL   R175 R175    ; R175 := nil
 1606 [-]: CALL      R172 4 2     ; R172 := R172(R173,R174,R175)
 1607 [-]: SETTABLE  R41 K195 R172; R41["RechargeDelay"] := R172
-1608 [-]: JMP       1976         ; PC := 1976
+1608 [-]: JMP       1974         ; PC := 1974
 1609 [-]: SELF      R172 R1 K196 ; R173 := R1; R172 := R1["0xFD93475"]
 1610 [-]: CALL      R172 2 2     ; R172 := R172(R173)
 1611 [-]: GETUPVAL  R173 U1      ; R173 := U1
@@ -4661,9 +4661,9 @@ code size: 9
 1618 [-]: LOADNIL   R176 R176    ; R176 := nil
 1619 [-]: CALL      R173 4 2     ; R173 := R173(R174,R175,R176)
 1620 [-]: SETTABLE  R41 K197 R173; R41["Reload"] := R173
-1621 [-]: JMP       1976         ; PC := 1976
-1622 [-]: TEST      R40 0        ; if not R40 then PC := 1976
-1623 [-]: JMP       1976         ; PC := 1976
+1621 [-]: JMP       1974         ; PC := 1974
+1622 [-]: TEST      R40 0        ; if not R40 then PC := 1974
+1623 [-]: JMP       1974         ; PC := 1974
 1624 [-]: SELF      R173 R38 K198; R174 := R38; R173 := R38["0xD88CC7DC"]
 1625 [-]: CALL      R173 2 2     ; R173 := R173(R174)
 1626 [-]: SELF      R174 R173 K90; R175 := R173; R174 := R173["0x77C6F522"]
@@ -4713,8 +4713,8 @@ code size: 9
 1670 [-]: MOVE      R184 R181    ; R184 := R181
 1671 [-]: CALL      R182 3 1     ; R182(R183,R184)
 1672 [-]: CLOSURE   R182 0       ; R182 := closure(Function #14.1)
-1673 [-]: TEST      R5 1         ; if R5 then PC := 1976
-1674 [-]: JMP       1976         ; PC := 1976
+1673 [-]: TEST      R5 1         ; if R5 then PC := 1974
+1674 [-]: JMP       1974         ; PC := 1974
 1675 [-]: SELF      R183 R1 K199 ; R184 := R1; R183 := R1["0x4734EA47"]
 1676 [-]: CALL      R183 2 2     ; R183 := R183(R184)
 1677 [-]: SELF      R183 R183 K200; R184 := R183; R183 := R183["0xB9527EE6"]
@@ -4741,8 +4741,8 @@ code size: 9
 1698 [-]: SETTABLE  R41 K126 R184; R41["Range"] := R184
 1699 [-]: SELF      R184 R12 K201; R185 := R12; R184 := R12["0x10252651"]
 1700 [-]: CALL      R184 2 2     ; R184 := R184(R185)
-1701 [-]: TEST      R184 1       ; if R184 then PC := 1968
-1702 [-]: JMP       1968         ; PC := 1968
+1701 [-]: TEST      R184 1       ; if R184 then PC := 1966
+1702 [-]: JMP       1966         ; PC := 1966
 1703 [-]: SELF      R184 R38 K203; R185 := R38; R184 := R38["0xEC6AA1CB"]
 1704 [-]: GETGLOBAL R186 K204    ; R186 := Lotus_Game
 1705 [-]: GETTABLE  R186 R186 K205; R186 := R186["MeleeAttack_CC_SLIDING"]
@@ -4814,635 +4814,633 @@ code size: 9
 1771 [-]: SETTABLE  R41 K216 R190; R41["ComboEfficiency"] := R190
 1772 [-]: SELF      R190 R38 K217; R191 := R38; R190 := R38["0xB38E397"]
 1773 [-]: CALL      R190 2 2     ; R190 := R190(R191)
-1774 [-]: GETGLOBAL R191 K106    ; R191 := math
-1775 [-]: GETTABLE  R191 R191 K218; R191 := R191["huge"]
-1776 [-]: LOADK     R192 K219    ; R192 := "<INFINITE_SMALL>"
-1777 [-]: TEST      R190 1       ; if R190 then PC := 1790
-1778 [-]: JMP       1790         ; PC := 1790
-1779 [-]: SELF      R193 R38 K220; R194 := R38; R193 := R38["0x8B4FED5D"]
-1780 [-]: MOVE      R195 R1      ; R195 := R1
-1781 [-]: CALL      R193 3 2     ; R193 := R193(R194,R195)
-1782 [-]: MOVE      R191 R193    ; R191 := R193
-1783 [-]: GETUPVAL  R193 U2      ; R193 := U2
-1784 [-]: GETTABLE  R193 R193 K64; R193 := R193["0x7E197415"]
-1785 [-]: MOVE      R194 R191    ; R194 := R191
-1786 [-]: LOADK     R195 K3      ; R195 := 1
-1787 [-]: CALL      R193 3 2     ; R193 := R193(R194,R195)
-1788 [-]: MOVE      R192 R193    ; R192 := R193
-1789 [-]: JMP       1795         ; PC := 1795
-1790 [-]: SELF      R193 R0 K46  ; R194 := R0; R193 := R0["0x5DB0BD4"]
-1791 [-]: MOVE      R195 R192    ; R195 := R192
-1792 [-]: MOVE      R196 R1      ; R196 := R1
-1793 [-]: CALL      R193 4 2     ; R193 := R193(R194,R195,R196)
-1794 [-]: MOVE      R192 R193    ; R192 := R193
-1795 [-]: GETUPVAL  R193 U1      ; R193 := U1
-1796 [-]: MOVE      R194 R192    ; R194 := R192
-1797 [-]: MOVE      R195 R191    ; R195 := R191
-1798 [-]: LOADNIL   R196 R196    ; R196 := nil
-1799 [-]: CALL      R193 4 2     ; R193 := R193(R194,R195,R196)
-1800 [-]: SETTABLE  R41 K221 R193; R41["ComboDuration"] := R193
-1801 [-]: SELF      R193 R1 K222 ; R194 := R1; R193 := R1["0x87B465B"]
-1802 [-]: CALL      R193 2 2     ; R193 := R193(R194)
-1803 [-]: GETUPVAL  R194 U1      ; R194 := U1
-1804 [-]: GETUPVAL  R195 U2      ; R195 := U2
-1805 [-]: GETTABLE  R195 R195 K64; R195 := R195["0x7E197415"]
-1806 [-]: MOVE      R196 R193    ; R196 := R193
-1807 [-]: LOADK     R197 K3      ; R197 := 1
-1808 [-]: CALL      R195 3 2     ; R195 := R195(R196,R197)
-1809 [-]: MOVE      R196 R193    ; R196 := R193
-1810 [-]: LOADNIL   R197 R199    ; R197 := R198 := R199 := nil
-1811 [-]: MOVE      R200 R193    ; R200 := R193
-1812 [-]: CALL      R194 7 2     ; R194 := R194(R195,R196,R197,R198,R199,R200)
-1813 [-]: SETTABLE  R41 K223 R194; R41["BlockingAngle"] := R194
-1814 [-]: SELF      R194 R1 K224 ; R195 := R1; R194 := R1["0xBDA8A772"]
-1815 [-]: CALL      R194 2 2     ; R194 := R194(R195)
-1816 [-]: GETUPVAL  R195 U1      ; R195 := U1
-1817 [-]: GETUPVAL  R196 U2      ; R196 := U2
-1818 [-]: GETTABLE  R196 R196 K64; R196 := R196["0x7E197415"]
-1819 [-]: MOVE      R197 R194    ; R197 := R194
-1820 [-]: LOADK     R198 K3      ; R198 := 1
-1821 [-]: CALL      R196 3 2     ; R196 := R196(R197,R198)
-1822 [-]: MOVE      R197 R194    ; R197 := R194
-1823 [-]: LOADNIL   R198 R198    ; R198 := nil
-1824 [-]: CALL      R195 4 2     ; R195 := R195(R196,R197,R198)
-1825 [-]: SETTABLE  R41 K225 R195; R41["SlamAttackRadius"] := R195
-1826 [-]: SELF      R195 R1 K226 ; R196 := R1; R195 := R1["0x1178DB2D"]
-1827 [-]: CALL      R195 2 2     ; R195 := R195(R196)
-1828 [-]: GETUPVAL  R196 U5      ; R196 := U5
-1829 [-]: MOVE      R197 R195    ; R197 := R195
-1830 [-]: CALL      R196 2 2     ; R196 := R196(R197)
-1831 [-]: SETTABLE  R41 K227 R196; R41["SlamAttackRadialDamage"] := R196
-1832 [-]: NEWTABLE  R196 0 0     ; R196 := {}
-1833 [-]: SELF      R197 R2 K228 ; R198 := R2; R197 := R2["0xE50E1085"]
-1834 [-]: GETGLOBAL R199 K84     ; R199 := Engine
-1835 [-]: GETTABLE  R199 R199 K229; R199 := R199["PM_HEAVY_MELEE"]
-1836 [-]: MOVE      R200 R1      ; R200 := R1
-1837 [-]: CALL      R197 4 1     ; R197(R198,R199,R200)
-1838 [-]: SELF      R197 R38 K203; R198 := R38; R197 := R38["0xEC6AA1CB"]
-1839 [-]: GETGLOBAL R199 K204    ; R199 := Lotus_Game
-1840 [-]: GETTABLE  R199 R199 K230; R199 := R199["MeleeAttack_CC_GROUND_HEAVY"]
-1841 [-]: CALL      R197 3 2     ; R197 := R197(R198,R199)
-1842 [-]: MOVE      R198 R182    ; R198 := R182
-1843 [-]: MOVE      R199 R197    ; R199 := R197
-1844 [-]: CALL      R198 2 2     ; R198 := R198(R199)
-1845 [-]: SELF      R199 R38 K231; R200 := R38; R199 := R38["0xB6C044B0"]
-1846 [-]: GETGLOBAL R201 K204    ; R201 := Lotus_Game
-1847 [-]: GETTABLE  R201 R201 K230; R201 := R201["MeleeAttack_CC_GROUND_HEAVY"]
-1848 [-]: CALL      R199 3 2     ; R199 := R199(R200,R201)
-1849 [-]: LOADK     R200 K3      ; R200 := 1
-1850 [-]: GETGLOBAL R201 K0      ; R201 := 0x400E7765
-1851 [-]: MOVE      R202 R199    ; R202 := R199
-1852 [-]: CALL      R201 2 2     ; R201 := R201(R202)
-1853 [-]: TEST      R201 1       ; if R201 then PC := 1858
-1854 [-]: JMP       1858         ; PC := 1858
-1855 [-]: SELF      R201 R199 K232; R202 := R199; R201 := R199["0xCCBE3791"]
-1856 [-]: CALL      R201 2 2     ; R201 := R201(R202)
-1857 [-]: MOVE      R200 R201    ; R200 := R201
-1858 [-]: GETUPVAL  R201 U2      ; R201 := U2
-1859 [-]: GETTABLE  R201 R201 K64; R201 := R201["0x7E197415"]
-1860 [-]: MOVE      R202 R198    ; R202 := R198
-1861 [-]: GETUPVAL  R203 U2      ; R203 := U2
-1862 [-]: GETTABLE  R203 R203 K74; R203 := R203["0xF81722A2"]
-1863 [-]: LT        1 R198 K233  ; if R198 < 999.90002441406 then PC := 1866
-1864 [-]: JMP       1866         ; PC := 1866
-1865 [-]: MOVE      R204 R0      ; R204 := R0
-1866 [-]: MOVE      R204 R1      ; R204 := R1
-1867 [-]: LOADK     R205 K3      ; R205 := 1
-1868 [-]: LOADK     R206 K18     ; R206 := 0
-1869 [-]: CALL      R203 4 0     ; R203,... := R203(R204,R205,R206)
-1870 [-]: CALL      R201 0 2     ; R201 := R201(R202,...)
-1871 [-]: LT        0 K3 R200    ; if 1 >= R200 then PC := 1880
-1872 [-]: JMP       1880         ; PC := 1880
-1873 [-]: MOVE      R202 R201    ; R202 := R201
-1874 [-]: LOADK     R203 K234    ; R203 := " x"
-1875 [-]: GETUPVAL  R204 U2      ; R204 := U2
-1876 [-]: GETTABLE  R204 R204 K64; R204 := R204["0x7E197415"]
-1877 [-]: MOVE      R205 R200    ; R205 := R200
-1878 [-]: CALL      R204 2 2     ; R204 := R204(R205)
-1879 [-]: CONCAT    R201 R202 R204; R201 := R202 .. R203 .. R204
-1880 [-]: GETUPVAL  R202 U1      ; R202 := U1
-1881 [-]: MOVE      R203 R201    ; R203 := R201
-1882 [-]: MOVE      R204 R198    ; R204 := R198
-1883 [-]: LOADNIL   R205 R205    ; R205 := nil
-1884 [-]: CALL      R202 4 2     ; R202 := R202(R203,R204,R205)
-1885 [-]: SETTABLE  R196 K235 R202; R196["HeavyAttack"] := R202
-1886 [-]: SELF      R202 R2 K228 ; R203 := R2; R202 := R2["0xE50E1085"]
-1887 [-]: GETGLOBAL R204 K84     ; R204 := Engine
-1888 [-]: GETTABLE  R204 R204 K229; R204 := R204["PM_HEAVY_MELEE"]
-1889 [-]: MOVE      R205 R0      ; R205 := R0
-1890 [-]: CALL      R202 4 1     ; R202(R203,R204,R205)
-1891 [-]: GETGLOBAL R202 K0      ; R202 := 0x400E7765
-1892 [-]: MOVE      R203 R186    ; R203 := R186
-1893 [-]: CALL      R202 2 2     ; R202 := R202(R203)
-1894 [-]: TEST      R202 1       ; if R202 then PC := 1917
-1895 [-]: JMP       1917         ; PC := 1917
-1896 [-]: SELF      R202 R186 K236; R203 := R186; R202 := R186["0xE9295BB9"]
-1897 [-]: CALL      R202 2 2     ; R202 := R202(R203)
-1898 [-]: SELF      R203 R12 K70 ; R204 := R12; R203 := R12["0xC7EA8CA1"]
-1899 [-]: LOADK     R205 K3      ; R205 := 1
-1900 [-]: GETGLOBAL R206 K67     ; R206 := Game
-1901 [-]: GETTABLE  R206 R206 K237; R206 := R206["WEAPON_MELEE_HEAVY_CHARGE_SPEED"]
-1902 [-]: SELF      R207 R1 K69  ; R208 := R1; R207 := R1["0xE2B32C65"]
-1903 [-]: CALL      R207 2 2     ; R207 := R207(R208)
-1904 [-]: MOVE      R208 R1      ; R208 := R1
-1905 [-]: CALL      R203 6 2     ; R203 := R203(R204,R205,R206,R207,R208)
-1906 [-]: DIV       R202 R202 R203; R202 := R202 / R203
-1907 [-]: GETUPVAL  R203 U1      ; R203 := U1
-1908 [-]: GETUPVAL  R204 U2      ; R204 := U2
-1909 [-]: GETTABLE  R204 R204 K64; R204 := R204["0x7E197415"]
-1910 [-]: MOVE      R205 R202    ; R205 := R202
-1911 [-]: LOADK     R206 K3      ; R206 := 1
-1912 [-]: CALL      R204 3 2     ; R204 := R204(R205,R206)
-1913 [-]: UNM       R205 R202    ; R205 := - R202
-1914 [-]: LOADNIL   R206 R206    ; R206 := nil
-1915 [-]: CALL      R203 4 2     ; R203 := R203(R204,R205,R206)
-1916 [-]: SETTABLE  R196 K238 R203; R196["HeavyAttackWindUp"] := R203
-1917 [-]: MOVE      R203 R182    ; R203 := R182
-1918 [-]: MOVE      R204 R185    ; R204 := R185
-1919 [-]: CALL      R203 2 2     ; R203 := R203(R204)
-1920 [-]: SELF      R204 R1 K239 ; R205 := R1; R204 := R1["0xDE62D8B1"]
-1921 [-]: CALL      R204 2 2     ; R204 := R204(R205)
-1922 [-]: MUL       R203 R203 R204; R203 := R203 * R204
-1923 [-]: GETUPVAL  R204 U5      ; R204 := U5
-1924 [-]: MOVE      R205 R203    ; R205 := R203
-1925 [-]: CALL      R204 2 2     ; R204 := R204(R205)
-1926 [-]: SETTABLE  R196 K240 R204; R196["HeavySlamAttack"] := R204
-1927 [-]: GETGLOBAL R204 K241    ; R204 := 0xEC274B1A
-1928 [-]: LOADK     R205 K242    ; R205 := "HeavySlam"
-1929 [-]: CALL      R204 2 2     ; R204 := R204(R205)
-1930 [-]: SELF      R205 R1 K224 ; R206 := R1; R205 := R1["0xBDA8A772"]
-1931 [-]: MOVE      R207 R204    ; R207 := R204
-1932 [-]: CALL      R205 3 2     ; R205 := R205(R206,R207)
-1933 [-]: GETUPVAL  R206 U1      ; R206 := U1
-1934 [-]: GETUPVAL  R207 U2      ; R207 := U2
-1935 [-]: GETTABLE  R207 R207 K64; R207 := R207["0x7E197415"]
-1936 [-]: MOVE      R208 R205    ; R208 := R205
-1937 [-]: LOADK     R209 K3      ; R209 := 1
-1938 [-]: CALL      R207 3 2     ; R207 := R207(R208,R209)
-1939 [-]: MOVE      R208 R205    ; R208 := R205
-1940 [-]: LOADNIL   R209 R209    ; R209 := nil
-1941 [-]: CALL      R206 4 2     ; R206 := R206(R207,R208,R209)
-1942 [-]: SETTABLE  R196 K243 R206; R196["HeavySlamAttackRadius"] := R206
-1943 [-]: SELF      R206 R1 K226 ; R207 := R1; R206 := R1["0x1178DB2D"]
-1944 [-]: MOVE      R208 R204    ; R208 := R204
-1945 [-]: CALL      R206 3 2     ; R206 := R206(R207,R208)
-1946 [-]: LT        0 K18 R206   ; if 0 >= R206 then PC := 1952
-1947 [-]: JMP       1952         ; PC := 1952
-1948 [-]: GETUPVAL  R207 U5      ; R207 := U5
-1949 [-]: MOVE      R208 R206    ; R208 := R206
-1950 [-]: CALL      R207 2 2     ; R207 := R207(R208)
-1951 [-]: SETTABLE  R196 K244 R207; R196["HeavySlamAttackRadialDamage"] := R207
-1952 [-]: NEWTABLE  R207 0 5     ; R207 := {}
-1953 [-]: SELF      R208 R0 K46  ; R209 := R0; R208 := R0["0x5DB0BD4"]
-1954 [-]: LOADK     R210 K245    ; R210 := "/Lotus/Language/Labels/AVATAR_HEAVY_ATTACK"
-1955 [-]: MOVE      R211 R0      ; R211 := R0
-1956 [-]: CALL      R208 4 2     ; R208 := R208(R209,R210,R211)
-1957 [-]: SETTABLE  R207 K45 R208; R207["mName"] := R208
-1958 [-]: SETTABLE  R207 K47 K33 ; R207["mIsMelee"] := "0x1"
-1959 [-]: GETTABLE  R208 R35 K21 ; R208 := R35["behaviorIndex"]
-1960 [-]: SETTABLE  R207 K48 R208; R207["mBehaviorIndex"] := R208
-1961 [-]: SETTABLE  R207 K49 R196; R207["mStats"] := R196
-1962 [-]: SETTABLE  R207 K95 K33 ; R207["mExtra"] := "0x1"
-1963 [-]: GETGLOBAL R208 K23     ; R208 := table
-1964 [-]: GETTABLE  R208 R208 K24; R208 := R208["0xE6450C9D"]
-1965 [-]: MOVE      R209 R8      ; R209 := R8
-1966 [-]: MOVE      R210 R207    ; R210 := R207
-1967 [-]: CALL      R208 3 1     ; R208(R209,R210)
-1968 [-]: GETTABLE  R208 R35 K246; R208 := R35["localizeTag"]
-1969 [-]: EQ        0 R208 K20   ; if R208 ~= "/Lotus/Language/Menu/Loadout_FireModePrimary" then PC := 1976
-1970 [-]: JMP       1976         ; PC := 1976
-1971 [-]: SELF      R208 R0 K46  ; R209 := R0; R208 := R0["0x5DB0BD4"]
-1972 [-]: LOADK     R210 K247    ; R210 := "/Lotus/Language/Menu/Loadout_FireModeMelee"
-1973 [-]: MOVE      R211 R0      ; R211 := R0
-1974 [-]: CALL      R208 4 2     ; R208 := R208(R209,R210,R211)
-1975 [-]: SETTABLE  R42 K45 R208 ; R42["mName"] := R208
-1976 [-]: LOADK     R208 K3      ; R208 := 1
-1977 [-]: TEST      R40 0        ; if not R40 then PC := 1981
-1978 [-]: JMP       1981         ; PC := 1981
-1979 [-]: TEST      R39 1        ; if R39 then PC := 1982
-1980 [-]: JMP       1982         ; PC := 1982
-1981 [-]: MOVE      R208 R53     ; R208 := R53
-1982 [-]: GETUPVAL  R209 U7      ; R209 := U7
-1983 [-]: MOVE      R210 R101    ; R210 := R101
-1984 [-]: MOVE      R211 R11     ; R211 := R11
-1985 [-]: MOVE      R212 R208    ; R212 := R208
-1986 [-]: CALL      R209 4 1     ; R209(R210,R211,R212)
-1987 [-]: TEST      R56 0        ; if not R56 then PC := 1994
-1988 [-]: JMP       1994         ; PC := 1994
-1989 [-]: GETGLOBAL R209 K23     ; R209 := table
-1990 [-]: GETTABLE  R209 R209 K24; R209 := R209["0xE6450C9D"]
-1991 [-]: MOVE      R210 R8      ; R210 := R8
-1992 [-]: MOVE      R211 R54     ; R211 := R54
-1993 [-]: CALL      R209 3 1     ; R209(R210,R211)
-1994 [-]: EQ        1 R55 K2     ; if R55 == nil then PC := 2001
-1995 [-]: JMP       2001         ; PC := 2001
-1996 [-]: GETGLOBAL R209 K23     ; R209 := table
-1997 [-]: GETTABLE  R209 R209 K24; R209 := R209["0xE6450C9D"]
-1998 [-]: MOVE      R210 R8      ; R210 := R8
-1999 [-]: MOVE      R211 R55     ; R211 := R55
-2000 [-]: CALL      R209 3 1     ; R209(R210,R211)
-2001 [-]: SELF      R209 R1 K4   ; R210 := R1; R209 := R1["0x8B598ED4"]
-2002 [-]: GETGLOBAL R211 K248    ; R211 := gLotusWeaponType
-2003 [-]: CALL      R209 3 2     ; R209 := R209(R210,R211)
-2004 [-]: TEST      R209 0       ; if not R209 then PC := 2061
-2005 [-]: JMP       2061         ; PC := 2061
-2006 [-]: SELF      R209 R0 K249 ; R210 := R0; R209 := R0["0x458F27A9"]
-2007 [-]: LOADK     R211 K250    ; R211 := "ShouldShowOmegaAttenStat"
-2008 [-]: LOADK     R212 K53     ; R212 := ""
-2009 [-]: CALL      R209 4 2     ; R209 := R209(R210,R211,R212)
-2010 [-]: TEST      R209 0       ; if not R209 then PC := 2061
-2011 [-]: JMP       2061         ; PC := 2061
-2012 [-]: SELF      R209 R1 K251 ; R210 := R1; R209 := R1["0x9B547C61"]
-2013 [-]: CALL      R209 2 2     ; R209 := R209(R210)
-2014 [-]: LOADK     R210 K53     ; R210 := ""
-2015 [-]: LT        0 R209 K252  ; if R209 >= 0.69999998807907 then PC := 2023
-2016 [-]: JMP       2023         ; PC := 2023
-2017 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
-2018 [-]: LOADK     R213 K253    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenLowest"
-2019 [-]: MOVE      R214 R1      ; R214 := R1
-2020 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
-2021 [-]: MOVE      R210 R211    ; R210 := R211
-2022 [-]: JMP       2054         ; PC := 2054
-2023 [-]: LT        0 R209 K254  ; if R209 >= 0.89999997615814 then PC := 2031
-2024 [-]: JMP       2031         ; PC := 2031
-2025 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
-2026 [-]: LOADK     R213 K255    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenLow"
-2027 [-]: MOVE      R214 R1      ; R214 := R1
-2028 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
-2029 [-]: MOVE      R210 R211    ; R210 := R211
-2030 [-]: JMP       2054         ; PC := 2054
-2031 [-]: LOADK     R211 K256    ; R211 := 1.1089999675751
-2032 [-]: LE        0 R209 R211  ; if R209 > R211 then PC := 2040
-2033 [-]: JMP       2040         ; PC := 2040
-2034 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
-2035 [-]: LOADK     R213 K257    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenMedium"
-2036 [-]: MOVE      R214 R1      ; R214 := R1
-2037 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
-2038 [-]: MOVE      R210 R211    ; R210 := R211
-2039 [-]: JMP       2054         ; PC := 2054
-2040 [-]: LOADK     R211 K258    ; R211 := 1.3090000152588
-2041 [-]: LE        0 R209 R211  ; if R209 > R211 then PC := 2049
-2042 [-]: JMP       2049         ; PC := 2049
-2043 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
-2044 [-]: LOADK     R213 K259    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenHigh"
-2045 [-]: MOVE      R214 R1      ; R214 := R1
-2046 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
-2047 [-]: MOVE      R210 R211    ; R210 := R211
-2048 [-]: JMP       2054         ; PC := 2054
-2049 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
-2050 [-]: LOADK     R213 K260    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenHighest"
-2051 [-]: MOVE      R214 R1      ; R214 := R1
-2052 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
-2053 [-]: MOVE      R210 R211    ; R210 := R211
-2054 [-]: LOADK     R211 K261    ; R211 := "OmegaAtten"
-2055 [-]: GETUPVAL  R212 U1      ; R212 := U1
-2056 [-]: MOVE      R213 R210    ; R213 := R210
-2057 [-]: MOVE      R214 R209    ; R214 := R209
-2058 [-]: LOADNIL   R215 R215    ; R215 := nil
-2059 [-]: CALL      R212 4 2     ; R212 := R212(R213,R214,R215)
-2060 [-]: SETTABLE  R41 R211 R212; R41[R211] := R212
-2061 [-]: SELF      R211 R37 K4  ; R212 := R37; R211 := R37["0x8B598ED4"]
-2062 [-]: GETGLOBAL R213 K262    ; R213 := gWeaponTraceFireBehaviorType
-2063 [-]: CALL      R211 3 2     ; R211 := R211(R212,R213)
-2064 [-]: TEST      R211 0       ; if not R211 then PC := 2100
-2065 [-]: JMP       2100         ; PC := 2100
-2066 [-]: LOADK     R213 K263    ; R213 := "0x5A4A7D47"
-2067 [-]: SELF      R211 R37 R213; R212 := R37; R211 := R37[R213]
-2068 [-]: CALL      R211 2 2     ; R211 := R211(R212)
-2069 [-]: TEST      R211 1       ; if R211 then PC := 2089
-2070 [-]: JMP       2089         ; PC := 2089
-2071 [-]: LOADK     R214 K264    ; R214 := "0xE7B8584"
-2072 [-]: SELF      R212 R37 R214; R213 := R37; R212 := R37[R214]
-2073 [-]: CALL      R212 2 2     ; R212 := R212(R213)
-2074 [-]: LOADK     R213 K18     ; R213 := 0
-2075 [-]: LT        0 R213 R212  ; if R213 >= R212 then PC := 2176
-2076 [-]: JMP       2176         ; PC := 2176
-2077 [-]: LOADK     R213 K265    ; R213 := "Punchthrough"
-2078 [-]: GETUPVAL  R214 U1      ; R214 := U1
-2079 [-]: GETUPVAL  R215 U2      ; R215 := U2
-2080 [-]: GETTABLE  R215 R215 K64; R215 := R215["0x7E197415"]
-2081 [-]: MOVE      R216 R212    ; R216 := R212
-2082 [-]: LOADK     R217 K3      ; R217 := 1
-2083 [-]: CALL      R215 3 2     ; R215 := R215(R216,R217)
-2084 [-]: MOVE      R216 R212    ; R216 := R212
-2085 [-]: LOADNIL   R217 R217    ; R217 := nil
-2086 [-]: CALL      R214 4 2     ; R214 := R214(R215,R216,R217)
-2087 [-]: SETTABLE  R41 R213 R214; R41[R213] := R214
-2088 [-]: JMP       2176         ; PC := 2176
-2089 [-]: LOADK     R213 K265    ; R213 := "Punchthrough"
-2090 [-]: GETUPVAL  R214 U1      ; R214 := U1
-2091 [-]: SELF      R215 R0 K46  ; R216 := R0; R215 := R0["0x5DB0BD4"]
-2092 [-]: LOADK     R217 K266    ; R217 := "/Lotus/Language/Game/WEAPON_PUNCTURE_DEPTH_INFINITE"
-2093 [-]: MOVE      R218 R1      ; R218 := R1
-2094 [-]: CALL      R215 4 2     ; R215 := R215(R216,R217,R218)
-2095 [-]: LOADK     R216 K267    ; R216 := 4294967296
-2096 [-]: LOADNIL   R217 R217    ; R217 := nil
-2097 [-]: CALL      R214 4 2     ; R214 := R214(R215,R216,R217)
-2098 [-]: SETTABLE  R41 R213 R214; R41[R213] := R214
-2099 [-]: JMP       2176         ; PC := 2176
-2100 [-]: SELF      R213 R37 K4  ; R214 := R37; R213 := R37["0x8B598ED4"]
-2101 [-]: GETGLOBAL R215 K268    ; R215 := gWeaponProjectileFireBehaviorType
-2102 [-]: CALL      R213 3 2     ; R213 := R213(R214,R215)
-2103 [-]: TEST      R213 0       ; if not R213 then PC := 2176
-2104 [-]: JMP       2176         ; PC := 2176
-2105 [-]: LOADK     R213 K18     ; R213 := 0
-2106 [-]: MOVE      R214 R0      ; R214 := R0
-2107 [-]: GETTABLE  R215 R35 K30 ; R215 := R35["turboGlaive"]
-2108 [-]: MOVE      R216 R1      ; R216 := R1
-2109 [-]: EQ        0 R215 R216  ; if R215 ~= R216 then PC := 2119
-2110 [-]: JMP       2119         ; PC := 2119
-2111 [-]: LOADK     R217 K269    ; R217 := "0xD8A75E11"
-2112 [-]: SELF      R215 R1 R217 ; R216 := R1; R215 := R1[R217]
-2113 [-]: SELF      R217 R37 K178; R218 := R37; R217 := R37["0x32B951C9"]
-2114 [-]: MOVE      R219 R5      ; R219 := R5
-2115 [-]: CALL      R217 3 0     ; R217,... := R217(R218,R219)
-2116 [-]: CALL      R215 0 2     ; R215 := R215(R216,...)
-2117 [-]: MOVE      R213 R215    ; R213 := R215
-2118 [-]: JMP       2149         ; PC := 2149
-2119 [-]: SELF      R215 R37 K72 ; R216 := R37; R215 := R37["0xDD2EE7D2"]
-2120 [-]: CALL      R215 2 2     ; R215 := R215(R216)
-2121 [-]: GETGLOBAL R216 K0      ; R216 := 0x400E7765
-2122 [-]: MOVE      R217 R215    ; R217 := R215
-2123 [-]: CALL      R216 2 2     ; R216 := R216(R217)
-2124 [-]: TEST      R216 1       ; if R216 then PC := 2143
-2125 [-]: JMP       2143         ; PC := 2143
-2126 [-]: SELF      R216 R215 K4 ; R217 := R215; R216 := R215["0x8B598ED4"]
-2127 [-]: GETGLOBAL R218 K270    ; R218 := gWaveProjectileType
-2128 [-]: CALL      R216 3 2     ; R216 := R216(R217,R218)
-2129 [-]: TEST      R216 0       ; if not R216 then PC := 2143
-2130 [-]: JMP       2143         ; PC := 2143
-2131 [-]: GETGLOBAL R216 K8      ; R216 := 0x7C282057
-2132 [-]: MOVE      R217 R215    ; R217 := R215
-2133 [-]: CALL      R216 2 2     ; R216 := R216(R217)
-2134 [-]: GETGLOBAL R217 K0      ; R217 := 0x400E7765
-2135 [-]: MOVE      R218 R216    ; R218 := R216
-2136 [-]: CALL      R217 2 2     ; R217 := R217(R218)
-2137 [-]: TEST      R217 1       ; if R217 then PC := 2143
-2138 [-]: JMP       2143         ; PC := 2143
-2139 [-]: LOADK     R219 K271    ; R219 := "0xBD6E0288"
-2140 [-]: SELF      R217 R216 R219; R218 := R216; R217 := R216[R219]
-2141 [-]: CALL      R217 2 2     ; R217 := R217(R218)
-2142 [-]: MOVE      R214 R217    ; R214 := R217
-2143 [-]: LOADK     R219 K269    ; R219 := "0xD8A75E11"
-2144 [-]: SELF      R217 R1 R219 ; R218 := R1; R217 := R1[R219]
-2145 [-]: SELF      R219 R37 K72 ; R220 := R37; R219 := R37["0xDD2EE7D2"]
-2146 [-]: CALL      R219 2 0     ; R219,... := R219(R220)
-2147 [-]: CALL      R217 0 2     ; R217 := R217(R218,...)
-2148 [-]: MOVE      R213 R217    ; R213 := R217
-2149 [-]: TEST      R214 0       ; if not R214 then PC := 2162
-2150 [-]: JMP       2162         ; PC := 2162
-2151 [-]: LOADK     R217 K265    ; R217 := "Punchthrough"
-2152 [-]: GETUPVAL  R218 U1      ; R218 := U1
-2153 [-]: SELF      R219 R0 K46  ; R220 := R0; R219 := R0["0x5DB0BD4"]
-2154 [-]: LOADK     R221 K266    ; R221 := "/Lotus/Language/Game/WEAPON_PUNCTURE_DEPTH_INFINITE"
-2155 [-]: MOVE      R222 R1      ; R222 := R1
-2156 [-]: CALL      R219 4 2     ; R219 := R219(R220,R221,R222)
-2157 [-]: LOADK     R220 K267    ; R220 := 4294967296
-2158 [-]: LOADNIL   R221 R221    ; R221 := nil
-2159 [-]: CALL      R218 4 2     ; R218 := R218(R219,R220,R221)
-2160 [-]: SETTABLE  R41 R217 R218; R41[R217] := R218
-2161 [-]: JMP       2176         ; PC := 2176
-2162 [-]: LOADK     R217 K18     ; R217 := 0
-2163 [-]: LT        0 R217 R213  ; if R217 >= R213 then PC := 2176
-2164 [-]: JMP       2176         ; PC := 2176
-2165 [-]: LOADK     R217 K265    ; R217 := "Punchthrough"
-2166 [-]: GETUPVAL  R218 U1      ; R218 := U1
-2167 [-]: GETUPVAL  R219 U2      ; R219 := U2
-2168 [-]: GETTABLE  R219 R219 K64; R219 := R219["0x7E197415"]
-2169 [-]: MOVE      R220 R213    ; R220 := R213
-2170 [-]: LOADK     R221 K3      ; R221 := 1
-2171 [-]: CALL      R219 3 2     ; R219 := R219(R220,R221)
-2172 [-]: MOVE      R220 R213    ; R220 := R213
-2173 [-]: LOADNIL   R221 R221    ; R221 := nil
-2174 [-]: CALL      R218 4 2     ; R218 := R218(R219,R220,R221)
-2175 [-]: SETTABLE  R41 R217 R218; R41[R217] := R218
-2176 [-]: LOADK     R217 K18     ; R217 := 0
-2177 [-]: SELF      R218 R37 K4  ; R219 := R37; R218 := R37["0x8B598ED4"]
-2178 [-]: GETGLOBAL R220 K268    ; R220 := gWeaponProjectileFireBehaviorType
-2179 [-]: CALL      R218 3 2     ; R218 := R218(R219,R220)
-2180 [-]: TEST      R218 0       ; if not R218 then PC := 2194
-2181 [-]: JMP       2194         ; PC := 2194
-2182 [-]: SELF      R218 R37 K101; R219 := R37; R218 := R37["0x8E4EE31F"]
-2183 [-]: CALL      R218 2 2     ; R218 := R218(R219)
-2184 [-]: TEST      R218 1       ; if R218 then PC := 2194
-2185 [-]: JMP       2194         ; PC := 2194
-2186 [-]: LOADK     R220 K272    ; R220 := "0x7D42B367"
-2187 [-]: SELF      R218 R1 R220 ; R219 := R1; R218 := R1[R220]
-2188 [-]: SELF      R220 R37 K72 ; R221 := R37; R220 := R37["0xDD2EE7D2"]
-2189 [-]: CALL      R220 2 2     ; R220 := R220(R221)
-2190 [-]: MOVE      R221 R0      ; R221 := R0
-2191 [-]: CALL      R218 4 2     ; R218 := R218(R219,R220,R221)
-2192 [-]: MOVE      R217 R218    ; R217 := R218
-2193 [-]: JMP       2196         ; PC := 2196
-2194 [-]: LOADK     R218 K273    ; R218 := "damageFallOff"
-2195 [-]: GETTABLE  R217 R38 R218; R217 := R38[R218]
-2196 [-]: GETTABLE  R218 R217 K120; R218 := R217["maxValue"]
-2197 [-]: LOADK     R219 K18     ; R219 := 0
-2198 [-]: LT        0 R219 R218  ; if R219 >= R218 then PC := 2273
-2199 [-]: JMP       2273         ; PC := 2273
-2200 [-]: NEWTABLE  R218 0 2     ; R218 := {}
-2201 [-]: SELF      R219 R12 K70 ; R220 := R12; R219 := R12["0xC7EA8CA1"]
-2202 [-]: GETTABLE  R221 R217 K119; R221 := R217["minValue"]
-2203 [-]: GETGLOBAL R222 K67     ; R222 := Game
-2204 [-]: LOADK     R223 K274    ; R223 := "WEAPON_PROJECTILE_SPEED"
-2205 [-]: GETTABLE  R222 R222 R223; R222 := R222[R223]
-2206 [-]: SELF      R223 R1 K69  ; R224 := R1; R223 := R1["0xE2B32C65"]
-2207 [-]: CALL      R223 2 2     ; R223 := R223(R224)
-2208 [-]: MOVE      R224 R1      ; R224 := R1
-2209 [-]: CALL      R219 6 2     ; R219 := R219(R220,R221,R222,R223,R224)
-2210 [-]: SETTABLE  R218 K119 R219; R218["minValue"] := R219
-2211 [-]: SELF      R219 R12 K70 ; R220 := R12; R219 := R12["0xC7EA8CA1"]
-2212 [-]: GETTABLE  R221 R217 K120; R221 := R217["maxValue"]
-2213 [-]: GETGLOBAL R222 K67     ; R222 := Game
-2214 [-]: LOADK     R223 K274    ; R223 := "WEAPON_PROJECTILE_SPEED"
-2215 [-]: GETTABLE  R222 R222 R223; R222 := R222[R223]
-2216 [-]: SELF      R223 R1 K69  ; R224 := R1; R223 := R1["0xE2B32C65"]
-2217 [-]: CALL      R223 2 2     ; R223 := R223(R224)
-2218 [-]: MOVE      R224 R1      ; R224 := R1
-2219 [-]: CALL      R219 6 2     ; R219 := R219(R220,R221,R222,R223,R224)
-2220 [-]: SETTABLE  R218 K120 R219; R218["maxValue"] := R219
-2221 [-]: MOVE      R217 R218    ; R217 := R218
-2222 [-]: GETTABLE  R218 R217 K120; R218 := R217["maxValue"]
-2223 [-]: LOADK     R219 K18     ; R219 := 0
-2224 [-]: LT        0 R219 R218  ; if R219 >= R218 then PC := 2266
-2225 [-]: JMP       2266         ; PC := 2266
-2226 [-]: GETUPVAL  R218 U2      ; R218 := U2
-2227 [-]: GETTABLE  R218 R218 K64; R218 := R218["0x7E197415"]
-2228 [-]: GETTABLE  R219 R217 K119; R219 := R217["minValue"]
-2229 [-]: GETUPVAL  R220 U2      ; R220 := U2
-2230 [-]: GETTABLE  R220 R220 K74; R220 := R220["0xF81722A2"]
-2231 [-]: GETTABLE  R221 R217 K119; R221 := R217["minValue"]
-2232 [-]: LOADK     R222 K233    ; R222 := 999.90002441406
-2233 [-]: LT        1 R221 R222  ; if R221 < R222 then PC := 2236
-2234 [-]: JMP       2236         ; PC := 2236
-2235 [-]: MOVE      R221 R0      ; R221 := R0
-2236 [-]: MOVE      R221 R1      ; R221 := R1
-2237 [-]: LOADK     R222 K3      ; R222 := 1
-2238 [-]: LOADK     R223 K18     ; R223 := 0
-2239 [-]: CALL      R220 4 0     ; R220,... := R220(R221,R222,R223)
-2240 [-]: CALL      R218 0 2     ; R218 := R218(R219,...)
-2241 [-]: LOADK     R219 K65     ; R219 := " - "
-2242 [-]: GETUPVAL  R220 U2      ; R220 := U2
-2243 [-]: GETTABLE  R220 R220 K64; R220 := R220["0x7E197415"]
-2244 [-]: GETTABLE  R221 R217 K120; R221 := R217["maxValue"]
-2245 [-]: GETUPVAL  R222 U2      ; R222 := U2
-2246 [-]: GETTABLE  R222 R222 K74; R222 := R222["0xF81722A2"]
-2247 [-]: GETTABLE  R223 R217 K120; R223 := R217["maxValue"]
-2248 [-]: LOADK     R224 K233    ; R224 := 999.90002441406
-2249 [-]: LT        1 R223 R224  ; if R223 < R224 then PC := 2252
-2250 [-]: JMP       2252         ; PC := 2252
-2251 [-]: MOVE      R223 R0      ; R223 := R0
-2252 [-]: MOVE      R223 R1      ; R223 := R1
-2253 [-]: LOADK     R224 K3      ; R224 := 1
-2254 [-]: LOADK     R225 K18     ; R225 := 0
-2255 [-]: CALL      R222 4 0     ; R222,... := R222(R223,R224,R225)
-2256 [-]: CALL      R220 0 2     ; R220 := R220(R221,...)
-2257 [-]: CONCAT    R218 R218 R220; R218 := R218 .. R219 .. R220
-2258 [-]: GETUPVAL  R219 U1      ; R219 := U1
-2259 [-]: MOVE      R220 R218    ; R220 := R218
-2260 [-]: GETTABLE  R221 R217 K119; R221 := R217["minValue"]
-2261 [-]: MOVE      R222 R0      ; R222 := R0
-2262 [-]: MOVE      R223 R1      ; R223 := R1
-2263 [-]: CALL      R219 5 2     ; R219 := R219(R220,R221,R222,R223)
-2264 [-]: SETTABLE  R41 K110 R219; R41["DamageFallOff"] := R219
-2265 [-]: JMP       2273         ; PC := 2273
-2266 [-]: GETUPVAL  R219 U1      ; R219 := U1
-2267 [-]: LOADK     R220 K275    ; R220 := "0"
-2268 [-]: LOADK     R221 K18     ; R221 := 0
-2269 [-]: MOVE      R222 R0      ; R222 := R0
-2270 [-]: MOVE      R223 R1      ; R223 := R1
-2271 [-]: CALL      R219 5 2     ; R219 := R219(R220,R221,R222,R223)
-2272 [-]: SETTABLE  R41 K110 R219; R41["DamageFallOff"] := R219
-2273 [-]: MOVE      R219 R0      ; R219 := R0
-2274 [-]: TEST      R219 0       ; if not R219 then PC := 2344
-2275 [-]: JMP       2344         ; PC := 2344
-2276 [-]: NEWTABLE  R219 6 1     ; R219 := {}
-2277 [-]: LOADK     R220 K18     ; R220 := 0
-2278 [-]: LOADK     R221 K276    ; R221 := "BT_AUTO_HITSCAN"
-2279 [-]: SETTABLE  R219 R220 R221; R219[R220] := R221
-2280 [-]: LOADK     R220 K277    ; R220 := "BT_AUTO_PROJECTILE"
-2281 [-]: LOADK     R221 K278    ; R221 := "BT_SEMI_HITSCAN"
-2282 [-]: LOADK     R222 K279    ; R222 := "BT_SEMI_PROJECTILE"
-2283 [-]: LOADK     R223 K280    ; R223 := "BT_BURST_HITSCAN"
-2284 [-]: LOADK     R224 K281    ; R224 := "BT_BURST_PROJECTILE"
-2285 [-]: LOADK     R225 K282    ; R225 := "BT_NONE"
-2286 [-]: SETLIST   R219 6 1     ; R219[(1-1)*FPF+i] := R(219+i), 1 <= i <= 6
-2287 [-]: NEWTABLE  R220 5 1     ; R220 := {}
-2288 [-]: LOADK     R221 K18     ; R221 := 0
-2289 [-]: LOADK     R222 K283    ; R222 := "GT_RIFLE"
-2290 [-]: SETTABLE  R220 R221 R222; R220[R221] := R222
-2291 [-]: LOADK     R221 K284    ; R221 := "GT_SHOTGUN"
-2292 [-]: LOADK     R222 K285    ; R222 := "GT_SNIPER"
-2293 [-]: LOADK     R223 K286    ; R223 := "GT_LAUNCHER"
-2294 [-]: LOADK     R224 K287    ; R224 := "GT_BEAM"
-2295 [-]: LOADK     R225 K288    ; R225 := "GT_NONE"
-2296 [-]: SETLIST   R220 5 1     ; R220[(1-1)*FPF+i] := R(220+i), 1 <= i <= 5
-2297 [-]: LOADK     R223 K289    ; R223 := "0x3180ADE8"
-2298 [-]: SELF      R221 R1 R223 ; R222 := R1; R221 := R1[R223]
-2299 [-]: CALL      R221 2 2     ; R221 := R221(R222)
-2300 [-]: TEST      R221 0       ; if not R221 then PC := 2344
-2301 [-]: JMP       2344         ; PC := 2344
-2302 [-]: LOADK     R223 K290    ; R223 := "0x64F4B16D"
-2303 [-]: SELF      R221 R1 R223 ; R222 := R1; R221 := R1[R223]
-2304 [-]: CALL      R221 2 2     ; R221 := R221(R222)
-2305 [-]: GETGLOBAL R222 K8      ; R222 := 0x7C282057
-2306 [-]: LOADK     R223 K128    ; R223 := 2
-2307 [-]: GETTABLE  R223 R221 R223; R223 := R221[R223]
-2308 [-]: CALL      R222 2 2     ; R222 := R222(R223)
-2309 [-]: GETGLOBAL R223 K13     ; R223 := 0x2C00D429
-2310 [-]: LOADK     R224 K291    ; R224 := "/Lotus/Types/Weapon/LotusGunBarrel"
-2311 [-]: CALL      R223 2 2     ; R223 := R223(R224)
-2312 [-]: GETGLOBAL R224 K0      ; R224 := 0x400E7765
-2313 [-]: MOVE      R225 R222    ; R225 := R222
-2314 [-]: CALL      R224 2 2     ; R224 := R224(R225)
-2315 [-]: TEST      R224 1       ; if R224 then PC := 2344
-2316 [-]: JMP       2344         ; PC := 2344
-2317 [-]: SELF      R224 R222 K4 ; R225 := R222; R224 := R222["0x8B598ED4"]
-2318 [-]: MOVE      R226 R223    ; R226 := R223
-2319 [-]: CALL      R224 3 2     ; R224 := R224(R225,R226)
-2320 [-]: TEST      R224 0       ; if not R224 then PC := 2344
-2321 [-]: JMP       2344         ; PC := 2344
-2322 [-]: LOADK     R226 K292    ; R226 := "0xB32EDF2A"
-2323 [-]: SELF      R224 R222 R226; R225 := R222; R224 := R222[R226]
-2324 [-]: CALL      R224 2 2     ; R224 := R224(R225)
-2325 [-]: GETTABLE  R224 R219 R224; R224 := R219[R224]
-2326 [-]: LOADK     R227 K293    ; R227 := "0x428F2C5D"
-2327 [-]: SELF      R225 R222 R227; R226 := R222; R225 := R222[R227]
-2328 [-]: CALL      R225 2 2     ; R225 := R225(R226)
-2329 [-]: GETTABLE  R225 R220 R225; R225 := R220[R225]
-2330 [-]: LOADK     R226 K294    ; R226 := "BarrelType"
-2331 [-]: GETUPVAL  R227 U1      ; R227 := U1
-2332 [-]: MOVE      R228 R224    ; R228 := R224
-2333 [-]: LOADK     R229 K294    ; R229 := "BarrelType"
-2334 [-]: MOVE      R230 R1      ; R230 := R1
-2335 [-]: CALL      R227 4 2     ; R227 := R227(R228,R229,R230)
-2336 [-]: SETTABLE  R41 R226 R227; R41[R226] := R227
-2337 [-]: LOADK     R226 K295    ; R226 := "GunType"
-2338 [-]: GETUPVAL  R227 U1      ; R227 := U1
-2339 [-]: MOVE      R228 R225    ; R228 := R225
-2340 [-]: LOADK     R229 K295    ; R229 := "GunType"
-2341 [-]: MOVE      R230 R1      ; R230 := R1
-2342 [-]: CALL      R227 4 2     ; R227 := R227(R228,R229,R230)
-2343 [-]: SETTABLE  R41 R226 R227; R41[R226] := R227
-2344 [-]: TFORLOOP  R31 2        ; R34,R35 :=  R31(R32,R33); if R34 ~= nil then begin PC = 154; R33 := R34 end
-2345 [-]: JMP       154          ; PC := 154
-2346 [-]: TEST      R6 0         ; if not R6 then PC := 2393
-2347 [-]: JMP       2393         ; PC := 2393
-2348 [-]: LOADK     R226 K3      ; R226 := 1
-2349 [-]: LEN       R227 R8      ; R227 := # R8
-2350 [-]: LOADK     R228 K3      ; R228 := 1
-2351 [-]: FORPREP   R226 2392    ; R226 -= R228; PC := 2392
-2352 [-]: LOADK     R230 K3      ; R230 := 1
-2353 [-]: EQ        1 R229 R230  ; if R229 == R230 then PC := 2392
-2354 [-]: JMP       2392         ; PC := 2392
-2355 [-]: LOADK     R230 K3      ; R230 := 1
-2356 [-]: GETTABLE  R230 R8 R230 ; R230 := R8[R230]
-2357 [-]: GETTABLE  R231 R8 R229 ; R231 := R8[R229]
-2358 [-]: GETGLOBAL R232 K114    ; R232 := 0xECFDD17
-2359 [-]: GETTABLE  R233 R231 K49; R233 := R231["mStats"]
-2360 [-]: CALL      R232 2 4     ; R232,R233,R234 := R232(R233)
-2361 [-]: JMP       2390         ; PC := 2390
-2362 [-]: GETGLOBAL R236 K0      ; R236 := 0x400E7765
-2363 [-]: MOVE      R237 R235    ; R237 := R235
-2364 [-]: CALL      R236 2 2     ; R236 := R236(R237)
-2365 [-]: TEST      R236 1       ; if R236 then PC := 2390
-2366 [-]: JMP       2390         ; PC := 2390
-2367 [-]: GETTABLE  R236 R230 K49; R236 := R230["mStats"]
-2368 [-]: GETTABLE  R236 R236 R235; R236 := R236[R235]
-2369 [-]: GETTABLE  R237 R231 K49; R237 := R231["mStats"]
-2370 [-]: GETTABLE  R237 R237 R235; R237 := R237[R235]
-2371 [-]: GETGLOBAL R238 K0      ; R238 := 0x400E7765
-2372 [-]: MOVE      R239 R236    ; R239 := R236
-2373 [-]: CALL      R238 2 2     ; R238 := R238(R239)
-2374 [-]: TEST      R238 1       ; if R238 then PC := 2390
-2375 [-]: JMP       2390         ; PC := 2390
-2376 [-]: GETGLOBAL R238 K0      ; R238 := 0x400E7765
-2377 [-]: MOVE      R239 R237    ; R239 := R237
-2378 [-]: CALL      R238 2 2     ; R238 := R238(R239)
-2379 [-]: TEST      R238 1       ; if R238 then PC := 2390
-2380 [-]: JMP       2390         ; PC := 2390
-2381 [-]: LOADK     R238 K296    ; R238 := "DisplayValue"
-2382 [-]: GETTABLE  R238 R237 R238; R238 := R237[R238]
-2383 [-]: LOADK     R239 K296    ; R239 := "DisplayValue"
-2384 [-]: GETTABLE  R239 R236 R239; R239 := R236[R239]
-2385 [-]: EQ        0 R238 R239  ; if R238 ~= R239 then PC := 2390
-2386 [-]: JMP       2390         ; PC := 2390
-2387 [-]: GETTABLE  R238 R231 K49; R238 := R231["mStats"]
-2388 [-]: LOADNIL   R239 R239    ; R239 := nil
-2389 [-]: SETTABLE  R238 R235 R239; R238[R235] := R239
-2390 [-]: TFORLOOP  R232 1       ; R235 :=  R232(R233,R234); if R235 ~= nil then begin PC = 2362; R234 := R235 end
-2391 [-]: JMP       2362         ; PC := 2362
-2392 [-]: FORLOOP   R226 2352    ; R226 += R228; if R226 <= R227 then begin PC := 2352; R229 := R226 end
-2393 [-]: TEST      R7 0         ; if not R7 then PC := 2401
-2394 [-]: JMP       2401         ; PC := 2401
-2395 [-]: LOADK     R240 K297    ; R240 := "0xDFCD86D7"
-2396 [-]: SELF      R238 R1 R240 ; R239 := R1; R238 := R1[R240]
-2397 [-]: CALL      R238 2 1     ; R238(R239)
-2398 [-]: SELF      R238 R1 K11  ; R239 := R1; R238 := R1["0x4F76A378"]
-2399 [-]: MOVE      R240 R0      ; R240 := R0
-2400 [-]: CALL      R238 3 1     ; R238(R239,R240)
-2401 [-]: RETURN    R8 2         ; return R8
-2402 [-]: RETURN    R0 1         ; return 
+1774 [-]: SELF      R191 R38 K218; R192 := R38; R191 := R38["0x8B4FED5D"]
+1775 [-]: MOVE      R193 R1      ; R193 := R1
+1776 [-]: CALL      R191 3 2     ; R191 := R191(R192,R193)
+1777 [-]: GETUPVAL  R192 U2      ; R192 := U2
+1778 [-]: GETTABLE  R192 R192 K64; R192 := R192["0x7E197415"]
+1779 [-]: MOVE      R193 R191    ; R193 := R191
+1780 [-]: LOADK     R194 K3      ; R194 := 1
+1781 [-]: CALL      R192 3 2     ; R192 := R192(R193,R194)
+1782 [-]: TEST      R190 0       ; if not R190 then PC := 1793
+1783 [-]: JMP       1793         ; PC := 1793
+1784 [-]: EQ        1 R191 K18   ; if R191 == 0 then PC := 1793
+1785 [-]: JMP       1793         ; PC := 1793
+1786 [-]: GETGLOBAL R193 K106    ; R193 := math
+1787 [-]: GETTABLE  R191 R193 K219; R191 := R193["huge"]
+1788 [-]: SELF      R193 R0 K46  ; R194 := R0; R193 := R0["0x5DB0BD4"]
+1789 [-]: LOADK     R195 K220    ; R195 := "<INFINITE_SMALL>"
+1790 [-]: MOVE      R196 R1      ; R196 := R1
+1791 [-]: CALL      R193 4 2     ; R193 := R193(R194,R195,R196)
+1792 [-]: MOVE      R192 R193    ; R192 := R193
+1793 [-]: GETUPVAL  R193 U1      ; R193 := U1
+1794 [-]: MOVE      R194 R192    ; R194 := R192
+1795 [-]: MOVE      R195 R191    ; R195 := R191
+1796 [-]: LOADNIL   R196 R196    ; R196 := nil
+1797 [-]: CALL      R193 4 2     ; R193 := R193(R194,R195,R196)
+1798 [-]: SETTABLE  R41 K221 R193; R41["ComboDuration"] := R193
+1799 [-]: SELF      R193 R1 K222 ; R194 := R1; R193 := R1["0x87B465B"]
+1800 [-]: CALL      R193 2 2     ; R193 := R193(R194)
+1801 [-]: GETUPVAL  R194 U1      ; R194 := U1
+1802 [-]: GETUPVAL  R195 U2      ; R195 := U2
+1803 [-]: GETTABLE  R195 R195 K64; R195 := R195["0x7E197415"]
+1804 [-]: MOVE      R196 R193    ; R196 := R193
+1805 [-]: LOADK     R197 K3      ; R197 := 1
+1806 [-]: CALL      R195 3 2     ; R195 := R195(R196,R197)
+1807 [-]: MOVE      R196 R193    ; R196 := R193
+1808 [-]: LOADNIL   R197 R199    ; R197 := R198 := R199 := nil
+1809 [-]: MOVE      R200 R193    ; R200 := R193
+1810 [-]: CALL      R194 7 2     ; R194 := R194(R195,R196,R197,R198,R199,R200)
+1811 [-]: SETTABLE  R41 K223 R194; R41["BlockingAngle"] := R194
+1812 [-]: SELF      R194 R1 K224 ; R195 := R1; R194 := R1["0xBDA8A772"]
+1813 [-]: CALL      R194 2 2     ; R194 := R194(R195)
+1814 [-]: GETUPVAL  R195 U1      ; R195 := U1
+1815 [-]: GETUPVAL  R196 U2      ; R196 := U2
+1816 [-]: GETTABLE  R196 R196 K64; R196 := R196["0x7E197415"]
+1817 [-]: MOVE      R197 R194    ; R197 := R194
+1818 [-]: LOADK     R198 K3      ; R198 := 1
+1819 [-]: CALL      R196 3 2     ; R196 := R196(R197,R198)
+1820 [-]: MOVE      R197 R194    ; R197 := R194
+1821 [-]: LOADNIL   R198 R198    ; R198 := nil
+1822 [-]: CALL      R195 4 2     ; R195 := R195(R196,R197,R198)
+1823 [-]: SETTABLE  R41 K225 R195; R41["SlamAttackRadius"] := R195
+1824 [-]: SELF      R195 R1 K226 ; R196 := R1; R195 := R1["0x1178DB2D"]
+1825 [-]: CALL      R195 2 2     ; R195 := R195(R196)
+1826 [-]: GETUPVAL  R196 U5      ; R196 := U5
+1827 [-]: MOVE      R197 R195    ; R197 := R195
+1828 [-]: CALL      R196 2 2     ; R196 := R196(R197)
+1829 [-]: SETTABLE  R41 K227 R196; R41["SlamAttackRadialDamage"] := R196
+1830 [-]: NEWTABLE  R196 0 0     ; R196 := {}
+1831 [-]: SELF      R197 R2 K228 ; R198 := R2; R197 := R2["0xE50E1085"]
+1832 [-]: GETGLOBAL R199 K84     ; R199 := Engine
+1833 [-]: GETTABLE  R199 R199 K229; R199 := R199["PM_HEAVY_MELEE"]
+1834 [-]: MOVE      R200 R1      ; R200 := R1
+1835 [-]: CALL      R197 4 1     ; R197(R198,R199,R200)
+1836 [-]: SELF      R197 R38 K203; R198 := R38; R197 := R38["0xEC6AA1CB"]
+1837 [-]: GETGLOBAL R199 K204    ; R199 := Lotus_Game
+1838 [-]: GETTABLE  R199 R199 K230; R199 := R199["MeleeAttack_CC_GROUND_HEAVY"]
+1839 [-]: CALL      R197 3 2     ; R197 := R197(R198,R199)
+1840 [-]: MOVE      R198 R182    ; R198 := R182
+1841 [-]: MOVE      R199 R197    ; R199 := R197
+1842 [-]: CALL      R198 2 2     ; R198 := R198(R199)
+1843 [-]: SELF      R199 R38 K231; R200 := R38; R199 := R38["0xB6C044B0"]
+1844 [-]: GETGLOBAL R201 K204    ; R201 := Lotus_Game
+1845 [-]: GETTABLE  R201 R201 K230; R201 := R201["MeleeAttack_CC_GROUND_HEAVY"]
+1846 [-]: CALL      R199 3 2     ; R199 := R199(R200,R201)
+1847 [-]: LOADK     R200 K3      ; R200 := 1
+1848 [-]: GETGLOBAL R201 K0      ; R201 := 0x400E7765
+1849 [-]: MOVE      R202 R199    ; R202 := R199
+1850 [-]: CALL      R201 2 2     ; R201 := R201(R202)
+1851 [-]: TEST      R201 1       ; if R201 then PC := 1856
+1852 [-]: JMP       1856         ; PC := 1856
+1853 [-]: SELF      R201 R199 K232; R202 := R199; R201 := R199["0xCCBE3791"]
+1854 [-]: CALL      R201 2 2     ; R201 := R201(R202)
+1855 [-]: MOVE      R200 R201    ; R200 := R201
+1856 [-]: GETUPVAL  R201 U2      ; R201 := U2
+1857 [-]: GETTABLE  R201 R201 K64; R201 := R201["0x7E197415"]
+1858 [-]: MOVE      R202 R198    ; R202 := R198
+1859 [-]: GETUPVAL  R203 U2      ; R203 := U2
+1860 [-]: GETTABLE  R203 R203 K74; R203 := R203["0xF81722A2"]
+1861 [-]: LT        1 R198 K233  ; if R198 < 999.90002441406 then PC := 1864
+1862 [-]: JMP       1864         ; PC := 1864
+1863 [-]: MOVE      R204 R0      ; R204 := R0
+1864 [-]: MOVE      R204 R1      ; R204 := R1
+1865 [-]: LOADK     R205 K3      ; R205 := 1
+1866 [-]: LOADK     R206 K18     ; R206 := 0
+1867 [-]: CALL      R203 4 0     ; R203,... := R203(R204,R205,R206)
+1868 [-]: CALL      R201 0 2     ; R201 := R201(R202,...)
+1869 [-]: LT        0 K3 R200    ; if 1 >= R200 then PC := 1878
+1870 [-]: JMP       1878         ; PC := 1878
+1871 [-]: MOVE      R202 R201    ; R202 := R201
+1872 [-]: LOADK     R203 K234    ; R203 := " x"
+1873 [-]: GETUPVAL  R204 U2      ; R204 := U2
+1874 [-]: GETTABLE  R204 R204 K64; R204 := R204["0x7E197415"]
+1875 [-]: MOVE      R205 R200    ; R205 := R200
+1876 [-]: CALL      R204 2 2     ; R204 := R204(R205)
+1877 [-]: CONCAT    R201 R202 R204; R201 := R202 .. R203 .. R204
+1878 [-]: GETUPVAL  R202 U1      ; R202 := U1
+1879 [-]: MOVE      R203 R201    ; R203 := R201
+1880 [-]: MOVE      R204 R198    ; R204 := R198
+1881 [-]: LOADNIL   R205 R205    ; R205 := nil
+1882 [-]: CALL      R202 4 2     ; R202 := R202(R203,R204,R205)
+1883 [-]: SETTABLE  R196 K235 R202; R196["HeavyAttack"] := R202
+1884 [-]: SELF      R202 R2 K228 ; R203 := R2; R202 := R2["0xE50E1085"]
+1885 [-]: GETGLOBAL R204 K84     ; R204 := Engine
+1886 [-]: GETTABLE  R204 R204 K229; R204 := R204["PM_HEAVY_MELEE"]
+1887 [-]: MOVE      R205 R0      ; R205 := R0
+1888 [-]: CALL      R202 4 1     ; R202(R203,R204,R205)
+1889 [-]: GETGLOBAL R202 K0      ; R202 := 0x400E7765
+1890 [-]: MOVE      R203 R186    ; R203 := R186
+1891 [-]: CALL      R202 2 2     ; R202 := R202(R203)
+1892 [-]: TEST      R202 1       ; if R202 then PC := 1915
+1893 [-]: JMP       1915         ; PC := 1915
+1894 [-]: SELF      R202 R186 K236; R203 := R186; R202 := R186["0xE9295BB9"]
+1895 [-]: CALL      R202 2 2     ; R202 := R202(R203)
+1896 [-]: SELF      R203 R12 K70 ; R204 := R12; R203 := R12["0xC7EA8CA1"]
+1897 [-]: LOADK     R205 K3      ; R205 := 1
+1898 [-]: GETGLOBAL R206 K67     ; R206 := Game
+1899 [-]: GETTABLE  R206 R206 K237; R206 := R206["WEAPON_MELEE_HEAVY_CHARGE_SPEED"]
+1900 [-]: SELF      R207 R1 K69  ; R208 := R1; R207 := R1["0xE2B32C65"]
+1901 [-]: CALL      R207 2 2     ; R207 := R207(R208)
+1902 [-]: MOVE      R208 R1      ; R208 := R1
+1903 [-]: CALL      R203 6 2     ; R203 := R203(R204,R205,R206,R207,R208)
+1904 [-]: DIV       R202 R202 R203; R202 := R202 / R203
+1905 [-]: GETUPVAL  R203 U1      ; R203 := U1
+1906 [-]: GETUPVAL  R204 U2      ; R204 := U2
+1907 [-]: GETTABLE  R204 R204 K64; R204 := R204["0x7E197415"]
+1908 [-]: MOVE      R205 R202    ; R205 := R202
+1909 [-]: LOADK     R206 K3      ; R206 := 1
+1910 [-]: CALL      R204 3 2     ; R204 := R204(R205,R206)
+1911 [-]: UNM       R205 R202    ; R205 := - R202
+1912 [-]: LOADNIL   R206 R206    ; R206 := nil
+1913 [-]: CALL      R203 4 2     ; R203 := R203(R204,R205,R206)
+1914 [-]: SETTABLE  R196 K238 R203; R196["HeavyAttackWindUp"] := R203
+1915 [-]: MOVE      R203 R182    ; R203 := R182
+1916 [-]: MOVE      R204 R185    ; R204 := R185
+1917 [-]: CALL      R203 2 2     ; R203 := R203(R204)
+1918 [-]: SELF      R204 R1 K239 ; R205 := R1; R204 := R1["0xDE62D8B1"]
+1919 [-]: CALL      R204 2 2     ; R204 := R204(R205)
+1920 [-]: MUL       R203 R203 R204; R203 := R203 * R204
+1921 [-]: GETUPVAL  R204 U5      ; R204 := U5
+1922 [-]: MOVE      R205 R203    ; R205 := R203
+1923 [-]: CALL      R204 2 2     ; R204 := R204(R205)
+1924 [-]: SETTABLE  R196 K240 R204; R196["HeavySlamAttack"] := R204
+1925 [-]: GETGLOBAL R204 K241    ; R204 := 0xEC274B1A
+1926 [-]: LOADK     R205 K242    ; R205 := "HeavySlam"
+1927 [-]: CALL      R204 2 2     ; R204 := R204(R205)
+1928 [-]: SELF      R205 R1 K224 ; R206 := R1; R205 := R1["0xBDA8A772"]
+1929 [-]: MOVE      R207 R204    ; R207 := R204
+1930 [-]: CALL      R205 3 2     ; R205 := R205(R206,R207)
+1931 [-]: GETUPVAL  R206 U1      ; R206 := U1
+1932 [-]: GETUPVAL  R207 U2      ; R207 := U2
+1933 [-]: GETTABLE  R207 R207 K64; R207 := R207["0x7E197415"]
+1934 [-]: MOVE      R208 R205    ; R208 := R205
+1935 [-]: LOADK     R209 K3      ; R209 := 1
+1936 [-]: CALL      R207 3 2     ; R207 := R207(R208,R209)
+1937 [-]: MOVE      R208 R205    ; R208 := R205
+1938 [-]: LOADNIL   R209 R209    ; R209 := nil
+1939 [-]: CALL      R206 4 2     ; R206 := R206(R207,R208,R209)
+1940 [-]: SETTABLE  R196 K243 R206; R196["HeavySlamAttackRadius"] := R206
+1941 [-]: SELF      R206 R1 K226 ; R207 := R1; R206 := R1["0x1178DB2D"]
+1942 [-]: MOVE      R208 R204    ; R208 := R204
+1943 [-]: CALL      R206 3 2     ; R206 := R206(R207,R208)
+1944 [-]: LT        0 K18 R206   ; if 0 >= R206 then PC := 1950
+1945 [-]: JMP       1950         ; PC := 1950
+1946 [-]: GETUPVAL  R207 U5      ; R207 := U5
+1947 [-]: MOVE      R208 R206    ; R208 := R206
+1948 [-]: CALL      R207 2 2     ; R207 := R207(R208)
+1949 [-]: SETTABLE  R196 K244 R207; R196["HeavySlamAttackRadialDamage"] := R207
+1950 [-]: NEWTABLE  R207 0 5     ; R207 := {}
+1951 [-]: SELF      R208 R0 K46  ; R209 := R0; R208 := R0["0x5DB0BD4"]
+1952 [-]: LOADK     R210 K245    ; R210 := "/Lotus/Language/Labels/AVATAR_HEAVY_ATTACK"
+1953 [-]: MOVE      R211 R0      ; R211 := R0
+1954 [-]: CALL      R208 4 2     ; R208 := R208(R209,R210,R211)
+1955 [-]: SETTABLE  R207 K45 R208; R207["mName"] := R208
+1956 [-]: SETTABLE  R207 K47 K33 ; R207["mIsMelee"] := "0x1"
+1957 [-]: GETTABLE  R208 R35 K21 ; R208 := R35["behaviorIndex"]
+1958 [-]: SETTABLE  R207 K48 R208; R207["mBehaviorIndex"] := R208
+1959 [-]: SETTABLE  R207 K49 R196; R207["mStats"] := R196
+1960 [-]: SETTABLE  R207 K95 K33 ; R207["mExtra"] := "0x1"
+1961 [-]: GETGLOBAL R208 K23     ; R208 := table
+1962 [-]: GETTABLE  R208 R208 K24; R208 := R208["0xE6450C9D"]
+1963 [-]: MOVE      R209 R8      ; R209 := R8
+1964 [-]: MOVE      R210 R207    ; R210 := R207
+1965 [-]: CALL      R208 3 1     ; R208(R209,R210)
+1966 [-]: GETTABLE  R208 R35 K246; R208 := R35["localizeTag"]
+1967 [-]: EQ        0 R208 K20   ; if R208 ~= "/Lotus/Language/Menu/Loadout_FireModePrimary" then PC := 1974
+1968 [-]: JMP       1974         ; PC := 1974
+1969 [-]: SELF      R208 R0 K46  ; R209 := R0; R208 := R0["0x5DB0BD4"]
+1970 [-]: LOADK     R210 K247    ; R210 := "/Lotus/Language/Menu/Loadout_FireModeMelee"
+1971 [-]: MOVE      R211 R0      ; R211 := R0
+1972 [-]: CALL      R208 4 2     ; R208 := R208(R209,R210,R211)
+1973 [-]: SETTABLE  R42 K45 R208 ; R42["mName"] := R208
+1974 [-]: LOADK     R208 K3      ; R208 := 1
+1975 [-]: TEST      R40 0        ; if not R40 then PC := 1979
+1976 [-]: JMP       1979         ; PC := 1979
+1977 [-]: TEST      R39 1        ; if R39 then PC := 1980
+1978 [-]: JMP       1980         ; PC := 1980
+1979 [-]: MOVE      R208 R53     ; R208 := R53
+1980 [-]: GETUPVAL  R209 U7      ; R209 := U7
+1981 [-]: MOVE      R210 R101    ; R210 := R101
+1982 [-]: MOVE      R211 R11     ; R211 := R11
+1983 [-]: MOVE      R212 R208    ; R212 := R208
+1984 [-]: CALL      R209 4 1     ; R209(R210,R211,R212)
+1985 [-]: TEST      R56 0        ; if not R56 then PC := 1992
+1986 [-]: JMP       1992         ; PC := 1992
+1987 [-]: GETGLOBAL R209 K23     ; R209 := table
+1988 [-]: GETTABLE  R209 R209 K24; R209 := R209["0xE6450C9D"]
+1989 [-]: MOVE      R210 R8      ; R210 := R8
+1990 [-]: MOVE      R211 R54     ; R211 := R54
+1991 [-]: CALL      R209 3 1     ; R209(R210,R211)
+1992 [-]: EQ        1 R55 K2     ; if R55 == nil then PC := 1999
+1993 [-]: JMP       1999         ; PC := 1999
+1994 [-]: GETGLOBAL R209 K23     ; R209 := table
+1995 [-]: GETTABLE  R209 R209 K24; R209 := R209["0xE6450C9D"]
+1996 [-]: MOVE      R210 R8      ; R210 := R8
+1997 [-]: MOVE      R211 R55     ; R211 := R55
+1998 [-]: CALL      R209 3 1     ; R209(R210,R211)
+1999 [-]: SELF      R209 R1 K4   ; R210 := R1; R209 := R1["0x8B598ED4"]
+2000 [-]: GETGLOBAL R211 K248    ; R211 := gLotusWeaponType
+2001 [-]: CALL      R209 3 2     ; R209 := R209(R210,R211)
+2002 [-]: TEST      R209 0       ; if not R209 then PC := 2059
+2003 [-]: JMP       2059         ; PC := 2059
+2004 [-]: SELF      R209 R0 K249 ; R210 := R0; R209 := R0["0x458F27A9"]
+2005 [-]: LOADK     R211 K250    ; R211 := "ShouldShowOmegaAttenStat"
+2006 [-]: LOADK     R212 K53     ; R212 := ""
+2007 [-]: CALL      R209 4 2     ; R209 := R209(R210,R211,R212)
+2008 [-]: TEST      R209 0       ; if not R209 then PC := 2059
+2009 [-]: JMP       2059         ; PC := 2059
+2010 [-]: SELF      R209 R1 K251 ; R210 := R1; R209 := R1["0x9B547C61"]
+2011 [-]: CALL      R209 2 2     ; R209 := R209(R210)
+2012 [-]: LOADK     R210 K53     ; R210 := ""
+2013 [-]: LT        0 R209 K252  ; if R209 >= 0.69999998807907 then PC := 2021
+2014 [-]: JMP       2021         ; PC := 2021
+2015 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
+2016 [-]: LOADK     R213 K253    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenLowest"
+2017 [-]: MOVE      R214 R1      ; R214 := R1
+2018 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
+2019 [-]: MOVE      R210 R211    ; R210 := R211
+2020 [-]: JMP       2052         ; PC := 2052
+2021 [-]: LT        0 R209 K254  ; if R209 >= 0.89999997615814 then PC := 2029
+2022 [-]: JMP       2029         ; PC := 2029
+2023 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
+2024 [-]: LOADK     R213 K255    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenLow"
+2025 [-]: MOVE      R214 R1      ; R214 := R1
+2026 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
+2027 [-]: MOVE      R210 R211    ; R210 := R211
+2028 [-]: JMP       2052         ; PC := 2052
+2029 [-]: LOADK     R211 K256    ; R211 := 1.1089999675751
+2030 [-]: LE        0 R209 R211  ; if R209 > R211 then PC := 2038
+2031 [-]: JMP       2038         ; PC := 2038
+2032 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
+2033 [-]: LOADK     R213 K257    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenMedium"
+2034 [-]: MOVE      R214 R1      ; R214 := R1
+2035 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
+2036 [-]: MOVE      R210 R211    ; R210 := R211
+2037 [-]: JMP       2052         ; PC := 2052
+2038 [-]: LOADK     R211 K258    ; R211 := 1.3090000152588
+2039 [-]: LE        0 R209 R211  ; if R209 > R211 then PC := 2047
+2040 [-]: JMP       2047         ; PC := 2047
+2041 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
+2042 [-]: LOADK     R213 K259    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenHigh"
+2043 [-]: MOVE      R214 R1      ; R214 := R1
+2044 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
+2045 [-]: MOVE      R210 R211    ; R210 := R211
+2046 [-]: JMP       2052         ; PC := 2052
+2047 [-]: SELF      R211 R0 K46  ; R212 := R0; R211 := R0["0x5DB0BD4"]
+2048 [-]: LOADK     R213 K260    ; R213 := "/Lotus/Language/Menu/WeaponStats_OmegaAttenHighest"
+2049 [-]: MOVE      R214 R1      ; R214 := R1
+2050 [-]: CALL      R211 4 2     ; R211 := R211(R212,R213,R214)
+2051 [-]: MOVE      R210 R211    ; R210 := R211
+2052 [-]: LOADK     R211 K261    ; R211 := "OmegaAtten"
+2053 [-]: GETUPVAL  R212 U1      ; R212 := U1
+2054 [-]: MOVE      R213 R210    ; R213 := R210
+2055 [-]: MOVE      R214 R209    ; R214 := R209
+2056 [-]: LOADNIL   R215 R215    ; R215 := nil
+2057 [-]: CALL      R212 4 2     ; R212 := R212(R213,R214,R215)
+2058 [-]: SETTABLE  R41 R211 R212; R41[R211] := R212
+2059 [-]: SELF      R211 R37 K4  ; R212 := R37; R211 := R37["0x8B598ED4"]
+2060 [-]: GETGLOBAL R213 K262    ; R213 := gWeaponTraceFireBehaviorType
+2061 [-]: CALL      R211 3 2     ; R211 := R211(R212,R213)
+2062 [-]: TEST      R211 0       ; if not R211 then PC := 2098
+2063 [-]: JMP       2098         ; PC := 2098
+2064 [-]: LOADK     R213 K263    ; R213 := "0x5A4A7D47"
+2065 [-]: SELF      R211 R37 R213; R212 := R37; R211 := R37[R213]
+2066 [-]: CALL      R211 2 2     ; R211 := R211(R212)
+2067 [-]: TEST      R211 1       ; if R211 then PC := 2087
+2068 [-]: JMP       2087         ; PC := 2087
+2069 [-]: LOADK     R214 K264    ; R214 := "0xE7B8584"
+2070 [-]: SELF      R212 R37 R214; R213 := R37; R212 := R37[R214]
+2071 [-]: CALL      R212 2 2     ; R212 := R212(R213)
+2072 [-]: LOADK     R213 K18     ; R213 := 0
+2073 [-]: LT        0 R213 R212  ; if R213 >= R212 then PC := 2174
+2074 [-]: JMP       2174         ; PC := 2174
+2075 [-]: LOADK     R213 K265    ; R213 := "Punchthrough"
+2076 [-]: GETUPVAL  R214 U1      ; R214 := U1
+2077 [-]: GETUPVAL  R215 U2      ; R215 := U2
+2078 [-]: GETTABLE  R215 R215 K64; R215 := R215["0x7E197415"]
+2079 [-]: MOVE      R216 R212    ; R216 := R212
+2080 [-]: LOADK     R217 K3      ; R217 := 1
+2081 [-]: CALL      R215 3 2     ; R215 := R215(R216,R217)
+2082 [-]: MOVE      R216 R212    ; R216 := R212
+2083 [-]: LOADNIL   R217 R217    ; R217 := nil
+2084 [-]: CALL      R214 4 2     ; R214 := R214(R215,R216,R217)
+2085 [-]: SETTABLE  R41 R213 R214; R41[R213] := R214
+2086 [-]: JMP       2174         ; PC := 2174
+2087 [-]: LOADK     R213 K265    ; R213 := "Punchthrough"
+2088 [-]: GETUPVAL  R214 U1      ; R214 := U1
+2089 [-]: SELF      R215 R0 K46  ; R216 := R0; R215 := R0["0x5DB0BD4"]
+2090 [-]: LOADK     R217 K266    ; R217 := "/Lotus/Language/Game/WEAPON_PUNCTURE_DEPTH_INFINITE"
+2091 [-]: MOVE      R218 R1      ; R218 := R1
+2092 [-]: CALL      R215 4 2     ; R215 := R215(R216,R217,R218)
+2093 [-]: LOADK     R216 K267    ; R216 := 4294967296
+2094 [-]: LOADNIL   R217 R217    ; R217 := nil
+2095 [-]: CALL      R214 4 2     ; R214 := R214(R215,R216,R217)
+2096 [-]: SETTABLE  R41 R213 R214; R41[R213] := R214
+2097 [-]: JMP       2174         ; PC := 2174
+2098 [-]: SELF      R213 R37 K4  ; R214 := R37; R213 := R37["0x8B598ED4"]
+2099 [-]: GETGLOBAL R215 K268    ; R215 := gWeaponProjectileFireBehaviorType
+2100 [-]: CALL      R213 3 2     ; R213 := R213(R214,R215)
+2101 [-]: TEST      R213 0       ; if not R213 then PC := 2174
+2102 [-]: JMP       2174         ; PC := 2174
+2103 [-]: LOADK     R213 K18     ; R213 := 0
+2104 [-]: MOVE      R214 R0      ; R214 := R0
+2105 [-]: GETTABLE  R215 R35 K30 ; R215 := R35["turboGlaive"]
+2106 [-]: MOVE      R216 R1      ; R216 := R1
+2107 [-]: EQ        0 R215 R216  ; if R215 ~= R216 then PC := 2117
+2108 [-]: JMP       2117         ; PC := 2117
+2109 [-]: LOADK     R217 K269    ; R217 := "0xD8A75E11"
+2110 [-]: SELF      R215 R1 R217 ; R216 := R1; R215 := R1[R217]
+2111 [-]: SELF      R217 R37 K178; R218 := R37; R217 := R37["0x32B951C9"]
+2112 [-]: MOVE      R219 R5      ; R219 := R5
+2113 [-]: CALL      R217 3 0     ; R217,... := R217(R218,R219)
+2114 [-]: CALL      R215 0 2     ; R215 := R215(R216,...)
+2115 [-]: MOVE      R213 R215    ; R213 := R215
+2116 [-]: JMP       2147         ; PC := 2147
+2117 [-]: SELF      R215 R37 K72 ; R216 := R37; R215 := R37["0xDD2EE7D2"]
+2118 [-]: CALL      R215 2 2     ; R215 := R215(R216)
+2119 [-]: GETGLOBAL R216 K0      ; R216 := 0x400E7765
+2120 [-]: MOVE      R217 R215    ; R217 := R215
+2121 [-]: CALL      R216 2 2     ; R216 := R216(R217)
+2122 [-]: TEST      R216 1       ; if R216 then PC := 2141
+2123 [-]: JMP       2141         ; PC := 2141
+2124 [-]: SELF      R216 R215 K4 ; R217 := R215; R216 := R215["0x8B598ED4"]
+2125 [-]: GETGLOBAL R218 K270    ; R218 := gWaveProjectileType
+2126 [-]: CALL      R216 3 2     ; R216 := R216(R217,R218)
+2127 [-]: TEST      R216 0       ; if not R216 then PC := 2141
+2128 [-]: JMP       2141         ; PC := 2141
+2129 [-]: GETGLOBAL R216 K8      ; R216 := 0x7C282057
+2130 [-]: MOVE      R217 R215    ; R217 := R215
+2131 [-]: CALL      R216 2 2     ; R216 := R216(R217)
+2132 [-]: GETGLOBAL R217 K0      ; R217 := 0x400E7765
+2133 [-]: MOVE      R218 R216    ; R218 := R216
+2134 [-]: CALL      R217 2 2     ; R217 := R217(R218)
+2135 [-]: TEST      R217 1       ; if R217 then PC := 2141
+2136 [-]: JMP       2141         ; PC := 2141
+2137 [-]: LOADK     R219 K271    ; R219 := "0xBD6E0288"
+2138 [-]: SELF      R217 R216 R219; R218 := R216; R217 := R216[R219]
+2139 [-]: CALL      R217 2 2     ; R217 := R217(R218)
+2140 [-]: MOVE      R214 R217    ; R214 := R217
+2141 [-]: LOADK     R219 K269    ; R219 := "0xD8A75E11"
+2142 [-]: SELF      R217 R1 R219 ; R218 := R1; R217 := R1[R219]
+2143 [-]: SELF      R219 R37 K72 ; R220 := R37; R219 := R37["0xDD2EE7D2"]
+2144 [-]: CALL      R219 2 0     ; R219,... := R219(R220)
+2145 [-]: CALL      R217 0 2     ; R217 := R217(R218,...)
+2146 [-]: MOVE      R213 R217    ; R213 := R217
+2147 [-]: TEST      R214 0       ; if not R214 then PC := 2160
+2148 [-]: JMP       2160         ; PC := 2160
+2149 [-]: LOADK     R217 K265    ; R217 := "Punchthrough"
+2150 [-]: GETUPVAL  R218 U1      ; R218 := U1
+2151 [-]: SELF      R219 R0 K46  ; R220 := R0; R219 := R0["0x5DB0BD4"]
+2152 [-]: LOADK     R221 K266    ; R221 := "/Lotus/Language/Game/WEAPON_PUNCTURE_DEPTH_INFINITE"
+2153 [-]: MOVE      R222 R1      ; R222 := R1
+2154 [-]: CALL      R219 4 2     ; R219 := R219(R220,R221,R222)
+2155 [-]: LOADK     R220 K267    ; R220 := 4294967296
+2156 [-]: LOADNIL   R221 R221    ; R221 := nil
+2157 [-]: CALL      R218 4 2     ; R218 := R218(R219,R220,R221)
+2158 [-]: SETTABLE  R41 R217 R218; R41[R217] := R218
+2159 [-]: JMP       2174         ; PC := 2174
+2160 [-]: LOADK     R217 K18     ; R217 := 0
+2161 [-]: LT        0 R217 R213  ; if R217 >= R213 then PC := 2174
+2162 [-]: JMP       2174         ; PC := 2174
+2163 [-]: LOADK     R217 K265    ; R217 := "Punchthrough"
+2164 [-]: GETUPVAL  R218 U1      ; R218 := U1
+2165 [-]: GETUPVAL  R219 U2      ; R219 := U2
+2166 [-]: GETTABLE  R219 R219 K64; R219 := R219["0x7E197415"]
+2167 [-]: MOVE      R220 R213    ; R220 := R213
+2168 [-]: LOADK     R221 K3      ; R221 := 1
+2169 [-]: CALL      R219 3 2     ; R219 := R219(R220,R221)
+2170 [-]: MOVE      R220 R213    ; R220 := R213
+2171 [-]: LOADNIL   R221 R221    ; R221 := nil
+2172 [-]: CALL      R218 4 2     ; R218 := R218(R219,R220,R221)
+2173 [-]: SETTABLE  R41 R217 R218; R41[R217] := R218
+2174 [-]: LOADK     R217 K18     ; R217 := 0
+2175 [-]: SELF      R218 R37 K4  ; R219 := R37; R218 := R37["0x8B598ED4"]
+2176 [-]: GETGLOBAL R220 K268    ; R220 := gWeaponProjectileFireBehaviorType
+2177 [-]: CALL      R218 3 2     ; R218 := R218(R219,R220)
+2178 [-]: TEST      R218 0       ; if not R218 then PC := 2192
+2179 [-]: JMP       2192         ; PC := 2192
+2180 [-]: SELF      R218 R37 K101; R219 := R37; R218 := R37["0x8E4EE31F"]
+2181 [-]: CALL      R218 2 2     ; R218 := R218(R219)
+2182 [-]: TEST      R218 1       ; if R218 then PC := 2192
+2183 [-]: JMP       2192         ; PC := 2192
+2184 [-]: LOADK     R220 K272    ; R220 := "0x7D42B367"
+2185 [-]: SELF      R218 R1 R220 ; R219 := R1; R218 := R1[R220]
+2186 [-]: SELF      R220 R37 K72 ; R221 := R37; R220 := R37["0xDD2EE7D2"]
+2187 [-]: CALL      R220 2 2     ; R220 := R220(R221)
+2188 [-]: MOVE      R221 R0      ; R221 := R0
+2189 [-]: CALL      R218 4 2     ; R218 := R218(R219,R220,R221)
+2190 [-]: MOVE      R217 R218    ; R217 := R218
+2191 [-]: JMP       2194         ; PC := 2194
+2192 [-]: LOADK     R218 K273    ; R218 := "damageFallOff"
+2193 [-]: GETTABLE  R217 R38 R218; R217 := R38[R218]
+2194 [-]: GETTABLE  R218 R217 K120; R218 := R217["maxValue"]
+2195 [-]: LOADK     R219 K18     ; R219 := 0
+2196 [-]: LT        0 R219 R218  ; if R219 >= R218 then PC := 2271
+2197 [-]: JMP       2271         ; PC := 2271
+2198 [-]: NEWTABLE  R218 0 2     ; R218 := {}
+2199 [-]: SELF      R219 R12 K70 ; R220 := R12; R219 := R12["0xC7EA8CA1"]
+2200 [-]: GETTABLE  R221 R217 K119; R221 := R217["minValue"]
+2201 [-]: GETGLOBAL R222 K67     ; R222 := Game
+2202 [-]: LOADK     R223 K274    ; R223 := "WEAPON_PROJECTILE_SPEED"
+2203 [-]: GETTABLE  R222 R222 R223; R222 := R222[R223]
+2204 [-]: SELF      R223 R1 K69  ; R224 := R1; R223 := R1["0xE2B32C65"]
+2205 [-]: CALL      R223 2 2     ; R223 := R223(R224)
+2206 [-]: MOVE      R224 R1      ; R224 := R1
+2207 [-]: CALL      R219 6 2     ; R219 := R219(R220,R221,R222,R223,R224)
+2208 [-]: SETTABLE  R218 K119 R219; R218["minValue"] := R219
+2209 [-]: SELF      R219 R12 K70 ; R220 := R12; R219 := R12["0xC7EA8CA1"]
+2210 [-]: GETTABLE  R221 R217 K120; R221 := R217["maxValue"]
+2211 [-]: GETGLOBAL R222 K67     ; R222 := Game
+2212 [-]: LOADK     R223 K274    ; R223 := "WEAPON_PROJECTILE_SPEED"
+2213 [-]: GETTABLE  R222 R222 R223; R222 := R222[R223]
+2214 [-]: SELF      R223 R1 K69  ; R224 := R1; R223 := R1["0xE2B32C65"]
+2215 [-]: CALL      R223 2 2     ; R223 := R223(R224)
+2216 [-]: MOVE      R224 R1      ; R224 := R1
+2217 [-]: CALL      R219 6 2     ; R219 := R219(R220,R221,R222,R223,R224)
+2218 [-]: SETTABLE  R218 K120 R219; R218["maxValue"] := R219
+2219 [-]: MOVE      R217 R218    ; R217 := R218
+2220 [-]: GETTABLE  R218 R217 K120; R218 := R217["maxValue"]
+2221 [-]: LOADK     R219 K18     ; R219 := 0
+2222 [-]: LT        0 R219 R218  ; if R219 >= R218 then PC := 2264
+2223 [-]: JMP       2264         ; PC := 2264
+2224 [-]: GETUPVAL  R218 U2      ; R218 := U2
+2225 [-]: GETTABLE  R218 R218 K64; R218 := R218["0x7E197415"]
+2226 [-]: GETTABLE  R219 R217 K119; R219 := R217["minValue"]
+2227 [-]: GETUPVAL  R220 U2      ; R220 := U2
+2228 [-]: GETTABLE  R220 R220 K74; R220 := R220["0xF81722A2"]
+2229 [-]: GETTABLE  R221 R217 K119; R221 := R217["minValue"]
+2230 [-]: LOADK     R222 K233    ; R222 := 999.90002441406
+2231 [-]: LT        1 R221 R222  ; if R221 < R222 then PC := 2234
+2232 [-]: JMP       2234         ; PC := 2234
+2233 [-]: MOVE      R221 R0      ; R221 := R0
+2234 [-]: MOVE      R221 R1      ; R221 := R1
+2235 [-]: LOADK     R222 K3      ; R222 := 1
+2236 [-]: LOADK     R223 K18     ; R223 := 0
+2237 [-]: CALL      R220 4 0     ; R220,... := R220(R221,R222,R223)
+2238 [-]: CALL      R218 0 2     ; R218 := R218(R219,...)
+2239 [-]: LOADK     R219 K65     ; R219 := " - "
+2240 [-]: GETUPVAL  R220 U2      ; R220 := U2
+2241 [-]: GETTABLE  R220 R220 K64; R220 := R220["0x7E197415"]
+2242 [-]: GETTABLE  R221 R217 K120; R221 := R217["maxValue"]
+2243 [-]: GETUPVAL  R222 U2      ; R222 := U2
+2244 [-]: GETTABLE  R222 R222 K74; R222 := R222["0xF81722A2"]
+2245 [-]: GETTABLE  R223 R217 K120; R223 := R217["maxValue"]
+2246 [-]: LOADK     R224 K233    ; R224 := 999.90002441406
+2247 [-]: LT        1 R223 R224  ; if R223 < R224 then PC := 2250
+2248 [-]: JMP       2250         ; PC := 2250
+2249 [-]: MOVE      R223 R0      ; R223 := R0
+2250 [-]: MOVE      R223 R1      ; R223 := R1
+2251 [-]: LOADK     R224 K3      ; R224 := 1
+2252 [-]: LOADK     R225 K18     ; R225 := 0
+2253 [-]: CALL      R222 4 0     ; R222,... := R222(R223,R224,R225)
+2254 [-]: CALL      R220 0 2     ; R220 := R220(R221,...)
+2255 [-]: CONCAT    R218 R218 R220; R218 := R218 .. R219 .. R220
+2256 [-]: GETUPVAL  R219 U1      ; R219 := U1
+2257 [-]: MOVE      R220 R218    ; R220 := R218
+2258 [-]: GETTABLE  R221 R217 K119; R221 := R217["minValue"]
+2259 [-]: MOVE      R222 R0      ; R222 := R0
+2260 [-]: MOVE      R223 R1      ; R223 := R1
+2261 [-]: CALL      R219 5 2     ; R219 := R219(R220,R221,R222,R223)
+2262 [-]: SETTABLE  R41 K110 R219; R41["DamageFallOff"] := R219
+2263 [-]: JMP       2271         ; PC := 2271
+2264 [-]: GETUPVAL  R219 U1      ; R219 := U1
+2265 [-]: LOADK     R220 K275    ; R220 := "0"
+2266 [-]: LOADK     R221 K18     ; R221 := 0
+2267 [-]: MOVE      R222 R0      ; R222 := R0
+2268 [-]: MOVE      R223 R1      ; R223 := R1
+2269 [-]: CALL      R219 5 2     ; R219 := R219(R220,R221,R222,R223)
+2270 [-]: SETTABLE  R41 K110 R219; R41["DamageFallOff"] := R219
+2271 [-]: MOVE      R219 R0      ; R219 := R0
+2272 [-]: TEST      R219 0       ; if not R219 then PC := 2342
+2273 [-]: JMP       2342         ; PC := 2342
+2274 [-]: NEWTABLE  R219 6 1     ; R219 := {}
+2275 [-]: LOADK     R220 K18     ; R220 := 0
+2276 [-]: LOADK     R221 K276    ; R221 := "BT_AUTO_HITSCAN"
+2277 [-]: SETTABLE  R219 R220 R221; R219[R220] := R221
+2278 [-]: LOADK     R220 K277    ; R220 := "BT_AUTO_PROJECTILE"
+2279 [-]: LOADK     R221 K278    ; R221 := "BT_SEMI_HITSCAN"
+2280 [-]: LOADK     R222 K279    ; R222 := "BT_SEMI_PROJECTILE"
+2281 [-]: LOADK     R223 K280    ; R223 := "BT_BURST_HITSCAN"
+2282 [-]: LOADK     R224 K281    ; R224 := "BT_BURST_PROJECTILE"
+2283 [-]: LOADK     R225 K282    ; R225 := "BT_NONE"
+2284 [-]: SETLIST   R219 6 1     ; R219[(1-1)*FPF+i] := R(219+i), 1 <= i <= 6
+2285 [-]: NEWTABLE  R220 5 1     ; R220 := {}
+2286 [-]: LOADK     R221 K18     ; R221 := 0
+2287 [-]: LOADK     R222 K283    ; R222 := "GT_RIFLE"
+2288 [-]: SETTABLE  R220 R221 R222; R220[R221] := R222
+2289 [-]: LOADK     R221 K284    ; R221 := "GT_SHOTGUN"
+2290 [-]: LOADK     R222 K285    ; R222 := "GT_SNIPER"
+2291 [-]: LOADK     R223 K286    ; R223 := "GT_LAUNCHER"
+2292 [-]: LOADK     R224 K287    ; R224 := "GT_BEAM"
+2293 [-]: LOADK     R225 K288    ; R225 := "GT_NONE"
+2294 [-]: SETLIST   R220 5 1     ; R220[(1-1)*FPF+i] := R(220+i), 1 <= i <= 5
+2295 [-]: LOADK     R223 K289    ; R223 := "0x3180ADE8"
+2296 [-]: SELF      R221 R1 R223 ; R222 := R1; R221 := R1[R223]
+2297 [-]: CALL      R221 2 2     ; R221 := R221(R222)
+2298 [-]: TEST      R221 0       ; if not R221 then PC := 2342
+2299 [-]: JMP       2342         ; PC := 2342
+2300 [-]: LOADK     R223 K290    ; R223 := "0x64F4B16D"
+2301 [-]: SELF      R221 R1 R223 ; R222 := R1; R221 := R1[R223]
+2302 [-]: CALL      R221 2 2     ; R221 := R221(R222)
+2303 [-]: GETGLOBAL R222 K8      ; R222 := 0x7C282057
+2304 [-]: LOADK     R223 K128    ; R223 := 2
+2305 [-]: GETTABLE  R223 R221 R223; R223 := R221[R223]
+2306 [-]: CALL      R222 2 2     ; R222 := R222(R223)
+2307 [-]: GETGLOBAL R223 K13     ; R223 := 0x2C00D429
+2308 [-]: LOADK     R224 K291    ; R224 := "/Lotus/Types/Weapon/LotusGunBarrel"
+2309 [-]: CALL      R223 2 2     ; R223 := R223(R224)
+2310 [-]: GETGLOBAL R224 K0      ; R224 := 0x400E7765
+2311 [-]: MOVE      R225 R222    ; R225 := R222
+2312 [-]: CALL      R224 2 2     ; R224 := R224(R225)
+2313 [-]: TEST      R224 1       ; if R224 then PC := 2342
+2314 [-]: JMP       2342         ; PC := 2342
+2315 [-]: SELF      R224 R222 K4 ; R225 := R222; R224 := R222["0x8B598ED4"]
+2316 [-]: MOVE      R226 R223    ; R226 := R223
+2317 [-]: CALL      R224 3 2     ; R224 := R224(R225,R226)
+2318 [-]: TEST      R224 0       ; if not R224 then PC := 2342
+2319 [-]: JMP       2342         ; PC := 2342
+2320 [-]: LOADK     R226 K292    ; R226 := "0xB32EDF2A"
+2321 [-]: SELF      R224 R222 R226; R225 := R222; R224 := R222[R226]
+2322 [-]: CALL      R224 2 2     ; R224 := R224(R225)
+2323 [-]: GETTABLE  R224 R219 R224; R224 := R219[R224]
+2324 [-]: LOADK     R227 K293    ; R227 := "0x428F2C5D"
+2325 [-]: SELF      R225 R222 R227; R226 := R222; R225 := R222[R227]
+2326 [-]: CALL      R225 2 2     ; R225 := R225(R226)
+2327 [-]: GETTABLE  R225 R220 R225; R225 := R220[R225]
+2328 [-]: LOADK     R226 K294    ; R226 := "BarrelType"
+2329 [-]: GETUPVAL  R227 U1      ; R227 := U1
+2330 [-]: MOVE      R228 R224    ; R228 := R224
+2331 [-]: LOADK     R229 K294    ; R229 := "BarrelType"
+2332 [-]: MOVE      R230 R1      ; R230 := R1
+2333 [-]: CALL      R227 4 2     ; R227 := R227(R228,R229,R230)
+2334 [-]: SETTABLE  R41 R226 R227; R41[R226] := R227
+2335 [-]: LOADK     R226 K295    ; R226 := "GunType"
+2336 [-]: GETUPVAL  R227 U1      ; R227 := U1
+2337 [-]: MOVE      R228 R225    ; R228 := R225
+2338 [-]: LOADK     R229 K295    ; R229 := "GunType"
+2339 [-]: MOVE      R230 R1      ; R230 := R1
+2340 [-]: CALL      R227 4 2     ; R227 := R227(R228,R229,R230)
+2341 [-]: SETTABLE  R41 R226 R227; R41[R226] := R227
+2342 [-]: TFORLOOP  R31 2        ; R34,R35 :=  R31(R32,R33); if R34 ~= nil then begin PC = 154; R33 := R34 end
+2343 [-]: JMP       154          ; PC := 154
+2344 [-]: TEST      R6 0         ; if not R6 then PC := 2391
+2345 [-]: JMP       2391         ; PC := 2391
+2346 [-]: LOADK     R226 K3      ; R226 := 1
+2347 [-]: LEN       R227 R8      ; R227 := # R8
+2348 [-]: LOADK     R228 K3      ; R228 := 1
+2349 [-]: FORPREP   R226 2390    ; R226 -= R228; PC := 2390
+2350 [-]: LOADK     R230 K3      ; R230 := 1
+2351 [-]: EQ        1 R229 R230  ; if R229 == R230 then PC := 2390
+2352 [-]: JMP       2390         ; PC := 2390
+2353 [-]: LOADK     R230 K3      ; R230 := 1
+2354 [-]: GETTABLE  R230 R8 R230 ; R230 := R8[R230]
+2355 [-]: GETTABLE  R231 R8 R229 ; R231 := R8[R229]
+2356 [-]: GETGLOBAL R232 K114    ; R232 := 0xECFDD17
+2357 [-]: GETTABLE  R233 R231 K49; R233 := R231["mStats"]
+2358 [-]: CALL      R232 2 4     ; R232,R233,R234 := R232(R233)
+2359 [-]: JMP       2388         ; PC := 2388
+2360 [-]: GETGLOBAL R236 K0      ; R236 := 0x400E7765
+2361 [-]: MOVE      R237 R235    ; R237 := R235
+2362 [-]: CALL      R236 2 2     ; R236 := R236(R237)
+2363 [-]: TEST      R236 1       ; if R236 then PC := 2388
+2364 [-]: JMP       2388         ; PC := 2388
+2365 [-]: GETTABLE  R236 R230 K49; R236 := R230["mStats"]
+2366 [-]: GETTABLE  R236 R236 R235; R236 := R236[R235]
+2367 [-]: GETTABLE  R237 R231 K49; R237 := R231["mStats"]
+2368 [-]: GETTABLE  R237 R237 R235; R237 := R237[R235]
+2369 [-]: GETGLOBAL R238 K0      ; R238 := 0x400E7765
+2370 [-]: MOVE      R239 R236    ; R239 := R236
+2371 [-]: CALL      R238 2 2     ; R238 := R238(R239)
+2372 [-]: TEST      R238 1       ; if R238 then PC := 2388
+2373 [-]: JMP       2388         ; PC := 2388
+2374 [-]: GETGLOBAL R238 K0      ; R238 := 0x400E7765
+2375 [-]: MOVE      R239 R237    ; R239 := R237
+2376 [-]: CALL      R238 2 2     ; R238 := R238(R239)
+2377 [-]: TEST      R238 1       ; if R238 then PC := 2388
+2378 [-]: JMP       2388         ; PC := 2388
+2379 [-]: LOADK     R238 K296    ; R238 := "DisplayValue"
+2380 [-]: GETTABLE  R238 R237 R238; R238 := R237[R238]
+2381 [-]: LOADK     R239 K296    ; R239 := "DisplayValue"
+2382 [-]: GETTABLE  R239 R236 R239; R239 := R236[R239]
+2383 [-]: EQ        0 R238 R239  ; if R238 ~= R239 then PC := 2388
+2384 [-]: JMP       2388         ; PC := 2388
+2385 [-]: GETTABLE  R238 R231 K49; R238 := R231["mStats"]
+2386 [-]: LOADNIL   R239 R239    ; R239 := nil
+2387 [-]: SETTABLE  R238 R235 R239; R238[R235] := R239
+2388 [-]: TFORLOOP  R232 1       ; R235 :=  R232(R233,R234); if R235 ~= nil then begin PC = 2360; R234 := R235 end
+2389 [-]: JMP       2360         ; PC := 2360
+2390 [-]: FORLOOP   R226 2350    ; R226 += R228; if R226 <= R227 then begin PC := 2350; R229 := R226 end
+2391 [-]: TEST      R7 0         ; if not R7 then PC := 2399
+2392 [-]: JMP       2399         ; PC := 2399
+2393 [-]: LOADK     R240 K297    ; R240 := "0xDFCD86D7"
+2394 [-]: SELF      R238 R1 R240 ; R239 := R1; R238 := R1[R240]
+2395 [-]: CALL      R238 2 1     ; R238(R239)
+2396 [-]: SELF      R238 R1 K11  ; R239 := R1; R238 := R1["0x4F76A378"]
+2397 [-]: MOVE      R240 R0      ; R240 := R0
+2398 [-]: CALL      R238 3 1     ; R238(R239,R240)
+2399 [-]: RETURN    R8 2         ; return R8
+2400 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #14.1:
@@ -5484,7 +5482,7 @@ code size: 9
 ; Function #15:
 ;
 ; Name:            
-; Defined at line: 1726
+; Defined at line: 1724
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5510,7 +5508,7 @@ code size: 9
 ; Function #16:
 ;
 ; Name:            
-; Defined at line: 1738
+; Defined at line: 1736
 ; #Upvalues:       9
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -6576,7 +6574,7 @@ code size: 9
 ; Function #16.1:
 ;
 ; Name:            
-; Defined at line: 1750
+; Defined at line: 1748
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6607,7 +6605,7 @@ code size: 9
 ; Function #17:
 ;
 ; Name:            
-; Defined at line: 2110
+; Defined at line: 2108
 ; #Upvalues:       4
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6939,7 +6937,7 @@ code size: 9
 ; Function #18:
 ;
 ; Name:            
-; Defined at line: 2256
+; Defined at line: 2254
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -7377,7 +7375,7 @@ code size: 9
 ; Function #19:
 ;
 ; Name:            
-; Defined at line: 2382
+; Defined at line: 2380
 ; #Upvalues:       5
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -7652,7 +7650,7 @@ code size: 9
 ; Function #19.1:
 ;
 ; Name:            
-; Defined at line: 2392
+; Defined at line: 2390
 ; #Upvalues:       6
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -7783,7 +7781,7 @@ code size: 9
 ; Function #19.2:
 ;
 ; Name:            
-; Defined at line: 2448
+; Defined at line: 2446
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -7830,7 +7828,7 @@ code size: 9
 ; Function #20:
 ;
 ; Name:            
-; Defined at line: 2553
+; Defined at line: 2551
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -7848,7 +7846,7 @@ code size: 9
 ; Function #21:
 ;
 ; Name:            
-; Defined at line: 2558
+; Defined at line: 2556
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -7868,7 +7866,7 @@ code size: 9
 ; Function #22:
 ;
 ; Name:            
-; Defined at line: 2563
+; Defined at line: 2561
 ; #Upvalues:       1
 ; #Parameters:     8
 ; Is_vararg:       0
@@ -7891,7 +7889,7 @@ code size: 9
 ; Function #23:
 ;
 ; Name:            
-; Defined at line: 2569
+; Defined at line: 2567
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -7908,7 +7906,7 @@ code size: 9
 ; Function #24:
 ;
 ; Name:            
-; Defined at line: 2574
+; Defined at line: 2572
 ; #Upvalues:       1
 ; #Parameters:     9
 ; Is_vararg:       0
@@ -7934,7 +7932,7 @@ code size: 9
 ; Function #25:
 ;
 ; Name:            
-; Defined at line: 2579
+; Defined at line: 2577
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0

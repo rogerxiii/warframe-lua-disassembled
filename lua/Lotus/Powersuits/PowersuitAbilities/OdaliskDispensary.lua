@@ -5,7 +5,7 @@ code size: 48
 code size: 63
 code size: 58
 code size: 13
-code size: 105
+code size: 112
 code size: 59
 code size: 13
 code size: 52
@@ -99,7 +99,7 @@ code size: 251
 ; Function #1:
 ;
 ; Name:            
-; Defined at line: 19
+; Defined at line: 20
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -136,7 +136,7 @@ code size: 251
 ; Function #2:
 ;
 ; Name:            
-; Defined at line: 35
+; Defined at line: 36
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -185,7 +185,7 @@ code size: 251
 ; Function #3:
 ;
 ; Name:            
-; Defined at line: 52
+; Defined at line: 53
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -244,7 +244,7 @@ code size: 251
 ; Function #4:
 ;
 ; Name:            
-; Defined at line: 69
+; Defined at line: 70
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -318,7 +318,7 @@ code size: 251
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 101
+; Defined at line: 102
 ; #Upvalues:       0
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -387,7 +387,7 @@ code size: 251
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 137
+; Defined at line: 138
 ; #Upvalues:       1
 ; #Parameters:     5
 ; Is_vararg:       0
@@ -411,7 +411,7 @@ code size: 251
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 144
+; Defined at line: 145
 ; #Upvalues:       7
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -514,20 +514,27 @@ code size: 251
  95 [-]: GETGLOBAL R12 K11      ; R12 := ZERO_ROTATION
  96 [-]: MOVE      R13 R0       ; R13 := R0
  97 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
- 98 [-]: GETUPVAL  R7 U6        ; R7 := U6
- 99 [-]: MOVE      R8 R0        ; R8 := R0
-100 [-]: MOVE      R9 R1        ; R9 := R1
-101 [-]: MOVE      R10 R0       ; R10 := R0
-102 [-]: MOVE      R11 R1       ; R11 := R1
-103 [-]: MOVE      R12 R6       ; R12 := R6
-104 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
-105 [-]: RETURN    R0 1         ; return 
+ 98 [-]: SELF      R7 R6 K5     ; R8 := R6; R7 := R6["0xAB436EF2"]
+ 99 [-]: GETGLOBAL R9 K28       ; R9 := markerType
+100 [-]: GETGLOBAL R10 K9       ; R10 := EMPTY_SYMBOL
+101 [-]: GETGLOBAL R11 K10      ; R11 := ZERO_VECTOR
+102 [-]: GETGLOBAL R12 K11      ; R12 := ZERO_ROTATION
+103 [-]: MOVE      R13 R1       ; R13 := R1
+104 [-]: CALL      R7 7 1       ; R7(R8,R9,R10,R11,R12,R13)
+105 [-]: GETUPVAL  R7 U6        ; R7 := U6
+106 [-]: MOVE      R8 R0        ; R8 := R0
+107 [-]: MOVE      R9 R1        ; R9 := R1
+108 [-]: MOVE      R10 R0       ; R10 := R0
+109 [-]: MOVE      R11 R1       ; R11 := R1
+110 [-]: MOVE      R12 R6       ; R12 := R6
+111 [-]: CALL      R7 6 1       ; R7(R8,R9,R10,R11,R12)
+112 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 181
+; Defined at line: 183
 ; #Upvalues:       1
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -597,7 +604,7 @@ code size: 251
 ; Function #9:
 ;
 ; Name:            
-; Defined at line: 203
+; Defined at line: 205
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -621,7 +628,7 @@ code size: 251
 ; Function #10:
 ;
 ; Name:            
-; Defined at line: 209
+; Defined at line: 211
 ; #Upvalues:       6
 ; #Parameters:     7
 ; Is_vararg:       0
@@ -684,7 +691,7 @@ code size: 251
 ; Function #11:
 ;
 ; Name:            
-; Defined at line: 225
+; Defined at line: 227
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
@@ -722,7 +729,7 @@ code size: 251
 ; Function #11.1:
 ;
 ; Name:            
-; Defined at line: 234
+; Defined at line: 236
 ; #Upvalues:       11
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -895,7 +902,7 @@ code size: 251
 ; Function #12:
 ;
 ; Name:            
-; Defined at line: 282
+; Defined at line: 284
 ; #Upvalues:       7
 ; #Parameters:     1
 ; Is_vararg:       0

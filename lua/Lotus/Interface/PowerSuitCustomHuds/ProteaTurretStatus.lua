@@ -3,7 +3,7 @@ code size: 24
 code size: 80
 code size: 22
 code size: 7
-code size: 114
+code size: 96
 code size: 4
 code size: 103
 code size: 19
@@ -279,90 +279,72 @@ code size: 19
  34 [-]: LOADK     R6 K11       ; R6 := "text"
  35 [-]: MOVE      R7 R2        ; R7 := R2
  36 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 37 [-]: GETGLOBAL R3 K13       ; R3 := string
- 38 [-]: GETTABLE  R3 R3 K14    ; R3 := R3["0xC6772A8A"]
- 39 [-]: MOVE      R4 R2        ; R4 := R2
- 40 [-]: CALL      R3 2 2       ; R3 := R3(R4)
- 41 [-]: LT        0 K0 R3      ; if 1 >= R3 then PC := 45
- 42 [-]: JMP       45           ; PC := 45
- 43 [-]: LOADK     R1 K15       ; R1 := "x"
- 44 [-]: JMP       55           ; PC := 55
- 45 [-]: LE        0 R1 K3      ; if R1 > 9 then PC := 54
- 46 [-]: JMP       54           ; PC := 54
- 47 [-]: LOADK     R3 K16       ; R3 := "."
- 48 [-]: GETGLOBAL R4 K7        ; R4 := 0x9FAED6BC
- 49 [-]: MOVE      R5 R1        ; R5 := R1
- 50 [-]: CALL      R4 2 2       ; R4 := R4(R5)
- 51 [-]: LOADK     R5 K15       ; R5 := "x"
- 52 [-]: CONCAT    R1 R3 R5     ; R1 := R3 .. R4 .. R5
- 53 [-]: JMP       55           ; PC := 55
- 54 [-]: LOADK     R1 K17       ; R1 := ".0x"
- 55 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 56 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xD6A79FE9"]
- 57 [-]: LOADK     R5 K18       ; R5 := "Multiplier.MultDecimal"
- 58 [-]: LOADK     R6 K11       ; R6 := "text"
- 59 [-]: MOVE      R7 R1        ; R7 := R1
- 60 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 61 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
- 62 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xD6A79FE9"]
- 63 [-]: LOADK     R5 K19       ; R5 := "Multiplier.MultShadowDecimal"
- 64 [-]: LOADK     R6 K11       ; R6 := "text"
- 65 [-]: MOVE      R7 R1        ; R7 := R1
- 66 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
- 67 [-]: GETGLOBAL R3 K20       ; R3 := 0xF595ADDE
- 68 [-]: GETGLOBAL R4 K8        ; R4 := mMovie
- 69 [-]: SELF      R4 R4 K21    ; R5 := R4; R4 := R4["0x6B7B470B"]
- 70 [-]: LOADK     R6 K10       ; R6 := "Multiplier.MultInteger"
- 71 [-]: LOADK     R7 K22       ; R7 := "textWidth"
- 72 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
- 73 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
- 74 [-]: GETGLOBAL R4 K20       ; R4 := 0xF595ADDE
- 75 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
- 76 [-]: SELF      R5 R5 K21    ; R6 := R5; R5 := R5["0x6B7B470B"]
- 77 [-]: LOADK     R7 K18       ; R7 := "Multiplier.MultDecimal"
- 78 [-]: LOADK     R8 K22       ; R8 := "textWidth"
- 79 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
- 80 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
- 81 [-]: ADD       R5 R3 R4     ; R5 := R3 + R4
- 82 [-]: GETGLOBAL R6 K20       ; R6 := 0xF595ADDE
- 83 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
- 84 [-]: SELF      R7 R7 K21    ; R8 := R7; R7 := R7["0x6B7B470B"]
- 85 [-]: LOADK     R9 K23       ; R9 := "Multiplier"
- 86 [-]: LOADK     R10 K24      ; R10 := "_xscale"
- 87 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
- 88 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
- 89 [-]: DIV       R6 R6 K25    ; R6 := R6 / 100
- 90 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
- 91 [-]: GETGLOBAL R6 K8        ; R6 := mMovie
- 92 [-]: SELF      R6 R6 K26    ; R7 := R6; R6 := R6["0x1C19D966"]
- 93 [-]: LOADK     R8 K23       ; R8 := "Multiplier"
- 94 [-]: LOADK     R9 K27       ; R9 := "_x"
- 95 [-]: GETGLOBAL R10 K8       ; R10 := mMovie
- 96 [-]: SELF      R10 R10 K28  ; R11 := R10; R10 := R10["0xF3E132E0"]
- 97 [-]: CALL      R10 2 2      ; R10 := R10(R11)
- 98 [-]: SUB       R10 R10 R5   ; R10 := R10 - R5
- 99 [-]: MUL       R10 R10 K29  ; R10 := R10 * 0.5
-100 [-]: ADD       R10 R10 K30  ; R10 := R10 + 2
-101 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
-102 [-]: GETGLOBAL R6 K8        ; R6 := mMovie
-103 [-]: SELF      R6 R6 K26    ; R7 := R6; R6 := R6["0x1C19D966"]
-104 [-]: LOADK     R8 K18       ; R8 := "Multiplier.MultDecimal"
-105 [-]: LOADK     R9 K27       ; R9 := "_x"
-106 [-]: ADD       R10 R3 K0    ; R10 := R3 + 1
-107 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
-108 [-]: GETGLOBAL R6 K8        ; R6 := mMovie
-109 [-]: SELF      R6 R6 K26    ; R7 := R6; R6 := R6["0x1C19D966"]
-110 [-]: LOADK     R8 K19       ; R8 := "Multiplier.MultShadowDecimal"
-111 [-]: LOADK     R9 K27       ; R9 := "_x"
-112 [-]: ADD       R10 R3 K0    ; R10 := R3 + 1
-113 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
-114 [-]: RETURN    R0 1         ; return 
+ 37 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
+ 38 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xD6A79FE9"]
+ 39 [-]: LOADK     R5 K13       ; R5 := "Multiplier.MultDecimal"
+ 40 [-]: LOADK     R6 K11       ; R6 := "text"
+ 41 [-]: LOADK     R7 K14       ; R7 := "x"
+ 42 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
+ 43 [-]: GETGLOBAL R3 K8        ; R3 := mMovie
+ 44 [-]: SELF      R3 R3 K9     ; R4 := R3; R3 := R3["0xD6A79FE9"]
+ 45 [-]: LOADK     R5 K15       ; R5 := "Multiplier.MultShadowDecimal"
+ 46 [-]: LOADK     R6 K11       ; R6 := "text"
+ 47 [-]: LOADK     R7 K14       ; R7 := "x"
+ 48 [-]: CALL      R3 5 1       ; R3(R4,R5,R6,R7)
+ 49 [-]: GETGLOBAL R3 K16       ; R3 := 0xF595ADDE
+ 50 [-]: GETGLOBAL R4 K8        ; R4 := mMovie
+ 51 [-]: SELF      R4 R4 K17    ; R5 := R4; R4 := R4["0x6B7B470B"]
+ 52 [-]: LOADK     R6 K10       ; R6 := "Multiplier.MultInteger"
+ 53 [-]: LOADK     R7 K18       ; R7 := "textWidth"
+ 54 [-]: CALL      R4 4 0       ; R4,... := R4(R5,R6,R7)
+ 55 [-]: CALL      R3 0 2       ; R3 := R3(R4,...)
+ 56 [-]: GETGLOBAL R4 K16       ; R4 := 0xF595ADDE
+ 57 [-]: GETGLOBAL R5 K8        ; R5 := mMovie
+ 58 [-]: SELF      R5 R5 K17    ; R6 := R5; R5 := R5["0x6B7B470B"]
+ 59 [-]: LOADK     R7 K13       ; R7 := "Multiplier.MultDecimal"
+ 60 [-]: LOADK     R8 K18       ; R8 := "textWidth"
+ 61 [-]: CALL      R5 4 0       ; R5,... := R5(R6,R7,R8)
+ 62 [-]: CALL      R4 0 2       ; R4 := R4(R5,...)
+ 63 [-]: ADD       R5 R3 R4     ; R5 := R3 + R4
+ 64 [-]: GETGLOBAL R6 K16       ; R6 := 0xF595ADDE
+ 65 [-]: GETGLOBAL R7 K8        ; R7 := mMovie
+ 66 [-]: SELF      R7 R7 K17    ; R8 := R7; R7 := R7["0x6B7B470B"]
+ 67 [-]: LOADK     R9 K19       ; R9 := "Multiplier"
+ 68 [-]: LOADK     R10 K20      ; R10 := "_xscale"
+ 69 [-]: CALL      R7 4 0       ; R7,... := R7(R8,R9,R10)
+ 70 [-]: CALL      R6 0 2       ; R6 := R6(R7,...)
+ 71 [-]: DIV       R6 R6 K21    ; R6 := R6 / 100
+ 72 [-]: MUL       R5 R5 R6     ; R5 := R5 * R6
+ 73 [-]: GETGLOBAL R6 K8        ; R6 := mMovie
+ 74 [-]: SELF      R6 R6 K22    ; R7 := R6; R6 := R6["0x1C19D966"]
+ 75 [-]: LOADK     R8 K19       ; R8 := "Multiplier"
+ 76 [-]: LOADK     R9 K23       ; R9 := "_x"
+ 77 [-]: GETGLOBAL R10 K8       ; R10 := mMovie
+ 78 [-]: SELF      R10 R10 K24  ; R11 := R10; R10 := R10["0xF3E132E0"]
+ 79 [-]: CALL      R10 2 2      ; R10 := R10(R11)
+ 80 [-]: SUB       R10 R10 R5   ; R10 := R10 - R5
+ 81 [-]: MUL       R10 R10 K25  ; R10 := R10 * 0.5
+ 82 [-]: ADD       R10 R10 K26  ; R10 := R10 + 2
+ 83 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+ 84 [-]: GETGLOBAL R6 K8        ; R6 := mMovie
+ 85 [-]: SELF      R6 R6 K22    ; R7 := R6; R6 := R6["0x1C19D966"]
+ 86 [-]: LOADK     R8 K13       ; R8 := "Multiplier.MultDecimal"
+ 87 [-]: LOADK     R9 K23       ; R9 := "_x"
+ 88 [-]: ADD       R10 R3 K0    ; R10 := R3 + 1
+ 89 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+ 90 [-]: GETGLOBAL R6 K8        ; R6 := mMovie
+ 91 [-]: SELF      R6 R6 K22    ; R7 := R6; R6 := R6["0x1C19D966"]
+ 92 [-]: LOADK     R8 K15       ; R8 := "Multiplier.MultShadowDecimal"
+ 93 [-]: LOADK     R9 K23       ; R9 := "_x"
+ 94 [-]: ADD       R10 R3 K0    ; R10 := R3 + 1
+ 95 [-]: CALL      R6 5 1       ; R6(R7,R8,R9,R10)
+ 96 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #6:
 ;
 ; Name:            
-; Defined at line: 99
+; Defined at line: 89
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -377,7 +359,7 @@ code size: 19
 ; Function #7:
 ;
 ; Name:            
-; Defined at line: 103
+; Defined at line: 93
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -491,7 +473,7 @@ code size: 19
 ; Function #8:
 ;
 ; Name:            
-; Defined at line: 133
+; Defined at line: 123
 ; #Upvalues:       3
 ; #Parameters:     0
 ; Is_vararg:       0

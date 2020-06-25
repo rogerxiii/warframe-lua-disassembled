@@ -1,4 +1,4 @@
-code size: 504
+code size: 508
 code size: 77
 code size: 6
 code size: 248
@@ -100,6 +100,7 @@ code size: 34
 code size: 39
 code size: 8
 code size: 3
+code size: 32
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Interface\LoadOutSelect.luac 
 
@@ -613,7 +614,11 @@ code size: 3
 501 [-]: CLOSURE   R72 73       ; R72 := closure(Function #74)
 502 [-]: SETGLOBAL R72 K117     ; SupportsThemes := R72
 503 [-]: SETGLOBAL R72 K118     ; 0xDBE73B9E := R72
-504 [-]: RETURN    R0 1         ; return 
+504 [-]: CLOSURE   R72 74       ; R72 := closure(Function #75)
+505 [-]: MOVE      R0 R3        ; R0 := R3
+506 [-]: SETGLOBAL R72 K119     ; OnRetrievePetFromStasisResults := R72
+507 [-]: SETGLOBAL R72 K120     ; 0x9A78F7E5 := R72
+508 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #1:
@@ -8321,5 +8326,48 @@ code size: 3
   1 [-]: MOVE      R0 R1        ; R0 := R1
   2 [-]: RETURN    R0 2         ; return R0
   3 [-]: RETURN    R0 1         ; return 
+
+
+; Function #75:
+;
+; Name:            
+; Defined at line: 2375
+; #Upvalues:       1
+; #Parameters:     2
+; Is_vararg:       0
+; Max Stack Size:  5
+
+  1 [-]: TEST      R0 1         ; if R0 then PC := 11
+  2 [-]: JMP       11           ; PC := 11
+  3 [-]: GETGLOBAL R2 K0        ; R2 := 0x93B1256B
+  4 [-]: MOVE      R3 R1        ; R3 := R1
+  5 [-]: CALL      R2 2 1       ; R2(R3)
+  6 [-]: GETUPVAL  R2 U0        ; R2 := U0
+  7 [-]: GETTABLE  R2 R2 K1     ; R2 := R2["0xB11F032"]
+  8 [-]: LOADK     R3 K2        ; R3 := "/Lotus/Language/Menu/CraftingErrorText_UnknownError"
+  9 [-]: CALL      R2 2 1       ; R2(R3)
+ 10 [-]: JMP       32           ; PC := 32
+ 11 [-]: GETGLOBAL R2 K3        ; R2 := 0x400E7765
+ 12 [-]: GETGLOBAL R3 K4        ; R3 := _T
+ 13 [-]: GETTABLE  R3 R3 K5     ; R3 := R3["domeCommands"]
+ 14 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 15 [-]: TEST      R2 1         ; if R2 then PC := 19
+ 16 [-]: JMP       19           ; PC := 19
+ 17 [-]: GETGLOBAL R2 K4        ; R2 := _T
+ 18 [-]: SETTABLE  R2 K6 K7     ; R2["cyclePetDome"] := "0x1"
+ 19 [-]: GETUPVAL  R2 U0        ; R2 := U0
+ 20 [-]: GETTABLE  R2 R2 K8     ; R2 := R2["0x930EC5CF"]
+ 21 [-]: LOADK     R3 K9        ; R3 := "CheckPetReadyScriptTrigger"
+ 22 [-]: CALL      R2 2 2       ; R2 := R2(R3)
+ 23 [-]: GETGLOBAL R3 K3        ; R3 := 0x400E7765
+ 24 [-]: MOVE      R4 R2        ; R4 := R2
+ 25 [-]: CALL      R3 2 2       ; R3 := R3(R4)
+ 26 [-]: TEST      R3 1         ; if R3 then PC := 30
+ 27 [-]: JMP       30           ; PC := 30
+ 28 [-]: SELF      R3 R2 K10    ; R4 := R2; R3 := R2["0xDA085F65"]
+ 29 [-]: CALL      R3 2 1       ; R3(R4)
+ 30 [-]: GETGLOBAL R3 K4        ; R3 := _T
+ 31 [-]: SETTABLE  R3 K11 K7    ; R3["updateActiveKubrow"] := "0x1"
+ 32 [-]: RETURN    R0 1         ; return 
 
 

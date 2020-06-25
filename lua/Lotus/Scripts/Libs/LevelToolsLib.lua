@@ -2,7 +2,7 @@ code size: 25
 code size: 17
 code size: 12
 code size: 5
-code size: 70
+code size: 61
 code size: 10
 ; This file has been disassembled using luadec 2.0.2 by sztupy (http://winmo.sztupy.hu)
 ; Command line was: -dis M:\git repos\warframe-lua-disassembled\lua\Lotus\Scripts\Libs\LevelToolsLib.luac 
@@ -115,7 +115,7 @@ code size: 10
 ; #Upvalues:       2
 ; #Parameters:     4
 ; Is_vararg:       0
-; Max Stack Size:  13
+; Max Stack Size:  11
 
   1 [-]: GETUPVAL  R4 U0        ; R4 := U0
   2 [-]: MOVE      R5 R0        ; R5 := R0
@@ -123,8 +123,8 @@ code size: 10
   4 [-]: GETGLOBAL R5 K0        ; R5 := gRegion
   5 [-]: SELF      R5 R5 K1     ; R6 := R5; R5 := R5["0xA559F558"]
   6 [-]: CALL      R5 2 2       ; R5 := R5(R6)
-  7 [-]: TEST      R5 0         ; if not R5 then PC := 33
-  8 [-]: JMP       33           ; PC := 33
+  7 [-]: TEST      R5 0         ; if not R5 then PC := 36
+  8 [-]: JMP       36           ; PC := 36
   9 [-]: GETGLOBAL R5 K2        ; R5 := 0x400E7765
  10 [-]: MOVE      R6 R4        ; R6 := R4
  11 [-]: CALL      R5 2 2       ; R5 := R5(R6)
@@ -149,50 +149,41 @@ code size: 10
  30 [-]: SELF      R6 R5 K8     ; R7 := R5; R6 := R5["0x8D5886B7"]
  31 [-]: LOADK     R8 K9        ; R8 := "Show"
  32 [-]: CALL      R6 3 1       ; R6(R7,R8)
- 33 [-]: SELF      R6 R0 K10    ; R7 := R0; R6 := R0["0xD124E361"]
- 34 [-]: GETGLOBAL R8 K11       ; R8 := Lotus_Game
- 35 [-]: GETTABLE  R8 R8 K12    ; R8 := R8["EMISSIVE_TINT_COLOR"]
- 36 [-]: GETTABLE  R9 R3 K13    ; R9 := R3["red"]
- 37 [-]: DIV       R9 R9 K14    ; R9 := R9 / 255
- 38 [-]: GETTABLE  R10 R3 K15   ; R10 := R3["green"]
- 39 [-]: DIV       R10 R10 K14  ; R10 := R10 / 255
- 40 [-]: GETTABLE  R11 R3 K16   ; R11 := R3["blue"]
- 41 [-]: DIV       R11 R11 K14  ; R11 := R11 / 255
- 42 [-]: GETTABLE  R12 R3 K17   ; R12 := R3["alpha"]
- 43 [-]: DIV       R12 R12 K14  ; R12 := R12 / 255
- 44 [-]: CALL      R6 7 1       ; R6(R7,R8,R9,R10,R11,R12)
- 45 [-]: LOADNIL   R6 R6        ; R6 := nil
- 46 [-]: GETGLOBAL R7 K2        ; R7 := 0x400E7765
- 47 [-]: MOVE      R8 R2        ; R8 := R2
- 48 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 49 [-]: TEST      R7 1         ; if R7 then PC := 56
- 50 [-]: JMP       56           ; PC := 56
- 51 [-]: SELF      R7 R0 K18    ; R8 := R0; R7 := R0["0xAB436EF2"]
- 52 [-]: MOVE      R9 R2        ; R9 := R2
- 53 [-]: GETGLOBAL R10 K19      ; R10 := EMPTY_SYMBOL
- 54 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
- 55 [-]: MOVE      R6 R7        ; R6 := R7
- 56 [-]: GETUPVAL  R7 U1        ; R7 := U1
- 57 [-]: MOVE      R8 R0        ; R8 := R0
- 58 [-]: MOVE      R9 R1        ; R9 := R1
- 59 [-]: CALL      R7 3 1       ; R7(R8,R9)
- 60 [-]: GETGLOBAL R7 K20       ; R7 := 0x201191EA
- 61 [-]: LOADK     R8 K21       ; R8 := 1.25
- 62 [-]: CALL      R7 2 1       ; R7(R8)
- 63 [-]: GETGLOBAL R7 K2        ; R7 := 0x400E7765
- 64 [-]: MOVE      R8 R6        ; R8 := R6
- 65 [-]: CALL      R7 2 2       ; R7 := R7(R8)
- 66 [-]: TEST      R7 1         ; if R7 then PC := 70
- 67 [-]: JMP       70           ; PC := 70
- 68 [-]: SELF      R7 R6 K22    ; R8 := R6; R7 := R6["0xD4C2743F"]
- 69 [-]: CALL      R7 2 1       ; R7(R8)
- 70 [-]: RETURN    R0 1         ; return 
+ 33 [-]: SELF      R6 R0 K8     ; R7 := R0; R6 := R0["0x8D5886B7"]
+ 34 [-]: LOADK     R8 K10       ; R8 := "MaterialSwitch"
+ 35 [-]: CALL      R6 3 1       ; R6(R7,R8)
+ 36 [-]: LOADNIL   R6 R6        ; R6 := nil
+ 37 [-]: GETGLOBAL R7 K2        ; R7 := 0x400E7765
+ 38 [-]: MOVE      R8 R2        ; R8 := R2
+ 39 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 40 [-]: TEST      R7 1         ; if R7 then PC := 47
+ 41 [-]: JMP       47           ; PC := 47
+ 42 [-]: SELF      R7 R0 K11    ; R8 := R0; R7 := R0["0xAB436EF2"]
+ 43 [-]: MOVE      R9 R2        ; R9 := R2
+ 44 [-]: GETGLOBAL R10 K12      ; R10 := EMPTY_SYMBOL
+ 45 [-]: CALL      R7 4 2       ; R7 := R7(R8,R9,R10)
+ 46 [-]: MOVE      R6 R7        ; R6 := R7
+ 47 [-]: GETUPVAL  R7 U1        ; R7 := U1
+ 48 [-]: MOVE      R8 R0        ; R8 := R0
+ 49 [-]: MOVE      R9 R1        ; R9 := R1
+ 50 [-]: CALL      R7 3 1       ; R7(R8,R9)
+ 51 [-]: GETGLOBAL R7 K13       ; R7 := 0x201191EA
+ 52 [-]: LOADK     R8 K14       ; R8 := 1.25
+ 53 [-]: CALL      R7 2 1       ; R7(R8)
+ 54 [-]: GETGLOBAL R7 K2        ; R7 := 0x400E7765
+ 55 [-]: MOVE      R8 R6        ; R8 := R6
+ 56 [-]: CALL      R7 2 2       ; R7 := R7(R8)
+ 57 [-]: TEST      R7 1         ; if R7 then PC := 61
+ 58 [-]: JMP       61           ; PC := 61
+ 59 [-]: SELF      R7 R6 K15    ; R8 := R6; R7 := R6["0xD4C2743F"]
+ 60 [-]: CALL      R7 2 1       ; R7(R8)
+ 61 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #5:
 ;
 ; Name:            
-; Defined at line: 57
+; Defined at line: 58
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0

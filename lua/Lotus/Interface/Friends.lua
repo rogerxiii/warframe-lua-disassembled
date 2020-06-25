@@ -99,7 +99,7 @@ code size: 32
 code size: 10
 code size: 44
 code size: 83
-code size: 73
+code size: 82
 code size: 17
 code size: 12
 code size: 10
@@ -5172,7 +5172,7 @@ code size: 3
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
-; Max Stack Size:  12
+; Max Stack Size:  13
 
   1 [-]: NEWTABLE  R0 0 0       ; R0 := {}
   2 [-]: GETGLOBAL R1 K0        ; R1 := table
@@ -5184,75 +5184,84 @@ code size: 3
   8 [-]: GETTABLE  R4 R4 K5     ; R4 := R4["TOGGLE"]
   9 [-]: SETTABLE  R3 K4 R4     ; R3["mType"] := R4
  10 [-]: SETTABLE  R3 K6 K7     ; R3["mValue"] := 1
- 11 [-]: NEWTABLE  R4 4 0       ; R4 := {}
+ 11 [-]: NEWTABLE  R4 5 0       ; R4 := {}
  12 [-]: NEWTABLE  R5 0 3       ; R5 := {}
  13 [-]: GETGLOBAL R6 K9        ; R6 := 0xE6DC43B0
- 14 [-]: LOADK     R7 K10       ; R7 := "/Lotus/Language/Menu/TimeFormat_Month"
+ 14 [-]: LOADK     R7 K10       ; R7 := "/Lotus/Language/Menu/Chat_BanDuration_1W"
  15 [-]: NEWTABLE  R8 0 1       ; R8 := {}
  16 [-]: SETTABLE  R8 K11 K7    ; R8["TIME"] := 1
  17 [-]: CALL      R6 3 2       ; R6 := R6(R7,R8)
  18 [-]: SETTABLE  R5 K2 R6     ; R5["mLabel"] := R6
  19 [-]: SETTABLE  R5 K6 K7     ; R5["mValue"] := 1
- 20 [-]: SETTABLE  R5 K12 K13   ; R5["mDays"] := 30
+ 20 [-]: SETTABLE  R5 K12 K13   ; R5["mDays"] := 7
  21 [-]: NEWTABLE  R6 0 3       ; R6 := {}
  22 [-]: GETGLOBAL R7 K9        ; R7 := 0xE6DC43B0
- 23 [-]: LOADK     R8 K14       ; R8 := "/Lotus/Language/Menu/TimeFormat_Months"
+ 23 [-]: LOADK     R8 K14       ; R8 := "/Lotus/Language/Menu/TimeFormat_Month"
  24 [-]: NEWTABLE  R9 0 1       ; R9 := {}
- 25 [-]: SETTABLE  R9 K11 K15   ; R9["TIME"] := 3
+ 25 [-]: SETTABLE  R9 K11 K7    ; R9["TIME"] := 1
  26 [-]: CALL      R7 3 2       ; R7 := R7(R8,R9)
  27 [-]: SETTABLE  R6 K2 R7     ; R6["mLabel"] := R7
- 28 [-]: SETTABLE  R6 K6 K16    ; R6["mValue"] := 2
- 29 [-]: SETTABLE  R6 K12 K17   ; R6["mDays"] := 91
+ 28 [-]: SETTABLE  R6 K6 K15    ; R6["mValue"] := 2
+ 29 [-]: SETTABLE  R6 K12 K16   ; R6["mDays"] := 30
  30 [-]: NEWTABLE  R7 0 3       ; R7 := {}
  31 [-]: GETGLOBAL R8 K9        ; R8 := 0xE6DC43B0
- 32 [-]: LOADK     R9 K14       ; R9 := "/Lotus/Language/Menu/TimeFormat_Months"
+ 32 [-]: LOADK     R9 K17       ; R9 := "/Lotus/Language/Menu/TimeFormat_Months"
  33 [-]: NEWTABLE  R10 0 1      ; R10 := {}
- 34 [-]: SETTABLE  R10 K11 K18  ; R10["TIME"] := 6
+ 34 [-]: SETTABLE  R10 K11 K18  ; R10["TIME"] := 3
  35 [-]: CALL      R8 3 2       ; R8 := R8(R9,R10)
  36 [-]: SETTABLE  R7 K2 R8     ; R7["mLabel"] := R8
- 37 [-]: SETTABLE  R7 K6 K15    ; R7["mValue"] := 3
- 38 [-]: SETTABLE  R7 K12 K19   ; R7["mDays"] := 182
+ 37 [-]: SETTABLE  R7 K6 K18    ; R7["mValue"] := 3
+ 38 [-]: SETTABLE  R7 K12 K19   ; R7["mDays"] := 91
  39 [-]: NEWTABLE  R8 0 3       ; R8 := {}
  40 [-]: GETGLOBAL R9 K9        ; R9 := 0xE6DC43B0
- 41 [-]: LOADK     R10 K20      ; R10 := "/Lotus/Language/Menu/TimeFormat_Year"
+ 41 [-]: LOADK     R10 K17      ; R10 := "/Lotus/Language/Menu/TimeFormat_Months"
  42 [-]: NEWTABLE  R11 0 1      ; R11 := {}
- 43 [-]: SETTABLE  R11 K11 K7   ; R11["TIME"] := 1
+ 43 [-]: SETTABLE  R11 K11 K20  ; R11["TIME"] := 6
  44 [-]: CALL      R9 3 2       ; R9 := R9(R10,R11)
  45 [-]: SETTABLE  R8 K2 R9     ; R8["mLabel"] := R9
  46 [-]: SETTABLE  R8 K6 K21    ; R8["mValue"] := 4
- 47 [-]: SETTABLE  R8 K12 K22   ; R8["mDays"] := 365
- 48 [-]: SETLIST   R4 4 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 4
- 49 [-]: SETTABLE  R3 K8 R4     ; R3["mToggleValues"] := R4
- 50 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 51 [-]: GETGLOBAL R1 K0        ; R1 := table
- 52 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0xE6450C9D"]
- 53 [-]: MOVE      R2 R0        ; R2 := R0
- 54 [-]: NEWTABLE  R3 0 3       ; R3 := {}
- 55 [-]: SETTABLE  R3 K2 K23    ; R3["mLabel"] := "/Lotus/Language/Menu/FriendsSkipClanmates"
- 56 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 57 [-]: GETTABLE  R4 R4 K24    ; R4 := R4["CHECKBOX"]
- 58 [-]: SETTABLE  R3 K4 R4     ; R3["mType"] := R4
- 59 [-]: SETTABLE  R3 K6 K25    ; R3["mValue"] := "0x0"
- 60 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 61 [-]: GETGLOBAL R1 K0        ; R1 := table
- 62 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0xE6450C9D"]
- 63 [-]: MOVE      R2 R0        ; R2 := R0
- 64 [-]: NEWTABLE  R3 0 4       ; R3 := {}
- 65 [-]: SETTABLE  R3 K2 K26    ; R3["mLabel"] := "/Lotus/Language/Menu/FriendsSkipNames"
- 66 [-]: GETUPVAL  R4 U0        ; R4 := U0
- 67 [-]: GETTABLE  R4 R4 K27    ; R4 := R4["INPUTBOX"]
- 68 [-]: SETTABLE  R3 K4 R4     ; R3["mType"] := R4
- 69 [-]: SETTABLE  R3 K28 K29   ; R3["mMaxChars"] := 500
- 70 [-]: SETTABLE  R3 K30 K25   ; R3["mMultiLine"] := "0x0"
- 71 [-]: CALL      R1 3 1       ; R1(R2,R3)
- 72 [-]: RETURN    R0 2         ; return R0
- 73 [-]: RETURN    R0 1         ; return 
+ 47 [-]: SETTABLE  R8 K12 K22   ; R8["mDays"] := 182
+ 48 [-]: NEWTABLE  R9 0 3       ; R9 := {}
+ 49 [-]: GETGLOBAL R10 K9       ; R10 := 0xE6DC43B0
+ 50 [-]: LOADK     R11 K23      ; R11 := "/Lotus/Language/Menu/TimeFormat_Year"
+ 51 [-]: NEWTABLE  R12 0 1      ; R12 := {}
+ 52 [-]: SETTABLE  R12 K11 K7   ; R12["TIME"] := 1
+ 53 [-]: CALL      R10 3 2      ; R10 := R10(R11,R12)
+ 54 [-]: SETTABLE  R9 K2 R10    ; R9["mLabel"] := R10
+ 55 [-]: SETTABLE  R9 K6 K24    ; R9["mValue"] := 5
+ 56 [-]: SETTABLE  R9 K12 K25   ; R9["mDays"] := 365
+ 57 [-]: SETLIST   R4 5 1       ; R4[(1-1)*FPF+i] := R(4+i), 1 <= i <= 5
+ 58 [-]: SETTABLE  R3 K8 R4     ; R3["mToggleValues"] := R4
+ 59 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 60 [-]: GETGLOBAL R1 K0        ; R1 := table
+ 61 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0xE6450C9D"]
+ 62 [-]: MOVE      R2 R0        ; R2 := R0
+ 63 [-]: NEWTABLE  R3 0 3       ; R3 := {}
+ 64 [-]: SETTABLE  R3 K2 K26    ; R3["mLabel"] := "/Lotus/Language/Menu/FriendsSkipClanmates"
+ 65 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 66 [-]: GETTABLE  R4 R4 K27    ; R4 := R4["CHECKBOX"]
+ 67 [-]: SETTABLE  R3 K4 R4     ; R3["mType"] := R4
+ 68 [-]: SETTABLE  R3 K6 K28    ; R3["mValue"] := "0x0"
+ 69 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 70 [-]: GETGLOBAL R1 K0        ; R1 := table
+ 71 [-]: GETTABLE  R1 R1 K1     ; R1 := R1["0xE6450C9D"]
+ 72 [-]: MOVE      R2 R0        ; R2 := R0
+ 73 [-]: NEWTABLE  R3 0 4       ; R3 := {}
+ 74 [-]: SETTABLE  R3 K2 K29    ; R3["mLabel"] := "/Lotus/Language/Menu/FriendsSkipNames"
+ 75 [-]: GETUPVAL  R4 U0        ; R4 := U0
+ 76 [-]: GETTABLE  R4 R4 K30    ; R4 := R4["INPUTBOX"]
+ 77 [-]: SETTABLE  R3 K4 R4     ; R3["mType"] := R4
+ 78 [-]: SETTABLE  R3 K31 K32   ; R3["mMaxChars"] := 500
+ 79 [-]: SETTABLE  R3 K33 K28   ; R3["mMultiLine"] := "0x0"
+ 80 [-]: CALL      R1 3 1       ; R1(R2,R3)
+ 81 [-]: RETURN    R0 2         ; return R0
+ 82 [-]: RETURN    R0 1         ; return 
 
 
 ; Function #86:
 ;
 ; Name:            
-; Defined at line: 1403
+; Defined at line: 1404
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5280,7 +5289,7 @@ code size: 3
 ; Function #87:
 ;
 ; Name:            
-; Defined at line: 1414
+; Defined at line: 1415
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5303,7 +5312,7 @@ code size: 3
 ; Function #88:
 ;
 ; Name:            
-; Defined at line: 1420
+; Defined at line: 1421
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5324,7 +5333,7 @@ code size: 3
 ; Function #89:
 ;
 ; Name:            
-; Defined at line: 1426
+; Defined at line: 1427
 ; #Upvalues:       3
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5379,7 +5388,7 @@ code size: 3
 ; Function #90:
 ;
 ; Name:            
-; Defined at line: 1447
+; Defined at line: 1448
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5409,7 +5418,7 @@ code size: 3
 ; Function #91:
 ;
 ; Name:            
-; Defined at line: 1453
+; Defined at line: 1454
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5426,7 +5435,7 @@ code size: 3
 ; Function #92:
 ;
 ; Name:            
-; Defined at line: 1457
+; Defined at line: 1458
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5450,7 +5459,7 @@ code size: 3
 ; Function #93:
 ;
 ; Name:            
-; Defined at line: 1465
+; Defined at line: 1466
 ; #Upvalues:       2
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5482,7 +5491,7 @@ code size: 3
 ; Function #94:
 ;
 ; Name:            
-; Defined at line: 1475
+; Defined at line: 1476
 ; #Upvalues:       1
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5510,7 +5519,7 @@ code size: 3
 ; Function #95:
 ;
 ; Name:            
-; Defined at line: 1481
+; Defined at line: 1482
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5527,7 +5536,7 @@ code size: 3
 ; Function #96:
 ;
 ; Name:            
-; Defined at line: 1485
+; Defined at line: 1486
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5620,7 +5629,7 @@ code size: 3
 ; Function #97:
 ;
 ; Name:            
-; Defined at line: 1511
+; Defined at line: 1512
 ; #Upvalues:       2
 ; #Parameters:     1
 ; Is_vararg:       0
@@ -5639,7 +5648,7 @@ code size: 3
 ; Function #98:
 ;
 ; Name:            
-; Defined at line: 1515
+; Defined at line: 1516
 ; #Upvalues:       1
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5666,7 +5675,7 @@ code size: 3
 ; Function #99:
 ;
 ; Name:            
-; Defined at line: 1521
+; Defined at line: 1522
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -5683,7 +5692,7 @@ code size: 3
 ; Function #100:
 ;
 ; Name:            
-; Defined at line: 1527
+; Defined at line: 1528
 ; #Upvalues:       4
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5710,7 +5719,7 @@ code size: 3
 ; Function #101:
 ;
 ; Name:            
-; Defined at line: 1532
+; Defined at line: 1533
 ; #Upvalues:       13
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -5977,7 +5986,7 @@ code size: 3
 ; Function #101.1:
 ;
 ; Name:            
-; Defined at line: 1545
+; Defined at line: 1546
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -5991,7 +6000,7 @@ code size: 3
 ; Function #101.2:
 ;
 ; Name:            
-; Defined at line: 1548
+; Defined at line: 1549
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6005,7 +6014,7 @@ code size: 3
 ; Function #101.3:
 ;
 ; Name:            
-; Defined at line: 1552
+; Defined at line: 1553
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6019,7 +6028,7 @@ code size: 3
 ; Function #101.4:
 ;
 ; Name:            
-; Defined at line: 1557
+; Defined at line: 1558
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6035,7 +6044,7 @@ code size: 3
 ; Function #101.5:
 ;
 ; Name:            
-; Defined at line: 1561
+; Defined at line: 1562
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6049,7 +6058,7 @@ code size: 3
 ; Function #101.6:
 ;
 ; Name:            
-; Defined at line: 1562
+; Defined at line: 1563
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6063,7 +6072,7 @@ code size: 3
 ; Function #101.7:
 ;
 ; Name:            
-; Defined at line: 1563
+; Defined at line: 1564
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6077,7 +6086,7 @@ code size: 3
 ; Function #101.8:
 ;
 ; Name:            
-; Defined at line: 1564
+; Defined at line: 1565
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6091,7 +6100,7 @@ code size: 3
 ; Function #101.9:
 ;
 ; Name:            
-; Defined at line: 1566
+; Defined at line: 1567
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6105,7 +6114,7 @@ code size: 3
 ; Function #101.10:
 ;
 ; Name:            
-; Defined at line: 1579
+; Defined at line: 1580
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6119,7 +6128,7 @@ code size: 3
 ; Function #101.11:
 ;
 ; Name:            
-; Defined at line: 1585
+; Defined at line: 1586
 ; #Upvalues:       2
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6136,7 +6145,7 @@ code size: 3
 ; Function #101.12:
 ;
 ; Name:            
-; Defined at line: 1589
+; Defined at line: 1590
 ; #Upvalues:       1
 ; #Parameters:     0
 ; Is_vararg:       0
@@ -6150,7 +6159,7 @@ code size: 3
 ; Function #102:
 ;
 ; Name:            
-; Defined at line: 1597
+; Defined at line: 1598
 ; #Upvalues:       3
 ; #Parameters:     3
 ; Is_vararg:       0
@@ -6253,7 +6262,7 @@ code size: 3
 ; Function #103:
 ;
 ; Name:            
-; Defined at line: 1624
+; Defined at line: 1625
 ; #Upvalues:       1
 ; #Parameters:     2
 ; Is_vararg:       0
@@ -6270,7 +6279,7 @@ code size: 3
 ; Function #104:
 ;
 ; Name:            
-; Defined at line: 1628
+; Defined at line: 1629
 ; #Upvalues:       0
 ; #Parameters:     0
 ; Is_vararg:       0
