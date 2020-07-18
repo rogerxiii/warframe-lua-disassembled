@@ -6,4 +6,6 @@ Feel free to contact me or create an issue whenever I've missed an update.
 
 # Update
 Since a recent update they changed the way they compress the scripts in the cache files.  
-No updates to this repo until I find a way to extract them again.
+No updates to this repo until I find a way to extract them again.  
+
+Small update: cache extraction works again, but the decompiler needs some modifications as well. Still working on it!
